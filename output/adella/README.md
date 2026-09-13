@@ -34,7 +34,7 @@ Settings: opaque nonmetallic ceramic; Fresnel IOR 1.5; GGX default; reflection r
 ## Appearance choices and accuracy
 
 - Cool white satin/matte glazed ceramic, horizontal stacked layout, light neutral 1/16 inch grout.
-- Color and relief are derived from the supplied MSI product photograph, cropped to one real tile, denoised at source resolution, enlarged to 4K, and normalized for studio-light falloff. The photograph is not a calibrated scan, so exact mold depth and material response remain approximate.
+- Color and relief are derived from the exact-product StoneLocator photograph (2560×2560), cropped to a real 24×12 tile panel, denoised at source resolution, enlarged to 4K, and normalized for studio-light falloff. The photograph is not a calibrated scan, so exact mold depth and material response remain approximate.
 - Exact relief depth and optical measurements are unavailable. The V-Ray normal map was derived using an inferred 1.5 mm full height range; the actual facet depressions use a fraction of that range. Revit uses its own adjustable bump strength, not calibrated physical displacement.
 - White balance and sheen are approximate. Review a physical sample for finish selection. Joint width and stacked layout are visualization choices, not installation specifications.
 
@@ -42,6 +42,7 @@ Settings: opaque nonmetallic ceramic; Fresnel IOR 1.5; GGX default; reflection r
 
 - [Villo Home supplied product](https://villohome.com/products/adella-viso-white-12x24-glazed-ceramic-wall-tiles-msi-collection)
 - [MSI Adella Viso White 12x24 Satin](https://www.msisurfaces.com/3d-large-format-wall-tile/adella-viso-white-12x24-satin/) — cool white ceramic with indented texture; current item NADEVISWHI1224-N.
+- [StoneLocator exact-product image](https://www.stonelocator.com/wp-content/uploads/2017/11/NADEVISWHI1224_a2-scaled.jpg) — 2560×2560 retailer image used for the current map derivation.
 - [Autodesk material library creation](https://www.autodesk.com/support/technical/article/caas/sfdcarticles/sfdcarticles/Revit-How-to-create-a-Material-Library.html)
 - [Chaos V-Ray for Revit Asset Editor](https://docs.chaos.com/display/VREVIT/Asset+Editor)
 
