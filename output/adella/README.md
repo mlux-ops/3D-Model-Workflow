@@ -9,7 +9,7 @@ Created 2026-09-13 for visualization from the linked Villo Home tile and MSI's p
 - **textures/** — keep with the material files. These are required external assets; ADSKLIB does not embed the full-resolution textures.
 - **MSI_Adella_Viso_White.vrscene** — alternate material-only V-Ray scene. Parsed successfully by installed V-Ray 7.20.05 with 10 objects and zero warnings. Rendering remains blocked by license error -98. In hosts supporting material-from-file loading, select material `MSI_Adella_Viso_White`; this file contains no geometry.
 - **Adella_Material_R2025.rvt** — optional source project containing the material, saved and reopened in Revit 2025 with zero warnings.
-- **Relief_Preview.jpg** — illustrative shading of the procedural normal map, **not a Revit or V-Ray render**.
+- **Relief_Preview.jpg** — illustrative shading of the photographed relief map, **not a Revit or V-Ray render**.
 - **PACKAGE_VALIDATION.json** — validation record and limitations.
 
 ## Revit 2025
@@ -34,7 +34,7 @@ Settings: opaque nonmetallic ceramic; Fresnel IOR 1.5; GGX default; reflection r
 ## Appearance choices and accuracy
 
 - Cool white satin/matte glazed ceramic, horizontal stacked layout, light neutral 1/16 inch grout.
-- Soft irregular elongated indentations are **procedurally reconstructed**, not a manufacturer scan or an exact mold reproduction. A single generated tile repeats. MSI's listed product variation is not fully reproduced.
+- Color and relief are derived from the supplied MSI product photograph, cropped to one real tile and normalized for studio-light falloff. The photograph is not a calibrated scan, so exact mold depth and material response remain approximate.
 - Exact relief depth and optical measurements are unavailable. The V-Ray normal map was derived using an inferred 1.5 mm full height range; the actual facet depressions use a fraction of that range. Revit uses its own adjustable bump strength, not calibrated physical displacement.
 - White balance and sheen are approximate. Review a physical sample for finish selection. Joint width and stacked layout are visualization choices, not installation specifications.
 
