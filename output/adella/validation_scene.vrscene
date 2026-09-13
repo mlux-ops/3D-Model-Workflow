@@ -1,0 +1,9 @@
+SettingsOutput output { img_width=800; img_height=400; }
+SettingsImageSampler sampler { type=1; min_shade_rate=2; }
+SettingsEnvironment env { bg_color=Color(0.5,0.5,0.5); gi_color=Color(1,1,1); }
+SettingsGI gi { on=1; primary_engine=0; secondary_engine=0; }
+RenderView camera { transform=Transform(Matrix(Vector(1,0,0),Vector(0,1,0),Vector(0,0,1)),Vector(0,0,150)); fov=0.85; }
+LightRectangle softbox { transform=Transform(Matrix(Vector(1,0,0),Vector(0,1,0),Vector(0,0,1)),Vector(-50,70,100)); u_size=40; v_size=40; color=Color(1,1,1); intensity=10; invisible=1; }
+GeomStaticMesh panel { vertices=ListVector(Vector(-61.11875,-30.63875,0),Vector(61.11875,-30.63875,0),Vector(61.11875,30.63875,0),Vector(-61.11875,30.63875,0)); faces=ListInt(0,1,2,0,2,3); map_channels=List(List(1,ListVector(Vector(0,0,0),Vector(2,0,0),Vector(2,2,0),Vector(0,2,0)),ListInt(0,1,2,0,2,3))); }
+MtlVRmat tile { filename="C:/Users/found/OneDrive/Documents/ChatGPT/3D Model Workflow/output/adella/MSI_Adella_Viso_White.vrmat"; mtlname="/MSI Adella Viso White 12x24 Satin"; }
+Node wall { geometry=panel; material=tile; transform=Transform(Matrix(Vector(1,0,0),Vector(0,1,0),Vector(0,0,1)),Vector(0,0,0)); }
