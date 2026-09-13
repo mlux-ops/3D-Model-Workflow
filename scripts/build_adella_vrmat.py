@@ -1,0 +1,41 @@
+from pathlib import Path
+import xml.etree.ElementTree as E
+import base64
+out=Path(__file__).resolve().parents[1]/'output/adella'
+root=E.Element('vrmat')
+def asset(url,plugin,kind):
+    a=E.SubElement(root,'Asset',renderer='vray',url=url,type=kind,layout='')
+    ps=E.SubElement(E.SubElement(E.SubElement(a,'plugin'),'vrayplugin',name=plugin,type=kind,version='23'),'parameters')
+    return a,ps
+def param(ps,name,typ,val):
+    v=E.SubElement(E.SubElement(ps,'parameter',handler='default',label=name,name=name,listType='none',type=typ),'value')
+    if typ=='color':
+        for k,n in zip('rgb',val):E.SubElement(v,k).text=str(n)
+    else:v.text=str(val)
+_,p=asset('/SettingsUnitsInfo','SettingsUnitsInfo','settings');param(p,'meters_scale','float',.01)
+_,p=asset('/Adella/UVW','UVWGenChannel','uvwgen');param(p,'uvw_channel','integer',1)
+for label,file,space in [('Color','Adella_BaseColor.png',2),('Normal','Adella_Normal_OpenGL.png',0),('Roughness','Adella_Roughness.png',0)]:
+    _,p=asset('/Adella/'+label+'Buffer','BitmapBuffer','bitmap')
+    param(p,'file','string','textures/'+file);param(p,'color_space','integer',space);param(p,'gamma','float',1)
+    _,p=asset('/Adella/'+label,'TexBitmap','texture')
+    param(p,'bitmap','plugin','/Adella/'+label+'Buffer');param(p,'uvwgen','plugin','/Adella/UVW');param(p,'tile','integer',1)
+a,p=asset('/Adella/BRDF','BRDFVRayMtl','BRDF')
+for name,typ,value in [('diffuse','plugin','/Adella/Color'),('reflect','color',(1,1,1)),('fresnel','bool',1),('fresnel_ior','float',1.5),('refract_ior','float',1.5),('metalness','float',0),('option_use_roughness','bool',1),('reflect_glossiness','plugin','/Adella/Roughness'),('bump_map','plugin','/Adella/Normal'),('bump_type','integer',1),('bump_amount','float',1)]:param(p,name,typ,value)
+a,p=asset('/MSI Adella Viso White 12x24 Satin','MtlSingleBRDF','material')
+param(p,'brdf','plugin','/Adella/BRDF')
+E.SubElement(a,'preview').text=base64.b64encode((out/'Relief_Preview.jpg').read_bytes()).decode()
+E.indent(root)
+E.ElementTree(root).write(out/'MSI_Adella_Viso_White.vrmat',encoding='utf-8',xml_declaration=True)
+vrmat=(out/'MSI_Adella_Viso_White.vrmat').as_posix()
+scene='''SettingsOutput output { img_width=800; img_height=400; }
+SettingsImageSampler sampler { type=1; min_shade_rate=2; }
+SettingsEnvironment env { bg_color=Color(0.5,0.5,0.5); gi_color=Color(1,1,1); }
+SettingsGI gi { on=1; primary_engine=0; secondary_engine=0; }
+RenderView camera { transform=Transform(Matrix(Vector(1,0,0),Vector(0,1,0),Vector(0,0,1)),Vector(0,0,150)); fov=0.85; }
+LightRectangle softbox { transform=Transform(Matrix(Vector(1,0,0),Vector(0,1,0),Vector(0,0,1)),Vector(-50,70,100)); u_size=40; v_size=40; color=Color(1,1,1); intensity=10; invisible=1; }
+GeomStaticMesh panel { vertices=ListVector(Vector(-61.11875,-30.63875,0),Vector(61.11875,-30.63875,0),Vector(61.11875,30.63875,0),Vector(-61.11875,30.63875,0)); faces=ListInt(0,1,2,0,2,3); map_channels=List(List(1,ListVector(Vector(0,0,0),Vector(2,0,0),Vector(2,2,0),Vector(0,2,0)),ListInt(0,1,2,0,2,3))); }
+MtlVRmat tile { filename="VRMAT"; mtlname="/MSI Adella Viso White 12x24 Satin"; }
+Node wall { geometry=panel; material=tile; transform=Transform(Matrix(Vector(1,0,0),Vector(0,1,0),Vector(0,0,1)),Vector(0,0,0)); }
+'''.replace('VRMAT',vrmat)
+(out/'validation_scene.vrscene').write_text(scene)
+print('VRMAT and native V-Ray validation scene created')

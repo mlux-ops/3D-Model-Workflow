@@ -1,0 +1,158 @@
+{
+  "01_adhesive_wallplate": {
+    "non_manifold_edges": 0,
+    "volume_mm3": 22928.39776056234,
+    "print_dimensions_mm": [
+      70.0,
+      84.0,
+      4.8
+    ]
+  },
+  "02_locking_key": {
+    "non_manifold_edges": 0,
+    "volume_mm3": 276.4996075485708,
+    "print_dimensions_mm": [
+      24.3,
+      14.149,
+      2.249
+    ]
+  },
+  "frame_12.7mm": {
+    "non_manifold_edges": 0,
+    "volume_mm3": 12487.260008145598,
+    "print_dimensions_mm": [
+      64.0,
+      94.5,
+      30.2
+    ]
+  },
+  "frame_19.05mm": {
+    "non_manifold_edges": 0,
+    "volume_mm3": 12903.85593664916,
+    "print_dimensions_mm": [
+      64.0,
+      94.5,
+      36.55
+    ]
+  },
+  "frame_20mm": {
+    "non_manifold_edges": 0,
+    "volume_mm3": 12968.411065736806,
+    "print_dimensions_mm": [
+      64.0,
+      94.5,
+      37.5
+    ]
+  },
+  "frame_22.225mm": {
+    "non_manifold_edges": 0,
+    "volume_mm3": 13111.834646117832,
+    "print_dimensions_mm": [
+      64.0,
+      94.5,
+      39.725
+    ]
+  },
+  "top_12.7mm": {
+    "non_manifold_edges": 0,
+    "volume_mm3": 1916.2144975417546,
+    "print_dimensions_mm": [
+      21.75,
+      23.55,
+      19.0
+    ]
+  },
+  "top_19.05mm": {
+    "non_manifold_edges": 0,
+    "volume_mm3": 2047.6184916505063,
+    "print_dimensions_mm": [
+      28.1,
+      23.55,
+      19.0
+    ]
+  },
+  "top_20mm": {
+    "non_manifold_edges": 0,
+    "volume_mm3": 2069.5070780579545,
+    "print_dimensions_mm": [
+      29.05,
+      23.55,
+      19.0
+    ]
+  },
+  "top_22.225mm": {
+    "non_manifold_edges": 0,
+    "volume_mm3": 2113.000996505455,
+    "print_dimensions_mm": [
+      31.275,
+      23.55,
+      19.0
+    ]
+  },
+  "assembly_checks": [
+    {
+      "thickness_mm": 12.7,
+      "intersections_mm3": {
+        "frame_12.7mm / 01_adhesive_wallplate": 0.0,
+        "top_12.7mm / frame_12.7mm": 0.0,
+        "top_12.7mm / test sample": 0.0,
+        "frame_12.7mm / test sample": 0.0,
+        "02_locking_key / test sample": 0.0,
+        "02_locking_key / frame_12.7mm": 0.0
+      },
+      "intentional_key_wedge_overlap_mm3": 0.0,
+      "frame_outward_capture": true,
+      "key_blocks_lift": true,
+      "front_clearance_mm": 0.4,
+      "top_clearance_mm": 0.8
+    },
+    {
+      "thickness_mm": 19.05,
+      "intersections_mm3": {
+        "frame_19.05mm / 01_adhesive_wallplate": 0.0,
+        "top_19.05mm / frame_19.05mm": 0.0,
+        "top_19.05mm / test sample": 0.0,
+        "frame_19.05mm / test sample": 0.0,
+        "02_locking_key / test sample": 0.0,
+        "02_locking_key / frame_19.05mm": 0.0
+      },
+      "intentional_key_wedge_overlap_mm3": 0.0,
+      "frame_outward_capture": true,
+      "key_blocks_lift": true,
+      "front_clearance_mm": 0.4,
+      "top_clearance_mm": 0.8
+    },
+    {
+      "thickness_mm": 20,
+      "intersections_mm3": {
+        "frame_20mm / 01_adhesive_wallplate": 0.0,
+        "top_20mm / frame_20mm": 0.0,
+        "top_20mm / test sample": 0.0,
+        "frame_20mm / test sample": 0.0,
+        "02_locking_key / test sample": 0.0,
+        "02_locking_key / frame_20mm": 0.0
+      },
+      "intentional_key_wedge_overlap_mm3": 0.0,
+      "frame_outward_capture": true,
+      "key_blocks_lift": true,
+      "front_clearance_mm": 0.4,
+      "top_clearance_mm": 0.8
+    },
+    {
+      "thickness_mm": 22.225,
+      "intersections_mm3": {
+        "frame_22.225mm / 01_adhesive_wallplate": 0.0,
+        "top_22.225mm / frame_22.225mm": 0.0,
+        "top_22.225mm / test sample": 0.0,
+        "frame_22.225mm / test sample": 0.00012897373153464287,
+        "02_locking_key / test sample": 0.0,
+        "02_locking_key / frame_22.225mm": 0.0
+      },
+      "intentional_key_wedge_overlap_mm3": 0.0,
+      "frame_outward_capture": true,
+      "key_blocks_lift": true,
+      "front_clearance_mm": 0.4,
+      "top_clearance_mm": 0.8
+    }
+  ]
+}
