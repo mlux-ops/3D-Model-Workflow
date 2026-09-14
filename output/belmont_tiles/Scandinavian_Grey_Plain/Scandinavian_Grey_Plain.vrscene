@@ -1,0 +1,10 @@
+SettingsUnitsInfo Scandinavian_Grey_Plain_units { meters_scale=0.01; }
+UVWGenChannel Scandinavian_Grey_Plain_uvw { uvw_channel=1; }
+BitmapBuffer Scandinavian_Grey_Plain_Color_buffer { file="textures/Color.png"; transfer_function=2; gamma=1; }
+TexBitmap Scandinavian_Grey_Plain_Color { bitmap=Scandinavian_Grey_Plain_Color_buffer; uvwgen=Scandinavian_Grey_Plain_uvw; tile=1; }
+BitmapBuffer Scandinavian_Grey_Plain_Normal_buffer { file="textures/Normal.png"; transfer_function=0; gamma=1; }
+TexBitmap Scandinavian_Grey_Plain_Normal { bitmap=Scandinavian_Grey_Plain_Normal_buffer; uvwgen=Scandinavian_Grey_Plain_uvw; tile=1; }
+BitmapBuffer Scandinavian_Grey_Plain_Roughness_buffer { file="textures/Roughness.png"; transfer_function=0; gamma=1; }
+TexBitmap Scandinavian_Grey_Plain_Roughness { bitmap=Scandinavian_Grey_Plain_Roughness_buffer; uvwgen=Scandinavian_Grey_Plain_uvw; tile=1; }
+BRDFVRayMtl Scandinavian_Grey_Plain_brdf { diffuse=Scandinavian_Grey_Plain_Color; reflect=Color(1,1,1); fresnel=1; fresnel_ior=1.5; refract_ior=1.5; metalness=0; option_use_roughness=1; reflect_glossiness=Scandinavian_Grey_Plain_Roughness; bump_map=Scandinavian_Grey_Plain_Normal; bump_type=1; bump_amount=1; }
+MtlSingleBRDF Scandinavian_Grey_Plain { brdf=Scandinavian_Grey_Plain_brdf; }

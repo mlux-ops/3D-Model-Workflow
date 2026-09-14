@@ -2,7 +2,7 @@
 <vrmat>
   <Asset renderer="vray" url="/SettingsUnitsInfo" type="settings" layout="">
     <plugin>
-      <vrayplugin name="SettingsUnitsInfo" type="settings" version="23">
+      <vrayplugin name="SettingsUnitsInfo" type="settings" version="0">
         <parameters>
           <parameter handler="default" label="meters_scale" name="meters_scale" listType="none" type="float">
             <value>0.01</value>
@@ -11,7 +11,9 @@
       </vrayplugin>
     </plugin>
   </Asset>
-      <vrayplugin name="UVWGenChannel" type="uvwgen" version="23">
+  <Asset renderer="vray" url="/Adella/UVW" type="UVW" layout="">
+    <plugin>
+      <vrayplugin name="UVWGenChannel" type="UVW" version="0">
         <parameters>
           <parameter handler="default" label="uvw_channel" name="uvw_channel" listType="none" type="integer">
             <value>1</value>
@@ -22,12 +24,12 @@
   </Asset>
   <Asset renderer="vray" url="/Adella/ColorBuffer" type="bitmap" layout="">
     <plugin>
-      <vrayplugin name="BitmapBuffer" type="bitmap" version="23">
+      <vrayplugin name="BitmapBuffer" type="bitmap" version="0">
         <parameters>
           <parameter handler="default" label="file" name="file" listType="none" type="string">
             <value>textures/Adella_BaseColor.png</value>
           </parameter>
-          <parameter handler="default" label="color_space" name="color_space" listType="none" type="integer">
+          <parameter handler="default" label="transfer_function" name="transfer_function" listType="none" type="integer">
             <value>2</value>
           </parameter>
           <parameter handler="default" label="gamma" name="gamma" listType="none" type="float">
@@ -39,7 +41,7 @@
   </Asset>
   <Asset renderer="vray" url="/Adella/Color" type="texture" layout="">
     <plugin>
-      <vrayplugin name="TexBitmap" type="texture" version="23">
+      <vrayplugin name="TexBitmap" type="texture" version="0">
         <parameters>
           <parameter handler="default" label="bitmap" name="bitmap" listType="none" type="plugin">
             <value>/Adella/ColorBuffer</value>
@@ -56,12 +58,12 @@
   </Asset>
   <Asset renderer="vray" url="/Adella/NormalBuffer" type="bitmap" layout="">
     <plugin>
-      <vrayplugin name="BitmapBuffer" type="bitmap" version="23">
+      <vrayplugin name="BitmapBuffer" type="bitmap" version="0">
         <parameters>
           <parameter handler="default" label="file" name="file" listType="none" type="string">
             <value>textures/Adella_Normal_OpenGL.png</value>
           </parameter>
-          <parameter handler="default" label="color_space" name="color_space" listType="none" type="integer">
+          <parameter handler="default" label="transfer_function" name="transfer_function" listType="none" type="integer">
             <value>0</value>
           </parameter>
           <parameter handler="default" label="gamma" name="gamma" listType="none" type="float">
@@ -73,7 +75,7 @@
   </Asset>
   <Asset renderer="vray" url="/Adella/Normal" type="texture" layout="">
     <plugin>
-      <vrayplugin name="TexBitmap" type="texture" version="23">
+      <vrayplugin name="TexBitmap" type="texture" version="0">
         <parameters>
           <parameter handler="default" label="bitmap" name="bitmap" listType="none" type="plugin">
             <value>/Adella/NormalBuffer</value>
@@ -90,12 +92,12 @@
   </Asset>
   <Asset renderer="vray" url="/Adella/RoughnessBuffer" type="bitmap" layout="">
     <plugin>
-      <vrayplugin name="BitmapBuffer" type="bitmap" version="23">
+      <vrayplugin name="BitmapBuffer" type="bitmap" version="0">
         <parameters>
           <parameter handler="default" label="file" name="file" listType="none" type="string">
             <value>textures/Adella_Roughness.png</value>
           </parameter>
-          <parameter handler="default" label="color_space" name="color_space" listType="none" type="integer">
+          <parameter handler="default" label="transfer_function" name="transfer_function" listType="none" type="integer">
             <value>0</value>
           </parameter>
           <parameter handler="default" label="gamma" name="gamma" listType="none" type="float">
@@ -107,7 +109,7 @@
   </Asset>
   <Asset renderer="vray" url="/Adella/Roughness" type="texture" layout="">
     <plugin>
-      <vrayplugin name="TexBitmap" type="texture" version="23">
+      <vrayplugin name="TexBitmap" type="texture" version="0">
         <parameters>
           <parameter handler="default" label="bitmap" name="bitmap" listType="none" type="plugin">
             <value>/Adella/RoughnessBuffer</value>
@@ -124,9 +126,9 @@
   </Asset>
   <Asset renderer="vray" url="/Adella/BRDF" type="BRDF" layout="">
     <plugin>
-      <vrayplugin name="BRDFVRayMtl" type="BRDF" version="23">
+      <vrayplugin name="BRDFVRayMtl" type="BRDF" version="0">
         <parameters>
-          <parameter handler="default" label="diffuse" name="diffuse" listType="none" type="plugin">
+          <parameter handler="default" label="diffuse" name="diffuse" listType="none" type="acolor texture">
             <value>/Adella/Color</value>
           </parameter>
           <parameter handler="default" label="reflect" name="reflect" listType="none" type="color">
@@ -139,28 +141,28 @@
           <parameter handler="default" label="fresnel" name="fresnel" listType="none" type="bool">
             <value>1</value>
           </parameter>
-          <parameter handler="default" label="fresnel_ior" name="fresnel_ior" listType="none" type="float">
+          <parameter handler="default" label="fresnel_ior" name="fresnel_ior" listType="none" type="float texture">
             <value>1.5</value>
           </parameter>
-          <parameter handler="default" label="refract_ior" name="refract_ior" listType="none" type="float">
+          <parameter handler="default" label="refract_ior" name="refract_ior" listType="none" type="float texture">
             <value>1.5</value>
           </parameter>
-          <parameter handler="default" label="metalness" name="metalness" listType="none" type="float">
+          <parameter handler="default" label="metalness" name="metalness" listType="none" type="float texture">
             <value>0</value>
           </parameter>
           <parameter handler="default" label="option_use_roughness" name="option_use_roughness" listType="none" type="bool">
             <value>1</value>
           </parameter>
-          <parameter handler="default" label="reflect_glossiness" name="reflect_glossiness" listType="none" type="plugin">
+          <parameter handler="default" label="reflect_glossiness" name="reflect_glossiness" listType="none" type="float texture">
             <value>/Adella/Roughness</value>
           </parameter>
-          <parameter handler="default" label="bump_map" name="bump_map" listType="none" type="plugin">
+          <parameter handler="default" label="bump_map" name="bump_map" listType="none" type="acolor texture">
             <value>/Adella/Normal</value>
           </parameter>
           <parameter handler="default" label="bump_type" name="bump_type" listType="none" type="integer">
             <value>1</value>
           </parameter>
-          <parameter handler="default" label="bump_amount" name="bump_amount" listType="none" type="float">
+          <parameter handler="default" label="bump_amount" name="bump_amount" listType="none" type="float texture">
             <value>1</value>
           </parameter>
         </parameters>
@@ -169,7 +171,7 @@
   </Asset>
   <Asset renderer="vray" url="/MSI Adella Viso White 12x24 Satin" type="material" layout="">
     <plugin>
-      <vrayplugin name="MtlSingleBRDF" type="material" version="23">
+      <vrayplugin name="MtlSingleBRDF" type="material" version="0">
         <parameters>
           <parameter handler="default" label="brdf" name="brdf" listType="none" type="plugin">
             <value>/Adella/BRDF</value>
