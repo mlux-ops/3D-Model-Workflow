@@ -1,0 +1,612 @@
+{
+    "error_string": "Success.",
+    "export_time": 622,
+    "layer_height": 0.07999999821186066,
+    "plate_index": 0,
+    "prepare_time": 266,
+    "return_code": 0,
+    "sliced_plates": [
+        {
+            "feature_type_times": {
+                "Bridge": 142.07476806640625,
+                "Brim": 428.6650085449219,
+                "Custom": 315.65130615234375,
+                "Flush": 30.0,
+                "Gap infill": 3179.786376953125,
+                "Inner wall": 27734.44921875,
+                "Internal solid infill": 3379.12744140625,
+                "Outer wall": 17588.189453125,
+                "Overhang wall": 5.706238269805908,
+                "Sparse infill": 8113.4111328125,
+                "Top surface": 413.8150329589844,
+                "Travel": 4431.9560546875,
+                "Undefined": 4423.43994140625
+            },
+            "filament_change_times": 0,
+            "filaments": [
+                {
+                    "filament_id": "GFL01",
+                    "id": 1,
+                    "main_used_g": 100.7469482421875,
+                    "total_used_g": 100.7469482421875
+                }
+            ],
+            "generate_support_material_time": 51,
+            "id": 1,
+            "infill_time": 133,
+            "layer_filament_change": 0,
+            "main_predication": 65405.41796875,
+            "make_perimeters_time": 332,
+            "obj_cached_cnt": 0,
+            "objects": [
+                {
+                    "bbox": {
+                        "depth": 14.600000381469727,
+                        "height": 29.0,
+                        "width": 16.450000762939453,
+                        "x": 45.0,
+                        "y": 65.0,
+                        "z": 0.0
+                    },
+                    "id": 5,
+                    "name": "A_12.7mm_lower_tapered_1",
+                    "triangle_count": 2762
+                },
+                {
+                    "bbox": {
+                        "depth": 15.800000190734863,
+                        "height": 13.0,
+                        "width": 16.450000762939453,
+                        "x": 93.0,
+                        "y": 65.0,
+                        "z": 0.0
+                    },
+                    "id": 9,
+                    "name": "A_12.7mm_upper_mushroom_1",
+                    "triangle_count": 2268
+                },
+                {
+                    "bbox": {
+                        "depth": 14.600000381469727,
+                        "height": 29.0,
+                        "width": 22.799999237060547,
+                        "x": 141.0,
+                        "y": 65.0,
+                        "z": 0.0
+                    },
+                    "id": 13,
+                    "name": "B_19.05mm_lower_tapered_1",
+                    "triangle_count": 2868
+                },
+                {
+                    "bbox": {
+                        "depth": 15.800000190734863,
+                        "height": 13.0,
+                        "width": 22.799999237060547,
+                        "x": 189.0,
+                        "y": 65.0,
+                        "z": 0.0
+                    },
+                    "id": 17,
+                    "name": "B_19.05mm_upper_mushroom_1",
+                    "triangle_count": 2146
+                },
+                {
+                    "bbox": {
+                        "depth": 14.600000381469727,
+                        "height": 29.0,
+                        "width": 22.799999237060547,
+                        "x": 237.0,
+                        "y": 65.0,
+                        "z": 0.0
+                    },
+                    "id": 21,
+                    "name": "C_19.05mm_lower_tapered_1",
+                    "triangle_count": 2868
+                },
+                {
+                    "bbox": {
+                        "depth": 15.800000190734863,
+                        "height": 13.0,
+                        "width": 22.799999237060547,
+                        "x": 45.0,
+                        "y": 113.0,
+                        "z": 0.0
+                    },
+                    "id": 25,
+                    "name": "C_19.05mm_upper_mushroom_1",
+                    "triangle_count": 2146
+                },
+                {
+                    "bbox": {
+                        "depth": 14.600000381469727,
+                        "height": 29.0,
+                        "width": 23.75,
+                        "x": 93.0,
+                        "y": 113.0,
+                        "z": 0.0
+                    },
+                    "id": 29,
+                    "name": "D_20mm_lower_tapered_1",
+                    "triangle_count": 2842
+                },
+                {
+                    "bbox": {
+                        "depth": 15.800000190734863,
+                        "height": 13.0,
+                        "width": 23.75,
+                        "x": 141.0,
+                        "y": 113.0,
+                        "z": 0.0
+                    },
+                    "id": 33,
+                    "name": "D_20mm_upper_mushroom_1",
+                    "triangle_count": 2162
+                },
+                {
+                    "bbox": {
+                        "depth": 14.600000381469727,
+                        "height": 29.0,
+                        "width": 25.975000381469727,
+                        "x": 189.0,
+                        "y": 113.0,
+                        "z": 0.0
+                    },
+                    "id": 37,
+                    "name": "E_22.225mm_lower_tapered_1",
+                    "triangle_count": 2866
+                },
+                {
+                    "bbox": {
+                        "depth": 15.800000190734863,
+                        "height": 13.0,
+                        "width": 25.975000381469727,
+                        "x": 237.0,
+                        "y": 113.0,
+                        "z": 0.0
+                    },
+                    "id": 41,
+                    "name": "E_22.225mm_upper_mushroom_1",
+                    "triangle_count": 2118
+                },
+                {
+                    "bbox": {
+                        "depth": 14.600000381469727,
+                        "height": 29.0,
+                        "width": 24.25,
+                        "x": 45.0,
+                        "y": 161.0,
+                        "z": 0.0
+                    },
+                    "id": 45,
+                    "name": "F_20.5mm_lower_tapered_1",
+                    "triangle_count": 2782
+                },
+                {
+                    "bbox": {
+                        "depth": 15.800000190734863,
+                        "height": 13.0,
+                        "width": 24.25,
+                        "x": 93.0,
+                        "y": 161.0,
+                        "z": 0.0
+                    },
+                    "id": 49,
+                    "name": "F_20.5mm_upper_mushroom_1",
+                    "triangle_count": 2190
+                },
+                {
+                    "bbox": {
+                        "depth": 14.600000381469727,
+                        "height": 29.0,
+                        "width": 22.25,
+                        "x": 141.0,
+                        "y": 161.0,
+                        "z": 0.0
+                    },
+                    "id": 53,
+                    "name": "G_18.5mm_lower_tapered_1",
+                    "triangle_count": 2698
+                },
+                {
+                    "bbox": {
+                        "depth": 15.800000190734863,
+                        "height": 13.0,
+                        "width": 22.25,
+                        "x": 189.0,
+                        "y": 161.0,
+                        "z": 0.0
+                    },
+                    "id": 57,
+                    "name": "G_18.5mm_upper_mushroom_1",
+                    "triangle_count": 2170
+                },
+                {
+                    "bbox": {
+                        "depth": 14.600000381469727,
+                        "height": 29.0,
+                        "width": 21.75,
+                        "x": 237.0,
+                        "y": 161.0,
+                        "z": 0.0
+                    },
+                    "id": 61,
+                    "name": "H_18mm_lower_tapered_1",
+                    "triangle_count": 2820
+                },
+                {
+                    "bbox": {
+                        "depth": 15.800000190734863,
+                        "height": 13.0,
+                        "width": 21.75,
+                        "x": 45.0,
+                        "y": 209.0,
+                        "z": 0.0
+                    },
+                    "id": 65,
+                    "name": "H_18mm_upper_mushroom_1",
+                    "triangle_count": 2114
+                },
+                {
+                    "bbox": {
+                        "depth": 14.600000381469727,
+                        "height": 29.0,
+                        "width": 17.75,
+                        "x": 93.0,
+                        "y": 209.0,
+                        "z": 0.0
+                    },
+                    "id": 69,
+                    "name": "I_14mm_lower_tapered_1",
+                    "triangle_count": 2706
+                },
+                {
+                    "bbox": {
+                        "depth": 15.800000190734863,
+                        "height": 13.0,
+                        "width": 17.75,
+                        "x": 141.0,
+                        "y": 209.0,
+                        "z": 0.0
+                    },
+                    "id": 73,
+                    "name": "I_14mm_upper_mushroom_1",
+                    "triangle_count": 2134
+                },
+                {
+                    "bbox": {
+                        "depth": 14.600000381469727,
+                        "height": 29.0,
+                        "width": 20.75,
+                        "x": 189.0,
+                        "y": 209.0,
+                        "z": 0.0
+                    },
+                    "id": 77,
+                    "name": "J_17mm_lower_mushroom_1",
+                    "triangle_count": 2030
+                },
+                {
+                    "bbox": {
+                        "depth": 15.800000190734863,
+                        "height": 13.0,
+                        "width": 20.75,
+                        "x": 237.0,
+                        "y": 209.0,
+                        "z": 0.0
+                    },
+                    "id": 81,
+                    "name": "J_17mm_upper_mushroom_1",
+                    "triangle_count": 2116
+                }
+            ],
+            "sliced_time": 6204,
+            "sliced_time_with_cache": 5404,
+            "total_predication": 65772.5234375,
+            "triangle_count": 48806,
+            "warning_message": ""
+        },
+        {
+            "feature_type_times": {
+                "Bottom surface": 181.9176788330078,
+                "Custom": 317.66217041015625,
+                "Flush": 30.0,
+                "Gap infill": 376.818115234375,
+                "Inner wall": 1719.7528076171875,
+                "Internal solid infill": 1658.89453125,
+                "Outer wall": 2380.217529296875,
+                "Top surface": 427.0202331542969,
+                "Travel": 710.2123413085938,
+                "Undefined": 700.4683837890625
+            },
+            "filament_change_times": 0,
+            "filaments": [
+                {
+                    "filament_id": "GFL01",
+                    "id": 1,
+                    "main_used_g": 9.652400970458984,
+                    "total_used_g": 9.652400970458984
+                }
+            ],
+            "generate_support_material_time": 72,
+            "id": 2,
+            "infill_time": 103,
+            "layer_filament_change": 0,
+            "main_predication": 7422.12939453125,
+            "make_perimeters_time": 390,
+            "obj_cached_cnt": 0,
+            "objects": [
+                {
+                    "bbox": {
+                        "depth": 12.0,
+                        "height": 4.400000095367432,
+                        "width": 29.0,
+                        "x": 465.0,
+                        "y": 65.0,
+                        "z": 2.3162840534496354e-09
+                    },
+                    "id": 85,
+                    "name": "lower_cover_snug_revised_1",
+                    "triangle_count": 1956
+                },
+                {
+                    "bbox": {
+                        "depth": 12.0,
+                        "height": 4.400000095367432,
+                        "width": 13.0,
+                        "x": 513.0,
+                        "y": 65.0,
+                        "z": 2.3162840534496354e-09
+                    },
+                    "id": 89,
+                    "name": "upper_cover_snug_revised_1",
+                    "triangle_count": 2014
+                },
+                {
+                    "bbox": {
+                        "depth": 12.0,
+                        "height": 4.400000095367432,
+                        "width": 29.0,
+                        "x": 561.0,
+                        "y": 65.0,
+                        "z": 2.3162840534496354e-09
+                    },
+                    "id": 93,
+                    "name": "lower_cover_snug_revised_1",
+                    "triangle_count": 1956
+                },
+                {
+                    "bbox": {
+                        "depth": 12.0,
+                        "height": 4.400000095367432,
+                        "width": 13.0,
+                        "x": 609.0,
+                        "y": 65.0,
+                        "z": 2.3162840534496354e-09
+                    },
+                    "id": 97,
+                    "name": "upper_cover_snug_revised_1",
+                    "triangle_count": 2014
+                },
+                {
+                    "bbox": {
+                        "depth": 12.0,
+                        "height": 4.400000095367432,
+                        "width": 29.0,
+                        "x": 657.0,
+                        "y": 65.0,
+                        "z": 2.3162840534496354e-09
+                    },
+                    "id": 101,
+                    "name": "lower_cover_snug_revised_1",
+                    "triangle_count": 1956
+                },
+                {
+                    "bbox": {
+                        "depth": 12.0,
+                        "height": 4.400000095367432,
+                        "width": 13.0,
+                        "x": 465.0,
+                        "y": 113.0,
+                        "z": 2.3162840534496354e-09
+                    },
+                    "id": 105,
+                    "name": "upper_cover_snug_revised_1",
+                    "triangle_count": 2014
+                },
+                {
+                    "bbox": {
+                        "depth": 12.0,
+                        "height": 4.400000095367432,
+                        "width": 29.0,
+                        "x": 513.0,
+                        "y": 113.0,
+                        "z": 2.3162840534496354e-09
+                    },
+                    "id": 109,
+                    "name": "lower_cover_snug_revised_1",
+                    "triangle_count": 1956
+                },
+                {
+                    "bbox": {
+                        "depth": 12.0,
+                        "height": 4.400000095367432,
+                        "width": 13.0,
+                        "x": 561.0,
+                        "y": 113.0,
+                        "z": 2.3162840534496354e-09
+                    },
+                    "id": 113,
+                    "name": "upper_cover_snug_revised_1",
+                    "triangle_count": 2014
+                },
+                {
+                    "bbox": {
+                        "depth": 12.0,
+                        "height": 4.400000095367432,
+                        "width": 29.0,
+                        "x": 609.0,
+                        "y": 113.0,
+                        "z": 2.3162840534496354e-09
+                    },
+                    "id": 117,
+                    "name": "lower_cover_snug_revised_1",
+                    "triangle_count": 1956
+                },
+                {
+                    "bbox": {
+                        "depth": 12.0,
+                        "height": 4.400000095367432,
+                        "width": 13.0,
+                        "x": 657.0,
+                        "y": 113.0,
+                        "z": 2.3162840534496354e-09
+                    },
+                    "id": 121,
+                    "name": "upper_cover_snug_revised_1",
+                    "triangle_count": 2014
+                },
+                {
+                    "bbox": {
+                        "depth": 12.0,
+                        "height": 4.400000095367432,
+                        "width": 29.0,
+                        "x": 465.0,
+                        "y": 161.0,
+                        "z": 2.3162840534496354e-09
+                    },
+                    "id": 125,
+                    "name": "lower_cover_snug_revised_1",
+                    "triangle_count": 1956
+                },
+                {
+                    "bbox": {
+                        "depth": 12.0,
+                        "height": 4.400000095367432,
+                        "width": 13.0,
+                        "x": 513.0,
+                        "y": 161.0,
+                        "z": 2.3162840534496354e-09
+                    },
+                    "id": 129,
+                    "name": "upper_cover_snug_revised_1",
+                    "triangle_count": 2014
+                },
+                {
+                    "bbox": {
+                        "depth": 12.0,
+                        "height": 4.400000095367432,
+                        "width": 29.0,
+                        "x": 561.0,
+                        "y": 161.0,
+                        "z": 2.3162840534496354e-09
+                    },
+                    "id": 133,
+                    "name": "lower_cover_snug_revised_1",
+                    "triangle_count": 1956
+                },
+                {
+                    "bbox": {
+                        "depth": 12.0,
+                        "height": 4.400000095367432,
+                        "width": 13.0,
+                        "x": 609.0,
+                        "y": 161.0,
+                        "z": 2.3162840534496354e-09
+                    },
+                    "id": 137,
+                    "name": "upper_cover_snug_revised_1",
+                    "triangle_count": 2014
+                },
+                {
+                    "bbox": {
+                        "depth": 12.0,
+                        "height": 4.400000095367432,
+                        "width": 29.0,
+                        "x": 657.0,
+                        "y": 161.0,
+                        "z": 2.3162840534496354e-09
+                    },
+                    "id": 141,
+                    "name": "lower_cover_snug_revised_1",
+                    "triangle_count": 1956
+                },
+                {
+                    "bbox": {
+                        "depth": 12.0,
+                        "height": 4.400000095367432,
+                        "width": 13.0,
+                        "x": 465.0,
+                        "y": 209.0,
+                        "z": 2.3162840534496354e-09
+                    },
+                    "id": 145,
+                    "name": "upper_cover_snug_revised_1",
+                    "triangle_count": 2014
+                },
+                {
+                    "bbox": {
+                        "depth": 12.0,
+                        "height": 4.400000095367432,
+                        "width": 29.0,
+                        "x": 513.0,
+                        "y": 209.0,
+                        "z": 2.3162840534496354e-09
+                    },
+                    "id": 149,
+                    "name": "lower_cover_snug_revised_1",
+                    "triangle_count": 1956
+                },
+                {
+                    "bbox": {
+                        "depth": 12.0,
+                        "height": 4.400000095367432,
+                        "width": 13.0,
+                        "x": 561.0,
+                        "y": 209.0,
+                        "z": 2.3162840534496354e-09
+                    },
+                    "id": 153,
+                    "name": "upper_cover_snug_revised_1",
+                    "triangle_count": 2014
+                },
+                {
+                    "bbox": {
+                        "depth": 12.0,
+                        "height": 4.400000095367432,
+                        "width": 29.0,
+                        "x": 609.0,
+                        "y": 209.0,
+                        "z": 2.3162840534496354e-09
+                    },
+                    "id": 157,
+                    "name": "lower_cover_snug_revised_1",
+                    "triangle_count": 1956
+                },
+                {
+                    "bbox": {
+                        "depth": 12.0,
+                        "height": 4.400000095367432,
+                        "width": 13.0,
+                        "x": 657.0,
+                        "y": 209.0,
+                        "z": 2.3162840534496354e-09
+                    },
+                    "id": 161,
+                    "name": "upper_cover_snug_revised_1",
+                    "triangle_count": 2014
+                }
+            ],
+            "sliced_time": 2952,
+            "sliced_time_with_cache": 2255,
+            "total_predication": 7790.01708984375,
+            "triangle_count": 39700,
+            "warning_message": ""
+        }
+    ],
+    "sparse_infill_density": 100.0,
+    "upward_compatible_machine": [
+        "Bambu Lab H2D Pro 0.4 nozzle"
+    ],
+    "wall_loops": 6
+}

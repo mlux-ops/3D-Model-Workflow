@@ -1,0 +1,87 @@
+SettingsUnitsInfo Domino_White_1x6_units { meters_scale=0.01; }
+UVWGenChannel Domino_White_1x6_uvw { uvw_channel=1; }
+BitmapBuffer Domino_White_1x6_Color_buffer { file="C:/Users/found/OneDrive/Documents/ChatGPT/3D Model Workflow/output/belmont_tiles/Domino_White_1x6/textures/Color.png"; transfer_function=2; gamma=1; }
+TexBitmap Domino_White_1x6_Color { bitmap=Domino_White_1x6_Color_buffer; uvwgen=Domino_White_1x6_uvw; tile=1; }
+BitmapBuffer Domino_White_1x6_Normal_buffer { file="C:/Users/found/OneDrive/Documents/ChatGPT/3D Model Workflow/output/belmont_tiles/Domino_White_1x6/textures/Normal.png"; transfer_function=0; gamma=1; }
+TexBitmap Domino_White_1x6_Normal { bitmap=Domino_White_1x6_Normal_buffer; uvwgen=Domino_White_1x6_uvw; tile=1; }
+BitmapBuffer Domino_White_1x6_Roughness_buffer { file="C:/Users/found/OneDrive/Documents/ChatGPT/3D Model Workflow/output/belmont_tiles/Domino_White_1x6/textures/Roughness.png"; transfer_function=0; gamma=1; }
+TexBitmap Domino_White_1x6_Roughness { bitmap=Domino_White_1x6_Roughness_buffer; uvwgen=Domino_White_1x6_uvw; tile=1; }
+BRDFVRayMtl Domino_White_1x6_brdf { diffuse=Domino_White_1x6_Color; reflect=Color(1,1,1); fresnel=1; fresnel_ior=1.5; refract_ior=1.5; metalness=0; option_use_roughness=1; reflect_glossiness=Domino_White_1x6_Roughness; bump_map=Domino_White_1x6_Normal; bump_type=1; bump_amount=1; }
+MtlSingleBRDF Domino_White_1x6 { brdf=Domino_White_1x6_brdf; }
+
+SettingsUnitsInfo Soreno_Ivory_2x2_units { meters_scale=0.01; }
+UVWGenChannel Soreno_Ivory_2x2_uvw { uvw_channel=1; }
+BitmapBuffer Soreno_Ivory_2x2_Color_buffer { file="C:/Users/found/OneDrive/Documents/ChatGPT/3D Model Workflow/output/belmont_tiles/Soreno_Ivory_2x2/textures/Color.png"; transfer_function=2; gamma=1; }
+TexBitmap Soreno_Ivory_2x2_Color { bitmap=Soreno_Ivory_2x2_Color_buffer; uvwgen=Soreno_Ivory_2x2_uvw; tile=1; }
+BitmapBuffer Soreno_Ivory_2x2_Normal_buffer { file="C:/Users/found/OneDrive/Documents/ChatGPT/3D Model Workflow/output/belmont_tiles/Soreno_Ivory_2x2/textures/Normal.png"; transfer_function=0; gamma=1; }
+TexBitmap Soreno_Ivory_2x2_Normal { bitmap=Soreno_Ivory_2x2_Normal_buffer; uvwgen=Soreno_Ivory_2x2_uvw; tile=1; }
+BitmapBuffer Soreno_Ivory_2x2_Roughness_buffer { file="C:/Users/found/OneDrive/Documents/ChatGPT/3D Model Workflow/output/belmont_tiles/Soreno_Ivory_2x2/textures/Roughness.png"; transfer_function=0; gamma=1; }
+TexBitmap Soreno_Ivory_2x2_Roughness { bitmap=Soreno_Ivory_2x2_Roughness_buffer; uvwgen=Soreno_Ivory_2x2_uvw; tile=1; }
+BRDFVRayMtl Soreno_Ivory_2x2_brdf { diffuse=Soreno_Ivory_2x2_Color; reflect=Color(1,1,1); fresnel=1; fresnel_ior=1.5; refract_ior=1.5; metalness=0; option_use_roughness=1; reflect_glossiness=Soreno_Ivory_2x2_Roughness; bump_map=Soreno_Ivory_2x2_Normal; bump_type=1; bump_amount=1; }
+MtlSingleBRDF Soreno_Ivory_2x2 { brdf=Soreno_Ivory_2x2_brdf; }
+
+SettingsUnitsInfo RAW_Greige_24x48_units { meters_scale=0.01; }
+UVWGenChannel RAW_Greige_24x48_uvw { uvw_channel=1; }
+BitmapBuffer RAW_Greige_24x48_Color_buffer { file="C:/Users/found/OneDrive/Documents/ChatGPT/3D Model Workflow/output/belmont_tiles/RAW_Greige_24x48/textures/Color.png"; transfer_function=2; gamma=1; }
+TexBitmap RAW_Greige_24x48_Color { bitmap=RAW_Greige_24x48_Color_buffer; uvwgen=RAW_Greige_24x48_uvw; tile=1; }
+BitmapBuffer RAW_Greige_24x48_Normal_buffer { file="C:/Users/found/OneDrive/Documents/ChatGPT/3D Model Workflow/output/belmont_tiles/RAW_Greige_24x48/textures/Normal.png"; transfer_function=0; gamma=1; }
+TexBitmap RAW_Greige_24x48_Normal { bitmap=RAW_Greige_24x48_Normal_buffer; uvwgen=RAW_Greige_24x48_uvw; tile=1; }
+BitmapBuffer RAW_Greige_24x48_Roughness_buffer { file="C:/Users/found/OneDrive/Documents/ChatGPT/3D Model Workflow/output/belmont_tiles/RAW_Greige_24x48/textures/Roughness.png"; transfer_function=0; gamma=1; }
+TexBitmap RAW_Greige_24x48_Roughness { bitmap=RAW_Greige_24x48_Roughness_buffer; uvwgen=RAW_Greige_24x48_uvw; tile=1; }
+BRDFVRayMtl RAW_Greige_24x48_brdf { diffuse=RAW_Greige_24x48_Color; reflect=Color(1,1,1); fresnel=1; fresnel_ior=1.5; refract_ior=1.5; metalness=0; option_use_roughness=1; reflect_glossiness=RAW_Greige_24x48_Roughness; bump_map=RAW_Greige_24x48_Normal; bump_type=1; bump_amount=1; }
+MtlSingleBRDF RAW_Greige_24x48 { brdf=RAW_Greige_24x48_brdf; }
+
+SettingsUnitsInfo Clara_Bermuda_4x4_units { meters_scale=0.01; }
+UVWGenChannel Clara_Bermuda_4x4_uvw { uvw_channel=1; }
+BitmapBuffer Clara_Bermuda_4x4_Color_buffer { file="C:/Users/found/OneDrive/Documents/ChatGPT/3D Model Workflow/output/belmont_tiles/Clara_Bermuda_4x4/textures/Color.png"; transfer_function=2; gamma=1; }
+TexBitmap Clara_Bermuda_4x4_Color { bitmap=Clara_Bermuda_4x4_Color_buffer; uvwgen=Clara_Bermuda_4x4_uvw; tile=1; }
+BitmapBuffer Clara_Bermuda_4x4_Normal_buffer { file="C:/Users/found/OneDrive/Documents/ChatGPT/3D Model Workflow/output/belmont_tiles/Clara_Bermuda_4x4/textures/Normal.png"; transfer_function=0; gamma=1; }
+TexBitmap Clara_Bermuda_4x4_Normal { bitmap=Clara_Bermuda_4x4_Normal_buffer; uvwgen=Clara_Bermuda_4x4_uvw; tile=1; }
+BitmapBuffer Clara_Bermuda_4x4_Roughness_buffer { file="C:/Users/found/OneDrive/Documents/ChatGPT/3D Model Workflow/output/belmont_tiles/Clara_Bermuda_4x4/textures/Roughness.png"; transfer_function=0; gamma=1; }
+TexBitmap Clara_Bermuda_4x4_Roughness { bitmap=Clara_Bermuda_4x4_Roughness_buffer; uvwgen=Clara_Bermuda_4x4_uvw; tile=1; }
+BRDFVRayMtl Clara_Bermuda_4x4_brdf { diffuse=Clara_Bermuda_4x4_Color; reflect=Color(1,1,1); fresnel=1; fresnel_ior=1.5; refract_ior=1.5; metalness=0; option_use_roughness=1; reflect_glossiness=Clara_Bermuda_4x4_Roughness; bump_map=Clara_Bermuda_4x4_Normal; bump_type=1; bump_amount=1; }
+MtlSingleBRDF Clara_Bermuda_4x4 { brdf=Clara_Bermuda_4x4_brdf; }
+
+SettingsUnitsInfo Soreno_Ivory_24x48_units { meters_scale=0.01; }
+UVWGenChannel Soreno_Ivory_24x48_uvw { uvw_channel=1; }
+BitmapBuffer Soreno_Ivory_24x48_Color_buffer { file="C:/Users/found/OneDrive/Documents/ChatGPT/3D Model Workflow/output/belmont_tiles/Soreno_Ivory_24x48/textures/Color.png"; transfer_function=2; gamma=1; }
+TexBitmap Soreno_Ivory_24x48_Color { bitmap=Soreno_Ivory_24x48_Color_buffer; uvwgen=Soreno_Ivory_24x48_uvw; tile=1; }
+BitmapBuffer Soreno_Ivory_24x48_Normal_buffer { file="C:/Users/found/OneDrive/Documents/ChatGPT/3D Model Workflow/output/belmont_tiles/Soreno_Ivory_24x48/textures/Normal.png"; transfer_function=0; gamma=1; }
+TexBitmap Soreno_Ivory_24x48_Normal { bitmap=Soreno_Ivory_24x48_Normal_buffer; uvwgen=Soreno_Ivory_24x48_uvw; tile=1; }
+BitmapBuffer Soreno_Ivory_24x48_Roughness_buffer { file="C:/Users/found/OneDrive/Documents/ChatGPT/3D Model Workflow/output/belmont_tiles/Soreno_Ivory_24x48/textures/Roughness.png"; transfer_function=0; gamma=1; }
+TexBitmap Soreno_Ivory_24x48_Roughness { bitmap=Soreno_Ivory_24x48_Roughness_buffer; uvwgen=Soreno_Ivory_24x48_uvw; tile=1; }
+BRDFVRayMtl Soreno_Ivory_24x48_brdf { diffuse=Soreno_Ivory_24x48_Color; reflect=Color(1,1,1); fresnel=1; fresnel_ior=1.5; refract_ior=1.5; metalness=0; option_use_roughness=1; reflect_glossiness=Soreno_Ivory_24x48_Roughness; bump_map=Soreno_Ivory_24x48_Normal; bump_type=1; bump_amount=1; }
+MtlSingleBRDF Soreno_Ivory_24x48 { brdf=Soreno_Ivory_24x48_brdf; }
+
+SettingsUnitsInfo ElmStone_Jute_24x48_units { meters_scale=0.01; }
+UVWGenChannel ElmStone_Jute_24x48_uvw { uvw_channel=1; }
+BitmapBuffer ElmStone_Jute_24x48_Color_buffer { file="C:/Users/found/OneDrive/Documents/ChatGPT/3D Model Workflow/output/belmont_tiles/ElmStone_Jute_24x48/textures/Color.png"; transfer_function=2; gamma=1; }
+TexBitmap ElmStone_Jute_24x48_Color { bitmap=ElmStone_Jute_24x48_Color_buffer; uvwgen=ElmStone_Jute_24x48_uvw; tile=1; }
+BitmapBuffer ElmStone_Jute_24x48_Normal_buffer { file="C:/Users/found/OneDrive/Documents/ChatGPT/3D Model Workflow/output/belmont_tiles/ElmStone_Jute_24x48/textures/Normal.png"; transfer_function=0; gamma=1; }
+TexBitmap ElmStone_Jute_24x48_Normal { bitmap=ElmStone_Jute_24x48_Normal_buffer; uvwgen=ElmStone_Jute_24x48_uvw; tile=1; }
+BitmapBuffer ElmStone_Jute_24x48_Roughness_buffer { file="C:/Users/found/OneDrive/Documents/ChatGPT/3D Model Workflow/output/belmont_tiles/ElmStone_Jute_24x48/textures/Roughness.png"; transfer_function=0; gamma=1; }
+TexBitmap ElmStone_Jute_24x48_Roughness { bitmap=ElmStone_Jute_24x48_Roughness_buffer; uvwgen=ElmStone_Jute_24x48_uvw; tile=1; }
+BRDFVRayMtl ElmStone_Jute_24x48_brdf { diffuse=ElmStone_Jute_24x48_Color; reflect=Color(1,1,1); fresnel=1; fresnel_ior=1.5; refract_ior=1.5; metalness=0; option_use_roughness=1; reflect_glossiness=ElmStone_Jute_24x48_Roughness; bump_map=ElmStone_Jute_24x48_Normal; bump_type=1; bump_amount=1; }
+MtlSingleBRDF ElmStone_Jute_24x48 { brdf=ElmStone_Jute_24x48_brdf; }
+
+SettingsUnitsInfo Scandinavian_Grey_Plain_units { meters_scale=0.01; }
+UVWGenChannel Scandinavian_Grey_Plain_uvw { uvw_channel=1; }
+BitmapBuffer Scandinavian_Grey_Plain_Color_buffer { file="C:/Users/found/OneDrive/Documents/ChatGPT/3D Model Workflow/output/belmont_tiles/Scandinavian_Grey_Plain/textures/Color.png"; transfer_function=2; gamma=1; }
+TexBitmap Scandinavian_Grey_Plain_Color { bitmap=Scandinavian_Grey_Plain_Color_buffer; uvwgen=Scandinavian_Grey_Plain_uvw; tile=1; }
+BitmapBuffer Scandinavian_Grey_Plain_Normal_buffer { file="C:/Users/found/OneDrive/Documents/ChatGPT/3D Model Workflow/output/belmont_tiles/Scandinavian_Grey_Plain/textures/Normal.png"; transfer_function=0; gamma=1; }
+TexBitmap Scandinavian_Grey_Plain_Normal { bitmap=Scandinavian_Grey_Plain_Normal_buffer; uvwgen=Scandinavian_Grey_Plain_uvw; tile=1; }
+BitmapBuffer Scandinavian_Grey_Plain_Roughness_buffer { file="C:/Users/found/OneDrive/Documents/ChatGPT/3D Model Workflow/output/belmont_tiles/Scandinavian_Grey_Plain/textures/Roughness.png"; transfer_function=0; gamma=1; }
+TexBitmap Scandinavian_Grey_Plain_Roughness { bitmap=Scandinavian_Grey_Plain_Roughness_buffer; uvwgen=Scandinavian_Grey_Plain_uvw; tile=1; }
+BRDFVRayMtl Scandinavian_Grey_Plain_brdf { diffuse=Scandinavian_Grey_Plain_Color; reflect=Color(1,1,1); fresnel=1; fresnel_ior=1.5; refract_ior=1.5; metalness=0; option_use_roughness=1; reflect_glossiness=Scandinavian_Grey_Plain_Roughness; bump_map=Scandinavian_Grey_Plain_Normal; bump_type=1; bump_amount=1; }
+MtlSingleBRDF Scandinavian_Grey_Plain { brdf=Scandinavian_Grey_Plain_brdf; }
+
+SettingsUnitsInfo Honey_Comb_2in_Hex_units { meters_scale=0.01; }
+UVWGenChannel Honey_Comb_2in_Hex_uvw { uvw_channel=1; }
+BitmapBuffer Honey_Comb_2in_Hex_Color_buffer { file="C:/Users/found/OneDrive/Documents/ChatGPT/3D Model Workflow/output/belmont_tiles/Honey_Comb_2in_Hex/textures/Color.png"; transfer_function=2; gamma=1; }
+TexBitmap Honey_Comb_2in_Hex_Color { bitmap=Honey_Comb_2in_Hex_Color_buffer; uvwgen=Honey_Comb_2in_Hex_uvw; tile=1; }
+BitmapBuffer Honey_Comb_2in_Hex_Normal_buffer { file="C:/Users/found/OneDrive/Documents/ChatGPT/3D Model Workflow/output/belmont_tiles/Honey_Comb_2in_Hex/textures/Normal.png"; transfer_function=0; gamma=1; }
+TexBitmap Honey_Comb_2in_Hex_Normal { bitmap=Honey_Comb_2in_Hex_Normal_buffer; uvwgen=Honey_Comb_2in_Hex_uvw; tile=1; }
+BitmapBuffer Honey_Comb_2in_Hex_Roughness_buffer { file="C:/Users/found/OneDrive/Documents/ChatGPT/3D Model Workflow/output/belmont_tiles/Honey_Comb_2in_Hex/textures/Roughness.png"; transfer_function=0; gamma=1; }
+TexBitmap Honey_Comb_2in_Hex_Roughness { bitmap=Honey_Comb_2in_Hex_Roughness_buffer; uvwgen=Honey_Comb_2in_Hex_uvw; tile=1; }
+BRDFVRayMtl Honey_Comb_2in_Hex_brdf { diffuse=Honey_Comb_2in_Hex_Color; reflect=Color(1,1,1); fresnel=1; fresnel_ior=1.5; refract_ior=1.5; metalness=0; option_use_roughness=1; reflect_glossiness=Honey_Comb_2in_Hex_Roughness; bump_map=Honey_Comb_2in_Hex_Normal; bump_type=1; bump_amount=1; }
+MtlSingleBRDF Honey_Comb_2in_Hex { brdf=Honey_Comb_2in_Hex_brdf; }

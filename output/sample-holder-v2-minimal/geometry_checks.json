@@ -1,0 +1,212 @@
+{
+  "01_concealed_frame": {
+    "non_manifold_edges": 0,
+    "volume_mm3": 13160.549182382223,
+    "print_dimensions_mm": [
+      66.0,
+      85.0,
+      10.5
+    ]
+  },
+  "02_top_carriage": {
+    "non_manifold_edges": 0,
+    "volume_mm3": 2654.4699341980563,
+    "print_dimensions_mm": [
+      9.3,
+      19.0,
+      32.0
+    ]
+  },
+  "lower_12.70mm": {
+    "non_manifold_edges": 0,
+    "volume_mm3": 1020.9077142613947,
+    "print_dimensions_mm": [
+      21.5,
+      24.5,
+      6.0
+    ]
+  },
+  "upper_12.70mm": {
+    "non_manifold_edges": 0,
+    "volume_mm3": 641.8597607142307,
+    "print_dimensions_mm": [
+      22.0,
+      10.55,
+      6.0
+    ]
+  },
+  "lower_15.88mm": {
+    "non_manifold_edges": 0,
+    "volume_mm3": 1106.427555418595,
+    "print_dimensions_mm": [
+      24.675,
+      24.5,
+      6.0
+    ]
+  },
+  "upper_15.88mm": {
+    "non_manifold_edges": 0,
+    "volume_mm3": 708.4034523139973,
+    "print_dimensions_mm": [
+      25.175,
+      10.55,
+      6.0
+    ]
+  },
+  "lower_19.05mm": {
+    "non_manifold_edges": 0,
+    "volume_mm3": 1191.9474632040626,
+    "print_dimensions_mm": [
+      27.85,
+      24.5,
+      6.0
+    ]
+  },
+  "upper_19.05mm": {
+    "non_manifold_edges": 0,
+    "volume_mm3": 774.9471953683234,
+    "print_dimensions_mm": [
+      28.35,
+      10.55,
+      6.0
+    ]
+  },
+  "lower_22.23mm": {
+    "non_manifold_edges": 0,
+    "volume_mm3": 1277.4673630597779,
+    "print_dimensions_mm": [
+      31.025,
+      24.5,
+      6.0
+    ]
+  },
+  "upper_22.23mm": {
+    "non_manifold_edges": 0,
+    "volume_mm3": 841.4909366649737,
+    "print_dimensions_mm": [
+      31.525,
+      10.55,
+      6.0
+    ]
+  },
+  "lower_25.40mm": {
+    "non_manifold_edges": 0,
+    "volume_mm3": 1362.9872189026944,
+    "print_dimensions_mm": [
+      34.2,
+      24.5,
+      6.0
+    ]
+  },
+  "upper_25.40mm": {
+    "non_manifold_edges": 0,
+    "volume_mm3": 908.0346507350873,
+    "print_dimensions_mm": [
+      34.7,
+      10.55,
+      6.0
+    ]
+  },
+  "assembly_checks": [
+    {
+      "thickness_mm": 12.7,
+      "intersections_mm3": {
+        "01_concealed_frame / left lower": 0.0,
+        "01_concealed_frame / right lower": 0.0,
+        "01_concealed_frame / 02_top_carriage": 0.010696829654019234,
+        "02_top_carriage / upper_12.70mm": 0.0,
+        "01_concealed_frame / test sample": 0.0,
+        "left lower / test sample": 0.0,
+        "right lower / test sample": 0.0,
+        "upper_12.70mm / test sample": 0.0,
+        "02_top_carriage / test sample": 0.0,
+        "Opening carriage / frame": 0.0,
+        "Opening hook / sample": 0.0
+      },
+      "tolerance_mm3": 0.04,
+      "top_clearance_mm": 0.8,
+      "face_overlap_mm": 3,
+      "wall_to_front_mm": 25.5
+    },
+    {
+      "thickness_mm": 15.875,
+      "intersections_mm3": {
+        "01_concealed_frame / left lower": 0.0,
+        "01_concealed_frame / right lower": 0.0,
+        "01_concealed_frame / 02_top_carriage": 0.010696829654019234,
+        "02_top_carriage / upper_15.88mm": 0.0,
+        "01_concealed_frame / test sample": 0.0,
+        "left lower / test sample": 0.0,
+        "right lower / test sample": 0.0,
+        "upper_15.88mm / test sample": 0.0,
+        "02_top_carriage / test sample": 0.0,
+        "Opening carriage / frame": 0.0,
+        "Opening hook / sample": 0.0
+      },
+      "tolerance_mm3": 0.04,
+      "top_clearance_mm": 0.8,
+      "face_overlap_mm": 3,
+      "wall_to_front_mm": 28.675
+    },
+    {
+      "thickness_mm": 19.05,
+      "intersections_mm3": {
+        "01_concealed_frame / left lower": 0.0,
+        "01_concealed_frame / right lower": 0.0,
+        "01_concealed_frame / 02_top_carriage": 0.010696829654019234,
+        "02_top_carriage / upper_19.05mm": 0.0,
+        "01_concealed_frame / test sample": 0.0,
+        "left lower / test sample": 0.0,
+        "right lower / test sample": 0.0,
+        "upper_19.05mm / test sample": 0.0,
+        "02_top_carriage / test sample": 0.0,
+        "Opening carriage / frame": 0.0,
+        "Opening hook / sample": 0.0
+      },
+      "tolerance_mm3": 0.04,
+      "top_clearance_mm": 0.8,
+      "face_overlap_mm": 3,
+      "wall_to_front_mm": 31.85
+    },
+    {
+      "thickness_mm": 22.225,
+      "intersections_mm3": {
+        "01_concealed_frame / left lower": 0.0,
+        "01_concealed_frame / right lower": 0.0,
+        "01_concealed_frame / 02_top_carriage": 0.010696829654019234,
+        "02_top_carriage / upper_22.23mm": 0.0,
+        "01_concealed_frame / test sample": 0.00018954291800810097,
+        "left lower / test sample": 0.0,
+        "right lower / test sample": 0.0,
+        "upper_22.23mm / test sample": 0.0,
+        "02_top_carriage / test sample": 0.0,
+        "Opening carriage / frame": 0.0,
+        "Opening hook / sample": 0.0
+      },
+      "tolerance_mm3": 0.04,
+      "top_clearance_mm": 0.8,
+      "face_overlap_mm": 3,
+      "wall_to_front_mm": 35.025
+    },
+    {
+      "thickness_mm": 25.4,
+      "intersections_mm3": {
+        "01_concealed_frame / left lower": 0.0,
+        "01_concealed_frame / right lower": 0.0,
+        "01_concealed_frame / 02_top_carriage": 0.010696829654019234,
+        "02_top_carriage / upper_25.40mm": 0.0,
+        "01_concealed_frame / test sample": 0.0,
+        "left lower / test sample": 0.0,
+        "right lower / test sample": 0.0,
+        "upper_25.40mm / test sample": 0.0,
+        "02_top_carriage / test sample": 0.0,
+        "Opening carriage / frame": 0.0,
+        "Opening hook / sample": 0.0
+      },
+      "tolerance_mm3": 0.04,
+      "top_clearance_mm": 0.8,
+      "face_overlap_mm": 3,
+      "wall_to_front_mm": 38.2
+    }
+  ]
+}
