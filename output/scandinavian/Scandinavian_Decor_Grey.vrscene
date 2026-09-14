@@ -1,0 +1,10 @@
+SettingsUnitsInfo Adella_units { meters_scale=0.01; }
+UVWGenChannel Adella_uvw { uvw_channel=1; }
+BitmapBuffer Adella_Color_buffer { file="textures/Scandinavian_Color.png"; transfer_function=2; gamma=1; }
+TexBitmap Adella_Color { bitmap=Adella_Color_buffer; uvwgen=Adella_uvw; tile=1; }
+BitmapBuffer Adella_Normal_buffer { file="textures/Scandinavian_Normal.png"; transfer_function=0; gamma=1; }
+TexBitmap Adella_Normal { bitmap=Adella_Normal_buffer; uvwgen=Adella_uvw; tile=1; }
+BitmapBuffer Adella_Roughness_buffer { file="textures/Scandinavian_Roughness.png"; transfer_function=0; gamma=1; }
+TexBitmap Adella_Roughness { bitmap=Adella_Roughness_buffer; uvwgen=Adella_uvw; tile=1; }
+BRDFVRayMtl Adella_brdf { diffuse=Adella_Color; reflect=Color(1,1,1); fresnel=1; fresnel_ior=1.5; refract_ior=1.5; metalness=0; option_use_roughness=1; reflect_glossiness=Adella_Roughness; bump_map=Adella_Normal; bump_type=1; bump_amount=1; }
+MtlSingleBRDF Scandinavian_Decor_Grey { brdf=Adella_brdf; }

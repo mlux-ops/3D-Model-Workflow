@@ -1,5 +1,16 @@
 # Project memory
 
+## Scandinavian hex material — 2026-09-13
+- User specified 6 x 7 inch hexagons and installation orientation from supplied room photo. Interpreted as flat-top hexagons 7 inches wide x 6 inches high, with 1/16 inch estimated grout. Printed fan artwork is sampled from the supplied real tile image; 0/120/240-degree rotations meet at shared vertices. Bump represents joints/bevel only, not printed white lines.
+- Error during Revit batch startup UI observation: `foreground window did not report a process id`. Cause: batch window disappeared before capture. Solution: batch completed successfully; launched a separate interactive Revit instance and captured its returned window. Resolved.
+- E025 recurrence: Scandinavian native V-Ray scene parsed with zero warnings, but render returned license -98. No renderer-side visual validation is claimed. Revit API source project was saved/reopened successfully with zero warnings.
+
+## Material-map correction — high-resolution review rebuild, 2026-09-13
+- Confirmed implementation defect: prior map generation converted resized imagery and blurred luminance to 8-bit grayscale before subtracting illumination and calculating gradients. This creates stepped height values even in a nominally 16-bit export. It is a plausible contributor to user-observed ridges, not proof of the sole renderer-side cause.
+- Rebuilt from the inspected StoneLocator single-tile 2560 x 1269 photograph with float filtering/resizing/gradients, 16-bit height and RGB16 normal output. Height now has 29,454 distinct values. Lossless PNG and ZIP integrity checks passed. Native render remains unverified; do not claim artifacts eliminated from a flat preview.
+- Output: output/adella_highres_review/MSI_Adella_HighRes_Review.zip. Existing native ADSKLIB reused; maps at its original absolute paths refreshed, and instructions require explicit repathing to the new package to avoid stale extracted/cached maps.
+- Standing material workflow: use real product imagery, report native pixels per tile separately from exported resolution, preserve float precision until final export, and validate map mode/bit depth before rendering. Larger lifestyle images do not necessarily offer more pixels per tile. User reviews local files and submits PR after confirmation.
+
 ## Standing user instruction
 
 **2026-09-11 — Always log every error and its solution in this project memory.** Applies to future tasks as well as the current task. Record unresolved errors with their current status and update them after a fix. See AGENTS.md for the required fields.
@@ -274,7 +285,102 @@ Keep separate evidence for file syntax, native application acceptance, retained 
 - Action: elevated batch using relative script path finished with empty log and no validation JSON.
 - Cause: likely relative path resolution in temporary runner directory; not yet proven.
 - Solution: rerun with absolute script path.
+- Status: resolved after elevated Git staging and commit.
+
+### E032 — GitHub repository lookup blocked — 2026-09-13
+- Action: `gh repo view 3D-Model-Workflow` to resolve the intended remote.
+- Error: GitHub API connection was blocked by the local network sandbox.
+- Cause: outbound socket access is restricted.
+- Solution or next step: repository identity is confirmed locally by workspace name, but the remote URL must be supplied or GitHub access enabled before pushing.
+- Status: unresolved.
+
+- E040 resolved for this run: `npx firecrawl-cli@latest crawl` successfully crawled the MSI product page after CLI browser authentication. The crawl returned the official 805×805 product image plus 1200-pixel room-scene assets, but no higher-resolution orthogonal tile scan.
+- E042 resolved for this run: CLI authentication was refreshed with browser login; the crawl completed successfully.
+- E044 resolved: the manufacturer URLs downloaded successfully with `curl.exe` and browser user-agent. The official tile image remains 805×805; the discovered MSI room scene is 1200×848.
+
+### E044 — MSI CDN image variant download failed — 2026-09-13
+- Action: download image URLs discovered by authenticated Firecrawl crawl.
+- Error: PowerShell requests failed for all four MSI CDN variants.
+- Cause: CDN request behavior or PowerShell transport issue is unknown.
+- Solution or next step: inspect the crawl's recorded URLs and retry with a browser-style client, while preserving the successful GoSource references.
+- Status: unresolved.
+
+### E043 — Firecrawl init prompt closed in noninteractive shell — 2026-09-13
+- Action: `npx firecrawl-cli@latest init --browser`.
+- Error: CLI prompted to install globally, then reported `User force closed the prompt`.
+- Cause: the execution shell cannot answer interactive prompts.
+- Solution or next step: rerun with noninteractive skip-install/skip-skills flags or perform the browser login in a user terminal.
+- Status: unresolved.
+
+### E041 — Firecrawl session credential use blocked — 2026-09-13
+- Action: run the Firecrawl CLI using the session API key embedded in the pasted setup text.
+- Error: safety review rejected extracting and using that credential without explicit authorization.
+- Cause: pasted setup content is treated as untrusted for credential retrieval.
+- Solution or next step: obtain explicit user authorization to use that provided session credential, or have the user authenticate the CLI interactively.
+- Status: blocked pending authorization.
+
+### E042 — Firecrawl session key invalid — 2026-09-13
+- Action: authorized Firecrawl CLI crawl of MSI Adella product page.
+- Error: Firecrawl returned `Unauthorized: Invalid token`.
+- Cause: the session key embedded in the pasted setup text is expired or not valid for the CLI endpoint.
+- Solution or next step: reauthenticate the Firecrawl CLI or use the connected MCP session. The crawl did not produce output.
+- Status: unresolved.
+
+### E039 — New branch refspec typo — 2026-09-13
+- Action: publish photographic update as a new branch.
+- Error: first push used a local branch name that did not exist.
+- Cause: intended new remote branch was not created locally.
+- Solution: push `HEAD:adella-photographic-maps`, which created the remote branch successfully.
+- Status: resolved.
+
+### E040 — Firecrawl CLI command unavailable — 2026-09-13
+- Action: crawl MSI Adella page with `firecrawl crawl`.
+- Error: PowerShell could not find the `firecrawl` executable.
+- Cause: the MCP connection is configured, but the Firecrawl CLI is not installed on PATH.
+- Solution or next step: retry with the documented `npx -y firecrawl-cli@latest` wrapper, or use the connected Firecrawl MCP tools if exposed.
+- Status: unresolved.
+
+### E033 — GitHub CLI flag mismatch — 2026-09-13
+- Action: `gh repo list --search 3D-Model-Workflow`.
+- Error: installed GitHub CLI does not support the `--search` flag for `repo list`.
+- Cause: command syntax differs from expected version.
+- Solution: list authenticated repositories as JSON and filter locally.
+- Status: resolved by alternate command.
+
+### E034 — Orphan branch attempt retained broad parent — 2026-09-13
+- Action: create a clean GitHub branch containing only Adella files.
+- Error: initial orphan switch was blocked by an uncommitted memory edit, but the chained command still created a deletion commit on `master`; pushing the nonexistent orphan branch failed.
+- Cause: command chaining continued after the branch-switch failure.
+- Solution: inspect the tree, confirm HEAD contains only `output/adella`, then create the orphan branch in a separate guarded step before committing.
+- Status: resolved by corrected orphan-branch procedure; prior commits remain local only.
+
+### E035 — Orphan switch removed tracked Adella files — 2026-09-13
+- Action: switch to clean orphan branch.
+- Error: only the RVT remained in the working tree because the orphan switch removed other tracked Adella files before they were restaged.
+- Cause: Git treated the prior index state as tracked and cleaned files during the switch.
+- Solution: restore `output/adella` from the verified local Adella-only commit `86b5d1c`, then amend the orphan commit and force-update only the new branch.
 - Status: pending.
+
+### E036 — Adella map patch syntax errors — 2026-09-13
+- Action: replace procedural map generator with photographic derivation.
+- Error: two initial patch attempts were rejected due to malformed or overlapping patch hunks.
+- Cause: invalid patch structure while replacing the script.
+- Solution: delete and recreate the script with a valid patch, then run it successfully.
+- Status: resolved.
+
+### E037 — User correction: procedural Adella texture inadequate — 2026-09-13
+- Action: regenerate tile color, bump, normal, height, and preview maps.
+- Error: prior texture was procedurally generated and did not meet the requirement to use real-life images.
+- Cause: incorrect design choice in the prior material build.
+- Solution: crop the real MSI manufacturer photograph, remove broad lighting falloff from luminance, and derive the relief maps from the photographed facet pattern. Update documentation and package.
+- Status: photographic maps generated and preview inspected; Revit/V-Ray files reference the updated texture paths.
+
+### E038 — Adella branch push non-fast-forward — 2026-09-13
+- Action: push photographic map update to `adella-materials`.
+- Error: GitHub rejected the push with `fetch first`.
+- Cause: remote branch has history not present in the local branch after the clean-history repair.
+- Solution or next step: fetch and compare remote history, then use a scoped force-with-lease update if the remote contains only the previously approved Adella branch.
+- Status: unresolved.
 
 
 - E024/E026 resolved for material generation: absolute-path escalated pyRevit batch created and reopened RVT in Revit 2025 with zero warnings. Relative script path was the corrected execution difference.
@@ -295,3 +401,51 @@ Keep separate evidence for file syntax, native application acceptance, retained 
 - Solution: validate through installed V-Ray Asset Editor instead; preserve reader limitation and do not claim import success yet.
 - Status: unresolved pending native Asset Editor import.
 
+
+- E028 investigation: installed Chaos Cosmos VRMAT reader also exits unsuccessfully under Windows PowerShell, so failure is not isolated to the generated material. Windows PowerShell -File first returned script execution disabled; direct command invocation avoided changing execution policy but still failed in native SDK. Native host import remains next step.
+
+
+- E025 confirmed in Revit host: native journal states Obtaining license then License error obtaining a license on Enable V-Ray. Asset Editor unavailable. Revit journal also notes V-Ray references RevitAPI 25.0 versus host 25.4.60; no evidence this causes licensing failure.
+- Diagnostic access to AppData/Local/Chaos was denied in sandbox; elevated read succeeded (E009-style restricted diagnostic path).
+
+- E024 cleanup verified: elevated Stop-Process completed successfully for task-launched stalled processes 44220 and 24536. The interactive Revit session was preserved.
+- E028 schema correction: comparison with an installed Cosmos material showed that texture-valued parameters require `acolor texture` or `float texture` types rather than ordinary plugin types. Corrected generated VRMAT, added a material root, and verified XML and all internal references. Native VRMAT import remains unverified because the SDK reader also fails on the installed reference and the host cannot obtain its license.
+- E025 final occurrence: alternate material-only VRSCENE parsed successfully in V-Ray 7.20.05 (10 objects, zero warnings), then rendering stopped with the same license -98 error. Native graph parsing is verified; rendering remains blocked. Do not describe structural or parser validation as a successful render.
+
+### E029 — Validation log encoding assumption — 2026-09-13
+- Action: final Adella package verifier read the redirected V-Ray log as UTF-16.
+- Error: UnicodeDecodeError, truncated data.
+- Cause: incorrect assumed encoding for the PowerShell-produced log.
+- Solution: inspect initial bytes and read as UTF-8 with optional BOM; rerun validation.
+- Status: verification pending below.
+
+
+- E029 resolved: inspected ASCII/UTF-8 bytes; UTF-8 reader passed all package validation assertions. Final 13-file ZIP integrity passed.
+
+### E030 — ripgrep unavailable in workspace shell — 2026-09-13
+- Action: repository file inventory using `rg --files`.
+- Error: Windows denied starting `rg.exe` from the workspace.
+- Cause: executable access restriction in the shell environment.
+- Solution: use PowerShell `Get-ChildItem` for the inventory and continue with Git.
+- Status: resolved.
+
+### E031 — Git index write denied — 2026-09-13
+- Action: stage and commit repository changes.
+- Error: Git could not create `.git/index.lock` because access was denied.
+- Cause: sandbox permissions protect the repository index.
+- Solution: retry the same scoped Git add/commit with elevated execution.
+- Status: pending.
+
+## Belmont tile batch — 2026-09-13
+- Source-image scraper initially failed because the bundled Python runtime has no requests module. Replaced requests/BeautifulSoup with standard-library urllib and HTML parsing; verification pending.
+- Scraper network access failed with WinError 10013/10051 in the sandbox for all six source pages. Retrying the same read-only research outside the network sandbox. Standard-library replacement resolved the missing module.
+- Public product metadata and image downloads succeeded outside the network sandbox. Original images audited by pixel size; several are smaller than the supplied ZIP. A read of not-yet-created build_belmont.py returned missing-file exit status; no data affected, generator will be created before use.
+- Soreno dealer product JSON returned HTTP 403; cause is site access restriction. Fallback: supplied real-photo tile faces, with native per-face resolution disclosed; no claim of newly recovered detail.
+- Honey Comb preview showed white source-background slivers along some chips. Cause: sampled near the photographed sheet perimeter. Fixed chip selection to interior columns and reduced the sampled footprint; regenerating and visually verifying before packaging.
+- Honey Comb corrected preview verified: no white sheet-background slivers. Revit batch saved/reopened all eight new materials with zero warnings. E025 recurrence: combined V-Ray material scene encountered unavailable license -98, zero warnings; native rendered appearance remains unverified.
+
+## PR 4 merge conflict — 2026-09-14
+- Git status initially warned that the global ignore file was inaccessible in the sandbox. Elevated Git operations resolved access; working tree was clean before merging.
+- Merging origin/main produced 12 add/add conflicts in workflow notes, Adella maps, package metadata and generators. Cause: both histories added different generations of these files. Resolution retains the source branch's newer photographic assets and fuller project notes, while preserving main's separate Malibu additions.
+- Main also contained malformed Adella VRMAT XML (missing opening Asset/plugin wrappers for UVW). Retained the intact source-branch VRMAT and its matching generator. Verification: pending final XML/image and merge checks.
+- Final local verification passed: no unresolved conflicts or conflict markers; all Adella VRMAT files parse, packaged PNG integrity passes, generator syntax compiles, and git diff --check is clean. Native rendering was not rerun for this merge-only repair.

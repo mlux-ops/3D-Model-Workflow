@@ -6,7 +6,7 @@ Created 2026-09-13 for visualization from the linked Villo Home tile and MSI's p
 
 - **MSI_Adella_Viso_White_R2025.adsklib** — native library created and populated in Revit 2025.4. Material: `MSI Adella Viso White - 12x24 Satin - Stacked`.
 - **MSI_Adella_Viso_White.vrmat** — V-Ray material with diffuse, roughness and tangent-space normal textures. **Native import and rendering are not verified:** the installed V-Ray integration and standalone engine could not obtain a license. XML, referenced plugins and texture files passed structural checks. The separate SDK reader also failed on an installed Chaos Cosmos reference material.
-- **textures/** — keep with the material files. These are required external assets; ADSKLIB does not embed the full-resolution textures.
+- **textures/** — keep with the material files. These are required external 4K assets; ADSKLIB does not embed the full-resolution textures.
 - **MSI_Adella_Viso_White.vrscene** — alternate material-only V-Ray scene. Parsed successfully by installed V-Ray 7.20.05 with 10 objects and zero warnings. Rendering remains blocked by license error -98. In hosts supporting material-from-file loading, select material `MSI_Adella_Viso_White`; this file contains no geometry.
 - **Adella_Material_R2025.rvt** — optional source project containing the material, saved and reopened in Revit 2025 with zero warnings.
 - **Relief_Preview.jpg** — illustrative shading of the photographed relief map, **not a Revit or V-Ray render**.
@@ -34,7 +34,7 @@ Settings: opaque nonmetallic ceramic; Fresnel IOR 1.5; GGX default; reflection r
 ## Appearance choices and accuracy
 
 - Cool white satin/matte glazed ceramic, horizontal stacked layout, light neutral 1/16 inch grout.
-- Color and relief are derived from the supplied MSI product photograph, cropped to one real tile and normalized for studio-light falloff. The photograph is not a calibrated scan, so exact mold depth and material response remain approximate.
+- Color and relief are derived from the supplied MSI product photograph, cropped to one real tile, denoised at source resolution, enlarged to 4K, and normalized for studio-light falloff. The photograph is not a calibrated scan, so exact mold depth and material response remain approximate.
 - Exact relief depth and optical measurements are unavailable. The V-Ray normal map was derived using an inferred 1.5 mm full height range; the actual facet depressions use a fraction of that range. Revit uses its own adjustable bump strength, not calibrated physical displacement.
 - White balance and sheen are approximate. Review a physical sample for finish selection. Joint width and stacked layout are visualization choices, not installation specifications.
 

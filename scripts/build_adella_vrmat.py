@@ -5,7 +5,7 @@ out=Path(__file__).resolve().parents[1]/'output/adella'
 root=E.Element('vrmat')
 def asset(url,plugin,kind):
     a=E.SubElement(root,'Asset',renderer='vray',url=url,type=kind,layout='')
-    ps=E.SubElement(E.SubElement(E.SubElement(a,'plugin'),'vrayplugin',name=plugin,type=kind,version='23'),'parameters')
+    ps=E.SubElement(E.SubElement(E.SubElement(a,'plugin'),'vrayplugin',name=plugin,type=kind,version='0'),'parameters')
     return a,ps
 def param(ps,name,typ,val):
     v=E.SubElement(E.SubElement(ps,'parameter',handler='default',label=name,name=name,listType='none',type=typ),'value')
@@ -13,19 +13,27 @@ def param(ps,name,typ,val):
         for k,n in zip('rgb',val):E.SubElement(v,k).text=str(n)
     else:v.text=str(val)
 _,p=asset('/SettingsUnitsInfo','SettingsUnitsInfo','settings');param(p,'meters_scale','float',.01)
-_,p=asset('/Adella/UVW','UVWGenChannel','uvwgen');param(p,'uvw_channel','integer',1)
+_,p=asset('/Adella/UVW','UVWGenChannel','UVW');param(p,'uvw_channel','integer',1)
 for label,file,space in [('Color','Adella_BaseColor.png',2),('Normal','Adella_Normal_OpenGL.png',0),('Roughness','Adella_Roughness.png',0)]:
     _,p=asset('/Adella/'+label+'Buffer','BitmapBuffer','bitmap')
-    param(p,'file','string','textures/'+file);param(p,'color_space','integer',space);param(p,'gamma','float',1)
+    param(p,'file','string','textures/'+file);param(p,'transfer_function','integer',space);param(p,'gamma','float',1)
     _,p=asset('/Adella/'+label,'TexBitmap','texture')
     param(p,'bitmap','plugin','/Adella/'+label+'Buffer');param(p,'uvwgen','plugin','/Adella/UVW');param(p,'tile','integer',1)
 a,p=asset('/Adella/BRDF','BRDFVRayMtl','BRDF')
-for name,typ,value in [('diffuse','plugin','/Adella/Color'),('reflect','color',(1,1,1)),('fresnel','bool',1),('fresnel_ior','float',1.5),('refract_ior','float',1.5),('metalness','float',0),('option_use_roughness','bool',1),('reflect_glossiness','plugin','/Adella/Roughness'),('bump_map','plugin','/Adella/Normal'),('bump_type','integer',1),('bump_amount','float',1)]:param(p,name,typ,value)
+for name,typ,value in [('diffuse','acolor texture','/Adella/Color'),('reflect','color',(1,1,1)),('fresnel','bool',1),('fresnel_ior','float texture',1.5),('refract_ior','float texture',1.5),('metalness','float texture',0),('option_use_roughness','bool',1),('reflect_glossiness','float texture','/Adella/Roughness'),('bump_map','acolor texture','/Adella/Normal'),('bump_type','integer',1),('bump_amount','float texture',1)]:param(p,name,typ,value)
 a,p=asset('/MSI Adella Viso White 12x24 Satin','MtlSingleBRDF','material')
 param(p,'brdf','plugin','/Adella/BRDF')
 E.SubElement(a,'preview').text=base64.b64encode((out/'Relief_Preview.jpg').read_bytes()).decode()
 E.indent(root)
 E.ElementTree(root).write(out/'MSI_Adella_Viso_White.vrmat',encoding='utf-8',xml_declaration=True)
+# Additional native material-only VRSCENE for hosts supporting material imports.
+parts=['SettingsUnitsInfo Adella_units { meters_scale=0.01; }','UVWGenChannel Adella_uvw { uvw_channel=1; }']
+for label,file,space in [('Color','Adella_BaseColor.png',2),('Normal','Adella_Normal_OpenGL.png',0),('Roughness','Adella_Roughness.png',0)]:
+    parts.append(f'BitmapBuffer Adella_{label}_buffer {{ file="textures/{file}"; transfer_function={space}; gamma=1; }}')
+    parts.append(f'TexBitmap Adella_{label} {{ bitmap=Adella_{label}_buffer; uvwgen=Adella_uvw; tile=1; }}')
+parts.append('BRDFVRayMtl Adella_brdf { diffuse=Adella_Color; reflect=Color(1,1,1); fresnel=1; fresnel_ior=1.5; refract_ior=1.5; metalness=0; option_use_roughness=1; reflect_glossiness=Adella_Roughness; bump_map=Adella_Normal; bump_type=1; bump_amount=1; }')
+parts.append('MtlSingleBRDF MSI_Adella_Viso_White { brdf=Adella_brdf; }')
+(out/'MSI_Adella_Viso_White.vrscene').write_text('\n'.join(parts)+'\n')
 vrmat=(out/'MSI_Adella_Viso_White.vrmat').as_posix()
 scene='''SettingsOutput output { img_width=800; img_height=400; }
 SettingsImageSampler sampler { type=1; min_shade_rate=2; }

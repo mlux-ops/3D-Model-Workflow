@@ -1,5 +1,7 @@
 # Fixture visualization families
 
+Project-wide memory and error logging: see [AGENTS.md](AGENTS.md) and [PROJECT_MEMORY.md](PROJECT_MEMORY.md). Record every error and its solution there, including errors in work outside the fixture-family workflow below.
+
 ## Agreed defaults
 
 - Revit 2025 is the oldest supported version.
@@ -105,3 +107,8 @@ Created output/bev_faucet/Hansgrohe_Modern_Beverage_Faucet_04117340_Brushed_Blac
 
 ## Focus X3 adjustable - 2026-09-07
 Created output/focus/DCW_Focus_X3_Black_Adjustable_R2025.rfa. Cord Length instance parameter drives nested mobile elevation and suspension extrusion; Total Drop formula includes 1063 mm mobile/canopy. Default 60 inches. Native overhead face placement and material substitution pass, four cord settings 8 to 118 inches verified, no warnings. Official references and inference notes in package.
+
+## Icera Malibu II RF C-6360.01 — 2026-09-13
+- Official current C-6360 PDF provides 15-7/8 inch tank width, 24-5/8 depth, 28-7/8 height and 16-1/2 bowl rim. Current drawing overrides conflicting legacy-page dimensions. White ceramic with standard chrome observer-left lever; black photo lever is optional.
+- Delivered floor-face visualization family under output/malibu. Closed seat; editable Ceramic Finish, Seat Finish and Lever Finish; no MEP connectors. Revit 2025 reopen, native floor placement and material substitution passed without warnings.
+- Smooth multi-section lofts may overshoot intermediate input contours. Inspect actual surfaces, not only profile dimensions; use monotonic sections or symmetric lid profiles. See E019/E020 in project memory and package REVIEW.md.
