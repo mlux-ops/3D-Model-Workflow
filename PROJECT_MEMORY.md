@@ -443,3 +443,9 @@ Keep separate evidence for file syntax, native application acceptance, retained 
 - Soreno dealer product JSON returned HTTP 403; cause is site access restriction. Fallback: supplied real-photo tile faces, with native per-face resolution disclosed; no claim of newly recovered detail.
 - Honey Comb preview showed white source-background slivers along some chips. Cause: sampled near the photographed sheet perimeter. Fixed chip selection to interior columns and reduced the sampled footprint; regenerating and visually verifying before packaging.
 - Honey Comb corrected preview verified: no white sheet-background slivers. Revit batch saved/reopened all eight new materials with zero warnings. E025 recurrence: combined V-Ray material scene encountered unavailable license -98, zero warnings; native rendered appearance remains unverified.
+
+## PR 4 merge conflict — 2026-09-14
+- Git status initially warned that the global ignore file was inaccessible in the sandbox. Elevated Git operations resolved access; working tree was clean before merging.
+- Merging origin/main produced 12 add/add conflicts in workflow notes, Adella maps, package metadata and generators. Cause: both histories added different generations of these files. Resolution retains the source branch's newer photographic assets and fuller project notes, while preserving main's separate Malibu additions.
+- Main also contained malformed Adella VRMAT XML (missing opening Asset/plugin wrappers for UVW). Retained the intact source-branch VRMAT and its matching generator. Verification: pending final XML/image and merge checks.
+- Final local verification passed: no unresolved conflicts or conflict markers; all Adella VRMAT files parse, packaged PNG integrity passes, generator syntax compiles, and git diff --check is clean. Native rendering was not rerun for this merge-only repair.
