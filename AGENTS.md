@@ -11,3 +11,13 @@ User instruction, recorded 2026-09-11: **Every time there is an error, log it in
 - Keep artifact-specific technical notes when useful, but also put each error and solution in the central project memory so later tasks can find them.
 
 Existing discipline-specific conventions remain in [WORKFLOW.md](WORKFLOW.md).
+
+## Final package delivery to Google Drive
+
+User instruction, recorded 2026-09-14: Every outputted final material or 3D model package must be uploaded to Google Drive under **3D Model Workflow** (folder ID `1Xsd3Y96SOi00cWNaxqYeqlp4tNe3Z8CD`).
+
+- File final model packages in **3D Models** and final material packages in **Material Packages** beneath that folder.
+- Preserve the local deliverables and include all required companion textures, setup notes, and native files in the uploaded package.
+- Check for an existing identical package before uploading to avoid duplicates. Clearly identify superseded revisions when retaining historical deliveries.
+- Verify uploaded file metadata and report the Drive link. Local creation or placement in a sync directory alone is not evidence that upload completed.
+- This is standing authorization to upload these project deliverables to that destination; no repeated confirmation is needed. If upload fails, log the error and report the pending upload rather than claiming delivery is complete.

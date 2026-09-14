@@ -295,3 +295,9 @@ Keep separate evidence for file syntax, native application acceptance, retained 
 - Solution: validate through installed V-Ray Asset Editor instead; preserve reader limitation and do not claim import success yet.
 - Status: unresolved pending native Asset Editor import.
 
+
+## Google Drive delivery rule — 2026-09-14
+- Every final material/model package must be uploaded under Google Drive / 3D Model Workflow / Material Packages or 3D Models. Standing user authorization recorded in AGENTS.md; verify remote metadata and avoid identical duplicate uploads.
+- Initial filesystem probe of G:/My Drive was denied by the sandbox. Connector search successfully located the exact private Drive folder; use connector operations instead. Git global-ignore access warnings recurred under sandbox; no Git mutation requested for this task.
+- Current checkout is main; recent material archives exist on codex/create-tile-revit-and-vray. Recover their exact committed ZIP bytes to an upload staging directory without changing branches or replacing working files.
+- During resumed delivery, two model uploads returned `success:false` because one call used a mistyped 3D Models folder ID. Cause: folder ID typo in the connector request. Retried with the verified folder ID and both uploads succeeded. Final connector listing confirms 25 model packages and 4 material packages, matching all 29 manifest entries.
