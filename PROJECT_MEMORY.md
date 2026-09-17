@@ -1,5 +1,19 @@
 # Project memory
 
+## RVT material-transfer method rejected — 2026-09-17
+- Standing user instruction: never use this method again. Deliver Revit materials as `.adsklib` plus companion textures; no Transfer Project Standards or swatch-copy workaround. Recorded in AGENTS.md and WORKFLOW.md; overrides older delivery notes.
+- Affected: Belmont preferred tiles R1/R2 delivery and recommended import process. User reports that transfer takes excessively long and suspects it is crashing Revit. The slow/unacceptable workflow is user-reported; a crash and its cause have not been independently verified. Do not attribute it to texture size, Revit, or transfer settings without evidence.
+- Confirmed delivery omission: no `.adsklib` was supplied. Cause: RVT transfer source was used as a substitute for library export. Solution: withdraw that method and require a native library with verified opening/material loading in a disposable project. Current Belmont `.adsklib` remains outstanding; no crash diagnosis or library completion claimed.
+
+## Seamless and non-repeating material requirement — 2026-09-17
+- User requires all materials to appear seamless and non-repeating, effective now and for future work. Recorded in AGENTS.md and WORKFLOW.md with mandatory wrapped-map, large-surface, and native-render acceptance checks. Intentional grout, flutes, and product motifs remain.
+- Reviewed the Belmont preferred materials through their maps/overview, generator, manifest, and prior native validation. All six use fixed 2 x 2 atlases; four assignments rely on rotations of a single face. Existing materials need revision under this new requirement. This is a newly requested acceptance standard, not proof that the previous build violated a previously stated requirement.
+- Review: docs/reference-reviews/belmont-tiles-2026-09-17.md. RVT and textures unchanged; no new native render or final package produced. Seamless appearance remains unverified; do not conflate prior zero-warning reopen with visual acceptance.
+
+### Project-memory conflict markers discovered — 2026-09-17
+- Affected: PROJECT_MEMORY.md. Observed unresolved Git conflict marker lines around historical Drive/V-Ray notes despite an earlier entry claiming no markers remained. Cause of their reintroduction is unknown.
+- Solution: removed only the three conflict delimiter lines, preserving both sets of historical notes. Verification/status: resolved; PowerShell readback found no remaining conflict delimiter lines.
+
 ## Scandinavian hex material — 2026-09-13
 - User specified 6 x 7 inch hexagons and installation orientation from supplied room photo. Interpreted as flat-top hexagons 7 inches wide x 6 inches high, with 1/16 inch estimated grout. Printed fan artwork is sampled from the supplied real tile image; 0/120/240-degree rotations meet at shared vertices. Bump represents joints/bevel only, not printed white lines.
 - Error during Revit batch startup UI observation: `foreground window did not report a process id`. Cause: batch window disappeared before capture. Solution: batch completed successfully; launched a separate interactive Revit instance and captured its returned window. Resolved.
@@ -402,13 +416,11 @@ Keep separate evidence for file syntax, native application acceptance, retained 
 - Status: unresolved pending native Asset Editor import.
 
 
-<<<<<<< HEAD
 ## Google Drive delivery rule — 2026-09-14
 - Every final material/model package must be uploaded under Google Drive / 3D Model Workflow / Material Packages or 3D Models. Standing user authorization recorded in AGENTS.md; verify remote metadata and avoid identical duplicate uploads.
 - Initial filesystem probe of G:/My Drive was denied by the sandbox. Connector search successfully located the exact private Drive folder; use connector operations instead. Git global-ignore access warnings recurred under sandbox; no Git mutation requested for this task.
 - Current checkout is main; recent material archives exist on codex/create-tile-revit-and-vray. Recover their exact committed ZIP bytes to an upload staging directory without changing branches or replacing working files.
 - During resumed delivery, two model uploads returned `success:false` because one call used a mistyped 3D Models folder ID. Cause: folder ID typo in the connector request. Retried with the verified folder ID and both uploads succeeded. Final connector listing confirms 25 model packages and 4 material packages, matching all 29 manifest entries.
-=======
 - E028 investigation: installed Chaos Cosmos VRMAT reader also exits unsuccessfully under Windows PowerShell, so failure is not isolated to the generated material. Windows PowerShell -File first returned script execution disabled; direct command invocation avoided changing execution policy but still failed in native SDK. Native host import remains next step.
 
 
@@ -456,7 +468,6 @@ Keep separate evidence for file syntax, native application acceptance, retained 
 - Merging origin/main produced 12 add/add conflicts in workflow notes, Adella maps, package metadata and generators. Cause: both histories added different generations of these files. Resolution retains the source branch's newer photographic assets and fuller project notes, while preserving main's separate Malibu additions.
 - Main also contained malformed Adella VRMAT XML (missing opening Asset/plugin wrappers for UVW). Retained the intact source-branch VRMAT and its matching generator. Verification: pending final XML/image and merge checks.
 - Final local verification passed: no unresolved conflicts or conflict markers; all Adella VRMAT files parse, packaged PNG integrity passes, generator syntax compiles, and git diff --check is clean. Native rendering was not rerun for this merge-only repair.
->>>>>>> b9c7b85c55a43c161ade544f2c6360a3814160e2
 
 ## Cinch fixture — 2026-09-17
 - Revit add-in inventory under the user profile returned access denied in the sandbox (E009 recurrence). Elevated read succeeded. Revit 2025 is installed; pyRevit and a .NET SDK are absent. Use a task-specific compiled Revit API command.
@@ -485,3 +496,29 @@ Keep separate evidence for file syntax, native application acceptance, retained 
 - File-name UI click retry was outside the 800-pixel main-window bounds because the modal extends beyond it. Cause confirmed by returned coordinates. Use the Open dialog keyboard mnemonic instead of coordinate/index clicking; recovery pending.
 - Revit filename control recovery: keyboard/click focus did not reach the modal and set_value again reported stale element 137. Repeated occurrence logged; use application launch with the validated RVT argument to avoid the modal. No material output was changed.
 - User requested immediate export to conserve usage. Final package includes validated native RVT with all six preferred assignments, twelve textures, original preferred photos, selection audit, and setup notes. ADSKLIB export not completed; native RVT is the material transfer source. Drive remains pending sign-in. Startup UI activation removed from builder to prevent recurrence.
+
+- 2026-09-17 tile correction: optional Get-Command python probe returned exit 1 because python is absent from PATH. Resolved by using the bundled Python absolute path returned by load_workspace_dependencies; no generation was attempted with the missing command.
+
+- 2026-09-17 correction baseline: check_preferred_material_maps.py intentionally failed the old six maps against the new 15-foot surface gate; B3-01/B3-03 also have exact duplicate tile interiors. Cause: fixed 2x2 generator and repeated 0/180-degree face sequence. Solution in progress: build R2 varied physical atlases; original package preserved. This is the recorded red-stage validation, not a tooling failure.
+
+- 2026-09-17 R2 validation error: B3-02 had 1 exact duplicate interior among 1280 tiles. Cause: portrait crop sizing clamped many samples to the same full-height strip, allowing duplicate selections. Fix: vary the long-edge crop size before computing aspect and reject reused crop/rotation tuples; regenerated B3-02 and verified 1280 unique interiors with zero map failures; resolved.
+
+- 2026-09-17 renderer availability probe: optional C:/Program Files/Chaos Group directory is absent (suppressed directory lookup error). Cause: prior installation path is not present in this environment. No V-Ray render attempted; using verified Revit native Realistic exports for mapping review and keeping production optical validation separate.
+
+- 2026-09-17 task-process check returned Cannot find process 19100 after native exports. Cause of process exit is unknown; all 13 requested PNGs and successful native save/reopen report exist. Solution: use process enumeration rather than assuming a live PID; launch a fresh task session only for the revised maps. No user process was terminated.
+
+- 2026-09-17 R2 recompilation failed because the first Revit session still held PreferredTilesR2Builder.dll, despite the launcher PID having exited. Corrected cause of prior missing-PID observation: launcher PID is not sufficient to track the running native host. Solution: compile the revision to a new V2 assembly file and point the task add-in at it; preserve all existing Revit sessions. V2 compilation passed and the native build/export completed; resolved.
+
+- R2 duplicate-face error resolved: all six final maps passed check_preferred_material_maps.py including 1280/1280 unique B3-02 interiors, matching edges for color/bump/roughness, and 16-bit bump. R2 compiler file-lock workaround resolved by V2 assembly; native completion marker 2026-09-17T12:38:13Z confirms all 13 view exports completed. Saved/reopened six materials in Revit 2025 with zero warnings and correct paths/scales. Original R1 preserved and marked superseded; build_preferred_tiles.py now routes to R2. Revit Realistic mapping was visually reviewed, but flute relief is not reliably displayed there; production ray-traced optical validation remains pending. R2 is explicitly a corrected review revision. Drive connector now works; prior browser authentication blocker does not apply to this session.
+
+- 2026-09-17 image-generation reporting error: the first tool result was printed as text, exposing a huge base64 payload to tool output instead of the native image display. Cause: text(result) used rather than generatedImage(result). Subsequent four calls used native image display and bounded output_hint only; all five source assets were preserved locally. Resolved reporting error; no source image lost.
+
+- 2026-09-17 R2 Drive upload failed: full ZIP is 771,749,237 bytes, exceeding the connector limit of 536,870,912 bytes. Cause confirmed by connector error. Solution: retain full local ZIP and create two ordinary ZIP parts (Bath 2 plus native project, and Bath 3), each below the limit, to extract together into the same folder. Upload and metadata verification pending.
+
+- 2026-09-17 R2 Drive part 1 upload failed during OpenAI blob staging (error sending request, before Drive response), despite being below 512 MiB. Cause unknown; transport failure reported after about 2.4 seconds. Local verified archive intact. Next step: check part 2 result and Drive metadata for partial upload, then retry only missing parts.
+
+- Same R2 upload staging failure recurred for part 2 after about 39.7 seconds. Drive search returned no R2 files, so neither ZIP is delivered. Both split archives passed ZIP integrity and jointly contain every entry of the complete package. Testing the small native RVT upload to distinguish a large-file issue from general staging failure; no cloud delivery claimed.
+
+- R2 modular-upload recurrence: the 148,234,920-byte B2-02 material ZIP timed out in blob staging at 60 seconds. Cause remains an upload transport/timeout limitation, not authentication; the 491,520-byte native RVT uploaded successfully. Drive metadata verified native ID 1S6mVYw7M_xwAWWGeOH8kki05ekthcwkd, correct parent Material Packages and size. Full cloud package remains unresolved: texture ZIPs are NOT uploaded. Local complete 97-entry ZIP passes integrity, SHA256 7ef3e804495fc0bdb2af0f8ded6f370ea3b62cc63b2ff22c4ffcfc0a7f310c54. Next step: upload the preserved complete ZIP using a transfer route supporting its size, or resume with smaller chunks and verify every remote component; do not claim native RVT alone is complete material delivery.
+
+- 2026-09-17 ADSKLIB export UI: screenshot refresh after maximizing Revit returned 'window crop is outside captured monitor'. Cause: capture bounds no longer matched window after maximize. Solution: reacquire returned window state before further actions; export not yet performed.

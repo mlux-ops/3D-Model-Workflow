@@ -2,7 +2,33 @@
 
 Project-wide memory and error logging: see [AGENTS.md](AGENTS.md) and [PROJECT_MEMORY.md](PROJECT_MEMORY.md). Record every error and its solution there, including errors in work outside the fixture-family workflow below.
 
-## Agreed defaults
+## Seamless and non-repeating materials
+
+### Required Revit delivery format
+
+Effective 2026-09-17, supply materials as a native `.adsklib` plus companion textures. Never use or recommend Transfer Project Standards or copying swatches from an RVT as the material delivery/import method. An RVT may be an internal test artifact, but is not a substitute for the library. Verify native library opening, material addition, and texture resolution in a disposable project before delivery; do not test transfers in the user's working model. If `.adsklib` export is unavailable, report incomplete delivery instead of handing off an RVT workaround. Older Belmont transfer instructions are withdrawn.
+
+Standing user instruction — 2026-09-17: **All materials must be made to appear seamless and non-repeating**, effective immediately for all material types and future work. Existing materials reviewed against this rule must be marked for revision if they do not pass.
+
+### Construction
+
+- Seamless means no unintended boundary in color, lighting, roughness, normal, bump, or displacement when mapped across a surface. Preserve real grout joints, manufactured edges, flutes, and intentional patterns.
+- Non-repeating means no recognizable copied face, mirrored motif, checkerboard, banding, or repeating atlas block at the intended close-up and room viewing distances. A finite bitmap is periodic; do not claim mathematical non-repetition. Record the tested surface extent and viewing conditions.
+- Use multiple genuinely different product faces where available. Correct photographic perspective and baked lighting while preserving the product's actual color and character. Rotating one face, adding random tint, blurring detail, or increasing export resolution is not sufficient variation.
+- Use a sufficiently large, product-faithful layout or supported per-tile/procedural variation that passes the intended surface test. Avoid adjacent duplicate faces and obvious periodic arrangements. Respect directional grain, rectangular tile orientation, flutes, and designed motifs; do not introduce invalid rotations or mirroring.
+- Keep all appearance maps spatially registered with identical physical scale and compatible variation. Transform directional normals correctly. Preserve source resolution disclosure and float precision until export; retain accurate tile and grout dimensions.
+- If source images cannot support convincing variation, obtain additional faces or document the limitation and hold final acceptance. Do not invent a different product to conceal insufficient references.
+
+### Required visual acceptance gate
+
+1. Inspect every map wrapped horizontally and vertically, including the four-way corner, in at least a 3 x 3 repetition preview. Check joint width, relief continuity, shading seams, and border bands; intentional grout is not a defect.
+2. Inspect a correctly scaled surface covering the largest intended uninterrupted wall/floor or object area. Also inspect multiple atlas repeats so that a large atlas cannot merely hide periodicity in a small swatch. Check both close-up and room views for duplicate landmarks and patterns of repetition.
+3. Inspect in the target native application/renderer with neutral and grazing light. Confirm actual map bindings, scale, orientation, highlights, bump/normal response, and absence of visible seams or repeated blocks. File-open success and a flat preview are separate checks, not a rendered appearance pass.
+4. Record the material ID, source-face count, variation method/seed, physical atlas size, tested surface size, preview/render evidence, and pass/fail/pending result. Both seamlessness and non-repetition must pass before final delivery. If rendering is unavailable, label that gate pending.
+
+Belmont baseline review: [2026-09-17 tile review](docs/reference-reviews/belmont-tiles-2026-09-17.md). The original six materials are superseded by [corrected R2](output/belmont_preferred_bath2_bath3_r2/REVIEW.md): varied layouts, seamless map boundaries and native bindings verified; full production optical acceptance remains pending. The default preferred-tile build entry point now uses the R2 generator.
+
+## Fixture defaults
 
 - Revit 2025 is the oldest supported version.
 - Face-based or work-plane-based placement; hosts are in the current native model.

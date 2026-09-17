@@ -14,3 +14,6 @@ Native RVT saved and reopened in Revit 2025: six materials, zero warnings, all t
 Straight stacked layouts and 1/16-inch grout are assumed. Optical values and relief are visualization estimates, not measured PBR data. Some source panel photographs retain baked lighting and limited pixels per tile. Detailed crop resolution and product references are documented per material. Grounded Alabaster uses the same image/maps for the separately named wall and floor materials. Bottega uses manufacturer 596 mm square dimensions; others use nominal inch sizes.
 
 Google Drive upload is pending: the authorized destination redirects to Google sign-in. No upload completion is claimed.
+
+## Superseded — 2026-09-17
+Use ../belmont_preferred_bath2_bath3_r2/651_Belmont_Preferred_Tiles_R2025.rvt for the corrected varied material layouts. This original folder is preserved as the R1 reference. R2 passes map/native binding checks; production optical acceptance is separately documented in its REVIEW.md.
