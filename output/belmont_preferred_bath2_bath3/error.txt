@@ -1,0 +1,4 @@
+Autodesk.Revit.Exceptions.InvalidOperationException: Switching active documents is not allowed during API event handling.
+   at Autodesk.Revit.UI.UIApplication.OpenAndActivateDocument(String fileName)
+   at PreferredTilesBuilder.Builder.Build(UIApplication ui)
+   at PreferredTilesBuilder.App.Run(Object sender, IdlingEventArgs e)
