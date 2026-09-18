@@ -138,3 +138,8 @@ Created output/focus/DCW_Focus_X3_Black_Adjustable_R2025.rfa. Cord Length instan
 - Official current C-6360 PDF provides 15-7/8 inch tank width, 24-5/8 depth, 28-7/8 height and 16-1/2 bowl rim. Current drawing overrides conflicting legacy-page dimensions. White ceramic with standard chrome observer-left lever; black photo lever is optional.
 - Delivered floor-face visualization family under output/malibu. Closed seat; editable Ceramic Finish, Seat Finish and Lever Finish; no MEP connectors. Revit 2025 reopen, native floor placement and material substitution passed without warnings.
 - Smooth multi-section lofts may overshoot intermediate input contours. Inspect actual surfaces, not only profile dimensions; use monotonic sections or symmetric lid profiles. See E019/E020 in project memory and package REVIEW.md.
+
+## Kamden bathroom vanity light — 2026-09-15
+- Supplied 1279641 PDF specifies 22.5 x 4.3 x 4.7 inches and 5-inch backplate width. Nightshade Black with three clear rectangular shades and white inner diffusers.
+- Revit 2025 wall-face visualization family with editable Frame Finish, Glass Finish and Diffuser Finish. Fixed geometry; no MEP or photometric source. Glass shell thickness, shade sizes, collar/rail and inner diffuser geometry inferred from drawing/photo.
+- Native reopen, exact overall bounds, native wall placement and all three material substitutions passed without warnings. References and notes under output/kamden and references/kamden.
