@@ -1,0 +1,112 @@
+{
+  "success": true,
+  "material": "Daltile Remedy Hydro - 2x10 Fluted Glossy",
+  "sku": "RD22RCT210FLUGL",
+  "map_dimensions": {
+    "color": [
+      9660,
+      990
+    ],
+    "bump": [
+      9660,
+      990
+    ],
+    "normal": [
+      9660,
+      990
+    ],
+    "roughness": [
+      9660,
+      990
+    ]
+  },
+  "map_modes": {
+    "color": "RGB",
+    "bump": "I;16",
+    "normal": "RGB",
+    "roughness": "L"
+  },
+  "map_registration_pass": true,
+  "bit_depth_pass": true,
+  "edge_wrap": {
+    "color": {
+      "left_right_max": 0.0,
+      "left_right_mean": 0.0,
+      "top_bottom_max": 0.0,
+      "top_bottom_mean": 0.0
+    },
+    "bump": {
+      "left_right_max": 0.0,
+      "left_right_mean": 0.0,
+      "top_bottom_max": 0.0,
+      "top_bottom_mean": 0.0
+    },
+    "normal": {
+      "left_right_max": 0.0,
+      "left_right_mean": 0.0,
+      "top_bottom_max": 0.0,
+      "top_bottom_mean": 0.0
+    },
+    "roughness": {
+      "left_right_max": 0.0,
+      "left_right_mean": 0.0,
+      "top_bottom_max": 0.0,
+      "top_bottom_mean": 0.0
+    }
+  },
+  "seam_pass": true,
+  "tile_modules": {
+    "columns": 20,
+    "rows": 10,
+    "count": 200,
+    "unique_full_tile_crops": 200,
+    "duplicate_full_tile_crops": 0,
+    "adjacent_exact_mean_matches": 0
+  },
+  "variation_pass": true,
+  "relief": {
+    "pattern_relief_mm": 1.2,
+    "grout_step_mm": 2.2,
+    "clearance_mm": 1.0000000000000002,
+    "status": "estimated from product character; manufacturer depth not published",
+    "computed_clearance_mm": 1.0000000000000002,
+    "bump_u16_min": 0,
+    "bump_u16_max": 65535,
+    "pass": true
+  },
+  "adsklib": {
+    "path": "C:\\Users\\mlux\\Documents\\GitHub\\3D-Model-Workflow\\output\\daltile_remedy_hydro\\Daltile_Remedy_Hydro_2x10_Fluted_Glossy_R2025_Rev2.adsklib",
+    "sha256": "9a4d391a6aec44911044e850776ea1116c99184a15925db15417176e1f291f1a",
+    "zip_entries": 37,
+    "zip_corrupt_entry": null,
+    "readback": {
+      "material_name": "Daltile Remedy Hydro - 2x10 Fluted Glossy",
+      "description": "Daltile Remedy Hydro 2x10 fluted glossy ceramic wall tile; V4 random shade variation; estimated flute relief; 1/16 inch grout",
+      "diffuse_path": "C:\\Users\\mlux\\Documents\\GitHub\\3D-Model-Workflow\\output\\daltile_remedy_hydro\\textures\\Daltile_Remedy_Hydro_Fluted_BaseColor.png",
+      "bump_path": "C:\\Users\\mlux\\Documents\\GitHub\\3D-Model-Workflow\\output\\daltile_remedy_hydro\\textures\\Daltile_Remedy_Hydro_Fluted_Bump16.png",
+      "real_world_scale_in": [
+        201.25,
+        20.625
+      ]
+    },
+    "bound_diffuse_exists": true,
+    "bound_bump_exists": true,
+    "pass": true
+  },
+  "tested_surface": {
+    "quantitative_wrap_test": "2 atlas repeats in each axis are implied by exact opposing-edge equality; visual multi-repeat review remains separate",
+    "single_atlas_in": [
+      201.25,
+      20.625
+    ],
+    "two_repeat_extent_in": [
+      402.5,
+      41.25
+    ]
+  },
+  "visual_gates": {
+    "grazing_light_relief": "pending - no image/desktop review tool is available in this Zero Risk retry",
+    "room_view_repetition": "pending - no image/desktop review tool is available in this Zero Risk retry",
+    "revit_material_browser_library_open": "pending native UI check; archive/readback and Revit-bound maps are validated separately"
+  }
+}
