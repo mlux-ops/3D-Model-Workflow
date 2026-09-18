@@ -22,7 +22,13 @@ User instruction, recorded 2026-09-18: An `.adsklib` with its required companion
 
 User instruction, recorded 2026-09-17: **Never use RVT-based material transfer again.** Do not deliver materials through Transfer Project Standards or copying material swatches between projects. Deliver a native `.adsklib` with all companion textures and concise library-loading notes. Verify the library opens and its materials/textures load in a disposable Revit project before calling delivery complete. If library creation is blocked, report the blocker; do not substitute an RVT transfer workflow. This overrides older package instructions. The user reported excessive transfer time and a suspected Revit crash; the crash cause is unconfirmed.
 
+Workflow improvement, recorded 2026-09-18: **Every delivered Revit appearance must have at least one explicit bound color/diffuse bitmap in the ADSKLIB package.** A visually uniform finish may use a spatially uniform bitmap matching the intended base color; this is preferred to inventing grain, scratches, or other texture that the source finish does not have. Keep that bitmap with the library and verify the bound path resolves. Do not treat shader numeric values alone as a complete portable material package.
+
+Workflow improvement, recorded 2026-09-18: **Release ADSKLIB revisions without overwriting a library that may be open in Revit.** Build to a candidate/temp file, run archive/readback checks, then release to a new revision or descriptive filename. If Windows reports a file lock, preserve the validated candidate bytes and release under a distinct filename rather than closing the user's working Revit session or forcing replacement.
+
 User instruction, recorded 2026-09-17: **All materials must appear seamless and non-repeating.** Apply immediately to every new or revised material and to acceptance reviews of existing materials.
+
+User instruction, recorded 2026-09-18: **Do not produce V-Ray material assets unless they are specifically requested.** VRMAT and VRSCENE files are not part of the default material deliverable. Build the Revit material, the `.adsklib` and the companion textures; stop there unless the user asks for V-Ray output for a particular job. Where a test or checklist lists a V-Ray gate, record it as *not requested* rather than blocked or failed, and keep any genuine tooling limitation recorded separately so the two are not confused.
 
 - Follow the material construction and visual acceptance gate in [WORKFLOW.md](WORKFLOW.md#seamless-and-non-repeating-materials).
 - Preserve intentional tile joints, flutes, and designed motifs; eliminate unintended texture seams and recognizable repeated texture blocks.
