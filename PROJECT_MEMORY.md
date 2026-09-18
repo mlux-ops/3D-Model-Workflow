@@ -1,5 +1,13 @@
 # Project memory
 
+## Repository workflow hardening — 2026-09-18
+- Revit material delivery improvement: every delivered ADSKLIB now requires at least one explicitly bound color/diffuse bitmap. Uniform finishes may use a spatially uniform bitmap matching the intended base color so the material remains seamless and non-repeating without invented grain.
+- pyRevit reliability issue: a relative script path can resolve from the runner's temporary working directory and return exit code 0 without updating the intended output. Prevention: invoke repository scripts by absolute path and require changed validation artifacts/timestamps/content before accepting a run.
+- ADSKLIB release issue: replacing an existing library can fail with Windows sharing error `WinError 32` when Revit or another process has it open. Prevention: build to a candidate file, verify archive/codec readback and SHA-256, then release to a distinct revision/descriptive filename instead of closing the user's working Revit session or forcing replacement.
+- Packaging improvement: use an explicit allow-list, exclude temporary RVTs/backups when a valid ADSKLIB is supplied, verify ZIP integrity/size/SHA-256, and treat Drive-mounted copies as pending until Google Drive metadata independently confirms the remote file and destination.
+- Scope clarification: V-Ray assets are on-request only as of 2026-09-18; missing VRMAT/VRSCENE is `not requested`, not a failed default material deliverable.
+- Repository mutation issue during this update: local branch/stage/commit commands could not write `.git/refs` or `.git/index.lock` (`Permission denied`) because the Codex sandbox exposes local Git metadata read-only. Solution: use the connected GitHub API for branch/file/PR mutations and do not retry local Git writes unless sandbox state changes. No local repository content was lost or partially staged.
+
 ## RVT material-transfer method rejected — 2026-09-17
 - Standing user instruction: never use this method again. Deliver Revit materials as `.adsklib` plus companion textures; no Transfer Project Standards or swatch-copy workaround. Recorded in AGENTS.md and WORKFLOW.md; overrides older delivery notes.
 - Affected: Belmont preferred tiles R1/R2 delivery and recommended import process. User reports that transfer takes excessively long and suspects it is crashing Revit. The slow/unacceptable workflow is user-reported; a crash and its cause have not been independently verified. Do not attribute it to texture size, Revit, or transfer settings without evidence.
