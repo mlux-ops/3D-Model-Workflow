@@ -1,0 +1,1174 @@
+{
+  "checkpoint_utc": "2026-09-18T06:10:54.233000Z", 
+  "configs": {
+    "baseline": {
+      "appearance_note": "Dark metal and dark canopy, warm opal glass; source-approved finish.", 
+      "body_bounds_inches": [
+        -4.0999999999999996, 
+        -3.3500000000000001, 
+        -0.34999999999999998, 
+        4.0999999999999996, 
+        3.3500000000000001, 
+        29.100000000000001
+      ], 
+      "body_height_including_socket_in": 29.450000000000003, 
+      "body_height_stable": false, 
+      "body_parts": [
+        {
+          "id": "2972", 
+          "name": "Capsule loop"
+        }, 
+        {
+          "id": "2973", 
+          "name": "Opal globe"
+        }, 
+        {
+          "id": "2974", 
+          "name": "Upper cable socket"
+        }, 
+        {
+          "id": "2975", 
+          "name": "Globe seat"
+        }
+      ], 
+      "body_rfa_path": "C:\\Users\\mlux\\Documents\\GitHub\\3D-Model-Workflow\\output\\model-transfer-tests\\candidate-20260918-01\\pendant\\Mila_Trial_Body_Baseline.rfa", 
+      "canopy_bounds_inches": {
+        "max": [
+          3.5500000000000007, 
+          3.4960675231933402, 
+          1.1000000000000001
+        ], 
+        "min": [
+          -3.5500000000000007, 
+          -3.4960675231933420, 
+          0.0
+        ], 
+        "size": [
+          7.1000000000000014, 
+          6.9921350463866814, 
+          1.1000000000000001
+        ]
+      }, 
+      "category": "Lighting Fixtures", 
+      "cord_length_is_read_only": false, 
+      "cord_restored_in": 29.449999999999999, 
+      "dimensions": {
+        "band_depth": {
+          "measured_in": 0.5, 
+          "method": "Capsule loop element bounding box, Y extent", 
+          "pass": true, 
+          "target_in": 0.5, 
+          "tolerance_in": 0.01
+        }, 
+        "canopy_diameter": {
+          "measured_in": 7.1000000000000014, 
+          "method": "Canopy element bounding box, X extent", 
+          "pass": true, 
+          "target_in": 7.0999999999999996, 
+          "tolerance_in": 0.01
+        }, 
+        "canopy_diameter_ray": {
+          "measured_in": 7.0999999999999988, 
+          "method": "Solid.IntersectWithCurve through the canopy at mid height", 
+          "pass": true, 
+          "target_in": 7.0999999999999996, 
+          "tolerance_in": 0.01
+        }, 
+        "canopy_height": {
+          "measured_in": 1.1000000000000001, 
+          "method": "Canopy element bounding box, Z extent", 
+          "pass": true, 
+          "target_in": 1.1000000000000001, 
+          "tolerance_in": 0.01
+        }, 
+        "default_preserved_after_flex": {
+          "measured_in": 60.0, 
+          "method": "RFA reopened after the flex battery; flexing touched the project instance only", 
+          "pass": true, 
+          "target_in": 60.0, 
+          "tolerance_in": 0.01
+        }, 
+        "frame_thickness_left": {
+          "measured_in": 0.49999999999999956, 
+          "method": "Solid.IntersectWithCurve along +X at Z=14.55 in, left strap", 
+          "pass": true, 
+          "target_in": 0.5, 
+          "tolerance_in": 0.01
+        }, 
+        "frame_thickness_right": {
+          "measured_in": 0.50000000000000089, 
+          "method": "Solid.IntersectWithCurve along +X at Z=14.55 in, right strap", 
+          "pass": true, 
+          "target_in": 0.5, 
+          "tolerance_in": 0.01
+        }, 
+        "globe_diameter": {
+          "measured_in": 6.7000000000000028, 
+          "method": "Solid.IntersectWithCurve through the globe solid at its centre Z", 
+          "pass": true, 
+          "target_in": 6.7000000000000002, 
+          "tolerance_in": 0.01
+        }, 
+        "loop_inner_width": {
+          "measured_in": 7.1999999999999993, 
+          "method": "Gap between the two strap ray segments at Z=14.55 in", 
+          "pass": true, 
+          "target_in": 7.1999999999999993, 
+          "tolerance_in": 0.01
+        }, 
+        "loop_outer_height": {
+          "measured_in": 29.100000000000001, 
+          "method": "Capsule loop element bounding box, Z extent", 
+          "pass": true, 
+          "target_in": 29.100000000000001, 
+          "tolerance_in": 0.01
+        }, 
+        "loop_outer_width": {
+          "measured_in": 8.1999999999999993, 
+          "method": "Capsule loop element bounding box, X extent", 
+          "pass": true, 
+          "target_in": 8.1999999999999993, 
+          "tolerance_in": 0.01
+        }, 
+        "placed_default_total_drop": {
+          "measured_in": 60.0, 
+          "method": "Total Drop on the hosted instance before flexing", 
+          "pass": true, 
+          "target_in": 60.0, 
+          "tolerance_in": 0.01
+        }, 
+        "saved_default_total_drop": {
+          "measured_in": 60.0, 
+          "method": "FamilyManager.CurrentType value in the reopened RFA", 
+          "pass": true, 
+          "target_in": 60.0, 
+          "tolerance_in": 0.01
+        }
+      }, 
+      "family_images": [
+        "Baseline - 3D View - Front.png", 
+        "Baseline - 3D View - Full Oblique.png", 
+        "Baseline - 3D View - Side.png"
+      ], 
+      "family_warnings": [], 
+      "final_saved_total_drop_in": 60.0, 
+      "finished_utc": "2026-09-18T06:10:39.056000Z", 
+      "flex_tests": [
+        {
+          "body_height_in": 38.550000000000004, 
+          "cord_inches": 8.0, 
+          "expected_drop_in": 38.549999999999997, 
+          "formula_pass": true, 
+          "formula_total_drop_in": 38.550000000000004, 
+          "measured_drop_in": 38.550000000000004, 
+          "measured_pass": true, 
+          "method": "host face Z minus instance bounding box minimum Z", 
+          "tolerance_in": 0.10000000000000001
+        }, 
+        {
+          "body_height_in": 48.699606299199999, 
+          "cord_inches": 18.149606299199998, 
+          "expected_drop_in": 48.699606299199999, 
+          "formula_pass": true, 
+          "formula_total_drop_in": 48.699606299199999, 
+          "measured_drop_in": 48.699606299199999, 
+          "measured_pass": true, 
+          "method": "host face Z minus instance bounding box minimum Z", 
+          "tolerance_in": 0.10000000000000001
+        }, 
+        {
+          "body_height_in": 78.550000000000011, 
+          "cord_inches": 48.0, 
+          "expected_drop_in": 78.549999999999997, 
+          "formula_pass": true, 
+          "formula_total_drop_in": 78.550000000000011, 
+          "measured_drop_in": 78.550000000000011, 
+          "measured_pass": true, 
+          "method": "host face Z minus instance bounding box minimum Z", 
+          "tolerance_in": 0.10000000000000001
+        }, 
+        {
+          "body_height_in": 148.55000000000001, 
+          "cord_inches": 118.0, 
+          "expected_drop_in": 148.55000000000001, 
+          "formula_pass": true, 
+          "formula_total_drop_in": 148.55000000000001, 
+          "measured_drop_in": 148.55000000000001, 
+          "measured_pass": true, 
+          "method": "host face Z minus instance bounding box minimum Z", 
+          "tolerance_in": 0.10000000000000001
+        }
+      ], 
+      "gates": {
+        "fresh_rfa_reopen_category": true, 
+        "loop_and_canopy_dimensions": true, 
+        "materials_reach_nested_geometry": true, 
+        "measured_flex_tests": false, 
+        "native_overhead_hosting_and_orientation": true, 
+        "saved_default_total_drop": true, 
+        "visual_exports_present": true, 
+        "zero_unexplained_warnings": true
+      }, 
+      "glass_appearance": {
+        "color": [
+          247, 
+          244, 
+          230
+        ], 
+        "gloss": 0.65000000000000002, 
+        "material_class": "Glass", 
+        "refl0": 0.080000000000000002, 
+        "refl90": 0.84999999999999998, 
+        "self_illum": 100.0, 
+        "transparency": 0.080000000000000002
+      }, 
+      "globe_centre_above_loop_bottom_in": 3.9000000000000021, 
+      "globe_clear_of_inner_cap_in": 0.049999999999997158, 
+      "globe_ray_segments": [
+        {
+          "from": [
+            -3.3500000000000014, 
+            0.0, 
+            25.200000000000003
+          ], 
+          "length": 6.7000000000000028, 
+          "to": [
+            3.3500000000000014, 
+            0.0, 
+            25.200000000000003
+          ]
+        }
+      ], 
+      "host_element_id": "4509", 
+      "host_face_z_ft": 19.0, 
+      "host_type": "Floor 1", 
+      "hosted_images": [
+        "Baseline_Hosted - 3D View - Hosted Fixture.png"
+      ], 
+      "label": "A - reproduction", 
+      "loaded_and_face_placed": true, 
+      "loop_ray_segments": [
+        {
+          "from": [
+            -4.0999999999999996, 
+            0.0, 
+            14.550000000000001
+          ], 
+          "length": 0.49999999999999956, 
+          "to": [
+            -3.5999999999999996, 
+            0.0, 
+            14.550000000000001
+          ]
+        }, 
+        {
+          "from": [
+            3.5999999999999992, 
+            0.0, 
+            14.550000000000001
+          ], 
+          "length": 0.50000000000000089, 
+          "to": [
+            4.0999999999999996, 
+            0.0, 
+            14.550000000000001
+          ]
+        }
+      ], 
+      "material_tests": {
+        "Glass Finish": {
+          "distinct_material_ids": [
+            "2811", 
+            "4523"
+          ], 
+          "faces_carrying_substitute": 2, 
+          "faces_inspected": 34, 
+          "reached_nested_geometry": true, 
+          "restored_material_id": "2813", 
+          "substitute_material_id": "4523", 
+          "type_parameter_writable": true
+        }, 
+        "Metal Finish": {
+          "distinct_material_ids": [
+            "2813", 
+            "4522"
+          ], 
+          "faces_carrying_substitute": 32, 
+          "faces_inspected": 34, 
+          "reached_nested_geometry": true, 
+          "restored_material_id": "2811", 
+          "substitute_material_id": "4522", 
+          "type_parameter_writable": true
+        }
+      }, 
+      "metal_appearance": {
+        "color": [
+          53, 
+          50, 
+          44
+        ], 
+        "gloss": 0.41999999999999998, 
+        "material_class": "Metal", 
+        "refl0": 0.22, 
+        "refl90": 0.84999999999999998, 
+        "self_illum": 0.0, 
+        "transparency": 0.0
+      }, 
+      "nested_parameters": [
+        [
+          "Image", 
+          "-1152385", 
+          false
+        ], 
+        [
+          "Category", 
+          "-1140363", 
+          true
+        ], 
+        [
+          "Category", 
+          "-1140362", 
+          true
+        ], 
+        [
+          "Switch ID", 
+          "-1140110", 
+          true
+        ], 
+        [
+          "Panel", 
+          "-1140104", 
+          true
+        ], 
+        [
+          "Circuit Number", 
+          "-1140103", 
+          true
+        ], 
+        [
+          "Calculate Coefficient of Utilization", 
+          "-1140040", 
+          true
+        ], 
+        [
+          "Electrical Data", 
+          "-1114241", 
+          true
+        ], 
+        [
+          "Coefficient of Utilization", 
+          "-1114216", 
+          false
+        ], 
+        [
+          "IFC Predefined Type", 
+          "-1019016", 
+          false
+        ], 
+        [
+          "Export to IFC As", 
+          "-1019014", 
+          false
+        ], 
+        [
+          "Export to IFC", 
+          "-1019012", 
+          false
+        ], 
+        [
+          "IfcGUID", 
+          "-1019000", 
+          false
+        ], 
+        [
+          "Design Option", 
+          "-1013201", 
+          true
+        ], 
+        [
+          "Volume", 
+          "-1012806", 
+          true
+        ], 
+        [
+          "Area", 
+          "-1012805", 
+          true
+        ], 
+        [
+          "Comments", 
+          "-1010106", 
+          false
+        ], 
+        [
+          "Visible", 
+          "-1006205", 
+          false
+        ], 
+        [
+          "Host Id", 
+          "-1002108", 
+          true
+        ], 
+        [
+          "Level", 
+          "-1002062", 
+          true
+        ], 
+        [
+          "Family and Type", 
+          "-1002052", 
+          false
+        ], 
+        [
+          "Family", 
+          "-1002051", 
+          false
+        ], 
+        [
+          "Type", 
+          "-1002050", 
+          false
+        ], 
+        [
+          "Label", 
+          "-1002008", 
+          false
+        ], 
+        [
+          "Family Name", 
+          "-1002002", 
+          true
+        ], 
+        [
+          "Type Name", 
+          "-1002001", 
+          true
+        ], 
+        [
+          "Type Id", 
+          "-1002000", 
+          true
+        ], 
+        [
+          "Visibility/Graphics Overrides", 
+          "-1001808", 
+          false
+        ], 
+        [
+          "Moves With Nearby Elements", 
+          "-1001370", 
+          false
+        ], 
+        [
+          "Offset from Host", 
+          "-1001364", 
+          false
+        ], 
+        [
+          "Host", 
+          "-1001363", 
+          true
+        ], 
+        [
+          "Elevation from Level", 
+          "-1001360", 
+          false
+        ], 
+        [
+          "Mark", 
+          "-1001203", 
+          false
+        ]
+      ], 
+      "orientation": {
+        "hangs_below_host": true, 
+        "host_face_z_in": 228.0, 
+        "instance_max_z_in": 228.0, 
+        "instance_min_z_in": 168.0
+      }, 
+      "parent_parts": [
+        {
+          "id": "4018", 
+          "name": "Canopy"
+        }
+      ], 
+      "part_bounds_inches": {
+        "capsule_loop": {
+          "max": [
+            4.0999999999999996, 
+            0.25, 
+            29.100000000000001
+          ], 
+          "min": [
+            -4.0999999999999996, 
+            -0.25, 
+            0.0
+          ], 
+          "size": [
+            8.1999999999999993, 
+            0.5, 
+            29.100000000000001
+          ]
+        }, 
+        "globe_seat": {
+          "max": [
+            0.34999999999999998, 
+            0.30310889132455388, 
+            28.649999999999999
+          ], 
+          "min": [
+            -0.34999999999999998, 
+            -0.30310889132455443, 
+            28.5
+          ], 
+          "size": [
+            0.69999999999999996, 
+            0.60621778264910819, 
+            0.1499999999999968
+          ]
+        }, 
+        "opal_globe": {
+          "max": [
+            3.2991059725908976, 
+            3.3500000000000001, 
+            28.550000000000004
+          ], 
+          "min": [
+            -3.2991059725908976, 
+            -3.3500000000000001, 
+            21.850000000000001
+          ], 
+          "size": [
+            6.5982119451817951, 
+            6.7000000000000002, 
+            6.7000000000000028
+          ]
+        }, 
+        "upper_cable_socket": {
+          "max": [
+            0.23000000000000004, 
+            0.19918584287042115, 
+            0.10000000000000002
+          ], 
+          "min": [
+            -0.23000000000000004, 
+            -0.19918584287042151, 
+            -0.34999999999999998
+          ], 
+          "size": [
+            0.46000000000000008, 
+            0.39837168574084264, 
+            0.44999999999999996
+          ]
+        }
+      }, 
+      "placement_type": "WorkPlaneBased", 
+      "project_warnings": [], 
+      "reopened": true, 
+      "requested_default_cord_in": 29.449999999999999, 
+      "requested_default_total_drop_in": 60.0, 
+      "rfa_bytes": 561152, 
+      "rfa_mtime_utc": "2026-09-18T06:10:27Z", 
+      "rfa_path": "C:\\Users\\mlux\\Documents\\GitHub\\3D-Model-Workflow\\output\\model-transfer-tests\\candidate-20260918-01\\pendant\\Mila_Trial_Dark_Adjustable_R2025.rfa", 
+      "saved_type_values_in": {
+        "Assembly Offset": 30.900000000000002, 
+        "Cord Length": 29.449999999999999, 
+        "Total Drop": 60.0
+      }, 
+      "socket_projection_above_loop_in": 0.34999999999999998, 
+      "started_utc": "2026-09-18T06:10:10.905000Z", 
+      "technical_pass": false, 
+      "total_drop_is_read_only": true, 
+      "type_name": "Mila Black", 
+      "visual_verdict": "PENDING REVIEWER - exports produced, fidelity not self-assessed"
+    }, 
+    "variant": {
+      "appearance_note": "Satin brass requested by the user. Diffuse RGB 186,166,112 chosen below the median of brass pixels sampled from references/mila/product-sheet.png (median 194,175,122; p10 178,158,106; p90 226,208,147) so rendered specular lift does not double-count. Independent visual variant; no SKU asserted.", 
+      "body_bounds_inches": [
+        -4.0999999999999996, 
+        -3.3500000000000001, 
+        -0.34999999999999998, 
+        4.0999999999999996, 
+        3.3500000000000001, 
+        29.100000000000001
+      ], 
+      "body_height_including_socket_in": 29.450000000000003, 
+      "body_height_stable": false, 
+      "body_parts": [
+        {
+          "id": "2972", 
+          "name": "Capsule loop"
+        }, 
+        {
+          "id": "2973", 
+          "name": "Opal globe"
+        }, 
+        {
+          "id": "2974", 
+          "name": "Upper cable socket"
+        }, 
+        {
+          "id": "2975", 
+          "name": "Globe seat"
+        }
+      ], 
+      "body_rfa_path": "C:\\Users\\mlux\\Documents\\GitHub\\3D-Model-Workflow\\output\\model-transfer-tests\\candidate-20260918-01\\pendant\\Mila_Trial_Body_SatinBrass.rfa", 
+      "canopy_bounds_inches": {
+        "max": [
+          3.5500000000000007, 
+          3.4960675231933402, 
+          1.1000000000000001
+        ], 
+        "min": [
+          -3.5500000000000007, 
+          -3.4960675231933420, 
+          0.0
+        ], 
+        "size": [
+          7.1000000000000014, 
+          6.9921350463866814, 
+          1.1000000000000001
+        ]
+      }, 
+      "category": "Lighting Fixtures", 
+      "cord_length_is_read_only": false, 
+      "cord_restored_in": 41.450000000000003, 
+      "dimensions": {
+        "band_depth": {
+          "measured_in": 0.5, 
+          "method": "Capsule loop element bounding box, Y extent", 
+          "pass": true, 
+          "target_in": 0.5, 
+          "tolerance_in": 0.01
+        }, 
+        "canopy_diameter": {
+          "measured_in": 7.1000000000000014, 
+          "method": "Canopy element bounding box, X extent", 
+          "pass": true, 
+          "target_in": 7.0999999999999996, 
+          "tolerance_in": 0.01
+        }, 
+        "canopy_diameter_ray": {
+          "measured_in": 7.0999999999999988, 
+          "method": "Solid.IntersectWithCurve through the canopy at mid height", 
+          "pass": true, 
+          "target_in": 7.0999999999999996, 
+          "tolerance_in": 0.01
+        }, 
+        "canopy_height": {
+          "measured_in": 1.1000000000000001, 
+          "method": "Canopy element bounding box, Z extent", 
+          "pass": true, 
+          "target_in": 1.1000000000000001, 
+          "tolerance_in": 0.01
+        }, 
+        "default_preserved_after_flex": {
+          "measured_in": 72.000000000000014, 
+          "method": "RFA reopened after the flex battery; flexing touched the project instance only", 
+          "pass": true, 
+          "target_in": 72.0, 
+          "tolerance_in": 0.01
+        }, 
+        "frame_thickness_left": {
+          "measured_in": 0.49999999999999956, 
+          "method": "Solid.IntersectWithCurve along +X at Z=14.55 in, left strap", 
+          "pass": true, 
+          "target_in": 0.5, 
+          "tolerance_in": 0.01
+        }, 
+        "frame_thickness_right": {
+          "measured_in": 0.50000000000000089, 
+          "method": "Solid.IntersectWithCurve along +X at Z=14.55 in, right strap", 
+          "pass": true, 
+          "target_in": 0.5, 
+          "tolerance_in": 0.01
+        }, 
+        "globe_diameter": {
+          "measured_in": 6.7000000000000028, 
+          "method": "Solid.IntersectWithCurve through the globe solid at its centre Z", 
+          "pass": true, 
+          "target_in": 6.7000000000000002, 
+          "tolerance_in": 0.01
+        }, 
+        "loop_inner_width": {
+          "measured_in": 7.1999999999999993, 
+          "method": "Gap between the two strap ray segments at Z=14.55 in", 
+          "pass": true, 
+          "target_in": 7.1999999999999993, 
+          "tolerance_in": 0.01
+        }, 
+        "loop_outer_height": {
+          "measured_in": 29.100000000000001, 
+          "method": "Capsule loop element bounding box, Z extent", 
+          "pass": true, 
+          "target_in": 29.100000000000001, 
+          "tolerance_in": 0.01
+        }, 
+        "loop_outer_width": {
+          "measured_in": 8.1999999999999993, 
+          "method": "Capsule loop element bounding box, X extent", 
+          "pass": true, 
+          "target_in": 8.1999999999999993, 
+          "tolerance_in": 0.01
+        }, 
+        "placed_default_total_drop": {
+          "measured_in": 72.000000000000014, 
+          "method": "Total Drop on the hosted instance before flexing", 
+          "pass": true, 
+          "target_in": 72.0, 
+          "tolerance_in": 0.01
+        }, 
+        "saved_default_total_drop": {
+          "measured_in": 72.000000000000014, 
+          "method": "FamilyManager.CurrentType value in the reopened RFA", 
+          "pass": true, 
+          "target_in": 72.0, 
+          "tolerance_in": 0.01
+        }
+      }, 
+      "family_images": [
+        "Variant - 3D View - Front.png", 
+        "Variant - 3D View - Full Oblique.png", 
+        "Variant - 3D View - Side.png"
+      ], 
+      "family_warnings": [], 
+      "final_saved_total_drop_in": 72.000000000000014, 
+      "finished_utc": "2026-09-18T06:10:53.863000Z", 
+      "flex_tests": [
+        {
+          "body_height_in": 42.550000000000011, 
+          "cord_inches": 12.0, 
+          "expected_drop_in": 42.549999999999997, 
+          "formula_pass": true, 
+          "formula_total_drop_in": 42.550000000000004, 
+          "measured_drop_in": 42.550000000000011, 
+          "measured_pass": true, 
+          "method": "host face Z minus instance bounding box minimum Z", 
+          "tolerance_in": 0.10000000000000001
+        }, 
+        {
+          "body_height_in": 90.550000000000011, 
+          "cord_inches": 60.0, 
+          "expected_drop_in": 90.549999999999997, 
+          "formula_pass": true, 
+          "formula_total_drop_in": 90.550000000000011, 
+          "measured_drop_in": 90.550000000000011, 
+          "measured_pass": true, 
+          "method": "host face Z minus instance bounding box minimum Z", 
+          "tolerance_in": 0.10000000000000001
+        }
+      ], 
+      "gates": {
+        "fresh_rfa_reopen_category": true, 
+        "loop_and_canopy_dimensions": true, 
+        "materials_reach_nested_geometry": true, 
+        "measured_flex_tests": false, 
+        "native_overhead_hosting_and_orientation": true, 
+        "saved_default_total_drop": true, 
+        "visual_exports_present": true, 
+        "zero_unexplained_warnings": true
+      }, 
+      "glass_appearance": {
+        "color": [
+          247, 
+          244, 
+          230
+        ], 
+        "gloss": 0.65000000000000002, 
+        "material_class": "Glass", 
+        "refl0": 0.080000000000000002, 
+        "refl90": 0.84999999999999998, 
+        "self_illum": 100.0, 
+        "transparency": 0.080000000000000002
+      }, 
+      "globe_centre_above_loop_bottom_in": 3.9000000000000021, 
+      "globe_clear_of_inner_cap_in": 0.049999999999997158, 
+      "globe_ray_segments": [
+        {
+          "from": [
+            -3.3500000000000014, 
+            0.0, 
+            25.200000000000003
+          ], 
+          "length": 6.7000000000000028, 
+          "to": [
+            3.3500000000000014, 
+            0.0, 
+            25.200000000000003
+          ]
+        }
+      ], 
+      "host_element_id": "4509", 
+      "host_face_z_ft": 19.0, 
+      "host_type": "Floor 1", 
+      "hosted_images": [
+        "Variant_Hosted - 3D View - Hosted Fixture.png"
+      ], 
+      "label": "B - controlled variation, satin brass, 72 in default", 
+      "loaded_and_face_placed": true, 
+      "loop_ray_segments": [
+        {
+          "from": [
+            -4.0999999999999996, 
+            0.0, 
+            14.550000000000001
+          ], 
+          "length": 0.49999999999999956, 
+          "to": [
+            -3.5999999999999996, 
+            0.0, 
+            14.550000000000001
+          ]
+        }, 
+        {
+          "from": [
+            3.5999999999999992, 
+            0.0, 
+            14.550000000000001
+          ], 
+          "length": 0.50000000000000089, 
+          "to": [
+            4.0999999999999996, 
+            0.0, 
+            14.550000000000001
+          ]
+        }
+      ], 
+      "material_tests": {
+        "Glass Finish": {
+          "distinct_material_ids": [
+            "2811", 
+            "4521"
+          ], 
+          "faces_carrying_substitute": 2, 
+          "faces_inspected": 34, 
+          "reached_nested_geometry": true, 
+          "restored_material_id": "2813", 
+          "substitute_material_id": "4521", 
+          "type_parameter_writable": true
+        }, 
+        "Metal Finish": {
+          "distinct_material_ids": [
+            "2813", 
+            "4520"
+          ], 
+          "faces_carrying_substitute": 32, 
+          "faces_inspected": 34, 
+          "reached_nested_geometry": true, 
+          "restored_material_id": "2811", 
+          "substitute_material_id": "4520", 
+          "type_parameter_writable": true
+        }
+      }, 
+      "metal_appearance": {
+        "color": [
+          186, 
+          166, 
+          112
+        ], 
+        "gloss": 0.5, 
+        "material_class": "Metal", 
+        "refl0": 0.28000000000000003, 
+        "refl90": 0.84999999999999998, 
+        "self_illum": 0.0, 
+        "transparency": 0.0
+      }, 
+      "nested_parameters": [
+        [
+          "Image", 
+          "-1152385", 
+          false
+        ], 
+        [
+          "Category", 
+          "-1140363", 
+          true
+        ], 
+        [
+          "Category", 
+          "-1140362", 
+          true
+        ], 
+        [
+          "Switch ID", 
+          "-1140110", 
+          true
+        ], 
+        [
+          "Panel", 
+          "-1140104", 
+          true
+        ], 
+        [
+          "Circuit Number", 
+          "-1140103", 
+          true
+        ], 
+        [
+          "Calculate Coefficient of Utilization", 
+          "-1140040", 
+          true
+        ], 
+        [
+          "Electrical Data", 
+          "-1114241", 
+          true
+        ], 
+        [
+          "Coefficient of Utilization", 
+          "-1114216", 
+          false
+        ], 
+        [
+          "IFC Predefined Type", 
+          "-1019016", 
+          false
+        ], 
+        [
+          "Export to IFC As", 
+          "-1019014", 
+          false
+        ], 
+        [
+          "Export to IFC", 
+          "-1019012", 
+          false
+        ], 
+        [
+          "IfcGUID", 
+          "-1019000", 
+          false
+        ], 
+        [
+          "Design Option", 
+          "-1013201", 
+          true
+        ], 
+        [
+          "Volume", 
+          "-1012806", 
+          true
+        ], 
+        [
+          "Area", 
+          "-1012805", 
+          true
+        ], 
+        [
+          "Comments", 
+          "-1010106", 
+          false
+        ], 
+        [
+          "Visible", 
+          "-1006205", 
+          false
+        ], 
+        [
+          "Host Id", 
+          "-1002108", 
+          true
+        ], 
+        [
+          "Level", 
+          "-1002062", 
+          true
+        ], 
+        [
+          "Family and Type", 
+          "-1002052", 
+          false
+        ], 
+        [
+          "Family", 
+          "-1002051", 
+          false
+        ], 
+        [
+          "Type", 
+          "-1002050", 
+          false
+        ], 
+        [
+          "Label", 
+          "-1002008", 
+          false
+        ], 
+        [
+          "Family Name", 
+          "-1002002", 
+          true
+        ], 
+        [
+          "Type Name", 
+          "-1002001", 
+          true
+        ], 
+        [
+          "Type Id", 
+          "-1002000", 
+          true
+        ], 
+        [
+          "Visibility/Graphics Overrides", 
+          "-1001808", 
+          false
+        ], 
+        [
+          "Moves With Nearby Elements", 
+          "-1001370", 
+          false
+        ], 
+        [
+          "Offset from Host", 
+          "-1001364", 
+          false
+        ], 
+        [
+          "Host", 
+          "-1001363", 
+          true
+        ], 
+        [
+          "Elevation from Level", 
+          "-1001360", 
+          false
+        ], 
+        [
+          "Mark", 
+          "-1001203", 
+          false
+        ]
+      ], 
+      "orientation": {
+        "hangs_below_host": true, 
+        "host_face_z_in": 228.0, 
+        "instance_max_z_in": 228.0, 
+        "instance_min_z_in": 156.0
+      }, 
+      "parent_parts": [
+        {
+          "id": "4018", 
+          "name": "Canopy"
+        }
+      ], 
+      "part_bounds_inches": {
+        "capsule_loop": {
+          "max": [
+            4.0999999999999996, 
+            0.25, 
+            29.100000000000001
+          ], 
+          "min": [
+            -4.0999999999999996, 
+            -0.25, 
+            0.0
+          ], 
+          "size": [
+            8.1999999999999993, 
+            0.5, 
+            29.100000000000001
+          ]
+        }, 
+        "globe_seat": {
+          "max": [
+            0.34999999999999998, 
+            0.30310889132455388, 
+            28.649999999999999
+          ], 
+          "min": [
+            -0.34999999999999998, 
+            -0.30310889132455443, 
+            28.5
+          ], 
+          "size": [
+            0.69999999999999996, 
+            0.60621778264910819, 
+            0.1499999999999968
+          ]
+        }, 
+        "opal_globe": {
+          "max": [
+            3.2991059725908976, 
+            3.3500000000000001, 
+            28.550000000000004
+          ], 
+          "min": [
+            -3.2991059725908976, 
+            -3.3500000000000001, 
+            21.850000000000001
+          ], 
+          "size": [
+            6.5982119451817951, 
+            6.7000000000000002, 
+            6.7000000000000028
+          ]
+        }, 
+        "upper_cable_socket": {
+          "max": [
+            0.23000000000000004, 
+            0.19918584287042115, 
+            0.10000000000000002
+          ], 
+          "min": [
+            -0.23000000000000004, 
+            -0.19918584287042151, 
+            -0.34999999999999998
+          ], 
+          "size": [
+            0.46000000000000008, 
+            0.39837168574084264, 
+            0.44999999999999996
+          ]
+        }
+      }, 
+      "placement_type": "WorkPlaneBased", 
+      "project_warnings": [], 
+      "reopened": true, 
+      "requested_default_cord_in": 41.450000000000003, 
+      "requested_default_total_drop_in": 72.0, 
+      "rfa_bytes": 561152, 
+      "rfa_mtime_utc": "2026-09-18T06:10:41Z", 
+      "rfa_path": "C:\\Users\\mlux\\Documents\\GitHub\\3D-Model-Workflow\\output\\model-transfer-tests\\candidate-20260918-01\\pendant\\Mila_Trial_SatinBrass_72in_R2025.rfa", 
+      "saved_type_values_in": {
+        "Assembly Offset": 42.900000000000006, 
+        "Cord Length": 41.450000000000003, 
+        "Total Drop": 72.000000000000014
+      }, 
+      "socket_projection_above_loop_in": 0.34999999999999998, 
+      "started_utc": "2026-09-18T06:10:39.087000Z", 
+      "technical_pass": false, 
+      "total_drop_is_read_only": true, 
+      "type_name": "Mila Satin Brass 72in", 
+      "visual_verdict": "PENDING REVIEWER - exports produced, fidelity not self-assessed"
+    }
+  }, 
+  "dimension_tolerance_in": 0.01, 
+  "drop_tolerance_in": 0.10000000000000001, 
+  "error": "Traceback (most recent call last):\n  File \"C:\\Users\\mlux\\Documents\\GitHub\\3D-Model-Workflow\\output\\model-transfer-tests\\candidate-20260918-01\\pendant\\build_pendant.py\", line 786, in <module>\n    raise RuntimeError('Gate failures: ' + json.dumps(REPORT['failed_gates']))\nRuntimeError: Gate failures: {\"baseline\": [\"measured_flex_tests\"], \"variant\": [\"measured_flex_tests\"]}\n", 
+  "failed_gates": {
+    "baseline": [
+      "measured_flex_tests"
+    ], 
+    "variant": [
+      "measured_flex_tests"
+    ]
+  }, 
+  "repo_root": "C:\\Users\\mlux\\Documents\\GitHub\\3D-Model-Workflow", 
+  "revit_build": "25.4.41.14", 
+  "revit_version": "2025", 
+  "run_dir": "C:\\Users\\mlux\\Documents\\GitHub\\3D-Model-Workflow\\output\\model-transfer-tests\\candidate-20260918-01\\pendant", 
+  "run_id": "candidate-20260918-01", 
+  "script": "build_pendant.py", 
+  "specification": "docs/model-transfer-tests/PENDANT.md", 
+  "stage": "failed", 
+  "started_utc": "2026-09-18T06:10:10.893000Z", 
+  "technical_pass": false, 
+  "templates": {
+    "body": "C:\\ProgramData\\Autodesk\\RVT 2025\\Family Templates\\English-Imperial\\Generic Model.rft", 
+    "body_exists": true, 
+    "face_based": "C:\\ProgramData\\Autodesk\\RVT 2025\\Family Templates\\English-Imperial\\Generic Model face based.rft", 
+    "face_based_exists": true
+  }
+}

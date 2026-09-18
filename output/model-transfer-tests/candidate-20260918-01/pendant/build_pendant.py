@@ -92,6 +92,22 @@ CONFIGS = [
 ]
 
 
+def element_name(element):
+    """Read Element.Name safely.
+
+    Document.GetElement returns a statically typed Element, and the IronPython
+    binder on the pyRevit .NET Core engine cannot resolve Element.Name through
+    that reference (MissingMemberException: Name — attempt 1, 2026-09-18).
+    Concrete types such as Material, Category and View bind normally. Go through
+    the property descriptor, and fall back to the type-name parameter.
+    """
+    try:
+        return DB.Element.Name.GetValue(element)
+    except Exception:
+        param = element.get_Parameter(DB.BuiltInParameter.SYMBOL_NAME_PARAM)
+        return param.AsString() if param else None
+
+
 def repo_root():
     for candidate in REPO_ROOT_CANDIDATES:
         if os.path.isdir(candidate) and os.path.isfile(os.path.join(candidate, 'AGENTS.md')):
@@ -604,7 +620,7 @@ def validate(app, cfg, rfa_path, record):
     instance = project.Create.NewFamilyInstance(reference, point, DB.XYZ.BasisX, symbol)
     project.Regenerate()
     record['host_element_id'] = str(floor.Id.Value)
-    record['host_type'] = project.GetElement(floor.GetTypeId()).Name
+    record['host_type'] = element_name(project.GetElement(floor.GetTypeId()))
     record['host_face_z_ft'] = point.Z
     record['loaded_and_face_placed'] = instance.Host.Id == floor.Id
 
@@ -640,15 +656,25 @@ def validate(app, cfg, rfa_path, record):
             'method': 'host face Z minus instance bounding box minimum Z',
             'formula_pass': abs(formula - expected) <= DIM_TOL,
             'measured_pass': abs(actual - expected) <= DROP_TOL,
-            'body_height_in': (flexed.Max.Z - flexed.Min.Z) * 12,
+            'instance_height_in': (flexed.Max.Z - flexed.Min.Z) * 12,
+            'body_span_in': actual - length,
         })
     cord_param.Set((cfg['total_drop'] - DROP_CONSTANT) / 12.0)
     project.Regenerate()
     record['cord_restored_in'] = cord_param.AsDouble() * 12
 
-    # Body geometry must not change across flex states.
-    heights = [t['body_height_in'] for t in record['flex_tests']]
-    record['body_height_stable'] = bool(heights) and (max(heights) - min(heights)) <= DIM_TOL
+    # Body geometry must not change across flex states. The parent instance
+    # bounding box spans canopy, cord and body, so its height grows with Cord
+    # Length by design and can never show this (attempt 2 gate failure,
+    # 2026-09-18). Measure the assembly hanging below the host instead:
+    # measured drop minus cord length. That span holds at DROP_CONSTANT only
+    # while the canopy/socket/body chain keeps its length. It does not by
+    # itself bound the nested body solid; the body family document records
+    # that separately as body_height_including_socket_in.
+    spans = [t['body_span_in'] for t in record['flex_tests']]
+    record['body_span_target_in'] = DROP_CONSTANT
+    record['body_height_stable'] = bool(spans) and (max(spans) - min(spans)) <= DIM_TOL \
+        and all(abs(s - DROP_CONSTANT) <= DROP_TOL for s in spans)
 
     record['material_tests'] = {}
     for name in ('Metal Finish', 'Glass Finish'):
