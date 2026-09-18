@@ -8,7 +8,20 @@ Project-wide memory and error logging: see [AGENTS.md](AGENTS.md) and [PROJECT_M
 
 Effective 2026-09-17, supply materials as a native `.adsklib` plus companion textures. Never use or recommend Transfer Project Standards or copying swatches from an RVT as the material delivery/import method. An RVT may be an internal test artifact, but is not a substitute for the library. Verify native library opening, material addition, and texture resolution in a disposable project before delivery; do not test transfers in the user's working model. If `.adsklib` export is unavailable, report incomplete delivery instead of handing off an RVT workaround. Older Belmont transfer instructions are withdrawn.
 
+Every delivered appearance asset must include at least one explicit bound color/diffuse bitmap. For a uniform polished, painted, or plated finish, use a spatially uniform bitmap at the intended base color rather than inventing visible texture. This provides a portable Revit appearance input while remaining intrinsically seamless and free of recognizable repetition. Keep the texture beside the library, use package-relative setup notes, and verify that the bound bitmap path resolves before delivery.
+
 Standing user instruction — 2026-09-17: **All materials must be made to appear seamless and non-repeating**, effective immediately for all material types and future work. Existing materials reviewed against this rule must be marked for revision if they do not pass.
+
+Standing user instruction — 2026-09-18: **V-Ray assets are produced on request only.** The default material deliverable is the `.adsklib` plus companion textures and notes. Do not generate VRMAT or VRSCENE files, and do not treat a missing V-Ray asset as an incomplete delivery, unless the user has asked for V-Ray output for that job.
+
+### ADSKLIB build and release discipline
+
+- Invoke pyRevit build/validation scripts with an **absolute script path**. The runner may execute from a temporary working directory, so a relative path can return exit code 0 without actually running the intended repository script.
+- Never accept a pyRevit exit code by itself as proof. Require a task-specific output or validation file, confirm its timestamp/content changed during the run, and check the recorded native save/reopen, warning count, material bindings, and texture existence.
+- Build or rewrite an ADSKLIB to a temporary/candidate filename first. Before release, verify it is a readable archive, run the repository's independent ADSKLIB codec/readback where applicable, confirm the intended material name and texture paths, and record a SHA-256 digest.
+- Do not replace an ADSKLIB in place while it may be open in Revit. If replacement returns a Windows sharing/file-lock error, keep the validated candidate intact and release it under a new revision/descriptive filename. Do not close the user's working Revit session merely to free the old library.
+- Package materials from an explicit allow-list: final ADSKLIB, companion textures, concise loading/setup notes, and QA/validation evidence. Exclude temporary RVTs and backups by default when a valid ADSKLIB is supplied.
+- Verify the final ZIP independently after writing it, record its size and SHA-256 digest, then upload. A copy into a Drive-mounted folder is only a transfer step; delivery is complete only after Google Drive metadata independently confirms the remote file, destination, and size.
 
 ### Construction
 
