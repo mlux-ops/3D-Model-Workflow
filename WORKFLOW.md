@@ -4,6 +4,8 @@ Project-wide memory and error logging: see [AGENTS.md](AGENTS.md) and [PROJECT_M
 
 ## Agreed defaults
 
+- Material delivery (user instruction, 2026-09-18): when an `.adsklib` is provided, a separate Revit project (`.rvt`) is not required. Do not produce individual material projects by default. Include required companion textures and setup notes with the library. Temporary Revit projects may be used as needed for creation or validation; deliver an RVT only when specifically requested or needed because no ADSKLIB is provided.
+
 - Revit 2025 is the oldest supported version.
 - Face-based or work-plane-based placement; hosts are in the current native model.
 - Purpose: faithful 3D visualization and rendering.

@@ -1,5 +1,12 @@
 # Project memory
 
+## Model-transfer test kit — 2026-09-18
+- User approved setting up one pendant and one material test to evaluate another model's ability to reuse these workflows. Kit: `docs/model-transfer-tests/README.md`, two candidate prompts, environment guide, acceptance specifications, scorecard and source hash manifest.
+- P01 uses Mila reproduction plus a 72-inch-drop satin brass visual variant. M01 uses the Adella precision rebuild plus a 1/8-inch-grout variant. These are open-book reproduction/adaptation tests, not evidence of generalization to unseen products or actual model training.
+- Source priority: Adella precision rebuild uses `references/adella/crawl2.jpg`, 2560 x 1269 source and 0.6 mm inferred full height range; older square-source/1.5 mm descriptions are superseded for the test. Mila 29.1-inch loop excludes the 0.35-inch socket extension. These are existing documented distinctions, not new failures.
+- Existing builders must be adapted into isolated run folders before execution: the Adella precision script copies maps back to production output, and native builders contain fixed destinations. No production builders or deliverables changed during kit setup.
+- Status: candidate execution not started; no Anthropic capability, native render success, cost saving or new model/material delivery is claimed. Historical V-Ray licensing/import limitations remain explicit. Final candidate packages still require verified Google Drive delivery under the standing rule.
+
 ## Mila pendant preparation — 2026-09-15
 - Delivery: Mila_Pendant_Dark_R2025.zip uploaded to verified 3D Models folder; Drive file ID 1CJc7xksyQHau-Mn_4zkXVwJG2cCcylrF. Local ZIP integrity passed (14 entries); includes main/nested RFA, references, source, notes and native previews. No preexisting Mila package found.
 - First build failed while reading newly created FreeFormElement bounds (None). Cause: regeneration missing before geometry inspection. Solution: call child.Regenerate() before bounds. Resolved: second run saved/reopened the RFA, placed it on a native overhead face, passed four suspension flex tests and both material substitutions, with zero family/project warnings.
@@ -549,3 +556,11 @@ Keep separate evidence for file syntax, native application acceptance, retained 
 - Revit filename control recovery: keyboard/click focus did not reach the modal and set_value again reported stale element 137. Repeated occurrence logged; use application launch with the validated RVT argument to avoid the modal. No material output was changed.
 - User requested immediate export to conserve usage. Final package includes validated native RVT with all six preferred assignments, twelve textures, original preferred photos, selection audit, and setup notes. ADSKLIB export not completed; native RVT is the material transfer source. Drive remains pending sign-in. Startup UI activation removed from builder to prevent recurrence.
 >>>>>>> 76cbf65279802772fdd921857d718c935974b6b6
+- Final upload verification encountered drive is not defined after browser runtime reset. No external action occurred. Recover the existing tab from browser inventory and verify upload; do not upload again blindly.
+
+## Beige fluted tile final delivery — 2026-09-18
+
+- Project-wide user preference recorded 2026-09-18: individual Revit material projects are unnecessary when an ADSKLIB is provided. Updated AGENTS.md and WORKFLOW.md to default to library, companion textures and setup notes; temporary validation projects remain permitted. This is a workflow preference, not an error or a request to remove existing deliverables.
+- Browser binding reset resolved by recovering the existing tab. No duplicate upload was performed.
+- Verified uploaded Beige_Fluted_12x24_R2025_Package.zip in Material Packages (10rotmdUvGLbbgNkxhHUyEMIv_3WNOB8x). Drive metadata shows compressed archive, 927 KB, created September 17; archive viewer shows ADSKLIB, RVT, textures, source, README and validation files. File ID: 1ZDD-U39qBrhexeYNYj2hjocMflIs-Qzs. Link: https://drive.google.com/file/d/1ZDD-U39qBrhexeYNYj2hjocMflIs-Qzs/view
+- Fresh local ZIP verification: 949290 bytes, 11 file entries, no corrupt entry; SHA256 61aff0d68ab9ecbd1969d0510f670cf28ade2c998415ae098cf26016c13482f9. Revit validation confirms save/reopen, zero warnings, 12 x 24 inch mapping. Delivery complete; appearance relief and sheen remain documented estimates.

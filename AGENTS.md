@@ -12,6 +12,10 @@ User instruction, recorded 2026-09-11: **Every time there is an error, log it in
 
 Existing discipline-specific conventions remain in [WORKFLOW.md](WORKFLOW.md).
 
+## Material deliverables
+
+User instruction, recorded 2026-09-18: An `.adsklib` with its required companion textures and setup notes is sufficient for material delivery. Individual Revit projects (`.rvt`) are not required when the library is provided; do not produce them by default. Temporary projects may be used for creation or validation. Deliver an RVT only when specifically requested or needed because no ADSKLIB is provided.
+
 ## Final package delivery to Google Drive
 
 User instruction, recorded 2026-09-14: Every outputted final material or 3D model package must be uploaded to Google Drive under **3D Model Workflow** (folder ID `1Xsd3Y96SOi00cWNaxqYeqlp4tNe3Z8CD`).
