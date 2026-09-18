@@ -1,0 +1,111 @@
+{
+  "adsklib": {
+    "created_or_reused": "neither - not attempted", 
+    "reason": "Creating or updating an ADSKLIB is a native Material Browser operation with no Revit API route. Transfer Project Standards, the only other API path into a second project, is rejected by the 2026-09-17 standing user instruction. Requires a human step in Revit.", 
+    "second_project_import": "BLOCKED - depends on the library above", 
+    "status": "BLOCKED"
+  }, 
+  "failed_gates": {
+    "baseline": [], 
+    "variant": []
+  }, 
+  "repo_root": "C:\\Users\\mlux\\Documents\\GitHub\\3D-Model-Workflow", 
+  "revit_pass": true, 
+  "run_dir": "C:\\Users\\mlux\\Documents\\GitHub\\3D-Model-Workflow\\output\\model-transfer-tests\\candidate-20260918-01\\material", 
+  "run_id": "candidate-20260918-01", 
+  "script": "build_revit.py", 
+  "specification": "docs/model-transfer-tests/MATERIAL.md", 
+  "stage": "complete", 
+  "transfer_note": "Rejected by the 2026-09-17 standing user instruction. Materials are delivered as ADSKLIB plus companion textures.", 
+  "transfer_project_standards_used": false, 
+  "variants": {
+    "baseline": {
+      "connected": {
+        "bump": {
+          "path": "C:\\Users\\mlux\\Documents\\GitHub\\3D-Model-Workflow\\output\\model-transfer-tests\\candidate-20260918-01\\material\\baseline\\textures\\Adella_Bump.png", 
+          "scale_x_in": 24.0625, 
+          "scale_y_in": 12.0625
+        }, 
+        "colour": {
+          "path": "C:\\Users\\mlux\\Documents\\GitHub\\3D-Model-Workflow\\output\\model-transfer-tests\\candidate-20260918-01\\material\\baseline\\textures\\Adella_BaseColor.png", 
+          "scale_x_in": 24.0625, 
+          "scale_y_in": 12.0625
+        }
+      }, 
+      "gates": {
+        "applied_to_native_face": true, 
+        "bump_map_is_this_variant": true, 
+        "colour_map_is_this_variant": true, 
+        "material_class_ceramic": true, 
+        "no_fallback_to_production_dir": true, 
+        "physical_scales_match_repeat": true, 
+        "rvt_saved_and_reopened": true, 
+        "zero_project_warnings": true
+      }, 
+      "intended_maps": {
+        "bump": "C:\\Users\\mlux\\Documents\\GitHub\\3D-Model-Workflow\\output\\model-transfer-tests\\candidate-20260918-01\\material\\baseline\\textures\\Adella_Bump.png", 
+        "colour": "C:\\Users\\mlux\\Documents\\GitHub\\3D-Model-Workflow\\output\\model-transfer-tests\\candidate-20260918-01\\material\\baseline\\textures\\Adella_BaseColor.png"
+      }, 
+      "label": "A - reproduction, 1/16 in grout", 
+      "material_class": "Ceramic", 
+      "material_name": "MSI Adella Viso White - 12x24 Satin - Stacked", 
+      "paint_test": {
+        "face_area_sqft": 100.0, 
+        "is_painted": true, 
+        "matches_material": true, 
+        "painted_material_id": "2784", 
+        "wall_id": "2785"
+      }, 
+      "project_warnings": [], 
+      "reopened": true, 
+      "revit_pass": true, 
+      "revit_version": "2025", 
+      "rvt_bytes": 462848, 
+      "rvt_path": "C:\\Users\\mlux\\Documents\\GitHub\\3D-Model-Workflow\\output\\model-transfer-tests\\candidate-20260918-01\\material\\Adella_Trial_Baseline_R2025.rvt"
+    }, 
+    "variant": {
+      "connected": {
+        "bump": {
+          "path": "C:\\Users\\mlux\\Documents\\GitHub\\3D-Model-Workflow\\output\\model-transfer-tests\\candidate-20260918-01\\material\\variant\\textures\\Adella_Bump.png", 
+          "scale_x_in": 24.125, 
+          "scale_y_in": 12.125
+        }, 
+        "colour": {
+          "path": "C:\\Users\\mlux\\Documents\\GitHub\\3D-Model-Workflow\\output\\model-transfer-tests\\candidate-20260918-01\\material\\variant\\textures\\Adella_BaseColor.png", 
+          "scale_x_in": 24.125, 
+          "scale_y_in": 12.125
+        }
+      }, 
+      "gates": {
+        "applied_to_native_face": true, 
+        "bump_map_is_this_variant": true, 
+        "colour_map_is_this_variant": true, 
+        "material_class_ceramic": true, 
+        "no_fallback_to_production_dir": true, 
+        "physical_scales_match_repeat": true, 
+        "rvt_saved_and_reopened": true, 
+        "zero_project_warnings": true
+      }, 
+      "intended_maps": {
+        "bump": "C:\\Users\\mlux\\Documents\\GitHub\\3D-Model-Workflow\\output\\model-transfer-tests\\candidate-20260918-01\\material\\variant\\textures\\Adella_Bump.png", 
+        "colour": "C:\\Users\\mlux\\Documents\\GitHub\\3D-Model-Workflow\\output\\model-transfer-tests\\candidate-20260918-01\\material\\variant\\textures\\Adella_BaseColor.png"
+      }, 
+      "label": "B - controlled variation, 1/8 in grout", 
+      "material_class": "Ceramic", 
+      "material_name": "MSI Adella Viso White - 12x24 Satin - Stacked - 1-8 Grout", 
+      "paint_test": {
+        "face_area_sqft": 100.0, 
+        "is_painted": true, 
+        "matches_material": true, 
+        "painted_material_id": "2784", 
+        "wall_id": "2785"
+      }, 
+      "project_warnings": [], 
+      "reopened": true, 
+      "revit_pass": true, 
+      "revit_version": "2025", 
+      "rvt_bytes": 462848, 
+      "rvt_path": "C:\\Users\\mlux\\Documents\\GitHub\\3D-Model-Workflow\\output\\model-transfer-tests\\candidate-20260918-01\\material\\Adella_Trial_OneEighthGrout_R2025.rvt"
+    }
+  }
+}

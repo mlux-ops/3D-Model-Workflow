@@ -1,0 +1,247 @@
+{
+  "bevel_mm": 2.0,
+  "crop": [
+    12,
+    12,
+    2548,
+    1257
+  ],
+  "cropped_pixels": [
+    2536,
+    1245
+  ],
+  "failed_gates": {
+    "baseline": [],
+    "variant": []
+  },
+  "height_full_range_mm": 0.6,
+  "maps_pass": true,
+  "method": "floating point luminance filtering throughout, quantised only on export. Photo-derived relief estimate, not measured height. Photographed shading is attenuated, not calibrated albedo. Resampling to 4096 x 2048 does not create native 4K detail.",
+  "native_render": "BLOCKED - V-Ray is not installed on this workstation",
+  "output_pixels": [
+    4096,
+    2048
+  ],
+  "repo_root": "C:/Users/mlux/Documents/GitHub/3D-Model-Workflow",
+  "revit_library": "not attempted by this script; see the Revit stage",
+  "run_dir": "C:/Users/mlux/Documents/GitHub/3D-Model-Workflow\\output\\model-transfer-tests\\candidate-20260918-01\\material",
+  "run_id": "candidate-20260918-01",
+  "script": "build_maps.py",
+  "source_is_scan": false,
+  "source_path": "C:/Users/mlux/Documents/GitHub/3D-Model-Workflow\\references\\adella\\crawl2.jpg",
+  "source_pixels": [
+    2560,
+    1269
+  ],
+  "source_url": "https://www.stonelocator.com/wp-content/uploads/2017/11/NADEVISWHI1224_a-scaled.jpg",
+  "specification": "docs/model-transfer-tests/MATERIAL.md",
+  "stage": "complete",
+  "variants": {
+    "baseline": {
+      "gates": {
+        "five_maps_present": true,
+        "float_precision_retained": true,
+        "grout_core_measured": true,
+        "height_is_16bit": true,
+        "height_quantisation_smoke_check": true,
+        "normal_is_rgb16": true,
+        "output_dimensions": true,
+        "preview_2x2_present": true
+      },
+      "grout_core": {
+        "ideal_px": [
+          10.638961038961039,
+          10.61139896373057
+        ],
+        "measured_px": [
+          12,
+          12
+        ],
+        "method": "count of pixels whose edge distance is below the half joint, along the centre row and the centre column. Pixel centres are used, so each half-joint rounds outward by up to one pixel. The bevel is excluded and is not counted as grout.",
+        "pass": true,
+        "tolerance_px": 2.0
+      },
+      "half_joint_mm": 0.79375,
+      "height_unique_smoke_check": true,
+      "height_unique_values": 29490,
+      "joint_inches": 0.0625,
+      "joint_mm": 1.5875,
+      "label": "A - reproduction, 1/16 in grout",
+      "maps": {
+        "Adella_BaseColor.png": {
+          "bit_depth": 8,
+          "bytes": 283129,
+          "colour_type": 2,
+          "height": 2048,
+          "width": 4096
+        },
+        "Adella_Bump.png": {
+          "bit_depth": 16,
+          "bytes": 9241430,
+          "colour_type": 0,
+          "height": 2048,
+          "width": 4096
+        },
+        "Adella_Height16.png": {
+          "bit_depth": 16,
+          "bytes": 9241430,
+          "colour_type": 0,
+          "height": 2048,
+          "width": 4096
+        },
+        "Adella_Normal_OpenGL.png": {
+          "bit_depth": 16,
+          "bytes": 27650006,
+          "colour_type": 2,
+          "height": 2048,
+          "width": 4096
+        },
+        "Adella_Roughness.png": {
+          "bit_depth": 8,
+          "bytes": 13069,
+          "colour_type": 0,
+          "height": 2048,
+          "width": 4096
+        }
+      },
+      "maps_pass": true,
+      "material_name": "MSI Adella Viso White - 12x24 Satin - Stacked",
+      "mm_per_pixel": [
+        0.1492156982421875,
+        0.149603271484375
+      ],
+      "precision": {
+        "base_finite": true,
+        "height_finite": true,
+        "height_max": 0.6757438778877258,
+        "height_min": 0.15,
+        "working_dtype": "float64"
+      },
+      "preview": {
+        "covers_repeats": [
+          2,
+          2
+        ],
+        "file": "baseline/Preview_2x2_ILLUSTRATIVE_NOT_A_RENDER.jpg",
+        "label": "ILLUSTRATIVE shaded map preview, not a native Revit or V-Ray render"
+      },
+      "repeat_inches": [
+        24.0625,
+        12.0625
+      ],
+      "repeat_mm": [
+        611.1875,
+        306.3875
+      ],
+      "roughness_response": {
+        "grout": 0.78,
+        "note": "the satin ceramic face is smoother than the light grout. Linear data map, consumed as roughness with option_use_roughness in the V-Ray material.",
+        "tile": 0.42
+      },
+      "visual_verdict": "PENDING REVIEWER - previews are illustrative, fidelity not self-assessed"
+    },
+    "variant": {
+      "gates": {
+        "five_maps_present": true,
+        "float_precision_retained": true,
+        "grout_core_measured": true,
+        "height_is_16bit": true,
+        "height_quantisation_smoke_check": true,
+        "normal_is_rgb16": true,
+        "output_dimensions": true,
+        "preview_2x2_present": true
+      },
+      "grout_core": {
+        "ideal_px": [
+          21.22279792746114,
+          21.11340206185567
+        ],
+        "measured_px": [
+          22,
+          22
+        ],
+        "method": "count of pixels whose edge distance is below the half joint, along the centre row and the centre column. Pixel centres are used, so each half-joint rounds outward by up to one pixel. The bevel is excluded and is not counted as grout.",
+        "pass": true,
+        "tolerance_px": 2.0
+      },
+      "half_joint_mm": 1.5875,
+      "height_unique_smoke_check": true,
+      "height_unique_values": 29341,
+      "joint_inches": 0.125,
+      "joint_mm": 3.175,
+      "label": "B - controlled variation, 1/8 in grout",
+      "maps": {
+        "Adella_BaseColor.png": {
+          "bit_depth": 8,
+          "bytes": 280367,
+          "colour_type": 2,
+          "height": 2048,
+          "width": 4096
+        },
+        "Adella_Bump.png": {
+          "bit_depth": 16,
+          "bytes": 9170438,
+          "colour_type": 0,
+          "height": 2048,
+          "width": 4096
+        },
+        "Adella_Height16.png": {
+          "bit_depth": 16,
+          "bytes": 9170438,
+          "colour_type": 0,
+          "height": 2048,
+          "width": 4096
+        },
+        "Adella_Normal_OpenGL.png": {
+          "bit_depth": 16,
+          "bytes": 27412432,
+          "colour_type": 2,
+          "height": 2048,
+          "width": 4096
+        },
+        "Adella_Roughness.png": {
+          "bit_depth": 8,
+          "bytes": 13060,
+          "colour_type": 0,
+          "height": 2048,
+          "width": 4096
+        }
+      },
+      "maps_pass": true,
+      "material_name": "MSI Adella Viso White - 12x24 Satin - Stacked - 1-8 Grout",
+      "mm_per_pixel": [
+        0.149603271484375,
+        0.15037841796874998
+      ],
+      "precision": {
+        "base_finite": true,
+        "height_finite": true,
+        "height_max": 0.674801766872406,
+        "height_min": 0.15,
+        "working_dtype": "float64"
+      },
+      "preview": {
+        "covers_repeats": [
+          2,
+          2
+        ],
+        "file": "variant/Preview_2x2_ILLUSTRATIVE_NOT_A_RENDER.jpg",
+        "label": "ILLUSTRATIVE shaded map preview, not a native Revit or V-Ray render"
+      },
+      "repeat_inches": [
+        24.125,
+        12.125
+      ],
+      "repeat_mm": [
+        612.775,
+        307.97499999999997
+      ],
+      "roughness_response": {
+        "grout": 0.78,
+        "note": "the satin ceramic face is smoother than the light grout. Linear data map, consumed as roughness with option_use_roughness in the V-Ray material.",
+        "tile": 0.42
+      },
+      "visual_verdict": "PENDING REVIEWER - previews are illustrative, fidelity not self-assessed"
+    }
+  }
+}
