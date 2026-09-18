@@ -12,6 +12,10 @@ User instruction, recorded 2026-09-11: **Every time there is an error, log it in
 
 Existing discipline-specific conventions remain in [WORKFLOW.md](WORKFLOW.md).
 
+## Material deliverables
+
+User instruction, recorded 2026-09-18: An `.adsklib` with its required companion textures and setup notes is sufficient for material delivery. Individual Revit projects (`.rvt`) are not required when the library is provided; do not produce them by default. Temporary projects may be used for creation or validation. Deliver an RVT only when specifically requested or needed because no ADSKLIB is provided.
+
 ## Mandatory material appearance standard
 
 ### Revit material delivery — mandatory format
