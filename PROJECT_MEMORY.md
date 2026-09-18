@@ -1,5 +1,12 @@
 # Project memory
 
+## Mila pendant preparation — 2026-09-15
+- Delivery: Mila_Pendant_Dark_R2025.zip uploaded to verified 3D Models folder; Drive file ID 1CJc7xksyQHau-Mn_4zkXVwJG2cCcylrF. Local ZIP integrity passed (14 entries); includes main/nested RFA, references, source, notes and native previews. No preexisting Mila package found.
+- First build failed while reading newly created FreeFormElement bounds (None). Cause: regeneration missing before geometry inspection. Solution: call child.Regenerate() before bounds. Resolved: second run saved/reopened the RFA, placed it on a native overhead face, passed four suspension flex tests and both material substitutions, with zero family/project warnings.
+- Final Mila body follows supplied 8.2 x 29.1 inch dimensions and 7.1 x 1.1 inch canopy. User chose dark metal/dark canopy over brass/white PDF selection. Globe diameter 6.7 inches and band depth 0.5 inch inferred; default total drop 60 inches, editable Cord Length. Native front/oblique previews reviewed; shaded previews do not establish photometric rendering. Final package upload pending.
+- Tool lookup returned exit 1 because pdftotext is absent from PATH; pyRevit and pdftoppm were found. Used bundled Python pypdf for successful text extraction and pdftoppm for rendering. Resolved; check optional commands separately.
+- Existing merge-marker text was observed in this memory file. Cause appears to be retained merge content; no task-related data removed. Preserve history during this fixture task; cleanup is outside scope.
+
 ## Scandinavian hex material — 2026-09-13
 - User specified 6 x 7 inch hexagons and installation orientation from supplied room photo. Interpreted as flat-top hexagons 7 inches wide x 6 inches high, with 1/16 inch estimated grout. Printed fan artwork is sampled from the supplied real tile image; 0/120/240-degree rotations meet at shared vertices. Bump represents joints/bevel only, not printed white lines.
 - Error during Revit batch startup UI observation: `foreground window did not report a process id`. Cause: batch window disappeared before capture. Solution: batch completed successfully; launched a separate interactive Revit instance and captured its returned window. Resolved.
@@ -404,10 +411,18 @@ Keep separate evidence for file syntax, native application acceptance, retained 
 
 <<<<<<< HEAD
 ## Google Drive delivery rule — 2026-09-14
+### E029 — B/C 19.05 mm upper mushroom holders failed physical print
+- Recorded: 2026-09-14. User reports B_19.05mm_upper_mushroom_1 and C_19.05mm_upper_mushroom_1 were modeled incorrectly and failed printing.
+- Confirmed mesh defect: B/C exported STLs each have 318 edges with incident-face count other than two at 0.00001 mm welding precision; their geometry is identical. Other upper exports have 68–92 bad edges. Earlier Boolean construction and facet cleanup did not produce closed solids; warning-free slicing was insufficient. Exact physical failure mechanism remains unobserved.
+- Solution: Replace upper keeper Boolean construction with directly connected analytic outer/inner rings; retain nominal envelope, tab projection and screw passages. Tiny edge bevel omitted. Generate all ten replacement upper STLs and a B/C-only reprint project. No new lower or cover validation claimed.
+- Status: All ten exported replacement STLs pass edge-closure and positive-volume audit. B/C native slicing result reports Success / return_code 0, no warnings, 83 minutes / 5.4 g; READY archive integrity and presence of G-code verified. CLI process completion lagged file output; finalized from verified result and archive. Physical print success remains unverified.
+- Delivery: output/quietmount-upper-repair/QuietMount_Upper_Repair_2026-09-14.zip uploaded successfully under verified 3D Models folder 1WoLM7G88CPMq-7-w_dloZiqDmk7hjd7W, file ID 1sZ9gR6W-FIdwIKY0l6aN8A_lAuW3eyid. Package includes B/C sliced and editable project, all ten repaired upper STLs, source, presets and notes identifying superseded upper geometry. Prior lower bodies/covers not certified by this repair.
+
 - Every final material/model package must be uploaded under Google Drive / 3D Model Workflow / Material Packages or 3D Models. Standing user authorization recorded in AGENTS.md; verify remote metadata and avoid identical duplicate uploads.
 - Initial filesystem probe of G:/My Drive was denied by the sandbox. Connector search successfully located the exact private Drive folder; use connector operations instead. Git global-ignore access warnings recurred under sandbox; no Git mutation requested for this task.
 - Current checkout is main; recent material archives exist on codex/create-tile-revit-and-vray. Recover their exact committed ZIP bytes to an upload staging directory without changing branches or replacing working files.
 - During resumed delivery, two model uploads returned `success:false` because one call used a mistyped 3D Models folder ID. Cause: folder ID typo in the connector request. Retried with the verified folder ID and both uploads succeeded. Final connector listing confirms 25 model packages and 4 material packages, matching all 29 manifest entries.
+<<<<<<< Updated upstream
 =======
 - E028 investigation: installed Chaos Cosmos VRMAT reader also exits unsuccessfully under Windows PowerShell, so failure is not isolated to the generated material. Windows PowerShell -File first returned script execution disabled; direct command invocation avoided changing execution policy but still failed in native SDK. Native host import remains next step.
 
@@ -457,3 +472,56 @@ Keep separate evidence for file syntax, native application acceptance, retained 
 - Main also contained malformed Adella VRMAT XML (missing opening Asset/plugin wrappers for UVW). Retained the intact source-branch VRMAT and its matching generator. Verification: pending final XML/image and merge checks.
 - Final local verification passed: no unresolved conflicts or conflict markers; all Adella VRMAT files parse, packaged PNG integrity passes, generator syntax compiles, and git diff --check is clean. Native rendering was not rerun for this merge-only repair.
 >>>>>>> b9c7b85c55a43c161ade544f2c6360a3814160e2
+=======
+
+### E007 recurrence / open-project check — 2026-09-14
+- Bambu-targeted screenshot initially captured the foreground Codex surface. Explicitly activating the uniquely returned Bambu window corrected capture; subsequent screenshot verified QuietMount_Tab_Down_READY remains open.
+- Current open session still uses the older project; repair files were delivered separately, not substituted in that session. Preview is clipped at layer 35 / 2.92 mm, so translucent upper geometry alone is not proof of mesh failure. No project contents changed during this read-only inspection.
+>>>>>>> Stashed changes
+
+## 700LSESF60 family — 2026-09-15
+- Initial native build failed reading body bounds: NoneType has no attribute Min. Cause: newly created family geometry had not been regenerated before querying bounding boxes. Solution: regenerate the child document before bounds validation; rerun native build. Status: correction applied next, verification pending.
+- Bounds error resolved: child.Regenerate() allows bounds query and the full native build passes. Family reopened, native underside placement and 13.2/36/48/67.2-inch drop tests passed; all three material substitutions passed, zero warnings.
+- Appearance review found metal excessively reflective in Realistic view despite correct dark shaded color. Likely contributor: inherited 0.85 grazing reflectivity. Lower opaque-material grazing reflectivity to 0.12 and explicitly disable generic metallic mode; verify refreshed appearance export. Status: pending visual recheck.
+- Appearance recheck: reducing grazing reflectivity and disabling generic metallic mode did not visibly resolve the Realistic export. Initial reflection-only diagnosis was incomplete. Saved appearance property audit is now running; issue remains open. Geometry and native flex/material tests still pass.
+- Appearance audit export failed: IronPython System.Byte color channels are not JSON serializable. Cause: passing .NET byte values directly to json.dump. Solution: explicitly convert RGB channels to Python int and use default=str for ancillary properties. Audit rerun pending; no family geometry changed.
+- Appearance audit serialization resolved: complete valid JSON saved and parsed after explicit Python int conversion. Saved metal has RGB 25/26/28, zero transparency/glow, no connected maps, glossiness 0.35, reflectivity 0.08/0.12. Realistic viewport export remains washed out; exact cause unknown. Documented in package REVIEW.md; shaded front/side/oblique geometry reviewed, production renderer match unverified. Do not claim reflection adjustment fixed the preview.
+- Final native 700LSESF60 RFA passes reopen, underside placement, 13.2/36/48/67.2-inch total-drop flexing, three material substitutions, and zero-warning checks. User requested adjustable drop; 48-inch initial value. Package upload pending.
+- Delivery verified: 700LSESF60_Black_Adjustable_R2025_Package.zip uploaded to 3D Models folder 1WoLM7G88CPMq-7-w_dloZiqDmk7hjd7W. Drive metadata confirms file 1ILlWmiwTpkS0ENIYfySyxCqZ08bLwy0M, correct parent, filename, and 1,346,056-byte size matching local ZIP. Duplicate search was empty before upload. Local ZIP integrity passed, 18 entries. Link: https://drive.google.com/file/d/1ILlWmiwTpkS0ENIYfySyxCqZ08bLwy0M/view
+
+## Kamden build startup — 2026-09-15
+- Repeated E024 symptom: restricted pyRevit launch started Revit PID 44252 but no builder checkpoint appeared; CPU remained low. Exact cause unknown. Stop only this task's runner 45452 and Revit 44252 and retry with escalation; verification pending.
+
+- Kamden startup resolved: escalated absolute-path batch completed. Saved/reopened Revit 2025 RFA; dimensions 22.5 x 4.3 x 4.7 inches, native wall-face placement normal 1.0, all three material substitutions passed, zero family/project warnings. Front/side/oblique and Realistic exports reviewed. Undimensioned shade/internal details inferred; optical render match unverified. Upload pending.
+
+- Kamden delivery: uploaded Kamden_1279641_R2025_Package.zip to verified 3D Models folder; Drive ID 1DMkP5swRPcBIFFWHIoRwRWzDU_dcQXdD. Local ZIP integrity passed (12 entries, 826469 bytes), includes RFA, builder, reference PDF/photo, previews and notes. No preexisting Kamden package found.
+
+## Edge TXW2A fixture - 2026-09-15
+- Created output/edge_txw2a/Edge_TXW2A_18_Chrome_R2025.rfa using supplied photo and redacted drawing. Visible 18 nominal row selects 19.1 inch metal length; plate 4.62 square x 0.37; bar 0.9 high; center clamp 2 wide. Projection interpreted as 0.37 + 0.88 + 1.24 = 2.49 inches. Photo appears to show longer variant; documented size distinction.
+- Native Revit 2025 reopen, exact bounds, wall-face placement and both material substitutions passed, no warnings. Native front/side/oblique and Realistic views reviewed. Chrome reflection response needs a scene; no production render claim. Fixed geometry, editable chrome/white lens, no photometric source. Undimensioned connector/channel details inferred. Package integrity passed; Drive upload pending. No confirmed task errors.
+- Delivery: Edge_TXW2A_18_Chrome_R2025_Package.zip uploaded successfully to verified 3D Models folder, Drive ID 1e00Cvb3cb2CZIFs2-o3tEZP6HRu_Ez9N. Duplicate search was empty; local ZIP integrity passed (12 entries, 584575 bytes).
+
+- 2026-09-15: Added user-requested 22-inch actual metal length option in output/edge_txw2a_22. Plate, projection, chrome and diffuser retained. Revit reopen, exact 22-inch width, wall-face placement, both materials and zero-warning checks passed; oblique preview reviewed. Custom visualization size, not verified manufacturer SKU. No errors. ZIP integrity passed.
+- 22-inch option uploaded to 3D Models: Drive ID 15827AMtdn2lsiCZIBqq5ZevpbNFtX7tq, package 583480 bytes. Duplicate search empty before upload.
+
+- 2026-09-15: Created 22-inch Down30 option in output/edge_txw2a_22_down30. Bar and clamp rotated about long horizontal X axis at local Z=1.25 inches; diffuser normal verified (0,-0.5,0.866025), pointing downward 30 degrees. Backplate/connector unchanged. Envelope 22 x 4.62 x 2.633872 inches. Reopen, wall placement, material changes, normal checks and zero-warning checks passed; side/oblique previews reviewed. Fixed tilt, simplified pivot. ZIP integrity passed. No errors.
+- Down30 package uploaded to 3D Models: Drive ID 1kJMyCNWxGsYFG7-WG-10p6INYtZUsklV, 596739 bytes. Duplicate search empty before upload.
+
+## KW2222 fixture — 2026-09-15
+- Early validation read failed because the Revit batch had not created validation.json yet. Cause: startup still in progress. Solution: guard future checkpoint reads with Test-Path; await batch startup. Status: pending build.
+
+- Native build failed at screw-head fillet: .018-inch round created an arc below Revit ShortCurveTolerance. Solution: omit this cosmetic fillet and retain cylindrical screw heads. Rebuild pending. Early-checkpoint error resolved; report now exists.
+- Automatic review rejected direct browser opening of remembered 3D Models folder ID as not matching the authorized parent ID. Solution: opened the exact authorized parent, then its visible 3D Models child; verified browser breadcrumb and child ID 1WoLM7G88CPMq-7-w_dloZiqDmk7hjd7W. Resolved, no permission change.
+- KW2222 native rebuild resolved the screw fillet failure. Reopen, exact 4.25 x 28 x 2.75 inch bounds, native wall-face placement and two material substitutions passed with zero warnings. 441 real perforations; hollow glass. Front/side/oblique previews reviewed. ZIP integrity passed. Upload pending.
+- Delivery verified in Google Drive 3D Models browser: KW2222_ABWG_28_R2025_Package.zip, 2 MB, uploaded 3:58 PM. Remote ZIP viewer successfully lists native RFA, builder, five views, validation, README and references. Local size 2146077 bytes. No same-named package existed in synced target before upload. Folder: https://drive.google.com/drive/folders/1WoLM7G88CPMq-7-w_dloZiqDmk7hjd7W
+
+## Beige fluted tile material — 2026-09-17
+- Python dependency probe failed: system Python 3.14 lacks Pillow (ModuleNotFoundError: PIL). Cause: system interpreter differs from bundled artifact runtime. Next step: use bundled Python; pending verification.
+- Dependency probe resolved: bundled Python successfully generated maps at native 1200 x 2400 pixels. Original JPEG retained byte-for-byte; bump is an explicit shallow photographic estimate, not measured relief.
+- Google Drive delivery is blocked by a Verify it is you reauthentication page in the in-app browser. Cause: Google session requires user sign-in. Asked user to complete authentication; upload pending.
+- Native Revit batch is blocked at Autodesk Sign in (confirmed UI). Cause: Autodesk authentication is required before Revit starts. User asked to sign in; batch session remains available. No RVT or ADSKLIB created yet. Setup notes and generator are prepared; native export and validation remain pending.
+- User restored both sign-ins. Google Drive Material Packages verified through authorized parent; no Beige Fluted package exists. First interrupted batch exited without an artifact; rerunning absolute-path batch after authentication.
+- UI opening generated RVT returned failed to activate captured window on Enter. Cause: window/modal activation changed; outcome unknown. Refresh window inventory before retrying. Native API save/reopen already succeeded with zero warnings.
+- Revit window activation recovery also failed with the same error. Existing native RVT remains valid. Next step: launch the saved material project in a fresh Revit window for ADSKLIB export.
+- UI click preparation failed before input: returned screenshot state was undefined, so accessing screenshots raised TypeError. Cause: this runtime displays screenshots but did not return a state object. Use optional screenshotId-free coordinates grounded in the immediately displayed screenshot; no click occurred.
+- Native material complete: Revit 2025 save/reopen passed, zero warnings. Fresh Revit window resolved prior activation failure. Material Browser shows supplied texture and fluting; Texture Editor confirms 1 x 2 feet. Genuine ADSKLIB created/populated/released; stored row and ZIP integrity verified. Relief/sheens are estimates and full-scene render unverified. Package includes companion textures, RVT, library, notes and source; upload next.

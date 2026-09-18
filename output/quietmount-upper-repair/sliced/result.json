@@ -1,0 +1,78 @@
+{
+    "error_string": "Success.",
+    "export_time": 144,
+    "layer_height": 0.07999999821186066,
+    "plate_index": 0,
+    "prepare_time": 49,
+    "return_code": 0,
+    "sliced_plates": [
+        {
+            "feature_type_times": {
+                "Brim": 39.575218200683594,
+                "Custom": 316.29205322265625,
+                "Flush": 30.0,
+                "Gap infill": 604.7086791992188,
+                "Inner wall": 1700.478515625,
+                "Outer wall": 1609.71337890625,
+                "Overhang wall": 16.2410888671875,
+                "Top surface": 43.85520553588867,
+                "Travel": 649.8422241210938,
+                "Undefined": 641.0142822265625
+            },
+            "filament_change_times": 0,
+            "filaments": [
+                {
+                    "filament_id": "GFL01",
+                    "id": 1,
+                    "main_used_g": 5.417665481567383,
+                    "total_used_g": 5.417665481567383
+                }
+            ],
+            "generate_support_material_time": 75,
+            "id": 1,
+            "infill_time": 22,
+            "layer_filament_change": 0,
+            "main_predication": 4633.91259765625,
+            "make_perimeters_time": 482,
+            "obj_cached_cnt": 0,
+            "objects": [
+                {
+                    "bbox": {
+                        "depth": 15.800000190734863,
+                        "height": 22.799999237060547,
+                        "width": 14.0,
+                        "x": 130.0,
+                        "y": 140.0,
+                        "z": -1.8530274203953923e-08
+                    },
+                    "id": 5,
+                    "name": "B_19.05mm_upper_mushroom_REPAIRED_1",
+                    "triangle_count": 1918
+                },
+                {
+                    "bbox": {
+                        "depth": 15.800000190734863,
+                        "height": 22.799999237060547,
+                        "width": 14.0,
+                        "x": 165.0,
+                        "y": 140.0,
+                        "z": -1.8530274203953923e-08
+                    },
+                    "id": 9,
+                    "name": "C_19.05mm_upper_mushroom_REPAIRED_1",
+                    "triangle_count": 1918
+                }
+            ],
+            "sliced_time": 2182,
+            "sliced_time_with_cache": 1169,
+            "total_predication": 5001.34619140625,
+            "triangle_count": 3836,
+            "warning_message": ""
+        }
+    ],
+    "sparse_infill_density": 100.0,
+    "upward_compatible_machine": [
+        "Bambu Lab H2D Pro 0.4 nozzle"
+    ],
+    "wall_loops": 6
+}
