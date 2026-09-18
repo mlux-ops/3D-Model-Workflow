@@ -1,0 +1,29 @@
+{
+  "application_members": [
+    "GetAssets",
+    "GetLibraryPaths",
+    "SetLibraryPaths",
+    "UpdateRenderAppearanceLibrary"
+  ],
+  "candidate_members": [
+    "Autodesk.Revit.ApplicationServices.Application.GetLibraryPaths",
+    "Autodesk.Revit.ApplicationServices.Application.SetLibraryPaths",
+    "Autodesk.Revit.ApplicationServices.ControlledApplication.GetLibraryPaths",
+    "Autodesk.Revit.ApplicationServices.ControlledApplication.SetLibraryPaths",
+    "Autodesk.Revit.DB.Macros.ApplicationEntryPoint.GetLibraryPaths",
+    "Autodesk.Revit.DB.Macros.ApplicationEntryPoint.SetLibraryPaths"
+  ],
+  "conclusion": "NO ADSKLIB write or export route exists in the Revit API. The keyword scan matched on the substring library, but every hit is Get/SetLibraryPaths, which are the FAMILY CONTENT library search paths shown in File Locations (Imperial Library, Metric Library), not material libraries. UpdateRenderAppearanceLibrary refreshes the appearance library in session; it does not author or export one. The probe script auto-set a positive conclusion from a keyword hit; that was a false positive and is corrected here.",
+  "false_positive_note": "Recorded deliberately: an automated conclusion string was wrong and the raw member list is what disproves it. Keep both.",
+  "library_paths": {
+    "Imperial Library": "C:\\ProgramData\\Autodesk\\RVT 2025\\Libraries\\English-Imperial\\US\\",
+    "Metric Library": "C:\\ProgramData\\Autodesk\\RVT 2025\\Libraries\\English\\US\\"
+  },
+  "notes": [],
+  "revit_api_assembly": "RevitAPI, Version=25.4.40.0, Culture=neutral, PublicKeyToken=null",
+  "types": {
+    "Autodesk.Revit.DB.DirectShapeLibrary": [
+      "DirectShapeLibrary.GetDirectShapeLibrary"
+    ]
+  }
+}
