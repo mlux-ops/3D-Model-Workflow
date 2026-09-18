@@ -28,6 +28,13 @@ User instruction, recorded 2026-09-17: **All materials must appear seamless and 
 - Preserve intentional tile joints, flutes, and designed motifs; eliminate unintended texture seams and recognizable repeated texture blocks.
 - A small repeated atlas, rotations of one face, or a successful native-file check alone does not satisfy this requirement. Do not deliver a material as final until the visual gate passes; explicitly identify pending checks and source limitations.
 
+User instruction, recorded 2026-09-18: **A dimensional tile's sculpted pattern must read as relief, not as a faint texture.** When the supplied product is a 3D or dimensional tile, meaning its face carries a moulded, carved or otherwise sculpted geometric pattern, drive that pattern's bump and normal response noticeably harder than a photo-derived default produces. Reviewer feedback on the Adella M01 build: the grout-line relief was correct, the geometric pattern relief was too shallow.
+
+- Judge relief under **grazing** light, never frontal only. Shallow relief looks acceptable head-on and disappears at a glancing angle, which is the angle it actually matters at.
+- The pattern and the grout joint are separate depths. Deepen the pattern; do not deepen the grout to compensate, and do not raise a global bump multiplier that scales both.
+- There is a hard ceiling: pattern relief must stay above the grout floor. If the pattern's deepest points reach or pass the joint depth, the tile face reads as punctured and the joint stops reading as a joint. Measure the clearance rather than assuming it.
+- Record the chosen amplitude, the resulting relief in millimetres, the grout step in millimetres and the remaining clearance, so a later reviewer can see the margin that was left.
+
 ## Final package delivery to Google Drive
 
 User instruction, recorded 2026-09-14: Every outputted final material or 3D model package must be uploaded to Google Drive under **3D Model Workflow** (folder ID `1Xsd3Y96SOi00cWNaxqYeqlp4tNe3Z8CD`).
