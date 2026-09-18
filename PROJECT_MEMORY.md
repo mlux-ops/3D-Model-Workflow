@@ -409,7 +409,6 @@ Keep separate evidence for file syntax, native application acceptance, retained 
 - Status: unresolved pending native Asset Editor import.
 
 
-<<<<<<< HEAD
 ## Google Drive delivery rule — 2026-09-14
 ### E029 — B/C 19.05 mm upper mushroom holders failed physical print
 - Recorded: 2026-09-14. User reports B_19.05mm_upper_mushroom_1 and C_19.05mm_upper_mushroom_1 were modeled incorrectly and failed printing.
@@ -422,8 +421,7 @@ Keep separate evidence for file syntax, native application acceptance, retained 
 - Initial filesystem probe of G:/My Drive was denied by the sandbox. Connector search successfully located the exact private Drive folder; use connector operations instead. Git global-ignore access warnings recurred under sandbox; no Git mutation requested for this task.
 - Current checkout is main; recent material archives exist on codex/create-tile-revit-and-vray. Recover their exact committed ZIP bytes to an upload staging directory without changing branches or replacing working files.
 - During resumed delivery, two model uploads returned `success:false` because one call used a mistyped 3D Models folder ID. Cause: folder ID typo in the connector request. Retried with the verified folder ID and both uploads succeeded. Final connector listing confirms 25 model packages and 4 material packages, matching all 29 manifest entries.
-<<<<<<< Updated upstream
-=======
+
 - E028 investigation: installed Chaos Cosmos VRMAT reader also exits unsuccessfully under Windows PowerShell, so failure is not isolated to the generated material. Windows PowerShell -File first returned script execution disabled; direct command invocation avoided changing execution policy but still failed in native SDK. Native host import remains next step.
 
 
@@ -471,13 +469,9 @@ Keep separate evidence for file syntax, native application acceptance, retained 
 - Merging origin/main produced 12 add/add conflicts in workflow notes, Adella maps, package metadata and generators. Cause: both histories added different generations of these files. Resolution retains the source branch's newer photographic assets and fuller project notes, while preserving main's separate Malibu additions.
 - Main also contained malformed Adella VRMAT XML (missing opening Asset/plugin wrappers for UVW). Retained the intact source-branch VRMAT and its matching generator. Verification: pending final XML/image and merge checks.
 - Final local verification passed: no unresolved conflicts or conflict markers; all Adella VRMAT files parse, packaged PNG integrity passes, generator syntax compiles, and git diff --check is clean. Native rendering was not rerun for this merge-only repair.
->>>>>>> b9c7b85c55a43c161ade544f2c6360a3814160e2
-=======
-
 ### E007 recurrence / open-project check — 2026-09-14
 - Bambu-targeted screenshot initially captured the foreground Codex surface. Explicitly activating the uniquely returned Bambu window corrected capture; subsequent screenshot verified QuietMount_Tab_Down_READY remains open.
 - Current open session still uses the older project; repair files were delivered separately, not substituted in that session. Preview is clipped at layer 35 / 2.92 mm, so translucent upper geometry alone is not proof of mesh failure. No project contents changed during this read-only inspection.
->>>>>>> Stashed changes
 
 ## 700LSESF60 family — 2026-09-15
 - Initial native build failed reading body bounds: NoneType has no attribute Min. Cause: newly created family geometry had not been regenerated before querying bounding boxes. Solution: regenerate the child document before bounds validation; rerun native build. Status: correction applied next, verification pending.
@@ -525,3 +519,33 @@ Keep separate evidence for file syntax, native application acceptance, retained 
 - Revit window activation recovery also failed with the same error. Existing native RVT remains valid. Next step: launch the saved material project in a fresh Revit window for ADSKLIB export.
 - UI click preparation failed before input: returned screenshot state was undefined, so accessing screenshots raised TypeError. Cause: this runtime displays screenshots but did not return a state object. Use optional screenshotId-free coordinates grounded in the immediately displayed screenshot; no click occurred.
 - Native material complete: Revit 2025 save/reopen passed, zero warnings. Fresh Revit window resolved prior activation failure. Material Browser shows supplied texture and fluting; Texture Editor confirms 1 x 2 feet. Genuine ADSKLIB created/populated/released; stored row and ZIP integrity verified. Relief/sheens are estimates and full-scene render unverified. Package includes companion textures, RVT, library, notes and source; upload next.
+=======
+
+## Cinch fixture — 2026-09-17
+- Revit add-in inventory under the user profile returned access denied in the sandbox (E009 recurrence). Elevated read succeeded. Revit 2025 is installed; pyRevit and a .NET SDK are absent. Use a task-specific compiled Revit API command.
+
+- Cinch builder compilation initially included native runtime DLLs, causing CS0009 (no managed metadata). Fix: filter references using AssemblyName metadata inspection; retry compilation. Status pending.
+- Cinch compilation retry hit CS1701 because Add-Type injected .NET 10 references despite explicit .NET 8 inputs. Fix: invoke Roslyn compilation directly with only managed .NET 8 and Revit references; verification pending.
+- Both Cinch compiler errors resolved: direct Roslyn compilation with managed .NET 8 references succeeded on 2026-09-17.
+- Cinch final local RFA saved/reopened in Revit 2025: 18.625 x 2.875 x 2.5 inches, Lighting Fixtures / WorkPlaneBased, native wall-face host and outward normal passed, both material substitutions passed, zero family/project warnings. Front/side/oblique exports visually reviewed. Satin metal is texture-free approximation; no MEP or photometric light source. Package: output/Cinch_18_625_R2025_Package.zip.
+- Cinch Google Drive delivery is unresolved: available browser redirects the authorized destination to Google sign-in; no Drive connector is available. Cause: unauthenticated browser session. Next step: sign in to Drive, check for identical package in 3D Models, upload and verify metadata. Local ZIP is preserved; upload is not claimed.
+
+## Rounded Linear24 fixture — 2026-09-17
+- Drive access attempt reused a tab closed automatically after the prior turn; tool reported the tab was not part of the browser session. Fixed by creating a fresh tab in the existing browser. Prevent recurrence by reacquiring tabs across completed turns.
+- Fresh Drive destination access still redirects to sign-in. Cloud delivery remains pending authentication; no upload claimed.
+
+- Linear24 RFA saved/reopened in Revit 2025 with bounds 24 x 5 x 3.1 inches, native wall hosting and vertical rotation verified, both material substitutions passed, zero warnings. Native silhouettes reviewed. Light-guide panel is perpendicular to wall inside rounded perimeter frame. Backplate depth .5 inch, bar height .9 inch and radii inferred. Companion microdot maps use estimated .04-inch pitch; binding verified, production optical render unverified. Final local package: output/Linear24_Black_R2025_Package.zip; Drive pending sign-in.
+
+## Preferred Bath 2 and Bath 3 materials — 2026-09-17
+- Product-page lookup for Porcelanosa Bottega Caliza returned a web-tool Internal Error. Cause unknown. Resolved for dimensions using official Porcelanosa store/catalog search results matching SKU 100324943: 596 x 596 mm. Source CSV remains unchanged.
+
+- ELM Ligne Noir individual product lookup returned Cache miss; collection page confirms 3 x 10 dimensions. Exact finish setting is documented as estimated. Resolved by collection reference.
+- Source audit: B3-02 actual JPEG is 1218 x 1450, while CSV says 1218 x 2461. Use actual decoded dimensions for crops; preserve original CSV. Confirmed source metadata mismatch, resolved in build manifest.
+
+- Preferred-tile Drive delivery attempt on 2026-09-17 redirects to Google sign-in. Recurrence of Cinch/Linear24 authentication blocker; no available Drive connector. Upload pending user sign-in; no cloud delivery claimed.
+- Preferred-tile native build saved/reopened six materials with zero warnings, but automatic UI activation failed: Switching active documents is not allowed during API event handling. Cause: OpenAndActivateDocument inside startup Idling handler. Solution: open the already validated RVT through normal Revit UI; native package validation is unaffected. UI-open verification pending.
+- Preferred-tile Revit UI: clicking file-name element 137 failed because cached accessibility index was unavailable after modal state changed. Cause: modal/main-window cached state mismatch. Next step: reacquire the actual Open dialog window and refresh before entry; no file operation occurred.
+- File-name UI click retry was outside the 800-pixel main-window bounds because the modal extends beyond it. Cause confirmed by returned coordinates. Use the Open dialog keyboard mnemonic instead of coordinate/index clicking; recovery pending.
+- Revit filename control recovery: keyboard/click focus did not reach the modal and set_value again reported stale element 137. Repeated occurrence logged; use application launch with the validated RVT argument to avoid the modal. No material output was changed.
+- User requested immediate export to conserve usage. Final package includes validated native RVT with all six preferred assignments, twelve textures, original preferred photos, selection audit, and setup notes. ADSKLIB export not completed; native RVT is the material transfer source. Drive remains pending sign-in. Startup UI activation removed from builder to prevent recurrence.
+>>>>>>> 76cbf65279802772fdd921857d718c935974b6b6
