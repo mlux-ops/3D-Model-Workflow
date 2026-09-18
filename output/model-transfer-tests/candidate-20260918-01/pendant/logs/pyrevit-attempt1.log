@@ -1,0 +1,34 @@
+=== attempt 1 started 06:04:59Z ===
+==> Execution Environment
+Execution Id: "434d078c-b03a-4621-bec8-aa1ef6b42539"
+Product: 2025 First Customer Ship | Version: 25.0.2.419 | Build: 20240307_1300(x64) | Language: 1033 | Path: "C:\Program Files\Autodesk\Revit 2025\"
+Clone: master | Branch: "master" | Version: "6.5.5.26237+2044" | Path: "C:\Program Files\pyRevit-Master"
+Engine: DEFAULT (netcore) | Kernel: IronPython 2 | Version: 2712 | Runtime: True | Path: "C:\Program Files\pyRevit-Master\bin\netcore\engines\IPY2712PR\pyRevitLoader.dll" | Desc: "Custom pyRevit IronPython 2 Engine"
+Script: "C:\Users\mlux\Documents\GitHub\3D-Model-Workflow\output\model-transfer-tests\candidate-20260918-01\pendant\build_pendant.py"
+Working Directory: "C:\Users\mlux\AppData\Local\Temp\434d078c-b03a-4621-bec8-aa1ef6b42539"
+Journal File: "C:\Users\mlux\AppData\Local\Temp\434d078c-b03a-4621-bec8-aa1ef6b42539\PyRevitRunner_434d078c-b03a-4621-bec8-aa1ef6b42539.txt"
+Manifest File: "C:\Users\mlux\AppData\Local\Temp\434d078c-b03a-4621-bec8-aa1ef6b42539\PyRevitRunner.addin"
+Log File: "C:\Users\mlux\AppData\Local\Temp\434d078c-b03a-4621-bec8-aa1ef6b42539\PyRevitRunner_434d078c-b03a-4621-bec8-aa1ef6b42539.log"
+==> Execution Log
+Traceback (most recent call last):
+  File "C:\Users\mlux\Documents\GitHub\3D-Model-Workflow\output\model-transfer-tests\candidate-20260918-01\pendant\build_pendant.py", line 760, in <module>
+  File "C:\Users\mlux\Documents\GitHub\3D-Model-Workflow\output\model-transfer-tests\candidate-20260918-01\pendant\build_pendant.py", line 607, in validate
+AttributeError: Name
+
+&clt;strong&cgt;Script Executor Traceback:&clt;/strong&cgt;
+System.MissingMemberException: Name
+   at Microsoft.Scripting.Runtime.LightExceptions.ThrowException(LightException lightEx)
+   at Microsoft.Scripting.Runtime.LightExceptions.CheckAndThrow(Object value)
+   at Microsoft.Scripting.Interpreter.FuncCallInstruction`2.Run(InterpretedFrame frame)
+   at Microsoft.Scripting.Interpreter.Interpreter.HandleException(InterpretedFrame frame, Exception exception)
+   at Microsoft.Scripting.Interpreter.Interpreter.Run(InterpretedFrame frame)
+   at Microsoft.Scripting.Interpreter.LightLambda.Run2[T0,T1,TRet](T0 arg0, T1 arg1)
+   at IronPython.Compiler.PythonScriptCode.RunWorker(CodeContext ctx)
+   at IronPython.Compiler.PythonScriptCode.Run(Scope scope)
+   at IronPython.Compiler.RuntimeScriptCode.InvokeTarget(Scope scope)
+   at IronPython.Compiler.RuntimeScriptCode.Run(Scope scope)
+   at Microsoft.Scripting.Hosting.CompiledCode.Execute(ScriptScope scope)
+   at PyRevitLabs.PyRevit.Runtime.IronPythonEngine.Execute(ScriptRuntime& runtime)
+=== pyrevit exit code: 0 (NOT evidence — check validation.json) ===
+
+[exited with code 0]
