@@ -1,0 +1,583 @@
+{
+  "adsklib": {
+    "reason": "Native Material Browser export is handled by the parent workflow.", 
+    "status": "not_created"
+  }, 
+  "manifest": "C:\\Users\\mlux\\Documents\\GitHub\\3D-Model-Workflow\\output\\elm_almond_textures\\manifest.json", 
+  "manifest_validation": {
+    "generated_source": {
+      "included_by_default": false, 
+      "included_this_build": false, 
+      "path": "references/elm_almond/generated_continuous_albedo.png", 
+      "reason": "optional explicit source; excluded from default source-face matching"
+    }, 
+    "limitations": [
+      "Only one genuine official flat face was suitable for sampling; the other numbered Almond WEBPs are lifestyle scenes.", 
+      "Spatial crops are source-derived but do not constitute multiple independent product faces; non-repetition visual acceptance is pending.", 
+      "No native Revit or renderer validation was performed by this script.", 
+      "No ADSKLIB was created."
+    ], 
+    "material_id": "ELM_Almond", 
+    "schema_version": "1.0", 
+    "source_face_summary": {
+      "count": 13, 
+      "included_count": 1, 
+      "official_faces": [
+        {
+          "filename": "683124287cce7c270f37b4c2_almond main.jpg", 
+          "included_by_default": false, 
+          "path": "references/elm_almond/683124287cce7c270f37b4c2_almond main.jpg", 
+          "reason": "duplicate of almond_main.jpg; not sampled twice", 
+          "role": "official_flat_face_duplicate", 
+          "size_px": [
+            1200, 
+            2400
+          ]
+        }, 
+        {
+          "filename": "68312432d83eef492171792d_almond 8.webp", 
+          "included_by_default": false, 
+          "path": "references/elm_almond/68312432d83eef492171792d_almond 8.webp", 
+          "reason": "lifestyle scene; not a face crop", 
+          "role": "official_lifestyle_reference", 
+          "size_px": [
+            2400, 
+            2400
+          ]
+        }, 
+        {
+          "filename": "6831243f100889a9c9cffb7b_almond.webp", 
+          "included_by_default": false, 
+          "path": "references/elm_almond/6831243f100889a9c9cffb7b_almond.webp", 
+          "reason": "lifestyle scene; not a face crop", 
+          "role": "official_lifestyle_reference", 
+          "size_px": [
+            2400, 
+            3085
+          ]
+        }, 
+        {
+          "filename": "6831243f2740add37a075f97_almond 2.webp", 
+          "included_by_default": false, 
+          "path": "references/elm_almond/6831243f2740add37a075f97_almond 2.webp", 
+          "reason": "lifestyle scene; not a face crop", 
+          "role": "official_lifestyle_reference", 
+          "size_px": [
+            3466, 
+            2400
+          ]
+        }, 
+        {
+          "filename": "6831243f5ac228a8e81ac0e6_almond 5.webp", 
+          "included_by_default": false, 
+          "path": "references/elm_almond/6831243f5ac228a8e81ac0e6_almond 5.webp", 
+          "reason": "lifestyle scene; not a face crop", 
+          "role": "official_lifestyle_reference", 
+          "size_px": [
+            2400, 
+            4402
+          ]
+        }, 
+        {
+          "filename": "6831243f7cce7c270f37bd5e_almond 4.webp", 
+          "included_by_default": false, 
+          "path": "references/elm_almond/6831243f7cce7c270f37bd5e_almond 4.webp", 
+          "reason": "lifestyle scene; not a face crop", 
+          "role": "official_lifestyle_reference", 
+          "size_px": [
+            3595, 
+            2400
+          ]
+        }, 
+        {
+          "filename": "6831243f89899e7ccfd610ee_almond 3.webp", 
+          "included_by_default": false, 
+          "path": "references/elm_almond/6831243f89899e7ccfd610ee_almond 3.webp", 
+          "reason": "lifestyle scene; not a face crop", 
+          "role": "official_lifestyle_reference", 
+          "size_px": [
+            3600, 
+            2400
+          ]
+        }, 
+        {
+          "filename": "6831243fc5081fe7d23c66d8_almond 7.webp", 
+          "included_by_default": false, 
+          "path": "references/elm_almond/6831243fc5081fe7d23c66d8_almond 7.webp", 
+          "reason": "lifestyle scene; not a face crop", 
+          "role": "official_lifestyle_reference", 
+          "size_px": [
+            3595, 
+            2400
+          ]
+        }, 
+        {
+          "filename": "6831243ff1ac91d1cdc16819_almond 6.webp", 
+          "included_by_default": false, 
+          "path": "references/elm_almond/6831243ff1ac91d1cdc16819_almond 6.webp", 
+          "reason": "lifestyle scene; not a face crop", 
+          "role": "official_lifestyle_reference", 
+          "size_px": [
+            1601, 
+            2400
+          ]
+        }, 
+        {
+          "filename": "68313771b63493de60b1b917_MILE_stone_Earthen_Almond_12x24_Flute.webp", 
+          "included_by_default": false, 
+          "path": "references/elm_almond/68313771b63493de60b1b917_MILE_stone_Earthen_Almond_12x24_Flute.webp", 
+          "reason": "scene reference; orientation and relief only", 
+          "role": "official_flute_lifestyle_reference", 
+          "size_px": [
+            2400, 
+            2400
+          ]
+        }, 
+        {
+          "filename": "69ced2f4e106af99bf62a4e3_Palace-Royale-Almond-13x13-Panel.webp", 
+          "included_by_default": false, 
+          "path": "references/elm_almond/69ced2f4e106af99bf62a4e3_Palace-Royale-Almond-13x13-Panel.webp", 
+          "reason": "Palace Royale scene; not ELM Almond", 
+          "role": "other_product_lifestyle_reference", 
+          "size_px": [
+            4800, 
+            2400
+          ]
+        }, 
+        {
+          "filename": "almond_main.jpg", 
+          "included_by_default": true, 
+          "path": "references/elm_almond/almond_main.jpg", 
+          "reason": "official flat face source", 
+          "role": "official_flat_face", 
+          "size_px": [
+            1200, 
+            2400
+          ]
+        }, 
+        {
+          "filename": "generated_continuous_albedo.png", 
+          "included_by_default": false, 
+          "path": "references/elm_almond/generated_continuous_albedo.png", 
+          "reason": "optional only; excluded from default matching", 
+          "role": "user_supplied_generated_albedo", 
+          "size_px": [
+            1254, 
+            1254
+          ]
+        }
+      ]
+    }, 
+    "validation": null
+  }, 
+  "materials": [
+    {
+      "bump": {
+        "path": "C:\\Users\\mlux\\Documents\\GitHub\\3D-Model-Workflow\\output\\elm_almond_textures\\elm_almond_mosaic_2x2_bump16.png", 
+        "scale_in": [
+          198.0, 
+          198.0
+        ]
+      }, 
+      "companion_maps": {
+        "all_registered_at_same_scale": true, 
+        "bump16": "C:\\Users\\mlux\\Documents\\GitHub\\3D-Model-Workflow\\output\\elm_almond_textures\\elm_almond_mosaic_2x2_bump16.png", 
+        "height16": "C:\\Users\\mlux\\Documents\\GitHub\\3D-Model-Workflow\\output\\elm_almond_textures\\elm_almond_mosaic_2x2_height16.png", 
+        "normal_opengl": "C:\\Users\\mlux\\Documents\\GitHub\\3D-Model-Workflow\\output\\elm_almond_textures\\elm_almond_mosaic_2x2_normal_opengl.png", 
+        "roughness": "C:\\Users\\mlux\\Documents\\GitHub\\3D-Model-Workflow\\output\\elm_almond_textures\\elm_almond_mosaic_2x2_roughness.png"
+      }, 
+      "diffuse": {
+        "path": "C:\\Users\\mlux\\Documents\\GitHub\\3D-Model-Workflow\\output\\elm_almond_textures\\elm_almond_mosaic_2x2_diffuse.png", 
+        "scale_in": [
+          198.0, 
+          198.0
+        ]
+      }, 
+      "estimated_height_range_mm": 1.0, 
+      "gates": {
+        "bump_map_is_this_variant": true, 
+        "bump_scale_matches_manifest": true, 
+        "companion_maps_exist": true, 
+        "diffuse_map_is_this_variant": true, 
+        "diffuse_scale_matches_manifest": true, 
+        "manufacturer_is_elm_surfaces": true, 
+        "material_class_ceramic": true, 
+        "matte_glossiness_is_explicit": true, 
+        "native_bump_amount_is_recorded": true, 
+        "native_face_paint": true, 
+        "source_url_matches_manifest": true, 
+        "source_url_present": true
+      }, 
+      "generic_bump_amount": 0.025000000000000001, 
+      "generic_bump_amount_source": "script_default_not_mm", 
+      "generic_glossiness": 0.16, 
+      "generic_glossiness_source": "script_matte_default", 
+      "grout_in": 0.0625, 
+      "grout_step_mm": 1.5874999999999999, 
+      "height_range_note": "Map relief estimate; not used as generic_bump_amount.", 
+      "id": "elm_almond_mosaic_2x2", 
+      "layout": "stacked_aligned", 
+      "manufacturer": "ELM Surfaces", 
+      "material_class": "Ceramic", 
+      "material_element_id": "2784", 
+      "model": "", 
+      "name": "2 x 2 inch mosaic", 
+      "pattern_relief_mm": null, 
+      "pattern_ribs_across_short_axis": null, 
+      "relief_class": "flat_or_mosaic", 
+      "relief_clearance_mm": 0.58749999999999991, 
+      "scale_audit": {
+        "map_resolution_px": [
+          4096.0, 
+          4096.0
+        ], 
+        "physical_extent_ft": [
+          16.5, 
+          16.5
+        ], 
+        "pixel_derived_scale_in": [
+          197.99999999999997, 
+          197.99999999999997
+        ], 
+        "scale_consistency": true, 
+        "scale_in_per_px": [
+          0.048339843749999993, 
+          0.048339843749999993
+        ]
+      }, 
+      "source_face_count": 1, 
+      "source_url": "https://www.elmsurfaces.com/product-collection/grounded", 
+      "source_url_source": "references/elm_almond/SOURCES.md", 
+      "tile_size_in": [
+        2.0, 
+        2.0
+      ]
+    }, 
+    {
+      "bump": {
+        "path": "C:\\Users\\mlux\\Documents\\GitHub\\3D-Model-Workflow\\output\\elm_almond_textures\\elm_almond_flat_12x24_bump16.png", 
+        "scale_in": [
+          192.5, 
+          193.0
+        ]
+      }, 
+      "companion_maps": {
+        "all_registered_at_same_scale": true, 
+        "bump16": "C:\\Users\\mlux\\Documents\\GitHub\\3D-Model-Workflow\\output\\elm_almond_textures\\elm_almond_flat_12x24_bump16.png", 
+        "height16": "C:\\Users\\mlux\\Documents\\GitHub\\3D-Model-Workflow\\output\\elm_almond_textures\\elm_almond_flat_12x24_height16.png", 
+        "normal_opengl": "C:\\Users\\mlux\\Documents\\GitHub\\3D-Model-Workflow\\output\\elm_almond_textures\\elm_almond_flat_12x24_normal_opengl.png", 
+        "roughness": "C:\\Users\\mlux\\Documents\\GitHub\\3D-Model-Workflow\\output\\elm_almond_textures\\elm_almond_flat_12x24_roughness.png"
+      }, 
+      "diffuse": {
+        "path": "C:\\Users\\mlux\\Documents\\GitHub\\3D-Model-Workflow\\output\\elm_almond_textures\\elm_almond_flat_12x24_diffuse.png", 
+        "scale_in": [
+          192.5, 
+          193.0
+        ]
+      }, 
+      "estimated_height_range_mm": 1.0, 
+      "gates": {
+        "bump_map_is_this_variant": true, 
+        "bump_scale_matches_manifest": true, 
+        "companion_maps_exist": true, 
+        "diffuse_map_is_this_variant": true, 
+        "diffuse_scale_matches_manifest": true, 
+        "manufacturer_is_elm_surfaces": true, 
+        "material_class_ceramic": true, 
+        "matte_glossiness_is_explicit": true, 
+        "native_bump_amount_is_recorded": true, 
+        "native_face_paint": true, 
+        "source_url_matches_manifest": true, 
+        "source_url_present": true
+      }, 
+      "generic_bump_amount": 0.025000000000000001, 
+      "generic_bump_amount_source": "script_default_not_mm", 
+      "generic_glossiness": 0.16, 
+      "generic_glossiness_source": "script_matte_default", 
+      "grout_in": 0.0625, 
+      "grout_step_mm": 1.5874999999999999, 
+      "height_range_note": "Map relief estimate; not used as generic_bump_amount.", 
+      "id": "elm_almond_flat_12x24", 
+      "layout": "stacked_aligned", 
+      "manufacturer": "ELM Surfaces", 
+      "material_class": "Ceramic", 
+      "material_element_id": "2786", 
+      "model": "", 
+      "name": "12 x 24 inch flat", 
+      "pattern_relief_mm": null, 
+      "pattern_ribs_across_short_axis": null, 
+      "relief_class": "flat_or_mosaic", 
+      "relief_clearance_mm": 0.58749999999999991, 
+      "scale_audit": {
+        "map_resolution_px": [
+          4096.0, 
+          4096.0
+        ], 
+        "physical_extent_ft": [
+          16.041666666666668, 
+          16.083333333333332
+        ], 
+        "pixel_derived_scale_in": [
+          192.5, 
+          193.0
+        ], 
+        "scale_consistency": true, 
+        "scale_in_per_px": [
+          0.0469970703125, 
+          0.047119140625
+        ]
+      }, 
+      "source_face_count": 1, 
+      "source_url": "https://www.elmsurfaces.com/product/grounded-almond", 
+      "source_url_source": "references/elm_almond/SOURCES.md", 
+      "tile_size_in": [
+        24.0, 
+        12.0
+      ]
+    }, 
+    {
+      "bump": {
+        "path": "C:\\Users\\mlux\\Documents\\GitHub\\3D-Model-Workflow\\output\\elm_almond_textures\\elm_almond_fluted_12x24_bump16.png", 
+        "scale_in": [
+          192.5, 
+          193.0
+        ]
+      }, 
+      "companion_maps": {
+        "all_registered_at_same_scale": true, 
+        "bump16": "C:\\Users\\mlux\\Documents\\GitHub\\3D-Model-Workflow\\output\\elm_almond_textures\\elm_almond_fluted_12x24_bump16.png", 
+        "height16": "C:\\Users\\mlux\\Documents\\GitHub\\3D-Model-Workflow\\output\\elm_almond_textures\\elm_almond_fluted_12x24_height16.png", 
+        "normal_opengl": "C:\\Users\\mlux\\Documents\\GitHub\\3D-Model-Workflow\\output\\elm_almond_textures\\elm_almond_fluted_12x24_normal_opengl.png", 
+        "roughness": "C:\\Users\\mlux\\Documents\\GitHub\\3D-Model-Workflow\\output\\elm_almond_textures\\elm_almond_fluted_12x24_roughness.png"
+      }, 
+      "diffuse": {
+        "path": "C:\\Users\\mlux\\Documents\\GitHub\\3D-Model-Workflow\\output\\elm_almond_textures\\elm_almond_fluted_12x24_diffuse.png", 
+        "scale_in": [
+          192.5, 
+          193.0
+        ]
+      }, 
+      "estimated_height_range_mm": 1.2000000000000000, 
+      "gates": {
+        "bump_map_is_this_variant": true, 
+        "bump_scale_matches_manifest": true, 
+        "companion_maps_exist": true, 
+        "diffuse_map_is_this_variant": true, 
+        "diffuse_scale_matches_manifest": true, 
+        "manufacturer_is_elm_surfaces": true, 
+        "material_class_ceramic": true, 
+        "matte_glossiness_is_explicit": true, 
+        "native_bump_amount_is_recorded": true, 
+        "native_face_paint": true, 
+        "source_url_matches_manifest": true, 
+        "source_url_present": true
+      }, 
+      "generic_bump_amount": 0.025000000000000001, 
+      "generic_bump_amount_source": "script_default_not_mm", 
+      "generic_glossiness": 0.16, 
+      "generic_glossiness_source": "script_matte_default", 
+      "grout_in": 0.0625, 
+      "grout_step_mm": 2.2000000000000002, 
+      "height_range_note": "Map relief estimate; not used as generic_bump_amount.", 
+      "id": "elm_almond_fluted_12x24", 
+      "layout": "stacked_aligned", 
+      "manufacturer": "ELM Surfaces", 
+      "material_class": "Ceramic", 
+      "material_element_id": "2788", 
+      "model": "", 
+      "name": "12 x 24 inch fluted", 
+      "pattern_relief_mm": 1.2000000000000000, 
+      "pattern_ribs_across_short_axis": 12, 
+      "relief_class": "fluted", 
+      "relief_clearance_mm": 1.0, 
+      "scale_audit": {
+        "map_resolution_px": [
+          4096.0, 
+          4096.0
+        ], 
+        "physical_extent_ft": [
+          16.041666666666668, 
+          16.083333333333332
+        ], 
+        "pixel_derived_scale_in": [
+          192.5, 
+          193.0
+        ], 
+        "scale_consistency": true, 
+        "scale_in_per_px": [
+          0.0469970703125, 
+          0.047119140625
+        ]
+      }, 
+      "source_face_count": 1, 
+      "source_url": "https://www.elmsurfaces.com/product/grounded-almond-flute", 
+      "source_url_source": "references/elm_almond/SOURCES.md", 
+      "tile_size_in": [
+        24.0, 
+        12.0
+      ]
+    }
+  ], 
+  "project_warnings": [], 
+  "revit_pass": true, 
+  "revit_version": "2025", 
+  "rvt_path": "C:\\Users\\mlux\\Documents\\GitHub\\3D-Model-Workflow\\output\\elm_almond_native\\Elm_Almond_QA_R2025.rvt", 
+  "script": "C:\\Users\\mlux\\Documents\\GitHub\\3D-Model-Workflow\\scripts\\build_elm_almond_revit.py", 
+  "specifications": [
+    {
+      "estimated_height_range_mm": 1.0, 
+      "generic_bump_amount": 0.025000000000000001, 
+      "generic_bump_amount_source": "script_default_not_mm", 
+      "grout_in": 0.0625, 
+      "grout_step_mm": 1.5874999999999999, 
+      "id": "elm_almond_mosaic_2x2", 
+      "layout": "stacked_aligned", 
+      "manufacturer": "ELM Surfaces", 
+      "maps": {
+        "bump16": "C:\\Users\\mlux\\Documents\\GitHub\\3D-Model-Workflow\\output\\elm_almond_textures\\elm_almond_mosaic_2x2_bump16.png", 
+        "bump16_bound_as_revit_bump": "C:\\Users\\mlux\\Documents\\GitHub\\3D-Model-Workflow\\output\\elm_almond_textures\\elm_almond_mosaic_2x2_bump16.png", 
+        "diffuse": "C:\\Users\\mlux\\Documents\\GitHub\\3D-Model-Workflow\\output\\elm_almond_textures\\elm_almond_mosaic_2x2_diffuse.png", 
+        "height16": "C:\\Users\\mlux\\Documents\\GitHub\\3D-Model-Workflow\\output\\elm_almond_textures\\elm_almond_mosaic_2x2_height16.png", 
+        "normal_opengl": "C:\\Users\\mlux\\Documents\\GitHub\\3D-Model-Workflow\\output\\elm_almond_textures\\elm_almond_mosaic_2x2_normal_opengl.png", 
+        "roughness": "C:\\Users\\mlux\\Documents\\GitHub\\3D-Model-Workflow\\output\\elm_almond_textures\\elm_almond_mosaic_2x2_roughness.png"
+      }, 
+      "name": "2 x 2 inch mosaic", 
+      "pattern_ribs_across_short_axis": null, 
+      "relief_clearance_mm": 0.58749999999999991, 
+      "scale_audit": {
+        "map_resolution_px": [
+          4096.0, 
+          4096.0
+        ], 
+        "physical_extent_ft": [
+          16.5, 
+          16.5
+        ], 
+        "pixel_derived_scale_in": [
+          197.99999999999997, 
+          197.99999999999997
+        ], 
+        "scale_consistency": true, 
+        "scale_in_per_px": [
+          0.048339843749999993, 
+          0.048339843749999993
+        ]
+      }, 
+      "scale_in": [
+        198.0, 
+        198.0
+      ], 
+      "source_face_count": 1, 
+      "source_url": "https://www.elmsurfaces.com/product-collection/grounded", 
+      "source_url_source": "references/elm_almond/SOURCES.md", 
+      "tile_size_in": [
+        2.0, 
+        2.0
+      ]
+    }, 
+    {
+      "estimated_height_range_mm": 1.0, 
+      "generic_bump_amount": 0.025000000000000001, 
+      "generic_bump_amount_source": "script_default_not_mm", 
+      "grout_in": 0.0625, 
+      "grout_step_mm": 1.5874999999999999, 
+      "id": "elm_almond_flat_12x24", 
+      "layout": "stacked_aligned", 
+      "manufacturer": "ELM Surfaces", 
+      "maps": {
+        "bump16": "C:\\Users\\mlux\\Documents\\GitHub\\3D-Model-Workflow\\output\\elm_almond_textures\\elm_almond_flat_12x24_bump16.png", 
+        "bump16_bound_as_revit_bump": "C:\\Users\\mlux\\Documents\\GitHub\\3D-Model-Workflow\\output\\elm_almond_textures\\elm_almond_flat_12x24_bump16.png", 
+        "diffuse": "C:\\Users\\mlux\\Documents\\GitHub\\3D-Model-Workflow\\output\\elm_almond_textures\\elm_almond_flat_12x24_diffuse.png", 
+        "height16": "C:\\Users\\mlux\\Documents\\GitHub\\3D-Model-Workflow\\output\\elm_almond_textures\\elm_almond_flat_12x24_height16.png", 
+        "normal_opengl": "C:\\Users\\mlux\\Documents\\GitHub\\3D-Model-Workflow\\output\\elm_almond_textures\\elm_almond_flat_12x24_normal_opengl.png", 
+        "roughness": "C:\\Users\\mlux\\Documents\\GitHub\\3D-Model-Workflow\\output\\elm_almond_textures\\elm_almond_flat_12x24_roughness.png"
+      }, 
+      "name": "12 x 24 inch flat", 
+      "pattern_ribs_across_short_axis": null, 
+      "relief_clearance_mm": 0.58749999999999991, 
+      "scale_audit": {
+        "map_resolution_px": [
+          4096.0, 
+          4096.0
+        ], 
+        "physical_extent_ft": [
+          16.041666666666668, 
+          16.083333333333332
+        ], 
+        "pixel_derived_scale_in": [
+          192.5, 
+          193.0
+        ], 
+        "scale_consistency": true, 
+        "scale_in_per_px": [
+          0.0469970703125, 
+          0.047119140625
+        ]
+      }, 
+      "scale_in": [
+        192.5, 
+        193.0
+      ], 
+      "source_face_count": 1, 
+      "source_url": "https://www.elmsurfaces.com/product/grounded-almond", 
+      "source_url_source": "references/elm_almond/SOURCES.md", 
+      "tile_size_in": [
+        24.0, 
+        12.0
+      ]
+    }, 
+    {
+      "estimated_height_range_mm": 1.2000000000000000, 
+      "generic_bump_amount": 0.025000000000000001, 
+      "generic_bump_amount_source": "script_default_not_mm", 
+      "grout_in": 0.0625, 
+      "grout_step_mm": 2.2000000000000002, 
+      "id": "elm_almond_fluted_12x24", 
+      "layout": "stacked_aligned", 
+      "manufacturer": "ELM Surfaces", 
+      "maps": {
+        "bump16": "C:\\Users\\mlux\\Documents\\GitHub\\3D-Model-Workflow\\output\\elm_almond_textures\\elm_almond_fluted_12x24_bump16.png", 
+        "bump16_bound_as_revit_bump": "C:\\Users\\mlux\\Documents\\GitHub\\3D-Model-Workflow\\output\\elm_almond_textures\\elm_almond_fluted_12x24_bump16.png", 
+        "diffuse": "C:\\Users\\mlux\\Documents\\GitHub\\3D-Model-Workflow\\output\\elm_almond_textures\\elm_almond_fluted_12x24_diffuse.png", 
+        "height16": "C:\\Users\\mlux\\Documents\\GitHub\\3D-Model-Workflow\\output\\elm_almond_textures\\elm_almond_fluted_12x24_height16.png", 
+        "normal_opengl": "C:\\Users\\mlux\\Documents\\GitHub\\3D-Model-Workflow\\output\\elm_almond_textures\\elm_almond_fluted_12x24_normal_opengl.png", 
+        "roughness": "C:\\Users\\mlux\\Documents\\GitHub\\3D-Model-Workflow\\output\\elm_almond_textures\\elm_almond_fluted_12x24_roughness.png"
+      }, 
+      "name": "12 x 24 inch fluted", 
+      "pattern_ribs_across_short_axis": 12, 
+      "relief_clearance_mm": 1.0, 
+      "scale_audit": {
+        "map_resolution_px": [
+          4096.0, 
+          4096.0
+        ], 
+        "physical_extent_ft": [
+          16.041666666666668, 
+          16.083333333333332
+        ], 
+        "pixel_derived_scale_in": [
+          192.5, 
+          193.0
+        ], 
+        "scale_consistency": true, 
+        "scale_in_per_px": [
+          0.0469970703125, 
+          0.047119140625
+        ]
+      }, 
+      "scale_in": [
+        192.5, 
+        193.0
+      ], 
+      "source_face_count": 1, 
+      "source_url": "https://www.elmsurfaces.com/product/grounded-almond-flute", 
+      "source_url_source": "references/elm_almond/SOURCES.md", 
+      "tile_size_in": [
+        24.0, 
+        12.0
+      ]
+    }
+  ], 
+  "stage": "complete", 
+  "warning_count": 0
+}

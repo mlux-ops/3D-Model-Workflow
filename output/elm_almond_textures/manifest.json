@@ -1,0 +1,595 @@
+{
+  "schema_version": "1.0",
+  "material_id": "ELM_Almond",
+  "build": {
+    "script": "scripts/build_elm_almond_textures.py",
+    "seed": 20260918,
+    "pixels": 4096,
+    "source_mode": "official_face_only",
+    "coordinate_convention": "u=map x/right, v=map y/down; registered map scale is per-axis"
+  },
+  "source_set": {
+    "official_faces": [
+      {
+        "path": "references/elm_almond/683124287cce7c270f37b4c2_almond main.jpg",
+        "filename": "683124287cce7c270f37b4c2_almond main.jpg",
+        "size_px": [
+          1200,
+          2400
+        ],
+        "role": "official_flat_face_duplicate",
+        "included_by_default": false,
+        "reason": "duplicate of almond_main.jpg; not sampled twice"
+      },
+      {
+        "path": "references/elm_almond/68312432d83eef492171792d_almond 8.webp",
+        "filename": "68312432d83eef492171792d_almond 8.webp",
+        "size_px": [
+          2400,
+          2400
+        ],
+        "role": "official_lifestyle_reference",
+        "included_by_default": false,
+        "reason": "lifestyle scene; not a face crop"
+      },
+      {
+        "path": "references/elm_almond/6831243f100889a9c9cffb7b_almond.webp",
+        "filename": "6831243f100889a9c9cffb7b_almond.webp",
+        "size_px": [
+          2400,
+          3085
+        ],
+        "role": "official_lifestyle_reference",
+        "included_by_default": false,
+        "reason": "lifestyle scene; not a face crop"
+      },
+      {
+        "path": "references/elm_almond/6831243f2740add37a075f97_almond 2.webp",
+        "filename": "6831243f2740add37a075f97_almond 2.webp",
+        "size_px": [
+          3466,
+          2400
+        ],
+        "role": "official_lifestyle_reference",
+        "included_by_default": false,
+        "reason": "lifestyle scene; not a face crop"
+      },
+      {
+        "path": "references/elm_almond/6831243f5ac228a8e81ac0e6_almond 5.webp",
+        "filename": "6831243f5ac228a8e81ac0e6_almond 5.webp",
+        "size_px": [
+          2400,
+          4402
+        ],
+        "role": "official_lifestyle_reference",
+        "included_by_default": false,
+        "reason": "lifestyle scene; not a face crop"
+      },
+      {
+        "path": "references/elm_almond/6831243f7cce7c270f37bd5e_almond 4.webp",
+        "filename": "6831243f7cce7c270f37bd5e_almond 4.webp",
+        "size_px": [
+          3595,
+          2400
+        ],
+        "role": "official_lifestyle_reference",
+        "included_by_default": false,
+        "reason": "lifestyle scene; not a face crop"
+      },
+      {
+        "path": "references/elm_almond/6831243f89899e7ccfd610ee_almond 3.webp",
+        "filename": "6831243f89899e7ccfd610ee_almond 3.webp",
+        "size_px": [
+          3600,
+          2400
+        ],
+        "role": "official_lifestyle_reference",
+        "included_by_default": false,
+        "reason": "lifestyle scene; not a face crop"
+      },
+      {
+        "path": "references/elm_almond/6831243fc5081fe7d23c66d8_almond 7.webp",
+        "filename": "6831243fc5081fe7d23c66d8_almond 7.webp",
+        "size_px": [
+          3595,
+          2400
+        ],
+        "role": "official_lifestyle_reference",
+        "included_by_default": false,
+        "reason": "lifestyle scene; not a face crop"
+      },
+      {
+        "path": "references/elm_almond/6831243ff1ac91d1cdc16819_almond 6.webp",
+        "filename": "6831243ff1ac91d1cdc16819_almond 6.webp",
+        "size_px": [
+          1601,
+          2400
+        ],
+        "role": "official_lifestyle_reference",
+        "included_by_default": false,
+        "reason": "lifestyle scene; not a face crop"
+      },
+      {
+        "path": "references/elm_almond/68313771b63493de60b1b917_MILE_stone_Earthen_Almond_12x24_Flute.webp",
+        "filename": "68313771b63493de60b1b917_MILE_stone_Earthen_Almond_12x24_Flute.webp",
+        "size_px": [
+          2400,
+          2400
+        ],
+        "role": "official_flute_lifestyle_reference",
+        "included_by_default": false,
+        "reason": "scene reference; orientation and relief only"
+      },
+      {
+        "path": "references/elm_almond/69ced2f4e106af99bf62a4e3_Palace-Royale-Almond-13x13-Panel.webp",
+        "filename": "69ced2f4e106af99bf62a4e3_Palace-Royale-Almond-13x13-Panel.webp",
+        "size_px": [
+          4800,
+          2400
+        ],
+        "role": "other_product_lifestyle_reference",
+        "included_by_default": false,
+        "reason": "Palace Royale scene; not ELM Almond"
+      },
+      {
+        "path": "references/elm_almond/almond_main.jpg",
+        "filename": "almond_main.jpg",
+        "size_px": [
+          1200,
+          2400
+        ],
+        "role": "official_flat_face",
+        "included_by_default": true,
+        "reason": "official flat face source"
+      },
+      {
+        "path": "references/elm_almond/generated_continuous_albedo.png",
+        "filename": "generated_continuous_albedo.png",
+        "size_px": [
+          1254,
+          1254
+        ],
+        "role": "user_supplied_generated_albedo",
+        "included_by_default": false,
+        "reason": "optional only; excluded from default matching"
+      }
+    ],
+    "generated_source": {
+      "path": "references/elm_almond/generated_continuous_albedo.png",
+      "included_by_default": false,
+      "included_this_build": false,
+      "reason": "optional explicit source; excluded from default source-face matching"
+    },
+    "sampled_source_labels": [
+      "references/elm_almond/almond_main.jpg"
+    ]
+  },
+  "materials": [
+    {
+      "id": "elm_almond_mosaic_2x2",
+      "label": "2 x 2 inch mosaic",
+      "tile_size_in": [
+        2.0,
+        2.0
+      ],
+      "orientation": "square",
+      "layout": "stacked_aligned",
+      "pattern": "mosaic",
+      "grout_width_in": 0.0625,
+      "grout_width_mm": 1.5875,
+      "tile_count": [
+        96,
+        96
+      ],
+      "physical_extent_in": [
+        198.0,
+        198.0
+      ],
+      "physical_extent_ft": [
+        16.5,
+        16.5
+      ],
+      "map_resolution_px": [
+        4096,
+        4096
+      ],
+      "pixels_per_inch": [
+        20.68686868686869,
+        20.68686868686869
+      ],
+      "registered_map_scale_in_per_px": [
+        0.04833984374999999,
+        0.04833984374999999
+      ],
+      "source_face_count": 1,
+      "source_crop_count": 32,
+      "source_crop_labels": [
+        "references/elm_almond/almond_main.jpg"
+      ],
+      "variation_method": "deterministic_spatial_crops; no rotations, mirrors, or tint-only variants",
+      "maps": {
+        "diffuse": {
+          "path": "elm_almond_mosaic_2x2_diffuse.png",
+          "sha256": "59404ff0aa1ddf024cdc89f23473335d44cecf386a5d22124a7b00dab89b0496",
+          "bytes": 3807802
+        },
+        "height16": {
+          "path": "elm_almond_mosaic_2x2_height16.png",
+          "sha256": "11f0d45f3ad8c1745e55eeb117b550b3d466dcdbf26d76fe4a55437a4c38fdc8",
+          "bytes": 3213255
+        },
+        "bump16": {
+          "path": "elm_almond_mosaic_2x2_bump16.png",
+          "sha256": "11f0d45f3ad8c1745e55eeb117b550b3d466dcdbf26d76fe4a55437a4c38fdc8",
+          "bytes": 3213255
+        },
+        "normal_opengl": {
+          "path": "elm_almond_mosaic_2x2_normal_opengl.png",
+          "sha256": "4774eca1e31f51c0a265dafea09eccaed87e92e50774e1ea6349f9d6785f948c",
+          "bytes": 2238654
+        },
+        "roughness": {
+          "path": "elm_almond_mosaic_2x2_roughness.png",
+          "sha256": "16106ac21007379c3276d09ce54de68c386d038c35ca7fc8aea1173bac5d216d",
+          "bytes": 644305
+        },
+        "preview_3x3": {
+          "path": "elm_almond_mosaic_2x2_preview_3x3.png",
+          "sha256": "5cb16a14e677eca8830f068b1258462304c6084c93134f2abe5fb5f61cef7fa2",
+          "bytes": 594508
+        },
+        "grazing_diagnostic": {
+          "path": "elm_almond_mosaic_2x2_grazing_lambertian_diagnostic.png",
+          "sha256": "aaf1e2b5e5b83b42e516a221f71cdaf21acf0586b20067abdd4044b4dcecc0de",
+          "bytes": 489994
+        }
+      },
+      "validation": {
+        "unique_interiors": {
+          "tile_instances": 9216,
+          "unique_interior_tile_hashes": 32,
+          "adjacent_duplicate_pairs": 0
+        },
+        "wrapped_boundary_statistics": {
+          "diffuse": {
+            "left_right_mean_abs_delta": 0.6365646123886108,
+            "top_bottom_mean_abs_delta": 0.6400253772735596,
+            "corner_values": [
+              0.6771242022514343,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "note": "edge differences include intentional grout at the atlas perimeter; periodic derivatives use np.roll"
+          },
+          "height_mm": {
+            "left_right_mean_abs_delta": 0.9666349291801453,
+            "top_bottom_mean_abs_delta": 0.9682729840278625,
+            "corner_values": [
+              -0.0042352937161922455,
+              -1.0,
+              -1.0,
+              -1.0
+            ],
+            "note": "edge differences include intentional grout at the atlas perimeter; periodic derivatives use np.roll"
+          },
+          "normal_opengl": {
+            "left_right_mean_abs_delta": 0.07428848743438721,
+            "top_bottom_mean_abs_delta": 0.0740644559264183,
+            "corner_values": [
+              0.5265073180198669,
+              0.6671132445335388,
+              0.6667305827140808,
+              0.6666666865348816
+            ],
+            "note": "edge differences include intentional grout at the atlas perimeter; periodic derivatives use np.roll"
+          },
+          "roughness": {
+            "left_right_mean_abs_delta": 0.10600639879703522,
+            "top_bottom_mean_abs_delta": 0.10621404647827148,
+            "corner_values": [
+              0.6093725562095642,
+              0.7200000286102295,
+              0.7200000286102295,
+              0.7200000286102295
+            ],
+            "note": "edge differences include intentional grout at the atlas perimeter; periodic derivatives use np.roll"
+          }
+        },
+        "periodic_derivatives": true,
+        "visual_3x3_preview": "generated; illustrative bitmap inspection only",
+        "grazing_lambertian_diagnostic": "generated; not a native render",
+        "native_render": "pending",
+        "native_application_binding": "pending",
+        "seamless_visual_gate": "pending",
+        "non_repetition_visual_gate": "pending"
+      }
+    },
+    {
+      "id": "elm_almond_flat_12x24",
+      "label": "12 x 24 inch flat",
+      "tile_size_in": [
+        24.0,
+        12.0
+      ],
+      "orientation": "landscape_24x12",
+      "layout": "stacked_aligned",
+      "pattern": "flat",
+      "grout_width_in": 0.0625,
+      "grout_width_mm": 1.5875,
+      "tile_count": [
+        8,
+        16
+      ],
+      "physical_extent_in": [
+        192.5,
+        193.0
+      ],
+      "physical_extent_ft": [
+        16.041666666666668,
+        16.083333333333332
+      ],
+      "map_resolution_px": [
+        4096,
+        4096
+      ],
+      "pixels_per_inch": [
+        21.277922077922078,
+        21.22279792746114
+      ],
+      "registered_map_scale_in_per_px": [
+        0.0469970703125,
+        0.047119140625
+      ],
+      "source_face_count": 1,
+      "source_crop_count": 32,
+      "source_crop_labels": [
+        "references/elm_almond/almond_main.jpg"
+      ],
+      "variation_method": "deterministic_spatial_crops; no rotations, mirrors, or tint-only variants",
+      "maps": {
+        "diffuse": {
+          "path": "elm_almond_flat_12x24_diffuse.png",
+          "sha256": "9706d059f8b114c322fd971af2dad780a26805ccdb5e8bee0a8fe8a072aa5e73",
+          "bytes": 9480654
+        },
+        "height16": {
+          "path": "elm_almond_flat_12x24_height16.png",
+          "sha256": "3622f1e45f6c9f032daf652469573ae1816af67ee3e4deffdcc4cee391b73d4a",
+          "bytes": 12065187
+        },
+        "bump16": {
+          "path": "elm_almond_flat_12x24_bump16.png",
+          "sha256": "3622f1e45f6c9f032daf652469573ae1816af67ee3e4deffdcc4cee391b73d4a",
+          "bytes": 12065187
+        },
+        "normal_opengl": {
+          "path": "elm_almond_flat_12x24_normal_opengl.png",
+          "sha256": "ecaaff42cd45a53c47446d81e44800761b466b1d9f4829a274e6d5f0bd647714",
+          "bytes": 7415644
+        },
+        "roughness": {
+          "path": "elm_almond_flat_12x24_roughness.png",
+          "sha256": "b5edf247e06e6e9a97ee823216a3eb24c7d0d372d10645421537e545edbcd56c",
+          "bytes": 1850132
+        },
+        "preview_3x3": {
+          "path": "elm_almond_flat_12x24_preview_3x3.png",
+          "sha256": "e364b467b98d38d2a00c31e0e21abf09620cefffed99140ceb6ad11b5af843ad",
+          "bytes": 441886
+        },
+        "grazing_diagnostic": {
+          "path": "elm_almond_flat_12x24_grazing_lambertian_diagnostic.png",
+          "sha256": "6aa366de2a9b4db0f3f5c2510f7bf3d58be7e1f6faa1f0d65944e8871db674ea",
+          "bytes": 346593
+        }
+      },
+      "validation": {
+        "unique_interiors": {
+          "tile_instances": 128,
+          "unique_interior_tile_hashes": 8,
+          "adjacent_duplicate_pairs": 4
+        },
+        "wrapped_boundary_statistics": {
+          "diffuse": {
+            "left_right_mean_abs_delta": 0.6598339676856995,
+            "top_bottom_mean_abs_delta": 0.6603665351867676,
+            "corner_values": [
+              0.6313725709915161,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "note": "edge differences include intentional grout at the atlas perimeter; periodic derivatives use np.roll"
+          },
+          "height_mm": {
+            "left_right_mean_abs_delta": 0.9955137968063354,
+            "top_bottom_mean_abs_delta": 0.9973618984222412,
+            "corner_values": [
+              -0.016470586881041527,
+              -1.0,
+              -1.0,
+              -1.0
+            ],
+            "note": "edge differences include intentional grout at the atlas perimeter; periodic derivatives use np.roll"
+          },
+          "normal_opengl": {
+            "left_right_mean_abs_delta": 0.0769423097372055,
+            "top_bottom_mean_abs_delta": 0.07697269320487976,
+            "corner_values": [
+              0.5240278840065002,
+              0.6686260104179382,
+              0.6674512028694153,
+              0.6666666865348816
+            ],
+            "note": "edge differences include intentional grout at the atlas perimeter; periodic derivatives use np.roll"
+          },
+          "roughness": {
+            "left_right_mean_abs_delta": 0.1093166172504425,
+            "top_bottom_mean_abs_delta": 0.10948529839515686,
+            "corner_values": [
+              0.6121176481246948,
+              0.7200000286102295,
+              0.7200000286102295,
+              0.7200000286102295
+            ],
+            "note": "edge differences include intentional grout at the atlas perimeter; periodic derivatives use np.roll"
+          }
+        },
+        "periodic_derivatives": true,
+        "visual_3x3_preview": "generated; illustrative bitmap inspection only",
+        "grazing_lambertian_diagnostic": "generated; not a native render",
+        "native_render": "pending",
+        "native_application_binding": "pending",
+        "seamless_visual_gate": "pending",
+        "non_repetition_visual_gate": "pending"
+      }
+    },
+    {
+      "id": "elm_almond_fluted_12x24",
+      "label": "12 x 24 inch fluted",
+      "tile_size_in": [
+        24.0,
+        12.0
+      ],
+      "orientation": "landscape_24x12",
+      "layout": "stacked_aligned",
+      "pattern": "fluted",
+      "grout_width_in": 0.0625,
+      "grout_width_mm": 1.5875,
+      "tile_count": [
+        8,
+        16
+      ],
+      "physical_extent_in": [
+        192.5,
+        193.0
+      ],
+      "physical_extent_ft": [
+        16.041666666666668,
+        16.083333333333332
+      ],
+      "map_resolution_px": [
+        4096,
+        4096
+      ],
+      "pixels_per_inch": [
+        21.277922077922078,
+        21.22279792746114
+      ],
+      "registered_map_scale_in_per_px": [
+        0.0469970703125,
+        0.047119140625
+      ],
+      "source_face_count": 1,
+      "source_crop_count": 32,
+      "source_crop_labels": [
+        "references/elm_almond/almond_main.jpg"
+      ],
+      "variation_method": "deterministic_spatial_crops; no rotations, mirrors, or tint-only variants",
+      "maps": {
+        "diffuse": {
+          "path": "elm_almond_fluted_12x24_diffuse.png",
+          "sha256": "9706d059f8b114c322fd971af2dad780a26805ccdb5e8bee0a8fe8a072aa5e73",
+          "bytes": 9480654
+        },
+        "height16": {
+          "path": "elm_almond_fluted_12x24_height16.png",
+          "sha256": "cc39833da664a1c2533e2f47d7501ae0234edc35289ea9bd622287218f94bbc8",
+          "bytes": 11433103
+        },
+        "bump16": {
+          "path": "elm_almond_fluted_12x24_bump16.png",
+          "sha256": "cc39833da664a1c2533e2f47d7501ae0234edc35289ea9bd622287218f94bbc8",
+          "bytes": 11433103
+        },
+        "normal_opengl": {
+          "path": "elm_almond_fluted_12x24_normal_opengl.png",
+          "sha256": "e9390e84c2b3a6a92b321c9a1400fb1799bc78b524092f58a2d275376957a423",
+          "bytes": 586605
+        },
+        "roughness": {
+          "path": "elm_almond_fluted_12x24_roughness.png",
+          "sha256": "c87ca5abc43374ff8edf6c98f70a7daaf80578fbb44b83b05721c445165486a9",
+          "bytes": 350203
+        },
+        "preview_3x3": {
+          "path": "elm_almond_fluted_12x24_preview_3x3.png",
+          "sha256": "e364b467b98d38d2a00c31e0e21abf09620cefffed99140ceb6ad11b5af843ad",
+          "bytes": 441886
+        },
+        "grazing_diagnostic": {
+          "path": "elm_almond_fluted_12x24_grazing_lambertian_diagnostic.png",
+          "sha256": "626b48f770fdc89b2e9ff5976a35ff42cc6cb397ef67c3236143aac0956f5928",
+          "bytes": 390496
+        }
+      },
+      "validation": {
+        "unique_interiors": {
+          "tile_instances": 128,
+          "unique_interior_tile_hashes": 8,
+          "adjacent_duplicate_pairs": 4
+        },
+        "wrapped_boundary_statistics": {
+          "diffuse": {
+            "left_right_mean_abs_delta": 0.6598339676856995,
+            "top_bottom_mean_abs_delta": 0.6603665351867676,
+            "corner_values": [
+              0.6313725709915161,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "note": "edge differences include intentional grout at the atlas perimeter; periodic derivatives use np.roll"
+          },
+          "height_mm": {
+            "left_right_mean_abs_delta": 1.8045969009399414,
+            "top_bottom_mean_abs_delta": 1.6605563163757324,
+            "corner_values": [
+              0.4928508400917053,
+              -1.0,
+              -1.0,
+              -1.0
+            ],
+            "note": "edge differences include intentional grout at the atlas perimeter; periodic derivatives use np.roll"
+          },
+          "normal_opengl": {
+            "left_right_mean_abs_delta": 0.1329433023929596,
+            "top_bottom_mean_abs_delta": 0.10851508378982544,
+            "corner_values": [
+              0.475177139043808,
+              0.6709190011024475,
+              0.6411354541778564,
+              0.6666666865348816
+            ],
+            "note": "edge differences include intentional grout at the atlas perimeter; periodic derivatives use np.roll"
+          },
+          "roughness": {
+            "left_right_mean_abs_delta": 0.12333612143993378,
+            "top_bottom_mean_abs_delta": 0.11742882430553436,
+            "corner_values": [
+              0.6094645261764526,
+              0.7200000286102295,
+              0.7200000286102295,
+              0.7200000286102295
+            ],
+            "note": "edge differences include intentional grout at the atlas perimeter; periodic derivatives use np.roll"
+          }
+        },
+        "periodic_derivatives": true,
+        "visual_3x3_preview": "generated; illustrative bitmap inspection only",
+        "grazing_lambertian_diagnostic": "generated; not a native render",
+        "native_render": "pending",
+        "native_application_binding": "pending",
+        "seamless_visual_gate": "pending",
+        "non_repetition_visual_gate": "pending"
+      }
+    }
+  ],
+  "limitations": [
+    "Only one genuine official flat face was suitable for sampling; the other numbered Almond WEBPs are lifestyle scenes.",
+    "Spatial crops are source-derived but do not constitute multiple independent product faces; non-repetition visual acceptance is pending.",
+    "No native Revit or renderer validation was performed by this script.",
+    "No ADSKLIB was created."
+  ]
+}
