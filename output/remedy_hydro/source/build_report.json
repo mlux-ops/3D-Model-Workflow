@@ -1,0 +1,146 @@
+{
+  "remedy_hydro_fluted": {
+    "defects_fixed_2026-09-18b": [
+      "colour: patches were sampled from a detrended (row-shading-flattened) swatch instead of the raw swatch, eliminating the near-black banding caused by narrow random crops landing in the real photographed groove shadow",
+      "geometry: height budget rebuilt with an explicit, asserted non-clamped bottom reserve for the joint, fixing a v2 bug where the joint floor silently clamped to 0.02 and the reported grout depth (0.18 mm) did not match the realised one"
+    ],
+    "source_image": "remedy_hydro_fluted_silo_2000x2000.jpg (DAL_RD22_2x10_Fluted_Hydro_GL_Silo_01 -- flat single-tile swatch, no scene)",
+    "installed_orientation": "10 in wide x 2 in tall, flutes run horizontally along the 10 in length",
+    "tiles_x": 3,
+    "tiles_y": 12,
+    "bond": "grid (stack bond)",
+    "module_in": [
+      10.0,
+      2.0
+    ],
+    "actual_tile_in_derived": [
+      9.875,
+      1.875
+    ],
+    "joint_in": 0.125,
+    "sample_size_in": [
+      30.0,
+      24.0
+    ],
+    "sample_size_ft_in": [
+      "2'-6\"",
+      "2'-0\""
+    ],
+    "image_pixels": [
+      1800,
+      1440
+    ],
+    "aspect_matches_physical": true,
+    "flute_count_per_module": 2,
+    "flutes_verified_horizontal_parallel": {
+      "cols_px": [
+        60,
+        180,
+        300,
+        420,
+        540
+      ],
+      "row_at_each_col_channel1_channel2_ridge": [
+        [
+          4,
+          4,
+          4,
+          4,
+          4
+        ],
+        [
+          90,
+          90,
+          90,
+          90,
+          90
+        ],
+        [
+          60,
+          60,
+          60,
+          60,
+          60
+        ]
+      ],
+      "all_equal_per_feature": [
+        true,
+        true,
+        true
+      ]
+    },
+    "clamped_pixels_below_pattern_floor": 28281,
+    "colour_method": "Per-module patches sampled from the accepted Fluted Silo swatch AFTER detrending its own baked per-row groove-shading (row-trend division), preserving genuine local glaze variegation without the directional shading; + per-module tone jitter; + a small BOUNDED (+/-9%) glaze-pooling tint tied to the flute profile (lighter at crests, darker in channels); overall mean rescaled to match the raw swatch per-channel mean.",
+    "color_map": {
+      "path": "C:/Users/mlux/Documents/GitHub/3D-Model-Workflow\\output\\remedy_hydro\\textures\\remedy_hydro_fluted_Color.png",
+      "header": {
+        "width": 1800,
+        "height": 1440,
+        "bit_depth": 8,
+        "colour_type": 2
+      }
+    },
+    "bump_map": {
+      "path": "C:/Users/mlux/Documents/GitHub/3D-Model-Workflow\\output\\remedy_hydro\\textures\\remedy_hydro_fluted_Bump16.png",
+      "header": {
+        "width": 1800,
+        "height": 1440,
+        "bit_depth": 16,
+        "colour_type": 0
+      }
+    },
+    "height_range_mm": 2.0,
+    "pattern_relief_mm": 1.7,
+    "grout_relief_mm": 0.18,
+    "clearance_mm": 0.12
+  },
+  "remedy_hydro_flat": {
+    "source_image": "remedy_hydro_handcrafted_silo_2000x2000.jpg (DAL_RD22_2x10_Handcrafted_Hydro_GL_Silo_01 -- flat single-tile swatch, no scene)",
+    "installed_orientation": "10 in wide x 2 in tall",
+    "tiles_x": 3,
+    "tiles_y": 12,
+    "bond": "grid (stack bond)",
+    "module_in": [
+      10.0,
+      2.0
+    ],
+    "actual_tile_in_derived": [
+      9.875,
+      1.875
+    ],
+    "joint_in": 0.125,
+    "sample_size_in": [
+      30.0,
+      24.0
+    ],
+    "sample_size_ft_in": [
+      "2'-6\"",
+      "2'-0\""
+    ],
+    "image_pixels": [
+      1800,
+      1440
+    ],
+    "aspect_matches_physical": true,
+    "color_map": {
+      "path": "C:/Users/mlux/Documents/GitHub/3D-Model-Workflow\\output\\remedy_hydro\\textures\\remedy_hydro_flat_Color.png",
+      "header": {
+        "width": 1800,
+        "height": 1440,
+        "bit_depth": 8,
+        "colour_type": 2
+      }
+    },
+    "bump_map": {
+      "path": "C:/Users/mlux/Documents/GitHub/3D-Model-Workflow\\output\\remedy_hydro\\textures\\remedy_hydro_flat_Bump16.png",
+      "header": {
+        "width": 1800,
+        "height": 1440,
+        "bit_depth": 16,
+        "colour_type": 0
+      }
+    },
+    "height_range_mm": 0.35,
+    "grout_depth_mm": 0.315
+  }
+}

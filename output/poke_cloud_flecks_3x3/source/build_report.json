@@ -1,0 +1,156 @@
+{
+  "source_image": "poke_cloud_flecks_3x3_DAL_PK20_3x3_Msc_CloudFlecks_MT_Silo_01.jpg (DAL_PK20_3x3_Msc_CloudFlecks_MT_Silo_01 -- flat swatch, no scene), 3000x3000 px",
+  "grid_detection": {
+    "method": "median row/column luminance profile of the tile-face-cropped swatch; joint bands are the plateaus below a per-axis threshold (row thresh 0.8242, col thresh 0.8222; typical tile-row/col level 0.8915, joint plateau level 0.7569)",
+    "row_bands_px": [
+      [
+        435,
+        455
+      ],
+      [
+        884,
+        906
+      ],
+      [
+        1335,
+        1356
+      ]
+    ],
+    "col_bands_px": [
+      [
+        437,
+        458
+      ],
+      [
+        888,
+        911
+      ],
+      [
+        1339,
+        1361
+      ]
+    ],
+    "safety_margin_px": 12,
+    "chip_interior_count": 16,
+    "chip_interior_sizes_px": [
+      [
+        411,
+        413
+      ],
+      [
+        411,
+        406
+      ],
+      [
+        411,
+        404
+      ],
+      [
+        411,
+        410
+      ],
+      [
+        405,
+        413
+      ],
+      [
+        405,
+        406
+      ],
+      [
+        405,
+        404
+      ],
+      [
+        405,
+        410
+      ],
+      [
+        405,
+        413
+      ],
+      [
+        405,
+        406
+      ],
+      [
+        405,
+        404
+      ],
+      [
+        405,
+        410
+      ],
+      [
+        410,
+        413
+      ],
+      [
+        410,
+        406
+      ],
+      [
+        410,
+        404
+      ],
+      [
+        410,
+        410
+      ]
+    ]
+  },
+  "atlas_method": "8x8 delivered atlas built only from random-choice, random 90-degree rotation/flip, mild-tone-jitter copies of the 16 joint-free chip interiors; no delivered crop crosses a source joint. The 1/8 in delivered joint is drawn procedurally, not copied from the photo.",
+  "tiles_x": 8,
+  "tiles_y": 8,
+  "bond": "grid (stack bond, straight joint)",
+  "module_in": [
+    3.0,
+    3.0
+  ],
+  "actual_chip_in": [
+    2.875,
+    2.875
+  ],
+  "joint_in": 0.125,
+  "sheet_nominal_in": [
+    12.0,
+    12.0
+  ],
+  "chips_per_sheet": [
+    4,
+    4
+  ],
+  "sample_size_in": [
+    24.0,
+    24.0
+  ],
+  "sample_size_ft_in": [
+    "2'-0\"",
+    "2'-0\""
+  ],
+  "image_pixels": [
+    2000,
+    2000
+  ],
+  "aspect_matches_physical": true,
+  "color_map": {
+    "path": "C:/Users/mlux/Documents/GitHub/3D-Model-Workflow\\output\\poke_cloud_flecks_3x3\\textures\\poke_cloud_flecks_3x3_Color.png",
+    "header": {
+      "width": 2000,
+      "height": 2000,
+      "bit_depth": 8,
+      "colour_type": 2
+    }
+  },
+  "bump_map": {
+    "path": "C:/Users/mlux/Documents/GitHub/3D-Model-Workflow\\output\\poke_cloud_flecks_3x3\\textures\\poke_cloud_flecks_3x3_Bump16.png",
+    "header": {
+      "width": 2000,
+      "height": 2000,
+      "bit_depth": 16,
+      "colour_type": 0
+    }
+  },
+  "height_range_mm": 0.35,
+  "grout_depth_mm": 0.315
+}
