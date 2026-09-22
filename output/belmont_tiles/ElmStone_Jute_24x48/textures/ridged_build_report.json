@@ -1,0 +1,31 @@
+{
+  "file": "Bump_FinelyRidged16.png",
+  "pixels": [
+    4096,
+    2051
+  ],
+  "physical_in": [
+    48.0625,
+    24.0625
+  ],
+  "ridge_pitch_mm": 1.99734477124183,
+  "ridge_pitch_target_mm": 2.0,
+  "ridge_count_across_height": 306,
+  "ridge_orientation": "horizontal, parallel to the veining (constant along width, periodic across height)",
+  "vein_angle_deg_measured": 178.4,
+  "relief_mm": {
+    "total_range": 0.55,
+    "reveal_floor": 0.0,
+    "tile_plane_ridge_valley": 0.15,
+    "ridge_peak_to_valley": 0.35,
+    "ridge_crest": 0.5,
+    "clearance_above_reveal_floor": 0.15
+  },
+  "edge_reveal_band_px": 4,
+  "wrap_check": {
+    "lr_step": 0.0,
+    "tb_step": 0.0,
+    "typical_neighbour_step": 5142.71484375
+  },
+  "source": "procedural, direction and fineness informed by references/manufacturer_04_installed_ridged.jpg; pitch is a design estimate, not measured (no scale reference in that photo) - see SOURCE_SELECTION_ridged.md"
+}
