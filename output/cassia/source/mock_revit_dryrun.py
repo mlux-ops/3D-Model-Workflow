@@ -18,7 +18,8 @@ behaviour, warnings and file validity are only established by the native run.
 Writes only to a temporary directory OUTSIDE the repository, then runs verify_cassia.py
 there (expects exit 0) and against two tampered reports (expects exit 1).
 
-    python mock_revit_dryrun.py
+    python mock_revit_dryrun.py                 (runs source/build_cassia.py)
+    python mock_revit_dryrun.py --via-button    (runs the pyRevit pushbutton entry point)
 """
 import json
 import math
@@ -896,6 +897,9 @@ def main():
     open(os.path.join(tmp, 'AGENTS.md'), 'w').write('mock root\n')
     for name in ('build_cassia.py', 'cassia_geometry.py', 'verify_cassia.py'):
         shutil.copy(os.path.join(HERE, name), os.path.join(src, name))
+    via_button = '--via-button' in sys.argv
+    if via_button:        # exercise the in-Revit pushbutton entry point instead of the builder
+        shutil.copytree(os.path.join(HERE, '..', 'pyrevit'), os.path.join(tmp, 'output', 'cassia', 'pyrevit'))
 
     DB = make_db()
     mods = {'clr': types.SimpleNamespace(AddReference=lambda n: None),
@@ -912,6 +916,10 @@ def main():
     os.path.isfile = lambda p: True if str(p).startswith('C:\\ProgramData') else real_isfile(p)
     sys.dont_write_bytecode = True
     builder = os.path.join(src, 'build_cassia.py')
+    if via_button:
+        builder = os.path.join(tmp, 'output', 'cassia', 'pyrevit', 'Cassia.extension', 'Cassia.tab',
+                               'Build.panel', 'BuildCassia.pushbutton', 'script.py')
+    print('entry point:', os.path.relpath(builder, tmp))
     g = {'__file__': builder, '__name__': '__main__',
          '__revit__': types.SimpleNamespace(Application=Application())}
     error = None

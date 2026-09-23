@@ -4,13 +4,36 @@
 
 ## Run (Windows workstation, Revit 2025 + pyRevit)
 
+Run from **your checkout** (the House of Troy build on 2026-09-23 used `C:\Users\found\OneDrive\Documents\ChatGPT\3D Model Workflow`; the older GitHub clone is `C:\Users\mlux\Documents\GitHub\3D-Model-Workflow`):
+
 ```powershell
-powershell -ExecutionPolicy Bypass -File "C:\Users\mlux\Documents\GitHub\3D-Model-Workflow\output\cassia\run_cassia.ps1"
+cd "C:\Users\found\OneDrive\Documents\ChatGPT\3D Model Workflow"
+git fetch origin
+git checkout main
+git merge --ff-only origin/claude/light-fixture-rfa-yw6npk     # plain `git merge` if main has local commits
+powershell -ExecutionPolicy Bypass -File .\output\cassia\run_cassia.ps1
 ```
 
+**Where the file goes:** the same folder as `run_cassia.ps1` — `<checkout>\output\cassia\Alora_Cassia_SF549315AGOP_Aged_Gold_Opal_R2025.rfa`, with `validation.json` and `evidence\*.png` beside it. The runner prints the path at the start and prints `RFA written: …` or `NO RFA was written …` at the end.
+
 - Exit 0 technical pass · 1 technical fail · 2 blocked (prerequisite missing). The exit code comes from `source/verify_cassia.py`, never from `pyrevit run`.
-- Produces `Alora_Cassia_SF549315AGOP_Aged_Gold_Opal_R2025.rfa`, `validation.json`, `evidence/*.png` (5 family + 3 hosted views).
-- Cloud-session branch: `claude/light-fixture-rfa-yw6npk` — merge or check it out first (`git merge --ff-only origin/claude/light-fixture-rfa-yw6npk`).
+- Open the folder: `explorer "<checkout>\output\cassia"`.
+
+### If `pyrevit run` does not start (no `validation.json` appears)
+
+On 2026-09-23 `pyrevit run` hit a native Revit startup exception (`0xe06d7363`) on this workstation; the House of Troy build succeeded from a button in the already-open Revit. Same route here:
+
+```powershell
+& "C:\Program Files\pyRevit-Master\bin\pyrevit.exe" extensions paths add "<checkout>\output\cassia\pyrevit"
+```
+
+Then in Revit: pyRevit tab → **Reload** → **Cassia** tab → **Build Cassia** (builds, saves, reopens, hosts and exports in the open session without touching open models). Then run the verifier:
+
+```powershell
+& "C:\Program Files\pyRevit-Master\bin\cengines\CPY3123\python.exe" "<checkout>\output\cassia\source\verify_cassia.py"
+```
+
+Afterwards: `pyrevit extensions paths forget "<checkout>\output\cassia\pyrevit"` and Reload. Registering the path may need an elevated shell (`pyRevit_config.ini` access denied, House of Troy log).
 
 ## Family
 
@@ -52,7 +75,7 @@ Geometry sources and every inferred value: [INFERENCES.md](INFERENCES.md). Share
 | `source/preview_geometry.py` — offline mesh dry-run of the same rays | 37/37 rays, 3/3 angles, 27/27 clearances pass (min clearance 0.55 in); 0 profile problems |
 | Model edges over supplied drawing | [elevation](preview/overlay_elevation_on_drawing.png) · [plan](preview/overlay_plan_on_drawing.png) — coincide except globe centres ≈1.5 px inward (published 5.875 vs drawn 5.945) |
 | Shaded model vs supplied render | [compare_render_view.png](preview/compare_render_view.png) · [views_contact_sheet.png](preview/views_contact_sheet.png) — estimated camera, not solved |
-| `source/mock_revit_dryrun.py` — real builder executed against a geometric mock Revit API | complete, all gates true, verifier exit 0; verifier rejects tampered reports; mutations (swapped revolve axes, skipped material restore) are caught |
+| `source/mock_revit_dryrun.py` — real builder executed against a geometric mock Revit API (also `--via-button` for the in-Revit button) | both entry points complete, all gates true, verifier exit 0; verifier rejects tampered reports; mutations (swapped revolve axes, skipped material restore) are caught |
 | `run_cassia.ps1` | PowerShell 7.4 parser: 0 errors; preflight on Linux → BLOCKED exit 2 as designed |
 
 These establish geometry intent and script logic only. API binding, appearance behaviour, warnings and file validity are established only by the native run.

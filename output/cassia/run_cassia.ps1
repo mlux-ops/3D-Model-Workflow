@@ -43,6 +43,13 @@ if ($missing.Count -gt 0) {
 
 if (-not (Test-Path -LiteralPath $logs)) { New-Item -ItemType Directory -Path $logs | Out-Null }
 
+# Tell the builder which checkout to write into (it falls back to its own location).
+$repoRoot = (Resolve-Path -LiteralPath (Join-Path $runDir '..\..')).Path
+$env:CASSIA_REPO_ROOT = $repoRoot
+$rfa = Join-Path $runDir 'Alora_Cassia_SF549315AGOP_Aged_Gold_Opal_R2025.rfa'
+Write-Host "  checkout        $repoRoot"
+Write-Host "  RFA will be     $rfa"
+
 # Keep the previous report instead of letting this run overwrite the only copy.
 if (Test-Path -LiteralPath $report) {
     $stamp = (Get-Date).ToUniversalTime().ToString('yyyyMMddTHHmmssZ')
@@ -69,6 +76,14 @@ Write-Host '== Verify (verify_cassia.py) =='
 & $cpython $verify
 $verdict = $LASTEXITCODE
 
+Write-Host ''
+if (Test-Path -LiteralPath $rfa) {
+    $item = Get-Item -LiteralPath $rfa
+    Write-Host ("RFA written: {0}  ({1:N0} bytes, {2})" -f $item.FullName, $item.Length, $item.LastWriteTime)
+} else {
+    Write-Host "NO RFA was written to $runDir"
+    Write-Host 'If Revit never opened the build (no validation.json), use the in-Revit button: README.md.'
+}
 Write-Host ''
 if ($verdict -eq 0) {
     Write-Host 'TECHNICAL PASS. Next:'

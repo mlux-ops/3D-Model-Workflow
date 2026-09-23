@@ -37,9 +37,12 @@ from System.Collections.Generic import List
 
 RUN_NAME = 'cassia'
 SCRIPT_VERSION = 'cassia-builder-2026-09-23'
+# Last-resort roots only. The runner passes CASSIA_REPO_ROOT and the script's own
+# location is tried next, so the RFA lands in the checkout that was actually run.
+# OneDrive first: the 2026-09-23 House of Troy build ran there.
 REPO_ROOT_CANDIDATES = [
-    r'C:\Users\mlux\Documents\GitHub\3D-Model-Workflow',
     r'C:\Users\found\OneDrive\Documents\ChatGPT\3D Model Workflow',
+    r'C:\Users\mlux\Documents\GitHub\3D-Model-Workflow',
 ]
 TEMPLATE_DIR = r'C:\ProgramData\Autodesk\RVT 2025\Family Templates\English-Imperial'
 FACE_TEMPLATE = os.path.join(TEMPLATE_DIR, 'Generic Model face based.rft')
@@ -59,19 +62,22 @@ def _script_dir():
 
 def repo_root():
     candidates = []
+    env_root = os.environ.get('CASSIA_REPO_ROOT')
+    if env_root:
+        candidates.append(('CASSIA_REPO_ROOT', os.path.normpath(env_root)))
     here = _script_dir()
     if here:
-        candidates.append(os.path.normpath(os.path.join(here, '..', '..', '..')))
-    candidates.extend(REPO_ROOT_CANDIDATES)
-    for candidate in candidates:
+        candidates.append(('__file__', os.path.normpath(os.path.join(here, '..', '..', '..'))))
+    candidates.extend(('fallback candidate', c) for c in REPO_ROOT_CANDIDATES)
+    for source, candidate in candidates:
         if (os.path.isfile(os.path.join(candidate, 'AGENTS.md')) and
                 os.path.isfile(os.path.join(candidate, 'output', RUN_NAME, 'source', 'cassia_geometry.py'))):
-            return candidate
+            return candidate, source
     raise RuntimeError('No repository root with AGENTS.md and output/cassia/source/cassia_geometry.py '
-                       'among: ' + ' | '.join(candidates))
+                       'among: ' + ' | '.join(c for _, c in candidates))
 
 
-ROOT = repo_root()
+ROOT, ROOT_SOURCE = repo_root()
 RUN_DIR = os.path.join(ROOT, 'output', RUN_NAME)
 _RUN_DIR_NORM = os.path.normpath(RUN_DIR)
 sys.path.insert(0, os.path.join(RUN_DIR, 'source'))
@@ -116,6 +122,7 @@ REPORT = {
     'script': 'output/cassia/source/build_cassia.py',
     'script_version': SCRIPT_VERSION,
     'repo_root': ROOT,
+    'repo_root_source': ROOT_SOURCE,
     'run_dir': RUN_DIR,
     'started_utc': datetime.datetime.utcnow().isoformat() + 'Z',
     'rfa_name': RFA_NAME,

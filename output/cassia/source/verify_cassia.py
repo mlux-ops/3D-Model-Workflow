@@ -26,6 +26,9 @@ import cassia_geometry as G  # noqa: E402
 RUN_DIR = os.path.normpath(os.path.join(HERE, '..'))
 REPORT = os.path.join(RUN_DIR, 'validation.json')
 RUN_START = os.path.join(RUN_DIR, 'logs', 'run-start.txt')
+KNOWN_ROOTS = [r'C:\Users\found\OneDrive\Documents\ChatGPT\3D Model Workflow',
+               r'C:\Users\mlux\Documents\GitHub\3D-Model-Workflow']
+RFA_NAME = 'Alora_Cassia_SF549315AGOP_Aged_Gold_Opal_R2025.rfa'
 DIMENSIONS = {'Overall Diameter': G.OVERALL_DIAMETER, 'Overall Height': G.OVERALL_HEIGHT,
               'Canopy Diameter': G.CANOPY_DIAMETER, 'Canopy Height': G.CANOPY_HEIGHT,
               'Globe Diameter': G.GLOBE_DIAMETER}
@@ -45,9 +48,34 @@ def within(value, target, tol):
     return isinstance(value, (int, float)) and abs(value - target) <= tol
 
 
+def elsewhere():
+    """Reports or RFAs written to another known checkout (explains a 'missing' file)."""
+    found = []
+    for root in KNOWN_ROOTS:
+        run = os.path.normpath(os.path.join(root, 'output', 'cassia'))
+        if run == RUN_DIR:
+            continue
+        for name in ('validation.json', RFA_NAME):
+            path = os.path.join(run, name)
+            if os.path.isfile(path):
+                stamp = datetime.datetime.utcfromtimestamp(os.path.getmtime(path)).isoformat() + 'Z'
+                found.append('%s (%d bytes, modified %s)' % (path, os.path.getsize(path), stamp))
+    return found
+
+
 def main():
+    print('run folder: ' + RUN_DIR)
     if not os.path.isfile(REPORT):
-        print('FAIL - validation.json missing; the builder never reached its first checkpoint')
+        print('FAIL - no validation.json in this run folder: the builder never started inside Revit here.')
+        other = elsewhere()
+        if other:
+            print('  but these were written in another checkout:')
+            for item in other:
+                print('    ' + item)
+        else:
+            print('  No Cassia report or RFA exists in the other known checkouts either.')
+            print('  Most likely `pyrevit run` failed to start its own Revit (0xe06d7363 on 2026-09-23);')
+            print('  use the in-Revit button instead - see README.md "If pyrevit run does not start".')
         return 1
     with open(REPORT) as handle:
         try:
