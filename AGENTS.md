@@ -55,6 +55,8 @@ User instruction, recorded 2026-09-18: **A dimensional tile's sculpted pattern m
 
 User instruction, recorded 2026-09-14: Every outputted final material or 3D model package must be uploaded to Google Drive under **3D Model Workflow** (folder ID `1Xsd3Y96SOi00cWNaxqYeqlp4tNe3Z8CD`).
 
+User instruction, recorded 2026-09-23: **always use `F:\My Drive\Revit Material Maps - 25-012 651 Belmont`** (Drive folder ID `136yDB5-9a1e-YB8lS4deeulSMhqIWZON`) as this repo's Google Drive destination. It supersedes the folder above. It is a flat folder of map files: put the maps and `.pat` files directly in it. A cloud session cannot reach `F:`, and the Drive connector only accepts file content inline, so from the cloud upload small text files (`.pat`) through the connector, verify their size, and hand the image maps to the user to save into the folder; never report them as uploaded.
+
 - File final model packages in **3D Models** and final material packages in **Material Packages** beneath that folder.
 - Preserve the local deliverables and include all required companion textures, setup notes, and native files in the uploaded package.
 - Check for an existing identical package before uploading to avoid duplicates. Clearly identify superseded revisions when retaining historical deliveries.
