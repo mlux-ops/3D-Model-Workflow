@@ -1,0 +1,162 @@
+{
+  "finish": "flat / vein-cut",
+  "method": "photo-based: roll + orientation-preserving flip + tone/warmth jitter of the single reference photo, per user direction 2026-09-20 (procedural vein synthesis tried and rejected as looking synthetic)",
+  "source": "05_new_flat_veincut.jpg",
+  "atlas_cells": [
+    3,
+    3
+  ],
+  "cell_physical_in": [
+    48.0625,
+    24.0625
+  ],
+  "atlas_physical_in": [
+    144.1875,
+    72.1875
+  ],
+  "pixels": [
+    9228,
+    4620
+  ],
+  "ppi": 64.0,
+  "allowed_transforms": "identity, horizontal flip, 180 rotation, vertical flip (orientation-preserving only - veins run horizontal)",
+  "reveal_rgb": [
+    209.0,
+    209.0,
+    209.0
+  ],
+  "reveal_band_in": 0.047,
+  "wrap_check": {
+    "lr_step": 0.0,
+    "tb_step": 0.0,
+    "typical_interior_step": 6.252669552669553
+  },
+  "cells": [
+    {
+      "cell": [
+        0,
+        0
+      ],
+      "source": "05_new_flat_veincut.jpg",
+      "transform": 2,
+      "roll_px": [
+        306,
+        1444
+      ],
+      "tone": 0.9828,
+      "warm": 0.0075
+    },
+    {
+      "cell": [
+        1,
+        0
+      ],
+      "source": "05_new_flat_veincut.jpg",
+      "transform": 0,
+      "roll_px": [
+        2312,
+        1133
+      ],
+      "tone": 1.0186,
+      "warm": 0.0017
+    },
+    {
+      "cell": [
+        2,
+        0
+      ],
+      "source": "05_new_flat_veincut.jpg",
+      "transform": 6,
+      "roll_px": [
+        1535,
+        49
+      ],
+      "tone": 0.9807,
+      "warm": -0.0041
+    },
+    {
+      "cell": [
+        0,
+        1
+      ],
+      "source": "05_new_flat_veincut.jpg",
+      "transform": 6,
+      "roll_px": [
+        1417,
+        1361
+      ],
+      "tone": 1.0043,
+      "warm": -0.0047
+    },
+    {
+      "cell": [
+        1,
+        1
+      ],
+      "source": "05_new_flat_veincut.jpg",
+      "transform": 6,
+      "roll_px": [
+        2358,
+        566
+      ],
+      "tone": 0.9994,
+      "warm": -0.0026
+    },
+    {
+      "cell": [
+        2,
+        1
+      ],
+      "source": "05_new_flat_veincut.jpg",
+      "transform": 6,
+      "roll_px": [
+        2445,
+        1247
+      ],
+      "tone": 0.9723,
+      "warm": -0.0073
+    },
+    {
+      "cell": [
+        0,
+        2
+      ],
+      "source": "05_new_flat_veincut.jpg",
+      "transform": 6,
+      "roll_px": [
+        96,
+        356
+      ],
+      "tone": 0.9805,
+      "warm": -0.0113
+    },
+    {
+      "cell": [
+        1,
+        2
+      ],
+      "source": "05_new_flat_veincut.jpg",
+      "transform": 6,
+      "roll_px": [
+        1132,
+        1029
+      ],
+      "tone": 1.0072,
+      "warm": 0.0059
+    },
+    {
+      "cell": [
+        2,
+        2
+      ],
+      "source": "05_new_flat_veincut.jpg",
+      "transform": 2,
+      "roll_px": [
+        2448,
+        1406
+      ],
+      "tone": 0.9785,
+      "warm": -0.0094
+    }
+  ]
+}

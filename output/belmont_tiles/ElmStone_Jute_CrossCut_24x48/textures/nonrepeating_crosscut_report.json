@@ -1,0 +1,167 @@
+{
+  "finish": "fluted / cross-cut",
+  "method": "photo-based: roll + orientation-preserving flip + tone/warmth jitter, drawing each cell from one of THREE real photo sources (the original swatch plus two crops of a perspective-corrected second real floor photo) rather than one -- see SOURCE_SELECTION.md",
+  "sources": [
+    "06_new_fluted_crosscut.webp",
+    "07_crop_tile1.jpg",
+    "07_crop_tile2.jpg",
+    "07_crop_tile3.jpg"
+  ],
+  "atlas_cells": [
+    3,
+    3
+  ],
+  "cell_physical_in": [
+    48.0625,
+    24.0625
+  ],
+  "atlas_physical_in": [
+    144.1875,
+    72.1875
+  ],
+  "pixels": [
+    9228,
+    4620
+  ],
+  "ppi": 64.0,
+  "allowed_transforms": "identity, horizontal flip, 180 rotation, vertical flip (90/270 skipped: would stretch the 2:1 panel aspect)",
+  "reveal_rgb": [
+    209.0,
+    209.0,
+    209.0
+  ],
+  "reveal_band_in": 0.047,
+  "wrap_check": {
+    "lr_step": 0.0,
+    "tb_step": 0.0,
+    "typical_interior_step": 3.656204906204906
+  },
+  "cells": [
+    {
+      "cell": [
+        0,
+        0
+      ],
+      "source": "06_new_fluted_crosscut.webp",
+      "transform": 6,
+      "roll_px": [
+        2625,
+        578
+      ],
+      "tone": 1.0211,
+      "warm": -0.0008
+    },
+    {
+      "cell": [
+        1,
+        0
+      ],
+      "source": "06_new_fluted_crosscut.webp",
+      "transform": 4,
+      "roll_px": [
+        1314,
+        1419
+      ],
+      "tone": 0.9758,
+      "warm": -0.0109
+    },
+    {
+      "cell": [
+        2,
+        0
+      ],
+      "source": "07_crop_tile1.jpg",
+      "transform": 4,
+      "roll_px": [
+        0,
+        0
+      ],
+      "tone": 1.0101,
+      "warm": 0.0057
+    },
+    {
+      "cell": [
+        0,
+        1
+      ],
+      "source": "07_crop_tile3.jpg",
+      "transform": 2,
+      "roll_px": [
+        0,
+        0
+      ],
+      "tone": 0.984,
+      "warm": 0.0106
+    },
+    {
+      "cell": [
+        1,
+        1
+      ],
+      "source": "07_crop_tile2.jpg",
+      "transform": 4,
+      "roll_px": [
+        0,
+        0
+      ],
+      "tone": 1.0078,
+      "warm": 0.0015
+    },
+    {
+      "cell": [
+        2,
+        1
+      ],
+      "source": "07_crop_tile1.jpg",
+      "transform": 2,
+      "roll_px": [
+        0,
+        0
+      ],
+      "tone": 1.0341,
+      "warm": -0.0082
+    },
+    {
+      "cell": [
+        0,
+        2
+      ],
+      "source": "06_new_fluted_crosscut.webp",
+      "transform": 6,
+      "roll_px": [
+        2480,
+        710
+      ],
+      "tone": 0.9653,
+      "warm": 0.0036
+    },
+    {
+      "cell": [
+        1,
+        2
+      ],
+      "source": "07_crop_tile3.jpg",
+      "transform": 6,
+      "roll_px": [
+        0,
+        0
+      ],
+      "tone": 0.9674,
+      "warm": -0.0068
+    },
+    {
+      "cell": [
+        2,
+        2
+      ],
+      "source": "07_crop_tile2.jpg",
+      "transform": 2,
+      "roll_px": [
+        0,
+        0
+      ],
+      "tone": 1.0084,
+      "warm": -0.0083
+    }
+  ]
+}
