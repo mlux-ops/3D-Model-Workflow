@@ -1,0 +1,508 @@
+{
+ "product": "ELM Surfaces ElmStone Fog Cross-Cut Chevron (Florim USA / MILE stone EcoStone Chevron Deco)",
+ "module_in": [
+  48.0,
+  24.0
+ ],
+ "joint_in": 0.0625,
+ "layout": "stacked grid",
+ "atlas_tiles": [
+  3,
+  4
+ ],
+ "atlas_in": [
+  144.0,
+  96.0
+ ],
+ "revit_sample_size": "12'-0\" x 8'-0\"",
+ "pixels": [
+  6144,
+  4096
+ ],
+ "px_per_in": 42.666666666666664,
+ "seed": 20260923,
+ "files": {
+  "ELM_Fog_CrossCut_Chevron_24x48_Color.png": {
+   "png_ihdr": [
+    6144,
+    4096,
+    8,
+    2
+   ],
+   "bytes": 41152079,
+   "sha256": "10e852d8d5e112ea391b0dd5e8c220326a286636f2528a68427fa1c6c1a8796d"
+  },
+  "ELM_Fog_CrossCut_Chevron_24x48_Bump16.png": {
+   "png_ihdr": [
+    6144,
+    4096,
+    16,
+    0
+   ],
+   "bytes": 46643705,
+   "sha256": "88dcc6360acb71b11ec3563e77e463219cff9d0ebc68ab36d66767734d2b7b43"
+  },
+  "ELM_Fog_CrossCut_Chevron_24x48_Roughness.png": {
+   "png_ihdr": [
+    6144,
+    4096,
+    8,
+    0
+   ],
+   "bytes": 10617650,
+   "sha256": "1f89485f5e99457e8c168c3e2746db6b22c363460cf90fbe63893b5096ea10dc"
+  }
+ },
+ "cells": [
+  {
+   "row": 0,
+   "col": 0,
+   "row_type": "A",
+   "face": "A0",
+   "rot180": false,
+   "groove_slab_offset_in": 0.0,
+   "lum_jitter": -0.0027272727272727275,
+   "warm_jitter": 0.001272727272727273,
+   "detail_gain_fine": 1.0756335139417799,
+   "detail_gain_mid": 1.1436061126430288
+  },
+  {
+   "row": 0,
+   "col": 1,
+   "row_type": "A",
+   "face": "F24",
+   "rot180": false,
+   "groove_slab_offset_in": 39.818,
+   "lum_jitter": 0.00490909090909091,
+   "warm_jitter": -0.0016363636363636363,
+   "detail_gain_fine": 0.8268957672810883,
+   "detail_gain_mid": 0.8273748926920124
+  },
+  {
+   "row": 0,
+   "col": 2,
+   "row_type": "A",
+   "face": "TL",
+   "rot180": false,
+   "groove_slab_offset_in": 48.048,
+   "lum_jitter": -0.0005454545454545452,
+   "warm_jitter": -0.0012727272727272726,
+   "detail_gain_fine": 0.9930628355525203,
+   "detail_gain_mid": 0.8755703869005358
+  },
+  {
+   "row": 1,
+   "col": 0,
+   "row_type": "B",
+   "face": "B0",
+   "rot180": false,
+   "groove_slab_offset_in": 0.0,
+   "lum_jitter": -0.0038181818181818182,
+   "warm_jitter": -0.00018181818181818164,
+   "detail_gain_fine": 1.0757747623960854,
+   "detail_gain_mid": 1.1206480495032562
+  },
+  {
+   "row": 1,
+   "col": 1,
+   "row_type": "B",
+   "face": "B48",
+   "rot180": false,
+   "groove_slab_offset_in": 48.0,
+   "lum_jitter": 0.003818181818181818,
+   "warm_jitter": -0.002,
+   "detail_gain_fine": 1.0774538425318752,
+   "detail_gain_mid": 1.0784071841433143
+  },
+  {
+   "row": 1,
+   "col": 2,
+   "row_type": "B",
+   "face": "BR",
+   "rot180": false,
+   "groove_slab_offset_in": 49.182,
+   "lum_jitter": 0.0005454545454545452,
+   "warm_jitter": 0.0016363636363636368,
+   "detail_gain_fine": 0.9992334813815448,
+   "detail_gain_mid": 0.9516904488509773
+  },
+  {
+   "row": 2,
+   "col": 0,
+   "row_type": "A",
+   "face": "TL",
+   "rot180": true,
+   "groove_slab_offset_in": 6.293,
+   "lum_jitter": -0.006,
+   "warm_jitter": -0.0009090909090909091,
+   "detail_gain_fine": 0.9984645961380896,
+   "detail_gain_mid": 0.8803379434643307
+  },
+  {
+   "row": 2,
+   "col": 1,
+   "row_type": "A",
+   "face": "A48",
+   "rot180": false,
+   "groove_slab_offset_in": 48.0,
+   "lum_jitter": -0.004909090909090909,
+   "warm_jitter": 0.0009090909090909093,
+   "detail_gain_fine": 0.9553175502831046,
+   "detail_gain_mid": 1.0048127688229103
+  },
+  {
+   "row": 2,
+   "col": 2,
+   "row_type": "A",
+   "face": "F24",
+   "rot180": true,
+   "groove_slab_offset_in": 21.039,
+   "lum_jitter": 0.0027272727272727275,
+   "warm_jitter": 0.002,
+   "detail_gain_fine": 0.8283936083005855,
+   "detail_gain_mid": 0.828894094036303
+  },
+  {
+   "row": 3,
+   "col": 0,
+   "row_type": "B",
+   "face": "BR",
+   "rot180": true,
+   "groove_slab_offset_in": 55.519,
+   "lum_jitter": 0.0016363636363636363,
+   "warm_jitter": 0.00018181818181818186,
+   "detail_gain_fine": 0.9983417627287807,
+   "detail_gain_mid": 0.9508218949660582
+  },
+  {
+   "row": 3,
+   "col": 1,
+   "row_type": "B",
+   "face": "B0",
+   "rot180": true,
+   "groove_slab_offset_in": 54.686,
+   "lum_jitter": 0.006,
+   "warm_jitter": -0.0005454545454545454,
+   "detail_gain_fine": 1.0653263516364482,
+   "detail_gain_mid": 1.1097639218408941
+  },
+  {
+   "row": 3,
+   "col": 2,
+   "row_type": "B",
+   "face": "B48",
+   "rot180": true,
+   "groove_slab_offset_in": 39.806,
+   "lum_jitter": -0.0016363636363636363,
+   "warm_jitter": 0.0005454545454545456,
+   "detail_gain_fine": 1.0829817415541854,
+   "detail_gain_mid": 1.083937475094261
+  }
+ ],
+ "faces": {
+  "A0": {
+   "note": "slab top half, x 0-48 in",
+   "source_rect_px": [
+    0,
+    0,
+    1946,
+    975
+   ],
+   "px_per_in": 40.541666666666664,
+   "planar_tilt_rel": [
+    -0.001703914148803914,
+    0.004116762318804024
+   ],
+   "mean_rgb_before_match": [
+    244.01232141697307,
+    239.62074849607586,
+    227.23754640809202
+   ]
+  },
+  "A48": {
+   "note": "slab top half, x 48-96 in",
+   "source_rect_px": [
+    1946,
+    0,
+    3892,
+    975
+   ],
+   "px_per_in": 40.541666666666664,
+   "planar_tilt_rel": [
+    0.006507195522253184,
+    0.001206025666997629
+   ],
+   "mean_rgb_before_match": [
+    243.83113645477636,
+    239.182313850119,
+    226.45203470699906
+   ]
+  },
+  "B0": {
+   "note": "slab bottom half, x 0-48 in",
+   "source_rect_px": [
+    0,
+    975,
+    1946,
+    1951
+   ],
+   "px_per_in": 40.541666666666664,
+   "planar_tilt_rel": [
+    0.0046757727103895344,
+    0.006938850586854175
+   ],
+   "mean_rgb_before_match": [
+    243.81672605422708,
+    239.3157151591893,
+    226.83207854918462
+   ]
+  },
+  "B48": {
+   "note": "slab bottom half, x 48-96 in",
+   "source_rect_px": [
+    1946,
+    975,
+    3892,
+    1951
+   ],
+   "px_per_in": 40.541666666666664,
+   "planar_tilt_rel": [
+    0.0013910238006923622,
+    0.0033671160097543036
+   ],
+   "mean_rgb_before_match": [
+    245.08737718812483,
+    240.71989039971956,
+    228.2002035583101
+   ]
+  },
+  "F24": {
+   "note": "ELM Fog Cross-Cut 24x48 swatch",
+   "source_rect_px": [
+    0,
+    0,
+    1890,
+    945
+   ],
+   "px_per_in": 39.375,
+   "planar_tilt_rel": [
+    0.006997321275726246,
+    0.004150402555506202
+   ],
+   "mean_rgb_before_match": [
+    239.94215012834837,
+    234.7530722570638,
+    220.0041983328449
+   ]
+  },
+  "TL": {
+   "note": "MILE stone panel, top-left full tile",
+   "source_rect_px": [
+    0,
+    0,
+    2395,
+    1195
+   ],
+   "px_per_in": 49.895833333333336,
+   "planar_tilt_rel": [
+    -0.0030858906233839425,
+    -0.0026404991497784407
+   ],
+   "mean_rgb_before_match": [
+    242.20275998860686,
+    236.99567547637875,
+    222.38901673096353
+   ]
+  },
+  "BR": {
+   "note": "MILE stone panel, bottom-right full tile",
+   "source_rect_px": [
+    1203,
+    1203,
+    3600,
+    2400
+   ],
+   "px_per_in": 49.9375,
+   "planar_tilt_rel": [
+    -0.0018066509119125033,
+    -0.0015749212008030866
+   ],
+   "mean_rgb_before_match": [
+    240.62326708701477,
+    235.46682191326678,
+    221.27053170075064
+   ]
+  }
+ },
+ "target_mean_rgb": [
+  244.34173020940847,
+  239.81746631081094,
+  227.204445510349
+ ],
+ "degroove": {
+  "spines_refined": [
+   0,
+   309,
+   647,
+   975,
+   1265,
+   1626,
+   1951
+  ],
+  "beta_per_band_rgb": [
+   [
+    1.0527509922685632,
+    1.101325796718421,
+    1.1198140862177162
+   ],
+   [
+    1.0427662629516568,
+    1.0940647514835928,
+    1.1125298089416085
+   ],
+   [
+    1.055829417347403,
+    1.1059616179077374,
+    1.1264850034260239
+   ],
+   [
+    1.058216847260682,
+    1.1065808778760604,
+    1.127936881439949
+   ],
+   [
+    1.0379095382879266,
+    1.096340299158652,
+    1.1201161799463109
+   ],
+   [
+    1.061589004958078,
+    1.102669672898055,
+    1.1186196140577884
+   ]
+  ],
+  "profile_std_per_band": [
+   3.0830603083423824,
+   3.1039673824827063,
+   3.0123463629265004,
+   3.059714919502602,
+   2.947477991943507,
+   2.945410514836586
+  ],
+  "removed_std_rgb": [
+   3.1970560615648465,
+   3.348581309720725,
+   3.40875542883406
+  ],
+  "band_of_row_check": 5,
+  "registration_lowpass_r_vs_elm_swatch": 0.9951020861838951,
+  "groove_band_energy_raw": 0.1455005886183502,
+  "groove_band_energy_degrooved": 0.08062966692431686,
+  "groove_band_energy_groove_free_render": 0.03892497814161659
+ },
+ "detail_harmonisation": {
+  "fine_std_per_face": {
+   "A0": 4.871921365848932,
+   "A48": 5.497806084559739,
+   "B0": 4.877558354985371,
+   "B48": 4.834049558302832,
+   "F24": 6.291372563990198,
+   "TL": 5.267271376262093,
+   "BR": 5.22699324887318
+  },
+  "mid_std_per_face": {
+   "A0": 3.1229160631633084,
+   "A48": 3.5622505867448973,
+   "B0": 3.19100243692789,
+   "B48": 3.2915489173957577,
+   "F24": 4.285105679357898,
+   "TL": 4.071320735797251,
+   "BR": 3.7402930522374587
+  },
+  "fine_target": 5.22699324887318,
+  "mid_target": 3.5622505867448973
+ },
+ "profile_norm_p1_p90": [
+  [
+   -6.479407920624541,
+   3.0714392529337187
+  ],
+  [
+   -6.657960483327577,
+   3.078070731691258
+  ],
+  [
+   -6.490594388346876,
+   3.0047041385588593
+  ],
+  [
+   -6.4246229988352805,
+   3.1227016098470077
+  ],
+  [
+   -6.320665734234723,
+   3.0497544675375408
+  ],
+  [
+   -6.172480580858016,
+   2.901112357113639
+  ]
+ ],
+ "band_line_deg": [
+  130.4,
+  49.36,
+  131.67,
+  49.58,
+  130.48,
+  49.32
+ ],
+ "band_pitch_px": [
+  7.58,
+  8.155,
+  7.846,
+  7.579,
+  8.38,
+  7.55
+ ],
+ "spines_px": [
+  0,
+  309,
+  647,
+  975,
+  1265,
+  1626,
+  1951
+ ],
+ "relief": {
+  "height_range_mm": 1.7,
+  "grout_floor_mm": 0.0,
+  "grout_floor_max_mm": 0.0,
+  "tile_plane_mm_nominal": 1.5,
+  "tile_plane_mm_realised_p90": 1.4987548638132295,
+  "grout_step_mm": 1.4987548638132295,
+  "groove_depth_mm_nominal_at_p1_floor": 0.8,
+  "groove_relief_mm_realised_p90_minus_p1": 0.7984695201037614,
+  "deepest_face_point_mm": 0.5657846952010376,
+  "deepest_face_point_below_plane_mm": 0.9342153047989624,
+  "clearance_above_grout_floor_mm": 0.5657846952010376,
+  "highest_point_mm": 1.598054474708171,
+  "micro_relief_mm": 0.02,
+  "edge_ease_mm": [
+   0.3,
+   1.5
+  ],
+  "groove_colour_darkening_at_floor": 0.03942605184993683
+ },
+ "roughness": {
+  "face": 0.62,
+  "groove_floor_add": 0.06,
+  "grout": 0.9,
+  "realised_face_mean": 0.6394658825194892
+ },
+ "sources": {
+  "references/candidates/MILE_stone_EcoStone_Fog_CrossCut_ChevronDeco_48x110_01.jpg": "def643af935f7183a3a6c3138ba752a08ba27ac5f325df8fcf93af1b6ac73b72",
+  "references/candidates/6508c8490fee3dfe7508423d_ElmStone_Fog_Cross-Cut_Chevron-Deco_48x110_01.jpg": "fa59538559dad00c212e25c660e077bc7be4cffc4a8945ba57e60019cef499a8",
+  "references/candidates/6508c8490fee3dfe75084232_ELMStone_Fog_Cross_Cut_24x48_03.jpg": "7cdaa01d4ad58ee0e2201729f7cfbcde90d7addfb167dba694dacdc8cf6e7ff9",
+  "references/candidates/MILE_stone_EcoStone_Cross-Cut_Fog_24x48_Panel.jpg": "7d6fe7afcaca41c56f71cea62626b1b5e0fb61e38b4b5bbebed4e3df88131ce6"
+ }
+}

@@ -1,0 +1,251 @@
+{
+ "product": "ELM_Fog_CrossCut_Chevron_24x48",
+ "gates": {
+  "png_headers": {
+   "ihdr": {
+    "Color": [
+     6144,
+     4096,
+     8,
+     2
+    ],
+    "Bump16": [
+     6144,
+     4096,
+     16,
+     0
+    ],
+    "Roughness": [
+     6144,
+     4096,
+     8,
+     0
+    ]
+   },
+   "passed": true
+  },
+  "aspect_equals_sample_size": {
+   "px_per_in": [
+    42.666666666666664,
+    42.666666666666664
+   ],
+   "sample_size_in": [
+    144.0,
+    96.0
+   ],
+   "revit": "12'-0\" x 8'-0\"",
+   "passed": true
+  },
+  "registration_grout_core": {
+   "core_px": 73680,
+   "colour_match": 1.0,
+   "rough_match": 1.0,
+   "passed": true
+  },
+  "joint_grid": {
+   "joint_cols": [
+    0,
+    2047,
+    2048,
+    4095,
+    4096,
+    6143
+   ],
+   "joint_rows": [
+    0,
+    1023,
+    1024,
+    2047,
+    2048,
+    3071,
+    3072,
+    4095
+   ],
+   "expected_cols": [
+    0,
+    2047,
+    2048,
+    4095,
+    4096,
+    6143
+   ],
+   "expected_rows": [
+    0,
+    1023,
+    1024,
+    2047,
+    2048,
+    3071,
+    3072,
+    4095
+   ],
+   "passed": true
+  },
+  "wrap_seamless": {
+   "Color": {
+    "left_right_max_step": 0,
+    "top_bottom_max_step": 0,
+    "interior_joint_step": 0
+   },
+   "Bump16": {
+    "left_right_max_step": 0,
+    "top_bottom_max_step": 0,
+    "interior_joint_step": 0
+   },
+   "Roughness": {
+    "left_right_max_step": 0,
+    "top_bottom_max_step": 0,
+    "interior_joint_step": 0
+   },
+   "passed": true
+  },
+  "dimensional_relief": {
+   "grout_floor_mm": 0.0,
+   "tile_plane_mm_p90": 1.4987548638132295,
+   "grout_step_mm": 1.4987548638132295,
+   "groove_relief_mm_p90_minus_p1": 0.7984176394293125,
+   "deepest_face_point_mm": 0.5657846952010376,
+   "clearance_above_grout_floor_mm": 0.5657846952010376,
+   "max_height_mm": 1.598054474708171,
+   "bump_unique_levels": 43346,
+   "passed": true
+  },
+  "groove_directions": {
+   "line_angle_peaks_deg": [
+    48.5,
+    130.5
+   ],
+   "passed": true
+  },
+  "colour_value_matches_swatch": {
+   "swatch_mean": [
+    244.34284637290753,
+    239.81864422752045,
+    227.20565100569328
+   ],
+   "atlas_face_mean": [
+    244.09221463897225,
+    239.72325266426017,
+    227.18465508567144
+   ],
+   "max_rel_dev": 0.0010569720722666664,
+   "passed": true
+  },
+  "tile_tone_spread": {
+   "cell_luminance": [
+    239.34,
+    240.86,
+    239.59,
+    238.96,
+    240.71,
+    240.08,
+    238.35,
+    238.74,
+    240.47,
+    240.29,
+    241.1,
+    239.43
+   ],
+   "rel_spread": 0.011482468905396927,
+   "passed": true
+  },
+  "tile_fine_detail_consistent": {
+   "fine_band_std": [
+    5.23,
+    5.16,
+    5.07,
+    5.27,
+    5.19,
+    5.03,
+    5.1,
+    5.28,
+    5.17,
+    5.03,
+    5.1,
+    5.15
+   ],
+   "max_over_min": 1.0495347280198912,
+   "passed": true
+  },
+  "repeat_faces_not_adjacent": {
+   "same_face_pairs": [
+    {
+     "a": [
+      0,
+      1
+     ],
+     "b": [
+      2,
+      2
+     ],
+     "ncc": 0.861,
+     "adjacent": false
+    },
+    {
+     "a": [
+      0,
+      2
+     ],
+     "b": [
+      2,
+      0
+     ],
+     "ncc": 0.866,
+     "adjacent": false
+    },
+    {
+     "a": [
+      1,
+      0
+     ],
+     "b": [
+      3,
+      1
+     ],
+     "ncc": 0.797,
+     "adjacent": false
+    },
+    {
+     "a": [
+      1,
+      1
+     ],
+     "b": [
+      3,
+      2
+     ],
+     "ncc": 0.684,
+     "adjacent": false
+    },
+    {
+     "a": [
+      1,
+      2
+     ],
+     "b": [
+      3,
+      0
+     ],
+     "ncc": 0.844,
+     "adjacent": false
+    }
+   ],
+   "distinct_faces": 7,
+   "passed": true
+  },
+  "model_pattern_registers": {
+   "units": "INCH",
+   "type": "MODEL",
+   "name": "ELM_Fog_CrossCut_Chevron_24x48_Landscape",
+   "description": "ELM Fog Chevron 48x24 landscape",
+   "pattern_pixels": 36852,
+   "pattern_pixels_on_joint_frac": 1.0,
+   "joint_lines_found": 14,
+   "joint_line_coverage_min": 1.0,
+   "pass": true,
+   "passed": true
+  }
+ },
+ "failed": [],
+ "all_passed": true
+}

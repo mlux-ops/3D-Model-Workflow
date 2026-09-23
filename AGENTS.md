@@ -16,6 +16,16 @@ Existing discipline-specific conventions remain in [WORKFLOW.md](WORKFLOW.md).
 
 User instruction, recorded 2026-09-18: An `.adsklib` with its required companion textures and setup notes is sufficient for material delivery. Individual Revit projects (`.rvt`) are not required when the library is provided; do not produce them by default. Temporary projects may be used for creation or validation. Deliver an RVT only when specifically requested or needed because no ADSKLIB is provided.
 
+## Tile model patterns
+
+User instruction, recorded 2026-09-23: **Every tile comes with a Revit model pattern to load and tie to the material**, so the grout lines can be grabbed and moved in the model. Applies to every tile texture, material package and revision from now on, including texture-only deliveries.
+
+- Ship a `.pat` with `;%UNITS=INCH` and `;%TYPE=MODEL` whose lines are the grout-joint centrelines of the delivered texture: the same module (tile + joint), the same layout and offset, origin on a joint intersection, so it registers with the texture at its Sample Size.
+- Verify before delivery: parse the `.pat` independently, rasterise it over the texture extent and confirm every pattern line lies on a joint and every joint carries a line. ASCII, CRLF, lines of 80 characters or fewer.
+- Include setup notes: import through Manage > Additional Settings > Fill Patterns > Model > New > Custom > Import at scale 1.00, assign it under the material's Graphics > Surface Pattern, then use Texture Alignment so the render appearance sits on the pattern lines.
+- Where tile orientation is a design choice, also ship the rotated variant (for example portrait) and state its Sample Size.
+- Generator and validator precedent: `output/elm_fog_cross_cut_chevron_24x48/source/make_model_pattern.py` (stacked and running bond). Add hexagon or herringbone line families there and validate them the same way.
+
 ## Mandatory material appearance standard
 
 ### Revit material delivery — mandatory format

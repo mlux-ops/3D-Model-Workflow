@@ -40,6 +40,16 @@ Standing user instruction — 2026-09-18: **V-Ray assets are produced on request
 3. Inspect in the target native application/renderer with neutral and grazing light. Confirm actual map bindings, scale, orientation, highlights, bump/normal response, and absence of visible seams or repeated blocks. File-open success and a flat preview are separate checks, not a rendered appearance pass.
 4. Record the material ID, source-face count, variation method/seed, physical atlas size, tested surface size, preview/render evidence, and pass/fail/pending result. Both seamlessness and non-repetition must pass before final delivery. If rendering is unavailable, label that gate pending.
 5. For a dimensional tile, review the sculpted pattern's relief specifically, under grazing light, and record the pattern relief, the grout step and the clearance between them in millimetres. A pattern that does not read at a glancing angle fails this gate even when every map statistic passes.
+6. For every tile, confirm the delivered Revit model pattern (`.pat`) registers with the texture: every pattern line on a grout joint, every joint carrying a line, at the stated Sample Size. Standing user instruction, 2026-09-23.
+
+### Tile model patterns
+
+Standing user instruction — 2026-09-23: **every tile ships with a Revit model fill pattern** that can be loaded and tied to its material, so the grout lines can be selected and moved in the model. This applies to texture-only deliveries as well as material packages.
+
+- The pattern's lines are the grout-joint centrelines of the texture: module = tile + joint, the texture's own layout and offset, inch units (`;%UNITS=INCH`), `;%TYPE=MODEL`, origin on a joint intersection.
+- The texture keeps half a joint on each outer edge, so its joints fall on the module grid and a pattern with its origin on a joint intersection lines up at any whole number of repeats.
+- Validate with an independent parser and rasteriser against the bump or colour grout mask, including the wrap (the last column or row of a seamless atlas is the other half of the joint drawn at x = 0 or y = 0). Precedent: `output/elm_fog_cross_cut_chevron_24x48/source/make_model_pattern.py`.
+- Setup notes: import at scale 1.00 under Manage > Additional Settings > Fill Patterns > Model; assign it as the material's Graphics > Surface Pattern (Foreground); align the render appearance with Texture Alignment.
 
 Belmont baseline review: [2026-09-17 tile review](docs/reference-reviews/belmont-tiles-2026-09-17.md). The original six materials are superseded by [corrected R2](output/belmont_preferred_bath2_bath3_r2/REVIEW.md): varied layouts, seamless map boundaries and native bindings verified; full production optical acceptance remains pending. The default preferred-tile build entry point now uses the R2 generator.
 
