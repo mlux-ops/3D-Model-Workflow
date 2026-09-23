@@ -55,6 +55,7 @@ Belmont baseline review: [2026-09-17 tile review](docs/reference-reviews/belmont
 - Preserve manufacturer source files. Generated families are independent outputs, not copies renamed as new work.
 - Finishes use Revit appearance assets and an editable material parameter.
 - Prioritize silhouette, component proportions, and smooth profile transitions before adding small seams, rings, or other undimensioned details.
+- Before mirroring paired fixture geometry, inventory the visible parts on the left and right from every supplied view. Mark each mount, junction-box plate, clip, ferrule, support, cord exit, and end detail as present, absent, or obscured. Mirror only components whose bilateral presence is supported by the references; a pair of arms does not establish a pair of wall attachments.
 - Treat numerical/Revit validation and visual fidelity as separate acceptance checks. A loadable family with correct overall dimensions can still have visibly wrong component shapes.
 
 ## Pilot: KOHLER Purist K-T14489-4
@@ -83,6 +84,8 @@ See [Purist screenshot review](docs/reference-reviews/purist-2026-09-04/REVIEW.m
 Open the saved family in Revit 2025, inspect solid bounds and material binding, load into a disposable native project, place on a wall face, confirm orientation/projection, test changing the finish parameter, and export review views. Do not describe a preview or generator script as a finished RFA.
 
 Also assess front/side/oblique silhouettes, component ratios, shoulder and cap profiles, plate curvature, and material response. State which details remain inferred. A successful technical check is not a substitute for this visual review.
+
+For asymmetrical fixtures, compare each side of the native front and oblique previews against the source and count the side-specific mounting and termination components. Record any part hidden by the reference view as uncertain instead of filling it in by symmetry. The 2026-09-23 House of Troy review caught an extra rectangular wall attachment on the left that dimensional validation could not detect.
 
 ## Tris lighting fixture
 
