@@ -1,5 +1,9 @@
 # Project memory and error logging
 
+## Stalls and retries
+
+User instruction, recorded 2026-09-22: **If work or a tool is stalling, tell the user promptly instead of repeatedly retrying or polling without meaningful progress.** State what is stalled, how long it has been stalled, and the last verified stage. Do not make repeated attempts at the same action without new evidence or a changed approach. Continue independent work when possible, and report any remaining blocker clearly.
+
 User instruction, recorded 2026-09-11: **Every time there is an error, log it in the project memory along with its solution.** This applies to all work in this project, including tool errors, failed commands, application import failures, incorrect outputs, and failed validation.
 
 - Read [PROJECT_MEMORY.md](PROJECT_MEMORY.md) before starting work and apply its relevant lessons.
