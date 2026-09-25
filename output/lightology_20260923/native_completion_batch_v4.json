@@ -1,0 +1,30 @@
+[
+  {
+    "started_utc": "2026-09-24T03:20:41.915000Z", 
+    "fixture": "F01", 
+    "returned": true
+  }, 
+  {
+    "started_utc": "2026-09-24T03:20:55.780000Z", 
+    "error": "Traceback (most recent call last):\n  File \"E:\\Claude\\3D-Model-Workflow\\output\\lightology_20260923\\tools\\run_completion_batch_v4.py\", line 8, in <module>\n    try:execfile(path,{'__file__':path,'__name__':'__main__','__revit__':__revit__});row['returned']=True\n  File \"E:\\Claude\\3D-Model-Workflow\\output\\lightology_20260923\\f07_833919\\build_nodes_payload_expanded.py\", line 677, in <module>\n    raise RuntimeError('Gate failures: ' + json.dumps(REPORT['failed_gates']))\nRuntimeError: Gate failures: {\"brass\": [\"published_and_inferred_geometry_measures\", \"placed_envelope_measures\"], \"black\": [\"published_and_inferred_geometry_measures\", \"placed_envelope_measures\"]}\n", 
+    "fixture": "F07", 
+    "returned": false
+  }, 
+  {
+    "started_utc": "2026-09-24T03:21:09.993000Z", 
+    "error": "Traceback (most recent call last):\n  File \"E:\\Claude\\3D-Model-Workflow\\output\\lightology_20260923\\tools\\run_completion_batch_v4.py\", line 8, in <module>\n    try:execfile(path,{'__file__':path,'__name__':'__main__','__revit__':__revit__});row['returned']=True\n  File \"E:\\Claude\\3D-Model-Workflow\\output\\lightology_20260923\\f09_1254269\\build_madame.py\", line 32, in <module>\n    f.cylinder('Recessed lamp face',xyz(0,0,front_z),DB.XYZ.BasisY,1.03,.11,.20,optic,.035)\n  File \"E:\\Claude\\3D-Model-Workflow\\output\\lightology_20260923\\tools\\native_fixture_support.py\", line 162, in cylinder\n    def cylinder(self,name,origin,axis,r,a,b,material,rounding=0):return self.add(name,cylinder_solid(origin,axis,r,a,b,rounding),material)\n  File \"E:\\Claude\\3D-Model-Workflow\\output\\lightology_20260923\\tools\\native_fixture_support.py\", line 51, in cylinder_solid\n    return revolve_solid(origin,axis,p)\n  File \"E:\\Claude\\3D-Model-Workflow\\output\\lightology_20260923\\tools\\native_fixture_support.py\", line 44, in revolve_solid\n    return DB.GeometryCreationUtilities.CreateRevolvedGeometry(frame,List[DB.CurveLoop]([loop(origin,radial,axis,profile)]),0,math.pi*2)\n  File \"E:\\Claude\\3D-Model-Workflow\\output\\lightology_20260923\\tools\\native_fixture_support.py\", line 27, in loop\n    result.Append(DB.Line.CreateBound(at(current),at(end)))\nException: Curve length is too small for Revit's tolerance (as identified by Application.ShortCurveTolerance).\r\nParameter name: endpoints\n", 
+    "fixture": "F09", 
+    "returned": false
+  }, 
+  {
+    "started_utc": "2026-09-24T03:21:10.399000Z", 
+    "error": "Traceback (most recent call last):\n  File \"E:\\Claude\\3D-Model-Workflow\\output\\lightology_20260923\\tools\\run_completion_batch_v4.py\", line 8, in <module>\n    try:execfile(path,{'__file__':path,'__name__':'__main__','__revit__':__revit__});row['returned']=True\n  File \"E:\\Claude\\3D-Model-Workflow\\output\\lightology_20260923\\f11_1476233\\build_mizu.py\", line 40, in <module>\n    raw=drop_solid(seed)\n  File \"E:\\Claude\\3D-Model-Workflow\\output\\lightology_20260923\\f11_1476233\\build_mizu.py\", line 23, in drop_solid\n    return DB.GeometryCreationUtilities.CreateLoftGeometry(List[DB.CurveLoop](loops),DB.SolidOptions(DB.ElementId.InvalidElementId,DB.ElementId.InvalidElementId))\nException: Failed to generate the requested loft geometry. One possible reason was that the loft generated a self-intersection because the profiles were not correctly ordered or some other invalid input.\n", 
+    "fixture": "F11", 
+    "returned": false
+  }, 
+  {
+    "started_utc": "2026-09-24T03:21:10.934000Z", 
+    "fixture": "F10", 
+    "returned": true
+  }
+]

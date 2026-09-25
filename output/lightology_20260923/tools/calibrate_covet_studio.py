@@ -1,0 +1,5 @@
+from pathlib import Path
+p=Path(__file__).resolve().parents[1]/'tools'/'render_native_studio.py'
+s=p.read_text()
+s=s.replace("        diagnostics=[]\n","        if row['folder'].startswith('f10'):\n            scene.view_settings.exposure=-1.5\n        material_diag=[]\n        for mat in materials.values():\n            material_diag.append({'name':mat.name,'nodes':[{'type':n.type,'image':n.image.filepath if n.type=='TEX_IMAGE' and n.image else None,'size':list(n.image.size) if n.type=='TEX_IMAGE' and n.image else None} for n in mat.node_tree.nodes],'links':[(l.from_node.type,l.from_socket.name,l.to_node.type,l.to_socket.name) for l in mat.node_tree.links]})\n        (target.parent/(row['name']+'_StudioMaterials.json')).write_text(json.dumps(material_diag,indent=2))\n        diagnostics=[]\n")
+p.write_text(s)

@@ -1,0 +1,654 @@
+{
+  "template_exists": true, 
+  "finished_utc": "2026-09-24T03:21:09.808000Z", 
+  "assignment_url": "https://www.lightology.com/index.php?module=prod_detail&prod_id=833919&option_id=833918", 
+  "started_utc": "2026-09-24T03:20:55.822000Z", 
+  "stage": "failed", 
+  "template": "C:\\ProgramData\\Autodesk\\RVT 2025\\Family Templates\\English-Imperial\\Generic Model face based.rft", 
+  "revit_build": "25.4.50.35", 
+  "technical_pass": false, 
+  "published_dimensions_in": {
+    "shade_axial_height": 3.25, 
+    "backplate_depth": 0.125, 
+    "overall_width": 8.0, 
+    "shade_diameter": 3.5, 
+    "overall_projection": 5.5, 
+    "overall_height": 7.6299999999999999, 
+    "backplate_diameter": 5.25
+  }, 
+  "fixture": "Nodes Angled Wall Sconce", 
+  "designer": "Kelly Wearstler", 
+  "run_stamp_utc": "20260924T032055Z", 
+  "updated_utc": "2026-09-24T03:21:09.969000Z", 
+  "error": "Traceback (most recent call last):\n  File \"E:\\Claude\\3D-Model-Workflow\\output\\lightology_20260923\\f07_833919\\build_nodes_payload_expanded.py\", line 677, in <module>\n    raise RuntimeError('Gate failures: ' + json.dumps(REPORT['failed_gates']))\nRuntimeError: Gate failures: {\"brass\": [\"published_and_inferred_geometry_measures\", \"placed_envelope_measures\"], \"black\": [\"published_and_inferred_geometry_measures\", \"placed_envelope_measures\"]}\n", 
+  "manufacturer": "Visual Comfort Studio", 
+  "product_family": "KW1041", 
+  "failed_gates": {
+    "brass": [
+      "published_and_inferred_geometry_measures", 
+      "placed_envelope_measures"
+    ], 
+    "black": [
+      "published_and_inferred_geometry_measures", 
+      "placed_envelope_measures"
+    ]
+  }, 
+  "configs": {
+    "brass": {
+      "placed_bbox_dimensions_sorted_in": [
+        5.5492611415307538, 
+        7.6331734899112291, 
+        7.8784620240976722
+      ], 
+      "type_name": "KW1041BBS - Burnished Brass / Milk", 
+      "overall_from_family_bounds_in": {
+        "projection": 5.5492611415307520, 
+        "height": 7.6331734899112273, 
+        "width": 7.8784620240976722
+      }, 
+      "finished_utc": "2026-09-24T03:21:03.333000Z", 
+      "sku": "VCS833918", 
+      "finish": "Burnished Brass", 
+      "placement": "WorkPlaneBased", 
+      "gates": {
+        "fresh_rfa_reopen": true, 
+        "actual_native_wall_face_host": true, 
+        "published_and_inferred_geometry_measures": false, 
+        "material_substitution_reaches_geometry": true, 
+        "zero_warnings": true, 
+        "front_side_oblique_material_hosted_exports": true, 
+        "lighting_fixture_category": true, 
+        "face_based_placement": true, 
+        "placed_envelope_measures": false
+      }, 
+      "category": "Lighting Fixtures", 
+      "evidence_files": [
+        "Nodes_KW1041BBS - 3D View - Nodes_KW1041BBS Front.png", 
+        "Nodes_KW1041BBS - 3D View - Nodes_KW1041BBS Material.png", 
+        "Nodes_KW1041BBS - 3D View - Nodes_KW1041BBS Oblique.png", 
+        "Nodes_KW1041BBS - 3D View - Nodes_KW1041BBS Side.png", 
+        "Nodes_KW1041BBS_Hosted - 3D View - Nodes_KW1041BBS Hosted Oblique.png"
+      ], 
+      "family_warnings": [], 
+      "placed_dimension_checks": {
+        "contains_5_5_projection": true, 
+        "contains_7_63_height": true, 
+        "contains_8_0_width": false
+      }, 
+      "technical_pass": false, 
+      "rfa_mtime_utc": "2026-09-24T03:20:56Z", 
+      "globe_cross_segments": [
+        {
+          "length": 3.4999999999999982, 
+          "from": [
+            -1.7499999999999996, 
+            -0.65511602807488845, 
+            3.8362398145457255
+          ], 
+          "to": [
+            1.7499999999999991, 
+            -0.65511602807488845, 
+            3.8362398145457255
+          ]
+        }
+      ], 
+      "generated_parts": [
+        {
+          "name": "Round backplate", 
+          "id": "3226"
+        }, 
+        {
+          "name": "Tapered wall housing", 
+          "id": "3227"
+        }, 
+        {
+          "name": "Angled 8 inch reflector disc", 
+          "id": "3228"
+        }, 
+        {
+          "name": "Angled socket collar", 
+          "id": "3229"
+        }, 
+        {
+          "name": "Milk glass globe shade", 
+          "id": "3230"
+        }
+      ], 
+      "dimension_checks": {
+        "backplate_depth": {
+          "pass": true, 
+          "measured_in": 0.125, 
+          "tolerance_in": 0.040000000000000001, 
+          "target_in": 0.125, 
+          "method": "Backplate element Z bounding extent"
+        }, 
+        "reflector_projected_height": {
+          "pass": true, 
+          "measured_in": 7.6331734899112265, 
+          "tolerance_in": 0.040000000000000001, 
+          "target_in": 7.6299999999999999, 
+          "method": "Tilted 8-inch circular reflector projected to wall-plane Y"
+        }, 
+        "reflector_width": {
+          "pass": false, 
+          "measured_in": 7.8784620240976722, 
+          "tolerance_in": 0.040000000000000001, 
+          "target_in": 8.0, 
+          "method": "Tilted reflector element X bounding extent"
+        }, 
+        "backplate_diameter_y": {
+          "pass": true, 
+          "measured_in": 5.2500000000000009, 
+          "tolerance_in": 0.040000000000000001, 
+          "target_in": 5.25, 
+          "method": "Backplate element Y bounding extent"
+        }, 
+        "overall_width": {
+          "pass": false, 
+          "measured_in": 7.8784620240976722, 
+          "tolerance_in": 0.040000000000000001, 
+          "target_in": 8.0, 
+          "method": "All generated FreeFormElement bounding boxes, X extent"
+        }, 
+        "shade_axial_height_ray": {
+          "pass": true, 
+          "measured_in": 3.2499999999999991, 
+          "tolerance_in": 0.040000000000000001, 
+          "target_in": 3.25, 
+          "method": "Solid.IntersectWithCurve along socket/globe axis from clipped back to front"
+        }, 
+        "backplate_diameter_x": {
+          "pass": true, 
+          "measured_in": 5.2500000000000009, 
+          "tolerance_in": 0.040000000000000001, 
+          "target_in": 5.25, 
+          "method": "Backplate element X bounding extent"
+        }, 
+        "overall_projection": {
+          "pass": true, 
+          "measured_in": 5.5492611415307520, 
+          "tolerance_in": 0.050000000000000003, 
+          "target_in": 5.5, 
+          "method": "All generated FreeFormElement bounding boxes, Z extent"
+        }, 
+        "overall_height": {
+          "pass": true, 
+          "measured_in": 7.6331734899112273, 
+          "tolerance_in": 0.040000000000000001, 
+          "target_in": 7.6299999999999999, 
+          "method": "All generated FreeFormElement bounding boxes, Y extent"
+        }, 
+        "shade_diameter_ray": {
+          "pass": true, 
+          "measured_in": 3.4999999999999982, 
+          "tolerance_in": 0.040000000000000001, 
+          "target_in": 3.5, 
+          "method": "Solid.IntersectWithCurve through maximum globe section, perpendicular to socket axis"
+        }
+      }, 
+      "rfa_path": "E:\\Claude\\3D-Model-Workflow\\output\\lightology_20260923\\f07_833919\\Visual_Comfort_Nodes_KW1041BBS_Burnished_Brass_R2025.rfa", 
+      "rfa_bytes": 479232, 
+      "option_url": "https://www.lightology.com/index.php?module=prod_detail&prod_id=833919&option_id=833918", 
+      "started_utc": "2026-09-24T03:20:55.845000Z", 
+      "placed_bbox_dimensions_in": [
+        7.8784620240976722, 
+        5.5492611415307538, 
+        7.6331734899112291
+      ], 
+      "project_warnings": [], 
+      "globe_axial_segments": [
+        {
+          "length": 3.2499999999999991, 
+          "from": [
+            0.0, 
+            -0.19159053651246744, 
+            2.4096550401029955
+          ], 
+          "to": [
+            0.0, 
+            -1.1958957682310463, 
+            5.5005887180622430
+          ]
+        }
+      ], 
+      "visual_verdict": "PENDING SELF/PRIME REVIEW - native exports produced; source comparison remains a separate gate", 
+      "part_bounds_in": {
+        "backplate": {
+          "max": [
+            2.6250000000000004, 
+            2.6250000000000004, 
+            0.125
+          ], 
+          "size": [
+            5.2500000000000009, 
+            5.2500000000000009, 
+            0.125
+          ], 
+          "min": [
+            -2.6250000000000004, 
+            -2.6250000000000004, 
+            0.0
+          ]
+        }, 
+        "socket": {
+          "max": [
+            0.29444863728671289, 
+            0.31254362073723163, 
+            2.5609686143650645
+          ], 
+          "size": [
+            0.58889727457342445, 
+            0.83521879764942797, 
+            0.83521879764942397
+          ], 
+          "min": [
+            -0.2944486372867115, 
+            -0.52267517691219645, 
+            1.7257498167156409
+          ]
+        }, 
+        "globe": {
+          "max": [
+            1.7500000000000053, 
+            1.0615683976685304, 
+            5.5492611415307520
+          ], 
+          "size": [
+            3.5000000000000089, 
+            3.4258537789080652, 
+            3.4181502559799180
+          ], 
+          "min": [
+            -1.7500000000000038, 
+            -2.3642853812395348, 
+            2.1311108855508341
+          ]
+        }, 
+        "housing": {
+          "max": [
+            2.3000000000000007, 
+            2.2423341980181957, 
+            1.8200000000000003
+          ], 
+          "size": [
+            4.6000000000000014, 
+            4.484668396036394, 
+            1.6950000000000005
+          ], 
+          "min": [
+            -2.3000000000000007, 
+            -2.2423341980181974, 
+            0.125
+          ]
+        }, 
+        "reflector": {
+          "max": [
+            3.9392310120488370, 
+            3.7671440258556212, 
+            3.2462792807588237
+          ], 
+          "size": [
+            7.8784620240976722, 
+            7.6331734899112265, 
+            2.5482204763031961
+          ], 
+          "min": [
+            -3.9392310120488347, 
+            -3.8660294640556057, 
+            0.69805880445562707
+          ]
+        }
+      }, 
+      "material_tests": {
+        "Metal Finish": {
+          "writable": true, 
+          "faces_carrying_substitute": 32, 
+          "faces_inspected": 36, 
+          "substitute_reached_geometry": true, 
+          "restored_material_id": "2811", 
+          "substitute_material_id": "3717"
+        }, 
+        "Glass Finish": {
+          "writable": true, 
+          "faces_carrying_substitute": 4, 
+          "faces_inspected": 36, 
+          "substitute_reached_geometry": true, 
+          "restored_material_id": "2813", 
+          "substitute_material_id": "3718"
+        }
+      }, 
+      "host_validation": {
+        "face_based_host": true, 
+        "wall_id": "3713", 
+        "host_id": "3713", 
+        "hostface_present": true, 
+        "transform_basis_z_dot_face_normal": 1.0
+      }, 
+      "reopened": true, 
+      "reopened_warnings": [], 
+      "model": "KW1041BBS", 
+      "family_bounds_in": [
+        -3.9392310120488347, 
+        -3.8660294640556057, 
+        0.0, 
+        3.9392310120488370, 
+        3.7671440258556212, 
+        5.5492611415307520
+      ]
+    }, 
+    "black": {
+      "placed_bbox_dimensions_sorted_in": [
+        5.5492611415307538, 
+        7.6331734899112291, 
+        7.8784620240976722
+      ], 
+      "type_name": "KW1041MBK - Midnight Black / Milk", 
+      "overall_from_family_bounds_in": {
+        "projection": 5.5492611415307520, 
+        "height": 7.6331734899112273, 
+        "width": 7.8784620240976722
+      }, 
+      "finished_utc": "2026-09-24T03:21:09.770000Z", 
+      "sku": "VCS833919", 
+      "finish": "Midnight Black", 
+      "placement": "WorkPlaneBased", 
+      "gates": {
+        "fresh_rfa_reopen": true, 
+        "actual_native_wall_face_host": true, 
+        "published_and_inferred_geometry_measures": false, 
+        "material_substitution_reaches_geometry": true, 
+        "zero_warnings": true, 
+        "front_side_oblique_material_hosted_exports": true, 
+        "lighting_fixture_category": true, 
+        "face_based_placement": true, 
+        "placed_envelope_measures": false
+      }, 
+      "category": "Lighting Fixtures", 
+      "evidence_files": [
+        "Nodes_KW1041MBK - 3D View - Nodes_KW1041MBK Front.png", 
+        "Nodes_KW1041MBK - 3D View - Nodes_KW1041MBK Material.png", 
+        "Nodes_KW1041MBK - 3D View - Nodes_KW1041MBK Oblique.png", 
+        "Nodes_KW1041MBK - 3D View - Nodes_KW1041MBK Side.png", 
+        "Nodes_KW1041MBK_Hosted - 3D View - Nodes_KW1041MBK Hosted Oblique.png"
+      ], 
+      "family_warnings": [], 
+      "placed_dimension_checks": {
+        "contains_5_5_projection": true, 
+        "contains_7_63_height": true, 
+        "contains_8_0_width": false
+      }, 
+      "technical_pass": false, 
+      "rfa_mtime_utc": "2026-09-24T03:21:03Z", 
+      "globe_cross_segments": [
+        {
+          "length": 3.4999999999999982, 
+          "from": [
+            -1.7499999999999996, 
+            -0.65511602807488845, 
+            3.8362398145457255
+          ], 
+          "to": [
+            1.7499999999999991, 
+            -0.65511602807488845, 
+            3.8362398145457255
+          ]
+        }
+      ], 
+      "generated_parts": [
+        {
+          "name": "Round backplate", 
+          "id": "3226"
+        }, 
+        {
+          "name": "Tapered wall housing", 
+          "id": "3227"
+        }, 
+        {
+          "name": "Angled 8 inch reflector disc", 
+          "id": "3228"
+        }, 
+        {
+          "name": "Angled socket collar", 
+          "id": "3229"
+        }, 
+        {
+          "name": "Milk glass globe shade", 
+          "id": "3230"
+        }
+      ], 
+      "dimension_checks": {
+        "backplate_depth": {
+          "pass": true, 
+          "measured_in": 0.125, 
+          "tolerance_in": 0.040000000000000001, 
+          "target_in": 0.125, 
+          "method": "Backplate element Z bounding extent"
+        }, 
+        "reflector_projected_height": {
+          "pass": true, 
+          "measured_in": 7.6331734899112265, 
+          "tolerance_in": 0.040000000000000001, 
+          "target_in": 7.6299999999999999, 
+          "method": "Tilted 8-inch circular reflector projected to wall-plane Y"
+        }, 
+        "reflector_width": {
+          "pass": false, 
+          "measured_in": 7.8784620240976722, 
+          "tolerance_in": 0.040000000000000001, 
+          "target_in": 8.0, 
+          "method": "Tilted reflector element X bounding extent"
+        }, 
+        "backplate_diameter_y": {
+          "pass": true, 
+          "measured_in": 5.2500000000000009, 
+          "tolerance_in": 0.040000000000000001, 
+          "target_in": 5.25, 
+          "method": "Backplate element Y bounding extent"
+        }, 
+        "overall_width": {
+          "pass": false, 
+          "measured_in": 7.8784620240976722, 
+          "tolerance_in": 0.040000000000000001, 
+          "target_in": 8.0, 
+          "method": "All generated FreeFormElement bounding boxes, X extent"
+        }, 
+        "shade_axial_height_ray": {
+          "pass": true, 
+          "measured_in": 3.2499999999999991, 
+          "tolerance_in": 0.040000000000000001, 
+          "target_in": 3.25, 
+          "method": "Solid.IntersectWithCurve along socket/globe axis from clipped back to front"
+        }, 
+        "backplate_diameter_x": {
+          "pass": true, 
+          "measured_in": 5.2500000000000009, 
+          "tolerance_in": 0.040000000000000001, 
+          "target_in": 5.25, 
+          "method": "Backplate element X bounding extent"
+        }, 
+        "overall_projection": {
+          "pass": true, 
+          "measured_in": 5.5492611415307520, 
+          "tolerance_in": 0.050000000000000003, 
+          "target_in": 5.5, 
+          "method": "All generated FreeFormElement bounding boxes, Z extent"
+        }, 
+        "overall_height": {
+          "pass": true, 
+          "measured_in": 7.6331734899112273, 
+          "tolerance_in": 0.040000000000000001, 
+          "target_in": 7.6299999999999999, 
+          "method": "All generated FreeFormElement bounding boxes, Y extent"
+        }, 
+        "shade_diameter_ray": {
+          "pass": true, 
+          "measured_in": 3.4999999999999982, 
+          "tolerance_in": 0.040000000000000001, 
+          "target_in": 3.5, 
+          "method": "Solid.IntersectWithCurve through maximum globe section, perpendicular to socket axis"
+        }
+      }, 
+      "rfa_path": "E:\\Claude\\3D-Model-Workflow\\output\\lightology_20260923\\f07_833919\\Visual_Comfort_Nodes_KW1041MBK_Midnight_Black_R2025.rfa", 
+      "rfa_bytes": 479232, 
+      "option_url": "https://www.lightology.com/index.php?module=prod_detail&prod_id=833919&option_id=833919", 
+      "started_utc": "2026-09-24T03:21:03.354000Z", 
+      "placed_bbox_dimensions_in": [
+        7.8784620240976722, 
+        5.5492611415307538, 
+        7.6331734899112291
+      ], 
+      "project_warnings": [], 
+      "globe_axial_segments": [
+        {
+          "length": 3.2499999999999991, 
+          "from": [
+            0.0, 
+            -0.19159053651246744, 
+            2.4096550401029955
+          ], 
+          "to": [
+            0.0, 
+            -1.1958957682310463, 
+            5.5005887180622430
+          ]
+        }
+      ], 
+      "visual_verdict": "PENDING SELF/PRIME REVIEW - native exports produced; source comparison remains a separate gate", 
+      "part_bounds_in": {
+        "backplate": {
+          "max": [
+            2.6250000000000004, 
+            2.6250000000000004, 
+            0.125
+          ], 
+          "size": [
+            5.2500000000000009, 
+            5.2500000000000009, 
+            0.125
+          ], 
+          "min": [
+            -2.6250000000000004, 
+            -2.6250000000000004, 
+            0.0
+          ]
+        }, 
+        "socket": {
+          "max": [
+            0.29444863728671289, 
+            0.31254362073723163, 
+            2.5609686143650645
+          ], 
+          "size": [
+            0.58889727457342445, 
+            0.83521879764942797, 
+            0.83521879764942397
+          ], 
+          "min": [
+            -0.2944486372867115, 
+            -0.52267517691219645, 
+            1.7257498167156409
+          ]
+        }, 
+        "globe": {
+          "max": [
+            1.7500000000000053, 
+            1.0615683976685304, 
+            5.5492611415307520
+          ], 
+          "size": [
+            3.5000000000000089, 
+            3.4258537789080652, 
+            3.4181502559799180
+          ], 
+          "min": [
+            -1.7500000000000038, 
+            -2.3642853812395348, 
+            2.1311108855508341
+          ]
+        }, 
+        "housing": {
+          "max": [
+            2.3000000000000007, 
+            2.2423341980181957, 
+            1.8200000000000003
+          ], 
+          "size": [
+            4.6000000000000014, 
+            4.484668396036394, 
+            1.6950000000000005
+          ], 
+          "min": [
+            -2.3000000000000007, 
+            -2.2423341980181974, 
+            0.125
+          ]
+        }, 
+        "reflector": {
+          "max": [
+            3.9392310120488370, 
+            3.7671440258556212, 
+            3.2462792807588237
+          ], 
+          "size": [
+            7.8784620240976722, 
+            7.6331734899112265, 
+            2.5482204763031961
+          ], 
+          "min": [
+            -3.9392310120488347, 
+            -3.8660294640556057, 
+            0.69805880445562707
+          ]
+        }
+      }, 
+      "material_tests": {
+        "Metal Finish": {
+          "writable": true, 
+          "faces_carrying_substitute": 32, 
+          "faces_inspected": 36, 
+          "substitute_reached_geometry": true, 
+          "restored_material_id": "2811", 
+          "substitute_material_id": "3717"
+        }, 
+        "Glass Finish": {
+          "writable": true, 
+          "faces_carrying_substitute": 4, 
+          "faces_inspected": 36, 
+          "substitute_reached_geometry": true, 
+          "restored_material_id": "2813", 
+          "substitute_material_id": "3718"
+        }
+      }, 
+      "host_validation": {
+        "face_based_host": true, 
+        "wall_id": "3713", 
+        "host_id": "3713", 
+        "hostface_present": true, 
+        "transform_basis_z_dot_face_normal": 1.0
+      }, 
+      "reopened": true, 
+      "reopened_warnings": [], 
+      "model": "KW1041MBK", 
+      "family_bounds_in": [
+        -3.9392310120488347, 
+        -3.8660294640556057, 
+        0.0, 
+        3.9392310120488370, 
+        3.7671440258556212, 
+        5.5492611415307520
+      ]
+    }
+  }, 
+  "revit_version": "2025", 
+  "geometry_inferences": {
+    "reflector_disc_thickness": 0.080000000000000002, 
+    "housing_back_diameter": 4.5999999999999996, 
+    "reflector_disc_diameter": 8.0, 
+    "globe_back_from_socket_pivot": 0.62, 
+    "reason": "8-inch circular reflector tilted 18 degrees yields 7.633-inch projected height including 0.08-inch thickness, matching published 7.63-inch overall height. Installation sheet confirms the removable plate is normal to the angled socket axis.", 
+    "socket_radius": 0.34000000000000002, 
+    "housing_front_diameter": 3.2400000000000002, 
+    "housing_front_projection": 1.8200000000000001, 
+    "reflector_tilt_degrees": 18.0
+  }
+}

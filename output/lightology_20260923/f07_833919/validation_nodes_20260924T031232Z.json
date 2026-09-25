@@ -1,0 +1,57 @@
+{
+  "configs": {
+    "brass": {
+      "generated_parts": [
+        {
+          "name": "Round backplate", 
+          "id": "3226"
+        }, 
+        {
+          "name": "Tapered wall housing", 
+          "id": "3227"
+        }
+      ], 
+      "finish": "Burnished Brass", 
+      "type_name": "KW1041BBS - Burnished Brass / Milk", 
+      "option_url": "https://www.lightology.com/index.php?module=prod_detail&prod_id=833919&option_id=833918", 
+      "model": "KW1041BBS", 
+      "started_utc": "2026-09-24T03:12:32.173000Z", 
+      "sku": "VCS833918"
+    }
+  }, 
+  "started_utc": "2026-09-24T03:12:32.151000Z", 
+  "designer": "Kelly Wearstler", 
+  "updated_utc": "2026-09-24T03:12:32.664000Z", 
+  "template_exists": true, 
+  "published_dimensions_in": {
+    "overall_projection": 5.5, 
+    "shade_axial_height": 3.25, 
+    "overall_height": 7.6299999999999999, 
+    "backplate_diameter": 5.25, 
+    "overall_width": 8.0, 
+    "backplate_depth": 0.125, 
+    "shade_diameter": 3.5
+  }, 
+  "manufacturer": "Visual Comfort Studio", 
+  "geometry_inferences": {
+    "reflector_disc_diameter": 8.0, 
+    "socket_radius": 0.34000000000000002, 
+    "globe_back_from_socket_pivot": 0.62, 
+    "reflector_disc_thickness": 0.080000000000000002, 
+    "housing_front_diameter": 3.2400000000000002, 
+    "reason": "8-inch circular reflector tilted 18 degrees yields 7.633-inch projected height including 0.08-inch thickness, matching published 7.63-inch overall height. Installation sheet confirms the removable plate is normal to the angled socket axis.", 
+    "reflector_tilt_degrees": 18.0, 
+    "housing_back_diameter": 4.5999999999999996, 
+    "housing_front_projection": 1.8200000000000001
+  }, 
+  "stage": "failed", 
+  "assignment_url": "https://www.lightology.com/index.php?module=prod_detail&prod_id=833919&option_id=833918", 
+  "fixture": "Nodes Angled Wall Sconce", 
+  "product_family": "KW1041", 
+  "error": "Traceback (most recent call last):\n  File \"E:\\Claude\\3D-Model-Workflow\\output\\lightology_20260923\\f07_833919\\build_nodes_payload_expanded.py\", line 663, in <module>\n    rfa = build_family(app, cfg, rec)\n  File \"E:\\Claude\\3D-Model-Workflow\\output\\lightology_20260923\\f07_833919\\build_nodes_payload_expanded.py\", line 457, in build_family\n    reflector = cylinder(doc, 'Angled 8 inch reflector disc', pivot, AXIS,\n  File \"E:\\Claude\\3D-Model-Workflow\\output\\lightology_20260923\\f07_833919\\build_nodes_payload_expanded.py\", line 241, in cylinder\n    return revolved(doc, name, origin, axis, points, param, subcategory, record)\n  File \"E:\\Claude\\3D-Model-Workflow\\output\\lightology_20260923\\f07_833919\\build_nodes_payload_expanded.py\", line 221, in revolved\n    loop = profile_loop(origin, radial, axis, points)\n  File \"E:\\Claude\\3D-Model-Workflow\\output\\lightology_20260923\\f07_833919\\build_nodes_payload_expanded.py\", line 202, in profile_loop\n    loop.Append(DB.Line.CreateBound(p(cur), p(end)))\nException: Curve length is too small for Revit's tolerance (as identified by Application.ShortCurveTolerance).\r\nParameter name: endpoints\n", 
+  "run_stamp_utc": "20260924T031232Z", 
+  "revit_build": "25.4.50.35", 
+  "template": "C:\\ProgramData\\Autodesk\\RVT 2025\\Family Templates\\English-Imperial\\Generic Model face based.rft", 
+  "revit_version": "2025", 
+  "technical_pass": false
+}

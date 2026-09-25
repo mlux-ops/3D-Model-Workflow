@@ -1,0 +1,134 @@
+{
+  "product": "Maverick II Indoor / Outdoor Ceiling Fan with Light", 
+  "placement_type": "WorkPlaneBased", 
+  "revit_version": "2025", 
+  "technical_pass": true, 
+  "category": "Lighting Fixtures", 
+  "dimension_checks": {
+    "sweep_52_in": true, 
+    "zmin_zero": true, 
+    "height_13_8_in": true
+  }, 
+  "rfa_bytes": 528384, 
+  "finish": "Matte Black", 
+  "project_warnings": [], 
+  "measured_geometry": {
+    "height_in": 13.808243751525879, 
+    "max_radius_in": 26.000042353537296, 
+    "zmax_in": 13.808243751525879, 
+    "zmin_in": 0.0, 
+    "sweep_diameter_in": 52.000084707074592
+  }, 
+  "source_url": "https://www.lightology.com/index.php?module=prod_detail&prod_id=816712&option_id=816709", 
+  "family_warnings_reopen": [], 
+  "rfa_mtime_utc": "2026-09-24T03:23:10Z", 
+  "material_substitution": {
+    "qa_material_reached_geometry": true, 
+    "blade_parameter_found": true, 
+    "resolved_face_material_ids": [
+      "2811", 
+      "2815", 
+      "3723"
+    ], 
+    "qa_material_id": "3723"
+  }, 
+  "evidence_files": [
+    "F01_Family - 3D View - Front.png", 
+    "F01_Family - 3D View - Oblique.png", 
+    "F01_Family - 3D View - Side.png", 
+    "F01_Hosted - 3D View - Hosted Review.png", 
+    "F01_MaterialQA - 3D View - Material QA.png", 
+    "Visual_Comfort_Maverick_II_3MAVR52BKBKD_R2025_NativeMesh.json.gz"
+  ], 
+  "reopened": true, 
+  "native_gate": true, 
+  "lightology_spec": "MTC816709", 
+  "finished_utc": "2026-09-24T03:23:12.018000Z", 
+  "manufacturer": "Visual Comfort Fan", 
+  "manufacturer_dimensional_authority": {
+    "glass_diameter_in": 6.8799999999999999, 
+    "rod_diameter_in": 0.5, 
+    "source": "sources/VisualComfort_3MAVR52BKBKD_Spec.pdf", 
+    "overall_height_in": 13.800000000000001, 
+    "rod_length_in": 6.0, 
+    "canopy_diameter_in": 6.0, 
+    "housing_diameter_in": 6.7999999999999998, 
+    "glass_height_in": 1.6200000000000001, 
+    "retailer_conflicting_height_in": 19.800000000000001
+  }, 
+  "parts": [
+    {
+      "id": "3224", 
+      "name": "Canopy"
+    }, 
+    {
+      "id": "3225", 
+      "name": "Six-inch half-inch downrod"
+    }, 
+    {
+      "id": "3226", 
+      "name": "Compact smooth motor housing"
+    }, 
+    {
+      "id": "3227", 
+      "name": "Slim integrated light bezel"
+    }, 
+    {
+      "id": "3228", 
+      "name": "Shallow opal light disk"
+    }, 
+    {
+      "id": "3229", 
+      "name": "Sculpted blade 1"
+    }, 
+    {
+      "id": "3230", 
+      "name": "Sculpted blade 2"
+    }, 
+    {
+      "id": "3231", 
+      "name": "Sculpted blade 3"
+    }
+  ], 
+  "blade_model": {
+    "root_twist_deg": 20.0, 
+    "root_thickness_in": 0.62, 
+    "tip_twist_deg": 7.0, 
+    "max_chord_in": 5.7000000000000002, 
+    "nominal_pitch_deg": 13.0, 
+    "source_basis": "preserved Lightology product and application images", 
+    "aft_sweep_at_tip_in": 2.2000000000000002, 
+    "construction": "CreateLoftGeometry through nine rounded 3D cross-sections", 
+    "tip_thickness_in": 0.17999999999999999
+  }, 
+  "host_validation": {
+    "host_face_reference": "05499a5a-7496-4a67-8c47-46c69f2e9f3e-00000e82:0:SURFACE", 
+    "host_face_z_in": 132.0, 
+    "instance_host_id": "3714", 
+    "face_placed": true, 
+    "host_element_id": "3714", 
+    "instance_bounds_in": [
+      -16.269709981512801, 
+      -24.037760330471727, 
+      118.19999999999999, 
+      25.843113385601313, 
+      21.868592383027774, 
+      132.0
+    ], 
+    "hangs_below_host": true
+  }, 
+  "rfa_path": "E:\\Claude\\3D-Model-Workflow\\output\\lightology_20260923\\f01_816712\\Visual_Comfort_Maverick_II_3MAVR52BKBKD_R2025.rfa", 
+  "stage": "complete", 
+  "blade_plan_scale_to_nominal_sweep": 0.99396174197966081, 
+  "manufacturer_id": "3MAVR52BKBKD", 
+  "family_warnings_before_close": [], 
+  "checkpoint_utc": "2026-09-24T03:23:10.561000Z", 
+  "warning_count": 0, 
+  "fixture_id": "f01_816712", 
+  "requested": {
+    "height_in": 13.800000000000001, 
+    "pitch_deg": 13.0, 
+    "span_in": 52.0, 
+    "cct_k": 3000
+  }
+}

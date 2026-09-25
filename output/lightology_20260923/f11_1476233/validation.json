@@ -1,0 +1,310 @@
+{
+  "revit_build": "25.4.50.35", 
+  "actual_dimensions_in": [
+    8.6601355313926014, 
+    8.2999999523162842, 
+    19.700260109083025
+  ], 
+  "started_utc": "2026-09-24T03:23:31.406000Z", 
+  "family_warnings": [], 
+  "saved_cct_parameter_k": 3000.0, 
+  "technical_pass": true, 
+  "host": {
+    "host_kind": "ceiling", 
+    "host_id": "3734", 
+    "instance_host_id": "3734", 
+    "hostface_present": true, 
+    "normal_dot": 1.0
+  }, 
+  "display_bounds_in": [
+    -4.3301922805796664, 
+    -4.1500000000000012, 
+    0.0, 
+    4.3236777644706441, 
+    4.1500000000000012, 
+    19.700351813749471
+  ], 
+  "appearance_defaults": {
+    "Etched Gold Core Finish": {
+      "transparency": 0.12, 
+      "rgb": [
+        239, 
+        213, 
+        132
+      ], 
+      "luminance": 85, 
+      "cct_k": 3000, 
+      "gloss": 0.23000000000000001
+    }, 
+    "Gold Fittings Finish": {
+      "transparency": 0, 
+      "rgb": [
+        189, 
+        142, 
+        51
+      ], 
+      "luminance": 0, 
+      "cct_k": null, 
+      "gloss": 0.59999999999999998
+    }, 
+    "3000K LED Finish": {
+      "transparency": 0, 
+      "rgb": [
+        255, 
+        244, 
+        217
+      ], 
+      "luminance": 280, 
+      "cct_k": 3000, 
+      "gloss": 0.17999999999999999
+    }, 
+    "Suspension Cable Finish": {
+      "transparency": 0, 
+      "rgb": [
+        118, 
+        115, 
+        108
+      ], 
+      "luminance": 0, 
+      "cct_k": null, 
+      "gloss": 0.41999999999999998
+    }, 
+    "White Canopy Finish": {
+      "transparency": 0, 
+      "rgb": [
+        246, 
+        246, 
+        244
+      ], 
+      "luminance": 0, 
+      "cct_k": null, 
+      "gloss": 0.23999999999999999
+    }, 
+    "Gold Crystal Finish": {
+      "transparency": 0.91000000000000003, 
+      "rgb": [
+        239, 
+        203, 
+        108
+      ], 
+      "luminance": 0, 
+      "cct_k": null, 
+      "gloss": 0.96999999999999997
+    }
+  }, 
+  "placement": "WorkPlaneBased", 
+  "template_form_ids": [
+    "1537"
+  ], 
+  "model": "0R03SE8A4ATE", 
+  "finished_utc": "2026-09-24T03:23:44.354000Z", 
+  "category": "Lighting Fixtures", 
+  "manufacturer": "Terzani", 
+  "reopened_warnings": [], 
+  "expected_dimensions_in": [
+    8.6600000000000001, 
+    8.3000000000000007, 
+    19.699999999999999
+  ], 
+  "rfa_path": "E:\\Claude\\3D-Model-Workflow\\output\\lightology_20260923\\f11_1476233\\Terzani_Mizu_0R03SE8A4ATE_Gold_8_66_3000K_R2025.rfa", 
+  "project_warnings": [], 
+  "inferences": "User-selected LED3000K is Lightology1476232 /0R03SE8A4ATE, replacing linked Xenon1476230. Source drawing gives8.7nominal/8.66listed assembly width,8.3canopy x1.6H,19.7minimum overall and approximately3.9in crystal. Default fixed installation uses13.77in top-to-bottom crystal cluster. Three independently varied smooth cast-drop profiles are reconstructed from Gold3-light photographs; exact handmade contours,3.6in crystal width, triangular locations, stagger, optical bore/core, cable and fitting dimensions are inferred. Glass tint/refraction/glow approximate source appearance, not measured optics or photometry.", 
+  "bounds_method": "Fine native face meshes plus 128-sample analytic edges", 
+  "gates": {
+    "category": true, 
+    "orientation": true, 
+    "dimensions": true, 
+    "cct": true, 
+    "views": true, 
+    "actual_face_host": true, 
+    "warnings": true, 
+    "reopened": true, 
+    "materials": true
+  }, 
+  "type": "Gold crystal - 3 lights - 3000K - 19.7 in drop", 
+  "drops": [
+    {
+      "height_in": 3.8999999999999999, 
+      "nominal_width_in": 3.6000000000000001, 
+      "shape_seed": 0.59999999999999998, 
+      "center_xy_in": [
+        0, 
+        2.0
+      ], 
+      "crystal_top_in": 5.9299999999999997
+    }, 
+    {
+      "height_in": 3.8999999999999999, 
+      "nominal_width_in": 3.6000000000000001, 
+      "shape_seed": 2.2999999999999998, 
+      "center_xy_in": [
+        -2.5299999999999998, 
+        -1.3500000000000001
+      ], 
+      "crystal_top_in": 10.850000000000000
+    }, 
+    {
+      "height_in": 3.8999999999999999, 
+      "nominal_width_in": 3.6000000000000001, 
+      "shape_seed": 4.4000000000000004, 
+      "center_xy_in": [
+        2.5299999999999998, 
+        -1.3500000000000001
+      ], 
+      "crystal_top_in": 15.800000000000001
+    }
+  ], 
+  "bounds_in": [
+    -4.3300427198410034, 
+    -4.1499999761581421, 
+    0.0, 
+    4.3300928115515980, 
+    4.1499999761581421, 
+    19.700260109083025
+  ], 
+  "selected_led_url": "https://www.lightology.com/index.php?module=prod_detail&prod_id=1476233&option_id=1476232", 
+  "cct_k": 3000, 
+  "stage": "complete", 
+  "revit_version": "2025", 
+  "parts": [
+    {
+      "volume_ft3": 0.050077657065579664, 
+      "id": "3227", 
+      "name": "Round white ceiling canopy"
+    }, 
+    {
+      "volume_ft3": 0.01100460550814328, 
+      "id": "3228", 
+      "name": "Hand-cast gold crystal drop 1"
+    }, 
+    {
+      "volume_ft3": 0.0020685802781499935, 
+      "id": "3229", 
+      "name": "Etched luminous core 1"
+    }, 
+    {
+      "volume_ft3": 8.9437889955846882e-05, 
+      "id": "3230", 
+      "name": "LED core 1"
+    }, 
+    {
+      "volume_ft3": 4.3720620837833042e-05, 
+      "id": "3231", 
+      "name": "Gold top fitting 1"
+    }, 
+    {
+      "volume_ft3": 7.9903843360250566e-06, 
+      "id": "3232", 
+      "name": "Fine suspension 1"
+    }, 
+    {
+      "volume_ft3": 6.6754014128988664e-06, 
+      "id": "3233", 
+      "name": "Canopy cable grip 1"
+    }, 
+    {
+      "volume_ft3": 0.011011025779600317, 
+      "id": "3234", 
+      "name": "Hand-cast gold crystal drop 2"
+    }, 
+    {
+      "volume_ft3": 0.0020685802781499935, 
+      "id": "3235", 
+      "name": "Etched luminous core 2"
+    }, 
+    {
+      "volume_ft3": 8.9437889955847126e-05, 
+      "id": "3236", 
+      "name": "LED core 2"
+    }, 
+    {
+      "volume_ft3": 4.3720620837833123e-05, 
+      "id": "3237", 
+      "name": "Gold top fitting 2"
+    }, 
+    {
+      "volume_ft3": 1.7240429261494088e-05, 
+      "id": "3238", 
+      "name": "Fine suspension 2"
+    }, 
+    {
+      "volume_ft3": 6.675401412898874e-06, 
+      "id": "3239", 
+      "name": "Canopy cable grip 2"
+    }, 
+    {
+      "volume_ft3": 0.010442118147457106, 
+      "id": "3240", 
+      "name": "Hand-cast gold crystal drop 3"
+    }, 
+    {
+      "volume_ft3": 0.002068580278149993, 
+      "id": "3241", 
+      "name": "Etched luminous core 3"
+    }, 
+    {
+      "volume_ft3": 8.9437889955846882e-05, 
+      "id": "3242", 
+      "name": "LED core 3"
+    }, 
+    {
+      "volume_ft3": 4.3720620837833137e-05, 
+      "id": "3243", 
+      "name": "Gold top fitting 3"
+    }, 
+    {
+      "volume_ft3": 2.6546876899923286e-05, 
+      "id": "3244", 
+      "name": "Fine suspension 3"
+    }, 
+    {
+      "volume_ft3": 6.675401412898874e-06, 
+      "id": "3245", 
+      "name": "Canopy cable grip 3"
+    }
+  ], 
+  "reopened": true, 
+  "evidence_files": [
+    "Terzani_Mizu_0R03SE8A4ATE_Gold_8_66_3000K_R2025 - 3D View - Front.png", 
+    "Terzani_Mizu_0R03SE8A4ATE_Gold_8_66_3000K_R2025 - 3D View - Material.png", 
+    "Terzani_Mizu_0R03SE8A4ATE_Gold_8_66_3000K_R2025 - 3D View - Oblique.png", 
+    "Terzani_Mizu_0R03SE8A4ATE_Gold_8_66_3000K_R2025 - 3D View - Side.png", 
+    "Terzani_Mizu_0R03SE8A4ATE_Gold_8_66_3000K_R2025_Hosted - 3D View - Hosted.png", 
+    "Terzani_Mizu_0R03SE8A4ATE_Gold_8_66_3000K_R2025_Isolated - 3D View - Native Front.png", 
+    "Terzani_Mizu_0R03SE8A4ATE_Gold_8_66_3000K_R2025_Isolated - 3D View - Native Material.png", 
+    "Terzani_Mizu_0R03SE8A4ATE_Gold_8_66_3000K_R2025_Isolated - 3D View - Native Oblique.png", 
+    "Terzani_Mizu_0R03SE8A4ATE_Gold_8_66_3000K_R2025_Isolated - 3D View - Native Side.png"
+  ], 
+  "material_tests": {
+    "Etched Gold Core Finish": {
+      "writable": true, 
+      "substitution_reaches_faces": true, 
+      "face_count": 232
+    }, 
+    "Gold Fittings Finish": {
+      "writable": true, 
+      "substitution_reaches_faces": true, 
+      "face_count": 232
+    }, 
+    "3000K LED Finish": {
+      "writable": true, 
+      "substitution_reaches_faces": true, 
+      "face_count": 232
+    }, 
+    "Suspension Cable Finish": {
+      "writable": true, 
+      "substitution_reaches_faces": true, 
+      "face_count": 232
+    }, 
+    "White Canopy Finish": {
+      "writable": true, 
+      "substitution_reaches_faces": true, 
+      "face_count": 232
+    }, 
+    "Gold Crystal Finish": {
+      "writable": true, 
+      "substitution_reaches_faces": true, 
+      "face_count": 232
+    }
+  }
+}

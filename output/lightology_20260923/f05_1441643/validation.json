@@ -1,0 +1,286 @@
+{
+  "technical_pass": true, 
+  "variants": [
+    {
+      "project_warnings": [], 
+      "type": "Black Anodized - White Interior - 3000 K", 
+      "parts": [
+        {
+          "volume_ft3": 0.0058919192969600007, 
+          "id": "3216", 
+          "name": "Black anodized wall plate"
+        }, 
+        {
+          "volume_ft3": 0.0084350223543495396, 
+          "id": "3217", 
+          "name": "Cast glass concave lens with rolled rim"
+        }, 
+        {
+          "volume_ft3": 0.014049814117002577, 
+          "id": "3218", 
+          "name": "Luminous inner optical body"
+        }
+      ], 
+      "finished_utc": "2026-09-24T03:10:19.130000Z", 
+      "reopened_warnings": [], 
+      "category": "Lighting Fixtures", 
+      "rfa_path": "E:\\Claude\\3D-Model-Workflow\\output\\lightology_20260923\\f05_1441643\\RBW_Dimple_Black_Anodized_White_Interior_3000K_R2025.rfa", 
+      "material_tests": {
+        "Cast Glass Finish": {
+          "face_count": 38, 
+          "writable": true, 
+          "substitution_reaches_faces": true
+        }, 
+        "Interior Diffuser Finish": {
+          "face_count": 38, 
+          "writable": true, 
+          "substitution_reaches_faces": true
+        }, 
+        "Black Anodized Finish": {
+          "face_count": 38, 
+          "writable": true, 
+          "substitution_reaches_faces": true
+        }
+      }, 
+      "stage": "complete", 
+      "host": {
+        "normal_dot": 1.0, 
+        "host_id": "3700", 
+        "hostface_present": true, 
+        "host_kind": "wall", 
+        "instance_host_id": "3700"
+      }, 
+      "revit_build": "25.4.50.35", 
+      "model": "DP-WS-S1-AA04-30-10_TRIAC_120V-IP65", 
+      "placement": "WorkPlaneBased", 
+      "revit_version": "2025", 
+      "expected_dimensions_in": [
+        5.0, 
+        5.0, 
+        3.2999999999999998
+      ], 
+      "started_utc": "2026-09-24T03:10:10.100000Z", 
+      "inferences": "Lightology specifies 5 in diameter and 3.3 in projection, black anodized aluminum, cast glass and 3000 K. White S1 and amber S3 IP65 variants follow the user selections. Concave front/rolled rim and separate inner diffuser are reconstructed from saved photographs. Backplate diameter, lens thickness, internal optics and dimple curvature are inferred. Material glow is an appearance aid, not photometric output.", 
+      "saved_cct_parameter_k": 3000.0, 
+      "gates": {
+        "cct": true, 
+        "views": true, 
+        "actual_face_host": true, 
+        "category": true, 
+        "reopened": true, 
+        "orientation": true, 
+        "dimensions": true, 
+        "warnings": true, 
+        "materials": true
+      }, 
+      "family_warnings": [], 
+      "technical_pass": true, 
+      "manufacturer": "RBW", 
+      "cct_k": 3000, 
+      "actual_dimensions_in": [
+        5.0000000000000009, 
+        5.0000000000000009, 
+        3.2999999999999998
+      ], 
+      "template_form_ids": [
+        "1537"
+      ], 
+      "bounds_in": [
+        -2.5000000000000004, 
+        -2.5000000000000004, 
+        0.0, 
+        2.5000000000000004, 
+        2.5000000000000004, 
+        3.2999999999999998
+      ], 
+      "reopened": true, 
+      "evidence_files": [
+        "RBW_Dimple_Black_Anodized_White_Interior_3000K_R2025 - 3D View - Front.png", 
+        "RBW_Dimple_Black_Anodized_White_Interior_3000K_R2025 - 3D View - Material.png", 
+        "RBW_Dimple_Black_Anodized_White_Interior_3000K_R2025 - 3D View - Oblique.png", 
+        "RBW_Dimple_Black_Anodized_White_Interior_3000K_R2025 - 3D View - Side.png", 
+        "RBW_Dimple_Black_Anodized_White_Interior_3000K_R2025_Hosted - 3D View - Hosted.png", 
+        "RBW_Dimple_Black_Anodized_White_Interior_3000K_R2025_Isolated - 3D View - Native Front.png", 
+        "RBW_Dimple_Black_Anodized_White_Interior_3000K_R2025_Isolated - 3D View - Native Material.png", 
+        "RBW_Dimple_Black_Anodized_White_Interior_3000K_R2025_Isolated - 3D View - Native Oblique.png", 
+        "RBW_Dimple_Black_Anodized_White_Interior_3000K_R2025_Isolated - 3D View - Native Side.png"
+      ], 
+      "appearance_defaults": {
+        "Cast Glass Finish": {
+          "rgb": [
+            238, 
+            244, 
+            245
+          ], 
+          "transparency": 0.88, 
+          "luminance": 0, 
+          "cct_k": null, 
+          "gloss": 0.97999999999999998
+        }, 
+        "Interior Diffuser Finish": {
+          "rgb": [
+            246, 
+            243, 
+            235
+          ], 
+          "transparency": 0, 
+          "luminance": 70, 
+          "cct_k": 3000, 
+          "gloss": 0.20000000000000001
+        }, 
+        "Black Anodized Finish": {
+          "rgb": [
+            24, 
+            25, 
+            26
+          ], 
+          "transparency": 0, 
+          "luminance": 0, 
+          "cct_k": null, 
+          "gloss": 0.28000000000000003
+        }
+      }
+    }, 
+    {
+      "project_warnings": [], 
+      "type": "Black Anodized - Amber - 3000 K", 
+      "parts": [
+        {
+          "volume_ft3": 0.0058919192969600007, 
+          "id": "3216", 
+          "name": "Black anodized wall plate"
+        }, 
+        {
+          "volume_ft3": 0.0084350223543495396, 
+          "id": "3217", 
+          "name": "Cast glass concave lens with rolled rim"
+        }, 
+        {
+          "volume_ft3": 0.014049814117002577, 
+          "id": "3218", 
+          "name": "Luminous inner optical body"
+        }
+      ], 
+      "finished_utc": "2026-09-24T03:10:28.282000Z", 
+      "reopened_warnings": [], 
+      "category": "Lighting Fixtures", 
+      "rfa_path": "E:\\Claude\\3D-Model-Workflow\\output\\lightology_20260923\\f05_1441643\\RBW_Dimple_Black_Anodized_Amber_3000K_R2025.rfa", 
+      "material_tests": {
+        "Cast Glass Finish": {
+          "face_count": 38, 
+          "writable": true, 
+          "substitution_reaches_faces": true
+        }, 
+        "Interior Diffuser Finish": {
+          "face_count": 38, 
+          "writable": true, 
+          "substitution_reaches_faces": true
+        }, 
+        "Black Anodized Finish": {
+          "face_count": 38, 
+          "writable": true, 
+          "substitution_reaches_faces": true
+        }
+      }, 
+      "stage": "complete", 
+      "host": {
+        "normal_dot": 1.0, 
+        "host_id": "3700", 
+        "hostface_present": true, 
+        "host_kind": "wall", 
+        "instance_host_id": "3700"
+      }, 
+      "revit_build": "25.4.50.35", 
+      "model": "DP-WS-S3-AA04-30-10_TRIAC_120V-IP65", 
+      "placement": "WorkPlaneBased", 
+      "revit_version": "2025", 
+      "expected_dimensions_in": [
+        5.0, 
+        5.0, 
+        3.2999999999999998
+      ], 
+      "started_utc": "2026-09-24T03:10:19.183000Z", 
+      "inferences": "Lightology specifies 5 in diameter and 3.3 in projection, black anodized aluminum, cast glass and 3000 K. White S1 and amber S3 IP65 variants follow the user selections. Concave front/rolled rim and separate inner diffuser are reconstructed from saved photographs. Backplate diameter, lens thickness, internal optics and dimple curvature are inferred. Material glow is an appearance aid, not photometric output.", 
+      "saved_cct_parameter_k": 3000.0, 
+      "gates": {
+        "cct": true, 
+        "views": true, 
+        "actual_face_host": true, 
+        "category": true, 
+        "reopened": true, 
+        "orientation": true, 
+        "dimensions": true, 
+        "warnings": true, 
+        "materials": true
+      }, 
+      "family_warnings": [], 
+      "technical_pass": true, 
+      "manufacturer": "RBW", 
+      "cct_k": 3000, 
+      "actual_dimensions_in": [
+        5.0000000000000009, 
+        5.0000000000000009, 
+        3.2999999999999998
+      ], 
+      "template_form_ids": [
+        "1537"
+      ], 
+      "bounds_in": [
+        -2.5000000000000004, 
+        -2.5000000000000004, 
+        0.0, 
+        2.5000000000000004, 
+        2.5000000000000004, 
+        3.2999999999999998
+      ], 
+      "reopened": true, 
+      "evidence_files": [
+        "RBW_Dimple_Black_Anodized_Amber_3000K_R2025 - 3D View - Front.png", 
+        "RBW_Dimple_Black_Anodized_Amber_3000K_R2025 - 3D View - Material.png", 
+        "RBW_Dimple_Black_Anodized_Amber_3000K_R2025 - 3D View - Oblique.png", 
+        "RBW_Dimple_Black_Anodized_Amber_3000K_R2025 - 3D View - Side.png", 
+        "RBW_Dimple_Black_Anodized_Amber_3000K_R2025_Hosted - 3D View - Hosted.png", 
+        "RBW_Dimple_Black_Anodized_Amber_3000K_R2025_Isolated - 3D View - Native Front.png", 
+        "RBW_Dimple_Black_Anodized_Amber_3000K_R2025_Isolated - 3D View - Native Material.png", 
+        "RBW_Dimple_Black_Anodized_Amber_3000K_R2025_Isolated - 3D View - Native Oblique.png", 
+        "RBW_Dimple_Black_Anodized_Amber_3000K_R2025_Isolated - 3D View - Native Side.png"
+      ], 
+      "appearance_defaults": {
+        "Cast Glass Finish": {
+          "rgb": [
+            192, 
+            112, 
+            35
+          ], 
+          "transparency": 0.65000000000000002, 
+          "luminance": 0, 
+          "cct_k": null, 
+          "gloss": 0.97999999999999998
+        }, 
+        "Interior Diffuser Finish": {
+          "rgb": [
+            255, 
+            224, 
+            159
+          ], 
+          "transparency": 0, 
+          "luminance": 70, 
+          "cct_k": 3000, 
+          "gloss": 0.20000000000000001
+        }, 
+        "Black Anodized Finish": {
+          "rgb": [
+            24, 
+            25, 
+            26
+          ], 
+          "transparency": 0, 
+          "luminance": 0, 
+          "cct_k": null, 
+          "gloss": 0.28000000000000003
+        }
+      }
+    }
+  ], 
+  "stage": "complete"
+}

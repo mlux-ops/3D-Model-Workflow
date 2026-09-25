@@ -1,0 +1,23 @@
+[
+  {
+    "fixture": "F03", 
+    "returned": true, 
+    "started_utc": "2026-09-24T03:11:57.071000Z"
+  }, 
+  {
+    "fixture": "F06", 
+    "returned": true, 
+    "started_utc": "2026-09-24T03:12:22.964000Z"
+  }, 
+  {
+    "fixture": "F02", 
+    "returned": true, 
+    "started_utc": "2026-09-24T03:12:27.097000Z"
+  }, 
+  {
+    "fixture": "F07", 
+    "returned": false, 
+    "started_utc": "2026-09-24T03:12:32.139000Z", 
+    "error": "Traceback (most recent call last):\n  File \"E:\\Claude\\3D-Model-Workflow\\output\\lightology_20260923\\tools\\run_proof_batch_v3.py\", line 8, in <module>\n    try:execfile(path,{'__file__':path,'__name__':'__main__','__revit__':__revit__});row['returned']=True\n  File \"E:\\Claude\\3D-Model-Workflow\\output\\lightology_20260923\\f07_833919\\build_nodes_payload_expanded.py\", line 663, in <module>\n    rfa = build_family(app, cfg, rec)\n  File \"E:\\Claude\\3D-Model-Workflow\\output\\lightology_20260923\\f07_833919\\build_nodes_payload_expanded.py\", line 457, in build_family\n    reflector = cylinder(doc, 'Angled 8 inch reflector disc', pivot, AXIS,\n  File \"E:\\Claude\\3D-Model-Workflow\\output\\lightology_20260923\\f07_833919\\build_nodes_payload_expanded.py\", line 241, in cylinder\n    return revolved(doc, name, origin, axis, points, param, subcategory, record)\n  File \"E:\\Claude\\3D-Model-Workflow\\output\\lightology_20260923\\f07_833919\\build_nodes_payload_expanded.py\", line 221, in revolved\n    loop = profile_loop(origin, radial, axis, points)\n  File \"E:\\Claude\\3D-Model-Workflow\\output\\lightology_20260923\\f07_833919\\build_nodes_payload_expanded.py\", line 202, in profile_loop\n    loop.Append(DB.Line.CreateBound(p(cur), p(end)))\nException: Curve length is too small for Revit's tolerance (as identified by Application.ShortCurveTolerance).\r\nParameter name: endpoints\n"
+  }
+]

@@ -1,0 +1,135 @@
+{
+  "reopened": true, 
+  "rfa_mtime_utc": "2026-09-24T03:32:39Z", 
+  "host_validation": {
+    "host_face_z_in": 132.0, 
+    "host_element_id": "3714", 
+    "host_face_reference": "42a5112e-e11d-42fd-a5ad-70e6fea43873-00000e82:0:SURFACE", 
+    "hangs_below_host": true, 
+    "instance_host_id": "3714", 
+    "face_placed": true, 
+    "instance_bounds_in": [
+      -16.915238867362405, 
+      -24.349196377738519, 
+      118.19999999999999, 
+      25.732698601125765, 
+      21.366854926658664, 
+      132.0
+    ]
+  }, 
+  "source_url": "https://www.lightology.com/index.php?module=prod_detail&prod_id=816712&option_id=816709", 
+  "evidence_files": [
+    "F01_Family - 3D View - Front.png", 
+    "F01_Family - 3D View - Oblique.png", 
+    "F01_Family - 3D View - Side.png", 
+    "F01_Hosted - 3D View - Hosted Review.png", 
+    "F01_MaterialQA - 3D View - Material QA.png", 
+    "Visual_Comfort_Maverick_II_3MAVR52BKBKD_R2025_NativeMesh.json.gz", 
+    "Visual_Comfort_Maverick_II_3MAVR52BKBKD_R2025_Studio.png"
+  ], 
+  "manufacturer_id": "3MAVR52BKBKD", 
+  "checkpoint_utc": "2026-09-24T03:32:39.792000Z", 
+  "blade_model": {
+    "root_thickness_in": 0.62, 
+    "max_chord_in": 5.7000000000000002, 
+    "construction": "CreateLoftGeometry through nine rounded 3D cross-sections", 
+    "tip_thickness_in": 0.17999999999999999, 
+    "source_basis": "preserved Lightology product and application images", 
+    "root_twist_deg": 20.0, 
+    "tip_twist_deg": 7.0, 
+    "nominal_pitch_deg": 13.0, 
+    "aft_sweep_at_tip_in": 3.0299999999999998
+  }, 
+  "manufacturer": "Visual Comfort Fan", 
+  "fixture_id": "f01_816712", 
+  "warning_count": 0, 
+  "native_gate": true, 
+  "placement_type": "WorkPlaneBased", 
+  "stage": "complete", 
+  "project_warnings": [], 
+  "requested": {
+    "span_in": 52.0, 
+    "pitch_deg": 13.0, 
+    "height_in": 13.800000000000001, 
+    "cct_k": 3000
+  }, 
+  "family_warnings_reopen": [], 
+  "rfa_bytes": 528384, 
+  "finished_utc": "2026-09-24T03:32:41.240000Z", 
+  "product": "Maverick II Indoor / Outdoor Ceiling Fan with Light", 
+  "finish": "Matte Black", 
+  "lightology_spec": "MTC816709", 
+  "parts": [
+    {
+      "name": "Canopy", 
+      "id": "3224"
+    }, 
+    {
+      "name": "Six-inch half-inch downrod", 
+      "id": "3225"
+    }, 
+    {
+      "name": "Compact smooth motor housing", 
+      "id": "3226"
+    }, 
+    {
+      "name": "Recessed black light bezel", 
+      "id": "3227"
+    }, 
+    {
+      "name": "Recessed opal light disk", 
+      "id": "3228"
+    }, 
+    {
+      "name": "Sculpted blade 1", 
+      "id": "3229"
+    }, 
+    {
+      "name": "Sculpted blade 2", 
+      "id": "3230"
+    }, 
+    {
+      "name": "Sculpted blade 3", 
+      "id": "3231"
+    }
+  ], 
+  "manufacturer_dimensional_authority": {
+    "source": "sources/VisualComfort_3MAVR52BKBKD_Spec.pdf", 
+    "overall_height_in": 13.800000000000001, 
+    "glass_height_in": 1.6200000000000001, 
+    "rod_diameter_in": 0.5, 
+    "rod_length_in": 6.0, 
+    "canopy_diameter_in": 6.0, 
+    "housing_diameter_in": 6.7999999999999998, 
+    "retailer_conflicting_height_in": 19.800000000000001, 
+    "glass_diameter_in": 6.8799999999999999
+  }, 
+  "blade_plan_scale_to_nominal_sweep": 0.98971518640451484, 
+  "revit_version": "2025", 
+  "dimension_checks": {
+    "zmin_zero": true, 
+    "sweep_52_in": true, 
+    "height_13_8_in": true
+  }, 
+  "family_warnings_before_close": [], 
+  "rfa_path": "E:\\Claude\\3D-Model-Workflow\\output\\lightology_20260923\\f01_816712\\Visual_Comfort_Maverick_II_3MAVR52BKBKD_R2025.rfa", 
+  "category": "Lighting Fixtures", 
+  "technical_pass": true, 
+  "measured_geometry": {
+    "zmin_in": 0.0, 
+    "zmax_in": 13.799999713897705, 
+    "height_in": 13.799999713897705, 
+    "sweep_diameter_in": 52.000214738983644, 
+    "max_radius_in": 26.000107369491822
+  }, 
+  "material_substitution": {
+    "resolved_face_material_ids": [
+      "2811", 
+      "2815", 
+      "3723"
+    ], 
+    "qa_material_reached_geometry": true, 
+    "blade_parameter_found": true, 
+    "qa_material_id": "3723"
+  }
+}

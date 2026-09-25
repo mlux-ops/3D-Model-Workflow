@@ -1,0 +1,30 @@
+﻿READY_REVIT F11 Mizu
+
+Selection: Lightology TRZ1476232 / Terzani 0R03SE8A4ATE; White canopy; Gold crystal; 3 drops; 8.66 in W x 13.77 in crystal-cluster H; canopy 8.3 in diameter x 1.6 in H; minimum overall 19.7 in; 3000K integrated LED, 3 x 1.5W, 4.5W total, 438 lm, not dimmable.
+
+Builder:
+E:\Claude\3D-Model-Workflow\output\lightology_20260923\f11_1476233\build_mizu.py
+
+SHA256:
+7E95982DD670DAC9D17E80FC707F13A1E8E84242D857FA2561BAB6EEA4D49A2A
+
+Syntax: PASS with C:\Python314\python.exe -m py_compile
+Face template present: yes
+Native helper present: yes
+pyRevit runner present: yes
+
+Exact PRIME-owned command:
+D:\Games\pyRevit-Master\bin\pyrevit.exe run "E:\Claude\3D-Model-Workflow\output\lightology_20260923\f11_1476233\build_mizu.py" --revit=2025
+
+Geometry: three distinct non-rotational asymmetric hollow lofted Gold crystal shells with per-drop X/Y scale, lean, radial phase and low-frequency lobes; Boolean inner loft creates true cavity/open neck; three separate visible 3000K cores; calculated left/right origins preserve exact 8.66-in body width; vertical stagger preserves exact 13.77-in cluster height and 19.7-in minimum overall height.
+
+Saved source evidence:
+sources/lightology_1476233_main.jpg
+sources/terz_mizu_3lt_gold_add.jpg
+sources/terz_mizu_multi_light_spec.png
+sources/TRZ1476230_Lightology_spec.pdf
+sources/lightology_option_1476232_3000K.txt
+sources/source_manifest.json
+sources/SOURCE_REVIEW.md
+
+Native RFA/reopen/face-host/material/warning/image gates remain pending PRIME serialized execution and visual review.

@@ -1,0 +1,8 @@
+from pathlib import Path
+p=Path(__file__).resolve().parents[1]/'tools'/'render_native_studio.py'
+s=p.read_text()
+s=s.replace("        nt.links.new(img.outputs['Color'],shader.inputs['Base Color'])","        uvnode=nt.nodes.new('ShaderNodeUVMap');uvnode.uv_map='Revit physical scale'\n        nt.links.new(uvnode.outputs['UV'],img.inputs['Vector'])\n        nt.links.new(img.outputs['Color'],shader.inputs['Base Color'])")
+s=s.replace("        nt.links.new(glow.outputs['Color'],shader.inputs['Emission Color'])","        uvnode=nt.nodes.new('ShaderNodeUVMap');uvnode.uv_map='Revit physical scale'\n        nt.links.new(uvnode.outputs['UV'],glow.inputs['Vector'])\n        nt.links.new(glow.outputs['Color'],shader.inputs['Emission Color'])")
+s=s.replace("        minimum=Vector(tuple(min(p[i] for p in worldpoints)","            mesh.update()\n        minimum=Vector(tuple(min(p[i] for p in worldpoints)")
+s=s.replace("        bpy.ops.render.render(write_still=True)","        diagnostics=[]\n        for ob in objects:\n            layer=ob.data.uv_layers.active\n            diagnostics.append({'object':ob.name,'uv_count':len(layer.data),'uv_min':[min(x.uv[i] for x in layer.data) for i in range(2)],'uv_max':[max(x.uv[i] for x in layer.data) for i in range(2)]})\n        (target.parent/(row['name']+'_StudioUV.json')).write_text(json.dumps(diagnostics,indent=2))\n        bpy.ops.render.render(write_still=True)")
+import ast;ast.parse(s);p.write_text(s)

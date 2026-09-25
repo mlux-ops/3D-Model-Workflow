@@ -1,0 +1,344 @@
+{
+  "body_element_ids": [
+    3223, 
+    3224, 
+    3225, 
+    3226, 
+    3227, 
+    3228, 
+    3229, 
+    3230, 
+    3231, 
+    3232
+  ], 
+  "build_body_bounds_in": {
+    "max": [
+      24.0, 
+      6.6875, 
+      15.875
+    ], 
+    "min": [
+      -24.0, 
+      -6.6875, 
+      9.875
+    ], 
+    "size": [
+      48.0, 
+      13.375, 
+      6.0
+    ]
+  }, 
+  "build_canopy_bounds_in": {
+    "max": [
+      5.5625, 
+      2.1875, 
+      0.875
+    ], 
+    "min": [
+      -5.5625, 
+      -2.1875, 
+      0.0
+    ], 
+    "size": [
+      11.125, 
+      4.375, 
+      0.875
+    ]
+  }, 
+  "category": "Lighting Fixtures", 
+  "cct_note": "No integrated CCT: four E12 lamps are not included; lamp choice determines CCT.", 
+  "checkpoint_utc": "2026-09-24T02:49:04.055000Z", 
+  "dimensions": {
+    "body_length": {
+      "measured_in": 48.0, 
+      "method": "union bounding box of Cassia body geometry", 
+      "pass": true, 
+      "target_in": 48.0, 
+      "tolerance_in": 0.029999999999999999
+    }, 
+    "body_width": {
+      "measured_in": 13.375, 
+      "method": "union bounding box of Cassia body geometry", 
+      "pass": true, 
+      "target_in": 13.375, 
+      "tolerance_in": 0.029999999999999999
+    }, 
+    "canopy_height": {
+      "measured_in": 0.875, 
+      "method": "canopy solid Z extent", 
+      "pass": true, 
+      "target_in": 0.875, 
+      "tolerance_in": 0.029999999999999999
+    }, 
+    "canopy_length": {
+      "measured_in": 11.125, 
+      "method": "canopy solid X extent", 
+      "pass": true, 
+      "target_in": 11.125, 
+      "tolerance_in": 0.029999999999999999
+    }, 
+    "canopy_width": {
+      "measured_in": 4.375, 
+      "method": "canopy solid Y extent", 
+      "pass": true, 
+      "target_in": 4.375, 
+      "tolerance_in": 0.029999999999999999
+    }, 
+    "globe_body_height": {
+      "measured_in": 6.0, 
+      "method": "union body Z extent; globe diameter controls height", 
+      "pass": true, 
+      "target_in": 6.0, 
+      "tolerance_in": 0.029999999999999999
+    }, 
+    "reopened_body_length": {
+      "measured_in": 48.0, 
+      "method": "saved/reopened RFA union body bounding box", 
+      "pass": true, 
+      "target_in": 48.0, 
+      "tolerance_in": 0.029999999999999999
+    }, 
+    "reopened_body_width": {
+      "measured_in": 13.375, 
+      "method": "saved/reopened RFA union body bounding box", 
+      "pass": true, 
+      "target_in": 13.375, 
+      "tolerance_in": 0.029999999999999999
+    }, 
+    "reopened_canopy_height": {
+      "measured_in": 0.875, 
+      "method": "saved/reopened canopy Z extent", 
+      "pass": true, 
+      "target_in": 0.875, 
+      "tolerance_in": 0.029999999999999999
+    }, 
+    "reopened_canopy_length": {
+      "measured_in": 11.125, 
+      "method": "saved/reopened canopy X extent", 
+      "pass": true, 
+      "target_in": 11.125, 
+      "tolerance_in": 0.029999999999999999
+    }, 
+    "reopened_canopy_width": {
+      "measured_in": 4.375, 
+      "method": "saved/reopened canopy Y extent", 
+      "pass": true, 
+      "target_in": 4.375, 
+      "tolerance_in": 0.029999999999999999
+    }, 
+    "reopened_globe_body_height": {
+      "measured_in": 6.0, 
+      "method": "saved/reopened RFA union body Z extent", 
+      "pass": true, 
+      "target_in": 6.0, 
+      "tolerance_in": 0.029999999999999999
+    }
+  }, 
+  "dimensions_source": "Lightology page plus manufacturer LP549448 dimension graphic", 
+  "family_exports": [
+    "Cassia - 3D View - Cassia Front.png", 
+    "Cassia - 3D View - Cassia Material.png", 
+    "Cassia - 3D View - Cassia Oblique.png", 
+    "Cassia - 3D View - Cassia Side.png"
+  ], 
+  "family_type": "LP549448AGOP - Aged Gold / Opal Matte", 
+  "family_warnings": [], 
+  "finished_utc": "2026-09-24T02:49:04.055000Z", 
+  "gates": {
+    "correct_overhead_orientation": true, 
+    "face_based_placement": true, 
+    "fresh_rfa_reopen": true, 
+    "lighting_fixtures_category": true, 
+    "material_substitution_reaches_geometry": true, 
+    "native_host_reference": true, 
+    "requested_variant_persisted": true, 
+    "revit_2025": true, 
+    "saved_dimensions": true, 
+    "visual_exports_present": true, 
+    "zero_warnings": true
+  }, 
+  "host": {
+    "host_element_id": 3713, 
+    "host_face_matches": true, 
+    "host_face_reference_element_id": 3713, 
+    "host_face_z_in": 228.0, 
+    "host_reference_stable": "e5ba6b76-87b9-4c45-99d7-f1a5962984fa-00000e81:0:SURFACE", 
+    "host_type": "Floor 1", 
+    "instance_host_id": 3713, 
+    "instance_host_matches": true, 
+    "source_reference_element_id": 3713
+  }, 
+  "hosted_exports": [
+    "Cassia_Hosted - 3D View - Cassia Hosted.png"
+  ], 
+  "lightology_spec": "ALR1104949", 
+  "manufacturer_model": "LP549448AGOP", 
+  "material_tests": {
+    "Glass Finish": {
+      "faces_carrying_substitute": 16, 
+      "faces_inspected": 82, 
+      "parameter_writable": true, 
+      "reached_geometry": true, 
+      "restored_material_id": 2813, 
+      "substitute_material_id": 3723
+    }, 
+    "Metal Finish": {
+      "faces_carrying_substitute": 66, 
+      "faces_inspected": 82, 
+      "parameter_writable": true, 
+      "reached_geometry": true, 
+      "restored_material_id": 2811, 
+      "substitute_material_id": 3722
+    }
+  }, 
+  "orientation": {
+    "drop_pass": true, 
+    "expected_drop_in": 15.875, 
+    "hangs_below_host": true, 
+    "instance_max_z_in": 228.0, 
+    "instance_min_z_in": 212.125, 
+    "measured_drop_in": 15.875000000000014
+  }, 
+  "output_dir": "E:\\Claude\\3D-Model-Workflow\\output\\lightology_20260923\\f08_1104949", 
+  "parts": {
+    "body": [
+      {
+        "id": 3223, 
+        "name": "Main rail"
+      }, 
+      {
+        "id": 3224, 
+        "name": "Left opal globe"
+      }, 
+      {
+        "id": 3225, 
+        "name": "Right opal globe"
+      }, 
+      {
+        "id": 3226, 
+        "name": "Left globe collar"
+      }, 
+      {
+        "id": 3227, 
+        "name": "Right globe collar"
+      }, 
+      {
+        "id": 3228, 
+        "name": "Rear opal globe"
+      }, 
+      {
+        "id": 3229, 
+        "name": "Front opal globe"
+      }, 
+      {
+        "id": 3230, 
+        "name": "Cross rail"
+      }, 
+      {
+        "id": 3231, 
+        "name": "Rear globe collar"
+      }, 
+      {
+        "id": 3232, 
+        "name": "Front globe collar"
+      }
+    ], 
+    "suspension": [
+      {
+        "id": 3218, 
+        "name": "Canopy"
+      }, 
+      {
+        "id": 3219, 
+        "name": "Downrod -4.000"
+      }, 
+      {
+        "id": 3220, 
+        "name": "Downrod lower collar -4.000"
+      }, 
+      {
+        "id": 3221, 
+        "name": "Downrod 4.000"
+      }, 
+      {
+        "id": 3222, 
+        "name": "Downrod lower collar 4.000"
+      }
+    ]
+  }, 
+  "placement_type": "WorkPlaneBased", 
+  "product": "Alora Mood Cassia Linear Pendant", 
+  "project_warnings": [], 
+  "reopened": true, 
+  "reopened_body_bounds_in": {
+    "max": [
+      24.0, 
+      6.6875, 
+      15.875
+    ], 
+    "min": [
+      -24.0, 
+      -6.6875, 
+      9.875
+    ], 
+    "size": [
+      48.0, 
+      13.375, 
+      6.0
+    ]
+  }, 
+  "reopened_canopy_bounds_in": {
+    "max": [
+      5.5625, 
+      2.1875, 
+      0.875
+    ], 
+    "min": [
+      -5.5625, 
+      -2.1875, 
+      0.0
+    ], 
+    "size": [
+      11.125, 
+      4.375, 
+      0.875
+    ]
+  }, 
+  "requested_variant": {
+    "color": "Opal Matte", 
+    "finish": "Aged Gold"
+  }, 
+  "revit_build": "25.4.50.35", 
+  "revit_version": "2025", 
+  "rfa_bytes": 479232, 
+  "rfa_mtime_utc": "2026-09-24T02:49:00Z", 
+  "saved_identity": {
+    "CCT": "Lamp dependent - 4 x E12 lamps not included", 
+    "Finish": "Aged Gold", 
+    "Lightology Spec": "ALR1104949", 
+    "Manufacturer": "Alora Mood", 
+    "Model": "LP549448AGOP", 
+    "Shade Color": "Opal Matte"
+  }, 
+  "saved_material_ids": {
+    "Glass Finish": 3205, 
+    "Metal Finish": 3203
+  }, 
+  "script": "build_cassia.py", 
+  "stage": "complete", 
+  "started_utc": "2026-09-24T02:48:52.199000Z", 
+  "suspension_element_ids": [
+    3218, 
+    3219, 
+    3220, 
+    3221, 
+    3222
+  ], 
+  "task": "f08_1104949", 
+  "technical_pass": true, 
+  "templates": {
+    "face_based": "C:\\ProgramData\\Autodesk\\RVT 2025\\Family Templates\\English-Imperial\\Generic Model face based.rft", 
+    "face_based_exists": true
+  }, 
+  "visual_verdict": "PENDING SELF REVIEW"
+}

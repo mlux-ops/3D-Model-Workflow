@@ -1,0 +1,38 @@
+﻿F07 Nodes KW1041 preparation manifest - 2026-09-23
+Root: E:\Claude\3D-Model-Workflow\output\lightology_20260923\f07_833919
+
+FINAL RFA TARGETS
+Visual_Comfort_Nodes_KW1041BBS_Burnished_Brass_R2025.rfa
+Visual_Comfort_Nodes_KW1041MBK_Midnight_Black_R2025.rfa
+
+BUILDER
+build_nodes.py
+wrapper_sha256=6ba663d4dfec7d7fd7f84ac3fddead2749d2a9bad95b027b312bfab25a6ea628
+authoritative_builder=build_nodes_payload_expanded.py
+authoritative_builder_bytes=30212
+authoritative_builder_sha256=41e6a0142a6e365305f164e2a0fa7e2a60f8a511c64cc797359e4a595d6882de
+transport_payload_original_bytes=29726
+transport_payload_original_sha256=c180adf547c050d366f6ced88164aba61ca895ce6a8a922484edf67456bda8c9
+payload_transport_base64_chars=12224
+payload_transport_compressed_bytes=9166
+authoritative_parts=0,1,2,3a,3b,3c,3d0,3d1,3d2,3d3,3d4,3e0,3e1,3e2,3e3,3e4,3f0,3f1,3f2,3f3,3f4,4
+
+SOURCE EVIDENCE
+sources/lightology_833918_burnished_brass.html
+sources/lightology_833919_midnight_black.html
+sources/lightology_brass_page_view.png
+sources/lightology_midnight_black_page_view.png
+sources/833918_burnished_brass.jpg
+sources/833919_midnight_black.jpg
+sources/833919_additional.jpg
+sources/KW1041_MWT_side_reference.jpg
+sources/KW1041_MWT_oblique_reference.jpg
+sources/833918_lightology_spec_sheet.pdf
+sources/KW1041_install_instructions_20230426.pdf
+
+STATUS
+Preparation complete. Native Revit 2025, source comparison, visual review and prime review pending serialized slot.
+
+READY_REVIT_COMMAND
+D:\Games\pyRevit-Master\bin\pyrevit.exe run "E:\Claude\3D-Model-Workflow\output\lightology_20260923\f07_833919\build_nodes_payload_expanded.py" --revit=2025
+

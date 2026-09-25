@@ -1,0 +1,133 @@
+{
+  "product": "Maverick II Indoor / Outdoor Ceiling Fan with Light", 
+  "blade_plan_scale_to_nominal_sweep": 0.99396174197966081, 
+  "material_substitution": {
+    "qa_material_reached_geometry": true, 
+    "qa_material_id": "3723", 
+    "resolved_face_material_ids": [
+      "2811", 
+      "2815", 
+      "3723"
+    ], 
+    "blade_parameter_found": true
+  }, 
+  "technical_pass": false, 
+  "lightology_spec": "MTC816709", 
+  "manufacturer": "Visual Comfort Fan", 
+  "finished_utc": "2026-09-24T03:20:55.774000Z", 
+  "finish": "Matte Black", 
+  "rfa_path": "E:\\Claude\\3D-Model-Workflow\\output\\lightology_20260923\\f01_816712\\Visual_Comfort_Maverick_II_3MAVR52BKBKD_R2025.rfa", 
+  "rfa_mtime_utc": "2026-09-24T03:20:53Z", 
+  "category": "Lighting Fixtures", 
+  "evidence_files": [
+    "F01_Family - 3D View - Front.png", 
+    "F01_Family - 3D View - Oblique.png", 
+    "F01_Family - 3D View - Side.png", 
+    "F01_Hosted - 3D View - Hosted Review.png", 
+    "F01_MaterialQA - 3D View - Material QA.png"
+  ], 
+  "family_warnings_reopen": [], 
+  "placement_type": "WorkPlaneBased", 
+  "revit_version": "2025", 
+  "warning_count": 0, 
+  "dimension_checks": {
+    "sweep_52_in": true, 
+    "zmin_zero": false, 
+    "height_13_8_in": false
+  }, 
+  "measured_geometry": {
+    "height_in": 13.550000000000011, 
+    "sweep_diameter_in": 51.943714247722852, 
+    "zmax_in": 13.800000000000001, 
+    "zmin_in": 0.24999999999998956, 
+    "max_radius_in": 25.971857123861426
+  }, 
+  "reopened": true, 
+  "family_warnings_before_close": [], 
+  "source_url": "https://www.lightology.com/index.php?module=prod_detail&prod_id=816712&option_id=816709", 
+  "fixture_id": "f01_816712", 
+  "requested": {
+    "height_in": 13.800000000000001, 
+    "pitch_deg": 13.0, 
+    "cct_k": 3000, 
+    "span_in": 52.0
+  }, 
+  "manufacturer_id": "3MAVR52BKBKD", 
+  "manufacturer_dimensional_authority": {
+    "glass_height_in": 1.6200000000000001, 
+    "rod_length_in": 6.0, 
+    "glass_diameter_in": 6.8799999999999999, 
+    "canopy_diameter_in": 6.0, 
+    "retailer_conflicting_height_in": 19.800000000000001, 
+    "overall_height_in": 13.800000000000001, 
+    "source": "sources/VisualComfort_3MAVR52BKBKD_Spec.pdf", 
+    "rod_diameter_in": 0.5, 
+    "housing_diameter_in": 6.7999999999999998
+  }, 
+  "blade_model": {
+    "construction": "CreateLoftGeometry through nine rounded 3D cross-sections", 
+    "tip_twist_deg": 7.0, 
+    "max_chord_in": 5.7000000000000002, 
+    "tip_thickness_in": 0.17999999999999999, 
+    "aft_sweep_at_tip_in": 2.2000000000000002, 
+    "source_basis": "preserved Lightology product and application images", 
+    "nominal_pitch_deg": 13.0, 
+    "root_twist_deg": 20.0, 
+    "root_thickness_in": 0.62
+  }, 
+  "stage": "failed_gates", 
+  "host_validation": {
+    "face_placed": true, 
+    "host_element_id": "3714", 
+    "instance_host_id": "3714", 
+    "instance_bounds_in": [
+      -16.269709981512801, 
+      -24.037760330471727, 
+      118.19999999999999, 
+      25.843113385601313, 
+      21.868592383027774, 
+      132.0
+    ], 
+    "host_face_z_in": 132.0, 
+    "host_face_reference": "9546e32b-dac7-40df-81c5-fe9767919e34-00000e82:0:SURFACE", 
+    "hangs_below_host": true
+  }, 
+  "rfa_bytes": 528384, 
+  "project_warnings": [], 
+  "native_gate": false, 
+  "checkpoint_utc": "2026-09-24T03:20:54.228000Z", 
+  "parts": [
+    {
+      "name": "Canopy", 
+      "id": "3224"
+    }, 
+    {
+      "name": "Six-inch half-inch downrod", 
+      "id": "3225"
+    }, 
+    {
+      "name": "Compact smooth motor housing", 
+      "id": "3226"
+    }, 
+    {
+      "name": "Slim integrated light bezel", 
+      "id": "3227"
+    }, 
+    {
+      "name": "Shallow opal light disk", 
+      "id": "3228"
+    }, 
+    {
+      "name": "Sculpted blade 1", 
+      "id": "3229"
+    }, 
+    {
+      "name": "Sculpted blade 2", 
+      "id": "3230"
+    }, 
+    {
+      "name": "Sculpted blade 3", 
+      "id": "3231"
+    }
+  ]
+}

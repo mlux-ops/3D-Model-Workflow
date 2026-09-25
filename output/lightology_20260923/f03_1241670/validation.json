@@ -1,0 +1,181 @@
+{
+  "technical_pass": true, 
+  "appearance_defaults": {
+    "Clear Glass Finish": {
+      "rgb": [
+        244, 
+        246, 
+        242
+      ], 
+      "transparency": 0.85999999999999999, 
+      "gloss": 0.90000000000000002, 
+      "luminance": 0, 
+      "cct_k": null
+    }, 
+    "2700K Diffuser Finish": {
+      "rgb": [
+        249, 
+        239, 
+        219
+      ], 
+      "transparency": 0, 
+      "gloss": 0.17999999999999999, 
+      "luminance": 100, 
+      "cct_k": 2700
+    }, 
+    "Bronze Finish": {
+      "rgb": [
+        61, 
+        49, 
+        39
+      ], 
+      "transparency": 0, 
+      "gloss": 0.41999999999999998, 
+      "luminance": 0, 
+      "cct_k": null
+    }
+  }, 
+  "inferences": "Published3.5W x18.5H x3.75projection and3.5x5.25plate govern. Official product photograph and dimension drawing show subtly flared glass and inner diffuser, not straight cylinders. Manufacturer RFA supports glass2.024OD,inner1.347OD x17.237long,central sleeve1.914OD x3.611H. Plate thickness.875in and conical wall thickness.085in are source-informed inferences. Native smooth reconstruction preserves printed nominal dimensions over slight source-RFA oversize; endcaps and small rounding inferred. Face host supports rotating horizontal/vertical installation.", 
+  "source_informed_sizes_in": {
+    "backplate_projection_inferred": 0.875, 
+    "glass_end_diameter": 2.0240000000000000, 
+    "glass_neck_diameter": 1.8200000000000001, 
+    "sleeve_height": 3.6110000000000002, 
+    "diffuser_total_length": 17.236999999999998, 
+    "diffuser_end_diameter": 1.3470000000000000, 
+    "sleeve_diameter": 1.9139999999999999
+  }, 
+  "reopened_warnings": [], 
+  "template_form_ids": [
+    "1537"
+  ], 
+  "model": "ARN2473BZ-CG", 
+  "started_utc": "2026-09-24T03:11:57.140000Z", 
+  "parts": [
+    {
+      "volume_ft3": 0.0093035885607845974, 
+      "name": "Raised rectangular bronze backplate", 
+      "id": "3218"
+    }, 
+    {
+      "volume_ft3": 0.0015983684482066937, 
+      "name": "Short mounting standoff", 
+      "id": "3219"
+    }, 
+    {
+      "volume_ft3": 0.0060010680571769585, 
+      "name": "Bronze central sleeve", 
+      "id": "3220"
+    }, 
+    {
+      "volume_ft3": 0.0022894753428242265, 
+      "name": "Upper subtly flared clear glass shell", 
+      "id": "3221"
+    }, 
+    {
+      "volume_ft3": 0.0048012747430427952, 
+      "name": "Upper tapered warm white inner diffuser", 
+      "id": "3222"
+    }, 
+    {
+      "volume_ft3": 0.0022894753428242265, 
+      "name": "Lower subtly flared clear glass shell", 
+      "id": "3223"
+    }, 
+    {
+      "volume_ft3": 0.0048012747430427952, 
+      "name": "Lower tapered warm white inner diffuser", 
+      "id": "3224"
+    }
+  ], 
+  "reopened": true, 
+  "bounds_method": "Fine native face meshes plus 128-sample analytic edges", 
+  "finished_utc": "2026-09-24T03:12:22.896000Z", 
+  "cct_k": 2700, 
+  "type": "Bronze - White Glass - 2700K", 
+  "stage": "complete", 
+  "manufacturer": "Visual Comfort Signature / AERIN", 
+  "actual_dimensions_in": [
+    3.5, 
+    18.499999523162842, 
+    3.75
+  ], 
+  "source_measurements_file": "source_geometry_measurements.json", 
+  "gates": {
+    "reopened": true, 
+    "category": true, 
+    "actual_face_host": true, 
+    "orientation": true, 
+    "dimensions": true, 
+    "cct": true, 
+    "warnings": true, 
+    "views": true, 
+    "materials": true
+  }, 
+  "host": {
+    "normal_dot": 1.0, 
+    "host_kind": "wall", 
+    "hostface_present": true, 
+    "instance_host_id": "3708", 
+    "host_id": "3708"
+  }, 
+  "evidence_files": [
+    "AERIN_Brenta_ARN2473BZ-CG_Bronze_R2025 - 3D View - Front.png", 
+    "AERIN_Brenta_ARN2473BZ-CG_Bronze_R2025 - 3D View - Material.png", 
+    "AERIN_Brenta_ARN2473BZ-CG_Bronze_R2025 - 3D View - Oblique.png", 
+    "AERIN_Brenta_ARN2473BZ-CG_Bronze_R2025 - 3D View - Side.png", 
+    "AERIN_Brenta_ARN2473BZ-CG_Bronze_R2025_Hosted - 3D View - Hosted.png", 
+    "AERIN_Brenta_ARN2473BZ-CG_Bronze_R2025_Isolated - 3D View - Native Front.png", 
+    "AERIN_Brenta_ARN2473BZ-CG_Bronze_R2025_Isolated - 3D View - Native Material.png", 
+    "AERIN_Brenta_ARN2473BZ-CG_Bronze_R2025_Isolated - 3D View - Native Oblique.png", 
+    "AERIN_Brenta_ARN2473BZ-CG_Bronze_R2025_Isolated - 3D View - Native Side.png"
+  ], 
+  "expected_dimensions_in": [
+    3.5, 
+    18.5, 
+    3.75
+  ], 
+  "saved_cct_parameter_k": 2700.0, 
+  "bounds_in": [
+    -1.75, 
+    -9.2499997615814209, 
+    -1.215702225812492e-24, 
+    1.75, 
+    9.2499997615814209, 
+    3.75
+  ], 
+  "material_tests": {
+    "Clear Glass Finish": {
+      "face_count": 70, 
+      "substitution_reaches_faces": true, 
+      "writable": true
+    }, 
+    "2700K Diffuser Finish": {
+      "face_count": 70, 
+      "substitution_reaches_faces": true, 
+      "writable": true
+    }, 
+    "Bronze Finish": {
+      "face_count": 70, 
+      "substitution_reaches_faces": true, 
+      "writable": true
+    }
+  }, 
+  "resolved_bronze_url": "https://www.lightology.com/index.php?module=prod_detail&prod_id=1241670&option_id=1241668", 
+  "family_warnings": [], 
+  "revit_build": "25.4.50.35", 
+  "display_bounds_in": [
+    -1.75, 
+    -9.25, 
+    0.0, 
+    1.75, 
+    9.25, 
+    3.7004691944906973
+  ], 
+  "source_review_file": "SOURCE_REVIEW.md", 
+  "placement": "WorkPlaneBased", 
+  "revit_version": "2025", 
+  "category": "Lighting Fixtures", 
+  "project_warnings": [], 
+  "rfa_path": "E:\\Claude\\3D-Model-Workflow\\output\\lightology_20260923\\f03_1241670\\AERIN_Brenta_ARN2473BZ-CG_Bronze_R2025.rfa"
+}

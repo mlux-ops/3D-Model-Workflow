@@ -1,0 +1,154 @@
+{
+  "revit_build": "25.4.50.35", 
+  "actual_dimensions_in": [
+    4.0000001192092896, 
+    16.329962790012360, 
+    14.170000076293945
+  ], 
+  "started_utc": "2026-09-24T03:23:22.810000Z", 
+  "family_warnings": [], 
+  "technical_pass": true, 
+  "drawing_derived_canopy_diameter_in": 4.0, 
+  "host": {
+    "host_kind": "wall", 
+    "host_id": "3699", 
+    "instance_host_id": "3699", 
+    "hostface_present": true, 
+    "normal_dot": 1.0
+  }, 
+  "display_bounds_in": [
+    -2.0000000000000004, 
+    -1.9498558243636495, 
+    0.0, 
+    2.0, 
+    14.330000000000002, 
+    14.112246689228284
+  ], 
+  "appearance_defaults": {
+    "Brass Finish": {
+      "transparency": 0, 
+      "rgb": [
+        174, 
+        136, 
+        72
+      ], 
+      "luminance": 0, 
+      "cct_k": null, 
+      "gloss": 0.42999999999999999
+    }, 
+    "Recessed Lamp Finish": {
+      "transparency": 0, 
+      "rgb": [
+        245, 
+        238, 
+        219
+      ], 
+      "luminance": 0, 
+      "cct_k": null, 
+      "gloss": 0.20000000000000001
+    }
+  }, 
+  "placement": "WorkPlaneBased", 
+  "template_form_ids": [
+    "1537"
+  ], 
+  "model": "A.288.10.ON", 
+  "finished_utc": "2026-09-24T03:23:31.327000Z", 
+  "category": "Lighting Fixtures", 
+  "manufacturer": "Il Fanale", 
+  "source": "https://www.lightology.com/index.php?module=prod_detail&prod_id=1254269&option_id=1254270", 
+  "reopened_warnings": [], 
+  "expected_dimensions_in": [
+    4.0, 
+    16.329999999999998, 
+    14.170000000000000
+  ], 
+  "rfa_path": "E:\\Claude\\3D-Model-Workflow\\output\\lightology_20260923\\f09_1254269\\IlFanale_Madame_28810ON_Brass_R2025.rfa", 
+  "project_warnings": [], 
+  "nominal_source_dimensions_in": {
+    "overall_height": 16.329999999999998, 
+    "projection": 14.170000000000000, 
+    "shade_width": 2.3599999999999999
+  }, 
+  "inferences": "Published16.33H x14.17projection and2.36in cylindrical shade diameter. The dimensioned side drawing visibly shows a larger hemispherical wall cover: its4in diameter is drawing-derived, so actual modeled width4in includes the canopy and is not mislabeled2.36in overall. Head4.72H, rod.36D, wall-cover depth2in, ball joints and bell shoulder are photo/drawing-derived. Brass selection A.288.10.ON; no installation fasteners or photometric source modeled.", 
+  "bounds_method": "Fine native face meshes plus 128-sample analytic edges", 
+  "gates": {
+    "category": true, 
+    "orientation": true, 
+    "dimensions": true, 
+    "cct": true, 
+    "views": true, 
+    "actual_face_host": true, 
+    "warnings": true, 
+    "reopened": true, 
+    "materials": true
+  }, 
+  "type": "Brass - Madame Wall Light", 
+  "bounds_in": [
+    -2.0000000596046448, 
+    -2.0000000596046448, 
+    -4.451668463679186e-23, 
+    2.0000000596046448, 
+    14.329962730407715, 
+    14.170000076293945
+  ], 
+  "reopened": true, 
+  "evidence_files": [
+    "IlFanale_Madame_28810ON_Brass_R2025 - 3D View - Front.png", 
+    "IlFanale_Madame_28810ON_Brass_R2025 - 3D View - Material.png", 
+    "IlFanale_Madame_28810ON_Brass_R2025 - 3D View - Oblique.png", 
+    "IlFanale_Madame_28810ON_Brass_R2025 - 3D View - Side.png", 
+    "IlFanale_Madame_28810ON_Brass_R2025_Hosted - 3D View - Hosted.png", 
+    "IlFanale_Madame_28810ON_Brass_R2025_Isolated - 3D View - Native Front.png", 
+    "IlFanale_Madame_28810ON_Brass_R2025_Isolated - 3D View - Native Material.png", 
+    "IlFanale_Madame_28810ON_Brass_R2025_Isolated - 3D View - Native Oblique.png", 
+    "IlFanale_Madame_28810ON_Brass_R2025_Isolated - 3D View - Native Side.png"
+  ], 
+  "cct_k": null, 
+  "stage": "complete", 
+  "revit_version": "2025", 
+  "parts": [
+    {
+      "volume_ft3": 0.0096962736221714863, 
+      "id": "3213", 
+      "name": "Hemispherical wall canopy"
+    }, 
+    {
+      "volume_ft3": 0.00052359868364648622, 
+      "id": "3214", 
+      "name": "Rear ball joint"
+    }, 
+    {
+      "volume_ft3": 0.0016545135465310782, 
+      "id": "3215", 
+      "name": "Continuous smooth arched brass arm"
+    }, 
+    {
+      "volume_ft3": 0.00044892042139140181, 
+      "id": "3216", 
+      "name": "Shade ball joint"
+    }, 
+    {
+      "volume_ft3": 0.0017949628325039102, 
+      "id": "3217", 
+      "name": "Open-bottom brass cylindrical bell shade"
+    }, 
+    {
+      "volume_ft3": 0.00017333944924220442, 
+      "id": "3218", 
+      "name": "Recessed lamp face"
+    }
+  ], 
+  "material_tests": {
+    "Brass Finish": {
+      "writable": true, 
+      "substitution_reaches_faces": true, 
+      "face_count": 36
+    }, 
+    "Recessed Lamp Finish": {
+      "writable": true, 
+      "substitution_reaches_faces": true, 
+      "face_count": 36
+    }
+  }
+}

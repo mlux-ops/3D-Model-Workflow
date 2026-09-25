@@ -1,0 +1,96 @@
+﻿{
+    "fixture":  "Brenta Single Sconce",
+    "designer":  "AERIN",
+    "manufacturer":  "Visual Comfort Signature",
+    "requested_finish":  "Bronze",
+    "model":  "ARN 2473BZ-CG",
+    "lightology_spec":  "VCG1241668",
+    "assignment_url":  "https://www.lightology.com/index.php?module=prod_detail\u0026prod_id=1241670\u0026option_id=1241669",
+    "assignment_url_option":  "Hand-Rubbed Antique Brass / ARN 2473HAB-CG / VCG1241669",
+    "resolved_bronze_url":  "https://www.lightology.com/index.php?module=prod_detail\u0026prod_id=1241670\u0026option_id=1241668",
+    "manufacturer_page":  "https://www.visualcomfort.com/us/p/brenta-single-sconce-arn2473",
+    "manufacturer_spec":  "https://www.visualcomfort.com/media/docs/spec_sheet/a/r/ts_arn2473bzcg.pdf",
+    "nominal_dimensions_in":  {
+                                  "width":  3.5,
+                                  "height":  18.5,
+                                  "extension":  3.75,
+                                  "backplate_width":  3.5,
+                                  "backplate_height":  5.25
+                              },
+    "lamp":  {
+                 "source":  "Dedicated LED",
+                 "cct_k":  2700,
+                 "delivered_lumens":  750
+             },
+    "materials":  [
+                      "Glass",
+                      "Brass"
+                  ],
+    "source_files":  [
+                         "source/lightology_bronze.jpg",
+                         "source/lightology_spec.pdf",
+                         "source/visualcomfort_spec_bronze.pdf",
+                         "source/visualcomfort_cb_arn2473.dwg",
+                         "source/visualcomfort_arn2473_reference.rfa",
+                         "source/lightology_line_reference.jpg",
+                         "source/lightology_additional_reference.jpg",
+                         "source/visualcomfort_bronze_official.jpg",
+                         "source/visualcomfort_install_bronze.pdf"
+                     ],
+    "modeled_inferences":  {
+                               "clear_glass_outer_diameter_in":  2.024,
+                               "bronze_center_sleeve_outer_diameter_in":  1.914,
+                               "bronze_center_sleeve_height_in":  3.611,
+                               "glass_axis_projection_from_host_in":  2.75,
+                               "backplate_thickness_in":  0.18,
+                               "standoff_geometry":  "photo-derived; sized to connect backplate to central sleeve without changing nominal envelope"
+                           },
+    "geometry_basis":  "Nominal overall/backplate dimensions are manufacturer-specified. Glass diameter, central sleeve diameter/height, backplate thickness, standoff and small edge radii are inferred from the Bronze product photograph and are flagged in the family accuracy notes.",
+    "native_command":  "D:\\Games\\pyRevit-Master\\bin\\pyrevit.exe run E:\\Claude\\3D-Model-Workflow\\output\\lightology_20260923\\f03_1241670\\build_brenta.py --revit=2025",
+    "drawing_derived":  {
+                            "mounting_plate_center_from_end_in":  9.25,
+                            "backplate_centered_on_fixture":  true,
+                            "line_reference":  "source/lightology_line_reference.jpg"
+                        },
+    "source_notes":  {
+                         "primary_finish_reference":  "source/visualcomfort_bronze_official.jpg",
+                         "additional_reference_finish":  "Polished Nickel - geometry only",
+                         "electrical_metadata_conflict":  "Lightology lists 2 x 9W / 18W total; Visual Comfort variant data displays 9w (750lm). No geometry impact.",
+                         "native_status":  "READY_REVIT sent; prime owns native execution/review; worker must not launch a second run."
+                     },
+    "manufacturer_rfa_measured_solids_in":  [
+                                                {
+                                                    "likely_role":  "inner diffuser",
+                                                    "size":  [
+                                                                 1.347,
+                                                                 1.347,
+                                                                 17.237
+                                                             ]
+                                                },
+                                                {
+                                                    "likely_role":  "outer glass",
+                                                    "size":  [
+                                                                 2.024,
+                                                                 2.021,
+                                                                 18.577
+                                                             ]
+                                                },
+                                                {
+                                                    "likely_role":  "backplate",
+                                                    "size":  [
+                                                                 3.665,
+                                                                 0.92,
+                                                                 5.367
+                                                             ]
+                                                },
+                                                {
+                                                    "likely_role":  "central housing",
+                                                    "size":  [
+                                                                 1.914,
+                                                                 2.929,
+                                                                 3.611
+                                                             ]
+                                                }
+                                            ],
+    "nominal_override_note":  "Manufacturer RFA component bounds slightly exceed printed overall dimensions; preserve published 3.5 W x 18.5 H x 3.75 extension as final envelope and use RFA only for internal proportions."
+}

@@ -1,0 +1,116 @@
+{
+  "reopened": true, 
+  "nominal_dimensions_in": {
+    "projection": 11.0, 
+    "width": 7.9000000000000004, 
+    "height": 8.5
+  }, 
+  "evidence_files": [
+    "FLOS_IC - 3D View - FLOS IC Front.png", 
+    "FLOS_IC - 3D View - FLOS IC Material.png", 
+    "FLOS_IC - 3D View - FLOS IC Oblique.png", 
+    "FLOS_IC - 3D View - FLOS IC Side.png", 
+    "FLOS_IC_Hosted - 3D View - FLOS IC Hosted Oblique.png"
+  ], 
+  "reopened_warnings": [], 
+  "host_validation": {
+    "wall_id": "3704", 
+    "hostface_present": true, 
+    "face_based_host": true, 
+    "transform_basis_z_dot_face_normal": 1.0, 
+    "host_id": "3704"
+  }, 
+  "model": "FU317859", 
+  "assignment_url": "https://www.lightology.com/index.php?module=prod_detail&prod_id=231180", 
+  "rfa_bytes": 479232, 
+  "fixture": "IC C/W1 Wall / Ceiling Light", 
+  "generated_parts": [
+    {
+      "name": "7.9 inch opal globe", 
+      "id": "3219"
+    }, 
+    {
+      "name": "Brass bell backplate", 
+      "id": "3220"
+    }, 
+    {
+      "name": "Vertical brass riser", 
+      "id": "3221"
+    }, 
+    {
+      "name": "Rounded brass elbow", 
+      "id": "3222"
+    }, 
+    {
+      "name": "Horizontal brass rail", 
+      "id": "3223"
+    }, 
+    {
+      "name": "Globe contact cap", 
+      "id": "3224"
+    }
+  ], 
+  "designer": "Michael Anastassiades", 
+  "material_tests": {
+    "Brass Finish": {
+      "faces": 44, 
+      "substitute_reached_geometry": true, 
+      "writable": true
+    }, 
+    "Opal Glass Finish": {
+      "faces": 44, 
+      "substitute_reached_geometry": true, 
+      "writable": true
+    }
+  }, 
+  "manufacturer": "FLOS", 
+  "placed_bbox_dimensions_sorted_in": [
+    7.8999999999999986, 
+    8.5000000000004761, 
+    11.0
+  ], 
+  "rfa_mtime_utc": "2026-09-24T03:12:27Z", 
+  "requested_finish": "Brass", 
+  "stage": "complete", 
+  "category": "Lighting Fixtures", 
+  "visual_verdict": "PENDING SELF REVIEW AND PRIME REVIEW", 
+  "dimension_checks": {
+    "width_7_9": true, 
+    "projection_11": true, 
+    "height_8_5": true
+  }, 
+  "technical_pass": true, 
+  "placement": "WorkPlaneBased", 
+  "gates": {
+    "face_based_placement": true, 
+    "zero_warnings": true, 
+    "actual_host_face": true, 
+    "visual_exports": true, 
+    "reopen": true, 
+    "lighting_fixture_category": true, 
+    "material_substitution_reaches_geometry": true, 
+    "nominal_dimensions": true
+  }, 
+  "started_utc": "2026-09-24T03:12:27.131000Z", 
+  "project_warnings": [], 
+  "rfa_path": "E:\\Claude\\3D-Model-Workflow\\output\\lightology_20260923\\f02_231180\\FLOS_IC_CW1_FU317859_Brass_Opal_R2025.rfa", 
+  "family_bounds_in": [
+    -3.9499999999999993, 
+    1.3322676295501878e-15, 
+    -1.0408340855860843e-17, 
+    3.9499999999999993, 
+    8.5, 
+    11.0
+  ], 
+  "lamp": {
+    "source": "1 x JCD/G9", 
+    "wattage_w": 60, 
+    "voltage_v": 120
+  }, 
+  "lightology_spec": "FLO231180", 
+  "revit_version": "2025", 
+  "finished_utc": "2026-09-24T03:12:32.090000Z", 
+  "family_warnings": [], 
+  "revit_build": "25.4.50.35", 
+  "color": "Opal"
+}

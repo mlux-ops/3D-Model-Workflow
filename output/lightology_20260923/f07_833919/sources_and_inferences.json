@@ -1,0 +1,54 @@
+{
+  "fixture": "Nodes Angled Wall Sconce",
+  "designer": "Kelly Wearstler",
+  "manufacturer": "Visual Comfort Studio",
+  "product_family": "KW1041",
+  "assignment_url": "https://www.lightology.com/index.php?module=prod_detail&prod_id=833919&option_id=833918",
+  "requested_variants": [
+    {"finish":"Burnished Brass","lightology_spec":"VCS833918","manufacturer_model":"KW1041BBS","option_id":833918},
+    {"finish":"Midnight Black","lightology_spec":"VCS833919","manufacturer_model":"KW1041MBK","option_id":833919}
+  ],
+  "measured_or_published": {
+    "overall_in":{"width":8.0,"height":7.63,"projection":5.5},
+    "backplate_in":{"diameter":5.25,"depth":0.125},
+    "shade_in":{"diameter":3.5,"axial_height":3.25},
+    "materials":["Glass","Steel"],
+    "lamp":"1 x JCD/G9/3W/120V LED; bulb not included",
+    "dimmer":"Standard 120V",
+    "listing":["ETL","cETL","Damp Location"]
+  },
+  "drawing_derived": [
+    "Round wall mounting/backplate.",
+    "Tapered fixture housing projecting from the round backplate.",
+    "Angled socket passes through a separate removable circular plate/reflector.",
+    "Lamp installs into socket and milk shade screws onto socket."
+  ],
+  "inferred": [
+    {"item":"reflector physical diameter","value_in":8.0,"basis":"Published overall width is 8 in and front/oblique product views show the reflector defining overall width."},
+    {"item":"reflector/socket tilt","value_deg":18.0,"basis":"An 8 in disc tilted 18 deg with modeled 0.08 in thickness projects to about 7.633 in wall-plane height, matching published 7.63 in; product and installation views show the angled axis."},
+    {"item":"reflector thickness","value_in":0.08,"basis":"Thin plate appearance in side/product views; no manufacturer thickness dimension found."},
+    {"item":"housing diameters","value_in":{"back":4.6,"front":3.24},"basis":"Scaled from 5.25 in backplate and product/installation views."},
+    {"item":"housing front projection","value_in":1.82,"basis":"Solved with angled shade placement to reproduce published 5.5 in total projection and match side image proportions."},
+    {"item":"socket radius","value_in":0.34,"basis":"Scaled from shade and installation drawing."},
+    {"item":"material optical values","basis":"Visual approximation to product photography; not manufacturer optical measurements."}
+  ],
+  "source_files": [
+    "sources/lightology_833918_burnished_brass.html",
+    "sources/lightology_833919_midnight_black.html",
+    "sources/lightology_brass_page_view.png",
+    "sources/lightology_midnight_black_page_view.png",
+    "sources/833918_burnished_brass.jpg",
+    "sources/833919_midnight_black.jpg",
+    "sources/833919_additional.jpg",
+    "sources/KW1041_MWT_side_reference.jpg",
+    "sources/KW1041_MWT_oblique_reference.jpg",
+    "sources/833918_lightology_spec_sheet.pdf",
+    "sources/KW1041_install_instructions_20230426.pdf"
+  ],
+  "source_urls": {
+    "brass_page":"https://www.lightology.com/index.php?module=prod_detail&prod_id=833919&option_id=833918",
+    "black_page":"https://www.lightology.com/index.php?module=prod_detail&prod_id=833919&option_id=833919",
+    "spec_sheet":"https://www.lightology.com/index.php?module=pdf_specification_sheet&prod_id=833918",
+    "install_sheet":"https://www.lightology.com/img/prod/pdf/vcstud-ig_kw1041-instr-20230426.pdf"
+  }
+}

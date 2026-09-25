@@ -1,0 +1,47 @@
+{
+  "fixture": "IC C/W1 Wall / Ceiling Light",
+  "designer": "Michael Anastassiades",
+  "manufacturer": "FLOS",
+  "requested_finish": "Brass",
+  "color": "Opal",
+  "model": "FU317859",
+  "lightology_spec": "FLO231180",
+  "assignment_url": "https://www.lightology.com/index.php?module=prod_detail&prod_id=231180",
+  "nominal_dimensions_in": {
+    "globe_diameter": 7.9,
+    "overall_height": 8.5,
+    "projection": 11.0,
+    "wall_plate_diameter": 4.3
+  },
+  "lamp": {
+    "source": "JCD/G9 halogen",
+    "quantity": 1,
+    "wattage_w": 60,
+    "voltage_v": 120
+  },
+  "materials": ["Metal", "Glass"],
+  "country_of_origin": "Italy",
+  "source_files": [
+    "source/lightology_231180_brass.jpg",
+    "source/lightology_ic_wall_line.png",
+    "source/lightology_ic_wall_app1.jpg",
+    "source/lightology_231180_spec.pdf"
+  ],
+  "drawing_derived": {
+    "globe_diameter_in": 7.9,
+    "overall_height_in": 8.5,
+    "projection_in": 11.0,
+    "wall_plate_diameter_in": 4.3
+  },
+  "photo_derived_or_inferred": {
+    "globe_center_height_in": 3.95,
+    "globe_center_projection_in": 6.95,
+    "brass_tube_radius_in": 0.28,
+    "top_rail_axis_height_in": 8.22,
+    "backplate_projection_in": 1.05,
+    "globe_contact_cap_radius_in": 0.44
+  },
+  "geometry_basis": "The preserved Lightology line drawing explicitly dimensions the small option at 11 in projection, 8.5 in overall height, 7.9 in globe diameter and 4.3 in wall-plate diameter. The exact 231180 product image establishes the defining L-shaped brass tube, rounded elbow, shallow bell wall plate, top contact cap and opal globe. Tube thickness, bell-plate depth/profile and globe depth placement are image-derived and remain documented inferences.",
+  "orientation_note": "The product/application photography shows equivalent rotated wall mounting orientations. The face-based family is built in the line-drawing top-rail orientation and may be rotated on its host face.",
+  "native_command": "D:\\Games\\pyRevit-Master\\bin\\pyrevit.exe run E:\\Claude\\3D-Model-Workflow\\output\\lightology_20260923\\f02_231180\\build_ic_cw1.py --revit=2025"
+}

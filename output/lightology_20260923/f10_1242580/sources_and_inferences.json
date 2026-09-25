@@ -1,0 +1,93 @@
+{
+  "fixture_id": "F10",
+  "product": "Covet Ceiling Light / Covet Large Flush Mount",
+  "designer": "Kelly Wearstler",
+  "manufacturer": "Visual Comfort Signature",
+  "assignment_url": "https://www.lightology.com/index.php?module=prod_detail&prod_id=1242580&option_id=1242586",
+  "resolved_option_id": 1242586,
+  "lightology_spec": "VCG1242586",
+  "model": "KW 4115AB-ALB",
+  "finish": "Antique-Burnished Brass",
+  "color": "Alabaster",
+  "selected_option_dimensions_in": {
+    "width": 18.25,
+    "height": 2.75,
+    "canopy": 17.25
+  },
+  "manufacturer_page_crosscheck_in": {
+    "width": 18.25,
+    "height": 3.0,
+    "canopy": 17.5
+  },
+  "manufacturer_rfa_reference_geometry": {
+    "aggregate_bbox_in_approx": [
+      18.09,
+      3.02,
+      18.09
+    ],
+    "retainer_solids_count": 2,
+    "retainer_bbox_in_approx": [
+      1.6,
+      3.02,
+      11.01
+    ],
+    "use": "reference evidence only; generated family remains independent"
+  },
+  "electrical_reference": {
+    "source": "Dedicated LED",
+    "watts": 50,
+    "lumens": 4000,
+    "cct_k": 2700
+  },
+  "sources": [
+    {
+      "path": "source/lightology_1242586.jpg",
+      "role": "exact linked option hero image"
+    },
+    {
+      "path": "source/visualcomfort_ts_kw4115abalb.pdf",
+      "role": "manufacturer tear sheet"
+    },
+    {
+      "path": "source/visualcomfort_ig_kw4115abalb.pdf",
+      "role": "manufacturer installation guide"
+    },
+    {
+      "path": "source/visualcomfort_kw4115_reference.rfa",
+      "role": "manufacturer RFA retained for native reference inspection only"
+    },
+    {
+      "path": "source/covet_alabaster_diffuse.jpg",
+      "role": "companion diffuse crop from exact linked option photograph"
+    }
+  ],
+  "geometry_classification": {
+    "printed": [
+      "18.25 in overall width",
+      "2.75 in selected Lightology option height",
+      "17.25 in Lightology canopy",
+      "2700 K",
+      "50 W",
+      "4000 lm"
+    ],
+    "drawing_or_photo_derived": [
+      "square flush-mount form",
+      "alabaster body with ceiling-side edge wider than exposed underside",
+      "thin brass ceiling canopy",
+      "two opposite-side brass retaining elements"
+    ],
+    "inferred": [
+      "18.25 in square plan assumption from published top/front drawing context",
+      "17.50 in exposed underside width",
+      "retainer exact seating/edge offsets and corner radii"
+    ]
+  },
+  "sha256": {
+    "source/lightology_1242586.jpg": "9823446665E2D1CC26028A758805AD12471C9BE4FEE6C725D473E54A524C7958",
+    "source/visualcomfort_ts_kw4115abalb.pdf": "E22CFDD6EFACA468C241806FE0B0DE72C786B0E434984EBFEC8CDF302CCAF53E",
+    "source/visualcomfort_ig_kw4115abalb.pdf": "9D3101DEDB58B23B9BA9013B603AFE6620CBBF0528253374247A884140CF20A9",
+    "source/visualcomfort_kw4115_reference.rfa": "BE8C08F2DAC6834FE2FBE540F53B7CB0FCC883FCED9B7F5DA3283D402032AF4D",
+    "source/covet_alabaster_diffuse.jpg": "68406D67173924B29FD2FA5A6BEE8CC5CABA2C58D9260B6241BB27F684ED4901",
+    "build_covet.py": "0E19EB3ED281126B2CD157A5EF670FD69EB337E1FD154A6F48FF090B16FB076A"
+  }
+}

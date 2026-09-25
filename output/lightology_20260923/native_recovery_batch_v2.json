@@ -1,0 +1,60 @@
+[
+  {
+    "finished_utc": "2026-09-24T03:09:40.158000Z", 
+    "task": "F12", 
+    "returned": true, 
+    "script": "E:\\Claude\\3D-Model-Workflow\\output\\lightology_20260923\\f12_813073\\build_f12_orbel.py", 
+    "started_utc": "2026-09-24T03:09:22.722000Z"
+  }, 
+  {
+    "finished_utc": "2026-09-24T03:09:40.722000Z", 
+    "task": "F01", 
+    "returned": true, 
+    "script": "E:\\Claude\\3D-Model-Workflow\\output\\lightology_20260923\\f01_816712\\build_f01_816712.py", 
+    "started_utc": "2026-09-24T03:09:40.159000Z"
+  }, 
+  {
+    "finished_utc": "2026-09-24T03:09:58.503000Z", 
+    "task": "F03", 
+    "returned": false, 
+    "script": "E:\\Claude\\3D-Model-Workflow\\output\\lightology_20260923\\f03_1241670\\build_brenta.py", 
+    "started_utc": "2026-09-24T03:09:40.723000Z", 
+    "error": "Traceback (most recent call last):\n  File \"E:\\Claude\\3D-Model-Workflow\\output\\lightology_20260923\\tools\\run_recovery_batch_v2.py\", line 10, in <module>\n    execfile(path,{'__revit__':__revit__,'__file__':path,'__name__':'__main__'})\n  File \"E:\\Claude\\3D-Model-Workflow\\output\\lightology_20260923\\f03_1241670\\build_brenta.py\", line 32, in <module>\n    report=f.finish()\n  File \"E:\\Claude\\3D-Model-Workflow\\output\\lightology_20260923\\tools\\native_fixture_support.py\", line 255, in finish\n    if not self.report['technical_pass']:raise RuntimeError('Failed native gates: '+str([k for k,v in gates.items() if not v]))\nRuntimeError: Failed native gates: ['dimensions']\n"
+  }, 
+  {
+    "finished_utc": "2026-09-24T03:10:10.068000Z", 
+    "task": "F04", 
+    "returned": true, 
+    "script": "E:\\Claude\\3D-Model-Workflow\\output\\lightology_20260923\\f04_1149899\\build_forked.py", 
+    "started_utc": "2026-09-24T03:09:58.504000Z"
+  }, 
+  {
+    "finished_utc": "2026-09-24T03:10:28.343000Z", 
+    "task": "F05", 
+    "returned": true, 
+    "script": "E:\\Claude\\3D-Model-Workflow\\output\\lightology_20260923\\f05_1441643\\build_dimple.py", 
+    "started_utc": "2026-09-24T03:10:10.069000Z"
+  }, 
+  {
+    "finished_utc": "2026-09-24T03:10:32.509000Z", 
+    "task": "F06", 
+    "returned": false, 
+    "script": "E:\\Claude\\3D-Model-Workflow\\output\\lightology_20260923\\f06_1418164\\build_vantage.py", 
+    "started_utc": "2026-09-24T03:10:28.343000Z", 
+    "error": "Traceback (most recent call last):\n  File \"E:\\Claude\\3D-Model-Workflow\\output\\lightology_20260923\\tools\\run_recovery_batch_v2.py\", line 10, in <module>\n    execfile(path,{'__revit__':__revit__,'__file__':path,'__name__':'__main__'})\n  File \"E:\\Claude\\3D-Model-Workflow\\output\\lightology_20260923\\f06_1418164\\build_vantage.py\", line 20, in <module>\n    report=f.finish()\n  File \"E:\\Claude\\3D-Model-Workflow\\output\\lightology_20260923\\tools\\native_fixture_support.py\", line 255, in finish\n    if not self.report['technical_pass']:raise RuntimeError('Failed native gates: '+str([k for k,v in gates.items() if not v]))\nRuntimeError: Failed native gates: ['dimensions']\n"
+  }, 
+  {
+    "finished_utc": "2026-09-24T03:10:35.868000Z", 
+    "task": "F08", 
+    "returned": true, 
+    "script": "E:\\Claude\\3D-Model-Workflow\\output\\lightology_20260923\\f08_1104949\\build_cassia.py", 
+    "started_utc": "2026-09-24T03:10:32.510000Z"
+  }, 
+  {
+    "finished_utc": "2026-09-24T03:10:42.057000Z", 
+    "task": "F10", 
+    "returned": true, 
+    "script": "E:\\Claude\\3D-Model-Workflow\\output\\lightology_20260923\\f10_1242580\\build_covet.py", 
+    "started_utc": "2026-09-24T03:10:35.869000Z"
+  }
+]
