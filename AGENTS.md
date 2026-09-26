@@ -16,6 +16,15 @@ User instruction, recorded 2026-09-11: **Every time there is an error, log it in
 
 Existing discipline-specific conventions remain in [WORKFLOW.md](WORKFLOW.md).
 
+## File links to the user
+
+User instruction, recorded 2026-09-26: **Never give the user a file as a repo path or a code reference (`output/.../file.rfa`, `file.rfa:12`). Always give a link the user can click to download the file directly.**
+
+- Google Drive (preferred when the file is uploaded there): `https://drive.google.com/uc?export=download&id=<FILE_ID>`. Get the file ID from Drive metadata and confirm the Drive file size matches the local file.
+- GitHub (only when the file is not on Drive): `https://github.com/mlux-ops/3D-Model-Workflow/raw/<branch>/<URL-encoded path>`. Before giving the link, confirm the file exists on that branch on the remote. Do not link LFS-tracked files, such as `*.zip`, unless the LFS object is present on the remote.
+- Give one direct link per file. A folder or view link can be added as a secondary reference, but it never replaces the direct link.
+- If no direct link exists yet (file not pushed or not uploaded), upload or push the file first, or say plainly that it is still pending.
+
 ## Material deliverables
 
 User instruction, recorded 2026-09-18: An `.adsklib` with its required companion textures and setup notes is sufficient for material delivery. Individual Revit projects (`.rvt`) are not required when the library is provided; do not produce them by default. Temporary projects may be used for creation or validation. Deliver an RVT only when specifically requested or needed because no ADSKLIB is provided.
