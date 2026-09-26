@@ -1,0 +1,166 @@
+{
+  "bump_amount": 0.40000000000000002, 
+  "connected": {
+    "bump": {
+      "path": "C:\\Users\\found\\OneDrive\\Documents\\ChatGPT\\3DModelWorkflow\\output\\elm_ligne_noir\\textures\\ELM_Ligne_Noir_3x10_Bump16.png", 
+      "path_resolves": true, 
+      "scale_x_in": 35.999999999999993, 
+      "scale_y_in": 40.000000000000007
+    }, 
+    "colour": {
+      "path": "C:\\Users\\found\\OneDrive\\Documents\\ChatGPT\\3DModelWorkflow\\output\\elm_ligne_noir\\textures\\ELM_Ligne_Noir_3x10_Color.png", 
+      "path_resolves": true, 
+      "scale_x_in": 35.999999999999993, 
+      "scale_y_in": 40.000000000000007
+    }
+  }, 
+  "exports": [
+    {
+      "files": [
+        {
+          "bytes": 299844, 
+          "file": "ligne_noir - 3D View - Ligne Noir Wall Frontal.png"
+        }
+      ], 
+      "view_id": "2788"
+    }, 
+    {
+      "files": [
+        {
+          "bytes": 297984, 
+          "file": "ligne_noir - 3D View - Ligne Noir Wall Grazing.png"
+        }
+      ], 
+      "view_id": "2799"
+    }, 
+    {
+      "files": [
+        {
+          "bytes": 1498025, 
+          "file": "ligne_noir - 3D View - Ligne Noir Closeup Grazing.png"
+        }
+      ], 
+      "view_id": "2810"
+    }, 
+    {
+      "files": [
+        {
+          "bytes": 1004478, 
+          "file": "ligne_noir - 3D View - Ligne Noir Seam Closeup.png"
+        }
+      ], 
+      "view_id": "2821"
+    }
+  ], 
+  "failed_gates": [], 
+  "gates": {
+    "applied_to_native_face": true, 
+    "bump_amount_retained": true, 
+    "bump_bitmap_connected": true, 
+    "bump_path_resolves": true, 
+    "bump_scale_is_sample_size": true, 
+    "colour_bitmap_connected": true, 
+    "colour_path_resolves": true, 
+    "colour_scale_is_sample_size": true, 
+    "frontal_and_grazing_exported": true, 
+    "material_saved_and_reopened": true, 
+    "zero_project_warnings": true
+  }, 
+  "intended_maps": {
+    "bump": "C:\\Users\\found\\OneDrive\\Documents\\ChatGPT\\3DModelWorkflow\\output\\elm_ligne_noir\\textures\\ELM_Ligne_Noir_3x10_Bump16.png", 
+    "colour": "C:\\Users\\found\\OneDrive\\Documents\\ChatGPT\\3DModelWorkflow\\output\\elm_ligne_noir\\textures\\ELM_Ligne_Noir_3x10_Color.png"
+  }, 
+  "material_class": "Ceramic", 
+  "paint_test": {
+    "face_area_sqft": 64.0, 
+    "face_normal": [
+      0.0, 
+      -1.0, 
+      0.0
+    ], 
+    "is_painted": true, 
+    "matches_material": true, 
+    "painted_material_id": "2784", 
+    "wall_id": "2785"
+  }, 
+  "product": "ELM Surfaces Vivid Ligne Noir 3x10", 
+  "project_warnings": [], 
+  "read_back": {
+    "bump_amount": 0.40000000000000002, 
+    "glossiness": 0.14999999999999999
+  }, 
+  "render_note": "Exports are Realistic display-style view exports. Revit has no API entry point for a raytraced render, so no rendered image is claimed.", 
+  "reopened": true, 
+  "repo_root": "C:\\Users\\found\\OneDrive\\Documents\\ChatGPT\\3DModelWorkflow", 
+  "revit_version": "2025", 
+  "run_dir": "C:\\Users\\found\\OneDrive\\Documents\\ChatGPT\\3DModelWorkflow\\output\\elm_ligne_noir\\revit_check", 
+  "rvt_bytes": 466944, 
+  "rvt_path": "C:\\Users\\found\\OneDrive\\Documents\\ChatGPT\\3DModelWorkflow\\output\\elm_ligne_noir\\revit_check\\Ligne_Noir_Map_Check_R2025.rvt", 
+  "sample_size_in": {
+    "height": 40.0, 
+    "width": 36.0
+  }, 
+  "script": "check_ligne_noir_revit.py", 
+  "specification": "output/elm_ligne_noir/HANDOFF_REVIT_CHECK.md", 
+  "stage": "complete", 
+  "technical_pass": true, 
+  "transfer_project_standards_used": false, 
+  "views": [
+    {
+      "display_style": "Realistic", 
+      "framed_width_ft": 8.0, 
+      "grazing": false, 
+      "name": "Ligne Noir Wall Frontal", 
+      "sun_path": {
+        "parameter": "Sun Path", 
+        "set_to": 0
+      }
+    }, 
+    {
+      "display_style": "Realistic", 
+      "framed_width_ft": 8.0, 
+      "grazing": true, 
+      "name": "Ligne Noir Wall Grazing", 
+      "sun_path": {
+        "parameter": "Sun Path", 
+        "set_to": 0
+      }, 
+      "sun_read_back": {
+        "altitude_deg": 10.0, 
+        "azimuth_deg": 115.0, 
+        "type": "Lighting"
+      }
+    }, 
+    {
+      "display_style": "Realistic", 
+      "framed_width_ft": 2.0, 
+      "grazing": true, 
+      "name": "Ligne Noir Closeup Grazing", 
+      "sun_path": {
+        "parameter": "Sun Path", 
+        "set_to": 0
+      }, 
+      "sun_read_back": {
+        "altitude_deg": 10.0, 
+        "azimuth_deg": 115.0, 
+        "type": "Lighting"
+      }
+    }, 
+    {
+      "display_style": "Realistic", 
+      "framed_width_ft": 1.0, 
+      "grazing": true, 
+      "name": "Ligne Noir Seam Closeup", 
+      "sun_path": {
+        "parameter": "Sun Path", 
+        "set_to": 0
+      }, 
+      "sun_read_back": {
+        "altitude_deg": 10.0, 
+        "azimuth_deg": 115.0, 
+        "type": "Lighting"
+      }
+    }
+  ], 
+  "visual_verdict": "PENDING REVIEWER"
+}
