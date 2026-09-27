@@ -1,12 +1,16 @@
 # Project memory and error logging
 
+## Effort level
+
+User instruction, recorded 2026-09-26: **Default effort is high. Use max only for challenging textures, and only when the user requests it.** Don't pick max, or xhigh, on your own initiative, including for subagents and headless runs. The evidence is in `output/effort-trial-2026-09-26-hex/TRIAL_RESULTS.md`: max gave the best texture at about 4× the cost of high, and xhigh gave no clear gain over high.
+
 ## Stalls and retries
 
 User instruction, recorded 2026-09-22: **If work or a tool is stalling, tell the user promptly instead of repeatedly retrying or polling without meaningful progress.** State what is stalled, how long it has been stalled, and the last verified stage. Do not make repeated attempts at the same action without new evidence or a changed approach. Continue independent work when possible, and report any remaining blocker clearly.
 
 User instruction, recorded 2026-09-11: **Every time there is an error, log it in the project memory along with its solution.** This applies to all work in this project, including tool errors, failed commands, application import failures, incorrect outputs, and failed validation.
 
-- Read [PROJECT_MEMORY.md](PROJECT_MEMORY.md) before starting work and apply its relevant lessons.
+- Before starting work, grep [PROJECT_MEMORY.md](PROJECT_MEMORY.md) for the artifact, product, tool or error you are working on and read only the matching entries; apply their lessons. Do not read the whole file — it is over 60k tokens and stays in context for every later turn.
 - When an error occurs, record it in PROJECT_MEMORY.md during the same task. Include the date, affected artifact or action, observed error, known cause (or explicitly say it is unknown), solution or next step, and verification/status.
 - If unresolved, log it immediately as unresolved; update the same entry when resolved. Do not invent a solution or claim success without evidence.
 - For a repeated error, update its occurrence history and prevention guidance instead of silently treating it as new.
@@ -46,6 +50,34 @@ User instruction, recorded 2026-09-18: **A dimensional tile's sculpted pattern m
 - Record the chosen amplitude, the resulting relief in millimetres, the grout step in millimetres and the remaining clearance, so a later reviewer can see the margin that was left.
 
 ## Final package delivery to Google Drive
+
+User instruction, recorded 2026-09-26: **All ADSKLIBs, colour maps and bump maps go in `F:\My Drive\Revit Material Maps - 25-012 651 Belmont`.** The rest of each package (README, notes, source-selection records, previews and scripts) stays in `3D Model Workflow/Material Packages`.
+- Revit materials in the 25-012 651 Belmont project reference maps in that folder by the user's own names (for example `B1-01 - …`).
+- Add new revisions under distinct filenames rather than overwriting a map the user has already placed there, unless the user asks for an in-place replacement.
+
+User instruction, recorded 2026-09-26, for the ELM Formed Hexagon Sand job: no ADSKLIB is necessary; deliver colour and bump only.
+
+User instruction, recorded 2026-09-26: **Each bump map is named with the tile name, the image's real-world size in feet and inches (the Revit Sample Size), and the bump amount to set in the Revit material.**
+- Windows forbids `"` and `/` in filenames, so write inches as `in` with decimals, for example `ELM Formed Hexagon Sand - 5'-10.148in x 5'-10.875in - Bump 100.png`.
+- **The Revit bump amount is a whole number on the editor's scale, which is 100× the stored value.** The Generic schema stores a float (default 0.3), and the editor shows it ×100 (default 30) in whole numbers, 0–1000.
+  - Found 2026-09-26: the user saw 0.5 round to 0, and a render at 1 showed no visible relief.
+  - Never quote the stored decimal. Quote the editor value, for example 100, not 1.0.
+  - Calibration, confirmed by the user in a Revit view on 2026-09-26: for a full-range 16-bit dimensional map (ELM Formed Hexagon Sand: 2.6 mm full scale, 1.6 mm joint), 1 showed nothing, 50 showed joints only, and 100 made the tile relief read. Start dimensional tiles at 100.
+- Name the colour map to match, without the bump amount.
+
+Found 2026-09-26: **Revit's Texture Editor rounds Sample Size to the project's length units (1/4 in in the Belmont project).** A 39.39 in height became 3'-3 1/2", and the texture drifted off the model pattern.
+- Choose the atlas so both Sample Size numbers are exact quarter-inch multiples, and whole inches where possible.
+- If the real module can't reach that, absorb up to about 0.5 % in the drawn tile size (keep the joint) and record the drawn size against the actual size.
+- Verifiers must fail a Sample Size that isn't an exact quarter inch.
+
+User instruction, recorded 2026-09-26: **Every tile colour/bump delivery also includes a Revit model (surface) fill pattern `.pat`.**
+- Put it in the same Belmont folder as the maps, named `<Tile name> - Model Pattern.pat`.
+- Header `;%UNITS=INCH`, then `;%TYPE=MODEL` under each `*Name, description` line. Lines are the grout-joint centrelines at real scale, from the actual tile size plus the joint.
+- Give it the same orientation as the maps. Put the pattern origin at the maps' top-left corner and state the first tile's offset from it.
+- Add a second pattern in the same file for the rotated layout when the tile can be laid either way.
+- Verify the file by re-parsing it and measuring line-to-joint offsets against the colour map or face-ID map, and view a 1:1 overlay preview.
+- Examples: `output/elm_ligne_noir/source/e01_model_pattern.py` (stack bond) and `output/elm_formed_hex_sand/source/e01_model_pattern.py` (hexagon, dashed families).
+- The request came after two deliveries had shipped without one. A Sep 23 ElmStone Fog Chevron `.pat` shows the format was already in use but had not been recorded as standing.
 
 User instruction, recorded 2026-09-14: Every outputted final material or 3D model package must be uploaded to Google Drive under **3D Model Workflow** (folder ID `1Xsd3Y96SOi00cWNaxqYeqlp4tNe3Z8CD`).
 
