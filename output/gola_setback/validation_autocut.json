@@ -1,0 +1,181 @@
+{
+  "log": [
+    "2026-09-26T01:27:26.235000  Gola Auto Cut updater registered", 
+    "2026-09-26T01:27:32.035000  Project1: instance 5528 cut +[5523L] -[]", 
+    "2026-09-26T01:27:32.220000  Project1: instance 5533 cut +[5524L] -[]", 
+    "2026-09-26T01:27:32.318000  Project1: instance 5536 cut +[5525L] -[]", 
+    "2026-09-26T01:27:32.349000  Project1: instance 5536 cut +[] -[5525L]"
+  ], 
+  "stage": "complete", 
+  "tests": {
+    "T3_vertical_face_1500": {
+      "host": "Wall", 
+      "removed_mm3": 3236184.8598003387, 
+      "expected_mm3": 3236184.8598002838
+    }, 
+    "T5_moved_off_wall": {
+      "removed_mm3": 0.0, 
+      "cut_ids": [], 
+      "expected_mm3": 0.0
+    }, 
+    "T1_horizontal_face_1500": {
+      "host": "Wall", 
+      "removed_mm3": 2988600.7087969780, 
+      "expected_mm3": 2988599.0974791544
+    }, 
+    "T4_unhosted_level_1500": {
+      "host": "Level", 
+      "removed_mm3": 2988600.7087962627, 
+      "cut_ids": [
+        "5525"
+      ], 
+      "expected_mm3": 2988599.0974791544
+    }, 
+    "T6_button": {
+      "changes": 1, 
+      "removed_mm3": 2988600.7087969780, 
+      "removed_before_button_mm3": 0.0, 
+      "expected_mm3": 2988599.0974791544
+    }, 
+    "T2_regrip_2400": {
+      "removed_mm3": 4781761.1340746880, 
+      "expected_mm3": 4781758.5559666464
+    }
+  }, 
+  "queued_after": [
+    [
+      "walls", 
+      []
+    ], 
+    [
+      "activate", 
+      []
+    ], 
+    [
+      "T1", 
+      [
+        [
+          "5528"
+        ]
+      ]
+    ], 
+    [
+      "T2", 
+      [
+        [
+          "5528"
+        ]
+      ]
+    ], 
+    [
+      "T3", 
+      [
+        [
+          "5533"
+        ]
+      ]
+    ], 
+    [
+      "T4", 
+      [
+        [
+          "5536"
+        ]
+      ]
+    ], 
+    [
+      "T5", 
+      [
+        [
+          "5536"
+        ]
+      ]
+    ], 
+    [
+      "T6 place", 
+      []
+    ], 
+    [
+      "Cut Gola Recesses", 
+      []
+    ]
+  ], 
+  "addin_id": "d49d3677-61c4-47a8-bfff-49e6616d54c1", 
+  "registered": true, 
+  "flushed": [
+    [
+      "walls", 
+      []
+    ], 
+    [
+      "activate", 
+      []
+    ], 
+    [
+      "T1", 
+      [
+        [
+          "5528", 
+          [
+            "5523"
+          ], 
+          []
+        ]
+      ]
+    ], 
+    [
+      "T2", 
+      []
+    ], 
+    [
+      "T3", 
+      [
+        [
+          "5533", 
+          [
+            "5524"
+          ], 
+          []
+        ]
+      ]
+    ], 
+    [
+      "T4", 
+      [
+        [
+          "5536", 
+          [
+            "5525"
+          ], 
+          []
+        ]
+      ]
+    ], 
+    [
+      "T5", 
+      [
+        [
+          "5536", 
+          [], 
+          [
+            "5525"
+          ]
+        ]
+      ]
+    ], 
+    [
+      "T6 place", 
+      []
+    ], 
+    [
+      "Cut Gola Recesses", 
+      []
+    ]
+  ], 
+  "untouched_walls_check": {
+    "5523": 4781761.1340746880, 
+    "5525": 0.0, 
+    "5524": 3236184.8598003387, 
+    "5526": 2988600.7087969780
+  }
+}

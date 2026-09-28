@@ -1,0 +1,121 @@
+{
+  "jobs": [
+    {
+      "detached_links": 51, 
+      "source_placement_type": "CurveBased", 
+      "builtin_values_skipped": [], 
+      "association_rows": [
+        [
+          "13077715", 
+          3, 
+          3
+        ], 
+        [
+          "13077791", 
+          2, 
+          2
+        ], 
+        [
+          "13077802", 
+          2, 
+          2
+        ], 
+        [
+          "13077876", 
+          2, 
+          2
+        ], 
+        [
+          "13077889", 
+          4, 
+          4
+        ], 
+        [
+          "13077900", 
+          4, 
+          4
+        ], 
+        [
+          "13077974", 
+          4, 
+          4
+        ], 
+        [
+          "13077988", 
+          4, 
+          4
+        ], 
+        [
+          "13077999", 
+          4, 
+          4
+        ], 
+        [
+          "13078010", 
+          4, 
+          4
+        ], 
+        [
+          "13078023", 
+          2, 
+          2
+        ], 
+        [
+          "13078034", 
+          2, 
+          2
+        ], 
+        [
+          "13078045", 
+          2, 
+          2
+        ], 
+        [
+          "13078056", 
+          4, 
+          4
+        ], 
+        [
+          "13078067", 
+          4, 
+          4
+        ], 
+        [
+          "13078078", 
+          4, 
+          4
+        ], 
+        [
+          "13078109", 
+          1, 
+          1
+        ]
+      ], 
+      "placement_plane_offset_mm": 48.050000013600005, 
+      "end_linked_to_length_from_right_lock": [
+        "13078109"
+      ], 
+      "orientation": "horizontal", 
+      "source_length_builtin": true, 
+      "family_flags": {
+        "FAMILY_SHARED": 0, 
+        "FAMILY_ALLOW_CUT_WITH_VOIDS": 1
+      }, 
+      "template_types_found": [], 
+      "output": "Richelieu_Gola_L_Channel_Horizontal_NonHosted_2025.rfa", 
+      "source": {
+        "custom_params": 77, 
+        "forms": 17, 
+        "dimensions": 195, 
+        "reference_planes": 7, 
+        "types": 1, 
+        "form_volume_mm3": 144866.02626152095
+      }
+    }
+  ], 
+  "template": "C:/ProgramData/Autodesk/RVT 2025/Family Templates/English-Imperial/Generic Model.rft", 
+  "error": "Traceback (most recent call last):\n  File \"E:\\Claude\\3D-Model-Workflow\\output\\gola_nonhosted\\convert_gola_nonhosted.py\", line 577, in <module>\n    rfa = convert(app, src_name, dst_name, kind, job)\n  File \"E:\\Claude\\3D-Model-Workflow\\output\\gola_nonhosted\\convert_gola_nonhosted.py\", line 441, in convert\n    for jid in DB.JoinGeometryUtils.GetJoinedElements(src, e):\nException: document is not a project document.\r\nParameter name: document\n", 
+  "run_dir": "E:/Claude/3D-Model-Workflow/output/gola_nonhosted", 
+  "revit_version": "2025", 
+  "stage": "failed: convert horizontal: forms"
+}

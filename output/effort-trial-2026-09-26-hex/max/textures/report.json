@@ -1,0 +1,1328 @@
+{
+ "product": "ELM Surfaces Formed Hexagon Tile in Sand (Matte / Raw / Chiseled faces)",
+ "maps": {
+  "Color.png": {
+   "width": 4489,
+   "height": 4536,
+   "bit_depth": 8,
+   "color_type": 2
+  },
+  "Bump16.png": {
+   "width": 4489,
+   "height": 4536,
+   "bit_depth": 16,
+   "color_type": 0
+  },
+  "face_ids.png": {
+   "width": 4489,
+   "height": 4536,
+   "bit_depth": 16,
+   "color_type": 0
+  }
+ },
+ "atlas": {
+  "columns": 8,
+  "rows": 7,
+  "faces": 56,
+  "px_per_in": 64,
+  "tile_across_flats_in": 10.0,
+  "joint_in": 0.125,
+  "module_across_flats_in": 10.125,
+  "revit_sample_size_in": [
+   70.148,
+   70.875
+  ],
+  "revit_sample_size_ft_in": [
+   "5'-10 5/32\"",
+   "5'-10 7/8\""
+  ],
+  "face_index_order": "index = row*8 + column + 1; flat-top, odd columns shifted down half a row; face centre x = (column+0.5)*8.7685 in, y = (row+0.5)*10.125 in (+5.0625 in odd columns)"
+ },
+ "joint_colour_srgb": [
+  206.0,
+  198.0,
+  184.0
+ ],
+ "face_transform_convention": "rotation_deg is counter-clockwise (y up). chiseled: tile rotation of the groove pattern, canonical tile = vertical grooves with the steep flank facing -x (grooves run at 90+rotation deg). matte: rotation of the low band (tone/cloudiness); both bands listed. raw: 0 = the render's texture axis kept; the face is a quilt, per-patch transforms listed (I = identity, R180 = rotated 180, M30/M120 = mirrored about the 30/120 deg axis, +-8 = extra jitter deg). mirrored = true when any mirrored source content is used in the face.",
+ "faces": [
+  {
+   "index": 1,
+   "type": "chiseled",
+   "rotation_deg": 0,
+   "mirrored": false,
+   "source": "procedural grooves: period 5.014 mm, tile rotation 0 deg (grooves at 90 deg), asymmetric profile (2nd harmonic 0.30 at +100 deg); colour tone, cloudiness and ragged detail from render chiseled face 11 (rho 0), phase-locked",
+   "groove_direction_deg": 90,
+   "grain_render_face": 11
+  },
+  {
+   "index": 2,
+   "type": "matte",
+   "rotation_deg": 180,
+   "mirrored": true,
+   "source": "low band (tone+cloudiness): render matte face 18 rot 180; high band (speckle): render matte face 35 rot 120 mirrored; sampled at 0.9681 scale inside the clean face",
+   "low_band": {
+    "render_face": 18,
+    "rotation_deg": 180,
+    "mirrored": false
+   },
+   "high_band": {
+    "render_face": 35,
+    "rotation_deg": 120,
+    "mirrored": true
+   }
+  },
+  {
+   "index": 3,
+   "type": "matte",
+   "rotation_deg": 60,
+   "mirrored": true,
+   "source": "low band (tone+cloudiness): render matte face 48 rot 60; high band (speckle): render matte face 47 rot 120 mirrored; sampled at 0.9681 scale inside the clean face",
+   "low_band": {
+    "render_face": 48,
+    "rotation_deg": 60,
+    "mirrored": false
+   },
+   "high_band": {
+    "render_face": 47,
+    "rotation_deg": 120,
+    "mirrored": true
+   }
+  },
+  {
+   "index": 4,
+   "type": "chiseled",
+   "rotation_deg": 0,
+   "mirrored": false,
+   "source": "procedural grooves: period 5.014 mm, tile rotation 0 deg (grooves at 90 deg), asymmetric profile (2nd harmonic 0.30 at +100 deg); colour tone, cloudiness and ragged detail from render chiseled face 30 (rho 60), phase-locked",
+   "groove_direction_deg": 90,
+   "grain_render_face": 30
+  },
+  {
+   "index": 5,
+   "type": "matte",
+   "rotation_deg": 240,
+   "mirrored": false,
+   "source": "low band (tone+cloudiness): render matte face 36 rot 240; high band (speckle): render matte face 14 rot 180; sampled at 0.9681 scale inside the clean face",
+   "low_band": {
+    "render_face": 36,
+    "rotation_deg": 240,
+    "mirrored": false
+   },
+   "high_band": {
+    "render_face": 14,
+    "rotation_deg": 180,
+    "mirrored": false
+   }
+  },
+  {
+   "index": 6,
+   "type": "raw",
+   "rotation_deg": 0,
+   "mirrored": true,
+   "source": "quilt of 46 patches (2.04 in, min-error seams) cut from render raw faces [0, 10, 13, 22, 24, 25, 27, 29, 37, 41, 54]; patch orientations {'I+0': 2, 'I+8': 5, 'I-8': 1, 'M120+0': 3, 'M120+8': 7, 'M120-8': 3, 'M30+0': 6, 'M30+8': 3, 'M30-8': 3, 'R180+0': 7, 'R180+8': 3, 'R180-8': 3} (texture axis kept as in the render)",
+   "patches": 46,
+   "patch_render_faces": [
+    0,
+    10,
+    13,
+    22,
+    24,
+    25,
+    27,
+    29,
+    37,
+    41,
+    54
+   ],
+   "patch_transforms": {
+    "I+0": 2,
+    "I+8": 5,
+    "I-8": 1,
+    "M120+0": 3,
+    "M120+8": 7,
+    "M120-8": 3,
+    "M30+0": 6,
+    "M30+8": 3,
+    "M30-8": 3,
+    "R180+0": 7,
+    "R180+8": 3,
+    "R180-8": 3
+   }
+  },
+  {
+   "index": 7,
+   "type": "chiseled",
+   "rotation_deg": 0,
+   "mirrored": false,
+   "source": "procedural grooves: period 5.014 mm, tile rotation 0 deg (grooves at 90 deg), asymmetric profile (2nd harmonic 0.30 at +100 deg); colour tone, cloudiness and ragged detail from render chiseled face 19 (rho 300), phase-locked",
+   "groove_direction_deg": 90,
+   "grain_render_face": 19
+  },
+  {
+   "index": 8,
+   "type": "raw",
+   "rotation_deg": 0,
+   "mirrored": true,
+   "source": "quilt of 46 patches (2.04 in, min-error seams) cut from render raw faces [0, 10, 13, 22, 25, 27, 29, 37, 41, 54]; patch orientations {'I+0': 3, 'I+8': 4, 'I-8': 1, 'M120+0': 5, 'M120+8': 5, 'M120-8': 12, 'M30+0': 1, 'M30+8': 2, 'M30-8': 5, 'R180+0': 7, 'R180-8': 1} (texture axis kept as in the render)",
+   "patches": 46,
+   "patch_render_faces": [
+    0,
+    10,
+    13,
+    22,
+    25,
+    27,
+    29,
+    37,
+    41,
+    54
+   ],
+   "patch_transforms": {
+    "I+0": 3,
+    "I+8": 4,
+    "I-8": 1,
+    "M120+0": 5,
+    "M120+8": 5,
+    "M120-8": 12,
+    "M30+0": 1,
+    "M30+8": 2,
+    "M30-8": 5,
+    "R180+0": 7,
+    "R180-8": 1
+   }
+  },
+  {
+   "index": 9,
+   "type": "matte",
+   "rotation_deg": 240,
+   "mirrored": true,
+   "source": "low band (tone+cloudiness): render matte face 35 rot 240; high band (speckle): render matte face 36 rot 180 mirrored; sampled at 0.9681 scale inside the clean face",
+   "low_band": {
+    "render_face": 35,
+    "rotation_deg": 240,
+    "mirrored": false
+   },
+   "high_band": {
+    "render_face": 36,
+    "rotation_deg": 180,
+    "mirrored": true
+   }
+  },
+  {
+   "index": 10,
+   "type": "chiseled",
+   "rotation_deg": 60,
+   "mirrored": false,
+   "source": "procedural grooves: period 5.014 mm, tile rotation 60 deg (grooves at 150 deg), asymmetric profile (2nd harmonic 0.30 at +100 deg); colour tone, cloudiness and ragged detail from render chiseled face 49 (rho 120), phase-locked",
+   "groove_direction_deg": 150,
+   "grain_render_face": 49
+  },
+  {
+   "index": 11,
+   "type": "raw",
+   "rotation_deg": 0,
+   "mirrored": true,
+   "source": "quilt of 46 patches (2.04 in, min-error seams) cut from render raw faces [0, 10, 13, 22, 25, 27, 29, 37, 41, 54]; patch orientations {'I+0': 9, 'I+8': 5, 'I-8': 1, 'M120+0': 2, 'M120+8': 7, 'M120-8': 3, 'M30+0': 3, 'M30-8': 4, 'R180+0': 3, 'R180+8': 3, 'R180-8': 6} (texture axis kept as in the render)",
+   "patches": 46,
+   "patch_render_faces": [
+    0,
+    10,
+    13,
+    22,
+    25,
+    27,
+    29,
+    37,
+    41,
+    54
+   ],
+   "patch_transforms": {
+    "I+0": 9,
+    "I+8": 5,
+    "I-8": 1,
+    "M120+0": 2,
+    "M120+8": 7,
+    "M120-8": 3,
+    "M30+0": 3,
+    "M30-8": 4,
+    "R180+0": 3,
+    "R180+8": 3,
+    "R180-8": 6
+   }
+  },
+  {
+   "index": 12,
+   "type": "matte",
+   "rotation_deg": 180,
+   "mirrored": false,
+   "source": "low band (tone+cloudiness): render matte face 31 rot 180; high band (speckle): render matte face 47 rot 180; sampled at 0.9681 scale inside the clean face",
+   "low_band": {
+    "render_face": 31,
+    "rotation_deg": 180,
+    "mirrored": false
+   },
+   "high_band": {
+    "render_face": 47,
+    "rotation_deg": 180,
+    "mirrored": false
+   }
+  },
+  {
+   "index": 13,
+   "type": "matte",
+   "rotation_deg": 180,
+   "mirrored": true,
+   "source": "low band (tone+cloudiness): render matte face 39 rot 180 mirrored; high band (speckle): render matte face 17 rot 180 mirrored; sampled at 0.9681 scale inside the clean face",
+   "low_band": {
+    "render_face": 39,
+    "rotation_deg": 180,
+    "mirrored": true
+   },
+   "high_band": {
+    "render_face": 17,
+    "rotation_deg": 180,
+    "mirrored": true
+   }
+  },
+  {
+   "index": 14,
+   "type": "chiseled",
+   "rotation_deg": 60,
+   "mirrored": false,
+   "source": "procedural grooves: period 5.014 mm, tile rotation 60 deg (grooves at 150 deg), asymmetric profile (2nd harmonic 0.30 at +100 deg); colour tone, cloudiness and ragged detail from render chiseled face 45 (rho 60), phase-locked",
+   "groove_direction_deg": 150,
+   "grain_render_face": 45
+  },
+  {
+   "index": 15,
+   "type": "matte",
+   "rotation_deg": 180,
+   "mirrored": true,
+   "source": "low band (tone+cloudiness): render matte face 8 rot 180; high band (speckle): render matte face 14 rot 240 mirrored; sampled at 0.9681 scale inside the clean face",
+   "low_band": {
+    "render_face": 8,
+    "rotation_deg": 180,
+    "mirrored": false
+   },
+   "high_band": {
+    "render_face": 14,
+    "rotation_deg": 240,
+    "mirrored": true
+   }
+  },
+  {
+   "index": 16,
+   "type": "matte",
+   "rotation_deg": 300,
+   "mirrored": true,
+   "source": "low band (tone+cloudiness): render matte face 14 rot 300 mirrored; high band (speckle): render matte face 6 rot 60 mirrored; sampled at 0.9681 scale inside the clean face",
+   "low_band": {
+    "render_face": 14,
+    "rotation_deg": 300,
+    "mirrored": true
+   },
+   "high_band": {
+    "render_face": 6,
+    "rotation_deg": 60,
+    "mirrored": true
+   }
+  },
+  {
+   "index": 17,
+   "type": "matte",
+   "rotation_deg": 180,
+   "mirrored": true,
+   "source": "low band (tone+cloudiness): render matte face 28 rot 180 mirrored; high band (speckle): render matte face 31 rot 300 mirrored; sampled at 0.9681 scale inside the clean face",
+   "low_band": {
+    "render_face": 28,
+    "rotation_deg": 180,
+    "mirrored": true
+   },
+   "high_band": {
+    "render_face": 31,
+    "rotation_deg": 300,
+    "mirrored": true
+   }
+  },
+  {
+   "index": 18,
+   "type": "matte",
+   "rotation_deg": 0,
+   "mirrored": true,
+   "source": "low band (tone+cloudiness): render matte face 21 rot 0 mirrored; high band (speckle): render matte face 39 rot 0; sampled at 0.9681 scale inside the clean face",
+   "low_band": {
+    "render_face": 21,
+    "rotation_deg": 0,
+    "mirrored": true
+   },
+   "high_band": {
+    "render_face": 39,
+    "rotation_deg": 0,
+    "mirrored": false
+   }
+  },
+  {
+   "index": 19,
+   "type": "matte",
+   "rotation_deg": 180,
+   "mirrored": true,
+   "source": "low band (tone+cloudiness): render matte face 50 rot 180; high band (speckle): render matte face 8 rot 240 mirrored; sampled at 0.9681 scale inside the clean face",
+   "low_band": {
+    "render_face": 50,
+    "rotation_deg": 180,
+    "mirrored": false
+   },
+   "high_band": {
+    "render_face": 8,
+    "rotation_deg": 240,
+    "mirrored": true
+   }
+  },
+  {
+   "index": 20,
+   "type": "raw",
+   "rotation_deg": 0,
+   "mirrored": true,
+   "source": "quilt of 46 patches (2.04 in, min-error seams) cut from render raw faces [10, 13, 22, 24, 25, 27, 29, 37, 41, 43, 54]; patch orientations {'I+0': 6, 'I+8': 5, 'I-8': 2, 'M120+0': 3, 'M120+8': 4, 'M120-8': 7, 'M30+0': 5, 'M30+8': 1, 'M30-8': 4, 'R180+0': 3, 'R180+8': 4, 'R180-8': 2} (texture axis kept as in the render)",
+   "patches": 46,
+   "patch_render_faces": [
+    10,
+    13,
+    22,
+    24,
+    25,
+    27,
+    29,
+    37,
+    41,
+    43,
+    54
+   ],
+   "patch_transforms": {
+    "I+0": 6,
+    "I+8": 5,
+    "I-8": 2,
+    "M120+0": 3,
+    "M120+8": 4,
+    "M120-8": 7,
+    "M30+0": 5,
+    "M30+8": 1,
+    "M30-8": 4,
+    "R180+0": 3,
+    "R180+8": 4,
+    "R180-8": 2
+   }
+  },
+  {
+   "index": 21,
+   "type": "matte",
+   "rotation_deg": 120,
+   "mirrored": false,
+   "source": "low band (tone+cloudiness): render matte face 14 rot 120; high band (speckle): render matte face 2 rot 0; sampled at 0.9681 scale inside the clean face",
+   "low_band": {
+    "render_face": 14,
+    "rotation_deg": 120,
+    "mirrored": false
+   },
+   "high_band": {
+    "render_face": 2,
+    "rotation_deg": 0,
+    "mirrored": false
+   }
+  },
+  {
+   "index": 22,
+   "type": "matte",
+   "rotation_deg": 180,
+   "mirrored": true,
+   "source": "low band (tone+cloudiness): render matte face 20 rot 180; high band (speckle): render matte face 35 rot 240 mirrored; sampled at 0.9681 scale inside the clean face",
+   "low_band": {
+    "render_face": 20,
+    "rotation_deg": 180,
+    "mirrored": false
+   },
+   "high_band": {
+    "render_face": 35,
+    "rotation_deg": 240,
+    "mirrored": true
+   }
+  },
+  {
+   "index": 23,
+   "type": "raw",
+   "rotation_deg": 0,
+   "mirrored": true,
+   "source": "quilt of 46 patches (2.04 in, min-error seams) cut from render raw faces [0, 10, 13, 22, 24, 25, 27, 29, 37, 41, 54]; patch orientations {'I+0': 5, 'I+8': 2, 'I-8': 3, 'M120+0': 8, 'M120+8': 4, 'M120-8': 5, 'M30+0': 2, 'M30+8': 3, 'M30-8': 2, 'R180+0': 4, 'R180+8': 3, 'R180-8': 5} (texture axis kept as in the render)",
+   "patches": 46,
+   "patch_render_faces": [
+    0,
+    10,
+    13,
+    22,
+    24,
+    25,
+    27,
+    29,
+    37,
+    41,
+    54
+   ],
+   "patch_transforms": {
+    "I+0": 5,
+    "I+8": 2,
+    "I-8": 3,
+    "M120+0": 8,
+    "M120+8": 4,
+    "M120-8": 5,
+    "M30+0": 2,
+    "M30+8": 3,
+    "M30-8": 2,
+    "R180+0": 4,
+    "R180+8": 3,
+    "R180-8": 5
+   }
+  },
+  {
+   "index": 24,
+   "type": "chiseled",
+   "rotation_deg": 0,
+   "mirrored": false,
+   "source": "procedural grooves: period 5.014 mm, tile rotation 0 deg (grooves at 90 deg), asymmetric profile (2nd harmonic 0.30 at +100 deg); colour tone, cloudiness and ragged detail from render chiseled face 38 (rho 0), phase-locked",
+   "groove_direction_deg": 90,
+   "grain_render_face": 38
+  },
+  {
+   "index": 25,
+   "type": "raw",
+   "rotation_deg": 0,
+   "mirrored": true,
+   "source": "quilt of 46 patches (2.04 in, min-error seams) cut from render raw faces [0, 10, 13, 22, 25, 37]; patch orientations {'I+0': 8, 'I+8': 2, 'I-8': 2, 'M120+0': 5, 'M120-8': 4, 'M30+0': 10, 'M30+8': 3, 'M30-8': 1, 'R180+0': 9, 'R180-8': 2} (texture axis kept as in the render)",
+   "patches": 46,
+   "patch_render_faces": [
+    0,
+    10,
+    13,
+    22,
+    25,
+    37
+   ],
+   "patch_transforms": {
+    "I+0": 8,
+    "I+8": 2,
+    "I-8": 2,
+    "M120+0": 5,
+    "M120-8": 4,
+    "M30+0": 10,
+    "M30+8": 3,
+    "M30-8": 1,
+    "R180+0": 9,
+    "R180-8": 2
+   }
+  },
+  {
+   "index": 26,
+   "type": "chiseled",
+   "rotation_deg": 300,
+   "mirrored": true,
+   "source": "procedural grooves: period 5.014 mm, tile rotation 300 deg (grooves at 30 deg), asymmetric profile (2nd harmonic 0.30 at +100 deg); colour tone, cloudiness and ragged detail from render chiseled face 11 (rho 0), phase-locked, mirrored along the grooves",
+   "groove_direction_deg": 30,
+   "grain_render_face": 11
+  },
+  {
+   "index": 27,
+   "type": "matte",
+   "rotation_deg": 300,
+   "mirrored": false,
+   "source": "low band (tone+cloudiness): render matte face 2 rot 300; high band (speckle): render matte face 44 rot 60; sampled at 0.9681 scale inside the clean face",
+   "low_band": {
+    "render_face": 2,
+    "rotation_deg": 300,
+    "mirrored": false
+   },
+   "high_band": {
+    "render_face": 44,
+    "rotation_deg": 60,
+    "mirrored": false
+   }
+  },
+  {
+   "index": 28,
+   "type": "matte",
+   "rotation_deg": 240,
+   "mirrored": false,
+   "source": "low band (tone+cloudiness): render matte face 4 rot 240; high band (speckle): render matte face 44 rot 60; sampled at 0.9681 scale inside the clean face",
+   "low_band": {
+    "render_face": 4,
+    "rotation_deg": 240,
+    "mirrored": false
+   },
+   "high_band": {
+    "render_face": 44,
+    "rotation_deg": 60,
+    "mirrored": false
+   }
+  },
+  {
+   "index": 29,
+   "type": "chiseled",
+   "rotation_deg": 300,
+   "mirrored": true,
+   "source": "procedural grooves: period 5.014 mm, tile rotation 300 deg (grooves at 30 deg), asymmetric profile (2nd harmonic 0.30 at +100 deg); colour tone, cloudiness and ragged detail from render chiseled face 19 (rho 300), phase-locked, mirrored along the grooves",
+   "groove_direction_deg": 30,
+   "grain_render_face": 19
+  },
+  {
+   "index": 30,
+   "type": "raw",
+   "rotation_deg": 0,
+   "mirrored": true,
+   "source": "quilt of 46 patches (2.04 in, min-error seams) cut from render raw faces [0, 10, 13, 22, 24, 25, 27, 29, 37, 41, 43, 54]; patch orientations {'I+0': 6, 'I+8': 1, 'I-8': 3, 'M120+0': 1, 'M120+8': 2, 'M120-8': 3, 'M30+0': 2, 'M30+8': 5, 'M30-8': 4, 'R180+0': 7, 'R180+8': 7, 'R180-8': 5} (texture axis kept as in the render)",
+   "patches": 46,
+   "patch_render_faces": [
+    0,
+    10,
+    13,
+    22,
+    24,
+    25,
+    27,
+    29,
+    37,
+    41,
+    43,
+    54
+   ],
+   "patch_transforms": {
+    "I+0": 6,
+    "I+8": 1,
+    "I-8": 3,
+    "M120+0": 1,
+    "M120+8": 2,
+    "M120-8": 3,
+    "M30+0": 2,
+    "M30+8": 5,
+    "M30-8": 4,
+    "R180+0": 7,
+    "R180+8": 7,
+    "R180-8": 5
+   }
+  },
+  {
+   "index": 31,
+   "type": "matte",
+   "rotation_deg": 240,
+   "mirrored": true,
+   "source": "low band (tone+cloudiness): render matte face 48 rot 240 mirrored; high band (speckle): render matte face 31 rot 60; sampled at 0.9681 scale inside the clean face",
+   "low_band": {
+    "render_face": 48,
+    "rotation_deg": 240,
+    "mirrored": true
+   },
+   "high_band": {
+    "render_face": 31,
+    "rotation_deg": 60,
+    "mirrored": false
+   }
+  },
+  {
+   "index": 32,
+   "type": "matte",
+   "rotation_deg": 60,
+   "mirrored": true,
+   "source": "low band (tone+cloudiness): render matte face 50 rot 60 mirrored; high band (speckle): render matte face 28 rot 240; sampled at 0.9681 scale inside the clean face",
+   "low_band": {
+    "render_face": 50,
+    "rotation_deg": 60,
+    "mirrored": true
+   },
+   "high_band": {
+    "render_face": 28,
+    "rotation_deg": 240,
+    "mirrored": false
+   }
+  },
+  {
+   "index": 33,
+   "type": "matte",
+   "rotation_deg": 120,
+   "mirrored": true,
+   "source": "low band (tone+cloudiness): render matte face 4 rot 120 mirrored; high band (speckle): render matte face 17 rot 60; sampled at 0.9681 scale inside the clean face",
+   "low_band": {
+    "render_face": 4,
+    "rotation_deg": 120,
+    "mirrored": true
+   },
+   "high_band": {
+    "render_face": 17,
+    "rotation_deg": 60,
+    "mirrored": false
+   }
+  },
+  {
+   "index": 34,
+   "type": "matte",
+   "rotation_deg": 240,
+   "mirrored": true,
+   "source": "low band (tone+cloudiness): render matte face 47 rot 240 mirrored; high band (speckle): render matte face 39 rot 300; sampled at 0.9681 scale inside the clean face",
+   "low_band": {
+    "render_face": 47,
+    "rotation_deg": 240,
+    "mirrored": true
+   },
+   "high_band": {
+    "render_face": 39,
+    "rotation_deg": 300,
+    "mirrored": false
+   }
+  },
+  {
+   "index": 35,
+   "type": "raw",
+   "rotation_deg": 0,
+   "mirrored": true,
+   "source": "quilt of 46 patches (2.04 in, min-error seams) cut from render raw faces [0, 10, 13, 22, 24, 27, 29, 37, 41, 43, 54]; patch orientations {'I+0': 6, 'I+8': 3, 'I-8': 1, 'M120+0': 9, 'M120+8': 3, 'M120-8': 4, 'M30+0': 3, 'M30+8': 2, 'M30-8': 5, 'R180+0': 3, 'R180+8': 4, 'R180-8': 3} (texture axis kept as in the render)",
+   "patches": 46,
+   "patch_render_faces": [
+    0,
+    10,
+    13,
+    22,
+    24,
+    27,
+    29,
+    37,
+    41,
+    43,
+    54
+   ],
+   "patch_transforms": {
+    "I+0": 6,
+    "I+8": 3,
+    "I-8": 1,
+    "M120+0": 9,
+    "M120+8": 3,
+    "M120-8": 4,
+    "M30+0": 3,
+    "M30+8": 2,
+    "M30-8": 5,
+    "R180+0": 3,
+    "R180+8": 4,
+    "R180-8": 3
+   }
+  },
+  {
+   "index": 36,
+   "type": "chiseled",
+   "rotation_deg": 120,
+   "mirrored": false,
+   "source": "procedural grooves: period 5.014 mm, tile rotation 120 deg (grooves at 30 deg), asymmetric profile (2nd harmonic 0.30 at +100 deg); colour tone, cloudiness and ragged detail from render chiseled face 9 (rho 60), phase-locked",
+   "groove_direction_deg": 30,
+   "grain_render_face": 9
+  },
+  {
+   "index": 37,
+   "type": "matte",
+   "rotation_deg": 300,
+   "mirrored": true,
+   "source": "low band (tone+cloudiness): render matte face 18 rot 300 mirrored; high band (speckle): render matte face 48 rot 120; sampled at 0.9681 scale inside the clean face",
+   "low_band": {
+    "render_face": 18,
+    "rotation_deg": 300,
+    "mirrored": true
+   },
+   "high_band": {
+    "render_face": 48,
+    "rotation_deg": 120,
+    "mirrored": false
+   }
+  },
+  {
+   "index": 38,
+   "type": "chiseled",
+   "rotation_deg": 0,
+   "mirrored": false,
+   "source": "procedural grooves: period 5.014 mm, tile rotation 0 deg (grooves at 90 deg), asymmetric profile (2nd harmonic 0.30 at +100 deg); colour tone, cloudiness and ragged detail from render chiseled face 26 (rho 0), phase-locked",
+   "groove_direction_deg": 90,
+   "grain_render_face": 26
+  },
+  {
+   "index": 39,
+   "type": "matte",
+   "rotation_deg": 60,
+   "mirrored": false,
+   "source": "low band (tone+cloudiness): render matte face 39 rot 60; high band (speckle): render matte face 50 rot 300; sampled at 0.9681 scale inside the clean face",
+   "low_band": {
+    "render_face": 39,
+    "rotation_deg": 60,
+    "mirrored": false
+   },
+   "high_band": {
+    "render_face": 50,
+    "rotation_deg": 300,
+    "mirrored": false
+   }
+  },
+  {
+   "index": 40,
+   "type": "chiseled",
+   "rotation_deg": 60,
+   "mirrored": true,
+   "source": "procedural grooves: period 5.014 mm, tile rotation 60 deg (grooves at 150 deg), asymmetric profile (2nd harmonic 0.30 at +100 deg); colour tone, cloudiness and ragged detail from render chiseled face 45 (rho 60), phase-locked, mirrored along the grooves",
+   "groove_direction_deg": 150,
+   "grain_render_face": 45
+  },
+  {
+   "index": 41,
+   "type": "matte",
+   "rotation_deg": 60,
+   "mirrored": true,
+   "source": "low band (tone+cloudiness): render matte face 2 rot 60 mirrored; high band (speckle): render matte face 50 rot 120 mirrored; sampled at 0.9681 scale inside the clean face",
+   "low_band": {
+    "render_face": 2,
+    "rotation_deg": 60,
+    "mirrored": true
+   },
+   "high_band": {
+    "render_face": 50,
+    "rotation_deg": 120,
+    "mirrored": true
+   }
+  },
+  {
+   "index": 42,
+   "type": "chiseled",
+   "rotation_deg": 60,
+   "mirrored": false,
+   "source": "procedural grooves: period 5.014 mm, tile rotation 60 deg (grooves at 150 deg), asymmetric profile (2nd harmonic 0.30 at +100 deg); colour tone, cloudiness and ragged detail from render chiseled face 23 (rho 60), phase-locked",
+   "groove_direction_deg": 150,
+   "grain_render_face": 23
+  },
+  {
+   "index": 43,
+   "type": "matte",
+   "rotation_deg": 0,
+   "mirrored": true,
+   "source": "low band (tone+cloudiness): render matte face 36 rot 0 mirrored; high band (speckle): render matte face 21 rot 120; sampled at 0.9681 scale inside the clean face",
+   "low_band": {
+    "render_face": 36,
+    "rotation_deg": 0,
+    "mirrored": true
+   },
+   "high_band": {
+    "render_face": 21,
+    "rotation_deg": 120,
+    "mirrored": false
+   }
+  },
+  {
+   "index": 44,
+   "type": "matte",
+   "rotation_deg": 300,
+   "mirrored": true,
+   "source": "low band (tone+cloudiness): render matte face 46 rot 300 mirrored; high band (speckle): render matte face 48 rot 60; sampled at 0.9681 scale inside the clean face",
+   "low_band": {
+    "render_face": 46,
+    "rotation_deg": 300,
+    "mirrored": true
+   },
+   "high_band": {
+    "render_face": 48,
+    "rotation_deg": 60,
+    "mirrored": false
+   }
+  },
+  {
+   "index": 45,
+   "type": "matte",
+   "rotation_deg": 0,
+   "mirrored": true,
+   "source": "low band (tone+cloudiness): render matte face 35 rot 0 mirrored; high band (speckle): render matte face 6 rot 120; sampled at 0.9681 scale inside the clean face",
+   "low_band": {
+    "render_face": 35,
+    "rotation_deg": 0,
+    "mirrored": true
+   },
+   "high_band": {
+    "render_face": 6,
+    "rotation_deg": 120,
+    "mirrored": false
+   }
+  },
+  {
+   "index": 46,
+   "type": "matte",
+   "rotation_deg": 300,
+   "mirrored": true,
+   "source": "low band (tone+cloudiness): render matte face 31 rot 300 mirrored; high band (speckle): render matte face 40 rot 180; sampled at 0.9681 scale inside the clean face",
+   "low_band": {
+    "render_face": 31,
+    "rotation_deg": 300,
+    "mirrored": true
+   },
+   "high_band": {
+    "render_face": 40,
+    "rotation_deg": 180,
+    "mirrored": false
+   }
+  },
+  {
+   "index": 47,
+   "type": "raw",
+   "rotation_deg": 0,
+   "mirrored": true,
+   "source": "quilt of 46 patches (2.04 in, min-error seams) cut from render raw faces [0, 10, 13, 22, 24, 27, 29, 37, 41, 43, 54]; patch orientations {'I+0': 7, 'I+8': 5, 'I-8': 4, 'M120+0': 2, 'M120+8': 3, 'M120-8': 1, 'M30+0': 4, 'M30+8': 1, 'M30-8': 2, 'R180+0': 8, 'R180+8': 3, 'R180-8': 6} (texture axis kept as in the render)",
+   "patches": 46,
+   "patch_render_faces": [
+    0,
+    10,
+    13,
+    22,
+    24,
+    27,
+    29,
+    37,
+    41,
+    43,
+    54
+   ],
+   "patch_transforms": {
+    "I+0": 7,
+    "I+8": 5,
+    "I-8": 4,
+    "M120+0": 2,
+    "M120+8": 3,
+    "M120-8": 1,
+    "M30+0": 4,
+    "M30+8": 1,
+    "M30-8": 2,
+    "R180+0": 8,
+    "R180+8": 3,
+    "R180-8": 6
+   }
+  },
+  {
+   "index": 48,
+   "type": "matte",
+   "rotation_deg": 60,
+   "mirrored": true,
+   "source": "low band (tone+cloudiness): render matte face 44 rot 60 mirrored; high band (speckle): render matte face 20 rot 300; sampled at 0.9681 scale inside the clean face",
+   "low_band": {
+    "render_face": 44,
+    "rotation_deg": 60,
+    "mirrored": true
+   },
+   "high_band": {
+    "render_face": 20,
+    "rotation_deg": 300,
+    "mirrored": false
+   }
+  },
+  {
+   "index": 49,
+   "type": "raw",
+   "rotation_deg": 0,
+   "mirrored": true,
+   "source": "quilt of 46 patches (2.04 in, min-error seams) cut from render raw faces [0, 10, 13, 22, 24, 25, 27, 29, 37, 41, 43, 54]; patch orientations {'I+0': 1, 'I+8': 2, 'I-8': 2, 'M120+0': 7, 'M120+8': 4, 'M120-8': 2, 'M30+0': 6, 'M30+8': 4, 'M30-8': 3, 'R180+0': 4, 'R180+8': 10, 'R180-8': 1} (texture axis kept as in the render)",
+   "patches": 46,
+   "patch_render_faces": [
+    0,
+    10,
+    13,
+    22,
+    24,
+    25,
+    27,
+    29,
+    37,
+    41,
+    43,
+    54
+   ],
+   "patch_transforms": {
+    "I+0": 1,
+    "I+8": 2,
+    "I-8": 2,
+    "M120+0": 7,
+    "M120+8": 4,
+    "M120-8": 2,
+    "M30+0": 6,
+    "M30+8": 4,
+    "M30-8": 3,
+    "R180+0": 4,
+    "R180+8": 10,
+    "R180-8": 1
+   }
+  },
+  {
+   "index": 50,
+   "type": "matte",
+   "rotation_deg": 120,
+   "mirrored": true,
+   "source": "low band (tone+cloudiness): render matte face 17 rot 120 mirrored; high band (speckle): render matte face 20 rot 300; sampled at 0.9681 scale inside the clean face",
+   "low_band": {
+    "render_face": 17,
+    "rotation_deg": 120,
+    "mirrored": true
+   },
+   "high_band": {
+    "render_face": 20,
+    "rotation_deg": 300,
+    "mirrored": false
+   }
+  },
+  {
+   "index": 51,
+   "type": "matte",
+   "rotation_deg": 120,
+   "mirrored": true,
+   "source": "low band (tone+cloudiness): render matte face 40 rot 120 mirrored; high band (speckle): render matte face 44 rot 180; sampled at 0.9681 scale inside the clean face",
+   "low_band": {
+    "render_face": 40,
+    "rotation_deg": 120,
+    "mirrored": true
+   },
+   "high_band": {
+    "render_face": 44,
+    "rotation_deg": 180,
+    "mirrored": false
+   }
+  },
+  {
+   "index": 52,
+   "type": "raw",
+   "rotation_deg": 0,
+   "mirrored": true,
+   "source": "quilt of 46 patches (2.04 in, min-error seams) cut from render raw faces [0, 10, 13, 22, 29]; patch orientations {'I-8': 6, 'M120+0': 2, 'M120+8': 1, 'M120-8': 2, 'M30+0': 1, 'M30+8': 17, 'M30-8': 7, 'R180+0': 4, 'R180+8': 3, 'R180-8': 3} (texture axis kept as in the render)",
+   "patches": 46,
+   "patch_render_faces": [
+    0,
+    10,
+    13,
+    22,
+    29
+   ],
+   "patch_transforms": {
+    "I-8": 6,
+    "M120+0": 2,
+    "M120+8": 1,
+    "M120-8": 2,
+    "M30+0": 1,
+    "M30+8": 17,
+    "M30-8": 7,
+    "R180+0": 4,
+    "R180+8": 3,
+    "R180-8": 3
+   }
+  },
+  {
+   "index": 53,
+   "type": "chiseled",
+   "rotation_deg": 60,
+   "mirrored": true,
+   "source": "procedural grooves: period 5.014 mm, tile rotation 60 deg (grooves at 150 deg), asymmetric profile (2nd harmonic 0.30 at +100 deg); colour tone, cloudiness and ragged detail from render chiseled face 23 (rho 60), phase-locked, mirrored along the grooves",
+   "groove_direction_deg": 150,
+   "grain_render_face": 23
+  },
+  {
+   "index": 54,
+   "type": "matte",
+   "rotation_deg": 180,
+   "mirrored": true,
+   "source": "low band (tone+cloudiness): render matte face 32 rot 180 mirrored; high band (speckle): render matte face 20 rot 60 mirrored; sampled at 0.9681 scale inside the clean face",
+   "low_band": {
+    "render_face": 32,
+    "rotation_deg": 180,
+    "mirrored": true
+   },
+   "high_band": {
+    "render_face": 20,
+    "rotation_deg": 60,
+    "mirrored": true
+   }
+  },
+  {
+   "index": 55,
+   "type": "matte",
+   "rotation_deg": 120,
+   "mirrored": true,
+   "source": "low band (tone+cloudiness): render matte face 46 rot 120; high band (speckle): render matte face 28 rot 300 mirrored; sampled at 0.9681 scale inside the clean face",
+   "low_band": {
+    "render_face": 46,
+    "rotation_deg": 120,
+    "mirrored": false
+   },
+   "high_band": {
+    "render_face": 28,
+    "rotation_deg": 300,
+    "mirrored": true
+   }
+  },
+  {
+   "index": 56,
+   "type": "matte",
+   "rotation_deg": 240,
+   "mirrored": true,
+   "source": "low band (tone+cloudiness): render matte face 6 rot 240; high band (speckle): render matte face 28 rot 60 mirrored; sampled at 0.9681 scale inside the clean face",
+   "low_band": {
+    "render_face": 6,
+    "rotation_deg": 240,
+    "mirrored": false
+   },
+   "high_band": {
+    "render_face": 28,
+    "rotation_deg": 60,
+    "mirrored": true
+   }
+  }
+ ],
+ "mix": {
+  "measured_in_render_full_faces": {
+   "matte": 22,
+   "raw": 8,
+   "chiseled": 9
+  },
+  "measured_ratio": {
+   "matte": 0.5641,
+   "raw": 0.2051,
+   "chiseled": 0.2308
+  },
+  "measured_area_weighted_incl_partial_faces": {
+   "matte": 0.569,
+   "raw": 0.206,
+   "chiseled": 0.225
+  },
+  "used": {
+   "matte": 32,
+   "raw": 11,
+   "chiseled": 13
+  },
+  "used_ratio": {
+   "matte": 0.5714,
+   "raw": 0.1964,
+   "chiseled": 0.2321
+  },
+  "chiseled_rotations_used_deg": {
+   "0": 5,
+   "60": 5,
+   "300": 2,
+   "120": 1
+  },
+  "chiseled_rotations_in_render_deg": {
+   "0 (grooves 90)": 4,
+   "60 (grooves 150)": 4,
+   "300 (grooves 30)": 1,
+   "120 (grooves 30)": 1
+  }
+ },
+ "wrap_seam_steps": {
+  "method": "mean |step| across the wrap seam vs interior boundaries at the same lattice phase (x = k*W/8, y = k*H/7); pass if seam <= 1.15 x the largest matched interior step",
+  "colour_8bit_levels": {
+   "seam_x": 1.679,
+   "matched_interior_x": [
+    1.805,
+    1.216,
+    1.295,
+    1.804,
+    1.546,
+    1.641,
+    1.773
+   ],
+   "matched_x_mean": 1.583,
+   "ratio_x_matched": 1.061,
+   "seam_y": 0.479,
+   "matched_interior_y": [
+    0.77,
+    1.304,
+    0.639,
+    0.896,
+    1.323,
+    0.818
+   ],
+   "matched_y_mean": 0.958,
+   "ratio_y_matched": 0.5,
+   "all_columns_mean": 1.302,
+   "all_columns_p99": 2.091,
+   "all_rows_mean": 1.239,
+   "all_rows_p99": 1.72,
+   "ratio_x_naive": 1.29,
+   "ratio_y_naive": 0.387
+  },
+  "bump_16bit_counts": {
+   "seam_x": 1435.06,
+   "matched_interior_x": [
+    1420.95,
+    865.24,
+    1101.3,
+    1357.35,
+    1170.79,
+    1377.53,
+    1459.21
+   ],
+   "matched_x_mean": 1250.34,
+   "ratio_x_matched": 1.15,
+   "seam_y": 236.71,
+   "matched_interior_y": [
+    540.55,
+    833.37,
+    328.84,
+    627.42,
+    891.38,
+    433.85
+   ],
+   "matched_y_mean": 609.24,
+   "ratio_y_matched": 0.39,
+   "all_columns_mean": 926.47,
+   "all_columns_p99": 1634.28,
+   "all_rows_mean": 836.49,
+   "all_rows_p99": 1410.09,
+   "ratio_x_naive": 1.55,
+   "ratio_y_naive": 0.28
+  },
+  "bump_mm": {
+   "seam_x": 0.05693,
+   "matched_interior_x": [
+    0.05637,
+    0.03433,
+    0.04369,
+    0.05385,
+    0.04645,
+    0.05465,
+    0.05789
+   ],
+   "matched_x_mean": 0.04961,
+   "ratio_x_matched": 1.14774,
+   "seam_y": 0.00939,
+   "matched_interior_y": [
+    0.02145,
+    0.03306,
+    0.01305,
+    0.02489,
+    0.03536,
+    0.01721
+   ],
+   "matched_y_mean": 0.02417,
+   "ratio_y_matched": 0.38854,
+   "all_columns_mean": 0.03676,
+   "all_columns_p99": 0.06484,
+   "all_rows_mean": 0.03319,
+   "all_rows_p99": 0.05594,
+   "ratio_x_naive": 1.54896,
+   "ratio_y_naive": 0.28298
+  }
+ },
+ "relief": {
+  "height_scale": "Bump16 value v -> height = v/65535 * 2.60 mm; 0 = joint floor",
+  "joint_floor_mm": 0.0,
+  "face_plane_mm": 1.6001,
+  "joint_depth_mm": 1.6001,
+  "pattern_relief_mm": {
+   "matte": 0.05,
+   "raw": 1.347,
+   "chiseled": 0.909
+  },
+  "pattern_relief_full_range_mm": {
+   "matte": 0.05,
+   "raw": 1.881,
+   "chiseled": 1.133
+  },
+  "chiseled_groove_depth_design_mm": 0.7,
+  "deepest_pattern_point_mm": 0.6482,
+  "clearance_deepest_pattern_point_to_joint_floor_mm": 0.6482,
+  "clearance_any_face_pixel_incl_eased_edge_mm": 0.5175,
+  "eased_edge": {
+   "drop_mm": 0.25,
+   "width_in": 0.04
+  },
+  "per_type_detail": {
+   "matte": {
+    "faces": 32,
+    "min_mm": 1.3254108491645684,
+    "max_mm": 1.6249851224536507,
+    "interior_min_mm": 1.5749965667200732,
+    "interior_max_mm": 1.6249851224536507,
+    "interior_p0_5_mm": 1.5749965667200732,
+    "interior_p99_5_mm": 1.624707408255131,
+    "interior_median_mm": 1.6001098649576564,
+    "pattern_relief_p0_5_to_p99_5_mm": 0.04971084153505778,
+    "pattern_relief_full_mm": 0.04998855573357752
+   },
+   "raw": {
+    "faces": 11,
+    "min_mm": 0.5175402456702525,
+    "max_mm": 2.5295002670328834,
+    "interior_min_mm": 0.648184939345388,
+    "interior_max_mm": 2.5295002670328834,
+    "interior_p0_5_mm": 0.9164965285725186,
+    "interior_p99_5_mm": 2.26337071793698,
+    "interior_median_mm": 1.604513618677043,
+    "pattern_relief_p0_5_to_p99_5_mm": 1.3468741893644616,
+    "pattern_relief_full_mm": 1.8813153276874954
+   },
+   "chiseled": {
+    "faces": 13,
+    "min_mm": 0.6501686121919585,
+    "max_mm": 1.813196002136263,
+    "interior_min_mm": 0.6800030518043794,
+    "interior_max_mm": 1.813196002136263,
+    "interior_p0_5_mm": 0.7802975509269856,
+    "interior_p99_5_mm": 1.6895735103379874,
+    "interior_median_mm": 1.2756206607156482,
+    "pattern_relief_p0_5_to_p99_5_mm": 0.9092759594110018,
+    "pattern_relief_full_mm": 1.1331929503318836
+   }
+  }
+ },
+ "suggested_revit_bump_amount": 0.5,
+ "chiseled_geometry": {
+  "period_mm": 5.014,
+  "period_in": 0.19739,
+  "groove_directions_deg": [
+   90,
+   150,
+   30
+  ],
+  "profile": "asymmetric: fundamental + 2nd harmonic (0.30, +100 deg rel. phase)"
+ },
+ "repetition_check": {
+  "whole_face_ncc_colour_max": 0.04069554704733822,
+  "whole_face_ncc_colour_median": 0.027848335921948193,
+  "whole_face_ncc_height_max": 0.05355260281037008,
+  "whole_face_ncc_height_median": 0.03885676301734124,
+  "window_ncc_12sym_max": 0.3980043778328105,
+  "window_ncc_12sym_median": 0.29841851664145186,
+  "window_ncc_rot8_16_max": 0.4828303827967321,
+  "window_ncc_rot8_16_median": 0.2983549001619298,
+  "baseline_render_window_ncc_12sym_max": 0.44622600898404113,
+  "baseline_render_window_ncc_12sym_median": 0.2987768117637686,
+  "baseline_render_window_ncc_rot_max": 0.3606832127720876,
+  "pairs": 55,
+  "windows": 24
+ },
+ "raw_quilt_audit": {
+  "source_pixels_used": 557470,
+  "visible_samples": 868644,
+  "same_face_duplicate_source_pixels": 5292,
+  "source_pixels_in_more_than_one_face": 277763,
+  "of_which_any_two_uses_related_by_exact_hex_symmetry": 17730,
+  "share_hex_related_of_reused": 0.06383139583025817,
+  "reuse_pairs_in_neighbouring_faces": 0,
+  "matte_low_band_reused_sources": 11,
+  "matte_low_band_rule_violations": []
+ },
+ "raw_source_pixel_usage_histogram": {
+  "0": 136549,
+  "1": 278150,
+  "2": 257864,
+  "3": 29565,
+  "4": 648
+ },
+ "validation_gates": {
+  "format": true,
+  "joints_1_8_in": true,
+  "wrap_seamless": true,
+  "clearance_gt_0": true,
+  "relief_terms": true,
+  "mix_counts": true,
+  "raw_non_repeating": true
+ }
+}

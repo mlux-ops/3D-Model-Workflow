@@ -1,0 +1,225 @@
+{
+ "product": "veincut_24x48",
+ "all_pass": true,
+ "gates": {
+  "ihdr": {
+   "colour": {
+    "w": 5112,
+    "h": 5130,
+    "bit_depth": 8,
+    "colour_type": 2,
+    "interlace": 0
+   },
+   "bump": {
+    "w": 5112,
+    "h": 5130,
+    "bit_depth": 16,
+    "colour_type": 0,
+    "interlace": 0
+   },
+   "pass": true
+  },
+  "aspect": {
+   "pixels": [
+    5112,
+    5130
+   ],
+   "ppi": 36,
+   "sample_size_in": [
+    142.0,
+    142.5
+   ],
+   "expected_in": [
+    142.0,
+    142.5
+   ],
+   "report_sample_size_in": [
+    142.0,
+    142.5
+   ],
+   "pixel_aspect": 0.9964912280701754,
+   "physical_aspect": 0.9964912280701754,
+   "pass": true
+  },
+  "quarter_inch": {
+   "sample_size_in": [
+    142.0,
+    142.5
+   ],
+   "feet_inches": [
+    "11'-10.000in",
+    "11'-10.500in"
+   ],
+   "selftest_non_quarter_rejected": true,
+   "pass": true
+  },
+  "joints": {
+   "expected_width_px": 4.5,
+   "method": "centre from bump coverage; width by least-squares fit of the restated eased-edge section to each joint line's mean bump profile; colour-profile width as a sanity check",
+   "max_centre_err_px": [
+    0.0,
+    0.0
+   ],
+   "bump_fit_width_px_vertical_lines": [
+    4.499999999999952,
+    4.499999999999952,
+    4.499999999999952
+   ],
+   "bump_fit_width_px_horizontal_lines_min_max": [
+    4.499999999999952,
+    4.499999999999952
+   ],
+   "colour_width_px_vertical_mean_sd": [
+    4.6090696944775065,
+    0.07080913212871694
+   ],
+   "colour_width_px_horizontal_mean_sd": [
+    4.856747326102162,
+    0.1404316054130203
+   ],
+   "pass": true
+  },
+  "wrap": {
+   "edge_grout_share": {
+    "left": 1.0,
+    "right": 1.0,
+    "top": 1.0,
+    "bottom": 1.0
+   },
+   "left_plus_right_half_joints_px": 4.499999999999952,
+   "top_plus_bottom_half_joints_px": 4.499999999999952,
+   "interior_joint_width_px": 4.499999999999951,
+   "colour_lum_step_wrap_vs_interior_joint": [
+    0.0011225311074382334,
+    0.0011061795894429173
+   ],
+   "bump_mm_step_wrap_vs_interior_joint": [
+    0.0,
+    0.0
+   ],
+   "pass": true
+  },
+  "distinct": {
+   "cells": 18,
+   "max_same_orientation_ncc": 0.12920866967290212,
+   "real_face_clusters": 6,
+   "cells_per_cluster": [
+    3,
+    3,
+    3,
+    3,
+    3,
+    3
+   ],
+   "same_face_touching_pairs": [],
+   "plan_matches_measured_clusters": true,
+   "max_ncc_between_different_faces": 0.09086294118578551,
+   "note": "each real face appears 3 times in different flips; see README limitation",
+   "pass": true
+  },
+  "veins": {
+   "angles_deg": [
+    0.02,
+    -0.96,
+    -1.07,
+    -0.77,
+    -0.4,
+    -0.19,
+    0.03,
+    -0.82,
+    -0.01,
+    -0.42,
+    -0.81,
+    -0.04,
+    -0.86,
+    0.14,
+    -0.07,
+    0.06,
+    -0.06,
+    -0.33
+   ],
+   "coherence": [
+    0.392,
+    0.365,
+    0.34,
+    0.348,
+    0.368,
+    0.345,
+    0.351,
+    0.396,
+    0.375,
+    0.364,
+    0.329,
+    0.341,
+    0.373,
+    0.347,
+    0.412,
+    0.361,
+    0.356,
+    0.357
+   ],
+   "max_abs_deg": 1.0653299803055347,
+   "pass": true
+  },
+  "clearance": {
+   "face_min_mm": 1.3999969481956207,
+   "face_max_mm": 1.5953612573434044,
+   "face_median_mm": 1.5014145113298238,
+   "face_relief_sd_mm": 0.02686825296112515,
+   "grout_core_max_mm": 0.0,
+   "joint_depth_mm": 1.5,
+   "full_scale_mm": 1.6,
+   "clearance_face_above_grout_mm": 1.3999969481956207,
+   "pass": true
+  },
+  "colour_bump": {
+   "grout_core_px": 183960,
+   "share_within_12_of_grout": 1.0,
+   "face_mean_lin_vs_u09_rel": [
+    -0.002692602514845932,
+    -0.00500380023589142,
+    0.000704365249981409
+   ],
+   "face_mean_srgb": [
+    217.94351922358916,
+    206.17377700000077,
+    187.67186116137165
+   ],
+   "pass": true
+  },
+  "model_pattern": {
+   "file": "veincut_24x48/ELM_Jute_Vein_Cut_24x48_Model.pat",
+   "horizontal": {
+    "pattern": "ELM Jute Vein-Cut 24x48 - Stack Horizontal",
+    "segments": 28,
+    "sampled_points": 15354,
+    "points_on_grout": 1.0,
+    "joint_runs_matched": 425,
+    "joint_runs_unmatched": 0,
+    "max_offset_px": 0.0,
+    "median_offset_px": 0.0,
+    "pass": true
+   },
+   "vertical": {
+    "pattern": "ELM Jute Vein-Cut 24x48 - Stack Vertical (maps rotated 90 deg CCW)",
+    "segments": 28,
+    "sampled_points": 16212,
+    "points_on_grout": 1.0,
+    "joint_runs_matched": 425,
+    "joint_runs_unmatched": 0,
+    "max_offset_px": 0.0,
+    "median_offset_px": 0.0,
+    "pass": true
+   },
+   "header_ok": true,
+   "pass": true
+  }
+ },
+ "revit_sample_size": {
+  "width_in": 142.0,
+  "height_in": 142.5,
+  "width": "11'-10.000in",
+  "height": "11'-10.500in"
+ },
+ "revit_bump_amount_editor": 60
+}

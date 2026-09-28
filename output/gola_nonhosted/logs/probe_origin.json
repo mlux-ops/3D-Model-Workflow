@@ -1,0 +1,728 @@
+{
+  "src": {
+    "planes": [
+      {
+        "normal": [
+          0.0, 
+          -304.80000000000001, 
+          -0.0
+        ], 
+        "is_reference": "Center (Front/Back)", 
+        "origin": [
+          0.0, 
+          -0.0, 
+          0.0
+        ], 
+        "pinned": true, 
+        "defines_origin": 1, 
+        "name": "Center (Front/Back)"
+      }, 
+      {
+        "normal": [
+          -0.0, 
+          -0.0, 
+          304.80000000000001
+        ], 
+        "is_reference": "Not a Reference", 
+        "origin": [
+          0.0, 
+          0.0, 
+          -0.0
+        ], 
+        "pinned": false, 
+        "defines_origin": 0, 
+        "name": "Reference Plane"
+      }, 
+      {
+        "normal": [
+          304.80000000000001, 
+          0.0, 
+          -0.0
+        ], 
+        "is_reference": "Left", 
+        "origin": [
+          0.0, 
+          0.0, 
+          0.0
+        ], 
+        "pinned": true, 
+        "defines_origin": 1, 
+        "name": "Left"
+      }, 
+      {
+        "normal": [
+          304.80000000000001, 
+          -0.0, 
+          0.0
+        ], 
+        "is_reference": "Right", 
+        "origin": [
+          1000.0, 
+          584.20000000000005, 
+          1219.2000000000000
+        ], 
+        "pinned": false, 
+        "defines_origin": 0, 
+        "name": "Right"
+      }, 
+      {
+        "normal": [
+          0.0, 
+          304.80000000000001, 
+          -0.0
+        ], 
+        "is_reference": "Weak Reference", 
+        "origin": [
+          1200.0, 
+          -0.5, 
+          0.0
+        ], 
+        "pinned": false, 
+        "defines_origin": 0, 
+        "name": "Recess lower edge"
+      }, 
+      {
+        "normal": [
+          0.0, 
+          304.80000000000001, 
+          -0.0
+        ], 
+        "is_reference": "Weak Reference", 
+        "origin": [
+          1200.0, 
+          56.5, 
+          0.0
+        ], 
+        "pinned": false, 
+        "defines_origin": 0, 
+        "name": "Recess upper edge"
+      }, 
+      {
+        "normal": [
+          0.0, 
+          0.0, 
+          -304.80000000000001
+        ], 
+        "is_reference": "Weak Reference", 
+        "origin": [
+          0.0, 
+          1.6411, 
+          48.049999999999997
+        ], 
+        "pinned": false, 
+        "defines_origin": 1, 
+        "name": "Placement Plane"
+      }
+    ], 
+    "placement": "CurveBased", 
+    "forms": [
+      {
+        "bbox": [
+          0.0, 
+          0.0, 
+          0.0, 
+          1000.0, 
+          56.0, 
+          27.0
+        ], 
+        "subcat": "Channel Profiles", 
+        "id": "13077715", 
+        "volume_mm3": 122158.36850000000, 
+        "solid": true
+      }, 
+      {
+        "bbox": [
+          -2.0, 
+          0.0, 
+          0.0, 
+          0.0, 
+          56.0, 
+          27.0
+        ], 
+        "subcat": "End Caps", 
+        "id": "13077791", 
+        "volume_mm3": 3024.0, 
+        "solid": true
+      }, 
+      {
+        "bbox": [
+          -11.0, 
+          -1.0, 
+          0.0, 
+          0.0, 
+          57.0, 
+          29.0
+        ], 
+        "subcat": "End Caps", 
+        "id": "13077802", 
+        "volume_mm3": 1494.8688999999999, 
+        "solid": true
+      }, 
+      {
+        "bbox": [
+          0.0, 
+          7.0, 
+          5.2999999999999998, 
+          8.0, 
+          49.0, 
+          7.0
+        ], 
+        "subcat": "End Caps", 
+        "id": "13077876", 
+        "volume_mm3": 571.20000000000005, 
+        "solid": true
+      }, 
+      {
+        "bbox": [
+          1000.0, 
+          0.0, 
+          0.0, 
+          1002.0, 
+          56.0, 
+          27.0
+        ], 
+        "subcat": "End Caps", 
+        "id": "13077889", 
+        "volume_mm3": 3024.0, 
+        "solid": true
+      }, 
+      {
+        "bbox": [
+          1000.0, 
+          -1.0, 
+          0.0, 
+          1011.0, 
+          57.0, 
+          29.0
+        ], 
+        "subcat": "End Caps", 
+        "id": "13077900", 
+        "volume_mm3": 1494.8688999999999, 
+        "solid": true
+      }, 
+      {
+        "bbox": [
+          992.0, 
+          7.0, 
+          5.2999999999999998, 
+          1000.0, 
+          49.0, 
+          7.0
+        ], 
+        "subcat": "End Caps", 
+        "id": "13077974", 
+        "volume_mm3": 571.20000000000005, 
+        "solid": true
+      }, 
+      {
+        "bbox": [
+          932.0, 
+          13.25, 
+          1.5, 
+          1000.0, 
+          24.25, 
+          3.8999999999999999
+        ], 
+        "subcat": "Assembly Brackets", 
+        "id": "13077988", 
+        "volume_mm3": 1795.2000000000000, 
+        "solid": true
+      }, 
+      {
+        "bbox": [
+          997.60000000000002, 
+          13.25, 
+          -34.100000000000001, 
+          1000.0, 
+          24.25, 
+          3.8999999999999999
+        ], 
+        "subcat": "Assembly Brackets", 
+        "id": "13077999", 
+        "volume_mm3": 1003.2000000000000, 
+        "solid": true
+      }, 
+      {
+        "bbox": [
+          966.0, 
+          13.25, 
+          1.5, 
+          1034.0, 
+          24.25, 
+          3.8999999999999999
+        ], 
+        "subcat": "Assembly Brackets", 
+        "id": "13078010", 
+        "volume_mm3": 1795.2000000000000, 
+        "solid": true
+      }, 
+      {
+        "bbox": [
+          -29.0, 
+          5.0, 
+          5.2999999999999998, 
+          0.0, 
+          51.0, 
+          6.5
+        ], 
+        "subcat": "Corner Joints", 
+        "id": "13078023", 
+        "volume_mm3": 1600.8000000000000, 
+        "solid": true
+      }, 
+      {
+        "bbox": [
+          -29.0, 
+          5.0, 
+          5.2999999999999998, 
+          -27.800000000000001, 
+          51.0, 
+          33.100000000000001
+        ], 
+        "subcat": "Corner Joints", 
+        "id": "13078034", 
+        "volume_mm3": 1534.5599999999999, 
+        "solid": true
+      }, 
+      {
+        "bbox": [
+          -29.0, 
+          3.8999999999999999, 
+          5.2999999999999998, 
+          0.0, 
+          5.0999999999999996, 
+          34.299999999999997
+        ], 
+        "subcat": "Corner Joints", 
+        "id": "13078045", 
+        "volume_mm3": 1009.2000000000000, 
+        "solid": true
+      }, 
+      {
+        "bbox": [
+          1000.0, 
+          5.0, 
+          25.800000000000001, 
+          1027.0, 
+          51.0, 
+          27.0
+        ], 
+        "subcat": "Corner Joints", 
+        "id": "13078056", 
+        "volume_mm3": 1490.4000000000001, 
+        "solid": true
+      }, 
+      {
+        "bbox": [
+          1025.8000000000000, 
+          5.0, 
+          0.0, 
+          1027.0, 
+          51.0, 
+          25.800000000000001
+        ], 
+        "subcat": "Corner Joints", 
+        "id": "13078067", 
+        "volume_mm3": 1424.1600000000001, 
+        "solid": true
+      }, 
+      {
+        "bbox": [
+          1000.0, 
+          3.8999999999999999, 
+          0.0, 
+          1027.0, 
+          5.0999999999999996, 
+          27.0
+        ], 
+        "subcat": "Corner Joints", 
+        "id": "13078078", 
+        "volume_mm3": 874.79999999999995, 
+        "solid": true
+      }, 
+      {
+        "bbox": [
+          0.0, 
+          -0.5, 
+          -0.0, 
+          1000.0, 
+          56.0, 
+          77.0
+        ], 
+        "subcat": null, 
+        "id": "13078109", 
+        "volume_mm3": -2766150.4725000001, 
+        "solid": false
+      }
+    ], 
+    "levels": [
+      [
+        "Ref. Level", 
+        -0.0
+      ]
+    ]
+  }, 
+  "dst": {
+    "planes": [
+      {
+        "normal": [
+          0.0, 
+          -304.80000000000001, 
+          -0.0
+        ], 
+        "is_reference": "Center (Front/Back)", 
+        "origin": [
+          0.0, 
+          -0.0, 
+          0.0
+        ], 
+        "pinned": true, 
+        "defines_origin": 1, 
+        "name": "Center (Front/Back)"
+      }, 
+      {
+        "normal": [
+          -0.0, 
+          -0.0, 
+          304.80000000000001
+        ], 
+        "is_reference": "Not a Reference", 
+        "origin": [
+          0.0, 
+          0.0, 
+          -0.0
+        ], 
+        "pinned": false, 
+        "defines_origin": 1, 
+        "name": "Reference Plane"
+      }, 
+      {
+        "normal": [
+          304.80000000000001, 
+          0.0, 
+          -0.0
+        ], 
+        "is_reference": "Center (Left/Right)", 
+        "origin": [
+          0.0, 
+          0.0, 
+          0.0
+        ], 
+        "pinned": true, 
+        "defines_origin": 1, 
+        "name": "Center (Left/Right)"
+      }, 
+      {
+        "normal": [
+          -304.80000000000001, 
+          0.0, 
+          0.0
+        ], 
+        "is_reference": "Weak Reference", 
+        "origin": [
+          1000.0, 
+          300.0, 
+          0.0
+        ], 
+        "pinned": false, 
+        "defines_origin": 0, 
+        "name": "Channel End"
+      }, 
+      {
+        "normal": [
+          -0.0, 
+          0.0, 
+          -304.80000000000001
+        ], 
+        "is_reference": "Weak Reference", 
+        "origin": [
+          1500.0, 
+          0.0, 
+          -0.5
+        ], 
+        "pinned": false, 
+        "defines_origin": 0, 
+        "name": "Recess lower edge"
+      }, 
+      {
+        "normal": [
+          -0.0, 
+          0.0, 
+          -304.80000000000001
+        ], 
+        "is_reference": "Weak Reference", 
+        "origin": [
+          1500.0, 
+          0.0, 
+          56.5
+        ], 
+        "pinned": false, 
+        "defines_origin": 0, 
+        "name": "Recess upper edge"
+      }, 
+      {
+        "normal": [
+          0.0, 
+          -304.80000000000001, 
+          0.0
+        ], 
+        "is_reference": "Weak Reference", 
+        "origin": [
+          -300.0, 
+          -48.049999999999997, 
+          1.6411
+        ], 
+        "pinned": false, 
+        "defines_origin": 0, 
+        "name": "Placement Plane"
+      }
+    ], 
+    "placement": "OneLevelBased", 
+    "forms": [
+      {
+        "bbox": [
+          0.0, 
+          -27.0, 
+          -0.0, 
+          1000.0, 
+          0.0, 
+          56.0
+        ], 
+        "subcat": "Channel Profiles", 
+        "id": "3145", 
+        "volume_mm3": 122161.16300000000, 
+        "solid": true
+      }, 
+      {
+        "bbox": [
+          -2.0, 
+          -27.0, 
+          0.0, 
+          0.0, 
+          0.0, 
+          56.0
+        ], 
+        "subcat": "End Caps", 
+        "id": "3214", 
+        "volume_mm3": 3024.0, 
+        "solid": true
+      }, 
+      {
+        "bbox": [
+          -11.0, 
+          -29.0, 
+          -1.0, 
+          0.0, 
+          0.0, 
+          57.0
+        ], 
+        "subcat": "End Caps", 
+        "id": "3223", 
+        "volume_mm3": 1494.8688999999999, 
+        "solid": true
+      }, 
+      {
+        "bbox": [
+          0.0, 
+          -7.0, 
+          7.0, 
+          8.0, 
+          -5.2999999999999998, 
+          49.0
+        ], 
+        "subcat": "End Caps", 
+        "id": "3290", 
+        "volume_mm3": 571.20000000000005, 
+        "solid": true
+      }, 
+      {
+        "bbox": [
+          1000.0, 
+          -27.0, 
+          0.0, 
+          1002.0, 
+          0.0, 
+          56.0
+        ], 
+        "subcat": "End Caps", 
+        "id": "3300", 
+        "volume_mm3": 3024.0, 
+        "solid": true
+      }, 
+      {
+        "bbox": [
+          1000.0, 
+          -29.0, 
+          -1.0, 
+          1011.0, 
+          0.0, 
+          57.0
+        ], 
+        "subcat": "End Caps", 
+        "id": "3309", 
+        "volume_mm3": 1494.8688999999999, 
+        "solid": true
+      }, 
+      {
+        "bbox": [
+          992.0, 
+          -7.0, 
+          7.0, 
+          1000.0, 
+          -5.2999999999999998, 
+          49.0
+        ], 
+        "subcat": "End Caps", 
+        "id": "3376", 
+        "volume_mm3": 571.20000000000005, 
+        "solid": true
+      }, 
+      {
+        "bbox": [
+          932.0, 
+          -3.8999999999999999, 
+          13.25, 
+          1000.0, 
+          -1.5, 
+          24.25
+        ], 
+        "subcat": "Assembly Brackets", 
+        "id": "3386", 
+        "volume_mm3": 1795.2000000000000, 
+        "solid": true
+      }, 
+      {
+        "bbox": [
+          997.60000000000002, 
+          -3.8999999999999999, 
+          13.25, 
+          1000.0, 
+          34.100000000000001, 
+          24.25
+        ], 
+        "subcat": "Assembly Brackets", 
+        "id": "3395", 
+        "volume_mm3": 1003.2000000000000, 
+        "solid": true
+      }, 
+      {
+        "bbox": [
+          966.0, 
+          -3.8999999999999999, 
+          13.25, 
+          1034.0, 
+          -1.5, 
+          24.25
+        ], 
+        "subcat": "Assembly Brackets", 
+        "id": "3404", 
+        "volume_mm3": 1795.2000000000000, 
+        "solid": true
+      }, 
+      {
+        "bbox": [
+          -29.0, 
+          -6.5, 
+          5.0, 
+          0.0, 
+          -5.2999999999999998, 
+          51.0
+        ], 
+        "subcat": "Corner Joints", 
+        "id": "3413", 
+        "volume_mm3": 1600.8000000000000, 
+        "solid": true
+      }, 
+      {
+        "bbox": [
+          -29.0, 
+          -33.100000000000001, 
+          5.0, 
+          -27.800000000000001, 
+          -5.2999999999999998, 
+          51.0
+        ], 
+        "subcat": "Corner Joints", 
+        "id": "3423", 
+        "volume_mm3": 1534.5599999999999, 
+        "solid": true
+      }, 
+      {
+        "bbox": [
+          -29.0, 
+          -34.299999999999997, 
+          3.8999999999999999, 
+          0.0, 
+          -5.2999999999999998, 
+          5.0999999999999996
+        ], 
+        "subcat": "Corner Joints", 
+        "id": "3433", 
+        "volume_mm3": 1009.2000000000000, 
+        "solid": true
+      }, 
+      {
+        "bbox": [
+          1000.0, 
+          -27.0, 
+          5.0, 
+          1027.0, 
+          -25.800000000000001, 
+          51.0
+        ], 
+        "subcat": "Corner Joints", 
+        "id": "3443", 
+        "volume_mm3": 1490.4000000000001, 
+        "solid": true
+      }, 
+      {
+        "bbox": [
+          1025.8000000000000, 
+          -25.800000000000001, 
+          5.0, 
+          1027.0, 
+          0.0, 
+          51.0
+        ], 
+        "subcat": "Corner Joints", 
+        "id": "3453", 
+        "volume_mm3": 1424.1600000000001, 
+        "solid": true
+      }, 
+      {
+        "bbox": [
+          1000.0, 
+          -27.0, 
+          3.8999999999999999, 
+          1027.0, 
+          0.0, 
+          5.0999999999999996
+        ], 
+        "subcat": "Corner Joints", 
+        "id": "3463", 
+        "volume_mm3": 874.79999999999995, 
+        "solid": true
+      }, 
+      {
+        "bbox": [
+          0.0, 
+          -77.0, 
+          -0.5, 
+          1000.0, 
+          0.0, 
+          56.0
+        ], 
+        "subcat": null, 
+        "id": "3472", 
+        "volume_mm3": -2766150.4725000001, 
+        "solid": false
+      }
+    ], 
+    "levels": [
+      [
+        "Ref. Level", 
+        -0.0
+      ]
+    ]
+  }
+}

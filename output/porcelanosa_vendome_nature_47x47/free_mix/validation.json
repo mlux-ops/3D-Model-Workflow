@@ -1,0 +1,569 @@
+{
+ "set": "free_mix",
+ "all_pass": true,
+ "maps": [
+  {
+   "colour": "Color.png",
+   "bump": "Bump16.png",
+   "all_pass": true,
+   "gates": {
+    "ihdr": {
+     "colour": {
+      "w": 6048,
+      "h": 6048,
+      "bit_depth": 8,
+      "colour_type": 2,
+      "interlace": 0
+     },
+     "bump": {
+      "w": 6048,
+      "h": 6048,
+      "bit_depth": 16,
+      "colour_type": 0,
+      "interlace": 0
+     },
+     "pass": true
+    },
+    "quarter_inch": {
+     "pixels": [
+      6048,
+      6048
+     ],
+     "sample_size_in": [
+      189.0,
+      189.0
+     ],
+     "feet_inches": [
+      "15'-9.000in",
+      "15'-9.000in"
+     ],
+     "expected_in": [
+      189.0,
+      189.0
+     ],
+     "selftest_non_quarter_rejected": true,
+     "pass": true
+    },
+    "joints": {
+     "joint_px": 2,
+     "joint_in": 0.0625,
+     "zero_columns": [
+      0,
+      1511,
+      1512,
+      3023,
+      3024,
+      4535,
+      4536,
+      6047
+     ],
+     "zero_rows": [
+      0,
+      1511,
+      1512,
+      3023,
+      3024,
+      4535,
+      4536,
+      6047
+     ],
+     "interior_joint_centres_px": [
+      1512.0,
+      3024.0,
+      4536.0
+     ],
+     "zero_exactly_on_joints": true,
+     "pass": true
+    },
+    "wrap": {
+     "edge_grout_share": {
+      "left": 1.0,
+      "right": 1.0,
+      "top": 1.0,
+      "bottom": 1.0
+     },
+     "left_plus_right_px": 2,
+     "top_plus_bottom_px": 2,
+     "colour_lum_step_vertical_wrap_vs_ref": [
+      0.1257809835805332,
+      0.14586351358259061
+     ],
+     "colour_lum_step_horizontal_wrap_vs_ref": [
+      0.12496996835753775,
+      0.1390640794846658
+     ],
+     "ref_basis": "interior joints of the same direction",
+     "step_across_joint_between_different_pieces_mean": 0.13281794657472354,
+     "bump_step_wrap_v_h": [
+      0.025152971694514362,
+      0.021131743084897868
+     ],
+     "bump_step_interior_v_h": [
+      0.025217756603530095,
+      0.024322485299062686
+     ],
+     "bump_micro_3px_step": 0.025790199497172348,
+     "pass": true
+    },
+    "identity": {
+     "cells": [
+      {
+       "cell": [
+        0,
+        0
+       ],
+       "declared": [
+        2,
+        270
+       ],
+       "measured": [
+        2,
+        270,
+        "rotation"
+       ],
+       "ncc_declared": 0.9992440813895273,
+       "best_other": 0.16243220208132997,
+       "best_mirror_of_same_piece": 0.16243220208132997,
+       "mean_abs_drgb_vs_littlecms": 0.5447711374374342,
+       "ok": true
+      },
+      {
+       "cell": [
+        0,
+        1
+       ],
+       "declared": [
+        5,
+        180
+       ],
+       "measured": [
+        5,
+        180,
+        "rotation"
+       ],
+       "ncc_declared": 0.9988054100863006,
+       "best_other": 0.4568842539034003,
+       "best_mirror_of_same_piece": 0.21650062192965225,
+       "mean_abs_drgb_vs_littlecms": 0.5812008790838534,
+       "ok": true
+      },
+      {
+       "cell": [
+        0,
+        2
+       ],
+       "declared": [
+        8,
+        0
+       ],
+       "measured": [
+        8,
+        0,
+        "rotation"
+       ],
+       "ncc_declared": 0.9994532026845175,
+       "best_other": 0.23310819510025976,
+       "best_mirror_of_same_piece": 0.16468420230449304,
+       "mean_abs_drgb_vs_littlecms": 0.6645978544607086,
+       "ok": true
+      },
+      {
+       "cell": [
+        0,
+        3
+       ],
+       "declared": [
+        6,
+        180
+       ],
+       "measured": [
+        6,
+        180,
+        "rotation"
+       ],
+       "ncc_declared": 0.9985366122175418,
+       "best_other": 0.2345857094362766,
+       "best_mirror_of_same_piece": 0.10586706933244613,
+       "mean_abs_drgb_vs_littlecms": 0.5630205677158985,
+       "ok": true
+      },
+      {
+       "cell": [
+        1,
+        0
+       ],
+       "declared": [
+        1,
+        270
+       ],
+       "measured": [
+        1,
+        270,
+        "rotation"
+       ],
+       "ncc_declared": 0.9993774479511942,
+       "best_other": 0.21297178267627068,
+       "best_mirror_of_same_piece": 0.21297178267627068,
+       "mean_abs_drgb_vs_littlecms": 0.6417171175274519,
+       "ok": true
+      },
+      {
+       "cell": [
+        1,
+        1
+       ],
+       "declared": [
+        4,
+        270
+       ],
+       "measured": [
+        4,
+        270,
+        "rotation"
+       ],
+       "ncc_declared": 0.9990773743040395,
+       "best_other": 0.09157642166910783,
+       "best_mirror_of_same_piece": 0.012095827189199776,
+       "mean_abs_drgb_vs_littlecms": 0.6665909245681724,
+       "ok": true
+      },
+      {
+       "cell": [
+        1,
+        2
+       ],
+       "declared": [
+        3,
+        0
+       ],
+       "measured": [
+        3,
+        0,
+        "rotation"
+       ],
+       "ncc_declared": 0.9984445147857862,
+       "best_other": 0.4577812784379845,
+       "best_mirror_of_same_piece": 0.12556326569946125,
+       "mean_abs_drgb_vs_littlecms": 0.5571619333798994,
+       "ok": true
+      },
+      {
+       "cell": [
+        1,
+        3
+       ],
+       "declared": [
+        7,
+        0
+       ],
+       "measured": [
+        7,
+        0,
+        "rotation"
+       ],
+       "ncc_declared": 0.9991812001551039,
+       "best_other": 0.20152292366338992,
+       "best_mirror_of_same_piece": 0.08179707520281589,
+       "mean_abs_drgb_vs_littlecms": 0.559143115714057,
+       "ok": true
+      },
+      {
+       "cell": [
+        2,
+        0
+       ],
+       "declared": [
+        5,
+        270
+       ],
+       "measured": [
+        5,
+        270,
+        "rotation"
+       ],
+       "ncc_declared": 0.9988060860150236,
+       "best_other": 0.4568030241022437,
+       "best_mirror_of_same_piece": 0.21652520926589616,
+       "mean_abs_drgb_vs_littlecms": 0.5810247702135877,
+       "ok": true
+      },
+      {
+       "cell": [
+        2,
+        1
+       ],
+       "declared": [
+        6,
+        0
+       ],
+       "measured": [
+        6,
+        0,
+        "rotation"
+       ],
+       "ncc_declared": 0.998536612217542,
+       "best_other": 0.2345857094362766,
+       "best_mirror_of_same_piece": 0.10586706933244613,
+       "mean_abs_drgb_vs_littlecms": 0.5630205677158985,
+       "ok": true
+      },
+      {
+       "cell": [
+        2,
+        2
+       ],
+       "declared": [
+        8,
+        90
+       ],
+       "measured": [
+        8,
+        90,
+        "rotation"
+       ],
+       "ncc_declared": 0.9994559720277394,
+       "best_other": 0.23306133095812276,
+       "best_mirror_of_same_piece": 0.16472744560983035,
+       "mean_abs_drgb_vs_littlecms": 0.664950921327905,
+       "ok": true
+      },
+      {
+       "cell": [
+        2,
+        3
+       ],
+       "declared": [
+        2,
+        90
+       ],
+       "measured": [
+        2,
+        90,
+        "rotation"
+       ],
+       "ncc_declared": 0.9992440813895271,
+       "best_other": 0.16243220208132997,
+       "best_mirror_of_same_piece": 0.16243220208132997,
+       "mean_abs_drgb_vs_littlecms": 0.5447711374374342,
+       "ok": true
+      },
+      {
+       "cell": [
+        3,
+        0
+       ],
+       "declared": [
+        7,
+        180
+       ],
+       "measured": [
+        7,
+        180,
+        "rotation"
+       ],
+       "ncc_declared": 0.9991812001551036,
+       "best_other": 0.2015229236633899,
+       "best_mirror_of_same_piece": 0.08179707520281587,
+       "mean_abs_drgb_vs_littlecms": 0.559143115714057,
+       "ok": true
+      },
+      {
+       "cell": [
+        3,
+        1
+       ],
+       "declared": [
+        1,
+        180
+       ],
+       "measured": [
+        1,
+        180,
+        "rotation"
+       ],
+       "ncc_declared": 0.999376187899762,
+       "best_other": 0.21295052124826558,
+       "best_mirror_of_same_piece": 0.21295052124826558,
+       "mean_abs_drgb_vs_littlecms": 0.6417177968287836,
+       "ok": true
+      },
+      {
+       "cell": [
+        3,
+        2
+       ],
+       "declared": [
+        3,
+        90
+       ],
+       "measured": [
+        3,
+        90,
+        "rotation"
+       ],
+       "ncc_declared": 0.9984441512326503,
+       "best_other": 0.4577918954577499,
+       "best_mirror_of_same_piece": 0.12561460090768203,
+       "mean_abs_drgb_vs_littlecms": 0.5570853421547405,
+       "ok": true
+      },
+      {
+       "cell": [
+        3,
+        3
+       ],
+       "declared": [
+        4,
+        90
+       ],
+       "measured": [
+        4,
+        90,
+        "rotation"
+       ],
+       "ncc_declared": 0.9990773743040395,
+       "best_other": 0.09157642166910784,
+       "best_mirror_of_same_piece": 0.012095827189199772,
+       "mean_abs_drgb_vs_littlecms": 0.6665909245681724,
+       "ok": true
+      }
+     ],
+     "min_ncc_declared": 0.9984441512326503,
+     "max_other": 0.4577918954577499,
+     "max_mean_abs_drgb": 0.6665909245681724,
+     "pass": true
+    },
+    "clearance": {
+     "face_min_mm": 1.1982848859388113,
+     "face_max_mm": 1.5999755855649653,
+     "face_median_mm": 1.5014633401998934,
+     "face_micro_sd_mm": 0.020963937552992765,
+     "grout_max_mm": 0.0,
+     "joint_depth_mm": 1.5,
+     "full_scale_mm": 1.6,
+     "clearance_face_above_grout_mm": 1.1982848859388113,
+     "pass": true
+    },
+    "colour_bump": {
+     "joint_px": 96704,
+     "joint_px_exact_grout": 1.0,
+     "face_mean_lin_vs_source_rel": [
+      6.925119990497386e-05,
+      0.0010291290789572471,
+      0.00035766021900873746
+     ],
+     "face_mean_srgb": [
+      208.63571005657647,
+      207.63018842375334,
+      204.75030431779308
+     ],
+     "pass": true
+    },
+    "adjacency": {
+     "piece_counts": {
+      "1": 2,
+      "2": 2,
+      "3": 2,
+      "4": 2,
+      "5": 2,
+      "6": 2,
+      "7": 2,
+      "8": 2
+     },
+     "rotations_per_piece": {
+      "1": [
+       180,
+       270
+      ],
+      "2": [
+       90,
+       270
+      ],
+      "3": [
+       0,
+       90
+      ],
+      "4": [
+       90,
+       270
+      ],
+      "5": [
+       180,
+       270
+      ],
+      "6": [
+       0,
+       180
+      ],
+      "7": [
+       0,
+       180
+      ],
+      "8": [
+       0,
+       90
+      ]
+     },
+     "same_piece_touching": [],
+     "pass": true,
+     "mirrored_cells": 0
+    },
+    "cross_set": {
+     "cells_identical_to_rotated_piece_maps": 16,
+     "mismatched": [],
+     "pass": true
+    },
+    "model_pattern": {
+     "file": "_work/Porcelanosa_Vendome_Nature_47x47_Model.pat",
+     "header_ok": true,
+     "maps": [
+      {
+       "map": "designed",
+       "segments": 18,
+       "sampled_points": 15624,
+       "points_on_grout": 1.0,
+       "joint_runs_matched": 480,
+       "joint_runs_unmatched": 0,
+       "max_offset_px": 0.0,
+       "median_offset_px": 0.0,
+       "pass": true
+      },
+      {
+       "map": "free_mix",
+       "segments": 26,
+       "sampled_points": 31248,
+       "points_on_grout": 1.0,
+       "joint_runs_matched": 600,
+       "joint_runs_unmatched": 0,
+       "max_offset_px": 0.0,
+       "median_offset_px": 0.0,
+       "pass": true
+      },
+      {
+       "map": "piece_1",
+       "segments": 8,
+       "sampled_points": 1512,
+       "points_on_grout": 1.0,
+       "joint_runs_matched": 244,
+       "joint_runs_unmatched": 0,
+       "max_offset_px": 0.0,
+       "median_offset_px": 0.0,
+       "pass": true
+      }
+     ],
+     "pass": true
+    }
+   }
+  }
+ ],
+ "set_checks": {
+  "pass": true
+ },
+ "revit_sample_size": {
+  "width_in": 189.0,
+  "height_in": 189.0,
+  "width": "15'-9.000in",
+  "height": "15'-9.000in"
+ },
+ "revit_bump_amount_editor": 60
+}

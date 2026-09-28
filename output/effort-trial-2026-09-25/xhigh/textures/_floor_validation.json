@@ -1,0 +1,84 @@
+{
+ "alpha": 169046.5,
+ "K_in": 58.02455210024098,
+ "vp_px": [
+  1142.5527690259503,
+  -934.734688959216
+ ],
+ "image_space_joint_fit_rms_px": [
+  0.34166219118611457,
+  0.1516380147899745,
+  0.1698876334493375,
+  0.1508347958238665,
+  0.3351578880646893
+ ],
+ "rectified_depth_joints": [
+  {
+   "joint": 0,
+   "n_bands": 44,
+   "mean_X_in": -49.91591669730442,
+   "std_X_in": 0.004715144412335883,
+   "range_X_in": 0.025230934210469513
+  },
+  {
+   "joint": 1,
+   "n_bands": 44,
+   "mean_X_in": -25.89003852996805,
+   "std_X_in": 0.003361618299540358,
+   "range_X_in": 0.017773553099338812
+  },
+  {
+   "joint": 2,
+   "n_bands": 44,
+   "mean_X_in": -1.7675148998858758,
+   "std_X_in": 0.007016699438211604,
+   "range_X_in": 0.03613697268342109
+  },
+  {
+   "joint": 3,
+   "n_bands": 44,
+   "mean_X_in": 22.258205900165112,
+   "std_X_in": 0.004251263518855131,
+   "range_X_in": 0.022040582590499014
+  },
+  {
+   "joint": 4,
+   "n_bands": 16,
+   "mean_X_in": 46.352165160123306,
+   "std_X_in": 0.005351251507334458,
+   "range_X_in": 0.02129452222479955
+  }
+ ],
+ "rectified_joint_spacing_in": [
+  24.0259,
+  24.1225,
+  24.0257,
+  24.094
+ ],
+ "rectified_joint_spacing_error_in": 0.06002363008217415,
+ "rectified_joint_max_std_in": 0.007016699438211604,
+ "cross_joint_Z_per_column_in": [
+  -0.05,
+  -0.018,
+  -0.018,
+  -0.018
+ ],
+ "implied_camera": {
+  "H_over_f": 0.01991670130072838,
+  "H_over_cos_pitch_in": 58.02455210024098,
+  "focal_px_if_height_equals_K": 2913.3615664617587,
+  "hfov_deg_over_2000px": 37.88916715412357
+ },
+ "isotropy_calibration_spread": {
+  "min": 146922.0,
+  "max": 202928.0,
+  "std": 15440.586736780493,
+  "n": 24
+ },
+ "visible_depth_in": {
+  "far_row": 39.4159829929193,
+  "near_row": -9.647709273524836
+ },
+ "far_row_depth_below_tile_length": true,
+ "pass": true
+}

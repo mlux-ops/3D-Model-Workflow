@@ -1,0 +1,173 @@
+{
+ "all_pass": true,
+ "gates": {
+  "ihdr": {
+   "colour": {
+    "w": 3408,
+    "h": 3420,
+    "bit_depth": 8,
+    "colour_type": 2,
+    "interlace": 0
+   },
+   "bump": {
+    "w": 3408,
+    "h": 3420,
+    "bit_depth": 16,
+    "colour_type": 0,
+    "interlace": 0
+   },
+   "pass": true
+  },
+  "aspect": {
+   "pixels": [
+    3408,
+    3420
+   ],
+   "sample_size_in": [
+    142.0,
+    142.5
+   ],
+   "expected_in": [
+    142.0,
+    142.5
+   ],
+   "report_sample_size_in": [
+    142.0,
+    142.5
+   ],
+   "pixel_aspect": 0.9964912280701754,
+   "physical_aspect": 0.9964912280701754,
+   "pass": true
+  },
+  "quarter_inch": {
+   "sample_size_in": [
+    142.0,
+    142.5
+   ],
+   "feet_inches": [
+    "11'-10.000in",
+    "11'-10.500in"
+   ],
+   "pass": true
+  },
+  "joint_width": {
+   "expected_px": 3.0,
+   "expected_in": 0.125,
+   "horizontal": {
+    "n": 1388,
+    "mean_px": 2.997190989584973,
+    "min_px": 2.8747431345324115,
+    "max_px": 3.1315878496570635
+   },
+   "vertical": {
+    "n": 540,
+    "mean_px": 2.88839079087842,
+    "min_px": 2.809006673521308,
+    "max_px": 3.1198269374413274
+   },
+   "pass": true
+  },
+  "offset_1_3": {
+   "expected_row_offsets_px": [
+    0.0,
+    378.6666666666667,
+    757.3333333333334,
+    0.0,
+    378.66666666666674,
+    757.3333333333335
+   ],
+   "measured_row_offsets_px": [
+    0.00298808557350488,
+    378.5596927693858,
+    757.4406948034425,
+    1135.9990904477845,
+    378.55825070097944,
+    757.4407435568955
+   ],
+   "max_abs_centre_error_px": 0.11667594150935656,
+   "grout_runs_per_scan_row": [
+    3
+   ],
+   "pass": true
+  },
+  "wrap": {
+   "colour_lum": {
+    "edge_step_x_face_rows": 3.3312537003610116,
+    "interior_step_x_face_rows": 3.437519712384316,
+    "ratio_x": 0.9690864283220076,
+    "edge_step_y": 0.1578404929577465,
+    "note_y": "top and bottom image rows are both inside the half-joints (structural check below)"
+   },
+   "bump_mm": {
+    "edge_step_x_face_rows": 0.010188797706336055,
+    "interior_step_x_face_rows": 0.010189332453319619,
+    "ratio_x": 0.9999475189384571,
+    "edge_step_y": 0.0,
+    "note_y": "top and bottom image rows are both inside the half-joints (structural check below)"
+   },
+   "row0_edge_columns_grout_share": 1.0,
+   "top_bottom_rows_grout_share": 1.0,
+   "pass": true
+  },
+  "distinct_faces": {
+   "n_faces": 18,
+   "threshold": 0.5,
+   "max_ncc_face_vs_face": 0.11238486643713111,
+   "worst_pair_tile_ids": [
+    4,
+    2
+   ],
+   "median_ncc": 0.06136604762081117,
+   "max_ncc_face_vs_source_A_B": 0.20247214927212898,
+   "method": "luminance at 12 px/in, DoG(1,6) band-pass, central 60 % template slid over the other face, r0/r180/flipH/flipV",
+   "pass": true
+  },
+  "clearance": {
+   "face_min_mm": 1.4084178366452216,
+   "face_max_mm": 1.5924615331782508,
+   "face_median_mm": 1.5000994932360743,
+   "grout_core_max_mm": 0.0,
+   "full_scale_mm": 1.5924615331782508,
+   "joint_step_mm": 1.5,
+   "tile_ids_seen": 18,
+   "pass": true
+  },
+  "colour_bump": {
+   "grout_core_px": 54528,
+   "share_within_12_of_grout": 1.0,
+   "face_px_near_grout_colour_share": 0.0009899694723070214,
+   "pass": true
+  },
+  "model_pattern": {
+   "horizontal": {
+    "pattern": "MSI Soreno Ivory 24x48 - 1-3 Bond Horizontal",
+    "segments": 226,
+    "sampled_points": 10046,
+    "points_on_grout": 1.0,
+    "joint_runs_matched": 312,
+    "joint_runs_unmatched": 0,
+    "max_offset_px": 0.1666670000000181,
+    "median_offset_px": 0.0,
+    "pass": true
+   },
+   "vertical": {
+    "pattern": "MSI Soreno Ivory 24x48 - 1-3 Bond Vertical (maps rotated 90 deg CCW)",
+    "segments": 226,
+    "sampled_points": 10236,
+    "points_on_grout": 1.0,
+    "joint_runs_matched": 312,
+    "joint_runs_unmatched": 0,
+    "max_offset_px": 0.1666670000000181,
+    "median_offset_px": 0.0,
+    "pass": true
+   },
+   "pass": true
+  }
+ },
+ "revit_sample_size": {
+  "width_in": 142.0,
+  "height_in": 142.5,
+  "width": "11'-10.000in",
+  "height": "11'-10.500in"
+ }
+}

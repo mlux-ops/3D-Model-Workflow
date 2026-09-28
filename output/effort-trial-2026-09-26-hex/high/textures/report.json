@@ -1,0 +1,2052 @@
+{
+ "product": "ELM Surfaces Formed Hexagon Tile in Sand (Matte / Raw / Chiseled mix)",
+ "atlas": {
+  "size_px": [
+   4489,
+   4536
+  ],
+  "columns": 8,
+  "rows": 7,
+  "faces": 56,
+  "px_per_in": 64.0,
+  "revit_sample_size_in": [
+   70.148,
+   70.875
+  ],
+  "repeat": "on, both directions",
+  "across_flats_in": 10.0,
+  "joint_in": 0.125,
+  "joint_px": 8,
+  "joint_rgb": [
+   206,
+   198,
+   184
+  ],
+  "render_face_mean_rgb": [
+   244,
+   231,
+   207
+  ]
+ },
+ "render_scale_px_per_in": 31.097942386831278,
+ "mix": {
+  "measured_in_render_complete_faces": {
+   "matte": 22,
+   "raw": 8,
+   "chiseled": 9
+  },
+  "measured_ratio": {
+   "matte": 0.5641025641025641,
+   "raw": 0.20512820512820512,
+   "chiseled": 0.23076923076923078
+  },
+  "used": {
+   "matte": 32,
+   "raw": 11,
+   "chiseled": 13
+  },
+  "used_ratio": {
+   "matte": 0.5714285714285714,
+   "raw": 0.19642857142857142,
+   "chiseled": 0.23214285714285715
+  },
+  "chiseled_orientation_render": {
+   "90": 3,
+   "150": 4,
+   "30": 2
+  },
+  "chiseled_orientation_used": {
+   "90": 4,
+   "150": 6,
+   "30": 3
+  },
+  "layout_cost": 3.1607142857142847
+ },
+ "chiseled_geometry_measured": {
+  "36": {
+   "groove_deg": 149.650606585949,
+   "period_mm": 5.055769866514224,
+   "period_in": 0.19904605773678047
+  },
+  "40": {
+   "groove_deg": 150.38603447769265,
+   "period_mm": 5.045470838542687,
+   "period_in": 0.198640584194594
+  },
+  "47": {
+   "groove_deg": 89.64510036873351,
+   "period_mm": 5.056254154436987,
+   "period_in": 0.19906512419043257
+  },
+  "50": {
+   "groove_deg": 89.64510117346613,
+   "period_mm": 5.05683352690555,
+   "period_in": 0.19908793413013978
+  },
+  "62": {
+   "groove_deg": 29.642781854239843,
+   "period_mm": 5.055306447890468,
+   "period_in": 0.19902781290907354
+  },
+  "126": {
+   "groove_deg": 89.8247340023733,
+   "period_mm": 5.0528893780367286,
+   "period_in": 0.19893265267861138
+  },
+  "136": {
+   "groove_deg": 29.62155990728472,
+   "period_mm": 5.054109229219104,
+   "period_in": 0.19898067831571276
+  },
+  "148": {
+   "groove_deg": 150.31469323549175,
+   "period_mm": 5.044351441993145,
+   "period_in": 0.19859651346429708
+  },
+  "158": {
+   "groove_deg": 150.3757112204103,
+   "period_mm": 5.043752707645163,
+   "period_in": 0.19857294124587258
+  }
+ },
+ "wrap_seam_steps": {
+  "color_8bit": {
+   "left_right_seam_mean_abs": 1.2289829512051735,
+   "left_right_equivalent_interior_mean_abs": 1.1533761652809271,
+   "left_right_ratio": 1.0655525822365428,
+   "top_bottom_seam_mean_abs": 0.7540654934283805,
+   "top_bottom_equivalent_interior_mean_abs": 0.6522363307838915,
+   "top_bottom_ratio": 1.156123107282456,
+   "all_interior_column_step_mean_abs": 1.0189280631818758,
+   "all_interior_row_step_mean_abs": 1.0727058646113505
+  },
+  "bump_16bit_codes": {
+   "left_right_seam_mean_abs": 1150.9539241622574,
+   "left_right_equivalent_interior_mean_abs": 1097.014707734946,
+   "left_right_ratio": 1.0491690913959415,
+   "top_bottom_seam_mean_abs": 404.0654934283805,
+   "top_bottom_equivalent_interior_mean_abs": 398.3840127719611,
+   "top_bottom_ratio": 1.0142613169059862,
+   "all_interior_column_step_mean_abs": 760.703205559721,
+   "all_interior_row_step_mean_abs": 813.6562044227676
+  }
+ },
+ "relief_mm": {
+  "face_plane_mm": 0.0,
+  "per_type_interior": {
+   "matte": {
+    "min_mm": -0.0349988555733578,
+    "max_mm": 0.03499427786678888,
+    "p0_5_mm": -0.032405584802014165,
+    "p99_5_mm": 0.02995880064087908,
+    "relief_p0_5_to_p99_5_mm": 0.062364385442893244,
+    "std_mm": 0.009794329975788243
+   },
+   "raw": {
+    "min_mm": -1.1470840009155414,
+    "max_mm": 0.019988555733577495,
+    "p0_5_mm": -0.9919661249713894,
+    "p99_5_mm": -0.0026459143968871057,
+    "relief_p0_5_to_p99_5_mm": 0.9893202105745023,
+    "std_mm": 0.18991088794767202
+   },
+   "chiseled": {
+    "min_mm": -0.6899382009613183,
+    "max_mm": 0.019988555733577495,
+    "p0_5_mm": -0.5941130693522545,
+    "p99_5_mm": 0.0010299839780270048,
+    "relief_p0_5_to_p99_5_mm": 0.5951430533302815,
+    "std_mm": 0.12537816996326598
+   }
+  },
+  "joint_floor_mm": -1.6,
+  "joint_depth_mm": 1.6,
+  "deepest_pattern_point_mm": -1.1470840009155414,
+  "clearance_deepest_pattern_to_joint_floor_mm": 0.4529159990844587,
+  "design_terms": {
+   "matte_grain_std_mm": 0.01,
+   "raw_relief_mm": 1.0,
+   "chiseled_groove_depth_mm": 0.6,
+   "joint_floor_mm": -1.6,
+   "edge_ease_px": [
+    317.0,
+    321.0
+   ]
+  },
+  "bump16_encoding": {
+   "code_0_mm": -1.6,
+   "code_65535_mm": 0.05,
+   "mm_per_code": 2.5177386129549097e-05
+  }
+ },
+ "joint_width_px_measured": {
+  "min": 8,
+  "max": 8,
+  "count": 24
+ },
+ "suggested_revit_bump_amount": 1.0,
+ "suggested_revit_bump_amount_note": "starting value, not verified in Revit (no Revit in this trial); the map encodes 1.65 mm full range, so raise toward 1.5 if Raw/Chiseled read shallow",
+ "faces": [
+  {
+   "index": 1,
+   "type": "chiseled",
+   "rotation_deg": 60,
+   "mirrored": false,
+   "source": "render face (complete) centred at (181.7, 1101.0) px of elm_formed_hex_sand_layout_render.webp, resampled 31.10 -> 64 px/in",
+   "source_render_centre_xy": [
+    181.7,
+    1101.0
+   ],
+   "groove_orientation_deg": 149.8,
+   "source_groove_deg": 89.82
+  },
+  {
+   "index": 2,
+   "type": "matte",
+   "rotation_deg": 227.2,
+   "mirrored": false,
+   "source": "mosaic of 5 feather-blended cells of render matte pixels at arbitrary rotations (rotation_deg/mirrored given for the largest cell; all cells listed)",
+   "cells": [
+    {
+     "score": 1.361,
+     "render_entry": 124,
+     "render_centre_xy": [
+      181.7,
+      471.3
+     ],
+     "source_full_face": true,
+     "rotation_deg": 227.2,
+     "mirrored": false,
+     "offset_render_px": [
+      15.5,
+      -32.1
+     ],
+     "area_frac": 0.2572750659850991
+    },
+    {
+     "score": 1.407,
+     "render_entry": 134,
+     "render_centre_xy": [
+      727.0,
+      156.4
+     ],
+     "source_full_face": true,
+     "rotation_deg": 20.1,
+     "mirrored": true,
+     "offset_render_px": [
+      -24.9,
+      -96.3
+     ],
+     "area_frac": 0.22887919993763434
+    },
+    {
+     "score": 1.404,
+     "render_entry": 51,
+     "render_centre_xy": [
+      999.7,
+      1573.3
+     ],
+     "source_full_face": true,
+     "rotation_deg": 275.7,
+     "mirrored": true,
+     "offset_render_px": [
+      51.1,
+      43.8
+     ],
+     "area_frac": 0.2395955141269364
+    },
+    {
+     "score": 1.385,
+     "render_entry": 39,
+     "render_centre_xy": [
+      454.4,
+      1258.5
+     ],
+     "source_full_face": true,
+     "rotation_deg": 216.0,
+     "mirrored": true,
+     "offset_render_px": [
+      -66.9,
+      -13.0
+     ],
+     "area_frac": 0.15904357800719432
+    },
+    {
+     "score": 0.0,
+     "render_entry": 57,
+     "render_centre_xy": [
+      1545.1,
+      -1.0
+     ],
+     "source_full_face": false,
+     "rotation_deg": 244.2,
+     "mirrored": true,
+     "offset_render_px": [
+      68.8,
+      -16.0
+     ],
+     "area_frac": 0.11520664194313587
+    }
+   ]
+  },
+  {
+   "index": 3,
+   "type": "chiseled",
+   "rotation_deg": 300,
+   "mirrored": true,
+   "source": "render face (complete) centred at (454.4, 1573.3) px of elm_formed_hex_sand_layout_render.webp, resampled 31.10 -> 64 px/in; reused chiseled source at a different hexagon rotation",
+   "source_render_centre_xy": [
+    454.4,
+    1573.3
+   ],
+   "groove_orientation_deg": 149.6,
+   "source_groove_deg": 150.39
+  },
+  {
+   "index": 4,
+   "type": "matte",
+   "rotation_deg": 60,
+   "mirrored": true,
+   "source": "render face (complete) centred at (727.0, 156.4) px of elm_formed_hex_sand_layout_render.webp, resampled 31.10 -> 64 px/in",
+   "source_render_centre_xy": [
+    727.0,
+    156.4
+   ]
+  },
+  {
+   "index": 5,
+   "type": "raw",
+   "rotation_deg": 240,
+   "mirrored": false,
+   "source": "render face (complete) centred at (727.0, 471.3) px of elm_formed_hex_sand_layout_render.webp, resampled 31.10 -> 64 px/in",
+   "source_render_centre_xy": [
+    727.0,
+    471.3
+   ]
+  },
+  {
+   "index": 6,
+   "type": "matte",
+   "rotation_deg": 300,
+   "mirrored": false,
+   "source": "render face (complete) centred at (727.0, 1730.8) px of elm_formed_hex_sand_layout_render.webp, resampled 31.10 -> 64 px/in",
+   "source_render_centre_xy": [
+    727.0,
+    1730.8
+   ]
+  },
+  {
+   "index": 7,
+   "type": "raw",
+   "rotation_deg": 180,
+   "mirrored": false,
+   "source": "render face (complete) centred at (1545.1, 313.9) px of elm_formed_hex_sand_layout_render.webp, resampled 31.10 -> 64 px/in",
+   "source_render_centre_xy": [
+    1545.1,
+    313.9
+   ]
+  },
+  {
+   "index": 8,
+   "type": "raw",
+   "rotation_deg": 16.9,
+   "mirrored": false,
+   "source": "mosaic of 5 feather-blended cells of render raw pixels at arbitrary rotations (rotation_deg/mirrored given for the largest cell; all cells listed)",
+   "cells": [
+    {
+     "score": 0.003,
+     "render_entry": 63,
+     "render_centre_xy": [
+      1545.1,
+      1888.2
+     ],
+     "source_full_face": false,
+     "rotation_deg": 341.7,
+     "mirrored": false,
+     "offset_render_px": [
+      -19.8,
+      -182.5
+     ],
+     "area_frac": 0.1794961745347633
+    },
+    {
+     "score": 1.616,
+     "render_entry": 135,
+     "render_centre_xy": [
+      727.0,
+      471.3
+     ],
+     "source_full_face": true,
+     "rotation_deg": 73.2,
+     "mirrored": true,
+     "offset_render_px": [
+      52.5,
+      -35.3
+     ],
+     "area_frac": 0.24716013497711403
+    },
+    {
+     "score": 1.709,
+     "render_entry": 58,
+     "render_centre_xy": [
+      1545.1,
+      313.9
+     ],
+     "source_full_face": true,
+     "rotation_deg": 270.6,
+     "mirrored": false,
+     "offset_render_px": [
+      7.2,
+      -98.9
+     ],
+     "area_frac": 0.1638212332809907
+    },
+    {
+     "score": 1.797,
+     "render_entry": 160,
+     "render_centre_xy": [
+      1817.8,
+      1415.9
+     ],
+     "source_full_face": true,
+     "rotation_deg": 16.9,
+     "mirrored": false,
+     "offset_render_px": [
+      -28.9,
+      -56.1
+     ],
+     "area_frac": 0.25397859521343535
+    },
+    {
+     "score": 1.752,
+     "render_entry": 138,
+     "render_centre_xy": [
+      727.0,
+      1415.9
+     ],
+     "source_full_face": true,
+     "rotation_deg": 93.6,
+     "mirrored": false,
+     "offset_render_px": [
+      -163.0,
+      78.0
+     ],
+     "area_frac": 0.1555438619936966
+    }
+   ]
+  },
+  {
+   "index": 9,
+   "type": "matte",
+   "rotation_deg": 180,
+   "mirrored": true,
+   "source": "render face (complete) centred at (1272.4, 471.3) px of elm_formed_hex_sand_layout_render.webp, resampled 31.10 -> 64 px/in",
+   "source_render_centre_xy": [
+    1272.4,
+    471.3
+   ]
+  },
+  {
+   "index": 10,
+   "type": "raw",
+   "rotation_deg": 60,
+   "mirrored": false,
+   "source": "render face (complete) centred at (454.4, 943.6) px of elm_formed_hex_sand_layout_render.webp, resampled 31.10 -> 64 px/in",
+   "source_render_centre_xy": [
+    454.4,
+    943.6
+   ]
+  },
+  {
+   "index": 11,
+   "type": "matte",
+   "rotation_deg": 206.0,
+   "mirrored": false,
+   "source": "mosaic of 5 feather-blended cells of render matte pixels at arbitrary rotations (rotation_deg/mirrored given for the largest cell; all cells listed)",
+   "cells": [
+    {
+     "score": 1.412,
+     "render_entry": 125,
+     "render_centre_xy": [
+      181.7,
+      786.2
+     ],
+     "source_full_face": true,
+     "rotation_deg": 151.0,
+     "mirrored": true,
+     "offset_render_px": [
+      155.6,
+      29.6
+     ],
+     "area_frac": 0.18997026494270156
+    },
+    {
+     "score": 1.398,
+     "render_entry": 145,
+     "render_centre_xy": [
+      1272.4,
+      156.4
+     ],
+     "source_full_face": true,
+     "rotation_deg": 134.1,
+     "mirrored": false,
+     "offset_render_px": [
+      6.2,
+      -49.6
+     ],
+     "area_frac": 0.16983228091276603
+    },
+    {
+     "score": 1.468,
+     "render_entry": 161,
+     "render_centre_xy": [
+      1817.8,
+      1730.8
+     ],
+     "source_full_face": true,
+     "rotation_deg": 206.0,
+     "mirrored": false,
+     "offset_render_px": [
+      -63.9,
+      10.9
+     ],
+     "area_frac": 0.3119257625872841
+    },
+    {
+     "score": 1.466,
+     "render_entry": 139,
+     "render_centre_xy": [
+      727.0,
+      1730.8
+     ],
+     "source_full_face": true,
+     "rotation_deg": 80.8,
+     "mirrored": true,
+     "offset_render_px": [
+      -32.9,
+      -78.4
+     ],
+     "area_frac": 0.20130188322029557
+    },
+    {
+     "score": 0.016,
+     "render_entry": 35,
+     "render_centre_xy": [
+      454.4,
+      -1.0
+     ],
+     "source_full_face": false,
+     "rotation_deg": 15.9,
+     "mirrored": false,
+     "offset_render_px": [
+      -20.4,
+      -23.7
+     ],
+     "area_frac": 0.12696980833695276
+    }
+   ]
+  },
+  {
+   "index": 12,
+   "type": "chiseled",
+   "rotation_deg": 120,
+   "mirrored": false,
+   "source": "render face (complete) centred at (454.4, 313.9) px of elm_formed_hex_sand_layout_render.webp, resampled 31.10 -> 64 px/in",
+   "source_render_centre_xy": [
+    454.4,
+    313.9
+   ],
+   "groove_orientation_deg": 89.7,
+   "source_groove_deg": 149.65
+  },
+  {
+   "index": 13,
+   "type": "matte",
+   "rotation_deg": 329.5,
+   "mirrored": false,
+   "source": "mosaic of 5 feather-blended cells of render matte pixels at arbitrary rotations (rotation_deg/mirrored given for the largest cell; all cells listed)",
+   "cells": [
+    {
+     "score": 0.015,
+     "render_entry": 46,
+     "render_centre_xy": [
+      999.7,
+      -1.0
+     ],
+     "source_full_face": false,
+     "rotation_deg": 353.3,
+     "mirrored": false,
+     "offset_render_px": [
+      24.5,
+      179.0
+     ],
+     "area_frac": 0.1936843629236132
+    },
+    {
+     "score": 1.481,
+     "render_entry": 156,
+     "render_centre_xy": [
+      1817.8,
+      156.4
+     ],
+     "source_full_face": true,
+     "rotation_deg": 202.6,
+     "mirrored": true,
+     "offset_render_px": [
+      -116.1,
+      19.5
+     ],
+     "area_frac": 0.22545744100319623
+    },
+    {
+     "score": 1.427,
+     "render_entry": 37,
+     "render_centre_xy": [
+      454.4,
+      628.7
+     ],
+     "source_full_face": true,
+     "rotation_deg": 329.5,
+     "mirrored": false,
+     "offset_render_px": [
+      30.3,
+      -9.8
+     ],
+     "area_frac": 0.2527786130321963
+    },
+    {
+     "score": 1.483,
+     "render_entry": 157,
+     "render_centre_xy": [
+      1817.8,
+      471.3
+     ],
+     "source_full_face": true,
+     "rotation_deg": 40.7,
+     "mirrored": false,
+     "offset_render_px": [
+      -50.4,
+      -84.1
+     ],
+     "area_frac": 0.19233960330983485
+    },
+    {
+     "score": 0.009,
+     "render_entry": 41,
+     "render_centre_xy": [
+      454.4,
+      1888.2
+     ],
+     "source_full_face": false,
+     "rotation_deg": 330.0,
+     "mirrored": false,
+     "offset_render_px": [
+      -26.1,
+      -194.4
+     ],
+     "area_frac": 0.13573997973115945
+    }
+   ]
+  },
+  {
+   "index": 14,
+   "type": "matte",
+   "rotation_deg": 60,
+   "mirrored": true,
+   "source": "render face (complete) centred at (1817.8, 1730.8) px of elm_formed_hex_sand_layout_render.webp, resampled 31.10 -> 64 px/in",
+   "source_render_centre_xy": [
+    1817.8,
+    1730.8
+   ]
+  },
+  {
+   "index": 15,
+   "type": "chiseled",
+   "rotation_deg": 0,
+   "mirrored": false,
+   "source": "render face (complete) centred at (454.4, 1573.3) px of elm_formed_hex_sand_layout_render.webp, resampled 31.10 -> 64 px/in",
+   "source_render_centre_xy": [
+    454.4,
+    1573.3
+   ],
+   "groove_orientation_deg": 150.4,
+   "source_groove_deg": 150.39
+  },
+  {
+   "index": 16,
+   "type": "matte",
+   "rotation_deg": 0,
+   "mirrored": true,
+   "source": "render face (complete) centred at (999.7, 628.7) px of elm_formed_hex_sand_layout_render.webp, resampled 31.10 -> 64 px/in",
+   "source_render_centre_xy": [
+    999.7,
+    628.7
+   ]
+  },
+  {
+   "index": 17,
+   "type": "matte",
+   "rotation_deg": 136.6,
+   "mirrored": true,
+   "source": "mosaic of 5 feather-blended cells of render matte pixels at arbitrary rotations (rotation_deg/mirrored given for the largest cell; all cells listed)",
+   "cells": [
+    {
+     "score": 1.452,
+     "render_entry": 149,
+     "render_centre_xy": [
+      1272.4,
+      1415.9
+     ],
+     "source_full_face": true,
+     "rotation_deg": 73.3,
+     "mirrored": true,
+     "offset_render_px": [
+      -32.7,
+      -65.0
+     ],
+     "area_frac": 0.1681023682115075
+    },
+    {
+     "score": 1.041,
+     "render_entry": 41,
+     "render_centre_xy": [
+      454.4,
+      1888.2
+     ],
+     "source_full_face": false,
+     "rotation_deg": 251.6,
+     "mirrored": false,
+     "offset_render_px": [
+      65.8,
+      -51.0
+     ],
+     "area_frac": 0.21428054369191535
+    },
+    {
+     "score": 1.476,
+     "render_entry": 159,
+     "render_centre_xy": [
+      1817.8,
+      1101.0
+     ],
+     "source_full_face": true,
+     "rotation_deg": 26.4,
+     "mirrored": true,
+     "offset_render_px": [
+      21.6,
+      99.3
+     ],
+     "area_frac": 0.2151046567958705
+    },
+    {
+     "score": 1.467,
+     "render_entry": 147,
+     "render_centre_xy": [
+      1272.4,
+      786.2
+     ],
+     "source_full_face": true,
+     "rotation_deg": 136.6,
+     "mirrored": true,
+     "offset_render_px": [
+      -8.4,
+      127.3
+     ],
+     "area_frac": 0.2848814223746708
+    },
+    {
+     "score": 0.67,
+     "render_entry": 35,
+     "render_centre_xy": [
+      454.4,
+      -1.0
+     ],
+     "source_full_face": false,
+     "rotation_deg": 270.9,
+     "mirrored": true,
+     "offset_render_px": [
+      -6.9,
+      195.4
+     ],
+     "area_frac": 0.11763100892603585
+    }
+   ]
+  },
+  {
+   "index": 18,
+   "type": "chiseled",
+   "rotation_deg": 240,
+   "mirrored": false,
+   "source": "render face (complete) centred at (1545.1, 1573.3) px of elm_formed_hex_sand_layout_render.webp, resampled 31.10 -> 64 px/in",
+   "source_render_centre_xy": [
+    1545.1,
+    1573.3
+   ],
+   "groove_orientation_deg": 89.6,
+   "source_groove_deg": 29.64
+  },
+  {
+   "index": 19,
+   "type": "matte",
+   "rotation_deg": 60,
+   "mirrored": false,
+   "source": "render face (complete) centred at (1817.8, 156.4) px of elm_formed_hex_sand_layout_render.webp, resampled 31.10 -> 64 px/in",
+   "source_render_centre_xy": [
+    1817.8,
+    156.4
+   ]
+  },
+  {
+   "index": 20,
+   "type": "matte",
+   "rotation_deg": 39.3,
+   "mirrored": true,
+   "source": "mosaic of 5 feather-blended cells of render matte pixels at arbitrary rotations (rotation_deg/mirrored given for the largest cell; all cells listed)",
+   "cells": [
+    {
+     "score": 1.455,
+     "render_entry": 137,
+     "render_centre_xy": [
+      727.0,
+      1101.0
+     ],
+     "source_full_face": true,
+     "rotation_deg": 41.1,
+     "mirrored": true,
+     "offset_render_px": [
+      58.6,
+      -21.9
+     ],
+     "area_frac": 0.22893360878014557
+    },
+    {
+     "score": 1.52,
+     "render_entry": 48,
+     "render_centre_xy": [
+      999.7,
+      628.7
+     ],
+     "source_full_face": true,
+     "rotation_deg": 39.3,
+     "mirrored": true,
+     "offset_render_px": [
+      29.6,
+      92.8
+     ],
+     "area_frac": 0.27062649300895947
+    },
+    {
+     "score": 1.487,
+     "render_entry": 146,
+     "render_centre_xy": [
+      1272.4,
+      471.3
+     ],
+     "source_full_face": true,
+     "rotation_deg": 277.6,
+     "mirrored": true,
+     "offset_render_px": [
+      7.9,
+      -54.4
+     ],
+     "area_frac": 0.23386993490620145
+    },
+    {
+     "score": 1.486,
+     "render_entry": 60,
+     "render_centre_xy": [
+      1545.1,
+      943.6
+     ],
+     "source_full_face": true,
+     "rotation_deg": 81.3,
+     "mirrored": true,
+     "offset_render_px": [
+      -129.0,
+      -32.2
+     ],
+     "area_frac": 0.1841837104022006
+    },
+    {
+     "score": 1.019,
+     "render_entry": 57,
+     "render_centre_xy": [
+      1545.1,
+      -1.0
+     ],
+     "source_full_face": false,
+     "rotation_deg": 138.3,
+     "mirrored": true,
+     "offset_render_px": [
+      -66.0,
+      201.4
+     ],
+     "area_frac": 0.08238625290249295
+    }
+   ]
+  },
+  {
+   "index": 21,
+   "type": "raw",
+   "rotation_deg": 60,
+   "mirrored": false,
+   "source": "render face (complete) centred at (1545.1, 628.7) px of elm_formed_hex_sand_layout_render.webp, resampled 31.10 -> 64 px/in",
+   "source_render_centre_xy": [
+    1545.1,
+    628.7
+   ]
+  },
+  {
+   "index": 22,
+   "type": "matte",
+   "rotation_deg": 137.1,
+   "mirrored": true,
+   "source": "mosaic of 5 feather-blended cells of render matte pixels at arbitrary rotations (rotation_deg/mirrored given for the largest cell; all cells listed)",
+   "cells": [
+    {
+     "score": 1.49,
+     "render_entry": 127,
+     "render_centre_xy": [
+      181.7,
+      1415.9
+     ],
+     "source_full_face": true,
+     "rotation_deg": 214.5,
+     "mirrored": true,
+     "offset_render_px": [
+      35.0,
+      59.1
+     ],
+     "area_frac": 0.16699334576941283
+    },
+    {
+     "score": 1.472,
+     "render_entry": 125,
+     "render_centre_xy": [
+      181.7,
+      786.2
+     ],
+     "source_full_face": true,
+     "rotation_deg": 44.4,
+     "mirrored": false,
+     "offset_render_px": [
+      -164.5,
+      -52.0
+     ],
+     "area_frac": 0.21277389536988056
+    },
+    {
+     "score": 1.526,
+     "render_entry": 157,
+     "render_centre_xy": [
+      1817.8,
+      471.3
+     ],
+     "source_full_face": true,
+     "rotation_deg": 275.8,
+     "mirrored": true,
+     "offset_render_px": [
+      108.6,
+      -26.5
+     ],
+     "area_frac": 0.15878274911601747
+    },
+    {
+     "score": 1.493,
+     "render_entry": 128,
+     "render_centre_xy": [
+      181.7,
+      1730.8
+     ],
+     "source_full_face": true,
+     "rotation_deg": 284.8,
+     "mirrored": false,
+     "offset_render_px": [
+      -53.1,
+      -162.2
+     ],
+     "area_frac": 0.18111479243812123
+    },
+    {
+     "score": 1.538,
+     "render_entry": 61,
+     "render_centre_xy": [
+      1545.1,
+      1258.5
+     ],
+     "source_full_face": true,
+     "rotation_deg": 137.1,
+     "mirrored": true,
+     "offset_render_px": [
+      113.3,
+      -26.5
+     ],
+     "area_frac": 0.2803352173065679
+    }
+   ]
+  },
+  {
+   "index": 23,
+   "type": "chiseled",
+   "rotation_deg": 120,
+   "mirrored": true,
+   "source": "render face (complete) centred at (999.7, 1258.5) px of elm_formed_hex_sand_layout_render.webp, resampled 31.10 -> 64 px/in; reused chiseled source at a different hexagon rotation",
+   "source_render_centre_xy": [
+    999.7,
+    1258.5
+   ],
+   "groove_orientation_deg": 30.4,
+   "source_groove_deg": 89.65
+  },
+  {
+   "index": 24,
+   "type": "matte",
+   "rotation_deg": 86.2,
+   "mirrored": false,
+   "source": "mosaic of 5 feather-blended cells of render matte pixels at arbitrary rotations (rotation_deg/mirrored given for the largest cell; all cells listed)",
+   "cells": [
+    {
+     "score": 1.529,
+     "render_entry": 150,
+     "render_centre_xy": [
+      1272.4,
+      1730.8
+     ],
+     "source_full_face": true,
+     "rotation_deg": 152.8,
+     "mirrored": true,
+     "offset_render_px": [
+      -51.7,
+      27.5
+     ],
+     "area_frac": 0.17102764707520116
+    },
+    {
+     "score": 1.557,
+     "render_entry": 128,
+     "render_centre_xy": [
+      181.7,
+      1730.8
+     ],
+     "source_full_face": true,
+     "rotation_deg": 88.1,
+     "mirrored": false,
+     "offset_render_px": [
+      -37.4,
+      -28.6
+     ],
+     "area_frac": 0.1730322688420525
+    },
+    {
+     "score": 2.859,
+     "render_entry": 145,
+     "render_centre_xy": [
+      1272.4,
+      156.4
+     ],
+     "source_full_face": true,
+     "rotation_deg": 155.2,
+     "mirrored": false,
+     "offset_render_px": [
+      83.1,
+      41.7
+     ],
+     "area_frac": 0.1977977002533619
+    },
+    {
+     "score": 2.41,
+     "render_entry": 127,
+     "render_centre_xy": [
+      181.7,
+      1415.9
+     ],
+     "source_full_face": true,
+     "rotation_deg": 77.2,
+     "mirrored": true,
+     "offset_render_px": [
+      -65.0,
+      142.8
+     ],
+     "area_frac": 0.2285268814210541
+    },
+    {
+     "score": 3.334,
+     "render_entry": 139,
+     "render_centre_xy": [
+      727.0,
+      1730.8
+     ],
+     "source_full_face": true,
+     "rotation_deg": 86.2,
+     "mirrored": false,
+     "offset_render_px": [
+      -64.9,
+      -18.5
+     ],
+     "area_frac": 0.2296155024083303
+    }
+   ]
+  },
+  {
+   "index": 25,
+   "type": "raw",
+   "rotation_deg": 134.0,
+   "mirrored": true,
+   "source": "mosaic of 5 feather-blended cells of render raw pixels at arbitrary rotations (rotation_deg/mirrored given for the largest cell; all cells listed)",
+   "cells": [
+    {
+     "score": 1.752,
+     "render_entry": 123,
+     "render_centre_xy": [
+      181.7,
+      156.4
+     ],
+     "source_full_face": true,
+     "rotation_deg": 268.6,
+     "mirrored": false,
+     "offset_render_px": [
+      143.5,
+      -33.3
+     ],
+     "area_frac": 0.12955703427346382
+    },
+    {
+     "score": 1.476,
+     "render_entry": 63,
+     "render_centre_xy": [
+      1545.1,
+      1888.2
+     ],
+     "source_full_face": false,
+     "rotation_deg": 322.8,
+     "mirrored": false,
+     "offset_render_px": [
+      -56.8,
+      20.6
+     ],
+     "area_frac": 0.15733775092574548
+    },
+    {
+     "score": 1.807,
+     "render_entry": 59,
+     "render_centre_xy": [
+      1545.1,
+      628.7
+     ],
+     "source_full_face": true,
+     "rotation_deg": 134.0,
+     "mirrored": true,
+     "offset_render_px": [
+      45.2,
+      87.9
+     ],
+     "area_frac": 0.27932455383244703
+    },
+    {
+     "score": 1.799,
+     "render_entry": 49,
+     "render_centre_xy": [
+      999.7,
+      943.6
+     ],
+     "source_full_face": true,
+     "rotation_deg": 204.6,
+     "mirrored": false,
+     "offset_render_px": [
+      -21.9,
+      60.7
+     ],
+     "area_frac": 0.20937439095692847
+    },
+    {
+     "score": 1.925,
+     "render_entry": 38,
+     "render_centre_xy": [
+      454.4,
+      943.6
+     ],
+     "source_full_face": true,
+     "rotation_deg": 101.9,
+     "mirrored": false,
+     "offset_render_px": [
+      -17.6,
+      69.0
+     ],
+     "area_frac": 0.22440627001141522
+    }
+   ]
+  },
+  {
+   "index": 26,
+   "type": "matte",
+   "rotation_deg": 300,
+   "mirrored": false,
+   "source": "render face (complete) centred at (1817.8, 471.3) px of elm_formed_hex_sand_layout_render.webp, resampled 31.10 -> 64 px/in",
+   "source_render_centre_xy": [
+    1817.8,
+    471.3
+   ]
+  },
+  {
+   "index": 27,
+   "type": "chiseled",
+   "rotation_deg": 120,
+   "mirrored": false,
+   "source": "render face (complete) centred at (727.0, 786.2) px of elm_formed_hex_sand_layout_render.webp, resampled 31.10 -> 64 px/in",
+   "source_render_centre_xy": [
+    727.0,
+    786.2
+   ],
+   "groove_orientation_deg": 149.6,
+   "source_groove_deg": 29.62
+  },
+  {
+   "index": 28,
+   "type": "matte",
+   "rotation_deg": 205.8,
+   "mirrored": false,
+   "source": "mosaic of 5 feather-blended cells of render matte pixels at arbitrary rotations (rotation_deg/mirrored given for the largest cell; all cells listed)",
+   "cells": [
+    {
+     "score": 1.785,
+     "render_entry": 150,
+     "render_centre_xy": [
+      1272.4,
+      1730.8
+     ],
+     "source_full_face": true,
+     "rotation_deg": 318.6,
+     "mirrored": true,
+     "offset_render_px": [
+      -49.7,
+      -27.6
+     ],
+     "area_frac": 0.14798284934710582
+    },
+    {
+     "score": 4.615,
+     "render_entry": 124,
+     "render_centre_xy": [
+      181.7,
+      471.3
+     ],
+     "source_full_face": true,
+     "rotation_deg": 139.7,
+     "mirrored": false,
+     "offset_render_px": [
+      96.9,
+      -108.0
+     ],
+     "area_frac": 0.2396469638332823
+    },
+    {
+     "score": 3.039,
+     "render_entry": 134,
+     "render_centre_xy": [
+      727.0,
+      156.4
+     ],
+     "source_full_face": true,
+     "rotation_deg": 205.8,
+     "mirrored": false,
+     "offset_render_px": [
+      -65.3,
+      66.9
+     ],
+     "area_frac": 0.2825932009911741
+    },
+    {
+     "score": 3.431,
+     "render_entry": 37,
+     "render_centre_xy": [
+      454.4,
+      628.7
+     ],
+     "source_full_face": true,
+     "rotation_deg": 285.2,
+     "mirrored": true,
+     "offset_render_px": [
+      98.8,
+      -143.5
+     ],
+     "area_frac": 0.17922710694100286
+    },
+    {
+     "score": 1.426,
+     "render_entry": 46,
+     "render_centre_xy": [
+      999.7,
+      -1.0
+     ],
+     "source_full_face": false,
+     "rotation_deg": 205.1,
+     "mirrored": true,
+     "offset_render_px": [
+      -29.9,
+      -14.1
+     ],
+     "area_frac": 0.15054987888743493
+    }
+   ]
+  },
+  {
+   "index": 29,
+   "type": "raw",
+   "rotation_deg": 300,
+   "mirrored": true,
+   "source": "render face (complete) centred at (1817.8, 1415.9) px of elm_formed_hex_sand_layout_render.webp, resampled 31.10 -> 64 px/in",
+   "source_render_centre_xy": [
+    1817.8,
+    1415.9
+   ]
+  },
+  {
+   "index": 30,
+   "type": "matte",
+   "rotation_deg": 72.4,
+   "mirrored": true,
+   "source": "mosaic of 5 feather-blended cells of render matte pixels at arbitrary rotations (rotation_deg/mirrored given for the largest cell; all cells listed)",
+   "cells": [
+    {
+     "score": 2.722,
+     "render_entry": 60,
+     "render_centre_xy": [
+      1545.1,
+      943.6
+     ],
+     "source_full_face": true,
+     "rotation_deg": 39.1,
+     "mirrored": true,
+     "offset_render_px": [
+      55.1,
+      90.8
+     ],
+     "area_frac": 0.19312581785783892
+    },
+    {
+     "score": 4.073,
+     "render_entry": 137,
+     "render_centre_xy": [
+      727.0,
+      1101.0
+     ],
+     "source_full_face": true,
+     "rotation_deg": 78.2,
+     "mirrored": true,
+     "offset_render_px": [
+      -49.9,
+      -13.5
+     ],
+     "area_frac": 0.22655010162318678
+    },
+    {
+     "score": 2.806,
+     "render_entry": 51,
+     "render_centre_xy": [
+      999.7,
+      1573.3
+     ],
+     "source_full_face": true,
+     "rotation_deg": 198.6,
+     "mirrored": true,
+     "offset_render_px": [
+      -15.4,
+      -60.9
+     ],
+     "area_frac": 0.17271765459253277
+    },
+    {
+     "score": 4.244,
+     "render_entry": 39,
+     "render_centre_xy": [
+      454.4,
+      1258.5
+     ],
+     "source_full_face": true,
+     "rotation_deg": 72.4,
+     "mirrored": true,
+     "offset_render_px": [
+      -12.8,
+      -54.6
+     ],
+     "area_frac": 0.2624383996436228
+    },
+    {
+     "score": 3.471,
+     "render_entry": 156,
+     "render_centre_xy": [
+      1817.8,
+      156.4
+     ],
+     "source_full_face": true,
+     "rotation_deg": 13.8,
+     "mirrored": false,
+     "offset_render_px": [
+      185.9,
+      -7.7
+     ],
+     "area_frac": 0.14516802628281872
+    }
+   ]
+  },
+  {
+   "index": 31,
+   "type": "matte",
+   "rotation_deg": 60,
+   "mirrored": true,
+   "source": "render face (complete) centred at (1272.4, 1415.9) px of elm_formed_hex_sand_layout_render.webp, resampled 31.10 -> 64 px/in",
+   "source_render_centre_xy": [
+    1272.4,
+    1415.9
+   ]
+  },
+  {
+   "index": 32,
+   "type": "matte",
+   "rotation_deg": 60,
+   "mirrored": true,
+   "source": "render face (complete) centred at (999.7, 1573.3) px of elm_formed_hex_sand_layout_render.webp, resampled 31.10 -> 64 px/in",
+   "source_render_centre_xy": [
+    999.7,
+    1573.3
+   ]
+  },
+  {
+   "index": 33,
+   "type": "chiseled",
+   "rotation_deg": 240,
+   "mirrored": true,
+   "source": "render face (complete) centred at (1817.8, 786.2) px of elm_formed_hex_sand_layout_render.webp, resampled 31.10 -> 64 px/in",
+   "source_render_centre_xy": [
+    1817.8,
+    786.2
+   ],
+   "groove_orientation_deg": 89.6,
+   "source_groove_deg": 150.38
+  },
+  {
+   "index": 34,
+   "type": "raw",
+   "rotation_deg": 256.7,
+   "mirrored": false,
+   "source": "mosaic of 5 feather-blended cells of render raw pixels at arbitrary rotations (rotation_deg/mirrored given for the largest cell; all cells listed)",
+   "cells": [
+    {
+     "score": 2.044,
+     "render_entry": 49,
+     "render_centre_xy": [
+      999.7,
+      943.6
+     ],
+     "source_full_face": true,
+     "rotation_deg": 75.2,
+     "mirrored": true,
+     "offset_render_px": [
+      56.0,
+      -19.7
+     ],
+     "area_frac": 0.16467410975304173
+    },
+    {
+     "score": 2.064,
+     "render_entry": 123,
+     "render_centre_xy": [
+      181.7,
+      156.4
+     ],
+     "source_full_face": true,
+     "rotation_deg": 104.7,
+     "mirrored": true,
+     "offset_render_px": [
+      -171.5,
+      22.6
+     ],
+     "area_frac": 0.18692541136509175
+    },
+    {
+     "score": 1.758,
+     "render_entry": 135,
+     "render_centre_xy": [
+      727.0,
+      471.3
+     ],
+     "source_full_face": true,
+     "rotation_deg": 213.6,
+     "mirrored": false,
+     "offset_render_px": [
+      -51.6,
+      49.8
+     ],
+     "area_frac": 0.11114235598741543
+    },
+    {
+     "score": 2.835,
+     "render_entry": 38,
+     "render_centre_xy": [
+      454.4,
+      943.6
+     ],
+     "source_full_face": true,
+     "rotation_deg": 312.3,
+     "mirrored": false,
+     "offset_render_px": [
+      45.2,
+      49.0
+     ],
+     "area_frac": 0.22165548347579142
+    },
+    {
+     "score": 3.332,
+     "render_entry": 138,
+     "render_centre_xy": [
+      727.0,
+      1415.9
+     ],
+     "source_full_face": true,
+     "rotation_deg": 256.7,
+     "mirrored": false,
+     "offset_render_px": [
+      30.8,
+      -30.2
+     ],
+     "area_frac": 0.3156026394186597
+    }
+   ]
+  },
+  {
+   "index": 35,
+   "type": "matte",
+   "rotation_deg": 300,
+   "mirrored": false,
+   "source": "render face (complete) centred at (1545.1, 943.6) px of elm_formed_hex_sand_layout_render.webp, resampled 31.10 -> 64 px/in",
+   "source_render_centre_xy": [
+    1545.1,
+    943.6
+   ]
+  },
+  {
+   "index": 36,
+   "type": "matte",
+   "rotation_deg": 0,
+   "mirrored": true,
+   "source": "render face (complete) centred at (181.7, 786.2) px of elm_formed_hex_sand_layout_render.webp, resampled 31.10 -> 64 px/in",
+   "source_render_centre_xy": [
+    181.7,
+    786.2
+   ]
+  },
+  {
+   "index": 37,
+   "type": "raw",
+   "rotation_deg": 0,
+   "mirrored": false,
+   "source": "render face (complete) centred at (999.7, 943.6) px of elm_formed_hex_sand_layout_render.webp, resampled 31.10 -> 64 px/in",
+   "source_render_centre_xy": [
+    999.7,
+    943.6
+   ]
+  },
+  {
+   "index": 38,
+   "type": "chiseled",
+   "rotation_deg": 240,
+   "mirrored": true,
+   "source": "render face (complete) centred at (1545.1, 1573.3) px of elm_formed_hex_sand_layout_render.webp, resampled 31.10 -> 64 px/in; reused chiseled source at a different hexagon rotation",
+   "source_render_centre_xy": [
+    1545.1,
+    1573.3
+   ],
+   "groove_orientation_deg": 30.4,
+   "source_groove_deg": 29.64
+  },
+  {
+   "index": 39,
+   "type": "matte",
+   "rotation_deg": 0,
+   "mirrored": false,
+   "source": "render face (complete) centred at (727.0, 1101.0) px of elm_formed_hex_sand_layout_render.webp, resampled 31.10 -> 64 px/in",
+   "source_render_centre_xy": [
+    727.0,
+    1101.0
+   ]
+  },
+  {
+   "index": 40,
+   "type": "matte",
+   "rotation_deg": 180,
+   "mirrored": false,
+   "source": "render face (complete) centred at (181.7, 471.3) px of elm_formed_hex_sand_layout_render.webp, resampled 31.10 -> 64 px/in",
+   "source_render_centre_xy": [
+    181.7,
+    471.3
+   ]
+  },
+  {
+   "index": 41,
+   "type": "matte",
+   "rotation_deg": 240,
+   "mirrored": false,
+   "source": "render face (complete) centred at (1272.4, 1730.8) px of elm_formed_hex_sand_layout_render.webp, resampled 31.10 -> 64 px/in",
+   "source_render_centre_xy": [
+    1272.4,
+    1730.8
+   ]
+  },
+  {
+   "index": 42,
+   "type": "chiseled",
+   "rotation_deg": 0,
+   "mirrored": false,
+   "source": "render face (complete) centred at (1817.8, 786.2) px of elm_formed_hex_sand_layout_render.webp, resampled 31.10 -> 64 px/in; reused chiseled source at a different hexagon rotation",
+   "source_render_centre_xy": [
+    1817.8,
+    786.2
+   ],
+   "groove_orientation_deg": 150.4,
+   "source_groove_deg": 150.38
+  },
+  {
+   "index": 43,
+   "type": "matte",
+   "rotation_deg": 0,
+   "mirrored": false,
+   "source": "render face (complete) centred at (181.7, 1730.8) px of elm_formed_hex_sand_layout_render.webp, resampled 31.10 -> 64 px/in",
+   "source_render_centre_xy": [
+    181.7,
+    1730.8
+   ]
+  },
+  {
+   "index": 44,
+   "type": "chiseled",
+   "rotation_deg": 120,
+   "mirrored": false,
+   "source": "render face (complete) centred at (999.7, 1258.5) px of elm_formed_hex_sand_layout_render.webp, resampled 31.10 -> 64 px/in",
+   "source_render_centre_xy": [
+    999.7,
+    1258.5
+   ],
+   "groove_orientation_deg": 29.6,
+   "source_groove_deg": 89.65
+  },
+  {
+   "index": 45,
+   "type": "matte",
+   "rotation_deg": 60,
+   "mirrored": false,
+   "source": "render face (complete) centred at (1817.8, 1101.0) px of elm_formed_hex_sand_layout_render.webp, resampled 31.10 -> 64 px/in",
+   "source_render_centre_xy": [
+    1817.8,
+    1101.0
+   ]
+  },
+  {
+   "index": 46,
+   "type": "matte",
+   "rotation_deg": 300,
+   "mirrored": false,
+   "source": "render face (complete) centred at (1272.4, 156.4) px of elm_formed_hex_sand_layout_render.webp, resampled 31.10 -> 64 px/in",
+   "source_render_centre_xy": [
+    1272.4,
+    156.4
+   ]
+  },
+  {
+   "index": 47,
+   "type": "raw",
+   "rotation_deg": 120,
+   "mirrored": true,
+   "source": "render face (complete) centred at (181.7, 156.4) px of elm_formed_hex_sand_layout_render.webp, resampled 31.10 -> 64 px/in",
+   "source_render_centre_xy": [
+    181.7,
+    156.4
+   ]
+  },
+  {
+   "index": 48,
+   "type": "matte",
+   "rotation_deg": 120,
+   "mirrored": false,
+   "source": "render face (complete) centred at (1545.1, 1258.5) px of elm_formed_hex_sand_layout_render.webp, resampled 31.10 -> 64 px/in",
+   "source_render_centre_xy": [
+    1545.1,
+    1258.5
+   ]
+  },
+  {
+   "index": 49,
+   "type": "matte",
+   "rotation_deg": 0,
+   "mirrored": true,
+   "source": "render face (complete) centred at (454.4, 628.7) px of elm_formed_hex_sand_layout_render.webp, resampled 31.10 -> 64 px/in",
+   "source_render_centre_xy": [
+    454.4,
+    628.7
+   ]
+  },
+  {
+   "index": 50,
+   "type": "matte",
+   "rotation_deg": 60,
+   "mirrored": true,
+   "source": "render face (complete) centred at (1272.4, 786.2) px of elm_formed_hex_sand_layout_render.webp, resampled 31.10 -> 64 px/in",
+   "source_render_centre_xy": [
+    1272.4,
+    786.2
+   ]
+  },
+  {
+   "index": 51,
+   "type": "raw",
+   "rotation_deg": 60,
+   "mirrored": true,
+   "source": "render face (complete) centred at (727.0, 1415.9) px of elm_formed_hex_sand_layout_render.webp, resampled 31.10 -> 64 px/in",
+   "source_render_centre_xy": [
+    727.0,
+    1415.9
+   ]
+  },
+  {
+   "index": 52,
+   "type": "matte",
+   "rotation_deg": 78.7,
+   "mirrored": false,
+   "source": "mosaic of 5 feather-blended cells of render matte pixels at arbitrary rotations (rotation_deg/mirrored given for the largest cell; all cells listed)",
+   "cells": [
+    {
+     "score": 3.616,
+     "render_entry": 149,
+     "render_centre_xy": [
+      1272.4,
+      1415.9
+     ],
+     "source_full_face": true,
+     "rotation_deg": 213.2,
+     "mirrored": true,
+     "offset_render_px": [
+      -128.3,
+      127.9
+     ],
+     "area_frac": 0.14268651231165014
+    },
+    {
+     "score": 5.386,
+     "render_entry": 61,
+     "render_centre_xy": [
+      1545.1,
+      1258.5
+     ],
+     "source_full_face": true,
+     "rotation_deg": 105.1,
+     "mirrored": true,
+     "offset_render_px": [
+      51.8,
+      24.2
+     ],
+     "area_frac": 0.21465203300925462
+    },
+    {
+     "score": 5.724,
+     "render_entry": 147,
+     "render_centre_xy": [
+      1272.4,
+      786.2
+     ],
+     "source_full_face": true,
+     "rotation_deg": 78.7,
+     "mirrored": false,
+     "offset_render_px": [
+      59.8,
+      -53.9
+     ],
+     "area_frac": 0.2704720857973339
+    },
+    {
+     "score": 5.531,
+     "render_entry": 146,
+     "render_centre_xy": [
+      1272.4,
+      471.3
+     ],
+     "source_full_face": true,
+     "rotation_deg": 96.0,
+     "mirrored": false,
+     "offset_render_px": [
+      12.9,
+      -115.1
+     ],
+     "area_frac": 0.18644549129664895
+    },
+    {
+     "score": 6.429,
+     "render_entry": 150,
+     "render_centre_xy": [
+      1272.4,
+      1730.8
+     ],
+     "source_full_face": true,
+     "rotation_deg": 225.2,
+     "mirrored": true,
+     "offset_render_px": [
+      101.0,
+      -6.2
+     ],
+     "area_frac": 0.18574387758511243
+    }
+   ]
+  },
+  {
+   "index": 53,
+   "type": "chiseled",
+   "rotation_deg": 0,
+   "mirrored": false,
+   "source": "render face (complete) centred at (999.7, 313.9) px of elm_formed_hex_sand_layout_render.webp, resampled 31.10 -> 64 px/in",
+   "source_render_centre_xy": [
+    999.7,
+    313.9
+   ],
+   "groove_orientation_deg": 89.6,
+   "source_groove_deg": 89.65
+  },
+  {
+   "index": 54,
+   "type": "matte",
+   "rotation_deg": 300,
+   "mirrored": true,
+   "source": "render face (complete) centred at (181.7, 1415.9) px of elm_formed_hex_sand_layout_render.webp, resampled 31.10 -> 64 px/in",
+   "source_render_centre_xy": [
+    181.7,
+    1415.9
+   ]
+  },
+  {
+   "index": 55,
+   "type": "chiseled",
+   "rotation_deg": 0,
+   "mirrored": false,
+   "source": "render face (complete) centred at (1272.4, 1101.0) px of elm_formed_hex_sand_layout_render.webp, resampled 31.10 -> 64 px/in",
+   "source_render_centre_xy": [
+    1272.4,
+    1101.0
+   ],
+   "groove_orientation_deg": 150.3,
+   "source_groove_deg": 150.31
+  },
+  {
+   "index": 56,
+   "type": "matte",
+   "rotation_deg": 0,
+   "mirrored": false,
+   "source": "render face (complete) centred at (454.4, 1258.5) px of elm_formed_hex_sand_layout_render.webp, resampled 31.10 -> 64 px/in",
+   "source_render_centre_xy": [
+    454.4,
+    1258.5
+   ]
+  }
+ ],
+ "checks": {
+  "png_headers": {
+   "Color.png": {
+    "width": 4489,
+    "height": 4536,
+    "bit_depth": 8,
+    "colour_type": 2,
+    "colour_type_name": "RGB"
+   },
+   "Bump16.png": {
+    "width": 4489,
+    "height": 4536,
+    "bit_depth": 16,
+    "colour_type": 0,
+    "colour_type_name": "greyscale"
+   },
+   "face_ids.png": {
+    "width": 4489,
+    "height": 4536,
+    "bit_depth": 16,
+    "colour_type": 0,
+    "colour_type_name": "greyscale"
+   }
+  },
+  "face_ids": {
+   "unique_values": 57,
+   "min": 0,
+   "max": 56,
+   "joint_fraction": 0.024435588778055548
+  },
+  "repetition_whole_face": {
+   "raw_bump_highpass": {
+    "faces": 11,
+    "max_ncc": 0.04065453288213492,
+    "max_pair": [
+     25,
+     34
+    ],
+    "top5": [
+     [
+      0.04065453288213492,
+      25,
+      34
+     ],
+     [
+      0.039738677761044935,
+      34,
+      37
+     ],
+     [
+      0.037685191948333495,
+      10,
+      37
+     ],
+     [
+      0.036300038587564115,
+      29,
+      51
+     ],
+     [
+      0.0361730269826429,
+      5,
+      8
+     ]
+    ],
+    "median_pair_max_ncc": 0.024809218242102287
+   },
+   "chiseled_bump_highpass": {
+    "faces": 13,
+    "max_ncc": 0.9911851215238956,
+    "max_pair": [
+     18,
+     38
+    ],
+    "top5": [
+     [
+      0.9911851215238956,
+      18,
+      38
+     ],
+     [
+      0.9440180687288501,
+      3,
+      15
+     ],
+     [
+      0.8830063397573815,
+      33,
+      42
+     ],
+     [
+      0.839743075823117,
+      23,
+      38
+     ],
+     [
+      0.8377516729903014,
+      23,
+      53
+     ]
+    ],
+    "median_pair_max_ncc": 0.5336233355712383
+   },
+   "matte_colour_lowfreq": {
+    "faces": 32,
+    "max_ncc": 0.6868608812285139,
+    "max_pair": [
+     4,
+     49
+    ],
+    "top5": [
+     [
+      0.6868608812285139,
+      4,
+      49
+     ],
+     [
+      0.6725172506664935,
+      9,
+      36
+     ],
+     [
+      0.667651918775124,
+      16,
+      36
+     ],
+     [
+      0.6648434968667138,
+      9,
+      16
+     ],
+     [
+      0.659554815339287,
+      36,
+      49
+     ]
+    ],
+    "median_pair_max_ncc": 0.3823069040800503
+   }
+  },
+  "repetition_patch_search": {
+   "raw_bump_highpass": {
+    "windows": 66,
+    "window_px": 64,
+    "max_ncc": 0.7974870483052369,
+    "max_hit": [
+     29,
+     [
+      10,
+      0,
+      true
+     ]
+    ],
+    "median_best_ncc": 0.5554428392969475,
+    "count_over_0_6": 11,
+    "top5": [
+     [
+      0.7974870483052369,
+      29,
+      [
+       10,
+       0,
+       true
+      ]
+     ],
+     [
+      0.7787238578577029,
+      7,
+      [
+       10,
+       120,
+       false
+      ]
+     ],
+     [
+      0.7388598260060419,
+      10,
+      [
+       29,
+       0,
+       true
+      ]
+     ],
+     [
+      0.7277329385156918,
+      7,
+      [
+       10,
+       120,
+       false
+      ]
+     ],
+     [
+      0.7112289498867784,
+      5,
+      [
+       37,
+       240,
+       false
+      ]
+     ]
+    ]
+   }
+  }
+ }
+}

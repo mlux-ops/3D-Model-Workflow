@@ -1,0 +1,471 @@
+{
+ "set": "designed",
+ "all_pass": true,
+ "maps": [
+  {
+   "colour": "Color.png",
+   "bump": "Bump16.png",
+   "all_pass": true,
+   "gates": {
+    "ihdr": {
+     "colour": {
+      "w": 6048,
+      "h": 3024,
+      "bit_depth": 8,
+      "colour_type": 2,
+      "interlace": 0
+     },
+     "bump": {
+      "w": 6048,
+      "h": 3024,
+      "bit_depth": 16,
+      "colour_type": 0,
+      "interlace": 0
+     },
+     "pass": true
+    },
+    "quarter_inch": {
+     "pixels": [
+      6048,
+      3024
+     ],
+     "sample_size_in": [
+      189.0,
+      94.5
+     ],
+     "feet_inches": [
+      "15'-9.000in",
+      "7'-10.500in"
+     ],
+     "expected_in": [
+      189.0,
+      94.5
+     ],
+     "selftest_non_quarter_rejected": true,
+     "pass": true
+    },
+    "joints": {
+     "joint_px": 2,
+     "joint_in": 0.0625,
+     "zero_columns": [
+      0,
+      1511,
+      1512,
+      3023,
+      3024,
+      4535,
+      4536,
+      6047
+     ],
+     "zero_rows": [
+      0,
+      1511,
+      1512,
+      3023
+     ],
+     "interior_joint_centres_px": [
+      1512.0,
+      3024.0,
+      4536.0
+     ],
+     "zero_exactly_on_joints": true,
+     "pass": true
+    },
+    "wrap": {
+     "edge_grout_share": {
+      "left": 1.0,
+      "right": 1.0,
+      "top": 1.0,
+      "bottom": 1.0
+     },
+     "left_plus_right_px": 2,
+     "top_plus_bottom_px": 2,
+     "colour_lum_step_vertical_wrap_vs_ref": [
+      0.035054132007729784,
+      0.030517543695749605
+     ],
+     "colour_lum_step_horizontal_wrap_vs_ref": [
+      0.13565752167682318,
+      0.14812189388459832
+     ],
+     "ref_basis": "interior joints of the same direction",
+     "step_across_joint_between_different_pieces_mean": 0.13281794657472354,
+     "bump_step_wrap_v_h": [
+      0.017000076295109474,
+      0.02311813672002882
+     ],
+     "bump_step_interior_v_h": [
+      0.013440948459895066,
+      0.028281797803427454
+     ],
+     "bump_micro_3px_step": 0.026939684413154114,
+     "pass": true
+    },
+    "identity": {
+     "cells": [
+      {
+       "cell": [
+        0,
+        0
+       ],
+       "declared": [
+        1,
+        0
+       ],
+       "measured": [
+        1,
+        0,
+        "rotation"
+       ],
+       "ncc_declared": 0.9993761878997618,
+       "best_other": 0.21295052124826547,
+       "best_mirror_of_same_piece": 0.21295052124826547,
+       "mean_abs_drgb_vs_littlecms": 0.6417177968287836,
+       "ok": true
+      },
+      {
+       "cell": [
+        0,
+        1
+       ],
+       "declared": [
+        6,
+        0
+       ],
+       "measured": [
+        6,
+        0,
+        "rotation"
+       ],
+       "ncc_declared": 0.998536612217542,
+       "best_other": 0.2345857094362766,
+       "best_mirror_of_same_piece": 0.10586706933244613,
+       "mean_abs_drgb_vs_littlecms": 0.5630205677158985,
+       "ok": true
+      },
+      {
+       "cell": [
+        0,
+        2
+       ],
+       "declared": [
+        7,
+        0
+       ],
+       "measured": [
+        7,
+        0,
+        "rotation"
+       ],
+       "ncc_declared": 0.9991812001551039,
+       "best_other": 0.20152292366338992,
+       "best_mirror_of_same_piece": 0.08179707520281589,
+       "mean_abs_drgb_vs_littlecms": 0.559143115714057,
+       "ok": true
+      },
+      {
+       "cell": [
+        0,
+        3
+       ],
+       "declared": [
+        8,
+        0
+       ],
+       "measured": [
+        8,
+        0,
+        "rotation"
+       ],
+       "ncc_declared": 0.9994532026845175,
+       "best_other": 0.23310819510025976,
+       "best_mirror_of_same_piece": 0.16468420230449304,
+       "mean_abs_drgb_vs_littlecms": 0.6645978544607086,
+       "ok": true
+      },
+      {
+       "cell": [
+        1,
+        0
+       ],
+       "declared": [
+        2,
+        0
+       ],
+       "measured": [
+        2,
+        0,
+        "rotation"
+       ],
+       "ncc_declared": 0.9992447233645808,
+       "best_other": 0.162474524449063,
+       "best_mirror_of_same_piece": 0.162474524449063,
+       "mean_abs_drgb_vs_littlecms": 0.5447378516721767,
+       "ok": true
+      },
+      {
+       "cell": [
+        1,
+        1
+       ],
+       "declared": [
+        3,
+        0
+       ],
+       "measured": [
+        3,
+        0,
+        "rotation"
+       ],
+       "ncc_declared": 0.9984445147857862,
+       "best_other": 0.4577812784379845,
+       "best_mirror_of_same_piece": 0.12556326569946125,
+       "mean_abs_drgb_vs_littlecms": 0.5571619333798994,
+       "ok": true
+      },
+      {
+       "cell": [
+        1,
+        2
+       ],
+       "declared": [
+        4,
+        0
+       ],
+       "measured": [
+        4,
+        0,
+        "rotation"
+       ],
+       "ncc_declared": 0.9990762648797922,
+       "best_other": 0.09151308949639425,
+       "best_mirror_of_same_piece": 0.012063049991369087,
+       "mean_abs_drgb_vs_littlecms": 0.6664044563525968,
+       "ok": true
+      },
+      {
+       "cell": [
+        1,
+        3
+       ],
+       "declared": [
+        5,
+        0
+       ],
+       "measured": [
+        5,
+        0,
+        "rotation"
+       ],
+       "ncc_declared": 0.9988054100863006,
+       "best_other": 0.4568842539034004,
+       "best_mirror_of_same_piece": 0.21650062192965225,
+       "mean_abs_drgb_vs_littlecms": 0.5812008790838534,
+       "ok": true
+      }
+     ],
+     "min_ncc_declared": 0.9984445147857862,
+     "max_other": 0.4577812784379845,
+     "max_mean_abs_drgb": 0.6664044563525968,
+     "pass": true
+    },
+    "clearance": {
+     "face_min_mm": 1.1982848859388113,
+     "face_max_mm": 1.5999755855649653,
+     "face_median_mm": 1.5014633401998934,
+     "face_micro_sd_mm": 0.020963937552992765,
+     "grout_max_mm": 0.0,
+     "joint_depth_mm": 1.5,
+     "full_scale_mm": 1.6,
+     "clearance_face_above_grout_mm": 1.1982848859388113,
+     "pass": true
+    },
+    "colour_bump": {
+     "joint_px": 48352,
+     "joint_px_exact_grout": 1.0,
+     "face_mean_lin_vs_source_rel": [
+      6.925128273294057e-05,
+      0.0010291291586026485,
+      0.0003576602829109543
+     ],
+     "face_mean_srgb": [
+      208.63571005657647,
+      207.63018842375334,
+      204.75030431779308
+     ],
+     "pass": true
+    },
+    "continuity": {
+     "vertical_joints": [
+      {
+       "row": 0,
+       "joint_x_px": 1512,
+       "pieces": [
+        1,
+        6
+       ],
+       "wrap": false,
+       "ncc_built": 0.5224125410516158,
+       "ncc_source": 0.5033656246454947,
+       "ok": true
+      },
+      {
+       "row": 0,
+       "joint_x_px": 3024,
+       "pieces": [
+        6,
+        7
+       ],
+       "wrap": false,
+       "ncc_built": 0.6935987326189168,
+       "ncc_source": 0.6896672454327284,
+       "ok": true
+      },
+      {
+       "row": 0,
+       "joint_x_px": 4536,
+       "pieces": [
+        7,
+        8
+       ],
+       "wrap": false,
+       "ncc_built": 0.7307283682593441,
+       "ncc_source": 0.7340056241233948,
+       "ok": true
+      },
+      {
+       "row": 0,
+       "joint_x_px": 6048,
+       "pieces": [
+        8,
+        1
+       ],
+       "wrap": true,
+       "ncc_built": 0.6745264630778595,
+       "ncc_source": 0.6521687511055672,
+       "ok": true
+      },
+      {
+       "row": 1,
+       "joint_x_px": 1512,
+       "pieces": [
+        2,
+        3
+       ],
+       "wrap": false,
+       "ncc_built": 0.661555638298564,
+       "ncc_source": 0.6530221910241055,
+       "ok": true
+      },
+      {
+       "row": 1,
+       "joint_x_px": 3024,
+       "pieces": [
+        3,
+        4
+       ],
+       "wrap": false,
+       "ncc_built": 0.6586280334456348,
+       "ncc_source": 0.6386102304958987,
+       "ok": true
+      },
+      {
+       "row": 1,
+       "joint_x_px": 4536,
+       "pieces": [
+        4,
+        5
+       ],
+       "wrap": false,
+       "ncc_built": 0.7522120967730498,
+       "ncc_source": 0.7640389413480517,
+       "ok": true
+      },
+      {
+       "row": 1,
+       "joint_x_px": 6048,
+       "pieces": [
+        5,
+        2
+       ],
+       "wrap": true,
+       "ncc_built": 0.7580432296529804,
+       "ncc_source": 0.751201939376001,
+       "ok": true
+      }
+     ],
+     "min_ncc_built": 0.5224125410516158,
+     "horizontal_joints_ncc": [
+      0.03986559800657896,
+      0.0029256443535467525,
+      -0.10913614607241923,
+      0.07291034339315144,
+      0.0668642695287148,
+      0.018375214211496994,
+      0.07182126065771588,
+      -0.022212029609991534
+     ],
+     "horizontal_max": 0.07291034339315144,
+     "random_strip_baseline_p99": 0.18571951874947468,
+     "note": "horizontal joints have no designed continuity (rows repeat strip A / strip B)",
+     "pass": true
+    },
+    "cross_set": {
+     "cells_identical_to_rotated_piece_maps": 8,
+     "mismatched": [],
+     "pass": true
+    },
+    "model_pattern": {
+     "file": "_work/Porcelanosa_Vendome_Nature_47x47_Model.pat",
+     "header_ok": true,
+     "maps": [
+      {
+       "map": "designed",
+       "segments": 18,
+       "sampled_points": 15624,
+       "points_on_grout": 1.0,
+       "joint_runs_matched": 480,
+       "joint_runs_unmatched": 0,
+       "max_offset_px": 0.0,
+       "median_offset_px": 0.0,
+       "pass": true
+      },
+      {
+       "map": "free_mix",
+       "segments": 26,
+       "sampled_points": 31248,
+       "points_on_grout": 1.0,
+       "joint_runs_matched": 600,
+       "joint_runs_unmatched": 0,
+       "max_offset_px": 0.0,
+       "median_offset_px": 0.0,
+       "pass": true
+      },
+      {
+       "map": "piece_1",
+       "segments": 8,
+       "sampled_points": 1512,
+       "points_on_grout": 1.0,
+       "joint_runs_matched": 244,
+       "joint_runs_unmatched": 0,
+       "max_offset_px": 0.0,
+       "median_offset_px": 0.0,
+       "pass": true
+      }
+     ],
+     "pass": true
+    }
+   }
+  }
+ ],
+ "set_checks": {
+  "pass": true
+ },
+ "revit_sample_size": {
+  "width_in": 189.0,
+  "height_in": 94.5,
+  "width": "15'-9.000in",
+  "height": "7'-10.500in"
+ },
+ "revit_bump_amount_editor": 60
+}

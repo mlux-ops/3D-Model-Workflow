@@ -1,0 +1,466 @@
+{
+  "run_dir": "E:/Claude/3D-Model-Workflow/output/gola_nonhosted", 
+  "jobs": [
+    {
+      "previews": [
+        "E:\\Claude\\3D-Model-Workflow\\output\\gola_nonhosted\\preview\\horizontal_overall", 
+        "E:\\Claude\\3D-Model-Workflow\\output\\gola_nonhosted\\preview\\horizontal_end_closeup"
+      ], 
+      "rfa": "E:\\Claude\\3D-Model-Workflow\\output\\gola_nonhosted\\Richelieu_Gola_L_Channel_Horizontal_NonHosted_2025.rfa", 
+      "source": {
+        "reference_planes": 7, 
+        "types": 1, 
+        "form_volume_mm3": 144866.02626152095, 
+        "dimensions": 195, 
+        "custom_params": 77, 
+        "forms": 17
+      }, 
+      "template_types_found": [], 
+      "detached_links": 51, 
+      "association_rows": [
+        [
+          "13077715", 
+          3, 
+          3
+        ], 
+        [
+          "13077791", 
+          2, 
+          2
+        ], 
+        [
+          "13077802", 
+          2, 
+          2
+        ], 
+        [
+          "13077876", 
+          2, 
+          2
+        ], 
+        [
+          "13077889", 
+          4, 
+          4
+        ], 
+        [
+          "13077900", 
+          4, 
+          4
+        ], 
+        [
+          "13077974", 
+          4, 
+          4
+        ], 
+        [
+          "13077988", 
+          4, 
+          4
+        ], 
+        [
+          "13077999", 
+          4, 
+          4
+        ], 
+        [
+          "13078010", 
+          4, 
+          4
+        ], 
+        [
+          "13078023", 
+          2, 
+          2
+        ], 
+        [
+          "13078034", 
+          2, 
+          2
+        ], 
+        [
+          "13078045", 
+          2, 
+          2
+        ], 
+        [
+          "13078056", 
+          4, 
+          4
+        ], 
+        [
+          "13078067", 
+          4, 
+          4
+        ], 
+        [
+          "13078078", 
+          4, 
+          4
+        ], 
+        [
+          "13078109", 
+          1, 
+          1
+        ]
+      ], 
+      "placement_plane_offset_mm": 48.050000013600005, 
+      "cuts_rebuilt": [], 
+      "orientation": "horizontal", 
+      "length_handle": {
+        "dimension_mm": 999.99999999999386, 
+        "plane": "3485", 
+        "dimension": "3486", 
+        "type_length_mm": 1000.0000000000001
+      }, 
+      "output": "Richelieu_Gola_L_Channel_Horizontal_NonHosted_2025.rfa", 
+      "parity": {
+        "converted_solids": 1, 
+        "converted_extents_mm": [
+          0.0, 
+          21.050000009754196, 
+          -3.8458026097032414e-09, 
+          1000.0000000000001, 
+          48.050000013600233, 
+          56.000000003845813
+        ], 
+        "converted_volume_mm3": 122161.16301610461, 
+        "source_volume_mm3": 122158.36847884556, 
+        "source_extents_reoriented_mm": [
+          -6.2638119951302654e-12, 
+          69.100000013600010, 
+          8.426059849853121e-12, 
+          999.99999999999409, 
+          96.100000013600010, 
+          56.000000000008434
+        ], 
+        "source_solids": 1
+      }, 
+      "face_materials": [
+        "Stainless Steel"
+      ], 
+      "source_placement_type": "CurveBased", 
+      "flex": [
+        {
+          "span_xyz_mm": [
+            600.0, 
+            27.000000003845951, 
+            56.000000007691618
+          ], 
+          "run_span_mm": 600.0, 
+          "length_mm": 600.0, 
+          "extents_mm": [
+            0.0, 
+            21.050000009754196, 
+            -3.8458026097032414e-09, 
+            600.0, 
+            48.050000013600147, 
+            56.000000003845813
+          ]
+        }, 
+        {
+          "span_xyz_mm": [
+            1000.0000000000001, 
+            27.000000003846036, 
+            56.000000007691618
+          ], 
+          "run_span_mm": 1000.0000000000001, 
+          "length_mm": 1000.0, 
+          "extents_mm": [
+            0.0, 
+            21.050000009754196, 
+            -3.8458026097032414e-09, 
+            1000.0000000000001, 
+            48.050000013600233, 
+            56.000000003845813
+          ]
+        }, 
+        {
+          "span_xyz_mm": [
+            2400.0, 
+            27.000000003846349, 
+            56.000000007691618
+          ], 
+          "run_span_mm": 2400.0, 
+          "length_mm": 2400.0, 
+          "extents_mm": [
+            0.0, 
+            21.050000009754196, 
+            -3.8458026097032414e-09, 
+            2400.0, 
+            48.050000013600545, 
+            56.000000003845813
+          ]
+        }
+      ], 
+      "builtin_values_skipped": [], 
+      "source_length_builtin": true, 
+      "reopened": {
+        "types": [
+          "Horizontal - L - Single Grip"
+        ], 
+        "work_plane_based": 0, 
+        "form_volume_mm3": 144868.82079877990, 
+        "custom_params": 78, 
+        "formulas": 41, 
+        "placement_type": "OneLevelBased", 
+        "forms": 17
+      }, 
+      "placement": {
+        "host_class": null, 
+        "host_face_is_none": true, 
+        "family_placement_type": "OneLevelBased"
+      }, 
+      "profile_material": "Stainless Steel", 
+      "converted": {
+        "form_volume_mm3": 144868.82079877990, 
+        "forms": 17
+      }, 
+      "end_linked_to_length_from_right_lock": [
+        "13078109"
+      ], 
+      "datums": {
+        "created_planes": [
+          "Reference Plane", 
+          "Recess lower edge", 
+          "Recess upper edge"
+        ], 
+        "labels_not_rebuilt": [
+          [
+            "Effective Recess Clearance", 
+            0.49999999999156974, 
+            0.49999999999812944
+          ], 
+          [
+            "Recess Opening Width", 
+            57.0, 
+            57.000000000000014
+          ]
+        ]
+      }, 
+      "family_flags": {
+        "FAMILY_SHARED": 0, 
+        "FAMILY_ALLOW_CUT_WITH_VOIDS": 1
+      }
+    }, 
+    {
+      "previews": [
+        "E:\\Claude\\3D-Model-Workflow\\output\\gola_nonhosted\\preview\\vertical_overall", 
+        "E:\\Claude\\3D-Model-Workflow\\output\\gola_nonhosted\\preview\\vertical_end_closeup"
+      ], 
+      "rfa": "E:\\Claude\\3D-Model-Workflow\\output\\gola_nonhosted\\Richelieu_Gola_Vertical_Double_Grip_NonHosted_2025.rfa", 
+      "source": {
+        "reference_planes": 6, 
+        "types": 1, 
+        "form_volume_mm3": 261292.40535016320, 
+        "dimensions": 137, 
+        "custom_params": 77, 
+        "forms": 12
+      }, 
+      "template_types_found": [], 
+      "detached_links": 34, 
+      "association_rows": [
+        [
+          "17298127", 
+          2, 
+          2
+        ], 
+        [
+          "17298140", 
+          4, 
+          4
+        ], 
+        [
+          "17298176", 
+          2, 
+          2
+        ], 
+        [
+          "17298189", 
+          4, 
+          4
+        ], 
+        [
+          "17298205", 
+          2, 
+          2
+        ], 
+        [
+          "17298216", 
+          2, 
+          2
+        ], 
+        [
+          "17298227", 
+          4, 
+          4
+        ], 
+        [
+          "17298238", 
+          4, 
+          4
+        ], 
+        [
+          "17298249", 
+          4, 
+          4
+        ], 
+        [
+          "17298260", 
+          3, 
+          3
+        ], 
+        [
+          "17298323", 
+          3, 
+          3
+        ], 
+        [
+          "17298410", 
+          1, 
+          1
+        ]
+      ], 
+      "placement_plane_offset_mm": -0.0, 
+      "cuts_rebuilt": [], 
+      "orientation": "vertical", 
+      "length_handle": {
+        "dimension_mm": 1000.0000000000019, 
+        "plane": "3366", 
+        "dimension": "3367", 
+        "type_length_mm": 1000.0000000000001
+      }, 
+      "output": "Richelieu_Gola_Vertical_Double_Grip_NonHosted_2025.rfa", 
+      "parity": {
+        "converted_solids": 2, 
+        "converted_extents_mm": [
+          -66.500000000000213, 
+          -36.600000000000222, 
+          -2.2892798767770727e-14, 
+          0.0, 
+          0.0, 
+          1000.0000000000001
+        ], 
+        "converted_volume_mm3": 241350.48535016231, 
+        "source_volume_mm3": 241350.48535016336, 
+        "source_extents_reoriented_mm": [
+          -66.5, 
+          -36.600000000000001, 
+          0.0, 
+          0.0, 
+          0.0, 
+          1000.0000000000001
+        ], 
+        "source_solids": 2
+      }, 
+      "face_materials": [
+        "Stainless Steel"
+      ], 
+      "source_placement_type": "CurveBased", 
+      "flex": [
+        {
+          "span_xyz_mm": [
+            66.500000000000142, 
+            36.600000000000129, 
+            600.0
+          ], 
+          "run_span_mm": 600.0, 
+          "length_mm": 600.0, 
+          "extents_mm": [
+            -66.500000000000142, 
+            -36.600000000000129, 
+            -2.2892798767770727e-14, 
+            1.5027800244460275e-29, 
+            0.0, 
+            600.0
+          ]
+        }, 
+        {
+          "span_xyz_mm": [
+            66.500000000000213, 
+            36.600000000000222, 
+            1000.0000000000001
+          ], 
+          "run_span_mm": 1000.0000000000001, 
+          "length_mm": 1000.0, 
+          "extents_mm": [
+            -66.500000000000213, 
+            -36.600000000000222, 
+            -2.2892798767770727e-14, 
+            0.0, 
+            0.0, 
+            1000.0000000000001
+          ]
+        }, 
+        {
+          "span_xyz_mm": [
+            66.500000000000540, 
+            36.600000000000534, 
+            2400.0
+          ], 
+          "run_span_mm": 2400.0, 
+          "length_mm": 2400.0, 
+          "extents_mm": [
+            -66.500000000000540, 
+            -36.600000000000534, 
+            -2.2892798767770727e-14, 
+            6.0111200977841102e-29, 
+            0.0, 
+            2400.0
+          ]
+        }
+      ], 
+      "builtin_values_skipped": [], 
+      "source_length_builtin": true, 
+      "reopened": {
+        "types": [
+          "Vertical - Double Grip"
+        ], 
+        "work_plane_based": 0, 
+        "form_volume_mm3": 261292.40535016215, 
+        "custom_params": 78, 
+        "formulas": 41, 
+        "placement_type": "OneLevelBased", 
+        "forms": 12
+      }, 
+      "placement": {
+        "host_class": null, 
+        "host_face_is_none": true, 
+        "family_placement_type": "OneLevelBased"
+      }, 
+      "profile_material": "Stainless Steel", 
+      "converted": {
+        "form_volume_mm3": 261292.40535016215, 
+        "forms": 12
+      }, 
+      "end_linked_to_length_from_right_lock": [
+        "17298410"
+      ], 
+      "datums": {
+        "created_planes": [
+          "Recess lower edge", 
+          "Recess upper edge"
+        ], 
+        "labels_not_rebuilt": [
+          [
+            "Effective Recess Clearance", 
+            0.49999999999156974, 
+            0.49999999999373618
+          ], 
+          [
+            "Recess Opening Width", 
+            67.5, 
+            67.5
+          ]
+        ]
+      }, 
+      "family_flags": {
+        "FAMILY_SHARED": 0, 
+        "FAMILY_ALLOW_CUT_WITH_VOIDS": 1
+      }
+    }
+  ], 
+  "template": "C:/ProgramData/Autodesk/RVT 2025/Family Templates/English-Imperial/Generic Model.rft", 
+  "stage": "complete", 
+  "revit_version": "2025"
+}

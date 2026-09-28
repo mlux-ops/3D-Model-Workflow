@@ -1,0 +1,1482 @@
+{
+ "set": "pieces",
+ "all_pass": true,
+ "maps": [
+  {
+   "colour": "Piece_1_Color.png",
+   "bump": "Piece_1_Bump16.png",
+   "all_pass": true,
+   "gates": {
+    "ihdr": {
+     "colour": {
+      "w": 1512,
+      "h": 1512,
+      "bit_depth": 8,
+      "colour_type": 2,
+      "interlace": 0
+     },
+     "bump": {
+      "w": 1512,
+      "h": 1512,
+      "bit_depth": 16,
+      "colour_type": 0,
+      "interlace": 0
+     },
+     "pass": true
+    },
+    "quarter_inch": {
+     "pixels": [
+      1512,
+      1512
+     ],
+     "sample_size_in": [
+      47.25,
+      47.25
+     ],
+     "feet_inches": [
+      "3'-11.250in",
+      "3'-11.250in"
+     ],
+     "expected_in": [
+      47.25,
+      47.25
+     ],
+     "selftest_non_quarter_rejected": true,
+     "pass": true
+    },
+    "joints": {
+     "joint_px": 2,
+     "joint_in": 0.0625,
+     "zero_columns": [
+      0,
+      1511
+     ],
+     "zero_rows": [
+      0,
+      1511
+     ],
+     "interior_joint_centres_px": [],
+     "zero_exactly_on_joints": true,
+     "pass": true
+    },
+    "wrap": {
+     "edge_grout_share": {
+      "left": 1.0,
+      "right": 1.0,
+      "top": 1.0,
+      "bottom": 1.0
+     },
+     "left_plus_right_px": 2,
+     "top_plus_bottom_px": 2,
+     "colour_lum_step_vertical_wrap_vs_ref": [
+      0.1562678531827749,
+      0.1567720489946531
+     ],
+     "colour_lum_step_horizontal_wrap_vs_ref": [
+      0.1722974284901598,
+      0.17316783215336312
+     ],
+     "ref_basis": "the source photo's own opposite-edge step (single-piece map); pass <= 1.15 x + 0.01",
+     "step_across_joint_between_different_pieces_mean": 0.13281794657472354,
+     "bump_step_wrap_v_h": [
+      0.028017663327039987,
+      0.02865679835848447
+     ],
+     "bump_step_interior_v_h": [
+      null,
+      null
+     ],
+     "bump_micro_3px_step": 0.028283924532790876,
+     "pass": true
+    },
+    "identity": {
+     "cells": [
+      {
+       "cell": [
+        0,
+        0
+       ],
+       "declared": [
+        1,
+        0
+       ],
+       "measured": [
+        1,
+        0,
+        "rotation"
+       ],
+       "ncc_declared": 0.9993761878997618,
+       "best_other": 0.21295052124826547,
+       "best_mirror_of_same_piece": 0.21295052124826547,
+       "mean_abs_drgb_vs_littlecms": 0.6417177968287836,
+       "ok": true
+      }
+     ],
+     "min_ncc_declared": 0.9993761878997618,
+     "max_other": 0.21295052124826547,
+     "max_mean_abs_drgb": 0.6417177968287836,
+     "pass": true
+    },
+    "clearance": {
+     "face_min_mm": 1.198651102464332,
+     "face_max_mm": 1.599487296864271,
+     "face_median_mm": 1.5016830701152057,
+     "face_micro_sd_mm": 0.02411252895570728,
+     "grout_max_mm": 0.0,
+     "joint_depth_mm": 1.5,
+     "full_scale_mm": 1.6,
+     "clearance_face_above_grout_mm": 1.198651102464332,
+     "pass": true
+    },
+    "colour_bump": {
+     "joint_px": 6044,
+     "joint_px_exact_grout": 1.0,
+     "face_mean_lin_vs_source_rel": [
+      5.8490147744283405e-05,
+      0.0011293239349490225,
+      0.0003233278252805505
+     ],
+     "face_mean_srgb": [
+      203.832687601421,
+      201.3552638042191,
+      197.4098956186132
+     ],
+     "pass": true
+    },
+    "model_pattern": {
+     "file": "_work/Porcelanosa_Vendome_Nature_47x47_Model.pat",
+     "header_ok": true,
+     "maps": [
+      {
+       "map": "designed",
+       "segments": 18,
+       "sampled_points": 15624,
+       "points_on_grout": 1.0,
+       "joint_runs_matched": 480,
+       "joint_runs_unmatched": 0,
+       "max_offset_px": 0.0,
+       "median_offset_px": 0.0,
+       "pass": true
+      },
+      {
+       "map": "free_mix",
+       "segments": 26,
+       "sampled_points": 31248,
+       "points_on_grout": 1.0,
+       "joint_runs_matched": 600,
+       "joint_runs_unmatched": 0,
+       "max_offset_px": 0.0,
+       "median_offset_px": 0.0,
+       "pass": true
+      },
+      {
+       "map": "piece_1",
+       "segments": 8,
+       "sampled_points": 1512,
+       "points_on_grout": 1.0,
+       "joint_runs_matched": 244,
+       "joint_runs_unmatched": 0,
+       "max_offset_px": 0.0,
+       "median_offset_px": 0.0,
+       "pass": true
+      }
+     ],
+     "pass": true
+    }
+   }
+  },
+  {
+   "colour": "Piece_2_Color.png",
+   "bump": "Piece_2_Bump16.png",
+   "all_pass": true,
+   "gates": {
+    "ihdr": {
+     "colour": {
+      "w": 1512,
+      "h": 1512,
+      "bit_depth": 8,
+      "colour_type": 2,
+      "interlace": 0
+     },
+     "bump": {
+      "w": 1512,
+      "h": 1512,
+      "bit_depth": 16,
+      "colour_type": 0,
+      "interlace": 0
+     },
+     "pass": true
+    },
+    "quarter_inch": {
+     "pixels": [
+      1512,
+      1512
+     ],
+     "sample_size_in": [
+      47.25,
+      47.25
+     ],
+     "feet_inches": [
+      "3'-11.250in",
+      "3'-11.250in"
+     ],
+     "expected_in": [
+      47.25,
+      47.25
+     ],
+     "selftest_non_quarter_rejected": true,
+     "pass": true
+    },
+    "joints": {
+     "joint_px": 2,
+     "joint_in": 0.0625,
+     "zero_columns": [
+      0,
+      1511
+     ],
+     "zero_rows": [
+      0,
+      1511
+     ],
+     "interior_joint_centres_px": [],
+     "zero_exactly_on_joints": true,
+     "pass": true
+    },
+    "wrap": {
+     "edge_grout_share": {
+      "left": 1.0,
+      "right": 1.0,
+      "top": 1.0,
+      "bottom": 1.0
+     },
+     "left_plus_right_px": 2,
+     "top_plus_bottom_px": 2,
+     "colour_lum_step_vertical_wrap_vs_ref": [
+      0.08976724889290433,
+      0.09075973361569148
+     ],
+     "colour_lum_step_horizontal_wrap_vs_ref": [
+      0.17780818817959854,
+      0.17855694321753748
+     ],
+     "ref_basis": "the source photo's own opposite-edge step (single-piece map); pass <= 1.15 x + 0.01",
+     "step_across_joint_between_different_pieces_mean": 0.13281794657472354,
+     "bump_step_wrap_v_h": [
+      0.017647987282533684,
+      0.028935626707809498
+     ],
+     "bump_step_interior_v_h": [
+      null,
+      null
+     ],
+     "bump_micro_3px_step": 0.022630308588850265,
+     "pass": true
+    },
+    "identity": {
+     "cells": [
+      {
+       "cell": [
+        0,
+        0
+       ],
+       "declared": [
+        2,
+        0
+       ],
+       "measured": [
+        2,
+        0,
+        "rotation"
+       ],
+       "ncc_declared": 0.9992447233645808,
+       "best_other": 0.162474524449063,
+       "best_mirror_of_same_piece": 0.162474524449063,
+       "mean_abs_drgb_vs_littlecms": 0.5447378516721767,
+       "ok": true
+      }
+     ],
+     "min_ncc_declared": 0.9992447233645808,
+     "max_other": 0.162474524449063,
+     "max_mean_abs_drgb": 0.5447378516721767,
+     "pass": true
+    },
+    "clearance": {
+     "face_min_mm": 1.199090562294957,
+     "face_max_mm": 1.599145494773785,
+     "face_median_mm": 1.5016098268101015,
+     "face_micro_sd_mm": 0.020320733747600756,
+     "grout_max_mm": 0.0,
+     "joint_depth_mm": 1.5,
+     "full_scale_mm": 1.6,
+     "clearance_face_above_grout_mm": 1.199090562294957,
+     "pass": true
+    },
+    "colour_bump": {
+     "joint_px": 6044,
+     "joint_px_exact_grout": 1.0,
+     "face_mean_lin_vs_source_rel": [
+      0.00017389168116155318,
+      0.001263827743410273,
+      0.0006995113535854802
+     ],
+     "face_mean_srgb": [
+      204.65602692864348,
+      203.42151089864478,
+      200.35224551554757
+     ],
+     "pass": true
+    },
+    "model_pattern": {
+     "file": "_work/Porcelanosa_Vendome_Nature_47x47_Model.pat",
+     "header_ok": true,
+     "maps": [
+      {
+       "map": "designed",
+       "segments": 18,
+       "sampled_points": 15624,
+       "points_on_grout": 1.0,
+       "joint_runs_matched": 480,
+       "joint_runs_unmatched": 0,
+       "max_offset_px": 0.0,
+       "median_offset_px": 0.0,
+       "pass": true
+      },
+      {
+       "map": "free_mix",
+       "segments": 26,
+       "sampled_points": 31248,
+       "points_on_grout": 1.0,
+       "joint_runs_matched": 600,
+       "joint_runs_unmatched": 0,
+       "max_offset_px": 0.0,
+       "median_offset_px": 0.0,
+       "pass": true
+      },
+      {
+       "map": "piece_1",
+       "segments": 8,
+       "sampled_points": 1512,
+       "points_on_grout": 1.0,
+       "joint_runs_matched": 244,
+       "joint_runs_unmatched": 0,
+       "max_offset_px": 0.0,
+       "median_offset_px": 0.0,
+       "pass": true
+      }
+     ],
+     "pass": true
+    }
+   }
+  },
+  {
+   "colour": "Piece_3_Color.png",
+   "bump": "Piece_3_Bump16.png",
+   "all_pass": true,
+   "gates": {
+    "ihdr": {
+     "colour": {
+      "w": 1512,
+      "h": 1512,
+      "bit_depth": 8,
+      "colour_type": 2,
+      "interlace": 0
+     },
+     "bump": {
+      "w": 1512,
+      "h": 1512,
+      "bit_depth": 16,
+      "colour_type": 0,
+      "interlace": 0
+     },
+     "pass": true
+    },
+    "quarter_inch": {
+     "pixels": [
+      1512,
+      1512
+     ],
+     "sample_size_in": [
+      47.25,
+      47.25
+     ],
+     "feet_inches": [
+      "3'-11.250in",
+      "3'-11.250in"
+     ],
+     "expected_in": [
+      47.25,
+      47.25
+     ],
+     "selftest_non_quarter_rejected": true,
+     "pass": true
+    },
+    "joints": {
+     "joint_px": 2,
+     "joint_in": 0.0625,
+     "zero_columns": [
+      0,
+      1511
+     ],
+     "zero_rows": [
+      0,
+      1511
+     ],
+     "interior_joint_centres_px": [],
+     "zero_exactly_on_joints": true,
+     "pass": true
+    },
+    "wrap": {
+     "edge_grout_share": {
+      "left": 1.0,
+      "right": 1.0,
+      "top": 1.0,
+      "bottom": 1.0
+     },
+     "left_plus_right_px": 2,
+     "top_plus_bottom_px": 2,
+     "colour_lum_step_vertical_wrap_vs_ref": [
+      0.10491925947423969,
+      0.10589668746524357
+     ],
+     "colour_lum_step_horizontal_wrap_vs_ref": [
+      0.09621360838140777,
+      0.09716202930748155
+     ],
+     "ref_basis": "the source photo's own opposite-edge step (single-piece map); pass <= 1.15 x + 0.01",
+     "step_across_joint_between_different_pieces_mean": 0.13281794657472354,
+     "bump_step_wrap_v_h": [
+      0.01996122270784663,
+      0.018626340866365255
+     ],
+     "bump_step_interior_v_h": [
+      null,
+      null
+     ],
+     "bump_micro_3px_step": 0.02045626399902144,
+     "pass": true
+    },
+    "identity": {
+     "cells": [
+      {
+       "cell": [
+        0,
+        0
+       ],
+       "declared": [
+        3,
+        0
+       ],
+       "measured": [
+        3,
+        0,
+        "rotation"
+       ],
+       "ncc_declared": 0.9984445147857862,
+       "best_other": 0.4577812784379845,
+       "best_mirror_of_same_piece": 0.12556326569946125,
+       "mean_abs_drgb_vs_littlecms": 0.5571619333798994,
+       "ok": true
+      }
+     ],
+     "min_ncc_declared": 0.9984445147857862,
+     "max_other": 0.4577812784379845,
+     "max_mean_abs_drgb": 0.5571619333798994,
+     "pass": true
+    },
+    "clearance": {
+     "face_min_mm": 1.199163805600061,
+     "face_max_mm": 1.597973601892119,
+     "face_median_mm": 1.5009994659342336,
+     "face_micro_sd_mm": 0.018023668720526954,
+     "grout_max_mm": 0.0,
+     "joint_depth_mm": 1.5,
+     "full_scale_mm": 1.6,
+     "clearance_face_above_grout_mm": 1.199163805600061,
+     "pass": true
+    },
+    "colour_bump": {
+     "joint_px": 6044,
+     "joint_px_exact_grout": 1.0,
+     "face_mean_lin_vs_source_rel": [
+      0.00011259394482587837,
+      0.001091932160508513,
+      0.00041462372434208916
+     ],
+     "face_mean_srgb": [
+      210.48998289548703,
+      210.49519845620807,
+      208.6699263190211
+     ],
+     "pass": true
+    },
+    "model_pattern": {
+     "file": "_work/Porcelanosa_Vendome_Nature_47x47_Model.pat",
+     "header_ok": true,
+     "maps": [
+      {
+       "map": "designed",
+       "segments": 18,
+       "sampled_points": 15624,
+       "points_on_grout": 1.0,
+       "joint_runs_matched": 480,
+       "joint_runs_unmatched": 0,
+       "max_offset_px": 0.0,
+       "median_offset_px": 0.0,
+       "pass": true
+      },
+      {
+       "map": "free_mix",
+       "segments": 26,
+       "sampled_points": 31248,
+       "points_on_grout": 1.0,
+       "joint_runs_matched": 600,
+       "joint_runs_unmatched": 0,
+       "max_offset_px": 0.0,
+       "median_offset_px": 0.0,
+       "pass": true
+      },
+      {
+       "map": "piece_1",
+       "segments": 8,
+       "sampled_points": 1512,
+       "points_on_grout": 1.0,
+       "joint_runs_matched": 244,
+       "joint_runs_unmatched": 0,
+       "max_offset_px": 0.0,
+       "median_offset_px": 0.0,
+       "pass": true
+      }
+     ],
+     "pass": true
+    }
+   }
+  },
+  {
+   "colour": "Piece_4_Color.png",
+   "bump": "Piece_4_Bump16.png",
+   "all_pass": true,
+   "gates": {
+    "ihdr": {
+     "colour": {
+      "w": 1512,
+      "h": 1512,
+      "bit_depth": 8,
+      "colour_type": 2,
+      "interlace": 0
+     },
+     "bump": {
+      "w": 1512,
+      "h": 1512,
+      "bit_depth": 16,
+      "colour_type": 0,
+      "interlace": 0
+     },
+     "pass": true
+    },
+    "quarter_inch": {
+     "pixels": [
+      1512,
+      1512
+     ],
+     "sample_size_in": [
+      47.25,
+      47.25
+     ],
+     "feet_inches": [
+      "3'-11.250in",
+      "3'-11.250in"
+     ],
+     "expected_in": [
+      47.25,
+      47.25
+     ],
+     "selftest_non_quarter_rejected": true,
+     "pass": true
+    },
+    "joints": {
+     "joint_px": 2,
+     "joint_in": 0.0625,
+     "zero_columns": [
+      0,
+      1511
+     ],
+     "zero_rows": [
+      0,
+      1511
+     ],
+     "interior_joint_centres_px": [],
+     "zero_exactly_on_joints": true,
+     "pass": true
+    },
+    "wrap": {
+     "edge_grout_share": {
+      "left": 1.0,
+      "right": 1.0,
+      "top": 1.0,
+      "bottom": 1.0
+     },
+     "left_plus_right_px": 2,
+     "top_plus_bottom_px": 2,
+     "colour_lum_step_vertical_wrap_vs_ref": [
+      0.12088551279448029,
+      0.12203445401210086
+     ],
+     "colour_lum_step_horizontal_wrap_vs_ref": [
+      0.14872678880127072,
+      0.14968851108518041
+     ],
+     "ref_basis": "the source photo's own opposite-edge step (single-piece map); pass <= 1.15 x + 0.01",
+     "step_across_joint_between_different_pieces_mean": 0.13281794657472354,
+     "bump_step_wrap_v_h": [
+      0.021979482670716345,
+      0.025716570530791925
+     ],
+     "bump_step_interior_v_h": [
+      null,
+      null
+     ],
+     "bump_micro_3px_step": 0.0264984034626651,
+     "pass": true
+    },
+    "identity": {
+     "cells": [
+      {
+       "cell": [
+        0,
+        0
+       ],
+       "declared": [
+        4,
+        0
+       ],
+       "measured": [
+        4,
+        0,
+        "rotation"
+       ],
+       "ncc_declared": 0.9990762648797922,
+       "best_other": 0.09151308949639425,
+       "best_mirror_of_same_piece": 0.012063049991369087,
+       "mean_abs_drgb_vs_littlecms": 0.6664044563525968,
+       "ok": true
+      }
+     ],
+     "min_ncc_declared": 0.9990762648797922,
+     "max_other": 0.09151308949639425,
+     "max_mean_abs_drgb": 0.6664044563525968,
+     "pass": true
+    },
+    "clearance": {
+     "face_min_mm": 1.1983337148088808,
+     "face_max_mm": 1.5999755855649653,
+     "face_median_mm": 1.5018051422903793,
+     "face_micro_sd_mm": 0.022536957050611952,
+     "grout_max_mm": 0.0,
+     "joint_depth_mm": 1.5,
+     "full_scale_mm": 1.6,
+     "clearance_face_above_grout_mm": 1.1983337148088808,
+     "pass": true
+    },
+    "colour_bump": {
+     "joint_px": 6044,
+     "joint_px_exact_grout": 1.0,
+     "face_mean_lin_vs_source_rel": [
+      4.4786952861253226e-05,
+      0.0008361219408474785,
+      0.00031215203289858273
+     ],
+     "face_mean_srgb": [
+      209.48062453401167,
+      209.58566159378975,
+      207.67406824262093
+     ],
+     "pass": true
+    },
+    "model_pattern": {
+     "file": "_work/Porcelanosa_Vendome_Nature_47x47_Model.pat",
+     "header_ok": true,
+     "maps": [
+      {
+       "map": "designed",
+       "segments": 18,
+       "sampled_points": 15624,
+       "points_on_grout": 1.0,
+       "joint_runs_matched": 480,
+       "joint_runs_unmatched": 0,
+       "max_offset_px": 0.0,
+       "median_offset_px": 0.0,
+       "pass": true
+      },
+      {
+       "map": "free_mix",
+       "segments": 26,
+       "sampled_points": 31248,
+       "points_on_grout": 1.0,
+       "joint_runs_matched": 600,
+       "joint_runs_unmatched": 0,
+       "max_offset_px": 0.0,
+       "median_offset_px": 0.0,
+       "pass": true
+      },
+      {
+       "map": "piece_1",
+       "segments": 8,
+       "sampled_points": 1512,
+       "points_on_grout": 1.0,
+       "joint_runs_matched": 244,
+       "joint_runs_unmatched": 0,
+       "max_offset_px": 0.0,
+       "median_offset_px": 0.0,
+       "pass": true
+      }
+     ],
+     "pass": true
+    }
+   }
+  },
+  {
+   "colour": "Piece_5_Color.png",
+   "bump": "Piece_5_Bump16.png",
+   "all_pass": true,
+   "gates": {
+    "ihdr": {
+     "colour": {
+      "w": 1512,
+      "h": 1512,
+      "bit_depth": 8,
+      "colour_type": 2,
+      "interlace": 0
+     },
+     "bump": {
+      "w": 1512,
+      "h": 1512,
+      "bit_depth": 16,
+      "colour_type": 0,
+      "interlace": 0
+     },
+     "pass": true
+    },
+    "quarter_inch": {
+     "pixels": [
+      1512,
+      1512
+     ],
+     "sample_size_in": [
+      47.25,
+      47.25
+     ],
+     "feet_inches": [
+      "3'-11.250in",
+      "3'-11.250in"
+     ],
+     "expected_in": [
+      47.25,
+      47.25
+     ],
+     "selftest_non_quarter_rejected": true,
+     "pass": true
+    },
+    "joints": {
+     "joint_px": 2,
+     "joint_in": 0.0625,
+     "zero_columns": [
+      0,
+      1511
+     ],
+     "zero_rows": [
+      0,
+      1511
+     ],
+     "interior_joint_centres_px": [],
+     "zero_exactly_on_joints": true,
+     "pass": true
+    },
+    "wrap": {
+     "edge_grout_share": {
+      "left": 1.0,
+      "right": 1.0,
+      "top": 1.0,
+      "bottom": 1.0
+     },
+     "left_plus_right_px": 2,
+     "top_plus_bottom_px": 2,
+     "colour_lum_step_vertical_wrap_vs_ref": [
+      0.10308245785985858,
+      0.10426164315907056
+     ],
+     "colour_lum_step_horizontal_wrap_vs_ref": [
+      0.18722975681094925,
+      0.18833437601787367
+     ],
+     "ref_basis": "the source photo's own opposite-edge step (single-piece map); pass <= 1.15 x + 0.01",
+     "step_across_joint_between_different_pieces_mean": 0.13281794657472354,
+     "bump_step_wrap_v_h": [
+      0.018949493041199743,
+      0.021870861040770233
+     ],
+     "bump_step_interior_v_h": [
+      null,
+      null
+     ],
+     "bump_micro_3px_step": 0.021964189488108844,
+     "pass": true
+    },
+    "identity": {
+     "cells": [
+      {
+       "cell": [
+        0,
+        0
+       ],
+       "declared": [
+        5,
+        0
+       ],
+       "measured": [
+        5,
+        0,
+        "rotation"
+       ],
+       "ncc_declared": 0.9988054100863006,
+       "best_other": 0.4568842539034004,
+       "best_mirror_of_same_piece": 0.21650062192965225,
+       "mean_abs_drgb_vs_littlecms": 0.5812008790838534,
+       "ok": true
+      }
+     ],
+     "min_ncc_declared": 0.9988054100863006,
+     "max_other": 0.4568842539034004,
+     "max_mean_abs_drgb": 0.5812008790838534,
+     "pass": true
+    },
+    "clearance": {
+     "face_min_mm": 1.1982848859388113,
+     "face_max_mm": 1.5989990081635768,
+     "face_median_mm": 1.501487754634928,
+     "face_micro_sd_mm": 0.01904758649758194,
+     "grout_max_mm": 0.0,
+     "joint_depth_mm": 1.5,
+     "full_scale_mm": 1.6,
+     "clearance_face_above_grout_mm": 1.1982848859388113,
+     "pass": true
+    },
+    "colour_bump": {
+     "joint_px": 6044,
+     "joint_px_exact_grout": 1.0,
+     "face_mean_lin_vs_source_rel": [
+      3.939141747166808e-05,
+      0.0010064675634040565,
+      0.00022214994063252114
+     ],
+     "face_mean_srgb": [
+      210.77263190210957,
+      209.71573834480944,
+      206.3124389281172
+     ],
+     "pass": true
+    },
+    "model_pattern": {
+     "file": "_work/Porcelanosa_Vendome_Nature_47x47_Model.pat",
+     "header_ok": true,
+     "maps": [
+      {
+       "map": "designed",
+       "segments": 18,
+       "sampled_points": 15624,
+       "points_on_grout": 1.0,
+       "joint_runs_matched": 480,
+       "joint_runs_unmatched": 0,
+       "max_offset_px": 0.0,
+       "median_offset_px": 0.0,
+       "pass": true
+      },
+      {
+       "map": "free_mix",
+       "segments": 26,
+       "sampled_points": 31248,
+       "points_on_grout": 1.0,
+       "joint_runs_matched": 600,
+       "joint_runs_unmatched": 0,
+       "max_offset_px": 0.0,
+       "median_offset_px": 0.0,
+       "pass": true
+      },
+      {
+       "map": "piece_1",
+       "segments": 8,
+       "sampled_points": 1512,
+       "points_on_grout": 1.0,
+       "joint_runs_matched": 244,
+       "joint_runs_unmatched": 0,
+       "max_offset_px": 0.0,
+       "median_offset_px": 0.0,
+       "pass": true
+      }
+     ],
+     "pass": true
+    }
+   }
+  },
+  {
+   "colour": "Piece_6_Color.png",
+   "bump": "Piece_6_Bump16.png",
+   "all_pass": true,
+   "gates": {
+    "ihdr": {
+     "colour": {
+      "w": 1512,
+      "h": 1512,
+      "bit_depth": 8,
+      "colour_type": 2,
+      "interlace": 0
+     },
+     "bump": {
+      "w": 1512,
+      "h": 1512,
+      "bit_depth": 16,
+      "colour_type": 0,
+      "interlace": 0
+     },
+     "pass": true
+    },
+    "quarter_inch": {
+     "pixels": [
+      1512,
+      1512
+     ],
+     "sample_size_in": [
+      47.25,
+      47.25
+     ],
+     "feet_inches": [
+      "3'-11.250in",
+      "3'-11.250in"
+     ],
+     "expected_in": [
+      47.25,
+      47.25
+     ],
+     "selftest_non_quarter_rejected": true,
+     "pass": true
+    },
+    "joints": {
+     "joint_px": 2,
+     "joint_in": 0.0625,
+     "zero_columns": [
+      0,
+      1511
+     ],
+     "zero_rows": [
+      0,
+      1511
+     ],
+     "interior_joint_centres_px": [],
+     "zero_exactly_on_joints": true,
+     "pass": true
+    },
+    "wrap": {
+     "edge_grout_share": {
+      "left": 1.0,
+      "right": 1.0,
+      "top": 1.0,
+      "bottom": 1.0
+     },
+     "left_plus_right_px": 2,
+     "top_plus_bottom_px": 2,
+     "colour_lum_step_vertical_wrap_vs_ref": [
+      0.11187553774593269,
+      0.11278993401276
+     ],
+     "colour_lum_step_horizontal_wrap_vs_ref": [
+      0.13269077067018983,
+      0.13372825548509437
+     ],
+     "ref_basis": "the source photo's own opposite-edge step (single-piece map); pass <= 1.15 x + 0.01",
+     "step_across_joint_between_different_pieces_mean": 0.13281794657472354,
+     "bump_step_wrap_v_h": [
+      0.022621314270051568,
+      0.022918469592765757
+     ],
+     "bump_step_interior_v_h": [
+      null,
+      null
+     ],
+     "bump_micro_3px_step": 0.020476041397159958,
+     "pass": true
+    },
+    "identity": {
+     "cells": [
+      {
+       "cell": [
+        0,
+        0
+       ],
+       "declared": [
+        6,
+        0
+       ],
+       "measured": [
+        6,
+        0,
+        "rotation"
+       ],
+       "ncc_declared": 0.998536612217542,
+       "best_other": 0.2345857094362766,
+       "best_mirror_of_same_piece": 0.10586706933244613,
+       "mean_abs_drgb_vs_littlecms": 0.5630205677158985,
+       "ok": true
+      }
+     ],
+     "min_ncc_declared": 0.998536612217542,
+     "max_other": 0.2345857094362766,
+     "max_mean_abs_drgb": 0.5630205677158985,
+     "pass": true
+    },
+    "clearance": {
+     "face_min_mm": 1.1985290302891585,
+     "face_max_mm": 1.5989990081635768,
+     "face_median_mm": 1.5009506370641643,
+     "face_micro_sd_mm": 0.01828292939020194,
+     "grout_max_mm": 0.0,
+     "joint_depth_mm": 1.5,
+     "full_scale_mm": 1.6,
+     "clearance_face_above_grout_mm": 1.1985290302891585,
+     "pass": true
+    },
+    "colour_bump": {
+     "joint_px": 6044,
+     "joint_px_exact_grout": 1.0,
+     "face_mean_lin_vs_source_rel": [
+      0.00010407098528175673,
+      0.0009328527060927794,
+      0.0002917330924039341
+     ],
+     "face_mean_srgb": [
+      212.03962501644665,
+      211.95196745756766,
+      209.96457962370073
+     ],
+     "pass": true
+    },
+    "model_pattern": {
+     "file": "_work/Porcelanosa_Vendome_Nature_47x47_Model.pat",
+     "header_ok": true,
+     "maps": [
+      {
+       "map": "designed",
+       "segments": 18,
+       "sampled_points": 15624,
+       "points_on_grout": 1.0,
+       "joint_runs_matched": 480,
+       "joint_runs_unmatched": 0,
+       "max_offset_px": 0.0,
+       "median_offset_px": 0.0,
+       "pass": true
+      },
+      {
+       "map": "free_mix",
+       "segments": 26,
+       "sampled_points": 31248,
+       "points_on_grout": 1.0,
+       "joint_runs_matched": 600,
+       "joint_runs_unmatched": 0,
+       "max_offset_px": 0.0,
+       "median_offset_px": 0.0,
+       "pass": true
+      },
+      {
+       "map": "piece_1",
+       "segments": 8,
+       "sampled_points": 1512,
+       "points_on_grout": 1.0,
+       "joint_runs_matched": 244,
+       "joint_runs_unmatched": 0,
+       "max_offset_px": 0.0,
+       "median_offset_px": 0.0,
+       "pass": true
+      }
+     ],
+     "pass": true
+    }
+   }
+  },
+  {
+   "colour": "Piece_7_Color.png",
+   "bump": "Piece_7_Bump16.png",
+   "all_pass": true,
+   "gates": {
+    "ihdr": {
+     "colour": {
+      "w": 1512,
+      "h": 1512,
+      "bit_depth": 8,
+      "colour_type": 2,
+      "interlace": 0
+     },
+     "bump": {
+      "w": 1512,
+      "h": 1512,
+      "bit_depth": 16,
+      "colour_type": 0,
+      "interlace": 0
+     },
+     "pass": true
+    },
+    "quarter_inch": {
+     "pixels": [
+      1512,
+      1512
+     ],
+     "sample_size_in": [
+      47.25,
+      47.25
+     ],
+     "feet_inches": [
+      "3'-11.250in",
+      "3'-11.250in"
+     ],
+     "expected_in": [
+      47.25,
+      47.25
+     ],
+     "selftest_non_quarter_rejected": true,
+     "pass": true
+    },
+    "joints": {
+     "joint_px": 2,
+     "joint_in": 0.0625,
+     "zero_columns": [
+      0,
+      1511
+     ],
+     "zero_rows": [
+      0,
+      1511
+     ],
+     "interior_joint_centres_px": [],
+     "zero_exactly_on_joints": true,
+     "pass": true
+    },
+    "wrap": {
+     "edge_grout_share": {
+      "left": 1.0,
+      "right": 1.0,
+      "top": 1.0,
+      "bottom": 1.0
+     },
+     "left_plus_right_px": 2,
+     "top_plus_bottom_px": 2,
+     "colour_lum_step_vertical_wrap_vs_ref": [
+      0.13141851231357143,
+      0.1320600795587941
+     ],
+     "colour_lum_step_horizontal_wrap_vs_ref": [
+      0.1615592992423399,
+      0.16247129146886927
+     ],
+     "ref_basis": "the source photo's own opposite-edge step (single-piece map); pass <= 1.15 x + 0.01",
+     "step_across_joint_between_different_pieces_mean": 0.13281794657472354,
+     "bump_step_wrap_v_h": [
+      0.02474344861161065,
+      0.02435207488385178
+     ],
+     "bump_step_interior_v_h": [
+      null,
+      null
+     ],
+     "bump_micro_3px_step": 0.022716736880012852,
+     "pass": true
+    },
+    "identity": {
+     "cells": [
+      {
+       "cell": [
+        0,
+        0
+       ],
+       "declared": [
+        7,
+        0
+       ],
+       "measured": [
+        7,
+        0,
+        "rotation"
+       ],
+       "ncc_declared": 0.9991812001551039,
+       "best_other": 0.20152292366338992,
+       "best_mirror_of_same_piece": 0.08179707520281589,
+       "mean_abs_drgb_vs_littlecms": 0.559143115714057,
+       "ok": true
+      }
+     ],
+     "min_ncc_declared": 0.9991812001551039,
+     "max_other": 0.20152292366338992,
+     "max_mean_abs_drgb": 0.559143115714057,
+     "pass": true
+    },
+    "clearance": {
+     "face_min_mm": 1.1987487602044709,
+     "face_max_mm": 1.5998046845197225,
+     "face_median_mm": 1.5015365835049974,
+     "face_micro_sd_mm": 0.020132576913010434,
+     "grout_max_mm": 0.0,
+     "joint_depth_mm": 1.5,
+     "full_scale_mm": 1.6,
+     "clearance_face_above_grout_mm": 1.1987487602044709,
+     "pass": true
+    },
+    "colour_bump": {
+     "joint_px": 6044,
+     "joint_px_exact_grout": 1.0,
+     "face_mean_lin_vs_source_rel": [
+      -4.585393618761202e-05,
+      0.0013110587290225961,
+      0.0005354311903313924
+     ],
+     "face_mean_srgb": [
+      207.47779264067364,
+      205.94649796061577,
+      202.41731985439236
+     ],
+     "pass": true
+    },
+    "model_pattern": {
+     "file": "_work/Porcelanosa_Vendome_Nature_47x47_Model.pat",
+     "header_ok": true,
+     "maps": [
+      {
+       "map": "designed",
+       "segments": 18,
+       "sampled_points": 15624,
+       "points_on_grout": 1.0,
+       "joint_runs_matched": 480,
+       "joint_runs_unmatched": 0,
+       "max_offset_px": 0.0,
+       "median_offset_px": 0.0,
+       "pass": true
+      },
+      {
+       "map": "free_mix",
+       "segments": 26,
+       "sampled_points": 31248,
+       "points_on_grout": 1.0,
+       "joint_runs_matched": 600,
+       "joint_runs_unmatched": 0,
+       "max_offset_px": 0.0,
+       "median_offset_px": 0.0,
+       "pass": true
+      },
+      {
+       "map": "piece_1",
+       "segments": 8,
+       "sampled_points": 1512,
+       "points_on_grout": 1.0,
+       "joint_runs_matched": 244,
+       "joint_runs_unmatched": 0,
+       "max_offset_px": 0.0,
+       "median_offset_px": 0.0,
+       "pass": true
+      }
+     ],
+     "pass": true
+    }
+   }
+  },
+  {
+   "colour": "Piece_8_Color.png",
+   "bump": "Piece_8_Bump16.png",
+   "all_pass": true,
+   "gates": {
+    "ihdr": {
+     "colour": {
+      "w": 1512,
+      "h": 1512,
+      "bit_depth": 8,
+      "colour_type": 2,
+      "interlace": 0
+     },
+     "bump": {
+      "w": 1512,
+      "h": 1512,
+      "bit_depth": 16,
+      "colour_type": 0,
+      "interlace": 0
+     },
+     "pass": true
+    },
+    "quarter_inch": {
+     "pixels": [
+      1512,
+      1512
+     ],
+     "sample_size_in": [
+      47.25,
+      47.25
+     ],
+     "feet_inches": [
+      "3'-11.250in",
+      "3'-11.250in"
+     ],
+     "expected_in": [
+      47.25,
+      47.25
+     ],
+     "selftest_non_quarter_rejected": true,
+     "pass": true
+    },
+    "joints": {
+     "joint_px": 2,
+     "joint_in": 0.0625,
+     "zero_columns": [
+      0,
+      1511
+     ],
+     "zero_rows": [
+      0,
+      1511
+     ],
+     "interior_joint_centres_px": [],
+     "zero_exactly_on_joints": true,
+     "pass": true
+    },
+    "wrap": {
+     "edge_grout_share": {
+      "left": 1.0,
+      "right": 1.0,
+      "top": 1.0,
+      "bottom": 1.0
+     },
+     "left_plus_right_px": 2,
+     "top_plus_bottom_px": 2,
+     "colour_lum_step_vertical_wrap_vs_ref": [
+      0.15929536735061833,
+      0.15989507494934854
+     ],
+     "colour_lum_step_horizontal_wrap_vs_ref": [
+      0.23312904726734593,
+      0.23392981210665179
+     ],
+     "ref_basis": "the source photo's own opposite-edge step (single-piece map); pass <= 1.15 x + 0.01",
+     "step_across_joint_between_different_pieces_mean": 0.13281794657472354,
+     "bump_step_wrap_v_h": [
+      0.030483698883790423,
+      0.0348222990017451
+     ],
+     "bump_step_interior_v_h": [
+      null,
+      null
+     ],
+     "bump_micro_3px_step": 0.028486943802953035,
+     "pass": true
+    },
+    "identity": {
+     "cells": [
+      {
+       "cell": [
+        0,
+        0
+       ],
+       "declared": [
+        8,
+        0
+       ],
+       "measured": [
+        8,
+        0,
+        "rotation"
+       ],
+       "ncc_declared": 0.9994532026845175,
+       "best_other": 0.23310819510025976,
+       "best_mirror_of_same_piece": 0.16468420230449304,
+       "mean_abs_drgb_vs_littlecms": 0.6645978544607086,
+       "ok": true
+      }
+     ],
+     "min_ncc_declared": 0.9994532026845175,
+     "max_other": 0.23310819510025976,
+     "max_mean_abs_drgb": 0.6645978544607086,
+     "pass": true
+    },
+    "clearance": {
+     "face_min_mm": 1.200286869611658,
+     "face_max_mm": 1.5998535133897918,
+     "face_median_mm": 1.5018539711604486,
+     "face_micro_sd_mm": 0.024137045372836317,
+     "grout_max_mm": 0.0,
+     "joint_depth_mm": 1.5,
+     "full_scale_mm": 1.6,
+     "clearance_face_above_grout_mm": 1.200286869611658,
+     "pass": true
+    },
+    "colour_bump": {
+     "joint_px": 6044,
+     "joint_px_exact_grout": 1.0,
+     "face_mean_lin_vs_source_rel": [
+      6.829054702484072e-05,
+      0.0006980392434832172,
+      8.998144048399936e-05
+     ],
+     "face_mean_srgb": [
+      210.33630893381869,
+      208.56966887417218,
+      205.20196044033156
+     ],
+     "pass": true
+    },
+    "model_pattern": {
+     "file": "_work/Porcelanosa_Vendome_Nature_47x47_Model.pat",
+     "header_ok": true,
+     "maps": [
+      {
+       "map": "designed",
+       "segments": 18,
+       "sampled_points": 15624,
+       "points_on_grout": 1.0,
+       "joint_runs_matched": 480,
+       "joint_runs_unmatched": 0,
+       "max_offset_px": 0.0,
+       "median_offset_px": 0.0,
+       "pass": true
+      },
+      {
+       "map": "free_mix",
+       "segments": 26,
+       "sampled_points": 31248,
+       "points_on_grout": 1.0,
+       "joint_runs_matched": 600,
+       "joint_runs_unmatched": 0,
+       "max_offset_px": 0.0,
+       "median_offset_px": 0.0,
+       "pass": true
+      },
+      {
+       "map": "piece_1",
+       "segments": 8,
+       "sampled_points": 1512,
+       "points_on_grout": 1.0,
+       "joint_runs_matched": 244,
+       "joint_runs_unmatched": 0,
+       "max_offset_px": 0.0,
+       "median_offset_px": 0.0,
+       "pass": true
+      }
+     ],
+     "pass": true
+    }
+   }
+  }
+ ],
+ "set_checks": {
+  "piece_bumps_all_different": true,
+  "max_bump_ncc_between_pieces": 0.4288317818045702,
+  "pass": true
+ },
+ "revit_sample_size": {
+  "width_in": 47.25,
+  "height_in": 47.25,
+  "width": "3'-11.250in",
+  "height": "3'-11.250in"
+ },
+ "revit_bump_amount_editor": 60
+}

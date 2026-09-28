@@ -1,0 +1,1791 @@
+{
+ "product": "ELM Surfaces Formed collection, Hexagon Tile in Sand (Matte / Raw / Chiseled mix)",
+ "atlas": {
+  "columns": 8,
+  "rows": 7,
+  "faces": 56,
+  "px_per_in": 64.0,
+  "width_px": 4489,
+  "height_px": 4536,
+  "hexagon": "flat-top, 10.000 in across flats (assumed reading of 10 x 10)",
+  "joint_in": 0.125,
+  "joint_px": 8.0,
+  "module_across_flats_in": 10.125,
+  "revit_sample_size_in": [
+   70.148,
+   70.875
+  ],
+  "revit_sample_size_ftin": [
+   "5'-10 5/32\"",
+   "5'-10 7/8\""
+  ],
+  "repeat": "on, both directions"
+ },
+ "revit": {
+  "sample_size_in": [
+   70.148,
+   70.875
+  ],
+  "sample_size_ftin": [
+   "5'-10 5/32\"",
+   "5'-10 7/8\""
+  ],
+  "repeat": "on, both directions",
+  "bump_amount_suggested": 0.5,
+  "bump_amount_note": "start at 0.5 (repo convention 0.3-0.5 for dimensional tiles); the joint uses the full 0-65535 range and Raw about 65 %, so lower towards 0.3 if joints read too heavy. Not validated in Revit in this trial."
+ },
+ "joint_rgb": [
+  208,
+  200,
+  186
+ ],
+ "joint_rgb_source": "median of the darkest 20 % of render pixels on the joint centreline",
+ "mix_ratio_render": {
+  "fully_visible_faces": {
+   "matte": 22,
+   "raw": 8,
+   "chiseled": 9
+  },
+  "fraction": {
+   "matte": 0.5641,
+   "raw": 0.2051,
+   "chiseled": 0.2308
+  },
+  "visibility_weighted_faces": {
+   "matte": 24.0,
+   "raw": 8.49,
+   "chiseled": 9.51
+  },
+  "visibility_weighted_fraction": {
+   "matte": 0.5714,
+   "raw": 0.2022,
+   "chiseled": 0.2264
+  },
+  "chiseled_orientations_deg_image": {
+   "90": 3.5,
+   "30": 4.0,
+   "150": 2.0
+  },
+  "note": "counted in the render's 45 classified cells: faces with >= 99 % of their inset interior visible count 1; the weighted count adds partly visible faces by visible fraction"
+ },
+ "mix_ratio_used": {
+  "faces": {
+   "matte": 32,
+   "raw": 11,
+   "chiseled": 13
+  },
+  "fraction": {
+   "matte": 0.5714,
+   "raw": 0.1964,
+   "chiseled": 0.2321
+  },
+  "chiseled_orientations_deg_image": {
+   "90": 5,
+   "30": 5,
+   "150": 3
+  }
+ },
+ "layout": {
+  "seed": 20260926,
+  "anneal_cost": 75.518,
+  "same_type_non_matte_adjacent_pairs": 0
+ },
+ "relief_terms_mm": {
+  "joint_depth": 2.5,
+  "raw_relief": 1.6,
+  "chiseled_channel_depth": 0.7,
+  "chiseled_depth_modulation": "channel depth x (1 + m), m = render groove amplitude modulation, clipped +-0.6",
+  "chiseled_roughness_std": 0.12,
+  "matte_micro_std": 0.015,
+  "edge_ease_depth": 0.35,
+  "edge_ease_width": 1.2
+ },
+ "bump_encoding": {
+  "black_mm": -2.5,
+  "white_mm": 0.12,
+  "mm_per_16bit_step": 3.997863732841674e-05,
+  "white_is_high": true
+ },
+ "chiseled_geometry": {
+  "pitch_mm": 5.0519,
+  "pitch_px_64ppi": 12.729,
+  "angles_deg_image_measured": {
+   "-1,6": 90.17,
+   "0,1": 30.28,
+   "0,9": 29.66,
+   "1,4": 150.49,
+   "2,1": 90.35,
+   "2,7": 90.35,
+   "3,6": 29.66,
+   "4,9": 150.34,
+   "5,4": 29.57
+  },
+  "angles_used_deg_image": [
+   90,
+   30,
+   150
+  ],
+  "channel_shape": "((1 + cos 2 pi phi) / 2) ** 1.65, crest plane at 0",
+  "profile_fit": {
+   "gamma": 1.6499999999999997,
+   "blur_px": 0.6,
+   "r2": 0.9983319434107638,
+   "r2_by_gamma": {
+    "0.3": 0.99744,
+    "0.35": 0.99628,
+    "0.4": 0.99473,
+    "0.45": 0.99324,
+    "0.5": 0.99589,
+    "0.55": 0.997,
+    "0.6": 0.99671,
+    "0.65": 0.99514,
+    "0.7": 0.99244,
+    "0.75": 0.98873,
+    "0.8": 0.98414,
+    "0.85": 0.97878,
+    "0.9": 0.97274,
+    "0.95": 0.96613,
+    "1.0": 0.95902,
+    "1.05": 0.96583,
+    "1.1": 0.97182,
+    "1.15": 0.97704,
+    "1.2": 0.98154,
+    "1.25": 0.98539,
+    "1.3": 0.98864,
+    "1.35": 0.99134,
+    "1.4": 0.99353,
+    "1.45": 0.99526,
+    "1.5": 0.99658,
+    "1.55": 0.9975,
+    "1.6": 0.99808,
+    "1.65": 0.99833,
+    "1.7": 0.99829,
+    "1.75": 0.99798,
+    "1.8": 0.99743,
+    "1.85": 0.99666,
+    "1.9": 0.99569,
+    "1.95": 0.99454,
+    "2.0": 0.99476
+   },
+   "inphase_amp_levels": 3.4048808778358723,
+   "inphase_sign": -1.0,
+   "per_face": {
+    "-1,6": {
+     "shading": -165.9193718081749,
+     "inphase": -3.4048808778358723
+    },
+    "0,1": {
+     "shading": -123.55821040667944,
+     "inphase": -2.149212561714984
+    },
+    "0,9": {
+     "shading": -150.81167526769073,
+     "inphase": -3.634952757647226
+    },
+    "1,4": {
+     "shading": -123.79259747081088,
+     "inphase": -3.9717874967077065
+    },
+    "2,1": {
+     "shading": -137.254823663704,
+     "inphase": -2.909706088755577
+    },
+    "2,7": {
+     "shading": -146.50883853859347,
+     "inphase": -4.038334574707157
+    },
+    "3,6": {
+     "shading": -147.1908825895875,
+     "inphase": -2.857691848100821
+    },
+    "4,9": {
+     "shading": 152.47663780382123,
+     "inphase": -3.746436232465699
+    },
+    "5,4": {
+     "shading": -139.38773005158384,
+     "inphase": -3.103357037090849
+    }
+   }
+  },
+  "colour_channel_darkening_levels": 16.06,
+  "rotation_convention": "rotation_deg is the hexagon rotation of the vertical-groove face, counter-clockwise as viewed: 0 -> vertical, 60 -> 30 deg image angle ('\\'), 300 -> 150 deg image angle ('/')"
+ },
+ "quilting": {
+  "raw_block_px_render": 28,
+  "matte_block_px_render": 36,
+  "render_px_per_in": 31.07994141377957,
+  "duplicate_percent": {
+   "matte": 77.7,
+   "raw": 73.26,
+   "chis_90": 8.87,
+   "chis_30": 11.77,
+   "chis_150": 4.23
+  },
+  "pool_coverage_percent": {
+   "matte": 89.28,
+   "raw": 91.17,
+   "chis_90": 70.2,
+   "chis_30": 69.79,
+   "chis_150": 43.03
+  },
+  "note": "duplicate_percent = share of quilted face pixels whose render source pixel also appears at another output location (same or other face), counting both copies; the pools are smaller than the atlas needs (Raw: ~8.7 render faces of pixels for 11 atlas faces, Matte ~25 for 32, Chiseled 9 for 13). The three Chiseled class pools are the same 9 render faces rotated, so they also share content across classes, under the rebuilt grooves."
+ },
+ "faces": [
+  {
+   "index": 1,
+   "row": 0,
+   "col": 0,
+   "type": "chiseled",
+   "centre_px": [
+    280.56,
+    324.0
+   ],
+   "tone_offset_rgb": [
+    0.57,
+    -0.13,
+    -0.4
+   ],
+   "tone_offset_from_render_face": "1,4",
+   "rotation_deg": 0,
+   "mirrored": false,
+   "groove_angle_image_deg": 90,
+   "groove_phase": 0.1981,
+   "groove_pitch_mm": 5.0519,
+   "source": "grooves rebuilt from measured render geometry (straight, pitch 5.052 mm, angle 90 deg image coords, channel ((1+cos)/2)^1.65, depth 0.70 mm); surface roughness, mottled colour and along-ridge depth modulation image-quilted from the render's Chiseled faces with their grooves notched out, each source face rotated by a multiple of 60 deg to this groove direction (render cell j,k: share of blocks) 1,4 20%, -1,6 19%, 0,1 18%, 0,9 17%, 5,4 12%, 2,1 9%, 2,7 4%, 4,9 1%, 3,6 0%; resampled 31.08 -> 64 px/in"
+  },
+  {
+   "index": 2,
+   "row": 0,
+   "col": 1,
+   "type": "raw",
+   "centre_px": [
+    841.69,
+    0.0
+   ],
+   "tone_offset_rgb": [
+    -0.08,
+    0.25,
+    -0.58
+   ],
+   "tone_offset_from_render_face": "4,11",
+   "rotation_deg": 0,
+   "mirrored": false,
+   "source": "image-quilted from render Raw faces (render cell j,k: share of blocks) 1,2 14%, 2,5 14%, 4,3 13%, -1,0 13%, 4,1 12%, 0,5 11%, 1,8 10%, 5,8 8%, 4,11 5%; translation only, no rotation or mirror; resampled 31.08 -> 64 px/in; 67 % of its pixels share a source pixel with another output location"
+  },
+  {
+   "index": 3,
+   "row": 0,
+   "col": 2,
+   "type": "chiseled",
+   "centre_px": [
+    1402.81,
+    324.0
+   ],
+   "tone_offset_rgb": [
+    -0.21,
+    0.57,
+    1.41
+   ],
+   "tone_offset_from_render_face": "0,9",
+   "rotation_deg": 60,
+   "mirrored": false,
+   "groove_angle_image_deg": 30,
+   "groove_phase": 0.2424,
+   "groove_pitch_mm": 5.0519,
+   "source": "grooves rebuilt from measured render geometry (straight, pitch 5.052 mm, angle 30 deg image coords, channel ((1+cos)/2)^1.65, depth 0.70 mm); surface roughness, mottled colour and along-ridge depth modulation image-quilted from the render's Chiseled faces with their grooves notched out, each source face rotated by a multiple of 60 deg to this groove direction (render cell j,k: share of blocks) 1,4 19%, 2,1 14%, 0,1 13%, -1,6 13%, 4,9 13%, 3,6 11%, 5,4 9%, 2,7 4%, 0,9 3%; resampled 31.08 -> 64 px/in"
+  },
+  {
+   "index": 4,
+   "row": 0,
+   "col": 3,
+   "type": "matte",
+   "centre_px": [
+    1963.94,
+    0.0
+   ],
+   "tone_offset_rgb": [
+    0.07,
+    0.4,
+    0.97
+   ],
+   "tone_offset_from_render_face": "5,0",
+   "rotation_deg": 0,
+   "mirrored": false,
+   "source": "image-quilted from render Matte faces (render cell j,k: share of blocks) 5,2 23%, -1,4 13%, 0,3 11%, 4,7 10%, -1,2 8%, 1,6 6%, 4,-1 6%, 0,-1 6%, 3,4 6%, 2,-1 3%, 3,0 2%, 1,0 2%, 3,10 1%, -1,10 1%, 3,8 1%, 2,9 1%; translation only, no rotation or mirror; resampled 31.08 -> 64 px/in; 77 % of its pixels share a source pixel with another output location"
+  },
+  {
+   "index": 5,
+   "row": 0,
+   "col": 4,
+   "type": "chiseled",
+   "centre_px": [
+    2525.06,
+    324.0
+   ],
+   "tone_offset_rgb": [
+    -0.1,
+    0.1,
+    -0.35
+   ],
+   "tone_offset_from_render_face": "2,11",
+   "rotation_deg": 300,
+   "mirrored": false,
+   "groove_angle_image_deg": 150,
+   "groove_phase": 0.8339,
+   "groove_pitch_mm": 5.0519,
+   "source": "grooves rebuilt from measured render geometry (straight, pitch 5.052 mm, angle 150 deg image coords, channel ((1+cos)/2)^1.65, depth 0.70 mm); surface roughness, mottled colour and along-ridge depth modulation image-quilted from the render's Chiseled faces with their grooves notched out, each source face rotated by a multiple of 60 deg to this groove direction (render cell j,k: share of blocks) 1,4 24%, 2,1 17%, 5,4 16%, 0,9 11%, 2,7 10%, 3,6 9%, -1,6 6%, 4,9 5%, 0,1 4%; resampled 31.08 -> 64 px/in"
+  },
+  {
+   "index": 6,
+   "row": 0,
+   "col": 5,
+   "type": "matte",
+   "centre_px": [
+    3086.19,
+    0.0
+   ],
+   "tone_offset_rgb": [
+    -0.87,
+    -1.02,
+    -0.65
+   ],
+   "tone_offset_from_render_face": "-1,2",
+   "rotation_deg": 0,
+   "mirrored": false,
+   "source": "image-quilted from render Matte faces (render cell j,k: share of blocks) 0,7 7%, 3,4 6%, 5,0 6%, -1,8 6%, 5,10 6%, 5,2 6%, 4,-1 5%, 1,6 5%, 3,10 5%, 2,9 4%, 1,0 4%, 5,6 4%, 1,10 4%, 2,3 4%, 3,2 4%, 4,5 3%, 4,7 3%, 2,-1 3%, -1,4 3%, 3,0 3%, 0,3 3%, -1,2 3%, -1,10 1%, 0,-1 1%, 0,11 1%, 3,8 1%; translation only, no rotation or mirror; resampled 31.08 -> 64 px/in; 88 % of its pixels share a source pixel with another output location"
+  },
+  {
+   "index": 7,
+   "row": 0,
+   "col": 6,
+   "type": "matte",
+   "centre_px": [
+    3647.31,
+    324.0
+   ],
+   "tone_offset_rgb": [
+    1.1,
+    1.18,
+    1.64
+   ],
+   "tone_offset_from_render_face": "3,2",
+   "rotation_deg": 0,
+   "mirrored": false,
+   "source": "image-quilted from render Matte faces (render cell j,k: share of blocks) 1,0 15%, 3,0 8%, 4,5 7%, 2,3 6%, 2,9 5%, 0,3 5%, 5,6 4%, 3,10 4%, 0,7 4%, 3,8 4%, 5,10 3%, 1,10 3%, 4,7 3%, 3,4 3%, 4,-1 3%, -1,8 3%, -1,2 3%, -1,10 2%, 5,2 2%, -1,4 2%, 5,0 2%, 0,11 1%, 2,-1 1%, 0,-1 1%, 3,2 1%, 1,6 1%; translation only, no rotation or mirror; resampled 31.08 -> 64 px/in; 77 % of its pixels share a source pixel with another output location"
+  },
+  {
+   "index": 8,
+   "row": 0,
+   "col": 7,
+   "type": "matte",
+   "centre_px": [
+    4208.44,
+    0.0
+   ],
+   "tone_offset_rgb": [
+    -1.25,
+    -1.39,
+    -0.26
+   ],
+   "tone_offset_from_render_face": "1,10",
+   "rotation_deg": 0,
+   "mirrored": false,
+   "source": "image-quilted from render Matte faces (render cell j,k: share of blocks) -1,10 20%, 3,2 10%, 3,10 9%, 3,0 8%, 3,8 7%, 1,6 7%, 5,0 7%, 4,5 6%, -1,2 6%, 0,3 4%, -1,4 3%, 4,7 3%, 1,0 2%, 0,11 2%, 5,2 1%, 1,10 1%, 2,3 1%, 5,6 1%, 0,-1 1%; translation only, no rotation or mirror; resampled 31.08 -> 64 px/in; 74 % of its pixels share a source pixel with another output location"
+  },
+  {
+   "index": 9,
+   "row": 1,
+   "col": 0,
+   "type": "raw",
+   "centre_px": [
+    280.56,
+    972.0
+   ],
+   "tone_offset_rgb": [
+    -0.74,
+    -0.82,
+    -0.76
+   ],
+   "tone_offset_from_render_face": "4,3",
+   "rotation_deg": 0,
+   "mirrored": false,
+   "source": "image-quilted from render Raw faces (render cell j,k: share of blocks) 5,8 22%, 0,5 19%, 4,1 13%, 2,5 12%, 1,8 10%, 4,11 8%, -1,0 7%, 1,2 5%, 4,3 4%; translation only, no rotation or mirror; resampled 31.08 -> 64 px/in; 66 % of its pixels share a source pixel with another output location"
+  },
+  {
+   "index": 10,
+   "row": 1,
+   "col": 1,
+   "type": "matte",
+   "centre_px": [
+    841.69,
+    648.0
+   ],
+   "tone_offset_rgb": [
+    -0.62,
+    -0.35,
+    0.71
+   ],
+   "tone_offset_from_render_face": "5,6",
+   "rotation_deg": 0,
+   "mirrored": false,
+   "source": "image-quilted from render Matte faces (render cell j,k: share of blocks) 5,6 8%, 2,9 7%, 5,2 6%, 1,0 6%, 3,10 6%, -1,4 5%, 3,4 5%, 2,3 5%, 0,7 5%, 3,8 5%, 1,10 5%, 4,7 4%, 1,6 4%, 0,3 4%, 3,0 4%, 5,10 3%, 3,2 3%, 4,5 3%, -1,10 2%, 2,-1 2%, 5,0 2%, 0,-1 1%, -1,8 1%, 0,11 1%, -1,2 1%, 4,-1 1%; translation only, no rotation or mirror; resampled 31.08 -> 64 px/in; 79 % of its pixels share a source pixel with another output location"
+  },
+  {
+   "index": 11,
+   "row": 1,
+   "col": 2,
+   "type": "matte",
+   "centre_px": [
+    1402.81,
+    972.0
+   ],
+   "tone_offset_rgb": [
+    1.75,
+    2.34,
+    2.03
+   ],
+   "tone_offset_from_render_face": "3,8",
+   "rotation_deg": 0,
+   "mirrored": false,
+   "source": "image-quilted from render Matte faces (render cell j,k: share of blocks) 1,10 26%, 0,7 11%, 2,3 6%, 2,9 6%, 0,3 6%, 5,10 5%, -1,4 5%, 1,0 5%, 3,0 4%, 4,7 3%, -1,2 3%, 3,2 3%, 3,4 2%, 5,0 2%, 5,6 2%, 1,6 2%, -1,8 2%, 2,-1 1%, 0,11 1%, 3,10 1%, 4,-1 1%, 5,2 1%, -1,10 1%, 0,-1 1%; translation only, no rotation or mirror; resampled 31.08 -> 64 px/in; 72 % of its pixels share a source pixel with another output location"
+  },
+  {
+   "index": 12,
+   "row": 1,
+   "col": 3,
+   "type": "matte",
+   "centre_px": [
+    1963.94,
+    648.0
+   ],
+   "tone_offset_rgb": [
+    0.58,
+    0.17,
+    0.48
+   ],
+   "tone_offset_from_render_face": "5,10",
+   "rotation_deg": 0,
+   "mirrored": false,
+   "source": "image-quilted from render Matte faces (render cell j,k: share of blocks) 2,9 8%, 5,10 7%, -1,10 6%, 4,7 6%, 2,3 6%, -1,8 6%, 3,10 6%, 4,5 6%, 5,6 5%, 1,6 5%, 3,4 4%, 1,0 3%, -1,2 3%, 3,2 3%, 3,0 3%, 4,-1 3%, 0,3 3%, 0,7 3%, 5,2 3%, 3,8 3%, 0,11 2%, 5,0 2%, -1,4 2%, 0,-1 1%, 1,10 1%, 2,-1 1%; translation only, no rotation or mirror; resampled 31.08 -> 64 px/in; 87 % of its pixels share a source pixel with another output location"
+  },
+  {
+   "index": 13,
+   "row": 1,
+   "col": 4,
+   "type": "matte",
+   "centre_px": [
+    2525.06,
+    972.0
+   ],
+   "tone_offset_rgb": [
+    0.52,
+    0.57,
+    1.01
+   ],
+   "tone_offset_from_render_face": "3,4",
+   "rotation_deg": 0,
+   "mirrored": false,
+   "source": "image-quilted from render Matte faces (render cell j,k: share of blocks) 1,6 8%, 2,9 7%, 0,7 7%, 1,0 7%, 5,2 7%, 5,10 6%, -1,2 6%, 5,0 5%, 3,0 4%, 2,3 4%, 5,6 4%, -1,4 4%, 0,11 3%, 1,10 3%, 3,10 3%, 3,4 3%, 4,5 3%, 0,-1 2%, 3,2 2%, 4,7 2%, -1,10 2%, 3,8 2%, 4,-1 1%, -1,8 1%, 0,3 1%, 2,-1 1%; translation only, no rotation or mirror; resampled 31.08 -> 64 px/in; 74 % of its pixels share a source pixel with another output location"
+  },
+  {
+   "index": 14,
+   "row": 1,
+   "col": 5,
+   "type": "raw",
+   "centre_px": [
+    3086.19,
+    648.0
+   ],
+   "tone_offset_rgb": [
+    0.28,
+    -0.05,
+    -0.24
+   ],
+   "tone_offset_from_render_face": "5,8",
+   "rotation_deg": 0,
+   "mirrored": false,
+   "source": "image-quilted from render Raw faces (render cell j,k: share of blocks) 5,8 17%, 1,8 14%, 1,2 13%, -1,0 12%, 4,1 11%, 2,5 9%, 4,11 8%, 4,3 8%, 0,5 8%; translation only, no rotation or mirror; resampled 31.08 -> 64 px/in; 69 % of its pixels share a source pixel with another output location"
+  },
+  {
+   "index": 15,
+   "row": 1,
+   "col": 6,
+   "type": "chiseled",
+   "centre_px": [
+    3647.31,
+    972.0
+   ],
+   "tone_offset_rgb": [
+    0.38,
+    -0.29,
+    0.5
+   ],
+   "tone_offset_from_render_face": "-1,6",
+   "rotation_deg": 0,
+   "mirrored": false,
+   "groove_angle_image_deg": 90,
+   "groove_phase": 0.0922,
+   "groove_pitch_mm": 5.0519,
+   "source": "grooves rebuilt from measured render geometry (straight, pitch 5.052 mm, angle 90 deg image coords, channel ((1+cos)/2)^1.65, depth 0.70 mm); surface roughness, mottled colour and along-ridge depth modulation image-quilted from the render's Chiseled faces with their grooves notched out, each source face rotated by a multiple of 60 deg to this groove direction (render cell j,k: share of blocks) 3,6 19%, 4,9 17%, -1,6 15%, 2,1 15%, 2,7 10%, 5,4 9%, 0,1 7%, 1,4 6%, 0,9 1%; resampled 31.08 -> 64 px/in"
+  },
+  {
+   "index": 16,
+   "row": 1,
+   "col": 7,
+   "type": "matte",
+   "centre_px": [
+    4208.44,
+    648.0
+   ],
+   "tone_offset_rgb": [
+    -0.65,
+    -1.19,
+    -1.02
+   ],
+   "tone_offset_from_render_face": "0,7",
+   "rotation_deg": 0,
+   "mirrored": false,
+   "source": "image-quilted from render Matte faces (render cell j,k: share of blocks) 3,0 13%, 3,8 10%, 1,0 10%, 0,3 8%, 5,10 6%, 2,9 6%, -1,8 5%, -1,2 5%, 2,3 4%, 4,7 4%, -1,4 4%, 5,0 3%, 3,2 3%, -1,10 3%, 3,10 3%, 0,-1 2%, 0,7 1%, 3,4 1%, 1,6 1%, 1,10 1%, 4,-1 1%, 2,-1 1%, 5,6 1%; translation only, no rotation or mirror; resampled 31.08 -> 64 px/in; 75 % of its pixels share a source pixel with another output location"
+  },
+  {
+   "index": 17,
+   "row": 2,
+   "col": 0,
+   "type": "matte",
+   "centre_px": [
+    280.56,
+    1620.0
+   ],
+   "tone_offset_rgb": [
+    -0.06,
+    0.58,
+    1.61
+   ],
+   "tone_offset_from_render_face": "-1,4",
+   "rotation_deg": 0,
+   "mirrored": false,
+   "source": "image-quilted from render Matte faces (render cell j,k: share of blocks) 5,0 8%, 3,4 7%, 4,5 6%, 3,0 6%, 1,6 6%, 5,10 6%, -1,8 6%, 0,7 5%, -1,10 4%, 5,2 4%, 0,3 4%, 5,6 4%, 1,10 4%, 4,7 3%, 3,10 3%, 3,8 3%, 2,3 3%, 2,9 3%, -1,2 3%, 2,-1 2%, 4,-1 2%, -1,4 2%, 0,-1 1%, 0,11 1%, 3,2 1%, 1,0 1%; translation only, no rotation or mirror; resampled 31.08 -> 64 px/in; 81 % of its pixels share a source pixel with another output location"
+  },
+  {
+   "index": 18,
+   "row": 2,
+   "col": 1,
+   "type": "matte",
+   "centre_px": [
+    841.69,
+    1296.0
+   ],
+   "tone_offset_rgb": [
+    -0.47,
+    0.16,
+    -0.16
+   ],
+   "tone_offset_from_render_face": "0,3",
+   "rotation_deg": 0,
+   "mirrored": false,
+   "source": "image-quilted from render Matte faces (render cell j,k: share of blocks) 3,8 17%, -1,2 12%, 0,3 9%, -1,4 8%, 0,7 8%, 4,5 8%, 5,0 6%, -1,10 4%, 3,2 4%, 2,-1 3%, 2,3 3%, 2,9 3%, 5,6 3%, 4,7 2%, 0,-1 1%, 3,10 1%, -1,8 1%, 4,-1 1%, 5,10 1%, 5,2 1%, 1,0 1%; translation only, no rotation or mirror; resampled 31.08 -> 64 px/in; 75 % of its pixels share a source pixel with another output location"
+  },
+  {
+   "index": 19,
+   "row": 2,
+   "col": 2,
+   "type": "chiseled",
+   "centre_px": [
+    1402.81,
+    1620.0
+   ],
+   "tone_offset_rgb": [
+    -0.33,
+    -1.05,
+    -1.08
+   ],
+   "tone_offset_from_render_face": "2,1",
+   "rotation_deg": 0,
+   "mirrored": false,
+   "groove_angle_image_deg": 90,
+   "groove_phase": 0.426,
+   "groove_pitch_mm": 5.0519,
+   "source": "grooves rebuilt from measured render geometry (straight, pitch 5.052 mm, angle 90 deg image coords, channel ((1+cos)/2)^1.65, depth 0.70 mm); surface roughness, mottled colour and along-ridge depth modulation image-quilted from the render's Chiseled faces with their grooves notched out, each source face rotated by a multiple of 60 deg to this groove direction (render cell j,k: share of blocks) 2,7 13%, 1,4 11%, 4,9 11%, 0,9 11%, 2,1 11%, 5,4 11%, 0,1 11%, -1,6 11%, 3,6 10%; resampled 31.08 -> 64 px/in"
+  },
+  {
+   "index": 20,
+   "row": 2,
+   "col": 3,
+   "type": "raw",
+   "centre_px": [
+    1963.94,
+    1296.0
+   ],
+   "tone_offset_rgb": [
+    -0.02,
+    0.31,
+    0.73
+   ],
+   "tone_offset_from_render_face": "4,1",
+   "rotation_deg": 0,
+   "mirrored": false,
+   "source": "image-quilted from render Raw faces (render cell j,k: share of blocks) 1,8 29%, 5,8 20%, -1,0 12%, 2,5 12%, 1,2 8%, 4,3 8%, 0,5 5%, 4,11 3%, 4,1 3%; translation only, no rotation or mirror; resampled 31.08 -> 64 px/in; 67 % of its pixels share a source pixel with another output location"
+  },
+  {
+   "index": 21,
+   "row": 2,
+   "col": 4,
+   "type": "chiseled",
+   "centre_px": [
+    2525.06,
+    1620.0
+   ],
+   "tone_offset_rgb": [
+    0.05,
+    -0.19,
+    -0.36
+   ],
+   "tone_offset_from_render_face": "5,4",
+   "rotation_deg": 60,
+   "mirrored": false,
+   "groove_angle_image_deg": 30,
+   "groove_phase": 0.0854,
+   "groove_pitch_mm": 5.0519,
+   "source": "grooves rebuilt from measured render geometry (straight, pitch 5.052 mm, angle 30 deg image coords, channel ((1+cos)/2)^1.65, depth 0.70 mm); surface roughness, mottled colour and along-ridge depth modulation image-quilted from the render's Chiseled faces with their grooves notched out, each source face rotated by a multiple of 60 deg to this groove direction (render cell j,k: share of blocks) 5,4 22%, 2,7 20%, 4,9 13%, 0,1 12%, -1,6 10%, 1,4 9%, 2,1 7%, 0,9 3%, 3,6 3%; resampled 31.08 -> 64 px/in"
+  },
+  {
+   "index": 22,
+   "row": 2,
+   "col": 5,
+   "type": "matte",
+   "centre_px": [
+    3086.19,
+    1296.0
+   ],
+   "tone_offset_rgb": [
+    -0.47,
+    -1.6,
+    -2.94
+   ],
+   "tone_offset_from_render_face": "1,6",
+   "rotation_deg": 0,
+   "mirrored": false,
+   "source": "image-quilted from render Matte faces (render cell j,k: share of blocks) -1,10 8%, 1,10 7%, 5,0 6%, 4,7 6%, 3,2 6%, 3,0 6%, -1,2 6%, 0,3 6%, 5,6 5%, 1,0 5%, 3,10 5%, 2,9 4%, 5,2 4%, -1,8 4%, 5,10 4%, -1,4 3%, 4,5 3%, 3,8 3%, 2,3 2%, 1,6 2%, 0,-1 1%, 0,11 1%, 3,4 1%, 0,7 1%; translation only, no rotation or mirror; resampled 31.08 -> 64 px/in; 84 % of its pixels share a source pixel with another output location"
+  },
+  {
+   "index": 23,
+   "row": 2,
+   "col": 6,
+   "type": "raw",
+   "centre_px": [
+    3647.31,
+    1620.0
+   ],
+   "tone_offset_rgb": [
+    0.69,
+    0.39,
+    0.41
+   ],
+   "tone_offset_from_render_face": "1,8",
+   "rotation_deg": 0,
+   "mirrored": false,
+   "source": "image-quilted from render Raw faces (render cell j,k: share of blocks) -1,0 23%, 4,1 22%, 2,5 17%, 0,5 11%, 4,11 7%, 1,2 7%, 1,8 6%, 4,3 6%, 5,8 3%; translation only, no rotation or mirror; resampled 31.08 -> 64 px/in; 68 % of its pixels share a source pixel with another output location"
+  },
+  {
+   "index": 24,
+   "row": 2,
+   "col": 7,
+   "type": "matte",
+   "centre_px": [
+    4208.44,
+    1296.0
+   ],
+   "tone_offset_rgb": [
+    0.45,
+    0.18,
+    -0.25
+   ],
+   "tone_offset_from_render_face": "-1,10",
+   "rotation_deg": 0,
+   "mirrored": false,
+   "source": "image-quilted from render Matte faces (render cell j,k: share of blocks) -1,8 17%, 4,5 12%, 1,6 8%, 3,10 7%, 5,6 6%, 2,3 6%, 0,7 5%, 4,7 3%, -1,10 3%, 3,4 3%, -1,2 3%, 2,9 3%, 3,8 3%, 1,0 2%, 5,2 2%, 0,3 2%, 5,10 2%, 2,-1 2%, -1,4 2%, 1,10 2%, 3,0 2%, 0,-1 1%, 3,2 1%, 5,0 1%; translation only, no rotation or mirror; resampled 31.08 -> 64 px/in; 74 % of its pixels share a source pixel with another output location"
+  },
+  {
+   "index": 25,
+   "row": 3,
+   "col": 0,
+   "type": "matte",
+   "centre_px": [
+    280.56,
+    2268.0
+   ],
+   "tone_offset_rgb": [
+    1.55,
+    1.69,
+    1.01
+   ],
+   "tone_offset_from_render_face": "0,-1",
+   "rotation_deg": 0,
+   "mirrored": false,
+   "source": "image-quilted from render Matte faces (render cell j,k: share of blocks) 0,7 7%, 5,2 6%, 5,10 6%, 3,4 6%, -1,10 6%, 3,2 6%, 3,8 5%, 2,9 5%, -1,2 5%, 5,0 5%, 3,0 4%, -1,4 4%, 0,3 4%, 2,3 4%, 4,-1 3%, 1,10 3%, 1,6 3%, 5,6 3%, 4,5 3%, 4,7 3%, 1,0 2%, 2,-1 2%, 0,11 2%, 3,10 2%, -1,8 2%; translation only, no rotation or mirror; resampled 31.08 -> 64 px/in; 76 % of its pixels share a source pixel with another output location"
+  },
+  {
+   "index": 26,
+   "row": 3,
+   "col": 1,
+   "type": "raw",
+   "centre_px": [
+    841.69,
+    1944.0
+   ],
+   "tone_offset_rgb": [
+    2.06,
+    1.72,
+    1.69
+   ],
+   "tone_offset_from_render_face": "1,2",
+   "rotation_deg": 0,
+   "mirrored": false,
+   "source": "image-quilted from render Raw faces (render cell j,k: share of blocks) 1,8 14%, 4,3 14%, 0,5 12%, 5,8 11%, 4,1 11%, -1,0 11%, 1,2 10%, 2,5 10%, 4,11 6%; translation only, no rotation or mirror; resampled 31.08 -> 64 px/in; 82 % of its pixels share a source pixel with another output location"
+  },
+  {
+   "index": 27,
+   "row": 3,
+   "col": 2,
+   "type": "matte",
+   "centre_px": [
+    1402.81,
+    2268.0
+   ],
+   "tone_offset_rgb": [
+    0.65,
+    0.03,
+    -1.22
+   ],
+   "tone_offset_from_render_face": "-1,8",
+   "rotation_deg": 0,
+   "mirrored": false,
+   "source": "image-quilted from render Matte faces (render cell j,k: share of blocks) 0,3 7%, 3,4 7%, 3,0 6%, 2,9 6%, 5,2 6%, 5,0 6%, 3,8 6%, 3,10 6%, 4,5 4%, -1,4 4%, 4,7 4%, -1,8 4%, 0,11 4%, 1,10 3%, 5,6 3%, 0,7 3%, 2,3 3%, 5,10 3%, -1,10 3%, 1,0 2%, 4,-1 2%, -1,2 2%, 0,-1 2%, 1,6 1%, 3,2 1%, 2,-1 1%; translation only, no rotation or mirror; resampled 31.08 -> 64 px/in; 72 % of its pixels share a source pixel with another output location"
+  },
+  {
+   "index": 28,
+   "row": 3,
+   "col": 3,
+   "type": "matte",
+   "centre_px": [
+    1963.94,
+    1944.0
+   ],
+   "tone_offset_rgb": [
+    -1.57,
+    -1.51,
+    -1.33
+   ],
+   "tone_offset_from_render_face": "4,-1",
+   "rotation_deg": 0,
+   "mirrored": false,
+   "source": "image-quilted from render Matte faces (render cell j,k: share of blocks) 5,10 13%, 5,2 13%, 3,2 10%, 2,9 9%, 3,10 8%, 1,6 8%, -1,8 6%, 4,7 6%, -1,4 6%, 0,-1 6%, 3,0 3%, -1,2 3%, 5,6 3%, 1,0 1%, 5,0 1%, 0,7 1%, 2,-1 1%, -1,10 1%; translation only, no rotation or mirror; resampled 31.08 -> 64 px/in; 78 % of its pixels share a source pixel with another output location"
+  },
+  {
+   "index": 29,
+   "row": 3,
+   "col": 4,
+   "type": "matte",
+   "centre_px": [
+    2525.06,
+    2268.0
+   ],
+   "tone_offset_rgb": [
+    -1.42,
+    -1.35,
+    -1.57
+   ],
+   "tone_offset_from_render_face": "4,5",
+   "rotation_deg": 0,
+   "mirrored": false,
+   "source": "image-quilted from render Matte faces (render cell j,k: share of blocks) 5,0 17%, 5,6 14%, 3,4 14%, 2,3 6%, 0,11 6%, 3,8 6%, 4,-1 5%, -1,4 4%, 1,10 4%, 3,2 4%, 1,6 3%, 5,2 3%, 5,10 3%, 0,3 2%, 1,0 2%, -1,2 1%, 2,-1 1%, 3,10 1%, -1,10 1%, 4,7 1%; translation only, no rotation or mirror; resampled 31.08 -> 64 px/in; 73 % of its pixels share a source pixel with another output location"
+  },
+  {
+   "index": 30,
+   "row": 3,
+   "col": 5,
+   "type": "matte",
+   "centre_px": [
+    3086.19,
+    1944.0
+   ],
+   "tone_offset_rgb": [
+    -1.11,
+    -0.78,
+    0.68
+   ],
+   "tone_offset_from_render_face": "3,10",
+   "rotation_deg": 0,
+   "mirrored": false,
+   "source": "image-quilted from render Matte faces (render cell j,k: share of blocks) 3,8 8%, 4,5 8%, -1,10 6%, 1,10 6%, 5,6 6%, -1,4 6%, 3,2 6%, -1,2 6%, 4,7 5%, 1,6 5%, -1,8 4%, 0,7 4%, 2,3 4%, 3,4 3%, 2,9 3%, 0,3 3%, 5,10 3%, 5,2 3%, 3,10 2%, 3,0 2%, 5,0 2%, 0,-1 2%, 2,-1 1%, 0,11 1%, 1,0 1%, 4,-1 1%; translation only, no rotation or mirror; resampled 31.08 -> 64 px/in; 78 % of its pixels share a source pixel with another output location"
+  },
+  {
+   "index": 31,
+   "row": 3,
+   "col": 6,
+   "type": "matte",
+   "centre_px": [
+    3647.31,
+    2268.0
+   ],
+   "tone_offset_rgb": [
+    -0.11,
+    0.28,
+    0.42
+   ],
+   "tone_offset_from_render_face": "3,0",
+   "rotation_deg": 0,
+   "mirrored": false,
+   "source": "image-quilted from render Matte faces (render cell j,k: share of blocks) 4,5 8%, 1,6 7%, 1,10 7%, 4,7 6%, 3,4 5%, 0,7 5%, -1,2 5%, 1,0 5%, 3,8 5%, 2,3 5%, 5,10 4%, 3,2 4%, 3,0 4%, -1,8 4%, 2,9 4%, 5,0 3%, 3,10 2%, 0,3 2%, 5,2 2%, -1,10 2%, 4,-1 2%, 2,-1 2%, 0,11 2%, -1,4 1%, 5,6 1%, 0,-1 1%; translation only, no rotation or mirror; resampled 31.08 -> 64 px/in; 71 % of its pixels share a source pixel with another output location"
+  },
+  {
+   "index": 32,
+   "row": 3,
+   "col": 7,
+   "type": "chiseled",
+   "centre_px": [
+    4208.44,
+    1944.0
+   ],
+   "tone_offset_rgb": [
+    0.13,
+    -0.06,
+    -0.25
+   ],
+   "tone_offset_from_render_face": "2,7",
+   "rotation_deg": 60,
+   "mirrored": false,
+   "groove_angle_image_deg": 30,
+   "groove_phase": 0.7342,
+   "groove_pitch_mm": 5.0519,
+   "source": "grooves rebuilt from measured render geometry (straight, pitch 5.052 mm, angle 30 deg image coords, channel ((1+cos)/2)^1.65, depth 0.70 mm); surface roughness, mottled colour and along-ridge depth modulation image-quilted from the render's Chiseled faces with their grooves notched out, each source face rotated by a multiple of 60 deg to this groove direction (render cell j,k: share of blocks) 0,9 18%, -1,6 14%, 2,1 12%, 4,9 11%, 2,7 11%, 3,6 10%, 1,4 9%, 5,4 8%, 0,1 7%; resampled 31.08 -> 64 px/in"
+  },
+  {
+   "index": 33,
+   "row": 4,
+   "col": 0,
+   "type": "matte",
+   "centre_px": [
+    280.56,
+    2916.0
+   ],
+   "tone_offset_rgb": [
+    1.29,
+    1.85,
+    1.15
+   ],
+   "tone_offset_from_render_face": "2,3",
+   "rotation_deg": 0,
+   "mirrored": false,
+   "source": "image-quilted from render Matte faces (render cell j,k: share of blocks) 3,0 7%, 1,6 6%, 4,5 6%, 4,7 6%, 5,6 6%, 1,0 4%, -1,2 4%, 0,11 4%, 0,7 4%, -1,10 4%, 3,8 4%, 3,10 4%, 2,9 4%, -1,8 4%, 1,10 3%, 3,4 3%, 3,2 3%, 5,0 3%, 2,-1 3%, 0,3 3%, 5,10 3%, 0,-1 2%, 2,3 2%, -1,4 2%, 5,2 2%, 4,-1 2%; translation only, no rotation or mirror; resampled 31.08 -> 64 px/in; 84 % of its pixels share a source pixel with another output location"
+  },
+  {
+   "index": 34,
+   "row": 4,
+   "col": 1,
+   "type": "matte",
+   "centre_px": [
+    841.69,
+    2592.0
+   ],
+   "tone_offset_rgb": [
+    1.65,
+    1.53,
+    0.39
+   ],
+   "tone_offset_from_render_face": "5,2",
+   "rotation_deg": 0,
+   "mirrored": false,
+   "source": "image-quilted from render Matte faces (render cell j,k: share of blocks) 3,10 7%, 2,3 6%, -1,4 6%, 3,2 6%, 4,7 6%, 1,6 6%, 3,4 6%, 5,10 5%, 1,0 5%, -1,2 5%, 2,-1 4%, 0,3 4%, 0,7 3%, 3,0 3%, 2,9 3%, 5,0 3%, 1,10 3%, 4,5 3%, 5,2 3%, 4,-1 2%, -1,8 2%, -1,10 2%, 0,-1 2%, 3,8 1%, 5,6 1%, 0,11 1%; translation only, no rotation or mirror; resampled 31.08 -> 64 px/in; 74 % of its pixels share a source pixel with another output location"
+  },
+  {
+   "index": 35,
+   "row": 4,
+   "col": 2,
+   "type": "matte",
+   "centre_px": [
+    1402.81,
+    2916.0
+   ],
+   "tone_offset_rgb": [
+    0.25,
+    0.31,
+    0.21
+   ],
+   "tone_offset_from_render_face": "2,9",
+   "rotation_deg": 0,
+   "mirrored": false,
+   "source": "image-quilted from render Matte faces (render cell j,k: share of blocks) 0,7 8%, 0,3 7%, 4,7 7%, 1,10 6%, 4,5 6%, -1,8 6%, 1,0 5%, 3,10 5%, 2,3 5%, 5,2 5%, 5,10 5%, 3,8 4%, -1,10 3%, 3,0 3%, 3,2 3%, 2,9 3%, -1,2 3%, 5,0 3%, 1,6 3%, 0,-1 2%, 5,6 2%, 0,11 2%, -1,4 1%, 3,4 1%, 4,-1 1%; translation only, no rotation or mirror; resampled 31.08 -> 64 px/in; 85 % of its pixels share a source pixel with another output location"
+  },
+  {
+   "index": 36,
+   "row": 4,
+   "col": 3,
+   "type": "chiseled",
+   "centre_px": [
+    1963.94,
+    2592.0
+   ],
+   "tone_offset_rgb": [
+    0.17,
+    1.25,
+    0.49
+   ],
+   "tone_offset_from_render_face": "0,1",
+   "rotation_deg": 300,
+   "mirrored": false,
+   "groove_angle_image_deg": 150,
+   "groove_phase": 0.1004,
+   "groove_pitch_mm": 5.0519,
+   "source": "grooves rebuilt from measured render geometry (straight, pitch 5.052 mm, angle 150 deg image coords, channel ((1+cos)/2)^1.65, depth 0.70 mm); surface roughness, mottled colour and along-ridge depth modulation image-quilted from the render's Chiseled faces with their grooves notched out, each source face rotated by a multiple of 60 deg to this groove direction (render cell j,k: share of blocks) 2,7 22%, 5,4 17%, 3,6 13%, 4,9 11%, 0,1 10%, -1,6 9%, 2,1 8%, 1,4 6%, 0,9 4%; resampled 31.08 -> 64 px/in"
+  },
+  {
+   "index": 37,
+   "row": 4,
+   "col": 4,
+   "type": "raw",
+   "centre_px": [
+    2525.06,
+    2916.0
+   ],
+   "tone_offset_rgb": [
+    -2.24,
+    -1.87,
+    -0.73
+   ],
+   "tone_offset_from_render_face": "0,5",
+   "rotation_deg": 0,
+   "mirrored": false,
+   "source": "image-quilted from render Raw faces (render cell j,k: share of blocks) 5,8 14%, 2,5 14%, 1,2 13%, 1,8 13%, -1,0 12%, 4,1 11%, 4,3 10%, 0,5 9%, 4,11 5%; translation only, no rotation or mirror; resampled 31.08 -> 64 px/in; 69 % of its pixels share a source pixel with another output location"
+  },
+  {
+   "index": 38,
+   "row": 4,
+   "col": 5,
+   "type": "chiseled",
+   "centre_px": [
+    3086.19,
+    2592.0
+   ],
+   "tone_offset_rgb": [
+    0.1,
+    -0.11,
+    0.16
+   ],
+   "tone_offset_from_render_face": "4,9",
+   "rotation_deg": 0,
+   "mirrored": false,
+   "groove_angle_image_deg": 90,
+   "groove_phase": 0.3323,
+   "groove_pitch_mm": 5.0519,
+   "source": "grooves rebuilt from measured render geometry (straight, pitch 5.052 mm, angle 90 deg image coords, channel ((1+cos)/2)^1.65, depth 0.70 mm); surface roughness, mottled colour and along-ridge depth modulation image-quilted from the render's Chiseled faces with their grooves notched out, each source face rotated by a multiple of 60 deg to this groove direction (render cell j,k: share of blocks) 0,9 22%, 2,7 17%, -1,6 12%, 2,1 9%, 0,1 9%, 3,6 9%, 4,9 8%, 1,4 8%, 5,4 6%; resampled 31.08 -> 64 px/in"
+  },
+  {
+   "index": 39,
+   "row": 4,
+   "col": 6,
+   "type": "matte",
+   "centre_px": [
+    3647.31,
+    2916.0
+   ],
+   "tone_offset_rgb": [
+    0.21,
+    -0.3,
+    -2.13
+   ],
+   "tone_offset_from_render_face": "1,0",
+   "rotation_deg": 0,
+   "mirrored": false,
+   "source": "image-quilted from render Matte faces (render cell j,k: share of blocks) 3,4 12%, -1,10 6%, 0,7 6%, 5,6 6%, 5,10 5%, 2,3 5%, 1,6 5%, 0,3 5%, 4,7 5%, 5,0 4%, 3,10 4%, 0,-1 4%, 3,0 3%, -1,8 3%, 3,8 3%, 1,10 3%, 2,9 3%, 3,2 3%, 0,11 2%, -1,2 2%, 5,2 2%, 4,5 2%, 4,-1 2%, 2,-1 1%, 1,0 1%, -1,4 1%; translation only, no rotation or mirror; resampled 31.08 -> 64 px/in; 73 % of its pixels share a source pixel with another output location"
+  },
+  {
+   "index": 40,
+   "row": 4,
+   "col": 7,
+   "type": "raw",
+   "centre_px": [
+    4208.44,
+    2592.0
+   ],
+   "tone_offset_rgb": [
+    -1.41,
+    -1.26,
+    -0.67
+   ],
+   "tone_offset_from_render_face": "-1,0",
+   "rotation_deg": 0,
+   "mirrored": false,
+   "source": "image-quilted from render Raw faces (render cell j,k: share of blocks) -1,0 15%, 1,2 13%, 1,8 12%, 5,8 12%, 4,1 11%, 0,5 11%, 4,11 9%, 2,5 9%, 4,3 8%; translation only, no rotation or mirror; resampled 31.08 -> 64 px/in; 85 % of its pixels share a source pixel with another output location"
+  },
+  {
+   "index": 41,
+   "row": 5,
+   "col": 0,
+   "type": "raw",
+   "centre_px": [
+    280.56,
+    3564.0
+   ],
+   "tone_offset_rgb": [
+    0.42,
+    0.88,
+    0.44
+   ],
+   "tone_offset_from_render_face": "2,5",
+   "rotation_deg": 0,
+   "mirrored": false,
+   "source": "image-quilted from render Raw faces (render cell j,k: share of blocks) 4,1 14%, 4,3 14%, -1,0 14%, 0,5 13%, 2,5 11%, 1,8 11%, 5,8 10%, 1,2 8%, 4,11 4%; translation only, no rotation or mirror; resampled 31.08 -> 64 px/in; 78 % of its pixels share a source pixel with another output location"
+  },
+  {
+   "index": 42,
+   "row": 5,
+   "col": 1,
+   "type": "chiseled",
+   "centre_px": [
+    841.69,
+    3240.0
+   ],
+   "tone_offset_rgb": [
+    -0.4,
+    -0.47,
+    -0.36
+   ],
+   "tone_offset_from_render_face": "3,6",
+   "rotation_deg": 60,
+   "mirrored": false,
+   "groove_angle_image_deg": 30,
+   "groove_phase": 0.8569,
+   "groove_pitch_mm": 5.0519,
+   "source": "grooves rebuilt from measured render geometry (straight, pitch 5.052 mm, angle 30 deg image coords, channel ((1+cos)/2)^1.65, depth 0.70 mm); surface roughness, mottled colour and along-ridge depth modulation image-quilted from the render's Chiseled faces with their grooves notched out, each source face rotated by a multiple of 60 deg to this groove direction (render cell j,k: share of blocks) 4,9 19%, -1,6 16%, 3,6 16%, 5,4 11%, 2,1 10%, 0,1 10%, 2,7 9%, 1,4 6%, 0,9 4%; resampled 31.08 -> 64 px/in"
+  },
+  {
+   "index": 43,
+   "row": 5,
+   "col": 2,
+   "type": "raw",
+   "centre_px": [
+    1402.81,
+    3564.0
+   ],
+   "tone_offset_rgb": [
+    -1.94,
+    -1.4,
+    -0.88
+   ],
+   "tone_offset_from_render_face": "-1,0",
+   "rotation_deg": 0,
+   "mirrored": false,
+   "source": "image-quilted from render Raw faces (render cell j,k: share of blocks) 4,3 39%, 1,2 27%, 0,5 14%, 4,1 11%, -1,0 4%, 2,5 4%, 1,8 1%; translation only, no rotation or mirror; resampled 31.08 -> 64 px/in; 70 % of its pixels share a source pixel with another output location"
+  },
+  {
+   "index": 44,
+   "row": 5,
+   "col": 3,
+   "type": "matte",
+   "centre_px": [
+    1963.94,
+    3240.0
+   ],
+   "tone_offset_rgb": [
+    -0.44,
+    -1.46,
+    -0.68
+   ],
+   "tone_offset_from_render_face": "2,-1",
+   "rotation_deg": 0,
+   "mirrored": false,
+   "source": "image-quilted from render Matte faces (render cell j,k: share of blocks) 3,10 9%, 4,5 8%, -1,2 7%, 5,0 6%, 5,10 6%, 3,0 6%, -1,8 6%, 3,4 5%, 5,2 5%, 0,7 4%, 1,6 4%, 2,3 4%, -1,4 3%, 5,6 3%, -1,10 3%, 0,3 3%, 2,-1 3%, 4,7 3%, 0,-1 3%, 1,0 3%, 3,2 2%, 1,10 2%, 2,9 1%, 4,-1 1%; translation only, no rotation or mirror; resampled 31.08 -> 64 px/in; 72 % of its pixels share a source pixel with another output location"
+  },
+  {
+   "index": 45,
+   "row": 5,
+   "col": 4,
+   "type": "matte",
+   "centre_px": [
+    2525.06,
+    3564.0
+   ],
+   "tone_offset_rgb": [
+    -0.95,
+    -1.33,
+    -0.49
+   ],
+   "tone_offset_from_render_face": "4,7",
+   "rotation_deg": 0,
+   "mirrored": false,
+   "source": "image-quilted from render Matte faces (render cell j,k: share of blocks) 3,4 8%, 4,5 7%, -1,8 7%, 1,10 7%, 3,2 6%, 4,7 5%, 1,6 5%, 0,3 5%, 2,3 5%, 3,0 5%, 5,10 3%, -1,2 3%, 0,7 3%, 3,8 3%, -1,4 3%, 3,10 3%, 2,-1 3%, 2,9 3%, 5,2 3%, 4,-1 2%, 0,-1 2%, -1,10 2%, 0,11 1%, 5,0 1%, 1,0 1%, 5,6 1%; translation only, no rotation or mirror; resampled 31.08 -> 64 px/in; 87 % of its pixels share a source pixel with another output location"
+  },
+  {
+   "index": 46,
+   "row": 5,
+   "col": 5,
+   "type": "matte",
+   "centre_px": [
+    3086.19,
+    3240.0
+   ],
+   "tone_offset_rgb": [
+    0.68,
+    1.55,
+    1.06
+   ],
+   "tone_offset_from_render_face": "0,11",
+   "rotation_deg": 0,
+   "mirrored": false,
+   "source": "image-quilted from render Matte faces (render cell j,k: share of blocks) 2,9 14%, 5,6 10%, 4,5 8%, -1,8 7%, 3,10 6%, 0,7 6%, 2,-1 5%, 3,0 4%, 2,3 4%, 3,4 3%, 1,10 3%, 3,8 3%, -1,2 3%, 1,0 3%, -1,10 3%, 5,10 3%, 5,2 3%, 3,2 3%, 4,-1 2%, -1,4 2%, 0,-1 1%, 4,7 1%, 0,11 1%, 1,6 1%; translation only, no rotation or mirror; resampled 31.08 -> 64 px/in; 72 % of its pixels share a source pixel with another output location"
+  },
+  {
+   "index": 47,
+   "row": 5,
+   "col": 6,
+   "type": "matte",
+   "centre_px": [
+    3647.31,
+    3564.0
+   ],
+   "tone_offset_rgb": [
+    -0.08,
+    -0.43,
+    -2.35
+   ],
+   "tone_offset_from_render_face": "1,0",
+   "rotation_deg": 0,
+   "mirrored": false,
+   "source": "image-quilted from render Matte faces (render cell j,k: share of blocks) 2,9 9%, 1,6 7%, 3,2 6%, -1,4 6%, 1,0 6%, 3,8 5%, 5,2 5%, -1,10 5%, -1,8 5%, 4,7 5%, 2,3 4%, 5,6 4%, 3,10 4%, -1,2 4%, 0,3 4%, 5,10 3%, 4,5 3%, 1,10 3%, 5,0 3%, 0,11 3%, 3,4 2%, 0,7 2%, 2,-1 2%, 0,-1 1%, 4,-1 1%; translation only, no rotation or mirror; resampled 31.08 -> 64 px/in; 86 % of its pixels share a source pixel with another output location"
+  },
+  {
+   "index": 48,
+   "row": 5,
+   "col": 7,
+   "type": "chiseled",
+   "centre_px": [
+    4208.44,
+    3240.0
+   ],
+   "tone_offset_rgb": [
+    0.38,
+    0.11,
+    -0.28
+   ],
+   "tone_offset_from_render_face": "1,4",
+   "rotation_deg": 300,
+   "mirrored": false,
+   "groove_angle_image_deg": 150,
+   "groove_phase": 0.8006,
+   "groove_pitch_mm": 5.0519,
+   "source": "grooves rebuilt from measured render geometry (straight, pitch 5.052 mm, angle 150 deg image coords, channel ((1+cos)/2)^1.65, depth 0.70 mm); surface roughness, mottled colour and along-ridge depth modulation image-quilted from the render's Chiseled faces with their grooves notched out, each source face rotated by a multiple of 60 deg to this groove direction (render cell j,k: share of blocks) -1,6 23%, 0,1 20%, 2,1 17%, 4,9 15%, 3,6 15%, 1,4 7%, 2,7 1%, 5,4 1%, 0,9 1%; resampled 31.08 -> 64 px/in"
+  },
+  {
+   "index": 49,
+   "row": 6,
+   "col": 0,
+   "type": "matte",
+   "centre_px": [
+    280.56,
+    4212.0
+   ],
+   "tone_offset_rgb": [
+    1.05,
+    1.75,
+    2.02
+   ],
+   "tone_offset_from_render_face": "3,8",
+   "rotation_deg": 0,
+   "mirrored": false,
+   "source": "image-quilted from render Matte faces (render cell j,k: share of blocks) -1,4 9%, 0,3 6%, 3,8 6%, -1,2 6%, 2,-1 5%, 2,3 5%, 1,6 5%, 4,5 4%, 1,0 4%, 3,2 4%, -1,8 4%, 3,10 4%, 3,4 3%, 2,9 3%, 3,0 3%, -1,10 3%, 5,2 3%, 5,10 3%, 0,7 3%, 5,0 3%, 0,-1 3%, 1,10 2%, 5,6 2%, 4,7 2%, 4,-1 2%, 0,11 1%; translation only, no rotation or mirror; resampled 31.08 -> 64 px/in; 78 % of its pixels share a source pixel with another output location"
+  },
+  {
+   "index": 50,
+   "row": 6,
+   "col": 1,
+   "type": "matte",
+   "centre_px": [
+    841.69,
+    3888.0
+   ],
+   "tone_offset_rgb": [
+    1.17,
+    1.41,
+    1.51
+   ],
+   "tone_offset_from_render_face": "3,2",
+   "rotation_deg": 0,
+   "mirrored": false,
+   "source": "image-quilted from render Matte faces (render cell j,k: share of blocks) 1,0 6%, 5,0 6%, 4,7 6%, 1,10 5%, 5,6 5%, 3,4 4%, -1,8 4%, 0,-1 4%, -1,4 4%, 2,3 4%, 0,3 4%, 4,-1 4%, -1,2 4%, 1,6 3%, 5,2 3%, 4,5 3%, 5,10 3%, 2,9 3%, 3,0 3%, 2,-1 3%, -1,10 3%, 3,8 3%, 3,10 3%, 0,11 3%, 0,7 2%, 3,2 1%; translation only, no rotation or mirror; resampled 31.08 -> 64 px/in; 79 % of its pixels share a source pixel with another output location"
+  },
+  {
+   "index": 51,
+   "row": 6,
+   "col": 2,
+   "type": "matte",
+   "centre_px": [
+    1402.81,
+    4212.0
+   ],
+   "tone_offset_rgb": [
+    -0.25,
+    -0.14,
+    0.66
+   ],
+   "tone_offset_from_render_face": "3,0",
+   "rotation_deg": 0,
+   "mirrored": false,
+   "source": "image-quilted from render Matte faces (render cell j,k: share of blocks) -1,8 8%, 1,10 7%, 5,10 6%, 3,4 6%, 2,3 5%, 5,0 5%, 5,2 5%, 2,9 5%, -1,2 5%, -1,10 5%, 4,5 4%, 4,7 4%, -1,4 4%, 3,10 4%, 3,8 3%, 3,2 3%, 1,0 3%, 0,-1 3%, 1,6 3%, 4,-1 3%, 3,0 3%, 2,-1 2%, 0,3 1%, 0,7 1%, 5,6 1%, 0,11 1%; translation only, no rotation or mirror; resampled 31.08 -> 64 px/in; 74 % of its pixels share a source pixel with another output location"
+  },
+  {
+   "index": 52,
+   "row": 6,
+   "col": 3,
+   "type": "chiseled",
+   "centre_px": [
+    1963.94,
+    3888.0
+   ],
+   "tone_offset_rgb": [
+    0.12,
+    -0.1,
+    -0.52
+   ],
+   "tone_offset_from_render_face": "2,7",
+   "rotation_deg": 0,
+   "mirrored": false,
+   "groove_angle_image_deg": 90,
+   "groove_phase": 0.6913,
+   "groove_pitch_mm": 5.0519,
+   "source": "grooves rebuilt from measured render geometry (straight, pitch 5.052 mm, angle 90 deg image coords, channel ((1+cos)/2)^1.65, depth 0.70 mm); surface roughness, mottled colour and along-ridge depth modulation image-quilted from the render's Chiseled faces with their grooves notched out, each source face rotated by a multiple of 60 deg to this groove direction (render cell j,k: share of blocks) 4,9 22%, 3,6 21%, 5,4 12%, 2,1 11%, 2,7 11%, 0,1 11%, 1,4 8%, -1,6 4%, 0,9 0%; resampled 31.08 -> 64 px/in"
+  },
+  {
+   "index": 53,
+   "row": 6,
+   "col": 4,
+   "type": "matte",
+   "centre_px": [
+    2525.06,
+    4212.0
+   ],
+   "tone_offset_rgb": [
+    -0.94,
+    -0.19,
+    0.48
+   ],
+   "tone_offset_from_render_face": "3,10",
+   "rotation_deg": 0,
+   "mirrored": false,
+   "source": "image-quilted from render Matte faces (render cell j,k: share of blocks) 1,0 10%, 0,7 10%, 3,4 9%, 5,10 9%, 4,7 8%, 3,2 6%, 5,0 6%, 0,11 6%, 2,3 5%, 3,10 4%, 4,5 3%, 0,3 3%, 3,8 3%, -1,8 3%, 1,6 3%, 2,-1 3%, 1,10 2%, 5,6 1%, 5,2 1%, -1,10 1%, -1,4 1%, -1,2 1%, 2,9 1%; translation only, no rotation or mirror; resampled 31.08 -> 64 px/in; 70 % of its pixels share a source pixel with another output location"
+  },
+  {
+   "index": 54,
+   "row": 6,
+   "col": 5,
+   "type": "raw",
+   "centre_px": [
+    3086.19,
+    3888.0
+   ],
+   "tone_offset_rgb": [
+    -2.2,
+    -2.31,
+    -0.79
+   ],
+   "tone_offset_from_render_face": "0,5",
+   "rotation_deg": 0,
+   "mirrored": false,
+   "source": "image-quilted from render Raw faces (render cell j,k: share of blocks) 5,8 14%, 2,5 14%, 4,3 13%, 4,1 13%, 1,2 12%, 0,5 11%, 1,8 9%, -1,0 8%, 4,11 6%; translation only, no rotation or mirror; resampled 31.08 -> 64 px/in; 84 % of its pixels share a source pixel with another output location"
+  },
+  {
+   "index": 55,
+   "row": 6,
+   "col": 6,
+   "type": "chiseled",
+   "centre_px": [
+    3647.31,
+    4212.0
+   ],
+   "tone_offset_rgb": [
+    -0.51,
+    0.08,
+    -0.6
+   ],
+   "tone_offset_from_render_face": "1,4",
+   "rotation_deg": 60,
+   "mirrored": false,
+   "groove_angle_image_deg": 30,
+   "groove_phase": 0.9073,
+   "groove_pitch_mm": 5.0519,
+   "source": "grooves rebuilt from measured render geometry (straight, pitch 5.052 mm, angle 30 deg image coords, channel ((1+cos)/2)^1.65, depth 0.70 mm); surface roughness, mottled colour and along-ridge depth modulation image-quilted from the render's Chiseled faces with their grooves notched out, each source face rotated by a multiple of 60 deg to this groove direction (render cell j,k: share of blocks) 0,9 28%, 3,6 16%, 0,1 15%, 2,1 13%, 1,4 11%, 2,7 7%, 5,4 6%, -1,6 5%; resampled 31.08 -> 64 px/in"
+  },
+  {
+   "index": 56,
+   "row": 6,
+   "col": 7,
+   "type": "matte",
+   "centre_px": [
+    4208.44,
+    3888.0
+   ],
+   "tone_offset_rgb": [
+    0.75,
+    1.06,
+    1.13
+   ],
+   "tone_offset_from_render_face": "2,3",
+   "rotation_deg": 0,
+   "mirrored": false,
+   "source": "image-quilted from render Matte faces (render cell j,k: share of blocks) 5,6 6%, 0,7 6%, 4,5 6%, -1,10 5%, 5,0 5%, 2,3 5%, 1,6 5%, 3,0 4%, -1,2 4%, 1,0 4%, 3,10 4%, 5,10 4%, 3,4 4%, 3,8 4%, 0,-1 4%, 4,7 3%, 5,2 3%, 3,2 3%, 1,10 3%, 2,-1 3%, 2,9 3%, 0,11 3%, 4,-1 2%, -1,4 2%, -1,8 2%, 0,3 1%; translation only, no rotation or mirror; resampled 31.08 -> 64 px/in; 87 % of its pixels share a source pixel with another output location"
+  }
+ ],
+ "verification": {
+  "png_headers": {
+   "Color.png": {
+    "width": 4489,
+    "height": 4536,
+    "bit_depth": 8,
+    "colour_type": 2,
+    "ok": true
+   },
+   "Bump16.png": {
+    "width": 4489,
+    "height": 4536,
+    "bit_depth": 16,
+    "colour_type": 0,
+    "ok": true
+   },
+   "face_ids.png": {
+    "width": 4489,
+    "height": 4536,
+    "bit_depth": 16,
+    "colour_type": 0,
+    "ok": true
+   }
+  },
+  "decoded": {
+   "bump_mode": "I;16",
+   "bump_min": 0,
+   "bump_max": 65535,
+   "face_ids_unique": 57
+  },
+  "wrap": {
+   "colour_luma_levels": {
+    "left_right": {
+     "seam_mean_step": 1.3918,
+     "interior_mean_step": 1.1356,
+     "ratio": 1.2256,
+     "seam_p99_step": 18.7824,
+     "interior_p99_step": 6.8556
+    },
+    "top_bottom": {
+     "seam_mean_step": 0.446,
+     "interior_mean_step": 1.0889,
+     "ratio": 0.4096,
+     "seam_p99_step": 3.1409,
+     "interior_p99_step": 6.7152
+    }
+   },
+   "bump_16bit": {
+    "left_right": {
+     "seam_mean_step": 1670.1493,
+     "interior_mean_step": 1132.6312,
+     "ratio": 1.4746,
+     "seam_p99_step": 33321.6,
+     "interior_p99_step": 7623.0
+    },
+    "top_bottom": {
+     "seam_mean_step": 384.9864,
+     "interior_mean_step": 1056.1234,
+     "ratio": 0.3645,
+     "seam_p99_step": 5023.72,
+     "interior_p99_step": 7117.0
+    }
+   },
+   "bump_mm": {
+    "left_right": {
+     "seam_mean_step": 0.0668,
+     "interior_mean_step": 0.0453,
+     "ratio": 1.4746,
+     "seam_p99_step": 1.3322,
+     "interior_p99_step": 0.3048
+    },
+    "top_bottom": {
+     "seam_mean_step": 0.0154,
+     "interior_mean_step": 0.0422,
+     "ratio": 0.3645,
+     "seam_p99_step": 0.2008,
+     "interior_p99_step": 0.2845
+    }
+   }
+  },
+  "wrap_matched": {
+   "colour_luma_levels": {
+    "left_right": {
+     "seam_mean": 1.3918,
+     "matched_interior_mean": 1.2811,
+     "seam_p99": 18.7824,
+     "matched_interior_p99": 14.9137,
+     "within_face_seam_mean": 1.1571,
+     "within_face_interior_mean": 1.0688,
+     "within_face_ratio": 1.0826
+    },
+    "top_bottom": {
+     "seam_mean": 0.446,
+     "matched_interior_mean": 0.6292,
+     "seam_p99": 3.1409,
+     "matched_interior_p99": 5.0,
+     "within_face_seam_mean": 0.6778,
+     "within_face_interior_mean": 0.956,
+     "within_face_ratio": 0.709
+    }
+   },
+   "bump_mm": {
+    "left_right": {
+     "seam_mean": 0.0668,
+     "matched_interior_mean": 0.0562,
+     "seam_p99": 1.3322,
+     "matched_interior_p99": 0.8611,
+     "within_face_seam_mean": 0.047,
+     "within_face_interior_mean": 0.0398,
+     "within_face_ratio": 1.1809
+    },
+    "top_bottom": {
+     "seam_mean": 0.0154,
+     "matched_interior_mean": 0.0234,
+     "seam_p99": 0.2008,
+     "matched_interior_p99": 0.2204,
+     "within_face_seam_mean": 0.0234,
+     "within_face_interior_mean": 0.0356,
+     "within_face_ratio": 0.6571
+    }
+   }
+  },
+  "wrap_adjacent": {
+   "colour_luma_levels": {
+    "left_right": {
+     "seam_mean": 1.3918,
+     "adjacent_mean": 1.3456,
+     "ratio": 1.0343
+    },
+    "top_bottom": {
+     "seam_mean": 0.446,
+     "adjacent_mean": 0.5374,
+     "ratio": 0.83
+    }
+   },
+   "bump_mm": {
+    "left_right": {
+     "seam_mean": 0.0668,
+     "adjacent_mean": 0.0647,
+     "ratio": 1.0313
+    },
+    "top_bottom": {
+     "seam_mean": 0.0154,
+     "adjacent_mean": 0.0186,
+     "ratio": 0.8295
+    }
+   },
+   "bump_16bit": {
+    "left_right": {
+     "seam_mean": 1670.1493,
+     "adjacent_mean": 1619.4269,
+     "ratio": 1.0313
+    },
+    "top_bottom": {
+     "seam_mean": 384.9864,
+     "adjacent_mean": 464.1211,
+     "ratio": 0.8295
+    }
+   }
+  },
+  "joint": {
+   "vertical_run_px_mode": 8,
+   "vertical_run_px_hist": {
+    "8": 2961,
+    "10": 14,
+    "14": 14,
+    "16": 2842,
+    "18": 14,
+    "20": 7,
+    "22": 14,
+    "24": 14,
+    "26": 14,
+    "28": 7,
+    "30": 7,
+    "32": 7
+   },
+   "joint_area_fraction": 0.02454,
+   "theoretical_area_fraction_1_8in": 0.02454,
+   "implied_width_in": 0.125,
+   "implied_width_px": 8.0
+  },
+  "relief": {
+   "joint_floor_mm": -2.5,
+   "joint_core_max_mm": -2.5,
+   "joint_pixels_max_mm": -1.372,
+   "matte": {
+    "pattern_relief_mm_p0.1_p99.9": 0.1259,
+    "pattern_max_mm": 0.119,
+    "pattern_min_mm": -0.1882,
+    "pattern_std_mm": 0.0142,
+    "deepest_face_pixel_incl_edge_mm": -0.4593,
+    "clearance_pattern_to_joint_floor_mm": 2.3118,
+    "clearance_any_face_pixel_to_joint_floor_mm": 2.0407
+   },
+   "raw": {
+    "pattern_relief_mm_p0.1_p99.9": 1.6959,
+    "pattern_max_mm": 0.032,
+    "pattern_min_mm": -1.664,
+    "pattern_std_mm": 0.2643,
+    "deepest_face_pixel_incl_edge_mm": -2.014,
+    "clearance_pattern_to_joint_floor_mm": 0.836,
+    "clearance_any_face_pixel_to_joint_floor_mm": 0.486
+   },
+   "chiseled": {
+    "pattern_relief_mm_p0.1_p99.9": 1.3115,
+    "pattern_max_mm": 0.12,
+    "pattern_min_mm": -1.5821,
+    "pattern_std_mm": 0.2906,
+    "deepest_face_pixel_incl_edge_mm": -1.6864,
+    "clearance_pattern_to_joint_floor_mm": 0.9179,
+    "clearance_any_face_pixel_to_joint_floor_mm": 0.8136
+   },
+   "joint_depth_below_face_plane_mm": 2.5
+  },
+  "mix": {
+   "counts": {
+    "matte": 32,
+    "raw": 11,
+    "chiseled": 13
+   },
+   "fractions": {
+    "matte": 0.5714,
+    "raw": 0.1964,
+    "chiseled": 0.2321
+   },
+   "render_fractions_fully_visible": {
+    "matte": 0.5641,
+    "raw": 0.2051,
+    "chiseled": 0.2308
+   },
+   "chiseled_orientations": {
+    "90": 5,
+    "30": 5,
+    "150": 3
+   }
+  },
+  "raw_repetition": {
+   "whole_face_ncc_max_over_12_transforms": {
+    "max": 0.0301,
+    "pair": [
+     2,
+     26
+    ],
+    "median": 0.0174,
+    "pairs": 55
+   },
+   "window_0.5in": {
+    "window_in": 0.5,
+    "windows": 24,
+    "max_ncc": 0.9516,
+    "p95_ncc": 0.9252,
+    "median_ncc": 0.6813,
+    "windows_over_0.9": 3,
+    "windows_over_0.8": 4,
+    "worst": [
+     [
+      0.9516296296181187,
+      43,
+      [
+       0,
+       1724,
+       226,
+       41
+      ]
+     ],
+     [
+      0.9258652162223078,
+      54,
+      [
+       0,
+       2246,
+       513,
+       2
+      ]
+     ],
+     [
+      0.9217437906995294,
+      54,
+      [
+       0,
+       886,
+       1740,
+       23
+      ]
+     ]
+    ]
+   },
+   "window_1.0in": {
+    "window_in": 1.0,
+    "windows": 24,
+    "max_ncc": 0.5439,
+    "p95_ncc": 0.5065,
+    "median_ncc": 0.3796,
+    "windows_over_0.9": 0,
+    "windows_over_0.8": 0,
+    "worst": [
+     [
+      0.5438746849520586,
+      40,
+      [
+       0,
+       607,
+       998,
+       20
+      ]
+     ],
+     [
+      0.5217923110059491,
+      40,
+      [
+       0,
+       1715,
+       686,
+       43
+      ]
+     ],
+     [
+      0.42009973489704167,
+      54,
+      [
+       0,
+       692,
+       1720,
+       23
+      ]
+     ]
+    ]
+   },
+   "window_2.0in": {
+    "window_in": 2.0,
+    "windows": 24,
+    "max_ncc": 0.3026,
+    "p95_ncc": 0.251,
+    "median_ncc": 0.1939,
+    "windows_over_0.9": 0,
+    "windows_over_0.8": 0,
+    "worst": [
+     [
+      0.30258312607463694,
+      20,
+      [
+       0,
+       1161,
+       2042,
+       40
+      ]
+     ],
+     [
+      0.2542597383082508,
+      26,
+      [
+       0,
+       687,
+       1739,
+       23
+      ]
+     ],
+     [
+      0.23259303333499992,
+      9,
+      [
+       8,
+       1483,
+       1153,
+       37
+      ]
+     ]
+    ]
+   }
+  },
+  "ghost_joint_check": {
+   "joint_line_response_median": 10.537,
+   "matte_raw_inside_response_p99.99": 3.713,
+   "matte_raw_inside_response_max": 5.536,
+   "chiseled_inside_response_max": 6.699,
+   "note": "oriented (0/60/120 deg, 1 in) dark-line filter on colour luma; a copied render joint inside a Matte or Raw face would score near the joint median. Chiseled faces are listed separately: their 30/90/150 deg grooves partly excite the filter."
+  },
+  "hard_failures": []
+ },
+ "wrap_seam_steps": {
+  "method": "mean |difference| between the last and first pixel line of the image (the wrap seam) vs the mean |difference| one pixel either side of the seam; ratio ~1 means no seam",
+  "colour_luma_8bit_levels": {
+   "left_right": {
+    "seam_mean": 1.3918,
+    "adjacent_mean": 1.3456,
+    "ratio": 1.0343
+   },
+   "top_bottom": {
+    "seam_mean": 0.446,
+    "adjacent_mean": 0.5374,
+    "ratio": 0.83
+   }
+  },
+  "bump_16bit": {
+   "left_right": {
+    "seam_mean": 1670.1493,
+    "adjacent_mean": 1619.4269,
+    "ratio": 1.0313
+   },
+   "top_bottom": {
+    "seam_mean": 384.9864,
+    "adjacent_mean": 464.1211,
+    "ratio": 0.8295
+   }
+  },
+  "bump_mm": {
+   "left_right": {
+    "seam_mean": 0.0668,
+    "adjacent_mean": 0.0647,
+    "ratio": 1.0313
+   },
+   "top_bottom": {
+    "seam_mean": 0.0154,
+    "adjacent_mean": 0.0186,
+    "ratio": 0.8295
+   }
+  },
+  "within_face_vs_matched_interior": {
+   "colour_luma_levels": {
+    "left_right": 1.0826,
+    "top_bottom": 0.709
+   },
+   "bump_mm": {
+    "left_right": 1.1809,
+    "top_bottom": 0.6571
+   }
+  }
+ },
+ "relief_mm": {
+  "joint_depth_below_face_plane": 2.5,
+  "pattern_relief_p0.1_p99.9": {
+   "matte": 0.1259,
+   "raw": 1.6959,
+   "chiseled": 1.3115
+  },
+  "deepest_pattern_point": {
+   "matte": -0.1882,
+   "raw": -1.664,
+   "chiseled": -1.5821
+  },
+  "clearance_deepest_pattern_to_joint_floor": {
+   "matte": 2.3118,
+   "raw": 0.836,
+   "chiseled": 0.9179
+  },
+  "clearance_any_face_pixel_incl_edge_ease_to_joint_floor": {
+   "matte": 2.0407,
+   "raw": 0.486,
+   "chiseled": 0.8136
+  },
+  "note": "decoded from Bump16.png with report['bump_encoding']; pattern = face pixels beyond the 1.2 mm edge ease; joint floor = median of joint-core pixels"
+ }
+}

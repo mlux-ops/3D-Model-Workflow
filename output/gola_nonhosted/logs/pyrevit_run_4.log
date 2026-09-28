@@ -1,0 +1,30 @@
+﻿==> Execution Environment
+Execution Id: "48fef3a1-194f-4bcd-aa88-d86d5746b4bb"
+Product: 2025 First Customer Ship | Version: 25.0.2.419 | Build: 20240307_1300(x64) | Language: 1033 | Path: "C:\Program Files\Autodesk\Revit 2025\"
+Clone: master | Branch: "master" | Version: "6.4.0.26100+0515" | Path: "C:\Users\cowey\AppData\Roaming\pyRevit-Master"
+Engine: DEFAULT (netcore) | Kernel: IronPython 2 | Version: 2712 | Runtime: True | Path: "C:\Users\cowey\AppData\Roaming\pyRevit-Master\bin\netcore\engines\IPY2712PR\pyRevitLoader.dll" | Desc: "Custom pyRevit IronPython 2 Engine"
+Script: "E:\Claude\3D-Model-Workflow\output\gola_nonhosted\convert_gola_nonhosted.py"
+Working Directory: "E:\Temp\48fef3a1-194f-4bcd-aa88-d86d5746b4bb"
+Journal File: "E:\Temp\48fef3a1-194f-4bcd-aa88-d86d5746b4bb\PyRevitRunner_48fef3a1-194f-4bcd-aa88-d86d5746b4bb.txt"
+Manifest File: "E:\Temp\48fef3a1-194f-4bcd-aa88-d86d5746b4bb\PyRevitRunner.addin"
+Log File: "E:\Temp\48fef3a1-194f-4bcd-aa88-d86d5746b4bb\PyRevitRunner_48fef3a1-194f-4bcd-aa88-d86d5746b4bb.log"
+==> Execution Log
+Traceback (most recent call last):
+  File "E:\Claude\3D-Model-Workflow\output\gola_nonhosted\convert_gola_nonhosted.py", line 522, in <module>
+  File "E:\Claude\3D-Model-Workflow\output\gola_nonhosted\convert_gola_nonhosted.py", line 414, in convert
+Exception: The referenced object is not valid, possibly because it has been deleted from the database, or its creation was undone.
+
+&clt;strong&cgt;Script Executor Traceback:&clt;/strong&cgt;
+Autodesk.Revit.Proxy.Exceptions.InvalidObjectExceptionProxy: The referenced object is not valid, possibly because it has been deleted from the database, or its creation was undone.
+   at Microsoft.Scripting.Runtime.LightExceptions.ThrowException(LightException lightEx)
+   at Microsoft.Scripting.Runtime.LightExceptions.CheckAndThrow(Object value)
+   at Microsoft.Scripting.Interpreter.FuncCallInstruction`2.Run(InterpretedFrame frame)
+   at Microsoft.Scripting.Interpreter.Interpreter.HandleException(InterpretedFrame frame, Exception exception)
+   at Microsoft.Scripting.Interpreter.Interpreter.Run(InterpretedFrame frame)
+   at Microsoft.Scripting.Interpreter.LightLambda.Run2[T0,T1,TRet](T0 arg0, T1 arg1)
+   at IronPython.Compiler.PythonScriptCode.RunWorker(CodeContext ctx)
+   at IronPython.Compiler.PythonScriptCode.Run(Scope scope)
+   at IronPython.Compiler.RuntimeScriptCode.InvokeTarget(Scope scope)
+   at IronPython.Compiler.RuntimeScriptCode.Run(Scope scope)
+   at Microsoft.Scripting.Hosting.CompiledCode.Execute(ScriptScope scope)
+   at PyRevitLabs.PyRevit.Runtime.IronPythonEngine.Execute(ScriptRuntime& runtime)

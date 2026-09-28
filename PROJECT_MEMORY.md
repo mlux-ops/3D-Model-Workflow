@@ -1434,3 +1434,69 @@ Artifact: `output/elm_jute_vein_cut/`. It contains `veincut_24x48/`, `mosaic_1x3
   - Material Packages (10rotmdUvGLbbgNkxhHUyEMIv_3WNOB8x):
     - ELM_Jute_Vein_Cut_24x48_Package.zip 1l9c_5Z8F9IYafV7Lv7Z13recnEWDRFHH (31551256, sha256 cca46d74...07e6);
     - ELM_Jute_Vein_Cut_1x3_Mosaic_Package.zip 1uwCZcMeJZLRc5IXxlM7HuW1xVi4ktcRW (31889486, sha256 f6bd9e9a...f6cf).
+
+## Porcelanosa Vendome Nature 47x47 build — 2026-09-27
+
+Artifact: `output/porcelanosa_vendome_nature_47x47/`, with `designed/`, `free_mix/`, `pieces/`, `source/`, `references/`, `_work/`, `ERRORS.md`, `SOURCE_SELECTION.md` and `README.md`. Deliverable: maps and `.pat` only (no ADSKLIB, RVT or V-Ray).
+
+### Facts
+- Code 100348304, VENDOME NAT.PV6 120X120(A). FTEC sheet: 1200 x 1200 mm, 6 mm, unglazed "Nature", rectified, V3, "minimum joint of 1,5 mm".
+- Product finder: "Relief: NO", "Continuous design: NO"; grout Butech Colorstuk Rapid PERLA. No layout image found.
+- The supplied JPEGs are **Adobe RGB (1998)**. Decode to sRGB before use (colour_io.py; the verifier cross-checks with LittleCMS).
+
+### Layout found (edge NCC, all 8 faces x 8 orientations x 4 sides)
+- Two seamless loops, pieces as supplied: **strip A 1-6-7-8** (8 -> 1) and **strip B 2-3-4-5** (5 -> 2). Joint NCC 0.51–0.75; random p99 0.17.
+- No vertical continuity for any rotation (max 0.24). The higher vertical scores need mirrored pieces, which a printed tile can't be.
+- IMGCOM_940 = face 1 (NCC 0.976).
+- No de-lighting: no common gradient above content noise.
+
+### Geometry
+- Joint 1/16 in. Drawn tile 47.1875 in (-1.44 mm, -0.12 %), module 47.25 in. 32 px/in: module 1512 px, joint 2 px.
+- Designed 4 x 2 = 6048 x 3024 px, Sample Size 15'-9" x 7'-10 1/2".
+- Free Mix 4 x 4 = 6048 px, 15'-9" x 15'-9". Each piece twice, in different 90-degree rotations; copies never 8-neighbours; no mirroring.
+- Pieces 1–8: 1512 px, 3'-11 1/4", each with its own bump.
+- Bump: full scale 1.60 mm, joint 1.50 mm, edge r 1.0 mm, micro sd 0.02 mm. Revit **60**. Grout sRGB 200/199/195 (design match to Perla).
+- Pattern `Porcelanosa Vendome Nature 47x47 - Stack` (0/90, 47.25). Origin at the maps' top-left; first face at +1/32 in, +1/32 in. Analytic max offset 0.0 px.
+
+### Verification
+- `b03_verify.py`, 10–12 gates per set. All pass. Designed-joint continuity built 0.52–0.76, source within 0.03.
+
+### Errors (details in ERRORS.md)
+1. a00 `IFDRational` JSON error. Cause: Pillow dpi type. Fix: cast to float. Resolved.
+2. WebFetch couldn't parse the FTEC PDF. Fix: Read the saved PDF. Resolved.
+3. Adobe RGB sources (risk). Fix: explicit decode. Resolved.
+4. The whole-map graze preview showed hatching. Cause: aliasing after resizing the shaded image; the map has no periodic peak. Fix: block-mean first, no resize after shading. Resolved.
+5. The wrap-step gate always read 0. Cause: it measured two grout pixels. Fix: measure the face pixels flanking the joint. Resolved.
+6. The wrap-step gate false-failed on designed and on all pieces. Cause: mixed joint directions, and a wrong reference for single pieces. Fix: compare per direction; for single pieces, compare with the source's own opposite-edge step. Resolved; piece 8's dark bottom edge is product content.
+- Prevention: when joints are an integer number of pixels, measure steps across a joint between the flanking face pixels, never at the grout pixels.
+- **Delivery verified via the Drive API (search_files, 2026-09-27 ~09:40Z); all 22 sizes match local.** Belmont folder: designed colour 1eT6p-LEWakMOAwCIJSVMlGjnM4c-ofNm (28027283), designed Bump 60 18XR_844YTcYXLEFckvX07oyARWhlxox3 (31227156), free-mix colour 1EmNWBYCrZ4nLSvawWlHuWLWz1z5waDgX (56985110), free-mix Bump 60 1VEKghnxVZP5M4YaLvQm5ebJLJdPufZTz (62368796), 16 piece maps (IDs in the artifact's _work/drive_verification.json), pattern 1P2ZJ1XldScGLF2VGFmZsw9hV3Xxp67jk (431). Material Packages: Porcelanosa_Vendome_Nature_47x47_Package.zip 1R2DgG8ymQzSlslI05OyXK_Q6Zpjl944Q (16824326, sha256 4f877b46...82bd).
+
+## Vanity oak colour map from product photo — 2026-09-27
+- Artifact: `output/vanity_oak_from_photo/`. The user asked for a colour map only (no bump, no ADSKLIB, no .pat) from the supplied vanity product photo `references/u12_vanity_product_photo.jpg` (1600 px), with no repeat on any single piece; the largest panel is 37 x 7.5 in. Built from photo pixels only; the owner rejects procedural grain.
+- Result: `Vanity Oak - 4'-0.000in x 2'-0.000in.png`, 3072 x 1536, 8-bit RGB, 48 x 24 in at 64 px/in, horizontal grain. Revit: Sample Size 4'-0" x 2'-0"; Rotation 90° (a second material) for vertical-grain doors and side panels.
+- Scale: the product was not identified by web search, so the width was assumed to be 48 in.
+  - The reveal fit is self-consistent: symmetric to 0.2 %, and left and right drawer heights agree to 0.05 in.
+  - Conflict: at 48 in the overall height works out to about 38–40 in, which suggests a 42–44 in unit. The README gives Sample Size 3'-6" x 1'-9" for the 42 in case.
+- Density: native 23–26 px/in on the front plane, assembled at 32 px/in, then one 2x cubic grid-wrap upscale plus a y-only unsharp (sigma 1.4 px, amount 0.45) to 64 px/in. The upscale was the user's mid-task instruction ("upscale the texture if needed").
+- Method: reveal lines fitted, then a front-plane homography, then 10 panels rectified. Six full-length leaves (apron, door L, door L remainder, rail, door R, door R remainder) extended along the grain with drawer pieces, each placed at the cross-correlated offset and cut on a minimum-error DP boundary. Leaf joints use closed DP cuts. Provenance proves 1,179,648 distinct source pixels (no reuse; 88 % of the usable crops). The side panel (about 10 px/in across the grain), the posts and the top were rejected.
+- Gates (`source/b04_verify.py`, all pass): wrap x 0.92 and wrap y 1.18 × the median interior step; self-similarity max NCC 0.28 < 0.50 including flips (planted copy 1.00; the source's own inter-panel baseline is 0.26); grain +0.5° (blocks −1.8 to +3.5°); tone drift 0.5 % along the grain, leaves 3.7 %.
+- Errors, all resolved (details in the artifact's `ERRORS.md`):
+  1. End joints were visible at first. Cause: a specular veil on drawer_R1, drawer_R2 and the apron (greyer, flatter), chroma gradients left by luminance-only de-lighting, and soft and crisp crops mixed in one leaf. Fix: neutral veil removal fitted from R/B and checked on G/B; per-channel de-lighting; a capped per-piece detail-gain match; drawers regrouped by side and character.
+  2. A dark streak in the apron leaf. Cause: the reveal shadow near the left post. Fix: row-wise along-grain flattening of the rails and a trim of 5 rows.
+  3. The apron's extension read as a block at the wrap corner. Fix: swapped crop roles so the crisp drawers supply the thin strips.
+  4. The 3 x 3 tiling showed 24 in banding from the apron's tone. Fix: thin leaves keep 20 % of their tone difference.
+  5. `b03_previews.py` broadcast error (mock canvas too narrow). Fix: widened.
+- Lessons:
+  - A brighter, lower-saturation, lower-contrast panel in a product photo is a veil (additive), not shading. Dividing by luminance cannot fix it. Fit a neutral offset from chromaticity and check that it predicts the second chroma ratio.
+  - Group quilt pieces by sharpness and character before tone-matching; mean matching alone leaves visible end joints.
+- Error 6 (my own, resolved): after the append, a line-ending "fix" rewrote every lone LF in `PROJECT_MEMORY.md` as CRLF (1389 lines). The file was mixed, mostly LF; I had assumed CRLF from the last line. Fix: the whole file was normalised to LF, which is the blob convention (`core.autocrlf=true`); `git diff` shows only the content insertions. Prevention: never rewrite line endings of a shared file; append with the tool's native writes only.
+- Error 7 (resolved): the notes zip needed a re-release after the ERRORS.md update, and `d02_deliver.py` refuses to overwrite. Fix: it now replaces a file only when the copy on the mount matches this job's own earlier delivery SHA-256. Maps are never replaced.
+- Delivery verified with the Drive API (search_files, 2026-09-27 18:46Z); sizes match local:
+  - colour map `Vanity Oak - 4'-0.000in x 2'-0.000in.png`: id 1WR1TvaF_AQuxGYA6_801dKoDi-UB7rfG, 3333242 bytes, sha256 78bff8f5…f7a, in the Belmont maps folder;
+  - `Vanity_Oak_Color_Map_Package.zip`: id 1nGIV31pW4zb3Z0jTGvOg2pb849B11Hcq, 1791927 bytes, sha256 76595d45…f6df, in Material Packages. The second release replaced the first in place; there is one file on Drive.
+
+### 2026-09-27 - Porcelanosa Vendome Nature 120x120: wrong "faces don't connect" answer in chat
+- **Error:** In a chat analysis, I told the user the 8 supplied faces had no edge continuity. I based it on 1-px edge scores (mean abs diff about 10-13, correlation at most 0.44) and an assumed threshold of 0.8 or more for a true join.
+- **Cause:** The threshold was invented. WebP compression, lighting in the product shots and the eased edge all lower single-row scores. The top-ranked pairs were in fact the real joins (1-6, 6-7, 7-8, 8-1, 2-3, 3-4, 4-5, 5-2).
+- **Solution:** Check the delivered package first (`output/porcelanosa_vendome_nature_47x47/README.md` already had strips A 1-6-7-8 and B 2-3-4-5, looping). Confirm by eye with an assembled strip image. Rank candidate pairs; don't reject them on an absolute score.
+- **Status:** Corrected in chat, with the strips confirmed visually.
