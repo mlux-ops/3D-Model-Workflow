@@ -126,7 +126,7 @@ try:
     def button():
         n = 0
         for inst in gola_autocut.gola_instances(proj):
-            a, r = gola_autocut.sync(proj, inst); n += len(a) + len(r)
+            a, r, _ = gola_autocut.sync(proj, inst); n += len(a) + len(r)
         return n
     changes = committed(proj, 'Cut Gola Recesses', button)
     report['tests']['T6_button'] = {'removed_before_button_mm3': before_button, 'removed_mm3': removed(wD),

@@ -3,8 +3,10 @@
 
 Revit only auto-cuts hosts with voids for face- and wall-based templates. The Gola families
 are line based (two-click placement), so this module applies the same cut Revit's
-Cut Geometry makes (InstanceVoidCutUtils) to every wall a Gola channel's bounding box
-touches, and removes cuts from walls it no longer touches.
+Cut Geometry makes (InstanceVoidCutUtils) to every wall, cabinet (Casework), Generic Model,
+Furniture or Specialty Equipment element a Gola channel's bounding box touches, and removes
+cuts from elements it no longer touches. A loadable family can only be cut if its own
+"Cut with Voids When Loaded" is on; touching elements that cannot be cut are logged.
 
 Flow: the updater sees Gola channels added or changed and queues them (Revit forbids
 InstanceVoidCutUtils during a dynamic update), then raises an ExternalEvent; Revit runs
@@ -15,6 +17,7 @@ import os, datetime, traceback
 from Autodesk.Revit import DB
 from Autodesk.Revit import UI
 from System import Guid
+from System.Collections.Generic import List
 
 FAMILY_PREFIX = 'Richelieu_Gola'
 UPDATER_GUID = Guid('6f4f1b8e-2d3a-4c71-9a55-0d7c3e9b8a21')
@@ -36,38 +39,64 @@ def is_gola(e):
     return DB.InstanceVoidCutUtils.IsVoidInstanceCuttingElement(e)
 
 
-def touching_walls(doc, inst):
+CUT_CATEGORIES = [DB.BuiltInCategory.OST_Walls, DB.BuiltInCategory.OST_Casework, DB.BuiltInCategory.OST_GenericModel,
+                  DB.BuiltInCategory.OST_Furniture, DB.BuiltInCategory.OST_FurnitureSystems,
+                  DB.BuiltInCategory.OST_SpecialityEquipment]
+_warned = set()   # (document title, element id) already logged as not cuttable
+
+
+def touching(doc, inst):
+    """(cuttable, not_cuttable) elements in the cut categories whose boxes touch inst's box; Gola channels excluded."""
     bb = inst.get_BoundingBox(None)
-    if bb is None: return []
+    if bb is None: return [], []
     pad = DB.XYZ(PAD_FT, PAD_FT, PAD_FT)
+    cats = List[DB.BuiltInCategory](CUT_CATEGORIES)
     f = DB.BoundingBoxIntersectsFilter(DB.Outline(bb.Min.Subtract(pad), bb.Max.Add(pad)))
-    return [w for w in DB.FilteredElementCollector(doc).OfClass(DB.Wall).WherePasses(f)
-            if DB.InstanceVoidCutUtils.CanBeCutWithVoid(w)]
+    ok, no = [], []
+    for e in DB.FilteredElementCollector(doc).WherePasses(DB.ElementMulticategoryFilter(cats)).WhereElementIsNotElementType().WherePasses(f):
+        if e.Id == inst.Id or is_gola(e): continue
+        (ok if DB.InstanceVoidCutUtils.CanBeCutWithVoid(e) else no).append(e)
+    return ok, no
 
 
-def cut_wall_ids(inst):
+def cut_ids(inst):
     return set(i.Value for i in DB.InstanceVoidCutUtils.GetElementsBeingCut(inst))
 
 
 def needs_change(doc, inst):
-    return set(w.Id.Value for w in touching_walls(doc, inst)) != cut_wall_ids(inst)
+    return set(e.Id.Value for e in touching(doc, inst)[0]) != cut_ids(inst)
+
+
+def describe(e):
+    cat = e.Category.Name if e.Category else '?'
+    fam = e.Symbol.Family.Name if isinstance(e, DB.FamilyInstance) else DB.Element.Name.GetValue(e)
+    return '%s %d (%s)' % (cat, e.Id.Value, fam)
 
 
 def sync(doc, inst):
-    """Make the set of walls cut by inst equal the walls it touches. Returns (added, removed) id lists.
-    Must run inside an open transaction, outside a dynamic update."""
-    want = dict((w.Id.Value, w) for w in touching_walls(doc, inst))
-    have = cut_wall_ids(inst)
+    """Make the set of elements cut by inst equal the cuttable elements it touches.
+    Returns (added, removed, not_cuttable) lists. Must run inside an open transaction, outside a dynamic update."""
+    ok, no = touching(doc, inst)
+    want = dict((e.Id.Value, e) for e in ok)
+    have = cut_ids(inst)
     added, removed = [], []
-    for wid, w in want.items():
-        if wid not in have:
-            DB.InstanceVoidCutUtils.AddInstanceVoidCut(doc, w, inst); added.append(wid)
-    for wid in have:
-        if wid in want: continue
-        e = doc.GetElement(DB.ElementId(wid))
-        if isinstance(e, DB.Wall):
-            DB.InstanceVoidCutUtils.RemoveInstanceVoidCut(doc, e, inst); removed.append(wid)
-    return added, removed
+    for eid, e in want.items():
+        if eid not in have:
+            DB.InstanceVoidCutUtils.AddInstanceVoidCut(doc, e, inst); added.append(eid)
+    for eid in have:
+        if eid in want: continue
+        e = doc.GetElement(DB.ElementId(eid))
+        if e is not None:
+            DB.InstanceVoidCutUtils.RemoveInstanceVoidCut(doc, e, inst); removed.append(eid)
+    blocked = []
+    for e in no:
+        blocked.append(describe(e))
+        key = (doc.Title, e.Id.Value)
+        if key not in _warned:
+            _warned.add(key)
+            log('%s: %s touches Gola %d but cannot be cut - turn on "Cut with Voids When Loaded" in its family'
+                % (doc.Title, describe(e), inst.Id.Value))
+    return added, removed, blocked
 
 
 def gola_instances(doc):
@@ -85,7 +114,7 @@ def process_pending():
         if not insts: continue
         tx = DB.Transaction(doc, 'Gola Auto Cut'); tx.Start()
         for e in insts:
-            added, removed = sync(doc, e)
+            added, removed, _ = sync(doc, e)
             done.append([e.Id.Value, added, removed])
             log('%s: instance %d cut +%s -%s' % (doc.Title, e.Id.Value, added, removed))
         if tx.Commit() != DB.TransactionStatus.Committed:
@@ -109,7 +138,7 @@ class GolaAutoCutUpdater(DB.IUpdater):
 
     def GetUpdaterId(self): return self._id
     def GetUpdaterName(self): return 'Gola Auto Cut'
-    def GetAdditionalInformation(self): return 'Cuts walls with the recess void of Richelieu Gola channels when they are placed or changed.'
+    def GetAdditionalInformation(self): return 'Cuts walls and cabinets with the recess void of Richelieu Gola channels when they are placed or changed.'
     def GetChangePriority(self): return DB.ChangePriority.FloorsRoofsStructuralWalls
 
     def Execute(self, data):

@@ -1,9 +1,27 @@
-# Richelieu Gola profiles — two-click, 3/4" wall setback (Revit 2025)
+# Richelieu Gola profiles — two-click, 3/4" wall setback, automatic recess cut (Revit 2025)
 
 | Family | Built from |
 |---|---|
-| `Richelieu_Gola_L_Channel_Horizontal_Setback_2025.rfa` | `Richelieu_Gola_L_Channel_Horizontal_2025.rfa` (your line-based file) |
-| `Richelieu_Gola_Vertical_Double_Grip_Setback_2025.rfa` | `Richelieu_Gola_Vertical_Double_Grip_2025.rfa` (your line-based file) |
+| `Richelieu_Gola_L_Channel_Horizontal_Setback_2025.rfa` (L, single grip) | your line-based `Richelieu_Gola_L_Channel_Horizontal_2025.rfa` |
+| `Richelieu_Gola_Vertical_Double_Grip_Setback_2025.rfa` | your line-based `Richelieu_Gola_Vertical_Double_Grip_2025.rfa` |
+| `Richelieu_Gola_C_Channel_Horizontal_Setback_2025.rfa` (C, double grip) | the *Horizontal - C - Double Grip* type of the combined `Richelieu_Gola_Channel_Profiles_2025.rfa` (Gola_Cutting_Recess package), added 2026-09-28 |
+| `Richelieu_Gola_Vertical_Single_Grip_Setback_2025.rfa` | the *Vertical - Single Grip* type of the same combined family, added 2026-09-28 |
+
+All four place, set back and cut the same way.
+
+**Recess void.** The C and Vertical Single families keep the combined family's rectangular recess void. It is sized from its Recess parameters (instance):
+
+| Parameter | Default | Effect |
+|---|---|---|
+| Recess Clearance | 0.5 mm | added around the profile |
+| Extra Cut Depth | 0 mm | extra depth behind the channel |
+| Front Cut Extension | 50 mm | extends the cut out through the wall face |
+
+The L and Vertical Double families keep the profile-traced voids you drew.
+
+**Extras on the new two.**
+- The C channel keeps its mounting clips (**Show Mounting Clips**, on by default), end caps, brackets and corner joints. The clip plates sit 12 mm behind the channel back, deeper than the recess, so they overlap a little uncut wall.
+- The vertical single grip has no caps or clips, the same as in the combined family.
 
 ## Placing
 
@@ -29,6 +47,7 @@ To bind the channel to the wall instead, choose **Place on Face**. It then moves
 ## What changed from your files
 
 - **Added:** Wall Setback, Front Face Depth and Placement Offset.
+- (L and Vertical Double; the C and Vertical Single were built from the combined family the same way.)
 - **Horizontal:** your Placement Plane is now dimensioned and moved from 48.05 mm to 46.05 mm, which puts the front face at 3/4". Before, it was 21.05 mm behind the face.
 - **Vertical:** a new "Placement Plane" was added and now defines the origin. The template's unnamed plane no longer does; it is constrained to the level and couldn't move.
 - **Unchanged:** all geometry, formulas, sketch constraints, types, materials and recess dimensions. The solid volume is identical to your files, and the solids are identical apart from the depth shift.
@@ -52,9 +71,10 @@ Revit won't let a two-click (line-based) family cut a wall on its own; it only d
 - The updater is optional. Models open normally on machines without the extension, but cuts there need the button or Cut Geometry.
 - Activity and errors are logged to `%TEMP%\gola_autocut.log`.
 
-**Scope**
-- Only walls are cut.
-- Other elements (for example cabinets) need their family's "Cut with Voids When Loaded" setting on, plus a code change.
+**Scope** (updated 2026-09-28)
+- Walls, Casework, Generic Models, Furniture, Furniture Systems and Specialty Equipment are cut, so solid cabinet boxes get their recess too.
+- In testing, a Casework family with "Cut with Voids When Loaded" off was still cut.
+- Anything Revit refuses to cut is listed in the log and the button output.
 
 ## Verification
 
@@ -74,5 +94,11 @@ Revit 2025, headless, `validation.json`, re-derived by `verify_setback.py`. All 
   - button with the updater off: cut applied.
   - Headless Revit never idles, so the test flushes the queue the ExternalEvent would flush. The event firing in a live session is the one step verified only by use;
 - same solid volume as your originals, with extents shifted only by the change in setback.
+
+C and Vertical Single, 2026-09-28:
+
+- `extract_types.py` → `validation_extract_C_VS.json`: each single-type family was placed next to the combined family on the same 1000 mm line; volume and extents match exactly (C 162,157 mm³, VS 216,938 mm³).
+- The same set-back gates → `validation_C_VS.json`: all pass (C Placement Plane at 26 + 19.05 = 45.05 mm).
+- The same auto-cut gates → `validation_autocut_C_VS.json`: all pass. The cut is checked against Recess Opening Width × in-wall depth: C on face 5,035,552 mm³ exact; the 2400 mm re-grip, the vertical, the unhosted channel, the uncut after moving off the wall, and the button all pass.
 
 The cut-through views are in `preview/`.

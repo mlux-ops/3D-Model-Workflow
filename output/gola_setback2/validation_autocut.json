@@ -1,0 +1,181 @@
+{
+  "addin_id": "d49d3677-61c4-47a8-bfff-49e6616d54c1", 
+  "tests": {
+    "T3_vertical_face_1500": {
+      "expected_mm3": 4148081.2500001360, 
+      "removed_mm3": 4148081.25, 
+      "host": "Wall"
+    }, 
+    "T6_button": {
+      "removed_before_button_mm3": 0.0, 
+      "expected_mm3": 5035552.5000002021, 
+      "removed_mm3": 5035552.5000004768, 
+      "changes": 1
+    }, 
+    "T5_moved_off_wall": {
+      "cut_ids": [], 
+      "expected_mm3": 0.0, 
+      "removed_mm3": 0.0
+    }, 
+    "T4_unhosted_level_1500": {
+      "cut_ids": [
+        "5492"
+      ], 
+      "expected_mm3": 5035552.5000002021, 
+      "removed_mm3": 5035552.4999997616, 
+      "host": "Level"
+    }, 
+    "T1_horizontal_face_1500": {
+      "expected_mm3": 5035552.5000002021, 
+      "removed_mm3": 5035552.5, 
+      "host": "Wall"
+    }, 
+    "T2_regrip_2400": {
+      "expected_mm3": 8056884.0000003241, 
+      "removed_mm3": 8056884.0
+    }
+  }, 
+  "stage": "complete", 
+  "flushed": [
+    [
+      "walls", 
+      []
+    ], 
+    [
+      "activate", 
+      []
+    ], 
+    [
+      "T1", 
+      [
+        [
+          "5495", 
+          [
+            "5490"
+          ], 
+          []
+        ]
+      ]
+    ], 
+    [
+      "T2", 
+      []
+    ], 
+    [
+      "T3", 
+      [
+        [
+          "5500", 
+          [
+            "5491"
+          ], 
+          []
+        ]
+      ]
+    ], 
+    [
+      "T4", 
+      [
+        [
+          "5503", 
+          [
+            "5492"
+          ], 
+          []
+        ]
+      ]
+    ], 
+    [
+      "T5", 
+      [
+        [
+          "5503", 
+          [], 
+          [
+            "5492"
+          ]
+        ]
+      ]
+    ], 
+    [
+      "T6 place", 
+      []
+    ], 
+    [
+      "Cut Gola Recesses", 
+      []
+    ]
+  ], 
+  "log": [
+    "2026-09-28T10:33:02.520000  Gola Auto Cut updater registered", 
+    "2026-09-28T10:33:07.315000  Project1: instance 5495 cut +[5490L] -[]", 
+    "2026-09-28T10:33:07.451000  Project1: instance 5500 cut +[5491L] -[]", 
+    "2026-09-28T10:33:07.528000  Project1: instance 5503 cut +[5492L] -[]", 
+    "2026-09-28T10:33:07.551000  Project1: instance 5503 cut +[] -[5492L]"
+  ], 
+  "registered": true, 
+  "queued_after": [
+    [
+      "walls", 
+      []
+    ], 
+    [
+      "activate", 
+      []
+    ], 
+    [
+      "T1", 
+      [
+        [
+          "5495"
+        ]
+      ]
+    ], 
+    [
+      "T2", 
+      [
+        [
+          "5495"
+        ]
+      ]
+    ], 
+    [
+      "T3", 
+      [
+        [
+          "5500"
+        ]
+      ]
+    ], 
+    [
+      "T4", 
+      [
+        [
+          "5503"
+        ]
+      ]
+    ], 
+    [
+      "T5", 
+      [
+        [
+          "5503"
+        ]
+      ]
+    ], 
+    [
+      "T6 place", 
+      []
+    ], 
+    [
+      "Cut Gola Recesses", 
+      []
+    ]
+  ], 
+  "untouched_walls_check": {
+    "5491": 4148081.25, 
+    "5492": 0.0, 
+    "5490": 8056884.0, 
+    "5493": 5035552.5000004768
+  }
+}

@@ -1,0 +1,272 @@
+{
+  "revit_version": "2025", 
+  "run_dir": "E:/Claude/3D-Model-Workflow/output/gola_setback2", 
+  "stage": "complete", 
+  "setback_default_mm": 19.050000000000001, 
+  "jobs": [
+    {
+      "level_two_click": {
+        "end_matches_click": true, 
+        "clicked_length_mm": 1500.0, 
+        "host": "Level", 
+        "regrip_run_mm": [
+          -6.3660743343518789e-12, 
+          2399.9999999999936
+        ], 
+        "setback_rows": [
+          {
+            "back_below_plane_mm": 45.049999999999997, 
+            "front_below_plane_mm": 19.049999999999997, 
+            "run_mm": [
+              -6.2857052895992636e-12, 
+              1499.9999999999941
+            ], 
+            "setback_mm": 19.050000000000001
+          }, 
+          {
+            "back_below_plane_mm": 25.999999999998128, 
+            "front_below_plane_mm": -1.8696377779292562e-12, 
+            "run_mm": [
+              -6.2857052895992636e-12, 
+              1499.9999999999941
+            ], 
+            "setback_mm": 0.0
+          }, 
+          {
+            "back_below_plane_mm": 51.399999999998130, 
+            "front_below_plane_mm": 25.399999999998130, 
+            "run_mm": [
+              -6.2857052895992636e-12, 
+              1499.9999999999941
+            ], 
+            "setback_mm": 25.399999999999999
+          }
+        ], 
+        "location_curve_mm": [
+          [
+            300.0, 
+            200.0, 
+            0.0
+          ], 
+          [
+            1500.0, 
+            1100.0, 
+            0.0
+          ]
+        ], 
+        "clicks_mm": [
+          [
+            300.0, 
+            200.0, 
+            0.0
+          ], 
+          [
+            1500.0, 
+            1100.0, 
+            0.0
+          ]
+        ], 
+        "start_matches_click": true, 
+        "regrip_length_mm": 2400.0
+      }, 
+      "origin_plane_created": true, 
+      "output": "Richelieu_Gola_C_Channel_Horizontal_Setback_2025.rfa", 
+      "reopened": {
+        "origin_plane_z_mm": 45.049999999999997, 
+        "placement_type": "CurveBased", 
+        "work_plane_based": 0
+      }, 
+      "rfa": "E:\\Claude\\3D-Model-Workflow\\output\\gola_setback2\\Richelieu_Gola_C_Channel_Horizontal_Setback_2025.rfa", 
+      "orientation": "horizontal", 
+      "wall_face": {
+        "host": "Wall", 
+        "front_inside_face_mm": 19.050000000000001, 
+        "face_normal": [
+          0.0, 
+          1.0, 
+          -0.0
+        ], 
+        "clicked_length_mm": 1500.0, 
+        "wall_volume_removed_mm3": 0.0, 
+        "run_mm": [
+          -6.4972027757903567e-12, 
+          1499.9999999999936
+        ], 
+        "back_inside_face_mm": 45.050000000000047
+      }, 
+      "parity": {
+        "new_extents_mm": [
+          -6.2638119951302638e-12, 
+          3000.0000000000086, 
+          -57.049999999999990, 
+          999.99999999999386, 
+          3072.7000000000089, 
+          -19.049999999999997
+        ], 
+        "source_setback_mm": -26.000000000001872, 
+        "source_volume_mm3": 162157.19049729835, 
+        "source_extents_mm": [
+          -6.2638119951302638e-12, 
+          3000.0000000000086, 
+          -11.999999999998128, 
+          999.99999999999386, 
+          3072.7000000000089, 
+          26.000000000001869
+        ], 
+        "expected_z_shift_mm": -45.050000000001873, 
+        "new_volume_mm3": 162157.19049729826
+      }, 
+      "origin_plane_after": {
+        "z_mm": 45.049999999999997, 
+        "name": "Placement Plane", 
+        "dimension_mm": 45.050000000001830
+      }, 
+      "previews": [
+        "E:\\Claude\\3D-Model-Workflow\\output\\gola_setback2\\preview\\horizontal_in_wall_cut"
+      ], 
+      "origin_plane_before": {
+        "normal_z": 1.0, 
+        "z_mm": -1.8707073390014159e-12, 
+        "name": "Reference Plane"
+      }, 
+      "source": "Richelieu_Gola_C_Channel_Horizontal_2025.rfa", 
+      "source_placement_type": "CurveBased", 
+      "channel_local_z_mm": [
+        0.0, 
+        26.0
+      ]
+    }, 
+    {
+      "level_two_click": {
+        "end_matches_click": true, 
+        "clicked_length_mm": 1500.0, 
+        "host": "Level", 
+        "regrip_run_mm": [
+          -6.3078464326848936e-12, 
+          2399.9999999999936
+        ], 
+        "setback_rows": [
+          {
+            "back_below_plane_mm": 55.650000000000006, 
+            "front_below_plane_mm": 19.050000000000004, 
+            "run_mm": [
+              -6.2899352393230861e-12, 
+              1499.9999999999939
+            ], 
+            "setback_mm": 19.050000000000001
+          }, 
+          {
+            "back_below_plane_mm": 36.599999999998133, 
+            "front_below_plane_mm": -1.8696377779292562e-12, 
+            "run_mm": [
+              -6.2899352393230861e-12, 
+              1499.9999999999939
+            ], 
+            "setback_mm": 0.0
+          }, 
+          {
+            "back_below_plane_mm": 61.999999999998131, 
+            "front_below_plane_mm": 25.399999999998130, 
+            "run_mm": [
+              -6.2899352393230861e-12, 
+              1499.9999999999939
+            ], 
+            "setback_mm": 25.399999999999999
+          }
+        ], 
+        "location_curve_mm": [
+          [
+            300.0, 
+            200.0, 
+            0.0
+          ], 
+          [
+            1500.0, 
+            1100.0, 
+            0.0
+          ]
+        ], 
+        "clicks_mm": [
+          [
+            300.0, 
+            200.0, 
+            0.0
+          ], 
+          [
+            1500.0, 
+            1100.0, 
+            0.0
+          ]
+        ], 
+        "start_matches_click": true, 
+        "regrip_length_mm": 2400.0
+      }, 
+      "origin_plane_created": true, 
+      "output": "Richelieu_Gola_Vertical_Single_Grip_Setback_2025.rfa", 
+      "reopened": {
+        "origin_plane_z_mm": 55.650000000000006, 
+        "placement_type": "CurveBased", 
+        "work_plane_based": 0
+      }, 
+      "rfa": "E:\\Claude\\3D-Model-Workflow\\output\\gola_setback2\\Richelieu_Gola_Vertical_Single_Grip_Setback_2025.rfa", 
+      "orientation": "vertical", 
+      "wall_face": {
+        "host": "Wall", 
+        "front_inside_face_mm": 19.050000000000001, 
+        "face_normal": [
+          0.0, 
+          1.0, 
+          -0.0
+        ], 
+        "clicked_length_mm": 1500.0, 
+        "wall_volume_removed_mm3": 0.0, 
+        "run_mm": [
+          -6.2264859934657584e-12, 
+          1499.9999999999939
+        ], 
+        "back_inside_face_mm": 55.649999999999800
+      }, 
+      "parity": {
+        "new_extents_mm": [
+          -6.2638119951302638e-12, 
+          3000.0000000000086, 
+          -55.650000000000006, 
+          999.99999999999386, 
+          3048.2500000000086, 
+          -19.050000000000004
+        ], 
+        "source_setback_mm": -36.600000000001870, 
+        "source_volume_mm3": 216938.41792579042, 
+        "source_extents_mm": [
+          -6.2638119951302638e-12, 
+          3000.0000000000086, 
+          1.8707073390014159e-12, 
+          999.99999999999386, 
+          3048.2500000000086, 
+          36.600000000001870
+        ], 
+        "expected_z_shift_mm": -55.650000000001867, 
+        "new_volume_mm3": 216938.41792579048
+      }, 
+      "origin_plane_after": {
+        "z_mm": 55.650000000000006, 
+        "name": "Placement Plane", 
+        "dimension_mm": 55.650000000001839
+      }, 
+      "previews": [
+        "E:\\Claude\\3D-Model-Workflow\\output\\gola_setback2\\preview\\vertical_in_wall_cut"
+      ], 
+      "origin_plane_before": {
+        "normal_z": 1.0, 
+        "z_mm": -1.8707073390014159e-12, 
+        "name": "Reference Plane"
+      }, 
+      "source": "Richelieu_Gola_Vertical_Single_Grip_2025.rfa", 
+      "source_placement_type": "CurveBased", 
+      "channel_local_z_mm": [
+        0.0, 
+        36.600000000000001
+      ]
+    }
+  ]
+}
