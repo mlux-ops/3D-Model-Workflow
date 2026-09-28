@@ -6,7 +6,7 @@ User instruction, recorded 2026-09-22: **If work or a tool is stalling, tell the
 
 User instruction, recorded 2026-09-11: **Every time there is an error, log it in the project memory along with its solution.** This applies to all work in this project, including tool errors, failed commands, application import failures, incorrect outputs, and failed validation.
 
-- Read [PROJECT_MEMORY.md](PROJECT_MEMORY.md) before starting work and apply its relevant lessons.
+- Before starting work, grep [PROJECT_MEMORY.md](PROJECT_MEMORY.md) for the product, tool and error at hand, read only the matching entries, and apply their lessons. Do not read the whole file; it is large and reloading it inflates every turn.
 - When an error occurs, record it in PROJECT_MEMORY.md during the same task. Include the date, affected artifact or action, observed error, known cause (or explicitly say it is unknown), solution or next step, and verification/status.
 - If unresolved, log it immediately as unresolved; update the same entry when resolved. Do not invent a solution or claim success without evidence.
 - For a repeated error, update its occurrence history and prevention guidance instead of silently treating it as new.
