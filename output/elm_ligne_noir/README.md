@@ -16,6 +16,12 @@
 
 `textures/_REVIEW_source_ligne_noir.jpg` (swatch → de-lit → strip cuts), `_PREVIEW_tiling_ligne_noir.jpg` (2×2 wrap), `_PREVIEW_corner_wrap_ligne_noir.jpg` (four-way corner, 2×), `_PREVIEW_grazing_light_ligne_noir.jpg`, `_PREVIEW_flute_profile_closeup.jpg`, `_PREVIEW_bump_tiling_ligne_noir.jpg`, `_PREVIEW_room_scale_8ft_ligne_noir.jpg` (8 × 8 ft wall, 2.7 × 2.4 atlas repeats).
 
+## Native Revit 2025 check — PASS
+
+`pyrevit run source/check_ligne_noir_revit.py --revit=2025` builds a disposable project, binds both maps to one Generic material at the Sample Size, saves, reopens and re-reads every value from the saved file. Report: `revit_check/validation.json` (`technical_pass: true`, no failed gates, zero project warnings) — both bitmaps bound and resolving, scale 36.000 × 40.000 in on each, bump amount 0.4 retained, material applied to a painted wall face.
+
+Reviewed exports in `revit_check/exports/`: 8 × 8 ft wall frontal and under a 10° sun, plus 2 ft and 1 ft close-ups. Scale is exact in the render (450 px per 3 in tile at 150 px/in, 4 tiles/ft, 45 px flute period = 10 per tile); relief reads clearly at grazing angle; tone varies tile to tile; no seam at the 36/40 in boundaries. Bump sign confirmed numerically, not by eye: with the sun at azimuth 115° (camera right), the render's lit peak sits +0.189 period and its shadow −0.233 period from the bump map's crest — a convex rib lit from the right, so **ribs read raised, not sunken**.
+
 `python source/verify_maps.py` (independent, reads the PNGs from disk): PASS — IHDR 8-bit RGB / 16-bit grey, aspect = Sample Size, colour wrap step ≤ noise, bump wrap exact, 10 ribs in all 48 tiles, channel floor 0.263 of range above the grout, 48 distinct faces. Build report: `textures/ligne_noir_build_report.json`. Rebuild: `python source/build_ligne_noir.py` (seed 2026092501).
 
 ## Limitations (not defects)
@@ -23,5 +29,5 @@
 - Sources: `SOURCE_SELECTION.md`. One straight-on swatch exists; all tiles re-sequence its ~9 flute strips, so face-to-face variety is limited (flutes and uniform matte glaze keep it unobtrusive at room scale). A second swatch photo would remove the ceiling.
 - Photos give a module aspect of 3.48–3.50 against the stated 3 × 10 (3.33); maps follow the stated nominal.
 - Relief depths are inferred from the photos (no manufacturer section); no roughness/gloss map (matte per the product page).
-- No Revit render or material validation was performed; the native appearance check is pending.
+- Revit's raytraced renderer has no API entry point, so no rendered image was produced; the review below uses the Realistic display style, which does render the bump map. No physical sample was compared.
 - Separate from the Belmont B3-02 R2 maps (`output/belmont_preferred_bath2_bath3_r2/B3-02`), which were built from an image-generated glaze field and are not modified here.
