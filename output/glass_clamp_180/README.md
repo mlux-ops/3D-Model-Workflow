@@ -93,4 +93,4 @@ Full list and confidence: `INFERENCES.md`.
 
 ## Files
 
-`run_glass_clamp.ps1` · `source\clamp_geometry.py` (shared numbers) · `source\build_glass_clamp.py` · `source\verify_glass_clamp.py` · `source\mock_revit_dryrun.py` (`python mock_revit_dryrun.py`, temp dir only) · `source\preview_geometry.py` · `preview\PREVIEW_geometry_offline.png` (analytic drawing, **not** a Revit render) · `pyrevit\GlassClamp.extension` · `INFERENCES.md`
+`HANDOFF_NATIVE_BUILD.md` (for the workstation session) · `run_glass_clamp.ps1` · `source\clamp_geometry.py` (shared numbers) · `source\build_glass_clamp.py` · `source\verify_glass_clamp.py` · `source\mock_revit_dryrun.py` (`python mock_revit_dryrun.py`, temp dir only) · `source\preview_geometry.py` · `preview\PREVIEW_geometry_offline.png` (analytic drawing, **not** a Revit render) · `pyrevit\GlassClamp.extension` · `INFERENCES.md`
