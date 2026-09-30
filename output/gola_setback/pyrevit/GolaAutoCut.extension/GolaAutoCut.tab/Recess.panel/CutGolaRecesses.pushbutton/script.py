@@ -1,22 +1,23 @@
 # -*- coding: utf-8 -*-
-"""Cut every wall or cabinet touched by a Richelieu Gola channel in the active model (and uncut those no longer touched).
+"""Cut every wall or cabinet a Richelieu Gola channel's recess really cuts (and uncut those it no longer touches).
 
 Backup for the automatic updater: use it on models edited without the extension loaded.
+Cuts Revit refuses (for example a circular chain of references) are listed with Revit's reason;
+the other cuts still go through.
 """
 __title__ = 'Cut Gola\nRecesses'
-from Autodesk.Revit import DB
 import gola_autocut
 
 doc = __revit__.ActiveUIDocument.Document
-insts = gola_autocut.gola_instances(doc)
-tx = DB.Transaction(doc, 'Cut Gola Recesses'); tx.Start()
-added = removed = 0
-blocked = set()
-for inst in insts:
-    a, r, b = gola_autocut.sync(doc, inst)
-    added += len(a); removed += len(r); blocked.update(b)
-tx.Commit()
-print('Gola channels checked: %d. Cuts added: %d. Cuts removed: %d.' % (len(insts), added, removed))
+rows = gola_autocut.apply(doc, gola_autocut.gola_instances(doc))
+added = sum(len(r[1]) for r in rows)
+removed = sum(len(r[2]) for r in rows)
+blocked = sorted(set(b for r in rows for b in r[3]))
+refused = [(r[0], d, w) for r in rows for d, w in r[4]]
+print('Gola channels checked: %d. Cuts added: %d. Cuts removed: %d.' % (len(rows), added, removed))
+for gid, d, w in refused:
+    print('Gola %d could not cut %s: %s' % (gid, d, w))
 if blocked:
-    print('Not cut (turn on "Cut with Voids When Loaded" in these families, reload them, then run this again):')
-    for b in sorted(blocked): print('  ' + b)
+    print('Touching but not cuttable by voids:')
+    for b in blocked: print('  ' + b)
+print('Details: ' + gola_autocut.LOG)

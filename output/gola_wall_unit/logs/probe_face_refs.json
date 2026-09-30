@@ -1,0 +1,55 @@
+{
+  "cases": [
+    {
+      "z_mm": -350, 
+      "host_is_box": true, 
+      "ref": "symbol_geometry", 
+      "stable": "55ac9ffd-da64-4921-9300-213b7140fd2f-000011f4:0:INSTANCE:55ac9ffd-da64-4921-9300-213b7140fd2f-000011e5:26:SURFACE", 
+      "host": "FamilyInstance 4596", 
+      "depends_on_box": false, 
+      "ref_element": "4596"
+    }, 
+    {
+      "z_mm": -700, 
+      "host_is_box": true, 
+      "ref": "symbol_geometry", 
+      "stable": "55ac9ffd-da64-4921-9300-213b7140fd2f-000011f4:0:INSTANCE:55ac9ffd-da64-4921-9300-213b7140fd2f-000011e5:26:SURFACE", 
+      "host": "FamilyInstance 4596", 
+      "depends_on_box": false, 
+      "ref_element": "4596"
+    }, 
+    {
+      "z_mm": -350, 
+      "host_is_box": false, 
+      "ref": "instance_geometry", 
+      "stable": "55ac9ffd-da64-4921-9300-213b7140fd2f-000011e5:26:SURFACE", 
+      "host": "FamilySymbol 4581", 
+      "depends_on_box": false, 
+      "ref_element": "4581"
+    }, 
+    {
+      "z_mm": -700, 
+      "host_is_box": false, 
+      "ref": "instance_geometry", 
+      "stable": "55ac9ffd-da64-4921-9300-213b7140fd2f-000011e5:26:SURFACE", 
+      "host": "FamilySymbol 4581", 
+      "depends_on_box": false, 
+      "ref_element": "4581"
+    }, 
+    {
+      "error": "Family cannot be placed on this line as it does not coincide with the input face.\r\nParameter name: multiple", 
+      "z_mm": -350, 
+      "ref": "stable_instance", 
+      "stable": "55ac9ffd-da64-4921-9300-213b7140fd2f-000011f4:0:INSTANCE:55ac9ffd-da64-4921-9300-213b7140fd2f-000011f4:0:INSTANCE:55ac9ffd-da64-4921-9300-213b7140fd2f-000011e5:26:SURFACE", 
+      "ref_element": "4596"
+    }, 
+    {
+      "error": "Family cannot be placed on this line as it does not coincide with the input face.\r\nParameter name: multiple", 
+      "z_mm": -700, 
+      "ref": "stable_instance", 
+      "stable": "55ac9ffd-da64-4921-9300-213b7140fd2f-000011f4:0:INSTANCE:55ac9ffd-da64-4921-9300-213b7140fd2f-000011f4:0:INSTANCE:55ac9ffd-da64-4921-9300-213b7140fd2f-000011e5:26:SURFACE", 
+      "ref_element": "4596"
+    }
+  ], 
+  "stable": "55ac9ffd-da64-4921-9300-213b7140fd2f-000011f4:0:INSTANCE:55ac9ffd-da64-4921-9300-213b7140fd2f-000011f4:0:INSTANCE:55ac9ffd-da64-4921-9300-213b7140fd2f-000011e5:26:SURFACE"
+}

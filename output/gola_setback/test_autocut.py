@@ -123,12 +123,8 @@ try:
     gola_autocut.unregister(addin_id)
     iD = committed(proj, 'T6 place', lambda: on_face(proj, wD, symbol('horizontal'), 1000, 900, DB.XYZ.BasisX, 1500))
     before_button = removed(wD)
-    def button():
-        n = 0
-        for inst in gola_autocut.gola_instances(proj):
-            a, r, _ = gola_autocut.sync(proj, inst); n += len(a) + len(r)
-        return n
-    changes = committed(proj, 'Cut Gola Recesses', button)
+    rows = gola_autocut.apply(proj, gola_autocut.gola_instances(proj))   # the button's call; manages its own transactions
+    changes = sum(len(r[1]) + len(r[2]) for r in rows)
     report['tests']['T6_button'] = {'removed_before_button_mm3': before_button, 'removed_mm3': removed(wD),
                                     'expected_mm3': FAMS['horizontal'][1] * 1500, 'changes': changes}
 

@@ -4,10 +4,12 @@
 Run with: pyrevit run "<abs path>/build_wall_unit.py" --revit=2025
 Line based: first click = start, second click = end, drawn on the cabinet's front face along its
 bottom edge (the cabinets are solid boxes; the door is not a separate panel). The front face lands on
-the clicked plane (instance Door Face Offset, default 0) and the profile sits in the bottom 20 mm of
+the clicked plane set back by instance Wall Setback (default 3/4 in = 19.05 mm, measured to the profile's
+front face, as in the base-cabinet Gola families) and the profile sits in the bottom 20 mm of
 the box, above the line, when drawn left to right facing the cabinet; Flip Profile mirrors it.
 Two unattached recess voids (one each side of the line; the unused one parks in the air in front
-of the face) cut the box band the profile occupies, Cut Depth deep (default 20 mm). The GolaAutoCut
+of the face) cut the box band from 3 mm in front of the face to Cut Depth behind the profile front
+(default 20 mm), so the recess stays open to the face whatever the setback. The GolaAutoCut
 extension applies the cut to the touched cabinet or wall.
 """
 import os, sys, json, math, traceback, clr
@@ -27,7 +29,9 @@ RFA = RUN + '/Richelieu_Gola_Wall_Unit_Upper_Cabinet_2025.rfa'
 TYPE_NAME = 'Wall Unit - Upper Cabinet Door Pull'
 URL = 'https://www.richelieu.com/us/en/category/moldings-corbels-and-components/metal-and-pvc-moldings-profiles-and-rails/gola-cabinet-profiles/gola-wall-unit-profile/1182685'
 SKU = '70026804170'
-report = {'stage': 'start', 'rfa': RFA, 'section_area_mm2_design': W.section_area_mm2()}
+SETBACK_MM = 19.05
+PROFILE_FRONT = W.FACE_BASE_MM + (20.0 - W.DOOR_FACE_YD)   # family z of the leg's outer face (51 mm)
+report = {'stage': 'start', 'rfa': RFA, 'section_area_mm2_design': W.section_area_mm2(), 'setback_default_mm': SETBACK_MM}
 open_docs = []
 
 
@@ -127,9 +131,9 @@ def build(app):
     fm.Set(flip, 0)
     normal = fm.AddParameter('Profile Unflipped', DB.GroupTypeId.Constraints, DB.SpecTypeId.Boolean.YesNo, True)
     fm.SetFormula(normal, 'not(Flip Profile)')
-    off = fm.AddParameter('Door Face Offset', DB.GroupTypeId.Constraints, DB.SpecTypeId.Length, True)
-    fm.Set(off, 0.0)
-    fm.SetDescription(off, 'Moves the profile out of (+) or into (-) the door face you clicked. 0 = door front face on the clicked plane.')
+    ws = fm.AddParameter('Wall Setback', DB.GroupTypeId.Constraints, DB.SpecTypeId.Length, True)
+    fm.Set(ws, mm(SETBACK_MM))
+    fm.SetDescription(ws, 'Distance the profile front face sits behind the face or plane picked at placement (default 3/4 in).')
     fm.SetDescription(flip, 'Tick if the profile lands below the line, outside the cabinet (line drawn right to left).')
     texts = {'Profile Type': 'WU', 'Application': 'Upper cabinets - bottom edge of the door (click the cabinet front bottom edge)',
              'Manufacturer Product Number': SKU, 'Finish': 'Stainless steel look (anodized aluminium)',
@@ -166,11 +170,17 @@ def build(app):
     doc.OwnerFamily.get_Parameter(DB.BuiltInParameter.FAMILY_ALLOW_CUT_WITH_VOIDS).Set(1)
     cutd = fm.AddParameter('Cut Depth', DB.GroupTypeId.Constraints, DB.SpecTypeId.Length, True)
     fm.Set(cutd, mm(20))
-    fm.SetDescription(cutd, 'How far the recess is cut into the cabinet behind its face. 20 mm clears the profile; use the cabinet depth to cut the full band.')
-    face, front = W.FACE_BASE_MM, W.FACE_BASE_MM + 3.0
+    fm.SetDescription(cutd, 'How far the recess is cut behind the profile front face. 20 mm clears the profile; use the cabinet depth to cut the full band.')
+    pf = PROFILE_FRONT
+    # Clicked face is at family z = pf + Wall Setback. The void runs from pf - Cut Depth to 3 mm in front
+    # of the clicked face; the unused void parks at 2..3 mm in front of the face (air).
+    rfront = fm.AddParameter('Recess Front', DB.GroupTypeId.Constraints, DB.SpecTypeId.Length, True)
+    fm.SetFormula(rfront, '%g mm + Wall Setback' % (pf + 3))
+    fm.SetDescription(rfront, 'Internal: recess void front, 3 mm in front of the clicked face. Do not edit.')
+    front = pf + 3.0
     starts = []
-    for n, f in [('Recess Start Above', 'if(Flip Profile, %g mm, %g mm - Cut Depth)' % (front - 1, face)),
-                 ('Recess Start Below', 'if(Flip Profile, %g mm - Cut Depth, %g mm)' % (face, front - 1))]:
+    for n, f in [('Recess Start Above', 'if(Flip Profile, %g mm + Wall Setback, %g mm - Cut Depth)' % (pf + 2, pf)),
+                 ('Recess Start Below', 'if(Flip Profile, %g mm - Cut Depth, %g mm + Wall Setback)' % (pf, pf + 2))]:
         p = fm.AddParameter(n, DB.GroupTypeId.Constraints, DB.SpecTypeId.Length, True); fm.SetFormula(p, f)
         fm.SetDescription(p, 'Internal: recess void depth. Do not edit - use Cut Depth.')
         starts.append(p)
@@ -185,7 +195,7 @@ def build(app):
         loops = DB.CurveArrArray(); loops.Append(arr)
         v = doc.FamilyCreate.NewExtrusion(False, loops, spz, mm(front))
         fm.AssociateElementParameterToFamilyParameter(v.get_Parameter(DB.BuiltInParameter.EXTRUSION_START_PARAM), sp_)
-        v.get_Parameter(DB.BuiltInParameter.EXTRUSION_END_PARAM).Set(mm(front))
+        fm.AssociateElementParameterToFamilyParameter(v.get_Parameter(DB.BuiltInParameter.EXTRUSION_END_PARAM), rfront)
         doc.Regenerate()
         for cv in [cv for loop in v.Sketch.Profile for cv in loop]:
             if abs(cv.Direction.Y) > 0.9:
@@ -198,7 +208,7 @@ def build(app):
     if any(abs(a - b) > 0.01 for a, b in zip(after, report['family_form_volumes_mm3'])):
         raise ValueError('Recess void cut the profile solid (not unattached)')
 
-    # Origin: Placement Plane at z = 50 mm - Door Face Offset defines the insertion depth.
+    # Origin: Placement Plane at z = profile front (51 mm) + Wall Setback defines the insertion depth.
     view = next(v for v in DB.FilteredElementCollector(doc).OfClass(DB.View)
                 if not v.IsTemplate and v.ViewType == DB.ViewType.Elevation and abs(v.ViewDirection.Z) < 1e-9)
     old = [r for r in DB.FilteredElementCollector(doc).OfClass(DB.ReferencePlane)
@@ -211,7 +221,7 @@ def build(app):
     for r in old: r.get_Parameter(DB.BuiltInParameter.DATUM_PLANE_DEFINES_ORIGIN).Set(0)
     doc.Regenerate()
     po = fm.AddParameter('Placement Offset', DB.GroupTypeId.Constraints, DB.SpecTypeId.Length, True)
-    fm.SetDescription(po, 'Internal: drives the Placement Plane. Do not edit - use Door Face Offset.')
+    fm.SetDescription(po, 'Internal: drives the Placement Plane. Do not edit - use Wall Setback.')
     level = DB.FilteredElementCollector(doc).OfClass(DB.Level).FirstElement()
     refs = DB.ReferenceArray(); refs.Append(level.GetPlaneReference()); refs.Append(plane.GetReference())
     side = d.Multiply(mm(-250))
@@ -219,7 +229,7 @@ def build(app):
     fm.Set(po, dim.Value)
     dim.FamilyLabel = po
     doc.Regenerate()
-    fm.SetFormula(po, '%g mm - Door Face Offset' % W.FACE_BASE_MM)
+    fm.SetFormula(po, '%g mm + Wall Setback' % PROFILE_FRONT)
     doc.Regenerate()
     report['placement_plane_mm'] = to_mm(plane.GetPlane().Origin.Z)
     report['old_origin_planes_cleared'] = [r.Name for r in old]
@@ -314,9 +324,11 @@ def verify(app):
         r['flipped'] = rel(list(solids(inst.get_Geometry(DB.Options()))), q0, axes)
         inst.LookupParameter('Flip Profile').Set(0)
         if label == 'left_to_right':
-            inst.LookupParameter('Door Face Offset').Set(mm(5)); proj.Regenerate()
-            r['offset_5mm'] = rel(list(solids(inst.get_Geometry(DB.Options()))), q0, axes)
-            inst.LookupParameter('Door Face Offset').Set(0); proj.Regenerate()
+            inst.LookupParameter('Wall Setback').Set(0.0); proj.Regenerate()
+            r['setback_0'] = rel(list(solids(inst.get_Geometry(DB.Options()))), q0, axes)
+            inst.LookupParameter('Wall Setback').Set(mm(25.4)); proj.Regenerate()
+            r['setback_1in'] = rel(list(solids(inst.get_Geometry(DB.Options()))), q0, axes)
+            inst.LookupParameter('Wall Setback').Set(mm(SETBACK_MM)); proj.Regenerate()
             keep = inst
         else:
             proj.Delete(inst.Id)
@@ -327,7 +339,10 @@ def verify(app):
     report['tests'] = t
 
     # E. Cutting solid cabinets (Casework boxes) and the wall, through the GolaAutoCut module.
+    # apply() runs its own transactions, so the placement transaction is committed first.
+    commit(tx, 'verify placement')
     cut = {}
+    tx = transaction(proj, 'cut test setup')
     boxes = {}
     for key, allow, y in [('cuttable', True, 5000), ('blocked', False, 8000)]:
         ref_ = clr.Reference[DB.Family]()
@@ -337,28 +352,30 @@ def verify(app):
     proj.Regenerate()
     base = dict((k, vol_mm3(b)) for k, b in boxes.items())
     g1 = proj.Create.NewFamilyInstance(DB.Line.CreateBound(DB.XYZ(mm(250), mm(5000), 0), DB.XYZ(mm(1750), mm(5000), 0)), sym, level, NS)
-    proj.Regenerate()
+    g2 = proj.Create.NewFamilyInstance(DB.Line.CreateBound(DB.XYZ(mm(250), mm(8000), 0), DB.XYZ(mm(1750), mm(8000), 0)), sym, level, NS)
+    commit(tx, 'cut test setup')
     prof = vol_mm3(g1)
     def run(label, **params):
-        for n, v in params.items(): g1.LookupParameter(n.replace('_', ' ')).Set(v)
-        proj.Regenerate()
-        a, r_, b = gola_autocut.sync(proj, g1); proj.Regenerate()
+        if params:
+            t2 = transaction(proj, 'params ' + label)
+            for n, v in params.items(): g1.LookupParameter(n.replace('_', ' ')).Set(v)
+            commit(t2, 'params ' + label)
+        row = gola_autocut.apply(proj, [g1])[0]
         cut[label] = {'removed_mm3': base['cuttable'] - vol_mm3(boxes['cuttable']), 'profile_mm3': vol_mm3(g1),
-                      'added': a, 'removed_ids': r_, 'blocked': b}
+                      'added': row[1], 'removed_ids': row[2], 'blocked': row[3], 'refused': row[4]}
     run('box_depth_20')
     run('box_depth_300', Cut_Depth=mm(300))
     run('box_depth_300_flipped', Flip_Profile=1)
-    g1.LookupParameter('Flip Profile').Set(0); g1.LookupParameter('Cut Depth').Set(mm(20)); proj.Regenerate()
-    g2 = proj.Create.NewFamilyInstance(DB.Line.CreateBound(DB.XYZ(mm(250), mm(8000), 0), DB.XYZ(mm(1750), mm(8000), 0)), sym, level, NS)
-    proj.Regenerate()
-    a, r_, b = gola_autocut.sync(proj, g2); proj.Regenerate()
-    cut['blocked_box'] = {'removed_mm3': base['blocked'] - vol_mm3(boxes['blocked']), 'added': a, 'blocked': b}
+    t2 = transaction(proj, 'reset'); g1.LookupParameter('Flip Profile').Set(0); g1.LookupParameter('Cut Depth').Set(mm(20)); commit(t2, 'reset')
+    row = gola_autocut.apply(proj, [g2])[0]
+    cut['blocked_box'] = {'removed_mm3': base['blocked'] - vol_mm3(boxes['blocked']), 'added': row[1], 'blocked': row[3], 'refused': row[4]}
     wv = vol_mm3(wall)
-    a, r_, b = gola_autocut.sync(proj, keep); proj.Regenerate()
-    cut['wall_face'] = {'removed_mm3': wv - vol_mm3(wall), 'added': a, 'profile_mm3': vol_mm3(keep)}
+    row = gola_autocut.apply(proj, [keep])[0]
+    cut['wall_face'] = {'removed_mm3': wv - vol_mm3(wall), 'added': row[1], 'refused': row[4], 'profile_mm3': vol_mm3(keep)}
     cut['profile_mm3_uncut'] = prof
     cut['length_mm'] = 1500.0
     report['tests']['cuts'] = cut
+    tx = transaction(proj, 'preview view')
 
     # preview: section cut at mid-run of the left->right instance, walls hidden
     vt = next(v for v in DB.FilteredElementCollector(proj).OfClass(DB.ViewFamilyType) if v.ViewFamily == DB.ViewFamily.ThreeDimensional)

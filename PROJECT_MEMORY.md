@@ -1535,3 +1535,32 @@ Specs: Richelieu model 1182685, ART. 268. SKUs 7002680410 (anodized aluminium, s
 - Test-placement error (not a family defect): the wall-face cut measured 420,000 instead of 630,000 mm3, because the run started 1000 mm from the wall end and ran toward it (run direction -X), leaving only 1000 mm on the wall. Fix: start at mid-wall.
 - Tool issue: revitmcp `get_revit_project_info` and `get_elements_by_category` timed out against the live session. I didn't retry; the design went ahead without inspecting the user's cabinets.
 - Drive verified via API 2026-09-28 15:34Z, all updated in place: wall unit RFA 495616, README 4843, validation 4449, bundled gola_autocut.py 8040, zip 3635218; TwoClick README 7302, gola_autocut.py 8040, zip 2271304. All match local.
+- 2026-09-28, user report ("the upper profile is not set back once placed"), a design gap rather than a code defect: the wall-unit family placed its door face on the clicked plane with the leg 1 mm proud, with no setback. Fix: Door Face Offset replaced by instance Wall Setback (default 19.05 mm, measured to the profile front face, the same convention as the four base channels); Placement Plane = 51 mm + Wall Setback. The recess void front (Recess Front = 54 mm + Wall Setback) stays 3 mm in front of the clicked face, so the cut remains open to the face; Cut Depth is measured behind the profile front. Run 5: 28/28 gates (front face -19.05 / back -39.05 on a level and a face; setback 0 and 25.4 exact; box cut 1,171,500 mm3 at the default and 9,571,500 at 300; flipped 478,575; wall 1,230,075).
+- Drive verified via API 2026-09-29 01:49Z, setback revision updated in place: RFA 495616 (bytes differ from the no-setback build), README 5221, validation 4842, zip 3632965. All match local.
+
+## GolaAutoCut: "circular chain of references" in the Belmont model - 2026-09-29
+
+User report: Revit said "there is a circular chain of references among the highlighted elements". The live log (the Revit session's own TEMP folder, `E:\Temp\<guid>\gola_autocut.log`) showed "Gola Auto Cut transaction did not commit" every time a new wall-unit channel was added. revitmcp answered this time (read-only):
+- channel 13236629 has Work Plane "Countertop81 : Countertop", which is the element (12641445, Casework, bbox about 4.2 x 3.3 x 2.8 m) it tried to cut;
+- channel 13231084, on a floor work plane, tried to cut a vanity, two partition walls and a countertop at once, and once a toilet (T18IW905SP, Specialty Equipment); one refusal rolled back all of them.
+
+Causes:
+- (1) Confirmed: bounding-box targeting was too greedy, and every candidate shared one transaction.
+- (2) Not reproduced, cause unknown: the circular chain. A face-hosted channel on a simple Casework box cuts that box cleanly (commits, 1,171,500 mm3). A face-hosted channel's Work Plane also reads "<family> : <type>", so the user's channel is probably face-hosted, and the chain comes from something inside Countertop81.
+
+Fix (module rewrite):
+- each candidate is cut in its own transaction inside one TransactionGroup ("Gola Auto Cut"), with a failures preprocessor;
+- a cut is kept only if the target loses more than 1 mm3;
+- refused cuts are logged with Revit's messages and shown once in a TaskDialog on the automatic path, and listed by the button;
+- `sync()` was replaced by `apply(doc, insts)`, which must be called outside transactions; all callers were updated.
+
+Tests: `output/gola_wall_unit/test_circular.py` passes. A touch-only box is a candidate but is not cut; an overlap is cut exactly; a run across two cabinets cuts both exactly; the updater path cuts exactly and the channel stays face-hosted. Regressions pass: wall-unit 28/28 and both base-channel auto-cut suites.
+
+Errors met while fixing:
+- Tried re-hosting a channel onto a new project ReferencePlane via `NewFamilyInstance(refPlane.GetReference(), line, symbol)`. It always failed with "does not coincide with the input face", although the plane contains the line exactly (tried edge on the line, extended, offset either side, 3D and plan views). The approach was dropped.
+- Face references taken from GetInstanceGeometry host the channel on the FamilySymbol. Symbol-geometry references (with ComputeReferences) are instance-qualified and host on the instance. A hand-built "<uid>:0:INSTANCE:<stable>" string double-prefixes and is invalid.
+- Test fixture error: the Casework-template test box's solid spans -18.738 .. 1981.262 mm from its insertion point, not 0 .. 2000, which made the void look shifted. Verified with bounding boxes; the family void is aligned 0..Length.
+- Shell escapes: '\n' inside Python-in-heredoc again became literal newlines in the button script and in a TaskDialog string. Fixed with Edit. Prevention: write such files with Write/Edit, not heredoc replacement.
+
+Open: the Countertop81 family is needed to reproduce the circular chain. Workaround given: place the channel on a drawn Reference Plane (Place on Work Plane) so it doesn't depend on the cabinet.
+- Drive verified via API 2026-09-29 02:18Z: both packages carry gola_autocut.py 12115; README 8247 (TwoClick) / 6166 (Wall Unit); zips 2273174 / 3635755. All match local. The installed E:\pyRevit Extensions copy was updated after confirming it matched the last shipped version.

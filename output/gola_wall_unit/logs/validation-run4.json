@@ -1,0 +1,180 @@
+{
+  "stage": "complete", 
+  "reopened": {
+    "types": [
+      "Wall Unit - Upper Cabinet Door Pull"
+    ], 
+    "placement_type": "CurveBased"
+  }, 
+  "preview": "E:\\Claude\\3D-Model-Workflow\\output\\gola_wall_unit\\preview\\wall_unit_section", 
+  "family_form_volumes_after_voids_mm3": [
+    82252.960192511222, 
+    82253.318600295301
+  ], 
+  "placement_plane_mm": 50.0, 
+  "section_area_mm2_design": 82.253052686528335, 
+  "template_types": 1, 
+  "family_form_volumes_mm3": [
+    82252.960192511222, 
+    82253.318600295301
+  ], 
+  "old_origin_planes_cleared": [
+    "Reference Plane"
+  ], 
+  "tests": {
+    "wall_face_run_direction": [
+      -1.0, 
+      0.0, 
+      0.0
+    ], 
+    "cuts": {
+      "length_mm": 1500.0, 
+      "wall_face": {
+        "removed_mm3": 629999.99999952316, 
+        "added": [
+          "3801"
+        ], 
+        "profile_mm3": 123379.44028876403
+      }, 
+      "box_depth_300_flipped": {
+        "removed_mm3": 450000.00000393391, 
+        "profile_mm3": 123379.97790044030, 
+        "added": [], 
+        "removed_ids": [], 
+        "blocked": []
+      }, 
+      "box_depth_300": {
+        "removed_mm3": 9000000.0000039339, 
+        "profile_mm3": 123379.44028876579, 
+        "added": [], 
+        "removed_ids": [], 
+        "blocked": []
+      }, 
+      "blocked_box": {
+        "removed_mm3": 600000.00000023842, 
+        "added": [
+          "5401"
+        ], 
+        "blocked": []
+      }, 
+      "profile_mm3_uncut": 123379.44028876579, 
+      "box_depth_20": {
+        "removed_mm3": 600000.00000023842, 
+        "profile_mm3": 123379.44028876579, 
+        "added": [
+          "4606"
+        ], 
+        "removed_ids": [], 
+        "blocked": []
+      }
+    }, 
+    "wall_face_host": "Wall", 
+    "A_regrip": {
+      "length_mm": 2400.0, 
+      "volume_mm3": 197407.10446202700, 
+      "extents_mm": [
+        -6.2638119951302638e-12, 
+        8.4302897995769402e-12, 
+        -19.000000000000004, 
+        2399.9999999999936, 
+        26.900000000008426, 
+        0.99999999999999267
+      ]
+    }, 
+    "wall_face": {
+      "left_to_right": {
+        "offset_5mm": [
+          [
+            -6.4972027757903567e-12, 
+            1499.9999999999936
+          ], 
+          [
+            8.3922202520625443e-12, 
+            26.900000000008504
+          ], 
+          [
+            -13.999999999997900, 
+            6.0000000000018847
+          ]
+        ], 
+        "unflipped": [
+          [
+            -6.4972027757903567e-12, 
+            1499.9999999999936
+          ], 
+          [
+            8.3922202520625443e-12, 
+            26.900000000008504
+          ], 
+          [
+            -19.000000000000011, 
+            0.99999999999977263
+          ]
+        ], 
+        "flipped": [
+          [
+            -6.4972027757903567e-12, 
+            1499.9999999999936
+          ], 
+          [
+            -26.899999999991717, 
+            8.3922202520625443e-12
+          ], 
+          [
+            -19.000000000000011, 
+            0.99999999999977263
+          ]
+        ]
+      }, 
+      "right_to_left": {
+        "unflipped": [
+          [
+            6.4972027757903567e-12, 
+            1500.0000000000066
+          ], 
+          [
+            -26.900000000008504, 
+            -8.3922202520625443e-12
+          ], 
+          [
+            -19.000000000000011, 
+            0.99999999999977263
+          ]
+        ], 
+        "flipped": [
+          [
+            6.4972027757903567e-12, 
+            1500.0000000000066
+          ], 
+          [
+            -8.3922202520625443e-12, 
+            26.899999999991717
+          ], 
+          [
+            -19.000000000000011, 
+            0.99999999999977263
+          ]
+        ]
+      }
+    }, 
+    "materials": [
+      "Gola - Brushed Stainless Finish"
+    ], 
+    "A_level": {
+      "length_mm": 1500.0, 
+      "end_ok": true, 
+      "volume_mm3": 123379.44028876678, 
+      "start_ok": true, 
+      "host": "Level", 
+      "extents_mm": [
+        -6.2638119951302638e-12, 
+        8.4302897995769402e-12, 
+        -19.000000000000004, 
+        1499.9999999999939, 
+        26.900000000008426, 
+        0.99999999999999267
+      ]
+    }
+  }, 
+  "rfa": "E:/Claude/3D-Model-Workflow/output/gola_wall_unit/Richelieu_Gola_Wall_Unit_Upper_Cabinet_2025.rfa"
+}

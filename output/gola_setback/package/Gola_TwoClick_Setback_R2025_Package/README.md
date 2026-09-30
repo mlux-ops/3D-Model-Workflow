@@ -76,6 +76,20 @@ Revit won't let a two-click (line-based) family cut a wall on its own; it only d
 - In testing, a Casework family with "Cut with Voids When Loaded" off was still cut.
 - Anything Revit refuses to cut is listed in the log and the button output.
 
+### If Revit reports "a circular chain of references" (2026-09-29)
+
+This happens when a channel sits on a face of the element it cuts, and that element's own geometry makes the cut feed back into the face the channel hangs on. It was seen on *Countertop81* in the Belmont model. A plain box cabinet cut this way works (tested). The add-in now:
+
+- tries each cut separately, so one refused cut no longer blocks the others;
+- keeps a cut only if it actually removes material, so walls, vanities or fixtures that merely touch the channel are no longer cut;
+- shows a short message naming any element Revit refused, with Revit's reason (the button lists them too).
+
+**Workaround for an element that refuses:**
+1. Draw a **Reference Plane** on the cabinet face.
+2. Place the channel with **Place on Work Plane → Pick a plane**, picking that reference plane.
+
+The channel then doesn't depend on the cabinet, and the cut goes through.
+
 ## Verification
 
 Revit 2025, headless, `validation.json`, re-derived by `verify_setback.py`. All gates pass for both families:

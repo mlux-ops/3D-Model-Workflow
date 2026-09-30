@@ -1,55 +1,12 @@
 {
   "log": [
-    "2026-09-28T10:32:41.502000  Gola Auto Cut updater registered", 
-    "2026-09-28T10:32:46.464000  Project1: instance 5528 cut +[5523L] -[]", 
-    "2026-09-28T10:32:46.625000  Project1: instance 5533 cut +[5524L] -[]", 
-    "2026-09-28T10:32:46.705000  Project1: instance 5536 cut +[5525L] -[]", 
-    "2026-09-28T10:32:46.731000  Project1: instance 5536 cut +[] -[5525L]"
+    "2026-09-28T21:13:25.968000  Gola Auto Cut updater registered", 
+    "2026-09-28T21:13:30.974000  Project1: Gola 5528 cut +[5523L] -[]", 
+    "2026-09-28T21:13:31.098000  Project1: Gola 5533 cut +[5524L] -[]", 
+    "2026-09-28T21:13:31.164000  Project1: Gola 5536 cut +[5525L] -[]", 
+    "2026-09-28T21:13:31.189000  Project1: Gola 5536 cut +[] -[5525L]", 
+    "2026-09-28T21:13:31.219000  Project1: Gola 5540 cut +[5526L] -[]"
   ], 
-  "addin_id": "d49d3677-61c4-47a8-bfff-49e6616d54c1", 
-  "registered": true, 
-  "stage": "complete", 
-  "tests": {
-    "T3_vertical_face_1500": {
-      "expected_mm3": 3236184.8598002838, 
-      "removed_mm3": 3236184.8598003387, 
-      "host": "Wall"
-    }, 
-    "T1_horizontal_face_1500": {
-      "expected_mm3": 2988599.0974791544, 
-      "removed_mm3": 2988600.7087969780, 
-      "host": "Wall"
-    }, 
-    "T6_button": {
-      "removed_before_button_mm3": 0.0, 
-      "expected_mm3": 2988599.0974791544, 
-      "changes": 1, 
-      "removed_mm3": 2988600.7087969780
-    }, 
-    "T2_regrip_2400": {
-      "expected_mm3": 4781758.5559666464, 
-      "removed_mm3": 4781761.1340746880
-    }, 
-    "T5_moved_off_wall": {
-      "cut_ids": [], 
-      "expected_mm3": 0.0, 
-      "removed_mm3": 0.0
-    }, 
-    "T4_unhosted_level_1500": {
-      "cut_ids": [
-        "5525"
-      ], 
-      "expected_mm3": 2988599.0974791544, 
-      "removed_mm3": 2988600.7087962627, 
-      "host": "Level"
-    }
-  }, 
-  "untouched_walls_check": {
-    "5525": 0.0, 
-    "5526": 2988600.7087969780, 
-    "5523": 4781761.1340746880, 
-    "5524": 3236184.8598003387
-  }, 
   "queued_after": [
     [
       "walls", 
@@ -102,12 +59,45 @@
     [
       "T6 place", 
       []
-    ], 
-    [
-      "Cut Gola Recesses", 
-      []
     ]
   ], 
+  "stage": "complete", 
+  "addin_id": "d49d3677-61c4-47a8-bfff-49e6616d54c1", 
+  "tests": {
+    "T1_horizontal_face_1500": {
+      "host": "Wall", 
+      "expected_mm3": 2988599.0974791544, 
+      "removed_mm3": 2988600.7087969780
+    }, 
+    "T3_vertical_face_1500": {
+      "host": "Wall", 
+      "expected_mm3": 3236184.8598002838, 
+      "removed_mm3": 3236184.8598003387
+    }, 
+    "T6_button": {
+      "removed_before_button_mm3": 0.0, 
+      "expected_mm3": 2988599.0974791544, 
+      "changes": 1, 
+      "removed_mm3": 2988600.7087969780
+    }, 
+    "T4_unhosted_level_1500": {
+      "host": "Level", 
+      "cut_ids": [
+        "5525"
+      ], 
+      "expected_mm3": 2988599.0974791544, 
+      "removed_mm3": 2988600.7087962627
+    }, 
+    "T2_regrip_2400": {
+      "expected_mm3": 4781758.5559666464, 
+      "removed_mm3": 4781761.1340746880
+    }, 
+    "T5_moved_off_wall": {
+      "cut_ids": [], 
+      "expected_mm3": 0.0, 
+      "removed_mm3": 0.0
+    }
+  }, 
   "flushed": [
     [
       "walls", 
@@ -125,13 +115,23 @@
           [
             "5523"
           ], 
+          [], 
+          [], 
           []
         ]
       ]
     ], 
     [
       "T2", 
-      []
+      [
+        [
+          "5528", 
+          [], 
+          [], 
+          [], 
+          []
+        ]
+      ]
     ], 
     [
       "T3", 
@@ -141,6 +141,8 @@
           [
             "5524"
           ], 
+          [], 
+          [], 
           []
         ]
       ]
@@ -153,6 +155,8 @@
           [
             "5525"
           ], 
+          [], 
+          [], 
           []
         ]
       ]
@@ -165,17 +169,22 @@
           [], 
           [
             "5525"
-          ]
+          ], 
+          [], 
+          []
         ]
       ]
     ], 
     [
       "T6 place", 
       []
-    ], 
-    [
-      "Cut Gola Recesses", 
-      []
     ]
-  ]
+  ], 
+  "untouched_walls_check": {
+    "5524": 3236184.8598003387, 
+    "5525": 0.0, 
+    "5526": 2988600.7087969780, 
+    "5523": 4781761.1340746880
+  }, 
+  "registered": true
 }
