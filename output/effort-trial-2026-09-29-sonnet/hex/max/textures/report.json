@@ -1,0 +1,3569 @@
+{
+ "generated": "2026-09-29",
+ "atlas": {
+  "size_px": [
+   4489,
+   4536
+  ],
+  "px_per_in": 64.0,
+  "columns": 8,
+  "rows": 7,
+  "faces": 56,
+  "module_across_flats_in": 10.125,
+  "face_across_flats_in": 10.0,
+  "joint_in": 0.125,
+  "joint_px": 8.0,
+  "orientation": "flat-top hexagons",
+  "rotation_convention": "atlas = Rot(rotation_deg) applied after an optional top-bottom mirror (mirrored) of the render face, in image coordinates (x right, y down; positive = clockwise on screen); rotation_deg and mirrored in each face entry are source A's, both sources are listed in sources[]",
+  "render_scale": {
+   "render_px_per_in_if_10in_across_flats": 31.091605,
+   "atlas_px_per_render_px": 2.058433
+  }
+ },
+ "size_assumption": "10.000 in across the flats (11.547 in point to point), as fixed by the brief; if the tile is really 10 in point to point every dimension scales by 0.866",
+ "joint_colour_rgb": [
+  211,
+  202,
+  188
+ ],
+ "suggested_revit_bump_amount": 100,
+ "suggested_revit_bump_amount_note": "Revit editor scale (whole number, 100 x the stored float). Start value taken from the repo calibration for a full-range 16-bit dimensional map (about 2.6 mm full scale, 1.6 mm joint); this map is 2.2 mm full scale with a 1.6 mm joint. Not checked in Revit in this trial; the pattern relief is a smaller share of the grey range than the joint step, so raise it if the pattern reads soft.",
+ "formats": {
+  "Color.png": {
+   "ihdr_width": 4489,
+   "ihdr_height": 4536,
+   "ihdr_bit_depth": 8,
+   "ihdr_colour_type": 2,
+   "expected": "4489x4536 8-bit RGB (colour type 2)",
+   "ok": true,
+   "file_bytes": 17476330
+  },
+  "Bump16.png": {
+   "ihdr_width": 4489,
+   "ihdr_height": 4536,
+   "ihdr_bit_depth": 16,
+   "ihdr_colour_type": 0,
+   "expected": "4489x4536 16-bit greyscale (colour type 0)",
+   "ok": true,
+   "file_bytes": 14721882
+  },
+  "face_ids.png": {
+   "ihdr_width": 4489,
+   "ihdr_height": 4536,
+   "ihdr_bit_depth": 16,
+   "ihdr_colour_type": 0,
+   "expected": "4489x4536 16-bit greyscale (colour type 0)",
+   "ok": true,
+   "file_bytes": 136729
+  }
+ },
+ "face_ids": {
+  "unique_values_min_max": [
+   0,
+   56
+  ],
+  "all_56_indices_present": true,
+  "joint_pixels_are_zero_count": 497560,
+  "joint_pixel_fraction": 0.024436,
+  "face_area_px_min_mean_max": [
+   354724,
+   354724.0,
+   354724
+  ],
+  "ideal_10in_flat_hexagon_area_px": 354724.00539,
+  "mismatch_vs_geometry_pixels": 0,
+  "voronoi_nearest_centre_mismatch_in_200000_random_face_pixels": 0
+ },
+ "joints": {
+  "edges_measured": 168,
+  "positions_per_edge": 9,
+  "horizontal_edges_face_id_zero_run_width_px": {
+   "n": 504,
+   "mean": 8.0,
+   "min": 8.0,
+   "max": 8.0
+  },
+  "horizontal_edges_bump_half_depth_width_px": {
+   "n": 504,
+   "mean": 8.038988,
+   "min": 7.9,
+   "max": 8.35
+  },
+  "slanted_edges_face_id_zero_run_width_px": {
+   "n": 1008,
+   "mean": 7.945833,
+   "min": 6.95,
+   "max": 8.1
+  },
+  "slanted_edges_bump_half_depth_width_px": {
+   "n": 1008,
+   "mean": 8.019792,
+   "min": 7.8,
+   "max": 8.3
+  },
+  "all_edges_face_id_zero_run_px_mean_min_max": [
+   7.963889,
+   6.95,
+   8.1
+  ],
+  "all_edges_bump_half_depth_width_px_mean_min_max": [
+   8.02619,
+   7.8,
+   8.35
+  ],
+  "area_over_length": {
+   "joint_area_px": 497560.0,
+   "total_centreline_length_px": 62852.659705,
+   "mean_width_px": 7.916292,
+   "ideal_joint_area_px_exact_hexagons": 499717.442593,
+   "measured_over_ideal_area": 0.995683,
+   "note": "area / length is below 8 px because the three bands overlap at each of the 112 vertices; the 0.5 % area shortfall against the exact-hexagon area is the atlas width 4489 px versus 4489.5 px"
+  },
+  "vertical_scan_run_lengths_of_joint_pixels": {
+   "scan_lines": 642,
+   "runs": 6135,
+   "most_common_run_lengths_px": [
+    [
+     8,
+     2749
+    ],
+    [
+     16,
+     2536
+    ],
+    [
+     4,
+     424
+    ],
+    [
+     15,
+     310
+    ]
+   ]
+  },
+  "horizontal_scan_run_lengths_of_joint_pixels": {
+   "scan_lines": 648,
+   "runs": 5148,
+   "most_common_run_lengths_px": [
+    [
+     9,
+     4132
+    ],
+    [
+     10,
+     896
+    ],
+    [
+     385,
+     16
+    ],
+    [
+     387,
+     16
+    ]
+   ]
+  },
+  "expected": {
+   "normal_width_px": 8.0,
+   "normal_width_in": 0.125,
+   "horizontal_joint_vertical_run_px": 8.0,
+   "slanted_joint_horizontal_run_px": 9.237604,
+   "slanted_joint_vertical_run_px": 16.0
+  }
+ },
+ "wrap_seam_steps": {
+  "colour_8bit_levels": {
+   "x_wrap_left_right": {
+    "seam_step_mean_abs": 1.131026,
+    "interior_pair_mean_abs_median": 1.084178,
+    "interior_pair_mean_abs_p99": 2.069326,
+    "interior_pair_mean_abs_max": 2.589212,
+    "seam_over_interior_median": 1.04321,
+    "seam_percentile_rank_among_interior_pairs": 0.569519,
+    "per_pixel_p99_seam": 16.216667,
+    "per_pixel_p99_interior_pooled": 7.666667,
+    "per_pixel_max_seam": 25.333334,
+    "per_pixel_max_interior_pooled": 35.0,
+    "seam_ok_not_above_interior_p99": true
+   },
+   "y_wrap_top_bottom": {
+    "seam_step_mean_abs": 0.401129,
+    "interior_pair_mean_abs_median": 1.087696,
+    "interior_pair_mean_abs_p99": 1.751167,
+    "interior_pair_mean_abs_max": 9.625604,
+    "seam_over_interior_median": 0.368788,
+    "seam_percentile_rank_among_interior_pairs": 0.001323,
+    "per_pixel_p99_seam": 3.0,
+    "per_pixel_p99_interior_pooled": 8.666667,
+    "per_pixel_max_seam": 6.0,
+    "per_pixel_max_interior_pooled": 37.333332,
+    "seam_ok_not_above_interior_p99": true
+   }
+  },
+  "bump_16bit_levels": {
+   "x_wrap_left_right": {
+    "seam_step_mean_abs": 772.736572,
+    "interior_pair_mean_abs_median": 411.103836,
+    "interior_pair_mean_abs_p99": 1139.046887,
+    "interior_pair_mean_abs_max": 1557.244263,
+    "seam_over_interior_median": 1.879663,
+    "seam_percentile_rank_among_interior_pairs": 0.728387,
+    "per_pixel_p99_seam": 29949.849609,
+    "per_pixel_p99_interior_pooled": 4120.0,
+    "per_pixel_max_seam": 35100.0,
+    "per_pixel_max_interior_pooled": 44627.0,
+    "seam_ok_not_above_interior_p99": true,
+    "seam_step_mean_abs_mm": 0.025941,
+    "interior_pair_mean_abs_median_mm": 0.013801,
+    "interior_pair_mean_abs_p99_mm": 0.038238
+   },
+   "y_wrap_top_bottom": {
+    "seam_step_mean_abs": 168.159271,
+    "interior_pair_mean_abs_median": 426.83136,
+    "interior_pair_mean_abs_p99": 1483.246045,
+    "interior_pair_mean_abs_max": 14022.980469,
+    "seam_over_interior_median": 0.393971,
+    "seam_percentile_rank_among_interior_pairs": 0.004631,
+    "per_pixel_p99_seam": 1610.47998,
+    "per_pixel_p99_interior_pooled": 4562.0,
+    "per_pixel_max_seam": 2295.0,
+    "per_pixel_max_interior_pooled": 40609.0,
+    "seam_ok_not_above_interior_p99": true,
+    "seam_step_mean_abs_mm": 0.005645,
+    "interior_pair_mean_abs_median_mm": 0.014329,
+    "interior_pair_mean_abs_p99_mm": 0.049792
+   }
+  }
+ },
+ "relief": {
+  "mm_per_bump_level": 3.4e-05,
+  "bump_full_scale_mm": 2.2,
+  "face_plane_level": 47662,
+  "face_plane_mm_above_joint_floor": 1.600006,
+  "joint_floor_level_values": [
+   0,
+   0
+  ],
+  "joint_depth_mm": 1.600006,
+  "matte_face_distinct_levels": 1,
+  "matte_max_abs_dev_from_face_plane_mm": 0.0,
+  "shading_light_azimuths_deg": {
+   "light_B": 236.74788,
+   "light_R_render_axis": 146.74788
+  },
+  "shading_elevation_deg": 20.0,
+  "types": {
+   "matte": {
+    "faces": 32,
+    "pixels": 11209726,
+    "height_mm_above_joint_floor_min_p1_median_p99_max": [
+     1.600006,
+     1.600006,
+     1.600006,
+     1.600006,
+     1.600006
+    ],
+    "relief_vs_face_plane_mm_min_max": [
+     0.0,
+     0.0
+    ],
+    "pattern_relief_p1_to_p99_mm": 0.0,
+    "pattern_relief_rms_about_type_mean_mm": 0.0,
+    "deepest_pattern_point_below_face_plane_mm": -0.0,
+    "clearance_deepest_point_to_joint_floor_mm": 1.600006,
+    "clearance_as_fraction_of_joint_depth": 1.0,
+    "slope_rms_mm_per_mm": 0.0,
+    "slope_p99_mm_per_mm": 0.0,
+    "relief_p1_to_p99_as_fraction_of_full_grey_range": 0.0,
+    "lambert_ratio_std_light_B_20deg": 0.0,
+    "lambert_ratio_std_light_R_20deg": 0.0
+   },
+   "raw": {
+    "faces": 11,
+    "pixels": 3853344,
+    "height_mm_above_joint_floor_min_p1_median_p99_max": [
+     1.168399,
+     1.349139,
+     1.600543,
+     1.845402,
+     2.023288
+    ],
+    "relief_vs_face_plane_mm_min_max": [
+     -0.431607,
+     0.423282
+    ],
+    "pattern_relief_p1_to_p99_mm": 0.496263,
+    "pattern_relief_rms_about_type_mean_mm": 0.107853,
+    "deepest_pattern_point_below_face_plane_mm": 0.431607,
+    "clearance_deepest_point_to_joint_floor_mm": 1.168399,
+    "clearance_as_fraction_of_joint_depth": 0.730246,
+    "slope_rms_mm_per_mm": 0.087953,
+    "slope_p99_mm_per_mm": 0.204826,
+    "relief_p1_to_p99_as_fraction_of_full_grey_range": 0.225574,
+    "lambert_ratio_std_light_B_20deg": 0.15149,
+    "lambert_ratio_std_light_R_20deg": 0.150063
+   },
+   "chiseled": {
+    "faces": 13,
+    "pixels": 4553954,
+    "height_mm_above_joint_floor_min_p1_median_p99_max": [
+     1.100017,
+     1.100017,
+     1.364681,
+     1.600006,
+     1.600006
+    ],
+    "relief_vs_face_plane_mm_min_max": [
+     -0.499989,
+     0.0
+    ],
+    "pattern_relief_p1_to_p99_mm": 0.499989,
+    "pattern_relief_rms_about_type_mean_mm": 0.13591,
+    "deepest_pattern_point_below_face_plane_mm": 0.499989,
+    "clearance_deepest_point_to_joint_floor_mm": 1.100017,
+    "clearance_as_fraction_of_joint_depth": 0.687508,
+    "slope_rms_mm_per_mm": 0.177232,
+    "slope_p99_mm_per_mm": 0.438076,
+    "relief_p1_to_p99_as_fraction_of_full_grey_range": 0.227268,
+    "lambert_ratio_std_light_B_20deg": 0.254904,
+    "lambert_ratio_std_light_R_20deg": 0.282729
+   },
+   "chiseled_vert": {
+    "faces": 4,
+    "pixels": 1401224,
+    "height_mm_above_joint_floor_min_p1_median_p99_max": [
+     1.100017,
+     1.100017,
+     1.364514,
+     1.600006,
+     1.600006
+    ],
+    "relief_vs_face_plane_mm_min_max": [
+     -0.499989,
+     0.0
+    ],
+    "pattern_relief_p1_to_p99_mm": 0.499989,
+    "pattern_relief_rms_about_type_mean_mm": 0.135627,
+    "deepest_pattern_point_below_face_plane_mm": 0.499989,
+    "clearance_deepest_point_to_joint_floor_mm": 1.100017,
+    "clearance_as_fraction_of_joint_depth": 0.687508,
+    "slope_rms_mm_per_mm": 0.173723,
+    "slope_p99_mm_per_mm": 0.423821,
+    "relief_p1_to_p99_as_fraction_of_full_grey_range": 0.227268,
+    "lambert_ratio_std_light_B_20deg": 0.223137,
+    "lambert_ratio_std_light_R_20deg": 0.311404
+   },
+   "chiseled_diagS": {
+    "faces": 6,
+    "pixels": 2101820,
+    "height_mm_above_joint_floor_min_p1_median_p99_max": [
+     1.100017,
+     1.100017,
+     1.364614,
+     1.600006,
+     1.600006
+    ],
+    "relief_vs_face_plane_mm_min_max": [
+     -0.499989,
+     0.0
+    ],
+    "pattern_relief_p1_to_p99_mm": 0.499989,
+    "pattern_relief_rms_about_type_mean_mm": 0.134517,
+    "deepest_pattern_point_below_face_plane_mm": 0.499989,
+    "clearance_deepest_point_to_joint_floor_mm": 1.100017,
+    "clearance_as_fraction_of_joint_depth": 0.687508,
+    "slope_rms_mm_per_mm": 0.176941,
+    "slope_p99_mm_per_mm": 0.439467,
+    "relief_p1_to_p99_as_fraction_of_full_grey_range": 0.227268,
+    "lambert_ratio_std_light_B_20deg": 0.186462,
+    "lambert_ratio_std_light_R_20deg": 0.327777
+   },
+   "chiseled_diagF": {
+    "faces": 3,
+    "pixels": 1050910,
+    "height_mm_above_joint_floor_min_p1_median_p99_max": [
+     1.100017,
+     1.100017,
+     1.365152,
+     1.600006,
+     1.600006
+    ],
+    "relief_vs_face_plane_mm_min_max": [
+     -0.499989,
+     0.0
+    ],
+    "pattern_relief_p1_to_p99_mm": 0.499989,
+    "pattern_relief_rms_about_type_mean_mm": 0.139025,
+    "deepest_pattern_point_below_face_plane_mm": 0.499989,
+    "clearance_deepest_point_to_joint_floor_mm": 1.100017,
+    "clearance_as_fraction_of_joint_depth": 0.687508,
+    "slope_rms_mm_per_mm": 0.18237,
+    "slope_p99_mm_per_mm": 0.451683,
+    "relief_p1_to_p99_as_fraction_of_full_grey_range": 0.227268,
+    "lambert_ratio_std_light_B_20deg": 0.380782,
+    "lambert_ratio_std_light_R_20deg": 0.039637
+   }
+  },
+  "pattern_faces_raw_and_chiseled": {
+   "deepest_point_mm_above_joint_floor": 1.100017,
+   "clearance_to_joint_floor_mm": 1.100017,
+   "joint_depth_mm": 1.600006,
+   "grey_range_share_joint_step": 0.727276
+  }
+ },
+ "grooves_measured_from_bump": {
+  "1": {
+   "orientation": "diagF",
+   "measured_groove_direction_deg": 150.255119,
+   "expected_direction_deg": 150.0,
+   "deviation_deg": 0.255119,
+   "pitch_px": 12.701157,
+   "pitch_mm": 5.040772,
+   "peak_to_annulus_mean_power": 1093.889458
+  },
+  "6": {
+   "orientation": "diagS",
+   "measured_groove_direction_deg": 29.92213,
+   "expected_direction_deg": 30.0,
+   "deviation_deg": -0.07787,
+   "pitch_px": 12.769857,
+   "pitch_mm": 5.068037,
+   "peak_to_annulus_mean_power": 1108.170723
+  },
+  "9": {
+   "orientation": "diagS",
+   "measured_groove_direction_deg": 30.230801,
+   "expected_direction_deg": 30.0,
+   "deviation_deg": 0.230801,
+   "pitch_px": 12.730077,
+   "pitch_mm": 5.052249,
+   "peak_to_annulus_mean_power": 1110.654261
+  },
+  "15": {
+   "orientation": "vert",
+   "measured_groove_direction_deg": 90.0,
+   "expected_direction_deg": 90.0,
+   "deviation_deg": 0.0,
+   "pitch_px": 12.720497,
+   "pitch_mm": 5.048447,
+   "peak_to_annulus_mean_power": 1122.14052
+  },
+  "18": {
+   "orientation": "vert",
+   "measured_groove_direction_deg": 90.0,
+   "expected_direction_deg": 90.0,
+   "deviation_deg": 0.0,
+   "pitch_px": 12.720497,
+   "pitch_mm": 5.048447,
+   "peak_to_annulus_mean_power": 1116.088155
+  },
+  "23": {
+   "orientation": "diagF",
+   "measured_groove_direction_deg": 149.769199,
+   "expected_direction_deg": 150.0,
+   "deviation_deg": -0.230801,
+   "pitch_px": 12.730077,
+   "pitch_mm": 5.052249,
+   "peak_to_annulus_mean_power": 1189.679734
+  },
+  "26": {
+   "orientation": "diagS",
+   "measured_groove_direction_deg": 29.92213,
+   "expected_direction_deg": 30.0,
+   "deviation_deg": -0.07787,
+   "pitch_px": 12.769857,
+   "pitch_mm": 5.068037,
+   "peak_to_annulus_mean_power": 1124.818234
+  },
+  "29": {
+   "orientation": "diagS",
+   "measured_groove_direction_deg": 29.92213,
+   "expected_direction_deg": 30.0,
+   "deviation_deg": -0.07787,
+   "pitch_px": 12.769857,
+   "pitch_mm": 5.068037,
+   "peak_to_annulus_mean_power": 1124.259742
+  },
+  "38": {
+   "orientation": "vert",
+   "measured_groove_direction_deg": 90.0,
+   "expected_direction_deg": 90.0,
+   "deviation_deg": 0.0,
+   "pitch_px": 12.720497,
+   "pitch_mm": 5.048447,
+   "peak_to_annulus_mean_power": 1134.870149
+  },
+  "40": {
+   "orientation": "vert",
+   "measured_groove_direction_deg": 90.0,
+   "expected_direction_deg": 90.0,
+   "deviation_deg": 0.0,
+   "pitch_px": 12.720497,
+   "pitch_mm": 5.048447,
+   "peak_to_annulus_mean_power": 1120.003878
+  },
+  "44": {
+   "orientation": "diagF",
+   "measured_groove_direction_deg": 150.07787,
+   "expected_direction_deg": 150.0,
+   "deviation_deg": 0.07787,
+   "pitch_px": 12.769857,
+   "pitch_mm": 5.068037,
+   "peak_to_annulus_mean_power": 1095.673003
+  },
+  "49": {
+   "orientation": "diagS",
+   "measured_groove_direction_deg": 30.230801,
+   "expected_direction_deg": 30.0,
+   "deviation_deg": 0.230801,
+   "pitch_px": 12.730077,
+   "pitch_mm": 5.052249,
+   "peak_to_annulus_mean_power": 1099.969445
+  },
+  "52": {
+   "orientation": "diagS",
+   "measured_groove_direction_deg": 30.230801,
+   "expected_direction_deg": 30.0,
+   "deviation_deg": 0.230801,
+   "pitch_px": 12.730077,
+   "pitch_mm": 5.052249,
+   "peak_to_annulus_mean_power": 1064.729589
+  }
+ },
+ "colour": {
+  "joint_rgb_used": [
+   211.0,
+   202.0,
+   188.0
+  ],
+  "joint_core_mean_rgb_measured": [
+   211.0,
+   202.0,
+   188.0
+  ],
+  "joint_core_std_rgb": [
+   0.0,
+   0.0,
+   0.0
+  ],
+  "face_mean_rgb_atlas_by_type": {
+   "matte": [
+    243.68174,
+    231.160368,
+    207.083422
+   ],
+   "raw": [
+    244.159994,
+    232.266104,
+    207.721421
+   ],
+   "chiseled": [
+    243.326863,
+    231.999296,
+    207.673683
+   ]
+  },
+  "face_mean_rgb_render_by_type": {
+   "matte": [
+    243.640903,
+    231.110027,
+    206.918446
+   ],
+   "raw": [
+    243.928753,
+    232.097592,
+    207.750771
+   ],
+   "chiseled": [
+    243.418841,
+    232.057413,
+    207.738287
+   ]
+  },
+  "luminance_std_within_type_pixels": {
+   "matte": 3.255219,
+   "raw": 2.906037,
+   "chiseled": 8.072851
+  },
+  "joint_colour_note": "darkest across-joint bin of the render (about 13 % darker than the face tone); the render joint is only about 1.5 px wide, so its colour is mixed with the face edge and is a lower bound of the true joint tone"
+ },
+ "mix": {
+  "render_whole_hexagons_counted": 39,
+  "render_counts": {
+   "matte": 22,
+   "raw": 8,
+   "chiseled": 9
+  },
+  "render_fractions": {
+   "matte": 0.564103,
+   "raw": 0.205128,
+   "chiseled": 0.230769
+  },
+  "atlas_counts": {
+   "matte": 32,
+   "raw": 11,
+   "chiseled": 13
+  },
+  "atlas_fractions": {
+   "matte": 0.571429,
+   "raw": 0.196429,
+   "chiseled": 0.232143
+  },
+  "abs_difference_percentage_points": {
+   "matte": 0.732601,
+   "raw": 0.869963,
+   "chiseled": 0.137363
+  },
+  "render_chiseled_orientation_counts": {
+   "vert": 3,
+   "diagS": 4,
+   "diagF": 2
+  },
+  "atlas_chiseled_orientation_counts": {
+   "vert": 4,
+   "diagS": 6,
+   "diagF": 3
+  },
+  "render_chiseled_orientation_fractions": {
+   "vert": 0.333333,
+   "diagS": 0.444444,
+   "diagF": 0.222222
+  },
+  "atlas_chiseled_orientation_fractions": {
+   "vert": 0.307692,
+   "diagS": 0.461538,
+   "diagF": 0.230769
+  },
+  "render_note": "39 whole hexagons; the partly visible hexagons at the image border are not counted"
+ },
+ "arrangement": {
+  "ring1_edges": 168,
+  "random_arrangements": 20000,
+  "same_type_neighbour_pairs": {
+   "matte": {
+    "observed": 46,
+    "random_mean": 54.1138,
+    "random_std": 3.050877,
+    "z": -2.659498,
+    "fraction_of_random_with_count_le_observed": 0.0018
+   },
+   "raw": {
+    "observed": 0,
+    "random_mean": 5.97625,
+    "random_std": 1.927923,
+    "z": -3.099839,
+    "fraction_of_random_with_count_le_observed": 0.0002
+   },
+   "chiseled": {
+    "observed": 0,
+    "random_mean": 8.50915,
+    "random_std": 2.194884,
+    "z": -3.876811,
+    "fraction_of_random_with_count_le_observed": 0.0
+   }
+  },
+  "chiseled_same_orientation_pairs_ring1_and_ring2": 0,
+  "dispersion_mean_nearest_neighbour_distance": {
+   "raw": {
+    "observed_px": 1122.274326,
+    "random_mean_px": 797.356611,
+    "random_std_px": 76.675502,
+    "observed_modules": 1.731905,
+    "random_mean_modules": 1.230489,
+    "z": 4.237569,
+    "fraction_of_random_le_observed": 0.99995
+   },
+   "chiseled": {
+    "observed_px": 1135.628046,
+    "random_mean_px": 755.287492,
+    "random_std_px": 58.663859,
+    "observed_modules": 1.752512,
+    "random_mean_modules": 1.165567,
+    "z": 6.483388,
+    "fraction_of_random_le_observed": 1.0
+   },
+   "raw_and_chiseled": {
+    "observed_px": 667.713213,
+    "random_mean_px": 662.919493,
+    "random_std_px": 16.314443,
+    "observed_modules": 1.030422,
+    "random_mean_modules": 1.023024,
+    "z": 0.293833,
+    "fraction_of_random_le_observed": 0.57705
+   }
+  },
+  "pattern_statistics_vs_random_permutations": {
+   "random_arrangements": 5000,
+   "peak_tex": {
+    "observed": 5.091507,
+    "random_median": 3.890061,
+    "random_p95": 6.280262,
+    "fraction_of_random_le_observed": 0.846
+   },
+   "peak_raw": {
+    "observed": 3.808751,
+    "random_median": 3.767621,
+    "random_p95": 5.834004,
+    "fraction_of_random_le_observed": 0.516
+   },
+   "peak_chis": {
+    "observed": 4.126829,
+    "random_median": 3.815352,
+    "random_p95": 6.002741,
+    "fraction_of_random_le_observed": 0.612
+   },
+   "collinear_triples_spacing1": {
+    "observed": 6.0,
+    "random_median": 12.0,
+    "random_p95": 18.0,
+    "fraction_of_random_le_observed": 0.0258
+   },
+   "collinear_triples_spacing3": {
+    "observed": 15.0,
+    "random_median": 12.0,
+    "random_p95": 18.0,
+    "fraction_of_random_le_observed": 0.8482
+   },
+   "same_orientation_pairs_ring3": {
+    "observed": 5.0,
+    "random_median": 3.0,
+    "random_p95": 5.0,
+    "fraction_of_random_le_observed": 0.9662
+   },
+   "all_matte_flowers": {
+    "observed": 0.0,
+    "random_median": 0.0,
+    "random_p95": 3.0,
+    "fraction_of_random_le_observed": 0.5002
+   },
+   "note": "peak_* = largest non-zero Fourier component of the torus indicator field of that type, divided by its expectation for a random placement (a period-2 column stripe scores 14 for the textured field); collinear_triples = three textured faces in a straight line at spacing 1 or 2; a value near the random median or below means no periodic structure"
+  },
+  "largest_matte_cluster": {
+   "observed_faces": 32,
+   "matte_faces": 32,
+   "random_mean_faces": 31.6555,
+   "random_std_faces": 0.907645,
+   "random_arrangements": 2000,
+   "note": "at 57 % matte on a hexagonal lattice (site percolation threshold 0.5) one connected matte field is the normal outcome"
+  },
+  "render_for_comparison": {
+   "whole_hexagons": 39,
+   "adjacent_pairs": 92,
+   "random_arrangements": 5000,
+   "same_type_neighbour_pairs": {
+    "matte": {
+     "observed": 20,
+     "random_mean": 28.7308,
+     "random_std": 3.276268,
+     "z": -2.664861
+    },
+    "raw": {
+     "observed": 1,
+     "random_mean": 3.5086,
+     "random_std": 1.577062,
+     "z": -1.590679
+    },
+    "chiseled": {
+     "observed": 1,
+     "random_mean": 4.4968,
+     "random_std": 1.763403,
+     "z": -1.982984
+    }
+   },
+   "dispersion_mean_nearest_neighbour_distance": {
+    "raw": {
+     "observed_px": 534.139353,
+     "random_mean_px": 437.375722,
+     "random_std_px": 64.337994,
+     "observed_modules": 1.696744,
+     "random_mean_modules": 1.389365,
+     "z": 1.503989
+    },
+    "chiseled": {
+     "observed_px": 503.414838,
+     "random_mean_px": 414.340825,
+     "random_std_px": 55.185045,
+     "observed_modules": 1.599145,
+     "random_mean_modules": 1.316193,
+     "z": 1.614097
+    },
+    "raw_and_chiseled": {
+     "observed_px": 314.8025,
+     "random_mean_px": 337.921919,
+     "random_std_px": 17.464206,
+     "observed_modules": 1.0,
+     "random_mean_modules": 1.073441,
+     "z": -1.323817
+    }
+   }
+  }
+ },
+ "repetition": {
+  "method": "NCC = normalised cross-correlation of zero-mean discs (radius 300 atlas px); shift tolerance +-12 atlas px; Raw sweep 5 deg, Matte sweep 15 deg",
+  "raw_whole_face_bump": {
+   "faces": 11,
+   "pairs": 55,
+   "rotation_step_deg": 5,
+   "max_ncc_any_transform": 0.500272,
+   "max_ncc_d6_elements": 0.08156,
+   "max_ncc_off_d6_angles": 0.500272,
+   "median_pair_max_ncc_d6": 0.052938,
+   "p95_pair_max_ncc_d6": 0.070395,
+   "median_pair_max_ncc_off_d6": 0.071328,
+   "top3_pairs": [
+    {
+     "faces": [
+      11,
+      31
+     ],
+     "ncc": 0.5003,
+     "mirror": 1,
+     "rotation_deg": 320,
+     "ncc_best_d6": 0.0572
+    },
+    {
+     "faces": [
+      31,
+      51
+     ],
+     "ncc": 0.465,
+     "mirror": 0,
+     "rotation_deg": 320,
+     "ncc_best_d6": 0.0505
+    },
+    {
+     "faces": [
+      13,
+      17
+     ],
+     "ncc": 0.4606,
+     "mirror": 0,
+     "rotation_deg": 100,
+     "ncc_best_d6": 0.0471
+    }
+   ]
+  },
+  "raw_whole_face_colour": {
+   "faces": 11,
+   "pairs": 55,
+   "rotation_step_deg": 5,
+   "max_ncc_any_transform": 0.541585,
+   "max_ncc_d6_elements": 0.435858,
+   "max_ncc_off_d6_angles": 0.541585,
+   "median_pair_max_ncc_d6": 0.236264,
+   "p95_pair_max_ncc_d6": 0.404361,
+   "median_pair_max_ncc_off_d6": 0.258188,
+   "top3_pairs": [
+    {
+     "faces": [
+      8,
+      28
+     ],
+     "ncc": 0.5416,
+     "mirror": 1,
+     "rotation_deg": 340,
+     "ncc_best_d6": 0.4359
+    },
+    {
+     "faces": [
+      25,
+      28
+     ],
+     "ncc": 0.5267,
+     "mirror": 0,
+     "rotation_deg": 280,
+     "ncc_best_d6": 0.4181
+    },
+    {
+     "faces": [
+      11,
+      28
+     ],
+     "ncc": 0.4817,
+     "mirror": 0,
+     "rotation_deg": 320,
+     "ncc_best_d6": 0.2812
+    }
+   ]
+  },
+  "matte_whole_face_colour": {
+   "faces": 32,
+   "pairs": 496,
+   "rotation_step_deg": 15,
+   "max_ncc_any_transform": 0.46587,
+   "max_ncc_d6_elements": 0.429413,
+   "max_ncc_off_d6_angles": 0.46587,
+   "median_pair_max_ncc_d6": 0.150143,
+   "p95_pair_max_ncc_d6": 0.326946,
+   "median_pair_max_ncc_off_d6": 0.168127,
+   "top3_pairs": [
+    {
+     "faces": [
+      10,
+      27
+     ],
+     "ncc": 0.4659,
+     "mirror": 0,
+     "rotation_deg": 45,
+     "ncc_best_d6": 0.3336
+    },
+    {
+     "faces": [
+      27,
+      33
+     ],
+     "ncc": 0.4596,
+     "mirror": 0,
+     "rotation_deg": 165,
+     "ncc_best_d6": 0.3883
+    },
+    {
+     "faces": [
+      36,
+      41
+     ],
+     "ncc": 0.4578,
+     "mirror": 1,
+     "rotation_deg": 285,
+     "ncc_best_d6": 0.4294
+    }
+   ]
+  },
+  "whole_face_positive_controls": [
+   {
+    "planted": {
+     "mirror": 1,
+     "rotation_deg": 180.0,
+     "shift_px": [
+      -4,
+      3
+     ]
+    },
+    "recovered_transform": [
+     1,
+     180
+    ],
+    "ncc": 0.979161
+   },
+   {
+    "planted": {
+     "mirror": 0,
+     "rotation_deg": 60.0,
+     "shift_px": [
+      5,
+      -2
+     ]
+    },
+    "recovered_transform": [
+     0,
+     300
+    ],
+    "ncc": 0.960978
+   },
+   {
+    "planted": {
+     "mirror": 1,
+     "rotation_deg": 120.0,
+     "shift_px": [
+      0,
+      0
+     ]
+    },
+    "recovered_transform": [
+     1,
+     120
+    ],
+    "ncc": 0.99622
+   }
+  ],
+  "raw_patch_search_bump": {
+   "windows": 22,
+   "window_diameter_atlas_px": 256,
+   "valid_window_centres_half_res": 325123,
+   "max_ncc_d6_elements": 0.2388,
+   "median_ncc_d6_elements": 0.212,
+   "max_ncc_off_d6_null": 0.4473,
+   "median_ncc_off_d6_null": 0.1927,
+   "positive_controls_planted_after_mirror_rot120": {
+    "exact_copy": {
+     "ncc": 1.0,
+     "found_at_planted_position": true
+    },
+    "noisy_copy_noise_std_0.5x": {
+     "ncc": 0.887494,
+     "found_at_planted_position": true
+    }
+   }
+  },
+  "raw_patch_search_colour": {
+   "windows": 22,
+   "window_diameter_atlas_px": 256,
+   "valid_window_centres_half_res": 325123,
+   "max_ncc_d6_elements": 0.5793,
+   "median_ncc_d6_elements": 0.331,
+   "max_ncc_off_d6_null": 0.8235,
+   "median_ncc_off_d6_null": 0.32765,
+   "positive_controls_planted_after_mirror_rot120": {
+    "exact_copy": {
+     "ncc": 1.0,
+     "found_at_planted_position": true
+    },
+    "noisy_copy_noise_std_0.5x": {
+     "ncc": 0.86171,
+     "found_at_planted_position": true
+    }
+   }
+  },
+  "interpretation": [
+   "Bump: whole-face NCC over the 12 D6 elements (mirror x 0/60/.../300 deg, 5 deg-sweep free rotation reported separately) is at the noise floor; the 20/40 deg null transforms and the D6 elements give the same patch-search maximum, so the bump shows no reuse beyond what a random 256 px window search finds by chance.",
+   "Colour: the layout keeps repeated use of one render face at rotations at least 17 deg away from any D6 element, so the D6 tests are clean, but the 20/40 deg patch search finds a colour window pair with NCC 0.81: Raw faces are built from 8 source faces (11 Raw faces, each a blend of two), so partial colour reuse at other angles is measurable. It is faint, low contrast albedo mottling and was not recognisable in the side-by-side review.",
+   "Whole-face colour NCC medians of 0.24 (Raw) and 0.15 (Matte) come from low-frequency cloudiness shared by all faces, not from repeated patches."
+  ]
+ },
+ "sample_size": {
+  "brief_sample_size_in": [
+   70.148,
+   70.875
+  ],
+  "brief_sample_size_ft_in": [
+   "5'-10 5/32\"",
+   "5'-10 7/8\""
+  ],
+  "atlas_extent_in_at_64_px_per_in": [
+   70.140625,
+   70.875
+  ],
+  "true_pattern_period_in": [
+   70.148058,
+   70.875
+  ],
+  "exact_quarter_inch": [
+   false,
+   false
+  ],
+  "nearest_quarter_inch": [
+   70.25,
+   [
+    70.75,
+    71.0
+   ]
+  ],
+  "relative_error_if_rounded_to_quarter_inch_pct": [
+   0.145407,
+   [
+    -0.176367,
+    0.176367
+   ]
+  ],
+  "note": "Fixed by the brief. Revit's Texture Editor rounds Sample Size to the project's length unit, so in a 1/4 in project these values are not stored exactly; an exact quarter-inch alternative is 70.25 x 71.0 in (stretch +0.15 % / +0.18 %), not applied."
+ },
+ "checks": {
+  "format_headers_all_ok": true,
+  "face_ids_geometry_mismatch_pixels_zero": true,
+  "face_ids_all_56_present": true,
+  "face_ids_voronoi_mismatch_zero": true,
+  "joint_width_face_id_mean_within_0.1px_of_8": true,
+  "joint_width_bump_half_depth_mean_within_0.3px_of_8": true,
+  "wrap_seam_not_above_interior_p99_all_four": true,
+  "clearance_deepest_pattern_point_to_joint_floor_mm_positive": true,
+  "matte_flat_within_1_level": true,
+  "mix_within_3_percentage_points": true,
+  "raw_and_chiseled_have_no_same_type_ring1_neighbours": true,
+  "chiseled_groove_directions_within_1deg_of_target": true,
+  "no_periodic_structure_all_spectral_peaks_at_or_below_random_p95": true,
+  "collinear_triples_and_same_orientation_ring3_pairs_at_or_below_random_p95": true,
+  "sample_size_exact_quarter_inch": false
+ },
+ "faces": [
+  {
+   "index": 1,
+   "type": "chiseled",
+   "rotation_deg": 179.62367,
+   "mirrored": true,
+   "source": "Chiseled diagF (grooves at 150 deg): RGB and groove component from render face (5,2), rotated 179.62 deg, mirrored [diagS-groove source, D6 element r60=3] (A) and render face (3,3), rotated 300.31 deg [diagS-groove source, D6 element r60=5] (B), pitch-normalised, phase-aligned; ramp blend axis 329.9 deg, offset 37 px, ramp 115 px; height = land plane minus groove weight x groove depth",
+   "orientation": "diagF",
+   "column": 0,
+   "row": 0,
+   "centre_px": [
+    280.5625,
+    324.0
+   ],
+   "sources": [
+    {
+     "role": "A",
+     "render_face": [
+      5,
+      2
+     ],
+     "rotation_deg": 179.62367,
+     "mirrored": true
+    },
+    {
+     "role": "B",
+     "render_face": [
+      3,
+      3
+     ],
+     "rotation_deg": 300.306379,
+     "mirrored": false
+    }
+   ],
+   "blend": {
+    "phi_deg": 329.913232,
+    "offset_px": 36.995227,
+    "ramp_px": 114.934692
+   },
+   "measured_height_min_mm": 1.100017,
+   "measured_height_max_mm": 1.600006,
+   "measured_clearance_to_joint_floor_mm": 1.100017,
+   "measured_relief_std_mm": 0.139035,
+   "measured_slope_rms": 0.182161,
+   "measured_groove_direction_deg": 150.255119,
+   "measured_groove_pitch_mm": 5.040772
+  },
+  {
+   "index": 2,
+   "type": "matte",
+   "rotation_deg": 33.889487,
+   "mirrored": true,
+   "source": "Matte tone and cloudiness fluctuation from render face (5,5), rotated 33.89 deg, mirrored (A) and render face (5,1), rotated 276.20 deg (B); ramp blend axis 279.3 deg, offset 26 px, ramp 199 px, variance-preserving; face tone from the source face means; height flat",
+   "orientation": null,
+   "column": 0,
+   "row": 1,
+   "centre_px": [
+    280.5625,
+    972.0
+   ],
+   "sources": [
+    {
+     "role": "A",
+     "render_face": [
+      5,
+      5
+     ],
+     "rotation_deg": 33.889487,
+     "mirrored": true
+    },
+    {
+     "role": "B",
+     "render_face": [
+      5,
+      1
+     ],
+     "rotation_deg": 276.198718,
+     "mirrored": false
+    }
+   ],
+   "blend": {
+    "phi_deg": 279.320988,
+    "offset_px": 26.121652,
+    "ramp_px": 198.774977
+   },
+   "measured_height_min_mm": 1.600006,
+   "measured_height_max_mm": 1.600006,
+   "measured_clearance_to_joint_floor_mm": 1.600006,
+   "measured_relief_std_mm": 0.0,
+   "measured_slope_rms": 0.0
+  },
+  {
+   "index": 3,
+   "type": "matte",
+   "rotation_deg": 137.474035,
+   "mirrored": true,
+   "source": "Matte tone and cloudiness fluctuation from render face (1,5), rotated 137.47 deg, mirrored (A) and render face (4,3), rotated 321.72 deg, mirrored (B); ramp blend axis 15.1 deg, offset -161 px, ramp 233 px, variance-preserving; face tone from the source face means; height flat",
+   "orientation": null,
+   "column": 0,
+   "row": 2,
+   "centre_px": [
+    280.5625,
+    1620.0
+   ],
+   "sources": [
+    {
+     "role": "A",
+     "render_face": [
+      1,
+      5
+     ],
+     "rotation_deg": 137.474035,
+     "mirrored": true
+    },
+    {
+     "role": "B",
+     "render_face": [
+      4,
+      3
+     ],
+     "rotation_deg": 321.71836,
+     "mirrored": true
+    }
+   ],
+   "blend": {
+    "phi_deg": 15.065531,
+    "offset_px": -161.202417,
+    "ramp_px": 233.397926
+   },
+   "measured_height_min_mm": 1.600006,
+   "measured_height_max_mm": 1.600006,
+   "measured_clearance_to_joint_floor_mm": 1.600006,
+   "measured_relief_std_mm": 0.0,
+   "measured_slope_rms": 0.0
+  },
+  {
+   "index": 4,
+   "type": "matte",
+   "rotation_deg": 9.43126,
+   "mirrored": false,
+   "source": "Matte tone and cloudiness fluctuation from render face (2,2), rotated 9.43 deg (A) and render face (3,4), rotated 23.08 deg, mirrored (B); ramp blend axis 167.5 deg, offset -82 px, ramp 196 px, variance-preserving; face tone from the source face means; height flat",
+   "orientation": null,
+   "column": 0,
+   "row": 3,
+   "centre_px": [
+    280.5625,
+    2268.0
+   ],
+   "sources": [
+    {
+     "role": "A",
+     "render_face": [
+      2,
+      2
+     ],
+     "rotation_deg": 9.43126,
+     "mirrored": false
+    },
+    {
+     "role": "B",
+     "render_face": [
+      3,
+      4
+     ],
+     "rotation_deg": 23.082414,
+     "mirrored": true
+    }
+   ],
+   "blend": {
+    "phi_deg": 167.523081,
+    "offset_px": -82.435941,
+    "ramp_px": 196.376483
+   },
+   "measured_height_min_mm": 1.600006,
+   "measured_height_max_mm": 1.600006,
+   "measured_clearance_to_joint_floor_mm": 1.600006,
+   "measured_relief_std_mm": 0.0,
+   "measured_slope_rms": 0.0
+  },
+  {
+   "index": 5,
+   "type": "matte",
+   "rotation_deg": 64.645644,
+   "mirrored": true,
+   "source": "Matte tone and cloudiness fluctuation from render face (0,4), rotated 64.65 deg, mirrored (A) and render face (1,0), rotated 194.90 deg, mirrored (B); ramp blend axis 73.5 deg, offset 135 px, ramp 198 px, variance-preserving; face tone from the source face means; height flat",
+   "orientation": null,
+   "column": 0,
+   "row": 4,
+   "centre_px": [
+    280.5625,
+    2916.0
+   ],
+   "sources": [
+    {
+     "role": "A",
+     "render_face": [
+      0,
+      4
+     ],
+     "rotation_deg": 64.645644,
+     "mirrored": true
+    },
+    {
+     "role": "B",
+     "render_face": [
+      1,
+      0
+     ],
+     "rotation_deg": 194.896696,
+     "mirrored": true
+    }
+   ],
+   "blend": {
+    "phi_deg": 73.469231,
+    "offset_px": 135.288758,
+    "ramp_px": 197.628085
+   },
+   "measured_height_min_mm": 1.600006,
+   "measured_height_max_mm": 1.600006,
+   "measured_clearance_to_joint_floor_mm": 1.600006,
+   "measured_relief_std_mm": 0.0,
+   "measured_slope_rms": 0.0
+  },
+  {
+   "index": 6,
+   "type": "chiseled",
+   "rotation_deg": 119.649775,
+   "mirrored": false,
+   "source": "Chiseled diagS (grooves at 30 deg): RGB and groove component from render face (2,4), rotated 119.65 deg [vert-groove source, D6 element r60=2] (A) and render face (-1,3), rotated 119.84 deg [vert-groove source, D6 element r60=2] (B), pitch-normalised, phase-aligned; ramp blend axis 185.4 deg, offset 76 px, ramp 116 px; height = land plane minus groove weight x groove depth",
+   "orientation": "diagS",
+   "column": 0,
+   "row": 5,
+   "centre_px": [
+    280.5625,
+    3564.0
+   ],
+   "sources": [
+    {
+     "role": "A",
+     "render_face": [
+      2,
+      4
+     ],
+     "rotation_deg": 119.649775,
+     "mirrored": false
+    },
+    {
+     "role": "B",
+     "render_face": [
+      -1,
+      3
+     ],
+     "rotation_deg": 119.841749,
+     "mirrored": false
+    }
+   ],
+   "blend": {
+    "phi_deg": 185.391036,
+    "offset_px": 75.90005,
+    "ramp_px": 115.728148
+   },
+   "measured_height_min_mm": 1.100017,
+   "measured_height_max_mm": 1.600006,
+   "measured_clearance_to_joint_floor_mm": 1.100017,
+   "measured_relief_std_mm": 0.140561,
+   "measured_slope_rms": 0.185779,
+   "measured_groove_direction_deg": 29.92213,
+   "measured_groove_pitch_mm": 5.068037
+  },
+  {
+   "index": 7,
+   "type": "matte",
+   "rotation_deg": 238.511916,
+   "mirrored": true,
+   "source": "Matte tone and cloudiness fluctuation from render face (3,0), rotated 238.51 deg, mirrored (A) and render face (-1,5), rotated 255.88 deg (B); ramp blend axis 337.2 deg, offset -113 px, ramp 175 px, variance-preserving; face tone from the source face means; height flat",
+   "orientation": null,
+   "column": 0,
+   "row": 6,
+   "centre_px": [
+    280.5625,
+    4212.0
+   ],
+   "sources": [
+    {
+     "role": "A",
+     "render_face": [
+      3,
+      0
+     ],
+     "rotation_deg": 238.511916,
+     "mirrored": true
+    },
+    {
+     "role": "B",
+     "render_face": [
+      -1,
+      5
+     ],
+     "rotation_deg": 255.879101,
+     "mirrored": false
+    }
+   ],
+   "blend": {
+    "phi_deg": 337.174634,
+    "offset_px": -112.68472,
+    "ramp_px": 175.493961
+   },
+   "measured_height_min_mm": 1.600006,
+   "measured_height_max_mm": 1.600006,
+   "measured_clearance_to_joint_floor_mm": 1.600006,
+   "measured_relief_std_mm": 0.0,
+   "measured_slope_rms": 0.0
+  },
+  {
+   "index": 8,
+   "type": "raw",
+   "rotation_deg": 296.242362,
+   "mirrored": false,
+   "source": "Raw relief (Wiener-inverted shading, Fourier-domain mixture weighted by the measured angular gain) and albedo from render face (4,1), rotated 296.24 deg (A) and render face (5,4), rotated 42.01 deg (B); ramp blend axis 70.9 deg, offset -140 px, ramp 252 px",
+   "orientation": null,
+   "column": 1,
+   "row": 0,
+   "centre_px": [
+    841.6875,
+    648.0
+   ],
+   "sources": [
+    {
+     "role": "A",
+     "render_face": [
+      4,
+      1
+     ],
+     "rotation_deg": 296.242362,
+     "mirrored": false
+    },
+    {
+     "role": "B",
+     "render_face": [
+      5,
+      4
+     ],
+     "rotation_deg": 42.006197,
+     "mirrored": false
+    }
+   ],
+   "blend": {
+    "phi_deg": 70.883216,
+    "offset_px": -139.83929,
+    "ramp_px": 252.375208
+   },
+   "measured_height_min_mm": 1.168399,
+   "measured_height_max_mm": 1.999017,
+   "measured_clearance_to_joint_floor_mm": 1.168399,
+   "measured_relief_std_mm": 0.11227,
+   "measured_slope_rms": 0.091593
+  },
+  {
+   "index": 9,
+   "type": "chiseled",
+   "rotation_deg": 299.649775,
+   "mirrored": false,
+   "source": "Chiseled diagS (grooves at 30 deg): RGB and groove component from render face (2,4), rotated 299.65 deg [vert-groove source, D6 element r60=5] (A) and render face (5,2), rotated 239.62 deg, mirrored [diagS-groove source, D6 element r60=4] (B), pitch-normalised, phase-aligned; ramp blend axis 323.9 deg, offset 72 px, ramp 110 px; height = land plane minus groove weight x groove depth",
+   "orientation": "diagS",
+   "column": 1,
+   "row": 1,
+   "centre_px": [
+    841.6875,
+    1296.0
+   ],
+   "sources": [
+    {
+     "role": "A",
+     "render_face": [
+      2,
+      4
+     ],
+     "rotation_deg": 299.649775,
+     "mirrored": false
+    },
+    {
+     "role": "B",
+     "render_face": [
+      5,
+      2
+     ],
+     "rotation_deg": 239.62367,
+     "mirrored": true
+    }
+   ],
+   "blend": {
+    "phi_deg": 323.904379,
+    "offset_px": 72.03978,
+    "ramp_px": 110.235872
+   },
+   "measured_height_min_mm": 1.100017,
+   "measured_height_max_mm": 1.600006,
+   "measured_clearance_to_joint_floor_mm": 1.100017,
+   "measured_relief_std_mm": 0.133799,
+   "measured_slope_rms": 0.175919,
+   "measured_groove_direction_deg": 30.230801,
+   "measured_groove_pitch_mm": 5.052249
+  },
+  {
+   "index": 10,
+   "type": "matte",
+   "rotation_deg": 141.146928,
+   "mirrored": true,
+   "source": "Matte tone and cloudiness fluctuation from render face (-1,5), rotated 141.15 deg, mirrored (A) and render face (3,5), rotated 153.06 deg (B); ramp blend axis 39.5 deg, offset 127 px, ramp 258 px, variance-preserving; face tone from the source face means; height flat",
+   "orientation": null,
+   "column": 1,
+   "row": 2,
+   "centre_px": [
+    841.6875,
+    1944.0
+   ],
+   "sources": [
+    {
+     "role": "A",
+     "render_face": [
+      -1,
+      5
+     ],
+     "rotation_deg": 141.146928,
+     "mirrored": true
+    },
+    {
+     "role": "B",
+     "render_face": [
+      3,
+      5
+     ],
+     "rotation_deg": 153.064739,
+     "mirrored": false
+    }
+   ],
+   "blend": {
+    "phi_deg": 39.532894,
+    "offset_px": 126.878064,
+    "ramp_px": 257.594207
+   },
+   "measured_height_min_mm": 1.600006,
+   "measured_height_max_mm": 1.600006,
+   "measured_clearance_to_joint_floor_mm": 1.600006,
+   "measured_relief_std_mm": 0.0,
+   "measured_slope_rms": 0.0
+  },
+  {
+   "index": 11,
+   "type": "raw",
+   "rotation_deg": 179.93379,
+   "mirrored": false,
+   "source": "Raw relief (Wiener-inverted shading, Fourier-domain mixture weighted by the measured angular gain) and albedo from render face (-1,0), rotated 179.93 deg (A) and render face (1,1), rotated 46.45 deg, mirrored (B); ramp blend axis 232.4 deg, offset 34 px, ramp 204 px",
+   "orientation": null,
+   "column": 1,
+   "row": 3,
+   "centre_px": [
+    841.6875,
+    2592.0
+   ],
+   "sources": [
+    {
+     "role": "A",
+     "render_face": [
+      -1,
+      0
+     ],
+     "rotation_deg": 179.93379,
+     "mirrored": false
+    },
+    {
+     "role": "B",
+     "render_face": [
+      1,
+      1
+     ],
+     "rotation_deg": 46.453134,
+     "mirrored": true
+    }
+   ],
+   "blend": {
+    "phi_deg": 232.405025,
+    "offset_px": 34.185402,
+    "ramp_px": 204.01322
+   },
+   "measured_height_min_mm": 1.234431,
+   "measured_height_max_mm": 1.989987,
+   "measured_clearance_to_joint_floor_mm": 1.234431,
+   "measured_relief_std_mm": 0.098764,
+   "measured_slope_rms": 0.079695
+  },
+  {
+   "index": 12,
+   "type": "matte",
+   "rotation_deg": 286.074437,
+   "mirrored": true,
+   "source": "Matte tone and cloudiness fluctuation from render face (3,4), rotated 286.07 deg, mirrored (A) and render face (-1,5), rotated 119.00 deg (B); ramp blend axis 274.3 deg, offset 94 px, ramp 171 px, variance-preserving; face tone from the source face means; height flat",
+   "orientation": null,
+   "column": 1,
+   "row": 4,
+   "centre_px": [
+    841.6875,
+    3240.0
+   ],
+   "sources": [
+    {
+     "role": "A",
+     "render_face": [
+      3,
+      4
+     ],
+     "rotation_deg": 286.074437,
+     "mirrored": true
+    },
+    {
+     "role": "B",
+     "render_face": [
+      -1,
+      5
+     ],
+     "rotation_deg": 119.000782,
+     "mirrored": false
+    }
+   ],
+   "blend": {
+    "phi_deg": 274.274991,
+    "offset_px": 93.882947,
+    "ramp_px": 171.179542
+   },
+   "measured_height_min_mm": 1.600006,
+   "measured_height_max_mm": 1.600006,
+   "measured_clearance_to_joint_floor_mm": 1.600006,
+   "measured_relief_std_mm": 0.0,
+   "measured_slope_rms": 0.0
+  },
+  {
+   "index": 13,
+   "type": "raw",
+   "rotation_deg": 347.97283,
+   "mirrored": false,
+   "source": "Raw relief (Wiener-inverted shading, Fourier-domain mixture weighted by the measured angular gain) and albedo from render face (0,3), rotated 347.97 deg (A) and render face (5,4), rotated 356.28 deg, mirrored (B); ramp blend axis 333.3 deg, offset 123 px, ramp 205 px",
+   "orientation": null,
+   "column": 1,
+   "row": 5,
+   "centre_px": [
+    841.6875,
+    3888.0
+   ],
+   "sources": [
+    {
+     "role": "A",
+     "render_face": [
+      0,
+      3
+     ],
+     "rotation_deg": 347.97283,
+     "mirrored": false
+    },
+    {
+     "role": "B",
+     "render_face": [
+      5,
+      4
+     ],
+     "rotation_deg": 356.283162,
+     "mirrored": true
+    }
+   ],
+   "blend": {
+    "phi_deg": 333.324601,
+    "offset_px": 123.280983,
+    "ramp_px": 204.603943
+   },
+   "measured_height_min_mm": 1.17951,
+   "measured_height_max_mm": 2.015534,
+   "measured_clearance_to_joint_floor_mm": 1.17951,
+   "measured_relief_std_mm": 0.12099,
+   "measured_slope_rms": 0.099164
+  },
+  {
+   "index": 14,
+   "type": "matte",
+   "rotation_deg": 1.803124,
+   "mirrored": true,
+   "source": "Matte tone and cloudiness fluctuation from render face (5,1), rotated 1.80 deg, mirrored (A) and render face (3,2), rotated 150.70 deg (B); ramp blend axis 279.1 deg, offset 153 px, ramp 182 px, variance-preserving; face tone from the source face means; height flat",
+   "orientation": null,
+   "column": 1,
+   "row": 6,
+   "centre_px": [
+    841.6875,
+    0.0
+   ],
+   "sources": [
+    {
+     "role": "A",
+     "render_face": [
+      5,
+      1
+     ],
+     "rotation_deg": 1.803124,
+     "mirrored": true
+    },
+    {
+     "role": "B",
+     "render_face": [
+      3,
+      2
+     ],
+     "rotation_deg": 150.701718,
+     "mirrored": false
+    }
+   ],
+   "blend": {
+    "phi_deg": 279.122864,
+    "offset_px": 152.65143,
+    "ramp_px": 182.059351
+   },
+   "measured_height_min_mm": 1.600006,
+   "measured_height_max_mm": 1.600006,
+   "measured_clearance_to_joint_floor_mm": 1.600006,
+   "measured_relief_std_mm": 0.0,
+   "measured_slope_rms": 0.0
+  },
+  {
+   "index": 15,
+   "type": "chiseled",
+   "rotation_deg": 59.650202,
+   "mirrored": false,
+   "source": "Chiseled vert (grooves at 90 deg): RGB and groove component from render face (0,1), rotated 59.65 deg [diagS-groove source, D6 element r60=1] (A) and render face (2,1), rotated 0.34 deg, mirrored [vert-groove source, D6 element r60=0] (B), pitch-normalised, phase-aligned; ramp blend axis 190.4 deg, offset 84 px, ramp 104 px; height = land plane minus groove weight x groove depth",
+   "orientation": "vert",
+   "column": 2,
+   "row": 0,
+   "centre_px": [
+    1402.8125,
+    324.0
+   ],
+   "sources": [
+    {
+     "role": "A",
+     "render_face": [
+      0,
+      1
+     ],
+     "rotation_deg": 59.650202,
+     "mirrored": false
+    },
+    {
+     "role": "B",
+     "render_face": [
+      2,
+      1
+     ],
+     "rotation_deg": 0.340635,
+     "mirrored": true
+    }
+   ],
+   "blend": {
+    "phi_deg": 190.36888,
+    "offset_px": 83.680986,
+    "ramp_px": 103.513011
+   },
+   "measured_height_min_mm": 1.100017,
+   "measured_height_max_mm": 1.600006,
+   "measured_clearance_to_joint_floor_mm": 1.100017,
+   "measured_relief_std_mm": 0.128487,
+   "measured_slope_rms": 0.165507,
+   "measured_groove_direction_deg": 90.0,
+   "measured_groove_pitch_mm": 5.048447
+  },
+  {
+   "index": 16,
+   "type": "matte",
+   "rotation_deg": 170.971957,
+   "mirrored": false,
+   "source": "Matte tone and cloudiness fluctuation from render face (4,4), rotated 170.97 deg (A) and render face (-1,1), rotated 339.47 deg, mirrored (B); ramp blend axis 49.0 deg, offset 161 px, ramp 255 px, variance-preserving; face tone from the source face means; height flat",
+   "orientation": null,
+   "column": 2,
+   "row": 1,
+   "centre_px": [
+    1402.8125,
+    972.0
+   ],
+   "sources": [
+    {
+     "role": "A",
+     "render_face": [
+      4,
+      4
+     ],
+     "rotation_deg": 170.971957,
+     "mirrored": false
+    },
+    {
+     "role": "B",
+     "render_face": [
+      -1,
+      1
+     ],
+     "rotation_deg": 339.472079,
+     "mirrored": true
+    }
+   ],
+   "blend": {
+    "phi_deg": 49.036435,
+    "offset_px": 160.940269,
+    "ramp_px": 255.445451
+   },
+   "measured_height_min_mm": 1.600006,
+   "measured_height_max_mm": 1.600006,
+   "measured_clearance_to_joint_floor_mm": 1.600006,
+   "measured_relief_std_mm": 0.0,
+   "measured_slope_rms": 0.0
+  },
+  {
+   "index": 17,
+   "type": "raw",
+   "rotation_deg": 109.330789,
+   "mirrored": true,
+   "source": "Raw relief (Wiener-inverted shading, Fourier-domain mixture weighted by the measured angular gain) and albedo from render face (4,2), rotated 109.33 deg, mirrored (A) and render face (0,3), rotated 87.32 deg (B); ramp blend axis 55.6 deg, offset -157 px, ramp 171 px",
+   "orientation": null,
+   "column": 2,
+   "row": 2,
+   "centre_px": [
+    1402.8125,
+    1620.0
+   ],
+   "sources": [
+    {
+     "role": "A",
+     "render_face": [
+      4,
+      2
+     ],
+     "rotation_deg": 109.330789,
+     "mirrored": true
+    },
+    {
+     "role": "B",
+     "render_face": [
+      0,
+      3
+     ],
+     "rotation_deg": 87.321128,
+     "mirrored": false
+    }
+   ],
+   "blend": {
+    "phi_deg": 55.555293,
+    "offset_px": -156.897459,
+    "ramp_px": 171.362668
+   },
+   "measured_height_min_mm": 1.204251,
+   "measured_height_max_mm": 1.975518,
+   "measured_clearance_to_joint_floor_mm": 1.204251,
+   "measured_relief_std_mm": 0.112419,
+   "measured_slope_rms": 0.090578
+  },
+  {
+   "index": 18,
+   "type": "chiseled",
+   "rotation_deg": 240.349,
+   "mirrored": true,
+   "source": "Chiseled vert (grooves at 90 deg): RGB and groove component from render face (4,5), rotated 240.35 deg, mirrored [diagF-groove source, D6 element r60=4] (A) and render face (5,2), rotated 119.62 deg, mirrored [diagS-groove source, D6 element r60=2] (B), pitch-normalised, phase-aligned; ramp blend axis 73.4 deg, offset 130 px, ramp 104 px; height = land plane minus groove weight x groove depth",
+   "orientation": "vert",
+   "column": 2,
+   "row": 3,
+   "centre_px": [
+    1402.8125,
+    2268.0
+   ],
+   "sources": [
+    {
+     "role": "A",
+     "render_face": [
+      4,
+      5
+     ],
+     "rotation_deg": 240.349,
+     "mirrored": true
+    },
+    {
+     "role": "B",
+     "render_face": [
+      5,
+      2
+     ],
+     "rotation_deg": 119.62367,
+     "mirrored": true
+    }
+   ],
+   "blend": {
+    "phi_deg": 73.433415,
+    "offset_px": 129.979846,
+    "ramp_px": 104.244646
+   },
+   "measured_height_min_mm": 1.100017,
+   "measured_height_max_mm": 1.600006,
+   "measured_clearance_to_joint_floor_mm": 1.100017,
+   "measured_relief_std_mm": 0.135416,
+   "measured_slope_rms": 0.172608,
+   "measured_groove_direction_deg": 90.0,
+   "measured_groove_pitch_mm": 5.048447
+  },
+  {
+   "index": 19,
+   "type": "matte",
+   "rotation_deg": 340.354437,
+   "mirrored": true,
+   "source": "Matte tone and cloudiness fluctuation from render face (3,0), rotated 340.35 deg, mirrored (A) and render face (5,5), rotated 55.78 deg, mirrored (B); ramp blend axis 234.7 deg, offset -112 px, ramp 260 px, variance-preserving; face tone from the source face means; height flat",
+   "orientation": null,
+   "column": 2,
+   "row": 4,
+   "centre_px": [
+    1402.8125,
+    2916.0
+   ],
+   "sources": [
+    {
+     "role": "A",
+     "render_face": [
+      3,
+      0
+     ],
+     "rotation_deg": 340.354437,
+     "mirrored": true
+    },
+    {
+     "role": "B",
+     "render_face": [
+      5,
+      5
+     ],
+     "rotation_deg": 55.780912,
+     "mirrored": true
+    }
+   ],
+   "blend": {
+    "phi_deg": 234.693967,
+    "offset_px": -111.700919,
+    "ramp_px": 259.837125
+   },
+   "measured_height_min_mm": 1.600006,
+   "measured_height_max_mm": 1.600006,
+   "measured_clearance_to_joint_floor_mm": 1.600006,
+   "measured_relief_std_mm": 0.0,
+   "measured_slope_rms": 0.0
+  },
+  {
+   "index": 20,
+   "type": "matte",
+   "rotation_deg": 60.018658,
+   "mirrored": true,
+   "source": "Matte tone and cloudiness fluctuation from render face (4,3), rotated 60.02 deg, mirrored (A) and render face (5,0), rotated 295.06 deg, mirrored (B); ramp blend axis 182.0 deg, offset 78 px, ramp 223 px, variance-preserving; face tone from the source face means; height flat",
+   "orientation": null,
+   "column": 2,
+   "row": 5,
+   "centre_px": [
+    1402.8125,
+    3564.0
+   ],
+   "sources": [
+    {
+     "role": "A",
+     "render_face": [
+      4,
+      3
+     ],
+     "rotation_deg": 60.018658,
+     "mirrored": true
+    },
+    {
+     "role": "B",
+     "render_face": [
+      5,
+      0
+     ],
+     "rotation_deg": 295.061221,
+     "mirrored": true
+    }
+   ],
+   "blend": {
+    "phi_deg": 181.953397,
+    "offset_px": 77.846376,
+    "ramp_px": 223.365626
+   },
+   "measured_height_min_mm": 1.600006,
+   "measured_height_max_mm": 1.600006,
+   "measured_clearance_to_joint_floor_mm": 1.600006,
+   "measured_relief_std_mm": 0.0,
+   "measured_slope_rms": 0.0
+  },
+  {
+   "index": 21,
+   "type": "matte",
+   "rotation_deg": 194.396632,
+   "mirrored": false,
+   "source": "Matte tone and cloudiness fluctuation from render face (0,4), rotated 194.40 deg (A) and render face (5,5), rotated 226.28 deg (B); ramp blend axis 200.6 deg, offset 147 px, ramp 156 px, variance-preserving; face tone from the source face means; height flat",
+   "orientation": null,
+   "column": 2,
+   "row": 6,
+   "centre_px": [
+    1402.8125,
+    4212.0
+   ],
+   "sources": [
+    {
+     "role": "A",
+     "render_face": [
+      0,
+      4
+     ],
+     "rotation_deg": 194.396632,
+     "mirrored": false
+    },
+    {
+     "role": "B",
+     "render_face": [
+      5,
+      5
+     ],
+     "rotation_deg": 226.277428,
+     "mirrored": false
+    }
+   ],
+   "blend": {
+    "phi_deg": 200.574993,
+    "offset_px": 147.031959,
+    "ramp_px": 156.050868
+   },
+   "measured_height_min_mm": 1.600006,
+   "measured_height_max_mm": 1.600006,
+   "measured_clearance_to_joint_floor_mm": 1.600006,
+   "measured_relief_std_mm": 0.0,
+   "measured_slope_rms": 0.0
+  },
+  {
+   "index": 22,
+   "type": "matte",
+   "rotation_deg": 284.168332,
+   "mirrored": false,
+   "source": "Matte tone and cloudiness fluctuation from render face (2,5), rotated 284.17 deg (A) and render face (-1,2), rotated 337.12 deg (B); ramp blend axis 170.6 deg, offset 160 px, ramp 165 px, variance-preserving; face tone from the source face means; height flat",
+   "orientation": null,
+   "column": 3,
+   "row": 0,
+   "centre_px": [
+    1963.9375,
+    648.0
+   ],
+   "sources": [
+    {
+     "role": "A",
+     "render_face": [
+      2,
+      5
+     ],
+     "rotation_deg": 284.168332,
+     "mirrored": false
+    },
+    {
+     "role": "B",
+     "render_face": [
+      -1,
+      2
+     ],
+     "rotation_deg": 337.123767,
+     "mirrored": false
+    }
+   ],
+   "blend": {
+    "phi_deg": 170.609855,
+    "offset_px": 159.943246,
+    "ramp_px": 164.714967
+   },
+   "measured_height_min_mm": 1.600006,
+   "measured_height_max_mm": 1.600006,
+   "measured_clearance_to_joint_floor_mm": 1.600006,
+   "measured_relief_std_mm": 0.0,
+   "measured_slope_rms": 0.0
+  },
+  {
+   "index": 23,
+   "type": "chiseled",
+   "rotation_deg": 60.340635,
+   "mirrored": true,
+   "source": "Chiseled diagF (grooves at 150 deg): RGB and groove component from render face (2,1), rotated 60.34 deg, mirrored [vert-groove source, D6 element r60=1] (A) and render face (0,5), rotated 300.38 deg [diagS-groove source, D6 element r60=5] (B), pitch-normalised, phase-aligned; ramp blend axis 228.3 deg, offset -23 px, ramp 103 px; height = land plane minus groove weight x groove depth",
+   "orientation": "diagF",
+   "column": 3,
+   "row": 1,
+   "centre_px": [
+    1963.9375,
+    1296.0
+   ],
+   "sources": [
+    {
+     "role": "A",
+     "render_face": [
+      2,
+      1
+     ],
+     "rotation_deg": 60.340635,
+     "mirrored": true
+    },
+    {
+     "role": "B",
+     "render_face": [
+      0,
+      5
+     ],
+     "rotation_deg": 300.382757,
+     "mirrored": false
+    }
+   ],
+   "blend": {
+    "phi_deg": 228.336134,
+    "offset_px": -22.83093,
+    "ramp_px": 103.337453
+   },
+   "measured_height_min_mm": 1.100017,
+   "measured_height_max_mm": 1.600006,
+   "measured_clearance_to_joint_floor_mm": 1.100017,
+   "measured_relief_std_mm": 0.145676,
+   "measured_slope_rms": 0.190983,
+   "measured_groove_direction_deg": 149.769199,
+   "measured_groove_pitch_mm": 5.052249
+  },
+  {
+   "index": 24,
+   "type": "matte",
+   "rotation_deg": 190.796486,
+   "mirrored": false,
+   "source": "Matte tone and cloudiness fluctuation from render face (3,2), rotated 190.80 deg (A) and render face (0,4), rotated 274.41 deg (B); ramp blend axis 149.1 deg, offset -5 px, ramp 230 px, variance-preserving; face tone from the source face means; height flat",
+   "orientation": null,
+   "column": 3,
+   "row": 2,
+   "centre_px": [
+    1963.9375,
+    1944.0
+   ],
+   "sources": [
+    {
+     "role": "A",
+     "render_face": [
+      3,
+      2
+     ],
+     "rotation_deg": 190.796486,
+     "mirrored": false
+    },
+    {
+     "role": "B",
+     "render_face": [
+      0,
+      4
+     ],
+     "rotation_deg": 274.410234,
+     "mirrored": false
+    }
+   ],
+   "blend": {
+    "phi_deg": 149.055313,
+    "offset_px": -5.167991,
+    "ramp_px": 230.118326
+   },
+   "measured_height_min_mm": 1.600006,
+   "measured_height_max_mm": 1.600006,
+   "measured_clearance_to_joint_floor_mm": 1.600006,
+   "measured_relief_std_mm": 0.0,
+   "measured_slope_rms": 0.0
+  },
+  {
+   "index": 25,
+   "type": "raw",
+   "rotation_deg": 14.769988,
+   "mirrored": true,
+   "source": "Raw relief (Wiener-inverted shading, Fourier-domain mixture weighted by the measured angular gain) and albedo from render face (2,3), rotated 14.77 deg, mirrored (A) and render face (1,1), rotated 86.23 deg, mirrored (B); ramp blend axis 67.4 deg, offset 59 px, ramp 215 px",
+   "orientation": null,
+   "column": 3,
+   "row": 3,
+   "centre_px": [
+    1963.9375,
+    2592.0
+   ],
+   "sources": [
+    {
+     "role": "A",
+     "render_face": [
+      2,
+      3
+     ],
+     "rotation_deg": 14.769988,
+     "mirrored": true
+    },
+    {
+     "role": "B",
+     "render_face": [
+      1,
+      1
+     ],
+     "rotation_deg": 86.23119,
+     "mirrored": true
+    }
+   ],
+   "blend": {
+    "phi_deg": 67.365079,
+    "offset_px": 58.731007,
+    "ramp_px": 214.559235
+   },
+   "measured_height_min_mm": 1.255647,
+   "measured_height_max_mm": 1.97102,
+   "measured_clearance_to_joint_floor_mm": 1.255647,
+   "measured_relief_std_mm": 0.096875,
+   "measured_slope_rms": 0.079891
+  },
+  {
+   "index": 26,
+   "type": "chiseled",
+   "rotation_deg": 59.630471,
+   "mirrored": false,
+   "source": "Chiseled diagS (grooves at 30 deg): RGB and groove component from render face (1,2), rotated 59.63 deg [diagF-groove source, D6 element r60=1] (A) and render face (0,5), rotated 0.38 deg [diagS-groove source, D6 element r60=0] (B), pitch-normalised, phase-aligned; ramp blend axis 80.9 deg, offset 59 px, ramp 112 px; height = land plane minus groove weight x groove depth",
+   "orientation": "diagS",
+   "column": 3,
+   "row": 4,
+   "centre_px": [
+    1963.9375,
+    3240.0
+   ],
+   "sources": [
+    {
+     "role": "A",
+     "render_face": [
+      1,
+      2
+     ],
+     "rotation_deg": 59.630471,
+     "mirrored": false
+    },
+    {
+     "role": "B",
+     "render_face": [
+      0,
+      5
+     ],
+     "rotation_deg": 0.382757,
+     "mirrored": false
+    }
+   ],
+   "blend": {
+    "phi_deg": 80.89131,
+    "offset_px": 59.115223,
+    "ramp_px": 112.331313
+   },
+   "measured_height_min_mm": 1.100017,
+   "measured_height_max_mm": 1.600006,
+   "measured_clearance_to_joint_floor_mm": 1.100017,
+   "measured_relief_std_mm": 0.12904,
+   "measured_slope_rms": 0.169352,
+   "measured_groove_direction_deg": 29.92213,
+   "measured_groove_pitch_mm": 5.068037
+  },
+  {
+   "index": 27,
+   "type": "matte",
+   "rotation_deg": 196.906174,
+   "mirrored": false,
+   "source": "Matte tone and cloudiness fluctuation from render face (3,5), rotated 196.91 deg (A) and render face (1,3), rotated 298.89 deg, mirrored (B); ramp blend axis 294.0 deg, offset -104 px, ramp 199 px, variance-preserving; face tone from the source face means; height flat",
+   "orientation": null,
+   "column": 3,
+   "row": 5,
+   "centre_px": [
+    1963.9375,
+    3888.0
+   ],
+   "sources": [
+    {
+     "role": "A",
+     "render_face": [
+      3,
+      5
+     ],
+     "rotation_deg": 196.906174,
+     "mirrored": false
+    },
+    {
+     "role": "B",
+     "render_face": [
+      1,
+      3
+     ],
+     "rotation_deg": 298.888243,
+     "mirrored": true
+    }
+   ],
+   "blend": {
+    "phi_deg": 293.977783,
+    "offset_px": -104.030177,
+    "ramp_px": 199.482748
+   },
+   "measured_height_min_mm": 1.600006,
+   "measured_height_max_mm": 1.600006,
+   "measured_clearance_to_joint_floor_mm": 1.600006,
+   "measured_relief_std_mm": 0.0,
+   "measured_slope_rms": 0.0
+  },
+  {
+   "index": 28,
+   "type": "raw",
+   "rotation_deg": 261.847582,
+   "mirrored": true,
+   "source": "Raw relief (Wiener-inverted shading, Fourier-domain mixture weighted by the measured angular gain) and albedo from render face (4,1), rotated 261.85 deg, mirrored (A) and render face (1,1), rotated 6.16 deg, mirrored (B); ramp blend axis 176.6 deg, offset 26 px, ramp 222 px",
+   "orientation": null,
+   "column": 3,
+   "row": 6,
+   "centre_px": [
+    1963.9375,
+    0.0
+   ],
+   "sources": [
+    {
+     "role": "A",
+     "render_face": [
+      4,
+      1
+     ],
+     "rotation_deg": 261.847582,
+     "mirrored": true
+    },
+    {
+     "role": "B",
+     "render_face": [
+      1,
+      1
+     ],
+     "rotation_deg": 6.159294,
+     "mirrored": true
+    }
+   ],
+   "blend": {
+    "phi_deg": 176.556998,
+    "offset_px": 26.473879,
+    "ramp_px": 221.787053
+   },
+   "measured_height_min_mm": 1.247489,
+   "measured_height_max_mm": 1.948797,
+   "measured_clearance_to_joint_floor_mm": 1.247489,
+   "measured_relief_std_mm": 0.093983,
+   "measured_slope_rms": 0.076129
+  },
+  {
+   "index": 29,
+   "type": "chiseled",
+   "rotation_deg": 239.693621,
+   "mirrored": true,
+   "source": "Chiseled diagS (grooves at 30 deg): RGB and groove component from render face (3,3), rotated 239.69 deg, mirrored [diagS-groove source, D6 element r60=4] (A) and render face (-1,3), rotated 300.16 deg, mirrored [vert-groove source, D6 element r60=5] (B), pitch-normalised, phase-aligned; ramp blend axis 257.6 deg, offset 143 px, ramp 118 px; height = land plane minus groove weight x groove depth",
+   "orientation": "diagS",
+   "column": 4,
+   "row": 0,
+   "centre_px": [
+    2525.0625,
+    324.0
+   ],
+   "sources": [
+    {
+     "role": "A",
+     "render_face": [
+      3,
+      3
+     ],
+     "rotation_deg": 239.693621,
+     "mirrored": true
+    },
+    {
+     "role": "B",
+     "render_face": [
+      -1,
+      3
+     ],
+     "rotation_deg": 300.158251,
+     "mirrored": true
+    }
+   ],
+   "blend": {
+    "phi_deg": 257.592195,
+    "offset_px": 143.225687,
+    "ramp_px": 117.641226
+   },
+   "measured_height_min_mm": 1.100017,
+   "measured_height_max_mm": 1.600006,
+   "measured_clearance_to_joint_floor_mm": 1.100017,
+   "measured_relief_std_mm": 0.146047,
+   "measured_slope_rms": 0.192812,
+   "measured_groove_direction_deg": 29.92213,
+   "measured_groove_pitch_mm": 5.068037
+  },
+  {
+   "index": 30,
+   "type": "matte",
+   "rotation_deg": 102.69058,
+   "mirrored": false,
+   "source": "Matte tone and cloudiness fluctuation from render face (-1,1), rotated 102.69 deg (A) and render face (5,3), rotated 296.42 deg (B); ramp blend axis 212.2 deg, offset -139 px, ramp 244 px, variance-preserving; face tone from the source face means; height flat",
+   "orientation": null,
+   "column": 4,
+   "row": 1,
+   "centre_px": [
+    2525.0625,
+    972.0
+   ],
+   "sources": [
+    {
+     "role": "A",
+     "render_face": [
+      -1,
+      1
+     ],
+     "rotation_deg": 102.69058,
+     "mirrored": false
+    },
+    {
+     "role": "B",
+     "render_face": [
+      5,
+      3
+     ],
+     "rotation_deg": 296.417743,
+     "mirrored": false
+    }
+   ],
+   "blend": {
+    "phi_deg": 212.174684,
+    "offset_px": -139.066582,
+    "ramp_px": 244.436339
+   },
+   "measured_height_min_mm": 1.600006,
+   "measured_height_max_mm": 1.600006,
+   "measured_clearance_to_joint_floor_mm": 1.600006,
+   "measured_relief_std_mm": 0.0,
+   "measured_slope_rms": 0.0
+  },
+  {
+   "index": 31,
+   "type": "raw",
+   "rotation_deg": 39.729679,
+   "mirrored": true,
+   "source": "Raw relief (Wiener-inverted shading, Fourier-domain mixture weighted by the measured angular gain) and albedo from render face (-1,0), rotated 39.73 deg, mirrored (A) and render face (1,4), rotated 130.47 deg, mirrored (B); ramp blend axis 112.7 deg, offset -46 px, ramp 229 px",
+   "orientation": null,
+   "column": 4,
+   "row": 2,
+   "centre_px": [
+    2525.0625,
+    1620.0
+   ],
+   "sources": [
+    {
+     "role": "A",
+     "render_face": [
+      -1,
+      0
+     ],
+     "rotation_deg": 39.729679,
+     "mirrored": true
+    },
+    {
+     "role": "B",
+     "render_face": [
+      1,
+      4
+     ],
+     "rotation_deg": 130.467913,
+     "mirrored": true
+    }
+   ],
+   "blend": {
+    "phi_deg": 112.745566,
+    "offset_px": -46.204633,
+    "ramp_px": 228.540751
+   },
+   "measured_height_min_mm": 1.213147,
+   "measured_height_max_mm": 2.000964,
+   "measured_clearance_to_joint_floor_mm": 1.213147,
+   "measured_relief_std_mm": 0.109404,
+   "measured_slope_rms": 0.089017
+  },
+  {
+   "index": 32,
+   "type": "matte",
+   "rotation_deg": 143.101121,
+   "mirrored": false,
+   "source": "Matte tone and cloudiness fluctuation from render face (1,5), rotated 143.10 deg (A) and render face (0,2), rotated 52.39 deg (B); ramp blend axis 293.6 deg, offset -108 px, ramp 185 px, variance-preserving; face tone from the source face means; height flat",
+   "orientation": null,
+   "column": 4,
+   "row": 3,
+   "centre_px": [
+    2525.0625,
+    2268.0
+   ],
+   "sources": [
+    {
+     "role": "A",
+     "render_face": [
+      1,
+      5
+     ],
+     "rotation_deg": 143.101121,
+     "mirrored": false
+    },
+    {
+     "role": "B",
+     "render_face": [
+      0,
+      2
+     ],
+     "rotation_deg": 52.391384,
+     "mirrored": false
+    }
+   ],
+   "blend": {
+    "phi_deg": 293.640914,
+    "offset_px": -107.552195,
+    "ramp_px": 185.28907
+   },
+   "measured_height_min_mm": 1.600006,
+   "measured_height_max_mm": 1.600006,
+   "measured_clearance_to_joint_floor_mm": 1.600006,
+   "measured_relief_std_mm": 0.0,
+   "measured_slope_rms": 0.0
+  },
+  {
+   "index": 33,
+   "type": "matte",
+   "rotation_deg": 354.837587,
+   "mirrored": false,
+   "source": "Matte tone and cloudiness fluctuation from render face (3,5), rotated 354.84 deg (A) and render face (3,2), rotated 291.83 deg (B); ramp blend axis 320.4 deg, offset -41 px, ramp 181 px, variance-preserving; face tone from the source face means; height flat",
+   "orientation": null,
+   "column": 4,
+   "row": 4,
+   "centre_px": [
+    2525.0625,
+    2916.0
+   ],
+   "sources": [
+    {
+     "role": "A",
+     "render_face": [
+      3,
+      5
+     ],
+     "rotation_deg": 354.837587,
+     "mirrored": false
+    },
+    {
+     "role": "B",
+     "render_face": [
+      3,
+      2
+     ],
+     "rotation_deg": 291.833322,
+     "mirrored": false
+    }
+   ],
+   "blend": {
+    "phi_deg": 320.447892,
+    "offset_px": -41.242667,
+    "ramp_px": 180.769648
+   },
+   "measured_height_min_mm": 1.600006,
+   "measured_height_max_mm": 1.600006,
+   "measured_clearance_to_joint_floor_mm": 1.600006,
+   "measured_relief_std_mm": 0.0,
+   "measured_slope_rms": 0.0
+  },
+  {
+   "index": 34,
+   "type": "matte",
+   "rotation_deg": 305.038448,
+   "mirrored": true,
+   "source": "Matte tone and cloudiness fluctuation from render face (3,4), rotated 305.04 deg, mirrored (A) and render face (1,0), rotated 263.54 deg (B); ramp blend axis 208.4 deg, offset -98 px, ramp 258 px, variance-preserving; face tone from the source face means; height flat",
+   "orientation": null,
+   "column": 4,
+   "row": 5,
+   "centre_px": [
+    2525.0625,
+    3564.0
+   ],
+   "sources": [
+    {
+     "role": "A",
+     "render_face": [
+      3,
+      4
+     ],
+     "rotation_deg": 305.038448,
+     "mirrored": true
+    },
+    {
+     "role": "B",
+     "render_face": [
+      1,
+      0
+     ],
+     "rotation_deg": 263.538075,
+     "mirrored": false
+    }
+   ],
+   "blend": {
+    "phi_deg": 208.388684,
+    "offset_px": -97.69832,
+    "ramp_px": 257.609873
+   },
+   "measured_height_min_mm": 1.600006,
+   "measured_height_max_mm": 1.600006,
+   "measured_clearance_to_joint_floor_mm": 1.600006,
+   "measured_relief_std_mm": 0.0,
+   "measured_slope_rms": 0.0
+  },
+  {
+   "index": 35,
+   "type": "matte",
+   "rotation_deg": 10.328603,
+   "mirrored": false,
+   "source": "Matte tone and cloudiness fluctuation from render face (4,4), rotated 10.33 deg (A) and render face (1,0), rotated 245.92 deg (B); ramp blend axis 100.7 deg, offset -33 px, ramp 219 px, variance-preserving; face tone from the source face means; height flat",
+   "orientation": null,
+   "column": 4,
+   "row": 6,
+   "centre_px": [
+    2525.0625,
+    4212.0
+   ],
+   "sources": [
+    {
+     "role": "A",
+     "render_face": [
+      4,
+      4
+     ],
+     "rotation_deg": 10.328603,
+     "mirrored": false
+    },
+    {
+     "role": "B",
+     "render_face": [
+      1,
+      0
+     ],
+     "rotation_deg": 245.924363,
+     "mirrored": false
+    }
+   ],
+   "blend": {
+    "phi_deg": 100.673685,
+    "offset_px": -33.340153,
+    "ramp_px": 218.783381
+   },
+   "measured_height_min_mm": 1.600006,
+   "measured_height_max_mm": 1.600006,
+   "measured_clearance_to_joint_floor_mm": 1.600006,
+   "measured_relief_std_mm": 0.0,
+   "measured_slope_rms": 0.0
+  },
+  {
+   "index": 36,
+   "type": "matte",
+   "rotation_deg": 100.210254,
+   "mirrored": true,
+   "source": "Matte tone and cloudiness fluctuation from render face (0,2), rotated 100.21 deg, mirrored (A) and render face (5,0), rotated 42.99 deg (B); ramp blend axis 223.7 deg, offset -88 px, ramp 213 px, variance-preserving; face tone from the source face means; height flat",
+   "orientation": null,
+   "column": 5,
+   "row": 0,
+   "centre_px": [
+    3086.1875,
+    648.0
+   ],
+   "sources": [
+    {
+     "role": "A",
+     "render_face": [
+      0,
+      2
+     ],
+     "rotation_deg": 100.210254,
+     "mirrored": true
+    },
+    {
+     "role": "B",
+     "render_face": [
+      5,
+      0
+     ],
+     "rotation_deg": 42.985335,
+     "mirrored": false
+    }
+   ],
+   "blend": {
+    "phi_deg": 223.699779,
+    "offset_px": -88.258742,
+    "ramp_px": 212.965265
+   },
+   "measured_height_min_mm": 1.600006,
+   "measured_height_max_mm": 1.600006,
+   "measured_clearance_to_joint_floor_mm": 1.600006,
+   "measured_relief_std_mm": 0.0,
+   "measured_slope_rms": 0.0
+  },
+  {
+   "index": 37,
+   "type": "matte",
+   "rotation_deg": 138.216156,
+   "mirrored": true,
+   "source": "Matte tone and cloudiness fluctuation from render face (3,0), rotated 138.22 deg, mirrored (A) and render face (-1,4), rotated 148.59 deg (B); ramp blend axis 94.7 deg, offset -60 px, ramp 260 px, variance-preserving; face tone from the source face means; height flat",
+   "orientation": null,
+   "column": 5,
+   "row": 1,
+   "centre_px": [
+    3086.1875,
+    1296.0
+   ],
+   "sources": [
+    {
+     "role": "A",
+     "render_face": [
+      3,
+      0
+     ],
+     "rotation_deg": 138.216156,
+     "mirrored": true
+    },
+    {
+     "role": "B",
+     "render_face": [
+      -1,
+      4
+     ],
+     "rotation_deg": 148.58958,
+     "mirrored": false
+    }
+   ],
+   "blend": {
+    "phi_deg": 94.678499,
+    "offset_px": -60.269547,
+    "ramp_px": 259.891703
+   },
+   "measured_height_min_mm": 1.600006,
+   "measured_height_max_mm": 1.600006,
+   "measured_clearance_to_joint_floor_mm": 1.600006,
+   "measured_relief_std_mm": 0.0,
+   "measured_slope_rms": 0.0
+  },
+  {
+   "index": 38,
+   "type": "chiseled",
+   "rotation_deg": 179.649775,
+   "mirrored": false,
+   "source": "Chiseled vert (grooves at 90 deg): RGB and groove component from render face (2,4), rotated 179.65 deg [vert-groove source, D6 element r60=3] (A) and render face (1,2), rotated 119.63 deg [diagF-groove source, D6 element r60=2] (B), pitch-normalised, phase-aligned; ramp blend axis 209.2 deg, offset -96 px, ramp 117 px; height = land plane minus groove weight x groove depth",
+   "orientation": "vert",
+   "column": 5,
+   "row": 2,
+   "centre_px": [
+    3086.1875,
+    1944.0
+   ],
+   "sources": [
+    {
+     "role": "A",
+     "render_face": [
+      2,
+      4
+     ],
+     "rotation_deg": 179.649775,
+     "mirrored": false
+    },
+    {
+     "role": "B",
+     "render_face": [
+      1,
+      2
+     ],
+     "rotation_deg": 119.630471,
+     "mirrored": false
+    }
+   ],
+   "blend": {
+    "phi_deg": 209.204082,
+    "offset_px": -95.841801,
+    "ramp_px": 116.737471
+   },
+   "measured_height_min_mm": 1.100017,
+   "measured_height_max_mm": 1.600006,
+   "measured_clearance_to_joint_floor_mm": 1.100017,
+   "measured_relief_std_mm": 0.128361,
+   "measured_slope_rms": 0.16539,
+   "measured_groove_direction_deg": 90.0,
+   "measured_groove_pitch_mm": 5.048447
+  },
+  {
+   "index": 39,
+   "type": "matte",
+   "rotation_deg": 319.669712,
+   "mirrored": true,
+   "source": "Matte tone and cloudiness fluctuation from render face (1,3), rotated 319.67 deg, mirrored (A) and render face (3,1), rotated 59.56 deg, mirrored (B); ramp blend axis 32.4 deg, offset -56 px, ramp 248 px, variance-preserving; face tone from the source face means; height flat",
+   "orientation": null,
+   "column": 5,
+   "row": 3,
+   "centre_px": [
+    3086.1875,
+    2592.0
+   ],
+   "sources": [
+    {
+     "role": "A",
+     "render_face": [
+      1,
+      3
+     ],
+     "rotation_deg": 319.669712,
+     "mirrored": true
+    },
+    {
+     "role": "B",
+     "render_face": [
+      3,
+      1
+     ],
+     "rotation_deg": 59.55929,
+     "mirrored": true
+    }
+   ],
+   "blend": {
+    "phi_deg": 32.444459,
+    "offset_px": -55.601384,
+    "ramp_px": 247.969415
+   },
+   "measured_height_min_mm": 1.600006,
+   "measured_height_max_mm": 1.600006,
+   "measured_clearance_to_joint_floor_mm": 1.600006,
+   "measured_relief_std_mm": 0.0,
+   "measured_slope_rms": 0.0
+  },
+  {
+   "index": 40,
+   "type": "chiseled",
+   "rotation_deg": -0.158251,
+   "mirrored": false,
+   "source": "Chiseled vert (grooves at 90 deg): RGB and groove component from render face (-1,3), rotated -0.16 deg [vert-groove source, D6 element r60=0] (A) and render face (0,5), rotated 240.38 deg [diagS-groove source, D6 element r60=4] (B), pitch-normalised, phase-aligned; ramp blend axis 202.6 deg, offset -158 px, ramp 111 px; height = land plane minus groove weight x groove depth",
+   "orientation": "vert",
+   "column": 5,
+   "row": 4,
+   "centre_px": [
+    3086.1875,
+    3240.0
+   ],
+   "sources": [
+    {
+     "role": "A",
+     "render_face": [
+      -1,
+      3
+     ],
+     "rotation_deg": -0.158251,
+     "mirrored": false
+    },
+    {
+     "role": "B",
+     "render_face": [
+      0,
+      5
+     ],
+     "rotation_deg": 240.382757,
+     "mirrored": false
+    }
+   ],
+   "blend": {
+    "phi_deg": 202.595417,
+    "offset_px": -158.46827,
+    "ramp_px": 110.895481
+   },
+   "measured_height_min_mm": 1.100017,
+   "measured_height_max_mm": 1.600006,
+   "measured_clearance_to_joint_floor_mm": 1.100017,
+   "measured_relief_std_mm": 0.149184,
+   "measured_slope_rms": 0.190208,
+   "measured_groove_direction_deg": 90.0,
+   "measured_groove_pitch_mm": 5.048447
+  },
+  {
+   "index": 41,
+   "type": "matte",
+   "rotation_deg": 328.313141,
+   "mirrored": false,
+   "source": "Matte tone and cloudiness fluctuation from render face (4,4), rotated 328.31 deg (A) and render face (2,5), rotated 114.85 deg, mirrored (B); ramp blend axis 29.8 deg, offset 22 px, ramp 205 px, variance-preserving; face tone from the source face means; height flat",
+   "orientation": null,
+   "column": 5,
+   "row": 5,
+   "centre_px": [
+    3086.1875,
+    3888.0
+   ],
+   "sources": [
+    {
+     "role": "A",
+     "render_face": [
+      4,
+      4
+     ],
+     "rotation_deg": 328.313141,
+     "mirrored": false
+    },
+    {
+     "role": "B",
+     "render_face": [
+      2,
+      5
+     ],
+     "rotation_deg": 114.846629,
+     "mirrored": true
+    }
+   ],
+   "blend": {
+    "phi_deg": 29.836546,
+    "offset_px": 22.155726,
+    "ramp_px": 204.801524
+   },
+   "measured_height_min_mm": 1.600006,
+   "measured_height_max_mm": 1.600006,
+   "measured_clearance_to_joint_floor_mm": 1.600006,
+   "measured_relief_std_mm": 0.0,
+   "measured_slope_rms": 0.0
+  },
+  {
+   "index": 42,
+   "type": "raw",
+   "rotation_deg": 157.439182,
+   "mirrored": false,
+   "source": "Raw relief (Wiener-inverted shading, Fourier-domain mixture weighted by the measured angular gain) and albedo from render face (-1,0), rotated 157.44 deg (A) and render face (2,3), rotated 76.91 deg (B); ramp blend axis 86.4 deg, offset -31 px, ramp 216 px",
+   "orientation": null,
+   "column": 5,
+   "row": 6,
+   "centre_px": [
+    3086.1875,
+    0.0
+   ],
+   "sources": [
+    {
+     "role": "A",
+     "render_face": [
+      -1,
+      0
+     ],
+     "rotation_deg": 157.439182,
+     "mirrored": false
+    },
+    {
+     "role": "B",
+     "render_face": [
+      2,
+      3
+     ],
+     "rotation_deg": 76.907442,
+     "mirrored": false
+    }
+   ],
+   "blend": {
+    "phi_deg": 86.420033,
+    "offset_px": -31.21869,
+    "ramp_px": 215.618077
+   },
+   "measured_height_min_mm": 1.216471,
+   "measured_height_max_mm": 1.977096,
+   "measured_clearance_to_joint_floor_mm": 1.216471,
+   "measured_relief_std_mm": 0.103993,
+   "measured_slope_rms": 0.085452
+  },
+  {
+   "index": 43,
+   "type": "matte",
+   "rotation_deg": 70.07522,
+   "mirrored": true,
+   "source": "Matte tone and cloudiness fluctuation from render face (2,2), rotated 70.08 deg, mirrored (A) and render face (3,1), rotated 340.30 deg, mirrored (B); ramp blend axis 197.5 deg, offset -12 px, ramp 240 px, variance-preserving; face tone from the source face means; height flat",
+   "orientation": null,
+   "column": 6,
+   "row": 0,
+   "centre_px": [
+    3647.3125,
+    324.0
+   ],
+   "sources": [
+    {
+     "role": "A",
+     "render_face": [
+      2,
+      2
+     ],
+     "rotation_deg": 70.07522,
+     "mirrored": true
+    },
+    {
+     "role": "B",
+     "render_face": [
+      3,
+      1
+     ],
+     "rotation_deg": 340.297419,
+     "mirrored": true
+    }
+   ],
+   "blend": {
+    "phi_deg": 197.49684,
+    "offset_px": -11.651276,
+    "ramp_px": 239.798575
+   },
+   "measured_height_min_mm": 1.600006,
+   "measured_height_max_mm": 1.600006,
+   "measured_clearance_to_joint_floor_mm": 1.600006,
+   "measured_relief_std_mm": 0.0,
+   "measured_slope_rms": 0.0
+  },
+  {
+   "index": 44,
+   "type": "chiseled",
+   "rotation_deg": -0.349,
+   "mirrored": false,
+   "source": "Chiseled diagF (grooves at 150 deg): RGB and groove component from render face (4,5), rotated -0.35 deg [diagF-groove source, D6 element r60=0] (A) and render face (0,1), rotated 180.35 deg, mirrored [diagS-groove source, D6 element r60=3] (B), pitch-normalised, phase-aligned; ramp blend axis 114.1 deg, offset -10 px, ramp 104 px; height = land plane minus groove weight x groove depth",
+   "orientation": "diagF",
+   "column": 6,
+   "row": 1,
+   "centre_px": [
+    3647.3125,
+    972.0
+   ],
+   "sources": [
+    {
+     "role": "A",
+     "render_face": [
+      4,
+      5
+     ],
+     "rotation_deg": -0.349,
+     "mirrored": false
+    },
+    {
+     "role": "B",
+     "render_face": [
+      0,
+      1
+     ],
+     "rotation_deg": 180.349798,
+     "mirrored": true
+    }
+   ],
+   "blend": {
+    "phi_deg": 114.108345,
+    "offset_px": -10.160042,
+    "ramp_px": 104.129483
+   },
+   "measured_height_min_mm": 1.100017,
+   "measured_height_max_mm": 1.600006,
+   "measured_clearance_to_joint_floor_mm": 1.100017,
+   "measured_relief_std_mm": 0.132028,
+   "measured_slope_rms": 0.173549,
+   "measured_groove_direction_deg": 150.07787,
+   "measured_groove_pitch_mm": 5.068037
+  },
+  {
+   "index": 45,
+   "type": "matte",
+   "rotation_deg": 323.998281,
+   "mirrored": false,
+   "source": "Matte tone and cloudiness fluctuation from render face (1,3), rotated 324.00 deg (A) and render face (5,0), rotated 23.50 deg (B); ramp blend axis 139.6 deg, offset -13 px, ramp 235 px, variance-preserving; face tone from the source face means; height flat",
+   "orientation": null,
+   "column": 6,
+   "row": 2,
+   "centre_px": [
+    3647.3125,
+    1620.0
+   ],
+   "sources": [
+    {
+     "role": "A",
+     "render_face": [
+      1,
+      3
+     ],
+     "rotation_deg": 323.998281,
+     "mirrored": false
+    },
+    {
+     "role": "B",
+     "render_face": [
+      5,
+      0
+     ],
+     "rotation_deg": 23.503674,
+     "mirrored": false
+    }
+   ],
+   "blend": {
+    "phi_deg": 139.614206,
+    "offset_px": -12.909823,
+    "ramp_px": 235.27484
+   },
+   "measured_height_min_mm": 1.600006,
+   "measured_height_max_mm": 1.600006,
+   "measured_clearance_to_joint_floor_mm": 1.600006,
+   "measured_relief_std_mm": 0.0,
+   "measured_slope_rms": 0.0
+  },
+  {
+   "index": 46,
+   "type": "raw",
+   "rotation_deg": 163.290701,
+   "mirrored": true,
+   "source": "Raw relief (Wiener-inverted shading, Fourier-domain mixture weighted by the measured angular gain) and albedo from render face (4,1), rotated 163.29 deg, mirrored (A) and render face (4,2), rotated 341.77 deg (B); ramp blend axis 57.6 deg, offset 77 px, ramp 231 px",
+   "orientation": null,
+   "column": 6,
+   "row": 3,
+   "centre_px": [
+    3647.3125,
+    2268.0
+   ],
+   "sources": [
+    {
+     "role": "A",
+     "render_face": [
+      4,
+      1
+     ],
+     "rotation_deg": 163.290701,
+     "mirrored": true
+    },
+    {
+     "role": "B",
+     "render_face": [
+      4,
+      2
+     ],
+     "rotation_deg": 341.773925,
+     "mirrored": false
+    }
+   ],
+   "blend": {
+    "phi_deg": 57.552211,
+    "offset_px": 77.083287,
+    "ramp_px": 230.995993
+   },
+   "measured_height_min_mm": 1.229798,
+   "measured_height_max_mm": 2.008316,
+   "measured_clearance_to_joint_floor_mm": 1.229798,
+   "measured_relief_std_mm": 0.100916,
+   "measured_slope_rms": 0.081207
+  },
+  {
+   "index": 47,
+   "type": "matte",
+   "rotation_deg": 277.232106,
+   "mirrored": false,
+   "source": "Matte tone and cloudiness fluctuation from render face (5,3), rotated 277.23 deg (A) and render face (2,2), rotated 271.03 deg, mirrored (B); ramp blend axis 121.8 deg, offset -17 px, ramp 211 px, variance-preserving; face tone from the source face means; height flat",
+   "orientation": null,
+   "column": 6,
+   "row": 4,
+   "centre_px": [
+    3647.3125,
+    2916.0
+   ],
+   "sources": [
+    {
+     "role": "A",
+     "render_face": [
+      5,
+      3
+     ],
+     "rotation_deg": 277.232106,
+     "mirrored": false
+    },
+    {
+     "role": "B",
+     "render_face": [
+      2,
+      2
+     ],
+     "rotation_deg": 271.032106,
+     "mirrored": true
+    }
+   ],
+   "blend": {
+    "phi_deg": 121.842111,
+    "offset_px": -17.425597,
+    "ramp_px": 211.190887
+   },
+   "measured_height_min_mm": 1.600006,
+   "measured_height_max_mm": 1.600006,
+   "measured_clearance_to_joint_floor_mm": 1.600006,
+   "measured_relief_std_mm": 0.0,
+   "measured_slope_rms": 0.0
+  },
+  {
+   "index": 48,
+   "type": "matte",
+   "rotation_deg": 60.710232,
+   "mirrored": false,
+   "source": "Matte tone and cloudiness fluctuation from render face (1,5), rotated 60.71 deg (A) and render face (2,5), rotated 336.43 deg, mirrored (B); ramp blend axis 115.7 deg, offset -128 px, ramp 171 px, variance-preserving; face tone from the source face means; height flat",
+   "orientation": null,
+   "column": 6,
+   "row": 5,
+   "centre_px": [
+    3647.3125,
+    3564.0
+   ],
+   "sources": [
+    {
+     "role": "A",
+     "render_face": [
+      1,
+      5
+     ],
+     "rotation_deg": 60.710232,
+     "mirrored": false
+    },
+    {
+     "role": "B",
+     "render_face": [
+      2,
+      5
+     ],
+     "rotation_deg": 336.432148,
+     "mirrored": true
+    }
+   ],
+   "blend": {
+    "phi_deg": 115.703977,
+    "offset_px": -127.798576,
+    "ramp_px": 171.397866
+   },
+   "measured_height_min_mm": 1.600006,
+   "measured_height_max_mm": 1.600006,
+   "measured_clearance_to_joint_floor_mm": 1.600006,
+   "measured_relief_std_mm": 0.0,
+   "measured_slope_rms": 0.0
+  },
+  {
+   "index": 49,
+   "type": "chiseled",
+   "rotation_deg": 239.651,
+   "mirrored": false,
+   "source": "Chiseled diagS (grooves at 30 deg): RGB and groove component from render face (4,5), rotated 239.65 deg [diagF-groove source, D6 element r60=4] (A) and render face (1,2), rotated 239.63 deg [diagF-groove source, D6 element r60=4] (B), pitch-normalised, phase-aligned; ramp blend axis 73.8 deg, offset -69 px, ramp 116 px; height = land plane minus groove weight x groove depth",
+   "orientation": "diagS",
+   "column": 6,
+   "row": 6,
+   "centre_px": [
+    3647.3125,
+    4212.0
+   ],
+   "sources": [
+    {
+     "role": "A",
+     "render_face": [
+      4,
+      5
+     ],
+     "rotation_deg": 239.651,
+     "mirrored": false
+    },
+    {
+     "role": "B",
+     "render_face": [
+      1,
+      2
+     ],
+     "rotation_deg": 239.630471,
+     "mirrored": false
+    }
+   ],
+   "blend": {
+    "phi_deg": 73.753733,
+    "offset_px": -69.367303,
+    "ramp_px": 115.87032
+   },
+   "measured_height_min_mm": 1.100017,
+   "measured_height_max_mm": 1.600006,
+   "measured_clearance_to_joint_floor_mm": 1.100017,
+   "measured_relief_std_mm": 0.131331,
+   "measured_slope_rms": 0.171668,
+   "measured_groove_direction_deg": 30.230801,
+   "measured_groove_pitch_mm": 5.052249
+  },
+  {
+   "index": 50,
+   "type": "matte",
+   "rotation_deg": 257.810921,
+   "mirrored": false,
+   "source": "Matte tone and cloudiness fluctuation from render face (5,1), rotated 257.81 deg (A) and render face (4,3), rotated 100.11 deg, mirrored (B); ramp blend axis 63.1 deg, offset -46 px, ramp 204 px, variance-preserving; face tone from the source face means; height flat",
+   "orientation": null,
+   "column": 7,
+   "row": 0,
+   "centre_px": [
+    4208.4375,
+    648.0
+   ],
+   "sources": [
+    {
+     "role": "A",
+     "render_face": [
+      5,
+      1
+     ],
+     "rotation_deg": 257.810921,
+     "mirrored": false
+    },
+    {
+     "role": "B",
+     "render_face": [
+      4,
+      3
+     ],
+     "rotation_deg": 100.110517,
+     "mirrored": true
+    }
+   ],
+   "blend": {
+    "phi_deg": 63.098804,
+    "offset_px": -45.792175,
+    "ramp_px": 204.217914
+   },
+   "measured_height_min_mm": 1.600006,
+   "measured_height_max_mm": 1.600006,
+   "measured_clearance_to_joint_floor_mm": 1.600006,
+   "measured_relief_std_mm": 0.0,
+   "measured_slope_rms": 0.0
+  },
+  {
+   "index": 51,
+   "type": "raw",
+   "rotation_deg": 264.566833,
+   "mirrored": false,
+   "source": "Raw relief (Wiener-inverted shading, Fourier-domain mixture weighted by the measured angular gain) and albedo from render face (5,4), rotated 264.57 deg (A) and render face (1,4), rotated 90.73 deg, mirrored (B); ramp blend axis 201.9 deg, offset 129 px, ramp 188 px",
+   "orientation": null,
+   "column": 7,
+   "row": 1,
+   "centre_px": [
+    4208.4375,
+    1296.0
+   ],
+   "sources": [
+    {
+     "role": "A",
+     "render_face": [
+      5,
+      4
+     ],
+     "rotation_deg": 264.566833,
+     "mirrored": false
+    },
+    {
+     "role": "B",
+     "render_face": [
+      1,
+      4
+     ],
+     "rotation_deg": 90.733292,
+     "mirrored": true
+    }
+   ],
+   "blend": {
+    "phi_deg": 201.929431,
+    "offset_px": 129.212109,
+    "ramp_px": 188.280726
+   },
+   "measured_height_min_mm": 1.173971,
+   "measured_height_max_mm": 2.023288,
+   "measured_clearance_to_joint_floor_mm": 1.173971,
+   "measured_relief_std_mm": 0.116251,
+   "measured_slope_rms": 0.096371
+  },
+  {
+   "index": 52,
+   "type": "chiseled",
+   "rotation_deg": -0.349798,
+   "mirrored": false,
+   "source": "Chiseled diagS (grooves at 30 deg): RGB and groove component from render face (0,1), rotated -0.35 deg [diagS-groove source, D6 element r60=0] (A) and render face (3,3), rotated 59.69 deg, mirrored [diagS-groove source, D6 element r60=1] (B), pitch-normalised, phase-aligned; ramp blend axis 230.3 deg, offset -76 px, ramp 112 px; height = land plane minus groove weight x groove depth",
+   "orientation": "diagS",
+   "column": 7,
+   "row": 2,
+   "centre_px": [
+    4208.4375,
+    1944.0
+   ],
+   "sources": [
+    {
+     "role": "A",
+     "render_face": [
+      0,
+      1
+     ],
+     "rotation_deg": -0.349798,
+     "mirrored": false
+    },
+    {
+     "role": "B",
+     "render_face": [
+      3,
+      3
+     ],
+     "rotation_deg": 59.693621,
+     "mirrored": true
+    }
+   ],
+   "blend": {
+    "phi_deg": 230.291203,
+    "offset_px": -75.656927,
+    "ramp_px": 111.981309
+   },
+   "measured_height_min_mm": 1.100017,
+   "measured_height_max_mm": 1.600006,
+   "measured_clearance_to_joint_floor_mm": 1.100017,
+   "measured_relief_std_mm": 0.125221,
+   "measured_slope_rms": 0.164499,
+   "measured_groove_direction_deg": 30.230801,
+   "measured_groove_pitch_mm": 5.052249
+  },
+  {
+   "index": 53,
+   "type": "matte",
+   "rotation_deg": 255.948645,
+   "mirrored": false,
+   "source": "Matte tone and cloudiness fluctuation from render face (-1,2), rotated 255.95 deg (A) and render face (3,1), rotated 261.03 deg, mirrored (B); ramp blend axis 355.8 deg, offset 76 px, ramp 150 px, variance-preserving; face tone from the source face means; height flat",
+   "orientation": null,
+   "column": 7,
+   "row": 3,
+   "centre_px": [
+    4208.4375,
+    2592.0
+   ],
+   "sources": [
+    {
+     "role": "A",
+     "render_face": [
+      -1,
+      2
+     ],
+     "rotation_deg": 255.948645,
+     "mirrored": false
+    },
+    {
+     "role": "B",
+     "render_face": [
+      3,
+      1
+     ],
+     "rotation_deg": 261.03273,
+     "mirrored": true
+    }
+   ],
+   "blend": {
+    "phi_deg": 355.805746,
+    "offset_px": 75.856696,
+    "ramp_px": 150.315827
+   },
+   "measured_height_min_mm": 1.600006,
+   "measured_height_max_mm": 1.600006,
+   "measured_clearance_to_joint_floor_mm": 1.600006,
+   "measured_relief_std_mm": 0.0,
+   "measured_slope_rms": 0.0
+  },
+  {
+   "index": 54,
+   "type": "matte",
+   "rotation_deg": 224.930275,
+   "mirrored": true,
+   "source": "Matte tone and cloudiness fluctuation from render face (5,3), rotated 224.93 deg, mirrored (A) and render face (-1,4), rotated 0.15 deg, mirrored (B); ramp blend axis 326.2 deg, offset -102 px, ramp 192 px, variance-preserving; face tone from the source face means; height flat",
+   "orientation": null,
+   "column": 7,
+   "row": 4,
+   "centre_px": [
+    4208.4375,
+    3240.0
+   ],
+   "sources": [
+    {
+     "role": "A",
+     "render_face": [
+      5,
+      3
+     ],
+     "rotation_deg": 224.930275,
+     "mirrored": true
+    },
+    {
+     "role": "B",
+     "render_face": [
+      -1,
+      4
+     ],
+     "rotation_deg": 0.150145,
+     "mirrored": true
+    }
+   ],
+   "blend": {
+    "phi_deg": 326.219111,
+    "offset_px": -102.125493,
+    "ramp_px": 191.520323
+   },
+   "measured_height_min_mm": 1.600006,
+   "measured_height_max_mm": 1.600006,
+   "measured_clearance_to_joint_floor_mm": 1.600006,
+   "measured_relief_std_mm": 0.0,
+   "measured_slope_rms": 0.0
+  },
+  {
+   "index": 55,
+   "type": "raw",
+   "rotation_deg": 189.161819,
+   "mirrored": false,
+   "source": "Raw relief (Wiener-inverted shading, Fourier-domain mixture weighted by the measured angular gain) and albedo from render face (1,4), rotated 189.16 deg (A) and render face (0,3), rotated 54.94 deg, mirrored (B); ramp blend axis 181.1 deg, offset 42 px, ramp 153 px",
+   "orientation": null,
+   "column": 7,
+   "row": 5,
+   "centre_px": [
+    4208.4375,
+    3888.0
+   ],
+   "sources": [
+    {
+     "role": "A",
+     "render_face": [
+      1,
+      4
+     ],
+     "rotation_deg": 189.161819,
+     "mirrored": false
+    },
+    {
+     "role": "B",
+     "render_face": [
+      0,
+      3
+     ],
+     "rotation_deg": 54.936808,
+     "mirrored": true
+    }
+   ],
+   "blend": {
+    "phi_deg": 181.059306,
+    "offset_px": 41.73651,
+    "ramp_px": 152.83973
+   },
+   "measured_height_min_mm": 1.172931,
+   "measured_height_max_mm": 1.997977,
+   "measured_clearance_to_joint_floor_mm": 1.172931,
+   "measured_relief_std_mm": 0.116709,
+   "measured_slope_rms": 0.095021
+  },
+  {
+   "index": 56,
+   "type": "matte",
+   "rotation_deg": 64.972085,
+   "mirrored": true,
+   "source": "Matte tone and cloudiness fluctuation from render face (-1,2), rotated 64.97 deg, mirrored (A) and render face (-1,1), rotated 57.63 deg, mirrored (B); ramp blend axis 49.0 deg, offset 136 px, ramp 253 px, variance-preserving; face tone from the source face means; height flat",
+   "orientation": null,
+   "column": 7,
+   "row": 6,
+   "centre_px": [
+    4208.4375,
+    0.0
+   ],
+   "sources": [
+    {
+     "role": "A",
+     "render_face": [
+      -1,
+      2
+     ],
+     "rotation_deg": 64.972085,
+     "mirrored": true
+    },
+    {
+     "role": "B",
+     "render_face": [
+      -1,
+      1
+     ],
+     "rotation_deg": 57.628117,
+     "mirrored": true
+    }
+   ],
+   "blend": {
+    "phi_deg": 48.984943,
+    "offset_px": 136.264094,
+    "ramp_px": 252.818911
+   },
+   "measured_height_min_mm": 1.600006,
+   "measured_height_max_mm": 1.600006,
+   "measured_clearance_to_joint_floor_mm": 1.600006,
+   "measured_relief_std_mm": 0.0,
+   "measured_slope_rms": 0.0
+  }
+ ]
+}

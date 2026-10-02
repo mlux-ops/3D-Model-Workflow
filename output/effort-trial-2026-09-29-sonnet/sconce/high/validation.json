@@ -1,0 +1,890 @@
+{
+ "disc_off_max_shift_of_other_parts_in": {
+  "Backplate": 0.0,
+  "Body": 0.0,
+  "Light Source": 0.0,
+  "Shade": 0.0,
+  "Socket": 0.0
+ },
+ "disc_off_parts": [
+  "Backplate",
+  "Body",
+  "Light Source",
+  "Shade",
+  "Socket"
+ ],
+ "family": {
+  "category": "Lighting Fixtures",
+  "current_type": "KW1041MBK - Midnight Black / Milk",
+  "forms": {
+   "Backplate": {
+    "id": 3220,
+    "material_param_associated": true
+   },
+   "Body": {
+    "id": 3221,
+    "material_param_associated": true
+   },
+   "Disc": {
+    "id": 3223,
+    "material_param_associated": true
+   },
+   "Shade": {
+    "id": 3224,
+    "material_param_associated": true
+   },
+   "Socket": {
+    "id": 3222,
+    "material_param_associated": true
+   }
+  },
+  "light": {
+   "axial_position_from_face_in": 1.7,
+   "color_class": "CustomInitialColor",
+   "color_temperature_K": 2700.0,
+   "distance_to_shade_centre_in": 0.0,
+   "distribution": "Spherical",
+   "inside_shade_cavity": true,
+   "intensity_Efficacy": 90.0,
+   "intensity_Wattage": 3.0,
+   "intensity_class": "InitialWattageIntensity",
+   "light_distribution": "SphericalLightDistribution",
+   "light_shape": "PointLightShape",
+   "loss_factor": "BasicLossFactor",
+   "loss_factor_value": 1.0,
+   "n_types": 1,
+   "origin_in": [
+    0.0,
+    -0.5233,
+    3.75
+   ],
+   "shade_centre_in": [
+    0.0,
+    -0.5233,
+    3.75
+   ],
+   "shape": "Point"
+  },
+  "light_source_param": 1,
+  "parameters": [
+   {
+    "instance": false,
+    "name": "Glass Finish",
+    "storage": "ElementId",
+    "value": "KW1041MBK - Milk Glass"
+   },
+   {
+    "instance": true,
+    "name": "Show Disc",
+    "storage": "Integer",
+    "value": 1
+   },
+   {
+    "instance": false,
+    "name": "Model",
+    "storage": "String",
+    "value": "KW1041MBK"
+   },
+   {
+    "instance": false,
+    "name": "Metal Finish",
+    "storage": "ElementId",
+    "value": "KW1041MBK - Midnight Black Metal"
+   },
+   {
+    "instance": false,
+    "name": "Manufacturer",
+    "storage": "String",
+    "value": "Visual Comfort Studio"
+   },
+   {
+    "instance": false,
+    "name": "Description",
+    "storage": "String",
+    "value": "Nodes Angled Wall Sconce, Midnight Black / Milk, 1 x G9 3W LED"
+   }
+  ],
+  "placement_type": "WorkPlaneBased",
+  "types": [
+   "KW1041MBK - Midnight Black / Milk"
+  ],
+  "warning_count": 0,
+  "warnings": []
+ },
+ "gates": {
+  "1_native": {
+   "category": "Lighting Fixtures",
+   "pass": true,
+   "placement_type": "WorkPlaneBased",
+   "project_warnings": 0,
+   "reopen_warnings": 0,
+   "type_name": "KW1041MBK - Midnight Black / Milk"
+  },
+  "2_hosting": {
+   "backplate_w_range_in": [
+    0.0,
+    0.125
+   ],
+   "fixture_w_range_in": [
+    0.0,
+    5.4995
+   ],
+   "host_is_wall": true,
+   "note": "w is measured along the wall exterior face normal from the host face; 0 is the wall face",
+   "pass": true
+  },
+  "3_envelope": {
+   "disc_off_in": {
+    "D": 5.4995,
+    "H": 5.25,
+    "W": 5.25
+   },
+   "disc_off_max_shift_of_other_parts_in": 0.0,
+   "disc_on_in": {
+    "D": 5.4995,
+    "H": 7.63,
+    "W": 8.0
+   },
+   "note": "Envelope excludes the Light Source proxy solid (a fixed 24 in symbol that Revit adds to instance geometry); instance get_BoundingBox includes it and reads 24 x 24 x 24 in.",
+   "pass": true,
+   "targets_in": {
+    "D": 5.5,
+    "H": 7.63,
+    "W": 8.0
+   },
+   "tolerance_in": 0.02
+  },
+  "4_parts": {
+   "all_parts": {
+    "Backplate": {
+     "axis": [
+      -0.8081,
+      0.927
+     ],
+     "u": [
+      -2.625,
+      2.625
+     ],
+     "v": [
+      -2.625,
+      2.625
+     ],
+     "volume_in3": 2.7058,
+     "w": [
+      0.0,
+      0.125
+     ]
+    },
+    "Body": {
+     "axis": [
+      -0.5352,
+      2.029
+     ],
+     "u": [
+      -2.125,
+      2.125
+     ],
+     "v": [
+      -2.125,
+      2.125
+     ],
+     "volume_in3": 28.48,
+     "w": [
+      0.125,
+      2.8195
+     ]
+    },
+    "Disc": {
+     "axis": [
+      2.029,
+      2.089
+     ],
+     "u": [
+      -4.0,
+      4.0
+     ],
+     "v": [
+      -3.8242,
+      3.8058
+     ],
+     "volume_in3": 2.8997,
+     "w": [
+      0.9012,
+      3.421
+     ]
+    },
+    "Light Source": {
+     "axis": [
+      -8.2646,
+      15.7226
+     ],
+     "u": [
+      -12.0,
+      12.0
+     ],
+     "v": [
+      -12.5233,
+      11.4767
+     ],
+     "volume_in3": 7238.2307,
+     "w": [
+      -8.2483,
+      15.7483
+     ]
+    },
+    "Shade": {
+     "axis": [
+      2.229,
+      5.479
+     ],
+     "u": [
+      -1.7499,
+      1.7499
+     ],
+     "v": [
+      -2.272,
+      1.2262
+     ],
+     "volume_in3": 2.7638,
+     "w": [
+      2.0454,
+      5.4995
+     ]
+    },
+    "Socket": {
+     "axis": [
+      2.029,
+      2.829
+     ],
+     "u": [
+      -0.775,
+      0.775
+     ],
+     "v": [
+      -0.7989,
+      0.7374
+     ],
+     "volume_in3": 0.9443,
+     "w": [
+      1.894,
+      3.063
+     ]
+    }
+   },
+   "backplate_depth_in": 0.125,
+   "backplate_diameter_in": 5.25,
+   "pass": true,
+   "shade_axial_length_in": 3.25,
+   "shade_max_diameter_in": 3.4998,
+   "tolerance_in": 0.02
+  },
+  "5_materials": {
+   "face_counts_by_part": {
+    "Backplate": 4,
+    "Body": 4,
+    "Disc": 6,
+    "Light Source": 2,
+    "Shade": 6,
+    "Socket": 10
+   },
+   "glass_finish_faces": 6,
+   "glass_finish_to_TEST_GREEN_changed_parts": [
+    "Shade"
+   ],
+   "metal_finish_faces": 24,
+   "metal_finish_to_TEST_RED_changed_parts": [
+    "Backplate",
+    "Body",
+    "Socket",
+    "Disc"
+   ],
+   "pass": true,
+   "tables": {
+    "default": {
+     "Backplate": {
+      "KW1041MBK - Midnight Black Metal": 4
+     },
+     "Body": {
+      "KW1041MBK - Midnight Black Metal": 4
+     },
+     "Disc": {
+      "KW1041MBK - Midnight Black Metal": 6
+     },
+     "Light Source": {
+      "Default Light Source": 2
+     },
+     "Shade": {
+      "KW1041MBK - Milk Glass": 6
+     },
+     "Socket": {
+      "KW1041MBK - Midnight Black Metal": 10
+     }
+    },
+    "glass_finish_also_to_TEST_GREEN": {
+     "Backplate": {
+      "TEST_RED": 4
+     },
+     "Body": {
+      "TEST_RED": 4
+     },
+     "Disc": {
+      "TEST_RED": 6
+     },
+     "Light Source": {
+      "Default Light Source": 2
+     },
+     "Shade": {
+      "TEST_GREEN": 6
+     },
+     "Socket": {
+      "TEST_RED": 10
+     }
+    },
+    "metal_finish_to_TEST_RED": {
+     "Backplate": {
+      "TEST_RED": 4
+     },
+     "Body": {
+      "TEST_RED": 4
+     },
+     "Disc": {
+      "TEST_RED": 6
+     },
+     "Light Source": {
+      "Default Light Source": 2
+     },
+     "Shade": {
+      "KW1041MBK - Milk Glass": 6
+     },
+     "Socket": {
+      "TEST_RED": 10
+     }
+    }
+   }
+  },
+  "6_light": {
+   "axial_position_from_face_in": 1.7,
+   "colour_temperature_K": 2700.0,
+   "distance_to_shade_centre_in": 0.0,
+   "distribution": "Spherical",
+   "efficacy_lm_per_w": 90.0,
+   "family_light_source_enabled": true,
+   "inside_shade_cavity": true,
+   "loss_factor": 1.0,
+   "origin_in_family_frame": [
+    0.0,
+    -0.5233,
+    3.75
+   ],
+   "pass": true,
+   "project_instance_reads_wattage": 3.0,
+   "shade_centre_in_family_frame": [
+    0.0,
+    -0.5233,
+    3.75
+   ],
+   "shape": "Point",
+   "wattage": 3.0
+  },
+  "7_fidelity": {
+   "note": "Visual gate, reviewed by the author from views/_REVIEW_compare.jpg; result recorded in README.md (Fidelity review).",
+   "pass": null
+  },
+  "8_honesty": {
+   "note": "Every dimension is labelled published, measured or inferred in README.md (Dimension table).",
+   "pass": null
+  }
+ },
+ "gates_all_measured_pass": true,
+ "hosting": {
+  "all_solids_on_exterior_side_of_face": true,
+  "backplate_on_face": true,
+  "backplate_w_range_in": [
+   0.0,
+   0.125
+  ],
+  "facing_orientation": [
+   0.0,
+   -0.0,
+   1.0
+  ],
+  "family_category": "Lighting Fixtures",
+  "fixture_w_range_in": [
+   0.0,
+   5.4995
+  ],
+  "host_is_wall": true,
+  "instance_location_vs_face_in_normal_dir": -0.0,
+  "placement_type": "WorkPlaneBased",
+  "wall_exterior_normal": [
+   0.0,
+   1.0,
+   -0.0
+  ],
+  "wall_normal_used_as_projection_axis": [
+   0.0,
+   1.0,
+   -0.0
+  ]
+ },
+ "material_defaults": {
+  "Glass Finish": "KW1041MBK - Milk Glass",
+  "Metal Finish": "KW1041MBK - Midnight Black Metal"
+ },
+ "material_swap": {
+  "default": {
+   "Backplate": {
+    "KW1041MBK - Midnight Black Metal": 4
+   },
+   "Body": {
+    "KW1041MBK - Midnight Black Metal": 4
+   },
+   "Disc": {
+    "KW1041MBK - Midnight Black Metal": 6
+   },
+   "Light Source": {
+    "Default Light Source": 2
+   },
+   "Shade": {
+    "KW1041MBK - Milk Glass": 6
+   },
+   "Socket": {
+    "KW1041MBK - Midnight Black Metal": 10
+   }
+  },
+  "glass_finish_also_to_TEST_GREEN": {
+   "Backplate": {
+    "TEST_RED": 4
+   },
+   "Body": {
+    "TEST_RED": 4
+   },
+   "Disc": {
+    "TEST_RED": 6
+   },
+   "Light Source": {
+    "Default Light Source": 2
+   },
+   "Shade": {
+    "TEST_GREEN": 6
+   },
+   "Socket": {
+    "TEST_RED": 10
+   }
+  },
+  "metal_finish_to_TEST_RED": {
+   "Backplate": {
+    "TEST_RED": 4
+   },
+   "Body": {
+    "TEST_RED": 4
+   },
+   "Disc": {
+    "TEST_RED": 6
+   },
+   "Light Source": {
+    "Default Light Source": 2
+   },
+   "Shade": {
+    "KW1041MBK - Milk Glass": 6
+   },
+   "Socket": {
+    "TEST_RED": 10
+   }
+  }
+ },
+ "measure_disc_off": {
+  "envelope": {
+   "instance_get_BoundingBox_world_in": [
+    [
+     108.0,
+     -4.25,
+     47.4767
+    ],
+    [
+     132.0,
+     19.75,
+     71.4767
+    ]
+   ],
+   "size_in": {
+    "D": 5.4995,
+    "H": 5.25,
+    "W": 5.25
+   },
+   "u": [
+    -2.625,
+    2.625
+   ],
+   "v": [
+    -2.625,
+    2.625
+   ],
+   "w": [
+    0.0,
+    5.4995
+   ]
+  },
+  "parts": {
+   "Backplate": {
+    "axis": [
+     -0.8081,
+     0.927
+    ],
+    "face_count": 4,
+    "faces": {
+     "KW1041MBK - Midnight Black Metal": 4
+    },
+    "in_plane_v": [
+     -2.4975,
+     2.536
+    ],
+    "u": [
+     -2.625,
+     2.625
+    ],
+    "v": [
+     -2.625,
+     2.625
+    ],
+    "volume_in3": 2.7058,
+    "w": [
+     0.0,
+     0.125
+    ]
+   },
+   "Body": {
+    "axis": [
+     -0.5352,
+     2.029
+    ],
+    "face_count": 4,
+    "faces": {
+     "KW1041MBK - Midnight Black Metal": 4
+    },
+    "in_plane_v": [
+     -1.9833,
+     2.8881
+    ],
+    "u": [
+     -2.125,
+     2.125
+    ],
+    "v": [
+     -2.125,
+     2.125
+    ],
+    "volume_in3": 28.48,
+    "w": [
+     0.125,
+     2.8195
+    ]
+   },
+   "Light Source": {
+    "axis": [
+     -8.2646,
+     15.7226
+    ],
+    "face_count": 2,
+    "faces": {
+     "Default Light Source": 2
+    },
+    "in_plane_v": [
+     -11.3354,
+     12.6483
+    ],
+    "u": [
+     -12.0,
+     12.0
+    ],
+    "v": [
+     -12.5233,
+     11.4767
+    ],
+    "volume_in3": 7238.2307,
+    "w": [
+     -8.2483,
+     15.7483
+    ]
+   },
+   "Shade": {
+    "axis": [
+     2.229,
+     5.479
+    ],
+    "face_count": 6,
+    "faces": {
+     "KW1041MBK - Milk Glass": 6
+    },
+    "in_plane_v": [
+     -1.0918,
+     2.4049
+    ],
+    "u": [
+     -1.7499,
+     1.7499
+    ],
+    "v": [
+     -2.272,
+     1.2262
+    ],
+    "volume_in3": 2.7638,
+    "w": [
+     2.0454,
+     5.4995
+    ]
+   },
+   "Socket": {
+    "axis": [
+     2.029,
+     2.829
+    ],
+    "face_count": 10,
+    "faces": {
+     "KW1041MBK - Midnight Black Metal": 10
+    },
+    "in_plane_v": [
+     -0.1185,
+     1.4315
+    ],
+    "u": [
+     -0.775,
+     0.775
+    ],
+    "v": [
+     -0.7989,
+     0.7374
+    ],
+    "volume_in3": 0.9443,
+    "w": [
+     1.894,
+     3.063
+    ]
+   }
+  }
+ },
+ "measure_disc_on": {
+  "envelope": {
+   "instance_get_BoundingBox_world_in": [
+    [
+     108.0,
+     -4.25,
+     47.4767
+    ],
+    [
+     132.0,
+     19.75,
+     71.4767
+    ]
+   ],
+   "size_in": {
+    "D": 5.4995,
+    "H": 7.63,
+    "W": 8.0
+   },
+   "u": [
+    -4.0,
+    4.0
+   ],
+   "v": [
+    -3.8242,
+    3.8058
+   ],
+   "w": [
+    0.0,
+    5.4995
+   ]
+  },
+  "parts": {
+   "Backplate": {
+    "axis": [
+     -0.8081,
+     0.927
+    ],
+    "face_count": 4,
+    "faces": {
+     "KW1041MBK - Midnight Black Metal": 4
+    },
+    "in_plane_v": [
+     -2.4975,
+     2.536
+    ],
+    "u": [
+     -2.625,
+     2.625
+    ],
+    "v": [
+     -2.625,
+     2.625
+    ],
+    "volume_in3": 2.7058,
+    "w": [
+     0.0,
+     0.125
+    ]
+   },
+   "Body": {
+    "axis": [
+     -0.5352,
+     2.029
+    ],
+    "face_count": 4,
+    "faces": {
+     "KW1041MBK - Midnight Black Metal": 4
+    },
+    "in_plane_v": [
+     -1.9833,
+     2.8881
+    ],
+    "u": [
+     -2.125,
+     2.125
+    ],
+    "v": [
+     -2.125,
+     2.125
+    ],
+    "volume_in3": 28.48,
+    "w": [
+     0.125,
+     2.8195
+    ]
+   },
+   "Disc": {
+    "axis": [
+     2.029,
+     2.089
+    ],
+    "face_count": 6,
+    "faces": {
+     "KW1041MBK - Midnight Black Metal": 6
+    },
+    "in_plane_v": [
+     -3.3435,
+     4.6565
+    ],
+    "u": [
+     -4.0,
+     4.0
+    ],
+    "v": [
+     -3.8242,
+     3.8058
+    ],
+    "volume_in3": 2.8997,
+    "w": [
+     0.9012,
+     3.421
+    ]
+   },
+   "Light Source": {
+    "axis": [
+     -8.2646,
+     15.7226
+    ],
+    "face_count": 2,
+    "faces": {
+     "Default Light Source": 2
+    },
+    "in_plane_v": [
+     -11.3354,
+     12.6483
+    ],
+    "u": [
+     -12.0,
+     12.0
+    ],
+    "v": [
+     -12.5233,
+     11.4767
+    ],
+    "volume_in3": 7238.2307,
+    "w": [
+     -8.2483,
+     15.7483
+    ]
+   },
+   "Shade": {
+    "axis": [
+     2.229,
+     5.479
+    ],
+    "face_count": 6,
+    "faces": {
+     "KW1041MBK - Milk Glass": 6
+    },
+    "in_plane_v": [
+     -1.0918,
+     2.4049
+    ],
+    "u": [
+     -1.7499,
+     1.7499
+    ],
+    "v": [
+     -2.272,
+     1.2262
+    ],
+    "volume_in3": 2.7638,
+    "w": [
+     2.0454,
+     5.4995
+    ]
+   },
+   "Socket": {
+    "axis": [
+     2.029,
+     2.829
+    ],
+    "face_count": 10,
+    "faces": {
+     "KW1041MBK - Midnight Black Metal": 10
+    },
+    "in_plane_v": [
+     -0.1185,
+     1.4315
+    ],
+    "u": [
+     -0.775,
+     0.775
+    ],
+    "v": [
+     -0.7989,
+     0.7374
+    ],
+    "volume_in3": 0.9443,
+    "w": [
+     1.894,
+     3.063
+    ]
+   }
+  }
+ },
+ "ok": true,
+ "project_light": {
+  "color": "CustomInitialColor",
+  "intensity": "InitialWattageIntensity",
+  "shape": "PointLightShape",
+  "wattage": 3.0
+ },
+ "project_warnings": [],
+ "stages": [
+  "family reopened",
+  "placed",
+  "measured disc on",
+  "measured disc off",
+  "material swap",
+  "views exported"
+ ],
+ "symbol": "KW1041MBK - Midnight Black / Milk",
+ "views": {
+  "front": "E:\\Claude\\3D-Model-Workflow\\output\\effort-trial-2026-09-29-sonnet\\sconce\\high\\views\\KW1041MBK_front.png",
+  "hosted_on_wall": "E:\\Claude\\3D-Model-Workflow\\output\\effort-trial-2026-09-29-sonnet\\sconce\\high\\views\\KW1041MBK_hosted_on_wall.png",
+  "oblique": "E:\\Claude\\3D-Model-Workflow\\output\\effort-trial-2026-09-29-sonnet\\sconce\\high\\views\\KW1041MBK_oblique.png",
+  "side": "E:\\Claude\\3D-Model-Workflow\\output\\effort-trial-2026-09-29-sonnet\\sconce\\high\\views\\KW1041MBK_side.png"
+ },
+ "wall_layer_materials": [
+  "<none>"
+ ],
+ "wall_type": "Wall 1"
+}

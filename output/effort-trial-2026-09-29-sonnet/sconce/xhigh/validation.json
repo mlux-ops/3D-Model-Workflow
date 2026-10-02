@@ -1,0 +1,2056 @@
+{
+ "compare_sheet": {
+  "file": "views/_REVIEW_compare.jpg",
+  "size_px": [
+   780,
+   1632
+  ]
+ },
+ "family": "Visual_Comfort_Nodes_KW1041MBK_Midnight_Black_R2025.rfa",
+ "gates": {
+  "1_native": {
+   "measured": {
+    "category": "Lighting Fixtures",
+    "placement_type": "WorkPlaneBased",
+    "project_warnings_after_load_and_place": [],
+    "project_warnings_after_views": [],
+    "revit_version": "2025",
+    "size_bytes": 483328,
+    "types": [
+     "KW1041MBK - Midnight Black / Milk"
+    ],
+    "warnings_on_reopen": []
+   },
+   "pass": true,
+   "target": "RFA saves and reopens in Revit 2025, zero warnings, category Lighting Fixtures, placement WorkPlaneBased"
+  },
+  "2_hosting": {
+   "measured": {
+    "backplate_depth_range_from_wall_face_in": [
+     1.1920928977282585e-07,
+     0.12500000000000022
+    ],
+    "fixture_depth_range_from_wall_face_in": [
+     1.1920928977282585e-07,
+     5.4997642040252686
+    ],
+    "host_face_reference_present": true,
+    "host_is_wall": true,
+    "instance_facing_orientation": [
+     0.0,
+     -0.0,
+     1.0
+    ],
+    "instance_transform_basis_family_xyz_in_world": {
+     "X": [
+      -1.0,
+      0.0,
+      0.0
+     ],
+     "Y": [
+      0.0,
+      -0.0,
+      1.0
+     ],
+     "Z": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    },
+    "reference_direction_plus_x_result": {
+     "facing_orientation": [
+      0.0,
+      0.0,
+      -1.0
+     ],
+     "note": "upside-down fixture (family Y -> world -Z); not the intended placement"
+    },
+    "reference_direction_used": "up x face normal = (-1,0,0) for this wall",
+    "wall": {
+     "exterior_face_normal": [
+      0.0,
+      1.0,
+      -0.0
+     ],
+     "upright_reference_direction": [
+      -1.0,
+      0.0,
+      0.0
+     ],
+     "wall_orientation": [
+      0.0,
+      1.0,
+      -0.0
+     ],
+     "wall_type": "Wall 1"
+    }
+   },
+   "pass": true,
+   "target": "places on the exterior wall face, backplate on the face, fixture projecting out of the wall"
+  },
+  "3_envelope": {
+   "axes": "instance world axes at placement: X = along the wall, Z = vertical, Y = wall normal (measured from the wall face)",
+   "deviation_instance_bbox_in": {
+    "depth": 8.881784197001252e-16,
+    "height": -8.881784197001252e-16,
+    "width": -8.881784197001252e-16
+   },
+   "deviation_tessellated_in": {
+    "depth": -0.0002359151840209961,
+    "height": -8.392333983309186e-07,
+    "width": 2.384185791015625e-07
+   },
+   "disc_off_bbox_from_separate_run_in": [
+    [
+     -2.625,
+     4.0,
+     57.375
+    ],
+    [
+     2.625,
+     9.5,
+     62.625
+    ]
+   ],
+   "expected_disc_off_in": {
+    "basis": "backplate governs width/height, shade apex governs depth",
+    "depth": 5.5,
+    "height": 5.25,
+    "width": 5.25
+   },
+   "measured_disc_off_in": {
+    "depth": 5.499764084815979,
+    "height": 5.25,
+    "width": 5.25
+   },
+   "measured_disc_on_in": {
+    "instance_get_BoundingBox_exact": {
+     "depth": 5.500000000000001,
+     "height": 7.629999999999999,
+     "width": 7.999999999999999
+    },
+    "note_Solid_GetBoundingBox_is_loose": {
+     "depth": 5.500000000000002,
+     "height": 7.755611987080002,
+     "why": "Revit returns a padded box on curved solids (+1.57 % per side here); it is not the geometry extent",
+     "width": 8.12561198708
+    },
+    "tessellated_LOD1_face_triangulation": {
+     "depth": 5.499764084815979,
+     "height": 7.629999160766602,
+     "width": 8.000000238418579
+    }
+   },
+   "other_parts_movement_disc_on_vs_off_in": {
+    "Backplate": 0.0,
+    "Body": 0.0,
+    "Light Source": 0.0,
+    "Shade": 0.0,
+    "Socket": 0.0
+   },
+   "parts_present_disc_off": [
+    "Backplate",
+    "Body",
+    "Light Source",
+    "Shade",
+    "Socket"
+   ],
+   "pass": true,
+   "target_in": {
+    "depth_wall_normal": 5.5,
+    "height_vertical": 7.63,
+    "tolerance": 0.02,
+    "width_along_wall": 8.0
+   }
+  },
+  "4_parts": {
+   "build_report_designed_parts": {
+    "Backplate": {
+     "bbox_in": [
+      -2.625,
+      -2.625,
+      0.0,
+      2.625,
+      2.625,
+      0.125
+     ],
+     "faces": 4,
+     "id": "3221",
+     "solids": 1,
+     "volume_in3": 2.705841396591195
+    },
+    "Body": {
+     "bbox_in": [
+      -2.12,
+      -2.12,
+      0.125,
+      2.12,
+      2.12,
+      2.666101725793653
+     ],
+     "faces": 4,
+     "id": "3222",
+     "solids": 1,
+     "volume_in3": 26.121541236541162
+    },
+    "Disc": {
+     "bbox_in": [
+      -4.0,
+      -3.829663718230144,
+      0.7270239804132168,
+      4.0,
+      3.800336281769855,
+      3.312283922208375
+     ],
+     "faces": 6,
+     "id": "3224",
+     "solids": 1,
+     "volume_in3": 4.641830081576316
+    },
+    "Shade": {
+     "bbox_in": [
+      -1.7499035238635723,
+      -2.332884584554428,
+      2.0574105570044887,
+      1.7499035238635723,
+      1.1671154154455727,
+      5.5
+     ],
+     "faces": 6,
+     "id": "3225",
+     "solids": 1,
+     "volume_in3": 3.4215657382554143
+    },
+    "Socket": {
+     "bbox_in": [
+      -0.53,
+      -0.6782612000766555,
+      1.8096431774047514,
+      0.53,
+      0.5035445573345056,
+      2.6724039020430284
+     ],
+     "faces": 4,
+     "id": "3223",
+     "solids": 1,
+     "volume_in3": 0.4941666975630006
+    }
+   },
+   "measured_in": {
+    "backplate": {
+     "diameter_arc_measured": [
+      5.25
+     ],
+     "edge_sampled": [
+      5.25,
+      0.12500000000000022,
+      5.25
+     ],
+     "tessellated_LOD1": [
+      5.25,
+      0.12499988079071045,
+      5.25
+     ]
+    },
+    "body_depth_range_from_wall_face": [
+     0.12500000000000022,
+     2.6706130504608154
+    ],
+    "body_diameter": [
+     4.24
+    ],
+    "disc_circle_diameters": [
+     1.06,
+     8.0
+    ],
+    "disc_depth_range_from_wall_face": [
+     0.7270239591598513,
+     3.312283992767334
+    ],
+    "disc_overall_extent_tessellated": [
+     8.000000238418579,
+     2.585260033607483,
+     7.629999160766602
+    ],
+    "light_source_symbol_solid_extent": [
+     0.6000000089406967,
+     0.5948173999786377,
+     0.5999965667724609
+    ],
+    "shade_axial_height_analytic": 3.250000015815211,
+    "shade_axial_height_tessellated": 3.250000650893923,
+    "shade_axis_world": [
+     0.0,
+     0.9500840704424638,
+     -0.31199400489669576
+    ],
+    "shade_base_ring_circle_diameters": [
+     1.3748,
+     1.8028
+    ],
+    "shade_inner_sphere_fit_LOD1": {
+     "apex_from_base_plane": 3.1500000450077916,
+     "note": "cavity surface; wall 0.10 in is inferred",
+     "radius": 1.650000012197418
+    },
+    "shade_max_diameter_tessellated": 3.4999637732395366,
+    "shade_outer_sphere_fit_LOD1": {
+     "apex_from_base_plane": 3.250000015815211,
+     "centre_from_base_plane": 1.5000000226467545,
+     "max_diameter": 3.499999986336913,
+     "max_residual": 2.743401791072131e-06,
+     "n_vertices": 1098,
+     "radius": 1.7499999931684564
+    },
+    "socket_depth_range_from_wall_face": [
+     1.8096432685852053,
+     2.6724040508270264
+    ],
+    "socket_diameter": 1.06
+   },
+   "pass": true,
+   "target_in": {
+    "backplate_diameter": 5.25,
+    "backplate_thickness": 0.125,
+    "shade_axial_height": 3.25,
+    "shade_max_diameter": 3.5,
+    "tolerance": 0.02
+   }
+  },
+  "5_materials": {
+   "after_Glass_Finish_swap": {
+    "Backplate": {
+     "by_material": {
+      "ZZ Test Metal": 4
+     },
+     "faces": 4
+    },
+    "Body": {
+     "by_material": {
+      "ZZ Test Metal": 4
+     },
+     "faces": 4
+    },
+    "Disc": {
+     "by_material": {
+      "ZZ Test Metal": 6
+     },
+     "faces": 6
+    },
+    "Light Source": {
+     "by_material": {
+      "Default Light Source": 2
+     },
+     "faces": 2
+    },
+    "Shade": {
+     "by_material": {
+      "ZZ Test Glass": 6
+     },
+     "faces": 6
+    },
+    "Socket": {
+     "by_material": {
+      "ZZ Test Metal": 4
+     },
+     "faces": 4
+    }
+   },
+   "after_Metal_Finish_swap": {
+    "Backplate": {
+     "by_material": {
+      "ZZ Test Metal": 4
+     },
+     "faces": 4
+    },
+    "Body": {
+     "by_material": {
+      "ZZ Test Metal": 4
+     },
+     "faces": 4
+    },
+    "Disc": {
+     "by_material": {
+      "ZZ Test Metal": 6
+     },
+     "faces": 6
+    },
+    "Light Source": {
+     "by_material": {
+      "Default Light Source": 2
+     },
+     "faces": 2
+    },
+    "Shade": {
+     "by_material": {
+      "KW1041 Milk Glass": 6
+     },
+     "faces": 6
+    },
+    "Socket": {
+     "by_material": {
+      "ZZ Test Metal": 4
+     },
+     "faces": 4
+    }
+   },
+   "after_restore": {
+    "Backplate": {
+     "by_material": {
+      "KW1041 Midnight Black": 4
+     },
+     "faces": 4
+    },
+    "Body": {
+     "by_material": {
+      "KW1041 Midnight Black": 4
+     },
+     "faces": 4
+    },
+    "Disc": {
+     "by_material": {
+      "KW1041 Midnight Black": 6
+     },
+     "faces": 6
+    },
+    "Light Source": {
+     "by_material": {
+      "Default Light Source": 2
+     },
+     "faces": 2
+    },
+    "Shade": {
+     "by_material": {
+      "KW1041 Milk Glass": 6
+     },
+     "faces": 6
+    },
+    "Socket": {
+     "by_material": {
+      "KW1041 Midnight Black": 4
+     },
+     "faces": 4
+    }
+   },
+   "bindings": {
+    "Backplate": {
+     "material_bound_to": "Metal Finish",
+     "visibility_bound_to": null
+    },
+    "Body": {
+     "material_bound_to": "Metal Finish",
+     "visibility_bound_to": null
+    },
+    "Disc": {
+     "material_bound_to": "Metal Finish",
+     "visibility_bound_to": "Show Disc"
+    },
+    "Shade": {
+     "material_bound_to": "Glass Finish",
+     "visibility_bound_to": null
+    },
+    "Socket": {
+     "material_bound_to": "Metal Finish",
+     "visibility_bound_to": null
+    }
+   },
+   "checks": {
+    "glass_swap_changes_only_shade": true,
+    "metal_swap_changes_only_metal_parts": true,
+    "restore_returns_defaults": true
+   },
+   "face_counts_default": {
+    "Backplate": {
+     "by_material": {
+      "KW1041 Midnight Black": 4
+     },
+     "faces": 4
+    },
+    "Body": {
+     "by_material": {
+      "KW1041 Midnight Black": 4
+     },
+     "faces": 4
+    },
+    "Disc": {
+     "by_material": {
+      "KW1041 Midnight Black": 6
+     },
+     "faces": 6
+    },
+    "Light Source": {
+     "by_material": {
+      "Default Light Source": 2
+     },
+     "faces": 2
+    },
+    "Shade": {
+     "by_material": {
+      "KW1041 Milk Glass": 6
+     },
+     "faces": 6
+    },
+    "Socket": {
+     "by_material": {
+      "KW1041 Midnight Black": 4
+     },
+     "faces": 4
+    }
+   },
+   "parameter_definitions": {
+    "Apparent Power": {
+     "instance": false,
+     "storage": "Double"
+    },
+    "Description": {
+     "instance": false,
+     "storage": "String"
+    },
+    "Glass Finish": {
+     "instance": false,
+     "storage": "ElementId"
+    },
+    "Lamp": {
+     "instance": false,
+     "storage": "String"
+    },
+    "Light Source Symbol Size": {
+     "instance": false,
+     "storage": "Double"
+    },
+    "Manufacturer": {
+     "instance": false,
+     "storage": "String"
+    },
+    "Metal Finish": {
+     "instance": false,
+     "storage": "ElementId"
+    },
+    "Model": {
+     "instance": false,
+     "storage": "String"
+    },
+    "Show Disc": {
+     "instance": true,
+     "storage": "Integer"
+    },
+    "Wattage Comments": {
+     "instance": false,
+     "storage": "String"
+    }
+   },
+   "pass": true,
+   "restored_type_parameters": {
+    "Glass Finish": "KW1041 Milk Glass",
+    "Metal Finish": "KW1041 Midnight Black"
+   },
+   "target": "substituting other materials in Metal Finish and Glass Finish changes the faces of the right parts",
+   "test": "Set the type parameters on the loaded symbol to new materials, read the material of every face of the instance geometry, then restore"
+  },
+  "6_light": {
+   "measured": {
+    "clearance_to_glass_in": 1.2899999999999965,
+    "distance_between_in": 3.339930988079949e-15,
+    "family_light_source": {
+     "cct_K": 2700.0,
+     "distribution": "Spherical",
+     "flux_lm": 250.0,
+     "loss_factor": 1.0,
+     "shape": "Point",
+     "source_bbox_centre_in": [
+      0.0,
+      -0.5828845845544275,
+      3.75
+     ],
+     "source_elements": 1,
+     "source_origin_in": [
+      0.0,
+      -0.5828845845544276,
+      3.75
+     ]
+    },
+    "family_warnings": [],
+    "inner_glass_radius_in": 1.65,
+    "light_source_symbol_centre_in_placed_instance_family_coords_in": [
+     1.235990476633475e-17,
+     -0.5828845845544244,
+     3.749999999999999
+    ],
+    "meaning_of_on": "A Point/Spherical source with 250 lm at 2700 K exists and Revit reports no \"light source inside solid geometry\" warning on reopen or in the project. The family has no on/off switch.",
+    "shade_sphere_centre_family_coords_in": [
+     0.0,
+     -0.5828845845544276,
+     3.75
+    ],
+    "symbol_radius_in": 0.36
+   },
+   "pass": true,
+   "target": "light source exists, is on, and its position is inside the shade"
+  },
+  "7_fidelity": {
+   "method": "Own visual review of every view in views/ and of views/_REVIEW_compare.jpg. Angled view: the black-variant photo was registered to the model with a least-squares camera fit (source/fit_camera_black2.py; 7 free camera parameters, cut angle fixed at 18.18 deg), the fitted views were rendered from Revit with the walls hidden (source/render_hosted_match.py) and overlaid on the photo channel-wise (work/match_overlay.png). Side and front: compared with the white-variant photos, with Show Disc = No (the white photos show no 8 in disc). The comparison is therefore not blind, and the angled match is a fit, not an independent check of the camera.",
+   "notes": [
+    "Angled (black photo), fit camera C: disc rim RMS 3.09 px, shade sphere RMS 1.57 px at 98.8 px/in, i.e. about 0.03 in and 0.016 in. Disc size, tilt, position and the shade's size, angle and position overlay the photo to a few pixels. The overlay is the evidence; rerun source/fit_camera_black2.py to reproduce.",
+    "Angled: the backplate/drum silhouette at the left is off by RMS about 15 px (0.15 in); the photo's drum reaches further left than the model's (cyan fringe in work/match_overlay.png). Cause, from the side-photo measurements: the photo drum is about 0.35 in longer at mid-length (about 2.2 in against 1.85 in) and is cut at about 15.6 deg, against 18.18 deg here (the published 8.00 W x 7.63 H fix the disc tilt near 18 deg for a flat circular disc). The model's drum is therefore a little short.",
+    "The camera pose (roll -14.5 deg, elevation 6.5 deg for fit C; roll 0, elevation -12.4 deg for level fit D) is degenerate: both fit the disc and shade equally well. Camera C fits best, camera D is the level-camera reading.",
+    "Shade apex: 5.66 in from the wall in the photo against 5.50 published; the model follows the published depth, so the shade sits about 0.16 in closer to the wall than in the photo. Shade sphere centre: photo 3.92 in from the plate back and 0.44 in below the plate centre; model 3.75 and 0.58.",
+    "Side and front views: body, socket and shade follow the same layout as the white photos; the white photos have no disc, so those comparisons use Show Disc = No. Revit views are parallel projection while the photos show mild perspective (fitted k about 0.011 per inch).",
+    "Shading, not photo-realism: the photo's shade glows (lit) and the disc shows brushed gradients; the model is a plain shaded render with the template's grey host backdrop in family views. The material appearance was checked in Shading only."
+   ],
+   "pass": true,
+   "status": "reviewed by the builder (not blind); passes with listed deviations",
+   "target": "front, side and angled views match the photos (disc size, tilt and position; body shape; shade form, angle and position)"
+  },
+  "8_honesty": {
+   "pass": true,
+   "status": "README.md dimension table gives the basis (published / measured / inferred) and confidence of every dimension; SOURCES.md and ERRORS.md list inputs used or rejected and every error",
+   "target": "every non-published dimension labelled measured or inferred, with basis; nothing unmeasured claimed"
+  }
+ },
+ "gates_pass_summary": {
+  "1_native": true,
+  "2_hosting": true,
+  "3_envelope": true,
+  "4_parts": true,
+  "5_materials": true,
+  "6_light": true,
+  "7_fidelity": true,
+  "8_honesty": true
+ },
+ "identity_and_defaults": {
+  "ALL_MODEL_DESCRIPTION": "Nodes Angled Wall Sconce, Midnight Black with Milk glass shade. 1 x JCD/G9 3 W 120 V LED.",
+  "ALL_MODEL_MANUFACTURER": "Visual Comfort Studio",
+  "ALL_MODEL_MODEL": "KW1041MBK",
+  "Apparent Power": "3.00 VA",
+  "Glass Finish": "KW1041 Milk Glass",
+  "Lamp": "JCD/G9/3W/120V LED",
+  "Metal Finish": "KW1041 Midnight Black",
+  "Show Disc (default)": 1,
+  "Wattage Comments": "3 W"
+ },
+ "materials_in_family": {
+  "KW1041 Midnight Black": {
+   "appearance_diffuse_rgb": [
+    "34",
+    "32",
+    "32"
+   ],
+   "appearance_generic_glossiness": 0.42,
+   "appearance_generic_reflectivity_at_0deg": 0.1,
+   "class": "Metal",
+   "shading_rgb": [
+    "34",
+    "32",
+    "32"
+   ]
+  },
+  "KW1041 Milk Glass": {
+   "appearance_diffuse_rgb": [
+    "244",
+    "240",
+    "234"
+   ],
+   "appearance_generic_glossiness": 0.62,
+   "appearance_generic_reflectivity_at_0deg": 0.06,
+   "class": "Glass",
+   "shading_rgb": [
+    "244",
+    "240",
+    "234"
+   ]
+  }
+ },
+ "measurement_methods": {
+  "Solid_GetBoundingBox": "reported only to flag it as loose (+1.57 % per side on curved solids); not used for a gate",
+  "edge_sampled": "points sampled along every face edge; exact for planar/circular edges, omits the shade apex",
+  "instance_get_BoundingBox": "Element.get_BoundingBox(null) on the placed instance; exact",
+  "sphere_fit": "OLS sphere fit (rad^2 + a^2 = 2 t a + K) on LOD 1.0 vertices of each RevolvedFace of the shade; residual below 3e-6 in",
+  "tessellated_LOD1": "Face.Triangulate(1.0) vertices of every face of the instance solids; accurate to about 0.0002 in on curved faces"
+ },
+ "project_materials_shading": {
+  "KW1041 Midnight Black": {
+   "appearance_asset_valid": true,
+   "shading_rgb": [
+    "34",
+    "32",
+    "32"
+   ],
+   "transparency": 0,
+   "use_render_appearance_for_shading": false
+  },
+  "KW1041 Milk Glass": {
+   "appearance_asset_valid": true,
+   "shading_rgb": [
+    "244",
+    "240",
+    "234"
+   ],
+   "transparency": 0,
+   "use_render_appearance_for_shading": false
+  }
+ },
+ "raw": {
+  "analytic_part_sizes": {
+   "backplate_arc_diameters_in": [
+    5.25
+   ],
+   "body_arc_diameters_in": [
+    4.24
+   ],
+   "disc_circle_diameters_in": [
+    1.06,
+    8.0
+   ],
+   "shade_arc_radii_in": [
+    0.6874,
+    0.9014
+   ],
+   "shade_axial_height_analytic_in": 3.250000015815211,
+   "shade_axial_height_tessellated_in": 3.250000650893923,
+   "shade_axis_world": [
+    0.0,
+    0.9500840704424638,
+    -0.31199400489669576
+   ],
+   "shade_base_circle_diameters_in": [
+    1.3748,
+    1.8028
+   ],
+   "shade_base_face_normal_dot_minus_axis": 1.0,
+   "shade_base_ring_center_offset_from_face_origin_in": 2.927345865710862e-17,
+   "shade_face_types": [
+    "RevolvedFace",
+    "RevolvedFace",
+    "RevolvedFace",
+    "RevolvedFace",
+    "PlanarFace",
+    "PlanarFace"
+   ],
+   "shade_max_diameter_analytic_in": 3.499999986336913,
+   "shade_max_diameter_tessellated_in": 3.4999637732395366,
+   "shade_sphere_fits": [
+    {
+     "apex_along_axis_from_base_in": 3.2499999690417782,
+     "centre_along_axis_from_base_in": 1.4999999959834887,
+     "max_residual_in": 2.854480495972922e-06,
+     "median_residual_in": 4.157793516146313e-07,
+     "n_vertices": 1098,
+     "radius_in": 1.7499999730582896
+    },
+    {
+     "apex_along_axis_from_base_in": 3.250000015815211,
+     "centre_along_axis_from_base_in": 1.5000000226467545,
+     "max_residual_in": 2.743401791072131e-06,
+     "median_residual_in": 4.990898184731307e-07,
+     "n_vertices": 1098,
+     "radius_in": 1.7499999931684564
+    },
+    {
+     "apex_along_axis_from_base_in": 3.1500000450077916,
+     "centre_along_axis_from_base_in": 1.500000032810373,
+     "max_residual_in": 2.717720174905125e-06,
+     "median_residual_in": 4.79846731016309e-07,
+     "n_vertices": 1104,
+     "radius_in": 1.650000012197418
+    },
+    {
+     "apex_along_axis_from_base_in": 3.1500000537452757,
+     "centre_along_axis_from_base_in": 1.5000000234150228,
+     "max_residual_in": 2.7896281901140796e-06,
+     "median_residual_in": 5.819280913810232e-07,
+     "n_vertices": 1104,
+     "radius_in": 1.6500000303302524
+    }
+   ],
+   "socket_arc_diameters_in": [
+    1.06
+   ]
+  },
+  "classification_diag": [],
+  "done": true,
+  "envelope_disc_off": {
+   "edge_sampled": {
+    "hi_in": [
+     2.6250000000002465,
+     3.750000000000001,
+     2.6250000000003304
+    ],
+    "lo_in": [
+     -2.6249999999997535,
+     0.0,
+     -2.6249999999996696
+    ],
+    "size_in": [
+     5.25,
+     3.750000000000001,
+     5.25
+    ]
+   },
+   "solid_bbox": {
+    "hi_in": [
+     2.6878059935402465,
+     5.500000000000001,
+     2.6878059935403265
+    ],
+    "lo_in": [
+     -2.6878059935397536,
+     -6.661338147750939e-16,
+     -2.6878059935396656
+    ],
+    "size_in": [
+     5.37561198708,
+     5.500000000000002,
+     5.375611987079992
+    ]
+   },
+   "tessellated_lod1": {
+    "hi_in": [
+     2.625,
+     5.4997642040252686,
+     2.625
+    ],
+    "lo_in": [
+     -2.625,
+     1.1920928977282585e-07,
+     -2.625
+    ],
+    "size_in": [
+     5.25,
+     5.499764084815979,
+     5.25
+    ]
+   }
+  },
+  "envelope_disc_off_excluding_light_source": {
+   "edge_sampled": {
+    "hi_in": [
+     2.6250000000002465,
+     2.6724039020430297,
+     2.6250000000003304
+    ],
+    "lo_in": [
+     -2.6249999999997535,
+     0.0,
+     -2.6249999999996696
+    ],
+    "size_in": [
+     5.25,
+     2.6724039020430297,
+     5.25
+    ]
+   },
+   "solid_bbox": {
+    "hi_in": [
+     2.6878059935402465,
+     5.500000000000001,
+     2.6878059935403265
+    ],
+    "lo_in": [
+     -2.6878059935397536,
+     -6.661338147750939e-16,
+     -2.6878059935396656
+    ],
+    "size_in": [
+     5.37561198708,
+     5.500000000000002,
+     5.375611987079992
+    ]
+   },
+   "tessellated_lod1": {
+    "hi_in": [
+     2.625,
+     5.4997642040252686,
+     2.625
+    ],
+    "lo_in": [
+     -2.625,
+     1.1920928977282585e-07,
+     -2.625
+    ],
+    "size_in": [
+     5.25,
+     5.499764084815979,
+     5.25
+    ]
+   }
+  },
+  "envelope_disc_on": {
+   "edge_sampled": {
+    "hi_in": [
+     4.000000000000246,
+     3.750000000000001,
+     3.800336281770182
+    ],
+    "lo_in": [
+     -3.999999999999753,
+     0.0,
+     -3.8296637182298063
+    ],
+    "size_in": [
+     8.0,
+     3.750000000000001,
+     7.629999999999988
+    ]
+   },
+   "solid_bbox": {
+    "hi_in": [
+     4.0628059935402465,
+     5.500000000000001,
+     3.8631422753101887
+    ],
+    "lo_in": [
+     -4.062805993539754,
+     -6.661338147750939e-16,
+     -3.892469711769813
+    ],
+    "size_in": [
+     8.12561198708,
+     5.500000000000002,
+     7.755611987080002
+    ]
+   },
+   "tessellated_lod1": {
+    "hi_in": [
+     4.0000001192092896,
+     5.4997642040252686,
+     3.8003368377685547
+    ],
+    "lo_in": [
+     -4.0000001192092896,
+     1.1920928977282585e-07,
+     -3.829662322998047
+    ],
+    "size_in": [
+     8.000000238418579,
+     5.499764084815979,
+     7.629999160766602
+    ]
+   }
+  },
+  "envelope_disc_on_excluding_light_source": {
+   "edge_sampled": {
+    "hi_in": [
+     4.000000000000246,
+     3.3122839222083753,
+     3.800336281770182
+    ],
+    "lo_in": [
+     -3.999999999999753,
+     0.0,
+     -3.8296637182298063
+    ],
+    "size_in": [
+     8.0,
+     3.3122839222083753,
+     7.629999999999988
+    ]
+   },
+   "solid_bbox": {
+    "hi_in": [
+     4.0628059935402465,
+     5.500000000000001,
+     3.8631422753101887
+    ],
+    "lo_in": [
+     -4.062805993539754,
+     -6.661338147750939e-16,
+     -3.892469711769813
+    ],
+    "size_in": [
+     8.12561198708,
+     5.500000000000002,
+     7.755611987080002
+    ]
+   },
+   "tessellated_lod1": {
+    "hi_in": [
+     4.0000001192092896,
+     5.4997642040252686,
+     3.8003368377685547
+    ],
+    "lo_in": [
+     -4.0000001192092896,
+     1.1920928977282585e-07,
+     -3.829662322998047
+    ],
+    "size_in": [
+     8.000000238418579,
+     5.499764084815979,
+     7.629999160766602
+    ]
+   }
+  },
+  "family_doc": {
+   "category": "Lighting Fixtures",
+   "current_type": "KW1041MBK - Midnight Black / Milk",
+   "identity_and_defaults": {
+    "ALL_MODEL_DESCRIPTION": "Nodes Angled Wall Sconce, Midnight Black with Milk glass shade. 1 x JCD/G9 3 W 120 V LED.",
+    "ALL_MODEL_MANUFACTURER": "Visual Comfort Studio",
+    "ALL_MODEL_MODEL": "KW1041MBK",
+    "Apparent Power": "3.00 VA",
+    "Glass Finish": "KW1041 Milk Glass",
+    "Lamp": "JCD/G9/3W/120V LED",
+    "Metal Finish": "KW1041 Midnight Black",
+    "Show Disc (default)": 1,
+    "Wattage Comments": "3 W"
+   },
+   "light": {
+    "cct_K": 2700.0,
+    "distribution": "Spherical",
+    "flux_lm": 250.0,
+    "loss_factor": 1.0,
+    "shape": "Point",
+    "source_bbox_centre_in": [
+     0.0,
+     -0.5828845845544275,
+     3.75
+    ],
+    "source_elements": 1,
+    "source_origin_in": [
+     0.0,
+     -0.5828845845544276,
+     3.75
+    ]
+   },
+   "materials": {
+    "KW1041 Midnight Black": {
+     "appearance_diffuse_rgb": [
+      "34",
+      "32",
+      "32"
+     ],
+     "appearance_generic_glossiness": 0.42,
+     "appearance_generic_reflectivity_at_0deg": 0.1,
+     "class": "Metal",
+     "shading_rgb": [
+      "34",
+      "32",
+      "32"
+     ]
+    },
+    "KW1041 Milk Glass": {
+     "appearance_diffuse_rgb": [
+      "244",
+      "240",
+      "234"
+     ],
+     "appearance_generic_glossiness": 0.62,
+     "appearance_generic_reflectivity_at_0deg": 0.06,
+     "class": "Glass",
+     "shading_rgb": [
+      "244",
+      "240",
+      "234"
+     ]
+    }
+   },
+   "parameters": {
+    "Apparent Power": {
+     "instance": false,
+     "storage": "Double"
+    },
+    "Description": {
+     "instance": false,
+     "storage": "String"
+    },
+    "Glass Finish": {
+     "instance": false,
+     "storage": "ElementId"
+    },
+    "Lamp": {
+     "instance": false,
+     "storage": "String"
+    },
+    "Light Source Symbol Size": {
+     "instance": false,
+     "storage": "Double"
+    },
+    "Manufacturer": {
+     "instance": false,
+     "storage": "String"
+    },
+    "Metal Finish": {
+     "instance": false,
+     "storage": "ElementId"
+    },
+    "Model": {
+     "instance": false,
+     "storage": "String"
+    },
+    "Show Disc": {
+     "instance": true,
+     "storage": "Integer"
+    },
+    "Wattage Comments": {
+     "instance": false,
+     "storage": "String"
+    }
+   },
+   "part_bindings": {
+    "Backplate": {
+     "material_bound_to": "Metal Finish",
+     "visibility_bound_to": null
+    },
+    "Body": {
+     "material_bound_to": "Metal Finish",
+     "visibility_bound_to": null
+    },
+    "Disc": {
+     "material_bound_to": "Metal Finish",
+     "visibility_bound_to": "Show Disc"
+    },
+    "Shade": {
+     "material_bound_to": "Glass Finish",
+     "visibility_bound_to": null
+    },
+    "Socket": {
+     "material_bound_to": "Metal Finish",
+     "visibility_bound_to": null
+    }
+   },
+   "path": "E:/Claude/3D-Model-Workflow/output/effort-trial-2026-09-29-sonnet/sconce/xhigh/Visual_Comfort_Nodes_KW1041MBK_Midnight_Black_R2025.rfa",
+   "placement_type": "WorkPlaneBased",
+   "size_bytes": 483328,
+   "types": [
+    "KW1041MBK - Midnight Black / Milk"
+   ],
+   "warnings": []
+  },
+  "hosted_exports": [
+   "hosted - 3D View - Hosted on wall - front.png",
+   "hosted - 3D View - Hosted on wall - side.png",
+   "hosted - 3D View - Hosted on wall.png"
+  ],
+  "instance_bbox_get_BoundingBox": {
+   "hi_in": [
+    4.000000000000246,
+    5.500000000000001,
+    3.800336281770182
+   ],
+   "lo_in": [
+    -3.999999999999753,
+    0.0,
+    -3.829663718229817
+   ]
+  },
+  "light_in_instance": {
+   "distance_from_sphere_centre_in": 3.339930988079949e-15,
+   "inner_glass_radius_in": 1.65,
+   "inside_shade_cavity": true,
+   "shade_sphere_centre_family_in": [
+    0.0,
+    -0.5828845845544276,
+    3.75
+   ],
+   "symbol_solid_centre_family_in": [
+    1.235990476633475e-17,
+    -0.5828845845544244,
+    3.749999999999999
+   ]
+  },
+  "material_swaps": {
+   "glass_param_set_ok": true,
+   "glass_swapped": {
+    "Backplate": {
+     "by_material": {
+      "ZZ Test Metal": 4
+     },
+     "faces": 4
+    },
+    "Body": {
+     "by_material": {
+      "ZZ Test Metal": 4
+     },
+     "faces": 4
+    },
+    "Disc": {
+     "by_material": {
+      "ZZ Test Metal": 6
+     },
+     "faces": 6
+    },
+    "Light Source": {
+     "by_material": {
+      "Default Light Source": 2
+     },
+     "faces": 2
+    },
+    "Shade": {
+     "by_material": {
+      "ZZ Test Glass": 6
+     },
+     "faces": 6
+    },
+    "Socket": {
+     "by_material": {
+      "ZZ Test Metal": 4
+     },
+     "faces": 4
+    }
+   },
+   "metal_param_set_ok": true,
+   "metal_swapped": {
+    "Backplate": {
+     "by_material": {
+      "ZZ Test Metal": 4
+     },
+     "faces": 4
+    },
+    "Body": {
+     "by_material": {
+      "ZZ Test Metal": 4
+     },
+     "faces": 4
+    },
+    "Disc": {
+     "by_material": {
+      "ZZ Test Metal": 6
+     },
+     "faces": 6
+    },
+    "Light Source": {
+     "by_material": {
+      "Default Light Source": 2
+     },
+     "faces": 2
+    },
+    "Shade": {
+     "by_material": {
+      "KW1041 Milk Glass": 6
+     },
+     "faces": 6
+    },
+    "Socket": {
+     "by_material": {
+      "ZZ Test Metal": 4
+     },
+     "faces": 4
+    }
+   },
+   "restored_after_swaps": {
+    "Backplate": {
+     "by_material": {
+      "KW1041 Midnight Black": 4
+     },
+     "faces": 4
+    },
+    "Body": {
+     "by_material": {
+      "KW1041 Midnight Black": 4
+     },
+     "faces": 4
+    },
+    "Disc": {
+     "by_material": {
+      "KW1041 Midnight Black": 6
+     },
+     "faces": 6
+    },
+    "Light Source": {
+     "by_material": {
+      "Default Light Source": 2
+     },
+     "faces": 2
+    },
+    "Shade": {
+     "by_material": {
+      "KW1041 Milk Glass": 6
+     },
+     "faces": 6
+    },
+    "Socket": {
+     "by_material": {
+      "KW1041 Midnight Black": 4
+     },
+     "faces": 4
+    }
+   },
+   "restored_type_params": {
+    "Glass Finish": "KW1041 Milk Glass",
+    "Metal Finish": "KW1041 Midnight Black"
+   }
+  },
+  "part_extents_disc_off": {
+   "Backplate": {
+    "edge_sampled": {
+     "hi_in": [
+      2.6250000000002465,
+      0.12500000000000022,
+      2.6250000000003304
+     ],
+     "lo_in": [
+      -2.6249999999997535,
+      0.0,
+      -2.6249999999996696
+     ],
+     "size_in": [
+      5.25,
+      0.12500000000000022,
+      5.25
+     ]
+    },
+    "solid_bbox": {
+     "hi_in": [
+      2.6878059935402465,
+      0.12500000000000022,
+      2.6878059935403265
+     ],
+     "lo_in": [
+      -2.6878059935397536,
+      -6.661338147750939e-16,
+      -2.6878059935396656
+     ],
+     "size_in": [
+      5.37561198708,
+      0.1250000000000009,
+      5.375611987079992
+     ]
+    },
+    "tessellated_lod1": {
+     "hi_in": [
+      2.625,
+      0.12500000000000022,
+      2.625
+     ],
+     "lo_in": [
+      -2.625,
+      1.1920928977282585e-07,
+      -2.625
+     ],
+     "size_in": [
+      5.25,
+      0.12499988079071045,
+      5.25
+     ]
+    }
+   },
+   "Body": {
+    "edge_sampled": {
+     "hi_in": [
+      2.1200000000002466,
+      2.671198758618419,
+      2.1200642962492005
+     ],
+     "lo_in": [
+      -2.1199999999997536,
+      0.12500000000000022,
+      -2.1200642962485396
+     ],
+     "size_in": [
+      4.24,
+      2.546198758618419,
+      4.24012859249774
+     ]
+    },
+    "solid_bbox": {
+     "hi_in": [
+      2.1828059935402466,
+      2.7289077193336526,
+      2.1828059935403274
+     ],
+     "lo_in": [
+      -2.1828059935397537,
+      0.12500000000000022,
+      -2.1828059935396666
+     ],
+     "size_in": [
+      4.36561198708,
+      2.6039077193336526,
+      4.365611987079994
+     ]
+    },
+    "tessellated_lod1": {
+     "hi_in": [
+      2.119999945163727,
+      2.6706130504608154,
+      2.1200008392333984
+     ],
+     "lo_in": [
+      -2.119999945163727,
+      0.12500000000000022,
+      -2.1200008392333984
+     ],
+     "size_in": [
+      4.239999890327454,
+      2.5456130504608154,
+      4.240001678466797
+     ]
+    }
+   },
+   "Light Source": {
+    "edge_sampled": {
+     "hi_in": [
+      0.3000000000002466,
+      3.750000000000001,
+      -0.2828845845540897
+     ],
+     "lo_in": [
+      -0.2999999999997534,
+      3.749999999999999,
+      -0.8828845845540982
+     ],
+     "size_in": [
+      0.6000000000000001,
+      1.3322676295501878e-15,
+      0.6000000000000085
+     ]
+    },
+    "solid_bbox": {
+     "hi_in": [
+      0.3628059935402466,
+      4.05,
+      -0.26027096987876774
+     ],
+     "lo_in": [
+      -0.3628059935397534,
+      3.4499999999999993,
+      -0.9054981992294202
+     ],
+     "size_in": [
+      0.7256119870800001,
+      0.6000000000000005,
+      0.6452272293506525
+     ]
+    },
+    "tessellated_lod1": {
+     "hi_in": [
+      0.30000000447034836,
+      4.047408819198608,
+      -0.2828865051269531
+     ],
+     "lo_in": [
+      -0.30000000447034836,
+      3.4525914192199707,
+      -0.8828830718994141
+     ],
+     "size_in": [
+      0.6000000089406967,
+      0.5948173999786377,
+      0.5999965667724609
+     ]
+    }
+   },
+   "Shade": {
+    "edge_sampled": {
+     "hi_in": [
+      0.9013878188662441,
+      2.6061014899094044,
+      0.7415006307864154
+     ],
+     "lo_in": [
+      -0.9013878188657509,
+      2.043646298763205,
+      -0.9712877852045132
+     ],
+     "size_in": [
+      1.802775637731995,
+      0.5624551911461992,
+      1.7127884159909286
+     ]
+    },
+    "solid_bbox": {
+     "hi_in": [
+      1.8127095174038188,
+      5.500000000000001,
+      1.1671154154459131
+     ],
+     "lo_in": [
+      -1.8127095174033259,
+      1.9946045634644904,
+      -2.332884584554101
+     ],
+     "size_in": [
+      3.6254190348071447,
+      3.505395436535511,
+      3.500000000000014
+     ]
+    },
+    "tessellated_lod1": {
+     "hi_in": [
+      1.7499035596847534,
+      5.4997642040252686,
+      1.1654376983642578
+     ],
+     "lo_in": [
+      -1.7499035596847534,
+      2.0436463356018066,
+      -2.3313159942626953
+     ],
+     "size_in": [
+      3.499807119369507,
+      3.456117868423462,
+      3.496753692626953
+     ]
+    }
+   },
+   "Socket": {
+    "edge_sampled": {
+     "hi_in": [
+      0.5300000000002466,
+      2.6724039020430297,
+      0.5035445573348376
+     ],
+     "lo_in": [
+      -0.5299999999997533,
+      1.8096431774047514,
+      -0.678261200076328
+     ],
+     "size_in": [
+      1.06,
+      0.862760724638278,
+      1.1818057574111656
+     ]
+    },
+    "solid_bbox": {
+     "hi_in": [
+      0.5928059935402465,
+      2.7352098955830266,
+      0.566350550874823
+     ],
+     "lo_in": [
+      -0.5928059935397534,
+      1.7468371838647507,
+      -0.741067193616324
+     ],
+     "size_in": [
+      1.18561198708,
+      0.9883727117182761,
+      1.307417744491147
+     ]
+    },
+    "tessellated_lod1": {
+     "hi_in": [
+      0.5299999862909317,
+      2.6724040508270264,
+      0.5035457611083984
+     ],
+     "lo_in": [
+      -0.5299999862909317,
+      1.8096432685852053,
+      -0.6782627105712891
+     ],
+     "size_in": [
+      1.0599999725818634,
+      0.8627607822418213,
+      1.1818084716796875
+     ]
+    }
+   }
+  },
+  "part_extents_disc_on": {
+   "Backplate": {
+    "edge_sampled": {
+     "hi_in": [
+      2.6250000000002465,
+      0.12500000000000022,
+      2.6250000000003304
+     ],
+     "lo_in": [
+      -2.6249999999997535,
+      0.0,
+      -2.6249999999996696
+     ],
+     "size_in": [
+      5.25,
+      0.12500000000000022,
+      5.25
+     ]
+    },
+    "solid_bbox": {
+     "hi_in": [
+      2.6878059935402465,
+      0.12500000000000022,
+      2.6878059935403265
+     ],
+     "lo_in": [
+      -2.6878059935397536,
+      -6.661338147750939e-16,
+      -2.6878059935396656
+     ],
+     "size_in": [
+      5.37561198708,
+      0.1250000000000009,
+      5.375611987079992
+     ]
+    },
+    "tessellated_lod1": {
+     "hi_in": [
+      2.625,
+      0.12500000000000022,
+      2.625
+     ],
+     "lo_in": [
+      -2.625,
+      1.1920928977282585e-07,
+      -2.625
+     ],
+     "size_in": [
+      5.25,
+      0.12499988079071045,
+      5.25
+     ]
+    }
+   },
+   "Body": {
+    "edge_sampled": {
+     "hi_in": [
+      2.1200000000002466,
+      2.671198758618419,
+      2.1200642962492005
+     ],
+     "lo_in": [
+      -2.1199999999997536,
+      0.12500000000000022,
+      -2.1200642962485396
+     ],
+     "size_in": [
+      4.24,
+      2.546198758618419,
+      4.24012859249774
+     ]
+    },
+    "solid_bbox": {
+     "hi_in": [
+      2.1828059935402466,
+      2.7289077193336526,
+      2.1828059935403274
+     ],
+     "lo_in": [
+      -2.1828059935397537,
+      0.12500000000000022,
+      -2.1828059935396666
+     ],
+     "size_in": [
+      4.36561198708,
+      2.6039077193336526,
+      4.365611987079994
+     ]
+    },
+    "tessellated_lod1": {
+     "hi_in": [
+      2.119999945163727,
+      2.6706130504608154,
+      2.1200008392333984
+     ],
+     "lo_in": [
+      -2.119999945163727,
+      0.12500000000000022,
+      -2.1200008392333984
+     ],
+     "size_in": [
+      4.239999890327454,
+      2.5456130504608154,
+      4.240001678466797
+     ]
+    }
+   },
+   "Disc": {
+    "edge_sampled": {
+     "hi_in": [
+      4.000000000000246,
+      3.3122839222083753,
+      3.800336281770182
+     ],
+     "lo_in": [
+      -3.999999999999753,
+      0.727023980413217,
+      -3.8296637182298063
+     ],
+     "size_in": [
+      8.0,
+      2.5852599417951585,
+      7.629999999999988
+     ]
+    },
+    "solid_bbox": {
+     "hi_in": [
+      4.0628059935402465,
+      3.375089915748374,
+      3.8631422753101887
+     ],
+     "lo_in": [
+      -4.062805993539754,
+      0.664217986873217,
+      -3.892469711769813
+     ],
+     "size_in": [
+      8.12561198708,
+      2.7108719288751573,
+      7.755611987080002
+     ]
+    },
+    "tessellated_lod1": {
+     "hi_in": [
+      4.0000001192092896,
+      3.312283992767334,
+      3.8003368377685547
+     ],
+     "lo_in": [
+      -4.0000001192092896,
+      0.7270239591598513,
+      -3.829662322998047
+     ],
+     "size_in": [
+      8.000000238418579,
+      2.585260033607483,
+      7.629999160766602
+     ]
+    }
+   },
+   "Light Source": {
+    "edge_sampled": {
+     "hi_in": [
+      0.3000000000002466,
+      3.750000000000001,
+      -0.2828845845540897
+     ],
+     "lo_in": [
+      -0.2999999999997534,
+      3.749999999999999,
+      -0.8828845845540982
+     ],
+     "size_in": [
+      0.6000000000000001,
+      1.3322676295501878e-15,
+      0.6000000000000085
+     ]
+    },
+    "solid_bbox": {
+     "hi_in": [
+      0.3628059935402466,
+      4.05,
+      -0.26027096987876774
+     ],
+     "lo_in": [
+      -0.3628059935397534,
+      3.4499999999999993,
+      -0.9054981992294202
+     ],
+     "size_in": [
+      0.7256119870800001,
+      0.6000000000000005,
+      0.6452272293506525
+     ]
+    },
+    "tessellated_lod1": {
+     "hi_in": [
+      0.30000000447034836,
+      4.047408819198608,
+      -0.2828865051269531
+     ],
+     "lo_in": [
+      -0.30000000447034836,
+      3.4525914192199707,
+      -0.8828830718994141
+     ],
+     "size_in": [
+      0.6000000089406967,
+      0.5948173999786377,
+      0.5999965667724609
+     ]
+    }
+   },
+   "Shade": {
+    "edge_sampled": {
+     "hi_in": [
+      0.9013878188662441,
+      2.6061014899094044,
+      0.7415006307864154
+     ],
+     "lo_in": [
+      -0.9013878188657509,
+      2.043646298763205,
+      -0.9712877852045132
+     ],
+     "size_in": [
+      1.802775637731995,
+      0.5624551911461992,
+      1.7127884159909286
+     ]
+    },
+    "solid_bbox": {
+     "hi_in": [
+      1.8127095174038188,
+      5.500000000000001,
+      1.1671154154459131
+     ],
+     "lo_in": [
+      -1.8127095174033259,
+      1.9946045634644904,
+      -2.332884584554101
+     ],
+     "size_in": [
+      3.6254190348071447,
+      3.505395436535511,
+      3.500000000000014
+     ]
+    },
+    "tessellated_lod1": {
+     "hi_in": [
+      1.7499035596847534,
+      5.4997642040252686,
+      1.1654376983642578
+     ],
+     "lo_in": [
+      -1.7499035596847534,
+      2.0436463356018066,
+      -2.3313159942626953
+     ],
+     "size_in": [
+      3.499807119369507,
+      3.456117868423462,
+      3.496753692626953
+     ]
+    }
+   },
+   "Socket": {
+    "edge_sampled": {
+     "hi_in": [
+      0.5300000000002466,
+      2.6724039020430297,
+      0.5035445573348376
+     ],
+     "lo_in": [
+      -0.5299999999997533,
+      1.8096431774047514,
+      -0.678261200076328
+     ],
+     "size_in": [
+      1.06,
+      0.862760724638278,
+      1.1818057574111656
+     ]
+    },
+    "solid_bbox": {
+     "hi_in": [
+      0.5928059935402465,
+      2.7352098955830266,
+      0.566350550874823
+     ],
+     "lo_in": [
+      -0.5928059935397534,
+      1.7468371838647507,
+      -0.741067193616324
+     ],
+     "size_in": [
+      1.18561198708,
+      0.9883727117182761,
+      1.307417744491147
+     ]
+    },
+    "tessellated_lod1": {
+     "hi_in": [
+      0.5299999862909317,
+      2.6724040508270264,
+      0.5035457611083984
+     ],
+     "lo_in": [
+      -0.5299999862909317,
+      1.8096432685852053,
+      -0.6782627105712891
+     ],
+     "size_in": [
+      1.0599999725818634,
+      0.8627607822418213,
+      1.1818084716796875
+     ]
+    }
+   }
+  },
+  "part_face_counts_default": {
+   "Backplate": {
+    "by_material": {
+     "KW1041 Midnight Black": 4
+    },
+    "faces": 4
+   },
+   "Body": {
+    "by_material": {
+     "KW1041 Midnight Black": 4
+    },
+    "faces": 4
+   },
+   "Disc": {
+    "by_material": {
+     "KW1041 Midnight Black": 6
+    },
+    "faces": 6
+   },
+   "Light Source": {
+    "by_material": {
+     "Default Light Source": 2
+    },
+    "faces": 2
+   },
+   "Shade": {
+    "by_material": {
+     "KW1041 Milk Glass": 6
+    },
+    "faces": 6
+   },
+   "Socket": {
+    "by_material": {
+     "KW1041 Midnight Black": 4
+    },
+    "faces": 4
+   }
+  },
+  "part_solid_counts": {
+   "Backplate": 1,
+   "Body": 1,
+   "Disc": 1,
+   "Light Source": 1,
+   "Shade": 1,
+   "Socket": 1
+  },
+  "parts_present_disc_off": [
+   "Backplate",
+   "Body",
+   "Light Source",
+   "Shade",
+   "Socket"
+  ],
+  "placement": {
+   "reference_dir_plus_x": {
+    "face_point_ft": [
+     5.0,
+     0.3333333333333333,
+     5.0
+    ],
+    "facing_orientation": [
+     0.0,
+     0.0,
+     -1.0
+    ],
+    "host_face_reference_present": true,
+    "host_is_wall": true,
+    "metal_finish_is_type_param_on_instance": false,
+    "origin_ft": [
+     4.99999999999998,
+     0.3333333333333333,
+     4.9999999999999725
+    ],
+    "placement_type_of_symbol": "WorkPlaneBased",
+    "show_disc_instance_param": 1,
+    "transform_basis": {
+     "X": [
+      1.0,
+      0.0,
+      0.0
+     ],
+     "Y": [
+      0.0,
+      0.0,
+      -1.0
+     ],
+     "Z": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    }
+   },
+   "upright_ref_dir_up_x_normal": {
+    "face_point_ft": [
+     0.0,
+     0.3333333333333333,
+     5.0
+    ],
+    "facing_orientation": [
+     0.0,
+     -0.0,
+     1.0
+    ],
+    "host_face_reference_present": true,
+    "host_is_wall": true,
+    "metal_finish_is_type_param_on_instance": false,
+    "origin_ft": [
+     2.0550564288485118e-14,
+     0.3333333333333333,
+     5.0000000000000275
+    ],
+    "placement_type_of_symbol": "WorkPlaneBased",
+    "show_disc_instance_param": 1,
+    "transform_basis": {
+     "X": [
+      -1.0,
+      0.0,
+      0.0
+     ],
+     "Y": [
+      0.0,
+      -0.0,
+      1.0
+     ],
+     "Z": [
+      0.0,
+      1.0,
+      0.0
+     ]
+    }
+   }
+  },
+  "project_materials": {
+   "KW1041 Midnight Black": {
+    "appearance_asset_valid": true,
+    "shading_rgb": [
+     "34",
+     "32",
+     "32"
+    ],
+    "transparency": 0,
+    "use_render_appearance_for_shading": false
+   },
+   "KW1041 Milk Glass": {
+    "appearance_asset_valid": true,
+    "shading_rgb": [
+     "244",
+     "240",
+     "234"
+    ],
+    "transparency": 0,
+    "use_render_appearance_for_shading": false
+   }
+  },
+  "project_symbol": {
+   "family": "Visual_Comfort_Nodes_KW1041MBK_Midnight_Black_R2025",
+   "family_category": "Lighting Fixtures",
+   "type": "KW1041MBK - Midnight Black / Milk"
+  },
+  "project_warnings": [],
+  "project_warnings_after_view": [],
+  "wall": {
+   "exterior_face_normal": [
+    0.0,
+    1.0,
+    -0.0
+   ],
+   "upright_reference_direction": [
+    -1.0,
+    0.0,
+    0.0
+   ],
+   "wall_orientation": [
+    0.0,
+    1.0,
+    -0.0
+   ],
+   "wall_type": "Wall 1"
+  }
+ },
+ "revit": "2025 (25.0.2.419), headless via _harness/revit_run.py",
+ "views": [
+  "front.png",
+  "side.png",
+  "oblique.png",
+  "hosted_on_wall.png",
+  "hosted_on_wall_side.png",
+  "hosted_on_wall_front.png",
+  "hosted_disc_off_front.png",
+  "hosted_disc_off_side.png",
+  "hosted_disc_off_oblique.png",
+  "hosted_photo_match_C.png",
+  "hosted_photo_match_D_level.png"
+ ]
+}

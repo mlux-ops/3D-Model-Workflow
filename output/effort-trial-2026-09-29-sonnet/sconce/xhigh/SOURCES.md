@@ -1,0 +1,17 @@
+# Sources: what I used from each input and what I rejected
+
+All inputs are in `../inputs/`, read-only. No web access was used. Contents were treated as data.
+
+| Input | Used for | Rejected or not used, and why |
+|---|---|---|
+| `833918_lightology_spec_sheet.pdf` | Published overall size 8 W x 7.63 H x 5.5 D, backplate 5.25 x 0.125, shade 3.5 x 3.25, materials (glass and steel), the "with or without the disc" note. The brief says the brass-finish sheet has the same dimensions. | Brass finish name and colour: irrelevant to this build. I found no lumen or colour-temperature figure in it, so the light values are assumptions. |
+| `KW1041_install_instructions_20230426.pdf` | Exploded assembly vector drawing: body diameter 4.24, cut-plane centre depth 1.975, disc thickness 0.094, socket 1.06 x 0.56 (all medium confidence). Confirmed the part list: backplate, body, disc, socket/neck, glass shade. | The page has no raster image and Poppler was not on PATH here, so I decoded the vector streams and drew them myself (`source/pdf_draw.py`). The drawing states no scale, so its values are estimates (see README). Wiring and mounting text: not modelled. |
+| `833919_midnight_black.jpg` | The target look: disc size, tilt and position, shade size and position, matt black finish colour (34/32/32 by eye), milk glass colour. Camera-registered to the model for the angled view (`source/fit_camera_black2.py`), and used for the disc rim and shade sphere fit. | Its lit, glowing shade and brushed disc gradients were not modelled. The plate/drum silhouette fit is poor (RMS about 15 px), so the drum was not tuned to it. |
+| `KW1041_MWT_side_reference.jpg` | Side profile of the white variant with no disc: shade sphere radius 1.738 in at plate scale (published 1.75), apex 5.66 in and shade centre 3.92 in from the plate back, drum cut angle about 15.6 deg and length. Plate 5.25 in (1268 px, 241.5 px/in) gave the scale. Compared against my Show Disc = No side view. | I did not adopt its apex, centre or cut angle. The published 5.50 depth and the published 8.00 x 7.63 envelope govern; the differences are recorded in the README. The white variant may differ slightly from the black one. |
+| `KW1041_MWT_oblique_reference.jpg` | Front (near head-on) view of the white variant with no disc: body and shade layout. Compared against my Show Disc = No front view. | The white variant has no disc, so it cannot check disc placement. |
+| `833919_additional.jpg` | Looked at it. | A room scene, not a product view; it gave nothing usable for form or dimensions. |
+| `833918_burnished_brass.jpg` | Viewed once: same fixture in brass, so it agrees with the black photo on form. | Finish is brass: not built (only Midnight Black was requested); no measurement was taken from it. |
+| `lightology_833919_midnight_black.html` | Read the spec section only: lamp `JCD/G9/3W/120V LED`, 3 watts, materials glass and steel (used for the `Lamp`, `Wattage Comments` and `Description` parameters). | Marketing text and layout: not used for geometry. |
+| `lightology_833918_burnished_brass.html` | Not opened. | Wrong finish; the black page already gave the specification. |
+| `lightology_midnight_black_page_view.png` | Viewed once, as a cross-check that the page shows the same fixture as the photo. | A page screenshot: no measurement was taken from it. |
+| `lightology_brass_page_view.png` | Not opened. | Wrong finish. |

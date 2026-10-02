@@ -1,0 +1,489 @@
+{
+ "atlases": {
+  "high": {
+   "present": true,
+   "color_header": {
+    "w": 4489,
+    "h": 4536,
+    "bit_depth": 8,
+    "colour_type": 2
+   },
+   "bump_header": {
+    "w": 4489,
+    "h": 4536,
+    "bit_depth": 16,
+    "colour_type": 0
+   },
+   "format_ok": true,
+   "wrap_color": {
+    "lr": 1.119,
+    "tb": 0.154,
+    "interior_x": 1.033,
+    "interior_y": 1.016
+   },
+   "wrap_bump": {
+    "lr": 3.078,
+    "tb": 0.216,
+    "interior_x": 2.589,
+    "interior_y": 2.652
+   },
+   "face_ids_header": {
+    "w": 4489,
+    "h": 4536,
+    "bit_depth": 16,
+    "colour_type": 0
+   },
+   "face_source": "face_ids.png",
+   "n_faces": 56,
+   "joint_fraction": 0.0245,
+   "relief": {
+    "joint_level_norm": 0.0,
+    "face_min_p0.1_norm": 0.4038,
+    "clearance_norm": 0.4038
+   },
+   "classified_mix": {
+    "matte": 32,
+    "raw": 11,
+    "chiseled": 13
+   },
+   "chiseled_groove_normals_deg": [
+    -60,
+    -60,
+    -59,
+    -59,
+    -59,
+    -59,
+    0,
+    0,
+    0,
+    0,
+    60,
+    60,
+    60
+   ],
+   "own_label_mix": {
+    "matte": 32,
+    "raw": 11,
+    "chiseled": 13
+   },
+   "label_agreement": "56/56",
+   "raw_face_repetition": {
+    "n_raw": 11,
+    "top3": [
+     {
+      "faces": [
+       33,
+       49
+      ],
+      "max_ncc": 0.056
+     },
+     {
+      "faces": [
+       19,
+       51
+      ],
+      "max_ncc": 0.055
+     },
+     {
+      "faces": [
+       4,
+       51
+      ],
+      "max_ncc": 0.046
+     }
+    ],
+    "pairs_over_0.6": 0,
+    "median": 0.032
+   },
+   "raw_patch_search": {
+    "windows": 40,
+    "window_in": 3.0,
+    "max": 0.502,
+    "median": 0.242,
+    "frac_over_0.8": 0.0,
+    "frac_over_0.9": 0.0
+   }
+  },
+  "xhigh": {
+   "present": true,
+   "color_header": {
+    "w": 4489,
+    "h": 4536,
+    "bit_depth": 8,
+    "colour_type": 2
+   },
+   "bump_header": {
+    "w": 4489,
+    "h": 4536,
+    "bit_depth": 16,
+    "colour_type": 0
+   },
+   "format_ok": true,
+   "wrap_color": {
+    "lr": 0.713,
+    "tb": 0.984,
+    "interior_x": 0.952,
+    "interior_y": 0.971
+   },
+   "wrap_bump": {
+    "lr": 1.514,
+    "tb": 2.038,
+    "interior_x": 2.464,
+    "interior_y": 2.586
+   },
+   "face_ids_header": {
+    "w": 4489,
+    "h": 4536,
+    "bit_depth": 16,
+    "colour_type": 0
+   },
+   "face_source": "face_ids.png",
+   "n_faces": 56,
+   "joint_fraction": 0.0244,
+   "relief": {
+    "joint_level_norm": 0.0796,
+    "face_min_p0.1_norm": 0.549,
+    "clearance_norm": 0.4694
+   },
+   "classified_mix": {
+    "raw": 11,
+    "matte": 32,
+    "chiseled": 13
+   },
+   "chiseled_groove_normals_deg": [
+    -60,
+    -59,
+    -59,
+    -59,
+    -59,
+    -59,
+    0,
+    0,
+    0,
+    0,
+    59,
+    59,
+    60
+   ],
+   "own_label_mix": {
+    "raw": 11,
+    "matte": 32,
+    "chiseled": 13
+   },
+   "label_agreement": "56/56",
+   "raw_face_repetition": {
+    "n_raw": 11,
+    "top3": [
+     {
+      "faces": [
+       1,
+       28
+      ],
+      "max_ncc": 0.051
+     },
+     {
+      "faces": [
+       28,
+       55
+      ],
+      "max_ncc": 0.048
+     },
+     {
+      "faces": [
+       1,
+       14
+      ],
+      "max_ncc": 0.041
+     }
+    ],
+    "pairs_over_0.6": 0,
+    "median": 0.023
+   },
+   "raw_patch_search": {
+    "windows": 40,
+    "window_in": 3.0,
+    "max": 0.258,
+    "median": 0.202,
+    "frac_over_0.8": 0.0,
+    "frac_over_0.9": 0.0
+   }
+  },
+  "max": {
+   "present": true,
+   "color_header": {
+    "w": 4489,
+    "h": 4536,
+    "bit_depth": 8,
+    "colour_type": 2
+   },
+   "bump_header": {
+    "w": 4489,
+    "h": 4536,
+    "bit_depth": 16,
+    "colour_type": 0
+   },
+   "format_ok": true,
+   "wrap_color": {
+    "lr": 1.168,
+    "tb": 0.494,
+    "interior_x": 1.196,
+    "interior_y": 1.212
+   },
+   "wrap_bump": {
+    "lr": 3.269,
+    "tb": 0.711,
+    "interior_x": 2.27,
+    "interior_y": 2.306
+   },
+   "face_ids_header": {
+    "w": 4489,
+    "h": 4536,
+    "bit_depth": 16,
+    "colour_type": 0
+   },
+   "face_source": "face_ids.png",
+   "n_faces": 56,
+   "joint_fraction": 0.0244,
+   "relief": {
+    "joint_level_norm": 0.0,
+    "face_min_p0.1_norm": 0.5437,
+    "clearance_norm": 0.5437
+   },
+   "classified_mix": {
+    "chiseled": 13,
+    "matte": 32,
+    "raw": 11
+   },
+   "chiseled_groove_normals_deg": [
+    -60,
+    -60,
+    -59,
+    -59,
+    -59,
+    -59,
+    0,
+    0,
+    0,
+    0,
+    59,
+    59,
+    59
+   ],
+   "own_label_mix": {
+    "chiseled": 13,
+    "matte": 32,
+    "raw": 11
+   },
+   "label_agreement": "56/56",
+   "raw_face_repetition": {
+    "n_raw": 11,
+    "top3": [
+     {
+      "faces": [
+       28,
+       46
+      ],
+      "max_ncc": 0.055
+     },
+     {
+      "faces": [
+       17,
+       46
+      ],
+      "max_ncc": 0.054
+     },
+     {
+      "faces": [
+       31,
+       55
+      ],
+      "max_ncc": 0.051
+     }
+    ],
+    "pairs_over_0.6": 0,
+    "median": 0.029
+   },
+   "raw_patch_search": {
+    "windows": 40,
+    "window_in": 3.0,
+    "max": 0.37,
+    "median": 0.232,
+    "frac_over_0.8": 0.0,
+    "frac_over_0.9": 0.0
+   }
+  },
+  "baseline_2026-09-19": {
+   "present": true,
+   "color_header": {
+    "w": 4489,
+    "h": 4536,
+    "bit_depth": 8,
+    "colour_type": 2
+   },
+   "bump_header": {
+    "w": 4489,
+    "h": 4536,
+    "bit_depth": 16,
+    "colour_type": 0
+   },
+   "format_ok": true,
+   "wrap_color": {
+    "lr": 4.312,
+    "tb": 4.207,
+    "interior_x": 4.573,
+    "interior_y": 4.442
+   },
+   "wrap_bump": {
+    "lr": 7.655,
+    "tb": 6.829,
+    "interior_x": 8.373,
+    "interior_y": 8.163
+   },
+   "face_source": "derived from Bump16",
+   "n_faces": 56,
+   "joint_fraction": 0.0248,
+   "relief": {
+    "joint_level_norm": 0.033,
+    "face_min_p0.1_norm": 0.4047,
+    "clearance_norm": 0.3716
+   },
+   "classified_mix": {
+    "raw": 17,
+    "chiseled": 17,
+    "matte": 22
+   },
+   "chiseled_groove_normals_deg": [
+    -59,
+    -59,
+    -59,
+    -59,
+    -59,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    59,
+    59,
+    59,
+    59,
+    59,
+    59
+   ],
+   "raw_face_repetition": {
+    "n_raw": 17,
+    "top3": [
+     {
+      "faces": [
+       10,
+       12
+      ],
+      "max_ncc": 0.037
+     },
+     {
+      "faces": [
+       34,
+       45
+      ],
+      "max_ncc": 0.035
+     },
+     {
+      "faces": [
+       1,
+       55
+      ],
+      "max_ncc": 0.032
+     }
+    ],
+    "pairs_over_0.6": 0,
+    "median": 0.018
+   },
+   "raw_patch_search": {
+    "windows": 40,
+    "window_in": 3.0,
+    "max": 0.708,
+    "median": 0.643,
+    "frac_over_0.8": 0.0,
+    "frac_over_0.9": 0.0
+   }
+  }
+ },
+ "sessions": {
+  "high": {
+   "transcript": "C:\\Users\\cowey/.claude/projects/E--Claude-3D-Model-Workflow\\4501c54f-5c13-43b7-b4ad-a4398188d19b.jsonl",
+   "api_calls": 93,
+   "tool_calls": 135,
+   "tokens": {
+    "input": 186,
+    "cache_write": 307517,
+    "cache_read": 10424172,
+    "output": 143511
+   },
+   "cache_share": 0.971,
+   "output_to_input": 0.0134,
+   "final_context": 102527,
+   "total_input_over_final_context": 104.7,
+   "result": {
+    "subtype": "success",
+    "is_error": false,
+    "num_turns": 138,
+    "duration_ms": 2201174,
+    "total_cost_usd": 7.918019799999997,
+    "terminal_reason": "completed",
+    "models": {
+     "claude-sonnet-5-5": {
+      "thinkingTokens": 70370,
+      "outputTokens": 164206,
+      "costUSD": 7.918019799999997
+     }
+    }
+   }
+  },
+  "xhigh": {
+   "transcript": "C:\\Users\\cowey/.claude/projects/E--Claude-3D-Model-Workflow\\0574b65d-34c1-42ad-8adb-3d3430dcfc95.jsonl",
+   "api_calls": 126,
+   "tool_calls": 166,
+   "tokens": {
+    "input": 252,
+    "cache_write": 582073,
+    "cache_read": 14209820,
+    "output": 291734
+   },
+   "cache_share": 0.961,
+   "output_to_input": 0.0197,
+   "final_context": 124247,
+   "total_input_over_final_context": 119.1,
+   "result": {
+    "subtype": "success",
+    "is_error": false,
+    "num_turns": 171,
+    "duration_ms": 4064708,
+    "total_cost_usd": 14.503176200000004,
+    "terminal_reason": "completed",
+    "models": {
+     "claude-sonnet-5-5": {
+      "thinkingTokens": 189257,
+      "outputTokens": 339979,
+      "costUSD": 14.503176200000004
+     }
+    }
+   }
+  },
+  "max": {
+   "transcript": "C:\\Users\\cowey/.claude/projects/E--Claude-3D-Model-Workflow\\c7f38646-a264-4a03-90cf-adcf170ca85c.jsonl",
+   "api_calls": 231,
+   "tool_calls": 312,
+   "tokens": {
+    "input": 462,
+    "cache_write": 1308881,
+    "cache_read": 26771389,
+    "output": 785813
+   },
+   "cache_share": 0.953,
+   "output_to_input": 0.028,
+   "final_context": 156689,
+   "total_input_over_final_context": 179.2
+  }
+ }
+}

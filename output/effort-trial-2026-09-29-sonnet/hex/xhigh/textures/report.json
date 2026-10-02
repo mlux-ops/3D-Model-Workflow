@@ -1,0 +1,1531 @@
+{
+ "format": {
+  "headers_from_png_bytes": {
+   "Color.png": {
+    "width": 4489,
+    "height": 4536,
+    "bit_depth": 8,
+    "colour_type": 2,
+    "colour_type_name": "RGB",
+    "interlace": 0
+   },
+   "Bump16.png": {
+    "width": 4489,
+    "height": 4536,
+    "bit_depth": 16,
+    "colour_type": 0,
+    "colour_type_name": "greyscale",
+    "interlace": 0
+   },
+   "face_ids.png": {
+    "width": 4489,
+    "height": 4536,
+    "bit_depth": 16,
+    "colour_type": 0,
+    "colour_type_name": "greyscale",
+    "interlace": 0
+   }
+  },
+  "expected_size": [
+   4489,
+   4536
+  ],
+  "pass_": true
+ },
+ "wrap_seam_steps": {
+  "colour_luminance_levels": {
+   "unit": "8-bit levels",
+   "x_wrap": {
+    "seam_mean_abs_step": 0.6999152249129361,
+    "interior_mean_abs_step": 0.9503626310575789,
+    "interior_p99_pair_step": 1.404116973742396,
+    "interior_max_pair_step": 1.7334118663108329,
+    "seam_over_interior_mean": 0.7364717446161148,
+    "seam_within_interior_p99": true
+   },
+   "y_wrap": {
+    "seam_mean_abs_step": 0.9843634734787902,
+    "interior_mean_abs_step": 0.9712740789814601,
+    "interior_p99_pair_step": 4.121434608777292,
+    "interior_max_pair_step": 4.853134930279877,
+    "seam_over_interior_mean": 1.0134765199448712,
+    "seam_within_interior_p99": true
+   }
+  },
+  "bump_mm": {
+   "unit": "mm",
+   "x_wrap": {
+    "seam_mean_abs_step": 0.012281532587094501,
+    "interior_mean_abs_step": 0.01998474345057004,
+    "interior_p99_pair_step": 0.03582045921986029,
+    "interior_max_pair_step": 0.04155286450459509,
+    "seam_over_interior_mean": 0.6145454214847169,
+    "seam_within_interior_p99": true
+   },
+   "y_wrap": {
+    "seam_mean_abs_step": 0.016529372690868342,
+    "interior_mean_abs_step": 0.020979380512062294,
+    "interior_p99_pair_step": 0.1930655904246357,
+    "interior_max_pair_step": 0.3106209315471406,
+    "seam_over_interior_mean": 0.7878865956678093,
+    "seam_within_interior_p99": true
+   }
+  },
+  "colour_rgb_levels_x_wrap_seam_mean": [
+   0.6911375661375662,
+   0.6962081128747796,
+   0.7517636684303352
+  ],
+  "colour_rgb_levels_y_wrap_seam_mean": [
+   0.9507685453330363,
+   0.9991089329472043,
+   1.0020049008687903
+  ]
+ },
+ "face_ids": {
+  "n_faces": 56,
+  "ids_min": 1,
+  "ids_max": 56,
+  "joint_value": 0,
+  "face_pixel_count_min": 354722,
+  "face_pixel_count_max": 354728,
+  "expected_face_pixel_count": 354724.005390106,
+  "joint_pixels": 497560,
+  "expected_joint_pixels": 499717.4425933128,
+  "joint_area_over_centreline_length_px": 7.916291885416396,
+  "vertical_joint_run_px_min": 8,
+  "vertical_joint_run_px_max": 8,
+  "sloped_joint_perpendicular_width_px_min": 7.800000000001762,
+  "sloped_joint_perpendicular_width_px_max": 8.100000000001831,
+  "specified_joint_width_px": 8,
+  "specified_joint_width_in": 0.125,
+  "pass_": true
+ },
+ "relief_mm": {
+  "definition": "height above the joint floor from Bump16 (65535 = 2.6 mm full scale); face pixels are those with a face id",
+  "joint_floor_mm": 0.0,
+  "joint_floor_median_mm": 0.16456549935149156,
+  "face_plane_design_mm": 1.6,
+  "grout_step_mm": 1.6,
+  "per_type": {
+   "matte": {
+    "n_faces": 32,
+    "face_plane_median_mm": 1.6003082322423132,
+    "min_mm": 1.484660105287251,
+    "max_mm": 1.668387884336614,
+    "std_mm": 0.010018496831633202,
+    "p1_mm": 1.5726955062180514,
+    "p99_mm": 1.624151979858091,
+    "p1_to_p99_relief_mm": 0.05145647364003958,
+    "min_to_max_mm": 0.183727779049363,
+    "slope_p50_deg": 0.38812806961217144,
+    "slope_p99_deg": 2.451755729890934,
+    "clearance_above_joint_floor_mm": 1.484660105287251
+   },
+   "raw": {
+    "n_faces": 11,
+    "face_plane_median_mm": 1.6023315785458152,
+    "min_mm": 1.006872663462272,
+    "max_mm": 2.0686533913176164,
+    "std_mm": 0.09498249238115133,
+    "p1_mm": 1.3562371252002745,
+    "p99_mm": 1.8204959182116425,
+    "p1_to_p99_relief_mm": 0.46425879301136797,
+    "min_to_max_mm": 1.0617807278553444,
+    "slope_p50_deg": 4.363385728758704,
+    "slope_p99_deg": 14.329219995157631,
+    "clearance_above_joint_floor_mm": 1.006872663462272
+   },
+   "chiseled": {
+    "n_faces": 13,
+    "face_plane_median_mm": 1.4615304798962385,
+    "min_mm": 0.8377843900205997,
+    "max_mm": 1.9530449378194856,
+    "std_mm": 0.12883588379593816,
+    "p1_mm": 1.1692957961394674,
+    "p99_mm": 1.7250812542915999,
+    "p1_to_p99_relief_mm": 0.5557854581521324,
+    "min_to_max_mm": 1.115260547798886,
+    "slope_p50_deg": 7.5460594097036555,
+    "slope_p99_deg": 21.598315349251433,
+    "clearance_above_joint_floor_mm": 0.8377843900205997
+   }
+  },
+  "worst_face_index": 6,
+  "worst_face_clearance_mm": 0.8377843900205997,
+  "global_min_face_height_mm": 0.8377843900205997,
+  "clearance_mm": 0.8377843900205997,
+  "clearance_positive": true,
+  "bump_levels_used": [
+   0,
+   52142
+  ],
+  "full_scale_mm": 2.6,
+  "note": "Millimetre values are design heights chosen so that the raking-light look matches the sources; they are not measured depths of the real tile."
+ },
+ "mix": {
+  "render_complete_faces_classified": 39,
+  "measured_counts": {
+   "matte": 22,
+   "raw": 8,
+   "chiseled": 9
+  },
+  "measured_ratio": {
+   "matte": 0.5641025641025641,
+   "raw": 0.20512820512820512,
+   "chiseled": 0.23076923076923078
+  },
+  "used_counts": {
+   "matte": 32,
+   "raw": 11,
+   "chiseled": 13
+  },
+  "used_ratio": {
+   "matte": 0.5714285714285714,
+   "raw": 0.19642857142857142,
+   "chiseled": 0.23214285714285715
+  },
+  "chiseled_wave_angle_counts_render": {
+   "0 (vertical grooves)": 3,
+   "60": 2,
+   "120": 4
+  },
+  "chiseled_wave_angle_counts_used": {
+   "0 (vertical grooves)": 4,
+   "60": 3,
+   "120": 6
+  },
+  "layout": {
+   "seed": 15,
+   "energy": 37.02857142857143,
+   "max_shift_match_fraction": 0.4642857142857143,
+   "raw_raw_adjacent_pairs": 0,
+   "chiseled_chiseled_adjacent_pairs": 0
+  }
+ },
+ "faces": [
+  {
+   "index": 1,
+   "column": 0,
+   "row": 0,
+   "type": "raw",
+   "rotation_deg": 0,
+   "mirrored": false,
+   "source": "image quilt of 195 blocks from render faces [[0, 0], [1, 2], [2, 1], [2, 4], [3, 2], [5, 0], [5, 1], [5, 5], [6, 4]] (dihedral transform counts {'0': 17, '1': 32, '2': 19, '3': 31, '4': 32, '5': 21, '6': 24, '7': 19})",
+   "centre_px": [
+    0.0,
+    324.0
+   ],
+   "min_mm": 1.1124040588998245,
+   "max_mm": 1.973556115053025,
+   "std_mm": 0.08943114939964283,
+   "clearance_mm": 1.1124040588998245
+  },
+  {
+   "index": 2,
+   "column": 1,
+   "row": 0,
+   "type": "matte",
+   "rotation_deg": 0,
+   "mirrored": false,
+   "source": "image quilt of 72 blocks from render faces [[0, 1], [0, 2], [0, 4], [0, 5], [1, -1], [1, 1], [2, 0], [2, 3], [2, 5], [3, 1], [3, 4], [4, 0], [4, 1], [4, 2], [4, 4], [4, 5], [5, -1], [5, 2], [5, 3], [6, 0], [6, 1], [6, 5]] (dihedral transform counts {'0': 11, '1': 12, '2': 5, '3': 6, '4': 10, '5': 7, '6': 11, '7': 10})",
+   "centre_px": [
+    561.125,
+    0.0
+   ],
+   "min_mm": 1.5281025406271458,
+   "max_mm": 1.6491065842679484,
+   "std_mm": 0.008124353941407945,
+   "clearance_mm": 1.5281025406271458
+  },
+  {
+   "index": 3,
+   "column": 2,
+   "row": 0,
+   "type": "chiseled",
+   "rotation_deg": 120,
+   "mirrored": false,
+   "source": "procedural grooves at the measured 0.1989 in pitch and measured profile, wave angle 120 deg (image coordinates, y down), phase-wobble field (measured structure function); amplitude and fine grain from an image quilt of 121 blocks from render chiseled faces [[0, 3], [1, 0], [1, 4], [2, 2], [3, 0], [3, 3], [4, 3], [5, 4], [6, 2]], rotated into a canonical frame",
+   "centre_px": [
+    1122.25,
+    324.0
+   ],
+   "min_mm": 0.9307392996108949,
+   "max_mm": 1.930470740825513,
+   "std_mm": 0.12398079225748102,
+   "clearance_mm": 0.9307392996108949
+  },
+  {
+   "index": 4,
+   "column": 3,
+   "row": 0,
+   "type": "matte",
+   "rotation_deg": 0,
+   "mirrored": false,
+   "source": "image quilt of 72 blocks from render faces [[0, 1], [0, 2], [0, 4], [0, 5], [1, -1], [1, 1], [1, 3], [1, 5], [2, 0], [2, 3], [2, 5], [3, -1], [3, 4], [4, 0], [4, 1], [4, 2], [4, 4], [4, 5], [5, 2], [5, 3], [6, 0], [6, 1], [6, 3], [6, 5]] (dihedral transform counts {'0': 8, '1': 6, '2': 12, '3': 11, '4': 11, '5': 6, '6': 13, '7': 5})",
+   "centre_px": [
+    1683.375,
+    0.0
+   ],
+   "min_mm": 1.4973159380483712,
+   "max_mm": 1.661722743572137,
+   "std_mm": 0.009396084748316892,
+   "clearance_mm": 1.4973159380483712
+  },
+  {
+   "index": 5,
+   "column": 4,
+   "row": 0,
+   "type": "matte",
+   "rotation_deg": 0,
+   "mirrored": false,
+   "source": "image quilt of 72 blocks from render faces [[0, 1], [0, 2], [0, 4], [0, 5], [1, -1], [1, 1], [1, 3], [2, 0], [2, 3], [2, 5], [3, -1], [3, 1], [3, 4], [4, 1], [4, 2], [4, 4], [4, 5], [5, -1], [5, 2], [5, 3], [6, 0], [6, 1], [6, 3], [6, 5], [7, 0]] (dihedral transform counts {'0': 14, '1': 9, '2': 8, '3': 7, '4': 7, '5': 9, '6': 6, '7': 12})",
+   "centre_px": [
+    2244.5,
+    324.0
+   ],
+   "min_mm": 1.4961257343404288,
+   "max_mm": 1.6580331120775158,
+   "std_mm": 0.009993112724851592,
+   "clearance_mm": 1.4961257343404288
+  },
+  {
+   "index": 6,
+   "column": 5,
+   "row": 0,
+   "type": "chiseled",
+   "rotation_deg": 120,
+   "mirrored": false,
+   "source": "procedural grooves at the measured 0.1989 in pitch and measured profile, wave angle 120 deg (image coordinates, y down), phase-wobble field (measured structure function); amplitude and fine grain from an image quilt of 121 blocks from render chiseled faces [[0, 3], [1, 0], [1, 4], [2, 2], [3, 0], [3, 3], [4, 3], [5, 4], [6, 2]], rotated into a canonical frame",
+   "centre_px": [
+    2805.625,
+    0.0
+   ],
+   "min_mm": 0.8377843900205997,
+   "max_mm": 1.9345571068894483,
+   "std_mm": 0.1290107188227368,
+   "clearance_mm": 0.8377843900205997
+  },
+  {
+   "index": 7,
+   "column": 6,
+   "row": 0,
+   "type": "matte",
+   "rotation_deg": 0,
+   "mirrored": false,
+   "source": "image quilt of 72 blocks from render faces [[0, 1], [0, 2], [0, 4], [0, 5], [1, 1], [1, 3], [1, 5], [2, 0], [2, 3], [2, 5], [3, -1], [3, 1], [3, 4], [4, 0], [4, 1], [4, 2], [4, 4], [4, 5], [5, 2], [6, 0], [6, 3], [6, 5]] (dihedral transform counts {'0': 6, '1': 7, '2': 15, '3': 11, '4': 11, '5': 11, '6': 4, '7': 7})",
+   "centre_px": [
+    3366.75,
+    324.0
+   ],
+   "min_mm": 1.5221515220874342,
+   "max_mm": 1.668387884336614,
+   "std_mm": 0.010721911522989899,
+   "clearance_mm": 1.5221515220874342
+  },
+  {
+   "index": 8,
+   "column": 7,
+   "row": 0,
+   "type": "chiseled",
+   "rotation_deg": 120,
+   "mirrored": false,
+   "source": "procedural grooves at the measured 0.1989 in pitch and measured profile, wave angle 120 deg (image coordinates, y down), phase-wobble field (measured structure function); amplitude and fine grain from an image quilt of 121 blocks from render chiseled faces [[0, 3], [1, 0], [1, 4], [2, 2], [3, 0], [3, 3], [4, 3], [5, 4], [6, 2]], rotated into a canonical frame",
+   "centre_px": [
+    3927.875,
+    0.0
+   ],
+   "min_mm": 0.8650003814755474,
+   "max_mm": 1.9060715648126954,
+   "std_mm": 0.12994013808240776,
+   "clearance_mm": 0.8650003814755474
+  },
+  {
+   "index": 9,
+   "column": 0,
+   "row": 1,
+   "type": "matte",
+   "rotation_deg": 0,
+   "mirrored": false,
+   "source": "image quilt of 72 blocks from render faces [[0, 1], [0, 2], [1, -1], [1, 1], [1, 3], [1, 5], [2, 0], [2, 3], [2, 5], [3, -1], [3, 1], [3, 4], [4, 0], [4, 1], [4, 2], [4, 4], [4, 5], [5, -1], [5, 2], [5, 3], [6, 0], [6, 1], [6, 3], [6, 5]] (dihedral transform counts {'0': 6, '1': 4, '2': 13, '3': 15, '4': 4, '5': 12, '6': 14, '7': 4})",
+   "centre_px": [
+    0.0,
+    972.0
+   ],
+   "min_mm": 1.5131853208209354,
+   "max_mm": 1.6598977645532922,
+   "std_mm": 0.010213990779805268,
+   "clearance_mm": 1.5131853208209354
+  },
+  {
+   "index": 10,
+   "column": 1,
+   "row": 1,
+   "type": "matte",
+   "rotation_deg": 0,
+   "mirrored": false,
+   "source": "image quilt of 72 blocks from render faces [[0, 1], [0, 2], [0, 4], [0, 5], [1, -1], [1, 3], [1, 5], [2, 0], [2, 3], [2, 5], [3, -1], [3, 1], [3, 4], [4, 0], [4, 1], [4, 2], [4, 4], [4, 5], [5, 2], [5, 3], [6, 0], [6, 1], [6, 3], [6, 5]] (dihedral transform counts {'0': 7, '1': 8, '2': 15, '3': 12, '4': 4, '5': 4, '6': 9, '7': 13})",
+   "centre_px": [
+    561.125,
+    648.0
+   ],
+   "min_mm": 1.5302845807583734,
+   "max_mm": 1.6591836423285267,
+   "std_mm": 0.01012442553343468,
+   "clearance_mm": 1.5302845807583734
+  },
+  {
+   "index": 11,
+   "column": 2,
+   "row": 1,
+   "type": "matte",
+   "rotation_deg": 0,
+   "mirrored": false,
+   "source": "image quilt of 72 blocks from render faces [[0, 1], [0, 2], [0, 4], [0, 5], [1, -1], [1, 1], [1, 3], [1, 5], [2, 0], [2, 3], [2, 5], [3, -1], [3, 1], [3, 4], [4, 0], [4, 1], [4, 2], [4, 4], [4, 5], [5, -1], [5, 2], [5, 3], [6, 0], [6, 1], [6, 3], [6, 5]] (dihedral transform counts {'0': 5, '1': 7, '2': 11, '3': 10, '4': 7, '5': 11, '6': 11, '7': 10})",
+   "centre_px": [
+    1122.25,
+    972.0
+   ],
+   "min_mm": 1.5271900511177232,
+   "max_mm": 1.6498603799496452,
+   "std_mm": 0.010276359861777882,
+   "clearance_mm": 1.5271900511177232
+  },
+  {
+   "index": 12,
+   "column": 3,
+   "row": 1,
+   "type": "raw",
+   "rotation_deg": 0,
+   "mirrored": false,
+   "source": "image quilt of 195 blocks from render faces [[0, 0], [1, 2], [2, 1], [2, 4], [3, 2], [5, 0], [5, 1], [5, 5], [6, 4]] (dihedral transform counts {'0': 17, '1': 24, '2': 17, '3': 23, '4': 23, '5': 28, '6': 29, '7': 34})",
+   "centre_px": [
+    1683.375,
+    648.0
+   ],
+   "min_mm": 1.107524223697261,
+   "max_mm": 2.03219348439765,
+   "std_mm": 0.09626409906558181,
+   "clearance_mm": 1.107524223697261
+  },
+  {
+   "index": 13,
+   "column": 4,
+   "row": 1,
+   "type": "chiseled",
+   "rotation_deg": 0,
+   "mirrored": false,
+   "source": "procedural grooves at the measured 0.1989 in pitch and measured profile, wave angle 0 deg (image coordinates, y down), phase-wobble field (measured structure function); amplitude and fine grain from an image quilt of 121 blocks from render chiseled faces [[0, 3], [1, 0], [1, 4], [2, 2], [3, 0], [3, 3], [4, 3], [5, 4], [6, 2]], rotated into a canonical frame",
+   "centre_px": [
+    2244.5,
+    972.0
+   ],
+   "min_mm": 0.8930891889829862,
+   "max_mm": 1.904484626535439,
+   "std_mm": 0.12946835000835846,
+   "clearance_mm": 0.8930891889829862
+  },
+  {
+   "index": 14,
+   "column": 5,
+   "row": 1,
+   "type": "raw",
+   "rotation_deg": 0,
+   "mirrored": false,
+   "source": "image quilt of 195 blocks from render faces [[0, 0], [1, 2], [2, 1], [2, 4], [3, 2], [5, 0], [5, 1], [5, 5], [6, 4]] (dihedral transform counts {'0': 19, '1': 24, '2': 30, '3': 25, '4': 23, '5': 25, '6': 24, '7': 25})",
+   "centre_px": [
+    2805.625,
+    648.0
+   ],
+   "min_mm": 1.0131013962005035,
+   "max_mm": 1.9832364385442893,
+   "std_mm": 0.09343883333136349,
+   "clearance_mm": 1.0131013962005035
+  },
+  {
+   "index": 15,
+   "column": 6,
+   "row": 1,
+   "type": "matte",
+   "rotation_deg": 0,
+   "mirrored": false,
+   "source": "image quilt of 72 blocks from render faces [[0, 1], [0, 2], [0, 4], [0, 5], [1, -1], [1, 1], [1, 3], [2, 0], [2, 3], [2, 5], [3, -1], [3, 1], [3, 4], [4, 0], [4, 1], [4, 2], [4, 4], [4, 5], [5, -1], [5, 2], [5, 3], [6, 3], [6, 5], [7, 3]] (dihedral transform counts {'0': 10, '1': 5, '2': 10, '3': 12, '4': 8, '5': 6, '6': 10, '7': 11})",
+   "centre_px": [
+    3366.75,
+    972.0
+   ],
+   "min_mm": 1.5066788738841839,
+   "max_mm": 1.662516212710765,
+   "std_mm": 0.01007517278754053,
+   "clearance_mm": 1.5066788738841839
+  },
+  {
+   "index": 16,
+   "column": 7,
+   "row": 1,
+   "type": "matte",
+   "rotation_deg": 0,
+   "mirrored": false,
+   "source": "image quilt of 72 blocks from render faces [[0, 1], [0, 2], [0, 4], [0, 5], [1, 1], [1, 3], [1, 5], [2, 0], [2, 3], [2, 5], [3, -1], [3, 1], [3, 4], [4, 0], [4, 1], [4, 2], [4, 4], [4, 5], [5, -1], [5, 2], [5, 3], [6, 0], [6, 1], [6, 3], [6, 5]] (dihedral transform counts {'0': 5, '1': 10, '2': 7, '3': 8, '4': 12, '5': 4, '6': 14, '7': 12})",
+   "centre_px": [
+    3927.875,
+    648.0
+   ],
+   "min_mm": 1.49981536583505,
+   "max_mm": 1.6635873960479133,
+   "std_mm": 0.009915074721500793,
+   "clearance_mm": 1.49981536583505
+  },
+  {
+   "index": 17,
+   "column": 0,
+   "row": 2,
+   "type": "raw",
+   "rotation_deg": 0,
+   "mirrored": false,
+   "source": "image quilt of 195 blocks from render faces [[0, 0], [1, 2], [2, 1], [2, 4], [3, 2], [5, 0], [5, 1], [5, 5], [6, 4]] (dihedral transform counts {'0': 24, '1': 33, '2': 22, '3': 21, '4': 32, '5': 22, '6': 21, '7': 20})",
+   "centre_px": [
+    0.0,
+    1620.0
+   ],
+   "min_mm": 1.0724925612268252,
+   "max_mm": 2.0202517738612955,
+   "std_mm": 0.09629861915577995,
+   "clearance_mm": 1.0724925612268252
+  },
+  {
+   "index": 18,
+   "column": 1,
+   "row": 2,
+   "type": "chiseled",
+   "rotation_deg": 0,
+   "mirrored": false,
+   "source": "procedural grooves at the measured 0.1989 in pitch and measured profile, wave angle 0 deg (image coordinates, y down), phase-wobble field (measured structure function); amplitude and fine grain from an image quilt of 121 blocks from render chiseled faces [[0, 3], [1, 0], [1, 4], [2, 2], [3, 0], [3, 3], [4, 3], [5, 4], [6, 2]], rotated into a canonical frame",
+   "centre_px": [
+    561.125,
+    1296.0
+   ],
+   "min_mm": 0.9002700846875715,
+   "max_mm": 1.8968276493476768,
+   "std_mm": 0.12613403660268335,
+   "clearance_mm": 0.9002700846875715
+  },
+  {
+   "index": 19,
+   "column": 2,
+   "row": 2,
+   "type": "matte",
+   "rotation_deg": 0,
+   "mirrored": false,
+   "source": "image quilt of 72 blocks from render faces [[0, 1], [0, 2], [0, 4], [0, 5], [1, -1], [1, 1], [1, 3], [1, 5], [2, 0], [2, 3], [2, 5], [3, -1], [3, 1], [3, 4], [4, 0], [4, 2], [4, 4], [4, 5], [5, -1], [5, 2], [5, 3], [6, 0], [6, 1], [6, 3], [6, 5], [7, 0]] (dihedral transform counts {'0': 8, '1': 12, '2': 8, '3': 8, '4': 12, '5': 6, '6': 11, '7': 7})",
+   "centre_px": [
+    1122.25,
+    1620.0
+   ],
+   "min_mm": 1.536354619668879,
+   "max_mm": 1.6564858472571908,
+   "std_mm": 0.010371932292197019,
+   "clearance_mm": 1.536354619668879
+  },
+  {
+   "index": 20,
+   "column": 3,
+   "row": 2,
+   "type": "matte",
+   "rotation_deg": 0,
+   "mirrored": false,
+   "source": "image quilt of 72 blocks from render faces [[0, 1], [0, 2], [0, 4], [0, 5], [1, 1], [1, 3], [1, 5], [2, 0], [2, 3], [2, 5], [3, -1], [3, 1], [3, 4], [4, 0], [4, 1], [4, 2], [4, 4], [4, 5], [5, -1], [5, 2], [5, 3], [6, 0], [6, 1], [6, 3], [6, 5]] (dihedral transform counts {'0': 9, '1': 14, '2': 9, '3': 7, '4': 4, '5': 11, '6': 13, '7': 5})",
+   "centre_px": [
+    1683.375,
+    1296.0
+   ],
+   "min_mm": 1.5197711146715496,
+   "max_mm": 1.6620798046845198,
+   "std_mm": 0.010553156417056368,
+   "clearance_mm": 1.5197711146715496
+  },
+  {
+   "index": 21,
+   "column": 4,
+   "row": 2,
+   "type": "matte",
+   "rotation_deg": 0,
+   "mirrored": false,
+   "source": "image quilt of 72 blocks from render faces [[0, 1], [0, 2], [0, 4], [0, 5], [1, 1], [1, 3], [2, 0], [2, 3], [2, 5], [3, -1], [3, 1], [3, 4], [4, 0], [4, 1], [4, 2], [4, 5], [5, 2], [5, 3], [6, 0], [6, 1], [6, 3], [6, 5]] (dihedral transform counts {'0': 9, '1': 8, '2': 7, '3': 9, '4': 12, '5': 13, '6': 5, '7': 9})",
+   "centre_px": [
+    2244.5,
+    1620.0
+   ],
+   "min_mm": 1.521080338750286,
+   "max_mm": 1.6633096818493933,
+   "std_mm": 0.010250274076603475,
+   "clearance_mm": 1.521080338750286
+  },
+  {
+   "index": 22,
+   "column": 5,
+   "row": 2,
+   "type": "matte",
+   "rotation_deg": 0,
+   "mirrored": false,
+   "source": "image quilt of 72 blocks from render faces [[0, 1], [0, 2], [0, 4], [0, 5], [1, -1], [1, 1], [1, 3], [1, 5], [2, 0], [2, 5], [3, -1], [3, 1], [3, 4], [4, 0], [4, 1], [4, 2], [4, 4], [4, 5], [5, -1], [5, 2], [5, 3], [6, 0], [6, 1], [6, 3], [6, 5], [7, 3]] (dihedral transform counts {'0': 4, '1': 7, '2': 8, '3': 8, '4': 13, '5': 11, '6': 12, '7': 9})",
+   "centre_px": [
+    2805.625,
+    1296.0
+   ],
+   "min_mm": 1.5238574807354848,
+   "max_mm": 1.6657297627222094,
+   "std_mm": 0.010005813932827965,
+   "clearance_mm": 1.5238574807354848
+  },
+  {
+   "index": 23,
+   "column": 6,
+   "row": 2,
+   "type": "raw",
+   "rotation_deg": 0,
+   "mirrored": false,
+   "source": "image quilt of 195 blocks from render faces [[0, 0], [1, 2], [2, 1], [2, 4], [3, 2], [5, 0], [5, 1], [5, 5], [6, 4]] (dihedral transform counts {'0': 30, '1': 33, '2': 19, '3': 25, '4': 19, '5': 29, '6': 14, '7': 26})",
+   "centre_px": [
+    3366.75,
+    1620.0
+   ],
+   "min_mm": 1.1077622644388494,
+   "max_mm": 2.013269245441367,
+   "std_mm": 0.09608411330856814,
+   "clearance_mm": 1.1077622644388494
+  },
+  {
+   "index": 24,
+   "column": 7,
+   "row": 2,
+   "type": "chiseled",
+   "rotation_deg": 120,
+   "mirrored": false,
+   "source": "procedural grooves at the measured 0.1989 in pitch and measured profile, wave angle 120 deg (image coordinates, y down), phase-wobble field (measured structure function); amplitude and fine grain from an image quilt of 121 blocks from render chiseled faces [[0, 3], [1, 0], [1, 4], [2, 2], [3, 0], [3, 3], [4, 3], [5, 4], [6, 2]], rotated into a canonical frame",
+   "centre_px": [
+    3927.875,
+    1296.0
+   ],
+   "min_mm": 0.9219317921721217,
+   "max_mm": 1.9530449378194856,
+   "std_mm": 0.13485167298879744,
+   "clearance_mm": 0.9219317921721217
+  },
+  {
+   "index": 25,
+   "column": 0,
+   "row": 3,
+   "type": "matte",
+   "rotation_deg": 0,
+   "mirrored": false,
+   "source": "image quilt of 72 blocks from render faces [[0, 1], [0, 2], [0, 4], [0, 5], [1, -1], [1, 1], [1, 5], [2, 0], [2, 3], [2, 5], [3, -1], [3, 1], [3, 4], [4, 0], [4, 1], [4, 2], [4, 4], [5, -1], [5, 2], [5, 3], [6, 0], [6, 3], [6, 5]] (dihedral transform counts {'0': 6, '1': 13, '2': 7, '3': 8, '4': 2, '5': 16, '6': 9, '7': 11})",
+   "centre_px": [
+    0.0,
+    2268.0
+   ],
+   "min_mm": 1.5315938048371098,
+   "max_mm": 1.6522011139085984,
+   "std_mm": 0.00959490753124357,
+   "clearance_mm": 1.5315938048371098
+  },
+  {
+   "index": 26,
+   "column": 1,
+   "row": 3,
+   "type": "matte",
+   "rotation_deg": 0,
+   "mirrored": false,
+   "source": "image quilt of 72 blocks from render faces [[0, 1], [0, 2], [0, 4], [0, 5], [1, -1], [1, 3], [1, 5], [2, 0], [2, 3], [2, 5], [3, -1], [3, 1], [3, 4], [4, 0], [4, 1], [4, 2], [4, 4], [4, 5], [5, -1], [5, 2], [5, 3], [6, 0], [6, 1], [6, 3], [6, 5]] (dihedral transform counts {'0': 13, '1': 6, '2': 6, '3': 12, '4': 11, '5': 8, '6': 9, '7': 7})",
+   "centre_px": [
+    561.125,
+    1944.0
+   ],
+   "min_mm": 1.522706950484474,
+   "max_mm": 1.660175478751812,
+   "std_mm": 0.010685751147682701,
+   "clearance_mm": 1.522706950484474
+  },
+  {
+   "index": 27,
+   "column": 2,
+   "row": 3,
+   "type": "chiseled",
+   "rotation_deg": 60,
+   "mirrored": false,
+   "source": "procedural grooves at the measured 0.1989 in pitch and measured profile, wave angle 60 deg (image coordinates, y down), phase-wobble field (measured structure function); amplitude and fine grain from an image quilt of 121 blocks from render chiseled faces [[0, 3], [1, 0], [1, 4], [2, 2], [3, 0], [3, 3], [4, 3], [5, 4], [6, 2]], rotated into a canonical frame",
+   "centre_px": [
+    1122.25,
+    2268.0
+   ],
+   "min_mm": 0.858097199969482,
+   "max_mm": 1.9270191500724803,
+   "std_mm": 0.1304838985601827,
+   "clearance_mm": 0.858097199969482
+  },
+  {
+   "index": 28,
+   "column": 3,
+   "row": 3,
+   "type": "raw",
+   "rotation_deg": 0,
+   "mirrored": false,
+   "source": "image quilt of 195 blocks from render faces [[0, 0], [1, 2], [2, 1], [2, 4], [3, 2], [5, 0], [5, 1], [5, 5], [6, 4]] (dihedral transform counts {'0': 24, '1': 28, '2': 23, '3': 20, '4': 25, '5': 25, '6': 27, '7': 23})",
+   "centre_px": [
+    1683.375,
+    1944.0
+   ],
+   "min_mm": 1.006872663462272,
+   "max_mm": 2.036359197375448,
+   "std_mm": 0.09472790375327743,
+   "clearance_mm": 1.006872663462272
+  },
+  {
+   "index": 29,
+   "column": 4,
+   "row": 3,
+   "type": "matte",
+   "rotation_deg": 0,
+   "mirrored": false,
+   "source": "image quilt of 72 blocks from render faces [[0, 1], [0, 2], [0, 4], [0, 5], [1, 1], [1, 3], [1, 5], [2, 0], [2, 3], [2, 5], [3, -1], [3, 1], [3, 4], [4, 0], [4, 1], [4, 2], [4, 5], [5, -1], [5, 2], [5, 3], [6, 0], [6, 1], [6, 3], [6, 5]] (dihedral transform counts {'0': 11, '1': 8, '2': 10, '3': 10, '4': 6, '5': 12, '6': 5, '7': 10})",
+   "centre_px": [
+    2244.5,
+    2268.0
+   ],
+   "min_mm": 1.536037232013428,
+   "max_mm": 1.6530739299610895,
+   "std_mm": 0.010370803568466305,
+   "clearance_mm": 1.536037232013428
+  },
+  {
+   "index": 30,
+   "column": 5,
+   "row": 3,
+   "type": "chiseled",
+   "rotation_deg": 60,
+   "mirrored": false,
+   "source": "procedural grooves at the measured 0.1989 in pitch and measured profile, wave angle 60 deg (image coordinates, y down), phase-wobble field (measured structure function); amplitude and fine grain from an image quilt of 121 blocks from render chiseled faces [[0, 3], [1, 0], [1, 4], [2, 2], [3, 0], [3, 3], [4, 3], [5, 4], [6, 2]], rotated into a canonical frame",
+   "centre_px": [
+    2805.625,
+    1944.0
+   ],
+   "min_mm": 0.8678965438315404,
+   "max_mm": 1.9241229877164874,
+   "std_mm": 0.12760027567044382,
+   "clearance_mm": 0.8678965438315404
+  },
+  {
+   "index": 31,
+   "column": 6,
+   "row": 3,
+   "type": "matte",
+   "rotation_deg": 0,
+   "mirrored": false,
+   "source": "image quilt of 72 blocks from render faces [[0, 1], [0, 2], [0, 4], [0, 5], [1, -1], [1, 1], [1, 3], [1, 5], [2, 0], [2, 3], [2, 5], [3, -1], [3, 1], [3, 4], [4, 0], [4, 1], [4, 2], [4, 4], [4, 5], [5, -1], [5, 2], [5, 3], [6, 0], [6, 1], [6, 5]] (dihedral transform counts {'0': 9, '1': 10, '2': 9, '3': 13, '4': 7, '5': 10, '6': 5, '7': 9})",
+   "centre_px": [
+    3366.75,
+    2268.0
+   ],
+   "min_mm": 1.484660105287251,
+   "max_mm": 1.6638651102464332,
+   "std_mm": 0.010188256881791563,
+   "clearance_mm": 1.484660105287251
+  },
+  {
+   "index": 32,
+   "column": 7,
+   "row": 3,
+   "type": "matte",
+   "rotation_deg": 0,
+   "mirrored": false,
+   "source": "image quilt of 72 blocks from render faces [[0, 1], [0, 2], [0, 4], [0, 5], [1, -1], [1, 1], [1, 3], [1, 5], [2, 0], [2, 3], [2, 5], [3, -1], [3, 1], [3, 4], [4, 0], [4, 1], [4, 2], [4, 4], [4, 5], [5, 2], [5, 3], [6, 0], [6, 1], [6, 3], [6, 5], [7, 0]] (dihedral transform counts {'0': 3, '1': 13, '2': 10, '3': 5, '4': 11, '5': 12, '6': 9, '7': 9})",
+   "centre_px": [
+    3927.875,
+    1944.0
+   ],
+   "min_mm": 1.5332997634851606,
+   "max_mm": 1.65477988860914,
+   "std_mm": 0.009283774403813476,
+   "clearance_mm": 1.5332997634851606
+  },
+  {
+   "index": 33,
+   "column": 0,
+   "row": 4,
+   "type": "chiseled",
+   "rotation_deg": 120,
+   "mirrored": false,
+   "source": "procedural grooves at the measured 0.1989 in pitch and measured profile, wave angle 120 deg (image coordinates, y down), phase-wobble field (measured structure function); amplitude and fine grain from an image quilt of 121 blocks from render chiseled faces [[0, 3], [1, 0], [1, 4], [2, 2], [3, 0], [3, 3], [4, 3], [5, 4], [6, 2]], rotated into a canonical frame",
+   "centre_px": [
+    0.0,
+    2916.0
+   ],
+   "min_mm": 0.8421087968261234,
+   "max_mm": 1.9051987487602045,
+   "std_mm": 0.13077053686626544,
+   "clearance_mm": 0.8421087968261234
+  },
+  {
+   "index": 34,
+   "column": 1,
+   "row": 4,
+   "type": "raw",
+   "rotation_deg": 0,
+   "mirrored": false,
+   "source": "image quilt of 195 blocks from render faces [[0, 0], [1, 2], [2, 1], [2, 4], [3, 2], [5, 0], [5, 1], [5, 5], [6, 4]] (dihedral transform counts {'0': 22, '1': 26, '2': 24, '3': 22, '4': 27, '5': 20, '6': 29, '7': 25})",
+   "centre_px": [
+    561.125,
+    2592.0
+   ],
+   "min_mm": 1.0322240024414435,
+   "max_mm": 2.027948424505989,
+   "std_mm": 0.09460855975529026,
+   "clearance_mm": 1.0322240024414435
+  },
+  {
+   "index": 35,
+   "column": 2,
+   "row": 4,
+   "type": "matte",
+   "rotation_deg": 0,
+   "mirrored": false,
+   "source": "image quilt of 72 blocks from render faces [[0, 1], [0, 2], [0, 4], [0, 5], [1, 1], [1, 3], [2, 0], [2, 3], [2, 5], [3, 1], [3, 4], [4, 0], [4, 1], [4, 2], [4, 4], [5, -1], [5, 2], [5, 3], [6, 0], [6, 1], [6, 3], [6, 5], [7, 3]] (dihedral transform counts {'0': 16, '1': 9, '2': 6, '3': 5, '4': 8, '5': 7, '6': 14, '7': 7})",
+   "centre_px": [
+    1122.25,
+    2916.0
+   ],
+   "min_mm": 1.5220721751735713,
+   "max_mm": 1.6637857633325703,
+   "std_mm": 0.00985193637218483,
+   "clearance_mm": 1.5220721751735713
+  },
+  {
+   "index": 36,
+   "column": 3,
+   "row": 4,
+   "type": "matte",
+   "rotation_deg": 0,
+   "mirrored": false,
+   "source": "image quilt of 72 blocks from render faces [[0, 1], [0, 2], [0, 5], [1, -1], [1, 1], [1, 3], [1, 5], [2, 0], [2, 3], [2, 5], [3, -1], [3, 1], [3, 4], [4, 0], [4, 1], [4, 2], [4, 4], [4, 5], [5, -1], [5, 2], [5, 3], [6, 0], [6, 1], [6, 3], [6, 5]] (dihedral transform counts {'0': 6, '1': 11, '2': 9, '3': 10, '4': 6, '5': 9, '6': 5, '7': 16})",
+   "centre_px": [
+    1683.375,
+    2592.0
+   ],
+   "min_mm": 1.526952010376135,
+   "max_mm": 1.6616433966582742,
+   "std_mm": 0.009925454453318916,
+   "clearance_mm": 1.526952010376135
+  },
+  {
+   "index": 37,
+   "column": 4,
+   "row": 4,
+   "type": "chiseled",
+   "rotation_deg": 120,
+   "mirrored": false,
+   "source": "procedural grooves at the measured 0.1989 in pitch and measured profile, wave angle 120 deg (image coordinates, y down), phase-wobble field (measured structure function); amplitude and fine grain from an image quilt of 121 blocks from render chiseled faces [[0, 3], [1, 0], [1, 4], [2, 2], [3, 0], [3, 3], [4, 3], [5, 4], [6, 2]], rotated into a canonical frame",
+   "centre_px": [
+    2244.5,
+    2916.0
+   ],
+   "min_mm": 0.8845197222858014,
+   "max_mm": 1.9105149919890134,
+   "std_mm": 0.12838976618119657,
+   "clearance_mm": 0.8845197222858014
+  },
+  {
+   "index": 38,
+   "column": 5,
+   "row": 4,
+   "type": "matte",
+   "rotation_deg": 0,
+   "mirrored": false,
+   "source": "image quilt of 72 blocks from render faces [[0, 1], [0, 2], [0, 4], [0, 5], [1, -1], [1, 1], [1, 3], [1, 5], [2, 0], [2, 3], [2, 5], [3, -1], [3, 1], [3, 4], [4, 0], [4, 1], [4, 2], [4, 4], [4, 5], [5, -1], [5, 2], [5, 3], [6, 0], [6, 1], [6, 3], [6, 5]] (dihedral transform counts {'0': 10, '1': 12, '2': 11, '3': 6, '4': 13, '5': 4, '6': 4, '7': 12})",
+   "centre_px": [
+    2805.625,
+    2592.0
+   ],
+   "min_mm": 1.502156099794003,
+   "max_mm": 1.6557320515754939,
+   "std_mm": 0.00974173343450977,
+   "clearance_mm": 1.502156099794003
+  },
+  {
+   "index": 39,
+   "column": 6,
+   "row": 4,
+   "type": "chiseled",
+   "rotation_deg": 0,
+   "mirrored": false,
+   "source": "procedural grooves at the measured 0.1989 in pitch and measured profile, wave angle 0 deg (image coordinates, y down), phase-wobble field (measured structure function); amplitude and fine grain from an image quilt of 121 blocks from render chiseled faces [[0, 3], [1, 0], [1, 4], [2, 2], [3, 0], [3, 3], [4, 3], [5, 4], [6, 2]], rotated into a canonical frame",
+   "centre_px": [
+    3366.75,
+    2916.0
+   ],
+   "min_mm": 0.9284382391088731,
+   "max_mm": 1.8920668345159075,
+   "std_mm": 0.12478115878143456,
+   "clearance_mm": 0.9284382391088731
+  },
+  {
+   "index": 40,
+   "column": 7,
+   "row": 4,
+   "type": "matte",
+   "rotation_deg": 0,
+   "mirrored": false,
+   "source": "image quilt of 72 blocks from render faces [[0, 1], [0, 2], [0, 4], [0, 5], [1, -1], [1, 1], [1, 3], [1, 5], [2, 0], [2, 3], [2, 5], [3, 1], [3, 4], [4, 0], [4, 1], [4, 2], [4, 4], [4, 5], [5, -1], [5, 2], [5, 3], [6, 0], [6, 1], [6, 5], [7, 0]] (dihedral transform counts {'0': 7, '1': 7, '2': 14, '3': 8, '4': 9, '5': 7, '6': 9, '7': 11})",
+   "centre_px": [
+    3927.875,
+    2592.0
+   ],
+   "min_mm": 1.5177080949111161,
+   "max_mm": 1.6600564583810178,
+   "std_mm": 0.009910912453029835,
+   "clearance_mm": 1.5177080949111161
+  },
+  {
+   "index": 41,
+   "column": 0,
+   "row": 5,
+   "type": "matte",
+   "rotation_deg": 0,
+   "mirrored": false,
+   "source": "image quilt of 72 blocks from render faces [[0, 1], [0, 2], [0, 4], [0, 5], [1, 1], [1, 3], [1, 5], [2, 0], [2, 3], [2, 5], [3, -1], [3, 1], [3, 4], [4, 0], [4, 1], [4, 2], [4, 4], [4, 5], [5, -1], [5, 2], [5, 3], [6, 0], [6, 1], [6, 3], [6, 5]] (dihedral transform counts {'0': 8, '1': 8, '2': 8, '3': 12, '4': 12, '5': 11, '6': 7, '7': 6})",
+   "centre_px": [
+    0.0,
+    3564.0
+   ],
+   "min_mm": 1.5261585412375067,
+   "max_mm": 1.6664042114900435,
+   "std_mm": 0.010084984021724436,
+   "clearance_mm": 1.5261585412375067
+  },
+  {
+   "index": 42,
+   "column": 1,
+   "row": 5,
+   "type": "matte",
+   "rotation_deg": 0,
+   "mirrored": false,
+   "source": "image quilt of 72 blocks from render faces [[0, 1], [0, 2], [0, 4], [0, 5], [1, -1], [1, 1], [1, 3], [1, 5], [2, 0], [2, 3], [2, 5], [3, 1], [3, 4], [4, 0], [4, 1], [4, 2], [4, 4], [4, 5], [5, -1], [5, 2], [5, 3], [6, 0], [6, 1], [6, 3], [6, 5]] (dihedral transform counts {'0': 6, '1': 5, '2': 10, '3': 9, '4': 11, '5': 9, '6': 8, '7': 14})",
+   "centre_px": [
+    561.125,
+    3240.0
+   ],
+   "min_mm": 1.5065201800564583,
+   "max_mm": 1.6669199664301517,
+   "std_mm": 0.01025744506235752,
+   "clearance_mm": 1.5065201800564583
+  },
+  {
+   "index": 43,
+   "column": 2,
+   "row": 5,
+   "type": "raw",
+   "rotation_deg": 0,
+   "mirrored": false,
+   "source": "image quilt of 195 blocks from render faces [[0, 0], [1, 2], [2, 1], [2, 4], [3, 2], [5, 0], [5, 1], [5, 5], [6, 4]] (dihedral transform counts {'0': 32, '1': 21, '2': 23, '3': 36, '4': 24, '5': 13, '6': 23, '7': 23})",
+   "centre_px": [
+    1122.25,
+    3564.0
+   ],
+   "min_mm": 1.1045090409704739,
+   "max_mm": 2.0650034332799265,
+   "std_mm": 0.09476903142081902,
+   "clearance_mm": 1.1045090409704739
+  },
+  {
+   "index": 44,
+   "column": 3,
+   "row": 5,
+   "type": "matte",
+   "rotation_deg": 0,
+   "mirrored": false,
+   "source": "image quilt of 72 blocks from render faces [[0, 1], [0, 2], [0, 4], [0, 5], [1, 1], [1, 3], [1, 5], [2, 0], [2, 3], [2, 5], [3, -1], [3, 1], [3, 4], [4, 0], [4, 1], [4, 2], [4, 4], [4, 5], [5, -1], [5, 2], [5, 3], [6, 0], [6, 1], [6, 3], [6, 5]] (dihedral transform counts {'0': 13, '1': 7, '2': 8, '3': 8, '4': 13, '5': 10, '6': 5, '7': 8})",
+   "centre_px": [
+    1683.375,
+    3240.0
+   ],
+   "min_mm": 1.5069169146257724,
+   "max_mm": 1.660849927519646,
+   "std_mm": 0.009999083972390008,
+   "clearance_mm": 1.5069169146257724
+  },
+  {
+   "index": 45,
+   "column": 4,
+   "row": 5,
+   "type": "raw",
+   "rotation_deg": 0,
+   "mirrored": false,
+   "source": "image quilt of 195 blocks from render faces [[0, 0], [1, 2], [2, 1], [2, 4], [3, 2], [5, 0], [5, 1], [5, 5], [6, 4]] (dihedral transform counts {'0': 24, '1': 26, '2': 30, '3': 17, '4': 31, '5': 20, '6': 21, '7': 26})",
+   "centre_px": [
+    2244.5,
+    3564.0
+   ],
+   "min_mm": 1.116133363851377,
+   "max_mm": 2.014895857175555,
+   "std_mm": 0.09530685946261287,
+   "clearance_mm": 1.116133363851377
+  },
+  {
+   "index": 46,
+   "column": 5,
+   "row": 5,
+   "type": "matte",
+   "rotation_deg": 0,
+   "mirrored": false,
+   "source": "image quilt of 72 blocks from render faces [[0, 1], [0, 2], [0, 4], [0, 5], [1, -1], [1, 1], [1, 3], [1, 5], [2, 0], [2, 3], [2, 5], [3, -1], [3, 1], [3, 4], [4, 0], [4, 1], [4, 2], [4, 4], [4, 5], [5, 2], [5, 3], [6, 0], [6, 1], [6, 3], [6, 5]] (dihedral transform counts {'0': 8, '1': 4, '2': 7, '3': 11, '4': 11, '5': 12, '6': 5, '7': 14})",
+   "centre_px": [
+    2805.625,
+    3240.0
+   ],
+   "min_mm": 1.5313557640955213,
+   "max_mm": 1.660849927519646,
+   "std_mm": 0.009803779627712285,
+   "clearance_mm": 1.5313557640955213
+  },
+  {
+   "index": 47,
+   "column": 6,
+   "row": 5,
+   "type": "matte",
+   "rotation_deg": 0,
+   "mirrored": false,
+   "source": "image quilt of 72 blocks from render faces [[0, 1], [0, 4], [0, 5], [1, 1], [1, 3], [2, 0], [2, 3], [2, 5], [3, -1], [3, 1], [3, 4], [4, 0], [4, 1], [4, 2], [4, 4], [4, 5], [5, -1], [5, 2], [5, 3], [6, 0], [6, 1], [6, 3], [6, 5]] (dihedral transform counts {'0': 5, '1': 9, '2': 11, '3': 11, '4': 9, '5': 13, '6': 5, '7': 9})",
+   "centre_px": [
+    3366.75,
+    3564.0
+   ],
+   "min_mm": 1.522429236285954,
+   "max_mm": 1.6542244602121003,
+   "std_mm": 0.009738019094383899,
+   "clearance_mm": 1.522429236285954
+  },
+  {
+   "index": 48,
+   "column": 7,
+   "row": 5,
+   "type": "raw",
+   "rotation_deg": 0,
+   "mirrored": false,
+   "source": "image quilt of 195 blocks from render faces [[0, 0], [1, 2], [2, 1], [2, 4], [3, 2], [5, 0], [5, 1], [5, 5], [6, 4]] (dihedral transform counts {'0': 24, '1': 31, '2': 24, '3': 18, '4': 25, '5': 22, '6': 24, '7': 27})",
+   "centre_px": [
+    3927.875,
+    3240.0
+   ],
+   "min_mm": 1.0104829480430304,
+   "max_mm": 2.0686533913176164,
+   "std_mm": 0.09583286599439093,
+   "clearance_mm": 1.0104829480430304
+  },
+  {
+   "index": 49,
+   "column": 0,
+   "row": 6,
+   "type": "matte",
+   "rotation_deg": 0,
+   "mirrored": false,
+   "source": "image quilt of 72 blocks from render faces [[0, 1], [0, 2], [0, 4], [0, 5], [1, -1], [1, 1], [1, 3], [1, 5], [2, 0], [2, 3], [2, 5], [3, -1], [3, 1], [3, 4], [4, 0], [4, 1], [4, 2], [4, 4], [4, 5], [5, -1], [5, 2], [5, 3], [6, 0], [6, 1], [6, 3], [7, 0], [7, 3]] (dihedral transform counts {'0': 10, '1': 7, '2': 10, '3': 5, '4': 8, '5': 13, '6': 8, '7': 11})",
+   "centre_px": [
+    0.0,
+    4212.0
+   ],
+   "min_mm": 1.497593652246891,
+   "max_mm": 1.662119478141451,
+   "std_mm": 0.010525280431429864,
+   "clearance_mm": 1.497593652246891
+  },
+  {
+   "index": 50,
+   "column": 1,
+   "row": 6,
+   "type": "chiseled",
+   "rotation_deg": 0,
+   "mirrored": false,
+   "source": "procedural grooves at the measured 0.1989 in pitch and measured profile, wave angle 0 deg (image coordinates, y down), phase-wobble field (measured structure function); amplitude and fine grain from an image quilt of 121 blocks from render chiseled faces [[0, 3], [1, 0], [1, 4], [2, 2], [3, 0], [3, 3], [4, 3], [5, 4], [6, 2]], rotated into a canonical frame",
+   "centre_px": [
+    561.125,
+    3888.0
+   ],
+   "min_mm": 0.9269703212024109,
+   "max_mm": 1.8729442282749675,
+   "std_mm": 0.1299275958018283,
+   "clearance_mm": 0.9269703212024109
+  },
+  {
+   "index": 51,
+   "column": 2,
+   "row": 6,
+   "type": "matte",
+   "rotation_deg": 0,
+   "mirrored": false,
+   "source": "image quilt of 72 blocks from render faces [[0, 1], [0, 2], [0, 4], [1, -1], [1, 3], [1, 5], [2, 0], [2, 3], [2, 5], [3, -1], [3, 1], [3, 4], [4, 0], [4, 1], [4, 2], [4, 4], [4, 5], [5, -1], [5, 2], [5, 3], [6, 0], [6, 1], [6, 3], [6, 5]] (dihedral transform counts {'0': 7, '1': 8, '2': 9, '3': 10, '4': 9, '5': 10, '6': 11, '7': 8})",
+   "centre_px": [
+    1122.25,
+    4212.0
+   ],
+   "min_mm": 1.5225879301136798,
+   "max_mm": 1.6539864194705118,
+   "std_mm": 0.009580379115655017,
+   "clearance_mm": 1.5225879301136798
+  },
+  {
+   "index": 52,
+   "column": 3,
+   "row": 6,
+   "type": "chiseled",
+   "rotation_deg": 60,
+   "mirrored": false,
+   "source": "procedural grooves at the measured 0.1989 in pitch and measured profile, wave angle 60 deg (image coordinates, y down), phase-wobble field (measured structure function); amplitude and fine grain from an image quilt of 121 blocks from render chiseled faces [[0, 3], [1, 0], [1, 4], [2, 2], [3, 0], [3, 3], [4, 3], [5, 4], [6, 2]], rotated into a canonical frame",
+   "centre_px": [
+    1683.375,
+    3888.0
+   ],
+   "min_mm": 0.8793621728847181,
+   "max_mm": 1.9036514839398795,
+   "std_mm": 0.1291456280117407,
+   "clearance_mm": 0.8793621728847181
+  },
+  {
+   "index": 53,
+   "column": 4,
+   "row": 6,
+   "type": "matte",
+   "rotation_deg": 0,
+   "mirrored": false,
+   "source": "image quilt of 72 blocks from render faces [[0, 1], [0, 2], [0, 4], [0, 5], [1, 1], [1, 3], [1, 5], [2, 0], [2, 3], [2, 5], [3, 1], [3, 4], [4, 0], [4, 1], [4, 2], [4, 4], [4, 5], [5, -1], [5, 2], [5, 3], [6, 0], [6, 1], [6, 3], [6, 5]] (dihedral transform counts {'0': 15, '1': 6, '2': 7, '3': 13, '4': 7, '5': 11, '6': 7, '7': 6})",
+   "centre_px": [
+    2244.5,
+    4212.0
+   ],
+   "min_mm": 1.5275867856870373,
+   "max_mm": 1.6574380102235446,
+   "std_mm": 0.010201041400955853,
+   "clearance_mm": 1.5275867856870373
+  },
+  {
+   "index": 54,
+   "column": 5,
+   "row": 6,
+   "type": "matte",
+   "rotation_deg": 0,
+   "mirrored": false,
+   "source": "image quilt of 72 blocks from render faces [[0, 1], [0, 2], [0, 4], [0, 5], [1, -1], [1, 1], [1, 3], [1, 5], [2, 0], [2, 3], [2, 5], [3, -1], [3, 1], [3, 4], [4, 0], [4, 1], [4, 2], [4, 4], [4, 5], [5, -1], [5, 2], [5, 3], [6, 0], [6, 1], [6, 3], [6, 5]] (dihedral transform counts {'0': 7, '1': 5, '2': 11, '3': 7, '4': 7, '5': 13, '6': 13, '7': 9})",
+   "centre_px": [
+    2805.625,
+    3888.0
+   ],
+   "min_mm": 1.5152880140383,
+   "max_mm": 1.6615640497444113,
+   "std_mm": 0.009590729421669756,
+   "clearance_mm": 1.5152880140383
+  },
+  {
+   "index": 55,
+   "column": 6,
+   "row": 6,
+   "type": "raw",
+   "rotation_deg": 0,
+   "mirrored": false,
+   "source": "image quilt of 195 blocks from render faces [[0, 0], [1, 2], [2, 1], [2, 4], [3, 2], [5, 0], [5, 1], [5, 5], [6, 4]] (dihedral transform counts {'0': 24, '1': 23, '2': 32, '3': 29, '4': 28, '5': 20, '6': 17, '7': 22})",
+   "centre_px": [
+    3366.75,
+    4212.0
+   ],
+   "min_mm": 1.0969710841535056,
+   "max_mm": 2.0270359349965665,
+   "std_mm": 0.09771386310933856,
+   "clearance_mm": 1.0969710841535056
+  },
+  {
+   "index": 56,
+   "column": 7,
+   "row": 6,
+   "type": "matte",
+   "rotation_deg": 0,
+   "mirrored": false,
+   "source": "image quilt of 72 blocks from render faces [[0, 1], [0, 2], [0, 4], [0, 5], [1, -1], [1, 1], [1, 3], [2, 0], [2, 3], [2, 5], [3, -1], [3, 1], [3, 4], [4, 0], [4, 1], [4, 2], [4, 4], [4, 5], [5, -1], [5, 2], [5, 3], [6, 0], [6, 1], [6, 3], [6, 5]] (dihedral transform counts {'0': 10, '1': 9, '2': 6, '3': 7, '4': 12, '5': 10, '6': 12, '7': 6})",
+   "centre_px": [
+    3927.875,
+    3888.0
+   ],
+   "min_mm": 1.5241748683909362,
+   "max_mm": 1.6648966201266497,
+   "std_mm": 0.010208040391318982,
+   "clearance_mm": 1.5241748683909362
+  }
+ ],
+ "non_repeating": {
+  "method": "Normalised cross-correlation of 2 in patches (high-passed luminance, half resolution) against every window of the whole atlas on the torus, 8 dihedral transforms, windows touching joints or chiseled faces ignored; whole-face NCC of every matte pair and raw pair under the 12 hexagon symmetries. Chiseled faces are not covered (their grooves repeat by design and the grain is under the grooves); see README.",
+  "atlas_patch_search": {
+   "patch_size_atlas_px": 128,
+   "patch_size_in": 2.0,
+   "n_patches": 194,
+   "n_matte": 128,
+   "n_raw": 66,
+   "n_windows_searched": 1893448,
+   "transforms": 8,
+   "max_ncc_overall": 0.4999246299266815,
+   "p99_ncc": 0.46093049496412253,
+   "median_of_patch_max_ncc": 0.22794903814792633,
+   "mean_of_patch_max_ncc": 0.2519081311742055,
+   "count_over_0_30": 33,
+   "count_over_0_40": 6,
+   "count_over_0_50": 0,
+   "positive_control": {
+    "noise_std_equals_patch_std": {
+     "planted_at": [
+      1713,
+      1583
+     ],
+     "found_ncc": 0.7098308205604553,
+     "found": {
+      "transform": 5,
+      "at": [
+       1713,
+       1583
+      ]
+     }
+    },
+    "noise_std_2x_patch_std": {
+     "planted_at": [
+      1315,
+      1309
+     ],
+     "found_ncc": 0.4598570168018341,
+     "found": {
+      "transform": 5,
+      "at": [
+       1315,
+       1309
+      ]
+     }
+    }
+   }
+  },
+  "atlas_worst_matches": [
+   {
+    "patch_face": 5,
+    "matched_face": 32,
+    "transform": 3,
+    "ncc": 0.4999246299266815
+   },
+   {
+    "patch_face": 29,
+    "matched_face": 51,
+    "transform": 2,
+    "ncc": 0.4961933493614197
+   },
+   {
+    "patch_face": 31,
+    "matched_face": 42,
+    "transform": 4,
+    "ncc": 0.45827630162239075
+   },
+   {
+    "patch_face": 16,
+    "matched_face": 26,
+    "transform": 4,
+    "ncc": 0.4478206932544708
+   },
+   {
+    "patch_face": 42,
+    "matched_face": 25,
+    "transform": 7,
+    "ncc": 0.4163641333580017
+   }
+  ],
+  "whole_face_pairs": {
+   "resolution_px_per_in": 16.0,
+   "symmetries": 12,
+   "matte": {
+    "n_pairs": 496,
+    "max_ncc": 0.044416213239786034,
+    "mean_of_pair_max": 0.01756415508242261,
+    "p99": 0.03330354433942999,
+    "count_over_0_30": 0
+   },
+   "raw": {
+    "n_pairs": 55,
+    "max_ncc": 0.034747688257515376,
+    "mean_of_pair_max": 0.019490851079848458,
+    "p99": 0.03387113412606396,
+    "count_over_0_30": 0
+   }
+  },
+  "reference_null_source_render_unique_faces": {
+   "n_patches": 136,
+   "n_windows": 1058151,
+   "patch_size_in": 1.9940289330074095,
+   "max_ncc": 0.6836117506027222,
+   "p99": 0.6559480667114258,
+   "median": 0.24280104041099548,
+   "mean": 0.3048701481345822,
+   "count_over_0_30": 56,
+   "count_over_0_40": 38,
+   "count_over_0_50": 17,
+   "matte": {
+    "n": 88,
+    "max": 0.6319294571876526,
+    "median": 0.32335129380226135,
+    "over_0_40": 33
+   },
+   "raw": {
+    "n": 48,
+    "max": 0.6836117506027222,
+    "median": 0.21925213932991028,
+    "over_0_40": 5
+   }
+  },
+  "top_atlas_matches_remeasured_full_resolution": [
+   {
+    "face": 5,
+    "matched_face": 32,
+    "transform": 3,
+    "ncc_half_res_search": 0.4999246299266815,
+    "ncc_fine_band": 0.5007911920547485,
+    "ncc_coarse_band": 0.17258504033088684
+   },
+   {
+    "face": 29,
+    "matched_face": 51,
+    "transform": 2,
+    "ncc_half_res_search": 0.4961933493614197,
+    "ncc_fine_band": 0.4501357078552246,
+    "ncc_coarse_band": 0.4831036627292633
+   },
+   {
+    "face": 31,
+    "matched_face": 42,
+    "transform": 4,
+    "ncc_half_res_search": 0.45827630162239075,
+    "ncc_fine_band": 0.43749183416366577,
+    "ncc_coarse_band": 0.5054044723510742
+   },
+   {
+    "face": 16,
+    "matched_face": 26,
+    "transform": 4,
+    "ncc_half_res_search": 0.4478206932544708,
+    "ncc_fine_band": 0.5019593834877014,
+    "ncc_coarse_band": 0.26248496770858765
+   },
+   {
+    "face": 42,
+    "matched_face": 25,
+    "transform": 7,
+    "ncc_half_res_search": 0.4163641333580017,
+    "ncc_fine_band": 0.412874698638916,
+    "ncc_coarse_band": 0.33943140506744385
+   },
+   {
+    "face": 25,
+    "matched_face": 42,
+    "transform": 7,
+    "ncc_half_res_search": 0.4062672257423401,
+    "ncc_fine_band": 0.3900815546512604,
+    "ncc_coarse_band": 0.31548675894737244
+   },
+   {
+    "face": 26,
+    "matched_face": 42,
+    "transform": 0,
+    "ncc_half_res_search": 0.3980494737625122,
+    "ncc_fine_band": 0.36698195338249207,
+    "ncc_coarse_band": 0.24383136630058289
+   },
+   {
+    "face": 20,
+    "matched_face": 44,
+    "transform": 0,
+    "ncc_half_res_search": 0.3936397135257721,
+    "ncc_fine_band": 0.42359933257102966,
+    "ncc_coarse_band": 0.34854623675346375
+   }
+  ],
+  "reading": "No patch or face matched above NCC 0.50; the source render's own unique faces reach 0.68 under the same search. The 0.4-0.5 matches are consistent with source library blocks being reused (about 1.4x reuse was unavoidable; the face 42 / face 25 pair visibly shares a dark micro-mark after contrast stretching, see _REVIEW_repeat_top_matches.jpg) and are not visible in the unstretched colour map; a planted copy degraded by noise 2x the patch std scores 0.44-0.46, so matches near 0.5 cannot be separated from a heavily degraded copy by this test alone."
+ },
+ "chiseled_groove_check": {
+  "method": "FFT peak (5x5 power-weighted centroid) of a 384 px window at each chiseled face centre in Color.png, band period 8-22 px; angle is the groove wave-vector angle in image coordinates (0 = vertical grooves)",
+  "source_pitch_in": 0.1989346378198072,
+  "atlas_pitch_in_mean": 0.19874682047349415,
+  "atlas_pitch_in_min": 0.19652863478909258,
+  "atlas_pitch_in_max": 0.20187825660728392,
+  "max_angle_error_deg": 1.197339286084386,
+  "mean_angle_error_deg": 0.5330889521904684,
+  "faces": [
+   {
+    "index": 3,
+    "assigned_wave_deg": 120,
+    "measured_wave_deg": 120.76358929081766,
+    "measured_pitch_px": 12.920208422866171,
+    "measured_pitch_in": 0.20187825660728392,
+    "peak_share_of_band_power": 0.33759950892830737
+   },
+   {
+    "index": 6,
+    "assigned_wave_deg": 120,
+    "measured_wave_deg": 119.66061529262788,
+    "measured_pitch_px": 12.716377247836313,
+    "measured_pitch_in": 0.1986933944974424,
+    "peak_share_of_band_power": 0.3597704921303176
+   },
+   {
+    "index": 8,
+    "assigned_wave_deg": 120,
+    "measured_wave_deg": 118.96696490033479,
+    "measured_pitch_px": 12.735991497757041,
+    "measured_pitch_in": 0.19899986715245377,
+    "peak_share_of_band_power": 0.36459235026092873
+   },
+   {
+    "index": 13,
+    "assigned_wave_deg": 0,
+    "measured_wave_deg": 179.91122382863517,
+    "measured_pitch_px": 12.719292388124058,
+    "measured_pitch_in": 0.19873894356443841,
+    "peak_share_of_band_power": 0.3313615737519019
+   },
+   {
+    "index": 18,
+    "assigned_wave_deg": 0,
+    "measured_wave_deg": 179.71452760340478,
+    "measured_pitch_px": 12.887628215030064,
+    "measured_pitch_in": 0.20136919085984475,
+    "peak_share_of_band_power": 0.3531898095961849
+   },
+   {
+    "index": 24,
+    "assigned_wave_deg": 120,
+    "measured_wave_deg": 118.80266071391561,
+    "measured_pitch_px": 12.577832626501925,
+    "measured_pitch_in": 0.19652863478909258,
+    "peak_share_of_band_power": 0.35707604013277977
+   },
+   {
+    "index": 27,
+    "assigned_wave_deg": 60,
+    "measured_wave_deg": 60.28487854582504,
+    "measured_pitch_px": 12.694275864676419,
+    "measured_pitch_in": 0.19834806038556904,
+    "peak_share_of_band_power": 0.35861903876346
+   },
+   {
+    "index": 30,
+    "assigned_wave_deg": 60,
+    "measured_wave_deg": 59.860570495937836,
+    "measured_pitch_px": 12.691579397704022,
+    "measured_pitch_in": 0.19830592808912534,
+    "peak_share_of_band_power": 0.3285712491899639
+   },
+   {
+    "index": 33,
+    "assigned_wave_deg": 120,
+    "measured_wave_deg": 119.34177531262989,
+    "measured_pitch_px": 12.690504894483269,
+    "measured_pitch_in": 0.19828913897630107,
+    "peak_share_of_band_power": 0.32952657001036934
+   },
+   {
+    "index": 37,
+    "assigned_wave_deg": 120,
+    "measured_wave_deg": 120.48786272630531,
+    "measured_pitch_px": 12.72689508160801,
+    "measured_pitch_in": 0.19885773565012516,
+    "peak_share_of_band_power": 0.3339780481413796
+   },
+   {
+    "index": 39,
+    "assigned_wave_deg": 0,
+    "measured_wave_deg": 179.76063094438675,
+    "measured_pitch_px": 12.728841049433749,
+    "measured_pitch_in": 0.19888814139740232,
+    "peak_share_of_band_power": 0.3349700050160226
+   },
+   {
+    "index": 50,
+    "assigned_wave_deg": 0,
+    "measured_wave_deg": 0.8982742564591646,
+    "measured_pitch_px": 12.601251656990707,
+    "measured_pitch_in": 0.1968945571404798,
+    "peak_share_of_band_power": 0.32794646401921396
+   },
+   {
+    "index": 52,
+    "assigned_wave_deg": 60,
+    "measured_wave_deg": 59.48547934905838,
+    "measured_pitch_px": 12.66667629093537,
+    "measured_pitch_in": 0.19791681704586517,
+    "peak_share_of_band_power": 0.33718497362776734
+   }
+  ]
+ },
+ "fidelity_band_std": {
+  "note": "Band-pass luminance std (difference of Gaussians, sigma 1,2,4,8,16 render px, then the residual to sigma 32); atlas measured at equivalent physical scale. Text as printed by t_contrast.py and t_life_contrast.py.",
+  "render_vs_atlas": [
+   "matte     render n=10  band std (DoG sigma 1,2,4,8,16 | resid to 32): [1.15 0.58 0.42 0.31 0.29 2.01]",
+   "matte     atlas  n=32                                              : [0.75 0.49 0.4  0.31 0.32 1.67]   ratio atlas/render [0.65 0.84 0.94 1.02 1.11 0.83]",
+   "raw       render n= 6  band std (DoG sigma 1,2,4,8,16 | resid to 32): [2.28 1.3  1.03 0.78 0.54 4.3 ]",
+   "raw       atlas  n=11                                              : [1.37 1.2  1.1  0.78 0.44 3.7 ]   ratio atlas/render [0.6  0.93 1.06 1.   0.83 0.86]",
+   "chiseled  render n= 7  band std (DoG sigma 1,2,4,8,16 | resid to 32): [3.88 3.25 1.56 0.75 0.43 8.03]",
+   "chiseled  atlas  n=13                                              : [3.27 2.99 1.39 0.63 0.29 7.16]   ratio atlas/render [0.84 0.92 0.89 0.84 0.67 0.89]"
+  ],
+  "lifestyle_vs_grazing_preview": [
+   "lifestyle approx px/in across the flats: 41.2",
+   "lifestyle chiseled  band std/mean (sigma 1-3, 3-9, 9-27 life px): [0.0802 0.0199 0.0092]",
+   "lifestyle raw       band std/mean (sigma 1-3, 3-9, 9-27 life px): [0.0466 0.0148 0.0186]",
+   "lifestyle raw2      band std/mean (sigma 1-3, 3-9, 9-27 life px): [0.0499 0.0138 0.0047]",
+   "lifestyle matte     band std/mean (sigma 1-3, 3-9, 9-27 life px): [0.0116 0.006  0.0041]",
+   "lifestyle matte2    band std/mean (sigma 1-3, 3-9, 9-27 life px): [0.0121 0.0058 0.0033]",
+   "preview   chiseled  band std/mean (same physical bands): [0.1687 0.0347 0.0066]",
+   "preview   raw       band std/mean (same physical bands): [0.114  0.0419 0.0079]",
+   "preview   matte     band std/mean (same physical bands): [0.0126 0.0042 0.0025]"
+  ]
+ },
+ "suggested_revit_bump_amount": {
+  "value": 100,
+  "scale": "whole number on the Revit editor scale (stored float x100)",
+  "basis": "AGENTS.md calibration for a full-range 16-bit dimensional map at 2.6 mm full scale with a 1.6 mm joint: 1 showed nothing, 50 joints only, 100 tile relief readable. Same scale and joint here. Not verified in Revit for this build (Revit is out of scope for the trial)."
+ },
+ "sample_size_in": [
+  70.148,
+  70.875
+ ],
+ "atlas_px": [
+  4489,
+  4536
+ ],
+ "px_per_in": 64.0,
+ "build_params": {
+  "PPI": 64.0,
+  "W": 4489,
+  "H": 4536,
+  "COLP": 561.125,
+  "ROWP": 648.0,
+  "FACE_R": 320.0,
+  "MOD_R": 324.0,
+  "FULL_MM": 2.6,
+  "PLANE_MM": 1.6,
+  "JOINT_RGB": [
+   218.0,
+   209.0,
+   195.0
+  ],
+  "K_MATTE_H": 0.006,
+  "K_RAW_H": 0.03,
+  "RAW_CLIP_MM": 1.0,
+  "CHIS_DEPTH_MM": 0.3,
+  "CHIS_M_MAX": 1.5,
+  "CHIS_M_MIN": 0.35,
+  "K_GRAIN_H": 0.02,
+  "K_RAW_COL": 1.15,
+  "K_GRAIN_COL": 1.1,
+  "K_GROOVE_COL": 0.95,
+  "RAMP_PX": 2.5,
+  "S_UP": 2.05835244697539,
+  "pitch_px": 12.73181682046766,
+  "rng_base": 20260929
+ }
+}
