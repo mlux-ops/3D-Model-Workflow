@@ -127,16 +127,17 @@ def good_report():
     box = S.overall_box(v)
     return {
         'stage': 'complete', 'revit_version': '2025', 'started_utc': '2099-01-01T00:00:00Z', 'spec_problems': [],
-        'build': {'planes': {'dimensions_created': ['glass', 'glass_eq', 'height', 'height_eq', 'plate_back',
-                                                   'plate_front', 'width', 'width_eq'], 'dimension_errors': []},
+        'build': {'planes': {'dimensions_created': list(S.DIMENSION_KEYS), 'dimension_errors': []},
                   'parts': {
             'plate_front': {'side_locks': [{'locked': True}] * 4},
-            'plate_back': {'side_locks': [{'locked': True}] * 4}},
+            'plate_back': {'side_locks': [{'locked': True}] * 4},
+            'cap_left': {'side_locks': [{'locked': True}] * 4},
+            'cap_right': {'side_locks': [{'locked': True}] * 4}},
             'purge': {'available': True, 'passes': [], 'remaining_unused': 0}},
         'family': {'reopened': True, 'category': 'Generic Models', 'always_vertical': 1, 'work_plane_based': 0,
                    'types': sorted(n for n, _ in S.TYPES), 'current_type': S.DEFAULT_TYPE,
                    'type_values': types, 'parameters': params,
-                   'reference_planes': sorted(S.SPEC_PLANES + S.EXTRA_PLANES + ['Center (Front/Back)']),
+                   'reference_planes': sorted(S.SPEC_PLANES + S.EXTRA_PLANES + S.SCREW_PLANES + ['Center (Front/Back)']),
                    'dimension_labels': dict(S.LABELLED_DIMENSIONS), 'equality_dimensions': S.EQ_DIMENSIONS,
                    'parts': parts, 'extrusion_count': 4, 'warnings': [],
                    'material': {'shading_color': list(S.MATERIAL['color']), 'surface_pattern_none': True,
@@ -242,6 +243,14 @@ def main():
             {'severity': 'Error', 'text': 'Constraints are not satisfied'}))
         tampered('coarse shows screw heads', lambda r: r['family']['parts']['cap_left']['visibility'].__setitem__(
             'coarse', True))
+        tampered('screw head drifted with the plate end (the 2026-10-02 native flex failure)', lambda r: [
+            row.__setitem__('segments', [((p[0] + 0.5, p[1], p[2]), (q[0] + 0.5, q[1], q[2])) for p, q in row['segments']])
+            for st in r['flex']['steps'] if st['parameter'] == 'Clamp_Width'
+            for row in st['rays'] if row['key'] == 'cap_left_x'])
+        tampered('a screw flat not locked', lambda r: r['build']['parts']['cap_right'].__setitem__(
+            'side_locks', [{'locked': True}] * 3 + [{'locked': False}]))
+        tampered('Cap_Spacing value from the bad dependent formula', lambda r: [
+            r['family']['type_values'][t].__setitem__('Cap_Spacing', 0.0625) for t in r['family']['type_values']])
         tampered('Cap_Diameter not formula-locked', lambda r: r['family']['parameters']['Cap_Diameter'].__setitem__(
             'formula', None))
         tampered('3/8 type wrong', lambda r: r['family']['type_values']['3-8 Glass'].__setitem__(

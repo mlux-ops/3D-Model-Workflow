@@ -36,15 +36,17 @@ def main():
 
     # elevations: origin at clamp centre
     for ox, title, screws in ((300, 'Room side (+Y, "Front" per task sheet) - plain', False),
-                              (1000, 'Shower side (-Y) - 2 screw heads per CRL rear view', True)):
+                              (1000, 'Shower side (-Y) - 2 screw heads (24-sided, 1/2 across flats), locked to Screw CL planes', True)):
         oy = 220
         panel(dr, ox - 250, oy - 100 - 10, title)
         rect(ox, oy, -w / 2, -h / 2, w / 2, h / 2, BRONZE)
         dr.line([ox, oy - 130, ox, oy + 130], fill=(200, 0, 0), width=1)       # Joint CL
         if screws:
             for cx in (-s, s):
-                dr.ellipse([ox + (cx - d / 2) * PX, oy - d / 2 * PX, ox + (cx + d / 2) * PX, oy + d / 2 * PX],
-                           fill=(140, 112, 84), outline=EDGE, width=2)
+                pts = [(ox + p[0] * PX, oy - p[2] * PX) for p in S.cap_polygon(cx, 0.0, v)]
+                dr.polygon(pts, fill=(140, 112, 84), outline=EDGE)
+            for name, x in (('Screw L CL', -s), ('Screw R CL', s)):
+                dr.line([ox + x * PX, oy - 130, ox + x * PX, oy + 130], fill=(0, 0, 200), width=1)
         dr.text((ox - 60, oy + 110), '%.3g x %.3g in' % (w, h), fill=(0, 0, 0))
     # plan section at Z = 0 (Glass Mid), plan y up = +Y (room)
     ox, oy = 750, 700

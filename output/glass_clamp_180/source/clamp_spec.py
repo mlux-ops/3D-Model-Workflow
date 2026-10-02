@@ -9,6 +9,8 @@ Units are inches unless a name says otherwise. Every value carries its source
 class; only VERIFIED values may be described as manufacturer data.
 """
 
+import math
+
 FAMILY_NAME = 'SHB_Glass Clamp 180 Square'
 RFA_NAME = FAMILY_NAME + '.rfa'
 CATALOG_NAME = FAMILY_NAME + '.txt'
@@ -35,18 +37,20 @@ PARAMETERS = [
     ('Hole_Edge_Distance', 'length', 1.59375, '1.59375"', VERIFIED,
      'CRL template: hole centre 1-19/32 in (41 mm) from glass edge. Formula-locked: screw positions are fixed.'),
     ('Cap_Diameter', 'length', 0.5, '0.5"', ASSUMED,
-     'Screw head; CRL rear isometric scales about 0.46 in. Task sheet assumed 3/4. Formula-locked: the Revit '
-     'API cannot constrain a family extrusion sketch, so the head diameter is fixed.'),
+     'Screw head across flats; CRL rear isometric scales about 0.46 in. Task sheet assumed 3/4. Formula-locked '
+     'constant; labels the head reference-plane dimensions.'),
     ('Cap_Height', 'length', 0.0625, None, ASSUMED,
      'CRL draws the heads flush; 1/16 in proud is a visual reveal only. Task sheet assumed 1/8.'),
-    ('Cap_Spacing', 'length', 3.25, '2 * Hole_Edge_Distance + Joint_Gap', DERIVED,
-     'Screw centres = glass-hole centres. Task sheet formula Clamp_Width - 2 in gave 3 in. Informational: '
-     'the screw positions are fixed.'),
+    ('Cap_Spacing', 'length', 3.25, '3.25"', DERIVED,
+     'Screw centres = glass-hole centres = 2 x Hole_Edge_Distance + Joint_Gap. Task sheet formula '
+     'Clamp_Width - 2 in gave 3 in. Constant formula (a dependent formula evaluated to 0.0625 natively, '
+     '2026-10-02); labels the dimension that places both screw heads.'),
     ('Clamp_Material', 'material', None, None, PROJECT, 'Default material below.'),
     ('Model Accuracy Notes', 'text', None, None, None, 'See ACCURACY_NOTE.'),
 ]
 LENGTH_DEFAULTS = dict((p[0], p[2]) for p in PARAMETERS if p[1] == 'length')
-# Parameters that only document fixed geometry (formula-locked in the family; editing them moves nothing)
+# Constant-formula parameters (no formula depends on another: dependent formulas evaluated wrongly natively).
+# Joint_Gap and Hole_Edge_Distance only document CRL data; Cap_Spacing and Cap_Diameter label dimensions.
 LOCKED_PARAMETERS = ('Joint_Gap', 'Hole_Edge_Distance', 'Cap_Diameter', 'Cap_Spacing')
 FORMULAS = dict((p[0], p[3]) for p in PARAMETERS if p[3])
 
@@ -93,10 +97,20 @@ CAP_SIDE = 'back'   # CRL rear view carries the screws; front (+Y, room side) is
 SPEC_PLANES = ['Joint CL', 'Glass Mid', 'Glass Face Front', 'Glass Face Back',
                'Plate Outer Front', 'Plate Outer Back']
 EXTRA_PLANES = ['Clamp Left', 'Clamp Right', 'Clamp Top', 'Clamp Bottom']
+# Screw-head planes: centre lines EQ about Joint CL (Cap_Spacing); flats EQ about each centre line and about
+# Glass Mid (Cap_Diameter). None of them moves when Glass_Thickness, Clamp_Width or Plate_Thickness flex.
+SCREW_PLANES = ['Screw L CL', 'Screw R CL', 'Screw L Left', 'Screw L Right', 'Screw R Left', 'Screw R Right',
+                'Screw Top', 'Screw Bottom']
+CAP_SIDES = 24               # head prism: faces normal to +-X and +-Z exist because CAP_SIDES % 4 == 0
 # Labelled dimensions expected in the saved family: label -> count
-LABELLED_DIMENSIONS = {'Glass_Thickness': 1, 'Plate_Thickness': 2, 'Clamp_Width': 1, 'Clamp_Height': 1}
-EQ_DIMENSIONS = 3            # glass faces about Y=0, clamp sides about Joint CL, top/bottom about Glass Mid
+LABELLED_DIMENSIONS = {'Glass_Thickness': 1, 'Plate_Thickness': 2, 'Clamp_Width': 1, 'Clamp_Height': 1,
+                       'Cap_Spacing': 1, 'Cap_Diameter': 3}
+EQ_DIMENSIONS = 7            # glass, clamp sides, clamp top/bottom, screw centres, 2 x screw flats X, screw flats Z
+DIMENSION_KEYS = ['glass', 'glass_eq', 'height', 'height_eq', 'plate_back', 'plate_front', 'screw_l_dia',
+                  'screw_l_eq', 'screw_r_dia', 'screw_r_eq', 'screw_spacing', 'screw_spacing_eq', 'screw_z_dia',
+                  'screw_z_eq', 'width', 'width_eq']
 MIN_LOCKED_ALIGNMENTS = 8    # 4 side faces per plate
+MIN_CAP_LOCKS = 8            # 4 flats (+-X, +-Z) per screw head
 
 FLEX = [('Glass_Thickness', [0.375, 0.5]),
         ('Clamp_Width', [4.0, 6.0]),
@@ -105,6 +119,18 @@ FLEX = [('Glass_Thickness', [0.375, 0.5]),
 DIM_TOL = 1e-3
 MAX_RFA_BYTES = 500 * 1024
 MIN_FAMILY_IMAGES = 4
+
+
+def cap_polygon(cx, y, v):
+    """Screw-head prism profile in family inches: regular CAP_SIDES-gon, apothem = Cap_Diameter / 2, rotated so
+    that faces are normal to +-X and +-Z (edge midpoints at 0, 90, 180, 270 degrees)."""
+    a = v['Cap_Diameter'] / 2.0
+    r = a / math.cos(math.pi / CAP_SIDES)
+    pts = []
+    for k in range(CAP_SIDES):
+        t = (k + 0.5) * 2.0 * math.pi / CAP_SIDES
+        pts.append((cx + r * math.cos(t), y, r * math.sin(t)))
+    return pts
 
 
 def resolve(values=None):
@@ -231,4 +257,11 @@ def check_spec():
                 problems.append('screw head crosses the joint at diameter %r' % dia)
     if v['Cap_Height'] < 1.0 / 32.0:
         problems.append('Cap_Height below Revit short-curve comfort (1/32 in)')
+    if CAP_SIDES % 4:
+        problems.append('CAP_SIDES must be a multiple of 4 so the head has +-X and +-Z flats')
+    edge = v['Cap_Diameter'] * math.tan(math.pi / CAP_SIDES)
+    if edge < 0.035:
+        problems.append('screw-head prism edge %.4f in is under 0.035 in (Revit short-curve margin)' % edge)
+    if abs(v['Cap_Spacing'] - (2.0 * v['Hole_Edge_Distance'] + v['Joint_Gap'])) > 1e-9:
+        problems.append('Cap_Spacing constant disagrees with 2 x Hole_Edge_Distance + Joint_Gap')
     return problems

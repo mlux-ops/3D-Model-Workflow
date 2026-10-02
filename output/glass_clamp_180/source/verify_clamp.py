@@ -16,6 +16,7 @@ A pass here is TECHNICAL only; the visual review is separate and no script award
 import datetime
 import json
 import os
+import re
 import sys
 
 sys.dont_write_bytecode = True
@@ -116,11 +117,14 @@ def check(rep, run_dir=RUN_DIR, run_start=RUN_START):
         if row.get('instance') is not False:
             add('parameter %s is not a type parameter' % name)
         got = (row.get('formula') or '').replace(' ', '')
-        if name in S.LOCKED_PARAMETERS and name != 'Cap_Spacing':
-            if not got:
-                add('parameter %s is not formula-locked' % name)      # constants: Revit may reformat the text
-        elif got != (formula or '').replace(' ', ''):
-            add('parameter %s formula %r, expected %r' % (name, row.get('formula'), formula))
+        if formula and not got:
+            add('parameter %s is not formula-locked (expected %r)' % (name, formula))
+        elif not formula and got:
+            add('parameter %s has an unexpected formula %r' % (name, row.get('formula')))
+        elif formula and re.search(r'[A-Za-z_]', got.replace('"', '').replace("'", '')):
+            # constants only: a parameter name here means a dependent formula, which evaluated wrongly natively
+            add('parameter %s formula %r references another parameter; expected a constant' % (name, row.get('formula')))
+        # constants only: the value check per type below proves the formula; Revit may reformat the text
     for type_name, glass in S.TYPES:
         values = (fam.get('type_values') or {}).get(type_name) or {}
         expected = S.resolve({'Glass_Thickness': glass})
@@ -137,7 +141,7 @@ def check(rep, run_dir=RUN_DIR, run_start=RUN_START):
             add('type %s: Model Accuracy Notes differs' % type_name)
 
     # constraint structure
-    for name in S.SPEC_PLANES + S.EXTRA_PLANES:
+    for name in S.SPEC_PLANES + S.EXTRA_PLANES + S.SCREW_PLANES:
         if name not in (fam.get('reference_planes') or []):
             add('reference plane %r missing' % name)
     labels = fam.get('dimension_labels') or {}
@@ -147,7 +151,7 @@ def check(rep, run_dir=RUN_DIR, run_start=RUN_START):
     if (fam.get('equality_dimensions') or 0) < S.EQ_DIMENSIONS:
         add('EQ dimensions %r < %d' % (fam.get('equality_dimensions'), S.EQ_DIMENSIONS))
     planes_rec = build.get('planes') or {}
-    expected_dims = ['glass', 'glass_eq', 'height', 'height_eq', 'plate_back', 'plate_front', 'width', 'width_eq']
+    expected_dims = S.DIMENSION_KEYS
     if sorted(planes_rec.get('dimensions_created') or []) != expected_dims:
         add('dimensions created %r, expected %r' % (sorted(planes_rec.get('dimensions_created') or []), expected_dims))
     for item in planes_rec.get('dimension_errors') or []:
@@ -160,6 +164,10 @@ def check(rep, run_dir=RUN_DIR, run_start=RUN_START):
                  for r in (parts_build.get(k) or {}).get('side_locks', []) if r.get('locked') is True)
     if locked < S.MIN_LOCKED_ALIGNMENTS:
         add('plate side faces locked: %d of %d' % (locked, S.MIN_LOCKED_ALIGNMENTS))
+    cap_locks = sum(1 for k in ('cap_left', 'cap_right')
+                    for r in (parts_build.get(k) or {}).get('side_locks', []) if r.get('locked') is True)
+    if cap_locks < S.MIN_CAP_LOCKS:
+        add('screw-head flats locked: %d of %d' % (cap_locks, S.MIN_CAP_LOCKS))
 
     # parts
     parts = fam.get('parts') or {}

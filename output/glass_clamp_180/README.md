@@ -64,7 +64,7 @@ Revit -> pyRevit -> **Reload** -> **SHB** tab -> **Build Clamp 180**, then `run_
 | Template / category | `Generic Model.rft` (imperial, non-hosted) / Generic Models |
 | Settings | Always Vertical on · Work Plane-Based off · origin = joint centre, mid-height · +Y = room side |
 | Types | `1-2 Glass` (default, Belmont IFC Note 45) · `3-8 Glass`; catalog `SHB_Glass Clamp 180 Square.txt` |
-| Solids | 4 extrusions: front plate, back plate, 2 screw heads (back) |
+| Solids | 4 extrusions: front plate, back plate, 2 screw heads (back; 24-sided prisms, 1/2" across flats) |
 | Subcategories | `Clamp Plate` · `Clamp Cap` |
 | Material | type parameter `Clamp_Material` = `Vibrant Brushed Bronze` (finish-DB name), shading RGB 110/86/62, no surface pattern |
 | Visibility | Coarse = plates only; Medium/Fine = plates + heads; all view orientations on |
@@ -78,11 +78,11 @@ Revit -> pyRevit -> **Reload** -> **SHB** tab -> **Build Clamp 180**, then `run_
 | Plate_Thickness | 1/8" | — | ASSUMED |
 | Clamp_Width | 5" | — | CRL |
 | Clamp_Height | 2" | — | CRL |
-| Joint_Gap | 1/16" | `0.0625"` (locked) | CRL template |
-| Hole_Edge_Distance | 1-19/32" | `1.59375"` (locked) | CRL template |
-| Cap_Diameter | 1/2" | `0.5"` (locked) | ASSUMED |
+| Joint_Gap | 1/16" | `0.0625"` (constant, documents CRL data) | CRL template |
+| Hole_Edge_Distance | 1-19/32" | `1.59375"` (constant, documents CRL data) | CRL template |
+| Cap_Diameter | 1/2" | `0.5"` (constant; labels the head-flat dimensions) | ASSUMED |
 | Cap_Height | 1/16" | — (drives head depth) | ASSUMED |
-| Cap_Spacing | 3-1/4" | `2 * Hole_Edge_Distance + Joint_Gap` (informational) | DERIVED |
+| Cap_Spacing | 3-1/4" | `3.25"` (constant = 2 x 1-19/32 + 1/16; labels the screw-centre dimension) | DERIVED |
 | Clamp_Material | Vibrant Brushed Bronze | — | PROJECT |
 
 ### Constraints
@@ -94,13 +94,17 @@ Revit -> pyRevit -> **Reload** -> **SHB** tab -> **Build Clamp 180**, then `run_
 | Plate Outer Front / Back | dimension from glass face labelled `Plate_Thickness` |
 | Clamp Left / Right | EQ about Joint CL + `Clamp_Width` |
 | Clamp Top / Bottom | EQ about Glass Mid + `Clamp_Height` |
+| Screw L CL / Screw R CL | EQ about Joint CL + `Cap_Spacing` |
+| Screw L Left / Right, Screw R Left / Right | EQ about each screw CL + `Cap_Diameter` |
+| Screw Top / Bottom | EQ about Glass Mid + `Cap_Diameter` |
 
-Plates: sketched on the glass-face planes, depth `Plate_Thickness`, four side faces aligned and locked. Screw heads: round extrusions sketched on `Plate Outer Back` (they follow the glass and plate position), depth bound to `Cap_Height`. **Their diameter and position are fixed, not parametric:** the Revit API cannot edit a family extrusion's sketch (`SketchEditScope` is project-only, native run 2026-10-02), so `Joint_Gap`, `Hole_Edge_Distance`, `Cap_Diameter` and `Cap_Spacing` are formula-locked and only document the fixed geometry. This departs from the task sheet ("lock centers to Cap_Spacing"). Flexing Glass_Thickness, Clamp_Width and Plate_Thickness moves nothing that should stay put: the screws are independent of the clamp width, as on the real clamp.
+Plates: sketched on the glass-face planes, depth `Plate_Thickness`, four side faces aligned and locked. Screw heads: 24-sided prisms (round to the eye at 1/2"; FBX tessellates a cylinder the same way) sketched on `Plate Outer Back`, depth `Cap_Height`, their +-X and +-Z flats aligned and locked to the screw planes, the same operation as the plates. Moving `Cap_Spacing` moves both heads; `Glass_Thickness`, `Clamp_Width` and `Plate_Thickness` do not move them sideways (correct: the screws sit in the glass holes). All formula parameters are constants: a dependent formula (`2 * Hole_Edge_Distance + Joint_Gap`) evaluated to 1/16" natively on 2026-10-02.
 
 ## Native gates (`validation.json` → `gates`; re-derived by `verify_clamp.py`)
 
 | Gate | Measured how |
 |---|---|
+| `screw_heads_locked` | 8 locked flats (4 per head) |
 | `fresh_rfa_reopen_category`, `always_vertical_on_work_plane_off` | save → close → reopen; family parameters |
 | `types_present`, `type_parameters` | reopened types, formulas, every value per type, identity text |
 | `build_steps_clean`, `reference_planes_named`, `labelled_dimensions`, `plate_sides_locked` | no failed build step, 8 dimensions created; plane names; dimension labels + EQ count; 8 locked face alignments |
@@ -118,12 +122,13 @@ Plates: sketched on the glass-face planes, depth `Plate_Thickness`, four side fa
 
 | Check | Result |
 |---|---|
+| `source/selftest_builder_logic.py --mutations` | the REAL `reference_planes`, `make_plate`, `make_cap`, `lock_sides`, `dimension` run against a geometric stand-in of the Revit API that enforces edge-on planes, perpendicular dimension lines, face-on-plane alignments, closed profiles and the short-curve tolerance: 19 planes, 16 dimensions, 16 locked faces PASS; 10 of 10 deliberate defects caught (including the run-1 code without regenerate) |
 | `source/selftest_offline.py` | analytic clamp through the same 12 part rays, 6 flex steps, 3 project rays → verifier PASS; every tampered report rejected |
 | `source/preview_offline.py` → [preview/analytic_preview.png](preview/analytic_preview.png) | room face plain, 2 heads at ±1-5/8", plan section with 1/16" joint |
 | `run_clamp.ps1` | PowerShell 7.4.6 parser 0 errors; preflight on Linux → BLOCKED exit 2 |
 | `build_clamp.py` | CPython `py_compile` clean; Py2-safe syntax. **Not executed against Revit.** |
 
-Native runs so far (2026-10-02, `MAXSPC`, Revit 2025.2): proven to run without error: discovery, family creation, parameters/types/formulas, material and appearance, subcategories, ten reference planes, eight dimensions (after the regenerate / Strong Reference fix), both plates and both screw heads including `FamilyElementVisibility`. Still unproven: the plates' side-face `NewAlignment` locks, `Document.GetUnusedElements` purge, `SaveAsOptions.Compact`, reopen/measure, project placement, flex. Each is recorded in `validation.json`; a failure there fails its gate, not silently.
+Native runs so far (2026-10-02, `MAXSPC`, Revit 2025.2). Run 3 wrote the RFA (483 KB) and passed 20 of 22 gates: planes, dimensions, plate face locks, material, subcategories, visibility, reopen, project load/place/type switch, detail levels, material substitution, purge, compact save, zero warnings, exports. It failed only on the `Cap_Spacing` value (dependent formula) and on free screw heads drifting with the plate ends in the width flex; both are fixed in the current builder, which uses no Revit API member that did not already run on that PC.
 
 ## After a technical pass
 

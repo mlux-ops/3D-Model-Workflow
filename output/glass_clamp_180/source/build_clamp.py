@@ -565,6 +565,36 @@ def reference_planes(doc, plan, front, v, record):
     dims['height'] = dimension(doc, front, (3.8, 0, -1.5), (3.8, 0, 1.5),
                                [P['Clamp Bottom'], P['Clamp Top']], 'height', record,
                                label=fm.get_Parameter('Clamp_Height'))
+
+    # screw heads: centre lines EQ about Joint CL at Cap_Spacing; flats EQ about each centre line and about
+    # Glass Mid at Cap_Diameter. Same plane and dimension calls as above (proven natively 2026-10-02).
+    s, d = v['Cap_Offset'], v['Cap_Diameter']
+    for name, x in (('Screw L CL', -s), ('Screw R CL', s), ('Screw L Left', -s - d / 2.0),
+                    ('Screw L Right', -s + d / 2.0), ('Screw R Left', s - d / 2.0), ('Screw R Right', s + d / 2.0)):
+        planes[name] = new_plane(doc, plan, name, (x, -3, 0), (x, 3, 0), Z, None, record)
+    for name, z in (('Screw Top', d / 2.0), ('Screw Bottom', -d / 2.0)):
+        planes[name] = new_plane(doc, front, name, (-4, 0, z), (4, 0, z), Y, None, record)
+    doc.Regenerate()
+    dims['screw_spacing_eq'] = dimension(doc, front, (-3, 0, -1.6), (3, 0, -1.6),
+                                         [P['Screw L CL'], P['Joint CL'], P['Screw R CL']], 'screw_spacing_eq',
+                                         record, equal=True)
+    dims['screw_spacing'] = dimension(doc, front, (-3, 0, -2.2), (3, 0, -2.2),
+                                      [P['Screw L CL'], P['Screw R CL']], 'screw_spacing', record,
+                                      label=fm.get_Parameter('Cap_Spacing'))
+    for side in ('L', 'R'):
+        key = 'screw_%s' % side.lower()
+        dims[key + '_eq'] = dimension(doc, front, (-3, 0, -0.9), (3, 0, -0.9),
+                                      [P['Screw %s Left' % side], P['Screw %s CL' % side], P['Screw %s Right' % side]],
+                                      key + '_eq', record, equal=True)
+        dims[key + '_dia'] = dimension(doc, front, (-3, 0, -1.25), (3, 0, -1.25),
+                                       [P['Screw %s Left' % side], P['Screw %s Right' % side]], key + '_dia', record,
+                                       label=fm.get_Parameter('Cap_Diameter'))
+    dims['screw_z_eq'] = dimension(doc, front, (-3.2, 0, -0.8), (-3.2, 0, 0.8),
+                                   [P['Screw Bottom'], P['Glass Mid'], P['Screw Top']], 'screw_z_eq', record,
+                                   equal=True)
+    dims['screw_z_dia'] = dimension(doc, front, (-3.8, 0, -0.8), (-3.8, 0, 0.8),
+                                    [P['Screw Bottom'], P['Screw Top']], 'screw_z_dia', record,
+                                    label=fm.get_Parameter('Cap_Diameter'))
     dims = dict((k, d) for k, d in dims.items() if d is not None)
     record['dimensions_created'] = sorted(dims.keys())
     return planes
@@ -582,14 +612,11 @@ def rectangle(y, w, h):
     return profile
 
 
-def circle(centre, radius, normal, halves):
-    """Full circle, or two semicircles (the P01 native precedent) when halves is True."""
-    x_axis = DB.XYZ.BasisX
-    y_axis = normal.CrossProduct(x_axis).Normalize()
+def polygon_profile(points):
+    """Closed loop of straight edges through inch points (prism profile)."""
     loop = DB.CurveArray()
-    spans = ((0.0, math.pi), (math.pi, 2 * math.pi)) if halves else ((0.0, 2 * math.pi),)
-    for start, end in spans:
-        loop.Append(DB.Arc.Create(centre, ft(radius), start, end, x_axis, y_axis))
+    for i in range(len(points)):
+        loop.Append(DB.Line.CreateBound(xyz(*points[i]), xyz(*points[(i + 1) % len(points)])))
     profile = DB.CurveArrArray()
     profile.Append(loop)
     return profile
@@ -620,16 +647,19 @@ def planar_faces(element):
     return faces
 
 
-def lock_plate_sides(doc, extrusion, views, planes, record):
-    """Align and lock the four side faces of a plate to the clamp-edge planes.
-    views: elevation that sees this plate first, the opposite elevation as fallback."""
+PLATE_TARGETS = {'+X': 'Clamp Right', '-X': 'Clamp Left', '+Z': 'Clamp Top', '-Z': 'Clamp Bottom'}
+
+
+def lock_sides(doc, extrusion, views, planes, record, targets):
+    """Align and lock the faces normal to +-X and +-Z to the planes named in targets.
+    views: elevation that sees this element first, the opposite elevation as fallback."""
     locks = []
     for face in planar_faces(extrusion):
         n, o = face.FaceNormal, face.Origin
         if abs(n.X) > 0.99:
-            target = 'Clamp Right' if n.X > 0 else 'Clamp Left'
+            target = targets['+X'] if n.X > 0 else targets['-X']
         elif abs(n.Z) > 0.99:
-            target = 'Clamp Top' if n.Z > 0 else 'Clamp Bottom'
+            target = targets['+Z'] if n.Z > 0 else targets['-Z']
         else:
             continue
         row = {'face_normal': vec(n), 'face_origin_in': inches(o), 'plane': target}
@@ -660,33 +690,30 @@ def make_plate(doc, key, face_plane, v, views, planes, params, subcats, record):
         extrusion.get_Parameter(DB.BuiltInParameter.EXTRUSION_END_PARAM), params['Plate_Thickness'])
     bind_common(doc, extrusion, subcats['Clamp Plate'], params['Clamp_Material'], True)
     doc.Regenerate()
-    lock_plate_sides(doc, extrusion, views, planes, rec)
+    lock_sides(doc, extrusion, views, planes, rec, PLATE_TARGETS)
     rec['id'] = str(extrusion.Id.Value)
     return extrusion
 
 
-def make_cap(doc, key, sign, outer_plane, v, params, subcats, record):
+def make_cap(doc, key, sign, outer_plane, v, views, planes, params, subcats, record):
+    """Screw head: CAP_SIDES-sided prism on Plate Outer Back (follows the plate in Y), depth = Cap_Height,
+    its +-X and +-Z flats locked to the screw planes. A free head drifts with the plate ends in a flex
+    (native run 2026-10-02), so it must be locked; a cylinder has no flat to lock, hence the prism."""
     rec = record.setdefault(key, {})
     sketch = DB.SketchPlane.Create(doc, outer_plane.Id)
-    normal = sketch.GetPlane().Normal
     rec['sketch_plane'] = outer_plane.Name
-    rec['sketch_normal'] = vec(normal)
+    rec['sketch_normal'] = vec(sketch.GetPlane().Normal)
     y = outer_plane.GetPlane().Origin.Y * 12.0
-    centre = xyz(sign * v['Cap_Offset'], y, 0.0)
-    extrusion = None
-    for label, halves in (('full circle', False), ('two semicircles', True)):
-        try:
-            profile = circle(centre, v['Cap_Diameter'] / 2.0, normal, halves)
-            extrusion = doc.FamilyCreate.NewExtrusion(True, profile, sketch, ft(v['Cap_Height']))
-            rec['profile'] = label
-            break
-        except Exception:
-            rec.setdefault('profile_errors', []).append(label + ': ' + traceback.format_exc().splitlines()[-1])
-    if extrusion is None:
-        raise RuntimeError('Screw head extrusion failed for ' + key)
+    side = 'L' if sign < 0 else 'R'
+    profile = polygon_profile(S.cap_polygon(sign * v['Cap_Offset'], y, v))
+    extrusion = doc.FamilyCreate.NewExtrusion(True, profile, sketch, ft(v['Cap_Height']))
+    rec['profile'] = '%d-sided prism, %.3f in across flats' % (S.CAP_SIDES, v['Cap_Diameter'])
     doc.FamilyManager.AssociateElementParameterToFamilyParameter(
         extrusion.get_Parameter(DB.BuiltInParameter.EXTRUSION_END_PARAM), params['Cap_Height'])
     bind_common(doc, extrusion, subcats['Clamp Cap'], params['Clamp_Material'], False)
+    doc.Regenerate()
+    lock_sides(doc, extrusion, views, planes, rec,
+               {'+X': 'Screw %s Right' % side, '-X': 'Screw %s Left' % side, '+Z': 'Screw Top', '-Z': 'Screw Bottom'})
     rec['id'] = str(extrusion.Id.Value)
     return extrusion
 
@@ -837,8 +864,8 @@ def build(app):
             param = fm.get_Parameter(getattr(DB.BuiltInParameter, bip_name))
             if param is not None:
                 fm.Set(param, value)
-    for name, formula in S.FORMULAS.items():
-        fm.SetFormula(params[name], formula)
+    for name in sorted(S.FORMULAS):        # all constants: no formula depends on another (see clamp_spec)
+        fm.SetFormula(params[name], S.FORMULAS[name])
     fm.CurrentType = next(t for t in fm.Types if t.Name == S.DEFAULT_TYPE)
 
     subcats = {}
@@ -856,10 +883,10 @@ def build(app):
                                                planes, params, subcats, part_rec)),
             ('plate_back', lambda: make_plate(doc, 'plate_back', planes['Glass Face Back'], v, [front, back],
                                               planes, params, subcats, part_rec)),
-            ('cap_left', lambda: make_cap(doc, 'cap_left', -1.0, planes['Plate Outer Back'], v, params, subcats,
-                                          part_rec)),
-            ('cap_right', lambda: make_cap(doc, 'cap_right', 1.0, planes['Plate Outer Back'], v, params, subcats,
-                                           part_rec))):
+            ('cap_left', lambda: make_cap(doc, 'cap_left', -1.0, planes['Plate Outer Back'], v, [front, back],
+                                          planes, params, subcats, part_rec)),
+            ('cap_right', lambda: make_cap(doc, 'cap_right', 1.0, planes['Plate Outer Back'], v, [front, back],
+                                           planes, params, subcats, part_rec))):
         element = step('create ' + key, make)
         if element is not None:
             elements[key] = element
@@ -878,18 +905,6 @@ def build(app):
     views = step('review views', lambda: family_views(doc)) or []
     TX.Commit()
     TX = None
-    step('purge unused', lambda: purge_unused(doc, rec))
-    checkpoint('built, saving')
-
-    save = DB.SaveAsOptions()
-    save.OverwriteExistingFile = True
-    save.MaximumBackups = 1
-    save.Compact = True
-    if len(views) > 1:
-        save.PreviewViewId = views[1].Id
-    rfa_path = out_path(S.RFA_NAME)
-    doc.SaveAs(rfa_path, save)
-    REPORT['rfa_path'] = rfa_path
     try:
         if not views:
             raise RuntimeError('no review views were created')
@@ -898,6 +913,24 @@ def build(app):
     except Exception:
         REPORT['family_export_error'] = traceback.format_exc()
     REPORT['family_images'] = list_images(IMAGE_PREFIX)
+    # the review views are builder scaffolding: export first, then delete them so the RFA stays small
+    # (483,328 bytes of a 500 KB limit on 2026-10-02)
+    TX, _ = captured_transaction(doc, 'Delete review views')
+    TX.Start()
+    for view in views:
+        step('delete review view', lambda view=view: doc.Delete(view.Id))
+    TX.Commit()
+    TX = None
+    step('purge unused', lambda: purge_unused(doc, rec))
+    checkpoint('built, saving')
+
+    save = DB.SaveAsOptions()
+    save.OverwriteExistingFile = True
+    save.MaximumBackups = 1
+    save.Compact = True
+    rfa_path = out_path(S.RFA_NAME)
+    doc.SaveAs(rfa_path, save)
+    REPORT['rfa_path'] = rfa_path
     DOCS.remove(doc)
     doc.Close(False)
     return rfa_path
@@ -1174,23 +1207,29 @@ def gates():
     result = {
         'revit_2025_host': str(REPORT.get('revit_version', '')).startswith('2025'),
         'build_steps_clean': not REPORT.get('build_errors') and not build_rec.get('planes', {}).get('dimension_errors')
-            and len(build_rec.get('planes', {}).get('dimensions_created', [])) == 8,
+            and sorted(build_rec.get('planes', {}).get('dimensions_created', [])) == S.DIMENSION_KEYS,
         'spec_self_check': not REPORT.get('spec_problems'),
         'fresh_rfa_reopen_category': bool(fam.get('reopened')) and fam.get('category') == 'Generic Models',
         'always_vertical_on_work_plane_off': fam.get('always_vertical') == 1 and fam.get('work_plane_based') == 0,
         'types_present': sorted(n for n, _ in S.TYPES) == fam.get('types')
             and fam.get('current_type') == S.DEFAULT_TYPE,
         'type_parameters': all(params.get(p[0], {}).get('instance') is False for p in S.PARAMETERS)
-            and all(params.get(n, {}).get('formula') == f for n, f in S.FORMULAS.items())
+            and all(params.get(n, {}).get('formula') and not any(
+                c.isalpha() or c == '_' for c in params[n]['formula'].replace('"', '').replace("'", ''))
+                for n in S.FORMULAS)
             and all(abs((types.get(t, {}).get('Glass_Thickness') or -1) - g) < 1e-6 for t, g in S.TYPES)
             and all(types.get(t, {}).get('Clamp_Material') == S.MATERIAL['name'] for t, _ in S.TYPES)
             and all(types.get(t, {}).get(b) == val for t, _ in S.TYPES for b, val in S.IDENTITY.items()),
-        'reference_planes_named': all(n in fam.get('reference_planes', []) for n in S.SPEC_PLANES + S.EXTRA_PLANES),
+        'reference_planes_named': all(n in fam.get('reference_planes', [])
+                                      for n in S.SPEC_PLANES + S.EXTRA_PLANES + S.SCREW_PLANES),
         'labelled_dimensions': all(labels.get(k, 0) >= c for k, c in S.LABELLED_DIMENSIONS.items())
             and fam.get('equality_dimensions', 0) >= S.EQ_DIMENSIONS,
         'plate_sides_locked': sum(1 for k in ('plate_front', 'plate_back')
                                   for r in build_rec.get('parts', {}).get(k, {}).get('side_locks', [])
                                   if r.get('locked')) >= S.MIN_LOCKED_ALIGNMENTS,
+        'screw_heads_locked': sum(1 for k in ('cap_left', 'cap_right')
+                                  for r in build_rec.get('parts', {}).get(k, {}).get('side_locks', [])
+                                  if r.get('locked')) >= S.MIN_CAP_LOCKS,
         'parts_separate_bound': len(parts) == len(S.PARTS) and all(
             parts[k].get('found') and parts[k].get('subcategory') == sub
             and parts[k].get('material_parameter') == 'Clamp_Material' and parts[k].get('solids') == 1
