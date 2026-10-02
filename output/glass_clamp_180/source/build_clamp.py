@@ -147,7 +147,7 @@ def find_template(app):
     info = {'roots_searched': ordered, 'family_template_path_reported': reported}
     env = os.environ.get('CLAMP_TEMPLATE')
     if env and os.path.isfile(env):
-        info.update({'path': env, 'source': 'CLAMP_TEMPLATE'})
+        info.update({'path': env, 'source': 'CLAMP_TEMPLATE', 'imperial': 'Imperial' in env})
         return info
     hits = []
     for root in ordered:
@@ -406,16 +406,98 @@ def new_plane(doc, view, name, bubble, free, cut, want_normal, record):
     return plane
 
 
-def dimension(doc, view, p0, p1, refs, label=None, equal=False):
-    array = DB.ReferenceArray()
-    for ref in refs:
-        array.Append(ref)
-    dim = doc.FamilyCreate.NewDimension(view, DB.Line.CreateBound(xyz(*p0), xyz(*p1)), array)
-    if equal:
-        dim.AreSegmentsEqual = True
-    if label is not None:
-        dim.FamilyLabel = label
-    return dim
+def step(label, fn):
+    """Run one build step. A failure is recorded in REPORT['build_errors'] and the build goes on, so a
+    single run reports every failing step instead of only the first (a native run costs a trip to Revit)."""
+    try:
+        return fn()
+    except Exception:
+        REPORT.setdefault('build_errors', []).append({'step': label, 'error': traceback.format_exc()})
+        return None
+
+
+def plane_reference(plane):
+    """Fresh Reference for a reference plane plus what Revit says about it."""
+    info = {'plane': plane.Name}
+    ref = plane.GetReference()
+    info['reference_is_none'] = ref is None
+    if ref is not None:
+        try:
+            info['reference_type'] = str(ref.ElementReferenceType)
+        except Exception as exc:
+            info['reference_type'] = 'unavailable: %s' % exc
+    try:
+        param = plane.get_Parameter(DB.BuiltInParameter.ELEM_REFERENCE_NAME)
+        info['is_reference'] = param.AsValueString() if param is not None else None
+    except Exception as exc:
+        info['is_reference'] = 'unavailable: %s' % exc
+    return ref, info
+
+
+def make_strong_reference(plane):
+    """Set the plane's Is Reference to Strong Reference; returns a note for the report."""
+    try:
+        param = plane.get_Parameter(DB.BuiltInParameter.ELEM_REFERENCE_NAME)
+        if param is None or param.IsReadOnly:
+            return 'no writable Is Reference parameter'
+        if param.SetValueString('Strong Reference'):
+            return 'set by value string: %s' % param.AsValueString()
+        for value in range(0, 30):          # enumeration order differs by version; find it by label
+            param.Set(value)
+            if 'Strong' in (param.AsValueString() or ''):
+                return 'set by scan: %d = %s' % (value, param.AsValueString())
+        return 'no Strong Reference value found'
+    except Exception as exc:
+        return 'failed: %s' % exc
+
+
+def dimension(doc, view, p0, p1, planes, key, record, label=None, equal=False, regenerate=True):
+    """Dimension reference planes (or ready-made References, e.g. a sketch arc centre). Attempt 1:
+    regenerate, then read fresh references. Attempt 2: also set Is Reference to Strong on the planes.
+    Every attempt, each reference's type and Is Reference value are recorded. Returns the dimension, or
+    None after recording the failure (never raises). regenerate=False inside a SketchEditScope."""
+    attempts = record.setdefault('dimension_attempts', {}).setdefault(key, [])
+    line = DB.Line.CreateBound(xyz(*p0), xyz(*p1))
+    for attempt in (1, 2):
+        note = {'attempt': attempt}
+        if attempt == 2:
+            note['strong_reference'] = [make_strong_reference(pl) for pl in planes
+                                        if not isinstance(pl, DB.Reference)]
+        try:
+            if regenerate:
+                doc.Regenerate()
+            array, infos = DB.ReferenceArray(), []
+            for plane in planes:
+                if isinstance(plane, DB.Reference):
+                    ref, info = plane, {'reference': 'passed in directly'}
+                else:
+                    ref, info = plane_reference(plane)
+                infos.append(info)
+                if ref is not None:
+                    array.Append(ref)
+            note['references'] = infos
+            dim = doc.FamilyCreate.NewDimension(view, line, array)
+        except Exception:
+            note['error'] = [l for l in traceback.format_exc().splitlines() if l.strip()][-2:]
+            attempts.append(note)
+            continue
+        note['created'] = True
+        attempts.append(note)
+        if equal:
+            try:
+                dim.AreSegmentsEqual = True
+            except Exception:
+                note['equal_error'] = traceback.format_exc().strip().splitlines()[-1]
+                record.setdefault('dimension_errors', []).append('%s: EQ not applied' % key)
+        if label is not None:
+            try:
+                dim.FamilyLabel = label
+            except Exception:
+                note['label_error'] = traceback.format_exc().strip().splitlines()[-1]
+                record.setdefault('dimension_errors', []).append('%s: label not applied' % key)
+        return dim
+    record.setdefault('dimension_errors', []).append('%s: NewDimension failed twice' % key)
+    return None
 
 
 def reference_planes(doc, plan, front, v, record):
@@ -454,29 +536,35 @@ def reference_planes(doc, plan, front, v, record):
         record['Glass Mid']['locked_to'] = 'pinned (alignment failed): ' + traceback.format_exc().splitlines()[-1]
 
     fm = doc.FamilyManager
-    ref = dict((k, pl.GetReference()) for k, pl in planes.items())
+    doc.Regenerate()          # references of the new planes are only valid after a regenerate
     dims = {}
+    P = planes
     # plan: glass faces symmetric about Y=0, overall = Glass_Thickness; plates = Plate_Thickness
     dims['glass_eq'] = dimension(doc, plan, (3.5, -2, 0), (3.5, 2, 0),
-                                 [ref['Glass Face Back'], ref['Center (Front/Back)'], ref['Glass Face Front']],
-                                 equal=True)
+                                 [P['Glass Face Back'], P['Center (Front/Back)'], P['Glass Face Front']],
+                                 'glass_eq', record, equal=True)
     dims['glass'] = dimension(doc, plan, (4.2, -2, 0), (4.2, 2, 0),
-                              [ref['Glass Face Back'], ref['Glass Face Front']], fm.get_Parameter('Glass_Thickness'))
+                              [P['Glass Face Back'], P['Glass Face Front']], 'glass', record,
+                              label=fm.get_Parameter('Glass_Thickness'))
     dims['plate_front'] = dimension(doc, plan, (-3.5, 0, 0), (-3.5, 2, 0),
-                                    [ref['Glass Face Front'], ref['Plate Outer Front']],
-                                    fm.get_Parameter('Plate_Thickness'))
+                                    [P['Glass Face Front'], P['Plate Outer Front']], 'plate_front', record,
+                                    label=fm.get_Parameter('Plate_Thickness'))
     dims['plate_back'] = dimension(doc, plan, (-3.5, -2, 0), (-3.5, 0, 0),
-                                   [ref['Plate Outer Back'], ref['Glass Face Back']],
-                                   fm.get_Parameter('Plate_Thickness'))
+                                   [P['Plate Outer Back'], P['Glass Face Back']], 'plate_back', record,
+                                   label=fm.get_Parameter('Plate_Thickness'))
     # front elevation: clamp sides about Joint CL = Clamp_Width; top/bottom about Glass Mid = Clamp_Height
     dims['width_eq'] = dimension(doc, front, (-3, 0, 1.6), (3, 0, 1.6),
-                                 [ref['Clamp Left'], ref['Joint CL'], ref['Clamp Right']], equal=True)
+                                 [P['Clamp Left'], P['Joint CL'], P['Clamp Right']], 'width_eq', record, equal=True)
     dims['width'] = dimension(doc, front, (-3, 0, 2.2), (3, 0, 2.2),
-                              [ref['Clamp Left'], ref['Clamp Right']], fm.get_Parameter('Clamp_Width'))
+                              [P['Clamp Left'], P['Clamp Right']], 'width', record,
+                              label=fm.get_Parameter('Clamp_Width'))
     dims['height_eq'] = dimension(doc, front, (3.2, 0, -1.5), (3.2, 0, 1.5),
-                                  [ref['Clamp Bottom'], ref['Glass Mid'], ref['Clamp Top']], equal=True)
+                                  [P['Clamp Bottom'], P['Glass Mid'], P['Clamp Top']], 'height_eq', record,
+                                  equal=True)
     dims['height'] = dimension(doc, front, (3.8, 0, -1.5), (3.8, 0, 1.5),
-                               [ref['Clamp Bottom'], ref['Clamp Top']], fm.get_Parameter('Clamp_Height'))
+                               [P['Clamp Bottom'], P['Clamp Top']], 'height', record,
+                               label=fm.get_Parameter('Clamp_Height'))
+    dims = dict((k, d) for k, d in dims.items() if d is not None)
     record['dimensions_created'] = sorted(dims.keys())
     return planes
 
@@ -630,12 +718,18 @@ def constrain_cap(doc, key, extrusion, view, planes, v, sign, record):
             centre_ref = arc.CenterPointReference
             if centre_ref is None:
                 raise RuntimeError('CenterPointReference is None for %s arc %d' % (key, index))
-            dimension(doc, view, (0, yplane, -1.4 - 0.2 * index), (cx, yplane, -1.4 - 0.2 * index),
-                      [planes['Joint CL'].GetReference(), centre_ref], fm.get_Parameter('Cap_Offset'))
+            offset = dimension(doc, view, (0, yplane, -1.4 - 0.2 * index), (cx, yplane, -1.4 - 0.2 * index),
+                               [planes['Joint CL'], centre_ref], '%s_offset_%d' % (key, index), rec,
+                               label=fm.get_Parameter('Cap_Offset'), regenerate=False)
+            if offset is None:
+                raise RuntimeError('Cap_Offset dimension failed for %s (see dimension_errors)' % key)
             made.append('Cap_Offset')
-            dimension(doc, view, (cx + 0.6 + 0.2 * index, yplane, -v['Clamp_Height'] / 2.0),
-                      (cx + 0.6 + 0.2 * index, yplane, 0.0),
-                      [planes['Clamp Bottom'].GetReference(), centre_ref], fm.get_Parameter('Cap_Elevation'))
+            elevation = dimension(doc, view, (cx + 0.6 + 0.2 * index, yplane, -v['Clamp_Height'] / 2.0),
+                                  (cx + 0.6 + 0.2 * index, yplane, 0.0),
+                                  [planes['Clamp Bottom'], centre_ref], '%s_elevation_%d' % (key, index), rec,
+                                  label=fm.get_Parameter('Cap_Elevation'), regenerate=False)
+            if elevation is None:
+                raise RuntimeError('Cap_Elevation dimension failed for %s (see dimension_errors)' % key)
             made.append('Cap_Elevation')
             curve_ref = arc.GeometryCurve.Reference
             if curve_ref is None:
@@ -821,15 +915,20 @@ def build(app):
     doc.Regenerate()
 
     part_rec = rec.setdefault('parts', {})
-    elements = {
-        'plate_front': make_plate(doc, 'plate_front', planes['Glass Face Front'], v, [back, front], planes,
-                                  params, subcats, part_rec),
-        'plate_back': make_plate(doc, 'plate_back', planes['Glass Face Back'], v, [front, back], planes,
-                                 params, subcats, part_rec),
-        'cap_left': make_cap(doc, 'cap_left', -1.0, planes['Plate Outer Back'], v, params, subcats, part_rec),
-        'cap_right': make_cap(doc, 'cap_right', 1.0, planes['Plate Outer Back'], v, params, subcats, part_rec),
-    }
-    doc.Regenerate()
+    elements = {}
+    for key, make in (
+            ('plate_front', lambda: make_plate(doc, 'plate_front', planes['Glass Face Front'], v, [back, front],
+                                               planes, params, subcats, part_rec)),
+            ('plate_back', lambda: make_plate(doc, 'plate_back', planes['Glass Face Back'], v, [front, back],
+                                              planes, params, subcats, part_rec)),
+            ('cap_left', lambda: make_cap(doc, 'cap_left', -1.0, planes['Plate Outer Back'], v, params, subcats,
+                                          part_rec)),
+            ('cap_right', lambda: make_cap(doc, 'cap_right', 1.0, planes['Plate Outer Back'], v, params, subcats,
+                                           part_rec))):
+        element = step('create ' + key, make)
+        if element is not None:
+            elements[key] = element
+    step('regenerate after parts', doc.Regenerate)
     status = TX.Commit()
     TX = None
     rec['main_commit_status'] = str(status)
@@ -838,26 +937,30 @@ def build(app):
 
     # Revit's Front elevation looks toward +Y from the -Y (screw) side, so the heads face it.
     for key, sign in (('cap_left', -1.0), ('cap_right', 1.0)):
-        constrain_cap(doc, key, elements[key], front, planes, v, sign, part_rec)
+        if key in elements:
+            constrain_cap(doc, key, elements[key], front, planes, v, sign, part_rec)
         checkpoint('constrained ' + key)
 
     TX, _ = captured_transaction(doc, 'Review views')
     TX.Start()
-    views = family_views(doc)
+    views = step('review views', lambda: family_views(doc)) or []
     TX.Commit()
     TX = None
-    purge_unused(doc, rec)
+    step('purge unused', lambda: purge_unused(doc, rec))
     checkpoint('built, saving')
 
     save = DB.SaveAsOptions()
     save.OverwriteExistingFile = True
     save.MaximumBackups = 1
     save.Compact = True
-    save.PreviewViewId = views[1].Id
+    if len(views) > 1:
+        save.PreviewViewId = views[1].Id
     rfa_path = out_path(S.RFA_NAME)
     doc.SaveAs(rfa_path, save)
     REPORT['rfa_path'] = rfa_path
     try:
+        if not views:
+            raise RuntimeError('no review views were created')
         export_images(doc, views, IMAGE_PREFIX)
         REPORT['family_export_error'] = None
     except Exception:
@@ -873,7 +976,11 @@ def measure_parts(doc, v):
     """Ray every part at the current values; returns (rows, all_pass)."""
     rows = []
     for ray in S.part_rays(v):
-        element = doc.GetElement(DB.ElementId(int(REPORT['parts'][ray['part']])))
+        part_id = REPORT['parts'].get(ray['part'])
+        if part_id is None:
+            rows.append({'key': ray['key'], 'pass': False, 'error': 'part %s was not created' % ray['part']})
+            continue
+        element = doc.GetElement(DB.ElementId(int(part_id)))
         try:
             rows.append(ray_row(ray, solid_segments(element_solids(element), ray['p0'], ray['p1'])))
         except Exception:
@@ -961,7 +1068,8 @@ def measure_family(app, rfa_path):
 
     parts = {}
     for key, subcat, coarse in S.PARTS:
-        element = doc.GetElement(DB.ElementId(int(REPORT['parts'][key])))
+        part_id = REPORT['parts'].get(key)
+        element = doc.GetElement(DB.ElementId(int(part_id))) if part_id is not None else None
         row = {'found': isinstance(element, DB.Extrusion)}
         if row['found']:
             row['subcategory'] = element.Subcategory.Name if element.Subcategory is not None else None
@@ -1134,6 +1242,8 @@ def gates():
     caps_constrained = all(build_rec.get('parts', {}).get(k, {}).get('sketch_constrained') for k in ('cap_left', 'cap_right'))
     result = {
         'revit_2025_host': str(REPORT.get('revit_version', '')).startswith('2025'),
+        'build_steps_clean': not REPORT.get('build_errors') and not build_rec.get('planes', {}).get('dimension_errors')
+            and len(build_rec.get('planes', {}).get('dimensions_created', [])) == 8,
         'spec_self_check': not REPORT.get('spec_problems'),
         'fresh_rfa_reopen_category': bool(fam.get('reopened')) and fam.get('category') == 'Generic Models',
         'always_vertical_on_work_plane_off': fam.get('always_vertical') == 1 and fam.get('work_plane_based') == 0,

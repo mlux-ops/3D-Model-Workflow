@@ -142,6 +142,15 @@ def check(rep, run_dir=RUN_DIR, run_start=RUN_START):
             add('labelled dimension %s: %d found, %d expected' % (label, labels.get(label, 0), count))
     if (fam.get('equality_dimensions') or 0) < S.EQ_DIMENSIONS:
         add('EQ dimensions %r < %d' % (fam.get('equality_dimensions'), S.EQ_DIMENSIONS))
+    planes_rec = build.get('planes') or {}
+    expected_dims = ['glass', 'glass_eq', 'height', 'height_eq', 'plate_back', 'plate_front', 'width', 'width_eq']
+    if sorted(planes_rec.get('dimensions_created') or []) != expected_dims:
+        add('dimensions created %r, expected %r' % (sorted(planes_rec.get('dimensions_created') or []), expected_dims))
+    for item in planes_rec.get('dimension_errors') or []:
+        add('dimension problem: %s' % item)
+    for item in rep.get('build_errors') or []:
+        tail = str(item.get('error', '')).strip().splitlines()[-1:] 
+        add('build step %r failed: %s' % (item.get('step'), ' '.join(tail)))
     parts_build = build.get('parts') or {}
     locked = sum(1 for k in ('plate_front', 'plate_back')
                  for r in (parts_build.get(k) or {}).get('side_locks', []) if r.get('locked') is True)

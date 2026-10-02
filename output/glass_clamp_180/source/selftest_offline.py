@@ -127,7 +127,9 @@ def good_report():
     box = S.overall_box(v)
     return {
         'stage': 'complete', 'revit_version': '2025', 'started_utc': '2099-01-01T00:00:00Z', 'spec_problems': [],
-        'build': {'parts': {
+        'build': {'planes': {'dimensions_created': ['glass', 'glass_eq', 'height', 'height_eq', 'plate_back',
+                                                   'plate_front', 'width', 'width_eq'], 'dimension_errors': []},
+                  'parts': {
             'plate_front': {'side_locks': [{'locked': True}] * 4},
             'plate_back': {'side_locks': [{'locked': True}] * 4},
             'cap_left': {'sketch_constrained': True}, 'cap_right': {'sketch_constrained': True}},
@@ -249,6 +251,11 @@ def main():
             'formula', 'Clamp_Width - 2"'))
         tampered('project coarse 4 solids', lambda r: r['project']['solids_by_detail'].__setitem__('coarse', 4))
         tampered('warning present', lambda r: r['family']['warnings'].append('Line is slightly off axis'))
+        tampered('a dimension failed (the 2026-10-02 native failure)', lambda r: (
+            r['build']['planes'].__setitem__('dimensions_created', ['glass_eq'][:0]),
+            r['build']['planes'].__setitem__('dimension_errors', ['glass_eq: NewDimension failed twice'])))
+        tampered('build step error', lambda r: r.__setitem__(
+            'build_errors', [{'step': 'create plate_front', 'error': 'Traceback\nException: boom'}]))
         tampered('stale report', lambda r: r.__setitem__('started_utc', '2020-01-01T00:00:00Z'))
         tampered('stage failed', lambda r: r.__setitem__('stage', 'failed'))
 

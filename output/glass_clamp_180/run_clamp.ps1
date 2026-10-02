@@ -228,7 +228,17 @@ if (Test-Path -LiteralPath $report) {
         Note "  failed gates: $($r.failed_gates -join ', ')"
         if ($r.error) { Note '  builder error (last 12 lines):'; ($r.error -split "`n" | Select-Object -Last 12) | ForEach-Object { Note ("    " + $_) } }
         Note "  cap sketches constrained: left=$($r.build.parts.cap_left.sketch_constrained) right=$($r.build.parts.cap_right.sketch_constrained)"
-        $cf = @($r.captured_failures | ForEach-Object { $_.severity + ': ' + $_.text })
+        foreach ($e in @($r.build_errors)) {
+            if ($e) { Note "  build step failed: $($e.step)"; ($e.error -split "`n" | Where-Object { $_.Trim() } | Select-Object -Last 4) | ForEach-Object { Note ("    " + $_) } }
+        }
+        foreach ($d in @($r.build.planes.dimension_errors)) { if ($d) { Note "  dimension problem: $d" } }
+        if ($r.build.planes.dimension_attempts) {
+            foreach ($prop in $r.build.planes.dimension_attempts.PSObject.Properties) {
+                $made = @($prop.Value | Where-Object { $_.created }).Count
+                if ($made -eq 0) { Note ("  dimension '" + $prop.Name + "' attempts: " + ($prop.Value | ConvertTo-Json -Depth 8 -Compress)) }
+            }
+        }
+        $cf = @($r.captured_failures | Where-Object { $_ } | ForEach-Object { $_.severity + ': ' + $_.text })
         if ($cf.Count -gt 0) { Note ("  captured failures: " + ($cf -join ' | ')) }
     } catch { Note "  could not read validation.json: $_" }
 }
