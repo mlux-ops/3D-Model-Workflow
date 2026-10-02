@@ -1,200 +1,298 @@
 {
-  "old_origin_planes_cleared": [
-    "Reference Plane"
-  ], 
-  "preview": "E:\\Claude\\3D-Model-Workflow\\output\\gola_wall_unit\\preview\\wall_unit_section", 
-  "setback_default_mm": 19.050000000000001, 
-  "rfa": "E:/Claude/3D-Model-Workflow/output/gola_wall_unit/Richelieu_Gola_Wall_Unit_Upper_Cabinet_2025.rfa", 
-  "stage": "complete", 
-  "placement_plane_mm": 70.049999999998136, 
+  "template_types": 1, 
   "reopened": {
-    "placement_type": "CurveBased", 
     "types": [
       "Wall Unit - Upper Cabinet Door Pull"
-    ]
-  }, 
-  "section_area_mm2_design": 82.253052686528335, 
-  "family_form_volumes_after_voids_mm3": [
-    82252.960192511222, 
-    82253.318600295301
-  ], 
-  "template_types": 1, 
-  "tests": {
-    "materials": [
-      "Gola - Brushed Stainless Finish"
     ], 
-    "A_regrip": {
+    "placement_type": "CurveBased"
+  }, 
+  "preview": "E:\\Claude\\3D-Model-Workflow\\output\\gola_wall_unit\\preview\\wall_unit_section", 
+  "old_origin_planes_cleared": [
+    "Center (Front/Back)"
+  ], 
+  "tests": {
+    "A_level_up_flipped": {
       "extents_mm": [
         -6.2638119951302638e-12, 
-        8.4302897995769402e-12, 
-        -39.049999999998136, 
+        19.050000000000001, 
+        1.8527179790339687e-12, 
+        1499.9999999999939, 
+        39.049999999999990, 
+        26.900000000001867
+      ]
+    }, 
+    "A_regrip": {
+      "volume_mm3": 197407.10446202732, 
+      "extents_mm": [
+        -6.2638119951302638e-12, 
+        -39.049999999999990, 
+        -26.899999999998126, 
         2399.9999999999936, 
-        26.900000000008426, 
-        -19.049999999998139
+        -19.050000000000001, 
+        1.8865575768245437e-12
       ], 
-      "volume_mm3": 197407.10446202700, 
       "length_mm": 2400.0
     }, 
     "cuts": {
-      "blocked_box": {
+      "box_depth_300": {
+        "still_hosted_on_box": true, 
+        "profile_mm3": 123379.44028876319, 
         "refused": [], 
-        "added": [
-          "5404"
-        ], 
-        "removed_mm3": 1171500.0000003576, 
-        "blocked": []
-      }, 
-      "box_depth_300_flipped": {
-        "profile_mm3": 123379.97790044030, 
-        "refused": [], 
-        "added": [], 
-        "removed_mm3": 478575.00000405312, 
         "blocked": [], 
-        "removed_ids": []
-      }, 
-      "wall_face": {
-        "refused": [], 
-        "profile_mm3": 123379.44028876403, 
-        "added": [
-          "3803"
-        ], 
-        "removed_mm3": 1230074.9999995232
+        "added": [], 
+        "removed_ids": [], 
+        "removed_mm3": 9571499.9999957085
       }, 
       "length_mm": 1500.0, 
-      "profile_mm3_uncut": 123379.44028876579, 
-      "box_depth_300": {
-        "profile_mm3": 123379.44028876579, 
+      "box_depth_300_flipped": {
+        "still_hosted_on_box": true, 
+        "profile_mm3": 123379.97790043933, 
         "refused": [], 
-        "added": [], 
-        "removed_mm3": 9571500.0000041723, 
         "blocked": [], 
-        "removed_ids": []
+        "added": [], 
+        "removed_ids": [], 
+        "removed_mm3": 89999.999999880791
+      }, 
+      "blocked_box": {
+        "refused": [], 
+        "blocked": [], 
+        "added": [
+          "5522"
+        ], 
+        "removed_mm3": 1171499.9999990463
       }, 
       "box_depth_20": {
-        "profile_mm3": 123379.44028876579, 
+        "still_hosted_on_box": true, 
+        "profile_mm3": 123379.44028876319, 
         "refused": [], 
-        "added": [
-          "4609"
-        ], 
-        "removed_mm3": 1171500.0000003576, 
         "blocked": [], 
-        "removed_ids": []
-      }
+        "added": [
+          "4727"
+        ], 
+        "removed_ids": [], 
+        "removed_mm3": 1171499.9999990463
+      }, 
+      "box_depth_20_reset": {
+        "still_hosted_on_box": true, 
+        "profile_mm3": 123379.44028876319, 
+        "refused": [], 
+        "blocked": [], 
+        "added": [], 
+        "removed_ids": [], 
+        "removed_mm3": 1171499.9999990463
+      }, 
+      "profile_mm3_uncut": 123379.44028876319
     }, 
-    "wall_face_run_direction": [
-      -1.0, 
-      0.0, 
-      0.0
-    ], 
-    "wall_face": {
-      "left_to_right": {
+    "A_level_up": {
+      "volume_mm3": 123379.97790044326, 
+      "extents_mm": [
+        -6.2638119951302638e-12, 
+        -39.049999999999990, 
+        1.8527179790339687e-12, 
+        1499.9999999999939, 
+        -19.050000000000001, 
+        26.900000000001867
+      ]
+    }, 
+    "A_level": {
+      "end_ok": true, 
+      "volume_mm3": 123379.44028876717, 
+      "extents_mm": [
+        -6.2638119951302638e-12, 
+        -39.049999999999990, 
+        -26.899999999998126, 
+        1499.9999999999939, 
+        -19.050000000000001, 
+        1.8865575768245437e-12
+      ], 
+      "length_mm": 1500.0, 
+      "start_ok": true, 
+      "host": "Level"
+    }, 
+    "detach_left_to_right": {
+      "new_id": "5536", 
+      "comments": "detach test", 
+      "flip_up": [
+        1, 
+        1
+      ], 
+      "cut_depth_mm": 30.0, 
+      "added": [
+        "5531"
+      ], 
+      "new_host": "Level", 
+      "box_shift_mm": 3.751665644813329e-12, 
+      "removed_mm3": 1471500.0000008345, 
+      "refused": [], 
+      "note": "Gola 5533 replaced by 5536, unhosted on level Level 1 (placed on in-place element Casework 5531 (Test_Cabinet_Box_cuttable))", 
+      "old_deleted": true, 
+      "old_id": "5533"
+    }, 
+    "underside": {
+      "right_to_left": {
         "flipped": [
           [
-            -6.4972027757903567e-12, 
-            1499.9999999999936
+            6.2264859934657584e-12, 
+            1500.0000000000064
           ], 
           [
-            -26.899999999991717, 
-            8.3922202520625443e-12
+            19.050000000000001, 
+            39.050000000000054
           ], 
           [
-            -39.049999999998164, 
-            -19.049999999998377
+            -1.8950174762721871e-12, 
+            26.899999999998215
           ]
         ], 
         "unflipped": [
           [
-            -6.4972027757903567e-12, 
-            1499.9999999999936
+            6.2264859934657584e-12, 
+            1500.0000000000064
           ], 
           [
-            8.3922202520625443e-12, 
-            26.900000000008504
+            -39.050000000000054, 
+            -19.050000000000001
           ], 
           [
-            -39.049999999998164, 
-            -19.049999999998377
+            -1.8950174762721871e-12, 
+            26.899999999998215
+          ]
+        ], 
+        "line_mm": [
+          1750.0000000000002, 
+          2000.0000000000002, 
+          -700.0, 
+          250.00000000000003, 
+          2000.0000000000002, 
+          -700.0
+        ], 
+        "host_is_box": true
+      }, 
+      "left_to_right": {
+        "flipped": [
+          [
+            -6.2603255912563327e-12, 
+            1499.9999999999939
+          ], 
+          [
+            -39.050000000000054, 
+            -19.050000000000001
+          ], 
+          [
+            -1.8950174762721871e-12, 
+            26.899999999998215
+          ]
+        ], 
+        "flipped_setback_1in": [
+          [
+            -6.2603255912563327e-12, 
+            1499.9999999999939
+          ], 
+          [
+            -45.400000000000240, 
+            -25.400000000000180
+          ], 
+          [
+            -1.8950174762721871e-12, 
+            26.899999999998215
           ]
         ], 
         "setback_0": [
           [
-            -6.4972027757903567e-12, 
-            1499.9999999999936
+            -6.2603255912563327e-12, 
+            1499.9999999999939
           ], 
           [
-            8.3922202520625443e-12, 
-            26.900000000008504
+            0.0, 
+            20.000000000000057
           ], 
           [
-            -19.999999999998160, 
-            1.6243006939475892e-12
+            -1.8950174762721871e-12, 
+            26.899999999998215
           ]
         ], 
         "setback_1in": [
           [
-            -6.4972027757903567e-12, 
-            1499.9999999999936
+            -6.2603255912563327e-12, 
+            1499.9999999999939
           ], 
           [
-            8.3922202520625443e-12, 
-            26.900000000008504
+            25.400000000000180, 
+            45.400000000000240
           ], 
           [
-            -45.399999999998343, 
-            -25.399999999998556
-          ]
-        ]
-      }, 
-      "right_to_left": {
-        "flipped": [
-          [
-            6.4972027757903567e-12, 
-            1500.0000000000066
-          ], 
-          [
-            -8.3922202520625443e-12, 
-            26.899999999991717
-          ], 
-          [
-            -39.049999999998164, 
-            -19.049999999998377
+            -1.8950174762721871e-12, 
+            26.899999999998215
           ]
         ], 
         "unflipped": [
           [
-            6.4972027757903567e-12, 
-            1500.0000000000066
+            -6.2603255912563327e-12, 
+            1499.9999999999939
           ], 
           [
-            -26.900000000008504, 
-            -8.3922202520625443e-12
+            19.050000000000001, 
+            39.050000000000054
           ], 
           [
-            -39.049999999998164, 
-            -19.049999999998377
+            -1.8950174762721871e-12, 
+            26.899999999998215
           ]
-        ]
+        ], 
+        "line_mm": [
+          250.00000000000003, 
+          2000.0000000000002, 
+          -700.0, 
+          1750.0000000000002, 
+          2000.0000000000002, 
+          -700.0
+        ], 
+        "host_is_box": true
       }
     }, 
-    "A_level": {
-      "start_ok": true, 
-      "end_ok": true, 
-      "extents_mm": [
-        -6.2638119951302638e-12, 
-        8.4302897995769402e-12, 
-        -39.049999999998136, 
-        1499.9999999999939, 
-        26.900000000008426, 
-        -19.049999999998139
-      ], 
-      "volume_mm3": 123379.44028876678, 
-      "length_mm": 1500.0, 
-      "host": "Level"
+    "underside_frame": {
+      "front_face_y_mm": 2000.0000000000002, 
+      "underside_z_mm": -700.0
     }, 
-    "wall_face_host": "Wall"
+    "materials": [
+      "Gola - Brushed Stainless Finish"
+    ], 
+    "detach_right_to_left_flipped": {
+      "new_id": "5544", 
+      "comments": "detach test", 
+      "flip_up": [
+        0, 
+        1
+      ], 
+      "cut_depth_mm": 30.0, 
+      "added": [
+        "5539"
+      ], 
+      "new_host": "Level", 
+      "box_shift_mm": 3.751665644813329e-12, 
+      "removed_mm3": 1471500.0000009537, 
+      "refused": [], 
+      "note": "Gola 5541 replaced by 5544, unhosted on level Level 1 (placed on in-place element Casework 5539 (Test_Cabinet_Box_cuttable))", 
+      "old_deleted": true, 
+      "old_id": "5541"
+    }
   }, 
+  "family_form_volumes_after_voids_mm3": [
+    82252.960192511411, 
+    82253.318600295534, 
+    82253.318600295592, 
+    82252.960192511397
+  ], 
   "family_form_volumes_mm3": [
-    82252.960192511222, 
-    82253.318600295301
-  ]
+    82252.960192511411, 
+    82253.318600295534, 
+    82253.318600295592, 
+    82252.960192511397
+  ], 
+  "datum_y_mm": -1000.0000000000001, 
+  "placement_plane_y_mm": -80.950000000000003, 
+  "setback_default_mm": 19.050000000000001, 
+  "stage": "complete", 
+  "section_area_mm2_design": 82.253052686528335, 
+  "rfa": "E:/Claude/3D-Model-Workflow/output/gola_wall_unit/Richelieu_Gola_Wall_Unit_Upper_Cabinet_2025.rfa"
 }

@@ -1,45 +1,15 @@
 {
-  "tests": {
-    "T6_button": {
-      "removed_mm3": 5035552.5000004768, 
-      "removed_before_button_mm3": 0.0, 
-      "changes": 1, 
-      "expected_mm3": 5035552.5000002021
-    }, 
-    "T1_horizontal_face_1500": {
-      "removed_mm3": 5035552.5, 
-      "host": "Wall", 
-      "expected_mm3": 5035552.5000002021
-    }, 
-    "T4_unhosted_level_1500": {
-      "removed_mm3": 5035552.4999997616, 
-      "host": "Level", 
-      "cut_ids": [
-        "5492"
-      ], 
-      "expected_mm3": 5035552.5000002021
-    }, 
-    "T2_regrip_2400": {
-      "removed_mm3": 8056884.0, 
-      "expected_mm3": 8056884.0000003241
-    }, 
-    "T5_moved_off_wall": {
-      "removed_mm3": 0.0, 
-      "cut_ids": [], 
-      "expected_mm3": 0.0
-    }, 
-    "T3_vertical_face_1500": {
-      "removed_mm3": 4148081.25, 
-      "host": "Wall", 
-      "expected_mm3": 4148081.2500001360
-    }
-  }, 
-  "untouched_walls_check": {
-    "5490": 8056884.0, 
-    "5493": 5035552.5000004768, 
-    "5491": 4148081.25, 
-    "5492": 0.0
-  }, 
+  "log": [
+    "2026-10-02T02:26:56.822000  Gola Auto Cut updater registered", 
+    "2026-10-02T02:27:01.796000  Project1: Gola 5495 cut +[5490L] -[]", 
+    "2026-10-02T02:27:01.920000  Project1: Gola 5500 cut +[5491L] -[]", 
+    "2026-10-02T02:27:01.991000  Project1: Gola 5503 cut +[5492L] -[]", 
+    "2026-10-02T02:27:02.013000  Project1: Gola 5503 cut +[] -[5492L]", 
+    "2026-10-02T02:27:02.042000  Project1: Gola 5507 cut +[5493L] -[]"
+  ], 
+  "stage": "complete", 
+  "addin_id": "d49d3677-61c4-47a8-bfff-49e6616d54c1", 
+  "registered": true, 
   "flushed": [
     [
       "walls", 
@@ -59,7 +29,8 @@
           ], 
           [], 
           [], 
-          []
+          [], 
+          null
         ]
       ]
     ], 
@@ -71,7 +42,8 @@
           [], 
           [], 
           [], 
-          []
+          [], 
+          null
         ]
       ]
     ], 
@@ -85,7 +57,8 @@
           ], 
           [], 
           [], 
-          []
+          [], 
+          null
         ]
       ]
     ], 
@@ -99,7 +72,8 @@
           ], 
           [], 
           [], 
-          []
+          [], 
+          null
         ]
       ]
     ], 
@@ -113,7 +87,8 @@
             "5492"
           ], 
           [], 
-          []
+          [], 
+          null
         ]
       ]
     ], 
@@ -122,14 +97,41 @@
       []
     ]
   ], 
-  "log": [
-    "2026-09-28T21:13:46.448000  Gola Auto Cut updater registered", 
-    "2026-09-28T21:13:51.659000  Project1: Gola 5495 cut +[5490L] -[]", 
-    "2026-09-28T21:13:51.805000  Project1: Gola 5500 cut +[5491L] -[]", 
-    "2026-09-28T21:13:51.891000  Project1: Gola 5503 cut +[5492L] -[]", 
-    "2026-09-28T21:13:51.916000  Project1: Gola 5503 cut +[] -[5492L]", 
-    "2026-09-28T21:13:51.945000  Project1: Gola 5507 cut +[5493L] -[]"
-  ], 
+  "tests": {
+    "T6_button": {
+      "removed_mm3": 5035552.5000004768, 
+      "expected_mm3": 5035552.5000002021, 
+      "changes": 1, 
+      "removed_before_button_mm3": 0.0
+    }, 
+    "T4_unhosted_level_1500": {
+      "removed_mm3": 5035552.4999997616, 
+      "expected_mm3": 5035552.5000002021, 
+      "host": "Level", 
+      "cut_ids": [
+        "5492"
+      ]
+    }, 
+    "T2_regrip_2400": {
+      "removed_mm3": 8056884.0, 
+      "expected_mm3": 8056884.0000003241
+    }, 
+    "T5_moved_off_wall": {
+      "removed_mm3": 0.0, 
+      "expected_mm3": 0.0, 
+      "cut_ids": []
+    }, 
+    "T3_vertical_face_1500": {
+      "removed_mm3": 4148081.25, 
+      "expected_mm3": 4148081.2500001360, 
+      "host": "Wall"
+    }, 
+    "T1_horizontal_face_1500": {
+      "removed_mm3": 5035552.5, 
+      "expected_mm3": 5035552.5000002021, 
+      "host": "Wall"
+    }
+  }, 
   "queued_after": [
     [
       "walls", 
@@ -184,7 +186,10 @@
       []
     ]
   ], 
-  "registered": true, 
-  "addin_id": "d49d3677-61c4-47a8-bfff-49e6616d54c1", 
-  "stage": "complete"
+  "untouched_walls_check": {
+    "5491": 4148081.25, 
+    "5492": 0.0, 
+    "5490": 8056884.0, 
+    "5493": 5035552.5000004768
+  }
 }

@@ -1,18 +1,105 @@
 {
+  "tests": {
+    "T3b_across": {
+      "neighbour_removed_mm3": 795634.14754068851, 
+      "neighbour_expected_mm3": 795634.37800000003, 
+      "rows": [
+        [
+          "4715", 
+          [], 
+          [], 
+          [], 
+          [], 
+          null
+        ]
+      ], 
+      "boxA_removed_mm3": 1352115.8524583578, 
+      "boxA_expected_mm3": 1352115.6220000000
+    }, 
+    "T2a_face_hosted": {
+      "placed_on": true, 
+      "still_hosted_on_box": true, 
+      "rows": [
+        [
+          "4715", 
+          [], 
+          [], 
+          [], 
+          [], 
+          null
+        ]
+      ]
+    }, 
+    "T5_touch_only": {
+      "cut": false, 
+      "rows": [
+        [
+          "4721", 
+          [], 
+          [], 
+          [], 
+          [], 
+          null
+        ]
+      ], 
+      "removed_mm3": 0.0, 
+      "is_candidate": true, 
+      "boxC_still_cut": true
+    }, 
+    "T4_updater": {
+      "expected_mm3": 1171500.0, 
+      "rows": [
+        [
+          "4721", 
+          [
+            "4713"
+          ], 
+          [], 
+          [], 
+          [], 
+          null
+        ]
+      ], 
+      "removed_mm3": 1171499.9999990463, 
+      "queued": [
+        [
+          "4721"
+        ]
+      ]
+    }, 
+    "T3_neighbour": {
+      "neighbour_removed_mm3": 14634.147540926933, 
+      "neighbour_cut": true, 
+      "neighbour_expected_mm3": 14634.378000000044, 
+      "rows": [
+        [
+          "4715", 
+          [
+            "4712"
+          ], 
+          [], 
+          [], 
+          [], 
+          null
+        ]
+      ], 
+      "boxA_removed_mm3": 1352115.8524583578, 
+      "boxA_expected_mm3": 1352115.6220000000
+    }, 
+    "T1_old_plain_cut": {
+      "placed_on": true, 
+      "host": "FamilyInstance", 
+      "status": "Committed", 
+      "failures": [], 
+      "removed_mm3": 1171499.9999994040
+    }
+  }, 
   "log_tail": [
-    "2026-09-28T21:17:04.874000  Project1: Gola 4600 cut +[4597L] -[]", 
-    "2026-09-28T21:17:04.922000  Gola Auto Cut updater registered", 
-    "2026-09-28T21:17:04.978000  Project1: Gola 4606 cut +[4598L] -[]"
+    "2026-10-02T02:26:19.575000  Project1: Gola 4715 cut +[4712L] -[]", 
+    "2026-10-02T02:26:19.646000  Gola Auto Cut updater registered", 
+    "2026-10-02T02:26:19.724000  Project1: Gola 4721 cut +[4713L] -[]"
   ], 
   "box_bboxes_mm": {
-    "boxA": [
-      -609.60000000000002, 
-      -609.60000000000002, 
-      -700.0, 
-      1981.2619999999999, 
-      400.0, 
-      914.39999999999998
-    ], 
     "gola_line": [
       250.0, 
       0.0, 
@@ -21,6 +108,22 @@
       0.0, 
       -700.0
     ], 
+    "gola": [
+      250.0, 
+      -80.950000000000003, 
+      -720.0, 
+      2000.0, 
+      919.04999999999995, 
+      -673.10000000000002
+    ], 
+    "boxA": [
+      -609.60000000000002, 
+      -609.60000000000002, 
+      -700.0, 
+      1981.2619999999999, 
+      400.0, 
+      914.39999999999998
+    ], 
     "boxB": [
       1390.4000000000001, 
       -609.60000000000002, 
@@ -28,105 +131,7 @@
       3981.2620000000002, 
       400.0, 
       914.39999999999998
-    ], 
-    "gola": [
-      250.0, 
-      -3.0, 
-      -720.0, 
-      2000.0, 
-      70.049999999999997, 
-      -673.10000000000002
     ]
-  }, 
-  "tests": {
-    "T2a_face_hosted": {
-      "rows": [
-        [
-          "4600", 
-          [], 
-          [], 
-          [], 
-          []
-        ]
-      ], 
-      "still_hosted_on_box": true, 
-      "placed_on": true
-    }, 
-    "T5_touch_only": {
-      "rows": [
-        [
-          "4606", 
-          [], 
-          [], 
-          [], 
-          []
-        ]
-      ], 
-      "boxC_still_cut": true, 
-      "removed_mm3": 0.0, 
-      "is_candidate": true, 
-      "cut": false
-    }, 
-    "T1_old_plain_cut": {
-      "status": "Committed", 
-      "placed_on": true, 
-      "removed_mm3": 1171500.0000003576, 
-      "host": "FamilyInstance", 
-      "failures": []
-    }, 
-    "T4_updater": {
-      "rows": [
-        [
-          "4606", 
-          [
-            "4598"
-          ], 
-          [], 
-          [], 
-          []
-        ]
-      ], 
-      "removed_mm3": 1230075.0, 
-      "expected_mm3": 1230075.0, 
-      "queued": [
-        [
-          "4606"
-        ]
-      ]
-    }, 
-    "T3_neighbour": {
-      "rows": [
-        [
-          "4600", 
-          [
-            "4597"
-          ], 
-          [], 
-          [], 
-          []
-        ]
-      ], 
-      "boxA_removed_mm3": 1352115.8524595499, 
-      "neighbour_expected_mm3": 14634.378000000044, 
-      "boxA_expected_mm3": 1352115.6220000000, 
-      "neighbour_cut": true, 
-      "neighbour_removed_mm3": 14634.147541046143
-    }, 
-    "T3b_across": {
-      "rows": [
-        [
-          "4600", 
-          [], 
-          [], 
-          [], 
-          []
-        ]
-      ], 
-      "neighbour_expected_mm3": 795634.37800000003, 
-      "boxA_removed_mm3": 1352115.8524595499, 
-      "boxA_expected_mm3": 1352115.6220000000, 
-      "neighbour_removed_mm3": 795634.14754128456
-    }
   }, 
   "stage": "complete"
 }

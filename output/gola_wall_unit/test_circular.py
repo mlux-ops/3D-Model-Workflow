@@ -43,24 +43,30 @@ def tx(doc, name):
     return t, r
 
 
-def front_face_ref(doc, inst):
-    """Reference to the box's y = 0 face (normal -Y) that hosts on the instance itself, as a UI click does:
-    with ComputeReferences, symbol-geometry face references come back instance-qualified (probe_face_refs)."""
+def underside_ref(doc, inst):
+    """Reference to the box's bottom face (normal -Z) that hosts on the instance itself, as a UI click does
+    (with ComputeReferences, symbol-geometry face references come back instance-qualified: probe_face_refs),
+    plus the underside z and the front face (normal -Y) y. The wall-unit channel is placed on the
+    cabinet underside along its front edge since the 2026-10-02 rebuild."""
     o = DB.Options(); o.ComputeReferences = True
+    ref = z = y = None
     for g in inst.get_Geometry(o):
         if isinstance(g, DB.GeometryInstance):
             t = g.Transform
             for s in g.GetSymbolGeometry():
                 if isinstance(s, DB.Solid):
                     for f in s.Faces:
-                        if isinstance(f, DB.PlanarFace) and t.OfVector(f.FaceNormal).Y < -0.99 and f.Reference is not None:
-                            return f.Reference, t.OfPoint(f.Origin).Y
-    raise ValueError('front face reference not found')
+                        if not isinstance(f, DB.PlanarFace): continue
+                        n = t.OfVector(f.FaceNormal)
+                        if n.Z < -0.99 and f.Reference is not None: ref, z = f.Reference, t.OfPoint(f.Origin).Z
+                        if n.Y < -0.99: y = t.OfPoint(f.Origin).Y
+    if ref is None or y is None: raise ValueError('underside / front face not found')
+    return ref, y, z
 
 
-def place_on_face(doc, sym, box, z_mm, x0=250, x1=1750):
-    ref, y = front_face_ref(doc, box)
-    q0 = DB.XYZ(mm(x0), y, mm(z_mm)); q1 = DB.XYZ(mm(x1), y, mm(z_mm))
+def place_on_underside(doc, sym, box, x0=250, x1=1750):
+    ref, y, z = underside_ref(doc, box)
+    q0 = DB.XYZ(mm(x0), y, z); q1 = DB.XYZ(mm(x1), y, z)
     return doc.Create.NewFamilyInstance(ref, DB.Line.CreateBound(q0, q1), sym)
 
 
@@ -92,7 +98,7 @@ try:
     vA0, vC0 = gola_autocut.volume_mm3(boxA), gola_autocut.volume_mm3(boxC)
 
     check('T1 old behaviour')
-    t, r = tx(proj, 'place on face'); g1 = place_on_face(proj, fams['gola'], boxA, -700); t.Commit()
+    t, r = tx(proj, 'place on face'); g1 = place_on_underside(proj, fams['gola'], boxA); t.Commit()
     t, r = tx(proj, 'old plain cut')
     DB.InstanceVoidCutUtils.AddInstanceVoidCut(proj, boxA, g1)
     status = t.Commit()
@@ -131,12 +137,12 @@ try:
 
     check('T4 automatic path')
     gola_autocut.register(addin, with_event=False)
-    t, r = tx(proj, 'place on face C'); g4 = place_on_face(proj, fams['gola'], boxC, -350); t.Commit()
+    t, r = tx(proj, 'place on face C'); g4 = place_on_underside(proj, fams['gola'], boxC); t.Commit()
     queued = [sorted(ids) for _, ids in gola_autocut._pending]
     rows4 = gola_autocut.process_pending()
     gola_autocut.unregister(addin)
     report['tests']['T4_updater'] = {'queued': queued, 'rows': rows4, 'removed_mm3': vC0 - gola_autocut.volume_mm3(boxC),
-                                     'expected_mm3': 21 * (19.05 + 20) * 1500}
+                                     'expected_mm3': 20 * (19.05 + 20) * 1500}
     check('T5 box touching the channel box but not reached by the void')
     # The test box family's solid sits 18.74 mm towards -X of its insertion point (Casework template),
     # so inserting at 1750 + 0.3 + 18.738 puts its solid face 0.3 mm past the channel end (x = 1750):

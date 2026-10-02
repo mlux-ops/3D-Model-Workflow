@@ -76,6 +76,10 @@ Revit won't let a two-click (line-based) family cut a wall on its own; it only d
 - In testing, a Casework family with "Cut with Voids When Loaded" off was still cut.
 - Anything Revit refuses to cut is listed in the log and the button output.
 
+### In-place elements (2026-10-02)
+
+Revit can't cut an **in-place** family with a channel that sits on a face of that same element; it reports "a circular chain of references". The add-in replaces such a channel with an identical unhosted copy before cutting. This needs a family with the **Plane Faces Up** parameter; so far that's only the wall-unit (upper cabinet) profile. For these base-cabinet channels, place them on a level or reference plane instead of on an in-place element's face.
+
 ### If Revit reports "a circular chain of references" (2026-09-29)
 
 This happens when a channel sits on a face of the element it cuts, and that element's own geometry makes the cut feed back into the face the channel hangs on. It was seen on *Countertop81* in the Belmont model. A plain box cabinet cut this way works (tested). The add-in now:

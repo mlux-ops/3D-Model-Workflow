@@ -16,6 +16,10 @@ Rules (2026-09-29, after a "circular chain of references" in the Belmont model):
   (a dialog from the automatic path, a list from the button) instead of Revit's generic error.
 - Re-hosting a channel onto its own reference plane was tried and dropped: the API refuses
   line-based placement on reference planes ("does not coincide with the input face").
+- 2026-10-02: Revit cannot cut an in-place family with a channel placed on a face of that same
+  element (circular chain: type -> instance -> in-place form -> channel). Such a channel is
+  replaced by an identical copy on the level below (detach); its Plane Faces Up parameter keeps
+  the profile the same way up. Verified on the Belmont in-place Countertop80 (rolled-back test).
 
 Flow: the updater sees Gola channels added or changed and queues them (Revit forbids
 InstanceVoidCutUtils during a dynamic update), then raises an ExternalEvent; Revit runs
@@ -126,15 +130,106 @@ def placed_on(doc, inst, e):
     return bool(name) and name == '%s : %s' % (e.Symbol.Family.Name, DB.Element.Name.GetValue(e.Symbol))
 
 
-def apply(doc, insts):
+def _in_place(e):
+    return isinstance(e, DB.FamilyInstance) and e.Symbol.Family.IsInPlace
+
+
+def _level_below(doc, z):
+    levels = sorted(DB.FilteredElementCollector(doc).OfClass(DB.Level), key=lambda l: l.Elevation)
+    below = [l for l in levels if l.Elevation <= z + 1e-6]
+    return below[-1] if below else levels[0]
+
+
+def _box(e):
+    """Extents (mm) of e's visible solids. The element bounding box is not used: it includes void forms."""
+    ps = [p for s in _solids(e.get_Geometry(DB.Options())) for ed in s.Edges for p in ed.Tessellate()]
+    return [min(p.X for p in ps) * 304.8, min(p.Y for p in ps) * 304.8, min(p.Z for p in ps) * 304.8,
+            max(p.X for p in ps) * 304.8, max(p.Y for p in ps) * 304.8, max(p.Z for p in ps) * 304.8]
+
+
+_KEEP_BUILTINS = (DB.BuiltInParameter.ALL_MODEL_INSTANCE_COMMENTS, DB.BuiltInParameter.ALL_MODEL_MARK)
+
+
+def detach(doc, inst, why):
+    """Replace a face-placed channel by an identical copy on the level below it (no face, no work plane on
+    the element), so it can cut that element. Needs the family's 'Plane Faces Up' parameter. A face facing
+    down (or up) maps to the level frame by toggling Flip Profile and Plane Faces Up (down) or keeping them
+    (up). Returns (new instance or None, message). Runs its own transaction; call inside apply's group."""
+    if inst.LookupParameter('Plane Faces Up') is None or inst.LookupParameter('Flip Profile') is None:
+        return None, 'family has no Plane Faces Up parameter (reload the current Gola family)'
+    bz = inst.GetTransform().BasisZ.Z
+    if abs(bz) < 0.99:
+        return None, 'the channel is on a vertical face; place it on the underside instead'
+    c = inst.Location.Curve
+    before_box, before_vol = _box(inst), volume_mm3(inst)
+    tx, fp = _start(doc, 'Gola detach from in-place element')
+    lev = _level_below(doc, min(c.GetEndPoint(0).Z, c.GetEndPoint(1).Z))
+    new = doc.Create.NewFamilyInstance(c, inst.Symbol, lev, DB.Structure.StructuralType.NonStructural)
+    doc.Regenerate()
+    dz = c.GetEndPoint(0).Z - new.Location.Curve.GetEndPoint(0).Z   # level placement drops the line onto the level
+    if abs(dz) > 1e-9: DB.ElementTransformUtils.MoveElement(doc, new.Id, DB.XYZ(0, 0, dz))
+    for p in inst.Parameters:
+        if p.IsReadOnly or p.StorageType == getattr(DB.StorageType, 'None'): continue
+        name = p.Definition.Name
+        if name in ('Flip Profile', 'Plane Faces Up'): continue
+        bip = p.Definition.BuiltInParameter if isinstance(p.Definition, DB.InternalDefinition) else DB.BuiltInParameter.INVALID
+        if bip != DB.BuiltInParameter.INVALID and bip not in _KEEP_BUILTINS: continue
+        q = new.get_Parameter(bip) if bip != DB.BuiltInParameter.INVALID else new.LookupParameter(name)
+        if q is None or q.IsReadOnly: continue
+        if p.StorageType == DB.StorageType.Double: q.Set(p.AsDouble())
+        elif p.StorageType == DB.StorageType.Integer: q.Set(p.AsInteger())
+        elif p.StorageType == DB.StorageType.String: q.Set(p.AsString() or '')
+        elif p.StorageType == DB.StorageType.ElementId: q.Set(p.AsElementId())
+    flip = inst.LookupParameter('Flip Profile').AsInteger()
+    up = inst.LookupParameter('Plane Faces Up').AsInteger()
+    if bz < 0: flip, up = 1 - flip, 1 - up
+    new.LookupParameter('Flip Profile').Set(flip)
+    new.LookupParameter('Plane Faces Up').Set(up)
+    doc.Regenerate()
+    after_box, after_vol = _box(new), volume_mm3(new)
+    if max(abs(a - b) for a, b in zip(before_box, after_box)) > 0.05 or abs(after_vol - before_vol) > 1e-3 * max(before_vol, 1):
+        tx.RollBack()
+        return None, 'the unhosted copy did not match the original (box %s vs %s); left as it was' % (
+            [round(v, 2) for v in before_box], [round(v, 2) for v in after_box])
+    old_id = inst.Id.Value
+    doc.Delete(inst.Id)
+    if not _commit(tx, fp, 'detaching Gola %d' % old_id, doc):
+        return None, 'Revit refused the replacement: ' + (' | '.join(fp.messages) or 'no message')
+    log('%s: Gola %d replaced by %d on level %s (%s)' % (doc.Title, old_id, new.Id.Value, lev.Name, why))
+    return new, 'Gola %d replaced by %d, unhosted on level %s (%s)' % (old_id, new.Id.Value, lev.Name, why)
+
+
+def _detach_reason(doc, inst, ok, detach_all):
+    """Why inst must leave the element it sits on before cutting, or None. Revit cannot cut an in-place
+    family with a channel placed on that same element (circular chain of references; seen on the
+    in-place Countertop80 in the Belmont model, 2026-10-02). detach_all (tests) treats any element as in-place."""
+    if isinstance(inst.Host, DB.Level): return None
+    for e in ok:
+        if (detach_all or _in_place(e)) and placed_on(doc, inst, e):
+            return 'placed on in-place element %s' % describe(e)
+    if _in_place(inst.Host): return 'placed on in-place element %s' % describe(inst.Host)
+    return None
+
+
+def apply(doc, insts, detach_all=False):
     """Make each channel cut exactly the candidates its void really cuts. Call outside any transaction.
-    Returns rows [instance id, added ids, removed ids, not-cuttable descriptions, refused [description, reason]]."""
+    Returns rows [instance id, added ids, removed ids, not-cuttable descriptions, refused [description, reason],
+    replacement message or None]. A channel placed on an in-place element is first replaced by an
+    unhosted copy (detach), and the row's id is the new instance's."""
     done = []
     tg = DB.TransactionGroup(doc, 'Gola Auto Cut'); tg.Start()
     changed = False
     for inst in insts:
         if inst is None or not inst.IsValidObject or not is_gola(inst): continue
         ok, no = touching(doc, inst)
+        note = None
+        replaced = False
+        why = _detach_reason(doc, inst, ok, detach_all)
+        if why:
+            new, note = detach(doc, inst, why)
+            if new is not None:
+                inst = new; changed = True; replaced = True
+                ok, no = touching(doc, inst)
         want = dict((e.Id.Value, e) for e in ok)
         have = cut_ids(inst)
         added, removed, refused = [], [], []
@@ -169,7 +264,8 @@ def apply(doc, insts):
                 log('%s: %s touches Gola %d but Revit does not allow it to be cut by voids' % (doc.Title, describe(e), inst.Id.Value))
         if added or removed:
             log('%s: Gola %d cut +%s -%s' % (doc.Title, inst.Id.Value, added, removed))
-        done.append([inst.Id.Value, added, removed, blocked, refused])
+        if note and not replaced: refused.append(['(replacement)', note])
+        done.append([inst.Id.Value, added, removed, blocked, refused, note])
     if changed: tg.Assimilate()
     else: tg.RollBack()
     return done
