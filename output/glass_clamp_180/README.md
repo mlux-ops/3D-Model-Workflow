@@ -78,13 +78,11 @@ Revit -> pyRevit -> **Reload** -> **SHB** tab -> **Build Clamp 180**, then `run_
 | Plate_Thickness | 1/8" | — | ASSUMED |
 | Clamp_Width | 5" | — | CRL |
 | Clamp_Height | 2" | — | CRL |
-| Joint_Gap | 1/16" | — | CRL template |
-| Hole_Edge_Distance | 1-19/32" | — | CRL template |
-| Cap_Diameter | 1/2" | — | ASSUMED |
-| Cap_Height | 1/16" | — | ASSUMED |
-| Cap_Spacing | 3-1/4" | `2 * Hole_Edge_Distance + Joint_Gap` | DERIVED |
-| Cap_Offset | 1-5/8" | `Cap_Spacing / 2` | helper |
-| Cap_Elevation | 1" | `Clamp_Height / 2` | helper |
+| Joint_Gap | 1/16" | `0.0625"` (locked) | CRL template |
+| Hole_Edge_Distance | 1-19/32" | `1.59375"` (locked) | CRL template |
+| Cap_Diameter | 1/2" | `0.5"` (locked) | ASSUMED |
+| Cap_Height | 1/16" | — (drives head depth) | ASSUMED |
+| Cap_Spacing | 3-1/4" | `2 * Hole_Edge_Distance + Joint_Gap` (informational) | DERIVED |
 | Clamp_Material | Vibrant Brushed Bronze | — | PROJECT |
 
 ### Constraints
@@ -97,7 +95,7 @@ Revit -> pyRevit -> **Reload** -> **SHB** tab -> **Build Clamp 180**, then `run_
 | Clamp Left / Right | EQ about Joint CL + `Clamp_Width` |
 | Clamp Top / Bottom | EQ about Glass Mid + `Clamp_Height` |
 
-Plates: sketched on the glass-face planes, depth `Plate_Thickness`, four side faces aligned and locked. Screw heads: sketched on Plate Outer Back, depth `Cap_Height`; centre and diameter dimensioned inside each sketch (`Cap_Offset`, `Cap_Elevation`, `Cap_Diameter`).
+Plates: sketched on the glass-face planes, depth `Plate_Thickness`, four side faces aligned and locked. Screw heads: round extrusions sketched on `Plate Outer Back` (they follow the glass and plate position), depth bound to `Cap_Height`. **Their diameter and position are fixed, not parametric:** the Revit API cannot edit a family extrusion's sketch (`SketchEditScope` is project-only, native run 2026-10-02), so `Joint_Gap`, `Hole_Edge_Distance`, `Cap_Diameter` and `Cap_Spacing` are formula-locked and only document the fixed geometry. This departs from the task sheet ("lock centers to Cap_Spacing"). Flexing Glass_Thickness, Clamp_Width and Plate_Thickness moves nothing that should stay put: the screws are independent of the clamp width, as on the real clamp.
 
 ## Native gates (`validation.json` → `gates`; re-derived by `verify_clamp.py`)
 
@@ -105,10 +103,10 @@ Plates: sketched on the glass-face planes, depth `Plate_Thickness`, four side fa
 |---|---|
 | `fresh_rfa_reopen_category`, `always_vertical_on_work_plane_off` | save → close → reopen; family parameters |
 | `types_present`, `type_parameters` | reopened types, formulas, every value per type, identity text |
-| `reference_planes_named`, `labelled_dimensions`, `plate_sides_locked`, `screw_heads_sketch_constrained` | plane names; dimension labels + EQ count; 8 locked face alignments; sketch-edit result |
+| `build_steps_clean`, `reference_planes_named`, `labelled_dimensions`, `plate_sides_locked` | no failed build step, 8 dimensions created; plane names; dimension labels + EQ count; 8 locked face alignments |
 | `parts_separate_bound` | 4 extrusions, 1 solid each, subcategory, `Clamp_Material` binding, face materials, visibility flags |
 | `default_geometry_measured` | 12 `Solid.IntersectWithCurve` rays: plate thickness/width/height, head X/Z/Y extents |
-| `flex_all_steps`, `flex_default_restored` | Glass 3/8↔1/2, Width 4↔6, Head Ø 7/16↔5/8, Plate 3/16↔1/8: commit captured, no errors, all 12 rays re-measured each step |
+| `flex_all_steps`, `flex_default_restored` | Glass 3/8↔1/2, Width 4↔6, Plate 3/16↔1/8: commit captured, no errors, all 12 rays re-measured each step |
 | `project_load_place` | disposable project: both types load, rays through the placed instance for 1/2 and 3/8 types, vertical |
 | `project_detail_levels` | instance solids: Coarse 2, Medium 4, Fine 4 |
 | `project_material_substitution` | `Clamp_Material` swapped: 4/4 solids carry it; restored |
@@ -120,12 +118,12 @@ Plates: sketched on the glass-face planes, depth `Plate_Thickness`, four side fa
 
 | Check | Result |
 |---|---|
-| `source/selftest_offline.py` | analytic clamp through the same 12 part rays, 8 flex steps, 3 project rays → verifier PASS; 16 tampered reports all rejected |
+| `source/selftest_offline.py` | analytic clamp through the same 12 part rays, 6 flex steps, 3 project rays → verifier PASS; every tampered report rejected |
 | `source/preview_offline.py` → [preview/analytic_preview.png](preview/analytic_preview.png) | room face plain, 2 heads at ±1-5/8", plan section with 1/16" joint |
 | `run_clamp.ps1` | PowerShell 7.4.6 parser 0 errors; preflight on Linux → BLOCKED exit 2 |
 | `build_clamp.py` | CPython `py_compile` clean; Py2-safe syntax. **Not executed against Revit.** |
 
-Untested API paths on first run (no precedent in this repo): `NewReferencePlane` + `Flip`, `NewDimension` with `FamilyLabel` / `AreSegmentsEqual`, `NewAlignment` locks, `SketchEditScope` with `CurveElement.CenterPointReference` and `NewDiameterDimension`, `FamilyElementVisibility`, `Document.GetUnusedElements`, `SaveAsOptions.Compact`. Each is recorded in `validation.json`; a failure there fails its gate, not silently.
+Native runs so far (2026-10-02, `MAXSPC`, Revit 2025.2): proven to run without error: discovery, family creation, parameters/types/formulas, material and appearance, subcategories, ten reference planes, eight dimensions (after the regenerate / Strong Reference fix), both plates and both screw heads including `FamilyElementVisibility`. Still unproven: the plates' side-face `NewAlignment` locks, `Document.GetUnusedElements` purge, `SaveAsOptions.Compact`, reopen/measure, project placement, flex. Each is recorded in `validation.json`; a failure there fails its gate, not silently.
 
 ## After a technical pass
 

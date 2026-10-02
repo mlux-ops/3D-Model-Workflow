@@ -131,8 +131,7 @@ def good_report():
                                                    'plate_front', 'width', 'width_eq'], 'dimension_errors': []},
                   'parts': {
             'plate_front': {'side_locks': [{'locked': True}] * 4},
-            'plate_back': {'side_locks': [{'locked': True}] * 4},
-            'cap_left': {'sketch_constrained': True}, 'cap_right': {'sketch_constrained': True}},
+            'plate_back': {'side_locks': [{'locked': True}] * 4}},
             'purge': {'available': True, 'passes': [], 'remaining_unused': 0}},
         'family': {'reopened': True, 'category': 'Generic Models', 'always_vertical': 1, 'work_plane_based': 0,
                    'types': sorted(n for n, _ in S.TYPES), 'current_type': S.DEFAULT_TYPE,
@@ -243,8 +242,8 @@ def main():
             {'severity': 'Error', 'text': 'Constraints are not satisfied'}))
         tampered('coarse shows screw heads', lambda r: r['family']['parts']['cap_left']['visibility'].__setitem__(
             'coarse', True))
-        tampered('cap sketch unconstrained', lambda r: r['build']['parts']['cap_right'].__setitem__(
-            'sketch_constrained', False))
+        tampered('Cap_Diameter not formula-locked', lambda r: r['family']['parameters']['Cap_Diameter'].__setitem__(
+            'formula', None))
         tampered('3/8 type wrong', lambda r: r['family']['type_values']['3-8 Glass'].__setitem__(
             'Glass_Thickness', 0.5))
         tampered('formula changed', lambda r: r['family']['parameters']['Cap_Spacing'].__setitem__(

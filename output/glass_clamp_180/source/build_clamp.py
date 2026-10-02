@@ -16,11 +16,12 @@ One Revit session, touching only new documents and output/glass_clamp_180:
      four side faces aligned and locked to the clamp-edge planes
   4. screw heads (rear plate, CRL rear view): extrusions sketched on Plate Outer Back,
      depth = Cap_Height; centre and diameter constrained inside the sketch
-     (SketchEditScope) to Cap_Offset, Cap_Elevation and Cap_Diameter
+     sketch plane follows the plate; depth = Cap_Height. Diameter and position are FIXED: the Revit API
+     cannot edit a family extrusion sketch (SketchEditScope is project-only, native run 2026-10-02)
   5. subcategories, Clamp_Material binding, coarse visibility off for screw heads
   6. purge unused, compact save, close, REOPEN; measure every part by ray
   7. load into a disposable project, place, switch type, substitute the material
-  8. flex Glass_Thickness / Clamp_Width / Cap_Diameter / Plate_Thickness in the reopened
+  8. flex Glass_Thickness / Clamp_Width / Plate_Thickness in the reopened
      family with a failure capture, re-measure every step, restore, close unsaved
   9. export review images
 
@@ -690,72 +691,6 @@ def make_cap(doc, key, sign, outer_plane, v, params, subcats, record):
     return extrusion
 
 
-def constrain_cap(doc, key, extrusion, view, planes, v, sign, record):
-    """Inside the cap's sketch: centre to Joint CL = Cap_Offset, to Clamp Bottom = Cap_Elevation,
-    diameter = Cap_Diameter. SketchEditScope must run outside any open transaction."""
-    rec = record.setdefault(key, {})
-    fm = doc.FamilyManager
-    scope = DB.SketchEditScope(doc, 'Constrain ' + key)
-    scope.Start(extrusion.SketchId)
-    tx = DB.Transaction(doc, 'Dimension ' + key)
-    tx.Start()
-    made = []
-    try:
-        sketch = doc.GetElement(extrusion.SketchId)
-        arcs = []
-        for element_id in sketch.GetAllElements():
-            element = doc.GetElement(element_id)
-            if isinstance(element, DB.CurveElement) and isinstance(element.GeometryCurve, DB.Arc):
-                arcs.append(element)
-        rec['sketch_arcs'] = len(arcs)
-        cx = sign * v['Cap_Offset']
-        yplane = planes['Plate Outer Back'].GetPlane().Origin.Y * 12.0
-        for index, arc in enumerate(arcs):
-            try:
-                arc.CenterMarkVisible = True
-            except Exception:
-                pass
-            centre_ref = arc.CenterPointReference
-            if centre_ref is None:
-                raise RuntimeError('CenterPointReference is None for %s arc %d' % (key, index))
-            offset = dimension(doc, view, (0, yplane, -1.4 - 0.2 * index), (cx, yplane, -1.4 - 0.2 * index),
-                               [planes['Joint CL'], centre_ref], '%s_offset_%d' % (key, index), rec,
-                               label=fm.get_Parameter('Cap_Offset'), regenerate=False)
-            if offset is None:
-                raise RuntimeError('Cap_Offset dimension failed for %s (see dimension_errors)' % key)
-            made.append('Cap_Offset')
-            elevation = dimension(doc, view, (cx + 0.6 + 0.2 * index, yplane, -v['Clamp_Height'] / 2.0),
-                                  (cx + 0.6 + 0.2 * index, yplane, 0.0),
-                                  [planes['Clamp Bottom'], centre_ref], '%s_elevation_%d' % (key, index), rec,
-                                  label=fm.get_Parameter('Cap_Elevation'), regenerate=False)
-            if elevation is None:
-                raise RuntimeError('Cap_Elevation dimension failed for %s (see dimension_errors)' % key)
-            made.append('Cap_Elevation')
-            curve_ref = arc.GeometryCurve.Reference
-            if curve_ref is None:
-                curve_ref = DB.Reference(arc)
-            diameter = doc.FamilyCreate.NewDiameterDimension(view, curve_ref, xyz(cx, yplane, v['Cap_Diameter']))
-            diameter.FamilyLabel = fm.get_Parameter('Cap_Diameter')
-            made.append('Cap_Diameter')
-            if len(arcs) == 1:
-                break
-        tx.Commit()
-        capture = FailureCapture('Sketch ' + key)
-        scope.Commit(capture)
-        rec['sketch_constraints'] = made
-        rec['sketch_commit_messages'] = capture.messages
-        rec['sketch_constrained'] = True
-    except Exception:
-        rec['sketch_constrained'] = False
-        rec['sketch_error'] = traceback.format_exc()
-        if tx.HasStarted() and not tx.HasEnded():
-            tx.RollBack()
-        try:
-            scope.Cancel()
-        except Exception:
-            pass
-
-
 # --------------------------------------------------------------------- views
 def view_type_3d(doc):
     return next(v for v in DB.FilteredElementCollector(doc).OfClass(DB.ViewFamilyType)
@@ -862,7 +797,7 @@ def build(app):
     front = find_view(doc, DB.ViewType.Elevation, 'Front')
     back = find_view(doc, DB.ViewType.Elevation, 'Back')
 
-    TX, _ = captured_transaction(doc, 'Build SHB_Glass Clamp 180 Square')
+    TX, main_capture = captured_transaction(doc, 'Build SHB_Glass Clamp 180 Square')
     TX.Start()
     family = doc.OwnerFamily
     family.FamilyCategory = DB.Category.GetCategory(doc, DB.BuiltInCategory.OST_GenericModel)
@@ -932,14 +867,11 @@ def build(app):
     status = TX.Commit()
     TX = None
     rec['main_commit_status'] = str(status)
+    if str(status) != 'Committed':     # a failure handler can roll the whole build back without raising
+        REPORT.setdefault('build_errors', []).append(
+            {'step': 'main transaction commit', 'error': 'status %s; failures: %r' % (status, main_capture.messages)})
     REPORT['parts'] = dict((k, str(e.Id.Value)) for k, e in elements.items())
     checkpoint('plates and screw heads created')
-
-    # Revit's Front elevation looks toward +Y from the -Y (screw) side, so the heads face it.
-    for key, sign in (('cap_left', -1.0), ('cap_right', 1.0)):
-        if key in elements:
-            constrain_cap(doc, key, elements[key], front, planes, v, sign, part_rec)
-        checkpoint('constrained ' + key)
 
     TX, _ = captured_transaction(doc, 'Review views')
     TX.Start()
@@ -1239,7 +1171,6 @@ def gates():
     types = fam.get('type_values', {})
     params = fam.get('parameters', {})
     labels = fam.get('dimension_labels', {})
-    caps_constrained = all(build_rec.get('parts', {}).get(k, {}).get('sketch_constrained') for k in ('cap_left', 'cap_right'))
     result = {
         'revit_2025_host': str(REPORT.get('revit_version', '')).startswith('2025'),
         'build_steps_clean': not REPORT.get('build_errors') and not build_rec.get('planes', {}).get('dimension_errors')
@@ -1260,7 +1191,6 @@ def gates():
         'plate_sides_locked': sum(1 for k in ('plate_front', 'plate_back')
                                   for r in build_rec.get('parts', {}).get(k, {}).get('side_locks', [])
                                   if r.get('locked')) >= S.MIN_LOCKED_ALIGNMENTS,
-        'screw_heads_sketch_constrained': caps_constrained,
         'parts_separate_bound': len(parts) == len(S.PARTS) and all(
             parts[k].get('found') and parts[k].get('subcategory') == sub
             and parts[k].get('material_parameter') == 'Clamp_Material' and parts[k].get('solids') == 1

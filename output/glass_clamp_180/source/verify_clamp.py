@@ -115,7 +115,11 @@ def check(rep, run_dir=RUN_DIR, run_start=RUN_START):
             continue
         if row.get('instance') is not False:
             add('parameter %s is not a type parameter' % name)
-        if (row.get('formula') or None) != formula:
+        got = (row.get('formula') or '').replace(' ', '')
+        if name in S.LOCKED_PARAMETERS and name != 'Cap_Spacing':
+            if not got:
+                add('parameter %s is not formula-locked' % name)      # constants: Revit may reformat the text
+        elif got != (formula or '').replace(' ', ''):
             add('parameter %s formula %r, expected %r' % (name, row.get('formula'), formula))
     for type_name, glass in S.TYPES:
         values = (fam.get('type_values') or {}).get(type_name) or {}
@@ -156,10 +160,6 @@ def check(rep, run_dir=RUN_DIR, run_start=RUN_START):
                  for r in (parts_build.get(k) or {}).get('side_locks', []) if r.get('locked') is True)
     if locked < S.MIN_LOCKED_ALIGNMENTS:
         add('plate side faces locked: %d of %d' % (locked, S.MIN_LOCKED_ALIGNMENTS))
-    for key in ('cap_left', 'cap_right'):
-        row = parts_build.get(key) or {}
-        if row.get('sketch_constrained') is not True:
-            add('%s sketch not constrained: %s' % (key, str(row.get('sketch_error', '')).strip().splitlines()[-1:]))
 
     # parts
     parts = fam.get('parts') or {}

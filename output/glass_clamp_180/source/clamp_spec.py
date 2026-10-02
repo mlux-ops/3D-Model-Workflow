@@ -30,21 +30,24 @@ PARAMETERS = [
      'Not printed by CRL; schematic template section scales 0.14-0.18 in (unreliable).'),
     ('Clamp_Width', 'length', 5.0, None, VERIFIED, 'CRL: Width 5 in (127 mm).'),
     ('Clamp_Height', 'length', 2.0, None, VERIFIED, 'CRL: Height 2 in (51 mm).'),
-    ('Joint_Gap', 'length', 0.0625, None, VERIFIED, 'CRL template: 1/16 in (1.5 mm) gap. Task sheet assumed 1/8.'),
-    ('Hole_Edge_Distance', 'length', 1.59375, None, VERIFIED,
-     'CRL template: hole centre 1-19/32 in (41 mm) from glass edge.'),
-    ('Cap_Diameter', 'length', 0.5, None, ASSUMED,
-     'Screw head; CRL rear isometric scales about 0.46 in. Task sheet assumed 3/4.'),
+    ('Joint_Gap', 'length', 0.0625, '0.0625"', VERIFIED,
+     'CRL template: 1/16 in (1.5 mm) gap. Task sheet assumed 1/8. Formula-locked: no glass is modelled.'),
+    ('Hole_Edge_Distance', 'length', 1.59375, '1.59375"', VERIFIED,
+     'CRL template: hole centre 1-19/32 in (41 mm) from glass edge. Formula-locked: screw positions are fixed.'),
+    ('Cap_Diameter', 'length', 0.5, '0.5"', ASSUMED,
+     'Screw head; CRL rear isometric scales about 0.46 in. Task sheet assumed 3/4. Formula-locked: the Revit '
+     'API cannot constrain a family extrusion sketch, so the head diameter is fixed.'),
     ('Cap_Height', 'length', 0.0625, None, ASSUMED,
      'CRL draws the heads flush; 1/16 in proud is a visual reveal only. Task sheet assumed 1/8.'),
     ('Cap_Spacing', 'length', 3.25, '2 * Hole_Edge_Distance + Joint_Gap', DERIVED,
-     'Screw centres = glass-hole centres. Task sheet formula Clamp_Width - 2 in gave 3 in.'),
-    ('Cap_Offset', 'length', 1.625, 'Cap_Spacing / 2', DERIVED, 'Helper: Joint CL to each screw centre.'),
-    ('Cap_Elevation', 'length', 1.0, 'Clamp_Height / 2', DERIVED, 'Helper: Clamp Bottom to screw centre.'),
+     'Screw centres = glass-hole centres. Task sheet formula Clamp_Width - 2 in gave 3 in. Informational: '
+     'the screw positions are fixed.'),
     ('Clamp_Material', 'material', None, None, PROJECT, 'Default material below.'),
     ('Model Accuracy Notes', 'text', None, None, None, 'See ACCURACY_NOTE.'),
 ]
 LENGTH_DEFAULTS = dict((p[0], p[2]) for p in PARAMETERS if p[1] == 'length')
+# Parameters that only document fixed geometry (formula-locked in the family; editing them moves nothing)
+LOCKED_PARAMETERS = ('Joint_Gap', 'Hole_Edge_Distance', 'Cap_Diameter', 'Cap_Spacing')
 FORMULAS = dict((p[0], p[3]) for p in PARAMETERS if p[3])
 
 # Built-in identity parameters (the family already owns Manufacturer, Model, Description,
@@ -60,7 +63,9 @@ IDENTITY = {
 }
 ACCURACY_NOTE = ('Generic stand-in for CRL SGC180BBRZ. CRL-verified: 2 x 5 in, 3/8-1/2 in glass, 1/16 in joint gap, '
                  'screw centres 1-19/32 in from each glass edge, 2 rear screws, plain front. ASSUMED: plate 1/8 in, '
-                 'screw head 1/2 in dia x 1/16 in proud. Gaskets not modelled. See output/glass_clamp_180/INFERENCES.md.')
+                 'screw head 1/2 in dia x 1/16 in proud. Screw head diameter and position are fixed (Joint_Gap, '
+                 'Hole_Edge_Distance, Cap_Diameter, Cap_Spacing are formula-locked and informational); heads follow '
+                 'Plate Outer Back and Cap_Height. Gaskets not modelled. See output/glass_clamp_180/INFERENCES.md.')
 
 # Material: finish-database name for the 651 Belmont primary-bath bronze (Kohler BV rows,
 # Duplex Down / Penthouse / Simplex primary baths). Values from the task sheet.
@@ -89,14 +94,12 @@ SPEC_PLANES = ['Joint CL', 'Glass Mid', 'Glass Face Front', 'Glass Face Back',
                'Plate Outer Front', 'Plate Outer Back']
 EXTRA_PLANES = ['Clamp Left', 'Clamp Right', 'Clamp Top', 'Clamp Bottom']
 # Labelled dimensions expected in the saved family: label -> count
-LABELLED_DIMENSIONS = {'Glass_Thickness': 1, 'Plate_Thickness': 2, 'Clamp_Width': 1, 'Clamp_Height': 1,
-                       'Cap_Offset': 2, 'Cap_Elevation': 2, 'Cap_Diameter': 2}
+LABELLED_DIMENSIONS = {'Glass_Thickness': 1, 'Plate_Thickness': 2, 'Clamp_Width': 1, 'Clamp_Height': 1}
 EQ_DIMENSIONS = 3            # glass faces about Y=0, clamp sides about Joint CL, top/bottom about Glass Mid
 MIN_LOCKED_ALIGNMENTS = 8    # 4 side faces per plate
 
 FLEX = [('Glass_Thickness', [0.375, 0.5]),
         ('Clamp_Width', [4.0, 6.0]),
-        ('Cap_Diameter', [0.4375, 0.625]),
         ('Plate_Thickness', [0.1875, 0.125])]
 
 DIM_TOL = 1e-3
@@ -110,8 +113,7 @@ def resolve(values=None):
     if values:
         v.update(values)
     v['Cap_Spacing'] = 2.0 * v['Hole_Edge_Distance'] + v['Joint_Gap']
-    v['Cap_Offset'] = v['Cap_Spacing'] / 2.0
-    v['Cap_Elevation'] = v['Clamp_Height'] / 2.0
+    v['Cap_Offset'] = v['Cap_Spacing'] / 2.0     # derived here only; not a Revit parameter
     return v
 
 
