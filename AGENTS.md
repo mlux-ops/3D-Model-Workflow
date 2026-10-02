@@ -4,6 +4,13 @@
 
 User instruction, recorded 2026-09-26: **Default effort is high. Use max only for challenging textures, and only when the user requests it.** Don't pick max, or xhigh, on your own initiative, including for subagents and headless runs. The evidence is in `output/effort-trial-2026-09-26-hex/TRIAL_RESULTS.md`: max gave the best texture at about 4× the cost of high, and xhigh gave no clear gain over high.
 
+User instruction, recorded 2026-09-30: **Model defaults by job type.** They come from the Sonnet 5.5 trial in `output/effort-trial-2026-09-29-sonnet/TRIAL_RESULTS.md`.
+- **Revit family builds (light fixtures, casework profiles and similar):** Sonnet 5.5 (`claude-sonnet-5-5`) at **high**, for the main session, subagents and headless `claude -p` runs. All three efforts passed every native gate. xhigh and max cost 2.7× and 5× with no gain.
+- **Materials and textures:** Opus 5.5 at **high** (user instruction, 2026-09-30, replacing a brief Sonnet-xhigh setting). It ranked 3rd of 6 in the blind texture review for $6.88. Use Opus max only for challenging production textures, and only when the user requests it. Never use Sonnet high for materials; it ranked last.
+- **xhigh:** don't use it on either model.
+- **The model and effort for this main session are set in the app's model and effort pickers, not by the agent.** When a family-build task starts in an Opus session, say so and suggest switching; for delegated work, pass `model` / `--model claude-sonnet-5-5 --effort high`.
+- **Cost of `claude -p` Sonnet runs:** compute it from tokens ($2 in, $10 out, $4 cache write (1 h), $0.20 cache read per million). The CLI reports Sonnet 5.5 at Opus rates.
+
 ## Stalls and retries
 
 User instruction, recorded 2026-09-22: **If work or a tool is stalling, tell the user promptly instead of repeatedly retrying or polling without meaningful progress.** State what is stalled, how long it has been stalled, and the last verified stage. Do not make repeated attempts at the same action without new evidence or a changed approach. Continue independent work when possible, and report any remaining blocker clearly.

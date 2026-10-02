@@ -3,3 +3,9 @@
 
 # Scratch intermediates (regenerable, often >100MB)
 output/**/_work/
+output/**/work/
+
+# Revit auto-backups and runtime lock files
+*.[0-9][0-9][0-9][0-9].rfa
+*.[0-9][0-9][0-9][0-9].rvt
+*.lock

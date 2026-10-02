@@ -1564,3 +1564,101 @@ Errors met while fixing:
 
 Open: the Countertop81 family is needed to reproduce the circular chain. Workaround given: place the channel on a drawn Reference Plane (Place on Work Plane) so it doesn't depend on the cabinet.
 - Drive verified via API 2026-09-29 02:18Z: both packages carry gola_autocut.py 12115; README 8247 (TwoClick) / 6166 (Wall Unit); zips 2273174 / 3635755. All match local. The installed E:\pyRevit Extensions copy was updated after confirming it matched the last shipped version.
+
+## Sonnet 5.5 effort trial (hex material + Nodes sconce) — 2026-09-29
+- Setup: `output/effort-trial-2026-09-29-sonnet/`. hex/BRIEF.md is the 2026-09-26 Opus hex brief with only the model name, a ban on reading the earlier trial, and foreground/PID rules changed (`hex/_harness/make_brief.py`), so the Opus grader and blind review can be reused. sconce/BRIEF.md is new: KW1041MBK Nodes sconce, Revit 2025 face-based Lighting Fixtures family, baseline `output/lightology_20260923/f07_833919/` (built 2026-09-23 by the Lightology orchestration, logged as model "5.6"/xhigh, not Opus). Revit runs are serialized by `sconce/_harness/revit_run.py` (msvcrt file lock, PID-tree kill on timeout).
+- Finding: headless `claude -p --model claude-sonnet-5-5` prints `[claude-code:unrecognized_model]` and reports `costBasis: "unknown"`; a probe's `total_cost_usd` matched Opus 5.5 rates, so the CLI cost figure is not Sonnet's price. Compute cost from token counts with Sonnet list prices. Sonnet 5.5 context window reported as 200k (Opus 1M).
+- Error (tool permission): launching the six arms (`launch_arm.sh`, `claude -p ... --permission-mode bypassPermissions`) in parallel background Bash calls, the auto-mode classifier denied hex high and hex xhigh ("Create Unsafe Agents") and allowed hex max and all three sconce arms. Cause: classifier policy on spawning bypass-permission headless agents; the inconsistent split is unexplained. Solution: the user asked for the permission to be added; added Bash allow rules for `launch_arm.sh` in `.claude/settings.local.json` and launched hex high and xhigh. Status: resolved.
+- Grader build (`sconce/_harness/grade_sconce.py`), tested on the baseline in a scratch copy:
+  - Error (measurement): the first pass read the baseline width as 7.878 in, although its bounding box is 8.000. Cause: `Face.Triangulate(0.5)` cuts chords off circular edges. Solution: `Triangulate(1.0)` plus `Edge.Tessellate()` points. Verified: 8.000 W × 7.633 H × 5.537 D, matching the baseline's own validation.
+  - Error (preview): FitToPage views were mis-framed; the view with the wall rendered the wall over the fixture. Solution: set each view's crop box from the instance bounding box, and drop the wall-in-view export (hosting is checked numerically). Status: resolved for front/side/oblique.
+  - Baseline findings: D 5.537 in (outside ±0.02 of 5.5); not a light family (`LightFamily.GetLightFamily` refuses it), so no light source; no `Show Disc` parameter (the new brief asks for one, the old brief didn't).
+- 2026-09-29 22:08, user report: their Revit seemed to be "bugging out" from the trial's requests, and they asked for separate Revit windows. Checked: every trial Revit run was already a separate headless Revit.exe started by `pyrevit run` (e.g. PIDs 37020 and 5152, about 20 s each, exiting afterwards). The owner's session, PID 32864 (restarted 20:17), was never driven, and no arm transcript calls revitmcp. The likely cause is machine load: six agent sessions, numpy texture builds, and a Revit launch every ~20–60 s. The cause is not confirmed. Change: `revit_run.py` now starts pyrevit at BELOW_NORMAL priority, and Revit inherits it (verified: PID 27308 BelowNormal, owner's Revit Normal). The six running arm processes were also lowered to BelowNormal. Status: mitigated. Not yet confirmed by the user.
+- Grader fixes after the sconce high arm finished (22:37):
+  - Error (grader): a light family's instance geometry includes Revit's light-source proxy solid, reported by the arm as 24 in. Left in, it would have wrecked the envelope for every arm with a light source. Cause: the grader had only been tested on the baseline, which has no light source. Solution: skip solids whose GraphicsStyle category is `OST_LightingFixtureSource`, and take the light position from the proxy's centroid.
+  - Error (grader): the shade's axial caliper read 3.27 in against 3.25 on both families. Cause: the direction grid is about 4° apart. Solution: local refinement of the min and max caliper directions.
+  - Verified: high 8.000 × 7.630 × 5.4995, shade 3.2500 / 3.49999, light inside shade; baseline 5.5366 D, shade 3.2500 / 3.49996.
+  - Error (brief): the sconce brief said `pdftoppm` is on PATH. The high arm found it missing (confirmed: `which pdftoppm` finds nothing; `pdftotext` exists). It is a brief error that affects all three sconce arms equally, so the comparison is unaffected. Prevention: check every tool a brief names before launch.
+- 2026-09-30 00:12: the owner asked to stop the hex max arm. I ended only its process tree (claude.exe PID 39088). It had been running 2 h 18 min, with 231 API calls, 786k output tokens, 26.8M cache reads and 1.31M cache writes.
+  - State at stop: `Color.png`, `Bump16.png` and `face_ids.png` were written at 00:11:22 by a rebuild that added a "Raw pit-darkening" colour term. That rebuild was never self-verified. `report.json` and the previews date from the 00:03 build. `README.md` and `SOURCE_SELECTION.md` were never written. All three PNGs decode fully.
+  - The copied Opus grader (`hex/_harness/grade_hex.py`, paths changed only) passes all three Sonnet arms on every gate. Raw 3 in patch-search max: high 0.50, xhigh 0.26, max 0.37 (Opus: 0.57 / 0.27 / 0.28; baseline 0.71).
+  - Blind set of the six atlases, Opus and Sonnet at each effort: `hex/_harness/build_blind6.py`, which reuses the Opus renderer; key in `blind_key6.json`.
+- Blind review of the six hex atlases (Opus reviewer, key revealed afterwards): 1 Opus max (27/35), 2 Sonnet max (26, stopped and unverified), 3 Opus high (26), 4 Sonnet xhigh (24), 5 Opus xhigh (23), 6 Sonnet high (17, high confidence last). Sonnet high had shading baked into the Chiseled colour, blurry Raw colour with swirl blotches, a recognisable repeated Raw motif and non-flat Matte. Sonnet max had the best Raw relief and the flattest Matte, but invented speckle in the Raw colour and wavy ridges. The Opus max ranking agrees with the 2026-09-26 review.
+- Sconce grading, 2026-09-30:
+  - Error (grader): the xhigh `ComputeCentroid()` on the light proxy failed. That left a transaction open, so `doc.Close` threw, and the headless Revit (PID 44652) never exited; I killed it by PID. Solution: fall back to the proxy's bounding-box centre, and roll back open transactions before closing.
+  - Error (grader views): framing from the instance bounding box included the 24 in light proxy, so the fixtures rendered tiny. Solution: crop from physical-solid points. Both are resolved; the rerun graded all four with 0 errors.
+  - Results: high, xhigh and max all pass every numeric gate (8.000 × 7.630 × 5.4996–5.4998 in, shade 3.2500 / 3.5000, backplate 5.25 × 0.125, light inside shade, correct material faces, 0 warnings). Baseline fails depth (5.537) and has no light source.
+  - Visual: all three Sonnet bodies are an angled-cut drum like the side photo; the baseline is a tapered cone. max's shade renders as clear glass, not the photos' opaque milk glass.
+  - Max arm cost: 145 min, 1.04M output tokens, 34.4M cache reads, 1.71M cache writes.
+- Trial complete, 2026-09-30. Write-up: `output/effort-trial-2026-09-29-sonnet/TRIAL_RESULTS.md`.
+  - Sonnet cost at list price, computed from tokens ($2 in, $10 out, $4 1-hour cache write, $0.20 read):
+    - hex: high $5.04, xhigh $8.75, max ≥ $18.45 (stopped);
+    - sconce: high $4.76, xhigh $13.02, max $24.16.
+  - Cache reads cost the same on Opus and Sonnet, so Sonnet is not half price per task.
+  - Conclusion: Sonnet high is enough for Revit family builds. Keep Opus for textures (Sonnet high ranked last; Sonnet max ranked second but isn't cheaper per finished result).
+- 2026-09-30: owner adopted the trial's model defaults; recorded in AGENTS.md (Effort level section).
+- 2026-09-30: owner changed the material default to Sonnet 5.5 xhigh (Revit families stay Sonnet high); AGENTS.md updated.
+- 2026-09-30: owner corrected the material default to Opus 5.5 high (not Sonnet xhigh); AGENTS.md and memory updated.
+
+## 2026-10-02 — Gola Wall Unit (upper cabinet) rotated 90° when placed on the cabinet underside
+
+- **Artifact:** `output/gola_wall_unit/Richelieu_Gola_Wall_Unit_Upper_Cabinet_2025.rfa`.
+- **Observed (user screenshots):** placed with Place on Face on the underside of an upper cabinet, the metal profile and its void sat inside the cabinet, turned 90°.
+- **Cause (confirmed):** the 2026-09-28 build was designed for the cabinet's *front* face. In that build the family's y axis was up the face and z was out of it. On a downward face, z points down, so the section rotated about the run. The user's workflow is the underside; the README's front-face instruction did not match it.
+- **Fix:** rebuilt for underside placement.
+  - Section mapping: to_local height becomes −z (up into the box), and the out-of-face depth becomes y, with the profile front face at y = −100.
+  - The Placement Plane is now **y-normal**, defines the origin, and is dimensioned from a pinned 'Setback Datum' at y = −1000. Placement Offset = `if(Flip Profile, 1100 mm - Wall Setback, 900 mm + Wall Setback)`. Because the dimension is measured from a datum on one side, Flip can mirror across the clicked edge even though the setback lies along the same axis.
+  - One void is sketched on the datum plane (x by z band, −20..+1 mm), its edges locked to Left/Right in the Front elevation. Recess Start = `if(Flip Profile, 1097 mm - Wall Setback, 900 mm - Cut Depth)`; Recess End = `if(Flip Profile, 1100 mm + Cut Depth, 903 mm + Wall Setback)`.
+  - The template's 'Center (Front/Back)' plane no longer defines the origin.
+- **Convention, verified:** a line-based family on a face has local y = face normal × run direction. On an underside (normal −Z) drawn left to right facing the cabinet, +y points to the cabinet front, so the profile must sit at −y.
+- **Test gotcha:** after InstanceVoidCutUtils cuts a family instance, its geometry no longer contains a GeometryInstance, so symbol-geometry face lookups fail ('box underside/front face not found' in the preview step). Read face positions before cutting.
+- **Verification:**
+  - `verify_wall_unit.py`: 33/33 gates. Underside L→R: front face 19.05–39.05 mm behind the front edge, rising 0–26.9 mm. Flip and setbacks 0 and 1" behave as designed.
+  - Cuts while hosted on the cut box: 1,171,500 / 9,571,500 / 90,000 (flipped) mm³, exact, with no failures; the channel stays hosted.
+  - `test_circular.py` re-pointed to underside placement: T1–T5 pass (updater 1,171,500 exact).
+  - Front-face scripts and results archived in `logs/*_frontface_*`.
+- **Delivery:** package and zip refreshed; RFA md5 0f58c22b… matches the Drive copy; RFA and README verified through the Drive API (modified 2026-10-02T07:06Z, folder 1WATvxLeSy-xq7VHNS6BSy6stGk75bD2I). GolaAutoCut unchanged.
+
+## 2026-10-02 — Circular chain again with the underside-rebuilt wall unit on Countertop80 (UNRESOLVED)
+
+- **Observed (user screenshot, on Cut):** "There is a circular chain of references among the highlighted elements". The loop lists:
+  - Type Casework : Countertop80 : Countertop, id 12634733;
+  - instance id 12634735;
+  - "Architectural :  : Countertop80 : Countertop", id 13569011, with **no category**;
+  - Generic Model Richelieu_Gola_Wall_Unit_Upper_Cabinet_2025 **(4)**, id 13569117.
+- **Known:** the channel is face-hosted on the countertop it cuts.
+  - The underside-hosted cut of a plain Casework box commits in headless tests (verify 33/33, test_circular T1).
+  - Countertop80 differs: its **Type** and an uncategorised element of the same family/type are in the loop, which never happened in the tests.
+- **Cause:** unknown, and the countertop family is needed to find it.
+  - Suspects: a nested shared component, or a face reference that resolves through the type geometry.
+- **Blocked:** RevitMCP and the MaterialFix routes time out (curl exit 28) while the error dialog is modal.
+- **Next step:**
+  - Read-only routes were added to `E:\pyRevit Extensions\MaterialFix.extension\startup.py` (backup in `output/gola_wall_unit/logs/materialfix_startup_before_2026-10-02.py`): `/material-fix/gola/inspect` and `/material-fix/gola/save_family_copy`. The latter uses EditFamily → SaveAs into `output/gola_wall_unit/inspect/` → Close; it doesn't load anything back.
+  - They need the dialog dismissed (Cancel), then a pyRevit Reload.
+  - Then reproduce headless with the real Countertop80.
+
+### Update 2026-10-02 — RESOLVED: Countertop80 is an in-place family
+
+- **Cause (confirmed):**
+  - EditFamily on 12634735 failed with "This family is in-place and is not supported for editing".
+  - 13569011 (no category, named "Countertop") is the in-place family's extrusion.
+  - The user's "single generic model extrusion" is this in-place element (Casework, 183 CF). The channel's Work Plane is "Countertop80 : Countertop".
+  - Revit can't cut an in-place element with a void instance placed on that element's face: the loop is type → instance → in-place form → channel.
+- **Evidence:** a rolled-back test route in the user's session placed a temporary *unhosted* copy of the channel on the level below and cut Countertop80. Result: CanBeCutWithVoid True, commit "Committed", no failures, 22,697 mm³ removed. After the TransactionGroup rollback the target volume was unchanged.
+- **Fix:**
+  - Wall-unit family: new instance parameter **Plane Faces Up**, which mirrors the profile and void in z. It needs 4 profile extrusions with formula visibility and 2 voids; the inactive void parks 2–3 mm in front of the clicked edge.
+  - GolaAutoCut `detach()`: when a channel is placed on an in-place element it must cut, it is replaced before cutting by a level-based copy (Flip/Plane Faces Up toggled for a downward face; instance params and comments copied). The copy is then checked: visible-solid extents within 0.05 mm, else roll back. The old channel is deleted, then the cut runs.
+  - The Cut Gola Recesses button lists replacements.
+- **New gotchas:**
+  1. `NewFamilyInstance(curve, symbol, level, NS)` drops a line-based instance's line onto the level elevation; move it by dz afterwards.
+  2. `get_BoundingBox` of the Gola includes void forms, which reach to the datum plane at y = −1000 mm. Compare visible solids instead.
+  3. In IronPython, use `getattr(DB.StorageType, 'None')`.
+  4. In MaterialFix, `_eid` takes an ElementId, not an element, and `Symbol.Name` raises AttributeError: use `DB.Element.Name.GetValue`.
+- **User-reported crash after a pyRevit Reload:** false alarm. Same Revit PID 3988, responding, model open. The PID changed from 20916 since the earlier session; look it up with Get-Process Revit instead of relying on memory.
+- **Verification:**
+  - `verify_wall_unit.py` 43/43 gates, including Plane Faces Up and detach in both click directions: identical copy, exact cut of 1,471,500 mm³ at Cut Depth 30.
+  - `test_circular.py` T1–T5 pass.
+  - gola_setback and gola_setback2 `verify_autocut.py`: all gates pass.
+- **Clean-up and delivery:**
+  - The temporary MaterialFix routes were removed; `startup.py` restored from the backup and takes effect at the next reload.
+  - Add-in installed in `E:\pyRevit Extensions` and both packages; packages refreshed on Drive.
