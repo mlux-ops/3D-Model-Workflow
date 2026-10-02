@@ -13,3 +13,7 @@
 | verify_clamp.py | none (reads only) | — |
 
 Revit documents opened: new family from `Generic Model.rft`, the RFA it saved, a new blank project. No existing deliverable, `scripts/`, `docs/` or open model is written.
+
+## Tool and checkout discovery (2026-10-02)
+
+No fixed user, drive or install path remains in the kit (`grep -n 'C:\\\\' source/*.py run_clamp.ps1` is empty apart from documentation). `run_clamp.ps1` discovers pyRevit, Revit 2025, the template and Python 3 on the PC it runs on and prints what it found; `build_clamp.py` walks up from its own location (or `CLAMP_REPO_ROOT`) to the checkout and asks Revit for `FamilyTemplatePath`. Offline tests: `selftest_offline.py`, plus the runner against stub tools in a temporary copy (blocked, check-only, no-report, pass, verify-only, tampered).

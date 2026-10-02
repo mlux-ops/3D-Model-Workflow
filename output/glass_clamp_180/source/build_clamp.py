@@ -4,7 +4,7 @@ r"""SHB_Glass Clamp 180 Square (CRL SGC180BBRZ stand-in) - Revit 2025 family bui
 Run inside Revit 2025 through the pyRevit CLI with an ABSOLUTE script path
 (a relative path has returned exit 0 without running the script, E026):
 
-    "C:\Program Files\pyRevit-Master\bin\pyrevit.exe" run "<repo>\output\glass_clamp_180\source\build_clamp.py" --revit=2025
+    pyrevit run "<repo>\output\glass_clamp_180\source\build_clamp.py" --revit=2025
 
 or run output\glass_clamp_180\run_clamp.ps1, which also runs the verifier.
 
@@ -42,11 +42,8 @@ from System.Collections.Generic import List, HashSet
 
 RUN_NAME = 'glass_clamp_180'
 SCRIPT_VERSION = 'clamp-builder-2026-09-30'
-REPO_ROOT_CANDIDATES = [
-    r'C:\Users\found\OneDrive\Documents\ChatGPT\3D Model Workflow',
-    r'C:\Users\mlux\Documents\GitHub\3D-Model-Workflow',
-]
-TEMPLATE = r'C:\ProgramData\Autodesk\RVT 2025\Family Templates\English-Imperial\Generic Model.rft'
+TEMPLATE_NAME = 'Generic Model.rft'
+TEMPLATE = None     # resolved at run time by find_template(); never a fixed install path
 IMAGE_PREFIX = 'Clamp'
 PROJECT_PREFIX = 'Clamp_Project'
 
@@ -58,24 +55,53 @@ def _script_dir():
         return None
 
 
+def _walk_up(start):
+    path = os.path.abspath(start)
+    while True:
+        yield path
+        parent = os.path.dirname(path)
+        if parent == path:
+            return
+        path = parent
+
+
 def repo_root():
+    """The checkout this script lives in: CLAMP_REPO_ROOT, else walk up from this file, else from
+    the working directory. No user name, drive or folder name is assumed."""
     candidates = []
     env_root = os.environ.get('CLAMP_REPO_ROOT')
     if env_root:
         candidates.append(('CLAMP_REPO_ROOT', os.path.normpath(env_root)))
     here = _script_dir()
     if here:
-        candidates.append(('__file__', os.path.normpath(os.path.join(here, '..', '..', '..'))))
-    candidates.extend(('fallback candidate', c) for c in REPO_ROOT_CANDIDATES)
+        candidates.extend(('walk up from __file__', p) for p in _walk_up(here))
+    try:
+        candidates.extend(('walk up from working directory', p) for p in _walk_up(os.getcwd()))
+    except Exception:
+        pass
     for source, candidate in candidates:
         if (os.path.isfile(os.path.join(candidate, 'AGENTS.md')) and
                 os.path.isfile(os.path.join(candidate, 'output', RUN_NAME, 'source', 'clamp_spec.py'))):
             return candidate, source
-    raise RuntimeError('No repository root with AGENTS.md and output/%s/source/clamp_spec.py among: %s'
-                       % (RUN_NAME, ' | '.join(c for _, c in candidates)))
+    raise RuntimeError('No repository root (AGENTS.md + output/%s/source/clamp_spec.py) found; first tried: %s'
+                       % (RUN_NAME, ' | '.join('%s: %s' % c for c in candidates[:6])))
 
 
-ROOT, ROOT_SOURCE = repo_root()
+def _startup_failure(text):
+    """The run folder is unknown here, so no validation.json can be written; leave a note in TEMP."""
+    try:
+        import tempfile
+        with open(os.path.join(tempfile.gettempdir(), 'clamp_builder_startup_error.txt'), 'w') as handle:
+            handle.write(text)
+    except Exception:
+        pass
+
+
+try:
+    ROOT, ROOT_SOURCE = repo_root()
+except Exception:
+    _startup_failure(traceback.format_exc())
+    raise
 RUN_DIR = os.path.join(ROOT, 'output', RUN_NAME)
 _RUN_DIR_NORM = os.path.normpath(RUN_DIR)
 sys.path.insert(0, os.path.join(RUN_DIR, 'source'))
@@ -95,6 +121,47 @@ REPORT = {
 DOCS = []
 TX = None
 CAPTURED = []   # failures from build / purge / project transactions (flex keeps its own)
+
+
+# ------------------------------------------------------------------ template
+def find_template(app):
+    """Generic Model.rft for this Revit, wherever it is installed. Order: CLAMP_TEMPLATE, the
+    folder Revit reports (FamilyTemplatePath) and its parent, %ProgramData%\\Autodesk\\RVT 2025.
+    English-Imperial is preferred; any other copy is used only if no Imperial one exists."""
+    roots = []
+    try:
+        reported = app.FamilyTemplatePath
+    except Exception:
+        reported = None
+    if reported:
+        roots.extend([reported, os.path.dirname(reported.rstrip('\\/'))])
+    program_data = os.environ.get('ProgramData')
+    if program_data:
+        roots.append(os.path.join(program_data, 'Autodesk', 'RVT 2025', 'Family Templates'))
+    seen, ordered = set(), []
+    for root in roots:
+        key = os.path.normcase(os.path.normpath(root))
+        if key not in seen and os.path.isdir(root):
+            seen.add(key)
+            ordered.append(root)
+    info = {'roots_searched': ordered, 'family_template_path_reported': reported}
+    env = os.environ.get('CLAMP_TEMPLATE')
+    if env and os.path.isfile(env):
+        info.update({'path': env, 'source': 'CLAMP_TEMPLATE'})
+        return info
+    hits = []
+    for root in ordered:
+        for dirpath, dirs, files in os.walk(root):
+            if TEMPLATE_NAME in files:
+                hits.append(os.path.join(dirpath, TEMPLATE_NAME))
+            dirs[:] = [d for d in dirs if dirpath.count(os.sep) - root.count(os.sep) < 2]
+    hits.sort(key=lambda path: ('Imperial' not in path, path))
+    info['candidates'] = hits
+    if hits:
+        info.update({'path': hits[0], 'source': 'search', 'imperial': 'Imperial' in hits[0]})
+    else:
+        info.update({'path': None, 'source': None})
+    return info
 
 
 # ------------------------------------------------------------------ plumbing
@@ -693,7 +760,7 @@ def purge_unused(doc, record):
 # --------------------------------------------------------------------- build
 def build(app):
     global TX
-    doc = app.NewFamilyDocument(TEMPLATE)
+    doc = app.NewFamilyDocument(REPORT['template']['path'])
     DOCS.append(doc)
     rec = REPORT.setdefault('build', {})
     v = S.resolve()
@@ -1123,13 +1190,14 @@ try:
     app = __revit__.Application  # noqa: F821 (pyRevit global)
     REPORT['revit_version'] = app.VersionNumber
     REPORT['revit_build'] = app.VersionBuild
-    REPORT['template'] = {'path': TEMPLATE, 'exists': os.path.isfile(TEMPLATE)}
+    REPORT['template'] = find_template(app)
+    REPORT['template']['exists'] = bool(REPORT['template'].get('path'))
     REPORT['spec_problems'] = S.check_spec()
     checkpoint('preflight')
     if not str(app.VersionNumber).startswith('2025'):
         raise RuntimeError('Revit 2025 required; host reports ' + str(app.VersionNumber))
     if not REPORT['template']['exists']:
-        raise RuntimeError('Family template not found: ' + TEMPLATE)
+        raise RuntimeError('%s not found; searched %r' % (TEMPLATE_NAME, REPORT['template'].get('roots_searched')))
     if REPORT['spec_problems']:
         raise RuntimeError('Spec self-check failed: ' + '; '.join(REPORT['spec_problems']))
 

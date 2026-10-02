@@ -167,7 +167,24 @@ def make_run_dir(rep):
     return run
 
 
+def emit_fixture(run):
+    """Write a passing analytic run (report, RFA stand-in, evidence) into `run`. Used only to test
+    run_clamp.ps1 against a stub pyRevit in a temporary copy of the kit; never run against the real folder."""
+    rep = good_report()
+    os.makedirs(os.path.join(run, 'evidence'), exist_ok=True)
+    with open(os.path.join(run, 'validation.json'), 'w') as fh:
+        json.dump(rep, fh)
+    with open(os.path.join(run, S.RFA_NAME), 'wb') as fh:
+        fh.write(b'x' * 1000)
+    for image in rep['family_images'] + rep['project']['images']:
+        with open(os.path.join(run, 'evidence', image['file']), 'wb') as fh:
+            fh.write(b'png')
+
+
 def main():
+    if len(sys.argv) == 3 and sys.argv[1] == '--emit-fixture':
+        emit_fixture(sys.argv[2])
+        return 0
     failures = []
     problems = S.check_spec()
     if problems:

@@ -1,6 +1,6 @@
 r"""Package the verified clamp family for delivery (CPython 3, standard library only).
 
-    "C:\Program Files\pyRevit-Master\bin\cengines\CPY3123\python.exe" package_clamp.py
+    python package_clamp.py          (any Python 3)
 
 Refuses to package unless verify_clamp.py passes and REVIEW.md records
 "Visual verdict: ACCEPTED". Allow-listed contents only (no logs, no *.000N.rfa backups);

@@ -4,29 +4,58 @@
 
 Project: 651 W Belmont (25-012), primary bath enclosure. Task sheet: [TASK_Glass_Clamp_180_Family_Build_1.md](TASK_Glass_Clamp_180_Family_Build_1.md). Every value and deviation: [INFERENCES.md](INFERENCES.md).
 
-## Run (Windows workstation, Revit 2025 + pyRevit)
+## Run (any Windows PC with Revit 2025 + pyRevit)
+
+The kit assumes no user name, drive, OneDrive folder or install path. `run_clamp.ps1` finds pyRevit, Revit 2025, `Generic Model.rft` and a Python 3 on the PC it runs on (override with `CLAMP_PYREVIT`, `CLAMP_REVIT`, `CLAMP_TEMPLATE`, `CLAMP_PYTHON`); the builder finds its checkout by walking up from its own location and the template through Revit's `FamilyTemplatePath`.
+
+**Fresh or unknown PC: one block** (clones to `%USERPROFILE%\GitHub\3D-Model-Workflow`, never touches another checkout; sign in to GitHub if asked):
 
 ```powershell
-cd "C:\Users\found\OneDrive\Documents\ChatGPT\3D Model Workflow"      # your checkout
+& {
+  $branch = 'claude/new-session-urnwm3'
+  $url    = 'https://github.com/mlux-ops/3D-Model-Workflow.git'
+  $dest   = Join-Path $env:USERPROFILE 'GitHub/3D-Model-Workflow'
+  if (-not (Get-Command git -ErrorAction SilentlyContinue)) { Write-Host 'git is not installed (https://git-scm.com).'; return }
+  $env:GIT_LFS_SKIP_SMUDGE = '1'      # skip the large LFS images; the build does not need them
+  if (Test-Path (Join-Path $dest '.git')) {
+    git -C $dest fetch origin $branch
+    git -C $dest checkout $branch
+    git -C $dest pull --ff-only origin $branch
+  } elseif (Test-Path $dest) { Write-Host "$dest exists and is not a git repo - stopping."; return }
+  else {
+    New-Item -ItemType Directory -Force (Split-Path $dest) | Out-Null
+    git clone --depth 1 --single-branch --branch $branch $url $dest
+  }
+  powershell -ExecutionPolicy Bypass -File (Join-Path $dest 'output/glass_clamp_180/run_clamp.ps1')
+}
+```
+
+**Existing checkout:**
+
+```powershell
+cd "<your checkout>"
 git fetch origin
 git merge origin/claude/new-session-urnwm3
 powershell -ExecutionPolicy Bypass -File ".\output\glass_clamp_180\run_clamp.ps1"
 ```
 
-- Output: `<checkout>\output\glass_clamp_180\SHB_Glass Clamp 180 Square.rfa`, beside `SHB_Glass Clamp 180 Square.txt` (type catalog), `validation.json`, `evidence\*.png`.
-- Exit 0 technical pass · 1 technical fail · 2 blocked. The code comes from `source/verify_clamp.py`, never from `pyrevit run`.
+| Switch | Does |
+|---|---|
+| (none) | check this PC, build, verify |
+| `-CheckOnly` | print what was found on this PC and stop (exit 0 found, 2 missing) |
+| `-VerifyOnly` | verify an existing `validation.json` (after the in-Revit button); builds nothing |
 
-If `pyrevit run` does not start Revit (no `validation.json`; `0xe06d7363` on 2026-09-23):
+- Output beside the script: `SHB_Glass Clamp 180 Square.rfa`, `SHB_Glass Clamp 180 Square.txt` (type catalog), `validation.json`, `evidence\*.png`, `logs\run-<stamp>.txt`, `logs\RUN_SUMMARY.txt` (also copied to the clipboard for pasting into the chat).
+- Exit 0 technical pass, 1 technical fail, 2 blocked. The code comes from `source/verify_clamp.py`, never from `pyrevit run`.
+- **"TECHNICAL FAIL" with `NO NEW validation.json`** means Revit never ran the builder (`pyrevit run` could not start it); it is not a geometry failure. Use the in-Revit button below. If the builder could not even locate the checkout it leaves `%TEMP%\clamp_builder_startup_error.txt`.
+
+If `pyrevit run` does not start Revit:
 
 ```powershell
-& "C:\Program Files\pyRevit-Master\bin\pyrevit.exe" extensions paths add "<checkout>\output\glass_clamp_180\pyrevit"
+pyrevit extensions paths add "<checkout>\output\glass_clamp_180\pyrevit"
 ```
 
-Revit → pyRevit → **Reload** → **SHB** tab → **Build Clamp 180**, then:
-
-```powershell
-& "C:\Program Files\pyRevit-Master\bin\cengines\CPY3123\python.exe" "<checkout>\output\glass_clamp_180\source\verify_clamp.py"
-```
+Revit -> pyRevit -> **Reload** -> **SHB** tab -> **Build Clamp 180**, then `run_clamp.ps1 -VerifyOnly`.
 
 ## Family
 

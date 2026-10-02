@@ -3,7 +3,7 @@ r"""Independent gate verifier for the SHB_Glass Clamp 180 Square run.
 `pyrevit run` exits 0 even when the hosted script raises (P01, 2026-09-18), so its
 exit status is never the result. Run this afterwards and read ITS exit code:
 
-    "C:\Program Files\pyRevit-Master\bin\cengines\CPY3123\python.exe" verify_clamp.py
+    python verify_clamp.py          (any Python 3; run_clamp.ps1 finds one)
 
 Standard library only. Targets come from clamp_spec.py, not from values the builder
 recorded; every ray is re-compared from its raw segments, so a gate-logic bug in the
@@ -26,8 +26,7 @@ import clamp_spec as S  # noqa: E402
 RUN_DIR = os.path.normpath(os.path.join(HERE, '..'))
 REPORT = os.path.join(RUN_DIR, 'validation.json')
 RUN_START = os.path.join(RUN_DIR, 'logs', 'run-start.txt')
-KNOWN_ROOTS = [r'C:\Users\found\OneDrive\Documents\ChatGPT\3D Model Workflow',
-               r'C:\Users\mlux\Documents\GitHub\3D-Model-Workflow']
+SEARCH_DEPTH = 6
 
 
 def parse_utc(text):
@@ -58,14 +57,21 @@ def recheck_rays(label, rows, rays, add, merge=True):
 
 
 def elsewhere():
+    """Reports or RFAs written by another copy of this kit under the user profile (bounded search)."""
     found = []
-    for root in KNOWN_ROOTS:
-        run = os.path.normpath(os.path.join(root, 'output', 'glass_clamp_180'))
-        if run == RUN_DIR:
+    base = os.environ.get('USERPROFILE') or os.path.expanduser('~')
+    if not os.path.isdir(base):
+        return found
+    base_depth = base.rstrip('\\/').count(os.sep)
+    for dirpath, dirs, files in os.walk(base):
+        if dirpath.count(os.sep) - base_depth >= SEARCH_DEPTH:
+            dirs[:] = []
+        dirs[:] = [d for d in dirs if d not in ('AppData', '.git', 'node_modules')]
+        if os.path.basename(dirpath) != 'glass_clamp_180' or os.path.normpath(dirpath) == RUN_DIR:
             continue
         for name in ('validation.json', S.RFA_NAME):
-            path = os.path.join(run, name)
-            if os.path.isfile(path):
+            if name in files:
+                path = os.path.join(dirpath, name)
                 found.append('%s (%d bytes)' % (path, os.path.getsize(path)))
     return found
 
