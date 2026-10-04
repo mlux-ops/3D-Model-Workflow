@@ -1,0 +1,161 @@
+{
+  "stage": "complete", 
+  "material_tests": {
+    "Black": {
+      "writable": true, 
+      "face_count": 38, 
+      "substitution_reaches_faces": true
+    }, 
+    "Opal": {
+      "writable": true, 
+      "face_count": 38, 
+      "substitution_reaches_faces": true
+    }, 
+    "Clear": {
+      "writable": true, 
+      "face_count": 38, 
+      "substitution_reaches_faces": true
+    }
+  }, 
+  "display_bounds_in": [
+    -2.375, 
+    -2.3354066837510339, 
+    0.0, 
+    2.375, 
+    2.3354066837510339, 
+    1.6408985469167308
+  ], 
+  "placement": "WorkPlaneBased", 
+  "started_utc": "2026-10-02T14:33:30.025000Z", 
+  "companion_bitmaps": {
+    "Black": "E:\\Claude\\3D-Model-Workflow\\output\\1527_wieland\\electrical_fixtures\\K2-2__2521309084581764\\source\\textures\\Black.png", 
+    "Opal": "E:\\Claude\\3D-Model-Workflow\\output\\1527_wieland\\electrical_fixtures\\K2-2__2521309084581764\\source\\textures\\Opal.png", 
+    "Clear": "E:\\Claude\\3D-Model-Workflow\\output\\1527_wieland\\electrical_fixtures\\K2-2__2521309084581764\\source\\textures\\Clear.png"
+  }, 
+  "template_form_ids": [
+    "1537"
+  ], 
+  "technical_pass": true, 
+  "manufacturer": "Kuzco Lighting", 
+  "type": "WS97204-BK/CL", 
+  "reopened_warnings": [], 
+  "project_warnings": [], 
+  "reopened": true, 
+  "rfa_search": "Public manufacturer ZIP downloaded, CRC checked and opened in Revit 2025. Current nominal projection differs by 1.402 mm; native reconstruction follows published current dimensions.", 
+  "bounds_in": [
+    -2.3750000596046448, 
+    -2.3750000596046448, 
+    0.0, 
+    2.3750000596046448, 
+    2.3750000596046448, 
+    1.6455804705619812
+  ], 
+  "rfa_path": "E:\\Claude\\3D-Model-Workflow\\output\\1527_wieland\\electrical_fixtures\\K2-2__2521309084581764\\Kuzco_Stephord_WS97204_BK_CL_R2025.rfa", 
+  "revit_version": "2025", 
+  "host": {
+    "host_id": "3699", 
+    "hostface_present": true, 
+    "normal_dot": 1.0, 
+    "instance_host_id": "3699", 
+    "host_kind": "wall"
+  }, 
+  "evidence_files": [
+    "Kuzco_Stephord_WS97204_BK_CL_R2025 - 3D View - Front.png", 
+    "Kuzco_Stephord_WS97204_BK_CL_R2025 - 3D View - Material.png", 
+    "Kuzco_Stephord_WS97204_BK_CL_R2025 - 3D View - Oblique.png", 
+    "Kuzco_Stephord_WS97204_BK_CL_R2025 - 3D View - Side.png", 
+    "Kuzco_Stephord_WS97204_BK_CL_R2025_Hosted - 3D View - Hosted.png", 
+    "Kuzco_Stephord_WS97204_BK_CL_R2025_Isolated - 3D View - Native Front.png", 
+    "Kuzco_Stephord_WS97204_BK_CL_R2025_Isolated - 3D View - Native Material.png", 
+    "Kuzco_Stephord_WS97204_BK_CL_R2025_Isolated - 3D View - Native Oblique.png", 
+    "Kuzco_Stephord_WS97204_BK_CL_R2025_Isolated - 3D View - Native Side.png"
+  ], 
+  "appearance_defaults": {
+    "Black": {
+      "transparency": 0, 
+      "rgb": [
+        24, 
+        24, 
+        24
+      ], 
+      "cct_k": null, 
+      "luminance": 0, 
+      "gloss": 0.23999999999999999
+    }, 
+    "Opal": {
+      "transparency": 0.080000000000000002, 
+      "rgb": [
+        248, 
+        248, 
+        243
+      ], 
+      "cct_k": null, 
+      "luminance": 0, 
+      "gloss": 0.33000000000000002
+    }, 
+    "Clear": {
+      "transparency": 0.90000000000000002, 
+      "rgb": [
+        246, 
+        248, 
+        249
+      ], 
+      "cct_k": null, 
+      "luminance": 0, 
+      "gloss": 0.97999999999999998
+    }
+  }, 
+  "finished_utc": "2026-10-02T14:33:41.452000Z", 
+  "model": "WS97204-BK/CL", 
+  "expected_dimensions_in": [
+    4.75, 
+    4.75, 
+    1.6299999999999999
+  ], 
+  "source_url": "https://kuzcolighting.com/products/stephord-ws97204-kuzco", 
+  "bounds_method": "Fine native face meshes plus 128-sample analytic edges", 
+  "parts": [
+    {
+      "volume_ft3": 0.0064351233813694595, 
+      "name": "Black circular mount", 
+      "id": "3214"
+    }, 
+    {
+      "volume_ft3": 0.0065898032035996154, 
+      "name": "Curved clear annular glass", 
+      "id": "3215"
+    }, 
+    {
+      "volume_ft3": 0.0011567085158924815, 
+      "name": "Black center disk", 
+      "id": "3216"
+    }, 
+    {
+      "volume_ft3": 0.0006300424774818102, 
+      "name": "Recessed opal light ring", 
+      "id": "3217"
+    }
+  ], 
+  "actual_dimensions_in": [
+    4.7500001192092896, 
+    4.7500001192092896, 
+    1.6455804705619812
+  ], 
+  "revit_build": "25.4.50.35", 
+  "category": "Lighting Fixtures", 
+  "inferences": "4.75-inch diameter, 1.63-inch projection. Separate clear curved glass lens, black central disk and concealed opal ring. ASSUMPTION: internal lens curvature and thickness from photograph. Downloaded 2019 manufacturer RFA measured 4.7244 x 4.7244 x 1.5748 inches; preserved as source, not accepted as a current inch-spec match.", 
+  "cct_k": null, 
+  "gates": {
+    "warnings": true, 
+    "category": true, 
+    "orientation": true, 
+    "dimensions": true, 
+    "actual_face_host": true, 
+    "cct": true, 
+    "materials": true, 
+    "reopened": true, 
+    "views": true
+  }, 
+  "catalog_key": "KZC1403797", 
+  "family_warnings": []
+}

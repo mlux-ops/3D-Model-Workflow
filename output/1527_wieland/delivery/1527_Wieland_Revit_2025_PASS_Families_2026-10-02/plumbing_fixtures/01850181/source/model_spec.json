@@ -1,0 +1,331 @@
+{
+  "key": "01850181",
+  "model": "01850181",
+  "manufacturer": "Hansgrohe",
+  "type_name": "01850181 - green",
+  "basename": "Hansgrohe_01850181_R2025",
+  "name": "iBox Universal Plus rough with service stops",
+  "host": "wall",
+  "configured_dimensions_in": [
+    5.875,
+    5.875,
+    4.25
+  ],
+  "materials": {
+    "Finish": {
+      "rgb": [
+        31,
+        113,
+        66
+      ],
+      "gloss": 0.18,
+      "reflectivity": 0.05,
+      "class": "Plastic"
+    },
+    "Detail": {
+      "rgb": [
+        24,
+        25,
+        26
+      ],
+      "gloss": 0.17,
+      "reflectivity": 0.04,
+      "class": "Plastic"
+    },
+    "Graphite": {
+      "rgb": [
+        64,
+        67,
+        69
+      ],
+      "gloss": 0.36,
+      "reflectivity": 0.16,
+      "class": "Glass"
+    },
+    "Ceramic": {
+      "rgb": [
+        245,
+        245,
+        241
+      ],
+      "gloss": 0.86,
+      "reflectivity": 0.22,
+      "class": "Ceramic"
+    },
+    "Brass": {
+      "rgb": [
+        160,
+        124,
+        64
+      ],
+      "gloss": 0.4,
+      "reflectivity": 0.38,
+      "class": "Metal"
+    },
+    "Green": {
+      "rgb": [
+        31,
+        113,
+        66
+      ],
+      "gloss": 0.18,
+      "reflectivity": 0.05,
+      "class": "Plastic"
+    },
+    "Gray": {
+      "rgb": [
+        131,
+        132,
+        130
+      ],
+      "gloss": 0.32,
+      "reflectivity": 0.12,
+      "class": "Plastic"
+    }
+  },
+  "geometry": [
+    {
+      "name": "Protective green cylindrical shell",
+      "kind": "cylinder",
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "radius": 2.375,
+      "a": 0,
+      "b": 4.25,
+      "material": "Green",
+      "inner_radius": 2.12
+    },
+    {
+      "name": "Rear brass valve body",
+      "kind": "cylinder",
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "radius": 1.55,
+      "a": 0.1,
+      "b": 1.4,
+      "material": "Brass"
+    },
+    {
+      "name": "Service cartridge",
+      "kind": "cylinder",
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "radius": 0.75,
+      "a": 1.4,
+      "b": 3.25,
+      "material": "Brass"
+    },
+    {
+      "name": "Port [1, 0, 0]",
+      "kind": "cylinder",
+      "origin": [
+        0,
+        0,
+        0.875
+      ],
+      "axis": [
+        1,
+        0,
+        0
+      ],
+      "radius": 0.59,
+      "a": 1.45,
+      "b": 2.9375,
+      "material": "Brass",
+      "inner_radius": 0.375
+    },
+    {
+      "name": "Port [-1, 0, 0]",
+      "kind": "cylinder",
+      "origin": [
+        0,
+        0,
+        0.875
+      ],
+      "axis": [
+        -1,
+        0,
+        0
+      ],
+      "radius": 0.59,
+      "a": 1.45,
+      "b": 2.9375,
+      "material": "Brass",
+      "inner_radius": 0.375
+    },
+    {
+      "name": "Port [0, 1, 0]",
+      "kind": "cylinder",
+      "origin": [
+        0,
+        0,
+        0.875
+      ],
+      "axis": [
+        0,
+        1,
+        0
+      ],
+      "radius": 0.59,
+      "a": 1.45,
+      "b": 2.9375,
+      "material": "Brass",
+      "inner_radius": 0.375
+    },
+    {
+      "name": "Port [0, -1, 0]",
+      "kind": "cylinder",
+      "origin": [
+        0,
+        0,
+        0.875
+      ],
+      "axis": [
+        0,
+        -1,
+        0
+      ],
+      "radius": 0.59,
+      "a": 1.45,
+      "b": 2.9375,
+      "material": "Brass",
+      "inner_radius": 0.375
+    },
+    {
+      "name": "Mount lug -1.98 -1.98",
+      "kind": "cylinder",
+      "origin": [
+        -1.98,
+        -1.98,
+        0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "radius": 0.35,
+      "a": 0,
+      "b": 0.45,
+      "material": "Green",
+      "inner_radius": 0.13
+    },
+    {
+      "name": "Mount lug -1.98 1.98",
+      "kind": "cylinder",
+      "origin": [
+        -1.98,
+        1.98,
+        0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "radius": 0.35,
+      "a": 0,
+      "b": 0.45,
+      "material": "Green",
+      "inner_radius": 0.13
+    },
+    {
+      "name": "Mount lug 1.98 -1.98",
+      "kind": "cylinder",
+      "origin": [
+        1.98,
+        -1.98,
+        0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "radius": 0.35,
+      "a": 0,
+      "b": 0.45,
+      "material": "Green",
+      "inner_radius": 0.13
+    },
+    {
+      "name": "Mount lug 1.98 1.98",
+      "kind": "cylinder",
+      "origin": [
+        1.98,
+        1.98,
+        0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "radius": 0.35,
+      "a": 0,
+      "b": 0.45,
+      "material": "Green",
+      "inner_radius": 0.13
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://assets.hansgrohe.com/celum/emailmarketing/hansgrohe_2026_Price_Book_en_US.pdf",
+      "document": "Hansgrohe 2026 US Price Book",
+      "page": 374,
+      "local_image": "_research/catalog_pages/page_374.png"
+    },
+    {
+      "url": "https://www.bimobject.com/en-us/hansgrohe/product/01850181",
+      "note": "Manufacturer listing confirms rough-in envelope."
+    }
+  ],
+  "dimension_authority": [
+    "Port-to-port envelope 5.875 in in both directions; body depth 4.25 in; shell diameter 4.75 in."
+  ],
+  "limitations": [
+    "Protective shell and brass valve are a coordination visualization. Internal cartridges, support ribs, mounting holes and threads are simplified.",
+    "Independent visualization reconstruction with fixed product dimensions and editable native materials.",
+    "Small fillets, seams, nozzle details and optical material response are inferred where the manufacturer does not dimension them.",
+    "No internal hydraulic performance, MEP connectors, fabrication tolerances or procurement substitutions are implied."
+  ],
+  "anchors": [
+    {
+      "label": "Shell diameter",
+      "parts": [
+        "Protective green cylindrical shell"
+      ],
+      "axis": 0,
+      "nominal_in": 4.75
+    }
+  ],
+  "all_overall_dimensions_authoritative": true,
+  "rfa_search": {
+    "result": "No acceptable no-account RFA recovered",
+    "evidence": "_research/01850181/sources.json"
+  }
+}

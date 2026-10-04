@@ -1,0 +1,218 @@
+{
+  "manufacturer": "Brizo", 
+  "visual_review": "PENDING_NATIVE_IMAGE_REVIEW", 
+  "gates": {
+    "dimensions": true, 
+    "category": true, 
+    "warnings": true, 
+    "reopened": true, 
+    "materials": true, 
+    "orientation": true, 
+    "cct": true, 
+    "reopen_geometry_equal": true, 
+    "diffuse_bitmaps": true, 
+    "actual_face_host": true, 
+    "views": true
+  }, 
+  "expected_dimensions_in": [
+    3.5, 
+    6.4375, 
+    9.5
+  ], 
+  "reopened_bounds_in": [
+    -1.0000000298023224, 
+    -5.4375, 
+    -2.8654376445260412e-24, 
+    2.5, 
+    1.0000000298023224, 
+    9.5000002384185791
+  ], 
+  "finished_utc": "2026-10-02T15:27:34.689000Z", 
+  "source_references": [
+    {
+      "document": "Brizo BSP-K-61320LF-C Rev B", 
+      "page": 1, 
+      "visual_review_method": "Manufacturer web PDF screenshot", 
+      "url": "https://media.brizo.com/SpecSheet/BSP-K-61320LF-C%20Rev%20B.pdf"
+    }
+  ], 
+  "rfa_search": {
+    "result": "No acceptable no-account RFA recovered", 
+    "evidence": "_research/61320LF-C-BL/sources.json"
+  }, 
+  "source_spec_sha256": "08682b0b3ccb9a00709503b1ff619fd300bb0cbec241af78566c04b9c178c529", 
+  "actual_dimensions_in": [
+    3.5000000298023224, 
+    6.4375000298023224, 
+    9.5000002384185791
+  ], 
+  "evidence_files": [
+    "Brizo_61320LF-C-BL_R2025_Isolated - 3D View - Native Front.png", 
+    "Brizo_61320LF-C-BL_R2025_Isolated - 3D View - Native Material.png", 
+    "Brizo_61320LF-C-BL_R2025_Isolated - 3D View - Native Oblique.png", 
+    "Brizo_61320LF-C-BL_R2025_Isolated - 3D View - Native Side.png"
+  ], 
+  "bounds_method": "Fine native face meshes plus 128-sample analytic edges", 
+  "acceptance": "NATIVE_GATES_PASSED_PENDING_VISUAL_REVIEW", 
+  "bounds_in": [
+    -1.0000000298023224, 
+    -5.4375, 
+    -2.8654376445260412e-24, 
+    2.5, 
+    1.0000000298023224, 
+    9.5000002384185791
+  ], 
+  "material_tests": {
+    "Finish": {
+      "writable": true, 
+      "face_count": 44, 
+      "substitution_reaches_faces": true
+    }, 
+    "Detail": {
+      "writable": true, 
+      "face_count": 44, 
+      "substitution_reaches_faces": true
+    }
+  }, 
+  "appearance_bindings": {
+    "Finish": {
+      "material_id": "3210", 
+      "path": "E:\\Claude\\3D-Model-Workflow\\output\\1527_wieland\\plumbing_fixtures\\61320LF-C-BL\\textures\\Finish.png", 
+      "exists": true
+    }, 
+    "Detail": {
+      "material_id": "3207", 
+      "path": "E:\\Claude\\3D-Model-Workflow\\output\\1527_wieland\\plumbing_fixtures\\61320LF-C-BL\\textures\\Detail.png", 
+      "exists": true
+    }
+  }, 
+  "all_overall_dimensions_authoritative": false, 
+  "category": "Plumbing Fixtures", 
+  "material_ids": {
+    "Finish": "3210", 
+    "Detail": "3207"
+  }, 
+  "source_dimensions": [
+    "Overall height 9.5 in, base diameter 2 in, outlet height 6.0625 in and reach 5.0625 in."
+  ], 
+  "host": {
+    "normal_dot": 1.0, 
+    "host_kind": "floor", 
+    "instance_host_id": "3699", 
+    "hostface_present": true, 
+    "host_id": "3699"
+  }, 
+  "parts": [
+    {
+      "name": "Base", 
+      "id": "3212", 
+      "volume_ft3": 0.00036359203746556991
+    }, 
+    {
+      "name": "Valve body", 
+      "id": "3213", 
+      "volume_ft3": 0.0045914856981199015
+    }, 
+    {
+      "name": "Continuous gooseneck", 
+      "id": "3214", 
+      "volume_ft3": 0.0027042124732568023
+    }, 
+    {
+      "name": "Side control hub", 
+      "id": "3215", 
+      "volume_ft3": 0.00047857801931405633
+    }, 
+    {
+      "name": "Vertical lever", 
+      "id": "3216", 
+      "volume_ft3": 0.00024996952575757924
+    }, 
+    {
+      "name": "Aerator insert", 
+      "id": "3217", 
+      "volume_ft3": 6.135994623891015e-06
+    }
+  ], 
+  "reopen_geometry_equal": true, 
+  "family_warnings": [], 
+  "source_spec_path": "E:\\Claude\\3D-Model-Workflow\\output\\1527_wieland\\plumbing_fixtures\\61320LF-C-BL\\source\\model_spec.json", 
+  "inferences": "Above-counter scope only. Side lever envelope, body diameter and spout tube section are drawing-derived. | Independent visualization reconstruction with fixed product dimensions and editable native materials. | Small fillets, seams, nozzle details and optical material response are inferred where the manufacturer does not dimension them. | No internal hydraulic performance, MEP connectors, fabrication tolerances or procurement substitutions are implied.", 
+  "native_path_checks": [], 
+  "revit_build": "25.4.50.35", 
+  "rfa_path": "E:\\Claude\\3D-Model-Workflow\\output\\1527_wieland\\plumbing_fixtures\\61320LF-C-BL\\Brizo_61320LF-C-BL_R2025.rfa", 
+  "stage": "complete", 
+  "dimension_anchor_checks": [
+    {
+      "pass": true, 
+      "nominal_mm": 241.29999999999998, 
+      "deviation_mm": 6.0558319091796872e-06, 
+      "label": "Height", 
+      "actual_mm": 241.30000605583189
+    }, 
+    {
+      "pass": true, 
+      "nominal_mm": 50.799999999999997, 
+      "deviation_mm": 1.5139579772949218e-06, 
+      "label": "Base diameter", 
+      "actual_mm": 50.800001513957973
+    }
+  ], 
+  "placement": "WorkPlaneBased", 
+  "reopened_warnings": [], 
+  "model": "61320LF-C-BL", 
+  "project_warnings": [], 
+  "limitations": [
+    "Above-counter scope only. Side lever envelope, body diameter and spout tube section are drawing-derived.", 
+    "Independent visualization reconstruction with fixed product dimensions and editable native materials.", 
+    "Small fillets, seams, nozzle details and optical material response are inferred where the manufacturer does not dimension them.", 
+    "No internal hydraulic performance, MEP connectors, fabrication tolerances or procurement substitutions are implied."
+  ], 
+  "appearance_defaults": {
+    "Finish": {
+      "transparency": 0, 
+      "cct_k": null, 
+      "luminance": 0, 
+      "rgb": [
+        20, 
+        21, 
+        22
+      ], 
+      "gloss": 0.17000000000000001
+    }, 
+    "Detail": {
+      "transparency": 0, 
+      "cct_k": null, 
+      "luminance": 0, 
+      "rgb": [
+        24, 
+        25, 
+        26
+      ], 
+      "gloss": 0.17000000000000001
+    }
+  }, 
+  "reopened": true, 
+  "cct_k": null, 
+  "type": "61320LF-C-BL - Matte Black -  Black", 
+  "started_utc": "2026-10-02T15:27:31.040000Z", 
+  "native_gates_pass": true, 
+  "actual_dimensions_after_reopen_mm": [
+    88.900000756978983, 
+    163.51250075697897, 
+    241.30000605583189
+  ], 
+  "display_bounds_in": [
+    -1.0, 
+    -5.4375, 
+    0.0, 
+    2.5, 
+    1.0, 
+    9.5
+  ], 
+  "technical_pass": true, 
+  "revit_version": "2025", 
+  "template_form_ids": [
+    "1537"
+  ]
+}

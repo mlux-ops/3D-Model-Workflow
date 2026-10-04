@@ -1,0 +1,243 @@
+{
+  "key": "CT446CEFGNT40_01",
+  "model": "CT446CEFGNT40#01",
+  "manufacturer": "TOTO",
+  "type_name": "CT446CEFGNT40#01 - ceramic",
+  "basename": "TOTO_CT446CEFGNT40_01_R2025",
+  "name": "Aquia IV WASHLET+ elongated bowl",
+  "host": "floor",
+  "configured_dimensions_in": [
+    14.5,
+    27.5625,
+    16.125
+  ],
+  "materials": {
+    "Finish": {
+      "rgb": [
+        245,
+        245,
+        241
+      ],
+      "gloss": 0.86,
+      "reflectivity": 0.22,
+      "class": "Ceramic"
+    },
+    "Detail": {
+      "rgb": [
+        24,
+        25,
+        26
+      ],
+      "gloss": 0.17,
+      "reflectivity": 0.04,
+      "class": "Plastic"
+    },
+    "Graphite": {
+      "rgb": [
+        64,
+        67,
+        69
+      ],
+      "gloss": 0.36,
+      "reflectivity": 0.16,
+      "class": "Glass"
+    },
+    "Ceramic": {
+      "rgb": [
+        245,
+        245,
+        241
+      ],
+      "gloss": 0.86,
+      "reflectivity": 0.22,
+      "class": "Ceramic"
+    },
+    "Brass": {
+      "rgb": [
+        160,
+        124,
+        64
+      ],
+      "gloss": 0.4,
+      "reflectivity": 0.38,
+      "class": "Metal"
+    },
+    "Green": {
+      "rgb": [
+        31,
+        113,
+        66
+      ],
+      "gloss": 0.18,
+      "reflectivity": 0.05,
+      "class": "Plastic"
+    },
+    "Gray": {
+      "rgb": [
+        131,
+        132,
+        130
+      ],
+      "gloss": 0.32,
+      "reflectivity": 0.12,
+      "class": "Plastic"
+    }
+  },
+  "geometry": [
+    {
+      "kind": "cut",
+      "name": "Open bowl with rear tank deck",
+      "base": {
+        "kind": "shell",
+        "sections": [
+          {
+            "center": [
+              0,
+              1.0,
+              0
+            ],
+            "size": [
+              11.625,
+              20.0
+            ],
+            "radius": 4.7
+          },
+          {
+            "center": [
+              0,
+              1.0,
+              6
+            ],
+            "size": [
+              12.0,
+              20.5
+            ],
+            "radius": 5
+          },
+          {
+            "center": [
+              0,
+              0,
+              14.9
+            ],
+            "size": [
+              14.5,
+              27.5625
+            ],
+            "radius": 6.5
+          },
+          {
+            "center": [
+              0,
+              0,
+              16.125
+            ],
+            "size": [
+              14.5,
+              27.5625
+            ],
+            "radius": 6.5
+          }
+        ],
+        "inner": [
+          {
+            "center": [
+              0,
+              -2.8,
+              7.8
+            ],
+            "size": [
+              4.5,
+              6.0
+            ],
+            "radius": 2.0
+          },
+          {
+            "center": [
+              0,
+              -3.4,
+              14.2
+            ],
+            "size": [
+              9.75,
+              15.0
+            ],
+            "radius": 4.7
+          },
+          {
+            "center": [
+              0,
+              -3.4,
+              16.5
+            ],
+            "size": [
+              10.6,
+              16.5
+            ],
+            "radius": 5.1
+          }
+        ]
+      },
+      "cutters": [
+        {
+          "name": "Bowl outlet",
+          "kind": "cylinder",
+          "origin": [
+            0,
+            -2.8,
+            0
+          ],
+          "axis": [
+            0,
+            0,
+            1
+          ],
+          "radius": 1.0625,
+          "a": -0.2,
+          "b": 8.1,
+          "material": "Finish"
+        }
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://www.totousa.com/filemanager_uploads/product_assets/SpecSheet/SS-02062_MS446124CEMF(G)N.pdf",
+      "document": "TOTO Aquia IV SS-02062",
+      "page": 2,
+      "local_image": "_research/CT446CEFGNT40_01/downloads/SS-02062_MS446124CEMF_G_N_pages/page_02.png"
+    },
+    {
+      "url": "https://www.totousa.com/filemanager_uploads/product_assets/PartsManual/PD-01451_446EN.pdf",
+      "document": "TOTO Aquia IV PD-01451 parts",
+      "page": 1,
+      "local_image": "_research/CT446CEFGNT40_01/downloads/PD-01451_446EN_pages/page_01.png"
+    }
+  ],
+  "dimension_authority": [
+    "Floor-to-rim 16.125 in and full set depth 27.5625 in from manufacturer drawing; exact component number confirmed in parts manual."
+  ],
+  "limitations": [
+    "Bowl-only width 14.5 in, underside footprint, bowl interior and shell curvature are drawing-derived; no separate bowl fabrication sheet was found.",
+    "The tank, seat and push-button are separate scheduled components. This family has an open bowl and rear mounting deck.",
+    "Internal trapway, WASHLET connection pocket and fixture-specific anchor recesses are omitted.",
+    "Independent visualization reconstruction with fixed product dimensions and editable native materials.",
+    "Small fillets, seams, nozzle details and optical material response are inferred where the manufacturer does not dimension them.",
+    "No internal hydraulic performance, MEP connectors, fabrication tolerances or procurement substitutions are implied."
+  ],
+  "anchors": [
+    {
+      "label": "Rim height",
+      "parts": [
+        "Open bowl with rear tank deck"
+      ],
+      "axis": 2,
+      "nominal_in": 16.125
+    }
+  ],
+  "all_overall_dimensions_authoritative": false,
+  "rfa_search": {
+    "result": "No acceptable no-account RFA recovered",
+    "evidence": "_research/CT446CEFGNT40_01/sources.json"
+  }
+}

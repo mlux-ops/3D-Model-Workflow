@@ -1,0 +1,166 @@
+{
+  "manufacturer": "See source", 
+  "visual_review": "PENDING_NATIVE_IMAGE_REVIEW", 
+  "gates": {
+    "dimensions": true, 
+    "category": true, 
+    "warnings": true, 
+    "reopened": true, 
+    "materials": true, 
+    "orientation": true, 
+    "cct": true, 
+    "reopen_geometry_equal": true, 
+    "diffuse_bitmaps": true, 
+    "actual_face_host": true, 
+    "views": true
+  }, 
+  "expected_dimensions_in": [
+    67, 
+    31.25, 
+    20.75
+  ], 
+  "reopened_bounds_in": [
+    -33.500000953674316, 
+    -15.625000476837158, 
+    -2.2524316396694238e-22, 
+    33.500000953674316, 
+    15.625000476837158, 
+    20.75
+  ], 
+  "finished_utc": "2026-10-02T15:27:48.410000Z", 
+  "source_references": [
+    {
+      "document": "Victoria + Albert Terrassa Rev 09/23", 
+      "page": 1, 
+      "local_image": "_research/TER-N-SW-OF/downloads/spc-ter-n-sw_ofsp_pages/page_01.png", 
+      "url": "https://assets.fbgpg.com/shared/docs/product-specifications/spc-ter-n-sw_ofsp.pdf"
+    }
+  ], 
+  "rfa_search": {
+    "result": "No acceptable no-account RFA recovered", 
+    "evidence": "_research/TER-N-SW-OF/sources.json"
+  }, 
+  "source_spec_sha256": "5d223d4d560d7b6949f0f7717ff666600a320f9f82ddb717caf1b2d61b27b16d", 
+  "actual_dimensions_in": [
+    67.000001907348633, 
+    31.250000953674316, 
+    20.75
+  ], 
+  "evidence_files": [
+    "Fixture_TER-N-SW-OF_R2025_Isolated - 3D View - Native Front.png", 
+    "Fixture_TER-N-SW-OF_R2025_Isolated - 3D View - Native Material.png", 
+    "Fixture_TER-N-SW-OF_R2025_Isolated - 3D View - Native Oblique.png", 
+    "Fixture_TER-N-SW-OF_R2025_Isolated - 3D View - Native Side.png"
+  ], 
+  "bounds_method": "Fine native face meshes plus 128-sample analytic edges", 
+  "acceptance": "NATIVE_GATES_PASSED_PENDING_VISUAL_REVIEW", 
+  "bounds_in": [
+    -33.500000953674316, 
+    -15.625000476837158, 
+    -2.2524316396694238e-22, 
+    33.500000953674316, 
+    15.625000476837158, 
+    20.75
+  ], 
+  "material_tests": {
+    "Finish": {
+      "writable": true, 
+      "face_count": 27, 
+      "substitution_reaches_faces": true
+    }
+  }, 
+  "appearance_bindings": {
+    "Finish": {
+      "material_id": "3207", 
+      "path": "E:\\Claude\\3D-Model-Workflow\\output\\1527_wieland\\plumbing_fixtures\\TER-N-SW-OF\\textures\\Finish.png", 
+      "exists": true
+    }
+  }, 
+  "all_overall_dimensions_authoritative": true, 
+  "category": "Plumbing Fixtures", 
+  "material_ids": {
+    "Finish": "3207"
+  }, 
+  "source_dimensions": [
+    "Overall 67 x 31.25 x 20.75 in; base 43.75 x 19.5 in; drain diameter 2 in."
+  ], 
+  "host": {
+    "normal_dot": 1.0, 
+    "host_kind": "floor", 
+    "instance_host_id": "3690", 
+    "hostface_present": true, 
+    "host_id": "3690"
+  }, 
+  "parts": [
+    {
+      "name": "Open sculpted tub shell", 
+      "id": "3209", 
+      "volume_ft3": 1.6505457847163620
+    }
+  ], 
+  "reopen_geometry_equal": true, 
+  "family_warnings": [], 
+  "source_spec_path": "E:\\Claude\\3D-Model-Workflow\\output\\1527_wieland\\plumbing_fixtures\\TER-N-SW-OF\\source\\model_spec.json", 
+  "inferences": "Undimensioned shell sections and curvature reconstructed from the orthographic drawing. | No K-51 waste assembly is included; the actual drain and overflow openings remain open. | Original manufacturer download was a 3DS mesh, not RFA, and is preserved as source evidence. | Independent visualization reconstruction with fixed product dimensions and editable native materials. | Small fillets, seams, nozzle details and optical material response are inferred where the manufacturer does not dimension them. | No internal hydraulic performance, MEP connectors, fabrication tolerances or procurement substitutions are implied.", 
+  "native_path_checks": [], 
+  "revit_build": "25.4.50.35", 
+  "rfa_path": "E:\\Claude\\3D-Model-Workflow\\output\\1527_wieland\\plumbing_fixtures\\TER-N-SW-OF\\Fixture_TER-N-SW-OF_R2025.rfa", 
+  "stage": "complete", 
+  "dimension_anchor_checks": [
+    {
+      "pass": true, 
+      "nominal_mm": 1701.8000000000000, 
+      "deviation_mm": 4.8446655273437497e-05, 
+      "label": "Overall length", 
+      "actual_mm": 1701.8000484466552
+    }
+  ], 
+  "placement": "WorkPlaneBased", 
+  "reopened_warnings": [], 
+  "model": "TER-N-SW-OF", 
+  "project_warnings": [], 
+  "limitations": [
+    "Undimensioned shell sections and curvature reconstructed from the orthographic drawing.", 
+    "No K-51 waste assembly is included; the actual drain and overflow openings remain open.", 
+    "Original manufacturer download was a 3DS mesh, not RFA, and is preserved as source evidence.", 
+    "Independent visualization reconstruction with fixed product dimensions and editable native materials.", 
+    "Small fillets, seams, nozzle details and optical material response are inferred where the manufacturer does not dimension them.", 
+    "No internal hydraulic performance, MEP connectors, fabrication tolerances or procurement substitutions are implied."
+  ], 
+  "appearance_defaults": {
+    "Finish": {
+      "transparency": 0, 
+      "cct_k": null, 
+      "luminance": 0, 
+      "rgb": [
+        245, 
+        245, 
+        241
+      ], 
+      "gloss": 0.85999999999999999
+    }
+  }, 
+  "reopened": true, 
+  "cct_k": null, 
+  "type": "TER-N-SW-OF - White", 
+  "started_utc": "2026-10-02T15:27:44.725000Z", 
+  "native_gates_pass": true, 
+  "actual_dimensions_after_reopen_mm": [
+    1701.8000484466552, 
+    793.75002422332761, 
+    527.04999999999995
+  ], 
+  "display_bounds_in": [
+    -33.5, 
+    -15.625, 
+    0.0, 
+    33.5, 
+    15.625, 
+    20.75
+  ], 
+  "technical_pass": true, 
+  "revit_version": "2025", 
+  "template_form_ids": [
+    "1537"
+  ]
+}

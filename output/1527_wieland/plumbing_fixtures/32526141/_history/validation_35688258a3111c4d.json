@@ -1,0 +1,76 @@
+{
+  "limitations": [
+    "ASSUMPTION: 8 in spout-to-control centers because the catalog does not specify spacing.", 
+    "Inventory calls this SKU a rough-in; the exact SKU is faucet trim. Required rough 13622181 is not included.", 
+    "Rectangular section thicknesses and control geometry are drawing-derived.", 
+    "Independent visualization reconstruction with fixed product dimensions and editable native materials.", 
+    "Small fillets, seams, nozzle details and optical material response are inferred where the manufacturer does not dimension them.", 
+    "No internal hydraulic performance, MEP connectors, fabrication tolerances or procurement substitutions are implied."
+  ], 
+  "started_utc": "2026-10-02T14:38:02.518000Z", 
+  "inferences": "ASSUMPTION: 8 in spout-to-control centers because the catalog does not specify spacing. | Inventory calls this SKU a rough-in; the exact SKU is faucet trim. Required rough 13622181 is not included. | Rectangular section thicknesses and control geometry are drawing-derived. | Independent visualization reconstruction with fixed product dimensions and editable native materials. | Small fillets, seams, nozzle details and optical material response are inferred where the manufacturer does not dimension them. | No internal hydraulic performance, MEP connectors, fabrication tolerances or procurement substitutions are implied.", 
+  "template_form_ids": [
+    "1537"
+  ], 
+  "rfa_path": "E:\\Claude\\3D-Model-Workflow\\output\\1527_wieland\\plumbing_fixtures\\32526141\\Hansgrohe_32526141_R2025.rfa", 
+  "material_ids": {
+    "Detail": "3207", 
+    "Finish": "3210"
+  }, 
+  "source_spec_sha256": "8d8f3668dabb78519be8126407a3ba73c358d40c3986251ab63690bed176291e", 
+  "source_spec_path": "E:\\Claude\\3D-Model-Workflow\\output\\1527_wieland\\plumbing_fixtures\\32526141\\source\\model_spec.json", 
+  "stage": "failed", 
+  "expected_dimensions_in": [
+    12.5625, 
+    2.625, 
+    9.5
+  ], 
+  "model": "32526141", 
+  "revit_version": "2025", 
+  "type": "32526141 - bronze", 
+  "rfa_search": {
+    "evidence": "_research/32526141/sources.json", 
+    "result": "No acceptable no-account RFA recovered"
+  }, 
+  "manufacturer": "Hansgrohe", 
+  "cct_k": null, 
+  "revit_build": "25.4.50.35", 
+  "technical_pass": false, 
+  "source_references": [
+    {
+      "page": 128, 
+      "document": "Hansgrohe 2026 US Price Book", 
+      "url": "https://assets.hansgrohe.com/celum/emailmarketing/hansgrohe_2026_Price_Book_en_US.pdf", 
+      "local_image": "_research/catalog_pages/page_128.png"
+    }
+  ], 
+  "source_dimensions": [
+    "Two square plates 2.625 in; plate thickness .375 in; total projection 9.5 in; nominal reach 8.875 in."
+  ], 
+  "acceptance": "UNREVIEWED", 
+  "error": "Traceback (most recent call last):\n  File \"E:\\Claude\\3D-Model-Workflow\\output\\1527_wieland\\plumbing_fixtures\\_harness\\family_factory.py\", line 96, in build\n    e=f.box(p['name'],*(p['bounds']+[material,p.get('radius',0)]))\n  File \"E:\\Claude\\3D-Model-Workflow\\output\\1527_wieland\\plumbing_fixtures\\_harness\\native_plumbing_support.py\", line 170, in box\n    solid=DB.GeometryCreationUtilities.CreateExtrusionGeometry(List[DB.CurveLoop]([loop(xyz(0,0,z0),DB.XYZ.BasisX,DB.XYZ.BasisY,points)]),DB.XYZ.BasisZ,(z1-z0)/12.)\nException: Curve loops do not satisfy the input requirements.\r\nParameter name: profileLoops\n", 
+  "appearance_defaults": {
+    "Detail": {
+      "rgb": [
+        24, 
+        25, 
+        26
+      ], 
+      "gloss": 0.17000000000000001, 
+      "luminance": 0, 
+      "transparency": 0, 
+      "cct_k": null
+    }, 
+    "Finish": {
+      "rgb": [
+        158, 
+        128, 
+        89
+      ], 
+      "gloss": 0.56000000000000005, 
+      "luminance": 0, 
+      "transparency": 0, 
+      "cct_k": null
+    }
+  }
+}

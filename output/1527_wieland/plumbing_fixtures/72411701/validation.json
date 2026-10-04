@@ -1,0 +1,207 @@
+{
+  "template_form_ids": [
+    "1537"
+  ], 
+  "rfa_search": {
+    "evidence": "_research/72411701/sources.json", 
+    "result": "No acceptable no-account RFA recovered"
+  }, 
+  "actual_dimensions_in": [
+    2.7500000596046448, 
+    2.8750000298023224, 
+    6.5000002384185791
+  ], 
+  "source_dimensions": [
+    "Overall spout projection 6.5 in; flange diameter 2.75 in; front diverter diameter 1.625 in."
+  ], 
+  "bounds_in": [
+    -1.3750000298023224, 
+    -1.3750000298023224, 
+    -3.3600235539928304e-24, 
+    1.3750000298023224, 
+    1.5, 
+    6.5000002384185791
+  ], 
+  "reopened": true, 
+  "category": "Plumbing Fixtures", 
+  "actual_dimensions_after_reopen_mm": [
+    69.850001513957977, 
+    73.025000756978983, 
+    165.10000605583190
+  ], 
+  "bounds_method": "Fine native face meshes plus 128-sample analytic edges", 
+  "source_spec_path": "E:\\Claude\\3D-Model-Workflow\\output\\1527_wieland\\plumbing_fixtures\\72411701\\source\\model_spec.json", 
+  "rfa_path": "E:\\Claude\\3D-Model-Workflow\\output\\1527_wieland\\plumbing_fixtures\\72411701\\Hansgrohe_72411701_R2025.rfa", 
+  "stage": "complete", 
+  "cct_k": null, 
+  "placement": "WorkPlaneBased", 
+  "material_tests": {
+    "Detail": {
+      "substitution_reaches_faces": true, 
+      "writable": true, 
+      "face_count": 30
+    }, 
+    "Finish": {
+      "substitution_reaches_faces": true, 
+      "writable": true, 
+      "face_count": 30
+    }
+  }, 
+  "evidence_files": [
+    "Hansgrohe_72411701_R2025_Isolated - 3D View - Native Front.png", 
+    "Hansgrohe_72411701_R2025_Isolated - 3D View - Native Material.png", 
+    "Hansgrohe_72411701_R2025_Isolated - 3D View - Native Oblique.png", 
+    "Hansgrohe_72411701_R2025_Isolated - 3D View - Native Side.png"
+  ], 
+  "model": "72411701", 
+  "acceptance": "NATIVE_GATES_PASSED_PENDING_VISUAL_REVIEW", 
+  "native_path_checks": [], 
+  "finished_utc": "2026-10-02T14:37:52.325000Z", 
+  "source_spec_sha256": "31240a345d9e389305b4f46208ef4f0fdc7a418de82c7733e50049a38eb7c37a", 
+  "reopened_warnings": [], 
+  "project_warnings": [], 
+  "reopen_geometry_equal": true, 
+  "visual_review": "PENDING_NATIVE_IMAGE_REVIEW", 
+  "display_bounds_in": [
+    -1.375, 
+    -1.375, 
+    0.0, 
+    1.375, 
+    1.5, 
+    6.5
+  ], 
+  "source_references": [
+    {
+      "page": 282, 
+      "document": "Hansgrohe 2026 US Price Book", 
+      "url": "https://assets.hansgrohe.com/celum/emailmarketing/hansgrohe_2026_Price_Book_en_US.pdf", 
+      "local_image": "_research/catalog_pages/page_282.png"
+    }
+  ], 
+  "appearance_bindings": {
+    "Detail": {
+      "material_id": "3207", 
+      "exists": true, 
+      "path": "E:\\Claude\\3D-Model-Workflow\\output\\1527_wieland\\plumbing_fixtures\\72411701\\textures\\Detail.png"
+    }, 
+    "Finish": {
+      "material_id": "3210", 
+      "exists": true, 
+      "path": "E:\\Claude\\3D-Model-Workflow\\output\\1527_wieland\\plumbing_fixtures\\72411701\\textures\\Finish.png"
+    }
+  }, 
+  "revit_build": "25.4.50.35", 
+  "dimension_anchor_checks": [
+    {
+      "label": "Flange diameter", 
+      "pass": true, 
+      "actual_mm": 69.850001513957977, 
+      "nominal_mm": 69.849999999999994, 
+      "deviation_mm": 1.5139579772949218e-06
+    }
+  ], 
+  "material_ids": {
+    "Detail": "3207", 
+    "Finish": "3210"
+  }, 
+  "expected_dimensions_in": [
+    2.75, 
+    2.875, 
+    6.5
+  ], 
+  "inferences": "Tip reach is nominally 5.625 in; the terminal cylinder is placed at 5.6875 in to match the separately printed projection. | Top lift height is inferred from the drawing; markings and hidden fittings omitted. | Independent visualization reconstruction with fixed product dimensions and editable native materials. | Small fillets, seams, nozzle details and optical material response are inferred where the manufacturer does not dimension them. | No internal hydraulic performance, MEP connectors, fabrication tolerances or procurement substitutions are implied.", 
+  "gates": {
+    "reopened": true, 
+    "warnings": true, 
+    "orientation": true, 
+    "diffuse_bitmaps": true, 
+    "actual_face_host": true, 
+    "dimensions": true, 
+    "materials": true, 
+    "reopen_geometry_equal": true, 
+    "views": true, 
+    "category": true, 
+    "cct": true
+  }, 
+  "revit_version": "2025", 
+  "manufacturer": "Hansgrohe", 
+  "technical_pass": true, 
+  "family_warnings": [], 
+  "started_utc": "2026-10-02T14:37:49.256000Z", 
+  "type": "72411701 - White", 
+  "parts": [
+    {
+      "volume_ft3": 0.00075615781541667735, 
+      "id": "3212", 
+      "name": "Wall flange"
+    }, 
+    {
+      "volume_ft3": 0.0054134025421875764, 
+      "id": "3213", 
+      "name": "Spout tube"
+    }, 
+    {
+      "volume_ft3": 0.0023912745264819332, 
+      "id": "3214", 
+      "name": "End diverter cylinder"
+    }, 
+    {
+      "volume_ft3": 0.00038404408957300813, 
+      "id": "3215", 
+      "name": "Diverter lift cap"
+    }, 
+    {
+      "volume_ft3": 0.00010311242937500147, 
+      "id": "3216", 
+      "name": "Outlet insert"
+    }
+  ], 
+  "all_overall_dimensions_authoritative": false, 
+  "native_gates_pass": true, 
+  "appearance_defaults": {
+    "Detail": {
+      "rgb": [
+        24, 
+        25, 
+        26
+      ], 
+      "gloss": 0.17000000000000001, 
+      "luminance": 0, 
+      "transparency": 0, 
+      "cct_k": null
+    }, 
+    "Finish": {
+      "rgb": [
+        242, 
+        243, 
+        240
+      ], 
+      "gloss": 0.17000000000000001, 
+      "luminance": 0, 
+      "transparency": 0, 
+      "cct_k": null
+    }
+  }, 
+  "reopened_bounds_in": [
+    -1.3750000298023224, 
+    -1.3750000298023224, 
+    -3.3600235539928304e-24, 
+    1.3750000298023224, 
+    1.5, 
+    6.5000002384185791
+  ], 
+  "limitations": [
+    "Tip reach is nominally 5.625 in; the terminal cylinder is placed at 5.6875 in to match the separately printed projection.", 
+    "Top lift height is inferred from the drawing; markings and hidden fittings omitted.", 
+    "Independent visualization reconstruction with fixed product dimensions and editable native materials.", 
+    "Small fillets, seams, nozzle details and optical material response are inferred where the manufacturer does not dimension them.", 
+    "No internal hydraulic performance, MEP connectors, fabrication tolerances or procurement substitutions are implied."
+  ], 
+  "host": {
+    "hostface_present": true, 
+    "host_kind": "wall", 
+    "normal_dot": 1.0, 
+    "host_id": "3696", 
+    "instance_host_id": "3696"
+  }
+}

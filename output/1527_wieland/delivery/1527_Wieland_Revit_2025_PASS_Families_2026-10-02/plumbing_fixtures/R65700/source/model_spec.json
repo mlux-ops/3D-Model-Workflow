@@ -1,0 +1,281 @@
+{
+  "key": "R65700",
+  "model": "R65700",
+  "manufacturer": "Brizo",
+  "type_name": "R65700 - brass",
+  "basename": "Brizo_R65700_R2025",
+  "name": "Single-handle wall lavatory rough",
+  "host": "wall",
+  "configured_dimensions_in": [
+    3.5625,
+    2,
+    4
+  ],
+  "materials": {
+    "Finish": {
+      "rgb": [
+        160,
+        124,
+        64
+      ],
+      "gloss": 0.4,
+      "reflectivity": 0.38,
+      "class": "Metal"
+    },
+    "Detail": {
+      "rgb": [
+        24,
+        25,
+        26
+      ],
+      "gloss": 0.17,
+      "reflectivity": 0.04,
+      "class": "Plastic"
+    },
+    "Graphite": {
+      "rgb": [
+        64,
+        67,
+        69
+      ],
+      "gloss": 0.36,
+      "reflectivity": 0.16,
+      "class": "Glass"
+    },
+    "Ceramic": {
+      "rgb": [
+        245,
+        245,
+        241
+      ],
+      "gloss": 0.86,
+      "reflectivity": 0.22,
+      "class": "Ceramic"
+    },
+    "Brass": {
+      "rgb": [
+        160,
+        124,
+        64
+      ],
+      "gloss": 0.4,
+      "reflectivity": 0.38,
+      "class": "Metal"
+    },
+    "Green": {
+      "rgb": [
+        31,
+        113,
+        66
+      ],
+      "gloss": 0.18,
+      "reflectivity": 0.05,
+      "class": "Plastic"
+    },
+    "Gray": {
+      "rgb": [
+        131,
+        132,
+        130
+      ],
+      "gloss": 0.32,
+      "reflectivity": 0.12,
+      "class": "Plastic"
+    }
+  },
+  "geometry": [
+    {
+      "kind": "cut",
+      "name": "Perforated mounting plate",
+      "base": {
+        "name": "Mounting plate",
+        "kind": "box",
+        "bounds": [
+          -1.78125,
+          -1,
+          0.0,
+          1.78125,
+          1,
+          0.125
+        ],
+        "radius": 0.16,
+        "material": "Brass"
+      },
+      "cutters": [
+        {
+          "name": "Plate fixing",
+          "kind": "cylinder",
+          "origin": [
+            -1.53125,
+            -0.75,
+            0
+          ],
+          "axis": [
+            0,
+            0,
+            1
+          ],
+          "radius": 0.125,
+          "a": -0.1,
+          "b": 0.3,
+          "material": "Finish"
+        },
+        {
+          "name": "Plate fixing",
+          "kind": "cylinder",
+          "origin": [
+            -1.53125,
+            0.75,
+            0
+          ],
+          "axis": [
+            0,
+            0,
+            1
+          ],
+          "radius": 0.125,
+          "a": -0.1,
+          "b": 0.3,
+          "material": "Finish"
+        },
+        {
+          "name": "Plate fixing",
+          "kind": "cylinder",
+          "origin": [
+            1.53125,
+            -0.75,
+            0
+          ],
+          "axis": [
+            0,
+            0,
+            1
+          ],
+          "radius": 0.125,
+          "a": -0.1,
+          "b": 0.3,
+          "material": "Finish"
+        },
+        {
+          "name": "Plate fixing",
+          "kind": "cylinder",
+          "origin": [
+            1.53125,
+            0.75,
+            0
+          ],
+          "axis": [
+            0,
+            0,
+            1
+          ],
+          "radius": 0.125,
+          "a": -0.1,
+          "b": 0.3,
+          "material": "Finish"
+        }
+      ],
+      "material": "Brass"
+    },
+    {
+      "name": "Brass manifold",
+      "kind": "cylinder",
+      "origin": [
+        0,
+        0,
+        0.8
+      ],
+      "axis": [
+        1,
+        0,
+        0
+      ],
+      "radius": 0.6,
+      "a": -1.25,
+      "b": 1.25,
+      "material": "Brass"
+    },
+    {
+      "name": "Upper branch",
+      "kind": "cylinder",
+      "origin": [
+        0,
+        0.4,
+        0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "radius": 0.44,
+      "a": 0.2,
+      "b": 2.4,
+      "material": "Brass"
+    },
+    {
+      "name": "Lower branch",
+      "kind": "cylinder",
+      "origin": [
+        0,
+        -0.4,
+        0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "radius": 0.44,
+      "a": 0.2,
+      "b": 2.4,
+      "material": "Brass"
+    },
+    {
+      "name": "Rectangular plaster guard",
+      "kind": "box",
+      "bounds": [
+        -0.625,
+        -0.625,
+        2.25,
+        0.625,
+        0.625,
+        4
+      ],
+      "radius": 0.12,
+      "material": "Detail"
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://media.brizo.com/SpecSheet/BSP-L-R65700%20Rev%20B.pdf",
+      "document": "Brizo BSP-L-R65700 Rev B",
+      "page": 1,
+      "visual_review_method": "Manufacturer web PDF screenshot"
+    }
+  ],
+  "dimension_authority": [
+    "Overall mounting plate 3.5625 x 2 in; full rough projection 4 in; fixing centers 3.0625 x 1.5 in."
+  ],
+  "limitations": [
+    "Hidden valve passages, stop screws and plaster-guard lettering are not modeled.",
+    "Independent visualization reconstruction with fixed product dimensions and editable native materials.",
+    "Small fillets, seams, nozzle details and optical material response are inferred where the manufacturer does not dimension them.",
+    "No internal hydraulic performance, MEP connectors, fabrication tolerances or procurement substitutions are implied."
+  ],
+  "anchors": [
+    {
+      "label": "Mounting plate width",
+      "parts": [
+        "Perforated mounting plate"
+      ],
+      "axis": 0,
+      "nominal_in": 3.5625
+    }
+  ],
+  "all_overall_dimensions_authoritative": true,
+  "rfa_search": {
+    "result": "No acceptable no-account RFA recovered",
+    "evidence": "_research/R65700/sources.json"
+  }
+}

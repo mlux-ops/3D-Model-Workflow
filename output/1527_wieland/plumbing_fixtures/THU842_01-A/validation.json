@@ -1,0 +1,199 @@
+{
+  "host": {
+    "instance_host_id": "3698", 
+    "host_id": "3698", 
+    "host_kind": "floor", 
+    "hostface_present": true, 
+    "normal_dot": 1.0
+  }, 
+  "model": "THU842#01-A", 
+  "source_dimensions": [
+    "Exact part identity is verified in the manufacturer component illustration; no independent numeric component dimensions are published there."
+  ], 
+  "inferences": "DIMENSION HOLD: all button and rod dimensions are inferred from the illustrated relationship to the known tank; they are not manufacturer-verified dimensions. | Rod length 5.5 in is an illustrative uncut setting. This family is suitable only for approximate visualization until the supplied component is measured. | Independent visualization reconstruction with fixed product dimensions and editable native materials. | Small fillets, seams, nozzle details and optical material response are inferred where the manufacturer does not dimension them. | No internal hydraulic performance, MEP connectors, fabrication tolerances or procurement substitutions are implied.", 
+  "visual_review": "PENDING_NATIVE_IMAGE_REVIEW", 
+  "source_spec_sha256": "dfd7040e0434320a7e2819003222a16b402949788d9600605070530c4db73271", 
+  "started_utc": "2026-10-02T15:55:25.383000Z", 
+  "template_form_ids": [
+    "1537"
+  ], 
+  "source_references": [
+    {
+      "local_image": "_research/CT446CEFGNT40_01/downloads/PD-01451_446EN_pages/page_01.png", 
+      "document": "TOTO PD-01451 Aquia IV exact component illustration", 
+      "page": 1, 
+      "url": "https://www.totousa.com/filemanager_uploads/product_assets/PartsManual/PD-01451_446EN.pdf"
+    }
+  ], 
+  "reopened": true, 
+  "gates": {
+    "actual_face_host": true, 
+    "reopened": true, 
+    "category": true, 
+    "diffuse_bitmaps": true, 
+    "warnings": true, 
+    "views": true, 
+    "dimensions": true, 
+    "reopen_geometry_equal": true, 
+    "materials": true, 
+    "cct": true, 
+    "orientation": true
+  }, 
+  "placement": "WorkPlaneBased", 
+  "material_tests": {
+    "Finish": {
+      "face_count": 40, 
+      "substitution_reaches_faces": true, 
+      "writable": true
+    }, 
+    "Gray": {
+      "face_count": 40, 
+      "substitution_reaches_faces": true, 
+      "writable": true
+    }
+  }, 
+  "acceptance": "NATIVE_GATES_PASSED_PENDING_VISUAL_REVIEW", 
+  "actual_dimensions_in": [
+    1.8600000143051147, 
+    1.8600000143051147, 
+    5.6800001192092893
+  ], 
+  "family_warnings": [], 
+  "cct_k": null, 
+  "stage": "complete", 
+  "manufacturer": "TOTO", 
+  "material_ids": {
+    "Finish": "3207", 
+    "Gray": "3210"
+  }, 
+  "expected_dimensions_in": [
+    1.8600000000000001, 
+    1.8600000000000001, 
+    5.6799999999999997
+  ], 
+  "bounds_in": [
+    -0.93000000715255737, 
+    -0.93000000715255737, 
+    -5.5000001192092896, 
+    0.93000000715255737, 
+    0.93000000715255737, 
+    0.17999999999999999
+  ], 
+  "appearance_bindings": {
+    "Finish": {
+      "path": "E:\\Claude\\3D-Model-Workflow\\output\\1527_wieland\\plumbing_fixtures\\THU842_01-A\\textures\\Finish.png", 
+      "exists": true, 
+      "material_id": "3207"
+    }, 
+    "Gray": {
+      "path": "E:\\Claude\\3D-Model-Workflow\\output\\1527_wieland\\plumbing_fixtures\\THU842_01-A\\textures\\Gray.png", 
+      "exists": true, 
+      "material_id": "3210"
+    }
+  }, 
+  "rfa_path": "E:\\Claude\\3D-Model-Workflow\\output\\1527_wieland\\plumbing_fixtures\\THU842_01-A\\TOTO_THU842_01-A_R2025.rfa", 
+  "finished_utc": "2026-10-02T15:55:29.659000Z", 
+  "appearance_defaults": {
+    "Finish": {
+      "cct_k": null, 
+      "luminance": 0, 
+      "gloss": 0.17000000000000001, 
+      "rgb": [
+        242, 
+        243, 
+        240
+      ], 
+      "transparency": 0
+    }, 
+    "Gray": {
+      "cct_k": null, 
+      "luminance": 0, 
+      "gloss": 0.32000000000000001, 
+      "rgb": [
+        131, 
+        132, 
+        130
+      ], 
+      "transparency": 0
+    }
+  }, 
+  "evidence_files": [
+    "TOTO_THU842_01-A_R2025_Isolated - 3D View - Native Front.png", 
+    "TOTO_THU842_01-A_R2025_Isolated - 3D View - Native Material.png", 
+    "TOTO_THU842_01-A_R2025_Isolated - 3D View - Native Oblique.png", 
+    "TOTO_THU842_01-A_R2025_Isolated - 3D View - Native Side.png"
+  ], 
+  "display_bounds_in": [
+    -0.92999999999999994, 
+    -0.92999999999999994, 
+    -5.5, 
+    0.92999999999999994, 
+    0.92999999999999994, 
+    0.17999999999999999
+  ], 
+  "source_spec_path": "E:\\Claude\\3D-Model-Workflow\\output\\1527_wieland\\plumbing_fixtures\\THU842_01-A\\source\\model_spec.json", 
+  "all_overall_dimensions_authoritative": false, 
+  "dimension_anchor_checks": [], 
+  "reopen_geometry_equal": true, 
+  "revit_version": "2025", 
+  "reopened_bounds_in": [
+    -0.93000000715255737, 
+    -0.93000000715255737, 
+    -5.5000001192092896, 
+    0.93000000715255737, 
+    0.93000000715255737, 
+    0.17999999999999999
+  ], 
+  "project_warnings": [], 
+  "rfa_search": {
+    "result": "No acceptable no-account RFA recovered", 
+    "evidence": "_research/THU842_01-A/sources.json"
+  }, 
+  "limitations": [
+    "DIMENSION HOLD: all button and rod dimensions are inferred from the illustrated relationship to the known tank; they are not manufacturer-verified dimensions.", 
+    "Rod length 5.5 in is an illustrative uncut setting. This family is suitable only for approximate visualization until the supplied component is measured.", 
+    "Independent visualization reconstruction with fixed product dimensions and editable native materials.", 
+    "Small fillets, seams, nozzle details and optical material response are inferred where the manufacturer does not dimension them.", 
+    "No internal hydraulic performance, MEP connectors, fabrication tolerances or procurement substitutions are implied."
+  ], 
+  "parts": [
+    {
+      "name": "Circular button bezel", 
+      "volume_ft3": 0.00011856918137771001, 
+      "id": "3212"
+    }, 
+    {
+      "name": "Button mounting sleeve", 
+      "volume_ft3": 0.00025975742340615313, 
+      "id": "3213"
+    }, 
+    {
+      "name": "Split dual flush buttons", 
+      "volume_ft3": 0.00011776785000382281, 
+      "id": "3214"
+    }, 
+    {
+      "name": "Small flush rod", 
+      "volume_ft3": 6.9209744331571213e-05, 
+      "id": "3215"
+    }, 
+    {
+      "name": "Full flush rod", 
+      "volume_ft3": 6.9209744331571213e-05, 
+      "id": "3216"
+    }
+  ], 
+  "category": "Plumbing Fixtures", 
+  "bounds_method": "Fine native face meshes plus 128-sample analytic edges", 
+  "type": "THU842#01-A - white", 
+  "native_gates_pass": true, 
+  "technical_pass": true, 
+  "native_path_checks": [], 
+  "reopened_warnings": [], 
+  "revit_build": "25.4.50.35", 
+  "actual_dimensions_after_reopen_mm": [
+    47.244000363349912, 
+    47.244000363349912, 
+    144.27200302791593
+  ]
+}

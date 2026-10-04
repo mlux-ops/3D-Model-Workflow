@@ -1,0 +1,39 @@
+{
+  "generated_utc": "2026-10-02T16:12:31.714680+00:00",
+  "scope": "Three newly completed native families; source corroboration and disclosed pose limitations.",
+  "items": {
+    "62820LF-BL": {
+      "review": "Native oblique and side images inspected: wall flange, two swivel stages, two downward paddles and downward outlet are visible. Simplified collars and paddles remain disclosed.",
+      "source_review": "Manufacturer BSP-K-62810LF Rev N page 1 screenshot inspected, including the 62820 lever detail. The dimensioned drawing is the chosen authority for 20.375-inch full projection and 19.25-inch outlet reach.",
+      "additional_limitations": [
+        "ASSUMPTION: use the explicit Rev N drawing rather than the undifferentiated 22-inch reach on the current product page. The 9.25-inch posed height includes a drawing-derived downward handle; it is not the product-page 6.5-inch body-height value."
+      ],
+      "sources": [
+        "https://media.brizo.com/SpecSheet/BSP-K-62810LF%20Rev%20N.pdf",
+        "https://www.brizo.com/kitchen/product/62820LF-BL"
+      ]
+    },
+    "63221LF-BLLHP": {
+      "review": "Native oblique and side images inspected: two articulated arms, wand, separate hose, base and less-handle spindle are visible. Pose and rigid simplified sections remain limitations.",
+      "source_review": "Current official product page links BSP-K-63121LF-LHP Rev B. Rev B parsed successfully but its screenshot returned cache miss. Manufacturer Rev A, linked by a supplier, was successfully viewed as a PDF screenshot; the relevant 2.4375/6.75/5.875/4.75/21.5-inch and 23-inch hose callouts match Rev B text. Rev A is used only for visual corroboration.",
+      "additional_limitations": [
+        "ASSUMPTION: retain the documented fixed pose at 21.75-inch outer hose height and exactly 23-inch native hose path. It is not a verified manufacturer overall height. The current product page states 19.875 inches, while its linked drawing depicts 21.5 inches and states height varies with arm position. Resolve pose/clearance convention during visual review."
+      ],
+      "sources": [
+        "https://media.brizo.com/SpecSheet/BSP-K-63121LF-LHP%20Rev%20B.pdf",
+        "https://media.brizo.com/SpecSheet/BSP-K-63121LF-LHP%20Rev%20A.pdf",
+        "https://www.brizo.com/kitchen/product/63221LF-BLLHP"
+      ]
+    },
+    "873111-BNX-2.5": {
+      "review": "Native oblique and side images inspected: round wall flange, asymmetric pivot/arm, inclined cylinder and recessed nozzle disk are present. Fixed 45-degree pose and simplified hardware remain disclosed.",
+      "source_review": "Manufacturer BSP-B-873111 Rev A page 1 screenshot inspected. Cylinder/flange diameter 4.75 inches, cylinder length 7.75 inches and full thread-to-head envelope 16 inches are the selected drawing authority.",
+      "additional_limitations": [
+        "ASSUMPTION: use the explicit 873111 title/model drawing even though standard-specification body text names 873110. The 16-inch total includes the assumed 1.5-inch concealed stub; it is not a finished-wall projection."
+      ],
+      "sources": [
+        "https://media.brizo.com/SpecSheet/BSP-B-873111%20Rev%20A.pdf"
+      ]
+    }
+  }
+}

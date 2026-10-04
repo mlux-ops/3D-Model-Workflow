@@ -1,0 +1,223 @@
+{
+  "family_warnings": [], 
+  "template_form_ids": [
+    "1537"
+  ], 
+  "source_spec_path": "E:\\Claude\\3D-Model-Workflow\\output\\1527_wieland\\plumbing_fixtures\\T755110-BNXLHP\\source\\model_spec.json", 
+  "technical_pass": true, 
+  "actual_dimensions_in": [
+    7.5, 
+    7.5, 
+    4.5
+  ], 
+  "manufacturer": "Brizo", 
+  "source_spec_sha256": "b1833ff11dc7304fcea68b28b6b2d1ec7f514073852f9666cb2b9eb085cea3cc", 
+  "stage": "complete", 
+  "reopened": true, 
+  "placement": "WorkPlaneBased", 
+  "reopened_warnings": [], 
+  "reopen_geometry_equal": true, 
+  "all_overall_dimensions_authoritative": true, 
+  "acceptance": "NATIVE_GATES_PASSED_PENDING_VISUAL_REVIEW", 
+  "model": "T755110-BNXLHP", 
+  "parts": [
+    {
+      "name": "Escutcheon", 
+      "id": "3212", 
+      "volume_ft3": 0.01597816570893618
+    }, 
+    {
+      "name": "Upper collar", 
+      "id": "3213", 
+      "volume_ft3": 0.001099297800774809
+    }, 
+    {
+      "name": "Upper stem", 
+      "id": "3214", 
+      "volume_ft3": 6.7264526931130414e-05
+    }, 
+    {
+      "name": "Lower collar", 
+      "id": "3215", 
+      "volume_ft3": 0.0037637457003271888
+    }, 
+    {
+      "name": "Cartridge outer sleeve", 
+      "id": "3216", 
+      "volume_ft3": 0.0010307834262148904
+    }, 
+    {
+      "name": "Cartridge middle sleeve", 
+      "id": "3217", 
+      "volume_ft3": 0.00053045351325945649
+    }, 
+    {
+      "name": "Cartridge end sleeve", 
+      "id": "3218", 
+      "volume_ft3": 0.00024051613278347445
+    }, 
+    {
+      "name": "Lower stem", 
+      "id": "3219", 
+      "volume_ft3": 2.6505859531240065e-05
+    }
+  ], 
+  "gates": {
+    "actual_face_host": true, 
+    "warnings": true, 
+    "category": true, 
+    "orientation": true, 
+    "materials": true, 
+    "dimensions": true, 
+    "diffuse_bitmaps": true, 
+    "reopened": true, 
+    "views": true, 
+    "reopen_geometry_equal": true, 
+    "cct": true
+  }, 
+  "started_utc": "2026-10-02T14:27:11.684000Z", 
+  "category": "Plumbing Fixtures", 
+  "expected_dimensions_in": [
+    7.5, 
+    7.5, 
+    4.5
+  ], 
+  "actual_dimensions_after_reopen_mm": [
+    190.5, 
+    190.5, 
+    114.30000000000000
+  ], 
+  "appearance_bindings": {
+    "Finish": {
+      "material_id": "3210", 
+      "path": "E:\\Claude\\3D-Model-Workflow\\output\\1527_wieland\\plumbing_fixtures\\T755110-BNXLHP\\textures\\Finish.png", 
+      "exists": true
+    }, 
+    "Brass": {
+      "material_id": "3207", 
+      "path": "E:\\Claude\\3D-Model-Workflow\\output\\1527_wieland\\plumbing_fixtures\\T755110-BNXLHP\\textures\\Brass.png", 
+      "exists": true
+    }
+  }, 
+  "revit_build": "25.4.50.35", 
+  "bounds_method": "Fine native face meshes plus 128-sample analytic edges", 
+  "material_tests": {
+    "Finish": {
+      "face_count": 48, 
+      "substitution_reaches_faces": true, 
+      "writable": true
+    }, 
+    "Brass": {
+      "face_count": 48, 
+      "substitution_reaches_faces": true, 
+      "writable": true
+    }
+  }, 
+  "evidence_files": [
+    "Brizo_T755110-BNXLHP_R2025_Isolated - 3D View - Native Front.png", 
+    "Brizo_T755110-BNXLHP_R2025_Isolated - 3D View - Native Material.png", 
+    "Brizo_T755110-BNXLHP_R2025_Isolated - 3D View - Native Oblique.png", 
+    "Brizo_T755110-BNXLHP_R2025_Isolated - 3D View - Native Side.png"
+  ], 
+  "source_dimensions": [
+    "Escutcheon diameter 7.5 in; maximum stem projection 4.5 in; upper projection 2.625 in.", 
+    "Collar diameters 1.5 and 2.5 in; vertical centers scaled from the manufacturer drawing at 2.875 in."
+  ], 
+  "material_ids": {
+    "Finish": "3210", 
+    "Brass": "3207"
+  }, 
+  "rfa_search": {
+    "result": "No acceptable no-account RFA recovered", 
+    "evidence": "_research/T755110-BNXLHP/sources.json"
+  }, 
+  "dimension_anchor_checks": [
+    {
+      "pass": true, 
+      "label": "Escutcheon diameter", 
+      "actual_mm": 190.5, 
+      "deviation_mm": 0.0, 
+      "nominal_mm": 190.5
+    }
+  ], 
+  "display_bounds_in": [
+    -3.75, 
+    -3.75, 
+    0.0, 
+    3.75, 
+    3.75, 
+    4.5
+  ], 
+  "type": "T755110-BNXLHP - Brilliance Black Onyx -  Black", 
+  "bounds_in": [
+    -3.75, 
+    -3.75, 
+    -6.6586753467243218e-23, 
+    3.75, 
+    3.75, 
+    4.5
+  ], 
+  "source_references": [
+    {
+      "page": 1, 
+      "document": "Brizo BSP-B-T755110-LHP Rev A", 
+      "url": "https://bravo.requested-info.com/brands/BRZ/documents/specSheets/T755110-BLLHP_Spec.pdf", 
+      "local_image": "_research/T755110-BNXLHP/downloads/T755110-BLLHP_Spec_pages/page_01.png"
+    }
+  ], 
+  "inferences": "LHP scope is modeled without the separately scheduled HL75110 handles. | Cartridge steps and stem details are simplified. | Cartridge center spacing is drawing-derived and is not a rough-in fabrication dimension. | Independent visualization reconstruction with fixed product dimensions and editable native materials. | Small fillets, seams, nozzle details and optical material response are inferred where the manufacturer does not dimension them. | No internal hydraulic performance, MEP connectors, fabrication tolerances or procurement substitutions are implied.", 
+  "finished_utc": "2026-10-02T14:27:14.873000Z", 
+  "native_gates_pass": true, 
+  "appearance_defaults": {
+    "Finish": {
+      "gloss": 0.92000000000000004, 
+      "transparency": 0, 
+      "cct_k": null, 
+      "luminance": 0, 
+      "rgb": [
+        58, 
+        60, 
+        62
+      ]
+    }, 
+    "Brass": {
+      "gloss": 0.40000000000000002, 
+      "transparency": 0, 
+      "cct_k": null, 
+      "luminance": 0, 
+      "rgb": [
+        160, 
+        124, 
+        64
+      ]
+    }
+  }, 
+  "visual_review": "PENDING_NATIVE_IMAGE_REVIEW", 
+  "project_warnings": [], 
+  "reopened_bounds_in": [
+    -3.75, 
+    -3.75, 
+    -6.6586753467243218e-23, 
+    3.75, 
+    3.75, 
+    4.5
+  ], 
+  "cct_k": null, 
+  "rfa_path": "E:\\Claude\\3D-Model-Workflow\\output\\1527_wieland\\plumbing_fixtures\\T755110-BNXLHP\\Brizo_T755110-BNXLHP_R2025.rfa", 
+  "limitations": [
+    "LHP scope is modeled without the separately scheduled HL75110 handles.", 
+    "Cartridge steps and stem details are simplified.", 
+    "Cartridge center spacing is drawing-derived and is not a rough-in fabrication dimension.", 
+    "Independent visualization reconstruction with fixed product dimensions and editable native materials.", 
+    "Small fillets, seams, nozzle details and optical material response are inferred where the manufacturer does not dimension them.", 
+    "No internal hydraulic performance, MEP connectors, fabrication tolerances or procurement substitutions are implied."
+  ], 
+  "host": {
+    "host_id": "3699", 
+    "instance_host_id": "3699", 
+    "hostface_present": true, 
+    "normal_dot": 1.0, 
+    "host_kind": "wall"
+  }, 
+  "revit_version": "2025"
+}

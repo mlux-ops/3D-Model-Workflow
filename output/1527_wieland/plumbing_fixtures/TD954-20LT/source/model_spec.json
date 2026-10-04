@@ -1,0 +1,217 @@
+{
+  "key": "TD954-20LT",
+  "model": "TD954-20LT",
+  "manufacturer": "Westbrass",
+  "type_name": "TD954-20LT - white",
+  "basename": "Westbrass_TD954-20LT_R2025",
+  "name": "TD954 PVC waste and overflow, less visible trim",
+  "host": "floor",
+  "configured_dimensions_in": [
+    2.4,
+    6.3,
+    14.5
+  ],
+  "materials": {
+    "Finish": {
+      "rgb": [
+        242,
+        243,
+        240
+      ],
+      "gloss": 0.17,
+      "reflectivity": 0.06,
+      "class": "Plastic"
+    },
+    "Detail": {
+      "rgb": [
+        24,
+        25,
+        26
+      ],
+      "gloss": 0.17,
+      "reflectivity": 0.04,
+      "class": "Plastic"
+    },
+    "Graphite": {
+      "rgb": [
+        64,
+        67,
+        69
+      ],
+      "gloss": 0.36,
+      "reflectivity": 0.16,
+      "class": "Glass"
+    },
+    "Ceramic": {
+      "rgb": [
+        245,
+        245,
+        241
+      ],
+      "gloss": 0.86,
+      "reflectivity": 0.22,
+      "class": "Ceramic"
+    },
+    "Brass": {
+      "rgb": [
+        160,
+        124,
+        64
+      ],
+      "gloss": 0.4,
+      "reflectivity": 0.38,
+      "class": "Metal"
+    },
+    "Green": {
+      "rgb": [
+        31,
+        113,
+        66
+      ],
+      "gloss": 0.18,
+      "reflectivity": 0.05,
+      "class": "Plastic"
+    },
+    "Gray": {
+      "rgb": [
+        131,
+        132,
+        130
+      ],
+      "gloss": 0.32,
+      "reflectivity": 0.12,
+      "class": "Plastic"
+    }
+  },
+  "geometry": [
+    {
+      "name": "12 inch overflow tube",
+      "kind": "cylinder",
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "radius": 0.95,
+      "a": 0,
+      "b": 12,
+      "material": "Finish",
+      "inner_radius": 0.8
+    },
+    {
+      "name": "Overflow elbow receiver",
+      "kind": "cylinder",
+      "origin": [
+        0,
+        0,
+        12
+      ],
+      "axis": [
+        0,
+        1,
+        0
+      ],
+      "radius": 1.0,
+      "a": -0.95,
+      "b": 1.5,
+      "material": "Finish",
+      "inner_radius": 0.8
+    },
+    {
+      "name": "4 inch waste tube",
+      "kind": "cylinder",
+      "origin": [
+        0,
+        0,
+        0.75
+      ],
+      "axis": [
+        0,
+        1,
+        0
+      ],
+      "radius": 0.95,
+      "a": 0,
+      "b": 4,
+      "material": "Finish",
+      "inner_radius": 0.8
+    },
+    {
+      "name": "Bottom tee",
+      "kind": "cylinder",
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "radius": 1.1,
+      "a": -1.5,
+      "b": 1.9,
+      "material": "Finish",
+      "inner_radius": 0.8
+    },
+    {
+      "name": "Drain shoe",
+      "kind": "cylinder",
+      "origin": [
+        0,
+        4,
+        0.75
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "radius": 1.2,
+      "a": 0,
+      "b": 1.75,
+      "material": "Finish",
+      "inner_radius": 0.9
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://westbrass.com/product/12-4-bath-waste-overflow-assembly-with-tip-toe-drain-plug-and-illusionary-faceplate-sch-40-pvc-pipe/",
+      "document": "Westbrass TD954 manufacturer product",
+      "page": 1,
+      "visual_review_method": "Manufacturer web PDF screenshot"
+    }
+  ],
+  "dimension_authority": [
+    "Official TD954 description specifies 12-inch and 4-inch pipe lengths and nominal 1.5-inch Sch.40 PVC."
+  ],
+  "limitations": [
+    "IDENTITY HOLD: base TD954 is manufacturer-verified; the -20LT exact suffix was not independently verified.",
+    "ASSUMPTION: less-trim interpretation follows the schedule; visible stopper/overflow cover are omitted.",
+    "Pipe assembled positions, sockets and elbow envelopes are approximate; supplied pipes are field-cut to the selected tub.",
+    "Independent visualization reconstruction with fixed product dimensions and editable native materials.",
+    "Small fillets, seams, nozzle details and optical material response are inferred where the manufacturer does not dimension them.",
+    "No internal hydraulic performance, MEP connectors, fabrication tolerances or procurement substitutions are implied."
+  ],
+  "anchors": [
+    {
+      "label": "Overflow pipe length",
+      "parts": [
+        "12 inch overflow tube"
+      ],
+      "axis": 2,
+      "nominal_in": 12
+    }
+  ],
+  "all_overall_dimensions_authoritative": false,
+  "rfa_search": {
+    "result": "No acceptable no-account RFA recovered",
+    "evidence": "_research/TD954-20LT/sources.json"
+  }
+}

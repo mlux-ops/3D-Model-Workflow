@@ -1,0 +1,256 @@
+{
+  "key": "26843701",
+  "model": "26843701",
+  "manufacturer": "Hansgrohe",
+  "type_name": "26843701 - White",
+  "basename": "Hansgrohe_26843701_R2025",
+  "name": "Rainfinity shelf and left-hand shower holder",
+  "host": "wall",
+  "configured_dimensions_in": [
+    19.75,
+    2.45,
+    3.85
+  ],
+  "materials": {
+    "Finish": {
+      "rgb": [
+        242,
+        243,
+        240
+      ],
+      "gloss": 0.17,
+      "reflectivity": 0.06,
+      "class": "Plastic"
+    },
+    "Detail": {
+      "rgb": [
+        24,
+        25,
+        26
+      ],
+      "gloss": 0.17,
+      "reflectivity": 0.04,
+      "class": "Plastic"
+    },
+    "Graphite": {
+      "rgb": [
+        64,
+        67,
+        69
+      ],
+      "gloss": 0.36,
+      "reflectivity": 0.16,
+      "class": "Glass"
+    },
+    "Ceramic": {
+      "rgb": [
+        245,
+        245,
+        241
+      ],
+      "gloss": 0.86,
+      "reflectivity": 0.22,
+      "class": "Ceramic"
+    },
+    "Brass": {
+      "rgb": [
+        160,
+        124,
+        64
+      ],
+      "gloss": 0.4,
+      "reflectivity": 0.38,
+      "class": "Metal"
+    },
+    "Green": {
+      "rgb": [
+        31,
+        113,
+        66
+      ],
+      "gloss": 0.18,
+      "reflectivity": 0.05,
+      "class": "Plastic"
+    },
+    "Gray": {
+      "rgb": [
+        131,
+        132,
+        130
+      ],
+      "gloss": 0.32,
+      "reflectivity": 0.12,
+      "class": "Plastic"
+    }
+  },
+  "geometry": [
+    {
+      "name": "Bowed shelf body",
+      "kind": "profile",
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "u": [
+        1,
+        0,
+        0
+      ],
+      "v": [
+        0,
+        -1,
+        0
+      ],
+      "normal": [
+        0,
+        0,
+        1
+      ],
+      "points": [
+        [
+          -9.8125,
+          0
+        ],
+        [
+          9.8125,
+          0
+        ],
+        [
+          9.8125,
+          1.05
+        ],
+        [
+          "arc",
+          [
+            5.8,
+            1.9
+          ],
+          [
+            3.0,
+            2.05
+          ]
+        ],
+        [
+          -3.0,
+          2.05
+        ],
+        [
+          "arc",
+          [
+            -7.0,
+            1.85
+          ],
+          [
+            -9.8125,
+            1.05
+          ]
+        ]
+      ],
+      "length": 3.5,
+      "material": "Finish"
+    },
+    {
+      "name": "Graphite safety-glass shelf",
+      "kind": "box",
+      "bounds": [
+        -9.875,
+        -0.02,
+        0,
+        9.875,
+        0.18,
+        3.75
+      ],
+      "radius": 0.07,
+      "material": "Graphite"
+    },
+    {
+      "name": "Left hose outlet",
+      "kind": "cylinder",
+      "origin": [
+        -8.3,
+        -1.0,
+        2.7
+      ],
+      "axis": [
+        0,
+        -1,
+        0
+      ],
+      "radius": 0.32,
+      "a": 0,
+      "b": 1.2,
+      "material": "Finish"
+    },
+    {
+      "name": "Left holder outer cheek",
+      "kind": "box",
+      "bounds": [
+        -9.6,
+        -0.55,
+        3.1,
+        -9.1,
+        0.25,
+        3.85
+      ],
+      "radius": 0.14,
+      "material": "Finish"
+    },
+    {
+      "name": "Left holder inner cheek",
+      "kind": "box",
+      "bounds": [
+        -8.5,
+        -0.55,
+        3.1,
+        -8.0,
+        0.25,
+        3.85
+      ],
+      "radius": 0.14,
+      "material": "Finish"
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://assets.hansgrohe.com/celum/emailmarketing/hansgrohe_2026_Price_Book_en_US.pdf",
+      "document": "Hansgrohe 2026 US Price Book",
+      "page": 266,
+      "local_image": "_research/catalog_pages/page_266.png"
+    }
+  ],
+  "dimension_authority": [
+    "Body span 19.625 in; glass span 19.75 in interpreted from the two separately annotated widths; fixing centers 15.75 in."
+  ],
+  "limitations": [
+    "ASSUMPTION: shelf depth 3.75 in and holder projection 3.85 in from proportions; no explicit side dimension was recovered.",
+    "Left holder slot is represented by separate cheeks; the body, glass and outlet remain separate materials.",
+    "White legacy SKU is retained although omitted from the current main catalog.",
+    "Independent visualization reconstruction with fixed product dimensions and editable native materials.",
+    "Small fillets, seams, nozzle details and optical material response are inferred where the manufacturer does not dimension them.",
+    "No internal hydraulic performance, MEP connectors, fabrication tolerances or procurement substitutions are implied."
+  ],
+  "anchors": [
+    {
+      "label": "Body span",
+      "parts": [
+        "Bowed shelf body"
+      ],
+      "axis": 0,
+      "nominal_in": 19.625
+    },
+    {
+      "label": "Glass span",
+      "parts": [
+        "Graphite safety-glass shelf"
+      ],
+      "axis": 0,
+      "nominal_in": 19.75
+    }
+  ],
+  "all_overall_dimensions_authoritative": false,
+  "rfa_search": {
+    "result": "No acceptable no-account RFA recovered",
+    "evidence": "_research/26843701/sources.json"
+  }
+}

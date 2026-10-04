@@ -1,0 +1,50 @@
+{
+  "model": "H 7270 BM",
+  "slug": "miele_h7270bm",
+  "status": "BUILT_WITH_LIMITATIONS",
+  "rfa": "miele_h7270bm/miele_h7270bm_Custom_R1_R2025.rfa",
+  "rfa_bytes": 491520,
+  "rfa_sha256": "f06e96380ec5059cc529b918c2ce34a8ba242cbe9fc3f8f35b77bb5d4e3d654b",
+  "row_ids": [
+    8816514970877828,
+    6403663455649668
+  ],
+  "source_urls": [
+    "https://www.mieleusa.com/product/11968190/30-speed-oven-h-7270-bm-obsidian-black",
+    "https://media.miele.com/downloads/8b/20/02_C7F138387FFA1FD189C793AEE9B58B20.zip",
+    "https://media.miele.com/downloads/n-/us/FS_11968190_USE_US-en-US.pdf"
+  ],
+  "original_rfas": [
+    {
+      "path": "miele_h7270bm/source/original/11968190_USA_H7270BM_OBSW.rfa",
+      "sha256": "d1e3464c547fdfa518b151ab4c8f25fdacd57d926d4cf9d9ab6e90881af76769"
+    }
+  ],
+  "validation": "miele_h7270bm/validation.json",
+  "previews": [
+    "miele_h7270bm/views/rework_r1/oblique - 3D View - oblique.png",
+    "miele_h7270bm/views/rework_r1/front - 3D View - front.png",
+    "miele_h7270bm/views/rework_r1/side - 3D View - side.png"
+  ],
+  "revision": "Custom_R1",
+  "build_method": "native_custom_new_family",
+  "dimension_gate": true,
+  "dimension_gate_scope": "overall",
+  "native_gates_pass": true,
+  "replacement_reason": "Orchestrator round 1: exact-identity manufacturer working family fails the <=1 mm complete overall dimension gate. New native custom geometry replaces the working selection; OEM originals and prior working RFA remain preserved.",
+  "superseded_working_rfa": {
+    "path": "miele_h7270bm/miele_h7270bm_R2025.rfa",
+    "sha256": "4f9956271a11bf762ba499664915314ce8b19d790dd946eaf7e8a36ea5f50ac7",
+    "status": "DOWNLOADED"
+  },
+  "source_pdf_sha256": "66d7053796d55dd0f4bc3b0657de0bdee1952f7b83a9604adb94b2b99f06bb29",
+  "source_page": 2,
+  "custom_build_entry": "miele_h7270bm/source/build.py",
+  "build_support": [
+    "rework_round1/native_rebuild.py",
+    "rework_round1/validate_native.py",
+    "family_common.py"
+  ],
+  "validation_native_record": "miele_h7270bm/source/rework_r1/validation.json",
+  "validation_sha256": "570e3e857d88476dd4bfe6b85633912c95a24afecf410dea8255461fb99a70e3"
+}

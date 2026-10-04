@@ -1,0 +1,218 @@
+{
+  "rfa_path": "E:\\Claude\\3D-Model-Workflow\\output\\1527_wieland\\plumbing_fixtures\\T65722LF-GL\\Brizo_T65722LF-GL_R2025.rfa", 
+  "appearance_bindings": {
+    "Detail": {
+      "exists": true, 
+      "path": "E:\\Claude\\3D-Model-Workflow\\output\\1527_wieland\\plumbing_fixtures\\T65722LF-GL\\textures\\Detail.png", 
+      "material_id": "3207"
+    }, 
+    "Finish": {
+      "exists": true, 
+      "path": "E:\\Claude\\3D-Model-Workflow\\output\\1527_wieland\\plumbing_fixtures\\T65722LF-GL\\textures\\Finish.png", 
+      "material_id": "3210"
+    }
+  }, 
+  "gates": {
+    "warnings": true, 
+    "views": true, 
+    "orientation": true, 
+    "materials": true, 
+    "reopen_geometry_equal": true, 
+    "actual_face_host": true, 
+    "dimensions": true, 
+    "diffuse_bitmaps": true, 
+    "cct": true, 
+    "category": true, 
+    "reopened": true
+  }, 
+  "type": "T65722LF-GL - Gold", 
+  "material_ids": {
+    "Detail": "3207", 
+    "Finish": "3210"
+  }, 
+  "display_bounds_in": [
+    -1.15625, 
+    -1.15625, 
+    0.0, 
+    1.15625, 
+    2.3437500000000009, 
+    10.6875
+  ], 
+  "revit_build": "25.4.50.35", 
+  "bounds_in": [
+    -1.15625, 
+    -1.15625, 
+    -5.3607429356137416e-24, 
+    1.15625, 
+    2.3437500000000009, 
+    10.6875
+  ], 
+  "reopened_warnings": [], 
+  "native_gates_pass": true, 
+  "inferences": "Native model follows the current exact-SKU Frank Lloyd Wright drawing. | Control fore/aft placement and rectangular sections are drawing-derived; no teak insert is added to the non-TK SKU. | R65700 rough-in is separate. | Independent visualization reconstruction with fixed product dimensions and editable native materials. | Small fillets, seams, nozzle details and optical material response are inferred where the manufacturer does not dimension them. | No internal hydraulic performance, MEP connectors, fabrication tolerances or procurement substitutions are implied.", 
+  "template_form_ids": [
+    "1537"
+  ], 
+  "project_warnings": [], 
+  "material_tests": {
+    "Detail": {
+      "face_count": 70, 
+      "writable": true, 
+      "substitution_reaches_faces": true
+    }, 
+    "Finish": {
+      "face_count": 70, 
+      "writable": true, 
+      "substitution_reaches_faces": true
+    }
+  }, 
+  "placement": "WorkPlaneBased", 
+  "model": "T65722LF-GL", 
+  "rfa_search": {
+    "result": "No acceptable no-account RFA recovered", 
+    "evidence": "_research/T65722LF-GL/sources.json"
+  }, 
+  "actual_dimensions_in": [
+    2.3125, 
+    3.5000000000000009, 
+    10.6875
+  ], 
+  "stage": "complete", 
+  "source_spec_path": "E:\\Claude\\3D-Model-Workflow\\output\\1527_wieland\\plumbing_fixtures\\T65722LF-GL\\source\\model_spec.json", 
+  "family_warnings": [], 
+  "visual_review": "PENDING_NATIVE_IMAGE_REVIEW", 
+  "parts": [
+    {
+      "name": "Square wall escutcheon", 
+      "id": "3212", 
+      "volume_ft3": 0.0015470496140278431
+    }, 
+    {
+      "name": "Rear rectangular body", 
+      "id": "3213", 
+      "volume_ft3": 0.0042907543273457867
+    }, 
+    {
+      "name": "Raised valve body", 
+      "id": "3214", 
+      "volume_ft3": 0.0016602704502654436
+    }, 
+    {
+      "name": "Flat cantilever spout", 
+      "id": "3215", 
+      "volume_ft3": 0.0017103229768664244
+    }, 
+    {
+      "name": "Top rectangular lever", 
+      "id": "3216", 
+      "volume_ft3": 0.00069133591107179207
+    }, 
+    {
+      "name": "Lever stem", 
+      "id": "3217", 
+      "volume_ft3": 0.00026206165224012173
+    }, 
+    {
+      "name": "Laminar outlet", 
+      "id": "3218", 
+      "volume_ft3": 3.7896472718493484e-05
+    }
+  ], 
+  "source_references": [
+    {
+      "local_image": "_research/T65722LF-GL/downloads/T65722LF-GL_Spec_pages/page_01.png", 
+      "page": 1, 
+      "document": "BSP-L-T65722LF Rev D", 
+      "url": "https://bravo.requested-info.com/brands/BRZ/documents/specSheets/T65722LF-GL_Spec.pdf"
+    }
+  ], 
+  "limitations": [
+    "Native model follows the current exact-SKU Frank Lloyd Wright drawing.", 
+    "Control fore/aft placement and rectangular sections are drawing-derived; no teak insert is added to the non-TK SKU.", 
+    "R65700 rough-in is separate.", 
+    "Independent visualization reconstruction with fixed product dimensions and editable native materials.", 
+    "Small fillets, seams, nozzle details and optical material response are inferred where the manufacturer does not dimension them.", 
+    "No internal hydraulic performance, MEP connectors, fabrication tolerances or procurement substitutions are implied."
+  ], 
+  "finished_utc": "2026-10-02T14:49:16.973000Z", 
+  "reopened_bounds_in": [
+    -1.15625, 
+    -1.15625, 
+    -5.3607429356137416e-24, 
+    1.15625, 
+    2.3437500000000009, 
+    10.6875
+  ], 
+  "dimension_anchor_checks": [
+    {
+      "deviation_mm": 0.0, 
+      "label": "Overall projection", 
+      "nominal_mm": 271.46249999999998, 
+      "pass": true, 
+      "actual_mm": 271.46249999999998
+    }
+  ], 
+  "source_dimensions": [
+    "Overall projection 10.6875 in; overall vertical envelope 3.5 in; escutcheon square 2.3125 in; nominal outlet reach 9.625 in."
+  ], 
+  "actual_dimensions_after_reopen_mm": [
+    58.737499999999997, 
+    88.900000000000020, 
+    271.46249999999998
+  ], 
+  "technical_pass": true, 
+  "reopen_geometry_equal": true, 
+  "acceptance": "NATIVE_GATES_PASSED_PENDING_VISUAL_REVIEW", 
+  "reopened": true, 
+  "all_overall_dimensions_authoritative": true, 
+  "bounds_method": "Fine native face meshes plus 128-sample analytic edges", 
+  "expected_dimensions_in": [
+    2.3125, 
+    3.5, 
+    10.6875
+  ], 
+  "appearance_defaults": {
+    "Detail": {
+      "transparency": 0, 
+      "luminance": 0, 
+      "rgb": [
+        24, 
+        25, 
+        26
+      ], 
+      "cct_k": null, 
+      "gloss": 0.17000000000000001
+    }, 
+    "Finish": {
+      "transparency": 0, 
+      "luminance": 0, 
+      "rgb": [
+        195, 
+        159, 
+        90
+      ], 
+      "cct_k": null, 
+      "gloss": 0.63
+    }
+  }, 
+  "cct_k": null, 
+  "evidence_files": [
+    "Brizo_T65722LF-GL_R2025_Isolated - 3D View - Native Front.png", 
+    "Brizo_T65722LF-GL_R2025_Isolated - 3D View - Native Material.png", 
+    "Brizo_T65722LF-GL_R2025_Isolated - 3D View - Native Oblique.png", 
+    "Brizo_T65722LF-GL_R2025_Isolated - 3D View - Native Side.png"
+  ], 
+  "category": "Plumbing Fixtures", 
+  "host": {
+    "host_kind": "wall", 
+    "hostface_present": true, 
+    "instance_host_id": "3698", 
+    "host_id": "3698", 
+    "normal_dot": 1.0
+  }, 
+  "manufacturer": "Brizo", 
+  "started_utc": "2026-10-02T14:49:13.736000Z", 
+  "revit_version": "2025", 
+  "source_spec_sha256": "4ad5ed46cdc2113a4abdc8c28c4bb8f9127463a2c29d8033622b66f671ff7edf", 
+  "native_path_checks": []
+}

@@ -1,0 +1,258 @@
+{
+  "key": "15758001",
+  "model": "15758001",
+  "manufacturer": "Hansgrohe",
+  "type_name": "15758001 - Chrome",
+  "basename": "Hansgrohe_15758001_R2025",
+  "name": "Ecostat S Thermostatic Trim with 2 Functions",
+  "host": "wall",
+  "configured_dimensions_in": [
+    5.875,
+    6.875,
+    3.125
+  ],
+  "materials": {
+    "Finish": {
+      "rgb": [
+        195,
+        198,
+        201
+      ],
+      "gloss": 0.96,
+      "reflectivity": 0.88,
+      "class": "Metal"
+    },
+    "Detail": {
+      "rgb": [
+        24,
+        25,
+        26
+      ],
+      "gloss": 0.17,
+      "reflectivity": 0.04,
+      "class": "Plastic"
+    },
+    "Graphite": {
+      "rgb": [
+        64,
+        67,
+        69
+      ],
+      "gloss": 0.36,
+      "reflectivity": 0.16,
+      "class": "Glass"
+    },
+    "Ceramic": {
+      "rgb": [
+        245,
+        245,
+        241
+      ],
+      "gloss": 0.86,
+      "reflectivity": 0.22,
+      "class": "Ceramic"
+    },
+    "Brass": {
+      "rgb": [
+        160,
+        124,
+        64
+      ],
+      "gloss": 0.4,
+      "reflectivity": 0.38,
+      "class": "Metal"
+    },
+    "Green": {
+      "rgb": [
+        31,
+        113,
+        66
+      ],
+      "gloss": 0.18,
+      "reflectivity": 0.05,
+      "class": "Plastic"
+    },
+    "Gray": {
+      "rgb": [
+        131,
+        132,
+        130
+      ],
+      "gloss": 0.32,
+      "reflectivity": 0.12,
+      "class": "Plastic"
+    }
+  },
+  "geometry": [
+    {
+      "name": "Escutcheon",
+      "kind": "cylinder",
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "radius": 2.9375,
+      "a": 0,
+      "b": 0.1875,
+      "material": "Finish"
+    },
+    {
+      "name": "Upper collar",
+      "kind": "cylinder",
+      "origin": [
+        0,
+        1.4375,
+        0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "radius": 0.82,
+      "a": 0.1875,
+      "b": 0.625,
+      "material": "Finish"
+    },
+    {
+      "name": "Upper control",
+      "kind": "cylinder",
+      "origin": [
+        0,
+        1.4375,
+        0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "radius": 0.5625,
+      "a": 0.625,
+      "b": 2.5,
+      "material": "Finish"
+    },
+    {
+      "name": "Upper selector tab",
+      "kind": "box",
+      "bounds": [
+        -0.15,
+        1.8,
+        2.4,
+        0.15,
+        2.4,
+        2.65
+      ],
+      "radius": 0.1,
+      "material": "Finish"
+    },
+    {
+      "name": "Lower collar",
+      "kind": "cylinder",
+      "origin": [
+        0,
+        -1.4375,
+        0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "radius": 1.15,
+      "a": 0.1875,
+      "b": 0.625,
+      "material": "Finish"
+    },
+    {
+      "name": "Temperature ring",
+      "kind": "cylinder",
+      "origin": [
+        0,
+        -1.4375,
+        0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "radius": 0.95,
+      "a": 0.625,
+      "b": 0.8,
+      "material": "Graphite"
+    },
+    {
+      "name": "Thermostatic knob",
+      "kind": "cylinder",
+      "origin": [
+        0,
+        -1.4375,
+        0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "radius": 0.875,
+      "a": 0.8,
+      "b": 3,
+      "material": "Finish"
+    },
+    {
+      "name": "Lower lever",
+      "kind": "box",
+      "bounds": [
+        -0.2,
+        -3.9375,
+        2.94,
+        0.2,
+        -1.6375,
+        3.125
+      ],
+      "radius": 0.17,
+      "material": "Finish"
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://assets.hansgrohe.com/celum/emailmarketing/hansgrohe_2026_Price_Book_en_US.pdf",
+      "document": "Hansgrohe 2026 US Price Book",
+      "page": 302,
+      "local_image": "_research/catalog_pages/page_302.png"
+    }
+  ],
+  "dimension_authority": [
+    "Escutcheon diameter 5.875 in; centers 2.875 in; lower control diameter 1.75 in; lower lever reach 2.5 in.",
+    "Projection configured at the published 3.125 in maximum; overall height derives from the down-pointing lower lever and plate."
+  ],
+  "limitations": [
+    "Installation-depth range is fixed at its outer limit for this visualization.",
+    "Temperature markings and small internal collars are simplified.",
+    "Independent visualization reconstruction with fixed product dimensions and editable native materials.",
+    "Small fillets, seams, nozzle details and optical material response are inferred where the manufacturer does not dimension them.",
+    "No internal hydraulic performance, MEP connectors, fabrication tolerances or procurement substitutions are implied."
+  ],
+  "anchors": [
+    {
+      "label": "Escutcheon diameter",
+      "parts": [
+        "Escutcheon"
+      ],
+      "axis": 0,
+      "nominal_in": 5.875
+    }
+  ],
+  "all_overall_dimensions_authoritative": false,
+  "rfa_search": {
+    "result": "No acceptable no-account RFA recovered",
+    "evidence": "_research/15758001/sources.json"
+  }
+}

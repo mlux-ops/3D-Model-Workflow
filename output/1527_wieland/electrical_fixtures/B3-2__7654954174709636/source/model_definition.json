@@ -1,0 +1,69 @@
+{
+  "key": "KZC780336",
+  "model": "VL17024-CH",
+  "name": "Kuzco_Rona_VL17024_Chrome_R2025",
+  "manufacturer": "Kuzco Lighting",
+  "host": "wall",
+  "dimensions": [
+    4.5,
+    24,
+    2.75
+  ],
+  "materials": [
+    "Chrome",
+    "Opal"
+  ],
+  "builder": "rona",
+  "source_url": "https://kuzcolighting.com/products/rona-vl17024-kuzco",
+  "notes": "Current 24-inch Rona, 4.5-inch square backplate x 0.625, 2.75-inch extension. Vertical default; may be rotated on wall. ASSUMPTION: 1.25-inch optic diameter and clamp contours from photograph. Manufacturer 2019 RFA contains model metadata VL10724, an interior-light-source warning and incomplete Fine-detail native geometry; retained as reference.",
+  "rfa_search": "Manufacturer RFA publicly downloaded and opened in 2025; inconsistent metadata, missing nested solid evidence and a rendering warning prevented accepting it unchanged.",
+  "rows": [
+    {
+      "row_id": "7654954174709636",
+      "item_key": "B3-2__7654954174709636",
+      "tag": "B3-2",
+      "unit": "Penthouse",
+      "room": "Bath 2",
+      "agent_ignore": false
+    },
+    {
+      "row_id": "2583226249445252",
+      "item_key": "B4-2__2583226249445252",
+      "tag": "B4-2",
+      "unit": "Penthouse",
+      "room": "Bath 3",
+      "agent_ignore": false
+    },
+    {
+      "row_id": "4835026063130500",
+      "item_key": "B5-2__4835026063130500",
+      "tag": "B5-2",
+      "unit": "Penthouse",
+      "room": "Bath 4",
+      "agent_ignore": false
+    }
+  ],
+  "out": "E:\\Claude\\3D-Model-Workflow\\output\\1527_wieland\\electrical_fixtures\\B3-2__7654954174709636",
+  "material_definitions": {
+    "Chrome": {
+      "rgb": [
+        204,
+        208,
+        210
+      ],
+      "gloss": 0.95,
+      "reflectivity": 0.76
+    },
+    "Opal": {
+      "rgb": [
+        248,
+        248,
+        243
+      ],
+      "gloss": 0.33,
+      "transparency": 0.08,
+      "reflectivity": 0.025,
+      "material_class": "Glass"
+    }
+  }
+}

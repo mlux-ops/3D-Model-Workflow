@@ -1,0 +1,133 @@
+Pardon Our Interruption
+.container {
+            max-width: 800px;
+            margin: auto;
+            font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif;
+            color: #7a838c;
+        }
+        h1 { color: #2a2d30; font-weight: 500; }
+        li { margin: 0 0 10px; }
+        a { color: #428bca; }
+        a:hover, a:focus { color: #2a6496; }
+window.reeseSkipExpirationCheck = true;
+      const isSpa = new URLSearchParams(window.location.search).get('X-SPA') === '1' || window.isImpervaSpaSupport;
+      const isInterstitial = new URLSearchParams(window.location.search).get('X-SPA-INTERSTITIAL') === '1';
+      let referrer = '';
+
+      //skip auto-load for isInterstitial - prevents initializeProtection to be called automatically
+      if (isSpa && isInterstitial) {
+        window.reeseSkipAutoLoad = true;
+      }
+      try {
+        referrer = new URL(document.referrer).origin;
+      } catch (e) {
+        referrer = '';
+      }
+if (isSpa && isInterstitial) {
+        let protectionReady = false;
+        let tokenFromMessage = null;
+
+        window.addEventListener("message", function (event) {
+          if (referrer === event.origin &&
+            event.data.messageName === '__imperva_interstitial_started__' &&
+            event.data.messageData &&
+            event.data.messageData.token) {
+            tokenFromMessage = event.data.messageData.token;
+            tryProtectionInit();
+          }
+        });
+
+        window.onProtectionLoaded = function () {
+          protectionReady = true;
+          tryProtectionInit();
+        };
+
+        function tryProtectionInit() {
+          if (protectionReady && tokenFromMessage) {
+            window.initializeProtection(tokenFromMessage);
+            tokenFromMessage = null;
+          }
+        }
+      }
+
+      window.onProtectionInitialized = function(protection) {
+        if (isSpa && isInterstitial) {
+          protection.exportToken(10000).then(function(tokenExport) {
+            const message = {
+              messageName: '__imperva_interstitial_complete__',
+              messageData: {
+                token: tokenExport
+              }
+            };
+            window.parent.postMessage(message, referrer);
+          });
+        } else {
+          if (protection && protection.cookieIsSet && !protection.cookieIsSet()) {
+            showBlockPage();
+            return;
+          }
+          if (!isSpa) {
+            window.location.reload(true);
+          }
+        }
+      };
+if (!isSpa || isInterstitial) {
+        const scriptElement = document.createElement('script');
+        scriptElement.type = "text/javascript";
+        scriptElement.src = "/b-As-which-I-dronting-Liege-You-bright-the-the-e/176HztDIPsZtoW1prE8rjrPBIkxcaaEcXVb_WqS03XU?s=xJdJQbrN";
+        scriptElement.async = true;
+        scriptElement.defer = true;
+        document.head.appendChild(scriptElement);
+      }
+document.getElementsByClassName("container")[0].style.display = "none";
+Pardon Our Interruption
+As you were browsing something about your browser made us think you were a bot. There are a few reasons this might happen:
+You've disabled JavaScript in your web browser.
+You're a power user moving through this website with super-human speed.
+You've disabled cookies in your web browser.
+A third-party browser plugin, such as Ghostery or NoScript, is preventing JavaScript from running. Additional information is available in this
+support article
+.
+To regain access, please make sure that cookies and JavaScript are enabled before reloading the page.
+#interstitial-inprogress {
+      width:100%;
+      height:100%;
+      position:absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      z-index:9999;
+      background:white url("/_Incapsula_Resource?NWFURVBO=images/error_pages/bg.png") no-repeat center;
+    }
+    #interstitial-inprogress-box{
+      font-size:32px;
+      box-shadow:0 4px 14px 0 #0000001A,0 8px 24px 0 #00000021;
+      font-family:Inter,Helvetica,Arial,sans-serif;
+      position:absolute;
+      left:50%;
+      top:50%;
+      transform:translate(-50%,-50%);
+      background-color:white;
+      text-align:center;
+      width:auto;
+      min-width:min(95%,640px);
+      max-width:max-content;
+      padding:16px;
+    }
+    #interstitial-inprogress-box h3{
+      font-size:48px;
+    }
+Please stand by
+We're getting everything ready for you. The page is loading, and you'll be on your way in just a few moments.
+Thanks for your patience!
+function showBlockPage() {
+    document.title = "Pardon Our Interruption";
+    document.getElementsByClassName("container")[0].style.display = "block";
+  }
+
+  if (isSpa && !isInterstitial) {
+    showBlockPage();
+  } else {
+    window.interstitialTimeout = setTimeout(showBlockPage, 10000);
+  }

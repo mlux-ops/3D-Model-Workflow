@@ -1,0 +1,255 @@
+{
+  "key": "61320LF-C-BL",
+  "model": "61320LF-C-BL",
+  "manufacturer": "Brizo",
+  "type_name": "61320LF-C-BL - Matte Black -  Black",
+  "basename": "Brizo_61320LF-C-BL_R2025",
+  "name": "Solna cold-only beverage faucet",
+  "host": "floor",
+  "configured_dimensions_in": [
+    3.5,
+    6.4375,
+    9.5
+  ],
+  "materials": {
+    "Finish": {
+      "rgb": [
+        20,
+        21,
+        22
+      ],
+      "gloss": 0.17,
+      "reflectivity": 0.1,
+      "class": "Metal"
+    },
+    "Detail": {
+      "rgb": [
+        24,
+        25,
+        26
+      ],
+      "gloss": 0.17,
+      "reflectivity": 0.04,
+      "class": "Plastic"
+    },
+    "Graphite": {
+      "rgb": [
+        64,
+        67,
+        69
+      ],
+      "gloss": 0.36,
+      "reflectivity": 0.16,
+      "class": "Glass"
+    },
+    "Ceramic": {
+      "rgb": [
+        245,
+        245,
+        241
+      ],
+      "gloss": 0.86,
+      "reflectivity": 0.22,
+      "class": "Ceramic"
+    },
+    "Brass": {
+      "rgb": [
+        160,
+        124,
+        64
+      ],
+      "gloss": 0.4,
+      "reflectivity": 0.38,
+      "class": "Metal"
+    },
+    "Green": {
+      "rgb": [
+        31,
+        113,
+        66
+      ],
+      "gloss": 0.18,
+      "reflectivity": 0.05,
+      "class": "Plastic"
+    },
+    "Gray": {
+      "rgb": [
+        131,
+        132,
+        130
+      ],
+      "gloss": 0.32,
+      "reflectivity": 0.12,
+      "class": "Plastic"
+    }
+  },
+  "geometry": [
+    {
+      "name": "Base",
+      "kind": "cylinder",
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "radius": 1,
+      "a": 0,
+      "b": 0.2,
+      "material": "Finish"
+    },
+    {
+      "name": "Valve body",
+      "kind": "cylinder",
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "radius": 0.75,
+      "a": 0.16,
+      "b": 4.65,
+      "material": "Finish"
+    },
+    {
+      "name": "Continuous gooseneck",
+      "kind": "sweep",
+      "path": [
+        [
+          0,
+          0,
+          4.5
+        ],
+        [
+          0,
+          0,
+          6.59375
+        ],
+        [
+          "arc",
+          [
+            0,
+            -2.53125,
+            9.125
+          ],
+          [
+            0,
+            -5.0625,
+            6.59375
+          ]
+        ],
+        [
+          0,
+          -5.0625,
+          6.0625
+        ]
+      ],
+      "radius": 0.375,
+      "material": "Finish"
+    },
+    {
+      "name": "Side control hub",
+      "kind": "cylinder",
+      "origin": [
+        0,
+        0,
+        2.6
+      ],
+      "axis": [
+        1,
+        0,
+        0
+      ],
+      "radius": 0.45,
+      "a": 0.6,
+      "b": 1.9,
+      "material": "Finish"
+    },
+    {
+      "name": "Vertical lever",
+      "kind": "cylinder",
+      "origin": [
+        2.25,
+        0,
+        0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "radius": 0.25,
+      "a": 2.4,
+      "b": 4.6,
+      "material": "Finish"
+    },
+    {
+      "name": "Aerator insert",
+      "kind": "cylinder",
+      "origin": [
+        0,
+        -5.0625,
+        0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "radius": 0.3,
+      "a": 6.0625,
+      "b": 6.1,
+      "material": "Detail"
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://media.brizo.com/SpecSheet/BSP-K-61320LF-C%20Rev%20B.pdf",
+      "document": "Brizo BSP-K-61320LF-C Rev B",
+      "page": 1,
+      "visual_review_method": "Manufacturer web PDF screenshot"
+    }
+  ],
+  "dimension_authority": [
+    "Overall height 9.5 in, base diameter 2 in, outlet height 6.0625 in and reach 5.0625 in."
+  ],
+  "limitations": [
+    "Above-counter scope only. Side lever envelope, body diameter and spout tube section are drawing-derived.",
+    "Independent visualization reconstruction with fixed product dimensions and editable native materials.",
+    "Small fillets, seams, nozzle details and optical material response are inferred where the manufacturer does not dimension them.",
+    "No internal hydraulic performance, MEP connectors, fabrication tolerances or procurement substitutions are implied."
+  ],
+  "anchors": [
+    {
+      "label": "Height",
+      "parts": [
+        "Base",
+        "Continuous gooseneck"
+      ],
+      "axis": 2,
+      "nominal_in": 9.5
+    },
+    {
+      "label": "Base diameter",
+      "parts": [
+        "Base"
+      ],
+      "axis": 0,
+      "nominal_in": 2
+    }
+  ],
+  "all_overall_dimensions_authoritative": false,
+  "rfa_search": {
+    "result": "No acceptable no-account RFA recovered",
+    "evidence": "_research/61320LF-C-BL/sources.json"
+  }
+}

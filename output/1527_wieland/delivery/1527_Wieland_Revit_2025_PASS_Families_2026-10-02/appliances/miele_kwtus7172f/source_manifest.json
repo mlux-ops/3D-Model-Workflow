@@ -1,0 +1,49 @@
+{
+  "model": "KWTUS 7172 F",
+  "slug": "miele_kwtus7172f",
+  "status": "BUILT_WITH_LIMITATIONS",
+  "rfa": "miele_kwtus7172f/miele_kwtus7172f_Custom_R1_R2025.rfa",
+  "rfa_bytes": 520192,
+  "rfa_sha256": "f8864b4b909c4b7a83a8d4d01712957ebfaa3a1d1e4d9a6f05c20818e7885d32",
+  "row_ids": [
+    4666245805309828
+  ],
+  "source_urls": [
+    "https://www.mieleusa.com/product/12519520/24-built-under-wine-refrigerator-kwtus-7172-f",
+    "https://media.miele.com/downloads/e5/64/05_70A8A51285B71FE1AC82B3099AE9E564.zip",
+    "https://media.miele.com/downloads/n-/us/FS_12519520_USE_US-en-US.pdf"
+  ],
+  "original_rfas": [
+    {
+      "path": "miele_kwtus7172f/source/original/12519520_USA_KWTUS7172F.rfa",
+      "sha256": "aebe0cf31bf17a435e4b4f1a8b10585aad0ff2af14f3de3278810ef597c5953d"
+    }
+  ],
+  "validation": "miele_kwtus7172f/validation.json",
+  "previews": [
+    "miele_kwtus7172f/views/rework_r1/oblique - 3D View - oblique.png",
+    "miele_kwtus7172f/views/rework_r1/front - 3D View - front.png",
+    "miele_kwtus7172f/views/rework_r1/side - 3D View - side.png"
+  ],
+  "revision": "Custom_R1",
+  "build_method": "native_custom_new_family",
+  "dimension_gate": true,
+  "dimension_gate_scope": "overall",
+  "native_gates_pass": true,
+  "replacement_reason": "Orchestrator round 1: exact-identity manufacturer working family fails the <=1 mm complete overall dimension gate. New native custom geometry replaces the working selection; OEM originals and prior working RFA remain preserved.",
+  "superseded_working_rfa": {
+    "path": "miele_kwtus7172f/miele_kwtus7172f_R2025.rfa",
+    "sha256": "19baf18cecc8a74a0cdc28196b8e1d2627a1afc51da2ea294d6d2d18cf95fb24",
+    "status": "DOWNLOADED"
+  },
+  "source_pdf_sha256": "c0c6e9f559d3576688afd2d4c92e64ea1da985819f8b0624878406acbaaf6f17",
+  "source_page": 2,
+  "custom_build_entry": "miele_kwtus7172f/source/build.py",
+  "build_support": [
+    "rework_round1/native_rebuild.py",
+    "rework_round1/validate_native.py",
+    "family_common.py"
+  ],
+  "validation_native_record": "miele_kwtus7172f/source/rework_r1/validation.json",
+  "validation_sha256": "1b242f86a32e278c75e7556c23b01edd617c8652dc14d562252d4a1f0acc68f5"
+}

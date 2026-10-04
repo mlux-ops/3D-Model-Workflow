@@ -1,0 +1,211 @@
+{
+  "key": "72411701",
+  "model": "72411701",
+  "manufacturer": "Hansgrohe",
+  "type_name": "72411701 - White",
+  "basename": "Hansgrohe_72411701_R2025",
+  "name": "Talis S tub spout with diverter",
+  "host": "wall",
+  "configured_dimensions_in": [
+    2.75,
+    2.875,
+    6.5
+  ],
+  "materials": {
+    "Finish": {
+      "rgb": [
+        242,
+        243,
+        240
+      ],
+      "gloss": 0.17,
+      "reflectivity": 0.06,
+      "class": "Plastic"
+    },
+    "Detail": {
+      "rgb": [
+        24,
+        25,
+        26
+      ],
+      "gloss": 0.17,
+      "reflectivity": 0.04,
+      "class": "Plastic"
+    },
+    "Graphite": {
+      "rgb": [
+        64,
+        67,
+        69
+      ],
+      "gloss": 0.36,
+      "reflectivity": 0.16,
+      "class": "Glass"
+    },
+    "Ceramic": {
+      "rgb": [
+        245,
+        245,
+        241
+      ],
+      "gloss": 0.86,
+      "reflectivity": 0.22,
+      "class": "Ceramic"
+    },
+    "Brass": {
+      "rgb": [
+        160,
+        124,
+        64
+      ],
+      "gloss": 0.4,
+      "reflectivity": 0.38,
+      "class": "Metal"
+    },
+    "Green": {
+      "rgb": [
+        31,
+        113,
+        66
+      ],
+      "gloss": 0.18,
+      "reflectivity": 0.05,
+      "class": "Plastic"
+    },
+    "Gray": {
+      "rgb": [
+        131,
+        132,
+        130
+      ],
+      "gloss": 0.32,
+      "reflectivity": 0.12,
+      "class": "Plastic"
+    }
+  },
+  "geometry": [
+    {
+      "name": "Wall flange",
+      "kind": "cylinder",
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "radius": 1.375,
+      "a": 0,
+      "b": 0.22,
+      "material": "Finish"
+    },
+    {
+      "name": "Spout tube",
+      "kind": "cylinder",
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "radius": 0.6875,
+      "a": 0.15,
+      "b": 6.45,
+      "material": "Finish"
+    },
+    {
+      "name": "End diverter cylinder",
+      "kind": "cylinder",
+      "origin": [
+        0,
+        0,
+        5.6875
+      ],
+      "axis": [
+        0,
+        1,
+        0
+      ],
+      "radius": 0.8125,
+      "a": -0.8125,
+      "b": 1.18,
+      "material": "Finish"
+    },
+    {
+      "name": "Diverter lift cap",
+      "kind": "cylinder",
+      "origin": [
+        0,
+        0,
+        5.6875
+      ],
+      "axis": [
+        0,
+        1,
+        0
+      ],
+      "radius": 0.8125,
+      "a": 1.18,
+      "b": 1.5,
+      "material": "Finish"
+    },
+    {
+      "name": "Outlet insert",
+      "kind": "cylinder",
+      "origin": [
+        0,
+        0,
+        5.6875
+      ],
+      "axis": [
+        0,
+        -1,
+        0
+      ],
+      "radius": 0.55,
+      "a": 0.8125,
+      "b": 1.0,
+      "material": "Detail"
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://assets.hansgrohe.com/celum/emailmarketing/hansgrohe_2026_Price_Book_en_US.pdf",
+      "document": "Hansgrohe 2026 US Price Book",
+      "page": 282,
+      "local_image": "_research/catalog_pages/page_282.png"
+    }
+  ],
+  "dimension_authority": [
+    "Overall spout projection 6.5 in; flange diameter 2.75 in; front diverter diameter 1.625 in."
+  ],
+  "limitations": [
+    "Tip reach is nominally 5.625 in; the terminal cylinder is placed at 5.6875 in to match the separately printed projection.",
+    "Top lift height is inferred from the drawing; markings and hidden fittings omitted.",
+    "Independent visualization reconstruction with fixed product dimensions and editable native materials.",
+    "Small fillets, seams, nozzle details and optical material response are inferred where the manufacturer does not dimension them.",
+    "No internal hydraulic performance, MEP connectors, fabrication tolerances or procurement substitutions are implied."
+  ],
+  "anchors": [
+    {
+      "label": "Flange diameter",
+      "parts": [
+        "Wall flange"
+      ],
+      "axis": 0,
+      "nominal_in": 2.75
+    }
+  ],
+  "all_overall_dimensions_authoritative": false,
+  "rfa_search": {
+    "result": "No acceptable no-account RFA recovered",
+    "evidence": "_research/72411701/sources.json"
+  }
+}

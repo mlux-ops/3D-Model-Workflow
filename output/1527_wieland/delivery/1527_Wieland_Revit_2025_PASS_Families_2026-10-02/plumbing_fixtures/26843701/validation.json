@@ -1,0 +1,215 @@
+{
+  "rfa_path": "E:\\Claude\\3D-Model-Workflow\\output\\1527_wieland\\plumbing_fixtures\\26843701\\Hansgrohe_26843701_R2025.rfa", 
+  "appearance_bindings": {
+    "Finish": {
+      "exists": true, 
+      "path": "E:\\Claude\\3D-Model-Workflow\\output\\1527_wieland\\plumbing_fixtures\\26843701\\textures\\Finish.png", 
+      "material_id": "3207"
+    }, 
+    "Graphite": {
+      "exists": true, 
+      "path": "E:\\Claude\\3D-Model-Workflow\\output\\1527_wieland\\plumbing_fixtures\\26843701\\textures\\Graphite.png", 
+      "material_id": "3210"
+    }
+  }, 
+  "gates": {
+    "warnings": true, 
+    "views": true, 
+    "orientation": true, 
+    "materials": true, 
+    "reopen_geometry_equal": true, 
+    "actual_face_host": true, 
+    "dimensions": true, 
+    "diffuse_bitmaps": true, 
+    "cct": true, 
+    "category": true, 
+    "reopened": true
+  }, 
+  "type": "26843701 - White", 
+  "material_ids": {
+    "Finish": "3207", 
+    "Graphite": "3210"
+  }, 
+  "display_bounds_in": [
+    -9.875, 
+    -2.1999999999999997, 
+    0.0, 
+    9.875, 
+    0.25, 
+    3.8500000000000005
+  ], 
+  "revit_build": "25.4.50.35", 
+  "bounds_in": [
+    -9.8750002384185791, 
+    -2.2000000476837158, 
+    -1.1203202599709336e-23, 
+    9.8750002384185791, 
+    0.2500000074505806, 
+    3.8500000000000005
+  ], 
+  "reopened_warnings": [], 
+  "native_gates_pass": true, 
+  "inferences": "ASSUMPTION: shelf depth 3.75 in and holder projection 3.85 in from proportions; no explicit side dimension was recovered. | Left holder slot is represented by separate cheeks; the body, glass and outlet remain separate materials. | White legacy SKU is retained although omitted from the current main catalog. | Independent visualization reconstruction with fixed product dimensions and editable native materials. | Small fillets, seams, nozzle details and optical material response are inferred where the manufacturer does not dimension them. | No internal hydraulic performance, MEP connectors, fabrication tolerances or procurement substitutions are implied.", 
+  "template_form_ids": [
+    "1537"
+  ], 
+  "project_warnings": [], 
+  "material_tests": {
+    "Finish": {
+      "face_count": 44, 
+      "writable": true, 
+      "substitution_reaches_faces": true
+    }, 
+    "Graphite": {
+      "face_count": 44, 
+      "writable": true, 
+      "substitution_reaches_faces": true
+    }
+  }, 
+  "placement": "WorkPlaneBased", 
+  "model": "26843701", 
+  "rfa_search": {
+    "result": "No acceptable no-account RFA recovered", 
+    "evidence": "_research/26843701/sources.json"
+  }, 
+  "actual_dimensions_in": [
+    19.750000476837158, 
+    2.4500000551342964, 
+    3.8500000000000005
+  ], 
+  "stage": "complete", 
+  "source_spec_path": "E:\\Claude\\3D-Model-Workflow\\output\\1527_wieland\\plumbing_fixtures\\26843701\\source\\model_spec.json", 
+  "family_warnings": [], 
+  "visual_review": "PENDING_NATIVE_IMAGE_REVIEW", 
+  "parts": [
+    {
+      "name": "Bowed shelf body", 
+      "id": "3212", 
+      "volume_ft3": 0.073840954153328114
+    }, 
+    {
+      "name": "Graphite safety-glass shelf", 
+      "id": "3213", 
+      "volume_ft3": 0.0085629187863167696
+    }, 
+    {
+      "name": "Left hose outlet", 
+      "id": "3214", 
+      "volume_ft3": 0.00022339094781884613
+    }, 
+    {
+      "name": "Left holder outer cheek", 
+      "id": "3215", 
+      "volume_ft3": 0.00016630692858453681
+    }, 
+    {
+      "name": "Left holder inner cheek", 
+      "id": "3216", 
+      "volume_ft3": 0.00016630692858453716
+    }
+  ], 
+  "source_references": [
+    {
+      "local_image": "_research/catalog_pages/page_266.png", 
+      "page": 266, 
+      "document": "Hansgrohe 2026 US Price Book", 
+      "url": "https://assets.hansgrohe.com/celum/emailmarketing/hansgrohe_2026_Price_Book_en_US.pdf"
+    }
+  ], 
+  "limitations": [
+    "ASSUMPTION: shelf depth 3.75 in and holder projection 3.85 in from proportions; no explicit side dimension was recovered.", 
+    "Left holder slot is represented by separate cheeks; the body, glass and outlet remain separate materials.", 
+    "White legacy SKU is retained although omitted from the current main catalog.", 
+    "Independent visualization reconstruction with fixed product dimensions and editable native materials.", 
+    "Small fillets, seams, nozzle details and optical material response are inferred where the manufacturer does not dimension them.", 
+    "No internal hydraulic performance, MEP connectors, fabrication tolerances or procurement substitutions are implied."
+  ], 
+  "finished_utc": "2026-10-02T14:48:56.682000Z", 
+  "reopened_bounds_in": [
+    -9.8750002384185791, 
+    -2.2000000476837158, 
+    -1.1203202599709336e-23, 
+    9.8750002384185791, 
+    0.2500000074505806, 
+    3.8500000000000005
+  ], 
+  "dimension_anchor_checks": [
+    {
+      "deviation_mm": 4.7826631544012337e-12, 
+      "label": "Body span", 
+      "nominal_mm": 498.47499999999997, 
+      "pass": true, 
+      "actual_mm": 498.47500000000474
+    }, 
+    {
+      "deviation_mm": 1.2111663818359374e-05, 
+      "label": "Glass span", 
+      "nominal_mm": 501.64999999999998, 
+      "pass": true, 
+      "actual_mm": 501.65001211166378
+    }
+  ], 
+  "source_dimensions": [
+    "Body span 19.625 in; glass span 19.75 in interpreted from the two separately annotated widths; fixing centers 15.75 in."
+  ], 
+  "actual_dimensions_after_reopen_mm": [
+    501.65001211166378, 
+    62.230001400411126, 
+    97.790000000000006
+  ], 
+  "technical_pass": true, 
+  "reopen_geometry_equal": true, 
+  "acceptance": "NATIVE_GATES_PASSED_PENDING_VISUAL_REVIEW", 
+  "reopened": true, 
+  "all_overall_dimensions_authoritative": false, 
+  "bounds_method": "Fine native face meshes plus 128-sample analytic edges", 
+  "expected_dimensions_in": [
+    19.75, 
+    2.4500000000000002, 
+    3.8500000000000001
+  ], 
+  "appearance_defaults": {
+    "Finish": {
+      "transparency": 0, 
+      "luminance": 0, 
+      "rgb": [
+        242, 
+        243, 
+        240
+      ], 
+      "cct_k": null, 
+      "gloss": 0.17000000000000001
+    }, 
+    "Graphite": {
+      "transparency": 0, 
+      "luminance": 0, 
+      "rgb": [
+        64, 
+        67, 
+        69
+      ], 
+      "cct_k": null, 
+      "gloss": 0.35999999999999999
+    }
+  }, 
+  "cct_k": null, 
+  "evidence_files": [
+    "Hansgrohe_26843701_R2025_Isolated - 3D View - Native Front.png", 
+    "Hansgrohe_26843701_R2025_Isolated - 3D View - Native Material.png", 
+    "Hansgrohe_26843701_R2025_Isolated - 3D View - Native Oblique.png", 
+    "Hansgrohe_26843701_R2025_Isolated - 3D View - Native Side.png"
+  ], 
+  "category": "Plumbing Fixtures", 
+  "host": {
+    "host_kind": "wall", 
+    "hostface_present": true, 
+    "instance_host_id": "3696", 
+    "host_id": "3696", 
+    "normal_dot": 1.0
+  }, 
+  "manufacturer": "Hansgrohe", 
+  "started_utc": "2026-10-02T14:48:53.847000Z", 
+  "revit_version": "2025", 
+  "source_spec_sha256": "2d02419b1f16d561ff910ab6b1ed455520018fcf2c63f04d590a140fc6ab2dc6", 
+  "native_path_checks": []
+}

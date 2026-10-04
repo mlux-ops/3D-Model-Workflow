@@ -1,0 +1,51 @@
+{
+  "model": "H 7280 BP",
+  "slug": "miele_h7280bp",
+  "status": "BUILT_WITH_LIMITATIONS",
+  "rfa": "miele_h7280bp/miele_h7280bp_Custom_R1_R2025.rfa",
+  "rfa_bytes": 491520,
+  "rfa_sha256": "f720de18bf6d88581b58b63ef3430d7ab04d954a404960fc7312d076ae4c0ded",
+  "row_ids": [
+    4418595438788484,
+    3025963735121796
+  ],
+  "source_urls": [
+    "https://www.mieleusa.com/product/11968200/30-inch-convection-oven-h-7280-bp-obsidian-black",
+    "https://media.miele.com/downloads/1d/33/01_C7F12828C0C31FE182DC54A63F5A1D33.zip",
+    "https://media.miele.com/downloads/n-/us/FS_11968200_USE_US-en-US.pdf",
+    "https://www.mieleusa.com/product/11968200/30-oven-h-7280-bp-obsidian-black"
+  ],
+  "original_rfas": [
+    {
+      "path": "miele_h7280bp/source/original/11968200_USA_H7280BP_OBSW.rfa",
+      "sha256": "8dac625d202af0daf8892a50eec4d104f7fa0b4df798f9cc5979e0613e17f655"
+    }
+  ],
+  "validation": "miele_h7280bp/validation.json",
+  "previews": [
+    "miele_h7280bp/views/rework_r1/oblique - 3D View - oblique.png",
+    "miele_h7280bp/views/rework_r1/front - 3D View - front.png",
+    "miele_h7280bp/views/rework_r1/side - 3D View - side.png"
+  ],
+  "revision": "Custom_R1",
+  "build_method": "native_custom_new_family",
+  "dimension_gate": true,
+  "dimension_gate_scope": "overall",
+  "native_gates_pass": true,
+  "replacement_reason": "Orchestrator round 1: exact-identity manufacturer working family fails the <=1 mm complete overall dimension gate. New native custom geometry replaces the working selection; OEM originals and prior working RFA remain preserved.",
+  "superseded_working_rfa": {
+    "path": "miele_h7280bp/miele_h7280bp_R2025.rfa",
+    "sha256": "8ee511e3f74f0c28239cc513154e56fb8a5a1868dfad5a52637a0f95ccf196ea",
+    "status": "DOWNLOADED"
+  },
+  "source_pdf_sha256": "caacad6a120468ecd42757ad43314d70fb3de9f26208cbd1c4e367c5bf31679e",
+  "source_page": null,
+  "custom_build_entry": "miele_h7280bp/source/build.py",
+  "build_support": [
+    "rework_round1/native_rebuild.py",
+    "rework_round1/validate_native.py",
+    "family_common.py"
+  ],
+  "validation_native_record": "miele_h7280bp/source/rework_r1/validation.json",
+  "validation_sha256": "81bd1b414370f81603f9b0e9f056d2665df9a771c7c12d0a0993f46714f08eb4"
+}

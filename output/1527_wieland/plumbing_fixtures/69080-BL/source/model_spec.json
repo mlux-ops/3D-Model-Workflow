@@ -1,0 +1,176 @@
+{
+  "key": "69080-BL",
+  "model": "69080-BL",
+  "manufacturer": "Brizo",
+  "type_name": "69080-BL - Matte Black -  Black",
+  "basename": "Brizo_69080-BL_R2025",
+  "name": "Disposal air-switch above-counter button",
+  "host": "floor",
+  "configured_dimensions_in": [
+    1.75,
+    1.75,
+    0.3125
+  ],
+  "materials": {
+    "Finish": {
+      "rgb": [
+        20,
+        21,
+        22
+      ],
+      "gloss": 0.17,
+      "reflectivity": 0.1,
+      "class": "Metal"
+    },
+    "Detail": {
+      "rgb": [
+        24,
+        25,
+        26
+      ],
+      "gloss": 0.17,
+      "reflectivity": 0.04,
+      "class": "Plastic"
+    },
+    "Graphite": {
+      "rgb": [
+        64,
+        67,
+        69
+      ],
+      "gloss": 0.36,
+      "reflectivity": 0.16,
+      "class": "Glass"
+    },
+    "Ceramic": {
+      "rgb": [
+        245,
+        245,
+        241
+      ],
+      "gloss": 0.86,
+      "reflectivity": 0.22,
+      "class": "Ceramic"
+    },
+    "Brass": {
+      "rgb": [
+        160,
+        124,
+        64
+      ],
+      "gloss": 0.4,
+      "reflectivity": 0.38,
+      "class": "Metal"
+    },
+    "Green": {
+      "rgb": [
+        31,
+        113,
+        66
+      ],
+      "gloss": 0.18,
+      "reflectivity": 0.05,
+      "class": "Plastic"
+    },
+    "Gray": {
+      "rgb": [
+        131,
+        132,
+        130
+      ],
+      "gloss": 0.32,
+      "reflectivity": 0.12,
+      "class": "Plastic"
+    }
+  },
+  "geometry": [
+    {
+      "name": "Escutcheon",
+      "kind": "cylinder",
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "radius": 0.875,
+      "a": 0,
+      "b": 0.125,
+      "material": "Finish"
+    },
+    {
+      "name": "Inset seam",
+      "kind": "cylinder",
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "radius": 0.68,
+      "a": 0.12,
+      "b": 0.16,
+      "material": "Detail"
+    },
+    {
+      "name": "Push button",
+      "kind": "cylinder",
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "radius": 0.65,
+      "a": 0.15,
+      "b": 0.3125,
+      "material": "Finish"
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://media.brizo.com/SpecSheet/BSP-A-69080%20Rev%20D.pdf",
+      "document": "Brizo BSP-A-69080 Rev D",
+      "page": 1,
+      "visual_review_method": "Manufacturer web PDF screenshot"
+    }
+  ],
+  "dimension_authority": [
+    "Trim diameter 1.75 in and visible height 0.3125 in from manufacturer diagram."
+  ],
+  "limitations": [
+    "Above-counter visualization; remote dual-outlet power module, air tube and threaded shank are not modeled.",
+    "Button seam and moving button diameter are drawing-derived.",
+    "Independent visualization reconstruction with fixed product dimensions and editable native materials.",
+    "Small fillets, seams, nozzle details and optical material response are inferred where the manufacturer does not dimension them.",
+    "No internal hydraulic performance, MEP connectors, fabrication tolerances or procurement substitutions are implied."
+  ],
+  "anchors": [
+    {
+      "label": "Visible height",
+      "parts": [
+        "Escutcheon",
+        "Push button"
+      ],
+      "axis": 2,
+      "nominal_in": 0.3125
+    }
+  ],
+  "all_overall_dimensions_authoritative": true,
+  "rfa_search": {
+    "result": "No acceptable no-account RFA recovered",
+    "evidence": "_research/69080-BL/sources.json"
+  }
+}

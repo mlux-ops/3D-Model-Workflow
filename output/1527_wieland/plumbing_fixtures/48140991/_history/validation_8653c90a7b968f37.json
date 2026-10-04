@@ -1,0 +1,76 @@
+{
+  "source_dimensions": [
+    "8 in centers; escutcheons diameter 2.375 in; cross handle axis-to-tip 1.375 in; tube diameter 0.875 in; outlet center reach 8.625 in; nominal projection 9 in."
+  ], 
+  "started_utc": "2026-10-02T15:43:26.598000Z", 
+  "source_references": [
+    {
+      "url": "https://assets.hansgrohe.com/mam/celum/celum_assets/153__amu01065_eps.jpg?format=HBW7", 
+      "document": "AXOR ONE 48140991 dimension drawing", 
+      "local_image": "_research/48140991/downloads/AXOR_ONE_48140991_dimensions.jpg", 
+      "page": 1
+    }
+  ], 
+  "cct_k": null, 
+  "manufacturer": "AXOR", 
+  "rfa_search": {
+    "result": "No acceptable no-account RFA recovered", 
+    "evidence": "_research/48140991/sources.json"
+  }, 
+  "model": "48140991", 
+  "type": "48140991 - gold", 
+  "revit_version": "2025", 
+  "template_form_ids": [
+    "1537"
+  ], 
+  "stage": "failed", 
+  "expected_dimensions_in": [
+    10.75, 
+    3.0246338127049799, 
+    9.0361155215938354
+  ], 
+  "material_ids": {
+    "Detail": "3207", 
+    "Finish": "3210"
+  }, 
+  "error": "Traceback (most recent call last):\n  File \"E:\\Claude\\3D-Model-Workflow\\output\\1527_wieland\\plumbing_fixtures\\_harness\\family_factory.py\", line 107, in build\n    e=f.box(p['name'],*(p['bounds']+[material,p.get('radius',0)]))\n  File \"E:\\Claude\\3D-Model-Workflow\\output\\1527_wieland\\plumbing_fixtures\\_harness\\native_plumbing_support.py\", line 170, in box\n    solid=DB.GeometryCreationUtilities.CreateExtrusionGeometry(List[DB.CurveLoop]([loop(xyz(0,0,z0),DB.XYZ.BasisX,DB.XYZ.BasisY,points)]),DB.XYZ.BasisZ,(z1-z0)/12.)\n  File \"E:\\Claude\\3D-Model-Workflow\\output\\1527_wieland\\plumbing_fixtures\\_harness\\native_plumbing_support.py\", line 27, in loop\n    result.Append(DB.Line.CreateBound(at(current),at(end)))\nException: Curve length is too small for Revit's tolerance (as identified by Application.ShortCurveTolerance).\r\nParameter name: endpoints\n", 
+  "source_spec_path": "E:\\Claude\\3D-Model-Workflow\\output\\1527_wieland\\plumbing_fixtures\\48140991\\source\\model_spec.json", 
+  "appearance_defaults": {
+    "Detail": {
+      "cct_k": null, 
+      "rgb": [
+        24, 
+        25, 
+        26
+      ], 
+      "transparency": 0, 
+      "gloss": 0.17000000000000001, 
+      "luminance": 0
+    }, 
+    "Finish": {
+      "cct_k": null, 
+      "rgb": [
+        195, 
+        159, 
+        90
+      ], 
+      "transparency": 0, 
+      "gloss": 0.95999999999999996, 
+      "luminance": 0
+    }
+  }, 
+  "inferences": "Finish 991 verified as Polished Gold Optic on the exact manufacturer product page. | Cross junction fillets, handle neck and coating response are inferred. | Outlet bend is a circular reconstruction from the 1.5 in drop and 20 degree outlet axis; its calculated outer projection is 9.036 in, within 1 mm of nominal 9 in. | Independent visualization reconstruction with fixed product dimensions and editable native materials. | Small fillets, seams, nozzle details and optical material response are inferred where the manufacturer does not dimension them. | No internal hydraulic performance, MEP connectors, fabrication tolerances or procurement substitutions are implied.", 
+  "rfa_path": "E:\\Claude\\3D-Model-Workflow\\output\\1527_wieland\\plumbing_fixtures\\48140991\\AXOR_48140991_R2025.rfa", 
+  "technical_pass": false, 
+  "source_spec_sha256": "b6f0deab3ac4b6bbdac505c028ca9d1ec986dffee50c01e9d7e55a72e027c0aa", 
+  "limitations": [
+    "Finish 991 verified as Polished Gold Optic on the exact manufacturer product page.", 
+    "Cross junction fillets, handle neck and coating response are inferred.", 
+    "Outlet bend is a circular reconstruction from the 1.5 in drop and 20 degree outlet axis; its calculated outer projection is 9.036 in, within 1 mm of nominal 9 in.", 
+    "Independent visualization reconstruction with fixed product dimensions and editable native materials.", 
+    "Small fillets, seams, nozzle details and optical material response are inferred where the manufacturer does not dimension them.", 
+    "No internal hydraulic performance, MEP connectors, fabrication tolerances or procurement substitutions are implied."
+  ], 
+  "revit_build": "25.4.50.35", 
+  "acceptance": "UNREVIEWED"
+}

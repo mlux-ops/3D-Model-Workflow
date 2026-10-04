@@ -1,0 +1,379 @@
+{
+  "key": "R70400",
+  "model": "R70400",
+  "manufacturer": "Brizo",
+  "type_name": "R70400 - brass",
+  "basename": "Brizo_R70400_R2025",
+  "name": "Two-handle wall tub filler rough",
+  "host": "wall",
+  "configured_dimensions_in": [
+    10.75,
+    2.4375,
+    3.5
+  ],
+  "materials": {
+    "Finish": {
+      "rgb": [
+        160,
+        124,
+        64
+      ],
+      "gloss": 0.4,
+      "reflectivity": 0.38,
+      "class": "Metal"
+    },
+    "Detail": {
+      "rgb": [
+        24,
+        25,
+        26
+      ],
+      "gloss": 0.17,
+      "reflectivity": 0.04,
+      "class": "Plastic"
+    },
+    "Graphite": {
+      "rgb": [
+        64,
+        67,
+        69
+      ],
+      "gloss": 0.36,
+      "reflectivity": 0.16,
+      "class": "Glass"
+    },
+    "Ceramic": {
+      "rgb": [
+        245,
+        245,
+        241
+      ],
+      "gloss": 0.86,
+      "reflectivity": 0.22,
+      "class": "Ceramic"
+    },
+    "Brass": {
+      "rgb": [
+        160,
+        124,
+        64
+      ],
+      "gloss": 0.4,
+      "reflectivity": 0.38,
+      "class": "Metal"
+    },
+    "Green": {
+      "rgb": [
+        31,
+        113,
+        66
+      ],
+      "gloss": 0.18,
+      "reflectivity": 0.05,
+      "class": "Plastic"
+    },
+    "Gray": {
+      "rgb": [
+        131,
+        132,
+        130
+      ],
+      "gloss": 0.32,
+      "reflectivity": 0.12,
+      "class": "Plastic"
+    }
+  },
+  "geometry": [
+    {
+      "kind": "cut",
+      "name": "Slotted mounting strap",
+      "base": {
+        "name": "Back mounting strap",
+        "kind": "box",
+        "bounds": [
+          -5.375,
+          -0.4,
+          0,
+          5.375,
+          0.4,
+          0.125
+        ],
+        "radius": 0.16,
+        "material": "Gray"
+      },
+      "cutters": [
+        {
+          "name": "Left fixing slot",
+          "kind": "cylinder",
+          "origin": [
+            -5.125,
+            0,
+            0
+          ],
+          "axis": [
+            0,
+            0,
+            1
+          ],
+          "radius": 0.125,
+          "a": -0.1,
+          "b": 0.3,
+          "material": "Finish"
+        },
+        {
+          "name": "Right fixing slot",
+          "kind": "cylinder",
+          "origin": [
+            5.125,
+            0,
+            0
+          ],
+          "axis": [
+            0,
+            0,
+            1
+          ],
+          "radius": 0.125,
+          "a": -0.1,
+          "b": 0.3,
+          "material": "Finish"
+        }
+      ],
+      "material": "Gray"
+    },
+    {
+      "name": "Brass cross manifold",
+      "kind": "cylinder",
+      "origin": [
+        0,
+        0,
+        0.85
+      ],
+      "axis": [
+        1,
+        0,
+        0
+      ],
+      "radius": 0.4375,
+      "a": -4,
+      "b": 4,
+      "material": "Brass"
+    },
+    {
+      "name": "Hot valve body",
+      "kind": "cylinder",
+      "origin": [
+        -4,
+        0,
+        0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "radius": 0.8125,
+      "a": 0.15,
+      "b": 2.0,
+      "material": "Brass"
+    },
+    {
+      "name": "Hot down inlet",
+      "kind": "cylinder",
+      "origin": [
+        -4,
+        0,
+        0.65
+      ],
+      "axis": [
+        0,
+        -1,
+        0
+      ],
+      "radius": 0.625,
+      "a": 0.3,
+      "b": 1.625,
+      "material": "Brass",
+      "inner_radius": 0.4
+    },
+    {
+      "name": "Hot guard",
+      "kind": "cylinder",
+      "origin": [
+        -4,
+        0,
+        0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "radius": 0.75,
+      "a": 1.6,
+      "b": 2.6,
+      "material": "Detail"
+    },
+    {
+      "name": "Hot valve stem",
+      "kind": "cylinder",
+      "origin": [
+        -4,
+        0,
+        0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "radius": 0.22,
+      "a": 2.3,
+      "b": 3.5,
+      "material": "Brass"
+    },
+    {
+      "name": "Cold valve body",
+      "kind": "cylinder",
+      "origin": [
+        4,
+        0,
+        0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "radius": 0.8125,
+      "a": 0.15,
+      "b": 2.0,
+      "material": "Brass"
+    },
+    {
+      "name": "Cold down inlet",
+      "kind": "cylinder",
+      "origin": [
+        4,
+        0,
+        0.65
+      ],
+      "axis": [
+        0,
+        -1,
+        0
+      ],
+      "radius": 0.625,
+      "a": 0.3,
+      "b": 1.625,
+      "material": "Brass",
+      "inner_radius": 0.4
+    },
+    {
+      "name": "Cold guard",
+      "kind": "cylinder",
+      "origin": [
+        4,
+        0,
+        0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "radius": 0.75,
+      "a": 1.6,
+      "b": 2.6,
+      "material": "Detail"
+    },
+    {
+      "name": "Cold valve stem",
+      "kind": "cylinder",
+      "origin": [
+        4,
+        0,
+        0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "radius": 0.22,
+      "a": 2.3,
+      "b": 3.5,
+      "material": "Brass"
+    },
+    {
+      "name": "Center spout outlet",
+      "kind": "cylinder",
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "radius": 0.6,
+      "a": 0.2,
+      "b": 2.5,
+      "material": "Brass",
+      "inner_radius": 0.4
+    },
+    {
+      "name": "Center test extension",
+      "kind": "cylinder",
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "radius": 0.3,
+      "a": 2.3,
+      "b": 3.0,
+      "material": "Detail"
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://media.brizo.com/SpecSheet/BSP-L-R70400%20Rev%20C.pdf",
+      "document": "Brizo BSP-L-R70400 Rev C",
+      "page": 1,
+      "visual_review_method": "Manufacturer web PDF screenshot"
+    }
+  ],
+  "dimension_authority": [
+    "Valve axes are 8 in apart; mounting-hole centers are 10.25 in apart; nominal mounting-to-wall distance is 2.75 in."
+  ],
+  "limitations": [
+    "ASSUMPTION: mounting strap projects 0.25 in beyond each dimensioned fixing center.",
+    "Overall height and test-stem projection are inferred from the drawing. Internal valves and thread details are omitted.",
+    "Independent visualization reconstruction with fixed product dimensions and editable native materials.",
+    "Small fillets, seams, nozzle details and optical material response are inferred where the manufacturer does not dimension them.",
+    "No internal hydraulic performance, MEP connectors, fabrication tolerances or procurement substitutions are implied."
+  ],
+  "anchors": [
+    {
+      "label": "Mounting strap overall",
+      "parts": [
+        "Slotted mounting strap"
+      ],
+      "axis": 0,
+      "nominal_in": 10.75
+    }
+  ],
+  "all_overall_dimensions_authoritative": false,
+  "rfa_search": {
+    "result": "No acceptable no-account RFA recovered",
+    "evidence": "_research/R70400/sources.json"
+  }
+}

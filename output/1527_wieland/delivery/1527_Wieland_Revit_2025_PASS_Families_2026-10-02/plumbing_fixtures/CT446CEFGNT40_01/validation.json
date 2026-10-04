@@ -1,0 +1,172 @@
+{
+  "category": "Plumbing Fixtures", 
+  "all_overall_dimensions_authoritative": false, 
+  "type": "CT446CEFGNT40#01 - ceramic", 
+  "rfa_search": {
+    "result": "No acceptable no-account RFA recovered", 
+    "evidence": "_research/CT446CEFGNT40_01/sources.json"
+  }, 
+  "native_gates_pass": true, 
+  "native_path_checks": [], 
+  "bounds_in": [
+    -7.2559905052185059, 
+    -13.803164005279541, 
+    -9.9722545456453366e-17, 
+    7.2559905052185059, 
+    13.793447971343994, 
+    16.125000000000007
+  ], 
+  "model": "CT446CEFGNT40#01", 
+  "limitations": [
+    "Bowl-only width 14.5 in, underside footprint, bowl interior and shell curvature are drawing-derived; no separate bowl fabrication sheet was found.", 
+    "The tank, seat and push-button are separate scheduled components. This family has an open bowl and rear mounting deck.", 
+    "Internal trapway, WASHLET connection pocket and fixture-specific anchor recesses are omitted.", 
+    "Independent visualization reconstruction with fixed product dimensions and editable native materials.", 
+    "Small fillets, seams, nozzle details and optical material response are inferred where the manufacturer does not dimension them.", 
+    "No internal hydraulic performance, MEP connectors, fabrication tolerances or procurement substitutions are implied."
+  ], 
+  "source_spec_path": "E:\\Claude\\3D-Model-Workflow\\output\\1527_wieland\\plumbing_fixtures\\CT446CEFGNT40_01\\source\\model_spec.json", 
+  "appearance_defaults": {
+    "Finish": {
+      "cct_k": null, 
+      "rgb": [
+        245, 
+        245, 
+        241
+      ], 
+      "transparency": 0, 
+      "gloss": 0.85999999999999999, 
+      "luminance": 0
+    }
+  }, 
+  "manufacturer": "TOTO", 
+  "source_spec_sha256": "3f3d4d22b96202701a98d832c88205085c4b39d2667773bc281281f0dd6e31cc", 
+  "material_ids": {
+    "Finish": "3207"
+  }, 
+  "project_warnings": [], 
+  "technical_pass": true, 
+  "reopen_geometry_equal": true, 
+  "bounds_method": "Fine native face meshes plus 128-sample analytic edges", 
+  "appearance_bindings": {
+    "Finish": {
+      "path": "E:\\Claude\\3D-Model-Workflow\\output\\1527_wieland\\plumbing_fixtures\\CT446CEFGNT40_01\\textures\\Finish.png", 
+      "exists": true, 
+      "material_id": "3207"
+    }
+  }, 
+  "display_bounds_in": [
+    -7.2559918342738650, 
+    -13.803313156308636, 
+    -8.3266726846886741e-17, 
+    7.2559918342738650, 
+    13.793486831824861, 
+    16.125000000000007
+  ], 
+  "actual_dimensions_after_reopen_mm": [
+    368.60431766510010, 
+    700.95394420623779, 
+    409.57500000000016
+  ], 
+  "finished_utc": "2026-10-02T15:43:40.762000Z", 
+  "expected_dimensions_in": [
+    14.5, 
+    27.5625, 
+    16.125
+  ], 
+  "inferences": "Bowl-only width 14.5 in, underside footprint, bowl interior and shell curvature are drawing-derived; no separate bowl fabrication sheet was found. | The tank, seat and push-button are separate scheduled components. This family has an open bowl and rear mounting deck. | Internal trapway, WASHLET connection pocket and fixture-specific anchor recesses are omitted. | Independent visualization reconstruction with fixed product dimensions and editable native materials. | Small fillets, seams, nozzle details and optical material response are inferred where the manufacturer does not dimension them. | No internal hydraulic performance, MEP connectors, fabrication tolerances or procurement substitutions are implied.", 
+  "reopened_warnings": [], 
+  "dimension_anchor_checks": [
+    {
+      "label": "Rim height", 
+      "actual_mm": 409.57500000000016, 
+      "deviation_mm": 1.8047785488306544e-13, 
+      "pass": true, 
+      "nominal_mm": 409.57499999999999
+    }
+  ], 
+  "revit_version": "2025", 
+  "source_references": [
+    {
+      "url": "https://www.totousa.com/filemanager_uploads/product_assets/SpecSheet/SS-02062_MS446124CEMF(G)N.pdf", 
+      "document": "TOTO Aquia IV SS-02062", 
+      "local_image": "_research/CT446CEFGNT40_01/downloads/SS-02062_MS446124CEMF_G_N_pages/page_02.png", 
+      "page": 2
+    }, 
+    {
+      "url": "https://www.totousa.com/filemanager_uploads/product_assets/PartsManual/PD-01451_446EN.pdf", 
+      "document": "TOTO Aquia IV PD-01451 parts", 
+      "local_image": "_research/CT446CEFGNT40_01/downloads/PD-01451_446EN_pages/page_01.png", 
+      "page": 1
+    }
+  ], 
+  "actual_dimensions_in": [
+    14.511981010437012, 
+    27.596611976623535, 
+    16.125000000000007
+  ], 
+  "cct_k": null, 
+  "material_tests": {
+    "Finish": {
+      "writable": true, 
+      "face_count": 23, 
+      "substitution_reaches_faces": true
+    }
+  }, 
+  "template_form_ids": [
+    "1537"
+  ], 
+  "host": {
+    "host_id": "3690", 
+    "instance_host_id": "3690", 
+    "host_kind": "floor", 
+    "normal_dot": 1.0, 
+    "hostface_present": true
+  }, 
+  "reopened": true, 
+  "revit_build": "25.4.50.35", 
+  "started_utc": "2026-10-02T15:43:37.410000Z", 
+  "family_warnings": [], 
+  "placement": "WorkPlaneBased", 
+  "stage": "complete", 
+  "acceptance": "NATIVE_GATES_PASSED_PENDING_VISUAL_REVIEW", 
+  "rfa_path": "E:\\Claude\\3D-Model-Workflow\\output\\1527_wieland\\plumbing_fixtures\\CT446CEFGNT40_01\\TOTO_CT446CEFGNT40_01_R2025.rfa", 
+  "reopened_bounds_in": [
+    -7.2559905052185059, 
+    -13.803164005279541, 
+    -9.9722545456453366e-17, 
+    7.2559905052185059, 
+    13.793447971343994, 
+    16.125000000000007
+  ], 
+  "parts": [
+    {
+      "name": "Open bowl with rear tank deck", 
+      "id": "3209", 
+      "volume_ft3": 2.0807122444921915
+    }
+  ], 
+  "source_dimensions": [
+    "Floor-to-rim 16.125 in and full set depth 27.5625 in from manufacturer drawing; exact component number confirmed in parts manual."
+  ], 
+  "gates": {
+    "reopen_geometry_equal": true, 
+    "dimensions": true, 
+    "materials": true, 
+    "cct": true, 
+    "category": true, 
+    "views": true, 
+    "orientation": true, 
+    "diffuse_bitmaps": true, 
+    "warnings": true, 
+    "actual_face_host": true, 
+    "reopened": true
+  }, 
+  "visual_review": "PENDING_NATIVE_IMAGE_REVIEW", 
+  "evidence_files": [
+    "TOTO_CT446CEFGNT40_01_R2025_Isolated - 3D View - Native Front.png", 
+    "TOTO_CT446CEFGNT40_01_R2025_Isolated - 3D View - Native Material.png", 
+    "TOTO_CT446CEFGNT40_01_R2025_Isolated - 3D View - Native Oblique.png", 
+    "TOTO_CT446CEFGNT40_01_R2025_Isolated - 3D View - Native Side.png"
+  ]
+}

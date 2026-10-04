@@ -1,0 +1,301 @@
+{
+  "companion_bitmaps": {
+    "Blade Finish": "E:\\Claude\\3D-Model-Workflow\\output\\1527_wieland\\electrical_fixtures\\R1-2__8983424938999684\\source\\textures\\Blade_Finish.png", 
+    "Diffuser Finish": "E:\\Claude\\3D-Model-Workflow\\output\\1527_wieland\\electrical_fixtures\\R1-2__8983424938999684\\source\\textures\\Diffuser_Finish.png", 
+    "Metal Finish": "E:\\Claude\\3D-Model-Workflow\\output\\1527_wieland\\electrical_fixtures\\R1-2__8983424938999684\\source\\textures\\Metal_Finish.png"
+  }, 
+  "rfa_search": "Public manufacturer and reputable BIM resource searches retained. No exact acceptable anonymous native RFA accepted; see acquisition evidence.", 
+  "limitations": "Exact scheduled matte-black / ebony / 870 LED combination. Manufacturer: 56-inch swept blade diameter, 5.5-inch canopy, 7.9-inch housing, 13.7-inch standard drop with 6-inch rod; LED option adds 0.75 inch, giving 14.45 inches. The stationary three-blade rectangular bounds are recorded separately and must not be confused with swept diameter. ASSUMPTION: blade airfoil/twist, housing curves and ebony wood-print optical detail are approximated; the included 16-inch rod alternative is not modeled. Finishes remain editable.", 
+  "placement": "WorkPlaneBased", 
+  "manufacturer": "The Modern Fan Company", 
+  "rfa_path": "E:\\Claude\\3D-Model-Workflow\\output\\1527_wieland\\electrical_fixtures\\R1-2__8983424938999684\\Modern_Fan_Ambit_MB_56_EB_870_CC_R2025.rfa", 
+  "nominal_product_dimensions": {
+    "blade_sweep_in": 56.0, 
+    "rectangular_bounds_basis": "Stationary three-blade envelope; informational, not the nominal circular sweep.", 
+    "installed_drop_in": 14.449999999999999
+  }, 
+  "bounds_in": [
+    -16.460747262718037, 
+    -25.282307641555882, 
+    0.0, 
+    27.846256256103516, 
+    25.580660820007324, 
+    14.449999809265137
+  ], 
+  "saved_material_bitmaps": {
+    "Blade Finish": {
+      "exists": true, 
+      "path": "E:\\Claude\\3D-Model-Workflow\\output\\1527_wieland\\electrical_fixtures\\R1-2__8983424938999684\\source\\textures\\Blade_Finish.png"
+    }, 
+    "Diffuser Finish": {
+      "exists": true, 
+      "path": "E:\\Claude\\3D-Model-Workflow\\output\\1527_wieland\\electrical_fixtures\\R1-2__8983424938999684\\source\\textures\\Diffuser_Finish.png"
+    }, 
+    "Metal Finish": {
+      "exists": true, 
+      "path": "E:\\Claude\\3D-Model-Workflow\\output\\1527_wieland\\electrical_fixtures\\R1-2__8983424938999684\\source\\textures\\Metal_Finish.png"
+    }
+  }, 
+  "display_bounds_in": [
+    -16.460747262718037, 
+    -25.282307641555882, 
+    0.0, 
+    27.846256218300923, 
+    25.580660386751983, 
+    14.450000000000003
+  ], 
+  "host": {
+    "host_id": "3709", 
+    "host_kind": "ceiling", 
+    "hostface_present": true, 
+    "normal_dot": 1.0, 
+    "instance_host_id": "3709"
+  }, 
+  "dimensional_error_mm": [
+    0.0, 
+    0.0, 
+    4.844665509295964e-06
+  ], 
+  "source_url": "https://modernfan.com/wp-content/uploads/AMB-Cutsheet.pdf", 
+  "reopened_warnings": [], 
+  "category": "Lighting Fixtures", 
+  "gates": {
+    "views": true, 
+    "warnings": true, 
+    "reopened": true, 
+    "saved_bitmaps_resolve": true, 
+    "saved_radial_dimensions_within_1mm": true, 
+    "actual_face_host": true, 
+    "dimensions": true, 
+    "saved_components_within_1mm": true, 
+    "category": true, 
+    "cct": true, 
+    "saved_dimensions_within_1mm": true, 
+    "orientation": true, 
+    "materials": true
+  }, 
+  "parameter_scope": "Nominal product dimensions are fixed formulas. Editable material parameters were flexed on hosted native geometry and restored.", 
+  "model": "AMB-MB-56-EB-870-CC", 
+  "technical_pass": true, 
+  "parts": [
+    {
+      "volume_ft3": 0.017140308783541201, 
+      "name": "Manufacturer canopy diameter", 
+      "id": "3214"
+    }, 
+    {
+      "volume_ft3": 0.0051720801305102423, 
+      "name": "Canopy shoulder", 
+      "id": "3215"
+    }, 
+    {
+      "volume_ft3": 0.0009709851649545066, 
+      "name": "Included downrod", 
+      "id": "3216"
+    }, 
+    {
+      "volume_ft3": 0.017123424513748379, 
+      "name": "Upper motor shoulder", 
+      "id": "3217"
+    }, 
+    {
+      "volume_ft3": 0.1430995353985649, 
+      "name": "7.9-inch motor housing", 
+      "id": "3218"
+    }, 
+    {
+      "volume_ft3": 0.0099645411009190964, 
+      "name": "Optional 870 LED collar", 
+      "id": "3219"
+    }, 
+    {
+      "volume_ft3": 0.0085521118328926119, 
+      "name": "Optional 870 opal diffuser", 
+      "id": "3220"
+    }, 
+    {
+      "volume_ft3": 0.017126882107402843, 
+      "name": "Shaped ABS blade 1", 
+      "id": "3221"
+    }, 
+    {
+      "volume_ft3": 0.017126880925780345, 
+      "name": "Shaped ABS blade 2", 
+      "id": "3222"
+    }, 
+    {
+      "volume_ft3": 0.017126883114928972, 
+      "name": "Shaped ABS blade 3", 
+      "id": "3223"
+    }
+  ], 
+  "project_warnings": [], 
+  "appearance_defaults": {
+    "Blade Finish": {
+      "gloss": 0.17999999999999999, 
+      "transparency": 0, 
+      "rgb": [
+        49, 
+        44, 
+        38
+      ], 
+      "cct_k": null, 
+      "luminance": 0
+    }, 
+    "Diffuser Finish": {
+      "gloss": 0.28000000000000003, 
+      "transparency": 0.050000000000000003, 
+      "rgb": [
+        245, 
+        245, 
+        240
+      ], 
+      "cct_k": null, 
+      "luminance": 0
+    }, 
+    "Metal Finish": {
+      "gloss": 0.25, 
+      "transparency": 0, 
+      "rgb": [
+        24, 
+        24, 
+        24
+      ], 
+      "cct_k": null, 
+      "luminance": 0
+    }
+  }, 
+  "evidence_files": [
+    "Modern_Fan_Ambit_MB_56_EB_870_CC_R2025 - 3D View - Front.png", 
+    "Modern_Fan_Ambit_MB_56_EB_870_CC_R2025 - 3D View - Material.png", 
+    "Modern_Fan_Ambit_MB_56_EB_870_CC_R2025 - 3D View - Oblique.png", 
+    "Modern_Fan_Ambit_MB_56_EB_870_CC_R2025 - 3D View - Side.png", 
+    "Modern_Fan_Ambit_MB_56_EB_870_CC_R2025_Hosted - 3D View - Hosted.png", 
+    "Modern_Fan_Ambit_MB_56_EB_870_CC_R2025_Isolated - 3D View - Native Front.png", 
+    "Modern_Fan_Ambit_MB_56_EB_870_CC_R2025_Isolated - 3D View - Native Material.png", 
+    "Modern_Fan_Ambit_MB_56_EB_870_CC_R2025_Isolated - 3D View - Native Oblique.png", 
+    "Modern_Fan_Ambit_MB_56_EB_870_CC_R2025_Isolated - 3D View - Native Side.png"
+  ], 
+  "cct_k": null, 
+  "started_utc": "2026-10-02T15:40:58.823000Z", 
+  "actual_dimensions_in": [
+    44.307003518821553, 
+    50.862968461563206, 
+    14.449999809265137
+  ], 
+  "radial_checks": [
+    {
+      "element_ids": [
+        "3221", 
+        "3222", 
+        "3223"
+      ], 
+      "label": "Swept blade diameter", 
+      "expected_diameter_in": 56.0, 
+      "center_in": [
+        0, 
+        0
+      ], 
+      "measured_diameter_in": 56.000000645358973, 
+      "error_mm": 1.6392117923658134e-05, 
+      "pass": true, 
+      "source": "Manufacturer nominal blade sweep"
+    }
+  ], 
+  "reopened": true, 
+  "finished_utc": "2026-10-02T15:41:04.584000Z", 
+  "measured_saved_dimensions_in": [
+    44.307003518821553, 
+    50.862968461563206, 
+    14.449999809265137
+  ], 
+  "family_warnings": [], 
+  "saved_file_reopened_for_measurement": true, 
+  "stage": "complete", 
+  "measured_saved_bounds_in": [
+    -16.460747262718037, 
+    -25.282307641555882, 
+    0.0, 
+    27.846256256103516, 
+    25.580660820007324, 
+    14.449999809265137
+  ], 
+  "expected_dimensions_in": [
+    44.307003518821553, 
+    50.862968461563206, 
+    14.449999999999999
+  ], 
+  "type": "AMB-MB-56-EB-870-CC", 
+  "inferences": "Exact scheduled matte-black / ebony / 870 LED combination. Manufacturer: 56-inch swept blade diameter, 5.5-inch canopy, 7.9-inch housing, 13.7-inch standard drop with 6-inch rod; LED option adds 0.75 inch, giving 14.45 inches. The stationary three-blade rectangular bounds are recorded separately and must not be confused with swept diameter. ASSUMPTION: blade airfoil/twist, housing curves and ebony wood-print optical detail are approximated; the included 16-inch rod alternative is not modeled. Finishes remain editable.", 
+  "bounds_method": "Fine native face meshes plus 128-sample analytic edges", 
+  "revit_build": "25.4.50.35", 
+  "material_tests": {
+    "Blade Finish": {
+      "face_count": 66, 
+      "writable": true, 
+      "substitution_reaches_faces": true
+    }, 
+    "Diffuser Finish": {
+      "face_count": 66, 
+      "writable": true, 
+      "substitution_reaches_faces": true
+    }, 
+    "Metal Finish": {
+      "face_count": 66, 
+      "writable": true, 
+      "substitution_reaches_faces": true
+    }
+  }, 
+  "component_checks": [
+    {
+      "element_ids": [
+        "3218"
+      ], 
+      "label": "Motor housing diameter", 
+      "error_mm": [
+        8.4781646638276687e-06, 
+        8.4781646638276687e-06, 
+        null
+      ], 
+      "expected_dimensions_in": [
+        7.9000000000000004, 
+        7.9000000000000004, 
+        null
+      ], 
+      "measured_dimensions_in": [
+        7.9000003337860107, 
+        7.9000003337860107, 
+        5.0499994754791260
+      ], 
+      "pass": true, 
+      "source": "Modern Fan Ambit factory cut sheet"
+    }, 
+    {
+      "element_ids": [
+        "3214"
+      ], 
+      "label": "Canopy diameter", 
+      "error_mm": [
+        3.0279159545898436e-06, 
+        3.0279159545898436e-06, 
+        null
+      ], 
+      "expected_dimensions_in": [
+        5.5, 
+        5.5, 
+        null
+      ], 
+      "measured_dimensions_in": [
+        5.5000001192092896, 
+        5.5000001192092896, 
+        1.2499999701976776
+      ], 
+      "pass": true, 
+      "source": "Manufacturer dimension drawing"
+    }
+  ], 
+  "template_form_ids": [
+    "1537"
+  ], 
+  "revit_version": "2025"
+}

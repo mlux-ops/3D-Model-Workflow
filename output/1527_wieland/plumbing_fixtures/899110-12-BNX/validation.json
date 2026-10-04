@@ -1,0 +1,181 @@
+{
+  "family_warnings": [], 
+  "template_form_ids": [
+    "1537"
+  ], 
+  "source_spec_path": "E:\\Claude\\3D-Model-Workflow\\output\\1527_wieland\\plumbing_fixtures\\899110-12-BNX\\source\\model_spec.json", 
+  "technical_pass": true, 
+  "actual_dimensions_in": [
+    5.0, 
+    5.0, 
+    14.0
+  ], 
+  "manufacturer": "Brizo", 
+  "source_spec_sha256": "2b63705c8eea557fed5467fffd74eec7ed3d231c7375fb7fe98454439915e973", 
+  "stage": "complete", 
+  "reopened": true, 
+  "placement": "WorkPlaneBased", 
+  "reopened_warnings": [], 
+  "reopen_geometry_equal": true, 
+  "all_overall_dimensions_authoritative": true, 
+  "acceptance": "NATIVE_GATES_PASSED_PENDING_VISUAL_REVIEW", 
+  "model": "899110-12-BNX", 
+  "parts": [
+    {
+      "name": "Canopy", 
+      "id": "3209", 
+      "volume_ft3": 0.011362251170799061
+    }, 
+    {
+      "name": "Suspension arm", 
+      "id": "3210", 
+      "volume_ft3": 0.0043496117763215155
+    }, 
+    {
+      "name": "Threaded end", 
+      "id": "3211", 
+      "volume_ft3": 5.6811255853995388e-05
+    }
+  ], 
+  "gates": {
+    "actual_face_host": true, 
+    "warnings": true, 
+    "category": true, 
+    "orientation": true, 
+    "materials": true, 
+    "dimensions": true, 
+    "diffuse_bitmaps": true, 
+    "reopened": true, 
+    "views": true, 
+    "reopen_geometry_equal": true, 
+    "cct": true
+  }, 
+  "started_utc": "2026-10-02T14:27:07.534000Z", 
+  "category": "Plumbing Fixtures", 
+  "expected_dimensions_in": [
+    5, 
+    5, 
+    14
+  ], 
+  "actual_dimensions_after_reopen_mm": [
+    127.0, 
+    127.0, 
+    355.59999999999997
+  ], 
+  "appearance_bindings": {
+    "Finish": {
+      "material_id": "3207", 
+      "path": "E:\\Claude\\3D-Model-Workflow\\output\\1527_wieland\\plumbing_fixtures\\899110-12-BNX\\textures\\Finish.png", 
+      "exists": true
+    }
+  }, 
+  "revit_build": "25.4.50.35", 
+  "bounds_method": "Fine native face meshes plus 128-sample analytic edges", 
+  "material_tests": {
+    "Finish": {
+      "face_count": 18, 
+      "substitution_reaches_faces": true, 
+      "writable": true
+    }
+  }, 
+  "evidence_files": [
+    "Brizo_899110-12-BNX_R2025_Isolated - 3D View - Native Front.png", 
+    "Brizo_899110-12-BNX_R2025_Isolated - 3D View - Native Material.png", 
+    "Brizo_899110-12-BNX_R2025_Isolated - 3D View - Native Oblique.png", 
+    "Brizo_899110-12-BNX_R2025_Isolated - 3D View - Native Side.png"
+  ], 
+  "source_dimensions": [
+    "Canopy diameter 5 in and visible projection 14 in: manufacturer drawing; marketed arm length is 12 in."
+  ], 
+  "material_ids": {
+    "Finish": "3207"
+  }, 
+  "rfa_search": {
+    "result": "No acceptable no-account RFA recovered", 
+    "evidence": "_research/899110-12-BNX/sources.json"
+  }, 
+  "dimension_anchor_checks": [
+    {
+      "pass": true, 
+      "label": "Canopy diameter", 
+      "actual_mm": 127.0, 
+      "deviation_mm": 0.0, 
+      "nominal_mm": 127.0
+    }, 
+    {
+      "pass": true, 
+      "label": "Projection", 
+      "actual_mm": 355.59999999999997, 
+      "deviation_mm": 0.0, 
+      "nominal_mm": 355.59999999999997
+    }
+  ], 
+  "display_bounds_in": [
+    -2.5, 
+    -2.5, 
+    0.0, 
+    2.5, 
+    2.5, 
+    14.0
+  ], 
+  "type": "899110-12-BNX - Brilliance Black Onyx -  Black", 
+  "bounds_in": [
+    -2.5, 
+    -2.5, 
+    -5.7992382433112431e-22, 
+    2.5, 
+    2.5, 
+    14.0
+  ], 
+  "source_references": [
+    {
+      "page": 1, 
+      "document": "Brizo BSP-B-813110 Rev A", 
+      "url": "https://assets.specbooks.cloud/brand/brizo/spec/22628776/document/spec-sb-eli3kf.pdf", 
+      "local_image": "_research/813110-BNX-2.5/downloads/spec-sb-eli3kf_pages/page_01.png"
+    }
+  ], 
+  "inferences": "Concealed connection above the finished ceiling plane is omitted. | Arm diameter and canopy thickness are drawing-derived. | Independent visualization reconstruction with fixed product dimensions and editable native materials. | Small fillets, seams, nozzle details and optical material response are inferred where the manufacturer does not dimension them. | No internal hydraulic performance, MEP connectors, fabrication tolerances or procurement substitutions are implied.", 
+  "finished_utc": "2026-10-02T14:27:11.620000Z", 
+  "native_gates_pass": true, 
+  "appearance_defaults": {
+    "Finish": {
+      "gloss": 0.92000000000000004, 
+      "transparency": 0, 
+      "cct_k": null, 
+      "luminance": 0, 
+      "rgb": [
+        58, 
+        60, 
+        62
+      ]
+    }
+  }, 
+  "visual_review": "PENDING_NATIVE_IMAGE_REVIEW", 
+  "project_warnings": [], 
+  "reopened_bounds_in": [
+    -2.5, 
+    -2.5, 
+    -5.7992382433112431e-22, 
+    2.5, 
+    2.5, 
+    14.0
+  ], 
+  "cct_k": null, 
+  "rfa_path": "E:\\Claude\\3D-Model-Workflow\\output\\1527_wieland\\plumbing_fixtures\\899110-12-BNX\\Brizo_899110-12-BNX_R2025.rfa", 
+  "limitations": [
+    "Concealed connection above the finished ceiling plane is omitted.", 
+    "Arm diameter and canopy thickness are drawing-derived.", 
+    "Independent visualization reconstruction with fixed product dimensions and editable native materials.", 
+    "Small fillets, seams, nozzle details and optical material response are inferred where the manufacturer does not dimension them.", 
+    "No internal hydraulic performance, MEP connectors, fabrication tolerances or procurement substitutions are implied."
+  ], 
+  "host": {
+    "host_id": "3692", 
+    "instance_host_id": "3692", 
+    "hostface_present": true, 
+    "normal_dot": 1.0, 
+    "host_kind": "ceiling"
+  }, 
+  "revit_version": "2025"
+}

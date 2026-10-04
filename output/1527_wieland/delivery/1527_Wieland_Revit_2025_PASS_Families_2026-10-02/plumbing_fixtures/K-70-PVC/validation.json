@@ -1,0 +1,229 @@
+{
+  "manufacturer": "See source", 
+  "visual_review": "PENDING_NATIVE_IMAGE_REVIEW", 
+  "gates": {
+    "dimensions": true, 
+    "category": true, 
+    "warnings": true, 
+    "reopened": true, 
+    "materials": true, 
+    "orientation": true, 
+    "cct": true, 
+    "reopen_geometry_equal": true, 
+    "diffuse_bitmaps": true, 
+    "actual_face_host": true, 
+    "views": true
+  }, 
+  "expected_dimensions_in": [
+    7, 
+    6.25, 
+    3.375
+  ], 
+  "reopened_bounds_in": [
+    -3.5, 
+    -3.125, 
+    -3.375, 
+    3.5, 
+    3.125, 
+    3.5665679479708402e-23
+  ], 
+  "finished_utc": "2026-10-02T15:27:51.925000Z", 
+  "source_references": [
+    {
+      "document": "Victoria + Albert K-70 Rev 05/24", 
+      "page": 1, 
+      "local_image": "_research/K-70-PVC/downloads/spc-k-70sp_pages/page_01.png", 
+      "url": "https://assets.fbgpg.com/shared/docs/product-specifications/spc-k-70sp.pdf"
+    }
+  ], 
+  "rfa_search": {
+    "result": "No acceptable no-account RFA recovered", 
+    "evidence": "_research/K-70-PVC/sources.json"
+  }, 
+  "source_spec_sha256": "9ec2a2e99970396d82ae90cf1671dcbc1558da872796294d3b41fe87168cd980", 
+  "actual_dimensions_in": [
+    7.0, 
+    6.25, 
+    3.375
+  ], 
+  "evidence_files": [
+    "Fixture_K-70-PVC_R2025_Isolated - 3D View - Native Front.png", 
+    "Fixture_K-70-PVC_R2025_Isolated - 3D View - Native Material.png", 
+    "Fixture_K-70-PVC_R2025_Isolated - 3D View - Native Oblique.png", 
+    "Fixture_K-70-PVC_R2025_Isolated - 3D View - Native Side.png"
+  ], 
+  "bounds_method": "Fine native face meshes plus 128-sample analytic edges", 
+  "acceptance": "NATIVE_GATES_PASSED_PENDING_VISUAL_REVIEW", 
+  "bounds_in": [
+    -3.5, 
+    -3.125, 
+    -3.375, 
+    3.5, 
+    3.125, 
+    3.5665679479708402e-23
+  ], 
+  "material_tests": {
+    "Brass": {
+      "writable": true, 
+      "face_count": 124, 
+      "substitution_reaches_faces": true
+    }, 
+    "Finish": {
+      "writable": true, 
+      "face_count": 124, 
+      "substitution_reaches_faces": true
+    }, 
+    "Detail": {
+      "writable": true, 
+      "face_count": 124, 
+      "substitution_reaches_faces": true
+    }
+  }, 
+  "appearance_bindings": {
+    "Brass": {
+      "material_id": "3207", 
+      "path": "E:\\Claude\\3D-Model-Workflow\\output\\1527_wieland\\plumbing_fixtures\\K-70-PVC\\textures\\Brass.png", 
+      "exists": true
+    }, 
+    "Finish": {
+      "material_id": "3213", 
+      "path": "E:\\Claude\\3D-Model-Workflow\\output\\1527_wieland\\plumbing_fixtures\\K-70-PVC\\textures\\Finish.png", 
+      "exists": true
+    }, 
+    "Detail": {
+      "material_id": "3210", 
+      "path": "E:\\Claude\\3D-Model-Workflow\\output\\1527_wieland\\plumbing_fixtures\\K-70-PVC\\textures\\Detail.png", 
+      "exists": true
+    }
+  }, 
+  "all_overall_dimensions_authoritative": true, 
+  "category": "Plumbing Fixtures", 
+  "material_ids": {
+    "Brass": "3207", 
+    "Finish": "3213", 
+    "Detail": "3210"
+  }, 
+  "source_dimensions": [
+    "Elliptical flange 7 x 6.25 in; total body height 3.375 in; outlet OD 2.375 in."
+  ], 
+  "host": {
+    "normal_dot": 1.0, 
+    "host_kind": "floor", 
+    "instance_host_id": "3702", 
+    "hostface_present": true, 
+    "host_id": "3702"
+  }, 
+  "parts": [
+    {
+      "name": "Perforated elliptical flange", 
+      "id": "3215", 
+      "volume_ft3": 0.00060888661232910983
+    }, 
+    {
+      "name": "Recessed drain cup", 
+      "id": "3216", 
+      "volume_ft3": 0.003404369243964922
+    }, 
+    {
+      "name": "PVC outlet sleeve", 
+      "id": "3217", 
+      "volume_ft3": 0.0025147715445980484
+    }, 
+    {
+      "name": "Compression collar", 
+      "id": "3218", 
+      "volume_ft3": 0.0028360178922314468
+    }, 
+    {
+      "name": "Central brass connection", 
+      "id": "3219", 
+      "volume_ft3": 0.0004222354563208583
+    }
+  ], 
+  "reopen_geometry_equal": true, 
+  "family_warnings": [], 
+  "source_spec_path": "E:\\Claude\\3D-Model-Workflow\\output\\1527_wieland\\plumbing_fixtures\\K-70-PVC\\source\\model_spec.json", 
+  "inferences": "Thread ribs, locking tabs and red shipping insert omitted. Perforation distribution is drawing-derived. | The sub-floor drain is modeled below the face placement plane; no extension pipe is assumed. | Independent visualization reconstruction with fixed product dimensions and editable native materials. | Small fillets, seams, nozzle details and optical material response are inferred where the manufacturer does not dimension them. | No internal hydraulic performance, MEP connectors, fabrication tolerances or procurement substitutions are implied.", 
+  "native_path_checks": [], 
+  "revit_build": "25.4.50.35", 
+  "rfa_path": "E:\\Claude\\3D-Model-Workflow\\output\\1527_wieland\\plumbing_fixtures\\K-70-PVC\\Fixture_K-70-PVC_R2025.rfa", 
+  "stage": "complete", 
+  "dimension_anchor_checks": [
+    {
+      "pass": true, 
+      "nominal_mm": 177.79999999999998, 
+      "deviation_mm": 0.0, 
+      "label": "Flange width", 
+      "actual_mm": 177.79999999999998
+    }
+  ], 
+  "placement": "WorkPlaneBased", 
+  "reopened_warnings": [], 
+  "model": "K-70-PVC", 
+  "project_warnings": [], 
+  "limitations": [
+    "Thread ribs, locking tabs and red shipping insert omitted. Perforation distribution is drawing-derived.", 
+    "The sub-floor drain is modeled below the face placement plane; no extension pipe is assumed.", 
+    "Independent visualization reconstruction with fixed product dimensions and editable native materials.", 
+    "Small fillets, seams, nozzle details and optical material response are inferred where the manufacturer does not dimension them.", 
+    "No internal hydraulic performance, MEP connectors, fabrication tolerances or procurement substitutions are implied."
+  ], 
+  "appearance_defaults": {
+    "Brass": {
+      "transparency": 0, 
+      "cct_k": null, 
+      "luminance": 0, 
+      "rgb": [
+        160, 
+        124, 
+        64
+      ], 
+      "gloss": 0.40000000000000002
+    }, 
+    "Finish": {
+      "transparency": 0, 
+      "cct_k": null, 
+      "luminance": 0, 
+      "rgb": [
+        242, 
+        243, 
+        240
+      ], 
+      "gloss": 0.17000000000000001
+    }, 
+    "Detail": {
+      "transparency": 0, 
+      "cct_k": null, 
+      "luminance": 0, 
+      "rgb": [
+        24, 
+        25, 
+        26
+      ], 
+      "gloss": 0.17000000000000001
+    }
+  }, 
+  "reopened": true, 
+  "cct_k": null, 
+  "type": "K-70-PVC - white", 
+  "started_utc": "2026-10-02T15:27:48.471000Z", 
+  "native_gates_pass": true, 
+  "actual_dimensions_after_reopen_mm": [
+    177.79999999999998, 
+    158.75, 
+    85.724999999999994
+  ], 
+  "display_bounds_in": [
+    -3.5, 
+    -3.125, 
+    -3.375, 
+    3.5, 
+    3.125, 
+    0.0
+  ], 
+  "technical_pass": true, 
+  "revit_version": "2025", 
+  "template_form_ids": [
+    "1537"
+  ]
+}

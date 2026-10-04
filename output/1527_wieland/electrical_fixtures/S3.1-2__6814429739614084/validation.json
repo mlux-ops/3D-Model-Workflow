@@ -1,0 +1,176 @@
+{
+  "technical_pass": true,
+  "stage": "complete",
+  "measured_saved_bounds_in": [
+    -8.000000238418579,
+    -8.0,
+    -4.122762407132584e-22,
+    8.000000238418579,
+    8.0,
+    1.5
+  ],
+  "reopened": true,
+  "revit_version": "2025",
+  "appearance_defaults": {
+    "Black Housing": {
+      "gloss": 0.22,
+      "cct_k": null,
+      "rgb": [
+        24,
+        24,
+        24
+      ],
+      "transparency": 0,
+      "luminance": 0
+    },
+    "White Diffuser": {
+      "gloss": 0.15,
+      "cct_k": null,
+      "rgb": [
+        244,
+        244,
+        240
+      ],
+      "transparency": 0,
+      "luminance": 0
+    }
+  },
+  "reopened_warnings": [],
+  "saved_file_reopened_for_measurement": true,
+  "expected_dimensions_in": [
+    16.0,
+    16.0,
+    1.5
+  ],
+  "evidence_files": [
+    "Maxim_Trim_57670WTBK_Black_R2025 - 3D View - Front.png",
+    "Maxim_Trim_57670WTBK_Black_R2025 - 3D View - Material.png",
+    "Maxim_Trim_57670WTBK_Black_R2025 - 3D View - Oblique.png",
+    "Maxim_Trim_57670WTBK_Black_R2025 - 3D View - Side.png",
+    "Maxim_Trim_57670WTBK_Black_R2025_Hosted - 3D View - Hosted.png",
+    "Maxim_Trim_57670WTBK_Black_R2025_Isolated - 3D View - Native Front.png",
+    "Maxim_Trim_57670WTBK_Black_R2025_Isolated - 3D View - Native Material.png",
+    "Maxim_Trim_57670WTBK_Black_R2025_Isolated - 3D View - Native Oblique.png",
+    "Maxim_Trim_57670WTBK_Black_R2025_Isolated - 3D View - Native Side.png"
+  ],
+  "material_tests": {
+    "Black Housing": {
+      "substitution_reaches_faces": true,
+      "face_count": 28,
+      "writable": true
+    },
+    "White Diffuser": {
+      "substitution_reaches_faces": true,
+      "face_count": 28,
+      "writable": true
+    }
+  },
+  "dimensional_error_mm": [
+    1.2111663818359374e-05,
+    0.0,
+    0.0
+  ],
+  "revit_build": "25.4.50.35",
+  "cct_k": null,
+  "bounds_in": [
+    -8.000000238418579,
+    -8.0,
+    -4.122762407132584e-22,
+    8.000000238418579,
+    8.0,
+    1.5
+  ],
+  "bounds_method": "Fine native face meshes plus 128-sample analytic edges",
+  "inferences": "Manufacturer 57670WTBK dimensions: 16 x 16 x 1.5 inches. ASSUMPTION: recessed diffuser diameter, perimeter profile, sheet thickness and small edge rounds are photo-derived visualization details. Black housing and white diffuser; no photometric light source. Nominal product geometry is fixed; finishes are editable.",
+  "display_bounds_in": [
+    -8.0,
+    -7.941670992784437,
+    0.0,
+    8.0,
+    7.941670992784433,
+    1.5
+  ],
+  "family_warnings": [],
+  "category": "Lighting Fixtures",
+  "gates": {
+    "saved_dimensions_within_1mm": true,
+    "orientation": true,
+    "reopened": true,
+    "actual_face_host": true,
+    "dimensions": true,
+    "cct": true,
+    "views": true,
+    "category": true,
+    "materials": true,
+    "saved_bitmaps_resolve": true,
+    "warnings": true
+  },
+  "manufacturer": "Maxim Lighting",
+  "type": "57670WTBK - Black / White",
+  "rfa_path": "E:\\Claude\\3D-Model-Workflow\\output\\1527_wieland\\electrical_fixtures\\S3.1-2__6814429739614084\\Maxim_Trim_57670WTBK_Black_R2025.rfa",
+  "parts": [
+    {
+      "name": "Continuous recessed perimeter housing",
+      "id": "3211",
+      "volume_ft3": 0.011569167927559243
+    },
+    {
+      "name": "Recessed white polycarbonate diffuser",
+      "id": "3212",
+      "volume_ft3": 0.11540801860437705
+    },
+    {
+      "name": "Rear mounting disk",
+      "id": "3213",
+      "volume_ft3": 0.01629528108863094
+    }
+  ],
+  "measured_saved_dimensions_in": [
+    16.000000476837158,
+    16.0,
+    1.5
+  ],
+  "finished_utc": "2026-10-02T13:57:06.973000Z",
+  "actual_dimensions_in": [
+    16.000000476837158,
+    16.0,
+    1.5
+  ],
+  "companion_bitmaps": {
+    "Black Housing": "E:\\Claude\\3D-Model-Workflow\\output\\1527_wieland\\electrical_fixtures\\L4-0__8334187740856196\\source\\textures\\Black_Housing.png",
+    "White Diffuser": "E:\\Claude\\3D-Model-Workflow\\output\\1527_wieland\\electrical_fixtures\\L4-0__8334187740856196\\source\\textures\\White_Diffuser.png"
+  },
+  "placement": "WorkPlaneBased",
+  "host": {
+    "host_kind": "ceiling",
+    "host_id": "3696",
+    "hostface_present": true,
+    "instance_host_id": "3696",
+    "normal_dot": 1.0
+  },
+  "saved_material_bitmaps": {
+    "Black Housing": {
+      "path": "E:\\Claude\\3D-Model-Workflow\\output\\1527_wieland\\electrical_fixtures\\L4-0__8334187740856196\\source\\textures\\Black_Housing.png",
+      "exists": true
+    },
+    "White Diffuser": {
+      "path": "E:\\Claude\\3D-Model-Workflow\\output\\1527_wieland\\electrical_fixtures\\L4-0__8334187740856196\\source\\textures\\White_Diffuser.png",
+      "exists": true
+    }
+  },
+  "started_utc": "2026-10-02T13:56:52.633000Z",
+  "source_url": "https://www.maximlighting.com/product/indoor-lighting/flush-mounts/trim-16-rd-led-flush-mount-3000k/57670WTBK",
+  "template_form_ids": [
+    "1537"
+  ],
+  "project_warnings": [],
+  "model": "57670WTBK",
+  "rfa_search": "Manufacturer product page and BIM/Photometric resources inspected; no direct 57670WTBK RFA link found.",
+  "parameter_scope": "Nominal product dimensions are fixed formulas. Editable material parameters were flexed on hosted native geometry and restored.",
+  "row_id": "6814429739614084",
+  "canonical_rfa_path": "E:\\Claude\\3D-Model-Workflow\\output\\1527_wieland\\electrical_fixtures\\L4-0__8334187740856196\\Maxim_Trim_57670WTBK_Black_R2025.rfa",
+  "canonical_validation_path": "E:\\Claude\\3D-Model-Workflow\\output\\1527_wieland\\electrical_fixtures\\L4-0__8334187740856196\\validation.json",
+  "validation_basis": "Measurements and native gates inherited only after byte-identical RFA hash verification; not a separately rerun native build.",
+  "canonical_rfa_sha256": "07b6f3713c99677a21afc7cf5aa0a9680361e34d1e9f645dc75b8224a5a2a086",
+  "row_rfa_sha256": "07b6f3713c99677a21afc7cf5aa0a9680361e34d1e9f645dc75b8224a5a2a086"
+}

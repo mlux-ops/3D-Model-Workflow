@@ -1,0 +1,189 @@
+{
+  "rfa_path": "E:\\Claude\\3D-Model-Workflow\\output\\1527_wieland\\plumbing_fixtures\\HL704110-BNX\\Brizo_HL704110-BNX_R2025.rfa", 
+  "appearance_bindings": {
+    "Finish": {
+      "exists": true, 
+      "path": "E:\\Claude\\3D-Model-Workflow\\output\\1527_wieland\\plumbing_fixtures\\HL704110-BNX\\textures\\Finish.png", 
+      "material_id": "3207"
+    }
+  }, 
+  "gates": {
+    "warnings": true, 
+    "views": true, 
+    "orientation": true, 
+    "materials": true, 
+    "reopen_geometry_equal": true, 
+    "actual_face_host": true, 
+    "dimensions": true, 
+    "diffuse_bitmaps": true, 
+    "cct": true, 
+    "category": true, 
+    "reopened": true
+  }, 
+  "type": "HL704110-BNX - onyx", 
+  "material_ids": {
+    "Finish": "3207"
+  }, 
+  "display_bounds_in": [
+    -7.125, 
+    -1.375, 
+    0.0, 
+    7.125, 
+    1.375, 
+    2.875
+  ], 
+  "revit_build": "25.4.50.35", 
+  "bounds_in": [
+    -7.125, 
+    -1.3750000298023224, 
+    -6.7200471079856608e-24, 
+    7.125, 
+    1.3750000298023224, 
+    2.875
+  ], 
+  "reopened_warnings": [], 
+  "native_gates_pass": true, 
+  "inferences": "ASSUMPTION: paired at the companion trim 8 in centers, levers pointing outwards. Fine lever taper is simplified. | Independent visualization reconstruction with fixed product dimensions and editable native materials. | Small fillets, seams, nozzle details and optical material response are inferred where the manufacturer does not dimension them. | No internal hydraulic performance, MEP connectors, fabrication tolerances or procurement substitutions are implied.", 
+  "template_form_ids": [
+    "1537"
+  ], 
+  "project_warnings": [], 
+  "material_tests": {
+    "Finish": {
+      "face_count": 52, 
+      "writable": true, 
+      "substitution_reaches_faces": true
+    }
+  }, 
+  "placement": "WorkPlaneBased", 
+  "model": "HL704110-BNX", 
+  "rfa_search": {
+    "result": "No acceptable no-account RFA recovered", 
+    "evidence": "_research/HL704110-BNX/sources.json"
+  }, 
+  "actual_dimensions_in": [
+    14.25, 
+    2.7500000596046448, 
+    2.875
+  ], 
+  "stage": "complete", 
+  "source_spec_path": "E:\\Claude\\3D-Model-Workflow\\output\\1527_wieland\\plumbing_fixtures\\HL704110-BNX\\source\\model_spec.json", 
+  "family_warnings": [], 
+  "visual_review": "PENDING_NATIVE_IMAGE_REVIEW", 
+  "parts": [
+    {
+      "name": "Wall base -4", 
+      "id": "3209", 
+      "volume_ft3": 0.00096238267416668029
+    }, 
+    {
+      "name": "Handle neck -4", 
+      "id": "3210", 
+      "volume_ft3": 0.0011073195921330941
+    }, 
+    {
+      "name": "Lever -4", 
+      "id": "3211", 
+      "volume_ft3": 0.00058358974494068826
+    }, 
+    {
+      "name": "Wall base 4", 
+      "id": "3212", 
+      "volume_ft3": 0.00096238267416668029
+    }, 
+    {
+      "name": "Handle neck 4", 
+      "id": "3213", 
+      "volume_ft3": 0.0011073195921330941
+    }, 
+    {
+      "name": "Lever 4", 
+      "id": "3214", 
+      "volume_ft3": 0.00058358974494068826
+    }
+  ], 
+  "source_references": [
+    {
+      "local_image": "_research/T704110-BNXLHP/downloads/T704110-BLLHP_Spec_pages/page_01.png", 
+      "page": 1, 
+      "document": "BSP-B-T704110-LHP Rev B", 
+      "url": "https://bravo.requested-info.com/brands/BRZ/documents/specSheets/T704110-BLLHP_Spec.pdf"
+    }
+  ], 
+  "limitations": [
+    "ASSUMPTION: paired at the companion trim 8 in centers, levers pointing outwards. Fine lever taper is simplified.", 
+    "Independent visualization reconstruction with fixed product dimensions and editable native materials.", 
+    "Small fillets, seams, nozzle details and optical material response are inferred where the manufacturer does not dimension them.", 
+    "No internal hydraulic performance, MEP connectors, fabrication tolerances or procurement substitutions are implied."
+  ], 
+  "finished_utc": "2026-10-02T14:49:13.660000Z", 
+  "reopened_bounds_in": [
+    -7.125, 
+    -1.3750000298023224, 
+    -6.7200471079856608e-24, 
+    7.125, 
+    1.3750000298023224, 
+    2.875
+  ], 
+  "dimension_anchor_checks": [
+    {
+      "deviation_mm": 0.0, 
+      "label": "Handle projection", 
+      "nominal_mm": 73.024999999999991, 
+      "pass": true, 
+      "actual_mm": 73.024999999999991
+    }
+  ], 
+  "source_dimensions": [
+    "Bases diameter 2.75 in; installed handle projection 2.875 in; lever axis-to-tip reach 3.125 in."
+  ], 
+  "actual_dimensions_after_reopen_mm": [
+    361.94999999999999, 
+    69.850001513957977, 
+    73.024999999999991
+  ], 
+  "technical_pass": true, 
+  "reopen_geometry_equal": true, 
+  "acceptance": "NATIVE_GATES_PASSED_PENDING_VISUAL_REVIEW", 
+  "reopened": true, 
+  "all_overall_dimensions_authoritative": false, 
+  "bounds_method": "Fine native face meshes plus 128-sample analytic edges", 
+  "expected_dimensions_in": [
+    14.25, 
+    2.75, 
+    2.875
+  ], 
+  "appearance_defaults": {
+    "Finish": {
+      "transparency": 0, 
+      "luminance": 0, 
+      "rgb": [
+        58, 
+        60, 
+        62
+      ], 
+      "cct_k": null, 
+      "gloss": 0.92000000000000004
+    }
+  }, 
+  "cct_k": null, 
+  "evidence_files": [
+    "Brizo_HL704110-BNX_R2025_Isolated - 3D View - Native Front.png", 
+    "Brizo_HL704110-BNX_R2025_Isolated - 3D View - Native Material.png", 
+    "Brizo_HL704110-BNX_R2025_Isolated - 3D View - Native Oblique.png", 
+    "Brizo_HL704110-BNX_R2025_Isolated - 3D View - Native Side.png"
+  ], 
+  "category": "Plumbing Fixtures", 
+  "host": {
+    "host_kind": "wall", 
+    "hostface_present": true, 
+    "instance_host_id": "3693", 
+    "host_id": "3693", 
+    "normal_dot": 1.0
+  }, 
+  "manufacturer": "Brizo", 
+  "started_utc": "2026-10-02T14:49:10.433000Z", 
+  "revit_version": "2025", 
+  "source_spec_sha256": "5481feddcfe529f2dbc7e86b899b6c2e1f8e0fa867e5955ea9adfc0b37b85c18", 
+  "native_path_checks": []
+}

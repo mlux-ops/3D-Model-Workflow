@@ -1,0 +1,432 @@
+{
+  "category": "Plumbing Fixtures", 
+  "all_overall_dimensions_authoritative": false, 
+  "type": "04790000 - chrome", 
+  "rfa_search": {
+    "result": "No acceptable no-account RFA recovered", 
+    "evidence": "_research/04790000/sources.json"
+  }, 
+  "native_gates_pass": true, 
+  "native_path_checks": [
+    {
+      "actual_mm": 1600.1999999999998, 
+      "pass": true, 
+      "part": "63 inch hose", 
+      "nominal_mm": 1600.1999999999998
+    }
+  ], 
+  "bounds_in": [
+    -0.60000000894069672, 
+    -38.963384628295898, 
+    -8.5771891702985296e-24, 
+    4.9649999999999999, 
+    14.125000476837158, 
+    4.1500000000000004
+  ], 
+  "model": "04790000", 
+  "limitations": [
+    "ASSUMPTION: upright handset and fixed U hose display pose. The full posed envelope is not a manufacturer rigid overall dimension.", 
+    "Handset angle, slider, connection and rounded-square edge details are simplified.", 
+    "The current catalog calls this 1.75 GPM, while the schedule describes 1.8 GPM.", 
+    "Independent visualization reconstruction with fixed product dimensions and editable native materials.", 
+    "Small fillets, seams, nozzle details and optical material response are inferred where the manufacturer does not dimension them.", 
+    "No internal hydraulic performance, MEP connectors, fabrication tolerances or procurement substitutions are implied."
+  ], 
+  "source_spec_path": "E:\\Claude\\3D-Model-Workflow\\output\\1527_wieland\\plumbing_fixtures\\04790000\\source\\model_spec.json", 
+  "appearance_defaults": {
+    "Finish": {
+      "cct_k": null, 
+      "rgb": [
+        195, 
+        198, 
+        201
+      ], 
+      "transparency": 0, 
+      "gloss": 0.95999999999999996, 
+      "luminance": 0
+    }, 
+    "Detail": {
+      "cct_k": null, 
+      "rgb": [
+        24, 
+        25, 
+        26
+      ], 
+      "transparency": 0, 
+      "gloss": 0.17000000000000001, 
+      "luminance": 0
+    }, 
+    "Ceramic": {
+      "cct_k": null, 
+      "rgb": [
+        245, 
+        245, 
+        241
+      ], 
+      "transparency": 0, 
+      "gloss": 0.85999999999999999, 
+      "luminance": 0
+    }
+  }, 
+  "manufacturer": "Hansgrohe", 
+  "source_spec_sha256": "5fd7965e54f8193a9aabfb63d2e316d16791b24ffc62342444bc06f552a22c02", 
+  "material_ids": {
+    "Finish": "3213", 
+    "Detail": "3210", 
+    "Ceramic": "3207"
+  }, 
+  "project_warnings": [], 
+  "technical_pass": true, 
+  "reopen_geometry_equal": true, 
+  "bounds_method": "Fine native face meshes plus 128-sample analytic edges", 
+  "appearance_bindings": {
+    "Ceramic": {
+      "path": "E:\\Claude\\3D-Model-Workflow\\output\\1527_wieland\\plumbing_fixtures\\04790000\\textures\\Ceramic.png", 
+      "exists": true, 
+      "material_id": "3207"
+    }, 
+    "Detail": {
+      "path": "E:\\Claude\\3D-Model-Workflow\\output\\1527_wieland\\plumbing_fixtures\\04790000\\textures\\Detail.png", 
+      "exists": true, 
+      "material_id": "3210"
+    }, 
+    "Finish": {
+      "path": "E:\\Claude\\3D-Model-Workflow\\output\\1527_wieland\\plumbing_fixtures\\04790000\\textures\\Finish.png", 
+      "exists": true, 
+      "material_id": "3213"
+    }
+  }, 
+  "display_bounds_in": [
+    -0.59999999999999998, 
+    -38.963385142487141, 
+    0.0, 
+    4.9649999999999999, 
+    14.125, 
+    4.1500000000000004
+  ], 
+  "actual_dimensions_after_reopen_mm": [
+    141.35100022709369, 
+    1348.4449816703795, 
+    105.41000000000000
+  ], 
+  "finished_utc": "2026-10-02T15:43:33.715000Z", 
+  "expected_dimensions_in": [
+    5.5649999999999995, 
+    53.088385142487148, 
+    4.1500000000000004
+  ], 
+  "inferences": "ASSUMPTION: upright handset and fixed U hose display pose. The full posed envelope is not a manufacturer rigid overall dimension. | Handset angle, slider, connection and rounded-square edge details are simplified. | The current catalog calls this 1.75 GPM, while the schedule describes 1.8 GPM. | Independent visualization reconstruction with fixed product dimensions and editable native materials. | Small fillets, seams, nozzle details and optical material response are inferred where the manufacturer does not dimension them. | No internal hydraulic performance, MEP connectors, fabrication tolerances or procurement substitutions are implied.", 
+  "reopened_warnings": [], 
+  "dimension_anchor_checks": [
+    {
+      "label": "Slide bar length", 
+      "actual_mm": 717.55002422332757, 
+      "deviation_mm": 2.4223327636718749e-05, 
+      "pass": true, 
+      "nominal_mm": 717.54999999999995
+    }
+  ], 
+  "revit_version": "2025", 
+  "source_references": [
+    {
+      "url": "https://assets.hansgrohe.com/celum/emailmarketing/hansgrohe_2026_Price_Book_en_US.pdf", 
+      "document": "Hansgrohe 2026 US Price Book", 
+      "local_image": "_research/catalog_pages/page_252.png", 
+      "page": 252
+    }
+  ], 
+  "actual_dimensions_in": [
+    5.5650000089406966, 
+    53.088385105133057, 
+    4.1500000000000004
+  ], 
+  "cct_k": null, 
+  "material_tests": {
+    "Ceramic": {
+      "writable": true, 
+      "face_count": 280, 
+      "substitution_reaches_faces": true
+    }, 
+    "Detail": {
+      "writable": true, 
+      "face_count": 280, 
+      "substitution_reaches_faces": true
+    }, 
+    "Finish": {
+      "writable": true, 
+      "face_count": 280, 
+      "substitution_reaches_faces": true
+    }
+  }, 
+  "template_form_ids": [
+    "1537"
+  ], 
+  "host": {
+    "host_id": "3739", 
+    "instance_host_id": "3739", 
+    "host_kind": "wall", 
+    "normal_dot": 1.0, 
+    "hostface_present": true
+  }, 
+  "reopened": true, 
+  "revit_build": "25.4.50.35", 
+  "started_utc": "2026-10-02T15:43:27.033000Z", 
+  "family_warnings": [], 
+  "placement": "WorkPlaneBased", 
+  "stage": "complete", 
+  "acceptance": "NATIVE_GATES_PASSED_PENDING_VISUAL_REVIEW", 
+  "rfa_path": "E:\\Claude\\3D-Model-Workflow\\output\\1527_wieland\\plumbing_fixtures\\04790000\\Hansgrohe_04790000_R2025.rfa", 
+  "reopened_bounds_in": [
+    -0.60000000894069672, 
+    -38.963384628295898, 
+    -8.5771891702985296e-24, 
+    4.9649999999999999, 
+    14.125000476837158, 
+    4.1500000000000004
+  ], 
+  "parts": [
+    {
+      "name": "Vertical slide bar", 
+      "id": "3215", 
+      "volume_ft3": 0.0098301226144866249
+    }, 
+    {
+      "name": "Top wall bracket", 
+      "id": "3216", 
+      "volume_ft3": 0.00125424709244123
+    }, 
+    {
+      "name": "Bottom wall bracket", 
+      "id": "3217", 
+      "volume_ft3": 0.00125424709244123
+    }, 
+    {
+      "name": "Slider", 
+      "id": "3218", 
+      "volume_ft3": 0.0026114998090964558
+    }, 
+    {
+      "name": "Handset handle", 
+      "id": "3219", 
+      "volume_ft3": 0.0021233774987989276
+    }, 
+    {
+      "name": "Rounded square head", 
+      "id": "3220", 
+      "volume_ft3": 0.0078682974196686174
+    }, 
+    {
+      "name": "Spray insert", 
+      "id": "3221", 
+      "volume_ft3": 0.00085225887756178837
+    }, 
+    {
+      "name": "Spray nozzle 0 0", 
+      "id": "3222", 
+      "volume_ft3": 5.2360487457204365e-07
+    }, 
+    {
+      "name": "Spray nozzle 0 1", 
+      "id": "3223", 
+      "volume_ft3": 5.2360487457204312e-07
+    }, 
+    {
+      "name": "Spray nozzle 0 2", 
+      "id": "3224", 
+      "volume_ft3": 5.2360487457204344e-07
+    }, 
+    {
+      "name": "Spray nozzle 0 3", 
+      "id": "3225", 
+      "volume_ft3": 5.2360487457204344e-07
+    }, 
+    {
+      "name": "Spray nozzle 0 4", 
+      "id": "3226", 
+      "volume_ft3": 5.2360487457204344e-07
+    }, 
+    {
+      "name": "Spray nozzle 0 5", 
+      "id": "3227", 
+      "volume_ft3": 5.2360487457204344e-07
+    }, 
+    {
+      "name": "Spray nozzle 1 0", 
+      "id": "3228", 
+      "volume_ft3": 5.2360487457204354e-07
+    }, 
+    {
+      "name": "Spray nozzle 1 1", 
+      "id": "3229", 
+      "volume_ft3": 5.2360487457204312e-07
+    }, 
+    {
+      "name": "Spray nozzle 1 2", 
+      "id": "3230", 
+      "volume_ft3": 5.2360487457204333e-07
+    }, 
+    {
+      "name": "Spray nozzle 1 3", 
+      "id": "3231", 
+      "volume_ft3": 5.2360487457204333e-07
+    }, 
+    {
+      "name": "Spray nozzle 1 4", 
+      "id": "3232", 
+      "volume_ft3": 5.2360487457204333e-07
+    }, 
+    {
+      "name": "Spray nozzle 1 5", 
+      "id": "3233", 
+      "volume_ft3": 5.2360487457204333e-07
+    }, 
+    {
+      "name": "Spray nozzle 2 0", 
+      "id": "3234", 
+      "volume_ft3": 5.2360487457204354e-07
+    }, 
+    {
+      "name": "Spray nozzle 2 1", 
+      "id": "3235", 
+      "volume_ft3": 5.2360487457204312e-07
+    }, 
+    {
+      "name": "Spray nozzle 2 2", 
+      "id": "3236", 
+      "volume_ft3": 5.2360487457204333e-07
+    }, 
+    {
+      "name": "Spray nozzle 2 3", 
+      "id": "3237", 
+      "volume_ft3": 5.2360487457204333e-07
+    }, 
+    {
+      "name": "Spray nozzle 2 4", 
+      "id": "3238", 
+      "volume_ft3": 5.2360487457204333e-07
+    }, 
+    {
+      "name": "Spray nozzle 2 5", 
+      "id": "3239", 
+      "volume_ft3": 5.2360487457204333e-07
+    }, 
+    {
+      "name": "Spray nozzle 3 0", 
+      "id": "3240", 
+      "volume_ft3": 5.2360487457204386e-07
+    }, 
+    {
+      "name": "Spray nozzle 3 1", 
+      "id": "3241", 
+      "volume_ft3": 5.2360487457204333e-07
+    }, 
+    {
+      "name": "Spray nozzle 3 2", 
+      "id": "3242", 
+      "volume_ft3": 5.2360487457204365e-07
+    }, 
+    {
+      "name": "Spray nozzle 3 3", 
+      "id": "3243", 
+      "volume_ft3": 5.2360487457204365e-07
+    }, 
+    {
+      "name": "Spray nozzle 3 4", 
+      "id": "3244", 
+      "volume_ft3": 5.2360487457204365e-07
+    }, 
+    {
+      "name": "Spray nozzle 3 5", 
+      "id": "3245", 
+      "volume_ft3": 5.2360487457204365e-07
+    }, 
+    {
+      "name": "Spray nozzle 4 0", 
+      "id": "3246", 
+      "volume_ft3": 5.2360487457204386e-07
+    }, 
+    {
+      "name": "Spray nozzle 4 1", 
+      "id": "3247", 
+      "volume_ft3": 5.2360487457204333e-07
+    }, 
+    {
+      "name": "Spray nozzle 4 2", 
+      "id": "3248", 
+      "volume_ft3": 5.2360487457204365e-07
+    }, 
+    {
+      "name": "Spray nozzle 4 3", 
+      "id": "3249", 
+      "volume_ft3": 5.2360487457204365e-07
+    }, 
+    {
+      "name": "Spray nozzle 4 4", 
+      "id": "3250", 
+      "volume_ft3": 5.2360487457204365e-07
+    }, 
+    {
+      "name": "Spray nozzle 4 5", 
+      "id": "3251", 
+      "volume_ft3": 5.2360487457204365e-07
+    }, 
+    {
+      "name": "Spray nozzle 5 0", 
+      "id": "3252", 
+      "volume_ft3": 5.2360487457204386e-07
+    }, 
+    {
+      "name": "Spray nozzle 5 1", 
+      "id": "3253", 
+      "volume_ft3": 5.2360487457204333e-07
+    }, 
+    {
+      "name": "Spray nozzle 5 2", 
+      "id": "3254", 
+      "volume_ft3": 5.2360487457204365e-07
+    }, 
+    {
+      "name": "Spray nozzle 5 3", 
+      "id": "3255", 
+      "volume_ft3": 5.2360487457204365e-07
+    }, 
+    {
+      "name": "Spray nozzle 5 4", 
+      "id": "3256", 
+      "volume_ft3": 5.2360487457204365e-07
+    }, 
+    {
+      "name": "Spray nozzle 5 5", 
+      "id": "3257", 
+      "volume_ft3": 5.2360487457204365e-07
+    }, 
+    {
+      "name": "63 inch hose", 
+      "id": "3258", 
+      "volume_ft3": 0.0045814450948210425
+    }
+  ], 
+  "source_dimensions": [
+    "Bar 28.25 in and diameter 0.875 in; hose 63 in; handset 110 mm nominal spray-face size."
+  ], 
+  "gates": {
+    "reopen_geometry_equal": true, 
+    "dimensions": true, 
+    "materials": true, 
+    "cct": true, 
+    "category": true, 
+    "views": true, 
+    "orientation": true, 
+    "diffuse_bitmaps": true, 
+    "warnings": true, 
+    "actual_face_host": true, 
+    "reopened": true
+  }, 
+  "visual_review": "PENDING_NATIVE_IMAGE_REVIEW", 
+  "evidence_files": [
+    "Hansgrohe_04790000_R2025_Isolated - 3D View - Native Front.png", 
+    "Hansgrohe_04790000_R2025_Isolated - 3D View - Native Material.png", 
+    "Hansgrohe_04790000_R2025_Isolated - 3D View - Native Oblique.png", 
+    "Hansgrohe_04790000_R2025_Isolated - 3D View - Native Side.png"
+  ]
+}

@@ -1,0 +1,240 @@
+{
+  "template_form_ids": [
+    "1537"
+  ], 
+  "rfa_search": {
+    "evidence": "_research/01850181/sources.json", 
+    "result": "No acceptable no-account RFA recovered"
+  }, 
+  "actual_dimensions_in": [
+    5.8750001192092896, 
+    5.8750001192092896, 
+    4.25
+  ], 
+  "source_dimensions": [
+    "Port-to-port envelope 5.875 in in both directions; body depth 4.25 in; shell diameter 4.75 in."
+  ], 
+  "bounds_in": [
+    -2.9375000596046448, 
+    -2.9375000596046448, 
+    -2.0342590296850901e-22, 
+    2.9375000596046448, 
+    2.9375000596046448, 
+    4.25
+  ], 
+  "reopened": true, 
+  "category": "Plumbing Fixtures", 
+  "actual_dimensions_after_reopen_mm": [
+    149.22500302791596, 
+    149.22500302791596, 
+    107.94999999999999
+  ], 
+  "bounds_method": "Fine native face meshes plus 128-sample analytic edges", 
+  "source_spec_path": "E:\\Claude\\3D-Model-Workflow\\output\\1527_wieland\\plumbing_fixtures\\01850181\\source\\model_spec.json", 
+  "rfa_path": "E:\\Claude\\3D-Model-Workflow\\output\\1527_wieland\\plumbing_fixtures\\01850181\\Hansgrohe_01850181_R2025.rfa", 
+  "stage": "complete", 
+  "cct_k": null, 
+  "placement": "WorkPlaneBased", 
+  "material_tests": {
+    "Green": {
+      "substitution_reaches_faces": true, 
+      "writable": true, 
+      "face_count": 102
+    }, 
+    "Brass": {
+      "substitution_reaches_faces": true, 
+      "writable": true, 
+      "face_count": 102
+    }
+  }, 
+  "evidence_files": [
+    "Hansgrohe_01850181_R2025_Isolated - 3D View - Native Front.png", 
+    "Hansgrohe_01850181_R2025_Isolated - 3D View - Native Material.png", 
+    "Hansgrohe_01850181_R2025_Isolated - 3D View - Native Oblique.png", 
+    "Hansgrohe_01850181_R2025_Isolated - 3D View - Native Side.png"
+  ], 
+  "model": "01850181", 
+  "acceptance": "NATIVE_GATES_PASSED_PENDING_VISUAL_REVIEW", 
+  "native_path_checks": [], 
+  "finished_utc": "2026-10-02T14:37:39.570000Z", 
+  "source_spec_sha256": "ea43f3148e4b7492a4da0aca456e3b271b4ff2c8c405f54ca8e75fde0987ddd5", 
+  "reopened_warnings": [], 
+  "project_warnings": [], 
+  "reopen_geometry_equal": true, 
+  "visual_review": "PENDING_NATIVE_IMAGE_REVIEW", 
+  "display_bounds_in": [
+    -2.9375, 
+    -2.9375, 
+    0.0, 
+    2.9375, 
+    2.9375, 
+    4.25
+  ], 
+  "source_references": [
+    {
+      "page": 374, 
+      "document": "Hansgrohe 2026 US Price Book", 
+      "url": "https://assets.hansgrohe.com/celum/emailmarketing/hansgrohe_2026_Price_Book_en_US.pdf", 
+      "local_image": "_research/catalog_pages/page_374.png"
+    }, 
+    {
+      "url": "https://www.bimobject.com/en-us/hansgrohe/product/01850181", 
+      "note": "Manufacturer listing confirms rough-in envelope."
+    }
+  ], 
+  "appearance_bindings": {
+    "Green": {
+      "material_id": "3210", 
+      "exists": true, 
+      "path": "E:\\Claude\\3D-Model-Workflow\\output\\1527_wieland\\plumbing_fixtures\\01850181\\textures\\Green.png"
+    }, 
+    "Brass": {
+      "material_id": "3207", 
+      "exists": true, 
+      "path": "E:\\Claude\\3D-Model-Workflow\\output\\1527_wieland\\plumbing_fixtures\\01850181\\textures\\Brass.png"
+    }
+  }, 
+  "revit_build": "25.4.50.35", 
+  "dimension_anchor_checks": [
+    {
+      "label": "Shell diameter", 
+      "pass": true, 
+      "actual_mm": 120.65000302791594, 
+      "nominal_mm": 120.64999999999999, 
+      "deviation_mm": 3.0279159545898436e-06
+    }
+  ], 
+  "material_ids": {
+    "Green": "3210", 
+    "Brass": "3207"
+  }, 
+  "expected_dimensions_in": [
+    5.875, 
+    5.875, 
+    4.25
+  ], 
+  "inferences": "Protective shell and brass valve are a coordination visualization. Internal cartridges, support ribs, mounting holes and threads are simplified. | Independent visualization reconstruction with fixed product dimensions and editable native materials. | Small fillets, seams, nozzle details and optical material response are inferred where the manufacturer does not dimension them. | No internal hydraulic performance, MEP connectors, fabrication tolerances or procurement substitutions are implied.", 
+  "gates": {
+    "reopened": true, 
+    "warnings": true, 
+    "orientation": true, 
+    "diffuse_bitmaps": true, 
+    "actual_face_host": true, 
+    "dimensions": true, 
+    "materials": true, 
+    "reopen_geometry_equal": true, 
+    "views": true, 
+    "category": true, 
+    "cct": true
+  }, 
+  "revit_version": "2025", 
+  "manufacturer": "Hansgrohe", 
+  "technical_pass": true, 
+  "family_warnings": [], 
+  "started_utc": "2026-10-02T14:37:35.819000Z", 
+  "type": "01850181 - green", 
+  "parts": [
+    {
+      "volume_ft3": 0.0088561135168094343, 
+      "id": "3212", 
+      "name": "Protective green cylindrical shell"
+    }, 
+    {
+      "volume_ft3": 0.0056779441550717071, 
+      "id": "3213", 
+      "name": "Rear brass valve body"
+    }, 
+    {
+      "volume_ft3": 0.0018918148199380436, 
+      "id": "3214", 
+      "name": "Service cartridge"
+    }, 
+    {
+      "volume_ft3": 0.00056105716867544558, 
+      "id": "3215", 
+      "name": "Port [1, 0, 0]"
+    }, 
+    {
+      "volume_ft3": 0.00056105716867544558, 
+      "id": "3216", 
+      "name": "Port [-1, 0, 0]"
+    }, 
+    {
+      "volume_ft3": 0.00056105716867544558, 
+      "id": "3217", 
+      "name": "Port [0, 1, 0]"
+    }, 
+    {
+      "volume_ft3": 0.00056105716867544558, 
+      "id": "3218", 
+      "name": "Port [0, -1, 0]"
+    }, 
+    {
+      "volume_ft3": 8.6389468101819407e-05, 
+      "id": "3219", 
+      "name": "Mount lug -1.98 -1.98"
+    }, 
+    {
+      "volume_ft3": 8.6389468101819407e-05, 
+      "id": "3220", 
+      "name": "Mount lug -1.98 1.98"
+    }, 
+    {
+      "volume_ft3": 8.6389468101819407e-05, 
+      "id": "3221", 
+      "name": "Mount lug 1.98 -1.98"
+    }, 
+    {
+      "volume_ft3": 8.6389468101819407e-05, 
+      "id": "3222", 
+      "name": "Mount lug 1.98 1.98"
+    }
+  ], 
+  "all_overall_dimensions_authoritative": true, 
+  "native_gates_pass": true, 
+  "appearance_defaults": {
+    "Green": {
+      "rgb": [
+        31, 
+        113, 
+        66
+      ], 
+      "gloss": 0.17999999999999999, 
+      "luminance": 0, 
+      "transparency": 0, 
+      "cct_k": null
+    }, 
+    "Brass": {
+      "rgb": [
+        160, 
+        124, 
+        64
+      ], 
+      "gloss": 0.40000000000000002, 
+      "luminance": 0, 
+      "transparency": 0, 
+      "cct_k": null
+    }
+  }, 
+  "reopened_bounds_in": [
+    -2.9375000596046448, 
+    -2.9375000596046448, 
+    -2.0342590296850901e-22, 
+    2.9375000596046448, 
+    2.9375000596046448, 
+    4.25
+  ], 
+  "limitations": [
+    "Protective shell and brass valve are a coordination visualization. Internal cartridges, support ribs, mounting holes and threads are simplified.", 
+    "Independent visualization reconstruction with fixed product dimensions and editable native materials.", 
+    "Small fillets, seams, nozzle details and optical material response are inferred where the manufacturer does not dimension them.", 
+    "No internal hydraulic performance, MEP connectors, fabrication tolerances or procurement substitutions are implied."
+  ], 
+  "host": {
+    "hostface_present": true, 
+    "host_kind": "wall", 
+    "normal_dot": 1.0, 
+    "host_id": "3702", 
+    "instance_host_id": "3702"
+  }
+}

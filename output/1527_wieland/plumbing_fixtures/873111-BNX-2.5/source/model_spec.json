@@ -1,0 +1,1134 @@
+{
+  "key": "873111-BNX-2.5",
+  "model": "873111-BNX-2.5",
+  "manufacturer": "Brizo",
+  "type_name": "873111-BNX-2.5 - Brilliance Black Onyx -  Black",
+  "basename": "Brizo_873111-BNX-2.5_R2025",
+  "name": "Roccesco jointed sconce shower head, 45-degree pose",
+  "host": "wall",
+  "configured_dimensions_in": [
+    4.75,
+    9.55437860531805,
+    16
+  ],
+  "materials": {
+    "Finish": {
+      "rgb": [
+        58,
+        60,
+        62
+      ],
+      "gloss": 0.92,
+      "reflectivity": 0.72,
+      "class": "Metal"
+    },
+    "Detail": {
+      "rgb": [
+        24,
+        25,
+        26
+      ],
+      "gloss": 0.17,
+      "reflectivity": 0.04,
+      "class": "Plastic"
+    },
+    "Graphite": {
+      "rgb": [
+        64,
+        67,
+        69
+      ],
+      "gloss": 0.36,
+      "reflectivity": 0.16,
+      "class": "Glass"
+    },
+    "Ceramic": {
+      "rgb": [
+        245,
+        245,
+        241
+      ],
+      "gloss": 0.86,
+      "reflectivity": 0.22,
+      "class": "Ceramic"
+    },
+    "Brass": {
+      "rgb": [
+        160,
+        124,
+        64
+      ],
+      "gloss": 0.4,
+      "reflectivity": 0.38,
+      "class": "Metal"
+    },
+    "Green": {
+      "rgb": [
+        31,
+        113,
+        66
+      ],
+      "gloss": 0.18,
+      "reflectivity": 0.05,
+      "class": "Plastic"
+    },
+    "Gray": {
+      "rgb": [
+        131,
+        132,
+        130
+      ],
+      "gloss": 0.32,
+      "reflectivity": 0.12,
+      "class": "Plastic"
+    }
+  },
+  "geometry": [
+    {
+      "name": "Round wall flange",
+      "kind": "cylinder",
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "radius": 2.375,
+      "a": 0,
+      "b": 0.4,
+      "material": "Finish"
+    },
+    {
+      "name": "Threaded wall connection",
+      "kind": "cylinder",
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "radius": 0.32,
+      "a": -1.5,
+      "b": 0.65,
+      "material": "Brass"
+    },
+    {
+      "name": "Wall pivot standoff",
+      "kind": "cylinder",
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "radius": 0.7,
+      "a": 0.35,
+      "b": 2.1,
+      "material": "Finish"
+    },
+    {
+      "name": "Wall-side hinge",
+      "kind": "cylinder",
+      "origin": [
+        0,
+        0,
+        2.1
+      ],
+      "axis": [
+        1,
+        0,
+        0
+      ],
+      "radius": 0.875,
+      "a": 0.8,
+      "b": 2.25,
+      "material": "Finish"
+    },
+    {
+      "name": "Flattened jointed arm",
+      "kind": "sweep",
+      "path": [
+        [
+          1.45,
+          0,
+          2.1
+        ],
+        [
+          1.45,
+          2.7,
+          8.3
+        ]
+      ],
+      "radius": 0.4,
+      "material": "Finish",
+      "oval": [
+        0.6,
+        1.75
+      ]
+    },
+    {
+      "name": "Head-side hinge",
+      "kind": "cylinder",
+      "origin": [
+        0,
+        2.7,
+        8.3
+      ],
+      "axis": [
+        1,
+        0,
+        0
+      ],
+      "radius": 0.875,
+      "a": 0.8,
+      "b": 2.25,
+      "material": "Finish"
+    },
+    {
+      "name": "Cylindrical shower head",
+      "kind": "cylinder",
+      "origin": [
+        0,
+        5.5,
+        7.340543840486206
+      ],
+      "axis": [
+        0,
+        -0.7071067811865476,
+        0.7071067811865476
+      ],
+      "radius": 2.375,
+      "a": 0,
+      "b": 7.75,
+      "material": "Finish"
+    },
+    {
+      "name": "Recessed spray disk",
+      "kind": "cylinder",
+      "origin": [
+        0,
+        5.5,
+        7.340543840486206
+      ],
+      "axis": [
+        0,
+        -0.7071067811865476,
+        0.7071067811865476
+      ],
+      "radius": 2.2,
+      "a": 7.71,
+      "b": 7.75,
+      "material": "Detail"
+    },
+    {
+      "name": "Spray nozzle 0.4 0",
+      "kind": "cylinder",
+      "origin": [
+        0.4,
+        0.01992244580425595,
+        12.82062139468195
+      ],
+      "axis": [
+        0,
+        -0.7071067811865476,
+        0.7071067811865476
+      ],
+      "radius": 0.08,
+      "a": -0.08,
+      "b": 0,
+      "material": "Gray"
+    },
+    {
+      "name": "Spray nozzle 0.4 1",
+      "kind": "cylinder",
+      "origin": [
+        0.28284271247461906,
+        0.219922445804256,
+        13.02062139468195
+      ],
+      "axis": [
+        0,
+        -0.7071067811865476,
+        0.7071067811865476
+      ],
+      "radius": 0.08,
+      "a": -0.08,
+      "b": 0,
+      "material": "Gray"
+    },
+    {
+      "name": "Spray nozzle 0.4 2",
+      "kind": "cylinder",
+      "origin": [
+        2.4492935982947065e-17,
+        0.302765158278875,
+        13.103464107156569
+      ],
+      "axis": [
+        0,
+        -0.7071067811865476,
+        0.7071067811865476
+      ],
+      "radius": 0.08,
+      "a": -0.08,
+      "b": 0,
+      "material": "Gray"
+    },
+    {
+      "name": "Spray nozzle 0.4 3",
+      "kind": "cylinder",
+      "origin": [
+        -0.282842712474619,
+        0.219922445804256,
+        13.02062139468195
+      ],
+      "axis": [
+        0,
+        -0.7071067811865476,
+        0.7071067811865476
+      ],
+      "radius": 0.08,
+      "a": -0.08,
+      "b": 0,
+      "material": "Gray"
+    },
+    {
+      "name": "Spray nozzle 0.4 4",
+      "kind": "cylinder",
+      "origin": [
+        -0.4,
+        0.019922445804255985,
+        12.82062139468195
+      ],
+      "axis": [
+        0,
+        -0.7071067811865476,
+        0.7071067811865476
+      ],
+      "radius": 0.08,
+      "a": -0.08,
+      "b": 0,
+      "material": "Gray"
+    },
+    {
+      "name": "Spray nozzle 0.4 5",
+      "kind": "cylinder",
+      "origin": [
+        -0.28284271247461906,
+        -0.18007755419574406,
+        12.620621394681951
+      ],
+      "axis": [
+        0,
+        -0.7071067811865476,
+        0.7071067811865476
+      ],
+      "radius": 0.08,
+      "a": -0.08,
+      "b": 0,
+      "material": "Gray"
+    },
+    {
+      "name": "Spray nozzle 0.4 6",
+      "kind": "cylinder",
+      "origin": [
+        -7.347880794884119e-17,
+        -0.2629202666703631,
+        12.537778682207332
+      ],
+      "axis": [
+        0,
+        -0.7071067811865476,
+        0.7071067811865476
+      ],
+      "radius": 0.08,
+      "a": -0.08,
+      "b": 0,
+      "material": "Gray"
+    },
+    {
+      "name": "Spray nozzle 0.4 7",
+      "kind": "cylinder",
+      "origin": [
+        0.28284271247461895,
+        -0.1800775541957441,
+        12.620621394681951
+      ],
+      "axis": [
+        0,
+        -0.7071067811865476,
+        0.7071067811865476
+      ],
+      "radius": 0.08,
+      "a": -0.08,
+      "b": 0,
+      "material": "Gray"
+    },
+    {
+      "name": "Spray nozzle 1.0 0",
+      "kind": "cylinder",
+      "origin": [
+        1.0,
+        0.01992244580425595,
+        12.82062139468195
+      ],
+      "axis": [
+        0,
+        -0.7071067811865476,
+        0.7071067811865476
+      ],
+      "radius": 0.08,
+      "a": -0.08,
+      "b": 0,
+      "material": "Gray"
+    },
+    {
+      "name": "Spray nozzle 1.0 1",
+      "kind": "cylinder",
+      "origin": [
+        0.9238795325112867,
+        0.29052049587735446,
+        13.09121944475505
+      ],
+      "axis": [
+        0,
+        -0.7071067811865476,
+        0.7071067811865476
+      ],
+      "radius": 0.08,
+      "a": -0.08,
+      "b": 0,
+      "material": "Gray"
+    },
+    {
+      "name": "Spray nozzle 1.0 2",
+      "kind": "cylinder",
+      "origin": [
+        0.7071067811865476,
+        0.5199224458042561,
+        13.32062139468195
+      ],
+      "axis": [
+        0,
+        -0.7071067811865476,
+        0.7071067811865476
+      ],
+      "radius": 0.08,
+      "a": -0.08,
+      "b": 0,
+      "material": "Gray"
+    },
+    {
+      "name": "Spray nozzle 1.0 3",
+      "kind": "cylinder",
+      "origin": [
+        0.38268343236508984,
+        0.6732039282424442,
+        13.473902877120139
+      ],
+      "axis": [
+        0,
+        -0.7071067811865476,
+        0.7071067811865476
+      ],
+      "radius": 0.08,
+      "a": -0.08,
+      "b": 0,
+      "material": "Gray"
+    },
+    {
+      "name": "Spray nozzle 1.0 4",
+      "kind": "cylinder",
+      "origin": [
+        6.123233995736766e-17,
+        0.7270292269908035,
+        13.527728175868498
+      ],
+      "axis": [
+        0,
+        -0.7071067811865476,
+        0.7071067811865476
+      ],
+      "radius": 0.08,
+      "a": -0.08,
+      "b": 0,
+      "material": "Gray"
+    },
+    {
+      "name": "Spray nozzle 1.0 5",
+      "kind": "cylinder",
+      "origin": [
+        -0.3826834323650897,
+        0.6732039282424442,
+        13.473902877120139
+      ],
+      "axis": [
+        0,
+        -0.7071067811865476,
+        0.7071067811865476
+      ],
+      "radius": 0.08,
+      "a": -0.08,
+      "b": 0,
+      "material": "Gray"
+    },
+    {
+      "name": "Spray nozzle 1.0 6",
+      "kind": "cylinder",
+      "origin": [
+        -0.7071067811865475,
+        0.5199224458042561,
+        13.32062139468195
+      ],
+      "axis": [
+        0,
+        -0.7071067811865476,
+        0.7071067811865476
+      ],
+      "radius": 0.08,
+      "a": -0.08,
+      "b": 0,
+      "material": "Gray"
+    },
+    {
+      "name": "Spray nozzle 1.0 7",
+      "kind": "cylinder",
+      "origin": [
+        -0.9238795325112867,
+        0.29052049587735457,
+        13.09121944475505
+      ],
+      "axis": [
+        0,
+        -0.7071067811865476,
+        0.7071067811865476
+      ],
+      "radius": 0.08,
+      "a": -0.08,
+      "b": 0,
+      "material": "Gray"
+    },
+    {
+      "name": "Spray nozzle 1.0 8",
+      "kind": "cylinder",
+      "origin": [
+        -1.0,
+        0.019922445804256037,
+        12.82062139468195
+      ],
+      "axis": [
+        0,
+        -0.7071067811865476,
+        0.7071067811865476
+      ],
+      "radius": 0.08,
+      "a": -0.08,
+      "b": 0,
+      "material": "Gray"
+    },
+    {
+      "name": "Spray nozzle 1.0 9",
+      "kind": "cylinder",
+      "origin": [
+        -0.9238795325112868,
+        -0.2506756042688425,
+        12.550023344608851
+      ],
+      "axis": [
+        0,
+        -0.7071067811865476,
+        0.7071067811865476
+      ],
+      "radius": 0.08,
+      "a": -0.08,
+      "b": 0,
+      "material": "Gray"
+    },
+    {
+      "name": "Spray nozzle 1.0 10",
+      "kind": "cylinder",
+      "origin": [
+        -0.7071067811865477,
+        -0.48007755419574405,
+        12.32062139468195
+      ],
+      "axis": [
+        0,
+        -0.7071067811865476,
+        0.7071067811865476
+      ],
+      "radius": 0.08,
+      "a": -0.08,
+      "b": 0,
+      "material": "Gray"
+    },
+    {
+      "name": "Spray nozzle 1.0 11",
+      "kind": "cylinder",
+      "origin": [
+        -0.38268343236509034,
+        -0.6333590366339322,
+        12.167339912243762
+      ],
+      "axis": [
+        0,
+        -0.7071067811865476,
+        0.7071067811865476
+      ],
+      "radius": 0.08,
+      "a": -0.08,
+      "b": 0,
+      "material": "Gray"
+    },
+    {
+      "name": "Spray nozzle 1.0 12",
+      "kind": "cylinder",
+      "origin": [
+        -1.8369701987210297e-16,
+        -0.6871843353822916,
+        12.113514613495402
+      ],
+      "axis": [
+        0,
+        -0.7071067811865476,
+        0.7071067811865476
+      ],
+      "radius": 0.08,
+      "a": -0.08,
+      "b": 0,
+      "material": "Gray"
+    },
+    {
+      "name": "Spray nozzle 1.0 13",
+      "kind": "cylinder",
+      "origin": [
+        0.38268343236509,
+        -0.6333590366339322,
+        12.167339912243762
+      ],
+      "axis": [
+        0,
+        -0.7071067811865476,
+        0.7071067811865476
+      ],
+      "radius": 0.08,
+      "a": -0.08,
+      "b": 0,
+      "material": "Gray"
+    },
+    {
+      "name": "Spray nozzle 1.0 14",
+      "kind": "cylinder",
+      "origin": [
+        0.7071067811865474,
+        -0.48007755419574416,
+        12.32062139468195
+      ],
+      "axis": [
+        0,
+        -0.7071067811865476,
+        0.7071067811865476
+      ],
+      "radius": 0.08,
+      "a": -0.08,
+      "b": 0,
+      "material": "Gray"
+    },
+    {
+      "name": "Spray nozzle 1.0 15",
+      "kind": "cylinder",
+      "origin": [
+        0.9238795325112865,
+        -0.250675604268843,
+        12.550023344608851
+      ],
+      "axis": [
+        0,
+        -0.7071067811865476,
+        0.7071067811865476
+      ],
+      "radius": 0.08,
+      "a": -0.08,
+      "b": 0,
+      "material": "Gray"
+    },
+    {
+      "name": "Spray nozzle 1.7 0",
+      "kind": "cylinder",
+      "origin": [
+        1.7,
+        0.01992244580425595,
+        12.82062139468195
+      ],
+      "axis": [
+        0,
+        -0.7071067811865476,
+        0.7071067811865476
+      ],
+      "radius": 0.08,
+      "a": -0.08,
+      "b": 0,
+      "material": "Gray"
+    },
+    {
+      "name": "Spray nozzle 1.7 1",
+      "kind": "cylinder",
+      "origin": [
+        1.6420739046914161,
+        0.3310440390210288,
+        13.131742987898724
+      ],
+      "axis": [
+        0,
+        -0.7071067811865476,
+        0.7071067811865476
+      ],
+      "radius": 0.08,
+      "a": -0.08,
+      "b": 0,
+      "material": "Gray"
+    },
+    {
+      "name": "Spray nozzle 1.7 2",
+      "kind": "cylinder",
+      "origin": [
+        1.4722431864335457,
+        0.6209632098128213,
+        13.421662158690516
+      ],
+      "axis": [
+        0,
+        -0.7071067811865476,
+        0.7071067811865476
+      ],
+      "radius": 0.08,
+      "a": -0.08,
+      "b": 0,
+      "material": "Gray"
+    },
+    {
+      "name": "Spray nozzle 1.7 3",
+      "kind": "cylinder",
+      "origin": [
+        1.2020815280171309,
+        0.869922445804256,
+        13.67062139468195
+      ],
+      "axis": [
+        0,
+        -0.7071067811865476,
+        0.7071067811865476
+      ],
+      "radius": 0.08,
+      "a": -0.08,
+      "b": 0,
+      "material": "Gray"
+    },
+    {
+      "name": "Spray nozzle 1.7 4",
+      "kind": "cylinder",
+      "origin": [
+        0.8500000000000002,
+        1.0609555864871067,
+        13.861654535364801
+      ],
+      "axis": [
+        0,
+        -0.7071067811865476,
+        0.7071067811865476
+      ],
+      "radius": 0.08,
+      "a": -0.08,
+      "b": 0,
+      "material": "Gray"
+    },
+    {
+      "name": "Spray nozzle 1.7 5",
+      "kind": "cylinder",
+      "origin": [
+        0.43999237667428526,
+        1.1810440390210288,
+        13.981742987898723
+      ],
+      "axis": [
+        0,
+        -0.7071067811865476,
+        0.7071067811865476
+      ],
+      "radius": 0.08,
+      "a": -0.08,
+      "b": 0,
+      "material": "Gray"
+    },
+    {
+      "name": "Spray nozzle 1.7 6",
+      "kind": "cylinder",
+      "origin": [
+        1.0409497792752501e-16,
+        1.2220039738213868,
+        14.02270292269908
+      ],
+      "axis": [
+        0,
+        -0.7071067811865476,
+        0.7071067811865476
+      ],
+      "radius": 0.08,
+      "a": -0.08,
+      "b": 0,
+      "material": "Gray"
+    },
+    {
+      "name": "Spray nozzle 1.7 7",
+      "kind": "cylinder",
+      "origin": [
+        -0.43999237667428504,
+        1.1810440390210288,
+        13.981742987898723
+      ],
+      "axis": [
+        0,
+        -0.7071067811865476,
+        0.7071067811865476
+      ],
+      "radius": 0.08,
+      "a": -0.08,
+      "b": 0,
+      "material": "Gray"
+    },
+    {
+      "name": "Spray nozzle 1.7 8",
+      "kind": "cylinder",
+      "origin": [
+        -0.8499999999999996,
+        1.0609555864871067,
+        13.861654535364801
+      ],
+      "axis": [
+        0,
+        -0.7071067811865476,
+        0.7071067811865476
+      ],
+      "radius": 0.08,
+      "a": -0.08,
+      "b": 0,
+      "material": "Gray"
+    },
+    {
+      "name": "Spray nozzle 1.7 9",
+      "kind": "cylinder",
+      "origin": [
+        -1.2020815280171306,
+        0.869922445804256,
+        13.67062139468195
+      ],
+      "axis": [
+        0,
+        -0.7071067811865476,
+        0.7071067811865476
+      ],
+      "radius": 0.08,
+      "a": -0.08,
+      "b": 0,
+      "material": "Gray"
+    },
+    {
+      "name": "Spray nozzle 1.7 10",
+      "kind": "cylinder",
+      "origin": [
+        -1.4722431864335457,
+        0.6209632098128213,
+        13.421662158690516
+      ],
+      "axis": [
+        0,
+        -0.7071067811865476,
+        0.7071067811865476
+      ],
+      "radius": 0.08,
+      "a": -0.08,
+      "b": 0,
+      "material": "Gray"
+    },
+    {
+      "name": "Spray nozzle 1.7 11",
+      "kind": "cylinder",
+      "origin": [
+        -1.642073904691416,
+        0.33104403902102914,
+        13.131742987898724
+      ],
+      "axis": [
+        0,
+        -0.7071067811865476,
+        0.7071067811865476
+      ],
+      "radius": 0.08,
+      "a": -0.08,
+      "b": 0,
+      "material": "Gray"
+    },
+    {
+      "name": "Spray nozzle 1.7 12",
+      "kind": "cylinder",
+      "origin": [
+        -1.7,
+        0.019922445804256096,
+        12.82062139468195
+      ],
+      "axis": [
+        0,
+        -0.7071067811865476,
+        0.7071067811865476
+      ],
+      "radius": 0.08,
+      "a": -0.08,
+      "b": 0,
+      "material": "Gray"
+    },
+    {
+      "name": "Spray nozzle 1.7 13",
+      "kind": "cylinder",
+      "origin": [
+        -1.6420739046914161,
+        -0.29119914741251696,
+        12.509499801465177
+      ],
+      "axis": [
+        0,
+        -0.7071067811865476,
+        0.7071067811865476
+      ],
+      "radius": 0.08,
+      "a": -0.08,
+      "b": 0,
+      "material": "Gray"
+    },
+    {
+      "name": "Spray nozzle 1.7 14",
+      "kind": "cylinder",
+      "origin": [
+        -1.472243186433546,
+        -0.5811183182043091,
+        12.219580630673384
+      ],
+      "axis": [
+        0,
+        -0.7071067811865476,
+        0.7071067811865476
+      ],
+      "radius": 0.08,
+      "a": -0.08,
+      "b": 0,
+      "material": "Gray"
+    },
+    {
+      "name": "Spray nozzle 1.7 15",
+      "kind": "cylinder",
+      "origin": [
+        -1.2020815280171313,
+        -0.8300775541957437,
+        11.97062139468195
+      ],
+      "axis": [
+        0,
+        -0.7071067811865476,
+        0.7071067811865476
+      ],
+      "radius": 0.08,
+      "a": -0.08,
+      "b": 0,
+      "material": "Gray"
+    },
+    {
+      "name": "Spray nozzle 1.7 16",
+      "kind": "cylinder",
+      "origin": [
+        -0.8500000000000008,
+        -1.0211106948785946,
+        11.7795882539991
+      ],
+      "axis": [
+        0,
+        -0.7071067811865476,
+        0.7071067811865476
+      ],
+      "radius": 0.08,
+      "a": -0.08,
+      "b": 0,
+      "material": "Gray"
+    },
+    {
+      "name": "Spray nozzle 1.7 17",
+      "kind": "cylinder",
+      "origin": [
+        -0.43999237667428504,
+        -1.141199147412517,
+        11.659499801465177
+      ],
+      "axis": [
+        0,
+        -0.7071067811865476,
+        0.7071067811865476
+      ],
+      "radius": 0.08,
+      "a": -0.08,
+      "b": 0,
+      "material": "Gray"
+    },
+    {
+      "name": "Spray nozzle 1.7 18",
+      "kind": "cylinder",
+      "origin": [
+        -3.1228493378257504e-16,
+        -1.182159082212875,
+        11.61853986666482
+      ],
+      "axis": [
+        0,
+        -0.7071067811865476,
+        0.7071067811865476
+      ],
+      "radius": 0.08,
+      "a": -0.08,
+      "b": 0,
+      "material": "Gray"
+    },
+    {
+      "name": "Spray nozzle 1.7 19",
+      "kind": "cylinder",
+      "origin": [
+        0.4399923766742845,
+        -1.1411991474125172,
+        11.659499801465177
+      ],
+      "axis": [
+        0,
+        -0.7071067811865476,
+        0.7071067811865476
+      ],
+      "radius": 0.08,
+      "a": -0.08,
+      "b": 0,
+      "material": "Gray"
+    },
+    {
+      "name": "Spray nozzle 1.7 20",
+      "kind": "cylinder",
+      "origin": [
+        0.8500000000000002,
+        -1.0211106948785948,
+        11.7795882539991
+      ],
+      "axis": [
+        0,
+        -0.7071067811865476,
+        0.7071067811865476
+      ],
+      "radius": 0.08,
+      "a": -0.08,
+      "b": 0,
+      "material": "Gray"
+    },
+    {
+      "name": "Spray nozzle 1.7 21",
+      "kind": "cylinder",
+      "origin": [
+        1.2020815280171304,
+        -0.8300775541957444,
+        11.97062139468195
+      ],
+      "axis": [
+        0,
+        -0.7071067811865476,
+        0.7071067811865476
+      ],
+      "radius": 0.08,
+      "a": -0.08,
+      "b": 0,
+      "material": "Gray"
+    },
+    {
+      "name": "Spray nozzle 1.7 22",
+      "kind": "cylinder",
+      "origin": [
+        1.4722431864335452,
+        -0.58111831820431,
+        12.219580630673384
+      ],
+      "axis": [
+        0,
+        -0.7071067811865476,
+        0.7071067811865476
+      ],
+      "radius": 0.08,
+      "a": -0.08,
+      "b": 0,
+      "material": "Gray"
+    },
+    {
+      "name": "Spray nozzle 1.7 23",
+      "kind": "cylinder",
+      "origin": [
+        1.6420739046914157,
+        -0.2911991474125179,
+        12.509499801465177
+      ],
+      "axis": [
+        0,
+        -0.7071067811865476,
+        0.7071067811865476
+      ],
+      "radius": 0.08,
+      "a": -0.08,
+      "b": 0,
+      "material": "Gray"
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://media.brizo.com/SpecSheet/BSP-B-873111%20Rev%20A.pdf",
+      "document": "Brizo Roccesco jointed shower head BSP-B-873111 Rev A",
+      "page": 1,
+      "visual_review_method": "Manufacturer web PDF screenshot"
+    }
+  ],
+  "dimension_authority": [
+    "Shower cylinder diameter 4.75 in and axial length 7.75 in; wall flange diameter 4.75 in; full shown thread-to-head projection 16 in."
+  ],
+  "limitations": [
+    "ASSUMPTION: neutral 45-degree cylinder angle and 1.5-inch concealed stub; final finished-wall projection therefore depends on mounting depth.",
+    "Jointed arm plate, nozzle distribution and small pivots are drawing-derived.",
+    "Printed standard-specification body text names 873110, while this sheet title and model field explicitly identify 873111; the 873111 drawing is used.",
+    "Independent visualization reconstruction with fixed product dimensions and editable native materials.",
+    "Small fillets, seams, nozzle details and optical material response are inferred where the manufacturer does not dimension them.",
+    "No internal hydraulic performance, MEP connectors, fabrication tolerances or procurement substitutions are implied."
+  ],
+  "anchors": [
+    {
+      "label": "Head diameter",
+      "parts": [
+        "Cylindrical shower head"
+      ],
+      "axis": 0,
+      "nominal_in": 4.75
+    }
+  ],
+  "all_overall_dimensions_authoritative": false,
+  "rfa_search": {
+    "result": "No acceptable no-account RFA recovered",
+    "evidence": "_research/873111-BNX-2.5/sources.json"
+  }
+}

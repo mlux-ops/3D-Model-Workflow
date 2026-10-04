@@ -1,0 +1,62 @@
+{
+  "model": "PODMC301W",
+  "slug": "thermador_podmc301w",
+  "status": "BUILT_WITH_LIMITATIONS",
+  "rfa": "thermador_podmc301w/thermador_podmc301w_Custom_R1_R2025.rfa",
+  "rfa_bytes": 524288,
+  "rfa_sha256": "1b8fb476c8224a90a7651f7968e091c0a0460cf1b1743135b13813e741a6c9d3",
+  "row_ids": [
+    2199628860030852
+  ],
+  "source_urls": [
+    "https://www.thermador.com/us/en/mkt-product/ovens/double-ovens/PODMC301W",
+    "https://media3.bsh-group.com/3D_Asset/15838407_PODMC301W-Thermador-TradeCAD.zip",
+    "https://media3.bsh-group.com/3D_Asset/29273463_PODMC301W_TradeCAD.zip",
+    "https://media3.bsh-group.com/Documents/MCDOC02802507_PODMC301W-30-INCH-DOUBLE-COMBINATION-BUILT-IN-OVEN-WITH-SPEED-OVEN-Specifications.pdf"
+  ],
+  "original_rfas": [
+    {
+      "path": "thermador_podmc301w/source/original/PODMC301W-Thermador-TradeCAD/PODMC301W-2D.rfa",
+      "sha256": "f7d6226ffcfc7c4ceef246e20e492ff5dd845833c24e1087e8b98f19105913ee"
+    },
+    {
+      "path": "thermador_podmc301w/source/original/PODMC301W-Thermador-TradeCAD/PODMC301W-3D.rfa",
+      "sha256": "f7d6226ffcfc7c4ceef246e20e492ff5dd845833c24e1087e8b98f19105913ee"
+    },
+    {
+      "path": "thermador_podmc301w/source/original/PODMC301W.rfa",
+      "sha256": "3f01c6e084dff850d5b16f8c6437bed5e618a9a75a45dd9fc17717330a447c9f"
+    },
+    {
+      "path": "thermador_podmc301w/source/original/PODMC301W_2D.rfa",
+      "sha256": "bd403d9db7df909bc07e50d8cd4856d4730023c3ead4711bbcacdf9c2e4bbcc5"
+    }
+  ],
+  "validation": "thermador_podmc301w/validation.json",
+  "previews": [
+    "thermador_podmc301w/views/rework_r1/oblique - 3D View - oblique.png",
+    "thermador_podmc301w/views/rework_r1/front - 3D View - front.png",
+    "thermador_podmc301w/views/rework_r1/side - 3D View - side.png"
+  ],
+  "revision": "Custom_R1",
+  "build_method": "native_custom_new_family",
+  "dimension_gate": true,
+  "dimension_gate_scope": "overall",
+  "native_gates_pass": true,
+  "replacement_reason": "Orchestrator round 1: exact-identity manufacturer working family fails the <=1 mm complete overall dimension gate. New native custom geometry replaces the working selection; OEM originals and prior working RFA remain preserved.",
+  "superseded_working_rfa": {
+    "path": "thermador_podmc301w/thermador_podmc301w_R2025.rfa",
+    "sha256": "2c5c54e83c38b0cdc2619f61ce089b47df09b5f52bf4f7bcf89ca3585b1f0ae5",
+    "status": "DOWNLOADED"
+  },
+  "source_pdf_sha256": "994ef34139be60f0169cc5853180d90ad0c0f25d9977824ddb54cf7c164f41b8",
+  "source_page": 1,
+  "custom_build_entry": "thermador_podmc301w/source/build.py",
+  "build_support": [
+    "rework_round1/native_rebuild.py",
+    "rework_round1/validate_native.py",
+    "family_common.py"
+  ],
+  "validation_native_record": "thermador_podmc301w/source/rework_r1/validation.json",
+  "validation_sha256": "15e0f77c53c07eb450f1dd49450c8347a6850ea5d272bc001daea635bcacfcca"
+}

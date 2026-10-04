@@ -1,0 +1,234 @@
+{
+  "key": "BT0734816-BNX",
+  "model": "BT0734816-BNX",
+  "manufacturer": "Brizo",
+  "type_name": "BT0734816-BNX - Brilliance Black Onyx -  Black",
+  "basename": "Brizo_BT0734816-BNX_R2025",
+  "name": "48-inch nominal reversible linear drain trim",
+  "host": "floor",
+  "configured_dimensions_in": [
+    45.625,
+    2.6875,
+    1.0625
+  ],
+  "materials": {
+    "Finish": {
+      "rgb": [
+        58,
+        60,
+        62
+      ],
+      "gloss": 0.92,
+      "reflectivity": 0.72,
+      "class": "Metal"
+    },
+    "Detail": {
+      "rgb": [
+        24,
+        25,
+        26
+      ],
+      "gloss": 0.17,
+      "reflectivity": 0.04,
+      "class": "Plastic"
+    },
+    "Graphite": {
+      "rgb": [
+        64,
+        67,
+        69
+      ],
+      "gloss": 0.36,
+      "reflectivity": 0.16,
+      "class": "Glass"
+    },
+    "Ceramic": {
+      "rgb": [
+        245,
+        245,
+        241
+      ],
+      "gloss": 0.86,
+      "reflectivity": 0.22,
+      "class": "Ceramic"
+    },
+    "Brass": {
+      "rgb": [
+        160,
+        124,
+        64
+      ],
+      "gloss": 0.4,
+      "reflectivity": 0.38,
+      "class": "Metal"
+    },
+    "Green": {
+      "rgb": [
+        31,
+        113,
+        66
+      ],
+      "gloss": 0.18,
+      "reflectivity": 0.05,
+      "class": "Plastic"
+    },
+    "Gray": {
+      "rgb": [
+        131,
+        132,
+        130
+      ],
+      "gloss": 0.32,
+      "reflectivity": 0.12,
+      "class": "Plastic"
+    }
+  },
+  "geometry": [
+    {
+      "name": "Front narrow frame",
+      "kind": "box",
+      "bounds": [
+        -22.8125,
+        -1.34375,
+        -1.0625,
+        22.8125,
+        -1.24375,
+        0
+      ],
+      "radius": 0,
+      "material": "Finish"
+    },
+    {
+      "name": "Back narrow frame",
+      "kind": "box",
+      "bounds": [
+        -22.8125,
+        1.24375,
+        -1.0625,
+        22.8125,
+        1.34375,
+        0
+      ],
+      "radius": 0,
+      "material": "Finish"
+    },
+    {
+      "name": "Left end frame",
+      "kind": "box",
+      "bounds": [
+        -22.8125,
+        -1.26375,
+        -1.0625,
+        -22.7125,
+        1.26375,
+        0
+      ],
+      "radius": 0,
+      "material": "Finish"
+    },
+    {
+      "name": "Right end frame",
+      "kind": "box",
+      "bounds": [
+        22.7125,
+        -1.26375,
+        -1.0625,
+        22.8125,
+        1.26375,
+        0
+      ],
+      "radius": 0,
+      "material": "Finish"
+    },
+    {
+      "name": "Solid reversible cover",
+      "kind": "box",
+      "bounds": [
+        -22.5925,
+        -1.11375,
+        -0.17,
+        22.5925,
+        1.11375,
+        -0.035
+      ],
+      "radius": 0.07,
+      "material": "Finish"
+    },
+    {
+      "name": "Support tab -18",
+      "kind": "box",
+      "bounds": [
+        -18.3,
+        -0.65,
+        -1.0625,
+        -17.7,
+        0.65,
+        -0.16
+      ],
+      "radius": 0,
+      "material": "Finish"
+    },
+    {
+      "name": "Support tab 0",
+      "kind": "box",
+      "bounds": [
+        -0.3,
+        -0.65,
+        -1.0625,
+        0.3,
+        0.65,
+        -0.16
+      ],
+      "radius": 0,
+      "material": "Finish"
+    },
+    {
+      "name": "Support tab 18",
+      "kind": "box",
+      "bounds": [
+        17.7,
+        -0.65,
+        -1.0625,
+        18.3,
+        0.65,
+        -0.16
+      ],
+      "radius": 0,
+      "material": "Finish"
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://media.brizo.com/SpecSheet/BSP-B-BT0732416%20Rev%20B.pdf",
+      "document": "Brizo reversible linear drain dimensions, BSP-B-BT0732416 Rev B",
+      "page": 1,
+      "visual_review_method": "Manufacturer web PDF screenshot"
+    }
+  ],
+  "dimension_authority": [
+    "Actual trim 45.625 x 2.6875 in; minimum height 1.0625 in; maximum adjustable height 1.375 in."
+  ],
+  "limitations": [
+    "Solid metal side is shown; the reversible tile insert option is not populated with a tile.",
+    "Minimum-height fixed pose; frame spacers and small drain removal tool omitted.",
+    "The separate rough BR73480 and optional wall edge are not part of this trim family.",
+    "Independent visualization reconstruction with fixed product dimensions and editable native materials.",
+    "Small fillets, seams, nozzle details and optical material response are inferred where the manufacturer does not dimension them.",
+    "No internal hydraulic performance, MEP connectors, fabrication tolerances or procurement substitutions are implied."
+  ],
+  "anchors": [
+    {
+      "label": "Trim length",
+      "parts": [
+        "Front narrow frame"
+      ],
+      "axis": 0,
+      "nominal_in": 45.625
+    }
+  ],
+  "all_overall_dimensions_authoritative": true,
+  "rfa_search": {
+    "result": "No acceptable no-account RFA recovered",
+    "evidence": "_research/BT0734816-BNX/sources.json"
+  }
+}

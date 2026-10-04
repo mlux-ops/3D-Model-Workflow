@@ -1,0 +1,1127 @@
+{
+  "generated_utc": "2026-10-02T14:36:37.480895+00:00",
+  "inventory_rows": 27,
+  "unique_models": 21,
+  "status_counts": {
+    "BUILT_WITH_LIMITATIONS": 9,
+    "DOWNLOADED": 18
+  },
+  "native_saved_reopened_placed": 21,
+  "full_dimension_pass_models": [
+    "lg_wm4000hba",
+    "lg_dlgx4001b",
+    "ge_gfw550ssnww",
+    "ge_gfd55gssnww",
+    "summit_sdhwc98pnr"
+  ],
+  "body_dimension_pass_models": [
+    "miele_km3054_1g",
+    "tradewind_i32363rc"
+  ],
+  "dimension_hold_models": [
+    "miele_h7280bp",
+    "miele_h7270bm",
+    "miele_g5051scvi",
+    "miele_kwt6722is",
+    "miele_kwtus7172f",
+    "miele_kfmc3858fd",
+    "thermador_t18iw905sp",
+    "thermador_t42it100np",
+    "thermador_t24ur905rp",
+    "thermador_mc30wp",
+    "thermador_podmc301w",
+    "thermador_pcg486wd",
+    "thermador_prd48wisgu",
+    "thermador_wd30w"
+  ],
+  "identity_hold_row_ids": [
+    4451428673716100,
+    6703228487401348,
+    7647580173959044
+  ],
+  "delivery_ready": false,
+  "rows": [
+    {
+      "row_id": 3292695531945860,
+      "item": "LG 27 Inch Wide 4.5 Cu. Ft. Front Load Washer and 7.4 Cu. Ft. Front Load Gas Dryer Laundry Pair with ColdWash and TrueSteam",
+      "model_slugs": [
+        "lg_wm4000hba",
+        "lg_dlgx4001b"
+      ],
+      "status": "BUILT_WITH_LIMITATIONS",
+      "agent_ignore": false,
+      "rfa_paths": [
+        "lg_wm4000hba/lg_wm4000hba_R2025.rfa",
+        "lg_dlgx4001b/lg_dlgx4001b_R2025.rfa"
+      ],
+      "gate_results": [
+        "WM4000HBA: open/save/reopen/category/place/preview PASS; fit PASS (overall); material 5/5; warnings 0",
+        "DLGX4001B: open/save/reopen/category/place/preview PASS; fit PASS (overall); material 5/5; warnings 0"
+      ],
+      "note": "One row is a washer/dryer pair: both separate native families are provided. Black Steel follows the B model suffix.",
+      "identity_hold": false,
+      "notes_path": "WM4000HBA-DLGX4001B__3292695531945860/NOTES.md"
+    },
+    {
+      "row_id": 7384660666023812,
+      "item": "Miele 22\" Built-In Panel Ready Wine Column",
+      "model_slugs": [
+        "miele_kwt6722is"
+      ],
+      "status": "DOWNLOADED",
+      "agent_ignore": false,
+      "rfa_paths": [
+        "miele_kwt6722is/miele_kwt6722is_R2025.rfa"
+      ],
+      "gate_results": [
+        "KWT 6722 iS: open/save/reopen/category/place/preview PASS; fit HOLD (full native geometry versus published appliance envelope); material 0/0; warnings 0"
+      ],
+      "note": "Exact specified or linked model retained; see canonical notes for measured fit and finish limits.",
+      "identity_hold": false,
+      "notes_path": "KWT_6722_iS__7384660666023812/NOTES.md"
+    },
+    {
+      "row_id": 3328172767117188,
+      "item": "Miele 24\" ADA Panel Ready Dishwasher",
+      "model_slugs": [
+        "miele_g5051scvi"
+      ],
+      "status": "DOWNLOADED",
+      "agent_ignore": false,
+      "rfa_paths": [
+        "miele_g5051scvi/miele_g5051scvi_R2025.rfa"
+      ],
+      "gate_results": [
+        "G 5051 SCVi ADA: open/save/reopen/category/place/preview PASS; fit HOLD (full native geometry versus published appliance envelope); material 0/0; warnings 0"
+      ],
+      "note": "Exact specified or linked model retained; see canonical notes for measured fit and finish limits.",
+      "identity_hold": false,
+      "notes_path": "G_5051_SCVi_ADA__3328172767117188/NOTES.md"
+    },
+    {
+      "row_id": 4418595438788484,
+      "item": "Miele 30\" Convection Wall Oven Black",
+      "model_slugs": [
+        "miele_h7280bp"
+      ],
+      "status": "DOWNLOADED",
+      "agent_ignore": false,
+      "rfa_paths": [
+        "miele_h7280bp/miele_h7280bp_R2025.rfa"
+      ],
+      "gate_results": [
+        "H 7280 BP: open/save/reopen/category/place/preview PASS; fit HOLD (full native geometry versus published appliance envelope); material 0/0; warnings 0"
+      ],
+      "note": "Exact specified or linked model retained; see canonical notes for measured fit and finish limits.",
+      "identity_hold": false,
+      "notes_path": "H_7280_BP__4418595438788484/NOTES.md"
+    },
+    {
+      "row_id": 8816514970877828,
+      "item": "Miele 30\" Wall Speed Oven and Microwave Black",
+      "model_slugs": [
+        "miele_h7270bm"
+      ],
+      "status": "DOWNLOADED",
+      "agent_ignore": false,
+      "rfa_paths": [
+        "miele_h7270bm/miele_h7270bm_R2025.rfa"
+      ],
+      "gate_results": [
+        "H 7270 BM: open/save/reopen/category/place/preview PASS; fit HOLD (full native geometry versus published appliance envelope); material 0/0; warnings 0"
+      ],
+      "note": "Exact specified or linked model retained; see canonical notes for measured fit and finish limits.",
+      "identity_hold": false,
+      "notes_path": "H_7270_BM__8816514970877828/NOTES.md"
+    },
+    {
+      "row_id": 6670395252473732,
+      "item": "Miele 36\" Glass 5 Burner Cook Top | CORRECTION 2026-10-01: current Wieland fixture deck specifies Miele KM 3054-1 G Gas-on-Glass Cooktop; live $2,511 price originated from ABT's KM 3054-1 G option.",
+      "model_slugs": [
+        "miele_km3054_1g"
+      ],
+      "status": "BUILT_WITH_LIMITATIONS",
+      "agent_ignore": false,
+      "rfa_paths": [
+        "miele_km3054_1g/miele_km3054_1g_R2025.rfa"
+      ],
+      "gate_results": [
+        "KM 3054-1 G: open/save/reopen/category/place/preview PASS; fit PASS (body); material 3/3; warnings 0"
+      ],
+      "note": "The supplied correction KM 3054-1 G governs the older KM2355G row wording.",
+      "identity_hold": false,
+      "notes_path": "KM_2355_G_CORRECTION_2026-10-01_KM_3054-1_G__6670395252473732/NOTES.md"
+    },
+    {
+      "row_id": 2166795625103236,
+      "item": "Miele 42\" Built-In Panel Ready Fridge with Ice Drawer and Pull Out Bottom Freezer",
+      "model_slugs": [
+        "miele_kfmc3858fd"
+      ],
+      "status": "DOWNLOADED",
+      "agent_ignore": false,
+      "rfa_paths": [
+        "miele_kfmc3858fd/miele_kfmc3858fd_R2025.rfa"
+      ],
+      "gate_results": [
+        "KFMC 3858 FD: open/save/reopen/category/place/preview PASS; fit HOLD (full native geometry versus published appliance envelope); material 0/0; warnings 0"
+      ],
+      "note": "Exact specified or linked model retained; see canonical notes for measured fit and finish limits.",
+      "identity_hold": false,
+      "notes_path": "KFMC_3858_FD__2166795625103236/NOTES.md"
+    },
+    {
+      "row_id": 7796295159316356,
+      "item": "Trade-Wind I3200 Series 390 CFM 36 Inch Wide Range Hood Insert with 3 Fan Speeds and Remote Control",
+      "model_slugs": [
+        "tradewind_i32363rc"
+      ],
+      "status": "BUILT_WITH_LIMITATIONS",
+      "agent_ignore": false,
+      "rfa_paths": [
+        "tradewind_i32363rc/tradewind_i32363rc_R2025.rfa"
+      ],
+      "gate_results": [
+        "I32363RC: open/save/reopen/category/place/preview PASS; fit PASS (body); material 3/3; warnings 0"
+      ],
+      "note": "The explicit Trade-Wind I32363RC model governs the conflicting Zephyr vendor/description text.",
+      "identity_hold": false,
+      "notes_path": "I32363RC__7796295159316356/NOTES.md"
+    },
+    {
+      "row_id": 8923394272198532,
+      "item": "GE 28 Inch Wide 4.8 Cu Ft. Front Loading Washing Machines Washer with UltraFresh Vent System with OdorBlock and Sanitize",
+      "model_slugs": [
+        "ge_gfw550ssnww"
+      ],
+      "status": "BUILT_WITH_LIMITATIONS",
+      "agent_ignore": false,
+      "rfa_paths": [
+        "ge_gfw550ssnww/ge_gfw550ssnww_R2025.rfa"
+      ],
+      "gate_results": [
+        "GFW550SSNWW: open/save/reopen/category/place/preview PASS; fit PASS (overall); material 5/5; warnings 0"
+      ],
+      "note": "Exact specified or linked model retained; see canonical notes for measured fit and finish limits.",
+      "identity_hold": false,
+      "notes_path": "GFW550SSNWW__8923394272198532/NOTES.md"
+    },
+    {
+      "row_id": 5407997394747268,
+      "item": "GE Long Vent 7.8 cu. ft. Capacity Smart Electric Dryer with Sanitize Cycle + GE 28 Inch Wide 4.8 Cu Ft. Front Loading Washing Machine | CORRECTION 2026-10-01: Final project appliance email requires GAS dryers; Novak & Parker 7/7/26 package specifies GE GFD55GSSNWW gas dryer with GFW550SSNWW washer.",
+      "model_slugs": [
+        "ge_gfd55gssnww"
+      ],
+      "status": "BUILT_WITH_LIMITATIONS",
+      "agent_ignore": false,
+      "rfa_paths": [
+        "ge_gfd55gssnww/ge_gfd55gssnww_R2025.rfa"
+      ],
+      "gate_results": [
+        "GFD55GSSNWW: open/save/reopen/category/place/preview PASS; fit PASS (overall); material 5/5; warnings 0"
+      ],
+      "note": "The supplied correction GFD55GSSNWW gas dryer governs the obsolete electric-model wording.",
+      "identity_hold": false,
+      "notes_path": "GFV55ESSNWW_CORRECTION_2026-10-01_GFD55GSSNWW_gas_dryer_per_final_7_7_26_Novak_P__5407997394747268/NOTES.md"
+    },
+    {
+      "row_id": 4443914724376452,
+      "item": "LG 27 Inch Wide 5 Cu. Ft. Front Load Washer and 7.4 Cu. Ft. Front Load Gas Dryer Laundry Pair with TurboWash 360",
+      "model_slugs": [
+        "lg_wm4000hba",
+        "lg_dlgx4001b"
+      ],
+      "status": "BUILT_WITH_LIMITATIONS",
+      "agent_ignore": false,
+      "rfa_paths": [
+        "lg_wm4000hba/lg_wm4000hba_R2025.rfa",
+        "lg_dlgx4001b/lg_dlgx4001b_R2025.rfa"
+      ],
+      "gate_results": [
+        "WM4000HBA: open/save/reopen/category/place/preview PASS; fit PASS (overall); material 5/5; warnings 0",
+        "DLGX4001B: open/save/reopen/category/place/preview PASS; fit PASS (overall); material 5/5; warnings 0"
+      ],
+      "note": "One row is a washer/dryer pair. The stated WM4000HBA model controls the conflicting 5.0-cu-ft wording; no alternate washer was substituted.",
+      "identity_hold": false,
+      "notes_path": "WM4000HBA-DLGX4001B__4443914724376452/NOTES.md"
+    },
+    {
+      "row_id": 904397767376772,
+      "item": "Miele 24\" ADA Panel Ready Dishwasher",
+      "model_slugs": [
+        "miele_g5051scvi"
+      ],
+      "status": "DOWNLOADED",
+      "agent_ignore": false,
+      "rfa_paths": [
+        "miele_g5051scvi/miele_g5051scvi_R2025.rfa"
+      ],
+      "gate_results": [
+        "G 5051 SCVi ADA: open/save/reopen/category/place/preview PASS; fit HOLD (full native geometry versus published appliance envelope); material 0/0; warnings 0"
+      ],
+      "note": "Exact specified or linked model retained; see canonical notes for measured fit and finish limits.",
+      "identity_hold": false,
+      "notes_path": "G_5051_SCVi_ADA__904397767376772/NOTES.md"
+    },
+    {
+      "row_id": 4666245805309828,
+      "item": "Miele 24\" Under Counter Bev. Cooler",
+      "model_slugs": [
+        "miele_kwtus7172f"
+      ],
+      "status": "DOWNLOADED",
+      "agent_ignore": false,
+      "rfa_paths": [
+        "miele_kwtus7172f/miele_kwtus7172f_R2025.rfa"
+      ],
+      "gate_results": [
+        "KWTUS 7172 F: open/save/reopen/category/place/preview PASS; fit HOLD (full native geometry versus published appliance envelope); material 0/0; warnings 0"
+      ],
+      "note": "Exact specified or linked model retained; see canonical notes for measured fit and finish limits.",
+      "identity_hold": false,
+      "notes_path": "KWTUS7172F__4666245805309828/NOTES.md"
+    },
+    {
+      "row_id": 3025963735121796,
+      "item": "Miele 30\" Convection Wall Oven Obsidian Black",
+      "model_slugs": [
+        "miele_h7280bp"
+      ],
+      "status": "DOWNLOADED",
+      "agent_ignore": false,
+      "rfa_paths": [
+        "miele_h7280bp/miele_h7280bp_R2025.rfa"
+      ],
+      "gate_results": [
+        "H 7280 BP: open/save/reopen/category/place/preview PASS; fit HOLD (full native geometry versus published appliance envelope); material 0/0; warnings 0"
+      ],
+      "note": "Exact specified or linked model retained; see canonical notes for measured fit and finish limits.",
+      "identity_hold": false,
+      "notes_path": "H_7280_BP__3025963735121796/NOTES.md"
+    },
+    {
+      "row_id": 6403663455649668,
+      "item": "Miele 30\" Wall Speed Oven and Microwave Obsidian Black",
+      "model_slugs": [
+        "miele_h7270bm"
+      ],
+      "status": "DOWNLOADED",
+      "agent_ignore": false,
+      "rfa_paths": [
+        "miele_h7270bm/miele_h7270bm_R2025.rfa"
+      ],
+      "gate_results": [
+        "H 7270 BM: open/save/reopen/category/place/preview PASS; fit HOLD (full native geometry versus published appliance envelope); material 0/0; warnings 0"
+      ],
+      "note": "Exact specified or linked model retained; see canonical notes for measured fit and finish limits.",
+      "identity_hold": false,
+      "notes_path": "H_7270_BM__6403663455649668/NOTES.md"
+    },
+    {
+      "row_id": 7831772394487684,
+      "item": "Miele 36\" Glass 5 Burner Cook Top | CORRECTION 2026-10-01: current Wieland fixture deck specifies Miele KM 3054-1 G Gas-on-Glass Cooktop; live $2,511 price originated from ABT's KM 3054-1 G option.",
+      "model_slugs": [
+        "miele_km3054_1g"
+      ],
+      "status": "BUILT_WITH_LIMITATIONS",
+      "agent_ignore": false,
+      "rfa_paths": [
+        "miele_km3054_1g/miele_km3054_1g_R2025.rfa"
+      ],
+      "gate_results": [
+        "KM 3054-1 G: open/save/reopen/category/place/preview PASS; fit PASS (body); material 3/3; warnings 0"
+      ],
+      "note": "The supplied correction KM 3054-1 G governs the older KM2355G row wording.",
+      "identity_hold": false,
+      "notes_path": "KM_2355_G_CORRECTION_2026-10-01_KM_3054-1_G__7831772394487684/NOTES.md"
+    },
+    {
+      "row_id": 1900063828279172,
+      "item": "Miele 42\" Built-In Panel Ready Fridge with Ice Drawer and Pull Out Bottom Freezer",
+      "model_slugs": [
+        "miele_kfmc3858fd"
+      ],
+      "status": "DOWNLOADED",
+      "agent_ignore": false,
+      "rfa_paths": [
+        "miele_kfmc3858fd/miele_kfmc3858fd_R2025.rfa"
+      ],
+      "gate_results": [
+        "KFMC 3858 FD: open/save/reopen/category/place/preview PASS; fit HOLD (full native geometry versus published appliance envelope); material 0/0; warnings 0"
+      ],
+      "note": "Exact specified or linked model retained; see canonical notes for measured fit and finish limits.",
+      "identity_hold": false,
+      "notes_path": "KFMC_3858_FD__1900063828279172/NOTES.md"
+    },
+    {
+      "row_id": 162646177939332,
+      "item": "Trade-Wind I3200 Series 390 CFM 36 Inch Wide Range Hood Insert with 3 Fan Speeds and Remote Control",
+      "model_slugs": [
+        "tradewind_i32363rc"
+      ],
+      "status": "BUILT_WITH_LIMITATIONS",
+      "agent_ignore": false,
+      "rfa_paths": [
+        "tradewind_i32363rc/tradewind_i32363rc_R2025.rfa"
+      ],
+      "gate_results": [
+        "I32363RC: open/save/reopen/category/place/preview PASS; fit PASS (body); material 3/3; warnings 0"
+      ],
+      "note": "The explicit Trade-Wind I32363RC model governs the conflicting Zephyr vendor/description text.",
+      "identity_hold": false,
+      "notes_path": "I32363RC__162646177939332/NOTES.md"
+    },
+    {
+      "row_id": 6521680267116420,
+      "item": "24 Inch Wide Built-In Dual Zone Wine Cellar With 18 Inch Shallow Depth, Stainless Steel Interior, Lock And Digital Controls: Panel Ready, Right Hinge",
+      "model_slugs": [
+        "summit_sdhwc98pnr"
+      ],
+      "status": "BUILT_WITH_LIMITATIONS",
+      "agent_ignore": true,
+      "rfa_paths": [
+        "summit_sdhwc98pnr/summit_sdhwc98pnr_R2025.rfa"
+      ],
+      "gate_results": [
+        "SDHWC98PNR: open/save/reopen/category/place/preview PASS; fit PASS (overall); material 5/5; warnings 0"
+      ],
+      "note": "Exact specified or linked model retained; see canonical notes for measured fit and finish limits.",
+      "identity_hold": false,
+      "notes_path": "24_Inch_Wide_Built-In_Dual_Zone_Wine_Cellar_With_18_Inch_Shallow_Depth_Stainless__6521680267116420/NOTES.md"
+    },
+    {
+      "row_id": 2705397813673860,
+      "item": "Thermador 18 Inch Wide Built In Wine Fridge",
+      "model_slugs": [
+        "thermador_t18iw905sp"
+      ],
+      "status": "DOWNLOADED",
+      "agent_ignore": true,
+      "rfa_paths": [
+        "thermador_t18iw905sp/thermador_t18iw905sp_R2025.rfa"
+      ],
+      "gate_results": [
+        "T18IW905SP: open/save/reopen/category/place/preview PASS; fit HOLD (full native geometry versus published appliance envelope); material 4/5; warnings 0"
+      ],
+      "note": "ASSUMPTION: abbreviated T18IW905S link resolves to the official panel-ready T18IW905SP model. The full suffix is a working selection requiring design confirmation.",
+      "identity_hold": false,
+      "notes_path": "Thermador_18_Inch_Wide_Built_In_Wine_Fridge__2705397813673860/NOTES.md"
+    },
+    {
+      "row_id": 6703228487401348,
+      "item": "Thermador 30 Inch Wide Electric Warming Drawer with SoftClose\u00ae",
+      "model_slugs": [
+        "thermador_t24ur905rp"
+      ],
+      "status": "DOWNLOADED",
+      "agent_ignore": true,
+      "rfa_paths": [
+        "thermador_t24ur905rp/thermador_t24ur905rp_R2025.rfa"
+      ],
+      "gate_results": [
+        "T24UR905RP: open/save/reopen/category/place/preview PASS; fit HOLD (full native geometry versus published appliance envelope); material 0/2; warnings 0"
+      ],
+      "note": "ASSUMPTION / IDENTITY HOLD: the exact T24UR905RP product URL governs the working family. It is a 24-inch undercounter refrigerator; the row says 30-inch warming drawer. These are different appliances.",
+      "identity_hold": true,
+      "notes_path": "Thermador_30_Inch_Wide_Electric_Warming_Drawer_with_SoftClose__6703228487401348/NOTES.md"
+    },
+    {
+      "row_id": 7829128394243972,
+      "item": "Thermador Freedom 42 Inch Wide 23.1 Cu. Ft. Energy Star Certified Panel Ready French Door Refrigerator with ThermaFresh\u00ae Pro",
+      "model_slugs": [
+        "thermador_t42it100np"
+      ],
+      "status": "DOWNLOADED",
+      "agent_ignore": true,
+      "rfa_paths": [
+        "thermador_t42it100np/thermador_t42it100np_R2025.rfa"
+      ],
+      "gate_results": [
+        "T42IT100NP: open/save/reopen/category/place/preview PASS; fit HOLD (full native geometry versus published appliance envelope); material 0/2; warnings 0"
+      ],
+      "note": "Exact specified or linked model retained; see canonical notes for measured fit and finish limits.",
+      "identity_hold": false,
+      "notes_path": "Thermador_Freedom_42_Inch_Wide_23.1_Cu._Ft._Energy_Star_Certified_Panel_Ready_Fr__7829128394243972/NOTES.md"
+    },
+    {
+      "row_id": 2018080639745924,
+      "item": "Thermador Professional Series 30 Inch Wide 1.6 Cu. Ft. Single Electric Speed Oven",
+      "model_slugs": [
+        "thermador_mc30wp"
+      ],
+      "status": "DOWNLOADED",
+      "agent_ignore": true,
+      "rfa_paths": [
+        "thermador_mc30wp/thermador_mc30wp_R2025.rfa"
+      ],
+      "gate_results": [
+        "MC30WP: open/save/reopen/category/place/preview PASS; fit HOLD (full native geometry versus published appliance envelope); material 6/6; warnings 0"
+      ],
+      "note": "ASSUMPTION: MC30WP is the manufacturer Professional-series 30-inch 1.6-cu-ft speed oven matching the description. The row has no exact SKU or URL.",
+      "identity_hold": false,
+      "notes_path": "Thermador_Professional_Series_30_Inch_Wide_1.6_Cu._Ft._Single_Electric_Speed_Ove__2018080639745924/NOTES.md"
+    },
+    {
+      "row_id": 2199628860030852,
+      "item": "Thermador Professional Series 30 Inch Wide 6.1 Cu. Ft. Combination Electric Oven with Speed Oven",
+      "model_slugs": [
+        "thermador_podmc301w"
+      ],
+      "status": "DOWNLOADED",
+      "agent_ignore": true,
+      "rfa_paths": [
+        "thermador_podmc301w/thermador_podmc301w_R2025.rfa"
+      ],
+      "gate_results": [
+        "PODMC301W: open/save/reopen/category/place/preview PASS; fit HOLD (full native geometry versus published appliance envelope); material 4/4; warnings 1"
+      ],
+      "note": "Exact specified or linked model retained; see canonical notes for measured fit and finish limits.",
+      "identity_hold": false,
+      "notes_path": "Thermador_Professional_Series_30_Inch_Wide_6.1_Cu._Ft._Combination_Electric_Oven__2199628860030852/NOTES.md"
+    },
+    {
+      "row_id": 7647580173959044,
+      "item": "Thermador Professional Series 30 Inch Wide 6.1 Cu. Ft. Double Electric Oven with 1.6 Cu. Ft. Triple Speed Oven",
+      "model_slugs": [
+        "thermador_prd48wisgu"
+      ],
+      "status": "DOWNLOADED",
+      "agent_ignore": true,
+      "rfa_paths": [
+        "thermador_prd48wisgu/thermador_prd48wisgu_R2025.rfa"
+      ],
+      "gate_results": [
+        "PRD48WISGU: open/save/reopen/category/place/preview PASS; fit HOLD (full native geometry versus published appliance envelope); material 6/6; warnings 0"
+      ],
+      "note": "ASSUMPTION / IDENTITY HOLD: exact URL model PRD48WISGU governs the working family. It is a 48-inch range with steam and induction; the row describes a 30-inch double/triple oven.",
+      "identity_hold": true,
+      "notes_path": "Thermador_Professional_Series_30_Inch_Wide_6.1_Cu._Ft._Double_Electric_Oven_with__7647580173959044/NOTES.md"
+    },
+    {
+      "row_id": 8955028301086596,
+      "item": "Thermador Professional Series 48 Inch Wide 6 Burner Gas Rangetop with Griddle",
+      "model_slugs": [
+        "thermador_pcg486wd"
+      ],
+      "status": "DOWNLOADED",
+      "agent_ignore": true,
+      "rfa_paths": [
+        "thermador_pcg486wd/thermador_pcg486wd_R2025.rfa"
+      ],
+      "gate_results": [
+        "PCG486WD: open/save/reopen/category/place/preview PASS; fit HOLD (full native geometry versus published appliance envelope); material 3/3; warnings 0"
+      ],
+      "note": "Exact specified or linked model retained; see canonical notes for measured fit and finish limits.",
+      "identity_hold": false,
+      "notes_path": "Thermador_Professional_Series_48_Inch_Wide_6_Burner_Gas_Rangetop_with_Griddle__8955028301086596/NOTES.md"
+    },
+    {
+      "row_id": 4451428673716100,
+      "item": "Zephyr Monsoon Mini II 290 - 600 CFM 47 Inch Wide Insert Range Hood with LumiLight LED Lighting",
+      "model_slugs": [
+        "thermador_wd30w"
+      ],
+      "status": "DOWNLOADED",
+      "agent_ignore": true,
+      "rfa_paths": [
+        "thermador_wd30w/thermador_wd30w_R2025.rfa"
+      ],
+      "gate_results": [
+        "WD30W: open/save/reopen/category/place/preview PASS; fit HOLD (full native geometry versus published appliance envelope); material 2/2; warnings 0"
+      ],
+      "note": "ASSUMPTION / IDENTITY HOLD: exact URL and manufacturer indicate Thermador WD30W warming drawer; the row description instead identifies a Zephyr 47-inch hood. The family is explicitly WD30W, not a hood.",
+      "identity_hold": true,
+      "notes_path": "Zephyr_Monsoon_Mini_II_290_-_600_CFM_47_Inch_Wide_Insert_Range_Hood_with_LumiLig__4451428673716100/NOTES.md"
+    }
+  ],
+  "canonical_models": [
+    {
+      "model": "H 7280 BP",
+      "slug": "miele_h7280bp",
+      "status": "DOWNLOADED",
+      "rfa": "miele_h7280bp/miele_h7280bp_R2025.rfa",
+      "rfa_bytes": 4038656,
+      "rfa_sha256": "8ee511e3f74f0c28239cc513154e56fb8a5a1868dfad5a52637a0f95ccf196ea",
+      "row_ids": [
+        4418595438788484,
+        3025963735121796
+      ],
+      "source_urls": [
+        "https://www.mieleusa.com/product/11968200/30-inch-convection-oven-h-7280-bp-obsidian-black",
+        "https://media.miele.com/downloads/1d/33/01_C7F12828C0C31FE182DC54A63F5A1D33.zip",
+        "https://media.miele.com/downloads/n-/us/FS_11968200_USE_US-en-US.pdf",
+        "https://www.mieleusa.com/product/11968200/30-oven-h-7280-bp-obsidian-black"
+      ],
+      "original_rfas": [
+        {
+          "path": "miele_h7280bp/source/original/11968200_USA_H7280BP_OBSW.rfa",
+          "sha256": "8dac625d202af0daf8892a50eec4d104f7fa0b4df798f9cc5979e0613e17f655"
+        }
+      ],
+      "validation": "miele_h7280bp/validation.json",
+      "previews": [
+        "miele_h7280bp/views/placed_oblique - 3D View - placed_oblique.png"
+      ]
+    },
+    {
+      "model": "H 7270 BM",
+      "slug": "miele_h7270bm",
+      "status": "DOWNLOADED",
+      "rfa": "miele_h7270bm/miele_h7270bm_R2025.rfa",
+      "rfa_bytes": 4042752,
+      "rfa_sha256": "4f9956271a11bf762ba499664915314ce8b19d790dd946eaf7e8a36ea5f50ac7",
+      "row_ids": [
+        8816514970877828,
+        6403663455649668
+      ],
+      "source_urls": [
+        "https://www.mieleusa.com/product/11968190/30-speed-oven-h-7270-bm-obsidian-black",
+        "https://media.miele.com/downloads/8b/20/02_C7F138387FFA1FD189C793AEE9B58B20.zip",
+        "https://media.miele.com/downloads/n-/us/FS_11968190_USE_US-en-US.pdf"
+      ],
+      "original_rfas": [
+        {
+          "path": "miele_h7270bm/source/original/11968190_USA_H7270BM_OBSW.rfa",
+          "sha256": "d1e3464c547fdfa518b151ab4c8f25fdacd57d926d4cf9d9ab6e90881af76769"
+        }
+      ],
+      "validation": "miele_h7270bm/validation.json",
+      "previews": [
+        "miele_h7270bm/views/placed_oblique - 3D View - placed_oblique.png"
+      ]
+    },
+    {
+      "model": "G 5051 SCVi ADA",
+      "slug": "miele_g5051scvi",
+      "status": "DOWNLOADED",
+      "rfa": "miele_g5051scvi/miele_g5051scvi_R2025.rfa",
+      "rfa_bytes": 6287360,
+      "rfa_sha256": "27391211e2833b4185affafe8f8bf49126ed9e20b216479b254294c4227ba10f",
+      "row_ids": [
+        3328172767117188,
+        904397767376772
+      ],
+      "source_urls": [
+        "https://www.mieleusa.com/product/11636710/fully-integrated-ada-dishwasher-g-5051-scvi-active-stainless-steel",
+        "https://media.miele.com/downloads/a5/52/10_70A8A51285B71FE1ABFC9D443DCBA552.zip",
+        "https://media.miele.com/downloads/n-/us/FS_11636710_USE_US-en-US.pdf",
+        "https://www.mieleusa.com/product/11636710/fully-integrated-dishwasher-g-5051-scvi-active-stainless-steel"
+      ],
+      "original_rfas": [
+        {
+          "path": "miele_g5051scvi/source/original/11636710_USA_G5051SCVi_ED.rfa",
+          "sha256": "e1a4d3c5cf00f4c4b942ac69ad30a98d3bc778cbb678cc65144a2ac4e78073fc"
+        }
+      ],
+      "validation": "miele_g5051scvi/validation.json",
+      "previews": [
+        "miele_g5051scvi/views/placed_oblique - 3D View - placed_oblique.png"
+      ]
+    },
+    {
+      "model": "KWT 6722 iS",
+      "slug": "miele_kwt6722is",
+      "status": "DOWNLOADED",
+      "rfa": "miele_kwt6722is/miele_kwt6722is_R2025.rfa",
+      "rfa_bytes": 5189632,
+      "rfa_sha256": "b6d424fe8d51979c0b5f753df9e4485767182ab63fa86aba7f7677e7bd500318",
+      "row_ids": [
+        7384660666023812
+      ],
+      "source_urls": [
+        "https://www.mieleusa.com/product/11329860/24-built-in-wine-refrigerator-kwt-6722-is",
+        "https://media.miele.com/downloads/a5/52/05_70A8A51285B71FE1ABFA89BF1ABCA552.zip",
+        "https://media.miele.com/downloads/n-/us/FS_11329860_USE_US-en-US.pdf"
+      ],
+      "original_rfas": [
+        {
+          "path": "miele_kwt6722is/source/original/11329860_USA_KWT6722iS.rfa",
+          "sha256": "8ea7195e152445552c46f6e97f72aecafe2ff14be4130a14c520c34e38f1db07"
+        }
+      ],
+      "validation": "miele_kwt6722is/validation.json",
+      "previews": [
+        "miele_kwt6722is/views/placed_oblique - 3D View - placed_oblique.png"
+      ]
+    },
+    {
+      "model": "KWTUS 7172 F",
+      "slug": "miele_kwtus7172f",
+      "status": "DOWNLOADED",
+      "rfa": "miele_kwtus7172f/miele_kwtus7172f_R2025.rfa",
+      "rfa_bytes": 4444160,
+      "rfa_sha256": "19baf18cecc8a74a0cdc28196b8e1d2627a1afc51da2ea294d6d2d18cf95fb24",
+      "row_ids": [
+        4666245805309828
+      ],
+      "source_urls": [
+        "https://www.mieleusa.com/product/12519520/24-built-under-wine-refrigerator-kwtus-7172-f",
+        "https://media.miele.com/downloads/e5/64/05_70A8A51285B71FE1AC82B3099AE9E564.zip",
+        "https://media.miele.com/downloads/n-/us/FS_12519520_USE_US-en-US.pdf"
+      ],
+      "original_rfas": [
+        {
+          "path": "miele_kwtus7172f/source/original/12519520_USA_KWTUS7172F.rfa",
+          "sha256": "aebe0cf31bf17a435e4b4f1a8b10585aad0ff2af14f3de3278810ef597c5953d"
+        }
+      ],
+      "validation": "miele_kwtus7172f/validation.json",
+      "previews": [
+        "miele_kwtus7172f/views/placed_oblique - 3D View - placed_oblique.png"
+      ]
+    },
+    {
+      "model": "KFMC 3858 FD",
+      "slug": "miele_kfmc3858fd",
+      "status": "DOWNLOADED",
+      "rfa": "miele_kfmc3858fd/miele_kfmc3858fd_R2025.rfa",
+      "rfa_bytes": 2310144,
+      "rfa_sha256": "33f4dda96d550daa71c7e359a83bc4c093ad19caa9514a3c80dd3de418f067de",
+      "row_ids": [
+        2166795625103236,
+        1900063828279172
+      ],
+      "source_urls": [
+        "https://www.mieleusa.com/product/12489440/42-mastercool-frenchdoor-bottom-mount-unit-kfmc-3858-fd-compatible-with-furniture-fronts",
+        "https://media.miele.com/downloads/a5/64/03_70A8A51285B71FE1AC8273C8621BA564.zip",
+        "https://media.miele.com/downloads/n-/us/FS_12489440_USE_US-en-US.pdf"
+      ],
+      "original_rfas": [
+        {
+          "path": "miele_kfmc3858fd/source/original/12489440_USA_KFMC3858_FD.rfa",
+          "sha256": "9bb945361ff473e37de530438042435e7a8f70a59cda8e2716c82151d11e781e"
+        }
+      ],
+      "validation": "miele_kfmc3858fd/validation.json",
+      "previews": [
+        "miele_kfmc3858fd/views/placed_oblique - 3D View - placed_oblique.png"
+      ]
+    },
+    {
+      "model": "T18IW905SP",
+      "slug": "thermador_t18iw905sp",
+      "status": "DOWNLOADED",
+      "rfa": "thermador_t18iw905sp/thermador_t18iw905sp_R2025.rfa",
+      "rfa_bytes": 536576,
+      "rfa_sha256": "96d62d335c78b32e40359a88210d9b5c40214a909fa105c5f81f42c89bee3cbd",
+      "row_ids": [
+        2705397813673860
+      ],
+      "source_urls": [
+        "https://www.thermador.com/us/en/mkt-product/refrigeration/wine-refrigeration/T18IW905SP",
+        "https://media3.bsh-group.com/3D_Asset/16603829_T18IW905SP-Thermador-TradeCAD.zip",
+        "https://media3.bsh-group.com/Documents/16173464_T18IW905SP-18-INCH-FLUSH-CUSTOM-WINE-PRESERVATION-COLUMN-Specifications.pdf"
+      ],
+      "original_rfas": [
+        {
+          "path": "thermador_t18iw905sp/source/original/T18IW905SP/T18IW905SP.rfa",
+          "sha256": "8d224a4e8f612b8899573f3888d9cc1343a33b8d2a4ecd684be9cfebd0c548bd"
+        }
+      ],
+      "validation": "thermador_t18iw905sp/validation.json",
+      "previews": [
+        "thermador_t18iw905sp/views/placed_oblique - 3D View - placed_oblique.png"
+      ]
+    },
+    {
+      "model": "T42IT100NP",
+      "slug": "thermador_t42it100np",
+      "status": "DOWNLOADED",
+      "rfa": "thermador_t42it100np/thermador_t42it100np_R2025.rfa",
+      "rfa_bytes": 765952,
+      "rfa_sha256": "41a0d65b3a5640a1b23f6b3e0fc1787e0d60b708caa0cd3a625e85b980ce06f1",
+      "row_ids": [
+        7829128394243972
+      ],
+      "source_urls": [
+        "https://www.thermador.com/us/en/mkt-product/refrigeration/bottom-freezer-refrigerators/T42IT100NP",
+        "https://media3.bsh-group.com/3D_Asset/22537542_T42IT100NP_TradeCADs.zip",
+        "https://media3.bsh-group.com/Documents/25549017_T42IT100NP-42-INCH-BUILT-IN-FRENCH-DOOR_REFRIGERATOR-2-DRAWER-PANEL-READY-Specifications.pdf"
+      ],
+      "original_rfas": [
+        {
+          "path": "thermador_t42it100np/source/original/T42BT110NS_TradeCAD_2D.rfa",
+          "sha256": "589b89df59fad2f6bf02ee2e9c986f19895ea73c0bfa0c90a60ef5aeb5c18647"
+        },
+        {
+          "path": "thermador_t42it100np/source/original/T42IT100NP_TradeCAD.rfa",
+          "sha256": "c883036f8c06768a6e44f2a95cc2e647c8f422352b731a7b350f0ab8f8b30335"
+        }
+      ],
+      "validation": "thermador_t42it100np/validation.json",
+      "previews": [
+        "thermador_t42it100np/views/placed_oblique - 3D View - placed_oblique.png"
+      ]
+    },
+    {
+      "model": "T24UR905RP",
+      "slug": "thermador_t24ur905rp",
+      "status": "DOWNLOADED",
+      "rfa": "thermador_t24ur905rp/thermador_t24ur905rp_R2025.rfa",
+      "rfa_bytes": 479232,
+      "rfa_sha256": "55160dd0481f77c496266aafce0b7967b81cf521bfea1dfe62e8d863447a8d24",
+      "row_ids": [
+        6703228487401348
+      ],
+      "source_urls": [
+        "https://www.thermador.com/us/en/mkt-product/refrigeration/refrigerationrefrigerationcolumns/T24UR905RP",
+        "https://media3.bsh-group.com/3D_Asset/21810566_T24UR905RP_TradeCAD.zip",
+        "https://media3.bsh-group.com/Documents/19472937_T24UR905RP_UNDER_COUNTER_GLASS_DOOR_REFRIGERATOR_CUSTOM_PANEL_RIGHT_HINGED_Specifications.pdf"
+      ],
+      "original_rfas": [
+        {
+          "path": "thermador_t24ur905rp/source/original/T24UR905RP_TradeCAD.rfa",
+          "sha256": "13ee06bf009af46f60c4e71ec82a5bf02ed9c6feddb20850949ad9113299cb7e"
+        },
+        {
+          "path": "thermador_t24ur905rp/source/original/T24UR905RP_TradeCAD_2D.rfa",
+          "sha256": "8aac8a68872f0bcc13805a99aef09a612d6fc3288a27771ddd218677266b47a0"
+        }
+      ],
+      "validation": "thermador_t24ur905rp/validation.json",
+      "previews": [
+        "thermador_t24ur905rp/views/placed_oblique - 3D View - placed_oblique.png"
+      ]
+    },
+    {
+      "model": "MC30WP",
+      "slug": "thermador_mc30wp",
+      "status": "DOWNLOADED",
+      "rfa": "thermador_mc30wp/thermador_mc30wp_R2025.rfa",
+      "rfa_bytes": 548864,
+      "rfa_sha256": "1ef4c23faddae67bf049bd9d27e05410ac714ddfc5e9a04ff0ac924ad3b83816",
+      "row_ids": [
+        2018080639745924
+      ],
+      "source_urls": [
+        "https://www.thermador.com/us/en/mkt-product/ovens/speed-ovens/MC30WP",
+        "https://media3.bsh-group.com/3D_Asset/15803255_MC30WP-Thermador-TradeCAD.zip",
+        "https://media3.bsh-group.com/3D_Asset/29278877_MC30WP_TradeCAD.zip",
+        "https://media3.bsh-group.com/Documents/MCDOC02760739_MC30WP-30-INCH-SPEED-OVEN-PROFESSIONAL-SERIES-Specifications.pdf"
+      ],
+      "original_rfas": [
+        {
+          "path": "thermador_mc30wp/source/original/MC30WP-Thermador-TradeCAD/MC30WP-2D.rfa",
+          "sha256": "41af59f89484d9e5644e971525bf06a9580a4f9391bf567bf8c0ee46d24ed7c3"
+        },
+        {
+          "path": "thermador_mc30wp/source/original/MC30WP-Thermador-TradeCAD/MC30WP-3D.rfa",
+          "sha256": "41af59f89484d9e5644e971525bf06a9580a4f9391bf567bf8c0ee46d24ed7c3"
+        },
+        {
+          "path": "thermador_mc30wp/source/original/MC30WP.rfa",
+          "sha256": "2e5c87062ca820c7c50cff3a60e6009ed45444c18df7d5c2b91c206796bf70ca"
+        },
+        {
+          "path": "thermador_mc30wp/source/original/MC30WP_2D.rfa",
+          "sha256": "c1d0036595d053f4e8562876cfbebf9a6b979f1a06237052fd4dc40c1a66c512"
+        }
+      ],
+      "validation": "thermador_mc30wp/validation.json",
+      "previews": [
+        "thermador_mc30wp/views/placed_oblique - 3D View - placed_oblique.png"
+      ]
+    },
+    {
+      "model": "PODMC301W",
+      "slug": "thermador_podmc301w",
+      "status": "DOWNLOADED",
+      "rfa": "thermador_podmc301w/thermador_podmc301w_R2025.rfa",
+      "rfa_bytes": 638976,
+      "rfa_sha256": "2c5c54e83c38b0cdc2619f61ce089b47df09b5f52bf4f7bcf89ca3585b1f0ae5",
+      "row_ids": [
+        2199628860030852
+      ],
+      "source_urls": [
+        "https://www.thermador.com/us/en/mkt-product/ovens/double-ovens/PODMC301W",
+        "https://media3.bsh-group.com/3D_Asset/15838407_PODMC301W-Thermador-TradeCAD.zip",
+        "https://media3.bsh-group.com/3D_Asset/29273463_PODMC301W_TradeCAD.zip",
+        "https://media3.bsh-group.com/Documents/MCDOC02802507_PODMC301W-30-INCH-DOUBLE-COMBINATION-BUILT-IN-OVEN-WITH-SPEED-OVEN-Specifications.pdf"
+      ],
+      "original_rfas": [
+        {
+          "path": "thermador_podmc301w/source/original/PODMC301W-Thermador-TradeCAD/PODMC301W-2D.rfa",
+          "sha256": "f7d6226ffcfc7c4ceef246e20e492ff5dd845833c24e1087e8b98f19105913ee"
+        },
+        {
+          "path": "thermador_podmc301w/source/original/PODMC301W-Thermador-TradeCAD/PODMC301W-3D.rfa",
+          "sha256": "f7d6226ffcfc7c4ceef246e20e492ff5dd845833c24e1087e8b98f19105913ee"
+        },
+        {
+          "path": "thermador_podmc301w/source/original/PODMC301W.rfa",
+          "sha256": "3f01c6e084dff850d5b16f8c6437bed5e618a9a75a45dd9fc17717330a447c9f"
+        },
+        {
+          "path": "thermador_podmc301w/source/original/PODMC301W_2D.rfa",
+          "sha256": "bd403d9db7df909bc07e50d8cd4856d4730023c3ead4711bbcacdf9c2e4bbcc5"
+        }
+      ],
+      "validation": "thermador_podmc301w/validation.json",
+      "previews": [
+        "thermador_podmc301w/views/placed_oblique - 3D View - placed_oblique.png"
+      ]
+    },
+    {
+      "model": "PCG486WD",
+      "slug": "thermador_pcg486wd",
+      "status": "DOWNLOADED",
+      "rfa": "thermador_pcg486wd/thermador_pcg486wd_R2025.rfa",
+      "rfa_bytes": 872448,
+      "rfa_sha256": "356457f2f43ca992a3c733ae59c551261e8d6ff28701e31d4947a7fc7d78f0aa",
+      "row_ids": [
+        8955028301086596
+      ],
+      "source_urls": [
+        "https://www.thermador.com/us/en/mkt-product/cooktops-rangetops/rangetops/PCG486WD",
+        "https://media3.bsh-group.com/3D_Asset/15802529_PCG486WD-Thermador-TradeCAD.zip",
+        "https://media3.bsh-group.com/3D_Asset/29485643_PCG486WD_TradeCAD.zip",
+        "https://media3.bsh-group.com/Documents/MCDOC02690629_PCG486WD-48-INCH-GAS-RANGETOP-WITH-GRIDDLE-Specifications.pdf"
+      ],
+      "original_rfas": [
+        {
+          "path": "thermador_pcg486wd/source/original/PCG486WD-Thermador-TradeCAD/PCG486WD-2D.rfa",
+          "sha256": "e42658b6954c29fd65d05ad26bd9fa57e9fb88e00833ae129c0f2b2d639a8174"
+        },
+        {
+          "path": "thermador_pcg486wd/source/original/PCG486WD-Thermador-TradeCAD/PCG486WD-3D.rfa",
+          "sha256": "e42658b6954c29fd65d05ad26bd9fa57e9fb88e00833ae129c0f2b2d639a8174"
+        },
+        {
+          "path": "thermador_pcg486wd/source/original/PCG486WD.rfa",
+          "sha256": "c98275858ea0181f8fae1b9bc583840e25cefbe6e222b4e191d2b3b145604ef0"
+        },
+        {
+          "path": "thermador_pcg486wd/source/original/PCG486WD_2D.rfa",
+          "sha256": "0d3b4e25d77eec41aad99be8cfdfcfc4015389e217966e56bc1e1b7c0a1ce42a"
+        }
+      ],
+      "validation": "thermador_pcg486wd/validation.json",
+      "previews": [
+        "thermador_pcg486wd/views/placed_oblique - 3D View - placed_oblique.png"
+      ]
+    },
+    {
+      "model": "PRD48WISGU",
+      "slug": "thermador_prd48wisgu",
+      "status": "DOWNLOADED",
+      "rfa": "thermador_prd48wisgu/thermador_prd48wisgu_R2025.rfa",
+      "rfa_bytes": 1077248,
+      "rfa_sha256": "e4311b255150c9aa0b701fa377a4b09237ba5c93e441d04fe16acc282ef29429",
+      "row_ids": [
+        7647580173959044
+      ],
+      "source_urls": [
+        "https://www.thermador.com/us/en/mkt-product/ranges/48-ranges/PRD48WISGU",
+        "https://media3.bsh-group.com/3D_Asset/15842904_PRD48WISGU-Thermador-TradeCAD.zip",
+        "https://media3.bsh-group.com/3D_Asset/29476114_PRD48WISGU_TradeCAD.zip",
+        "https://media3.bsh-group.com/Documents/MCDOC02915579_PRD48WISGU-48-INCH-DUAL-FUEL-PRO-GRAND-RANGE-WITH-STEAM-AND-INDUCTION-Specifications.pdf"
+      ],
+      "original_rfas": [
+        {
+          "path": "thermador_prd48wisgu/source/original/PRD48WISGU-Thermador-TradeCAD/PRD48WISGU-2D.rfa",
+          "sha256": "200961aef68882594b3cdbb8213f11a8156e6362d07f44a68e97226ad2d7bafe"
+        },
+        {
+          "path": "thermador_prd48wisgu/source/original/PRD48WISGU-Thermador-TradeCAD/PRD48WISGU-3D.rfa",
+          "sha256": "200961aef68882594b3cdbb8213f11a8156e6362d07f44a68e97226ad2d7bafe"
+        },
+        {
+          "path": "thermador_prd48wisgu/source/original/PRD48WISGU.rfa",
+          "sha256": "9b10bb9dcc3da8c232572cb2dff011eec2589b539ec5aec9bf8db6a4c4fc17bd"
+        },
+        {
+          "path": "thermador_prd48wisgu/source/original/PRD48WISGU_2D.rfa",
+          "sha256": "7730ee8a522f41ee8f0330ec3734b366fca91e7ab4cbf584295f8bc139618a52"
+        }
+      ],
+      "validation": "thermador_prd48wisgu/validation.json",
+      "previews": [
+        "thermador_prd48wisgu/views/placed_oblique - 3D View - placed_oblique.png"
+      ]
+    },
+    {
+      "model": "WD30W",
+      "slug": "thermador_wd30w",
+      "status": "DOWNLOADED",
+      "rfa": "thermador_wd30w/thermador_wd30w_R2025.rfa",
+      "rfa_bytes": 462848,
+      "rfa_sha256": "b1a2a7978ac8fe613780eb4be646ae72bf10222c606f9361b1d32b6ab5ba2f80",
+      "row_ids": [
+        4451428673716100
+      ],
+      "source_urls": [
+        "https://www.thermador.com/us/en/mkt-product/ovens/warming-drawers/WD30W",
+        "https://media3.bsh-group.com/3D_Asset/15803179_WD30W-Thermador-TradeCAD.zip",
+        "https://media3.bsh-group.com/Documents/MCDOC02802519_WD30W-30-INCH-CUSTOM-PANEL-WARMING-DRAWER-Specifications.pdf"
+      ],
+      "original_rfas": [
+        {
+          "path": "thermador_wd30w/source/original/WD30W-Thermador-TradeCAD/WD30W-2D.rfa",
+          "sha256": "0f572dd307f34516f23420fd4cae024b1d4a8e1643004675b056fdeccb15e93c"
+        },
+        {
+          "path": "thermador_wd30w/source/original/WD30W-Thermador-TradeCAD/WD30W-3D.rfa",
+          "sha256": "0f572dd307f34516f23420fd4cae024b1d4a8e1643004675b056fdeccb15e93c"
+        }
+      ],
+      "validation": "thermador_wd30w/validation.json",
+      "previews": [
+        "thermador_wd30w/views/placed_oblique - 3D View - placed_oblique.png"
+      ]
+    },
+    {
+      "model": "WM4000HBA",
+      "slug": "lg_wm4000hba",
+      "status": "BUILT_WITH_LIMITATIONS",
+      "rfa": "lg_wm4000hba/lg_wm4000hba_R2025.rfa",
+      "rfa_bytes": 516096,
+      "rfa_sha256": "506f2a58ee6630d16b9049b7041a1c51bd9c29518931bab5832ca09385e68721",
+      "row_ids": [
+        3292695531945860,
+        4443914724376452
+      ],
+      "source_urls": [
+        "https://media.us.lg.com/m/1c4e8c8e7a284ef2/original/WM4000H_A-LG-Builder-Spec-Sheet.pdf"
+      ],
+      "original_rfas": [],
+      "validation": "lg_wm4000hba/validation.json",
+      "previews": [
+        "lg_wm4000hba/views/oblique - 3D View - oblique.png",
+        "lg_wm4000hba/views/front - 3D View - front.png"
+      ]
+    },
+    {
+      "model": "DLGX4001B",
+      "slug": "lg_dlgx4001b",
+      "status": "BUILT_WITH_LIMITATIONS",
+      "rfa": "lg_dlgx4001b/lg_dlgx4001b_R2025.rfa",
+      "rfa_bytes": 507904,
+      "rfa_sha256": "17406675cb26e611a8150e987985228ec68f1bf1abfc3ea11f5235d29420f911",
+      "row_ids": [
+        3292695531945860,
+        4443914724376452
+      ],
+      "source_urls": [
+        "https://content.abt.com/documents/129668/SpecificationSheet-DLXX400X-1.pdf"
+      ],
+      "original_rfas": [],
+      "validation": "lg_dlgx4001b/validation.json",
+      "previews": [
+        "lg_dlgx4001b/views/oblique - 3D View - oblique.png",
+        "lg_dlgx4001b/views/front - 3D View - front.png"
+      ]
+    },
+    {
+      "model": "GFW550SSNWW",
+      "slug": "ge_gfw550ssnww",
+      "status": "BUILT_WITH_LIMITATIONS",
+      "rfa": "ge_gfw550ssnww/ge_gfw550ssnww_R2025.rfa",
+      "rfa_bytes": 593920,
+      "rfa_sha256": "2c25548bfc9f1fde1c75929c0e99125dac4fb7bca5fdb3b39946218ce27f4b65",
+      "row_ids": [
+        8923394272198532
+      ],
+      "source_urls": [
+        "https://www.geappliances.com/appliance/GE-ENERGY-STAR-4-8-cu-ft-Capacity-Smart-Front-Load-Washer-with-UltraFresh-Vent-System-with-OdorBlock-and-Sanitize-w-Oxi-GFW550SSNWW",
+        "https://images.salsify.com/image/upload/s--QojF4Tcy--/e04777f39886e35f1e867cdfc522c90b23c23daf.pdf",
+        "https://images.salsify.com/raw/upload/s--100n_wPP--/xhnym606jjrsbv8qgioq.dwg",
+        "https://cdn11.bigcommerce.com/s-pacto3wrn2/products/134602/images/1216856/wtwnkgpkizusc54thtrp__88673.1789563846.386.513.jpg?c=2"
+      ],
+      "original_rfas": [],
+      "validation": "ge_gfw550ssnww/validation.json",
+      "previews": [
+        "ge_gfw550ssnww/views/oblique - 3D View - oblique.png",
+        "ge_gfw550ssnww/views/front - 3D View - front.png"
+      ]
+    },
+    {
+      "model": "GFD55GSSNWW",
+      "slug": "ge_gfd55gssnww",
+      "status": "BUILT_WITH_LIMITATIONS",
+      "rfa": "ge_gfd55gssnww/ge_gfd55gssnww_R2025.rfa",
+      "rfa_bytes": 507904,
+      "rfa_sha256": "9563e29835dca39d9745dabac1787b6d576bd582b1643fd7ab70a4637f947747",
+      "row_ids": [
+        5407997394747268
+      ],
+      "source_urls": [
+        "https://www.geappliances.com/appliance/GE-ENERGY-STAR-7-8-cu-ft-Capacity-Smart-Front-Load-Gas-Dryer-with-Sanitize-Cycle-GFD55GSSNWW",
+        "https://images.salsify.com/image/upload/s--VBxQtwSo--/5bb2a02635c02de483dad44b5d164513c2baf6de.pdf",
+        "https://images.salsify.com/raw/upload/s--Ghj2_qby--/o7ndvfxdcod1hde4qmaf.dwg",
+        "https://cdn11.bigcommerce.com/s-pacto3wrn2/products/137096/images/1017453/5679f1fe5c4b18b59ba9fa7c79c67269dcf5d9e9__18687.1776494511.386.513.jpg?c=2"
+      ],
+      "original_rfas": [],
+      "validation": "ge_gfd55gssnww/validation.json",
+      "previews": [
+        "ge_gfd55gssnww/views/oblique - 3D View - oblique.png",
+        "ge_gfd55gssnww/views/front - 3D View - front.png"
+      ]
+    },
+    {
+      "model": "KM 3054-1 G",
+      "slug": "miele_km3054_1g",
+      "status": "BUILT_WITH_LIMITATIONS",
+      "rfa": "miele_km3054_1g/miele_km3054_1g_R2025.rfa",
+      "rfa_bytes": 532480,
+      "rfa_sha256": "1b105d404097a468ea8225a290ffb3046813d928c3985fc6a2987f8cc51e4db3",
+      "row_ids": [
+        6670395252473732,
+        7831772394487684
+      ],
+      "source_urls": [
+        "https://media.miele.com/downloads/n-/us/FS_11766750_USE_US-en-US.pdf",
+        "https://www.mieleusa.com/product/11766750/gas-cooktop-km-3054-1"
+      ],
+      "original_rfas": [],
+      "validation": "miele_km3054_1g/validation.json",
+      "previews": [
+        "miele_km3054_1g/views/oblique - 3D View - oblique.png",
+        "miele_km3054_1g/views/front - 3D View - front.png"
+      ]
+    },
+    {
+      "model": "I32363RC",
+      "slug": "tradewind_i32363rc",
+      "status": "BUILT_WITH_LIMITATIONS",
+      "rfa": "tradewind_i32363rc/tradewind_i32363rc_R2025.rfa",
+      "rfa_bytes": 495616,
+      "rfa_sha256": "46516fd5c3b343401fc349301975758c85c1d97e5892c807b790b660b3d81f2d",
+      "row_ids": [
+        7796295159316356,
+        162646177939332
+      ],
+      "source_urls": [
+        "https://linqcdn.avbportal.com/documents/3512c644-ff49-413e-aaf5-5805aa9aad84.pdf"
+      ],
+      "original_rfas": [],
+      "validation": "tradewind_i32363rc/validation.json",
+      "previews": [
+        "tradewind_i32363rc/views/oblique - 3D View - oblique.png",
+        "tradewind_i32363rc/views/front - 3D View - front.png"
+      ]
+    },
+    {
+      "model": "SDHWC98PNR",
+      "slug": "summit_sdhwc98pnr",
+      "status": "BUILT_WITH_LIMITATIONS",
+      "rfa": "summit_sdhwc98pnr/summit_sdhwc98pnr_R2025.rfa",
+      "rfa_bytes": 634880,
+      "rfa_sha256": "dd76bf969af45350272b23ba17cc9c5b74566027149c5f0ee2e63f0b38016eeb",
+      "row_ids": [
+        6521680267116420
+      ],
+      "source_urls": [
+        "https://www.summitappliance.com/catalog/model/SDHWC98PNR",
+        "https://www.summitappliance.com/brochure/8799.pdf",
+        "https://drtr5fjqqz6ee.cloudfront.net/uploads/fsi/drawing/file/16133/SDHWC98PNR-Assembly.pdf",
+        "https://drtr5fjqqz6ee.cloudfront.net/uploads/fsi/product_image/image/89059/SDHWC98PNR_Front_PR.jpg"
+      ],
+      "original_rfas": [],
+      "validation": "summit_sdhwc98pnr/validation.json",
+      "previews": [
+        "summit_sdhwc98pnr/views/oblique - 3D View - oblique.png",
+        "summit_sdhwc98pnr/views/front - 3D View - front.png"
+      ]
+    }
+  ]
+}

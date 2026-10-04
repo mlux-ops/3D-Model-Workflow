@@ -1,0 +1,76 @@
+{
+  "limitations": [
+    "ASSUMPTION: shelf depth 3.75 in and holder projection 3.85 in from proportions; no explicit side dimension was recovered.", 
+    "Left holder slot is represented by separate cheeks; the body, glass and outlet remain separate materials.", 
+    "White legacy SKU is retained although omitted from the current main catalog.", 
+    "Independent visualization reconstruction with fixed product dimensions and editable native materials.", 
+    "Small fillets, seams, nozzle details and optical material response are inferred where the manufacturer does not dimension them.", 
+    "No internal hydraulic performance, MEP connectors, fabrication tolerances or procurement substitutions are implied."
+  ], 
+  "started_utc": "2026-10-02T14:38:11.081000Z", 
+  "inferences": "ASSUMPTION: shelf depth 3.75 in and holder projection 3.85 in from proportions; no explicit side dimension was recovered. | Left holder slot is represented by separate cheeks; the body, glass and outlet remain separate materials. | White legacy SKU is retained although omitted from the current main catalog. | Independent visualization reconstruction with fixed product dimensions and editable native materials. | Small fillets, seams, nozzle details and optical material response are inferred where the manufacturer does not dimension them. | No internal hydraulic performance, MEP connectors, fabrication tolerances or procurement substitutions are implied.", 
+  "template_form_ids": [
+    "1537"
+  ], 
+  "rfa_path": "E:\\Claude\\3D-Model-Workflow\\output\\1527_wieland\\plumbing_fixtures\\26843701\\Hansgrohe_26843701_R2025.rfa", 
+  "material_ids": {
+    "Graphite": "3210", 
+    "Finish": "3207"
+  }, 
+  "source_spec_sha256": "aace237b961354b68af9655d63e11cfb1f170aa2fdf12251e6d88f93c9f1fe99", 
+  "source_spec_path": "E:\\Claude\\3D-Model-Workflow\\output\\1527_wieland\\plumbing_fixtures\\26843701\\source\\model_spec.json", 
+  "stage": "failed", 
+  "expected_dimensions_in": [
+    19.75, 
+    2.4500000000000002, 
+    3.8500000000000001
+  ], 
+  "model": "26843701", 
+  "revit_version": "2025", 
+  "type": "26843701 - White", 
+  "rfa_search": {
+    "evidence": "_research/26843701/sources.json", 
+    "result": "No acceptable no-account RFA recovered"
+  }, 
+  "manufacturer": "Hansgrohe", 
+  "cct_k": null, 
+  "revit_build": "25.4.50.35", 
+  "technical_pass": false, 
+  "source_references": [
+    {
+      "page": 266, 
+      "document": "Hansgrohe 2026 US Price Book", 
+      "url": "https://assets.hansgrohe.com/celum/emailmarketing/hansgrohe_2026_Price_Book_en_US.pdf", 
+      "local_image": "_research/catalog_pages/page_266.png"
+    }
+  ], 
+  "source_dimensions": [
+    "Body span 19.625 in; glass span 19.75 in interpreted from the two separately annotated widths; fixing centers 15.75 in."
+  ], 
+  "acceptance": "UNREVIEWED", 
+  "error": "Traceback (most recent call last):\n  File \"E:\\Claude\\3D-Model-Workflow\\output\\1527_wieland\\plumbing_fixtures\\_harness\\family_factory.py\", line 96, in build\n    e=f.box(p['name'],*(p['bounds']+[material,p.get('radius',0)]))\n  File \"E:\\Claude\\3D-Model-Workflow\\output\\1527_wieland\\plumbing_fixtures\\_harness\\native_plumbing_support.py\", line 170, in box\n    solid=DB.GeometryCreationUtilities.CreateExtrusionGeometry(List[DB.CurveLoop]([loop(xyz(0,0,z0),DB.XYZ.BasisX,DB.XYZ.BasisY,points)]),DB.XYZ.BasisZ,(z1-z0)/12.)\nException: Curve loops do not satisfy the input requirements.\r\nParameter name: profileLoops\n", 
+  "appearance_defaults": {
+    "Graphite": {
+      "rgb": [
+        64, 
+        67, 
+        69
+      ], 
+      "gloss": 0.35999999999999999, 
+      "luminance": 0, 
+      "transparency": 0, 
+      "cct_k": null
+    }, 
+    "Finish": {
+      "rgb": [
+        242, 
+        243, 
+        240
+      ], 
+      "gloss": 0.17000000000000001, 
+      "luminance": 0, 
+      "transparency": 0, 
+      "cct_k": null
+    }
+  }
+}

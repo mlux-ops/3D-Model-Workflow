@@ -1,0 +1,242 @@
+{
+  "category": "Plumbing Fixtures", 
+  "all_overall_dimensions_authoritative": false, 
+  "type": "61075LF-BLLHP - Matte Black -  Black", 
+  "rfa_search": {
+    "result": "No acceptable no-account RFA recovered", 
+    "evidence": "_research/61075LF-BLLHP/sources.json"
+  }, 
+  "native_gates_pass": true, 
+  "native_path_checks": [], 
+  "bounds_in": [
+    -1.1875000298023224, 
+    -6.4307795634645393, 
+    -1.457829596078983e-24, 
+    2.5, 
+    1.1875000298023224, 
+    11.623319149017334
+  ], 
+  "model": "61075LF-BLLHP", 
+  "limitations": [
+    "Below-deck shank and supply tubing are omitted.", 
+    "Body and tube diameters are drawing-derived; spout endpoint follows the printed outlet height with a continuous tangent arc.", 
+    "The separate HLB175 handle is intentionally absent from this less-handle SKU.", 
+    "Independent visualization reconstruction with fixed product dimensions and editable native materials.", 
+    "Small fillets, seams, nozzle details and optical material response are inferred where the manufacturer does not dimension them.", 
+    "No internal hydraulic performance, MEP connectors, fabrication tolerances or procurement substitutions are implied."
+  ], 
+  "source_spec_path": "E:\\Claude\\3D-Model-Workflow\\output\\1527_wieland\\plumbing_fixtures\\61075LF-BLLHP\\source\\model_spec.json", 
+  "appearance_defaults": {
+    "Brass": {
+      "cct_k": null, 
+      "rgb": [
+        160, 
+        124, 
+        64
+      ], 
+      "transparency": 0, 
+      "gloss": 0.40000000000000002, 
+      "luminance": 0
+    }, 
+    "Detail": {
+      "cct_k": null, 
+      "rgb": [
+        24, 
+        25, 
+        26
+      ], 
+      "transparency": 0, 
+      "gloss": 0.17000000000000001, 
+      "luminance": 0
+    }, 
+    "Finish": {
+      "cct_k": null, 
+      "rgb": [
+        20, 
+        21, 
+        22
+      ], 
+      "transparency": 0, 
+      "gloss": 0.17000000000000001, 
+      "luminance": 0
+    }
+  }, 
+  "manufacturer": "Brizo", 
+  "source_spec_sha256": "9a885ff95bc9c64e9c2e0bfec97bee738dd364816c0fdc8f6517244a76599e76", 
+  "material_ids": {
+    "Brass": "3207", 
+    "Detail": "3210", 
+    "Finish": "3213"
+  }, 
+  "project_warnings": [], 
+  "technical_pass": true, 
+  "reopen_geometry_equal": true, 
+  "bounds_method": "Fine native face meshes plus 128-sample analytic edges", 
+  "appearance_bindings": {
+    "Brass": {
+      "path": "E:\\Claude\\3D-Model-Workflow\\output\\1527_wieland\\plumbing_fixtures\\61075LF-BLLHP\\textures\\Brass.png", 
+      "exists": true, 
+      "material_id": "3207"
+    }, 
+    "Detail": {
+      "path": "E:\\Claude\\3D-Model-Workflow\\output\\1527_wieland\\plumbing_fixtures\\61075LF-BLLHP\\textures\\Detail.png", 
+      "exists": true, 
+      "material_id": "3210"
+    }, 
+    "Finish": {
+      "path": "E:\\Claude\\3D-Model-Workflow\\output\\1527_wieland\\plumbing_fixtures\\61075LF-BLLHP\\textures\\Finish.png", 
+      "exists": true, 
+      "material_id": "3213"
+    }
+  }, 
+  "display_bounds_in": [
+    -1.1875, 
+    -6.4307795634645393, 
+    0.0, 
+    2.5, 
+    1.1875, 
+    11.591469074976557
+  ], 
+  "actual_dimensions_after_reopen_mm": [
+    93.662500756978986, 
+    193.50430166897829, 
+    295.23230638504026
+  ], 
+  "finished_utc": "2026-10-02T15:43:17.478000Z", 
+  "expected_dimensions_in": [
+    3.6875, 
+    7.625, 
+    11.625
+  ], 
+  "inferences": "Below-deck shank and supply tubing are omitted. | Body and tube diameters are drawing-derived; spout endpoint follows the printed outlet height with a continuous tangent arc. | The separate HLB175 handle is intentionally absent from this less-handle SKU. | Independent visualization reconstruction with fixed product dimensions and editable native materials. | Small fillets, seams, nozzle details and optical material response are inferred where the manufacturer does not dimension them. | No internal hydraulic performance, MEP connectors, fabrication tolerances or procurement substitutions are implied.", 
+  "reopened_warnings": [], 
+  "dimension_anchor_checks": [
+    {
+      "label": "Faucet height", 
+      "actual_mm": 295.23230638504026, 
+      "deviation_mm": -0.042693614959716797, 
+      "pass": true, 
+      "nominal_mm": 295.27499999999998
+    }, 
+    {
+      "label": "Base diameter", 
+      "actual_mm": 60.325001513957972, 
+      "deviation_mm": 1.5139579772949218e-06, 
+      "pass": true, 
+      "nominal_mm": 60.324999999999996
+    }
+  ], 
+  "revit_version": "2025", 
+  "source_references": [
+    {
+      "url": "https://assets.specbooks.cloud/brand/brizo/spec/7646847/document/spec-sb-sccscf.pdf", 
+      "document": "Brizo BSP-K-61075LF-LHP Rev C", 
+      "local_image": "_research/61075LF-BLLHP/downloads/spec-sb-sccscf_pages/page_01.png", 
+      "page": 1
+    }
+  ], 
+  "actual_dimensions_in": [
+    3.6875000298023224, 
+    7.6182795932668617, 
+    11.623319149017334
+  ], 
+  "cct_k": null, 
+  "material_tests": {
+    "Brass": {
+      "writable": true, 
+      "face_count": 40, 
+      "substitution_reaches_faces": true
+    }, 
+    "Detail": {
+      "writable": true, 
+      "face_count": 40, 
+      "substitution_reaches_faces": true
+    }, 
+    "Finish": {
+      "writable": true, 
+      "face_count": 40, 
+      "substitution_reaches_faces": true
+    }
+  }, 
+  "template_form_ids": [
+    "1537"
+  ], 
+  "host": {
+    "host_id": "3703", 
+    "instance_host_id": "3703", 
+    "host_kind": "floor", 
+    "normal_dot": 1.0, 
+    "hostface_present": true
+  }, 
+  "reopened": true, 
+  "revit_build": "25.4.50.35", 
+  "started_utc": "2026-10-02T15:43:14.210000Z", 
+  "family_warnings": [], 
+  "placement": "WorkPlaneBased", 
+  "stage": "complete", 
+  "acceptance": "NATIVE_GATES_PASSED_PENDING_VISUAL_REVIEW", 
+  "rfa_path": "E:\\Claude\\3D-Model-Workflow\\output\\1527_wieland\\plumbing_fixtures\\61075LF-BLLHP\\Brizo_61075LF-BLLHP_R2025.rfa", 
+  "reopened_bounds_in": [
+    -1.1875000298023224, 
+    -6.4307795634645393, 
+    -1.457829596078983e-24, 
+    2.5, 
+    1.1875000298023224, 
+    11.623319149017334
+  ], 
+  "parts": [
+    {
+      "name": "Round base", 
+      "id": "3215", 
+      "volume_ft3": 0.00048067648507716331
+    }, 
+    {
+      "name": "Valve body", 
+      "id": "3216", 
+      "volume_ft3": 0.0050325137497646997
+    }, 
+    {
+      "name": "Side cartridge hub", 
+      "id": "3217", 
+      "volume_ft3": 0.0020989895628859253
+    }, 
+    {
+      "name": "Exposed handle spindle", 
+      "id": "3218", 
+      "volume_ft3": 1.8179601873278501e-05
+    }, 
+    {
+      "name": "Continuous arc spout", 
+      "id": "3219", 
+      "volume_ft3": 0.0044454645198475709
+    }, 
+    {
+      "name": "Dark aerator", 
+      "id": "3220", 
+      "volume_ft3": 8.4067671528510733e-06
+    }
+  ], 
+  "source_dimensions": [
+    "Overall height 11.625 in, nominal spout reach 6 in, outlet center height 8.375 in, base diameter 2.375 in."
+  ], 
+  "gates": {
+    "reopen_geometry_equal": true, 
+    "dimensions": true, 
+    "materials": true, 
+    "cct": true, 
+    "category": true, 
+    "views": true, 
+    "orientation": true, 
+    "diffuse_bitmaps": true, 
+    "warnings": true, 
+    "actual_face_host": true, 
+    "reopened": true
+  }, 
+  "visual_review": "PENDING_NATIVE_IMAGE_REVIEW", 
+  "evidence_files": [
+    "Brizo_61075LF-BLLHP_R2025_Isolated - 3D View - Native Front.png", 
+    "Brizo_61075LF-BLLHP_R2025_Isolated - 3D View - Native Material.png", 
+    "Brizo_61075LF-BLLHP_R2025_Isolated - 3D View - Native Oblique.png", 
+    "Brizo_61075LF-BLLHP_R2025_Isolated - 3D View - Native Side.png"
+  ]
+}

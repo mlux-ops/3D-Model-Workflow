@@ -1,0 +1,4083 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+      <script>
+        if (typeof window.getCookie !== 'function') {
+          window.getCookie = function(name) {
+            var match = document.cookie.match(
+              new RegExp('(?:^|; )' + name + '=([^;]*)')
+            );
+            return match ? decodeURIComponent(match[1]) : null;
+          };
+        }
+
+        if (typeof window.setCookie !== 'function') {
+          window.setCookie = function(name, value, days) {
+            var expires = '';
+            if (days) {
+              var date = new Date();
+              date.setTime(date.getTime() + days * 24 * 60 * 60 * 1000);
+              expires = '; expires=' + date.toUTCString();
+            }
+            document.cookie =
+              name + '=' + encodeURIComponent(value) + expires + '; path=/';
+          };
+        }
+      </script>
+  
+
+  
+    <script>
+      var userUuid = getCookie('user_uuid');
+      if (!userUuid) {
+        if (window.crypto && window.crypto.randomUUID) {
+          userUuid = crypto.randomUUID();
+        } else {
+          userUuid = 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, function(c) {
+            var r = (Math.random() * 16) | 0;
+            var v = c === 'x' ? r : (r & 0x3) | 0x8;
+            return v.toString(16);
+          });
+        }
+        setCookie('user_uuid', userUuid, 365);
+      }
+    </script>
+
+    <script type="text/javascript" src="https://cdn-prod.securiti.ai/consent/auto_blocking/3ca80acd-0cc1-43e3-bd74-e88f102d8b7a/2d45c38a-c383-4bae-819d-bdd900cb1a4e.js"></script>
+    <script>
+      (function () {
+        var s = document.createElement('script');
+        s.src = 'https://cdn-prod.securiti.ai/consent/cookie-consent-sdk-loader.js';
+        s.setAttribute('data-tenant-uuid', '3ca80acd-0cc1-43e3-bd74-e88f102d8b7a');
+        s.setAttribute('data-domain-uuid', '2d45c38a-c383-4bae-819d-bdd900cb1a4e');
+        s.setAttribute('data-backend-url', 'https://app.securiti.ai');
+        s.setAttribute('data-skip-css', 'false');
+        s.defer = true;
+        var parent_node = document.head || document.body;
+        parent_node.appendChild(s);
+      })()
+    </script>
+  
+  
+    <script>
+      window.addEventListener('load', function() {
+        if (typeof setConsentBannerParams === 'function') {
+          setConsentBannerParams({ uuid: userUuid });
+        } else {
+          console.warn('Consent SDK not yet available; cannot call setConsentBannerParams');
+        }
+      });
+    </script>
+  
+
+
+<title>Minka Lighting LLC.  :: BRANDS :: Minka-Lavery&amp;reg; :: 3114-732-L</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+  <meta http-equiv="Content-Script-Type" content="text/javascript" />
+  <meta http-equiv="Content-Style-Type" content="text/css" />
+  <meta http-equiv="Content-Language" content="en" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="p:domain_verify" content="08515681231eefe58d5376529b3755c5"/>
+      <meta property="og:image" content="https://d11ijat5yj4icx.cloudfront.net/P/3114-732-L_Main.jpg" />
+    
+  
+
+
+
+  <script type="text/javascript">
+    (function () {
+      window.MINKA_CONFIG = {
+        dealer_api_url: "https:\/\/dealerportal.minka.com",
+        enabled_features: ["F2506_PURCHASE_ORDER_OCR","F2511_NEW_WEBSITE_STYLE","F2602_EMAIL_OAUTH","F2602_FINISH_IMAGE","F2602_ACCENT_SEARCH","F2603_SEARCH_SUGGESTION","F2604_NEW_CATEGORY","F2604_OCR_CANCEL_EMAIL","F2604_CATEGORY_FILTER_FROM_DB","F2605_NEW_ARRIVAL_FILTERS"]
+      }
+    })();
+  </script>
+
+<script type="text/javascript">
+//<![CDATA[
+var number_format_dec = '.';
+var number_format_th = '';
+var number_format_point = '2';
+var store_language = 'en';
+var xcart_web_dir = "";
+var images_dir = "/skin/common_files/images";
+var alt_images_dir = "/skin/MK/images";var lbl_no_items_have_been_selected = 'No items have been selected';
+var current_area = 'C';
+var currency_format = "$x";
+var lbl_product_minquantity_error = "Sorry, the minimum order quantity for this product is {{min}}.";
+var lbl_product_maxquantity_error = "Sorry, the maximum order quantity for this product is {{max}}.";
+var txt_out_of_stock = "Out of stock";
+var lbl_product_quantity_type_error = "You can specify a number from {{min}} to {{max}}.";
+var is_limit = true;
+var lbl_required_field_is_empty = "The required field \'~~field~~\' is empty!";
+var lbl_field_required = "Field is required";
+var lbl_field_format_is_invalid = "The format of the \'~~field~~\' field is invalid.";
+var txt_required_fields_not_completed = "The following required fields have not been completed: {{fields}} Do you wish to submit the form with these fields empty?";
+var lbl_blockui_default_message = "Please wait...";
+var lbl_error = 'Error';
+var lbl_warning = 'Warning';
+var lbl_information = 'Information';
+var lbl_ok = 'OK';
+var lbl_yes = 'Yes';
+var lbl_no = 'No';
+var txt_minicart_total_note = 'Order subtotal does not cover discounts and extra costs like shipping charges, etc. The final cost of the order will be calculated at the checkout page.';
+var txt_ajax_error_note = 'An error occurred while processing a request. Please <a href=\"javascript:void(0);\" onclick=\"javascript:window.location.reload();\">refresh the page.<\/a><br /><br />If the problem still persists after refreshing the page please <a href=\"javascript:void(0);\" onclick=\"javascript:self.location=\'help.php?section=contactus&amp;mode=update\'\">contact us<\/a> on the matter.';
+var txt_email_invalid = "Email address is invalid! Please correct";
+var email_validation_regexp = new RegExp("^[a-z0-9!#$%&\'*+\\/=?^_`{|}~-]+(?:\\.[a-z0-9!#$%&\'*+\\/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\\.)+[a-z](?:[a-z0-9-]*[a-z0-9])$", "gi");
+var is_admin_editor = false;
+
+var is_responsive_skin = "N";
+
+var  topMessageDelay = [];
+topMessageDelay['i'] = 10*1000;
+topMessageDelay['w'] = 10*1000;
+topMessageDelay['e'] = 10*1000;
+
+
+//]]>
+</script>
+
+
+
+<script >
+  window.addEventListener('DOMContentLoaded', function() {
+    // QueryLoader2(document.querySelector("body"), {
+    //   barColor: "#f6f6f6",
+    //   backgroundColor: "#f6f6f6",
+    //   percentage: false,
+    //   deepSearch: false,
+    //   barHeight: 0,
+    //   minimumTime: 20,
+    //   fadeOutTime: 600//600
+    // });
+
+    //檢查 dealer session 是否過期
+    //window.onload = function() {
+    // console.log(getCookie("dealer_islogin"));
+    // if(getCookie("dealer_islogin") == '1') {
+
+    // }
+
+    //};
+
+  });
+  function htmldecode(s){
+    var div = document.createElement('div');
+    div.innerHTML = s;
+    return div.innerText || div.textContent;
+  }
+
+  var dealer_api_url = "https://dealerportal.minka.com/";
+</script>
+
+
+<script type="text/javascript" src="/skin/common_files/js/common.js"></script>
+  <script type="text/javascript" src="/skin/common_files/js/browser_identificator.js"></script>
+
+
+
+
+<script type="text/javascript" src="/min/g=vendor.js?1789977132"></script>
+
+
+<script type="text/javascript" src="/skin/common_files/widgets/css_loader.js"></script>
+
+ <script type="text/javascript" src="/skin/common_files/lib/jqueryui/jquery-ui.custom.min.js"></script> <link rel="stylesheet" type="text/css" href="/skin/common_files/lib/jqueryui/jquery-ui.structure.min.css" />  <link rel="stylesheet" type="text/css" href="/skin/common_files/lib/jqueryui/components/tabs.min.css" />    <link rel="stylesheet" type="text/css" href="/skin/common_files/lib/jqueryui/jquery-ui.theme.min.css" />  <link rel="stylesheet" type="text/css" href="/skin/common_files/css/jquery_ui.css" />  
+<script type="text/javascript" src="/skin/common_files/js/ajax.js"></script>
+
+<script type="text/javascript" src="/skin/common_files/js/top_message.js"></script>
+<script type="text/javascript" src="/skin/common_files/js/popup_open.js"></script>
+
+  
+  <script type="text/javascript" src="/skin/MK/_includes/js/jquery.mousewheel.js"></script>
+  <script type="text/javascript" src="/skin/MK/_includes/js/jqueryui.js"></script>
+  <script type="text/javascript" src="/skin/MK/_includes/js/jquery.iviewer.js?v=3"></script>
+  
+
+
+  <script type="text/javascript">
+//<![CDATA[
+    /*  Fix a.href if base url is defined for page */ function anchor_fix() { var links = document.getElementsByTagName('A'); var m; var _rg = new RegExp("(^|" + self.location.host + xcart_web_dir + "/)#([\\w\\d_-]+)$"); for (var i = 0; i < links.length; i++) {   if (links[i].href && (m = links[i].href.match(_rg)) && links[i].href.indexOf('#browse-by-category') == -1 && links[i].href.indexOf('#getInspired-banner-bottom-txt') == -1 ) {     links[i].href = 'javascript:void(self.location.hash = "' + m[2] + '");';   } } } if (window.addEventListener) window.addEventListener("load", anchor_fix, false); else if (window.attachEvent) window.attachEvent("onload", anchor_fix);    function initDropOutButton() {   if ($(this).hasClass('activated-widget'))     return;   $(this).addClass('activated-widget');   var dropOutBoxObj = $(this).parent().find('.dropout-box');   /* Process the onclick event on a dropout button  */   $(this).click(     function(e) {       e.stopPropagation();       $('.dropout-box').removeClass('current');       dropOutBoxObj         .toggle()         .addClass('current');       $('.dropout-box').not('.current').hide();       if (dropOutBoxObj.offset().top + dropOutBoxObj.height() - $('#center-main').offset().top - $('#center-main').height() > 0) {         dropOutBoxObj.css('bottom', '-2px');       }     }   );   /* Click on a dropout layer keeps the dropout content opened */   $(this).parent().click(     function(e) {       e.stopPropagation();     }   );   /* shift the dropout layer from the right hand side  */   /* if it's out of the main area */   var borderDistance = ($("#center-main").offset().left + $("#center-main").outerWidth()) - ($(this).offset().left + dropOutBoxObj.outerWidth());   if (!isNaN(borderDistance) && borderDistance < 0) {     dropOutBoxObj.css('left', borderDistance+'px');   } } $(document).ready( function() {   $('body').click(     function() {       $('.dropout-box')         .filter(function() { return $(this).css('display') != 'none'; } )         .hide();     }   );   $('div.dropout-container div.drop-out-button').each(initDropOutButton); } );   $(document).ready( function() { $('form').not('.skip-auto-validation').each(function() {   applyCheckOnSubmit(this); }); $(document).on(   'click','a.toggle-link',    function(e) {     $('#' + $(this).attr('id').replace('link', 'box')).toggle();   } ); });   if (products_data == undefined) { var products_data = []; }  var txt_are_you_sure = 'Are you sure?'; 
+//]]>
+</script>   <script type="text/javascript" src="/skin/common_files/js/check_quantity.js"></script>  
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="/min/g=minka-vendor.js?1789977132"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootbox.js/5.5.3/bootbox.min.js" integrity="sha512-U3Q2T60uOxOgtAmm9VEtC3SKGt9ucRbvZ+U3ac/wtvNC+K21Id2dNHzRUC7Z4Rs6dzqgXKr+pCRxx5CyOsnUzg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.7.7/axios.min.js" integrity="sha512-DdX/YwF5e41Ok+AI81HI8f5/5UsoxCVT9GKYZRIzpLxb8Twz4ZwPPX+jQMwMhNQ9b5+zDEefc+dcvQoPWGNZ3g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<script type="text/javascript">
+/*ada*/
+nl_lang = "en";
+nl_pos = "bl";
+nl_link = "0";
+nl_compact = "0";
+nl_accordion = "1";
+
+$xcart_login = "";
+if(($xcart_login && getCookie("web_login_type")=="dealer" && getCookie("dealer_islogin")=="0") && location.href.indexOf('/dealer/login.php') < 0){
+  location.href = 'https://www.minka.com/dealer/login.php?mode=logout';
+}
+</script>
+<!-- Accessibility -->
+<script>(function(){ var s = document.createElement('script'), e = ! document.body ? document.querySelector('head') : document.body; s.src = 'https://acsbapp.com/apps/app/dist/js/app.js'; s.async = true; s.onload = function(){ acsbJS.init({ statementLink : '', footerHtml : '', hideMobile : false, hideTrigger : false, language : 'en', position : 'left', leadColor : '#9c783a', triggerColor : '#967745', triggerRadius : '50%', triggerPositionX : 'left', triggerPositionY : 'bottom', triggerIcon : 'people', triggerSize : 'medium', triggerOffsetX : 20, triggerOffsetY : 24, mobile : { triggerSize : 'small', triggerPositionX : 'left', triggerPositionY : 'bottom', triggerOffsetX : 10, triggerOffsetY : 24, triggerRadius : '50%' } }); }; e.appendChild(s);}());</script>
+<!-- Accessibility -->
+
+<script type="text/javascript" src="/min/g=minka.js?1789977132"></script>
+
+
+
+ <link rel="stylesheet" href="/min/g=vendor.css?1789977132">            <link rel="stylesheet" type="text/css" href="/skin/common_files/lib/colorbox/colorbox.css" />            <link rel="stylesheet" href="/min/?f=/skin/common_files/modules/Recently_Viewed/main.css,/skin/common_files/modules/Discount_Coupons/main.css,/skin/common_files/modules/Wishlist/main.css,/skin/MK/modules/News_Management/main.css,/skin/common_files/modules/Image_Verification/main.css,/skin/common_files/modules/Detailed_Product_Images/main.css,/skin/common_files/modules/Bestsellers/main.css,/skin/common_files/modules/Recommended_Products/main.css,/skin/common_files/modules/Banner_System/main.css,/skin/common_files/modules/On_Sale/main.css,/skin/common_files/modules/One_Page_Checkout/main.css,">      <link rel="stylesheet" type="text/css" href="/skin/MK/css/altskin.css" />                 <link rel="stylesheet" href="/min/?f=,">     <style type="text/css">
+<!--
+.dpimages-icons-box {width: 124px;
+}
+.dpimages-icons-box a, .dpimages-icons-box a:link, .dpimages-icons-box a:visited, .dpimages-icons-box a:hover, .dpimages-icons-box a:active {width: 58px;
+height: 58px;
+}
+-->
+</style>  
+
+  <link rel="shortcut icon" type="image/png" href="https://www.minka.com/favicon-v2.ico" />
+
+  <link rel="canonical" href="https://www.minka.com/3114-732-L.html" />
+  <base href="https://www.minka.com/" />
+
+
+
+
+
+
+
+
+
+  
+    <link rel="stylesheet" href="https://use.typekit.net/jpw3ids.css">
+    <link rel="stylesheet" href="https://use.typekit.net/gdz0feq.css">
+    <link rel="stylesheet" href="https://use.typekit.net/okd0hpe.css">
+    <link rel="stylesheet" href="https://use.typekit.net/qbu8khy.css">
+
+    <link rel="stylesheet" type="text/css" href="/min/g=global-v2.css?1789977132"/>
+  
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+      <script src="/skin/MK/bootstrap/js/html5shiv.min.js"></script>
+      <script src="/skin/MK/bootstrap/js/respond.min.js"></script>
+    <![endif]-->
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<style type="text/css">
+.lazy{
+  background: rgba(0,0,0,0.03);
+  background-repeat: no-repeat;
+  background-size: cover;
+      background-position: top center;
+}
+</style>
+    </head>
+<body class="style-v2  "> <!-- <div class="landscape-show ac">
+  <div class="div-table">
+    <div class="table-cell">
+    <img src="/skin/MK/_images/portrait.png">
+    <p>Best viewed in portrait mode.</p>
+  </div>
+  </div>
+</div> -->
+
+<div class="mob-navbar-pop">
+  <div class="mob-navbar-pop-main">
+    <div class="mob-navbar" id="mob-navbar">
+    <div class="dealerSidenav_content_mob">
+      <div class="nav_cate">
+        <ul>
+          <li class="nav_cate_item products_nav   active" onclick="show_sub_cate('products_nav');"><a>PRODUCTS</a> <div class="triangle"></div> </li>
+          <li class="nav_cate_item resources" onclick="show_sub_cate('resources');"><a>RESOURCES</a> <div class="triangle"></div> </li>
+            <li class="nav_cate_item account  "  onclick="show_sub_cate('account');"><a>LOGIN</a><div class="triangle"></div> </li>
+          <li class="nav_cate_item help" onclick="show_sub_cate('help');"><a >HELP</a> <div class="triangle"></div> </li>
+                  </ul>
+      </div>
+      <div class="nav_sub_cate">
+        <div class="sub_cate products_nav  active">
+         <ul class="main_ul">
+                        <li><a href="/new-arrival" tabindex="-1">NEW ARRIVALS</a></li>
+           
+            <li class="dropdown-sub">
+            <a  tabindex="-1" >Fans <span class="plus-ico">+</span><span class="minus-ico">-</span></a>
+              <div class="mob-menu-sub">
+                <dl>
+                  <dd><a href="https://www.minka.com/fans/"><b>All Fans</b></a></dd>
+                                  <dd><a href="/fans/?featureds[]=10" tabindex="-1">Indoor</a></dd>
+                                  <dd><a href="/fans/?featureds[]=68" tabindex="-1">Outdoor</a></dd>
+                                  <dd><a href="/fans/?featureds[]=119" tabindex="-1">Smart Fans</a></dd>
+                                  <dd><a href="/fans/?featureds[]=11" tabindex="-1">Value</a></dd>
+                                  <dd><a href="/fans/?featureds[]=151" tabindex="-1">Coastal Grade</a></dd>
+                                  <dd><a href="/fans/?featureds[]=150" tabindex="-1">CCT</a></dd>
+                                  <dd><a href="/fans/?featureds[]=13" tabindex="-1">Accessories</a></dd>
+                                  <dd><a href="/fans/?new_arrival=Y">New</a></dd>
+                  <dd><a class="btn btn-gold upp" href="choose_fans.php" tabindex="-1">CHOOSING THE FAN</a></dd>
+                </dl>
+              </div>
+            </li>
+            <li class="dropdown-sub"><a href="#" tabindex="-1">Interior Lighting <span class="plus-ico">+</span><span class="minus-ico">-</span></a>
+              <div class="mob-menu-sub">
+                <dl>
+                  <dd><a href="https://www.minka.com/interior-lighting/"><b>All Interior Lighting</b></a></dd>
+                                      <dd class="link-nav-c"><a href="javascript:;" rel="14" tabindex="-1">Ceiling <i class="fa fa-angle-right"></i></a></dd>
+                                      <dd class="link-nav-c"><a href="javascript:;" rel="30" tabindex="-1">Wall <i class="fa fa-angle-right"></i></a></dd>
+                                      <dd class="link-nav-c"><a href="javascript:;" rel="37" tabindex="-1">Floor <i class="fa fa-angle-right"></i></a></dd>
+                                      <dd class="link-nav-c"><a href="javascript:;" rel="41" tabindex="-1">Table <i class="fa fa-angle-right"></i></a></dd>
+                                      <dd class="link-nav-c"><a href="javascript:;" rel="44" tabindex="-1">Accessories <i class="fa fa-angle-right"></i></a></dd>
+                                    <dd><a href="/interior-lighting/?new_arrival=Y" style="text-decoration:none;">New</a></dd>
+                  <dd><a class="btn btn-gold" href="choose_style.php" tabindex="-1">FIND YOUR STYLE</a></dd>
+                </dl>
+              </div>
+            </li>
+            <li class="dropdown-sub"><a href="#" tabindex="-1">Exterior Lighting <span class="plus-ico">+</span><span class="minus-ico">-</span></a>
+              <div class="mob-menu-sub">
+                <dl>
+                  <dd><a href="https://www.minka.com/exterior-lighting/"><b>All Exterior Lighting</b></a></dd>
+                                      <dd class="link-nav-c"><a href="javascript:;" rel="53" tabindex="-1">Wall <i class="fa fa-angle-right"></i></a></dd>
+                                      <dd class="link-nav-c"><a href="javascript:;" rel="48" tabindex="-1">Ceiling <i class="fa fa-angle-right"></i></a></dd>
+                                      <dd class="link-nav-c"><a href="javascript:;" rel="56" tabindex="-1">Post Light <i class="fa fa-angle-right"></i></a></dd>
+                                      <dd class="link-nav-c"><a href="javascript:;" rel="58" tabindex="-1">Accessories <i class="fa fa-angle-right"></i></a></dd>
+                                    <dd><a href="/exterior-lighting/?new_arrival=Y" style="text-decoration:none;">New</a></dd>
+                  <dd><a class="btn btn-gold" href="choose_style.php?pcat[]=Exterior" tabindex="-1">FIND YOUR STYLE</a></dd>
+                </dl>
+              </div>
+            </li>
+
+           
+                          <li class="dropdown-sub"><a href="#" tabindex="-1">Styles <span class="plus-ico">+</span><span class="minus-ico">-</span></a>
+                <div class="mob-menu-sub">
+                  <dl>
+                    <dd><a href="https://www.minka.com/styles/"><b>All Styles</b></a></dd>
+                                          <dd><a href="/styles/?styles[]=Contemporary" tabindex="-1">Contemporary</a></dd>
+                                          <dd><a href="/styles/?styles[]=Traditional" tabindex="-1">Traditional</a></dd>
+                                          <dd><a href="/styles/?styles[]=Transitional" tabindex="-1">Transitional</a></dd>
+                                      </dl>
+                </div>
+              </li>
+            
+
+          </ul>
+        </div>
+        <div class="sub_cate resources">
+          <ul class="main_ul">
+            <li><a href="resources.html">RESOURCES</a></li>
+            <li><a href="Warranty_registration.php">WARRANTY</a></li>
+            <li><a href="Catalogs.php">LITERATURE</a></li>
+            <li><a href="faq.php">FAQ</a></li>
+            <li><a href="videos.php">VIDEOS</a></li>
+          </ul>
+        </div>
+        <div class="sub_cate account ">
+          <div class="title ac">$% account_title %</div>
+
+                          <div class="greeting">
+                Are you a registered user or a dealer? Click the button and go to the login screen.
+              </div>
+            
+          
+          <ul class="main_ul" v-if="now_user_type == 'power_user'">
+            <li class="has_border_top"><a href="dealer/account.php">MY ACCOUNT</a></li>
+          </ul>
+          <ul class="main_ul" v-else>
+            <li
+              v-for="item in vue_dealer_Sidenav.nav_items"
+              :key="item.key"
+              :class="[
+                item.classNames,
+                item.subItems
+                  ? 'flex flex-col'
+                  : 'flex align-items-center justify-content-between'
+              ]"
+            >
+              <div v-if="item.isNewFeature">
+                <div class="side_nav_new_feature">
+                  NEW FEATURE
+                </div>
+
+                <a
+                  v-if="item.url || item.handler"
+                  :href="item.url"
+                  @click="(e) => vue_dealer_Sidenav.handle_menu_click(e, item)"
+                  style="white-space: pre-line"
+                  :class="[
+                    item.labelClassNames || '',
+                    { 'xs-f-12': item.label.length > 22 }
+                  ]"
+                  :target="item.target"
+                >$% item.label %</a>
+
+                <span style="white-space: pre-line" v-else>$% item.label %</span>
+              </div>
+              <a
+                v-else-if="item.handler || item.url"
+                :href="item.url"
+                @click="(e) => vue_dealer_Sidenav.handle_menu_click(e, item)"
+                style="white-space: pre-line"
+                class="inline"
+                :class="[
+                  item.labelClassNames || '',
+                  { 'xs-f-12': item.label.length > 22 }
+                ]"
+                :target="item.target"
+              >$% item.label %</a>
+              <a
+                v-else-if="item.subItems"
+                onclick="toggle_sub_menu_ar(this);"
+                style="white-space: pre-line"
+                class="pointer flex align-items-center justify-content-between w-100p"
+                :class="[
+                  item.labelClassNames || '',
+                  { 'xs-f-12': item.label.length > 22 }
+                ]"
+              >$% item.label %<span class="fr pointer">＋</span></a>
+              <ul class="sub_ul" v-if="item.subItems">
+                <li
+                  v-for="subItem in item.subItems"
+                  :key="`${item.key}-${subItem.key}`"
+                >
+                  <a :href="subItem.url">
+                    $% subItem.label %
+                  </a>
+                  <span class="fr pointer star" @click="vue_dealer_Sidenav.save_dashboard(subItem.key)">
+                    <img :src="'/skin/MK/_images/' + vue_dealer_Sidenav.dealer_menu(subItem.key)" />
+                  </span>
+                </li>
+              </ul>
+              <span
+                v-else
+                class="fr pointer star"
+                role="button"
+                tabindex="0"
+                @click="vue_dealer_Sidenav.save_dashboard(item.key)"
+                :aria-label="vue_dealer_Sidenav.dealer_dashboard(item.key) ? 'Remove from dashboard' : 'Add to dashboard'"
+              >
+                <img
+                  :src="'/skin/MK/_images/' + vue_dealer_Sidenav.dealer_menu(item.key)"
+                  alt="star"
+                  aria-hidden="true"
+                />
+              </span>
+            </li>
+            <!-- F2607_HOTSHEET：Hot Sheet Viewer 的 MY ACCOUNT（行動版 nav_items 未含靜態 My Account） -->
+            <li v-if="now_user_type == 'hotsheet'"><a href="dealer/account.php">MY ACCOUNT</a></li>
+          </ul>
+          
+
+                      <a class="btn btn-gold-t menu_btn mt-0 mb-0 " href="/login.php">CUSTOMER LOGIN</a>
+            <a class="btn btn-gold-t menu_btn" href="dealer/login.php">DEALER LOGIN</a>
+            <ul class="main_ul"><li style="padding: 0;"></li></ul>
+                  </div>
+        <div class="sub_cate help">
+          <ul class="main_ul">
+            <li  class="has_sub_menu" onclick="toggle_sub_menu(this);"><a class="pointer inline" >WHERE TO BUY</a><span class="fr">＋</span>
+              <ul class="sub_ul">
+                <li><a href="dealers.php">United States Dealers</a></li>
+                <li><a href="dealers_int.php">International Dealers</a></li>
+              </ul>
+            </li>
+            <li><a href="about-our-site.html">ABOUT</a></li>
+            <li><a href="get_inspired.php">GET INSPIRED</a></li>
+            <li><a href="javascript:;">COMPARE (<span id="c-count_mob">0</span>)</a></li>
+            <li><a href="faq.php">CONTACT US</a>
+              <div class="contact_card">
+                <b>Toll Free</b> <a class="contact_link" href="tel:+ 18002217977"> 1 (800) 221-7977</a><br>
+                <b>Customer Care Hours</b><br>M-F 7am - 4pm Pacific Time<br><br>
+                <span class="chat_with_us"><b>Chat With Us</b><br><br></span>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    </div>
+        <div class="mob-nav-c-14 mob-nav-c">
+      <dl>
+        <dt><a href="javascript:;" tabindex="-1"><i class="fa fa-angle-left"></i> INTERIOR LIGHTING</a></dt>
+        <dd><a href="/interior-lighting/?kategories[]=14"><b>All Ceiling</b></a></li>
+                  <dd><a href="/interior-lighting/?kategories[]=14&featureds[]=15" tabindex="-1">Chandelier</a></dd>
+                  <dd><a href="/interior-lighting/?kategories[]=14&featureds[]=16" tabindex="-1">Mini-Chandelier</a></dd>
+                  <dd><a href="/interior-lighting/?kategories[]=14&featureds[]=17" tabindex="-1">Mini-Pendant</a></dd>
+                  <dd><a href="/interior-lighting/?kategories[]=14&featureds[]=18" tabindex="-1">Pendant</a></dd>
+                  <dd><a href="/interior-lighting/?kategories[]=14&featureds[]=19" tabindex="-1">Island</a></dd>
+                  <dd><a href="/interior-lighting/?kategories[]=14&featureds[]=20" tabindex="-1">Flush Mount</a></dd>
+                  <dd><a href="/interior-lighting/?kategories[]=14&featureds[]=21" tabindex="-1">Semi Flush</a></dd>
+              </dl>
+    </div>
+        <div class="mob-nav-c-30 mob-nav-c">
+      <dl>
+        <dt><a href="javascript:;" tabindex="-1"><i class="fa fa-angle-left"></i> INTERIOR LIGHTING</a></dt>
+        <dd><a href="/interior-lighting/?kategories[]=30"><b>All Wall</b></a></li>
+                  <dd><a href="/interior-lighting/?kategories[]=30&featureds[]=31" tabindex="-1">Bath</a></dd>
+                  <dd><a href="/interior-lighting/?kategories[]=30&featureds[]=32" tabindex="-1">Sconce</a></dd>
+                  <dd><a href="/interior-lighting/?kategories[]=30&featureds[]=34" tabindex="-1">Swing Arm</a></dd>
+              </dl>
+    </div>
+        <div class="mob-nav-c-37 mob-nav-c">
+      <dl>
+        <dt><a href="javascript:;" tabindex="-1"><i class="fa fa-angle-left"></i> INTERIOR LIGHTING</a></dt>
+        <dd><a href="/interior-lighting/?kategories[]=37"><b>All Floor</b></a></li>
+                  <dd><a href="/interior-lighting/?kategories[]=37&featureds[]=38" tabindex="-1">Floor Lamp</a></dd>
+              </dl>
+    </div>
+        <div class="mob-nav-c-41 mob-nav-c">
+      <dl>
+        <dt><a href="javascript:;" tabindex="-1"><i class="fa fa-angle-left"></i> INTERIOR LIGHTING</a></dt>
+        <dd><a href="/interior-lighting/?kategories[]=41"><b>All Table</b></a></li>
+                  <dd><a href="/interior-lighting/?kategories[]=41&featureds[]=42" tabindex="-1">Table Lamp</a></dd>
+              </dl>
+    </div>
+        <div class="mob-nav-c-44 mob-nav-c">
+      <dl>
+        <dt><a href="javascript:;" tabindex="-1"><i class="fa fa-angle-left"></i> INTERIOR LIGHTING</a></dt>
+        <dd><a href="/interior-lighting/?kategories[]=44"><b>All Accessories</b></a></li>
+                  <dd><a href="/interior-lighting/?kategories[]=44&featureds[]=46" tabindex="-1">Mirror</a></dd>
+              </dl>
+    </div>
+            <div class="mob-nav-c-53 mob-nav-c">
+      <dl>
+        <dt><a href="javascript:;" tabindex="-1"><i class="fa fa-angle-left"></i> Exterior LIGHTING</a></dt>
+        <dd><a href="/exterior-lighting/?kategories[]=53"><b>All Wall</b></a></li>
+                <dd><a href="/exterior-lighting/?kategories[]=53&featureds[]=54" tabindex="-1">Wall Mount</a></dd>
+                <dd><a href="/exterior-lighting/?kategories[]=53&featureds[]=55" tabindex="-1">Pocket Lantern</a></dd>
+              </dl>
+    </div>
+        <div class="mob-nav-c-48 mob-nav-c">
+      <dl>
+        <dt><a href="javascript:;" tabindex="-1"><i class="fa fa-angle-left"></i> Exterior LIGHTING</a></dt>
+        <dd><a href="/exterior-lighting/?kategories[]=48"><b>All Ceiling</b></a></li>
+                <dd><a href="/exterior-lighting/?kategories[]=48&featureds[]=50" tabindex="-1">Flush Mount</a></dd>
+                <dd><a href="/exterior-lighting/?kategories[]=48&featureds[]=153" tabindex="-1">Chandelier</a></dd>
+                <dd><a href="/exterior-lighting/?kategories[]=48&featureds[]=154" tabindex="-1">Pendant</a></dd>
+                <dd><a href="/exterior-lighting/?kategories[]=48&featureds[]=52" tabindex="-1">Hanging Lanterns</a></dd>
+              </dl>
+    </div>
+        <div class="mob-nav-c-56 mob-nav-c">
+      <dl>
+        <dt><a href="javascript:;" tabindex="-1"><i class="fa fa-angle-left"></i> Exterior LIGHTING</a></dt>
+        <dd><a href="/exterior-lighting/?kategories[]=56"><b>All Post Light</b></a></li>
+                <dd><a href="/exterior-lighting/?kategories[]=56&featureds[]=155" tabindex="-1">Post Lantern</a></dd>
+                <dd><a href="/exterior-lighting/?kategories[]=56&featureds[]=57" tabindex="-1">Post Mount</a></dd>
+              </dl>
+    </div>
+        <div class="mob-nav-c-58 mob-nav-c">
+      <dl>
+        <dt><a href="javascript:;" tabindex="-1"><i class="fa fa-angle-left"></i> Exterior LIGHTING</a></dt>
+        <dd><a href="/exterior-lighting/?kategories[]=58"><b>All Accessories</b></a></li>
+              </dl>
+    </div>
+                                                                      </div>
+</div>
+
+
+<div class="queryloader__overlay2" id="qLoverlay2" style="position: fixed; width: 100%; height: 100%; background-color: rgb(246, 246, 246); z-index: 667000; top: 0px; left: 0px;opacity: 1;"></div>
+
+<div class="page-wrap"> <!-- <a class="skip-to" href="#main-content">skip to main content</a> -->
+<div id="dealer_msg" class="danger"><span id="dealer_msg_span"></span><button class="close-button fr" onclick="$('#dealer_msg').hide();">✕</button></div>
+
+<header id="header" class="hidden-print">
+  <div class="header-top">
+     <div id="header-top-overlay"></div>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-xs-6 col-sm-3">
+          <p>
+                                <a class="lh-25"  href="dealer/login.php"   id="dealer_portal_link">dealer portal</a></p>
+                  </div>
+          
+          <div class="col-xs-6 col-sm-9 ar minka-nav-items">
+            <ul>
+                              <li class="pointer" ><a href="/about-our-site.html">ABOUT</a></li>
+                                                                                                    
+              <li class="pointer" ><a href="https://www.minka.com/resources.html">RESOURCES</a></li>
+                            
+              <li class="pointer" ><a href="videos/Minka-Aire">VIDEOS</a></li>
+                            <li class="header-top-dropdown-link"><a href="dealers.php">Where to Buy</a>
+                <div class="header-top-dropdown">
+                  <dl>
+                    <dd><a href="dealers.php">United States Dealers</a></dd>
+                    <dd><a href="dealers_int.php">International Dealers</a></dd>
+                  </dl>
+                </div>
+              </li>
+              
+              <li class="com-count">
+                <a href="compare.php">COMPARE (<span id="c-count">0</span>)</a>
+              </li>
+                            
+              <li class="header-top-dropdown-link no-after-border"><a href="javascript:;">LOGIN <i class="fa fa-angle-down"></i></a>
+                <div class="header-top-dropdown">
+                  <dl>
+                  <dd><a href="login.php">CUSTOMER</a></dd>
+                  <dd><a href="dealer/login.php">DEALER</a></dd>
+                  </dl>
+                </div>
+              </li>
+                            
+              <li class="question-mark-link no-after-border"><a href="javascript:;"><span class="question-mark">?</span></a>
+                <div class="question-mark-dropdown">
+                  <dl>
+                    
+                    <dd><i class="fa fa-envelope-o"></i> <strong>Email</strong><br>
+                      sales@minka.com</dd>
+                    <dd><i class="fa fa-phone"></i> <strong>Phone</strong> (951) 735-9220<br>
+                      <strong>Toll Free</strong> 1 (800) 221-7977<br>
+                      <strong>Customer Care Hours</strong><br>
+                      M - F 7am - 4pm Pacific Time</dd>
+                    <dd><a style="color:#333333;" href="/faq.php"><i class="fa fa-question-circle"></i> <strong>FAQ</strong></a><br>
+                      View our most common questions.</dd>
+                  </dl>
+                </div>
+              </li>
+            </ul>
+          </div>
+               </div>
+    </div>
+  </div>
+
+  <div id="dealerSidenav" class="dealerSidenav sidenav">
+    <div class="dealerSidenav_overlay overlay3" onclick="closeNav()"></div>
+    <div class="dealerSidenav_content">
+      <div class="nav_cate">
+        <ul>
+          <li class="nav_cate_item resources" onclick="show_sub_cate('resources');"><a>RESOURCES</a> <div class="triangle"></div> </li>
+          <li class="nav_cate_item account active"  onclick="show_sub_cate('account');"><a >ACCOUNT</a><div class="triangle"></div> </li>
+          <li class="nav_cate_item help" onclick="show_sub_cate('help');"><a >HELP</a> <div class="triangle"></div> </li>
+          <li class="nav_cate_item" @click="logout()"><a >LOGOUT</a> <div class="triangle"></div> </li>
+        </ul>
+      </div>
+      <div class="nav_sub_cate">
+        <div class="sub_cate resources">
+          <ul class="main_ul">
+            <li><a href="resources.html">RESOURCES</a></li>
+            <li><a href="Warranty_registration.php">WARRANTY</a></li>
+            <li><a href="Catalogs.php">LITERATURE</a></li>
+            <li><a href="faq.php">FAQ</a></li>
+            <li><a href="videos.php">VIDEOS</a></li>
+          </ul>
+        </div>
+        <div class="sub_cate account active">
+          <div class="title ac">$% account_title %</div>
+          <div class="greeting ac">Hello, <span id="hi_dealer_name">$% username %</span>!</div>
+
+          
+          <ul class="main_ul" v-if="now_user_type == 'power_user'">
+            <li class="has_border_top"><a href="dealer/account.php">MY ACCOUNT</a></li>
+          </ul>
+          <ul class="main_ul" v-else>
+            <li class="switch_user_wrap" v-if="user_type == 'power_user'">
+              You have successfully logged in as<br><br>
+              <span class=" gold_link">‘</span><span class="hi_dealer_name gold_link">$% now_username %</span><span class=" gold_link">’</span><br>
+              <a class="btn btn-gold-t menu_btn" @click.prevent="power_logout()">
+                SWITCH $% now_user_type === 'customer' ? 'CUSTOMER' : 'USER' %
+              </a>
+            </li>
+
+            <li
+              v-for="item in nav_items"
+              :key="item.key"
+              :class="[
+                item.classNames,
+                item.subItems
+                  ? 'flex flex-col'
+                  : 'flex align-items-center justify-content-between'
+              ]"
+            >
+              <div v-if="item.isNewFeature && !item.subItems">
+                <div class="side_nav_new_feature">
+                  NEW FEATURE
+                </div>
+
+                <a
+                  v-if="item.url || item.handler"
+                  :href="item.url"
+                  @click="(e) => handle_menu_click(e, item)"
+                  style="white-space: pre-line"
+                  :class="item.labelClassNames || ''"
+                  :target="item.target"
+                >$% item.label %</a>
+
+                <span style="white-space: pre-line" v-else>$% item.label %</span>
+              </div>
+              <a
+                v-else-if="item.handler || item.url"
+                :href="item.url"
+                @click="(e) => handle_menu_click(e, item)"
+                style="white-space: pre-line"
+                :class="item.labelClassNames || ''"
+                :target="item.target"
+              >$% item.label %</a>
+              <template v-else-if="item.subItems">
+                <div v-if="item.isNewFeature">
+                  <div class="side_nav_new_feature">
+                    NEW FEATURE
+                  </div>
+                </div>
+                <a
+                  class="pointer flex align-items-center justify-content-between w-100p"
+                  onclick="toggle_sub_menu_ar(this);"
+                  style="white-space: pre-line"
+                  :class="item.labelClassNames || ''"
+                >$% item.label %<span class="fr pointer">＋</span></a>
+              </template>
+              <ul class="sub_ul" v-if="item.subItems">
+                <li
+                  v-for="subItem in item.subItems"
+                  :key="`${item.key}-${subItem.key}`"
+                >
+                  <div v-if="subItem.isNewFeature">
+                    <div class="side_nav_new_feature">
+                      NEW FEATURE
+                    </div>
+                  </div>
+
+                  <a :href="subItem.url">
+                    $% subItem.label %
+                  </a>
+                  <span class="fr pointer star" @click="save_dashboard(subItem.key)">
+                    <img :src="'/skin/MK/_images/' + dealer_menu(subItem.key)" />
+                  </span>
+                </li>
+              </ul>
+              <span
+                v-else
+                class="fr pointer star"
+                role="button"
+                tabindex="0"
+                @click="save_dashboard(item.key)"
+                :aria-label="dealer_dashboard(item.key) ? 'Remove from dashboard' : 'Add to dashboard'"
+              >
+                <img
+                  :src="'/skin/MK/_images/' + dealer_menu(item.key)"
+                  alt="star"
+                  aria-hidden="true"
+                />
+              </span>
+            </li>
+            <li><a href="dealer/account.php">MY ACCOUNT</a></li>
+          </ul>
+          
+          <!-- <a class="btn btn-gold-t menu_btn" @click="logout()">LOG OUT</a> -->
+        </div>
+
+        <div class="sub_cate help">
+          <ul class="main_ul">
+            <li onclick="toggle_sub_menu(this);" class="has_border_top "><a class="pointer">WHERE TO BUY</a><span class="fr pointer">＋</span>
+              <ul class="sub_ul">
+                <li><a href="dealers.php">United States Dealers</a></li>
+                <li><a href="dealers_int.php">International Dealers</a></li>
+              </ul>
+            </li>
+            <li><a href="about-our-site.html">ABOUT</a></li>
+            <li><a href="get_inspired.php">GET INSPIRED</a></li>
+            <li><a href="compare.php">COMPARE (<span id="c-count_mob2">0</span>)</a></li>
+            <li><a href="help.php?section=contactus">CONTACT US</a>
+              <div class="contact_card">
+                <b>Phone</b><a class="contact_link" href="tel:+19517359220"> (951) 735-9220</a><br>
+                <b>Toll Free</b> <a class="contact_link" href="tel:+ 18002217977"> 1 (800) 221-7977</a><br>
+                <b>Customer Care Hours</b><br>M - F 7am - 4pm Pacific Time<br><br>
+                <!-- <span class="chat_with_us pointer" onclick="livechat_start_chat()"><b>Chat With Us</b><br><br></span> -->
+                <b>Email</b> <a class="contact_link" href="mailto: sales@minka.com">sales@minka.com</a><br>
+              </div>
+            </li>
+          </ul>
+        </div>
+       </div>
+    </div>
+  </div>
+
+  
+      <div class="pc-header header-website-logo">
+      <div class="col-xs-12 text-center 0">
+        <div class="pc-logo">
+          <a class="" href="https://www.minka.com/" aria-label="go to homepage">
+            
+            <img src="/skin/MK/_images/Minka_Logo.svg" alt="Minka Lighting LLC. " class="no-scrolling-logo"/>
+            <img src="/skin/MK/_images/Minka_Logo_Wordmark.svg" alt="Minka Lighting LLC. " class="scrolling-logo"/>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="pc-header header-website-brands-logo col-xs-12 text-center 0">
+      <div class="container">
+        <ul class="d-flex justify-content-center">
+          <li><a href="https://www.minka.com/george-kovacs/"><img src="/skin/MK/_images/header-logos/header-logo-01.png" alt="george-kovacs"/></a></li>
+          <li><a href="https://www.minka.com/minka-aire/"><img src="/skin/MK/_images/header-logos/header-logo-03.png" alt="minka-aire"/></a></li>
+          <li><a href="https://www.minka.com/metropolitan/"><img src="/skin/MK/_images/header-logos/header-logo-02.png" alt="metropolitan"/></a></li>
+          <li><a href="https://www.minka.com/minka-lavery/"><img src="/skin/MK/_images/header-logos/header-logo-04.png" alt="minka-lavery"/></a></li>
+        </ul>
+      </div>
+    </div>
+  
+  <div class="pc-header " id="pc-header">
+    <div  class="header-main">
+      <div class="container-fluid">
+        <div class="row">
+                      <div class="col-xs-12 col-logo 0">
+              <div class="pc-logo"><a class="" href="https://www.minka.com/" aria-label="go to homepage"><img src="/skin/MK/_images/Minka_Logo_Wordmark.svg"
+                                                                                                             alt="Minka Lighting LLC. "/></a></div>
+            </div>
+          
+          <div class="col-xs-12 col-menu nowrap ">
+            
+            <ul>
+                              <li class="dropdown-nav"><a href="/new-arrival">NEW ARRIVALS</a></li>
+                            <li class="dropdown-nav"><a href="/fans/">FANS</a>
+                <div class="dropdown-menu-sub first">
+                  <div class="clears">
+                    <dl class="fl">
+                      <dd><a href="https://www.minka.com/fans/"><b>All Fans</b></a></dd>
+                                                                  <dd><a href="/fans/?featureds[]=10">Indoor</a></dd>
+                                                                                        <dd><a href="/fans/?featureds[]=68">Outdoor</a></dd>
+                                                                                        <dd><a href="/fans/?featureds[]=119">Smart Fans</a></dd>
+                                                                                        <dd><a href="/fans/?featureds[]=11">Value</a></dd>
+                                                                                      </dl>
+                    <dl class="fl">
+                      <dd><a href="/fans/?featureds[]=151">Coastal Grade</a></dd>
+                                                                                        <dd><a href="/fans/?featureds[]=150">CCT</a></dd>
+                                                                                        <dd><a href="/fans/?featureds[]=13">Accessories</a></dd>
+                                            
+                      <dd><a href="/fans/?new_arrival=Y">New</a></dd>
+                    </dl>
+                  </div>
+                  <dl class="width-2">
+                    <dd><a class="btn btn-gold" href="choose_fans.php">CHOOSING THE RIGHT CEILING FAN</a></dd>
+                  </dl>
+                </div>
+              </li>
+              <li class="dropdown-nav"><a href="https://www.minka.com/interior-lighting/">INTERIOR LIGHTING</a>
+                <div class="dropdown-menu-sub">
+                  <dl>
+                    <dd><a href="https://www.minka.com/interior-lighting/"><b>All Interior Lighting</b></a></dd>
+                                          <dd>
+                        <a href="javascript:;" style="text-decoration:none;">Ceiling</a>
+
+                                                  <div class="dropdown-menu-3 second">
+                            <ol>
+                              <li><a href="/interior-lighting/?kategories[]=14"><b>All Ceiling</b></a></li>
+                                                                                          <li><a href="/interior-lighting/?kategories[]=14&featureds[]=15">Chandelier</a></li>
+                                                                                                                        <li><a href="/interior-lighting/?kategories[]=14&featureds[]=16">Mini-Chandelier</a></li>
+                                                                                                                        <li><a href="/interior-lighting/?kategories[]=14&featureds[]=17">Mini-Pendant</a></li>
+                                                                                                                        <li><a href="/interior-lighting/?kategories[]=14&featureds[]=18">Pendant</a></li>
+                                                                                                                        <li><a href="/interior-lighting/?kategories[]=14&featureds[]=19">Island</a></li>
+                                                                                                                        <li><a href="/interior-lighting/?kategories[]=14&featureds[]=20">Flush Mount</a></li>
+                                                                                                                      </ol>
+                            <ol>
+                              <li><a href="/interior-lighting/?kategories[]=14&featureds[]=21">Semi Flush</a></li>
+                                                                                        </ol>
+                          </div>
+                                              </dd>
+                                          <dd>
+                        <a href="javascript:;" style="text-decoration:none;">Wall</a>
+
+                                                  <div class="dropdown-menu-3 second">
+                            <ol>
+                              <li><a href="/interior-lighting/?kategories[]=30"><b>All Wall</b></a></li>
+                                                                                          <li><a href="/interior-lighting/?kategories[]=30&featureds[]=31">Bath</a></li>
+                                                                                                                        <li><a href="/interior-lighting/?kategories[]=30&featureds[]=32">Sconce</a></li>
+                                                                                                                        <li><a href="/interior-lighting/?kategories[]=30&featureds[]=34">Swing Arm</a></li>
+                                                                                        </ol>
+                          </div>
+                                              </dd>
+                                          <dd>
+                        <a href="javascript:;" style="text-decoration:none;">Floor</a>
+
+                                                  <div class="dropdown-menu-3 second">
+                            <ol>
+                              <li><a href="/interior-lighting/?kategories[]=37"><b>All Floor</b></a></li>
+                                                                                          <li><a href="/interior-lighting/?kategories[]=37&featureds[]=38">Floor Lamp</a></li>
+                                                                                        </ol>
+                          </div>
+                                              </dd>
+                                          <dd>
+                        <a href="javascript:;" style="text-decoration:none;">Table</a>
+
+                                                  <div class="dropdown-menu-3 second">
+                            <ol>
+                              <li><a href="/interior-lighting/?kategories[]=41"><b>All Table</b></a></li>
+                                                                                          <li><a href="/interior-lighting/?kategories[]=41&featureds[]=42">Table Lamp</a></li>
+                                                                                        </ol>
+                          </div>
+                                              </dd>
+                                          <dd>
+                        <a href="javascript:;" style="text-decoration:none;">Accessories</a>
+
+                                                  <div class="dropdown-menu-3 second">
+                            <ol>
+                              <li><a href="/interior-lighting/?kategories[]=44"><b>All Accessories</b></a></li>
+                                                                                          <li><a href="/interior-lighting/?kategories[]=44&featureds[]=46">Mirror</a></li>
+                                                                                        </ol>
+                          </div>
+                                              </dd>
+                                        <dd><a href="/interior-lighting/?new_arrival=Y" style="text-decoration:none;">New</a></dd>
+                    <dd><a class="btn btn-gold" href="choose_style.php">FIND YOUR STYLE</a></dd>
+                  </dl>
+                </div>
+              </li>
+              <li class="dropdown-nav"><a href="https://www.minka.com/exterior-lighting/">EXTERIOR LIGHTING</a>
+                <div class="dropdown-menu-sub">
+                  <dl>
+                    <dd><a href="https://www.minka.com/exterior-lighting/"><b>All Exterior Lighting</b></a></dd>
+                                        <dd><a href="javascript:;" style="text-decoration:none;">Wall</a>
+                      <div class="dropdown-menu-3">
+                        <ol>
+                          <li><a href="/exterior-lighting/?kategories[]=53"><b>All Wall</b></a></li>
+                                                      <li><a href="/exterior-lighting/?kategories[]=53&featureds[]=54">Wall Mount</a></li>
+                                                      <li><a href="/exterior-lighting/?kategories[]=53&featureds[]=55">Pocket Lantern</a></li>
+                                                  </ol>
+                      </div>
+                    </dd>
+                                        <dd><a href="javascript:;" style="text-decoration:none;">Ceiling</a>
+                      <div class="dropdown-menu-3">
+                        <ol>
+                          <li><a href="/exterior-lighting/?kategories[]=48"><b>All Ceiling</b></a></li>
+                                                      <li><a href="/exterior-lighting/?kategories[]=48&featureds[]=50">Flush Mount</a></li>
+                                                      <li><a href="/exterior-lighting/?kategories[]=48&featureds[]=153">Chandelier</a></li>
+                                                      <li><a href="/exterior-lighting/?kategories[]=48&featureds[]=154">Pendant</a></li>
+                                                      <li><a href="/exterior-lighting/?kategories[]=48&featureds[]=52">Hanging Lanterns</a></li>
+                                                  </ol>
+                      </div>
+                    </dd>
+                                        <dd><a href="javascript:;" style="text-decoration:none;">Post Light</a>
+                      <div class="dropdown-menu-3">
+                        <ol>
+                          <li><a href="/exterior-lighting/?kategories[]=56"><b>All Post Light</b></a></li>
+                                                      <li><a href="/exterior-lighting/?kategories[]=56&featureds[]=155">Post Lantern</a></li>
+                                                      <li><a href="/exterior-lighting/?kategories[]=56&featureds[]=57">Post Mount</a></li>
+                                                  </ol>
+                      </div>
+                    </dd>
+                                        <dd><a href="javascript:;" style="text-decoration:none;">Accessories</a>
+                      <div class="dropdown-menu-3">
+                        <ol>
+                          <li><a href="/exterior-lighting/?kategories[]=58"><b>All Accessories</b></a></li>
+                                                  </ol>
+                      </div>
+                    </dd>
+                                        <dd><a href="/exterior-lighting/?new_arrival=Y" style="text-decoration:none;">New</a></dd>
+                    <dd><a class="btn btn-gold" href="choose_style.php?pcat=Exterior">FIND YOUR STYLE</a></dd>
+                  </dl>
+                </div>
+              </li>
+
+              
+                              <li class="dropdown-nav"><a href="https://www.minka.com/brands/">BRANDS</a>
+                  <div class="dropdown-menu-sub">
+                    <dl>
+                      <dd><a href="https://www.minka.com/brands/"><b>All Brands</b></a></dd>
+                      
+                                                  <dd>
+                                                        <a href="https://www.minka.com/minka-lavery/">Minka-Lavery&reg;</a>
+                                                      </dd>
+                                                  <dd>
+                                                        <a href="https://www.minka.com/minka-aire/">Minka-Aire&reg;</a>
+                                                      </dd>
+                                                  <dd>
+                                                        <a href="https://www.minka.com/metropolitan/">Metropolitan&reg;</a>
+                                                      </dd>
+                                                  <dd>
+                                                        <a href="https://www.minka.com/george-kovacs/">George Kovacs&reg;</a>
+                                                      </dd>
+                                                  <dd>
+                                                        <a href="https://www.minka.com/the-great-outdoors/">The Great Outdoors&reg;</a>
+                                                      </dd>
+                                                  <dd>
+                                                        <a href="https://www.minka.com/vantage/">Vantage&reg;</a>
+                                                      </dd>
+                        
+                                          </dl>
+                  </div>
+                </li>
+              
+                              <li class="dropdown-nav"><a href="https://www.minka.com/styles/">STYLES</a>
+                  <div class="dropdown-menu-sub">
+                    <dl>
+                      <dd><a href="https://www.minka.com/styles/"><b>All Styles</b></a></dd>
+                                                                        <dd><a href="/styles/?styles[]=Contemporary">Modern/Contemporary</a></dd>
+                                                                                                  <dd><a href="/styles/?styles[]=Traditional">Traditional</a></dd>
+                                                                                                <dd><a href="/styles/?styles[]=Transitional">Transitional</a></dd>
+                                                                  </dl>
+                  </div>
+                </li>
+
+                                
+                  <li class="dropdown-nav no-after-border">
+                    <a class="" href="/get_inspired.php" aria-label="go to get inspired">GET INSPIRED</a>
+                  </li>
+
+              
+              <li class="" id="navbar-search">
+                <a class="search-link" href data-toggle="modal" data-target="#search-modal">
+                  <div class="icon icon-search"><span style="opacity:0;display: inline;">.</span></div>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  
+    <div class="tablet-menu">
+      <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <button type="button" class="navbar-link " aria-label="open nav"><span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span></button>
+            <div class="navbar-brand logo text-center">
+              <a href="https://www.minka.com/" class="d-inline-block">
+                
+                <img src="/skin/MK/_images/Minka_Logo.svg" alt="Minka Lighting LLC. " class="no-scrolling-logo"/>
+                <img src="/skin/MK/_images/Minka_Logo_Wordmark.svg" alt="Minka Lighting LLC. " class="scrolling-logo"/>
+              </a>
+            </div>
+
+            <a class="mob-search-btn" href data-toggle="modal" data-target="#search-modal" data-backdrop="false" aria-label="open search modal">
+              <div class="icon icon-search"></div>
+              <div class="mob-search-icon"><span class="line-bar"></span><span class="line-bar"></span></div>
+            </a>
+          </div>
+
+          <div class="header-website-brands-logo col-xs-12 text-center 0">
+            <div class="container">
+              <ul class="d-flex justify-content-center">
+                <li><a href="https://www.minka.com/george-kovacs/"><img src="/skin/MK/_images/header-logos/header-logo-01.png" alt="george-kovacs"/></a></li>
+                <li><a href="https://www.minka.com/minka-aire/"><img src="/skin/MK/_images/header-logos/header-logo-03.png" alt="minka-aire"/></a></li>
+                <li><a href="https://www.minka.com/metropolitan/"><img src="/skin/MK/_images/header-logos/header-logo-02.png" alt="metropolitan"/></a></li>
+                <li><a href="https://www.minka.com/minka-lavery/"><img src="/skin/MK/_images/header-logos/header-logo-04.png" alt="minka-lavery"/></a></li>
+              </ul>
+            </div>
+          </div>
+
+
+          <!--/.nav-collapse -->
+        </div>
+        <!--/.container-fluid -->
+      </nav>
+    </div>
+
+
+    <div class="mob-menu">
+      <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+        <div>
+          <div class="header-website-brands-logo col-xs-12 text-center 0">
+            <div class="container">
+              <div class="d-flex justify-content-between">
+                <div class="mob-menu__header-website-brands-logo__brand-logos">
+                  <div><a href="https://www.minka.com/minka-lavery/"><img src="/skin/MK/_images/header-logos/header-logo-04.png" alt="minka-lavery"/></a></div>
+                  <div><a href="https://www.minka.com/metropolitan/"><img src="/skin/MK/_images/header-logos/header-logo-02.png" alt="metropolitan"/></a></div>
+                </div>
+
+                <div class="mob-menu__header-website-brands-logo__brand-logos">
+                  <div class="mob-menu__header-website-brands-logo__brand-logos__website_logo_block"><a href="https://www.minka.com/" class="d-inline-block"><img src="/skin/MK/_images/Minka_Logo.svg" alt="logo" class="img-website-logo"/></a></div>
+                </div>
+
+                <div class="mob-menu__header-website-brands-logo__brand-logos">
+                  <div><a href="https://www.minka.com/minka-aire/"><img src="/skin/MK/_images/header-logos/header-logo-03.png" alt="minka-aire"/></a></div>
+                  <div><a href="https://www.minka.com/george-kovacs/"><img src="/skin/MK/_images/header-logos/header-logo-01.png" alt="george-kovacs"/></a></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="navbar-header">
+            <button type="button" class="navbar-link " aria-label="open nav"><span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span></button>
+            <div class="navbar-brand logo text-center">
+              <a href="https://www.minka.com/" class="d-inline-block">
+                
+
+                <img src="/skin/MK/_images/Minka_Logo_Wordmark.svg" alt="Minka Lighting LLC. " class="scrolling-logo"/>
+              </a>
+            </div>
+
+            <a class="mob-search-btn" href data-toggle="modal" data-target="#search-modal" data-backdrop="false" aria-label="open search modal">
+              <div class="icon icon-search"></div>
+              <div class="mob-search-icon"><span class="line-bar"></span><span class="line-bar"></span></div>
+            </a>
+          </div>
+          <!--/.nav-collapse -->
+        </div>
+        <!--/.container-fluid -->
+      </nav>
+    </div>
+
+  </header>
+
+<div class="nav-dropdown">
+  <div class="container-fluid">
+    <div class="nav-dropdown-main">
+      <div class="row" id="nav-2">
+        <div class="col-xs-12 ac"> <img src="https://d11ijat5yj4icx.cloudfront.net/menu/1520318196HOV1-Fans.jpg" alt="navigation background" aria-hidden="true"> </div>
+      </div>
+      <div class="row" id="nav-3">
+        <div class="col-xs-12 ac"> <img src="https://d11ijat5yj4icx.cloudfront.net/menu/1721232034Banner.jpg" alt="navigation background" aria-hidden="true"> </div>
+      </div>
+      <div class="row" id="nav-4">
+        <div class="col-xs-12 ac"> <img src="https://d11ijat5yj4icx.cloudfront.net/menu/1520318488HOV3-Exterior-Lighting.jpg" alt="navigation background" aria-hidden="true"> </div>
+      </div>
+      <div class="row" id="nav-5">
+        <div class="col-xs-12 ac"> <img src="https://d11ijat5yj4icx.cloudfront.net/menu/1673475712N7986-420-Presten.jpg" alt="navigation background" aria-hidden="true"> </div>
+      </div>
+      <div class="row" id="nav-6">
+        <div class="col-xs-12 ac"> <img src="https://d11ijat5yj4icx.cloudfront.net/menu/1553712915WebBannerArtemis.png" alt="navigation background" aria-hidden="true"> </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade dealer_mob_full_modal search-modal search-modal-v2" tabindex="-1" role="dialog" id="search-modal">
+  <div class="modal-dialog search-modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-body">
+        <form method="post" action="search.php" name="productsearchform">
+          <input type="hidden" name="simple_search" value="Y" />
+          <input type="hidden" name="mode" value="search" />
+          <input type="hidden" name="posted_data[by_title]" value="Y" />
+          <input type="hidden" name="posted_data[by_descr]" value="Y" />
+          <input type="hidden" name="posted_data[by_sku]" value="Y" />
+          <input type="hidden" name="posted_data[search_in_subcategories]" value="Y" />
+          <input type="hidden" name="posted_data[including]" value="all" />
+
+          <div class="search-modal-bar">
+            <button type="submit" class="btn btn-default" aria-label="search">
+              <span class="icon icon-search"></span>
+            </button>
+            <input type="search" id="search" aria-label="Search" placeholder="SEARCH" name="posted_data[substring]" value="" class="form-control substring" autocomplete="off">
+            <a href="#" class="search-modal-bar__close" data-dismiss="modal" aria-label="close search modal">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </a>
+          </div>
+
+          <div class="search-modal-body">
+            <div class="search-modal-links">
+              <div id="popular-searches-container" style="display: none; margin-bottom: 20px;">
+                <div class="search-modal-links__title">Popular Searches</div>
+                <ul id="popular-searches-list"></ul>
+              </div>
+              <div class="search-modal-links__title">Quick Links</div>
+              <ul>
+                                  <li><a href="/Warranty_registration.php">Warranty Registration</a></li>
+                                  <li><a href="/manual.php">Instruction Manuals</a></li>
+                                  <li><a href="/Catalogs.php">Catalogs</a></li>
+                                  <li><a href="/faq.php">Contact Us</a></li>
+                                  <li><a href="https://www.minka.com/search.php?mode=search&substring=Winter%202026&keep_https=yes">NEW Winter 2026</a></li>
+                                  <li><a href="https://www.minka.com/search.php?mode=search&substring=Summer%202026&keep_https=yes">NEW Summer 2026</a></li>
+                                  <li><a href="https://www.minka.com/search.php?mode=search&substring=Fall%202026&keep_https=yes">Coming Fall 2026</a></li>
+                              </ul>
+            </div>
+            <div class="search-modal-results"></div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade dealer_mob_full_modal archive_download_modal" tabindex="-1" role="dialog" id="specs_modal">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">✕</button>
+        <h3 class="modal-title">Download Product Specifications for all Products</h3>
+      </div>
+      <div class="modal-body">
+        <p>
+          The specifications will be bundled in a zip file. Due to its size,
+          downloading may take some time, so your patience is appreciated.
+          Kindly choose the division(s) for the product specifications you’d like to download.
+        </p>
+
+        <p>
+                      <label v-if="available_divisions.includes('MIN')">
+              <input type="checkbox" value="MIN" v-model="divisions">
+              Minka-Lavery
+            </label>
+            <label v-if="available_divisions.includes('AIR')">
+              <input type="checkbox" value="AIR" v-model="divisions">
+              Minka-Aire
+            </label>
+            <label v-if="available_divisions.includes('KOV')">
+              <input type="checkbox" value="KOV" v-model="divisions">
+              George Kovacs
+            </label>
+            <label v-if="available_divisions.includes('MET')">
+              <input type="checkbox" value="MET" v-model="divisions">
+              Metropolitan
+            </label>
+                  </p>
+      </div>
+      <div class="modal-footer ac">
+        <button type="button" class="btn btn-white btn-outline w-40p fw-xs" data-dismiss="modal">
+          Close
+        </button>
+        <button
+          type="button"
+          class="btn btn-black w-40p fw-xs"
+          :class="divisions.length ? '' : 'btn-disabled'"
+          :disabled="! divisions.length"
+          @click="download"
+        >
+          Download
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade dealer_mob_full_modal archive_download_modal" tabindex="-1" role="dialog" id="manuals_modal">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">✕</button>
+        <h3 class="modal-title">Download Instruction Manuals for all Products</h3>
+      </div>
+      <div class="modal-body">
+        <p>
+          The instruction manuals will be bundled in a zip file. Due to its size,
+          downloading may take some time, so your patience is appreciated.
+          Kindly choose the division(s) for the product instruction manuals you’d like to download.
+        </p>
+
+        <p>
+                      <label v-if="user_available_divisions.includes('MIN')">
+              <input
+                type="checkbox"
+                value="MIN"
+                v-model="divisions"
+                :disabled="! available_divisions.includes('MIN')"
+              >
+              Minka-Lavery
+            </label>
+            <label v-if="user_available_divisions.includes('AIR')">
+              <input
+                type="checkbox"
+                value="AIR"
+                v-model="divisions"
+                :disabled="! available_divisions.includes('AIR')"
+              >
+              Minka-Aire
+            </label>
+            <label v-if="user_available_divisions.includes('KOV')">
+              <input
+                type="checkbox"
+                value="KOV"
+                v-model="divisions"
+                :disabled="! available_divisions.includes('KOV')"
+              >
+              George Kovacs
+            </label>
+            <label v-if="user_available_divisions.includes('MET')">
+              <input
+                type="checkbox"
+                value="MET"
+                v-model="divisions"
+                :disabled="! available_divisions.includes('MET')"
+              >
+              Metropolitan
+            </label>
+                  </p>
+
+        <p>
+          Please select the language(s) you wish to download.
+        </p>
+
+        <p>
+          <label>
+            <input
+              type="checkbox"
+              value="EN"
+              v-model="languages"
+              :disabled="! available_languages.includes('EN')"
+            >
+            English
+          </label>
+
+          <label>
+            <input
+              type="checkbox"
+              value="ES"
+              v-model="languages"
+              :disabled="! available_languages.includes('ES')"
+            >
+            Spanish
+          </label>
+        </p>
+      </div>
+      <div class="modal-footer ac">
+        <button type="button" class="btn btn-white btn-outline w-40p fw-xs" data-dismiss="modal">
+          Close
+        </button>
+        <button
+          type="button"
+          class="btn btn-black w-40p fw-xs"
+          :class="divisions.length && languages.length? '' : 'btn-disabled'"
+          :disabled="! divisions.length || ! languages.length"
+          @click="download"
+        >
+          Download
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade dealer_mob_full_modal" id="upload_purchase_order_ocr_modal" tabindex="-1" role="dialog" aria-labelledby="uploadPurchaseOrderOcrLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">✕</button>
+        <h3 class="modal-title" id="uploadPurchaseOrderOcrLabel">$% modalTitle %</h3>
+      </div>
+
+      <div class="modal-body">
+        <div class="alert alert-warning">
+          <p>The files you uploaded will be processed by Al with approximately 90% accuracy. </p>
+          <p class="mt-10">For best results, upload a <b>clear, high-resolution</b> PDF.
+            Low-quality scans (low resolution, blurry, handwritten, or marked pages) may cause OCR errors. If the file quality is poor, <b>we may not be able to read all details or process the order</b>.
+          </p>
+          <p class="mt-10">Reviewing the details helps Minka process faster and ship sooner. Skipping the review will follow the standard timeline.</p>
+          <p class="mt-10"><b>Note:</b> Uploading multiple files at once will skip the review and send them directly to Minka.</p>
+        </div>
+
+        <div
+          class="upload-dropzone"
+          :class="{ 'dragover': isDraggingOver }"
+          @dragenter.prevent="isDraggingOver = true"
+          @dragover.prevent="isDraggingOver = true"
+          @dragleave.prevent="isDraggingOver = false"
+          @drop.prevent="handleDrop"
+          style="border:2px dashed #ccc; padding:30px; text-align:center; cursor: pointer; transition: background-color 0.2s ease;"
+          @click="$refs.fileInput.click()"
+        >
+          <p style="font-size: 16px;">
+            <span class="icon-cloud-upload" style="font-size: 36px; display: block; margin-bottom: 10px;"></span>
+            Choose a file or drag &amp; drop it here.
+          </p>
+          <p class="text-muted">JPEG, PNG, and PDF formats, up to 3 MB.</p>
+          <button
+            type="button"
+            class="btn btn-outline btn-white mt-20"
+            @click.stop="$refs.fileInput.click()"
+          >
+            BROWSE FILE
+          </button>
+          <input
+            type="file"
+            ref="fileInput"
+            multiple
+            style="display:none;"
+            accept=".jpg,.jpeg,.png,.pdf"
+            @change="handleFileChange"
+          />
+        </div>
+
+        <ul v-if="uploadFiles.length > 0" class="list-group" style="margin-top:15px;">
+          <li
+            class="list-group-item"
+            v-for="(file, idx) in uploadFiles"
+            :key="idx"
+          >
+            <div class="pull-left">
+              <i class="fa fa-file-o"></i>
+              $% file.name %
+              <small class="text-muted">($% (file.size/1024).toFixed(0) % KB)</small>
+            </div>
+            <button type="button" class="close" @click="removeFile(idx)" :disabled="isUploading">
+              &times;
+            </button>
+            <div class="clearfix"></div>
+          </li>
+        </ul>
+      </div>
+
+      <div class="modal-footer text-center" style="text-align: center">
+        <p class="text-muted mb-20" v-if="uploadFiles.length > 0">
+          Would you prefer to send the customer purchase order directly to Minka, or review it first before sending?
+        </p>
+        <button type="button" class="btn btn-outline btn-white" data-dismiss="modal">
+          CANCEL
+        </button>
+
+        <button
+          type="button"
+          class="btn btn-black hidden-xs"
+          :disabled="isUploading || uploadFiles.length !== 1"
+          title="Please upload a single file to review."
+          @click="submitUpload({ review: true })"
+        >
+          <span v-if="isUploading && uploadAction === 'review'"><i class="fa fa-spinner fa-spin"></i> Uploading...</span>
+          <span v-else>REVIEW FIRST</span>
+        </button>
+
+        <button
+          type="button"
+          class="btn btn-black"
+          :disabled="isUploading || uploadFiles.length === 0"
+          @click="submitUpload({ review: false })"
+        >
+          <span v-if="isUploading && uploadAction === 'send'"><i class="fa fa-spinner fa-spin"></i> Uploading...</span>
+          <span v-else>SEND TO MINKA</span>
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="upload_success_modal" tabindex="-1" role="dialog" aria-labelledby="uploadSuccessModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header" style="border-bottom: 1px solid #eeeeee;">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h3 class="modal-title" id="uploadSuccessModalLabel" style="font-weight: normal;">Upload Customer Purchase Order</h3>
+      </div>
+      <div class="modal-body" style="padding: 40px 20px;">
+        <p>We've received your customer purchase order and will process it as soon as possible. Thank you for your patience!</p>
+      </div>
+      <div class="modal-footer text-center" style="border-top: none; padding-bottom: 30px; text-align: center;">
+        <button type="button" class="btn btn-black" data-dismiss="modal" style="min-width: 200px;">OK</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<noscript>
+  <div class="noscript-warning">
+    <div class="content">This site requires JavaScript to function properly.<br />Please enable JavaScript in your web browser.</div>
+  </div>
+</noscript>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js" integrity="sha512-XMVd28F1oH/O71fzwBnV7HucLxVwtxf26XV8P4wPk26EDxuGZ91N8bsOttmnomcCD3CS5ZMRL50H0GgOHvegtg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.5/FileSaver.min.js" integrity="sha512-Qlv6VSKh1gDKGoJbnyA5RMXYcvnpIqhO++MhIM2fStMcGT9i2T//tSwYFlcyoRRDcDZ+TYHpH8azBBCyhpSeqw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<script type="text/javascript">
+  
+  // This ensures the Vue instance is created only once.
+  if (!window.vue_upload_po_modal) {
+    window.vue_upload_po_modal = new Vue({
+      el: '#upload_purchase_order_ocr_modal',
+      delimiters: ['$%', '%'],
+      data: {
+        uploadFiles: [],
+        isUploading: false,
+        isDraggingOver: false,
+        uploadAction: null, // 'review' or 'send'
+        customer_no: null,
+      },
+      computed: {
+        modalTitle() {
+          return this.customer_no
+            ? `Upload ${this.customer_no} Purchase Order`
+            : 'Upload Customer Purchase Order';
+        }
+      },
+      mounted() {
+        const vm = this;
+        $('#upload_purchase_order_ocr_modal').on('show.bs.modal', function () {
+          try {
+            const cookieValue = window.getCookie('dealer_customer');
+            if (cookieValue) {
+              const decodedValue = decodeURIComponent(cookieValue);
+              const customerData = JSON.parse(decodedValue);
+              vm.customer_no = (customerData && customerData.attributes && customerData.attributes.no) ? customerData.attributes.no : null;
+            } else {
+              vm.customer_no = null;
+            }
+          } catch (e) {
+            console.error('Error parsing customer data from cookie:', e);
+            vm.customer_no = null;
+          }
+        });
+      },
+      methods: {
+        handleDrop(e) {
+          this.isDraggingOver = false;
+          const files = Array.from(e.dataTransfer.files);
+          this.addFiles(files);
+        },
+        handleFileChange(e) {
+          const files = Array.from(e.target.files);
+          this.addFiles(files);
+          // Reset the input so the user can select the same file again if needed
+          e.target.value = null;
+        },
+        addFiles(files) {
+          const allowedTypes = ['image/jpeg', 'image/png', 'application/pdf'];
+          const maxFileSize = 3 * 1024 * 1024;
+
+          files.forEach(file => {
+            if (!allowedTypes.includes(file.type)) {
+              alert(`File type not supported for: ${file.name}`);
+              return;
+            }
+            if (file.size > maxFileSize) {
+              alert(`File size exceeds 3 MB for: ${file.name}`);
+              return;
+            }
+            this.uploadFiles.push(file);
+          });
+        },
+        removeFile(index) {
+          this.uploadFiles.splice(index, 1);
+        },
+        submitUpload(options) {
+          if (this.uploadFiles.length === 0 || this.isUploading) {
+            return;
+          }
+
+          this.isUploading = true;
+          this.uploadAction = options.review ? 'review' : 'send';
+
+          const formData = new FormData();
+          this.uploadFiles.forEach(file => {
+            formData.append('files[]', file);
+          });
+
+          // Using standard jQuery AJAX as in reference code
+          $.ajax({
+            url: 'dealer/admin_purchase_order_ocr.php?mode=upload&dealer_user_email=' + vue_dealer_head.user.attributes.email,
+            type: 'POST',
+            data: formData,
+            dataType: 'json',
+            cache: false,
+            contentType: false,
+            processData: false,
+            success: resp => {
+              if (resp.status === 200 && resp.uploads && resp.uploads.length > 0) {
+                // Upload was successful
+                $('#upload_purchase_order_ocr_modal').modal('hide');
+
+                if (options.review) {
+                  // REVIEW FIRST: Redirect to the edit page of the first uploaded file
+                  const firstOcrId = resp.uploads[0].ocr_id;
+                  dealer_show_msg('Upload successful. You can now review the details.', 'success');
+                  window.location.href = `dealer/admin_purchase_order_ocr.php?mode=view&id=${firstOcrId}`;
+                } else {
+                  $('#upload_success_modal').modal('show');
+                }
+              } else {
+                // Handle backend errors
+                dealer_show_msg_nextpage(resp.msg || 'Upload failed. Please try again.', 'error');
+              }
+            },
+            error: (jqXHR, textStatus, errorThrown) => {
+              dealer_show_msg_nextpage('A system error occurred during upload. Please contact support.', 'error');
+            },
+            complete: () => {
+              // Reset state regardless of success or failure
+              this.isUploading = false;
+              this.uploadAction = null;
+              this.uploadFiles = []; // Clear files after upload attempt
+            }
+          });
+        }
+      }
+    });
+  }
+  
+</script>
+
+<script type="text/javascript">
+  
+  function emphasize(text, keyword) {
+    return text.replace(new RegExp(keyword,'gi'), '<em>' + keyword + '</em>');
+  }
+
+  function escapeHtml(text) {
+    if (typeof text !== 'string') return text;
+    return text.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;').replace(/'/g, '&#039;');
+  }
+
+  function searchKeyword(keyword) {
+    var $searchResults = $('.search-modal-results');
+    var loadingHtml = '<div class="search-loader-wrapper"><div class="search-loader"></div></div>';
+    $searchResults.html(loadingHtml).show();
+
+    $.ajax({
+      type: 'GET',
+      url: '/search.php?mode=search&ajax=Y&substring=' + encodeURIComponent(keyword),
+      dataType: 'json',
+      success: function(data) {
+        if (data.length > 0) {
+          var productsHtml = '';
+
+          if (data[0].is_correction) {
+            productsHtml += '<div class="search-correction-message text-center" style="width: 100%; margin-bottom: 20px;">';
+            productsHtml += '<strong>No results found for "' + escapeHtml(keyword) + '</strong>"<br>';
+            productsHtml += '  Here are some similar results that might help:';
+            productsHtml += '</div>';
+          }
+
+          for (var i = 0; i < Math.min(data.length, 10); i++) {
+            var product = data[i];
+
+            // 根據 forsale 狀態決定連結
+            var productUrl = '#';
+            var linkClass = 'quick-shop-link';
+            var relAttr = '';
+
+            if (product.forsale == 'Y') {
+              productUrl = '/product.php?productid=' + product.productid;
+              linkClass = ''; // 一般產品連結
+            } else if (product.forsale == 'I') {
+              productUrl = 'javascript:;'; // 保持舊有的 quick-shop 行為
+              linkClass = 'quick-shop-link-search';
+              relAttr = ' rel="' + product.productid + '"';
+            }
+
+            // --- 建立 p-index-box HTML ---
+            productsHtml += '<div class="p-index-box">';
+            productsHtml += '  <div class="p-index-box-img">';
+            productsHtml += '    <a href="' + productUrl + '"' + (linkClass ? ' class="' + linkClass + '"' : '') + relAttr + '>';
+            var imageUrl = product.tmbn_url ? product.tmbn_url : '/Minka-No-Image-Available.jpg';
+            productsHtml += '      <img src="' + imageUrl + '" alt="' + escapeHtml(product.descr) + '">';
+            productsHtml += '    </a>';
+            productsHtml += '  </div>'; // end p-index-box-img
+
+            productsHtml += '  <div class="p-index-box-txt ac">';
+            // 促銷標語（含 HTML），置於 short description 之前
+            if (product.promotion_label) {
+              productsHtml += '    <div class="promotion-label">' + product.promotion_label + '</div>';
+            }
+            productsHtml += '    <p>' + escapeHtml(product.descr) + '</p>';
+            productsHtml += '    <h6 class="product-no" data-product-no="' + escapeHtml(product.productcode) + '">' + escapeHtml(product.productcode) + '  ' + escapeHtml(product.brand) + '®</h6>';
+            productsHtml += '  </div>'; // end p-index-box-txt
+            productsHtml += '</div>'; // end p-index-box
+          }
+
+          // 加上 "View more" 連結
+          if (data.length >= 6) {
+            productsHtml += '<div class="search-modal-footer"><a href="/search.php?mode=search&substring=' + keyword + '">View more results</a></div>';
+          }
+
+
+          // 替換 loading，並套用 flex 樣式
+          $searchResults.html(productsHtml).css('display', 'flex');
+
+        } else {
+          // 1. 處理 "No Results"
+          var noResultsHtml = '<div class="search-no-results">No Results for "' + escapeHtml(keyword) + '"</div>';
+
+          // 替換 loading，並使用 .show() (這會是預設的 display: block)
+          $searchResults.html(noResultsHtml).css('display', 'flex');
+        }
+      },
+      error: function() {
+        // (建議) 處理 AJAX 錯誤，避免 loading 卡住
+        var errorHtml = '<div class="search-no-results">Search failed. Please try again.</div>';
+        $searchResults.html(errorHtml).css('display', 'flex');
+      }
+    });
+  }
+
+
+  $(function() {
+    var popularSearchesLoaded = false;
+    $('#search-modal').on('shown.bs.modal', function () {
+      
+      var default_keyword = 'Norwynd';
+      if (default_keyword && $('#search').val().trim() === '') {
+        searchKeyword(default_keyword);
+      }
+      
+        if (!popularSearchesLoaded) {
+            $.ajax({
+                type: 'GET',
+                url: '/get_popular_searches.php',
+                dataType: 'json',
+                success: function(data) {
+                    if (data && data.length > 0) {
+                        var popularHtml = '';
+                        data.forEach(function(keyword) {
+                            popularHtml += '<li><a href="/search.php?mode=search&substring=' + encodeURIComponent(keyword) + '">' + keyword + '</a></li>';
+                        });
+                        $('#popular-searches-list').html(popularHtml);
+                        $('#popular-searches-container').show();
+                        popularSearchesLoaded = true;
+                    }
+                }
+            });
+        }
+    });
+
+    var searchTimeout;
+
+    $('#search').on('input', function() {
+      var keyword = $(this).val().trim();
+
+      // console.log(keyword);
+      if (keyword.length < 3) {
+        clearTimeout(searchTimeout);
+
+        $('.search-modal-results').html('').hide();
+        $('.search-modal-links').show();
+
+        return;
+      }
+
+      clearTimeout(searchTimeout);
+
+      searchTimeout = setTimeout(function() {
+        var safeKeyword = escapeHtml(keyword);
+        searchKeyword(keyword);
+      }, 200);
+
+    });
+
+    //dealer portal item pop up quickview
+    $(document).on('click', '.quick-shop-link-search', function(e) {
+      e.preventDefault();
+
+      $('.search-modal').modal('hide');
+
+      var pid = $(this).prop('rel');
+      $.ajax({
+      type: "GET",
+      url: "quick_view.php?mode=search&productid="+pid,
+      data: "",
+      cache:false,
+      error: function() {
+        alert("System Error !!");
+      },
+      success: function(cmsg){
+
+        if(cmsg){
+          $('.quick-shop-pop-main').css("width","552px");
+          $('.quick-shop-pop-main').css("height","auto");
+          $('.quick-shop-pop-main').html(cmsg);
+          $(".quick-shop-pop").addClass("active").fadeIn();
+        }
+      }
+      });
+      return false;
+    });
+  });
+
+  vue_pc_head = new Vue({
+    name: 'PcHead',
+    el: '#pc-header',
+    delimiters: ['$%', '%'],
+    data: {
+      permissions: {},
+      customer: {}
+    },
+    created: function() {
+      var _this = this;
+      VueBus.$on("login", function() {
+        _this.permissions = vue_dealer_head.$data.permissions;
+        _this.customer = vue_dealer_head.$data.customer;
+      })
+    },
+  })
+
+  window.vue_dealer_specs_modal = new Vue({
+    el: '#specs_modal',
+    data: {
+      available_divisions: [],
+      divisions: [],
+    },
+    methods: {
+      download() {
+        this.divisions.forEach((division, i) => {
+          setTimeout(() => {
+            window.open(`/_/dealer/specs-archive/${division}`, '_blank')
+          }, 30 * i + 1)
+        })
+      }
+    },
+    created() {
+      VueBus.$on('login', ()  => {
+        this.available_divisions = vue_dealer_head.$data
+          .available_divisions
+          .map((div) => div.code);
+      });
+    },
+  })
+
+  window.vue_dealer_manuals_modal = new Vue({
+    el: '#manuals_modal',
+    data: {
+      user_available_divisions: [],
+      divisions: [],
+      languages: [],
+
+      // array of { division: string, language: string, isAvailable: boolean }
+      archives_availabilities: [],
+    },
+    computed: {
+      available_divisions() {
+        if (this.archives_availabilities.length === 0) {
+          return this.user_available_divisions;
+        }
+
+        // Group by division
+        const division_map = {};
+
+        for (const item of this.archives_availabilities) {
+          const { division, language, isAvailable } = item;
+          if (!division_map[division]) {
+            division_map[division] = {};
+          }
+          division_map[division][language] = isAvailable;
+        }
+
+        // If no language is selected, return any division that has isAvailable = true in any language
+        if (!this.languages || this.languages.length === 0) {
+          return Object.keys(division_map).filter(division => {
+            const langs = Object.values(division_map[division]);
+            return langs.some(isAvail => isAvail === true);
+          });
+        }
+
+        // If languages are selected, the division must be available in all specified languages
+        return Object.keys(division_map).filter(division => {
+          return this.languages.every(lang => division_map[division][lang] === true);
+        });
+      },
+
+      available_languages() {
+        if (this.archives_availabilities.length === 0) {
+          return ['EN', 'ES'];
+        }
+
+        // Group by language
+        const language_map = {};
+
+        for (const item of this.archives_availabilities) {
+          const { division, language, isAvailable } = item;
+          if (!language_map[language]) {
+            language_map[language] = {};
+          }
+          language_map[language][division] = isAvailable;
+        }
+
+        // If no division is selected, return all languages that have isAvailable = true in any division
+        if (!this.divisions || this.divisions.length === 0) {
+          return Object.keys(language_map).filter(lang => {
+            const divisions_availabilities = Object.values(language_map[lang]);
+            return divisions_availabilities.some(avail => avail === true);
+          });
+        }
+
+        // If divisions are selected, the language must be available in all specified divisions
+        return Object.keys(language_map).filter(lang => {
+          return this.divisions.every(div => language_map[lang][div] === true);
+        });
+      },
+    },
+    methods: {
+      download() {
+        this.languages.forEach((language, i) => {
+          this.divisions.forEach((division, j) => {
+            setTimeout(() => {
+              window.open(`/_/dealer/manuals-archive/${division}/${language}`, '_blank')
+            }, 30 * (i + j) + 1)
+          })
+        })
+      },
+
+      fetch_availabilities() {
+        window.minkaUtils.marketingAxios.get('/dealer/manuals-archives-availabilities')
+          .then((response) => {
+            this.archives_availabilities = response.data;
+          })
+          .catch((error) => {
+            console.error(error);
+          });
+      },
+
+      show_modal() {
+        if (this.archives_availabilities.length === 0) {
+          this.fetch_availabilities();
+        }
+
+        $('#manuals_modal').modal('show');
+      },
+    },
+    created() {
+      VueBus.$on('login', ()  => {
+        this.user_available_divisions = vue_dealer_head.$data
+          .available_divisions
+          .map((div) => div.code);
+      });
+    },
+  })
+  
+</script>
+
+  <section id="main-content"  class="content page-content pdetails-content ">
+<div id="mob_right_overlay"></div>
+
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5fc845f746d1b128"></script>
+<div class="compare">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-xs-12 col-md-9 col-md-offset-1">
+        <div class="compare-banner">
+          <div class="swiper-container">
+            <div class="swiper-wrapper">
+                          </div>
+            <!-- Add Pagination -->
+
+          </div>
+          <div class="swiper-button-next swiper-button-black"></div>
+          <div class="swiper-button-prev swiper-button-black"></div>
+        </div>
+      </div>
+      <div class="col-xs-12 col-md-2">
+        <div class="row">
+          <div class="col-xs-6 col-md-12">
+            <div class="form-group"> <a class="btn btn-grey close-compare" href="#">CLOSE</a> </div>
+          </div>
+          <div class="col-xs-6 col-md-12"> <a href="project.php?id=0" class="btn btn-gold view-project">VIEW PROJECT</a> </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="page-breadcrumb product-page-breadcrumb">
+  <div class="container-fluid">
+    <div class="row">
+      
+      <style>
+  .pdf-loading-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 9999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .pdf-loading-content {
+    text-align: center;
+  }
+
+  .pdf-loading-overlay .spinner {
+    border: 4px solid rgba(255, 255, 255, 0.3);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border-left-color: #ffffff;
+    margin: 0 auto;
+    animation: spin 1s linear infinite;
+  }
+
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+</style>
+
+<div id="pdf-loader" class="pdf-loading-overlay" style="display: none;">
+  <div class="pdf-loading-content">
+    <div class="spinner"></div>
+    <p style="margin-top: 15px; color: white; font-size: 1.2em;">
+      Generating PDF, please wait...
+    </p>
+  </div>
+</div>
+
+<div class="col-xs-12 ar">
+    </div>
+
+
+  <script>
+    function showPDFLoader() {
+      const loader = document.getElementById('pdf-loader');
+      if (loader) loader.style.display = 'flex';
+    }
+
+    function hidePDFLoader() {
+      const loader = document.getElementById('pdf-loader');
+      if (loader) loader.style.display = 'none';
+    }
+
+    function cleanupAfterPDF(element) {
+      hidePDFLoader();
+      if (element) {
+        element.dataset.generating = 'false';
+        element.style.pointerEvents = 'auto';
+      }
+    }
+
+    // ** 更新後的啟動函式 **
+    async function downloadDealsPDFAsync(element) {
+      if (element.dataset.generating === 'true') {
+        return;
+      }
+      element.dataset.generating = 'true';
+      element.style.pointerEvents = 'none';
+
+      showPDFLoader();
+
+      try {
+        // 1. 啟動任務
+        const startResponse = await fetch('/deals/?export_pdf=1&job_action=start');
+        const data = await startResponse.json();
+
+        if (!data.success || !data.job_id) {
+          throw new Error(data.error || 'Failed to start PDF generation job.');
+        }
+
+        // 2. 開始輪詢
+        await pollForPDF(data.job_id);
+
+      } catch (error) {
+        console.error('Error in PDF generation process:', error);
+        alert(error.message);
+      } finally {
+        // 無論成功或失敗，最後都清理畫面
+        cleanupAfterPDF(element);
+      }
+    }
+
+    // ** 使用 async/await 重構的輪詢函式 **
+    async function pollForPDF(jobId) {
+      const maxAttempts = 100; // 總輪詢次數上限
+      const delay = ms => new Promise(res => setTimeout(res, ms));
+
+      for (let attempts = 0; attempts < maxAttempts; attempts++) {
+        // 為每一次的 fetch 請求建立獨立的 AbortController
+        const controller = new AbortController();
+        const timeoutId = setTimeout(() => controller.abort(), 30000); // 設定 30 秒超時
+
+        try {
+          // 3. 檢查任務狀態，並傳入 signal
+          const checkResponse = await fetch(
+            `/deals/?export_pdf=1&job_action=check&job_id=${jobId}`,
+            { signal: controller.signal }
+          );
+
+          // 清除超時計時器，因為請求已成功回應
+          clearTimeout(timeoutId);
+
+          const data = await checkResponse.json();
+
+          if (data.status === 'complete') {
+            // 4. 任務完成，觸發下載
+            const link = document.createElement('a');
+            link.href = data.file_url;
+            link.setAttribute('download', data.file_name_download);
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
+            return; // 成功，結束函式
+          }
+
+          if (data.status === 'failed') {
+            throw new Error(data.error || 'An unknown error occurred during PDF generation.');
+          }
+
+          // 如果狀態是 'pending'，則等待 5 秒後再進行下一次迴圈
+          await delay(5000);
+
+        } catch (error) {
+          // 清除計時器以防萬一
+          clearTimeout(timeoutId);
+
+          if (error.name === 'AbortError') {
+            // 這是我們手動觸發的超時
+            console.warn(`Polling request timed out after 30 seconds (attempt ${attempts + 1}). Retrying...`);
+            // 讓迴圈繼續，自動進行下一次輪詢
+            await delay(5000); // 在重試前也等待一下
+          } else {
+            // 其他網路錯誤或程式碼錯誤，應停止輪詢並拋出
+            console.error('Polling error:', error);
+            throw error;
+          }
+        }
+      }
+
+      // 如果迴圈跑完仍未完成，表示總體超時
+      throw new Error('PDF generation is taking too long. Please try again later.');
+    }
+  </script>
+
+
+      <style>
+  .pdf-loading-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 9999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .pdf-loading-content {
+    text-align: center;
+  }
+
+  .pdf-loading-overlay .spinner {
+    border: 4px solid rgba(255, 255, 255, 0.3);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border-left-color: #ffffff;
+    margin: 0 auto;
+    animation: spin 1s linear infinite;
+  }
+
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+</style>
+
+<div id="pdf-loader" class="pdf-loading-overlay" style="display: none;">
+  <div class="pdf-loading-content">
+    <div class="spinner"></div>
+    <p style="margin-top: 15px; color: white; font-size: 1.2em;">
+      Generating PDF, please wait...
+    </p>
+  </div>
+</div>
+
+<div class="mob-show mob-project ac">
+    </div>
+
+
+  <script>
+    function showPDFLoader() {
+      const loader = document.getElementById('pdf-loader');
+      if (loader) loader.style.display = 'flex';
+    }
+
+    function hidePDFLoader() {
+      const loader = document.getElementById('pdf-loader');
+      if (loader) loader.style.display = 'none';
+    }
+
+    function cleanupAfterPDF(element) {
+      hidePDFLoader();
+      if (element) {
+        element.dataset.generating = 'false';
+        element.style.pointerEvents = 'auto';
+      }
+    }
+
+    // ** 更新後的啟動函式 **
+    async function downloadDealsPDFAsync(element) {
+      if (element.dataset.generating === 'true') {
+        return;
+      }
+      element.dataset.generating = 'true';
+      element.style.pointerEvents = 'none';
+
+      showPDFLoader();
+
+      try {
+        // 1. 啟動任務
+        const startResponse = await fetch('/deals/?export_pdf=1&job_action=start');
+        const data = await startResponse.json();
+
+        if (!data.success || !data.job_id) {
+          throw new Error(data.error || 'Failed to start PDF generation job.');
+        }
+
+        // 2. 開始輪詢
+        await pollForPDF(data.job_id);
+
+      } catch (error) {
+        console.error('Error in PDF generation process:', error);
+        alert(error.message);
+      } finally {
+        // 無論成功或失敗，最後都清理畫面
+        cleanupAfterPDF(element);
+      }
+    }
+
+    // ** 使用 async/await 重構的輪詢函式 **
+    async function pollForPDF(jobId) {
+      const maxAttempts = 100; // 總輪詢次數上限
+      const delay = ms => new Promise(res => setTimeout(res, ms));
+
+      for (let attempts = 0; attempts < maxAttempts; attempts++) {
+        // 為每一次的 fetch 請求建立獨立的 AbortController
+        const controller = new AbortController();
+        const timeoutId = setTimeout(() => controller.abort(), 30000); // 設定 30 秒超時
+
+        try {
+          // 3. 檢查任務狀態，並傳入 signal
+          const checkResponse = await fetch(
+            `/deals/?export_pdf=1&job_action=check&job_id=${jobId}`,
+            { signal: controller.signal }
+          );
+
+          // 清除超時計時器，因為請求已成功回應
+          clearTimeout(timeoutId);
+
+          const data = await checkResponse.json();
+
+          if (data.status === 'complete') {
+            // 4. 任務完成，觸發下載
+            const link = document.createElement('a');
+            link.href = data.file_url;
+            link.setAttribute('download', data.file_name_download);
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
+            return; // 成功，結束函式
+          }
+
+          if (data.status === 'failed') {
+            throw new Error(data.error || 'An unknown error occurred during PDF generation.');
+          }
+
+          // 如果狀態是 'pending'，則等待 5 秒後再進行下一次迴圈
+          await delay(5000);
+
+        } catch (error) {
+          // 清除計時器以防萬一
+          clearTimeout(timeoutId);
+
+          if (error.name === 'AbortError') {
+            // 這是我們手動觸發的超時
+            console.warn(`Polling request timed out after 30 seconds (attempt ${attempts + 1}). Retrying...`);
+            // 讓迴圈繼續，自動進行下一次輪詢
+            await delay(5000); // 在重試前也等待一下
+          } else {
+            // 其他網路錯誤或程式碼錯誤，應停止輪詢並拋出
+            console.error('Polling error:', error);
+            throw error;
+          }
+        }
+      }
+
+      // 如果迴圈跑完仍未完成，表示總體超時
+      throw new Error('PDF generation is taking too long. Please try again later.');
+    }
+  </script>
+
+
+    </div>
+	<div class="product-page-breadcrumb-line" ></div>
+
+  </div>
+</div>
+<div id="p-ajax">
+<script>
+    
+    $(function() {
+      /*窗口变化时运行*/
+      $(".pdetail-thum li a").each(function(i){
+        $(this).height($(this).width()*1);
+      });
+      $(".pdetail-thum").css("max-height",$(".p-details-img").width());
+      $('#zoom1').bind('click',function(){
+        // On click, get the Cloud Zoom object,
+        var cloudZoom = $(this).data('CloudZoom');
+        // Close the zoom window (from 2.1 rev 1211291557)
+        cloudZoom.closeZoom();
+        // and pass Cloud Zoom's image list to Fancy Box.
+        console.log('aaaaaaaaa');
+        return false;
+      });
+    })
+    
+</script>
+<div id="p-ajax">
+  <div class="page-breadcrumb">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-xs-12 col-sm-9">   <ol class="breadcrumb">
+                
+              <li><a href="home.php">Home</a></li>
+                      
+              <li class="active">BRANDS</li>
+                      
+              <li><a href="https://www.minka.com/minka-lavery/">Minka-Lavery&reg;</a></li>
+                      
+              <li class="active">3114-732-L</li>
+            </ol>
+
+
+ </div>
+        <div class="col-xs-12 col-sm-3 ar">
+          <ul class="load-fadeInUp">
+                              <li><a href="https://www.minka.com/3102-84-L.html">Previous</a></li>
+                <li>|</li>
+                <li><a href="https://www.minka.com/3114-84-L.html">Next</a></li>
+                        </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="p-details-top" id="product_detail">
+    <div class="container-fluid p-details-main">
+      <div class="row">
+        <div class="col-xs-12">
+          <h1 class="details-title-logo">
+                          <img
+                src="/skin/MK/_images/brand-logos/Minka-Lavery.png?v=1"
+                alt="Minka-Lavery logo"
+                                  width="200"
+                              >
+                      </h1>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-12 col-sm-6 col-md-7">
+          <div class="row">
+            <div class=" col-xs-12 col-md-10">
+              <div class="p-details-img">
+                <a target="_blank" class="pinterest-btn" href="http://pinterest.com/pin/create/button/?url=https://www.minka.com/3114-732-L.html&media=https://d11ijat5yj4icx.cloudfront.net/P/3114-732-L_Main.jpg&description=LED-Pendant---Legacy-Brass-with-Clear-Glass">
+                  <i class="fa fa-pinterest-p"></i> Save
+                </a>
+                <a id="zoom1" href="https://d11ijat5yj4icx.cloudfront.net/P/3114-732-L_Main.jpg" class="cloud-zoom" rel="position:'inside',showTitle: false" ><img class="load-fadeIn" src="https://d11ijat5yj4icx.cloudfront.net/P/3114-732-L_Main.jpg" alt="Verto 3&quot; LED Pendant"></a> <span class="zoom-icon pdetail-thum-img" data-href="https://d11ijat5yj4icx.cloudfront.net/P/3114-732-L_Main.jpg"><i class="fa fa-search"></i></span>
+              </div>
+                              <a v-if="discontinued=='N'" class="pl-0 pt-0 btn gold_link" rel="52625" href="login.php?mode=project">SAVE TO PROJECT</a>
+            </div>
+            <div class="col-xs-12 col-md-2">
+              <div class="pdetail-thum">
+                <ul>
+                                                                                          <li class="pdetail-thum-img" data-href="https://d11ijat5yj4icx.cloudfront.net/D/3114-732-L_Front.jpg"><a style="background-image: url(https://d11ijat5yj4icx.cloudfront.net/D/3114-732-L_Front.jpg);" href="#" aria-label="click to see large photo"><img class="load-fadeIn" src="https://d11ijat5yj4icx.cloudfront.net/D/3114-732-L_Front.jpg" alt="Verto 3&quot; LED Pendant"></a></li>
+                                                  <li class="pdetail-thum-img" data-href="https://d11ijat5yj4icx.cloudfront.net/D/3114-732-L_Angle1.jpg"><a style="background-image: url(https://d11ijat5yj4icx.cloudfront.net/D/3114-732-L_Angle1.jpg);" href="#" aria-label="click to see large photo"><img class="load-fadeIn" src="https://d11ijat5yj4icx.cloudfront.net/D/3114-732-L_Angle1.jpg" alt="Verto 3&quot; LED Pendant"></a></li>
+                                                  <li class="pdetail-thum-img" data-href="https://d11ijat5yj4icx.cloudfront.net/D/3114-732-L_Angle2.jpg"><a style="background-image: url(https://d11ijat5yj4icx.cloudfront.net/D/3114-732-L_Angle2.jpg);" href="#" aria-label="click to see large photo"><img class="load-fadeIn" src="https://d11ijat5yj4icx.cloudfront.net/D/3114-732-L_Angle2.jpg" alt="Verto 3&quot; LED Pendant"></a></li>
+                                                  <li class="pdetail-thum-img" data-href="https://d11ijat5yj4icx.cloudfront.net/D/3114-732-L_Alt1.jpg"><a style="background-image: url(https://d11ijat5yj4icx.cloudfront.net/D/3114-732-L_Alt1.jpg);" href="#" aria-label="click to see large photo"><img class="load-fadeIn" src="https://d11ijat5yj4icx.cloudfront.net/D/3114-732-L_Alt1.jpg" alt="Verto 3&quot; LED Pendant"></a></li>
+                                                  <li class="pdetail-thum-img" data-href="https://d11ijat5yj4icx.cloudfront.net/D/3114-732-L_CloseUp1.jpg"><a style="background-image: url(https://d11ijat5yj4icx.cloudfront.net/D/3114-732-L_CloseUp1.jpg);" href="#" aria-label="click to see large photo"><img class="load-fadeIn" src="https://d11ijat5yj4icx.cloudfront.net/D/3114-732-L_CloseUp1.jpg" alt="Verto 3&quot; LED Pendant"></a></li>
+                                                              <ul>
+              </div>
+            </div>
+          </div>
+
+
+        </div>
+
+        <div class="col-xs-12 col-sm-6 col-md-5">
+          <div class="p-details-txt ">
+
+                        <h4 class="load-fadeInUp">Verto 3" LED Pendant </h4>
+            <h5 class="load-fadeInUp">3114-732-L <em>Minka-Lavery®</em></h5>
+
+            <h5 class="green-txt" v-show="status != '' && moreProductDetailsViewable == true" v-html="status"></h5>
+            <a v-if="backorder=='Y'" class="pl-0 pt-0 btn gold_link height-20 btn-notify-me details" href="#" @click.prevent="notify_modal()">NOTIFY ME</a><br v-if="backorder=='Y'" />
+
+            <div class="description load-fadeInUp">
+              <h6><em>Detailed Description</em></h6>
+              <p>LED Pendant - Legacy Brass with Clear Glass</p>
+            </div>
+
+              
+            <div class="available-sizes load-fadeInUp details">
+                            </div>
+
+              
+                                                    <div class="price-permission">
+                      <h4 :class="status != 'Discontinued' && moreProductDetailsViewable == true ? 'pic-h4' : 'hide'">
+                                                      <p class="price is-map-price" data-price="289.00" data-product-division-id="1">$289.00</p>
+                                                </h4>
+                    </div>
+                                                      
+            <div class="row">
+
+              <div class="col-xs-12" style="padding-left:0px;">
+                <div class="col-xs-12 ">
+                  <div class="manual-specs load-fadeInUp">
+                    <h6><em>Product Resources</em></h6>
+                    <ul>
+                                                  <li><a href="/images/instruction-manuals/3114-L-English.pdf" target="_blank"><i class="fa fa-file-pdf-o"></i> INSTRUCTION MANUAL - ENGLISH</a></li>
+                                                                      <li><a href="product_pdf.php?productid=52625&mode=view" target="_blank"><i class="fa fa-file-pdf-o"></i> PRODUCT SPECIFICATIONS</a></li>
+                                                                    </ul>
+                  </div>
+                </div>
+                <div class="col-xs-12">
+
+                                      <div class="load-fadeInUp" style="margin-left: -2px;">
+                    <div class="details-reviews d-inline-block mt-0"> 
+                        
+                      <div class="addthis_inline_share_toolbox"></div>
+                    </div>
+                                        </div>
+                </div>
+                <div class="col-xs-12">
+                  <ul class="details-icons">
+                                                                                          <li class="details-icons--item" aria-hidden="true" data-toggle="tooltip" data-placement="top" title="LED">
+                          <div class="details-icons--icon-wrapper">
+                            <img
+                              class="img-responsive"
+                              src="/skin/MK/_images/LED.jpg"
+                              height="60"
+                              alt="LED"
+                            />
+                          </div>
+                        </li>
+                                                                                                                                                            <li class="details-icons--item" aria-hidden="true" data-toggle="tooltip" data-placement="top" title="Damp Location">
+                          <div class="details-icons--icon-wrapper">
+                            <img
+                              class="img-responsive"
+                              src="/skin/MK/_images/Damp_Location.jpg"
+                              height="60"
+                              alt="Damp Location"
+                            />
+                          </div>
+                        </li>
+                                                                                                                                      <li class="details-icons--item" data-toggle="tooltip" data-placement="top" title="ETL Listed">
+                          <div class="details-icons--icon-wrapper" aria-hidden="true">
+                            <img
+                              class="img-responsive"
+                              src="/skin/MK/_images/ETL_Intertek.jpg"
+                              height="60"
+                              alt="ETL Intertek"
+                            />
+                          </div>
+                        </li>
+                                            
+                                        
+                                                                                    </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- notify modal -->
+      <div class="dealer-main">
+        <div class="modal fade dealer_mob_full_modal" tabindex="-1" role="dialog" id="notify_modal">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">✕</button>
+                <h3 class="modal-title">3114-732-L Request</h3>
+              </div>
+              <div class="modal-body">
+                <p>Where should we send your “<b>It’s Available!</b>” notification?</p>
+                <input type="email" class="outline_ipt w-50p " aria-label="notify_email_ipt" v-model="notify_email" placeholder="Email Address">
+                <span class="err_msg" v-show="notify_email_err==true">Please enter a valid email address.</span>
+              </div>
+              <div class="modal-footer ac">
+                <button type="button" class="btn btn-outline btn-white w-40p" data-dismiss="modal">CANCEL</button>
+                <button type="button" class="btn btn-black m-w-40p hidden-xs" @click="notify_me_click()">NOTIFY ME</button>
+                <br class="visible-xs"><br class="visible-xs">
+                <button type="button" class="btn btn-black w-40p visible-xs" @click="notify_me_click()">NOTIFY ME</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- notify modal -->
+
+    </div>
+    <div class="p-details-middle">
+      <div class="container-fluid">
+                      <div class="product-family product-bottom-line">
+              <div class="row">
+                <div class="col-xs-12 ac add-fadeIn">
+                  <h4>PRODUCT COLLECTION</h4>
+                  <p><font class="upp">Verto</font> <span>by Minka-Lavery®</span></p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-xs-12">
+                  <div class="product-family-banner product-bottom-line-box add-fadeIn">
+                    <div class="swiper-container">
+                      <div class="swiper-wrapper">                           <div class="swiper-slide">
+                            <div class="p-index-box">
+                              <div class="p-index-box-img"> <a href="https://www.minka.com/3114-732-L.html"><img class="load-fadeIn animated fadeIn" src="https://d11ijat5yj4icx.cloudfront.net/T/3114-732-L_Main.jpg" alt="3114-732-L"></a> </div>
+                              <div class="p-index-box-txt ac product-no" data-product-no="3114-732-L">
+                                <h6>Verto 3" LED Pendant</h6>
+                                <p>3114-732-L  Minka-Lavery®</p>
+                                                                      <div class="price-wrapper" data-product-division-id="1" data-product-no="3114-732-L">
+                                                                                  <p class="p-current-price" style="color:#333333;">$289.00</p>
+                                        
+                                                                            </div>
+                                                                                                  </div>
+                            </div>
+                          </div>
+                                                    <div class="swiper-slide">
+                            <div class="p-index-box">
+                              <div class="p-index-box-img"> <a href="https://www.minka.com/3114-84-L.html"><img class="load-fadeIn animated fadeIn" src="https://d11ijat5yj4icx.cloudfront.net/T/3114-84-L_Main.jpg" alt="3114-84-L"></a> </div>
+                              <div class="p-index-box-txt ac product-no" data-product-no="3114-84-L">
+                                <h6>Verto 3" LED Pendant</h6>
+                                <p>3114-84-L  Minka-Lavery®</p>
+                                                                      <div class="price-wrapper" data-product-division-id="1" data-product-no="3114-84-L">
+                                                                                  <p class="p-current-price" style="color:#333333;">$289.00</p>
+                                        
+                                                                            </div>
+                                                                                                  </div>
+                            </div>
+                          </div>
+                                                    <div class="swiper-slide">
+                            <div class="p-index-box">
+                              <div class="p-index-box-img"> <a href="https://www.minka.com/3114-899-L.html"><img class="load-fadeIn animated fadeIn" src="https://d11ijat5yj4icx.cloudfront.net/T/3114-899-L_Main.jpg" alt="3114-899-L"></a> </div>
+                              <div class="p-index-box-txt ac product-no" data-product-no="3114-899-L">
+                                <h6>Verto 3" LED Pendant</h6>
+                                <p>3114-899-L  Minka-Lavery®</p>
+                                                                      <div class="price-wrapper" data-product-division-id="1" data-product-no="3114-899-L">
+                                                                                  <p class="p-current-price" style="color:#333333;">$289.00</p>
+                                        
+                                                                            </div>
+                                                                                                  </div>
+                            </div>
+                          </div>
+                           </div>
+                    </div>
+                    <div class="swiper-button-next swiper-button-black"></div>
+                    <div class="swiper-button-prev swiper-button-black"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+                                <div class="you-like product-bottom-line">
+              <div class="row">
+                <div class="col-xs-12 ac">
+                  <h4 class="add-fadeIn">YOU MAY ALSO LIKE</h4>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-xs-12">
+                  <div class="you-like-banner add-fadeIn">
+                    <div class="swiper-container">
+                      <div class="swiper-wrapper">                           <div class="swiper-slide">
+                            <div class="p-index-box">
+                              <div class="p-index-box-img"> <a href="https://www.minka.com/2687-788-L.html"><img class="load-fadeIn animated fadeIn" src="https://d11ijat5yj4icx.cloudfront.net/T/2687-788-L_Main.jpg" alt="2687-788-L"></a> </div>
+                              <div class="p-index-box-txt ac product-no" data-product-no="2687-788-L">
+                                <h6>Stiles 28" LED Pendant</h6>
+                                <p>2687-788-L  Minka-Lavery®</p>
+                                                                      <div class="price-wrapper" data-product-division-id="1" data-product-no="2687-788-L">
+                                                                                  <p class="p-current-price" style="color:#333333;">$2199.00</p>
+                                        
+                                                                            </div>
+                                                                                                  </div>
+                            </div>
+                          </div>
+                                                    <div class="swiper-slide">
+                            <div class="p-index-box">
+                              <div class="p-index-box-img"> <a href="https://www.minka.com/2416-695-l.html"><img class="load-fadeIn animated fadeIn" src="https://d11ijat5yj4icx.cloudfront.net/T/2416-695-L_Main.jpg" alt="2416-695-L"></a> </div>
+                              <div class="p-index-box-txt ac product-no" data-product-no="2416-695-L">
+                                <h6>Sevryn LED Pendant</h6>
+                                <p>2416-695-L  Minka-Lavery®</p>
+                                                                      <div class="price-wrapper" data-product-division-id="1" data-product-no="2416-695-L">
+                                                                                  <p class="p-current-price" style="color:#333333;">$2339.00</p>
+                                        
+                                                                            </div>
+                                                                                                  </div>
+                            </div>
+                          </div>
+                                                    <div class="swiper-slide">
+                            <div class="p-index-box">
+                              <div class="p-index-box-img"> <a href="https://www.minka.com/2688-66-L.html"><img class="load-fadeIn animated fadeIn" src="https://d11ijat5yj4icx.cloudfront.net/T/2688-66-L_Main.jpg" alt="2688-66-L"></a> </div>
+                              <div class="p-index-box-txt ac product-no" data-product-no="2688-66-L">
+                                <h6>Stiles 36" LED Pendant</h6>
+                                <p>2688-66-L  Minka-Lavery®</p>
+                                                                      <div class="price-wrapper" data-product-division-id="1" data-product-no="2688-66-L">
+                                                                                  <p class="p-current-price" style="color:#333333;">$3329.00</p>
+                                        
+                                                                            </div>
+                                                                                                  </div>
+                            </div>
+                          </div>
+                                                    <div class="swiper-slide">
+                            <div class="p-index-box">
+                              <div class="p-index-box-img"> <a href="https://www.minka.com/10528-732-L.html"><img class="load-fadeIn animated fadeIn" src="https://d11ijat5yj4icx.cloudfront.net/T/10528-732-L_Main.jpg" alt="10528-732-L"></a> </div>
+                              <div class="p-index-box-txt ac product-no" data-product-no="10528-732-L">
+                                <h6>Bollavino 24" LED Pendant</h6>
+                                <p>10528-732-L  Minka-Lavery®</p>
+                                                                      <div class="price-wrapper" data-product-division-id="1" data-product-no="10528-732-L">
+                                                                                  <p class="p-current-price" style="color:#333333;">$1539.00</p>
+                                        
+                                                                            </div>
+                                                                                                  </div>
+                            </div>
+                          </div>
+                                                    <div class="swiper-slide">
+                            <div class="p-index-box">
+                              <div class="p-index-box-img"> <a href="https://www.minka.com/3885-776-L.html"><img class="load-fadeIn animated fadeIn" src="https://d11ijat5yj4icx.cloudfront.net/T/3885-776-L_Main.jpg" alt="3885-776-L"></a> </div>
+                              <div class="p-index-box-txt ac product-no" data-product-no="3885-776-L">
+                                <h6>Divinely - LED Pendant</h6>
+                                <p>3885-776-L  Minka-Lavery®</p>
+                                                                      <div class="price-wrapper" data-product-division-id="1" data-product-no="3885-776-L">
+                                                                                  <p class="p-current-price" style="color:#333333;">$859.00</p>
+                                        
+                                                                            </div>
+                                                                                                  </div>
+                            </div>
+                          </div>
+                                                    <div class="swiper-slide">
+                            <div class="p-index-box">
+                              <div class="p-index-box-img"> <a href="https://www.minka.com/10527-732-L.html"><img class="load-fadeIn animated fadeIn" src="https://d11ijat5yj4icx.cloudfront.net/T/10527-732-L_Main.jpg" alt="10527-732-L"></a> </div>
+                              <div class="p-index-box-txt ac product-no" data-product-no="10527-732-L">
+                                <h6>Bollavino 19" LED Pendant</h6>
+                                <p>10527-732-L  Minka-Lavery®</p>
+                                                                      <div class="price-wrapper" data-product-division-id="1" data-product-no="10527-732-L">
+                                                                                  <p class="p-current-price" style="color:#333333;">$1199.00</p>
+                                        
+                                                                            </div>
+                                                                                                  </div>
+                            </div>
+                          </div>
+                                                    <div class="swiper-slide">
+                            <div class="p-index-box">
+                              <div class="p-index-box-img"> <a href="https://www.minka.com/3976-66-l.html"><img class="load-fadeIn animated fadeIn" src="https://d11ijat5yj4icx.cloudfront.net/T/3976-66-L_Main.jpg" alt="3976-66-L"></a> </div>
+                              <div class="p-index-box-txt ac product-no" data-product-no="3976-66-L">
+                                <h6>Pod 8.25" LED Pendant</h6>
+                                <p>3976-66-L  Minka-Lavery®</p>
+                                                                      <div class="price-wrapper" data-product-division-id="1" data-product-no="3976-66-L">
+                                                                                  <p class="p-current-price" style="color:#333333;">$614.00</p>
+                                        
+                                                                            </div>
+                                                                                                  </div>
+                            </div>
+                          </div>
+                                                    <div class="swiper-slide">
+                            <div class="p-index-box">
+                              <div class="p-index-box-img"> <a href="https://www.minka.com/10526-732-L.html"><img class="load-fadeIn animated fadeIn" src="https://d11ijat5yj4icx.cloudfront.net/T/10526-732-L_Main.jpg" alt="10526-732-L"></a> </div>
+                              <div class="p-index-box-txt ac product-no" data-product-no="10526-732-L">
+                                <h6>Bollavino 13" LED Pendant</h6>
+                                <p>10526-732-L  Minka-Lavery®</p>
+                                                                      <div class="price-wrapper" data-product-division-id="1" data-product-no="10526-732-L">
+                                                                                  <p class="p-current-price" style="color:#333333;">$769.00</p>
+                                        
+                                                                            </div>
+                                                                                                  </div>
+                            </div>
+                          </div>
+                                                    <div class="swiper-slide">
+                            <div class="p-index-box">
+                              <div class="p-index-box-img"> <a href="https://www.minka.com/2415-695-L.html"><img class="load-fadeIn animated fadeIn" src="https://d11ijat5yj4icx.cloudfront.net/T/2415-695-L_Main.jpg" alt="2415-695-L"></a> </div>
+                              <div class="p-index-box-txt ac product-no" data-product-no="2415-695-L">
+                                <h6>Sevryn LED Pendant</h6>
+                                <p>2415-695-L  Minka-Lavery®</p>
+                                                                      <div class="price-wrapper" data-product-division-id="1" data-product-no="2415-695-L">
+                                                                                  <p class="p-current-price" style="color:#333333;">$1849.00</p>
+                                        
+                                                                            </div>
+                                                                                                  </div>
+                            </div>
+                          </div>
+                                                    <div class="swiper-slide">
+                            <div class="p-index-box">
+                              <div class="p-index-box-img"> <a href="https://www.minka.com/3975-66-l.html"><img class="load-fadeIn animated fadeIn" src="https://d11ijat5yj4icx.cloudfront.net/T/3975-66-L_Main.jpg" alt="3975-66-L"></a> </div>
+                              <div class="p-index-box-txt ac product-no" data-product-no="3975-66-L">
+                                <h6>Pod 8.25" LED Pendant</h6>
+                                <p>3975-66-L  Minka-Lavery®</p>
+                                                                      <div class="price-wrapper" data-product-division-id="1" data-product-no="3975-66-L">
+                                                                                  <p class="p-current-price" style="color:#333333;">$419.00</p>
+                                        
+                                                                            </div>
+                                                                                                  </div>
+                            </div>
+                          </div>
+                           </div>
+                    </div>
+                    <div class="swiper-button-next swiper-button-black"></div>
+                    <div class="swiper-button-prev swiper-button-black"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+                  <div class="row">
+          <div class="col-xs-12">
+            <ul id="tabs-list-2" class="p-detail-info-list add-fadeInUp ac">
+              <li><a class="active" href="javascript:;">details</a></li>
+              <li><a href="javascript:;" class="">manual & specs</a></li>
+                
+            </ul>
+            <div id="tabs-main-2" class="p-detail-tabs add-fadeInUp">
+              <div class="tabs-box tabs-box-1" style="display: block;">
+                <div class="div-table">
+                  <div class="table-cell">
+                    <div class="row">
+                      <div class="col-xs-12 col-md-4">
+                        <div class="detail-tab-box">
+                          <h6 style="margin-bottom:0;">Verto 3" LED Pendant</h6>
+                          <p style="padding-bottom:15px;">
+                            Product ID: 3114-732-L<br />
+                            Brand: Minka-Lavery®<br />
+                                                              Descriptive Finish 1: Legacy Brass
+                              </p>
+                                                          <h6>Measurements</h6>
+                                                                  <p style="padding-bottom:15px;">
+                                      Downrod Length 1: 6<br>
+                                                                            Downrod Width 1: 0.5<br>
+                                      
+                                      Downrod Length 2: 12<br>
+                                                                            Downrod Width 2: 0.5<br>
+                                      
+                                                                            
+                                      Width: 3<br>
+                                                                            Height: 20.25<br>
+                                                                            Length: 3<br>
+                                      
+                                                                                                                                                                                              
+                                                                            Product Weight: 1.65<br>
+                                                                            Height Adjustable: Yes<br>
+                                                                            Shade Finish: Clear<br>
+                                                                            Shade/Glass Quantity: 1<br>
+                                                                                                                    Motor Type: DC<br>
+                                                                        </p>
+                                                            
+                                                  </div>
+                      </div>
+                      <div class="col-xs-12 col-md-4">
+                        <div class="detail-tab-box">                             <h6>Lamping</h6>
+                            <p style="padding-bottom:15px;">                                                                                                 Bulb Type 1: Integrated LED<br>
+                                                                                                
+                                Light Type 1: LED<br>
+                                                                                                
+                                Bulb Included: Yes<br>
+                                                                 Bulb Base 1: Integrated<br>
+                                                                                                
+                                 Bulb Wattage: 16<br>
+                                                                                              Dimmable:
+                                                                  Yes
+                                                                <br>
+                                                                                            Reverse Capable:
+                                                                  No
+                                                                <br>
+                              
+                                                              Balancing Kit Included:
+                                                                  No
+                                                                <br>
+                              
+                                                              Light Cap Included:
+                                                                  No
+                                                                <br>
+                                                            </p>
+                                                                                     </div>
+                      </div>
+                      <div class="col-xs-12 col-md-4">
+                        <div class="detail-tab-box">
+                                                                                                                                                                                                    </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="tabs-box tabs-box-2">
+                <div class="div-table">
+                  <div class="table-cell">
+                    <div class="row">                         <div class="col-xs-12 col-sm-4 col-md-4 ">
+                          <div class="details-pdf">
+                            <div class="pdf-icon"> <img src="/skin/MK/_images/pdf-icon.png" width="18" alt="pdf icon"> </div>
+                            <h4>Instruction Manual - English</h4>
+                            <a class="btn btn-gold-t" href="/images/instruction-manuals/3114-L-English.pdf" target="_blank">download pdf</a> </div>
+                        </div>
+                                                                      <div class="col-xs-12 col-sm-4 col-md-4">
+                        <div class="details-pdf">
+                          <div class="pdf-icon"> <img src="/skin/MK/_images/pdf-icon.png" width="18" alt="pdf icon"> </div>
+                          <h4>Product Specifications</h4>
+                          <a class="btn btn-gold-t" href="product_pdf.php?productid=52625&mode=view" target="_blank">download pdf</a> </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <p style="padding-top:10px">Products depicted on this website are protected by United States Federal and/or State laws including US Patent, Trademark and/or Copyright and unfair competition laws. Unauthorized reproduction or use carries severe legal penalties.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <link href="/skin/MK/_includes/css/cloud-zoom.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="/skin/MK/_includes/js/cloud-zoom.1.0.2.min.js"></script>
+    <script>
+        
+        $(function() {
+          var index_2 = 0;
+          if($("#tabs-list-2 li a").attr("class") == "active"){
+            m =   0;
+            $("#tabs-main-2").find(".tabs-box").eq(m).css("display","block");
+          }
+          $("#tabs-list-2 li a").click(function(){
+            $("#tabs-list-2 li a").removeClass("active");
+            $(this).addClass("active");
+            index_2 =   $("#tabs-list-2 li a").index(this);
+            showTabs_2(index_2);
+            return false;
+          });
+
+
+
+          if($(".btn-download").length && $(".btn-download").attr("href").toLowerCase().indexOf(("Minka-No-Image-Available.jpg").toLowerCase()) != -1 ){
+            $(".btn-download").hide();
+            $(".btn-download-br").hide();
+          }
+
+          function showTabs_2(n){
+            $("#tabs-main-2").find(".tabs-box").hide();
+            $("#tabs-main-2").find(".tabs-box").eq(n).fadeIn();
+
+            var swiper = new Swiper('.details-reviews-banner .swiper-container', {
+              nextButton: '.details-reviews-banner .swiper-button-next',
+              prevButton: '.details-reviews-banner .swiper-button-prev',
+              slidesPerView: 3,
+              spaceBetween: 45,
+              breakpoints: {
+                1024: {
+                  slidesPerView: 3,
+                  spaceBetween: 30
+                },
+                768: {
+                  slidesPerView: 2,
+                  spaceBetween: 15
+                },
+                640: {
+                  slidesPerView: 1,
+                  spaceBetween: 15
+                },
+                320: {
+                  slidesPerView: 1,
+                  spaceBetween: 10
+                }
+              }
+            });
+          };
+
+          var swiper = new Swiper('.product-family .swiper-container', {
+            nextButton: '.product-family .swiper-button-next',
+            prevButton: '.product-family .swiper-button-prev',
+            slidesPerView: 4,
+            spaceBetween: 30,
+            breakpoints: {
+              1024: {
+                slidesPerView: 3,
+                spaceBetween: 20
+              },
+              768: {
+                slidesPerView: 2,
+                spaceBetween: 15
+              },
+              640: {
+                slidesPerView: 1,
+                spaceBetween: 15
+              },
+              320: {
+                slidesPerView: 1,
+                spaceBetween: 10
+              }
+            }
+          });
+          var swiper = new Swiper('.you-like .swiper-container', {
+            nextButton: '.you-like .swiper-button-next',
+            prevButton: '.you-like .swiper-button-prev',
+            slidesPerView: 4,
+            spaceBetween: 30,
+            breakpoints: {
+              1024: {
+                slidesPerView: 3,
+                spaceBetween: 20
+              },
+              768: {
+                slidesPerView: 2,
+                spaceBetween: 15
+              },
+              640: {
+                slidesPerView: 1,
+                spaceBetween: 15
+              },
+              320: {
+                slidesPerView: 1,
+                spaceBetween: 10
+              }
+            }
+          });
+
+          vue_dealer_head.change_show_select_customer(true);
+          VueBus.$on("login",function() {
+
+            $('#dealer_head_mob').removeClass('hidden-xs');
+          });
+        });
+
+        function input_QTY_onchange() {
+          var amount = $('#input_QTY').val();
+          if(amount < 1) {
+            $('#input_QTY').val(1);
+            // $('#input_QTY_err_msg').show();
+          }else {
+            // $('#input_QTY_err_msg').hide();
+          }
+        }
+
+        $('#energy-guide').click(function(e) {
+          $('.energy-guide-pop').addClass('active').fadeIn();
+          return false;
+        });
+
+        var product_nos = [];
+        $('.product-no').each(function(){
+          product_nos.push($(this).attr('data-product-no'));
+        });
+
+        $.ajax({
+          type: "POST",
+          url: dealer_api_url+"inventory_ajax/list",
+          data: {
+            'ids': product_nos,
+            'from_permissioned_customer': true,
+          },
+          xhrFields: {
+            withCredentials: true
+          },
+          crossDomain: true,
+          cache:false,
+          dataType: 'json',
+          error: function() {
+            // alert("System Error !!");
+          },
+          success: function(data) {
+            if (data) {
+              $.each(data, function(i, item) {
+                if (item.ca_status == 'Discontinued' || item.nc_status == 'Discontinued') {
+                  if (item.nc_quantity <=0 && item.ca_quantity <=0) {
+                    $(`.price-wrapper[data-product-no=${item.item_no}]`).hide();
+                  }
+                }
+              })
+            }
+          }
+        })
+
+        var vue_product_detail = new Vue({
+          name: 'ProductDetail',
+          el: '#product_detail',
+          delimiters: ['$%', '%'],
+          data: {
+            customer_price: [],
+            customer_id: [],
+            //dealer_price: 0,
+            status:'',
+            discontinued:'N',
+            notify_me:'N',
+            backorder:'N',
+            notify_email: '',
+            notify_email_err: false,
+            min:1,
+            max:0,
+            now_customer_no: '',
+            select_customer_id: '',
+            billing:{},
+            shipping:{},
+            user:{},
+            customer: {},
+            customers: [],
+            customers_permissions: {},
+            all_customers: {},
+            all_customers_permissions: {},
+            main_customers: [],
+            available_customers: [],
+            account:{},
+            products:[],
+            reg_email: /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,24}))$/,
+            qty_error: false,
+            qty_error_message: '',
+            qty_exceeds_inventory: false,
+            now_user_type:'',
+            clear_qty_message_timeout: null,
+            moreProductDetailsViewable: true,
+            available_divisions: [],
+            permissions: {},
+            division_id: '',
+            can_see_inventory_and_price: false,
+            can_see_add_to_cart: false,
+            selected_account_surcharge_percent: 0,
+            selected_account_warehouse_no: '',
+          },
+          created: function() {
+            for (var key in this.customer_price) {
+              this.now_customer_no = key;
+              break;
+            }
+            _this = this
+            VueBus.$on("login",function() {
+
+              _this.customer = vue_dealer_head.customer.attributes;
+              _this.customers = vue_dealer_head.customers;
+              _this.customers_permissions = vue_dealer_head.customers_permissions;
+              _this.all_customers = vue_dealer_head.all_customers;
+              _this.all_customers_permissions = vue_dealer_head.$data.all_customers_permissions;
+              _this.user = vue_dealer_head.user.attributes;
+              _this.now_user_type = vue_dealer_head.$data.now_user_type;
+              _this.available_divisions = vue_dealer_head.available_divisions;
+              _this.permissions = vue_dealer_head.permissions;
+              _this.division_id = vue_dealer_head.division.id;
+              _this.selected_account_surcharge_percent = _this.customer.surcharge_percent;
+              _this.selected_account_warehouse_no = _this.customer.warehouse_no;
+              if(_this.now_user_type != 'customer') {
+                $('#input_QTY').hide();
+                $('#add_to_cart').hide();
+              }
+
+                              _this.account = {
+                division_name:vue_dealer_head.division.name
+                ,customer_name:(vue_dealer_head.customer.attributes==undefined)?"customer":vue_dealer_head.customer.attributes.name
+                ,customer_no:(vue_dealer_head.customer.attributes==undefined)?"no":vue_dealer_head.customer.attributes.no
+              };
+                
+              $('.details').hide();
+              var product_division_id = "1";
+              var available_division = _this.available_divisions.find(division => {
+                if (
+                  division.id == product_division_id
+                  || division.id == 1 && (product_division_id == '3' || product_division_id == '5')
+                ) return true;
+              })
+
+                                _this.moreProductDetailsViewable = true;
+              
+                              if (_this.moreProductDetailsViewable) {
+                $('.details').show();
+                var isPowerCustomer = _this.now_user_type == 'customer' && _this.user.type == 0;
+                if (_this.now_user_type == 'customer' && !isPowerCustomer) {
+                  // should have at least one active customer having Inventory permission under the product division
+                  for (let i = 0; i < _this.all_customers.length; i++) {
+                    if (
+                      (_this.all_customers[i].attributes.division_id == product_division_id || (_this.all_customers[i].attributes.division_id == 1 && ['3', '5'].includes(product_division_id)))
+                      && _this.all_customers[i].attributes.status == 0
+                      && _this.all_customers[i].attributes.customer_permissions & 32
+                    ) {
+                      _this.can_see_inventory_and_price = true;
+                    }
+
+                    if (
+                      (_this.all_customers[i].attributes.division_id == product_division_id || (_this.all_customers[i].attributes.division_id == 1 && ['3', '5'].includes(product_division_id)))
+                      && _this.all_customers[i].attributes.status == 0
+                      && _this.all_customers[i].attributes.customer_permissions & 512
+                    ) {
+                      _this.can_see_add_to_cart = true;
+                    }
+                  }
+
+                  if (_this.can_see_inventory_and_price) {
+                    _this.getInventory("3114-732-L");
+                  } else {
+                    $('.price-permission').hide();
+                  }
+
+                  if (!_this.can_see_add_to_cart) {
+                    $('.order-wrapper').hide();
+                  }
+                } else {
+                  _this.getInventory("3114-732-L");
+                }
+              } else {
+                $('.order-wrapper').hide();
+              }
+                
+              _this.getMainCustomers();
+            });
+          },
+          updated: function() {
+
+          },
+          computed: {
+            // 被停權帳號停用下單（隱藏 ADD TO CART），保留庫存與價格
+            is_suspended: function() {
+              return this.customer && this.customer.suspended === 'Y';
+            },
+            dealer_price: function() {
+              if(this.customer_price.length == 0) return '';
+
+              return this.customer_price[this.now_customer_no];
+            },
+          },
+          methods: {
+            handleSelectAccount: function() {
+              const selected_account_id = parseInt($('#select_customer').val());
+              let surcharge_percent = 0;
+              const was_price = $('.p-details-main .was').data('was');
+              const now_price = $('.p-details-main .price').data('price');
+              const selectedCustomer = this.main_customers.find(customer => customer.attributes.id === selected_account_id);
+              if (selectedCustomer) {
+                surcharge_percent = selectedCustomer.attributes.surcharge_percent;
+              }
+
+              const new_was_price = was_price * (1 + (surcharge_percent / 100));
+              const new_now_price = now_price * (1 + (surcharge_percent / 100));
+
+              $('.p-details-main .was').html('$' + new_was_price.toFixed(2));
+              $('.p-details-main .price').html('$' + new_now_price.toFixed(2));
+            },
+            getMainCustomers:function(){
+              $.ajax({
+                type: "GET",
+                url: "https://dealerportal.minka.com/users_ajax/customers/"+_this.user.id+"?from-permissioned-customer="+_this.can_see_add_to_cart,
+                data: {
+
+                },
+                xhrFields: {
+                  withCredentials: true
+                },
+                crossDomain: true,
+                cache: false,
+                dataType: 'json',
+                error: function() {
+                  alert("System Error !!");
+                },
+                success: function(data){
+                  var product_division_id = '1';
+                  var available_customers_local = [];
+
+                  if(data.status=="40101"){
+                    _this.main_customers = "n";
+                  }else{
+                    const permissioned_customers = data.filter(customer => {
+                      var permissioned = false;
+                      if (_this.all_customers_permissions[customer.attributes.id] & 512
+                        && (customer.attributes.division_id == product_division_id || (customer.attributes.division_id == '1' && ['3', '5'].includes(product_division_id)))
+                        && customer.attributes.status == 0
+                      ) {
+                        if (_this.division_id == product_division_id || (_this.division_id == '1' && ['3', '5'].includes(product_division_id))) {
+                          for (let i = 0; i < _this.customers.length; i++) {
+                            if (_this.customers[i].attributes.id == customer.attributes.id) {
+                              permissioned = true;
+                              break;
+                            }
+                          }
+                        } else {
+                          permissioned = true;
+                        }
+                      }
+                      return permissioned;
+                    })
+                    _this.main_customers = permissioned_customers;
+                    if (_this.main_customers.length == 0) {
+                      $('.order-wrapper').hide();
+                    }
+                  }
+
+                  $.each(_this.main_customers, function() {
+                    if (
+                      (this.attributes.division_id == product_division_id || (this.attributes.division_id == '1' && (product_division_id == '3' || product_division_id == '5')))
+                      && _this.all_customers_permissions[this.attributes.id] & 512
+                    ) {
+                      available_customers_local.push(this);
+                    }
+                  })
+
+                  if (available_customers_local.length == 1) {
+                    _this.$nextTick(function () {
+                      this.select_customer_id = available_customers_local[0].attributes.id;
+                    });
+                  }
+
+                  _this.available_customers = available_customers_local;
+                }
+              });
+            },
+            get_max_quantity_display(quantity) {
+              return quantity > 25 ? '25+' : quantity;
+            },
+            getInventory:function(item_no){
+              _this = this;
+              $.ajax({
+                type: "POST",
+                url: dealer_api_url+"inventory_ajax/check",
+                data: {
+                  'query': item_no,
+                  'division_id': '1',
+                  'from_permissioned_customer': _this.can_see_inventory_and_price,
+                },
+                xhrFields: {
+                  withCredentials: true
+                },
+                crossDomain: true,
+                cache: false,
+                dataType: 'json',
+                error: function() {
+                  // alert("System Error !!");
+                },
+                success: function(data) {
+
+                  if (typeof data.id != 'undefined') {
+
+                    if(data.ca_quantity<=0 && data.ca_status=="Active"){
+                      data.ca_status="Out of stock";
+                    }
+                    if(data.nc_quantity<=0 && data.nc_status=="Active"){
+                      data.nc_status="Out of stock";
+                    }
+
+
+                    if(data.ca_status!=undefined){
+                      if(data.ca_status=="Out of stock"){
+                        data.status = "Out of stock, CA";
+                      }else{
+                        data.status = data.ca_quantity + " in stock, CA";
+                      }
+                    }else{
+                      data.status = "Out of stock, CA";
+                    }
+
+                    if(data.nc_status!=undefined){
+                      if(data.nc_status=="Out of stock"){
+                        data.status += "<br>Out of stock, GA";
+                      }else{
+                        data.status += "<br>" + data.nc_quantity + " in stock, GA";
+                      }
+                    }else{
+                      data.status += "<br />Out of stock, GA";
+                    }
+
+                    if(data.status.indexOf("in stock, GA") != -1 && data.status.indexOf("in stock, CA") == -1 ){
+                      data.status = data.nc_quantity + " in stock, GA";
+                    }
+                    if(data.status.indexOf("in stock, CA") != -1 && data.status.indexOf("in stock, GA") == -1 ){
+                      data.status = data.ca_quantity + " in stock, CA";
+                    }
+
+                    if (data.ca_status == 'Discontinued' || data.nc_status == 'Discontinued') {
+                      data.status = '';
+
+                      if (data.nc_quantity > 0) {
+                        data.status = data.nc_quantity + ' in stock, GA';
+                      }
+
+                      if (data.ca_quantity > 0) {
+                        data.status += (data.status ? '<br />' : '') + data.ca_quantity + ' in stock, CA';
+                      }
+
+                      if (data.nc_quantity <= 0 && data.ca_quantity <= 0) {
+                        data.status = 'Discontinued';
+                      }
+
+                      _this.discontinued = 'Y';
+                    }
+                    _this.status = data.status;
+
+                    if((data.ca_status=="Out of stock" && data.nc_status=="Out of stock") || (data.ca_status=="Out of stock" && data.nc_status==undefined) || (data.ca_status==undefined && data.nc_status=="Out of stock") ){
+                      _this.notify_me = "N";
+
+                      if (_this.permissions.PERM_CUST_ORDER_REQUEST) {
+                        _this.backorder = "Y";
+                        _this.adjustMaxMinValue();
+                      }
+                    }
+
+                    _this.min = 1;
+
+                    _this.max = (data.ca_quantity || 0) + (data.nc_quantity || 0);
+                    //_this.get_item(item_no,data)
+                    //15 IN STOCK, CA
+                  } else {
+                    data.status = 'Out of stock, CA<br>Out of stock, GA';
+                    _this.status = data.status;
+                    _this.notify_me = "N";
+                    $('.order-wrapper').hide();
+                    if (_this.permissions.PERM_CUST_ORDER_REQUEST) {
+                      _this.backorder = "Y";
+                      _this.adjustMaxMinValue();
+                    }
+                  }
+                }
+              });
+            },
+            add_to_cart: function() {
+              var amount = $('#input_QTY').val();
+              var price = '289.00';
+              if(price <= 0) return;
+
+              if(amount == '' || amount < 1){dealer_show_msg("Quantity field is required.", 'error');return;}
+              if(this.main_customers!='n' && this.select_customer_id==""){dealer_show_msg("Please select account", 'error');return;}
+
+              //check
+              if(this.max!="25+" && amount>this.max && this.notify_me!="N"){dealer_show_msg("This is a limited quantity item. Current available inventory is displayed. Backorders are not allowed. ", 'error');return;}
+
+              //if multiple
+              if(this.select_customer_id!=""){
+                for (var customer_key in this.main_customers) {
+                  if(customer_key>=0 && this.main_customers[customer_key].attributes.id==this.select_customer_id){
+                    this.selected_account_surcharge_percent = this.main_customers[customer_key].attributes.surcharge_percent;
+                    this.selected_account_warehouse_no = this.main_customers[customer_key].attributes.warehouse_no;
+                    this.account.customer_no = this.main_customers[customer_key].attributes.no;
+                    this.account.customer_name = this.main_customers[customer_key].attributes.name;
+                  }
+                }
+              }
+
+              _this = this;
+              _this.products = [];
+              $.ajax({
+                type: "POST",
+                url: "dealer/order_request.php",
+                data: {
+                  'mode': 'get_item',
+                  'item_no': '3114-732-L',
+                  'surcharge_percent': _this.selected_account_surcharge_percent,
+                },
+                cache: false,
+                dataType: 'json',
+                error: function() {
+                  // alert("System Error !!");
+                },
+                success: function(data) {
+
+                  _this.products.push({
+                    productid: data.productid,
+                    amount: amount,
+                    quantity: _this.qty_exceeds_inventory ? 0 : amount,
+                    max: _this.max,
+                    price: data.price,
+                    descr: data.descr,
+                    backorder: (_this.backorder === 'Y' || _this.qty_exceeds_inventory) ? 'Y' : 'N',
+                    discontinued: _this.discontinued
+                  });
+
+                  _this.add_to_cart2();
+                }
+              });
+            },
+            add_to_cart2: function(){
+              _this = this;
+              $.ajax({
+                type: "POST",
+                url: "dealer/order_request.php",
+                data: {
+                  'mode': 'add_cart',
+                  'select_customer_id': _this.select_customer_id,
+                  'product_division_id': "1",
+                  'products': _this.products,
+                  'user': _this.user,
+                  'account': _this.account,
+                  'billing': _this.billing,
+                  'shipping': _this.shipping
+                },
+                cache: false,
+                dataType: 'json',
+                error: function() {
+                  // alert("System Error !!");
+                },
+                success: function(data) {
+                  vue_dealer_head.get_minicart_items("52625",function(){
+                    $('.minicart_total_items').html(data.count);
+                    $('.minicart_total_items_plural').html("");
+                    if(data.count>1) $('.minicart_total_items_plural').html("s");
+
+                    $(".cart_dropdown").slideDown(200);
+                    setTimeout(function () {$(".cart_dropdown").slideUp(200);}, 2500);
+                  }, _this.selected_account_surcharge_percent);
+                }
+              });
+            },
+            get_billing: function(customer_id=""){
+              _this = this;
+
+              if(customer_id==""){
+                customer_id = vue_dealer_head.customer.attributes.id;
+              }
+              _this.billing.billing_addr = "";
+              _this.billing.billing_city_zip = "";
+              _this.shipping.shipping_addr = "";
+              _this.shipping.shipping_city_zip = "";
+
+              $.ajax({
+                type: "GET",
+                url: "https://dealerportal.minka.com/aging_ajax",
+                data: {},
+                xhrFields: {
+                  withCredentials: true
+                },
+                crossDomain: true,
+                cache: false,
+                dataType: 'json',
+                error: function() {
+                  alert("System Error !!");
+                },
+                success: function(data){
+                  if(data.status == 200) {
+                    for (var groups of data.groups){
+                      if(groups.customer.attributes.id==customer_id){
+                        $invoice_length = groups.invoices.length;
+                        if($invoice_length>0){
+                          _this.billing.billing_addr = groups.invoices[$invoice_length-1].attributes.billing_addr;
+                          _this.billing.billing_city_zip = groups.invoices[$invoice_length-1].attributes.billing_city_zip;
+                          _this.shipping.shipping_addr = groups.invoices[$invoice_length-1].attributes.shipping_addr;
+                          _this.shipping.shipping_city_zip = groups.invoices[$invoice_length-1].attributes.shipping_city_zip;
+                        }
+                      }
+                    }
+                  }
+                }
+              });
+            },
+            notify_modal: function() {
+              $('#notify_modal').modal('show');
+            },
+            notify_me_click: function() {
+              _this = this;
+              this.notify_email_err = false;
+              if(this.isEmailValid(this.notify_email) == false) {
+                this.notify_email_err = true;
+                return;
+              }
+              $.ajax({
+                type: "POST",
+                url: "dealer/order_request.php",
+                data: {
+                  'mode': 'notify',
+                  'account': _this.account,
+                  'division_id': '1',
+                  'item_no': '3114-732-L',
+                  'email': _this.notify_email
+                },
+                cache: false,
+                dataType: 'json',
+                error: function() {
+                  // alert("System Error !!");
+                },
+                success: function(data) {
+                  if(data.status == 200) {
+                    dealer_show_msg("We will let you know when the item is available.", 'success');
+                  }
+                  $('#notify_modal').modal('hide');
+                }
+              });
+            },
+            isEmailValid: function(val) {
+              return (val == "") ? false : (this.reg_email.test(val)) ? true : false;
+            },
+            isNumber: function(evt) {
+              _this = this;
+              evt = (evt) ? evt : window.event;
+              var charCode = (evt.which) ? evt.which : evt.keyCode;
+              if(!(charCode>=48 && charCode<=57)){ //not number
+                $('#input_QTY').val(_this.min)
+                evt.preventDefault();
+              } else {
+                setTimeout(function() {
+                  _this.adjustMaxMinValue();
+                }, 0);
+                return true;
+              }
+            },
+            adjustMaxMinValue:function(){
+              _this = this;
+              $input_qty = $('#input_QTY');
+              _this.qty_error = false;
+              _this.qty_exceeds_inventory = false;
+
+              if($input_qty.val()<_this.min || $input_qty.val()==''){
+                $input_qty.val(_this.min);
+              }else if($input_qty.val() > 0 && _this.max!="25+" && $input_qty.val()>_this.max) {
+                if (_this.discontinued == 'Y') {
+                  $input_qty.val(_this.max);
+                  _this.qty_error_message = 'This is a limited quantity item. Current available inventory is displayed. Backorders are not allowed. ';
+
+                  if (_this.clear_qty_message_timeout) {
+                    clearTimeout(_this.clear_qty_message_timeout);
+                  }
+
+                  _this.clear_qty_message_timeout = setTimeout(function() {
+                    _this.qty_error = false;
+                  }, 3000);
+                } else {
+                  _this.qty_error_message = 'Order quantity exceeds available inventory. Please select option to ship complete or with a backorder in your shopping cart.';
+                  _this.qty_exceeds_inventory = true;
+                }
+                _this.qty_error = true;
+              }
+            },
+            input_QTY_onchange:function(){
+              var amount = $('#input_QTY').val();
+              if(amount < 1) {
+                $('#input_QTY').val(1);
+                // $('#input_QTY_err_msg').show();
+              }else {
+                // $('#input_QTY_err_msg').hide();
+              }
+            },
+            // F2607_HOTSHEET：Hot Sheet 數量不得超過兩倉庫存加總（this.max 由 getInventory 設為 ca + nc）
+            hotsheet_QTY_onchange:function(){
+              if (typeof window.hotsheet_clamp_qty_field === 'function') {
+                window.hotsheet_clamp_qty_field($('#hotsheet_QTY'));
+              }
+            }
+          }
+        });
+
+        
+    </script>
+
+</div>
+<script>
+var d_project = '0';
+var projects = '';
+var d_hotsheet = '0';
+var hotsheets = '';
+</script>
+
+
+
+</section>
+
+
+
+  
+<footer class="footer hidden-print ">
+   <div class="footer-help">
+    <div class="container-fluid">
+      <div class="col-xs-12 col-sm-4">
+        <div class="footer-help-box">
+          <h4>Dealer Locator</h4>
+          <form action="dealers.php" method="get">
+            <div class="footer-help-box-txt">
+              <div class="form-group">
+                <div class="controls">
+                  <input type="text" class="floatLabel" name="zipcode"  id="zipcode" aria-label="zipcode">
+                  <label for="">Enter Zip Code</label>
+                </div>
+              </div>
+              <div class="form-group">
+                <div class="controls"> <i class="fa fa-angle-down"></i>
+                  <select class="floatLabel" name="miles" id="miles" aria-label="miles">
+                  <option value="5">5 Miles</option>
+                  <option value="10">10 Miles</option>
+                  <option value="25" selected="selected">25 Miles</option>
+                  <option value="50">50 Miles</option>
+                  <option value="100">100 Miles</option>
+                  </select>
+                  <label for="fruit" class="active">Distance</label>
+                </div>
+              </div>
+            </div>
+            <div class="form-group ac"><button class="btn btn-gold-t">SEARCH</button> </div>
+          </form>
+        </div>
+      </div>
+      <div class="col-xs-12 col-sm-4">
+        <div class="footer-help-box">
+          <h4>Contact Us</h4>
+          <div class="footer-help-box-txt">
+            <p>M - F 7:00 a.m. - 4:00 p.m. Pacific Time<br>
+              Toll Free: 1 (800) 221-7977<br>
+              Corona, CA
+            </p>
+          </div>
+          <div class="ac"> <a class="btn btn-gold-t" href="faq.php">CONTACT US</a> </div>
+        </div>
+      </div>
+      <div class="col-xs-12 col-sm-4">
+        <div class="footer-help-box">
+          <h4>Resources</h4>
+          <div class="footer-help-box-txt">
+            <p>Can’t find what you’re looking for?<br>
+              View our Resources page.</p>
+          </div>
+          <div class="ac"> <a class="btn btn-gold-t" href="https://www.minka.com/resources.html">RESOURCES</a> </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer-help footer-help__product_recall_notification">
+    <div class="container-fluid">
+      <div class="col-xs-12 col-sm-12">
+        <div class="footer-help-box">
+
+          <div class="ac">
+            <a class="btn btn-gold-t" href="https://www.recallrtr.com/vortic" target="_blank">VORTIC FLOW SERIES PRODUCT RECALL NOTIFICATION</a>
+          </div>
+          <div class="ac">
+            <a class="btn btn-gold-t" href="/bardon-recall.html">BARDON PRODUCT RECALL NOTIFICATION</a>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer-main">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-xs-12 footer-content">
+                      <div class="footer-logo"><img src="/skin/MK/_images/Minka_Logo_Wordmark_white.png" alt="logo"></div>
+                    <ul>
+                          <li><a href="https://www.minka.com/about-our-site.html">About</a></li>
+                          <li><a href="/faq.php">FAQ</a></li>
+                          <li><a href="/dealers.php">US Dealer Locator</a></li>
+                          <li><a href="/dealers_int.php">International Dealer Locator</a></li>
+                          <li><a href="/Warranty_registration.php">Warranty Registration</a></li>
+                      </ul>
+          <p class="copy">&copy;
+                          2018-2026
+                        Minka Lighting LLC. All rights reserved.
+            <span>
+              <span class="copy-line">|</span>
+              <a href="https://www.minka.com/terms-and-conditions.html">Terms of Use</a> |
+              <a href="https://privacy-central.securiti.ai/#/notices/9771ff4c-3651-42b5-9977-42bcdbb8c8dc" target="_blank">Privacy Policy & Security</a>
+            </span>
+            <span class="copy-line">|</span>
+            <span>
+              <a href="https://privacy-central.securiti.ai/#/notices/9771ff4c-3651-42b5-9977-42bcdbb8c8dc/custom_afaf249e-ef5a-4d76-a730-ca5704c544b5" target="_blank">Cookie Policy</a> |
+              <a href="javascript:;" onclick='window.preferenceCenterGeneration.showCookiePreference();'>Do Not Sell or Share My Information</a> |
+              <a href="https://privacy-central.securiti.ai/#/notices/9771ff4c-3651-42b5-9977-42bcdbb8c8dc/custom_606c68d9-ae29-4766-85f8-7346029b0e54" target="_blank">CA Privacy Rights</a> |
+              <a href="https://privacy-central.securiti.ai/#/dsr-universal/8bc73203-7a60-40ba-be06-3c00d2b7e2c9" target="_blank">Your Privacy Rights</a> |
+              <a href="accessibility-statement.html">Accessibility Statement</a>
+            </span>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+<div class="pop-wrap video-pop ">
+  <div class="pop-wrap-bg"></div>
+  <div class="div-table">
+    <div class="table-cell">
+      <div class="pop-main video-main">
+        <div class="video-pop-box">
+          <div class="ar"><a class="close-icon" href="#" aria-label="close"><span class="line-bar"></span><span class="line-bar"></span></a></div>
+          <div class="video-container"><iframe width="964" height="542" src="" frameborder="0" allowfullscreen></iframe></div>
+         </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="pop-wrap compare-pop ">
+  <div class="pop-wrap-bg"></div>
+  <div class="div-table">
+    <div class="table-cell">
+      <div class="pop-main compare-pop-main">
+        <div>
+          <div class="ar"><a class="close-icon" href="#" aria-label="close"><span class="line-bar"></span><span class="line-bar"></span></a></div>
+          <div class="video-container">
+            <h6 class="al">You may compare up to four items at a time.</h6>
+						<p>Would you like to compare the first four items you selected?</p>
+            <div class="form-group"><a href="compare.php" class="btn btn-black" >YES, GO TO COMPARE</a></div>
+          </div>
+         </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!---->
+  <div class="pop-wrap terms-pop pop-bg-black">
+    <div class="pop-wrap-bg"></div>
+    <div class="div-table">
+      <div class="table-cell">
+        <div class="pop-main warranty-registration-pop-main">
+
+          <div class="ar"><a class="close-icon" href="javascript:;" aria-label="close"><span class="line-bar"></span><span class="line-bar"></span></a></div>
+		  <h2 class="ac">Terms and Conditions</h2>
+          <div class="terms-pop-box">
+
+		    <p>This Minka Group® website is operated by Minka Group®. These Terms and Conditions are effective March 1, 2018. Minka Group® may update these Terms and Conditions occasionally. You may find the latest Terms and Conditions link at the bottom of our website.</p>
+			<p>When a visitor to any Minka Group® website enters their name, email addresses, physical addresses, or phone number Minka Group® collects this information for Warranty Registration or My Projects. This information is used in the administration of product warranties and also to create a My Projects account to save product information. My Project information that is shared with a third party is at the discretion of the user and Minka Group® has no liability. Product Information or product availability, within My Projects is not guaranteed and subject to change. Individual projects created within My Projects will be available for the user for 2 years from when they are created; at 2 years the individual projects will be deleted. Minka Group® does not have responsibility for the management of individual projects should a problem arise where any information is inadvertently deleted. Unless the visitor chooses for their contact information not to be shared by opting out, Minka Group® may share information with third parties whose products or services may benefit the visitor or Minka Group®.</p>
+			<p>Certain information may be automatically collected for marketing purposes. This could include but not limited to pages viewed, items viewed, time per page, or visitors location. Use of our website may require the use of cookies.</p>
+			<p>Minka Group® may disclose contact information when required by law or when we believe in good faith that such action is necessary in order to comply with legal process or meet some other legal obligation. We may also disclose contact information in special cases when we have reason to believe that disclosing this information is necessary to identify, contact or bring legal action against a party who may be violating an agreement with Minka Group® or may be causing injury to or interference with Minka Group® rights or property, on the site, or to anyone else who could be harmed by such activities.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+<!---->
+
+  <div class="pop-wrap warranty-registration-pop pop-bg-black">
+    <div class="pop-wrap-bg"></div>
+    <div class="div-table">
+      <div class="table-cell">
+        <div class="pop-main warranty-registration-pop-main">
+
+          <div class="ar"><a class="close-icon" href="javascript:;" aria-label="close"><span class="line-bar"></span><span class="line-bar"></span></a></div>
+          <div class="warranty-registration-pop-box">
+          <h4 class="al">Where to Find Your Model Number</h4>
+          
+          <ul class="ul-style">
+            <li>Located inside the canopy </li>
+            <li>Backside of the back plate </li>
+            <li>The instruction manual </li>
+            <li>Box that the Fan was shipped in</li>
+          </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+ </div>
+<div class="pop-wrap quick-shop-pop">
+  <div class="pop-wrap-bg"></div>
+  <div class="div-table">
+    <div class="table-cell">
+      <div class="pop-main quick-shop-pop-main"> </div>
+    </div>
+  </div>
+</div>
+
+<div id="pdetail-img-pop" class="pop-wrap pop-bg-black brands-video-pop">
+    <div class="pop-wrap-bg"></div>
+	<div class=" brands-video-pop-title"> <a class="close-icon" href="#" aria-label="close"><span class="line-bar"></span><span class="line-bar"></span></a></div>
+    <div class="div-table">
+      <div class="table-cell">
+        <div class="pop-main brands-video-pop-main">
+          <div class="brands-video-pop-box">
+           <div id="viewer2" class="viewer"></div>
+           <img style=" opacity: 0;"  src="Minka-Image-Coming-Soon.jpg" alt="coming soon" >
+           <div class="iviewer_arrow iviewer_prev" style="display:none; position: fixed; left: 50%; bottom: 40px; margin-left: -105px; color: #fff; font-size: 40px; cursor: pointer; z-index: 5001; width: 40px; height: 40px; line-height: 40px; text-align: center;"><i class="fa fa-angle-left"></i></div>
+           <div class="iviewer_arrow iviewer_next" style="display:none; position: fixed; left: 50%; bottom: 40px; margin-left: 65px; color: #fff; font-size: 40px; cursor: pointer; z-index: 5001; width: 40px; height: 40px; line-height: 40px; text-align: center;"><i class="fa fa-angle-right"></i></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<div id="pdetail-video-pop" class="pop-wrap pop-bg-black brands-video-pop">
+    <div class="pop-wrap-bg"></div>
+	<div class=" brands-video-pop-title"> <a class="close-icon" href="#" aria-label="close"><span class="line-bar"></span><span class="line-bar"></span></a></div>
+    <div class="div-table">
+      <div class="table-cell">
+        <div class="pop-main brands-video-pop-main">
+          <div class="brands-video-pop-box">
+
+          <iframe width="100%" height="315" src="" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<div id="catalog-pop" class="pop-wrap pop-bg-black brands-video-pop">
+  <div class="pop-wrap-bg"></div>
+  <div class=" brands-video-pop-title"> <a class="close-icon" href="#" aria-label="close"><span class="line-bar"></span><span class="line-bar"></span></a></div>
+  <div class="div-table">
+    <div class="table-cell">
+      <div class="pop-main brands-video-pop-main">
+        <div class="brands-video-pop-box">
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <div id="brands-video-pop-01" class="pop-wrap pop-bg-black brands-video-pop">
+    <div class="pop-wrap-bg"></div>
+	<div class=" brands-video-pop-title"> <a class="close-icon" href="#" aria-label="close"><span class="line-bar"></span><span class="line-bar"></span></a></div>
+    <div class="div-table">
+      <div class="table-cell">
+        <div class="pop-main brands-video-pop-main">
+          <div class="brands-video-pop-box">
+
+          <iframe width="100%" height="315" src="" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<div class="pop-wrap recent-projects-pop pop-bg-black">
+  <div class="pop-wrap-bg"></div>
+  <div class="div-table">
+    <div class="table-cell">
+      <div class="pop-main recent-projects-pop-main">
+        <div class="myProjects-box">
+          <div class="ar"><a class="close-icon" href="#" aria-label="close"><span class="line-bar"></span><span class="line-bar"></span></a></div>
+          <h6 class="ac" id="">Which Project are you working on?</h6>
+          <p>Please select a project from the list below to get started.</p>
+            <div class="form-group">
+              <div class="controls"> <i class="fa fa-angle-down"></i>
+                <select name="to" class="to" id="to" aria-label="to">
+                  <option value="">RECENT PROJECTS </option>
+                                  </select>
+              </div>
+            </div>
+            <div class="form-group">
+              <h6>- or -</h6>
+            </div>
+            <div class="form-group">
+              <a class="btn btn-black cr-new-project" >CREATE A NEW PROJECT</a>
+            </div>
+            <form class="project-form" style="display:none;">
+              <input type="hidden" name="productid">
+              <div class="form-group">
+                <div class="controls">
+                  <input type="text"  class="floatLabel" name="name"  id="Project_Name" aria-label="Project_Name" required="required">
+                  <label for="" class="">Project Name</label>
+                </div>
+              </div>
+              <div class="form-group">
+                <div class="controls">
+                  <textarea  class="floatLabel" name="descr" id="descr" aria-label="descr" placeholder=""></textarea>
+                  <label for="" class="">Project Description</label>
+                </div>
+              </div>
+              <div class="form-group">
+                  <div class="checkbox">
+                    <label>
+                      <input type="checkbox" name="accept" value="1" id="acceptterms" required>
+                      <span class="custom-checkbox"><i class="icon-check"></i></span>
+                      I have read and agree to the <a href="https://www.minka.com/terms-and-conditions.html" target="_blank">"Terms and Conditions"</a>
+                    </label>
+                  </div>
+              </div>
+              <div class="form-group">
+                <button type="submit" class="btn btn-gold-t" >SAVE NEW PROJECT</button>
+              </div>
+            </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="pop-wrap warranty-registration-pop2 pop-bg-black  ">
+  <div class="pop-wrap-bg"></div>
+  <div class="div-table">
+    <div class="table-cell">
+      <div class="pop-main warranty-registration-pop-main ac">
+        <div class="ar"><a class="close-icon" href="#" aria-label="close"><span class="line-bar"></span><span class="line-bar"></span></a></div>
+        <h5>WARRANTY REGISTRATION SUCCESSFUL</h5>
+        <p>Thank you for purchasing a Minka Aire fan! Your warranty confirmation number is <strong></strong>.
+          Your registration details and confirmation number will be emailed to you shortly.</p>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="pop-wrap energy-guide-pop pop-bg-black">
+  <div class="pop-wrap-bg"></div>
+  <div class="div-table">
+    <div class="table-cell">
+      <div class="pop-main energy-guide-pop-main">
+        <div class="ar"><a class="close-icon" href="#" aria-label="close"><span class="line-bar"></span><span class="line-bar"></span></a></div>
+        <div class="container-fluid"> <img src="" alt="energyguide" />  </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="pop-wrap myProjects-pop pop-bg-black ">
+  <div class="pop-wrap-bg"></div>
+  <div class="div-table">
+    <div class="table-cell">
+      <div class="pop-main myProjects-pop-main">
+        <div class="myProjects-box">
+          <div class="ar"><a class="close-icon" href="#" aria-label="close"><span class="line-bar"></span><span class="line-bar"></span></a></div>
+          <h4 class="ac">Create New Project</h4>
+          <form class="project-form">
+            <input type="hidden" name="productid" />
+            <div class="form-group">
+              <div class="controls">
+                <input type="text" id="Email-address" class="floatLabel"  aria-label="Email-address" name="name" required="required">
+                <label for="" class="">Project Name</label>
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="controls">
+                <textarea  class="floatLabel" name="descr" id="c_descr" aria-label="c_descr" placeholder=""></textarea>
+                <label for="" class="">Project Description (optional)</label>
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="checkbox">
+                <label>
+                  <input type="checkbox" name="accept" value="1" id="acceptterms" required>
+                  <span class="custom-checkbox"><i class="icon-check"></i></span>
+                  I have read and agree to the <a href="https://www.minka.com/terms-and-conditions.html" target="_blank">"Terms and Conditions"</a>
+                </label>
+              </div>
+            </div>
+            <div class="form-group">
+              <input type="submit" class="btn btn-black" value="create">
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="pop-wrap action-project-pop pop-bg-black">
+  <div class="pop-wrap-bg"></div>
+  <div class="div-table">
+    <div class="table-cell">
+      <div class="pop-main myProjects-pop-main">
+        <div class="myProjects-box">
+          <div class="ar"><a class="close-icon" href="#" aria-label="close"><span class="line-bar"></span><span class="line-bar"></span></a></div>
+          <h4 class="ac" id="action">Copy Selected To</h4>
+          <form id="action-project-form">
+            <input type="hidden" name="projectid" value="" />
+            <input type="hidden" name="ids" value="" />
+            <input type="hidden" name="action" value="" />
+            <div class="form-group">
+              <div class="controls"> <i class="fa fa-angle-down"></i>
+                <select name="to" class=""  id="c_to" aria-label="c_to">
+
+              
+                </select>
+              </div>
+            </div>
+            <div class="form-group">
+              <input type="submit" class="btn btn-black" value="submit">
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="pop-wrap myHotsheet-pop pop-bg-black ">
+  <div class="pop-wrap-bg"></div>
+  <div class="div-table">
+    <div class="table-cell">
+      <div class="pop-main myProjects-pop-main">
+        <div class="myProjects-box">
+          <div class="ar"><a class="close-icon" href="#" aria-label="close"><span class="line-bar"></span><span class="line-bar"></span></a></div>
+          <h4 class="ac">Create New Hot Sheet</h4>
+          <form class="hotsheet-form">
+            <input type="hidden" name="productid" />
+            <div class="form-group">
+              <div class="controls">
+                <input type="text" id="Hotsheet-name" class="floatLabel" aria-label="Hotsheet-name" name="name" required="required">
+                <label for="Hotsheet-name" class="">Hot Sheet Name</label>
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="controls">
+                <textarea class="floatLabel" name="descr" id="h_descr" aria-label="h_descr" placeholder=""></textarea>
+                <label for="h_descr" class="">Description (optional)</label>
+              </div>
+            </div>
+            
+            <div class="form-group hotsheet-qty-row">
+              <label for="new_hs_qty">Quantity</label>
+              <input type="number" min="1" value="1" name="qty" id="new_hs_qty" class="form-control" aria-label="Quantity">
+              <small class="hotsheet-pop-stock-note"></small>
+            </div>
+            <div class="form-group">
+              <input type="submit" class="btn btn-black" value="create">
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="pop-wrap recent-hotsheet-pop pop-bg-black">
+  <div class="pop-wrap-bg"></div>
+  <div class="div-table">
+    <div class="table-cell">
+      <div class="pop-main recent-hotsheet-pop-main">
+        <div class="myProjects-box">
+          <div class="ar"><a class="close-icon" href="#" aria-label="close"><span class="line-bar"></span><span class="line-bar"></span></a></div>
+          
+          <div class="hs-choose-existing">
+            <h6 class="ac">Which Hot Sheet are you working on?</h6>
+            <p>Please select a hot sheet and quantity to add this product.</p>
+            <div class="form-group">
+              <div class="controls"> <i class="fa fa-angle-down"></i>
+                <select name="to_h" class="to_h" id="to_h" aria-label="to_h">
+                  <option value="">RECENT HOT SHEETS </option>
+                                  </select>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="recent_hs_qty">Quantity</label>
+              <input type="number" min="1" value="1" id="recent_hs_qty" class="form-control hotsheet-qty-input" aria-label="Quantity">
+              <small class="hotsheet-pop-stock-note"></small>
+            </div>
+            <div class="form-group">
+              <a class="btn btn-gold add-to-hotsheet-confirm">ADD TO HOT SHEET CART</a>
+            </div>
+            <div class="form-group">
+              <h6>- or -</h6>
+            </div>
+            <div class="form-group">
+              <a class="btn btn-black cr-new-hotsheet">CREATE A NEW HOT SHEET</a>
+            </div>
+          </div>
+          <form class="hotsheet-form" style="display:none;">
+            <input type="hidden" name="productid">
+            <div class="form-group">
+              <div class="controls">
+                <input type="text" class="floatLabel" name="name" id="Hotsheet_Name" aria-label="Hotsheet_Name" required="required">
+                <label for="Hotsheet_Name" class="">Hot Sheet Name</label>
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="controls">
+                <textarea class="floatLabel" name="descr" id="h_descr2" aria-label="h_descr2" placeholder=""></textarea>
+                <label for="h_descr2" class="">Description (optional)</label>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="new_hs_qty2">Quantity</label>
+              <input type="number" min="1" value="1" name="qty" id="new_hs_qty2" class="form-control" aria-label="Quantity">
+              <small class="hotsheet-pop-stock-note"></small>
+            </div>
+            <div class="form-group">
+              <button type="submit" class="btn btn-gold-t">SAVE NEW HOT SHEET</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-5Y4RC98DPW"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', "G-5Y4RC98DPW");
+</script>
+
+
+
+<script>
+var $buoop = {notify:{e:10,f:52,o:45,s:6,c:58},insecure:true,api:5};
+function $buo_f(){
+var e = document.createElement("script");
+e.src = "//browser-update.org/update.min.js";
+document.body.appendChild(e);
+};
+try {document.addEventListener("DOMContentLoaded", $buo_f,false)}
+catch(e){window.attachEvent("onload", $buo_f)}
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+<script type="text/javascript" src="/min/g=lazy-images.js?1789977132"></script>
+
+  <script id="ze-snippet" src="https://static.zdassets.com/ekr/snippet.js?key=9bd8404e-f68c-4812-b0bf-0e6e270adcaa"></script>
+
+</body>
+</html>

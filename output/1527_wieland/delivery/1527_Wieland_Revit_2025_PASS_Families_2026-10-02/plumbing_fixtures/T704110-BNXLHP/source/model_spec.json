@@ -1,0 +1,254 @@
+{
+  "key": "T704110-BNXLHP",
+  "model": "T704110-BNXLHP",
+  "manufacturer": "Brizo",
+  "type_name": "T704110-BNXLHP - Brilliance Black Onyx -  Black",
+  "basename": "Brizo_T704110-BNXLHP_R2025",
+  "name": "Roccesco wall-mounted tub filler trim, less handles",
+  "host": "wall",
+  "configured_dimensions_in": [
+    8.28,
+    3.18625,
+    12.5625
+  ],
+  "materials": {
+    "Finish": {
+      "rgb": [
+        58,
+        60,
+        62
+      ],
+      "gloss": 0.92,
+      "reflectivity": 0.72,
+      "class": "Metal"
+    },
+    "Detail": {
+      "rgb": [
+        24,
+        25,
+        26
+      ],
+      "gloss": 0.17,
+      "reflectivity": 0.04,
+      "class": "Plastic"
+    },
+    "Graphite": {
+      "rgb": [
+        64,
+        67,
+        69
+      ],
+      "gloss": 0.36,
+      "reflectivity": 0.16,
+      "class": "Glass"
+    },
+    "Ceramic": {
+      "rgb": [
+        245,
+        245,
+        241
+      ],
+      "gloss": 0.86,
+      "reflectivity": 0.22,
+      "class": "Ceramic"
+    },
+    "Brass": {
+      "rgb": [
+        160,
+        124,
+        64
+      ],
+      "gloss": 0.4,
+      "reflectivity": 0.38,
+      "class": "Metal"
+    },
+    "Green": {
+      "rgb": [
+        31,
+        113,
+        66
+      ],
+      "gloss": 0.18,
+      "reflectivity": 0.05,
+      "class": "Plastic"
+    },
+    "Gray": {
+      "rgb": [
+        131,
+        132,
+        130
+      ],
+      "gloss": 0.32,
+      "reflectivity": 0.12,
+      "class": "Plastic"
+    }
+  },
+  "geometry": [
+    {
+      "name": "Spout wall flange",
+      "kind": "cylinder",
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "radius": 1.40625,
+      "a": 0,
+      "b": 0.28,
+      "material": "Finish"
+    },
+    {
+      "name": "Rounded projecting tub spout",
+      "kind": "profile",
+      "origin": [
+        -0.875,
+        0,
+        0
+      ],
+      "u": [
+        0,
+        0,
+        1
+      ],
+      "v": [
+        0,
+        1,
+        0
+      ],
+      "normal": [
+        1,
+        0,
+        0
+      ],
+      "points": [
+        [
+          0,
+          0.38
+        ],
+        [
+          9.85,
+          0.38
+        ],
+        [
+          "arc",
+          [
+            11.43,
+            -0.12
+          ],
+          [
+            12.5625,
+            -1.4
+          ]
+        ],
+        [
+          12.5,
+          -1.78
+        ],
+        [
+          11.7,
+          -1.78
+        ],
+        [
+          "arc",
+          [
+            10.86,
+            -0.8
+          ],
+          [
+            9.7,
+            -0.38
+          ]
+        ],
+        [
+          0,
+          -0.38
+        ]
+      ],
+      "length": 1.75,
+      "material": "Finish"
+    },
+    {
+      "name": "Left handle stem",
+      "kind": "cylinder",
+      "origin": [
+        -4,
+        0,
+        0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "radius": 0.14,
+      "a": 0,
+      "b": 0.65,
+      "material": "Brass"
+    },
+    {
+      "name": "Right handle stem",
+      "kind": "cylinder",
+      "origin": [
+        4,
+        0,
+        0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "radius": 0.14,
+      "a": 0,
+      "b": 0.65,
+      "material": "Brass"
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://bravo.requested-info.com/brands/BRZ/documents/specSheets/T704110-BLLHP_Spec.pdf",
+      "document": "BSP-B-T704110-LHP Rev B",
+      "page": 1,
+      "local_image": "_research/T704110-BNXLHP/downloads/T704110-BLLHP_Spec_pages/page_01.png"
+    }
+  ],
+  "dimension_authority": [
+    "Projection 12.5625 in; nominal outlet reach 11.875 in; flange diameter 2.8125 in; stem centers 8 in."
+  ],
+  "limitations": [
+    "Rounded spout side profile, underside arch and vertical outlet position are drawing-derived.",
+    "LHP handles and R70400 rough are separate inventory items.",
+    "Independent visualization reconstruction with fixed product dimensions and editable native materials.",
+    "Small fillets, seams, nozzle details and optical material response are inferred where the manufacturer does not dimension them.",
+    "No internal hydraulic performance, MEP connectors, fabrication tolerances or procurement substitutions are implied."
+  ],
+  "anchors": [
+    {
+      "label": "Flange diameter",
+      "parts": [
+        "Spout wall flange"
+      ],
+      "axis": 0,
+      "nominal_in": 2.8125
+    },
+    {
+      "label": "Projection",
+      "parts": [
+        "Spout wall flange",
+        "Rounded projecting tub spout"
+      ],
+      "axis": 2,
+      "nominal_in": 12.5625
+    }
+  ],
+  "all_overall_dimensions_authoritative": false,
+  "rfa_search": {
+    "result": "No acceptable no-account RFA recovered",
+    "evidence": "_research/T704110-BNXLHP/sources.json"
+  }
+}

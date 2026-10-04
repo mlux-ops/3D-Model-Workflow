@@ -1,0 +1,235 @@
+{
+  "host": {
+    "instance_host_id": "3703", 
+    "host_id": "3703", 
+    "host_kind": "floor", 
+    "hostface_present": true, 
+    "normal_dot": 1.0
+  }, 
+  "model": "TD9028-LS-PCW", 
+  "source_dimensions": [
+    "Manufacturer specifies 1.5-inch NPSM coarse drain thread with 1.875-inch nominal external diameter."
+  ], 
+  "inferences": "The two trim components are displayed side-by-side, not in a tub installation pose. | ASSUMPTION: stopper cap 2.9 in and overflow plate 3.2 in are inferred from the product photo; no exact trim dimensional drawing was recovered. | The legacy -LS-PCW row uses the corrected TD9028-PCW geometry based on the other matching project rows; vendor confirmation remains required. | Independent visualization reconstruction with fixed product dimensions and editable native materials. | Small fillets, seams, nozzle details and optical material response are inferred where the manufacturer does not dimension them. | No internal hydraulic performance, MEP connectors, fabrication tolerances or procurement substitutions are implied.", 
+  "visual_review": "PENDING_NATIVE_IMAGE_REVIEW", 
+  "source_spec_sha256": "9be7cd2c8f49e5e64f598d67c40c5a61374d5f255d26b195cb6426e0cdf43ca3", 
+  "started_utc": "2026-10-02T15:55:22.435000Z", 
+  "template_form_ids": [
+    "1537"
+  ], 
+  "source_references": [
+    {
+      "visual_review_method": "Manufacturer web PDF screenshot", 
+      "document": "Westbrass TD9028 manufacturer thread and finish description", 
+      "page": 1, 
+      "url": "https://westbrass.com/product/tip-toe-tub-trim-set-with-floating-faceplate/"
+    }
+  ], 
+  "reopened": true, 
+  "gates": {
+    "actual_face_host": true, 
+    "reopened": true, 
+    "category": true, 
+    "diffuse_bitmaps": true, 
+    "warnings": true, 
+    "views": true, 
+    "dimensions": true, 
+    "reopen_geometry_equal": true, 
+    "materials": true, 
+    "cct": true, 
+    "orientation": true
+  }, 
+  "placement": "WorkPlaneBased", 
+  "material_tests": {
+    "Detail": {
+      "face_count": 46, 
+      "substitution_reaches_faces": true, 
+      "writable": true
+    }, 
+    "Finish": {
+      "face_count": 46, 
+      "substitution_reaches_faces": true, 
+      "writable": true
+    }, 
+    "Gray": {
+      "face_count": 46, 
+      "substitution_reaches_faces": true, 
+      "writable": true
+    }
+  }, 
+  "acceptance": "NATIVE_GATES_PASSED_PENDING_VISUAL_REVIEW", 
+  "actual_dimensions_in": [
+    9.0500000476837155, 
+    3.2000001668930054, 
+    1.8101659566164017
+  ], 
+  "family_warnings": [], 
+  "cct_k": null, 
+  "stage": "complete", 
+  "manufacturer": "Westbrass", 
+  "material_ids": {
+    "Detail": "3207", 
+    "Finish": "3210", 
+    "Gray": "3213"
+  }, 
+  "expected_dimensions_in": [
+    9.0500000000000007, 
+    3.2000000000000002, 
+    1.8000000000000000
+  ], 
+  "bounds_in": [
+    -4.4500000476837158, 
+    -1.6000000834465027, 
+    -1.3000000119209290, 
+    4.5999999999999996, 
+    1.6000000834465027, 
+    0.51016594469547272
+  ], 
+  "appearance_bindings": {
+    "Detail": {
+      "path": "E:\\Claude\\3D-Model-Workflow\\output\\1527_wieland\\plumbing_fixtures\\TD9028-LS-PCW\\textures\\Detail.png", 
+      "exists": true, 
+      "material_id": "3207"
+    }, 
+    "Finish": {
+      "path": "E:\\Claude\\3D-Model-Workflow\\output\\1527_wieland\\plumbing_fixtures\\TD9028-LS-PCW\\textures\\Finish.png", 
+      "exists": true, 
+      "material_id": "3210"
+    }, 
+    "Gray": {
+      "path": "E:\\Claude\\3D-Model-Workflow\\output\\1527_wieland\\plumbing_fixtures\\TD9028-LS-PCW\\textures\\Gray.png", 
+      "exists": true, 
+      "material_id": "3213"
+    }
+  }, 
+  "rfa_path": "E:\\Claude\\3D-Model-Workflow\\output\\1527_wieland\\plumbing_fixtures\\TD9028-LS-PCW\\Westbrass_TD9028-LS-PCW_R2025.rfa", 
+  "finished_utc": "2026-10-02T15:55:25.313000Z", 
+  "appearance_defaults": {
+    "Detail": {
+      "cct_k": null, 
+      "luminance": 0, 
+      "gloss": 0.17000000000000001, 
+      "rgb": [
+        24, 
+        25, 
+        26
+      ], 
+      "transparency": 0
+    }, 
+    "Finish": {
+      "cct_k": null, 
+      "luminance": 0, 
+      "gloss": 0.17000000000000001, 
+      "rgb": [
+        242, 
+        243, 
+        240
+      ], 
+      "transparency": 0
+    }, 
+    "Gray": {
+      "cct_k": null, 
+      "luminance": 0, 
+      "gloss": 0.32000000000000001, 
+      "rgb": [
+        131, 
+        132, 
+        130
+      ], 
+      "transparency": 0
+    }
+  }, 
+  "evidence_files": [
+    "Westbrass_TD9028-LS-PCW_R2025_Isolated - 3D View - Native Front.png", 
+    "Westbrass_TD9028-LS-PCW_R2025_Isolated - 3D View - Native Material.png", 
+    "Westbrass_TD9028-LS-PCW_R2025_Isolated - 3D View - Native Oblique.png", 
+    "Westbrass_TD9028-LS-PCW_R2025_Isolated - 3D View - Native Side.png"
+  ], 
+  "display_bounds_in": [
+    -4.4500000000000002, 
+    -1.6000000000000003, 
+    -1.3000000000000000, 
+    4.5999999999999996, 
+    1.6000000000000001, 
+    0.50000000000000022
+  ], 
+  "source_spec_path": "E:\\Claude\\3D-Model-Workflow\\output\\1527_wieland\\plumbing_fixtures\\TD9028-LS-PCW\\source\\model_spec.json", 
+  "all_overall_dimensions_authoritative": false, 
+  "dimension_anchor_checks": [
+    {
+      "deviation_mm": 0.0, 
+      "nominal_mm": 47.625, 
+      "label": "Thread exterior diameter", 
+      "pass": true, 
+      "actual_mm": 47.625
+    }
+  ], 
+  "reopen_geometry_equal": true, 
+  "revit_version": "2025", 
+  "reopened_bounds_in": [
+    -4.4500000476837158, 
+    -1.6000000834465027, 
+    -1.3000000119209290, 
+    4.5999999999999996, 
+    1.6000000834465027, 
+    0.51016594469547272
+  ], 
+  "project_warnings": [], 
+  "rfa_search": {
+    "result": "No acceptable no-account RFA recovered", 
+    "evidence": "_research/TD9028-LS-PCW/sources.json"
+  }, 
+  "limitations": [
+    "The two trim components are displayed side-by-side, not in a tub installation pose.", 
+    "ASSUMPTION: stopper cap 2.9 in and overflow plate 3.2 in are inferred from the product photo; no exact trim dimensional drawing was recovered.", 
+    "The legacy -LS-PCW row uses the corrected TD9028-PCW geometry based on the other matching project rows; vendor confirmation remains required.", 
+    "Independent visualization reconstruction with fixed product dimensions and editable native materials.", 
+    "Small fillets, seams, nozzle details and optical material response are inferred where the manufacturer does not dimension them.", 
+    "No internal hydraulic performance, MEP connectors, fabrication tolerances or procurement substitutions are implied."
+  ], 
+  "parts": [
+    {
+      "name": "Drain threaded shoe", 
+      "volume_ft3": 0.0007477781551782144, 
+      "id": "3215"
+    }, 
+    {
+      "name": "Drain flange", 
+      "volume_ft3": 0.00040995002224243014, 
+      "id": "3216"
+    }, 
+    {
+      "name": "Tip-toe stem", 
+      "volume_ft3": 0.00011053197938953325, 
+      "id": "3217"
+    }, 
+    {
+      "name": "Mushroom drain cap", 
+      "volume_ft3": 0.00062850754391352592, 
+      "id": "3218"
+    }, 
+    {
+      "name": "Floating overflow faceplate", 
+      "volume_ft3": 0.0018615912318237179, 
+      "id": "3219"
+    }, 
+    {
+      "name": "Overflow mounting ring", 
+      "volume_ft3": 0.00040904104214876702, 
+      "id": "3220"
+    }
+  ], 
+  "category": "Plumbing Fixtures", 
+  "bounds_method": "Fine native face meshes plus 128-sample analytic edges", 
+  "type": "TD9028-LS-PCW - White", 
+  "native_gates_pass": true, 
+  "technical_pass": true, 
+  "native_path_checks": [], 
+  "reopened_warnings": [], 
+  "revit_build": "25.4.50.35", 
+  "actual_dimensions_after_reopen_mm": [
+    229.87000121116637, 
+    81.280004239082331, 
+    45.978215298056597
+  ]
+}

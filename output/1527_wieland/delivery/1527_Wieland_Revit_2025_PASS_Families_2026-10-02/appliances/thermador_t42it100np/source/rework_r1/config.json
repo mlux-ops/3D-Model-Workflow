@@ -1,0 +1,120 @@
+{
+  "slug": "thermador_t42it100np",
+  "brand": "Thermador",
+  "model": "T42IT100NP",
+  "target_xyz_mm": [
+    1048,
+    608,
+    2123
+  ],
+  "dimension_basis": "Retained September 2026 manufacturer drawing, page 4: explicit metric W1048 x D608 x H2123 mm with leveling feet at minimum. Drawing metric values govern inconsistent rounded inch equivalents.",
+  "kind": "fridge",
+  "rfa_name": "thermador_t42it100np_Custom_R1_R2025.rfa",
+  "source_page": 4,
+  "source_pdf": "E:\\Claude\\3D-Model-Workflow\\output\\1527_wieland\\appliances\\thermador_t42it100np\\source\\product_sheet.pdf",
+  "source_pdf_sha256": "b5571a589d7f07bb8107b4738a8a74eeba0a33337bf2bcd76134309913e2b709",
+  "source_urls": [
+    "https://www.thermador.com/us/en/mkt-product/refrigeration/bottom-freezer-refrigerators/T42IT100NP",
+    "https://media3.bsh-group.com/3D_Asset/22537542_T42IT100NP_TradeCADs.zip",
+    "https://media3.bsh-group.com/Documents/25549017_T42IT100NP-42-INCH-BUILT-IN-FRENCH-DOOR_REFRIGERATOR-2-DRAWER-PANEL-READY-Specifications.pdf"
+  ],
+  "row_ids": [
+    7829128394243972
+  ],
+  "replacement_reason": "Orchestrator round 1: exact-identity manufacturer working family fails the <=1 mm complete overall dimension gate. New native custom geometry replaces the working selection; OEM originals and prior working RFA remain preserved.",
+  "axis_convention": "X width, Y front-to-back depth, Z vertical height; millimetres.",
+  "dimension_gate_scope": "overall",
+  "declared_limitations": [
+    "Fixed manufacturer model size; exposed finish parameters are flex-tested.",
+    "Internal partitions, edge radii, controls and concealed mechanisms are reference-derived visualization approximations.",
+    "Default envelope represents the factory appliance without separately supplied customer overlay panels or handles. Panel Finish changes the represented factory front; it does not certify an overlay thickness or panel shop drawing."
+  ],
+  "palette": {
+    "Metal Finish": [
+      [
+        165,
+        168,
+        170
+      ],
+      0.55,
+      0.0
+    ],
+    "Black Finish": [
+      [
+        24,
+        26,
+        28
+      ],
+      0.45,
+      0.0
+    ],
+    "Glass Finish": [
+      [
+        30,
+        35,
+        38
+      ],
+      0.9,
+      0.18
+    ],
+    "Clear Glass Finish": [
+      [
+        188,
+        202,
+        205
+      ],
+      0.9,
+      0.72
+    ],
+    "Panel Finish": [
+      [
+        152,
+        149,
+        141
+      ],
+      0.24,
+      0.0
+    ],
+    "Wood Finish": [
+      [
+        174,
+        143,
+        98
+      ],
+      0.2,
+      0.0
+    ],
+    "Grate Finish": [
+      [
+        37,
+        38,
+        38
+      ],
+      0.08,
+      0.0
+    ],
+    "Interior Finish": [
+      [
+        78,
+        81,
+        83
+      ],
+      0.2,
+      0.0
+    ],
+    "Display Finish": [
+      [
+        66,
+        75,
+        80
+      ],
+      0.6,
+      0.0
+    ]
+  },
+  "prepared_utc": "2026-10-02T23:51:17.475845+00:00",
+  "reference_check": {
+    "method": "Retained manufacturer product text and native reference imagery, plus official exact-model web evidence for H7280BP and page-4 T42 metric drawing text.",
+    "pages": 4
+  }
+}

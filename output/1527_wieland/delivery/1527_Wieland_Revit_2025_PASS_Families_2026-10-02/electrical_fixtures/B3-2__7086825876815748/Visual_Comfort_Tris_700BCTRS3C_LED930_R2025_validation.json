@@ -1,0 +1,158 @@
+{
+  "source_material_mapping": [
+    {
+      "label": "Metal Finish", 
+      "source_id": "741625", 
+      "source_materials": [
+        "Metal - Tech Lighting - Aged Brass"
+      ]
+    }, 
+    {
+      "label": "Diffuser Finish", 
+      "source_id": "741696", 
+      "source_materials": [
+        "Acrylic - Tech Lighting - LED Lens"
+      ]
+    }
+  ], 
+  "source_file_unchanged": true, 
+  "expected_dimensions_in": [
+    25.600000000000001, 
+    4.2999999999999998, 
+    3.3999999999999999
+  ], 
+  "bounds_in": [
+    -12.806101799011230, 
+    -2.1499999999999999, 
+    0.0, 
+    12.806101799011948, 
+    2.1499999999999999, 
+    3.3730237483978271
+  ], 
+  "bounds_method": "Fine native face meshes plus 128-sample analytic edges", 
+  "technical_pass": true, 
+  "started_utc": "2026-10-02T15:23:23.287000Z", 
+  "revit_build": "25.4.50.35", 
+  "evidence_files": [
+    "Visual_Comfort_Tris_700BCTRS3C_LED930_R2025 - 3D View - Front.png", 
+    "Visual_Comfort_Tris_700BCTRS3C_LED930_R2025 - 3D View - Material.png", 
+    "Visual_Comfort_Tris_700BCTRS3C_LED930_R2025 - 3D View - Oblique.png", 
+    "Visual_Comfort_Tris_700BCTRS3C_LED930_R2025 - 3D View - Side.png", 
+    "Visual_Comfort_Tris_700BCTRS3C_LED930_R2025_Hosted - 3D View - Hosted.png", 
+    "Visual_Comfort_Tris_700BCTRS3C_LED930_R2025_Isolated - 3D View - Native Front.png", 
+    "Visual_Comfort_Tris_700BCTRS3C_LED930_R2025_Isolated - 3D View - Native Material.png", 
+    "Visual_Comfort_Tris_700BCTRS3C_LED930_R2025_Isolated - 3D View - Native Oblique.png", 
+    "Visual_Comfort_Tris_700BCTRS3C_LED930_R2025_Isolated - 3D View - Native Side.png"
+  ], 
+  "appearance_defaults": {
+    "Metal Finish": {
+      "cct_k": null, 
+      "rgb": [
+        193, 
+        199, 
+        204
+      ], 
+      "transparency": 0, 
+      "gloss": 0.93999999999999995, 
+      "luminance": 0
+    }, 
+    "Diffuser Finish": {
+      "cct_k": null, 
+      "rgb": [
+        239, 
+        240, 
+        236
+      ], 
+      "transparency": 0.29999999999999999, 
+      "gloss": 0.17999999999999999, 
+      "luminance": 0
+    }
+  }, 
+  "limitations": "Anonymous manufacturer 2017 RFA supplies the continuous rail and three connected acrylic optical panels. Its 4.25-inch backplate height differs from the current 4.3-inch specification; the plate is rebuilt at the current dimension. Current 25.6 x 4.3 x 3.4-inch envelope is checked within 1 mm. ASSUMPTION: microdot optical texture is represented by a uniform translucent acrylic appearance. Original download remains unchanged.", 
+  "stage": "complete", 
+  "cct_k": null, 
+  "category": "Lighting Fixtures", 
+  "host": {
+    "host_kind": "wall", 
+    "hostface_present": true, 
+    "instance_host_id": "3694", 
+    "host_id": "3694", 
+    "normal_dot": 1.0
+  }, 
+  "source_rfa_sha256": "09b5dd89bbde203e659eab7c42e768aaf9d45bba042aeb85acd1b19a1d4fc69f", 
+  "parts": [
+    {
+      "name": "Source 741625 / 0", 
+      "id": "3211", 
+      "volume_ft3": 0.0095601106881950809
+    }, 
+    {
+      "name": "Source 741696 / 0", 
+      "id": "3212", 
+      "volume_ft3": 0.003202382752569794
+    }, 
+    {
+      "name": "Current-spec 5 x 4.3 backplate", 
+      "id": "3213", 
+      "volume_ft3": 0.006992476851851853
+    }
+  ], 
+  "model": "700BCTRS3C-LED930", 
+  "template_form_ids": [
+    "1537"
+  ], 
+  "inferences": "Anonymous manufacturer 2017 RFA supplies the continuous rail and three connected acrylic optical panels. Its 4.25-inch backplate height differs from the current 4.3-inch specification; the plate is rebuilt at the current dimension. Current 25.6 x 4.3 x 3.4-inch envelope is checked within 1 mm. ASSUMPTION: microdot optical texture is represented by a uniform translucent acrylic appearance. Original download remains unchanged.", 
+  "source_url": "https://www.visualcomfort.com/media/docs/spec_sheet/t/r/ss_tris_3-light_bath.pdf", 
+  "actual_dimensions_in": [
+    25.612203598023179, 
+    4.2999999999999998, 
+    3.3730237483978271
+  ], 
+  "reopened_warnings": [], 
+  "finished_utc": "2026-10-02T15:23:29.192000Z", 
+  "reopened": true, 
+  "companion_bitmaps": {
+    "Metal Finish": "E:\\Claude\\3D-Model-Workflow\\output\\1527_wieland\\electrical_fixtures\\B3-2__7086825876815748\\source\\textures\\Metal_Finish.png", 
+    "Diffuser Finish": "E:\\Claude\\3D-Model-Workflow\\output\\1527_wieland\\electrical_fixtures\\B3-2__7086825876815748\\source\\textures\\Diffuser_Finish.png"
+  }, 
+  "rfa_search": "Official product resources and verified BIM listings searched; no exact, usable anonymous RFA accepted. See retained source resources and manufacturer acquisition/inspection receipts.", 
+  "rfa_path": "E:\\Claude\\3D-Model-Workflow\\output\\1527_wieland\\electrical_fixtures\\B3-2__7086825876815748\\Visual_Comfort_Tris_700BCTRS3C_LED930_R2025.rfa", 
+  "manufacturer": "Visual Comfort / Tech Lighting", 
+  "source_rfa": "E:\\Claude\\3D-Model-Workflow\\output\\1527_wieland\\electrical_fixtures\\B3-2__7086825876815748\\source\\OEM_rv_tris_3-light_bath_contents\\Lighting-Surface_Mount-Tech_Lighting-Tris_Bath_Bar\\Lighting-Surface_Mount-Tech_Lighting-Tris_Bath_Bar.rfa", 
+  "type": "700BCTRS3C-LED930", 
+  "revit_version": "2025", 
+  "display_bounds_in": [
+    -12.806101799010513, 
+    -2.1499999999999999, 
+    0.0, 
+    12.806101799011948, 
+    2.1499999999999999, 
+    3.3730237260460285
+  ], 
+  "family_warnings": [], 
+  "gates": {
+    "reopened": true, 
+    "materials": true, 
+    "cct": true, 
+    "orientation": true, 
+    "actual_face_host": true, 
+    "dimensions": true, 
+    "warnings": true, 
+    "views": true, 
+    "category": true
+  }, 
+  "placement": "WorkPlaneBased", 
+  "material_tests": {
+    "Metal Finish": {
+      "writable": true, 
+      "substitution_reaches_faces": true, 
+      "face_count": 26
+    }, 
+    "Diffuser Finish": {
+      "writable": true, 
+      "substitution_reaches_faces": true, 
+      "face_count": 26
+    }
+  }, 
+  "project_warnings": []
+}

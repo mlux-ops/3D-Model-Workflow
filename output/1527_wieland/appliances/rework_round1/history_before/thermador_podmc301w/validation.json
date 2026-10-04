@@ -1,0 +1,432 @@
+{
+  "all_acceptance_gates_pass": false,
+  "placement_type": "WorkPlaneBased",
+  "original_category": "Specialty Equipment",
+  "material_parameters": [
+    "Front Glass",
+    "key Display",
+    "Handle",
+    "Unit"
+  ],
+  "parameter_flex": [
+    {
+      "material_element_references": 1,
+      "changed_parameter": true,
+      "restored": true,
+      "pass": true,
+      "name": "Front Glass"
+    },
+    {
+      "material_element_references": 1,
+      "changed_parameter": true,
+      "restored": true,
+      "pass": true,
+      "name": "key Display"
+    },
+    {
+      "material_element_references": 14,
+      "changed_parameter": true,
+      "restored": true,
+      "pass": true,
+      "name": "Handle"
+    },
+    {
+      "material_element_references": 8,
+      "changed_parameter": true,
+      "restored": true,
+      "pass": true,
+      "name": "Unit"
+    }
+  ],
+  "stage": "saved_reopened_measured_flexed_placed_previewed",
+  "ok": true,
+  "reopened": true,
+  "brand": "Thermador",
+  "warnings": [
+    "Extrusion is too thin."
+  ],
+  "material_inventory": [
+    {
+      "appearance_id": "7786",
+      "name": "Stainless Steel",
+      "rgb": [
+        189,
+        187,
+        185
+      ]
+    },
+    {
+      "appearance_id": "8202",
+      "name": "Plastic-Black",
+      "rgb": [
+        69,
+        69,
+        69
+      ]
+    },
+    {
+      "appearance_id": "31888",
+      "name": "Glass",
+      "rgb": [
+        63,
+        63,
+        63
+      ]
+    },
+    {
+      "appearance_id": "46583",
+      "name": "Analytical Panels",
+      "rgb": [
+        251,
+        197,
+        153
+      ]
+    }
+  ],
+  "saved_revit_format": "2025",
+  "family_bounds": {
+    "max_mm": [
+      377.82501211166385,
+      311.15001211166384,
+      1244.6000484466554
+    ],
+    "parts": [
+      {
+        "class": "Extrusion",
+        "min_mm": [
+          -348.4562378883362,
+          222.2500060558319,
+          12.700000378489495
+        ],
+        "id": 35368,
+        "name": "Extrusion",
+        "max_mm": [
+          348.4562378883362,
+          311.15001211166384,
+          1182.3991212844849
+        ]
+      },
+      {
+        "class": "GeomCombination",
+        "min_mm": [
+          -361.1562621116638,
+          -285.75,
+          12.700000378489495
+        ],
+        "id": 36886,
+        "name": "Joined Solid Geometry",
+        "max_mm": [
+          361.1562621116638,
+          -246.51736564636232,
+          1161.2562257766724
+        ]
+      },
+      {
+        "class": "Extrusion",
+        "min_mm": [
+          -240.2891302585602,
+          -371.5802624702454,
+          990.4559680938721
+        ],
+        "id": 37073,
+        "name": "Extrusion",
+        "max_mm": [
+          242.835958814621,
+          -346.18025035858153,
+          1015.8559438705445
+        ]
+      },
+      {
+        "class": "Extrusion",
+        "min_mm": [
+          -292.0999939441681,
+          -373.164322757721,
+          989.0718955993652
+        ],
+        "id": 37134,
+        "name": "Extrusion",
+        "max_mm": [
+          -240.2891302585602,
+          -311.15001211166384,
+          1017.3360860824586
+        ]
+      },
+      {
+        "class": "Extrusion",
+        "min_mm": [
+          242.835958814621,
+          -373.164322757721,
+          989.0718955993652
+        ],
+        "id": 37475,
+        "name": "Extrusion",
+        "max_mm": [
+          295.0499773979187,
+          -311.15001211166384,
+          1017.3360860824586
+        ]
+      },
+      {
+        "class": "GeomCombination",
+        "min_mm": [
+          -377.82501211166385,
+          -311.15001211166384,
+          12.700000378489495
+        ],
+        "id": 38452,
+        "name": "Joined Solid Geometry",
+        "max_mm": [
+          377.82501211166385,
+          -285.75,
+          1244.6000484466554
+        ]
+      },
+      {
+        "class": "GeomCombination",
+        "min_mm": [
+          -361.1562621116638,
+          -285.75,
+          -3.0590996402679595e-11
+        ],
+        "id": 38864,
+        "name": "Joined Solid Geometry",
+        "max_mm": [
+          361.1562621116638,
+          222.2500060558319,
+          1230.3125484466552
+        ]
+      },
+      {
+        "class": "Extrusion",
+        "min_mm": [
+          -259.55625000000003,
+          -308.75070362091066,
+          150.34946200847625
+        ],
+        "id": 39240,
+        "name": "Extrusion",
+        "max_mm": [
+          259.55625000000003,
+          -285.75,
+          937.7224136352539
+        ]
+      },
+      {
+        "class": "Extrusion",
+        "min_mm": [
+          -104.72031583786011,
+          -310.5604768753052,
+          563.5004156112672
+        ],
+        "id": 43229,
+        "name": "Extrusion",
+        "max_mm": [
+          91.80499770641327,
+          -308.75070362091066,
+          1191.2080312728883
+        ]
+      },
+      {
+        "class": "GeomCombination",
+        "min_mm": [
+          -260.3500060558319,
+          -343.75176486968996,
+          1127.7080554962158
+        ],
+        "id": 44762,
+        "name": "Joined Solid Geometry",
+        "max_mm": [
+          -196.8499939441681,
+          -311.15001211166384,
+          1191.2080312728883
+        ]
+      },
+      {
+        "class": "GeomCombination",
+        "min_mm": [
+          196.8499939441681,
+          -343.75176486968996,
+          1127.7080554962158
+        ],
+        "id": 44875,
+        "name": "Joined Solid Geometry",
+        "max_mm": [
+          260.3500060558319,
+          -311.15001211166384,
+          1191.2080312728883
+        ]
+      },
+      {
+        "class": "GeomCombination",
+        "min_mm": [
+          -260.3500060558319,
+          -343.75176486968996,
+          564.4338978767395
+        ],
+        "id": 45181,
+        "name": "Joined Solid Geometry",
+        "max_mm": [
+          -196.8499939441681,
+          -311.15001211166384,
+          627.9339099884033
+        ]
+      },
+      {
+        "class": "GeomCombination",
+        "min_mm": [
+          196.8499939441681,
+          -343.75176486968996,
+          564.4338978767395
+        ],
+        "id": 45182,
+        "name": "Joined Solid Geometry",
+        "max_mm": [
+          260.3500060558319,
+          -311.15001211166384,
+          627.9339099884033
+        ]
+      },
+      {
+        "class": "Extrusion",
+        "min_mm": [
+          -240.2891302585602,
+          -371.5802624702454,
+          482.45594387054444
+        ],
+        "id": 45767,
+        "name": "Extrusion",
+        "max_mm": [
+          242.835958814621,
+          -346.18025035858153,
+          507.8559559822083
+        ]
+      },
+      {
+        "class": "Extrusion",
+        "min_mm": [
+          -292.0999939441681,
+          -373.164322757721,
+          481.0719077110291
+        ],
+        "id": 45771,
+        "name": "Extrusion",
+        "max_mm": [
+          -240.2891302585602,
+          -311.15001211166384,
+          509.3360981941223
+        ]
+      },
+      {
+        "class": "Extrusion",
+        "min_mm": [
+          242.835958814621,
+          -373.164322757721,
+          481.0719077110291
+        ],
+        "id": 45777,
+        "name": "Extrusion",
+        "max_mm": [
+          295.0499773979187,
+          -311.15001211166384,
+          509.3360981941223
+        ]
+      }
+    ],
+    "xyz_size_mm": [
+      755.6500242233277,
+      684.3143348693848,
+      1244.600048446686
+    ],
+    "min_mm": [
+      -377.82501211166385,
+      -373.164322757721,
+      -3.0590996402679595e-11
+    ]
+  },
+  "previews": [
+    "E:\\Claude\\3D-Model-Workflow\\output\\1527_wieland\\appliances\\thermador_podmc301w\\views\\placed_oblique - 3D View - placed_oblique.png"
+  ],
+  "category": "Specialty Equipment",
+  "dimension_delta_mm": [
+    2.422332772766822e-05,
+    62.01433486938481,
+    4.8446686150782625e-05
+  ],
+  "dimension_gate_scope": "full native geometry versus published appliance envelope",
+  "appearance_repairs": [],
+  "preview_refresh_utc": "2026-10-02 14:31:12.580000",
+  "started_utc": "2026-10-02 14:26:06.885000",
+  "limitations": [
+    "Full native geometry differs by more than 1 mm from at least one published envelope dimension. Do not treat as dimensional acceptance; compare handles, flanges, panels, feet and original source geometry."
+  ],
+  "target_xyz_mm": [
+    755.65,
+    622.3,
+    1244.6
+  ],
+  "source_revit_format": "2025",
+  "finished_utc": "2026-10-02 14:26:09.732000",
+  "manufacturer_original": "E:\\Claude\\3D-Model-Workflow\\output\\1527_wieland\\appliances\\thermador_podmc301w\\source\\original\\PODMC301W-Thermador-TradeCAD\\PODMC301W-3D.rfa",
+  "dimension_gate": false,
+  "slug": "thermador_podmc301w",
+  "model": "PODMC301W",
+  "dimension_basis": "29 3/4 x 24 1/2 x 49 in appliance body; handle projection additional.",
+  "saved_rfa": "E:\\Claude\\3D-Model-Workflow\\output\\1527_wieland\\appliances\\thermador_podmc301w\\thermador_podmc301w_R2025.rfa",
+  "placed_warnings": [],
+  "placement": {
+    "loaded": true,
+    "placed": true,
+    "placement_type": "WorkPlaneBased",
+    "type": "PODMC301W",
+    "host_category": "Floors",
+    "family_category": "Specialty Equipment"
+  },
+  "placed_bounds": {
+    "max_mm": [
+      377.82501211166385,
+      311.15001211166384,
+      1244.6000484466554
+    ],
+    "parts": [
+      {
+        "class": "FamilyInstance",
+        "min_mm": [
+          -377.82501211166385,
+          -373.164322757721,
+          -3.0590996402679595e-11
+        ],
+        "id": 4227,
+        "name": "PODMC301W",
+        "max_mm": [
+          377.82501211166385,
+          311.15001211166384,
+          1244.6000484466554
+        ]
+      }
+    ],
+    "xyz_size_mm": [
+      755.6500242233277,
+      684.3143348693848,
+      1244.600048446686
+    ],
+    "min_mm": [
+      -377.82501211166385,
+      -373.164322757721,
+      -3.0590996402679595e-11
+    ]
+  },
+  "status": "DOWNLOADED",
+  "visual_review": {
+    "reviewed_utc": "2026-10-02T14:36:37.369028+00:00",
+    "reviewer": "worker-1",
+    "method": "Direct visual inspection of native images and manufacturer reference imagery; manufacturer batch contact sheets used for overview.",
+    "images": [
+      {
+        "path": "thermador_podmc301w/views/placed_oblique - 3D View - placed_oblique.png",
+        "sha256": "33f59315d28446c7cc07949d09cf7f1acc09f82a6ad2caedbb0e1b593a57140e"
+      }
+    ],
+    "observation": "Stacked speed and full-size ovens with separate controls/pulls are visible. Native source has one warning and a larger full-depth envelope.",
+    "design_or_photographic_approval": false
+  }
+}

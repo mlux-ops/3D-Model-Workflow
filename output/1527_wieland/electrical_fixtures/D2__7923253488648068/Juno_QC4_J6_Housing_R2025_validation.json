@@ -1,0 +1,173 @@
+{
+  "expected_dimensions_in": [
+    9, 
+    13.5, 
+    5.375
+  ], 
+  "bounds_in": [
+    -4.5, 
+    -6.75, 
+    -5.375, 
+    4.5, 
+    6.75, 
+    1.6884212807651041e-23
+  ], 
+  "bounds_method": "Fine native face meshes plus 128-sample analytic edges", 
+  "technical_pass": true, 
+  "started_utc": "2026-10-02T15:22:23.665000Z", 
+  "revit_build": "25.4.50.35", 
+  "evidence_files": [
+    "Juno_QC4_J6_Housing_R2025 - 3D View - Front.png", 
+    "Juno_QC4_J6_Housing_R2025 - 3D View - Material.png", 
+    "Juno_QC4_J6_Housing_R2025 - 3D View - Oblique.png", 
+    "Juno_QC4_J6_Housing_R2025 - 3D View - Side.png", 
+    "Juno_QC4_J6_Housing_R2025_Hosted - 3D View - Hosted.png", 
+    "Juno_QC4_J6_Housing_R2025_Isolated - 3D View - Native Front.png", 
+    "Juno_QC4_J6_Housing_R2025_Isolated - 3D View - Native Material.png", 
+    "Juno_QC4_J6_Housing_R2025_Isolated - 3D View - Native Oblique.png", 
+    "Juno_QC4_J6_Housing_R2025_Isolated - 3D View - Native Side.png"
+  ], 
+  "appearance_defaults": {
+    "Connector Finish": {
+      "cct_k": null, 
+      "rgb": [
+        233, 
+        117, 
+        34
+      ], 
+      "transparency": 0, 
+      "gloss": 0.20000000000000001, 
+      "luminance": 0
+    }, 
+    "Metal Finish": {
+      "cct_k": null, 
+      "rgb": [
+        166, 
+        169, 
+        173
+      ], 
+      "transparency": 0, 
+      "gloss": 0.29999999999999999, 
+      "luminance": 0
+    }
+  }, 
+  "limitations": "Manufacturer drawing: 5.375-inch housing height, 4.5-inch ceiling cutout, and 13.5-inch supplied bar-hanger length. J6 denotes packaging of six, not a different shape. ASSUMPTION: 9-inch transverse assembly envelope, can wall thickness and junction-box dimensions are drawing-derived. Bars are shown at the supplied length; extension and wiring are not modeled. Housing sits above its ceiling mounting plane.", 
+  "stage": "complete", 
+  "cct_k": null, 
+  "category": "Lighting Fixtures", 
+  "host": {
+    "host_kind": "ceiling", 
+    "hostface_present": true, 
+    "instance_host_id": "3700", 
+    "host_id": "3700", 
+    "normal_dot": 1.0
+  }, 
+  "parts": [
+    {
+      "name": "Open can", 
+      "id": "3211", 
+      "volume_ft3": 0.0034542717987968742
+    }, 
+    {
+      "name": "Can lid", 
+      "id": "3212", 
+      "volume_ft3": 0.0013801366132860015
+    }, 
+    {
+      "name": "Plaster frame", 
+      "id": "3213", 
+      "volume_ft3": 0.0037500000000000003
+    }, 
+    {
+      "name": "Supplied 13.5-inch bar hanger", 
+      "id": "3214", 
+      "volume_ft3": 0.00036562499999999898
+    }, 
+    {
+      "name": "Supplied 13.5-inch bar hanger", 
+      "id": "3215", 
+      "volume_ft3": 0.00036562500000000034
+    }, 
+    {
+      "name": "Junction box", 
+      "id": "3216", 
+      "volume_ft3": 0.011839843750000006
+    }, 
+    {
+      "name": "Orange quick connector", 
+      "id": "3217", 
+      "volume_ft3": 2.8045977105542503e-05
+    }
+  ], 
+  "model": "QC4 J6", 
+  "template_form_ids": [
+    "1537"
+  ], 
+  "inferences": "Manufacturer drawing: 5.375-inch housing height, 4.5-inch ceiling cutout, and 13.5-inch supplied bar-hanger length. J6 denotes packaging of six, not a different shape. ASSUMPTION: 9-inch transverse assembly envelope, can wall thickness and junction-box dimensions are drawing-derived. Bars are shown at the supplied length; extension and wiring are not modeled. Housing sits above its ceiling mounting plane.", 
+  "source_url": "https://pdmassets.azureedge.net/library/JL/documents/specsheets/QC4.pdf", 
+  "actual_dimensions_in": [
+    9.0, 
+    13.5, 
+    5.375
+  ], 
+  "reopened_warnings": [], 
+  "finished_utc": "2026-10-02T15:22:29.025000Z", 
+  "reopened": true, 
+  "companion_bitmaps": {
+    "Connector Finish": "E:\\Claude\\3D-Model-Workflow\\output\\1527_wieland\\electrical_fixtures\\D2__7923253488648068\\source\\textures\\Connector_Finish.png", 
+    "Metal Finish": "E:\\Claude\\3D-Model-Workflow\\output\\1527_wieland\\electrical_fixtures\\D2__7923253488648068\\source\\textures\\Metal_Finish.png"
+  }, 
+  "component_checks": [
+    {
+      "label": "Housing height and can mouth", 
+      "expected_dimensions_in": [
+        4.5, 
+        4.5, 
+        5.375
+      ], 
+      "source": "QC4 manufacturer dimension drawing; nominal cutout", 
+      "element_ids": [
+        "3211"
+      ]
+    }
+  ], 
+  "rfa_search": "Official product resources and verified BIM listings searched; no exact, usable anonymous RFA accepted. See retained source resources and manufacturer acquisition/inspection receipts.", 
+  "rfa_path": "E:\\Claude\\3D-Model-Workflow\\output\\1527_wieland\\electrical_fixtures\\D2__7923253488648068\\Juno_QC4_J6_Housing_R2025.rfa", 
+  "manufacturer": "Juno / Acuity Brands", 
+  "family_warnings": [], 
+  "type": "QC4 J6", 
+  "revit_version": "2025", 
+  "display_bounds_in": [
+    -4.5, 
+    -6.75, 
+    -5.375, 
+    4.5, 
+    6.75, 
+    0.0
+  ], 
+  "gates": {
+    "reopened": true, 
+    "materials": true, 
+    "cct": true, 
+    "orientation": true, 
+    "actual_face_host": true, 
+    "dimensions": true, 
+    "warnings": true, 
+    "views": true, 
+    "category": true
+  }, 
+  "placement": "WorkPlaneBased", 
+  "material_tests": {
+    "Connector Finish": {
+      "writable": true, 
+      "substitution_reaches_faces": true, 
+      "face_count": 46
+    }, 
+    "Metal Finish": {
+      "writable": true, 
+      "substitution_reaches_faces": true, 
+      "face_count": 46
+    }
+  }, 
+  "project_warnings": []
+}

@@ -1,0 +1,190 @@
+{
+  "key": "28276703",
+  "model": "28276703",
+  "manufacturer": "Hansgrohe",
+  "type_name": "28276703 - White",
+  "basename": "Hansgrohe_28276703_R2025",
+  "name": "Techniflex 63-inch handshower hose",
+  "host": "wall",
+  "configured_dimensions_in": [
+    6.88,
+    30.387611019615314,
+    0.88
+  ],
+  "materials": {
+    "Finish": {
+      "rgb": [
+        242,
+        243,
+        240
+      ],
+      "gloss": 0.17,
+      "reflectivity": 0.06,
+      "class": "Plastic"
+    },
+    "Detail": {
+      "rgb": [
+        24,
+        25,
+        26
+      ],
+      "gloss": 0.17,
+      "reflectivity": 0.04,
+      "class": "Plastic"
+    },
+    "Graphite": {
+      "rgb": [
+        64,
+        67,
+        69
+      ],
+      "gloss": 0.36,
+      "reflectivity": 0.16,
+      "class": "Glass"
+    },
+    "Ceramic": {
+      "rgb": [
+        245,
+        245,
+        241
+      ],
+      "gloss": 0.86,
+      "reflectivity": 0.22,
+      "class": "Ceramic"
+    },
+    "Brass": {
+      "rgb": [
+        160,
+        124,
+        64
+      ],
+      "gloss": 0.4,
+      "reflectivity": 0.38,
+      "class": "Metal"
+    },
+    "Green": {
+      "rgb": [
+        31,
+        113,
+        66
+      ],
+      "gloss": 0.18,
+      "reflectivity": 0.05,
+      "class": "Plastic"
+    },
+    "Gray": {
+      "rgb": [
+        131,
+        132,
+        130
+      ],
+      "gloss": 0.32,
+      "reflectivity": 0.12,
+      "class": "Plastic"
+    }
+  },
+  "geometry": [
+    {
+      "name": "63 inch hose",
+      "kind": "sweep",
+      "path": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          -26.787611019615312,
+          1
+        ],
+        [
+          "arc",
+          [
+            3,
+            -29.787611019615312,
+            1
+          ],
+          [
+            6,
+            -26.787611019615312,
+            1
+          ]
+        ],
+        [
+          6,
+          0,
+          1
+        ]
+      ],
+      "radius": 0.25,
+      "material": "Finish"
+    },
+    {
+      "name": "First swivel connector",
+      "kind": "cylinder",
+      "origin": [
+        0,
+        0,
+        1
+      ],
+      "axis": [
+        0,
+        1,
+        0
+      ],
+      "radius": 0.44,
+      "a": -1.5,
+      "b": 0.35,
+      "material": "Finish"
+    },
+    {
+      "name": "Second swivel connector",
+      "kind": "cylinder",
+      "origin": [
+        6,
+        0,
+        1
+      ],
+      "axis": [
+        0,
+        1,
+        0
+      ],
+      "radius": 0.44,
+      "a": -1.5,
+      "b": 0.35,
+      "material": "Finish"
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://assets.hansgrohe.com/celum/emailmarketing/hansgrohe_2026_Price_Book_en_US.pdf",
+      "document": "Hansgrohe 2026 US Price Book",
+      "page": 277,
+      "local_image": "_research/catalog_pages/page_277.png"
+    }
+  ],
+  "dimension_authority": [
+    "Manufacturer nominal flexible hose length 63 in. U-pose centerline consists of two equal legs and a 3 in radius semicircle."
+  ],
+  "limitations": [
+    "Fixed hanging pose is an installation assumption; its bounding box is not a manufacturer product envelope.",
+    "Connector dimensions and hose outside diameter are drawing-derived. Matte-white legacy finish retained.",
+    "Independent visualization reconstruction with fixed product dimensions and editable native materials.",
+    "Small fillets, seams, nozzle details and optical material response are inferred where the manufacturer does not dimension them.",
+    "No internal hydraulic performance, MEP connectors, fabrication tolerances or procurement substitutions are implied."
+  ],
+  "anchors": [],
+  "all_overall_dimensions_authoritative": false,
+  "rfa_search": {
+    "result": "No acceptable no-account RFA recovered",
+    "evidence": "_research/28276703/sources.json"
+  },
+  "native_path_checks": [
+    {
+      "part": "63 inch hose",
+      "nominal_in": 63
+    }
+  ]
+}

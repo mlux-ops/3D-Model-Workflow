@@ -1,0 +1,173 @@
+{
+  "limitations": [
+    "Underside threaded connection extends below the dimensioned body; its 0.37 in exposed extension is drawing-derived.", 
+    "Rounded shell and concealed check valve are simplified.", 
+    "Independent visualization reconstruction with fixed product dimensions and editable native materials.", 
+    "Small fillets, seams, nozzle details and optical material response are inferred where the manufacturer does not dimension them.", 
+    "No internal hydraulic performance, MEP connectors, fabrication tolerances or procurement substitutions are implied."
+  ], 
+  "started_utc": "2026-10-02T14:37:45.462000Z", 
+  "project_warnings": [], 
+  "parts": [
+    {
+      "volume_ft3": 0.0019883939548898354, 
+      "id": "3209", 
+      "name": "Round flange"
+    }, 
+    {
+      "volume_ft3": 0.0032176261197503792, 
+      "id": "3210", 
+      "name": "Rounded outlet shell"
+    }, 
+    {
+      "volume_ft3": 0.00026076366436983845, 
+      "id": "3211", 
+      "name": "Downward hose outlet"
+    }
+  ], 
+  "inferences": "Underside threaded connection extends below the dimensioned body; its 0.37 in exposed extension is drawing-derived. | Rounded shell and concealed check valve are simplified. | Independent visualization reconstruction with fixed product dimensions and editable native materials. | Small fillets, seams, nozzle details and optical material response are inferred where the manufacturer does not dimension them. | No internal hydraulic performance, MEP connectors, fabrication tolerances or procurement substitutions are implied.", 
+  "reopen_geometry_equal": true, 
+  "template_form_ids": [
+    "1537"
+  ], 
+  "rfa_path": "E:\\Claude\\3D-Model-Workflow\\output\\1527_wieland\\plumbing_fixtures\\27458003\\Hansgrohe_27458003_R2025.rfa", 
+  "material_ids": {
+    "Finish": "3207"
+  }, 
+  "native_path_checks": [], 
+  "bounds_in": [
+    -1.2739468216896057, 
+    -1.6200000643730164, 
+    -1.5121259435801067e-21, 
+    1.2739468216896057, 
+    1.2737424373626709, 
+    1.875
+  ], 
+  "source_spec_sha256": "afb5884747d2c915ca66f25615f5f23c8c3912b9b03e78b2622901a6771f7069", 
+  "bounds_method": "Fine native face meshes plus 128-sample analytic edges", 
+  "source_spec_path": "E:\\Claude\\3D-Model-Workflow\\output\\1527_wieland\\plumbing_fixtures\\27458003\\source\\model_spec.json", 
+  "family_warnings": [], 
+  "stage": "failed", 
+  "reopened": true, 
+  "category": "Plumbing Fixtures", 
+  "expected_dimensions_in": [
+    2.5, 
+    2.8700000000000001, 
+    1.875
+  ], 
+  "placement": "WorkPlaneBased", 
+  "reopened_warnings": [], 
+  "reopened_bounds_in": [
+    -1.2739468216896057, 
+    -1.6200000643730164, 
+    -1.5121259435801067e-21, 
+    1.2739468216896057, 
+    1.2737424373626709, 
+    1.875
+  ], 
+  "material_tests": {
+    "Finish": {
+      "substitution_reaches_faces": true, 
+      "writable": true, 
+      "face_count": 20
+    }
+  }, 
+  "model": "27458003", 
+  "revit_version": "2025", 
+  "type": "27458003 - chrome", 
+  "gates": {
+    "reopened": true, 
+    "warnings": true, 
+    "orientation": true, 
+    "diffuse_bitmaps": true, 
+    "actual_face_host": true, 
+    "dimensions": false, 
+    "materials": true, 
+    "reopen_geometry_equal": true, 
+    "views": true, 
+    "category": true, 
+    "cct": true
+  }, 
+  "evidence_files": [
+    "Hansgrohe_27458003_R2025_Isolated - 3D View - Native Front.png", 
+    "Hansgrohe_27458003_R2025_Isolated - 3D View - Native Material.png", 
+    "Hansgrohe_27458003_R2025_Isolated - 3D View - Native Oblique.png", 
+    "Hansgrohe_27458003_R2025_Isolated - 3D View - Native Side.png"
+  ], 
+  "rfa_search": {
+    "evidence": "_research/27458003/sources.json", 
+    "result": "No acceptable no-account RFA recovered"
+  }, 
+  "finished_utc": "2026-10-02T14:37:49.061000Z", 
+  "manufacturer": "Hansgrohe", 
+  "display_bounds_in": [
+    -1.2500000000000002, 
+    -1.6200000000000001, 
+    0.0, 
+    1.2500000000000002, 
+    1.2741033000576327, 
+    1.875
+  ], 
+  "cct_k": null, 
+  "appearance_bindings": {
+    "Finish": {
+      "material_id": "3207", 
+      "exists": true, 
+      "path": "E:\\Claude\\3D-Model-Workflow\\output\\1527_wieland\\plumbing_fixtures\\27458003\\textures\\Finish.png"
+    }
+  }, 
+  "revit_build": "25.4.50.35", 
+  "technical_pass": false, 
+  "dimension_anchor_checks": [
+    {
+      "label": "Flange diameter", 
+      "pass": true, 
+      "actual_mm": 63.5, 
+      "nominal_mm": 63.5, 
+      "deviation_mm": 0.0
+    }
+  ], 
+  "host": {
+    "hostface_present": true, 
+    "host_kind": "wall", 
+    "normal_dot": 1.0, 
+    "host_id": "3690", 
+    "instance_host_id": "3690"
+  }, 
+  "source_references": [
+    {
+      "page": 272, 
+      "document": "Hansgrohe 2026 US Price Book", 
+      "url": "https://assets.hansgrohe.com/celum/emailmarketing/hansgrohe_2026_Price_Book_en_US.pdf", 
+      "local_image": "_research/catalog_pages/page_272.png"
+    }
+  ], 
+  "source_dimensions": [
+    "Body diameter 2.5 in; projection 1.875 in."
+  ], 
+  "acceptance": "UNREVIEWED", 
+  "actual_dimensions_in": [
+    2.5478936433792114, 
+    2.8937425017356873, 
+    1.875
+  ], 
+  "error": "Traceback (most recent call last):\n  File \"E:\\Claude\\3D-Model-Workflow\\output\\1527_wieland\\plumbing_fixtures\\_harness\\family_factory.py\", line 121, in build\n    result=f.finish()\n  File \"E:\\Claude\\3D-Model-Workflow\\output\\1527_wieland\\plumbing_fixtures\\_harness\\native_plumbing_support.py\", line 290, in finish\n    if not self.report['technical_pass']:raise RuntimeError('Failed native gates: '+str([k for k,v in gates.items() if not v]))\nRuntimeError: Failed native gates: ['dimensions']\n", 
+  "actual_dimensions_after_reopen_mm": [
+    64.716498541831967, 
+    73.501059544086459, 
+    47.625
+  ], 
+  "appearance_defaults": {
+    "Finish": {
+      "rgb": [
+        195, 
+        198, 
+        201
+      ], 
+      "gloss": 0.95999999999999996, 
+      "luminance": 0, 
+      "transparency": 0, 
+      "cct_k": null
+    }
+  }
+}

@@ -1,0 +1,185 @@
+{
+  "model": "PD62014-BK/SM", 
+  "source_url": "https://www.lightology.com/index.php?module=prod_detail&prod_id=1009570", 
+  "reopened": true, 
+  "manufacturer": "Kuzco Lighting", 
+  "rfa_path": "E:\\Claude\\3D-Model-Workflow\\output\\1527_wieland\\electrical_fixtures\\K1-2__4773108898267012\\Kuzco_Trinity_PD62014_BK_SM_R2025.rfa", 
+  "material_tests": {
+    "Diffuser Finish": {
+      "writable": true, 
+      "substitution_reaches_faces": true, 
+      "face_count": 82
+    }, 
+    "Black Metal Finish": {
+      "writable": true, 
+      "substitution_reaches_faces": true, 
+      "face_count": 82
+    }, 
+    "Shade Glass Finish": {
+      "writable": true, 
+      "substitution_reaches_faces": true, 
+      "face_count": 82
+    }
+  }, 
+  "bounds_method": "Fine native face meshes plus 128-sample analytic edges", 
+  "started_utc": "2026-10-02T14:04:29.715000Z", 
+  "inferences": "14.25-inch diameter and 6.125-inch body height; 4.75-inch canopy. ASSUMPTION: fixed 48-inch installed drop. Smoke glass applies only to rows retaining the exact Lightology KZC1009570 variant. Internal socket and edge details are prior photo-derived inferences.", 
+  "expected_dimensions_in": [
+    14.25, 
+    14.25, 
+    48
+  ], 
+  "companion_bitmaps": {
+    "Diffuser Finish": "E:\\Claude\\3D-Model-Workflow\\output\\1527_wieland\\electrical_fixtures\\K1-2__4773108898267012\\source\\textures\\Diffuser_Finish.png", 
+    "Black Metal Finish": "E:\\Claude\\3D-Model-Workflow\\output\\1527_wieland\\electrical_fixtures\\K1-2__4773108898267012\\source\\textures\\Black_Metal_Finish.png", 
+    "Shade Glass Finish": "E:\\Claude\\3D-Model-Workflow\\output\\1527_wieland\\electrical_fixtures\\K1-2__4773108898267012\\source\\textures\\Shade_Glass_Finish.png"
+  }, 
+  "category": "Lighting Fixtures", 
+  "gates": {
+    "reopened": true, 
+    "materials": true, 
+    "category": true, 
+    "orientation": true, 
+    "actual_face_host": true, 
+    "dimensions": true, 
+    "cct": true, 
+    "warnings": true, 
+    "views": true
+  }, 
+  "limitations": "14.25-inch diameter and 6.125-inch body height; 4.75-inch canopy. ASSUMPTION: fixed 48-inch installed drop. Smoke glass applies only to rows retaining the exact Lightology KZC1009570 variant. Internal socket and edge details are prior photo-derived inferences.", 
+  "appearance_defaults": {
+    "Diffuser Finish": {
+      "gloss": 0.16, 
+      "transparency": 0, 
+      "rgb": [
+        244, 
+        244, 
+        240
+      ], 
+      "luminance": 0, 
+      "cct_k": null
+    }, 
+    "Black Metal Finish": {
+      "gloss": 0.25, 
+      "transparency": 0, 
+      "rgb": [
+        24, 
+        24, 
+        24
+      ], 
+      "luminance": 0, 
+      "cct_k": null
+    }, 
+    "Shade Glass Finish": {
+      "gloss": 0.94999999999999996, 
+      "transparency": 0.64000000000000001, 
+      "rgb": [
+        116, 
+        121, 
+        127
+      ], 
+      "luminance": 0, 
+      "cct_k": null
+    }
+  }, 
+  "rebuild_method": "Inspected native source solids reconstructed as new FreeFormElements with new editable finish parameters; no source RFA renamed as an original model.", 
+  "cct_k": null, 
+  "actual_dimensions_in": [
+    14.25, 
+    14.25, 
+    48.0
+  ], 
+  "placement": "WorkPlaneBased", 
+  "bounds_in": [
+    -7.125, 
+    -7.125, 
+    0.0, 
+    7.125, 
+    7.125, 
+    48.0
+  ], 
+  "finished_utc": "2026-10-02T14:04:43.616000Z", 
+  "source_rfa": "E:\\Claude\\3D-Model-Workflow\\output\\trinity\\Kuzco_Trinity_Low_PD62014_BKSM_Glow_R2025.rfa", 
+  "display_bounds_in": [
+    -7.125, 
+    -7.125, 
+    0.0, 
+    7.125, 
+    7.125, 
+    48.0
+  ], 
+  "project_warnings": [], 
+  "stage": "complete", 
+  "revit_version": "2025", 
+  "source_rfa_sha256": "4eca68de80b4a02972801b56d05ccd571919e818508519735c614d97d34e5da7", 
+  "type": "PD62014-BK/SM", 
+  "source_parameter_inches": {}, 
+  "parts": [
+    {
+      "name": "Canopy and Suspension / source 3224 / 0", 
+      "id": "3214", 
+      "volume_ft3": 0.0025584067394969949
+    }, 
+    {
+      "name": "Canopy and Suspension / source 3225 / 0", 
+      "id": "3215", 
+      "volume_ft3": 5.2692631241032308e-05
+    }, 
+    {
+      "name": "Canopy and Suspension / source 3226 / 0", 
+      "id": "3216", 
+      "volume_ft3": 0.0025173279528488022
+    }, 
+    {
+      "name": "Canopy and Suspension / source 3227 / 0", 
+      "id": "3217", 
+      "volume_ft3": 4.8701863247429245e-06
+    }, 
+    {
+      "name": "Canopy and Suspension / source 3228 / 0", 
+      "id": "3218", 
+      "volume_ft3": 4.8701863247429245e-06
+    }, 
+    {
+      "name": "Smoke Glass Shade / source 3229 / 0", 
+      "id": "3219", 
+      "volume_ft3": 0.016724612201929209
+    }, 
+    {
+      "name": "Recessed Housing / source 3230 / 0", 
+      "id": "3220", 
+      "volume_ft3": 0.021043701806038401
+    }, 
+    {
+      "name": "Warm Diffuser / source 3231 / 0", 
+      "id": "3221", 
+      "volume_ft3": 0.00063582157942393132
+    }
+  ], 
+  "reopened_warnings": [], 
+  "evidence_files": [
+    "Kuzco_Trinity_PD62014_BK_SM_R2025 - 3D View - Front.png", 
+    "Kuzco_Trinity_PD62014_BK_SM_R2025 - 3D View - Material.png", 
+    "Kuzco_Trinity_PD62014_BK_SM_R2025 - 3D View - Oblique.png", 
+    "Kuzco_Trinity_PD62014_BK_SM_R2025 - 3D View - Side.png", 
+    "Kuzco_Trinity_PD62014_BK_SM_R2025_Hosted - 3D View - Hosted.png", 
+    "Kuzco_Trinity_PD62014_BK_SM_R2025_Isolated - 3D View - Native Front.png", 
+    "Kuzco_Trinity_PD62014_BK_SM_R2025_Isolated - 3D View - Native Material.png", 
+    "Kuzco_Trinity_PD62014_BK_SM_R2025_Isolated - 3D View - Native Oblique.png", 
+    "Kuzco_Trinity_PD62014_BK_SM_R2025_Isolated - 3D View - Native Side.png"
+  ], 
+  "technical_pass": true, 
+  "revit_build": "25.4.50.35", 
+  "rfa_search": "Public manufacturer/dealer technical resources inspected; no exact current RFA located. Rebuilt from inspected native BK/SM source.", 
+  "template_form_ids": [
+    "1537"
+  ], 
+  "family_warnings": [], 
+  "host": {
+    "hostface_present": true, 
+    "host_kind": "ceiling", 
+    "host_id": "3705", 
+    "instance_host_id": "3705", 
+    "normal_dot": 1.0
+  }
+}

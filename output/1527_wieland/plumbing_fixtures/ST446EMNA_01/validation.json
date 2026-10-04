@@ -1,0 +1,205 @@
+{
+  "material_tests": {
+    "Gray": {
+      "face_count": 43, 
+      "writable": true, 
+      "substitution_reaches_faces": true
+    }, 
+    "Finish": {
+      "face_count": 43, 
+      "writable": true, 
+      "substitution_reaches_faces": true
+    }
+  }, 
+  "family_warnings": [], 
+  "actual_dimensions_after_reopen_mm": [
+    393.69999999999999, 
+    161.92500000000007, 
+    358.77501211166378
+  ], 
+  "reopen_geometry_equal": true, 
+  "limitations": [
+    "ASSUMPTION: tank mounting base aligns with the complete-set rim-height datum. Independent tank-height dimension is not published in this reference.", 
+    "The ceramic body and lid are represented; internal flushing hardware, screws and gaskets are omitted.", 
+    "THU842 button remains a separately scheduled component; lid opening diameter is drawing-derived.", 
+    "Independent visualization reconstruction with fixed product dimensions and editable native materials.", 
+    "Small fillets, seams, nozzle details and optical material response are inferred where the manufacturer does not dimension them.", 
+    "No internal hydraulic performance, MEP connectors, fabrication tolerances or procurement substitutions are implied."
+  ], 
+  "inferences": "ASSUMPTION: tank mounting base aligns with the complete-set rim-height datum. Independent tank-height dimension is not published in this reference. | The ceramic body and lid are represented; internal flushing hardware, screws and gaskets are omitted. | THU842 button remains a separately scheduled component; lid opening diameter is drawing-derived. | Independent visualization reconstruction with fixed product dimensions and editable native materials. | Small fillets, seams, nozzle details and optical material response are inferred where the manufacturer does not dimension them. | No internal hydraulic performance, MEP connectors, fabrication tolerances or procurement substitutions are implied.", 
+  "reopened_warnings": [], 
+  "model": "ST446EMNA#01", 
+  "native_gates_pass": true, 
+  "parts": [
+    {
+      "name": "Tank ceramic shell", 
+      "id": "3212", 
+      "volume_ft3": 0.13235517208142872
+    }, 
+    {
+      "name": "Tank lid seam", 
+      "id": "3213", 
+      "volume_ft3": 0.0050103389971304819
+    }, 
+    {
+      "name": "Removable tank lid", 
+      "id": "3214", 
+      "volume_ft3": 0.022486724669145388
+    }
+  ], 
+  "source_spec_path": "E:\\Claude\\3D-Model-Workflow\\output\\1527_wieland\\plumbing_fixtures\\ST446EMNA_01\\source\\model_spec.json", 
+  "technical_pass": true, 
+  "native_path_checks": [], 
+  "acceptance": "NATIVE_GATES_PASSED_PENDING_VISUAL_REVIEW", 
+  "revit_build": "25.4.50.35", 
+  "source_references": [
+    {
+      "document": "TOTO Aquia IV SS-02062", 
+      "page": 2, 
+      "local_image": "_research/CT446CEFGNT40_01/downloads/SS-02062_MS446124CEMF_G_N_pages/page_02.png", 
+      "url": "https://www.totousa.com/filemanager_uploads/product_assets/SpecSheet/SS-02062_MS446124CEMF(G)N.pdf"
+    }, 
+    {
+      "document": "TOTO Aquia IV PD-01451 parts", 
+      "page": 1, 
+      "local_image": "_research/CT446CEFGNT40_01/downloads/PD-01451_446EN_pages/page_01.png", 
+      "url": "https://www.totousa.com/filemanager_uploads/product_assets/PartsManual/PD-01451_446EN.pdf"
+    }
+  ], 
+  "dimension_anchor_checks": [
+    {
+      "pass": true, 
+      "actual_mm": 393.69999999999999, 
+      "label": "Tank width", 
+      "deviation_mm": 0.0, 
+      "nominal_mm": 393.69999999999999
+    }
+  ], 
+  "reopened_bounds_in": [
+    -7.75, 
+    -3.1875000000000013, 
+    -1.805249932109044e-22, 
+    7.75, 
+    3.1875000000000013, 
+    14.125000476837158
+  ], 
+  "evidence_files": [
+    "TOTO_ST446EMNA_01_R2025_Isolated - 3D View - Native Front.png", 
+    "TOTO_ST446EMNA_01_R2025_Isolated - 3D View - Native Material.png", 
+    "TOTO_ST446EMNA_01_R2025_Isolated - 3D View - Native Oblique.png", 
+    "TOTO_ST446EMNA_01_R2025_Isolated - 3D View - Native Side.png"
+  ], 
+  "source_dimensions": [
+    "Tank width 15.5 in and depth 6.375 in from the complete-set drawing.", 
+    "Tank height 14.125 in is derived from 30.25 in total minus 16.125 in rim-height datum."
+  ], 
+  "finished_utc": "2026-10-02T15:47:31.840000Z", 
+  "manufacturer": "TOTO", 
+  "actual_dimensions_in": [
+    15.5, 
+    6.3750000000000027, 
+    14.125000476837158
+  ], 
+  "type": "ST446EMNA#01 - ceramic", 
+  "appearance_defaults": {
+    "Gray": {
+      "luminance": 0, 
+      "gloss": 0.32000000000000001, 
+      "transparency": 0, 
+      "rgb": [
+        131, 
+        132, 
+        130
+      ], 
+      "cct_k": null
+    }, 
+    "Finish": {
+      "luminance": 0, 
+      "gloss": 0.85999999999999999, 
+      "transparency": 0, 
+      "rgb": [
+        245, 
+        245, 
+        241
+      ], 
+      "cct_k": null
+    }
+  }, 
+  "gates": {
+    "cct": true, 
+    "actual_face_host": true, 
+    "warnings": true, 
+    "dimensions": true, 
+    "orientation": true, 
+    "reopened": true, 
+    "views": true, 
+    "category": true, 
+    "diffuse_bitmaps": true, 
+    "materials": true, 
+    "reopen_geometry_equal": true
+  }, 
+  "category": "Plumbing Fixtures", 
+  "started_utc": "2026-10-02T15:47:28.353000Z", 
+  "revit_version": "2025", 
+  "bounds_in": [
+    -7.75, 
+    -3.1875000000000013, 
+    -1.805249932109044e-22, 
+    7.75, 
+    3.1875000000000013, 
+    14.125000476837158
+  ], 
+  "display_bounds_in": [
+    -7.75, 
+    -3.1875000000000013, 
+    0.0, 
+    7.75, 
+    3.1875000000000013, 
+    14.125
+  ], 
+  "source_spec_sha256": "e488404a80c47ed8a33695a009590e5788fba01035047ac4bb63f739808439b6", 
+  "appearance_bindings": {
+    "Gray": {
+      "exists": true, 
+      "path": "E:\\Claude\\3D-Model-Workflow\\output\\1527_wieland\\plumbing_fixtures\\ST446EMNA_01\\textures\\Gray.png", 
+      "material_id": "3210"
+    }, 
+    "Finish": {
+      "exists": true, 
+      "path": "E:\\Claude\\3D-Model-Workflow\\output\\1527_wieland\\plumbing_fixtures\\ST446EMNA_01\\textures\\Finish.png", 
+      "material_id": "3207"
+    }
+  }, 
+  "visual_review": "PENDING_NATIVE_IMAGE_REVIEW", 
+  "material_ids": {
+    "Gray": "3210", 
+    "Finish": "3207"
+  }, 
+  "rfa_search": {
+    "evidence": "_research/ST446EMNA_01/sources.json", 
+    "result": "No acceptable no-account RFA recovered"
+  }, 
+  "project_warnings": [], 
+  "cct_k": null, 
+  "reopened": true, 
+  "bounds_method": "Fine native face meshes plus 128-sample analytic edges", 
+  "template_form_ids": [
+    "1537"
+  ], 
+  "stage": "complete", 
+  "all_overall_dimensions_authoritative": false, 
+  "host": {
+    "host_id": "3696", 
+    "host_kind": "floor", 
+    "hostface_present": true, 
+    "normal_dot": 1.0, 
+    "instance_host_id": "3696"
+  }, 
+  "expected_dimensions_in": [
+    15.5, 
+    6.375, 
+    14.125
+  ], 
+  "rfa_path": "E:\\Claude\\3D-Model-Workflow\\output\\1527_wieland\\plumbing_fixtures\\ST446EMNA_01\\TOTO_ST446EMNA_01_R2025.rfa", 
+  "placement": "WorkPlaneBased"
+}

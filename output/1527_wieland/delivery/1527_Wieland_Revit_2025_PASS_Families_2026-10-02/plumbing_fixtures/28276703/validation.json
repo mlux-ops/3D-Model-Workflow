@@ -1,0 +1,174 @@
+{
+  "template_form_ids": [
+    "1537"
+  ], 
+  "rfa_search": {
+    "evidence": "_research/28276703/sources.json", 
+    "result": "No acceptable no-account RFA recovered"
+  }, 
+  "actual_dimensions_in": [
+    6.8800002956390385, 
+    30.387611009180546, 
+    0.88
+  ], 
+  "source_dimensions": [
+    "Manufacturer nominal flexible hose length 63 in. U-pose centerline consists of two equal legs and a 3 in radius semicircle."
+  ], 
+  "bounds_in": [
+    -0.44, 
+    -30.037611007690430, 
+    0.55999999999999994, 
+    6.4400002956390381, 
+    0.35000000149011612, 
+    1.4399999999999999
+  ], 
+  "reopened": true, 
+  "category": "Plumbing Fixtures", 
+  "actual_dimensions_after_reopen_mm": [
+    174.75200750923156, 
+    771.84531963318580, 
+    22.352000000000000
+  ], 
+  "bounds_method": "Fine native face meshes plus 128-sample analytic edges", 
+  "source_spec_path": "E:\\Claude\\3D-Model-Workflow\\output\\1527_wieland\\plumbing_fixtures\\28276703\\source\\model_spec.json", 
+  "rfa_path": "E:\\Claude\\3D-Model-Workflow\\output\\1527_wieland\\plumbing_fixtures\\28276703\\Hansgrohe_28276703_R2025.rfa", 
+  "stage": "complete", 
+  "cct_k": null, 
+  "placement": "WorkPlaneBased", 
+  "material_tests": {
+    "Finish": {
+      "substitution_reaches_faces": true, 
+      "writable": true, 
+      "face_count": 26
+    }
+  }, 
+  "evidence_files": [
+    "Hansgrohe_28276703_R2025_Isolated - 3D View - Native Front.png", 
+    "Hansgrohe_28276703_R2025_Isolated - 3D View - Native Material.png", 
+    "Hansgrohe_28276703_R2025_Isolated - 3D View - Native Oblique.png", 
+    "Hansgrohe_28276703_R2025_Isolated - 3D View - Native Side.png"
+  ], 
+  "model": "28276703", 
+  "acceptance": "NATIVE_GATES_PASSED_PENDING_VISUAL_REVIEW", 
+  "native_path_checks": [
+    {
+      "pass": true, 
+      "actual_mm": 1600.1999999999998, 
+      "part": "63 inch hose", 
+      "nominal_mm": 1600.1999999999998
+    }
+  ], 
+  "finished_utc": "2026-10-02T14:37:45.404000Z", 
+  "source_spec_sha256": "e6e28e47d782f81a696653a44fbc992b970c35bf84526785fa41fc1900dc2b35", 
+  "reopened_warnings": [], 
+  "project_warnings": [], 
+  "reopen_geometry_equal": true, 
+  "visual_review": "PENDING_NATIVE_IMAGE_REVIEW", 
+  "display_bounds_in": [
+    -0.44, 
+    -30.037611019615312, 
+    0.55999999999999994, 
+    6.4399999999999995, 
+    0.35000000000000009, 
+    1.4399999999999999
+  ], 
+  "source_references": [
+    {
+      "page": 277, 
+      "document": "Hansgrohe 2026 US Price Book", 
+      "url": "https://assets.hansgrohe.com/celum/emailmarketing/hansgrohe_2026_Price_Book_en_US.pdf", 
+      "local_image": "_research/catalog_pages/page_277.png"
+    }
+  ], 
+  "appearance_bindings": {
+    "Finish": {
+      "material_id": "3207", 
+      "exists": true, 
+      "path": "E:\\Claude\\3D-Model-Workflow\\output\\1527_wieland\\plumbing_fixtures\\28276703\\textures\\Finish.png"
+    }
+  }, 
+  "revit_build": "25.4.50.35", 
+  "dimension_anchor_checks": [], 
+  "material_ids": {
+    "Finish": "3207"
+  }, 
+  "expected_dimensions_in": [
+    6.8799999999999999, 
+    30.387611019615314, 
+    0.88
+  ], 
+  "inferences": "Fixed hanging pose is an installation assumption; its bounding box is not a manufacturer product envelope. | Connector dimensions and hose outside diameter are drawing-derived. Matte-white legacy finish retained. | Independent visualization reconstruction with fixed product dimensions and editable native materials. | Small fillets, seams, nozzle details and optical material response are inferred where the manufacturer does not dimension them. | No internal hydraulic performance, MEP connectors, fabrication tolerances or procurement substitutions are implied.", 
+  "gates": {
+    "reopened": true, 
+    "warnings": true, 
+    "orientation": true, 
+    "diffuse_bitmaps": true, 
+    "actual_face_host": true, 
+    "dimensions": true, 
+    "materials": true, 
+    "reopen_geometry_equal": true, 
+    "views": true, 
+    "category": true, 
+    "cct": true
+  }, 
+  "revit_version": "2025", 
+  "manufacturer": "Hansgrohe", 
+  "technical_pass": true, 
+  "family_warnings": [], 
+  "started_utc": "2026-10-02T14:37:39.636000Z", 
+  "type": "28276703 - White", 
+  "parts": [
+    {
+      "volume_ft3": 0.0071585770101327455, 
+      "id": "3209", 
+      "name": "63 inch hose"
+    }, 
+    {
+      "volume_ft3": 0.00065112062069334258, 
+      "id": "3210", 
+      "name": "First swivel connector"
+    }, 
+    {
+      "volume_ft3": 0.00065112062069334247, 
+      "id": "3211", 
+      "name": "Second swivel connector"
+    }
+  ], 
+  "all_overall_dimensions_authoritative": false, 
+  "native_gates_pass": true, 
+  "appearance_defaults": {
+    "Finish": {
+      "rgb": [
+        242, 
+        243, 
+        240
+      ], 
+      "gloss": 0.17000000000000001, 
+      "luminance": 0, 
+      "transparency": 0, 
+      "cct_k": null
+    }
+  }, 
+  "reopened_bounds_in": [
+    -0.44, 
+    -30.037611007690430, 
+    0.55999999999999994, 
+    6.4400002956390381, 
+    0.35000000149011612, 
+    1.4399999999999999
+  ], 
+  "limitations": [
+    "Fixed hanging pose is an installation assumption; its bounding box is not a manufacturer product envelope.", 
+    "Connector dimensions and hose outside diameter are drawing-derived. Matte-white legacy finish retained.", 
+    "Independent visualization reconstruction with fixed product dimensions and editable native materials.", 
+    "Small fillets, seams, nozzle details and optical material response are inferred where the manufacturer does not dimension them.", 
+    "No internal hydraulic performance, MEP connectors, fabrication tolerances or procurement substitutions are implied."
+  ], 
+  "host": {
+    "hostface_present": true, 
+    "host_kind": "wall", 
+    "normal_dot": 1.0, 
+    "host_id": "3690", 
+    "instance_host_id": "3690"
+  }
+}

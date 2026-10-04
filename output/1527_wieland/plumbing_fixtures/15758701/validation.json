@@ -1,0 +1,223 @@
+{
+  "family_warnings": [], 
+  "template_form_ids": [
+    "1537"
+  ], 
+  "source_spec_path": "E:\\Claude\\3D-Model-Workflow\\output\\1527_wieland\\plumbing_fixtures\\15758701\\source\\model_spec.json", 
+  "technical_pass": true, 
+  "actual_dimensions_in": [
+    5.8750001192092896, 
+    6.8750000596046448, 
+    3.1250000000000009
+  ], 
+  "manufacturer": "Hansgrohe", 
+  "source_spec_sha256": "0029342e4b71e73aad92e4225bcd0a6bc66f8652a902108e77312672543b0a2e", 
+  "stage": "complete", 
+  "reopened": true, 
+  "placement": "WorkPlaneBased", 
+  "reopened_warnings": [], 
+  "reopen_geometry_equal": true, 
+  "all_overall_dimensions_authoritative": false, 
+  "acceptance": "NATIVE_GATES_PASSED_PENDING_VISUAL_REVIEW", 
+  "model": "15758701", 
+  "parts": [
+    {
+      "name": "Escutcheon", 
+      "id": "3212", 
+      "volume_ft3": 0.0029413140042533342
+    }, 
+    {
+      "name": "Upper collar", 
+      "id": "3213", 
+      "volume_ft3": 0.00053479843810717007
+    }, 
+    {
+      "name": "Upper control", 
+      "id": "3214", 
+      "volume_ft3": 0.001078526185353192
+    }, 
+    {
+      "name": "Upper selector tab", 
+      "id": "3215", 
+      "volume_ft3": 2.4799453265988014e-05
+    }, 
+    {
+      "name": "Lower collar", 
+      "id": "3216", 
+      "volume_ft3": 0.001051860402136723
+    }, 
+    {
+      "name": "Temperature ring", 
+      "id": "3217", 
+      "volume_ft3": 0.00028712408708609239
+    }, 
+    {
+      "name": "Thermostatic knob", 
+      "id": "3218", 
+      "volume_ft3": 0.0030621266905303474
+    }, 
+    {
+      "name": "Lower lever", 
+      "id": "3219", 
+      "volume_ft3": 9.5838463496946322e-05
+    }
+  ], 
+  "gates": {
+    "actual_face_host": true, 
+    "warnings": true, 
+    "category": true, 
+    "orientation": true, 
+    "materials": true, 
+    "dimensions": true, 
+    "diffuse_bitmaps": true, 
+    "reopened": true, 
+    "views": true, 
+    "reopen_geometry_equal": true, 
+    "cct": true
+  }, 
+  "started_utc": "2026-10-02T14:27:04.012000Z", 
+  "category": "Plumbing Fixtures", 
+  "expected_dimensions_in": [
+    5.875, 
+    6.875, 
+    3.125
+  ], 
+  "actual_dimensions_after_reopen_mm": [
+    149.22500302791596, 
+    174.62500151395795, 
+    79.375000000000014
+  ], 
+  "appearance_bindings": {
+    "Graphite": {
+      "material_id": "3210", 
+      "path": "E:\\Claude\\3D-Model-Workflow\\output\\1527_wieland\\plumbing_fixtures\\15758701\\textures\\Graphite.png", 
+      "exists": true
+    }, 
+    "Finish": {
+      "material_id": "3207", 
+      "path": "E:\\Claude\\3D-Model-Workflow\\output\\1527_wieland\\plumbing_fixtures\\15758701\\textures\\Finish.png", 
+      "exists": true
+    }
+  }, 
+  "revit_build": "25.4.50.35", 
+  "bounds_method": "Fine native face meshes plus 128-sample analytic edges", 
+  "material_tests": {
+    "Graphite": {
+      "face_count": 56, 
+      "substitution_reaches_faces": true, 
+      "writable": true
+    }, 
+    "Finish": {
+      "face_count": 56, 
+      "substitution_reaches_faces": true, 
+      "writable": true
+    }
+  }, 
+  "evidence_files": [
+    "Hansgrohe_15758701_R2025_Isolated - 3D View - Native Front.png", 
+    "Hansgrohe_15758701_R2025_Isolated - 3D View - Native Material.png", 
+    "Hansgrohe_15758701_R2025_Isolated - 3D View - Native Oblique.png", 
+    "Hansgrohe_15758701_R2025_Isolated - 3D View - Native Side.png"
+  ], 
+  "source_dimensions": [
+    "Escutcheon diameter 5.875 in; centers 2.875 in; lower control diameter 1.75 in; lower lever reach 2.5 in.", 
+    "Projection configured at the published 3.125 in maximum; overall height derives from the down-pointing lower lever and plate."
+  ], 
+  "material_ids": {
+    "Graphite": "3210", 
+    "Finish": "3207"
+  }, 
+  "rfa_search": {
+    "result": "No acceptable no-account RFA recovered", 
+    "evidence": "_research/15758701/sources.json"
+  }, 
+  "dimension_anchor_checks": [
+    {
+      "pass": true, 
+      "label": "Escutcheon diameter", 
+      "actual_mm": 149.22500302791596, 
+      "deviation_mm": 3.0279159545898436e-06, 
+      "nominal_mm": 149.22499999999999
+    }
+  ], 
+  "display_bounds_in": [
+    -2.9375, 
+    -3.9375, 
+    0.0, 
+    2.9375, 
+    2.9375, 
+    3.1250000000000009
+  ], 
+  "type": "15758701 - White", 
+  "bounds_in": [
+    -2.9375000596046448, 
+    -3.9375, 
+    -1.9361878419480139e-22, 
+    2.9375000596046448, 
+    2.9375000596046448, 
+    3.1250000000000009
+  ], 
+  "source_references": [
+    {
+      "page": 302, 
+      "document": "Hansgrohe 2026 US Price Book", 
+      "url": "https://assets.hansgrohe.com/celum/emailmarketing/hansgrohe_2026_Price_Book_en_US.pdf", 
+      "local_image": "_research/catalog_pages/page_302.png"
+    }
+  ], 
+  "inferences": "Installation-depth range is fixed at its outer limit for this visualization. | Temperature markings and small internal collars are simplified. | Matte white identity comes from scheduled 15758701 and its manufacturer instruction listing; current family drawing is the same 15758 body. | Independent visualization reconstruction with fixed product dimensions and editable native materials. | Small fillets, seams, nozzle details and optical material response are inferred where the manufacturer does not dimension them. | No internal hydraulic performance, MEP connectors, fabrication tolerances or procurement substitutions are implied.", 
+  "finished_utc": "2026-10-02T14:27:07.466000Z", 
+  "native_gates_pass": true, 
+  "appearance_defaults": {
+    "Graphite": {
+      "gloss": 0.35999999999999999, 
+      "transparency": 0, 
+      "cct_k": null, 
+      "luminance": 0, 
+      "rgb": [
+        64, 
+        67, 
+        69
+      ]
+    }, 
+    "Finish": {
+      "gloss": 0.17000000000000001, 
+      "transparency": 0, 
+      "cct_k": null, 
+      "luminance": 0, 
+      "rgb": [
+        242, 
+        243, 
+        240
+      ]
+    }
+  }, 
+  "visual_review": "PENDING_NATIVE_IMAGE_REVIEW", 
+  "project_warnings": [], 
+  "reopened_bounds_in": [
+    -2.9375000596046448, 
+    -3.9375, 
+    -1.9361878419480139e-22, 
+    2.9375000596046448, 
+    2.9375000596046448, 
+    3.1250000000000009
+  ], 
+  "cct_k": null, 
+  "rfa_path": "E:\\Claude\\3D-Model-Workflow\\output\\1527_wieland\\plumbing_fixtures\\15758701\\Hansgrohe_15758701_R2025.rfa", 
+  "limitations": [
+    "Installation-depth range is fixed at its outer limit for this visualization.", 
+    "Temperature markings and small internal collars are simplified.", 
+    "Matte white identity comes from scheduled 15758701 and its manufacturer instruction listing; current family drawing is the same 15758 body.", 
+    "Independent visualization reconstruction with fixed product dimensions and editable native materials.", 
+    "Small fillets, seams, nozzle details and optical material response are inferred where the manufacturer does not dimension them.", 
+    "No internal hydraulic performance, MEP connectors, fabrication tolerances or procurement substitutions are implied."
+  ], 
+  "host": {
+    "host_id": "3699", 
+    "instance_host_id": "3699", 
+    "hostface_present": true, 
+    "normal_dot": 1.0, 
+    "host_kind": "wall"
+  }, 
+  "revit_version": "2025"
+}

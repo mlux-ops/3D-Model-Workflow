@@ -1,0 +1,200 @@
+{
+  "stage": "complete", 
+  "material_tests": {
+    "Black": {
+      "writable": true, 
+      "face_count": 42, 
+      "substitution_reaches_faces": true
+    }, 
+    "Opal": {
+      "writable": true, 
+      "face_count": 42, 
+      "substitution_reaches_faces": true
+    }, 
+    "Clear": {
+      "writable": true, 
+      "face_count": 42, 
+      "substitution_reaches_faces": true
+    }
+  }, 
+  "display_bounds_in": [
+    -2.3125, 
+    -2.2545207969204690, 
+    0.0, 
+    2.3125, 
+    2.2545207969204681, 
+    48.0
+  ], 
+  "placement": "WorkPlaneBased", 
+  "started_utc": "2026-10-02T14:36:24.524000Z", 
+  "companion_bitmaps": {
+    "Black": "E:\\Claude\\3D-Model-Workflow\\output\\1527_wieland\\electrical_fixtures\\T1-1__4412813598064516\\source\\textures\\Black.png", 
+    "Opal": "E:\\Claude\\3D-Model-Workflow\\output\\1527_wieland\\electrical_fixtures\\T1-1__4412813598064516\\source\\textures\\Opal.png", 
+    "Clear": "E:\\Claude\\3D-Model-Workflow\\output\\1527_wieland\\electrical_fixtures\\T1-1__4412813598064516\\source\\textures\\Clear.png"
+  }, 
+  "template_form_ids": [
+    "1537"
+  ], 
+  "technical_pass": true, 
+  "manufacturer": "Kuzco Lighting", 
+  "type": "PD75027-BK", 
+  "reopened_warnings": [], 
+  "project_warnings": [], 
+  "reopened": true, 
+  "rfa_search": "Manufacturer public RFA downloaded/opened in 2025; measured native body/canopy differ from current published dimensions, so unchanged RFA was not accepted.", 
+  "bounds_in": [
+    -2.3124999403953552, 
+    -2.3124999403953552, 
+    0.0, 
+    2.3124999403953552, 
+    2.3124999403953552, 
+    48.0
+  ], 
+  "rfa_path": "E:\\Claude\\3D-Model-Workflow\\output\\1527_wieland\\electrical_fixtures\\T1-1__4412813598064516\\Kuzco_Motif_PD75027_Black_R2025.rfa", 
+  "revit_version": "2025", 
+  "host": {
+    "host_id": "3703", 
+    "hostface_present": true, 
+    "normal_dot": 1.0, 
+    "instance_host_id": "3703", 
+    "host_kind": "ceiling"
+  }, 
+  "evidence_files": [
+    "Kuzco_Motif_PD75027_Black_R2025 - 3D View - Front.png", 
+    "Kuzco_Motif_PD75027_Black_R2025 - 3D View - Material.png", 
+    "Kuzco_Motif_PD75027_Black_R2025 - 3D View - Oblique.png", 
+    "Kuzco_Motif_PD75027_Black_R2025 - 3D View - Side.png", 
+    "Kuzco_Motif_PD75027_Black_R2025_Hosted - 3D View - Hosted.png", 
+    "Kuzco_Motif_PD75027_Black_R2025_Isolated - 3D View - Native Front.png", 
+    "Kuzco_Motif_PD75027_Black_R2025_Isolated - 3D View - Native Material.png", 
+    "Kuzco_Motif_PD75027_Black_R2025_Isolated - 3D View - Native Oblique.png", 
+    "Kuzco_Motif_PD75027_Black_R2025_Isolated - 3D View - Native Side.png"
+  ], 
+  "appearance_defaults": {
+    "Black": {
+      "transparency": 0, 
+      "rgb": [
+        24, 
+        24, 
+        24
+      ], 
+      "cct_k": null, 
+      "luminance": 0, 
+      "gloss": 0.23999999999999999
+    }, 
+    "Opal": {
+      "transparency": 0.080000000000000002, 
+      "rgb": [
+        248, 
+        248, 
+        243
+      ], 
+      "cct_k": null, 
+      "luminance": 0, 
+      "gloss": 0.33000000000000002
+    }, 
+    "Clear": {
+      "transparency": 0.90000000000000002, 
+      "rgb": [
+        246, 
+        248, 
+        249
+      ], 
+      "cct_k": null, 
+      "luminance": 0, 
+      "gloss": 0.97999999999999998
+    }
+  }, 
+  "finished_utc": "2026-10-02T14:36:49.431000Z", 
+  "model": "PD75027-BK", 
+  "expected_dimensions_in": [
+    4.625, 
+    4.625, 
+    48
+  ], 
+  "source_url": "https://kuzcolighting.com/products/motif-pd75027-kuzco", 
+  "bounds_method": "Fine native face meshes plus 128-sample analytic edges", 
+  "parts": [
+    {
+      "volume_ft3": 0.0048467494807981218, 
+      "name": "Ceiling canopy", 
+      "id": "3214"
+    }, 
+    {
+      "volume_ft3": 7.2542745491136526e-05, 
+      "name": "Suspension cable", 
+      "id": "3215"
+    }, 
+    {
+      "volume_ft3": 0.00053100751208449753, 
+      "name": "Upper black terminal", 
+      "id": "3216"
+    }, 
+    {
+      "volume_ft3": 0.0021528561704225735, 
+      "name": "Long clear cylindrical lens", 
+      "id": "3217"
+    }, 
+    {
+      "volume_ft3": 0.00033072499872103704, 
+      "name": "Fine LED filament core", 
+      "id": "3218"
+    }, 
+    {
+      "volume_ft3": 0.00029078982804627034, 
+      "name": "Lower black terminal", 
+      "id": "3219"
+    }
+  ], 
+  "actual_dimensions_in": [
+    4.6249998807907104, 
+    4.6249998807907104, 
+    48.0
+  ], 
+  "revit_build": "25.4.50.35", 
+  "component_checks": [
+    {
+      "element_ids": [
+        "3214"
+      ], 
+      "label": "Canopy", 
+      "source": "https://kuzcolighting.com/products/motif-pd75027-kuzco", 
+      "expected_dimensions_in": [
+        4.625, 
+        4.625, 
+        0.5
+      ]
+    }, 
+    {
+      "element_ids": [
+        "3216", 
+        "3217", 
+        "3218", 
+        "3219"
+      ], 
+      "label": "Pendant body", 
+      "source": "https://kuzcolighting.com/products/motif-pd75027-kuzco", 
+      "expected_dimensions_in": [
+        0.75, 
+        0.75, 
+        26.75
+      ]
+    }
+  ], 
+  "category": "Lighting Fixtures", 
+  "inferences": "0.75-inch x 26.75-inch body, 4.625-inch x 0.5-inch canopy. ASSUMPTION: 48-inch drop and fine internal filament/cap proportions. Public 2019 OEM body measures about 18 mm diameter against the current 19.05 mm nominal; canopy is also undersized. Current native reconstruction preserves the referenced clear cylinder and end caps.", 
+  "cct_k": null, 
+  "gates": {
+    "warnings": true, 
+    "category": true, 
+    "orientation": true, 
+    "dimensions": true, 
+    "actual_face_host": true, 
+    "cct": true, 
+    "materials": true, 
+    "reopened": true, 
+    "views": true
+  }, 
+  "catalog_key": "KZC1009577", 
+  "family_warnings": []
+}

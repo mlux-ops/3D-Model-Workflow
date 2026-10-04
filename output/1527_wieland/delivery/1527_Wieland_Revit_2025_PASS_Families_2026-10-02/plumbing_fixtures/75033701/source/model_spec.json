@@ -1,0 +1,320 @@
+{
+  "key": "75033701",
+  "model": "75033701",
+  "manufacturer": "Hansgrohe",
+  "type_name": "75033701 - White",
+  "basename": "Hansgrohe_75033701_R2025",
+  "name": "Vivenis widespread lavatory faucet, 8-inch centers",
+  "host": "floor",
+  "configured_dimensions_in": [
+    14.25,
+    7.25,
+    4.625
+  ],
+  "materials": {
+    "Finish": {
+      "rgb": [
+        242,
+        243,
+        240
+      ],
+      "gloss": 0.17,
+      "reflectivity": 0.06,
+      "class": "Plastic"
+    },
+    "Detail": {
+      "rgb": [
+        24,
+        25,
+        26
+      ],
+      "gloss": 0.17,
+      "reflectivity": 0.04,
+      "class": "Plastic"
+    },
+    "Graphite": {
+      "rgb": [
+        64,
+        67,
+        69
+      ],
+      "gloss": 0.36,
+      "reflectivity": 0.16,
+      "class": "Glass"
+    },
+    "Ceramic": {
+      "rgb": [
+        245,
+        245,
+        241
+      ],
+      "gloss": 0.86,
+      "reflectivity": 0.22,
+      "class": "Ceramic"
+    },
+    "Brass": {
+      "rgb": [
+        160,
+        124,
+        64
+      ],
+      "gloss": 0.4,
+      "reflectivity": 0.38,
+      "class": "Metal"
+    },
+    "Green": {
+      "rgb": [
+        31,
+        113,
+        66
+      ],
+      "gloss": 0.18,
+      "reflectivity": 0.05,
+      "class": "Plastic"
+    },
+    "Gray": {
+      "rgb": [
+        131,
+        132,
+        130
+      ],
+      "gloss": 0.32,
+      "reflectivity": 0.12,
+      "class": "Plastic"
+    }
+  },
+  "geometry": [
+    {
+      "name": "Spout base",
+      "kind": "cylinder",
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "radius": 1,
+      "a": 0,
+      "b": 0.16,
+      "material": "Finish"
+    },
+    {
+      "name": "Sculpted spout",
+      "kind": "profile",
+      "origin": [
+        -0.75,
+        0,
+        0
+      ],
+      "u": [
+        0,
+        1,
+        0
+      ],
+      "v": [
+        0,
+        0,
+        1
+      ],
+      "normal": [
+        1,
+        0,
+        0
+      ],
+      "points": [
+        [
+          -0.6,
+          0.14
+        ],
+        [
+          0.6,
+          0.14
+        ],
+        [
+          0.6,
+          3.625
+        ],
+        [
+          "arc",
+          [
+            -2.4979091530143487,
+            4.373432564834957
+          ],
+          [
+            -5.675,
+            4.625
+          ]
+        ],
+        [
+          -6.25,
+          4.245
+        ],
+        [
+          -6.225,
+          3.9050000000000002
+        ],
+        [
+          "arc",
+          [
+            -2.3,
+            4.105
+          ],
+          [
+            -0.6,
+            3.625
+          ]
+        ]
+      ],
+      "length": 1.5,
+      "material": "Finish"
+    },
+    {
+      "name": "Left valve base",
+      "kind": "cylinder",
+      "origin": [
+        -4,
+        0,
+        0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "radius": 0.9375,
+      "a": 0,
+      "b": 0.16,
+      "material": "Finish"
+    },
+    {
+      "name": "Left valve body",
+      "kind": "cylinder",
+      "origin": [
+        -4,
+        0,
+        0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "radius": 0.53,
+      "a": 0.16,
+      "b": 2.32,
+      "material": "Finish"
+    },
+    {
+      "name": "Left flat lever",
+      "kind": "box",
+      "bounds": [
+        -7.125,
+        -0.24,
+        2.32,
+        -4,
+        0.24,
+        2.5
+      ],
+      "radius": 0.16,
+      "material": "Finish"
+    },
+    {
+      "name": "Right valve base",
+      "kind": "cylinder",
+      "origin": [
+        4,
+        0,
+        0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "radius": 0.9375,
+      "a": 0,
+      "b": 0.16,
+      "material": "Finish"
+    },
+    {
+      "name": "Right valve body",
+      "kind": "cylinder",
+      "origin": [
+        4,
+        0,
+        0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "radius": 0.53,
+      "a": 0.16,
+      "b": 2.32,
+      "material": "Finish"
+    },
+    {
+      "name": "Right flat lever",
+      "kind": "box",
+      "bounds": [
+        4,
+        -0.24,
+        2.32,
+        7.125,
+        0.24,
+        2.5
+      ],
+      "radius": 0.16,
+      "material": "Finish"
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://assets.hansgrohe.com/celum/emailmarketing/hansgrohe_2026_Price_Book_en_US.pdf",
+      "document": "Hansgrohe 2026 US Price Book",
+      "page": 86,
+      "local_image": "_research/catalog_pages/page_086.png"
+    }
+  ],
+  "dimension_authority": [
+    "8 in valve centers; height 4.625 in; reach 5.875 in; spout base diameter 2 in.",
+    "Handle length 3.125 in and height 2.500 in from the manufacturer diagram."
+  ],
+  "limitations": [
+    "Fixed 8 in installation spacing; levers shown pointing outwards.",
+    "Above-counter set only; drain, supply hoses, cast underside and detailed aerator are omitted.",
+    "Waterfall/spout shoulders are traced approximately from the catalog side drawing.",
+    "Independent visualization reconstruction with fixed product dimensions and editable native materials.",
+    "Small fillets, seams, nozzle details and optical material response are inferred where the manufacturer does not dimension them.",
+    "No internal hydraulic performance, MEP connectors, fabrication tolerances or procurement substitutions are implied."
+  ],
+  "anchors": [
+    {
+      "label": "Height",
+      "parts": [
+        "Spout base",
+        "Sculpted spout"
+      ],
+      "axis": 2,
+      "nominal_in": 4.625
+    },
+    {
+      "label": "Base diameter",
+      "parts": [
+        "Spout base"
+      ],
+      "axis": 0,
+      "nominal_in": 2
+    }
+  ],
+  "all_overall_dimensions_authoritative": false,
+  "rfa_search": {
+    "result": "No acceptable no-account RFA recovered",
+    "evidence": "_research/75033701/sources.json"
+  }
+}

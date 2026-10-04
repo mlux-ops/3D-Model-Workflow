@@ -1,0 +1,122 @@
+{
+  "slug": "thermador_podmc301w",
+  "brand": "Thermador",
+  "model": "PODMC301W",
+  "target_xyz_mm": [
+    755.65,
+    622.3,
+    1244.6
+  ],
+  "dimension_basis": "29 3/4 x 24 1/2 x 49 in appliance body; handle projection additional.",
+  "kind": "double_oven",
+  "rfa_name": "thermador_podmc301w_Custom_R1_R2025.rfa",
+  "source_page": 1,
+  "source_pdf": "E:\\Claude\\3D-Model-Workflow\\output\\1527_wieland\\appliances\\thermador_podmc301w\\source\\product_sheet.pdf",
+  "source_pdf_sha256": "994ef34139be60f0169cc5853180d90ad0c0f25d9977824ddb54cf7c164f41b8",
+  "source_urls": [
+    "https://www.thermador.com/us/en/mkt-product/ovens/double-ovens/PODMC301W",
+    "https://media3.bsh-group.com/3D_Asset/15838407_PODMC301W-Thermador-TradeCAD.zip",
+    "https://media3.bsh-group.com/3D_Asset/29273463_PODMC301W_TradeCAD.zip",
+    "https://media3.bsh-group.com/Documents/MCDOC02802507_PODMC301W-30-INCH-DOUBLE-COMBINATION-BUILT-IN-OVEN-WITH-SPEED-OVEN-Specifications.pdf"
+  ],
+  "row_ids": [
+    2199628860030852
+  ],
+  "replacement_reason": "Orchestrator round 1: exact-identity manufacturer working family fails the <=1 mm complete overall dimension gate. New native custom geometry replaces the working selection; OEM originals and prior working RFA remain preserved.",
+  "axis_convention": "X width, Y front-to-back depth, Z vertical height; millimetres.",
+  "dimension_gate_scope": "overall",
+  "declared_limitations": [
+    "Fixed manufacturer model size; exposed finish parameters are flex-tested.",
+    "Internal partitions, edge radii, controls and concealed mechanisms are reference-derived visualization approximations.",
+    "Published nominal appliance W/D/H is the requested complete coordination envelope. Handles are included inside this envelope; the concealed case-depth partition is reconstructed rather than certified to the separate installation section. This family is not a cabinet-cutout or manufacturing authority."
+  ],
+  "palette": {
+    "Metal Finish": [
+      [
+        165,
+        168,
+        170
+      ],
+      0.55,
+      0.0
+    ],
+    "Black Finish": [
+      [
+        24,
+        26,
+        28
+      ],
+      0.45,
+      0.0
+    ],
+    "Glass Finish": [
+      [
+        30,
+        35,
+        38
+      ],
+      0.9,
+      0.18
+    ],
+    "Clear Glass Finish": [
+      [
+        188,
+        202,
+        205
+      ],
+      0.9,
+      0.72
+    ],
+    "Panel Finish": [
+      [
+        152,
+        149,
+        141
+      ],
+      0.24,
+      0.0
+    ],
+    "Wood Finish": [
+      [
+        174,
+        143,
+        98
+      ],
+      0.2,
+      0.0
+    ],
+    "Grate Finish": [
+      [
+        37,
+        38,
+        38
+      ],
+      0.08,
+      0.0
+    ],
+    "Interior Finish": [
+      [
+        78,
+        81,
+        83
+      ],
+      0.2,
+      0.0
+    ],
+    "Display Finish": [
+      [
+        66,
+        75,
+        80
+      ],
+      0.6,
+      0.0
+    ]
+  },
+  "prepared_utc": "2026-10-02T23:51:17.475845+00:00",
+  "handle_projection_mm": 66.675,
+  "reference_check": {
+    "method": "Retained manufacturer product text and native reference imagery, plus official exact-model web evidence for H7280BP and page-4 T42 metric drawing text.",
+    "pages": 1
+  }
+}

@@ -1,0 +1,219 @@
+{
+  "parameter_scope": "Nominal product dimensions are fixed formulas. Editable material parameters were flexed on hosted native geometry and restored.",
+  "expected_dimensions_in": [
+    7,
+    14,
+    8
+  ],
+  "bounds_in": [
+    -3.506564140319824,
+    -7.0,
+    0.0,
+    3.506564140319824,
+    7.0,
+    8.005542755126953
+  ],
+  "measured_saved_dimensions_in": [
+    7.013128280639648,
+    14.0,
+    8.005542755126953
+  ],
+  "bounds_method": "Fine native face meshes plus 128-sample analytic edges",
+  "technical_pass": true,
+  "started_utc": "2026-10-02T15:23:11.211000Z",
+  "revit_build": "25.4.50.35",
+  "evidence_files": [
+    "Vistosi_Jube_AP_S_Smoke_Black_R2025 - 3D View - Front.png",
+    "Vistosi_Jube_AP_S_Smoke_Black_R2025 - 3D View - Material.png",
+    "Vistosi_Jube_AP_S_Smoke_Black_R2025 - 3D View - Oblique.png",
+    "Vistosi_Jube_AP_S_Smoke_Black_R2025 - 3D View - Side.png",
+    "Vistosi_Jube_AP_S_Smoke_Black_R2025_Hosted - 3D View - Hosted.png",
+    "Vistosi_Jube_AP_S_Smoke_Black_R2025_Isolated - 3D View - Native Front.png",
+    "Vistosi_Jube_AP_S_Smoke_Black_R2025_Isolated - 3D View - Native Material.png",
+    "Vistosi_Jube_AP_S_Smoke_Black_R2025_Isolated - 3D View - Native Oblique.png",
+    "Vistosi_Jube_AP_S_Smoke_Black_R2025_Isolated - 3D View - Native Side.png"
+  ],
+  "appearance_defaults": {
+    "Metal Finish": {
+      "cct_k": null,
+      "rgb": [
+        24,
+        24,
+        24
+      ],
+      "transparency": 0,
+      "gloss": 0.25,
+      "luminance": 0
+    },
+    "Glass Finish": {
+      "cct_k": null,
+      "rgb": [
+        151,
+        149,
+        143
+      ],
+      "transparency": 0.66,
+      "gloss": 0.9,
+      "luminance": 0
+    },
+    "Diffuser Finish": {
+      "cct_k": null,
+      "rgb": [
+        245,
+        245,
+        240
+      ],
+      "transparency": 0.06,
+      "gloss": 0.3,
+      "luminance": 0
+    }
+  },
+  "dimensional_error_mm": [
+    0.3334583282470703,
+    0.0,
+    0.14078598022460936
+  ],
+  "limitations": "Scheduled small US variant: 7-inch width, 14-inch height and 8-inch projection; 4.5-inch wall plate. Exact matte-black/smoke finishes follow the selected Lightology option; the manufacturer cover picture is geometry evidence only. ASSUMPTION: glass section, wall-arm height and internal light-engine details; preserve the stem below the glass and lower wall mounting.",
+  "stage": "complete",
+  "cct_k": null,
+  "category": "Lighting Fixtures",
+  "host": {
+    "host_kind": "wall",
+    "hostface_present": true,
+    "instance_host_id": "3702",
+    "host_id": "3702",
+    "normal_dot": 1.0
+  },
+  "parts": [
+    {
+      "name": "4.5-inch wall plate",
+      "id": "3214",
+      "volume_ft3": 0.005048021193502713
+    },
+    {
+      "name": "Lower projecting arm",
+      "id": "3215",
+      "volume_ft3": 0.00022374629934615613
+    },
+    {
+      "name": "Full vertical stem",
+      "id": "3216",
+      "volume_ft3": 0.0006985166104587562
+    },
+    {
+      "name": "Open smoke glass vessel",
+      "id": "3217",
+      "volume_ft3": 0.01238498945784682
+    },
+    {
+      "name": "Upper cover",
+      "id": "3218",
+      "volume_ft3": 0.0006140838452348681
+    },
+    {
+      "name": "Internal light engine",
+      "id": "3219",
+      "volume_ft3": 0.006901479339169826
+    },
+    {
+      "name": "Downward opal optic",
+      "id": "3220",
+      "volume_ft3": 0.0013963938274500626
+    }
+  ],
+  "model": "JUBE AP S FUTRNEOL22 UL",
+  "template_form_ids": [
+    "1537"
+  ],
+  "inferences": "Scheduled small US variant: 7-inch width, 14-inch height and 8-inch projection; 4.5-inch wall plate. Exact matte-black/smoke finishes follow the selected Lightology option; the manufacturer cover picture is geometry evidence only. ASSUMPTION: glass section, wall-arm height and internal light-engine details; preserve the stem below the glass and lower wall mounting.",
+  "source_url": "https://www.lightology.com/img/prod/pdf/JUBE%20AP%20S%20UL-6-16-23.pdf",
+  "actual_dimensions_in": [
+    7.013128280639648,
+    14.0,
+    8.005542755126953
+  ],
+  "reopened_warnings": [],
+  "finished_utc": "2026-10-02T15:23:23.280000Z",
+  "saved_file_reopened_for_measurement": true,
+  "measured_saved_bounds_in": [
+    -3.506564140319824,
+    -7.0,
+    0.0,
+    3.506564140319824,
+    7.0,
+    8.005542755126953
+  ],
+  "reopened": true,
+  "companion_bitmaps": {
+    "Metal Finish": "E:\\Claude\\3D-Model-Workflow\\output\\1527_wieland\\electrical_fixtures\\VIS1486649__3656802488680324\\source\\textures\\Metal_Finish.png",
+    "Glass Finish": "E:\\Claude\\3D-Model-Workflow\\output\\1527_wieland\\electrical_fixtures\\VIS1486649__3656802488680324\\source\\textures\\Glass_Finish.png",
+    "Diffuser Finish": "E:\\Claude\\3D-Model-Workflow\\output\\1527_wieland\\electrical_fixtures\\VIS1486649__3656802488680324\\source\\textures\\Diffuser_Finish.png"
+  },
+  "rfa_search": "Official product resources and verified BIM listings searched; no exact, usable anonymous RFA accepted. See retained source resources and manufacturer acquisition/inspection receipts.",
+  "rfa_path": "E:\\Claude\\3D-Model-Workflow\\output\\1527_wieland\\electrical_fixtures\\VIS1486649__4971741086089092\\Vistosi_Jube_AP_S_Smoke_Black_R2025.rfa",
+  "manufacturer": "Vistosi",
+  "saved_material_bitmaps": {
+    "Metal Finish": {
+      "path": "E:\\Claude\\3D-Model-Workflow\\output\\1527_wieland\\electrical_fixtures\\VIS1486649__3656802488680324\\source\\textures\\Metal_Finish.png",
+      "exists": true
+    },
+    "Glass Finish": {
+      "path": "E:\\Claude\\3D-Model-Workflow\\output\\1527_wieland\\electrical_fixtures\\VIS1486649__3656802488680324\\source\\textures\\Glass_Finish.png",
+      "exists": true
+    },
+    "Diffuser Finish": {
+      "path": "E:\\Claude\\3D-Model-Workflow\\output\\1527_wieland\\electrical_fixtures\\VIS1486649__3656802488680324\\source\\textures\\Diffuser_Finish.png",
+      "exists": true
+    }
+  },
+  "family_warnings": [],
+  "type": "JUBE AP S FUTRNEOL22 UL",
+  "revit_version": "2025",
+  "display_bounds_in": [
+    -3.5,
+    -7.0,
+    0.0,
+    3.5,
+    7.0,
+    8.00660693140898
+  ],
+  "gates": {
+    "dimensions": true,
+    "materials": true,
+    "views": true,
+    "reopened": true,
+    "saved_dimensions_within_1mm": true,
+    "orientation": true,
+    "actual_face_host": true,
+    "category": true,
+    "saved_components_within_1mm": true,
+    "warnings": true,
+    "cct": true,
+    "saved_bitmaps_resolve": true
+  },
+  "placement": "WorkPlaneBased",
+  "material_tests": {
+    "Metal Finish": {
+      "writable": true,
+      "substitution_reaches_faces": true,
+      "face_count": 64
+    },
+    "Glass Finish": {
+      "writable": true,
+      "substitution_reaches_faces": true,
+      "face_count": 64
+    },
+    "Diffuser Finish": {
+      "writable": true,
+      "substitution_reaches_faces": true,
+      "face_count": 64
+    }
+  },
+  "project_warnings": [],
+  "row_id": "4971741086089092",
+  "canonical_rfa_path": "E:\\Claude\\3D-Model-Workflow\\output\\1527_wieland\\electrical_fixtures\\VIS1486649__3656802488680324\\Vistosi_Jube_AP_S_Smoke_Black_R2025.rfa",
+  "canonical_validation_path": "E:\\Claude\\3D-Model-Workflow\\output\\1527_wieland\\electrical_fixtures\\VIS1486649__3656802488680324\\validation.json",
+  "validation_basis": "Measurements and native gates inherited only after byte-identical RFA hash verification; not a separately rerun native build.",
+  "canonical_rfa_sha256": "a95279ebc11a43c9cf3099387b904f0617c984a8b460304d647362940f81e660",
+  "row_rfa_sha256": "a95279ebc11a43c9cf3099387b904f0617c984a8b460304d647362940f81e660"
+}

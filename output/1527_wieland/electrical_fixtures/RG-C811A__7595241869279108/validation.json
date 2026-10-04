@@ -1,0 +1,292 @@
+{
+  "type": "RG-C811A",
+  "revit_build": "25.4.50.35",
+  "revit_version": "2025",
+  "companion_bitmaps": {
+    "Black": "E:\\Claude\\3D-Model-Workflow\\output\\1527_wieland\\electrical_fixtures\\RG-C811A__240438544629636\\source\\textures\\Black.png",
+    "Steel": "E:\\Claude\\3D-Model-Workflow\\output\\1527_wieland\\electrical_fixtures\\RG-C811A__240438544629636\\source\\textures\\Steel.png",
+    "White": "E:\\Claude\\3D-Model-Workflow\\output\\1527_wieland\\electrical_fixtures\\RG-C811A__240438544629636\\source\\textures\\White.png"
+  },
+  "actual_dimensions_in": [
+    15.500000238418579,
+    13.000000476837158,
+    8.375
+  ],
+  "measured_saved_bounds_in": [
+    -6.500000238418579,
+    -6.500000238418579,
+    -7.5,
+    9.0,
+    6.500000238418579,
+    0.875
+  ],
+  "component_checks": [
+    {
+      "pass": true,
+      "element_ids": [
+        "3214",
+        "3215",
+        "3216",
+        "3217",
+        "3218"
+      ],
+      "measured_dimensions_in": [
+        10.250000238418579,
+        10.250000238418579,
+        7.5
+      ],
+      "expected_dimensions_in": [
+        10.25,
+        10.25,
+        7.5
+      ],
+      "label": "Main housing",
+      "source": "https://ftp.panasonic.com/ventilationfan/installation/rg-c811a_rg-c811ha_eng.pdf page 4",
+      "error_mm": [
+        6.055831909179687e-06,
+        6.055831909179687e-06,
+        0.0
+      ]
+    },
+    {
+      "pass": true,
+      "element_ids": [
+        "3219",
+        "3220"
+      ],
+      "measured_dimensions_in": [
+        13.000000476837158,
+        13.000000476837158,
+        0.875
+      ],
+      "expected_dimensions_in": [
+        13,
+        13,
+        0.875
+      ],
+      "label": "Grille",
+      "source": "https://ftp.panasonic.com/ventilationfan/installation/rg-c811a_rg-c811ha_eng.pdf page 4",
+      "error_mm": [
+        1.2111663818359374e-05,
+        1.2111663818359374e-05,
+        0.0
+      ]
+    }
+  ],
+  "measured_saved_dimensions_in": [
+    15.500000238418579,
+    13.000000476837158,
+    8.375
+  ],
+  "saved_material_bitmaps": {
+    "Black": {
+      "path": "E:\\Claude\\3D-Model-Workflow\\output\\1527_wieland\\electrical_fixtures\\RG-C811A__240438544629636\\source\\textures\\Black.png",
+      "exists": true
+    },
+    "Steel": {
+      "path": "E:\\Claude\\3D-Model-Workflow\\output\\1527_wieland\\electrical_fixtures\\RG-C811A__240438544629636\\source\\textures\\Steel.png",
+      "exists": true
+    },
+    "White": {
+      "path": "E:\\Claude\\3D-Model-Workflow\\output\\1527_wieland\\electrical_fixtures\\RG-C811A__240438544629636\\source\\textures\\White.png",
+      "exists": true
+    }
+  },
+  "stage": "complete",
+  "started_utc": "2026-10-02T14:46:58.516000Z",
+  "evidence_files": [
+    "Panasonic_WhisperChoice_RG_C811A_R2025 - 3D View - Front.png",
+    "Panasonic_WhisperChoice_RG_C811A_R2025 - 3D View - Material.png",
+    "Panasonic_WhisperChoice_RG_C811A_R2025 - 3D View - Oblique.png",
+    "Panasonic_WhisperChoice_RG_C811A_R2025 - 3D View - Side.png",
+    "Panasonic_WhisperChoice_RG_C811A_R2025_Hosted - 3D View - Hosted.png",
+    "Panasonic_WhisperChoice_RG_C811A_R2025_Isolated - 3D View - Native Front.png",
+    "Panasonic_WhisperChoice_RG_C811A_R2025_Isolated - 3D View - Native Material.png",
+    "Panasonic_WhisperChoice_RG_C811A_R2025_Isolated - 3D View - Native Oblique.png",
+    "Panasonic_WhisperChoice_RG_C811A_R2025_Isolated - 3D View - Native Side.png"
+  ],
+  "gates": {
+    "cct": true,
+    "saved_dimensions_within_1mm": true,
+    "warnings": true,
+    "reopened": true,
+    "materials": true,
+    "actual_face_host": true,
+    "views": true,
+    "saved_components_within_1mm": true,
+    "saved_bitmaps_resolve": true,
+    "dimensions": true,
+    "category": true,
+    "orientation": true
+  },
+  "project_warnings": [],
+  "reopened": true,
+  "display_bounds_in": [
+    -6.5,
+    -6.5,
+    -7.5,
+    9.0,
+    6.5,
+    0.875
+  ],
+  "template_form_ids": [
+    "1537"
+  ],
+  "expected_dimensions_in": [
+    15.5,
+    13,
+    8.375
+  ],
+  "cct_k": null,
+  "rfa_search": "Public primary product resources and the retained exact product page were inspected; no direct, exact native RFA was available in those resources. This does not assert that no RFA exists elsewhere.",
+  "bounds_method": "Fine native face meshes plus 128-sample analytic edges",
+  "placement": "WorkPlaneBased",
+  "catalog_key": "RG-C811A",
+  "saved_file_reopened_for_measurement": true,
+  "inferences": "Manufacturer manual page 4: 13-inch grille, 10.25-inch housing plan, 7.5-inch housing height, 3.875-inch adapter extension and 0.875-inch grille projection. Component checks distinguish these from the derived combined envelope. ASSUMPTION: hole pitch, bezel section, internal impeller and junction box detail; perforations are real native holes. Adjustable joist bracket, wiring and duct connector engineering are excluded. Mechanical Equipment face-based visualization family.",
+  "reopened_warnings": [],
+  "manufacturer": "Panasonic",
+  "parameter_scope": "Nominal product dimensions are fixed formulas. Editable material parameters were flexed on hosted native geometry and restored.",
+  "parts": [
+    {
+      "volume_ft3": 0.006080005787037015,
+      "name": "Galvanized fan housing",
+      "id": "3214"
+    },
+    {
+      "volume_ft3": 0.004448784722222206,
+      "name": "Galvanized fan housing",
+      "id": "3215"
+    },
+    {
+      "volume_ft3": 0.004448784722222206,
+      "name": "Galvanized fan housing",
+      "id": "3216"
+    },
+    {
+      "volume_ft3": 0.0044487847222222055,
+      "name": "Galvanized fan housing",
+      "id": "3217"
+    },
+    {
+      "volume_ft3": 0.0044487847222222055,
+      "name": "Galvanized fan housing",
+      "id": "3218"
+    },
+    {
+      "volume_ft3": 0.030807283800994067,
+      "name": "Rounded white perimeter bezel",
+      "id": "3219"
+    },
+    {
+      "volume_ft3": 0.004097206816242035,
+      "name": "Perforated removable grille - 1849 actual holes",
+      "id": "3220"
+    },
+    {
+      "volume_ft3": 0.05410759862984043,
+      "name": "Dark internal centrifugal impeller",
+      "id": "3221"
+    },
+    {
+      "volume_ft3": 0.010356056236542618,
+      "name": "Electronics enclosure",
+      "id": "3222"
+    },
+    {
+      "volume_ft3": 0.006346303516061365,
+      "name": "Stepped 4/6-inch duct adapter",
+      "id": "3223"
+    },
+    {
+      "volume_ft3": 0.013649505132216674,
+      "name": "Electrical junction box",
+      "id": "3224"
+    }
+  ],
+  "technical_pass": true,
+  "dimensional_error_mm": [
+    6.055831909179687e-06,
+    1.2111663818359374e-05,
+    0.0
+  ],
+  "bounds_in": [
+    -6.500000238418579,
+    -6.500000238418579,
+    -7.5,
+    9.0,
+    6.500000238418579,
+    0.875
+  ],
+  "source_url": "https://ftp.panasonic.com/ventilationfan/installation/rg-c811a_rg-c811ha_eng.pdf",
+  "category": "Mechanical Equipment",
+  "host": {
+    "instance_host_id": "3708",
+    "normal_dot": 1.0,
+    "host_kind": "ceiling",
+    "hostface_present": true,
+    "host_id": "3708"
+  },
+  "material_tests": {
+    "Black": {
+      "substitution_reaches_faces": true,
+      "face_count": 3806,
+      "writable": true
+    },
+    "Steel": {
+      "substitution_reaches_faces": true,
+      "face_count": 3806,
+      "writable": true
+    },
+    "White": {
+      "substitution_reaches_faces": true,
+      "face_count": 3806,
+      "writable": true
+    }
+  },
+  "model": "RG-C811A",
+  "finished_utc": "2026-10-02T14:47:36.181000Z",
+  "family_warnings": [],
+  "rfa_path": "E:\\Claude\\3D-Model-Workflow\\output\\1527_wieland\\electrical_fixtures\\RG-C811A__7595241869279108\\Panasonic_WhisperChoice_RG_C811A_R2025.rfa",
+  "appearance_defaults": {
+    "Black": {
+      "cct_k": null,
+      "luminance": 0,
+      "gloss": 0.24,
+      "rgb": [
+        24,
+        24,
+        24
+      ],
+      "transparency": 0
+    },
+    "Steel": {
+      "cct_k": null,
+      "luminance": 0,
+      "gloss": 0.33,
+      "rgb": [
+        160,
+        164,
+        165
+      ],
+      "transparency": 0
+    },
+    "White": {
+      "cct_k": null,
+      "luminance": 0,
+      "gloss": 0.2,
+      "rgb": [
+        244,
+        244,
+        239
+      ],
+      "transparency": 0
+    }
+  },
+  "row_id": "7595241869279108",
+  "canonical_rfa_path": "E:\\Claude\\3D-Model-Workflow\\output\\1527_wieland\\electrical_fixtures\\RG-C811A__240438544629636\\Panasonic_WhisperChoice_RG_C811A_R2025.rfa",
+  "canonical_validation_path": "E:\\Claude\\3D-Model-Workflow\\output\\1527_wieland\\electrical_fixtures\\RG-C811A__240438544629636\\validation.json",
+  "validation_basis": "Measurements and native gates inherited only after byte-identical RFA hash verification; not a separately rerun native build.",
+  "canonical_rfa_sha256": "964037726335371d1af9c007f723ec7ac951ce97af68fd526a22fa36ee97df87",
+  "row_rfa_sha256": "964037726335371d1af9c007f723ec7ac951ce97af68fd526a22fa36ee97df87"
+}

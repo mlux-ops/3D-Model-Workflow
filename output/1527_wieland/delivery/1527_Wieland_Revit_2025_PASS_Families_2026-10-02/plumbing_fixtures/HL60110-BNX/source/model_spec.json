@@ -1,0 +1,183 @@
+{
+  "key": "HL60110-BNX",
+  "model": "HL60110-BNX",
+  "manufacturer": "Brizo",
+  "type_name": "HL60110-BNX - Brilliance Black Onyx -  Black",
+  "basename": "Brizo_HL60110-BNX_R2025",
+  "name": "Roccesco TempAssure lever handle kit",
+  "host": "wall",
+  "configured_dimensions_in": [
+    3.5,
+    2.5,
+    4.125
+  ],
+  "materials": {
+    "Finish": {
+      "rgb": [
+        58,
+        60,
+        62
+      ],
+      "gloss": 0.92,
+      "reflectivity": 0.72,
+      "class": "Metal"
+    },
+    "Detail": {
+      "rgb": [
+        24,
+        25,
+        26
+      ],
+      "gloss": 0.17,
+      "reflectivity": 0.04,
+      "class": "Plastic"
+    },
+    "Graphite": {
+      "rgb": [
+        64,
+        67,
+        69
+      ],
+      "gloss": 0.36,
+      "reflectivity": 0.16,
+      "class": "Glass"
+    },
+    "Ceramic": {
+      "rgb": [
+        245,
+        245,
+        241
+      ],
+      "gloss": 0.86,
+      "reflectivity": 0.22,
+      "class": "Ceramic"
+    },
+    "Brass": {
+      "rgb": [
+        160,
+        124,
+        64
+      ],
+      "gloss": 0.4,
+      "reflectivity": 0.38,
+      "class": "Metal"
+    },
+    "Green": {
+      "rgb": [
+        31,
+        113,
+        66
+      ],
+      "gloss": 0.18,
+      "reflectivity": 0.05,
+      "class": "Plastic"
+    },
+    "Gray": {
+      "rgb": [
+        131,
+        132,
+        130
+      ],
+      "gloss": 0.32,
+      "reflectivity": 0.12,
+      "class": "Plastic"
+    }
+  },
+  "geometry": [
+    {
+      "name": "Handle sleeve",
+      "kind": "cylinder",
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "radius": 1.25,
+      "a": 0,
+      "b": 3.375,
+      "material": "Finish"
+    },
+    {
+      "name": "Control lever neck",
+      "kind": "box",
+      "bounds": [
+        -0.45,
+        -0.45,
+        3.325,
+        0.45,
+        0.45,
+        3.975
+      ],
+      "radius": 0.12,
+      "material": "Finish"
+    },
+    {
+      "name": "Volume lever paddle",
+      "kind": "box",
+      "bounds": [
+        -2.25,
+        -0.35,
+        3.805,
+        1.25,
+        0.35,
+        4.125
+      ],
+      "radius": 0.15,
+      "material": "Finish"
+    },
+    {
+      "name": "Temperature lever",
+      "kind": "box",
+      "bounds": [
+        -2.15,
+        -0.29,
+        2.87,
+        1.15,
+        0.29,
+        3.12
+      ],
+      "radius": 0.1,
+      "material": "Finish"
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://media.brizo.com/SpecSheet/BSP-B-T600110-LHP%20Rev%20A.pdf",
+      "document": "Brizo BSP-B-T600110-LHP Rev A",
+      "page": 1,
+      "visual_review_method": "Manufacturer web PDF screenshot"
+    }
+  ],
+  "dimension_authority": [
+    "Lever width 3.5 in and total handle projection 4.125 in: exact manufacturer handle detail."
+  ],
+  "limitations": [
+    "Sleeve diameter, control ring separation and relative temperature-lever depth are drawing-derived.",
+    "This is the handle kit only; separate trim and rough families are not incorporated.",
+    "Independent visualization reconstruction with fixed product dimensions and editable native materials.",
+    "Small fillets, seams, nozzle details and optical material response are inferred where the manufacturer does not dimension them.",
+    "No internal hydraulic performance, MEP connectors, fabrication tolerances or procurement substitutions are implied."
+  ],
+  "anchors": [
+    {
+      "label": "Handle projection",
+      "parts": [
+        "Handle sleeve",
+        "Control lever neck",
+        "Volume lever paddle"
+      ],
+      "axis": 2,
+      "nominal_in": 4.125
+    }
+  ],
+  "all_overall_dimensions_authoritative": false,
+  "rfa_search": {
+    "result": "No acceptable no-account RFA recovered",
+    "evidence": "_research/HL60110-BNX/sources.json"
+  }
+}

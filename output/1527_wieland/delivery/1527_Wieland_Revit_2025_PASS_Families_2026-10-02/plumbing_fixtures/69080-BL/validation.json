@@ -1,0 +1,197 @@
+{
+  "manufacturer": "Brizo", 
+  "visual_review": "PENDING_NATIVE_IMAGE_REVIEW", 
+  "gates": {
+    "dimensions": true, 
+    "category": true, 
+    "warnings": true, 
+    "reopened": true, 
+    "materials": true, 
+    "orientation": true, 
+    "cct": true, 
+    "reopen_geometry_equal": true, 
+    "diffuse_bitmaps": true, 
+    "actual_face_host": true, 
+    "views": true
+  }, 
+  "expected_dimensions_in": [
+    1.75, 
+    1.75, 
+    0.3125
+  ], 
+  "reopened_bounds_in": [
+    -0.875, 
+    -0.875, 
+    -5.0654262490341746e-25, 
+    0.875, 
+    0.875, 
+    0.3125
+  ], 
+  "finished_utc": "2026-10-02T15:27:30.956000Z", 
+  "source_references": [
+    {
+      "document": "Brizo BSP-A-69080 Rev D", 
+      "page": 1, 
+      "visual_review_method": "Manufacturer web PDF screenshot", 
+      "url": "https://media.brizo.com/SpecSheet/BSP-A-69080%20Rev%20D.pdf"
+    }
+  ], 
+  "rfa_search": {
+    "result": "No acceptable no-account RFA recovered", 
+    "evidence": "_research/69080-BL/sources.json"
+  }, 
+  "source_spec_sha256": "a843efa09ab82f2b5ceddf9977f916bf4237b89a4e560edd0324fb955bdb4046", 
+  "actual_dimensions_in": [
+    1.75, 
+    1.75, 
+    0.3125
+  ], 
+  "evidence_files": [
+    "Brizo_69080-BL_R2025_Isolated - 3D View - Native Front.png", 
+    "Brizo_69080-BL_R2025_Isolated - 3D View - Native Material.png", 
+    "Brizo_69080-BL_R2025_Isolated - 3D View - Native Oblique.png", 
+    "Brizo_69080-BL_R2025_Isolated - 3D View - Native Side.png"
+  ], 
+  "bounds_method": "Fine native face meshes plus 128-sample analytic edges", 
+  "acceptance": "NATIVE_GATES_PASSED_PENDING_VISUAL_REVIEW", 
+  "bounds_in": [
+    -0.875, 
+    -0.875, 
+    -5.0654262490341746e-25, 
+    0.875, 
+    0.875, 
+    0.3125
+  ], 
+  "material_tests": {
+    "Finish": {
+      "writable": true, 
+      "face_count": 18, 
+      "substitution_reaches_faces": true
+    }, 
+    "Detail": {
+      "writable": true, 
+      "face_count": 18, 
+      "substitution_reaches_faces": true
+    }
+  }, 
+  "appearance_bindings": {
+    "Finish": {
+      "material_id": "3210", 
+      "path": "E:\\Claude\\3D-Model-Workflow\\output\\1527_wieland\\plumbing_fixtures\\69080-BL\\textures\\Finish.png", 
+      "exists": true
+    }, 
+    "Detail": {
+      "material_id": "3207", 
+      "path": "E:\\Claude\\3D-Model-Workflow\\output\\1527_wieland\\plumbing_fixtures\\69080-BL\\textures\\Detail.png", 
+      "exists": true
+    }
+  }, 
+  "all_overall_dimensions_authoritative": true, 
+  "category": "Plumbing Fixtures", 
+  "material_ids": {
+    "Finish": "3210", 
+    "Detail": "3207"
+  }, 
+  "source_dimensions": [
+    "Trim diameter 1.75 in and visible height 0.3125 in from manufacturer diagram."
+  ], 
+  "host": {
+    "normal_dot": 1.0, 
+    "host_kind": "floor", 
+    "instance_host_id": "3696", 
+    "hostface_present": true, 
+    "host_id": "3696"
+  }, 
+  "parts": [
+    {
+      "name": "Escutcheon", 
+      "id": "3212", 
+      "volume_ft3": 0.00017398447105286058
+    }, 
+    {
+      "name": "Inset seam", 
+      "id": "3213", 
+      "volume_ft3": 3.362499162481592e-05
+    }, 
+    {
+      "name": "Push button", 
+      "id": "3214", 
+      "volume_ft3": 0.00012481432911122767
+    }
+  ], 
+  "reopen_geometry_equal": true, 
+  "family_warnings": [], 
+  "source_spec_path": "E:\\Claude\\3D-Model-Workflow\\output\\1527_wieland\\plumbing_fixtures\\69080-BL\\source\\model_spec.json", 
+  "inferences": "Above-counter visualization; remote dual-outlet power module, air tube and threaded shank are not modeled. | Button seam and moving button diameter are drawing-derived. | Independent visualization reconstruction with fixed product dimensions and editable native materials. | Small fillets, seams, nozzle details and optical material response are inferred where the manufacturer does not dimension them. | No internal hydraulic performance, MEP connectors, fabrication tolerances or procurement substitutions are implied.", 
+  "native_path_checks": [], 
+  "revit_build": "25.4.50.35", 
+  "rfa_path": "E:\\Claude\\3D-Model-Workflow\\output\\1527_wieland\\plumbing_fixtures\\69080-BL\\Brizo_69080-BL_R2025.rfa", 
+  "stage": "complete", 
+  "dimension_anchor_checks": [
+    {
+      "pass": true, 
+      "nominal_mm": 7.9375, 
+      "deviation_mm": 0.0, 
+      "label": "Visible height", 
+      "actual_mm": 7.9375
+    }
+  ], 
+  "placement": "WorkPlaneBased", 
+  "reopened_warnings": [], 
+  "model": "69080-BL", 
+  "project_warnings": [], 
+  "limitations": [
+    "Above-counter visualization; remote dual-outlet power module, air tube and threaded shank are not modeled.", 
+    "Button seam and moving button diameter are drawing-derived.", 
+    "Independent visualization reconstruction with fixed product dimensions and editable native materials.", 
+    "Small fillets, seams, nozzle details and optical material response are inferred where the manufacturer does not dimension them.", 
+    "No internal hydraulic performance, MEP connectors, fabrication tolerances or procurement substitutions are implied."
+  ], 
+  "appearance_defaults": {
+    "Finish": {
+      "transparency": 0, 
+      "cct_k": null, 
+      "luminance": 0, 
+      "rgb": [
+        20, 
+        21, 
+        22
+      ], 
+      "gloss": 0.17000000000000001
+    }, 
+    "Detail": {
+      "transparency": 0, 
+      "cct_k": null, 
+      "luminance": 0, 
+      "rgb": [
+        24, 
+        25, 
+        26
+      ], 
+      "gloss": 0.17000000000000001
+    }
+  }, 
+  "reopened": true, 
+  "cct_k": null, 
+  "type": "69080-BL - Matte Black -  Black", 
+  "started_utc": "2026-10-02T15:27:16.035000Z", 
+  "native_gates_pass": true, 
+  "actual_dimensions_after_reopen_mm": [
+    44.449999999999996, 
+    44.449999999999996, 
+    7.9375
+  ], 
+  "display_bounds_in": [
+    -0.875, 
+    -0.875, 
+    0.0, 
+    0.875, 
+    0.875, 
+    0.3125
+  ], 
+  "technical_pass": true, 
+  "revit_version": "2025", 
+  "template_form_ids": [
+    "1537"
+  ]
+}

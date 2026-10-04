@@ -1,0 +1,185 @@
+{
+  "key": "899110-12-BNX",
+  "model": "899110-12-BNX",
+  "manufacturer": "Brizo",
+  "type_name": "899110-12-BNX - Brilliance Black Onyx -  Black",
+  "basename": "Brizo_899110-12-BNX_R2025",
+  "name": "Roccesco 12-inch ceiling arm with flange",
+  "host": "ceiling",
+  "configured_dimensions_in": [
+    5,
+    5,
+    14
+  ],
+  "materials": {
+    "Finish": {
+      "rgb": [
+        58,
+        60,
+        62
+      ],
+      "gloss": 0.92,
+      "reflectivity": 0.72,
+      "class": "Metal"
+    },
+    "Detail": {
+      "rgb": [
+        24,
+        25,
+        26
+      ],
+      "gloss": 0.17,
+      "reflectivity": 0.04,
+      "class": "Plastic"
+    },
+    "Graphite": {
+      "rgb": [
+        64,
+        67,
+        69
+      ],
+      "gloss": 0.36,
+      "reflectivity": 0.16,
+      "class": "Glass"
+    },
+    "Ceramic": {
+      "rgb": [
+        245,
+        245,
+        241
+      ],
+      "gloss": 0.86,
+      "reflectivity": 0.22,
+      "class": "Ceramic"
+    },
+    "Brass": {
+      "rgb": [
+        160,
+        124,
+        64
+      ],
+      "gloss": 0.4,
+      "reflectivity": 0.38,
+      "class": "Metal"
+    },
+    "Green": {
+      "rgb": [
+        31,
+        113,
+        66
+      ],
+      "gloss": 0.18,
+      "reflectivity": 0.05,
+      "class": "Plastic"
+    },
+    "Gray": {
+      "rgb": [
+        131,
+        132,
+        130
+      ],
+      "gloss": 0.32,
+      "reflectivity": 0.12,
+      "class": "Plastic"
+    }
+  },
+  "geometry": [
+    {
+      "name": "Canopy",
+      "kind": "cylinder",
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "radius": 2.5,
+      "a": 0,
+      "b": 1,
+      "material": "Finish"
+    },
+    {
+      "name": "Suspension arm",
+      "kind": "cylinder",
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "radius": 0.4375,
+      "a": 1,
+      "b": 13.5,
+      "material": "Finish"
+    },
+    {
+      "name": "Threaded end",
+      "kind": "cylinder",
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "radius": 0.25,
+      "a": 13.5,
+      "b": 14,
+      "material": "Finish"
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://assets.specbooks.cloud/brand/brizo/spec/22628776/document/spec-sb-eli3kf.pdf",
+      "document": "Brizo BSP-B-813110 Rev A",
+      "page": 1,
+      "local_image": "_research/813110-BNX-2.5/downloads/spec-sb-eli3kf_pages/page_01.png"
+    }
+  ],
+  "dimension_authority": [
+    "Canopy diameter 5 in and visible projection 14 in: manufacturer drawing; marketed arm length is 12 in."
+  ],
+  "limitations": [
+    "Concealed connection above the finished ceiling plane is omitted.",
+    "Arm diameter and canopy thickness are drawing-derived.",
+    "Independent visualization reconstruction with fixed product dimensions and editable native materials.",
+    "Small fillets, seams, nozzle details and optical material response are inferred where the manufacturer does not dimension them.",
+    "No internal hydraulic performance, MEP connectors, fabrication tolerances or procurement substitutions are implied."
+  ],
+  "anchors": [
+    {
+      "label": "Canopy diameter",
+      "parts": [
+        "Canopy"
+      ],
+      "axis": 0,
+      "nominal_in": 5
+    },
+    {
+      "label": "Projection",
+      "parts": [
+        "Canopy",
+        "Suspension arm",
+        "Threaded end"
+      ],
+      "axis": 2,
+      "nominal_in": 14
+    }
+  ],
+  "all_overall_dimensions_authoritative": true,
+  "rfa_search": {
+    "result": "No acceptable no-account RFA recovered",
+    "evidence": "_research/899110-12-BNX/sources.json"
+  }
+}

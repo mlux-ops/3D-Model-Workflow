@@ -1,0 +1,507 @@
+{
+  "rfa_path": "E:\\Claude\\3D-Model-Workflow\\output\\1527_wieland\\plumbing_fixtures\\873111-BNX-2.5\\Brizo_873111-BNX-2.5_R2025.rfa", 
+  "limitations": [
+    "ASSUMPTION: neutral 45-degree cylinder angle and 1.5-inch concealed stub; final finished-wall projection therefore depends on mounting depth.", 
+    "Jointed arm plate, nozzle distribution and small pivots are drawing-derived.", 
+    "Printed standard-specification body text names 873110, while this sheet title and model field explicitly identify 873111; the 873111 drawing is used.", 
+    "Independent visualization reconstruction with fixed product dimensions and editable native materials.", 
+    "Small fillets, seams, nozzle details and optical material response are inferred where the manufacturer does not dimension them.", 
+    "No internal hydraulic performance, MEP connectors, fabrication tolerances or procurement substitutions are implied."
+  ], 
+  "material_ids": {
+    "Brass": "3207", 
+    "Finish": "3213", 
+    "Gray": "3216", 
+    "Detail": "3210"
+  }, 
+  "started_utc": "2026-10-02T16:07:25.853000Z", 
+  "family_warnings": [], 
+  "material_tests": {
+    "Brass": {
+      "substitution_reaches_faces": true, 
+      "writable": true, 
+      "face_count": 336
+    }, 
+    "Finish": {
+      "substitution_reaches_faces": true, 
+      "writable": true, 
+      "face_count": 336
+    }, 
+    "Gray": {
+      "substitution_reaches_faces": true, 
+      "writable": true, 
+      "face_count": 336
+    }, 
+    "Detail": {
+      "substitution_reaches_faces": true, 
+      "writable": true, 
+      "face_count": 336
+    }
+  }, 
+  "actual_dimensions_in": [
+    4.7500001192092896, 
+    9.5543788075447083, 
+    16.000000476837158
+  ], 
+  "all_overall_dimensions_authoritative": false, 
+  "actual_dimensions_after_reopen_mm": [
+    120.65000302791594, 
+    242.68122171163557, 
+    406.40001211166378
+  ], 
+  "project_warnings": [], 
+  "native_path_checks": [], 
+  "stage": "complete", 
+  "bounds_in": [
+    -2.3750000596046448, 
+    -2.3750000596046448, 
+    -1.5, 
+    2.3750000596046448, 
+    7.1793787479400635, 
+    14.500000476837158
+  ], 
+  "reopened": true, 
+  "native_gates_pass": true, 
+  "placement": "WorkPlaneBased", 
+  "display_bounds_in": [
+    -2.375, 
+    -2.375, 
+    -1.5, 
+    2.375, 
+    7.1793786053180506, 
+    14.500000000000002
+  ], 
+  "rfa_search": {
+    "evidence": "_research/873111-BNX-2.5/sources.json", 
+    "result": "No acceptable no-account RFA recovered"
+  }, 
+  "reopened_bounds_in": [
+    -2.3750000596046448, 
+    -2.3750000596046448, 
+    -1.5, 
+    2.3750000596046448, 
+    7.1793787479400635, 
+    14.500000476837158
+  ], 
+  "appearance_bindings": {
+    "Brass": {
+      "exists": true, 
+      "material_id": "3207", 
+      "path": "E:\\Claude\\3D-Model-Workflow\\output\\1527_wieland\\plumbing_fixtures\\873111-BNX-2.5\\textures\\Brass.png"
+    }, 
+    "Finish": {
+      "exists": true, 
+      "material_id": "3213", 
+      "path": "E:\\Claude\\3D-Model-Workflow\\output\\1527_wieland\\plumbing_fixtures\\873111-BNX-2.5\\textures\\Finish.png"
+    }, 
+    "Gray": {
+      "exists": true, 
+      "material_id": "3216", 
+      "path": "E:\\Claude\\3D-Model-Workflow\\output\\1527_wieland\\plumbing_fixtures\\873111-BNX-2.5\\textures\\Gray.png"
+    }, 
+    "Detail": {
+      "exists": true, 
+      "material_id": "3210", 
+      "path": "E:\\Claude\\3D-Model-Workflow\\output\\1527_wieland\\plumbing_fixtures\\873111-BNX-2.5\\textures\\Detail.png"
+    }
+  }, 
+  "acceptance": "NATIVE_GATES_PASSED_PENDING_VISUAL_REVIEW", 
+  "source_dimensions": [
+    "Shower cylinder diameter 4.75 in and axial length 7.75 in; wall flange diameter 4.75 in; full shown thread-to-head projection 16 in."
+  ], 
+  "reopen_geometry_equal": true, 
+  "host": {
+    "instance_host_id": "3755", 
+    "hostface_present": true, 
+    "host_id": "3755", 
+    "normal_dot": 1.0, 
+    "host_kind": "wall"
+  }, 
+  "bounds_method": "Fine native face meshes plus 128-sample analytic edges", 
+  "dimension_anchor_checks": [
+    {
+      "nominal_mm": 120.64999999999999, 
+      "label": "Head diameter", 
+      "actual_mm": 120.65000302791594, 
+      "deviation_mm": 3.0279159545898436e-06, 
+      "pass": true
+    }
+  ], 
+  "cct_k": null, 
+  "source_spec_path": "E:\\Claude\\3D-Model-Workflow\\output\\1527_wieland\\plumbing_fixtures\\873111-BNX-2.5\\source\\model_spec.json", 
+  "technical_pass": true, 
+  "parts": [
+    {
+      "name": "Round wall flange", 
+      "id": "3218", 
+      "volume_ft3": 0.0041017726726584602
+    }, 
+    {
+      "name": "Threaded wall connection", 
+      "id": "3219", 
+      "volume_ft3": 0.00040024211484209946
+    }, 
+    {
+      "name": "Wall pivot standoff", 
+      "id": "3220", 
+      "volume_ft3": 0.0015589008606336308
+    }, 
+    {
+      "name": "Wall-side hinge", 
+      "id": "3221", 
+      "volume_ft3": 0.0020182198642131831
+    }, 
+    {
+      "name": "Flattened jointed arm", 
+      "id": "3222", 
+      "volume_ft3": 0.0032272327105910279
+    }, 
+    {
+      "name": "Head-side hinge", 
+      "id": "3223", 
+      "volume_ft3": 0.0020182198642131827
+    }, 
+    {
+      "name": "Cylindrical shower head", 
+      "id": "3224", 
+      "volume_ft3": 0.079471845532757657
+    }, 
+    {
+      "name": "Recessed spray disk", 
+      "id": "3225", 
+      "volume_ft3": 0.00035195709226666617
+    }, 
+    {
+      "name": "Spray nozzle 0.4 0", 
+      "id": "3226", 
+      "volume_ft3": 9.3085311035030912e-07
+    }, 
+    {
+      "name": "Spray nozzle 0.4 1", 
+      "id": "3227", 
+      "volume_ft3": 9.3085311035030912e-07
+    }, 
+    {
+      "name": "Spray nozzle 0.4 2", 
+      "id": "3228", 
+      "volume_ft3": 9.308531103503124e-07
+    }, 
+    {
+      "name": "Spray nozzle 0.4 3", 
+      "id": "3229", 
+      "volume_ft3": 9.3085311035030912e-07
+    }, 
+    {
+      "name": "Spray nozzle 0.4 4", 
+      "id": "3230", 
+      "volume_ft3": 9.3085311035030912e-07
+    }, 
+    {
+      "name": "Spray nozzle 0.4 5", 
+      "id": "3231", 
+      "volume_ft3": 9.3085311035030912e-07
+    }, 
+    {
+      "name": "Spray nozzle 0.4 6", 
+      "id": "3232", 
+      "volume_ft3": 9.3085311035031229e-07
+    }, 
+    {
+      "name": "Spray nozzle 0.4 7", 
+      "id": "3233", 
+      "volume_ft3": 9.3085311035030933e-07
+    }, 
+    {
+      "name": "Spray nozzle 1.0 0", 
+      "id": "3234", 
+      "volume_ft3": 9.3085311035030912e-07
+    }, 
+    {
+      "name": "Spray nozzle 1.0 1", 
+      "id": "3235", 
+      "volume_ft3": 9.3085311035031229e-07
+    }, 
+    {
+      "name": "Spray nozzle 1.0 2", 
+      "id": "3236", 
+      "volume_ft3": 9.308531103503125e-07
+    }, 
+    {
+      "name": "Spray nozzle 1.0 3", 
+      "id": "3237", 
+      "volume_ft3": 9.3085311035030965e-07
+    }, 
+    {
+      "name": "Spray nozzle 1.0 4", 
+      "id": "3238", 
+      "volume_ft3": 9.3085311035031219e-07
+    }, 
+    {
+      "name": "Spray nozzle 1.0 5", 
+      "id": "3239", 
+      "volume_ft3": 9.3085311035030954e-07
+    }, 
+    {
+      "name": "Spray nozzle 1.0 6", 
+      "id": "3240", 
+      "volume_ft3": 9.308531103503125e-07
+    }, 
+    {
+      "name": "Spray nozzle 1.0 7", 
+      "id": "3241", 
+      "volume_ft3": 9.3085311035031229e-07
+    }, 
+    {
+      "name": "Spray nozzle 1.0 8", 
+      "id": "3242", 
+      "volume_ft3": 9.3085311035030912e-07
+    }, 
+    {
+      "name": "Spray nozzle 1.0 9", 
+      "id": "3243", 
+      "volume_ft3": 9.3085311035031229e-07
+    }, 
+    {
+      "name": "Spray nozzle 1.0 10", 
+      "id": "3244", 
+      "volume_ft3": 9.3085311035031272e-07
+    }, 
+    {
+      "name": "Spray nozzle 1.0 11", 
+      "id": "3245", 
+      "volume_ft3": 9.3085311035030975e-07
+    }, 
+    {
+      "name": "Spray nozzle 1.0 12", 
+      "id": "3246", 
+      "volume_ft3": 9.3085311035031272e-07
+    }, 
+    {
+      "name": "Spray nozzle 1.0 13", 
+      "id": "3247", 
+      "volume_ft3": 9.3085311035031007e-07
+    }, 
+    {
+      "name": "Spray nozzle 1.0 14", 
+      "id": "3248", 
+      "volume_ft3": 9.3085311035031272e-07
+    }, 
+    {
+      "name": "Spray nozzle 1.0 15", 
+      "id": "3249", 
+      "volume_ft3": 9.3085311035031229e-07
+    }, 
+    {
+      "name": "Spray nozzle 1.7 0", 
+      "id": "3250", 
+      "volume_ft3": 9.3085311035030922e-07
+    }, 
+    {
+      "name": "Spray nozzle 1.7 1", 
+      "id": "3251", 
+      "volume_ft3": 9.308531103503125e-07
+    }, 
+    {
+      "name": "Spray nozzle 1.7 2", 
+      "id": "3252", 
+      "volume_ft3": 9.3085311035031282e-07
+    }, 
+    {
+      "name": "Spray nozzle 1.7 3", 
+      "id": "3253", 
+      "volume_ft3": 9.3085311035031208e-07
+    }, 
+    {
+      "name": "Spray nozzle 1.7 4", 
+      "id": "3254", 
+      "volume_ft3": 9.3085311035031197e-07
+    }, 
+    {
+      "name": "Spray nozzle 1.7 5", 
+      "id": "3255", 
+      "volume_ft3": 9.3085311035031208e-07
+    }, 
+    {
+      "name": "Spray nozzle 1.7 6", 
+      "id": "3256", 
+      "volume_ft3": 9.3085311035031187e-07
+    }, 
+    {
+      "name": "Spray nozzle 1.7 7", 
+      "id": "3257", 
+      "volume_ft3": 9.3085311035031219e-07
+    }, 
+    {
+      "name": "Spray nozzle 1.7 8", 
+      "id": "3258", 
+      "volume_ft3": 9.3085311035031197e-07
+    }, 
+    {
+      "name": "Spray nozzle 1.7 9", 
+      "id": "3259", 
+      "volume_ft3": 9.3085311035031208e-07
+    }, 
+    {
+      "name": "Spray nozzle 1.7 10", 
+      "id": "3260", 
+      "volume_ft3": 9.3085311035031282e-07
+    }, 
+    {
+      "name": "Spray nozzle 1.7 11", 
+      "id": "3261", 
+      "volume_ft3": 9.308531103503125e-07
+    }, 
+    {
+      "name": "Spray nozzle 1.7 12", 
+      "id": "3262", 
+      "volume_ft3": 9.3085311035030912e-07
+    }, 
+    {
+      "name": "Spray nozzle 1.7 13", 
+      "id": "3263", 
+      "volume_ft3": 9.308531103503124e-07
+    }, 
+    {
+      "name": "Spray nozzle 1.7 14", 
+      "id": "3264", 
+      "volume_ft3": 9.3085311035031272e-07
+    }, 
+    {
+      "name": "Spray nozzle 1.7 15", 
+      "id": "3265", 
+      "volume_ft3": 9.3085311035029916e-07
+    }, 
+    {
+      "name": "Spray nozzle 1.7 16", 
+      "id": "3266", 
+      "volume_ft3": 9.308531103502981e-07
+    }, 
+    {
+      "name": "Spray nozzle 1.7 17", 
+      "id": "3267", 
+      "volume_ft3": 9.3085311035029863e-07
+    }, 
+    {
+      "name": "Spray nozzle 1.7 18", 
+      "id": "3268", 
+      "volume_ft3": 9.308531103502998e-07
+    }, 
+    {
+      "name": "Spray nozzle 1.7 19", 
+      "id": "3269", 
+      "volume_ft3": 9.3085311035029832e-07
+    }, 
+    {
+      "name": "Spray nozzle 1.7 20", 
+      "id": "3270", 
+      "volume_ft3": 9.3085311035029853e-07
+    }, 
+    {
+      "name": "Spray nozzle 1.7 21", 
+      "id": "3271", 
+      "volume_ft3": 9.3085311035029916e-07
+    }, 
+    {
+      "name": "Spray nozzle 1.7 22", 
+      "id": "3272", 
+      "volume_ft3": 9.3085311035031272e-07
+    }, 
+    {
+      "name": "Spray nozzle 1.7 23", 
+      "id": "3273", 
+      "volume_ft3": 9.308531103503125e-07
+    }
+  ], 
+  "source_references": [
+    {
+      "url": "https://media.brizo.com/SpecSheet/BSP-B-873111%20Rev%20A.pdf", 
+      "visual_review_method": "Manufacturer web PDF screenshot", 
+      "document": "Brizo Roccesco jointed shower head BSP-B-873111 Rev A", 
+      "page": 1
+    }
+  ], 
+  "revit_version": "2025", 
+  "visual_review": "PENDING_NATIVE_IMAGE_REVIEW", 
+  "evidence_files": [
+    "Brizo_873111-BNX-2_5_R2025_Isolated - 3D View - Native Front.png", 
+    "Brizo_873111-BNX-2_5_R2025_Isolated - 3D View - Native Material.png", 
+    "Brizo_873111-BNX-2_5_R2025_Isolated - 3D View - Native Oblique.png", 
+    "Brizo_873111-BNX-2_5_R2025_Isolated - 3D View - Native Side.png"
+  ], 
+  "appearance_defaults": {
+    "Brass": {
+      "transparency": 0, 
+      "rgb": [
+        160, 
+        124, 
+        64
+      ], 
+      "luminance": 0, 
+      "gloss": 0.40000000000000002, 
+      "cct_k": null
+    }, 
+    "Finish": {
+      "transparency": 0, 
+      "rgb": [
+        58, 
+        60, 
+        62
+      ], 
+      "luminance": 0, 
+      "gloss": 0.92000000000000004, 
+      "cct_k": null
+    }, 
+    "Gray": {
+      "transparency": 0, 
+      "rgb": [
+        131, 
+        132, 
+        130
+      ], 
+      "luminance": 0, 
+      "gloss": 0.32000000000000001, 
+      "cct_k": null
+    }, 
+    "Detail": {
+      "transparency": 0, 
+      "rgb": [
+        24, 
+        25, 
+        26
+      ], 
+      "luminance": 0, 
+      "gloss": 0.17000000000000001, 
+      "cct_k": null
+    }
+  }, 
+  "gates": {
+    "views": true, 
+    "cct": true, 
+    "diffuse_bitmaps": true, 
+    "materials": true, 
+    "orientation": true, 
+    "reopened": true, 
+    "category": true, 
+    "actual_face_host": true, 
+    "reopen_geometry_equal": true, 
+    "warnings": true, 
+    "dimensions": true
+  }, 
+  "template_form_ids": [
+    "1537"
+  ], 
+  "expected_dimensions_in": [
+    4.75, 
+    9.5543786053180497, 
+    16
+  ], 
+  "revit_build": "25.4.50.35", 
+  "finished_utc": "2026-10-02T16:07:29.641000Z", 
+  "category": "Plumbing Fixtures", 
+  "reopened_warnings": [], 
+  "manufacturer": "Brizo", 
+  "source_spec_sha256": "aeb1a962050e7d2db91b2ebe96b5f37fe5a0d02fd2234991c820ddc00c784d1d", 
+  "model": "873111-BNX-2.5", 
+  "type": "873111-BNX-2.5 - Brilliance Black Onyx -  Black", 
+  "inferences": "ASSUMPTION: neutral 45-degree cylinder angle and 1.5-inch concealed stub; final finished-wall projection therefore depends on mounting depth. | Jointed arm plate, nozzle distribution and small pivots are drawing-derived. | Printed standard-specification body text names 873110, while this sheet title and model field explicitly identify 873111; the 873111 drawing is used. | Independent visualization reconstruction with fixed product dimensions and editable native materials. | Small fillets, seams, nozzle details and optical material response are inferred where the manufacturer does not dimension them. | No internal hydraulic performance, MEP connectors, fabrication tolerances or procurement substitutions are implied."
+}

@@ -1,0 +1,909 @@
+{
+  "placement_type": "WorkPlaneBased",
+  "parameter_flex": [
+    {
+      "geometry_bindings": 1,
+      "name": "Interior Finish",
+      "substitution_pass": true,
+      "restored": true
+    },
+    {
+      "geometry_bindings": 6,
+      "name": "Trim Finish",
+      "substitution_pass": true,
+      "restored": true
+    },
+    {
+      "geometry_bindings": 3,
+      "name": "Glass Finish",
+      "substitution_pass": true,
+      "restored": true
+    },
+    {
+      "geometry_bindings": 3,
+      "name": "Cabinet Finish",
+      "substitution_pass": true,
+      "restored": true
+    },
+    {
+      "geometry_bindings": 21,
+      "name": "Controls Finish",
+      "substitution_pass": true,
+      "restored": true
+    }
+  ],
+  "ok": true,
+  "stage": "saved_reopened_measured_flexed_placed_previewed",
+  "reopened": true,
+  "warnings": [],
+  "material_inventory": [
+    {
+      "appearance_id": 2232,
+      "name": "Default",
+      "bitmap": null,
+      "bitmap_exists": false
+    },
+    {
+      "appearance_id": 2233,
+      "name": "Default Roof",
+      "bitmap": null,
+      "bitmap_exists": false
+    },
+    {
+      "appearance_id": 2234,
+      "name": "Default Wall",
+      "bitmap": null,
+      "bitmap_exists": false
+    },
+    {
+      "appearance_id": 2235,
+      "name": "Glass",
+      "bitmap": null,
+      "bitmap_exists": false
+    },
+    {
+      "appearance_id": 2236,
+      "name": "Poche",
+      "bitmap": null,
+      "bitmap_exists": false
+    },
+    {
+      "appearance_id": 2237,
+      "name": "Default Light Source",
+      "bitmap": null,
+      "bitmap_exists": false
+    },
+    {
+      "appearance_id": 2862,
+      "name": "Analytical Panels",
+      "bitmap": null,
+      "bitmap_exists": false
+    },
+    {
+      "appearance_id": 2965,
+      "name": "GFD55GSSNWW Trim Finish",
+      "bitmap": "E:\\Claude\\3D-Model-Workflow\\output\\1527_wieland\\appliances\\ge_gfd55gssnww\\source\\Stainless_Steel_diffuse.png",
+      "bitmap_exists": true
+    },
+    {
+      "appearance_id": 2968,
+      "name": "GFD55GSSNWW Glass Finish",
+      "bitmap": "E:\\Claude\\3D-Model-Workflow\\output\\1527_wieland\\appliances\\ge_gfd55gssnww\\source\\Black_Glass_diffuse.png",
+      "bitmap_exists": true
+    },
+    {
+      "appearance_id": 2971,
+      "name": "GFD55GSSNWW Interior Finish",
+      "bitmap": "E:\\Claude\\3D-Model-Workflow\\output\\1527_wieland\\appliances\\ge_gfd55gssnww\\source\\Gray_Interior_diffuse.png",
+      "bitmap_exists": true
+    },
+    {
+      "appearance_id": 2974,
+      "name": "GFD55GSSNWW Cabinet Finish",
+      "bitmap": "E:\\Claude\\3D-Model-Workflow\\output\\1527_wieland\\appliances\\ge_gfd55gssnww\\source\\White_diffuse.png",
+      "bitmap_exists": true
+    },
+    {
+      "appearance_id": 2977,
+      "name": "GFD55GSSNWW Controls Finish",
+      "bitmap": "E:\\Claude\\3D-Model-Workflow\\output\\1527_wieland\\appliances\\ge_gfd55gssnww\\source\\Black_Plastic_diffuse.png",
+      "bitmap_exists": true
+    }
+  ],
+  "saved_revit_format": "2025",
+  "family_bounds": {
+    "max_mm": [
+      355.5999878883362,
+      812.8000242233277,
+      1009.6500000000001
+    ],
+    "parts": [
+      {
+        "class": "FreeFormElement",
+        "min_mm": [
+          -355.5999878883362,
+          43.00000069141388,
+          11.999999955296516
+        ],
+        "id": 2980,
+        "name": "Body",
+        "max_mm": [
+          355.5999878883362,
+          812.8000242233277,
+          1009.6500000000001
+        ]
+      },
+      {
+        "class": "FreeFormElement",
+        "min_mm": [
+          -334.59999790191654,
+          66.00000032186509,
+          -3.458213742501865e-21
+        ],
+        "id": 2984,
+        "name": "Foot00",
+        "max_mm": [
+          -306.5999991416931,
+          94.0000036239624,
+          11.999999955296516
+        ]
+      },
+      {
+        "class": "FreeFormElement",
+        "min_mm": [
+          -334.59999790191654,
+          753.7999917984009,
+          -3.458213742501865e-21
+        ],
+        "id": 2988,
+        "name": "Foot01",
+        "max_mm": [
+          -306.5999991416931,
+          781.8000268936157,
+          11.999999955296516
+        ]
+      },
+      {
+        "class": "FreeFormElement",
+        "min_mm": [
+          306.5999991416931,
+          66.00000032186509,
+          -3.458213742501865e-21
+        ],
+        "id": 2992,
+        "name": "Foot10",
+        "max_mm": [
+          334.59999790191654,
+          94.0000036239624,
+          11.999999955296516
+        ]
+      },
+      {
+        "class": "FreeFormElement",
+        "min_mm": [
+          306.5999991416931,
+          753.7999917984009,
+          -3.458213742501865e-21
+        ],
+        "id": 2996,
+        "name": "Foot11",
+        "max_mm": [
+          334.59999790191654,
+          781.8000268936157,
+          11.999999955296516
+        ]
+      },
+      {
+        "class": "FreeFormElement",
+        "min_mm": [
+          -353.60000095367434,
+          37.99999929070473,
+          987.6500347137452
+        ],
+        "id": 3000,
+        "name": "Top Lid",
+        "max_mm": [
+          353.60000095367434,
+          812.8000242233277,
+          1009.6500000000001
+        ]
+      },
+      {
+        "class": "FreeFormElement",
+        "min_mm": [
+          -351.60001401901246,
+          29.99999932050705,
+          854.6500133514404
+        ],
+        "id": 3004,
+        "name": "Control Fascia",
+        "max_mm": [
+          351.60001401901246,
+          45.999999260902406,
+          986.6500230789185
+        ]
+      },
+      {
+        "class": "FreeFormElement",
+        "min_mm": [
+          -38.99999957084656,
+          18.999999645352364,
+          890.6499961853027
+        ],
+        "id": 3008,
+        "name": "Selector Bezel",
+        "max_mm": [
+          38.99999957084656,
+          33.000000160932544,
+          968.6500316619873
+        ]
+      },
+      {
+        "class": "FreeFormElement",
+        "min_mm": [
+          -33.000000160932544,
+          9.00000025033951,
+          896.6499933242798
+        ],
+        "id": 3012,
+        "name": "Selector Dial",
+        "max_mm": [
+          33.000000160932544,
+          25.000000190734863,
+          962.6500345230103
+        ]
+      },
+      {
+        "class": "FreeFormElement",
+        "min_mm": [
+          -1.4999999944120646,
+          7.000000257790089,
+          951.6499792098999
+        ],
+        "id": 3016,
+        "name": "Selector Index",
+        "max_mm": [
+          1.4999999944120646,
+          9.00000025033951,
+          960.650011253357
+        ]
+      },
+      {
+        "class": "FreeFormElement",
+        "min_mm": [
+          106.67999818325043,
+          23.999999910593033,
+          885.6500106811524
+        ],
+        "id": 3020,
+        "name": "Display Panel",
+        "max_mm": [
+          327.15201501846315,
+          31.99999988079071,
+          975.6499677658081
+        ]
+      },
+      {
+        "class": "FreeFormElement",
+        "min_mm": [
+          120.90400278568268,
+          21.999999350309373,
+          897.6500049591065
+        ],
+        "id": 3024,
+        "name": "Display Control0",
+        "max_mm": [
+          138.68400399684907,
+          23.999999910593033,
+          901.6499788284302
+        ]
+      },
+      {
+        "class": "FreeFormElement",
+        "min_mm": [
+          167.8432070732117,
+          21.999999350309373,
+          897.6500049591065
+        ],
+        "id": 3028,
+        "name": "Display Control1",
+        "max_mm": [
+          185.62320828437805,
+          23.999999910593033,
+          901.6499788284302
+        ]
+      },
+      {
+        "class": "FreeFormElement",
+        "min_mm": [
+          214.7824022769928,
+          21.999999350309373,
+          897.6500049591065
+        ],
+        "id": 3032,
+        "name": "Display Control2",
+        "max_mm": [
+          232.5624034881592,
+          23.999999910593033,
+          901.6499788284302
+        ]
+      },
+      {
+        "class": "FreeFormElement",
+        "min_mm": [
+          261.72159748077394,
+          21.999999350309373,
+          897.6500049591065
+        ],
+        "id": 3036,
+        "name": "Display Control3",
+        "max_mm": [
+          279.50159869194033,
+          23.999999910593033,
+          901.6499788284302
+        ]
+      },
+      {
+        "class": "FreeFormElement",
+        "min_mm": [
+          -74.00800080299378,
+          28.000001031160355,
+          969.6499706268311
+        ],
+        "id": 3040,
+        "name": "Cycle Tick0_-1",
+        "max_mm": [
+          -54.007999742031096,
+          29.99999932050705,
+          972.6500055313111
+        ]
+      },
+      {
+        "class": "FreeFormElement",
+        "min_mm": [
+          54.007999742031096,
+          28.000001031160355,
+          969.6499706268311
+        ],
+        "id": 3044,
+        "name": "Cycle Tick0_1",
+        "max_mm": [
+          74.00800080299378,
+          29.99999932050705,
+          972.6500055313111
+        ]
+      },
+      {
+        "class": "FreeFormElement",
+        "min_mm": [
+          -74.50800207853318,
+          28.000001031160355,
+          956.6499647140504
+        ],
+        "id": 3048,
+        "name": "Cycle Tick1_-1",
+        "max_mm": [
+          -54.5080010175705,
+          29.99999932050705,
+          959.6499996185303
+        ]
+      },
+      {
+        "class": "FreeFormElement",
+        "min_mm": [
+          54.5080010175705,
+          28.000001031160355,
+          956.6499647140504
+        ],
+        "id": 3052,
+        "name": "Cycle Tick1_1",
+        "max_mm": [
+          74.50800207853318,
+          29.99999932050705,
+          959.6499996185303
+        ]
+      },
+      {
+        "class": "FreeFormElement",
+        "min_mm": [
+          -75.00799881219864,
+          28.000001031160355,
+          943.6500314712525
+        ],
+        "id": 3056,
+        "name": "Cycle Tick2_-1",
+        "max_mm": [
+          -55.00799775123596,
+          29.99999932050705,
+          946.6499937057496
+        ]
+      },
+      {
+        "class": "FreeFormElement",
+        "min_mm": [
+          55.00799775123596,
+          28.000001031160355,
+          943.6500314712525
+        ],
+        "id": 3060,
+        "name": "Cycle Tick2_1",
+        "max_mm": [
+          75.00799881219864,
+          29.99999932050705,
+          946.6499937057496
+        ]
+      },
+      {
+        "class": "FreeFormElement",
+        "min_mm": [
+          -75.50800008773804,
+          28.000001031160355,
+          930.6500255584717
+        ],
+        "id": 3064,
+        "name": "Cycle Tick3_-1",
+        "max_mm": [
+          -55.50799902677536,
+          29.99999932050705,
+          933.6499877929688
+        ]
+      },
+      {
+        "class": "FreeFormElement",
+        "min_mm": [
+          55.50799902677536,
+          28.000001031160355,
+          930.6500255584717
+        ],
+        "id": 3068,
+        "name": "Cycle Tick3_1",
+        "max_mm": [
+          75.50800008773804,
+          29.99999932050705,
+          933.6499877929688
+        ]
+      },
+      {
+        "class": "FreeFormElement",
+        "min_mm": [
+          -76.00800136327744,
+          28.000001031160355,
+          917.6500196456909
+        ],
+        "id": 3072,
+        "name": "Cycle Tick4_-1",
+        "max_mm": [
+          -56.00800030231476,
+          29.99999932050705,
+          920.6499818801881
+        ]
+      },
+      {
+        "class": "FreeFormElement",
+        "min_mm": [
+          56.00800030231476,
+          28.000001031160355,
+          917.6500196456909
+        ],
+        "id": 3076,
+        "name": "Cycle Tick4_1",
+        "max_mm": [
+          76.00800136327744,
+          29.99999932050705,
+          920.6499818801881
+        ]
+      },
+      {
+        "class": "FreeFormElement",
+        "min_mm": [
+          -76.50800263881683,
+          28.000001031160355,
+          904.6500137329102
+        ],
+        "id": 3080,
+        "name": "Cycle Tick5_-1",
+        "max_mm": [
+          -56.50800157785416,
+          29.99999932050705,
+          907.6499759674073
+        ]
+      },
+      {
+        "class": "FreeFormElement",
+        "min_mm": [
+          56.50800157785416,
+          28.000001031160355,
+          904.6500137329102
+        ],
+        "id": 3084,
+        "name": "Cycle Tick5_1",
+        "max_mm": [
+          76.50800263881683,
+          29.99999932050705,
+          907.6499759674073
+        ]
+      },
+      {
+        "class": "FreeFormElement",
+        "min_mm": [
+          -314.3503981590271,
+          20.000001060962678,
+          230.86059966087342
+        ],
+        "id": 3088,
+        "name": "Door Outer Trim",
+        "max_mm": [
+          314.3503981590271,
+          34.00000044107437,
+          859.5614141464233
+        ]
+      },
+      {
+        "class": "FreeFormElement",
+        "min_mm": [
+          -310.85039377212524,
+          7.999999970197678,
+          234.36060404777527
+        ],
+        "id": 3092,
+        "name": "Door Black Surround",
+        "max_mm": [
+          310.85039377212524,
+          36.00000100135804,
+          856.0614097595216
+        ]
+      },
+      {
+        "class": "FreeFormElement",
+        "min_mm": [
+          -234.19104681015017,
+          -1.9643478725381252e-20,
+          311.0199691772461
+        ],
+        "id": 3096,
+        "name": "Door Glass",
+        "max_mm": [
+          234.19104681015017,
+          14.999999660253525,
+          779.4020627975464
+        ]
+      },
+      {
+        "class": "FreeFormElement",
+        "min_mm": [
+          -241.1067584037781,
+          5.000000265240669,
+          304.1042394161224
+        ],
+        "id": 3100,
+        "name": "Inner Door Lip",
+        "max_mm": [
+          241.1067584037781,
+          20.000001060962678,
+          786.3177743911743
+        ]
+      },
+      {
+        "class": "FreeFormElement",
+        "min_mm": [
+          306.3504140853882,
+          27.000000751018526,
+          493.2109923362732
+        ],
+        "id": 3104,
+        "name": "Door Hinge",
+        "max_mm": [
+          322.35038223266605,
+          43.00000069141388,
+          597.2110033035278
+        ]
+      },
+      {
+        "class": "FreeFormElement",
+        "min_mm": [
+          -319.3503836631775,
+          11.999999955296516,
+          509.2109968185425
+        ],
+        "id": 3108,
+        "name": "Door Pocket",
+        "max_mm": [
+          -309.3504126548767,
+          23.999999910593033,
+          581.2109988212586
+        ]
+      },
+      {
+        "class": "FreeFormElement",
+        "min_mm": [
+          -220.0452714443207,
+          15.999999940395355,
+          325.1657263755798
+        ],
+        "id": 3112,
+        "name": "Drum Back",
+        "max_mm": [
+          220.0452714443207,
+          36.00000100135804,
+          765.2562692642213
+        ]
+      }
+    ],
+    "xyz_size_mm": [
+      711.1999757766724,
+      812.8000242233277,
+      1009.6500000000001
+    ],
+    "min_mm": [
+      -355.5999878883362,
+      -1.9643478725381252e-20,
+      -3.458213742501865e-21
+    ]
+  },
+  "previews": [
+    "E:\\Claude\\3D-Model-Workflow\\output\\1527_wieland\\appliances\\ge_gfd55gssnww\\views\\oblique - 3D View - oblique.png",
+    "E:\\Claude\\3D-Model-Workflow\\output\\1527_wieland\\appliances\\ge_gfd55gssnww\\views\\front - 3D View - front.png"
+  ],
+  "category": "Specialty Equipment",
+  "dimension_delta_mm": [
+    -2.4223327613981382e-05,
+    2.422332772766822e-05,
+    1.1368683772161603e-13
+  ],
+  "dimension_gate_scope": "overall",
+  "assumptions": [
+    "Corrected gas dryer GFD55GSSNWW governs; obsolete electric-model row text is not the model authority. Reversible door depicted right-hinged."
+  ],
+  "preview_refresh_utc": "2026-10-02 14:30:43.537000",
+  "started_utc": "2026-10-02 14:30:15.107000",
+  "parts": [
+    {
+      "parameter": "Cabinet Finish",
+      "name": "Body",
+      "id": 2980
+    },
+    {
+      "parameter": "Controls Finish",
+      "name": "Foot00",
+      "id": 2984
+    },
+    {
+      "parameter": "Controls Finish",
+      "name": "Foot01",
+      "id": 2988
+    },
+    {
+      "parameter": "Controls Finish",
+      "name": "Foot10",
+      "id": 2992
+    },
+    {
+      "parameter": "Controls Finish",
+      "name": "Foot11",
+      "id": 2996
+    },
+    {
+      "parameter": "Cabinet Finish",
+      "name": "Top Lid",
+      "id": 3000
+    },
+    {
+      "parameter": "Cabinet Finish",
+      "name": "Control Fascia",
+      "id": 3004
+    },
+    {
+      "parameter": "Controls Finish",
+      "name": "Selector Bezel",
+      "id": 3008
+    },
+    {
+      "parameter": "Trim Finish",
+      "name": "Selector Dial",
+      "id": 3012
+    },
+    {
+      "parameter": "Controls Finish",
+      "name": "Selector Index",
+      "id": 3016
+    },
+    {
+      "parameter": "Glass Finish",
+      "name": "Display Panel",
+      "id": 3020
+    },
+    {
+      "parameter": "Trim Finish",
+      "name": "Display Control0",
+      "id": 3024
+    },
+    {
+      "parameter": "Trim Finish",
+      "name": "Display Control1",
+      "id": 3028
+    },
+    {
+      "parameter": "Trim Finish",
+      "name": "Display Control2",
+      "id": 3032
+    },
+    {
+      "parameter": "Trim Finish",
+      "name": "Display Control3",
+      "id": 3036
+    },
+    {
+      "parameter": "Controls Finish",
+      "name": "Cycle Tick0_-1",
+      "id": 3040
+    },
+    {
+      "parameter": "Controls Finish",
+      "name": "Cycle Tick0_1",
+      "id": 3044
+    },
+    {
+      "parameter": "Controls Finish",
+      "name": "Cycle Tick1_-1",
+      "id": 3048
+    },
+    {
+      "parameter": "Controls Finish",
+      "name": "Cycle Tick1_1",
+      "id": 3052
+    },
+    {
+      "parameter": "Controls Finish",
+      "name": "Cycle Tick2_-1",
+      "id": 3056
+    },
+    {
+      "parameter": "Controls Finish",
+      "name": "Cycle Tick2_1",
+      "id": 3060
+    },
+    {
+      "parameter": "Controls Finish",
+      "name": "Cycle Tick3_-1",
+      "id": 3064
+    },
+    {
+      "parameter": "Controls Finish",
+      "name": "Cycle Tick3_1",
+      "id": 3068
+    },
+    {
+      "parameter": "Controls Finish",
+      "name": "Cycle Tick4_-1",
+      "id": 3072
+    },
+    {
+      "parameter": "Controls Finish",
+      "name": "Cycle Tick4_1",
+      "id": 3076
+    },
+    {
+      "parameter": "Controls Finish",
+      "name": "Cycle Tick5_-1",
+      "id": 3080
+    },
+    {
+      "parameter": "Controls Finish",
+      "name": "Cycle Tick5_1",
+      "id": 3084
+    },
+    {
+      "parameter": "Trim Finish",
+      "name": "Door Outer Trim",
+      "id": 3088
+    },
+    {
+      "parameter": "Glass Finish",
+      "name": "Door Black Surround",
+      "id": 3092
+    },
+    {
+      "parameter": "Glass Finish",
+      "name": "Door Glass",
+      "id": 3096
+    },
+    {
+      "parameter": "Controls Finish",
+      "name": "Inner Door Lip",
+      "id": 3100
+    },
+    {
+      "parameter": "Controls Finish",
+      "name": "Door Hinge",
+      "id": 3104
+    },
+    {
+      "parameter": "Controls Finish",
+      "name": "Door Pocket",
+      "id": 3108
+    },
+    {
+      "parameter": "Interior Finish",
+      "name": "Drum Back",
+      "id": 3112
+    }
+  ],
+  "limitations": [
+    "Visualization geometry; no MEP connectors, operating mechanisms or fabrication tolerances.",
+    "Overall dimensions are manufacturer dimensions. Undimensioned seams, controls, edge radii and optical properties are inferred from product imagery.",
+    "Fixed product dimensions; editable finish parameters are the intended flex controls."
+  ],
+  "target_xyz_mm": [
+    711.2,
+    812.8,
+    1009.65
+  ],
+  "finished_utc": "2026-10-02 14:30:17.776000",
+  "revit_version": "2025",
+  "dimension_gate": true,
+  "slug": "ge_gfd55gssnww",
+  "model": "GFD55GSSNWW",
+  "dimension_basis": "28 x 39 3/4 x 32 in, W x H x D; official GE product dimensions.",
+  "saved_rfa": "E:\\Claude\\3D-Model-Workflow\\output\\1527_wieland\\appliances\\ge_gfd55gssnww\\ge_gfd55gssnww_R2025.rfa",
+  "placed_bounds": {
+    "max_mm": [
+      355.5999878883362,
+      812.8000242233277,
+      1009.6500000000001
+    ],
+    "parts": [
+      {
+        "class": "FamilyInstance",
+        "min_mm": [
+          -355.5999878883362,
+          -1.9643478725381252e-20,
+          -3.458213742501865e-21
+        ],
+        "id": 3797,
+        "name": "GFD55GSSNWW",
+        "max_mm": [
+          355.5999878883362,
+          812.8000242233277,
+          1009.6500000000001
+        ]
+      }
+    ],
+    "xyz_size_mm": [
+      711.1999757766724,
+      812.8000242233277,
+      1009.6500000000001
+    ],
+    "min_mm": [
+      -355.5999878883362,
+      -1.9643478725381252e-20,
+      -3.458213742501865e-21
+    ]
+  },
+  "placement": {
+    "loaded": true,
+    "placed": true,
+    "type": "GFD55GSSNWW",
+    "placement_type": "WorkPlaneBased",
+    "host_category": "Floors",
+    "family_category": "Specialty Equipment"
+  },
+  "placed_warnings": [],
+  "visual_review": {
+    "reviewed_utc": "2026-10-02T14:36:37.369028+00:00",
+    "reviewer": "worker-1",
+    "method": "Direct visual inspection of native images and manufacturer reference imagery; manufacturer batch contact sheets used for overview.",
+    "images": [
+      {
+        "path": "ge_gfd55gssnww/views/oblique - 3D View - oblique.png",
+        "sha256": "af254b5c824b60eca1d9c897a3794ef69e6d96f017e990a1826b99e6a979bd57"
+      },
+      {
+        "path": "ge_gfd55gssnww/views/front - 3D View - front.png",
+        "sha256": "52808627514cacd2672698cd29524291e2f677e89af8b89404dce0c64308d305"
+      }
+    ],
+    "observation": "White dryer body and dark round door are visible; detergent/service drawer is absent. Fixed published size is verified, while molded fascia details remain image-derived.",
+    "design_or_photographic_approval": false
+  },
+  "all_acceptance_gates_pass": false
+}

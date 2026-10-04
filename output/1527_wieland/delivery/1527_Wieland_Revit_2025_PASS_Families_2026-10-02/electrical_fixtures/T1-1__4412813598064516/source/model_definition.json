@@ -1,0 +1,64 @@
+{
+  "key": "KZC1009577",
+  "model": "PD75027-BK",
+  "name": "Kuzco_Motif_PD75027_Black_R2025",
+  "manufacturer": "Kuzco Lighting",
+  "host": "ceiling",
+  "dimensions": [
+    4.625,
+    4.625,
+    48
+  ],
+  "materials": [
+    "Black",
+    "Clear",
+    "Opal"
+  ],
+  "builder": "motif_slim",
+  "source_url": "https://kuzcolighting.com/products/motif-pd75027-kuzco",
+  "notes": "0.75-inch x 26.75-inch body, 4.625-inch x 0.5-inch canopy. ASSUMPTION: 48-inch drop and fine internal filament/cap proportions. Public 2019 OEM body measures about 18 mm diameter against the current 19.05 mm nominal; canopy is also undersized. Current native reconstruction preserves the referenced clear cylinder and end caps.",
+  "rfa_search": "Manufacturer public RFA downloaded/opened in 2025; measured native body/canopy differ from current published dimensions, so unchanged RFA was not accepted.",
+  "rows": [
+    {
+      "row_id": "4412813598064516",
+      "item_key": "T1-1__4412813598064516",
+      "tag": "T1-1",
+      "unit": "Triplex",
+      "room": "Dining",
+      "agent_ignore": false
+    }
+  ],
+  "out": "E:\\Claude\\3D-Model-Workflow\\output\\1527_wieland\\electrical_fixtures\\T1-1__4412813598064516",
+  "material_definitions": {
+    "Black": {
+      "rgb": [
+        24,
+        24,
+        24
+      ],
+      "gloss": 0.24
+    },
+    "Clear": {
+      "rgb": [
+        246,
+        248,
+        249
+      ],
+      "gloss": 0.98,
+      "transparency": 0.9,
+      "reflectivity": 0.06,
+      "material_class": "Glass"
+    },
+    "Opal": {
+      "rgb": [
+        248,
+        248,
+        243
+      ],
+      "gloss": 0.33,
+      "transparency": 0.08,
+      "reflectivity": 0.025,
+      "material_class": "Glass"
+    }
+  }
+}

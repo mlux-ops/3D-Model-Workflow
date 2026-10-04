@@ -1,0 +1,64 @@
+{
+  "stage": "failed", 
+  "started_utc": "2026-10-02T14:32:59.950000Z", 
+  "companion_bitmaps": {
+    "Black": "E:\\Claude\\3D-Model-Workflow\\output\\1527_wieland\\electrical_fixtures\\F1-0__1015838346379140\\source\\textures\\Black.png", 
+    "Opal": "E:\\Claude\\3D-Model-Workflow\\output\\1527_wieland\\electrical_fixtures\\F1-0__1015838346379140\\source\\textures\\Opal.png", 
+    "Clear": "E:\\Claude\\3D-Model-Workflow\\output\\1527_wieland\\electrical_fixtures\\F1-0__1015838346379140\\source\\textures\\Clear.png"
+  }, 
+  "template_form_ids": [
+    "1537"
+  ], 
+  "technical_pass": false, 
+  "manufacturer": "Hinkley", 
+  "type": "28914BK-LL", 
+  "rfa_search": "Public primary product resources and the retained exact product page were inspected; no direct, exact native RFA was available in those resources. This does not assert that no RFA exists elsewhere.", 
+  "rfa_path": "E:\\Claude\\3D-Model-Workflow\\output\\1527_wieland\\electrical_fixtures\\F1-0__1015838346379140\\Hinkley_Tetra_28914BK_LL_R2025.rfa", 
+  "revit_version": "2025", 
+  "appearance_defaults": {
+    "Black": {
+      "transparency": 0, 
+      "rgb": [
+        24, 
+        24, 
+        24
+      ], 
+      "cct_k": null, 
+      "luminance": 0, 
+      "gloss": 0.23999999999999999
+    }, 
+    "Opal": {
+      "transparency": 0.080000000000000002, 
+      "rgb": [
+        248, 
+        248, 
+        243
+      ], 
+      "cct_k": null, 
+      "luminance": 0, 
+      "gloss": 0.33000000000000002
+    }, 
+    "Clear": {
+      "transparency": 0.90000000000000002, 
+      "rgb": [
+        246, 
+        248, 
+        249
+      ], 
+      "cct_k": null, 
+      "luminance": 0, 
+      "gloss": 0.97999999999999998
+    }
+  }, 
+  "model": "28914BK-LL", 
+  "expected_dimensions_in": [
+    5, 
+    12, 
+    5.75
+  ], 
+  "source_url": "https://www.hinkley.com/28914bk-ll.html", 
+  "revit_build": "25.4.50.35", 
+  "error": "Traceback (most recent call last):\n  File \"E:\\Claude\\3D-Model-Workflow\\output\\1527_wieland\\electrical_fixtures\\_tools\\build_catalog.py\", line 199, in run_one\n    globals()[job['builder']](b,mats)\n  File \"E:\\Claude\\3D-Model-Workflow\\output\\1527_wieland\\electrical_fixtures\\_tools\\build_catalog.py\", line 78, in tetra\n    b.box('Recessed end glass',-2.23,y,1.52,2.23,y+.12,5.4,m['Clear'],.1)\n  File \"E:\\Claude\\3D-Model-Workflow\\output\\1527_wieland\\electrical_fixtures\\_tools\\native_fixture_support.py\", line 165, in box\n    solid=DB.GeometryCreationUtilities.CreateExtrusionGeometry(List[DB.CurveLoop]([loop(xyz(0,0,z0),DB.XYZ.BasisX,DB.XYZ.BasisY,points)]),DB.XYZ.BasisZ,(z1-z0)/12.)\nException: Curve loops do not satisfy the input requirements.\r\nParameter name: profileLoops\n", 
+  "cct_k": null, 
+  "catalog_key": "HIN1284470"
+}

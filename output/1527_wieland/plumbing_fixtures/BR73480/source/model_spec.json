@@ -1,0 +1,402 @@
+{
+  "key": "BR73480",
+  "model": "BR73480",
+  "manufacturer": "Brizo",
+  "type_name": "BR73480 - chrome",
+  "basename": "Brizo_BR73480_R2025",
+  "name": "48-inch linear drain rough with membrane and feet",
+  "host": "floor",
+  "configured_dimensions_in": [
+    53.1875,
+    12.625,
+    5.4375
+  ],
+  "materials": {
+    "Finish": {
+      "rgb": [
+        195,
+        198,
+        201
+      ],
+      "gloss": 0.96,
+      "reflectivity": 0.88,
+      "class": "Metal"
+    },
+    "Detail": {
+      "rgb": [
+        24,
+        25,
+        26
+      ],
+      "gloss": 0.17,
+      "reflectivity": 0.04,
+      "class": "Plastic"
+    },
+    "Graphite": {
+      "rgb": [
+        64,
+        67,
+        69
+      ],
+      "gloss": 0.36,
+      "reflectivity": 0.16,
+      "class": "Glass"
+    },
+    "Ceramic": {
+      "rgb": [
+        245,
+        245,
+        241
+      ],
+      "gloss": 0.86,
+      "reflectivity": 0.22,
+      "class": "Ceramic"
+    },
+    "Brass": {
+      "rgb": [
+        160,
+        124,
+        64
+      ],
+      "gloss": 0.4,
+      "reflectivity": 0.38,
+      "class": "Metal"
+    },
+    "Green": {
+      "rgb": [
+        31,
+        113,
+        66
+      ],
+      "gloss": 0.18,
+      "reflectivity": 0.05,
+      "class": "Plastic"
+    },
+    "Gray": {
+      "rgb": [
+        131,
+        132,
+        130
+      ],
+      "gloss": 0.32,
+      "reflectivity": 0.12,
+      "class": "Plastic"
+    }
+  },
+  "geometry": [
+    {
+      "name": "Membrane front",
+      "kind": "box",
+      "bounds": [
+        -26.59375,
+        -6.3125,
+        -0.1,
+        26.59375,
+        -2.21875,
+        0
+      ],
+      "radius": 0,
+      "material": "Detail"
+    },
+    {
+      "name": "Membrane back",
+      "kind": "box",
+      "bounds": [
+        -26.59375,
+        2.21875,
+        -0.1,
+        26.59375,
+        6.3125,
+        0
+      ],
+      "radius": 0,
+      "material": "Detail"
+    },
+    {
+      "name": "Membrane left",
+      "kind": "box",
+      "bounds": [
+        -26.59375,
+        -2.21875,
+        -0.1,
+        -23.625,
+        2.21875,
+        0
+      ],
+      "radius": 0,
+      "material": "Detail"
+    },
+    {
+      "name": "Membrane right",
+      "kind": "box",
+      "bounds": [
+        23.625,
+        -2.21875,
+        -0.1,
+        26.59375,
+        2.21875,
+        0
+      ],
+      "radius": 0,
+      "material": "Detail"
+    },
+    {
+      "name": "Channel floor",
+      "kind": "box",
+      "bounds": [
+        -23.625,
+        -2.21875,
+        -0.8125,
+        23.625,
+        2.21875,
+        -0.72
+      ],
+      "radius": 0,
+      "material": "Finish"
+    },
+    {
+      "name": "Front channel lip",
+      "kind": "box",
+      "bounds": [
+        -23.625,
+        -2.21875,
+        -0.75,
+        23.625,
+        -2.12,
+        0
+      ],
+      "radius": 0,
+      "material": "Finish"
+    },
+    {
+      "name": "Back channel lip",
+      "kind": "box",
+      "bounds": [
+        -23.625,
+        2.12,
+        -0.75,
+        23.625,
+        2.21875,
+        0
+      ],
+      "radius": 0,
+      "material": "Finish"
+    },
+    {
+      "name": "Left channel lip",
+      "kind": "box",
+      "bounds": [
+        -23.625,
+        -2.12,
+        -0.75,
+        -23.52,
+        2.12,
+        0
+      ],
+      "radius": 0,
+      "material": "Finish"
+    },
+    {
+      "name": "Right channel lip",
+      "kind": "box",
+      "bounds": [
+        23.52,
+        -2.12,
+        -0.75,
+        23.625,
+        2.12,
+        0
+      ],
+      "radius": 0,
+      "material": "Finish"
+    },
+    {
+      "name": "Drain outlet",
+      "kind": "cylinder",
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "radius": 1.40625,
+      "a": -2.8125,
+      "b": -0.75,
+      "material": "Finish",
+      "inner_radius": 1.0
+    },
+    {
+      "name": "Adjusting foot -21.0 -1.4",
+      "kind": "cylinder",
+      "origin": [
+        -21,
+        -1.45,
+        0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "radius": 0.2,
+      "a": -5.1875,
+      "b": -0.75,
+      "material": "Finish"
+    },
+    {
+      "name": "Foot plate -21.0 -1.4",
+      "kind": "box",
+      "bounds": [
+        -21.8,
+        -1.95,
+        -5.4375,
+        -20.2,
+        -0.95,
+        -5.1875
+      ],
+      "radius": 0.07,
+      "material": "Detail"
+    },
+    {
+      "name": "Adjusting foot -21.0 1.4",
+      "kind": "cylinder",
+      "origin": [
+        -21,
+        1.45,
+        0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "radius": 0.2,
+      "a": -5.1875,
+      "b": -0.75,
+      "material": "Finish"
+    },
+    {
+      "name": "Foot plate -21.0 1.4",
+      "kind": "box",
+      "bounds": [
+        -21.8,
+        0.95,
+        -5.4375,
+        -20.2,
+        1.95,
+        -5.1875
+      ],
+      "radius": 0.07,
+      "material": "Detail"
+    },
+    {
+      "name": "Adjusting foot 21.0 -1.4",
+      "kind": "cylinder",
+      "origin": [
+        21,
+        -1.45,
+        0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "radius": 0.2,
+      "a": -5.1875,
+      "b": -0.75,
+      "material": "Finish"
+    },
+    {
+      "name": "Foot plate 21.0 -1.4",
+      "kind": "box",
+      "bounds": [
+        20.2,
+        -1.95,
+        -5.4375,
+        21.8,
+        -0.95,
+        -5.1875
+      ],
+      "radius": 0.07,
+      "material": "Detail"
+    },
+    {
+      "name": "Adjusting foot 21.0 1.4",
+      "kind": "cylinder",
+      "origin": [
+        21,
+        1.45,
+        0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "radius": 0.2,
+      "a": -5.1875,
+      "b": -0.75,
+      "material": "Finish"
+    },
+    {
+      "name": "Foot plate 21.0 1.4",
+      "kind": "box",
+      "bounds": [
+        20.2,
+        0.95,
+        -5.4375,
+        21.8,
+        1.95,
+        -5.1875
+      ],
+      "radius": 0.07,
+      "material": "Detail"
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://media.brizo.com/SpecSheet/BSP-B-BR73240%20Rev%20B.pdf",
+      "document": "BSP-B-BR73240 Rev B",
+      "page": 1,
+      "visual_review_method": "Web PDF screenshot"
+    }
+  ],
+  "dimension_authority": [
+    "Membrane footprint 53.1875 x 12.625 in; channel length 47.25 in and width 4.4375 in; feet set to published maximum 5.4375 in."
+  ],
+  "limitations": [
+    "Channel floor is simplified level geometry; hydraulic slope and hidden membrane seams are not modeled.",
+    "Visible drain trim is a separate inventory item.",
+    "Independent visualization reconstruction with fixed product dimensions and editable native materials.",
+    "Small fillets, seams, nozzle details and optical material response are inferred where the manufacturer does not dimension them.",
+    "No internal hydraulic performance, MEP connectors, fabrication tolerances or procurement substitutions are implied."
+  ],
+  "anchors": [
+    {
+      "label": "Membrane length",
+      "parts": [
+        "Membrane front"
+      ],
+      "axis": 0,
+      "nominal_in": 53.1875
+    },
+    {
+      "label": "Channel length",
+      "parts": [
+        "Channel floor"
+      ],
+      "axis": 0,
+      "nominal_in": 47.25
+    }
+  ],
+  "all_overall_dimensions_authoritative": true,
+  "rfa_search": {
+    "result": "No acceptable no-account RFA recovered",
+    "evidence": "_research/BR73480/sources.json"
+  }
+}

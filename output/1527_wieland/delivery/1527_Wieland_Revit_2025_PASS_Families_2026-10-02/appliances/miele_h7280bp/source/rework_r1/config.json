@@ -1,0 +1,123 @@
+{
+  "slug": "miele_h7280bp",
+  "brand": "Miele",
+  "model": "H 7280 BP",
+  "target_xyz_mm": [
+    757,
+    626,
+    727
+  ],
+  "dimension_basis": "Official exact-model Miele product page, Technical data: W757 x H727 x D626 mm, checked 2026-10-02; retained two-page fact sheet omits this overall row.",
+  "kind": "miele_oven",
+  "rfa_name": "miele_h7280bp_Custom_R1_R2025.rfa",
+  "source_page": null,
+  "source_pdf": "E:\\Claude\\3D-Model-Workflow\\output\\1527_wieland\\appliances\\miele_h7280bp\\source\\product_sheet.pdf",
+  "source_pdf_sha256": "caacad6a120468ecd42757ad43314d70fb3de9f26208cbd1c4e367c5bf31679e",
+  "source_urls": [
+    "https://www.mieleusa.com/product/11968200/30-inch-convection-oven-h-7280-bp-obsidian-black",
+    "https://media.miele.com/downloads/1d/33/01_C7F12828C0C31FE182DC54A63F5A1D33.zip",
+    "https://media.miele.com/downloads/n-/us/FS_11968200_USE_US-en-US.pdf",
+    "https://www.mieleusa.com/product/11968200/30-oven-h-7280-bp-obsidian-black"
+  ],
+  "row_ids": [
+    4418595438788484,
+    3025963735121796
+  ],
+  "replacement_reason": "Orchestrator round 1: exact-identity manufacturer working family fails the <=1 mm complete overall dimension gate. New native custom geometry replaces the working selection; OEM originals and prior working RFA remain preserved.",
+  "axis_convention": "X width, Y front-to-back depth, Z vertical height; millimetres.",
+  "dimension_gate_scope": "overall",
+  "declared_limitations": [
+    "Fixed manufacturer model size; exposed finish parameters are flex-tested.",
+    "Internal partitions, edge radii, controls and concealed mechanisms are reference-derived visualization approximations.",
+    "Published nominal appliance W/D/H is the requested complete coordination envelope. Handles are included inside this envelope; the concealed case-depth partition is reconstructed rather than certified to the separate installation section. This family is not a cabinet-cutout or manufacturing authority."
+  ],
+  "palette": {
+    "Metal Finish": [
+      [
+        165,
+        168,
+        170
+      ],
+      0.55,
+      0.0
+    ],
+    "Black Finish": [
+      [
+        24,
+        26,
+        28
+      ],
+      0.45,
+      0.0
+    ],
+    "Glass Finish": [
+      [
+        30,
+        35,
+        38
+      ],
+      0.9,
+      0.18
+    ],
+    "Clear Glass Finish": [
+      [
+        188,
+        202,
+        205
+      ],
+      0.9,
+      0.72
+    ],
+    "Panel Finish": [
+      [
+        152,
+        149,
+        141
+      ],
+      0.24,
+      0.0
+    ],
+    "Wood Finish": [
+      [
+        174,
+        143,
+        98
+      ],
+      0.2,
+      0.0
+    ],
+    "Grate Finish": [
+      [
+        37,
+        38,
+        38
+      ],
+      0.08,
+      0.0
+    ],
+    "Interior Finish": [
+      [
+        78,
+        81,
+        83
+      ],
+      0.2,
+      0.0
+    ],
+    "Display Finish": [
+      [
+        66,
+        75,
+        80
+      ],
+      0.6,
+      0.0
+    ]
+  },
+  "prepared_utc": "2026-10-02T23:51:17.475845+00:00",
+  "handle_projection_mm": 45.0,
+  "reference_check": {
+    "method": "Retained manufacturer product text and native reference imagery, plus official exact-model web evidence for H7280BP and page-4 T42 metric drawing text.",
+    "pages": null
+  }
+}

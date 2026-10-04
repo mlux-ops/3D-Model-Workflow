@@ -1,0 +1,250 @@
+{
+  "key": "TD9028-LS-PCW",
+  "model": "TD9028-LS-PCW",
+  "manufacturer": "Westbrass",
+  "type_name": "TD9028-LS-PCW - White",
+  "basename": "Westbrass_TD9028-LS-PCW_R2025",
+  "name": "White tip-toe drain and floating overflow trim",
+  "host": "floor",
+  "configured_dimensions_in": [
+    9.05,
+    3.2,
+    1.8
+  ],
+  "materials": {
+    "Finish": {
+      "rgb": [
+        242,
+        243,
+        240
+      ],
+      "gloss": 0.17,
+      "reflectivity": 0.06,
+      "class": "Plastic"
+    },
+    "Detail": {
+      "rgb": [
+        24,
+        25,
+        26
+      ],
+      "gloss": 0.17,
+      "reflectivity": 0.04,
+      "class": "Plastic"
+    },
+    "Graphite": {
+      "rgb": [
+        64,
+        67,
+        69
+      ],
+      "gloss": 0.36,
+      "reflectivity": 0.16,
+      "class": "Glass"
+    },
+    "Ceramic": {
+      "rgb": [
+        245,
+        245,
+        241
+      ],
+      "gloss": 0.86,
+      "reflectivity": 0.22,
+      "class": "Ceramic"
+    },
+    "Brass": {
+      "rgb": [
+        160,
+        124,
+        64
+      ],
+      "gloss": 0.4,
+      "reflectivity": 0.38,
+      "class": "Metal"
+    },
+    "Green": {
+      "rgb": [
+        31,
+        113,
+        66
+      ],
+      "gloss": 0.18,
+      "reflectivity": 0.05,
+      "class": "Plastic"
+    },
+    "Gray": {
+      "rgb": [
+        131,
+        132,
+        130
+      ],
+      "gloss": 0.32,
+      "reflectivity": 0.12,
+      "class": "Plastic"
+    }
+  },
+  "geometry": [
+    {
+      "name": "Drain threaded shoe",
+      "kind": "cylinder",
+      "origin": [
+        -3,
+        0,
+        0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "radius": 0.9375,
+      "a": -1.3,
+      "b": 0.0,
+      "material": "Finish",
+      "inner_radius": 0.75
+    },
+    {
+      "name": "Drain flange",
+      "kind": "cylinder",
+      "origin": [
+        -3,
+        0,
+        0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "radius": 1.3,
+      "a": -0.1,
+      "b": 0.1,
+      "material": "Finish",
+      "inner_radius": 0.75
+    },
+    {
+      "name": "Tip-toe stem",
+      "kind": "cylinder",
+      "origin": [
+        -3,
+        0,
+        0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "radius": 0.4,
+      "a": 0.0,
+      "b": 0.38,
+      "material": "Detail"
+    },
+    {
+      "kind": "revolve",
+      "name": "Mushroom drain cap",
+      "origin": [
+        -3,
+        0,
+        0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "profile": [
+        [
+          0,
+          0.22
+        ],
+        [
+          1.45,
+          0.22
+        ],
+        [
+          "arc",
+          [
+            0.8,
+            0.45
+          ],
+          [
+            0,
+            0.5
+          ]
+        ]
+      ]
+    },
+    {
+      "name": "Floating overflow faceplate",
+      "kind": "cylinder",
+      "origin": [
+        3,
+        0,
+        0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "radius": 1.6,
+      "a": 0,
+      "b": 0.4,
+      "material": "Finish"
+    },
+    {
+      "name": "Overflow mounting ring",
+      "kind": "cylinder",
+      "origin": [
+        3,
+        0,
+        0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "radius": 1.25,
+      "a": -0.4,
+      "b": 0,
+      "material": "Gray",
+      "inner_radius": 1.0
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://westbrass.com/product/tip-toe-tub-trim-set-with-floating-faceplate/",
+      "document": "Westbrass TD9028 manufacturer thread and finish description",
+      "page": 1,
+      "visual_review_method": "Manufacturer web PDF screenshot"
+    }
+  ],
+  "dimension_authority": [
+    "Manufacturer specifies 1.5-inch NPSM coarse drain thread with 1.875-inch nominal external diameter."
+  ],
+  "limitations": [
+    "The two trim components are displayed side-by-side, not in a tub installation pose.",
+    "ASSUMPTION: stopper cap 2.9 in and overflow plate 3.2 in are inferred from the product photo; no exact trim dimensional drawing was recovered.",
+    "The legacy -LS-PCW row uses the corrected TD9028-PCW geometry based on the other matching project rows; vendor confirmation remains required.",
+    "Independent visualization reconstruction with fixed product dimensions and editable native materials.",
+    "Small fillets, seams, nozzle details and optical material response are inferred where the manufacturer does not dimension them.",
+    "No internal hydraulic performance, MEP connectors, fabrication tolerances or procurement substitutions are implied."
+  ],
+  "anchors": [
+    {
+      "label": "Thread exterior diameter",
+      "parts": [
+        "Drain threaded shoe"
+      ],
+      "axis": 0,
+      "nominal_in": 1.875
+    }
+  ],
+  "all_overall_dimensions_authoritative": false,
+  "rfa_search": {
+    "result": "No acceptable no-account RFA recovered",
+    "evidence": "_research/TD9028-LS-PCW/sources.json"
+  }
+}

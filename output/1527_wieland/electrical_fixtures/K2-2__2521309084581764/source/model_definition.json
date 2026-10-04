@@ -1,0 +1,64 @@
+{
+  "key": "KZC1403797",
+  "model": "WS97204-BK/CL",
+  "name": "Kuzco_Stephord_WS97204_BK_CL_R2025",
+  "manufacturer": "Kuzco Lighting",
+  "host": "wall",
+  "dimensions": [
+    4.75,
+    4.75,
+    1.63
+  ],
+  "materials": [
+    "Black",
+    "Clear",
+    "Opal"
+  ],
+  "builder": "stephord",
+  "source_url": "https://kuzcolighting.com/products/stephord-ws97204-kuzco",
+  "notes": "4.75-inch diameter, 1.63-inch projection. Separate clear curved glass lens, black central disk and concealed opal ring. ASSUMPTION: internal lens curvature and thickness from photograph. Downloaded 2019 manufacturer RFA measured 4.7244 x 4.7244 x 1.5748 inches; preserved as source, not accepted as a current inch-spec match.",
+  "rfa_search": "Public manufacturer ZIP downloaded, CRC checked and opened in Revit 2025. Current nominal projection differs by 1.402 mm; native reconstruction follows published current dimensions.",
+  "rows": [
+    {
+      "row_id": "2521309084581764",
+      "item_key": "K2-2__2521309084581764",
+      "tag": "K2-2",
+      "unit": "Penthouse",
+      "room": "Dining",
+      "agent_ignore": false
+    }
+  ],
+  "out": "E:\\Claude\\3D-Model-Workflow\\output\\1527_wieland\\electrical_fixtures\\K2-2__2521309084581764",
+  "material_definitions": {
+    "Black": {
+      "rgb": [
+        24,
+        24,
+        24
+      ],
+      "gloss": 0.24
+    },
+    "Clear": {
+      "rgb": [
+        246,
+        248,
+        249
+      ],
+      "gloss": 0.98,
+      "transparency": 0.9,
+      "reflectivity": 0.06,
+      "material_class": "Glass"
+    },
+    "Opal": {
+      "rgb": [
+        248,
+        248,
+        243
+      ],
+      "gloss": 0.33,
+      "transparency": 0.08,
+      "reflectivity": 0.025,
+      "material_class": "Glass"
+    }
+  }
+}

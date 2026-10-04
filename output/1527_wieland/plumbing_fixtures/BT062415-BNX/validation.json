@@ -1,0 +1,297 @@
+{
+  "all_overall_dimensions_authoritative": true, 
+  "inferences": "SOURCE CONFLICT: current manufacturer calls BT062415 Tile-In but Rev C depicts a slotted grate. This model follows the dimensioned Rev C drawing and must be reviewed against the purchased part. | Adjustable grate is set at the drawing minimum; detailed screw fittings omitted. | Independent visualization reconstruction with fixed product dimensions and editable native materials. | Small fillets, seams, nozzle details and optical material response are inferred where the manufacturer does not dimension them. | No internal hydraulic performance, MEP connectors, fabrication tolerances or procurement substitutions are implied.", 
+  "source_spec_path": "E:\\Claude\\3D-Model-Workflow\\output\\1527_wieland\\plumbing_fixtures\\BT062415-BNX\\source\\model_spec.json", 
+  "rfa_search": {
+    "evidence": "_research/BT062415-BNX/sources.json", 
+    "result": "No acceptable no-account RFA recovered"
+  }, 
+  "actual_dimensions_after_reopen_mm": [
+    155.57500605583189, 
+    155.57500605583189, 
+    103.1875
+  ], 
+  "stage": "complete", 
+  "placement": "WorkPlaneBased", 
+  "finished_utc": "2026-10-02T15:12:44.976000Z", 
+  "type": "BT062415-BNX - Brilliance Black Onyx -  Black", 
+  "material_tests": {
+    "Finish": {
+      "face_count": 198, 
+      "writable": true, 
+      "substitution_reaches_faces": true
+    }, 
+    "Gray": {
+      "face_count": 198, 
+      "writable": true, 
+      "substitution_reaches_faces": true
+    }
+  }, 
+  "template_form_ids": [
+    "1537"
+  ], 
+  "manufacturer": "Brizo", 
+  "source_spec_sha256": "e22ed3931016bae701c3e16f9f667d4efd944fb99871ef5961699b74cabc80e9", 
+  "started_utc": "2026-10-02T15:12:41.305000Z", 
+  "technical_pass": true, 
+  "expected_dimensions_in": [
+    6.125, 
+    6.125, 
+    4.0625
+  ], 
+  "reopened_warnings": [], 
+  "host": {
+    "host_id": "3716", 
+    "normal_dot": 1.0, 
+    "hostface_present": true, 
+    "instance_host_id": "3716", 
+    "host_kind": "floor"
+  }, 
+  "material_ids": {
+    "Finish": "3207", 
+    "Gray": "3210"
+  }, 
+  "native_gates_pass": true, 
+  "native_path_checks": [], 
+  "reopened": true, 
+  "revit_version": "2025", 
+  "model": "BT062415-BNX", 
+  "project_warnings": [], 
+  "dimension_anchor_checks": [
+    {
+      "nominal_mm": 155.57499999999999, 
+      "actual_mm": 155.57500605583189, 
+      "label": "Flange diameter", 
+      "pass": true, 
+      "deviation_mm": 6.0558319091796872e-06
+    }
+  ], 
+  "limitations": [
+    "SOURCE CONFLICT: current manufacturer calls BT062415 Tile-In but Rev C depicts a slotted grate. This model follows the dimensioned Rev C drawing and must be reviewed against the purchased part.", 
+    "Adjustable grate is set at the drawing minimum; detailed screw fittings omitted.", 
+    "Independent visualization reconstruction with fixed product dimensions and editable native materials.", 
+    "Small fillets, seams, nozzle details and optical material response are inferred where the manufacturer does not dimension them.", 
+    "No internal hydraulic performance, MEP connectors, fabrication tolerances or procurement substitutions are implied."
+  ], 
+  "display_bounds_in": [
+    -3.0625, 
+    -3.0625, 
+    -4.0625, 
+    3.0625, 
+    3.0625, 
+    0.0
+  ], 
+  "acceptance": "NATIVE_GATES_PASSED_PENDING_VISUAL_REVIEW", 
+  "evidence_files": [
+    "Brizo_BT062415-BNX_R2025_Isolated - 3D View - Native Front.png", 
+    "Brizo_BT062415-BNX_R2025_Isolated - 3D View - Native Material.png", 
+    "Brizo_BT062415-BNX_R2025_Isolated - 3D View - Native Oblique.png", 
+    "Brizo_BT062415-BNX_R2025_Isolated - 3D View - Native Side.png"
+  ], 
+  "gates": {
+    "actual_face_host": true, 
+    "views": true, 
+    "category": true, 
+    "materials": true, 
+    "reopen_geometry_equal": true, 
+    "cct": true, 
+    "reopened": true, 
+    "diffuse_bitmaps": true, 
+    "dimensions": true, 
+    "warnings": true, 
+    "orientation": true
+  }, 
+  "category": "Plumbing Fixtures", 
+  "appearance_defaults": {
+    "Finish": {
+      "gloss": 0.92000000000000004, 
+      "transparency": 0, 
+      "rgb": [
+        58, 
+        60, 
+        62
+      ], 
+      "cct_k": null, 
+      "luminance": 0
+    }, 
+    "Gray": {
+      "gloss": 0.32000000000000001, 
+      "transparency": 0, 
+      "rgb": [
+        131, 
+        132, 
+        130
+      ], 
+      "cct_k": null, 
+      "luminance": 0
+    }
+  }, 
+  "visual_review": "PENDING_NATIVE_IMAGE_REVIEW", 
+  "cct_k": null, 
+  "source_dimensions": [
+    "Flange diameter 6.125 in; grate width/depth 4.5625 in; overall height 4.0625 in; socket OD 2.6875 in."
+  ], 
+  "parts": [
+    {
+      "id": "3212", 
+      "name": "PVC socket", 
+      "volume_ft3": 0.0010515630307193656
+    }, 
+    {
+      "id": "3213", 
+      "name": "Upper drain body", 
+      "volume_ft3": 0.0057517987876819039
+    }, 
+    {
+      "id": "3214", 
+      "name": "Clamping flange", 
+      "volume_ft3": 0.0029292451630878505
+    }, 
+    {
+      "id": "3215", 
+      "name": "Grate left border", 
+      "volume_ft3": 0.00012389090783614278
+    }, 
+    {
+      "id": "3216", 
+      "name": "Grate right border", 
+      "volume_ft3": 0.00012389090783614278
+    }, 
+    {
+      "id": "3217", 
+      "name": "Grate front border", 
+      "volume_ft3": 0.00011021659489761755
+    }, 
+    {
+      "id": "3218", 
+      "name": "Grate back border", 
+      "volume_ft3": 0.00011021659489761755
+    }, 
+    {
+      "id": "3219", 
+      "name": "Horizontal grate bar 0", 
+      "volume_ft3": 7.2671665784507559e-05
+    }, 
+    {
+      "id": "3220", 
+      "name": "Staggered slot bridge 0", 
+      "volume_ft3": 5.5671296296296269e-06
+    }, 
+    {
+      "id": "3221", 
+      "name": "Horizontal grate bar 1", 
+      "volume_ft3": 7.2671665784507599e-05
+    }, 
+    {
+      "id": "3222", 
+      "name": "Staggered slot bridge 1", 
+      "volume_ft3": 5.5671296296296295e-06
+    }, 
+    {
+      "id": "3223", 
+      "name": "Horizontal grate bar 2", 
+      "volume_ft3": 7.2671665784507532e-05
+    }, 
+    {
+      "id": "3224", 
+      "name": "Staggered slot bridge 2", 
+      "volume_ft3": 5.5671296296296278e-06
+    }, 
+    {
+      "id": "3225", 
+      "name": "Horizontal grate bar 3", 
+      "volume_ft3": 7.2671665784507599e-05
+    }, 
+    {
+      "id": "3226", 
+      "name": "Staggered slot bridge 3", 
+      "volume_ft3": 5.5671296296296269e-06
+    }, 
+    {
+      "id": "3227", 
+      "name": "Horizontal grate bar 4", 
+      "volume_ft3": 7.2671665784507572e-05
+    }, 
+    {
+      "id": "3228", 
+      "name": "Staggered slot bridge 4", 
+      "volume_ft3": 5.5671296296296278e-06
+    }, 
+    {
+      "id": "3229", 
+      "name": "Horizontal grate bar 5", 
+      "volume_ft3": 7.2671665784507586e-05
+    }, 
+    {
+      "id": "3230", 
+      "name": "Staggered slot bridge 5", 
+      "volume_ft3": 5.5671296296296269e-06
+    }, 
+    {
+      "id": "3231", 
+      "name": "Horizontal grate bar 6", 
+      "volume_ft3": 7.2671665784507599e-05
+    }, 
+    {
+      "id": "3232", 
+      "name": "Staggered slot bridge 6", 
+      "volume_ft3": 5.5671296296296269e-06
+    }, 
+    {
+      "id": "3233", 
+      "name": "Horizontal grate bar 7", 
+      "volume_ft3": 7.2671665784507559e-05
+    }, 
+    {
+      "id": "3234", 
+      "name": "Staggered slot bridge 7", 
+      "volume_ft3": 1.5046296296296288e-06
+    }
+  ], 
+  "source_references": [
+    {
+      "url": "https://media.brizo.com/SpecSheet/BSP-A-BT062415%20Rev%20C.pdf", 
+      "page": 1, 
+      "document": "BSP-A-BT062415 Rev C", 
+      "visual_review_method": "Web PDF screenshot"
+    }
+  ], 
+  "revit_build": "25.4.50.35", 
+  "appearance_bindings": {
+    "Finish": {
+      "exists": true, 
+      "material_id": "3207", 
+      "path": "E:\\Claude\\3D-Model-Workflow\\output\\1527_wieland\\plumbing_fixtures\\BT062415-BNX\\textures\\Finish.png"
+    }, 
+    "Gray": {
+      "exists": true, 
+      "material_id": "3210", 
+      "path": "E:\\Claude\\3D-Model-Workflow\\output\\1527_wieland\\plumbing_fixtures\\BT062415-BNX\\textures\\Gray.png"
+    }
+  }, 
+  "bounds_method": "Fine native face meshes plus 128-sample analytic edges", 
+  "bounds_in": [
+    -3.0625001192092896, 
+    -3.0625001192092896, 
+    -4.0625, 
+    3.0625001192092896, 
+    3.0625001192092896, 
+    2.0816681711721685e-17
+  ], 
+  "reopened_bounds_in": [
+    -3.0625001192092896, 
+    -3.0625001192092896, 
+    -4.0625, 
+    3.0625001192092896, 
+    3.0625001192092896, 
+    2.0816681711721685e-17
+  ], 
+  "rfa_path": "E:\\Claude\\3D-Model-Workflow\\output\\1527_wieland\\plumbing_fixtures\\BT062415-BNX\\Brizo_BT062415-BNX_R2025.rfa", 
+  "reopen_geometry_equal": true, 
+  "actual_dimensions_in": [
+    6.1250002384185791, 
+    6.1250002384185791, 
+    4.0625
+  ], 
+  "family_warnings": []
+}

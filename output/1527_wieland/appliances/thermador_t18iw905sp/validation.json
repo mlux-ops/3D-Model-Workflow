@@ -1,0 +1,298 @@
+{
+  "all_acceptance_gates_pass": false,
+  "placement_type": "WorkPlaneBased",
+  "original_category": "Specialty Equipment",
+  "material_parameters": [
+    "Panel",
+    "Unit",
+    "Handle",
+    "Support",
+    "Glide"
+  ],
+  "parameter_flex": [
+    {
+      "material_element_references": 1,
+      "changed_parameter": true,
+      "restored": true,
+      "pass": true,
+      "name": "Panel"
+    },
+    {
+      "material_element_references": 4,
+      "changed_parameter": true,
+      "restored": true,
+      "pass": true,
+      "name": "Unit"
+    },
+    {
+      "material_element_references": 4,
+      "changed_parameter": true,
+      "restored": true,
+      "pass": true,
+      "name": "Handle"
+    },
+    {
+      "material_element_references": 0,
+      "changed_parameter": true,
+      "restored": true,
+      "pass": false,
+      "name": "Support"
+    },
+    {
+      "material_element_references": 2,
+      "changed_parameter": true,
+      "restored": true,
+      "pass": true,
+      "name": "Glide"
+    }
+  ],
+  "stage": "saved_reopened_measured_flexed_placed_previewed",
+  "ok": true,
+  "reopened": true,
+  "brand": "Thermador",
+  "warnings": [],
+  "material_inventory": [
+    {
+      "appearance_id": "13320",
+      "name": "Metal - Thermador - Black",
+      "rgb": [
+        83,
+        83,
+        80
+      ]
+    },
+    {
+      "appearance_id": "13315",
+      "name": "Metal - Thermador - Steel",
+      "rgb": [
+        244,
+        244,
+        244
+      ]
+    },
+    {
+      "appearance_id": "32601",
+      "name": "Metal - Thermador - Stainless Steel",
+      "rgb": [
+        189,
+        187,
+        185
+      ]
+    },
+    {
+      "appearance_id": "37656",
+      "name": "Glass- Thermador -  Green",
+      "rgb": [
+        172,
+        203,
+        187
+      ]
+    },
+    {
+      "appearance_id": "38299",
+      "name": "Analytical Panels",
+      "rgb": [
+        251,
+        197,
+        153
+      ]
+    }
+  ],
+  "saved_revit_format": "2025",
+  "family_bounds": {
+    "max_mm": [
+      225.5000075340271,
+      304.99998779296874,
+      2133.9999755859376
+    ],
+    "parts": [
+      {
+        "class": "GeomCombination",
+        "min_mm": [
+          -184.84593014717103,
+          -338.51036968231205,
+          670.9492349624634
+        ],
+        "id": 32362,
+        "name": "Joined Solid Geometry",
+        "max_mm": [
+          -157.031875705719,
+          -304.99998779296874,
+          1668.6652976989747
+        ]
+      },
+      {
+        "class": "Extrusion",
+        "min_mm": [
+          -208.3637897014618,
+          -201.798202085495,
+          3.588427465227664e-13
+        ],
+        "id": 32370,
+        "name": "Extrusion",
+        "max_mm": [
+          208.3637897014618,
+          283.067696428299,
+          2.5000001326203347
+        ]
+      },
+      {
+        "class": "GeomCombination",
+        "min_mm": [
+          -225.3749969959259,
+          -273.40371508598326,
+          2.5000001326203347
+        ],
+        "id": 37439,
+        "name": "Joined Solid Geometry",
+        "max_mm": [
+          225.3749969959259,
+          304.99998779296874,
+          2133.9999755859376
+        ]
+      },
+      {
+        "class": "GeomCombination",
+        "min_mm": [
+          -225.5000075340271,
+          -304.99998779296874,
+          101.99999678134918
+        ],
+        "id": 37531,
+        "name": "Joined Solid Geometry",
+        "max_mm": [
+          225.5000075340271,
+          -273.40371508598326,
+          2132.600061035156
+        ]
+      },
+      {
+        "class": "Extrusion",
+        "min_mm": [
+          -130.37499990463257,
+          -304.99998779296874,
+          438.00000915527346
+        ],
+        "id": 37552,
+        "name": "Extrusion",
+        "max_mm": [
+          130.37499990463257,
+          -273.40371508598326,
+          1876.9999649047852
+        ]
+      },
+      {
+        "class": "ModelText",
+        "min_mm": [
+          -37.470680218935016,
+          -307.0000110626221,
+          2056.3641620635985
+        ],
+        "id": 37769,
+        "name": "Model Text 1",
+        "max_mm": [
+          28.990858519077303,
+          -304.99998779296874,
+          2066.3641330718997
+        ]
+      }
+    ],
+    "xyz_size_mm": [
+      451.0000150680542,
+      643.5103574752808,
+      2133.999975585937
+    ],
+    "min_mm": [
+      -225.5000075340271,
+      -338.51036968231205,
+      3.588427465227664e-13
+    ]
+  },
+  "previews": [
+    "E:\\Claude\\3D-Model-Workflow\\output\\1527_wieland\\appliances\\thermador_t18iw905sp\\views\\placed_oblique - 3D View - placed_oblique.png"
+  ],
+  "category": "Specialty Equipment",
+  "dimension_delta_mm": [
+    0.15001506805418785,
+    33.91035747528076,
+    6.749975585937136
+  ],
+  "dimension_gate_scope": "full native geometry versus published appliance envelope",
+  "appearance_repairs": [],
+  "preview_refresh_utc": "2026-10-02 14:31:16.938000",
+  "started_utc": "2026-10-02 14:25:56.229000",
+  "limitations": [
+    "Full native geometry differs by more than 1 mm from at least one published envelope dimension. Do not treat as dimensional acceptance; compare handles, flanges, panels, feet and original source geometry.",
+    "Some manufacturer materials are fixed/nested/imported or lack a confirmed top-level geometry binding; editable-material acceptance is limited."
+  ],
+  "target_xyz_mm": [
+    450.85,
+    609.6,
+    2127.25
+  ],
+  "source_revit_format": "2025",
+  "finished_utc": "2026-10-02 14:25:59.517000",
+  "manufacturer_original": "E:\\Claude\\3D-Model-Workflow\\output\\1527_wieland\\appliances\\thermador_t18iw905sp\\source\\original\\T18IW905SP\\T18IW905SP.rfa",
+  "dimension_gate": false,
+  "slug": "thermador_t18iw905sp",
+  "model": "T18IW905SP",
+  "dimension_basis": "17 3/4 x 24 x 83 3/4 in; foot setting and handle/panel inclusion need comparison.",
+  "saved_rfa": "E:\\Claude\\3D-Model-Workflow\\output\\1527_wieland\\appliances\\thermador_t18iw905sp\\thermador_t18iw905sp_R2025.rfa",
+  "placed_warnings": [],
+  "placement": {
+    "loaded": true,
+    "placed": true,
+    "placement_type": "WorkPlaneBased",
+    "type": "T18IW905SP",
+    "host_category": "Floors",
+    "family_category": "Specialty Equipment"
+  },
+  "placed_bounds": {
+    "max_mm": [
+      225.5000075340271,
+      304.99998779296874,
+      2133.9999755859376
+    ],
+    "parts": [
+      {
+        "class": "FamilyInstance",
+        "min_mm": [
+          -225.5000075340271,
+          -338.51036968231205,
+          3.588427465227664e-13
+        ],
+        "id": 3763,
+        "name": "T18IW905SP",
+        "max_mm": [
+          225.5000075340271,
+          304.99998779296874,
+          2133.9999755859376
+        ]
+      }
+    ],
+    "xyz_size_mm": [
+      451.0000150680542,
+      643.5103574752808,
+      2133.999975585937
+    ],
+    "min_mm": [
+      -225.5000075340271,
+      -338.51036968231205,
+      3.588427465227664e-13
+    ]
+  },
+  "status": "DOWNLOADED",
+  "visual_review": {
+    "reviewed_utc": "2026-10-02T14:36:37.369028+00:00",
+    "reviewer": "worker-1",
+    "method": "Direct visual inspection of native images and manufacturer reference imagery; manufacturer batch contact sheets used for overview.",
+    "images": [
+      {
+        "path": "thermador_t18iw905sp/views/placed_oblique - 3D View - placed_oblique.png",
+        "sha256": "536dc5862db7f89fbf7d547475bcfd7598f67870db31a285e082087dd98f4637"
+      }
+    ],
+    "observation": "Tall wine-column exterior and long handle are visible, but the glass/interior reads opaque in the native source preview. Treat as an exterior proxy until glazing/interior finish is resolved.",
+    "design_or_photographic_approval": false
+  }
+}

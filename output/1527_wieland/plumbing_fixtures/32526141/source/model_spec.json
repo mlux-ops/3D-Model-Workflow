@@ -1,0 +1,215 @@
+{
+  "key": "32526141",
+  "model": "32526141",
+  "manufacturer": "Hansgrohe",
+  "type_name": "32526141 - bronze",
+  "basename": "Hansgrohe_32526141_R2025",
+  "name": "Metropol single-handle wall-mounted faucet trim",
+  "host": "wall",
+  "configured_dimensions_in": [
+    12.5625,
+    2.625,
+    9.5
+  ],
+  "materials": {
+    "Finish": {
+      "rgb": [
+        158,
+        128,
+        89
+      ],
+      "gloss": 0.56,
+      "reflectivity": 0.48,
+      "class": "Metal"
+    },
+    "Detail": {
+      "rgb": [
+        24,
+        25,
+        26
+      ],
+      "gloss": 0.17,
+      "reflectivity": 0.04,
+      "class": "Plastic"
+    },
+    "Graphite": {
+      "rgb": [
+        64,
+        67,
+        69
+      ],
+      "gloss": 0.36,
+      "reflectivity": 0.16,
+      "class": "Glass"
+    },
+    "Ceramic": {
+      "rgb": [
+        245,
+        245,
+        241
+      ],
+      "gloss": 0.86,
+      "reflectivity": 0.22,
+      "class": "Ceramic"
+    },
+    "Brass": {
+      "rgb": [
+        160,
+        124,
+        64
+      ],
+      "gloss": 0.4,
+      "reflectivity": 0.38,
+      "class": "Metal"
+    },
+    "Green": {
+      "rgb": [
+        31,
+        113,
+        66
+      ],
+      "gloss": 0.18,
+      "reflectivity": 0.05,
+      "class": "Plastic"
+    },
+    "Gray": {
+      "rgb": [
+        131,
+        132,
+        130
+      ],
+      "gloss": 0.32,
+      "reflectivity": 0.12,
+      "class": "Plastic"
+    }
+  },
+  "geometry": [
+    {
+      "name": "Spout wall plate",
+      "kind": "box",
+      "bounds": [
+        -1.3125,
+        -1.3125,
+        0,
+        1.3125,
+        1.3125,
+        0.375
+      ],
+      "radius": 0.1,
+      "material": "Finish"
+    },
+    {
+      "name": "Handle wall plate",
+      "kind": "box",
+      "bounds": [
+        6.6875,
+        -1.3125,
+        0,
+        9.3125,
+        1.3125,
+        0.375
+      ],
+      "radius": 0.1,
+      "material": "Finish"
+    },
+    {
+      "name": "Long wall spout",
+      "kind": "box",
+      "bounds": [
+        -0.75,
+        -0.4,
+        0.3,
+        0.75,
+        0.4,
+        9.5
+      ],
+      "radius": 0.08,
+      "material": "Finish"
+    },
+    {
+      "name": "Outlet insert",
+      "kind": "box",
+      "bounds": [
+        -0.6,
+        -0.44,
+        8.65,
+        0.6,
+        -0.38,
+        9.0
+      ],
+      "radius": 0,
+      "material": "Detail"
+    },
+    {
+      "name": "Valve body",
+      "kind": "box",
+      "bounds": [
+        7.45,
+        -0.55,
+        0.35,
+        8.55,
+        0.55,
+        1.75
+      ],
+      "radius": 0.1,
+      "material": "Finish"
+    },
+    {
+      "name": "Flat wall lever",
+      "kind": "box",
+      "bounds": [
+        7.7,
+        -0.25,
+        1.55,
+        11.25,
+        0.25,
+        1.78
+      ],
+      "radius": 0.12,
+      "material": "Finish"
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://assets.hansgrohe.com/celum/emailmarketing/hansgrohe_2026_Price_Book_en_US.pdf",
+      "document": "Hansgrohe 2026 US Price Book",
+      "page": 128,
+      "local_image": "_research/catalog_pages/page_128.png"
+    }
+  ],
+  "dimension_authority": [
+    "Two square plates 2.625 in; plate thickness .375 in; total projection 9.5 in; nominal reach 8.875 in."
+  ],
+  "limitations": [
+    "ASSUMPTION: 8 in spout-to-control centers because the catalog does not specify spacing.",
+    "Inventory calls this SKU a rough-in; the exact SKU is faucet trim. Required rough 13622181 is not included.",
+    "Rectangular section thicknesses and control geometry are drawing-derived.",
+    "Independent visualization reconstruction with fixed product dimensions and editable native materials.",
+    "Small fillets, seams, nozzle details and optical material response are inferred where the manufacturer does not dimension them.",
+    "No internal hydraulic performance, MEP connectors, fabrication tolerances or procurement substitutions are implied."
+  ],
+  "anchors": [
+    {
+      "label": "Plate width",
+      "parts": [
+        "Spout wall plate"
+      ],
+      "axis": 0,
+      "nominal_in": 2.625
+    },
+    {
+      "label": "Projection",
+      "parts": [
+        "Spout wall plate",
+        "Long wall spout"
+      ],
+      "axis": 2,
+      "nominal_in": 9.5
+    }
+  ],
+  "all_overall_dimensions_authoritative": false,
+  "rfa_search": {
+    "result": "No acceptable no-account RFA recovered",
+    "evidence": "_research/32526141/sources.json"
+  }
+}

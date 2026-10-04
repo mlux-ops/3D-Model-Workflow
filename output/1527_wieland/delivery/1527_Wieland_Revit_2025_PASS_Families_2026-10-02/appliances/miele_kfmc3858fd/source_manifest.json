@@ -1,0 +1,50 @@
+{
+  "model": "KFMC 3858 FD",
+  "slug": "miele_kfmc3858fd",
+  "status": "BUILT_WITH_LIMITATIONS",
+  "rfa": "miele_kfmc3858fd/miele_kfmc3858fd_Custom_R1_R2025.rfa",
+  "rfa_bytes": 507904,
+  "rfa_sha256": "b6bb3f3629dfc04b9851a521d78d7ffa16b6bfb90464e2c8d8ca30394aafc0ad",
+  "row_ids": [
+    2166795625103236,
+    1900063828279172
+  ],
+  "source_urls": [
+    "https://www.mieleusa.com/product/12489440/42-mastercool-frenchdoor-bottom-mount-unit-kfmc-3858-fd-compatible-with-furniture-fronts",
+    "https://media.miele.com/downloads/a5/64/03_70A8A51285B71FE1AC8273C8621BA564.zip",
+    "https://media.miele.com/downloads/n-/us/FS_12489440_USE_US-en-US.pdf"
+  ],
+  "original_rfas": [
+    {
+      "path": "miele_kfmc3858fd/source/original/12489440_USA_KFMC3858_FD.rfa",
+      "sha256": "9bb945361ff473e37de530438042435e7a8f70a59cda8e2716c82151d11e781e"
+    }
+  ],
+  "validation": "miele_kfmc3858fd/validation.json",
+  "previews": [
+    "miele_kfmc3858fd/views/rework_r1/oblique - 3D View - oblique.png",
+    "miele_kfmc3858fd/views/rework_r1/front - 3D View - front.png",
+    "miele_kfmc3858fd/views/rework_r1/side - 3D View - side.png"
+  ],
+  "revision": "Custom_R1",
+  "build_method": "native_custom_new_family",
+  "dimension_gate": true,
+  "dimension_gate_scope": "overall",
+  "native_gates_pass": true,
+  "replacement_reason": "Orchestrator round 1: exact-identity manufacturer working family fails the <=1 mm complete overall dimension gate. New native custom geometry replaces the working selection; OEM originals and prior working RFA remain preserved.",
+  "superseded_working_rfa": {
+    "path": "miele_kfmc3858fd/miele_kfmc3858fd_R2025.rfa",
+    "sha256": "33f4dda96d550daa71c7e359a83bc4c093ad19caa9514a3c80dd3de418f067de",
+    "status": "DOWNLOADED"
+  },
+  "source_pdf_sha256": "eab5869ceba00358a77db46cf342a80023fb8d7b8cfbd54f9ceb7dedad13db4d",
+  "source_page": 2,
+  "custom_build_entry": "miele_kfmc3858fd/source/build.py",
+  "build_support": [
+    "rework_round1/native_rebuild.py",
+    "rework_round1/validate_native.py",
+    "family_common.py"
+  ],
+  "validation_native_record": "miele_kfmc3858fd/source/rework_r1/validation.json",
+  "validation_sha256": "1c0b1bc1cb78d7965b07657c82cd46dbfe56cacecd690c6c96ac4f88ac90e379"
+}

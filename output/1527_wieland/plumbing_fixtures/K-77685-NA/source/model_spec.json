@@ -1,0 +1,186 @@
+{
+  "key": "K-77685-NA",
+  "model": "K-77685-NA",
+  "manufacturer": "Kohler",
+  "type_name": "K-77685-NA - white",
+  "basename": "Kohler_K-77685-NA_R2025",
+  "name": "Aquifer single-cartridge filter body",
+  "host": "floor",
+  "configured_dimensions_in": [
+    3.0625,
+    3.375,
+    12.125
+  ],
+  "materials": {
+    "Finish": {
+      "rgb": [
+        242,
+        243,
+        240
+      ],
+      "gloss": 0.17,
+      "reflectivity": 0.06,
+      "class": "Plastic"
+    },
+    "Detail": {
+      "rgb": [
+        24,
+        25,
+        26
+      ],
+      "gloss": 0.17,
+      "reflectivity": 0.04,
+      "class": "Plastic"
+    },
+    "Graphite": {
+      "rgb": [
+        64,
+        67,
+        69
+      ],
+      "gloss": 0.36,
+      "reflectivity": 0.16,
+      "class": "Glass"
+    },
+    "Ceramic": {
+      "rgb": [
+        245,
+        245,
+        241
+      ],
+      "gloss": 0.86,
+      "reflectivity": 0.22,
+      "class": "Ceramic"
+    },
+    "Brass": {
+      "rgb": [
+        160,
+        124,
+        64
+      ],
+      "gloss": 0.4,
+      "reflectivity": 0.38,
+      "class": "Metal"
+    },
+    "Green": {
+      "rgb": [
+        31,
+        113,
+        66
+      ],
+      "gloss": 0.18,
+      "reflectivity": 0.05,
+      "class": "Plastic"
+    },
+    "Gray": {
+      "rgb": [
+        131,
+        132,
+        130
+      ],
+      "gloss": 0.32,
+      "reflectivity": 0.12,
+      "class": "Plastic"
+    }
+  },
+  "geometry": [
+    {
+      "name": "Filter cartridge",
+      "kind": "cylinder",
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "radius": 1.475,
+      "a": 0,
+      "b": 8.35,
+      "material": "Finish"
+    },
+    {
+      "name": "Twist collar",
+      "kind": "cylinder",
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "radius": 1.5,
+      "a": 8.3,
+      "b": 8.95,
+      "material": "Finish"
+    },
+    {
+      "name": "Rounded manifold cover",
+      "kind": "box",
+      "bounds": [
+        -1.53125,
+        -1.5,
+        8.8,
+        1.53125,
+        1.5,
+        12.125
+      ],
+      "radius": 0.3,
+      "material": "Finish"
+    },
+    {
+      "name": "Back mounting bracket",
+      "kind": "box",
+      "bounds": [
+        -1.35,
+        1.4,
+        9.1,
+        1.35,
+        1.875,
+        12.1
+      ],
+      "radius": 0.12,
+      "material": "Gray"
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://techcomm.kohler.com/techcomm/pdf/K-77685_spec_US-CA_Kohler_en.pdf",
+      "document": "Kohler K-77685 specification, 2026-10-01",
+      "page": 3,
+      "local_image": "_research/K-77685-NA/downloads/K-77685_spec_US-CA_Kohler_en_pages/page_03.png"
+    }
+  ],
+  "dimension_authority": [
+    "Body height 12.125 in, front width 3.0625 in, and total bracket depth 3.375 in."
+  ],
+  "limitations": [
+    "The two 24-inch connection tubes are installation-dependent and omitted from this rigid-body family.",
+    "Cartridge/manifold split and small corner radii are drawing-derived.",
+    "Independent visualization reconstruction with fixed product dimensions and editable native materials.",
+    "Small fillets, seams, nozzle details and optical material response are inferred where the manufacturer does not dimension them.",
+    "No internal hydraulic performance, MEP connectors, fabrication tolerances or procurement substitutions are implied."
+  ],
+  "anchors": [
+    {
+      "label": "Body height",
+      "parts": [
+        "Filter cartridge",
+        "Rounded manifold cover"
+      ],
+      "axis": 2,
+      "nominal_in": 12.125
+    }
+  ],
+  "all_overall_dimensions_authoritative": true,
+  "rfa_search": {
+    "result": "No acceptable no-account RFA recovered",
+    "evidence": "_research/K-77685-NA/sources.json"
+  }
+}

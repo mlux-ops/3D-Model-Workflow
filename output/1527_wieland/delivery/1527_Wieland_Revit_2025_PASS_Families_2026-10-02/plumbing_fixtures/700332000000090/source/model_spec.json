@@ -1,0 +1,271 @@
+{
+  "key": "700332000000090",
+  "model": "700332000000090",
+  "manufacturer": "Duravit",
+  "type_name": "700332000000090 - White",
+  "basename": "Duravit_700332000000090_R2025",
+  "name": "Starck 59-inch built-in bath body",
+  "host": "floor",
+  "configured_dimensions_in": [
+    59,
+    29.5,
+    18.875
+  ],
+  "materials": {
+    "Finish": {
+      "rgb": [
+        245,
+        245,
+        241
+      ],
+      "gloss": 0.86,
+      "reflectivity": 0.22,
+      "class": "Ceramic"
+    },
+    "Detail": {
+      "rgb": [
+        24,
+        25,
+        26
+      ],
+      "gloss": 0.17,
+      "reflectivity": 0.04,
+      "class": "Plastic"
+    },
+    "Graphite": {
+      "rgb": [
+        64,
+        67,
+        69
+      ],
+      "gloss": 0.36,
+      "reflectivity": 0.16,
+      "class": "Glass"
+    },
+    "Ceramic": {
+      "rgb": [
+        245,
+        245,
+        241
+      ],
+      "gloss": 0.86,
+      "reflectivity": 0.22,
+      "class": "Ceramic"
+    },
+    "Brass": {
+      "rgb": [
+        160,
+        124,
+        64
+      ],
+      "gloss": 0.4,
+      "reflectivity": 0.38,
+      "class": "Metal"
+    },
+    "Green": {
+      "rgb": [
+        31,
+        113,
+        66
+      ],
+      "gloss": 0.18,
+      "reflectivity": 0.05,
+      "class": "Plastic"
+    },
+    "Gray": {
+      "rgb": [
+        131,
+        132,
+        130
+      ],
+      "gloss": 0.32,
+      "reflectivity": 0.12,
+      "class": "Plastic"
+    }
+  },
+  "geometry": [
+    {
+      "kind": "cut",
+      "name": "Open acrylic tub body",
+      "base": {
+        "kind": "loft",
+        "sections": [
+          {
+            "center": [
+              0,
+              0,
+              0
+            ],
+            "size": [
+              53,
+              23.7
+            ],
+            "radius": 2.3
+          },
+          {
+            "center": [
+              0,
+              0,
+              18.625
+            ],
+            "size": [
+              57.5,
+              28.0
+            ],
+            "radius": 1.1
+          }
+        ]
+      },
+      "cutters": [
+        {
+          "kind": "loft",
+          "sections": [
+            {
+              "center": [
+                0,
+                0,
+                1
+              ],
+              "size": [
+                43,
+                18
+              ],
+              "radius": 3.5
+            },
+            {
+              "center": [
+                0,
+                0,
+                19.25
+              ],
+              "size": [
+                55.25,
+                25.5
+              ],
+              "radius": 2.3
+            }
+          ]
+        },
+        {
+          "name": "Drain opening",
+          "kind": "cylinder",
+          "origin": [
+            -22,
+            0,
+            0
+          ],
+          "axis": [
+            0,
+            0,
+            1
+          ],
+          "radius": 1.0625,
+          "a": -1,
+          "b": 2,
+          "material": "Finish"
+        },
+        {
+          "name": "Overflow opening",
+          "kind": "cylinder",
+          "origin": [
+            -30,
+            0,
+            15.6
+          ],
+          "axis": [
+            1,
+            0,
+            0
+          ],
+          "radius": 0.75,
+          "a": 0,
+          "b": 5,
+          "material": "Finish"
+        }
+      ]
+    },
+    {
+      "kind": "cut",
+      "name": "Rectangular rim",
+      "base": {
+        "name": "Rim",
+        "kind": "box",
+        "bounds": [
+          -29.5,
+          -14.75,
+          18.5,
+          29.5,
+          14.75,
+          18.875
+        ],
+        "radius": 1.1,
+        "material": "Finish"
+      },
+      "cutters": [
+        {
+          "kind": "loft",
+          "sections": [
+            {
+              "center": [
+                0,
+                0,
+                1
+              ],
+              "size": [
+                43,
+                18
+              ],
+              "radius": 3.5
+            },
+            {
+              "center": [
+                0,
+                0,
+                19.25
+              ],
+              "size": [
+                55.25,
+                25.5
+              ],
+              "radius": 2.3
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://pro.duravit.us/pro/content/homepage/series/series/overview/products~402880943a1b6e1b013a1bd20b39003d.us-en.html?nser=1110&product=3169419&ncat=bathtubs",
+      "document": "Duravit 700332000000090 official product dimensions",
+      "page": 1,
+      "visual_review_method": "Manufacturer web PDF screenshot"
+    }
+  ],
+  "dimension_authority": [
+    "Official body dimensions 59 x 29.5 x 18.875 in."
+  ],
+  "limitations": [
+    "The scheduled SKU includes a support frame; its concealed, installation-dependent frame is omitted from this visible tub-body family.",
+    "Interior slopes, floor profile, drain location and overflow diameter are drawing-derived.",
+    "Manufacturer lists STEP/DWG/DXF for this exact model but no public RFA on the inspected page.",
+    "Independent visualization reconstruction with fixed product dimensions and editable native materials.",
+    "Small fillets, seams, nozzle details and optical material response are inferred where the manufacturer does not dimension them.",
+    "No internal hydraulic performance, MEP connectors, fabrication tolerances or procurement substitutions are implied."
+  ],
+  "anchors": [
+    {
+      "label": "Rim length",
+      "parts": [
+        "Rectangular rim"
+      ],
+      "axis": 0,
+      "nominal_in": 59
+    }
+  ],
+  "all_overall_dimensions_authoritative": true,
+  "rfa_search": {
+    "result": "No acceptable no-account RFA recovered",
+    "evidence": "_research/700332000000090/sources.json"
+  }
+}

@@ -1,0 +1,210 @@
+{
+  "all_acceptance_gates_pass": false,
+  "placement_type": "WorkPlaneBased",
+  "original_category": "Specialty Equipment",
+  "material_parameters": [
+    "Handle",
+    "Unit"
+  ],
+  "parameter_flex": [
+    {
+      "material_element_references": 4,
+      "changed_parameter": true,
+      "restored": true,
+      "pass": true,
+      "name": "Handle"
+    },
+    {
+      "material_element_references": 4,
+      "changed_parameter": true,
+      "restored": true,
+      "pass": true,
+      "name": "Unit"
+    }
+  ],
+  "stage": "saved_reopened_measured_flexed_placed_previewed",
+  "ok": true,
+  "reopened": true,
+  "brand": "Thermador",
+  "warnings": [],
+  "material_inventory": [
+    {
+      "appearance_id": "7786",
+      "name": "Stainless Steel",
+      "rgb": [
+        189,
+        187,
+        185
+      ]
+    },
+    {
+      "appearance_id": "8202",
+      "name": "Plastic-Black",
+      "rgb": [
+        69,
+        69,
+        69
+      ]
+    },
+    {
+      "appearance_id": "46022",
+      "name": "Analytical Panels",
+      "rgb": [
+        251,
+        197,
+        153
+      ]
+    }
+  ],
+  "saved_revit_format": "2025",
+  "family_bounds": {
+    "max_mm": [
+      377.82501211166385,
+      311.15001211166384,
+      239.7124939441681
+    ],
+    "parts": [
+      {
+        "class": "Extrusion",
+        "min_mm": [
+          -377.82501211166385,
+          -311.15001211166384,
+          3.113242996732879e-11
+        ],
+        "id": 44953,
+        "name": "Extrusion",
+        "max_mm": [
+          377.82501211166385,
+          -285.75,
+          239.7124939441681
+        ]
+      },
+      {
+        "class": "GeomCombination",
+        "min_mm": [
+          -357.9812378883362,
+          -285.75,
+          3.0827873587213615e-11
+        ],
+        "id": 45172,
+        "name": "Joined Solid Geometry",
+        "max_mm": [
+          357.9812378883362,
+          311.15001211166384,
+          230.1874939441681
+        ]
+      },
+      {
+        "class": "GeomCombination",
+        "min_mm": [
+          -339.72501211166383,
+          -370.13718194961547,
+          174.1295602798462
+        ],
+        "id": 45480,
+        "name": "Joined Solid Geometry",
+        "max_mm": [
+          349.02498950958255,
+          -311.15001211166384,
+          199.523104763031
+        ]
+      }
+    ],
+    "xyz_size_mm": [
+      755.6500242233277,
+      681.2871940612793,
+      239.71249394413726
+    ],
+    "min_mm": [
+      -377.82501211166385,
+      -370.13718194961547,
+      3.0827873587213615e-11
+    ]
+  },
+  "previews": [
+    "E:\\Claude\\3D-Model-Workflow\\output\\1527_wieland\\appliances\\thermador_wd30w\\views\\placed_oblique - 3D View - placed_oblique.png"
+  ],
+  "category": "Specialty Equipment",
+  "dimension_delta_mm": [
+    2.422332772766822e-05,
+    58.9871940612793,
+    -6.055862741050078e-06
+  ],
+  "dimension_gate_scope": "full native geometry versus published appliance envelope",
+  "appearance_repairs": [],
+  "preview_refresh_utc": "2026-10-02 14:31:21.294000",
+  "started_utc": "2026-10-02 14:26:19.625000",
+  "limitations": [
+    "Full native geometry differs by more than 1 mm from at least one published envelope dimension. Do not treat as dimensional acceptance; compare handles, flanges, panels, feet and original source geometry."
+  ],
+  "target_xyz_mm": [
+    755.65,
+    622.3,
+    239.7125
+  ],
+  "source_revit_format": "2025",
+  "finished_utc": "2026-10-02 14:26:21.547000",
+  "manufacturer_original": "E:\\Claude\\3D-Model-Workflow\\output\\1527_wieland\\appliances\\thermador_wd30w\\source\\original\\WD30W-Thermador-TradeCAD\\WD30W-3D.rfa",
+  "dimension_gate": false,
+  "slug": "thermador_wd30w",
+  "model": "WD30W",
+  "dimension_basis": "29 3/4 x 24 1/2 x 9 7/16 in with 3/4-inch customer panel; handle projection additional.",
+  "saved_rfa": "E:\\Claude\\3D-Model-Workflow\\output\\1527_wieland\\appliances\\thermador_wd30w\\thermador_wd30w_R2025.rfa",
+  "placed_warnings": [],
+  "placement": {
+    "loaded": true,
+    "placed": true,
+    "placement_type": "WorkPlaneBased",
+    "type": "WD30W",
+    "host_category": "Floors",
+    "family_category": "Specialty Equipment"
+  },
+  "placed_bounds": {
+    "max_mm": [
+      377.82501211166385,
+      311.15001211166384,
+      239.7124939441681
+    ],
+    "parts": [
+      {
+        "class": "FamilyInstance",
+        "min_mm": [
+          -377.82501211166385,
+          -370.13718194961547,
+          3.0827873587213615e-11
+        ],
+        "id": 3708,
+        "name": "WD30W",
+        "max_mm": [
+          377.82501211166385,
+          311.15001211166384,
+          239.7124939441681
+        ]
+      }
+    ],
+    "xyz_size_mm": [
+      755.6500242233277,
+      681.2871940612793,
+      239.71249394413726
+    ],
+    "min_mm": [
+      -377.82501211166385,
+      -370.13718194961547,
+      3.0827873587213615e-11
+    ]
+  },
+  "status": "DOWNLOADED",
+  "visual_review": {
+    "reviewed_utc": "2026-10-02T14:36:37.369028+00:00",
+    "reviewer": "worker-1",
+    "method": "Direct visual inspection of native images and manufacturer reference imagery; manufacturer batch contact sheets used for overview.",
+    "images": [
+      {
+        "path": "thermador_wd30w/views/placed_oblique - 3D View - placed_oblique.png",
+        "sha256": "5648dab80501af10901ab3d1c5e7dc31e9dc54e96a7d6b23433b50aeae9df72b"
+      }
+    ],
+    "observation": "Single warming-drawer front and horizontal pull are visible. This is not the Zephyr hood described in the conflicting row; customer panel/handle configuration remains an assumption.",
+    "design_or_photographic_approval": false
+  }
+}

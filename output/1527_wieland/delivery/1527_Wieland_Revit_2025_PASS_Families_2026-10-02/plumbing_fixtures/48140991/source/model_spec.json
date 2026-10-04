@@ -1,0 +1,535 @@
+{
+  "key": "48140991",
+  "model": "48140991",
+  "manufacturer": "AXOR",
+  "type_name": "48140991 - gold",
+  "basename": "AXOR_48140991_R2025",
+  "name": "AXOR ONE wall widespread cross-handle faucet",
+  "host": "wall",
+  "configured_dimensions_in": [
+    10.75,
+    3.02463381270498,
+    9.036115521593835
+  ],
+  "materials": {
+    "Finish": {
+      "rgb": [
+        195,
+        159,
+        90
+      ],
+      "gloss": 0.96,
+      "reflectivity": 0.8,
+      "class": "Metal"
+    },
+    "Detail": {
+      "rgb": [
+        24,
+        25,
+        26
+      ],
+      "gloss": 0.17,
+      "reflectivity": 0.04,
+      "class": "Plastic"
+    },
+    "Graphite": {
+      "rgb": [
+        64,
+        67,
+        69
+      ],
+      "gloss": 0.36,
+      "reflectivity": 0.16,
+      "class": "Glass"
+    },
+    "Ceramic": {
+      "rgb": [
+        245,
+        245,
+        241
+      ],
+      "gloss": 0.86,
+      "reflectivity": 0.22,
+      "class": "Ceramic"
+    },
+    "Brass": {
+      "rgb": [
+        160,
+        124,
+        64
+      ],
+      "gloss": 0.4,
+      "reflectivity": 0.38,
+      "class": "Metal"
+    },
+    "Green": {
+      "rgb": [
+        31,
+        113,
+        66
+      ],
+      "gloss": 0.18,
+      "reflectivity": 0.05,
+      "class": "Plastic"
+    },
+    "Gray": {
+      "rgb": [
+        131,
+        132,
+        130
+      ],
+      "gloss": 0.32,
+      "reflectivity": 0.12,
+      "class": "Plastic"
+    }
+  },
+  "geometry": [
+    {
+      "name": "Left escutcheon",
+      "kind": "cylinder",
+      "origin": [
+        -4,
+        0,
+        0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "radius": 1.1875,
+      "a": 0,
+      "b": 0.1875,
+      "material": "Finish"
+    },
+    {
+      "name": "Spout escutcheon",
+      "kind": "cylinder",
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "radius": 1.1875,
+      "a": 0,
+      "b": 0.1875,
+      "material": "Finish"
+    },
+    {
+      "name": "Right escutcheon",
+      "kind": "cylinder",
+      "origin": [
+        4,
+        0,
+        0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "radius": 1.1875,
+      "a": 0,
+      "b": 0.1875,
+      "material": "Finish"
+    },
+    {
+      "name": "Left handle neck",
+      "kind": "cylinder",
+      "origin": [
+        -4,
+        0,
+        0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "radius": 0.47,
+      "a": 0.15,
+      "b": 1.15,
+      "material": "Finish"
+    },
+    {
+      "name": "Left handle hub",
+      "kind": "cylinder",
+      "origin": [
+        -4,
+        0,
+        0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "radius": 0.36,
+      "a": 0.85,
+      "b": 1.42,
+      "material": "Finish"
+    },
+    {
+      "kind": "profile",
+      "name": "Left sculpted cross handle",
+      "origin": [
+        -4,
+        0,
+        1.1
+      ],
+      "u": [
+        1,
+        0,
+        0
+      ],
+      "v": [
+        0,
+        1,
+        0
+      ],
+      "normal": [
+        0,
+        0,
+        1
+      ],
+      "points": [
+        [
+          -0.12,
+          1.375
+        ],
+        [
+          0.12,
+          1.375
+        ],
+        [
+          0.16,
+          0.62
+        ],
+        [
+          "arc",
+          [
+            0.28,
+            0.28
+          ],
+          [
+            0.62,
+            0.16
+          ]
+        ],
+        [
+          1.375,
+          0.12
+        ],
+        [
+          1.375,
+          -0.12
+        ],
+        [
+          0.62,
+          -0.16
+        ],
+        [
+          "arc",
+          [
+            0.28,
+            -0.28
+          ],
+          [
+            0.16,
+            -0.62
+          ]
+        ],
+        [
+          0.12,
+          -1.375
+        ],
+        [
+          -0.12,
+          -1.375
+        ],
+        [
+          -0.16,
+          -0.62
+        ],
+        [
+          "arc",
+          [
+            -0.28,
+            -0.28
+          ],
+          [
+            -0.62,
+            -0.16
+          ]
+        ],
+        [
+          -1.375,
+          -0.12
+        ],
+        [
+          -1.375,
+          0.12
+        ],
+        [
+          -0.62,
+          0.16
+        ],
+        [
+          "arc",
+          [
+            -0.28,
+            0.28
+          ],
+          [
+            -0.16,
+            0.62
+          ]
+        ]
+      ],
+      "length": 0.3
+    },
+    {
+      "name": "Right handle neck",
+      "kind": "cylinder",
+      "origin": [
+        4,
+        0,
+        0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "radius": 0.47,
+      "a": 0.15,
+      "b": 1.15,
+      "material": "Finish"
+    },
+    {
+      "name": "Right handle hub",
+      "kind": "cylinder",
+      "origin": [
+        4,
+        0,
+        0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "radius": 0.36,
+      "a": 0.85,
+      "b": 1.42,
+      "material": "Finish"
+    },
+    {
+      "kind": "profile",
+      "name": "Right sculpted cross handle",
+      "origin": [
+        4,
+        0,
+        1.1
+      ],
+      "u": [
+        1,
+        0,
+        0
+      ],
+      "v": [
+        0,
+        1,
+        0
+      ],
+      "normal": [
+        0,
+        0,
+        1
+      ],
+      "points": [
+        [
+          -0.12,
+          1.375
+        ],
+        [
+          0.12,
+          1.375
+        ],
+        [
+          0.16,
+          0.62
+        ],
+        [
+          "arc",
+          [
+            0.28,
+            0.28
+          ],
+          [
+            0.62,
+            0.16
+          ]
+        ],
+        [
+          1.375,
+          0.12
+        ],
+        [
+          1.375,
+          -0.12
+        ],
+        [
+          0.62,
+          -0.16
+        ],
+        [
+          "arc",
+          [
+            0.28,
+            -0.28
+          ],
+          [
+            0.16,
+            -0.62
+          ]
+        ],
+        [
+          0.12,
+          -1.375
+        ],
+        [
+          -0.12,
+          -1.375
+        ],
+        [
+          -0.16,
+          -0.62
+        ],
+        [
+          "arc",
+          [
+            -0.28,
+            -0.28
+          ],
+          [
+            -0.62,
+            -0.16
+          ]
+        ],
+        [
+          -1.375,
+          -0.12
+        ],
+        [
+          -1.375,
+          0.12
+        ],
+        [
+          -0.62,
+          0.16
+        ],
+        [
+          "arc",
+          [
+            -0.28,
+            0.28
+          ],
+          [
+            -0.16,
+            0.62
+          ]
+        ]
+      ],
+      "length": 0.3
+    },
+    {
+      "name": "Continuous angled outlet",
+      "kind": "sweep",
+      "path": [
+        [
+          0,
+          0,
+          0.2
+        ],
+        [
+          0,
+          0,
+          6.482777989886828
+        ],
+        [
+          "arc",
+          [
+            0,
+            -0.41227999735070775,
+            7.790363086602651
+          ],
+          [
+            0,
+            -1.5,
+            8.625
+          ]
+        ]
+      ],
+      "radius": 0.4375,
+      "material": "Finish"
+    },
+    {
+      "name": "Outlet insert",
+      "kind": "cylinder",
+      "origin": [
+        0,
+        -1.5,
+        8.625
+      ],
+      "axis": [
+        0,
+        0.9396926207859084,
+        -0.3420201433256687
+      ],
+      "radius": 0.34,
+      "a": 0,
+      "b": 0.04,
+      "material": "Detail"
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://assets.hansgrohe.com/mam/celum/celum_assets/153__amu01065_eps.jpg?format=HBW7",
+      "document": "AXOR ONE 48140991 dimension drawing",
+      "page": 1,
+      "local_image": "_research/48140991/downloads/AXOR_ONE_48140991_dimensions.jpg"
+    }
+  ],
+  "dimension_authority": [
+    "8 in centers; escutcheons diameter 2.375 in; cross handle axis-to-tip 1.375 in; tube diameter 0.875 in; outlet center reach 8.625 in; nominal projection 9 in."
+  ],
+  "limitations": [
+    "Finish 991 verified as Polished Gold Optic on the exact manufacturer product page.",
+    "Cross junction fillets, handle neck and coating response are inferred.",
+    "Outlet bend is a circular reconstruction from the 1.5 in drop and 20 degree outlet axis; its calculated outer projection is 9.036 in, within 1 mm of nominal 9 in.",
+    "Independent visualization reconstruction with fixed product dimensions and editable native materials.",
+    "Small fillets, seams, nozzle details and optical material response are inferred where the manufacturer does not dimension them.",
+    "No internal hydraulic performance, MEP connectors, fabrication tolerances or procurement substitutions are implied."
+  ],
+  "anchors": [
+    {
+      "label": "Escutcheon diameter",
+      "parts": [
+        "Spout escutcheon"
+      ],
+      "axis": 0,
+      "nominal_in": 2.375
+    }
+  ],
+  "all_overall_dimensions_authoritative": false,
+  "rfa_search": {
+    "result": "No acceptable no-account RFA recovered",
+    "evidence": "_research/48140991/sources.json"
+  }
+}

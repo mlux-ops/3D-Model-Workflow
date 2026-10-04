@@ -1,0 +1,174 @@
+{
+  "key": "04186703",
+  "model": "04186703",
+  "manufacturer": "Hansgrohe",
+  "type_name": "04186703 - White",
+  "basename": "Hansgrohe_04186703_R2025",
+  "name": "Standard 9-inch showerarm with flange",
+  "host": "wall",
+  "configured_dimensions_in": [
+    2.5,
+    3.75,
+    9.25
+  ],
+  "materials": {
+    "Finish": {
+      "rgb": [
+        242,
+        243,
+        240
+      ],
+      "gloss": 0.17,
+      "reflectivity": 0.06,
+      "class": "Plastic"
+    },
+    "Detail": {
+      "rgb": [
+        24,
+        25,
+        26
+      ],
+      "gloss": 0.17,
+      "reflectivity": 0.04,
+      "class": "Plastic"
+    },
+    "Graphite": {
+      "rgb": [
+        64,
+        67,
+        69
+      ],
+      "gloss": 0.36,
+      "reflectivity": 0.16,
+      "class": "Glass"
+    },
+    "Ceramic": {
+      "rgb": [
+        245,
+        245,
+        241
+      ],
+      "gloss": 0.86,
+      "reflectivity": 0.22,
+      "class": "Ceramic"
+    },
+    "Brass": {
+      "rgb": [
+        160,
+        124,
+        64
+      ],
+      "gloss": 0.4,
+      "reflectivity": 0.38,
+      "class": "Metal"
+    },
+    "Green": {
+      "rgb": [
+        31,
+        113,
+        66
+      ],
+      "gloss": 0.18,
+      "reflectivity": 0.05,
+      "class": "Plastic"
+    },
+    "Gray": {
+      "rgb": [
+        131,
+        132,
+        130
+      ],
+      "gloss": 0.32,
+      "reflectivity": 0.12,
+      "class": "Plastic"
+    }
+  },
+  "geometry": [
+    {
+      "name": "Wall flange",
+      "kind": "cylinder",
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "radius": 1.25,
+      "a": 0,
+      "b": 0.1875,
+      "material": "Finish"
+    },
+    {
+      "name": "Bent standard shower arm",
+      "kind": "sweep",
+      "path": [
+        [
+          0,
+          0,
+          0.15
+        ],
+        [
+          0,
+          0,
+          6.025126265847083
+        ],
+        [
+          "arc",
+          [
+            0,
+            -0.1332108181052482,
+            6.6948222724859905
+          ],
+          [
+            0,
+            -0.5125631329235417,
+            7.262563132923542
+          ]
+        ],
+        [
+          0,
+          -2.2348349570550448,
+          8.984834957055044
+        ]
+      ],
+      "radius": 0.375,
+      "material": "Finish"
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://assets.hansgrohe.com/celum/emailmarketing/hansgrohe_2026_Price_Book_en_US.pdf",
+      "document": "Hansgrohe 2026 US Price Book",
+      "page": 204,
+      "local_image": "_research/catalog_pages/page_204.png"
+    }
+  ],
+  "dimension_authority": [
+    "Flange diameter 2.5 in; total projection 9.25 in; connection drop 2.5 in below axis."
+  ],
+  "limitations": [
+    "Pipe radius and bend radius are drawing-derived. Threads omitted. Matte-white scheduled legacy variant retained.",
+    "Independent visualization reconstruction with fixed product dimensions and editable native materials.",
+    "Small fillets, seams, nozzle details and optical material response are inferred where the manufacturer does not dimension them.",
+    "No internal hydraulic performance, MEP connectors, fabrication tolerances or procurement substitutions are implied."
+  ],
+  "anchors": [
+    {
+      "label": "Flange diameter",
+      "parts": [
+        "Wall flange"
+      ],
+      "axis": 0,
+      "nominal_in": 2.5
+    }
+  ],
+  "all_overall_dimensions_authoritative": true,
+  "rfa_search": {
+    "result": "No acceptable no-account RFA recovered",
+    "evidence": "_research/04186703/sources.json"
+  }
+}

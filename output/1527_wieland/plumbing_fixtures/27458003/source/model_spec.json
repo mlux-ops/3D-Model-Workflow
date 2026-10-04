@@ -1,0 +1,201 @@
+{
+  "key": "27458003",
+  "model": "27458003",
+  "manufacturer": "Hansgrohe",
+  "type_name": "27458003 - chrome",
+  "basename": "Hansgrohe_27458003_R2025",
+  "name": "FixFit round wall outlet with check valve",
+  "host": "wall",
+  "configured_dimensions_in": [
+    2.5,
+    2.87,
+    1.875
+  ],
+  "materials": {
+    "Finish": {
+      "rgb": [
+        195,
+        198,
+        201
+      ],
+      "gloss": 0.96,
+      "reflectivity": 0.88,
+      "class": "Metal"
+    },
+    "Detail": {
+      "rgb": [
+        24,
+        25,
+        26
+      ],
+      "gloss": 0.17,
+      "reflectivity": 0.04,
+      "class": "Plastic"
+    },
+    "Graphite": {
+      "rgb": [
+        64,
+        67,
+        69
+      ],
+      "gloss": 0.36,
+      "reflectivity": 0.16,
+      "class": "Glass"
+    },
+    "Ceramic": {
+      "rgb": [
+        245,
+        245,
+        241
+      ],
+      "gloss": 0.86,
+      "reflectivity": 0.22,
+      "class": "Ceramic"
+    },
+    "Brass": {
+      "rgb": [
+        160,
+        124,
+        64
+      ],
+      "gloss": 0.4,
+      "reflectivity": 0.38,
+      "class": "Metal"
+    },
+    "Green": {
+      "rgb": [
+        31,
+        113,
+        66
+      ],
+      "gloss": 0.18,
+      "reflectivity": 0.05,
+      "class": "Plastic"
+    },
+    "Gray": {
+      "rgb": [
+        131,
+        132,
+        130
+      ],
+      "gloss": 0.32,
+      "reflectivity": 0.12,
+      "class": "Plastic"
+    }
+  },
+  "geometry": [
+    {
+      "name": "Round flange",
+      "kind": "cylinder",
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "radius": 1.25,
+      "a": 0,
+      "b": 0.7,
+      "material": "Finish"
+    },
+    {
+      "name": "Rounded outlet shell",
+      "kind": "revolve",
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "profile": [
+        [
+          0,
+          0.6
+        ],
+        [
+          1.25,
+          0.6
+        ],
+        [
+          1.25,
+          0.9
+        ],
+        [
+          "arc",
+          [
+            1.087983067775744,
+            1.4724126570927656
+          ],
+          [
+            0.65,
+            1.875
+          ]
+        ],
+        [
+          0,
+          1.875
+        ]
+      ],
+      "material": "Finish"
+    },
+    {
+      "name": "Downward hose outlet",
+      "kind": "cylinder",
+      "origin": [
+        0,
+        0,
+        1.2
+      ],
+      "axis": [
+        0,
+        -1,
+        0
+      ],
+      "radius": 0.375,
+      "a": 0.6,
+      "b": 1.62,
+      "material": "Finish"
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://assets.hansgrohe.com/celum/emailmarketing/hansgrohe_2026_Price_Book_en_US.pdf",
+      "document": "Hansgrohe 2026 US Price Book",
+      "page": 272,
+      "local_image": "_research/catalog_pages/page_272.png"
+    }
+  ],
+  "dimension_authority": [
+    "Body diameter 2.5 in; projection 1.875 in."
+  ],
+  "limitations": [
+    "Underside threaded connection extends below the dimensioned body; its 0.37 in exposed extension is drawing-derived.",
+    "Rounded shell and concealed check valve are simplified.",
+    "Independent visualization reconstruction with fixed product dimensions and editable native materials.",
+    "Small fillets, seams, nozzle details and optical material response are inferred where the manufacturer does not dimension them.",
+    "No internal hydraulic performance, MEP connectors, fabrication tolerances or procurement substitutions are implied."
+  ],
+  "anchors": [
+    {
+      "label": "Flange diameter",
+      "parts": [
+        "Round flange"
+      ],
+      "axis": 0,
+      "nominal_in": 2.5
+    }
+  ],
+  "all_overall_dimensions_authoritative": false,
+  "rfa_search": {
+    "result": "No acceptable no-account RFA recovered",
+    "evidence": "_research/27458003/sources.json"
+  }
+}

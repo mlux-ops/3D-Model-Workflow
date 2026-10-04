@@ -1,0 +1,62 @@
+{
+  "model": "PCG486WD",
+  "slug": "thermador_pcg486wd",
+  "status": "BUILT_WITH_LIMITATIONS",
+  "rfa": "thermador_pcg486wd/thermador_pcg486wd_Custom_R1_R2025.rfa",
+  "rfa_bytes": 598016,
+  "rfa_sha256": "bd01ca911e2a6dffe9731c667046a839dad2e897d27a37daacf533381cf41dcf",
+  "row_ids": [
+    8955028301086596
+  ],
+  "source_urls": [
+    "https://www.thermador.com/us/en/mkt-product/cooktops-rangetops/rangetops/PCG486WD",
+    "https://media3.bsh-group.com/3D_Asset/15802529_PCG486WD-Thermador-TradeCAD.zip",
+    "https://media3.bsh-group.com/3D_Asset/29485643_PCG486WD_TradeCAD.zip",
+    "https://media3.bsh-group.com/Documents/MCDOC02690629_PCG486WD-48-INCH-GAS-RANGETOP-WITH-GRIDDLE-Specifications.pdf"
+  ],
+  "original_rfas": [
+    {
+      "path": "thermador_pcg486wd/source/original/PCG486WD-Thermador-TradeCAD/PCG486WD-2D.rfa",
+      "sha256": "e42658b6954c29fd65d05ad26bd9fa57e9fb88e00833ae129c0f2b2d639a8174"
+    },
+    {
+      "path": "thermador_pcg486wd/source/original/PCG486WD-Thermador-TradeCAD/PCG486WD-3D.rfa",
+      "sha256": "e42658b6954c29fd65d05ad26bd9fa57e9fb88e00833ae129c0f2b2d639a8174"
+    },
+    {
+      "path": "thermador_pcg486wd/source/original/PCG486WD.rfa",
+      "sha256": "c98275858ea0181f8fae1b9bc583840e25cefbe6e222b4e191d2b3b145604ef0"
+    },
+    {
+      "path": "thermador_pcg486wd/source/original/PCG486WD_2D.rfa",
+      "sha256": "0d3b4e25d77eec41aad99be8cfdfcfc4015389e217966e56bc1e1b7c0a1ce42a"
+    }
+  ],
+  "validation": "thermador_pcg486wd/validation.json",
+  "previews": [
+    "thermador_pcg486wd/views/rework_r1/oblique - 3D View - oblique.png",
+    "thermador_pcg486wd/views/rework_r1/front - 3D View - front.png",
+    "thermador_pcg486wd/views/rework_r1/side - 3D View - side.png"
+  ],
+  "revision": "Custom_R1",
+  "build_method": "native_custom_new_family",
+  "dimension_gate": true,
+  "dimension_gate_scope": "overall",
+  "native_gates_pass": true,
+  "replacement_reason": "Orchestrator round 1: exact-identity manufacturer working family fails the <=1 mm complete overall dimension gate. New native custom geometry replaces the working selection; OEM originals and prior working RFA remain preserved.",
+  "superseded_working_rfa": {
+    "path": "thermador_pcg486wd/thermador_pcg486wd_R2025.rfa",
+    "sha256": "356457f2f43ca992a3c733ae59c551261e8d6ff28701e31d4947a7fc7d78f0aa",
+    "status": "DOWNLOADED"
+  },
+  "source_pdf_sha256": "b32a34ccbae59e9466010bb2dcbc58f609bd2bc723354372d677d20bf5b2fc22",
+  "source_page": 1,
+  "custom_build_entry": "thermador_pcg486wd/source/build.py",
+  "build_support": [
+    "rework_round1/native_rebuild.py",
+    "rework_round1/validate_native.py",
+    "family_common.py"
+  ],
+  "validation_native_record": "thermador_pcg486wd/source/rework_r1/validation.json",
+  "validation_sha256": "942db2f84b67ff2f617d77a7027be73c1cab5ba58381d25b84e3c26890ddb2b6"
+}

@@ -1,0 +1,194 @@
+{
+  "key": "RP71648BNX",
+  "model": "RP71648BNX",
+  "manufacturer": "Brizo",
+  "type_name": "RP71648BNX - Brilliance Black Onyx -  Black",
+  "basename": "Brizo_RP71648BNX_R2025",
+  "name": "16-inch round wall shower arm and flange",
+  "host": "wall",
+  "configured_dimensions_in": [
+    2.5,
+    3.75,
+    16
+  ],
+  "materials": {
+    "Finish": {
+      "rgb": [
+        58,
+        60,
+        62
+      ],
+      "gloss": 0.92,
+      "reflectivity": 0.72,
+      "class": "Metal"
+    },
+    "Detail": {
+      "rgb": [
+        24,
+        25,
+        26
+      ],
+      "gloss": 0.17,
+      "reflectivity": 0.04,
+      "class": "Plastic"
+    },
+    "Graphite": {
+      "rgb": [
+        64,
+        67,
+        69
+      ],
+      "gloss": 0.36,
+      "reflectivity": 0.16,
+      "class": "Glass"
+    },
+    "Ceramic": {
+      "rgb": [
+        245,
+        245,
+        241
+      ],
+      "gloss": 0.86,
+      "reflectivity": 0.22,
+      "class": "Ceramic"
+    },
+    "Brass": {
+      "rgb": [
+        160,
+        124,
+        64
+      ],
+      "gloss": 0.4,
+      "reflectivity": 0.38,
+      "class": "Metal"
+    },
+    "Green": {
+      "rgb": [
+        31,
+        113,
+        66
+      ],
+      "gloss": 0.18,
+      "reflectivity": 0.05,
+      "class": "Plastic"
+    },
+    "Gray": {
+      "rgb": [
+        131,
+        132,
+        130
+      ],
+      "gloss": 0.32,
+      "reflectivity": 0.12,
+      "class": "Plastic"
+    }
+  },
+  "geometry": [
+    {
+      "name": "Wall flange",
+      "kind": "cylinder",
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "radius": 1.25,
+      "a": 0,
+      "b": 0.2,
+      "material": "Finish"
+    },
+    {
+      "name": "Smooth bent shower arm",
+      "kind": "sweep",
+      "path": [
+        [
+          0,
+          0,
+          0.15
+        ],
+        [
+          0,
+          0,
+          14.25
+        ],
+        [
+          "arc",
+          [
+            0,
+            -0.4027281758684972,
+            15.222271824131504
+          ],
+          [
+            0,
+            -1.375,
+            15.625
+          ]
+        ],
+        [
+          0,
+          -2.5,
+          15.625
+        ]
+      ],
+      "radius": 0.375,
+      "material": "Finish"
+    },
+    {
+      "name": "Outlet bore",
+      "kind": "cylinder",
+      "origin": [
+        0,
+        -2.5,
+        15.625
+      ],
+      "axis": [
+        0,
+        1,
+        0
+      ],
+      "radius": 0.26,
+      "a": 0,
+      "b": 0.06,
+      "material": "Detail"
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://media.brizo.com/SpecSheet/BSP-B-RP71648%20Rev%20D.pdf",
+      "document": "Brizo BSP-B-RP71648 Rev D",
+      "page": 1,
+      "visual_review_method": "Manufacturer web PDF screenshot"
+    }
+  ],
+  "dimension_authority": [
+    "Projection 16 in, flange diameter 2.5 in, and centerline-to-outlet drop 2.5 in: manufacturer drawing."
+  ],
+  "limitations": [
+    "Pipe diameter 0.75 in, bend radius 1.375 in and flange thickness 0.20 in are drawing-derived.",
+    "Thread grooves are omitted; open outlet is represented by a recessed dark face.",
+    "Independent visualization reconstruction with fixed product dimensions and editable native materials.",
+    "Small fillets, seams, nozzle details and optical material response are inferred where the manufacturer does not dimension them.",
+    "No internal hydraulic performance, MEP connectors, fabrication tolerances or procurement substitutions are implied."
+  ],
+  "anchors": [
+    {
+      "label": "Arm projection",
+      "parts": [
+        "Wall flange",
+        "Smooth bent shower arm"
+      ],
+      "axis": 2,
+      "nominal_in": 16
+    }
+  ],
+  "all_overall_dimensions_authoritative": true,
+  "rfa_search": {
+    "result": "No acceptable no-account RFA recovered",
+    "evidence": "_research/RP71648BNX/sources.json"
+  }
+}

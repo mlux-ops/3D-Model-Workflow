@@ -1,0 +1,263 @@
+{
+  "rfa_path": "E:\\Claude\\3D-Model-Workflow\\output\\1527_wieland\\plumbing_fixtures\\R75000-WS\\Brizo_R75000-WS_R2025.rfa", 
+  "appearance_bindings": {
+    "Detail": {
+      "exists": true, 
+      "path": "E:\\Claude\\3D-Model-Workflow\\output\\1527_wieland\\plumbing_fixtures\\R75000-WS\\textures\\Detail.png", 
+      "material_id": "3210"
+    }, 
+    "Brass": {
+      "exists": true, 
+      "path": "E:\\Claude\\3D-Model-Workflow\\output\\1527_wieland\\plumbing_fixtures\\R75000-WS\\textures\\Brass.png", 
+      "material_id": "3207"
+    }
+  }, 
+  "gates": {
+    "warnings": true, 
+    "views": true, 
+    "orientation": true, 
+    "materials": true, 
+    "reopen_geometry_equal": true, 
+    "actual_face_host": true, 
+    "dimensions": true, 
+    "diffuse_bitmaps": true, 
+    "cct": true, 
+    "category": true, 
+    "reopened": true
+  }, 
+  "type": "R75000-WS - brass", 
+  "material_ids": {
+    "Detail": "3210", 
+    "Brass": "3207"
+  }, 
+  "display_bounds_in": [
+    -2.53125, 
+    -2.78125, 
+    0.0, 
+    2.53125, 
+    3.375, 
+    4.8125
+  ], 
+  "revit_build": "25.4.50.35", 
+  "bounds_in": [
+    -2.53125, 
+    -2.78125, 
+    -9.3958398298834025e-23, 
+    2.53125, 
+    3.375, 
+    4.8125
+  ], 
+  "reopened_warnings": [], 
+  "native_gates_pass": true, 
+  "inferences": "ASSUMPTION: upper outlet extension and upper test-stem projection are drawing-derived. | Test caps, guard and principal ports represented; internal seats and molded details simplified. | Independent visualization reconstruction with fixed product dimensions and editable native materials. | Small fillets, seams, nozzle details and optical material response are inferred where the manufacturer does not dimension them. | No internal hydraulic performance, MEP connectors, fabrication tolerances or procurement substitutions are implied.", 
+  "template_form_ids": [
+    "1537"
+  ], 
+  "project_warnings": [], 
+  "material_tests": {
+    "Detail": {
+      "face_count": 120, 
+      "writable": true, 
+      "substitution_reaches_faces": true
+    }, 
+    "Brass": {
+      "face_count": 120, 
+      "writable": true, 
+      "substitution_reaches_faces": true
+    }
+  }, 
+  "placement": "WorkPlaneBased", 
+  "model": "R75000-WS", 
+  "rfa_search": {
+    "result": "No acceptable no-account RFA recovered", 
+    "evidence": "_research/R75000-WS/sources.json"
+  }, 
+  "actual_dimensions_in": [
+    5.0625, 
+    6.15625, 
+    4.8125
+  ], 
+  "stage": "complete", 
+  "source_spec_path": "E:\\Claude\\3D-Model-Workflow\\output\\1527_wieland\\plumbing_fixtures\\R75000-WS\\source\\model_spec.json", 
+  "family_warnings": [], 
+  "visual_review": "PENDING_NATIVE_IMAGE_REVIEW", 
+  "parts": [
+    {
+      "name": "Rounded plaster guard", 
+      "id": "3212", 
+      "volume_ft3": 0.0023918789845533812
+    }, 
+    {
+      "name": "Lower brass valve", 
+      "id": "3213", 
+      "volume_ft3": 0.0052111828769752823
+    }, 
+    {
+      "name": "Lower test cover", 
+      "id": "3214", 
+      "volume_ft3": 0.0028060215491405353
+    }, 
+    {
+      "name": "Lower test cross horizontal", 
+      "id": "3215", 
+      "volume_ft3": 2.0222222222222195e-05
+    }, 
+    {
+      "name": "Lower test cross vertical", 
+      "id": "3216", 
+      "volume_ft3": 2.0222222222222171e-05
+    }, 
+    {
+      "name": "Lower test stem", 
+      "id": "3217", 
+      "volume_ft3": 1.4770926522038771e-05
+    }, 
+    {
+      "name": "Upper brass valve", 
+      "id": "3218", 
+      "volume_ft3": 0.003660353759573385
+    }, 
+    {
+      "name": "Upper test cover", 
+      "id": "3219", 
+      "volume_ft3": 0.00028156567381333673
+    }, 
+    {
+      "name": "Upper test cross horizontal", 
+      "id": "3220", 
+      "volume_ft3": 1.6948148148148169e-05
+    }, 
+    {
+      "name": "Upper test cross vertical", 
+      "id": "3221", 
+      "volume_ft3": 1.6948148148148152e-05
+    }, 
+    {
+      "name": "Upper test stem", 
+      "id": "3222", 
+      "volume_ft3": 1.2725721311294942e-05
+    }, 
+    {
+      "name": "Left port -1.4375", 
+      "id": "3223", 
+      "volume_ft3": 0.00032575005994122362
+    }, 
+    {
+      "name": "Right port -1.4375", 
+      "id": "3224", 
+      "volume_ft3": 0.00032575005994122367
+    }, 
+    {
+      "name": "Left port 1.4375", 
+      "id": "3225", 
+      "volume_ft3": 0.00032575005994122362
+    }, 
+    {
+      "name": "Right port 1.4375", 
+      "id": "3226", 
+      "volume_ft3": 0.00032575005994122367
+    }, 
+    {
+      "name": "Top outlet", 
+      "id": "3227", 
+      "volume_ft3": 0.00029635023503678102
+    }
+  ], 
+  "source_references": [
+    {
+      "visual_review_method": "Web PDF screenshot", 
+      "page": 1, 
+      "document": "BSP-B-R75000 Rev F", 
+      "url": "https://media.brizo.com/SpecSheet/BSP-B-R75000%20Rev%20F.pdf"
+    }
+  ], 
+  "limitations": [
+    "ASSUMPTION: upper outlet extension and upper test-stem projection are drawing-derived.", 
+    "Test caps, guard and principal ports represented; internal seats and molded details simplified.", 
+    "Independent visualization reconstruction with fixed product dimensions and editable native materials.", 
+    "Small fillets, seams, nozzle details and optical material response are inferred where the manufacturer does not dimension them.", 
+    "No internal hydraulic performance, MEP connectors, fabrication tolerances or procurement substitutions are implied."
+  ], 
+  "finished_utc": "2026-10-02T14:49:39.110000Z", 
+  "reopened_bounds_in": [
+    -2.53125, 
+    -2.78125, 
+    -9.3958398298834025e-23, 
+    2.53125, 
+    3.375, 
+    4.8125
+  ], 
+  "dimension_anchor_checks": [
+    {
+      "deviation_mm": 0.0, 
+      "label": "Guard height", 
+      "nominal_mm": 141.28749999999999, 
+      "pass": true, 
+      "actual_mm": 141.28749999999999
+    }
+  ], 
+  "source_dimensions": [
+    "With-stops inlet width 5.0625 in; plaster guard 4.0625 x 5.5625 in.", 
+    "Overall front-stem projection 4.8125 in equals nominal stringer-to-wall 2.5625 in plus wall-to-stem 2.25 in."
+  ], 
+  "actual_dimensions_after_reopen_mm": [
+    128.58750000000001, 
+    156.36874999999998, 
+    122.23750000000000
+  ], 
+  "technical_pass": true, 
+  "reopen_geometry_equal": true, 
+  "acceptance": "NATIVE_GATES_PASSED_PENDING_VISUAL_REVIEW", 
+  "reopened": true, 
+  "all_overall_dimensions_authoritative": false, 
+  "bounds_method": "Fine native face meshes plus 128-sample analytic edges", 
+  "expected_dimensions_in": [
+    5.0625, 
+    6.15625, 
+    4.8125
+  ], 
+  "appearance_defaults": {
+    "Detail": {
+      "transparency": 0, 
+      "luminance": 0, 
+      "rgb": [
+        24, 
+        25, 
+        26
+      ], 
+      "cct_k": null, 
+      "gloss": 0.17000000000000001
+    }, 
+    "Brass": {
+      "transparency": 0, 
+      "luminance": 0, 
+      "rgb": [
+        160, 
+        124, 
+        64
+      ], 
+      "cct_k": null, 
+      "gloss": 0.40000000000000002
+    }
+  }, 
+  "cct_k": null, 
+  "evidence_files": [
+    "Brizo_R75000-WS_R2025_Isolated - 3D View - Native Front.png", 
+    "Brizo_R75000-WS_R2025_Isolated - 3D View - Native Material.png", 
+    "Brizo_R75000-WS_R2025_Isolated - 3D View - Native Oblique.png", 
+    "Brizo_R75000-WS_R2025_Isolated - 3D View - Native Side.png"
+  ], 
+  "category": "Plumbing Fixtures", 
+  "host": {
+    "host_kind": "wall", 
+    "hostface_present": true, 
+    "instance_host_id": "3707", 
+    "host_id": "3707", 
+    "normal_dot": 1.0
+  }, 
+  "manufacturer": "Brizo", 
+  "started_utc": "2026-10-02T14:49:35.242000Z", 
+  "revit_version": "2025", 
+  "source_spec_sha256": "d685b45fd882b283fe7b8abeec1a9e0a3f7885c94ed5641ac1bdd66608b8d095", 
+  "native_path_checks": []
+}

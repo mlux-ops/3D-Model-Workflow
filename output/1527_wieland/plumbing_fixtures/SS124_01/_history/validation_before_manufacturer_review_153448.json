@@ -1,0 +1,81 @@
+{
+  "source_reference": "SS124_01/TOTO_SS124_Manufacturer_Extracted_R2025.rfa", 
+  "placement": "WorkPlaneBased", 
+  "spec_url": "https://www.totousa.com/filemanager_uploads/product_assets/SpecSheet/SS-02062_MS446124CEMF(G)N.pdf", 
+  "technical_pass": false, 
+  "gates": {
+    "views": true, 
+    "dimensions": false, 
+    "warnings": true, 
+    "actual_face_host": true, 
+    "category": true, 
+    "materials": true, 
+    "reopened": true
+  }, 
+  "selected_type": "SS124", 
+  "source_kind": "MANUFACTURER_RFA", 
+  "stage": "manufacturer_review_complete", 
+  "source_url": "https://www.totousa.com/filemanager_uploads/product_assets/REVITModels/BM-00593_MS642124CEFG_MS642124CUFG.rfa", 
+  "category": "Plumbing Fixtures", 
+  "native_gates_pass": false, 
+  "family_warnings": [], 
+  "host": {
+    "host_kind": "floor", 
+    "instance_host_id": "3737", 
+    "hostface_present": true
+  }, 
+  "material_tests": {
+    "Material": {
+      "substitution_reaches_faces": true, 
+      "writable": true
+    }
+  }, 
+  "input_format": "2025", 
+  "actual_dimensions_after_reopen_mm": [
+    355.65834305841150, 
+    513.77200112342837, 
+    122.10445185899734
+  ], 
+  "finished_utc": "2026-10-02T15:32:21.893000Z", 
+  "rfa_path": "E:\\Claude\\3D-Model-Workflow\\output\\1527_wieland\\plumbing_fixtures\\SS124_01\\Manufacturer_SS124_01_R2025.rfa", 
+  "dimensional_comparison": [
+    {
+      "pass": true, 
+      "deviation_mm": 0.058343058411480797, 
+      "actual_mm": 355.65834305841150, 
+      "axis": "X", 
+      "nominal_mm": 355.60000000000002
+    }, 
+    {
+      "pass": false, 
+      "deviation_mm": 40.697001123428379, 
+      "actual_mm": 513.77200112342837, 
+      "axis": "Y", 
+      "nominal_mm": 473.07499999999999
+    }, 
+    {
+      "pass": false, 
+      "deviation_mm": 76.066951858997328, 
+      "actual_mm": 122.10445185899734, 
+      "axis": "Z", 
+      "nominal_mm": 46.037500000000001
+    }
+  ], 
+  "evidence_files": [
+    "Manufacturer_SS124_01 - 3D View - Manufacturer Front.png", 
+    "Manufacturer_SS124_01 - 3D View - Manufacturer Oblique.png", 
+    "Manufacturer_SS124_01 - 3D View - Manufacturer Side.png"
+  ], 
+  "bounds_in": [
+    -7.0096257195066052, 
+    -10.129745721817017, 
+    -2.4409394860267639, 
+    6.9926712512969971, 
+    10.097498416900635, 
+    2.3663223981857300
+  ], 
+  "types": [
+    {
+      "identity": {
+        "BIMobject category": "Toilets", 
+        "Description": 

@@ -1,0 +1,52 @@
+{
+  "stage": "failed", 
+  "started_utc": "2026-10-02T14:34:54.022000Z", 
+  "companion_bitmaps": {
+    "Black": "E:\\Claude\\3D-Model-Workflow\\output\\1527_wieland\\electrical_fixtures\\K2-1__1035113877536644\\source\\textures\\Black.png", 
+    "Opal": "E:\\Claude\\3D-Model-Workflow\\output\\1527_wieland\\electrical_fixtures\\K2-1__1035113877536644\\source\\textures\\Opal.png"
+  }, 
+  "template_form_ids": [
+    "1537"
+  ], 
+  "technical_pass": false, 
+  "manufacturer": "Kuzco Lighting", 
+  "type": "EW22109-BK", 
+  "rfa_search": "Public primary product resources and the retained exact product page were inspected; no direct, exact native RFA was available in those resources. This does not assert that no RFA exists elsewhere.", 
+  "rfa_path": "E:\\Claude\\3D-Model-Workflow\\output\\1527_wieland\\electrical_fixtures\\K2-1__1035113877536644\\Kuzco_Vista_EW22109_Black_R2025.rfa", 
+  "revit_version": "2025", 
+  "appearance_defaults": {
+    "Black": {
+      "transparency": 0, 
+      "rgb": [
+        24, 
+        24, 
+        24
+      ], 
+      "cct_k": null, 
+      "luminance": 0, 
+      "gloss": 0.23999999999999999
+    }, 
+    "Opal": {
+      "transparency": 0.080000000000000002, 
+      "rgb": [
+        248, 
+        248, 
+        243
+      ], 
+      "cct_k": null, 
+      "luminance": 0, 
+      "gloss": 0.33000000000000002
+    }
+  }, 
+  "model": "EW22109-BK", 
+  "expected_dimensions_in": [
+    4.25, 
+    8.625, 
+    3.5
+  ], 
+  "source_url": "https://kuzcolighting.com/products/vista-ew22109-kuzco", 
+  "revit_build": "25.4.50.35", 
+  "error": "Traceback (most recent call last):\n  File \"E:\\Claude\\3D-Model-Workflow\\output\\1527_wieland\\electrical_fixtures\\_tools\\build_catalog.py\", line 199, in run_one\n    globals()[job['builder']](b,mats)\n  File \"E:\\Claude\\3D-Model-Workflow\\output\\1527_wieland\\electrical_fixtures\\_tools\\build_catalog.py\", line 144, in vista\n    for y in [-2.35,2.23]:b.box('Recessed upper or lower diffuser',-1.81,y,.6,1.81,y+.12,3.10,m['Opal'],.07)\n  File \"E:\\Claude\\3D-Model-Workflow\\output\\1527_wieland\\electrical_fixtures\\_tools\\native_fixture_support.py\", line 165, in box\n    solid=DB.GeometryCreationUtilities.CreateExtrusionGeometry(List[DB.CurveLoop]([loop(xyz(0,0,z0),DB.XYZ.BasisX,DB.XYZ.BasisY,points)]),DB.XYZ.BasisZ,(z1-z0)/12.)\n  File \"E:\\Claude\\3D-Model-Workflow\\output\\1527_wieland\\electrical_fixtures\\_tools\\native_fixture_support.py\", line 27, in loop\n    result.Append(DB.Line.CreateBound(at(current),at(end)))\nException: Curve length is too small for Revit's tolerance (as identified by Application.ShortCurveTolerance).\r\nParameter name: endpoints\n", 
+  "cct_k": null, 
+  "catalog_key": "KZC610420"
+}

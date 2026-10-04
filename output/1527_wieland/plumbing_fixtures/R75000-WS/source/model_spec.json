@@ -1,0 +1,395 @@
+{
+  "key": "R75000-WS",
+  "model": "R75000-WS",
+  "manufacturer": "Brizo",
+  "type_name": "R75000-WS - brass",
+  "basename": "Brizo_R75000-WS_R2025",
+  "name": "MultiChoice integrated diverter rough with stops",
+  "host": "wall",
+  "configured_dimensions_in": [
+    5.0625,
+    6.15625,
+    4.8125
+  ],
+  "materials": {
+    "Finish": {
+      "rgb": [
+        160,
+        124,
+        64
+      ],
+      "gloss": 0.4,
+      "reflectivity": 0.38,
+      "class": "Metal"
+    },
+    "Detail": {
+      "rgb": [
+        24,
+        25,
+        26
+      ],
+      "gloss": 0.17,
+      "reflectivity": 0.04,
+      "class": "Plastic"
+    },
+    "Graphite": {
+      "rgb": [
+        64,
+        67,
+        69
+      ],
+      "gloss": 0.36,
+      "reflectivity": 0.16,
+      "class": "Glass"
+    },
+    "Ceramic": {
+      "rgb": [
+        245,
+        245,
+        241
+      ],
+      "gloss": 0.86,
+      "reflectivity": 0.22,
+      "class": "Ceramic"
+    },
+    "Brass": {
+      "rgb": [
+        160,
+        124,
+        64
+      ],
+      "gloss": 0.4,
+      "reflectivity": 0.38,
+      "class": "Metal"
+    },
+    "Green": {
+      "rgb": [
+        31,
+        113,
+        66
+      ],
+      "gloss": 0.18,
+      "reflectivity": 0.05,
+      "class": "Plastic"
+    },
+    "Gray": {
+      "rgb": [
+        131,
+        132,
+        130
+      ],
+      "gloss": 0.32,
+      "reflectivity": 0.12,
+      "class": "Plastic"
+    }
+  },
+  "geometry": [
+    {
+      "name": "Rounded plaster guard",
+      "kind": "box",
+      "bounds": [
+        -2.03125,
+        -2.78125,
+        2.5,
+        2.03125,
+        2.78125,
+        2.7
+      ],
+      "radius": 1.5,
+      "material": "Detail"
+    },
+    {
+      "name": "Lower brass valve",
+      "kind": "cylinder",
+      "origin": [
+        0,
+        -1.4375,
+        0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "radius": 1.05,
+      "a": 0,
+      "b": 2.6,
+      "material": "Brass"
+    },
+    {
+      "name": "Lower test cover",
+      "kind": "cylinder",
+      "origin": [
+        0,
+        -1.4375,
+        0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "radius": 1.05,
+      "a": 2.6,
+      "b": 4.0,
+      "material": "Detail"
+    },
+    {
+      "name": "Lower test cross horizontal",
+      "kind": "box",
+      "bounds": [
+        -0.8400000000000001,
+        -1.5175,
+        3.97,
+        0.8400000000000001,
+        -1.3575,
+        4.1
+      ],
+      "radius": 0,
+      "material": "Detail"
+    },
+    {
+      "name": "Lower test cross vertical",
+      "kind": "box",
+      "bounds": [
+        -0.08,
+        -2.2775,
+        3.97,
+        0.08,
+        -0.5974999999999999,
+        4.1
+      ],
+      "radius": 0,
+      "material": "Detail"
+    },
+    {
+      "name": "Lower test stem",
+      "kind": "cylinder",
+      "origin": [
+        0,
+        -1.4375,
+        0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "radius": 0.1,
+      "a": 4.0,
+      "b": 4.8125,
+      "material": "Brass"
+    },
+    {
+      "name": "Upper brass valve",
+      "kind": "cylinder",
+      "origin": [
+        0,
+        1.4375,
+        0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "radius": 0.88,
+      "a": 0,
+      "b": 2.6,
+      "material": "Brass"
+    },
+    {
+      "name": "Upper test cover",
+      "kind": "cylinder",
+      "origin": [
+        0,
+        1.4375,
+        0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "radius": 0.88,
+      "a": 2.6,
+      "b": 2.8,
+      "material": "Detail"
+    },
+    {
+      "name": "Upper test cross horizontal",
+      "kind": "box",
+      "bounds": [
+        -0.7040000000000001,
+        1.3575,
+        2.77,
+        0.7040000000000001,
+        1.5175,
+        2.9
+      ],
+      "radius": 0,
+      "material": "Detail"
+    },
+    {
+      "name": "Upper test cross vertical",
+      "kind": "box",
+      "bounds": [
+        -0.08,
+        0.7334999999999999,
+        2.77,
+        0.08,
+        2.1415,
+        2.9
+      ],
+      "radius": 0,
+      "material": "Detail"
+    },
+    {
+      "name": "Upper test stem",
+      "kind": "cylinder",
+      "origin": [
+        0,
+        1.4375,
+        0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "radius": 0.1,
+      "a": 2.8,
+      "b": 3.5,
+      "material": "Brass"
+    },
+    {
+      "name": "Left port -1.4375",
+      "kind": "cylinder",
+      "origin": [
+        0,
+        -1.4375,
+        0.85
+      ],
+      "axis": [
+        1,
+        0,
+        0
+      ],
+      "radius": 0.42,
+      "a": -2.53125,
+      "b": -0.8,
+      "material": "Brass",
+      "inner_radius": 0.27
+    },
+    {
+      "name": "Right port -1.4375",
+      "kind": "cylinder",
+      "origin": [
+        0,
+        -1.4375,
+        0.85
+      ],
+      "axis": [
+        1,
+        0,
+        0
+      ],
+      "radius": 0.42,
+      "a": 0.8,
+      "b": 2.53125,
+      "material": "Brass",
+      "inner_radius": 0.27
+    },
+    {
+      "name": "Left port 1.4375",
+      "kind": "cylinder",
+      "origin": [
+        0,
+        1.4375,
+        0.85
+      ],
+      "axis": [
+        1,
+        0,
+        0
+      ],
+      "radius": 0.42,
+      "a": -2.53125,
+      "b": -0.8,
+      "material": "Brass",
+      "inner_radius": 0.27
+    },
+    {
+      "name": "Right port 1.4375",
+      "kind": "cylinder",
+      "origin": [
+        0,
+        1.4375,
+        0.85
+      ],
+      "axis": [
+        1,
+        0,
+        0
+      ],
+      "radius": 0.42,
+      "a": 0.8,
+      "b": 2.53125,
+      "material": "Brass",
+      "inner_radius": 0.27
+    },
+    {
+      "name": "Top outlet",
+      "kind": "cylinder",
+      "origin": [
+        0,
+        0,
+        0.85
+      ],
+      "axis": [
+        0,
+        1,
+        0
+      ],
+      "radius": 0.42,
+      "a": 1.8,
+      "b": 3.375,
+      "material": "Brass",
+      "inner_radius": 0.27
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://media.brizo.com/SpecSheet/BSP-B-R75000%20Rev%20F.pdf",
+      "document": "BSP-B-R75000 Rev F",
+      "page": 1,
+      "visual_review_method": "Web PDF screenshot"
+    }
+  ],
+  "dimension_authority": [
+    "With-stops inlet width 5.0625 in; plaster guard 4.0625 x 5.5625 in.",
+    "Overall front-stem projection 4.8125 in equals nominal stringer-to-wall 2.5625 in plus wall-to-stem 2.25 in."
+  ],
+  "limitations": [
+    "ASSUMPTION: upper outlet extension and upper test-stem projection are drawing-derived.",
+    "Test caps, guard and principal ports represented; internal seats and molded details simplified.",
+    "Independent visualization reconstruction with fixed product dimensions and editable native materials.",
+    "Small fillets, seams, nozzle details and optical material response are inferred where the manufacturer does not dimension them.",
+    "No internal hydraulic performance, MEP connectors, fabrication tolerances or procurement substitutions are implied."
+  ],
+  "anchors": [
+    {
+      "label": "Guard height",
+      "parts": [
+        "Rounded plaster guard"
+      ],
+      "axis": 1,
+      "nominal_in": 5.5625
+    }
+  ],
+  "all_overall_dimensions_authoritative": false,
+  "rfa_search": {
+    "result": "No acceptable no-account RFA recovered",
+    "evidence": "_research/R75000-WS/sources.json"
+  }
+}

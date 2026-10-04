@@ -1,0 +1,180 @@
+{
+  "category": "Plumbing Fixtures", 
+  "all_overall_dimensions_authoritative": false, 
+  "type": "HL60110-BNX - Brilliance Black Onyx -  Black", 
+  "rfa_search": {
+    "result": "No acceptable no-account RFA recovered", 
+    "evidence": "_research/HL60110-BNX/sources.json"
+  }, 
+  "native_gates_pass": true, 
+  "native_path_checks": [], 
+  "bounds_in": [
+    -2.2500000000000009, 
+    -1.25, 
+    -1.2814626520174664e-23, 
+    1.2500000000000002, 
+    1.25, 
+    4.125
+  ], 
+  "model": "HL60110-BNX", 
+  "limitations": [
+    "Sleeve diameter, control ring separation and relative temperature-lever depth are drawing-derived.", 
+    "This is the handle kit only; separate trim and rough families are not incorporated.", 
+    "Independent visualization reconstruction with fixed product dimensions and editable native materials.", 
+    "Small fillets, seams, nozzle details and optical material response are inferred where the manufacturer does not dimension them.", 
+    "No internal hydraulic performance, MEP connectors, fabrication tolerances or procurement substitutions are implied."
+  ], 
+  "source_spec_path": "E:\\Claude\\3D-Model-Workflow\\output\\1527_wieland\\plumbing_fixtures\\HL60110-BNX\\source\\model_spec.json", 
+  "appearance_defaults": {
+    "Finish": {
+      "cct_k": null, 
+      "rgb": [
+        58, 
+        60, 
+        62
+      ], 
+      "transparency": 0, 
+      "gloss": 0.92000000000000004, 
+      "luminance": 0
+    }
+  }, 
+  "manufacturer": "Brizo", 
+  "source_spec_sha256": "5b7bfe0e0c10bade8518a612a6784e6de7d7673cc38d271c44a1c1a2755981b4", 
+  "material_ids": {
+    "Finish": "3207"
+  }, 
+  "project_warnings": [], 
+  "technical_pass": true, 
+  "reopen_geometry_equal": true, 
+  "bounds_method": "Fine native face meshes plus 128-sample analytic edges", 
+  "appearance_bindings": {
+    "Finish": {
+      "path": "E:\\Claude\\3D-Model-Workflow\\output\\1527_wieland\\plumbing_fixtures\\HL60110-BNX\\textures\\Finish.png", 
+      "exists": true, 
+      "material_id": "3207"
+    }
+  }, 
+  "display_bounds_in": [
+    -2.2500000000000009, 
+    -1.25, 
+    0.0, 
+    1.2500000000000004, 
+    1.25, 
+    4.125
+  ], 
+  "actual_dimensions_after_reopen_mm": [
+    88.900000000000020, 
+    63.5, 
+    104.77499999999999
+  ], 
+  "finished_utc": "2026-10-02T15:43:08.371000Z", 
+  "expected_dimensions_in": [
+    3.5, 
+    2.5, 
+    4.125
+  ], 
+  "inferences": "Sleeve diameter, control ring separation and relative temperature-lever depth are drawing-derived. | This is the handle kit only; separate trim and rough families are not incorporated. | Independent visualization reconstruction with fixed product dimensions and editable native materials. | Small fillets, seams, nozzle details and optical material response are inferred where the manufacturer does not dimension them. | No internal hydraulic performance, MEP connectors, fabrication tolerances or procurement substitutions are implied.", 
+  "reopened_warnings": [], 
+  "dimension_anchor_checks": [
+    {
+      "label": "Handle projection", 
+      "actual_mm": 104.77499999999999, 
+      "deviation_mm": 0.0, 
+      "pass": true, 
+      "nominal_mm": 104.77499999999999
+    }
+  ], 
+  "revit_version": "2025", 
+  "source_references": [
+    {
+      "visual_review_method": "Manufacturer web PDF screenshot", 
+      "url": "https://media.brizo.com/SpecSheet/BSP-B-T600110-LHP%20Rev%20A.pdf", 
+      "document": "Brizo BSP-B-T600110-LHP Rev A", 
+      "page": 1
+    }
+  ], 
+  "actual_dimensions_in": [
+    3.5000000000000009, 
+    2.5, 
+    4.125
+  ], 
+  "cct_k": null, 
+  "material_tests": {
+    "Finish": {
+      "writable": true, 
+      "face_count": 36, 
+      "substitution_reaches_faces": true
+    }
+  }, 
+  "template_form_ids": [
+    "1537"
+  ], 
+  "host": {
+    "host_id": "3691", 
+    "instance_host_id": "3691", 
+    "host_kind": "wall", 
+    "normal_dot": 1.0, 
+    "hostface_present": true
+  }, 
+  "reopened": true, 
+  "revit_build": "25.4.50.35", 
+  "started_utc": "2026-10-02T15:42:53.840000Z", 
+  "family_warnings": [], 
+  "placement": "WorkPlaneBased", 
+  "stage": "complete", 
+  "acceptance": "NATIVE_GATES_PASSED_PENDING_VISUAL_REVIEW", 
+  "rfa_path": "E:\\Claude\\3D-Model-Workflow\\output\\1527_wieland\\plumbing_fixtures\\HL60110-BNX\\Brizo_HL60110-BNX_R2025.rfa", 
+  "reopened_bounds_in": [
+    -2.2500000000000009, 
+    -1.25, 
+    -1.2814626520174664e-23, 
+    1.2500000000000002, 
+    1.25, 
+    4.125
+  ], 
+  "parts": [
+    {
+      "name": "Handle sleeve", 
+      "id": "3209", 
+      "volume_ft3": 0.0095868994253617071
+    }, 
+    {
+      "name": "Control lever neck", 
+      "id": "3210", 
+      "volume_ft3": 0.00030003654515575571
+    }, 
+    {
+      "name": "Volume lever paddle", 
+      "id": "3211", 
+      "volume_ft3": 0.00045012620286831803
+    }, 
+    {
+      "name": "Temperature lever", 
+      "id": "3212", 
+      "volume_ft3": 0.00027566751266308386
+    }
+  ], 
+  "source_dimensions": [
+    "Lever width 3.5 in and total handle projection 4.125 in: exact manufacturer handle detail."
+  ], 
+  "gates": {
+    "reopen_geometry_equal": true, 
+    "dimensions": true, 
+    "materials": true, 
+    "cct": true, 
+    "category": true, 
+    "views": true, 
+    "orientation": true, 
+    "diffuse_bitmaps": true, 
+    "warnings": true, 
+    "actual_face_host": true, 
+    "reopened": true
+  }, 
+  "visual_review": "PENDING_NATIVE_IMAGE_REVIEW", 
+  "evidence_files": [
+    "Brizo_HL60110-BNX_R2025_Isolated - 3D View - Native Front.png", 
+    "Brizo_HL60110-BNX_R2025_Isolated - 3D View - Native Material.png", 
+    "Brizo_HL60110-BNX_R2025_Isolated - 3D View - Native Oblique.png", 
+    "Brizo_HL60110-BNX_R2025_Isolated - 3D View - Native Side.png"
+  ]
+}

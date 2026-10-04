@@ -1,0 +1,52 @@
+[
+  {
+    "key": "KZC1009522", 
+    "pass": true, 
+    "rfa": "E:\\Claude\\3D-Model-Workflow\\output\\1527_wieland\\electrical_fixtures\\L1-0__7438669597704068\\Kuzco_Motif_MP75121_BK_R2025.rfa"
+  }, 
+  {
+    "key": "54654241-4PK", 
+    "pass": true, 
+    "rfa": "E:\\Claude\\3D-Model-Workflow\\output\\1527_wieland\\electrical_fixtures\\G1-0_CORRECTION_2026-10-01_G1-1__6312769690861444\\Commercial_Electric_54654241_Wrap_R2025.rfa"
+  }, 
+  {
+    "key": "QC4_J6", 
+    "pass": true, 
+    "rfa": "E:\\Claude\\3D-Model-Workflow\\output\\1527_wieland\\electrical_fixtures\\D2__7923253488648068\\Juno_QC4_J6_Housing_R2025.rfa"
+  }, 
+  {
+    "key": "BOM1273301", 
+    "error": "Traceback (most recent call last):\n  File \"E:\\Claude\\3D-Model-Workflow\\output\\1527_wieland\\electrical_fixtures\\_tools\\build_completion.py\", line 137, in main\n    report=run_one(app,key);result.append({'key':key,'pass':report['technical_pass'],'rfa':report['rfa_path']})\n  File \"E:\\Claude\\3D-Model-Workflow\\output\\1527_wieland\\electrical_fixtures\\_tools\\build_completion.py\", line 123, in run_one\n    return f.finish()\n  File \"E:\\Claude\\3D-Model-Workflow\\output\\1527_wieland\\electrical_fixtures\\_tools\\wieland_native.py\", line 41, in finish\n    report = NativeFixture.finish(self)\n  File \"E:\\Claude\\3D-Model-Workflow\\output\\1527_wieland\\electrical_fixtures\\_tools\\native_fixture_support.py\", line 272, in finish\n    if not self.report['technical_pass']:raise RuntimeError('Failed native gates: '+str([k for k,v in gates.items() if not v]))\nRuntimeError: Failed native gates: ['dimensions']\n", 
+    "pass": false
+  }, 
+  {
+    "key": "VIS1256139", 
+    "error": "Traceback (most recent call last):\n  File \"E:\\Claude\\3D-Model-Workflow\\output\\1527_wieland\\electrical_fixtures\\_tools\\build_completion.py\", line 137, in main\n    report=run_one(app,key);result.append({'key':key,'pass':report['technical_pass'],'rfa':report['rfa_path']})\n  File \"E:\\Claude\\3D-Model-Workflow\\output\\1527_wieland\\electrical_fixtures\\_tools\\build_completion.py\", line 123, in run_one\n    return f.finish()\n  File \"E:\\Claude\\3D-Model-Workflow\\output\\1527_wieland\\electrical_fixtures\\_tools\\wieland_native.py\", line 41, in finish\n    report = NativeFixture.finish(self)\n  File \"E:\\Claude\\3D-Model-Workflow\\output\\1527_wieland\\electrical_fixtures\\_tools\\native_fixture_support.py\", line 272, in finish\n    if not self.report['technical_pass']:raise RuntimeError('Failed native gates: '+str([k for k,v in gates.items() if not v]))\nRuntimeError: Failed native gates: ['dimensions']\n", 
+    "pass": false
+  }, 
+  {
+    "key": "DCW1122128", 
+    "pass": true, 
+    "rfa": "E:\\Claude\\3D-Model-Workflow\\output\\1527_wieland\\electrical_fixtures\\DCW1122128__5908602302365572\\DCW_Focus_X3_Black_Representative_R2025.rfa"
+  }, 
+  {
+    "key": "VIS1486649", 
+    "pass": true, 
+    "rfa": "E:\\Claude\\3D-Model-Workflow\\output\\1527_wieland\\electrical_fixtures\\VIS1486649__3656802488680324\\Vistosi_Jube_AP_S_Smoke_Black_R2025.rfa"
+  }, 
+  {
+    "key": "700BCTRS3C-LED930", 
+    "pass": true, 
+    "rfa": "E:\\Claude\\3D-Model-Workflow\\output\\1527_wieland\\electrical_fixtures\\B3-2__7086825876815748\\Visual_Comfort_Tris_700BCTRS3C_LED930_R2025.rfa"
+  }, 
+  {
+    "key": "TLG604508", 
+    "pass": true, 
+    "rfa": "E:\\Claude\\3D-Model-Workflow\\output\\1527_wieland\\electrical_fixtures\\B3-1__1598063830957956\\Visual_Comfort_Milan_700BCMLN24WS_LED930_R2025.rfa"
+  }, 
+  {
+    "key": "MKL1417874", 
+    "pass": true, 
+    "rfa": "E:\\Claude\\3D-Model-Workflow\\output\\1527_wieland\\electrical_fixtures\\B1-2__1395409177739140\\Minka_Verto_3114_732_L_R2025.rfa"
+  }
+]

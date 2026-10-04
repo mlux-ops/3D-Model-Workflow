@@ -1,0 +1,264 @@
+{
+  "category": "Plumbing Fixtures", 
+  "all_overall_dimensions_authoritative": false, 
+  "type": "R70400 - brass", 
+  "rfa_search": {
+    "result": "No acceptable no-account RFA recovered", 
+    "evidence": "_research/R70400/sources.json"
+  }, 
+  "native_gates_pass": true, 
+  "native_path_checks": [], 
+  "bounds_in": [
+    -5.375, 
+    -1.6250000596046448, 
+    -2.8654376445260412e-25, 
+    5.375, 
+    0.81250002980232239, 
+    3.5
+  ], 
+  "model": "R70400", 
+  "limitations": [
+    "ASSUMPTION: mounting strap projects 0.25 in beyond each dimensioned fixing center.", 
+    "Overall height and test-stem projection are inferred from the drawing. Internal valves and thread details are omitted.", 
+    "Independent visualization reconstruction with fixed product dimensions and editable native materials.", 
+    "Small fillets, seams, nozzle details and optical material response are inferred where the manufacturer does not dimension them.", 
+    "No internal hydraulic performance, MEP connectors, fabrication tolerances or procurement substitutions are implied."
+  ], 
+  "source_spec_path": "E:\\Claude\\3D-Model-Workflow\\output\\1527_wieland\\plumbing_fixtures\\R70400\\source\\model_spec.json", 
+  "appearance_defaults": {
+    "Brass": {
+      "cct_k": null, 
+      "rgb": [
+        160, 
+        124, 
+        64
+      ], 
+      "transparency": 0, 
+      "gloss": 0.40000000000000002, 
+      "luminance": 0
+    }, 
+    "Detail": {
+      "cct_k": null, 
+      "rgb": [
+        24, 
+        25, 
+        26
+      ], 
+      "transparency": 0, 
+      "gloss": 0.17000000000000001, 
+      "luminance": 0
+    }, 
+    "Gray": {
+      "cct_k": null, 
+      "rgb": [
+        131, 
+        132, 
+        130
+      ], 
+      "transparency": 0, 
+      "gloss": 0.32000000000000001, 
+      "luminance": 0
+    }
+  }, 
+  "manufacturer": "Brizo", 
+  "source_spec_sha256": "287b625eead7627831d9208eea78f20fb0dc5bffe186a41995047285b09f873e", 
+  "material_ids": {
+    "Brass": "3207", 
+    "Detail": "3210", 
+    "Gray": "3213"
+  }, 
+  "project_warnings": [], 
+  "technical_pass": true, 
+  "reopen_geometry_equal": true, 
+  "bounds_method": "Fine native face meshes plus 128-sample analytic edges", 
+  "appearance_bindings": {
+    "Brass": {
+      "path": "E:\\Claude\\3D-Model-Workflow\\output\\1527_wieland\\plumbing_fixtures\\R70400\\textures\\Brass.png", 
+      "exists": true, 
+      "material_id": "3207"
+    }, 
+    "Detail": {
+      "path": "E:\\Claude\\3D-Model-Workflow\\output\\1527_wieland\\plumbing_fixtures\\R70400\\textures\\Detail.png", 
+      "exists": true, 
+      "material_id": "3210"
+    }, 
+    "Gray": {
+      "path": "E:\\Claude\\3D-Model-Workflow\\output\\1527_wieland\\plumbing_fixtures\\R70400\\textures\\Gray.png", 
+      "exists": true, 
+      "material_id": "3213"
+    }
+  }, 
+  "display_bounds_in": [
+    -5.375, 
+    -1.625, 
+    0.0, 
+    5.375, 
+    0.8125, 
+    3.5
+  ], 
+  "actual_dimensions_after_reopen_mm": [
+    273.05000000000001, 
+    61.912502270936962, 
+    88.899999999999991
+  ], 
+  "finished_utc": "2026-10-02T15:43:14.152000Z", 
+  "expected_dimensions_in": [
+    10.75, 
+    2.4375, 
+    3.5
+  ], 
+  "inferences": "ASSUMPTION: mounting strap projects 0.25 in beyond each dimensioned fixing center. | Overall height and test-stem projection are inferred from the drawing. Internal valves and thread details are omitted. | Independent visualization reconstruction with fixed product dimensions and editable native materials. | Small fillets, seams, nozzle details and optical material response are inferred where the manufacturer does not dimension them. | No internal hydraulic performance, MEP connectors, fabrication tolerances or procurement substitutions are implied.", 
+  "reopened_warnings": [], 
+  "dimension_anchor_checks": [
+    {
+      "label": "Mounting strap overall", 
+      "actual_mm": 273.05000000000001, 
+      "deviation_mm": 0.0, 
+      "pass": true, 
+      "nominal_mm": 273.05000000000001
+    }
+  ], 
+  "revit_version": "2025", 
+  "source_references": [
+    {
+      "visual_review_method": "Manufacturer web PDF screenshot", 
+      "url": "https://media.brizo.com/SpecSheet/BSP-L-R70400%20Rev%20C.pdf", 
+      "document": "Brizo BSP-L-R70400 Rev C", 
+      "page": 1
+    }
+  ], 
+  "actual_dimensions_in": [
+    10.75, 
+    2.4375000894069672, 
+    3.5
+  ], 
+  "cct_k": null, 
+  "material_tests": {
+    "Brass": {
+      "writable": true, 
+      "face_count": 96, 
+      "substitution_reaches_faces": true
+    }, 
+    "Detail": {
+      "writable": true, 
+      "face_count": 96, 
+      "substitution_reaches_faces": true
+    }, 
+    "Gray": {
+      "writable": true, 
+      "face_count": 96, 
+      "substitution_reaches_faces": true
+    }
+  }, 
+  "template_form_ids": [
+    "1537"
+  ], 
+  "host": {
+    "host_id": "3707", 
+    "instance_host_id": "3707", 
+    "host_kind": "wall", 
+    "normal_dot": 1.0, 
+    "hostface_present": true
+  }, 
+  "reopened": true, 
+  "revit_build": "25.4.50.35", 
+  "started_utc": "2026-10-02T15:43:11.322000Z", 
+  "family_warnings": [], 
+  "placement": "WorkPlaneBased", 
+  "stage": "complete", 
+  "acceptance": "NATIVE_GATES_PASSED_PENDING_VISUAL_REVIEW", 
+  "rfa_path": "E:\\Claude\\3D-Model-Workflow\\output\\1527_wieland\\plumbing_fixtures\\R70400\\Brizo_R70400_R2025.rfa", 
+  "reopened_bounds_in": [
+    -5.375, 
+    -1.6250000596046448, 
+    -2.8654376445260412e-25, 
+    5.375, 
+    0.81250002980232239, 
+    3.5
+  ], 
+  "parts": [
+    {
+      "name": "Slotted mounting strap", 
+      "id": "3215", 
+      "volume_ft3": 0.00061341462728517905
+    }, 
+    {
+      "name": "Brass cross manifold", 
+      "id": "3216", 
+      "volume_ft3": 0.0027837515368457698
+    }, 
+    {
+      "name": "Hot valve body", 
+      "id": "3217", 
+      "volume_ft3": 0.0022202548928439533
+    }, 
+    {
+      "name": "Hot down inlet", 
+      "id": "3218", 
+      "volume_ft3": 0.00055552886536829353
+    }, 
+    {
+      "name": "Hot guard", 
+      "id": "3219", 
+      "volume_ft3": 0.0010226026053719154
+    }, 
+    {
+      "name": "Hot valve stem", 
+      "id": "3220", 
+      "volume_ft3": 0.00010558712768000153
+    }, 
+    {
+      "name": "Cold valve body", 
+      "id": "3221", 
+      "volume_ft3": 0.0022202548928439533
+    }, 
+    {
+      "name": "Cold down inlet", 
+      "id": "3222", 
+      "volume_ft3": 0.00055552886536829353
+    }, 
+    {
+      "name": "Cold guard", 
+      "id": "3223", 
+      "volume_ft3": 0.0010226026053719154
+    }, 
+    {
+      "name": "Cold valve stem", 
+      "id": "3224", 
+      "volume_ft3": 0.00010558712768000153
+    }, 
+    {
+      "name": "Center spout outlet", 
+      "id": "3225", 
+      "volume_ft3": 0.00083626168617081118
+    }, 
+    {
+      "name": "Center test extension", 
+      "id": "3226", 
+      "volume_ft3": 0.00011453149180165454
+    }
+  ], 
+  "source_dimensions": [
+    "Valve axes are 8 in apart; mounting-hole centers are 10.25 in apart; nominal mounting-to-wall distance is 2.75 in."
+  ], 
+  "gates": {
+    "reopen_geometry_equal": true, 
+    "dimensions": true, 
+    "materials": true, 
+    "cct": true, 
+    "category": true, 
+    "views": true, 
+    "orientation": true, 
+    "diffuse_bitmaps": true, 
+    "warnings": true, 
+    "actual_face_host": true, 
+    "reopened": true
+  }, 
+  "visual_review": "PENDING_NATIVE_IMAGE_REVIEW", 
+  "evidence_files": [
+    "Brizo_R70400_R2025_Isolated - 3D View - Native Front.png", 
+    "Brizo_R70400_R2025_Isolated - 3D View - Native Material.png", 
+    "Brizo_R70400_R2025_Isolated - 3D View - Native Oblique.png", 
+    "Brizo_R70400_R2025_Isolated - 3D View - Native Side.png"
+  ]
+}

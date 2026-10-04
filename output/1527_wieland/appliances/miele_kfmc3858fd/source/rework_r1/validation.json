@@ -1,0 +1,1467 @@
+{
+  "bitmap_gate": true,
+  "build_method": "native_custom_new_family",
+  "category": "Specialty Equipment",
+  "all_acceptance_gates_pass": false,
+  "import_instance_count": 0,
+  "saved_revit_format": "2025",
+  "revit_version": "2025",
+  "saved_rfa": "E:\u005cClaude\u005c3D-Model-Workflow\u005coutput\u005c1527_wieland\u005cappliances\u005cmiele_kfmc3858fd\u005cmiele_kfmc3858fd_Custom_R1_R2025.rfa",
+  "replacement_reason": "Orchestrator round 1: exact-identity manufacturer working family fails the <=1 mm complete overall dimension gate. New native custom geometry replaces the working selection; OEM originals and prior working RFA remain preserved.",
+  "axis_convention": "X width, Y front-to-back depth, Z vertical height; millimetres.",
+  "status": "BUILT_WITH_LIMITATIONS",
+  "placement": {
+    "placement_type": "WorkPlaneBased",
+    "loaded": true,
+    "placed": true,
+    "host_category": "Floors",
+    "family_category": "Specialty Equipment",
+    "type": "KFMC 3858 FD - Custom R1"
+  },
+  "placement_transform": {
+    "origin_mm": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "basis_x": [
+      1.0,
+      0.0,
+      0.0
+    ],
+    "basis_z": [
+      0.0,
+      0.0,
+      1.0
+    ],
+    "basis_y": [
+      0.0,
+      1.0,
+      0.0
+    ]
+  },
+  "visual_review_pending": true,
+  "revision": "Custom_R1",
+  "native_gates_pass": true,
+  "started_utc": "2026-10-02 23:58:34.804000",
+  "native_freeform_count": 77,
+  "previews": [
+    "E:\u005cClaude\u005c3D-Model-Workflow\u005coutput\u005c1527_wieland\u005cappliances\u005cmiele_kfmc3858fd\u005cviews\u005crework_r1\u005coblique - 3D View - oblique.png",
+    "E:\u005cClaude\u005c3D-Model-Workflow\u005coutput\u005c1527_wieland\u005cappliances\u005cmiele_kfmc3858fd\u005cviews\u005crework_r1\u005cfront - 3D View - front.png",
+    "E:\u005cClaude\u005c3D-Model-Workflow\u005coutput\u005c1527_wieland\u005cappliances\u005cmiele_kfmc3858fd\u005cviews\u005crework_r1\u005cside - 3D View - side.png"
+  ],
+  "category_gate": true,
+  "family_bounds": {
+    "parts": [
+      {
+        "class": "FreeFormElement",
+        "name": "Rear Cabinet",
+        "min_mm": [
+          -523.99999237060547,
+          584.00000009536745,
+          185.00000867843627
+        ],
+        "id": 2974,
+        "max_mm": [
+          523.99999237060547,
+          607.99998865127566,
+          2124.9999435424807
+        ]
+      },
+      {
+        "class": "FreeFormElement",
+        "name": "Cabinet Side L",
+        "min_mm": [
+          -523.99999237060547,
+          34.000000441074370,
+          11.999999955296516
+        ],
+        "id": 2978,
+        "max_mm": [
+          -495.99999361038209,
+          607.99998865127566,
+          2124.9999435424807
+        ]
+      },
+      {
+        "class": "FreeFormElement",
+        "name": "Cabinet Side R",
+        "min_mm": [
+          495.99999361038209,
+          34.000000441074370,
+          11.999999955296516
+        ],
+        "id": 2982,
+        "max_mm": [
+          523.99999237060547,
+          607.99998865127566,
+          2124.9999435424807
+        ]
+      },
+      {
+        "class": "FreeFormElement",
+        "name": "Cabinet Roof",
+        "min_mm": [
+          -495.99999361038209,
+          34.000000441074370,
+          2100.0000160217287
+        ],
+        "id": 2986,
+        "max_mm": [
+          495.99999361038209,
+          584.00000009536745,
+          2124.9999435424807
+        ]
+      },
+      {
+        "class": "FreeFormElement",
+        "name": "Base Chassis",
+        "min_mm": [
+          -495.99999361038209,
+          34.000000441074370,
+          15.999999940395355
+        ],
+        "id": 2990,
+        "max_mm": [
+          495.99999361038209,
+          576.00001602172858,
+          83.999996280670175
+        ]
+      },
+      {
+        "class": "FreeFormElement",
+        "name": "Toe Vent Back",
+        "min_mm": [
+          -495.99999361038209,
+          28.999999040365221,
+          20.000001060962678
+        ],
+        "id": 2994,
+        "max_mm": [
+          495.99999361038209,
+          34.000000441074370,
+          75.999998581409457
+        ]
+      },
+      {
+        "class": "FreeFormElement",
+        "name": "Toe Vent Slat 00",
+        "min_mm": [
+          -486.99999790191652,
+          27.000000751018526,
+          22.999999630451203
+        ],
+        "id": 2998,
+        "max_mm": [
+          -483.99999933242799,
+          29.999999320507051,
+          72.000002002716073
+        ]
+      },
+      {
+        "class": "FreeFormElement",
+        "name": "Toe Vent Slat 01",
+        "min_mm": [
+          -470.00001811981201,
+          27.000000751018526,
+          22.999999630451203
+        ],
+        "id": 3002,
+        "max_mm": [
+          -466.99998321533207,
+          29.999999320507051,
+          72.000002002716073
+        ]
+      },
+      {
+        "class": "FreeFormElement",
+        "name": "Toe Vent Slat 02",
+        "min_mm": [
+          -453.00000200271609,
+          27.000000751018526,
+          22.999999630451203
+        ],
+        "id": 3006,
+        "max_mm": [
+          -450.00000343322756,
+          29.999999320507051,
+          72.000002002716073
+        ]
+      },
+      {
+        "class": "FreeFormElement",
+        "name": "Toe Vent Slat 03",
+        "min_mm": [
+          -435.99998588562011,
+          27.000000751018526,
+          22.999999630451203
+        ],
+        "id": 3010,
+        "max_mm": [
+          -432.99998731613158,
+          29.999999320507051,
+          72.000002002716073
+        ]
+      },
+      {
+        "class": "FreeFormElement",
+        "name": "Toe Vent Slat 04",
+        "min_mm": [
+          -419.00000610351566,
+          27.000000751018526,
+          22.999999630451203
+        ],
+        "id": 3014,
+        "max_mm": [
+          -416.00000753402713,
+          29.999999320507051,
+          72.000002002716073
+        ]
+      },
+      {
+        "class": "FreeFormElement",
+        "name": "Toe Vent Slat 05",
+        "min_mm": [
+          -401.99998998641968,
+          27.000000751018526,
+          22.999999630451203
+        ],
+        "id": 3018,
+        "max_mm": [
+          -398.99999141693115,
+          29.999999320507051,
+          72.000002002716073
+        ]
+      },
+      {
+        "class": "FreeFormElement",
+        "name": "Toe Vent Slat 06",
+        "min_mm": [
+          -385.00001020431517,
+          27.000000751018526,
+          22.999999630451203
+        ],
+        "id": 3022,
+        "max_mm": [
+          -382.00001163482665,
+          29.999999320507051,
+          72.000002002716073
+        ]
+      },
+      {
+        "class": "FreeFormElement",
+        "name": "Toe Vent Slat 07",
+        "min_mm": [
+          -367.99999408721925,
+          27.000000751018526,
+          22.999999630451203
+        ],
+        "id": 3026,
+        "max_mm": [
+          -364.99999551773072,
+          29.999999320507051,
+          72.000002002716073
+        ]
+      },
+      {
+        "class": "FreeFormElement",
+        "name": "Toe Vent Slat 08",
+        "min_mm": [
+          -351.00001430511475,
+          27.000000751018526,
+          22.999999630451203
+        ],
+        "id": 3030,
+        "max_mm": [
+          -348.00001573562622,
+          29.999999320507051,
+          72.000002002716073
+        ]
+      },
+      {
+        "class": "FreeFormElement",
+        "name": "Toe Vent Slat 09",
+        "min_mm": [
+          -333.99999818801882,
+          27.000000751018526,
+          22.999999630451203
+        ],
+        "id": 3034,
+        "max_mm": [
+          -330.99999961853030,
+          29.999999320507051,
+          72.000002002716073
+        ]
+      },
+      {
+        "class": "FreeFormElement",
+        "name": "Toe Vent Slat 10",
+        "min_mm": [
+          -316.99998207092284,
+          27.000000751018526,
+          22.999999630451203
+        ],
+        "id": 3038,
+        "max_mm": [
+          -313.99998350143431,
+          29.999999320507051,
+          72.000002002716073
+        ]
+      },
+      {
+        "class": "FreeFormElement",
+        "name": "Toe Vent Slat 11",
+        "min_mm": [
+          -300.00000228881839,
+          27.000000751018526,
+          22.999999630451203
+        ],
+        "id": 3042,
+        "max_mm": [
+          -297.00000371932987,
+          29.999999320507051,
+          72.000002002716073
+        ]
+      },
+      {
+        "class": "FreeFormElement",
+        "name": "Toe Vent Slat 12",
+        "min_mm": [
+          -283.00000433921815,
+          27.000000751018526,
+          22.999999630451203
+        ],
+        "id": 3046,
+        "max_mm": [
+          -280.00000576972963,
+          29.999999320507051,
+          72.000002002716073
+        ]
+      },
+      {
+        "class": "FreeFormElement",
+        "name": "Toe Vent Slat 13",
+        "min_mm": [
+          -266.00000638961791,
+          27.000000751018526,
+          22.999999630451203
+        ],
+        "id": 3050,
+        "max_mm": [
+          -263.00000782012938,
+          29.999999320507051,
+          72.000002002716073
+        ]
+      },
+      {
+        "class": "FreeFormElement",
+        "name": "Toe Vent Slat 14",
+        "min_mm": [
+          -249.00000844001772,
+          27.000000751018526,
+          22.999999630451203
+        ],
+        "id": 3054,
+        "max_mm": [
+          -245.99999170303346,
+          29.999999320507051,
+          72.000002002716073
+        ]
+      },
+      {
+        "class": "FreeFormElement",
+        "name": "Toe Vent Slat 15",
+        "min_mm": [
+          -231.99999232292177,
+          27.000000751018526,
+          22.999999630451203
+        ],
+        "id": 3058,
+        "max_mm": [
+          -228.99999375343324,
+          29.999999320507051,
+          72.000002002716073
+        ]
+      },
+      {
+        "class": "FreeFormElement",
+        "name": "Toe Vent Slat 16",
+        "min_mm": [
+          -214.99999437332153,
+          27.000000751018526,
+          22.999999630451203
+        ],
+        "id": 3062,
+        "max_mm": [
+          -211.99999580383300,
+          29.999999320507051,
+          72.000002002716073
+        ]
+      },
+      {
+        "class": "FreeFormElement",
+        "name": "Toe Vent Slat 17",
+        "min_mm": [
+          -197.99999642372131,
+          27.000000751018526,
+          22.999999630451203
+        ],
+        "id": 3066,
+        "max_mm": [
+          -194.99999785423279,
+          29.999999320507051,
+          72.000002002716073
+        ]
+      },
+      {
+        "class": "FreeFormElement",
+        "name": "Toe Vent Slat 18",
+        "min_mm": [
+          -180.99999847412110,
+          27.000000751018526,
+          22.999999630451203
+        ],
+        "id": 3070,
+        "max_mm": [
+          -177.99999990463257,
+          29.999999320507051,
+          72.000002002716073
+        ]
+      },
+      {
+        "class": "FreeFormElement",
+        "name": "Toe Vent Slat 19",
+        "min_mm": [
+          -164.00000052452089,
+          27.000000751018526,
+          22.999999630451203
+        ],
+        "id": 3074,
+        "max_mm": [
+          -161.00000195503236,
+          29.999999320507051,
+          72.000002002716073
+        ]
+      },
+      {
+        "class": "FreeFormElement",
+        "name": "Toe Vent Slat 20",
+        "min_mm": [
+          -147.00000257492067,
+          27.000000751018526,
+          22.999999630451203
+        ],
+        "id": 3078,
+        "max_mm": [
+          -144.00000400543215,
+          29.999999320507051,
+          72.000002002716073
+        ]
+      },
+      {
+        "class": "FreeFormElement",
+        "name": "Toe Vent Slat 21",
+        "min_mm": [
+          -129.99999554157259,
+          27.000000751018526,
+          22.999999630451203
+        ],
+        "id": 3082,
+        "max_mm": [
+          -126.99999697208405,
+          29.999999320507051,
+          72.000002002716073
+        ]
+      },
+      {
+        "class": "FreeFormElement",
+        "name": "Toe Vent Slat 22",
+        "min_mm": [
+          -112.99999759197236,
+          27.000000751018526,
+          22.999999630451203
+        ],
+        "id": 3086,
+        "max_mm": [
+          -109.99999902248383,
+          29.999999320507051,
+          72.000002002716073
+        ]
+      },
+      {
+        "class": "FreeFormElement",
+        "name": "Toe Vent Slat 23",
+        "min_mm": [
+          -95.999999642372131,
+          27.000000751018526,
+          22.999999630451203
+        ],
+        "id": 3090,
+        "max_mm": [
+          -93.000001072883606,
+          29.999999320507051,
+          72.000002002716073
+        ]
+      },
+      {
+        "class": "FreeFormElement",
+        "name": "Toe Vent Slat 24",
+        "min_mm": [
+          -79.000001692771917,
+          27.000000751018526,
+          22.999999630451203
+        ],
+        "id": 3094,
+        "max_mm": [
+          -75.999998581409457,
+          29.999999320507051,
+          72.000002002716073
+        ]
+      },
+      {
+        "class": "FreeFormElement",
+        "name": "Toe Vent Slat 25",
+        "min_mm": [
+          -61.999999201297761,
+          27.000000751018526,
+          22.999999630451203
+        ],
+        "id": 3098,
+        "max_mm": [
+          -59.000000631809236,
+          29.999999320507051,
+          72.000002002716073
+        ]
+      },
+      {
+        "class": "FreeFormElement",
+        "name": "Toe Vent Slat 26",
+        "min_mm": [
+          -45.000001251697540,
+          27.000000751018526,
+          22.999999630451203
+        ],
+        "id": 3102,
+        "max_mm": [
+          -41.999998140335087,
+          29.999999320507051,
+          72.000002002716073
+        ]
+      },
+      {
+        "class": "FreeFormElement",
+        "name": "Toe Vent Slat 27",
+        "min_mm": [
+          -28.000001031160355,
+          27.000000751018526,
+          22.999999630451203
+        ],
+        "id": 3106,
+        "max_mm": [
+          -25.000000190734863,
+          29.999999320507051,
+          72.000002002716073
+        ]
+      },
+      {
+        "class": "FreeFormElement",
+        "name": "Toe Vent Slat 28",
+        "min_mm": [
+          -10.999999675154687,
+          27.000000751018526,
+          22.999999630451203
+        ],
+        "id": 3110,
+        "max_mm": [
+          -7.9999999701976776,
+          29.999999320507051,
+          72.000002002716073
+        ]
+      },
+      {
+        "class": "FreeFormElement",
+        "name": "Toe Vent Slat 29",
+        "min_mm": [
+          5.9999999776482582,
+          27.000000751018526,
+          22.999999630451203
+        ],
+        "id": 3114,
+        "max_mm": [
+          9.0000002503395091,
+          29.999999320507051,
+          72.000002002716073
+        ]
+      },
+      {
+        "class": "FreeFormElement",
+        "name": "Toe Vent Slat 30",
+        "min_mm": [
+          22.999999630451203,
+          27.000000751018526,
+          22.999999630451203
+        ],
+        "id": 3118,
+        "max_mm": [
+          26.000000470876696,
+          29.999999320507051,
+          72.000002002716073
+        ]
+      },
+      {
+        "class": "FreeFormElement",
+        "name": "Toe Vent Slat 31",
+        "min_mm": [
+          40.000002121925355,
+          27.000000751018526,
+          22.999999630451203
+        ],
+        "id": 3122,
+        "max_mm": [
+          43.000000691413881,
+          29.999999320507051,
+          72.000002002716073
+        ]
+      },
+      {
+        "class": "FreeFormElement",
+        "name": "Toe Vent Slat 32",
+        "min_mm": [
+          57.000000071525577,
+          27.000000751018526,
+          22.999999630451203
+        ],
+        "id": 3126,
+        "max_mm": [
+          59.999998641014102,
+          29.999999320507051,
+          72.000002002716073
+        ]
+      },
+      {
+        "class": "FreeFormElement",
+        "name": "Toe Vent Slat 33",
+        "min_mm": [
+          73.999998021125791,
+          27.000000751018526,
+          22.999999630451203
+        ],
+        "id": 3130,
+        "max_mm": [
+          76.999996590614316,
+          29.999999320507051,
+          72.000002002716073
+        ]
+      },
+      {
+        "class": "FreeFormElement",
+        "name": "Toe Vent Slat 34",
+        "min_mm": [
+          90.999995970726019,
+          27.000000751018526,
+          22.999999630451203
+        ],
+        "id": 3134,
+        "max_mm": [
+          94.000003623962400,
+          29.999999320507051,
+          72.000002002716073
+        ]
+      },
+      {
+        "class": "FreeFormElement",
+        "name": "Toe Vent Slat 35",
+        "min_mm": [
+          108.00000300407410,
+          27.000000751018526,
+          22.999999630451203
+        ],
+        "id": 3138,
+        "max_mm": [
+          111.00000157356263,
+          29.999999320507051,
+          72.000002002716073
+        ]
+      },
+      {
+        "class": "FreeFormElement",
+        "name": "Toe Vent Slat 36",
+        "min_mm": [
+          125.00000095367432,
+          27.000000751018526,
+          22.999999630451203
+        ],
+        "id": 3142,
+        "max_mm": [
+          127.99999952316284,
+          29.999999320507051,
+          72.000002002716073
+        ]
+      },
+      {
+        "class": "FreeFormElement",
+        "name": "Toe Vent Slat 37",
+        "min_mm": [
+          141.99999890327453,
+          27.000000751018526,
+          22.999999630451203
+        ],
+        "id": 3146,
+        "max_mm": [
+          144.99999747276306,
+          29.999999320507051,
+          72.000002002716073
+        ]
+      },
+      {
+        "class": "FreeFormElement",
+        "name": "Toe Vent Slat 38",
+        "min_mm": [
+          158.99999685287477,
+          27.000000751018526,
+          22.999999630451203
+        ],
+        "id": 3150,
+        "max_mm": [
+          161.99999542236330,
+          29.999999320507051,
+          72.000002002716073
+        ]
+      },
+      {
+        "class": "FreeFormElement",
+        "name": "Toe Vent Slat 39",
+        "min_mm": [
+          175.99999480247499,
+          27.000000751018526,
+          22.999999630451203
+        ],
+        "id": 3154,
+        "max_mm": [
+          178.99999337196351,
+          29.999999320507051,
+          72.000002002716073
+        ]
+      },
+      {
+        "class": "FreeFormElement",
+        "name": "Toe Vent Slat 40",
+        "min_mm": [
+          192.99999275207520,
+          27.000000751018526,
+          22.999999630451203
+        ],
+        "id": 3158,
+        "max_mm": [
+          195.99999132156373,
+          29.999999320507051,
+          72.000002002716073
+        ]
+      },
+      {
+        "class": "FreeFormElement",
+        "name": "Toe Vent Slat 41",
+        "min_mm": [
+          210.00000886917115,
+          27.000000751018526,
+          22.999999630451203
+        ],
+        "id": 3162,
+        "max_mm": [
+          213.00000743865968,
+          29.999999320507051,
+          72.000002002716073
+        ]
+      },
+      {
+        "class": "FreeFormElement",
+        "name": "Toe Vent Slat 42",
+        "min_mm": [
+          227.00000681877137,
+          27.000000751018526,
+          22.999999630451203
+        ],
+        "id": 3166,
+        "max_mm": [
+          230.00000538825989,
+          29.999999320507051,
+          72.000002002716073
+        ]
+      },
+      {
+        "class": "FreeFormElement",
+        "name": "Toe Vent Slat 43",
+        "min_mm": [
+          244.00000476837158,
+          27.000000751018526,
+          22.999999630451203
+        ],
+        "id": 3170,
+        "max_mm": [
+          247.00000333786011,
+          29.999999320507051,
+          72.000002002716073
+        ]
+      },
+      {
+        "class": "FreeFormElement",
+        "name": "Toe Vent Slat 44",
+        "min_mm": [
+          261.00000271797182,
+          27.000000751018526,
+          22.999999630451203
+        ],
+        "id": 3174,
+        "max_mm": [
+          264.00000128746035,
+          29.999999320507051,
+          72.000002002716073
+        ]
+      },
+      {
+        "class": "FreeFormElement",
+        "name": "Toe Vent Slat 45",
+        "min_mm": [
+          278.00000066757201,
+          27.000000751018526,
+          22.999999630451203
+        ],
+        "id": 3178,
+        "max_mm": [
+          280.99999923706054,
+          29.999999320507051,
+          72.000002002716073
+        ]
+      },
+      {
+        "class": "FreeFormElement",
+        "name": "Toe Vent Slat 46",
+        "min_mm": [
+          294.99999861717225,
+          27.000000751018526,
+          22.999999630451203
+        ],
+        "id": 3182,
+        "max_mm": [
+          297.99999718666078,
+          29.999999320507051,
+          72.000002002716073
+        ]
+      },
+      {
+        "class": "FreeFormElement",
+        "name": "Toe Vent Slat 47",
+        "min_mm": [
+          311.99999656677250,
+          27.000000751018526,
+          22.999999630451203
+        ],
+        "id": 3186,
+        "max_mm": [
+          314.99999513626102,
+          29.999999320507051,
+          72.000002002716073
+        ]
+      },
+      {
+        "class": "FreeFormElement",
+        "name": "Toe Vent Slat 48",
+        "min_mm": [
+          329.00001268386842,
+          27.000000751018526,
+          22.999999630451203
+        ],
+        "id": 3190,
+        "max_mm": [
+          332.00001125335694,
+          29.999999320507051,
+          72.000002002716073
+        ]
+      },
+      {
+        "class": "FreeFormElement",
+        "name": "Toe Vent Slat 49",
+        "min_mm": [
+          345.99999246597292,
+          27.000000751018526,
+          22.999999630451203
+        ],
+        "id": 3194,
+        "max_mm": [
+          348.99999103546145,
+          29.999999320507051,
+          72.000002002716073
+        ]
+      },
+      {
+        "class": "FreeFormElement",
+        "name": "Toe Vent Slat 50",
+        "min_mm": [
+          363.00000858306885,
+          27.000000751018526,
+          22.999999630451203
+        ],
+        "id": 3198,
+        "max_mm": [
+          366.00000715255737,
+          29.999999320507051,
+          72.000002002716073
+        ]
+      },
+      {
+        "class": "FreeFormElement",
+        "name": "Toe Vent Slat 51",
+        "min_mm": [
+          379.99998836517335,
+          27.000000751018526,
+          22.999999630451203
+        ],
+        "id": 3202,
+        "max_mm": [
+          382.99998693466188,
+          29.999999320507051,
+          72.000002002716073
+        ]
+      },
+      {
+        "class": "FreeFormElement",
+        "name": "Toe Vent Slat 52",
+        "min_mm": [
+          397.00000448226928,
+          27.000000751018526,
+          22.999999630451203
+        ],
+        "id": 3206,
+        "max_mm": [
+          400.00000305175780,
+          29.999999320507051,
+          72.000002002716073
+        ]
+      },
+      {
+        "class": "FreeFormElement",
+        "name": "Toe Vent Slat 53",
+        "min_mm": [
+          413.99998426437378,
+          27.000000751018526,
+          22.999999630451203
+        ],
+        "id": 3210,
+        "max_mm": [
+          416.99998283386230,
+          29.999999320507051,
+          72.000002002716073
+        ]
+      },
+      {
+        "class": "FreeFormElement",
+        "name": "Toe Vent Slat 54",
+        "min_mm": [
+          431.00000038146976,
+          27.000000751018526,
+          22.999999630451203
+        ],
+        "id": 3214,
+        "max_mm": [
+          433.99999895095829,
+          29.999999320507051,
+          72.000002002716073
+        ]
+      },
+      {
+        "class": "FreeFormElement",
+        "name": "Toe Vent Slat 55",
+        "min_mm": [
+          448.00001649856569,
+          27.000000751018526,
+          22.999999630451203
+        ],
+        "id": 3218,
+        "max_mm": [
+          451.00001506805421,
+          29.999999320507051,
+          72.000002002716073
+        ]
+      },
+      {
+        "class": "FreeFormElement",
+        "name": "Toe Vent Slat 56",
+        "min_mm": [
+          464.99999628067019,
+          27.000000751018526,
+          22.999999630451203
+        ],
+        "id": 3222,
+        "max_mm": [
+          467.99999485015871,
+          29.999999320507051,
+          72.000002002716073
+        ]
+      },
+      {
+        "class": "FreeFormElement",
+        "name": "Toe Vent Slat 57",
+        "min_mm": [
+          482.99998769760134,
+          27.000000751018526,
+          22.999999630451203
+        ],
+        "id": 3226,
+        "max_mm": [
+          485.99998626708987,
+          29.999999320507051,
+          72.000002002716073
+        ]
+      },
+      {
+        "class": "FreeFormElement",
+        "name": "Bottom Freezer Factory Front",
+        "min_mm": [
+          -523.99999237060547,
+          -1.2506576805072022e-23,
+          83.999996280670175
+        ],
+        "id": 3230,
+        "max_mm": [
+          523.99999237060547,
+          36.000001001358036,
+          585.99998703002927
+        ]
+      },
+      {
+        "class": "FreeFormElement",
+        "name": "Convertible Drawer Factory Front",
+        "min_mm": [
+          -523.99999237060547,
+          -9.3799330734227743e-24,
+          588.99998559951780
+        ],
+        "id": 3234,
+        "max_mm": [
+          523.99999237060547,
+          36.000001001358036,
+          854.99999198913576
+        ]
+      },
+      {
+        "class": "FreeFormElement",
+        "name": "French Door Left Factory Front",
+        "min_mm": [
+          -523.99999237060547,
+          -9.3799330734227743e-24,
+          858.00002689361577
+        ],
+        "id": 3238,
+        "max_mm": [
+          -1.4999999944120646,
+          36.000001001358036,
+          2121.9999813079835
+        ]
+      },
+      {
+        "class": "FreeFormElement",
+        "name": "French Door Right Factory Front",
+        "min_mm": [
+          1.4999999944120646,
+          -1.2506576805072022e-23,
+          858.00002689361577
+        ],
+        "id": 3242,
+        "max_mm": [
+          523.99999237060547,
+          36.000001001358036,
+          2121.9999813079835
+        ]
+      },
+      {
+        "class": "FreeFormElement",
+        "name": "French Door Central Gasket",
+        "min_mm": [
+          -1.4999999944120646,
+          3.9999999850988388,
+          858.00002689361577
+        ],
+        "id": 3246,
+        "max_mm": [
+          1.4999999944120646,
+          18.000000500679018,
+          2119.0000190734863
+        ]
+      },
+      {
+        "class": "FreeFormElement",
+        "name": "Retracted Foot 0 0",
+        "min_mm": [
+          -504.00001401901250,
+          57.999998080730442,
+          -8.5742232363106286e-21
+        ],
+        "id": 3250,
+        "max_mm": [
+          -470.00001811981201,
+          91.999998521804812,
+          18.000000500679018
+        ]
+      },
+      {
+        "class": "FreeFormElement",
+        "name": "Retracted Foot 0 1",
+        "min_mm": [
+          -504.00001401901250,
+          533.99999971389775,
+          -8.5742232363106286e-21
+        ],
+        "id": 3254,
+        "max_mm": [
+          -470.00001811981201,
+          567.99999561309812,
+          18.000000500679018
+        ]
+      },
+      {
+        "class": "FreeFormElement",
+        "name": "Retracted Foot 1 0",
+        "min_mm": [
+          470.00001811981201,
+          57.999998080730442,
+          -8.5742232363106286e-21
+        ],
+        "id": 3258,
+        "max_mm": [
+          504.00001401901250,
+          91.999998521804812,
+          18.000000500679018
+        ]
+      },
+      {
+        "class": "FreeFormElement",
+        "name": "Retracted Foot 1 1",
+        "min_mm": [
+          470.00001811981201,
+          533.99999971389775,
+          -8.5742232363106286e-21
+        ],
+        "id": 3262,
+        "max_mm": [
+          504.00001401901250,
+          567.99999561309812,
+          18.000000500679018
+        ]
+      },
+      {
+        "class": "FreeFormElement",
+        "name": "Upper Hinge Cover L",
+        "min_mm": [
+          -504.00001401901250,
+          33.000000160932544,
+          2083.0000362396240
+        ],
+        "id": 3266,
+        "max_mm": [
+          -467.99999485015871,
+          64.999997770786294,
+          2105.9999404907226
+        ]
+      },
+      {
+        "class": "FreeFormElement",
+        "name": "Upper Hinge Cover R",
+        "min_mm": [
+          467.99999485015871,
+          33.000000160932544,
+          2083.0000362396240
+        ],
+        "id": 3270,
+        "max_mm": [
+          504.00001401901250,
+          64.999997770786294,
+          2105.9999404907226
+        ]
+      },
+      {
+        "class": "FreeFormElement",
+        "name": "Mid Hinge Cover L",
+        "min_mm": [
+          -504.00001401901250,
+          33.000000160932544,
+          866.99998626708987
+        ],
+        "id": 3274,
+        "max_mm": [
+          -467.99999485015871,
+          64.999997770786294,
+          890.00003585815432
+        ]
+      },
+      {
+        "class": "FreeFormElement",
+        "name": "Mid Hinge Cover R",
+        "min_mm": [
+          467.99999485015871,
+          33.000000160932544,
+          866.99998626708987
+        ],
+        "id": 3278,
+        "max_mm": [
+          504.00001401901250,
+          64.999997770786294,
+          890.00003585815432
+        ]
+      }
+    ],
+    "xyz_size_mm": [
+      1047.9999847412109,
+      607.99998865127566,
+      2124.9999435424807
+    ],
+    "min_mm": [
+      -523.99999237060547,
+      -1.2506576805072022e-23,
+      -8.5742232363106286e-21
+    ],
+    "max_mm": [
+      523.99999237060547,
+      607.99998865127566,
+      2124.9999435424807
+    ]
+  },
+  "parameter_flex": [
+    {
+      "substitution_pass": true,
+      "name": "Panel Finish",
+      "geometry_bindings": 4,
+      "bound_element_ids": [
+        3230,
+        3234,
+        3238,
+        3242
+      ],
+      "restored": true
+    },
+    {
+      "substitution_pass": true,
+      "name": "Metal Finish",
+      "geometry_bindings": 62,
+      "bound_element_ids": [
+        2998,
+        3002,
+        3006,
+        3010,
+        3014,
+        3018,
+        3022,
+        3026,
+        3030,
+        3034,
+        3038,
+        3042,
+        3046,
+        3050,
+        3054,
+        3058,
+        3062,
+        3066,
+        3070,
+        3074,
+        3078,
+        3082,
+        3086,
+        3090,
+        3094,
+        3098,
+        3102,
+        3106,
+        3110,
+        3114,
+        3118,
+        3122,
+        3126,
+        3130,
+        3134,
+        3138,
+        3142,
+        3146,
+        3150,
+        3154,
+        3158,
+        3162,
+        3166,
+        3170,
+        3174,
+        3178,
+        3182,
+        3186,
+        3190,
+        3194,
+        3198,
+        3202,
+        3206,
+        3210,
+        3214,
+        3218,
+        3222,
+        3226,
+        3266,
+        3270,
+        3274,
+        3278
+      ],
+      "restored": true
+    },
+    {
+      "substitution_pass": true,
+      "name": "Black Finish",
+      "geometry_bindings": 11,
+      "bound_element_ids": [
+        2974,
+        2978,
+        2982,
+        2986,
+        2990,
+        2994,
+        3246,
+        3250,
+        3254,
+        3258,
+        3262
+      ],
+      "restored": true
+    }
+  ],
+  "identity": {
+    "Model": "KFMC 3858 FD",
+    "Manufacturer": "Miele",
+    "Description": "Custom dimension-correct visualization replacement; see round-1 notes"
+  },
+  "ok": true,
+  "nested_instance_count": 0,
+  "placed_bounds": {
+    "parts": [
+      {
+        "class": "FamilyInstance",
+        "name": "KFMC 3858 FD - Custom R1",
+        "min_mm": [
+          -523.99999237060547,
+          -1.2506576805072022e-23,
+          -8.5742232363106286e-21
+        ],
+        "id": 3961,
+        "max_mm": [
+          523.99999237060547,
+          607.99998865127566,
+          2124.9999435424807
+        ]
+      }
+    ],
+    "xyz_size_mm": [
+      1047.9999847412109,
+      607.99998865127566,
+      2124.9999435424807
+    ],
+    "min_mm": [
+      -523.99999237060547,
+      -1.2506576805072022e-23,
+      -8.5742232363106286e-21
+    ],
+    "max_mm": [
+      523.99999237060547,
+      607.99998865127566,
+      2124.9999435424807
+    ]
+  },
+  "dimension_gate": true,
+  "finished_utc": "2026-10-02 23:58:37.766000",
+  "dimension_gate_scope": "overall",
+  "dimension_basis": "Appliance body; 1067 mm installation width is not appliance body width.",
+  "model": "KFMC 3858 FD",
+  "identity_gate": true,
+  "stage": "saved_reopened_measured_flexed_placed_previewed",
+  "placement_type": "WorkPlaneBased",
+  "placed_warnings": [
+
+  ],
+  "measurement_scope": "All physical geometry in the complete reopened family and floor-face placed instance. No part or projection filter; no auxiliary bounding object.",
+  "warnings": [
+
+  ],
+  "placed_material_flex": [
+    {
+      "substitution_pass": true,
+      "name": "Panel Finish",
+      "restored": true
+    },
+    {
+      "substitution_pass": true,
+      "name": "Metal Finish",
+      "restored": true
+    },
+    {
+      "substitution_pass": true,
+      "name": "Black Finish",
+      "restored": true
+    }
+  ],
+  "family_dimension_delta_mm": [
+    -1.52587890625e-05,
+    -1.1348724342497007e-05,
+    -5.645751934935106e-05
+  ],
+  "dimension_delta_mm": [
+    -1.52587890625e-05,
+    -1.1348724342497007e-05,
+    -5.645751934935106e-05
+  ],
+  "reopened": true,
+  "fixed_dimension_parameters": [
+    {
+      "matches_reference": true,
+      "name": "Overall Width",
+      "formula": "3'  5 67/256\u0022",
+      "value_mm": 1048.0
+    },
+    {
+      "matches_reference": true,
+      "name": "Overall Depth",
+      "formula": "1'  11 15/16\u0022",
+      "value_mm": 608.0
+    },
+    {
+      "matches_reference": true,
+      "name": "Overall Height",
+      "formula": "6'  11 169/256\u0022",
+      "value_mm": 2125.0
+    }
+  ],
+  "material_gate": true,
+  "material_inventory": [
+    {
+      "appearance_id": 2971,
+      "name": "KFMC 3858 FD Panel Finish",
+      "bitmap": "E:\u005cClaude\u005c3D-Model-Workflow\u005coutput\u005c1527_wieland\u005cappliances\u005cmiele_kfmc3858fd\u005csource\u005crework_r1\u005cPanel_Finish.png",
+      "bitmap_exists": true
+    },
+    {
+      "appearance_id": 2965,
+      "name": "KFMC 3858 FD Metal Finish",
+      "bitmap": "E:\u005cClaude\u005c3D-Model-Workflow\u005coutput\u005c1527_wieland\u005cappliances\u005cmiele_kfmc3858fd\u005csource\u005crework_r1\u005cMetal_Finish.png",
+      "bitmap_exists": true
+    },
+    {
+      "appearance_id": 2968,
+      "name": "KFMC 3858 FD Black Finish",
+      "bitmap": "E:\u005cClaude\u005c3D-Model-Workflow\u005coutput\u005c1527_wieland\u005cappliances\u005cmiele_kfmc3858fd\u005csource\u005crework_r1\u005cBlack_Finish.png",
+      "bitmap_exists": true
+    }
+  ],
+  "limitations": [
+    "Fixed manufacturer model size; exposed finish parameters are flex-tested.",
+    "Internal partitions, edge radii, controls and concealed mechanisms are reference-derived visualization approximations.",
+    "Default envelope represents the factory appliance without separately supplied customer overlay panels or handles. Panel Finish changes the represented factory front; it does not certify an overlay thickness or panel shop drawing."
+  ],
+  "target_xyz_mm": [
+    1048,
+    608,
+    2125
+  ],
+  "slug": "miele_kfmc3858fd"
+}

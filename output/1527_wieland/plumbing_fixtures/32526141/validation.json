@@ -1,0 +1,220 @@
+{
+  "rfa_path": "E:\\Claude\\3D-Model-Workflow\\output\\1527_wieland\\plumbing_fixtures\\32526141\\Hansgrohe_32526141_R2025.rfa", 
+  "appearance_bindings": {
+    "Detail": {
+      "exists": true, 
+      "path": "E:\\Claude\\3D-Model-Workflow\\output\\1527_wieland\\plumbing_fixtures\\32526141\\textures\\Detail.png", 
+      "material_id": "3207"
+    }, 
+    "Finish": {
+      "exists": true, 
+      "path": "E:\\Claude\\3D-Model-Workflow\\output\\1527_wieland\\plumbing_fixtures\\32526141\\textures\\Finish.png", 
+      "material_id": "3210"
+    }
+  }, 
+  "gates": {
+    "warnings": true, 
+    "views": true, 
+    "orientation": true, 
+    "materials": true, 
+    "reopen_geometry_equal": true, 
+    "actual_face_host": true, 
+    "dimensions": true, 
+    "diffuse_bitmaps": true, 
+    "cct": true, 
+    "category": true, 
+    "reopened": true
+  }, 
+  "type": "32526141 - bronze", 
+  "material_ids": {
+    "Detail": "3207", 
+    "Finish": "3210"
+  }, 
+  "display_bounds_in": [
+    -1.3125, 
+    -1.3125, 
+    0.0, 
+    11.25, 
+    1.3125000000000002, 
+    9.5
+  ], 
+  "revit_build": "25.4.50.35", 
+  "bounds_in": [
+    -1.3125, 
+    -1.3125, 
+    -1.1598476107969252e-22, 
+    11.25, 
+    1.3125000000000002, 
+    9.5000002384185791
+  ], 
+  "reopened_warnings": [], 
+  "native_gates_pass": true, 
+  "inferences": "ASSUMPTION: 8 in spout-to-control centers because the catalog does not specify spacing. | Inventory calls this SKU a rough-in; the exact SKU is faucet trim. Required rough 13622181 is not included. | Rectangular section thicknesses and control geometry are drawing-derived. | Independent visualization reconstruction with fixed product dimensions and editable native materials. | Small fillets, seams, nozzle details and optical material response are inferred where the manufacturer does not dimension them. | No internal hydraulic performance, MEP connectors, fabrication tolerances or procurement substitutions are implied.", 
+  "template_form_ids": [
+    "1537"
+  ], 
+  "project_warnings": [], 
+  "material_tests": {
+    "Detail": {
+      "face_count": 56, 
+      "writable": true, 
+      "substitution_reaches_faces": true
+    }, 
+    "Finish": {
+      "face_count": 56, 
+      "writable": true, 
+      "substitution_reaches_faces": true
+    }
+  }, 
+  "placement": "WorkPlaneBased", 
+  "model": "32526141", 
+  "rfa_search": {
+    "result": "No acceptable no-account RFA recovered", 
+    "evidence": "_research/32526141/sources.json"
+  }, 
+  "actual_dimensions_in": [
+    12.5625, 
+    2.625, 
+    9.5000002384185791
+  ], 
+  "stage": "complete", 
+  "source_spec_path": "E:\\Claude\\3D-Model-Workflow\\output\\1527_wieland\\plumbing_fixtures\\32526141\\source\\model_spec.json", 
+  "family_warnings": [], 
+  "visual_review": "PENDING_NATIVE_IMAGE_REVIEW", 
+  "parts": [
+    {
+      "name": "Spout wall plate", 
+      "id": "3212", 
+      "volume_ft3": 0.0014934974245812238
+    }, 
+    {
+      "name": "Handle wall plate", 
+      "id": "3213", 
+      "volume_ft3": 0.001493497424581224
+    }, 
+    {
+      "name": "Long wall spout", 
+      "id": "3214", 
+      "volume_ft3": 0.0063596304693290875
+    }, 
+    {
+      "name": "Outlet insert", 
+      "id": "3215", 
+      "volume_ft3": 1.4583333333333326e-05
+    }, 
+    {
+      "name": "Valve body", 
+      "id": "3216", 
+      "volume_ft3": 0.00097336714120647256
+    }, 
+    {
+      "name": "Flat wall lever", 
+      "id": "3217", 
+      "volume_ft3": 0.00023461014937611633
+    }
+  ], 
+  "source_references": [
+    {
+      "local_image": "_research/catalog_pages/page_128.png", 
+      "page": 128, 
+      "document": "Hansgrohe 2026 US Price Book", 
+      "url": "https://assets.hansgrohe.com/celum/emailmarketing/hansgrohe_2026_Price_Book_en_US.pdf"
+    }
+  ], 
+  "limitations": [
+    "ASSUMPTION: 8 in spout-to-control centers because the catalog does not specify spacing.", 
+    "Inventory calls this SKU a rough-in; the exact SKU is faucet trim. Required rough 13622181 is not included.", 
+    "Rectangular section thicknesses and control geometry are drawing-derived.", 
+    "Independent visualization reconstruction with fixed product dimensions and editable native materials.", 
+    "Small fillets, seams, nozzle details and optical material response are inferred where the manufacturer does not dimension them.", 
+    "No internal hydraulic performance, MEP connectors, fabrication tolerances or procurement substitutions are implied."
+  ], 
+  "finished_utc": "2026-10-02T14:48:53.787000Z", 
+  "reopened_bounds_in": [
+    -1.3125, 
+    -1.3125, 
+    -1.1598476107969252e-22, 
+    11.25, 
+    1.3125000000000002, 
+    9.5000002384185791
+  ], 
+  "dimension_anchor_checks": [
+    {
+      "deviation_mm": 0.0, 
+      "label": "Plate width", 
+      "nominal_mm": 66.674999999999997, 
+      "pass": true, 
+      "actual_mm": 66.674999999999997
+    }, 
+    {
+      "deviation_mm": 6.0558319091796872e-06, 
+      "label": "Projection", 
+      "nominal_mm": 241.29999999999998, 
+      "pass": true, 
+      "actual_mm": 241.30000605583189
+    }
+  ], 
+  "source_dimensions": [
+    "Two square plates 2.625 in; plate thickness .375 in; total projection 9.5 in; nominal reach 8.875 in."
+  ], 
+  "actual_dimensions_after_reopen_mm": [
+    319.08749999999998, 
+    66.674999999999997, 
+    241.30000605583189
+  ], 
+  "technical_pass": true, 
+  "reopen_geometry_equal": true, 
+  "acceptance": "NATIVE_GATES_PASSED_PENDING_VISUAL_REVIEW", 
+  "reopened": true, 
+  "all_overall_dimensions_authoritative": false, 
+  "bounds_method": "Fine native face meshes plus 128-sample analytic edges", 
+  "expected_dimensions_in": [
+    12.5625, 
+    2.625, 
+    9.5
+  ], 
+  "appearance_defaults": {
+    "Detail": {
+      "transparency": 0, 
+      "luminance": 0, 
+      "rgb": [
+        24, 
+        25, 
+        26
+      ], 
+      "cct_k": null, 
+      "gloss": 0.17000000000000001
+    }, 
+    "Finish": {
+      "transparency": 0, 
+      "luminance": 0, 
+      "rgb": [
+        158, 
+        128, 
+        89
+      ], 
+      "cct_k": null, 
+      "gloss": 0.56000000000000005
+    }
+  }, 
+  "cct_k": null, 
+  "evidence_files": [
+    "Hansgrohe_32526141_R2025_Isolated - 3D View - Native Front.png", 
+    "Hansgrohe_32526141_R2025_Isolated - 3D View - Native Material.png", 
+    "Hansgrohe_32526141_R2025_Isolated - 3D View - Native Oblique.png", 
+    "Hansgrohe_32526141_R2025_Isolated - 3D View - Native Side.png"
+  ], 
+  "category": "Plumbing Fixtures", 
+  "host": {
+    "host_kind": "wall", 
+    "hostface_present": true, 
+    "instance_host_id": "3697", 
+    "host_id": "3697", 
+    "normal_dot": 1.0
+  }, 
+  "manufacturer": "Hansgrohe", 
+  "started_utc": "2026-10-02T14:48:50.815000Z", 
+  "revit_version": "2025", 
+  "source_spec_sha256": "07eb9812a33f82b5c91de02f47e0624f40fdba16abc9427f349492fc81659c35", 
+  "native_path_checks": []
+}

@@ -1,0 +1,3631 @@
+{
+  "key": "81392-BNX-2.5",
+  "model": "81392-BNX-2.5",
+  "manufacturer": "Brizo",
+  "type_name": "81392-BNX-2.5 - Brilliance Black Onyx -  Black",
+  "basename": "Brizo_81392-BNX-2.5_R2025",
+  "name": "12-inch linear round raincan, 2.5 GPM",
+  "host": "ceiling",
+  "configured_dimensions_in": [
+    11.75,
+    11.75,
+    2.375
+  ],
+  "materials": {
+    "Finish": {
+      "rgb": [
+        58,
+        60,
+        62
+      ],
+      "gloss": 0.92,
+      "reflectivity": 0.72,
+      "class": "Metal"
+    },
+    "Detail": {
+      "rgb": [
+        24,
+        25,
+        26
+      ],
+      "gloss": 0.17,
+      "reflectivity": 0.04,
+      "class": "Plastic"
+    },
+    "Graphite": {
+      "rgb": [
+        64,
+        67,
+        69
+      ],
+      "gloss": 0.36,
+      "reflectivity": 0.16,
+      "class": "Glass"
+    },
+    "Ceramic": {
+      "rgb": [
+        245,
+        245,
+        241
+      ],
+      "gloss": 0.86,
+      "reflectivity": 0.22,
+      "class": "Ceramic"
+    },
+    "Brass": {
+      "rgb": [
+        160,
+        124,
+        64
+      ],
+      "gloss": 0.4,
+      "reflectivity": 0.38,
+      "class": "Metal"
+    },
+    "Green": {
+      "rgb": [
+        31,
+        113,
+        66
+      ],
+      "gloss": 0.18,
+      "reflectivity": 0.05,
+      "class": "Plastic"
+    },
+    "Gray": {
+      "rgb": [
+        131,
+        132,
+        130
+      ],
+      "gloss": 0.32,
+      "reflectivity": 0.12,
+      "class": "Plastic"
+    }
+  },
+  "geometry": [
+    {
+      "name": "Thin round rain plate",
+      "kind": "cylinder",
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "radius": 5.875,
+      "a": 1.775,
+      "b": 2.275,
+      "material": "Finish"
+    },
+    {
+      "name": "Pivot neck",
+      "kind": "cylinder",
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "radius": 0.5,
+      "a": 0.5,
+      "b": 1.825,
+      "material": "Finish"
+    },
+    {
+      "name": "Connection nut",
+      "kind": "cylinder",
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "radius": 0.375,
+      "a": 0,
+      "b": 0.6,
+      "material": "Finish"
+    },
+    {
+      "name": "Spray nozzle 1.0 0",
+      "kind": "cylinder",
+      "origin": [
+        1.0,
+        0.0,
+        0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "radius": 0.06,
+      "a": 2.26,
+      "b": 2.375,
+      "material": "Detail"
+    },
+    {
+      "name": "Spray nozzle 1.0 1",
+      "kind": "cylinder",
+      "origin": [
+        0.8660254037844387,
+        0.49999999999999994,
+        0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "radius": 0.06,
+      "a": 2.26,
+      "b": 2.375,
+      "material": "Detail"
+    },
+    {
+      "name": "Spray nozzle 1.0 2",
+      "kind": "cylinder",
+      "origin": [
+        0.5000000000000001,
+        0.8660254037844386,
+        0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "radius": 0.06,
+      "a": 2.26,
+      "b": 2.375,
+      "material": "Detail"
+    },
+    {
+      "name": "Spray nozzle 1.0 3",
+      "kind": "cylinder",
+      "origin": [
+        6.123233995736766e-17,
+        1.0,
+        0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "radius": 0.06,
+      "a": 2.26,
+      "b": 2.375,
+      "material": "Detail"
+    },
+    {
+      "name": "Spray nozzle 1.0 4",
+      "kind": "cylinder",
+      "origin": [
+        -0.4999999999999998,
+        0.8660254037844387,
+        0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "radius": 0.06,
+      "a": 2.26,
+      "b": 2.375,
+      "material": "Detail"
+    },
+    {
+      "name": "Spray nozzle 1.0 5",
+      "kind": "cylinder",
+      "origin": [
+        -0.8660254037844387,
+        0.49999999999999994,
+        0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "radius": 0.06,
+      "a": 2.26,
+      "b": 2.375,
+      "material": "Detail"
+    },
+    {
+      "name": "Spray nozzle 1.0 6",
+      "kind": "cylinder",
+      "origin": [
+        -1.0,
+        1.2246467991473532e-16,
+        0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "radius": 0.06,
+      "a": 2.26,
+      "b": 2.375,
+      "material": "Detail"
+    },
+    {
+      "name": "Spray nozzle 1.0 7",
+      "kind": "cylinder",
+      "origin": [
+        -0.8660254037844388,
+        -0.4999999999999997,
+        0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "radius": 0.06,
+      "a": 2.26,
+      "b": 2.375,
+      "material": "Detail"
+    },
+    {
+      "name": "Spray nozzle 1.0 8",
+      "kind": "cylinder",
+      "origin": [
+        -0.5000000000000004,
+        -0.8660254037844385,
+        0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "radius": 0.06,
+      "a": 2.26,
+      "b": 2.375,
+      "material": "Detail"
+    },
+    {
+      "name": "Spray nozzle 1.0 9",
+      "kind": "cylinder",
+      "origin": [
+        -1.8369701987210297e-16,
+        -1.0,
+        0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "radius": 0.06,
+      "a": 2.26,
+      "b": 2.375,
+      "material": "Detail"
+    },
+    {
+      "name": "Spray nozzle 1.0 10",
+      "kind": "cylinder",
+      "origin": [
+        0.5000000000000001,
+        -0.8660254037844386,
+        0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "radius": 0.06,
+      "a": 2.26,
+      "b": 2.375,
+      "material": "Detail"
+    },
+    {
+      "name": "Spray nozzle 1.0 11",
+      "kind": "cylinder",
+      "origin": [
+        0.8660254037844384,
+        -0.5000000000000004,
+        0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "radius": 0.06,
+      "a": 2.26,
+      "b": 2.375,
+      "material": "Detail"
+    },
+    {
+      "name": "Spray nozzle 1.8 0",
+      "kind": "cylinder",
+      "origin": [
+        1.8,
+        0.0,
+        0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "radius": 0.06,
+      "a": 2.26,
+      "b": 2.375,
+      "material": "Detail"
+    },
+    {
+      "name": "Spray nozzle 1.8 1",
+      "kind": "cylinder",
+      "origin": [
+        1.7119017293312764,
+        0.5562305898749054,
+        0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "radius": 0.06,
+      "a": 2.26,
+      "b": 2.375,
+      "material": "Detail"
+    },
+    {
+      "name": "Spray nozzle 1.8 2",
+      "kind": "cylinder",
+      "origin": [
+        1.4562305898749055,
+        1.0580134541264516,
+        0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "radius": 0.06,
+      "a": 2.26,
+      "b": 2.375,
+      "material": "Detail"
+    },
+    {
+      "name": "Spray nozzle 1.8 3",
+      "kind": "cylinder",
+      "origin": [
+        1.0580134541264516,
+        1.4562305898749055,
+        0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "radius": 0.06,
+      "a": 2.26,
+      "b": 2.375,
+      "material": "Detail"
+    },
+    {
+      "name": "Spray nozzle 1.8 4",
+      "kind": "cylinder",
+      "origin": [
+        0.5562305898749055,
+        1.7119017293312764,
+        0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "radius": 0.06,
+      "a": 2.26,
+      "b": 2.375,
+      "material": "Detail"
+    },
+    {
+      "name": "Spray nozzle 1.8 5",
+      "kind": "cylinder",
+      "origin": [
+        1.1021821192326179e-16,
+        1.8,
+        0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "radius": 0.06,
+      "a": 2.26,
+      "b": 2.375,
+      "material": "Detail"
+    },
+    {
+      "name": "Spray nozzle 1.8 6",
+      "kind": "cylinder",
+      "origin": [
+        -0.5562305898749053,
+        1.7119017293312766,
+        0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "radius": 0.06,
+      "a": 2.26,
+      "b": 2.375,
+      "material": "Detail"
+    },
+    {
+      "name": "Spray nozzle 1.8 7",
+      "kind": "cylinder",
+      "origin": [
+        -1.0580134541264514,
+        1.4562305898749055,
+        0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "radius": 0.06,
+      "a": 2.26,
+      "b": 2.375,
+      "material": "Detail"
+    },
+    {
+      "name": "Spray nozzle 1.8 8",
+      "kind": "cylinder",
+      "origin": [
+        -1.4562305898749053,
+        1.0580134541264519,
+        0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "radius": 0.06,
+      "a": 2.26,
+      "b": 2.375,
+      "material": "Detail"
+    },
+    {
+      "name": "Spray nozzle 1.8 9",
+      "kind": "cylinder",
+      "origin": [
+        -1.7119017293312764,
+        0.5562305898749055,
+        0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "radius": 0.06,
+      "a": 2.26,
+      "b": 2.375,
+      "material": "Detail"
+    },
+    {
+      "name": "Spray nozzle 1.8 10",
+      "kind": "cylinder",
+      "origin": [
+        -1.8,
+        2.2043642384652358e-16,
+        0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "radius": 0.06,
+      "a": 2.26,
+      "b": 2.375,
+      "material": "Detail"
+    },
+    {
+      "name": "Spray nozzle 1.8 11",
+      "kind": "cylinder",
+      "origin": [
+        -1.7119017293312768,
+        -0.5562305898749045,
+        0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "radius": 0.06,
+      "a": 2.26,
+      "b": 2.375,
+      "material": "Detail"
+    },
+    {
+      "name": "Spray nozzle 1.8 12",
+      "kind": "cylinder",
+      "origin": [
+        -1.4562305898749055,
+        -1.0580134541264514,
+        0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "radius": 0.06,
+      "a": 2.26,
+      "b": 2.375,
+      "material": "Detail"
+    },
+    {
+      "name": "Spray nozzle 1.8 13",
+      "kind": "cylinder",
+      "origin": [
+        -1.0580134541264519,
+        -1.4562305898749053,
+        0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "radius": 0.06,
+      "a": 2.26,
+      "b": 2.375,
+      "material": "Detail"
+    },
+    {
+      "name": "Spray nozzle 1.8 14",
+      "kind": "cylinder",
+      "origin": [
+        -0.5562305898749056,
+        -1.7119017293312764,
+        0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "radius": 0.06,
+      "a": 2.26,
+      "b": 2.375,
+      "material": "Detail"
+    },
+    {
+      "name": "Spray nozzle 1.8 15",
+      "kind": "cylinder",
+      "origin": [
+        -3.3065463576978537e-16,
+        -1.8,
+        0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "radius": 0.06,
+      "a": 2.26,
+      "b": 2.375,
+      "material": "Detail"
+    },
+    {
+      "name": "Spray nozzle 1.8 16",
+      "kind": "cylinder",
+      "origin": [
+        0.556230589874905,
+        -1.7119017293312766,
+        0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "radius": 0.06,
+      "a": 2.26,
+      "b": 2.375,
+      "material": "Detail"
+    },
+    {
+      "name": "Spray nozzle 1.8 17",
+      "kind": "cylinder",
+      "origin": [
+        1.0580134541264512,
+        -1.4562305898749057,
+        0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "radius": 0.06,
+      "a": 2.26,
+      "b": 2.375,
+      "material": "Detail"
+    },
+    {
+      "name": "Spray nozzle 1.8 18",
+      "kind": "cylinder",
+      "origin": [
+        1.4562305898749053,
+        -1.058013454126452,
+        0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "radius": 0.06,
+      "a": 2.26,
+      "b": 2.375,
+      "material": "Detail"
+    },
+    {
+      "name": "Spray nozzle 1.8 19",
+      "kind": "cylinder",
+      "origin": [
+        1.7119017293312764,
+        -0.5562305898749058,
+        0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "radius": 0.06,
+      "a": 2.26,
+      "b": 2.375,
+      "material": "Detail"
+    },
+    {
+      "name": "Spray nozzle 2.6 0",
+      "kind": "cylinder",
+      "origin": [
+        2.6,
+        0.0,
+        0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "radius": 0.06,
+      "a": 2.26,
+      "b": 2.375,
+      "material": "Detail"
+    },
+    {
+      "name": "Spray nozzle 2.6 1",
+      "kind": "cylinder",
+      "origin": [
+        2.5348125716727417,
+        0.5785544282864175,
+        0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "radius": 0.06,
+      "a": 2.26,
+      "b": 2.375,
+      "material": "Detail"
+    },
+    {
+      "name": "Spray nozzle 2.6 2",
+      "kind": "cylinder",
+      "origin": [
+        2.3425190565462897,
+        1.1280977217056511,
+        0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "radius": 0.06,
+      "a": 2.26,
+      "b": 2.375,
+      "material": "Detail"
+    },
+    {
+      "name": "Spray nozzle 2.6 3",
+      "kind": "cylinder",
+      "origin": [
+        2.0327618544168775,
+        1.621073484832707,
+        0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "radius": 0.06,
+      "a": 2.26,
+      "b": 2.375,
+      "material": "Detail"
+    },
+    {
+      "name": "Spray nozzle 2.6 4",
+      "kind": "cylinder",
+      "origin": [
+        1.6210734848327073,
+        2.0327618544168775,
+        0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "radius": 0.06,
+      "a": 2.26,
+      "b": 2.375,
+      "material": "Detail"
+    },
+    {
+      "name": "Spray nozzle 2.6 5",
+      "kind": "cylinder",
+      "origin": [
+        1.1280977217056514,
+        2.3425190565462897,
+        0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "radius": 0.06,
+      "a": 2.26,
+      "b": 2.375,
+      "material": "Detail"
+    },
+    {
+      "name": "Spray nozzle 2.6 6",
+      "kind": "cylinder",
+      "origin": [
+        0.5785544282864176,
+        2.5348125716727417,
+        0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "radius": 0.06,
+      "a": 2.26,
+      "b": 2.375,
+      "material": "Detail"
+    },
+    {
+      "name": "Spray nozzle 2.6 7",
+      "kind": "cylinder",
+      "origin": [
+        1.5920408388915593e-16,
+        2.6,
+        0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "radius": 0.06,
+      "a": 2.26,
+      "b": 2.375,
+      "material": "Detail"
+    },
+    {
+      "name": "Spray nozzle 2.6 8",
+      "kind": "cylinder",
+      "origin": [
+        -0.5785544282864173,
+        2.5348125716727417,
+        0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "radius": 0.06,
+      "a": 2.26,
+      "b": 2.375,
+      "material": "Detail"
+    },
+    {
+      "name": "Spray nozzle 2.6 9",
+      "kind": "cylinder",
+      "origin": [
+        -1.128097721705651,
+        2.3425190565462897,
+        0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "radius": 0.06,
+      "a": 2.26,
+      "b": 2.375,
+      "material": "Detail"
+    },
+    {
+      "name": "Spray nozzle 2.6 10",
+      "kind": "cylinder",
+      "origin": [
+        -1.621073484832707,
+        2.032761854416878,
+        0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "radius": 0.06,
+      "a": 2.26,
+      "b": 2.375,
+      "material": "Detail"
+    },
+    {
+      "name": "Spray nozzle 2.6 11",
+      "kind": "cylinder",
+      "origin": [
+        -2.0327618544168766,
+        1.6210734848327082,
+        0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "radius": 0.06,
+      "a": 2.26,
+      "b": 2.375,
+      "material": "Detail"
+    },
+    {
+      "name": "Spray nozzle 2.6 12",
+      "kind": "cylinder",
+      "origin": [
+        -2.3425190565462897,
+        1.1280977217056514,
+        0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "radius": 0.06,
+      "a": 2.26,
+      "b": 2.375,
+      "material": "Detail"
+    },
+    {
+      "name": "Spray nozzle 2.6 13",
+      "kind": "cylinder",
+      "origin": [
+        -2.5348125716727417,
+        0.5785544282864167,
+        0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "radius": 0.06,
+      "a": 2.26,
+      "b": 2.375,
+      "material": "Detail"
+    },
+    {
+      "name": "Spray nozzle 2.6 14",
+      "kind": "cylinder",
+      "origin": [
+        -2.6,
+        3.1840816777831187e-16,
+        0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "radius": 0.06,
+      "a": 2.26,
+      "b": 2.375,
+      "material": "Detail"
+    },
+    {
+      "name": "Spray nozzle 2.6 15",
+      "kind": "cylinder",
+      "origin": [
+        -2.5348125716727417,
+        -0.578554428286416,
+        0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "radius": 0.06,
+      "a": 2.26,
+      "b": 2.375,
+      "material": "Detail"
+    },
+    {
+      "name": "Spray nozzle 2.6 16",
+      "kind": "cylinder",
+      "origin": [
+        -2.3425190565462897,
+        -1.128097721705651,
+        0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "radius": 0.06,
+      "a": 2.26,
+      "b": 2.375,
+      "material": "Detail"
+    },
+    {
+      "name": "Spray nozzle 2.6 17",
+      "kind": "cylinder",
+      "origin": [
+        -2.032761854416877,
+        -1.621073484832708,
+        0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "radius": 0.06,
+      "a": 2.26,
+      "b": 2.375,
+      "material": "Detail"
+    },
+    {
+      "name": "Spray nozzle 2.6 18",
+      "kind": "cylinder",
+      "origin": [
+        -1.6210734848327077,
+        -2.032761854416877,
+        0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "radius": 0.06,
+      "a": 2.26,
+      "b": 2.375,
+      "material": "Detail"
+    },
+    {
+      "name": "Spray nozzle 2.6 19",
+      "kind": "cylinder",
+      "origin": [
+        -1.1280977217056516,
+        -2.3425190565462897,
+        0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "radius": 0.06,
+      "a": 2.26,
+      "b": 2.375,
+      "material": "Detail"
+    },
+    {
+      "name": "Spray nozzle 2.6 20",
+      "kind": "cylinder",
+      "origin": [
+        -0.5785544282864179,
+        -2.5348125716727417,
+        0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "radius": 0.06,
+      "a": 2.26,
+      "b": 2.375,
+      "material": "Detail"
+    },
+    {
+      "name": "Spray nozzle 2.6 21",
+      "kind": "cylinder",
+      "origin": [
+        -4.776122516674677e-16,
+        -2.6,
+        0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "radius": 0.06,
+      "a": 2.26,
+      "b": 2.375,
+      "material": "Detail"
+    },
+    {
+      "name": "Spray nozzle 2.6 22",
+      "kind": "cylinder",
+      "origin": [
+        0.5785544282864147,
+        -2.534812571672742,
+        0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "radius": 0.06,
+      "a": 2.26,
+      "b": 2.375,
+      "material": "Detail"
+    },
+    {
+      "name": "Spray nozzle 2.6 23",
+      "kind": "cylinder",
+      "origin": [
+        1.1280977217056507,
+        -2.34251905654629,
+        0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "radius": 0.06,
+      "a": 2.26,
+      "b": 2.375,
+      "material": "Detail"
+    },
+    {
+      "name": "Spray nozzle 2.6 24",
+      "kind": "cylinder",
+      "origin": [
+        1.6210734848327069,
+        -2.032761854416878,
+        0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "radius": 0.06,
+      "a": 2.26,
+      "b": 2.375,
+      "material": "Detail"
+    },
+    {
+      "name": "Spray nozzle 2.6 25",
+      "kind": "cylinder",
+      "origin": [
+        2.032761854416877,
+        -1.6210734848327077,
+        0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "radius": 0.06,
+      "a": 2.26,
+      "b": 2.375,
+      "material": "Detail"
+    },
+    {
+      "name": "Spray nozzle 2.6 26",
+      "kind": "cylinder",
+      "origin": [
+        2.3425190565462906,
+        -1.1280977217056496,
+        0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "radius": 0.06,
+      "a": 2.26,
+      "b": 2.375,
+      "material": "Detail"
+    },
+    {
+      "name": "Spray nozzle 2.6 27",
+      "kind": "cylinder",
+      "origin": [
+        2.534812571672741,
+        -0.5785544282864181,
+        0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "radius": 0.06,
+      "a": 2.26,
+      "b": 2.375,
+      "material": "Detail"
+    },
+    {
+      "name": "Spray nozzle 3.4 0",
+      "kind": "cylinder",
+      "origin": [
+        3.4,
+        0.0,
+        0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "radius": 0.06,
+      "a": 2.26,
+      "b": 2.375,
+      "material": "Detail"
+    },
+    {
+      "name": "Spray nozzle 3.4 1",
+      "kind": "cylinder",
+      "origin": [
+        3.348346360241507,
+        0.5904038040675631,
+        0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "radius": 0.06,
+      "a": 2.26,
+      "b": 2.375,
+      "material": "Detail"
+    },
+    {
+      "name": "Spray nozzle 3.4 2",
+      "kind": "cylinder",
+      "origin": [
+        3.1949549106720885,
+        1.1628684873072737,
+        0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "radius": 0.06,
+      "a": 2.26,
+      "b": 2.375,
+      "material": "Detail"
+    },
+    {
+      "name": "Spray nozzle 3.4 3",
+      "kind": "cylinder",
+      "origin": [
+        2.9444863728670914,
+        1.6999999999999997,
+        0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "radius": 0.06,
+      "a": 2.26,
+      "b": 2.375,
+      "material": "Detail"
+    },
+    {
+      "name": "Spray nozzle 3.4 4",
+      "kind": "cylinder",
+      "origin": [
+        2.604551106604525,
+        2.1854778729342335,
+        0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "radius": 0.06,
+      "a": 2.26,
+      "b": 2.375,
+      "material": "Detail"
+    },
+    {
+      "name": "Spray nozzle 3.4 5",
+      "kind": "cylinder",
+      "origin": [
+        2.185477872934234,
+        2.604551106604525,
+        0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "radius": 0.06,
+      "a": 2.26,
+      "b": 2.375,
+      "material": "Detail"
+    },
+    {
+      "name": "Spray nozzle 3.4 6",
+      "kind": "cylinder",
+      "origin": [
+        1.7000000000000004,
+        2.9444863728670914,
+        0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "radius": 0.06,
+      "a": 2.26,
+      "b": 2.375,
+      "material": "Detail"
+    },
+    {
+      "name": "Spray nozzle 3.4 7",
+      "kind": "cylinder",
+      "origin": [
+        1.1628684873072739,
+        3.194954910672088,
+        0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "radius": 0.06,
+      "a": 2.26,
+      "b": 2.375,
+      "material": "Detail"
+    },
+    {
+      "name": "Spray nozzle 3.4 8",
+      "kind": "cylinder",
+      "origin": [
+        0.5904038040675634,
+        3.348346360241507,
+        0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "radius": 0.06,
+      "a": 2.26,
+      "b": 2.375,
+      "material": "Detail"
+    },
+    {
+      "name": "Spray nozzle 3.4 9",
+      "kind": "cylinder",
+      "origin": [
+        2.0818995585505003e-16,
+        3.4,
+        0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "radius": 0.06,
+      "a": 2.26,
+      "b": 2.375,
+      "material": "Detail"
+    },
+    {
+      "name": "Spray nozzle 3.4 10",
+      "kind": "cylinder",
+      "origin": [
+        -0.590403804067563,
+        3.348346360241507,
+        0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "radius": 0.06,
+      "a": 2.26,
+      "b": 2.375,
+      "material": "Detail"
+    },
+    {
+      "name": "Spray nozzle 3.4 11",
+      "kind": "cylinder",
+      "origin": [
+        -1.1628684873072728,
+        3.1949549106720885,
+        0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "radius": 0.06,
+      "a": 2.26,
+      "b": 2.375,
+      "material": "Detail"
+    },
+    {
+      "name": "Spray nozzle 3.4 12",
+      "kind": "cylinder",
+      "origin": [
+        -1.6999999999999993,
+        2.9444863728670914,
+        0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "radius": 0.06,
+      "a": 2.26,
+      "b": 2.375,
+      "material": "Detail"
+    },
+    {
+      "name": "Spray nozzle 3.4 13",
+      "kind": "cylinder",
+      "origin": [
+        -2.185477872934234,
+        2.604551106604525,
+        0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "radius": 0.06,
+      "a": 2.26,
+      "b": 2.375,
+      "material": "Detail"
+    },
+    {
+      "name": "Spray nozzle 3.4 14",
+      "kind": "cylinder",
+      "origin": [
+        -2.6045511066045246,
+        2.1854778729342343,
+        0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "radius": 0.06,
+      "a": 2.26,
+      "b": 2.375,
+      "material": "Detail"
+    },
+    {
+      "name": "Spray nozzle 3.4 15",
+      "kind": "cylinder",
+      "origin": [
+        -2.944486372867091,
+        1.700000000000001,
+        0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "radius": 0.06,
+      "a": 2.26,
+      "b": 2.375,
+      "material": "Detail"
+    },
+    {
+      "name": "Spray nozzle 3.4 16",
+      "kind": "cylinder",
+      "origin": [
+        -3.194954910672088,
+        1.162868487307274,
+        0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "radius": 0.06,
+      "a": 2.26,
+      "b": 2.375,
+      "material": "Detail"
+    },
+    {
+      "name": "Spray nozzle 3.4 17",
+      "kind": "cylinder",
+      "origin": [
+        -3.348346360241507,
+        0.5904038040675629,
+        0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "radius": 0.06,
+      "a": 2.26,
+      "b": 2.375,
+      "material": "Detail"
+    },
+    {
+      "name": "Spray nozzle 3.4 18",
+      "kind": "cylinder",
+      "origin": [
+        -3.4,
+        4.1637991171010006e-16,
+        0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "radius": 0.06,
+      "a": 2.26,
+      "b": 2.375,
+      "material": "Detail"
+    },
+    {
+      "name": "Spray nozzle 3.4 19",
+      "kind": "cylinder",
+      "origin": [
+        -3.3483463602415076,
+        -0.5904038040675621,
+        0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "radius": 0.06,
+      "a": 2.26,
+      "b": 2.375,
+      "material": "Detail"
+    },
+    {
+      "name": "Spray nozzle 3.4 20",
+      "kind": "cylinder",
+      "origin": [
+        -3.1949549106720885,
+        -1.1628684873072734,
+        0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "radius": 0.06,
+      "a": 2.26,
+      "b": 2.375,
+      "material": "Detail"
+    },
+    {
+      "name": "Spray nozzle 3.4 21",
+      "kind": "cylinder",
+      "origin": [
+        -2.9444863728670914,
+        -1.7000000000000004,
+        0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "radius": 0.06,
+      "a": 2.26,
+      "b": 2.375,
+      "material": "Detail"
+    },
+    {
+      "name": "Spray nozzle 3.4 22",
+      "kind": "cylinder",
+      "origin": [
+        -2.6045511066045264,
+        -2.185477872934232,
+        0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "radius": 0.06,
+      "a": 2.26,
+      "b": 2.375,
+      "material": "Detail"
+    },
+    {
+      "name": "Spray nozzle 3.4 23",
+      "kind": "cylinder",
+      "origin": [
+        -2.1854778729342343,
+        -2.6045511066045246,
+        0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "radius": 0.06,
+      "a": 2.26,
+      "b": 2.375,
+      "material": "Detail"
+    },
+    {
+      "name": "Spray nozzle 3.4 24",
+      "kind": "cylinder",
+      "origin": [
+        -1.7000000000000015,
+        -2.944486372867091,
+        0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "radius": 0.06,
+      "a": 2.26,
+      "b": 2.375,
+      "material": "Detail"
+    },
+    {
+      "name": "Spray nozzle 3.4 25",
+      "kind": "cylinder",
+      "origin": [
+        -1.162868487307273,
+        -3.1949549106720885,
+        0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "radius": 0.06,
+      "a": 2.26,
+      "b": 2.375,
+      "material": "Detail"
+    },
+    {
+      "name": "Spray nozzle 3.4 26",
+      "kind": "cylinder",
+      "origin": [
+        -0.5904038040675631,
+        -3.348346360241507,
+        0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "radius": 0.06,
+      "a": 2.26,
+      "b": 2.375,
+      "material": "Detail"
+    },
+    {
+      "name": "Spray nozzle 3.4 27",
+      "kind": "cylinder",
+      "origin": [
+        -6.245698675651501e-16,
+        -3.4,
+        0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "radius": 0.06,
+      "a": 2.26,
+      "b": 2.375,
+      "material": "Detail"
+    },
+    {
+      "name": "Spray nozzle 3.4 28",
+      "kind": "cylinder",
+      "origin": [
+        0.5904038040675619,
+        -3.3483463602415076,
+        0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "radius": 0.06,
+      "a": 2.26,
+      "b": 2.375,
+      "material": "Detail"
+    },
+    {
+      "name": "Spray nozzle 3.4 29",
+      "kind": "cylinder",
+      "origin": [
+        1.1628684873072745,
+        -3.194954910672088,
+        0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "radius": 0.06,
+      "a": 2.26,
+      "b": 2.375,
+      "material": "Detail"
+    },
+    {
+      "name": "Spray nozzle 3.4 30",
+      "kind": "cylinder",
+      "origin": [
+        1.6999999999999977,
+        -2.9444863728670927,
+        0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "radius": 0.06,
+      "a": 2.26,
+      "b": 2.375,
+      "material": "Detail"
+    },
+    {
+      "name": "Spray nozzle 3.4 31",
+      "kind": "cylinder",
+      "origin": [
+        2.1854778729342335,
+        -2.6045511066045255,
+        0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "radius": 0.06,
+      "a": 2.26,
+      "b": 2.375,
+      "material": "Detail"
+    },
+    {
+      "name": "Spray nozzle 3.4 32",
+      "kind": "cylinder",
+      "origin": [
+        2.6045511066045246,
+        -2.1854778729342343,
+        0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "radius": 0.06,
+      "a": 2.26,
+      "b": 2.375,
+      "material": "Detail"
+    },
+    {
+      "name": "Spray nozzle 3.4 33",
+      "kind": "cylinder",
+      "origin": [
+        2.944486372867092,
+        -1.6999999999999988,
+        0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "radius": 0.06,
+      "a": 2.26,
+      "b": 2.375,
+      "material": "Detail"
+    },
+    {
+      "name": "Spray nozzle 3.4 34",
+      "kind": "cylinder",
+      "origin": [
+        3.1949549106720885,
+        -1.1628684873072732,
+        0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "radius": 0.06,
+      "a": 2.26,
+      "b": 2.375,
+      "material": "Detail"
+    },
+    {
+      "name": "Spray nozzle 3.4 35",
+      "kind": "cylinder",
+      "origin": [
+        3.348346360241507,
+        -0.5904038040675633,
+        0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "radius": 0.06,
+      "a": 2.26,
+      "b": 2.375,
+      "material": "Detail"
+    },
+    {
+      "name": "Spray nozzle 4.2 0",
+      "kind": "cylinder",
+      "origin": [
+        4.2,
+        0.0,
+        0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "radius": 0.06,
+      "a": 2.26,
+      "b": 2.375,
+      "material": "Detail"
+    },
+    {
+      "name": "Spray nozzle 4.2 1",
+      "kind": "cylinder",
+      "origin": [
+        4.157250055899917,
+        0.5977223207477976,
+        0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "radius": 0.06,
+      "a": 2.26,
+      "b": 2.375,
+      "material": "Detail"
+    },
+    {
+      "name": "Spray nozzle 4.2 2",
+      "kind": "cylinder",
+      "origin": [
+        4.029870489180889,
+        1.1832767387340046,
+        0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "radius": 0.06,
+      "a": 2.26,
+      "b": 2.375,
+      "material": "Detail"
+    },
+    {
+      "name": "Spray nozzle 4.2 3",
+      "kind": "cylinder",
+      "origin": [
+        3.8204543804889775,
+        1.7447430546079228,
+        0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "radius": 0.06,
+      "a": 2.26,
+      "b": 2.375,
+      "material": "Detail"
+    },
+    {
+      "name": "Spray nozzle 4.2 4",
+      "kind": "cylinder",
+      "origin": [
+        3.533264837890961,
+        2.2706914333135098,
+        0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "radius": 0.06,
+      "a": 2.26,
+      "b": 2.375,
+      "material": "Detail"
+    },
+    {
+      "name": "Spray nozzle 4.2 5",
+      "kind": "cylinder",
+      "origin": [
+        3.174148212287885,
+        2.7504150825701976,
+        0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "radius": 0.06,
+      "a": 2.26,
+      "b": 2.375,
+      "material": "Detail"
+    },
+    {
+      "name": "Spray nozzle 4.2 6",
+      "kind": "cylinder",
+      "origin": [
+        2.7504150825701976,
+        3.174148212287885,
+        0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "radius": 0.06,
+      "a": 2.26,
+      "b": 2.375,
+      "material": "Detail"
+    },
+    {
+      "name": "Spray nozzle 4.2 7",
+      "kind": "cylinder",
+      "origin": [
+        2.27069143331351,
+        3.5332648378909606,
+        0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "radius": 0.06,
+      "a": 2.26,
+      "b": 2.375,
+      "material": "Detail"
+    },
+    {
+      "name": "Spray nozzle 4.2 8",
+      "kind": "cylinder",
+      "origin": [
+        1.744743054607923,
+        3.820454380488977,
+        0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "radius": 0.06,
+      "a": 2.26,
+      "b": 2.375,
+      "material": "Detail"
+    },
+    {
+      "name": "Spray nozzle 4.2 9",
+      "kind": "cylinder",
+      "origin": [
+        1.183276738734005,
+        4.029870489180889,
+        0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "radius": 0.06,
+      "a": 2.26,
+      "b": 2.375,
+      "material": "Detail"
+    },
+    {
+      "name": "Spray nozzle 4.2 10",
+      "kind": "cylinder",
+      "origin": [
+        0.5977223207477975,
+        4.157250055899917,
+        0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "radius": 0.06,
+      "a": 2.26,
+      "b": 2.375,
+      "material": "Detail"
+    },
+    {
+      "name": "Spray nozzle 4.2 11",
+      "kind": "cylinder",
+      "origin": [
+        1.1897631685060758e-15,
+        4.2,
+        0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "radius": 0.06,
+      "a": 2.26,
+      "b": 2.375,
+      "material": "Detail"
+    },
+    {
+      "name": "Spray nozzle 4.2 12",
+      "kind": "cylinder",
+      "origin": [
+        -0.5977223207477971,
+        4.157250055899918,
+        0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "radius": 0.06,
+      "a": 2.26,
+      "b": 2.375,
+      "material": "Detail"
+    },
+    {
+      "name": "Spray nozzle 4.2 13",
+      "kind": "cylinder",
+      "origin": [
+        -1.1832767387340046,
+        4.029870489180889,
+        0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "radius": 0.06,
+      "a": 2.26,
+      "b": 2.375,
+      "material": "Detail"
+    },
+    {
+      "name": "Spray nozzle 4.2 14",
+      "kind": "cylinder",
+      "origin": [
+        -1.7447430546079226,
+        3.8204543804889775,
+        0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "radius": 0.06,
+      "a": 2.26,
+      "b": 2.375,
+      "material": "Detail"
+    },
+    {
+      "name": "Spray nozzle 4.2 15",
+      "kind": "cylinder",
+      "origin": [
+        -2.2706914333135084,
+        3.5332648378909624,
+        0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "radius": 0.06,
+      "a": 2.26,
+      "b": 2.375,
+      "material": "Detail"
+    },
+    {
+      "name": "Spray nozzle 4.2 16",
+      "kind": "cylinder",
+      "origin": [
+        -2.750415082570197,
+        3.174148212287885,
+        0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "radius": 0.06,
+      "a": 2.26,
+      "b": 2.375,
+      "material": "Detail"
+    },
+    {
+      "name": "Spray nozzle 4.2 17",
+      "kind": "cylinder",
+      "origin": [
+        -3.1741482122878844,
+        2.750415082570198,
+        0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "radius": 0.06,
+      "a": 2.26,
+      "b": 2.375,
+      "material": "Detail"
+    },
+    {
+      "name": "Spray nozzle 4.2 18",
+      "kind": "cylinder",
+      "origin": [
+        -3.5332648378909606,
+        2.2706914333135106,
+        0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "radius": 0.06,
+      "a": 2.26,
+      "b": 2.375,
+      "material": "Detail"
+    },
+    {
+      "name": "Spray nozzle 4.2 19",
+      "kind": "cylinder",
+      "origin": [
+        -3.8204543804889766,
+        1.7447430546079243,
+        0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "radius": 0.06,
+      "a": 2.26,
+      "b": 2.375,
+      "material": "Detail"
+    },
+    {
+      "name": "Spray nozzle 4.2 20",
+      "kind": "cylinder",
+      "origin": [
+        -4.029870489180889,
+        1.1832767387340046,
+        0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "radius": 0.06,
+      "a": 2.26,
+      "b": 2.375,
+      "material": "Detail"
+    },
+    {
+      "name": "Spray nozzle 4.2 21",
+      "kind": "cylinder",
+      "origin": [
+        -4.157250055899917,
+        0.5977223207477977,
+        0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "radius": 0.06,
+      "a": 2.26,
+      "b": 2.375,
+      "material": "Detail"
+    },
+    {
+      "name": "Spray nozzle 4.2 22",
+      "kind": "cylinder",
+      "origin": [
+        -4.2,
+        2.3795263370121516e-15,
+        0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "radius": 0.06,
+      "a": 2.26,
+      "b": 2.375,
+      "material": "Detail"
+    },
+    {
+      "name": "Spray nozzle 4.2 23",
+      "kind": "cylinder",
+      "origin": [
+        -4.157250055899918,
+        -0.5977223207477967,
+        0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "radius": 0.06,
+      "a": 2.26,
+      "b": 2.375,
+      "material": "Detail"
+    },
+    {
+      "name": "Spray nozzle 4.2 24",
+      "kind": "cylinder",
+      "origin": [
+        -4.029870489180889,
+        -1.1832767387340035,
+        0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "radius": 0.06,
+      "a": 2.26,
+      "b": 2.375,
+      "material": "Detail"
+    },
+    {
+      "name": "Spray nozzle 4.2 25",
+      "kind": "cylinder",
+      "origin": [
+        -3.820454380488977,
+        -1.7447430546079232,
+        0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "radius": 0.06,
+      "a": 2.26,
+      "b": 2.375,
+      "material": "Detail"
+    },
+    {
+      "name": "Spray nozzle 4.2 26",
+      "kind": "cylinder",
+      "origin": [
+        -3.533264837890961,
+        -2.2706914333135098,
+        0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "radius": 0.06,
+      "a": 2.26,
+      "b": 2.375,
+      "material": "Detail"
+    },
+    {
+      "name": "Spray nozzle 4.2 27",
+      "kind": "cylinder",
+      "origin": [
+        -3.1741482122878852,
+        -2.750415082570197,
+        0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "radius": 0.06,
+      "a": 2.26,
+      "b": 2.375,
+      "material": "Detail"
+    },
+    {
+      "name": "Spray nozzle 4.2 28",
+      "kind": "cylinder",
+      "origin": [
+        -2.750415082570198,
+        -3.1741482122878844,
+        0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "radius": 0.06,
+      "a": 2.26,
+      "b": 2.375,
+      "material": "Detail"
+    },
+    {
+      "name": "Spray nozzle 4.2 29",
+      "kind": "cylinder",
+      "origin": [
+        -2.2706914333135093,
+        -3.5332648378909615,
+        0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "radius": 0.06,
+      "a": 2.26,
+      "b": 2.375,
+      "material": "Detail"
+    },
+    {
+      "name": "Spray nozzle 4.2 30",
+      "kind": "cylinder",
+      "origin": [
+        -1.7447430546079261,
+        -3.8204543804889757,
+        0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "radius": 0.06,
+      "a": 2.26,
+      "b": 2.375,
+      "material": "Detail"
+    },
+    {
+      "name": "Spray nozzle 4.2 31",
+      "kind": "cylinder",
+      "origin": [
+        -1.1832767387340049,
+        -4.029870489180889,
+        0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "radius": 0.06,
+      "a": 2.26,
+      "b": 2.375,
+      "material": "Detail"
+    },
+    {
+      "name": "Spray nozzle 4.2 32",
+      "kind": "cylinder",
+      "origin": [
+        -0.597722320747798,
+        -4.157250055899917,
+        0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "radius": 0.06,
+      "a": 2.26,
+      "b": 2.375,
+      "material": "Detail"
+    },
+    {
+      "name": "Spray nozzle 4.2 33",
+      "kind": "cylinder",
+      "origin": [
+        -7.715274834628325e-16,
+        -4.2,
+        0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "radius": 0.06,
+      "a": 2.26,
+      "b": 2.375,
+      "material": "Detail"
+    },
+    {
+      "name": "Spray nozzle 4.2 34",
+      "kind": "cylinder",
+      "origin": [
+        0.5977223207477964,
+        -4.157250055899918,
+        0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "radius": 0.06,
+      "a": 2.26,
+      "b": 2.375,
+      "material": "Detail"
+    },
+    {
+      "name": "Spray nozzle 4.2 35",
+      "kind": "cylinder",
+      "origin": [
+        1.1832767387340033,
+        -4.029870489180889,
+        0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "radius": 0.06,
+      "a": 2.26,
+      "b": 2.375,
+      "material": "Detail"
+    },
+    {
+      "name": "Spray nozzle 4.2 36",
+      "kind": "cylinder",
+      "origin": [
+        1.7447430546079215,
+        -3.820454380488978,
+        0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "radius": 0.06,
+      "a": 2.26,
+      "b": 2.375,
+      "material": "Detail"
+    },
+    {
+      "name": "Spray nozzle 4.2 37",
+      "kind": "cylinder",
+      "origin": [
+        2.270691433313511,
+        -3.53326483789096,
+        0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "radius": 0.06,
+      "a": 2.26,
+      "b": 2.375,
+      "material": "Detail"
+    },
+    {
+      "name": "Spray nozzle 4.2 38",
+      "kind": "cylinder",
+      "origin": [
+        2.7504150825701954,
+        -3.1741482122878866,
+        0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "radius": 0.06,
+      "a": 2.26,
+      "b": 2.375,
+      "material": "Detail"
+    },
+    {
+      "name": "Spray nozzle 4.2 39",
+      "kind": "cylinder",
+      "origin": [
+        3.174148212287883,
+        -2.7504150825701994,
+        0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "radius": 0.06,
+      "a": 2.26,
+      "b": 2.375,
+      "material": "Detail"
+    },
+    {
+      "name": "Spray nozzle 4.2 40",
+      "kind": "cylinder",
+      "origin": [
+        3.533264837890961,
+        -2.2706914333135093,
+        0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "radius": 0.06,
+      "a": 2.26,
+      "b": 2.375,
+      "material": "Detail"
+    },
+    {
+      "name": "Spray nozzle 4.2 41",
+      "kind": "cylinder",
+      "origin": [
+        3.8204543804889757,
+        -1.7447430546079263,
+        0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "radius": 0.06,
+      "a": 2.26,
+      "b": 2.375,
+      "material": "Detail"
+    },
+    {
+      "name": "Spray nozzle 4.2 42",
+      "kind": "cylinder",
+      "origin": [
+        4.029870489180889,
+        -1.183276738734005,
+        0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "radius": 0.06,
+      "a": 2.26,
+      "b": 2.375,
+      "material": "Detail"
+    },
+    {
+      "name": "Spray nozzle 4.2 43",
+      "kind": "cylinder",
+      "origin": [
+        4.157250055899917,
+        -0.5977223207477983,
+        0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "radius": 0.06,
+      "a": 2.26,
+      "b": 2.375,
+      "material": "Detail"
+    },
+    {
+      "name": "Spray nozzle 5.0 0",
+      "kind": "cylinder",
+      "origin": [
+        5.0,
+        0.0,
+        0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "radius": 0.06,
+      "a": 2.26,
+      "b": 2.375,
+      "material": "Detail"
+    },
+    {
+      "name": "Spray nozzle 5.0 1",
+      "kind": "cylinder",
+      "origin": [
+        4.96354437049027,
+        0.6026834012766152,
+        0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "radius": 0.06,
+      "a": 2.26,
+      "b": 2.375,
+      "material": "Detail"
+    },
+    {
+      "name": "Spray nozzle 5.0 2",
+      "kind": "cylinder",
+      "origin": [
+        4.85470908713026,
+        1.1965783214377888,
+        0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "radius": 0.06,
+      "a": 2.26,
+      "b": 2.375,
+      "material": "Detail"
+    },
+    {
+      "name": "Spray nozzle 5.0 3",
+      "kind": "cylinder",
+      "origin": [
+        4.675081213427074,
+        1.773024435212678,
+        0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "radius": 0.06,
+      "a": 2.26,
+      "b": 2.375,
+      "material": "Detail"
+    },
+    {
+      "name": "Spray nozzle 5.0 4",
+      "kind": "cylinder",
+      "origin": [
+        4.42728012826605,
+        2.3236158602188426,
+        0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "radius": 0.06,
+      "a": 2.26,
+      "b": 2.375,
+      "material": "Detail"
+    },
+    {
+      "name": "Spray nozzle 5.0 5",
+      "kind": "cylinder",
+      "origin": [
+        4.1149193294682815,
+        2.840323733655779,
+        0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "radius": 0.06,
+      "a": 2.26,
+      "b": 2.375,
+      "material": "Detail"
+    },
+    {
+      "name": "Spray nozzle 5.0 6",
+      "kind": "cylinder",
+      "origin": [
+        3.7425537408555054,
+        3.315613291203976,
+        0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "radius": 0.06,
+      "a": 2.26,
+      "b": 2.375,
+      "material": "Detail"
+    },
+    {
+      "name": "Spray nozzle 5.0 7",
+      "kind": "cylinder",
+      "origin": [
+        3.3156132912039764,
+        3.7425537408555054,
+        0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "radius": 0.06,
+      "a": 2.26,
+      "b": 2.375,
+      "material": "Detail"
+    },
+    {
+      "name": "Spray nozzle 5.0 8",
+      "kind": "cylinder",
+      "origin": [
+        2.8403237336557794,
+        4.1149193294682815,
+        0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "radius": 0.06,
+      "a": 2.26,
+      "b": 2.375,
+      "material": "Detail"
+    },
+    {
+      "name": "Spray nozzle 5.0 9",
+      "kind": "cylinder",
+      "origin": [
+        2.323615860218843,
+        4.42728012826605,
+        0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "radius": 0.06,
+      "a": 2.26,
+      "b": 2.375,
+      "material": "Detail"
+    },
+    {
+      "name": "Spray nozzle 5.0 10",
+      "kind": "cylinder",
+      "origin": [
+        1.7730244352126778,
+        4.675081213427074,
+        0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "radius": 0.06,
+      "a": 2.26,
+      "b": 2.375,
+      "material": "Detail"
+    },
+    {
+      "name": "Spray nozzle 5.0 11",
+      "kind": "cylinder",
+      "origin": [
+        1.1965783214377903,
+        4.85470908713026,
+        0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "radius": 0.06,
+      "a": 2.26,
+      "b": 2.375,
+      "material": "Detail"
+    },
+    {
+      "name": "Spray nozzle 5.0 12",
+      "kind": "cylinder",
+      "origin": [
+        0.602683401276615,
+        4.96354437049027,
+        0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "radius": 0.06,
+      "a": 2.26,
+      "b": 2.375,
+      "material": "Detail"
+    },
+    {
+      "name": "Spray nozzle 5.0 13",
+      "kind": "cylinder",
+      "origin": [
+        -8.040613248383183e-16,
+        5.0,
+        0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "radius": 0.06,
+      "a": 2.26,
+      "b": 2.375,
+      "material": "Detail"
+    },
+    {
+      "name": "Spray nozzle 5.0 14",
+      "kind": "cylinder",
+      "origin": [
+        -0.6026834012766145,
+        4.96354437049027,
+        0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "radius": 0.06,
+      "a": 2.26,
+      "b": 2.375,
+      "material": "Detail"
+    },
+    {
+      "name": "Spray nozzle 5.0 15",
+      "kind": "cylinder",
+      "origin": [
+        -1.1965783214377874,
+        4.854709087130261,
+        0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "radius": 0.06,
+      "a": 2.26,
+      "b": 2.375,
+      "material": "Detail"
+    },
+    {
+      "name": "Spray nozzle 5.0 16",
+      "kind": "cylinder",
+      "origin": [
+        -1.7730244352126774,
+        4.675081213427074,
+        0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "radius": 0.06,
+      "a": 2.26,
+      "b": 2.375,
+      "material": "Detail"
+    },
+    {
+      "name": "Spray nozzle 5.0 17",
+      "kind": "cylinder",
+      "origin": [
+        -2.3236158602188426,
+        4.42728012826605,
+        0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "radius": 0.06,
+      "a": 2.26,
+      "b": 2.375,
+      "material": "Detail"
+    },
+    {
+      "name": "Spray nozzle 5.0 18",
+      "kind": "cylinder",
+      "origin": [
+        -2.8403237336557785,
+        4.114919329468282,
+        0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "radius": 0.06,
+      "a": 2.26,
+      "b": 2.375,
+      "material": "Detail"
+    },
+    {
+      "name": "Spray nozzle 5.0 19",
+      "kind": "cylinder",
+      "origin": [
+        -3.3156132912039746,
+        3.7425537408555067,
+        0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "radius": 0.06,
+      "a": 2.26,
+      "b": 2.375,
+      "material": "Detail"
+    },
+    {
+      "name": "Spray nozzle 5.0 20",
+      "kind": "cylinder",
+      "origin": [
+        -3.742553740855506,
+        3.315613291203976,
+        0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "radius": 0.06,
+      "a": 2.26,
+      "b": 2.375,
+      "material": "Detail"
+    },
+    {
+      "name": "Spray nozzle 5.0 21",
+      "kind": "cylinder",
+      "origin": [
+        -4.1149193294682815,
+        2.840323733655779,
+        0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "radius": 0.06,
+      "a": 2.26,
+      "b": 2.375,
+      "material": "Detail"
+    },
+    {
+      "name": "Spray nozzle 5.0 22",
+      "kind": "cylinder",
+      "origin": [
+        -4.427280128266048,
+        2.3236158602188453,
+        0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "radius": 0.06,
+      "a": 2.26,
+      "b": 2.375,
+      "material": "Detail"
+    },
+    {
+      "name": "Spray nozzle 5.0 23",
+      "kind": "cylinder",
+      "origin": [
+        -4.675081213427074,
+        1.7730244352126792,
+        0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "radius": 0.06,
+      "a": 2.26,
+      "b": 2.375,
+      "material": "Detail"
+    },
+    {
+      "name": "Spray nozzle 5.0 24",
+      "kind": "cylinder",
+      "origin": [
+        -4.85470908713026,
+        1.1965783214377885,
+        0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "radius": 0.06,
+      "a": 2.26,
+      "b": 2.375,
+      "material": "Detail"
+    },
+    {
+      "name": "Spray nozzle 5.0 25",
+      "kind": "cylinder",
+      "origin": [
+        -4.96354437049027,
+        0.6026834012766153,
+        0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "radius": 0.06,
+      "a": 2.26,
+      "b": 2.375,
+      "material": "Detail"
+    },
+    {
+      "name": "Spray nozzle 5.0 26",
+      "kind": "cylinder",
+      "origin": [
+        -5.0,
+        -1.6081226496766366e-15,
+        0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "radius": 0.06,
+      "a": 2.26,
+      "b": 2.375,
+      "material": "Detail"
+    },
+    {
+      "name": "Spray nozzle 5.0 27",
+      "kind": "cylinder",
+      "origin": [
+        -4.96354437049027,
+        -0.6026834012766141,
+        0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "radius": 0.06,
+      "a": 2.26,
+      "b": 2.375,
+      "material": "Detail"
+    },
+    {
+      "name": "Spray nozzle 5.0 28",
+      "kind": "cylinder",
+      "origin": [
+        -4.854709087130261,
+        -1.1965783214377872,
+        0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "radius": 0.06,
+      "a": 2.26,
+      "b": 2.375,
+      "material": "Detail"
+    },
+    {
+      "name": "Spray nozzle 5.0 29",
+      "kind": "cylinder",
+      "origin": [
+        -4.675081213427074,
+        -1.773024435212678,
+        0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "radius": 0.06,
+      "a": 2.26,
+      "b": 2.375,
+      "material": "Detail"
+    },
+    {
+      "name": "Spray nozzle 5.0 30",
+      "kind": "cylinder",
+      "origin": [
+        -4.427280128266051,
+        -2.3236158602188404,
+        0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "radius": 0.06,
+      "a": 2.26,
+      "b": 2.375,
+      "material": "Detail"
+    },
+    {
+      "name": "Spray nozzle 5.0 31",
+      "kind": "cylinder",
+      "origin": [
+        -4.114919329468282,
+        -2.840323733655778,
+        0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "radius": 0.06,
+      "a": 2.26,
+      "b": 2.375,
+      "material": "Detail"
+    },
+    {
+      "name": "Spray nozzle 5.0 32",
+      "kind": "cylinder",
+      "origin": [
+        -3.7425537408555067,
+        -3.3156132912039746,
+        0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "radius": 0.06,
+      "a": 2.26,
+      "b": 2.375,
+      "material": "Detail"
+    },
+    {
+      "name": "Spray nozzle 5.0 33",
+      "kind": "cylinder",
+      "origin": [
+        -3.315613291203976,
+        -3.7425537408555054,
+        0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "radius": 0.06,
+      "a": 2.26,
+      "b": 2.375,
+      "material": "Detail"
+    },
+    {
+      "name": "Spray nozzle 5.0 34",
+      "kind": "cylinder",
+      "origin": [
+        -2.8403237336557794,
+        -4.1149193294682815,
+        0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "radius": 0.06,
+      "a": 2.26,
+      "b": 2.375,
+      "material": "Detail"
+    },
+    {
+      "name": "Spray nozzle 5.0 35",
+      "kind": "cylinder",
+      "origin": [
+        -2.3236158602188457,
+        -4.427280128266048,
+        0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "radius": 0.06,
+      "a": 2.26,
+      "b": 2.375,
+      "material": "Detail"
+    },
+    {
+      "name": "Spray nozzle 5.0 36",
+      "kind": "cylinder",
+      "origin": [
+        -1.7730244352126796,
+        -4.675081213427074,
+        0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "radius": 0.06,
+      "a": 2.26,
+      "b": 2.375,
+      "material": "Detail"
+    },
+    {
+      "name": "Spray nozzle 5.0 37",
+      "kind": "cylinder",
+      "origin": [
+        -1.1965783214377888,
+        -4.85470908713026,
+        0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "radius": 0.06,
+      "a": 2.26,
+      "b": 2.375,
+      "material": "Detail"
+    },
+    {
+      "name": "Spray nozzle 5.0 38",
+      "kind": "cylinder",
+      "origin": [
+        -0.6026834012766179,
+        -4.96354437049027,
+        0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "radius": 0.06,
+      "a": 2.26,
+      "b": 2.375,
+      "material": "Detail"
+    },
+    {
+      "name": "Spray nozzle 5.0 39",
+      "kind": "cylinder",
+      "origin": [
+        -9.184850993605148e-16,
+        -5.0,
+        0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "radius": 0.06,
+      "a": 2.26,
+      "b": 2.375,
+      "material": "Detail"
+    },
+    {
+      "name": "Spray nozzle 5.0 40",
+      "kind": "cylinder",
+      "origin": [
+        0.602683401276616,
+        -4.96354437049027,
+        0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "radius": 0.06,
+      "a": 2.26,
+      "b": 2.375,
+      "material": "Detail"
+    },
+    {
+      "name": "Spray nozzle 5.0 41",
+      "kind": "cylinder",
+      "origin": [
+        1.196578321437787,
+        -4.854709087130261,
+        0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "radius": 0.06,
+      "a": 2.26,
+      "b": 2.375,
+      "material": "Detail"
+    },
+    {
+      "name": "Spray nozzle 5.0 42",
+      "kind": "cylinder",
+      "origin": [
+        1.7730244352126778,
+        -4.675081213427074,
+        0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "radius": 0.06,
+      "a": 2.26,
+      "b": 2.375,
+      "material": "Detail"
+    },
+    {
+      "name": "Spray nozzle 5.0 43",
+      "kind": "cylinder",
+      "origin": [
+        2.32361586021884,
+        -4.427280128266051,
+        0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "radius": 0.06,
+      "a": 2.26,
+      "b": 2.375,
+      "material": "Detail"
+    },
+    {
+      "name": "Spray nozzle 5.0 44",
+      "kind": "cylinder",
+      "origin": [
+        2.840323733655774,
+        -4.114919329468285,
+        0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "radius": 0.06,
+      "a": 2.26,
+      "b": 2.375,
+      "material": "Detail"
+    },
+    {
+      "name": "Spray nozzle 5.0 45",
+      "kind": "cylinder",
+      "origin": [
+        3.315613291203976,
+        -3.7425537408555054,
+        0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "radius": 0.06,
+      "a": 2.26,
+      "b": 2.375,
+      "material": "Detail"
+    },
+    {
+      "name": "Spray nozzle 5.0 46",
+      "kind": "cylinder",
+      "origin": [
+        3.7425537408555036,
+        -3.3156132912039777,
+        0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "radius": 0.06,
+      "a": 2.26,
+      "b": 2.375,
+      "material": "Detail"
+    },
+    {
+      "name": "Spray nozzle 5.0 47",
+      "kind": "cylinder",
+      "origin": [
+        4.1149193294682815,
+        -2.8403237336557794,
+        0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "radius": 0.06,
+      "a": 2.26,
+      "b": 2.375,
+      "material": "Detail"
+    },
+    {
+      "name": "Spray nozzle 5.0 48",
+      "kind": "cylinder",
+      "origin": [
+        4.42728012826605,
+        -2.323615860218842,
+        0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "radius": 0.06,
+      "a": 2.26,
+      "b": 2.375,
+      "material": "Detail"
+    },
+    {
+      "name": "Spray nozzle 5.0 49",
+      "kind": "cylinder",
+      "origin": [
+        4.675081213427074,
+        -1.7730244352126798,
+        0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "radius": 0.06,
+      "a": 2.26,
+      "b": 2.375,
+      "material": "Detail"
+    },
+    {
+      "name": "Spray nozzle 5.0 50",
+      "kind": "cylinder",
+      "origin": [
+        4.85470908713026,
+        -1.196578321437789,
+        0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "radius": 0.06,
+      "a": 2.26,
+      "b": 2.375,
+      "material": "Detail"
+    },
+    {
+      "name": "Spray nozzle 5.0 51",
+      "kind": "cylinder",
+      "origin": [
+        4.96354437049027,
+        -0.6026834012766181,
+        0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "radius": 0.06,
+      "a": 2.26,
+      "b": 2.375,
+      "material": "Detail"
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://media.brizo.com/SpecSheet/BSP-B-81392%20Rev%20B.pdf",
+      "document": "BSP-B-81392 Rev B",
+      "page": 1,
+      "visual_review_method": "Web PDF screenshot"
+    }
+  ],
+  "dimension_authority": [
+    "Actual plate diameter 11.75 in, plate thickness .5 in, total depth 2.375 in."
+  ],
+  "limitations": [
+    "Catalog market name is 12 in; model uses its dimensioned 11.75 in diameter.",
+    "Dense spray array follows the 2.5 GPM variant; individual nozzle positions are approximate.",
+    "Independent visualization reconstruction with fixed product dimensions and editable native materials.",
+    "Small fillets, seams, nozzle details and optical material response are inferred where the manufacturer does not dimension them.",
+    "No internal hydraulic performance, MEP connectors, fabrication tolerances or procurement substitutions are implied."
+  ],
+  "anchors": [
+    {
+      "label": "Plate diameter",
+      "parts": [
+        "Thin round rain plate"
+      ],
+      "axis": 0,
+      "nominal_in": 11.75
+    }
+  ],
+  "all_overall_dimensions_authoritative": true,
+  "rfa_search": {
+    "result": "No acceptable no-account RFA recovered",
+    "evidence": "_research/81392-BNX-2.5/sources.json"
+  }
+}

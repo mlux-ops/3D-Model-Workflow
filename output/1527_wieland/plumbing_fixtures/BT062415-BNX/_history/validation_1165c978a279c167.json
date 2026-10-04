@@ -1,0 +1,75 @@
+{
+  "model": "BT062415-BNX", 
+  "limitations": [
+    "SOURCE CONFLICT: current manufacturer calls BT062415 Tile-In but Rev C depicts a slotted grate. This model follows the dimensioned Rev C drawing and must be reviewed against the purchased part.", 
+    "Adjustable grate is set at the drawing minimum; detailed screw fittings omitted.", 
+    "Independent visualization reconstruction with fixed product dimensions and editable native materials.", 
+    "Small fillets, seams, nozzle details and optical material response are inferred where the manufacturer does not dimension them.", 
+    "No internal hydraulic performance, MEP connectors, fabrication tolerances or procurement substitutions are implied."
+  ], 
+  "revit_version": "2025", 
+  "source_references": [
+    {
+      "visual_review_method": "Web PDF screenshot", 
+      "page": 1, 
+      "document": "BSP-A-BT062415 Rev C", 
+      "url": "https://media.brizo.com/SpecSheet/BSP-A-BT062415%20Rev%20C.pdf"
+    }
+  ], 
+  "expected_dimensions_in": [
+    6.125, 
+    6.125, 
+    4.0625
+  ], 
+  "source_spec_sha256": "c349c8554d50053142c37860ee019f95a9e569b1f9ceed2110c7eae31c716035", 
+  "appearance_defaults": {
+    "Finish": {
+      "transparency": 0, 
+      "luminance": 0, 
+      "rgb": [
+        58, 
+        60, 
+        62
+      ], 
+      "cct_k": null, 
+      "gloss": 0.92000000000000004
+    }, 
+    "Gray": {
+      "transparency": 0, 
+      "luminance": 0, 
+      "rgb": [
+        131, 
+        132, 
+        130
+      ], 
+      "cct_k": null, 
+      "gloss": 0.32000000000000001
+    }
+  }, 
+  "source_spec_path": "E:\\Claude\\3D-Model-Workflow\\output\\1527_wieland\\plumbing_fixtures\\BT062415-BNX\\source\\model_spec.json", 
+  "rfa_search": {
+    "result": "No acceptable no-account RFA recovered", 
+    "evidence": "_research/BT062415-BNX/sources.json"
+  }, 
+  "inferences": "SOURCE CONFLICT: current manufacturer calls BT062415 Tile-In but Rev C depicts a slotted grate. This model follows the dimensioned Rev C drawing and must be reviewed against the purchased part. | Adjustable grate is set at the drawing minimum; detailed screw fittings omitted. | Independent visualization reconstruction with fixed product dimensions and editable native materials. | Small fillets, seams, nozzle details and optical material response are inferred where the manufacturer does not dimension them. | No internal hydraulic performance, MEP connectors, fabrication tolerances or procurement substitutions are implied.", 
+  "stage": "failed", 
+  "material_ids": {
+    "Finish": "3207", 
+    "Gray": "3210"
+  }, 
+  "revit_build": "25.4.50.35", 
+  "template_form_ids": [
+    "1537"
+  ], 
+  "error": "Traceback (most recent call last):\n  File \"E:\\Claude\\3D-Model-Workflow\\output\\1527_wieland\\plumbing_fixtures\\_harness\\family_factory.py\", line 96, in build\n    e=f.box(p['name'],*(p['bounds']+[material,p.get('radius',0)]))\n  File \"E:\\Claude\\3D-Model-Workflow\\output\\1527_wieland\\plumbing_fixtures\\_harness\\native_plumbing_support.py\", line 170, in box\n    solid=DB.GeometryCreationUtilities.CreateExtrusionGeometry(List[DB.CurveLoop]([loop(xyz(0,0,z0),DB.XYZ.BasisX,DB.XYZ.BasisY,points)]),DB.XYZ.BasisZ,(z1-z0)/12.)\n  File \"E:\\Claude\\3D-Model-Workflow\\output\\1527_wieland\\plumbing_fixtures\\_harness\\native_plumbing_support.py\", line 27, in loop\n    result.Append(DB.Line.CreateBound(at(current),at(end)))\nException: Curve length is too small for Revit's tolerance (as identified by Application.ShortCurveTolerance).\r\nParameter name: endpoints\n", 
+  "cct_k": null, 
+  "acceptance": "UNREVIEWED", 
+  "rfa_path": "E:\\Claude\\3D-Model-Workflow\\output\\1527_wieland\\plumbing_fixtures\\BT062415-BNX\\Brizo_BT062415-BNX_R2025.rfa", 
+  "manufacturer": "Brizo", 
+  "type": "BT062415-BNX - Brilliance Black Onyx -  Black", 
+  "technical_pass": false, 
+  "started_utc": "2026-10-02T14:49:39.189000Z", 
+  "source_dimensions": [
+    "Flange diameter 6.125 in; grate width/depth 4.5625 in; overall height 4.0625 in; socket OD 2.6875 in."
+  ]
+}

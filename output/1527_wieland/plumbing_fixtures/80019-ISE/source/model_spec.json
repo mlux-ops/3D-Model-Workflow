@@ -1,0 +1,262 @@
+{
+  "key": "80019-ISE",
+  "model": "80019-ISE",
+  "manufacturer": "See source",
+  "type_name": "80019-ISE - gray",
+  "basename": "Fixture_80019-ISE_R2025",
+  "name": "Power Series .75 HP disposer motor body",
+  "host": "floor",
+  "configured_dimensions_in": [
+    8.25,
+    8.25,
+    12.25
+  ],
+  "materials": {
+    "Finish": {
+      "rgb": [
+        131,
+        132,
+        130
+      ],
+      "gloss": 0.32,
+      "reflectivity": 0.12,
+      "class": "Plastic"
+    },
+    "Detail": {
+      "rgb": [
+        24,
+        25,
+        26
+      ],
+      "gloss": 0.17,
+      "reflectivity": 0.04,
+      "class": "Plastic"
+    },
+    "Graphite": {
+      "rgb": [
+        64,
+        67,
+        69
+      ],
+      "gloss": 0.36,
+      "reflectivity": 0.16,
+      "class": "Glass"
+    },
+    "Ceramic": {
+      "rgb": [
+        245,
+        245,
+        241
+      ],
+      "gloss": 0.86,
+      "reflectivity": 0.22,
+      "class": "Ceramic"
+    },
+    "Brass": {
+      "rgb": [
+        160,
+        124,
+        64
+      ],
+      "gloss": 0.4,
+      "reflectivity": 0.38,
+      "class": "Metal"
+    },
+    "Green": {
+      "rgb": [
+        31,
+        113,
+        66
+      ],
+      "gloss": 0.18,
+      "reflectivity": 0.05,
+      "class": "Plastic"
+    },
+    "Gray": {
+      "rgb": [
+        131,
+        132,
+        130
+      ],
+      "gloss": 0.32,
+      "reflectivity": 0.12,
+      "class": "Plastic"
+    }
+  },
+  "geometry": [
+    {
+      "kind": "revolve",
+      "name": "Motor and grind housing",
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "profile": [
+        [
+          0,
+          0
+        ],
+        [
+          2.8,
+          0
+        ],
+        [
+          3.2,
+          0.3
+        ],
+        [
+          3.2,
+          2.1
+        ],
+        [
+          3.75,
+          2.7
+        ],
+        [
+          4.125,
+          3.7
+        ],
+        [
+          4.125,
+          7.7
+        ],
+        [
+          3.7,
+          8.3
+        ],
+        [
+          3.7,
+          9.4
+        ],
+        [
+          3.0,
+          10.15
+        ],
+        [
+          2.8,
+          10.6
+        ],
+        [
+          0,
+          10.6
+        ]
+      ],
+      "material": "Gray"
+    },
+    {
+      "name": "Upper mounting neck",
+      "kind": "cylinder",
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "radius": 2.3,
+      "a": 10.4,
+      "b": 11.25,
+      "material": "Detail"
+    },
+    {
+      "name": "Mounting ring",
+      "kind": "cylinder",
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "radius": 2.75,
+      "a": 11.15,
+      "b": 11.6,
+      "material": "Gray"
+    },
+    {
+      "name": "Sink flange",
+      "kind": "cylinder",
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "radius": 2.1,
+      "a": 11.5,
+      "b": 12.25,
+      "material": "Gray",
+      "inner_radius": 1.7
+    },
+    {
+      "name": "Discharge socket",
+      "kind": "cylinder",
+      "origin": [
+        0,
+        0,
+        5.3
+      ],
+      "axis": [
+        0,
+        1,
+        0
+      ],
+      "radius": 0.9,
+      "a": 3.2,
+      "b": 4.0,
+      "material": "Detail",
+      "inner_radius": 0.75
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://www.insinkerator.com/en-us/shop/insinkerator/products/garbage-disposals/insinkerator-pwr-75hp",
+      "document": "InSinkErator Power .75 HP manufacturer product specifications",
+      "page": 1,
+      "visual_review_method": "Manufacturer web PDF screenshot"
+    }
+  ],
+  "dimension_authority": [
+    "Current manufacturer body specification is 12.25 in high and 8.25 in wide."
+  ],
+  "limitations": [
+    "IDENTITY HOLD: the current manufacturer page redirects the Power .75 product to package SKU 81222K; schedule 80019-ISE is retained as the requested legacy package identity.",
+    "ASSUMPTION: the motor body is shared; cord, adapter and discharge elbow are excluded.",
+    "Housing profile and band proportions are photo-derived.",
+    "Independent visualization reconstruction with fixed product dimensions and editable native materials.",
+    "Small fillets, seams, nozzle details and optical material response are inferred where the manufacturer does not dimension them.",
+    "No internal hydraulic performance, MEP connectors, fabrication tolerances or procurement substitutions are implied."
+  ],
+  "anchors": [
+    {
+      "label": "Overall body height",
+      "parts": [
+        "Motor and grind housing",
+        "Sink flange"
+      ],
+      "axis": 2,
+      "nominal_in": 12.25
+    }
+  ],
+  "all_overall_dimensions_authoritative": false,
+  "rfa_search": {
+    "result": "No acceptable no-account RFA recovered",
+    "evidence": "_research/80019-ISE/sources.json"
+  }
+}

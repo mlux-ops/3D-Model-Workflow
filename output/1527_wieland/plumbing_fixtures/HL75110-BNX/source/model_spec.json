@@ -1,0 +1,230 @@
+{
+  "key": "HL75110-BNX",
+  "model": "HL75110-BNX",
+  "manufacturer": "Brizo",
+  "type_name": "HL75110-BNX - Brilliance Black Onyx -  Black",
+  "basename": "Brizo_HL75110-BNX_R2025",
+  "name": "Roccesco integrated diverter lever handle kit",
+  "host": "wall",
+  "configured_dimensions_in": [
+    3.5,
+    4.8125,
+    4.125
+  ],
+  "materials": {
+    "Finish": {
+      "rgb": [
+        58,
+        60,
+        62
+      ],
+      "gloss": 0.92,
+      "reflectivity": 0.72,
+      "class": "Metal"
+    },
+    "Detail": {
+      "rgb": [
+        24,
+        25,
+        26
+      ],
+      "gloss": 0.17,
+      "reflectivity": 0.04,
+      "class": "Plastic"
+    },
+    "Graphite": {
+      "rgb": [
+        64,
+        67,
+        69
+      ],
+      "gloss": 0.36,
+      "reflectivity": 0.16,
+      "class": "Glass"
+    },
+    "Ceramic": {
+      "rgb": [
+        245,
+        245,
+        241
+      ],
+      "gloss": 0.86,
+      "reflectivity": 0.22,
+      "class": "Ceramic"
+    },
+    "Brass": {
+      "rgb": [
+        160,
+        124,
+        64
+      ],
+      "gloss": 0.4,
+      "reflectivity": 0.38,
+      "class": "Metal"
+    },
+    "Green": {
+      "rgb": [
+        31,
+        113,
+        66
+      ],
+      "gloss": 0.18,
+      "reflectivity": 0.05,
+      "class": "Plastic"
+    },
+    "Gray": {
+      "rgb": [
+        131,
+        132,
+        130
+      ],
+      "gloss": 0.32,
+      "reflectivity": 0.12,
+      "class": "Plastic"
+    }
+  },
+  "geometry": [
+    {
+      "name": "Lower handle sleeve",
+      "kind": "cylinder",
+      "origin": [
+        0,
+        -1.4375,
+        0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "radius": 1.25,
+      "a": 0,
+      "b": 3.375,
+      "material": "Finish"
+    },
+    {
+      "name": "Lower lever neck",
+      "kind": "box",
+      "bounds": [
+        -0.45,
+        -1.8875,
+        3.325,
+        0.45,
+        -0.9875,
+        3.975
+      ],
+      "radius": 0.12,
+      "material": "Finish"
+    },
+    {
+      "name": "Lower lever paddle",
+      "kind": "box",
+      "bounds": [
+        -2.25,
+        -1.7875,
+        3.805,
+        1.25,
+        -1.0875,
+        4.125
+      ],
+      "radius": 0.15,
+      "material": "Finish"
+    },
+    {
+      "name": "Upper handle sleeve",
+      "kind": "cylinder",
+      "origin": [
+        0,
+        1.4375,
+        0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "radius": 0.6875,
+      "a": 0,
+      "b": 1.6875,
+      "material": "Finish"
+    },
+    {
+      "name": "Upper lever neck",
+      "kind": "box",
+      "bounds": [
+        -0.45,
+        0.9875,
+        1.6375,
+        0.45,
+        1.8875,
+        2.2875
+      ],
+      "radius": 0.12,
+      "material": "Finish"
+    },
+    {
+      "name": "Upper lever paddle",
+      "kind": "box",
+      "bounds": [
+        -2.25,
+        1.0875,
+        2.1175,
+        1.25,
+        1.7875,
+        2.4375
+      ],
+      "radius": 0.15,
+      "material": "Finish"
+    },
+    {
+      "name": "Lower secondary temperature lever",
+      "kind": "box",
+      "bounds": [
+        -2.15,
+        -1.73,
+        2.87,
+        1.15,
+        -1.15,
+        3.12
+      ],
+      "radius": 0.1,
+      "material": "Finish"
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://bravo.requested-info.com/brands/BRZ/documents/specSheets/T755110-BLLHP_Spec.pdf",
+      "document": "Brizo BSP-B-T755110-LHP Rev A",
+      "page": 1,
+      "local_image": "_research/T755110-BNXLHP/downloads/T755110-BLLHP_Spec_pages/page_01.png"
+    }
+  ],
+  "dimension_authority": [
+    "Lower handle projection 4.125 in; upper handle projection 2.4375 in; lever length 3.5 in; upper sleeve diameter 1.375 in."
+  ],
+  "limitations": [
+    "ASSUMPTION: control center spacing 2.875 in follows the companion trim drawing.",
+    "Kit origins are representative and require alignment with the installed trim; concealed mating surfaces are not fabrication geometry.",
+    "Secondary temperature lever depth and sleeve diameters are drawing-derived.",
+    "Independent visualization reconstruction with fixed product dimensions and editable native materials.",
+    "Small fillets, seams, nozzle details and optical material response are inferred where the manufacturer does not dimension them.",
+    "No internal hydraulic performance, MEP connectors, fabrication tolerances or procurement substitutions are implied."
+  ],
+  "anchors": [
+    {
+      "label": "Lower handle projection",
+      "parts": [
+        "Lower handle sleeve",
+        "Lower lever neck",
+        "Lower lever paddle"
+      ],
+      "axis": 2,
+      "nominal_in": 4.125
+    }
+  ],
+  "all_overall_dimensions_authoritative": false,
+  "rfa_search": {
+    "result": "No acceptable no-account RFA recovered",
+    "evidence": "_research/HL75110-BNX/sources.json"
+  }
+}

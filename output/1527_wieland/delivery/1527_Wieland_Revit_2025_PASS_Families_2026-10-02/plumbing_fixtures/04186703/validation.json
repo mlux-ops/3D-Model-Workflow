@@ -1,0 +1,169 @@
+{
+  "template_form_ids": [
+    "1537"
+  ], 
+  "rfa_search": {
+    "evidence": "_research/04186703/sources.json", 
+    "result": "No acceptable no-account RFA recovered"
+  }, 
+  "actual_dimensions_in": [
+    2.5, 
+    3.75, 
+    9.2500000000000018
+  ], 
+  "source_dimensions": [
+    "Flange diameter 2.5 in; total projection 9.25 in; connection drop 2.5 in below axis."
+  ], 
+  "bounds_in": [
+    -1.25, 
+    -2.5, 
+    -7.2891479803949149e-25, 
+    1.25, 
+    1.25, 
+    9.2500000000000018
+  ], 
+  "reopened": true, 
+  "category": "Plumbing Fixtures", 
+  "actual_dimensions_after_reopen_mm": [
+    63.5, 
+    95.25, 
+    234.95000000000005
+  ], 
+  "bounds_method": "Fine native face meshes plus 128-sample analytic edges", 
+  "source_spec_path": "E:\\Claude\\3D-Model-Workflow\\output\\1527_wieland\\plumbing_fixtures\\04186703\\source\\model_spec.json", 
+  "rfa_path": "E:\\Claude\\3D-Model-Workflow\\output\\1527_wieland\\plumbing_fixtures\\04186703\\Hansgrohe_04186703_R2025.rfa", 
+  "stage": "complete", 
+  "cct_k": null, 
+  "placement": "WorkPlaneBased", 
+  "material_tests": {
+    "Finish": {
+      "substitution_reaches_faces": true, 
+      "writable": true, 
+      "face_count": 20
+    }
+  }, 
+  "evidence_files": [
+    "Hansgrohe_04186703_R2025_Isolated - 3D View - Native Front.png", 
+    "Hansgrohe_04186703_R2025_Isolated - 3D View - Native Material.png", 
+    "Hansgrohe_04186703_R2025_Isolated - 3D View - Native Oblique.png", 
+    "Hansgrohe_04186703_R2025_Isolated - 3D View - Native Side.png"
+  ], 
+  "model": "04186703", 
+  "acceptance": "NATIVE_GATES_PASSED_PENDING_VISUAL_REVIEW", 
+  "native_path_checks": [], 
+  "finished_utc": "2026-10-02T14:37:35.769000Z", 
+  "source_spec_sha256": "459b5192ab92637151fa821141870a1aa333e24dd91788a6b69c7e78087e3e4b", 
+  "reopened_warnings": [], 
+  "project_warnings": [], 
+  "reopen_geometry_equal": true, 
+  "visual_review": "PENDING_NATIVE_IMAGE_REVIEW", 
+  "display_bounds_in": [
+    -1.25, 
+    -2.5000000000000009, 
+    0.0, 
+    1.25, 
+    1.25, 
+    9.2500000000000018
+  ], 
+  "source_references": [
+    {
+      "page": 204, 
+      "document": "Hansgrohe 2026 US Price Book", 
+      "url": "https://assets.hansgrohe.com/celum/emailmarketing/hansgrohe_2026_Price_Book_en_US.pdf", 
+      "local_image": "_research/catalog_pages/page_204.png"
+    }
+  ], 
+  "appearance_bindings": {
+    "Finish": {
+      "material_id": "3207", 
+      "exists": true, 
+      "path": "E:\\Claude\\3D-Model-Workflow\\output\\1527_wieland\\plumbing_fixtures\\04186703\\textures\\Finish.png"
+    }
+  }, 
+  "revit_build": "25.4.50.35", 
+  "dimension_anchor_checks": [
+    {
+      "label": "Flange diameter", 
+      "pass": true, 
+      "actual_mm": 63.5, 
+      "nominal_mm": 63.5, 
+      "deviation_mm": 0.0
+    }
+  ], 
+  "material_ids": {
+    "Finish": "3207"
+  }, 
+  "expected_dimensions_in": [
+    2.5, 
+    3.75, 
+    9.25
+  ], 
+  "inferences": "Pipe radius and bend radius are drawing-derived. Threads omitted. Matte-white scheduled legacy variant retained. | Independent visualization reconstruction with fixed product dimensions and editable native materials. | Small fillets, seams, nozzle details and optical material response are inferred where the manufacturer does not dimension them. | No internal hydraulic performance, MEP connectors, fabrication tolerances or procurement substitutions are implied.", 
+  "gates": {
+    "reopened": true, 
+    "warnings": true, 
+    "orientation": true, 
+    "diffuse_bitmaps": true, 
+    "actual_face_host": true, 
+    "dimensions": true, 
+    "materials": true, 
+    "reopen_geometry_equal": true, 
+    "views": true, 
+    "category": true, 
+    "cct": true
+  }, 
+  "revit_version": "2025", 
+  "manufacturer": "Hansgrohe", 
+  "technical_pass": true, 
+  "family_warnings": [], 
+  "started_utc": "2026-10-02T14:37:32.607000Z", 
+  "type": "04186703 - White", 
+  "parts": [
+    {
+      "volume_ft3": 0.00053260552363120601, 
+      "id": "3209", 
+      "name": "Wall flange"
+    }, 
+    {
+      "volume_ft3": 0.002476059986502611, 
+      "id": "3210", 
+      "name": "Bent standard shower arm"
+    }
+  ], 
+  "all_overall_dimensions_authoritative": true, 
+  "native_gates_pass": true, 
+  "appearance_defaults": {
+    "Finish": {
+      "rgb": [
+        242, 
+        243, 
+        240
+      ], 
+      "gloss": 0.17000000000000001, 
+      "luminance": 0, 
+      "transparency": 0, 
+      "cct_k": null
+    }
+  }, 
+  "reopened_bounds_in": [
+    -1.25, 
+    -2.5, 
+    -7.2891479803949149e-25, 
+    1.25, 
+    1.25, 
+    9.2500000000000018
+  ], 
+  "limitations": [
+    "Pipe radius and bend radius are drawing-derived. Threads omitted. Matte-white scheduled legacy variant retained.", 
+    "Independent visualization reconstruction with fixed product dimensions and editable native materials.", 
+    "Small fillets, seams, nozzle details and optical material response are inferred where the manufacturer does not dimension them.", 
+    "No internal hydraulic performance, MEP connectors, fabrication tolerances or procurement substitutions are implied."
+  ], 
+  "host": {
+    "hostface_present": true, 
+    "host_kind": "wall", 
+    "normal_dot": 1.0, 
+    "host_id": "3689", 
+    "instance_host_id": "3689"
+  }
+}

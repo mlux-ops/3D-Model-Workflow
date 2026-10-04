@@ -1,0 +1,128 @@
+{
+  "source_reference": "MS642124CEFG_01/TOTO_Nexus_MS642124CEFG_R2025.rfa", 
+  "placement": "WorkPlaneBased", 
+  "spec_url": "https://www.totousa.com/filemanager_uploads/product_assets/SpecSheet/SS-01451_MS642124CEFG.pdf", 
+  "technical_pass": false, 
+  "gates": {
+    "views": true, 
+    "dimensions": false, 
+    "warnings": true, 
+    "actual_face_host": true, 
+    "category": true, 
+    "materials": false, 
+    "reopened": true
+  }, 
+  "selected_type": "MS642124CEFG", 
+  "source_kind": "MANUFACTURER_RFA", 
+  "stage": "manufacturer_review_complete", 
+  "source_url": "https://www.totousa.com/filemanager_uploads/product_assets/REVITModels/BM-00593_MS642124CEFG_MS642124CUFG.rfa", 
+  "category": "Plumbing Fixtures", 
+  "native_gates_pass": false, 
+  "family_warnings": [], 
+  "host": {
+    "host_kind": "floor", 
+    "instance_host_id": "6025", 
+    "hostface_present": true
+  }, 
+  "material_tests": {
+    "Product Material": {
+      "substitution_reaches_faces": true, 
+      "writable": true
+    }, 
+    "Flush Lever Finish": {
+      "substitution_reaches_faces": false, 
+      "writable": true
+    }
+  }, 
+  "input_format": "2025", 
+  "actual_dimensions_after_reopen_mm": [
+    451.34774093627925, 
+    726.01670034843050, 
+    685.80000000000189
+  ], 
+  "finished_utc": "2026-10-02T15:32:19.244000Z", 
+  "rfa_path": "E:\\Claude\\3D-Model-Workflow\\output\\1527_wieland\\plumbing_fixtures\\MS642124CEFG_01\\Manufacturer_MS642124CEFG_01_R2025.rfa", 
+  "dimensional_comparison": [
+    {
+      "pass": false, 
+      "deviation_mm": 6.8477409362792514, 
+      "actual_mm": 451.34774093627925, 
+      "axis": "X", 
+      "nominal_mm": 444.5
+    }, 
+    {
+      "pass": true, 
+      "deviation_mm": 0.52920034843054964, 
+      "actual_mm": 726.01670034843050, 
+      "axis": "Y", 
+      "nominal_mm": 725.48749999999995
+    }, 
+    {
+      "pass": true, 
+      "deviation_mm": 1.9326762412674725e-12, 
+      "actual_mm": 685.80000000000189, 
+      "axis": "Z", 
+      "nominal_mm": 685.79999999999995
+    }
+  ], 
+  "evidence_files": [
+    "Manufacturer_MS642124CEFG_01 - 3D View - Manufacturer Front.png", 
+    "Manufacturer_MS642124CEFG_01 - 3D View - Manufacturer Oblique.png", 
+    "Manufacturer_MS642124CEFG_01 - 3D View - Manufacturer Side.png"
+  ], 
+  "bounds_in": [
+    -9.2083582878112793, 
+    -29.395834659387692, 
+    -7.3536348233237729e-14, 
+    8.5612378120422363, 
+    -0.81250000000066258, 
+    27.0
+  ], 
+  "types": [
+    {
+      "identity": {
+        "Product Color": "Available Colors: Cotton and Sedona Beige", 
+        "Keynote": "15410", 
+        "Description": "Nexus 1pc Toilet", 
+        "URL": "http://www.totousa.com/", 
+        "Model": "MS642234CEFG", 
+        "Manufacturer": "TOTO USA Inc.", 
+        "Flush Rate": "1.00 GPF", 
+        "Assembly Code": "D2010"
+      }, 
+      "name": "MS642124CUFG"
+    }, 
+    {
+      "identity": {
+        "Product Color": "Available Colors: Cotton and Sedona Beige", 
+        "Keynote": "15410", 
+        "Description": "Nexus 1pc Toilet", 
+        "URL": "http://www.totousa.com/", 
+        "Model": "MS642124CEFG#01", 
+        "Manufacturer": "TOTO USA Inc.", 
+        "Flush Rate": "1.28 GPF", 
+        "Assembly Code": "D2010"
+      }, 
+      "name": "MS642124CEFG"
+    }
+  ], 
+  "saved_format": "2025", 
+  "visual_review": "PENDING_NATIVE_IMAGE_REVIEW", 
+  "all_overall_dimensions_authoritative": true, 
+  "status": "DOWNLOADED", 
+  "project_warnings": [], 
+  "started_utc": "2026-10-02T15:32:10.896000Z", 
+  "source_category": "Plumbing Fixtures", 
+  "manufacturer_original_format": "2019", 
+  "reopened": true, 
+  "revit_version": "2025", 
+  "bounds_method": "Saved family loaded and placed in clean project, excluding template host; fine native faces and analytic edges.", 
+  "reopened_warnings": [], 
+  "expected_dimensions_mm": [
+    444.5, 
+    725.48749999999995, 
+    685.79999999999995
+  ], 
+  "model": "MS642124CEFG#01", 
+  "revit_build": "25.4.50.35"
+}

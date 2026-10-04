@@ -1,0 +1,267 @@
+{
+  "key": "T756110-BNXLHP",
+  "model": "T756110-BNXLHP",
+  "manufacturer": "Brizo",
+  "type_name": "T756110-BNXLHP - Brilliance Black Onyx -  Black",
+  "basename": "Brizo_T756110-BNXLHP_R2025",
+  "name": "Roccesco integrated thermostatic diverter trim, less handles",
+  "host": "wall",
+  "configured_dimensions_in": [
+    7.5,
+    7.5,
+    4.5
+  ],
+  "materials": {
+    "Finish": {
+      "rgb": [
+        58,
+        60,
+        62
+      ],
+      "gloss": 0.92,
+      "reflectivity": 0.72,
+      "class": "Metal"
+    },
+    "Detail": {
+      "rgb": [
+        24,
+        25,
+        26
+      ],
+      "gloss": 0.17,
+      "reflectivity": 0.04,
+      "class": "Plastic"
+    },
+    "Graphite": {
+      "rgb": [
+        64,
+        67,
+        69
+      ],
+      "gloss": 0.36,
+      "reflectivity": 0.16,
+      "class": "Glass"
+    },
+    "Ceramic": {
+      "rgb": [
+        245,
+        245,
+        241
+      ],
+      "gloss": 0.86,
+      "reflectivity": 0.22,
+      "class": "Ceramic"
+    },
+    "Brass": {
+      "rgb": [
+        160,
+        124,
+        64
+      ],
+      "gloss": 0.4,
+      "reflectivity": 0.38,
+      "class": "Metal"
+    },
+    "Green": {
+      "rgb": [
+        31,
+        113,
+        66
+      ],
+      "gloss": 0.18,
+      "reflectivity": 0.05,
+      "class": "Plastic"
+    },
+    "Gray": {
+      "rgb": [
+        131,
+        132,
+        130
+      ],
+      "gloss": 0.32,
+      "reflectivity": 0.12,
+      "class": "Plastic"
+    }
+  },
+  "geometry": [
+    {
+      "name": "Escutcheon",
+      "kind": "cylinder",
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "radius": 3.75,
+      "a": 0,
+      "b": 0.625,
+      "material": "Finish"
+    },
+    {
+      "name": "Upper collar",
+      "kind": "cylinder",
+      "origin": [
+        0,
+        1.4375,
+        0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "radius": 0.75,
+      "a": 0.625,
+      "b": 1.7,
+      "material": "Finish"
+    },
+    {
+      "name": "Upper stem",
+      "kind": "cylinder",
+      "origin": [
+        0,
+        1.4375,
+        0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "radius": 0.2,
+      "a": 1.7,
+      "b": 2.625,
+      "material": "Finish"
+    },
+    {
+      "name": "Lower collar",
+      "kind": "cylinder",
+      "origin": [
+        0,
+        -1.4375,
+        0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "radius": 1.25,
+      "a": 0.625,
+      "b": 1.95,
+      "material": "Finish"
+    },
+    {
+      "name": "Cartridge outer sleeve",
+      "kind": "cylinder",
+      "origin": [
+        0,
+        -1.4375,
+        0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "radius": 0.9,
+      "a": 1.95,
+      "b": 2.65,
+      "material": "Finish"
+    },
+    {
+      "name": "Cartridge middle sleeve",
+      "kind": "cylinder",
+      "origin": [
+        0,
+        -1.4375,
+        0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "radius": 0.67,
+      "a": 2.65,
+      "b": 3.3,
+      "material": "Finish"
+    },
+    {
+      "name": "Cartridge end sleeve",
+      "kind": "cylinder",
+      "origin": [
+        0,
+        -1.4375,
+        0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "radius": 0.42,
+      "a": 3.3,
+      "b": 4.05,
+      "material": "Finish"
+    },
+    {
+      "name": "Lower stem",
+      "kind": "cylinder",
+      "origin": [
+        0,
+        -1.4375,
+        0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "radius": 0.18,
+      "a": 4.05,
+      "b": 4.5,
+      "material": "Brass"
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://bravo.requested-info.com/brands/BRZ/documents/specSheets/T755110-BLLHP_Spec.pdf",
+      "document": "Brizo BSP-B-T755110-LHP Rev A",
+      "page": 1,
+      "local_image": "_research/T755110-BNXLHP/downloads/T755110-BLLHP_Spec_pages/page_01.png"
+    }
+  ],
+  "dimension_authority": [
+    "Escutcheon diameter 7.5 in; maximum stem projection 4.5 in; upper projection 2.625 in.",
+    "Collar diameters 1.5 and 2.5 in; vertical centers scaled from the manufacturer drawing at 2.875 in."
+  ],
+  "limitations": [
+    "LHP scope is modeled without the separately scheduled HL75110 handles.",
+    "Cartridge steps and stem details are simplified.",
+    "Cartridge center spacing is drawing-derived and is not a rough-in fabrication dimension.",
+    "Independent visualization reconstruction with fixed product dimensions and editable native materials.",
+    "Small fillets, seams, nozzle details and optical material response are inferred where the manufacturer does not dimension them.",
+    "No internal hydraulic performance, MEP connectors, fabrication tolerances or procurement substitutions are implied."
+  ],
+  "anchors": [
+    {
+      "label": "Escutcheon diameter",
+      "parts": [
+        "Escutcheon"
+      ],
+      "axis": 0,
+      "nominal_in": 7.5
+    }
+  ],
+  "all_overall_dimensions_authoritative": true,
+  "rfa_search": {
+    "result": "No acceptable no-account RFA recovered",
+    "evidence": "_research/T756110-BNXLHP/sources.json"
+  }
+}

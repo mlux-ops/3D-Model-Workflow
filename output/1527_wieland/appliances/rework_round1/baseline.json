@@ -1,0 +1,1704 @@
+{
+  "utc": "2026-10-02T23:51:17.475845+00:00",
+  "targets": [
+    "miele_h7280bp",
+    "miele_h7270bm",
+    "miele_g5051scvi",
+    "miele_kwt6722is",
+    "miele_kwtus7172f",
+    "miele_kfmc3858fd",
+    "thermador_t42it100np",
+    "thermador_podmc301w",
+    "thermador_pcg486wd"
+  ],
+  "mutable_before": {
+    "section_manifest.json": "31e0c875f5ac2a5934e5a69b86d7093293ce067c93aeb8bcd4e0ea3a8cfaad62",
+    "SECTION_REPORT.md": "47eb912b529e257ae04448c5229bf0bda2d0628840a779c0b82730e0c523bef1",
+    "artifact_audit.json": "404476c137a2b870d36f738f9f484b431374524412182bb710f8e96098d38a5c",
+    "visual_review.json": "85165ff30bcec7f8dbec01f018dfce55e2f8c064f0e2f8c09ab7eb919e5373f0",
+    "miele_h7280bp/validation.json": "b790fd3d3957ca8f2e9c1170dd31d900cf3220272aa019d1b5cf6786bf94355f",
+    "miele_h7280bp/NOTES.md": "e9369ef8918b669aefd3d09c8887e97d8dd3b2a1aecab1c55c6638d526dbaeef",
+    "miele_h7280bp/source_manifest.json": "7da2d446cb41be0024e7730c6490c574d565a722ae5aa016770e9784a43f00b5",
+    "miele_h7270bm/validation.json": "606efdb38d9b0b5abcfdc359b510d8db93a9ac493c250d2494567371e7f61546",
+    "miele_h7270bm/NOTES.md": "0f3c255752f930a6da7ac6a6380069969cbfd2f6927b6aabdd1dc03cf6415045",
+    "miele_h7270bm/source_manifest.json": "e191d3fdcb037e3239de2f11ee96b96ab5756988689686c3c3be8a2254a2557d",
+    "miele_g5051scvi/validation.json": "8a1367746a5725e73327086c3abf648eaa7f92f980d441561aab2bbf0879cc0c",
+    "miele_g5051scvi/NOTES.md": "cdea66e50eb0a832bf1ebc3ad590a724aa8683c34d8534dcb46a796acb8385ef",
+    "miele_g5051scvi/source_manifest.json": "bea8308622538582f8f8f33aada524de629367300644f3c7bf9a355c2fa287fc",
+    "miele_kwt6722is/validation.json": "4a7f5e969386233ddb654adce52b2063652a54717bb528e0fc2f8d05c294396a",
+    "miele_kwt6722is/NOTES.md": "4a1c83bbf2fdec5bd71ebc0941149f090fb1bc2660f501cb7072419a01be4896",
+    "miele_kwt6722is/source_manifest.json": "02ca856f5b9faabff5eaab0c11d250bd2a619b576339ccae4c3520d559178c47",
+    "miele_kwtus7172f/validation.json": "f211189f4d36408e9ccf7728bc0a504ac4700b7c5025844b0457fc485503fc9c",
+    "miele_kwtus7172f/NOTES.md": "3c811b74706b155adb27c489780b99e13e21d67aad0349aabb7be18ae3194357",
+    "miele_kwtus7172f/source_manifest.json": "d1ba808a86543f0bab265ae74fd8457fcf5e9543cdd3f0ff5c8154975adaa5bc",
+    "miele_kfmc3858fd/validation.json": "27bca221ac55d2c0514df1e3fb3393feb976e771bbf08d11048e1cf3f2994dfd",
+    "miele_kfmc3858fd/NOTES.md": "f06a00124da9c16b5b4be22e70656615f9a2796e99d46933eeb4ec498397aea1",
+    "miele_kfmc3858fd/source_manifest.json": "082fe035c08d226a01a7f698cba928f27e6d38533a93b2350054b91f3d8985aa",
+    "thermador_t42it100np/validation.json": "d9da2c2185e733db7c93cf689d590ff78af5001c17659d1329daf79bc3784722",
+    "thermador_t42it100np/NOTES.md": "763f90a9fe4b4c854430ddbcb19a92db0a79b4ef8123914cb9d1cd47acec2d02",
+    "thermador_t42it100np/source_manifest.json": "c1591049d9fb8a7d3c3f10ab53e9a30b5045c4436bac76313c2d02c13f4ba386",
+    "thermador_podmc301w/validation.json": "2235c9112e57350f0e03256124625d7255f11529e3cb229210bc23b22145fc35",
+    "thermador_podmc301w/NOTES.md": "870a63b6f309230245da32d36e6a129df85b76dcce19f8d0057388337dc53283",
+    "thermador_podmc301w/source_manifest.json": "821ec3299dda0279c34286208ed1ac6e1280fc43db86187c8073fd1f0329448d",
+    "thermador_pcg486wd/validation.json": "690432882d3abce8919aec924689e9eaf2f66539b8d48ed2858a888b2a80ee8b",
+    "thermador_pcg486wd/NOTES.md": "3675f5f430995026f37b848ab705a781d8d629a3117224ffe45c3459b91922f3",
+    "thermador_pcg486wd/source_manifest.json": "ac78fef72a179b0abfa48447744e4fb906548c84b86b9ecd3d763e896cde0767",
+    "KWT_6722_iS__7384660666023812/NOTES.md": "db00a298e77b4a361c68f15428eacc55cc99b942db27ca1b95e6832f0a0c1e4d",
+    "G_5051_SCVi_ADA__3328172767117188/NOTES.md": "155456d59721bca8877caef379cc1addebc6e241e1421c3a7e296e8a9cec865d",
+    "H_7280_BP__4418595438788484/NOTES.md": "bc138ba78003e1f79de6825f6d7b509c5dbb044df521307c04bede03e4f55161",
+    "H_7270_BM__8816514970877828/NOTES.md": "ddd1362514ec14e0c68fea7506d24e0251f7fda5577b644a14a469717e3d33c1",
+    "KFMC_3858_FD__2166795625103236/NOTES.md": "d0f5b4b4aff018eeb765a2ba4a9534272814da66b028e984f2dfb50e071c04ae",
+    "G_5051_SCVi_ADA__904397767376772/NOTES.md": "35bbe668d0b45da44273b2722a69175f52a969e6b3d4a0477aca279187c35313",
+    "KWTUS7172F__4666245805309828/NOTES.md": "35a8f76868cbfecf241a92e5cf2f7f735cd066c1b888c542b4f305ad2a7388b9",
+    "H_7280_BP__3025963735121796/NOTES.md": "7f5850a8ec7cf695057cb58e17ef83bb7bfb21b8f3ea5a738e34cd6027deb94c",
+    "H_7270_BM__6403663455649668/NOTES.md": "b769535aaf6a1f527f0b71c9883f046e8b975b3967d2ba1e4c87b40afb13dcc5",
+    "KFMC_3858_FD__1900063828279172/NOTES.md": "07d70040c275d02b1bf83db3d0baca0fe4418a08b5dfdfaff94460c702815795",
+    "Thermador_Freedom_42_Inch_Wide_23.1_Cu._Ft._Energy_Star_Certified_Panel_Ready_Fr__7829128394243972/NOTES.md": "9fa69b36eeac262a5045a2f5fc07669e1ab994faa52bec0c3aa7271c7e416b06",
+    "Thermador_Professional_Series_30_Inch_Wide_6.1_Cu._Ft._Combination_Electric_Oven__2199628860030852/NOTES.md": "9d1bf3001bbc165f4a581b69a2fbca50b87f644b0983f1258359edd84d608efa",
+    "Thermador_Professional_Series_48_Inch_Wide_6_Burner_Gas_Rangetop_with_Griddle__8955028301086596/NOTES.md": "9231531bced9a5ef67366aac4c11f7c3aa4351dfd63c74aba4684485424f9f0a"
+  },
+  "protected_files": {
+    "miele_h7280bp/miele_h7280bp_R2025.0001.rfa": "c758fa5dbbd1ac50660246c4fd7b43dd67ce68242de12a27dda5379bce246e8c",
+    "miele_h7280bp/miele_h7280bp_R2025.0002.rfa": "5b5e6e0bfd588dcb9fdb367c4a8975cf4d61b3788f937fd4a0507975f6f01d05",
+    "miele_h7280bp/miele_h7280bp_R2025.rfa": "8ee511e3f74f0c28239cc513154e56fb8a5a1868dfad5a52637a0f95ccf196ea",
+    "miele_h7280bp/source/manufacturer.zip": "43632ac18286da6f4b102303df0853e70cdeb84c0302e0729994be49990360d2",
+    "miele_h7280bp/source/product_sheet.pdf": "caacad6a120468ecd42757ad43314d70fb3de9f26208cbd1c4e367c5bf31679e",
+    "miele_h7280bp/source/product_sheet.txt": "abf8253754ba1520eef96087688cc063a25656e3ccca0e576658d662386f569e",
+    "miele_h7280bp/source/product_sheet_page_1.png": "f12a1bbb2b90fee4d2cc1c7ccf0591411b294b9861169d85a12b17ac7646d31f",
+    "miele_h7280bp/source/product_sheet_page_2.png": "9fb3822e2e05aba569b5c27ff9e81e97ef5b5f9b2232a9f7edc3bf177ac897b4",
+    "miele_h7280bp/views/native - 3D View - Wieland appliance review.png": "20dafed0d56208f68561de53f189a31773d071a7ba030b632208bea2b710f029",
+    "miele_h7280bp/views/placed_oblique - 3D View - placed_oblique.png": "91da6570e3d841e442d80329022ce84f76646e5e43dc5911270dcec2d1f06225",
+    "miele_h7280bp/source/original/11968200_USA_H7280BP_OBSW.png": "a02721770ad787ddd51b6c3438c22b80109d14a10328017b0fd58059efcc0838",
+    "miele_h7280bp/source/original/11968200_USA_H7280BP_OBSW.rfa": "8dac625d202af0daf8892a50eec4d104f7fa0b4df798f9cc5979e0613e17f655",
+    "miele_h7270bm/miele_h7270bm_R2025.0001.rfa": "2ae8e131532267d4446aea5ad628c918d8baf7134eff2d19cba50c5598fb1503",
+    "miele_h7270bm/miele_h7270bm_R2025.rfa": "4f9956271a11bf762ba499664915314ce8b19d790dd946eaf7e8a36ea5f50ac7",
+    "miele_h7270bm/source/manufacturer.zip": "c2a3d42c57e21d768066a220f107fc55dd74c95f82720c09e3e37ae3ec793ccf",
+    "miele_h7270bm/source/product_sheet.pdf": "66d7053796d55dd0f4bc3b0657de0bdee1952f7b83a9604adb94b2b99f06bb29",
+    "miele_h7270bm/source/product_sheet.txt": "3069322110b985d0e547fd3ef906ff9588230b752653e1c899e885e1073d8ae9",
+    "miele_h7270bm/source/product_sheet_page_1.png": "4e34687cc92532cd85a1a2411bd2ac78077f811288d93b535ae9382864fd6eba",
+    "miele_h7270bm/source/product_sheet_page_2.png": "3e5d580d3dfab7e13962c15bf1106ab45d34b4141b3923402cf6ddbe84490445",
+    "miele_h7270bm/source/product_sheet_page_3.png": "9f0d511648ea50b5fe7c6750d5c617d5ce8a2ce7f853ec18a2e4c8dc04dee05e",
+    "miele_h7270bm/views/native - 3D View - Wieland appliance review.png": "d87466e4d2bf3ab967963d8a883685199bc8736381290ecca4456936f1e0a051",
+    "miele_h7270bm/views/placed_oblique - 3D View - placed_oblique.png": "53f229f822b78712433fb02205b7d53f3b7739ec13227d4aa1b7c2782744b0d6",
+    "miele_h7270bm/source/original/11968190_USA_H7270BM_OBSW.png": "2616c6e0564217ce180a9f725e76628061ce10790d643aa7aef0fc38d16852e0",
+    "miele_h7270bm/source/original/11968190_USA_H7270BM_OBSW.rfa": "d1e3464c547fdfa518b151ab4c8f25fdacd57d926d4cf9d9ab6e90881af76769",
+    "miele_g5051scvi/miele_g5051scvi_R2025.0001.rfa": "adfcb26519bf38f2c1504a03fd4bc2bcb5af56775b1d09c59e5841556e5a1aed",
+    "miele_g5051scvi/miele_g5051scvi_R2025.rfa": "27391211e2833b4185affafe8f8bf49126ed9e20b216479b254294c4227ba10f",
+    "miele_g5051scvi/source/manufacturer.zip": "8048e956cd3573e8b4b73c3fa2a8b711ba5c8f59debde64a87a807a5dd560d53",
+    "miele_g5051scvi/source/product_sheet.pdf": "9ee6f3dbc23ad9bd205255e96a591e01f32f83dbf0926879be2e2f2b5f0a25f8",
+    "miele_g5051scvi/source/product_sheet.txt": "ad270b0575426524508d72f167e5a766e5e128d4df38e89d4c00cf0699b53250",
+    "miele_g5051scvi/source/product_sheet_page_1.png": "0efe865cac308a49e8f3ad2345323b7b66182e7b1062c1fec2b6dcda0920c013",
+    "miele_g5051scvi/source/product_sheet_page_2.png": "a135ccd42bb9b33713b1b2d12a359fd9407dfc4008970800d7dceb22497ebf1a",
+    "miele_g5051scvi/views/native - 3D View - Wieland appliance review.png": "f50983ffa5f1f62df7c82985cee69532d4e3c49abbce42775a6b00d998686ca1",
+    "miele_g5051scvi/views/placed_oblique - 3D View - placed_oblique.png": "1bcaf75b4a0a7543a3e69f5ca273d830a767bc125333e3ac1650c503ca385244",
+    "miele_g5051scvi/source/original/11636710_USA_G5051SCVi_ED.png": "86ea6ec2660db6181a3947aba29a7a1eb64c26c03097880352734ec970b22a60",
+    "miele_g5051scvi/source/original/11636710_USA_G5051SCVi_ED.rfa": "e1a4d3c5cf00f4c4b942ac69ad30a98d3bc778cbb678cc65144a2ac4e78073fc",
+    "miele_kwt6722is/miele_kwt6722is_R2025.0001.rfa": "7382d4bb801040d4d79ca3d70c59294c67424fc0abca468f9a20b7594cb7389f",
+    "miele_kwt6722is/miele_kwt6722is_R2025.rfa": "b6d424fe8d51979c0b5f753df9e4485767182ab63fa86aba7f7677e7bd500318",
+    "miele_kwt6722is/source/imported_material_3852.png": "57cda64cead0869cd5f90dfebb024f4bd9a922aaea91d513de6fa3e949d88921",
+    "miele_kwt6722is/source/imported_material_3853.png": "72be1cb8bfc116bd599bd1c19ba2a0d0bf9942e3c701ea4fbcd9aae0b6813adf",
+    "miele_kwt6722is/source/imported_material_3854.png": "5c1940856c064a85f1f158cd8926524a4b4710f3afc189817da17a18fa084b25",
+    "miele_kwt6722is/source/imported_material_3855.png": "f7ad2659710582f17402f328e9baa4bef78e9fb1a58b03a6c8acbab9fd34c974",
+    "miele_kwt6722is/source/imported_material_3856.png": "4ba7d67821d46e584508b228eb30f140f4a09a0f4232ae59affa2c4ba98dfe73",
+    "miele_kwt6722is/source/imported_material_3857.png": "94e944b40ba6986b14bdd4b39363cb23e35c4928857b6668a1ef1b5b897db876",
+    "miele_kwt6722is/source/manufacturer.zip": "cfe13f7080eb823009aef1576b3852c30ff2b6cc4b7d8f9bb12bea527105bf49",
+    "miele_kwt6722is/source/product_sheet.pdf": "01d2d6d736c7bc01b7bbbd99ba7abca1605664ff86ccf49bb1819951510192e8",
+    "miele_kwt6722is/source/product_sheet.txt": "0d9e5903dccdc7f87b2c1d407ec6a20dbab9ed8a171aef0816aa8d224b559348",
+    "miele_kwt6722is/source/product_sheet_page_1.png": "7035499882c2fbe0396cfe8f4a12ec0f4b97435e1303a67b5f23e1cd9b115bc5",
+    "miele_kwt6722is/source/product_sheet_page_2.png": "0b67755600f130d2d7527bcc4a67cf98f9173275f94586fd365a5d6df31536fe",
+    "miele_kwt6722is/source/product_sheet_page_3.png": "2eb3edac29e50c100bf9d5cb5e8e19b6e67ef027f484515df64f982c596f7211",
+    "miele_kwt6722is/views/native - 3D View - Wieland appliance review.png": "80698311d85160929c5919137f5f463dd6ebc4a84e906e1245ae72f16459acfb",
+    "miele_kwt6722is/views/placed_oblique - 3D View - placed_oblique.png": "4164bce61cca8a24adbdf22c9393f99c071dfaa4febe84c81a9de7f75e928c89",
+    "miele_kwt6722is/source/original/11329860_USA_KWT6722iS.png": "05e6c176faf3e33e689d793b70d8cd990afbdf0a012ecfdf220a45125e2d36e8",
+    "miele_kwt6722is/source/original/11329860_USA_KWT6722iS.rfa": "8ea7195e152445552c46f6e97f72aecafe2ff14be4130a14c520c34e38f1db07",
+    "miele_kwtus7172f/miele_kwtus7172f_R2025.0001.rfa": "4c0e298b65664046dbe407f0b0de00fb02c3efc964feb14fc35698ee38f688af",
+    "miele_kwtus7172f/miele_kwtus7172f_R2025.rfa": "19baf18cecc8a74a0cdc28196b8e1d2627a1afc51da2ea294d6d2d18cf95fb24",
+    "miele_kwtus7172f/source/imported_material_4242.png": "7fc942ab8fe553485f48d80840515992ec07b4a4fdf9c37b8b7aae4162034861",
+    "miele_kwtus7172f/source/manufacturer.zip": "4ef11f331c6417fd6348f679b23488c2b5fef463248ce6f3b8f6da3f6c9d1dff",
+    "miele_kwtus7172f/source/product_sheet.pdf": "c0c6e9f559d3576688afd2d4c92e64ea1da985819f8b0624878406acbaaf6f17",
+    "miele_kwtus7172f/source/product_sheet.txt": "b15e7bacdbd924a4a0ea6ab5faaf6c4f84d3e431d0f11a7a2c7e6d365e6ace51",
+    "miele_kwtus7172f/source/product_sheet_page_1.png": "85a304af688cd5cca96259099f5feeb2241b956acc867c1bb49479a76b9b73c2",
+    "miele_kwtus7172f/source/product_sheet_page_2.png": "ab1158ee31f2304ffb75175281f8fa2f7087a3dcd9bd48b976f6cb57458c833d",
+    "miele_kwtus7172f/source/product_sheet_page_3.png": "19c4282ad7eee2871ee4c266519fea020a0ea46e9a5d153d789d5f18886463f1",
+    "miele_kwtus7172f/views/native - 3D View - Wieland appliance review.png": "2b1b936f30d4c5a5262d11c18f35473bc268930c32089a5d01221e8adf8c6e20",
+    "miele_kwtus7172f/views/placed_oblique - 3D View - placed_oblique.png": "dbde596ddde1e55d91007aaf2b44d303267b647ed20bce459377e2bc1cde378b",
+    "miele_kwtus7172f/source/original/12519520_USA_KWTUS7172F.png": "50ad3f144445b4a1d034bc529c2d8748c8bbf7b3c61d443eea9692aee0c1a613",
+    "miele_kwtus7172f/source/original/12519520_USA_KWTUS7172F.rfa": "aebe0cf31bf17a435e4b4f1a8b10585aad0ff2af14f3de3278810ef597c5953d",
+    "miele_kfmc3858fd/miele_kfmc3858fd_R2025.0001.rfa": "ab5eec0556eeabcbf7a236f0c1d0f2a265ce93f6657de9aeca38ce8710ca2835",
+    "miele_kfmc3858fd/miele_kfmc3858fd_R2025.rfa": "33f4dda96d550daa71c7e359a83bc4c093ad19caa9514a3c80dd3de418f067de",
+    "miele_kfmc3858fd/source/imported_material_4256.png": "7fc942ab8fe553485f48d80840515992ec07b4a4fdf9c37b8b7aae4162034861",
+    "miele_kfmc3858fd/source/manufacturer.zip": "577d8a4b1db3abe01bc1c23c3fe04420bfe1ff7381e51f092a9c3e0a775bf445",
+    "miele_kfmc3858fd/source/product_sheet.pdf": "eab5869ceba00358a77db46cf342a80023fb8d7b8cfbd54f9ceb7dedad13db4d",
+    "miele_kfmc3858fd/source/product_sheet.txt": "86823adae220955804dcc9d97fb1dbaf247f05ad36f54ebbc306be69d8d09800",
+    "miele_kfmc3858fd/source/product_sheet_page_1.png": "367507f5d1ee5a5a770adf508cc553fb2c671e2e627d9dfc97f01b5ac3401809",
+    "miele_kfmc3858fd/source/product_sheet_page_2.png": "f7f0f04de9bf82f44d309d8ed36d5b4696681e6d0ddf225dfd296e7d6184a35b",
+    "miele_kfmc3858fd/source/product_sheet_page_3.png": "8ca80b5bd5db970826ec315803e715e9520117b6fa62bb44be8ead43bc96f49c",
+    "miele_kfmc3858fd/views/native - 3D View - Wieland appliance review.png": "b54c369e779f2d64d451ca0549b17aa5e5d9503aad6c14fd3ca5054fe855b4ae",
+    "miele_kfmc3858fd/views/placed_oblique - 3D View - placed_oblique.png": "1281a2905f6cae96762f6914629a3d2b58fe650afbd863a103af91a7df22da3f",
+    "miele_kfmc3858fd/source/original/12489440_USA_KFMC3858_FD.png": "5fd296a94f0ca9160ccedb0887e5f48ef99f95987e54007c46f43e79d1844809",
+    "miele_kfmc3858fd/source/original/12489440_USA_KFMC3858_FD.rfa": "9bb945361ff473e37de530438042435e7a8f70a59cda8e2716c82151d11e781e",
+    "thermador_t18iw905sp/NOTES.md": "c1b51b89c358deb6970c6bc216bfde032f9b5877188c513151704bd6fb69a208",
+    "thermador_t18iw905sp/source_manifest.json": "fd6984b4d215566ef901c8d1ac901f3cc45f54c8d0805529050a0e660a72d8e0",
+    "thermador_t18iw905sp/thermador_t18iw905sp_R2025.0001.rfa": "04ce3aa6178408999d7db79dd602af4f652ff23fbd590299e2ed10788d67ff24",
+    "thermador_t18iw905sp/thermador_t18iw905sp_R2025.0002.rfa": "1fd29941864366ab80ff45c701c8fa2b990b915ca1c5a914fb964224e8150845",
+    "thermador_t18iw905sp/thermador_t18iw905sp_R2025.rfa": "96d62d335c78b32e40359a88210d9b5c40214a909fa105c5f81f42c89bee3cbd",
+    "thermador_t18iw905sp/validation.json": "115fb6670ec6d257a8fda91ef79fd26e9ab1ab83db4642b5779fab6d6ebec023",
+    "thermador_t18iw905sp/source/download_evidence.json": "ecf51929d2c7beca26cc8ad854e5573b462cb4d40fc9495b8ba7c445cf2cbb4c",
+    "thermador_t18iw905sp/source/links.json": "fb06ec79f40dc1644f5808e4dbed97b0a8035d77e7568abcbb363a19ac7e64f2",
+    "thermador_t18iw905sp/source/manufacturer.zip": "c66015074e6c323611f7881ef189ea2edb9d389ee85ce57d6da1e48f53b84d00",
+    "thermador_t18iw905sp/source/official_page.html": "8e1190276ecd56faaf46602041122a36e8efc1bfff4fda7f6dfccbeead111517",
+    "thermador_t18iw905sp/source/product_sheet.pdf": "3ac9e8298f4083e51139504b99b5977ad4417656998eb0268d57912bfc6d40d4",
+    "thermador_t18iw905sp/source/product_sheet.txt": "c3c13ae449b9a122c61342008925e2a7b5731d2e543dc1c5230b448ce41ae045",
+    "thermador_t18iw905sp/source/product_sheet_page_1.png": "826f1c5bda7b8cea6660c65c35d081e5f09a80c513a4b51764586a4d364cd7b1",
+    "thermador_t18iw905sp/source/product_sheet_page_2.png": "c25e6c036b263531ca9bafe46720ef64283530f3af0df9205a000d7d0953ac63",
+    "thermador_t18iw905sp/source/product_sheet_page_3.png": "1b648a1904f4699d570c7b9bdd482e722aa5d01496b2273f8d613243199da12b",
+    "thermador_t18iw905sp/views/native - 3D View - Wieland appliance review.png": "cfdb8a786c37d904da9266cd23504dfc35f3c700968324e72416d090e253072f",
+    "thermador_t18iw905sp/views/placed_oblique - 3D View - placed_oblique.png": "536dc5862db7f89fbf7d547475bcfd7598f67870db31a285e082087dd98f4637",
+    "thermador_t18iw905sp/source/original/T18IW905SP/T18IW905SP.dwg": "4d91330d8d622fef89b49c2b76eb6d494ca1769a1c9ebbc95902929a3111b8d7",
+    "thermador_t18iw905sp/source/original/T18IW905SP/T18IW905SP.rfa": "8d224a4e8f612b8899573f3888d9cc1343a33b8d2a4ecd684be9cfebd0c548bd",
+    "thermador_t42it100np/thermador_t42it100np_R2025.0001.rfa": "2b612c44839ad37d7c8d4a27f5fa08276c9620bf289bca2c8c2e2567c0068147",
+    "thermador_t42it100np/thermador_t42it100np_R2025.rfa": "41a0d65b3a5640a1b23f6b3e0fc1787e0d60b708caa0cd3a625e85b980ce06f1",
+    "thermador_t42it100np/source/download_evidence.json": "7f6f08497edf2b6c567786d04c27476987c5c4590e31431ca7c6ee4038146c40",
+    "thermador_t42it100np/source/imported_material_7706.png": "7fc942ab8fe553485f48d80840515992ec07b4a4fdf9c37b8b7aae4162034861",
+    "thermador_t42it100np/source/imported_material_7711.png": "e6d6e194ff3224e20d2a817d1f602f9b436e2cba2b3bd73f8e7f2dae8bcb38d3",
+    "thermador_t42it100np/source/imported_material_7714.png": "44ce47c8b0c2cf9defe1bad35f8873f9a90433d8b65100268e2d55b6166d3110",
+    "thermador_t42it100np/source/imported_material_7760.png": "4a0945534329d26ce523a2f096e203aae59a9fffaec71895599fa3ef42d23f22",
+    "thermador_t42it100np/source/imported_material_7796.png": "4a0945534329d26ce523a2f096e203aae59a9fffaec71895599fa3ef42d23f22",
+    "thermador_t42it100np/source/manufacturer.zip": "afa188118b860f8a60f09ac4572c955dc3692044aeaf962095752d501fcc07c5",
+    "thermador_t42it100np/source/official_page.html": "6700531c28b78b92a2ebd31326d4619bce026146fece638a12d222b9cbe8a114",
+    "thermador_t42it100np/source/product_sheet.pdf": "b5571a589d7f07bb8107b4738a8a74eeba0a33337bf2bcd76134309913e2b709",
+    "thermador_t42it100np/source/product_sheet.txt": "465ce3a142d4ff2c75fd56c6a4c17c3ed27454e9e1ce95f037640798e732379b",
+    "thermador_t42it100np/source/product_sheet_page_1.png": "286533c72a4246b7b3243ac1311edcbeaab827d6b3b78c667a1ce4d0bc1df330",
+    "thermador_t42it100np/source/product_sheet_page_2.png": "5ea1c93c003783b98579f050e1db762366568911d5a880c37bfe2363a28bc5b6",
+    "thermador_t42it100np/source/product_sheet_page_3.png": "9cb9b5ccec3a5a62bfb6750f5b4d544bca4f66716edd49b9172ad00b607dae90",
+    "thermador_t42it100np/views/native - 3D View - Wieland appliance review.png": "7a235ee7b3522268253469c988efbadad0278d539ea689b62a6d111bb0647304",
+    "thermador_t42it100np/views/placed_oblique - 3D View - placed_oblique.png": "71ffcbdb2f26e6a4442c4619fb9e9e94ed96a1a5bab83e163c6ad48c8de174a0",
+    "thermador_t42it100np/source/original/T42BT110NS_TradeCAD_2D.dwg": "e423da53f765b155225b22e1fafca5dbf6a1aa75a8870f8d8578578986f963ba",
+    "thermador_t42it100np/source/original/T42BT110NS_TradeCAD_2D.rfa": "589b89df59fad2f6bf02ee2e9c986f19895ea73c0bfa0c90a60ef5aeb5c18647",
+    "thermador_t42it100np/source/original/T42IT100NP_TradeCAD.3ds": "b9eceba896a9aa882d5c96813064e18d05844266491d8b34e5b4e9f92fb72096",
+    "thermador_t42it100np/source/original/T42IT100NP_TradeCAD.dxf": "775a349fce8ef8675edb868b3a80ee8380008c70839cc5912553739520d2c750",
+    "thermador_t42it100np/source/original/T42IT100NP_TradeCAD.ifc": "abd7b9bcb0c696dc68695e53cf7cb5973c25e4fe45b8d51aca914bd52426dce7",
+    "thermador_t42it100np/source/original/T42IT100NP_TradeCAD.obj": "95ba386f9fbe8bec3029571d5a1b14b4380ac3a073f17a28b84e55fb7550e4b5",
+    "thermador_t42it100np/source/original/T42IT100NP_TradeCAD.rfa": "c883036f8c06768a6e44f2a95cc2e647c8f422352b731a7b350f0ab8f8b30335",
+    "thermador_t42it100np/source/original/T42IT100NP_TradeCAD.skp": "b610c771f8ea1cbdbab76f1d44c32b89d2c22c94efe802ba9e54f17de89c8060",
+    "thermador_t24ur905rp/NOTES.md": "fa53763891833e76db59435f946fee2efd3692d7619aa4ebc2156ceb7a9758ee",
+    "thermador_t24ur905rp/source_manifest.json": "515530c51cae508488f5b05ebac7239cc0cae9620b7d3ba4679cb892c73a5e4c",
+    "thermador_t24ur905rp/thermador_t24ur905rp_R2025.0001.rfa": "b354b3959ac536bde1b567d609910ac6abb3b26ef01e51b1d7c6204f09a5988f",
+    "thermador_t24ur905rp/thermador_t24ur905rp_R2025.rfa": "55160dd0481f77c496266aafce0b7967b81cf521bfea1dfe62e8d863447a8d24",
+    "thermador_t24ur905rp/validation.json": "f0d168828d61f2dbd22e5a7909e105d6af2dbccf5050339377e29d1dc954a19d",
+    "thermador_t24ur905rp/source/download_evidence.json": "a2b20091f59ec598933ad4c446f957788cf91b519b459fcab8d27118385a11a1",
+    "thermador_t24ur905rp/source/imported_material_7591.png": "4a0945534329d26ce523a2f096e203aae59a9fffaec71895599fa3ef42d23f22",
+    "thermador_t24ur905rp/source/imported_material_7693.png": "7fc942ab8fe553485f48d80840515992ec07b4a4fdf9c37b8b7aae4162034861",
+    "thermador_t24ur905rp/source/imported_material_7696.png": "eb5e9b57aa034a86e061ea9e594c1de09e40ce97b1651857583ac387ad561f41",
+    "thermador_t24ur905rp/source/imported_material_7699.png": "44ce47c8b0c2cf9defe1bad35f8873f9a90433d8b65100268e2d55b6166d3110",
+    "thermador_t24ur905rp/source/imported_material_7706.png": "42b980b0f4cfef7a8a35dfd029b108e6396858bd45c78d537bdbc7ed3f1a7c81",
+    "thermador_t24ur905rp/source/imported_material_7709.png": "c3d8cf405c8ca0c953f57de3f5a3097e3235b5eb1083e4da3e9a8cd6fa74cf5d",
+    "thermador_t24ur905rp/source/manufacturer.zip": "3149a05765340a385c8f920e5db9f7306092b830d8f4752b3a4e9a5453e563a6",
+    "thermador_t24ur905rp/source/official_page.html": "e28ae84596d6104ff4bf7cdad71511e7ffcddb9e63b5d2d08472f69d22b541c8",
+    "thermador_t24ur905rp/source/product_sheet.pdf": "fc8c565f2a213c1688a419665847efa52da506d365d4ebef0eaa83178083ed6f",
+    "thermador_t24ur905rp/source/product_sheet.txt": "ee39a4a30958cf13fb6cfab1ab9ed3a83db89dcac08e7da7649d86af8d18343f",
+    "thermador_t24ur905rp/source/product_sheet_page_1.png": "9e52e5ff966d5b66295e7777d8840d634dd41ba05aeda6addb122b6b1ae4a686",
+    "thermador_t24ur905rp/source/product_sheet_page_2.png": "24119baaf7ecca7713139d7a6c3e9096b3cdb668e953deeeb45336a48587a67b",
+    "thermador_t24ur905rp/source/product_sheet_page_3.png": "66e6e29821993a8a84c868fefd997844d20ccb0a9d1a648e0ced6fe5afd59066",
+    "thermador_t24ur905rp/views/native - 3D View - Wieland appliance review.png": "7a235ee7b3522268253469c988efbadad0278d539ea689b62a6d111bb0647304",
+    "thermador_t24ur905rp/views/placed_oblique - 3D View - placed_oblique.png": "8757686c9ac2cef307b1a31ede1335e69af7e0bea32a53e44a3aaec0c0550e04",
+    "thermador_t24ur905rp/source/original/T24UR905RP_TradeCAD.dxf": "cd51751c31381ad6918540322e672a60ec0ea98927c4f5dec38010084dae7003",
+    "thermador_t24ur905rp/source/original/T24UR905RP_TradeCAD.obj": "5a05b4ec880457ef79c21e81817f283d62214ba7cf01bcb7d825210b57db20bb",
+    "thermador_t24ur905rp/source/original/T24UR905RP_TradeCAD.pdf": "f6586b9f882a45050ba36073c759e54e7de49cb05903c1c98a809a23927a8c91",
+    "thermador_t24ur905rp/source/original/T24UR905RP_TradeCAD.rfa": "13ee06bf009af46f60c4e71ec82a5bf02ed9c6feddb20850949ad9113299cb7e",
+    "thermador_t24ur905rp/source/original/T24UR905RP_TradeCAD.skp": "1421a192f982c0105d9bbeecc18d339afb81189f34b3ecbabdae6d2a50f9063c",
+    "thermador_t24ur905rp/source/original/T24UR905RP_TradeCAD_2D.dwg": "ba3917eb29d80bbf0f1fa30017c5695585c5f251fdb51a125f93f9d03c767b16",
+    "thermador_t24ur905rp/source/original/T24UR905RP_TradeCAD_2D.rfa": "8aac8a68872f0bcc13805a99aef09a612d6fc3288a27771ddd218677266b47a0",
+    "thermador_mc30wp/NOTES.md": "0e55dd37c9bc4c964f9ba33103bbdfdba534b4b09d7a653e8cb087f3257920ee",
+    "thermador_mc30wp/source_manifest.json": "7896c42c63e1db214de5faa2bd7dae7dda3ee955bf4f074adb2b5f62e723535c",
+    "thermador_mc30wp/thermador_mc30wp_R2025.0001.rfa": "118a464341e00433945fe25b01cacc1698c85e5ec43517eb0842d71abcd93dcf",
+    "thermador_mc30wp/thermador_mc30wp_R2025.rfa": "1ef4c23faddae67bf049bd9d27e05410ac714ddfc5e9a04ff0ac924ad3b83816",
+    "thermador_mc30wp/validation.json": "a8fe0c136d801b94e36d949a7a791dc9723682b9a28ed54dd62a4e30b98e5bbf",
+    "thermador_mc30wp/source/download_evidence.json": "29ccec5737d4906eb6e7142894f81b93664cd34eb5f101c023e92d4c12e6dc03",
+    "thermador_mc30wp/source/manufacturer.zip": "ff36cc725b5f00f5a413cc64507b7656fa5f53e6ba3e9421d62de845e3186428",
+    "thermador_mc30wp/source/official_page.html": "253c2505f6c68df8bc05df2522914bc070dec78ae4153d65faf1cd96a8ab9bb7",
+    "thermador_mc30wp/source/product_sheet.pdf": "b0f841b866eef1fe8dbc0df68f77271c90b225bc2a2b79544e8ba4daaefaed49",
+    "thermador_mc30wp/source/product_sheet.txt": "e19ef1d5e01510294ab795c9ca8db4a38d921b24f81f1b29261ecb552af97c45",
+    "thermador_mc30wp/source/product_sheet_page_1.png": "9329584490fba1001652bcfa7eaad94c5dd2a15769f71b3b3059b1a6efd173f2",
+    "thermador_mc30wp/source/product_sheet_page_2.png": "38e13fad60ba8fc94a3b1140a3a0057c70abce832c2e9851e22ed2f38d13d813",
+    "thermador_mc30wp/source/product_sheet_page_3.png": "5430673808759f648940739c97727945f20c6938369b625c57a8c35502c83829",
+    "thermador_mc30wp/views/native - 3D View - Wieland appliance review.png": "0fa79f8e43d67a3919b9bb2836d94896b5fa107667241b5b298bfb3dcbc3503a",
+    "thermador_mc30wp/views/placed_oblique - 3D View - placed_oblique.png": "f7c58251a14c500b8cea17efc1f0dc04ab6a48e4b996a7cb345f76a391e9c146",
+    "thermador_mc30wp/source/original/cavity_b.jpg": "5023a75a8913590f15267c437380ea64897a4bb0d6a5db37e335384ab280650e",
+    "thermador_mc30wp/source/original/cavity_g.jpg": "e2c265381f8aeedd0aaed42d717329d553a2efe3886132f4d1e4603511b6d58e",
+    "thermador_mc30wp/source/original/doors.jpg": "5c60b9b054e85a88403bc2e1327081e6470af86d42b176e000d60e5ead9c4081",
+    "thermador_mc30wp/source/original/MC30WP.3ds": "b4669cf095deaf6615883b9648be82c7375018f87a9c868411deb892111d3d73",
+    "thermador_mc30wp/source/original/MC30WP.dwg": "6d10e672520d569b10441cc247f4b2a62f6ab79b52f7a1335fe0233dcaf7ba87",
+    "thermador_mc30wp/source/original/MC30WP.dxf": "cf9ced36b9ad9363ad1e59f9eed20cfd4a922818128554001cdce10d0ae44c5d",
+    "thermador_mc30wp/source/original/MC30WP.fbx": "a3dbfc97ddbbe7ce183b0282cad5ce9b767d70a7043a5f3777aa3ff3469d0c8d",
+    "thermador_mc30wp/source/original/MC30WP.ifc": "590678eab0222da55e3be2ab4ef6b367ae88ae6c24bff5590e0e7efc889466df",
+    "thermador_mc30wp/source/original/MC30WP.max": "af4d72d517ed85a81263467a35a57b021006273d08a89d6342a180d8923887f2",
+    "thermador_mc30wp/source/original/MC30WP.mtl": "c599dab51a4accbfa7f40c0caff4b96d9bf9de7e6158962b978e9806db5b37db",
+    "thermador_mc30wp/source/original/MC30WP.obj": "f69dc369bcf31cfb57348c37c22ebe164ee48b7eb4778bee32072aade783b8ee",
+    "thermador_mc30wp/source/original/MC30WP.rfa": "2e5c87062ca820c7c50cff3a60e6009ed45444c18df7d5c2b91c206796bf70ca",
+    "thermador_mc30wp/source/original/MC30WP.skp": "5a9837fa0a60dab521f93ba45cb09da9f7112e526e586e54c98082d3c44810e8",
+    "thermador_mc30wp/source/original/MC30WP_2D.dxf": "15f3e9bd63ecb8b2486dffa6fd5ca6c73ee4f79dddacb915d9fcb876735f4fd5",
+    "thermador_mc30wp/source/original/MC30WP_2D.pcp": "67ce0e2ec7d4f208778ca1a8d9fb68104101c2177422fd1e556f99a2a13ba7bc",
+    "thermador_mc30wp/source/original/MC30WP_2D.rfa": "c1d0036595d053f4e8562876cfbebf9a6b979f1a06237052fd4dc40c1a66c512",
+    "thermador_mc30wp/source/original/MC30WP_single_mesh.3ds": "b86113d47a8debce533d1f0c20019b33fd1959aed0a59dc843d9ffa535ed8352",
+    "thermador_mc30wp/source/original/tex_2.jpg": "704add122df4890cfc39336496d3991e1ae948709eb3a270d823455cdc20eec7",
+    "thermador_mc30wp/source/original/MC30WP-Thermador-TradeCAD/MC30WP-2D.rfa": "41af59f89484d9e5644e971525bf06a9580a4f9391bf567bf8c0ee46d24ed7c3",
+    "thermador_mc30wp/source/original/MC30WP-Thermador-TradeCAD/MC30WP-3D.rfa": "41af59f89484d9e5644e971525bf06a9580a4f9391bf567bf8c0ee46d24ed7c3",
+    "thermador_mc30wp/source/original/MC30WP-Thermador-TradeCAD/MC30WP.dwg": "81f6cb12bf5a22e3b7e210252c167d4c20f10b1748b2451c3eed5b657a3a9bf8",
+    "thermador_mc30wp/source/original/Reference/H4100_MC30WP_1400654_STP_cmyk.jpg": "82dfd1e690621d78940285c90f0d3037477525772208406997bb6582a4fe49f1",
+    "thermador_podmc301w/thermador_podmc301w_R2025.0001.rfa": "cd66388ceb275150d0b82abebff448a61de2cc6c4889b380da9c1678252fb446",
+    "thermador_podmc301w/thermador_podmc301w_R2025.rfa": "2c5c54e83c38b0cdc2619f61ce089b47df09b5f52bf4f7bcf89ca3585b1f0ae5",
+    "thermador_podmc301w/source/download_evidence.json": "b651ac47c1c5b44e57f2cf8f2a1b3dbc4987ca3d8aa1e85748d606b067e29545",
+    "thermador_podmc301w/source/manufacturer.zip": "8b4e7627dfa9262d7063862a003cf910f3aa884ebe1c9ecea27e2befe47fcac9",
+    "thermador_podmc301w/source/official_page.html": "cedee06501577319b4bc4ce0b33356e7a58506274112abe4eb0987e370550409",
+    "thermador_podmc301w/source/product_sheet.pdf": "994ef34139be60f0169cc5853180d90ad0c0f25d9977824ddb54cf7c164f41b8",
+    "thermador_podmc301w/source/product_sheet.txt": "47a7363db1bb5925c7c3ca38bbc606fb9560232c48752d175e3b69fb7615a746",
+    "thermador_podmc301w/source/product_sheet_page_1.png": "0e855bb2635c5341cc00bd7de3377dc7a80899e0556bc31148d41db7c1ebf693",
+    "thermador_podmc301w/source/product_sheet_page_2.png": "01b4fac378c6dbba9f0c8fbbab2bbb93b2c794834e647b65f2b3021441b7e4ba",
+    "thermador_podmc301w/source/product_sheet_page_3.png": "d91e68bdb2a3df6e0d97c72d406fdd28ab2f68bef91cab3fc0e59665f87c550f",
+    "thermador_podmc301w/views/native - 3D View - Wieland appliance review.png": "c89ab87f62e18ccf1471b65630d282fe33d49d1ffb4df84b8ec11a9d8074a6bc",
+    "thermador_podmc301w/views/placed_oblique - 3D View - placed_oblique.png": "33f59315d28446c7cc07949d09cf7f1acc09f82a6ad2caedbb0e1b593a57140e",
+    "thermador_podmc301w/source/original/cavity_b.jpg": "5023a75a8913590f15267c437380ea64897a4bb0d6a5db37e335384ab280650e",
+    "thermador_podmc301w/source/original/cavity_g.jpg": "e2c265381f8aeedd0aaed42d717329d553a2efe3886132f4d1e4603511b6d58e",
+    "thermador_podmc301w/source/original/doors_01.jpg": "d1932e93ba8c7ece552c5e8b97d19fa1c1e28fe9a8906de61da5999e086af02f",
+    "thermador_podmc301w/source/original/doors_02.jpg": "3be4951b43f9ed9fe08eff928384339e330f5e4ab935e4274951e71fd868505f",
+    "thermador_podmc301w/source/original/PODMC301W.3ds": "00dfa9f797edf2bb76630a96322bddc16f253097ea6b5e54545dfa5218f50abe",
+    "thermador_podmc301w/source/original/PODMC301W.dwg": "f3eb86be1fbe201cf365297b21049b53031904d7def10ff04430d0f08b7c671b",
+    "thermador_podmc301w/source/original/PODMC301W.dxf": "2058344e05fcb25624793f217f3bb9bd60b997dde81e11f4b5034adac6e8c5e9",
+    "thermador_podmc301w/source/original/PODMC301W.fbx": "2e7df80935f148dfffcf52facf47ed3ba7879ce5957173b17705ceb39ebfe271",
+    "thermador_podmc301w/source/original/PODMC301W.ifc": "601645219634175c7f6fafa24ee9b20edac2489ca357f6e76cec33ce4e18bb0c",
+    "thermador_podmc301w/source/original/PODMC301W.max": "7665c6c2a4c6f8a020a9c73eecd12d975497a04935ca79e3b842c3bedcb75928",
+    "thermador_podmc301w/source/original/PODMC301W.mtl": "669a76de4d72cae2b86fd979e0a4b17925b24fff966918089c12202a0a6ba748",
+    "thermador_podmc301w/source/original/PODMC301W.obj": "2fbe822a1500bf9b289e293dbc43987aa3de4a044db61ab461379523a69c5ffb",
+    "thermador_podmc301w/source/original/PODMC301W.rfa": "3f01c6e084dff850d5b16f8c6437bed5e618a9a75a45dd9fc17717330a447c9f",
+    "thermador_podmc301w/source/original/PODMC301W_2D.dxf": "c47c5cc88963b5adfd9010423251dab9d674bfc25afe8a962ee0f7cbd1ed2c10",
+    "thermador_podmc301w/source/original/PODMC301W_2D.pcp": "15d2b1f1eaa7952226e6a7100a934d4cb8b50152cffc334b641f06bb8ec29da1",
+    "thermador_podmc301w/source/original/PODMC301W_2D.rfa": "bd403d9db7df909bc07e50d8cd4856d4730023c3ead4711bbcacdf9c2e4bbcc5",
+    "thermador_podmc301w/source/original/PODMC301W_single_mesh.3ds": "292d6ab3632710ae181d3056d0258b5dce230478b1e05f8d1fac92690657601e",
+    "thermador_podmc301w/source/original/tex_2.jpg": "704add122df4890cfc39336496d3991e1ae948709eb3a270d823455cdc20eec7",
+    "thermador_podmc301w/source/original/PODMC301W-Thermador-TradeCAD/PODMC301W-2D.rfa": "f7d6226ffcfc7c4ceef246e20e492ff5dd845833c24e1087e8b98f19105913ee",
+    "thermador_podmc301w/source/original/PODMC301W-Thermador-TradeCAD/PODMC301W-3D.rfa": "f7d6226ffcfc7c4ceef246e20e492ff5dd845833c24e1087e8b98f19105913ee",
+    "thermador_podmc301w/source/original/PODMC301W-Thermador-TradeCAD/PODMC301W.dwg": "3fe84c731ab1fb0c6cf0627376d1d0b1c411fecca40380264e45e3486630cb2f",
+    "thermador_podmc301w/source/original/Reference/i9354_2099517_PODMC301W.jpg": "a045a353714d698addfd7c0338e65f7d060cc6c45320d7192468e472bd34dea6",
+    "thermador_pcg486wd/thermador_pcg486wd_R2025.0001.rfa": "dbf9aece5ef81331425617122cffeec6a73dd533042008cb52ffa9bd3e7df6d2",
+    "thermador_pcg486wd/thermador_pcg486wd_R2025.rfa": "356457f2f43ca992a3c733ae59c551261e8d6ff28701e31d4947a7fc7d78f0aa",
+    "thermador_pcg486wd/source/download_evidence.json": "688d3c7e7459b0c2a8cde4e3174967447a23678dbb398d8c198b7612ae041ebe",
+    "thermador_pcg486wd/source/manufacturer.zip": "8f0c616038ab970dee73462e90ecc41aa9e6d6a83a593068a3fbcb68a443aaec",
+    "thermador_pcg486wd/source/official_page.html": "0d50cb14a1444a0762710a103e0ffb4a82ad34d9b8c8a051e47d33eaa517d18e",
+    "thermador_pcg486wd/source/product_sheet.pdf": "b32a34ccbae59e9466010bb2dcbc58f609bd2bc723354372d677d20bf5b2fc22",
+    "thermador_pcg486wd/source/product_sheet.txt": "f35acc69884c297f59cf6d822ab154ed742002092071f5698eb3e45513b0b37a",
+    "thermador_pcg486wd/source/product_sheet_page_1.png": "666ebb3bdcaa4a3ae6c9a0ab40e41e19cbd1cc6a3f1a77834fa9852607a5b482",
+    "thermador_pcg486wd/source/product_sheet_page_2.png": "6150b48ffd5b1329d7317e9b565e96b5d9c3eb29ec84d7d69b4373c2f40e8455",
+    "thermador_pcg486wd/source/product_sheet_page_3.png": "0ee8a146959d911a648628010f93e8b696be6edd43220fd4719773d4f923f5d6",
+    "thermador_pcg486wd/views/native - 3D View - Wieland appliance review.png": "b6812bca0fe93b50df03b576eb995478b4a10d25783cddc14c652b5ac0b71a5d",
+    "thermador_pcg486wd/views/placed_oblique - 3D View - placed_oblique.png": "2bb8addecc36e590c2c359e5437830f0b874d99e231ff16d0ef46000c72d2901",
+    "thermador_pcg486wd/source/original/brushedmetal.jpg": "84c8c1d840ee7f35a88afa9eae5efef34bbadbe7f71b5bff91383bcabc71eddb",
+    "thermador_pcg486wd/source/original/knobs_panel.jpg": "7c7b27c54d1b72ba9299d654e02c4189831acab72bc329e5cd9ca1a4bba28a48",
+    "thermador_pcg486wd/source/original/PCG486WD.3ds": "e02dd64c21fa40708be97e24b4a52e6f9c5dfd62106a95808cdf667858aad2f8",
+    "thermador_pcg486wd/source/original/PCG486WD.dwg": "c0aa744d0511aaa56d582e947d990aaf4ebf4a4072ccecd9c26fba9d36dcd529",
+    "thermador_pcg486wd/source/original/PCG486WD.dxf": "ae64f3ede7ef8fe38f60c5e9a7616e993d143e50c8fdadb91d446518f1769bf0",
+    "thermador_pcg486wd/source/original/PCG486WD.fbx": "499f760170f4fbc53c454be96388b75fe4f62639cc864c711764df701070896f",
+    "thermador_pcg486wd/source/original/PCG486WD.ifc": "65e571463e851bb05ec21da2c4f1aa43fea4bcf97172c46f965c46feeb727193",
+    "thermador_pcg486wd/source/original/PCG486WD.max": "97f5a1d6e6da93f09600f0d4b373632d5a9219c412415b7c2356ebe2547884b7",
+    "thermador_pcg486wd/source/original/PCG486WD.mtl": "c6835507d073dde3fa935e0a904ae75d4b0bff85abfef707697796ddeac3878d",
+    "thermador_pcg486wd/source/original/PCG486WD.obj": "5288747e8dbf4d6ba08eb094e93cf1c66f5fe93c9070afeed5485f258ff9ebcd",
+    "thermador_pcg486wd/source/original/PCG486WD.rfa": "c98275858ea0181f8fae1b9bc583840e25cefbe6e222b4e191d2b3b145604ef0",
+    "thermador_pcg486wd/source/original/PCG486WD.skp": "2a66d2f1d3548e29276cc6b61e54a6d0035d8f9105d7972b11f338ec22c8c536",
+    "thermador_pcg486wd/source/original/PCG486WD_2D.dxf": "77a3dd8cd5143371658a11e59790a530b2ae4f6c68be44384c1f24549896dbe5",
+    "thermador_pcg486wd/source/original/PCG486WD_2D.pcp": "60e14184ddc3693cb45cc2cd0de9581bd1b721e09ebe499cdf2293fa3cc4477a",
+    "thermador_pcg486wd/source/original/PCG486WD_2D.rfa": "0d3b4e25d77eec41aad99be8cfdfcfc4015389e217966e56bc1e1b7c0a1ce42a",
+    "thermador_pcg486wd/source/original/PCG486WD_single_mesh.3ds": "885e2c0beb551eac0a916d33f99dcc5c23a5b7fb2f1b9f96f11d1e646f0c0c95",
+    "thermador_pcg486wd/source/original/tex_2.jpg": "704add122df4890cfc39336496d3991e1ae948709eb3a270d823455cdc20eec7",
+    "thermador_pcg486wd/source/original/top.jpg": "652b75dbc229267ba0a30f58a9810f8f267908726044c4047410e37476606054",
+    "thermador_pcg486wd/source/original/PCG486WD-Thermador-TradeCAD/PCG486WD-2D.rfa": "e42658b6954c29fd65d05ad26bd9fa57e9fb88e00833ae129c0f2b2d639a8174",
+    "thermador_pcg486wd/source/original/PCG486WD-Thermador-TradeCAD/PCG486WD-3D.rfa": "e42658b6954c29fd65d05ad26bd9fa57e9fb88e00833ae129c0f2b2d639a8174",
+    "thermador_pcg486wd/source/original/PCG486WD-Thermador-TradeCAD/PCG486WD.dwg": "83d089f24060b89720ff8bc46288b7150148d2f94ad997ae3ddecdbd473f5510",
+    "thermador_pcg486wd/source/original/Reference/J5169_2586957_PCG486WD.jpg": "e2ad01d44e47ababe1dbe8e7204ad42b3587fdbe9630e30fb118434146e4b7a2",
+    "thermador_prd48wisgu/NOTES.md": "d512b8be5e50d3e9ed38b365f99e736805c8ebdebf38322e1aa6f992391fa6c3",
+    "thermador_prd48wisgu/source_manifest.json": "b2296c9f7e31b98983f85dde6faa00474351e53e82ac4ed72182f41cc5b29435",
+    "thermador_prd48wisgu/thermador_prd48wisgu_R2025.rfa": "e4311b255150c9aa0b701fa377a4b09237ba5c93e441d04fe16acc282ef29429",
+    "thermador_prd48wisgu/validation.json": "bed1273156a00316cbe896645039e94d59606cdc64c676d121aa1a727d9180d3",
+    "thermador_prd48wisgu/source/cad_15842904_PRD48WISGU-Thermador-TradeCAD.zip": "8ecca1b2e2017b0cc31b49a3382c21956dff7f890021e0160f6eaf49b20da33a",
+    "thermador_prd48wisgu/source/cad_29476114_PRD48WISGU_TradeCAD.zip": "e918e1f89473b5137c74a719751bd681366c92f1b72242f89863f1020d182bca",
+    "thermador_prd48wisgu/source/download_evidence.json": "53ed5b69a8249936ae3bcb1f9967b0f5f68af6e7261c03cdb2edcaf7cd704043",
+    "thermador_prd48wisgu/source/official_page.html": "d8a1c136edde4d9f3727ebe49e763ef6aa1b3efe5aecb9ae1895e46fdaa41b00",
+    "thermador_prd48wisgu/source/product_sheet.pdf": "c195785fddd8451015cd41944729071fb8968522b412a120d00bbe72500b0c07",
+    "thermador_prd48wisgu/source/product_sheet.txt": "309f8a8f827593fe8edeb3f805705023e1ddf0bc264507395e0c96e468305a60",
+    "thermador_prd48wisgu/source/product_sheet_page_1.png": "d3fd7a23fd1f01747d1b54e0870014ba95884b2bd5dbfab4a52db9d4b2e254ff",
+    "thermador_prd48wisgu/source/product_sheet_page_2.png": "23a60a758744ab91710aec393b6b8034ba18126596a6dd651eb9bc6e5bf8edb5",
+    "thermador_prd48wisgu/source/product_sheet_page_3.png": "42a3c3bf284b37570785edf0301739d65ca15e5fd99c4db83eea9a3491813e22",
+    "thermador_prd48wisgu/views/placed_oblique - 3D View - placed_oblique.png": "e306a8cbb57e34df715cf3cfc9199f9cb8f810810ac6c10beb77bf4045dc48f1",
+    "thermador_prd48wisgu/source/original/brushedmetal.jpg": "84c8c1d840ee7f35a88afa9eae5efef34bbadbe7f71b5bff91383bcabc71eddb",
+    "thermador_prd48wisgu/source/original/cavity_b.jpg": "5023a75a8913590f15267c437380ea64897a4bb0d6a5db37e335384ab280650e",
+    "thermador_prd48wisgu/source/original/cavity_g.jpg": "e2c265381f8aeedd0aaed42d717329d553a2efe3886132f4d1e4603511b6d58e",
+    "thermador_prd48wisgu/source/original/door.jpg": "82aa7179050a6808c54af75271ba29a0878a53a6e03f741fa4042941b18da8db",
+    "thermador_prd48wisgu/source/original/door_02.jpg": "e0154ebecd9c96581a81787ccf579d46be28d7fa85e222d2b82f17e75d7e1959",
+    "thermador_prd48wisgu/source/original/Knobs_Panel.jpg": "d7f62cb8c739db66df4b7e80ad42e94945d1d49ce97a03bc23680ae5105f8bab",
+    "thermador_prd48wisgu/source/original/PRD48WISGU.3ds": "a4724584a883c75c5e32a4ee3bb9bd8443990add02e9ed3d88a95bf39e1e264c",
+    "thermador_prd48wisgu/source/original/PRD48WISGU.dwg": "ea28bc1b8d07e08d75bd237ddd52861b0323cf5f0007b4f14299c76b1f77e44a",
+    "thermador_prd48wisgu/source/original/PRD48WISGU.dxf": "0720a8689be00943d6e5c314ade0a4bce3d6b058a5ec761c24bc2d90b5bf4dac",
+    "thermador_prd48wisgu/source/original/PRD48WISGU.fbx": "10e166912f3141ec1206e67f982129e22277f5a793ba4783b5838d2a918b5e79",
+    "thermador_prd48wisgu/source/original/PRD48WISGU.ifc": "4439c11654e0ceac605a3e8f400643a1348b94bf08a90cb5dc4a21320f67c912",
+    "thermador_prd48wisgu/source/original/PRD48WISGU.max": "045414afbd07984276372452ed6e6be7f4edb43c14b71b50fe183dd4ee010150",
+    "thermador_prd48wisgu/source/original/PRD48WISGU.mtl": "c21a6a13a2d5f4a8bbd26abab25ab4aaed07dc9a7ee1ab7adee45f6674531aa8",
+    "thermador_prd48wisgu/source/original/PRD48WISGU.obj": "be1fc9a750dc038396be672e609e11ffc808d4276ec5d387708abffc6f53e553",
+    "thermador_prd48wisgu/source/original/PRD48WISGU.rfa": "9b10bb9dcc3da8c232572cb2dff011eec2589b539ec5aec9bf8db6a4c4fc17bd",
+    "thermador_prd48wisgu/source/original/PRD48WISGU.skp": "89c46e5934a6e9e037dc0a4ae4b1b2df24a13685026257fd6ebf09ea1c92e1b6",
+    "thermador_prd48wisgu/source/original/PRD48WISGU_2D.dxf": "4d398417e3d1a837db406744f984652472bbd627ed6b219bc6146a39be2203a8",
+    "thermador_prd48wisgu/source/original/PRD48WISGU_2D.pcp": "38b963688fcbc06d012db1195d344a10390747da641115f2a0290d96f99fa832",
+    "thermador_prd48wisgu/source/original/PRD48WISGU_2D.rfa": "7730ee8a522f41ee8f0330ec3734b366fca91e7ab4cbf584295f8bc139618a52",
+    "thermador_prd48wisgu/source/original/PRD48WISGU_single_mesh.3ds": "e4c0ae07ea44de83c8feb2b8dbc361390d34c092482817259200d66cf37e80fd",
+    "thermador_prd48wisgu/source/original/tex_2.jpg": "704add122df4890cfc39336496d3991e1ae948709eb3a270d823455cdc20eec7",
+    "thermador_prd48wisgu/source/original/top.jpg": "652b75dbc229267ba0a30f58a9810f8f267908726044c4047410e37476606054",
+    "thermador_prd48wisgu/source/original/PRD48WISGU-Thermador-TradeCAD/PRD48WISGU-2D.rfa": "200961aef68882594b3cdbb8213f11a8156e6362d07f44a68e97226ad2d7bafe",
+    "thermador_prd48wisgu/source/original/PRD48WISGU-Thermador-TradeCAD/PRD48WISGU-3D.rfa": "200961aef68882594b3cdbb8213f11a8156e6362d07f44a68e97226ad2d7bafe",
+    "thermador_prd48wisgu/source/original/PRD48WISGU-Thermador-TradeCAD/PRD48WISGU.dwg": "59c9ae53d37ea27f47bbfe0c3088899044c3a474601197d489f1ecda3ed05884",
+    "thermador_prd48wisgu/source/original/Reference/i9946_2128364_PRD48WISGU_CMYK.jpg": "812425f22019072367ad167f6711f401fe4bf3a66ddca02756a7d52bf9c3295a",
+    "thermador_wd30w/NOTES.md": "036292269586f57e91ede106ba15abb989ab0f910b6b0a8c23b53c910a84b928",
+    "thermador_wd30w/source_manifest.json": "b113e9e4f496584c0c14374c8d8d3c44e9e8eb3efc9b1531be9d052edd8c312e",
+    "thermador_wd30w/thermador_wd30w_R2025.0001.rfa": "229ca294fd451ca46144cbb715ff3d591f5034dda05247739c17c1344e0517e8",
+    "thermador_wd30w/thermador_wd30w_R2025.rfa": "b1a2a7978ac8fe613780eb4be646ae72bf10222c606f9361b1d32b6ab5ba2f80",
+    "thermador_wd30w/validation.json": "8c3e7907af9383df0bd7d7f16c4f399c38489d938f14bd740523886fe42a148e",
+    "thermador_wd30w/source/cad_15803179_WD30W-Thermador-TradeCAD.zip": "87df38616d42add75502d14eef854163afe136066824320ef61f5e1a125be1fd",
+    "thermador_wd30w/source/download_evidence.json": "47d3d7de44fbb3dc302b03ed6b51f5d3954287ed9465b6f07fcd03ee066fdbc3",
+    "thermador_wd30w/source/official_page.html": "3b27dfa56c5459a5e448a471293fdc2c7ff17e95cfdb822f153b087ea230e9d5",
+    "thermador_wd30w/source/product_sheet.pdf": "2fc744d658b3bc4c857ed48cf996450473fa8b60793ed2ae9bfeafbfeb0c6e06",
+    "thermador_wd30w/source/product_sheet.txt": "eda4802fd5e01d822c1b754ec038f4808ab2d6c80c52c3f7735cb1a41b53678b",
+    "thermador_wd30w/source/product_sheet_page_1.png": "17332ddb6d06cc297b9cccdf358fcf6d8d60fb8465e2515fddfab0b21d3b3fb5",
+    "thermador_wd30w/source/product_sheet_page_2.png": "03b0fe07f52b31a7e4bd7d6fefa602ea5d59582d7607ab27104ba51e45391817",
+    "thermador_wd30w/source/product_sheet_page_3.png": "c53a74698859549eeec14c6481e677dc1fb8b5a60ddee1323307c3462ae99537",
+    "thermador_wd30w/views/native - 3D View - Wieland appliance review.png": "16a19c2d4f525a2701dc1549a03d886fb3f1d167b029f9dfeed39d82c3729600",
+    "thermador_wd30w/views/placed_oblique - 3D View - placed_oblique.png": "5648dab80501af10901ab3d1c5e7dc31e9dc54e96a7d6b23433b50aeae9df72b",
+    "thermador_wd30w/source/original/WD30W-Thermador-TradeCAD/WD30W-2D.rfa": "0f572dd307f34516f23420fd4cae024b1d4a8e1643004675b056fdeccb15e93c",
+    "thermador_wd30w/source/original/WD30W-Thermador-TradeCAD/WD30W-3D.rfa": "0f572dd307f34516f23420fd4cae024b1d4a8e1643004675b056fdeccb15e93c",
+    "thermador_wd30w/source/original/WD30W-Thermador-TradeCAD/WD30W.dwg": "6987407a43dc07a3df66d44d8ecc2e2d0f1af7b4e3161791a11d2c9198858bb4",
+    "lg_wm4000hba/lg_wm4000hba_R2025.rfa": "506f2a58ee6630d16b9049b7041a1c51bd9c29518931bab5832ca09385e68721",
+    "lg_wm4000hba/NOTES.md": "008be7060c612a4aaa48f34640fd849001c6c6f7956f17f9a00d37eaf1806669",
+    "lg_wm4000hba/source_manifest.json": "a50c1ce46217eb84a3838eff79f929fd5112a0633c6e77749b9cda49a2d9a784",
+    "lg_wm4000hba/validation.json": "87d9ec22877ef4d1ec538d933461a50f1cb394a16b84ce0247a6af277aebd498",
+    "lg_wm4000hba/source/Black_Glass_diffuse.png": "221fd09b37db91dfa2ca30ab42ec7ff32ec7397468b47fe379180a9ca72a5a7a",
+    "lg_wm4000hba/source/Black_Plastic_diffuse.png": "58832a65e73e918072c734b29198eec0dcb17be0bd3ca3dbef6b9779b3c4a3a9",
+    "lg_wm4000hba/source/Black_Steel_diffuse.png": "02afaa85187b6506ec7f70e35235af986fff01de29e6f1202fa6fd77046a4747",
+    "lg_wm4000hba/source/Bronze_Rim_diffuse.png": "d51cbb6939e1c52c66e0dbf897a70a0ce7cdb75c92c6b067d438eda2c994cb83",
+    "lg_wm4000hba/source/build.py": "160cbef4c16754da61c1c5162c1a92216aa954427da6e12707b972e476176009",
+    "lg_wm4000hba/source/Clear_Glass_diffuse.png": "d223e7dfa1d24a059a8a314796deda18a1012b1498f739b3ef4f3aa04af9cd96",
+    "lg_wm4000hba/source/geometry_config.json": "9a953fd01d5aaa8b6bf6aae2b43c8b9a67923aa7b8fc331bc47ee41ca956caf0",
+    "lg_wm4000hba/source/Gray_Interior_diffuse.png": "495b886f6ded4f344d0339ac0553e2a9d82e13b893bff36a78e33270bdd7cf9d",
+    "lg_wm4000hba/source/Indicator_diffuse.png": "8f474d53d54d9a535d7f910b6d0ebe901787f8fb2b1652f1fd6f1c817c05f2d6",
+    "lg_wm4000hba/source/Panel_Ready_diffuse.png": "c9d1937d565fa9ce741a2d67a0f5c7e1d5282c0a1a92767b680d57ec9bb5c246",
+    "lg_wm4000hba/source/product_sheet.pdf": "8bcb06ce07e893ae0be53e1c24c7abea069b1f9e043d90e0806c82de4addd065",
+    "lg_wm4000hba/source/product_sheet.txt": "f2f5532d1e8e53c8566e9efe9e1725afe0743950d187bf66ddbc65d3eb00d503",
+    "lg_wm4000hba/source/product_sheet_page_1.png": "6ec0f0a0dca542e5c3c5a4437125d52d6e7dac73637e4bef3bebfacb4af08456",
+    "lg_wm4000hba/source/product_sheet_page_2.png": "12cec86175b7c5221c5ab0544daf9cb1d8fa01fcea1fbf74cc58b7a658301cfe",
+    "lg_wm4000hba/source/reference_page_1.png": "bf273a06c663acfadcb70d5710833089e01d3d37409489ec3590531222415db1",
+    "lg_wm4000hba/source/reference_page_2.png": "d89165a397fe99fba44b6ba896149c32acd900a0ceac42367abd4a0f4def792f",
+    "lg_wm4000hba/source/Stainless_Steel_diffuse.png": "b43a9466c44f63f1174c0abcdeb56c959a164425f790de1f5b196be1c88a06f2",
+    "lg_wm4000hba/source/White_diffuse.png": "3919fe6ec3a0d735ead0c2362ca0ee0e10fcee2e89e1e071063c5c59dea0722a",
+    "lg_wm4000hba/views/front - 3D View - front.png": "ca59192dfef6c22161a9b8f943f5aebe4662cbb4e93509f9fe61b3e8f9e70a7f",
+    "lg_wm4000hba/views/oblique - 3D View - oblique.png": "ed437571ae4f75b6a2d8ec4eee3cd0b443d807e4a995e0bf730106e92f81a67e",
+    "lg_dlgx4001b/lg_dlgx4001b_R2025.rfa": "17406675cb26e611a8150e987985228ec68f1bf1abfc3ea11f5235d29420f911",
+    "lg_dlgx4001b/NOTES.md": "a93de76b52d99d5585342dc087c18dd722da31a7aadf6997bf4d446e6f1faa8e",
+    "lg_dlgx4001b/source_manifest.json": "5e9f7fd0de133f3f98292004a9e8c296ce285a77e32d790a2fb8b1b731b23459",
+    "lg_dlgx4001b/validation.json": "7557b347168322bb8d02cb582fb11747c0ca89d7037c327f09bce257144feef3",
+    "lg_dlgx4001b/source/Black_Glass_diffuse.png": "221fd09b37db91dfa2ca30ab42ec7ff32ec7397468b47fe379180a9ca72a5a7a",
+    "lg_dlgx4001b/source/Black_Plastic_diffuse.png": "58832a65e73e918072c734b29198eec0dcb17be0bd3ca3dbef6b9779b3c4a3a9",
+    "lg_dlgx4001b/source/Black_Steel_diffuse.png": "02afaa85187b6506ec7f70e35235af986fff01de29e6f1202fa6fd77046a4747",
+    "lg_dlgx4001b/source/Bronze_Rim_diffuse.png": "d51cbb6939e1c52c66e0dbf897a70a0ce7cdb75c92c6b067d438eda2c994cb83",
+    "lg_dlgx4001b/source/build.py": "ddc89c66de3cff8861c7db993cc8543649ea57c647950e49c28198927bf08fe8",
+    "lg_dlgx4001b/source/Clear_Glass_diffuse.png": "d223e7dfa1d24a059a8a314796deda18a1012b1498f739b3ef4f3aa04af9cd96",
+    "lg_dlgx4001b/source/geometry_config.json": "2a33220d252579401879c894ff814dc226fb7ecc2471f5ad3ca05aba70d90560",
+    "lg_dlgx4001b/source/Gray_Interior_diffuse.png": "495b886f6ded4f344d0339ac0553e2a9d82e13b893bff36a78e33270bdd7cf9d",
+    "lg_dlgx4001b/source/Indicator_diffuse.png": "8f474d53d54d9a535d7f910b6d0ebe901787f8fb2b1652f1fd6f1c817c05f2d6",
+    "lg_dlgx4001b/source/Panel_Ready_diffuse.png": "c9d1937d565fa9ce741a2d67a0f5c7e1d5282c0a1a92767b680d57ec9bb5c246",
+    "lg_dlgx4001b/source/product_sheet.pdf": "c33b92b4c061915e266d4d84193b3fcbdaeb60b37d20d73f3b76dc6d5e348919",
+    "lg_dlgx4001b/source/product_sheet.txt": "3ac88df324fe25e355e4835a042915e112f67baaa6f6bb721c7d29068db6edb6",
+    "lg_dlgx4001b/source/product_sheet_page_1.png": "014e7afdf1100d3954ccb91e5f0898d54e87f86414f02424ef43e125c314876a",
+    "lg_dlgx4001b/source/Stainless_Steel_diffuse.png": "b43a9466c44f63f1174c0abcdeb56c959a164425f790de1f5b196be1c88a06f2",
+    "lg_dlgx4001b/source/White_diffuse.png": "3919fe6ec3a0d735ead0c2362ca0ee0e10fcee2e89e1e071063c5c59dea0722a",
+    "lg_dlgx4001b/views/front - 3D View - front.png": "ae47126b21a165ec66fb71ca62f292e23d7c6b9133076cb6dd4e38ad9b25766c",
+    "lg_dlgx4001b/views/oblique - 3D View - oblique.png": "893f09207538148eb6fb8fb56f8b0067bf9f8700fe7aeadf6c51b8c7384a0a12",
+    "ge_gfw550ssnww/ge_gfw550ssnww_R2025.0001.rfa": "24ca036a26e47bdaecfd4ee9017de7e0757645c4ac5ad33f8b15e53f19fe9156",
+    "ge_gfw550ssnww/ge_gfw550ssnww_R2025.rfa": "2c25548bfc9f1fde1c75929c0e99125dac4fb7bca5fdb3b39946218ce27f4b65",
+    "ge_gfw550ssnww/NOTES.md": "0e43ed70feddffe5bf7ae298cc14dc2e713c7fc9fb2b9934d2cedd9d5138fd33",
+    "ge_gfw550ssnww/source_manifest.json": "08e7872113c095219f8e4ea3a8205bf9eb7fbd07df5b81d03c77c463f816a15e",
+    "ge_gfw550ssnww/validation.json": "ce83087e2282f2423582c4ea3867092f0dbeef1386229cda94bd77ebbe177d0a",
+    "ge_gfw550ssnww/source/Black_Glass_diffuse.png": "221fd09b37db91dfa2ca30ab42ec7ff32ec7397468b47fe379180a9ca72a5a7a",
+    "ge_gfw550ssnww/source/Black_Plastic_diffuse.png": "58832a65e73e918072c734b29198eec0dcb17be0bd3ca3dbef6b9779b3c4a3a9",
+    "ge_gfw550ssnww/source/Black_Steel_diffuse.png": "02afaa85187b6506ec7f70e35235af986fff01de29e6f1202fa6fd77046a4747",
+    "ge_gfw550ssnww/source/Bronze_Rim_diffuse.png": "d51cbb6939e1c52c66e0dbf897a70a0ce7cdb75c92c6b067d438eda2c994cb83",
+    "ge_gfw550ssnww/source/build.py": "4d96497fb4ee547c5d8af67a7da8614bf789d4e9743326e705aa3c5bb9459fd9",
+    "ge_gfw550ssnww/source/cad_review.json": "0fe70e35d5e27f89eaa858c2ca5672e40388f43ca231a3d22d25e2082d882fc4",
+    "ge_gfw550ssnww/source/Clear_Glass_diffuse.png": "d223e7dfa1d24a059a8a314796deda18a1012b1498f739b3ef4f3aa04af9cd96",
+    "ge_gfw550ssnww/source/geometry_config.json": "5e85d178ba2964479a3d54a239ec74f6fd875a72cca5b94f32b290631c2d98e6",
+    "ge_gfw550ssnww/source/Gray_Interior_diffuse.png": "495b886f6ded4f344d0339ac0553e2a9d82e13b893bff36a78e33270bdd7cf9d",
+    "ge_gfw550ssnww/source/Indicator_diffuse.png": "8f474d53d54d9a535d7f910b6d0ebe901787f8fb2b1652f1fd6f1c817c05f2d6",
+    "ge_gfw550ssnww/source/official_3D.dwg": "074d87f4e699083b9baa787e9f5475d3d7f8438efa344c6c5c576a7ed8a7a514",
+    "ge_gfw550ssnww/source/official_cad_review_R2025.rfa": "108865e349fe1612c8ee63da77ced94e697bb611fb6601b18c484418440c9b95",
+    "ge_gfw550ssnww/source/official_page.html": "da5393ca114dd329175b46070c178dfa75ac6d33e41f3e326124ad6f7359cae6",
+    "ge_gfw550ssnww/source/official_product.jpg": "60ef37706a7196fff2f396fe1b4edb91155b5b21da199eaf26a7b6dee5f8dedc",
+    "ge_gfw550ssnww/source/Panel_Ready_diffuse.png": "c9d1937d565fa9ce741a2d67a0f5c7e1d5282c0a1a92767b680d57ec9bb5c246",
+    "ge_gfw550ssnww/source/product_sheet.pdf": "bd102bae20c244002e488bfd981d86e187a31d03f3d1f99220067db9ca1676de",
+    "ge_gfw550ssnww/source/product_sheet.txt": "c53f22f14b1a6eff67624d9b5efea6d0aa328b6b2b836da6c35b1eedb7bd1d6d",
+    "ge_gfw550ssnww/source/product_sheet_page_1.png": "44096a60410ff8b0686154920ae2349605be336f782eb1b3ecc5f945f63fe6f2",
+    "ge_gfw550ssnww/source/product_sheet_page_2.png": "9a345184ff674e9847ba99c55a77e815804248948690292fb33aec0a5ecd6c01",
+    "ge_gfw550ssnww/source/product_sheet_page_3.png": "1a5efbf43558c0fb693bd818222e32d168fc9b64a352bd1a00c8c43064312724",
+    "ge_gfw550ssnww/source/resource_discovery.json": "c4836953dc30757dd65615f2b369cfd13de8dbf1525c73e0caf34527886bdfbc",
+    "ge_gfw550ssnww/source/Stainless_Steel_diffuse.png": "b43a9466c44f63f1174c0abcdeb56c959a164425f790de1f5b196be1c88a06f2",
+    "ge_gfw550ssnww/source/White_diffuse.png": "3919fe6ec3a0d735ead0c2362ca0ee0e10fcee2e89e1e071063c5c59dea0722a",
+    "ge_gfw550ssnww/views/front - 3D View - front.png": "1e3ed36769cee2439b846a42bd73869efcfb706af5037f54eabc1e10ba11a7ec",
+    "ge_gfw550ssnww/views/oblique - 3D View - oblique.png": "a9c4e092b27ffdc65555b43088e204dbe0975760e509da8a92be460c4c287db6",
+    "ge_gfw550ssnww/views/official_cad - 3D View - official_cad.png": "746d593bb7326bb5bc7273313cd213e3cbb55a68cc4e83acdeb42286619e80f2",
+    "ge_gfd55gssnww/ge_gfd55gssnww_R2025.0001.rfa": "5478c11f7d94a7ea2bad2338ccf702ab09214d6b5bcbb430ef1dead87297f6df",
+    "ge_gfd55gssnww/ge_gfd55gssnww_R2025.rfa": "9563e29835dca39d9745dabac1787b6d576bd582b1643fd7ab70a4637f947747",
+    "ge_gfd55gssnww/NOTES.md": "8350b7e9483fc3dff1fcd54cd8181ba5c83248fcde78ec4ab21484685d5f792c",
+    "ge_gfd55gssnww/source_manifest.json": "30252b2bb0be895a56704fb5637a385f4d98d0438e8376a9a8fa6a7d2303b1b5",
+    "ge_gfd55gssnww/validation.json": "c521d3d500a884c6d9a21cae6e4a2b9e1efd2728f002b8ddf8f6266681e0b5fa",
+    "ge_gfd55gssnww/source/Black_Glass_diffuse.png": "221fd09b37db91dfa2ca30ab42ec7ff32ec7397468b47fe379180a9ca72a5a7a",
+    "ge_gfd55gssnww/source/Black_Plastic_diffuse.png": "58832a65e73e918072c734b29198eec0dcb17be0bd3ca3dbef6b9779b3c4a3a9",
+    "ge_gfd55gssnww/source/Black_Steel_diffuse.png": "02afaa85187b6506ec7f70e35235af986fff01de29e6f1202fa6fd77046a4747",
+    "ge_gfd55gssnww/source/Bronze_Rim_diffuse.png": "d51cbb6939e1c52c66e0dbf897a70a0ce7cdb75c92c6b067d438eda2c994cb83",
+    "ge_gfd55gssnww/source/build.py": "126ce7e7da93b5523a5e86e62b27aab2a8fb06d9a94d66f47d914dc230254c52",
+    "ge_gfd55gssnww/source/cad_review.json": "b22c43160db62458edb3c94403976ab8823060966d9dec8a13174f3507ebea3c",
+    "ge_gfd55gssnww/source/Clear_Glass_diffuse.png": "d223e7dfa1d24a059a8a314796deda18a1012b1498f739b3ef4f3aa04af9cd96",
+    "ge_gfd55gssnww/source/geometry_config.json": "63764490f501770872427743d6b501613c7836de0956d2c7afe1efff3ccf18f8",
+    "ge_gfd55gssnww/source/Gray_Interior_diffuse.png": "495b886f6ded4f344d0339ac0553e2a9d82e13b893bff36a78e33270bdd7cf9d",
+    "ge_gfd55gssnww/source/Indicator_diffuse.png": "8f474d53d54d9a535d7f910b6d0ebe901787f8fb2b1652f1fd6f1c817c05f2d6",
+    "ge_gfd55gssnww/source/official_3D.dwg": "c72359889485709f1822ac4586460b333b3d6d7d161d2cfc6e92a83c00843ce3",
+    "ge_gfd55gssnww/source/official_cad_review_R2025.rfa": "a2f419afadab6f789c5559c549dd2ca19e58d447c6322ba0a294db0e054e3f3b",
+    "ge_gfd55gssnww/source/official_page.html": "7d61c010ca4e02353d0d9f138ceaa4176fc1e6ae5075125f674a0e7ab389c473",
+    "ge_gfd55gssnww/source/official_product.jpg": "726a75eeeafed0f59bbdcc009479c4939affe7b239378ad56faa0593685fede8",
+    "ge_gfd55gssnww/source/Panel_Ready_diffuse.png": "c9d1937d565fa9ce741a2d67a0f5c7e1d5282c0a1a92767b680d57ec9bb5c246",
+    "ge_gfd55gssnww/source/product_sheet.pdf": "9d27be5ee07292728aa60e8d89a9671e052666f2faf07b074b9656df5a846d67",
+    "ge_gfd55gssnww/source/product_sheet.txt": "9a9d44329a43a2972e99d33ff41e8ee813b6c00b39cbc92ab7bb08e65abc677f",
+    "ge_gfd55gssnww/source/product_sheet_page_1.png": "322629567d4e1d2feefc96e1fbc6d0c3541ad28929cb9ee82e012abdedaad785",
+    "ge_gfd55gssnww/source/product_sheet_page_2.png": "1bc3184a168af375ab62d20bd6f54d2e64086e863404a1c606b7cb8e1657fd62",
+    "ge_gfd55gssnww/source/product_sheet_page_3.png": "916e95d038bbcc9670383342dc85a36208e9486ea3247749ab0fbb1380ea0879",
+    "ge_gfd55gssnww/source/resource_discovery.json": "0c291afe9b5c72e13ea6028f7c4dbd55e1602e698bd8fe64c8bfbd9170472a7c",
+    "ge_gfd55gssnww/source/Stainless_Steel_diffuse.png": "b43a9466c44f63f1174c0abcdeb56c959a164425f790de1f5b196be1c88a06f2",
+    "ge_gfd55gssnww/source/White_diffuse.png": "3919fe6ec3a0d735ead0c2362ca0ee0e10fcee2e89e1e071063c5c59dea0722a",
+    "ge_gfd55gssnww/views/front - 3D View - front.png": "52808627514cacd2672698cd29524291e2f677e89af8b89404dce0c64308d305",
+    "ge_gfd55gssnww/views/oblique - 3D View - oblique.png": "af254b5c824b60eca1d9c897a3794ef69e6d96f017e990a1826b99e6a979bd57",
+    "ge_gfd55gssnww/views/official_cad - 3D View - official_cad.png": "746d593bb7326bb5bc7273313cd213e3cbb55a68cc4e83acdeb42286619e80f2",
+    "miele_km3054_1g/miele_km3054_1g_R2025.rfa": "1b105d404097a468ea8225a290ffb3046813d928c3985fc6a2987f8cc51e4db3",
+    "miele_km3054_1g/NOTES.md": "dd5a8db9e2cf25897272c077dd1232cda3be655d0219b134a5e9535f54c52c08",
+    "miele_km3054_1g/source_manifest.json": "ea312f1769afc74f05fea6511e54f8f2d989e0dd37144cd21322a59478ad9876",
+    "miele_km3054_1g/validation.json": "e6c4bae76a7c90e88b6ddc4f9c342a94a9be2c27301ee3c3a147da54839c2819",
+    "miele_km3054_1g/source/Black_Glass_diffuse.png": "221fd09b37db91dfa2ca30ab42ec7ff32ec7397468b47fe379180a9ca72a5a7a",
+    "miele_km3054_1g/source/Black_Plastic_diffuse.png": "58832a65e73e918072c734b29198eec0dcb17be0bd3ca3dbef6b9779b3c4a3a9",
+    "miele_km3054_1g/source/Black_Steel_diffuse.png": "02afaa85187b6506ec7f70e35235af986fff01de29e6f1202fa6fd77046a4747",
+    "miele_km3054_1g/source/Bronze_Rim_diffuse.png": "d51cbb6939e1c52c66e0dbf897a70a0ce7cdb75c92c6b067d438eda2c994cb83",
+    "miele_km3054_1g/source/build.py": "deebdd38801d5e61df130b3573c633501455424199a6940ebb9f82bee86f4f82",
+    "miele_km3054_1g/source/Clear_Glass_diffuse.png": "d223e7dfa1d24a059a8a314796deda18a1012b1498f739b3ef4f3aa04af9cd96",
+    "miele_km3054_1g/source/geometry_config.json": "b9440f433ae9761deb63e8fc0edad711c4c92f9501b8abd871381f2d41d2512f",
+    "miele_km3054_1g/source/Gray_Interior_diffuse.png": "495b886f6ded4f344d0339ac0553e2a9d82e13b893bff36a78e33270bdd7cf9d",
+    "miele_km3054_1g/source/Indicator_diffuse.png": "8f474d53d54d9a535d7f910b6d0ebe901787f8fb2b1652f1fd6f1c817c05f2d6",
+    "miele_km3054_1g/source/Panel_Ready_diffuse.png": "c9d1937d565fa9ce741a2d67a0f5c7e1d5282c0a1a92767b680d57ec9bb5c246",
+    "miele_km3054_1g/source/product_sheet.pdf": "d32ce1c78679623dcc71c2b69d4d24eb4d831faeadfa0493d0e978149a42e222",
+    "miele_km3054_1g/source/product_sheet.txt": "68be619bb36ac4fefdf7c9905408f0f70416dcae954fe91f9357b44acc57cdf0",
+    "miele_km3054_1g/source/product_sheet_page_1.png": "de8212320a563894969ce37324cd4d3132c5bebb3e83fb4e11214a4be8fe90c0",
+    "miele_km3054_1g/source/product_sheet_page_2.png": "037835f363b6e0f7add57a935e33918705ed4cefe65373f07a468ca699f834fa",
+    "miele_km3054_1g/source/product_sheet_page_3.png": "b50c3bf8771fbf0df112dfce05181c45cc490d15b4c61b5cbfcec8e84e5c4412",
+    "miele_km3054_1g/source/reference_page_1.png": "b8a468223796fdc27b5bc0d3ae5be44ea8d082b1b08fea4e11eff0c9d4080a2c",
+    "miele_km3054_1g/source/reference_page_2.png": "84b2651cb7656754ca2afdad58fb23d7a172e78ad2af58b73f7a403d502b57fe",
+    "miele_km3054_1g/source/reference_page_3.png": "a2b689e6fdad3f6b07d0ad0b260fbe111bd8d9fef3f39adc5de9c46bd1d594ee",
+    "miele_km3054_1g/source/Stainless_Steel_diffuse.png": "b43a9466c44f63f1174c0abcdeb56c959a164425f790de1f5b196be1c88a06f2",
+    "miele_km3054_1g/source/White_diffuse.png": "3919fe6ec3a0d735ead0c2362ca0ee0e10fcee2e89e1e071063c5c59dea0722a",
+    "miele_km3054_1g/views/front - 3D View - front.png": "98908cd35fab59d1d4c9ad477760b432f89fb49160f2b6e856dd4bb4e1622eec",
+    "miele_km3054_1g/views/oblique - 3D View - oblique.png": "a7e58bc0a2a7df3617818b6b4d1f9a3837fd549655bb5f54885ec18a3f1dac11",
+    "tradewind_i32363rc/NOTES.md": "6e4520347ca312e7c17ed65fb8069c8f7e496dd45b6131c929ea71c8a4fc9e0c",
+    "tradewind_i32363rc/source_manifest.json": "4a5bac3c34d0a6b9aa230592ddbc948d7e60f1eca34d500cf5af7aee2594153d",
+    "tradewind_i32363rc/tradewind_i32363rc_R2025.rfa": "46516fd5c3b343401fc349301975758c85c1d97e5892c807b790b660b3d81f2d",
+    "tradewind_i32363rc/validation.json": "2c9cbd8f84eaf0f26fd29afc2185b954eacbc3bec5be57c0a454e074450467f2",
+    "tradewind_i32363rc/source/Black_Glass_diffuse.png": "221fd09b37db91dfa2ca30ab42ec7ff32ec7397468b47fe379180a9ca72a5a7a",
+    "tradewind_i32363rc/source/Black_Plastic_diffuse.png": "58832a65e73e918072c734b29198eec0dcb17be0bd3ca3dbef6b9779b3c4a3a9",
+    "tradewind_i32363rc/source/Black_Steel_diffuse.png": "02afaa85187b6506ec7f70e35235af986fff01de29e6f1202fa6fd77046a4747",
+    "tradewind_i32363rc/source/Bronze_Rim_diffuse.png": "d51cbb6939e1c52c66e0dbf897a70a0ce7cdb75c92c6b067d438eda2c994cb83",
+    "tradewind_i32363rc/source/build.py": "49d8790778699e25cf4fcd10bd1210903cc3ffb65e61ed32dac6be9bc0a9fd77",
+    "tradewind_i32363rc/source/Clear_Glass_diffuse.png": "d223e7dfa1d24a059a8a314796deda18a1012b1498f739b3ef4f3aa04af9cd96",
+    "tradewind_i32363rc/source/geometry_config.json": "29170abc67daab36fa5bca17c8ebf9726e5c98c5097d29aa33163e335de1a5fa",
+    "tradewind_i32363rc/source/Gray_Interior_diffuse.png": "495b886f6ded4f344d0339ac0553e2a9d82e13b893bff36a78e33270bdd7cf9d",
+    "tradewind_i32363rc/source/Indicator_diffuse.png": "8f474d53d54d9a535d7f910b6d0ebe901787f8fb2b1652f1fd6f1c817c05f2d6",
+    "tradewind_i32363rc/source/Panel_Ready_diffuse.png": "c9d1937d565fa9ce741a2d67a0f5c7e1d5282c0a1a92767b680d57ec9bb5c246",
+    "tradewind_i32363rc/source/product_sheet.pdf": "a716f322528680f2cd8223086ff0952ea5279ae39d0bf2dbfd30a57cae6bfe29",
+    "tradewind_i32363rc/source/product_sheet.txt": "28d4c0528ed4d38746bf0273d46c0e8020bf77a614eed17faa47b6bb787539c1",
+    "tradewind_i32363rc/source/product_sheet_page_1.png": "c10da632156f402371fd238af6bf58a375cd9928910fa5ab334b3e44ff3aa8cf",
+    "tradewind_i32363rc/source/product_sheet_page_2.png": "68c342e754e18015249850900c1107f403ee970c1fec9b36c72dbb747ce82f25",
+    "tradewind_i32363rc/source/reference_page_1.png": "2c0e2b34d16d486272447a0f32a501ee13069688f8b8af33c3e20acd4008be93",
+    "tradewind_i32363rc/source/reference_page_2.png": "2ae522d4ebfffb8c03d4043cae26891dbc888623bc64a1a8fa459f13fa238dd0",
+    "tradewind_i32363rc/source/Stainless_Steel_diffuse.png": "b43a9466c44f63f1174c0abcdeb56c959a164425f790de1f5b196be1c88a06f2",
+    "tradewind_i32363rc/source/White_diffuse.png": "3919fe6ec3a0d735ead0c2362ca0ee0e10fcee2e89e1e071063c5c59dea0722a",
+    "tradewind_i32363rc/views/front - 3D View - front.png": "99ace22636f196c0b8bcb90528752f5a54f4e5a141092452cf56132c074230b9",
+    "tradewind_i32363rc/views/oblique - 3D View - oblique.png": "7ff08120aac3e5840403710048f37b0905599a894294d2ac735e1b6e5fb34235",
+    "summit_sdhwc98pnr/NOTES.md": "7be5577a8a5f6614d8bd6fec618a7dd2c353022ee0d41f47c5add41506381799",
+    "summit_sdhwc98pnr/source_manifest.json": "b2a4236c565d593468a30a83f682ecd3f478dc28e61e12a00d1351156fd0ed22",
+    "summit_sdhwc98pnr/summit_sdhwc98pnr_R2025.0001.rfa": "d0d51706efc27811ee645e9b877cd1ea608fba672b3a94fc57fa80f4bae0979e",
+    "summit_sdhwc98pnr/summit_sdhwc98pnr_R2025.rfa": "dd76bf969af45350272b23ba17cc9c5b74566027149c5f0ee2e63f0b38016eeb",
+    "summit_sdhwc98pnr/validation.json": "d236f76ce525d727c7a4dc9e67c7c8c9f85c8cd86a8c9cc6377c877da0421e27",
+    "summit_sdhwc98pnr/source/assembly.pdf": "2abe7ed2e29969fe5beef3cf1c619677d1893a7cfd7c0af285caecc1d94a8469",
+    "summit_sdhwc98pnr/source/assembly.txt": "e7cff96f432695a66dc97127d2769fbeca670147462d6513b7e4e67d66a1f9bb",
+    "summit_sdhwc98pnr/source/assembly_page_1.png": "bdf7cda4973f155becd43fb6a49a280d9b3747792daf99113265194787ad966a",
+    "summit_sdhwc98pnr/source/Black_Glass_diffuse.png": "221fd09b37db91dfa2ca30ab42ec7ff32ec7397468b47fe379180a9ca72a5a7a",
+    "summit_sdhwc98pnr/source/Black_Plastic_diffuse.png": "58832a65e73e918072c734b29198eec0dcb17be0bd3ca3dbef6b9779b3c4a3a9",
+    "summit_sdhwc98pnr/source/Black_Steel_diffuse.png": "02afaa85187b6506ec7f70e35235af986fff01de29e6f1202fa6fd77046a4747",
+    "summit_sdhwc98pnr/source/Bronze_Rim_diffuse.png": "d51cbb6939e1c52c66e0dbf897a70a0ce7cdb75c92c6b067d438eda2c994cb83",
+    "summit_sdhwc98pnr/source/build.py": "4e86775cf616bad5f0f79a73e8905fbfd8da3c6ce69ce8fbe856e1073047d4fe",
+    "summit_sdhwc98pnr/source/Clear_Glass_diffuse.png": "d223e7dfa1d24a059a8a314796deda18a1012b1498f739b3ef4f3aa04af9cd96",
+    "summit_sdhwc98pnr/source/geometry_config.json": "bf8f92533371b49345ee90fdc063a9e109967c3d957007836410e850170e6817",
+    "summit_sdhwc98pnr/source/Gray_Interior_diffuse.png": "495b886f6ded4f344d0339ac0553e2a9d82e13b893bff36a78e33270bdd7cf9d",
+    "summit_sdhwc98pnr/source/Indicator_diffuse.png": "8f474d53d54d9a535d7f910b6d0ebe901787f8fb2b1652f1fd6f1c817c05f2d6",
+    "summit_sdhwc98pnr/source/links.json": "d6f2d8e17e1dca57589f1aee583183035bb2daeebd8518d7f605ac07edc1719b",
+    "summit_sdhwc98pnr/source/official_page.html": "9953399c7c3c027a3de0b7a0b277b6bb35197c19ab7d71936bb218131d0c038b",
+    "summit_sdhwc98pnr/source/official_product.jpg": "078f84d385ca9a2b0f3beb9906ffd02d3036a2a3db7f897e1c3d80afa9a5a9ee",
+    "summit_sdhwc98pnr/source/Panel_Ready_diffuse.png": "c9d1937d565fa9ce741a2d67a0f5c7e1d5282c0a1a92767b680d57ec9bb5c246",
+    "summit_sdhwc98pnr/source/product_sheet.pdf": "423b637f4b0f7fa285c96e0fc2c905e5f85e802824643f5a587475a91f6853ec",
+    "summit_sdhwc98pnr/source/product_sheet.txt": "7092d126c3a31e3e0fba9c800d83b5487fa3e59354c78d8050fd964966ceccd0",
+    "summit_sdhwc98pnr/source/product_sheet_page_1.png": "17963843a3decee9e4ebb6f4851cd8c1807d19c1e320cee3578885925eed6dcd",
+    "summit_sdhwc98pnr/source/product_sheet_page_2.png": "fc9cd959d56986104a127f9034b1ae00431b464fe429b25c1dab8ffdcdf26000",
+    "summit_sdhwc98pnr/source/resource_discovery.json": "df9b91e0be5e82e8cc598c3522d9d4ba22aec0efb9d17acff0b044d2d7860ebf",
+    "summit_sdhwc98pnr/source/Stainless_Steel_diffuse.png": "b43a9466c44f63f1174c0abcdeb56c959a164425f790de1f5b196be1c88a06f2",
+    "summit_sdhwc98pnr/source/White_diffuse.png": "3919fe6ec3a0d735ead0c2362ca0ee0e10fcee2e89e1e071063c5c59dea0722a",
+    "summit_sdhwc98pnr/views/front - 3D View - front.png": "b22571512930297a95aacff19c65e479ab280b8fa8a4798b6b84d010d4571042",
+    "summit_sdhwc98pnr/views/oblique - 3D View - oblique.png": "83cad7216e7c6ff5a718e8fa206367a7441f5229ddf0b079e5ae47084bbfd5aa",
+    "WM4000HBA-DLGX4001B__3292695531945860/NOTES.md": "e7f91af47161cc3e2962ead3a824a54364c80f9b6a989bf864a63741b3f01e0f",
+    "KM_2355_G_CORRECTION_2026-10-01_KM_3054-1_G__6670395252473732/NOTES.md": "59e9fd56326a242c17776d312007f47b427d175d83053ef6fbaaff620450ef75",
+    "I32363RC__7796295159316356/NOTES.md": "944d1d686bd4ac40281c53a85e010ff06592fbc17cb1c31001411c7fb9ecbc89",
+    "GFW550SSNWW__8923394272198532/NOTES.md": "68ec92d7943b03c6b5adb0f9249ac63487b1ea12dbe54980488b6f24ff811bf9",
+    "GFV55ESSNWW_CORRECTION_2026-10-01_GFD55GSSNWW_gas_dryer_per_final_7_7_26_Novak_P__5407997394747268/NOTES.md": "2db848f2c8ac6b514f6f0a46bf9cf86569415f5d4995fd12175ea2dd01cde785",
+    "WM4000HBA-DLGX4001B__4443914724376452/NOTES.md": "d759e22b0710a5e3f09fa621f7c323a7b2b9895704bfb3763010f290ff903fdc",
+    "KM_2355_G_CORRECTION_2026-10-01_KM_3054-1_G__7831772394487684/NOTES.md": "6998f3fe9fa57f89632afcfb860f021f3ef2a7323fba9511a9977ad67a220e31",
+    "I32363RC__162646177939332/NOTES.md": "aefa02760dfcb16641ca44c6ee5980d5c4ef4625b7bf4e31912caa897ef350c0",
+    "24_Inch_Wide_Built-In_Dual_Zone_Wine_Cellar_With_18_Inch_Shallow_Depth_Stainless__6521680267116420/NOTES.md": "57fbc166f904fc4dcddcd04206f05cb8e9fdb07a9d69bf9d032a612498721ee2",
+    "Thermador_18_Inch_Wide_Built_In_Wine_Fridge__2705397813673860/NOTES.md": "93a902a9df264f8ed4c600407588e8e561e90648cea7ba3aa7ca6dbefe0f6e65",
+    "Thermador_30_Inch_Wide_Electric_Warming_Drawer_with_SoftClose__6703228487401348/NOTES.md": "a196dc5aff7b2413535fdcee8e5a15935a59bab9cda5ee71569653806bdaff52",
+    "Thermador_Professional_Series_30_Inch_Wide_1.6_Cu._Ft._Single_Electric_Speed_Ove__2018080639745924/NOTES.md": "066dafb6f3f133ee1a63654597b58998d5ba0bebb081d2d980f79cdb4cbd2d35",
+    "Thermador_Professional_Series_30_Inch_Wide_6.1_Cu._Ft._Double_Electric_Oven_with__7647580173959044/NOTES.md": "6f1975b746a8874030fa1a080bec4ee870fd86b246a5d1548fc9c9a1f8bd9d63",
+    "Zephyr_Monsoon_Mini_II_290_-_600_CFM_47_Inch_Wide_Insert_Range_Hood_with_LumiLig__4451428673716100/NOTES.md": "eaa5a40346fc9897e966b16964c34e982c107d9584f5a5b937c86c00e5a4c3e7"
+  },
+  "original_manifest": {
+    "generated_utc": "2026-10-02T14:36:37.480895+00:00",
+    "inventory_rows": 27,
+    "unique_models": 21,
+    "status_counts": {
+      "BUILT_WITH_LIMITATIONS": 9,
+      "DOWNLOADED": 18
+    },
+    "native_saved_reopened_placed": 21,
+    "full_dimension_pass_models": [
+      "lg_wm4000hba",
+      "lg_dlgx4001b",
+      "ge_gfw550ssnww",
+      "ge_gfd55gssnww",
+      "summit_sdhwc98pnr"
+    ],
+    "body_dimension_pass_models": [
+      "miele_km3054_1g",
+      "tradewind_i32363rc"
+    ],
+    "dimension_hold_models": [
+      "miele_h7280bp",
+      "miele_h7270bm",
+      "miele_g5051scvi",
+      "miele_kwt6722is",
+      "miele_kwtus7172f",
+      "miele_kfmc3858fd",
+      "thermador_t18iw905sp",
+      "thermador_t42it100np",
+      "thermador_t24ur905rp",
+      "thermador_mc30wp",
+      "thermador_podmc301w",
+      "thermador_pcg486wd",
+      "thermador_prd48wisgu",
+      "thermador_wd30w"
+    ],
+    "identity_hold_row_ids": [
+      4451428673716100,
+      6703228487401348,
+      7647580173959044
+    ],
+    "delivery_ready": false,
+    "rows": [
+      {
+        "row_id": 3292695531945860,
+        "item": "LG 27 Inch Wide 4.5 Cu. Ft. Front Load Washer and 7.4 Cu. Ft. Front Load Gas Dryer Laundry Pair with ColdWash and TrueSteam",
+        "model_slugs": [
+          "lg_wm4000hba",
+          "lg_dlgx4001b"
+        ],
+        "status": "BUILT_WITH_LIMITATIONS",
+        "agent_ignore": false,
+        "rfa_paths": [
+          "lg_wm4000hba/lg_wm4000hba_R2025.rfa",
+          "lg_dlgx4001b/lg_dlgx4001b_R2025.rfa"
+        ],
+        "gate_results": [
+          "WM4000HBA: open/save/reopen/category/place/preview PASS; fit PASS (overall); material 5/5; warnings 0",
+          "DLGX4001B: open/save/reopen/category/place/preview PASS; fit PASS (overall); material 5/5; warnings 0"
+        ],
+        "note": "One row is a washer/dryer pair: both separate native families are provided. Black Steel follows the B model suffix.",
+        "identity_hold": false,
+        "notes_path": "WM4000HBA-DLGX4001B__3292695531945860/NOTES.md"
+      },
+      {
+        "row_id": 7384660666023812,
+        "item": "Miele 22\" Built-In Panel Ready Wine Column",
+        "model_slugs": [
+          "miele_kwt6722is"
+        ],
+        "status": "DOWNLOADED",
+        "agent_ignore": false,
+        "rfa_paths": [
+          "miele_kwt6722is/miele_kwt6722is_R2025.rfa"
+        ],
+        "gate_results": [
+          "KWT 6722 iS: open/save/reopen/category/place/preview PASS; fit HOLD (full native geometry versus published appliance envelope); material 0/0; warnings 0"
+        ],
+        "note": "Exact specified or linked model retained; see canonical notes for measured fit and finish limits.",
+        "identity_hold": false,
+        "notes_path": "KWT_6722_iS__7384660666023812/NOTES.md"
+      },
+      {
+        "row_id": 3328172767117188,
+        "item": "Miele 24\" ADA Panel Ready Dishwasher",
+        "model_slugs": [
+          "miele_g5051scvi"
+        ],
+        "status": "DOWNLOADED",
+        "agent_ignore": false,
+        "rfa_paths": [
+          "miele_g5051scvi/miele_g5051scvi_R2025.rfa"
+        ],
+        "gate_results": [
+          "G 5051 SCVi ADA: open/save/reopen/category/place/preview PASS; fit HOLD (full native geometry versus published appliance envelope); material 0/0; warnings 0"
+        ],
+        "note": "Exact specified or linked model retained; see canonical notes for measured fit and finish limits.",
+        "identity_hold": false,
+        "notes_path": "G_5051_SCVi_ADA__3328172767117188/NOTES.md"
+      },
+      {
+        "row_id": 4418595438788484,
+        "item": "Miele 30\" Convection Wall Oven Black",
+        "model_slugs": [
+          "miele_h7280bp"
+        ],
+        "status": "DOWNLOADED",
+        "agent_ignore": false,
+        "rfa_paths": [
+          "miele_h7280bp/miele_h7280bp_R2025.rfa"
+        ],
+        "gate_results": [
+          "H 7280 BP: open/save/reopen/category/place/preview PASS; fit HOLD (full native geometry versus published appliance envelope); material 0/0; warnings 0"
+        ],
+        "note": "Exact specified or linked model retained; see canonical notes for measured fit and finish limits.",
+        "identity_hold": false,
+        "notes_path": "H_7280_BP__4418595438788484/NOTES.md"
+      },
+      {
+        "row_id": 8816514970877828,
+        "item": "Miele 30\" Wall Speed Oven and Microwave Black",
+        "model_slugs": [
+          "miele_h7270bm"
+        ],
+        "status": "DOWNLOADED",
+        "agent_ignore": false,
+        "rfa_paths": [
+          "miele_h7270bm/miele_h7270bm_R2025.rfa"
+        ],
+        "gate_results": [
+          "H 7270 BM: open/save/reopen/category/place/preview PASS; fit HOLD (full native geometry versus published appliance envelope); material 0/0; warnings 0"
+        ],
+        "note": "Exact specified or linked model retained; see canonical notes for measured fit and finish limits.",
+        "identity_hold": false,
+        "notes_path": "H_7270_BM__8816514970877828/NOTES.md"
+      },
+      {
+        "row_id": 6670395252473732,
+        "item": "Miele 36\" Glass 5 Burner Cook Top | CORRECTION 2026-10-01: current Wieland fixture deck specifies Miele KM 3054-1 G Gas-on-Glass Cooktop; live $2,511 price originated from ABT's KM 3054-1 G option.",
+        "model_slugs": [
+          "miele_km3054_1g"
+        ],
+        "status": "BUILT_WITH_LIMITATIONS",
+        "agent_ignore": false,
+        "rfa_paths": [
+          "miele_km3054_1g/miele_km3054_1g_R2025.rfa"
+        ],
+        "gate_results": [
+          "KM 3054-1 G: open/save/reopen/category/place/preview PASS; fit PASS (body); material 3/3; warnings 0"
+        ],
+        "note": "The supplied correction KM 3054-1 G governs the older KM2355G row wording.",
+        "identity_hold": false,
+        "notes_path": "KM_2355_G_CORRECTION_2026-10-01_KM_3054-1_G__6670395252473732/NOTES.md"
+      },
+      {
+        "row_id": 2166795625103236,
+        "item": "Miele 42\" Built-In Panel Ready Fridge with Ice Drawer and Pull Out Bottom Freezer",
+        "model_slugs": [
+          "miele_kfmc3858fd"
+        ],
+        "status": "DOWNLOADED",
+        "agent_ignore": false,
+        "rfa_paths": [
+          "miele_kfmc3858fd/miele_kfmc3858fd_R2025.rfa"
+        ],
+        "gate_results": [
+          "KFMC 3858 FD: open/save/reopen/category/place/preview PASS; fit HOLD (full native geometry versus published appliance envelope); material 0/0; warnings 0"
+        ],
+        "note": "Exact specified or linked model retained; see canonical notes for measured fit and finish limits.",
+        "identity_hold": false,
+        "notes_path": "KFMC_3858_FD__2166795625103236/NOTES.md"
+      },
+      {
+        "row_id": 7796295159316356,
+        "item": "Trade-Wind I3200 Series 390 CFM 36 Inch Wide Range Hood Insert with 3 Fan Speeds and Remote Control",
+        "model_slugs": [
+          "tradewind_i32363rc"
+        ],
+        "status": "BUILT_WITH_LIMITATIONS",
+        "agent_ignore": false,
+        "rfa_paths": [
+          "tradewind_i32363rc/tradewind_i32363rc_R2025.rfa"
+        ],
+        "gate_results": [
+          "I32363RC: open/save/reopen/category/place/preview PASS; fit PASS (body); material 3/3; warnings 0"
+        ],
+        "note": "The explicit Trade-Wind I32363RC model governs the conflicting Zephyr vendor/description text.",
+        "identity_hold": false,
+        "notes_path": "I32363RC__7796295159316356/NOTES.md"
+      },
+      {
+        "row_id": 8923394272198532,
+        "item": "GE 28 Inch Wide 4.8 Cu Ft. Front Loading Washing Machines Washer with UltraFresh Vent System with OdorBlock and Sanitize",
+        "model_slugs": [
+          "ge_gfw550ssnww"
+        ],
+        "status": "BUILT_WITH_LIMITATIONS",
+        "agent_ignore": false,
+        "rfa_paths": [
+          "ge_gfw550ssnww/ge_gfw550ssnww_R2025.rfa"
+        ],
+        "gate_results": [
+          "GFW550SSNWW: open/save/reopen/category/place/preview PASS; fit PASS (overall); material 5/5; warnings 0"
+        ],
+        "note": "Exact specified or linked model retained; see canonical notes for measured fit and finish limits.",
+        "identity_hold": false,
+        "notes_path": "GFW550SSNWW__8923394272198532/NOTES.md"
+      },
+      {
+        "row_id": 5407997394747268,
+        "item": "GE Long Vent 7.8 cu. ft. Capacity Smart Electric Dryer with Sanitize Cycle + GE 28 Inch Wide 4.8 Cu Ft. Front Loading Washing Machine | CORRECTION 2026-10-01: Final project appliance email requires GAS dryers; Novak & Parker 7/7/26 package specifies GE GFD55GSSNWW gas dryer with GFW550SSNWW washer.",
+        "model_slugs": [
+          "ge_gfd55gssnww"
+        ],
+        "status": "BUILT_WITH_LIMITATIONS",
+        "agent_ignore": false,
+        "rfa_paths": [
+          "ge_gfd55gssnww/ge_gfd55gssnww_R2025.rfa"
+        ],
+        "gate_results": [
+          "GFD55GSSNWW: open/save/reopen/category/place/preview PASS; fit PASS (overall); material 5/5; warnings 0"
+        ],
+        "note": "The supplied correction GFD55GSSNWW gas dryer governs the obsolete electric-model wording.",
+        "identity_hold": false,
+        "notes_path": "GFV55ESSNWW_CORRECTION_2026-10-01_GFD55GSSNWW_gas_dryer_per_final_7_7_26_Novak_P__5407997394747268/NOTES.md"
+      },
+      {
+        "row_id": 4443914724376452,
+        "item": "LG 27 Inch Wide 5 Cu. Ft. Front Load Washer and 7.4 Cu. Ft. Front Load Gas Dryer Laundry Pair with TurboWash 360",
+        "model_slugs": [
+          "lg_wm4000hba",
+          "lg_dlgx4001b"
+        ],
+        "status": "BUILT_WITH_LIMITATIONS",
+        "agent_ignore": false,
+        "rfa_paths": [
+          "lg_wm4000hba/lg_wm4000hba_R2025.rfa",
+          "lg_dlgx4001b/lg_dlgx4001b_R2025.rfa"
+        ],
+        "gate_results": [
+          "WM4000HBA: open/save/reopen/category/place/preview PASS; fit PASS (overall); material 5/5; warnings 0",
+          "DLGX4001B: open/save/reopen/category/place/preview PASS; fit PASS (overall); material 5/5; warnings 0"
+        ],
+        "note": "One row is a washer/dryer pair. The stated WM4000HBA model controls the conflicting 5.0-cu-ft wording; no alternate washer was substituted.",
+        "identity_hold": false,
+        "notes_path": "WM4000HBA-DLGX4001B__4443914724376452/NOTES.md"
+      },
+      {
+        "row_id": 904397767376772,
+        "item": "Miele 24\" ADA Panel Ready Dishwasher",
+        "model_slugs": [
+          "miele_g5051scvi"
+        ],
+        "status": "DOWNLOADED",
+        "agent_ignore": false,
+        "rfa_paths": [
+          "miele_g5051scvi/miele_g5051scvi_R2025.rfa"
+        ],
+        "gate_results": [
+          "G 5051 SCVi ADA: open/save/reopen/category/place/preview PASS; fit HOLD (full native geometry versus published appliance envelope); material 0/0; warnings 0"
+        ],
+        "note": "Exact specified or linked model retained; see canonical notes for measured fit and finish limits.",
+        "identity_hold": false,
+        "notes_path": "G_5051_SCVi_ADA__904397767376772/NOTES.md"
+      },
+      {
+        "row_id": 4666245805309828,
+        "item": "Miele 24\" Under Counter Bev. Cooler",
+        "model_slugs": [
+          "miele_kwtus7172f"
+        ],
+        "status": "DOWNLOADED",
+        "agent_ignore": false,
+        "rfa_paths": [
+          "miele_kwtus7172f/miele_kwtus7172f_R2025.rfa"
+        ],
+        "gate_results": [
+          "KWTUS 7172 F: open/save/reopen/category/place/preview PASS; fit HOLD (full native geometry versus published appliance envelope); material 0/0; warnings 0"
+        ],
+        "note": "Exact specified or linked model retained; see canonical notes for measured fit and finish limits.",
+        "identity_hold": false,
+        "notes_path": "KWTUS7172F__4666245805309828/NOTES.md"
+      },
+      {
+        "row_id": 3025963735121796,
+        "item": "Miele 30\" Convection Wall Oven Obsidian Black",
+        "model_slugs": [
+          "miele_h7280bp"
+        ],
+        "status": "DOWNLOADED",
+        "agent_ignore": false,
+        "rfa_paths": [
+          "miele_h7280bp/miele_h7280bp_R2025.rfa"
+        ],
+        "gate_results": [
+          "H 7280 BP: open/save/reopen/category/place/preview PASS; fit HOLD (full native geometry versus published appliance envelope); material 0/0; warnings 0"
+        ],
+        "note": "Exact specified or linked model retained; see canonical notes for measured fit and finish limits.",
+        "identity_hold": false,
+        "notes_path": "H_7280_BP__3025963735121796/NOTES.md"
+      },
+      {
+        "row_id": 6403663455649668,
+        "item": "Miele 30\" Wall Speed Oven and Microwave Obsidian Black",
+        "model_slugs": [
+          "miele_h7270bm"
+        ],
+        "status": "DOWNLOADED",
+        "agent_ignore": false,
+        "rfa_paths": [
+          "miele_h7270bm/miele_h7270bm_R2025.rfa"
+        ],
+        "gate_results": [
+          "H 7270 BM: open/save/reopen/category/place/preview PASS; fit HOLD (full native geometry versus published appliance envelope); material 0/0; warnings 0"
+        ],
+        "note": "Exact specified or linked model retained; see canonical notes for measured fit and finish limits.",
+        "identity_hold": false,
+        "notes_path": "H_7270_BM__6403663455649668/NOTES.md"
+      },
+      {
+        "row_id": 7831772394487684,
+        "item": "Miele 36\" Glass 5 Burner Cook Top | CORRECTION 2026-10-01: current Wieland fixture deck specifies Miele KM 3054-1 G Gas-on-Glass Cooktop; live $2,511 price originated from ABT's KM 3054-1 G option.",
+        "model_slugs": [
+          "miele_km3054_1g"
+        ],
+        "status": "BUILT_WITH_LIMITATIONS",
+        "agent_ignore": false,
+        "rfa_paths": [
+          "miele_km3054_1g/miele_km3054_1g_R2025.rfa"
+        ],
+        "gate_results": [
+          "KM 3054-1 G: open/save/reopen/category/place/preview PASS; fit PASS (body); material 3/3; warnings 0"
+        ],
+        "note": "The supplied correction KM 3054-1 G governs the older KM2355G row wording.",
+        "identity_hold": false,
+        "notes_path": "KM_2355_G_CORRECTION_2026-10-01_KM_3054-1_G__7831772394487684/NOTES.md"
+      },
+      {
+        "row_id": 1900063828279172,
+        "item": "Miele 42\" Built-In Panel Ready Fridge with Ice Drawer and Pull Out Bottom Freezer",
+        "model_slugs": [
+          "miele_kfmc3858fd"
+        ],
+        "status": "DOWNLOADED",
+        "agent_ignore": false,
+        "rfa_paths": [
+          "miele_kfmc3858fd/miele_kfmc3858fd_R2025.rfa"
+        ],
+        "gate_results": [
+          "KFMC 3858 FD: open/save/reopen/category/place/preview PASS; fit HOLD (full native geometry versus published appliance envelope); material 0/0; warnings 0"
+        ],
+        "note": "Exact specified or linked model retained; see canonical notes for measured fit and finish limits.",
+        "identity_hold": false,
+        "notes_path": "KFMC_3858_FD__1900063828279172/NOTES.md"
+      },
+      {
+        "row_id": 162646177939332,
+        "item": "Trade-Wind I3200 Series 390 CFM 36 Inch Wide Range Hood Insert with 3 Fan Speeds and Remote Control",
+        "model_slugs": [
+          "tradewind_i32363rc"
+        ],
+        "status": "BUILT_WITH_LIMITATIONS",
+        "agent_ignore": false,
+        "rfa_paths": [
+          "tradewind_i32363rc/tradewind_i32363rc_R2025.rfa"
+        ],
+        "gate_results": [
+          "I32363RC: open/save/reopen/category/place/preview PASS; fit PASS (body); material 3/3; warnings 0"
+        ],
+        "note": "The explicit Trade-Wind I32363RC model governs the conflicting Zephyr vendor/description text.",
+        "identity_hold": false,
+        "notes_path": "I32363RC__162646177939332/NOTES.md"
+      },
+      {
+        "row_id": 6521680267116420,
+        "item": "24 Inch Wide Built-In Dual Zone Wine Cellar With 18 Inch Shallow Depth, Stainless Steel Interior, Lock And Digital Controls: Panel Ready, Right Hinge",
+        "model_slugs": [
+          "summit_sdhwc98pnr"
+        ],
+        "status": "BUILT_WITH_LIMITATIONS",
+        "agent_ignore": true,
+        "rfa_paths": [
+          "summit_sdhwc98pnr/summit_sdhwc98pnr_R2025.rfa"
+        ],
+        "gate_results": [
+          "SDHWC98PNR: open/save/reopen/category/place/preview PASS; fit PASS (overall); material 5/5; warnings 0"
+        ],
+        "note": "Exact specified or linked model retained; see canonical notes for measured fit and finish limits.",
+        "identity_hold": false,
+        "notes_path": "24_Inch_Wide_Built-In_Dual_Zone_Wine_Cellar_With_18_Inch_Shallow_Depth_Stainless__6521680267116420/NOTES.md"
+      },
+      {
+        "row_id": 2705397813673860,
+        "item": "Thermador 18 Inch Wide Built In Wine Fridge",
+        "model_slugs": [
+          "thermador_t18iw905sp"
+        ],
+        "status": "DOWNLOADED",
+        "agent_ignore": true,
+        "rfa_paths": [
+          "thermador_t18iw905sp/thermador_t18iw905sp_R2025.rfa"
+        ],
+        "gate_results": [
+          "T18IW905SP: open/save/reopen/category/place/preview PASS; fit HOLD (full native geometry versus published appliance envelope); material 4/5; warnings 0"
+        ],
+        "note": "ASSUMPTION: abbreviated T18IW905S link resolves to the official panel-ready T18IW905SP model. The full suffix is a working selection requiring design confirmation.",
+        "identity_hold": false,
+        "notes_path": "Thermador_18_Inch_Wide_Built_In_Wine_Fridge__2705397813673860/NOTES.md"
+      },
+      {
+        "row_id": 6703228487401348,
+        "item": "Thermador 30 Inch Wide Electric Warming Drawer with SoftClose\u00ae",
+        "model_slugs": [
+          "thermador_t24ur905rp"
+        ],
+        "status": "DOWNLOADED",
+        "agent_ignore": true,
+        "rfa_paths": [
+          "thermador_t24ur905rp/thermador_t24ur905rp_R2025.rfa"
+        ],
+        "gate_results": [
+          "T24UR905RP: open/save/reopen/category/place/preview PASS; fit HOLD (full native geometry versus published appliance envelope); material 0/2; warnings 0"
+        ],
+        "note": "ASSUMPTION / IDENTITY HOLD: the exact T24UR905RP product URL governs the working family. It is a 24-inch undercounter refrigerator; the row says 30-inch warming drawer. These are different appliances.",
+        "identity_hold": true,
+        "notes_path": "Thermador_30_Inch_Wide_Electric_Warming_Drawer_with_SoftClose__6703228487401348/NOTES.md"
+      },
+      {
+        "row_id": 7829128394243972,
+        "item": "Thermador Freedom 42 Inch Wide 23.1 Cu. Ft. Energy Star Certified Panel Ready French Door Refrigerator with ThermaFresh\u00ae Pro",
+        "model_slugs": [
+          "thermador_t42it100np"
+        ],
+        "status": "DOWNLOADED",
+        "agent_ignore": true,
+        "rfa_paths": [
+          "thermador_t42it100np/thermador_t42it100np_R2025.rfa"
+        ],
+        "gate_results": [
+          "T42IT100NP: open/save/reopen/category/place/preview PASS; fit HOLD (full native geometry versus published appliance envelope); material 0/2; warnings 0"
+        ],
+        "note": "Exact specified or linked model retained; see canonical notes for measured fit and finish limits.",
+        "identity_hold": false,
+        "notes_path": "Thermador_Freedom_42_Inch_Wide_23.1_Cu._Ft._Energy_Star_Certified_Panel_Ready_Fr__7829128394243972/NOTES.md"
+      },
+      {
+        "row_id": 2018080639745924,
+        "item": "Thermador Professional Series 30 Inch Wide 1.6 Cu. Ft. Single Electric Speed Oven",
+        "model_slugs": [
+          "thermador_mc30wp"
+        ],
+        "status": "DOWNLOADED",
+        "agent_ignore": true,
+        "rfa_paths": [
+          "thermador_mc30wp/thermador_mc30wp_R2025.rfa"
+        ],
+        "gate_results": [
+          "MC30WP: open/save/reopen/category/place/preview PASS; fit HOLD (full native geometry versus published appliance envelope); material 6/6; warnings 0"
+        ],
+        "note": "ASSUMPTION: MC30WP is the manufacturer Professional-series 30-inch 1.6-cu-ft speed oven matching the description. The row has no exact SKU or URL.",
+        "identity_hold": false,
+        "notes_path": "Thermador_Professional_Series_30_Inch_Wide_1.6_Cu._Ft._Single_Electric_Speed_Ove__2018080639745924/NOTES.md"
+      },
+      {
+        "row_id": 2199628860030852,
+        "item": "Thermador Professional Series 30 Inch Wide 6.1 Cu. Ft. Combination Electric Oven with Speed Oven",
+        "model_slugs": [
+          "thermador_podmc301w"
+        ],
+        "status": "DOWNLOADED",
+        "agent_ignore": true,
+        "rfa_paths": [
+          "thermador_podmc301w/thermador_podmc301w_R2025.rfa"
+        ],
+        "gate_results": [
+          "PODMC301W: open/save/reopen/category/place/preview PASS; fit HOLD (full native geometry versus published appliance envelope); material 4/4; warnings 1"
+        ],
+        "note": "Exact specified or linked model retained; see canonical notes for measured fit and finish limits.",
+        "identity_hold": false,
+        "notes_path": "Thermador_Professional_Series_30_Inch_Wide_6.1_Cu._Ft._Combination_Electric_Oven__2199628860030852/NOTES.md"
+      },
+      {
+        "row_id": 7647580173959044,
+        "item": "Thermador Professional Series 30 Inch Wide 6.1 Cu. Ft. Double Electric Oven with 1.6 Cu. Ft. Triple Speed Oven",
+        "model_slugs": [
+          "thermador_prd48wisgu"
+        ],
+        "status": "DOWNLOADED",
+        "agent_ignore": true,
+        "rfa_paths": [
+          "thermador_prd48wisgu/thermador_prd48wisgu_R2025.rfa"
+        ],
+        "gate_results": [
+          "PRD48WISGU: open/save/reopen/category/place/preview PASS; fit HOLD (full native geometry versus published appliance envelope); material 6/6; warnings 0"
+        ],
+        "note": "ASSUMPTION / IDENTITY HOLD: exact URL model PRD48WISGU governs the working family. It is a 48-inch range with steam and induction; the row describes a 30-inch double/triple oven.",
+        "identity_hold": true,
+        "notes_path": "Thermador_Professional_Series_30_Inch_Wide_6.1_Cu._Ft._Double_Electric_Oven_with__7647580173959044/NOTES.md"
+      },
+      {
+        "row_id": 8955028301086596,
+        "item": "Thermador Professional Series 48 Inch Wide 6 Burner Gas Rangetop with Griddle",
+        "model_slugs": [
+          "thermador_pcg486wd"
+        ],
+        "status": "DOWNLOADED",
+        "agent_ignore": true,
+        "rfa_paths": [
+          "thermador_pcg486wd/thermador_pcg486wd_R2025.rfa"
+        ],
+        "gate_results": [
+          "PCG486WD: open/save/reopen/category/place/preview PASS; fit HOLD (full native geometry versus published appliance envelope); material 3/3; warnings 0"
+        ],
+        "note": "Exact specified or linked model retained; see canonical notes for measured fit and finish limits.",
+        "identity_hold": false,
+        "notes_path": "Thermador_Professional_Series_48_Inch_Wide_6_Burner_Gas_Rangetop_with_Griddle__8955028301086596/NOTES.md"
+      },
+      {
+        "row_id": 4451428673716100,
+        "item": "Zephyr Monsoon Mini II 290 - 600 CFM 47 Inch Wide Insert Range Hood with LumiLight LED Lighting",
+        "model_slugs": [
+          "thermador_wd30w"
+        ],
+        "status": "DOWNLOADED",
+        "agent_ignore": true,
+        "rfa_paths": [
+          "thermador_wd30w/thermador_wd30w_R2025.rfa"
+        ],
+        "gate_results": [
+          "WD30W: open/save/reopen/category/place/preview PASS; fit HOLD (full native geometry versus published appliance envelope); material 2/2; warnings 0"
+        ],
+        "note": "ASSUMPTION / IDENTITY HOLD: exact URL and manufacturer indicate Thermador WD30W warming drawer; the row description instead identifies a Zephyr 47-inch hood. The family is explicitly WD30W, not a hood.",
+        "identity_hold": true,
+        "notes_path": "Zephyr_Monsoon_Mini_II_290_-_600_CFM_47_Inch_Wide_Insert_Range_Hood_with_LumiLig__4451428673716100/NOTES.md"
+      }
+    ],
+    "canonical_models": [
+      {
+        "model": "H 7280 BP",
+        "slug": "miele_h7280bp",
+        "status": "DOWNLOADED",
+        "rfa": "miele_h7280bp/miele_h7280bp_R2025.rfa",
+        "rfa_bytes": 4038656,
+        "rfa_sha256": "8ee511e3f74f0c28239cc513154e56fb8a5a1868dfad5a52637a0f95ccf196ea",
+        "row_ids": [
+          4418595438788484,
+          3025963735121796
+        ],
+        "source_urls": [
+          "https://www.mieleusa.com/product/11968200/30-inch-convection-oven-h-7280-bp-obsidian-black",
+          "https://media.miele.com/downloads/1d/33/01_C7F12828C0C31FE182DC54A63F5A1D33.zip",
+          "https://media.miele.com/downloads/n-/us/FS_11968200_USE_US-en-US.pdf",
+          "https://www.mieleusa.com/product/11968200/30-oven-h-7280-bp-obsidian-black"
+        ],
+        "original_rfas": [
+          {
+            "path": "miele_h7280bp/source/original/11968200_USA_H7280BP_OBSW.rfa",
+            "sha256": "8dac625d202af0daf8892a50eec4d104f7fa0b4df798f9cc5979e0613e17f655"
+          }
+        ],
+        "validation": "miele_h7280bp/validation.json",
+        "previews": [
+          "miele_h7280bp/views/placed_oblique - 3D View - placed_oblique.png"
+        ]
+      },
+      {
+        "model": "H 7270 BM",
+        "slug": "miele_h7270bm",
+        "status": "DOWNLOADED",
+        "rfa": "miele_h7270bm/miele_h7270bm_R2025.rfa",
+        "rfa_bytes": 4042752,
+        "rfa_sha256": "4f9956271a11bf762ba499664915314ce8b19d790dd946eaf7e8a36ea5f50ac7",
+        "row_ids": [
+          8816514970877828,
+          6403663455649668
+        ],
+        "source_urls": [
+          "https://www.mieleusa.com/product/11968190/30-speed-oven-h-7270-bm-obsidian-black",
+          "https://media.miele.com/downloads/8b/20/02_C7F138387FFA1FD189C793AEE9B58B20.zip",
+          "https://media.miele.com/downloads/n-/us/FS_11968190_USE_US-en-US.pdf"
+        ],
+        "original_rfas": [
+          {
+            "path": "miele_h7270bm/source/original/11968190_USA_H7270BM_OBSW.rfa",
+            "sha256": "d1e3464c547fdfa518b151ab4c8f25fdacd57d926d4cf9d9ab6e90881af76769"
+          }
+        ],
+        "validation": "miele_h7270bm/validation.json",
+        "previews": [
+          "miele_h7270bm/views/placed_oblique - 3D View - placed_oblique.png"
+        ]
+      },
+      {
+        "model": "G 5051 SCVi ADA",
+        "slug": "miele_g5051scvi",
+        "status": "DOWNLOADED",
+        "rfa": "miele_g5051scvi/miele_g5051scvi_R2025.rfa",
+        "rfa_bytes": 6287360,
+        "rfa_sha256": "27391211e2833b4185affafe8f8bf49126ed9e20b216479b254294c4227ba10f",
+        "row_ids": [
+          3328172767117188,
+          904397767376772
+        ],
+        "source_urls": [
+          "https://www.mieleusa.com/product/11636710/fully-integrated-ada-dishwasher-g-5051-scvi-active-stainless-steel",
+          "https://media.miele.com/downloads/a5/52/10_70A8A51285B71FE1ABFC9D443DCBA552.zip",
+          "https://media.miele.com/downloads/n-/us/FS_11636710_USE_US-en-US.pdf",
+          "https://www.mieleusa.com/product/11636710/fully-integrated-dishwasher-g-5051-scvi-active-stainless-steel"
+        ],
+        "original_rfas": [
+          {
+            "path": "miele_g5051scvi/source/original/11636710_USA_G5051SCVi_ED.rfa",
+            "sha256": "e1a4d3c5cf00f4c4b942ac69ad30a98d3bc778cbb678cc65144a2ac4e78073fc"
+          }
+        ],
+        "validation": "miele_g5051scvi/validation.json",
+        "previews": [
+          "miele_g5051scvi/views/placed_oblique - 3D View - placed_oblique.png"
+        ]
+      },
+      {
+        "model": "KWT 6722 iS",
+        "slug": "miele_kwt6722is",
+        "status": "DOWNLOADED",
+        "rfa": "miele_kwt6722is/miele_kwt6722is_R2025.rfa",
+        "rfa_bytes": 5189632,
+        "rfa_sha256": "b6d424fe8d51979c0b5f753df9e4485767182ab63fa86aba7f7677e7bd500318",
+        "row_ids": [
+          7384660666023812
+        ],
+        "source_urls": [
+          "https://www.mieleusa.com/product/11329860/24-built-in-wine-refrigerator-kwt-6722-is",
+          "https://media.miele.com/downloads/a5/52/05_70A8A51285B71FE1ABFA89BF1ABCA552.zip",
+          "https://media.miele.com/downloads/n-/us/FS_11329860_USE_US-en-US.pdf"
+        ],
+        "original_rfas": [
+          {
+            "path": "miele_kwt6722is/source/original/11329860_USA_KWT6722iS.rfa",
+            "sha256": "8ea7195e152445552c46f6e97f72aecafe2ff14be4130a14c520c34e38f1db07"
+          }
+        ],
+        "validation": "miele_kwt6722is/validation.json",
+        "previews": [
+          "miele_kwt6722is/views/placed_oblique - 3D View - placed_oblique.png"
+        ]
+      },
+      {
+        "model": "KWTUS 7172 F",
+        "slug": "miele_kwtus7172f",
+        "status": "DOWNLOADED",
+        "rfa": "miele_kwtus7172f/miele_kwtus7172f_R2025.rfa",
+        "rfa_bytes": 4444160,
+        "rfa_sha256": "19baf18cecc8a74a0cdc28196b8e1d2627a1afc51da2ea294d6d2d18cf95fb24",
+        "row_ids": [
+          4666245805309828
+        ],
+        "source_urls": [
+          "https://www.mieleusa.com/product/12519520/24-built-under-wine-refrigerator-kwtus-7172-f",
+          "https://media.miele.com/downloads/e5/64/05_70A8A51285B71FE1AC82B3099AE9E564.zip",
+          "https://media.miele.com/downloads/n-/us/FS_12519520_USE_US-en-US.pdf"
+        ],
+        "original_rfas": [
+          {
+            "path": "miele_kwtus7172f/source/original/12519520_USA_KWTUS7172F.rfa",
+            "sha256": "aebe0cf31bf17a435e4b4f1a8b10585aad0ff2af14f3de3278810ef597c5953d"
+          }
+        ],
+        "validation": "miele_kwtus7172f/validation.json",
+        "previews": [
+          "miele_kwtus7172f/views/placed_oblique - 3D View - placed_oblique.png"
+        ]
+      },
+      {
+        "model": "KFMC 3858 FD",
+        "slug": "miele_kfmc3858fd",
+        "status": "DOWNLOADED",
+        "rfa": "miele_kfmc3858fd/miele_kfmc3858fd_R2025.rfa",
+        "rfa_bytes": 2310144,
+        "rfa_sha256": "33f4dda96d550daa71c7e359a83bc4c093ad19caa9514a3c80dd3de418f067de",
+        "row_ids": [
+          2166795625103236,
+          1900063828279172
+        ],
+        "source_urls": [
+          "https://www.mieleusa.com/product/12489440/42-mastercool-frenchdoor-bottom-mount-unit-kfmc-3858-fd-compatible-with-furniture-fronts",
+          "https://media.miele.com/downloads/a5/64/03_70A8A51285B71FE1AC8273C8621BA564.zip",
+          "https://media.miele.com/downloads/n-/us/FS_12489440_USE_US-en-US.pdf"
+        ],
+        "original_rfas": [
+          {
+            "path": "miele_kfmc3858fd/source/original/12489440_USA_KFMC3858_FD.rfa",
+            "sha256": "9bb945361ff473e37de530438042435e7a8f70a59cda8e2716c82151d11e781e"
+          }
+        ],
+        "validation": "miele_kfmc3858fd/validation.json",
+        "previews": [
+          "miele_kfmc3858fd/views/placed_oblique - 3D View - placed_oblique.png"
+        ]
+      },
+      {
+        "model": "T18IW905SP",
+        "slug": "thermador_t18iw905sp",
+        "status": "DOWNLOADED",
+        "rfa": "thermador_t18iw905sp/thermador_t18iw905sp_R2025.rfa",
+        "rfa_bytes": 536576,
+        "rfa_sha256": "96d62d335c78b32e40359a88210d9b5c40214a909fa105c5f81f42c89bee3cbd",
+        "row_ids": [
+          2705397813673860
+        ],
+        "source_urls": [
+          "https://www.thermador.com/us/en/mkt-product/refrigeration/wine-refrigeration/T18IW905SP",
+          "https://media3.bsh-group.com/3D_Asset/16603829_T18IW905SP-Thermador-TradeCAD.zip",
+          "https://media3.bsh-group.com/Documents/16173464_T18IW905SP-18-INCH-FLUSH-CUSTOM-WINE-PRESERVATION-COLUMN-Specifications.pdf"
+        ],
+        "original_rfas": [
+          {
+            "path": "thermador_t18iw905sp/source/original/T18IW905SP/T18IW905SP.rfa",
+            "sha256": "8d224a4e8f612b8899573f3888d9cc1343a33b8d2a4ecd684be9cfebd0c548bd"
+          }
+        ],
+        "validation": "thermador_t18iw905sp/validation.json",
+        "previews": [
+          "thermador_t18iw905sp/views/placed_oblique - 3D View - placed_oblique.png"
+        ]
+      },
+      {
+        "model": "T42IT100NP",
+        "slug": "thermador_t42it100np",
+        "status": "DOWNLOADED",
+        "rfa": "thermador_t42it100np/thermador_t42it100np_R2025.rfa",
+        "rfa_bytes": 765952,
+        "rfa_sha256": "41a0d65b3a5640a1b23f6b3e0fc1787e0d60b708caa0cd3a625e85b980ce06f1",
+        "row_ids": [
+          7829128394243972
+        ],
+        "source_urls": [
+          "https://www.thermador.com/us/en/mkt-product/refrigeration/bottom-freezer-refrigerators/T42IT100NP",
+          "https://media3.bsh-group.com/3D_Asset/22537542_T42IT100NP_TradeCADs.zip",
+          "https://media3.bsh-group.com/Documents/25549017_T42IT100NP-42-INCH-BUILT-IN-FRENCH-DOOR_REFRIGERATOR-2-DRAWER-PANEL-READY-Specifications.pdf"
+        ],
+        "original_rfas": [
+          {
+            "path": "thermador_t42it100np/source/original/T42BT110NS_TradeCAD_2D.rfa",
+            "sha256": "589b89df59fad2f6bf02ee2e9c986f19895ea73c0bfa0c90a60ef5aeb5c18647"
+          },
+          {
+            "path": "thermador_t42it100np/source/original/T42IT100NP_TradeCAD.rfa",
+            "sha256": "c883036f8c06768a6e44f2a95cc2e647c8f422352b731a7b350f0ab8f8b30335"
+          }
+        ],
+        "validation": "thermador_t42it100np/validation.json",
+        "previews": [
+          "thermador_t42it100np/views/placed_oblique - 3D View - placed_oblique.png"
+        ]
+      },
+      {
+        "model": "T24UR905RP",
+        "slug": "thermador_t24ur905rp",
+        "status": "DOWNLOADED",
+        "rfa": "thermador_t24ur905rp/thermador_t24ur905rp_R2025.rfa",
+        "rfa_bytes": 479232,
+        "rfa_sha256": "55160dd0481f77c496266aafce0b7967b81cf521bfea1dfe62e8d863447a8d24",
+        "row_ids": [
+          6703228487401348
+        ],
+        "source_urls": [
+          "https://www.thermador.com/us/en/mkt-product/refrigeration/refrigerationrefrigerationcolumns/T24UR905RP",
+          "https://media3.bsh-group.com/3D_Asset/21810566_T24UR905RP_TradeCAD.zip",
+          "https://media3.bsh-group.com/Documents/19472937_T24UR905RP_UNDER_COUNTER_GLASS_DOOR_REFRIGERATOR_CUSTOM_PANEL_RIGHT_HINGED_Specifications.pdf"
+        ],
+        "original_rfas": [
+          {
+            "path": "thermador_t24ur905rp/source/original/T24UR905RP_TradeCAD.rfa",
+            "sha256": "13ee06bf009af46f60c4e71ec82a5bf02ed9c6feddb20850949ad9113299cb7e"
+          },
+          {
+            "path": "thermador_t24ur905rp/source/original/T24UR905RP_TradeCAD_2D.rfa",
+            "sha256": "8aac8a68872f0bcc13805a99aef09a612d6fc3288a27771ddd218677266b47a0"
+          }
+        ],
+        "validation": "thermador_t24ur905rp/validation.json",
+        "previews": [
+          "thermador_t24ur905rp/views/placed_oblique - 3D View - placed_oblique.png"
+        ]
+      },
+      {
+        "model": "MC30WP",
+        "slug": "thermador_mc30wp",
+        "status": "DOWNLOADED",
+        "rfa": "thermador_mc30wp/thermador_mc30wp_R2025.rfa",
+        "rfa_bytes": 548864,
+        "rfa_sha256": "1ef4c23faddae67bf049bd9d27e05410ac714ddfc5e9a04ff0ac924ad3b83816",
+        "row_ids": [
+          2018080639745924
+        ],
+        "source_urls": [
+          "https://www.thermador.com/us/en/mkt-product/ovens/speed-ovens/MC30WP",
+          "https://media3.bsh-group.com/3D_Asset/15803255_MC30WP-Thermador-TradeCAD.zip",
+          "https://media3.bsh-group.com/3D_Asset/29278877_MC30WP_TradeCAD.zip",
+          "https://media3.bsh-group.com/Documents/MCDOC02760739_MC30WP-30-INCH-SPEED-OVEN-PROFESSIONAL-SERIES-Specifications.pdf"
+        ],
+        "original_rfas": [
+          {
+            "path": "thermador_mc30wp/source/original/MC30WP-Thermador-TradeCAD/MC30WP-2D.rfa",
+            "sha256": "41af59f89484d9e5644e971525bf06a9580a4f9391bf567bf8c0ee46d24ed7c3"
+          },
+          {
+            "path": "thermador_mc30wp/source/original/MC30WP-Thermador-TradeCAD/MC30WP-3D.rfa",
+            "sha256": "41af59f89484d9e5644e971525bf06a9580a4f9391bf567bf8c0ee46d24ed7c3"
+          },
+          {
+            "path": "thermador_mc30wp/source/original/MC30WP.rfa",
+            "sha256": "2e5c87062ca820c7c50cff3a60e6009ed45444c18df7d5c2b91c206796bf70ca"
+          },
+          {
+            "path": "thermador_mc30wp/source/original/MC30WP_2D.rfa",
+            "sha256": "c1d0036595d053f4e8562876cfbebf9a6b979f1a06237052fd4dc40c1a66c512"
+          }
+        ],
+        "validation": "thermador_mc30wp/validation.json",
+        "previews": [
+          "thermador_mc30wp/views/placed_oblique - 3D View - placed_oblique.png"
+        ]
+      },
+      {
+        "model": "PODMC301W",
+        "slug": "thermador_podmc301w",
+        "status": "DOWNLOADED",
+        "rfa": "thermador_podmc301w/thermador_podmc301w_R2025.rfa",
+        "rfa_bytes": 638976,
+        "rfa_sha256": "2c5c54e83c38b0cdc2619f61ce089b47df09b5f52bf4f7bcf89ca3585b1f0ae5",
+        "row_ids": [
+          2199628860030852
+        ],
+        "source_urls": [
+          "https://www.thermador.com/us/en/mkt-product/ovens/double-ovens/PODMC301W",
+          "https://media3.bsh-group.com/3D_Asset/15838407_PODMC301W-Thermador-TradeCAD.zip",
+          "https://media3.bsh-group.com/3D_Asset/29273463_PODMC301W_TradeCAD.zip",
+          "https://media3.bsh-group.com/Documents/MCDOC02802507_PODMC301W-30-INCH-DOUBLE-COMBINATION-BUILT-IN-OVEN-WITH-SPEED-OVEN-Specifications.pdf"
+        ],
+        "original_rfas": [
+          {
+            "path": "thermador_podmc301w/source/original/PODMC301W-Thermador-TradeCAD/PODMC301W-2D.rfa",
+            "sha256": "f7d6226ffcfc7c4ceef246e20e492ff5dd845833c24e1087e8b98f19105913ee"
+          },
+          {
+            "path": "thermador_podmc301w/source/original/PODMC301W-Thermador-TradeCAD/PODMC301W-3D.rfa",
+            "sha256": "f7d6226ffcfc7c4ceef246e20e492ff5dd845833c24e1087e8b98f19105913ee"
+          },
+          {
+            "path": "thermador_podmc301w/source/original/PODMC301W.rfa",
+            "sha256": "3f01c6e084dff850d5b16f8c6437bed5e618a9a75a45dd9fc17717330a447c9f"
+          },
+          {
+            "path": "thermador_podmc301w/source/original/PODMC301W_2D.rfa",
+            "sha256": "bd403d9db7df909bc07e50d8cd4856d4730023c3ead4711bbcacdf9c2e4bbcc5"
+          }
+        ],
+        "validation": "thermador_podmc301w/validation.json",
+        "previews": [
+          "thermador_podmc301w/views/placed_oblique - 3D View - placed_oblique.png"
+        ]
+      },
+      {
+        "model": "PCG486WD",
+        "slug": "thermador_pcg486wd",
+        "status": "DOWNLOADED",
+        "rfa": "thermador_pcg486wd/thermador_pcg486wd_R2025.rfa",
+        "rfa_bytes": 872448,
+        "rfa_sha256": "356457f2f43ca992a3c733ae59c551261e8d6ff28701e31d4947a7fc7d78f0aa",
+        "row_ids": [
+          8955028301086596
+        ],
+        "source_urls": [
+          "https://www.thermador.com/us/en/mkt-product/cooktops-rangetops/rangetops/PCG486WD",
+          "https://media3.bsh-group.com/3D_Asset/15802529_PCG486WD-Thermador-TradeCAD.zip",
+          "https://media3.bsh-group.com/3D_Asset/29485643_PCG486WD_TradeCAD.zip",
+          "https://media3.bsh-group.com/Documents/MCDOC02690629_PCG486WD-48-INCH-GAS-RANGETOP-WITH-GRIDDLE-Specifications.pdf"
+        ],
+        "original_rfas": [
+          {
+            "path": "thermador_pcg486wd/source/original/PCG486WD-Thermador-TradeCAD/PCG486WD-2D.rfa",
+            "sha256": "e42658b6954c29fd65d05ad26bd9fa57e9fb88e00833ae129c0f2b2d639a8174"
+          },
+          {
+            "path": "thermador_pcg486wd/source/original/PCG486WD-Thermador-TradeCAD/PCG486WD-3D.rfa",
+            "sha256": "e42658b6954c29fd65d05ad26bd9fa57e9fb88e00833ae129c0f2b2d639a8174"
+          },
+          {
+            "path": "thermador_pcg486wd/source/original/PCG486WD.rfa",
+            "sha256": "c98275858ea0181f8fae1b9bc583840e25cefbe6e222b4e191d2b3b145604ef0"
+          },
+          {
+            "path": "thermador_pcg486wd/source/original/PCG486WD_2D.rfa",
+            "sha256": "0d3b4e25d77eec41aad99be8cfdfcfc4015389e217966e56bc1e1b7c0a1ce42a"
+          }
+        ],
+        "validation": "thermador_pcg486wd/validation.json",
+        "previews": [
+          "thermador_pcg486wd/views/placed_oblique - 3D View - placed_oblique.png"
+        ]
+      },
+      {
+        "model": "PRD48WISGU",
+        "slug": "thermador_prd48wisgu",
+        "status": "DOWNLOADED",
+        "rfa": "thermador_prd48wisgu/thermador_prd48wisgu_R2025.rfa",
+        "rfa_bytes": 1077248,
+        "rfa_sha256": "e4311b255150c9aa0b701fa377a4b09237ba5c93e441d04fe16acc282ef29429",
+        "row_ids": [
+          7647580173959044
+        ],
+        "source_urls": [
+          "https://www.thermador.com/us/en/mkt-product/ranges/48-ranges/PRD48WISGU",
+          "https://media3.bsh-group.com/3D_Asset/15842904_PRD48WISGU-Thermador-TradeCAD.zip",
+          "https://media3.bsh-group.com/3D_Asset/29476114_PRD48WISGU_TradeCAD.zip",
+          "https://media3.bsh-group.com/Documents/MCDOC02915579_PRD48WISGU-48-INCH-DUAL-FUEL-PRO-GRAND-RANGE-WITH-STEAM-AND-INDUCTION-Specifications.pdf"
+        ],
+        "original_rfas": [
+          {
+            "path": "thermador_prd48wisgu/source/original/PRD48WISGU-Thermador-TradeCAD/PRD48WISGU-2D.rfa",
+            "sha256": "200961aef68882594b3cdbb8213f11a8156e6362d07f44a68e97226ad2d7bafe"
+          },
+          {
+            "path": "thermador_prd48wisgu/source/original/PRD48WISGU-Thermador-TradeCAD/PRD48WISGU-3D.rfa",
+            "sha256": "200961aef68882594b3cdbb8213f11a8156e6362d07f44a68e97226ad2d7bafe"
+          },
+          {
+            "path": "thermador_prd48wisgu/source/original/PRD48WISGU.rfa",
+            "sha256": "9b10bb9dcc3da8c232572cb2dff011eec2589b539ec5aec9bf8db6a4c4fc17bd"
+          },
+          {
+            "path": "thermador_prd48wisgu/source/original/PRD48WISGU_2D.rfa",
+            "sha256": "7730ee8a522f41ee8f0330ec3734b366fca91e7ab4cbf584295f8bc139618a52"
+          }
+        ],
+        "validation": "thermador_prd48wisgu/validation.json",
+        "previews": [
+          "thermador_prd48wisgu/views/placed_oblique - 3D View - placed_oblique.png"
+        ]
+      },
+      {
+        "model": "WD30W",
+        "slug": "thermador_wd30w",
+        "status": "DOWNLOADED",
+        "rfa": "thermador_wd30w/thermador_wd30w_R2025.rfa",
+        "rfa_bytes": 462848,
+        "rfa_sha256": "b1a2a7978ac8fe613780eb4be646ae72bf10222c606f9361b1d32b6ab5ba2f80",
+        "row_ids": [
+          4451428673716100
+        ],
+        "source_urls": [
+          "https://www.thermador.com/us/en/mkt-product/ovens/warming-drawers/WD30W",
+          "https://media3.bsh-group.com/3D_Asset/15803179_WD30W-Thermador-TradeCAD.zip",
+          "https://media3.bsh-group.com/Documents/MCDOC02802519_WD30W-30-INCH-CUSTOM-PANEL-WARMING-DRAWER-Specifications.pdf"
+        ],
+        "original_rfas": [
+          {
+            "path": "thermador_wd30w/source/original/WD30W-Thermador-TradeCAD/WD30W-2D.rfa",
+            "sha256": "0f572dd307f34516f23420fd4cae024b1d4a8e1643004675b056fdeccb15e93c"
+          },
+          {
+            "path": "thermador_wd30w/source/original/WD30W-Thermador-TradeCAD/WD30W-3D.rfa",
+            "sha256": "0f572dd307f34516f23420fd4cae024b1d4a8e1643004675b056fdeccb15e93c"
+          }
+        ],
+        "validation": "thermador_wd30w/validation.json",
+        "previews": [
+          "thermador_wd30w/views/placed_oblique - 3D View - placed_oblique.png"
+        ]
+      },
+      {
+        "model": "WM4000HBA",
+        "slug": "lg_wm4000hba",
+        "status": "BUILT_WITH_LIMITATIONS",
+        "rfa": "lg_wm4000hba/lg_wm4000hba_R2025.rfa",
+        "rfa_bytes": 516096,
+        "rfa_sha256": "506f2a58ee6630d16b9049b7041a1c51bd9c29518931bab5832ca09385e68721",
+        "row_ids": [
+          3292695531945860,
+          4443914724376452
+        ],
+        "source_urls": [
+          "https://media.us.lg.com/m/1c4e8c8e7a284ef2/original/WM4000H_A-LG-Builder-Spec-Sheet.pdf"
+        ],
+        "original_rfas": [],
+        "validation": "lg_wm4000hba/validation.json",
+        "previews": [
+          "lg_wm4000hba/views/oblique - 3D View - oblique.png",
+          "lg_wm4000hba/views/front - 3D View - front.png"
+        ]
+      },
+      {
+        "model": "DLGX4001B",
+        "slug": "lg_dlgx4001b",
+        "status": "BUILT_WITH_LIMITATIONS",
+        "rfa": "lg_dlgx4001b/lg_dlgx4001b_R2025.rfa",
+        "rfa_bytes": 507904,
+        "rfa_sha256": "17406675cb26e611a8150e987985228ec68f1bf1abfc3ea11f5235d29420f911",
+        "row_ids": [
+          3292695531945860,
+          4443914724376452
+        ],
+        "source_urls": [
+          "https://content.abt.com/documents/129668/SpecificationSheet-DLXX400X-1.pdf"
+        ],
+        "original_rfas": [],
+        "validation": "lg_dlgx4001b/validation.json",
+        "previews": [
+          "lg_dlgx4001b/views/oblique - 3D View - oblique.png",
+          "lg_dlgx4001b/views/front - 3D View - front.png"
+        ]
+      },
+      {
+        "model": "GFW550SSNWW",
+        "slug": "ge_gfw550ssnww",
+        "status": "BUILT_WITH_LIMITATIONS",
+        "rfa": "ge_gfw550ssnww/ge_gfw550ssnww_R2025.rfa",
+        "rfa_bytes": 593920,
+        "rfa_sha256": "2c25548bfc9f1fde1c75929c0e99125dac4fb7bca5fdb3b39946218ce27f4b65",
+        "row_ids": [
+          8923394272198532
+        ],
+        "source_urls": [
+          "https://www.geappliances.com/appliance/GE-ENERGY-STAR-4-8-cu-ft-Capacity-Smart-Front-Load-Washer-with-UltraFresh-Vent-System-with-OdorBlock-and-Sanitize-w-Oxi-GFW550SSNWW",
+          "https://images.salsify.com/image/upload/s--QojF4Tcy--/e04777f39886e35f1e867cdfc522c90b23c23daf.pdf",
+          "https://images.salsify.com/raw/upload/s--100n_wPP--/xhnym606jjrsbv8qgioq.dwg",
+          "https://cdn11.bigcommerce.com/s-pacto3wrn2/products/134602/images/1216856/wtwnkgpkizusc54thtrp__88673.1789563846.386.513.jpg?c=2"
+        ],
+        "original_rfas": [],
+        "validation": "ge_gfw550ssnww/validation.json",
+        "previews": [
+          "ge_gfw550ssnww/views/oblique - 3D View - oblique.png",
+          "ge_gfw550ssnww/views/front - 3D View - front.png"
+        ]
+      },
+      {
+        "model": "GFD55GSSNWW",
+        "slug": "ge_gfd55gssnww",
+        "status": "BUILT_WITH_LIMITATIONS",
+        "rfa": "ge_gfd55gssnww/ge_gfd55gssnww_R2025.rfa",
+        "rfa_bytes": 507904,
+        "rfa_sha256": "9563e29835dca39d9745dabac1787b6d576bd582b1643fd7ab70a4637f947747",
+        "row_ids": [
+          5407997394747268
+        ],
+        "source_urls": [
+          "https://www.geappliances.com/appliance/GE-ENERGY-STAR-7-8-cu-ft-Capacity-Smart-Front-Load-Gas-Dryer-with-Sanitize-Cycle-GFD55GSSNWW",
+          "https://images.salsify.com/image/upload/s--VBxQtwSo--/5bb2a02635c02de483dad44b5d164513c2baf6de.pdf",
+          "https://images.salsify.com/raw/upload/s--Ghj2_qby--/o7ndvfxdcod1hde4qmaf.dwg",
+          "https://cdn11.bigcommerce.com/s-pacto3wrn2/products/137096/images/1017453/5679f1fe5c4b18b59ba9fa7c79c67269dcf5d9e9__18687.1776494511.386.513.jpg?c=2"
+        ],
+        "original_rfas": [],
+        "validation": "ge_gfd55gssnww/validation.json",
+        "previews": [
+          "ge_gfd55gssnww/views/oblique - 3D View - oblique.png",
+          "ge_gfd55gssnww/views/front - 3D View - front.png"
+        ]
+      },
+      {
+        "model": "KM 3054-1 G",
+        "slug": "miele_km3054_1g",
+        "status": "BUILT_WITH_LIMITATIONS",
+        "rfa": "miele_km3054_1g/miele_km3054_1g_R2025.rfa",
+        "rfa_bytes": 532480,
+        "rfa_sha256": "1b105d404097a468ea8225a290ffb3046813d928c3985fc6a2987f8cc51e4db3",
+        "row_ids": [
+          6670395252473732,
+          7831772394487684
+        ],
+        "source_urls": [
+          "https://media.miele.com/downloads/n-/us/FS_11766750_USE_US-en-US.pdf",
+          "https://www.mieleusa.com/product/11766750/gas-cooktop-km-3054-1"
+        ],
+        "original_rfas": [],
+        "validation": "miele_km3054_1g/validation.json",
+        "previews": [
+          "miele_km3054_1g/views/oblique - 3D View - oblique.png",
+          "miele_km3054_1g/views/front - 3D View - front.png"
+        ]
+      },
+      {
+        "model": "I32363RC",
+        "slug": "tradewind_i32363rc",
+        "status": "BUILT_WITH_LIMITATIONS",
+        "rfa": "tradewind_i32363rc/tradewind_i32363rc_R2025.rfa",
+        "rfa_bytes": 495616,
+        "rfa_sha256": "46516fd5c3b343401fc349301975758c85c1d97e5892c807b790b660b3d81f2d",
+        "row_ids": [
+          7796295159316356,
+          162646177939332
+        ],
+        "source_urls": [
+          "https://linqcdn.avbportal.com/documents/3512c644-ff49-413e-aaf5-5805aa9aad84.pdf"
+        ],
+        "original_rfas": [],
+        "validation": "tradewind_i32363rc/validation.json",
+        "previews": [
+          "tradewind_i32363rc/views/oblique - 3D View - oblique.png",
+          "tradewind_i32363rc/views/front - 3D View - front.png"
+        ]
+      },
+      {
+        "model": "SDHWC98PNR",
+        "slug": "summit_sdhwc98pnr",
+        "status": "BUILT_WITH_LIMITATIONS",
+        "rfa": "summit_sdhwc98pnr/summit_sdhwc98pnr_R2025.rfa",
+        "rfa_bytes": 634880,
+        "rfa_sha256": "dd76bf969af45350272b23ba17cc9c5b74566027149c5f0ee2e63f0b38016eeb",
+        "row_ids": [
+          6521680267116420
+        ],
+        "source_urls": [
+          "https://www.summitappliance.com/catalog/model/SDHWC98PNR",
+          "https://www.summitappliance.com/brochure/8799.pdf",
+          "https://drtr5fjqqz6ee.cloudfront.net/uploads/fsi/drawing/file/16133/SDHWC98PNR-Assembly.pdf",
+          "https://drtr5fjqqz6ee.cloudfront.net/uploads/fsi/product_image/image/89059/SDHWC98PNR_Front_PR.jpg"
+        ],
+        "original_rfas": [],
+        "validation": "summit_sdhwc98pnr/validation.json",
+        "previews": [
+          "summit_sdhwc98pnr/views/oblique - 3D View - oblique.png",
+          "summit_sdhwc98pnr/views/front - 3D View - front.png"
+        ]
+      }
+    ]
+  }
+}

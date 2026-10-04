@@ -1,0 +1,244 @@
+{
+  "rfa_path": "E:\\Claude\\3D-Model-Workflow\\output\\1527_wieland\\plumbing_fixtures\\62820LF-BL\\Brizo_62820LF-BL_R2025.rfa", 
+  "limitations": [
+    "ASSUMPTION: lower handle extends 2.75 in below the inlet axis, creating a 9.25 in full posed envelope.", 
+    "Arms are fully extended; swivel, paddle rotation and minor collars are fixed and drawing-derived.", 
+    "No operational joint flex is claimed; materials are the editable parameters.", 
+    "Independent visualization reconstruction with fixed product dimensions and editable native materials.", 
+    "Small fillets, seams, nozzle details and optical material response are inferred where the manufacturer does not dimension them.", 
+    "No internal hydraulic performance, MEP connectors, fabrication tolerances or procurement substitutions are implied."
+  ], 
+  "material_ids": {
+    "Finish": "3210", 
+    "Detail": "3207"
+  }, 
+  "started_utc": "2026-10-02T16:07:05.682000Z", 
+  "family_warnings": [], 
+  "material_tests": {
+    "Finish": {
+      "substitution_reaches_faces": true, 
+      "writable": true, 
+      "face_count": 80
+    }, 
+    "Detail": {
+      "substitution_reaches_faces": true, 
+      "writable": true, 
+      "face_count": 80
+    }
+  }, 
+  "actual_dimensions_in": [
+    2.875, 
+    9.2500002980232239, 
+    20.375
+  ], 
+  "all_overall_dimensions_authoritative": false, 
+  "actual_dimensions_after_reopen_mm": [
+    73.024999999999991, 
+    234.95000756978988, 
+    517.52499999999998
+  ], 
+  "project_warnings": [], 
+  "native_path_checks": [], 
+  "stage": "complete", 
+  "bounds_in": [
+    -1.4375, 
+    -2.7500000596046448, 
+    -6.8710782753795233e-24, 
+    1.4375, 
+    6.5000002384185791, 
+    20.375
+  ], 
+  "reopened": true, 
+  "native_gates_pass": true, 
+  "placement": "WorkPlaneBased", 
+  "display_bounds_in": [
+    -1.4375, 
+    -2.75, 
+    0.0, 
+    1.4375, 
+    6.5000000000000009, 
+    20.375
+  ], 
+  "rfa_search": {
+    "evidence": "_research/62820LF-BL/sources.json", 
+    "result": "No acceptable no-account RFA recovered"
+  }, 
+  "reopened_bounds_in": [
+    -1.4375, 
+    -2.7500000596046448, 
+    -6.8710782753795233e-24, 
+    1.4375, 
+    6.5000002384185791, 
+    20.375
+  ], 
+  "appearance_bindings": {
+    "Finish": {
+      "exists": true, 
+      "material_id": "3210", 
+      "path": "E:\\Claude\\3D-Model-Workflow\\output\\1527_wieland\\plumbing_fixtures\\62820LF-BL\\textures\\Finish.png"
+    }, 
+    "Detail": {
+      "exists": true, 
+      "material_id": "3207", 
+      "path": "E:\\Claude\\3D-Model-Workflow\\output\\1527_wieland\\plumbing_fixtures\\62820LF-BL\\textures\\Detail.png"
+    }
+  }, 
+  "acceptance": "NATIVE_GATES_PASSED_PENDING_VISUAL_REVIEW", 
+  "source_dimensions": [
+    "Wall-to-front 20.375 in; outlet axis 19.25 in from wall; swivel axes at 3.5 and 11.25 in; flange diameter 2.875 in.", 
+    "6.5 in in the source is the top hinge height above the wall inlet axis, not the complete vertical envelope."
+  ], 
+  "reopen_geometry_equal": true, 
+  "host": {
+    "instance_host_id": "3703", 
+    "hostface_present": true, 
+    "host_id": "3703", 
+    "normal_dot": 1.0, 
+    "host_kind": "wall"
+  }, 
+  "bounds_method": "Fine native face meshes plus 128-sample analytic edges", 
+  "dimension_anchor_checks": [
+    {
+      "nominal_mm": 517.52499999999998, 
+      "label": "Full projection", 
+      "actual_mm": 517.52499999999998, 
+      "deviation_mm": 0.0, 
+      "pass": true
+    }
+  ], 
+  "cct_k": null, 
+  "source_spec_path": "E:\\Claude\\3D-Model-Workflow\\output\\1527_wieland\\plumbing_fixtures\\62820LF-BL\\source\\model_spec.json", 
+  "technical_pass": true, 
+  "parts": [
+    {
+      "name": "Wall escutcheon", 
+      "id": "3212", 
+      "volume_ft3": 0.00093916107333635965
+    }, 
+    {
+      "name": "Wall inlet body", 
+      "id": "3213", 
+      "volume_ft3": 0.0033411835792851712
+    }, 
+    {
+      "name": "First vertical swivel", 
+      "id": "3214", 
+      "volume_ft3": 0.0025730954001391554
+    }, 
+    {
+      "name": "First arm", 
+      "id": "3215", 
+      "volume_ft3": 0.0022542706322865327
+    }, 
+    {
+      "name": "Second vertical swivel", 
+      "id": "3216", 
+      "volume_ft3": 0.0032643747613705703
+    }, 
+    {
+      "name": "Second arm", 
+      "id": "3217", 
+      "volume_ft3": 0.0023269890397796464
+    }, 
+    {
+      "name": "End valve body", 
+      "id": "3218", 
+      "volume_ft3": 0.0012481432911122775
+    }, 
+    {
+      "name": "Downward outlet", 
+      "id": "3219", 
+      "volume_ft3": 0.00056811255853995296
+    }, 
+    {
+      "name": "Aerator", 
+      "id": "3220", 
+      "volume_ft3": 1.3825587224628245e-05
+    }, 
+    {
+      "name": "Wall lever hub", 
+      "id": "3221", 
+      "volume_ft3": 0.00042963512239583955
+    }, 
+    {
+      "name": "Wall lever paddle", 
+      "id": "3222", 
+      "volume_ft3": 0.00010862294235820745
+    }, 
+    {
+      "name": "End lever paddle", 
+      "id": "3223", 
+      "volume_ft3": 0.00010677109665291214
+    }
+  ], 
+  "source_references": [
+    {
+      "url": "https://media.brizo.com/SpecSheet/BSP-K-62810LF%20Rev%20N.pdf", 
+      "visual_review_method": "Manufacturer web PDF screenshot", 
+      "document": "Brizo shared pot-filler drawing, exact 62820 handle detail, Rev N", 
+      "page": 1
+    }
+  ], 
+  "revit_version": "2025", 
+  "visual_review": "PENDING_NATIVE_IMAGE_REVIEW", 
+  "evidence_files": [
+    "Brizo_62820LF-BL_R2025_Isolated - 3D View - Native Front.png", 
+    "Brizo_62820LF-BL_R2025_Isolated - 3D View - Native Material.png", 
+    "Brizo_62820LF-BL_R2025_Isolated - 3D View - Native Oblique.png", 
+    "Brizo_62820LF-BL_R2025_Isolated - 3D View - Native Side.png"
+  ], 
+  "appearance_defaults": {
+    "Finish": {
+      "transparency": 0, 
+      "rgb": [
+        20, 
+        21, 
+        22
+      ], 
+      "luminance": 0, 
+      "gloss": 0.17000000000000001, 
+      "cct_k": null
+    }, 
+    "Detail": {
+      "transparency": 0, 
+      "rgb": [
+        24, 
+        25, 
+        26
+      ], 
+      "luminance": 0, 
+      "gloss": 0.17000000000000001, 
+      "cct_k": null
+    }
+  }, 
+  "gates": {
+    "views": true, 
+    "cct": true, 
+    "diffuse_bitmaps": true, 
+    "materials": true, 
+    "orientation": true, 
+    "reopened": true, 
+    "category": true, 
+    "actual_face_host": true, 
+    "reopen_geometry_equal": true, 
+    "warnings": true, 
+    "dimensions": true
+  }, 
+  "template_form_ids": [
+    "1537"
+  ], 
+  "expected_dimensions_in": [
+    2.875, 
+    9.25, 
+    20.375
+  ], 
+  "revit_build": "25.4.50.35", 
+  "finished_utc": "2026-10-02T16:07:21.046000Z", 
+  "category": "Plumbing Fixtures", 
+  "reopened_warnings": [], 
+  "manufacturer": "Brizo", 
+  "source_spec_sha256": "f332229f00ab3da11c1479e7ed688f4da8131952e4985013f10443156f01e776", 
+  "model": "62820LF-BL", 
+  "type": "62820LF-BL - Matte Black -  Black", 
+  "inferences": "ASSUMPTION: lower handle extends 2.75 in below the inlet axis, creating a 9.25 in full posed envelope. | Arms are fully extended; swivel, paddle rotation and minor collars are fixed and drawing-derived. | No operational joint flex is claimed; materials are the editable parameters. | Independent visualization reconstruction with fixed product dimensions and editable native materials. | Small fillets, seams, nozzle details and optical material response are inferred where the manufacturer does not dimension them. | No internal hydraulic performance, MEP connectors, fabrication tolerances or procurement substitutions are implied."
+}

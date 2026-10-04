@@ -1,0 +1,175 @@
+{
+  "category": "Plumbing Fixtures", 
+  "all_overall_dimensions_authoritative": false, 
+  "type": "HLK175-BL - Matte Black -  Black", 
+  "rfa_search": {
+    "result": "No acceptable no-account RFA recovered", 
+    "evidence": "_research/HLK175-BL/sources.json"
+  }, 
+  "native_gates_pass": true, 
+  "native_path_checks": [], 
+  "bounds_in": [
+    -0.4375, 
+    -0.4375, 
+    -3.032494126779016e-23, 
+    0.4375, 
+    3.2500001192092896, 
+    1.1000000238418579
+  ], 
+  "model": "HLK175-BL", 
+  "limitations": [
+    "Socket depth and lever section are drawing-derived. Handle supplied in an upright neutral pose.", 
+    "HLB175 and HLK175 have separate product identities and must be aligned to their respective valve stems.", 
+    "Independent visualization reconstruction with fixed product dimensions and editable native materials.", 
+    "Small fillets, seams, nozzle details and optical material response are inferred where the manufacturer does not dimension them.", 
+    "No internal hydraulic performance, MEP connectors, fabrication tolerances or procurement substitutions are implied."
+  ], 
+  "source_spec_path": "E:\\Claude\\3D-Model-Workflow\\output\\1527_wieland\\plumbing_fixtures\\HLK175-BL\\source\\model_spec.json", 
+  "appearance_defaults": {
+    "Finish": {
+      "cct_k": null, 
+      "rgb": [
+        20, 
+        21, 
+        22
+      ], 
+      "transparency": 0, 
+      "gloss": 0.17000000000000001, 
+      "luminance": 0
+    }
+  }, 
+  "manufacturer": "Brizo", 
+  "source_spec_sha256": "a2044371ebc2651a835f5bb187f6fedbbd91e9968ce2bf04dbfd4942d36f300e", 
+  "material_ids": {
+    "Finish": "3207"
+  }, 
+  "project_warnings": [], 
+  "technical_pass": true, 
+  "reopen_geometry_equal": true, 
+  "bounds_method": "Fine native face meshes plus 128-sample analytic edges", 
+  "appearance_bindings": {
+    "Finish": {
+      "path": "E:\\Claude\\3D-Model-Workflow\\output\\1527_wieland\\plumbing_fixtures\\HLK175-BL\\textures\\Finish.png", 
+      "exists": true, 
+      "material_id": "3207"
+    }
+  }, 
+  "display_bounds_in": [
+    -0.4375, 
+    -0.4375, 
+    0.0, 
+    0.4375, 
+    3.25, 
+    1.1000000000000001
+  ], 
+  "actual_dimensions_after_reopen_mm": [
+    22.224999999999998, 
+    93.662503027915946, 
+    27.940000605583190
+  ], 
+  "finished_utc": "2026-10-02T15:43:26.539000Z", 
+  "expected_dimensions_in": [
+    0.875, 
+    3.6875, 
+    1.1000000000000001
+  ], 
+  "inferences": "Socket depth and lever section are drawing-derived. Handle supplied in an upright neutral pose. | HLB175 and HLK175 have separate product identities and must be aligned to their respective valve stems. | Independent visualization reconstruction with fixed product dimensions and editable native materials. | Small fillets, seams, nozzle details and optical material response are inferred where the manufacturer does not dimension them. | No internal hydraulic performance, MEP connectors, fabrication tolerances or procurement substitutions are implied.", 
+  "reopened_warnings": [], 
+  "dimension_anchor_checks": [
+    {
+      "label": "Socket diameter", 
+      "actual_mm": 22.224999999999998, 
+      "deviation_mm": 0.0, 
+      "pass": true, 
+      "nominal_mm": 22.224999999999998
+    }
+  ], 
+  "revit_version": "2025", 
+  "source_references": [
+    {
+      "visual_review_method": "Manufacturer web PDF screenshot", 
+      "url": "https://media.brizo.com/SpecSheet/BSP-K-63121LF-LHP%20Rev%20B.pdf", 
+      "document": "Brizo BSP-K-63121LF-LHP Rev B", 
+      "page": 1
+    }
+  ], 
+  "actual_dimensions_in": [
+    0.875, 
+    3.6875001192092896, 
+    1.1000000238418579
+  ], 
+  "cct_k": null, 
+  "material_tests": {
+    "Finish": {
+      "writable": true, 
+      "face_count": 22, 
+      "substitution_reaches_faces": true
+    }
+  }, 
+  "template_form_ids": [
+    "1537"
+  ], 
+  "host": {
+    "host_id": "3690", 
+    "instance_host_id": "3690", 
+    "host_kind": "wall", 
+    "normal_dot": 1.0, 
+    "hostface_present": true
+  }, 
+  "reopened": true, 
+  "revit_build": "25.4.50.35", 
+  "started_utc": "2026-10-02T15:43:22.257000Z", 
+  "family_warnings": [], 
+  "placement": "WorkPlaneBased", 
+  "stage": "complete", 
+  "acceptance": "NATIVE_GATES_PASSED_PENDING_VISUAL_REVIEW", 
+  "rfa_path": "E:\\Claude\\3D-Model-Workflow\\output\\1527_wieland\\plumbing_fixtures\\HLK175-BL\\Brizo_HLK175-BL_R2025.rfa", 
+  "reopened_bounds_in": [
+    -0.4375, 
+    -0.4375, 
+    -3.032494126779016e-23, 
+    0.4375, 
+    3.2500001192092896, 
+    1.1000000238418579
+  ], 
+  "parts": [
+    {
+      "name": "Handle socket", 
+      "id": "3209", 
+      "volume_ft3": 0.00038276583631629342
+    }, 
+    {
+      "name": "Lever shank", 
+      "id": "3210", 
+      "volume_ft3": 0.00019493362164902135
+    }, 
+    {
+      "name": "Flattened lever tip", 
+      "id": "3211", 
+      "volume_ft3": 1.6116687240741355e-05
+    }
+  ], 
+  "source_dimensions": [
+    "Socket nominal diameter 0.875 in and axis-to-lever-tip distance 3.25 in: manufacturer handle detail."
+  ], 
+  "gates": {
+    "reopen_geometry_equal": true, 
+    "dimensions": true, 
+    "materials": true, 
+    "cct": true, 
+    "category": true, 
+    "views": true, 
+    "orientation": true, 
+    "diffuse_bitmaps": true, 
+    "warnings": true, 
+    "actual_face_host": true, 
+    "reopened": true
+  }, 
+  "visual_review": "PENDING_NATIVE_IMAGE_REVIEW", 
+  "evidence_files": [
+    "Brizo_HLK175-BL_R2025_Isolated - 3D View - Native Front.png", 
+    "Brizo_HLK175-BL_R2025_Isolated - 3D View - Native Material.png", 
+    "Brizo_HLK175-BL_R2025_Isolated - 3D View - Native Oblique.png", 
+    "Brizo_HLK175-BL_R2025_Isolated - 3D View - Native Side.png"
+  ]
+}

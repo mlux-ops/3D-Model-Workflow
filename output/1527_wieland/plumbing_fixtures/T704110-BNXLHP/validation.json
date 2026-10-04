@@ -1,0 +1,209 @@
+{
+  "all_overall_dimensions_authoritative": false, 
+  "inferences": "Rounded spout side profile, underside arch and vertical outlet position are drawing-derived. | LHP handles and R70400 rough are separate inventory items. | Independent visualization reconstruction with fixed product dimensions and editable native materials. | Small fillets, seams, nozzle details and optical material response are inferred where the manufacturer does not dimension them. | No internal hydraulic performance, MEP connectors, fabrication tolerances or procurement substitutions are implied.", 
+  "source_spec_path": "E:\\Claude\\3D-Model-Workflow\\output\\1527_wieland\\plumbing_fixtures\\T704110-BNXLHP\\source\\model_spec.json", 
+  "rfa_search": {
+    "evidence": "_research/T704110-BNXLHP/sources.json", 
+    "result": "No acceptable no-account RFA recovered"
+  }, 
+  "actual_dimensions_after_reopen_mm": [
+    210.31199999999998, 
+    80.930750000000003, 
+    319.08750000000015
+  ], 
+  "stage": "complete", 
+  "placement": "WorkPlaneBased", 
+  "finished_utc": "2026-10-02T15:12:41.206000Z", 
+  "type": "T704110-BNXLHP - Brilliance Black Onyx -  Black", 
+  "material_tests": {
+    "Finish": {
+      "face_count": 27, 
+      "writable": true, 
+      "substitution_reaches_faces": true
+    }, 
+    "Brass": {
+      "face_count": 27, 
+      "writable": true, 
+      "substitution_reaches_faces": true
+    }
+  }, 
+  "template_form_ids": [
+    "1537"
+  ], 
+  "manufacturer": "Brizo", 
+  "source_spec_sha256": "6a16a7f2fbc295b333d98e96d416d415920ce1035abd6203a541b0ab7e5fce98", 
+  "started_utc": "2026-10-02T15:12:23.735000Z", 
+  "technical_pass": true, 
+  "expected_dimensions_in": [
+    8.2799999999999994, 
+    3.1862499999999998, 
+    12.5625
+  ], 
+  "reopened_warnings": [], 
+  "host": {
+    "host_id": "3695", 
+    "normal_dot": 1.0, 
+    "hostface_present": true, 
+    "instance_host_id": "3695", 
+    "host_kind": "wall"
+  }, 
+  "material_ids": {
+    "Finish": "3210", 
+    "Brass": "3207"
+  }, 
+  "native_gates_pass": true, 
+  "native_path_checks": [], 
+  "reopened": true, 
+  "revit_version": "2025", 
+  "model": "T704110-BNXLHP", 
+  "project_warnings": [], 
+  "dimension_anchor_checks": [
+    {
+      "nominal_mm": 71.4375, 
+      "actual_mm": 71.4375, 
+      "label": "Flange diameter", 
+      "pass": true, 
+      "deviation_mm": 0.0
+    }, 
+    {
+      "nominal_mm": 319.08749999999998, 
+      "actual_mm": 319.08750000000015, 
+      "label": "Projection", 
+      "pass": true, 
+      "deviation_mm": 1.8047785488306544e-13
+    }
+  ], 
+  "limitations": [
+    "Rounded spout side profile, underside arch and vertical outlet position are drawing-derived.", 
+    "LHP handles and R70400 rough are separate inventory items.", 
+    "Independent visualization reconstruction with fixed product dimensions and editable native materials.", 
+    "Small fillets, seams, nozzle details and optical material response are inferred where the manufacturer does not dimension them.", 
+    "No internal hydraulic performance, MEP connectors, fabrication tolerances or procurement substitutions are implied."
+  ], 
+  "display_bounds_in": [
+    -4.1399999999999997, 
+    -1.7800000000000002, 
+    0.0, 
+    4.1399999999999997, 
+    1.40625, 
+    12.5625
+  ], 
+  "acceptance": "NATIVE_GATES_PASSED_PENDING_VISUAL_REVIEW", 
+  "evidence_files": [
+    "Brizo_T704110-BNXLHP_R2025_Isolated - 3D View - Native Front.png", 
+    "Brizo_T704110-BNXLHP_R2025_Isolated - 3D View - Native Material.png", 
+    "Brizo_T704110-BNXLHP_R2025_Isolated - 3D View - Native Oblique.png", 
+    "Brizo_T704110-BNXLHP_R2025_Isolated - 3D View - Native Side.png"
+  ], 
+  "gates": {
+    "actual_face_host": true, 
+    "views": true, 
+    "category": true, 
+    "materials": true, 
+    "reopen_geometry_equal": true, 
+    "cct": true, 
+    "reopened": true, 
+    "diffuse_bitmaps": true, 
+    "dimensions": true, 
+    "warnings": true, 
+    "orientation": true
+  }, 
+  "category": "Plumbing Fixtures", 
+  "appearance_defaults": {
+    "Finish": {
+      "gloss": 0.92000000000000004, 
+      "transparency": 0, 
+      "rgb": [
+        58, 
+        60, 
+        62
+      ], 
+      "cct_k": null, 
+      "luminance": 0
+    }, 
+    "Brass": {
+      "gloss": 0.40000000000000002, 
+      "transparency": 0, 
+      "rgb": [
+        160, 
+        124, 
+        64
+      ], 
+      "cct_k": null, 
+      "luminance": 0
+    }
+  }, 
+  "visual_review": "PENDING_NATIVE_IMAGE_REVIEW", 
+  "cct_k": null, 
+  "source_dimensions": [
+    "Projection 12.5625 in; nominal outlet reach 11.875 in; flange diameter 2.8125 in; stem centers 8 in."
+  ], 
+  "parts": [
+    {
+      "id": "3212", 
+      "name": "Spout wall flange", 
+      "volume_ft3": 0.0010066244396629794
+    }, 
+    {
+      "id": "3213", 
+      "name": "Rounded projecting tub spout", 
+      "volume_ft3": 0.010314231314798347
+    }, 
+    {
+      "id": "3214", 
+      "name": "Left handle stem", 
+      "volume_ft3": 2.316081278655681e-05
+    }, 
+    {
+      "id": "3215", 
+      "name": "Right handle stem", 
+      "volume_ft3": 2.316081278655681e-05
+    }
+  ], 
+  "source_references": [
+    {
+      "url": "https://bravo.requested-info.com/brands/BRZ/documents/specSheets/T704110-BLLHP_Spec.pdf", 
+      "page": 1, 
+      "document": "BSP-B-T704110-LHP Rev B", 
+      "local_image": "_research/T704110-BNXLHP/downloads/T704110-BLLHP_Spec_pages/page_01.png"
+    }
+  ], 
+  "revit_build": "25.4.50.35", 
+  "appearance_bindings": {
+    "Finish": {
+      "exists": true, 
+      "material_id": "3210", 
+      "path": "E:\\Claude\\3D-Model-Workflow\\output\\1527_wieland\\plumbing_fixtures\\T704110-BNXLHP\\textures\\Finish.png"
+    }, 
+    "Brass": {
+      "exists": true, 
+      "material_id": "3207", 
+      "path": "E:\\Claude\\3D-Model-Workflow\\output\\1527_wieland\\plumbing_fixtures\\T704110-BNXLHP\\textures\\Brass.png"
+    }
+  }, 
+  "bounds_method": "Fine native face meshes plus 128-sample analytic edges", 
+  "bounds_in": [
+    -4.1399999999999997, 
+    -1.7800000000000002, 
+    -1.3723502672477647e-22, 
+    4.1399999999999997, 
+    1.40625, 
+    12.562500000000007
+  ], 
+  "reopened_bounds_in": [
+    -4.1399999999999997, 
+    -1.7800000000000002, 
+    -1.3723502672477647e-22, 
+    4.1399999999999997, 
+    1.40625, 
+    12.562500000000007
+  ], 
+  "rfa_path": "E:\\Claude\\3D-Model-Workflow\\output\\1527_wieland\\plumbing_fixtures\\T704110-BNXLHP\\Brizo_T704110-BNXLHP_R2025.rfa", 
+  "reopen_geometry_equal": true, 
+  "actual_dimensions_in": [
+    8.2799999999999994, 
+    3.1862500000000002, 
+    12.562500000000007
+  ], 
+  "family_warnings": []
+}

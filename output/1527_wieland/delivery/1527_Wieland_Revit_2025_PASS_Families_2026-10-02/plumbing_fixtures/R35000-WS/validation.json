@@ -1,0 +1,224 @@
+{
+  "rfa_path": "E:\\Claude\\3D-Model-Workflow\\output\\1527_wieland\\plumbing_fixtures\\R35000-WS\\Brizo_R35000-WS_R2025.rfa", 
+  "appearance_bindings": {
+    "Detail": {
+      "exists": true, 
+      "path": "E:\\Claude\\3D-Model-Workflow\\output\\1527_wieland\\plumbing_fixtures\\R35000-WS\\textures\\Detail.png", 
+      "material_id": "3210"
+    }, 
+    "Brass": {
+      "exists": true, 
+      "path": "E:\\Claude\\3D-Model-Workflow\\output\\1527_wieland\\plumbing_fixtures\\R35000-WS\\textures\\Brass.png", 
+      "material_id": "3207"
+    }
+  }, 
+  "gates": {
+    "warnings": true, 
+    "views": true, 
+    "orientation": true, 
+    "materials": true, 
+    "reopen_geometry_equal": true, 
+    "actual_face_host": true, 
+    "dimensions": true, 
+    "diffuse_bitmaps": true, 
+    "cct": true, 
+    "category": true, 
+    "reopened": true
+  }, 
+  "type": "R35000-WS - brass", 
+  "material_ids": {
+    "Detail": "3210", 
+    "Brass": "3207"
+  }, 
+  "display_bounds_in": [
+    -3.5, 
+    -2.46875, 
+    0.17999999999999999, 
+    3.5, 
+    2.46875, 
+    3.7000000000000002
+  ], 
+  "revit_build": "25.4.50.35", 
+  "bounds_in": [
+    -3.5, 
+    -2.4687500596046448, 
+    0.17999999597668648, 
+    3.5, 
+    2.4687500596046448, 
+    3.7000000476837158
+  ], 
+  "reopened_warnings": [], 
+  "native_gates_pass": true, 
+  "inferences": "ASSUMPTION: overall body depth 3.5 in includes the protruding test stem; source gives only stringer-to-finish-wall 3.25 in. | Internal flow paths, service stops and guard lettering are simplified. | Independent visualization reconstruction with fixed product dimensions and editable native materials. | Small fillets, seams, nozzle details and optical material response are inferred where the manufacturer does not dimension them. | No internal hydraulic performance, MEP connectors, fabrication tolerances or procurement substitutions are implied.", 
+  "template_form_ids": [
+    "1537"
+  ], 
+  "project_warnings": [], 
+  "material_tests": {
+    "Detail": {
+      "face_count": 62, 
+      "writable": true, 
+      "substitution_reaches_faces": true
+    }, 
+    "Brass": {
+      "face_count": 62, 
+      "writable": true, 
+      "substitution_reaches_faces": true
+    }
+  }, 
+  "placement": "WorkPlaneBased", 
+  "model": "R35000-WS", 
+  "rfa_search": {
+    "result": "No acceptable no-account RFA recovered", 
+    "evidence": "_research/R35000-WS/sources.json"
+  }, 
+  "actual_dimensions_in": [
+    7.0, 
+    4.9375001192092896, 
+    3.5200000517070293
+  ], 
+  "stage": "complete", 
+  "source_spec_path": "E:\\Claude\\3D-Model-Workflow\\output\\1527_wieland\\plumbing_fixtures\\R35000-WS\\source\\model_spec.json", 
+  "family_warnings": [], 
+  "visual_review": "PENDING_NATIVE_IMAGE_REVIEW", 
+  "parts": [
+    {
+      "name": "Diamond plaster guard", 
+      "id": "3212", 
+      "volume_ft3": 0.0048632812500000013
+    }, 
+    {
+      "name": "Central rough body", 
+      "id": "3213", 
+      "volume_ft3": 0.0070664112481433512
+    }, 
+    {
+      "name": "Hot inlet", 
+      "id": "3214", 
+      "volume_ft3": 0.0016288923278457539
+    }, 
+    {
+      "name": "Cold inlet", 
+      "id": "3215", 
+      "volume_ft3": 0.0016288923278457539
+    }, 
+    {
+      "name": "Upper outlet", 
+      "id": "3216", 
+      "volume_ft3": 0.00097733539670745201
+    }, 
+    {
+      "name": "Test cap", 
+      "id": "3217", 
+      "volume_ft3": 0.00090898009366392491
+    }, 
+    {
+      "name": "Front test stem", 
+      "id": "3218", 
+      "volume_ft3": 2.6587667739669809e-05
+    }
+  ], 
+  "source_references": [
+    {
+      "visual_review_method": "Web PDF screenshot", 
+      "page": 1, 
+      "document": "BSP-B-R35000-WS Rev C", 
+      "url": "https://media.brizo.com/SpecSheet/BSP-B-R35000-WS%20Rev%20C.pdf"
+    }
+  ], 
+  "limitations": [
+    "ASSUMPTION: overall body depth 3.5 in includes the protruding test stem; source gives only stringer-to-finish-wall 3.25 in.", 
+    "Internal flow paths, service stops and guard lettering are simplified.", 
+    "Independent visualization reconstruction with fixed product dimensions and editable native materials.", 
+    "Small fillets, seams, nozzle details and optical material response are inferred where the manufacturer does not dimension them.", 
+    "No internal hydraulic performance, MEP connectors, fabrication tolerances or procurement substitutions are implied."
+  ], 
+  "finished_utc": "2026-10-02T14:49:35.175000Z", 
+  "reopened_bounds_in": [
+    -3.5, 
+    -2.4687500596046448, 
+    0.17999999597668648, 
+    3.5, 
+    2.4687500596046448, 
+    3.7000000476837158
+  ], 
+  "dimension_anchor_checks": [
+    {
+      "deviation_mm": 0.0, 
+      "label": "Plaster guard width", 
+      "nominal_mm": 142.875, 
+      "pass": true, 
+      "actual_mm": 142.875
+    }, 
+    {
+      "deviation_mm": 3.0279159545898436e-06, 
+      "label": "Plaster guard height", 
+      "nominal_mm": 125.41249999999999, 
+      "pass": true, 
+      "actual_mm": 125.41250302791595
+    }
+  ], 
+  "source_dimensions": [
+    "Inlet-to-inlet width 7 in; plaster guard height 4.9375 in and width 5.625 in."
+  ], 
+  "actual_dimensions_after_reopen_mm": [
+    177.79999999999998, 
+    125.41250302791595, 
+    89.408001313358540
+  ], 
+  "technical_pass": true, 
+  "reopen_geometry_equal": true, 
+  "acceptance": "NATIVE_GATES_PASSED_PENDING_VISUAL_REVIEW", 
+  "reopened": true, 
+  "all_overall_dimensions_authoritative": false, 
+  "bounds_method": "Fine native face meshes plus 128-sample analytic edges", 
+  "expected_dimensions_in": [
+    7, 
+    4.9375, 
+    3.5
+  ], 
+  "appearance_defaults": {
+    "Detail": {
+      "transparency": 0, 
+      "luminance": 0, 
+      "rgb": [
+        24, 
+        25, 
+        26
+      ], 
+      "cct_k": null, 
+      "gloss": 0.17000000000000001
+    }, 
+    "Brass": {
+      "transparency": 0, 
+      "luminance": 0, 
+      "rgb": [
+        160, 
+        124, 
+        64
+      ], 
+      "cct_k": null, 
+      "gloss": 0.40000000000000002
+    }
+  }, 
+  "cct_k": null, 
+  "evidence_files": [
+    "Brizo_R35000-WS_R2025_Isolated - 3D View - Native Front.png", 
+    "Brizo_R35000-WS_R2025_Isolated - 3D View - Native Material.png", 
+    "Brizo_R35000-WS_R2025_Isolated - 3D View - Native Oblique.png", 
+    "Brizo_R35000-WS_R2025_Isolated - 3D View - Native Side.png"
+  ], 
+  "category": "Plumbing Fixtures", 
+  "host": {
+    "host_kind": "wall", 
+    "hostface_present": true, 
+    "instance_host_id": "3698", 
+    "host_id": "3698", 
+    "normal_dot": 1.0
+  }, 
+  "manufacturer": "Brizo", 
+  "started_utc": "2026-10-02T14:49:31.817000Z", 
+  "revit_version": "2025", 
+  "source_spec_sha256": "d869f96959b0401279faec739abeeb08ad26de1ca08879bf27f31b23fd98e6c1", 
+  "native_path_checks": []
+}

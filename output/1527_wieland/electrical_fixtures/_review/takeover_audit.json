@@ -1,0 +1,1807 @@
+{
+  "checked_utc": "2026-10-02T16:04:46.199402+00:00",
+  "items_sha256": "4d42b4abeda14a81770b121b4d91dc0d89af656c5b7b729106f222c1c85d4eee",
+  "groups_sha256": "c3832c8783eb5fb519904677d30c56ba8a87a5cb8e4947df6919091f65628dc2",
+  "rows": 120,
+  "groups": 43,
+  "canonical_passes": 39,
+  "unique_validated_families": 40,
+  "row_notes": 0,
+  "non_backup_row_root_rfas": 40,
+  "variants": [
+    {
+      "folder": "K1-1__8353463272013700",
+      "technical_pass": true,
+      "model": "PD62014-BK/CH",
+      "rfa": "E:\\Claude\\3D-Model-Workflow\\output\\1527_wieland\\electrical_fixtures\\K1-1__8353463272013700\\Kuzco_Trinity_PD62014_BK_CH_R2025.rfa"
+    }
+  ],
+  "records": [
+    {
+      "key": "KZC1009522",
+      "rows": 1,
+      "folder": "L1-0__7438669597704068",
+      "technical_pass": true,
+      "model": "MP75121-BK",
+      "source_url": "https://s3-us-west-2.amazonaws.com/catsy.870/MP75121_Spec_Sheet.pdf",
+      "inferences": "Manufacturer: 15-inch canopy diameter by 2-inch height; 13 light bodies each 0.75-inch diameter by 20.625-inch height, on the drawing-derived concentric positions. The canopy is wider than the 12.75-inch cluster. ASSUMPTION: representative three-tier 72-inch installed drop; cable lengths and small ferrule details are inferred.",
+      "search": "Official product resources and verified BIM listings searched; no exact, usable anonymous RFA accepted. See retained source resources and manufacturer acquisition/inspection receipts.",
+      "category": "Lighting Fixtures",
+      "actual": [
+        15.0,
+        14.994890213012695,
+        72.0
+      ],
+      "expected": [
+        15,
+        15,
+        72
+      ],
+      "gates": {
+        "dimensions": true,
+        "materials": true,
+        "views": true,
+        "reopened": true,
+        "saved_dimensions_within_1mm": true,
+        "orientation": true,
+        "actual_face_host": true,
+        "category": true,
+        "saved_components_within_1mm": true,
+        "warnings": true,
+        "cct": true,
+        "saved_bitmaps_resolve": true
+      },
+      "rfa_path": "E:\\Claude\\3D-Model-Workflow\\output\\1527_wieland\\electrical_fixtures\\L1-0__7438669597704068\\Kuzco_Motif_MP75121_BK_R2025.rfa",
+      "rfa_sha256": "c72805ec6f27d26ce9bab8e97e0ad3f10d7c64fcdf06e3c1fdf94bf4995bf628",
+      "rfa_signature": "d0cf11e0a1b11ae1",
+      "validation_sha256": "38291fb8530f86784462c87e21f5e2e3402a8671bd5521cc08955d11a27254fd",
+      "preview_count": 9,
+      "missing_previews": [],
+      "source_notes": []
+    },
+    {
+      "key": "PBL1034468",
+      "rows": 1,
+      "folder": "L3-0__3830588113485700",
+      "technical_pass": true,
+      "model": "SKY DOM 18 BLK-3000K",
+      "source_url": "https://pablodesigns.com/product/sky-dome",
+      "inferences": "18-inch diameter, 17.5-inch fixture body, 5.3 x 1.25-inch canopy. ASSUMPTION: 48-inch installed drop; reflector position and lens diameters from photography. Body height is checked independently of assumed suspension.",
+      "search": "Public primary product resources and the retained exact product page were inspected; no direct, exact native RFA was available in those resources. This does not assert that no RFA exists elsewhere.",
+      "category": "Lighting Fixtures",
+      "actual": [
+        18.004539012908936,
+        18.003925323486328,
+        48.0
+      ],
+      "expected": [
+        18,
+        18,
+        48
+      ],
+      "gates": {
+        "cct": true,
+        "materials": true,
+        "saved_bitmaps_resolve": true,
+        "reopened": true,
+        "dimensions": true,
+        "saved_dimensions_within_1mm": true,
+        "actual_face_host": true,
+        "saved_components_within_1mm": true,
+        "orientation": true,
+        "warnings": true,
+        "views": true,
+        "category": true
+      },
+      "rfa_path": "E:\\Claude\\3D-Model-Workflow\\output\\1527_wieland\\electrical_fixtures\\L3-0__3830588113485700\\Pablo_Sky_Dome_18_Pendant_Black_Aluminum_R2025.rfa",
+      "rfa_sha256": "ef8b4f84cc4d7ed5a6967f787707046c167238d724002d4fd9c2e17a7d2ced07",
+      "rfa_signature": "d0cf11e0a1b11ae1",
+      "validation_sha256": "59cf8ccfd97ba051c8f8d85c857497dfd46f7fd555bd26bef40a84caa0273d35",
+      "preview_count": 9,
+      "missing_previews": [],
+      "source_notes": []
+    },
+    {
+      "key": "PBL1129156",
+      "rows": 1,
+      "folder": "L2-0__1809170063490948",
+      "technical_pass": true,
+      "model": "SKY FSH 18 DOM BLK-3000K",
+      "source_url": "https://pablodesigns.com/product/sky-flush",
+      "inferences": "18-inch shade diameter and 4-inch projection; 6.5-inch rear mount. Wall host follows the scheduled wall-sconce use. Matte-black reflector with polished-aluminum lamp rim and opal diffuser. ASSUMPTION: shallow reflector curve and central optic dimensions; manufacturer offers STEP geometry rather than a direct RFA in inspected resources.",
+      "search": "Public primary product resources and the retained exact product page were inspected; no direct, exact native RFA was available in those resources. This does not assert that no RFA exists elsewhere.",
+      "category": "Lighting Fixtures",
+      "actual": [
+        18.004539012908936,
+        18.003925323486328,
+        4.0000001192092896
+      ],
+      "expected": [
+        18,
+        18,
+        4
+      ],
+      "gates": {
+        "cct": true,
+        "materials": true,
+        "saved_bitmaps_resolve": true,
+        "reopened": true,
+        "dimensions": true,
+        "saved_dimensions_within_1mm": true,
+        "actual_face_host": true,
+        "saved_components_within_1mm": true,
+        "orientation": true,
+        "warnings": true,
+        "views": true,
+        "category": true
+      },
+      "rfa_path": "E:\\Claude\\3D-Model-Workflow\\output\\1527_wieland\\electrical_fixtures\\L2-0__1809170063490948\\Pablo_Sky_Dome_18_Wall_Black_Aluminum_R2025.rfa",
+      "rfa_sha256": "5bbfceacf990a20599e5709dd00a0b67fa4bd4d60c08e94fad834f796b0a1288",
+      "rfa_signature": "d0cf11e0a1b11ae1",
+      "validation_sha256": "386dfdc36bd5fb7a9432c401dce920849441e6bd0c6155021ac0ce80500da31e",
+      "preview_count": 9,
+      "missing_previews": [],
+      "source_notes": []
+    },
+    {
+      "key": "54654241-4PK",
+      "rows": 1,
+      "folder": "G1-0_CORRECTION_2026-10-01_G1-1__6312769690861444",
+      "technical_pass": true,
+      "model": "54654241 (one fixture from 54654241-4PK)",
+      "source_url": "https://www.manualshelf.com/manual/commercial-electric/54654241-4pk/specification.html",
+      "inferences": "Manufacturer-branded 54654241 specification gives 48.03 x 5.98 x 2.99 inches per fixture. The selected package contains four fixtures; this family represents one. ASSUMPTION: wrap diffuser section, sheet thickness, end-cap and mounting details reconstructed from the product illustrations. No superseded Sky Panel geometry is used.",
+      "search": "Official product resources and verified BIM listings searched; no exact, usable anonymous RFA accepted. See retained source resources and manufacturer acquisition/inspection receipts.",
+      "category": "Lighting Fixtures",
+      "actual": [
+        48.03000068664551,
+        5.980000019073486,
+        2.990000009536743
+      ],
+      "expected": [
+        48.03,
+        5.98,
+        2.99
+      ],
+      "gates": {
+        "dimensions": true,
+        "materials": true,
+        "views": true,
+        "reopened": true,
+        "saved_dimensions_within_1mm": true,
+        "orientation": true,
+        "actual_face_host": true,
+        "category": true,
+        "saved_components_within_1mm": true,
+        "warnings": true,
+        "cct": true,
+        "saved_bitmaps_resolve": true
+      },
+      "rfa_path": "E:\\Claude\\3D-Model-Workflow\\output\\1527_wieland\\electrical_fixtures\\G1-0_CORRECTION_2026-10-01_G1-1__6312769690861444\\Commercial_Electric_54654241_Wrap_R2025.rfa",
+      "rfa_sha256": "daf639247bbfe2d9deb95fb17e2b3fef9da38238b10b79e6f26e6fc65d49a139",
+      "rfa_signature": "d0cf11e0a1b11ae1",
+      "validation_sha256": "16b273958eadc67cf440d475745ce5893d06fa3f9db33703c024755f1d42b399",
+      "preview_count": 9,
+      "missing_previews": [],
+      "source_notes": [
+        "CORRECTION 2026-10-01: governing Wieland Lighting Fixture Schedule identifies this garage scope as G1-1, Qty 4, high-lumen LED linear ceiling fixture with product selection still TBD. Aug-26 Good comparison maps MAX605273 Sky Panel to G1-1 Qty 4; live product/cost retained as a Good-budget candidate only, not an awarded final fixture. Count once; do not add a duplicate G1 row. | USER SELECTION VERIFIED 2026-10-01: user designated Home Depot Internet #314594064 for G1-1. Current listing identifies Commercial Electric model 54654241-4PK, four 4-ft LED wraparound fixtures, 3600 lumens each, 40W, 120V, 4000K Bright White, $206.00 per 4-pack = $51.50 per fixture. Schedule Qty 4 is exactly one pack. Historical Sky Panel Actual Unit Cost $108 is preserved as superseded history; current per-fixture price is recorded in Market Unit Price."
+      ]
+    },
+    {
+      "key": "HIN1284470",
+      "rows": 1,
+      "folder": "F1-0__1015838346379140",
+      "technical_pass": true,
+      "model": "28914BK-LL",
+      "source_url": "https://www.hinkley.com/28914bk-ll.html",
+      "inferences": "5 x 12 x 5.75 inches, 4.75 x 5.125 backplate. Two open ends with recessed lens/optic assemblies. ASSUMPTION: wall thickness, recess and individual optical components from photographs; no photometric source.",
+      "search": "Public primary product resources and the retained exact product page were inspected; no direct, exact native RFA was available in those resources. This does not assert that no RFA exists elsewhere.",
+      "category": "Lighting Fixtures",
+      "actual": [
+        5.0,
+        12.0,
+        5.75
+      ],
+      "expected": [
+        5,
+        12,
+        5.75
+      ],
+      "gates": {
+        "cct": true,
+        "saved_dimensions_within_1mm": true,
+        "warnings": true,
+        "reopened": true,
+        "materials": true,
+        "actual_face_host": true,
+        "views": true,
+        "saved_components_within_1mm": true,
+        "saved_bitmaps_resolve": true,
+        "dimensions": true,
+        "category": true,
+        "orientation": true
+      },
+      "rfa_path": "E:\\Claude\\3D-Model-Workflow\\output\\1527_wieland\\electrical_fixtures\\F1-0__1015838346379140\\Hinkley_Tetra_28914BK_LL_R2025.rfa",
+      "rfa_sha256": "9de89ba88cd55e23111669282fb194cd7e3570b43bf2413958f321fe73d52c4c",
+      "rfa_signature": "d0cf11e0a1b11ae1",
+      "validation_sha256": "a725de244be55d23653271b26716bc9f76d0e7df723b0177d3ee125f90b2299a",
+      "preview_count": 9,
+      "missing_previews": [],
+      "source_notes": []
+    },
+    {
+      "key": "57670WTBK",
+      "rows": 24,
+      "folder": "L4-0__8334187740856196",
+      "technical_pass": true,
+      "model": "57670WTBK",
+      "source_url": "https://www.maximlighting.com/product/indoor-lighting/flush-mounts/trim-16-rd-led-flush-mount-3000k/57670WTBK",
+      "inferences": "Manufacturer 57670WTBK dimensions: 16 x 16 x 1.5 inches. ASSUMPTION: recessed diffuser diameter, perimeter profile, sheet thickness and small edge rounds are photo-derived visualization details. Black housing and white diffuser; no photometric light source. Nominal product geometry is fixed; finishes are editable.",
+      "search": "Manufacturer product page and BIM/Photometric resources inspected; no direct 57670WTBK RFA link found.",
+      "category": "Lighting Fixtures",
+      "actual": [
+        16.000000476837158,
+        16.0,
+        1.5
+      ],
+      "expected": [
+        16.0,
+        16.0,
+        1.5
+      ],
+      "gates": {
+        "saved_dimensions_within_1mm": true,
+        "orientation": true,
+        "reopened": true,
+        "actual_face_host": true,
+        "dimensions": true,
+        "cct": true,
+        "views": true,
+        "category": true,
+        "materials": true,
+        "saved_bitmaps_resolve": true,
+        "warnings": true
+      },
+      "rfa_path": "E:\\Claude\\3D-Model-Workflow\\output\\1527_wieland\\electrical_fixtures\\L4-0__8334187740856196\\Maxim_Trim_57670WTBK_Black_R2025.rfa",
+      "rfa_sha256": "07b6f3713c99677a21afc7cf5aa0a9680361e34d1e9f645dc75b8224a5a2a086",
+      "rfa_signature": "d0cf11e0a1b11ae1",
+      "validation_sha256": "507b370ddaa07797c420e07bf4123894f81b37087bb51ca2e6fec549ae698cd9",
+      "preview_count": 9,
+      "missing_previews": [],
+      "source_notes": [
+        "USER SELECTION CONFIRMED 2026-10-01: all bedroom ceiling fixtures, including Primary Bedrooms and Bedrooms 2-5, use Maxim Lighting Trim Round 120V Ceiling Light, Black, 16in, model 57670WTBK / Lightology Spec MAX1023280. Current public price $125.80 EA. Historical fixture identity and Actual Unit Cost remain preserved as prior design/pricing history. Count this Maxim fixture as the selected bedroom base scope.",
+        "NEEDS REVIEW 2026-10-01: Penthouse Bedroom 2 S2-2 live row carries a Twist-N-Lite cylinder pendant, but the dedicated 1529 Lighting Fixture Schedule still defines S2-2 as an approximately 16\" circular LED flush-mount ceiling fixture with selection TBD. Lightopia estimate 700122342 proposed Kuzco Brook 15\" Flush Mount FM43315-BG-5CCT at $75.48 each; current Kuzco product data confirms FM43315-BG-5CCT is a 15-1/8\" ceiling flush mount. Best sourced candidate is Brook, but the schedule never formally selected it and the 4/28/26 quote is expired. Retain live pendant/history; obtain final design approval and current quote before substitution. | RESOLVED BASE PACKAGE 2026-10-01: later Lightology Good project 17737 (8/26/26) and the 8/27 Good/Better/Best comparison deck explicitly assign WAC Lighting Twist-N-Lite spec WAC1314240 to the secondary-bedroom base package. The April Lightopia Brook FM43315-BG-5CCT quote is therefore retained as superseded vendor-alternative history, not the current Good/base identity. Existing carried unit cost is preserved; the Aug. 26 Good source shows $82.41 unit trade price, so price refresh remains a commercial follow-up rather than a selection blocker. | PROCUREMENT HOLD 2026-10-01: the August Lightology Good project confirms WAC1314240 only as the Good-tier comparison identity; it does not establish award. SHB sent an updated fixture list on 5/22, Lightopia issued estimate 700123242 on 5/27 with DALS Radiance FMM12-CC-BK for the secondary bedrooms, and on 7/30 SHB explicitly told Lightopia to keep the estimate open because finishes work was paused. Keep the live WAC line as the current Good-budget/reference line, but do not order until final fixture approval and current vendor quote/PO. | USER SELECTION CONFIRMED 2026-10-01: all bedroom ceiling fixtures, including Primary Bedrooms and Bedrooms 2-5, use Maxim Lighting Trim Round 120V Ceiling Light, Black, 16in, model 57670WTBK / Lightology Spec MAX1023280. Current public price $125.80 EA. Historical fixture identity and Actual Unit Cost remain preserved as prior design/pricing history. Count this Maxim fixture as the selected bedroom base scope.",
+        "NEEDS REVIEW 2026-10-01: Penthouse Bedroom 3 S3-2 live row carries a Twist-N-Lite cylinder pendant, but the dedicated 1529 Lighting Fixture Schedule still defines S3-2 as an approximately 16\" circular LED flush-mount ceiling fixture with selection TBD. Lightopia estimate 700122342 proposed Kuzco Brook 15\" Flush Mount FM43315-BG-5CCT at $75.48 each; current Kuzco product data confirms FM43315-BG-5CCT is a 15-1/8\" ceiling flush mount. Best sourced candidate is Brook, but the schedule never formally selected it and the 4/28/26 quote is expired. Retain live pendant/history; obtain final design approval and current quote before substitution. | RESOLVED BASE PACKAGE 2026-10-01: later Lightology Good project 17737 (8/26/26) and the 8/27 Good/Better/Best comparison deck explicitly assign WAC Lighting Twist-N-Lite spec WAC1314240 to the secondary-bedroom base package. The April Lightopia Brook FM43315-BG-5CCT quote is therefore retained as superseded vendor-alternative history, not the current Good/base identity. Existing carried unit cost is preserved; the Aug. 26 Good source shows $82.41 unit trade price, so price refresh remains a commercial follow-up rather than a selection blocker. | PROCUREMENT HOLD 2026-10-01: the August Lightology Good project confirms WAC1314240 only as the Good-tier comparison identity; it does not establish award. SHB sent an updated fixture list on 5/22, Lightopia issued estimate 700123242 on 5/27 with DALS Radiance FMM12-CC-BK for the secondary bedrooms, and on 7/30 SHB explicitly told Lightopia to keep the estimate open because finishes work was paused. Keep the live WAC line as the current Good-budget/reference line, but do not order until final fixture approval and current vendor quote/PO. | USER SELECTION CONFIRMED 2026-10-01: all bedroom ceiling fixtures, including Primary Bedrooms and Bedrooms 2-5, use Maxim Lighting Trim Round 120V Ceiling Light, Black, 16in, model 57670WTBK / Lightology Spec MAX1023280. Current public price $125.80 EA. Historical fixture identity and Actual Unit Cost remain preserved as prior design/pricing history. Count this Maxim fixture as the selected bedroom base scope.",
+        "NEEDS REVIEW 2026-10-01: Penthouse Bedroom 4 S4-2 live row carries a Twist-N-Lite cylinder pendant, but the dedicated 1529 Lighting Fixture Schedule still defines S4-2 as an approximately 16\" circular LED flush-mount ceiling fixture with selection TBD. Lightopia estimate 700122342 proposed Kuzco Brook 15\" Flush Mount FM43315-BG-5CCT at $75.48 each; current Kuzco product data confirms FM43315-BG-5CCT is a 15-1/8\" ceiling flush mount. Best sourced candidate is Brook, but the schedule never formally selected it and the 4/28/26 quote is expired. Retain live pendant/history; obtain final design approval and current quote before substitution. | RESOLVED BASE PACKAGE 2026-10-01: later Lightology Good project 17737 (8/26/26) and the 8/27 Good/Better/Best comparison deck explicitly assign WAC Lighting Twist-N-Lite spec WAC1314240 to the secondary-bedroom base package. The April Lightopia Brook FM43315-BG-5CCT quote is therefore retained as superseded vendor-alternative history, not the current Good/base identity. Existing carried unit cost is preserved; the Aug. 26 Good source shows $82.41 unit trade price, so price refresh remains a commercial follow-up rather than a selection blocker. | PROCUREMENT HOLD 2026-10-01: the August Lightology Good project confirms WAC1314240 only as the Good-tier comparison identity; it does not establish award. SHB sent an updated fixture list on 5/22, Lightopia issued estimate 700123242 on 5/27 with DALS Radiance FMM12-CC-BK for the secondary bedrooms, and on 7/30 SHB explicitly told Lightopia to keep the estimate open because finishes work was paused. Keep the live WAC line as the current Good-budget/reference line, but do not order until final fixture approval and current vendor quote/PO. | USER SELECTION CONFIRMED 2026-10-01: all bedroom ceiling fixtures, including Primary Bedrooms and Bedrooms 2-5, use Maxim Lighting Trim Round 120V Ceiling Light, Black, 16in, model 57670WTBK / Lightology Spec MAX1023280. Current public price $125.80 EA. Historical fixture identity and Actual Unit Cost remain preserved as prior design/pricing history. Count this Maxim fixture as the selected bedroom base scope.",
+        "NEEDS REVIEW 2026-10-01: Penthouse Bedroom 2 second unit S2-2 live row carries a Twist-N-Lite cylinder pendant, but the dedicated 1529 Lighting Fixture Schedule still defines S2-2 as an approximately 16\" circular LED flush-mount ceiling fixture with selection TBD. Lightopia estimate 700122342 proposed Kuzco Brook 15\" Flush Mount FM43315-BG-5CCT at $75.48 each; current Kuzco product data confirms FM43315-BG-5CCT is a 15-1/8\" ceiling flush mount. Best sourced candidate is Brook, but the schedule never formally selected it and the 4/28/26 quote is expired. Retain live pendant/history; obtain final design approval and current quote before substitution. | RESOLVED BASE PACKAGE 2026-10-01: later Lightology Good project 17737 (8/26/26) and the 8/27 Good/Better/Best comparison deck explicitly assign WAC Lighting Twist-N-Lite spec WAC1314240 to the secondary-bedroom base package. The April Lightopia Brook FM43315-BG-5CCT quote is therefore retained as superseded vendor-alternative history, not the current Good/base identity. Existing carried unit cost is preserved; the Aug. 26 Good source shows $82.41 unit trade price, so price refresh remains a commercial follow-up rather than a selection blocker. | PROCUREMENT HOLD 2026-10-01: the August Lightology Good project confirms WAC1314240 only as the Good-tier comparison identity; it does not establish award. SHB sent an updated fixture list on 5/22, Lightopia issued estimate 700123242 on 5/27 with DALS Radiance FMM12-CC-BK for the secondary bedrooms, and on 7/30 SHB explicitly told Lightopia to keep the estimate open because finishes work was paused. Keep the live WAC line as the current Good-budget/reference line, but do not order until final fixture approval and current vendor quote/PO. | USER SELECTION CONFIRMED 2026-10-01: all bedroom ceiling fixtures, including Primary Bedrooms and Bedrooms 2-5, use Maxim Lighting Trim Round 120V Ceiling Light, Black, 16in, model 57670WTBK / Lightology Spec MAX1023280. Current public price $125.80 EA. Historical fixture identity and Actual Unit Cost remain preserved as prior design/pricing history. Count this Maxim fixture as the selected bedroom base scope.",
+        "NEEDS REVIEW 2026-10-01: Penthouse Bedroom 3 second unit S3-2 live row carries a Twist-N-Lite cylinder pendant, but the dedicated 1529 Lighting Fixture Schedule still defines S3-2 as an approximately 16\" circular LED flush-mount ceiling fixture with selection TBD. Lightopia estimate 700122342 proposed Kuzco Brook 15\" Flush Mount FM43315-BG-5CCT at $75.48 each; current Kuzco product data confirms FM43315-BG-5CCT is a 15-1/8\" ceiling flush mount. Best sourced candidate is Brook, but the schedule never formally selected it and the 4/28/26 quote is expired. Retain live pendant/history; obtain final design approval and current quote before substitution. | RESOLVED BASE PACKAGE 2026-10-01: later Lightology Good project 17737 (8/26/26) and the 8/27 Good/Better/Best comparison deck explicitly assign WAC Lighting Twist-N-Lite spec WAC1314240 to the secondary-bedroom base package. The April Lightopia Brook FM43315-BG-5CCT quote is therefore retained as superseded vendor-alternative history, not the current Good/base identity. Existing carried unit cost is preserved; the Aug. 26 Good source shows $82.41 unit trade price, so price refresh remains a commercial follow-up rather than a selection blocker. | PROCUREMENT HOLD 2026-10-01: the August Lightology Good project confirms WAC1314240 only as the Good-tier comparison identity; it does not establish award. SHB sent an updated fixture list on 5/22, Lightopia issued estimate 700123242 on 5/27 with DALS Radiance FMM12-CC-BK for the secondary bedrooms, and on 7/30 SHB explicitly told Lightopia to keep the estimate open because finishes work was paused. Keep the live WAC line as the current Good-budget/reference line, but do not order until final fixture approval and current vendor quote/PO. | USER SELECTION CONFIRMED 2026-10-01: all bedroom ceiling fixtures, including Primary Bedrooms and Bedrooms 2-5, use Maxim Lighting Trim Round 120V Ceiling Light, Black, 16in, model 57670WTBK / Lightology Spec MAX1023280. Current public price $125.80 EA. Historical fixture identity and Actual Unit Cost remain preserved as prior design/pricing history. Count this Maxim fixture as the selected bedroom base scope.",
+        "NEEDS REVIEW 2026-10-01: Penthouse Bedroom 4 second unit S4-2 live row carries a Twist-N-Lite cylinder pendant, but the dedicated 1529 Lighting Fixture Schedule still defines S4-2 as an approximately 16\" circular LED flush-mount ceiling fixture with selection TBD. Lightopia estimate 700122342 proposed Kuzco Brook 15\" Flush Mount FM43315-BG-5CCT at $75.48 each; current Kuzco product data confirms FM43315-BG-5CCT is a 15-1/8\" ceiling flush mount. Best sourced candidate is Brook, but the schedule never formally selected it and the 4/28/26 quote is expired. Retain live pendant/history; obtain final design approval and current quote before substitution. | RESOLVED BASE PACKAGE 2026-10-01: later Lightology Good project 17737 (8/26/26) and the 8/27 Good/Better/Best comparison deck explicitly assign WAC Lighting Twist-N-Lite spec WAC1314240 to the secondary-bedroom base package. The April Lightopia Brook FM43315-BG-5CCT quote is therefore retained as superseded vendor-alternative history, not the current Good/base identity. Existing carried unit cost is preserved; the Aug. 26 Good source shows $82.41 unit trade price, so price refresh remains a commercial follow-up rather than a selection blocker. | PROCUREMENT HOLD 2026-10-01: the August Lightology Good project confirms WAC1314240 only as the Good-tier comparison identity; it does not establish award. SHB sent an updated fixture list on 5/22, Lightopia issued estimate 700123242 on 5/27 with DALS Radiance FMM12-CC-BK for the secondary bedrooms, and on 7/30 SHB explicitly told Lightopia to keep the estimate open because finishes work was paused. Keep the live WAC line as the current Good-budget/reference line, but do not order until final fixture approval and current vendor quote/PO. | USER SELECTION CONFIRMED 2026-10-01: all bedroom ceiling fixtures, including Primary Bedrooms and Bedrooms 2-5, use Maxim Lighting Trim Round 120V Ceiling Light, Black, 16in, model 57670WTBK / Lightology Spec MAX1023280. Current public price $125.80 EA. Historical fixture identity and Actual Unit Cost remain preserved as prior design/pricing history. Count this Maxim fixture as the selected bedroom base scope.",
+        "NEEDS REVIEW 2026-10-01: Triplex Bedroom 2 S2-1 live row carries a Twist-N-Lite cylinder pendant, but the dedicated 1529 Lighting Fixture Schedule still defines S2-1 as an approximately 16\" circular LED flush-mount ceiling fixture with selection TBD. Lightopia estimate 700122342 proposed Kuzco Brook 15\" Flush Mount FM43315-BG-5CCT at $75.48 each; current Kuzco product data confirms FM43315-BG-5CCT is a 15-1/8\" ceiling flush mount. Best sourced candidate is Brook, but the schedule never formally selected it and the 4/28/26 quote is expired. Retain live pendant/history; obtain final design approval and current quote before substitution. | RESOLVED BASE PACKAGE 2026-10-01: later Lightology Good project 17737 (8/26/26) and the 8/27 Good/Better/Best comparison deck explicitly assign WAC Lighting Twist-N-Lite spec WAC1314240 to the secondary-bedroom base package. The April Lightopia Brook FM43315-BG-5CCT quote is therefore retained as superseded vendor-alternative history, not the current Good/base identity. Existing carried unit cost is preserved; the Aug. 26 Good source shows $82.41 unit trade price, so price refresh remains a commercial follow-up rather than a selection blocker. | PROCUREMENT HOLD 2026-10-01: the August Lightology Good project confirms WAC1314240 only as the Good-tier comparison identity; it does not establish award. SHB sent an updated fixture list on 5/22, Lightopia issued estimate 700123242 on 5/27 with DALS Radiance FMM12-CC-BK for the secondary bedrooms, and on 7/30 SHB explicitly told Lightopia to keep the estimate open because finishes work was paused. Keep the live WAC line as the current Good-budget/reference line, but do not order until final fixture approval and current vendor quote/PO. | USER SELECTION VERIFIED 2026-10-01: user designated Lightology product option 1023280 for S2-1 through S5-1. Current page identifies Maxim Lighting Trim Round 120V Ceiling Light, Black, 16in x 1.5in, model 57670WTBK, Lightology Spec MAX1023280, integrated LED 25W, 3000K, 90 CRI, 1750 lm, wet-location rated. Current public price $125.80 EA with 100+ shown in stock. Historical live Actual Unit Cost $74.65 belongs to the superseded WAC line and is preserved; current price is recorded in Market Unit Price. | ALL-BEDROOM SCOPE CONFIRMED 2026-10-01: user confirmed the same Maxim 57670WTBK / Lightology MAX1023280 fixture applies to every bedroom, including Primary Bedrooms and Bedrooms 2-5. This row is selected base scope; exclude bedroom Best-option comparison rows from procurement/budget.",
+        "NEEDS REVIEW 2026-10-01: Triplex Bedroom 3 S3-1 live row carries a Twist-N-Lite cylinder pendant, but the dedicated 1529 Lighting Fixture Schedule still defines S3-1 as an approximately 16\" circular LED flush-mount ceiling fixture with selection TBD. Lightopia estimate 700122342 proposed Kuzco Brook 15\" Flush Mount FM43315-BG-5CCT at $75.48 each; current Kuzco product data confirms FM43315-BG-5CCT is a 15-1/8\" ceiling flush mount. Best sourced candidate is Brook, but the schedule never formally selected it and the 4/28/26 quote is expired. Retain live pendant/history; obtain final design approval and current quote before substitution. | RESOLVED BASE PACKAGE 2026-10-01: later Lightology Good project 17737 (8/26/26) and the 8/27 Good/Better/Best comparison deck explicitly assign WAC Lighting Twist-N-Lite spec WAC1314240 to the secondary-bedroom base package. The April Lightopia Brook FM43315-BG-5CCT quote is therefore retained as superseded vendor-alternative history, not the current Good/base identity. Existing carried unit cost is preserved; the Aug. 26 Good source shows $82.41 unit trade price, so price refresh remains a commercial follow-up rather than a selection blocker. | PROCUREMENT HOLD 2026-10-01: the August Lightology Good project confirms WAC1314240 only as the Good-tier comparison identity; it does not establish award. SHB sent an updated fixture list on 5/22, Lightopia issued estimate 700123242 on 5/27 with DALS Radiance FMM12-CC-BK for the secondary bedrooms, and on 7/30 SHB explicitly told Lightopia to keep the estimate open because finishes work was paused. Keep the live WAC line as the current Good-budget/reference line, but do not order until final fixture approval and current vendor quote/PO. | USER SELECTION VERIFIED 2026-10-01: user designated Lightology product option 1023280 for S2-1 through S5-1. Current page identifies Maxim Lighting Trim Round 120V Ceiling Light, Black, 16in x 1.5in, model 57670WTBK, Lightology Spec MAX1023280, integrated LED 25W, 3000K, 90 CRI, 1750 lm, wet-location rated. Current public price $125.80 EA with 100+ shown in stock. Historical live Actual Unit Cost $74.65 belongs to the superseded WAC line and is preserved; current price is recorded in Market Unit Price. | ALL-BEDROOM SCOPE CONFIRMED 2026-10-01: user confirmed the same Maxim 57670WTBK / Lightology MAX1023280 fixture applies to every bedroom, including Primary Bedrooms and Bedrooms 2-5. This row is selected base scope; exclude bedroom Best-option comparison rows from procurement/budget.",
+        "NEEDS REVIEW 2026-10-01: Triplex Bedroom 4 S4-1 live row carries a Twist-N-Lite cylinder pendant, but the dedicated 1529 Lighting Fixture Schedule still defines S4-1 as an approximately 16\" circular LED flush-mount ceiling fixture with selection TBD. Lightopia estimate 700122342 proposed Kuzco Brook 15\" Flush Mount FM43315-BG-5CCT at $75.48 each; current Kuzco product data confirms FM43315-BG-5CCT is a 15-1/8\" ceiling flush mount. Best sourced candidate is Brook, but the schedule never formally selected it and the 4/28/26 quote is expired. Retain live pendant/history; obtain final design approval and current quote before substitution. | RESOLVED BASE PACKAGE 2026-10-01: later Lightology Good project 17737 (8/26/26) and the 8/27 Good/Better/Best comparison deck explicitly assign WAC Lighting Twist-N-Lite spec WAC1314240 to the secondary-bedroom base package. The April Lightopia Brook FM43315-BG-5CCT quote is therefore retained as superseded vendor-alternative history, not the current Good/base identity. Existing carried unit cost is preserved; the Aug. 26 Good source shows $82.41 unit trade price, so price refresh remains a commercial follow-up rather than a selection blocker. | PROCUREMENT HOLD 2026-10-01: the August Lightology Good project confirms WAC1314240 only as the Good-tier comparison identity; it does not establish award. SHB sent an updated fixture list on 5/22, Lightopia issued estimate 700123242 on 5/27 with DALS Radiance FMM12-CC-BK for the secondary bedrooms, and on 7/30 SHB explicitly told Lightopia to keep the estimate open because finishes work was paused. Keep the live WAC line as the current Good-budget/reference line, but do not order until final fixture approval and current vendor quote/PO. | USER SELECTION VERIFIED 2026-10-01: user designated Lightology product option 1023280 for S2-1 through S5-1. Current page identifies Maxim Lighting Trim Round 120V Ceiling Light, Black, 16in x 1.5in, model 57670WTBK, Lightology Spec MAX1023280, integrated LED 25W, 3000K, 90 CRI, 1750 lm, wet-location rated. Current public price $125.80 EA with 100+ shown in stock. Historical live Actual Unit Cost $74.65 belongs to the superseded WAC line and is preserved; current price is recorded in Market Unit Price. | ALL-BEDROOM SCOPE CONFIRMED 2026-10-01: user confirmed the same Maxim 57670WTBK / Lightology MAX1023280 fixture applies to every bedroom, including Primary Bedrooms and Bedrooms 2-5. This row is selected base scope; exclude bedroom Best-option comparison rows from procurement/budget.",
+        "NEEDS REVIEW 2026-10-01: Triplex Bedroom 5 S5-1 live row carries a Twist-N-Lite cylinder pendant, but the dedicated 1529 Lighting Fixture Schedule still defines S5-1 as an approximately 16\" circular LED flush-mount ceiling fixture with selection TBD. Lightopia estimate 700122342 proposed Kuzco Brook 15\" Flush Mount FM43315-BG-5CCT at $75.48 each; current Kuzco product data confirms FM43315-BG-5CCT is a 15-1/8\" ceiling flush mount. Best sourced candidate is Brook, but the schedule never formally selected it and the 4/28/26 quote is expired. Retain live pendant/history; obtain final design approval and current quote before substitution. | RESOLVED BASE PACKAGE 2026-10-01: later Lightology Good project 17737 (8/26/26) and the 8/27 Good/Better/Best comparison deck explicitly assign WAC Lighting Twist-N-Lite spec WAC1314240 to the secondary-bedroom base package. The April Lightopia Brook FM43315-BG-5CCT quote is therefore retained as superseded vendor-alternative history, not the current Good/base identity. Existing carried unit cost is preserved; the Aug. 26 Good source shows $82.41 unit trade price, so price refresh remains a commercial follow-up rather than a selection blocker. | PROCUREMENT HOLD 2026-10-01: the August Lightology Good project confirms WAC1314240 only as the Good-tier comparison identity; it does not establish award. SHB sent an updated fixture list on 5/22, Lightopia issued estimate 700123242 on 5/27 with DALS Radiance FMM12-CC-BK for the secondary bedrooms, and on 7/30 SHB explicitly told Lightopia to keep the estimate open because finishes work was paused. Keep the live WAC line as the current Good-budget/reference line, but do not order until final fixture approval and current vendor quote/PO. | USER SELECTION VERIFIED 2026-10-01: user designated Lightology product option 1023280 for S2-1 through S5-1. Current page identifies Maxim Lighting Trim Round 120V Ceiling Light, Black, 16in x 1.5in, model 57670WTBK, Lightology Spec MAX1023280, integrated LED 25W, 3000K, 90 CRI, 1750 lm, wet-location rated. Current public price $125.80 EA with 100+ shown in stock. Historical live Actual Unit Cost $74.65 belongs to the superseded WAC line and is preserved; current price is recorded in Market Unit Price. | ALL-BEDROOM SCOPE CONFIRMED 2026-10-01: user confirmed the same Maxim 57670WTBK / Lightology MAX1023280 fixture applies to every bedroom, including Primary Bedrooms and Bedrooms 2-5. This row is selected base scope; exclude bedroom Best-option comparison rows from procurement/budget."
+      ]
+    },
+    {
+      "key": "HOLD_PERGOLA",
+      "rows": 2,
+      "folder": "P1-2__1730804001013636",
+      "technical_pass": null,
+      "model": null,
+      "source_url": null,
+      "inferences": null,
+      "search": null,
+      "category": null,
+      "actual": null,
+      "expected": null,
+      "gates": null,
+      "rfa_path": null,
+      "rfa_sha256": null,
+      "rfa_signature": null,
+      "validation_sha256": null,
+      "preview_count": 0,
+      "missing_previews": [],
+      "source_notes": [
+        "SCHEDULE SCOPE ADDED 2026-10-01: dedicated schedule + current roof plan require P1-2 exterior wet-rated LED ceiling fixtures at the Penthouse pergola, Qty 3 per unit. Product/SKU/AUC remain TBD; required quantity is recorded so the omission is visible and cannot be treated as savings.",
+        "SCHEDULE SCOPE ADDED 2026-10-01: dedicated schedule + current roof plan require P1-1 exterior wet-rated LED ceiling fixtures at the Triplex pergola, Qty 3 per unit. Product/SKU/AUC remain TBD; required quantity is recorded so the omission is visible and cannot be treated as savings."
+      ]
+    },
+    {
+      "key": "MXG1933070",
+      "rows": 2,
+      "folder": "C1-2__6797353581805444",
+      "technical_pass": true,
+      "model": "MXG1933070",
+      "source_url": "https://nola.gov/getattachment/NEXT/City-Planning/Meetings/Previous-Years-Meetings/Previous-Years/2024-Year/January/Design-Advisory-Committee/1-17-2024-10-00-00-AM/Item-3_.pdf/",
+      "inferences": "Exact Lumens-authored MXG1933070 cut sheet reproduced in the public project packet: black, 5-inch diameter, 0.75-inch height. Current Lumens URL returned HTTP 403. ASSUMPTION: rim thickness and optic recess; no dimensions borrowed from larger variants.",
+      "search": "Public primary product resources and the retained exact product page were inspected; no direct, exact native RFA was available in those resources. This does not assert that no RFA exists elsewhere.",
+      "category": "Lighting Fixtures",
+      "actual": [
+        5.0,
+        5.0,
+        0.75
+      ],
+      "expected": [
+        5,
+        5,
+        0.75
+      ],
+      "gates": {
+        "cct": true,
+        "materials": true,
+        "saved_bitmaps_resolve": true,
+        "reopened": true,
+        "dimensions": true,
+        "saved_dimensions_within_1mm": true,
+        "actual_face_host": true,
+        "saved_components_within_1mm": true,
+        "orientation": true,
+        "warnings": true,
+        "views": true,
+        "category": true
+      },
+      "rfa_path": "E:\\Claude\\3D-Model-Workflow\\output\\1527_wieland\\electrical_fixtures\\C1-2__6797353581805444\\Huxe_Silvio_5_Black_R2025.rfa",
+      "rfa_sha256": "0b7246015359040b88a1dfa28da7306ffaf0765a46f989586efa91a128182830",
+      "rfa_signature": "d0cf11e0a1b11ae1",
+      "validation_sha256": "e2b2b0ecf6e01b3ca2406d6c2f4e46616d234c963c626c259725ffa6078ab3a7",
+      "preview_count": 9,
+      "missing_previews": [],
+      "source_notes": [
+        "SCHEDULE SCOPE ADDED 2026-10-01: dedicated Wieland Lighting Fixture Schedule requires C1-2 Huxe Silvio LED Flushmount, Black, 5in, spec MXG1933070, Qty 6 per Penthouse unit at aggregate closet locations. Product identity and per-unit quantity are high confidence. AUC intentionally left blank: current Lumens family pricing is visible but exact current MXG1933070 variant pricing/award is not independently confirmed. Do not treat blank cost as savings.",
+        "SCHEDULE SCOPE ADDED 2026-10-01: dedicated Wieland Lighting Fixture Schedule requires C1-1 Huxe Silvio LED Flushmount, Black, 5in, spec MXG1933070, Qty 9 per Triplex unit at aggregate closet locations. Product identity and per-unit quantity are high confidence. AUC intentionally left blank: exact current MXG1933070 variant pricing/award is not independently confirmed. Do not treat blank cost as savings."
+      ]
+    },
+    {
+      "key": "4BEMW_SWW5_90CRI_M6",
+      "rows": 2,
+      "folder": "D1__5671453674962820",
+      "technical_pass": true,
+      "model": "4BEMW SWW5 90CRI M6",
+      "source_url": "https://media.distributordatasolutions.com/326/auto_mfr_template/134763e8823704c00d6820e833bb6f9a6caede5a.pdf",
+      "inferences": "Manufacturer-authored 4BE/4SE SWW5 spec dated 2024-12-02, downloaded from the exact-product distributor resource: 5.25-inch overlap trim, 4-inch aperture and tabulated 3.16-inch height. Drawing rounds height to 3-1/6 inch (0.17 mm difference). These override retailer 5.23 x 3.42. ASSUMPTION: stepped baffle profile, clip sizes and motor/driver envelope are drawing-derived. Above-ceiling adapter whip omitted; one module, not a package. Newer manufacturer URL was inaccessible; the retained drawing edition is disclosed.",
+      "search": "Public manufacturer and reputable BIM resource searches retained. No exact acceptable anonymous native RFA accepted; see acquisition evidence.",
+      "category": "Lighting Fixtures",
+      "actual": [
+        5.25,
+        5.25,
+        3.1600000485777855
+      ],
+      "expected": [
+        5.25,
+        5.25,
+        3.16
+      ],
+      "gates": {
+        "views": true,
+        "warnings": true,
+        "reopened": true,
+        "saved_bitmaps_resolve": true,
+        "saved_radial_dimensions_within_1mm": true,
+        "actual_face_host": true,
+        "dimensions": true,
+        "saved_components_within_1mm": true,
+        "category": true,
+        "cct": true,
+        "saved_dimensions_within_1mm": true,
+        "orientation": true,
+        "materials": true
+      },
+      "rfa_path": "E:\\Claude\\3D-Model-Workflow\\output\\1527_wieland\\electrical_fixtures\\D1__5671453674962820\\Juno_4BEMW_SWW5_90CRI_M6_R2025.rfa",
+      "rfa_sha256": "5b266b753d2c31dc73e833b4fba205e551fbf0e42d105074b06c69b3e35016b9",
+      "rfa_signature": "d0cf11e0a1b11ae1",
+      "validation_sha256": "5650a1c17fb4bee06f6e9ac83b110498e57395f59db5884a44c01a00946a0931",
+      "preview_count": 9,
+      "missing_previews": [],
+      "source_notes": [
+        "SCHEDULE SCOPE ADDED 2026-10-01: D1 is required throughout ceilings. Dedicated schedule contains D1 quantities 77 and 92, while the 4/28 room-by-room recessed BOM does not reconcile cleanly to those totals/current hierarchy. Unit mapping/quantity intentionally left blank pending count reconciliation. Exact Juno SKU verified; current Ferguson retail evidence exists, but no AUC is written until quantity basis is reconciled. Blank cost is unresolved scope, not savings. | QUANTITY RESOLVED 2026-10-01: governing 1527 Wieland Lighting Fixture Schedule explicitly assigns D1 4BEMW SWW5 90CRI M6 Qty 77 per Penthouse unit. Current market check: Crown Supply lists the exact Juno 4BEMW SWW5 90CRI at $17.24/EA with stock; use only as a current planning benchmark until awarded-supplier pricing is issued.",
+        "SCHEDULE SCOPE ADDED 2026-10-01: D1 is required throughout ceilings. Dedicated schedule contains D1 quantities 77 and 92, while the 4/28 room-by-room recessed BOM does not reconcile cleanly to those totals/current hierarchy. Unit mapping/quantity intentionally left blank pending count reconciliation. Exact Juno SKU verified; current Ferguson retail evidence exists, but no AUC is written until quantity basis is reconciled. Blank cost is unresolved scope, not savings. | QUANTITY RESOLVED 2026-10-01: governing 1527 Wieland Lighting Fixture Schedule explicitly assigns D1 4BEMW SWW5 90CRI M6 Qty 92 per Triplex unit. Current market check: Crown Supply lists the exact Juno 4BEMW SWW5 90CRI at $17.24/EA with stock; use only as a current planning benchmark until awarded-supplier pricing is issued."
+      ]
+    },
+    {
+      "key": "QC4_J6",
+      "rows": 2,
+      "folder": "D2__7923253488648068",
+      "technical_pass": true,
+      "model": "QC4 J6",
+      "source_url": "https://pdmassets.azureedge.net/library/JL/documents/specsheets/QC4.pdf",
+      "inferences": "Manufacturer drawing: 5.375-inch housing height, 4.5-inch ceiling cutout, and 13.5-inch supplied bar-hanger length. J6 denotes packaging of six, not a different shape. ASSUMPTION: 9-inch transverse assembly envelope, can wall thickness and junction-box dimensions are drawing-derived. Bars are shown at the supplied length; extension and wiring are not modeled. Housing sits above its ceiling mounting plane.",
+      "search": "Official product resources and verified BIM listings searched; no exact, usable anonymous RFA accepted. See retained source resources and manufacturer acquisition/inspection receipts.",
+      "category": "Lighting Fixtures",
+      "actual": [
+        9.0,
+        13.5,
+        5.375
+      ],
+      "expected": [
+        9,
+        13.5,
+        5.375
+      ],
+      "gates": {
+        "dimensions": true,
+        "materials": true,
+        "views": true,
+        "reopened": true,
+        "saved_dimensions_within_1mm": true,
+        "orientation": true,
+        "actual_face_host": true,
+        "category": true,
+        "saved_components_within_1mm": true,
+        "warnings": true,
+        "cct": true,
+        "saved_bitmaps_resolve": true
+      },
+      "rfa_path": "E:\\Claude\\3D-Model-Workflow\\output\\1527_wieland\\electrical_fixtures\\D2__7923253488648068\\Juno_QC4_J6_Housing_R2025.rfa",
+      "rfa_sha256": "8067608b45dc67d4d0222c11fd94e4073eb5cfcc3e00e2964d6ec9d730d97638",
+      "rfa_signature": "d0cf11e0a1b11ae1",
+      "validation_sha256": "74bfa863d58baa0b1dea684ad8b1c18df26fb87cadf8262a84f2e6848b43c9db",
+      "preview_count": 9,
+      "missing_previews": [],
+      "source_notes": [
+        "SCHEDULE SCOPE ADDED 2026-10-01: D2/QC4 J6 housing is required, but dedicated schedule Qty 8/12 conflicts with the 4/28 recessed BOM, which pairs QC4 J6 one-for-one with D1 trims. Qty/AUC intentionally blank until 20-vs-169 count basis is reconciled. Do not treat as zero scope. | QUANTITY RESOLVED 2026-10-01: governing 1527 Wieland Lighting Fixture Schedule explicitly assigns D2 QC4 J6 Qty 8 per Penthouse unit. Acuity/Juno confirms QC4 as the compatible quick-connect new-construction housing; current retailer evidence lists QC4 J6 at $27.84/EA. Treat that only as a planning benchmark pending awarded-supplier quote.",
+        "SCHEDULE SCOPE ADDED 2026-10-01: D2/QC4 J6 housing is required, but dedicated schedule Qty 8/12 conflicts with the 4/28 recessed BOM, which pairs QC4 J6 one-for-one with D1 trims. Qty/AUC intentionally blank until 20-vs-169 count basis is reconciled. Do not treat as zero scope. | QUANTITY RESOLVED 2026-10-01: governing 1527 Wieland Lighting Fixture Schedule explicitly assigns D2 QC4 J6 Qty 12 per Triplex unit. Acuity/Juno confirms QC4 as the compatible quick-connect new-construction housing; current retailer evidence lists QC4 J6 at $27.84/EA. Treat that only as a planning benchmark pending awarded-supplier quote."
+      ]
+    },
+    {
+      "key": "EA-PAR16-7.0W-36D-2790-D_16_WH",
+      "rows": 1,
+      "folder": "D3__5108503721541508",
+      "technical_pass": null,
+      "model": null,
+      "source_url": null,
+      "inferences": null,
+      "search": null,
+      "category": null,
+      "actual": null,
+      "expected": null,
+      "gates": null,
+      "rfa_path": null,
+      "rfa_sha256": null,
+      "rfa_signature": null,
+      "validation_sha256": null,
+      "preview_count": 0,
+      "missing_previews": [],
+      "source_notes": [
+        "SCHEDULE SCOPE ADDED 2026-10-01: dedicated schedule requires D3 at Qty 3 per Triplex unit / Atrium-Hall condition. Current scheduled assembly is not procurement-compatible as written: Juno 16 WH is specified for R14/R16 intermediate-base lamps while EA-PAR16-7.0W-36D-2790-D is an E26 PAR16; 4/28 BOM also adds IC1 housing. Qty is recorded to preserve required scope; component SKU/AUC remain HOLD until a compatible assembly is issued."
+      ]
+    },
+    {
+      "key": "HOLD_LED_STRIP",
+      "rows": 2,
+      "folder": "LED__2856703907856260",
+      "technical_pass": null,
+      "model": null,
+      "source_url": null,
+      "inferences": null,
+      "search": null,
+      "category": null,
+      "actual": null,
+      "expected": null,
+      "gates": null,
+      "rfa_path": null,
+      "rfa_sha256": null,
+      "rfa_signature": null,
+      "validation_sha256": null,
+      "preview_count": 0,
+      "missing_previews": [],
+      "source_notes": [
+        "SCHEDULE SCOPE ADDED 2026-10-01: dedicated schedule requires 5 LED-strip runs per Penthouse unit at kitchen cabinets/shower niches. Required scope/quantity is recorded; LF, driver, channel, wattage/CCT, wet-location details, selected product and AUC remain unresolved. Do not treat blank cost as savings.",
+        "SCHEDULE SCOPE ADDED 2026-10-01: dedicated schedule requires 5 LED-strip runs per Triplex unit at kitchen cabinets/shower niches. Required scope/quantity is recorded; LF, driver, channel, wattage/CCT, wet-location details, selected product and AUC remain unresolved. Do not treat blank cost as savings."
+      ]
+    },
+    {
+      "key": "BOM1273301",
+      "rows": 2,
+      "folder": "BOM1273301__842052721573764",
+      "technical_pass": true,
+      "model": "1/49/95304/1/00000/130/WL/USA/T",
+      "source_url": "https://www.lightology.com/index.php?module=prod_detail&prod_id=1273301",
+      "inferences": "Exact silver/clear 130 variant; published 5.11-inch diameter and 3.07-inch projection. Manufacturer installation manual and product photograph inform the curved glass and central light engine. ASSUMPTION: glass thickness and hidden fastening details; manually blown glass will vary.",
+      "search": "Official product resources and verified BIM listings searched; no exact, usable anonymous RFA accepted. See retained source resources and manufacturer acquisition/inspection receipts.",
+      "category": "Lighting Fixtures",
+      "actual": [
+        5.110000133514404,
+        5.106513798236847,
+        3.069999933242798
+      ],
+      "expected": [
+        5.11,
+        5.11,
+        3.07
+      ],
+      "gates": {
+        "saved_bitmaps_resolve": true,
+        "category": true,
+        "cct": true,
+        "dimensions": true,
+        "saved_components_within_1mm": true,
+        "saved_dimensions_within_1mm": true,
+        "warnings": true,
+        "actual_face_host": true,
+        "views": true,
+        "materials": true,
+        "orientation": true,
+        "reopened": true
+      },
+      "rfa_path": "E:\\Claude\\3D-Model-Workflow\\output\\1527_wieland\\electrical_fixtures\\BOM1273301__842052721573764\\Bomma_Dew_Drops_Silver_Clear_R2025.rfa",
+      "rfa_sha256": "5c20dba5938e579572139581d77277a3d842cbd796fb804a6d95bbf3f0a7442c",
+      "rfa_signature": "d0cf11e0a1b11ae1",
+      "validation_sha256": "1c9e0aa1aa9d120658d4f664051489cdbbc7a873cf281352553a0e2c180fd7af",
+      "preview_count": 9,
+      "missing_previews": [],
+      "source_notes": []
+    },
+    {
+      "key": "VIS1256139",
+      "rows": 2,
+      "folder": "VIS1256139__8160402116050820",
+      "technical_pass": true,
+      "model": "FARO SP P CRBCNEOL32 UL",
+      "source_url": "https://www.lightology.com/img/prod/pdf/FARO%20SP%20P%20UL-combined-11-9-23.pdf",
+      "inferences": "Scheduled small US variant has a 14-inch diameter and 11-inch body height. Manufacturer cover and assembly illustrations show a clear upper rounded vessel and smaller opal lower vessel joined by a dark ring. ASSUMPTION: 48-inch installed drop, 4.75-inch canopy, glass thickness and smooth profile transitions; suspension is fixed in this visualization family.",
+      "search": "Official product resources and verified BIM listings searched; no exact, usable anonymous RFA accepted. See retained source resources and manufacturer acquisition/inspection receipts.",
+      "category": "Lighting Fixtures",
+      "actual": [
+        13.999999523162842,
+        13.999999523162842,
+        48.0
+      ],
+      "expected": [
+        14,
+        14,
+        48
+      ],
+      "gates": {
+        "saved_bitmaps_resolve": true,
+        "category": true,
+        "cct": true,
+        "dimensions": true,
+        "saved_components_within_1mm": true,
+        "saved_dimensions_within_1mm": true,
+        "warnings": true,
+        "actual_face_host": true,
+        "views": true,
+        "materials": true,
+        "orientation": true,
+        "reopened": true
+      },
+      "rfa_path": "E:\\Claude\\3D-Model-Workflow\\output\\1527_wieland\\electrical_fixtures\\VIS1256139__8160402116050820\\Vistosi_Faro_SP_P_Crystal_Black_R2025.rfa",
+      "rfa_sha256": "6ef0573d12bef816aa6f03d0f03ecbe3d73019d81b938d3d1828b0ae3f2b99d2",
+      "rfa_signature": "d0cf11e0a1b11ae1",
+      "validation_sha256": "c1068f55e0f161bb78fb1458ad7e914185a741f4322db9fd2946584a1b270ca3",
+      "preview_count": 9,
+      "missing_previews": [],
+      "source_notes": []
+    },
+    {
+      "key": "DCW1122128",
+      "rows": 1,
+      "folder": "DCW1122128__5908602302365572",
+      "technical_pass": true,
+      "model": "FOCUS X3 BL ETL",
+      "source_url": "https://dcw-editions.com/fr-us/products/focus-3-etl",
+      "inferences": "Reconstructed from the previously verified native Focus X3 source. Manufacturer gives 230-mm canopy, 26-mm canopy depth, 1037-mm mobile height and 364/364/284-mm discs. The 998-mm drawing width is indicative and changes with arm angles. This fixed representative angular arrangement has a separately measured actual envelope of about 27.047 x 27.323 inches and a 60-inch installed drop. ASSUMPTION: source arm angles and profile details; this edition has editable finishes and fixed suspension geometry.",
+      "search": "Official product resources and verified BIM listings searched; no exact, usable anonymous RFA accepted. See retained source resources and manufacturer acquisition/inspection receipts.",
+      "category": "Lighting Fixtures",
+      "actual": [
+        27.047244300992222,
+        27.322835088714513,
+        60.0
+      ],
+      "expected": [
+        27.0472440945,
+        27.3228346457,
+        60
+      ],
+      "gates": {
+        "dimensions": true,
+        "materials": true,
+        "views": true,
+        "reopened": true,
+        "saved_dimensions_within_1mm": true,
+        "orientation": true,
+        "actual_face_host": true,
+        "category": true,
+        "saved_components_within_1mm": true,
+        "warnings": true,
+        "cct": true,
+        "saved_bitmaps_resolve": true
+      },
+      "rfa_path": "E:\\Claude\\3D-Model-Workflow\\output\\1527_wieland\\electrical_fixtures\\DCW1122128__5908602302365572\\DCW_Focus_X3_Black_Representative_R2025.rfa",
+      "rfa_sha256": "ed1083f573f8a35093a8afc9c48241e0996f614da58839e5ab54e45d47e1b259",
+      "rfa_signature": "d0cf11e0a1b11ae1",
+      "validation_sha256": "49a2bc092e9c85e05ad660b012fab882f94f8feb6f84270f9ccf993d3ac6199a",
+      "preview_count": 9,
+      "missing_previews": [],
+      "source_notes": []
+    },
+    {
+      "key": "SKL924074",
+      "rows": 2,
+      "folder": "SKL924074__1405002674995076",
+      "technical_pass": true,
+      "model": "LT267WHTDX-BLK",
+      "source_url": "https://www.sklo.com/wp-content/uploads/2026/06/SkLO_Hold_12_Sconce_LT267_260609.pdf",
+      "inferences": "Current June 2026 manufacturer drawing: 18-inch overall height, 5-inch width, 5.5-inch projection, 5-inch plate and 12-inch glass vessel. The free 3D download contains no RFA; its older handblown mesh is nonmanifold and wider than the current nominal. ASSUMPTION: smooth asymmetrical vessel profile, 3.5-inch glass depth, open handle and wall thickness are reconstructed from the current drawing and product photograph. Handblown glass dimensions and color naturally vary; individual article fidelity is not established.",
+      "search": "Public manufacturer and reputable BIM resource searches retained. No exact acceptable anonymous native RFA accepted; see acquisition evidence.",
+      "category": "Lighting Fixtures",
+      "actual": [
+        4.9999998807907104,
+        18.0,
+        5.499675035476685
+      ],
+      "expected": [
+        5,
+        18,
+        5.5
+      ],
+      "gates": {
+        "views": true,
+        "warnings": true,
+        "reopened": true,
+        "saved_bitmaps_resolve": true,
+        "saved_radial_dimensions_within_1mm": true,
+        "actual_face_host": true,
+        "dimensions": true,
+        "saved_components_within_1mm": true,
+        "category": true,
+        "cct": true,
+        "saved_dimensions_within_1mm": true,
+        "orientation": true,
+        "materials": true
+      },
+      "rfa_path": "E:\\Claude\\3D-Model-Workflow\\output\\1527_wieland\\electrical_fixtures\\SKL924074__1405002674995076\\SkLO_Hold12_LT267_White_Dark_Oxidized_R2025.rfa",
+      "rfa_sha256": "880664e6346d6aeafb9c56e60e79e6611ea220851197275b365b4ee6a2589b40",
+      "rfa_signature": "d0cf11e0a1b11ae1",
+      "validation_sha256": "19ffa605e21d75973dbe3820e73c8053ab880cae50e7b5848876bcaa9ae8f13b",
+      "preview_count": 9,
+      "missing_previews": [],
+      "source_notes": [
+        "SUPERSEDED COMPARISON OPTION 2026-10-01: user confirmed all bedroom fixtures use Maxim 57670WTBK / Lightology MAX1023280. Preserve this \"Best\" option and historical pricing for comparison only; exclude from selected/base Lighting budget and procurement quantity."
+      ]
+    },
+    {
+      "key": "VIS1486649",
+      "rows": 2,
+      "folder": "VIS1486649__3656802488680324",
+      "technical_pass": true,
+      "model": "JUBE AP S FUTRNEOL22 UL",
+      "source_url": "https://www.lightology.com/img/prod/pdf/JUBE%20AP%20S%20UL-6-16-23.pdf",
+      "inferences": "Scheduled small US variant: 7-inch width, 14-inch height and 8-inch projection; 4.5-inch wall plate. Exact matte-black/smoke finishes follow the selected Lightology option; the manufacturer cover picture is geometry evidence only. ASSUMPTION: glass section, wall-arm height and internal light-engine details; preserve the stem below the glass and lower wall mounting.",
+      "search": "Official product resources and verified BIM listings searched; no exact, usable anonymous RFA accepted. See retained source resources and manufacturer acquisition/inspection receipts.",
+      "category": "Lighting Fixtures",
+      "actual": [
+        7.013128280639648,
+        14.0,
+        8.005542755126953
+      ],
+      "expected": [
+        7,
+        14,
+        8
+      ],
+      "gates": {
+        "dimensions": true,
+        "materials": true,
+        "views": true,
+        "reopened": true,
+        "saved_dimensions_within_1mm": true,
+        "orientation": true,
+        "actual_face_host": true,
+        "category": true,
+        "saved_components_within_1mm": true,
+        "warnings": true,
+        "cct": true,
+        "saved_bitmaps_resolve": true
+      },
+      "rfa_path": "E:\\Claude\\3D-Model-Workflow\\output\\1527_wieland\\electrical_fixtures\\VIS1486649__3656802488680324\\Vistosi_Jube_AP_S_Smoke_Black_R2025.rfa",
+      "rfa_sha256": "a95279ebc11a43c9cf3099387b904f0617c984a8b460304d647362940f81e660",
+      "rfa_signature": "d0cf11e0a1b11ae1",
+      "validation_sha256": "f7a0804d30630950a4fa82be253b43e9b868af89c140d64eb9afdfc6fa32dd2d",
+      "preview_count": 9,
+      "missing_previews": [],
+      "source_notes": []
+    },
+    {
+      "key": "ORION_TUBE_UNSPECIFIED",
+      "rows": 2,
+      "folder": "Best_option_-_Orion_Tube_Pendant__1967952628416388",
+      "technical_pass": null,
+      "model": null,
+      "source_url": null,
+      "inferences": null,
+      "search": null,
+      "category": null,
+      "actual": null,
+      "expected": null,
+      "gates": null,
+      "rfa_path": null,
+      "rfa_sha256": null,
+      "rfa_signature": null,
+      "validation_sha256": null,
+      "preview_count": 0,
+      "missing_previews": [],
+      "source_notes": []
+    },
+    {
+      "key": "HNM1353351",
+      "rows": 7,
+      "folder": "HNM1353351__6471552255786884",
+      "technical_pass": true,
+      "model": "OSTRsconce-BSS-FR",
+      "source_url": "https://hollisandmorris.com/products/oyster-sconce2",
+      "inferences": "Current exact SKU is brushed stainless steel with frosted diffuser. Geometry rebuilt from inspected prior native family; source file preserved. Small frame edge radius and uniform brushed-metal approximation are visual inferences.",
+      "search": "Manufacturer offers Request 3D models, without a direct anonymous RFA link on the inspected page.",
+      "category": "Lighting Fixtures",
+      "actual": [
+        5.240000009536743,
+        12.0,
+        3.0
+      ],
+      "expected": [
+        5.24,
+        12,
+        3
+      ],
+      "gates": {
+        "dimensions": true,
+        "orientation": true,
+        "cct": true,
+        "reopened": true,
+        "materials": true,
+        "category": true,
+        "actual_face_host": true,
+        "saved_bitmaps_resolve": true,
+        "warnings": true,
+        "saved_dimensions_within_1mm": true,
+        "views": true
+      },
+      "rfa_path": "E:\\Claude\\3D-Model-Workflow\\output\\1527_wieland\\electrical_fixtures\\HNM1353351__6471552255786884\\Hollis_Morris_Oyster_BSS_FR_R2025.rfa",
+      "rfa_sha256": "fe9707d37aa839d3b2fbf8893b7745d9879d0b8c9f703d1244c3b514a8a7a1a6",
+      "rfa_signature": "d0cf11e0a1b11ae1",
+      "validation_sha256": "b87bad47f9dbe72d58c18637f023c3e911133601b4b204f75f4cc9a668034389",
+      "preview_count": 9,
+      "missing_previews": [],
+      "source_notes": [
+        "SUPERSEDED COMPARISON OPTION 2026-10-01: user confirmed all bedroom fixtures use Maxim 57670WTBK / Lightology MAX1023280. Preserve this \"Best\" option and historical pricing for comparison only; exclude from selected/base Lighting budget and procurement quantity."
+      ]
+    },
+    {
+      "key": "KRK1205030",
+      "rows": 7,
+      "folder": "KRK1205030__5345652348944260",
+      "technical_pass": true,
+      "model": "REE-W-O-30-PN",
+      "source_url": "https://www.tomkirk.com/site/assets/files/7382/tom_kirk_lighting-reed_wall_light.pdf",
+      "inferences": "Manufacturer printed inch dimensions govern the US model: 4.25 x 26.75 x 2 inches. ASSUMPTION: stem diameter, spindle taper, lens outline and plate thickness derived from the exact polished-nickel photograph. Two outward-facing lenses. Fixed nominal geometry; material parameters editable.",
+      "search": "Public primary product resources and the retained exact product page were inspected; no direct, exact native RFA was available in those resources. This does not assert that no RFA exists elsewhere.",
+      "category": "Lighting Fixtures",
+      "actual": [
+        4.2499998807907104,
+        26.750000953674316,
+        2.0000000596046448
+      ],
+      "expected": [
+        4.25,
+        26.75,
+        2
+      ],
+      "gates": {
+        "cct": true,
+        "materials": true,
+        "saved_bitmaps_resolve": true,
+        "reopened": true,
+        "dimensions": true,
+        "saved_dimensions_within_1mm": true,
+        "actual_face_host": true,
+        "saved_components_within_1mm": true,
+        "orientation": true,
+        "warnings": true,
+        "views": true,
+        "category": true
+      },
+      "rfa_path": "E:\\Claude\\3D-Model-Workflow\\output\\1527_wieland\\electrical_fixtures\\KRK1205030__5345652348944260\\Tom_Kirk_Reed_Outward_Polished_Nickel_R2025.rfa",
+      "rfa_sha256": "c51f0f4dc62eb36e7cf7dc0a68adc71e27c4719962e610158a39e3a9b112f2c3",
+      "rfa_signature": "d0cf11e0a1b11ae1",
+      "validation_sha256": "cd257a45de2551fae75050bda665f7e2e30eea06803c7103a03eaa329e9782bb",
+      "preview_count": 9,
+      "missing_previews": [],
+      "source_notes": []
+    },
+    {
+      "key": "DVP27002GR-CL",
+      "rows": 3,
+      "folder": "T1-2__2768226949398404",
+      "technical_pass": true,
+      "model": "DVP27002GR-CL",
+      "source_url": "https://www.lightology.com/index.php?module=prod_detail&prod_id=873039",
+      "inferences": "Manufacturer body envelope 46.6 x 21.59 x 12.95 inches. ASSUMPTION: 50.5-inch installed drop. Arm centers, globe diameter, canopy and internal lamps remain photo/drawing-derived details from inspected prior native geometry. Fixed geometry; editable material finishes.",
+      "search": "No native RFA link in current public product technical resources inspected; prior native reconstruction retained as geometry source.",
+      "category": "Lighting Fixtures",
+      "actual": [
+        46.59978103637695,
+        21.59000015258789,
+        50.49968719482422
+      ],
+      "expected": [
+        46.6,
+        21.59,
+        50.5
+      ],
+      "gates": {
+        "dimensions": true,
+        "orientation": true,
+        "cct": true,
+        "reopened": true,
+        "materials": true,
+        "category": true,
+        "actual_face_host": true,
+        "saved_bitmaps_resolve": true,
+        "warnings": true,
+        "saved_dimensions_within_1mm": true,
+        "views": true
+      },
+      "rfa_path": "E:\\Claude\\3D-Model-Workflow\\output\\1527_wieland\\electrical_fixtures\\T1-2__2768226949398404\\DVI_Courcelette_DVP27002GR_CL_R2025.rfa",
+      "rfa_sha256": "39453542763c18cc368afff004c15df86db4111aaab00e856d173997a5dd8b31",
+      "rfa_signature": "d0cf11e0a1b11ae1",
+      "validation_sha256": "175e2cd8fbe4fe2e9c0341525b7c9f18c1cf8e64640a095cc85f1f05329578cf",
+      "preview_count": 9,
+      "missing_previews": [],
+      "source_notes": []
+    },
+    {
+      "key": "AMB-MB-56-EB-870-CC",
+      "rows": 1,
+      "folder": "R1-2__8983424938999684",
+      "technical_pass": true,
+      "model": "AMB-MB-56-EB-870-CC",
+      "source_url": "https://modernfan.com/wp-content/uploads/AMB-Cutsheet.pdf",
+      "inferences": "Exact scheduled matte-black / ebony / 870 LED combination. Manufacturer: 56-inch swept blade diameter, 5.5-inch canopy, 7.9-inch housing, 13.7-inch standard drop with 6-inch rod; LED option adds 0.75 inch, giving 14.45 inches. The stationary three-blade rectangular bounds are recorded separately and must not be confused with swept diameter. ASSUMPTION: blade airfoil/twist, housing curves and ebony wood-print optical detail are approximated; the included 16-inch rod alternative is not modeled. Finishes remain editable.",
+      "search": "Public manufacturer and reputable BIM resource searches retained. No exact acceptable anonymous native RFA accepted; see acquisition evidence.",
+      "category": "Lighting Fixtures",
+      "actual": [
+        44.30700351882155,
+        50.862968461563206,
+        14.449999809265137
+      ],
+      "expected": [
+        44.30700351882155,
+        50.862968461563206,
+        14.45
+      ],
+      "gates": {
+        "views": true,
+        "warnings": true,
+        "reopened": true,
+        "saved_bitmaps_resolve": true,
+        "saved_radial_dimensions_within_1mm": true,
+        "actual_face_host": true,
+        "dimensions": true,
+        "saved_components_within_1mm": true,
+        "category": true,
+        "cct": true,
+        "saved_dimensions_within_1mm": true,
+        "orientation": true,
+        "materials": true
+      },
+      "rfa_path": "E:\\Claude\\3D-Model-Workflow\\output\\1527_wieland\\electrical_fixtures\\R1-2__8983424938999684\\Modern_Fan_Ambit_MB_56_EB_870_CC_R2025.rfa",
+      "rfa_sha256": "a0efba516a72180517548d3f0d69806ca7805328b474a3d4774c9925e59cedc9",
+      "rfa_signature": "d0cf11e0a1b11ae1",
+      "validation_sha256": "0984a1897789d89d267d70801d0c77e6570088b8b7d4b0dc8659574464010b34",
+      "preview_count": 9,
+      "missing_previews": [],
+      "source_notes": []
+    },
+    {
+      "key": "DP-WS-S1-AA04-30-10_TRIAC_120V-IP65",
+      "rows": 2,
+      "folder": "B2-2__5960925969973124",
+      "technical_pass": true,
+      "model": "DP-WS-S1-AA04-30-10_TRIAC_120V-IP65",
+      "source_url": "https://rbw.com/products/dimple-sconce/dimple-sconce",
+      "inferences": "Current S1 black anodized/white interior SKU; 5-inch diameter x 3.3-inch projection. Concave front, rolled rim and separate interior follow saved product photos and the prior native Dimple profile builder. ASSUMPTION: glass thickness, backplate diameter, internal optics and exact dimple curvature. Older public manufacturer 305-D-FM RFA was rejected as an exact match and retained in source. Fixed product geometry; three editable material finishes.",
+      "search": "Manufacturer public RFA downloaded; old SKU/dimensions and missing Fine-detail lens solids prevented exact-current release. Independent native reconstruction used.",
+      "category": "Lighting Fixtures",
+      "actual": [
+        4.9999998807907104,
+        4.9999998807907104,
+        3.3000000715255737
+      ],
+      "expected": [
+        5.0,
+        5.0,
+        3.3
+      ],
+      "gates": {
+        "warnings": true,
+        "materials": true,
+        "actual_face_host": true,
+        "category": true,
+        "reopened": true,
+        "orientation": true,
+        "saved_dimensions_within_1mm": true,
+        "cct": true,
+        "views": true,
+        "dimensions": true,
+        "saved_bitmaps_resolve": true
+      },
+      "rfa_path": "E:\\Claude\\3D-Model-Workflow\\output\\1527_wieland\\electrical_fixtures\\B2-2__5960925969973124\\RBW_Dimple_S1_AA04_White_Interior_R2025.rfa",
+      "rfa_sha256": "ade1d78f8a0178f0063119a6193659f4a079fccf8d03b96df48ea2048e9c2c15",
+      "rfa_signature": "d0cf11e0a1b11ae1",
+      "validation_sha256": "e0d3a3ab61550228be8c2e6bb6e5777c33d7cb5712eb6ab826ecd2e8cb36e514",
+      "preview_count": 9,
+      "missing_previews": [],
+      "source_notes": [
+        "NEEDS REVIEW 2026-10-01: This is explicitly a \"Better\" lighting option and Client comment remains TBD. Product/pricing is populated for comparison, but selection is not approved; do not treat as awarded scope. | RESOLVED 2026-10-01: dedicated lighting schedule / Lightopia base quote supports a separate base fixture for this location. This Better row is retained as a priced comparison alternate only and is excluded from the base procurement decision total."
+      ]
+    },
+    {
+      "key": "AST1561665",
+      "rows": 2,
+      "folder": "B3-2__2025454640496516",
+      "technical_pass": true,
+      "model": "1184057+5048001",
+      "source_url": "https://www.lightology.com/index.php?module=prod_detail&prod_id=1561665",
+      "inferences": "210 mm diameter/height shade rebuilt from inspected prior native geometry. Canopy corrected from prior 96 mm to current scheduled 4.3-inch diameter. ASSUMPTION: 1-inch canopy height and 1000 mm installed drop; source does not fully dimension those installed details. Finishes matte white and opal; material parameters editable.",
+      "search": "Public product resources inspected; no exact anonymous native RFA located. Prior native shade geometry is the documented rebuild source.",
+      "category": "Lighting Fixtures",
+      "actual": [
+        8.267716884613037,
+        8.265990257263184,
+        39.370079040527344
+      ],
+      "expected": [
+        8.267716535433072,
+        8.267716535433072,
+        39.37007874015748
+      ],
+      "gates": {
+        "dimensions": true,
+        "orientation": true,
+        "cct": true,
+        "reopened": true,
+        "materials": true,
+        "category": true,
+        "actual_face_host": true,
+        "saved_bitmaps_resolve": true,
+        "warnings": true,
+        "saved_dimensions_within_1mm": true,
+        "views": true
+      },
+      "rfa_path": "E:\\Claude\\3D-Model-Workflow\\output\\1527_wieland\\electrical_fixtures\\B3-2__2025454640496516\\Astro_Duo_1184057_5048001_R2025.rfa",
+      "rfa_sha256": "a4ad17ff2a9b448172a2e72b020ee812dec7c159f0bc3934123419efac3e7267",
+      "rfa_signature": "d0cf11e0a1b11ae1",
+      "validation_sha256": "f2bc60cad100aa715bae5167d326c58b6a6872419b20b53d3040bdcf03393f6d",
+      "preview_count": 9,
+      "missing_previews": [],
+      "source_notes": [
+        "NEEDS REVIEW 2026-10-01: This is explicitly a \"Better\" lighting option and Client comment remains TBD. Product/pricing is populated for comparison, but selection is not approved; do not treat as awarded scope. | RESOLVED 2026-10-01: dedicated lighting schedule / Lightopia base quote supports a separate base fixture for this location. This Better row is retained as a priced comparison alternate only and is excluded from the base procurement decision total."
+      ]
+    },
+    {
+      "key": "NEIG-613941",
+      "rows": 1,
+      "folder": "T2-2__8305823776833412",
+      "technical_pass": true,
+      "model": "NEIG-613941",
+      "source_url": "https://us.busterandpunch.com/products/exhaust-pendant-cross-graphite",
+      "inferences": "Correct NEIG-613941 graphite with smoked-bronze insert, not the retailer default black insert. Body 2.36 x 5.71 inches, canopy 4.4 x 0.3 inches. ASSUMPTION: 48-inch installed drop, screw/knurl detail and internal optic recess; body dimensions measured separately.",
+      "search": "Public primary product resources and the retained exact product page were inspected; no direct, exact native RFA was available in those resources. This does not assert that no RFA exists elsewhere.",
+      "category": "Lighting Fixtures",
+      "actual": [
+        4.400000095367432,
+        4.400000095367432,
+        48.0
+      ],
+      "expected": [
+        4.4,
+        4.4,
+        48
+      ],
+      "gates": {
+        "cct": true,
+        "materials": true,
+        "saved_bitmaps_resolve": true,
+        "reopened": true,
+        "dimensions": true,
+        "saved_dimensions_within_1mm": true,
+        "actual_face_host": true,
+        "saved_components_within_1mm": true,
+        "orientation": true,
+        "warnings": true,
+        "views": true,
+        "category": true
+      },
+      "rfa_path": "E:\\Claude\\3D-Model-Workflow\\output\\1527_wieland\\electrical_fixtures\\T2-2__8305823776833412\\Buster_Punch_Exhaust_Graphite_Smoked_Bronze_R2025.rfa",
+      "rfa_sha256": "2a5ccf117cb114ad495286e4ffe64b414005870376014884b0b998d4a43a1d6e",
+      "rfa_signature": "d0cf11e0a1b11ae1",
+      "validation_sha256": "020c330f5e287d169de81817eae03373993c0565952ff7d89c399aa2cf1f0908",
+      "preview_count": 9,
+      "missing_previews": [],
+      "source_notes": []
+    },
+    {
+      "key": "700TRSPPYL1RNB-LED930",
+      "rows": 2,
+      "folder": "B1-2__1457326342602628",
+      "technical_pass": true,
+      "model": "700TRSPPYL1RNB-LED930",
+      "source_url": "https://www.visualcomfort.com/us/p/pylon-1-light-pendant-700trsppyl1",
+      "inferences": "Natural-brass and clear 1.2-inch diameter x 18.6-inch body, 4.6 x 0.8-inch canopy. ASSUMPTION: 48-inch installed drop, fine ribs and optical end details. Current primary resource list contains SketchUp and photometrics, without a native Revit link.",
+      "search": "Public primary product resources and the retained exact product page were inspected; no direct, exact native RFA was available in those resources. This does not assert that no RFA exists elsewhere.",
+      "category": "Lighting Fixtures",
+      "actual": [
+        4.599999904632568,
+        4.599999904632568,
+        48.0
+      ],
+      "expected": [
+        4.6,
+        4.6,
+        48
+      ],
+      "gates": {
+        "cct": true,
+        "materials": true,
+        "saved_bitmaps_resolve": true,
+        "reopened": true,
+        "dimensions": true,
+        "saved_dimensions_within_1mm": true,
+        "actual_face_host": true,
+        "saved_components_within_1mm": true,
+        "orientation": true,
+        "warnings": true,
+        "views": true,
+        "category": true
+      },
+      "rfa_path": "E:\\Claude\\3D-Model-Workflow\\output\\1527_wieland\\electrical_fixtures\\B1-2__1457326342602628\\Visual_Comfort_Pylon_Natural_Brass_R2025.rfa",
+      "rfa_sha256": "3a1c2c013c79daf7225c0db4d3be7bede1664abf863005ee10278a2c5483fff7",
+      "rfa_signature": "d0cf11e0a1b11ae1",
+      "validation_sha256": "8fa62137757223c77d142c5fb1faf11eb33a469d1320fac771e9ede61e82f794",
+      "preview_count": 9,
+      "missing_previews": [],
+      "source_notes": []
+    },
+    {
+      "key": "700BCTRS3C-LED930",
+      "rows": 2,
+      "folder": "B3-2__7086825876815748",
+      "technical_pass": true,
+      "model": "700BCTRS3C-LED930",
+      "source_url": "https://www.visualcomfort.com/media/docs/spec_sheet/t/r/ss_tris_3-light_bath.pdf",
+      "inferences": "Anonymous manufacturer 2017 RFA supplies the continuous rail and three connected acrylic optical panels. Its 4.25-inch backplate height differs from the current 4.3-inch specification; the plate is rebuilt at the current dimension. Current 25.6 x 4.3 x 3.4-inch envelope is checked within 1 mm. ASSUMPTION: microdot optical texture is represented by a uniform translucent acrylic appearance. Original download remains unchanged.",
+      "search": "Official product resources and verified BIM listings searched; no exact, usable anonymous RFA accepted. See retained source resources and manufacturer acquisition/inspection receipts.",
+      "category": "Lighting Fixtures",
+      "actual": [
+        25.61220359802318,
+        4.3,
+        3.373023748397827
+      ],
+      "expected": [
+        25.6,
+        4.3,
+        3.4
+      ],
+      "gates": {
+        "dimensions": true,
+        "materials": true,
+        "views": true,
+        "reopened": true,
+        "saved_dimensions_within_1mm": true,
+        "orientation": true,
+        "actual_face_host": true,
+        "category": true,
+        "saved_components_within_1mm": true,
+        "warnings": true,
+        "cct": true,
+        "saved_bitmaps_resolve": true
+      },
+      "rfa_path": "E:\\Claude\\3D-Model-Workflow\\output\\1527_wieland\\electrical_fixtures\\B3-2__7086825876815748\\Visual_Comfort_Tris_700BCTRS3C_LED930_R2025.rfa",
+      "rfa_sha256": "5099c2ace2925d401013041cc0bb73dd081cf01651e4e3a87de4dbd20c3e55b3",
+      "rfa_signature": "d0cf11e0a1b11ae1",
+      "validation_sha256": "7c19b08b996c05a7b125fc4b185a7d8eceb1d7127ef3bdcc614545f4a004f063",
+      "preview_count": 9,
+      "missing_previews": [],
+      "source_notes": [
+        "NEEDS REVIEW 2026-10-01: This is explicitly a \"Better\" lighting option and Client comment remains TBD. Product/pricing is populated for comparison, but selection is not approved; do not treat as awarded scope. | RESOLVED 2026-10-01: dedicated lighting schedule / Lightopia base quote supports a separate base fixture for this location. This Better row is retained as a priced comparison alternate only and is excluded from the base procurement decision total."
+      ]
+    },
+    {
+      "key": "KZC1285334",
+      "rows": 1,
+      "folder": "B3-2__6529054267867012",
+      "technical_pass": true,
+      "model": "VL20338-BK",
+      "source_url": "https://kuzcolighting.com/products/vera-vl20338-kuzco",
+      "inferences": "Exact 38-inch version, 37.87 x 4.75 x 3.25 inches, replaces the incorrect 22.87-inch linked default. Backplate 4.75 square x 0.5. Curved front and rear housing with separate upper/lower recessed diffusers. Cross-section detail inferred from product photography and prior native Vera profile.",
+      "search": "Public primary product resources and the retained exact product page were inspected; no direct, exact native RFA was available in those resources. This does not assert that no RFA exists elsewhere.",
+      "category": "Lighting Fixtures",
+      "actual": [
+        37.87,
+        4.7500001192092896,
+        3.2500001192092896
+      ],
+      "expected": [
+        37.87,
+        4.75,
+        3.25
+      ],
+      "gates": {
+        "cct": true,
+        "materials": true,
+        "saved_bitmaps_resolve": true,
+        "reopened": true,
+        "dimensions": true,
+        "saved_dimensions_within_1mm": true,
+        "actual_face_host": true,
+        "saved_components_within_1mm": true,
+        "orientation": true,
+        "warnings": true,
+        "views": true,
+        "category": true
+      },
+      "rfa_path": "E:\\Claude\\3D-Model-Workflow\\output\\1527_wieland\\electrical_fixtures\\B3-2__6529054267867012\\Kuzco_Vera_38_Black_R2025.rfa",
+      "rfa_sha256": "39c6a0134b47b79c015769dfb7ecd8a3615291cdc9f9dc09fbcf92abc5aa7f33",
+      "rfa_signature": "d0cf11e0a1b11ae1",
+      "validation_sha256": "29a7da96ed2686f36336aac6fe4d97cb0284ae6a13f4d6cba5144a48a2d70136",
+      "preview_count": 9,
+      "missing_previews": [],
+      "source_notes": [
+        "NEEDS REVIEW 2026-10-01: This is explicitly a \"Better\" lighting option and Client comment remains TBD. Product/pricing is populated for comparison, but selection is not approved; do not treat as awarded scope. | RESOLVED 2026-10-01: dedicated lighting schedule / Lightopia base quote supports a separate base fixture for this location. This Better row is retained as a priced comparison alternate only and is excluded from the base procurement decision total."
+      ]
+    },
+    {
+      "key": "KZC1193209",
+      "rows": 2,
+      "folder": "B2-2__8673064965046148",
+      "technical_pass": true,
+      "model": "WS52505-BK/CL",
+      "source_url": "https://kuzcolighting.com/products/cedar-ws52505-kuzco",
+      "inferences": "Shade body 4 x 5.75 x 5 inches; round 5-inch backplate makes the full installed width 5 inches. Do not confuse body width with aggregate mount width. ASSUMPTION: glass thickness, rear stem and domed internal diffuser profile.",
+      "search": "Public primary product resources and the retained exact product page were inspected; no direct, exact native RFA was available in those resources. This does not assert that no RFA exists elsewhere.",
+      "category": "Lighting Fixtures",
+      "actual": [
+        4.9999998807907104,
+        5.749999940395355,
+        5.0
+      ],
+      "expected": [
+        5,
+        5.75,
+        5
+      ],
+      "gates": {
+        "cct": true,
+        "materials": true,
+        "saved_bitmaps_resolve": true,
+        "reopened": true,
+        "dimensions": true,
+        "saved_dimensions_within_1mm": true,
+        "actual_face_host": true,
+        "saved_components_within_1mm": true,
+        "orientation": true,
+        "warnings": true,
+        "views": true,
+        "category": true
+      },
+      "rfa_path": "E:\\Claude\\3D-Model-Workflow\\output\\1527_wieland\\electrical_fixtures\\B2-2__8673064965046148\\Kuzco_Cedar_WS52505_BK_CL_R2025.rfa",
+      "rfa_sha256": "69a5901fcf9fa0731a7a4e06b12aae257641dc61f014cdd9c7eaa3753549f81b",
+      "rfa_signature": "d0cf11e0a1b11ae1",
+      "validation_sha256": "2635f12477fa5e56b4f909068bc051cf29d5c9f52e5e8c3725c8c22d04fac0f2",
+      "preview_count": 9,
+      "missing_previews": [],
+      "source_notes": [
+        "NEEDS REVIEW 2026-10-01: Fixture row is populated, but Client comment remains TBD. Verify against the final lighting schedule / approved fixture selection before order; existing identity, quantity, and carried price are preserved. | RESOLVED 2026-10-01: Cedar Wall Sconce KZC1193209 is supported for B2-2 / Penthouse Primary Bathroom; dedicated lighting schedule selects Cedar; Lightopia estimate 700122342 quotes Cedar WS52505-BK/CL for B2-2. Client TBD text is retained as historical input; this row is treated as the base fixture for procurement comparison.",
+        "NEEDS REVIEW 2026-10-01: Fixture row is populated, but Client comment remains TBD. Verify against the final lighting schedule / approved fixture selection before order; existing identity, quantity, and carried price are preserved. | RESOLVED 2026-10-01: Cedar Wall Sconce KZC1193209 is supported for B2-1 / Triplex Primary Bathroom; dedicated schedule selects Cedar; Lightopia estimate quotes Cedar WS52505-BK/CL for B2-1. Client TBD text is retained as historical input; this row is treated as the base fixture for procurement comparison."
+      ]
+    },
+    {
+      "key": "ARC1334006",
+      "rows": 1,
+      "folder": "T1-2__7024908711952260",
+      "technical_pass": true,
+      "model": "AC11976SM",
+      "source_url": "https://www.artcraftlighting.com/en/products/2024-products/ac11976sm-modena-6lt-chandelier",
+      "inferences": "Manufacturer published body envelope 27.8 x 27.8 x 5.9 inches; 4.7-inch canopy and 1-inch canopy depth. Product image shows six smoked globes on three crossed bars and three suspension cords. ASSUMPTION: 48-inch installed drop, globe diameter 4.7 inches, 15-degree plan orientation, staggered arm levels and attachment details. Exact source page now returns 404; manufacturer-indexed dimensions and retained exact-product retailer photo are recorded. This family is a source-informed approximation, not an exact OEM reconstruction.",
+      "search": "Public manufacturer and reputable BIM resource searches retained. No exact acceptable anonymous native RFA accepted; see acquisition evidence.",
+      "category": "Lighting Fixtures",
+      "actual": [
+        27.799999237060547,
+        27.794374465942383,
+        48.0
+      ],
+      "expected": [
+        27.8,
+        27.8,
+        48
+      ],
+      "gates": {
+        "views": true,
+        "warnings": true,
+        "reopened": true,
+        "saved_bitmaps_resolve": true,
+        "saved_radial_dimensions_within_1mm": true,
+        "actual_face_host": true,
+        "dimensions": true,
+        "saved_components_within_1mm": true,
+        "category": true,
+        "cct": true,
+        "saved_dimensions_within_1mm": true,
+        "orientation": true,
+        "materials": true
+      },
+      "rfa_path": "E:\\Claude\\3D-Model-Workflow\\output\\1527_wieland\\electrical_fixtures\\T1-2__7024908711952260\\Artcraft_Modena_AC11976SM_R2025.rfa",
+      "rfa_sha256": "70289bfb5d52817d28279b16f852dbd52c667d2f8b759c0910d01da4bc73612a",
+      "rfa_signature": "d0cf11e0a1b11ae1",
+      "validation_sha256": "eac346a4f336ae37ce3a63300351220e9d074de6e6af6b3d14f0ed4c2de4e14c",
+      "preview_count": 9,
+      "missing_previews": [],
+      "source_notes": []
+    },
+    {
+      "key": "KZC862138",
+      "rows": 1,
+      "folder": "E1-2__29002242391940",
+      "technical_pass": true,
+      "model": "WS25118-BK-UNV",
+      "source_url": "https://kuzcolighting.com/products/pandora-ws25118-kuzco",
+      "inferences": "Exact universal-voltage variant overall 4.62 x 21 x 3.87 inches. Offset vertical blade and curved backplate follow photograph. ASSUMPTION: mounting-body height, rounded face depth and hidden rear optic width; no electrical connector design.",
+      "search": "Public primary product resources and the retained exact product page were inspected; no direct, exact native RFA was available in those resources. This does not assert that no RFA exists elsewhere.",
+      "category": "Lighting Fixtures",
+      "actual": [
+        4.620000000000001,
+        21.0,
+        3.87
+      ],
+      "expected": [
+        4.62,
+        21,
+        3.87
+      ],
+      "gates": {
+        "cct": true,
+        "materials": true,
+        "saved_bitmaps_resolve": true,
+        "reopened": true,
+        "dimensions": true,
+        "saved_dimensions_within_1mm": true,
+        "actual_face_host": true,
+        "saved_components_within_1mm": true,
+        "orientation": true,
+        "warnings": true,
+        "views": true,
+        "category": true
+      },
+      "rfa_path": "E:\\Claude\\3D-Model-Workflow\\output\\1527_wieland\\electrical_fixtures\\E1-2__29002242391940\\Kuzco_Pandora_WS25118_BK_UNV_R2025.rfa",
+      "rfa_sha256": "011cbe706d09d53275150dd92abdedd7cc6baab8537f81a04592e4d9640842c3",
+      "rfa_signature": "d0cf11e0a1b11ae1",
+      "validation_sha256": "b790c3744c5920a3f4bb4af346b4b5416e270e8cad0c8f2edff0dd729e8caad7",
+      "preview_count": 9,
+      "missing_previews": [],
+      "source_notes": []
+    },
+    {
+      "key": "KZC780336",
+      "rows": 3,
+      "folder": "B3-2__7654954174709636",
+      "technical_pass": true,
+      "model": "VL17024-CH",
+      "source_url": "https://kuzcolighting.com/products/rona-vl17024-kuzco",
+      "inferences": "Current 24-inch Rona, 4.5-inch square backplate x 0.625, 2.75-inch extension. Vertical default; may be rotated on wall. ASSUMPTION: 1.25-inch optic diameter and clamp contours from photograph. Manufacturer 2019 RFA contains model metadata VL10724, an interior-light-source warning and incomplete Fine-detail native geometry; retained as reference.",
+      "search": "Manufacturer RFA publicly downloaded and opened in 2025; inconsistent metadata, missing nested solid evidence and a rendering warning prevented accepting it unchanged.",
+      "category": "Lighting Fixtures",
+      "actual": [
+        4.5,
+        24.0,
+        2.7500000596046448
+      ],
+      "expected": [
+        4.5,
+        24,
+        2.75
+      ],
+      "gates": {
+        "cct": true,
+        "materials": true,
+        "saved_bitmaps_resolve": true,
+        "reopened": true,
+        "dimensions": true,
+        "saved_dimensions_within_1mm": true,
+        "actual_face_host": true,
+        "saved_components_within_1mm": true,
+        "orientation": true,
+        "warnings": true,
+        "views": true,
+        "category": true
+      },
+      "rfa_path": "E:\\Claude\\3D-Model-Workflow\\output\\1527_wieland\\electrical_fixtures\\B3-2__7654954174709636\\Kuzco_Rona_VL17024_Chrome_R2025.rfa",
+      "rfa_sha256": "48944d5ceaf0ab47810ad0e582ec0c05a6d90a46848e782b73841c4c2656f163",
+      "rfa_signature": "d0cf11e0a1b11ae1",
+      "validation_sha256": "2a5035c832c1deaa1b76d06e52bc2f9fb89be952350c71691e90744f12fe7cc5",
+      "preview_count": 9,
+      "missing_previews": [],
+      "source_notes": [
+        "NEEDS REVIEW 2026-10-01: Fixture row is populated, but Client comment remains TBD. Verify against the final lighting schedule / approved fixture selection before order; existing identity, quantity, and carried price are preserved. | RESOLVED 2026-10-01: Rona Bathroom Vanity Light KZC780336 is supported for B3-2 / Penthouse Bath 2; dedicated schedule selects Rona; Lightopia estimate quotes Rona VL17024-CH for Penthouse B3-2. Client TBD text is retained as historical input; this row is treated as the base fixture for procurement comparison.",
+        "NEEDS REVIEW 2026-10-01: Fixture row is populated, but Client comment remains TBD. Verify against the final lighting schedule / approved fixture selection before order; existing identity, quantity, and carried price are preserved. | RESOLVED 2026-10-01: Rona Bathroom Vanity Light KZC780336 is supported for B4-2 / Penthouse Bath 3; dedicated schedule maps B4-2 to Rona; Lightopia quotes three Rona vanity lights across the Penthouse secondary baths. Client TBD text is retained as historical input; this row is treated as the base fixture for procurement comparison.",
+        "NEEDS REVIEW 2026-10-01: Fixture row is populated, but Client comment remains TBD. Verify against the final lighting schedule / approved fixture selection before order; existing identity, quantity, and carried price are preserved. | RESOLVED 2026-10-01: Rona Bathroom Vanity Light KZC780336 is supported for B5-2 / Penthouse Bath 4; Lightopia estimate quotes the third Penthouse Rona vanity fixture for the secondary-bath set; the dedicated schedule repeats the B4-2 designation for multiple bathrooms, so the room/product match supports the live B5-2 row. Client TBD text is retained as historical input; this row is treated as the base fixture for procurement comparison."
+      ]
+    },
+    {
+      "key": "KZC1403797",
+      "rows": 1,
+      "folder": "K2-2__2521309084581764",
+      "technical_pass": true,
+      "model": "WS97204-BK/CL",
+      "source_url": "https://kuzcolighting.com/products/stephord-ws97204-kuzco",
+      "inferences": "4.75-inch diameter, 1.63-inch projection. Separate clear curved glass lens, black central disk and concealed opal ring. ASSUMPTION: internal lens curvature and thickness from photograph. Downloaded 2019 manufacturer RFA measured 4.7244 x 4.7244 x 1.5748 inches; preserved as source, not accepted as a current inch-spec match.",
+      "search": "Public manufacturer ZIP downloaded, CRC checked and opened in Revit 2025. Current nominal projection differs by 1.402 mm; native reconstruction follows published current dimensions.",
+      "category": "Lighting Fixtures",
+      "actual": [
+        4.7500001192092896,
+        4.7500001192092896,
+        1.6455804705619812
+      ],
+      "expected": [
+        4.75,
+        4.75,
+        1.63
+      ],
+      "gates": {
+        "cct": true,
+        "materials": true,
+        "saved_bitmaps_resolve": true,
+        "reopened": true,
+        "dimensions": true,
+        "saved_dimensions_within_1mm": true,
+        "actual_face_host": true,
+        "saved_components_within_1mm": true,
+        "orientation": true,
+        "warnings": true,
+        "views": true,
+        "category": true
+      },
+      "rfa_path": "E:\\Claude\\3D-Model-Workflow\\output\\1527_wieland\\electrical_fixtures\\K2-2__2521309084581764\\Kuzco_Stephord_WS97204_BK_CL_R2025.rfa",
+      "rfa_sha256": "8f810878a791beff0c871947c0e3262503cce07907de8125cc4bd689c94a46a4",
+      "rfa_signature": "d0cf11e0a1b11ae1",
+      "validation_sha256": "218dd4def948fe6ccdec3efe7466b24872494e5390a4b4b546fa6b6f71dd9ea3",
+      "preview_count": 9,
+      "missing_previews": [],
+      "source_notes": []
+    },
+    {
+      "key": "KZC1009570",
+      "rows": 3,
+      "folder": "K1-2__4773108898267012",
+      "technical_pass": true,
+      "model": "PD62014-BK/SM",
+      "source_url": "https://www.lightology.com/index.php?module=prod_detail&prod_id=1009570",
+      "inferences": "14.25-inch diameter and 6.125-inch body height; 4.75-inch canopy. ASSUMPTION: fixed 48-inch installed drop. Smoke glass applies only to rows retaining the exact Lightology KZC1009570 variant. Internal socket and edge details are prior photo-derived inferences.",
+      "search": "Public manufacturer/dealer technical resources inspected; no exact current RFA located. Rebuilt from inspected native BK/SM source.",
+      "category": "Lighting Fixtures",
+      "actual": [
+        14.25,
+        14.25,
+        48.0
+      ],
+      "expected": [
+        14.25,
+        14.25,
+        48
+      ],
+      "gates": {
+        "dimensions": true,
+        "orientation": true,
+        "cct": true,
+        "reopened": true,
+        "materials": true,
+        "category": true,
+        "actual_face_host": true,
+        "saved_bitmaps_resolve": true,
+        "warnings": true,
+        "saved_dimensions_within_1mm": true,
+        "views": true
+      },
+      "rfa_path": "E:\\Claude\\3D-Model-Workflow\\output\\1527_wieland\\electrical_fixtures\\K1-2__4773108898267012\\Kuzco_Trinity_PD62014_BK_SM_R2025.rfa",
+      "rfa_sha256": "fe93576ee113f76d89281584986e0ab231f6dde55ea078bbcf1596fa358541cb",
+      "rfa_signature": "d0cf11e0a1b11ae1",
+      "validation_sha256": "312e69abc814976b0b11c6f0cce44547ff5fdae2a6527f957714ec5e8a857b2b",
+      "preview_count": 9,
+      "missing_previews": [],
+      "source_notes": [
+        "NEEDS REVIEW 2026-10-01: Fixture row is populated, but Client comment remains TBD. Verify against the final lighting schedule / approved fixture selection before order; existing identity, quantity, and carried price are preserved. | RESOLVED 2026-10-01: Trinity Low Pendant KZC1009570 is supported for K1-1 / Triplex Kitchen Island; dedicated schedule selects Trinity KZC1009570 qty 3; Lightopia estimate quotes Trinity PD62014-BK/CH qty 3. Client TBD text is retained as historical input; this row is treated as the base fixture for procurement comparison."
+      ]
+    },
+    {
+      "key": "MKL1417874",
+      "rows": 2,
+      "folder": "B1-2__1395409177739140",
+      "technical_pass": true,
+      "model": "3114-732-L",
+      "source_url": "https://www.lightology.com/img/prod/pdf/3114-L-English-052225.pdf",
+      "inferences": "Manufacturer 3114-732-L Legacy Brass/clear-glass pendant: 3-inch diameter by 20.25-inch body; 5-inch canopy diameter by 0.75-inch depth. ASSUMPTION: 45-inch installation uses two 12-inch rods, included by the manufacturer. Glass bulge, end-cap grooves and internal diffuser profile are photo-derived.",
+      "search": "Official product resources and verified BIM listings searched; no exact, usable anonymous RFA accepted. See retained source resources and manufacturer acquisition/inspection receipts.",
+      "category": "Lighting Fixtures",
+      "actual": [
+        4.9999998807907104,
+        4.9999998807907104,
+        45.0
+      ],
+      "expected": [
+        5,
+        5,
+        45
+      ],
+      "gates": {
+        "dimensions": true,
+        "materials": true,
+        "views": true,
+        "reopened": true,
+        "saved_dimensions_within_1mm": true,
+        "orientation": true,
+        "actual_face_host": true,
+        "category": true,
+        "saved_components_within_1mm": true,
+        "warnings": true,
+        "cct": true,
+        "saved_bitmaps_resolve": true
+      },
+      "rfa_path": "E:\\Claude\\3D-Model-Workflow\\output\\1527_wieland\\electrical_fixtures\\B1-2__1395409177739140\\Minka_Verto_3114_732_L_R2025.rfa",
+      "rfa_sha256": "1c0e49202f970f0fc31dd282bd56ad333711ae96a0232405b4e94a26dc02c8de",
+      "rfa_signature": "d0cf11e0a1b11ae1",
+      "validation_sha256": "c77e4b828b3de83b27c3b0a372cdedf94a70cc2496cc5a99b026d716eafa58bc",
+      "preview_count": 9,
+      "missing_previews": [],
+      "source_notes": [
+        "NEEDS REVIEW 2026-10-01: Fixture row is populated, but Client comment remains TBD. Verify against the final lighting schedule / approved fixture selection before order; existing identity, quantity, and carried price are preserved. | RESOLVED 2026-10-01: Verto Pendant MKL1417874 is supported for B1-1 / Triplex Powder Room; dedicated schedule selects Verto MKL1417874 qty 2; Lightopia estimate quotes Verto qty 2. Client TBD text is retained as historical input; this row is treated as the base fixture for procurement comparison."
+      ]
+    },
+    {
+      "key": "RG-C811A",
+      "rows": 17,
+      "folder": "RG-C811A__240438544629636",
+      "technical_pass": true,
+      "model": "RG-C811A",
+      "source_url": "https://ftp.panasonic.com/ventilationfan/installation/rg-c811a_rg-c811ha_eng.pdf",
+      "inferences": "Manufacturer manual page 4: 13-inch grille, 10.25-inch housing plan, 7.5-inch housing height, 3.875-inch adapter extension and 0.875-inch grille projection. Component checks distinguish these from the derived combined envelope. ASSUMPTION: hole pitch, bezel section, internal impeller and junction box detail; perforations are real native holes. Adjustable joist bracket, wiring and duct connector engineering are excluded. Mechanical Equipment face-based visualization family.",
+      "search": "Public primary product resources and the retained exact product page were inspected; no direct, exact native RFA was available in those resources. This does not assert that no RFA exists elsewhere.",
+      "category": "Mechanical Equipment",
+      "actual": [
+        15.500000238418579,
+        13.000000476837158,
+        8.375
+      ],
+      "expected": [
+        15.5,
+        13,
+        8.375
+      ],
+      "gates": {
+        "cct": true,
+        "saved_dimensions_within_1mm": true,
+        "warnings": true,
+        "reopened": true,
+        "materials": true,
+        "actual_face_host": true,
+        "views": true,
+        "saved_components_within_1mm": true,
+        "saved_bitmaps_resolve": true,
+        "dimensions": true,
+        "category": true,
+        "orientation": true
+      },
+      "rfa_path": "E:\\Claude\\3D-Model-Workflow\\output\\1527_wieland\\electrical_fixtures\\RG-C811A__240438544629636\\Panasonic_WhisperChoice_RG_C811A_R2025.rfa",
+      "rfa_sha256": "964037726335371d1af9c007f723ec7ac951ce97af68fd526a22fa36ee97df87",
+      "rfa_signature": "d0cf11e0a1b11ae1",
+      "validation_sha256": "f68225cbdb894287664da4cc9c320a2a798337e806e132973fe7df8540580534",
+      "preview_count": 9,
+      "missing_previews": [],
+      "source_notes": []
+    },
+    {
+      "key": "MFR918914",
+      "rows": 2,
+      "folder": "R1-2__1154902149234564",
+      "technical_pass": true,
+      "model": "FR-W2006-52L-MB",
+      "source_url": "https://modernforms.com/images/products/SPECSHEET_PDF/FR-W2006-52_SPSHT.pdf",
+      "inferences": "Manufacturer 52-inch blade sweep, 7-inch canopy and 5.625-inch lower luminaire diameter. ASSUMPTION: use the right-hand 18.125-inch overall-drop drawing with its longer included downrod. The left drawing and current retailer values differ; this edition explicitly follows the right-hand factory diagram. Blade twist/sweep and housing contours are reconstructed, not factory CAD. The public manufacturer RFA ZIP is truncated and cannot be extracted. Fixed three-blade position; swept diameter is measured separately from its rectangular bounds.",
+      "search": "Public manufacturer and reputable BIM resource searches retained. No exact acceptable anonymous native RFA accepted; see acquisition evidence.",
+      "category": "Lighting Fixtures",
+      "actual": [
+        42.81076248956094,
+        46.498343523561374,
+        18.124999523162842
+      ],
+      "expected": [
+        42.81076248956094,
+        46.498343523561374,
+        18.125
+      ],
+      "gates": {
+        "views": true,
+        "warnings": true,
+        "reopened": true,
+        "saved_bitmaps_resolve": true,
+        "saved_radial_dimensions_within_1mm": true,
+        "actual_face_host": true,
+        "dimensions": true,
+        "saved_components_within_1mm": true,
+        "category": true,
+        "cct": true,
+        "saved_dimensions_within_1mm": true,
+        "orientation": true,
+        "materials": true
+      },
+      "rfa_path": "E:\\Claude\\3D-Model-Workflow\\output\\1527_wieland\\electrical_fixtures\\R1-2__1154902149234564\\Modern_Forms_Zephyr_FR_W2006_52L_MB_R2025.rfa",
+      "rfa_sha256": "b70e4dd0f9ac9067e95d630aaefb1ab535f56c148b6d236b499104076537ef35",
+      "rfa_signature": "d0cf11e0a1b11ae1",
+      "validation_sha256": "59c17d999dba0b6f4aa632c65b2bb401aba53d12cd8fc3788ca426bafad18731",
+      "preview_count": 9,
+      "missing_previews": [],
+      "source_notes": []
+    },
+    {
+      "key": "SID660347",
+      "rows": 1,
+      "folder": "SID660347__468141458718596",
+      "technical_pass": true,
+      "model": "15823 2020U+R03L01 1000MU",
+      "source_url": "https://www.lodes.com/en/products/a-tube-nano/",
+      "inferences": "Exact black 23.62-inch x 0.78-inch body with white 4.92-inch canopy. ASSUMPTION: 48-inch installed drop, 0.75-inch canopy thickness, and internal optic details. Thin clear bottom optic retained.",
+      "search": "Public primary product resources and the retained exact product page were inspected; no direct, exact native RFA was available in those resources. This does not assert that no RFA exists elsewhere.",
+      "category": "Lighting Fixtures",
+      "actual": [
+        4.919999957084656,
+        4.919999957084656,
+        48.0
+      ],
+      "expected": [
+        4.92,
+        4.92,
+        48
+      ],
+      "gates": {
+        "cct": true,
+        "materials": true,
+        "saved_bitmaps_resolve": true,
+        "reopened": true,
+        "dimensions": true,
+        "saved_dimensions_within_1mm": true,
+        "actual_face_host": true,
+        "saved_components_within_1mm": true,
+        "orientation": true,
+        "warnings": true,
+        "views": true,
+        "category": true
+      },
+      "rfa_path": "E:\\Claude\\3D-Model-Workflow\\output\\1527_wieland\\electrical_fixtures\\SID660347__468141458718596\\Lodes_A_Tube_Nano_Black_White_Canopy_R2025.rfa",
+      "rfa_sha256": "f35fd64782304e0311efd8ce43cefe0d356219d45cf4f139f0d6a62774fe7fc7",
+      "rfa_signature": "d0cf11e0a1b11ae1",
+      "validation_sha256": "2705481389c9a8082192749d6aa6e9b3e2d6abb22ef9f09f11bef9e1df660b06",
+      "preview_count": 9,
+      "missing_previews": [],
+      "source_notes": []
+    },
+    {
+      "key": "SEE1486624",
+      "rows": 1,
+      "folder": "B4-1__1278403396960132",
+      "technical_pass": true,
+      "model": "SG-1012P-BK",
+      "source_url": "https://seeddesignusa.com/products/castle-muse-pendant",
+      "inferences": "Black exact variant body 4.1 diameter x 5.2 high, canopy 4.6 diameter x 1 high. ASSUMPTION: 48-inch installed drop and internal glass wall thickness. Soft dome and lower opal bowl follow the exact product reference.",
+      "search": "Public primary product resources and the retained exact product page were inspected; no direct, exact native RFA was available in those resources. This does not assert that no RFA exists elsewhere.",
+      "category": "Lighting Fixtures",
+      "actual": [
+        4.6,
+        4.6,
+        48.0
+      ],
+      "expected": [
+        4.6,
+        4.6,
+        48
+      ],
+      "gates": {
+        "cct": true,
+        "materials": true,
+        "saved_bitmaps_resolve": true,
+        "reopened": true,
+        "dimensions": true,
+        "saved_dimensions_within_1mm": true,
+        "actual_face_host": true,
+        "saved_components_within_1mm": true,
+        "orientation": true,
+        "warnings": true,
+        "views": true,
+        "category": true
+      },
+      "rfa_path": "E:\\Claude\\3D-Model-Workflow\\output\\1527_wieland\\electrical_fixtures\\B4-1__1278403396960132\\Seed_Castle_Muse_SG1012P_Black_R2025.rfa",
+      "rfa_sha256": "12c5072ba43bebf9dac84e7b92ad71eb36a8b9a268ab61274594bebacfd58bf0",
+      "rfa_signature": "d0cf11e0a1b11ae1",
+      "validation_sha256": "6f1054bfa91ffa55224978955a3a8432b55f2517eb2884a3522d08294925f2ab",
+      "preview_count": 9,
+      "missing_previews": [],
+      "source_notes": [
+        "NEEDS REVIEW 2026-10-01: This is explicitly a \"Better\" lighting option and Client comment remains TBD. Product/pricing is populated for comparison, but selection is not approved; do not treat as awarded scope. | RESOLVED 2026-10-01: dedicated lighting schedule / Lightopia base quote supports a separate base fixture for this location. This Better row is retained as a priced comparison alternate only and is excluded from the base procurement decision total."
+      ]
+    },
+    {
+      "key": "VCS1537517",
+      "rows": 1,
+      "folder": "B6-1__3530203210645380",
+      "technical_pass": true,
+      "model": "SLW1102MBK",
+      "source_url": "https://www.lightology.com/index.php?module=prod_detail&prod_id=1537513&option_id=1537517",
+      "inferences": "Correct large 24-inch variant, 4.5-inch round backplate and 2-inch projection. Exact-variant photo governs circular plate geometry. ASSUMPTION: concentric clear/opal rod diameters and center clamp. A guessed primary product URL returned 404; no RFA was inferred from that failure.",
+      "search": "Public primary product resources and the retained exact product page were inspected; no direct, exact native RFA was available in those resources. This does not assert that no RFA exists elsewhere.",
+      "category": "Lighting Fixtures",
+      "actual": [
+        4.5,
+        24.0,
+        2.0000000596046448
+      ],
+      "expected": [
+        4.5,
+        24,
+        2
+      ],
+      "gates": {
+        "cct": true,
+        "materials": true,
+        "saved_bitmaps_resolve": true,
+        "reopened": true,
+        "dimensions": true,
+        "saved_dimensions_within_1mm": true,
+        "actual_face_host": true,
+        "saved_components_within_1mm": true,
+        "orientation": true,
+        "warnings": true,
+        "views": true,
+        "category": true
+      },
+      "rfa_path": "E:\\Claude\\3D-Model-Workflow\\output\\1527_wieland\\electrical_fixtures\\B6-1__3530203210645380\\Visual_Comfort_Silas_Large_SLW1102MBK_R2025.rfa",
+      "rfa_sha256": "8d584acfb840afb8cfb8075ee54c93f795023c315e3e7c63c989ae41eb6516eb",
+      "rfa_signature": "d0cf11e0a1b11ae1",
+      "validation_sha256": "b82e83286c4e3bf5a2c5e497070276f279ea50911909a1ef460f79d66a1c0cae",
+      "preview_count": 9,
+      "missing_previews": [],
+      "source_notes": [
+        "NEEDS REVIEW 2026-10-01: This is explicitly a \"Better\" lighting option and Client comment remains TBD. Product/pricing is populated for comparison, but selection is not approved; do not treat as awarded scope. | RESOLVED 2026-10-01: dedicated lighting schedule / Lightopia base quote supports a separate base fixture for this location. This Better row is retained as a priced comparison alternate only and is excluded from the base procurement decision total."
+      ]
+    },
+    {
+      "key": "TLG604508",
+      "rows": 4,
+      "folder": "B3-1__1598063830957956",
+      "technical_pass": true,
+      "model": "700BCMLN24WS-LED930",
+      "source_url": "https://www.visualcomfort.com/media/docs/spec_sheet/m/i/ss_milan_24_bath.pdf",
+      "inferences": "Geometry is reconstructed from the anonymous manufacturer 2020 native RFA, including its plate and center clamp, which require IncludeNonVisibleObjects when extracting the source. Exact scheduled satin-nickel / white-glass finish is assigned through editable material parameters. Manufacturer 24.5 x 5 x 3.1-inch envelope checked within 1 mm. ASSUMPTION: uniform satin finish and opal appearance are visualization approximations. Original source is preserved.",
+      "search": "Official product resources and verified BIM listings searched; no exact, usable anonymous RFA accepted. See retained source resources and manufacturer acquisition/inspection receipts.",
+      "category": "Lighting Fixtures",
+      "actual": [
+        24.488188976377447,
+        5.000000059604645,
+        3.1015625000013554
+      ],
+      "expected": [
+        24.5,
+        5,
+        3.1
+      ],
+      "gates": {
+        "dimensions": true,
+        "materials": true,
+        "views": true,
+        "reopened": true,
+        "saved_dimensions_within_1mm": true,
+        "orientation": true,
+        "actual_face_host": true,
+        "category": true,
+        "saved_components_within_1mm": true,
+        "warnings": true,
+        "cct": true,
+        "saved_bitmaps_resolve": true
+      },
+      "rfa_path": "E:\\Claude\\3D-Model-Workflow\\output\\1527_wieland\\electrical_fixtures\\B3-1__1598063830957956\\Visual_Comfort_Milan_700BCMLN24WS_LED930_R2025.rfa",
+      "rfa_sha256": "0f028911873979a35a6c37d9a2f624584ed18a5a758f098f4ae6ab77a9821fa2",
+      "rfa_signature": "d0cf11e0a1b11ae1",
+      "validation_sha256": "b35279ef5316d93ad860503f7c354b955779d3c85d475d7bfe5e9a078d70b2b7",
+      "preview_count": 9,
+      "missing_previews": [],
+      "source_notes": [
+        "NEEDS REVIEW 2026-10-01: Fixture row is populated, but Client comment remains TBD. Verify against the final lighting schedule / approved fixture selection before order; existing identity, quantity, and carried price are preserved. | RESOLVED 2026-10-01: Milan Bathroom Vanity Light TLG604508 is supported for B3-1 / Triplex Bath 2; dedicated schedule identifies Milan for B3-1; Lightopia estimate quotes Visual Comfort Milan for Triplex B3-1. Client TBD text is retained as historical input; this row is treated as the base fixture for procurement comparison.",
+        "NEEDS REVIEW 2026-10-01: Fixture row is populated, but Client comment remains TBD. Verify against the final lighting schedule / approved fixture selection before order; existing identity, quantity, and carried price are preserved. | RESOLVED 2026-10-01: Milan Bathroom Vanity Light TLG604508 is supported for B4-1 / Triplex Bath 3; dedicated schedule identifies Milan for B4-1; Lightopia estimate quotes four Milan fixtures across the Triplex secondary bathrooms. Client TBD text is retained as historical input; this row is treated as the base fixture for procurement comparison.",
+        "NEEDS REVIEW 2026-10-01: Fixture row is populated, but Client comment remains TBD. Verify against the final lighting schedule / approved fixture selection before order; existing identity, quantity, and carried price are preserved. | RESOLVED 2026-10-01: Milan Bathroom Vanity Light TLG604508 is supported for B5-1 / Triplex Bath 4; Lightopia estimate quotes Milan across the Triplex secondary-bath set; the dedicated schedule repeats B4-1 for multiple bathroom locations, supporting the live room/product mapping. Client TBD text is retained as historical input; this row is treated as the base fixture for procurement comparison.",
+        "NEEDS REVIEW 2026-10-01: Fixture row is populated, but Client comment remains TBD. Verify against the final lighting schedule / approved fixture selection before order; existing identity, quantity, and carried price are preserved. | RESOLVED 2026-10-01: Milan Bathroom Vanity Light TLG604508 is supported for B6-1 / Triplex Powder 2; Lightopia estimate quotes four Milan fixtures across the Triplex B3/B4 bathroom group; Powder 2 is the later renamed former Bathroom 5 location. Live product retained. Client TBD text is retained as historical input; this row is treated as the base fixture for procurement comparison."
+      ]
+    },
+    {
+      "key": "KZC1009577",
+      "rows": 1,
+      "folder": "T1-1__4412813598064516",
+      "technical_pass": true,
+      "model": "PD75027-BK",
+      "source_url": "https://kuzcolighting.com/products/motif-pd75027-kuzco",
+      "inferences": "0.75-inch x 26.75-inch body, 4.625-inch x 0.5-inch canopy. ASSUMPTION: 48-inch drop and fine internal filament/cap proportions. Public 2019 OEM body measures about 18 mm diameter against the current 19.05 mm nominal; canopy is also undersized. Current native reconstruction preserves the referenced clear cylinder and end caps.",
+      "search": "Manufacturer public RFA downloaded/opened in 2025; measured native body/canopy differ from current published dimensions, so unchanged RFA was not accepted.",
+      "category": "Lighting Fixtures",
+      "actual": [
+        4.6249998807907104,
+        4.6249998807907104,
+        48.0
+      ],
+      "expected": [
+        4.625,
+        4.625,
+        48
+      ],
+      "gates": {
+        "cct": true,
+        "materials": true,
+        "saved_bitmaps_resolve": true,
+        "reopened": true,
+        "dimensions": true,
+        "saved_dimensions_within_1mm": true,
+        "actual_face_host": true,
+        "saved_components_within_1mm": true,
+        "orientation": true,
+        "warnings": true,
+        "views": true,
+        "category": true
+      },
+      "rfa_path": "E:\\Claude\\3D-Model-Workflow\\output\\1527_wieland\\electrical_fixtures\\T1-1__4412813598064516\\Kuzco_Motif_PD75027_Black_R2025.rfa",
+      "rfa_sha256": "0ade2e81187d29614b390607cdffaf74501ba9d8e0c2828b836e44b6d1e6dc93",
+      "rfa_signature": "d0cf11e0a1b11ae1",
+      "validation_sha256": "ba7a8530394e29f835a8e894ab5cb60a257b3e0c0086e5e779fa9cc1379b58d2",
+      "preview_count": 9,
+      "missing_previews": [],
+      "source_notes": []
+    },
+    {
+      "key": "KZC610420",
+      "rows": 1,
+      "folder": "K2-1__1035113877536644",
+      "technical_pass": true,
+      "model": "EW22109-BK",
+      "source_url": "https://kuzcolighting.com/products/vista-ew22109-kuzco",
+      "inferences": "4.25 x 8.625 x 3.5 inches. Open-ended rectangular body on taller plate, two recessed light slots. ASSUMPTION: extrusion wall thickness and internal optical tray geometry from manufacturer/product photographs.",
+      "search": "Public primary product resources and the retained exact product page were inspected; no direct, exact native RFA was available in those resources. This does not assert that no RFA exists elsewhere.",
+      "category": "Lighting Fixtures",
+      "actual": [
+        4.25,
+        8.625,
+        3.5
+      ],
+      "expected": [
+        4.25,
+        8.625,
+        3.5
+      ],
+      "gates": {
+        "cct": true,
+        "saved_dimensions_within_1mm": true,
+        "warnings": true,
+        "reopened": true,
+        "materials": true,
+        "actual_face_host": true,
+        "views": true,
+        "saved_components_within_1mm": true,
+        "saved_bitmaps_resolve": true,
+        "dimensions": true,
+        "category": true,
+        "orientation": true
+      },
+      "rfa_path": "E:\\Claude\\3D-Model-Workflow\\output\\1527_wieland\\electrical_fixtures\\K2-1__1035113877536644\\Kuzco_Vista_EW22109_Black_R2025.rfa",
+      "rfa_sha256": "5972e286b59263198eb16c7b565b29a00551046bea27f22294650c8c43c42e64",
+      "rfa_signature": "d0cf11e0a1b11ae1",
+      "validation_sha256": "5e03cf40a8d1cf03065ca6b30de6ae1e8f9f9f69a94931efd9d222a75b2f6ee9",
+      "preview_count": 9,
+      "missing_previews": [],
+      "source_notes": [
+        "NEEDS REVIEW 2026-10-01: Fixture row is populated, but Client comment remains TBD. Verify against the final lighting schedule / approved fixture selection before order; existing identity, quantity, and carried price are preserved. | RESOLVED 2026-10-01: Vista Indoor / Outdoor Wall Light KZC610420 is supported for K2-1 / Triplex Kitchen/Breakfast Nook; dedicated schedule selects Vista KZC610420 at 2 per project pair; Lightopia estimate quotes Vista EW22109-BK qty 2. Live Qty 1 is per Triplex unit and is consistent with two units. Client TBD text is retained as historical input; this row is treated as the base fixture for procurement comparison."
+      ]
+    }
+  ]
+}

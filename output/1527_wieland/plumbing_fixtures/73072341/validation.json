@@ -1,0 +1,219 @@
+{
+  "template_form_ids": [
+    "1537"
+  ], 
+  "rfa_search": {
+    "evidence": "_research/73072341/sources.json", 
+    "result": "No acceptable no-account RFA recovered"
+  }, 
+  "actual_dimensions_in": [
+    2.625, 
+    9.0000000000000018, 
+    10.250000238418579
+  ], 
+  "source_dimensions": [
+    "Overall height 10.25 in; base width 1.75 in; nominal outlet height 9.625 in; outlet reach 7.75 in."
+  ], 
+  "bounds_in": [
+    -0.875, 
+    -8.1250000000000018, 
+    -4.2000293500464007e-26, 
+    1.75, 
+    0.875, 
+    10.250000238418579
+  ], 
+  "reopened": true, 
+  "category": "Plumbing Fixtures", 
+  "actual_dimensions_after_reopen_mm": [
+    66.674999999999997, 
+    228.60000000000002, 
+    260.35000605583190
+  ], 
+  "bounds_method": "Fine native face meshes plus 128-sample analytic edges", 
+  "source_spec_path": "E:\\Claude\\3D-Model-Workflow\\output\\1527_wieland\\plumbing_fixtures\\73072341\\source\\model_spec.json", 
+  "rfa_path": "E:\\Claude\\3D-Model-Workflow\\output\\1527_wieland\\plumbing_fixtures\\73072341\\Hansgrohe_73072341_R2025.rfa", 
+  "stage": "complete", 
+  "cct_k": null, 
+  "placement": "WorkPlaneBased", 
+  "material_tests": {
+    "Detail": {
+      "substitution_reaches_faces": true, 
+      "writable": true, 
+      "face_count": 56
+    }, 
+    "Finish": {
+      "substitution_reaches_faces": true, 
+      "writable": true, 
+      "face_count": 56
+    }
+  }, 
+  "evidence_files": [
+    "Hansgrohe_73072341_R2025_Isolated - 3D View - Native Front.png", 
+    "Hansgrohe_73072341_R2025_Isolated - 3D View - Native Material.png", 
+    "Hansgrohe_73072341_R2025_Isolated - 3D View - Native Oblique.png", 
+    "Hansgrohe_73072341_R2025_Isolated - 3D View - Native Side.png"
+  ], 
+  "model": "73072341", 
+  "acceptance": "NATIVE_GATES_PASSED_PENDING_VISUAL_REVIEW", 
+  "native_path_checks": [], 
+  "finished_utc": "2026-10-02T14:37:55.923000Z", 
+  "source_spec_sha256": "b24a079e5f659e41341b7bf5e4fc50a370351c7b4c722c8c89aa2baf77d618e7", 
+  "reopened_warnings": [], 
+  "project_warnings": [], 
+  "reopen_geometry_equal": true, 
+  "visual_review": "PENDING_NATIVE_IMAGE_REVIEW", 
+  "display_bounds_in": [
+    -0.875, 
+    -8.1250000000000018, 
+    0.0, 
+    1.75, 
+    0.875, 
+    10.25
+  ], 
+  "source_references": [
+    {
+      "page": 62, 
+      "document": "Hansgrohe 2026 US Price Book", 
+      "url": "https://assets.hansgrohe.com/celum/emailmarketing/hansgrohe_2026_Price_Book_en_US.pdf", 
+      "local_image": "_research/catalog_pages/page_062.png"
+    }
+  ], 
+  "appearance_bindings": {
+    "Detail": {
+      "material_id": "3207", 
+      "exists": true, 
+      "path": "E:\\Claude\\3D-Model-Workflow\\output\\1527_wieland\\plumbing_fixtures\\73072341\\textures\\Detail.png"
+    }, 
+    "Finish": {
+      "material_id": "3210", 
+      "exists": true, 
+      "path": "E:\\Claude\\3D-Model-Workflow\\output\\1527_wieland\\plumbing_fixtures\\73072341\\textures\\Finish.png"
+    }
+  }, 
+  "revit_build": "25.4.50.35", 
+  "dimension_anchor_checks": [
+    {
+      "label": "Overall height", 
+      "pass": true, 
+      "actual_mm": 260.35000605583190, 
+      "nominal_mm": 260.34999999999997, 
+      "deviation_mm": 6.0558319091796872e-06
+    }, 
+    {
+      "label": "Base width", 
+      "pass": true, 
+      "actual_mm": 44.449999999999996, 
+      "nominal_mm": 44.449999999999996, 
+      "deviation_mm": 0.0
+    }
+  ], 
+  "material_ids": {
+    "Detail": "3207", 
+    "Finish": "3210"
+  }, 
+  "expected_dimensions_in": [
+    2.625, 
+    9, 
+    10.25
+  ], 
+  "inferences": "Body/spout section dimensions and side paddle thickness are drawing-derived. | Above-counter geometry only. Control shown closed; open-handle envelope is not modeled. | Independent visualization reconstruction with fixed product dimensions and editable native materials. | Small fillets, seams, nozzle details and optical material response are inferred where the manufacturer does not dimension them. | No internal hydraulic performance, MEP connectors, fabrication tolerances or procurement substitutions are implied.", 
+  "gates": {
+    "reopened": true, 
+    "warnings": true, 
+    "orientation": true, 
+    "diffuse_bitmaps": true, 
+    "actual_face_host": true, 
+    "dimensions": true, 
+    "materials": true, 
+    "reopen_geometry_equal": true, 
+    "views": true, 
+    "category": true, 
+    "cct": true
+  }, 
+  "revit_version": "2025", 
+  "manufacturer": "Hansgrohe", 
+  "technical_pass": true, 
+  "family_warnings": [], 
+  "started_utc": "2026-10-02T14:37:52.388000Z", 
+  "type": "73072341 - black_chrome", 
+  "parts": [
+    {
+      "volume_ft3": 0.0002833242262912164, 
+      "id": "3212", 
+      "name": "Square base"
+    }, 
+    {
+      "volume_ft3": 0.0091275756941317145, 
+      "id": "3213", 
+      "name": "Tall rectangular body"
+    }, 
+    {
+      "volume_ft3": 0.004111400632072131, 
+      "id": "3214", 
+      "name": "Long flat spout"
+    }, 
+    {
+      "volume_ft3": 1.4360875283018243e-05, 
+      "id": "3215", 
+      "name": "Spout aerator"
+    }, 
+    {
+      "volume_ft3": 0.00020361154098071907, 
+      "id": "3216", 
+      "name": "Side control hub"
+    }, 
+    {
+      "volume_ft3": 0.00037851922793448163, 
+      "id": "3217", 
+      "name": "Control paddle"
+    }
+  ], 
+  "all_overall_dimensions_authoritative": false, 
+  "native_gates_pass": true, 
+  "appearance_defaults": {
+    "Detail": {
+      "rgb": [
+        24, 
+        25, 
+        26
+      ], 
+      "gloss": 0.17000000000000001, 
+      "luminance": 0, 
+      "transparency": 0, 
+      "cct_k": null
+    }, 
+    "Finish": {
+      "rgb": [
+        77, 
+        73, 
+        69
+      ], 
+      "gloss": 0.59999999999999998, 
+      "luminance": 0, 
+      "transparency": 0, 
+      "cct_k": null
+    }
+  }, 
+  "reopened_bounds_in": [
+    -0.875, 
+    -8.1250000000000018, 
+    -4.2000293500464007e-26, 
+    1.75, 
+    0.875, 
+    10.250000238418579
+  ], 
+  "limitations": [
+    "Body/spout section dimensions and side paddle thickness are drawing-derived.", 
+    "Above-counter geometry only. Control shown closed; open-handle envelope is not modeled.", 
+    "Independent visualization reconstruction with fixed product dimensions and editable native materials.", 
+    "Small fillets, seams, nozzle details and optical material response are inferred where the manufacturer does not dimension them.", 
+    "No internal hydraulic performance, MEP connectors, fabrication tolerances or procurement substitutions are implied."
+  ], 
+  "host": {
+    "hostface_present": true, 
+    "host_kind": "floor", 
+    "normal_dot": 1.0, 
+    "host_id": "3699", 
+    "instance_host_id": "3699"
+  }
+}

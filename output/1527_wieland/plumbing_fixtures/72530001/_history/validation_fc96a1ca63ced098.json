@@ -1,0 +1,207 @@
+{
+  "limitations": [
+    "Fixed 8 in installation spacing; levers shown pointing outwards.", 
+    "Above-counter set only; drain, supply hoses, cast underside and detailed aerator are omitted.", 
+    "Waterfall/spout shoulders are traced approximately from the catalog side drawing.", 
+    "Independent visualization reconstruction with fixed product dimensions and editable native materials.", 
+    "Small fillets, seams, nozzle details and optical material response are inferred where the manufacturer does not dimension them.", 
+    "No internal hydraulic performance, MEP connectors, fabrication tolerances or procurement substitutions are implied."
+  ], 
+  "started_utc": "2026-10-02T14:37:55.995000Z", 
+  "project_warnings": [], 
+  "parts": [
+    {
+      "volume_ft3": 0.00029087362997245591, 
+      "id": "3209", 
+      "name": "Spout base"
+    }, 
+    {
+      "volume_ft3": 0.0060173586078513027, 
+      "id": "3210", 
+      "name": "Sculpted spout"
+    }, 
+    {
+      "volume_ft3": 0.00025565065134297885, 
+      "id": "3211", 
+      "name": "Left valve base"
+    }, 
+    {
+      "volume_ft3": 0.0009753701817449504, 
+      "id": "3212", 
+      "name": "Left valve body"
+    }, 
+    {
+      "volume_ft3": 0.00012271045847232531, 
+      "id": "3213", 
+      "name": "Left flat lever"
+    }, 
+    {
+      "volume_ft3": 0.00025565065134297885, 
+      "id": "3214", 
+      "name": "Right valve base"
+    }, 
+    {
+      "volume_ft3": 0.0009753701817449504, 
+      "id": "3215", 
+      "name": "Right valve body"
+    }, 
+    {
+      "volume_ft3": 0.00012271045847232531, 
+      "id": "3216", 
+      "name": "Right flat lever"
+    }
+  ], 
+  "inferences": "Fixed 8 in installation spacing; levers shown pointing outwards. | Above-counter set only; drain, supply hoses, cast underside and detailed aerator are omitted. | Waterfall/spout shoulders are traced approximately from the catalog side drawing. | Independent visualization reconstruction with fixed product dimensions and editable native materials. | Small fillets, seams, nozzle details and optical material response are inferred where the manufacturer does not dimension them. | No internal hydraulic performance, MEP connectors, fabrication tolerances or procurement substitutions are implied.", 
+  "reopen_geometry_equal": true, 
+  "template_form_ids": [
+    "1537"
+  ], 
+  "rfa_path": "E:\\Claude\\3D-Model-Workflow\\output\\1527_wieland\\plumbing_fixtures\\72530001\\Hansgrohe_72530001_R2025.rfa", 
+  "material_ids": {
+    "Finish": "3207"
+  }, 
+  "native_path_checks": [], 
+  "bounds_in": [
+    -6.5000002384185791, 
+    -5.7500000000000009, 
+    -1.2967490310058968e-24, 
+    6.5000002384185791, 
+    1.0000000298023224, 
+    5.2042229501909034
+  ], 
+  "source_spec_sha256": "49e7733278c3cd21c633ec865a6927ef4766efd67a020ce3930d6fff5765018f", 
+  "bounds_method": "Fine native face meshes plus 128-sample analytic edges", 
+  "source_spec_path": "E:\\Claude\\3D-Model-Workflow\\output\\1527_wieland\\plumbing_fixtures\\72530001\\source\\model_spec.json", 
+  "family_warnings": [], 
+  "stage": "failed", 
+  "reopened": true, 
+  "category": "Plumbing Fixtures", 
+  "expected_dimensions_in": [
+    13.0, 
+    6.75, 
+    5.125
+  ], 
+  "placement": "WorkPlaneBased", 
+  "reopened_warnings": [], 
+  "reopened_bounds_in": [
+    -6.5000002384185791, 
+    -5.7500000000000009, 
+    -1.2967490310058968e-24, 
+    6.5000002384185791, 
+    1.0000000298023224, 
+    5.2042229501909034
+  ], 
+  "material_tests": {
+    "Finish": {
+      "substitution_reaches_faces": true, 
+      "writable": true, 
+      "face_count": 60
+    }
+  }, 
+  "model": "72530001", 
+  "revit_version": "2025", 
+  "type": "72530001 - chrome", 
+  "gates": {
+    "reopened": true, 
+    "warnings": true, 
+    "orientation": true, 
+    "diffuse_bitmaps": true, 
+    "actual_face_host": true, 
+    "dimensions": false, 
+    "materials": true, 
+    "reopen_geometry_equal": true, 
+    "views": true, 
+    "category": true, 
+    "cct": true
+  }, 
+  "evidence_files": [
+    "Hansgrohe_72530001_R2025_Isolated - 3D View - Native Front.png", 
+    "Hansgrohe_72530001_R2025_Isolated - 3D View - Native Material.png", 
+    "Hansgrohe_72530001_R2025_Isolated - 3D View - Native Oblique.png", 
+    "Hansgrohe_72530001_R2025_Isolated - 3D View - Native Side.png"
+  ], 
+  "rfa_search": {
+    "evidence": "_research/72530001/sources.json", 
+    "result": "No acceptable no-account RFA recovered"
+  }, 
+  "finished_utc": "2026-10-02T14:37:59.294000Z", 
+  "manufacturer": "Hansgrohe", 
+  "display_bounds_in": [
+    -6.5, 
+    -5.7500000000000009, 
+    0.0, 
+    6.5, 
+    1.0, 
+    5.1989356881873885
+  ], 
+  "cct_k": null, 
+  "appearance_bindings": {
+    "Finish": {
+      "material_id": "3207", 
+      "exists": true, 
+      "path": "E:\\Claude\\3D-Model-Workflow\\output\\1527_wieland\\plumbing_fixtures\\72530001\\textures\\Finish.png"
+    }
+  }, 
+  "revit_build": "25.4.50.35", 
+  "technical_pass": false, 
+  "dimension_anchor_checks": [
+    {
+      "label": "Height", 
+      "pass": false, 
+      "actual_mm": 132.18726293484895, 
+      "nominal_mm": 130.17499999999998, 
+      "deviation_mm": 2.0122629348489469
+    }, 
+    {
+      "label": "Base diameter", 
+      "pass": true, 
+      "actual_mm": 50.800001513957973, 
+      "nominal_mm": 50.799999999999997, 
+      "deviation_mm": 1.5139579772949218e-06
+    }
+  ], 
+  "host": {
+    "hostface_present": true, 
+    "host_kind": "floor", 
+    "normal_dot": 1.0, 
+    "host_id": "3697", 
+    "instance_host_id": "3697"
+  }, 
+  "source_references": [
+    {
+      "page": 69, 
+      "document": "Hansgrohe 2026 US Price Book", 
+      "url": "https://assets.hansgrohe.com/celum/emailmarketing/hansgrohe_2026_Price_Book_en_US.pdf", 
+      "local_image": "_research/catalog_pages/page_069.png"
+    }
+  ], 
+  "source_dimensions": [
+    "8 in valve centers; height 5.125 in; reach 5.250 in; spout base diameter 2 in.", 
+    "Handle length 2.500 in and height 2.250 in from the manufacturer diagram."
+  ], 
+  "acceptance": "UNREVIEWED", 
+  "actual_dimensions_in": [
+    13.000000476837158, 
+    6.7500000298023233, 
+    5.2042229501909034
+  ], 
+  "error": "Traceback (most recent call last):\n  File \"E:\\Claude\\3D-Model-Workflow\\output\\1527_wieland\\plumbing_fixtures\\_harness\\family_factory.py\", line 121, in build\n    result=f.finish()\n  File \"E:\\Claude\\3D-Model-Workflow\\output\\1527_wieland\\plumbing_fixtures\\_harness\\native_plumbing_support.py\", line 290, in finish\n    if not self.report['technical_pass']:raise RuntimeError('Failed native gates: '+str([k for k,v in gates.items() if not v]))\nRuntimeError: Failed native gates: ['dimensions']\n", 
+  "actual_dimensions_after_reopen_mm": [
+    330.20001211166380, 
+    171.45000075697899, 
+    132.18726293484895
+  ], 
+  "appearance_defaults": {
+    "Finish": {
+      "rgb": [
+        195, 
+        198, 
+        201
+      ], 
+      "gloss": 0.95999999999999996, 
+      "luminance": 0, 
+      "transparency": 0, 
+      "cct_k": null
+    }
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "model": "G 5051 SCVi ADA",
+  "slug": "miele_g5051scvi",
+  "status": "BUILT_WITH_LIMITATIONS",
+  "rfa": "miele_g5051scvi/miele_g5051scvi_Custom_R1_R2025.rfa",
+  "rfa_bytes": 479232,
+  "rfa_sha256": "eb5801a312601166421008c2c045efc77742b8ee0454652f9288750872c90873",
+  "row_ids": [
+    3328172767117188,
+    904397767376772
+  ],
+  "source_urls": [
+    "https://www.mieleusa.com/product/11636710/fully-integrated-ada-dishwasher-g-5051-scvi-active-stainless-steel",
+    "https://media.miele.com/downloads/a5/52/10_70A8A51285B71FE1ABFC9D443DCBA552.zip",
+    "https://media.miele.com/downloads/n-/us/FS_11636710_USE_US-en-US.pdf",
+    "https://www.mieleusa.com/product/11636710/fully-integrated-dishwasher-g-5051-scvi-active-stainless-steel"
+  ],
+  "original_rfas": [
+    {
+      "path": "miele_g5051scvi/source/original/11636710_USA_G5051SCVi_ED.rfa",
+      "sha256": "e1a4d3c5cf00f4c4b942ac69ad30a98d3bc778cbb678cc65144a2ac4e78073fc"
+    }
+  ],
+  "validation": "miele_g5051scvi/validation.json",
+  "previews": [
+    "miele_g5051scvi/views/rework_r1/oblique - 3D View - oblique.png",
+    "miele_g5051scvi/views/rework_r1/front - 3D View - front.png",
+    "miele_g5051scvi/views/rework_r1/side - 3D View - side.png"
+  ],
+  "revision": "Custom_R1",
+  "build_method": "native_custom_new_family",
+  "dimension_gate": true,
+  "dimension_gate_scope": "overall",
+  "native_gates_pass": true,
+  "replacement_reason": "Orchestrator round 1: exact-identity manufacturer working family fails the <=1 mm complete overall dimension gate. New native custom geometry replaces the working selection; OEM originals and prior working RFA remain preserved.",
+  "superseded_working_rfa": {
+    "path": "miele_g5051scvi/miele_g5051scvi_R2025.rfa",
+    "sha256": "27391211e2833b4185affafe8f8bf49126ed9e20b216479b254294c4227ba10f",
+    "status": "DOWNLOADED"
+  },
+  "source_pdf_sha256": "9ee6f3dbc23ad9bd205255e96a591e01f32f83dbf0926879be2e2f2b5f0a25f8",
+  "source_page": 2,
+  "custom_build_entry": "miele_g5051scvi/source/build.py",
+  "build_support": [
+    "rework_round1/native_rebuild.py",
+    "rework_round1/validate_native.py",
+    "family_common.py"
+  ],
+  "validation_native_record": "miele_g5051scvi/source/rework_r1/validation.json",
+  "validation_sha256": "42d6bbbe8e9dd11a2db9ce2badba7685f505a9c18edcd51602804a66a3731e31"
+}

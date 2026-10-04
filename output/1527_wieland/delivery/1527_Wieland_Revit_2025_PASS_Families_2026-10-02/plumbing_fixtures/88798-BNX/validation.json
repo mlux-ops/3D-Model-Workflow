@@ -1,0 +1,373 @@
+{
+  "manufacturer": "Brizo", 
+  "visual_review": "PENDING_NATIVE_IMAGE_REVIEW", 
+  "gates": {
+    "dimensions": true, 
+    "category": true, 
+    "warnings": true, 
+    "reopened": true, 
+    "materials": true, 
+    "orientation": true, 
+    "cct": true, 
+    "reopen_geometry_equal": true, 
+    "diffuse_bitmaps": true, 
+    "actual_face_host": true, 
+    "views": true
+  }, 
+  "expected_dimensions_in": [
+    7.09375, 
+    50.462555509807657, 
+    4.5700000000000003
+  ], 
+  "reopened_bounds_in": [
+    -2.125, 
+    -37.118805885314941, 
+    -3.3306690738754696e-16, 
+    4.96875, 
+    13.34375, 
+    4.5700000000000003
+  ], 
+  "finished_utc": "2026-10-02T15:27:44.652000Z", 
+  "source_references": [
+    {
+      "document": "Brizo BSP-B-88798 Rev D", 
+      "page": 1, 
+      "local_image": "_research/88798-BNX/downloads/BSP-B-88798_Rev_D_pages/page_01.png", 
+      "url": "https://media.brizo.com/SpecSheet/BSP-B-88798%20Rev%20D.pdf"
+    }
+  ], 
+  "rfa_search": {
+    "result": "No acceptable no-account RFA recovered", 
+    "evidence": "_research/88798-BNX/sources.json"
+  }, 
+  "source_spec_sha256": "b6227e8832769e4e606d172630a9d5b83bcbe4586963675e0c85fd7ef4aad0aa", 
+  "actual_dimensions_in": [
+    7.09375, 
+    50.462555885314941, 
+    4.5700000000000003
+  ], 
+  "evidence_files": [
+    "Brizo_88798-BNX_R2025_Isolated - 3D View - Native Front.png", 
+    "Brizo_88798-BNX_R2025_Isolated - 3D View - Native Material.png", 
+    "Brizo_88798-BNX_R2025_Isolated - 3D View - Native Oblique.png", 
+    "Brizo_88798-BNX_R2025_Isolated - 3D View - Native Side.png"
+  ], 
+  "bounds_method": "Fine native face meshes plus 128-sample analytic edges", 
+  "acceptance": "NATIVE_GATES_PASSED_PENDING_VISUAL_REVIEW", 
+  "bounds_in": [
+    -2.125, 
+    -37.118805885314941, 
+    -3.3306690738754696e-16, 
+    4.96875, 
+    13.34375, 
+    4.5700000000000003
+  ], 
+  "material_tests": {
+    "Gray": {
+      "writable": true, 
+      "face_count": 206, 
+      "substitution_reaches_faces": true
+    }, 
+    "Finish": {
+      "writable": true, 
+      "face_count": 206, 
+      "substitution_reaches_faces": true
+    }, 
+    "Detail": {
+      "writable": true, 
+      "face_count": 206, 
+      "substitution_reaches_faces": true
+    }
+  }, 
+  "appearance_bindings": {
+    "Gray": {
+      "material_id": "3213", 
+      "path": "E:\\Claude\\3D-Model-Workflow\\output\\1527_wieland\\plumbing_fixtures\\88798-BNX\\textures\\Gray.png", 
+      "exists": true
+    }, 
+    "Finish": {
+      "material_id": "3210", 
+      "path": "E:\\Claude\\3D-Model-Workflow\\output\\1527_wieland\\plumbing_fixtures\\88798-BNX\\textures\\Finish.png", 
+      "exists": true
+    }, 
+    "Detail": {
+      "material_id": "3207", 
+      "path": "E:\\Claude\\3D-Model-Workflow\\output\\1527_wieland\\plumbing_fixtures\\88798-BNX\\textures\\Detail.png", 
+      "exists": true
+    }
+  }, 
+  "all_overall_dimensions_authoritative": false, 
+  "category": "Plumbing Fixtures", 
+  "material_ids": {
+    "Gray": "3213", 
+    "Finish": "3210", 
+    "Detail": "3207"
+  }, 
+  "source_dimensions": [
+    "Bar height 26.6875 in; bar width 1.75 in; projection 3.75 in; head diameter 3.9375 in; handshower length 11.375 in."
+  ], 
+  "host": {
+    "normal_dot": 1.0, 
+    "host_kind": "wall", 
+    "instance_host_id": "3726", 
+    "hostface_present": true, 
+    "host_id": "3726"
+  }, 
+  "parts": [
+    {
+      "name": "Curved rectangular slide bar", 
+      "id": "3215", 
+      "volume_ft3": 0.012229365596064815
+    }, 
+    {
+      "name": "Slider clamp", 
+      "id": "3216", 
+      "volume_ft3": 0.0039364519181233348
+    }, 
+    {
+      "name": "Handshower round head", 
+      "id": "3217", 
+      "volume_ft3": 0.0045801412004665577
+    }, 
+    {
+      "name": "Spray face", 
+      "id": "3218", 
+      "volume_ft3": 0.0004261716809939582
+    }, 
+    {
+      "name": "Handshower handle", 
+      "id": "3219", 
+      "volume_ft3": 0.0039111050082115155
+    }, 
+    {
+      "name": "Bottom hose outlet", 
+      "id": "3220", 
+      "volume_ft3": 0.00030678078161157487
+    }, 
+    {
+      "name": "Head nozzle 0", 
+      "id": "3221", 
+      "volume_ft3": 8.14496471556516e-07
+    }, 
+    {
+      "name": "Head nozzle 1", 
+      "id": "3222", 
+      "volume_ft3": 8.14496471556516e-07
+    }, 
+    {
+      "name": "Head nozzle 2", 
+      "id": "3223", 
+      "volume_ft3": 8.1449647155651611e-07
+    }, 
+    {
+      "name": "Head nozzle 3", 
+      "id": "3224", 
+      "volume_ft3": 8.1449647155651611e-07
+    }, 
+    {
+      "name": "Head nozzle 4", 
+      "id": "3225", 
+      "volume_ft3": 8.1449647155651611e-07
+    }, 
+    {
+      "name": "Head nozzle 5", 
+      "id": "3226", 
+      "volume_ft3": 8.14496471556516e-07
+    }, 
+    {
+      "name": "Head nozzle 6", 
+      "id": "3227", 
+      "volume_ft3": 8.1449647155651611e-07
+    }, 
+    {
+      "name": "Head nozzle 7", 
+      "id": "3228", 
+      "volume_ft3": 8.144964715565159e-07
+    }, 
+    {
+      "name": "Head nozzle 8", 
+      "id": "3229", 
+      "volume_ft3": 8.144964715565159e-07
+    }, 
+    {
+      "name": "Head nozzle 9", 
+      "id": "3230", 
+      "volume_ft3": 8.144964715565159e-07
+    }, 
+    {
+      "name": "Head nozzle 10", 
+      "id": "3231", 
+      "volume_ft3": 8.144964715565159e-07
+    }, 
+    {
+      "name": "Head nozzle 11", 
+      "id": "3232", 
+      "volume_ft3": 8.144964715565159e-07
+    }, 
+    {
+      "name": "Head nozzle 12", 
+      "id": "3233", 
+      "volume_ft3": 8.144964715565159e-07
+    }, 
+    {
+      "name": "Head nozzle 13", 
+      "id": "3234", 
+      "volume_ft3": 8.144964715565159e-07
+    }, 
+    {
+      "name": "Head nozzle 14", 
+      "id": "3235", 
+      "volume_ft3": 8.144964715565159e-07
+    }, 
+    {
+      "name": "Head nozzle 15", 
+      "id": "3236", 
+      "volume_ft3": 8.144964715565159e-07
+    }, 
+    {
+      "name": "Head nozzle 16", 
+      "id": "3237", 
+      "volume_ft3": 8.144964715565159e-07
+    }, 
+    {
+      "name": "Head nozzle 17", 
+      "id": "3238", 
+      "volume_ft3": 8.144964715565159e-07
+    }, 
+    {
+      "name": "Head nozzle 18", 
+      "id": "3239", 
+      "volume_ft3": 8.1449647155651611e-07
+    }, 
+    {
+      "name": "Head nozzle 19", 
+      "id": "3240", 
+      "volume_ft3": 8.14496471556516e-07
+    }, 
+    {
+      "name": "Head nozzle 20", 
+      "id": "3241", 
+      "volume_ft3": 8.14496471556516e-07
+    }, 
+    {
+      "name": "Head nozzle 21", 
+      "id": "3242", 
+      "volume_ft3": 8.14496471556516e-07
+    }, 
+    {
+      "name": "Head nozzle 22", 
+      "id": "3243", 
+      "volume_ft3": 8.14496471556516e-07
+    }, 
+    {
+      "name": "Head nozzle 23", 
+      "id": "3244", 
+      "volume_ft3": 8.1449647155651611e-07
+    }, 
+    {
+      "name": "60 inch hose", 
+      "id": "3245", 
+      "volume_ft3": 0.0043632810795673337
+    }
+  ], 
+  "reopen_geometry_equal": true, 
+  "family_warnings": [], 
+  "source_spec_path": "E:\\Claude\\3D-Model-Workflow\\output\\1527_wieland\\plumbing_fixtures\\88798-BNX\\source\\model_spec.json", 
+  "inferences": "ASSUMPTION: handshower upright pose and 60 in hanging hose shape are fixed. The complete posed envelope is not a factory rigid-body dimension. | Bar end bends, slider fittings and nozzle layout are simplified; hose is smooth rather than corrugated. | Independent visualization reconstruction with fixed product dimensions and editable native materials. | Small fillets, seams, nozzle details and optical material response are inferred where the manufacturer does not dimension them. | No internal hydraulic performance, MEP connectors, fabrication tolerances or procurement substitutions are implied.", 
+  "native_path_checks": [
+    {
+      "part": "60 inch hose", 
+      "nominal_mm": 1524.0, 
+      "pass": true, 
+      "actual_mm": 1523.9999999999998
+    }
+  ], 
+  "revit_build": "25.4.50.35", 
+  "rfa_path": "E:\\Claude\\3D-Model-Workflow\\output\\1527_wieland\\plumbing_fixtures\\88798-BNX\\Brizo_88798-BNX_R2025.rfa", 
+  "stage": "complete", 
+  "dimension_anchor_checks": [
+    {
+      "pass": true, 
+      "nominal_mm": 677.86249999999995, 
+      "deviation_mm": 0.0, 
+      "label": "Bar height", 
+      "actual_mm": 677.86249999999995
+    }, 
+    {
+      "pass": true, 
+      "nominal_mm": 100.01249999999999, 
+      "deviation_mm": 0.0, 
+      "label": "Head diameter", 
+      "actual_mm": 100.01249999999999
+    }
+  ], 
+  "placement": "WorkPlaneBased", 
+  "reopened_warnings": [], 
+  "model": "88798-BNX", 
+  "project_warnings": [], 
+  "limitations": [
+    "ASSUMPTION: handshower upright pose and 60 in hanging hose shape are fixed. The complete posed envelope is not a factory rigid-body dimension.", 
+    "Bar end bends, slider fittings and nozzle layout are simplified; hose is smooth rather than corrugated.", 
+    "Independent visualization reconstruction with fixed product dimensions and editable native materials.", 
+    "Small fillets, seams, nozzle details and optical material response are inferred where the manufacturer does not dimension them.", 
+    "No internal hydraulic performance, MEP connectors, fabrication tolerances or procurement substitutions are implied."
+  ], 
+  "appearance_defaults": {
+    "Gray": {
+      "transparency": 0, 
+      "cct_k": null, 
+      "luminance": 0, 
+      "rgb": [
+        131, 
+        132, 
+        130
+      ], 
+      "gloss": 0.32000000000000001
+    }, 
+    "Finish": {
+      "transparency": 0, 
+      "cct_k": null, 
+      "luminance": 0, 
+      "rgb": [
+        58, 
+        60, 
+        62
+      ], 
+      "gloss": 0.92000000000000004
+    }, 
+    "Detail": {
+      "transparency": 0, 
+      "cct_k": null, 
+      "luminance": 0, 
+      "rgb": [
+        24, 
+        25, 
+        26
+      ], 
+      "gloss": 0.17000000000000001
+    }
+  }, 
+  "reopened": true, 
+  "cct_k": null, 
+  "type": "88798-BNX - Black", 
+  "started_utc": "2026-10-02T15:27:38.161000Z", 
+  "native_gates_pass": true, 
+  "actual_dimensions_after_reopen_mm": [
+    180.18124999999998, 
+    1281.7489194869995, 
+    116.07800000000000
+  ], 
+  "display_bounds_in": [
+    -2.125, 
+    -37.118805509807650, 
+    -3.3306690738754696e-16, 
+    4.96875, 
+    13.34375, 
+    4.5700000000000003
+  ], 
+  "technical_pass": true, 
+  "revit_version": "2025", 
+  "template_form_ids": [
+    "1537"
+  ]
+}

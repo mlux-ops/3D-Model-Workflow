@@ -1,0 +1,267 @@
+{
+  "key": "TER-N-SW-OF",
+  "model": "TER-N-SW-OF",
+  "manufacturer": "See source",
+  "type_name": "TER-N-SW-OF - White",
+  "basename": "Fixture_TER-N-SW-OF_R2025",
+  "name": "Terrassa freestanding tub with overflow",
+  "host": "floor",
+  "configured_dimensions_in": [
+    67,
+    31.25,
+    20.75
+  ],
+  "materials": {
+    "Finish": {
+      "rgb": [
+        245,
+        245,
+        241
+      ],
+      "gloss": 0.86,
+      "reflectivity": 0.22,
+      "class": "Ceramic"
+    },
+    "Detail": {
+      "rgb": [
+        24,
+        25,
+        26
+      ],
+      "gloss": 0.17,
+      "reflectivity": 0.04,
+      "class": "Plastic"
+    },
+    "Graphite": {
+      "rgb": [
+        64,
+        67,
+        69
+      ],
+      "gloss": 0.36,
+      "reflectivity": 0.16,
+      "class": "Glass"
+    },
+    "Ceramic": {
+      "rgb": [
+        245,
+        245,
+        241
+      ],
+      "gloss": 0.86,
+      "reflectivity": 0.22,
+      "class": "Ceramic"
+    },
+    "Brass": {
+      "rgb": [
+        160,
+        124,
+        64
+      ],
+      "gloss": 0.4,
+      "reflectivity": 0.38,
+      "class": "Metal"
+    },
+    "Green": {
+      "rgb": [
+        31,
+        113,
+        66
+      ],
+      "gloss": 0.18,
+      "reflectivity": 0.05,
+      "class": "Plastic"
+    },
+    "Gray": {
+      "rgb": [
+        131,
+        132,
+        130
+      ],
+      "gloss": 0.32,
+      "reflectivity": 0.12,
+      "class": "Plastic"
+    }
+  },
+  "geometry": [
+    {
+      "kind": "cut",
+      "name": "Open sculpted tub shell",
+      "base": {
+        "kind": "shell",
+        "sections": [
+          {
+            "center": [
+              0,
+              0,
+              0
+            ],
+            "size": [
+              43.75,
+              19.5
+            ],
+            "radius": 8
+          },
+          {
+            "center": [
+              0,
+              0,
+              3
+            ],
+            "size": [
+              50,
+              22.2
+            ],
+            "radius": 10
+          },
+          {
+            "center": [
+              0,
+              0,
+              12
+            ],
+            "size": [
+              61.8,
+              28.4
+            ],
+            "radius": 13.4
+          },
+          {
+            "center": [
+              0,
+              0,
+              20.75
+            ],
+            "size": [
+              67,
+              31.25
+            ],
+            "radius": 15.4
+          }
+        ],
+        "inner": [
+          {
+            "center": [
+              0,
+              0,
+              0.5
+            ],
+            "size": [
+              43.0,
+              18.7
+            ],
+            "radius": 8.2
+          },
+          {
+            "center": [
+              0,
+              0,
+              3.2
+            ],
+            "size": [
+              48.5,
+              21.3
+            ],
+            "radius": 9.8
+          },
+          {
+            "center": [
+              0,
+              0,
+              12
+            ],
+            "size": [
+              59.9,
+              26.9
+            ],
+            "radius": 12.9
+          },
+          {
+            "center": [
+              0,
+              0,
+              21.0
+            ],
+            "size": [
+              65.3,
+              29.65
+            ],
+            "radius": 14.5
+          }
+        ]
+      },
+      "cutters": [
+        {
+          "name": "Drain cutter",
+          "kind": "cylinder",
+          "origin": [
+            0,
+            0,
+            0
+          ],
+          "axis": [
+            0,
+            0,
+            1
+          ],
+          "radius": 1,
+          "a": -1,
+          "b": 1,
+          "material": "Finish"
+        },
+        {
+          "name": "Overflow cutter",
+          "kind": "cylinder",
+          "origin": [
+            0,
+            0,
+            18.375
+          ],
+          "axis": [
+            0,
+            1,
+            0
+          ],
+          "radius": 0.4,
+          "a": 12,
+          "b": 17,
+          "material": "Finish"
+        }
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://assets.fbgpg.com/shared/docs/product-specifications/spc-ter-n-sw_ofsp.pdf",
+      "document": "Victoria + Albert Terrassa Rev 09/23",
+      "page": 1,
+      "local_image": "_research/TER-N-SW-OF/downloads/spc-ter-n-sw_ofsp_pages/page_01.png"
+    }
+  ],
+  "dimension_authority": [
+    "Overall 67 x 31.25 x 20.75 in; base 43.75 x 19.5 in; drain diameter 2 in."
+  ],
+  "limitations": [
+    "Undimensioned shell sections and curvature reconstructed from the orthographic drawing.",
+    "No K-51 waste assembly is included; the actual drain and overflow openings remain open.",
+    "Original manufacturer download was a 3DS mesh, not RFA, and is preserved as source evidence.",
+    "Independent visualization reconstruction with fixed product dimensions and editable native materials.",
+    "Small fillets, seams, nozzle details and optical material response are inferred where the manufacturer does not dimension them.",
+    "No internal hydraulic performance, MEP connectors, fabrication tolerances or procurement substitutions are implied."
+  ],
+  "anchors": [
+    {
+      "label": "Overall length",
+      "parts": [
+        "Open sculpted tub shell"
+      ],
+      "axis": 0,
+      "nominal_in": 67
+    }
+  ],
+  "all_overall_dimensions_authoritative": true,
+  "rfa_search": {
+    "result": "No acceptable no-account RFA recovered",
+    "evidence": "_research/TER-N-SW-OF/sources.json"
+  }
+}

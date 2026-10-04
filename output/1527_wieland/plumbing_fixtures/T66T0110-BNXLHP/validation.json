@@ -1,0 +1,201 @@
+{
+  "rfa_path": "E:\\Claude\\3D-Model-Workflow\\output\\1527_wieland\\plumbing_fixtures\\T66T0110-BNXLHP\\Brizo_T66T0110-BNXLHP_R2025.rfa", 
+  "appearance_bindings": {
+    "Finish": {
+      "exists": true, 
+      "path": "E:\\Claude\\3D-Model-Workflow\\output\\1527_wieland\\plumbing_fixtures\\T66T0110-BNXLHP\\textures\\Finish.png", 
+      "material_id": "3210"
+    }, 
+    "Brass": {
+      "exists": true, 
+      "path": "E:\\Claude\\3D-Model-Workflow\\output\\1527_wieland\\plumbing_fixtures\\T66T0110-BNXLHP\\textures\\Brass.png", 
+      "material_id": "3207"
+    }
+  }, 
+  "gates": {
+    "warnings": true, 
+    "views": true, 
+    "orientation": true, 
+    "materials": true, 
+    "reopen_geometry_equal": true, 
+    "actual_face_host": true, 
+    "dimensions": true, 
+    "diffuse_bitmaps": true, 
+    "cct": true, 
+    "category": true, 
+    "reopened": true
+  }, 
+  "type": "T66T0110-BNXLHP - onyx", 
+  "material_ids": {
+    "Finish": "3210", 
+    "Brass": "3207"
+  }, 
+  "display_bounds_in": [
+    -3.5, 
+    -3.5, 
+    0.0, 
+    3.5, 
+    3.5, 
+    3.125
+  ], 
+  "revit_build": "25.4.50.35", 
+  "bounds_in": [
+    -3.5, 
+    -3.5, 
+    -8.5771886969819865e-23, 
+    3.5, 
+    3.5, 
+    3.125
+  ], 
+  "reopened_warnings": [], 
+  "native_gates_pass": true, 
+  "inferences": "Handle is separately supplied as HL66110. Cartridge sleeve steps are simplified. | Independent visualization reconstruction with fixed product dimensions and editable native materials. | Small fillets, seams, nozzle details and optical material response are inferred where the manufacturer does not dimension them. | No internal hydraulic performance, MEP connectors, fabrication tolerances or procurement substitutions are implied.", 
+  "template_form_ids": [
+    "1537"
+  ], 
+  "project_warnings": [], 
+  "material_tests": {
+    "Finish": {
+      "face_count": 24, 
+      "writable": true, 
+      "substitution_reaches_faces": true
+    }, 
+    "Brass": {
+      "face_count": 24, 
+      "writable": true, 
+      "substitution_reaches_faces": true
+    }
+  }, 
+  "placement": "WorkPlaneBased", 
+  "model": "T66T0110-BNXLHP", 
+  "rfa_search": {
+    "result": "No acceptable no-account RFA recovered", 
+    "evidence": "_research/T66T0110-BNXLHP/sources.json"
+  }, 
+  "actual_dimensions_in": [
+    7.0, 
+    7.0, 
+    3.125
+  ], 
+  "stage": "complete", 
+  "source_spec_path": "E:\\Claude\\3D-Model-Workflow\\output\\1527_wieland\\plumbing_fixtures\\T66T0110-BNXLHP\\source\\model_spec.json", 
+  "family_warnings": [], 
+  "visual_review": "PENDING_NATIVE_IMAGE_REVIEW", 
+  "parts": [
+    {
+      "name": "Escutcheon", 
+      "id": "3212", 
+      "volume_ft3": 0.011135006147383077
+    }, 
+    {
+      "name": "Cartridge collar", 
+      "id": "3213", 
+      "volume_ft3": 0.0034512837931302146
+    }, 
+    {
+      "name": "Cartridge sleeve", 
+      "id": "3214", 
+      "volume_ft3": 0.00085375955297384135
+    }, 
+    {
+      "name": "Thermostatic stem", 
+      "id": "3215", 
+      "volume_ft3": 5.3970693061295569e-05
+    }
+  ], 
+  "source_references": [
+    {
+      "local_image": "_research/T66T0110-BNXLHP/downloads/T66T0110-BLLHP_Spec_pages/page_01.png", 
+      "page": 1, 
+      "document": "BSP-B-T66T0110-LHP Rev A", 
+      "url": "https://bravo.requested-info.com/brands/BRZ/documents/specSheets/T66T0110-BLLHP_Spec.pdf"
+    }
+  ], 
+  "limitations": [
+    "Handle is separately supplied as HL66110. Cartridge sleeve steps are simplified.", 
+    "Independent visualization reconstruction with fixed product dimensions and editable native materials.", 
+    "Small fillets, seams, nozzle details and optical material response are inferred where the manufacturer does not dimension them.", 
+    "No internal hydraulic performance, MEP connectors, fabrication tolerances or procurement substitutions are implied."
+  ], 
+  "finished_utc": "2026-10-02T14:48:59.898000Z", 
+  "reopened_bounds_in": [
+    -3.5, 
+    -3.5, 
+    -8.5771886969819865e-23, 
+    3.5, 
+    3.5, 
+    3.125
+  ], 
+  "dimension_anchor_checks": [
+    {
+      "deviation_mm": 0.0, 
+      "label": "Plate diameter", 
+      "nominal_mm": 177.79999999999998, 
+      "pass": true, 
+      "actual_mm": 177.79999999999998
+    }
+  ], 
+  "source_dimensions": [
+    "Escutcheon diameter 7 in; projection 3.125 in; collar diameter 2.25 in."
+  ], 
+  "actual_dimensions_after_reopen_mm": [
+    177.79999999999998, 
+    177.79999999999998, 
+    79.375
+  ], 
+  "technical_pass": true, 
+  "reopen_geometry_equal": true, 
+  "acceptance": "NATIVE_GATES_PASSED_PENDING_VISUAL_REVIEW", 
+  "reopened": true, 
+  "all_overall_dimensions_authoritative": true, 
+  "bounds_method": "Fine native face meshes plus 128-sample analytic edges", 
+  "expected_dimensions_in": [
+    7, 
+    7, 
+    3.125
+  ], 
+  "appearance_defaults": {
+    "Finish": {
+      "transparency": 0, 
+      "luminance": 0, 
+      "rgb": [
+        58, 
+        60, 
+        62
+      ], 
+      "cct_k": null, 
+      "gloss": 0.92000000000000004
+    }, 
+    "Brass": {
+      "transparency": 0, 
+      "luminance": 0, 
+      "rgb": [
+        160, 
+        124, 
+        64
+      ], 
+      "cct_k": null, 
+      "gloss": 0.40000000000000002
+    }
+  }, 
+  "cct_k": null, 
+  "evidence_files": [
+    "Brizo_T66T0110-BNXLHP_R2025_Isolated - 3D View - Native Front.png", 
+    "Brizo_T66T0110-BNXLHP_R2025_Isolated - 3D View - Native Material.png", 
+    "Brizo_T66T0110-BNXLHP_R2025_Isolated - 3D View - Native Oblique.png", 
+    "Brizo_T66T0110-BNXLHP_R2025_Isolated - 3D View - Native Side.png"
+  ], 
+  "category": "Plumbing Fixtures", 
+  "host": {
+    "host_kind": "wall", 
+    "hostface_present": true, 
+    "instance_host_id": "3695", 
+    "host_id": "3695", 
+    "normal_dot": 1.0
+  }, 
+  "manufacturer": "Brizo", 
+  "started_utc": "2026-10-02T14:48:56.743000Z", 
+  "revit_version": "2025", 
+  "source_spec_sha256": "ca0fb82ecfd5fb422cb753dd7e6c0db9d9013d43aecae6f2a4af749139ef83fa", 
+  "native_path_checks": []
+}

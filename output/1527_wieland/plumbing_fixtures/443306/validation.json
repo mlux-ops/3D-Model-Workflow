@@ -1,0 +1,183 @@
+{
+  "host": {
+    "instance_host_id": "3691", 
+    "host_id": "3691", 
+    "host_kind": "floor", 
+    "hostface_present": true, 
+    "normal_dot": 1.0
+  }, 
+  "model": "443306", 
+  "source_dimensions": [
+    "External 30 x 19.5 x 9.5 in; nominal bowl opening 26.75 x 15.75 in; bowl depth 9 in; drain 3.5 in."
+  ], 
+  "inferences": "IDENTITY HOLD: exact manufacturer SKU 443306 is White, while the schedule requests Black. Black is retained only as the requested visual variant; no replacement SKU is asserted. | Internal floor taper, bowl wall thickness and ledge transitions are drawing-derived; no fabrication template is implied. | The 28.25 x 18 inch supplied cutout is a separate countertop opening, not the sink envelope. | Independent visualization reconstruction with fixed product dimensions and editable native materials. | Small fillets, seams, nozzle details and optical material response are inferred where the manufacturer does not dimension them. | No internal hydraulic performance, MEP connectors, fabrication tolerances or procurement substitutions are implied.", 
+  "visual_review": "PENDING_NATIVE_IMAGE_REVIEW", 
+  "source_spec_sha256": "f635f942bb64c427f8eed26323490fcf6c6b9fc646fae80981c61d9903df00f4", 
+  "started_utc": "2026-10-02T15:55:00.501000Z", 
+  "template_form_ids": [
+    "1537"
+  ], 
+  "source_references": [
+    {
+      "visual_review_method": "Manufacturer web PDF screenshot", 
+      "document": "BLANCO INTEOS 30 top drawing", 
+      "page": 1, 
+      "url": "https://cdn.blanco.com/assets/hlr-system/svg/841/205841.svg"
+    }, 
+    {
+      "visual_review_method": "Manufacturer web PDF screenshot", 
+      "document": "BLANCO INTEOS 30 side drawing", 
+      "page": 1, 
+      "url": "https://cdn.blanco.com/assets/hlr-system/svg/824/205824.svg"
+    }, 
+    {
+      "visual_review_method": "Manufacturer web PDF screenshot", 
+      "document": "Exact 443306 product page", 
+      "page": 1, 
+      "url": "https://www.blanco.com/us/sinks/inteos/blancointeos30-u_276.724/443306"
+    }
+  ], 
+  "reopened": true, 
+  "gates": {
+    "actual_face_host": true, 
+    "reopened": true, 
+    "category": true, 
+    "diffuse_bitmaps": true, 
+    "warnings": true, 
+    "views": true, 
+    "dimensions": true, 
+    "reopen_geometry_equal": true, 
+    "materials": true, 
+    "cct": true, 
+    "orientation": true
+  }, 
+  "placement": "WorkPlaneBased", 
+  "material_tests": {
+    "Finish": {
+      "face_count": 41, 
+      "substitution_reaches_faces": true, 
+      "writable": true
+    }
+  }, 
+  "acceptance": "NATIVE_GATES_PASSED_PENDING_VISUAL_REVIEW", 
+  "actual_dimensions_in": [
+    30.0, 
+    19.5, 
+    9.5000002384185791
+  ], 
+  "family_warnings": [], 
+  "cct_k": null, 
+  "stage": "complete", 
+  "manufacturer": "Blanco", 
+  "material_ids": {
+    "Finish": "3207"
+  }, 
+  "expected_dimensions_in": [
+    30, 
+    19.5, 
+    9.5
+  ], 
+  "bounds_in": [
+    -15.0, 
+    -9.75, 
+    -9.5000002384185791, 
+    15.0, 
+    9.75, 
+    6.2717114623434336e-16
+  ], 
+  "appearance_bindings": {
+    "Finish": {
+      "path": "E:\\Claude\\3D-Model-Workflow\\output\\1527_wieland\\plumbing_fixtures\\443306\\textures\\Finish.png", 
+      "exists": true, 
+      "material_id": "3207"
+    }
+  }, 
+  "rfa_path": "E:\\Claude\\3D-Model-Workflow\\output\\1527_wieland\\plumbing_fixtures\\443306\\Blanco_443306_R2025.rfa", 
+  "finished_utc": "2026-10-02T15:55:03.592000Z", 
+  "appearance_defaults": {
+    "Finish": {
+      "cct_k": null, 
+      "luminance": 0, 
+      "gloss": 0.12, 
+      "rgb": [
+        20, 
+        21, 
+        22
+      ], 
+      "transparency": 0
+    }
+  }, 
+  "evidence_files": [
+    "Blanco_443306_R2025_Isolated - 3D View - Native Front.png", 
+    "Blanco_443306_R2025_Isolated - 3D View - Native Material.png", 
+    "Blanco_443306_R2025_Isolated - 3D View - Native Oblique.png", 
+    "Blanco_443306_R2025_Isolated - 3D View - Native Side.png"
+  ], 
+  "display_bounds_in": [
+    -15.0, 
+    -9.75, 
+    -9.5, 
+    15.0, 
+    9.75, 
+    6.2450045135165055e-16
+  ], 
+  "source_spec_path": "E:\\Claude\\3D-Model-Workflow\\output\\1527_wieland\\plumbing_fixtures\\443306\\source\\model_spec.json", 
+  "all_overall_dimensions_authoritative": true, 
+  "dimension_anchor_checks": [
+    {
+      "deviation_mm": 0.0, 
+      "nominal_mm": 762.0, 
+      "label": "External width", 
+      "pass": true, 
+      "actual_mm": 762.0
+    }
+  ], 
+  "reopen_geometry_equal": true, 
+  "revit_version": "2025", 
+  "reopened_bounds_in": [
+    -15.0, 
+    -9.75, 
+    -9.5000002384185791, 
+    15.0, 
+    9.75, 
+    6.2717114623434336e-16
+  ], 
+  "project_warnings": [], 
+  "rfa_search": {
+    "result": "No acceptable no-account RFA recovered", 
+    "evidence": "_research/443306/sources.json"
+  }, 
+  "limitations": [
+    "IDENTITY HOLD: exact manufacturer SKU 443306 is White, while the schedule requests Black. Black is retained only as the requested visual variant; no replacement SKU is asserted.", 
+    "Internal floor taper, bowl wall thickness and ledge transitions are drawing-derived; no fabrication template is implied.", 
+    "The 28.25 x 18 inch supplied cutout is a separate countertop opening, not the sink envelope.", 
+    "Independent visualization reconstruction with fixed product dimensions and editable native materials.", 
+    "Small fillets, seams, nozzle details and optical material response are inferred where the manufacturer does not dimension them.", 
+    "No internal hydraulic performance, MEP connectors, fabrication tolerances or procurement substitutions are implied."
+  ], 
+  "parts": [
+    {
+      "name": "Tapered SILGRANIT basin", 
+      "volume_ft3": 0.60775567560394506, 
+      "id": "3209"
+    }, 
+    {
+      "name": "Flat undermount rim", 
+      "volume_ft3": 0.02107426518045398, 
+      "id": "3210"
+    }
+  ], 
+  "category": "Plumbing Fixtures", 
+  "bounds_method": "Fine native face meshes plus 128-sample analytic edges", 
+  "type": "443306 - Black", 
+  "native_gates_pass": true, 
+  "technical_pass": true, 
+  "native_path_checks": [], 
+  "reopened_warnings": [], 
+  "revit_build": "25.4.50.35", 
+  "actual_dimensions_after_reopen_mm": [
+    762.0, 
+    495.29999999999995, 
+    241.30000605583189
+  ]
+}

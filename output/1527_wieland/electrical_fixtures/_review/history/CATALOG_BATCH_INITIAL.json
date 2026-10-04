@@ -1,0 +1,92 @@
+[
+  {
+    "passed": true, 
+    "key": "KRK1205030", 
+    "path": "E:\\Claude\\3D-Model-Workflow\\output\\1527_wieland\\electrical_fixtures\\KRK1205030__5345652348944260\\Tom_Kirk_Reed_Outward_Polished_Nickel_R2025.rfa"
+  }, 
+  {
+    "passed": false, 
+    "error": "Traceback (most recent call last):\n  File \"E:\\Claude\\3D-Model-Workflow\\output\\1527_wieland\\electrical_fixtures\\_tools\\build_catalog.py\", line 215, in main\n    report=run_one(app,job['key']);result.append({'key':job['key'],'passed':report['technical_pass'],'path':report['rfa_path']})\n  File \"E:\\Claude\\3D-Model-Workflow\\output\\1527_wieland\\electrical_fixtures\\_tools\\build_catalog.py\", line 201, in run_one\n    return b.finish()\n  File \"E:\\Claude\\3D-Model-Workflow\\output\\1527_wieland\\electrical_fixtures\\_tools\\wieland_native.py\", line 41, in finish\n    report = NativeFixture.finish(self)\n  File \"E:\\Claude\\3D-Model-Workflow\\output\\1527_wieland\\electrical_fixtures\\_tools\\native_fixture_support.py\", line 270, in finish\n    if not self.report['technical_pass']:raise RuntimeError('Failed native gates: '+str([k for k,v in gates.items() if not v]))\nRuntimeError: Failed native gates: ['dimensions']\n", 
+    "key": "RG-C811A"
+  }, 
+  {
+    "passed": true, 
+    "key": "KZC1285334", 
+    "path": "E:\\Claude\\3D-Model-Workflow\\output\\1527_wieland\\electrical_fixtures\\B3-2__6529054267867012\\Kuzco_Vera_38_Black_R2025.rfa"
+  }, 
+  {
+    "passed": false, 
+    "error": "Traceback (most recent call last):\n  File \"E:\\Claude\\3D-Model-Workflow\\output\\1527_wieland\\electrical_fixtures\\_tools\\build_catalog.py\", line 215, in main\n    report=run_one(app,job['key']);result.append({'key':job['key'],'passed':report['technical_pass'],'path':report['rfa_path']})\n  File \"E:\\Claude\\3D-Model-Workflow\\output\\1527_wieland\\electrical_fixtures\\_tools\\build_catalog.py\", line 199, in run_one\n    globals()[job['builder']](b,mats)\n  File \"E:\\Claude\\3D-Model-Workflow\\output\\1527_wieland\\electrical_fixtures\\_tools\\build_catalog.py\", line 78, in tetra\n    b.box('Recessed end glass',-2.23,y,1.52,2.23,y+.12,5.4,m['Clear'],.1)\n  File \"E:\\Claude\\3D-Model-Workflow\\output\\1527_wieland\\electrical_fixtures\\_tools\\native_fixture_support.py\", line 165, in box\n    solid=DB.GeometryCreationUtilities.CreateExtrusionGeometry(List[DB.CurveLoop]([loop(xyz(0,0,z0),DB.XYZ.BasisX,DB.XYZ.BasisY,points)]),DB.XYZ.BasisZ,(z1-z0)/12.)\nException: Curve loops do not satisfy the input requirements.\r\nParameter name: profileLoops\n", 
+    "key": "HIN1284470"
+  }, 
+  {
+    "passed": true, 
+    "key": "MXG1933070", 
+    "path": "E:\\Claude\\3D-Model-Workflow\\output\\1527_wieland\\electrical_fixtures\\C1-2__6797353581805444\\Huxe_Silvio_5_Black_R2025.rfa"
+  }, 
+  {
+    "passed": true, 
+    "key": "PBL1129156", 
+    "path": "E:\\Claude\\3D-Model-Workflow\\output\\1527_wieland\\electrical_fixtures\\L2-0__1809170063490948\\Pablo_Sky_Dome_18_Wall_Black_Aluminum_R2025.rfa"
+  }, 
+  {
+    "passed": true, 
+    "key": "PBL1034468", 
+    "path": "E:\\Claude\\3D-Model-Workflow\\output\\1527_wieland\\electrical_fixtures\\L3-0__3830588113485700\\Pablo_Sky_Dome_18_Pendant_Black_Aluminum_R2025.rfa"
+  }, 
+  {
+    "passed": true, 
+    "key": "KZC1403797", 
+    "path": "E:\\Claude\\3D-Model-Workflow\\output\\1527_wieland\\electrical_fixtures\\K2-2__2521309084581764\\Kuzco_Stephord_WS97204_BK_CL_R2025.rfa"
+  }, 
+  {
+    "passed": true, 
+    "key": "KZC1193209", 
+    "path": "E:\\Claude\\3D-Model-Workflow\\output\\1527_wieland\\electrical_fixtures\\B2-2__8673064965046148\\Kuzco_Cedar_WS52505_BK_CL_R2025.rfa"
+  }, 
+  {
+    "passed": true, 
+    "key": "VCS1537517", 
+    "path": "E:\\Claude\\3D-Model-Workflow\\output\\1527_wieland\\electrical_fixtures\\B6-1__3530203210645380\\Visual_Comfort_Silas_Large_SLW1102MBK_R2025.rfa"
+  }, 
+  {
+    "passed": true, 
+    "key": "KZC780336", 
+    "path": "E:\\Claude\\3D-Model-Workflow\\output\\1527_wieland\\electrical_fixtures\\B3-2__7654954174709636\\Kuzco_Rona_VL17024_Chrome_R2025.rfa"
+  }, 
+  {
+    "passed": true, 
+    "key": "KZC862138", 
+    "path": "E:\\Claude\\3D-Model-Workflow\\output\\1527_wieland\\electrical_fixtures\\E1-2__29002242391940\\Kuzco_Pandora_WS25118_BK_UNV_R2025.rfa"
+  }, 
+  {
+    "passed": false, 
+    "error": "Traceback (most recent call last):\n  File \"E:\\Claude\\3D-Model-Workflow\\output\\1527_wieland\\electrical_fixtures\\_tools\\build_catalog.py\", line 215, in main\n    report=run_one(app,job['key']);result.append({'key':job['key'],'passed':report['technical_pass'],'path':report['rfa_path']})\n  File \"E:\\Claude\\3D-Model-Workflow\\output\\1527_wieland\\electrical_fixtures\\_tools\\build_catalog.py\", line 199, in run_one\n    globals()[job['builder']](b,mats)\n  File \"E:\\Claude\\3D-Model-Workflow\\output\\1527_wieland\\electrical_fixtures\\_tools\\build_catalog.py\", line 144, in vista\n    for y in [-2.35,2.23]:b.box('Recessed upper or lower diffuser',-1.81,y,.6,1.81,y+.12,3.10,m['Opal'],.07)\n  File \"E:\\Claude\\3D-Model-Workflow\\output\\1527_wieland\\electrical_fixtures\\_tools\\native_fixture_support.py\", line 165, in box\n    solid=DB.GeometryCreationUtilities.CreateExtrusionGeometry(List[DB.CurveLoop]([loop(xyz(0,0,z0),DB.XYZ.BasisX,DB.XYZ.BasisY,points)]),DB.XYZ.BasisZ,(z1-z0)/12.)\n  File \"E:\\Claude\\3D-Model-Workflow\\output\\1527_wieland\\electrical_fixtures\\_tools\\native_fixture_support.py\", line 27, in loop\n    result.Append(DB.Line.CreateBound(at(current),at(end)))\nException: Curve length is too small for Revit's tolerance (as identified by Application.ShortCurveTolerance).\r\nParameter name: endpoints\n", 
+    "key": "KZC610420"
+  }, 
+  {
+    "passed": true, 
+    "key": "NEIG-613941", 
+    "path": "E:\\Claude\\3D-Model-Workflow\\output\\1527_wieland\\electrical_fixtures\\T2-2__8305823776833412\\Buster_Punch_Exhaust_Graphite_Smoked_Bronze_R2025.rfa"
+  }, 
+  {
+    "passed": true, 
+    "key": "700TRSPPYL1RNB-LED930", 
+    "path": "E:\\Claude\\3D-Model-Workflow\\output\\1527_wieland\\electrical_fixtures\\B1-2__1457326342602628\\Visual_Comfort_Pylon_Natural_Brass_R2025.rfa"
+  }, 
+  {
+    "passed": true, 
+    "key": "SID660347", 
+    "path": "E:\\Claude\\3D-Model-Workflow\\output\\1527_wieland\\electrical_fixtures\\SID660347__468141458718596\\Lodes_A_Tube_Nano_Black_White_Canopy_R2025.rfa"
+  }, 
+  {
+    "passed": true, 
+    "key": "SEE1486624", 
+    "path": "E:\\Claude\\3D-Model-Workflow\\output\\1527_wieland\\electrical_fixtures\\B4-1__1278403396960132\\Seed_Castle_Muse_SG1012P_Black_R2025.rfa"
+  }, 
+  {
+    "passed": true, 
+    "key": "KZC1009577", 
+    "path": "E:\\Claude\\3D-Model-Workflow\\output\\1527_wieland\\electrical_fixtures\\T1-1__4412813598064516\\Kuzco_Motif_PD75027_Black_R2025.rfa"
+  }
+]

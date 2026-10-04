@@ -1,0 +1,214 @@
+{
+  "parameter_scope": "Nominal product dimensions are fixed formulas. Editable material parameters were flexed on hosted native geometry and restored.",
+  "expected_dimensions_in": [
+    5,
+    5,
+    45
+  ],
+  "bounds_in": [
+    -2.4999999403953552,
+    -2.4999999403953552,
+    0.0,
+    2.4999999403953552,
+    2.4999999403953552,
+    45.0
+  ],
+  "measured_saved_dimensions_in": [
+    4.9999998807907104,
+    4.9999998807907104,
+    45.0
+  ],
+  "bounds_method": "Fine native face meshes plus 128-sample analytic edges",
+  "technical_pass": true,
+  "started_utc": "2026-10-02T15:23:36.790000Z",
+  "revit_build": "25.4.50.35",
+  "evidence_files": [
+    "Minka_Verto_3114_732_L_R2025 - 3D View - Front.png",
+    "Minka_Verto_3114_732_L_R2025 - 3D View - Material.png",
+    "Minka_Verto_3114_732_L_R2025 - 3D View - Oblique.png",
+    "Minka_Verto_3114_732_L_R2025 - 3D View - Side.png",
+    "Minka_Verto_3114_732_L_R2025_Hosted - 3D View - Hosted.png",
+    "Minka_Verto_3114_732_L_R2025_Isolated - 3D View - Native Front.png",
+    "Minka_Verto_3114_732_L_R2025_Isolated - 3D View - Native Material.png",
+    "Minka_Verto_3114_732_L_R2025_Isolated - 3D View - Native Oblique.png",
+    "Minka_Verto_3114_732_L_R2025_Isolated - 3D View - Native Side.png"
+  ],
+  "appearance_defaults": {
+    "Metal Finish": {
+      "cct_k": null,
+      "rgb": [
+        159,
+        126,
+        74
+      ],
+      "transparency": 0,
+      "gloss": 0.6,
+      "luminance": 0
+    },
+    "Glass Finish": {
+      "cct_k": null,
+      "rgb": [
+        241,
+        244,
+        245
+      ],
+      "transparency": 0.88,
+      "gloss": 0.95,
+      "luminance": 0
+    },
+    "Diffuser Finish": {
+      "cct_k": null,
+      "rgb": [
+        245,
+        245,
+        240
+      ],
+      "transparency": 0.06,
+      "gloss": 0.3,
+      "luminance": 0
+    }
+  },
+  "dimensional_error_mm": [
+    3.0279159545898436e-06,
+    3.0279159545898436e-06,
+    0.0
+  ],
+  "limitations": "Manufacturer 3114-732-L Legacy Brass/clear-glass pendant: 3-inch diameter by 20.25-inch body; 5-inch canopy diameter by 0.75-inch depth. ASSUMPTION: 45-inch installation uses two 12-inch rods, included by the manufacturer. Glass bulge, end-cap grooves and internal diffuser profile are photo-derived.",
+  "stage": "complete",
+  "cct_k": null,
+  "category": "Lighting Fixtures",
+  "host": {
+    "host_kind": "ceiling",
+    "hostface_present": true,
+    "instance_host_id": "3703",
+    "host_id": "3703",
+    "normal_dot": 1.0
+  },
+  "parts": [
+    {
+      "name": "Canopy",
+      "id": "3214",
+      "volume_ft3": 0.00850976050162211
+    },
+    {
+      "name": "Two 12-inch rods",
+      "id": "3215",
+      "volume_ft3": 0.0013424777960769367
+    },
+    {
+      "name": "Top cap",
+      "id": "3216",
+      "volume_ft3": 0.0012657243429314588
+    },
+    {
+      "name": "Clear elongated spindle",
+      "id": "3217",
+      "volume_ft3": 0.008267777208059154
+    },
+    {
+      "name": "Acrylic inner diffuser",
+      "id": "3218",
+      "volume_ft3": 0.004183004090624017
+    },
+    {
+      "name": "Lower cap",
+      "id": "3219",
+      "volume_ft3": 0.0012657243429314634
+    }
+  ],
+  "model": "3114-732-L",
+  "template_form_ids": [
+    "1537"
+  ],
+  "inferences": "Manufacturer 3114-732-L Legacy Brass/clear-glass pendant: 3-inch diameter by 20.25-inch body; 5-inch canopy diameter by 0.75-inch depth. ASSUMPTION: 45-inch installation uses two 12-inch rods, included by the manufacturer. Glass bulge, end-cap grooves and internal diffuser profile are photo-derived.",
+  "source_url": "https://www.lightology.com/img/prod/pdf/3114-L-English-052225.pdf",
+  "actual_dimensions_in": [
+    4.9999998807907104,
+    4.9999998807907104,
+    45.0
+  ],
+  "reopened_warnings": [],
+  "finished_utc": "2026-10-02T15:23:59.928000Z",
+  "saved_file_reopened_for_measurement": true,
+  "measured_saved_bounds_in": [
+    -2.4999999403953552,
+    -2.4999999403953552,
+    0.0,
+    2.4999999403953552,
+    2.4999999403953552,
+    45.0
+  ],
+  "reopened": true,
+  "companion_bitmaps": {
+    "Metal Finish": "E:\\Claude\\3D-Model-Workflow\\output\\1527_wieland\\electrical_fixtures\\B1-2__1395409177739140\\source\\textures\\Metal_Finish.png",
+    "Glass Finish": "E:\\Claude\\3D-Model-Workflow\\output\\1527_wieland\\electrical_fixtures\\B1-2__1395409177739140\\source\\textures\\Glass_Finish.png",
+    "Diffuser Finish": "E:\\Claude\\3D-Model-Workflow\\output\\1527_wieland\\electrical_fixtures\\B1-2__1395409177739140\\source\\textures\\Diffuser_Finish.png"
+  },
+  "rfa_search": "Official product resources and verified BIM listings searched; no exact, usable anonymous RFA accepted. See retained source resources and manufacturer acquisition/inspection receipts.",
+  "rfa_path": "E:\\Claude\\3D-Model-Workflow\\output\\1527_wieland\\electrical_fixtures\\B1-1__6101663458328452\\Minka_Verto_3114_732_L_R2025.rfa",
+  "manufacturer": "Minka Lavery",
+  "saved_material_bitmaps": {
+    "Metal Finish": {
+      "path": "E:\\Claude\\3D-Model-Workflow\\output\\1527_wieland\\electrical_fixtures\\B1-2__1395409177739140\\source\\textures\\Metal_Finish.png",
+      "exists": true
+    },
+    "Glass Finish": {
+      "path": "E:\\Claude\\3D-Model-Workflow\\output\\1527_wieland\\electrical_fixtures\\B1-2__1395409177739140\\source\\textures\\Glass_Finish.png",
+      "exists": true
+    },
+    "Diffuser Finish": {
+      "path": "E:\\Claude\\3D-Model-Workflow\\output\\1527_wieland\\electrical_fixtures\\B1-2__1395409177739140\\source\\textures\\Diffuser_Finish.png",
+      "exists": true
+    }
+  },
+  "family_warnings": [],
+  "type": "3114-732-L",
+  "revit_version": "2025",
+  "display_bounds_in": [
+    -2.5,
+    -2.5,
+    0.0,
+    2.5,
+    2.5,
+    45.00000000000001
+  ],
+  "gates": {
+    "dimensions": true,
+    "materials": true,
+    "views": true,
+    "reopened": true,
+    "saved_dimensions_within_1mm": true,
+    "orientation": true,
+    "actual_face_host": true,
+    "category": true,
+    "saved_components_within_1mm": true,
+    "warnings": true,
+    "cct": true,
+    "saved_bitmaps_resolve": true
+  },
+  "placement": "WorkPlaneBased",
+  "material_tests": {
+    "Metal Finish": {
+      "writable": true,
+      "substitution_reaches_faces": true,
+      "face_count": 58
+    },
+    "Glass Finish": {
+      "writable": true,
+      "substitution_reaches_faces": true,
+      "face_count": 58
+    },
+    "Diffuser Finish": {
+      "writable": true,
+      "substitution_reaches_faces": true,
+      "face_count": 58
+    }
+  },
+  "project_warnings": [],
+  "row_id": "6101663458328452",
+  "canonical_rfa_path": "E:\\Claude\\3D-Model-Workflow\\output\\1527_wieland\\electrical_fixtures\\B1-2__1395409177739140\\Minka_Verto_3114_732_L_R2025.rfa",
+  "canonical_validation_path": "E:\\Claude\\3D-Model-Workflow\\output\\1527_wieland\\electrical_fixtures\\B1-2__1395409177739140\\validation.json",
+  "validation_basis": "Measurements and native gates inherited only after byte-identical RFA hash verification; not a separately rerun native build.",
+  "canonical_rfa_sha256": "1c0e49202f970f0fc31dd282bd56ad333711ae96a0232405b4e94a26dc02c8de",
+  "row_rfa_sha256": "1c0e49202f970f0fc31dd282bd56ad333711ae96a0232405b4e94a26dc02c8de"
+}

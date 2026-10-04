@@ -1,0 +1,1329 @@
+{
+  "bitmap_gate": true,
+  "build_method": "native_custom_new_family",
+  "category": "Specialty Equipment",
+  "all_acceptance_gates_pass": false,
+  "import_instance_count": 0,
+  "saved_revit_format": "2025",
+  "revit_version": "2025",
+  "saved_rfa": "E:\u005cClaude\u005c3D-Model-Workflow\u005coutput\u005c1527_wieland\u005cappliances\u005cthermador_podmc301w\u005cthermador_podmc301w_Custom_R1_R2025.rfa",
+  "replacement_reason": "Orchestrator round 1: exact-identity manufacturer working family fails the <=1 mm complete overall dimension gate. New native custom geometry replaces the working selection; OEM originals and prior working RFA remain preserved.",
+  "axis_convention": "X width, Y front-to-back depth, Z vertical height; millimetres.",
+  "status": "BUILT_WITH_LIMITATIONS",
+  "placement": {
+    "placement_type": "WorkPlaneBased",
+    "loaded": true,
+    "placed": true,
+    "host_category": "Floors",
+    "family_category": "Specialty Equipment",
+    "type": "PODMC301W - Custom R1"
+  },
+  "placement_transform": {
+    "origin_mm": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "basis_x": [
+      1.0,
+      0.0,
+      0.0
+    ],
+    "basis_z": [
+      0.0,
+      0.0,
+      1.0
+    ],
+    "basis_y": [
+      0.0,
+      1.0,
+      0.0
+    ]
+  },
+  "visual_review_pending": true,
+  "revision": "Custom_R1",
+  "native_gates_pass": true,
+  "started_utc": "2026-10-02 23:58:41.005000",
+  "native_freeform_count": 66,
+  "previews": [
+    "E:\u005cClaude\u005c3D-Model-Workflow\u005coutput\u005c1527_wieland\u005cappliances\u005cthermador_podmc301w\u005cviews\u005crework_r1\u005coblique - 3D View - oblique.png",
+    "E:\u005cClaude\u005c3D-Model-Workflow\u005coutput\u005c1527_wieland\u005cappliances\u005cthermador_podmc301w\u005cviews\u005crework_r1\u005cfront - 3D View - front.png",
+    "E:\u005cClaude\u005c3D-Model-Workflow\u005coutput\u005c1527_wieland\u005cappliances\u005cthermador_podmc301w\u005cviews\u005crework_r1\u005cside - 3D View - side.png"
+  ],
+  "category_gate": true,
+  "family_bounds": {
+    "parts": [
+      {
+        "class": "FreeFormElement",
+        "name": "Lower Oven Case Back",
+        "min_mm": [
+          -360.82499599456787,
+          604.29999647140505,
+          7.0000002577900888
+        ],
+        "id": 2980,
+        "max_mm": [
+          360.82499599456787,
+          622.30002422332768,
+          738.59997482299809
+        ]
+      },
+      {
+        "class": "FreeFormElement",
+        "name": "Lower Oven Case L",
+        "min_mm": [
+          -360.82499599456787,
+          91.675000190734863,
+          7.0000002577900888
+        ],
+        "id": 2984,
+        "max_mm": [
+          -345.82500314712524,
+          604.29999647140505,
+          738.59997482299809
+        ]
+      },
+      {
+        "class": "FreeFormElement",
+        "name": "Lower Oven Case R",
+        "min_mm": [
+          345.82500314712524,
+          91.675000190734863,
+          7.0000002577900888
+        ],
+        "id": 2988,
+        "max_mm": [
+          360.82499599456787,
+          604.29999647140505,
+          738.59997482299809
+        ]
+      },
+      {
+        "class": "FreeFormElement",
+        "name": "Lower Oven Case Top",
+        "min_mm": [
+          -345.82500314712524,
+          91.675000190734863,
+          723.60001831054694
+        ],
+        "id": 2992,
+        "max_mm": [
+          345.82500314712524,
+          604.29999647140505,
+          738.59997482299809
+        ]
+      },
+      {
+        "class": "FreeFormElement",
+        "name": "Lower Oven Case Base",
+        "min_mm": [
+          -345.82500314712524,
+          91.675000190734863,
+          7.0000002577900888
+        ],
+        "id": 2996,
+        "max_mm": [
+          345.82500314712524,
+          604.29999647140505,
+          21.999999350309373
+        ]
+      },
+      {
+        "class": "FreeFormElement",
+        "name": "Lower Oven Cavity Back",
+        "min_mm": [
+          -287.14700775146486,
+          600.29998626708982,
+          47.999999821186066
+        ],
+        "id": 3000,
+        "max_mm": [
+          287.14700775146486,
+          603.29998483657835,
+          575.60000410079954
+        ]
+      },
+      {
+        "class": "FreeFormElement",
+        "name": "Lower Oven Rack Guide 0L",
+        "min_mm": [
+          -296.70349202156069,
+          108.67499814033509,
+          111.84000298976899
+        ],
+        "id": 3004,
+        "max_mm": [
+          -292.70349998474120,
+          584.30001811981208,
+          114.84000155925752
+        ]
+      },
+      {
+        "class": "FreeFormElement",
+        "name": "Lower Oven Rack Guide 0R",
+        "min_mm": [
+          292.70349998474120,
+          108.67499814033509,
+          111.84000298976899
+        ],
+        "id": 3008,
+        "max_mm": [
+          296.70349202156069,
+          584.30001811981208,
+          114.84000155925752
+        ]
+      },
+      {
+        "class": "FreeFormElement",
+        "name": "Lower Oven Rack Guide 1L",
+        "min_mm": [
+          -296.70349202156069,
+          108.67499814033509,
+          199.44800033569337
+        ],
+        "id": 3012,
+        "max_mm": [
+          -292.70349998474120,
+          584.30001811981208,
+          202.44799890518189
+        ]
+      },
+      {
+        "class": "FreeFormElement",
+        "name": "Lower Oven Rack Guide 1R",
+        "min_mm": [
+          292.70349998474120,
+          108.67499814033509,
+          199.44800033569337
+        ],
+        "id": 3016,
+        "max_mm": [
+          296.70349202156069,
+          584.30001811981208,
+          202.44799890518189
+        ]
+      },
+      {
+        "class": "FreeFormElement",
+        "name": "Lower Oven Rack Guide 2L",
+        "min_mm": [
+          -296.70349202156069,
+          108.67499814033509,
+          287.05600676536562
+        ],
+        "id": 3020,
+        "max_mm": [
+          -292.70349998474120,
+          584.30001811981208,
+          290.05600533485415
+        ]
+      },
+      {
+        "class": "FreeFormElement",
+        "name": "Lower Oven Rack Guide 2R",
+        "min_mm": [
+          292.70349998474120,
+          108.67499814033509,
+          287.05600676536562
+        ],
+        "id": 3024,
+        "max_mm": [
+          296.70349202156069,
+          584.30001811981208,
+          290.05600533485415
+        ]
+      },
+      {
+        "class": "FreeFormElement",
+        "name": "Lower Oven Rack Guide 3L",
+        "min_mm": [
+          -296.70349202156069,
+          108.67499814033509,
+          374.66401319503785
+        ],
+        "id": 3028,
+        "max_mm": [
+          -292.70349998474120,
+          584.30001811981208,
+          377.66401176452638
+        ]
+      },
+      {
+        "class": "FreeFormElement",
+        "name": "Lower Oven Rack Guide 3R",
+        "min_mm": [
+          292.70349998474120,
+          108.67499814033509,
+          374.66401319503785
+        ],
+        "id": 3032,
+        "max_mm": [
+          296.70349202156069,
+          584.30001811981208,
+          377.66401176452638
+        ]
+      },
+      {
+        "class": "FreeFormElement",
+        "name": "Lower Oven Rack Guide 4L",
+        "min_mm": [
+          -296.70349202156069,
+          108.67499814033509,
+          462.27200145721440
+        ],
+        "id": 3036,
+        "max_mm": [
+          -292.70349998474120,
+          584.30001811981208,
+          465.27200002670293
+        ]
+      },
+      {
+        "class": "FreeFormElement",
+        "name": "Lower Oven Rack Guide 4R",
+        "min_mm": [
+          292.70349998474120,
+          108.67499814033509,
+          462.27200145721440
+        ],
+        "id": 3040,
+        "max_mm": [
+          296.70349202156069,
+          584.30001811981208,
+          465.27200002670293
+        ]
+      },
+      {
+        "class": "FreeFormElement",
+        "name": "Lower Oven Door Left",
+        "min_mm": [
+          -377.82501211166385,
+          66.674999999999997,
+          0.0
+        ],
+        "id": 3044,
+        "max_mm": [
+          -322.82498989105227,
+          88.675001621246338,
+          625.59996814727788
+        ]
+      },
+      {
+        "class": "FreeFormElement",
+        "name": "Lower Oven Door Right",
+        "min_mm": [
+          322.82498989105227,
+          66.674999999999997,
+          0.0
+        ],
+        "id": 3048,
+        "max_mm": [
+          377.82501211166385,
+          88.675001621246338,
+          625.59996814727788
+        ]
+      },
+      {
+        "class": "FreeFormElement",
+        "name": "Lower Oven Door Bottom",
+        "min_mm": [
+          -322.82498989105227,
+          66.674999999999997,
+          0.0
+        ],
+        "id": 3052,
+        "max_mm": [
+          322.82498989105227,
+          88.675001621246338,
+          54.999999511241917
+        ]
+      },
+      {
+        "class": "FreeFormElement",
+        "name": "Lower Oven Door Top",
+        "min_mm": [
+          -322.82498989105227,
+          66.674999999999997,
+          570.59998226165771
+        ],
+        "id": 3056,
+        "max_mm": [
+          322.82498989105227,
+          88.675001621246338,
+          625.59996814727788
+        ]
+      },
+      {
+        "class": "FreeFormElement",
+        "name": "Lower Oven Window",
+        "min_mm": [
+          -322.82498989105227,
+          68.675000560283664,
+          54.999999511241917
+        ],
+        "id": 3060,
+        "max_mm": [
+          322.82498989105227,
+          73.674999690055856,
+          570.59998226165771
+        ]
+      },
+      {
+        "class": "FreeFormElement",
+        "name": "Lower Oven Control Fascia",
+        "min_mm": [
+          -377.82501211166385,
+          66.674999999999997,
+          630.60002632141118
+        ],
+        "id": 3064,
+        "max_mm": [
+          377.82501211166385,
+          91.675000190734863,
+          745.59998359680174
+        ]
+      },
+      {
+        "class": "FreeFormElement",
+        "name": "Lower Oven Vent Slot",
+        "min_mm": [
+          -309.81651792526247,
+          67.674998009204870,
+          626.59997978210447
+        ],
+        "id": 3068,
+        "max_mm": [
+          309.81651792526247,
+          78.675003361701968,
+          629.60001468658447
+        ]
+      },
+      {
+        "class": "FreeFormElement",
+        "name": "Lower Oven Display",
+        "min_mm": [
+          -61.999999201297761,
+          65.175000715255734,
+          669.59997138977053
+        ],
+        "id": 3072,
+        "max_mm": [
+          61.999999201297761,
+          67.175001275539401,
+          710.60001239776614
+        ]
+      },
+      {
+        "class": "FreeFormElement",
+        "name": "Lower Oven Knob Base 0",
+        "min_mm": [
+          -253.69499802589417,
+          52.675000619888309,
+          662.60003528594973
+        ],
+        "id": 3076,
+        "max_mm": [
+          -199.69500560760500,
+          69.674998569488523,
+          716.60000953674319
+        ]
+      },
+      {
+        "class": "FreeFormElement",
+        "name": "Lower Oven Knob 0",
+        "min_mm": [
+          -249.69500598907473,
+          32.674999558925627,
+          666.60000915527348
+        ],
+        "id": 3080,
+        "max_mm": [
+          -203.69499764442443,
+          56.675001740455627,
+          712.60003566741943
+        ]
+      },
+      {
+        "class": "FreeFormElement",
+        "name": "Lower Oven Knob Index 0",
+        "min_mm": [
+          -228.19499201774599,
+          31.674999278783801,
+          697.60000648498533
+        ],
+        "id": 3084,
+        "max_mm": [
+          -225.19499344825746,
+          33.674999839067461,
+          711.60002403259284
+        ]
+      },
+      {
+        "class": "FreeFormElement",
+        "name": "Lower Oven Knob Base 1",
+        "min_mm": [
+          199.69500560760500,
+          52.675000619888309,
+          662.60003528594973
+        ],
+        "id": 3088,
+        "max_mm": [
+          253.69499802589417,
+          69.674998569488523,
+          716.60000953674319
+        ]
+      },
+      {
+        "class": "FreeFormElement",
+        "name": "Lower Oven Knob 1",
+        "min_mm": [
+          203.69499764442443,
+          32.674999558925627,
+          666.60000915527348
+        ],
+        "id": 3092,
+        "max_mm": [
+          249.69500598907473,
+          56.675001740455627,
+          712.60003566741943
+        ]
+      },
+      {
+        "class": "FreeFormElement",
+        "name": "Lower Oven Knob Index 1",
+        "min_mm": [
+          225.19499344825746,
+          31.674999278783801,
+          697.60000648498533
+        ],
+        "id": 3096,
+        "max_mm": [
+          228.19499201774599,
+          33.674999839067461,
+          711.60002403259284
+        ]
+      },
+      {
+        "class": "FreeFormElement",
+        "name": "Lower Oven Handle Grip",
+        "min_mm": [
+          -306.03826017379760,
+          1.4999999944120646,
+          585.10000562667847
+        ],
+        "id": 3100,
+        "max_mm": [
+          306.03826017379760,
+          24.499998915195466,
+          608.09998254776008
+        ]
+      },
+      {
+        "class": "FreeFormElement",
+        "name": "Lower Oven Handle Support L",
+        "min_mm": [
+          -295.03824119567872,
+          13.000000235438348,
+          587.59999837875364
+        ],
+        "id": 3104,
+        "max_mm": [
+          -277.03824977874757,
+          67.674998009204870,
+          605.59998979568479
+        ]
+      },
+      {
+        "class": "FreeFormElement",
+        "name": "Lower Oven Handle Cap L",
+        "min_mm": [
+          -298.03825793266299,
+          0.0,
+          583.59998817443852
+        ],
+        "id": 3108,
+        "max_mm": [
+          -274.03825120925904,
+          26.000000470876696,
+          609.60000000000002
+        ]
+      },
+      {
+        "class": "FreeFormElement",
+        "name": "Lower Oven Handle Support R",
+        "min_mm": [
+          277.03824977874757,
+          13.000000235438348,
+          587.59999837875364
+        ],
+        "id": 3112,
+        "max_mm": [
+          295.03824119567872,
+          67.674998009204870,
+          605.59998979568479
+        ]
+      },
+      {
+        "class": "FreeFormElement",
+        "name": "Lower Oven Handle Cap R",
+        "min_mm": [
+          274.03825120925904,
+          0.0,
+          583.59998817443852
+        ],
+        "id": 3116,
+        "max_mm": [
+          298.03825793266299,
+          26.000000470876696,
+          609.60000000000002
+        ]
+      },
+      {
+        "class": "FreeFormElement",
+        "name": "Upper Speed Oven Case Back",
+        "min_mm": [
+          -360.82499599456787,
+          604.29999647140505,
+          755.60002727508549
+        ],
+        "id": 3120,
+        "max_mm": [
+          360.82499599456787,
+          622.30002422332768,
+          1237.6000396728516
+        ]
+      },
+      {
+        "class": "FreeFormElement",
+        "name": "Upper Speed Oven Case L",
+        "min_mm": [
+          -360.82499599456787,
+          91.675000190734863,
+          755.60002727508549
+        ],
+        "id": 3124,
+        "max_mm": [
+          -345.82500314712524,
+          604.29999647140505,
+          1237.6000396728516
+        ]
+      },
+      {
+        "class": "FreeFormElement",
+        "name": "Upper Speed Oven Case R",
+        "min_mm": [
+          345.82500314712524,
+          91.675000190734863,
+          755.60002727508549
+        ],
+        "id": 3128,
+        "max_mm": [
+          360.82499599456787,
+          604.29999647140505,
+          1237.6000396728516
+        ]
+      },
+      {
+        "class": "FreeFormElement",
+        "name": "Upper Speed Oven Case Top",
+        "min_mm": [
+          -345.82500314712524,
+          91.675000190734863,
+          1222.5999378204347
+        ],
+        "id": 3132,
+        "max_mm": [
+          345.82500314712524,
+          604.29999647140505,
+          1237.6000396728516
+        ]
+      },
+      {
+        "class": "FreeFormElement",
+        "name": "Upper Speed Oven Case Base",
+        "min_mm": [
+          -345.82500314712524,
+          91.675000190734863,
+          755.60002727508549
+        ],
+        "id": 3136,
+        "max_mm": [
+          345.82500314712524,
+          604.29999647140505,
+          770.59998378753664
+        ]
+      },
+      {
+        "class": "FreeFormElement",
+        "name": "Upper Speed Oven Cavity Back",
+        "min_mm": [
+          -287.14700775146486,
+          600.29998626708982,
+          796.59999561309814
+        ],
+        "id": 3140,
+        "max_mm": [
+          287.14700775146486,
+          603.29998483657835,
+          1074.6000326156616
+        ]
+      },
+      {
+        "class": "FreeFormElement",
+        "name": "Upper Speed Oven Rack Guide 0L",
+        "min_mm": [
+          -296.70349202156069,
+          108.67499814033509,
+          822.99998302459721
+        ],
+        "id": 3144,
+        "max_mm": [
+          -292.70349998474120,
+          584.30001811981208,
+          826.00001792907722
+        ]
+      },
+      {
+        "class": "FreeFormElement",
+        "name": "Upper Speed Oven Rack Guide 0R",
+        "min_mm": [
+          292.70349998474120,
+          108.67499814033509,
+          822.99998302459721
+        ],
+        "id": 3148,
+        "max_mm": [
+          296.70349202156069,
+          584.30001811981208,
+          826.00001792907722
+        ]
+      },
+      {
+        "class": "FreeFormElement",
+        "name": "Upper Speed Oven Rack Guide 1L",
+        "min_mm": [
+          -296.70349202156069,
+          108.67499814033509,
+          939.56001949310303
+        ],
+        "id": 3152,
+        "max_mm": [
+          -292.70349998474120,
+          584.30001811981208,
+          942.55998172760019
+        ]
+      },
+      {
+        "class": "FreeFormElement",
+        "name": "Upper Speed Oven Rack Guide 1R",
+        "min_mm": [
+          292.70349998474120,
+          108.67499814033509,
+          939.56001949310303
+        ],
+        "id": 3156,
+        "max_mm": [
+          296.70349202156069,
+          584.30001811981208,
+          942.55998172760019
+        ]
+      },
+      {
+        "class": "FreeFormElement",
+        "name": "Upper Speed Oven Rack Guide 2L",
+        "min_mm": [
+          -296.70349202156069,
+          108.67499814033509,
+          1056.1199832916261
+        ],
+        "id": 3160,
+        "max_mm": [
+          -292.70349998474120,
+          584.30001811981208,
+          1059.1200181961060
+        ]
+      },
+      {
+        "class": "FreeFormElement",
+        "name": "Upper Speed Oven Rack Guide 2R",
+        "min_mm": [
+          292.70349998474120,
+          108.67499814033509,
+          1056.1199832916261
+        ],
+        "id": 3164,
+        "max_mm": [
+          296.70349202156069,
+          584.30001811981208,
+          1059.1200181961060
+        ]
+      },
+      {
+        "class": "FreeFormElement",
+        "name": "Upper Speed Oven Door Left",
+        "min_mm": [
+          -377.82501211166385,
+          66.674999999999997,
+          748.60001850128174
+        ],
+        "id": 3168,
+        "max_mm": [
+          -322.82498989105227,
+          88.675001621246338,
+          1124.6000329971314
+        ]
+      },
+      {
+        "class": "FreeFormElement",
+        "name": "Upper Speed Oven Door Right",
+        "min_mm": [
+          322.82498989105227,
+          66.674999999999997,
+          748.60001850128174
+        ],
+        "id": 3172,
+        "max_mm": [
+          377.82501211166385,
+          88.675001621246338,
+          1124.6000329971314
+        ]
+      },
+      {
+        "class": "FreeFormElement",
+        "name": "Upper Speed Oven Door Bottom",
+        "min_mm": [
+          -322.82498989105227,
+          66.674999999999997,
+          748.60001850128174
+        ],
+        "id": 3176,
+        "max_mm": [
+          322.82498989105227,
+          88.675001621246338,
+          803.60000438690190
+        ]
+      },
+      {
+        "class": "FreeFormElement",
+        "name": "Upper Speed Oven Door Top",
+        "min_mm": [
+          -322.82498989105227,
+          66.674999999999997,
+          1069.5999744415283
+        ],
+        "id": 3180,
+        "max_mm": [
+          322.82498989105227,
+          88.675001621246338,
+          1124.6000329971314
+        ]
+      },
+      {
+        "class": "FreeFormElement",
+        "name": "Upper Speed Oven Window",
+        "min_mm": [
+          -322.82498989105227,
+          68.675000560283664,
+          803.60000438690190
+        ],
+        "id": 3184,
+        "max_mm": [
+          322.82498989105227,
+          73.674999690055856,
+          1069.5999744415283
+        ]
+      },
+      {
+        "class": "FreeFormElement",
+        "name": "Upper Speed Oven Control Fascia",
+        "min_mm": [
+          -377.82501211166385,
+          66.674999999999997,
+          1129.6000185012817
+        ],
+        "id": 3188,
+        "max_mm": [
+          377.82501211166385,
+          91.675000190734863,
+          1244.6000484466554
+        ]
+      },
+      {
+        "class": "FreeFormElement",
+        "name": "Upper Speed Oven Vent Slot",
+        "min_mm": [
+          -309.81651792526247,
+          67.674998009204870,
+          1125.5999719619751
+        ],
+        "id": 3192,
+        "max_mm": [
+          309.81651792526247,
+          78.675003361701968,
+          1128.6000068664550
+        ]
+      },
+      {
+        "class": "FreeFormElement",
+        "name": "Upper Speed Oven Display",
+        "min_mm": [
+          -61.999999201297761,
+          65.175000715255734,
+          1168.6000362396242
+        ],
+        "id": 3196,
+        "max_mm": [
+          61.999999201297761,
+          67.175001275539401,
+          1209.6000045776368
+        ]
+      },
+      {
+        "class": "FreeFormElement",
+        "name": "Upper Speed Oven Knob Base 0",
+        "min_mm": [
+          -253.69499802589417,
+          52.675000619888309,
+          1161.6000274658204
+        ],
+        "id": 3200,
+        "max_mm": [
+          -199.69500560760500,
+          69.674998569488523,
+          1215.6000017166139
+        ]
+      },
+      {
+        "class": "FreeFormElement",
+        "name": "Upper Speed Oven Knob 0",
+        "min_mm": [
+          -249.69500598907473,
+          32.674999558925627,
+          1165.6000013351440
+        ],
+        "id": 3204,
+        "max_mm": [
+          -203.69499764442443,
+          56.675001740455627,
+          1211.6000278472900
+        ]
+      },
+      {
+        "class": "FreeFormElement",
+        "name": "Upper Speed Oven Knob Index 0",
+        "min_mm": [
+          -228.19499201774599,
+          31.674999278783801,
+          1196.5999986648560
+        ],
+        "id": 3208,
+        "max_mm": [
+          -225.19499344825746,
+          33.674999839067461,
+          1210.6000162124635
+        ]
+      },
+      {
+        "class": "FreeFormElement",
+        "name": "Upper Speed Oven Knob Base 1",
+        "min_mm": [
+          199.69500560760500,
+          52.675000619888309,
+          1161.6000274658204
+        ],
+        "id": 3212,
+        "max_mm": [
+          253.69499802589417,
+          69.674998569488523,
+          1215.6000017166139
+        ]
+      },
+      {
+        "class": "FreeFormElement",
+        "name": "Upper Speed Oven Knob 1",
+        "min_mm": [
+          203.69499764442443,
+          32.674999558925627,
+          1165.6000013351440
+        ],
+        "id": 3216,
+        "max_mm": [
+          249.69500598907473,
+          56.675001740455627,
+          1211.6000278472900
+        ]
+      },
+      {
+        "class": "FreeFormElement",
+        "name": "Upper Speed Oven Knob Index 1",
+        "min_mm": [
+          225.19499344825746,
+          31.674999278783801,
+          1196.5999986648560
+        ],
+        "id": 3220,
+        "max_mm": [
+          228.19499201774599,
+          33.674999839067461,
+          1210.6000162124635
+        ]
+      },
+      {
+        "class": "FreeFormElement",
+        "name": "Upper Speed Oven Handle Grip",
+        "min_mm": [
+          -306.03826017379760,
+          1.4999999944120646,
+          1084.1000341415406
+        ],
+        "id": 3224,
+        "max_mm": [
+          306.03826017379760,
+          24.499998915195466,
+          1107.1000110626221
+        ]
+      },
+      {
+        "class": "FreeFormElement",
+        "name": "Upper Speed Oven Handle Support L",
+        "min_mm": [
+          -295.03824119567872,
+          13.000000235438348,
+          1086.6000268936157
+        ],
+        "id": 3228,
+        "max_mm": [
+          -277.03824977874757,
+          67.674998009204870,
+          1104.6000183105468
+        ]
+      },
+      {
+        "class": "FreeFormElement",
+        "name": "Upper Speed Oven Handle Cap L",
+        "min_mm": [
+          -298.03825793266299,
+          0.0,
+          1082.5999803543091
+        ],
+        "id": 3232,
+        "max_mm": [
+          -274.03825120925904,
+          26.000000470876696,
+          1108.5999921798707
+        ]
+      },
+      {
+        "class": "FreeFormElement",
+        "name": "Upper Speed Oven Handle Support R",
+        "min_mm": [
+          277.03824977874757,
+          13.000000235438348,
+          1086.6000268936157
+        ],
+        "id": 3236,
+        "max_mm": [
+          295.03824119567872,
+          67.674998009204870,
+          1104.6000183105468
+        ]
+      },
+      {
+        "class": "FreeFormElement",
+        "name": "Upper Speed Oven Handle Cap R",
+        "min_mm": [
+          274.03825120925904,
+          0.0,
+          1082.5999803543091
+        ],
+        "id": 3240,
+        "max_mm": [
+          298.03825793266299,
+          26.000000470876696,
+          1108.5999921798707
+        ]
+      }
+    ],
+    "xyz_size_mm": [
+      755.65002422332770,
+      622.30002422332768,
+      1244.6000484466554
+    ],
+    "min_mm": [
+      -377.82501211166385,
+      0.0,
+      0.0
+    ],
+    "max_mm": [
+      377.82501211166385,
+      622.30002422332768,
+      1244.6000484466554
+    ]
+  },
+  "parameter_flex": [
+    {
+      "substitution_pass": true,
+      "name": "Display Finish",
+      "geometry_bindings": 2,
+      "bound_element_ids": [
+        3072,
+        3196
+      ],
+      "restored": true
+    },
+    {
+      "substitution_pass": true,
+      "name": "Interior Finish",
+      "geometry_bindings": 2,
+      "bound_element_ids": [
+        3000,
+        3140
+      ],
+      "restored": true
+    },
+    {
+      "substitution_pass": true,
+      "name": "Metal Finish",
+      "geometry_bindings": 50,
+      "bound_element_ids": [
+        2980,
+        2984,
+        2988,
+        2992,
+        2996,
+        3004,
+        3008,
+        3012,
+        3016,
+        3020,
+        3024,
+        3028,
+        3032,
+        3036,
+        3040,
+        3044,
+        3048,
+        3052,
+        3056,
+        3064,
+        3080,
+        3092,
+        3100,
+        3104,
+        3108,
+        3112,
+        3116,
+        3120,
+        3124,
+        3128,
+        3132,
+        3136,
+        3144,
+        3148,
+        3152,
+        3156,
+        3160,
+        3164,
+        3168,
+        3172,
+        3176,
+        3180,
+        3188,
+        3204,
+        3216,
+        3224,
+        3228,
+        3232,
+        3236,
+        3240
+      ],
+      "restored": true
+    },
+    {
+      "substitution_pass": true,
+      "name": "Glass Finish",
+      "geometry_bindings": 2,
+      "bound_element_ids": [
+        3060,
+        3184
+      ],
+      "restored": true
+    },
+    {
+      "substitution_pass": true,
+      "name": "Black Finish",
+      "geometry_bindings": 10,
+      "bound_element_ids": [
+        3068,
+        3076,
+        3084,
+        3088,
+        3096,
+        3192,
+        3200,
+        3208,
+        3212,
+        3220
+      ],
+      "restored": true
+    }
+  ],
+  "identity": {
+    "Model": "PODMC301W",
+    "Manufacturer": "Thermador",
+    "Description": "Custom dimension-correct visualization replacement; see round-1 notes"
+  },
+  "ok": true,
+  "nested_instance_count": 0,
+  "placed_bounds": {
+    "parts": [
+      {
+        "class": "FamilyInstance",
+        "name": "PODMC301W - Custom R1",
+        "min_mm": [
+          -377.82501211166385,
+          0.0,
+          0.0
+        ],
+        "id": 3925,
+        "max_mm": [
+          377.82501211166385,
+          622.30002422332768,
+          1244.6000484466554
+        ]
+      }
+    ],
+    "xyz_size_mm": [
+      755.65002422332770,
+      622.30002422332768,
+      1244.6000484466554
+    ],
+    "min_mm": [
+      -377.82501211166385,
+      0.0,
+      0.0
+    ],
+    "max_mm": [
+      377.82501211166385,
+      622.30002422332768,
+      1244.6000484466554
+    ]
+  },
+  "dimension_gate": true,
+  "finished_utc": "2026-10-02 23:58:44.340000",
+  "dimension_gate_scope": "overall",
+  "dimension_basis": "29 3/4 x 24 1/2 x 49 in appliance body; handle projection additional.",
+  "model": "PODMC301W",
+  "identity_gate": true,
+  "stage": "saved_reopened_measured_flexed_placed_previewed",
+  "placement_type": "WorkPlaneBased",
+  "placed_warnings": [
+
+  ],
+  "measurement_scope": "All physical geometry in the complete reopened family and floor-face placed instance. No part or projection filter; no auxiliary bounding object.",
+  "warnings": [
+
+  ],
+  "placed_material_flex": [
+    {
+      "substitution_pass": true,
+      "name": "Display Finish",
+      "restored": true
+    },
+    {
+      "substitution_pass": true,
+      "name": "Interior Finish",
+      "restored": true
+    },
+    {
+      "substitution_pass": true,
+      "name": "Metal Finish",
+      "restored": true
+    },
+    {
+      "substitution_pass": true,
+      "name": "Glass Finish",
+      "restored": true
+    },
+    {
+      "substitution_pass": true,
+      "name": "Black Finish",
+      "restored": true
+    }
+  ],
+  "family_dimension_delta_mm": [
+    2.422332772766822e-05,
+    2.422332772766822e-05,
+    4.844665545533644e-05
+  ],
+  "dimension_delta_mm": [
+    2.422332772766822e-05,
+    2.422332772766822e-05,
+    4.844665545533644e-05
+  ],
+  "reopened": true,
+  "fixed_dimension_parameters": [
+    {
+      "matches_reference": true,
+      "name": "Overall Width",
+      "formula": "2'  5 3/4\u0022",
+      "value_mm": 755.64999999999998
+    },
+    {
+      "matches_reference": true,
+      "name": "Overall Depth",
+      "formula": "2'  0 1/2\u0022",
+      "value_mm": 622.29999999999995
+    },
+    {
+      "matches_reference": true,
+      "name": "Overall Height",
+      "formula": "4'  1\u0022",
+      "value_mm": 1244.5999999999999
+    }
+  ],
+  "material_gate": true,
+  "material_inventory": [
+    {
+      "appearance_id": 2977,
+      "name": "PODMC301W Display Finish",
+      "bitmap": "E:\u005cClaude\u005c3D-Model-Workflow\u005coutput\u005c1527_wieland\u005cappliances\u005cthermador_podmc301w\u005csource\u005crework_r1\u005cDisplay_Finish.png",
+      "bitmap_exists": true
+    },
+    {
+      "appearance_id": 2974,
+      "name": "PODMC301W Interior Finish",
+      "bitmap": "E:\u005cClaude\u005c3D-Model-Workflow\u005coutput\u005c1527_wieland\u005cappliances\u005cthermador_podmc301w\u005csource\u005crework_r1\u005cInterior_Finish.png",
+      "bitmap_exists": true
+    },
+    {
+      "appearance_id": 2965,
+      "name": "PODMC301W Metal Finish",
+      "bitmap": "E:\u005cClaude\u005c3D-Model-Workflow\u005coutput\u005c1527_wieland\u005cappliances\u005cthermador_podmc301w\u005csource\u005crework_r1\u005cMetal_Finish.png",
+      "bitmap_exists": true
+    },
+    {
+      "appearance_id": 2971,
+      "name": "PODMC301W Glass Finish",
+      "bitmap": "E:\u005cClaude\u005c3D-Model-Workflow\u005coutput\u005c1527_wieland\u005cappliances\u005cthermador_podmc301w\u005csource\u005crework_r1\u005cGlass_Finish.png",
+      "bitmap_exists": true
+    },
+    {
+      "appearance_id": 2968,
+      "name": "PODMC301W Black Finish",
+      "bitmap": "E:\u005cClaude\u005c3D-Model-Workflow\u005coutput\u005c1527_wieland\u005cappliances\u005cthermador_podmc301w\u005csource\u005crework_r1\u005cBlack_Finish.png",
+      "bitmap_exists": true
+    }
+  ],
+  "limitations": [
+    "Fixed manufacturer model size; exposed finish parameters are flex-tested.",
+    "Internal partitions, edge radii, controls and concealed mechanisms are reference-derived visualization approximations.",
+    "Published nominal appliance W/D/H is the requested complete coordination envelope. Handles are included inside this envelope; the concealed case-depth partition is reconstructed rather than certified to the separate installation section. This family is not a cabinet-cutout or manufacturing authority."
+  ],
+  "target_xyz_mm": [
+    755.64999999999998,
+    622.29999999999995,
+    1244.5999999999999
+  ],
+  "slug": "thermador_podmc301w"
+}

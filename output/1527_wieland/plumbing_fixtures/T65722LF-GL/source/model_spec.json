@@ -1,0 +1,221 @@
+{
+  "key": "T65722LF-GL",
+  "model": "T65722LF-GL",
+  "manufacturer": "Brizo",
+  "type_name": "T65722LF-GL - Gold",
+  "basename": "Brizo_T65722LF-GL_R2025",
+  "name": "Frank Lloyd Wright single-handle wall faucet",
+  "host": "wall",
+  "configured_dimensions_in": [
+    2.3125,
+    3.5,
+    10.6875
+  ],
+  "materials": {
+    "Finish": {
+      "rgb": [
+        195,
+        159,
+        90
+      ],
+      "gloss": 0.63,
+      "reflectivity": 0.62,
+      "class": "Metal"
+    },
+    "Detail": {
+      "rgb": [
+        24,
+        25,
+        26
+      ],
+      "gloss": 0.17,
+      "reflectivity": 0.04,
+      "class": "Plastic"
+    },
+    "Graphite": {
+      "rgb": [
+        64,
+        67,
+        69
+      ],
+      "gloss": 0.36,
+      "reflectivity": 0.16,
+      "class": "Glass"
+    },
+    "Ceramic": {
+      "rgb": [
+        245,
+        245,
+        241
+      ],
+      "gloss": 0.86,
+      "reflectivity": 0.22,
+      "class": "Ceramic"
+    },
+    "Brass": {
+      "rgb": [
+        160,
+        124,
+        64
+      ],
+      "gloss": 0.4,
+      "reflectivity": 0.38,
+      "class": "Metal"
+    },
+    "Green": {
+      "rgb": [
+        31,
+        113,
+        66
+      ],
+      "gloss": 0.18,
+      "reflectivity": 0.05,
+      "class": "Plastic"
+    },
+    "Gray": {
+      "rgb": [
+        131,
+        132,
+        130
+      ],
+      "gloss": 0.32,
+      "reflectivity": 0.12,
+      "class": "Plastic"
+    }
+  },
+  "geometry": [
+    {
+      "name": "Square wall escutcheon",
+      "kind": "box",
+      "bounds": [
+        -1.15625,
+        -1.15625,
+        0,
+        1.15625,
+        1.15625,
+        0.5
+      ],
+      "radius": 0.035,
+      "material": "Finish"
+    },
+    {
+      "name": "Rear rectangular body",
+      "kind": "box",
+      "bounds": [
+        -0.7,
+        -0.5,
+        0.45,
+        0.7,
+        0.5,
+        5.75
+      ],
+      "radius": 0.035,
+      "material": "Finish"
+    },
+    {
+      "name": "Raised valve body",
+      "kind": "box",
+      "bounds": [
+        -0.7,
+        -0.5,
+        4.75,
+        0.7,
+        1.55,
+        5.75
+      ],
+      "radius": 0.035,
+      "material": "Finish"
+    },
+    {
+      "name": "Flat cantilever spout",
+      "kind": "box",
+      "bounds": [
+        -0.7,
+        0.02,
+        5.4,
+        0.7,
+        0.42,
+        10.6875
+      ],
+      "radius": 0.035,
+      "material": "Finish"
+    },
+    {
+      "name": "Top rectangular lever",
+      "kind": "box",
+      "bounds": [
+        -0.68,
+        1.98,
+        4.68,
+        0.68,
+        2.34375,
+        7.1
+      ],
+      "radius": 0.035,
+      "material": "Finish"
+    },
+    {
+      "name": "Lever stem",
+      "kind": "box",
+      "bounds": [
+        -0.45,
+        1.3,
+        4.88,
+        0.45,
+        2.0,
+        5.6
+      ],
+      "radius": 0.035,
+      "material": "Finish"
+    },
+    {
+      "name": "Laminar outlet",
+      "kind": "box",
+      "bounds": [
+        -0.55,
+        -0.13,
+        9.5,
+        0.55,
+        0.03,
+        9.875
+      ],
+      "radius": 0.04,
+      "material": "Detail"
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://bravo.requested-info.com/brands/BRZ/documents/specSheets/T65722LF-GL_Spec.pdf",
+      "document": "BSP-L-T65722LF Rev D",
+      "page": 1,
+      "local_image": "_research/T65722LF-GL/downloads/T65722LF-GL_Spec_pages/page_01.png"
+    }
+  ],
+  "dimension_authority": [
+    "Overall projection 10.6875 in; overall vertical envelope 3.5 in; escutcheon square 2.3125 in; nominal outlet reach 9.625 in."
+  ],
+  "limitations": [
+    "Native model follows the current exact-SKU Frank Lloyd Wright drawing.",
+    "Control fore/aft placement and rectangular sections are drawing-derived; no teak insert is added to the non-TK SKU.",
+    "R65700 rough-in is separate.",
+    "Independent visualization reconstruction with fixed product dimensions and editable native materials.",
+    "Small fillets, seams, nozzle details and optical material response are inferred where the manufacturer does not dimension them.",
+    "No internal hydraulic performance, MEP connectors, fabrication tolerances or procurement substitutions are implied."
+  ],
+  "anchors": [
+    {
+      "label": "Overall projection",
+      "parts": [
+        "Square wall escutcheon",
+        "Flat cantilever spout"
+      ],
+      "axis": 2,
+      "nominal_in": 10.6875
+    }
+  ],
+  "all_overall_dimensions_authoritative": true,
+  "rfa_search": {
+    "result": "No acceptable no-account RFA recovered",
+    "evidence": "_research/T65722LF-GL/sources.json"
+  }
+}

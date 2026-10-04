@@ -1,0 +1,563 @@
+{
+  "template_form_ids": [
+    "1537"
+  ], 
+  "rfa_search": {
+    "evidence": "_research/813110-BNX-2.5/sources.json", 
+    "result": "No acceptable no-account RFA recovered"
+  }, 
+  "actual_dimensions_in": [
+    12.250000476837158, 
+    12.250000476837158, 
+    3.5
+  ], 
+  "source_dimensions": [
+    "Diameter 12.25 in and total head depth 3.5 in: manufacturer drawing.", 
+    "Radial spoke width 1.75 in: manufacturer drawing."
+  ], 
+  "bounds_in": [
+    -6.1250002384185791, 
+    -6.1250002384185791, 
+    -4.813935195472095e-22, 
+    6.1250002384185791, 
+    6.1250002384185791, 
+    3.5
+  ], 
+  "reopened": true, 
+  "category": "Plumbing Fixtures", 
+  "actual_dimensions_after_reopen_mm": [
+    311.15001211166378, 
+    311.15001211166378, 
+    88.899999999999991
+  ], 
+  "bounds_method": "Fine native face meshes plus 128-sample analytic edges", 
+  "source_spec_path": "E:\\Claude\\3D-Model-Workflow\\output\\1527_wieland\\plumbing_fixtures\\813110-BNX-2.5\\source\\model_spec.json", 
+  "rfa_path": "E:\\Claude\\3D-Model-Workflow\\output\\1527_wieland\\plumbing_fixtures\\813110-BNX-2.5\\Brizo_813110-BNX-2.5_R2025.rfa", 
+  "stage": "complete", 
+  "cct_k": null, 
+  "placement": "WorkPlaneBased", 
+  "material_tests": {
+    "Detail": {
+      "substitution_reaches_faces": true, 
+      "writable": true, 
+      "face_count": 464
+    }, 
+    "Finish": {
+      "substitution_reaches_faces": true, 
+      "writable": true, 
+      "face_count": 464
+    }
+  }, 
+  "evidence_files": [
+    "Brizo_813110-BNX-2_5_R2025_Isolated - 3D View - Native Front.png", 
+    "Brizo_813110-BNX-2_5_R2025_Isolated - 3D View - Native Material.png", 
+    "Brizo_813110-BNX-2_5_R2025_Isolated - 3D View - Native Oblique.png", 
+    "Brizo_813110-BNX-2_5_R2025_Isolated - 3D View - Native Side.png"
+  ], 
+  "model": "813110-BNX-2.5", 
+  "acceptance": "NATIVE_GATES_PASSED_PENDING_VISUAL_REVIEW", 
+  "native_path_checks": [], 
+  "finished_utc": "2026-10-02T14:37:21.696000Z", 
+  "source_spec_sha256": "998ffb620b55790f1d3f32ed2cae72b468755f3f9e7ec5cd4c006a242576cfe3", 
+  "reopened_warnings": [], 
+  "project_warnings": [], 
+  "reopen_geometry_equal": true, 
+  "visual_review": "PENDING_NATIVE_IMAGE_REVIEW", 
+  "display_bounds_in": [
+    -6.125, 
+    -6.125, 
+    0.0, 
+    6.125, 
+    6.125, 
+    3.5
+  ], 
+  "source_references": [
+    {
+      "page": 1, 
+      "document": "Brizo BSP-B-813110 Rev A", 
+      "url": "https://assets.specbooks.cloud/brand/brizo/spec/22628776/document/spec-sb-eli3kf.pdf", 
+      "local_image": "_research/813110-BNX-2.5/downloads/spec-sb-eli3kf_pages/page_01.png"
+    }
+  ], 
+  "appearance_bindings": {
+    "Detail": {
+      "material_id": "3207", 
+      "exists": true, 
+      "path": "E:\\Claude\\3D-Model-Workflow\\output\\1527_wieland\\plumbing_fixtures\\813110-BNX-2.5\\textures\\Detail.png"
+    }, 
+    "Finish": {
+      "material_id": "3210", 
+      "exists": true, 
+      "path": "E:\\Claude\\3D-Model-Workflow\\output\\1527_wieland\\plumbing_fixtures\\813110-BNX-2.5\\textures\\Finish.png"
+    }
+  }, 
+  "revit_build": "25.4.50.35", 
+  "dimension_anchor_checks": [
+    {
+      "label": "Halo diameter", 
+      "pass": true, 
+      "actual_mm": 311.15001211166378, 
+      "nominal_mm": 311.14999999999998, 
+      "deviation_mm": 1.2111663818359374e-05
+    }
+  ], 
+  "material_ids": {
+    "Detail": "3207", 
+    "Finish": "3210"
+  }, 
+  "expected_dimensions_in": [
+    12.25, 
+    12.25, 
+    3.5
+  ], 
+  "inferences": "Open annulus and radial spoke are retained; internal waterway and fine edge radii are simplified. | Arm is supplied as its separate 899110-12-BNX family. | Independent visualization reconstruction with fixed product dimensions and editable native materials. | Small fillets, seams, nozzle details and optical material response are inferred where the manufacturer does not dimension them. | No internal hydraulic performance, MEP connectors, fabrication tolerances or procurement substitutions are implied.", 
+  "gates": {
+    "reopened": true, 
+    "warnings": true, 
+    "orientation": true, 
+    "diffuse_bitmaps": true, 
+    "actual_face_host": true, 
+    "dimensions": true, 
+    "materials": true, 
+    "reopen_geometry_equal": true, 
+    "views": true, 
+    "category": true, 
+    "cct": true
+  }, 
+  "revit_version": "2025", 
+  "manufacturer": "Brizo", 
+  "technical_pass": true, 
+  "family_warnings": [], 
+  "started_utc": "2026-10-02T14:37:06.296000Z", 
+  "type": "813110-BNX-2.5 - Brilliance Black Onyx -  Black", 
+  "parts": [
+    {
+      "volume_ft3": 0.0094995521194862036, 
+      "id": "3212", 
+      "name": "Open halo ring"
+    }, 
+    {
+      "volume_ft3": 0.010675853558878267, 
+      "id": "3213", 
+      "name": "Radial waterway spoke"
+    }, 
+    {
+      "volume_ft3": 0.00094341225961191413, 
+      "id": "3214", 
+      "name": "Connection boss"
+    }, 
+    {
+      "volume_ft3": 6.8173507024794355e-05, 
+      "id": "3215", 
+      "name": "Male connection"
+    }, 
+    {
+      "volume_ft3": 7.6813562328711616e-07, 
+      "id": "3216", 
+      "name": "Perimeter spray nozzle 00"
+    }, 
+    {
+      "volume_ft3": 7.6813562328711616e-07, 
+      "id": "3217", 
+      "name": "Perimeter spray nozzle 01"
+    }, 
+    {
+      "volume_ft3": 7.6813562328711606e-07, 
+      "id": "3218", 
+      "name": "Perimeter spray nozzle 02"
+    }, 
+    {
+      "volume_ft3": 7.6813562328711606e-07, 
+      "id": "3219", 
+      "name": "Perimeter spray nozzle 03"
+    }, 
+    {
+      "volume_ft3": 7.6813562328711627e-07, 
+      "id": "3220", 
+      "name": "Perimeter spray nozzle 04"
+    }, 
+    {
+      "volume_ft3": 7.6813562328711627e-07, 
+      "id": "3221", 
+      "name": "Perimeter spray nozzle 05"
+    }, 
+    {
+      "volume_ft3": 7.6813562328711627e-07, 
+      "id": "3222", 
+      "name": "Perimeter spray nozzle 06"
+    }, 
+    {
+      "volume_ft3": 7.6813562328711595e-07, 
+      "id": "3223", 
+      "name": "Perimeter spray nozzle 07"
+    }, 
+    {
+      "volume_ft3": 7.6813562328711595e-07, 
+      "id": "3224", 
+      "name": "Perimeter spray nozzle 08"
+    }, 
+    {
+      "volume_ft3": 7.6813562328711595e-07, 
+      "id": "3225", 
+      "name": "Perimeter spray nozzle 09"
+    }, 
+    {
+      "volume_ft3": 7.6813562328711606e-07, 
+      "id": "3226", 
+      "name": "Perimeter spray nozzle 10"
+    }, 
+    {
+      "volume_ft3": 7.6813562328711595e-07, 
+      "id": "3227", 
+      "name": "Perimeter spray nozzle 11"
+    }, 
+    {
+      "volume_ft3": 7.6813562328711627e-07, 
+      "id": "3228", 
+      "name": "Perimeter spray nozzle 12"
+    }, 
+    {
+      "volume_ft3": 7.6813562328711606e-07, 
+      "id": "3229", 
+      "name": "Perimeter spray nozzle 13"
+    }, 
+    {
+      "volume_ft3": 7.6813562328711606e-07, 
+      "id": "3230", 
+      "name": "Perimeter spray nozzle 14"
+    }, 
+    {
+      "volume_ft3": 7.6813562328711606e-07, 
+      "id": "3231", 
+      "name": "Perimeter spray nozzle 15"
+    }, 
+    {
+      "volume_ft3": 7.6813562328711606e-07, 
+      "id": "3232", 
+      "name": "Perimeter spray nozzle 16"
+    }, 
+    {
+      "volume_ft3": 7.6813562328711606e-07, 
+      "id": "3233", 
+      "name": "Perimeter spray nozzle 17"
+    }, 
+    {
+      "volume_ft3": 7.6813562328711616e-07, 
+      "id": "3234", 
+      "name": "Perimeter spray nozzle 18"
+    }, 
+    {
+      "volume_ft3": 7.6813562328711606e-07, 
+      "id": "3235", 
+      "name": "Perimeter spray nozzle 19"
+    }, 
+    {
+      "volume_ft3": 7.6813562328711616e-07, 
+      "id": "3236", 
+      "name": "Perimeter spray nozzle 20"
+    }, 
+    {
+      "volume_ft3": 7.6813562328711606e-07, 
+      "id": "3237", 
+      "name": "Perimeter spray nozzle 21"
+    }, 
+    {
+      "volume_ft3": 7.6813562328711606e-07, 
+      "id": "3238", 
+      "name": "Perimeter spray nozzle 22"
+    }, 
+    {
+      "volume_ft3": 7.6813562328711606e-07, 
+      "id": "3239", 
+      "name": "Perimeter spray nozzle 23"
+    }, 
+    {
+      "volume_ft3": 7.6813562328711606e-07, 
+      "id": "3240", 
+      "name": "Perimeter spray nozzle 24"
+    }, 
+    {
+      "volume_ft3": 7.6813562328711595e-07, 
+      "id": "3241", 
+      "name": "Perimeter spray nozzle 25"
+    }, 
+    {
+      "volume_ft3": 7.6813562328711606e-07, 
+      "id": "3242", 
+      "name": "Perimeter spray nozzle 26"
+    }, 
+    {
+      "volume_ft3": 7.6813562328711595e-07, 
+      "id": "3243", 
+      "name": "Perimeter spray nozzle 27"
+    }, 
+    {
+      "volume_ft3": 7.6813562328711595e-07, 
+      "id": "3244", 
+      "name": "Perimeter spray nozzle 28"
+    }, 
+    {
+      "volume_ft3": 7.6813562328711595e-07, 
+      "id": "3245", 
+      "name": "Perimeter spray nozzle 29"
+    }, 
+    {
+      "volume_ft3": 7.6813562328711648e-07, 
+      "id": "3246", 
+      "name": "Perimeter spray nozzle 30"
+    }, 
+    {
+      "volume_ft3": 7.6813562328711648e-07, 
+      "id": "3247", 
+      "name": "Perimeter spray nozzle 31"
+    }, 
+    {
+      "volume_ft3": 7.6813562328711627e-07, 
+      "id": "3248", 
+      "name": "Perimeter spray nozzle 32"
+    }, 
+    {
+      "volume_ft3": 7.6813562328711606e-07, 
+      "id": "3249", 
+      "name": "Perimeter spray nozzle 33"
+    }, 
+    {
+      "volume_ft3": 7.6813562328711606e-07, 
+      "id": "3250", 
+      "name": "Perimeter spray nozzle 34"
+    }, 
+    {
+      "volume_ft3": 7.6813562328711616e-07, 
+      "id": "3251", 
+      "name": "Perimeter spray nozzle 35"
+    }, 
+    {
+      "volume_ft3": 7.6813562328711616e-07, 
+      "id": "3252", 
+      "name": "Perimeter spray nozzle 36"
+    }, 
+    {
+      "volume_ft3": 7.6813562328711616e-07, 
+      "id": "3253", 
+      "name": "Perimeter spray nozzle 37"
+    }, 
+    {
+      "volume_ft3": 7.6813562328711606e-07, 
+      "id": "3254", 
+      "name": "Perimeter spray nozzle 38"
+    }, 
+    {
+      "volume_ft3": 7.6813562328711627e-07, 
+      "id": "3255", 
+      "name": "Perimeter spray nozzle 39"
+    }, 
+    {
+      "volume_ft3": 7.6813562328711627e-07, 
+      "id": "3256", 
+      "name": "Perimeter spray nozzle 40"
+    }, 
+    {
+      "volume_ft3": 7.6813562328711627e-07, 
+      "id": "3257", 
+      "name": "Perimeter spray nozzle 41"
+    }, 
+    {
+      "volume_ft3": 7.6813562328711648e-07, 
+      "id": "3258", 
+      "name": "Perimeter spray nozzle 42"
+    }, 
+    {
+      "volume_ft3": 7.6813562328711595e-07, 
+      "id": "3259", 
+      "name": "Perimeter spray nozzle 43"
+    }, 
+    {
+      "volume_ft3": 7.6813562328711595e-07, 
+      "id": "3260", 
+      "name": "Perimeter spray nozzle 44"
+    }, 
+    {
+      "volume_ft3": 7.6813562328711595e-07, 
+      "id": "3261", 
+      "name": "Perimeter spray nozzle 45"
+    }, 
+    {
+      "volume_ft3": 7.6813562328711595e-07, 
+      "id": "3262", 
+      "name": "Perimeter spray nozzle 46"
+    }, 
+    {
+      "volume_ft3": 7.6813562328711595e-07, 
+      "id": "3263", 
+      "name": "Perimeter spray nozzle 47"
+    }, 
+    {
+      "volume_ft3": 7.6813562328711606e-07, 
+      "id": "3264", 
+      "name": "Perimeter spray nozzle 48"
+    }, 
+    {
+      "volume_ft3": 7.6813562328711606e-07, 
+      "id": "3265", 
+      "name": "Perimeter spray nozzle 49"
+    }, 
+    {
+      "volume_ft3": 7.6813562328711627e-07, 
+      "id": "3266", 
+      "name": "Perimeter spray nozzle 50"
+    }, 
+    {
+      "volume_ft3": 7.6813562328711606e-07, 
+      "id": "3267", 
+      "name": "Perimeter spray nozzle 51"
+    }, 
+    {
+      "volume_ft3": 7.6813562328711606e-07, 
+      "id": "3268", 
+      "name": "Perimeter spray nozzle 52"
+    }, 
+    {
+      "volume_ft3": 7.6813562328711606e-07, 
+      "id": "3269", 
+      "name": "Perimeter spray nozzle 53"
+    }, 
+    {
+      "volume_ft3": 7.6813562328711616e-07, 
+      "id": "3270", 
+      "name": "Perimeter spray nozzle 54"
+    }, 
+    {
+      "volume_ft3": 7.6813562328711616e-07, 
+      "id": "3271", 
+      "name": "Perimeter spray nozzle 55"
+    }, 
+    {
+      "volume_ft3": 7.6813562328711606e-07, 
+      "id": "3272", 
+      "name": "Perimeter spray nozzle 56"
+    }, 
+    {
+      "volume_ft3": 7.6813562328711616e-07, 
+      "id": "3273", 
+      "name": "Perimeter spray nozzle 57"
+    }, 
+    {
+      "volume_ft3": 7.6813562328711606e-07, 
+      "id": "3274", 
+      "name": "Perimeter spray nozzle 58"
+    }, 
+    {
+      "volume_ft3": 7.6813562328711627e-07, 
+      "id": "3275", 
+      "name": "Perimeter spray nozzle 59"
+    }, 
+    {
+      "volume_ft3": 7.6813562328711606e-07, 
+      "id": "3276", 
+      "name": "Perimeter spray nozzle 60"
+    }, 
+    {
+      "volume_ft3": 7.6813562328711595e-07, 
+      "id": "3277", 
+      "name": "Perimeter spray nozzle 61"
+    }, 
+    {
+      "volume_ft3": 7.6813562328711595e-07, 
+      "id": "3278", 
+      "name": "Perimeter spray nozzle 62"
+    }, 
+    {
+      "volume_ft3": 7.6813562328711595e-07, 
+      "id": "3279", 
+      "name": "Perimeter spray nozzle 63"
+    }, 
+    {
+      "volume_ft3": 7.6813562328711595e-07, 
+      "id": "3280", 
+      "name": "Perimeter spray nozzle 64"
+    }, 
+    {
+      "volume_ft3": 7.6813562328711595e-07, 
+      "id": "3281", 
+      "name": "Perimeter spray nozzle 65"
+    }, 
+    {
+      "volume_ft3": 7.6813562328711627e-07, 
+      "id": "3282", 
+      "name": "Perimeter spray nozzle 66"
+    }, 
+    {
+      "volume_ft3": 7.6813562328711648e-07, 
+      "id": "3283", 
+      "name": "Perimeter spray nozzle 67"
+    }, 
+    {
+      "volume_ft3": 7.6813562328711627e-07, 
+      "id": "3284", 
+      "name": "Perimeter spray nozzle 68"
+    }, 
+    {
+      "volume_ft3": 7.6813562328711585e-07, 
+      "id": "3285", 
+      "name": "Perimeter spray nozzle 69"
+    }, 
+    {
+      "volume_ft3": 7.6813562328711606e-07, 
+      "id": "3286", 
+      "name": "Perimeter spray nozzle 70"
+    }, 
+    {
+      "volume_ft3": 7.6813562328711616e-07, 
+      "id": "3287", 
+      "name": "Perimeter spray nozzle 71"
+    }
+  ], 
+  "all_overall_dimensions_authoritative": true, 
+  "native_gates_pass": true, 
+  "appearance_defaults": {
+    "Detail": {
+      "rgb": [
+        24, 
+        25, 
+        26
+      ], 
+      "gloss": 0.17000000000000001, 
+      "luminance": 0, 
+      "transparency": 0, 
+      "cct_k": null
+    }, 
+    "Finish": {
+      "rgb": [
+        58, 
+        60, 
+        62
+      ], 
+      "gloss": 0.92000000000000004, 
+      "luminance": 0, 
+      "transparency": 0, 
+      "cct_k": null
+    }
+  }, 
+  "reopened_bounds_in": [
+    -6.1250002384185791, 
+    -6.1250002384185791, 
+    -4.813935195472095e-22, 
+    6.1250002384185791, 
+    6.1250002384185791, 
+    3.5
+  ], 
+  "limitations": [
+    "Open annulus and radial spoke are retained; internal waterway and fine edge radii are simplified.", 
+    "Arm is supplied as its separate 899110-12-BNX family.", 
+    "Independent visualization reconstruction with fixed product dimensions and editable native materials.", 
+    "Small fillets, seams, nozzle details and optical material response are inferred where the manufacturer does not dimension them.", 
+    "No internal hydraulic performance, MEP connectors, fabrication tolerances or procurement substitutions are implied."
+  ], 
+  "host": {
+    "hostface_present": true, 
+    "host_kind": "ceiling", 
+    "normal_dot": 1.0, 
+    "host_id": "3769", 
+    "instance_host_id": "3769"
+  }
+}

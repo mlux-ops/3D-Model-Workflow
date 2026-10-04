@@ -1,0 +1,272 @@
+{
+  "rfa_path": "E:\\Claude\\3D-Model-Workflow\\output\\1527_wieland\\plumbing_fixtures\\63221LF-BLLHP\\Brizo_63221LF-BLLHP_R2025.rfa", 
+  "limitations": [
+    "ASSUMPTION: hose is posed with a 21.75-inch outer crown; the manufacturer states overall height varies with arm position and depicts 21.5 in in another pose.", 
+    "Above-deck family only; supply tubing and mounting shank omitted. HLK175 handle remains a separate row.", 
+    "Rigid arm sections, wand length, pivots and sleeve proportions are drawing-derived. Articulation is represented as a fixed display pose.", 
+    "Independent visualization reconstruction with fixed product dimensions and editable native materials.", 
+    "Small fillets, seams, nozzle details and optical material response are inferred where the manufacturer does not dimension them.", 
+    "No internal hydraulic performance, MEP connectors, fabrication tolerances or procurement substitutions are implied."
+  ], 
+  "material_ids": {
+    "Brass": "3207", 
+    "Finish": "3213", 
+    "Detail": "3210"
+  }, 
+  "started_utc": "2026-10-02T16:07:21.165000Z", 
+  "family_warnings": [], 
+  "material_tests": {
+    "Brass": {
+      "substitution_reaches_faces": true, 
+      "writable": true, 
+      "face_count": 80
+    }, 
+    "Finish": {
+      "substitution_reaches_faces": true, 
+      "writable": true, 
+      "face_count": 80
+    }, 
+    "Detail": {
+      "substitution_reaches_faces": true, 
+      "writable": true, 
+      "face_count": 80
+    }
+  }, 
+  "actual_dimensions_in": [
+    3.8687499999999999, 
+    6.5387499999999994, 
+    21.75
+  ], 
+  "all_overall_dimensions_authoritative": false, 
+  "actual_dimensions_after_reopen_mm": [
+    98.266249999999985, 
+    166.08424999999997, 
+    552.44999999999993
+  ], 
+  "project_warnings": [], 
+  "native_path_checks": [
+    {
+      "nominal_mm": 584.19999999999993, 
+      "actual_mm": 584.19999999999993, 
+      "part": "23 inch exposed hose", 
+      "pass": true
+    }
+  ], 
+  "stage": "complete", 
+  "bounds_in": [
+    -1.21875, 
+    -5.3199999999999994, 
+    -2.915659192157966e-24, 
+    2.6499999999999999, 
+    1.21875, 
+    21.75
+  ], 
+  "reopened": true, 
+  "native_gates_pass": true, 
+  "placement": "WorkPlaneBased", 
+  "display_bounds_in": [
+    -1.21875, 
+    -5.3199999999999994, 
+    0.0, 
+    2.6499999999999999, 
+    1.21875, 
+    21.75
+  ], 
+  "rfa_search": {
+    "evidence": "_research/63221LF-BLLHP/sources.json", 
+    "result": "No acceptable no-account RFA recovered"
+  }, 
+  "reopened_bounds_in": [
+    -1.21875, 
+    -5.3199999999999994, 
+    -2.915659192157966e-24, 
+    2.6499999999999999, 
+    1.21875, 
+    21.75
+  ], 
+  "appearance_bindings": {
+    "Brass": {
+      "exists": true, 
+      "material_id": "3207", 
+      "path": "E:\\Claude\\3D-Model-Workflow\\output\\1527_wieland\\plumbing_fixtures\\63221LF-BLLHP\\textures\\Brass.png"
+    }, 
+    "Finish": {
+      "exists": true, 
+      "material_id": "3213", 
+      "path": "E:\\Claude\\3D-Model-Workflow\\output\\1527_wieland\\plumbing_fixtures\\63221LF-BLLHP\\textures\\Finish.png"
+    }, 
+    "Detail": {
+      "exists": true, 
+      "material_id": "3210", 
+      "path": "E:\\Claude\\3D-Model-Workflow\\output\\1527_wieland\\plumbing_fixtures\\63221LF-BLLHP\\textures\\Detail.png"
+    }
+  }, 
+  "acceptance": "NATIVE_GATES_PASSED_PENDING_VISUAL_REVIEW", 
+  "source_dimensions": [
+    "Base diameter 2.4375 in; outlet reach 4.75 in; lower swivel datum 6.75 in; vertical distance to upper swivel 5.875 in; exposed hose 23 in."
+  ], 
+  "reopen_geometry_equal": true, 
+  "host": {
+    "instance_host_id": "3709", 
+    "hostface_present": true, 
+    "host_id": "3709", 
+    "normal_dot": 1.0, 
+    "host_kind": "floor"
+  }, 
+  "bounds_method": "Fine native face meshes plus 128-sample analytic edges", 
+  "dimension_anchor_checks": [
+    {
+      "nominal_mm": 61.912499999999994, 
+      "label": "Base diameter", 
+      "actual_mm": 61.912499999999994, 
+      "deviation_mm": 0.0, 
+      "pass": true
+    }
+  ], 
+  "cct_k": null, 
+  "source_spec_path": "E:\\Claude\\3D-Model-Workflow\\output\\1527_wieland\\plumbing_fixtures\\63221LF-BLLHP\\source\\model_spec.json", 
+  "technical_pass": true, 
+  "parts": [
+    {
+      "name": "Round base", 
+      "id": "3215", 
+      "volume_ft3": 0.00050630812590191511
+    }, 
+    {
+      "name": "Valve column", 
+      "id": "3216", 
+      "volume_ft3": 0.0086689431532728511
+    }, 
+    {
+      "name": "Side valve sleeve", 
+      "id": "3217", 
+      "volume_ft3": 0.0016392183417097755
+    }, 
+    {
+      "name": "Bare lever spindle", 
+      "id": "3218", 
+      "volume_ft3": 1.4725477517355585e-05
+    }, 
+    {
+      "name": "Lower articulating arm", 
+      "id": "3219", 
+      "volume_ft3": 0.0010293734747471618
+    }, 
+    {
+      "name": "Upper articulating arm", 
+      "id": "3220", 
+      "volume_ft3": 0.00059965165131666161
+    }, 
+    {
+      "name": "Lower hinge", 
+      "id": "3221", 
+      "volume_ft3": 0.00052357253395042059
+    }, 
+    {
+      "name": "Upper hinge", 
+      "id": "3222", 
+      "volume_ft3": 0.00038177163933884829
+    }, 
+    {
+      "name": "Magnetic wand holder", 
+      "id": "3223", 
+      "volume_ft3": 0.00039995124121212678
+    }, 
+    {
+      "name": "Spray wand", 
+      "id": "3224", 
+      "volume_ft3": 0.0021263589535061456
+    }, 
+    {
+      "name": "Spray face", 
+      "id": "3225", 
+      "volume_ft3": 2.0942901358016193e-05
+    }, 
+    {
+      "name": "23 inch exposed hose", 
+      "id": "3226", 
+      "volume_ft3": 0.0026134948133758637
+    }
+  ], 
+  "source_references": [
+    {
+      "url": "https://media.brizo.com/SpecSheet/BSP-K-63121LF-LHP%20Rev%20B.pdf", 
+      "visual_review_method": "Manufacturer web PDF screenshot", 
+      "document": "Brizo Odin 63121/63221 less-handle specification Rev B", 
+      "page": 1
+    }
+  ], 
+  "revit_version": "2025", 
+  "visual_review": "PENDING_NATIVE_IMAGE_REVIEW", 
+  "evidence_files": [
+    "Brizo_63221LF-BLLHP_R2025_Isolated - 3D View - Native Front.png", 
+    "Brizo_63221LF-BLLHP_R2025_Isolated - 3D View - Native Material.png", 
+    "Brizo_63221LF-BLLHP_R2025_Isolated - 3D View - Native Oblique.png", 
+    "Brizo_63221LF-BLLHP_R2025_Isolated - 3D View - Native Side.png"
+  ], 
+  "appearance_defaults": {
+    "Brass": {
+      "transparency": 0, 
+      "rgb": [
+        160, 
+        124, 
+        64
+      ], 
+      "luminance": 0, 
+      "gloss": 0.40000000000000002, 
+      "cct_k": null
+    }, 
+    "Finish": {
+      "transparency": 0, 
+      "rgb": [
+        20, 
+        21, 
+        22
+      ], 
+      "luminance": 0, 
+      "gloss": 0.17000000000000001, 
+      "cct_k": null
+    }, 
+    "Detail": {
+      "transparency": 0, 
+      "rgb": [
+        24, 
+        25, 
+        26
+      ], 
+      "luminance": 0, 
+      "gloss": 0.17000000000000001, 
+      "cct_k": null
+    }
+  }, 
+  "gates": {
+    "views": true, 
+    "cct": true, 
+    "diffuse_bitmaps": true, 
+    "materials": true, 
+    "orientation": true, 
+    "reopened": true, 
+    "category": true, 
+    "actual_face_host": true, 
+    "reopen_geometry_equal": true, 
+    "warnings": true, 
+    "dimensions": true
+  }, 
+  "template_form_ids": [
+    "1537"
+  ], 
+  "expected_dimensions_in": [
+    3.8687499999999999, 
+    6.5387500000000003, 
+    21.75
+  ], 
+  "revit_build": "25.4.50.35", 
+  "finished_utc": "2026-10-02T16:07:25.786000Z", 
+  "category": "Plumbing Fixtures", 
+  "reopened_warnings": [], 
+  "manufacturer": "Brizo", 
+  "source_spec_sha256": "e00b712a237ce0ee46cb62c9c92ca138061b2a299bbc2845a0c6579ab756edcb", 
+  "model": "63221LF-BLLHP", 
+  "type": "63221LF-BLLHP - Matte Black -  Black", 
+  "inferences": "ASSUMPTION: hose is posed with a 21.75-inch outer crown; the manufacturer states overall height varies with arm position and depicts 21.5 in in another pose. | Above-deck family only; supply tubing and mounting shank omitted. HLK175 handle remains a separate row. | Rigid arm sections, wand length, pivots and sleeve proportions are drawing-derived. Articulation is represented as a fixed display pose. | Independent visualization reconstruction with fixed product dimensions and editable native materials. | Small fillets, seams, nozzle details and optical material response are inferred where the manufacturer does not dimension them. | No internal hydraulic performance, MEP connectors, fabrication tolerances or procurement substitutions are implied."
+}

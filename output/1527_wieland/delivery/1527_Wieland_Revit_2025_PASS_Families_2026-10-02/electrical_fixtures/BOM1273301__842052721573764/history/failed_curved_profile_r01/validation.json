@@ -1,0 +1,157 @@
+{
+  "error": "Traceback (most recent call last):\n  File \"E:\\Claude\\3D-Model-Workflow\\output\\1527_wieland\\electrical_fixtures\\_tools\\build_completion.py\", line 123, in run_one\n    return f.finish()\n  File \"E:\\Claude\\3D-Model-Workflow\\output\\1527_wieland\\electrical_fixtures\\_tools\\wieland_native.py\", line 41, in finish\n    report = NativeFixture.finish(self)\n  File \"E:\\Claude\\3D-Model-Workflow\\output\\1527_wieland\\electrical_fixtures\\_tools\\native_fixture_support.py\", line 272, in finish\n    if not self.report['technical_pass']:raise RuntimeError('Failed native gates: '+str([k for k,v in gates.items() if not v]))\nRuntimeError: Failed native gates: ['dimensions']\n", 
+  "expected_dimensions_in": [
+    5.1100000000000003, 
+    5.1100000000000003, 
+    3.0699999999999998
+  ], 
+  "bounds_in": [
+    -2.6615390181541443, 
+    -2.6604647040367126, 
+    0.0, 
+    2.6615390181541443, 
+    2.6604647040367126, 
+    3.1201386451721191
+  ], 
+  "bounds_method": "Fine native face meshes plus 128-sample analytic edges", 
+  "technical_pass": false, 
+  "started_utc": "2026-10-02T15:22:29.271000Z", 
+  "revit_build": "25.4.50.35", 
+  "evidence_files": [
+    "Bomma_Dew_Drops_Silver_Clear_R2025 - 3D View - Front.png", 
+    "Bomma_Dew_Drops_Silver_Clear_R2025 - 3D View - Material.png", 
+    "Bomma_Dew_Drops_Silver_Clear_R2025 - 3D View - Oblique.png", 
+    "Bomma_Dew_Drops_Silver_Clear_R2025 - 3D View - Side.png", 
+    "Bomma_Dew_Drops_Silver_Clear_R2025_Hosted - 3D View - Hosted.png", 
+    "Bomma_Dew_Drops_Silver_Clear_R2025_Isolated - 3D View - Native Front.png", 
+    "Bomma_Dew_Drops_Silver_Clear_R2025_Isolated - 3D View - Native Material.png", 
+    "Bomma_Dew_Drops_Silver_Clear_R2025_Isolated - 3D View - Native Oblique.png", 
+    "Bomma_Dew_Drops_Silver_Clear_R2025_Isolated - 3D View - Native Side.png"
+  ], 
+  "appearance_defaults": {
+    "Metal Finish": {
+      "cct_k": null, 
+      "rgb": [
+        194, 
+        200, 
+        204
+      ], 
+      "transparency": 0, 
+      "gloss": 0.90000000000000002, 
+      "luminance": 0
+    }, 
+    "Glass Finish": {
+      "cct_k": null, 
+      "rgb": [
+        241, 
+        244, 
+        245
+      ], 
+      "transparency": 0.88, 
+      "gloss": 0.94999999999999996, 
+      "luminance": 0
+    }, 
+    "Diffuser Finish": {
+      "cct_k": null, 
+      "rgb": [
+        245, 
+        245, 
+        240
+      ], 
+      "transparency": 0.059999999999999998, 
+      "gloss": 0.29999999999999999, 
+      "luminance": 0
+    }
+  }, 
+  "limitations": "Exact silver/clear 130 variant; published 5.11-inch diameter and 3.07-inch projection. Manufacturer installation manual and product photograph inform the curved glass and central light engine. ASSUMPTION: glass thickness and hidden fastening details; manually blown glass will vary.", 
+  "stage": "failed", 
+  "cct_k": null, 
+  "category": "Lighting Fixtures", 
+  "host": {
+    "host_kind": "wall", 
+    "hostface_present": true, 
+    "instance_host_id": "3698", 
+    "host_id": "3698", 
+    "normal_dot": 1.0
+  }, 
+  "parts": [
+    {
+      "name": "Wall plate", 
+      "id": "3214", 
+      "volume_ft3": 0.002042591248548717
+    }, 
+    {
+      "name": "Hand-blown clear rounded vessel", 
+      "id": "3215", 
+      "volume_ft3": 0.0051347349942485578
+    }, 
+    {
+      "name": "Central optical module", 
+      "id": "3216", 
+      "volume_ft3": 0.0037810675163430668
+    }
+  ], 
+  "model": "1/49/95304/1/00000/130/WL/USA/T", 
+  "template_form_ids": [
+    "1537"
+  ], 
+  "inferences": "Exact silver/clear 130 variant; published 5.11-inch diameter and 3.07-inch projection. Manufacturer installation manual and product photograph inform the curved glass and central light engine. ASSUMPTION: glass thickness and hidden fastening details; manually blown glass will vary.", 
+  "source_url": "https://www.lightology.com/index.php?module=prod_detail&prod_id=1273301", 
+  "actual_dimensions_in": [
+    5.3230780363082886, 
+    5.3209294080734253, 
+    3.1201386451721191
+  ], 
+  "reopened_warnings": [], 
+  "finished_utc": "2026-10-02T15:22:41.307000Z", 
+  "reopened": true, 
+  "companion_bitmaps": {
+    "Metal Finish": "E:\\Claude\\3D-Model-Workflow\\output\\1527_wieland\\electrical_fixtures\\BOM1273301__842052721573764\\source\\textures\\Metal_Finish.png", 
+    "Glass Finish": "E:\\Claude\\3D-Model-Workflow\\output\\1527_wieland\\electrical_fixtures\\BOM1273301__842052721573764\\source\\textures\\Glass_Finish.png", 
+    "Diffuser Finish": "E:\\Claude\\3D-Model-Workflow\\output\\1527_wieland\\electrical_fixtures\\BOM1273301__842052721573764\\source\\textures\\Diffuser_Finish.png"
+  }, 
+  "rfa_search": "Official product resources and verified BIM listings searched; no exact, usable anonymous RFA accepted. See retained source resources and manufacturer acquisition/inspection receipts.", 
+  "rfa_path": "E:\\Claude\\3D-Model-Workflow\\output\\1527_wieland\\electrical_fixtures\\BOM1273301__842052721573764\\Bomma_Dew_Drops_Silver_Clear_R2025.rfa", 
+  "manufacturer": "Bomma", 
+  "family_warnings": [], 
+  "type": "1/49/95304/1/00000/130/WL/USA/T", 
+  "revit_version": "2025", 
+  "display_bounds_in": [
+    -2.6457250624934359, 
+    -2.6616993087140601, 
+    0.0, 
+    2.6457250624934359, 
+    2.6616993087140601, 
+    3.0700000000000003
+  ], 
+  "gates": {
+    "reopened": true, 
+    "materials": true, 
+    "cct": true, 
+    "orientation": true, 
+    "actual_face_host": true, 
+    "dimensions": false, 
+    "warnings": true, 
+    "views": true, 
+    "category": true
+  }, 
+  "placement": "WorkPlaneBased", 
+  "material_tests": {
+    "Metal Finish": {
+      "writable": true, 
+      "substitution_reaches_faces": true, 
+      "face_count": 40
+    }, 
+    "Glass Finish": {
+      "writable": true, 
+      "substitution_reaches_faces": true, 
+      "face_count": 40
+    }, 
+    "Diffuser Finish": {
+      "writable": true, 
+      "substitution_reaches_faces": true, 
+      "face_count": 40
+    }
+  }, 
+  "project_warnings": []
+}

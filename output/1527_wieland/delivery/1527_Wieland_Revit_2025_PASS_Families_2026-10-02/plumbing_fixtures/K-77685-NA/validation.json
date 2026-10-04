@@ -1,0 +1,202 @@
+{
+  "host": {
+    "instance_host_id": "3697", 
+    "host_id": "3697", 
+    "host_kind": "floor", 
+    "hostface_present": true, 
+    "normal_dot": 1.0
+  }, 
+  "model": "K-77685-NA", 
+  "source_dimensions": [
+    "Body height 12.125 in, front width 3.0625 in, and total bracket depth 3.375 in."
+  ], 
+  "inferences": "The two 24-inch connection tubes are installation-dependent and omitted from this rigid-body family. | Cartridge/manifold split and small corner radii are drawing-derived. | Independent visualization reconstruction with fixed product dimensions and editable native materials. | Small fillets, seams, nozzle details and optical material response are inferred where the manufacturer does not dimension them. | No internal hydraulic performance, MEP connectors, fabrication tolerances or procurement substitutions are implied.", 
+  "visual_review": "PENDING_NATIVE_IMAGE_REVIEW", 
+  "source_spec_sha256": "e4266b470ffad1d60c96dbc5c71e520c71aa1f6159777a6796358d9a72e68fa9", 
+  "started_utc": "2026-10-02T15:54:39.752000Z", 
+  "template_form_ids": [
+    "1537"
+  ], 
+  "source_references": [
+    {
+      "local_image": "_research/K-77685-NA/downloads/K-77685_spec_US-CA_Kohler_en_pages/page_03.png", 
+      "document": "Kohler K-77685 specification, 2026-10-01", 
+      "page": 3, 
+      "url": "https://techcomm.kohler.com/techcomm/pdf/K-77685_spec_US-CA_Kohler_en.pdf"
+    }
+  ], 
+  "reopened": true, 
+  "gates": {
+    "actual_face_host": true, 
+    "reopened": true, 
+    "category": true, 
+    "diffuse_bitmaps": true, 
+    "warnings": true, 
+    "views": true, 
+    "dimensions": true, 
+    "reopen_geometry_equal": true, 
+    "materials": true, 
+    "cct": true, 
+    "orientation": true
+  }, 
+  "placement": "WorkPlaneBased", 
+  "material_tests": {
+    "Finish": {
+      "face_count": 32, 
+      "substitution_reaches_faces": true, 
+      "writable": true
+    }, 
+    "Gray": {
+      "face_count": 32, 
+      "substitution_reaches_faces": true, 
+      "writable": true
+    }
+  }, 
+  "acceptance": "NATIVE_GATES_PASSED_PENDING_VISUAL_REVIEW", 
+  "actual_dimensions_in": [
+    3.0625001192092896, 
+    3.3750000000000004, 
+    12.125
+  ], 
+  "family_warnings": [], 
+  "cct_k": null, 
+  "stage": "complete", 
+  "manufacturer": "Kohler", 
+  "material_ids": {
+    "Finish": "3207", 
+    "Gray": "3210"
+  }, 
+  "expected_dimensions_in": [
+    3.0625, 
+    3.375, 
+    12.125
+  ], 
+  "bounds_in": [
+    -1.5312500596046448, 
+    -1.5, 
+    -1.3920247816569479e-23, 
+    1.5312500596046448, 
+    1.8750000000000004, 
+    12.125
+  ], 
+  "appearance_bindings": {
+    "Finish": {
+      "path": "E:\\Claude\\3D-Model-Workflow\\output\\1527_wieland\\plumbing_fixtures\\K-77685-NA\\textures\\Finish.png", 
+      "exists": true, 
+      "material_id": "3207"
+    }, 
+    "Gray": {
+      "path": "E:\\Claude\\3D-Model-Workflow\\output\\1527_wieland\\plumbing_fixtures\\K-77685-NA\\textures\\Gray.png", 
+      "exists": true, 
+      "material_id": "3210"
+    }
+  }, 
+  "rfa_path": "E:\\Claude\\3D-Model-Workflow\\output\\1527_wieland\\plumbing_fixtures\\K-77685-NA\\Kohler_K-77685-NA_R2025.rfa", 
+  "finished_utc": "2026-10-02T15:54:54.421000Z", 
+  "appearance_defaults": {
+    "Finish": {
+      "cct_k": null, 
+      "luminance": 0, 
+      "gloss": 0.17000000000000001, 
+      "rgb": [
+        242, 
+        243, 
+        240
+      ], 
+      "transparency": 0
+    }, 
+    "Gray": {
+      "cct_k": null, 
+      "luminance": 0, 
+      "gloss": 0.32000000000000001, 
+      "rgb": [
+        131, 
+        132, 
+        130
+      ], 
+      "transparency": 0
+    }
+  }, 
+  "evidence_files": [
+    "Kohler_K-77685-NA_R2025_Isolated - 3D View - Native Front.png", 
+    "Kohler_K-77685-NA_R2025_Isolated - 3D View - Native Material.png", 
+    "Kohler_K-77685-NA_R2025_Isolated - 3D View - Native Oblique.png", 
+    "Kohler_K-77685-NA_R2025_Isolated - 3D View - Native Side.png"
+  ], 
+  "display_bounds_in": [
+    -1.53125, 
+    -1.5, 
+    0.0, 
+    1.53125, 
+    1.8750000000000004, 
+    12.125
+  ], 
+  "source_spec_path": "E:\\Claude\\3D-Model-Workflow\\output\\1527_wieland\\plumbing_fixtures\\K-77685-NA\\source\\model_spec.json", 
+  "all_overall_dimensions_authoritative": true, 
+  "dimension_anchor_checks": [
+    {
+      "deviation_mm": 0.0, 
+      "nominal_mm": 307.97499999999997, 
+      "label": "Body height", 
+      "pass": true, 
+      "actual_mm": 307.97499999999997
+    }
+  ], 
+  "reopen_geometry_equal": true, 
+  "revit_version": "2025", 
+  "reopened_bounds_in": [
+    -1.5312500596046448, 
+    -1.5, 
+    -1.3920247816569479e-23, 
+    1.5312500596046448, 
+    1.8750000000000004, 
+    12.125
+  ], 
+  "project_warnings": [], 
+  "rfa_search": {
+    "result": "No acceptable no-account RFA recovered", 
+    "evidence": "_research/K-77685-NA/sources.json"
+  }, 
+  "limitations": [
+    "The two 24-inch connection tubes are installation-dependent and omitted from this rigid-body family.", 
+    "Cartridge/manifold split and small corner radii are drawing-derived.", 
+    "Independent visualization reconstruction with fixed product dimensions and editable native materials.", 
+    "Small fillets, seams, nozzle details and optical material response are inferred where the manufacturer does not dimension them.", 
+    "No internal hydraulic performance, MEP connectors, fabrication tolerances or procurement substitutions are implied."
+  ], 
+  "parts": [
+    {
+      "name": "Filter cartridge", 
+      "volume_ft3": 0.033025916931835528, 
+      "id": "3212"
+    }, 
+    {
+      "name": "Twist collar", 
+      "volume_ft3": 0.0026587667739669755, 
+      "id": "3213"
+    }, 
+    {
+      "name": "Rounded manifold cover", 
+      "volume_ft3": 0.017529791782762687, 
+      "id": "3214"
+    }, 
+    {
+      "name": "Back mounting bracket", 
+      "volume_ft3": 0.0022050977300935104, 
+      "id": "3215"
+    }
+  ], 
+  "category": "Plumbing Fixtures", 
+  "bounds_method": "Fine native face meshes plus 128-sample analytic edges", 
+  "type": "K-77685-NA - white", 
+  "native_gates_pass": true, 
+  "technical_pass": true, 
+  "native_path_checks": [], 
+  "reopened_warnings": [], 
+  "revit_build": "25.4.50.35", 
+  "actual_dimensions_after_reopen_mm": [
+    77.787503027915946, 
+    85.725000000000009, 
+    307.97499999999997
+  ]
+}

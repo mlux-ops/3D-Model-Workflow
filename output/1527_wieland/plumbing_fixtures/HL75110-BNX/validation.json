@@ -1,0 +1,196 @@
+{
+  "manufacturer": "Brizo", 
+  "visual_review": "PENDING_NATIVE_IMAGE_REVIEW", 
+  "gates": {
+    "dimensions": true, 
+    "category": true, 
+    "warnings": true, 
+    "reopened": true, 
+    "materials": true, 
+    "orientation": true, 
+    "cct": true, 
+    "reopen_geometry_equal": true, 
+    "diffuse_bitmaps": true, 
+    "actual_face_host": true, 
+    "views": true
+  }, 
+  "expected_dimensions_in": [
+    3.5, 
+    4.8125, 
+    4.125
+  ], 
+  "reopened_bounds_in": [
+    -2.2500000000000009, 
+    -2.6875, 
+    -3.8014325864969427e-23, 
+    1.2500000000000002, 
+    2.125, 
+    4.125
+  ], 
+  "finished_utc": "2026-10-02T15:27:38.095000Z", 
+  "source_references": [
+    {
+      "document": "Brizo BSP-B-T755110-LHP Rev A", 
+      "page": 1, 
+      "local_image": "_research/T755110-BNXLHP/downloads/T755110-BLLHP_Spec_pages/page_01.png", 
+      "url": "https://bravo.requested-info.com/brands/BRZ/documents/specSheets/T755110-BLLHP_Spec.pdf"
+    }
+  ], 
+  "rfa_search": {
+    "result": "No acceptable no-account RFA recovered", 
+    "evidence": "_research/HL75110-BNX/sources.json"
+  }, 
+  "source_spec_sha256": "5e8f477212de48446f34038e8f72308bb5252ba9c7e6879e2046db1a366d3819", 
+  "actual_dimensions_in": [
+    3.5000000000000009, 
+    4.8125, 
+    4.125
+  ], 
+  "evidence_files": [
+    "Brizo_HL75110-BNX_R2025_Isolated - 3D View - Native Front.png", 
+    "Brizo_HL75110-BNX_R2025_Isolated - 3D View - Native Material.png", 
+    "Brizo_HL75110-BNX_R2025_Isolated - 3D View - Native Oblique.png", 
+    "Brizo_HL75110-BNX_R2025_Isolated - 3D View - Native Side.png"
+  ], 
+  "bounds_method": "Fine native face meshes plus 128-sample analytic edges", 
+  "acceptance": "NATIVE_GATES_PASSED_PENDING_VISUAL_REVIEW", 
+  "bounds_in": [
+    -2.2500000000000009, 
+    -2.6875, 
+    -3.8014325864969427e-23, 
+    1.2500000000000002, 
+    2.125, 
+    4.125
+  ], 
+  "material_tests": {
+    "Finish": {
+      "writable": true, 
+      "face_count": 62, 
+      "substitution_reaches_faces": true
+    }
+  }, 
+  "appearance_bindings": {
+    "Finish": {
+      "material_id": "3207", 
+      "path": "E:\\Claude\\3D-Model-Workflow\\output\\1527_wieland\\plumbing_fixtures\\HL75110-BNX\\textures\\Finish.png", 
+      "exists": true
+    }
+  }, 
+  "all_overall_dimensions_authoritative": false, 
+  "category": "Plumbing Fixtures", 
+  "material_ids": {
+    "Finish": "3207"
+  }, 
+  "source_dimensions": [
+    "Lower handle projection 4.125 in; upper handle projection 2.4375 in; lever length 3.5 in; upper sleeve diameter 1.375 in."
+  ], 
+  "host": {
+    "normal_dot": 1.0, 
+    "host_kind": "wall", 
+    "instance_host_id": "3694", 
+    "hostface_present": true, 
+    "host_id": "3694"
+  }, 
+  "parts": [
+    {
+      "name": "Lower handle sleeve", 
+      "id": "3209", 
+      "volume_ft3": 0.0095868994253617071
+    }, 
+    {
+      "name": "Lower lever neck", 
+      "id": "3210", 
+      "volume_ft3": 0.00030003654515575571
+    }, 
+    {
+      "name": "Lower lever paddle", 
+      "id": "3211", 
+      "volume_ft3": 0.00045012620286831819
+    }, 
+    {
+      "name": "Upper handle sleeve", 
+      "id": "3212", 
+      "volume_ft3": 0.0014500185380859581
+    }, 
+    {
+      "name": "Upper lever neck", 
+      "id": "3213", 
+      "volume_ft3": 0.00030003654515575593
+    }, 
+    {
+      "name": "Upper lever paddle", 
+      "id": "3214", 
+      "volume_ft3": 0.0004501262028683176
+    }, 
+    {
+      "name": "Lower secondary temperature lever", 
+      "id": "3215", 
+      "volume_ft3": 0.00027566751266308381
+    }
+  ], 
+  "reopen_geometry_equal": true, 
+  "family_warnings": [], 
+  "source_spec_path": "E:\\Claude\\3D-Model-Workflow\\output\\1527_wieland\\plumbing_fixtures\\HL75110-BNX\\source\\model_spec.json", 
+  "inferences": "ASSUMPTION: control center spacing 2.875 in follows the companion trim drawing. | Kit origins are representative and require alignment with the installed trim; concealed mating surfaces are not fabrication geometry. | Secondary temperature lever depth and sleeve diameters are drawing-derived. | Independent visualization reconstruction with fixed product dimensions and editable native materials. | Small fillets, seams, nozzle details and optical material response are inferred where the manufacturer does not dimension them. | No internal hydraulic performance, MEP connectors, fabrication tolerances or procurement substitutions are implied.", 
+  "native_path_checks": [], 
+  "revit_build": "25.4.50.35", 
+  "rfa_path": "E:\\Claude\\3D-Model-Workflow\\output\\1527_wieland\\plumbing_fixtures\\HL75110-BNX\\Brizo_HL75110-BNX_R2025.rfa", 
+  "stage": "complete", 
+  "dimension_anchor_checks": [
+    {
+      "pass": true, 
+      "nominal_mm": 104.77499999999999, 
+      "deviation_mm": 0.0, 
+      "label": "Lower handle projection", 
+      "actual_mm": 104.77499999999999
+    }
+  ], 
+  "placement": "WorkPlaneBased", 
+  "reopened_warnings": [], 
+  "model": "HL75110-BNX", 
+  "project_warnings": [], 
+  "limitations": [
+    "ASSUMPTION: control center spacing 2.875 in follows the companion trim drawing.", 
+    "Kit origins are representative and require alignment with the installed trim; concealed mating surfaces are not fabrication geometry.", 
+    "Secondary temperature lever depth and sleeve diameters are drawing-derived.", 
+    "Independent visualization reconstruction with fixed product dimensions and editable native materials.", 
+    "Small fillets, seams, nozzle details and optical material response are inferred where the manufacturer does not dimension them.", 
+    "No internal hydraulic performance, MEP connectors, fabrication tolerances or procurement substitutions are implied."
+  ], 
+  "appearance_defaults": {
+    "Finish": {
+      "transparency": 0, 
+      "cct_k": null, 
+      "luminance": 0, 
+      "rgb": [
+        58, 
+        60, 
+        62
+      ], 
+      "gloss": 0.92000000000000004
+    }
+  }, 
+  "reopened": true, 
+  "cct_k": null, 
+  "type": "HL75110-BNX - Brilliance Black Onyx -  Black", 
+  "started_utc": "2026-10-02T15:27:34.748000Z", 
+  "native_gates_pass": true, 
+  "actual_dimensions_after_reopen_mm": [
+    88.900000000000020, 
+    122.23750000000000, 
+    104.77499999999999
+  ], 
+  "display_bounds_in": [
+    -2.2500000000000009, 
+    -2.6875, 
+    0.0, 
+    1.2500000000000004, 
+    2.125, 
+    4.125
+  ], 
+  "technical_pass": true, 
+  "revit_version": "2025", 
+  "template_form_ids": [
+    "1537"
+  ]
+}

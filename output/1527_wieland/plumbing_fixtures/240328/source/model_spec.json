@@ -1,0 +1,178 @@
+{
+  "key": "240328",
+  "model": "240328",
+  "manufacturer": "Blanco",
+  "type_name": "240328 - Black",
+  "basename": "Blanco_240328_R2025",
+  "name": "Disposal flange scheduled black visual variant",
+  "host": "floor",
+  "configured_dimensions_in": [
+    4.3,
+    4.3,
+    1
+  ],
+  "materials": {
+    "Finish": {
+      "rgb": [
+        20,
+        21,
+        22
+      ],
+      "gloss": 0.17,
+      "reflectivity": 0.1,
+      "class": "Metal"
+    },
+    "Detail": {
+      "rgb": [
+        24,
+        25,
+        26
+      ],
+      "gloss": 0.17,
+      "reflectivity": 0.04,
+      "class": "Plastic"
+    },
+    "Graphite": {
+      "rgb": [
+        64,
+        67,
+        69
+      ],
+      "gloss": 0.36,
+      "reflectivity": 0.16,
+      "class": "Glass"
+    },
+    "Ceramic": {
+      "rgb": [
+        245,
+        245,
+        241
+      ],
+      "gloss": 0.86,
+      "reflectivity": 0.22,
+      "class": "Ceramic"
+    },
+    "Brass": {
+      "rgb": [
+        160,
+        124,
+        64
+      ],
+      "gloss": 0.4,
+      "reflectivity": 0.38,
+      "class": "Metal"
+    },
+    "Green": {
+      "rgb": [
+        31,
+        113,
+        66
+      ],
+      "gloss": 0.18,
+      "reflectivity": 0.05,
+      "class": "Plastic"
+    },
+    "Gray": {
+      "rgb": [
+        131,
+        132,
+        130
+      ],
+      "gloss": 0.32,
+      "reflectivity": 0.12,
+      "class": "Plastic"
+    }
+  },
+  "geometry": [
+    {
+      "name": "Disposal opening collar",
+      "kind": "cylinder",
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "radius": 1.75,
+      "a": -0.9,
+      "b": -0.05,
+      "material": "Finish",
+      "inner_radius": 1.58
+    },
+    {
+      "name": "Flat sink flange",
+      "kind": "cylinder",
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "radius": 2.15,
+      "a": -0.08,
+      "b": 0.1,
+      "material": "Finish",
+      "inner_radius": 1.58
+    },
+    {
+      "name": "Inner dark seal",
+      "kind": "cylinder",
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "radius": 1.6,
+      "a": -0.85,
+      "b": -0.35,
+      "material": "Detail",
+      "inner_radius": 1.48
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://www.blanco.com/us/sinks/sink-accessories/strainers-and-drain-covers/",
+      "document": "BLANCO strainer and flange identities",
+      "page": 1,
+      "visual_review_method": "Manufacturer web PDF screenshot"
+    }
+  ],
+  "dimension_authority": [
+    "Manufacturer identifies compatibility with nominal 3.5-inch disposal openings."
+  ],
+  "limitations": [
+    "IDENTITY HOLD: 240328 is a White SKU, while the schedule requests Black. Black geometry is a visual variant only.",
+    "ASSUMPTION: outer rim 4.3 in, collar length 0.9 in and rim thickness 0.18 in are photo-derived; no exact dimensional cut sheet was recovered.",
+    "Independent visualization reconstruction with fixed product dimensions and editable native materials.",
+    "Small fillets, seams, nozzle details and optical material response are inferred where the manufacturer does not dimension them.",
+    "No internal hydraulic performance, MEP connectors, fabrication tolerances or procurement substitutions are implied."
+  ],
+  "anchors": [
+    {
+      "label": "Opening collar nominal OD",
+      "parts": [
+        "Disposal opening collar"
+      ],
+      "axis": 0,
+      "nominal_in": 3.5
+    }
+  ],
+  "all_overall_dimensions_authoritative": false,
+  "rfa_search": {
+    "result": "No acceptable no-account RFA recovered",
+    "evidence": "_research/240328/sources.json"
+  }
+}

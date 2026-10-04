@@ -1,0 +1,255 @@
+{
+  "companion_bitmaps": {
+    "Diffuser Finish": "E:\\Claude\\3D-Model-Workflow\\output\\1527_wieland\\electrical_fixtures\\SKL924074__1405002674995076\\source\\textures\\Diffuser_Finish.png", 
+    "Glass Finish": "E:\\Claude\\3D-Model-Workflow\\output\\1527_wieland\\electrical_fixtures\\SKL924074__1405002674995076\\source\\textures\\Glass_Finish.png", 
+    "Cord Finish": "E:\\Claude\\3D-Model-Workflow\\output\\1527_wieland\\electrical_fixtures\\SKL924074__1405002674995076\\source\\textures\\Cord_Finish.png", 
+    "Metal Finish": "E:\\Claude\\3D-Model-Workflow\\output\\1527_wieland\\electrical_fixtures\\SKL924074__1405002674995076\\source\\textures\\Metal_Finish.png"
+  }, 
+  "rfa_search": "Public manufacturer and reputable BIM resource searches retained. No exact acceptable anonymous native RFA accepted; see acquisition evidence.", 
+  "limitations": "Current June 2026 manufacturer drawing: 18-inch overall height, 5-inch width, 5.5-inch projection, 5-inch plate and 12-inch glass vessel. The free 3D download contains no RFA; its older handblown mesh is nonmanifold and wider than the current nominal. ASSUMPTION: smooth asymmetrical vessel profile, 3.5-inch glass depth, open handle and wall thickness are reconstructed from the current drawing and product photograph. Handblown glass dimensions and color naturally vary; individual article fidelity is not established.", 
+  "placement": "WorkPlaneBased", 
+  "manufacturer": "SkLO", 
+  "rfa_path": "E:\\Claude\\3D-Model-Workflow\\output\\1527_wieland\\electrical_fixtures\\SKL924074__1405002674995076\\SkLO_Hold12_LT267_White_Dark_Oxidized_R2025.rfa", 
+  "bounds_in": [
+    -2.4999999403953552, 
+    -9.0000000000000018, 
+    0.0, 
+    2.4999999403953552, 
+    9.0, 
+    5.4996750354766846
+  ], 
+  "saved_material_bitmaps": {
+    "Diffuser Finish": {
+      "exists": true, 
+      "path": "E:\\Claude\\3D-Model-Workflow\\output\\1527_wieland\\electrical_fixtures\\SKL924074__1405002674995076\\source\\textures\\Diffuser_Finish.png"
+    }, 
+    "Glass Finish": {
+      "exists": true, 
+      "path": "E:\\Claude\\3D-Model-Workflow\\output\\1527_wieland\\electrical_fixtures\\SKL924074__1405002674995076\\source\\textures\\Glass_Finish.png"
+    }, 
+    "Cord Finish": {
+      "exists": true, 
+      "path": "E:\\Claude\\3D-Model-Workflow\\output\\1527_wieland\\electrical_fixtures\\SKL924074__1405002674995076\\source\\textures\\Cord_Finish.png"
+    }, 
+    "Metal Finish": {
+      "exists": true, 
+      "path": "E:\\Claude\\3D-Model-Workflow\\output\\1527_wieland\\electrical_fixtures\\SKL924074__1405002674995076\\source\\textures\\Metal_Finish.png"
+    }
+  }, 
+  "display_bounds_in": [
+    -2.5000000000000004, 
+    -9.0000000000000018, 
+    0.0, 
+    2.5000000000000004, 
+    9.0, 
+    5.4997776992549614
+  ], 
+  "host": {
+    "host_id": "3705", 
+    "host_kind": "wall", 
+    "hostface_present": true, 
+    "normal_dot": 1.0, 
+    "instance_host_id": "3705"
+  }, 
+  "dimensional_error_mm": [
+    3.0279159545898436e-06, 
+    0.0, 
+    0.0082540988922119134
+  ], 
+  "source_url": "https://www.sklo.com/wp-content/uploads/2026/06/SkLO_Hold_12_Sconce_LT267_260609.pdf", 
+  "reopened_warnings": [], 
+  "category": "Lighting Fixtures", 
+  "gates": {
+    "views": true, 
+    "warnings": true, 
+    "reopened": true, 
+    "saved_bitmaps_resolve": true, 
+    "saved_radial_dimensions_within_1mm": true, 
+    "actual_face_host": true, 
+    "dimensions": true, 
+    "saved_components_within_1mm": true, 
+    "category": true, 
+    "cct": true, 
+    "saved_dimensions_within_1mm": true, 
+    "orientation": true, 
+    "materials": true
+  }, 
+  "parameter_scope": "Nominal product dimensions are fixed formulas. Editable material parameters were flexed on hosted native geometry and restored.", 
+  "model": "LT267WHTDX-BLK", 
+  "technical_pass": true, 
+  "parts": [
+    {
+      "volume_ft3": 0.0016976696402885888, 
+      "name": "5-inch wall plate", 
+      "id": "3217"
+    }, 
+    {
+      "volume_ft3": 0.0075867385207539426, 
+      "name": "Open handblown white vessel", 
+      "id": "3218"
+    }, 
+    {
+      "volume_ft3": 0.00046656472278704862, 
+      "name": "Continuous curved brass hook", 
+      "id": "3219"
+    }, 
+    {
+      "volume_ft3": 2.2724233527343979e-05, 
+      "name": "Suspended black cord", 
+      "id": "3220"
+    }, 
+    {
+      "volume_ft3": 0.00012687539488738918, 
+      "name": "Lamp socket", 
+      "id": "3221"
+    }, 
+    {
+      "volume_ft3": 0.00036815532443893584, 
+      "name": "Internal lamp", 
+      "id": "3222"
+    }
+  ], 
+  "project_warnings": [], 
+  "appearance_defaults": {
+    "Diffuser Finish": {
+      "gloss": 0.28000000000000003, 
+      "transparency": 0.050000000000000003, 
+      "rgb": [
+        245, 
+        245, 
+        240
+      ], 
+      "cct_k": null, 
+      "luminance": 0
+    }, 
+    "Glass Finish": {
+      "gloss": 0.59999999999999998, 
+      "transparency": 0.059999999999999998, 
+      "rgb": [
+        245, 
+        244, 
+        238
+      ], 
+      "cct_k": null, 
+      "luminance": 0
+    }, 
+    "Cord Finish": {
+      "gloss": 0.10000000000000001, 
+      "transparency": 0, 
+      "rgb": [
+        18, 
+        18, 
+        18
+      ], 
+      "cct_k": null, 
+      "luminance": 0
+    }, 
+    "Metal Finish": {
+      "gloss": 0.25, 
+      "transparency": 0, 
+      "rgb": [
+        47, 
+        42, 
+        35
+      ], 
+      "cct_k": null, 
+      "luminance": 0
+    }
+  }, 
+  "evidence_files": [
+    "SkLO_Hold12_LT267_White_Dark_Oxidized_R2025 - 3D View - Front.png", 
+    "SkLO_Hold12_LT267_White_Dark_Oxidized_R2025 - 3D View - Material.png", 
+    "SkLO_Hold12_LT267_White_Dark_Oxidized_R2025 - 3D View - Oblique.png", 
+    "SkLO_Hold12_LT267_White_Dark_Oxidized_R2025 - 3D View - Side.png", 
+    "SkLO_Hold12_LT267_White_Dark_Oxidized_R2025_Hosted - 3D View - Hosted.png", 
+    "SkLO_Hold12_LT267_White_Dark_Oxidized_R2025_Isolated - 3D View - Native Front.png", 
+    "SkLO_Hold12_LT267_White_Dark_Oxidized_R2025_Isolated - 3D View - Native Material.png", 
+    "SkLO_Hold12_LT267_White_Dark_Oxidized_R2025_Isolated - 3D View - Native Oblique.png", 
+    "SkLO_Hold12_LT267_White_Dark_Oxidized_R2025_Isolated - 3D View - Native Side.png"
+  ], 
+  "cct_k": null, 
+  "started_utc": "2026-10-02T15:40:42.028000Z", 
+  "actual_dimensions_in": [
+    4.9999998807907104, 
+    18.0, 
+    5.4996750354766846
+  ], 
+  "reopened": true, 
+  "finished_utc": "2026-10-02T15:40:58.815000Z", 
+  "measured_saved_dimensions_in": [
+    4.9999998807907104, 
+    18.0, 
+    5.4996750354766846
+  ], 
+  "family_warnings": [], 
+  "saved_file_reopened_for_measurement": true, 
+  "stage": "complete", 
+  "measured_saved_bounds_in": [
+    -2.4999999403953552, 
+    -9.0000000000000018, 
+    0.0, 
+    2.4999999403953552, 
+    9.0, 
+    5.4996750354766846
+  ], 
+  "expected_dimensions_in": [
+    5, 
+    18, 
+    5.5
+  ], 
+  "type": "LT267WHTDX-BLK", 
+  "inferences": "Current June 2026 manufacturer drawing: 18-inch overall height, 5-inch width, 5.5-inch projection, 5-inch plate and 12-inch glass vessel. The free 3D download contains no RFA; its older handblown mesh is nonmanifold and wider than the current nominal. ASSUMPTION: smooth asymmetrical vessel profile, 3.5-inch glass depth, open handle and wall thickness are reconstructed from the current drawing and product photograph. Handblown glass dimensions and color naturally vary; individual article fidelity is not established.", 
+  "bounds_method": "Fine native face meshes plus 128-sample analytic edges", 
+  "revit_build": "25.4.50.35", 
+  "material_tests": {
+    "Diffuser Finish": {
+      "face_count": 46, 
+      "writable": true, 
+      "substitution_reaches_faces": true
+    }, 
+    "Glass Finish": {
+      "face_count": 46, 
+      "writable": true, 
+      "substitution_reaches_faces": true
+    }, 
+    "Cord Finish": {
+      "face_count": 46, 
+      "writable": true, 
+      "substitution_reaches_faces": true
+    }, 
+    "Metal Finish": {
+      "face_count": 46, 
+      "writable": true, 
+      "substitution_reaches_faces": true
+    }
+  }, 
+  "component_checks": [
+    {
+      "element_ids": [
+        "3218"
+      ], 
+      "label": "12-inch glass vessel", 
+      "error_mm": [
+        0.0060618877410888667, 
+        4.5119463720766359e-14, 
+        0.022953116893768308
+      ], 
+      "expected_dimensions_in": [
+        5, 
+        12, 
+        3.5
+      ], 
+      "measured_dimensions_in": [
+        4.9997613430023193, 
+        12.000000000000002, 
+        3.4990963339805603
+      ], 
+      "pass": true, 
+      "source": "SkLO June 2026: width and height nominal; glass depth drawing-derived"
+    }
+  ], 
+  "template_form_ids": [
+    "1537"
+  ], 
+  "revit_version": "2025"
+}

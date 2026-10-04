@@ -1,0 +1,197 @@
+{
+  "host": {
+    "instance_host_id": "3696", 
+    "host_id": "3696", 
+    "host_kind": "floor", 
+    "hostface_present": true, 
+    "normal_dot": 1.0
+  }, 
+  "model": "240328", 
+  "source_dimensions": [
+    "Manufacturer identifies compatibility with nominal 3.5-inch disposal openings."
+  ], 
+  "inferences": "IDENTITY HOLD: 240328 is a White SKU, while the schedule requests Black. Black geometry is a visual variant only. | ASSUMPTION: outer rim 4.3 in, collar length 0.9 in and rim thickness 0.18 in are photo-derived; no exact dimensional cut sheet was recovered. | Independent visualization reconstruction with fixed product dimensions and editable native materials. | Small fillets, seams, nozzle details and optical material response are inferred where the manufacturer does not dimension them. | No internal hydraulic performance, MEP connectors, fabrication tolerances or procurement substitutions are implied.", 
+  "visual_review": "PENDING_NATIVE_IMAGE_REVIEW", 
+  "source_spec_sha256": "5ff329ad7263ab7ce2dd53901fd7826be2f8bd7332d657651bd36598f635c29b", 
+  "started_utc": "2026-10-02T15:55:03.653000Z", 
+  "template_form_ids": [
+    "1537"
+  ], 
+  "source_references": [
+    {
+      "visual_review_method": "Manufacturer web PDF screenshot", 
+      "document": "BLANCO strainer and flange identities", 
+      "page": 1, 
+      "url": "https://www.blanco.com/us/sinks/sink-accessories/strainers-and-drain-covers/"
+    }
+  ], 
+  "reopened": true, 
+  "gates": {
+    "actual_face_host": true, 
+    "reopened": true, 
+    "category": true, 
+    "diffuse_bitmaps": true, 
+    "warnings": true, 
+    "views": true, 
+    "dimensions": true, 
+    "reopen_geometry_equal": true, 
+    "materials": true, 
+    "cct": true, 
+    "orientation": true
+  }, 
+  "placement": "WorkPlaneBased", 
+  "material_tests": {
+    "Detail": {
+      "face_count": 30, 
+      "substitution_reaches_faces": true, 
+      "writable": true
+    }, 
+    "Finish": {
+      "face_count": 30, 
+      "substitution_reaches_faces": true, 
+      "writable": true
+    }
+  }, 
+  "acceptance": "NATIVE_GATES_PASSED_PENDING_VISUAL_REVIEW", 
+  "actual_dimensions_in": [
+    4.2999999999999998, 
+    4.2999999999999998, 
+    1.0000000409781933
+  ], 
+  "family_warnings": [], 
+  "cct_k": null, 
+  "stage": "complete", 
+  "manufacturer": "Blanco", 
+  "material_ids": {
+    "Detail": "3207", 
+    "Finish": "3210"
+  }, 
+  "expected_dimensions_in": [
+    4.2999999999999998, 
+    4.2999999999999998, 
+    1
+  ], 
+  "bounds_in": [
+    -2.1499999999999999, 
+    -2.1499999999999999, 
+    -0.90000003576278687, 
+    2.1499999999999999, 
+    2.1499999999999999, 
+    0.10000000521540642
+  ], 
+  "appearance_bindings": {
+    "Detail": {
+      "path": "E:\\Claude\\3D-Model-Workflow\\output\\1527_wieland\\plumbing_fixtures\\240328\\textures\\Detail.png", 
+      "exists": true, 
+      "material_id": "3207"
+    }, 
+    "Finish": {
+      "path": "E:\\Claude\\3D-Model-Workflow\\output\\1527_wieland\\plumbing_fixtures\\240328\\textures\\Finish.png", 
+      "exists": true, 
+      "material_id": "3210"
+    }
+  }, 
+  "rfa_path": "E:\\Claude\\3D-Model-Workflow\\output\\1527_wieland\\plumbing_fixtures\\240328\\Blanco_240328_R2025.rfa", 
+  "finished_utc": "2026-10-02T15:55:06.198000Z", 
+  "appearance_defaults": {
+    "Detail": {
+      "cct_k": null, 
+      "luminance": 0, 
+      "gloss": 0.17000000000000001, 
+      "rgb": [
+        24, 
+        25, 
+        26
+      ], 
+      "transparency": 0
+    }, 
+    "Finish": {
+      "cct_k": null, 
+      "luminance": 0, 
+      "gloss": 0.17000000000000001, 
+      "rgb": [
+        20, 
+        21, 
+        22
+      ], 
+      "transparency": 0
+    }
+  }, 
+  "evidence_files": [
+    "Blanco_240328_R2025_Isolated - 3D View - Native Front.png", 
+    "Blanco_240328_R2025_Isolated - 3D View - Native Material.png", 
+    "Blanco_240328_R2025_Isolated - 3D View - Native Oblique.png", 
+    "Blanco_240328_R2025_Isolated - 3D View - Native Side.png"
+  ], 
+  "display_bounds_in": [
+    -2.1499999999999999, 
+    -2.1499999999999999, 
+    -0.89999999999999991, 
+    2.1499999999999999, 
+    2.1499999999999999, 
+    0.099999999999999978
+  ], 
+  "source_spec_path": "E:\\Claude\\3D-Model-Workflow\\output\\1527_wieland\\plumbing_fixtures\\240328\\source\\model_spec.json", 
+  "all_overall_dimensions_authoritative": false, 
+  "dimension_anchor_checks": [
+    {
+      "deviation_mm": 0.0, 
+      "nominal_mm": 88.899999999999991, 
+      "label": "Opening collar nominal OD", 
+      "pass": true, 
+      "actual_mm": 88.899999999999991
+    }
+  ], 
+  "reopen_geometry_equal": true, 
+  "revit_version": "2025", 
+  "reopened_bounds_in": [
+    -2.1499999999999999, 
+    -2.1499999999999999, 
+    -0.90000003576278687, 
+    2.1499999999999999, 
+    2.1499999999999999, 
+    0.10000000521540642
+  ], 
+  "project_warnings": [], 
+  "rfa_search": {
+    "result": "No acceptable no-account RFA recovered", 
+    "evidence": "_research/240328/sources.json"
+  }, 
+  "limitations": [
+    "IDENTITY HOLD: 240328 is a White SKU, while the schedule requests Black. Black geometry is a visual variant only.", 
+    "ASSUMPTION: outer rim 4.3 in, collar length 0.9 in and rim thickness 0.18 in are photo-derived; no exact dimensional cut sheet was recovered.", 
+    "Independent visualization reconstruction with fixed product dimensions and editable native materials.", 
+    "Small fillets, seams, nozzle details and optical material response are inferred where the manufacturer does not dimension them.", 
+    "No internal hydraulic performance, MEP connectors, fabrication tolerances or procurement substitutions are implied."
+  ], 
+  "parts": [
+    {
+      "name": "Disposal opening collar", 
+      "volume_ft3": 0.00087477517273935315, 
+      "id": "3212"
+    }, 
+    {
+      "name": "Flat sink flange", 
+      "volume_ft3": 0.00069572972776999376, 
+      "id": "3213"
+    }, 
+    {
+      "name": "Inner dark seal", 
+      "volume_ft3": 0.00033595904261818772, 
+      "id": "3214"
+    }
+  ], 
+  "category": "Plumbing Fixtures", 
+  "bounds_method": "Fine native face meshes plus 128-sample analytic edges", 
+  "type": "240328 - Black", 
+  "native_gates_pass": true, 
+  "technical_pass": true, 
+  "native_path_checks": [], 
+  "reopened_warnings": [], 
+  "revit_build": "25.4.50.35", 
+  "actual_dimensions_after_reopen_mm": [
+    109.21999999999998, 
+    109.21999999999998, 
+    25.400001040846107
+  ]
+}

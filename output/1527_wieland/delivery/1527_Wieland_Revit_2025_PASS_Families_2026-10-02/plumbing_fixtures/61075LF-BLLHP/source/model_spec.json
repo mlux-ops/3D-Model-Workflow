@@ -1,0 +1,252 @@
+{
+  "key": "61075LF-BLLHP",
+  "model": "61075LF-BLLHP",
+  "manufacturer": "Brizo",
+  "type_name": "61075LF-BLLHP - Matte Black -  Black",
+  "basename": "Brizo_61075LF-BLLHP_R2025",
+  "name": "Odin bar faucet, less handle",
+  "host": "floor",
+  "configured_dimensions_in": [
+    3.6875,
+    7.625,
+    11.625
+  ],
+  "materials": {
+    "Finish": {
+      "rgb": [
+        20,
+        21,
+        22
+      ],
+      "gloss": 0.17,
+      "reflectivity": 0.1,
+      "class": "Metal"
+    },
+    "Detail": {
+      "rgb": [
+        24,
+        25,
+        26
+      ],
+      "gloss": 0.17,
+      "reflectivity": 0.04,
+      "class": "Plastic"
+    },
+    "Graphite": {
+      "rgb": [
+        64,
+        67,
+        69
+      ],
+      "gloss": 0.36,
+      "reflectivity": 0.16,
+      "class": "Glass"
+    },
+    "Ceramic": {
+      "rgb": [
+        245,
+        245,
+        241
+      ],
+      "gloss": 0.86,
+      "reflectivity": 0.22,
+      "class": "Ceramic"
+    },
+    "Brass": {
+      "rgb": [
+        160,
+        124,
+        64
+      ],
+      "gloss": 0.4,
+      "reflectivity": 0.38,
+      "class": "Metal"
+    },
+    "Green": {
+      "rgb": [
+        31,
+        113,
+        66
+      ],
+      "gloss": 0.18,
+      "reflectivity": 0.05,
+      "class": "Plastic"
+    },
+    "Gray": {
+      "rgb": [
+        131,
+        132,
+        130
+      ],
+      "gloss": 0.32,
+      "reflectivity": 0.12,
+      "class": "Plastic"
+    }
+  },
+  "geometry": [
+    {
+      "name": "Round base",
+      "kind": "cylinder",
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "radius": 1.1875,
+      "a": 0,
+      "b": 0.1875,
+      "material": "Finish"
+    },
+    {
+      "name": "Valve body",
+      "kind": "cylinder",
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "radius": 0.78,
+      "a": 0.15,
+      "b": 4.7,
+      "material": "Finish"
+    },
+    {
+      "name": "Side cartridge hub",
+      "kind": "cylinder",
+      "origin": [
+        0,
+        0,
+        3.5
+      ],
+      "axis": [
+        1,
+        0,
+        0
+      ],
+      "radius": 0.79,
+      "a": 0.5,
+      "b": 2.35,
+      "material": "Finish"
+    },
+    {
+      "name": "Exposed handle spindle",
+      "kind": "cylinder",
+      "origin": [
+        0,
+        0,
+        3.5
+      ],
+      "axis": [
+        1,
+        0,
+        0
+      ],
+      "radius": 0.2,
+      "a": 2.25,
+      "b": 2.5,
+      "material": "Brass"
+    },
+    {
+      "name": "Continuous arc spout",
+      "kind": "sweep",
+      "path": [
+        [
+          0,
+          0,
+          4.65
+        ],
+        [
+          0,
+          0,
+          8.1875
+        ],
+        [
+          "arc",
+          [
+            0,
+            -3,
+            11.1875
+          ],
+          [
+            0,
+            -5.994134891750871,
+            8.375
+          ]
+        ]
+      ],
+      "radius": 0.4375,
+      "material": "Finish"
+    },
+    {
+      "name": "Dark aerator",
+      "kind": "cylinder",
+      "origin": [
+        0,
+        -5.994134891750871,
+        8.375
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "radius": 0.34,
+      "a": 0,
+      "b": 0.04,
+      "material": "Detail"
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://assets.specbooks.cloud/brand/brizo/spec/7646847/document/spec-sb-sccscf.pdf",
+      "document": "Brizo BSP-K-61075LF-LHP Rev C",
+      "page": 1,
+      "local_image": "_research/61075LF-BLLHP/downloads/spec-sb-sccscf_pages/page_01.png"
+    }
+  ],
+  "dimension_authority": [
+    "Overall height 11.625 in, nominal spout reach 6 in, outlet center height 8.375 in, base diameter 2.375 in."
+  ],
+  "limitations": [
+    "Below-deck shank and supply tubing are omitted.",
+    "Body and tube diameters are drawing-derived; spout endpoint follows the printed outlet height with a continuous tangent arc.",
+    "The separate HLB175 handle is intentionally absent from this less-handle SKU.",
+    "Independent visualization reconstruction with fixed product dimensions and editable native materials.",
+    "Small fillets, seams, nozzle details and optical material response are inferred where the manufacturer does not dimension them.",
+    "No internal hydraulic performance, MEP connectors, fabrication tolerances or procurement substitutions are implied."
+  ],
+  "anchors": [
+    {
+      "label": "Faucet height",
+      "parts": [
+        "Round base",
+        "Continuous arc spout"
+      ],
+      "axis": 2,
+      "nominal_in": 11.625
+    },
+    {
+      "label": "Base diameter",
+      "parts": [
+        "Round base"
+      ],
+      "axis": 0,
+      "nominal_in": 2.375
+    }
+  ],
+  "all_overall_dimensions_authoritative": false,
+  "rfa_search": {
+    "result": "No acceptable no-account RFA recovered",
+    "evidence": "_research/61075LF-BLLHP/sources.json"
+  }
+}

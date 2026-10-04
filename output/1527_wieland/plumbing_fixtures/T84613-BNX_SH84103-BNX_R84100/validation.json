@@ -1,0 +1,400 @@
+{
+  "host": {
+    "instance_host_id": "3734", 
+    "host_id": "3734", 
+    "host_kind": "wall", 
+    "hostface_present": true, 
+    "normal_dot": 1.0
+  }, 
+  "model": "T84613-BNX, SH84103-BNX , R84100", 
+  "source_dimensions": [
+    "Trim diameter 3.5 in and face projection 0.40625 in: manufacturer trim drawing."
+  ], 
+  "inferences": "Historical body-spray row remains descoped; modeling does not restore procurement scope. | SH84103 spray face and R84100 concealed housing are simplified inferred geometry; only trim dimensions are independently verified. | Spray is shown in a neutral fixed pose; dynamic pop-out motion is not modeled. | Independent visualization reconstruction with fixed product dimensions and editable native materials. | Small fillets, seams, nozzle details and optical material response are inferred where the manufacturer does not dimension them. | No internal hydraulic performance, MEP connectors, fabrication tolerances or procurement substitutions are implied.", 
+  "visual_review": "PENDING_NATIVE_IMAGE_REVIEW", 
+  "source_spec_sha256": "e9b3b23d80eef82064546303b64c75f62cd95f5b7a54e2bfdf33c60eb9292177", 
+  "started_utc": "2026-10-02T15:55:29.740000Z", 
+  "template_form_ids": [
+    "1537"
+  ], 
+  "source_references": [
+    {
+      "visual_review_method": "Manufacturer web PDF screenshot", 
+      "document": "Brizo HydraChoice T84613 Rev D", 
+      "page": 1, 
+      "url": "https://media.brizo.com/SpecSheet/BSP-B-T84613%20Rev%20D.pdf"
+    }
+  ], 
+  "reopened": true, 
+  "gates": {
+    "actual_face_host": true, 
+    "reopened": true, 
+    "category": true, 
+    "diffuse_bitmaps": true, 
+    "warnings": true, 
+    "views": true, 
+    "dimensions": true, 
+    "reopen_geometry_equal": true, 
+    "materials": true, 
+    "cct": true, 
+    "orientation": true
+  }, 
+  "placement": "WorkPlaneBased", 
+  "material_tests": {
+    "Detail": {
+      "face_count": 238, 
+      "substitution_reaches_faces": true, 
+      "writable": true
+    }, 
+    "Brass": {
+      "face_count": 238, 
+      "substitution_reaches_faces": true, 
+      "writable": true
+    }, 
+    "Finish": {
+      "face_count": 238, 
+      "substitution_reaches_faces": true, 
+      "writable": true
+    }
+  }, 
+  "acceptance": "NATIVE_GATES_PASSED_PENDING_VISUAL_REVIEW", 
+  "actual_dimensions_in": [
+    3.5, 
+    3.5, 
+    3.7700001668930057
+  ], 
+  "family_warnings": [], 
+  "cct_k": null, 
+  "stage": "complete", 
+  "manufacturer": "Brizo", 
+  "material_ids": {
+    "Detail": "3210", 
+    "Brass": "3207", 
+    "Finish": "3213"
+  }, 
+  "expected_dimensions_in": [
+    3.5, 
+    3.5, 
+    3.7700000000000000
+  ], 
+  "bounds_in": [
+    -1.75, 
+    -1.75, 
+    -3.2000001668930054, 
+    1.75, 
+    1.75, 
+    0.57000000000000006
+  ], 
+  "appearance_bindings": {
+    "Detail": {
+      "path": "E:\\Claude\\3D-Model-Workflow\\output\\1527_wieland\\plumbing_fixtures\\T84613-BNX_SH84103-BNX_R84100\\textures\\Detail.png", 
+      "exists": true, 
+      "material_id": "3210"
+    }, 
+    "Brass": {
+      "path": "E:\\Claude\\3D-Model-Workflow\\output\\1527_wieland\\plumbing_fixtures\\T84613-BNX_SH84103-BNX_R84100\\textures\\Brass.png", 
+      "exists": true, 
+      "material_id": "3207"
+    }, 
+    "Finish": {
+      "path": "E:\\Claude\\3D-Model-Workflow\\output\\1527_wieland\\plumbing_fixtures\\T84613-BNX_SH84103-BNX_R84100\\textures\\Finish.png", 
+      "exists": true, 
+      "material_id": "3213"
+    }
+  }, 
+  "rfa_path": "E:\\Claude\\3D-Model-Workflow\\output\\1527_wieland\\plumbing_fixtures\\T84613-BNX_SH84103-BNX_R84100\\Brizo_T84613-BNX_SH84103-BNX_R84100_R2025.rfa", 
+  "finished_utc": "2026-10-02T15:55:33.383000Z", 
+  "appearance_defaults": {
+    "Detail": {
+      "cct_k": null, 
+      "luminance": 0, 
+      "gloss": 0.17000000000000001, 
+      "rgb": [
+        24, 
+        25, 
+        26
+      ], 
+      "transparency": 0
+    }, 
+    "Brass": {
+      "cct_k": null, 
+      "luminance": 0, 
+      "gloss": 0.40000000000000002, 
+      "rgb": [
+        160, 
+        124, 
+        64
+      ], 
+      "transparency": 0
+    }, 
+    "Finish": {
+      "cct_k": null, 
+      "luminance": 0, 
+      "gloss": 0.92000000000000004, 
+      "rgb": [
+        58, 
+        60, 
+        62
+      ], 
+      "transparency": 0
+    }
+  }, 
+  "evidence_files": [
+    "Brizo_T84613-BNX_SH84103-BNX_R84100_R2025_Isolated - 3D View - Native Front.png", 
+    "Brizo_T84613-BNX_SH84103-BNX_R84100_R2025_Isolated - 3D View - Native Material.png", 
+    "Brizo_T84613-BNX_SH84103-BNX_R84100_R2025_Isolated - 3D View - Native Oblique.png", 
+    "Brizo_T84613-BNX_SH84103-BNX_R84100_R2025_Isolated - 3D View - Native Side.png"
+  ], 
+  "display_bounds_in": [
+    -1.75, 
+    -1.75, 
+    -3.2000000000000002, 
+    1.75, 
+    1.75, 
+    0.57000000000000006
+  ], 
+  "source_spec_path": "E:\\Claude\\3D-Model-Workflow\\output\\1527_wieland\\plumbing_fixtures\\T84613-BNX_SH84103-BNX_R84100\\source\\model_spec.json", 
+  "all_overall_dimensions_authoritative": false, 
+  "dimension_anchor_checks": [
+    {
+      "deviation_mm": 0.0, 
+      "nominal_mm": 88.899999999999991, 
+      "label": "Trim diameter", 
+      "pass": true, 
+      "actual_mm": 88.899999999999991
+    }
+  ], 
+  "reopen_geometry_equal": true, 
+  "revit_version": "2025", 
+  "reopened_bounds_in": [
+    -1.75, 
+    -1.75, 
+    -3.2000001668930054, 
+    1.75, 
+    1.75, 
+    0.57000000000000006
+  ], 
+  "project_warnings": [], 
+  "rfa_search": {
+    "result": "No acceptable no-account RFA recovered", 
+    "evidence": "_research/T84613-BNX_SH84103-BNX_R84100/sources.json"
+  }, 
+  "limitations": [
+    "Historical body-spray row remains descoped; modeling does not restore procurement scope.", 
+    "SH84103 spray face and R84100 concealed housing are simplified inferred geometry; only trim dimensions are independently verified.", 
+    "Spray is shown in a neutral fixed pose; dynamic pop-out motion is not modeled.", 
+    "Independent visualization reconstruction with fixed product dimensions and editable native materials.", 
+    "Small fillets, seams, nozzle details and optical material response are inferred where the manufacturer does not dimension them.", 
+    "No internal hydraulic performance, MEP connectors, fabrication tolerances or procurement substitutions are implied."
+  ], 
+  "parts": [
+    {
+      "name": "Round trim", 
+      "volume_ft3": 0.0022617981236871879, 
+      "id": "3215"
+    }, 
+    {
+      "name": "Inset spray holder", 
+      "volume_ft3": 0.00011001567869633219, 
+      "id": "3216"
+    }, 
+    {
+      "name": "Full spray face", 
+      "volume_ft3": 8.7191188544430962e-05, 
+      "id": "3217"
+    }, 
+    {
+      "name": "Concealed rough housing", 
+      "volume_ft3": 0.01053607916366792, 
+      "id": "3218"
+    }, 
+    {
+      "name": "Rough inlet", 
+      "volume_ft3": 0.00018209598216369403, 
+      "id": "3219"
+    }, 
+    {
+      "name": "Spray nozzle 0.25 0", 
+      "volume_ft3": 2.7271087217293967e-07, 
+      "id": "3220"
+    }, 
+    {
+      "name": "Spray nozzle 0.25 1", 
+      "volume_ft3": 2.7271087217293967e-07, 
+      "id": "3221"
+    }, 
+    {
+      "name": "Spray nozzle 0.25 2", 
+      "volume_ft3": 2.7271087217293967e-07, 
+      "id": "3222"
+    }, 
+    {
+      "name": "Spray nozzle 0.25 3", 
+      "volume_ft3": 2.7271087217293967e-07, 
+      "id": "3223"
+    }, 
+    {
+      "name": "Spray nozzle 0.25 4", 
+      "volume_ft3": 2.7271087217293967e-07, 
+      "id": "3224"
+    }, 
+    {
+      "name": "Spray nozzle 0.25 5", 
+      "volume_ft3": 2.7271087217293967e-07, 
+      "id": "3225"
+    }, 
+    {
+      "name": "Spray nozzle 0.48 0", 
+      "volume_ft3": 2.7271087217293972e-07, 
+      "id": "3226"
+    }, 
+    {
+      "name": "Spray nozzle 0.48 1", 
+      "volume_ft3": 2.7271087217293967e-07, 
+      "id": "3227"
+    }, 
+    {
+      "name": "Spray nozzle 0.48 2", 
+      "volume_ft3": 2.7271087217293967e-07, 
+      "id": "3228"
+    }, 
+    {
+      "name": "Spray nozzle 0.48 3", 
+      "volume_ft3": 2.7271087217293967e-07, 
+      "id": "3229"
+    }, 
+    {
+      "name": "Spray nozzle 0.48 4", 
+      "volume_ft3": 2.7271087217293972e-07, 
+      "id": "3230"
+    }, 
+    {
+      "name": "Spray nozzle 0.48 5", 
+      "volume_ft3": 2.7271087217293967e-07, 
+      "id": "3231"
+    }, 
+    {
+      "name": "Spray nozzle 0.48 6", 
+      "volume_ft3": 2.7271087217293972e-07, 
+      "id": "3232"
+    }, 
+    {
+      "name": "Spray nozzle 0.48 7", 
+      "volume_ft3": 2.7271087217293967e-07, 
+      "id": "3233"
+    }, 
+    {
+      "name": "Spray nozzle 0.48 8", 
+      "volume_ft3": 2.7271087217293967e-07, 
+      "id": "3234"
+    }, 
+    {
+      "name": "Spray nozzle 0.48 9", 
+      "volume_ft3": 2.7271087217293967e-07, 
+      "id": "3235"
+    }, 
+    {
+      "name": "Spray nozzle 0.48 10", 
+      "volume_ft3": 2.7271087217293967e-07, 
+      "id": "3236"
+    }, 
+    {
+      "name": "Spray nozzle 0.48 11", 
+      "volume_ft3": 2.7271087217293967e-07, 
+      "id": "3237"
+    }, 
+    {
+      "name": "Spray nozzle 0.64 0", 
+      "volume_ft3": 2.7271087217293972e-07, 
+      "id": "3238"
+    }, 
+    {
+      "name": "Spray nozzle 0.64 1", 
+      "volume_ft3": 2.7271087217293967e-07, 
+      "id": "3239"
+    }, 
+    {
+      "name": "Spray nozzle 0.64 2", 
+      "volume_ft3": 2.7271087217293972e-07, 
+      "id": "3240"
+    }, 
+    {
+      "name": "Spray nozzle 0.64 3", 
+      "volume_ft3": 2.7271087217293967e-07, 
+      "id": "3241"
+    }, 
+    {
+      "name": "Spray nozzle 0.64 4", 
+      "volume_ft3": 2.7271087217293967e-07, 
+      "id": "3242"
+    }, 
+    {
+      "name": "Spray nozzle 0.64 5", 
+      "volume_ft3": 2.7271087217293967e-07, 
+      "id": "3243"
+    }, 
+    {
+      "name": "Spray nozzle 0.64 6", 
+      "volume_ft3": 2.7271087217293972e-07, 
+      "id": "3244"
+    }, 
+    {
+      "name": "Spray nozzle 0.64 7", 
+      "volume_ft3": 2.7271087217293967e-07, 
+      "id": "3245"
+    }, 
+    {
+      "name": "Spray nozzle 0.64 8", 
+      "volume_ft3": 2.7271087217293972e-07, 
+      "id": "3246"
+    }, 
+    {
+      "name": "Spray nozzle 0.64 9", 
+      "volume_ft3": 2.7271087217293967e-07, 
+      "id": "3247"
+    }, 
+    {
+      "name": "Spray nozzle 0.64 10", 
+      "volume_ft3": 2.7271087217293967e-07, 
+      "id": "3248"
+    }, 
+    {
+      "name": "Spray nozzle 0.64 11", 
+      "volume_ft3": 2.7271087217293967e-07, 
+      "id": "3249"
+    }, 
+    {
+      "name": "Spray nozzle 0.64 12", 
+      "volume_ft3": 2.7271087217293967e-07, 
+      "id": "3250"
+    }, 
+    {
+      "name": "Spray nozzle 0.64 13", 
+      "volume_ft3": 2.7271087217293972e-07, 
+      "id": "3251"
+    }, 
+    {
+      "name": "Spray nozzle 0.64 14", 
+      "volume_ft3": 2.7271087217293967e-07, 
+      "id": "3252"
+    }, 
+    {
+      "name": "Spray nozzle 0.64 15", 
+      "volume_ft3": 2.7271087217293967e-07, 
+      "id": "3253"
+    }
+  ], 
+  "category": "Plumbing Fixtures", 
+  "bounds_method": "Fine native face meshes plus 128-sample analytic edges", 
+  "type": "T84613-BNX, SH84103-BNX , R84100 - onyx", 
+  "native_gates_pass": true, 
+  "technical_pass": true, 
+  "native_path_checks": [], 
+  "reopened_warnings": [], 
+  "revit_build": "25.4.50.35", 
+  "actual_dimensions_after_reopen_mm": [
+    88.899999999999991, 
+    88.899999999999991, 
+    95.758004239082339
+  ]
+}

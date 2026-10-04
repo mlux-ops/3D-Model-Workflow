@@ -1,0 +1,65 @@
+{
+  "group_key": "R35000-WS", 
+  "warnings": [], 
+  "bbox_extents_mm": {
+    "size_mm_xyz": [
+      177.80000000000001, 
+      125.41249999999999, 
+      89.408000000000001
+    ], 
+    "min_ft": [
+      -0.29166666666666669, 
+      -0.20572916666666666, 
+      0.014999999999999999
+    ], 
+    "max_ft": [
+      0.29166666666666669, 
+      0.20572916666666666, 
+      0.30833333333333335
+    ]
+  }, 
+  "is_family_document": true, 
+  "bbox_element_count": 7, 
+  "expected_dimensions_mm": [
+    177.79999999999998, 
+    125.41249999999999, 
+    88.899999999999991
+  ], 
+  "category": "Plumbing Fixtures", 
+  "section": "plumbing_fixtures", 
+  "dimension_compare": {
+    "all_authoritative_axes_within_1mm": true, 
+    "authoritative_axis_count": 3, 
+    "axes": [
+      {
+        "pass": true, 
+        "axis": 0, 
+        "expected_mm": 177.79999999999998, 
+        "actual_mm": 177.80000000000001, 
+        "error_mm": 2.8421709430404007e-14
+      }, 
+      {
+        "pass": true, 
+        "axis": 1, 
+        "expected_mm": 125.41249999999999, 
+        "actual_mm": 125.41249999999999, 
+        "error_mm": 0.0
+      }, 
+      {
+        "pass": true, 
+        "axis": 2, 
+        "expected_mm": 88.899999999999991, 
+        "actual_mm": 89.408000000000001, 
+        "error_mm": 0.50800000000000978
+      }
+    ]
+  }, 
+  "category_match": true, 
+  "rfa": "E:\\Claude\\3D-Model-Workflow\\output\\1527_wieland\\plumbing_fixtures\\R35000-WS\\Brizo_R35000-WS_R2025.rfa", 
+  "expected_category": "Plumbing Fixtures", 
+  "validation_path": "E:\\Claude\\3D-Model-Workflow\\output\\1527_wieland\\plumbing_fixtures\\R35000-WS\\validation.json", 
+  "stage": "measured", 
+  "row_ids": [
+    "196190200856452"
+  ]
+}

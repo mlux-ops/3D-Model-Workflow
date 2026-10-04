@@ -1,0 +1,53 @@
+{
+  "model": "T42IT100NP",
+  "slug": "thermador_t42it100np",
+  "status": "BUILT_WITH_LIMITATIONS",
+  "rfa": "thermador_t42it100np/thermador_t42it100np_Custom_R1_R2025.rfa",
+  "rfa_bytes": 507904,
+  "rfa_sha256": "2031192ec11e938be2c0d36e8e149919182866dc7af186aadf253e5146fa2be2",
+  "row_ids": [
+    7829128394243972
+  ],
+  "source_urls": [
+    "https://www.thermador.com/us/en/mkt-product/refrigeration/bottom-freezer-refrigerators/T42IT100NP",
+    "https://media3.bsh-group.com/3D_Asset/22537542_T42IT100NP_TradeCADs.zip",
+    "https://media3.bsh-group.com/Documents/25549017_T42IT100NP-42-INCH-BUILT-IN-FRENCH-DOOR_REFRIGERATOR-2-DRAWER-PANEL-READY-Specifications.pdf"
+  ],
+  "original_rfas": [
+    {
+      "path": "thermador_t42it100np/source/original/T42BT110NS_TradeCAD_2D.rfa",
+      "sha256": "589b89df59fad2f6bf02ee2e9c986f19895ea73c0bfa0c90a60ef5aeb5c18647"
+    },
+    {
+      "path": "thermador_t42it100np/source/original/T42IT100NP_TradeCAD.rfa",
+      "sha256": "c883036f8c06768a6e44f2a95cc2e647c8f422352b731a7b350f0ab8f8b30335"
+    }
+  ],
+  "validation": "thermador_t42it100np/validation.json",
+  "previews": [
+    "thermador_t42it100np/views/rework_r1/oblique - 3D View - oblique.png",
+    "thermador_t42it100np/views/rework_r1/front - 3D View - front.png",
+    "thermador_t42it100np/views/rework_r1/side - 3D View - side.png"
+  ],
+  "revision": "Custom_R1",
+  "build_method": "native_custom_new_family",
+  "dimension_gate": true,
+  "dimension_gate_scope": "overall",
+  "native_gates_pass": true,
+  "replacement_reason": "Orchestrator round 1: exact-identity manufacturer working family fails the <=1 mm complete overall dimension gate. New native custom geometry replaces the working selection; OEM originals and prior working RFA remain preserved.",
+  "superseded_working_rfa": {
+    "path": "thermador_t42it100np/thermador_t42it100np_R2025.rfa",
+    "sha256": "41a0d65b3a5640a1b23f6b3e0fc1787e0d60b708caa0cd3a625e85b980ce06f1",
+    "status": "DOWNLOADED"
+  },
+  "source_pdf_sha256": "b5571a589d7f07bb8107b4738a8a74eeba0a33337bf2bcd76134309913e2b709",
+  "source_page": 4,
+  "custom_build_entry": "thermador_t42it100np/source/build.py",
+  "build_support": [
+    "rework_round1/native_rebuild.py",
+    "rework_round1/validate_native.py",
+    "family_common.py"
+  ],
+  "validation_native_record": "thermador_t42it100np/source/rework_r1/validation.json",
+  "validation_sha256": "642ac7f894e30ea670b5e486b39c2596a746c5b5102e06f4a7b4f92b0e688479"
+}

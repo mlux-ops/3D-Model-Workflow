@@ -1,0 +1,224 @@
+{
+  "key": "THU842_01-A",
+  "model": "THU842#01-A",
+  "manufacturer": "TOTO",
+  "type_name": "THU842#01-A - white",
+  "basename": "TOTO_THU842_01-A_R2025",
+  "name": "Aquia IV push-button and adjustable rods, indicative geometry",
+  "host": "floor",
+  "configured_dimensions_in": [
+    1.86,
+    1.86,
+    5.68
+  ],
+  "materials": {
+    "Finish": {
+      "rgb": [
+        242,
+        243,
+        240
+      ],
+      "gloss": 0.17,
+      "reflectivity": 0.06,
+      "class": "Plastic"
+    },
+    "Detail": {
+      "rgb": [
+        24,
+        25,
+        26
+      ],
+      "gloss": 0.17,
+      "reflectivity": 0.04,
+      "class": "Plastic"
+    },
+    "Graphite": {
+      "rgb": [
+        64,
+        67,
+        69
+      ],
+      "gloss": 0.36,
+      "reflectivity": 0.16,
+      "class": "Glass"
+    },
+    "Ceramic": {
+      "rgb": [
+        245,
+        245,
+        241
+      ],
+      "gloss": 0.86,
+      "reflectivity": 0.22,
+      "class": "Ceramic"
+    },
+    "Brass": {
+      "rgb": [
+        160,
+        124,
+        64
+      ],
+      "gloss": 0.4,
+      "reflectivity": 0.38,
+      "class": "Metal"
+    },
+    "Green": {
+      "rgb": [
+        31,
+        113,
+        66
+      ],
+      "gloss": 0.18,
+      "reflectivity": 0.05,
+      "class": "Plastic"
+    },
+    "Gray": {
+      "rgb": [
+        131,
+        132,
+        130
+      ],
+      "gloss": 0.32,
+      "reflectivity": 0.12,
+      "class": "Plastic"
+    }
+  },
+  "geometry": [
+    {
+      "name": "Circular button bezel",
+      "kind": "cylinder",
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "radius": 0.93,
+      "a": -0.18,
+      "b": 0.11,
+      "material": "Finish",
+      "inner_radius": 0.8
+    },
+    {
+      "name": "Button mounting sleeve",
+      "kind": "cylinder",
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "radius": 0.78,
+      "a": -1.2,
+      "b": -0.12,
+      "material": "Finish",
+      "inner_radius": 0.69
+    },
+    {
+      "kind": "cut",
+      "name": "Split dual flush buttons",
+      "base": {
+        "name": "Face",
+        "kind": "cylinder",
+        "origin": [
+          0,
+          0,
+          0
+        ],
+        "axis": [
+          0,
+          0,
+          1
+        ],
+        "radius": 0.79,
+        "a": 0.07,
+        "b": 0.18,
+        "material": "Finish"
+      },
+      "cutters": [
+        {
+          "name": "Button split",
+          "kind": "box",
+          "bounds": [
+            -0.035,
+            -1,
+            0.02,
+            0.035,
+            1,
+            0.3
+          ],
+          "radius": 0,
+          "material": "Finish"
+        }
+      ]
+    },
+    {
+      "name": "Small flush rod",
+      "kind": "cylinder",
+      "origin": [
+        -0.32,
+        0,
+        0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "radius": 0.09,
+      "a": -5.5,
+      "b": -0.8,
+      "material": "Gray"
+    },
+    {
+      "name": "Full flush rod",
+      "kind": "cylinder",
+      "origin": [
+        0.32,
+        0,
+        0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "radius": 0.09,
+      "a": -5.5,
+      "b": -0.8,
+      "material": "Gray"
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://www.totousa.com/filemanager_uploads/product_assets/PartsManual/PD-01451_446EN.pdf",
+      "document": "TOTO PD-01451 Aquia IV exact component illustration",
+      "page": 1,
+      "local_image": "_research/CT446CEFGNT40_01/downloads/PD-01451_446EN_pages/page_01.png"
+    }
+  ],
+  "dimension_authority": [
+    "Exact part identity is verified in the manufacturer component illustration; no independent numeric component dimensions are published there."
+  ],
+  "limitations": [
+    "DIMENSION HOLD: all button and rod dimensions are inferred from the illustrated relationship to the known tank; they are not manufacturer-verified dimensions.",
+    "Rod length 5.5 in is an illustrative uncut setting. This family is suitable only for approximate visualization until the supplied component is measured.",
+    "Independent visualization reconstruction with fixed product dimensions and editable native materials.",
+    "Small fillets, seams, nozzle details and optical material response are inferred where the manufacturer does not dimension them.",
+    "No internal hydraulic performance, MEP connectors, fabrication tolerances or procurement substitutions are implied."
+  ],
+  "anchors": [],
+  "all_overall_dimensions_authoritative": false,
+  "rfa_search": {
+    "result": "No acceptable no-account RFA recovered",
+    "evidence": "_research/THU842_01-A/sources.json"
+  }
+}

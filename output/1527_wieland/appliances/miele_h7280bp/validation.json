@@ -1,0 +1,826 @@
+{
+  "placement_type": "WorkPlaneBased",
+  "limitations": [
+    "Fixed manufacturer model size; exposed finish parameters are flex-tested.",
+    "Internal partitions, edge radii, controls and concealed mechanisms are reference-derived visualization approximations.",
+    "Published nominal appliance W/D/H is the requested complete coordination envelope. Handles are included inside this envelope; the concealed case-depth partition is reconstructed rather than certified to the separate installation section. This family is not a cabinet-cutout or manufacturing authority."
+  ],
+  "bitmap_gate": true,
+  "placed_material_flex": [
+    {
+      "name": "Black Finish",
+      "restored": true,
+      "substitution_pass": true
+    },
+    {
+      "name": "Interior Finish",
+      "restored": true,
+      "substitution_pass": true
+    },
+    {
+      "name": "Glass Finish",
+      "restored": true,
+      "substitution_pass": true
+    },
+    {
+      "name": "Metal Finish",
+      "restored": true,
+      "substitution_pass": true
+    },
+    {
+      "name": "Display Finish",
+      "restored": true,
+      "substitution_pass": true
+    }
+  ],
+  "revision": "Custom_R1",
+  "reopened": true,
+  "measurement_scope": "All physical geometry in the complete reopened family and floor-face placed instance. No part or projection filter; no auxiliary bounding object.",
+  "dimension_gate": true,
+  "placement": {
+    "loaded": true,
+    "placement_type": "WorkPlaneBased",
+    "type": "H 7280 BP - Custom R1",
+    "host_category": "Floors",
+    "placed": true,
+    "family_category": "Specialty Equipment"
+  },
+  "fixed_dimension_parameters": [
+    {
+      "formula": "2'  5 103/128\"",
+      "name": "Overall Width",
+      "value_mm": 757.0,
+      "matches_reference": true
+    },
+    {
+      "formula": "2'  0 165/256\"",
+      "name": "Overall Depth",
+      "value_mm": 626.0,
+      "matches_reference": true
+    },
+    {
+      "formula": "2'  4 159/256\"",
+      "name": "Overall Height",
+      "value_mm": 727.0,
+      "matches_reference": true
+    }
+  ],
+  "dimension_delta_mm": [
+    1.4495849654849735e-05,
+    1.6403198287662235e-05,
+    2.8800964400943485e-05
+  ],
+  "stage": "saved_reopened_measured_flexed_placed_previewed",
+  "placed_bounds": {
+    "parts": [
+      {
+        "name": "H 7280 BP - Custom R1",
+        "id": 3793,
+        "min_mm": [
+          -379.0000130653381,
+          -4.736763117943487e-21,
+          0.0
+        ],
+        "class": "FamilyInstance",
+        "max_mm": [
+          378.0000014305115,
+          626.0000164031983,
+          727.0000288009644
+        ]
+      }
+    ],
+    "min_mm": [
+      -379.0000130653381,
+      -4.736763117943487e-21,
+      0.0
+    ],
+    "max_mm": [
+      378.0000014305115,
+      626.0000164031983,
+      727.0000288009644
+    ],
+    "xyz_size_mm": [
+      757.0000144958497,
+      626.0000164031983,
+      727.0000288009644
+    ]
+  },
+  "warnings": [],
+  "identity": {
+    "Manufacturer": "Miele",
+    "Model": "H 7280 BP",
+    "Description": "Custom dimension-correct visualization replacement; see round-1 notes"
+  },
+  "dimension_basis": "Official exact-model Miele product page, Technical data: W757 x H727 x D626 mm, checked 2026-10-02; retained two-page fact sheet omits this overall row.",
+  "all_acceptance_gates_pass": true,
+  "axis_convention": "X width, Y front-to-back depth, Z vertical height; millimetres.",
+  "parameter_flex": [
+    {
+      "name": "Black Finish",
+      "restored": true,
+      "bound_element_ids": [
+        3044,
+        3048,
+        3052,
+        3056,
+        3064,
+        3068,
+        3100,
+        3104,
+        3108
+      ],
+      "geometry_bindings": 9,
+      "substitution_pass": true
+    },
+    {
+      "name": "Interior Finish",
+      "restored": true,
+      "bound_element_ids": [
+        3000
+      ],
+      "geometry_bindings": 1,
+      "substitution_pass": true
+    },
+    {
+      "name": "Glass Finish",
+      "restored": true,
+      "bound_element_ids": [
+        3060
+      ],
+      "geometry_bindings": 1,
+      "substitution_pass": true
+    },
+    {
+      "name": "Metal Finish",
+      "restored": true,
+      "bound_element_ids": [
+        2980,
+        2984,
+        2988,
+        2992,
+        2996,
+        3004,
+        3008,
+        3012,
+        3016,
+        3020,
+        3024,
+        3028,
+        3032,
+        3036,
+        3040,
+        3076,
+        3080,
+        3084,
+        3088,
+        3092,
+        3096
+      ],
+      "geometry_bindings": 21,
+      "substitution_pass": true
+    },
+    {
+      "name": "Display Finish",
+      "restored": true,
+      "bound_element_ids": [
+        3072
+      ],
+      "geometry_bindings": 1,
+      "substitution_pass": true
+    }
+  ],
+  "material_inventory": [
+    {
+      "appearance_id": 2968,
+      "name": "H 7280 BP Black Finish",
+      "bitmap": "E:\\Claude\\3D-Model-Workflow\\output\\1527_wieland\\appliances\\miele_h7280bp\\source\\rework_r1\\Black_Finish.png",
+      "bitmap_exists": true
+    },
+    {
+      "appearance_id": 2974,
+      "name": "H 7280 BP Interior Finish",
+      "bitmap": "E:\\Claude\\3D-Model-Workflow\\output\\1527_wieland\\appliances\\miele_h7280bp\\source\\rework_r1\\Interior_Finish.png",
+      "bitmap_exists": true
+    },
+    {
+      "appearance_id": 2971,
+      "name": "H 7280 BP Glass Finish",
+      "bitmap": "E:\\Claude\\3D-Model-Workflow\\output\\1527_wieland\\appliances\\miele_h7280bp\\source\\rework_r1\\Glass_Finish.png",
+      "bitmap_exists": true
+    },
+    {
+      "appearance_id": 2965,
+      "name": "H 7280 BP Metal Finish",
+      "bitmap": "E:\\Claude\\3D-Model-Workflow\\output\\1527_wieland\\appliances\\miele_h7280bp\\source\\rework_r1\\Metal_Finish.png",
+      "bitmap_exists": true
+    },
+    {
+      "appearance_id": 2977,
+      "name": "H 7280 BP Display Finish",
+      "bitmap": "E:\\Claude\\3D-Model-Workflow\\output\\1527_wieland\\appliances\\miele_h7280bp\\source\\rework_r1\\Display_Finish.png",
+      "bitmap_exists": true
+    }
+  ],
+  "saved_rfa": "E:\\Claude\\3D-Model-Workflow\\output\\1527_wieland\\appliances\\miele_h7280bp\\miele_h7280bp_Custom_R1_R2025.rfa",
+  "build_method": "native_custom_new_family",
+  "revit_version": "2025",
+  "native_freeform_count": 33,
+  "identity_gate": true,
+  "status": "BUILT_WITH_LIMITATIONS",
+  "category_gate": true,
+  "dimension_gate_scope": "overall",
+  "family_bounds": {
+    "parts": [
+      {
+        "name": "Oven Case Back",
+        "id": 2980,
+        "min_mm": [
+          -361.9999969482422,
+          607.9999886512757,
+          7.000000257790089
+        ],
+        "class": "FreeFormElement",
+        "max_mm": [
+          360.99998531341555,
+          626.0000164031983,
+          720.0000200271606
+        ]
+      },
+      {
+        "name": "Oven Case L",
+        "id": 2984,
+        "min_mm": [
+          -361.9999969482422,
+          70.0000014424324,
+          7.000000257790089
+        ],
+        "class": "FreeFormElement",
+        "max_mm": [
+          -347.0000041007996,
+          607.9999886512757,
+          720.0000200271606
+        ]
+      },
+      {
+        "name": "Oven Case R",
+        "id": 2988,
+        "min_mm": [
+          345.9999924659729,
+          70.0000014424324,
+          7.000000257790089
+        ],
+        "class": "FreeFormElement",
+        "max_mm": [
+          360.99998531341555,
+          607.9999886512757,
+          720.0000200271606
+        ]
+      },
+      {
+        "name": "Oven Case Top",
+        "id": 2992,
+        "min_mm": [
+          -347.0000041007996,
+          70.0000014424324,
+          704.9999908447265
+        ],
+        "class": "FreeFormElement",
+        "max_mm": [
+          345.9999924659729,
+          607.9999886512757,
+          720.0000200271606
+        ]
+      },
+      {
+        "name": "Oven Case Base",
+        "id": 2996,
+        "min_mm": [
+          -347.0000041007996,
+          70.0000014424324,
+          7.000000257790089
+        ],
+        "class": "FreeFormElement",
+        "max_mm": [
+          345.9999924659729,
+          607.9999886512757,
+          21.999999350309373
+        ]
+      },
+      {
+        "name": "Oven Cavity Back",
+        "id": 3000,
+        "min_mm": [
+          -287.6600033283234,
+          604.0000147819519,
+          47.999999821186066
+        ],
+        "class": "FreeFormElement",
+        "max_mm": [
+          287.6600033283234,
+          607.0000133514404,
+          563.999985408783
+        ]
+      },
+      {
+        "name": "Oven Rack Guide 0L",
+        "id": 3004,
+        "min_mm": [
+          -297.2300042152405,
+          87.00000393390656,
+          109.05000250339508
+        ],
+        "class": "FreeFormElement",
+        "max_mm": [
+          -293.2299940109253,
+          588.0000102996827,
+          112.0500010728836
+        ]
+      },
+      {
+        "name": "Oven Rack Guide 0R",
+        "id": 3008,
+        "min_mm": [
+          293.2299940109253,
+          87.00000393390656,
+          109.05000250339508
+        ],
+        "class": "FreeFormElement",
+        "max_mm": [
+          297.2300042152405,
+          588.0000102996827,
+          112.0500010728836
+        ]
+      },
+      {
+        "name": "Oven Rack Guide 1L",
+        "id": 3012,
+        "min_mm": [
+          -297.2300042152405,
+          87.00000393390656,
+          194.4725046157837
+        ],
+        "class": "FreeFormElement",
+        "max_mm": [
+          -293.2299940109253,
+          588.0000102996827,
+          197.47250318527222
+        ]
+      },
+      {
+        "name": "Oven Rack Guide 1R",
+        "id": 3016,
+        "min_mm": [
+          293.2299940109253,
+          87.00000393390656,
+          194.4725046157837
+        ],
+        "class": "FreeFormElement",
+        "max_mm": [
+          297.2300042152405,
+          588.0000102996827,
+          197.47250318527222
+        ]
+      },
+      {
+        "name": "Oven Rack Guide 2L",
+        "id": 3020,
+        "min_mm": [
+          -297.2300042152405,
+          87.00000393390656,
+          279.89499764442445
+        ],
+        "class": "FreeFormElement",
+        "max_mm": [
+          -293.2299940109253,
+          588.0000102996827,
+          282.894996213913
+        ]
+      },
+      {
+        "name": "Oven Rack Guide 2R",
+        "id": 3024,
+        "min_mm": [
+          293.2299940109253,
+          87.00000393390656,
+          279.89499764442445
+        ],
+        "class": "FreeFormElement",
+        "max_mm": [
+          297.2300042152405,
+          588.0000102996827,
+          282.894996213913
+        ]
+      },
+      {
+        "name": "Oven Rack Guide 3L",
+        "id": 3028,
+        "min_mm": [
+          -297.2300042152405,
+          87.00000393390656,
+          365.3174906730652
+        ],
+        "class": "FreeFormElement",
+        "max_mm": [
+          -293.2299940109253,
+          588.0000102996827,
+          368.31748924255373
+        ]
+      },
+      {
+        "name": "Oven Rack Guide 3R",
+        "id": 3032,
+        "min_mm": [
+          293.2299940109253,
+          87.00000393390656,
+          365.3174906730652
+        ],
+        "class": "FreeFormElement",
+        "max_mm": [
+          297.2300042152405,
+          588.0000102996827,
+          368.31748924255373
+        ]
+      },
+      {
+        "name": "Oven Rack Guide 4L",
+        "id": 3036,
+        "min_mm": [
+          -297.2300042152405,
+          87.00000393390656,
+          450.74000186920165
+        ],
+        "class": "FreeFormElement",
+        "max_mm": [
+          -293.2299940109253,
+          588.0000102996827,
+          453.7400004386902
+        ]
+      },
+      {
+        "name": "Oven Rack Guide 4R",
+        "id": 3040,
+        "min_mm": [
+          293.2299940109253,
+          87.00000393390656,
+          450.74000186920165
+        ],
+        "class": "FreeFormElement",
+        "max_mm": [
+          297.2300042152405,
+          588.0000102996827,
+          453.7400004386902
+        ]
+      },
+      {
+        "name": "Oven Door Left",
+        "id": 3044,
+        "min_mm": [
+          -379.0000130653381,
+          45.00000125169754,
+          0.0
+        ],
+        "class": "FreeFormElement",
+        "max_mm": [
+          -323.9999908447266,
+          66.99999833106995,
+          614.0000221252442
+        ]
+      },
+      {
+        "name": "Oven Door Right",
+        "id": 3048,
+        "min_mm": [
+          323.00001554489137,
+          45.00000125169754,
+          0.0
+        ],
+        "class": "FreeFormElement",
+        "max_mm": [
+          378.0000014305115,
+          66.99999833106995,
+          614.0000221252442
+        ]
+      },
+      {
+        "name": "Oven Door Bottom",
+        "id": 3052,
+        "min_mm": [
+          -323.9999908447266,
+          45.00000125169754,
+          0.0
+        ],
+        "class": "FreeFormElement",
+        "max_mm": [
+          323.00001554489137,
+          66.99999833106995,
+          54.99999951124192
+        ]
+      },
+      {
+        "name": "Oven Door Top",
+        "id": 3056,
+        "min_mm": [
+          -323.9999908447266,
+          45.00000125169754,
+          558.9999999046325
+        ],
+        "class": "FreeFormElement",
+        "max_mm": [
+          323.00001554489137,
+          66.99999833106995,
+          614.0000221252442
+        ]
+      },
+      {
+        "name": "Oven Window",
+        "id": 3060,
+        "min_mm": [
+          -323.9999908447266,
+          47.0000018119812,
+          54.99999951124192
+        ],
+        "class": "FreeFormElement",
+        "max_mm": [
+          323.00001554489137,
+          52.00000094175339,
+          558.9999999046325
+        ]
+      },
+      {
+        "name": "Oven Control Fascia",
+        "id": 3064,
+        "min_mm": [
+          -379.0000130653381,
+          45.00000125169754,
+          619.0000076293945
+        ],
+        "class": "FreeFormElement",
+        "max_mm": [
+          378.0000014305115,
+          70.0000014424324,
+          727.0000288009644
+        ]
+      },
+      {
+        "name": "Oven Vent Slot",
+        "id": 3068,
+        "min_mm": [
+          -310.3700088500977,
+          45.999999260902406,
+          615.0000337600708
+        ],
+        "class": "FreeFormElement",
+        "max_mm": [
+          310.3700088500977,
+          57.00000007152558,
+          617.9999959945679
+        ]
+      },
+      {
+        "name": "Oven Display",
+        "id": 3072,
+        "min_mm": [
+          -61.99999920129776,
+          43.50000196695328,
+          651.0000165939331
+        ],
+        "class": "FreeFormElement",
+        "max_mm": [
+          61.99999920129776,
+          45.49999798536301,
+          691.9999849319458
+        ]
+      },
+      {
+        "name": "Oven Touch Key 0",
+        "id": 3076,
+        "min_mm": [
+          -238.00000762939453,
+          43.50000196695328,
+          671.0000312805176
+        ],
+        "class": "FreeFormElement",
+        "max_mm": [
+          -231.99999232292177,
+          45.00000125169754,
+          677.0000284194947
+        ]
+      },
+      {
+        "name": "Oven Touch Key 1",
+        "id": 3080,
+        "min_mm": [
+          -183.0000035762787,
+          43.50000196695328,
+          671.0000312805176
+        ],
+        "class": "FreeFormElement",
+        "max_mm": [
+          -177.00000643730164,
+          45.00000125169754,
+          677.0000284194947
+        ]
+      },
+      {
+        "name": "Oven Touch Key 2",
+        "id": 3084,
+        "min_mm": [
+          -125.00000095367432,
+          43.50000196695328,
+          671.0000312805176
+        ],
+        "class": "FreeFormElement",
+        "max_mm": [
+          -119.00000381469727,
+          45.00000125169754,
+          677.0000284194947
+        ]
+      },
+      {
+        "name": "Oven Touch Key 3",
+        "id": 3088,
+        "min_mm": [
+          119.00000381469727,
+          43.50000196695328,
+          671.0000312805176
+        ],
+        "class": "FreeFormElement",
+        "max_mm": [
+          125.00000095367432,
+          45.00000125169754,
+          677.0000284194947
+        ]
+      },
+      {
+        "name": "Oven Touch Key 4",
+        "id": 3092,
+        "min_mm": [
+          177.00000643730164,
+          43.50000196695328,
+          671.0000312805176
+        ],
+        "class": "FreeFormElement",
+        "max_mm": [
+          183.0000035762787,
+          45.00000125169754,
+          677.0000284194947
+        ]
+      },
+      {
+        "name": "Oven Touch Key 5",
+        "id": 3096,
+        "min_mm": [
+          231.99999232292177,
+          43.50000196695328,
+          671.0000312805176
+        ],
+        "class": "FreeFormElement",
+        "max_mm": [
+          238.00000762939453,
+          45.00000125169754,
+          677.0000284194947
+        ]
+      },
+      {
+        "name": "Oven Handle Grip",
+        "id": 3100,
+        "min_mm": [
+          -291.44500122070315,
+          -4.736763117943487e-21,
+          575.0000043869019
+        ],
+        "class": "FreeFormElement",
+        "max_mm": [
+          291.44500122070315,
+          14.000000515580178,
+          592.999995803833
+        ]
+      },
+      {
+        "name": "Oven Handle Support L",
+        "id": 3104,
+        "min_mm": [
+          -283.4449989795685,
+          11.999999955296516,
+          576.0000160217286
+        ],
+        "class": "FreeFormElement",
+        "max_mm": [
+          -269.4449995994568,
+          47.0000018119812,
+          591.9999841690063
+        ]
+      },
+      {
+        "name": "Oven Handle Support R",
+        "id": 3108,
+        "min_mm": [
+          269.4449995994568,
+          11.999999955296516,
+          576.0000160217286
+        ],
+        "class": "FreeFormElement",
+        "max_mm": [
+          283.4449989795685,
+          47.0000018119812,
+          591.9999841690063
+        ]
+      }
+    ],
+    "min_mm": [
+      -379.0000130653381,
+      -4.736763117943487e-21,
+      0.0
+    ],
+    "max_mm": [
+      378.0000014305115,
+      626.0000164031983,
+      727.0000288009644
+    ],
+    "xyz_size_mm": [
+      757.0000144958497,
+      626.0000164031983,
+      727.0000288009644
+    ]
+  },
+  "placed_warnings": [],
+  "visual_review_pending": false,
+  "saved_revit_format": "2025",
+  "target_xyz_mm": [
+    757,
+    626,
+    727
+  ],
+  "model": "H 7280 BP",
+  "family_dimension_delta_mm": [
+    1.4495849654849735e-05,
+    1.6403198287662235e-05,
+    2.8800964400943485e-05
+  ],
+  "started_utc": "2026-10-02 23:56:40.562000",
+  "placement_transform": {
+    "origin_mm": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "basis_x": [
+      1.0,
+      0.0,
+      0.0
+    ],
+    "basis_y": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "basis_z": [
+      0.0,
+      0.0,
+      1.0
+    ]
+  },
+  "replacement_reason": "Orchestrator round 1: exact-identity manufacturer working family fails the <=1 mm complete overall dimension gate. New native custom geometry replaces the working selection; OEM originals and prior working RFA remain preserved.",
+  "slug": "miele_h7280bp",
+  "finished_utc": "2026-10-02 23:56:46.947000",
+  "native_gates_pass": true,
+  "category": "Specialty Equipment",
+  "material_gate": true,
+  "ok": true,
+  "nested_instance_count": 0,
+  "import_instance_count": 0,
+  "previews": [
+    "E:\\Claude\\3D-Model-Workflow\\output\\1527_wieland\\appliances\\miele_h7280bp\\views\\rework_r1\\oblique - 3D View - oblique.png",
+    "E:\\Claude\\3D-Model-Workflow\\output\\1527_wieland\\appliances\\miele_h7280bp\\views\\rework_r1\\front - 3D View - front.png",
+    "E:\\Claude\\3D-Model-Workflow\\output\\1527_wieland\\appliances\\miele_h7280bp\\views\\rework_r1\\side - 3D View - side.png"
+  ],
+  "visual_review": {
+    "slug": "miele_h7280bp",
+    "reviewed_utc": "2026-10-03T00:01:40.135847+00:00",
+    "reviewer": "worker-1",
+    "revision": "Custom_R1",
+    "method": "Direct inspection of all three native views, assembled without image generation into a per-model review board; retained product imagery/specification used as reference.",
+    "images": [
+      {
+        "path": "miele_h7280bp/views/rework_r1/oblique - 3D View - oblique.png",
+        "sha256": "06b78c5fe19d804ec6e0c8d073e2d147bd169fdb0db87fbdb95b0da566c74949"
+      },
+      {
+        "path": "miele_h7280bp/views/rework_r1/front - 3D View - front.png",
+        "sha256": "1c6bc8ce3fb6f7c0b1c1966bd87ef1573b5ed0dd1eed7d0681978806ecaaf567"
+      },
+      {
+        "path": "miele_h7280bp/views/rework_r1/side - 3D View - side.png",
+        "sha256": "1de9cefa7252c3c15b40a0bdcf2694c3656eaa53983813701d49959b5e1ec784"
+      }
+    ],
+    "observation": "Front, side and oblique views show the full-height black oven fascia, recessed glazing, touch-control band, horizontal handle and metal case. The complete case-to-handle extent is measured. Concealed case partition and cavity detailing are approximations.",
+    "visual_gate": "PASS_WITH_DOCUMENTED_LIMITATIONS",
+    "design_or_photographic_approval": false,
+    "review_board": "rework_round1/miele_h7280bp_review.png"
+  },
+  "requested_round1_gates_pass": true,
+  "orchestrator_release_approved": false,
+  "rfa_sha256": "f720de18bf6d88581b58b63ef3430d7ab04d954a404960fc7312d076ae4c0ded",
+  "superseded_working_rfa": "miele_h7280bp/miele_h7280bp_R2025.rfa"
+}

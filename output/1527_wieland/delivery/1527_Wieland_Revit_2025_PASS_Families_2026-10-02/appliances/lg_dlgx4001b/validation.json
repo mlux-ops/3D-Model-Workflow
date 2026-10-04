@@ -1,0 +1,909 @@
+{
+  "placement_type": "WorkPlaneBased",
+  "parameter_flex": [
+    {
+      "geometry_bindings": 3,
+      "name": "Cabinet Finish",
+      "restored": true,
+      "substitution_pass": true
+    },
+    {
+      "geometry_bindings": 1,
+      "name": "Interior Finish",
+      "restored": true,
+      "substitution_pass": true
+    },
+    {
+      "geometry_bindings": 21,
+      "name": "Controls Finish",
+      "restored": true,
+      "substitution_pass": true
+    },
+    {
+      "geometry_bindings": 3,
+      "name": "Glass Finish",
+      "restored": true,
+      "substitution_pass": true
+    },
+    {
+      "geometry_bindings": 6,
+      "name": "Trim Finish",
+      "restored": true,
+      "substitution_pass": true
+    }
+  ],
+  "ok": true,
+  "stage": "saved_reopened_measured_flexed_placed_previewed",
+  "reopened": true,
+  "warnings": [],
+  "material_inventory": [
+    {
+      "appearance_id": 2232,
+      "name": "Default",
+      "bitmap": null,
+      "bitmap_exists": false
+    },
+    {
+      "appearance_id": 2233,
+      "name": "Default Roof",
+      "bitmap": null,
+      "bitmap_exists": false
+    },
+    {
+      "appearance_id": 2234,
+      "name": "Default Wall",
+      "bitmap": null,
+      "bitmap_exists": false
+    },
+    {
+      "appearance_id": 2235,
+      "name": "Glass",
+      "bitmap": null,
+      "bitmap_exists": false
+    },
+    {
+      "appearance_id": 2236,
+      "name": "Poche",
+      "bitmap": null,
+      "bitmap_exists": false
+    },
+    {
+      "appearance_id": 2237,
+      "name": "Default Light Source",
+      "bitmap": null,
+      "bitmap_exists": false
+    },
+    {
+      "appearance_id": 2862,
+      "name": "Analytical Panels",
+      "bitmap": null,
+      "bitmap_exists": false
+    },
+    {
+      "appearance_id": 2965,
+      "name": "DLGX4001B Glass Finish",
+      "bitmap": "E:\\Claude\\3D-Model-Workflow\\output\\1527_wieland\\appliances\\lg_dlgx4001b\\source\\Black_Glass_diffuse.png",
+      "bitmap_exists": true
+    },
+    {
+      "appearance_id": 2968,
+      "name": "DLGX4001B Trim Finish",
+      "bitmap": "E:\\Claude\\3D-Model-Workflow\\output\\1527_wieland\\appliances\\lg_dlgx4001b\\source\\Bronze_Rim_diffuse.png",
+      "bitmap_exists": true
+    },
+    {
+      "appearance_id": 2971,
+      "name": "DLGX4001B Interior Finish",
+      "bitmap": "E:\\Claude\\3D-Model-Workflow\\output\\1527_wieland\\appliances\\lg_dlgx4001b\\source\\Gray_Interior_diffuse.png",
+      "bitmap_exists": true
+    },
+    {
+      "appearance_id": 2974,
+      "name": "DLGX4001B Controls Finish",
+      "bitmap": "E:\\Claude\\3D-Model-Workflow\\output\\1527_wieland\\appliances\\lg_dlgx4001b\\source\\Black_Plastic_diffuse.png",
+      "bitmap_exists": true
+    },
+    {
+      "appearance_id": 2977,
+      "name": "DLGX4001B Cabinet Finish",
+      "bitmap": "E:\\Claude\\3D-Model-Workflow\\output\\1527_wieland\\appliances\\lg_dlgx4001b\\source\\Black_Steel_diffuse.png",
+      "bitmap_exists": true
+    }
+  ],
+  "saved_revit_format": "2025",
+  "family_bounds": {
+    "max_mm": [
+      342.90000000000003,
+      765.1750242233277,
+      990.6
+    ],
+    "parts": [
+      {
+        "class": "FreeFormElement",
+        "min_mm": [
+          -342.90000000000003,
+          43.00000069141388,
+          11.999999955296516
+        ],
+        "id": 2980,
+        "name": "Body",
+        "max_mm": [
+          342.90000000000003,
+          765.1750242233277,
+          990.6
+        ]
+      },
+      {
+        "class": "FreeFormElement",
+        "min_mm": [
+          -321.90001001358036,
+          66.00000032186509,
+          -3.458213742501865e-21
+        ],
+        "id": 2984,
+        "name": "Foot00",
+        "max_mm": [
+          -293.89999308586124,
+          94.0000036239624,
+          11.999999955296516
+        ]
+      },
+      {
+        "class": "FreeFormElement",
+        "min_mm": [
+          -321.90001001358036,
+          706.1749917984009,
+          -3.458213742501865e-21
+        ],
+        "id": 2988,
+        "name": "Foot01",
+        "max_mm": [
+          -293.89999308586124,
+          734.1750268936157,
+          11.999999955296516
+        ]
+      },
+      {
+        "class": "FreeFormElement",
+        "min_mm": [
+          293.89999308586124,
+          66.00000032186509,
+          -3.458213742501865e-21
+        ],
+        "id": 2992,
+        "name": "Foot10",
+        "max_mm": [
+          321.90001001358036,
+          94.0000036239624,
+          11.999999955296516
+        ]
+      },
+      {
+        "class": "FreeFormElement",
+        "min_mm": [
+          293.89999308586124,
+          706.1749917984009,
+          -3.458213742501865e-21
+        ],
+        "id": 2996,
+        "name": "Foot11",
+        "max_mm": [
+          321.90001001358036,
+          734.1750268936157,
+          11.999999955296516
+        ]
+      },
+      {
+        "class": "FreeFormElement",
+        "min_mm": [
+          -340.90001306533816,
+          37.99999929070473,
+          968.6000347137451
+        ],
+        "id": 3000,
+        "name": "Top Lid",
+        "max_mm": [
+          340.90001306533816,
+          765.1750242233277,
+          990.6
+        ]
+      },
+      {
+        "class": "FreeFormElement",
+        "min_mm": [
+          -338.8999897956848,
+          29.99999932050705,
+          835.6000133514405
+        ],
+        "id": 3004,
+        "name": "Control Fascia",
+        "max_mm": [
+          338.8999897956848,
+          45.999999260902406,
+          967.6000230789185
+        ]
+      },
+      {
+        "class": "FreeFormElement",
+        "min_mm": [
+          -38.99999957084656,
+          18.999999645352364,
+          871.5999961853028
+        ],
+        "id": 3008,
+        "name": "Selector Bezel",
+        "max_mm": [
+          38.99999957084656,
+          33.000000160932544,
+          949.6000316619874
+        ]
+      },
+      {
+        "class": "FreeFormElement",
+        "min_mm": [
+          -33.000000160932544,
+          9.00000025033951,
+          877.5999933242798
+        ],
+        "id": 3012,
+        "name": "Selector Dial",
+        "max_mm": [
+          33.000000160932544,
+          25.000000190734863,
+          943.6000345230103
+        ]
+      },
+      {
+        "class": "FreeFormElement",
+        "min_mm": [
+          -1.4999999944120646,
+          7.000000257790089,
+          932.5999792099
+        ],
+        "id": 3016,
+        "name": "Selector Index",
+        "max_mm": [
+          1.4999999944120646,
+          9.00000025033951,
+          941.600011253357
+        ]
+      },
+      {
+        "class": "FreeFormElement",
+        "min_mm": [
+          102.87000181674958,
+          23.999999910593033,
+          866.6000106811524
+        ],
+        "id": 3020,
+        "name": "Display Panel",
+        "max_mm": [
+          315.4679898262024,
+          31.99999988079071,
+          956.5999677658082
+        ]
+      },
+      {
+        "class": "FreeFormElement",
+        "min_mm": [
+          116.58599781990051,
+          21.999999350309373,
+          878.6000049591065
+        ],
+        "id": 3024,
+        "name": "Display Control0",
+        "max_mm": [
+          133.7309996366501,
+          23.999999910593033,
+          882.5999788284302
+        ]
+      },
+      {
+        "class": "FreeFormElement",
+        "min_mm": [
+          161.8488055229187,
+          21.999999350309373,
+          878.6000049591065
+        ],
+        "id": 3028,
+        "name": "Display Control1",
+        "max_mm": [
+          178.9937982559204,
+          23.999999910593033,
+          882.5999788284302
+        ]
+      },
+      {
+        "class": "FreeFormElement",
+        "min_mm": [
+          207.11159505844117,
+          21.999999350309373,
+          878.6000049591065
+        ],
+        "id": 3032,
+        "name": "Display Control2",
+        "max_mm": [
+          224.2566059589386,
+          23.999999910593033,
+          882.5999788284302
+        ]
+      },
+      {
+        "class": "FreeFormElement",
+        "min_mm": [
+          252.37440276145935,
+          21.999999350309373,
+          878.6000049591065
+        ],
+        "id": 3036,
+        "name": "Display Control3",
+        "max_mm": [
+          269.5193954944611,
+          23.999999910593033,
+          882.5999788284302
+        ]
+      },
+      {
+        "class": "FreeFormElement",
+        "min_mm": [
+          -71.72199844121933,
+          28.000001031160355,
+          950.5999706268311
+        ],
+        "id": 3040,
+        "name": "Cycle Tick0_-1",
+        "max_mm": [
+          -51.72200192213059,
+          29.99999932050705,
+          953.6000055313111
+        ]
+      },
+      {
+        "class": "FreeFormElement",
+        "min_mm": [
+          51.72200192213059,
+          28.000001031160355,
+          950.5999706268311
+        ],
+        "id": 3044,
+        "name": "Cycle Tick0_1",
+        "max_mm": [
+          71.72199844121933,
+          29.99999932050705,
+          953.6000055313111
+        ]
+      },
+      {
+        "class": "FreeFormElement",
+        "min_mm": [
+          -72.22199971675873,
+          28.000001031160355,
+          937.5999647140503
+        ],
+        "id": 3048,
+        "name": "Cycle Tick1_-1",
+        "max_mm": [
+          -52.22199865579605,
+          29.99999932050705,
+          940.5999996185303
+        ]
+      },
+      {
+        "class": "FreeFormElement",
+        "min_mm": [
+          52.22199865579605,
+          28.000001031160355,
+          937.5999647140503
+        ],
+        "id": 3052,
+        "name": "Cycle Tick1_1",
+        "max_mm": [
+          72.22199971675873,
+          29.99999932050705,
+          940.5999996185303
+        ]
+      },
+      {
+        "class": "FreeFormElement",
+        "min_mm": [
+          -72.72200099229813,
+          28.000001031160355,
+          924.6000314712525
+        ],
+        "id": 3056,
+        "name": "Cycle Tick2_-1",
+        "max_mm": [
+          -52.72199993133545,
+          29.99999932050705,
+          927.5999937057495
+        ]
+      },
+      {
+        "class": "FreeFormElement",
+        "min_mm": [
+          52.72199993133545,
+          28.000001031160355,
+          924.6000314712525
+        ],
+        "id": 3060,
+        "name": "Cycle Tick2_1",
+        "max_mm": [
+          72.72200099229813,
+          29.99999932050705,
+          927.5999937057495
+        ]
+      },
+      {
+        "class": "FreeFormElement",
+        "min_mm": [
+          -73.22200226783752,
+          28.000001031160355,
+          911.6000255584717
+        ],
+        "id": 3064,
+        "name": "Cycle Tick3_-1",
+        "max_mm": [
+          -53.22200120687485,
+          29.99999932050705,
+          914.5999877929688
+        ]
+      },
+      {
+        "class": "FreeFormElement",
+        "min_mm": [
+          53.22200120687485,
+          28.000001031160355,
+          911.6000255584717
+        ],
+        "id": 3068,
+        "name": "Cycle Tick3_1",
+        "max_mm": [
+          73.22200226783752,
+          29.99999932050705,
+          914.5999877929688
+        ]
+      },
+      {
+        "class": "FreeFormElement",
+        "min_mm": [
+          -73.721999001503,
+          28.000001031160355,
+          898.600019645691
+        ],
+        "id": 3072,
+        "name": "Cycle Tick4_-1",
+        "max_mm": [
+          -53.72199794054031,
+          29.99999932050705,
+          901.599981880188
+        ]
+      },
+      {
+        "class": "FreeFormElement",
+        "min_mm": [
+          53.72199794054031,
+          28.000001031160355,
+          898.600019645691
+        ],
+        "id": 3076,
+        "name": "Cycle Tick4_1",
+        "max_mm": [
+          73.721999001503,
+          29.99999932050705,
+          901.599981880188
+        ]
+      },
+      {
+        "class": "FreeFormElement",
+        "min_mm": [
+          -74.2220002770424,
+          28.000001031160355,
+          885.6000137329102
+        ],
+        "id": 3080,
+        "name": "Cycle Tick5_-1",
+        "max_mm": [
+          -54.221999216079716,
+          29.99999932050705,
+          888.5999759674072
+        ]
+      },
+      {
+        "class": "FreeFormElement",
+        "min_mm": [
+          54.221999216079716,
+          28.000001031160355,
+          885.6000137329102
+        ],
+        "id": 3084,
+        "name": "Cycle Tick5_1",
+        "max_mm": [
+          74.2220002770424,
+          29.99999932050705,
+          888.5999759674072
+        ]
+      },
+      {
+        "class": "FreeFormElement",
+        "min_mm": [
+          -303.12359433174134,
+          20.000001060962678,
+          259.5371922969818
+        ],
+        "id": 3088,
+        "name": "Door Outer Trim",
+        "max_mm": [
+          303.12359433174134,
+          34.00000044107437,
+          865.7844354629517
+        ]
+      },
+      {
+        "class": "FreeFormElement",
+        "min_mm": [
+          -299.6236081123352,
+          7.999999970197678,
+          263.0371966838837
+        ],
+        "id": 3092,
+        "name": "Door Black Surround",
+        "max_mm": [
+          299.6236081123352,
+          36.00000100135804,
+          862.2844310760498
+        ]
+      },
+      {
+        "class": "FreeFormElement",
+        "min_mm": [
+          -225.82707695961,
+          -2.3215020836421055e-20,
+          336.8337278366089
+        ],
+        "id": 3096,
+        "name": "Door Glass",
+        "max_mm": [
+          225.82707695961,
+          14.999999660253525,
+          788.4879180908204
+        ]
+      },
+      {
+        "class": "FreeFormElement",
+        "min_mm": [
+          -232.49580144882202,
+          5.000000265240669,
+          330.1649851799011
+        ],
+        "id": 3100,
+        "name": "Inner Door Lip",
+        "max_mm": [
+          232.49580144882202,
+          20.000001060962678,
+          795.1566244125366
+        ]
+      },
+      {
+        "class": "FreeFormElement",
+        "min_mm": [
+          295.1235920906067,
+          27.000000751018526,
+          510.66079931259156
+        ],
+        "id": 3104,
+        "name": "Door Hinge",
+        "max_mm": [
+          311.123596572876,
+          43.00000069141388,
+          614.6608102798463
+        ]
+      },
+      {
+        "class": "FreeFormElement",
+        "min_mm": [
+          -308.1235980033875,
+          11.999999955296516,
+          526.6608037948608
+        ],
+        "id": 3108,
+        "name": "Door Pocket",
+        "max_mm": [
+          -298.12360882759094,
+          23.999999910593033,
+          598.6608057975769
+        ]
+      },
+      {
+        "class": "FreeFormElement",
+        "min_mm": [
+          -212.18652148246767,
+          15.999999940395355,
+          350.47428331375124
+        ],
+        "id": 3112,
+        "name": "Drum Back",
+        "max_mm": [
+          212.18652148246767,
+          36.00000100135804,
+          774.8473262786865
+        ]
+      }
+    ],
+    "xyz_size_mm": [
+      685.8000000000001,
+      765.1750242233277,
+      990.6
+    ],
+    "min_mm": [
+      -342.90000000000003,
+      -2.3215020836421055e-20,
+      -3.458213742501865e-21
+    ]
+  },
+  "previews": [
+    "E:\\Claude\\3D-Model-Workflow\\output\\1527_wieland\\appliances\\lg_dlgx4001b\\views\\oblique - 3D View - oblique.png",
+    "E:\\Claude\\3D-Model-Workflow\\output\\1527_wieland\\appliances\\lg_dlgx4001b\\views\\front - 3D View - front.png"
+  ],
+  "category": "Specialty Equipment",
+  "dimension_delta_mm": [
+    1.1368683772161603e-13,
+    2.422332772766822e-05,
+    0.0
+  ],
+  "dimension_gate_scope": "overall",
+  "assumptions": [
+    "Black Steel selected by B suffix. Reversible dryer door depicted right-hinged; no pedestal."
+  ],
+  "preview_refresh_utc": "2026-10-02 14:30:47.292000",
+  "started_utc": "2026-10-02 14:20:40.168000",
+  "parts": [
+    {
+      "parameter": "Cabinet Finish",
+      "name": "Body",
+      "id": 2980
+    },
+    {
+      "parameter": "Controls Finish",
+      "name": "Foot00",
+      "id": 2984
+    },
+    {
+      "parameter": "Controls Finish",
+      "name": "Foot01",
+      "id": 2988
+    },
+    {
+      "parameter": "Controls Finish",
+      "name": "Foot10",
+      "id": 2992
+    },
+    {
+      "parameter": "Controls Finish",
+      "name": "Foot11",
+      "id": 2996
+    },
+    {
+      "parameter": "Cabinet Finish",
+      "name": "Top Lid",
+      "id": 3000
+    },
+    {
+      "parameter": "Cabinet Finish",
+      "name": "Control Fascia",
+      "id": 3004
+    },
+    {
+      "parameter": "Controls Finish",
+      "name": "Selector Bezel",
+      "id": 3008
+    },
+    {
+      "parameter": "Trim Finish",
+      "name": "Selector Dial",
+      "id": 3012
+    },
+    {
+      "parameter": "Controls Finish",
+      "name": "Selector Index",
+      "id": 3016
+    },
+    {
+      "parameter": "Glass Finish",
+      "name": "Display Panel",
+      "id": 3020
+    },
+    {
+      "parameter": "Trim Finish",
+      "name": "Display Control0",
+      "id": 3024
+    },
+    {
+      "parameter": "Trim Finish",
+      "name": "Display Control1",
+      "id": 3028
+    },
+    {
+      "parameter": "Trim Finish",
+      "name": "Display Control2",
+      "id": 3032
+    },
+    {
+      "parameter": "Trim Finish",
+      "name": "Display Control3",
+      "id": 3036
+    },
+    {
+      "parameter": "Controls Finish",
+      "name": "Cycle Tick0_-1",
+      "id": 3040
+    },
+    {
+      "parameter": "Controls Finish",
+      "name": "Cycle Tick0_1",
+      "id": 3044
+    },
+    {
+      "parameter": "Controls Finish",
+      "name": "Cycle Tick1_-1",
+      "id": 3048
+    },
+    {
+      "parameter": "Controls Finish",
+      "name": "Cycle Tick1_1",
+      "id": 3052
+    },
+    {
+      "parameter": "Controls Finish",
+      "name": "Cycle Tick2_-1",
+      "id": 3056
+    },
+    {
+      "parameter": "Controls Finish",
+      "name": "Cycle Tick2_1",
+      "id": 3060
+    },
+    {
+      "parameter": "Controls Finish",
+      "name": "Cycle Tick3_-1",
+      "id": 3064
+    },
+    {
+      "parameter": "Controls Finish",
+      "name": "Cycle Tick3_1",
+      "id": 3068
+    },
+    {
+      "parameter": "Controls Finish",
+      "name": "Cycle Tick4_-1",
+      "id": 3072
+    },
+    {
+      "parameter": "Controls Finish",
+      "name": "Cycle Tick4_1",
+      "id": 3076
+    },
+    {
+      "parameter": "Controls Finish",
+      "name": "Cycle Tick5_-1",
+      "id": 3080
+    },
+    {
+      "parameter": "Controls Finish",
+      "name": "Cycle Tick5_1",
+      "id": 3084
+    },
+    {
+      "parameter": "Trim Finish",
+      "name": "Door Outer Trim",
+      "id": 3088
+    },
+    {
+      "parameter": "Glass Finish",
+      "name": "Door Black Surround",
+      "id": 3092
+    },
+    {
+      "parameter": "Glass Finish",
+      "name": "Door Glass",
+      "id": 3096
+    },
+    {
+      "parameter": "Controls Finish",
+      "name": "Inner Door Lip",
+      "id": 3100
+    },
+    {
+      "parameter": "Controls Finish",
+      "name": "Door Hinge",
+      "id": 3104
+    },
+    {
+      "parameter": "Controls Finish",
+      "name": "Door Pocket",
+      "id": 3108
+    },
+    {
+      "parameter": "Interior Finish",
+      "name": "Drum Back",
+      "id": 3112
+    }
+  ],
+  "limitations": [
+    "Visualization geometry; no MEP connectors, operating mechanisms or fabrication tolerances.",
+    "Overall dimensions are manufacturer dimensions. Undimensioned seams, controls, edge radii and optical properties are inferred from product imagery.",
+    "Fixed product dimensions; editable finish parameters are the intended flex controls."
+  ],
+  "target_xyz_mm": [
+    685.8,
+    765.175,
+    990.6
+  ],
+  "revit_version": "2025",
+  "finished_utc": "2026-10-02 14:20:49.040000",
+  "dimension_gate": true,
+  "slug": "lg_dlgx4001b",
+  "model": "DLGX4001B",
+  "dimension_basis": "27 x 39 x 30 1/8 in, W x H x D; LG manufacturer specification, gas section.",
+  "saved_rfa": "E:\\Claude\\3D-Model-Workflow\\output\\1527_wieland\\appliances\\lg_dlgx4001b\\lg_dlgx4001b_R2025.rfa",
+  "placed_bounds": {
+    "max_mm": [
+      342.90000000000003,
+      765.1750242233277,
+      990.6
+    ],
+    "parts": [
+      {
+        "class": "FamilyInstance",
+        "min_mm": [
+          -342.90000000000003,
+          -2.3215020836421055e-20,
+          -3.458213742501865e-21
+        ],
+        "id": 3797,
+        "name": "DLGX4001B",
+        "max_mm": [
+          342.90000000000003,
+          765.1750242233277,
+          990.6
+        ]
+      }
+    ],
+    "xyz_size_mm": [
+      685.8000000000001,
+      765.1750242233277,
+      990.6
+    ],
+    "min_mm": [
+      -342.90000000000003,
+      -2.3215020836421055e-20,
+      -3.458213742501865e-21
+    ]
+  },
+  "placement": {
+    "loaded": true,
+    "placed": true,
+    "placement_type": "WorkPlaneBased",
+    "type": "DLGX4001B",
+    "host_category": "Floors",
+    "family_category": "Specialty Equipment"
+  },
+  "placed_warnings": [],
+  "visual_review": {
+    "reviewed_utc": "2026-10-02T14:36:37.369028+00:00",
+    "reviewer": "worker-1",
+    "method": "Direct visual inspection of native images and manufacturer reference imagery; manufacturer batch contact sheets used for overview.",
+    "images": [
+      {
+        "path": "lg_dlgx4001b/views/oblique - 3D View - oblique.png",
+        "sha256": "893f09207538148eb6fb8fb56f8b0067bf9f8700fe7aeadf6c51b8c7384a0a12"
+      },
+      {
+        "path": "lg_dlgx4001b/views/front - 3D View - front.png",
+        "sha256": "ae47126b21a165ec66fb71ca62f292e23d7c6b9133076cb6dd4e38ad9b25766c"
+      }
+    ],
+    "observation": "Black Steel dryer has the round dark door and right display without a washer detergent/service panel. Reversible door is depicted with the documented right hinge assumption.",
+    "design_or_photographic_approval": false
+  },
+  "all_acceptance_gates_pass": false
+}

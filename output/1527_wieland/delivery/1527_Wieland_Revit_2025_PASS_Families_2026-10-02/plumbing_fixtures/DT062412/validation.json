@@ -1,0 +1,297 @@
+{
+  "host": {
+    "instance_host_id": "3716", 
+    "host_id": "3716", 
+    "host_kind": "floor", 
+    "hostface_present": true, 
+    "normal_dot": 1.0
+  }, 
+  "model": "DT062412", 
+  "source_dimensions": [
+    "Grate 4.5625 in square; flange 6.125 in diameter; minimum assembly height 4.0625 in; socket OD 2.6875 in."
+  ], 
+  "inferences": "The manufacturer drawing shows a slotted grate although the product title says Tile-in. This model follows the inspected Rev B geometry. | Minimum adjustment setting represented; thread and screw details simplified. | Independent visualization reconstruction with fixed product dimensions and editable native materials. | Small fillets, seams, nozzle details and optical material response are inferred where the manufacturer does not dimension them. | No internal hydraulic performance, MEP connectors, fabrication tolerances or procurement substitutions are implied.", 
+  "visual_review": "PENDING_NATIVE_IMAGE_REVIEW", 
+  "source_spec_sha256": "82b77a2a2c45b53ff8b5991fb3e1f4cc8570aa0c57e95955aab6c6e771954710", 
+  "started_utc": "2026-10-02T15:54:54.508000Z", 
+  "template_form_ids": [
+    "1537"
+  ], 
+  "source_references": [
+    {
+      "visual_review_method": "Manufacturer web PDF screenshot", 
+      "document": "Delta DSP-A-DT062412 Rev B", 
+      "page": 1, 
+      "url": "https://media.deltafaucet.com/SpecSheet/DSP-A-DT062412%20Rev%20B.pdf"
+    }
+  ], 
+  "reopened": true, 
+  "gates": {
+    "actual_face_host": true, 
+    "reopened": true, 
+    "category": true, 
+    "diffuse_bitmaps": true, 
+    "warnings": true, 
+    "views": true, 
+    "dimensions": true, 
+    "reopen_geometry_equal": true, 
+    "materials": true, 
+    "cct": true, 
+    "orientation": true
+  }, 
+  "placement": "WorkPlaneBased", 
+  "material_tests": {
+    "Finish": {
+      "face_count": 198, 
+      "substitution_reaches_faces": true, 
+      "writable": true
+    }, 
+    "Gray": {
+      "face_count": 198, 
+      "substitution_reaches_faces": true, 
+      "writable": true
+    }
+  }, 
+  "acceptance": "NATIVE_GATES_PASSED_PENDING_VISUAL_REVIEW", 
+  "actual_dimensions_in": [
+    6.1250002384185791, 
+    6.1250002384185791, 
+    4.0625
+  ], 
+  "family_warnings": [], 
+  "cct_k": null, 
+  "stage": "complete", 
+  "manufacturer": "Delta", 
+  "material_ids": {
+    "Finish": "3207", 
+    "Gray": "3210"
+  }, 
+  "expected_dimensions_in": [
+    6.125, 
+    6.125, 
+    4.0625
+  ], 
+  "bounds_in": [
+    -3.0625001192092896, 
+    -3.0625001192092896, 
+    -4.0625, 
+    3.0625001192092896, 
+    3.0625001192092896, 
+    2.0816681711721685e-17
+  ], 
+  "appearance_bindings": {
+    "Finish": {
+      "path": "E:\\Claude\\3D-Model-Workflow\\output\\1527_wieland\\plumbing_fixtures\\DT062412\\textures\\Finish.png", 
+      "exists": true, 
+      "material_id": "3207"
+    }, 
+    "Gray": {
+      "path": "E:\\Claude\\3D-Model-Workflow\\output\\1527_wieland\\plumbing_fixtures\\DT062412\\textures\\Gray.png", 
+      "exists": true, 
+      "material_id": "3210"
+    }
+  }, 
+  "rfa_path": "E:\\Claude\\3D-Model-Workflow\\output\\1527_wieland\\plumbing_fixtures\\DT062412\\Delta_DT062412_R2025.rfa", 
+  "finished_utc": "2026-10-02T15:54:57.577000Z", 
+  "appearance_defaults": {
+    "Finish": {
+      "cct_k": null, 
+      "luminance": 0, 
+      "gloss": 0.95999999999999996, 
+      "rgb": [
+        195, 
+        198, 
+        201
+      ], 
+      "transparency": 0
+    }, 
+    "Gray": {
+      "cct_k": null, 
+      "luminance": 0, 
+      "gloss": 0.32000000000000001, 
+      "rgb": [
+        131, 
+        132, 
+        130
+      ], 
+      "transparency": 0
+    }
+  }, 
+  "evidence_files": [
+    "Delta_DT062412_R2025_Isolated - 3D View - Native Front.png", 
+    "Delta_DT062412_R2025_Isolated - 3D View - Native Material.png", 
+    "Delta_DT062412_R2025_Isolated - 3D View - Native Oblique.png", 
+    "Delta_DT062412_R2025_Isolated - 3D View - Native Side.png"
+  ], 
+  "display_bounds_in": [
+    -3.0625, 
+    -3.0625, 
+    -4.0625, 
+    3.0625, 
+    3.0625, 
+    0.0
+  ], 
+  "source_spec_path": "E:\\Claude\\3D-Model-Workflow\\output\\1527_wieland\\plumbing_fixtures\\DT062412\\source\\model_spec.json", 
+  "all_overall_dimensions_authoritative": true, 
+  "dimension_anchor_checks": [
+    {
+      "deviation_mm": 6.0558319091796872e-06, 
+      "nominal_mm": 155.57499999999999, 
+      "label": "Flange diameter", 
+      "pass": true, 
+      "actual_mm": 155.57500605583189
+    }
+  ], 
+  "reopen_geometry_equal": true, 
+  "revit_version": "2025", 
+  "reopened_bounds_in": [
+    -3.0625001192092896, 
+    -3.0625001192092896, 
+    -4.0625, 
+    3.0625001192092896, 
+    3.0625001192092896, 
+    2.0816681711721685e-17
+  ], 
+  "project_warnings": [], 
+  "rfa_search": {
+    "result": "No acceptable no-account RFA recovered", 
+    "evidence": "_research/DT062412/sources.json"
+  }, 
+  "limitations": [
+    "The manufacturer drawing shows a slotted grate although the product title says Tile-in. This model follows the inspected Rev B geometry.", 
+    "Minimum adjustment setting represented; thread and screw details simplified.", 
+    "Independent visualization reconstruction with fixed product dimensions and editable native materials.", 
+    "Small fillets, seams, nozzle details and optical material response are inferred where the manufacturer does not dimension them.", 
+    "No internal hydraulic performance, MEP connectors, fabrication tolerances or procurement substitutions are implied."
+  ], 
+  "parts": [
+    {
+      "name": "PVC socket", 
+      "volume_ft3": 0.0010515630307193656, 
+      "id": "3212"
+    }, 
+    {
+      "name": "Upper drain body", 
+      "volume_ft3": 0.0057517987876819039, 
+      "id": "3213"
+    }, 
+    {
+      "name": "Clamping flange", 
+      "volume_ft3": 0.0029292451630878505, 
+      "id": "3214"
+    }, 
+    {
+      "name": "Grate left border", 
+      "volume_ft3": 0.00012389090783614278, 
+      "id": "3215"
+    }, 
+    {
+      "name": "Grate right border", 
+      "volume_ft3": 0.00012389090783614278, 
+      "id": "3216"
+    }, 
+    {
+      "name": "Grate front border", 
+      "volume_ft3": 0.00011021659489761755, 
+      "id": "3217"
+    }, 
+    {
+      "name": "Grate back border", 
+      "volume_ft3": 0.00011021659489761755, 
+      "id": "3218"
+    }, 
+    {
+      "name": "Horizontal grate bar 0", 
+      "volume_ft3": 7.2671665784507559e-05, 
+      "id": "3219"
+    }, 
+    {
+      "name": "Staggered slot bridge 0", 
+      "volume_ft3": 5.5671296296296269e-06, 
+      "id": "3220"
+    }, 
+    {
+      "name": "Horizontal grate bar 1", 
+      "volume_ft3": 7.2671665784507599e-05, 
+      "id": "3221"
+    }, 
+    {
+      "name": "Staggered slot bridge 1", 
+      "volume_ft3": 5.5671296296296295e-06, 
+      "id": "3222"
+    }, 
+    {
+      "name": "Horizontal grate bar 2", 
+      "volume_ft3": 7.2671665784507532e-05, 
+      "id": "3223"
+    }, 
+    {
+      "name": "Staggered slot bridge 2", 
+      "volume_ft3": 5.5671296296296278e-06, 
+      "id": "3224"
+    }, 
+    {
+      "name": "Horizontal grate bar 3", 
+      "volume_ft3": 7.2671665784507599e-05, 
+      "id": "3225"
+    }, 
+    {
+      "name": "Staggered slot bridge 3", 
+      "volume_ft3": 5.5671296296296269e-06, 
+      "id": "3226"
+    }, 
+    {
+      "name": "Horizontal grate bar 4", 
+      "volume_ft3": 7.2671665784507572e-05, 
+      "id": "3227"
+    }, 
+    {
+      "name": "Staggered slot bridge 4", 
+      "volume_ft3": 5.5671296296296278e-06, 
+      "id": "3228"
+    }, 
+    {
+      "name": "Horizontal grate bar 5", 
+      "volume_ft3": 7.2671665784507586e-05, 
+      "id": "3229"
+    }, 
+    {
+      "name": "Staggered slot bridge 5", 
+      "volume_ft3": 5.5671296296296269e-06, 
+      "id": "3230"
+    }, 
+    {
+      "name": "Horizontal grate bar 6", 
+      "volume_ft3": 7.2671665784507599e-05, 
+      "id": "3231"
+    }, 
+    {
+      "name": "Staggered slot bridge 6", 
+      "volume_ft3": 5.5671296296296269e-06, 
+      "id": "3232"
+    }, 
+    {
+      "name": "Horizontal grate bar 7", 
+      "volume_ft3": 7.2671665784507559e-05, 
+      "id": "3233"
+    }, 
+    {
+      "name": "Staggered slot bridge 7", 
+      "volume_ft3": 1.5046296296296288e-06, 
+      "id": "3234"
+    }
+  ], 
+  "category": "Plumbing Fixtures", 
+  "bounds_method": "Fine native face meshes plus 128-sample analytic edges", 
+  "type": "DT062412 - Chrome", 
+  "native_gates_pass": true, 
+  "technical_pass": true, 
+  "native_path_checks": [], 
+  "reopened_warnings": [], 
+  "revit_build": "25.4.50.35", 
+  "actual_dimensions_after_reopen_mm": [
+    155.57500605583189, 
+    155.57500605583189, 
+    103.1875
+  ]
+}

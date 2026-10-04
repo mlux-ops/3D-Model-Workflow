@@ -1,0 +1,458 @@
+{
+  "key": "BT062415-BNX",
+  "model": "BT062415-BNX",
+  "manufacturer": "Brizo",
+  "type_name": "BT062415-BNX - Brilliance Black Onyx -  Black",
+  "basename": "Brizo_BT062415-BNX_R2025",
+  "name": "4-inch square point shower drain",
+  "host": "floor",
+  "configured_dimensions_in": [
+    6.125,
+    6.125,
+    4.0625
+  ],
+  "materials": {
+    "Finish": {
+      "rgb": [
+        58,
+        60,
+        62
+      ],
+      "gloss": 0.92,
+      "reflectivity": 0.72,
+      "class": "Metal"
+    },
+    "Detail": {
+      "rgb": [
+        24,
+        25,
+        26
+      ],
+      "gloss": 0.17,
+      "reflectivity": 0.04,
+      "class": "Plastic"
+    },
+    "Graphite": {
+      "rgb": [
+        64,
+        67,
+        69
+      ],
+      "gloss": 0.36,
+      "reflectivity": 0.16,
+      "class": "Glass"
+    },
+    "Ceramic": {
+      "rgb": [
+        245,
+        245,
+        241
+      ],
+      "gloss": 0.86,
+      "reflectivity": 0.22,
+      "class": "Ceramic"
+    },
+    "Brass": {
+      "rgb": [
+        160,
+        124,
+        64
+      ],
+      "gloss": 0.4,
+      "reflectivity": 0.38,
+      "class": "Metal"
+    },
+    "Green": {
+      "rgb": [
+        31,
+        113,
+        66
+      ],
+      "gloss": 0.18,
+      "reflectivity": 0.05,
+      "class": "Plastic"
+    },
+    "Gray": {
+      "rgb": [
+        131,
+        132,
+        130
+      ],
+      "gloss": 0.32,
+      "reflectivity": 0.12,
+      "class": "Plastic"
+    }
+  },
+  "geometry": [
+    {
+      "name": "PVC socket",
+      "kind": "cylinder",
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "radius": 1.34375,
+      "a": -4.0625,
+      "b": -2.6,
+      "material": "Gray",
+      "inner_radius": 1.1875
+    },
+    {
+      "name": "Upper drain body",
+      "kind": "cylinder",
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "radius": 1.8,
+      "a": -2.7,
+      "b": -1.05,
+      "material": "Gray",
+      "inner_radius": 1.15
+    },
+    {
+      "name": "Clamping flange",
+      "kind": "cylinder",
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "radius": 3.0625,
+      "a": -1.42,
+      "b": -1.22,
+      "material": "Gray",
+      "inner_radius": 1.15
+    },
+    {
+      "name": "Grate left border",
+      "kind": "box",
+      "bounds": [
+        -2.28125,
+        -2.28125,
+        -0.18,
+        -2.02,
+        2.28125,
+        0
+      ],
+      "radius": 0.055,
+      "material": "Finish"
+    },
+    {
+      "name": "Grate right border",
+      "kind": "box",
+      "bounds": [
+        2.02,
+        -2.28125,
+        -0.18,
+        2.28125,
+        2.28125,
+        0
+      ],
+      "radius": 0.055,
+      "material": "Finish"
+    },
+    {
+      "name": "Grate front border",
+      "kind": "box",
+      "bounds": [
+        -2.03,
+        -2.28125,
+        -0.18,
+        2.03,
+        -2.02,
+        0
+      ],
+      "radius": 0.055,
+      "material": "Finish"
+    },
+    {
+      "name": "Grate back border",
+      "kind": "box",
+      "bounds": [
+        -2.03,
+        2.02,
+        -0.18,
+        2.03,
+        2.28125,
+        0
+      ],
+      "radius": 0.055,
+      "material": "Finish"
+    },
+    {
+      "name": "Horizontal grate bar 0",
+      "kind": "box",
+      "bounds": [
+        -2.02,
+        -1.9,
+        -0.13,
+        2.02,
+        -1.66,
+        0
+      ],
+      "radius": 0.065,
+      "material": "Finish"
+    },
+    {
+      "name": "Staggered slot bridge 0",
+      "kind": "box",
+      "bounds": [
+        0.8,
+        -1.7,
+        -0.13,
+        1.0,
+        -1.33,
+        0
+      ],
+      "radius": 0,
+      "material": "Finish"
+    },
+    {
+      "name": "Horizontal grate bar 1",
+      "kind": "box",
+      "bounds": [
+        -2.02,
+        -1.38,
+        -0.13,
+        2.02,
+        -1.14,
+        0
+      ],
+      "radius": 0.065,
+      "material": "Finish"
+    },
+    {
+      "name": "Staggered slot bridge 1",
+      "kind": "box",
+      "bounds": [
+        -1.0,
+        -1.18,
+        -0.13,
+        -0.8,
+        -0.8099999999999999,
+        0
+      ],
+      "radius": 0,
+      "material": "Finish"
+    },
+    {
+      "name": "Horizontal grate bar 2",
+      "kind": "box",
+      "bounds": [
+        -2.02,
+        -0.8599999999999999,
+        -0.13,
+        2.02,
+        -0.6199999999999999,
+        0
+      ],
+      "radius": 0.065,
+      "material": "Finish"
+    },
+    {
+      "name": "Staggered slot bridge 2",
+      "kind": "box",
+      "bounds": [
+        0.8,
+        -0.6599999999999999,
+        -0.13,
+        1.0,
+        -0.2899999999999999,
+        0
+      ],
+      "radius": 0,
+      "material": "Finish"
+    },
+    {
+      "name": "Horizontal grate bar 3",
+      "kind": "box",
+      "bounds": [
+        -2.02,
+        -0.33999999999999986,
+        -0.13,
+        2.02,
+        -0.09999999999999987,
+        0
+      ],
+      "radius": 0.065,
+      "material": "Finish"
+    },
+    {
+      "name": "Staggered slot bridge 3",
+      "kind": "box",
+      "bounds": [
+        -1.0,
+        -0.13999999999999985,
+        -0.13,
+        -0.8,
+        0.2300000000000001,
+        0
+      ],
+      "radius": 0,
+      "material": "Finish"
+    },
+    {
+      "name": "Horizontal grate bar 4",
+      "kind": "box",
+      "bounds": [
+        -2.02,
+        0.18000000000000016,
+        -0.13,
+        2.02,
+        0.42000000000000015,
+        0
+      ],
+      "radius": 0.065,
+      "material": "Finish"
+    },
+    {
+      "name": "Staggered slot bridge 4",
+      "kind": "box",
+      "bounds": [
+        0.8,
+        0.38000000000000017,
+        -0.13,
+        1.0,
+        0.7500000000000001,
+        0
+      ],
+      "radius": 0,
+      "material": "Finish"
+    },
+    {
+      "name": "Horizontal grate bar 5",
+      "kind": "box",
+      "bounds": [
+        -2.02,
+        0.7000000000000002,
+        -0.13,
+        2.02,
+        0.9400000000000002,
+        0
+      ],
+      "radius": 0.065,
+      "material": "Finish"
+    },
+    {
+      "name": "Staggered slot bridge 5",
+      "kind": "box",
+      "bounds": [
+        -1.0,
+        0.9000000000000001,
+        -0.13,
+        -0.8,
+        1.27,
+        0
+      ],
+      "radius": 0,
+      "material": "Finish"
+    },
+    {
+      "name": "Horizontal grate bar 6",
+      "kind": "box",
+      "bounds": [
+        -2.02,
+        1.2200000000000002,
+        -0.13,
+        2.02,
+        1.4600000000000002,
+        0
+      ],
+      "radius": 0.065,
+      "material": "Finish"
+    },
+    {
+      "name": "Staggered slot bridge 6",
+      "kind": "box",
+      "bounds": [
+        0.8,
+        1.4200000000000002,
+        -0.13,
+        1.0,
+        1.79,
+        0
+      ],
+      "radius": 0,
+      "material": "Finish"
+    },
+    {
+      "name": "Horizontal grate bar 7",
+      "kind": "box",
+      "bounds": [
+        -2.02,
+        1.7400000000000002,
+        -0.13,
+        2.02,
+        1.9800000000000002,
+        0
+      ],
+      "radius": 0.065,
+      "material": "Finish"
+    },
+    {
+      "name": "Staggered slot bridge 7",
+      "kind": "box",
+      "bounds": [
+        -1.0,
+        1.9400000000000002,
+        -0.13,
+        -0.8,
+        2.04,
+        0
+      ],
+      "radius": 0,
+      "material": "Finish"
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://media.brizo.com/SpecSheet/BSP-A-BT062415%20Rev%20C.pdf",
+      "document": "BSP-A-BT062415 Rev C",
+      "page": 1,
+      "visual_review_method": "Web PDF screenshot"
+    }
+  ],
+  "dimension_authority": [
+    "Flange diameter 6.125 in; grate width/depth 4.5625 in; overall height 4.0625 in; socket OD 2.6875 in."
+  ],
+  "limitations": [
+    "SOURCE CONFLICT: current manufacturer calls BT062415 Tile-In but Rev C depicts a slotted grate. This model follows the dimensioned Rev C drawing and must be reviewed against the purchased part.",
+    "Adjustable grate is set at the drawing minimum; detailed screw fittings omitted.",
+    "Independent visualization reconstruction with fixed product dimensions and editable native materials.",
+    "Small fillets, seams, nozzle details and optical material response are inferred where the manufacturer does not dimension them.",
+    "No internal hydraulic performance, MEP connectors, fabrication tolerances or procurement substitutions are implied."
+  ],
+  "anchors": [
+    {
+      "label": "Flange diameter",
+      "parts": [
+        "Clamping flange"
+      ],
+      "axis": 0,
+      "nominal_in": 6.125
+    }
+  ],
+  "all_overall_dimensions_authoritative": true,
+  "rfa_search": {
+    "result": "No acceptable no-account RFA recovered",
+    "evidence": "_research/BT062415-BNX/sources.json"
+  }
+}

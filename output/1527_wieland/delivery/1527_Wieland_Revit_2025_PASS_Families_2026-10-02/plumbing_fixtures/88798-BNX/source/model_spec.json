@@ -1,0 +1,784 @@
+{
+  "key": "88798-BNX",
+  "model": "88798-BNX",
+  "manufacturer": "Brizo",
+  "type_name": "88798-BNX - Black",
+  "basename": "Brizo_88798-BNX_R2025",
+  "name": "Levoir wallbar handshower and hose",
+  "host": "wall",
+  "configured_dimensions_in": [
+    7.09375,
+    50.46255550980766,
+    4.57
+  ],
+  "materials": {
+    "Finish": {
+      "rgb": [
+        58,
+        60,
+        62
+      ],
+      "gloss": 0.92,
+      "reflectivity": 0.72,
+      "class": "Metal"
+    },
+    "Detail": {
+      "rgb": [
+        24,
+        25,
+        26
+      ],
+      "gloss": 0.17,
+      "reflectivity": 0.04,
+      "class": "Plastic"
+    },
+    "Graphite": {
+      "rgb": [
+        64,
+        67,
+        69
+      ],
+      "gloss": 0.36,
+      "reflectivity": 0.16,
+      "class": "Glass"
+    },
+    "Ceramic": {
+      "rgb": [
+        245,
+        245,
+        241
+      ],
+      "gloss": 0.86,
+      "reflectivity": 0.22,
+      "class": "Ceramic"
+    },
+    "Brass": {
+      "rgb": [
+        160,
+        124,
+        64
+      ],
+      "gloss": 0.4,
+      "reflectivity": 0.38,
+      "class": "Metal"
+    },
+    "Green": {
+      "rgb": [
+        31,
+        113,
+        66
+      ],
+      "gloss": 0.18,
+      "reflectivity": 0.05,
+      "class": "Plastic"
+    },
+    "Gray": {
+      "rgb": [
+        131,
+        132,
+        130
+      ],
+      "gloss": 0.32,
+      "reflectivity": 0.12,
+      "class": "Plastic"
+    }
+  },
+  "geometry": [
+    {
+      "kind": "profile",
+      "name": "Curved rectangular slide bar",
+      "origin": [
+        -0.875,
+        0,
+        0
+      ],
+      "u": [
+        0,
+        0,
+        1
+      ],
+      "v": [
+        0,
+        1,
+        0
+      ],
+      "normal": [
+        1,
+        0,
+        0
+      ],
+      "points": [
+        [
+          0,
+          11.34375
+        ],
+        [
+          0,
+          12.84375
+        ],
+        [
+          2.9,
+          13.34375
+        ],
+        [
+          3.75,
+          12.84375
+        ],
+        [
+          3.75,
+          -12.84375
+        ],
+        [
+          2.9,
+          -13.34375
+        ],
+        [
+          0,
+          -12.84375
+        ],
+        [
+          0,
+          -11.34375
+        ],
+        [
+          0.3,
+          -11.34375
+        ],
+        [
+          0.3,
+          -12.59375
+        ],
+        [
+          2.8,
+          -12.99375
+        ],
+        [
+          3.4,
+          -12.59375
+        ],
+        [
+          3.4,
+          12.59375
+        ],
+        [
+          2.8,
+          12.99375
+        ],
+        [
+          0.3,
+          12.59375
+        ],
+        [
+          0.3,
+          11.34375
+        ]
+      ],
+      "length": 1.75
+    },
+    {
+      "name": "Slider clamp",
+      "kind": "cylinder",
+      "origin": [
+        0,
+        -1.5,
+        3.65
+      ],
+      "axis": [
+        1,
+        0,
+        0
+      ],
+      "radius": 0.65,
+      "a": -2.125,
+      "b": 3,
+      "material": "Finish"
+    },
+    {
+      "name": "Handshower round head",
+      "kind": "cylinder",
+      "origin": [
+        3,
+        7.4,
+        3.8
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "radius": 1.96875,
+      "a": 0,
+      "b": 0.65,
+      "material": "Finish"
+    },
+    {
+      "name": "Spray face",
+      "kind": "cylinder",
+      "origin": [
+        3,
+        7.4,
+        3.8
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "radius": 1.83,
+      "a": 0.65,
+      "b": 0.72,
+      "material": "Gray"
+    },
+    {
+      "name": "Handshower handle",
+      "kind": "cylinder",
+      "origin": [
+        3,
+        0,
+        4.05
+      ],
+      "axis": [
+        0,
+        1,
+        0
+      ],
+      "radius": 0.52,
+      "a": -2.00625,
+      "b": 5.95,
+      "material": "Finish"
+    },
+    {
+      "name": "Bottom hose outlet",
+      "kind": "cylinder",
+      "origin": [
+        0,
+        -12.34375,
+        2.0
+      ],
+      "axis": [
+        0,
+        -1,
+        0
+      ],
+      "radius": 0.375,
+      "a": 0,
+      "b": 1.2,
+      "material": "Finish"
+    },
+    {
+      "name": "Head nozzle 0",
+      "kind": "cylinder",
+      "origin": [
+        4.35,
+        7.4,
+        4.5
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "radius": 0.08,
+      "a": 0,
+      "b": 0.07,
+      "material": "Detail"
+    },
+    {
+      "name": "Head nozzle 1",
+      "kind": "cylinder",
+      "origin": [
+        4.303999865490242,
+        7.749405710888404,
+        4.5
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "radius": 0.08,
+      "a": 0,
+      "b": 0.07,
+      "material": "Detail"
+    },
+    {
+      "name": "Head nozzle 2",
+      "kind": "cylinder",
+      "origin": [
+        4.169134295108992,
+        8.075000000000001,
+        4.5
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "radius": 0.08,
+      "a": 0,
+      "b": 0.07,
+      "material": "Detail"
+    },
+    {
+      "name": "Head nozzle 3",
+      "kind": "cylinder",
+      "origin": [
+        3.954594154601839,
+        8.35459415460184,
+        4.5
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "radius": 0.08,
+      "a": 0,
+      "b": 0.07,
+      "material": "Detail"
+    },
+    {
+      "name": "Head nozzle 4",
+      "kind": "cylinder",
+      "origin": [
+        3.6750000000000003,
+        8.569134295108993,
+        4.5
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "radius": 0.08,
+      "a": 0,
+      "b": 0.07,
+      "material": "Detail"
+    },
+    {
+      "name": "Head nozzle 5",
+      "kind": "cylinder",
+      "origin": [
+        3.349405710888403,
+        8.703999865490243,
+        4.5
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "radius": 0.08,
+      "a": 0,
+      "b": 0.07,
+      "material": "Detail"
+    },
+    {
+      "name": "Head nozzle 6",
+      "kind": "cylinder",
+      "origin": [
+        3.0,
+        8.75,
+        4.5
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "radius": 0.08,
+      "a": 0,
+      "b": 0.07,
+      "material": "Detail"
+    },
+    {
+      "name": "Head nozzle 7",
+      "kind": "cylinder",
+      "origin": [
+        2.6505942891115972,
+        8.703999865490243,
+        4.5
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "radius": 0.08,
+      "a": 0,
+      "b": 0.07,
+      "material": "Detail"
+    },
+    {
+      "name": "Head nozzle 8",
+      "kind": "cylinder",
+      "origin": [
+        2.325,
+        8.569134295108993,
+        4.5
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "radius": 0.08,
+      "a": 0,
+      "b": 0.07,
+      "material": "Detail"
+    },
+    {
+      "name": "Head nozzle 9",
+      "kind": "cylinder",
+      "origin": [
+        2.045405845398161,
+        8.35459415460184,
+        4.5
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "radius": 0.08,
+      "a": 0,
+      "b": 0.07,
+      "material": "Detail"
+    },
+    {
+      "name": "Head nozzle 10",
+      "kind": "cylinder",
+      "origin": [
+        1.8308657048910078,
+        8.075000000000001,
+        4.5
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "radius": 0.08,
+      "a": 0,
+      "b": 0.07,
+      "material": "Detail"
+    },
+    {
+      "name": "Head nozzle 11",
+      "kind": "cylinder",
+      "origin": [
+        1.696000134509758,
+        7.749405710888404,
+        4.5
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "radius": 0.08,
+      "a": 0,
+      "b": 0.07,
+      "material": "Detail"
+    },
+    {
+      "name": "Head nozzle 12",
+      "kind": "cylinder",
+      "origin": [
+        1.65,
+        7.4,
+        4.5
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "radius": 0.08,
+      "a": 0,
+      "b": 0.07,
+      "material": "Detail"
+    },
+    {
+      "name": "Head nozzle 13",
+      "kind": "cylinder",
+      "origin": [
+        1.6960001345097577,
+        7.050594289111597,
+        4.5
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "radius": 0.08,
+      "a": 0,
+      "b": 0.07,
+      "material": "Detail"
+    },
+    {
+      "name": "Head nozzle 14",
+      "kind": "cylinder",
+      "origin": [
+        1.8308657048910075,
+        6.7250000000000005,
+        4.5
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "radius": 0.08,
+      "a": 0,
+      "b": 0.07,
+      "material": "Detail"
+    },
+    {
+      "name": "Head nozzle 15",
+      "kind": "cylinder",
+      "origin": [
+        2.04540584539816,
+        6.445405845398161,
+        4.5
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "radius": 0.08,
+      "a": 0,
+      "b": 0.07,
+      "material": "Detail"
+    },
+    {
+      "name": "Head nozzle 16",
+      "kind": "cylinder",
+      "origin": [
+        2.3249999999999993,
+        6.230865704891008,
+        4.5
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "radius": 0.08,
+      "a": 0,
+      "b": 0.07,
+      "material": "Detail"
+    },
+    {
+      "name": "Head nozzle 17",
+      "kind": "cylinder",
+      "origin": [
+        2.6505942891115972,
+        6.096000134509758,
+        4.5
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "radius": 0.08,
+      "a": 0,
+      "b": 0.07,
+      "material": "Detail"
+    },
+    {
+      "name": "Head nozzle 18",
+      "kind": "cylinder",
+      "origin": [
+        2.9999999999999996,
+        6.050000000000001,
+        4.5
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "radius": 0.08,
+      "a": 0,
+      "b": 0.07,
+      "material": "Detail"
+    },
+    {
+      "name": "Head nozzle 19",
+      "kind": "cylinder",
+      "origin": [
+        3.3494057108884023,
+        6.096000134509758,
+        4.5
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "radius": 0.08,
+      "a": 0,
+      "b": 0.07,
+      "material": "Detail"
+    },
+    {
+      "name": "Head nozzle 20",
+      "kind": "cylinder",
+      "origin": [
+        3.6750000000000003,
+        6.230865704891008,
+        4.5
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "radius": 0.08,
+      "a": 0,
+      "b": 0.07,
+      "material": "Detail"
+    },
+    {
+      "name": "Head nozzle 21",
+      "kind": "cylinder",
+      "origin": [
+        3.954594154601839,
+        6.445405845398161,
+        4.5
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "radius": 0.08,
+      "a": 0,
+      "b": 0.07,
+      "material": "Detail"
+    },
+    {
+      "name": "Head nozzle 22",
+      "kind": "cylinder",
+      "origin": [
+        4.169134295108992,
+        6.725,
+        4.5
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "radius": 0.08,
+      "a": 0,
+      "b": 0.07,
+      "material": "Detail"
+    },
+    {
+      "name": "Head nozzle 23",
+      "kind": "cylinder",
+      "origin": [
+        4.303999865490242,
+        7.050594289111596,
+        4.5
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "radius": 0.08,
+      "a": 0,
+      "b": 0.07,
+      "material": "Detail"
+    },
+    {
+      "name": "60 inch hose",
+      "kind": "sweep",
+      "path": [
+        [
+          0,
+          -13.54375,
+          3.4
+        ],
+        [
+          0,
+          -35.418805509807655,
+          3.4
+        ],
+        [
+          "arc",
+          [
+            1.5,
+            -36.918805509807655,
+            3.4
+          ],
+          [
+            3,
+            -35.418805509807655,
+            3.4
+          ]
+        ],
+        [
+          3,
+          -2.00625,
+          3.4
+        ]
+      ],
+      "radius": 0.2,
+      "material": "Finish"
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://media.brizo.com/SpecSheet/BSP-B-88798%20Rev%20D.pdf",
+      "document": "Brizo BSP-B-88798 Rev D",
+      "page": 1,
+      "local_image": "_research/88798-BNX/downloads/BSP-B-88798_Rev_D_pages/page_01.png"
+    }
+  ],
+  "dimension_authority": [
+    "Bar height 26.6875 in; bar width 1.75 in; projection 3.75 in; head diameter 3.9375 in; handshower length 11.375 in."
+  ],
+  "limitations": [
+    "ASSUMPTION: handshower upright pose and 60 in hanging hose shape are fixed. The complete posed envelope is not a factory rigid-body dimension.",
+    "Bar end bends, slider fittings and nozzle layout are simplified; hose is smooth rather than corrugated.",
+    "Independent visualization reconstruction with fixed product dimensions and editable native materials.",
+    "Small fillets, seams, nozzle details and optical material response are inferred where the manufacturer does not dimension them.",
+    "No internal hydraulic performance, MEP connectors, fabrication tolerances or procurement substitutions are implied."
+  ],
+  "anchors": [
+    {
+      "label": "Bar height",
+      "parts": [
+        "Curved rectangular slide bar"
+      ],
+      "axis": 1,
+      "nominal_in": 26.6875
+    },
+    {
+      "label": "Head diameter",
+      "parts": [
+        "Handshower round head"
+      ],
+      "axis": 0,
+      "nominal_in": 3.9375
+    }
+  ],
+  "all_overall_dimensions_authoritative": false,
+  "rfa_search": {
+    "result": "No acceptable no-account RFA recovered",
+    "evidence": "_research/88798-BNX/sources.json"
+  },
+  "native_path_checks": [
+    {
+      "part": "60 inch hose",
+      "nominal_in": 60
+    }
+  ]
+}

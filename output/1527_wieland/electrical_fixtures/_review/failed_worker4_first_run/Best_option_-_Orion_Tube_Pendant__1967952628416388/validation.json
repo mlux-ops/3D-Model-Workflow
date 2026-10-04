@@ -1,0 +1,124 @@
+{
+  "revit_version": "2025", 
+  "revit_build": "25.4.50.35", 
+  "template_form_ids": [
+    "1537"
+  ], 
+  "stage": "failed", 
+  "technical_pass": false, 
+  "expected_dimensions_in": [
+    36.125, 
+    5.125, 
+    48.0
+  ], 
+  "rfa_path": "E:\\Claude\\3D-Model-Workflow\\output\\1527_wieland\\electrical_fixtures\\Best_option_-_Orion_Tube_Pendant__1967952628416388\\Lee_Broom_Orion_Tube_ORI0120_Horizontal_Assumed_R2025.rfa", 
+  "manufacturer": "Lee Broom", 
+  "cct_k": null, 
+  "started_utc": "2026-10-02T16:06:19.336000Z", 
+  "companion_bitmaps": {
+    "Opal Tube Finish": "E:\\Claude\\3D-Model-Workflow\\output\\1527_wieland\\electrical_fixtures\\Best_option_-_Orion_Tube_Pendant__1967952628416388\\source\\textures\\Opal_Tube_Finish.png", 
+    "Tensile Wire Finish": "E:\\Claude\\3D-Model-Workflow\\output\\1527_wieland\\electrical_fixtures\\Best_option_-_Orion_Tube_Pendant__1967952628416388\\source\\textures\\Tensile_Wire_Finish.png", 
+    "Metal Finish": "E:\\Claude\\3D-Model-Workflow\\output\\1527_wieland\\electrical_fixtures\\Best_option_-_Orion_Tube_Pendant__1967952628416388\\source\\textures\\Metal_Finish.png", 
+    "Clear Cord Finish": "E:\\Claude\\3D-Model-Workflow\\output\\1527_wieland\\electrical_fixtures\\Best_option_-_Orion_Tube_Pendant__1967952628416388\\source\\textures\\Clear_Cord_Finish.png"
+  }, 
+  "model": "ORI0120 - ASSUMED FINISH / HORIZONTAL", 
+  "component_checks": [
+    {
+      "expected_dimensions_in": [
+        34.5, 
+        5.125, 
+        5.125
+      ], 
+      "element_ids": [
+        "3217", 
+        "3218"
+      ], 
+      "label": "Current US fixture body", 
+      "source": "EN 0626rev21 US page 2, 34.5 by 5.125 inches"
+    }, 
+    {
+      "expected_dimensions_in": [
+        5.125, 
+        5.125, 
+        5.125
+      ], 
+      "element_ids": [
+        "3217"
+      ], 
+      "label": "Polished metal globe", 
+      "source": "EN 0626rev21 US page 2"
+    }, 
+    {
+      "expected_dimensions_in": [
+        1.625, 
+        1.625, 
+        0.625
+      ], 
+      "element_ids": [
+        "3219"
+      ], 
+      "label": "Mini canopy 1", 
+      "source": "EN 0626rev21 US page 2, printed inch dimensions"
+    }, 
+    {
+      "expected_dimensions_in": [
+        1.625, 
+        1.625, 
+        0.625
+      ], 
+      "element_ids": [
+        "3222"
+      ], 
+      "label": "Mini canopy 2", 
+      "source": "EN 0626rev21 US page 2, printed inch dimensions"
+    }
+  ], 
+  "type": "ORI0120 - ASSUMED FINISH / HORIZONTAL", 
+  "error": "Traceback (most recent call last):\n  File \"E:\\Claude\\3D-Model-Workflow\\output\\1527_wieland\\electrical_fixtures\\Best_option_-_Orion_Tube_Pendant__1967952628416388\\source\\build_family.py\", line 28, in main\n    f.cylinder('Electrical cord' if index==0 else 'Steel tensile wire',xyz(x,0,0),DB.XYZ.BasisZ,.036 if index==0 else .023,.625,body_z,cord)\n  File \"E:\\Claude\\3D-Model-Workflow\\output\\1527_wieland\\electrical_fixtures\\_tools\\native_fixture_support.py\", line 164, in cylinder\n    def cylinder(self,name,origin,axis,r,a,b,material,rounding=0):return self.add(name,cylinder_solid(origin,axis,r,a,b,rounding),material)\n  File \"E:\\Claude\\3D-Model-Workflow\\output\\1527_wieland\\electrical_fixtures\\_tools\\native_fixture_support.py\", line 53, in cylinder_solid\n    return revolve_solid(origin,axis,p)\n  File \"E:\\Claude\\3D-Model-Workflow\\output\\1527_wieland\\electrical_fixtures\\_tools\\native_fixture_support.py\", line 46, in revolve_solid\n    return DB.GeometryCreationUtilities.CreateRevolvedGeometry(frame,List[DB.CurveLoop]([loop(origin,radial,axis,profile)]),0,math.pi*2)\n  File \"E:\\Claude\\3D-Model-Workflow\\output\\1527_wieland\\electrical_fixtures\\_tools\\native_fixture_support.py\", line 27, in loop\n    result.Append(DB.Line.CreateBound(at(current),at(end)))\nException: Curve length is too small for Revit's tolerance (as identified by Application.ShortCurveTolerance).\r\nParameter name: endpoints\n", 
+  "appearance_defaults": {
+    "Opal Tube Finish": {
+      "rgb": [
+        244, 
+        244, 
+        238
+      ], 
+      "luminance": 0, 
+      "gloss": 0.20000000000000001, 
+      "transparency": 0.059999999999999998, 
+      "cct_k": null
+    }, 
+    "Tensile Wire Finish": {
+      "rgb": [
+        176, 
+        182, 
+        185
+      ], 
+      "luminance": 0, 
+      "gloss": 0.65000000000000002, 
+      "transparency": 0, 
+      "cct_k": null
+    }, 
+    "Metal Finish": {
+      "rgb": [
+        193, 
+        152, 
+        80
+      ], 
+      "luminance": 0, 
+      "gloss": 0.90000000000000002, 
+      "transparency": 0, 
+      "cct_k": null
+    }, 
+    "Clear Cord Finish": {
+      "rgb": [
+        219, 
+        224, 
+        225
+      ], 
+      "luminance": 0, 
+      "gloss": 0.34999999999999998, 
+      "transparency": 0.55000000000000004, 
+      "cct_k": null
+    }
+  }
+}

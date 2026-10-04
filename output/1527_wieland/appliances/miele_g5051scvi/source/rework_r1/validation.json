@@ -1,0 +1,574 @@
+{
+  "bitmap_gate": true,
+  "build_method": "native_custom_new_family",
+  "category": "Specialty Equipment",
+  "all_acceptance_gates_pass": false,
+  "import_instance_count": 0,
+  "saved_revit_format": "2025",
+  "revit_version": "2025",
+  "saved_rfa": "E:\u005cClaude\u005c3D-Model-Workflow\u005coutput\u005c1527_wieland\u005cappliances\u005cmiele_g5051scvi\u005cmiele_g5051scvi_Custom_R1_R2025.rfa",
+  "replacement_reason": "Orchestrator round 1: exact-identity manufacturer working family fails the <=1 mm complete overall dimension gate. New native custom geometry replaces the working selection; OEM originals and prior working RFA remain preserved.",
+  "axis_convention": "X width, Y front-to-back depth, Z vertical height; millimetres.",
+  "status": "BUILT_WITH_LIMITATIONS",
+  "placement": {
+    "placement_type": "WorkPlaneBased",
+    "loaded": true,
+    "placed": true,
+    "host_category": "Floors",
+    "family_category": "Specialty Equipment",
+    "type": "G 5051 SCVi ADA - Custom R1"
+  },
+  "placement_transform": {
+    "origin_mm": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "basis_x": [
+      1.0,
+      0.0,
+      0.0
+    ],
+    "basis_z": [
+      0.0,
+      0.0,
+      1.0
+    ],
+    "basis_y": [
+      0.0,
+      1.0,
+      0.0
+    ]
+  },
+  "visual_review_pending": true,
+  "revision": "Custom_R1",
+  "native_gates_pass": true,
+  "started_utc": "2026-10-02 23:58:24.448000",
+  "native_freeform_count": 20,
+  "previews": [
+    "E:\u005cClaude\u005c3D-Model-Workflow\u005coutput\u005c1527_wieland\u005cappliances\u005cmiele_g5051scvi\u005cviews\u005crework_r1\u005coblique - 3D View - oblique.png",
+    "E:\u005cClaude\u005c3D-Model-Workflow\u005coutput\u005c1527_wieland\u005cappliances\u005cmiele_g5051scvi\u005cviews\u005crework_r1\u005cfront - 3D View - front.png",
+    "E:\u005cClaude\u005c3D-Model-Workflow\u005coutput\u005c1527_wieland\u005cappliances\u005cmiele_g5051scvi\u005cviews\u005crework_r1\u005cside - 3D View - side.png"
+  ],
+  "category_gate": true,
+  "family_bounds": {
+    "parts": [
+      {
+        "class": "FreeFormElement",
+        "name": "Cabinet Back",
+        "min_mm": [
+          -299.00000882148743,
+          533.99999971389775,
+          20.000001060962678
+        ],
+        "id": 2977,
+        "max_mm": [
+          299.00000882148743,
+          550.00000419616697,
+          815.00003528594971
+        ]
+      },
+      {
+        "class": "FreeFormElement",
+        "name": "Cabinet Side L",
+        "min_mm": [
+          -299.00000882148743,
+          37.999999290704729,
+          20.000001060962678
+        ],
+        "id": 2981,
+        "max_mm": [
+          -283.99999780654906,
+          533.99999971389775,
+          815.00003528594971
+        ]
+      },
+      {
+        "class": "FreeFormElement",
+        "name": "Cabinet Side R",
+        "min_mm": [
+          283.99999780654906,
+          37.999999290704729,
+          20.000001060962678
+        ],
+        "id": 2985,
+        "max_mm": [
+          299.00000882148743,
+          533.99999971389775,
+          815.00003528594971
+        ]
+      },
+      {
+        "class": "FreeFormElement",
+        "name": "Cabinet Top",
+        "min_mm": [
+          -283.99999780654906,
+          36.000001001358036,
+          800.00000610351560
+        ],
+        "id": 2989,
+        "max_mm": [
+          283.99999780654906,
+          533.99999971389775,
+          815.00003528594971
+        ]
+      },
+      {
+        "class": "FreeFormElement",
+        "name": "Machine Base",
+        "min_mm": [
+          -283.99999780654906,
+          80.000004243850711,
+          11.999999955296516
+        ],
+        "id": 2993,
+        "max_mm": [
+          283.99999780654906,
+          526.00001564025877,
+          129.99999554157259
+        ]
+      },
+      {
+        "class": "FreeFormElement",
+        "name": "Recessed Toe Panel",
+        "min_mm": [
+          -278.99999413490298,
+          68.000000882148740,
+          20.000001060962678
+        ],
+        "id": 2997,
+        "max_mm": [
+          278.99999413490298,
+          75.999998581409457,
+          112.99999759197236
+        ]
+      },
+      {
+        "class": "FreeFormElement",
+        "name": "Factory Door Skin",
+        "min_mm": [
+          -295.99999208450316,
+          -6.2532884025360109e-24,
+          115.99999616146088
+        ],
+        "id": 3001,
+        "max_mm": [
+          295.99999208450316,
+          33.000000160932544,
+          787.00000019073491
+        ]
+      },
+      {
+        "class": "FreeFormElement",
+        "name": "Top Control Strip",
+        "min_mm": [
+          -295.99999208450316,
+          0.0,
+          789.00002346038821
+        ],
+        "id": 3005,
+        "max_mm": [
+          295.99999208450316,
+          35.000000721216203,
+          814.00002365112312
+        ]
+      },
+      {
+        "class": "FreeFormElement",
+        "name": "Control Display",
+        "min_mm": [
+          45.000001251697540,
+          3.9999999850988388,
+          813.00001201629641
+        ],
+        "id": 3009,
+        "max_mm": [
+          87.999997401237493,
+          23.999999910593033,
+          815.00003528594971
+        ]
+      },
+      {
+        "class": "FreeFormElement",
+        "name": "Top Control Key 0",
+        "min_mm": [
+          -219.00000457763673,
+          10.999999675154687,
+          813.00001201629641
+        ],
+        "id": 3013,
+        "max_mm": [
+          -211.00000233650209,
+          18.999999645352364,
+          815.00003528594971
+        ]
+      },
+      {
+        "class": "FreeFormElement",
+        "name": "Top Control Key 1",
+        "min_mm": [
+          -178.99999337196351,
+          10.999999675154687,
+          813.00001201629641
+        ],
+        "id": 3017,
+        "max_mm": [
+          -170.99999113082887,
+          18.999999645352364,
+          815.00003528594971
+        ]
+      },
+      {
+        "class": "FreeFormElement",
+        "name": "Top Control Key 2",
+        "min_mm": [
+          -133.99999666213989,
+          10.999999675154687,
+          813.00001201629641
+        ],
+        "id": 3021,
+        "max_mm": [
+          -126.00000350475312,
+          18.999999645352364,
+          815.00003528594971
+        ]
+      },
+      {
+        "class": "FreeFormElement",
+        "name": "Top Control Key 3",
+        "min_mm": [
+          -88.999999952316287,
+          10.999999675154687,
+          813.00001201629641
+        ],
+        "id": 3025,
+        "max_mm": [
+          -80.999997711181649,
+          18.999999645352364,
+          815.00003528594971
+        ]
+      },
+      {
+        "class": "FreeFormElement",
+        "name": "Top Control Key 4",
+        "min_mm": [
+          120.99999983310700,
+          10.999999675154687,
+          813.00001201629641
+        ],
+        "id": 3029,
+        "max_mm": [
+          129.00000207424165,
+          18.999999645352364,
+          815.00003528594971
+        ]
+      },
+      {
+        "class": "FreeFormElement",
+        "name": "Top Control Key 5",
+        "min_mm": [
+          155.99999828338625,
+          10.999999675154687,
+          813.00001201629641
+        ],
+        "id": 3033,
+        "max_mm": [
+          164.00000052452089,
+          18.999999645352364,
+          815.00003528594971
+        ]
+      },
+      {
+        "class": "FreeFormElement",
+        "name": "Top Control Key 6",
+        "min_mm": [
+          191.00000581741332,
+          10.999999675154687,
+          813.00001201629641
+        ],
+        "id": 3037,
+        "max_mm": [
+          199.00000805854799,
+          18.999999645352364,
+          815.00003528594971
+        ]
+      },
+      {
+        "class": "FreeFormElement",
+        "name": "Adjustable Foot 0 0",
+        "min_mm": [
+          -277.00000720024110,
+          90.999995970726019,
+          -2.9158657214649792e-21
+        ],
+        "id": 3041,
+        "max_mm": [
+          -250.99999537467957,
+          116.99999871253968,
+          20.999999070167544
+        ]
+      },
+      {
+        "class": "FreeFormElement",
+        "name": "Adjustable Foot 0 1",
+        "min_mm": [
+          -277.00000720024110,
+          491.00000810623169,
+          -2.9158657214649792e-21
+        ],
+        "id": 3045,
+        "max_mm": [
+          -250.99999537467957,
+          516.99998359680183,
+          20.999999070167544
+        ]
+      },
+      {
+        "class": "FreeFormElement",
+        "name": "Adjustable Foot 1 0",
+        "min_mm": [
+          250.99999537467957,
+          90.999995970726019,
+          -2.9158657214649792e-21
+        ],
+        "id": 3049,
+        "max_mm": [
+          277.00000720024110,
+          116.99999871253968,
+          20.999999070167544
+        ]
+      },
+      {
+        "class": "FreeFormElement",
+        "name": "Adjustable Foot 1 1",
+        "min_mm": [
+          250.99999537467957,
+          491.00000810623169,
+          -2.9158657214649792e-21
+        ],
+        "id": 3053,
+        "max_mm": [
+          277.00000720024110,
+          516.99998359680183,
+          20.999999070167544
+        ]
+      }
+    ],
+    "xyz_size_mm": [
+      598.00001764297485,
+      550.00000419616697,
+      815.00003528594971
+    ],
+    "min_mm": [
+      -299.00000882148743,
+      -6.2532884025360109e-24,
+      -2.9158657214649792e-21
+    ],
+    "max_mm": [
+      299.00000882148743,
+      550.00000419616697,
+      815.00003528594971
+    ]
+  },
+  "parameter_flex": [
+    {
+      "substitution_pass": true,
+      "name": "Black Finish",
+      "geometry_bindings": 13,
+      "bound_element_ids": [
+        2993,
+        2997,
+        3013,
+        3017,
+        3021,
+        3025,
+        3029,
+        3033,
+        3037,
+        3041,
+        3045,
+        3049,
+        3053
+      ],
+      "restored": true
+    },
+    {
+      "substitution_pass": true,
+      "name": "Panel Finish",
+      "geometry_bindings": 1,
+      "bound_element_ids": [
+        3001
+      ],
+      "restored": true
+    },
+    {
+      "substitution_pass": true,
+      "name": "Display Finish",
+      "geometry_bindings": 1,
+      "bound_element_ids": [
+        3009
+      ],
+      "restored": true
+    },
+    {
+      "substitution_pass": true,
+      "name": "Metal Finish",
+      "geometry_bindings": 5,
+      "bound_element_ids": [
+        2977,
+        2981,
+        2985,
+        2989,
+        3005
+      ],
+      "restored": true
+    }
+  ],
+  "identity": {
+    "Model": "G 5051 SCVi ADA",
+    "Manufacturer": "Miele",
+    "Description": "Custom dimension-correct visualization replacement; see round-1 notes"
+  },
+  "ok": true,
+  "nested_instance_count": 0,
+  "placed_bounds": {
+    "parts": [
+      {
+        "class": "FamilyInstance",
+        "name": "G 5051 SCVi ADA - Custom R1",
+        "min_mm": [
+          -299.00000882148743,
+          -6.2532884025360109e-24,
+          -2.9158657214649792e-21
+        ],
+        "id": 3737,
+        "max_mm": [
+          299.00000882148743,
+          550.00000419616697,
+          815.00003528594971
+        ]
+      }
+    ],
+    "xyz_size_mm": [
+      598.00001764297485,
+      550.00000419616697,
+      815.00003528594971
+    ],
+    "min_mm": [
+      -299.00000882148743,
+      -6.2532884025360109e-24,
+      -2.9158657214649792e-21
+    ],
+    "max_mm": [
+      299.00000882148743,
+      550.00000419616697,
+      815.00003528594971
+    ]
+  },
+  "dimension_gate": true,
+  "finished_utc": "2026-10-02 23:58:26.928000",
+  "dimension_gate_scope": "overall",
+  "dimension_basis": "Current product sheet states 598 W x 815 H x 550 D mm. The downloaded ADA model is 805 mm high; this difference is not accepted silently.",
+  "model": "G 5051 SCVi ADA",
+  "identity_gate": true,
+  "stage": "saved_reopened_measured_flexed_placed_previewed",
+  "placement_type": "WorkPlaneBased",
+  "placed_warnings": [
+
+  ],
+  "measurement_scope": "All physical geometry in the complete reopened family and floor-face placed instance. No part or projection filter; no auxiliary bounding object.",
+  "warnings": [
+
+  ],
+  "placed_material_flex": [
+    {
+      "substitution_pass": true,
+      "name": "Black Finish",
+      "restored": true
+    },
+    {
+      "substitution_pass": true,
+      "name": "Panel Finish",
+      "restored": true
+    },
+    {
+      "substitution_pass": true,
+      "name": "Display Finish",
+      "restored": true
+    },
+    {
+      "substitution_pass": true,
+      "name": "Metal Finish",
+      "restored": true
+    }
+  ],
+  "family_dimension_delta_mm": [
+    1.7642974853515625e-05,
+    4.1961669694501325e-06,
+    3.528594970703125e-05
+  ],
+  "dimension_delta_mm": [
+    1.7642974853515625e-05,
+    4.1961669694501325e-06,
+    3.528594970703125e-05
+  ],
+  "reopened": true,
+  "fixed_dimension_parameters": [
+    {
+      "matches_reference": true,
+      "name": "Overall Width",
+      "formula": "1'  11 139/256\u0022",
+      "value_mm": 598.0
+    },
+    {
+      "matches_reference": true,
+      "name": "Overall Depth",
+      "formula": "1'  9 167/256\u0022",
+      "value_mm": 550.0
+    },
+    {
+      "matches_reference": true,
+      "name": "Overall Height",
+      "formula": "2'  8 11/128\u0022",
+      "value_mm": 815.0
+    }
+  ],
+  "material_gate": true,
+  "material_inventory": [
+    {
+      "appearance_id": 2968,
+      "name": "G 5051 SCVi ADA Black Finish",
+      "bitmap": "E:\u005cClaude\u005c3D-Model-Workflow\u005coutput\u005c1527_wieland\u005cappliances\u005cmiele_g5051scvi\u005csource\u005crework_r1\u005cBlack_Finish.png",
+      "bitmap_exists": true
+    },
+    {
+      "appearance_id": 2971,
+      "name": "G 5051 SCVi ADA Panel Finish",
+      "bitmap": "E:\u005cClaude\u005c3D-Model-Workflow\u005coutput\u005c1527_wieland\u005cappliances\u005cmiele_g5051scvi\u005csource\u005crework_r1\u005cPanel_Finish.png",
+      "bitmap_exists": true
+    },
+    {
+      "appearance_id": 2974,
+      "name": "G 5051 SCVi ADA Display Finish",
+      "bitmap": "E:\u005cClaude\u005c3D-Model-Workflow\u005coutput\u005c1527_wieland\u005cappliances\u005cmiele_g5051scvi\u005csource\u005crework_r1\u005cDisplay_Finish.png",
+      "bitmap_exists": true
+    },
+    {
+      "appearance_id": 2965,
+      "name": "G 5051 SCVi ADA Metal Finish",
+      "bitmap": "E:\u005cClaude\u005c3D-Model-Workflow\u005coutput\u005c1527_wieland\u005cappliances\u005cmiele_g5051scvi\u005csource\u005crework_r1\u005cMetal_Finish.png",
+      "bitmap_exists": true
+    }
+  ],
+  "limitations": [
+    "Fixed manufacturer model size; exposed finish parameters are flex-tested.",
+    "Internal partitions, edge radii, controls and concealed mechanisms are reference-derived visualization approximations.",
+    "Default envelope represents the factory appliance without separately supplied customer overlay panels or handles. Panel Finish changes the represented factory front; it does not certify an overlay thickness or panel shop drawing."
+  ],
+  "target_xyz_mm": [
+    598,
+    550,
+    815
+  ],
+  "slug": "miele_g5051scvi"
+}

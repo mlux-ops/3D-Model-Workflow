@@ -1,0 +1,177 @@
+{
+  "parameter_scope": "Nominal product dimensions are fixed formulas. Editable material parameters were flexed on hosted native geometry and restored.", 
+  "expected_dimensions_in": [
+    48.030000000000001, 
+    5.9800000000000004, 
+    2.9900000000000002
+  ], 
+  "bounds_in": [
+    -24.015000343322754, 
+    -2.9900000095367432, 
+    -2.4314044516249841e-24, 
+    24.015000343322754, 
+    2.9900000095367432, 
+    2.9900000095367432
+  ], 
+  "measured_saved_dimensions_in": [
+    48.030000686645508, 
+    5.9800000190734863, 
+    2.9900000095367432
+  ], 
+  "bounds_method": "Fine native face meshes plus 128-sample analytic edges", 
+  "technical_pass": true, 
+  "started_utc": "2026-10-02T15:22:17.919000Z", 
+  "revit_build": "25.4.50.35", 
+  "evidence_files": [
+    "Commercial_Electric_54654241_Wrap_R2025 - 3D View - Front.png", 
+    "Commercial_Electric_54654241_Wrap_R2025 - 3D View - Material.png", 
+    "Commercial_Electric_54654241_Wrap_R2025 - 3D View - Oblique.png", 
+    "Commercial_Electric_54654241_Wrap_R2025 - 3D View - Side.png", 
+    "Commercial_Electric_54654241_Wrap_R2025_Hosted - 3D View - Hosted.png", 
+    "Commercial_Electric_54654241_Wrap_R2025_Isolated - 3D View - Native Front.png", 
+    "Commercial_Electric_54654241_Wrap_R2025_Isolated - 3D View - Native Material.png", 
+    "Commercial_Electric_54654241_Wrap_R2025_Isolated - 3D View - Native Oblique.png", 
+    "Commercial_Electric_54654241_Wrap_R2025_Isolated - 3D View - Native Side.png"
+  ], 
+  "appearance_defaults": {
+    "Metal Finish": {
+      "cct_k": null, 
+      "rgb": [
+        241, 
+        241, 
+        237
+      ], 
+      "transparency": 0, 
+      "gloss": 0.20000000000000001, 
+      "luminance": 0
+    }, 
+    "Diffuser Finish": {
+      "cct_k": null, 
+      "rgb": [
+        245, 
+        245, 
+        240
+      ], 
+      "transparency": 0.059999999999999998, 
+      "gloss": 0.29999999999999999, 
+      "luminance": 0
+    }
+  }, 
+  "dimensional_error_mm": [
+    1.7440795869561043e-05, 
+    4.8446654190570369e-07, 
+    2.4223327095285184e-07
+  ], 
+  "limitations": "Manufacturer-branded 54654241 specification gives 48.03 x 5.98 x 2.99 inches per fixture. The selected package contains four fixtures; this family represents one. ASSUMPTION: wrap diffuser section, sheet thickness, end-cap and mounting details reconstructed from the product illustrations. No superseded Sky Panel geometry is used.", 
+  "stage": "complete", 
+  "cct_k": null, 
+  "category": "Lighting Fixtures", 
+  "host": {
+    "host_kind": "ceiling", 
+    "hostface_present": true, 
+    "instance_host_id": "3697", 
+    "host_id": "3697", 
+    "normal_dot": 1.0
+  }, 
+  "parts": [
+    {
+      "name": "Sheet-metal housing", 
+      "id": "3211", 
+      "volume_ft3": 0.11634822297604848
+    }, 
+    {
+      "name": "Continuous wraparound diffuser", 
+      "id": "3212", 
+      "volume_ft3": 0.36512581011991607
+    }, 
+    {
+      "name": "End cap", 
+      "id": "3213", 
+      "volume_ft3": 0.00094507638888888354
+    }, 
+    {
+      "name": "End cap", 
+      "id": "3214", 
+      "volume_ft3": 0.00094507638888888354
+    }
+  ], 
+  "model": "54654241 (one fixture from 54654241-4PK)", 
+  "template_form_ids": [
+    "1537"
+  ], 
+  "inferences": "Manufacturer-branded 54654241 specification gives 48.03 x 5.98 x 2.99 inches per fixture. The selected package contains four fixtures; this family represents one. ASSUMPTION: wrap diffuser section, sheet thickness, end-cap and mounting details reconstructed from the product illustrations. No superseded Sky Panel geometry is used.", 
+  "source_url": "https://www.manualshelf.com/manual/commercial-electric/54654241-4pk/specification.html", 
+  "actual_dimensions_in": [
+    48.030000686645508, 
+    5.9800000190734863, 
+    2.9900000095367432
+  ], 
+  "reopened_warnings": [], 
+  "finished_utc": "2026-10-02T15:22:23.653000Z", 
+  "saved_file_reopened_for_measurement": true, 
+  "measured_saved_bounds_in": [
+    -24.015000343322754, 
+    -2.9900000095367432, 
+    -2.4314044516249841e-24, 
+    24.015000343322754, 
+    2.9900000095367432, 
+    2.9900000095367432
+  ], 
+  "reopened": true, 
+  "companion_bitmaps": {
+    "Metal Finish": "E:\\Claude\\3D-Model-Workflow\\output\\1527_wieland\\electrical_fixtures\\G1-0_CORRECTION_2026-10-01_G1-1__6312769690861444\\source\\textures\\Metal_Finish.png", 
+    "Diffuser Finish": "E:\\Claude\\3D-Model-Workflow\\output\\1527_wieland\\electrical_fixtures\\G1-0_CORRECTION_2026-10-01_G1-1__6312769690861444\\source\\textures\\Diffuser_Finish.png"
+  }, 
+  "rfa_search": "Official product resources and verified BIM listings searched; no exact, usable anonymous RFA accepted. See retained source resources and manufacturer acquisition/inspection receipts.", 
+  "rfa_path": "E:\\Claude\\3D-Model-Workflow\\output\\1527_wieland\\electrical_fixtures\\G1-0_CORRECTION_2026-10-01_G1-1__6312769690861444\\Commercial_Electric_54654241_Wrap_R2025.rfa", 
+  "manufacturer": "Commercial Electric", 
+  "saved_material_bitmaps": {
+    "Metal Finish": {
+      "path": "E:\\Claude\\3D-Model-Workflow\\output\\1527_wieland\\electrical_fixtures\\G1-0_CORRECTION_2026-10-01_G1-1__6312769690861444\\source\\textures\\Metal_Finish.png", 
+      "exists": true
+    }, 
+    "Diffuser Finish": {
+      "path": "E:\\Claude\\3D-Model-Workflow\\output\\1527_wieland\\electrical_fixtures\\G1-0_CORRECTION_2026-10-01_G1-1__6312769690861444\\source\\textures\\Diffuser_Finish.png", 
+      "exists": true
+    }
+  }, 
+  "family_warnings": [], 
+  "type": "54654241 (one fixture from 54654241-4PK)", 
+  "revit_version": "2025", 
+  "display_bounds_in": [
+    -24.015000000000001, 
+    -2.9900000000000033, 
+    0.0, 
+    24.015000000000001, 
+    2.9900000000000033, 
+    2.9900000000000002
+  ], 
+  "gates": {
+    "dimensions": true, 
+    "materials": true, 
+    "views": true, 
+    "reopened": true, 
+    "saved_dimensions_within_1mm": true, 
+    "orientation": true, 
+    "actual_face_host": true, 
+    "category": true, 
+    "saved_components_within_1mm": true, 
+    "warnings": true, 
+    "cct": true, 
+    "saved_bitmaps_resolve": true
+  }, 
+  "placement": "WorkPlaneBased", 
+  "material_tests": {
+    "Metal Finish": {
+      "writable": true, 
+      "substitution_reaches_faces": true, 
+      "face_count": 30
+    }, 
+    "Diffuser Finish": {
+      "writable": true, 
+      "substitution_reaches_faces": true, 
+      "face_count": 30
+    }
+  }, 
+  "project_warnings": []
+}

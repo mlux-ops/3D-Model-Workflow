@@ -1,0 +1,219 @@
+{
+  "template_form_ids": [
+    "1537"
+  ], 
+  "rfa_search": {
+    "evidence": "_research/50100341/sources.json", 
+    "result": "No acceptable no-account RFA recovered"
+  }, 
+  "actual_dimensions_in": [
+    2.5000000000000004, 
+    2.5000000000000004, 
+    5.3310086205601692
+  ], 
+  "source_dimensions": [
+    "Cap diameter 2.5 in; tailpiece outside diameter 1.25 in."
+  ], 
+  "bounds_in": [
+    -1.2500000000000002, 
+    -1.2500000000000002, 
+    -5.0, 
+    1.2500000000000002, 
+    1.2500000000000002, 
+    0.33100862056016922
+  ], 
+  "reopened": true, 
+  "category": "Plumbing Fixtures", 
+  "actual_dimensions_after_reopen_mm": [
+    63.500000000000007, 
+    63.500000000000007, 
+    135.40761896222830
+  ], 
+  "bounds_method": "Fine native face meshes plus 128-sample analytic edges", 
+  "source_spec_path": "E:\\Claude\\3D-Model-Workflow\\output\\1527_wieland\\plumbing_fixtures\\50100341\\source\\model_spec.json", 
+  "rfa_path": "E:\\Claude\\3D-Model-Workflow\\output\\1527_wieland\\plumbing_fixtures\\50100341\\Hansgrohe_50100341_R2025.rfa", 
+  "stage": "complete", 
+  "cct_k": null, 
+  "placement": "WorkPlaneBased", 
+  "material_tests": {
+    "Detail": {
+      "substitution_reaches_faces": true, 
+      "writable": true, 
+      "face_count": 38
+    }, 
+    "Finish": {
+      "substitution_reaches_faces": true, 
+      "writable": true, 
+      "face_count": 38
+    }
+  }, 
+  "evidence_files": [
+    "Hansgrohe_50100341_R2025_Isolated - 3D View - Native Front.png", 
+    "Hansgrohe_50100341_R2025_Isolated - 3D View - Native Material.png", 
+    "Hansgrohe_50100341_R2025_Isolated - 3D View - Native Oblique.png", 
+    "Hansgrohe_50100341_R2025_Isolated - 3D View - Native Side.png"
+  ], 
+  "model": "50100341", 
+  "acceptance": "NATIVE_GATES_PASSED_PENDING_VISUAL_REVIEW", 
+  "native_path_checks": [], 
+  "finished_utc": "2026-10-02T14:38:07.073000Z", 
+  "source_spec_sha256": "c4dddebe9699c7e45735a4bf5f0d56196ee382a3f13a80209f9386e4ae0d460b", 
+  "reopened_warnings": [], 
+  "project_warnings": [], 
+  "reopen_geometry_equal": true, 
+  "visual_review": "PENDING_NATIVE_IMAGE_REVIEW", 
+  "display_bounds_in": [
+    -1.2500000000000002, 
+    -1.1888206453689443, 
+    -5.0, 
+    1.2500000000000002, 
+    1.1888206453689429, 
+    0.32000000000000006
+  ], 
+  "source_references": [
+    {
+      "page": 387, 
+      "document": "Hansgrohe 2026 US Price Book", 
+      "url": "https://assets.hansgrohe.com/celum/emailmarketing/hansgrohe_2026_Price_Book_en_US.pdf", 
+      "local_image": "_research/catalog_pages/page_387.png"
+    }
+  ], 
+  "appearance_bindings": {
+    "Detail": {
+      "material_id": "3207", 
+      "exists": true, 
+      "path": "E:\\Claude\\3D-Model-Workflow\\output\\1527_wieland\\plumbing_fixtures\\50100341\\textures\\Detail.png"
+    }, 
+    "Finish": {
+      "material_id": "3210", 
+      "exists": true, 
+      "path": "E:\\Claude\\3D-Model-Workflow\\output\\1527_wieland\\plumbing_fixtures\\50100341\\textures\\Finish.png"
+    }
+  }, 
+  "revit_build": "25.4.50.35", 
+  "dimension_anchor_checks": [
+    {
+      "label": "Cap diameter", 
+      "pass": true, 
+      "actual_mm": 63.500000000000007, 
+      "nominal_mm": 63.5, 
+      "deviation_mm": 1.127986593019159e-14
+    }, 
+    {
+      "label": "Tailpiece diameter", 
+      "pass": true, 
+      "actual_mm": 31.75, 
+      "nominal_mm": 31.75, 
+      "deviation_mm": 0.0
+    }
+  ], 
+  "material_ids": {
+    "Detail": "3207", 
+    "Finish": "3210"
+  }, 
+  "expected_dimensions_in": [
+    2.5, 
+    2.5, 
+    5.3200000000000003
+  ], 
+  "inferences": "ASSUMPTION: tailpiece cut length and assembled underside stack are modeled for visualization; the source is an exploded diagram. | Open cap gap is fixed. It is not a functioning drain or plumbing clearance model. | Independent visualization reconstruction with fixed product dimensions and editable native materials. | Small fillets, seams, nozzle details and optical material response are inferred where the manufacturer does not dimension them. | No internal hydraulic performance, MEP connectors, fabrication tolerances or procurement substitutions are implied.", 
+  "gates": {
+    "reopened": true, 
+    "warnings": true, 
+    "orientation": true, 
+    "diffuse_bitmaps": true, 
+    "actual_face_host": true, 
+    "dimensions": true, 
+    "materials": true, 
+    "reopen_geometry_equal": true, 
+    "views": true, 
+    "category": true, 
+    "cct": true
+  }, 
+  "revit_version": "2025", 
+  "manufacturer": "Hansgrohe", 
+  "technical_pass": true, 
+  "family_warnings": [], 
+  "started_utc": "2026-10-02T14:38:02.831000Z", 
+  "type": "50100341 - black_chrome", 
+  "parts": [
+    {
+      "volume_ft3": 0.00072009403020056265, 
+      "id": "3212", 
+      "name": "Tailpiece"
+    }, 
+    {
+      "volume_ft3": 0.0013445633545476777, 
+      "id": "3213", 
+      "name": "Body sleeve"
+    }, 
+    {
+      "volume_ft3": 0.00057011231474601355, 
+      "id": "3214", 
+      "name": "Compression nut"
+    }, 
+    {
+      "volume_ft3": 0.00048924944561367083, 
+      "id": "3215", 
+      "name": "Basin flange"
+    }, 
+    {
+      "volume_ft3": 0.00019688508828760612, 
+      "id": "3216", 
+      "name": "Open drain shadow"
+    }, 
+    {
+      "volume_ft3": 0.00026550951745092622, 
+      "id": "3217", 
+      "name": "Domed cap"
+    }
+  ], 
+  "all_overall_dimensions_authoritative": false, 
+  "native_gates_pass": true, 
+  "appearance_defaults": {
+    "Detail": {
+      "rgb": [
+        24, 
+        25, 
+        26
+      ], 
+      "gloss": 0.17000000000000001, 
+      "luminance": 0, 
+      "transparency": 0, 
+      "cct_k": null
+    }, 
+    "Finish": {
+      "rgb": [
+        77, 
+        73, 
+        69
+      ], 
+      "gloss": 0.59999999999999998, 
+      "luminance": 0, 
+      "transparency": 0, 
+      "cct_k": null
+    }
+  }, 
+  "reopened_bounds_in": [
+    -1.2500000000000002, 
+    -1.2500000000000002, 
+    -5.0, 
+    1.2500000000000002, 
+    1.2500000000000002, 
+    0.33100862056016922
+  ], 
+  "limitations": [
+    "ASSUMPTION: tailpiece cut length and assembled underside stack are modeled for visualization; the source is an exploded diagram.", 
+    "Open cap gap is fixed. It is not a functioning drain or plumbing clearance model.", 
+    "Independent visualization reconstruction with fixed product dimensions and editable native materials.", 
+    "Small fillets, seams, nozzle details and optical material response are inferred where the manufacturer does not dimension them.", 
+    "No internal hydraulic performance, MEP connectors, fabrication tolerances or procurement substitutions are implied."
+  ], 
+  "host": {
+    "hostface_present": true, 
+    "host_kind": "floor", 
+    "normal_dot": 1.0, 
+    "host_id": "3699", 
+    "instance_host_id": "3699"
+  }
+}

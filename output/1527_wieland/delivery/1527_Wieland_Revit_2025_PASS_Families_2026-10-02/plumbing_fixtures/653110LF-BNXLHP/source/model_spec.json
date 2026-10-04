@@ -1,0 +1,255 @@
+{
+  "key": "653110LF-BNXLHP",
+  "model": "653110LF-BNXLHP",
+  "manufacturer": "Brizo",
+  "type_name": "653110LF-BNXLHP - Brilliance Black Onyx -  Black",
+  "basename": "Brizo_653110LF-BNXLHP_R2025",
+  "name": "Roccesco widespread arc faucet, less handles",
+  "host": "floor",
+  "configured_dimensions_in": [
+    9.875,
+    7.25,
+    9.3125
+  ],
+  "materials": {
+    "Finish": {
+      "rgb": [
+        58,
+        60,
+        62
+      ],
+      "gloss": 0.92,
+      "reflectivity": 0.72,
+      "class": "Metal"
+    },
+    "Detail": {
+      "rgb": [
+        24,
+        25,
+        26
+      ],
+      "gloss": 0.17,
+      "reflectivity": 0.04,
+      "class": "Plastic"
+    },
+    "Graphite": {
+      "rgb": [
+        64,
+        67,
+        69
+      ],
+      "gloss": 0.36,
+      "reflectivity": 0.16,
+      "class": "Glass"
+    },
+    "Ceramic": {
+      "rgb": [
+        245,
+        245,
+        241
+      ],
+      "gloss": 0.86,
+      "reflectivity": 0.22,
+      "class": "Ceramic"
+    },
+    "Brass": {
+      "rgb": [
+        160,
+        124,
+        64
+      ],
+      "gloss": 0.4,
+      "reflectivity": 0.38,
+      "class": "Metal"
+    },
+    "Green": {
+      "rgb": [
+        31,
+        113,
+        66
+      ],
+      "gloss": 0.18,
+      "reflectivity": 0.05,
+      "class": "Plastic"
+    },
+    "Gray": {
+      "rgb": [
+        131,
+        132,
+        130
+      ],
+      "gloss": 0.32,
+      "reflectivity": 0.12,
+      "class": "Plastic"
+    }
+  },
+  "geometry": [
+    {
+      "name": "Spout base",
+      "kind": "cylinder",
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "radius": 1,
+      "a": 0,
+      "b": 0.16,
+      "material": "Finish"
+    },
+    {
+      "name": "Oval arch spout",
+      "kind": "sweep",
+      "path": [
+        [
+          0,
+          0,
+          0.16
+        ],
+        [
+          0,
+          0,
+          6.3125
+        ],
+        [
+          "arc",
+          [
+            0,
+            -3,
+            9.0625
+          ],
+          [
+            0,
+            -6,
+            6.3125
+          ]
+        ]
+      ],
+      "radius": 0.25,
+      "material": "Finish",
+      "oval": [
+        1.125,
+        0.5
+      ]
+    },
+    {
+      "name": "Valve flange -4",
+      "kind": "cylinder",
+      "origin": [
+        -4,
+        0,
+        0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "radius": 0.9375,
+      "a": 0,
+      "b": 0.16,
+      "material": "Finish"
+    },
+    {
+      "name": "Valve stem -4",
+      "kind": "cylinder",
+      "origin": [
+        -4,
+        0,
+        0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "radius": 0.18,
+      "a": 0.16,
+      "b": 0.6,
+      "material": "Brass"
+    },
+    {
+      "name": "Valve flange 4",
+      "kind": "cylinder",
+      "origin": [
+        4,
+        0,
+        0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "radius": 0.9375,
+      "a": 0,
+      "b": 0.16,
+      "material": "Finish"
+    },
+    {
+      "name": "Valve stem 4",
+      "kind": "cylinder",
+      "origin": [
+        4,
+        0,
+        0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "radius": 0.18,
+      "a": 0.16,
+      "b": 0.6,
+      "material": "Brass"
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://bravo.requested-info.com/brands/BRZ/documents/specSheets/653110LF-BLLHP_Spec.pdf",
+      "document": "BSP-L-653110LF-LHP Rev A",
+      "page": 1,
+      "local_image": "_research/653110LF-BNXLHP/downloads/653110LF-BLLHP_Spec_pages/page_01.png"
+    }
+  ],
+  "dimension_authority": [
+    "Height 9.3125 in; outlet height 6.3125 in; reach 6 in; bases 2 in and 1.875 in."
+  ],
+  "limitations": [
+    "ASSUMPTION: 8 in valve centers selected within the published 4-16 in range.",
+    "Above-deck scope only; handles supplied separately. Oval section and arc shoulders are drawing-derived.",
+    "Independent visualization reconstruction with fixed product dimensions and editable native materials.",
+    "Small fillets, seams, nozzle details and optical material response are inferred where the manufacturer does not dimension them.",
+    "No internal hydraulic performance, MEP connectors, fabrication tolerances or procurement substitutions are implied."
+  ],
+  "anchors": [
+    {
+      "label": "Height",
+      "parts": [
+        "Spout base",
+        "Oval arch spout"
+      ],
+      "axis": 2,
+      "nominal_in": 9.3125
+    },
+    {
+      "label": "Spout base diameter",
+      "parts": [
+        "Spout base"
+      ],
+      "axis": 0,
+      "nominal_in": 2
+    }
+  ],
+  "all_overall_dimensions_authoritative": false,
+  "rfa_search": {
+    "result": "No acceptable no-account RFA recovered",
+    "evidence": "_research/653110LF-BNXLHP/sources.json"
+  }
+}

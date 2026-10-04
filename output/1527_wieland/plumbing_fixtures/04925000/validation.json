@@ -1,0 +1,958 @@
+{
+  "template_form_ids": [
+    "1537"
+  ], 
+  "rfa_search": {
+    "evidence": "_research/04925000/sources.json", 
+    "result": "No acceptable no-account RFA recovered"
+  }, 
+  "actual_dimensions_in": [
+    7.375, 
+    7.375, 
+    3.375
+  ], 
+  "source_dimensions": [
+    "Width and depth 7.375 in; total head height 3.375 in; 147 spray nozzles."
+  ], 
+  "bounds_in": [
+    -3.6875, 
+    -3.6875, 
+    -6.8079329733652392e-22, 
+    3.6875, 
+    3.6875, 
+    3.375
+  ], 
+  "reopened": true, 
+  "category": "Plumbing Fixtures", 
+  "actual_dimensions_after_reopen_mm": [
+    187.32499999999999, 
+    187.32499999999999, 
+    85.724999999999994
+  ], 
+  "bounds_method": "Fine native face meshes plus 128-sample analytic edges", 
+  "source_spec_path": "E:\\Claude\\3D-Model-Workflow\\output\\1527_wieland\\plumbing_fixtures\\04925000\\source\\model_spec.json", 
+  "rfa_path": "E:\\Claude\\3D-Model-Workflow\\output\\1527_wieland\\plumbing_fixtures\\04925000\\Hansgrohe_04925000_R2025.rfa", 
+  "stage": "complete", 
+  "cct_k": null, 
+  "placement": "WorkPlaneBased", 
+  "material_tests": {
+    "Detail": {
+      "substitution_reaches_faces": true, 
+      "writable": true, 
+      "face_count": 918
+    }, 
+    "Gray": {
+      "substitution_reaches_faces": true, 
+      "writable": true, 
+      "face_count": 918
+    }, 
+    "Finish": {
+      "substitution_reaches_faces": true, 
+      "writable": true, 
+      "face_count": 918
+    }
+  }, 
+  "evidence_files": [
+    "Hansgrohe_04925000_R2025_Isolated - 3D View - Native Front.png", 
+    "Hansgrohe_04925000_R2025_Isolated - 3D View - Native Material.png", 
+    "Hansgrohe_04925000_R2025_Isolated - 3D View - Native Oblique.png", 
+    "Hansgrohe_04925000_R2025_Isolated - 3D View - Native Side.png"
+  ], 
+  "model": "04925000", 
+  "acceptance": "NATIVE_GATES_PASSED_PENDING_VISUAL_REVIEW", 
+  "native_path_checks": [], 
+  "finished_utc": "2026-10-02T14:37:32.532000Z", 
+  "source_spec_sha256": "dac582694fe46267019e18ac8791c430052e9bcf5c2a65b618274f1a1713736d", 
+  "reopened_warnings": [], 
+  "project_warnings": [], 
+  "reopen_geometry_equal": true, 
+  "visual_review": "PENDING_NATIVE_IMAGE_REVIEW", 
+  "display_bounds_in": [
+    -3.6875, 
+    -3.6875, 
+    0.0, 
+    3.6875000000000009, 
+    3.6875, 
+    3.375
+  ], 
+  "source_references": [
+    {
+      "page": 190, 
+      "document": "Hansgrohe 2026 US Price Book", 
+      "url": "https://assets.hansgrohe.com/celum/emailmarketing/hansgrohe_2026_Price_Book_en_US.pdf", 
+      "local_image": "_research/catalog_pages/page_190.png"
+    }
+  ], 
+  "appearance_bindings": {
+    "Detail": {
+      "material_id": "3207", 
+      "exists": true, 
+      "path": "E:\\Claude\\3D-Model-Workflow\\output\\1527_wieland\\plumbing_fixtures\\04925000\\textures\\Detail.png"
+    }, 
+    "Gray": {
+      "material_id": "3213", 
+      "exists": true, 
+      "path": "E:\\Claude\\3D-Model-Workflow\\output\\1527_wieland\\plumbing_fixtures\\04925000\\textures\\Gray.png"
+    }, 
+    "Finish": {
+      "material_id": "3210", 
+      "exists": true, 
+      "path": "E:\\Claude\\3D-Model-Workflow\\output\\1527_wieland\\plumbing_fixtures\\04925000\\textures\\Finish.png"
+    }
+  }, 
+  "revit_build": "25.4.50.35", 
+  "dimension_anchor_checks": [
+    {
+      "label": "Head overall width", 
+      "pass": true, 
+      "actual_mm": 187.32499999999999, 
+      "nominal_mm": 187.32499999999999, 
+      "deviation_mm": 0.0
+    }
+  ], 
+  "material_ids": {
+    "Detail": "3207", 
+    "Gray": "3213", 
+    "Finish": "3210"
+  }, 
+  "expected_dimensions_in": [
+    7.375, 
+    7.375, 
+    3.375
+  ], 
+  "inferences": "Ball joint shown in the neutral vertical position. Nozzle distribution and shoulder profile follow the drawing approximately. | Independent visualization reconstruction with fixed product dimensions and editable native materials. | Small fillets, seams, nozzle details and optical material response are inferred where the manufacturer does not dimension them. | No internal hydraulic performance, MEP connectors, fabrication tolerances or procurement substitutions are implied.", 
+  "gates": {
+    "reopened": true, 
+    "warnings": true, 
+    "orientation": true, 
+    "diffuse_bitmaps": true, 
+    "actual_face_host": true, 
+    "dimensions": true, 
+    "materials": true, 
+    "reopen_geometry_equal": true, 
+    "views": true, 
+    "category": true, 
+    "cct": true
+  }, 
+  "revit_version": "2025", 
+  "manufacturer": "Hansgrohe", 
+  "technical_pass": true, 
+  "family_warnings": [], 
+  "started_utc": "2026-10-02T14:37:27.422000Z", 
+  "type": "04925000 - Chrome", 
+  "parts": [
+    {
+      "volume_ft3": 0.022842203279475653, 
+      "id": "3215", 
+      "name": "Rounded square shower shell"
+    }, 
+    {
+      "volume_ft3": 0.0035769001544783178, 
+      "id": "3216", 
+      "name": "Spray face"
+    }, 
+    {
+      "volume_ft3": 0.00027269402809917742, 
+      "id": "3217", 
+      "name": "Connection nut"
+    }, 
+    {
+      "volume_ft3": 0.0062970096097569733, 
+      "id": "3218", 
+      "name": "Sloped neck"
+    }, 
+    {
+      "volume_ft3": 5.0364243872898634e-07, 
+      "id": "3219", 
+      "name": "Spray nozzle 1.00 00"
+    }, 
+    {
+      "volume_ft3": 5.0364243872898634e-07, 
+      "id": "3220", 
+      "name": "Spray nozzle 1.00 01"
+    }, 
+    {
+      "volume_ft3": 5.0364243872898623e-07, 
+      "id": "3221", 
+      "name": "Spray nozzle 1.00 02"
+    }, 
+    {
+      "volume_ft3": 5.0364243872898644e-07, 
+      "id": "3222", 
+      "name": "Spray nozzle 1.00 03"
+    }, 
+    {
+      "volume_ft3": 5.0364243872898634e-07, 
+      "id": "3223", 
+      "name": "Spray nozzle 1.00 04"
+    }, 
+    {
+      "volume_ft3": 5.0364243872898634e-07, 
+      "id": "3224", 
+      "name": "Spray nozzle 1.00 05"
+    }, 
+    {
+      "volume_ft3": 5.0364243872898634e-07, 
+      "id": "3225", 
+      "name": "Spray nozzle 1.00 06"
+    }, 
+    {
+      "volume_ft3": 5.0364243872898623e-07, 
+      "id": "3226", 
+      "name": "Spray nozzle 1.00 07"
+    }, 
+    {
+      "volume_ft3": 5.0364243872898644e-07, 
+      "id": "3227", 
+      "name": "Spray nozzle 1.00 08"
+    }, 
+    {
+      "volume_ft3": 5.0364243872898634e-07, 
+      "id": "3228", 
+      "name": "Spray nozzle 1.00 09"
+    }, 
+    {
+      "volume_ft3": 5.0364243872898634e-07, 
+      "id": "3229", 
+      "name": "Spray nozzle 1.00 10"
+    }, 
+    {
+      "volume_ft3": 5.0364243872898623e-07, 
+      "id": "3230", 
+      "name": "Spray nozzle 1.00 11"
+    }, 
+    {
+      "volume_ft3": 5.0364243872898634e-07, 
+      "id": "3231", 
+      "name": "Spray nozzle 1.00 12"
+    }, 
+    {
+      "volume_ft3": 5.0364243872898634e-07, 
+      "id": "3232", 
+      "name": "Spray nozzle 1.00 13"
+    }, 
+    {
+      "volume_ft3": 5.0364243872898623e-07, 
+      "id": "3233", 
+      "name": "Spray nozzle 1.00 14"
+    }, 
+    {
+      "volume_ft3": 5.0364243872898634e-07, 
+      "id": "3234", 
+      "name": "Spray nozzle 1.00 15"
+    }, 
+    {
+      "volume_ft3": 5.0364243872898623e-07, 
+      "id": "3235", 
+      "name": "Spray nozzle 1.00 16"
+    }, 
+    {
+      "volume_ft3": 5.0364243872898634e-07, 
+      "id": "3236", 
+      "name": "Spray nozzle 1.00 17"
+    }, 
+    {
+      "volume_ft3": 5.0364243872898623e-07, 
+      "id": "3237", 
+      "name": "Spray nozzle 1.75 00"
+    }, 
+    {
+      "volume_ft3": 5.0364243872898623e-07, 
+      "id": "3238", 
+      "name": "Spray nozzle 1.75 01"
+    }, 
+    {
+      "volume_ft3": 5.0364243872898623e-07, 
+      "id": "3239", 
+      "name": "Spray nozzle 1.75 02"
+    }, 
+    {
+      "volume_ft3": 5.0364243872898644e-07, 
+      "id": "3240", 
+      "name": "Spray nozzle 1.75 03"
+    }, 
+    {
+      "volume_ft3": 5.0364243872898644e-07, 
+      "id": "3241", 
+      "name": "Spray nozzle 1.75 04"
+    }, 
+    {
+      "volume_ft3": 5.0364243872898623e-07, 
+      "id": "3242", 
+      "name": "Spray nozzle 1.75 05"
+    }, 
+    {
+      "volume_ft3": 5.0364243872898623e-07, 
+      "id": "3243", 
+      "name": "Spray nozzle 1.75 06"
+    }, 
+    {
+      "volume_ft3": 5.0364243872898613e-07, 
+      "id": "3244", 
+      "name": "Spray nozzle 1.75 07"
+    }, 
+    {
+      "volume_ft3": 5.0364243872898623e-07, 
+      "id": "3245", 
+      "name": "Spray nozzle 1.75 08"
+    }, 
+    {
+      "volume_ft3": 5.0364243872898634e-07, 
+      "id": "3246", 
+      "name": "Spray nozzle 1.75 09"
+    }, 
+    {
+      "volume_ft3": 5.0364243872898623e-07, 
+      "id": "3247", 
+      "name": "Spray nozzle 1.75 10"
+    }, 
+    {
+      "volume_ft3": 5.0364243872898644e-07, 
+      "id": "3248", 
+      "name": "Spray nozzle 1.75 11"
+    }, 
+    {
+      "volume_ft3": 5.0364243872898634e-07, 
+      "id": "3249", 
+      "name": "Spray nozzle 1.75 12"
+    }, 
+    {
+      "volume_ft3": 5.0364243872898634e-07, 
+      "id": "3250", 
+      "name": "Spray nozzle 1.75 13"
+    }, 
+    {
+      "volume_ft3": 5.0364243872898623e-07, 
+      "id": "3251", 
+      "name": "Spray nozzle 1.75 14"
+    }, 
+    {
+      "volume_ft3": 5.0364243872898623e-07, 
+      "id": "3252", 
+      "name": "Spray nozzle 1.75 15"
+    }, 
+    {
+      "volume_ft3": 5.0364243872898613e-07, 
+      "id": "3253", 
+      "name": "Spray nozzle 1.75 16"
+    }, 
+    {
+      "volume_ft3": 5.0364243872898623e-07, 
+      "id": "3254", 
+      "name": "Spray nozzle 1.75 17"
+    }, 
+    {
+      "volume_ft3": 5.0364243872898644e-07, 
+      "id": "3255", 
+      "name": "Spray nozzle 1.75 18"
+    }, 
+    {
+      "volume_ft3": 5.0364243872898644e-07, 
+      "id": "3256", 
+      "name": "Spray nozzle 1.75 19"
+    }, 
+    {
+      "volume_ft3": 5.0364243872898655e-07, 
+      "id": "3257", 
+      "name": "Spray nozzle 1.75 20"
+    }, 
+    {
+      "volume_ft3": 5.0364243872898623e-07, 
+      "id": "3258", 
+      "name": "Spray nozzle 1.75 21"
+    }, 
+    {
+      "volume_ft3": 5.0364243872898623e-07, 
+      "id": "3259", 
+      "name": "Spray nozzle 1.75 22"
+    }, 
+    {
+      "volume_ft3": 5.0364243872898613e-07, 
+      "id": "3260", 
+      "name": "Spray nozzle 1.75 23"
+    }, 
+    {
+      "volume_ft3": 5.0364243872898634e-07, 
+      "id": "3261", 
+      "name": "Spray nozzle 1.75 24"
+    }, 
+    {
+      "volume_ft3": 5.0364243872898655e-07, 
+      "id": "3262", 
+      "name": "Spray nozzle 1.75 25"
+    }, 
+    {
+      "volume_ft3": 5.0364243872898644e-07, 
+      "id": "3263", 
+      "name": "Spray nozzle 1.75 26"
+    }, 
+    {
+      "volume_ft3": 5.0364243872898644e-07, 
+      "id": "3264", 
+      "name": "Spray nozzle 1.75 27"
+    }, 
+    {
+      "volume_ft3": 5.0364243872898634e-07, 
+      "id": "3265", 
+      "name": "Spray nozzle 1.75 28"
+    }, 
+    {
+      "volume_ft3": 5.0364243872898634e-07, 
+      "id": "3266", 
+      "name": "Spray nozzle 1.75 29"
+    }, 
+    {
+      "volume_ft3": 5.0364243872898623e-07, 
+      "id": "3267", 
+      "name": "Spray nozzle 2.50 00"
+    }, 
+    {
+      "volume_ft3": 5.0364243872898634e-07, 
+      "id": "3268", 
+      "name": "Spray nozzle 2.50 01"
+    }, 
+    {
+      "volume_ft3": 5.0364243872898613e-07, 
+      "id": "3269", 
+      "name": "Spray nozzle 2.50 02"
+    }, 
+    {
+      "volume_ft3": 5.0364243872898634e-07, 
+      "id": "3270", 
+      "name": "Spray nozzle 2.50 03"
+    }, 
+    {
+      "volume_ft3": 5.0364243872898623e-07, 
+      "id": "3271", 
+      "name": "Spray nozzle 2.50 04"
+    }, 
+    {
+      "volume_ft3": 5.0364243872898634e-07, 
+      "id": "3272", 
+      "name": "Spray nozzle 2.50 05"
+    }, 
+    {
+      "volume_ft3": 5.0364243872898634e-07, 
+      "id": "3273", 
+      "name": "Spray nozzle 2.50 06"
+    }, 
+    {
+      "volume_ft3": 5.0364243872898634e-07, 
+      "id": "3274", 
+      "name": "Spray nozzle 2.50 07"
+    }, 
+    {
+      "volume_ft3": 5.0364243872898634e-07, 
+      "id": "3275", 
+      "name": "Spray nozzle 2.50 08"
+    }, 
+    {
+      "volume_ft3": 5.0364243872898623e-07, 
+      "id": "3276", 
+      "name": "Spray nozzle 2.50 09"
+    }, 
+    {
+      "volume_ft3": 5.0364243872898623e-07, 
+      "id": "3277", 
+      "name": "Spray nozzle 2.50 10"
+    }, 
+    {
+      "volume_ft3": 5.0364243872898634e-07, 
+      "id": "3278", 
+      "name": "Spray nozzle 2.50 11"
+    }, 
+    {
+      "volume_ft3": 5.0364243872898623e-07, 
+      "id": "3279", 
+      "name": "Spray nozzle 2.50 12"
+    }, 
+    {
+      "volume_ft3": 5.0364243872898634e-07, 
+      "id": "3280", 
+      "name": "Spray nozzle 2.50 13"
+    }, 
+    {
+      "volume_ft3": 5.0364243872898644e-07, 
+      "id": "3281", 
+      "name": "Spray nozzle 2.50 14"
+    }, 
+    {
+      "volume_ft3": 5.0364243872898613e-07, 
+      "id": "3282", 
+      "name": "Spray nozzle 2.50 15"
+    }, 
+    {
+      "volume_ft3": 5.0364243872898634e-07, 
+      "id": "3283", 
+      "name": "Spray nozzle 2.50 16"
+    }, 
+    {
+      "volume_ft3": 5.0364243872898623e-07, 
+      "id": "3284", 
+      "name": "Spray nozzle 2.50 17"
+    }, 
+    {
+      "volume_ft3": 5.0364243872898623e-07, 
+      "id": "3285", 
+      "name": "Spray nozzle 2.50 18"
+    }, 
+    {
+      "volume_ft3": 5.0364243872898613e-07, 
+      "id": "3286", 
+      "name": "Spray nozzle 2.50 19"
+    }, 
+    {
+      "volume_ft3": 5.0364243872898634e-07, 
+      "id": "3287", 
+      "name": "Spray nozzle 2.50 20"
+    }, 
+    {
+      "volume_ft3": 5.0364243872898634e-07, 
+      "id": "3288", 
+      "name": "Spray nozzle 2.50 21"
+    }, 
+    {
+      "volume_ft3": 5.0364243872898634e-07, 
+      "id": "3289", 
+      "name": "Spray nozzle 2.50 22"
+    }, 
+    {
+      "volume_ft3": 5.0364243872898634e-07, 
+      "id": "3290", 
+      "name": "Spray nozzle 2.50 23"
+    }, 
+    {
+      "volume_ft3": 5.0364243872898634e-07, 
+      "id": "3291", 
+      "name": "Spray nozzle 2.50 24"
+    }, 
+    {
+      "volume_ft3": 5.0364243872898623e-07, 
+      "id": "3292", 
+      "name": "Spray nozzle 2.50 25"
+    }, 
+    {
+      "volume_ft3": 5.0364243872898613e-07, 
+      "id": "3293", 
+      "name": "Spray nozzle 2.50 26"
+    }, 
+    {
+      "volume_ft3": 5.0364243872898613e-07, 
+      "id": "3294", 
+      "name": "Spray nozzle 2.50 27"
+    }, 
+    {
+      "volume_ft3": 5.0364243872898634e-07, 
+      "id": "3295", 
+      "name": "Spray nozzle 2.50 28"
+    }, 
+    {
+      "volume_ft3": 5.0364243872898634e-07, 
+      "id": "3296", 
+      "name": "Spray nozzle 2.50 29"
+    }, 
+    {
+      "volume_ft3": 5.0364243872898623e-07, 
+      "id": "3297", 
+      "name": "Spray nozzle 2.50 30"
+    }, 
+    {
+      "volume_ft3": 5.0364243872898634e-07, 
+      "id": "3298", 
+      "name": "Spray nozzle 2.50 31"
+    }, 
+    {
+      "volume_ft3": 5.0364243872898623e-07, 
+      "id": "3299", 
+      "name": "Spray nozzle 2.50 32"
+    }, 
+    {
+      "volume_ft3": 5.0364243872898623e-07, 
+      "id": "3300", 
+      "name": "Spray nozzle 2.50 33"
+    }, 
+    {
+      "volume_ft3": 5.0364243872898644e-07, 
+      "id": "3301", 
+      "name": "Spray nozzle 2.50 34"
+    }, 
+    {
+      "volume_ft3": 5.0364243872898644e-07, 
+      "id": "3302", 
+      "name": "Spray nozzle 2.50 35"
+    }, 
+    {
+      "volume_ft3": 5.0364243872898613e-07, 
+      "id": "3303", 
+      "name": "Spray nozzle 2.50 36"
+    }, 
+    {
+      "volume_ft3": 5.0364243872898613e-07, 
+      "id": "3304", 
+      "name": "Spray nozzle 2.50 37"
+    }, 
+    {
+      "volume_ft3": 5.0364243872898634e-07, 
+      "id": "3305", 
+      "name": "Spray nozzle 2.50 38"
+    }, 
+    {
+      "volume_ft3": 5.0364243872898623e-07, 
+      "id": "3306", 
+      "name": "Spray nozzle 2.50 39"
+    }, 
+    {
+      "volume_ft3": 5.0364243872898623e-07, 
+      "id": "3307", 
+      "name": "Spray nozzle 2.50 40"
+    }, 
+    {
+      "volume_ft3": 5.0364243872898634e-07, 
+      "id": "3308", 
+      "name": "Spray nozzle 2.50 41"
+    }, 
+    {
+      "volume_ft3": 5.0364243872898644e-07, 
+      "id": "3309", 
+      "name": "Spray nozzle 3.15 00"
+    }, 
+    {
+      "volume_ft3": 5.0364243872898644e-07, 
+      "id": "3310", 
+      "name": "Spray nozzle 3.15 01"
+    }, 
+    {
+      "volume_ft3": 5.0364243872898644e-07, 
+      "id": "3311", 
+      "name": "Spray nozzle 3.15 02"
+    }, 
+    {
+      "volume_ft3": 5.0364243872898591e-07, 
+      "id": "3312", 
+      "name": "Spray nozzle 3.15 03"
+    }, 
+    {
+      "volume_ft3": 5.0364243872898623e-07, 
+      "id": "3313", 
+      "name": "Spray nozzle 3.15 04"
+    }, 
+    {
+      "volume_ft3": 5.0364243872898634e-07, 
+      "id": "3314", 
+      "name": "Spray nozzle 3.15 05"
+    }, 
+    {
+      "volume_ft3": 5.0364243872898634e-07, 
+      "id": "3315", 
+      "name": "Spray nozzle 3.15 06"
+    }, 
+    {
+      "volume_ft3": 5.0364243872898634e-07, 
+      "id": "3316", 
+      "name": "Spray nozzle 3.15 07"
+    }, 
+    {
+      "volume_ft3": 5.0364243872898634e-07, 
+      "id": "3317", 
+      "name": "Spray nozzle 3.15 08"
+    }, 
+    {
+      "volume_ft3": 5.0364243872898634e-07, 
+      "id": "3318", 
+      "name": "Spray nozzle 3.15 09"
+    }, 
+    {
+      "volume_ft3": 5.0364243872898634e-07, 
+      "id": "3319", 
+      "name": "Spray nozzle 3.15 10"
+    }, 
+    {
+      "volume_ft3": 5.0364243872898623e-07, 
+      "id": "3320", 
+      "name": "Spray nozzle 3.15 11"
+    }, 
+    {
+      "volume_ft3": 5.0364243872898655e-07, 
+      "id": "3321", 
+      "name": "Spray nozzle 3.15 12"
+    }, 
+    {
+      "volume_ft3": 5.0364243872898634e-07, 
+      "id": "3322", 
+      "name": "Spray nozzle 3.15 13"
+    }, 
+    {
+      "volume_ft3": 5.0364243872898644e-07, 
+      "id": "3323", 
+      "name": "Spray nozzle 3.15 14"
+    }, 
+    {
+      "volume_ft3": 5.0364243872898644e-07, 
+      "id": "3324", 
+      "name": "Spray nozzle 3.15 15"
+    }, 
+    {
+      "volume_ft3": 5.0364243872898634e-07, 
+      "id": "3325", 
+      "name": "Spray nozzle 3.15 16"
+    }, 
+    {
+      "volume_ft3": 5.0364243872898655e-07, 
+      "id": "3326", 
+      "name": "Spray nozzle 3.15 17"
+    }, 
+    {
+      "volume_ft3": 5.0364243872898644e-07, 
+      "id": "3327", 
+      "name": "Spray nozzle 3.15 18"
+    }, 
+    {
+      "volume_ft3": 5.0364243872898613e-07, 
+      "id": "3328", 
+      "name": "Spray nozzle 3.15 19"
+    }, 
+    {
+      "volume_ft3": 5.0364243872898613e-07, 
+      "id": "3329", 
+      "name": "Spray nozzle 3.15 20"
+    }, 
+    {
+      "volume_ft3": 5.0364243872898613e-07, 
+      "id": "3330", 
+      "name": "Spray nozzle 3.15 21"
+    }, 
+    {
+      "volume_ft3": 5.0364243872898634e-07, 
+      "id": "3331", 
+      "name": "Spray nozzle 3.15 22"
+    }, 
+    {
+      "volume_ft3": 5.0364243872898613e-07, 
+      "id": "3332", 
+      "name": "Spray nozzle 3.15 23"
+    }, 
+    {
+      "volume_ft3": 5.0364243872898634e-07, 
+      "id": "3333", 
+      "name": "Spray nozzle 3.15 24"
+    }, 
+    {
+      "volume_ft3": 5.0364243872898634e-07, 
+      "id": "3334", 
+      "name": "Spray nozzle 3.15 25"
+    }, 
+    {
+      "volume_ft3": 5.0364243872898644e-07, 
+      "id": "3335", 
+      "name": "Spray nozzle 3.15 26"
+    }, 
+    {
+      "volume_ft3": 5.0364243872898644e-07, 
+      "id": "3336", 
+      "name": "Spray nozzle 3.15 27"
+    }, 
+    {
+      "volume_ft3": 5.0364243872898644e-07, 
+      "id": "3337", 
+      "name": "Spray nozzle 3.15 28"
+    }, 
+    {
+      "volume_ft3": 5.0364243872898634e-07, 
+      "id": "3338", 
+      "name": "Spray nozzle 3.15 29"
+    }, 
+    {
+      "volume_ft3": 5.0364243872898644e-07, 
+      "id": "3339", 
+      "name": "Spray nozzle 3.15 30"
+    }, 
+    {
+      "volume_ft3": 5.0364243872898644e-07, 
+      "id": "3340", 
+      "name": "Spray nozzle 3.15 31"
+    }, 
+    {
+      "volume_ft3": 5.0364243872898634e-07, 
+      "id": "3341", 
+      "name": "Spray nozzle 3.15 32"
+    }, 
+    {
+      "volume_ft3": 5.0364243872898655e-07, 
+      "id": "3342", 
+      "name": "Spray nozzle 3.15 33"
+    }, 
+    {
+      "volume_ft3": 5.0364243872898634e-07, 
+      "id": "3343", 
+      "name": "Spray nozzle 3.15 34"
+    }, 
+    {
+      "volume_ft3": 5.0364243872898613e-07, 
+      "id": "3344", 
+      "name": "Spray nozzle 3.15 35"
+    }, 
+    {
+      "volume_ft3": 5.0364243872898613e-07, 
+      "id": "3345", 
+      "name": "Spray nozzle 3.15 36"
+    }, 
+    {
+      "volume_ft3": 5.0364243872898613e-07, 
+      "id": "3346", 
+      "name": "Spray nozzle 3.15 37"
+    }, 
+    {
+      "volume_ft3": 5.0364243872898613e-07, 
+      "id": "3347", 
+      "name": "Spray nozzle 3.15 38"
+    }, 
+    {
+      "volume_ft3": 5.0364243872898634e-07, 
+      "id": "3348", 
+      "name": "Spray nozzle 3.15 39"
+    }, 
+    {
+      "volume_ft3": 5.0364243872898644e-07, 
+      "id": "3349", 
+      "name": "Spray nozzle 3.15 40"
+    }, 
+    {
+      "volume_ft3": 5.0364243872898634e-07, 
+      "id": "3350", 
+      "name": "Spray nozzle 3.15 41"
+    }, 
+    {
+      "volume_ft3": 5.0364243872898644e-07, 
+      "id": "3351", 
+      "name": "Spray nozzle 3.15 42"
+    }, 
+    {
+      "volume_ft3": 5.0364243872898644e-07, 
+      "id": "3352", 
+      "name": "Spray nozzle 3.15 43"
+    }, 
+    {
+      "volume_ft3": 5.0364243872898634e-07, 
+      "id": "3353", 
+      "name": "Spray nozzle 3.15 44"
+    }, 
+    {
+      "volume_ft3": 5.0364243872898655e-07, 
+      "id": "3354", 
+      "name": "Spray nozzle 3.15 45"
+    }, 
+    {
+      "volume_ft3": 5.0364243872898655e-07, 
+      "id": "3355", 
+      "name": "Spray nozzle 3.15 46"
+    }, 
+    {
+      "volume_ft3": 5.0364243872898634e-07, 
+      "id": "3356", 
+      "name": "Spray nozzle 3.15 47"
+    }, 
+    {
+      "volume_ft3": 5.0364243872898613e-07, 
+      "id": "3357", 
+      "name": "Spray nozzle 3.15 48"
+    }, 
+    {
+      "volume_ft3": 5.0364243872898634e-07, 
+      "id": "3358", 
+      "name": "Spray nozzle 3.15 49"
+    }, 
+    {
+      "volume_ft3": 5.0364243872898613e-07, 
+      "id": "3359", 
+      "name": "Spray nozzle 3.15 50"
+    }, 
+    {
+      "volume_ft3": 5.0364243872898634e-07, 
+      "id": "3360", 
+      "name": "Spray nozzle 3.15 51"
+    }, 
+    {
+      "volume_ft3": 5.0364243872898613e-07, 
+      "id": "3361", 
+      "name": "Spray nozzle 3.15 52"
+    }, 
+    {
+      "volume_ft3": 5.0364243872898634e-07, 
+      "id": "3362", 
+      "name": "Spray nozzle 3.15 53"
+    }, 
+    {
+      "volume_ft3": 5.0364243872898591e-07, 
+      "id": "3363", 
+      "name": "Spray nozzle 3.15 54"
+    }, 
+    {
+      "volume_ft3": 5.0364243872898644e-07, 
+      "id": "3364", 
+      "name": "Spray nozzle 3.15 55"
+    }, 
+    {
+      "volume_ft3": 5.0364243872898644e-07, 
+      "id": "3365", 
+      "name": "Spray nozzle 3.15 56"
+    }
+  ], 
+  "all_overall_dimensions_authoritative": true, 
+  "native_gates_pass": true, 
+  "appearance_defaults": {
+    "Detail": {
+      "rgb": [
+        24, 
+        25, 
+        26
+      ], 
+      "gloss": 0.17000000000000001, 
+      "luminance": 0, 
+      "transparency": 0, 
+      "cct_k": null
+    }, 
+    "Gray": {
+      "rgb": [
+        131, 
+        132, 
+        130
+      ], 
+      "gloss": 0.32000000000000001, 
+      "luminance": 0, 
+      "transparency": 0, 
+      "cct_k": null
+    }, 
+    "Finish": {
+      "rgb": [
+        195, 
+        198, 
+        201
+      ], 
+      "gloss": 0.95999999999999996, 
+      "luminance": 0, 
+      "transparency": 0, 
+      "cct_k": null
+    }
+  }, 
+  "reopened_bounds_in": [
+    -3.6875, 
+    -3.6875, 
+    -6.8079329733652392e-22, 
+    3.6875, 
+    3.6875, 
+    3.375
+  ], 
+  "limitations": [
+    "Ball joint shown in the neutral vertical position. Nozzle distribution and shoulder profile follow the drawing approximately.", 
+    "Independent visualization reconstruction with fixed product dimensions and editable native materials.", 
+    "Small fillets, seams, nozzle details and optical material response are inferred where the manufacturer does not dimension them.", 
+    "No internal hydraulic performance, MEP connectors, fabrication tolerances or procurement substitutions are implied."
+  ], 
+  "host": {
+    "hostface_present": true, 
+    "host_kind": "ceiling", 
+    "normal_dot": 1.0, 
+    "host_id": "3848", 
+    "instance_host_id": "3848"
+  }
+}

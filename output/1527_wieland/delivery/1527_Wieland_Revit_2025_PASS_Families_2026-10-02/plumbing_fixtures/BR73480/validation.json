@@ -1,0 +1,279 @@
+{
+  "rfa_path": "E:\\Claude\\3D-Model-Workflow\\output\\1527_wieland\\plumbing_fixtures\\BR73480\\Brizo_BR73480_R2025.rfa", 
+  "appearance_bindings": {
+    "Detail": {
+      "exists": true, 
+      "path": "E:\\Claude\\3D-Model-Workflow\\output\\1527_wieland\\plumbing_fixtures\\BR73480\\textures\\Detail.png", 
+      "material_id": "3207"
+    }, 
+    "Finish": {
+      "exists": true, 
+      "path": "E:\\Claude\\3D-Model-Workflow\\output\\1527_wieland\\plumbing_fixtures\\BR73480\\textures\\Finish.png", 
+      "material_id": "3210"
+    }
+  }, 
+  "gates": {
+    "warnings": true, 
+    "views": true, 
+    "orientation": true, 
+    "materials": true, 
+    "reopen_geometry_equal": true, 
+    "actual_face_host": true, 
+    "dimensions": true, 
+    "diffuse_bitmaps": true, 
+    "cct": true, 
+    "category": true, 
+    "reopened": true
+  }, 
+  "type": "BR73480 - chrome", 
+  "material_ids": {
+    "Detail": "3207", 
+    "Finish": "3210"
+  }, 
+  "display_bounds_in": [
+    -26.59375, 
+    -6.3125, 
+    -5.4375, 
+    26.59375, 
+    6.3125, 
+    0.0
+  ], 
+  "revit_build": "25.4.50.35", 
+  "bounds_in": [
+    -26.59375, 
+    -6.3125002384185791, 
+    -5.4375, 
+    26.59375, 
+    6.3125002384185791, 
+    0.0
+  ], 
+  "reopened_warnings": [], 
+  "native_gates_pass": true, 
+  "inferences": "Channel floor is simplified level geometry; hydraulic slope and hidden membrane seams are not modeled. | Visible drain trim is a separate inventory item. | Independent visualization reconstruction with fixed product dimensions and editable native materials. | Small fillets, seams, nozzle details and optical material response are inferred where the manufacturer does not dimension them. | No internal hydraulic performance, MEP connectors, fabrication tolerances or procurement substitutions are implied.", 
+  "template_form_ids": [
+    "1537"
+  ], 
+  "project_warnings": [], 
+  "material_tests": {
+    "Detail": {
+      "face_count": 128, 
+      "writable": true, 
+      "substitution_reaches_faces": true
+    }, 
+    "Finish": {
+      "face_count": 128, 
+      "writable": true, 
+      "substitution_reaches_faces": true
+    }
+  }, 
+  "placement": "WorkPlaneBased", 
+  "model": "BR73480", 
+  "rfa_search": {
+    "result": "No acceptable no-account RFA recovered", 
+    "evidence": "_research/BR73480/sources.json"
+  }, 
+  "actual_dimensions_in": [
+    53.1875, 
+    12.625000476837158, 
+    5.4375
+  ], 
+  "stage": "complete", 
+  "source_spec_path": "E:\\Claude\\3D-Model-Workflow\\output\\1527_wieland\\plumbing_fixtures\\BR73480\\source\\model_spec.json", 
+  "family_warnings": [], 
+  "visual_review": "PENDING_NATIVE_IMAGE_REVIEW", 
+  "parts": [
+    {
+      "name": "Membrane front", 
+      "id": "3212", 
+      "volume_ft3": 0.012600481951678238
+    }, 
+    {
+      "name": "Membrane back", 
+      "id": "3213", 
+      "volume_ft3": 0.01260048195167824
+    }, 
+    {
+      "name": "Membrane left", 
+      "id": "3214", 
+      "volume_ft3": 0.00076237431278935227
+    }, 
+    {
+      "name": "Membrane right", 
+      "id": "3215", 
+      "volume_ft3": 0.00076237431278935227
+    }, 
+    {
+      "name": "Channel floor", 
+      "id": "3216", 
+      "volume_ft3": 0.011223754882812506
+    }, 
+    {
+      "name": "Front channel lip", 
+      "id": "3217", 
+      "volume_ft3": 0.0020251464843750026
+    }, 
+    {
+      "name": "Back channel lip", 
+      "id": "3218", 
+      "volume_ft3": 0.0020251464843750026
+    }, 
+    {
+      "name": "Left channel lip", 
+      "id": "3219", 
+      "volume_ft3": 0.00019322916666666745
+    }, 
+    {
+      "name": "Right channel lip", 
+      "id": "3220", 
+      "volume_ft3": 0.00019322916666666745
+    }, 
+    {
+      "name": "Drain outlet", 
+      "id": "3221", 
+      "volume_ft3": 0.0036653246379395087
+    }, 
+    {
+      "name": "Adjusting foot -21.0 -1.4", 
+      "id": "3222", 
+      "volume_ft3": 0.00032268793325069308
+    }, 
+    {
+      "name": "Foot plate -21.0 -1.4", 
+      "id": "3223", 
+      "volume_ft3": 0.00023087271893069131
+    }, 
+    {
+      "name": "Adjusting foot -21.0 1.4", 
+      "id": "3224", 
+      "volume_ft3": 0.00032268793325069297
+    }, 
+    {
+      "name": "Foot plate -21.0 1.4", 
+      "id": "3225", 
+      "volume_ft3": 0.00023087271893069131
+    }, 
+    {
+      "name": "Adjusting foot 21.0 -1.4", 
+      "id": "3226", 
+      "volume_ft3": 0.00032268793325069308
+    }, 
+    {
+      "name": "Foot plate 21.0 -1.4", 
+      "id": "3227", 
+      "volume_ft3": 0.00023087271893069131
+    }, 
+    {
+      "name": "Adjusting foot 21.0 1.4", 
+      "id": "3228", 
+      "volume_ft3": 0.00032268793325069297
+    }, 
+    {
+      "name": "Foot plate 21.0 1.4", 
+      "id": "3229", 
+      "volume_ft3": 0.00023087271893069131
+    }
+  ], 
+  "source_references": [
+    {
+      "visual_review_method": "Web PDF screenshot", 
+      "page": 1, 
+      "document": "BSP-B-BR73240 Rev B", 
+      "url": "https://media.brizo.com/SpecSheet/BSP-B-BR73240%20Rev%20B.pdf"
+    }
+  ], 
+  "limitations": [
+    "Channel floor is simplified level geometry; hydraulic slope and hidden membrane seams are not modeled.", 
+    "Visible drain trim is a separate inventory item.", 
+    "Independent visualization reconstruction with fixed product dimensions and editable native materials.", 
+    "Small fillets, seams, nozzle details and optical material response are inferred where the manufacturer does not dimension them.", 
+    "No internal hydraulic performance, MEP connectors, fabrication tolerances or procurement substitutions are implied."
+  ], 
+  "finished_utc": "2026-10-02T14:49:43.358000Z", 
+  "reopened_bounds_in": [
+    -26.59375, 
+    -6.3125002384185791, 
+    -5.4375, 
+    26.59375, 
+    6.3125002384185791, 
+    0.0
+  ], 
+  "dimension_anchor_checks": [
+    {
+      "deviation_mm": 0.0, 
+      "label": "Membrane length", 
+      "nominal_mm": 1350.9624999999999, 
+      "pass": true, 
+      "actual_mm": 1350.9624999999999
+    }, 
+    {
+      "deviation_mm": 0.0, 
+      "label": "Channel length", 
+      "nominal_mm": 1200.1499999999999, 
+      "pass": true, 
+      "actual_mm": 1200.1499999999999
+    }
+  ], 
+  "source_dimensions": [
+    "Membrane footprint 53.1875 x 12.625 in; channel length 47.25 in and width 4.4375 in; feet set to published maximum 5.4375 in."
+  ], 
+  "actual_dimensions_after_reopen_mm": [
+    1350.9624999999999, 
+    320.67501211166382, 
+    138.11249999999998
+  ], 
+  "technical_pass": true, 
+  "reopen_geometry_equal": true, 
+  "acceptance": "NATIVE_GATES_PASSED_PENDING_VISUAL_REVIEW", 
+  "reopened": true, 
+  "all_overall_dimensions_authoritative": true, 
+  "bounds_method": "Fine native face meshes plus 128-sample analytic edges", 
+  "expected_dimensions_in": [
+    53.1875, 
+    12.625, 
+    5.4375
+  ], 
+  "appearance_defaults": {
+    "Detail": {
+      "transparency": 0, 
+      "luminance": 0, 
+      "rgb": [
+        24, 
+        25, 
+        26
+      ], 
+      "cct_k": null, 
+      "gloss": 0.17000000000000001
+    }, 
+    "Finish": {
+      "transparency": 0, 
+      "luminance": 0, 
+      "rgb": [
+        195, 
+        198, 
+        201
+      ], 
+      "cct_k": null, 
+      "gloss": 0.95999999999999996
+    }
+  }, 
+  "cct_k": null, 
+  "evidence_files": [
+    "Brizo_BR73480_R2025_Isolated - 3D View - Native Front.png", 
+    "Brizo_BR73480_R2025_Isolated - 3D View - Native Material.png", 
+    "Brizo_BR73480_R2025_Isolated - 3D View - Native Oblique.png", 
+    "Brizo_BR73480_R2025_Isolated - 3D View - Native Side.png"
+  ], 
+  "category": "Plumbing Fixtures", 
+  "host": {
+    "host_kind": "floor", 
+    "hostface_present": true, 
+    "instance_host_id": "3711", 
+    "host_id": "3711", 
+    "normal_dot": 1.0
+  }, 
+  "manufacturer": "Brizo", 
+  "started_utc": "2026-10-02T14:49:39.558000Z", 
+  "revit_version": "2025", 
+  "source_spec_sha256": "b199dce24d519955d121e85600807c473f1526b7334bfdf761b769da6b3eaa95", 
+  "native_path_checks": []
+}

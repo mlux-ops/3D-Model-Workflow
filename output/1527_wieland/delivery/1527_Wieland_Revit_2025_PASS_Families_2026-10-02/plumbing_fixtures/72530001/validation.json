@@ -1,0 +1,214 @@
+{
+  "rfa_path": "E:\\Claude\\3D-Model-Workflow\\output\\1527_wieland\\plumbing_fixtures\\72530001\\Hansgrohe_72530001_R2025.rfa", 
+  "appearance_bindings": {
+    "Finish": {
+      "exists": true, 
+      "path": "E:\\Claude\\3D-Model-Workflow\\output\\1527_wieland\\plumbing_fixtures\\72530001\\textures\\Finish.png", 
+      "material_id": "3207"
+    }
+  }, 
+  "gates": {
+    "warnings": true, 
+    "views": true, 
+    "orientation": true, 
+    "materials": true, 
+    "reopen_geometry_equal": true, 
+    "actual_face_host": true, 
+    "dimensions": true, 
+    "diffuse_bitmaps": true, 
+    "cct": true, 
+    "category": true, 
+    "reopened": true
+  }, 
+  "type": "72530001 - chrome", 
+  "material_ids": {
+    "Finish": "3207"
+  }, 
+  "display_bounds_in": [
+    -6.5, 
+    -5.4999999999999982, 
+    0.0, 
+    6.5, 
+    1.0, 
+    5.1250000000000018
+  ], 
+  "revit_build": "25.4.50.35", 
+  "bounds_in": [
+    -6.5000002384185791, 
+    -5.5000001192092896, 
+    -1.2967490310058968e-24, 
+    6.5000002384185791, 
+    1.0000000298023224, 
+    5.1250001192092896
+  ], 
+  "reopened_warnings": [], 
+  "native_gates_pass": true, 
+  "inferences": "Fixed 8 in installation spacing; levers shown pointing outwards. | Above-counter set only; drain, supply hoses, cast underside and detailed aerator are omitted. | Waterfall/spout shoulders are traced approximately from the catalog side drawing. | Independent visualization reconstruction with fixed product dimensions and editable native materials. | Small fillets, seams, nozzle details and optical material response are inferred where the manufacturer does not dimension them. | No internal hydraulic performance, MEP connectors, fabrication tolerances or procurement substitutions are implied.", 
+  "template_form_ids": [
+    "1537"
+  ], 
+  "project_warnings": [], 
+  "material_tests": {
+    "Finish": {
+      "face_count": 70, 
+      "writable": true, 
+      "substitution_reaches_faces": true
+    }
+  }, 
+  "placement": "WorkPlaneBased", 
+  "model": "72530001", 
+  "rfa_search": {
+    "result": "No acceptable no-account RFA recovered", 
+    "evidence": "_research/72530001/sources.json"
+  }, 
+  "actual_dimensions_in": [
+    13.000000476837158, 
+    6.5000001490116119, 
+    5.1250001192092896
+  ], 
+  "stage": "complete", 
+  "source_spec_path": "E:\\Claude\\3D-Model-Workflow\\output\\1527_wieland\\plumbing_fixtures\\72530001\\source\\model_spec.json", 
+  "family_warnings": [], 
+  "visual_review": "PENDING_NATIVE_IMAGE_REVIEW", 
+  "parts": [
+    {
+      "name": "Spout base", 
+      "id": "3209", 
+      "volume_ft3": 0.00029087362997245591
+    }, 
+    {
+      "name": "Rounded upright", 
+      "id": "3210", 
+      "volume_ft3": 0.0024313399545322651
+    }, 
+    {
+      "name": "Sculpted spout", 
+      "id": "3211", 
+      "volume_ft3": 0.0026629897317732459
+    }, 
+    {
+      "name": "Left valve base", 
+      "id": "3212", 
+      "volume_ft3": 0.00025565065134297885
+    }, 
+    {
+      "name": "Left valve body", 
+      "id": "3213", 
+      "volume_ft3": 0.0009753701817449504
+    }, 
+    {
+      "name": "Left flat lever", 
+      "id": "3214", 
+      "volume_ft3": 0.00012271045847232531
+    }, 
+    {
+      "name": "Right valve base", 
+      "id": "3215", 
+      "volume_ft3": 0.00025565065134297885
+    }, 
+    {
+      "name": "Right valve body", 
+      "id": "3216", 
+      "volume_ft3": 0.0009753701817449504
+    }, 
+    {
+      "name": "Right flat lever", 
+      "id": "3217", 
+      "volume_ft3": 0.00012271045847232531
+    }
+  ], 
+  "source_references": [
+    {
+      "local_image": "_research/catalog_pages/page_069.png", 
+      "page": 69, 
+      "document": "Hansgrohe 2026 US Price Book", 
+      "url": "https://assets.hansgrohe.com/celum/emailmarketing/hansgrohe_2026_Price_Book_en_US.pdf"
+    }
+  ], 
+  "limitations": [
+    "Fixed 8 in installation spacing; levers shown pointing outwards.", 
+    "Above-counter set only; drain, supply hoses, cast underside and detailed aerator are omitted.", 
+    "Waterfall/spout shoulders are traced approximately from the catalog side drawing.", 
+    "Independent visualization reconstruction with fixed product dimensions and editable native materials.", 
+    "Small fillets, seams, nozzle details and optical material response are inferred where the manufacturer does not dimension them.", 
+    "No internal hydraulic performance, MEP connectors, fabrication tolerances or procurement substitutions are implied."
+  ], 
+  "finished_utc": "2026-10-02T14:48:47.552000Z", 
+  "reopened_bounds_in": [
+    -6.5000002384185791, 
+    -5.5000001192092896, 
+    -1.2967490310058968e-24, 
+    6.5000002384185791, 
+    1.0000000298023224, 
+    5.1250001192092896
+  ], 
+  "dimension_anchor_checks": [
+    {
+      "deviation_mm": 3.0279159545898436e-06, 
+      "label": "Height", 
+      "nominal_mm": 130.17499999999998, 
+      "pass": true, 
+      "actual_mm": 130.17500302791595
+    }, 
+    {
+      "deviation_mm": 1.5139579772949218e-06, 
+      "label": "Base diameter", 
+      "nominal_mm": 50.799999999999997, 
+      "pass": true, 
+      "actual_mm": 50.800001513957973
+    }
+  ], 
+  "source_dimensions": [
+    "8 in valve centers; height 5.125 in; reach 5.250 in; spout base diameter 2 in.", 
+    "Handle length 2.500 in and height 2.250 in from the manufacturer diagram."
+  ], 
+  "actual_dimensions_after_reopen_mm": [
+    330.20001211166380, 
+    165.10000378489494, 
+    130.17500302791595
+  ], 
+  "technical_pass": true, 
+  "reopen_geometry_equal": true, 
+  "acceptance": "NATIVE_GATES_PASSED_PENDING_VISUAL_REVIEW", 
+  "reopened": true, 
+  "all_overall_dimensions_authoritative": false, 
+  "bounds_method": "Fine native face meshes plus 128-sample analytic edges", 
+  "expected_dimensions_in": [
+    13.0, 
+    6.5, 
+    5.125
+  ], 
+  "appearance_defaults": {
+    "Finish": {
+      "transparency": 0, 
+      "luminance": 0, 
+      "rgb": [
+        195, 
+        198, 
+        201
+      ], 
+      "cct_k": null, 
+      "gloss": 0.95999999999999996
+    }
+  }, 
+  "cct_k": null, 
+  "evidence_files": [
+    "Hansgrohe_72530001_R2025_Isolated - 3D View - Native Front.png", 
+    "Hansgrohe_72530001_R2025_Isolated - 3D View - Native Material.png", 
+    "Hansgrohe_72530001_R2025_Isolated - 3D View - Native Oblique.png", 
+    "Hansgrohe_72530001_R2025_Isolated - 3D View - Native Side.png"
+  ], 
+  "category": "Plumbing Fixtures", 
+  "host": {
+    "host_kind": "floor", 
+    "hostface_present": true, 
+    "instance_host_id": "3698", 
+    "host_id": "3698", 
+    "normal_dot": 1.0
+  }, 
+  "manufacturer": "Hansgrohe", 
+  "started_utc": "2026-10-02T14:48:44.265000Z", 
+  "revit_version": "2025", 
+  "source_spec_sha256": "7eba0f76ab74a1833178a1a7c62cbd06a0cc40ea18588e0a16bddffe3d49aa1f", 
+  "native_path_checks": []
+}

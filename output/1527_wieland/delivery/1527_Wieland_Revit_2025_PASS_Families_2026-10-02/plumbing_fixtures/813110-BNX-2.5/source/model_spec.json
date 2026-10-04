@@ -1,0 +1,1521 @@
+{
+  "key": "813110-BNX-2.5",
+  "model": "813110-BNX-2.5",
+  "manufacturer": "Brizo",
+  "type_name": "813110-BNX-2.5 - Brilliance Black Onyx -  Black",
+  "basename": "Brizo_813110-BNX-2.5_R2025",
+  "name": "Roccesco open Halo raincan showerhead",
+  "host": "ceiling",
+  "configured_dimensions_in": [
+    12.25,
+    12.25,
+    3.5
+  ],
+  "materials": {
+    "Finish": {
+      "rgb": [
+        58,
+        60,
+        62
+      ],
+      "gloss": 0.92,
+      "reflectivity": 0.72,
+      "class": "Metal"
+    },
+    "Detail": {
+      "rgb": [
+        24,
+        25,
+        26
+      ],
+      "gloss": 0.17,
+      "reflectivity": 0.04,
+      "class": "Plastic"
+    },
+    "Graphite": {
+      "rgb": [
+        64,
+        67,
+        69
+      ],
+      "gloss": 0.36,
+      "reflectivity": 0.16,
+      "class": "Glass"
+    },
+    "Ceramic": {
+      "rgb": [
+        245,
+        245,
+        241
+      ],
+      "gloss": 0.86,
+      "reflectivity": 0.22,
+      "class": "Ceramic"
+    },
+    "Brass": {
+      "rgb": [
+        160,
+        124,
+        64
+      ],
+      "gloss": 0.4,
+      "reflectivity": 0.38,
+      "class": "Metal"
+    },
+    "Green": {
+      "rgb": [
+        31,
+        113,
+        66
+      ],
+      "gloss": 0.18,
+      "reflectivity": 0.05,
+      "class": "Plastic"
+    },
+    "Gray": {
+      "rgb": [
+        131,
+        132,
+        130
+      ],
+      "gloss": 0.32,
+      "reflectivity": 0.12,
+      "class": "Plastic"
+    }
+  },
+  "geometry": [
+    {
+      "name": "Open halo ring",
+      "kind": "cylinder",
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "radius": 6.125,
+      "a": 2.875,
+      "b": 3.4,
+      "material": "Finish",
+      "inner_radius": 5.25
+    },
+    {
+      "name": "Radial waterway spoke",
+      "kind": "profile",
+      "origin": [
+        0,
+        -0.875,
+        0
+      ],
+      "u": [
+        1,
+        0,
+        0
+      ],
+      "v": [
+        0,
+        0,
+        1
+      ],
+      "normal": [
+        0,
+        1,
+        0
+      ],
+      "points": [
+        [
+          0,
+          1.5
+        ],
+        [
+          1.3,
+          1.5
+        ],
+        [
+          5.55,
+          2.875
+        ],
+        [
+          5.55,
+          3.4
+        ],
+        [
+          0,
+          3.4
+        ]
+      ],
+      "length": 1.75,
+      "material": "Finish"
+    },
+    {
+      "name": "Connection boss",
+      "kind": "cylinder",
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "radius": 0.62,
+      "a": 0.45,
+      "b": 1.8,
+      "material": "Finish"
+    },
+    {
+      "name": "Male connection",
+      "kind": "cylinder",
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "radius": 0.25,
+      "a": 0,
+      "b": 0.6,
+      "material": "Finish"
+    },
+    {
+      "name": "Perimeter spray nozzle 00",
+      "kind": "cylinder",
+      "origin": [
+        5.68,
+        0.0,
+        0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "radius": 0.065,
+      "a": 3.4,
+      "b": 3.5,
+      "material": "Detail"
+    },
+    {
+      "name": "Perimeter spray nozzle 01",
+      "kind": "cylinder",
+      "origin": [
+        5.658385885161114,
+        0.49504461880669837,
+        0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "radius": 0.065,
+      "a": 3.4,
+      "b": 3.5,
+      "material": "Detail"
+    },
+    {
+      "name": "Perimeter spray nozzle 02",
+      "kind": "cylinder",
+      "origin": [
+        5.593708037109341,
+        0.9863216491481642,
+        0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "radius": 0.065,
+      "a": 3.4,
+      "b": 3.5,
+      "material": "Detail"
+    },
+    {
+      "name": "Perimeter spray nozzle 03",
+      "kind": "cylinder",
+      "origin": [
+        5.486458693321908,
+        1.4700921761823178,
+        0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "radius": 0.065,
+      "a": 3.4,
+      "b": 3.5,
+      "material": "Detail"
+    },
+    {
+      "name": "Perimeter spray nozzle 04",
+      "kind": "cylinder",
+      "origin": [
+        5.33745408606396,
+        1.9426744140897982,
+        0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "radius": 0.065,
+      "a": 3.4,
+      "b": 3.5,
+      "material": "Detail"
+    },
+    {
+      "name": "Perimeter spray nozzle 05",
+      "kind": "cylinder",
+      "origin": [
+        5.147828230368171,
+        2.4004717266871727,
+        0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "radius": 0.065,
+      "a": 3.4,
+      "b": 3.5,
+      "material": "Detail"
+    },
+    {
+      "name": "Perimeter spray nozzle 06",
+      "kind": "cylinder",
+      "origin": [
+        4.919024293495611,
+        2.8399999999999994,
+        0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "radius": 0.065,
+      "a": 3.4,
+      "b": 3.5,
+      "material": "Detail"
+    },
+    {
+      "name": "Perimeter spray nozzle 07",
+      "kind": "cylinder",
+      "origin": [
+        4.652783611561473,
+        3.2579141584739415,
+        0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "radius": 0.065,
+      "a": 3.4,
+      "b": 3.5,
+      "material": "Detail"
+    },
+    {
+      "name": "Perimeter spray nozzle 08",
+      "kind": "cylinder",
+      "origin": [
+        4.351132436915795,
+        3.6510336230195426,
+        0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "radius": 0.065,
+      "a": 3.4,
+      "b": 3.5,
+      "material": "Detail"
+    },
+    {
+      "name": "Perimeter spray nozzle 09",
+      "kind": "cylinder",
+      "origin": [
+        4.01636651713959,
+        4.01636651713959,
+        0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "radius": 0.065,
+      "a": 3.4,
+      "b": 3.5,
+      "material": "Detail"
+    },
+    {
+      "name": "Perimeter spray nozzle 10",
+      "kind": "cylinder",
+      "origin": [
+        3.6510336230195435,
+        4.351132436915795,
+        0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "radius": 0.065,
+      "a": 3.4,
+      "b": 3.5,
+      "material": "Detail"
+    },
+    {
+      "name": "Perimeter spray nozzle 11",
+      "kind": "cylinder",
+      "origin": [
+        3.257914158473942,
+        4.652783611561473,
+        0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "radius": 0.065,
+      "a": 3.4,
+      "b": 3.5,
+      "material": "Detail"
+    },
+    {
+      "name": "Perimeter spray nozzle 12",
+      "kind": "cylinder",
+      "origin": [
+        2.8400000000000003,
+        4.919024293495611,
+        0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "radius": 0.065,
+      "a": 3.4,
+      "b": 3.5,
+      "material": "Detail"
+    },
+    {
+      "name": "Perimeter spray nozzle 13",
+      "kind": "cylinder",
+      "origin": [
+        2.4004717266871727,
+        5.147828230368171,
+        0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "radius": 0.065,
+      "a": 3.4,
+      "b": 3.5,
+      "material": "Detail"
+    },
+    {
+      "name": "Perimeter spray nozzle 14",
+      "kind": "cylinder",
+      "origin": [
+        1.942674414089799,
+        5.337454086063959,
+        0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "radius": 0.065,
+      "a": 3.4,
+      "b": 3.5,
+      "material": "Detail"
+    },
+    {
+      "name": "Perimeter spray nozzle 15",
+      "kind": "cylinder",
+      "origin": [
+        1.470092176182319,
+        5.486458693321907,
+        0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "radius": 0.065,
+      "a": 3.4,
+      "b": 3.5,
+      "material": "Detail"
+    },
+    {
+      "name": "Perimeter spray nozzle 16",
+      "kind": "cylinder",
+      "origin": [
+        0.9863216491481647,
+        5.593708037109341,
+        0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "radius": 0.065,
+      "a": 3.4,
+      "b": 3.5,
+      "material": "Detail"
+    },
+    {
+      "name": "Perimeter spray nozzle 17",
+      "kind": "cylinder",
+      "origin": [
+        0.4950446188066982,
+        5.658385885161114,
+        0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "radius": 0.065,
+      "a": 3.4,
+      "b": 3.5,
+      "material": "Detail"
+    },
+    {
+      "name": "Perimeter spray nozzle 18",
+      "kind": "cylinder",
+      "origin": [
+        3.477996909578483e-16,
+        5.68,
+        0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "radius": 0.065,
+      "a": 3.4,
+      "b": 3.5,
+      "material": "Detail"
+    },
+    {
+      "name": "Perimeter spray nozzle 19",
+      "kind": "cylinder",
+      "origin": [
+        -0.4950446188066975,
+        5.658385885161114,
+        0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "radius": 0.065,
+      "a": 3.4,
+      "b": 3.5,
+      "material": "Detail"
+    },
+    {
+      "name": "Perimeter spray nozzle 20",
+      "kind": "cylinder",
+      "origin": [
+        -0.9863216491481641,
+        5.593708037109341,
+        0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "radius": 0.065,
+      "a": 3.4,
+      "b": 3.5,
+      "material": "Detail"
+    },
+    {
+      "name": "Perimeter spray nozzle 21",
+      "kind": "cylinder",
+      "origin": [
+        -1.4700921761823185,
+        5.486458693321908,
+        0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "radius": 0.065,
+      "a": 3.4,
+      "b": 3.5,
+      "material": "Detail"
+    },
+    {
+      "name": "Perimeter spray nozzle 22",
+      "kind": "cylinder",
+      "origin": [
+        -1.942674414089797,
+        5.33745408606396,
+        0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "radius": 0.065,
+      "a": 3.4,
+      "b": 3.5,
+      "material": "Detail"
+    },
+    {
+      "name": "Perimeter spray nozzle 23",
+      "kind": "cylinder",
+      "origin": [
+        -2.4004717266871722,
+        5.147828230368172,
+        0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "radius": 0.065,
+      "a": 3.4,
+      "b": 3.5,
+      "material": "Detail"
+    },
+    {
+      "name": "Perimeter spray nozzle 24",
+      "kind": "cylinder",
+      "origin": [
+        -2.8399999999999985,
+        4.919024293495611,
+        0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "radius": 0.065,
+      "a": 3.4,
+      "b": 3.5,
+      "material": "Detail"
+    },
+    {
+      "name": "Perimeter spray nozzle 25",
+      "kind": "cylinder",
+      "origin": [
+        -3.257914158473942,
+        4.652783611561473,
+        0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "radius": 0.065,
+      "a": 3.4,
+      "b": 3.5,
+      "material": "Detail"
+    },
+    {
+      "name": "Perimeter spray nozzle 26",
+      "kind": "cylinder",
+      "origin": [
+        -3.6510336230195435,
+        4.351132436915795,
+        0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "radius": 0.065,
+      "a": 3.4,
+      "b": 3.5,
+      "material": "Detail"
+    },
+    {
+      "name": "Perimeter spray nozzle 27",
+      "kind": "cylinder",
+      "origin": [
+        -4.0163665171395895,
+        4.01636651713959,
+        0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "radius": 0.065,
+      "a": 3.4,
+      "b": 3.5,
+      "material": "Detail"
+    },
+    {
+      "name": "Perimeter spray nozzle 28",
+      "kind": "cylinder",
+      "origin": [
+        -4.351132436915794,
+        3.651033623019544,
+        0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "radius": 0.065,
+      "a": 3.4,
+      "b": 3.5,
+      "material": "Detail"
+    },
+    {
+      "name": "Perimeter spray nozzle 29",
+      "kind": "cylinder",
+      "origin": [
+        -4.652783611561474,
+        3.2579141584739406,
+        0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "radius": 0.065,
+      "a": 3.4,
+      "b": 3.5,
+      "material": "Detail"
+    },
+    {
+      "name": "Perimeter spray nozzle 30",
+      "kind": "cylinder",
+      "origin": [
+        -4.91902429349561,
+        2.8400000000000016,
+        0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "radius": 0.065,
+      "a": 3.4,
+      "b": 3.5,
+      "material": "Detail"
+    },
+    {
+      "name": "Perimeter spray nozzle 31",
+      "kind": "cylinder",
+      "origin": [
+        -5.147828230368171,
+        2.400471726687173,
+        0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "radius": 0.065,
+      "a": 3.4,
+      "b": 3.5,
+      "material": "Detail"
+    },
+    {
+      "name": "Perimeter spray nozzle 32",
+      "kind": "cylinder",
+      "origin": [
+        -5.337454086063959,
+        1.9426744140897991,
+        0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "radius": 0.065,
+      "a": 3.4,
+      "b": 3.5,
+      "material": "Detail"
+    },
+    {
+      "name": "Perimeter spray nozzle 33",
+      "kind": "cylinder",
+      "origin": [
+        -5.486458693321908,
+        1.4700921761823167,
+        0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "radius": 0.065,
+      "a": 3.4,
+      "b": 3.5,
+      "material": "Detail"
+    },
+    {
+      "name": "Perimeter spray nozzle 34",
+      "kind": "cylinder",
+      "origin": [
+        -5.593708037109341,
+        0.9863216491481639,
+        0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "radius": 0.065,
+      "a": 3.4,
+      "b": 3.5,
+      "material": "Detail"
+    },
+    {
+      "name": "Perimeter spray nozzle 35",
+      "kind": "cylinder",
+      "origin": [
+        -5.658385885161114,
+        0.49504461880669853,
+        0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "radius": 0.065,
+      "a": 3.4,
+      "b": 3.5,
+      "material": "Detail"
+    },
+    {
+      "name": "Perimeter spray nozzle 36",
+      "kind": "cylinder",
+      "origin": [
+        -5.68,
+        6.955993819156966e-16,
+        0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "radius": 0.065,
+      "a": 3.4,
+      "b": 3.5,
+      "material": "Detail"
+    },
+    {
+      "name": "Perimeter spray nozzle 37",
+      "kind": "cylinder",
+      "origin": [
+        -5.658385885161114,
+        -0.4950446188066971,
+        0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "radius": 0.065,
+      "a": 3.4,
+      "b": 3.5,
+      "material": "Detail"
+    },
+    {
+      "name": "Perimeter spray nozzle 38",
+      "kind": "cylinder",
+      "origin": [
+        -5.593708037109342,
+        -0.9863216491481624,
+        0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "radius": 0.065,
+      "a": 3.4,
+      "b": 3.5,
+      "material": "Detail"
+    },
+    {
+      "name": "Perimeter spray nozzle 39",
+      "kind": "cylinder",
+      "origin": [
+        -5.486458693321908,
+        -1.4700921761823156,
+        0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "radius": 0.065,
+      "a": 3.4,
+      "b": 3.5,
+      "material": "Detail"
+    },
+    {
+      "name": "Perimeter spray nozzle 40",
+      "kind": "cylinder",
+      "origin": [
+        -5.33745408606396,
+        -1.9426744140897978,
+        0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "radius": 0.065,
+      "a": 3.4,
+      "b": 3.5,
+      "material": "Detail"
+    },
+    {
+      "name": "Perimeter spray nozzle 41",
+      "kind": "cylinder",
+      "origin": [
+        -5.147828230368173,
+        -2.4004717266871696,
+        0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "radius": 0.065,
+      "a": 3.4,
+      "b": 3.5,
+      "material": "Detail"
+    },
+    {
+      "name": "Perimeter spray nozzle 42",
+      "kind": "cylinder",
+      "origin": [
+        -4.919024293495611,
+        -2.8400000000000003,
+        0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "radius": 0.065,
+      "a": 3.4,
+      "b": 3.5,
+      "material": "Detail"
+    },
+    {
+      "name": "Perimeter spray nozzle 43",
+      "kind": "cylinder",
+      "origin": [
+        -4.652783611561475,
+        -3.25791415847394,
+        0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "radius": 0.065,
+      "a": 3.4,
+      "b": 3.5,
+      "material": "Detail"
+    },
+    {
+      "name": "Perimeter spray nozzle 44",
+      "kind": "cylinder",
+      "origin": [
+        -4.351132436915797,
+        -3.651033623019541,
+        0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "radius": 0.065,
+      "a": 3.4,
+      "b": 3.5,
+      "material": "Detail"
+    },
+    {
+      "name": "Perimeter spray nozzle 45",
+      "kind": "cylinder",
+      "origin": [
+        -4.01636651713959,
+        -4.0163665171395895,
+        0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "radius": 0.065,
+      "a": 3.4,
+      "b": 3.5,
+      "material": "Detail"
+    },
+    {
+      "name": "Perimeter spray nozzle 46",
+      "kind": "cylinder",
+      "origin": [
+        -3.651033623019544,
+        -4.351132436915794,
+        0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "radius": 0.065,
+      "a": 3.4,
+      "b": 3.5,
+      "material": "Detail"
+    },
+    {
+      "name": "Perimeter spray nozzle 47",
+      "kind": "cylinder",
+      "origin": [
+        -3.257914158473939,
+        -4.652783611561475,
+        0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "radius": 0.065,
+      "a": 3.4,
+      "b": 3.5,
+      "material": "Detail"
+    },
+    {
+      "name": "Perimeter spray nozzle 48",
+      "kind": "cylinder",
+      "origin": [
+        -2.8400000000000025,
+        -4.91902429349561,
+        0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "radius": 0.065,
+      "a": 3.4,
+      "b": 3.5,
+      "material": "Detail"
+    },
+    {
+      "name": "Perimeter spray nozzle 49",
+      "kind": "cylinder",
+      "origin": [
+        -2.4004717266871753,
+        -5.14782823036817,
+        0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "radius": 0.065,
+      "a": 3.4,
+      "b": 3.5,
+      "material": "Detail"
+    },
+    {
+      "name": "Perimeter spray nozzle 50",
+      "kind": "cylinder",
+      "origin": [
+        -1.9426744140897974,
+        -5.33745408606396,
+        0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "radius": 0.065,
+      "a": 3.4,
+      "b": 3.5,
+      "material": "Detail"
+    },
+    {
+      "name": "Perimeter spray nozzle 51",
+      "kind": "cylinder",
+      "origin": [
+        -1.4700921761823171,
+        -5.486458693321908,
+        0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "radius": 0.065,
+      "a": 3.4,
+      "b": 3.5,
+      "material": "Detail"
+    },
+    {
+      "name": "Perimeter spray nozzle 52",
+      "kind": "cylinder",
+      "origin": [
+        -0.9863216491481642,
+        -5.593708037109341,
+        0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "radius": 0.065,
+      "a": 3.4,
+      "b": 3.5,
+      "material": "Detail"
+    },
+    {
+      "name": "Perimeter spray nozzle 53",
+      "kind": "cylinder",
+      "origin": [
+        -0.4950446188066988,
+        -5.658385885161114,
+        0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "radius": 0.065,
+      "a": 3.4,
+      "b": 3.5,
+      "material": "Detail"
+    },
+    {
+      "name": "Perimeter spray nozzle 54",
+      "kind": "cylinder",
+      "origin": [
+        -1.0433990728735449e-15,
+        -5.68,
+        0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "radius": 0.065,
+      "a": 3.4,
+      "b": 3.5,
+      "material": "Detail"
+    },
+    {
+      "name": "Perimeter spray nozzle 55",
+      "kind": "cylinder",
+      "origin": [
+        0.49504461880669676,
+        -5.658385885161114,
+        0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "radius": 0.065,
+      "a": 3.4,
+      "b": 3.5,
+      "material": "Detail"
+    },
+    {
+      "name": "Perimeter spray nozzle 56",
+      "kind": "cylinder",
+      "origin": [
+        0.9863216491481622,
+        -5.593708037109342,
+        0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "radius": 0.065,
+      "a": 3.4,
+      "b": 3.5,
+      "material": "Detail"
+    },
+    {
+      "name": "Perimeter spray nozzle 57",
+      "kind": "cylinder",
+      "origin": [
+        1.4700921761823151,
+        -5.486458693321908,
+        0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "radius": 0.065,
+      "a": 3.4,
+      "b": 3.5,
+      "material": "Detail"
+    },
+    {
+      "name": "Perimeter spray nozzle 58",
+      "kind": "cylinder",
+      "origin": [
+        1.9426744140897998,
+        -5.337454086063959,
+        0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "radius": 0.065,
+      "a": 3.4,
+      "b": 3.5,
+      "material": "Detail"
+    },
+    {
+      "name": "Perimeter spray nozzle 59",
+      "kind": "cylinder",
+      "origin": [
+        2.400471726687169,
+        -5.147828230368173,
+        0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "radius": 0.065,
+      "a": 3.4,
+      "b": 3.5,
+      "material": "Detail"
+    },
+    {
+      "name": "Perimeter spray nozzle 60",
+      "kind": "cylinder",
+      "origin": [
+        2.839999999999996,
+        -4.919024293495614,
+        0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "radius": 0.065,
+      "a": 3.4,
+      "b": 3.5,
+      "material": "Detail"
+    },
+    {
+      "name": "Perimeter spray nozzle 61",
+      "kind": "cylinder",
+      "origin": [
+        3.2579141584739415,
+        -4.652783611561473,
+        0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "radius": 0.065,
+      "a": 3.4,
+      "b": 3.5,
+      "material": "Detail"
+    },
+    {
+      "name": "Perimeter spray nozzle 62",
+      "kind": "cylinder",
+      "origin": [
+        3.6510336230195426,
+        -4.351132436915796,
+        0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "radius": 0.065,
+      "a": 3.4,
+      "b": 3.5,
+      "material": "Detail"
+    },
+    {
+      "name": "Perimeter spray nozzle 63",
+      "kind": "cylinder",
+      "origin": [
+        4.016366517139589,
+        -4.01636651713959,
+        0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "radius": 0.065,
+      "a": 3.4,
+      "b": 3.5,
+      "material": "Detail"
+    },
+    {
+      "name": "Perimeter spray nozzle 64",
+      "kind": "cylinder",
+      "origin": [
+        4.351132436915794,
+        -3.651033623019545,
+        0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "radius": 0.065,
+      "a": 3.4,
+      "b": 3.5,
+      "material": "Detail"
+    },
+    {
+      "name": "Perimeter spray nozzle 65",
+      "kind": "cylinder",
+      "origin": [
+        4.652783611561472,
+        -3.2579141584739437,
+        0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "radius": 0.065,
+      "a": 3.4,
+      "b": 3.5,
+      "material": "Detail"
+    },
+    {
+      "name": "Perimeter spray nozzle 66",
+      "kind": "cylinder",
+      "origin": [
+        4.919024293495612,
+        -2.839999999999998,
+        0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "radius": 0.065,
+      "a": 3.4,
+      "b": 3.5,
+      "material": "Detail"
+    },
+    {
+      "name": "Perimeter spray nozzle 67",
+      "kind": "cylinder",
+      "origin": [
+        5.14782823036817,
+        -2.400471726687176,
+        0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "radius": 0.065,
+      "a": 3.4,
+      "b": 3.5,
+      "material": "Detail"
+    },
+    {
+      "name": "Perimeter spray nozzle 68",
+      "kind": "cylinder",
+      "origin": [
+        5.33745408606396,
+        -1.9426744140897976,
+        0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "radius": 0.065,
+      "a": 3.4,
+      "b": 3.5,
+      "material": "Detail"
+    },
+    {
+      "name": "Perimeter spray nozzle 69",
+      "kind": "cylinder",
+      "origin": [
+        5.486458693321908,
+        -1.4700921761823174,
+        0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "radius": 0.065,
+      "a": 3.4,
+      "b": 3.5,
+      "material": "Detail"
+    },
+    {
+      "name": "Perimeter spray nozzle 70",
+      "kind": "cylinder",
+      "origin": [
+        5.593708037109341,
+        -0.9863216491481646,
+        0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "radius": 0.065,
+      "a": 3.4,
+      "b": 3.5,
+      "material": "Detail"
+    },
+    {
+      "name": "Perimeter spray nozzle 71",
+      "kind": "cylinder",
+      "origin": [
+        5.658385885161114,
+        -0.4950446188066992,
+        0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "radius": 0.065,
+      "a": 3.4,
+      "b": 3.5,
+      "material": "Detail"
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://assets.specbooks.cloud/brand/brizo/spec/22628776/document/spec-sb-eli3kf.pdf",
+      "document": "Brizo BSP-B-813110 Rev A",
+      "page": 1,
+      "local_image": "_research/813110-BNX-2.5/downloads/spec-sb-eli3kf_pages/page_01.png"
+    }
+  ],
+  "dimension_authority": [
+    "Diameter 12.25 in and total head depth 3.5 in: manufacturer drawing.",
+    "Radial spoke width 1.75 in: manufacturer drawing."
+  ],
+  "limitations": [
+    "Open annulus and radial spoke are retained; internal waterway and fine edge radii are simplified.",
+    "Arm is supplied as its separate 899110-12-BNX family.",
+    "Independent visualization reconstruction with fixed product dimensions and editable native materials.",
+    "Small fillets, seams, nozzle details and optical material response are inferred where the manufacturer does not dimension them.",
+    "No internal hydraulic performance, MEP connectors, fabrication tolerances or procurement substitutions are implied."
+  ],
+  "anchors": [
+    {
+      "label": "Halo diameter",
+      "parts": [
+        "Open halo ring"
+      ],
+      "axis": 0,
+      "nominal_in": 12.25
+    }
+  ],
+  "all_overall_dimensions_authoritative": true,
+  "rfa_search": {
+    "result": "No acceptable no-account RFA recovered",
+    "evidence": "_research/813110-BNX-2.5/sources.json"
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "model": "KWT 6722 iS",
+  "slug": "miele_kwt6722is",
+  "status": "BUILT_WITH_LIMITATIONS",
+  "rfa": "miele_kwt6722is/miele_kwt6722is_Custom_R1_R2025.rfa",
+  "rfa_bytes": 540672,
+  "rfa_sha256": "85206dca8b02262eed2c77b675ff8938157b1241ad7caf648a708bfc878836ee",
+  "row_ids": [
+    7384660666023812
+  ],
+  "source_urls": [
+    "https://www.mieleusa.com/product/11329860/24-built-in-wine-refrigerator-kwt-6722-is",
+    "https://media.miele.com/downloads/a5/52/05_70A8A51285B71FE1ABFA89BF1ABCA552.zip",
+    "https://media.miele.com/downloads/n-/us/FS_11329860_USE_US-en-US.pdf"
+  ],
+  "original_rfas": [
+    {
+      "path": "miele_kwt6722is/source/original/11329860_USA_KWT6722iS.rfa",
+      "sha256": "8ea7195e152445552c46f6e97f72aecafe2ff14be4130a14c520c34e38f1db07"
+    }
+  ],
+  "validation": "miele_kwt6722is/validation.json",
+  "previews": [
+    "miele_kwt6722is/views/rework_r1/oblique - 3D View - oblique.png",
+    "miele_kwt6722is/views/rework_r1/front - 3D View - front.png",
+    "miele_kwt6722is/views/rework_r1/side - 3D View - side.png"
+  ],
+  "revision": "Custom_R1",
+  "build_method": "native_custom_new_family",
+  "dimension_gate": true,
+  "dimension_gate_scope": "overall",
+  "native_gates_pass": true,
+  "replacement_reason": "Orchestrator round 1: exact-identity manufacturer working family fails the <=1 mm complete overall dimension gate. New native custom geometry replaces the working selection; OEM originals and prior working RFA remain preserved.",
+  "superseded_working_rfa": {
+    "path": "miele_kwt6722is/miele_kwt6722is_R2025.rfa",
+    "sha256": "b6d424fe8d51979c0b5f753df9e4485767182ab63fa86aba7f7677e7bd500318",
+    "status": "DOWNLOADED"
+  },
+  "source_pdf_sha256": "01d2d6d736c7bc01b7bbbd99ba7abca1605664ff86ccf49bb1819951510192e8",
+  "source_page": 2,
+  "custom_build_entry": "miele_kwt6722is/source/build.py",
+  "build_support": [
+    "rework_round1/native_rebuild.py",
+    "rework_round1/validate_native.py",
+    "family_common.py"
+  ],
+  "validation_native_record": "miele_kwt6722is/source/rework_r1/validation.json",
+  "validation_sha256": "f4dc7ce4ce0f07721d8417030f27608232b47771796f18eeabd78aeb01ba47d0"
+}

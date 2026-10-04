@@ -1,0 +1,15 @@
+Traceback (most recent call last):
+  File "E:\Claude\3D-Model-Workflow\output\1527_wieland\electrical_fixtures\_tools\run_orion_and_final_reviews.py", line 12, in <module>
+    module.main(__revit__.Application)
+  File "E:\Claude\3D-Model-Workflow\output\1527_wieland\electrical_fixtures\Best_option_-_Orion_Tube_Pendant__1967952628416388\source\build_family.py", line 28, in main
+    f.cylinder('Electrical cord' if index==0 else 'Steel tensile wire',xyz(x,0,0),DB.XYZ.BasisZ,.036 if index==0 else .023,.625,body_z,cord)
+  File "E:\Claude\3D-Model-Workflow\output\1527_wieland\electrical_fixtures\_tools\native_fixture_support.py", line 164, in cylinder
+    def cylinder(self,name,origin,axis,r,a,b,material,rounding=0):return self.add(name,cylinder_solid(origin,axis,r,a,b,rounding),material)
+  File "E:\Claude\3D-Model-Workflow\output\1527_wieland\electrical_fixtures\_tools\native_fixture_support.py", line 53, in cylinder_solid
+    return revolve_solid(origin,axis,p)
+  File "E:\Claude\3D-Model-Workflow\output\1527_wieland\electrical_fixtures\_tools\native_fixture_support.py", line 46, in revolve_solid
+    return DB.GeometryCreationUtilities.CreateRevolvedGeometry(frame,List[DB.CurveLoop]([loop(origin,radial,axis,profile)]),0,math.pi*2)
+  File "E:\Claude\3D-Model-Workflow\output\1527_wieland\electrical_fixtures\_tools\native_fixture_support.py", line 27, in loop
+    result.Append(DB.Line.CreateBound(at(current),at(end)))
+Exception: Curve length is too small for Revit's tolerance (as identified by Application.ShortCurveTolerance).
+Parameter name: endpoints

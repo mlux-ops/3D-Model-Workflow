@@ -1,0 +1,238 @@
+{
+  "material_tests": {
+    "Detail": {
+      "face_count": 94, 
+      "writable": true, 
+      "substitution_reaches_faces": true
+    }, 
+    "Finish": {
+      "face_count": 94, 
+      "writable": true, 
+      "substitution_reaches_faces": true
+    }
+  }, 
+  "family_warnings": [], 
+  "actual_dimensions_after_reopen_mm": [
+    273.05000000000001, 
+    76.825699907541264, 
+    229.51733424848339
+  ], 
+  "reopen_geometry_equal": true, 
+  "limitations": [
+    "Finish 991 verified as Polished Gold Optic on the exact manufacturer product page.", 
+    "Cross junction fillets, handle neck and coating response are inferred.", 
+    "Outlet bend is a circular reconstruction from the 1.5 in drop and 20 degree outlet axis; its calculated outer projection is 9.036 in, within 1 mm of nominal 9 in.", 
+    "Independent visualization reconstruction with fixed product dimensions and editable native materials.", 
+    "Small fillets, seams, nozzle details and optical material response are inferred where the manufacturer does not dimension them.", 
+    "No internal hydraulic performance, MEP connectors, fabrication tolerances or procurement substitutions are implied."
+  ], 
+  "inferences": "Finish 991 verified as Polished Gold Optic on the exact manufacturer product page. | Cross junction fillets, handle neck and coating response are inferred. | Outlet bend is a circular reconstruction from the 1.5 in drop and 20 degree outlet axis; its calculated outer projection is 9.036 in, within 1 mm of nominal 9 in. | Independent visualization reconstruction with fixed product dimensions and editable native materials. | Small fillets, seams, nozzle details and optical material response are inferred where the manufacturer does not dimension them. | No internal hydraulic performance, MEP connectors, fabrication tolerances or procurement substitutions are implied.", 
+  "reopened_warnings": [], 
+  "model": "48140991", 
+  "native_gates_pass": true, 
+  "parts": [
+    {
+      "name": "Left escutcheon", 
+      "id": "3212", 
+      "volume_ft3": 0.00048067648507716331
+    }, 
+    {
+      "name": "Spout escutcheon", 
+      "id": "3213", 
+      "volume_ft3": 0.00048067648507716331
+    }, 
+    {
+      "name": "Right escutcheon", 
+      "id": "3214", 
+      "volume_ft3": 0.00048067648507716326
+    }, 
+    {
+      "name": "Left handle neck", 
+      "id": "3215", 
+      "volume_ft3": 0.0004015874053807219
+    }, 
+    {
+      "name": "Left handle hub", 
+      "id": "3216", 
+      "volume_ft3": 0.00013429635495828282
+    }, 
+    {
+      "name": "Left sculpted cross handle", 
+      "id": "3217", 
+      "volume_ft3": 0.00029135259929400227
+    }, 
+    {
+      "name": "Right handle neck", 
+      "id": "3218", 
+      "volume_ft3": 0.0004015874053807219
+    }, 
+    {
+      "name": "Right handle hub", 
+      "id": "3219", 
+      "volume_ft3": 0.00013429635495828282
+    }, 
+    {
+      "name": "Right sculpted cross handle", 
+      "id": "3220", 
+      "volume_ft3": 0.00029135259929400227
+    }, 
+    {
+      "name": "Continuous angled outlet", 
+      "id": "3221", 
+      "volume_ft3": 0.003155452845706193
+    }, 
+    {
+      "name": "Outlet insert", 
+      "id": "3222", 
+      "volume_ft3": 8.4067671528512088e-06
+    }
+  ], 
+  "source_spec_path": "E:\\Claude\\3D-Model-Workflow\\output\\1527_wieland\\plumbing_fixtures\\48140991\\source\\model_spec.json", 
+  "technical_pass": true, 
+  "native_path_checks": [], 
+  "acceptance": "NATIVE_GATES_PASSED_PENDING_VISUAL_REVIEW", 
+  "revit_build": "25.4.50.35", 
+  "source_references": [
+    {
+      "document": "AXOR ONE 48140991 dimension drawing", 
+      "page": 1, 
+      "local_image": "_research/48140991/downloads/AXOR_ONE_48140991_dimensions.jpg", 
+      "url": "https://assets.hansgrohe.com/mam/celum/celum_assets/153__amu01065_eps.jpg?format=HBW7"
+    }
+  ], 
+  "dimension_anchor_checks": [
+    {
+      "pass": true, 
+      "actual_mm": 60.325001513957972, 
+      "label": "Escutcheon diameter", 
+      "deviation_mm": 1.5139579772949218e-06, 
+      "nominal_mm": 60.324999999999996
+    }
+  ], 
+  "reopened_bounds_in": [
+    -5.375, 
+    -1.6496338248252869, 
+    -1.457829596078983e-24, 
+    5.375, 
+    1.3750000298023224, 
+    9.0361155215938354
+  ], 
+  "evidence_files": [
+    "AXOR_48140991_R2025_Isolated - 3D View - Native Front.png", 
+    "AXOR_48140991_R2025_Isolated - 3D View - Native Material.png", 
+    "AXOR_48140991_R2025_Isolated - 3D View - Native Oblique.png", 
+    "AXOR_48140991_R2025_Isolated - 3D View - Native Side.png"
+  ], 
+  "source_dimensions": [
+    "8 in centers; escutcheons diameter 2.375 in; cross handle axis-to-tip 1.375 in; tube diameter 0.875 in; outlet center reach 8.625 in; nominal projection 9 in."
+  ], 
+  "finished_utc": "2026-10-02T15:47:28.261000Z", 
+  "manufacturer": "AXOR", 
+  "actual_dimensions_in": [
+    10.75, 
+    3.0246338546276093, 
+    9.0361155215938354
+  ], 
+  "type": "48140991 - gold", 
+  "appearance_defaults": {
+    "Detail": {
+      "luminance": 0, 
+      "gloss": 0.17000000000000001, 
+      "transparency": 0, 
+      "rgb": [
+        24, 
+        25, 
+        26
+      ], 
+      "cct_k": null
+    }, 
+    "Finish": {
+      "luminance": 0, 
+      "gloss": 0.95999999999999996, 
+      "transparency": 0, 
+      "rgb": [
+        195, 
+        159, 
+        90
+      ], 
+      "cct_k": null
+    }
+  }, 
+  "gates": {
+    "cct": true, 
+    "actual_face_host": true, 
+    "warnings": true, 
+    "dimensions": true, 
+    "orientation": true, 
+    "reopened": true, 
+    "views": true, 
+    "category": true, 
+    "diffuse_bitmaps": true, 
+    "materials": true, 
+    "reopen_geometry_equal": true
+  }, 
+  "category": "Plumbing Fixtures", 
+  "started_utc": "2026-10-02T15:47:15.168000Z", 
+  "revit_version": "2025", 
+  "bounds_in": [
+    -5.375, 
+    -1.6496338248252869, 
+    -1.457829596078983e-24, 
+    5.375, 
+    1.3750000298023224, 
+    9.0361155215938354
+  ], 
+  "display_bounds_in": [
+    -5.375, 
+    -1.6496338127049801, 
+    0.0, 
+    5.375, 
+    1.375, 
+    9.0361155215938354
+  ], 
+  "source_spec_sha256": "6c4ab3096c53123cc0209135af314d958f88129e600922e4eb1850b9ef85c058", 
+  "appearance_bindings": {
+    "Detail": {
+      "exists": true, 
+      "path": "E:\\Claude\\3D-Model-Workflow\\output\\1527_wieland\\plumbing_fixtures\\48140991\\textures\\Detail.png", 
+      "material_id": "3207"
+    }, 
+    "Finish": {
+      "exists": true, 
+      "path": "E:\\Claude\\3D-Model-Workflow\\output\\1527_wieland\\plumbing_fixtures\\48140991\\textures\\Finish.png", 
+      "material_id": "3210"
+    }
+  }, 
+  "visual_review": "PENDING_NATIVE_IMAGE_REVIEW", 
+  "material_ids": {
+    "Detail": "3207", 
+    "Finish": "3210"
+  }, 
+  "rfa_search": {
+    "evidence": "_research/48140991/sources.json", 
+    "result": "No acceptable no-account RFA recovered"
+  }, 
+  "project_warnings": [], 
+  "cct_k": null, 
+  "reopened": true, 
+  "bounds_method": "Fine native face meshes plus 128-sample analytic edges", 
+  "template_form_ids": [
+    "1537"
+  ], 
+  "stage": "complete", 
+  "all_overall_dimensions_authoritative": false, 
+  "host": {
+    "host_id": "3702", 
+    "host_kind": "wall", 
+    "hostface_present": true, 
+    "normal_dot": 1.0, 
+    "instance_host_id": "3702"
+  }, 
+  "expected_dimensions_in": [
+    10.75, 
+    3.0246338127049799, 
+    9.0361155215938354
+  ], 
+  "rfa_path": "E:\\Claude\\3D-Model-Workflow\\output\\1527_wieland\\plumbing_fixtures\\48140991\\AXOR_48140991_R2025.rfa", 
+  "placement": "WorkPlaneBased"
+}

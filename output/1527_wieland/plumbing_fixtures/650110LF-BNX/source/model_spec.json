@@ -1,0 +1,235 @@
+{
+  "key": "650110LF-BNX",
+  "model": "650110LF-BNX",
+  "manufacturer": "Brizo",
+  "type_name": "650110LF-BNX - Brilliance Black Onyx -  Black",
+  "basename": "Brizo_650110LF-BNX_R2025",
+  "name": "Roccesco single-handle arc lavatory faucet",
+  "host": "floor",
+  "configured_dimensions_in": [
+    3,
+    7.4375,
+    9.125
+  ],
+  "materials": {
+    "Finish": {
+      "rgb": [
+        58,
+        60,
+        62
+      ],
+      "gloss": 0.92,
+      "reflectivity": 0.72,
+      "class": "Metal"
+    },
+    "Detail": {
+      "rgb": [
+        24,
+        25,
+        26
+      ],
+      "gloss": 0.17,
+      "reflectivity": 0.04,
+      "class": "Plastic"
+    },
+    "Graphite": {
+      "rgb": [
+        64,
+        67,
+        69
+      ],
+      "gloss": 0.36,
+      "reflectivity": 0.16,
+      "class": "Glass"
+    },
+    "Ceramic": {
+      "rgb": [
+        245,
+        245,
+        241
+      ],
+      "gloss": 0.86,
+      "reflectivity": 0.22,
+      "class": "Ceramic"
+    },
+    "Brass": {
+      "rgb": [
+        160,
+        124,
+        64
+      ],
+      "gloss": 0.4,
+      "reflectivity": 0.38,
+      "class": "Metal"
+    },
+    "Green": {
+      "rgb": [
+        31,
+        113,
+        66
+      ],
+      "gloss": 0.18,
+      "reflectivity": 0.05,
+      "class": "Plastic"
+    },
+    "Gray": {
+      "rgb": [
+        131,
+        132,
+        130
+      ],
+      "gloss": 0.32,
+      "reflectivity": 0.12,
+      "class": "Plastic"
+    }
+  },
+  "geometry": [
+    {
+      "name": "Base escutcheon",
+      "kind": "cylinder",
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "radius": 1,
+      "a": 0,
+      "b": 0.1875,
+      "material": "Finish"
+    },
+    {
+      "name": "Continuous oval arc spout",
+      "kind": "sweep",
+      "path": [
+        [
+          0,
+          0,
+          0.1875
+        ],
+        [
+          0,
+          0,
+          5.75
+        ],
+        [
+          "arc",
+          [
+            0,
+            -3.09375,
+            8.875
+          ],
+          [
+            0,
+            -6.1875,
+            5.75
+          ]
+        ]
+      ],
+      "radius": 0.25,
+      "material": "Finish",
+      "oval": [
+        1.125,
+        0.5
+      ]
+    },
+    {
+      "name": "Side valve hub",
+      "kind": "cylinder",
+      "origin": [
+        0,
+        0,
+        3.125
+      ],
+      "axis": [
+        1,
+        0,
+        0
+      ],
+      "radius": 0.5625,
+      "a": 0.35,
+      "b": 1.75,
+      "material": "Finish"
+    },
+    {
+      "name": "Lever",
+      "kind": "cylinder",
+      "origin": [
+        1.75,
+        0,
+        0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "radius": 0.25,
+      "a": 2.4,
+      "b": 6.15,
+      "material": "Finish"
+    },
+    {
+      "name": "Recessed aerator",
+      "kind": "box",
+      "bounds": [
+        -0.46,
+        -6.35,
+        5.75,
+        0.46,
+        -6.05,
+        5.79
+      ],
+      "radius": 0.06,
+      "material": "Detail"
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://bravo.requested-info.com/brands/BRZ/documents/specSheets/650110LF-BL_Spec.pdf",
+      "document": "Brizo BSP-L-650110LF Rev B",
+      "page": 1,
+      "local_image": "_research/650110LF-BNX/downloads/650110LF-BL_Spec_pages/page_01.png"
+    }
+  ],
+  "dimension_authority": [
+    "Overall height 9.125 in, outlet height 5.75 in, reach 6.1875 in and base diameter 2 in: manufacturer drawing.",
+    "Overall width derives from the 2.5625 in body-to-handle dimension plus the larger base; tube section thickness is drawing-derived."
+  ],
+  "limitations": [
+    "Above-deck visualization only; below-deck mounting shank and supply hoses are omitted.",
+    "Oval tube section and lever height are derived from the drawing, not separately dimensioned.",
+    "Independent visualization reconstruction with fixed product dimensions and editable native materials.",
+    "Small fillets, seams, nozzle details and optical material response are inferred where the manufacturer does not dimension them.",
+    "No internal hydraulic performance, MEP connectors, fabrication tolerances or procurement substitutions are implied."
+  ],
+  "anchors": [
+    {
+      "label": "Base diameter",
+      "parts": [
+        "Base escutcheon"
+      ],
+      "axis": 0,
+      "nominal_in": 2
+    },
+    {
+      "label": "Overall height",
+      "parts": [
+        "Base escutcheon",
+        "Continuous oval arc spout"
+      ],
+      "axis": 2,
+      "nominal_in": 9.125
+    }
+  ],
+  "all_overall_dimensions_authoritative": false,
+  "rfa_search": {
+    "result": "AVAILABLE_LOGIN_REQUIRED",
+    "url": "https://market.bimsmith.com/product/Brizo/revit-bim-ROCCESCO-SingleHandle-Lavatory-Faucet-with-Arc-Spout--650110LFPC-62969",
+    "note": "Revit download led to Sign in to continue. Chrome listing would also need finish adaptation; no login used."
+  }
+}
