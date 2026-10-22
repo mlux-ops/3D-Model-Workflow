@@ -57,10 +57,16 @@ Builder rules that every failure in the catalogue traces back to:
   one function that raises if the path escapes the run dir. List the call sites in
   `PATH_AUDIT.md`.
 - **Template and category.** `C:\ProgramData\Autodesk\RVT 2025\Family Templates\English-Imperial\Generic Model face based.rft`
-  (verify it exists), then set `OST_LightingFixtures` or `OST_PlumbingFixtures`,
-  `FAMILY_ALWAYS_VERTICAL = 0`. Local +Z follows the host face normal: on a ceiling it
-  points down in world; on a wall it is the projection axis leaving the wall, and family +Y
-  must be world up (the Roccesco gates check both).
+  (verify it exists), then set the category: `OST_LightingFixtures`, `OST_PlumbingFixtures`,
+  or `OST_SpecialityEquipment` for appliances (Miele cooktop). `FAMILY_ALWAYS_VERTICAL = 0`.
+  Local +Z follows the host face normal: on a ceiling it points down in world; on a wall it
+  is the projection axis leaving the wall with family +Y world up (Roccesco gates); on a
+  countertop or floor top face it points up, and parts below the face (casing, cut-out
+  body) get their own rays and their own published depth. Gates that do not apply to the
+  product (CCT, glow, flex) are recorded as not applicable, not skipped silently.
+- **Units.** When a page prints both inch and millimetre values and they disagree beyond
+  tolerance (37 1/8 in vs 942 mm), the drawing's unit wins and the README says which
+  was used.
 - **Solids.** `GeometryCreationUtilities` extrusion, revolve, sweep, loft wrapped in
   `FreeFormElement.Create`; one subcategory per part; `MATERIAL_ID_PARAM` associated to a
   type material parameter. Revolve profiles counter-clockwise, no edge under 0.035 in
@@ -115,8 +121,11 @@ Technical gates, all measured in a reopened RFA loaded into a fresh project: cat
 `WorkPlaneBased`; placed on a real wall or floor face with `Host` set and normal dot 1;
 dimensions within 0.025 in of the published values; every material parameter substituted
 and counted on faces; saved defaults and flex rows; CCT parameter; zero family and project
-warnings; at least five exported views with the template host hidden and the crop set from
-fixture bounds. The verifier re-derives all of it from the JSON and the files on disk.
+warnings; at least five exported views plus a hosted view. Export evidence views from the
+project with the host element hidden, not from the family document: the template's host
+block stayed visible in family-document exports on the Miele build even after the hide
+call. The verifier re-derives all of it from the JSON and the files on disk, and checks
+the export pixels (border mostly background) rather than trusting a recorded "hidden" flag.
 
 Visual gate, done by the user or the reviewer they name: front, side and oblique against
 the source, proportions not absolute size, each side counted separately for asymmetric
@@ -164,3 +173,9 @@ journal and log lookups.
 - Deepening relief or fixing proportions after a photo contradicts the user's explicit note.
 - Giving the user a path from the prompt text instead of locating the checkout first.
 - Starting a second kit for a product that already has one on another branch.
+- A packager that tests `'Visual verdict: ACCEPTED' in text`: any README that quotes the
+  phrase passes. Anchor the check to a whole line (`output/cassia/source/package_cassia.py`
+  still has the substring form; `output/miele_km3054_1/source/package_km3054.py` has the fix).
+- Modelling cast-iron grates as tall thin plates standing on edge. They read as walls in
+  oblique views; the real bars are low and rounded on feet. Compare the oblique export
+  against the photo before calling the grate done.

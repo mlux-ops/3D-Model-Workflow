@@ -1,0 +1,61 @@
+﻿checkout        C:\Users\found\Documents\3\3D-Model-Workflow
+RFA will be     C:\Users\found\Documents\3\3D-Model-Workflow\output\miele_km3054_1\Miele_KM3054-1_Gas_Cooktop_R2025.rfa
+== Preflight ==
+  OK      C:\Users\found\Documents\3\3D-Model-Workflow\AGENTS.md
+  OK      C:\Users\found\Documents\3\3D-Model-Workflow\output\miele_km3054_1\source\build_km3054.py
+  OK      C:\Users\found\Documents\3\3D-Model-Workflow\output\miele_km3054_1\source\km3054_geometry.py
+  OK      C:\Users\found\Documents\3\3D-Model-Workflow\output\miele_km3054_1\source\verify_km3054.py
+  OK      C:\Program Files\pyRevit-Master\bin\pyrevit.exe
+  OK      C:\Program Files\pyRevit-Master\bin\cengines\CPY3123\python.exe
+  OK      C:\Program Files\Autodesk\Revit 2025\Revit.exe
+  OK      C:\ProgramData\Autodesk\RVT 2025\Family Templates\English-Imperial\Generic Model face based.rft
+  run start (UTC) 2026-10-22T23:26:53
+
+== Build (pyrevit run, absolute path) ==
+==> Execution Environment
+Execution Id: "ff17a1a4-36b8-4cc1-8fb4-1af84f219899"
+Product: 2025 First Customer Ship | Version: 25.0.2.419 | Build: 20240307_1300(x64) | Language: 1033 | Path: "C:\Program Files\Autodesk\Revit 2025\"
+Clone: master | Branch: "master" | Version: "6.5.3.26176+2017" | Path: "C:\Program Files\pyRevit-Master"
+Engine: DEFAULT (netcore) | Kernel: IronPython 2 | Version: 2712 | Runtime: True | Path: "C:\Program Files\pyRevit-Master\bin\netcore\engines\IPY2712PR\pyRevitLoader.dll" | Desc: "Custom pyRevit IronPython 2 Engine"
+Script: "C:\Users\found\Documents\3\3D-Model-Workflow\output\miele_km3054_1\source\build_km3054.py"
+Working Directory: "C:\Users\found\AppData\Local\Temp\ff17a1a4-36b8-4cc1-8fb4-1af84f219899"
+Journal File: "C:\Users\found\AppData\Local\Temp\ff17a1a4-36b8-4cc1-8fb4-1af84f219899\PyRevitRunner_ff17a1a4-36b8-4cc1-8fb4-1af84f219899.txt"
+Manifest File: "C:\Users\found\AppData\Local\Temp\ff17a1a4-36b8-4cc1-8fb4-1af84f219899\PyRevitRunner.addin"
+Log File: "C:\Users\found\AppData\Local\Temp\ff17a1a4-36b8-4cc1-8fb4-1af84f219899\PyRevitRunner_ff17a1a4-36b8-4cc1-8fb4-1af84f219899.log"
+==> Execution Log
+﻿[km3054] checkpoint: started
+[km3054] checkpoint: built
+[km3054] checkpoint: saved
+[km3054] checkpoint: family_measured
+[km3054] checkpoint: hosted_measured
+[km3054] checkpoint: materials_tested
+[km3054] checkpoint: hosted_exported
+[km3054] checkpoint: complete
+[km3054] TECHNICAL PASS (builder). RFA: C:\Users\found\Documents\3\3D-Model-Workflow\output\miele_km3054_1\Miele_KM3054-1_Gas_Cooktop_R2025.rfa
+
+  pyrevit exit code was 0 - deliberately ignored; log C:\Users\found\Documents\3\3D-Model-Workflow\output\miele_km3054_1\logs\pyrevit-20261022T232653Z.log
+
+== Verify (verify_km3054.py) ==
+powershell : C:\Users\found\Documents\3\3D-Model-Workflow\output\miele_km3054_1\source\verify_km3054.py:158: 
+DeprecationWarning: datetime.datetime.utcfromtimestamp() is deprecated and scheduled for removal in a future version. 
+Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.fromtimestamp(timestamp, datetime.UTC).
+At line:1 char:302
++ ... tch {} } }; powershell -NoProfile -ExecutionPolicy Bypass -File "C:\U ...
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (C:\Users\found\... datetime.UTC).:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+  elif start and datetime.datetime.utcfromtimestamp(os.path.getmtime(rfa)) < start:
+C:\Users\found\Documents\3\3D-Model-Workflow\output\miele_km3054_1\source\verify_km3054.py:167: DeprecationWarning: 
+datetime.datetime.utcfromtimestamp() is deprecated and scheduled for removal in a future version. Use timezone-aware 
+objects to represent datetimes in UTC: datetime.datetime.fromtimestamp(timestamp, datetime.UTC).
+  (start is None or datetime.datetime.utcfromtimestamp(os.path.getmtime(p)) >= start):
+run folder: C:\Users\found\Documents\3\3D-Model-Workflow\output\miele_km3054_1
+TECHNICAL PASS - 25 family rays, 7 hosted rays, 7 material substitutions, 0 warnings, normal dot 1.000000
+  RFA: C:\Users\found\Documents\3\3D-Model-Workflow\output\miele_km3054_1\Miele_KM3054-1_Gas_Cooktop_R2025.rfa (618496 bytes)
+  exports: 6 family + 1 hosted in evidence/
+visual_verdict: PENDING REVIEWER
+A technical pass is not a visual pass. Review the comparison sheets in evidence/.
+  verifier exit code 0
+
+RFA written: C:\Users\found\Documents\3\3D-Model-Workflow\output\miele_km3054_1\Miele_KM3054-1_Gas_Cooktop_R2025.rfa  (618,496 bytes, 10/22/2026 6:27:40 PM)

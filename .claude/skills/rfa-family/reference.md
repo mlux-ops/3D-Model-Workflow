@@ -20,6 +20,7 @@ with caveats), failed, untested.
 | 2026-09-23/24 | Lightology 12 fixtures, 14 RFAs | 8 xhigh workers planned; handoffs timed out; prime ran batched `execfile` sessions on `D:\Games\pyRevit-Master` at root `E:\Claude\3D-Model-Workflow` | 14/14 accepted and delivered (`output/lightology_20260923/ORCHESTRATION.md`, `release/drive_delivery.json`). All native work under one hour. |
 | 2026-09-29..10-02 | Glass Clamp 180 (two duplicate kits on two branches) | `run_clamp.ps1` on PC MAXSPC, 3 native runs | 20/22 gates; `SketchEditScope` is project-only; formula ordering bug; flex dragged unlocked geometry. Not on main. |
 | 2026-10-19 | Roccesco T609110 / T600110 Rev1..Rev4 | `run_roccesco.ps1` in an E: worktree; verifier exit code authoritative | Rev4 technical pass, 33 rays. Not in git; on Drive only. Overlay and photo-comparison sheets added as gates. |
+| 2026-10-22 | Miele KM 3054-1 gas cooktop (first build under this skill) | One Opus agent at medium effort, `run_km3054.ps1` CLI route on this PC, 2 attempts of ~50 s each | Native pass, verifier exit 0, 32 parts, 25 family rays + 7 hosted rays, countertop top-face host. Attempt 1 passed its gates while exports still showed the template host; fixed by exporting from the project and pixel-checking. Visual verdict pending. `output/miele_km3054_1/`. |
 
 ## 2. Environment facts, by machine
 
@@ -30,7 +31,8 @@ Discover at run time; print what was found; exit 2 BLOCKED when absent.
 | Checkout | `C:\Users\found\Documents\3\3D-Model-Workflow` | `E:\Claude\3D-Model-Workflow` (+ `.claude\worktrees\...`) | Dead roots still in files: `C:\Users\found\OneDrive\Documents\ChatGPT\3D Model Workflow` (every `scripts/build_*.py`), `C:\Users\mlux\Documents\GitHub\3D-Model-Workflow` (C# builders), `C:\Users\cowey\GitHub\...`. |
 | pyRevit CLI | `C:\Program Files\pyRevit-Master\bin\pyrevit.exe` (6.5.5) | `D:\Games\pyRevit-Master\bin\pyrevit.exe` (6.4.0), fallback `%APPDATA%\pyRevit-Master\bin` | Engine IronPython 2.7.12 (`IPY2712PR`, .NET Core). |
 | pyRevit CPython | `C:\Program Files\pyRevit-Master\bin\cengines\CPY3123\python.exe` | same layout | stdlib only, no pip, no numpy or PIL. Use for verifiers. |
-| System Python | `C:\Python314\python.exe` (numpy, pillow) | same | `python` may be the Store alias. The `mlux\...Python312` path in the org skill does not exist. |
+| System Python | `C:\Python314\python.exe` (numpy, pillow; no scipy, no fitz/pypdf) | same | `python` may be the Store alias. The `mlux\...Python312` path in the org skill does not exist. No PDF rasteriser on this PC; `pdftotext` exists. |
+| Product pages | `curl` got HTTP 403 from mieleusa.com; Nimble Extract worked. Lightology pages fetched with the CoS fetch tools. | | Save every page, PDF and image under `references/<product>/` with a `SOURCE_MANIFEST.md`. |
 | Revit | `C:\Program Files\Autodesk\Revit 2025\Revit.exe` | same | Builders assert `app.VersionNumber == '2025'`. |
 | Template | `C:\ProgramData\Autodesk\RVT 2025\Family Templates\English-Imperial\Generic Model face based.rft` | same | Also `Generic Model.rft` (nested bodies), `Generic Model line based.rft` (Gola), `Window.rft`. |
 | pyRevit config | `C:\ProgramData\pyRevit\pyRevit_config.ini` | `C:\Users\cowey\AppData\Roaming\pyRevit\...` | `extensions paths add` writes here; needed elevation once. |
@@ -127,6 +129,7 @@ verifier also refuses a stale report (`logs/run-start.txt` newer than `started_u
 | Copying manufacturer solids from a supplied RFA | `scripts/build_axor_angled_v2.py` (`SolidUtils.CreateTransformed`) |
 | Line-based family with void cut | `scripts/build_gola.py`, `add_gola_cutting.py` |
 | Window with wall-cut volume check | `scripts/build_window.py` |
+| Appliance on a countertop top face: parts above and below the face, open grate lattice as unioned plates with an "opening exists" ray, Specialty Equipment category, pixel-checked exports, line-anchored packager check | `output/miele_km3054_1/source/` (`build_km3054.py`, `km3054_geometry.py`, `verify_km3054.py`, `compare_km3054.py`) |
 | Geometry module shared by builder, dry run and verifier | `output/cassia/source/cassia_geometry.py` |
 | Mock Revit API dry run (what it proves and does not) | `output/cassia/source/mock_revit_dryrun.py` |
 | Runner with preflight, stale guard, RFA written line | `output/cassia/run_cassia.ps1`, `run_pendant.ps1` |
