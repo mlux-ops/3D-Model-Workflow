@@ -183,6 +183,18 @@ library `Chrome - mirror` asset; refuse a grey substitute.
   trial (Sonnet 5.5 high passed every native gate; xhigh 2.7x, max 5x, no gain) and the
   grep-not-read rule for project memory. Not merged to main as of 2026-10-22.
 
+## 7a. Writing files on this workstation
+
+- Never pass Python that contains backslashes through a Bash heredoc: the double
+  backslashes collapse, `\3` becomes a 0x03 byte and `\c` a control character. It bit the
+  Adella memory edit (sed) and the Miele delivery record (heredoc, 2026-10-22). Write a
+  `.py` file with the Write tool and run it; rescan for bytes below 0x20 afterwards.
+- Bash mangles `$ps` and `$_` in inline PowerShell; use the PowerShell tool for process
+  work. `PROJECT_MEMORY.md` is CRLF; append in binary mode.
+- A complete `validation.json` with a Revit process still alive means the exit hung, not
+  the build (Miele attempt 3). Verify the artifacts, then stop only the PIDs whose start
+  time matches the run.
+
 ## 8. Untested or open
 
 - Cause of `0xe06d7363` on `pyrevit run` startup. Unknown; not reproduced on purpose.
