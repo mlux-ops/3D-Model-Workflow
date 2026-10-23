@@ -1,0 +1,1079 @@
+{
+ "materials": {
+  "Milk Glass": {
+   "applied": {
+    "generic_glossiness": true, 
+    "generic_diffuse": true, 
+    "generic_transparency": true, 
+    "generic_reflectivity_at_90deg": true, 
+    "generic_reflectivity_at_0deg": true
+   }, 
+   "id": "3209"
+  }, 
+  "Midnight Black": {
+   "applied": {
+    "generic_reflectivity_at_90deg": true, 
+    "generic_reflectivity_at_0deg": true, 
+    "generic_diffuse": true, 
+    "generic_glossiness": true
+   }, 
+   "id": "3207"
+  }
+ }, 
+ "light_source_parameter_found": true, 
+ "shade_method": "direct hollow revolve", 
+ "doc_closes": [
+  {
+   "label": "family build doc", 
+   "closed": true, 
+   "title": "Visual_Comfort_Nodes_KW1041MBK_Midnight_Black_R2025", 
+   "valid": true
+  }
+ ], 
+ "show_disc_value_before_save": 1, 
+ "placement_type": "WorkPlaneBased", 
+ "host_behaviour": {
+  "text": "Face", 
+  "value": 5
+ }, 
+ "light_category_enum_present": true, 
+ "category": "Lighting Fixtures", 
+ "body_cut_volume_in3": 28.602799999999998, 
+ "family_parameters_after_category": [
+  {
+   "group": "autodesk.parameter.group:electricalLoads-1.0.0", 
+   "storage": "Double", 
+   "name": "Apparent Power", 
+   "instance": false, 
+   "readonly": false
+  }, 
+  {
+   "group": "autodesk.parameter.group:identityData-1.0.0", 
+   "storage": "Double", 
+   "name": "Cost", 
+   "instance": false, 
+   "readonly": false
+  }, 
+  {
+   "group": "autodesk.parameter.group:lightPhotometrics-1.0.0", 
+   "storage": "Double", 
+   "name": "Emit from Line Length", 
+   "instance": false, 
+   "readonly": false
+  }, 
+  {
+   "group": "autodesk.parameter.group:identityData-1.0.0", 
+   "storage": "String", 
+   "name": "Model", 
+   "instance": false, 
+   "readonly": false
+  }, 
+  {
+   "group": "autodesk.parameter.group:ifc-1.0.0", 
+   "storage": "String", 
+   "name": "Export Type to IFC As", 
+   "instance": false, 
+   "readonly": false
+  }, 
+  {
+   "group": "autodesk.parameter.group:lightPhotometrics-1.0.0", 
+   "storage": "None", 
+   "name": "Initial Color", 
+   "instance": false, 
+   "readonly": false
+  }, 
+  {
+   "group": "autodesk.parameter.group:identityData-1.0.0", 
+   "storage": "String", 
+   "name": "URL", 
+   "instance": false, 
+   "readonly": false
+  }, 
+  {
+   "group": "autodesk.parameter.group:ifc-1.0.0", 
+   "storage": "String", 
+   "name": "Type IFC Predefined Type", 
+   "instance": false, 
+   "readonly": false
+  }, 
+  {
+   "group": "autodesk.parameter.group:lightPhotometrics-1.0.0", 
+   "storage": "Integer", 
+   "name": "Dimming Lamp Color Temperature Shift", 
+   "instance": false, 
+   "readonly": false
+  }, 
+  {
+   "group": "autodesk.parameter.group:constraints-1.0.0", 
+   "storage": "Double", 
+   "name": "Default Elevation", 
+   "instance": false, 
+   "readonly": false
+  }, 
+  {
+   "group": "autodesk.parameter.group:lightPhotometrics-1.0.0", 
+   "storage": "Integer", 
+   "name": "Color Filter", 
+   "instance": false, 
+   "readonly": false
+  }, 
+  {
+   "group": "autodesk.parameter.group:lightPhotometrics-1.0.0", 
+   "storage": "None", 
+   "name": "Light Loss Factor", 
+   "instance": false, 
+   "readonly": false
+  }, 
+  {
+   "group": "autodesk.parameter.group:identityData-1.0.0", 
+   "storage": "String", 
+   "name": "Manufacturer", 
+   "instance": false, 
+   "readonly": false
+  }, 
+  {
+   "group": "autodesk.parameter.group:electrical-1.0.0", 
+   "storage": "String", 
+   "name": "Wattage Comments", 
+   "instance": false, 
+   "readonly": false
+  }, 
+  {
+   "group": "autodesk.parameter.group:dimensions-1.0.0", 
+   "storage": "Double", 
+   "name": "Light Source Symbol Size", 
+   "instance": false, 
+   "readonly": false
+  }, 
+  {
+   "group": "autodesk.parameter.group:identityData-1.0.0", 
+   "storage": "ElementId", 
+   "name": "Type Image", 
+   "instance": false, 
+   "readonly": false
+  }, 
+  {
+   "group": "autodesk.parameter.group:lightPhotometrics-1.0.0", 
+   "storage": "None", 
+   "name": "Initial Intensity", 
+   "instance": false, 
+   "readonly": false
+  }, 
+  {
+   "group": "autodesk.parameter.group:electricalLighting-1.0.0", 
+   "storage": "Double", 
+   "name": "Coefficient of Utilization", 
+   "instance": true, 
+   "readonly": false
+  }, 
+  {
+   "group": "autodesk.parameter.group:identityData-1.0.0", 
+   "storage": "String", 
+   "name": "Description", 
+   "instance": false, 
+   "readonly": false
+  }, 
+  {
+   "group": "autodesk.parameter.group:identityData-1.0.0", 
+   "storage": "String", 
+   "name": "Assembly Code", 
+   "instance": false, 
+   "readonly": false
+  }, 
+  {
+   "group": "autodesk.parameter.group:electrical-1.0.0", 
+   "storage": "String", 
+   "name": "Lamp", 
+   "instance": false, 
+   "readonly": false
+  }, 
+  {
+   "group": "autodesk.parameter.group:identityData-1.0.0", 
+   "storage": "String", 
+   "name": "Keynote", 
+   "instance": false, 
+   "readonly": false
+  }, 
+  {
+   "group": "autodesk.parameter.group:electricalLighting-1.0.0", 
+   "storage": "Integer", 
+   "name": "Calculate Coefficient of Utilization", 
+   "instance": true, 
+   "readonly": false
+  }, 
+  {
+   "group": "autodesk.parameter.group:identityData-1.0.0", 
+   "storage": "String", 
+   "name": "Type Comments", 
+   "instance": false, 
+   "readonly": false
+  }
+ ], 
+ "work_plane_based": {
+  "text": "Yes", 
+  "value": 1
+ }, 
+ "revit": "2025 25.4.50.35", 
+ "failures": [], 
+ "family_envelope_in": {
+  "x": [
+   -4.0, 
+   4.0
+  ], 
+  "H": 7.6300999999999997, 
+  "z": [
+   -0.0, 
+   5.4996000000000000
+  ], 
+  "D": 5.4996000000000000, 
+  "y": [
+   -3.7378999999999998, 
+   3.8921999999999999
+  ], 
+  "W": 8.0
+ }, 
+ "always_vertical": {
+  "text": "No", 
+  "value": 0
+ }, 
+ "stage": "complete", 
+ "category_in_template": "Generic Models", 
+ "asset_props": [
+  "AdvancedUIDefinition", 
+  "AssetLibID", 
+  "BaseSchema", 
+  "ExchangeGUID", 
+  "Hidden", 
+  "ImplementationGeneric", 
+  "ImplementationMentalRay", 
+  "ImplementationOGS", 
+  "ImplementationPreview", 
+  "SchemaVersion", 
+  "UIDefinition", 
+  "UIName", 
+  "VersionGUID", 
+  "assettype", 
+  "category", 
+  "color_by_object", 
+  "common_Shared_Asset", 
+  "common_Tint_color", 
+  "common_Tint_color_colorspace", 
+  "common_Tint_toggle", 
+  "description", 
+  "generic_ao_details", 
+  "generic_ao_distance", 
+  "generic_ao_on", 
+  "generic_ao_samples", 
+  "generic_backface_cull", 
+  "generic_bump_amount", 
+  "generic_bump_map", 
+  "generic_cutout_opacity", 
+  "generic_diffuse", 
+  "generic_diffuse_colorspace", 
+  "generic_diffuse_image_fade", 
+  "generic_glossiness", 
+  "generic_is_metal", 
+  "generic_refl_depth", 
+  "generic_reflection_glossy_samples", 
+  "generic_reflectivity_at_0deg", 
+  "generic_reflectivity_at_90deg", 
+  "generic_refr_depth", 
+  "generic_refraction_glossy_samples", 
+  "generic_refraction_index", 
+  "generic_refraction_translucency_weight", 
+  "generic_roundcorners_allow_different_materials", 
+  "generic_roundcorners_radius", 
+  "generic_self_illum_color_temperature", 
+  "generic_self_illum_filter_map", 
+  "generic_self_illum_filter_map_colorspace", 
+  "generic_self_illum_luminance", 
+  "generic_transparency", 
+  "generic_transparency_image_fade", 
+  "keyword", 
+  "localname", 
+  "localtype", 
+  "mode", 
+  "revision", 
+  "swatch", 
+  "thumbnail", 
+  "version"
+ ], 
+ "disc_visibility_linked": true, 
+ "body_axial_range_rel_cf": [
+  -2.5249000000000001, 
+  0.0
+ ], 
+ "family_parts": {
+  "Body": {
+   "element_id": "3221", 
+   "x": [
+    -2.1549999999999998, 
+    2.1549999999999998
+   ], 
+   "volume_in3": 28.602799999999998, 
+   "z": [
+    0.125, 
+    2.7766000000000002
+   ], 
+   "faces": 4, 
+   "solids": 1, 
+   "y": [
+    -2.1551000000000000, 
+    2.1551000000000000
+   ], 
+   "axis_rel_cf": [
+    -2.5249000000000001, 
+    0.0
+   ]
+  }, 
+  "Backplate": {
+   "element_id": "3220", 
+   "x": [
+    -2.625, 
+    2.625
+   ], 
+   "volume_in3": 2.7058000000000000, 
+   "z": [
+    -0.0, 
+    0.125
+   ], 
+   "faces": 4, 
+   "solids": 1, 
+   "y": [
+    -2.625, 
+    2.625
+   ], 
+   "axis_rel_cf": [
+    -2.7873999999999999, 
+    -1.0651999999999999
+   ]
+  }, 
+  "Shade": {
+   "element_id": "3223", 
+   "x": [
+    -1.7482000000000000, 
+    1.7482000000000000
+   ], 
+   "volume_in3": 3.4216000000000002, 
+   "z": [
+    2.0464000000000002, 
+    5.4996000000000000
+   ], 
+   "faces": 6, 
+   "solids": 1, 
+   "y": [
+    -2.1905999999999999, 
+    1.3073999999999999
+   ], 
+   "axis_rel_cf": [
+    0.22, 
+    3.4700000000000002
+   ]
+  }, 
+  "Socket": {
+   "element_id": "3222", 
+   "x": [
+    -0.79000000000000004, 
+    0.79000000000000004
+   ], 
+   "volume_in3": 0.43130000000000002, 
+   "z": [
+    1.8709000000000000, 
+    2.5629000000000000
+   ], 
+   "faces": 4, 
+   "solids": 1, 
+   "y": [
+    -0.73619999999999997, 
+    0.83550000000000002
+   ], 
+   "axis_rel_cf": [
+    -0.0, 
+    0.22
+   ]
+  }, 
+  "Disc": {
+   "element_id": "3226", 
+   "x": [
+    -4.0, 
+    4.0
+   ], 
+   "volume_in3": 1.9320999999999999, 
+   "z": [
+    0.89070000000000005, 
+    3.3717000000000001
+   ], 
+   "faces": 6, 
+   "solids": 1, 
+   "y": [
+    -3.7378999999999998, 
+    3.8921999999999999
+   ], 
+   "axis_rel_cf": [
+    -0.0, 
+    0.040000000000000001
+   ]
+  }
+ }, 
+ "template_extrusions": [
+  {
+   "category": null, 
+   "is_solid": true, 
+   "visible_param": {
+    "text": "Yes", 
+    "value": 1
+   }, 
+   "error": "'type' object has no attribute 'ELEMENT_IS_REFERENCE'", 
+   "subcategory": null, 
+   "bbox_in": [
+    -48.0, 
+    -48.0, 
+    -12.0, 
+    48.0, 
+    48.0, 
+    -0.0
+   ], 
+   "id": "1537"
+  }
+ ], 
+ "identity": {
+  "Manufacturer": "set", 
+  "Model": "set", 
+  "Description": "set", 
+  "Wattage_storage": "String", 
+  "Lamp_storage": "String", 
+  "Lamp_present": true, 
+  "Type Comments": "set", 
+  "Wattage_present": true
+ }, 
+ "stages": {
+  "light": {
+   "ok": true
+  }, 
+  "views_and_save": {
+   "ok": true
+  }, 
+  "shade": {
+   "ok": true
+  }, 
+  "disc": {
+   "ok": true
+  }, 
+  "socket": {
+   "ok": true
+  }, 
+  "subcategories": {
+   "ok": true
+  }, 
+  "family": {
+   "ok": true
+  }, 
+  "validation": {
+   "ok": true
+  }, 
+  "materials": {
+   "ok": true
+  }, 
+  "params": {
+   "ok": true
+  }, 
+  "summary": {
+   "ok": true
+  }, 
+  "backplate": {
+   "ok": true
+  }, 
+  "body": {
+   "ok": true
+  }, 
+  "identity": {
+   "ok": true
+  }
+ }, 
+ "disc_visible_param_found": true, 
+ "exports": {
+  "front": [
+   "_tmp_family_front - 3D View - Preview front.png"
+  ], 
+  "oblique": [
+   "_tmp_family_oblique - 3D View - Preview oblique.png"
+  ], 
+  "cand_above_left": [
+   "_tmp_family_cand_above_left - 3D View - Preview cand_above_left.png"
+  ], 
+  "cand_below_right": [
+   "_tmp_family_cand_below_right - 3D View - Preview cand_below_right.png"
+  ], 
+  "side": [
+   "_tmp_family_side - 3D View - Preview side.png"
+  ], 
+  "cand_above_right": [
+   "_tmp_family_cand_above_right - 3D View - Preview cand_above_right.png"
+  ], 
+  "cand_below_left": [
+   "_tmp_family_cand_below_left - 3D View - Preview cand_below_left.png"
+  ]
+ }, 
+ "short_curve_tolerance_in": 0.030723174687499997, 
+ "light": {
+  "before": {
+   "types": [
+    {
+     "distribution_class": "SphericalLightDistribution", 
+     "name": "KW1041MBK - Midnight Black / Milk", 
+     "loss_LossFactorValue": 1.0, 
+     "intensity_Efficacy": 148.53999999999999, 
+     "loss_class": "BasicLossFactor", 
+     "intensity_class": "InitialWattageIntensity", 
+     "color_class": "PresetInitialColor", 
+     "intensity_Wattage": 9.2900000000000009, 
+     "color_TemperatureValue": "3200.0", 
+     "loss_LossFactor": 1.0, 
+     "shape_class": "LineLightShape"
+    }
+   ], 
+   "distribution_style": "Spherical", 
+   "light_types": 1, 
+   "shape_style": "Line", 
+   "source_transform": {
+    "origin_in": [
+     0.0, 
+     0.0, 
+     0.0
+    ], 
+    "basis_z": [
+     0.0, 
+     0.0, 
+     1.0
+    ], 
+    "basis_x": [
+     1.0, 
+     0.0, 
+     0.0
+    ]
+   }
+  }, 
+  "move_method": "Location.Move (ElementTransformUtils.MoveElement rolls the transaction back on a light source)", 
+  "style_pick": {
+   "distribution": "Spherical", 
+   "shape": "Point"
+  }, 
+  "after_move": {
+   "types": [
+    {
+     "distribution_class": "SphericalLightDistribution", 
+     "name": "KW1041MBK - Midnight Black / Milk", 
+     "loss_LossFactorValue": 1.0, 
+     "intensity_Efficacy": 148.53999999999999, 
+     "loss_class": "BasicLossFactor", 
+     "intensity_class": "InitialWattageIntensity", 
+     "color_class": "PresetInitialColor", 
+     "intensity_Wattage": 9.2900000000000009, 
+     "color_TemperatureValue": "3200.0", 
+     "loss_LossFactor": 1.0, 
+     "shape_class": "LineLightShape"
+    }
+   ], 
+   "distribution_style": "Spherical", 
+   "light_types": 1, 
+   "shape_style": "Line", 
+   "source_transform": {
+    "origin_in": [
+     0.0, 
+     -0.34429999999999999, 
+     3.4453000000000000
+    ], 
+    "basis_z": [
+     0.0, 
+     0.0, 
+     1.0
+    ], 
+    "basis_x": [
+     1.0, 
+     0.0, 
+     0.0
+    ]
+   }
+  }, 
+  "move_delta_in": [
+   0.0, 
+   -0.34429999999999999, 
+   3.4453000000000000
+  ], 
+  "LightDistributionStyle_names": [
+   "Spherical", 
+   "Hemispherical", 
+   "Spot", 
+   "PhotometricWeb"
+  ], 
+  "after": {
+   "types": [
+    {
+     "color_Temperature": "2700.0", 
+     "distribution_class": "SphericalLightDistribution", 
+     "name": "KW1041MBK - Midnight Black / Milk", 
+     "loss_LossFactorValue": 1.0, 
+     "intensity_Efficacy": 90.0, 
+     "loss_class": "BasicLossFactor", 
+     "intensity_class": "InitialWattageIntensity", 
+     "color_class": "CustomInitialColor", 
+     "intensity_Wattage": 3.0, 
+     "color_TemperatureValue": "2700.0", 
+     "loss_LossFactor": 1.0, 
+     "shape_class": "PointLightShape"
+    }
+   ], 
+   "distribution_style": "Spherical", 
+   "light_types": 1, 
+   "shape_style": "Point", 
+   "source_transform": {
+    "origin_in": [
+     0.0, 
+     -0.34429999999999999, 
+     3.4453000000000000
+    ], 
+    "basis_z": [
+     0.0, 
+     0.0, 
+     1.0
+    ], 
+    "basis_x": [
+     1.0, 
+     0.0, 
+     0.0
+    ]
+   }
+  }, 
+  "fbx_family_parameters": {
+   "FBX_LIGHT_LIMUNOUS_INTENSITY": "not a family parameter", 
+   "FBX_LIGHT_INITIAL_COLOR_TEMPERATURE": "not a family parameter", 
+   "FBX_LIGHT_LIMUNOUS_FLUX": "not a family parameter", 
+   "FBX_LIGHT_EFFICACY": "not a family parameter", 
+   "FBX_LIGHT_WATTAGE": "not a family parameter"
+  }, 
+  "source_elements_after": [
+   {
+    "cls": "Element", 
+    "cat": "Light Source", 
+    "location_class": "Location", 
+    "params": [
+     {
+      "storage": "Double", 
+      "name": "Light Source Symbol Size", 
+      "value": {
+       "text": "2' - 0\"", 
+       "value": 2.0
+      }, 
+      "ro": true
+     }, 
+     {
+      "storage": "None", 
+      "name": "Light Source Definition", 
+      "value": {
+       "element_id": "-1"
+      }, 
+      "ro": false
+     }, 
+     {
+      "storage": "ElementId", 
+      "name": "Category", 
+      "value": {
+       "element_id": "-2001121"
+      }, 
+      "ro": true
+     }, 
+     {
+      "storage": "ElementId", 
+      "name": "Category", 
+      "value": {
+       "element_id": "-2001121"
+      }, 
+      "ro": true
+     }, 
+     {
+      "storage": "ElementId", 
+      "name": "Design Option", 
+      "value": {
+       "element_id": "-1"
+      }, 
+      "ro": true
+     }, 
+     {
+      "storage": "String", 
+      "name": "Family Name", 
+      "value": null, 
+      "ro": true
+     }, 
+     {
+      "storage": "String", 
+      "name": "Type Name", 
+      "value": null, 
+      "ro": true
+     }
+    ], 
+    "bbox_in": [
+     -12.062799999999999, 
+     -12.407100000000000, 
+     -8.5547000000000004, 
+     12.062799999999999, 
+     11.718500000000001, 
+     15.445300000000000
+    ], 
+    "id": "3202"
+   }
+  ], 
+  "light_types_at_write": 1, 
+  "source_elements": [
+   {
+    "cls": "Element", 
+    "cat": "Light Source", 
+    "location_class": "Location", 
+    "params": [
+     {
+      "storage": "Double", 
+      "name": "Light Source Symbol Size", 
+      "value": {
+       "text": "2' - 0\"", 
+       "value": 2.0
+      }, 
+      "ro": true
+     }, 
+     {
+      "storage": "Double", 
+      "name": "Emit from Line Length", 
+      "value": {
+       "text": "2' - 0\"", 
+       "value": 2.0
+      }, 
+      "ro": true
+     }, 
+     {
+      "storage": "None", 
+      "name": "Light Source Definition", 
+      "value": {
+       "element_id": "-1"
+      }, 
+      "ro": false
+     }, 
+     {
+      "storage": "ElementId", 
+      "name": "Category", 
+      "value": {
+       "element_id": "-2001121"
+      }, 
+      "ro": true
+     }, 
+     {
+      "storage": "ElementId", 
+      "name": "Category", 
+      "value": {
+       "element_id": "-2001121"
+      }, 
+      "ro": true
+     }, 
+     {
+      "storage": "ElementId", 
+      "name": "Design Option", 
+      "value": {
+       "element_id": "-1"
+      }, 
+      "ro": true
+     }, 
+     {
+      "storage": "String", 
+      "name": "Family Name", 
+      "value": null, 
+      "ro": true
+     }, 
+     {
+      "storage": "String", 
+      "name": "Type Name", 
+      "value": null, 
+      "ro": true
+     }
+    ], 
+    "bbox_in": [
+     -24.062799999999999, 
+     -12.062799999999999, 
+     -12.062799999999999, 
+     24.062799999999999, 
+     12.062799999999999, 
+     12.062799999999999
+    ], 
+    "id": "3202"
+   }
+  ], 
+  "LightShapeStyle_names": [
+   "Point", 
+   "Line", 
+   "Rectangle", 
+   "Circle"
+  ]
+ }, 
+ "light_source_parameter_value": {
+  "text": "Yes", 
+  "value": 1
+ }, 
+ "placement_type_in_template": "WorkPlaneBased", 
+ "template_element_census": {
+  "ViewNavigationToolSettings | None": 1, 
+  "AppearanceAssetElement | None": 24, 
+  "Extrusion | None": 1, 
+  "LinePatternElement | None": 14, 
+  "SketchPlane | None": 12, 
+  "ViewPlan | Views": 2, 
+  "View | None": 1, 
+  "Dimension | Constraints": 2, 
+  "LoadCase | Structural Load Cases": 8, 
+  "SunAndShadowSettings | Sun Path": 1, 
+  "Element | Section Boxes": 1, 
+  "AreaVolumeSettings | None": 1, 
+  "Sketch | None": 4, 
+  "Level | Levels": 1, 
+  "Family | None": 4, 
+  "ReferencePlane | Reference Planes": 3, 
+  "StructuralSettings | None": 1, 
+  "Material | Materials": 7, 
+  "LoadNature | None": 8, 
+  "Element | Work Plane Grid": 8, 
+  "AssemblyCodeTable | None": 1, 
+  "KeynoteTable | None": 1, 
+  "DefaultDivideSettings | None": 1, 
+  "View3D | Views": 1, 
+  "Element | Cameras": 1, 
+  "ViewSection | Views": 4, 
+  "GraphicsStyle | None": 1448, 
+  "ElectricalLoadClassification | Electrical Load Classifications": 6, 
+  "Element | None": 109, 
+  "ParameterElement | Electrical Load Classification Parameter Element": 36, 
+  "InternalOrigin | Internal Origin": 1, 
+  "Element | Light Source": 1, 
+  "FillPatternElement | None": 7, 
+  "ElectricalDemandFactorDefinition | Electrical Demand Factor Definitions": 1, 
+  "ModelLine | <Sketch>": 4
+ }, 
+ "warnings_before_save": [], 
+ "disc_axial_range_rel_cf": [
+  -0.0, 
+  0.040000000000000001
+ ], 
+ "saved": true, 
+ "template": "C:/ProgramData/Autodesk/RVT 2025/Family Templates/English-Imperial/Generic Model face based.rft", 
+ "family_parameters_final": [
+  {
+   "group": "autodesk.parameter.group:electricalLoads-1.0.0", 
+   "storage": "Double", 
+   "name": "Apparent Power", 
+   "instance": false, 
+   "readonly": false
+  }, 
+  {
+   "group": "autodesk.parameter.group:identityData-1.0.0", 
+   "storage": "Double", 
+   "name": "Cost", 
+   "instance": false, 
+   "readonly": false
+  }, 
+  {
+   "group": "autodesk.parameter.group:lightPhotometrics-1.0.0", 
+   "storage": "None", 
+   "name": "Light Loss Factor", 
+   "instance": false, 
+   "readonly": false
+  }, 
+  {
+   "group": "autodesk.parameter.group:lightPhotometrics-1.0.0", 
+   "storage": "Integer", 
+   "name": "Dimming Lamp Color Temperature Shift", 
+   "instance": false, 
+   "readonly": false
+  }, 
+  {
+   "group": "autodesk.parameter.group:identityData-1.0.0", 
+   "storage": "String", 
+   "name": "Type Comments", 
+   "instance": false, 
+   "readonly": false
+  }, 
+  {
+   "group": "autodesk.parameter.group:identityData-1.0.0", 
+   "storage": "String", 
+   "name": "Description", 
+   "instance": false, 
+   "readonly": false
+  }, 
+  {
+   "group": "autodesk.parameter.group:electrical-1.0.0", 
+   "storage": "String", 
+   "name": "Wattage Comments", 
+   "instance": false, 
+   "readonly": false
+  }, 
+  {
+   "group": "autodesk.parameter.group:electricalLighting-1.0.0", 
+   "storage": "Integer", 
+   "name": "Calculate Coefficient of Utilization", 
+   "instance": true, 
+   "readonly": false
+  }, 
+  {
+   "group": "autodesk.parameter.group:electricalLighting-1.0.0", 
+   "storage": "Double", 
+   "name": "Coefficient of Utilization", 
+   "instance": true, 
+   "readonly": false
+  }, 
+  {
+   "group": "autodesk.parameter.group:ifc-1.0.0", 
+   "storage": "String", 
+   "name": "Type IFC Predefined Type", 
+   "instance": false, 
+   "readonly": false
+  }, 
+  {
+   "group": "autodesk.parameter.group:ifc-1.0.0", 
+   "storage": "String", 
+   "name": "Export Type to IFC As", 
+   "instance": false, 
+   "readonly": false
+  }, 
+  {
+   "group": "autodesk.parameter.group:lightPhotometrics-1.0.0", 
+   "storage": "None", 
+   "name": "Initial Color", 
+   "instance": false, 
+   "readonly": false
+  }, 
+  {
+   "group": "autodesk.parameter.group:identityData-1.0.0", 
+   "storage": "ElementId", 
+   "name": "Type Image", 
+   "instance": false, 
+   "readonly": false
+  }, 
+  {
+   "group": "autodesk.parameter.group:identityData-1.0.0", 
+   "storage": "String", 
+   "name": "Assembly Code", 
+   "instance": false, 
+   "readonly": false
+  }, 
+  {
+   "group": "autodesk.parameter.group:lightPhotometrics-1.0.0", 
+   "storage": "Integer", 
+   "name": "Color Filter", 
+   "instance": false, 
+   "readonly": false
+  }, 
+  {
+   "group": "autodesk.parameter.group:identityData-1.0.0", 
+   "storage": "String", 
+   "name": "Manufacturer", 
+   "instance": false, 
+   "readonly": false
+  }, 
+  {
+   "group": "autodesk.parameter.group:visibility-1.0.0", 
+   "storage": "Integer", 
+   "name": "Show Disc", 
+   "instance": true, 
+   "readonly": false
+  }, 
+  {
+   "group": "autodesk.parameter.group:dimensions-1.0.0", 
+   "storage": "Double", 
+   "name": "Light Source Symbol Size", 
+   "instance": false, 
+   "readonly": false
+  }, 
+  {
+   "group": "autodesk.parameter.group:constraints-1.0.0", 
+   "storage": "Double", 
+   "name": "Default Elevation", 
+   "instance": false, 
+   "readonly": false
+  }, 
+  {
+   "group": "autodesk.parameter.group:electrical-1.0.0", 
+   "storage": "String", 
+   "name": "Lamp", 
+   "instance": false, 
+   "readonly": false
+  }, 
+  {
+   "group": "autodesk.parameter.group:materials-1.0.0", 
+   "storage": "ElementId", 
+   "name": "Metal Finish", 
+   "instance": false, 
+   "readonly": false
+  }, 
+  {
+   "group": "autodesk.parameter.group:identityData-1.0.0", 
+   "storage": "String", 
+   "name": "Model", 
+   "instance": false, 
+   "readonly": false
+  }, 
+  {
+   "group": "autodesk.parameter.group:materials-1.0.0", 
+   "storage": "ElementId", 
+   "name": "Glass Finish", 
+   "instance": false, 
+   "readonly": false
+  }, 
+  {
+   "group": "autodesk.parameter.group:identityData-1.0.0", 
+   "storage": "String", 
+   "name": "Keynote", 
+   "instance": false, 
+   "readonly": false
+  }, 
+  {
+   "group": "autodesk.parameter.group:lightPhotometrics-1.0.0", 
+   "storage": "None", 
+   "name": "Initial Intensity", 
+   "instance": false, 
+   "readonly": false
+  }, 
+  {
+   "group": "autodesk.parameter.group:identityData-1.0.0", 
+   "storage": "String", 
+   "name": "URL", 
+   "instance": false, 
+   "readonly": false
+  }
+ ], 
+ "constants": {
+  "disc_t_in": 0.040000000000000001, 
+  "light_pos_in": [
+   0.0, 
+   -0.34428386224330715, 
+   3.4452844663921525
+  ], 
+  "neck_axial_in": 0.21999999999999997, 
+  "sphere_centre_in": [
+   0.0, 
+   -0.442, 
+   3.75
+  ], 
+  "theta_deg": 17.780000000000001, 
+  "axis_N": [
+   0.0, 
+   -0.30536293048966501, 
+   0.95223604252452243
+  ], 
+  "cf_in": [
+   0.0, 
+   0.083224240442223818, 
+   2.1121540068578213
+  ], 
+  "shade_profile": {
+   "inner_pole_axial": 3.3700000000000001, 
+   "neck_inner_r": 0.6873863542433758, 
+   "neck_outer_r": 0.90138781886599728, 
+   "neck_axial": 0.21999999999999997, 
+   "outer_pole_axial": 3.4699999999999998
+  }
+ }, 
+ "all_ok": true
+}

@@ -1,0 +1,16 @@
+repetition: reusing results computed on identical PNGs (sha256 match)
+{
+ "format": true,
+ "joints_1_8_in": true,
+ "wrap_seamless": true,
+ "clearance_gt_0": true,
+ "relief_terms": true,
+ "mix_counts": true,
+ "raw_non_repeating": true
+}
+wrap colour {'seam_x': 1.222, 'matched_interior_x': [1.207, 0.98, 1.137, 1.184, 1.131, 1.091, 1.292], 'matched_x_mean': 1.146, 'ratio_x_matched': 1.066, 'seam_y': 0.435, 'matched_interior_y': [0.702, 0.736, 0.579, 0.647, 0.764, 0.531], 'matched_y_mean': 0.66, 'ratio_y_matched': 0.659, 'all_columns_mean': 0.982, 'all_columns_p99': 1.395, 'all_rows_mean': 0.966, 'all_rows_p99': 1.166, 'ratio_x_naive': 1.244, 'ratio_y_naive': 0.45}
+wrap bump {'seam_x': 1379.4, 'matched_interior_x': [1447.7, 918.6, 1137.5, 1456.5, 1196.2, 1379.8, 1437.3], 'matched_x_mean': 1281.9, 'ratio_x_matched': 1.1, 'seam_y': 236.7, 'matched_interior_y': [648.7, 877.6, 439.2, 679.5, 1098.7, 494.9], 'matched_y_mean': 706.4, 'ratio_y_matched': 0.3, 'all_columns_mean': 1013.0, 'all_columns_p99': 1768.3, 'all_rows_mean': 939.2, 'all_rows_p99': 1503.8, 'ratio_x_naive': 1.4, 'ratio_y_naive': 0.3}
+joint runs {'8': 168} frac 0.02454 vs 0.02454
+relief {"matte": 0.05, "raw": 1.347, "chiseled": 1.409} joint depth 1.600 floor 0.000 plane 1.600
+clearance pattern 0.3000 mm, any face px 0.1191 mm
+repetition {"whole_face_ncc_colour_max": 0.041, "whole_face_ncc_colour_median": 0.028, "whole_face_ncc_height_max": 0.054, "whole_face_ncc_height_median": 0.039, "window_ncc_12sym_max": 0.397, "window_ncc_12sym_median": 0.299, "window_ncc_rot8_16_max": 0.482, "window_ncc_rot8_16_median": 0.298, "baseline_render_window_ncc_12sym_max": 0.446, "baseline_render_window_ncc_12sym_median": 0.299, "baseline_render_window_ncc_rot_max": 0.361, "pairs": 55, "windows": 24}

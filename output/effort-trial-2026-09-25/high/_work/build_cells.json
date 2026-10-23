@@ -1,0 +1,2762 @@
+{
+ "cells": [
+  {
+   "cell": "r0c0",
+   "face_origin_xy": [
+    2,
+    2
+   ],
+   "source": "crosscut_swatch.webp (destriped, 64 px/in)",
+   "patches": [
+    {
+     "dest_face_xy": [
+      0,
+      0
+     ],
+     "transform": "id",
+     "src_rect_swatch64_xywh": [
+      48,
+      0,
+      640,
+      640
+     ],
+     "overlap_rms": 0.0
+    },
+    {
+     "dest_face_xy": [
+      480,
+      0
+     ],
+     "transform": "id",
+     "src_rect_swatch64_xywh": [
+      528,
+      0,
+      640,
+      640
+     ],
+     "overlap_rms": 0.0
+    },
+    {
+     "dest_face_xy": [
+      960,
+      0
+     ],
+     "transform": "flipv",
+     "src_rect_swatch64_xywh": [
+      1184,
+      16,
+      640,
+      640
+     ],
+     "overlap_rms": 4.49
+    },
+    {
+     "dest_face_xy": [
+      1440,
+      0
+     ],
+     "transform": "flipv",
+     "src_rect_swatch64_xywh": [
+      1664,
+      16,
+      640,
+      640
+     ],
+     "overlap_rms": 0.0
+    },
+    {
+     "dest_face_xy": [
+      1920,
+      0
+     ],
+     "transform": "fliph",
+     "src_rect_swatch64_xywh": [
+      2432,
+      256,
+      640,
+      640
+     ],
+     "overlap_rms": 4.4
+    },
+    {
+     "dest_face_xy": [
+      2400,
+      0
+     ],
+     "transform": "rot270",
+     "src_rect_swatch64_xywh": [
+      400,
+      640,
+      640,
+      640
+     ],
+     "overlap_rms": 5.91
+    },
+    {
+     "dest_face_xy": [
+      2880,
+      0
+     ],
+     "transform": "rot270",
+     "src_rect_swatch64_xywh": [
+      1616,
+      704,
+      640,
+      640
+     ],
+     "overlap_rms": 5.35
+    },
+    {
+     "dest_face_xy": [
+      0,
+      480
+     ],
+     "transform": "rot180",
+     "src_rect_swatch64_xywh": [
+      992,
+      704,
+      640,
+      640
+     ],
+     "overlap_rms": 5.17
+    },
+    {
+     "dest_face_xy": [
+      480,
+      480
+     ],
+     "transform": "rot270",
+     "src_rect_swatch64_xywh": [
+      2304,
+      704,
+      640,
+      640
+     ],
+     "overlap_rms": 5.27
+    },
+    {
+     "dest_face_xy": [
+      960,
+      480
+     ],
+     "transform": "transpose",
+     "src_rect_swatch64_xywh": [
+      0,
+      640,
+      640,
+      640
+     ],
+     "overlap_rms": 5.76
+    },
+    {
+     "dest_face_xy": [
+      1440,
+      480
+     ],
+     "transform": "rot90",
+     "src_rect_swatch64_xywh": [
+      2384,
+      0,
+      640,
+      640
+     ],
+     "overlap_rms": 5.2
+    },
+    {
+     "dest_face_xy": [
+      1920,
+      480
+     ],
+     "transform": "fliph",
+     "src_rect_swatch64_xywh": [
+      704,
+      64,
+      640,
+      640
+     ],
+     "overlap_rms": 5.48
+    },
+    {
+     "dest_face_xy": [
+      2400,
+      480
+     ],
+     "transform": "rot270",
+     "src_rect_swatch64_xywh": [
+      880,
+      640,
+      640,
+      640
+     ],
+     "overlap_rms": 4.19
+    },
+    {
+     "dest_face_xy": [
+      2880,
+      480
+     ],
+     "transform": "rot270",
+     "src_rect_swatch64_xywh": [
+      2096,
+      704,
+      640,
+      640
+     ],
+     "overlap_rms": 4.01
+    },
+    {
+     "dest_face_xy": [
+      0,
+      960
+     ],
+     "transform": "rot180",
+     "src_rect_swatch64_xywh": [
+      992,
+      224,
+      640,
+      640
+     ],
+     "overlap_rms": 1.98
+    },
+    {
+     "dest_face_xy": [
+      480,
+      960
+     ],
+     "transform": "flipv",
+     "src_rect_swatch64_xywh": [
+      1824,
+      0,
+      640,
+      640
+     ],
+     "overlap_rms": 5.24
+    },
+    {
+     "dest_face_xy": [
+      960,
+      960
+     ],
+     "transform": "flipv",
+     "src_rect_swatch64_xywh": [
+      1568,
+      656,
+      640,
+      640
+     ],
+     "overlap_rms": 5.7
+    },
+    {
+     "dest_face_xy": [
+      1440,
+      960
+     ],
+     "transform": "transpose",
+     "src_rect_swatch64_xywh": [
+      0,
+      32,
+      640,
+      640
+     ],
+     "overlap_rms": 5.66
+    },
+    {
+     "dest_face_xy": [
+      1920,
+      960
+     ],
+     "transform": "flipv",
+     "src_rect_swatch64_xywh": [
+      336,
+      704,
+      640,
+      640
+     ],
+     "overlap_rms": 5.36
+    },
+    {
+     "dest_face_xy": [
+      2400,
+      960
+     ],
+     "transform": "antitranspose",
+     "src_rect_swatch64_xywh": [
+      2432,
+      576,
+      640,
+      640
+     ],
+     "overlap_rms": 5.1
+    },
+    {
+     "dest_face_xy": [
+      2880,
+      960
+     ],
+     "transform": "antitranspose",
+     "src_rect_swatch64_xywh": [
+      2432,
+      96,
+      640,
+      640
+     ],
+     "overlap_rms": 3.87
+    }
+   ]
+  },
+  {
+   "cell": "r0c1",
+   "face_origin_xy": [
+    3078,
+    2
+   ],
+   "source": "crosscut_swatch.webp (destriped, 64 px/in)",
+   "patches": [
+    {
+     "dest_face_xy": [
+      0,
+      0
+     ],
+     "transform": "rot90",
+     "src_rect_swatch64_xywh": [
+      656,
+      0,
+      640,
+      640
+     ],
+     "overlap_rms": 0.0
+    },
+    {
+     "dest_face_xy": [
+      480,
+      0
+     ],
+     "transform": "fliph",
+     "src_rect_swatch64_xywh": [
+      1776,
+      672,
+      640,
+      640
+     ],
+     "overlap_rms": 4.28
+    },
+    {
+     "dest_face_xy": [
+      960,
+      0
+     ],
+     "transform": "id",
+     "src_rect_swatch64_xywh": [
+      1248,
+      32,
+      640,
+      640
+     ],
+     "overlap_rms": 5.3
+    },
+    {
+     "dest_face_xy": [
+      1440,
+      0
+     ],
+     "transform": "rot270",
+     "src_rect_swatch64_xywh": [
+      976,
+      704,
+      640,
+      640
+     ],
+     "overlap_rms": 4.68
+    },
+    {
+     "dest_face_xy": [
+      1920,
+      0
+     ],
+     "transform": "transpose",
+     "src_rect_swatch64_xywh": [
+      16,
+      80,
+      640,
+      640
+     ],
+     "overlap_rms": 4.91
+    },
+    {
+     "dest_face_xy": [
+      2400,
+      0
+     ],
+     "transform": "transpose",
+     "src_rect_swatch64_xywh": [
+      16,
+      560,
+      640,
+      640
+     ],
+     "overlap_rms": 0.1
+    },
+    {
+     "dest_face_xy": [
+      2880,
+      0
+     ],
+     "transform": "fliph",
+     "src_rect_swatch64_xywh": [
+      2416,
+      704,
+      640,
+      640
+     ],
+     "overlap_rms": 5.04
+    },
+    {
+     "dest_face_xy": [
+      0,
+      480
+     ],
+     "transform": "transpose",
+     "src_rect_swatch64_xywh": [
+      2080,
+      0,
+      640,
+      640
+     ],
+     "overlap_rms": 5.06
+    },
+    {
+     "dest_face_xy": [
+      480,
+      480
+     ],
+     "transform": "transpose",
+     "src_rect_swatch64_xywh": [
+      2080,
+      480,
+      640,
+      640
+     ],
+     "overlap_rms": 3.58
+    },
+    {
+     "dest_face_xy": [
+      960,
+      480
+     ],
+     "transform": "fliph",
+     "src_rect_swatch64_xywh": [
+      672,
+      704,
+      640,
+      640
+     ],
+     "overlap_rms": 4.95
+    },
+    {
+     "dest_face_xy": [
+      1440,
+      480
+     ],
+     "transform": "rot270",
+     "src_rect_swatch64_xywh": [
+      1456,
+      704,
+      640,
+      640
+     ],
+     "overlap_rms": 4.27
+    },
+    {
+     "dest_face_xy": [
+      1920,
+      480
+     ],
+     "transform": "fliph",
+     "src_rect_swatch64_xywh": [
+      672,
+      0,
+      640,
+      640
+     ],
+     "overlap_rms": 5.47
+    },
+    {
+     "dest_face_xy": [
+      2400,
+      480
+     ],
+     "transform": "fliph",
+     "src_rect_swatch64_xywh": [
+      1568,
+      0,
+      640,
+      640
+     ],
+     "overlap_rms": 5.51
+    },
+    {
+     "dest_face_xy": [
+      2880,
+      480
+     ],
+     "transform": "fliph",
+     "src_rect_swatch64_xywh": [
+      48,
+      704,
+      640,
+      640
+     ],
+     "overlap_rms": 5.74
+    },
+    {
+     "dest_face_xy": [
+      0,
+      960
+     ],
+     "transform": "id",
+     "src_rect_swatch64_xywh": [
+      2416,
+      0,
+      640,
+      640
+     ],
+     "overlap_rms": 5.87
+    },
+    {
+     "dest_face_xy": [
+      480,
+      960
+     ],
+     "transform": "transpose",
+     "src_rect_swatch64_xywh": [
+      16,
+      0,
+      640,
+      640
+     ],
+     "overlap_rms": 5.65
+    },
+    {
+     "dest_face_xy": [
+      960,
+      960
+     ],
+     "transform": "flipv",
+     "src_rect_swatch64_xywh": [
+      880,
+      80,
+      640,
+      640
+     ],
+     "overlap_rms": 5.15
+    },
+    {
+     "dest_face_xy": [
+      1440,
+      960
+     ],
+     "transform": "rot270",
+     "src_rect_swatch64_xywh": [
+      1936,
+      704,
+      640,
+      640
+     ],
+     "overlap_rms": 4.48
+    },
+    {
+     "dest_face_xy": [
+      1920,
+      960
+     ],
+     "transform": "fliph",
+     "src_rect_swatch64_xywh": [
+      672,
+      480,
+      640,
+      640
+     ],
+     "overlap_rms": 3.98
+    },
+    {
+     "dest_face_xy": [
+      2400,
+      960
+     ],
+     "transform": "rot270",
+     "src_rect_swatch64_xywh": [
+      1296,
+      672,
+      640,
+      640
+     ],
+     "overlap_rms": 5.41
+    },
+    {
+     "dest_face_xy": [
+      2880,
+      960
+     ],
+     "transform": "rot270",
+     "src_rect_swatch64_xywh": [
+      1776,
+      0,
+      640,
+      640
+     ],
+     "overlap_rms": 5.67
+    }
+   ]
+  },
+  {
+   "cell": "r0c2",
+   "face_origin_xy": [
+    6154,
+    2
+   ],
+   "source": "crosscut_swatch.webp (destriped, 64 px/in)",
+   "patches": [
+    {
+     "dest_face_xy": [
+      0,
+      0
+     ],
+     "transform": "id",
+     "src_rect_swatch64_xywh": [
+      0,
+      704,
+      640,
+      640
+     ],
+     "overlap_rms": 0.0
+    },
+    {
+     "dest_face_xy": [
+      480,
+      0
+     ],
+     "transform": "flipv",
+     "src_rect_swatch64_xywh": [
+      1136,
+      64,
+      640,
+      640
+     ],
+     "overlap_rms": 4.95
+    },
+    {
+     "dest_face_xy": [
+      960,
+      0
+     ],
+     "transform": "fliph",
+     "src_rect_swatch64_xywh": [
+      608,
+      0,
+      640,
+      640
+     ],
+     "overlap_rms": 5.22
+    },
+    {
+     "dest_face_xy": [
+      1440,
+      0
+     ],
+     "transform": "fliph",
+     "src_rect_swatch64_xywh": [
+      96,
+      0,
+      640,
+      640
+     ],
+     "overlap_rms": 4.19
+    },
+    {
+     "dest_face_xy": [
+      1920,
+      0
+     ],
+     "transform": "rot180",
+     "src_rect_swatch64_xywh": [
+      2432,
+      672,
+      640,
+      640
+     ],
+     "overlap_rms": 4.92
+    },
+    {
+     "dest_face_xy": [
+      2400,
+      0
+     ],
+     "transform": "rot270",
+     "src_rect_swatch64_xywh": [
+      816,
+      704,
+      640,
+      640
+     ],
+     "overlap_rms": 4.55
+    },
+    {
+     "dest_face_xy": [
+      2880,
+      0
+     ],
+     "transform": "fliph",
+     "src_rect_swatch64_xywh": [
+      1792,
+      624,
+      640,
+      640
+     ],
+     "overlap_rms": 4.85
+    },
+    {
+     "dest_face_xy": [
+      0,
+      480
+     ],
+     "transform": "antitranspose",
+     "src_rect_swatch64_xywh": [
+      2432,
+      0,
+      640,
+      640
+     ],
+     "overlap_rms": 5.35
+    },
+    {
+     "dest_face_xy": [
+      480,
+      480
+     ],
+     "transform": "rot90",
+     "src_rect_swatch64_xywh": [
+      1776,
+      0,
+      640,
+      640
+     ],
+     "overlap_rms": 6.03
+    },
+    {
+     "dest_face_xy": [
+      960,
+      480
+     ],
+     "transform": "flipv",
+     "src_rect_swatch64_xywh": [
+      1152,
+      704,
+      640,
+      640
+     ],
+     "overlap_rms": 5.03
+    },
+    {
+     "dest_face_xy": [
+      1440,
+      480
+     ],
+     "transform": "flipv",
+     "src_rect_swatch64_xywh": [
+      1632,
+      704,
+      640,
+      640
+     ],
+     "overlap_rms": 4.04
+    },
+    {
+     "dest_face_xy": [
+      1920,
+      480
+     ],
+     "transform": "id",
+     "src_rect_swatch64_xywh": [
+      192,
+      640,
+      640,
+      640
+     ],
+     "overlap_rms": 5.39
+    },
+    {
+     "dest_face_xy": [
+      2400,
+      480
+     ],
+     "transform": "rot180",
+     "src_rect_swatch64_xywh": [
+      672,
+      0,
+      640,
+      640
+     ],
+     "overlap_rms": 4.82
+    },
+    {
+     "dest_face_xy": [
+      2880,
+      480
+     ],
+     "transform": "rot180",
+     "src_rect_swatch64_xywh": [
+      192,
+      0,
+      640,
+      640
+     ],
+     "overlap_rms": 3.56
+    },
+    {
+     "dest_face_xy": [
+      0,
+      960
+     ],
+     "transform": "rot270",
+     "src_rect_swatch64_xywh": [
+      1232,
+      0,
+      640,
+      640
+     ],
+     "overlap_rms": 5.94
+    },
+    {
+     "dest_face_xy": [
+      480,
+      960
+     ],
+     "transform": "antitranspose",
+     "src_rect_swatch64_xywh": [
+      2432,
+      560,
+      640,
+      640
+     ],
+     "overlap_rms": 5.18
+    },
+    {
+     "dest_face_xy": [
+      960,
+      960
+     ],
+     "transform": "antitranspose",
+     "src_rect_swatch64_xywh": [
+      592,
+      688,
+      640,
+      640
+     ],
+     "overlap_rms": 5.49
+    },
+    {
+     "dest_face_xy": [
+      1440,
+      960
+     ],
+     "transform": "transpose",
+     "src_rect_swatch64_xywh": [
+      1872,
+      0,
+      640,
+      640
+     ],
+     "overlap_rms": 5.85
+    },
+    {
+     "dest_face_xy": [
+      1920,
+      960
+     ],
+     "transform": "fliph",
+     "src_rect_swatch64_xywh": [
+      2432,
+      16,
+      640,
+      640
+     ],
+     "overlap_rms": 5.45
+    },
+    {
+     "dest_face_xy": [
+      2400,
+      960
+     ],
+     "transform": "rot270",
+     "src_rect_swatch64_xywh": [
+      2288,
+      704,
+      640,
+      640
+     ],
+     "overlap_rms": 5.69
+    },
+    {
+     "dest_face_xy": [
+      2880,
+      960
+     ],
+     "transform": "rot90",
+     "src_rect_swatch64_xywh": [
+      0,
+      64,
+      640,
+      640
+     ],
+     "overlap_rms": 5.43
+    }
+   ]
+  },
+  {
+   "cell": "r1c0",
+   "face_origin_xy": [
+    2,
+    1542
+   ],
+   "source": "crosscut_swatch.webp (destriped, 64 px/in)",
+   "patches": [
+    {
+     "dest_face_xy": [
+      0,
+      0
+     ],
+     "transform": "rot180",
+     "src_rect_swatch64_xywh": [
+      0,
+      704,
+      640,
+      640
+     ],
+     "overlap_rms": 0.0
+    },
+    {
+     "dest_face_xy": [
+      480,
+      0
+     ],
+     "transform": "flipv",
+     "src_rect_swatch64_xywh": [
+      1152,
+      16,
+      640,
+      640
+     ],
+     "overlap_rms": 5.18
+    },
+    {
+     "dest_face_xy": [
+      960,
+      0
+     ],
+     "transform": "antitranspose",
+     "src_rect_swatch64_xywh": [
+      1280,
+      672,
+      640,
+      640
+     ],
+     "overlap_rms": 5.1
+    },
+    {
+     "dest_face_xy": [
+      1440,
+      0
+     ],
+     "transform": "antitranspose",
+     "src_rect_swatch64_xywh": [
+      1280,
+      192,
+      640,
+      640
+     ],
+     "overlap_rms": 0.14
+    },
+    {
+     "dest_face_xy": [
+      1920,
+      0
+     ],
+     "transform": "fliph",
+     "src_rect_swatch64_xywh": [
+      640,
+      16,
+      640,
+      640
+     ],
+     "overlap_rms": 5.21
+    },
+    {
+     "dest_face_xy": [
+      2400,
+      0
+     ],
+     "transform": "fliph",
+     "src_rect_swatch64_xywh": [
+      144,
+      16,
+      640,
+      640
+     ],
+     "overlap_rms": 4.0
+    },
+    {
+     "dest_face_xy": [
+      2880,
+      0
+     ],
+     "transform": "rot180",
+     "src_rect_swatch64_xywh": [
+      2432,
+      624,
+      640,
+      640
+     ],
+     "overlap_rms": 4.91
+    },
+    {
+     "dest_face_xy": [
+      0,
+      480
+     ],
+     "transform": "flipv",
+     "src_rect_swatch64_xywh": [
+      640,
+      704,
+      640,
+      640
+     ],
+     "overlap_rms": 5.11
+    },
+    {
+     "dest_face_xy": [
+      480,
+      480
+     ],
+     "transform": "rot180",
+     "src_rect_swatch64_xywh": [
+      1792,
+      704,
+      640,
+      640
+     ],
+     "overlap_rms": 5.27
+    },
+    {
+     "dest_face_xy": [
+      960,
+      480
+     ],
+     "transform": "rot270",
+     "src_rect_swatch64_xywh": [
+      1856,
+      64,
+      640,
+      640
+     ],
+     "overlap_rms": 5.35
+    },
+    {
+     "dest_face_xy": [
+      1440,
+      480
+     ],
+     "transform": "rot90",
+     "src_rect_swatch64_xywh": [
+      2432,
+      16,
+      640,
+      640
+     ],
+     "overlap_rms": 5.45
+    },
+    {
+     "dest_face_xy": [
+      1920,
+      480
+     ],
+     "transform": "rot90",
+     "src_rect_swatch64_xywh": [
+      2432,
+      496,
+      640,
+      640
+     ],
+     "overlap_rms": 3.41
+    },
+    {
+     "dest_face_xy": [
+      2400,
+      480
+     ],
+     "transform": "rot90",
+     "src_rect_swatch64_xywh": [
+      0,
+      0,
+      640,
+      640
+     ],
+     "overlap_rms": 5.23
+    },
+    {
+     "dest_face_xy": [
+      2880,
+      480
+     ],
+     "transform": "rot90",
+     "src_rect_swatch64_xywh": [
+      0,
+      480,
+      640,
+      640
+     ],
+     "overlap_rms": 4.43
+    },
+    {
+     "dest_face_xy": [
+      0,
+      960
+     ],
+     "transform": "antitranspose",
+     "src_rect_swatch64_xywh": [
+      640,
+      64,
+      640,
+      640
+     ],
+     "overlap_rms": 4.58
+    },
+    {
+     "dest_face_xy": [
+      480,
+      960
+     ],
+     "transform": "antitranspose",
+     "src_rect_swatch64_xywh": [
+      656,
+      656,
+      640,
+      640
+     ],
+     "overlap_rms": 5.0
+    },
+    {
+     "dest_face_xy": [
+      960,
+      960
+     ],
+     "transform": "id",
+     "src_rect_swatch64_xywh": [
+      1920,
+      704,
+      640,
+      640
+     ],
+     "overlap_rms": 5.9
+    },
+    {
+     "dest_face_xy": [
+      1440,
+      960
+     ],
+     "transform": "rot90",
+     "src_rect_swatch64_xywh": [
+      1952,
+      16,
+      640,
+      640
+     ],
+     "overlap_rms": 3.84
+    },
+    {
+     "dest_face_xy": [
+      1920,
+      960
+     ],
+     "transform": "flipv",
+     "src_rect_swatch64_xywh": [
+      1168,
+      704,
+      640,
+      640
+     ],
+     "overlap_rms": 5.36
+    },
+    {
+     "dest_face_xy": [
+      2400,
+      960
+     ],
+     "transform": "rot270",
+     "src_rect_swatch64_xywh": [
+      1216,
+      0,
+      640,
+      640
+     ],
+     "overlap_rms": 5.3
+    },
+    {
+     "dest_face_xy": [
+      2880,
+      960
+     ],
+     "transform": "rot90",
+     "src_rect_swatch64_xywh": [
+      656,
+      0,
+      640,
+      640
+     ],
+     "overlap_rms": 5.46
+    }
+   ]
+  },
+  {
+   "cell": "r1c1",
+   "face_origin_xy": [
+    3078,
+    1542
+   ],
+   "source": "crosscut_swatch.webp (destriped, 64 px/in)",
+   "patches": [
+    {
+     "dest_face_xy": [
+      0,
+      0
+     ],
+     "transform": "flipv",
+     "src_rect_swatch64_xywh": [
+      0,
+      704,
+      640,
+      640
+     ],
+     "overlap_rms": 0.0
+    },
+    {
+     "dest_face_xy": [
+      480,
+      0
+     ],
+     "transform": "fliph",
+     "src_rect_swatch64_xywh": [
+      2432,
+      688,
+      640,
+      640
+     ],
+     "overlap_rms": 5.29
+    },
+    {
+     "dest_face_xy": [
+      960,
+      0
+     ],
+     "transform": "antitranspose",
+     "src_rect_swatch64_xywh": [
+      816,
+      704,
+      640,
+      640
+     ],
+     "overlap_rms": 4.37
+    },
+    {
+     "dest_face_xy": [
+      1440,
+      0
+     ],
+     "transform": "id",
+     "src_rect_swatch64_xywh": [
+      1152,
+      16,
+      640,
+      640
+     ],
+     "overlap_rms": 4.48
+    },
+    {
+     "dest_face_xy": [
+      1920,
+      0
+     ],
+     "transform": "antitranspose",
+     "src_rect_swatch64_xywh": [
+      1792,
+      704,
+      640,
+      640
+     ],
+     "overlap_rms": 5.48
+    },
+    {
+     "dest_face_xy": [
+      2400,
+      0
+     ],
+     "transform": "id",
+     "src_rect_swatch64_xywh": [
+      1792,
+      64,
+      640,
+      640
+     ],
+     "overlap_rms": 5.35
+    },
+    {
+     "dest_face_xy": [
+      2880,
+      0
+     ],
+     "transform": "fliph",
+     "src_rect_swatch64_xywh": [
+      640,
+      0,
+      640,
+      640
+     ],
+     "overlap_rms": 5.24
+    },
+    {
+     "dest_face_xy": [
+      0,
+      480
+     ],
+     "transform": "flipv",
+     "src_rect_swatch64_xywh": [
+      0,
+      224,
+      640,
+      640
+     ],
+     "overlap_rms": 1.22
+    },
+    {
+     "dest_face_xy": [
+      480,
+      480
+     ],
+     "transform": "fliph",
+     "src_rect_swatch64_xywh": [
+      2416,
+      0,
+      640,
+      640
+     ],
+     "overlap_rms": 5.72
+    },
+    {
+     "dest_face_xy": [
+      960,
+      480
+     ],
+     "transform": "rot180",
+     "src_rect_swatch64_xywh": [
+      1216,
+      704,
+      640,
+      640
+     ],
+     "overlap_rms": 5.96
+    },
+    {
+     "dest_face_xy": [
+      1440,
+      480
+     ],
+     "transform": "rot180",
+     "src_rect_swatch64_xywh": [
+      736,
+      704,
+      640,
+      640
+     ],
+     "overlap_rms": 3.76
+    },
+    {
+     "dest_face_xy": [
+      1920,
+      480
+     ],
+     "transform": "fliph",
+     "src_rect_swatch64_xywh": [
+      640,
+      64,
+      640,
+      640
+     ],
+     "overlap_rms": 5.31
+    },
+    {
+     "dest_face_xy": [
+      2400,
+      480
+     ],
+     "transform": "transpose",
+     "src_rect_swatch64_xywh": [
+      0,
+      0,
+      640,
+      640
+     ],
+     "overlap_rms": 5.46
+    },
+    {
+     "dest_face_xy": [
+      2880,
+      480
+     ],
+     "transform": "flipv",
+     "src_rect_swatch64_xywh": [
+      1984,
+      672,
+      640,
+      640
+     ],
+     "overlap_rms": 5.21
+    },
+    {
+     "dest_face_xy": [
+      0,
+      960
+     ],
+     "transform": "antitranspose",
+     "src_rect_swatch64_xywh": [
+      1360,
+      0,
+      640,
+      640
+     ],
+     "overlap_rms": 5.17
+    },
+    {
+     "dest_face_xy": [
+      480,
+      960
+     ],
+     "transform": "fliph",
+     "src_rect_swatch64_xywh": [
+      2416,
+      480,
+      640,
+      640
+     ],
+     "overlap_rms": 4.57
+    },
+    {
+     "dest_face_xy": [
+      960,
+      960
+     ],
+     "transform": "rot90",
+     "src_rect_swatch64_xywh": [
+      112,
+      704,
+      640,
+      640
+     ],
+     "overlap_rms": 5.65
+    },
+    {
+     "dest_face_xy": [
+      1440,
+      960
+     ],
+     "transform": "antitranspose",
+     "src_rect_swatch64_xywh": [
+      1392,
+      640,
+      640,
+      640
+     ],
+     "overlap_rms": 5.22
+    },
+    {
+     "dest_face_xy": [
+      1920,
+      960
+     ],
+     "transform": "rot90",
+     "src_rect_swatch64_xywh": [
+      2432,
+      48,
+      640,
+      640
+     ],
+     "overlap_rms": 5.4
+    },
+    {
+     "dest_face_xy": [
+      2400,
+      960
+     ],
+     "transform": "transpose",
+     "src_rect_swatch64_xywh": [
+      1792,
+      0,
+      640,
+      640
+     ],
+     "overlap_rms": 5.84
+    },
+    {
+     "dest_face_xy": [
+      2880,
+      960
+     ],
+     "transform": "flipv",
+     "src_rect_swatch64_xywh": [
+      864,
+      0,
+      640,
+      640
+     ],
+     "overlap_rms": 4.93
+    }
+   ]
+  },
+  {
+   "cell": "r1c2",
+   "face_origin_xy": [
+    6154,
+    1542
+   ],
+   "source": "crosscut_swatch.webp (destriped, 64 px/in)",
+   "patches": [
+    {
+     "dest_face_xy": [
+      0,
+      0
+     ],
+     "transform": "id",
+     "src_rect_swatch64_xywh": [
+      0,
+      704,
+      640,
+      640
+     ],
+     "overlap_rms": 0.0
+    },
+    {
+     "dest_face_xy": [
+      480,
+      0
+     ],
+     "transform": "id",
+     "src_rect_swatch64_xywh": [
+      480,
+      704,
+      640,
+      640
+     ],
+     "overlap_rms": 0.0
+    },
+    {
+     "dest_face_xy": [
+      960,
+      0
+     ],
+     "transform": "rot180",
+     "src_rect_swatch64_xywh": [
+      2432,
+      704,
+      640,
+      640
+     ],
+     "overlap_rms": 5.22
+    },
+    {
+     "dest_face_xy": [
+      1440,
+      0
+     ],
+     "transform": "fliph",
+     "src_rect_swatch64_xywh": [
+      1792,
+      704,
+      640,
+      640
+     ],
+     "overlap_rms": 4.49
+    },
+    {
+     "dest_face_xy": [
+      1920,
+      0
+     ],
+     "transform": "transpose",
+     "src_rect_swatch64_xywh": [
+      0,
+      0,
+      640,
+      640
+     ],
+     "overlap_rms": 5.37
+    },
+    {
+     "dest_face_xy": [
+      2400,
+      0
+     ],
+     "transform": "rot270",
+     "src_rect_swatch64_xywh": [
+      1120,
+      704,
+      640,
+      640
+     ],
+     "overlap_rms": 5.26
+    },
+    {
+     "dest_face_xy": [
+      2880,
+      0
+     ],
+     "transform": "rot270",
+     "src_rect_swatch64_xywh": [
+      1120,
+      224,
+      640,
+      640
+     ],
+     "overlap_rms": 0.12
+    },
+    {
+     "dest_face_xy": [
+      0,
+      480
+     ],
+     "transform": "antitranspose",
+     "src_rect_swatch64_xywh": [
+      2432,
+      32,
+      640,
+      640
+     ],
+     "overlap_rms": 5.36
+    },
+    {
+     "dest_face_xy": [
+      480,
+      480
+     ],
+     "transform": "fliph",
+     "src_rect_swatch64_xywh": [
+      640,
+      0,
+      640,
+      640
+     ],
+     "overlap_rms": 4.96
+    },
+    {
+     "dest_face_xy": [
+      960,
+      480
+     ],
+     "transform": "flipv",
+     "src_rect_swatch64_xywh": [
+      1792,
+      64,
+      640,
+      640
+     ],
+     "overlap_rms": 5.73
+    },
+    {
+     "dest_face_xy": [
+      1440,
+      480
+     ],
+     "transform": "flipv",
+     "src_rect_swatch64_xywh": [
+      1136,
+      0,
+      640,
+      640
+     ],
+     "overlap_rms": 5.28
+    },
+    {
+     "dest_face_xy": [
+      1920,
+      480
+     ],
+     "transform": "transpose",
+     "src_rect_swatch64_xywh": [
+      480,
+      0,
+      640,
+      640
+     ],
+     "overlap_rms": 4.33
+    },
+    {
+     "dest_face_xy": [
+      2400,
+      480
+     ],
+     "transform": "rot180",
+     "src_rect_swatch64_xywh": [
+      1776,
+      704,
+      640,
+      640
+     ],
+     "overlap_rms": 5.0
+    },
+    {
+     "dest_face_xy": [
+      2880,
+      480
+     ],
+     "transform": "rot180",
+     "src_rect_swatch64_xywh": [
+      640,
+      640,
+      640,
+      640
+     ],
+     "overlap_rms": 5.63
+    },
+    {
+     "dest_face_xy": [
+      0,
+      960
+     ],
+     "transform": "antitranspose",
+     "src_rect_swatch64_xywh": [
+      2432,
+      656,
+      640,
+      640
+     ],
+     "overlap_rms": 6.4
+    },
+    {
+     "dest_face_xy": [
+      480,
+      960
+     ],
+     "transform": "rot90",
+     "src_rect_swatch64_xywh": [
+      2432,
+      0,
+      640,
+      640
+     ],
+     "overlap_rms": 5.55
+    },
+    {
+     "dest_face_xy": [
+      960,
+      960
+     ],
+     "transform": "transpose",
+     "src_rect_swatch64_xywh": [
+      1792,
+      0,
+      640,
+      640
+     ],
+     "overlap_rms": 5.49
+    },
+    {
+     "dest_face_xy": [
+      1440,
+      960
+     ],
+     "transform": "transpose",
+     "src_rect_swatch64_xywh": [
+      0,
+      640,
+      640,
+      640
+     ],
+     "overlap_rms": 5.58
+    },
+    {
+     "dest_face_xy": [
+      1920,
+      960
+     ],
+     "transform": "rot90",
+     "src_rect_swatch64_xywh": [
+      0,
+      0,
+      640,
+      640
+     ],
+     "overlap_rms": 5.2
+    },
+    {
+     "dest_face_xy": [
+      2400,
+      960
+     ],
+     "transform": "flipv",
+     "src_rect_swatch64_xywh": [
+      1248,
+      704,
+      640,
+      640
+     ],
+     "overlap_rms": 5.3
+    },
+    {
+     "dest_face_xy": [
+      2880,
+      960
+     ],
+     "transform": "rot90",
+     "src_rect_swatch64_xywh": [
+      688,
+      64,
+      640,
+      640
+     ],
+     "overlap_rms": 5.29
+    }
+   ]
+  },
+  {
+   "cell": "r2c0",
+   "face_origin_xy": [
+    2,
+    3082
+   ],
+   "source": "crosscut_swatch.webp (destriped, 64 px/in)",
+   "patches": [
+    {
+     "dest_face_xy": [
+      0,
+      0
+     ],
+     "transform": "fliph",
+     "src_rect_swatch64_xywh": [
+      2432,
+      704,
+      640,
+      640
+     ],
+     "overlap_rms": 0.0
+    },
+    {
+     "dest_face_xy": [
+      480,
+      0
+     ],
+     "transform": "fliph",
+     "src_rect_swatch64_xywh": [
+      1952,
+      704,
+      640,
+      640
+     ],
+     "overlap_rms": 0.12
+    },
+    {
+     "dest_face_xy": [
+      960,
+      0
+     ],
+     "transform": "rot270",
+     "src_rect_swatch64_xywh": [
+      768,
+      688,
+      640,
+      640
+     ],
+     "overlap_rms": 4.56
+    },
+    {
+     "dest_face_xy": [
+      1440,
+      0
+     ],
+     "transform": "flipv",
+     "src_rect_swatch64_xywh": [
+      1200,
+      0,
+      640,
+      640
+     ],
+     "overlap_rms": 4.58
+    },
+    {
+     "dest_face_xy": [
+      1920,
+      0
+     ],
+     "transform": "id",
+     "src_rect_swatch64_xywh": [
+      0,
+      656,
+      640,
+      640
+     ],
+     "overlap_rms": 5.19
+    },
+    {
+     "dest_face_xy": [
+      2400,
+      0
+     ],
+     "transform": "id",
+     "src_rect_swatch64_xywh": [
+      480,
+      656,
+      640,
+      640
+     ],
+     "overlap_rms": 0.0
+    },
+    {
+     "dest_face_xy": [
+      2880,
+      0
+     ],
+     "transform": "transpose",
+     "src_rect_swatch64_xywh": [
+      0,
+      16,
+      640,
+      640
+     ],
+     "overlap_rms": 5.14
+    },
+    {
+     "dest_face_xy": [
+      0,
+      480
+     ],
+     "transform": "antitranspose",
+     "src_rect_swatch64_xywh": [
+      672,
+      0,
+      640,
+      640
+     ],
+     "overlap_rms": 4.98
+    },
+    {
+     "dest_face_xy": [
+      480,
+      480
+     ],
+     "transform": "rot90",
+     "src_rect_swatch64_xywh": [
+      2432,
+      0,
+      640,
+      640
+     ],
+     "overlap_rms": 5.07
+    },
+    {
+     "dest_face_xy": [
+      960,
+      480
+     ],
+     "transform": "rot270",
+     "src_rect_swatch64_xywh": [
+      1248,
+      688,
+      640,
+      640
+     ],
+     "overlap_rms": 4.22
+    },
+    {
+     "dest_face_xy": [
+      1440,
+      480
+     ],
+     "transform": "transpose",
+     "src_rect_swatch64_xywh": [
+      1760,
+      64,
+      640,
+      640
+     ],
+     "overlap_rms": 5.98
+    },
+    {
+     "dest_face_xy": [
+      1920,
+      480
+     ],
+     "transform": "rot180",
+     "src_rect_swatch64_xywh": [
+      1792,
+      688,
+      640,
+      640
+     ],
+     "overlap_rms": 5.02
+    },
+    {
+     "dest_face_xy": [
+      2400,
+      480
+     ],
+     "transform": "rot180",
+     "src_rect_swatch64_xywh": [
+      1312,
+      688,
+      640,
+      640
+     ],
+     "overlap_rms": 3.06
+    },
+    {
+     "dest_face_xy": [
+      2880,
+      480
+     ],
+     "transform": "transpose",
+     "src_rect_swatch64_xywh": [
+      480,
+      16,
+      640,
+      640
+     ],
+     "overlap_rms": 3.46
+    },
+    {
+     "dest_face_xy": [
+      0,
+      960
+     ],
+     "transform": "transpose",
+     "src_rect_swatch64_xywh": [
+      2432,
+      704,
+      640,
+      640
+     ],
+     "overlap_rms": 5.61
+    },
+    {
+     "dest_face_xy": [
+      480,
+      960
+     ],
+     "transform": "rot90",
+     "src_rect_swatch64_xywh": [
+      1952,
+      0,
+      640,
+      640
+     ],
+     "overlap_rms": 4.6
+    },
+    {
+     "dest_face_xy": [
+      960,
+      960
+     ],
+     "transform": "rot90",
+     "src_rect_swatch64_xywh": [
+      0,
+      704,
+      640,
+      640
+     ],
+     "overlap_rms": 5.75
+    },
+    {
+     "dest_face_xy": [
+      1440,
+      960
+     ],
+     "transform": "rot270",
+     "src_rect_swatch64_xywh": [
+      1120,
+      48,
+      640,
+      640
+     ],
+     "overlap_rms": 5.5
+    },
+    {
+     "dest_face_xy": [
+      1920,
+      960
+     ],
+     "transform": "fliph",
+     "src_rect_swatch64_xywh": [
+      0,
+      0,
+      640,
+      640
+     ],
+     "overlap_rms": 6.01
+    },
+    {
+     "dest_face_xy": [
+      2400,
+      960
+     ],
+     "transform": "rot90",
+     "src_rect_swatch64_xywh": [
+      2432,
+      32,
+      640,
+      640
+     ],
+     "overlap_rms": 5.52
+    },
+    {
+     "dest_face_xy": [
+      2880,
+      960
+     ],
+     "transform": "rot90",
+     "src_rect_swatch64_xywh": [
+      656,
+      704,
+      640,
+      640
+     ],
+     "overlap_rms": 5.35
+    }
+   ]
+  },
+  {
+   "cell": "r2c1",
+   "face_origin_xy": [
+    3078,
+    3082
+   ],
+   "source": "crosscut_swatch.webp (destriped, 64 px/in)",
+   "patches": [
+    {
+     "dest_face_xy": [
+      0,
+      0
+     ],
+     "transform": "flipv",
+     "src_rect_swatch64_xywh": [
+      2432,
+      704,
+      640,
+      640
+     ],
+     "overlap_rms": 0.0
+    },
+    {
+     "dest_face_xy": [
+      480,
+      0
+     ],
+     "transform": "rot180",
+     "src_rect_swatch64_xywh": [
+      640,
+      48,
+      640,
+      640
+     ],
+     "overlap_rms": 4.67
+    },
+    {
+     "dest_face_xy": [
+      960,
+      0
+     ],
+     "transform": "rot180",
+     "src_rect_swatch64_xywh": [
+      160,
+      48,
+      640,
+      640
+     ],
+     "overlap_rms": 0.0
+    },
+    {
+     "dest_face_xy": [
+      1440,
+      0
+     ],
+     "transform": "fliph",
+     "src_rect_swatch64_xywh": [
+      1744,
+      704,
+      640,
+      640
+     ],
+     "overlap_rms": 4.88
+    },
+    {
+     "dest_face_xy": [
+      1920,
+      0
+     ],
+     "transform": "rot270",
+     "src_rect_swatch64_xywh": [
+      624,
+      704,
+      640,
+      640
+     ],
+     "overlap_rms": 5.24
+    },
+    {
+     "dest_face_xy": [
+      2400,
+      0
+     ],
+     "transform": "id",
+     "src_rect_swatch64_xywh": [
+      1280,
+      64,
+      640,
+      640
+     ],
+     "overlap_rms": 4.86
+    },
+    {
+     "dest_face_xy": [
+      2880,
+      0
+     ],
+     "transform": "id",
+     "src_rect_swatch64_xywh": [
+      1760,
+      64,
+      640,
+      640
+     ],
+     "overlap_rms": 0.0
+    },
+    {
+     "dest_face_xy": [
+      0,
+      480
+     ],
+     "transform": "fliph",
+     "src_rect_swatch64_xywh": [
+      0,
+      672,
+      640,
+      640
+     ],
+     "overlap_rms": 5.73
+    },
+    {
+     "dest_face_xy": [
+      480,
+      480
+     ],
+     "transform": "fliph",
+     "src_rect_swatch64_xywh": [
+      2416,
+      0,
+      640,
+      640
+     ],
+     "overlap_rms": 5.43
+    },
+    {
+     "dest_face_xy": [
+      960,
+      480
+     ],
+     "transform": "rot180",
+     "src_rect_swatch64_xywh": [
+      1104,
+      704,
+      640,
+      640
+     ],
+     "overlap_rms": 6.08
+    },
+    {
+     "dest_face_xy": [
+      1440,
+      480
+     ],
+     "transform": "rot180",
+     "src_rect_swatch64_xywh": [
+      1872,
+      704,
+      640,
+      640
+     ],
+     "overlap_rms": 4.71
+    },
+    {
+     "dest_face_xy": [
+      1920,
+      480
+     ],
+     "transform": "rot270",
+     "src_rect_swatch64_xywh": [
+      864,
+      0,
+      640,
+      640
+     ],
+     "overlap_rms": 5.16
+    },
+    {
+     "dest_face_xy": [
+      2400,
+      480
+     ],
+     "transform": "id",
+     "src_rect_swatch64_xywh": [
+      0,
+      16,
+      640,
+      640
+     ],
+     "overlap_rms": 5.5
+    },
+    {
+     "dest_face_xy": [
+      2880,
+      480
+     ],
+     "transform": "transpose",
+     "src_rect_swatch64_xywh": [
+      2432,
+      704,
+      640,
+      640
+     ],
+     "overlap_rms": 5.5
+    },
+    {
+     "dest_face_xy": [
+      0,
+      960
+     ],
+     "transform": "fliph",
+     "src_rect_swatch64_xywh": [
+      16,
+      704,
+      640,
+      640
+     ],
+     "overlap_rms": 5.39
+    },
+    {
+     "dest_face_xy": [
+      480,
+      960
+     ],
+     "transform": "antitranspose",
+     "src_rect_swatch64_xywh": [
+      1184,
+      704,
+      640,
+      640
+     ],
+     "overlap_rms": 5.53
+    },
+    {
+     "dest_face_xy": [
+      960,
+      960
+     ],
+     "transform": "fliph",
+     "src_rect_swatch64_xywh": [
+      1648,
+      0,
+      640,
+      640
+     ],
+     "overlap_rms": 5.08
+    },
+    {
+     "dest_face_xy": [
+      1440,
+      960
+     ],
+     "transform": "rot90",
+     "src_rect_swatch64_xywh": [
+      2432,
+      80,
+      640,
+      640
+     ],
+     "overlap_rms": 5.34
+    },
+    {
+     "dest_face_xy": [
+      1920,
+      960
+     ],
+     "transform": "antitranspose",
+     "src_rect_swatch64_xywh": [
+      656,
+      208,
+      640,
+      640
+     ],
+     "overlap_rms": 5.67
+    },
+    {
+     "dest_face_xy": [
+      2400,
+      960
+     ],
+     "transform": "rot180",
+     "src_rect_swatch64_xywh": [
+      1792,
+      704,
+      640,
+      640
+     ],
+     "overlap_rms": 4.98
+    },
+    {
+     "dest_face_xy": [
+      2880,
+      960
+     ],
+     "transform": "antitranspose",
+     "src_rect_swatch64_xywh": [
+      560,
+      688,
+      640,
+      640
+     ],
+     "overlap_rms": 5.34
+    }
+   ]
+  },
+  {
+   "cell": "r2c2",
+   "face_origin_xy": [
+    6154,
+    3082
+   ],
+   "source": "crosscut_swatch.webp (destriped, 64 px/in)",
+   "patches": [
+    {
+     "dest_face_xy": [
+      0,
+      0
+     ],
+     "transform": "id",
+     "src_rect_swatch64_xywh": [
+      2432,
+      704,
+      640,
+      640
+     ],
+     "overlap_rms": 0.0
+    },
+    {
+     "dest_face_xy": [
+      480,
+      0
+     ],
+     "transform": "fliph",
+     "src_rect_swatch64_xywh": [
+      640,
+      0,
+      640,
+      640
+     ],
+     "overlap_rms": 4.61
+    },
+    {
+     "dest_face_xy": [
+      960,
+      0
+     ],
+     "transform": "fliph",
+     "src_rect_swatch64_xywh": [
+      1632,
+      0,
+      640,
+      640
+     ],
+     "overlap_rms": 4.86
+    },
+    {
+     "dest_face_xy": [
+      1440,
+      0
+     ],
+     "transform": "flipv",
+     "src_rect_swatch64_xywh": [
+      0,
+      640,
+      640,
+      640
+     ],
+     "overlap_rms": 5.54
+    },
+    {
+     "dest_face_xy": [
+      1920,
+      0
+     ],
+     "transform": "transpose",
+     "src_rect_swatch64_xywh": [
+      0,
+      0,
+      640,
+      640
+     ],
+     "overlap_rms": 5.86
+    },
+    {
+     "dest_face_xy": [
+      2400,
+      0
+     ],
+     "transform": "antitranspose",
+     "src_rect_swatch64_xywh": [
+      1056,
+      704,
+      640,
+      640
+     ],
+     "overlap_rms": 5.19
+    },
+    {
+     "dest_face_xy": [
+      2880,
+      0
+     ],
+     "transform": "rot180",
+     "src_rect_swatch64_xywh": [
+      1776,
+      704,
+      640,
+      640
+     ],
+     "overlap_rms": 4.75
+    },
+    {
+     "dest_face_xy": [
+      0,
+      480
+     ],
+     "transform": "transpose",
+     "src_rect_swatch64_xywh": [
+      1168,
+      0,
+      640,
+      640
+     ],
+     "overlap_rms": 5.01
+    },
+    {
+     "dest_face_xy": [
+      480,
+      480
+     ],
+     "transform": "rot90",
+     "src_rect_swatch64_xywh": [
+      2432,
+      16,
+      640,
+      640
+     ],
+     "overlap_rms": 5.36
+    },
+    {
+     "dest_face_xy": [
+      960,
+      480
+     ],
+     "transform": "rot90",
+     "src_rect_swatch64_xywh": [
+      2432,
+      496,
+      640,
+      640
+     ],
+     "overlap_rms": 3.19
+    },
+    {
+     "dest_face_xy": [
+      1440,
+      480
+     ],
+     "transform": "rot180",
+     "src_rect_swatch64_xywh": [
+      640,
+      672,
+      640,
+      640
+     ],
+     "overlap_rms": 4.86
+    },
+    {
+     "dest_face_xy": [
+      1920,
+      480
+     ],
+     "transform": "rot270",
+     "src_rect_swatch64_xywh": [
+      1808,
+      64,
+      640,
+      640
+     ],
+     "overlap_rms": 5.47
+    },
+    {
+     "dest_face_xy": [
+      2400,
+      480
+     ],
+     "transform": "fliph",
+     "src_rect_swatch64_xywh": [
+      640,
+      0,
+      640,
+      640
+     ],
+     "overlap_rms": 4.99
+    },
+    {
+     "dest_face_xy": [
+      2880,
+      480
+     ],
+     "transform": "flipv",
+     "src_rect_swatch64_xywh": [
+      1280,
+      704,
+      640,
+      640
+     ],
+     "overlap_rms": 5.23
+    },
+    {
+     "dest_face_xy": [
+      0,
+      960
+     ],
+     "transform": "rot90",
+     "src_rect_swatch64_xywh": [
+      0,
+      704,
+      640,
+      640
+     ],
+     "overlap_rms": 5.63
+    },
+    {
+     "dest_face_xy": [
+      480,
+      960
+     ],
+     "transform": "rot180",
+     "src_rect_swatch64_xywh": [
+      1936,
+      672,
+      640,
+      640
+     ],
+     "overlap_rms": 6.1
+    },
+    {
+     "dest_face_xy": [
+      960,
+      960
+     ],
+     "transform": "transpose",
+     "src_rect_swatch64_xywh": [
+      0,
+      0,
+      640,
+      640
+     ],
+     "overlap_rms": 5.36
+    },
+    {
+     "dest_face_xy": [
+      1440,
+      960
+     ],
+     "transform": "rot270",
+     "src_rect_swatch64_xywh": [
+      1152,
+      64,
+      640,
+      640
+     ],
+     "overlap_rms": 5.38
+    },
+    {
+     "dest_face_xy": [
+      1920,
+      960
+     ],
+     "transform": "rot270",
+     "src_rect_swatch64_xywh": [
+      2288,
+      64,
+      640,
+      640
+     ],
+     "overlap_rms": 4.75
+    },
+    {
+     "dest_face_xy": [
+      2400,
+      960
+     ],
+     "transform": "antitranspose",
+     "src_rect_swatch64_xywh": [
+      656,
+      704,
+      640,
+      640
+     ],
+     "overlap_rms": 5.2
+    },
+    {
+     "dest_face_xy": [
+      2880,
+      960
+     ],
+     "transform": "fliph",
+     "src_rect_swatch64_xywh": [
+      624,
+      64,
+      640,
+      640
+     ],
+     "overlap_rms": 5.35
+    }
+   ]
+  }
+ ],
+ "png_save_retries": 0,
+ "usage_max": 35.0,
+ "usage_mean": 18.75,
+ "params": {
+  "patch_px": 640,
+  "overlap_px": 160,
+  "seed": 20260925,
+  "transforms": [
+   "id",
+   "fliph",
+   "flipv",
+   "rot180",
+   "rot90",
+   "rot270",
+   "transpose",
+   "antitranspose"
+  ],
+  "W_USE": 0.9,
+  "W_CELL": 2.5,
+  "TOPK": 4,
+  "W_RARE": 6.0
+ }
+}

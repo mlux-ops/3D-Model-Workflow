@@ -1,0 +1,269 @@
+{
+ "apparent_power_display": "3.00 VA", 
+ "category": "Lighting Fixtures", 
+ "design": {
+  "body_d_in": 4.2400000000000002, 
+  "disc_d_in": 8.0, 
+  "disc_t_in": 0.094, 
+  "plate_d_in": 5.25, 
+  "plate_t_in": 0.125, 
+  "shade_base_dia_in": 1.8027756377319946, 
+  "shade_base_offset_along_axis_in": 0.36825572096305592, 
+  "shade_inner_base_dia_in": 1.3747727084867516, 
+  "socket_d_in": 1.0600000000000001, 
+  "sphere_centre_offset_along_axis_in": 1.8682557209630559, 
+  "theta_deg": 18.179439648215258, 
+  "zc_in": 1.9750000000000001
+ }, 
+ "done": true, 
+ "exports": [
+  "nodes - 3D View - Front.png", 
+  "nodes - 3D View - Oblique.png", 
+  "nodes - 3D View - Side.png"
+ ], 
+ "family_params": [
+  [
+   "Dimming Lamp Color Temperature Shift", 
+   "Integer", 
+   false
+  ], 
+  [
+   "Type IFC Predefined Type", 
+   "String", 
+   false
+  ], 
+  [
+   "Keynote", 
+   "String", 
+   false
+  ], 
+  [
+   "Initial Intensity", 
+   "None", 
+   false
+  ], 
+  [
+   "Apparent Power", 
+   "Double", 
+   false
+  ], 
+  [
+   "Color Filter", 
+   "Integer", 
+   false
+  ], 
+  [
+   "Model", 
+   "String", 
+   false
+  ], 
+  [
+   "Model Notes", 
+   "String", 
+   false
+  ], 
+  [
+   "Coefficient of Utilization", 
+   "Double", 
+   true
+  ], 
+  [
+   "Default Elevation", 
+   "Double", 
+   false
+  ], 
+  [
+   "Type Comments", 
+   "String", 
+   false
+  ], 
+  [
+   "Glass Finish", 
+   "ElementId", 
+   false
+  ], 
+  [
+   "Cost", 
+   "Double", 
+   false
+  ], 
+  [
+   "Wattage Comments", 
+   "String", 
+   false
+  ], 
+  [
+   "Export Type to IFC As", 
+   "String", 
+   false
+  ], 
+  [
+   "URL", 
+   "String", 
+   false
+  ], 
+  [
+   "Emit from Line Length", 
+   "Double", 
+   false
+  ], 
+  [
+   "Type Image", 
+   "ElementId", 
+   false
+  ], 
+  [
+   "Calculate Coefficient of Utilization", 
+   "Integer", 
+   true
+  ], 
+  [
+   "Show Disc", 
+   "Integer", 
+   true
+  ], 
+  [
+   "Initial Color", 
+   "None", 
+   false
+  ], 
+  [
+   "Assembly Code", 
+   "String", 
+   false
+  ], 
+  [
+   "Light Source Symbol Size", 
+   "Double", 
+   false
+  ], 
+  [
+   "Light Loss Factor", 
+   "None", 
+   false
+  ], 
+  [
+   "Manufacturer", 
+   "String", 
+   false
+  ], 
+  [
+   "Lamp", 
+   "String", 
+   false
+  ], 
+  [
+   "Description", 
+   "String", 
+   false
+  ], 
+  [
+   "Metal Finish", 
+   "ElementId", 
+   false
+  ]
+ ], 
+ "family_warnings_prebuild": [], 
+ "light": {
+  "colour_K": 2700.0, 
+  "colour_type": "CustomInitialColor", 
+  "distribution_style": "Spherical", 
+  "intensity_type": "InitialFluxIntensity", 
+  "intensity_value": 250.0, 
+  "loss_factor": 1.0, 
+  "shape_style": "Point", 
+  "source_bbox_in": [
+   -0.36280599354000004, 
+   -0.90549819922975994, 
+   3.4499999999999997, 
+   0.36280599354000004, 
+   -0.26027096987909526, 
+   4.0500000000000007
+  ], 
+  "source_transform_origin_in": [
+   0.0, 
+   -0.5828845845544276, 
+   3.75
+  ]
+ }, 
+ "light_target_in": [
+  0.0, 
+  -0.5828845845544276, 
+  3.75
+ ], 
+ "parts": {
+  "Backplate": {
+   "bbox_in": [
+    -2.625, 
+    -2.625, 
+    0.0, 
+    2.625, 
+    2.625, 
+    0.125
+   ], 
+   "faces": 4, 
+   "id": "3221", 
+   "solids": 1, 
+   "volume_in3": 2.7058413965911949
+  }, 
+  "Body": {
+   "bbox_in": [
+    -2.1200000000000001, 
+    -2.1200000000000001, 
+    0.125, 
+    2.1200000000000001, 
+    2.1200000000000001, 
+    2.6661017257936530
+   ], 
+   "faces": 4, 
+   "id": "3222", 
+   "solids": 1, 
+   "volume_in3": 26.121541236541162
+  }, 
+  "Disc": {
+   "bbox_in": [
+    -4.0, 
+    -3.8296637182301438, 
+    0.72702398041321681, 
+    4.0, 
+    3.8003362817698552, 
+    3.3122839222083749
+   ], 
+   "faces": 6, 
+   "id": "3224", 
+   "solids": 1, 
+   "volume_in3": 4.6418300815763160
+  }, 
+  "Shade": {
+   "bbox_in": [
+    -1.7499035238635723, 
+    -2.3328845845544279, 
+    2.0574105570044887, 
+    1.7499035238635723, 
+    1.1671154154455727, 
+    5.5
+   ], 
+   "faces": 6, 
+   "id": "3225", 
+   "solids": 1, 
+   "volume_in3": 3.4215657382554143
+  }, 
+  "Socket": {
+   "bbox_in": [
+    -0.53000000000000003, 
+    -0.67826120007665547, 
+    1.8096431774047514, 
+    0.53000000000000003, 
+    0.50354455733450565, 
+    2.6724039020430284
+   ], 
+   "faces": 4, 
+   "id": "3223", 
+   "solids": 1, 
+   "volume_in3": 0.49416669756300058
+  }
+ }, 
+ "placement_type": "WorkPlaneBased", 
+ "revit_version": "2025", 
+ "stage": "saved"
+}

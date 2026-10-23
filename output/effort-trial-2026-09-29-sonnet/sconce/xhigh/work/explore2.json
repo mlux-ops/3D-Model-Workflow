@@ -1,0 +1,1272 @@
+{
+ "Lighting Fixture": {
+  "category": "Lighting Fixtures", 
+  "family_params": [
+   {
+    "bip": "FAMILY_ROUNDCONNECTOR_DIMENSIONTYPE", 
+    "name": "Round Connector Dimension", 
+    "ro": false, 
+    "storage": "Integer", 
+    "value": 1, 
+    "vs": "Use Diameter"
+   }, 
+   {
+    "bip": "FBX_ASSET_TYPE", 
+    "name": "Light Source", 
+    "ro": false, 
+    "storage": "Integer", 
+    "value": 1, 
+    "vs": "Yes"
+   }, 
+   {
+    "bip": "ELEM_CATEGORY_PARAM_MT", 
+    "name": "Category", 
+    "ro": true, 
+    "storage": "ElementId", 
+    "value": "-1", 
+    "vs": ""
+   }, 
+   {
+    "bip": "ELEM_CATEGORY_PARAM", 
+    "name": "Category", 
+    "ro": true, 
+    "storage": "ElementId", 
+    "value": "-1", 
+    "vs": ""
+   }, 
+   {
+    "bip": "ROOM_CALCULATION_POINT", 
+    "name": "Room Calculation Point", 
+    "ro": false, 
+    "storage": "Integer", 
+    "value": 0, 
+    "vs": "No"
+   }, 
+   {
+    "bip": "FAMILY_ELECTRICAL_MAINTAIN_ANNOTATION_ORIENTATION", 
+    "name": "Maintain Annotation Orientation", 
+    "ro": false, 
+    "storage": "Integer", 
+    "value": 0, 
+    "vs": "No"
+   }, 
+   {
+    "bip": "FAMILY_CONTENT_PART_TYPE", 
+    "name": "Part Type", 
+    "ro": false, 
+    "storage": "Integer", 
+    "value": 0, 
+    "vs": "Normal"
+   }, 
+   {
+    "bip": "DESIGN_OPTION_ID", 
+    "name": "Design Option", 
+    "ro": true, 
+    "storage": "ElementId", 
+    "value": "-1", 
+    "vs": "-1"
+   }, 
+   {
+    "bip": "FAMILY_HOSTING_BEHAVIOR", 
+    "name": "Host", 
+    "ro": true, 
+    "storage": "Integer", 
+    "value": 0, 
+    "vs": ""
+   }, 
+   {
+    "bip": "FAMILY_SHARED", 
+    "name": "Shared", 
+    "ro": false, 
+    "storage": "Integer", 
+    "value": 0, 
+    "vs": "No"
+   }, 
+   {
+    "bip": "FAMILY_WORK_PLANE_BASED", 
+    "name": "Work Plane-Based", 
+    "ro": false, 
+    "storage": "Integer", 
+    "value": 0, 
+    "vs": "No"
+   }, 
+   {
+    "bip": "FAMILY_ALLOW_CUT_WITH_VOIDS", 
+    "name": "Cut with Voids When Loaded", 
+    "ro": false, 
+    "storage": "Integer", 
+    "value": 0, 
+    "vs": "No"
+   }, 
+   {
+    "bip": "FAMILY_ALWAYS_VERTICAL", 
+    "name": "Always vertical", 
+    "ro": false, 
+    "storage": "Integer", 
+    "value": 1, 
+    "vs": "Yes"
+   }, 
+   {
+    "bip": "OMNICLASS_DESCRIPTION", 
+    "name": "OmniClass Title", 
+    "ro": true, 
+    "storage": "String", 
+    "value": "Lighting", 
+    "vs": "Lighting"
+   }, 
+   {
+    "bip": "OMNICLASS_CODE", 
+    "name": "OmniClass Number", 
+    "ro": false, 
+    "storage": "String", 
+    "value": "23.80.70.00", 
+    "vs": "23.80.70.00"
+   }, 
+   {
+    "bip": "SYMBOL_FAMILY_NAME_PARAM", 
+    "name": "Family Name", 
+    "ro": true, 
+    "storage": "String", 
+    "value": null, 
+    "vs": null
+   }, 
+   {
+    "bip": "ALL_MODEL_TYPE_NAME", 
+    "name": "Type Name", 
+    "ro": true, 
+    "storage": "String", 
+    "value": null, 
+    "vs": null
+   }
+  ], 
+  "fm_params": [
+   [
+    "Model", 
+    "String"
+   ], 
+   [
+    "Calculate Coefficient of Utilization", 
+    "Integer"
+   ], 
+   [
+    "Apparent Power", 
+    "Double"
+   ], 
+   [
+    "Light Source Symbol Size", 
+    "Double"
+   ], 
+   [
+    "Type Image", 
+    "ElementId"
+   ], 
+   [
+    "Initial Color", 
+    "None"
+   ], 
+   [
+    "Assembly Code", 
+    "String"
+   ], 
+   [
+    "Type Comments", 
+    "String"
+   ], 
+   [
+    "Keynote", 
+    "String"
+   ], 
+   [
+    "Dimming Lamp Color Temperature Shift", 
+    "Integer"
+   ], 
+   [
+    "Cost", 
+    "Double"
+   ], 
+   [
+    "Lamp", 
+    "String"
+   ], 
+   [
+    "Coefficient of Utilization", 
+    "Double"
+   ], 
+   [
+    "Wattage Comments", 
+    "String"
+   ], 
+   [
+    "Manufacturer", 
+    "String"
+   ], 
+   [
+    "URL", 
+    "String"
+   ], 
+   [
+    "Default Elevation", 
+    "Double"
+   ], 
+   [
+    "Description", 
+    "String"
+   ], 
+   [
+    "Type IFC Predefined Type", 
+    "String"
+   ], 
+   [
+    "Color Filter", 
+    "Integer"
+   ], 
+   [
+    "Export Type to IFC As", 
+    "String"
+   ], 
+   [
+    "Light Loss Factor", 
+    "None"
+   ], 
+   [
+    "Initial Intensity", 
+    "None"
+   ]
+  ], 
+  "placement": "OneLevelBased", 
+  "sources": [
+   {
+    "bbox": [
+     -1.0052338327949331, 
+     -1.0052338327949994, 
+     3.4999999999999947, 
+     1.0052338327950667, 
+     1.0052338327950003, 
+     5.4999999999999947
+    ], 
+    "class": "Element", 
+    "id": "1906", 
+    "loc": "Location", 
+    "name": "", 
+    "params": [
+     {
+      "bip": "FBX_LIGHT_SOURCE_DIAMETER", 
+      "name": "Light Source Symbol Size", 
+      "ro": true, 
+      "storage": "Double", 
+      "value": 2.0, 
+      "vs": "2' - 0\""
+     }, 
+     {
+      "bip": "FBX_LIGHT_PHOTOMETRICS", 
+      "name": "Light Source Definition", 
+      "ro": false, 
+      "storage": "None", 
+      "vs": null
+     }, 
+     {
+      "bip": "ELEM_CATEGORY_PARAM_MT", 
+      "name": "Category", 
+      "ro": true, 
+      "storage": "ElementId", 
+      "value": "-2001121", 
+      "vs": "Lighting Fixtures: Light Source"
+     }, 
+     {
+      "bip": "ELEM_CATEGORY_PARAM", 
+      "name": "Category", 
+      "ro": true, 
+      "storage": "ElementId", 
+      "value": "-2001121", 
+      "vs": "Lighting Fixtures: Light Source"
+     }, 
+     {
+      "bip": "DESIGN_OPTION_ID", 
+      "name": "Design Option", 
+      "ro": true, 
+      "storage": "ElementId", 
+      "value": "-1", 
+      "vs": "-1"
+     }, 
+     {
+      "bip": "SYMBOL_FAMILY_NAME_PARAM", 
+      "name": "Family Name", 
+      "ro": true, 
+      "storage": "String", 
+      "value": null, 
+      "vs": null
+     }, 
+     {
+      "bip": "ALL_MODEL_TYPE_NAME", 
+      "name": "Type Name", 
+      "ro": true, 
+      "storage": "String", 
+      "value": null, 
+      "vs": null
+     }
+    ]
+   }
+  ]
+ }, 
+ "Lighting Fixture ceiling based": {
+  "category": "Lighting Fixtures", 
+  "family_params": [
+   {
+    "bip": "FAMILY_ROUNDCONNECTOR_DIMENSIONTYPE", 
+    "name": "Round Connector Dimension", 
+    "ro": false, 
+    "storage": "Integer", 
+    "value": 1, 
+    "vs": "Use Diameter"
+   }, 
+   {
+    "bip": "FBX_ASSET_TYPE", 
+    "name": "Light Source", 
+    "ro": false, 
+    "storage": "Integer", 
+    "value": 1, 
+    "vs": "Yes"
+   }, 
+   {
+    "bip": "ELEM_CATEGORY_PARAM_MT", 
+    "name": "Category", 
+    "ro": true, 
+    "storage": "ElementId", 
+    "value": "-1", 
+    "vs": ""
+   }, 
+   {
+    "bip": "ELEM_CATEGORY_PARAM", 
+    "name": "Category", 
+    "ro": true, 
+    "storage": "ElementId", 
+    "value": "-1", 
+    "vs": ""
+   }, 
+   {
+    "bip": "ROOM_CALCULATION_POINT", 
+    "name": "Room Calculation Point", 
+    "ro": false, 
+    "storage": "Integer", 
+    "value": 0, 
+    "vs": "No"
+   }, 
+   {
+    "bip": "FAMILY_ELECTRICAL_MAINTAIN_ANNOTATION_ORIENTATION", 
+    "name": "Maintain Annotation Orientation", 
+    "ro": false, 
+    "storage": "Integer", 
+    "value": 0, 
+    "vs": "No"
+   }, 
+   {
+    "bip": "FAMILY_CONTENT_PART_TYPE", 
+    "name": "Part Type", 
+    "ro": false, 
+    "storage": "Integer", 
+    "value": 0, 
+    "vs": "Normal"
+   }, 
+   {
+    "bip": "DESIGN_OPTION_ID", 
+    "name": "Design Option", 
+    "ro": true, 
+    "storage": "ElementId", 
+    "value": "-1", 
+    "vs": "-1"
+   }, 
+   {
+    "bip": "FAMILY_HOSTING_BEHAVIOR", 
+    "name": "Host", 
+    "ro": true, 
+    "storage": "Integer", 
+    "value": 3, 
+    "vs": "Ceiling"
+   }, 
+   {
+    "bip": "FAMILY_SHARED", 
+    "name": "Shared", 
+    "ro": false, 
+    "storage": "Integer", 
+    "value": 0, 
+    "vs": "No"
+   }, 
+   {
+    "bip": "FAMILY_ALLOW_CUT_WITH_VOIDS", 
+    "name": "Cut with Voids When Loaded", 
+    "ro": false, 
+    "storage": "Integer", 
+    "value": 0, 
+    "vs": "No"
+   }, 
+   {
+    "bip": "FAMILY_ALWAYS_VERTICAL", 
+    "name": "Always vertical", 
+    "ro": false, 
+    "storage": "Integer", 
+    "value": 1, 
+    "vs": "Yes"
+   }, 
+   {
+    "bip": "OMNICLASS_DESCRIPTION", 
+    "name": "OmniClass Title", 
+    "ro": true, 
+    "storage": "String", 
+    "value": "Luminaries for Internal Lighting", 
+    "vs": "Luminaries for Internal Lighting"
+   }, 
+   {
+    "bip": "OMNICLASS_CODE", 
+    "name": "OmniClass Number", 
+    "ro": false, 
+    "storage": "String", 
+    "value": "23.80.70.11", 
+    "vs": "23.80.70.11"
+   }, 
+   {
+    "bip": "SYMBOL_FAMILY_NAME_PARAM", 
+    "name": "Family Name", 
+    "ro": true, 
+    "storage": "String", 
+    "value": null, 
+    "vs": null
+   }, 
+   {
+    "bip": "ALL_MODEL_TYPE_NAME", 
+    "name": "Type Name", 
+    "ro": true, 
+    "storage": "String", 
+    "value": null, 
+    "vs": null
+   }
+  ], 
+  "fm_params": [
+   [
+    "Description", 
+    "String"
+   ], 
+   [
+    "Coefficient of Utilization", 
+    "Double"
+   ], 
+   [
+    "Manufacturer", 
+    "String"
+   ], 
+   [
+    "Wattage Comments", 
+    "String"
+   ], 
+   [
+    "Apparent Power", 
+    "Double"
+   ], 
+   [
+    "Assembly Code", 
+    "String"
+   ], 
+   [
+    "Cost", 
+    "Double"
+   ], 
+   [
+    "Lamp", 
+    "String"
+   ], 
+   [
+    "Export Type to IFC As", 
+    "String"
+   ], 
+   [
+    "Light Source Symbol Size", 
+    "Double"
+   ], 
+   [
+    "Type IFC Predefined Type", 
+    "String"
+   ], 
+   [
+    "Type Comments", 
+    "String"
+   ], 
+   [
+    "Calculate Coefficient of Utilization", 
+    "Integer"
+   ], 
+   [
+    "Keynote", 
+    "String"
+   ], 
+   [
+    "Default Elevation", 
+    "Double"
+   ], 
+   [
+    "Initial Intensity", 
+    "None"
+   ], 
+   [
+    "Type Image", 
+    "ElementId"
+   ], 
+   [
+    "Dimming Lamp Color Temperature Shift", 
+    "Integer"
+   ], 
+   [
+    "Light Loss Factor", 
+    "None"
+   ], 
+   [
+    "Color Filter", 
+    "Integer"
+   ], 
+   [
+    "URL", 
+    "String"
+   ], 
+   [
+    "Model", 
+    "String"
+   ], 
+   [
+    "Initial Color", 
+    "None"
+   ]
+  ], 
+  "placement": "OneLevelBasedHosted", 
+  "sources": [
+   {
+    "bbox": [
+     -1.0052338327949999, 
+     -1.0052338327949999, 
+     6.6666666666666545, 
+     1.0052338327949999, 
+     1.0052338327949999, 
+     8.6666666666666536
+    ], 
+    "class": "Element", 
+    "id": "2057", 
+    "loc": "Location", 
+    "name": "", 
+    "params": [
+     {
+      "bip": "FBX_LIGHT_SOURCE_DIAMETER", 
+      "name": "Light Source Symbol Size", 
+      "ro": true, 
+      "storage": "Double", 
+      "value": 2.0, 
+      "vs": "2' - 0\""
+     }, 
+     {
+      "bip": "FBX_LIGHT_PHOTOMETRICS", 
+      "name": "Light Source Definition", 
+      "ro": false, 
+      "storage": "None", 
+      "vs": null
+     }, 
+     {
+      "bip": "ELEM_CATEGORY_PARAM_MT", 
+      "name": "Category", 
+      "ro": true, 
+      "storage": "ElementId", 
+      "value": "-2001121", 
+      "vs": "Lighting Fixtures: Light Source"
+     }, 
+     {
+      "bip": "ELEM_CATEGORY_PARAM", 
+      "name": "Category", 
+      "ro": true, 
+      "storage": "ElementId", 
+      "value": "-2001121", 
+      "vs": "Lighting Fixtures: Light Source"
+     }, 
+     {
+      "bip": "DESIGN_OPTION_ID", 
+      "name": "Design Option", 
+      "ro": true, 
+      "storage": "ElementId", 
+      "value": "-1", 
+      "vs": "-1"
+     }, 
+     {
+      "bip": "SYMBOL_FAMILY_NAME_PARAM", 
+      "name": "Family Name", 
+      "ro": true, 
+      "storage": "String", 
+      "value": null, 
+      "vs": null
+     }, 
+     {
+      "bip": "ALL_MODEL_TYPE_NAME", 
+      "name": "Type Name", 
+      "ro": true, 
+      "storage": "String", 
+      "value": null, 
+      "vs": null
+     }
+    ]
+   }
+  ]
+ }, 
+ "Lighting Fixture wall based": {
+  "category": "Lighting Fixtures", 
+  "family_params": [
+   {
+    "bip": "FAMILY_ROUNDCONNECTOR_DIMENSIONTYPE", 
+    "name": "Round Connector Dimension", 
+    "ro": false, 
+    "storage": "Integer", 
+    "value": 1, 
+    "vs": "Use Diameter"
+   }, 
+   {
+    "bip": "FBX_ASSET_TYPE", 
+    "name": "Light Source", 
+    "ro": false, 
+    "storage": "Integer", 
+    "value": 1, 
+    "vs": "Yes"
+   }, 
+   {
+    "bip": "ELEM_CATEGORY_PARAM_MT", 
+    "name": "Category", 
+    "ro": true, 
+    "storage": "ElementId", 
+    "value": "-1", 
+    "vs": ""
+   }, 
+   {
+    "bip": "ELEM_CATEGORY_PARAM", 
+    "name": "Category", 
+    "ro": true, 
+    "storage": "ElementId", 
+    "value": "-1", 
+    "vs": ""
+   }, 
+   {
+    "bip": "ROOM_CALCULATION_POINT", 
+    "name": "Room Calculation Point", 
+    "ro": false, 
+    "storage": "Integer", 
+    "value": 0, 
+    "vs": "No"
+   }, 
+   {
+    "bip": "FAMILY_ELECTRICAL_MAINTAIN_ANNOTATION_ORIENTATION", 
+    "name": "Maintain Annotation Orientation", 
+    "ro": false, 
+    "storage": "Integer", 
+    "value": 0, 
+    "vs": "No"
+   }, 
+   {
+    "bip": "FAMILY_CONTENT_PART_TYPE", 
+    "name": "Part Type", 
+    "ro": false, 
+    "storage": "Integer", 
+    "value": 0, 
+    "vs": "Normal"
+   }, 
+   {
+    "bip": "DESIGN_OPTION_ID", 
+    "name": "Design Option", 
+    "ro": true, 
+    "storage": "ElementId", 
+    "value": "-1", 
+    "vs": "-1"
+   }, 
+   {
+    "bip": "FAMILY_HOSTING_BEHAVIOR", 
+    "name": "Host", 
+    "ro": true, 
+    "storage": "Integer", 
+    "value": 1, 
+    "vs": "Wall"
+   }, 
+   {
+    "bip": "FAMILY_SHARED", 
+    "name": "Shared", 
+    "ro": false, 
+    "storage": "Integer", 
+    "value": 0, 
+    "vs": "No"
+   }, 
+   {
+    "bip": "FAMILY_ALLOW_CUT_WITH_VOIDS", 
+    "name": "Cut with Voids When Loaded", 
+    "ro": false, 
+    "storage": "Integer", 
+    "value": 0, 
+    "vs": "No"
+   }, 
+   {
+    "bip": "FAMILY_ALWAYS_VERTICAL", 
+    "name": "Always vertical", 
+    "ro": false, 
+    "storage": "Integer", 
+    "value": 1, 
+    "vs": "Yes"
+   }, 
+   {
+    "bip": "OMNICLASS_DESCRIPTION", 
+    "name": "OmniClass Title", 
+    "ro": true, 
+    "storage": "String", 
+    "value": "Lighting", 
+    "vs": "Lighting"
+   }, 
+   {
+    "bip": "OMNICLASS_CODE", 
+    "name": "OmniClass Number", 
+    "ro": false, 
+    "storage": "String", 
+    "value": "23.80.70.00", 
+    "vs": "23.80.70.00"
+   }, 
+   {
+    "bip": "SYMBOL_FAMILY_NAME_PARAM", 
+    "name": "Family Name", 
+    "ro": true, 
+    "storage": "String", 
+    "value": null, 
+    "vs": null
+   }, 
+   {
+    "bip": "ALL_MODEL_TYPE_NAME", 
+    "name": "Type Name", 
+    "ro": true, 
+    "storage": "String", 
+    "value": null, 
+    "vs": null
+   }
+  ], 
+  "fm_params": [
+   [
+    "Manufacturer", 
+    "String"
+   ], 
+   [
+    "Description", 
+    "String"
+   ], 
+   [
+    "Type Comments", 
+    "String"
+   ], 
+   [
+    "Calculate Coefficient of Utilization", 
+    "Integer"
+   ], 
+   [
+    "Export Type to IFC As", 
+    "String"
+   ], 
+   [
+    "Lamp", 
+    "String"
+   ], 
+   [
+    "Dimming Lamp Color Temperature Shift", 
+    "Integer"
+   ], 
+   [
+    "Wattage Comments", 
+    "String"
+   ], 
+   [
+    "Type Image", 
+    "ElementId"
+   ], 
+   [
+    "Type IFC Predefined Type", 
+    "String"
+   ], 
+   [
+    "Initial Color", 
+    "None"
+   ], 
+   [
+    "Assembly Code", 
+    "String"
+   ], 
+   [
+    "Light Loss Factor", 
+    "None"
+   ], 
+   [
+    "Model", 
+    "String"
+   ], 
+   [
+    "Keynote", 
+    "String"
+   ], 
+   [
+    "Color Filter", 
+    "Integer"
+   ], 
+   [
+    "Light Source Symbol Size", 
+    "Double"
+   ], 
+   [
+    "URL", 
+    "String"
+   ], 
+   [
+    "Cost", 
+    "Double"
+   ], 
+   [
+    "Coefficient of Utilization", 
+    "Double"
+   ], 
+   [
+    "Initial Intensity", 
+    "None"
+   ], 
+   [
+    "Apparent Power", 
+    "Double"
+   ], 
+   [
+    "Default Elevation", 
+    "Double"
+   ]
+  ], 
+  "placement": "OneLevelBasedHosted", 
+  "sources": [
+   {
+    "bbox": [
+     -1.1245109412287313, 
+     -0.33856716612834314, 
+     5.4518541141235630, 
+     0.8859567243612686, 
+     1.6719004994616566, 
+     7.4518541141235630
+    ], 
+    "class": "Element", 
+    "id": "3851", 
+    "loc": "Location", 
+    "name": "", 
+    "params": [
+     {
+      "bip": "FBX_LIGHT_SOURCE_DIAMETER", 
+      "name": "Light Source Symbol Size", 
+      "ro": true, 
+      "storage": "Double", 
+      "value": 2.0, 
+      "vs": "2' - 0\""
+     }, 
+     {
+      "bip": "FBX_LIGHT_PHOTOMETRICS", 
+      "name": "Light Source Definition", 
+      "ro": false, 
+      "storage": "None", 
+      "vs": null
+     }, 
+     {
+      "bip": "ELEM_CATEGORY_PARAM_MT", 
+      "name": "Category", 
+      "ro": true, 
+      "storage": "ElementId", 
+      "value": "-2001121", 
+      "vs": "Lighting Fixtures: Light Source"
+     }, 
+     {
+      "bip": "ELEM_CATEGORY_PARAM", 
+      "name": "Category", 
+      "ro": true, 
+      "storage": "ElementId", 
+      "value": "-2001121", 
+      "vs": "Lighting Fixtures: Light Source"
+     }, 
+     {
+      "bip": "DESIGN_OPTION_ID", 
+      "name": "Design Option", 
+      "ro": true, 
+      "storage": "ElementId", 
+      "value": "-1", 
+      "vs": "-1"
+     }, 
+     {
+      "bip": "SYMBOL_FAMILY_NAME_PARAM", 
+      "name": "Family Name", 
+      "ro": true, 
+      "storage": "String", 
+      "value": null, 
+      "vs": null
+     }, 
+     {
+      "bip": "ALL_MODEL_TYPE_NAME", 
+      "name": "Type Name", 
+      "ro": true, 
+      "storage": "String", 
+      "value": null, 
+      "vs": null
+     }
+    ]
+   }
+  ]
+ }, 
+ "Spot Lighting Fixture wall based": {
+  "category": "Lighting Fixtures", 
+  "family_params": [
+   {
+    "bip": "FAMILY_ROUNDCONNECTOR_DIMENSIONTYPE", 
+    "name": "Round Connector Dimension", 
+    "ro": false, 
+    "storage": "Integer", 
+    "value": 1, 
+    "vs": "Use Diameter"
+   }, 
+   {
+    "bip": "FBX_ASSET_TYPE", 
+    "name": "Light Source", 
+    "ro": false, 
+    "storage": "Integer", 
+    "value": 1, 
+    "vs": "Yes"
+   }, 
+   {
+    "bip": "ELEM_CATEGORY_PARAM_MT", 
+    "name": "Category", 
+    "ro": true, 
+    "storage": "ElementId", 
+    "value": "-1", 
+    "vs": ""
+   }, 
+   {
+    "bip": "ELEM_CATEGORY_PARAM", 
+    "name": "Category", 
+    "ro": true, 
+    "storage": "ElementId", 
+    "value": "-1", 
+    "vs": ""
+   }, 
+   {
+    "bip": "ROOM_CALCULATION_POINT", 
+    "name": "Room Calculation Point", 
+    "ro": false, 
+    "storage": "Integer", 
+    "value": 0, 
+    "vs": "No"
+   }, 
+   {
+    "bip": "FAMILY_ELECTRICAL_MAINTAIN_ANNOTATION_ORIENTATION", 
+    "name": "Maintain Annotation Orientation", 
+    "ro": false, 
+    "storage": "Integer", 
+    "value": 0, 
+    "vs": "No"
+   }, 
+   {
+    "bip": "FAMILY_CONTENT_PART_TYPE", 
+    "name": "Part Type", 
+    "ro": false, 
+    "storage": "Integer", 
+    "value": 0, 
+    "vs": "Normal"
+   }, 
+   {
+    "bip": "DESIGN_OPTION_ID", 
+    "name": "Design Option", 
+    "ro": true, 
+    "storage": "ElementId", 
+    "value": "-1", 
+    "vs": "-1"
+   }, 
+   {
+    "bip": "FAMILY_HOSTING_BEHAVIOR", 
+    "name": "Host", 
+    "ro": true, 
+    "storage": "Integer", 
+    "value": 1, 
+    "vs": "Wall"
+   }, 
+   {
+    "bip": "FAMILY_SHARED", 
+    "name": "Shared", 
+    "ro": false, 
+    "storage": "Integer", 
+    "value": 0, 
+    "vs": "No"
+   }, 
+   {
+    "bip": "FAMILY_ALLOW_CUT_WITH_VOIDS", 
+    "name": "Cut with Voids When Loaded", 
+    "ro": false, 
+    "storage": "Integer", 
+    "value": 0, 
+    "vs": "No"
+   }, 
+   {
+    "bip": "FAMILY_ALWAYS_VERTICAL", 
+    "name": "Always vertical", 
+    "ro": false, 
+    "storage": "Integer", 
+    "value": 1, 
+    "vs": "Yes"
+   }, 
+   {
+    "bip": "OMNICLASS_DESCRIPTION", 
+    "name": "OmniClass Title", 
+    "ro": true, 
+    "storage": "String", 
+    "value": "Lighting", 
+    "vs": "Lighting"
+   }, 
+   {
+    "bip": "OMNICLASS_CODE", 
+    "name": "OmniClass Number", 
+    "ro": false, 
+    "storage": "String", 
+    "value": "23.80.70.00", 
+    "vs": "23.80.70.00"
+   }, 
+   {
+    "bip": "SYMBOL_FAMILY_NAME_PARAM", 
+    "name": "Family Name", 
+    "ro": true, 
+    "storage": "String", 
+    "value": null, 
+    "vs": null
+   }, 
+   {
+    "bip": "ALL_MODEL_TYPE_NAME", 
+    "name": "Type Name", 
+    "ro": true, 
+    "storage": "String", 
+    "value": null, 
+    "vs": null
+   }
+  ], 
+  "fm_params": [
+   [
+    "Light Source Symbol Length", 
+    "Double"
+   ], 
+   [
+    "Initial Intensity", 
+    "None"
+   ], 
+   [
+    "Default Elevation", 
+    "Double"
+   ], 
+   [
+    "Light Loss Factor", 
+    "None"
+   ], 
+   [
+    "Type Comments", 
+    "String"
+   ], 
+   [
+    "Initial Color", 
+    "None"
+   ], 
+   [
+    "Color Filter", 
+    "Integer"
+   ], 
+   [
+    "Model", 
+    "String"
+   ], 
+   [
+    "Tilt Angle", 
+    "Double"
+   ], 
+   [
+    "Spot Beam Angle", 
+    "Double"
+   ], 
+   [
+    "Spot Field Angle", 
+    "Double"
+   ], 
+   [
+    "Calculate Coefficient of Utilization", 
+    "Integer"
+   ], 
+   [
+    "URL", 
+    "String"
+   ], 
+   [
+    "Cost", 
+    "Double"
+   ], 
+   [
+    "Coefficient of Utilization", 
+    "Double"
+   ], 
+   [
+    "Type Image", 
+    "ElementId"
+   ], 
+   [
+    "Export Type to IFC As", 
+    "String"
+   ], 
+   [
+    "Manufacturer", 
+    "String"
+   ], 
+   [
+    "Apparent Power", 
+    "Double"
+   ], 
+   [
+    "Type IFC Predefined Type", 
+    "String"
+   ], 
+   [
+    "Description", 
+    "String"
+   ], 
+   [
+    "Dimming Lamp Color Temperature Shift", 
+    "Integer"
+   ], 
+   [
+    "Wattage Comments", 
+    "String"
+   ], 
+   [
+    "Keynote", 
+    "String"
+   ], 
+   [
+    "Assembly Code", 
+    "String"
+   ], 
+   [
+    "Lamp", 
+    "String"
+   ]
+  ], 
+  "placement": "OneLevelBasedHosted", 
+  "sources": [
+   {
+    "bbox": [
+     -10.005233832794980, 
+     -9.3334293281352085, 
+     -3.5481458858764370, 
+     10.005233832794987, 
+     10.666762661468519, 
+     6.4518541141235630
+    ], 
+    "class": "Element", 
+    "id": "3845", 
+    "loc": "Location", 
+    "name": "", 
+    "params": [
+     {
+      "bip": "FBX_LIGHT_SOURCE_LENGTH", 
+      "name": "Light Source Symbol Length", 
+      "ro": true, 
+      "storage": "Double", 
+      "value": 10.0, 
+      "vs": "10' - 0\""
+     }, 
+     {
+      "bip": "FBX_LIGHT_PHOTOMETRICS", 
+      "name": "Light Source Definition", 
+      "ro": false, 
+      "storage": "None", 
+      "vs": null
+     }, 
+     {
+      "bip": "ELEM_CATEGORY_PARAM_MT", 
+      "name": "Category", 
+      "ro": true, 
+      "storage": "ElementId", 
+      "value": "-2001121", 
+      "vs": "Lighting Fixtures: Light Source"
+     }, 
+     {
+      "bip": "ELEM_CATEGORY_PARAM", 
+      "name": "Category", 
+      "ro": true, 
+      "storage": "ElementId", 
+      "value": "-2001121", 
+      "vs": "Lighting Fixtures: Light Source"
+     }, 
+     {
+      "bip": "DESIGN_OPTION_ID", 
+      "name": "Design Option", 
+      "ro": true, 
+      "storage": "ElementId", 
+      "value": "-1", 
+      "vs": "-1"
+     }, 
+     {
+      "bip": "FBX_LIGHT_SPOT_FIELD_ANGLE", 
+      "name": "Spot Field Angle", 
+      "ro": true, 
+      "storage": "Double", 
+      "value": 1.570796326794895, 
+      "vs": "90.00?"
+     }, 
+     {
+      "bip": "FBX_LIGHT_SPOT_BEAM_ANGLE", 
+      "name": "Spot Beam Angle", 
+      "ro": true, 
+      "storage": "Double", 
+      "value": 0.52359877559829826, 
+      "vs": "30.00?"
+     }, 
+     {
+      "bip": "FBX_LIGHT_SPOT_TILT_ANGLE", 
+      "name": "Tilt Angle", 
+      "ro": true, 
+      "storage": "Double", 
+      "value": 1.570796326794895, 
+      "vs": "90.00?"
+     }, 
+     {
+      "bip": "SYMBOL_FAMILY_NAME_PARAM", 
+      "name": "Family Name", 
+      "ro": true, 
+      "storage": "String", 
+      "value": null, 
+      "vs": null
+     }, 
+     {
+      "bip": "ALL_MODEL_TYPE_NAME", 
+      "name": "Type Name", 
+      "ro": true, 
+      "storage": "String", 
+      "value": null, 
+      "vs": null
+     }
+    ]
+   }
+  ]
+ }, 
+ "copy_Lighting Fixture": {
+  "copy_error": "Traceback (most recent call last):\n  File \"E:\\Claude\\3D-Model-Workflow\\output\\effort-trial-2026-09-29-sonnet\\sconce\\xhigh\\source\\explore2.py\", line 116, in <module>\n    new_ids = DB.ElementTransformUtils.CopyElements(srcdoc, ids, dst, DB.Transform.Identity, DB.CopyPasteOptions())\nException: Light source can not be copied!\r\nParameter name: elementsToCopy\n", 
+  "dst_sources_after": [], 
+  "n_ids": 1
+ }, 
+ "copy_Lighting Fixture ceiling based": {
+  "copy_error": "Traceback (most recent call last):\n  File \"E:\\Claude\\3D-Model-Workflow\\output\\effort-trial-2026-09-29-sonnet\\sconce\\xhigh\\source\\explore2.py\", line 116, in <module>\n    new_ids = DB.ElementTransformUtils.CopyElements(srcdoc, ids, dst, DB.Transform.Identity, DB.CopyPasteOptions())\nException: Light source can not be copied!\r\nParameter name: elementsToCopy\n", 
+  "dst_sources_after": [], 
+  "n_ids": 1
+ }, 
+ "copy_Lighting Fixture wall based": {
+  "copy_error": "Traceback (most recent call last):\n  File \"E:\\Claude\\3D-Model-Workflow\\output\\effort-trial-2026-09-29-sonnet\\sconce\\xhigh\\source\\explore2.py\", line 116, in <module>\n    new_ids = DB.ElementTransformUtils.CopyElements(srcdoc, ids, dst, DB.Transform.Identity, DB.CopyPasteOptions())\nException: Light source can not be copied!\r\nParameter name: elementsToCopy\n", 
+  "dst_sources_after": [], 
+  "n_ids": 1
+ }, 
+ "copy_Spot Lighting Fixture wall based": {
+  "copy_error": "Traceback (most recent call last):\n  File \"E:\\Claude\\3D-Model-Workflow\\output\\effort-trial-2026-09-29-sonnet\\sconce\\xhigh\\source\\explore2.py\", line 116, in <module>\n    new_ids = DB.ElementTransformUtils.CopyElements(srcdoc, ids, dst, DB.Transform.Identity, DB.CopyPasteOptions())\nException: Light source can not be copied!\r\nParameter name: elementsToCopy\n", 
+  "dst_sources_after": [], 
+  "n_ids": 1
+ }, 
+ "done": true, 
+ "dst_sources_before": []
+}

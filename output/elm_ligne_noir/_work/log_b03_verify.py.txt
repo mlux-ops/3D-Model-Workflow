@@ -1,0 +1,109 @@
+{
+ "all_pass": true,
+ "gates": {
+  "format": {
+   "pass": true,
+   "color": {
+    "width": 3525,
+    "height": 3950,
+    "bit_depth": 8,
+    "colour_type": 2
+   },
+   "bump": {
+    "width": 3525,
+    "height": 3950,
+    "bit_depth": 16,
+    "colour_type": 0
+   }
+  },
+  "aspect": {
+   "pass": true,
+   "sample_size_exact_quarter_inch": true,
+   "px": [
+    3525,
+    3950
+   ],
+   "sample_size_in": [
+    35.25,
+    39.5
+   ]
+  },
+  "joints": {
+   "pass": true,
+   "interior_vertical_runs": 220,
+   "interior_horizontal_runs": 60,
+   "median_px": [
+    19.0,
+    19.0
+   ],
+   "design_px": 18.75,
+   "edge_half_joints_px": [
+    10,
+    10
+   ]
+  },
+  "ribs": {
+   "pass": true,
+   "counts_min_max": [
+    10,
+    10
+   ]
+  },
+  "clearance": {
+   "pass": true,
+   "lowest_face_mm_min": 1.0385095479318465,
+   "channel_p2_mm_median": 1.1093971149091093,
+   "crest_p995_mm_median": 2.7817682080873,
+   "pattern_mm_median": 1.6723710931781905,
+   "full_scale_mm": 2.9236102591912694
+  },
+  "distinct_faces": {
+   "pass": true,
+   "max_abs_ncc_between_tiles": 0.009262958551654592
+  },
+  "wrap": {
+   "pass": true,
+   "colour_lr": [
+    0.7329113924050633,
+    [
+     1.7998312236286922,
+     1.7745147679324895,
+     1.840675105485232,
+     1.7913924050632912
+    ]
+   ],
+   "colour_tb": [
+    0.707801418439716,
+    [
+     1.5016548463356976,
+     1.4224113475177305,
+     1.4793380614657208,
+     1.4977777777777779
+    ]
+   ],
+   "bump_lr_mm": [
+    0.0,
+    [
+     0.1916603724052761,
+     0.0004047442843224662,
+     0.23661768514856146,
+     0.07879859708973884
+    ]
+   ],
+   "bump_tb_mm": [
+    0.0,
+    [
+     0.00033058021004567597,
+     0.05303151504912417,
+     0.00042060038668725907,
+     0.0003947827063345497
+    ]
+   ]
+  },
+  "colour_stripe": {
+   "pass": true,
+   "peak_to_trough": 1.020369843388699,
+   "note": "designed channel darkening is 4 % in linear light (about 2 % in sRGB)"
+  }
+ }
+}

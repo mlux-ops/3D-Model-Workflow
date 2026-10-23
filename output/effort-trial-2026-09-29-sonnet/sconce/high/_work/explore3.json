@@ -1,0 +1,240 @@
+{
+ "Autodesk.Revit.DB.Lighting.InitialColor": {
+  "members": [
+   "Clone() -> InitialColor", 
+   "Dispose() -> Void", 
+   "Property IsValidObject", 
+   "Property TemperatureValue"
+  ]
+ }, 
+ "Autodesk.Revit.DB.Lighting.BasicLossFactor": {
+  "members": [
+   "Constructor .ctor", 
+   "Constructor .ctor", 
+   "Constructor .ctor", 
+   "Property LossFactor"
+  ]
+ }, 
+ "Autodesk.Revit.DB.Lighting.LightGroupManager": {
+  "members": [
+   "GetLightGroupManager(Document document) -> LightGroupManager [static]", 
+   "CreateGroup(String name) -> LightGroup", 
+   "DeleteGroup(ElementId groupId) -> Void", 
+   "GetGroups() -> IList`1", 
+   "IsLightGroupOn(ElementId viewId, ElementId groupId) -> Boolean", 
+   "SetLightGroupOn(ElementId viewId, ElementId groupId, Boolean turnOn) -> Void", 
+   "IsLightOn(ElementId viewId, ElementId lightId) -> Boolean", 
+   "SetLightOn(ElementId viewId, ElementId lightId, Boolean turnOn) -> Void", 
+   "GetLightDimmer(ElementId viewId, ElementId lightId) -> Double", 
+   "SetLightDimmer(ElementId viewId, ElementId lightId, Double dimmingValue) -> Void", 
+   "Dispose() -> Void", 
+   "Property IsValidObject"
+  ]
+ }, 
+ "Autodesk.Revit.DB.Lighting.LightDimmingColor": {
+  "members": [], 
+  "enum": [
+   "None", 
+   "Incandescent"
+  ]
+ }, 
+ "Autodesk.Revit.DB.Lighting.LightShape": {
+  "members": [
+   "Clone() -> LightShape", 
+   "Dispose() -> Void", 
+   "Property IsValidObject"
+  ]
+ }, 
+ "Autodesk.Revit.DB.Lighting.HemisphericalLightDistribution": {
+  "members": [
+   "Constructor .ctor", 
+   "Constructor .ctor"
+  ]
+ }, 
+ "Autodesk.Revit.DB.Lighting.LightType": {
+  "members": [
+   "GetLightType(Document document, ElementId typeId) -> LightType [static]", 
+   "GetLightTypeFromInstance(Document document, ElementId instanceId) -> LightType [static]", 
+   "GetLightShape() -> LightShape", 
+   "SetLightShape(LightShape lightShape) -> Void", 
+   "GetLightDistribution() -> LightDistribution", 
+   "SetLightDistribution(LightDistribution lightDistribution) -> Void", 
+   "GetInitialColor() -> InitialColor", 
+   "SetInitialColor(InitialColor initialColor) -> Void", 
+   "GetInitialIntensity() -> InitialIntensity", 
+   "SetInitialIntensity(InitialIntensity initialIntensity) -> Void", 
+   "GetLossFactor() -> LossFactor", 
+   "SetLossFactor(LossFactor lossFactor) -> Void", 
+   "Dispose() -> Void", 
+   "Property IsValidObject", 
+   "Property DimmingColor", 
+   "Property ColorFilter"
+  ]
+ }, 
+ "Autodesk.Revit.DB.Lighting.PresetInitialColor": {
+  "members": [
+   "Constructor .ctor", 
+   "Constructor .ctor", 
+   "Property Preset"
+  ]
+ }, 
+ "Autodesk.Revit.DB.Lighting.InitialLuminousIntensity": {
+  "members": [
+   "Constructor .ctor", 
+   "Constructor .ctor", 
+   "Property Luminosity"
+  ]
+ }, 
+ "Autodesk.Revit.DB.Lighting.LightDistributionStyle": {
+  "members": [], 
+  "enum": [
+   "Spherical", 
+   "Hemispherical", 
+   "Spot", 
+   "PhotometricWeb"
+  ]
+ }, 
+ "Autodesk.Revit.DB.Lighting.PointLightShape": {
+  "members": [
+   "Constructor .ctor", 
+   "Constructor .ctor"
+  ]
+ }, 
+ "Autodesk.Revit.DB.Lighting.LightFamily": {
+  "members": [
+   "GetLightFamily(Document document) -> LightFamily [static]", 
+   "GetLightShapeStyle() -> LightShapeStyle", 
+   "SetLightShapeStyle(LightShapeStyle lightShapeStyle) -> Void", 
+   "GetLightDistributionStyle() -> LightDistributionStyle", 
+   "SetLightDistributionStyle(LightDistributionStyle lightDistributionStyle) -> Void", 
+   "GetLightSourceTransform() -> Transform", 
+   "GetNumberOfLightTypes() -> Int32", 
+   "GetLightTypeName(Int32 index) -> String", 
+   "GetLightType(Int32 index) -> LightType", 
+   "Dispose() -> Void", 
+   "Property IsValidObject"
+  ]
+ }, 
+ "Autodesk.Revit.DB.Lighting.CircleLightShape": {
+  "members": [
+   "Constructor .ctor", 
+   "Constructor .ctor", 
+   "Constructor .ctor", 
+   "Property EmitDiameter"
+  ]
+ }, 
+ "stage": "done", 
+ "Autodesk.Revit.DB.Lighting.LightShapeStyle": {
+  "members": [], 
+  "enum": [
+   "Point", 
+   "Line", 
+   "Rectangle", 
+   "Circle"
+  ]
+ }, 
+ "Autodesk.Revit.DB.Lighting.LightDistribution": {
+  "members": [
+   "Clone() -> LightDistribution", 
+   "Dispose() -> Void", 
+   "Property IsValidObject"
+  ]
+ }, 
+ "Autodesk.Revit.DB.LightingSource": {
+  "members": [], 
+  "enum": [
+   "ExteriorSun", 
+   "ExteriorSunAndArtificial", 
+   "ExteriorArtificial", 
+   "InteriorSun", 
+   "InteriorSunAndArtificial", 
+   "InteriorArtificial"
+  ]
+ }, 
+ "Autodesk.Revit.DB.Lighting.LossFactor": {
+  "members": [
+   "Clone() -> LossFactor", 
+   "Dispose() -> Void", 
+   "Property IsValidObject", 
+   "Property LossFactorValue"
+  ]
+ }, 
+ "Autodesk.Revit.DB.Lighting.CustomInitialColor": {
+  "members": [
+   "Constructor .ctor", 
+   "Constructor .ctor", 
+   "Property Temperature"
+  ]
+ }, 
+ "Autodesk.Revit.DB.Lighting.InitialFluxIntensity": {
+  "members": [
+   "Constructor .ctor", 
+   "Constructor .ctor", 
+   "Property Flux"
+  ]
+ }, 
+ "Autodesk.Revit.DB.Lighting.InitialIntensity": {
+  "members": [
+   "Clone() -> InitialIntensity", 
+   "Dispose() -> Void", 
+   "Property IsValidObject", 
+   "Property InitialIntensityValue"
+  ]
+ }, 
+ "Autodesk.Revit.DB.Lighting.InitialWattageIntensity": {
+  "members": [
+   "Constructor .ctor", 
+   "Constructor .ctor", 
+   "Property Wattage", 
+   "Property Efficacy"
+  ]
+ }, 
+ "Autodesk.Revit.DB.Lighting.LightGroup": {
+  "members": [
+   "AddLight(ElementId lightId) -> Void", 
+   "RemoveLight(ElementId lightId) -> Void", 
+   "GetLights() -> ICollection`1", 
+   "Dispose() -> Void", 
+   "Property IsValidObject", 
+   "Property Id", 
+   "Property Name"
+  ]
+ }, 
+ "Autodesk.Revit.DB.Lighting.SphericalLightDistribution": {
+  "members": [
+   "Constructor .ctor", 
+   "Constructor .ctor"
+  ]
+ }, 
+ "Autodesk.Revit.DB.Lighting.ColorPreset": {
+  "members": [], 
+  "enum": [
+   "D65", 
+   "D50", 
+   "Halogen", 
+   "Incandescent", 
+   "Xenon", 
+   "Quartz", 
+   "FluorescentWarm", 
+   "FluorescentCool", 
+   "FluorescentWhite", 
+   "FluorescentDayLight", 
+   "FluorescentLightWhite", 
+   "MetalHalide", 
+   "HighPressureSodium", 
+   "LowPressureSodium", 
+   "Mercury", 
+   "PhosphorMercury"
+  ]
+ }, 
+ "Autodesk.Revit.DB.Lighting.SpotLightDistribution": {
+  "members": [
+   "Constructor .ctor", 
+   "Constructor .ctor", 
+   "Constructor .ctor", 
+   "Property TiltAngle", 
+   "Property SpotFieldAngle", 
+   "Property SpotBeamAngle"
+  ]
+ }
+}

@@ -1,0 +1,108 @@
+headers {'Color.png': {'width': 4489, 'height': 4536, 'bit_depth': 8, 'colour_type': 2}, 'Bump16.png': {'width': 4489, 'height': 4536, 'bit_depth': 16, 'colour_type': 0}, 'face_ids.png': {'width': 4489, 'height': 4536, 'bit_depth': 16, 'colour_type': 0}} True
+joint width vertical {'values': [4, 8], 'median': 8.0} normal 8.0
+seams {
+"colour_lum_8bit_x": {
+"wrap_step": 1.1483,
+"interior_step": 1.05454,
+"ratio": 1.089,
+"unit": "levels"
+},
+"colour_lum_8bit_y": {
+"wrap_step": 0.15253,
+"interior_step": 1.03696,
+"ratio": 0.147,
+"unit": "levels"
+},
+"bump_mm_x": {
+"wrap_step": 0.02888,
+"interior_step": 0.02429,
+"ratio": 1.189,
+"unit": "mm"
+},
+"bump_mm_y": {
+"wrap_step": 0.00203,
+"interior_step": 0.02488,
+"ratio": 0.082,
+"unit": "mm"
+},
+"colour_rgb_max_wrap_step_x": 33.0,
+"colour_rgb_max_wrap_step_y": 3.0,
+"percentiles": {
+"colour_lum_x": {
+"wrap_p99": 6.071,
+"interior_p99": 8.0,
+"wrap_max": 30.387,
+"interior_max": 40.159
+},
+"colour_lum_y": {
+"wrap_p99": 2.0,
+"interior_p99": 8.185,
+"wrap_max": 3.0,
+"interior_max": 42.675
+},
+"bump_mm_x": {
+"wrap_p99": 0.4938,
+"interior_p99": 0.2279,
+"wrap_max": 0.787,
+"interior_max": 0.9364
+},
+"bump_mm_y": {
+"wrap_p99": 0.0159,
+"interior_p99": 0.3457,
+"wrap_max": 0.0313,
+"interior_max": 1.0309
+}
+},
+"note_y": "rows 0 and H-1 both lie in the joint centre line of the even columns (joint centred on y=0), so the y wrap step is smaller than typical interior steps by construction; the x wrap crosses faces and junctions"
+}
+relief {
+"matte": {
+"face_mean_mm": -0.0,
+"rms_mm": 0.0139,
+"p1_mm": -0.041,
+"p99_mm": 0.039,
+"p1_p99_span_mm": 0.079,
+"min_mm": -0.21,
+"max_mm": 0.138,
+"deepest_pattern_below_face_plane_mm": 0.21,
+"clearance_to_joint_floor_mm": 1.39,
+"clearance_p1_to_joint_floor_mm": 1.559
+},
+"raw": {
+"face_mean_mm": -0.0004,
+"rms_mm": 0.1674,
+"p1_mm": -0.407,
+"p99_mm": 0.398,
+"p1_p99_span_mm": 0.804,
+"min_mm": -0.863,
+"max_mm": 0.793,
+"deepest_pattern_below_face_plane_mm": 0.863,
+"clearance_to_joint_floor_mm": 0.737,
+"clearance_p1_to_joint_floor_mm": 1.193
+},
+"chiseled": {
+"face_mean_mm": 0.0001,
+"rms_mm": 0.1845,
+"p1_mm": -0.351,
+"p99_mm": 0.331,
+"p1_p99_span_mm": 0.682,
+"min_mm": -0.55,
+"max_mm": 0.475,
+"deepest_pattern_below_face_plane_mm": 0.55,
+"clearance_to_joint_floor_mm": 1.05,
+"clearance_p1_to_joint_floor_mm": 1.249,
+"per_face_p1_p99_span_mm_mean": 0.677
+},
+"joint_floor_mm": -1.6,
+"joint_step_mm_below_face_plane": 1.6,
+"bump16_encoding": "mm = v/65535*(0.8-(-1.6)) + (-1.6); v=0 -> -1.6 mm (joint floor); face plane 0 mm = v 43690; full scale 2.4 mm",
+"quantisation_mm_per_16bit_step": 3.6621652552071414e-05
+}
+slope {'matte': {'median': 0.68, 'p99': 4.68}, 'raw': {'median': 4.66, 'p99': 14.3}, 'chiseled': {'median': 11.08, 'p99': 25.08}}
+mix {"used_counts": {"matte": 32, "raw": 11, "chiseled": 13}, "used_pct": {"matte": 57.1, "raw": 19.6, "chiseled": 23.2}, "measured_full_hexes": {"n": 39, "counts": {"matte": 22, "raw": 8, "chiseled": 9}, "pct": {"matte": 56.4, "raw": 20.5, "chiseled": 23.1}}, "measured_all_visible_hexes": {"n": 45, "counts": {"matte": 26, "raw": 9, "chiseled": 10}, "pct": {"matte": 57.8, "raw": 20.0, "chiseled": 22.2}}}
+adjacency {'raw-raw': 0, 'chiseled-chiseled': 0, 'raw-chiseled': 17, 'textured_with_no_textured_neighbour': 1, 'chiseled_neighbours_same_direction': 0} largest textured cluster 7
+repetition {'raw_height_patch112_best_ncc_vs_rest': {'values': [0.436, 0.409, 0.291, 0.442, 0.444, 0.292, 0.389, 0.288, 0.312, 0.363, 0.439, 0.299, 0.393, 0.426, 0.35, 0.38, 0.495, 0.364, 0.294, 0.298], 'max': 0.495, 'median': 0.372}, 'matte_colour_patch112_best_ncc_vs_rest': {'values': [0.241, 0.642, 0.374, 0.409, 0.348, 0.652, 0.422, 0.277, 0.412, 0.43, 0.375, 0.503, 0.544, 0.541, 0.238, 0.184, 0.461, 0.463, 0.723, 0.428], 'max': 0.723, 'median': 0.425}, 'note': 'normalised cross-correlation of random 112 px (1.75 in) patches against all other same-type faces, 8 rotations/mirrors, self area excluded; a copied patch would score >0.9'} 146s
+raw face pairs worst (0.14872699975967407, (22, 27, 6))
+chis env ncc {'n_pairs': 24, 'max': 0.354} wobble {'phase_wobble_std_deg_per_face': {'7': 12.0, '9': 14.1, '12': 8.8, '15': 11.9, '18': 9.4, '31': 11.9, '35': 11.3, '36': 11.3, '39': 9.7, '45': 8.8, '48': 9.9, '50': 11.7, '53': 11.7}, 'envelope_cv_per_face': {'7': 0.154, '9': 0.159, '12': 0.156, '15': 0.198, '18': 0.15, '31': 0.159, '35': 0.163, '36': 0.148, '39': 0.14, '45': 0.155, '48': 0.15, '50': 0.158, '53': 0.187}}
+fidelity {"matte": {"atlas_mean_rgb": [243.9, 231.3, 206.9], "render_mean_rgb": [243.8, 231.2, 206.9], "atlas_face_to_face_lum_std": 2.03, "render_hex_to_hex_lum_std": 2.21, "atlas_texture_energy_hp_std": 0.97, "render_texture_energy_hp_std": 0.874}, "raw": {"atlas_mean_rgb": [244.0, 232.1, 207.6], "render_mean_rgb": [243.5, 231.5, 207.3], "atlas_face_to_face_lum_std": 0.93, "render_hex_to_hex_lum_std": 2.06, "atlas_texture_energy_hp_std": 2.404, "render_texture_energy_hp_std": 2.284}, "chiseled": {"atlas_mean_rgb": [242.9, 232.1, 207.7], "render_mean_rgb": [243.1, 231.6, 207.4], "atlas_face_to_face_lum_std": 0.72, "render_hex_to_hex_lum_std": 1.62, "atlas_texture_energy_hp_std": 3.147, "render_texture_energy_hp_std": 3.256}}
+wrote report.json

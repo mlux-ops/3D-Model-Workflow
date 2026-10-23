@@ -1,0 +1,134 @@
+{
+ "stage": "done", 
+ "owner_params_after_cat": [
+  [
+   "Round Connector Dimension", 
+   "Integer", 
+   "Use Diameter", 
+   false, 
+   "FAMILY_ROUNDCONNECTOR_DIMENSIONTYPE"
+  ], 
+  [
+   "Light Source", 
+   "Integer", 
+   "No", 
+   false, 
+   "FBX_ASSET_TYPE"
+  ], 
+  [
+   "Category", 
+   "ElementId", 
+   null, 
+   true, 
+   "ELEM_CATEGORY_PARAM_MT"
+  ], 
+  [
+   "Category", 
+   "ElementId", 
+   null, 
+   true, 
+   "ELEM_CATEGORY_PARAM"
+  ], 
+  [
+   "Room Calculation Point", 
+   "Integer", 
+   "No", 
+   false, 
+   "ROOM_CALCULATION_POINT"
+  ], 
+  [
+   "Maintain Annotation Orientation", 
+   "Integer", 
+   "No", 
+   false, 
+   "FAMILY_ELECTRICAL_MAINTAIN_ANNOTATION_ORIENTATION"
+  ], 
+  [
+   "Part Type", 
+   "Integer", 
+   "Normal", 
+   false, 
+   "FAMILY_CONTENT_PART_TYPE"
+  ], 
+  [
+   "Design Option", 
+   "ElementId", 
+   "-1", 
+   true, 
+   "DESIGN_OPTION_ID"
+  ], 
+  [
+   "Host", 
+   "Integer", 
+   "Face", 
+   true, 
+   "FAMILY_HOSTING_BEHAVIOR"
+  ], 
+  [
+   "Shared", 
+   "Integer", 
+   "No", 
+   false, 
+   "FAMILY_SHARED"
+  ], 
+  [
+   "Cut with Voids When Loaded", 
+   "Integer", 
+   "No", 
+   false, 
+   "FAMILY_ALLOW_CUT_WITH_VOIDS"
+  ], 
+  [
+   "OmniClass Title", 
+   "String", 
+   "", 
+   true, 
+   "OMNICLASS_DESCRIPTION"
+  ], 
+  [
+   "OmniClass Number", 
+   "String", 
+   "", 
+   false, 
+   "OMNICLASS_CODE"
+  ], 
+  [
+   "Family Name", 
+   "String", 
+   null, 
+   true, 
+   "SYMBOL_FAMILY_NAME_PARAM"
+  ], 
+  [
+   "Type Name", 
+   "String", 
+   null, 
+   true, 
+   "ALL_MODEL_TYPE_NAME"
+  ]
+ ], 
+ "dst_light_sources": [
+  [
+   "3202", 
+   "Element"
+  ]
+ ], 
+ "dst_light": {
+  "basisZ": [
+   0.0, 
+   0.0, 
+   1.0
+  ], 
+  "shape": "Line", 
+  "origin_in": [
+   0.0, 
+   0.0, 
+   0.0
+  ], 
+  "dist": "Spherical", 
+  "ntypes": 0
+ }, 
+ "placement": "WorkPlaneBased", 
+ "ls_before": 0, 
+ "ls_set": true
+}

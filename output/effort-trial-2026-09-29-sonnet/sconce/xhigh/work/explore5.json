@@ -1,0 +1,407 @@
+{
+ "done": true, 
+ "types": {
+  "Autodesk.Revit.DB.Lighting.AdvancedLossFactor": {
+   "base": "LossFactor", 
+   "ctors": [
+    ".ctor(AdvancedLossFactor other)", 
+    ".ctor(Double ballastLossFactorIn, Double lampLumenDepreciationIn, Double lampTiltLossFactorIn, Double luminaireDirtDepreciationIn, Double surfaceDepreciationLossFactorIn, Double temperatureLossFactorIn, Double voltageLossFactorIn)", 
+    ".ctor()"
+   ], 
+   "isenum": false, 
+   "methods": [], 
+   "ns": "Autodesk.Revit.DB.Lighting", 
+   "props": [
+    "Double BallastLossFactor [set]", 
+    "Double LampLumenDepreciation [set]", 
+    "Double LampTiltLossFactor [set]", 
+    "Double LuminaireDirtDepreciation [set]", 
+    "Double SurfaceDepreciationLossFactor [set]", 
+    "Double TemperatureLossFactor [set]", 
+    "Double VoltageLossFactor [set]"
+   ]
+  }, 
+  "Autodesk.Revit.DB.Lighting.BasicLossFactor": {
+   "base": "LossFactor", 
+   "ctors": [
+    ".ctor(BasicLossFactor other)", 
+    ".ctor(Double lossFactorIn)", 
+    ".ctor()"
+   ], 
+   "isenum": false, 
+   "methods": [], 
+   "ns": "Autodesk.Revit.DB.Lighting", 
+   "props": [
+    "Double LossFactor [set]"
+   ]
+  }, 
+  "Autodesk.Revit.DB.Lighting.CircleLightShape": {
+   "base": "LightShape", 
+   "ctors": [
+    ".ctor(CircleLightShape other)", 
+    ".ctor(Double emitDiameter)", 
+    ".ctor()"
+   ], 
+   "isenum": false, 
+   "methods": [], 
+   "ns": "Autodesk.Revit.DB.Lighting", 
+   "props": [
+    "Double EmitDiameter [set]"
+   ]
+  }, 
+  "Autodesk.Revit.DB.Lighting.ColorPreset": {
+   "base": "Enum", 
+   "isenum": true, 
+   "ns": "Autodesk.Revit.DB.Lighting", 
+   "values": [
+    "D65", 
+    "D50", 
+    "Halogen", 
+    "Incandescent", 
+    "Xenon", 
+    "Quartz", 
+    "FluorescentWarm", 
+    "FluorescentCool", 
+    "FluorescentWhite", 
+    "FluorescentDayLight", 
+    "FluorescentLightWhite", 
+    "MetalHalide", 
+    "HighPressureSodium", 
+    "LowPressureSodium", 
+    "Mercury", 
+    "PhosphorMercury"
+   ]
+  }, 
+  "Autodesk.Revit.DB.Lighting.CustomInitialColor": {
+   "base": "InitialColor", 
+   "ctors": [
+    ".ctor(CustomInitialColor other)", 
+    ".ctor(Double temperature)"
+   ], 
+   "isenum": false, 
+   "methods": [], 
+   "ns": "Autodesk.Revit.DB.Lighting", 
+   "props": [
+    "Double Temperature [set]"
+   ]
+  }, 
+  "Autodesk.Revit.DB.Lighting.HemisphericalLightDistribution": {
+   "base": "LightDistribution", 
+   "ctors": [
+    ".ctor(HemisphericalLightDistribution other)", 
+    ".ctor()"
+   ], 
+   "isenum": false, 
+   "methods": [], 
+   "ns": "Autodesk.Revit.DB.Lighting", 
+   "props": []
+  }, 
+  "Autodesk.Revit.DB.Lighting.InitialColor": {
+   "base": "Object", 
+   "ctors": [], 
+   "isenum": false, 
+   "methods": [
+    "Clone()", 
+    "Dispose()"
+   ], 
+   "ns": "Autodesk.Revit.DB.Lighting", 
+   "props": [
+    "Boolean IsValidObject", 
+    "Double TemperatureValue"
+   ]
+  }, 
+  "Autodesk.Revit.DB.Lighting.InitialFluxIntensity": {
+   "base": "InitialIntensity", 
+   "ctors": [
+    ".ctor(InitialFluxIntensity other)", 
+    ".ctor(Double flux)"
+   ], 
+   "isenum": false, 
+   "methods": [], 
+   "ns": "Autodesk.Revit.DB.Lighting", 
+   "props": [
+    "Double Flux [set]"
+   ]
+  }, 
+  "Autodesk.Revit.DB.Lighting.InitialIlluminanceIntensity": {
+   "base": "InitialIntensity", 
+   "ctors": [
+    ".ctor(InitialIlluminanceIntensity other)", 
+    ".ctor(Double distance, Double illuminance)"
+   ], 
+   "isenum": false, 
+   "methods": [], 
+   "ns": "Autodesk.Revit.DB.Lighting", 
+   "props": [
+    "Double Distance [set]", 
+    "Double Illuminance [set]"
+   ]
+  }, 
+  "Autodesk.Revit.DB.Lighting.InitialIntensity": {
+   "base": "Object", 
+   "ctors": [], 
+   "isenum": false, 
+   "methods": [
+    "Clone()", 
+    "Dispose()"
+   ], 
+   "ns": "Autodesk.Revit.DB.Lighting", 
+   "props": [
+    "Boolean IsValidObject", 
+    "Double InitialIntensityValue"
+   ]
+  }, 
+  "Autodesk.Revit.DB.Lighting.InitialLuminousIntensity": {
+   "base": "InitialIntensity", 
+   "ctors": [
+    ".ctor(InitialLuminousIntensity other)", 
+    ".ctor(Double luminosity)"
+   ], 
+   "isenum": false, 
+   "methods": [], 
+   "ns": "Autodesk.Revit.DB.Lighting", 
+   "props": [
+    "Double Luminosity [set]"
+   ]
+  }, 
+  "Autodesk.Revit.DB.Lighting.InitialWattageIntensity": {
+   "base": "InitialIntensity", 
+   "ctors": [
+    ".ctor(InitialWattageIntensity other)", 
+    ".ctor(Double efficacy, Double wattage)"
+   ], 
+   "isenum": false, 
+   "methods": [], 
+   "ns": "Autodesk.Revit.DB.Lighting", 
+   "props": [
+    "Double Efficacy [set]", 
+    "Double Wattage [set]"
+   ]
+  }, 
+  "Autodesk.Revit.DB.Lighting.LightDimmingColor": {
+   "base": "Enum", 
+   "isenum": true, 
+   "ns": "Autodesk.Revit.DB.Lighting", 
+   "values": [
+    "None", 
+    "Incandescent"
+   ]
+  }, 
+  "Autodesk.Revit.DB.Lighting.LightDistribution": {
+   "base": "Object", 
+   "ctors": [], 
+   "isenum": false, 
+   "methods": [
+    "Clone()", 
+    "Dispose()"
+   ], 
+   "ns": "Autodesk.Revit.DB.Lighting", 
+   "props": [
+    "Boolean IsValidObject"
+   ]
+  }, 
+  "Autodesk.Revit.DB.Lighting.LightDistributionStyle": {
+   "base": "Enum", 
+   "isenum": true, 
+   "ns": "Autodesk.Revit.DB.Lighting", 
+   "values": [
+    "Spherical", 
+    "Hemispherical", 
+    "Spot", 
+    "PhotometricWeb"
+   ]
+  }, 
+  "Autodesk.Revit.DB.Lighting.LightFamily": {
+   "base": "Object", 
+   "ctors": [], 
+   "isenum": false, 
+   "methods": [
+    "Dispose()", 
+    "GetLightDistributionStyle()", 
+    "GetLightFamily(Document document)", 
+    "GetLightShapeStyle()", 
+    "GetLightSourceTransform()", 
+    "GetLightType(Int32 index)", 
+    "GetLightTypeName(Int32 index)", 
+    "GetNumberOfLightTypes()", 
+    "SetLightDistributionStyle(LightDistributionStyle lightDistributionStyle)", 
+    "SetLightShapeStyle(LightShapeStyle lightShapeStyle)"
+   ], 
+   "ns": "Autodesk.Revit.DB.Lighting", 
+   "props": [
+    "Boolean IsValidObject"
+   ]
+  }, 
+  "Autodesk.Revit.DB.Lighting.LightShape": {
+   "base": "Object", 
+   "ctors": [], 
+   "isenum": false, 
+   "methods": [
+    "Clone()", 
+    "Dispose()"
+   ], 
+   "ns": "Autodesk.Revit.DB.Lighting", 
+   "props": [
+    "Boolean IsValidObject"
+   ]
+  }, 
+  "Autodesk.Revit.DB.Lighting.LightShapeStyle": {
+   "base": "Enum", 
+   "isenum": true, 
+   "ns": "Autodesk.Revit.DB.Lighting", 
+   "values": [
+    "Point", 
+    "Line", 
+    "Rectangle", 
+    "Circle"
+   ]
+  }, 
+  "Autodesk.Revit.DB.Lighting.LightType": {
+   "base": "Object", 
+   "ctors": [], 
+   "isenum": false, 
+   "methods": [
+    "Dispose()", 
+    "GetInitialColor()", 
+    "GetInitialIntensity()", 
+    "GetLightDistribution()", 
+    "GetLightShape()", 
+    "GetLightType(Document document, ElementId typeId)", 
+    "GetLightTypeFromInstance(Document document, ElementId instanceId)", 
+    "GetLossFactor()", 
+    "SetInitialColor(InitialColor initialColor)", 
+    "SetInitialIntensity(InitialIntensity initialIntensity)", 
+    "SetLightDistribution(LightDistribution lightDistribution)", 
+    "SetLightShape(LightShape lightShape)", 
+    "SetLossFactor(LossFactor lossFactor)"
+   ], 
+   "ns": "Autodesk.Revit.DB.Lighting", 
+   "props": [
+    "Boolean IsValidObject", 
+    "Color ColorFilter [set]", 
+    "LightDimmingColor DimmingColor [set]"
+   ]
+  }, 
+  "Autodesk.Revit.DB.Lighting.LineLightShape": {
+   "base": "LightShape", 
+   "ctors": [
+    ".ctor(LineLightShape other)", 
+    ".ctor(Double emitLength)", 
+    ".ctor()"
+   ], 
+   "isenum": false, 
+   "methods": [], 
+   "ns": "Autodesk.Revit.DB.Lighting", 
+   "props": [
+    "Double EmitLength [set]"
+   ]
+  }, 
+  "Autodesk.Revit.DB.Lighting.LossFactor": {
+   "base": "Object", 
+   "ctors": [], 
+   "isenum": false, 
+   "methods": [
+    "Clone()", 
+    "Dispose()"
+   ], 
+   "ns": "Autodesk.Revit.DB.Lighting", 
+   "props": [
+    "Boolean IsValidObject", 
+    "Double LossFactorValue"
+   ]
+  }, 
+  "Autodesk.Revit.DB.Lighting.PhotometricWebLightDistribution": {
+   "base": "LightDistribution", 
+   "ctors": [
+    ".ctor(PhotometricWebLightDistribution other)", 
+    ".ctor(String photometricWebFile, Double tiltAngle)"
+   ], 
+   "isenum": false, 
+   "methods": [], 
+   "ns": "Autodesk.Revit.DB.Lighting", 
+   "props": [
+    "Double TiltAngle [set]", 
+    "String PhotometricWebFile [set]"
+   ]
+  }, 
+  "Autodesk.Revit.DB.Lighting.PointLightShape": {
+   "base": "LightShape", 
+   "ctors": [
+    ".ctor(PointLightShape other)", 
+    ".ctor()"
+   ], 
+   "isenum": false, 
+   "methods": [], 
+   "ns": "Autodesk.Revit.DB.Lighting", 
+   "props": []
+  }, 
+  "Autodesk.Revit.DB.Lighting.PresetInitialColor": {
+   "base": "InitialColor", 
+   "ctors": [
+    ".ctor(PresetInitialColor other)", 
+    ".ctor(ColorPreset presetIn)"
+   ], 
+   "isenum": false, 
+   "methods": [], 
+   "ns": "Autodesk.Revit.DB.Lighting", 
+   "props": [
+    "ColorPreset Preset [set]"
+   ]
+  }, 
+  "Autodesk.Revit.DB.Lighting.RectangleLightShape": {
+   "base": "LightShape", 
+   "ctors": [
+    ".ctor(RectangleLightShape other)", 
+    ".ctor(Double emitLength, Double emitWidth)", 
+    ".ctor()"
+   ], 
+   "isenum": false, 
+   "methods": [], 
+   "ns": "Autodesk.Revit.DB.Lighting", 
+   "props": [
+    "Double EmitLength [set]", 
+    "Double EmitWidth [set]"
+   ]
+  }, 
+  "Autodesk.Revit.DB.Lighting.SphericalLightDistribution": {
+   "base": "LightDistribution", 
+   "ctors": [
+    ".ctor(SphericalLightDistribution other)", 
+    ".ctor()"
+   ], 
+   "isenum": false, 
+   "methods": [], 
+   "ns": "Autodesk.Revit.DB.Lighting", 
+   "props": []
+  }, 
+  "Autodesk.Revit.DB.Lighting.SpotLightDistribution": {
+   "base": "LightDistribution", 
+   "ctors": [
+    ".ctor(SpotLightDistribution other)", 
+    ".ctor(Double spotBeamAngle, Double spotFieldAngle, Double tiltAngle)", 
+    ".ctor()"
+   ], 
+   "isenum": false, 
+   "methods": [], 
+   "ns": "Autodesk.Revit.DB.Lighting", 
+   "props": [
+    "Double SpotBeamAngle [set]", 
+    "Double SpotFieldAngle [set]", 
+    "Double TiltAngle [set]"
+   ]
+  }, 
+  "Autodesk.Revit.DB.LightingSource": {
+   "base": "Enum", 
+   "isenum": true, 
+   "ns": "Autodesk.Revit.DB", 
+   "values": [
+    "ExteriorSun", 
+    "ExteriorSunAndArtificial", 
+    "ExteriorArtificial", 
+    "InteriorSun", 
+    "InteriorSunAndArtificial", 
+    "InteriorArtificial"
+   ]
+  }
+ }
+}

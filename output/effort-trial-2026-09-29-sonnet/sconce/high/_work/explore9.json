@@ -1,0 +1,252 @@
+{
+ "Lighting Fixture.rft": {
+  "elems": [
+   [
+    "21", 
+    "Level", 
+    "Levels"
+   ], 
+   [
+    "46", 
+    "ReferencePlane", 
+    "Reference Planes"
+   ], 
+   [
+    "47", 
+    "ReferencePlane", 
+    "Reference Planes"
+   ], 
+   [
+    "48", 
+    "ReferencePlane", 
+    "Reference Planes"
+   ], 
+   [
+    "287", 
+    "ReferencePlane", 
+    "Reference Planes"
+   ], 
+   [
+    "1906", 
+    "Element", 
+    "Light Source"
+   ], 
+   [
+    "1907", 
+    "Dimension", 
+    "Constraints"
+   ], 
+   [
+    "1908", 
+    "Dimension", 
+    "Constraints"
+   ], 
+   [
+    "1909", 
+    "Dimension", 
+    "Constraints"
+   ], 
+   [
+    "2082", 
+    "Dimension", 
+    "Constraints"
+   ]
+  ], 
+  "light": {
+   "shape": "Point", 
+   "ntypes": 0, 
+   "basisZ": [
+    0.0, 
+    0.0, 
+    1.0
+   ], 
+   "origin_in": [
+    0.0, 
+    0.0, 
+    54.0
+   ], 
+   "dist": "Spherical"
+  }, 
+  "owner_params": [
+   [
+    "Round Connector Dimension", 
+    "Integer", 
+    "Use Diameter", 
+    false
+   ], 
+   [
+    "Light Source", 
+    "Integer", 
+    "Yes", 
+    false
+   ], 
+   [
+    "Category", 
+    "ElementId", 
+    null, 
+    true
+   ], 
+   [
+    "Category", 
+    "ElementId", 
+    null, 
+    true
+   ], 
+   [
+    "Room Calculation Point", 
+    "Integer", 
+    "No", 
+    false
+   ], 
+   [
+    "Maintain Annotation Orientation", 
+    "Integer", 
+    "No", 
+    false
+   ], 
+   [
+    "Part Type", 
+    "Integer", 
+    "Normal", 
+    false
+   ], 
+   [
+    "Design Option", 
+    "ElementId", 
+    "-1", 
+    true
+   ], 
+   [
+    "Host", 
+    "Integer", 
+    null, 
+    true
+   ], 
+   [
+    "Shared", 
+    "Integer", 
+    "No", 
+    false
+   ], 
+   [
+    "Work Plane-Based", 
+    "Integer", 
+    "No", 
+    false
+   ], 
+   [
+    "Cut with Voids When Loaded", 
+    "Integer", 
+    "No", 
+    false
+   ], 
+   [
+    "Always vertical", 
+    "Integer", 
+    "Yes", 
+    false
+   ], 
+   [
+    "OmniClass Title", 
+    "String", 
+    "Lighting", 
+    true
+   ], 
+   [
+    "OmniClass Number", 
+    "String", 
+    "23.80.70.00", 
+    false
+   ], 
+   [
+    "Family Name", 
+    "String", 
+    null, 
+    true
+   ], 
+   [
+    "Type Name", 
+    "String", 
+    null, 
+    true
+   ]
+  ], 
+  "wp_set": true, 
+  "placement": "OneLevelBased", 
+  "light_after": {
+   "shape": "Point", 
+   "ntypes": 0, 
+   "basisZ": [
+    0.0, 
+    0.0, 
+    1.0
+   ], 
+   "origin_in": [
+    0.0, 
+    0.0, 
+    54.0
+   ], 
+   "dist": "Spherical"
+  }, 
+  "wp_param": [
+   "Integer", 
+   0, 
+   false
+  ], 
+  "elems_after": [
+   [
+    "21", 
+    "Level", 
+    "Levels"
+   ], 
+   [
+    "46", 
+    "ReferencePlane", 
+    "Reference Planes"
+   ], 
+   [
+    "47", 
+    "ReferencePlane", 
+    "Reference Planes"
+   ], 
+   [
+    "48", 
+    "ReferencePlane", 
+    "Reference Planes"
+   ], 
+   [
+    "287", 
+    "ReferencePlane", 
+    "Reference Planes"
+   ], 
+   [
+    "1906", 
+    "Element", 
+    "Light Source"
+   ], 
+   [
+    "1907", 
+    "Dimension", 
+    "Constraints"
+   ], 
+   [
+    "1908", 
+    "Dimension", 
+    "Constraints"
+   ], 
+   [
+    "1909", 
+    "Dimension", 
+    "Constraints"
+   ], 
+   [
+    "2082", 
+    "Dimension", 
+    "Constraints"
+   ]
+  ], 
+  "cat": "Lighting Fixtures", 
+  "placement_after": "WorkPlaneBased"
+ }, 
+ "stage": "done"
+}

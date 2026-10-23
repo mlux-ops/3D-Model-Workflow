@@ -1,0 +1,23 @@
+{
+ "input": "_work/assembly_32ppi.npy",
+ "input_px": [
+  1536,
+  768
+ ],
+ "input_ppi": 32,
+ "method": "sRGB-encoded float64, scipy.ndimage.zoom order=3 (cubic B-spline interpolation), mode=grid-wrap, x2; then unsharp along y only (sigma 1.40 px, amount 0.45, wrap)",
+ "output_px": [
+  3072,
+  1536
+ ],
+ "output_ppi": 64,
+ "pixels_clipped_low": 0,
+ "pixels_clipped_high": 0,
+ "ihdr": {
+  "w": 3072,
+  "h": 1536,
+  "bit_depth": 8,
+  "colour_type": 2,
+  "interlace": 0
+ }
+}

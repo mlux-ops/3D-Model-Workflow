@@ -1,0 +1,1052 @@
+{
+ "experiments": {
+  "lf_move": {
+   "before": {
+    "shape_style": "Point", 
+    "distribution_style": "Spherical", 
+    "light_types": 0, 
+    "source_transform": {
+     "basis_z": [
+      0.0, 
+      0.0, 
+      1.0
+     ], 
+     "origin_in": [
+      0.0, 
+      0.0, 
+      54.0
+     ], 
+     "basis_x": [
+      1.0, 
+      0.0, 
+      0.0
+     ]
+    }, 
+    "types": []
+   }, 
+   "elements_before": [
+    {
+     "location": "Location", 
+     "parameters": [
+      "Light Source Symbol Size", 
+      "Light Source Definition", 
+      "Category", 
+      "Category", 
+      "Design Option", 
+      "Family Name", 
+      "Type Name"
+     ], 
+     "category": "Light Source", 
+     "bbox_in": [
+      [
+       -12.062799999999999, 
+       -12.062799999999999, 
+       42.0
+      ], 
+      [
+       12.062799999999999, 
+       12.062799999999999, 
+       66.0
+      ]
+     ], 
+     "id": "1906", 
+     "class": "Element"
+    }
+   ], 
+   "after_move_element": {
+    "shape_style": "Point", 
+    "distribution_style": "Spherical", 
+    "light_types": 0, 
+    "source_transform": {
+     "basis_z": [
+      0.0, 
+      0.0, 
+      1.0
+     ], 
+     "origin_in": [
+      0.0, 
+      0.0, 
+      54.0
+     ], 
+     "basis_x": [
+      1.0, 
+      0.0, 
+      0.0
+     ]
+    }, 
+    "types": []
+   }, 
+   "after_location_move": {
+    "shape_style": "Point", 
+    "distribution_style": "Spherical", 
+    "light_types": 0, 
+    "source_transform": {
+     "basis_z": [
+      0.0, 
+      0.0, 
+      1.0
+     ], 
+     "origin_in": [
+      0.0, 
+      0.0, 
+      54.600000000000001
+     ], 
+     "basis_x": [
+      1.0, 
+      0.0, 
+      0.0
+     ]
+    }, 
+    "types": []
+   }, 
+   "move_element": "Traceback (most recent call last):\n  File \"E:\\Claude\\3D-Model-Workflow\\output\\effort-trial-2026-09-29-sonnet\\sconce\\max\\source\\probe_light2.py\", line 159, in exp_lf_move\n    d.Regenerate()\n  File \"E:\\Claude\\3D-Model-Workflow\\output\\effort-trial-2026-09-29-sonnet\\sconce\\max\\source\\common.py\", line 123, in __exit__\n    raise RuntimeError('transaction %s ended as %s' % (self.name, st))\nRuntimeError: transaction move light ended as RolledBack\n", 
+   "location_move": "ok", 
+   "elements_after_move": [
+    {
+     "location": "Location", 
+     "parameters": [
+      "Light Source Symbol Size", 
+      "Light Source Definition", 
+      "Category", 
+      "Category", 
+      "Design Option", 
+      "Family Name", 
+      "Type Name"
+     ], 
+     "category": "Light Source", 
+     "bbox_in": [
+      [
+       -12.062799999999999, 
+       -12.062799999999999, 
+       42.0
+      ], 
+      [
+       12.062799999999999, 
+       12.062799999999999, 
+       66.0
+      ]
+     ], 
+     "id": "1906", 
+     "class": "Element"
+    }
+   ]
+  }, 
+  "reopen_probe": {
+   "light_named_scan": [], 
+   "title": "probe_gfb", 
+   "category": "Lighting Fixtures", 
+   "placement_type": "WorkPlaneBased", 
+   "light_elements": [], 
+   "light_read": {
+    "error": "Traceback (most recent call last):\n  File \"E:\\Claude\\3D-Model-Workflow\\output\\effort-trial-2026-09-29-sonnet\\sconce\\max\\source\\common.py\", line 215, in read_light\n    lf = LT.LightFamily.GetLightFamily(doc)\nException: The Document is the argument that is being validated The document is not valid because it is not a light family document.\r\nParameter name: document\n"
+   }
+  }, 
+  "gfb_category_copy": {
+   "saved": true, 
+   "after_category": {
+    "light_named_scan": [], 
+    "title": "Family8", 
+    "category": "Lighting Fixtures", 
+    "placement_type": "WorkPlaneBased", 
+    "light_elements": [], 
+    "light_read": {
+     "error": "Traceback (most recent call last):\n  File \"E:\\Claude\\3D-Model-Workflow\\output\\effort-trial-2026-09-29-sonnet\\sconce\\max\\source\\common.py\", line 215, in read_light\n    lf = LT.LightFamily.GetLightFamily(doc)\nException: The Document is the argument that is being validated The document is not valid because it is not a light family document.\r\nParameter name: document\n"
+    }
+   }, 
+   "source_light_ids": [
+    "1906"
+   ], 
+   "copy_error": "Traceback (most recent call last):\n  File \"E:\\Claude\\3D-Model-Workflow\\output\\effort-trial-2026-09-29-sonnet\\sconce\\max\\source\\probe_light2.py\", line 190, in exp_gfb_category_copy\n    copied = DB.ElementTransformUtils.CopyElements(src, ids, dst, DB.Transform.Identity, DB.CopyPasteOptions())\nException: Light source can not be copied!\r\nParameter name: elementsToCopy\n", 
+   "after_copy": {
+    "light_named_scan": [], 
+    "title": "Family8", 
+    "category": "Lighting Fixtures", 
+    "placement_type": "WorkPlaneBased", 
+    "light_elements": [], 
+    "light_read": {
+     "error": "Traceback (most recent call last):\n  File \"E:\\Claude\\3D-Model-Workflow\\output\\effort-trial-2026-09-29-sonnet\\sconce\\max\\source\\common.py\", line 215, in read_light\n    lf = LT.LightFamily.GetLightFamily(doc)\nException: The Document is the argument that is being validated The document is not valid because it is not a light family document.\r\nParameter name: document\n"
+    }
+   }
+  }, 
+  "templates": {
+   "Lighting Fixture wall based.rft": {
+    "light_named_scan": [
+     {
+      "cat": "Light Source", 
+      "id": "3851", 
+      "class": "Element"
+     }
+    ], 
+    "title": "Family2", 
+    "category": "Lighting Fixtures", 
+    "placement_type": "OneLevelBasedHosted", 
+    "light_elements": [
+     {
+      "location": "Location", 
+      "parameters": [
+       "Light Source Symbol Size", 
+       "Light Source Definition", 
+       "Category", 
+       "Category", 
+       "Design Option", 
+       "Family Name", 
+       "Type Name"
+      ], 
+      "category": "Light Source", 
+      "bbox_in": [
+       [
+        -13.494100000000000, 
+        -4.0628000000000002, 
+        65.422200000000004
+       ], 
+       [
+        10.631500000000001, 
+        20.062799999999999, 
+        89.422200000000004
+       ]
+      ], 
+      "id": "3851", 
+      "class": "Element"
+     }
+    ], 
+    "ref_planes": [
+     {
+      "free_in": [
+       -60.0, 
+       0.0, 
+       -12.0
+      ], 
+      "name": "Reference Plane", 
+      "bubble_in": [
+       60.0, 
+       0.0, 
+       -12.0
+      ], 
+      "normal": [
+       0.0, 
+       -1.0, 
+       0.0
+      ]
+     }, 
+     {
+      "free_in": [
+       -61.069899999999997, 
+       8.0, 
+       -24.0
+      ], 
+      "name": "Light Source Axis (F/B)", 
+      "bubble_in": [
+       53.913300000000000, 
+       8.0, 
+       -24.0
+      ], 
+      "normal": [
+       -0.0, 
+       -1.0, 
+       0.0
+      ]
+     }, 
+     {
+      "free_in": [
+       -1.4313000000000000, 
+       34.951799999999999, 
+       -24.0
+      ], 
+      "name": "Light Source Axis (L/R)", 
+      "bubble_in": [
+       -1.4313000000000000, 
+       -21.319299999999998, 
+       -24.0
+      ], 
+      "normal": [
+       -1.0, 
+       0.0, 
+       0.0
+      ]
+     }, 
+     {
+      "free_in": [
+       35.012200000000000, 
+       -44.838000000000001, 
+       77.422200000000004
+      ], 
+      "name": "Light Source Elevation", 
+      "bubble_in": [
+       -34.405400000000000, 
+       -44.838000000000001, 
+       77.422200000000004
+      ], 
+      "normal": [
+       0.0, 
+       0.0, 
+       -1.0
+      ]
+     }
+    ], 
+    "family_params": {
+     "Category": {
+      "element_id": "-1"
+     }, 
+     "Maintain Annotation Orientation": {
+      "text": "No", 
+      "value": 0
+     }, 
+     "Room Calculation Point": {
+      "text": "No", 
+      "value": 0
+     }, 
+     "Light Source": {
+      "text": "Yes", 
+      "value": 1
+     }, 
+     "Design Option": {
+      "element_id": "-1"
+     }, 
+     "Family Name": null, 
+     "Shared": {
+      "text": "No", 
+      "value": 0
+     }, 
+     "Cut with Voids When Loaded": {
+      "text": "No", 
+      "value": 0
+     }, 
+     "OmniClass Number": "23.80.70.00", 
+     "Type Name": null, 
+     "Always vertical": {
+      "text": "Yes", 
+      "value": 1
+     }, 
+     "OmniClass Title": "Lighting", 
+     "Part Type": {
+      "text": "Normal", 
+      "value": 0
+     }, 
+     "Host": {
+      "text": "Wall", 
+      "value": 1
+     }, 
+     "Round Connector Dimension": {
+      "text": "Use Diameter", 
+      "value": 1
+     }
+    }, 
+    "light_read": {
+     "shape_style": "Point", 
+     "distribution_style": "Spherical", 
+     "light_types": 0, 
+     "source_transform": {
+      "basis_z": [
+       0.0, 
+       0.0, 
+       1.0
+      ], 
+      "origin_in": [
+       -1.4313000000000000, 
+       8.0, 
+       77.422200000000004
+      ], 
+      "basis_x": [
+       1.0, 
+       0.0, 
+       0.0
+      ]
+     }, 
+     "types": []
+    }
+   }, 
+   "Generic Model face based.rft": {
+    "light_named_scan": [], 
+    "title": "Family4", 
+    "category": "Generic Models", 
+    "placement_type": "WorkPlaneBased", 
+    "light_elements": [], 
+    "ref_planes": [
+     {
+      "free_in": [
+       -60.0, 
+       0.0, 
+       -24.0
+      ], 
+      "name": "Center (Front/Back)", 
+      "bubble_in": [
+       60.0, 
+       0.0, 
+       -24.0
+      ], 
+      "normal": [
+       0.0, 
+       -1.0, 
+       -0.0
+      ]
+     }, 
+     {
+      "free_in": [
+       -60.0, 
+       -79.708299999999994, 
+       -0.0
+      ], 
+      "name": "Reference Plane", 
+      "bubble_in": [
+       65.345399999999998, 
+       -79.708299999999994, 
+       -0.0
+      ], 
+      "normal": [
+       -0.0, 
+       -0.0, 
+       1.0
+      ]
+     }, 
+     {
+      "free_in": [
+       0.0, 
+       -60.0, 
+       -24.0
+      ], 
+      "name": "Center (Left/Right)", 
+      "bubble_in": [
+       0.0, 
+       60.0, 
+       -24.0
+      ], 
+      "normal": [
+       1.0, 
+       0.0, 
+       -0.0
+      ]
+     }
+    ], 
+    "family_params": {
+     "Maintain Annotation Orientation": {
+      "text": "No", 
+      "value": 0
+     }, 
+     "Category": {
+      "element_id": "-1"
+     }, 
+     "Room Calculation Point": {
+      "text": "No", 
+      "value": 0
+     }, 
+     "Design Option": {
+      "element_id": "-1"
+     }, 
+     "Family Name": null, 
+     "Shared": {
+      "text": "No", 
+      "value": 0
+     }, 
+     "Cut with Voids When Loaded": {
+      "text": "No", 
+      "value": 0
+     }, 
+     "OmniClass Number": "", 
+     "Type Name": null, 
+     "OmniClass Title": "", 
+     "Part Type": {
+      "text": "Normal", 
+      "value": 0
+     }, 
+     "Can host rebar": {
+      "text": "No", 
+      "value": 0
+     }, 
+     "Round Connector Dimension": {
+      "text": "Use Diameter", 
+      "value": 1
+     }, 
+     "Host": {
+      "text": "Face", 
+      "value": 5
+     }
+    }, 
+    "light_read": {
+     "error": "Traceback (most recent call last):\n  File \"E:\\Claude\\3D-Model-Workflow\\output\\effort-trial-2026-09-29-sonnet\\sconce\\max\\source\\common.py\", line 215, in read_light\n    lf = LT.LightFamily.GetLightFamily(doc)\nException: The Document is the argument that is being validated The document is not valid because it is not a light family document.\r\nParameter name: document\n"
+    }
+   }, 
+   "Lighting Fixture ceiling based.rft": {
+    "light_named_scan": [
+     {
+      "cat": "Light Source", 
+      "id": "2057", 
+      "class": "Element"
+     }
+    ], 
+    "title": "Family3", 
+    "category": "Lighting Fixtures", 
+    "placement_type": "OneLevelBasedHosted", 
+    "light_elements": [
+     {
+      "location": "Location", 
+      "parameters": [
+       "Light Source Symbol Size", 
+       "Light Source Definition", 
+       "Category", 
+       "Category", 
+       "Design Option", 
+       "Family Name", 
+       "Type Name"
+      ], 
+      "category": "Light Source", 
+      "bbox_in": [
+       [
+        -12.062799999999999, 
+        -12.062799999999999, 
+        80.0
+       ], 
+       [
+        12.062799999999999, 
+        12.062799999999999, 
+        104.0
+       ]
+      ], 
+      "id": "2057", 
+      "class": "Element"
+     }
+    ], 
+    "ref_planes": [
+     {
+      "free_in": [
+       -72.0, 
+       0.0, 
+       -24.0
+      ], 
+      "name": "Light Source Axis (F/B)", 
+      "bubble_in": [
+       72.0, 
+       0.0, 
+       -24.0
+      ], 
+      "normal": [
+       0.0, 
+       -1.0, 
+       0.0
+      ]
+     }, 
+     {
+      "free_in": [
+       -60.0, 
+       -67.914400000000001, 
+       96.0
+      ], 
+      "name": "Ceiling", 
+      "bubble_in": [
+       92.457300000000004, 
+       -67.914400000000001, 
+       96.0
+      ], 
+      "normal": [
+       0.0, 
+       0.0, 
+       1.0
+      ]
+     }, 
+     {
+      "free_in": [
+       0.0, 
+       -72.0, 
+       -8.9445999999999994
+      ], 
+      "name": "Light Source Axis (L/R)", 
+      "bubble_in": [
+       0.0, 
+       72.0, 
+       -8.9445999999999994
+      ], 
+      "normal": [
+       1.0, 
+       -0.0, 
+       0.0
+      ]
+     }, 
+     {
+      "free_in": [
+       -43.185000000000002, 
+       90.335899999999995, 
+       92.0
+      ], 
+      "name": "Light Source Elevation", 
+      "bubble_in": [
+       46.594099999999997, 
+       90.335899999999995, 
+       92.0
+      ], 
+      "normal": [
+       0.0, 
+       0.0, 
+       -1.0
+      ]
+     }
+    ], 
+    "family_params": {
+     "Category": {
+      "element_id": "-1"
+     }, 
+     "Maintain Annotation Orientation": {
+      "text": "No", 
+      "value": 0
+     }, 
+     "Room Calculation Point": {
+      "text": "No", 
+      "value": 0
+     }, 
+     "Light Source": {
+      "text": "Yes", 
+      "value": 1
+     }, 
+     "Design Option": {
+      "element_id": "-1"
+     }, 
+     "Family Name": null, 
+     "Shared": {
+      "text": "No", 
+      "value": 0
+     }, 
+     "Cut with Voids When Loaded": {
+      "text": "No", 
+      "value": 0
+     }, 
+     "OmniClass Number": "23.80.70.11", 
+     "Type Name": null, 
+     "Always vertical": {
+      "text": "Yes", 
+      "value": 1
+     }, 
+     "OmniClass Title": "Luminaries for Internal Lighting", 
+     "Part Type": {
+      "text": "Normal", 
+      "value": 0
+     }, 
+     "Host": {
+      "text": "Ceiling", 
+      "value": 3
+     }, 
+     "Round Connector Dimension": {
+      "text": "Use Diameter", 
+      "value": 1
+     }
+    }, 
+    "light_read": {
+     "shape_style": "Point", 
+     "distribution_style": "Spherical", 
+     "light_types": 0, 
+     "source_transform": {
+      "basis_z": [
+       0.0, 
+       0.0, 
+       1.0
+      ], 
+      "origin_in": [
+       0.0, 
+       0.0, 
+       92.0
+      ], 
+      "basis_x": [
+       1.0, 
+       0.0, 
+       0.0
+      ]
+     }, 
+     "types": []
+    }
+   }, 
+   "Lighting Fixture.rft": {
+    "light_named_scan": [
+     {
+      "cat": "Light Source", 
+      "id": "1906", 
+      "class": "Element"
+     }
+    ], 
+    "title": "Family1", 
+    "category": "Lighting Fixtures", 
+    "placement_type": "OneLevelBased", 
+    "light_elements": [
+     {
+      "location": "Location", 
+      "parameters": [
+       "Light Source Symbol Size", 
+       "Light Source Definition", 
+       "Category", 
+       "Category", 
+       "Design Option", 
+       "Family Name", 
+       "Type Name"
+      ], 
+      "category": "Light Source", 
+      "bbox_in": [
+       [
+        -12.062799999999999, 
+        -12.062799999999999, 
+        42.0
+       ], 
+       [
+        12.062799999999999, 
+        12.062799999999999, 
+        66.0
+       ]
+      ], 
+      "id": "1906", 
+      "class": "Element"
+     }
+    ], 
+    "ref_planes": [
+     {
+      "free_in": [
+       -60.0, 
+       0.0, 
+       -24.0
+      ], 
+      "name": "Light Source Axis (F/B)", 
+      "bubble_in": [
+       60.0, 
+       0.0, 
+       -24.0
+      ], 
+      "normal": [
+       0.0, 
+       -1.0, 
+       0.0
+      ]
+     }, 
+     {
+      "free_in": [
+       -46.092799999999997, 
+       -29.487800000000000, 
+       0.0
+      ], 
+      "name": "Reference Plane", 
+      "bubble_in": [
+       36.086100000000002, 
+       -29.487800000000000, 
+       0.0
+      ], 
+      "normal": [
+       0.0, 
+       0.0, 
+       1.0
+      ]
+     }, 
+     {
+      "free_in": [
+       0.0, 
+       -60.0, 
+       -24.0
+      ], 
+      "name": "Light Source Axis (L/R)", 
+      "bubble_in": [
+       0.0, 
+       60.0, 
+       -24.0
+      ], 
+      "normal": [
+       1.0, 
+       0.0, 
+       -0.0
+      ]
+     }, 
+     {
+      "free_in": [
+       -38.241799999999998, 
+       45.832200000000000, 
+       54.0
+      ], 
+      "name": "Light Source Elevation", 
+      "bubble_in": [
+       67.632499999999993, 
+       45.832200000000000, 
+       54.0
+      ], 
+      "normal": [
+       -0.0, 
+       -0.0, 
+       -1.0
+      ]
+     }
+    ], 
+    "family_params": {
+     "Category": {
+      "element_id": "-1"
+     }, 
+     "Maintain Annotation Orientation": {
+      "text": "No", 
+      "value": 0
+     }, 
+     "Room Calculation Point": {
+      "text": "No", 
+      "value": 0
+     }, 
+     "Light Source": {
+      "text": "Yes", 
+      "value": 1
+     }, 
+     "Design Option": {
+      "element_id": "-1"
+     }, 
+     "Family Name": null, 
+     "Shared": {
+      "text": "No", 
+      "value": 0
+     }, 
+     "Cut with Voids When Loaded": {
+      "text": "No", 
+      "value": 0
+     }, 
+     "OmniClass Number": "23.80.70.00", 
+     "Type Name": null, 
+     "Always vertical": {
+      "text": "Yes", 
+      "value": 1
+     }, 
+     "OmniClass Title": "Lighting", 
+     "Part Type": {
+      "text": "Normal", 
+      "value": 0
+     }, 
+     "Host": {
+      "text": "", 
+      "value": 0
+     }, 
+     "Round Connector Dimension": {
+      "text": "Use Diameter", 
+      "value": 1
+     }, 
+     "Work Plane-Based": {
+      "text": "No", 
+      "value": 0
+     }
+    }, 
+    "light_read": {
+     "shape_style": "Point", 
+     "distribution_style": "Spherical", 
+     "light_types": 0, 
+     "source_transform": {
+      "basis_z": [
+       0.0, 
+       0.0, 
+       1.0
+      ], 
+      "origin_in": [
+       0.0, 
+       0.0, 
+       54.0
+      ], 
+      "basis_x": [
+       1.0, 
+       0.0, 
+       0.0
+      ]
+     }, 
+     "types": []
+    }
+   }
+  }, 
+  "lf_workplane": {
+   "before": {
+    "params": {
+     "Category": {
+      "element_id": "-1"
+     }, 
+     "Maintain Annotation Orientation": {
+      "text": "No", 
+      "value": 0
+     }, 
+     "Room Calculation Point": {
+      "text": "No", 
+      "value": 0
+     }, 
+     "Light Source": {
+      "text": "Yes", 
+      "value": 1
+     }, 
+     "Design Option": {
+      "element_id": "-1"
+     }, 
+     "Family Name": null, 
+     "Shared": {
+      "text": "No", 
+      "value": 0
+     }, 
+     "Cut with Voids When Loaded": {
+      "text": "No", 
+      "value": 0
+     }, 
+     "OmniClass Number": "23.80.70.00", 
+     "Type Name": null, 
+     "Always vertical": {
+      "text": "Yes", 
+      "value": 1
+     }, 
+     "OmniClass Title": "Lighting", 
+     "Part Type": {
+      "text": "Normal", 
+      "value": 0
+     }, 
+     "Host": {
+      "text": "", 
+      "value": 0
+     }, 
+     "Round Connector Dimension": {
+      "text": "Use Diameter", 
+      "value": 1
+     }, 
+     "Work Plane-Based": {
+      "text": "No", 
+      "value": 0
+     }
+    }, 
+    "placement": "OneLevelBased"
+   }, 
+   "work_plane_param_found": true, 
+   "after_state": {
+    "light_named_scan": [
+     {
+      "cat": "Light Source", 
+      "id": "1906", 
+      "class": "Element"
+     }
+    ], 
+    "title": "Family5", 
+    "category": "Lighting Fixtures", 
+    "placement_type": "WorkPlaneBased", 
+    "light_elements": [
+     {
+      "location": "Location", 
+      "parameters": [
+       "Light Source Symbol Size", 
+       "Light Source Definition", 
+       "Category", 
+       "Category", 
+       "Design Option", 
+       "Family Name", 
+       "Type Name"
+      ], 
+      "category": "Light Source", 
+      "bbox_in": [
+       [
+        -12.062799999999999, 
+        -12.062799999999999, 
+        42.0
+       ], 
+       [
+        12.062799999999999, 
+        12.062799999999999, 
+        66.0
+       ]
+      ], 
+      "id": "1906", 
+      "class": "Element"
+     }
+    ], 
+    "ref_planes": [
+     {
+      "free_in": [
+       -60.0, 
+       0.0, 
+       -24.0
+      ], 
+      "name": "Light Source Axis (F/B)", 
+      "bubble_in": [
+       60.0, 
+       0.0, 
+       -24.0
+      ], 
+      "normal": [
+       0.0, 
+       -1.0, 
+       0.0
+      ]
+     }, 
+     {
+      "free_in": [
+       -46.092799999999997, 
+       -29.487800000000000, 
+       0.0
+      ], 
+      "name": "Reference Plane", 
+      "bubble_in": [
+       36.086100000000002, 
+       -29.487800000000000, 
+       0.0
+      ], 
+      "normal": [
+       0.0, 
+       0.0, 
+       1.0
+      ]
+     }, 
+     {
+      "free_in": [
+       0.0, 
+       -60.0, 
+       -24.0
+      ], 
+      "name": "Light Source Axis (L/R)", 
+      "bubble_in": [
+       0.0, 
+       60.0, 
+       -24.0
+      ], 
+      "normal": [
+       1.0, 
+       0.0, 
+       -0.0
+      ]
+     }, 
+     {
+      "free_in": [
+       -38.241799999999998, 
+       45.832200000000000, 
+       54.0
+      ], 
+      "name": "Light Source Elevation", 
+      "bubble_in": [
+       67.632499999999993, 
+       45.832200000000000, 
+       54.0
+      ], 
+      "normal": [
+       -0.0, 
+       -0.0, 
+       -1.0
+      ]
+     }
+    ], 
+    "light_read": {
+     "shape_style": "Point", 
+     "distribution_style": "Spherical", 
+     "light_types": 0, 
+     "source_transform": {
+      "basis_z": [
+       0.0, 
+       0.0, 
+       1.0
+      ], 
+      "origin_in": [
+       0.0, 
+       0.0, 
+       54.0
+      ], 
+      "basis_x": [
+       1.0, 
+       0.0, 
+       0.0
+      ]
+     }, 
+     "types": []
+    }
+   }, 
+   "work_plane_param_readonly": false, 
+   "after_set": {
+    "placement": "WorkPlaneBased", 
+    "value": {
+     "text": "Yes", 
+     "value": 1
+    }
+   }
+  }
+ }, 
+ "revit": "Autodesk Revit 2025 25.4.50.35", 
+ "closed_all": true
+}

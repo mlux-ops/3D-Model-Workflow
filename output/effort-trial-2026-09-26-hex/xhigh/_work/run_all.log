@@ -1,0 +1,239 @@
+=== analyze_render.py
+render 2000 1888
+R-B chroma percentiles [20. 22. 24. 28. 34. 36. 39. 42. 46.]
+lum percentiles [206.9416 211.8826 222.5296 229.1714 232.3198 235.2488 240.7462 245.686
+ 247.1846]
+chroma<20 fraction 0.0041
+chroma<25 fraction 0.0215
+chroma<30 fraction 0.0699
+chroma<35 fraction 0.2754
+top rows by joint fraction: [156, 157, 158, 312, 313, 314, 315, 316, 469, 470, 471, 472, 473, 627, 628, 629, 630, 631, 632, 784, 785, 786, 787, 788, 789, 942, 943, 944, 945, 946, 1098, 1099, 1100, 1101, 1102, 1103, 1104, 1105, 1106, 1256, 1257, 1258, 1259, 1260, 1261, 1415, 1416, 1417, 1418, 1570, 1571, 1572, 1573, 1574, 1575, 1576, 1729, 1730, 1731, 1732]
+their fractions: [np.float64(0.289), np.float64(0.29), np.float64(0.254), np.float64(0.138), np.float64(0.401), np.float64(0.424), np.float64(0.426), np.float64(0.144), np.float64(0.126), np.float64(0.263), np.float64(0.282), np.float64(0.286), np.float64(0.277), np.float64(0.157), np.float64(0.376), np.float64(0.38), np.float64(0.37), np.float64(0.33), np.float64(0.128), np.float64(0.156), np.float64(0.322), np.float64(0.332), np.float64(0.34), np.float64(0.292), np.float64(0.128), np.float64(0.166), np.float64(0.355), np.float64(0.398), np.float64(0.397), np.float64(0.228), np.float64(0.125), np.float64(0.202), np.float64(0.346), np.float64(0.34), np.float64(0.334), np.float64(0.311), np.float64(0.203), np.float64(0.14), np.float64(0.124), np.float64(0.124), np.float64(0.308), np.float64(0.406), np.float64(0.406), np.float64(0.386), np.float64(0.22), np.float64(0.242), np.float64(0.308), np.float64(0.308), np.float64(0.207), np.float64(0.125), np.float64(0.222), np.float64(0.422), np.float64(0.442), np.float64(0.431), np.float64(0.434), np.float64(0.228), np.float64(0.132), np.float64(0.286), np.float64(0.285), np.float64(0.239)]
+=== analyze_lattice.py
+joint row peaks [ 156.99  313.85  471.36  629.39  786.38  944.24 1101.47 1258.28 1415.67
+ 1573.34 1730.85]
+y0 156.85  half-F 157.391  F(across flats module) 314.782 px
+module circumradius 181.740 px, column pitch 272.610 px
+column phase x0 = 463.00 (score 10.194)
+full hexagons inside render: 27
+=== fit_lattice.py
+start [463.         156.84687188 272.60960376 157.39122811] score(1.5) 1.5760641075135506
+grid best [453.         156.84687188 272.60960376 157.39122811] 5.121838005764593
+refined [454.406 156.834 272.673 157.342] score(1.0) 13.520936807762697  old score(1.0) 3.6585747025554483
+F (across flats module) 314.684 px; point-to-point module 363.564 px; regular would be 363.366; aspect ratio vs regular 1.0005
+  x    0- 666: on-joint dark 14.05  off 0.81
+  x  666-1333: on-joint dark 15.00  off 0.94
+  x 1333-2000: on-joint dark 14.22  off 0.87
+cells 108 px/in (from flats) 31.080, (from width) 31.097
+=== classify_render.py
+  0, -1 vis 0.50 hp 1.07 coh 0.022 groove  107.3 rgb [247.5, 235.2, 209.3] lp 1.18
+  5,  2 vis 1.00 hp 1.15 coh 0.005 groove  156.3 rgb [245.7, 233.8, 208.9] lp 1.63
+ -1,  4 vis 1.00 hp 1.29 coh 0.019 groove    9.9 rgb [244.5, 232.5, 207.4] lp 1.05
+ -1,  2 vis 1.00 hp 1.40 coh 0.059 groove   11.6 rgb [244.1, 231.8, 206.1] lp 0.78
+  5,  0 vis 1.00 hp 1.64 coh 0.023 groove    6.2 rgb [244.7, 232.5, 208.7] lp 1.14
+  3,  8 vis 1.00 hp 1.65 coh 0.002 groove   73.0 rgb [244.2, 232.3, 209.8] lp 1.32
+  2,  9 vis 1.00 hp 1.65 coh 0.011 groove   60.1 rgb [242.8, 229.7, 205.7] lp 1.89
+  4,  7 vis 1.00 hp 1.65 coh 0.013 groove   60.0 rgb [242.0, 229.4, 207.3] lp 1.04
+  0,  3 vis 1.00 hp 1.69 coh 0.032 groove    3.0 rgb [245.1, 233.0, 207.8] lp 1.91
+  2, -1 vis 0.50 hp 1.69 coh 0.013 groove  161.0 rgb [245.4, 232.4, 208.2] lp 1.67
+  3, 10 vis 1.00 hp 1.69 coh 0.023 groove   75.9 rgb [240.6, 228.0, 206.2] lp 1.56
+  5, 10 vis 1.00 hp 1.79 coh 0.017 groove   72.3 rgb [240.7, 227.2, 205.7] lp 0.66
+  1,  6 vis 1.00 hp 1.80 coh 0.008 groove  169.3 rgb [243.9, 230.8, 204.4] lp 0.99
+  4, -1 vis 0.50 hp 1.81 coh 0.012 groove   16.6 rgb [243.7, 231.4, 207.5] lp 1.79
+ -1,  8 vis 1.00 hp 1.81 coh 0.020 groove   90.7 rgb [242.7, 229.0, 202.0] lp 1.01
+  3,  2 vis 1.00 hp 1.82 coh 0.013 groove  165.8 rgb [246.5, 234.7, 211.1] lp 0.99
+  3,  0 vis 1.00 hp 1.86 coh 0.033 groove   97.5 rgb [245.5, 233.2, 209.5] lp 1.06
+  1,  0 vis 1.00 hp 1.91 coh 0.026 groove   83.9 rgb [246.1, 233.0, 206.2] lp 1.49
+  2,  3 vis 1.00 hp 1.91 coh 0.034 groove   74.8 rgb [246.6, 235.0, 210.3] lp 1.65
+ -1, 10 vis 1.00 hp 1.93 coh 0.026 groove   15.3 rgb [241.6, 227.0, 200.6] lp 1.16
+  5,  6 vis 1.00 hp 2.01 coh 0.025 groove    7.7 rgb [242.0, 230.3, 208.4] lp 1.69
+  0,  7 vis 1.00 hp 2.02 coh 0.018 groove  151.0 rgb [243.0, 229.7, 204.4] lp 1.19
+  0, 11 vis 0.50 hp 2.03 coh 0.014 groove  140.9 rgb [241.9, 228.4, 202.8] lp 0.92
+  1, 10 vis 1.00 hp 2.08 coh 0.006 groove  124.3 rgb [240.4, 226.9, 203.8] lp 0.85
+  4,  5 vis 1.00 hp 2.14 coh 0.008 groove   13.0 rgb [242.5, 230.6, 207.3] lp 1.25
+  3,  4 vis 1.00 hp 2.17 coh 0.026 groove   88.5 rgb [245.2, 233.7, 210.3] lp 1.72
+  1,  2 vis 1.00 hp 3.40 coh 0.324 groove   59.1 rgb [247.4, 235.5, 210.1] lp 1.36
+  4,  1 vis 1.00 hp 3.68 coh 0.338 groove   57.5 rgb [245.2, 233.6, 209.6] lp 1.40
+  4,  3 vis 1.00 hp 3.88 coh 0.354 groove   58.5 rgb [243.8, 232.3, 208.1] lp 1.73
+ -1,  0 vis 1.00 hp 3.88 coh 0.360 groove   59.3 rgb [243.3, 231.2, 206.1] lp 0.86
+  2,  5 vis 1.00 hp 3.99 coh 0.334 groove   58.1 rgb [245.4, 233.6, 208.7] lp 0.86
+  1,  8 vis 1.00 hp 4.33 coh 0.330 groove   57.5 rgb [243.6, 231.1, 206.0] lp 1.48
+  0,  5 vis 1.00 hp 4.58 coh 0.365 groove   57.5 rgb [241.8, 230.0, 205.9] lp 1.10
+  5,  8 vis 1.00 hp 4.78 coh 0.382 groove   59.3 rgb [241.2, 229.3, 207.3] lp 1.08
+  4, 11 vis 0.50 hp 4.87 coh 0.371 groove   59.0 rgb [240.2, 227.3, 204.4] lp 0.94
+  0,  1 vis 1.00 hp 6.92 coh 0.796 groove   26.8 rgb [245.7, 234.7, 209.5] lp 2.06
+  1,  4 vis 1.00 hp 7.16 coh 0.766 groove  149.0 rgb [245.0, 233.7, 208.4] lp 0.87
+  2,  1 vis 1.00 hp 7.43 coh 0.806 groove   88.3 rgb [245.0, 233.5, 208.7] lp 1.44
+  5,  4 vis 1.00 hp 7.87 coh 0.802 groove   25.3 rgb [242.9, 232.2, 208.5] lp 0.77
+  2,  7 vis 1.00 hp 8.02 coh 0.808 groove   88.3 rgb [243.6, 231.8, 207.6] lp 1.38
+  3,  6 vis 1.00 hp 8.07 coh 0.800 groove   25.7 rgb [242.8, 232.1, 208.6] lp 1.07
+  0,  9 vis 1.00 hp 8.58 coh 0.789 groove   25.0 rgb [241.9, 230.1, 205.1] lp 1.33
+  4,  9 vis 1.00 hp 8.58 coh 0.779 groove  149.0 rgb [241.1, 229.3, 207.1] lp 1.33
+ -1,  6 vis 1.00 hp 8.78 coh 0.836 groove   88.2 rgb [242.9, 230.8, 205.8] lp 1.15
+  2, 11 vis 0.50 hp 9.91 coh 0.838 groove   87.9 rgb [240.7, 228.3, 204.7] lp 1.30
+cells 45 sheets 3
+=== measure_fft.py
+joint centreline median RGB [215. 206. 191.]  n 31040
+face ring (8-14 px in) median RGB [244. 232. 207.]
+median RGB vs distance from joint centreline (px):
+   0.0  [214.0, 204.0, 190.0]
+   0.5  [225.0, 216.0, 200.0]
+   1.0  [237.0, 228.0, 211.0]
+   1.5  [242.0, 232.0, 212.0]
+   2.0  [242.0, 232.0, 212.0]
+   2.5  [242.0, 232.0, 210.0]
+   3.0  [242.0, 232.0, 209.0]
+   3.5  [243.0, 232.0, 208.0]
+   4.0  [243.0, 232.0, 208.0]
+   4.5  [243.0, 232.0, 208.0]
+   5.0  [243.0, 232.0, 208.0]
+   5.5  [243.0, 232.0, 207.0]
+   6.0  [243.0, 232.0, 208.0]
+   6.5  [243.0, 232.0, 207.0]
+   7.0  [243.0, 232.0, 207.0]
+   7.5  [244.0, 232.0, 207.0]
+   8.0  [244.0, 232.0, 207.0]
+   8.5  [244.0, 232.0, 207.0]
+   9.0  [244.0, 232.0, 207.0]
+   9.5  [244.0, 232.0, 207.0]
+   10.0  [244.0, 232.0, 207.0]
+   10.5  [244.0, 232.0, 207.0]
+   11.0  [244.0, 232.0, 207.0]
+   11.5  [244.0, 232.0, 207.0]
+pool area in full-face units (interior >6 px from joint): {'matte': np.float64(24.01), 'raw': np.float64(8.5), 'chiseled': np.float64(9.51)}
+-1,6 groove 90.17 deg  period 6.187 px = 5.057 mm  quad phases [46.  3. 50.  3.]  amp cv 0.18
+    profile [  6.6   5.5   3.7   2.2   1.   -0.3  -2.3  -4.   -5.8  -7.3  -9.5  -9.6
+ -11.  -10.   -7.5  -3.2  -1.5   1.8   6.1   8.8   9.    9.5   9.6   8.3]
+0,1 groove 30.28 deg  period 6.184 px = 5.054 mm  quad phases [-179. -162. -174. -168.]  amp cv 0.22
+    profile [-7.5 -7.3 -6.1 -4.3 -2.   0.7  2.9  4.9  6.2  6.8  6.9  6.3  5.6  4.5
+  3.6  2.3  1.3  0.3 -1.  -2.1 -3.5 -5.  -6.3 -7.1]
+0,9 groove 29.66 deg  period 6.179 px = 5.050 mm  quad phases [-158. -162. -173. -170.]  amp cv 0.18
+    profile [-9.5 -8.4 -6.9 -4.2 -1.2  1.8  4.7  6.8  8.2  8.7  8.3  7.6  6.4  5.1
+  3.8  2.4  1.3 -0.4 -1.6 -3.5 -5.1 -6.7 -8.4 -9.1]
+1,4 groove 150.49 deg  period 6.189 px = 5.058 mm  quad phases [116. 128. 115. 128.]  amp cv 0.16
+    profile [-3.2 -4.5 -6.1 -7.  -7.9 -7.7 -6.9 -5.4 -3.3 -0.6  1.9  4.   5.8  6.6
+  7.2  6.9  6.3  5.5  4.4  3.2  2.   0.9 -0.4 -1.8]
+2,1 groove 90.35 deg  period 6.187 px = 5.056 mm  quad phases [-175. -166.  171. -129.]  amp cv 0.20
+    profile [-8.8 -8.5 -7.2 -5.1 -2.7  0.4  3.5  5.2  7.2  7.8  8.   6.5  6.6  5.1
+  4.   2.1  1.8  0.4 -0.8 -2.1 -3.6 -5.2 -6.7 -7.8]
+2,7 groove 90.35 deg  period 6.187 px = 5.056 mm  quad phases [ 174.  149.  159. -153.]  amp cv 0.18
+    profile [-8.6 -9.2 -9.  -8.  -6.1 -3.6  0.2  2.5  5.7  7.2  8.7  7.9  8.4  6.8
+  5.9  4.   3.3  1.9  0.7 -0.9 -2.  -3.4 -5.3 -7. ]
+3,6 groove 29.66 deg  period 6.179 px = 5.050 mm  quad phases [140. 154. 139. 138.]  amp cv 0.17
+    profile [-5.9 -7.3 -8.5 -8.8 -8.6 -7.3 -5.5 -2.7  0.2  3.   5.4  7.1  8.1  8.2
+  7.8  6.9  5.8  4.5  3.2  1.8  0.4 -1.  -2.7 -4. ]
+4,9 groove 150.34 deg  period 6.179 px = 5.050 mm  quad phases [167. 169. 167. 168.]  amp cv 0.18
+    profile [-9.2 -8.2 -6.6 -5.  -3.1 -1.6 -0.1  1.3  2.6  4.1  5.2  6.6  7.6  8.3
+  8.5  7.8  6.6  4.4  1.6 -1.5 -4.5 -6.8 -8.7 -9.4]
+5,4 groove 29.57 deg  period 6.163 px = 5.037 mm  quad phases [159. 166. 163. 172.]  amp cv 0.17
+    profile [-7.6 -8.4 -8.5 -7.7 -6.  -3.8 -1.1  1.7  4.2  6.1  7.4  7.8  7.8  7.
+  6.   4.7  3.5  2.3  1.  -0.2 -1.8 -3.3 -4.8 -6.3]
+=== prepare_pools.py
+trend fit residual std per channel [0.91 1.   1.05]
+trend range per channel (max-min over render) [ 7.95  8.99 11.14]
+matte    n=26 mean RGB [243.75 231.27 207.03]  offset std [0.9  1.07 1.22]
+raw      n= 9 mean RGB [243.39 231.33 206.92]  offset std [1.18 1.08 0.77]
+chiseled n=10 mean RGB [243.2  231.78 207.52]  offset std [0.38 0.5  0.61]
+matte {'pool_px': np.int64(1930514), 'h_raw_std': np.float64(1.364), 'h_micro_std': np.float64(1.311), 'h_raw_p': [-4.66, -3.91, -2.23, 0.03, 2.17, 3.64, 4.25], 'Yres_std': np.float64(2.326), 'lowY_std': np.float64(1.504)}
+raw {'pool_px': np.int64(683263), 'h_raw_std': np.float64(3.221), 'h_micro_std': np.float64(3.074), 'h_raw_p': [-9.83, -8.54, -5.44, 0.09, 5.15, 7.71, 8.69], 'Yres_std': np.float64(4.589), 'lowY_std': np.float64(2.054)}
+chiseled {'pool_px': np.int64(764609), 'h_raw_std': np.float64(6.794), 'h_micro_std': np.float64(6.685), 'h_raw_p': [-17.15, -15.61, -11.45, 0.23, 10.72, 13.69, 14.63], 'Yres_std': np.float64(8.259), 'lowY_std': np.float64(1.97)}
+joint colour (darkest 20 %% of centreline pixels, median): [208. 200. 186.]
+profile fit R^2 by exponent: {0.5: np.float64(0.99589), 0.75: np.float64(0.98873), 1.0: np.float64(0.95902), 1.25: np.float64(0.98539), 1.5: np.float64(0.99658), 1.65: np.float64(0.99833), 2.0: np.float64(0.99476)}
+chiseled profile fit: gamma 1.65  blur 0.6 px  R^2 0.998  in-phase (albedo/AO) amplitude 3.40 levels, sign -1
+   -1,6 shading coef -165.92  in-phase coef -3.40
+   0,1 shading coef -123.56  in-phase coef -2.15
+   0,9 shading coef -150.81  in-phase coef -3.63
+   1,4 shading coef -123.79  in-phase coef -3.97
+   2,1 shading coef -137.25  in-phase coef -2.91
+   2,7 shading coef -146.51  in-phase coef -4.04
+   3,6 shading coef -147.19  in-phase coef -2.86
+   4,9 shading coef +152.48  in-phase coef -3.75
+   5,4 shading coef -139.39  in-phase coef -3.10
+=== prepare_chiseled.py
+-1,6 angle 90.2: notched rgb std [4.53 4.93 7.03], rough std 3.54, mod cv 0.27
+0,1 angle 30.3: notched rgb std [4.3  4.69 6.87], rough std 3.06, mod cv 0.32
+0,9 angle 29.7: notched rgb std [4.95 5.3  7.68], rough std 3.85, mod cv 0.30
+1,4 angle 150.5: notched rgb std [4.31 4.57 6.98], rough std 3.26, mod cv 0.26
+2,1 angle 90.3: notched rgb std [4.22 4.62 6.75], rough std 3.18, mod cv 0.29
+2,7 angle 90.3: notched rgb std [4.56 4.98 7.12], rough std 3.43, mod cv 0.28
+3,6 angle 29.7: notched rgb std [4.64 4.95 7.07], rough std 3.52, mod cv 0.26
+4,9 angle 150.3: notched rgb std [5.04 5.33 7.46], rough std 3.82, mod cv 0.29
+5,4 angle 29.6: notched rgb std [4.52 4.78 7.09], rough std 3.46, mod cv 0.27
+class 90: 9 source faces, pool px 701502, max rotation-sign error 0.0 deg
+class 30: 9 source faces, pool px 701509, max rotation-sign error 0.2 deg
+class 150: 9 source faces, pool px 701510, max rotation-sign error 0.2 deg
+rough std 3.467 levels, mod std 0.283
+=== build_maps.py
+layout cost 75.52, same-type non-matte adjacencies 0, orientation cost 1.0
+   C3  R   C1  M   C5  M   M   M  
+   R   M   M   M   M   R   C3  M  
+   M   M   C3  R   C1  M   R   M  
+   M   R   M   M   M   M   M   C1 
+   M   M   M   C5  R   C3  M   R  
+   R   C1  R   M   M   M   M   C5 
+   M   M   M   C3  M   R   C1  M  
+canvas 380 x 331 render px; pool valid block positions: {'matte': 1396799, 'raw': 536565, 'chis_90': 552003, 'chis_30': 552024, 'chis_150': 552185}
+quilting 103.1 s
+pool matte    pool coverage 89.3 %
+pool raw      pool coverage 91.2 %
+pool chis_90  pool coverage 70.2 %
+pool chis_30  pool coverage 69.8 %
+pool chis_150 pool coverage 43.0 %
+pool matte: 77.7 % of quilted pixels duplicate a source pixel used elsewhere (exact count)
+pool raw  : 73.3 % of quilted pixels duplicate a source pixel used elsewhere (exact count)
+pool chis_90: 8.9 % of quilted pixels duplicate a source pixel used elsewhere (exact count)
+pool chis_30: 11.8 % of quilted pixels duplicate a source pixel used elsewhere (exact count)
+pool chis_150: 4.2 % of quilted pixels duplicate a source pixel used elsewhere (exact count)
+lattice 10.0 s
+groove pitch 5.052 mm = 12.729 px; gamma 1.65; render stripe rms 5.86 levels -> channel darkening 16.06 levels
+wrote Color.png, Bump16.png, face_ids.png, report.json; bump white = 0.1200 mm, black = -2.50 mm
+=== verify.py
+headers {'Color.png': {'width': 4489, 'height': 4536, 'bit_depth': 8, 'colour_type': 2, 'ok': True}, 'Bump16.png': {'width': 4489, 'height': 4536, 'bit_depth': 16, 'colour_type': 0, 'ok': True}, 'face_ids.png': {'width': 4489, 'height': 4536, 'bit_depth': 16, 'colour_type': 0, 'ok': True}}
+wrap adjacent {"colour_luma_levels": {"left_right": {"seam_mean": 1.3918, "adjacent_mean": 1.3456, "ratio": 1.0343}, "top_bottom": {"seam_mean": 0.446, "adjacent_mean": 0.5374, "ratio": 0.83}}, "bump_mm": {"left_right": {"seam_mean": 0.0668, "adjacent_mean": 0.0647, "ratio": 1.0313}, "top_bottom": {"seam_mean": 0.0154, "adjacent_mean": 0.0186, "ratio": 0.8295}}, "bump_16bit": {"left_right": {"seam_mean": 1670.1493, "adjacent_mean": 1619.4269, "ratio": 1.0313}, "top_bottom": {"seam_mean": 384.9864, "adjacent_mean": 464.1211, "ratio": 0.8295}}}
+wrap {"left_right": {"seam_mean_step": 1.3918, "interior_mean_step": 1.1356, "ratio": 1.2256, "seam_p99_step": 18.7824, "interior_p99_step": 6.8556}, "top_bottom": {"seam_mean_step": 0.446, "interior_mean_step": 1.0889, "ratio": 0.4096, "seam_p99_step": 3.1409, "interior_p99_step": 6.7152}} {"left_right": {"seam_mean_step": 0.0668, "interior_mean_step": 0.0453, "ratio": 1.4746, "seam_p99_step": 1.3322, "interior_p99_step": 0.3048}, "top_bottom": {"seam_mean_step": 0.0154, "interior_mean_step": 0.0422, "ratio": 0.3645, "seam_p99_step": 0.2008, "interior_p99_step": 0.2845}}
+wrap matched {"colour_luma_levels": {"left_right": {"seam_mean": 1.3918, "matched_interior_mean": 1.2811, "seam_p99": 18.7824, "matched_interior_p99": 14.9137, "within_face_seam_mean": 1.1571, "within_face_interior_mean": 1.0688, "within_face_ratio": 1.0826}, "top_bottom": {"seam_mean": 0.446, "matched_interior_mean": 0.6292, "seam_p99": 3.1409, "matched_interior_p99": 5.0, "within_face_seam_mean": 0.6778, "within_face_interior_mean": 0.956, "within_face_ratio": 0.709}}, "bump_mm": {"left_right": {"seam_mean": 0.0668, "matched_interior_mean": 0.0562, "seam_p99": 1.3322, "matched_interior_p99": 0.8611, "within_face_seam_mean": 0.047, "within_face_interior_mean": 0.0398, "within_face_ratio": 1.1809}, "top_bottom": {"seam_mean": 0.0154, "matched_interior_mean": 0.0234, "seam_p99": 0.2008, "matched_interior_p99": 0.2204, "within_face_seam_mean": 0.0234, "within_face_interior_mean": 0.0356, "within_face_ratio": 0.6571}}}
+joint {'vertical_run_px_mode': 8, 'vertical_run_px_hist': {'8': 2961, '10': 14, '14': 14, '16': 2842, '18': 14, '20': 7, '22': 14, '24': 14, '26': 14, '28': 7, '30': 7, '32': 7}, 'joint_area_fraction': 0.02454, 'theoretical_area_fraction_1_8in': 0.02454, 'implied_width_in': 0.125, 'implied_width_px': 8.0}
+relief {
+"joint_floor_mm": -2.5,
+"joint_core_max_mm": -2.5,
+"joint_pixels_max_mm": -1.372,
+"matte": {
+"pattern_relief_mm_p0.1_p99.9": 0.1259,
+"pattern_max_mm": 0.119,
+"pattern_min_mm": -0.1882,
+"pattern_std_mm": 0.0142,
+"deepest_face_pixel_incl_edge_mm": -0.4593,
+"clearance_pattern_to_joint_floor_mm": 2.3118,
+"clearance_any_face_pixel_to_joint_floor_mm": 2.0407
+},
+"raw": {
+"pattern_relief_mm_p0.1_p99.9": 1.6959,
+"pattern_max_mm": 0.032,
+"pattern_min_mm": -1.664,
+"pattern_std_mm": 0.2643,
+"deepest_face_pixel_incl_edge_mm": -2.014,
+"clearance_pattern_to_joint_floor_mm": 0.836,
+"clearance_any_face_pixel_to_joint_floor_mm": 0.486
+},
+"chiseled": {
+"pattern_relief_mm_p0.1_p99.9": 1.3115,
+"pattern_max_mm": 0.12,
+"pattern_min_mm": -1.5821,
+"pattern_std_mm": 0.2906,
+"deepest_face_pixel_incl_edge_mm": -1.6864,
+"clearance_pattern_to_joint_floor_mm": 0.9179,
+"clearance_any_face_pixel_to_joint_floor_mm": 0.8136
+},
+"joint_depth_below_face_plane_mm": 2.5
+}
+mix {'counts': {'matte': 32, 'raw': 11, 'chiseled': 13}, 'fractions': {'matte': 0.5714, 'raw': 0.1964, 'chiseled': 0.2321}, 'render_fractions_fully_visible': {'matte': 0.5641, 'raw': 0.2051, 'chiseled': 0.2308}, 'chiseled_orientations': {'90': 5, '30': 5, '150': 3}}
+raw whole-face NCC max 0.030 (faces (2, 26)), median 0.017
+raw window 0 in: max 0.952 p95 0.925 median 0.681  >0.9: 3  >0.8: 4
+raw window 1 in: max 0.544 p95 0.506 median 0.380  >0.9: 0  >0.8: 0
+raw window 2 in: max 0.303 p95 0.251 median 0.194  >0.9: 0  >0.8: 0
+ghost {'joint_line_response_median': 10.537, 'matte_raw_inside_response_p99.99': 3.713, 'matte_raw_inside_response_max': 5.536, 'chiseled_inside_response_max': 6.699, 'note': 'oriented (0/60/120 deg, 1 in) dark-line filter on colour luma; a copied render joint inside a Matte or Raw face would score near the joint median. Chiseled faces are listed separately: their 30/90/150 deg grooves partly excite the filter.'}
+verification passed hard gates
+=== make_previews.py
+previews written
+all steps completed
+exit 0

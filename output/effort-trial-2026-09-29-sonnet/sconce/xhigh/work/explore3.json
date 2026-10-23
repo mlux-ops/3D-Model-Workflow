@@ -1,0 +1,513 @@
+{
+ "A": {
+  "asset_after": 1, 
+  "asset_param": {
+   "ro": false, 
+   "value": 0, 
+   "vs": "No"
+  }, 
+  "doc_light_methods": [], 
+  "factory_light_methods": [], 
+  "fm_after": [
+   {
+    "bip": "RBS_ELEC_APPARENT_LOAD", 
+    "dtype": "autodesk.spec.aec.electrical:apparentPower-2.0.0", 
+    "inst": false, 
+    "name": "Apparent Power", 
+    "storage": "Double"
+   }, 
+   {
+    "bip": "ALL_MODEL_TYPE_IMAGE", 
+    "dtype": "autodesk.spec.reference:image-1.0.0", 
+    "inst": false, 
+    "name": "Type Image", 
+    "storage": "ElementId"
+   }, 
+   {
+    "bip": "FBX_LIGHT_COLOR_FILTER", 
+    "dtype": "", 
+    "inst": false, 
+    "name": "Color Filter", 
+    "storage": "Integer"
+   }, 
+   {
+    "bip": "FBX_LIGHT_DIMMING_LIGHT_COLOR", 
+    "dtype": "", 
+    "inst": false, 
+    "name": "Dimming Lamp Color Temperature Shift", 
+    "storage": "Integer"
+   }, 
+   {
+    "bip": "FBX_LIGHT_INITIAL_INTENSITY", 
+    "dtype": "", 
+    "inst": false, 
+    "name": "Initial Intensity", 
+    "storage": "None"
+   }, 
+   {
+    "bip": "UNIFORMAT_CODE", 
+    "dtype": "autodesk.spec:spec.string-2.0.0", 
+    "inst": false, 
+    "name": "Assembly Code", 
+    "storage": "String"
+   }, 
+   {
+    "bip": "FBX_LIGHT_EMIT_LINE_LENGTH", 
+    "dtype": "autodesk.spec.aec:length-2.0.1", 
+    "inst": false, 
+    "name": "Emit from Line Length", 
+    "storage": "Double"
+   }, 
+   {
+    "bip": "FBX_LIGHT_LOSS_FACTOR_CTRL", 
+    "dtype": "", 
+    "inst": false, 
+    "name": "Light Loss Factor", 
+    "storage": "None"
+   }, 
+   {
+    "bip": "ALL_MODEL_DESCRIPTION", 
+    "dtype": "autodesk.spec:spec.string-2.0.0", 
+    "inst": false, 
+    "name": "Description", 
+    "storage": "String"
+   }, 
+   {
+    "bip": "LIGHTING_FIXTURE_LAMP", 
+    "dtype": "autodesk.spec:spec.string-2.0.0", 
+    "inst": false, 
+    "name": "Lamp", 
+    "storage": "String"
+   }, 
+   {
+    "bip": "RBS_ROOM_COEFFICIENT_UTILIZATION", 
+    "dtype": "autodesk.spec.aec:number-2.0.0", 
+    "inst": true, 
+    "name": "Coefficient of Utilization", 
+    "storage": "Double"
+   }, 
+   {
+    "bip": "LIGHTING_FIXTURE_WATTAGE", 
+    "dtype": "autodesk.spec:spec.string-2.0.0", 
+    "inst": false, 
+    "name": "Wattage Comments", 
+    "storage": "String"
+   }, 
+   {
+    "bip": "IFC_EXPORT_PREDEFINEDTYPE_TYPE", 
+    "dtype": "autodesk.spec:spec.string-2.0.0", 
+    "inst": false, 
+    "name": "Type IFC Predefined Type", 
+    "storage": "String"
+   }, 
+   {
+    "bip": "ALL_MODEL_MODEL", 
+    "dtype": "autodesk.spec:spec.string-2.0.0", 
+    "inst": false, 
+    "name": "Model", 
+    "storage": "String"
+   }, 
+   {
+    "bip": "FAMILY_WPB_DEFAULT_ELEVATION", 
+    "dtype": "autodesk.spec.aec:length-2.0.1", 
+    "inst": false, 
+    "name": "Default Elevation", 
+    "storage": "Double"
+   }, 
+   {
+    "bip": "FBX_LIGHT_SOURCE_DIAMETER", 
+    "dtype": "autodesk.spec.aec:length-2.0.1", 
+    "inst": false, 
+    "name": "Light Source Symbol Size", 
+    "storage": "Double"
+   }, 
+   {
+    "bip": "ALL_MODEL_TYPE_COMMENTS", 
+    "dtype": "autodesk.spec:spec.string-2.0.0", 
+    "inst": false, 
+    "name": "Type Comments", 
+    "storage": "String"
+   }, 
+   {
+    "bip": "DOOR_COST", 
+    "dtype": "autodesk.spec.measurable:currency-2.0.0", 
+    "inst": false, 
+    "name": "Cost", 
+    "storage": "Double"
+   }, 
+   {
+    "bip": "ALL_MODEL_URL", 
+    "dtype": "autodesk.spec.string:url-2.0.0", 
+    "inst": false, 
+    "name": "URL", 
+    "storage": "String"
+   }, 
+   {
+    "bip": "IFC_EXPORT_ELEMENT_TYPE_AS", 
+    "dtype": "autodesk.spec:spec.string-2.0.0", 
+    "inst": false, 
+    "name": "Export Type to IFC As", 
+    "storage": "String"
+   }, 
+   {
+    "bip": "RBS_ELEC_CALC_COEFFICIENT_UTILIZATION", 
+    "dtype": "autodesk.spec:spec.bool-1.0.0", 
+    "inst": true, 
+    "name": "Calculate Coefficient of Utilization", 
+    "storage": "Integer"
+   }, 
+   {
+    "bip": "ALL_MODEL_MANUFACTURER", 
+    "dtype": "autodesk.spec:spec.string-2.0.0", 
+    "inst": false, 
+    "name": "Manufacturer", 
+    "storage": "String"
+   }, 
+   {
+    "bip": "KEYNOTE_PARAM", 
+    "dtype": "autodesk.spec:spec.string-2.0.0", 
+    "inst": false, 
+    "name": "Keynote", 
+    "storage": "String"
+   }, 
+   {
+    "bip": "FBX_LIGHT_INITIAL_COLOR_CTRL", 
+    "dtype": "", 
+    "inst": false, 
+    "name": "Initial Color", 
+    "storage": "None"
+   }
+  ], 
+  "fm_before": [
+   "Export Type to IFC As", 
+   "Type Image", 
+   "Lamp", 
+   "Type IFC Predefined Type", 
+   "URL", 
+   "Default Elevation", 
+   "Type Comments", 
+   "Wattage Comments", 
+   "Description", 
+   "Model", 
+   "Cost", 
+   "Assembly Code", 
+   "Coefficient of Utilization", 
+   "Manufacturer", 
+   "Apparent Power", 
+   "Calculate Coefficient of Utilization", 
+   "Keynote"
+  ], 
+  "placement": "WorkPlaneBased", 
+  "placement_after": "WorkPlaneBased", 
+  "set_result": "True", 
+  "sources_after": [
+   {
+    "bbox": [
+     -2.0052338327950001, 
+     -1.0052338327949999, 
+     -1.0052338327949999, 
+     2.0052338327950001, 
+     1.0052338327949999, 
+     1.0052338327949999
+    ], 
+    "class": "Element", 
+    "id": "3202"
+   }
+  ]
+ }, 
+ "C": {
+  "fm": [
+   {
+    "bip": "FBX_LIGHT_SOURCE_DIAMETER", 
+    "dtype": "autodesk.spec.aec:length-2.0.1", 
+    "inst": false, 
+    "name": "Light Source Symbol Size", 
+    "storage": "Double"
+   }, 
+   {
+    "bip": "FBX_LIGHT_DIMMING_LIGHT_COLOR", 
+    "dtype": "", 
+    "inst": false, 
+    "name": "Dimming Lamp Color Temperature Shift", 
+    "storage": "Integer"
+   }, 
+   {
+    "bip": "ALL_MODEL_TYPE_IMAGE", 
+    "dtype": "autodesk.spec.reference:image-1.0.0", 
+    "inst": false, 
+    "name": "Type Image", 
+    "storage": "ElementId"
+   }, 
+   {
+    "bip": "FBX_LIGHT_INITIAL_COLOR_CTRL", 
+    "dtype": "", 
+    "inst": false, 
+    "name": "Initial Color", 
+    "storage": "None"
+   }, 
+   {
+    "bip": "ALL_MODEL_DESCRIPTION", 
+    "dtype": "autodesk.spec:spec.string-2.0.0", 
+    "inst": false, 
+    "name": "Description", 
+    "storage": "String"
+   }, 
+   {
+    "bip": "UNIFORMAT_CODE", 
+    "dtype": "autodesk.spec:spec.string-2.0.0", 
+    "inst": false, 
+    "name": "Assembly Code", 
+    "storage": "String"
+   }, 
+   {
+    "bip": "LIGHTING_FIXTURE_WATTAGE", 
+    "dtype": "autodesk.spec:spec.string-2.0.0", 
+    "inst": false, 
+    "name": "Wattage Comments", 
+    "storage": "String"
+   }, 
+   {
+    "bip": "DOOR_COST", 
+    "dtype": "autodesk.spec.measurable:currency-2.0.0", 
+    "inst": false, 
+    "name": "Cost", 
+    "storage": "Double"
+   }, 
+   {
+    "bip": "ALL_MODEL_URL", 
+    "dtype": "autodesk.spec.string:url-2.0.0", 
+    "inst": false, 
+    "name": "URL", 
+    "storage": "String"
+   }, 
+   {
+    "bip": "ALL_MODEL_TYPE_COMMENTS", 
+    "dtype": "autodesk.spec:spec.string-2.0.0", 
+    "inst": false, 
+    "name": "Type Comments", 
+    "storage": "String"
+   }, 
+   {
+    "bip": "ALL_MODEL_MANUFACTURER", 
+    "dtype": "autodesk.spec:spec.string-2.0.0", 
+    "inst": false, 
+    "name": "Manufacturer", 
+    "storage": "String"
+   }, 
+   {
+    "bip": "IFC_EXPORT_ELEMENT_TYPE_AS", 
+    "dtype": "autodesk.spec:spec.string-2.0.0", 
+    "inst": false, 
+    "name": "Export Type to IFC As", 
+    "storage": "String"
+   }, 
+   {
+    "bip": "FBX_LIGHT_COLOR_FILTER", 
+    "dtype": "", 
+    "inst": false, 
+    "name": "Color Filter", 
+    "storage": "Integer"
+   }, 
+   {
+    "bip": "LIGHTING_FIXTURE_LAMP", 
+    "dtype": "autodesk.spec:spec.string-2.0.0", 
+    "inst": false, 
+    "name": "Lamp", 
+    "storage": "String"
+   }, 
+   {
+    "bip": "FBX_LIGHT_LOSS_FACTOR_CTRL", 
+    "dtype": "", 
+    "inst": false, 
+    "name": "Light Loss Factor", 
+    "storage": "None"
+   }, 
+   {
+    "bip": "FAMILY_WPB_DEFAULT_ELEVATION", 
+    "dtype": "autodesk.spec.aec:length-2.0.1", 
+    "inst": false, 
+    "name": "Default Elevation", 
+    "storage": "Double"
+   }, 
+   {
+    "bip": "RBS_ELEC_APPARENT_LOAD", 
+    "dtype": "autodesk.spec.aec.electrical:apparentPower-2.0.0", 
+    "inst": false, 
+    "name": "Apparent Power", 
+    "storage": "Double"
+   }, 
+   {
+    "bip": "FBX_LIGHT_INITIAL_INTENSITY", 
+    "dtype": "", 
+    "inst": false, 
+    "name": "Initial Intensity", 
+    "storage": "None"
+   }, 
+   {
+    "bip": "ALL_MODEL_MODEL", 
+    "dtype": "autodesk.spec:spec.string-2.0.0", 
+    "inst": false, 
+    "name": "Model", 
+    "storage": "String"
+   }, 
+   {
+    "bip": "IFC_EXPORT_PREDEFINEDTYPE_TYPE", 
+    "dtype": "autodesk.spec:spec.string-2.0.0", 
+    "inst": false, 
+    "name": "Type IFC Predefined Type", 
+    "storage": "String"
+   }, 
+   {
+    "bip": "RBS_ROOM_COEFFICIENT_UTILIZATION", 
+    "dtype": "autodesk.spec.aec:number-2.0.0", 
+    "inst": true, 
+    "name": "Coefficient of Utilization", 
+    "storage": "Double"
+   }, 
+   {
+    "bip": "KEYNOTE_PARAM", 
+    "dtype": "autodesk.spec:spec.string-2.0.0", 
+    "inst": false, 
+    "name": "Keynote", 
+    "storage": "String"
+   }, 
+   {
+    "bip": "RBS_ELEC_CALC_COEFFICIENT_UTILIZATION", 
+    "dtype": "autodesk.spec:spec.bool-1.0.0", 
+    "inst": true, 
+    "name": "Calculate Coefficient of Utilization", 
+    "storage": "Integer"
+   }
+  ], 
+  "light_params": {
+   "Color Filter": {
+    "double": null, 
+    "found": true, 
+    "inst": false, 
+    "int": 16777215, 
+    "vs": null
+   }, 
+   "Dimming Lamp Color Temperature Shift": {
+    "double": null, 
+    "found": true, 
+    "inst": false, 
+    "int": 0, 
+    "vs": null
+   }, 
+   "FBX_LIGHT_INITIAL_COLOR_TEMPERATURE": null, 
+   "FBX_LIGHT_INITIAL_INTENSITY": "Initial Intensity", 
+   "FBX_LIGHT_LIMUNOUS_FLUX": null, 
+   "FBX_LIGHT_LIMUNOUS_INTENSITY": null, 
+   "FBX_LIGHT_WATTAGE": null, 
+   "Initial Color": {
+    "double": null, 
+    "found": true, 
+    "inst": false, 
+    "int": null, 
+    "vs": null
+   }, 
+   "Initial Intensity": {
+    "double": null, 
+    "found": true, 
+    "inst": false, 
+    "int": null, 
+    "vs": null
+   }, 
+   "Light Loss Factor": {
+    "double": null, 
+    "found": true, 
+    "inst": false, 
+    "int": null, 
+    "vs": null
+   }
+  }, 
+  "placement_after": "WorkPlaneBased", 
+  "placement_before": "OneLevelBased", 
+  "ref_planes": [
+   [
+    "Light Source Axis (F/B)", 
+    [
+     0.0, 
+     -1.0, 
+     6.1230317691118863e-17
+    ], 
+    [
+     5.0, 
+     0.0, 
+     -2.0
+    ]
+   ], 
+   [
+    "Reference Plane", 
+    [
+     0.0, 
+     0.0, 
+     1.0
+    ], 
+    [
+     3.0071788941480175, 
+     -2.4573151565228173, 
+     0.0
+    ]
+   ], 
+   [
+    "Light Source Axis (L/R)", 
+    [
+     1.0, 
+     0.0, 
+     -1.0275282144242559e-14
+    ], 
+    [
+     0.0, 
+     5.0, 
+     -2.0
+    ]
+   ], 
+   [
+    "Light Source Elevation", 
+    [
+     -3.2213722158057525e-15, 
+     -0.0, 
+     -1.0
+    ], 
+    [
+     5.6360403149819440, 
+     3.8193539855909435, 
+     4.4999999999999769
+    ]
+   ]
+  ], 
+  "set": "[True, True]", 
+  "sources": [
+   {
+    "bbox": [
+     -1.0052338327949331, 
+     -1.0052338327949994, 
+     3.4999999999999947, 
+     1.0052338327950667, 
+     1.0052338327950003, 
+     5.4999999999999947
+    ], 
+    "class": "Element", 
+    "id": "1906"
+   }
+  ], 
+  "src_can_move_test": {
+   "after": [
+    {
+     "bbox": [
+      -1.0052338327949331, 
+      -1.0052338327949994, 
+      4.4999999999999947, 
+      1.0052338327950667, 
+      1.0052338327950003, 
+      6.4999999999999947
+     ], 
+     "class": "Element", 
+     "id": "1906"
+    }
+   ]
+  }
+ }, 
+ "done": true
+}

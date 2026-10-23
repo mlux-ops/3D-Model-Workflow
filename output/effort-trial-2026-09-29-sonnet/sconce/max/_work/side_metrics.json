@@ -1,0 +1,70 @@
+{
+ "photo_px_per_in": 241.71428571428572,
+ "scale": 1.0119617224880382,
+ "backplate_back_face_x_px": 578,
+ "backplate_center_row_px": 1202.0,
+ "silhouette_iou": 0.8164563088336462,
+ "body_top_edge_row_px": [
+  688.0,
+  681.0
+ ],
+ "body_bottom_edge_row_px": [
+  1717.0,
+  1723.0
+ ],
+ "body_top_dev_in": -0.028959810874704492,
+ "body_bottom_dev_in": 0.02482269503546099,
+ "body_diameter_in": {
+  "photo": 4.261229314420803,
+  "mine": 4.3150118203309695
+ },
+ "upper_cut_face": {
+  "angle_deg": {
+   "photo": 15.633274708703997,
+   "mine": 17.588761608062207
+  },
+  "x_at_row800_dev_in": -0.13297809967665916
+ },
+ "lower_cut_face": {
+  "angle_deg": {
+   "photo": 19.018276847191625,
+   "mine": 17.388688693252412
+  },
+  "x_at_row1600_dev_in": -0.15688868953930035
+ },
+ "globe_circle_fit": {
+  "photo": {
+   "diameter_in": 3.473630766239196,
+   "centre_out_from_back_face_in": 3.8842220633340885,
+   "centre_below_plate_centre_in": 0.44475642590738335
+  },
+  "mine": {
+   "diameter_in": 3.4972739430703306,
+   "centre_out_from_back_face_in": 3.749351210107528,
+   "centre_below_plate_centre_in": 0.4430846926122235
+  }
+ },
+ "far_right_x_dev_in": -0.12411347517730496,
+ "depth_in": {
+  "photo": 5.626477541371158,
+  "mine": 5.502364066193853
+ },
+ "backplate_thickness_in": {
+  "photo": 0.2565011820330969,
+  "mine": 0.13238770685579196
+ },
+ "registered_on_plate_front_face": {
+  "plate_thickness_difference_in": 0.12411347517730496,
+  "upper_cut_face_x_dev_in": -0.008864624499354198,
+  "lower_cut_face_x_dev_in": -0.03277521436199539,
+  "globe_centre_out_from_plate_front_in": {
+   "photo": 3.627720881300992,
+   "mine": 3.616963503251736
+  },
+  "depth_from_plate_front_in": {
+   "photo": 5.369976359338061,
+   "mine": 5.369976359338061
+  }
+ },
+ "note": "registration: scale and vertical centre from backplate height, x from back face; nothing else fitted"
+}

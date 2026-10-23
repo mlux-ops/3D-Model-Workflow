@@ -1,0 +1,13 @@
+{
+  "status": "reviewed by the builder (not blind); passes with listed deviations",
+  "pass": true,
+  "method": "Own visual review of every view in views/ and of views/_REVIEW_compare.jpg. Angled view: the black-variant photo was registered to the model with a least-squares camera fit (source/fit_camera_black2.py; 7 free camera parameters, cut angle fixed at 18.18 deg), the fitted views were rendered from Revit with the walls hidden (source/render_hosted_match.py) and overlaid on the photo channel-wise (work/match_overlay.png). Side and front: compared with the white-variant photos, with Show Disc = No (the white photos show no 8 in disc). The comparison is therefore not blind, and the angled match is a fit, not an independent check of the camera.",
+  "notes": [
+    "Angled (black photo), fit camera C: disc rim RMS 3.09 px, shade sphere RMS 1.57 px at 98.8 px/in, i.e. about 0.03 in and 0.016 in. Disc size, tilt, position and the shade's size, angle and position overlay the photo to a few pixels. The overlay is the evidence; rerun source/fit_camera_black2.py to reproduce.",
+    "Angled: the backplate/drum silhouette at the left is off by RMS about 15 px (0.15 in); the photo's drum reaches further left than the model's (cyan fringe in work/match_overlay.png). Cause, from the side-photo measurements: the photo drum is about 0.35 in longer at mid-length (about 2.2 in against 1.85 in) and is cut at about 15.6 deg, against 18.18 deg here (the published 8.00 W x 7.63 H fix the disc tilt near 18 deg for a flat circular disc). The model's drum is therefore a little short.",
+    "The camera pose (roll -14.5 deg, elevation 6.5 deg for fit C; roll 0, elevation -12.4 deg for level fit D) is degenerate: both fit the disc and shade equally well. Camera C fits best, camera D is the level-camera reading.",
+    "Shade apex: 5.66 in from the wall in the photo against 5.50 published; the model follows the published depth, so the shade sits about 0.16 in closer to the wall than in the photo. Shade sphere centre: photo 3.92 in from the plate back and 0.44 in below the plate centre; model 3.75 and 0.58.",
+    "Side and front views: body, socket and shade follow the same layout as the white photos; the white photos have no disc, so those comparisons use Show Disc = No. Revit views are parallel projection while the photos show mild perspective (fitted k about 0.011 per inch).",
+    "Shading, not photo-realism: the photo's shade glows (lit) and the disc shows brushed gradients; the model is a plain shaded render with the template's grey host backdrop in family views. The material appearance was checked in Shading only."
+  ]
+}

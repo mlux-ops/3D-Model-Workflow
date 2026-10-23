@@ -1,0 +1,1375 @@
+{
+  "lightish_bips": [
+    "ANALYTICAL_VISUAL_LIGHT_TRANSMITTANCE", 
+    "DEFAULT_CONSTRUCTION_MASS_SKYLIGHT", 
+    "ENERGY_ANALYSIS_PERCENTAGE_SKYLIGHTS", 
+    "ENERGY_ANALYSIS_SKYLIGHT_WIDTH", 
+    "FBX_ASSET_TYPE", 
+    "FBX_LIGHT_AT_A_DISTANCE", 
+    "FBX_LIGHT_BALLAST_LOSS", 
+    "FBX_LIGHT_COLOR_FILTER", 
+    "FBX_LIGHT_DIMMING_LIGHT_COLOR", 
+    "FBX_LIGHT_EFFICACY", 
+    "FBX_LIGHT_EMIT_CIRCLE_DIAMETER", 
+    "FBX_LIGHT_EMIT_LINE_LENGTH", 
+    "FBX_LIGHT_EMIT_RECTANGLE_LENGTH", 
+    "FBX_LIGHT_EMIT_RECTANGLE_WIDTH", 
+    "FBX_LIGHT_EMIT_SHAPE_VISIBLE", 
+    "FBX_LIGHT_ILLUMINANCE", 
+    "FBX_LIGHT_INITIAL_COLOR_CTRL", 
+    "FBX_LIGHT_INITIAL_COLOR_NAME", 
+    "FBX_LIGHT_INITIAL_COLOR_TEMPERATURE", 
+    "FBX_LIGHT_INITIAL_INTENSITY", 
+    "FBX_LIGHT_INITIAL_INTENSITY_INPUT_METHOD", 
+    "FBX_LIGHT_LAMP_LUMEN_DEPR", 
+    "FBX_LIGHT_LAMP_TILT_LOSS", 
+    "FBX_LIGHT_LIMUNOUS_FLUX", 
+    "FBX_LIGHT_LIMUNOUS_INTENSITY", 
+    "FBX_LIGHT_LOSS_FACTOR_CTRL", 
+    "FBX_LIGHT_LOSS_FACTOR_METHOD", 
+    "FBX_LIGHT_LUMENAIRE_DIRT", 
+    "FBX_LIGHT_PHOTOMETRICS", 
+    "FBX_LIGHT_PHOTOMETRICS_FAM", 
+    "FBX_LIGHT_PHOTOMETRIC_FILE", 
+    "FBX_LIGHT_PHOTOMETRIC_FILE_CACHE", 
+    "FBX_LIGHT_SOURCE_DIAMETER", 
+    "FBX_LIGHT_SOURCE_LENGTH", 
+    "FBX_LIGHT_SPOT_BEAM_ANGLE", 
+    "FBX_LIGHT_SPOT_FIELD_ANGLE", 
+    "FBX_LIGHT_SPOT_TILT_ANGLE", 
+    "FBX_LIGHT_SURFACE_LOSS", 
+    "FBX_LIGHT_TEMPERATURE_LOSS", 
+    "FBX_LIGHT_TOTAL_LIGHT_LOSS", 
+    "FBX_LIGHT_VOLTAGE_LOSS", 
+    "FBX_LIGHT_WATTAGE", 
+    "GRAPHIC_DISPLAY_OPTIONS_LIGHTING", 
+    "LIGHTING_FIXTURE_LAMP", 
+    "LIGHTING_FIXTURE_LIGHT_EMITTER", 
+    "LIGHTING_FIXTURE_WATTAGE", 
+    "MASS_DATA_MASS_SKYLIGHT_AREA", 
+    "MASS_DATA_PERCENTAGE_SKYLIGHTS", 
+    "MASS_DATA_SKYLIGHT_WIDTH", 
+    "PHY_MATERIAL_PARAM_LIGHT_WEIGHT", 
+    "RBS_ELEC_PANEL_TOTALESTLOAD_LIGHT_PARAM", 
+    "RBS_ELEC_PANEL_TOTALLOAD_LIGHT_PARAM", 
+    "RBS_ELEC_ROOM_AVERAGE_ILLUMINATION", 
+    "RBS_ELEC_ROOM_LIGHTING_CALC_LUMINAIREPLANE", 
+    "RBS_ELEC_ROOM_LIGHTING_CALC_WORKPLANE", 
+    "RBS_HVACLOAD_SKYLIGHT_AREA_PARAM", 
+    "RBS_HVACLOAD_SKYLIGHT_COOLING_LOAD_PARAM", 
+    "ROOM_ACTUAL_LIGHTING_LOAD_PARAM", 
+    "ROOM_ACTUAL_LIGHTING_LOAD_PER_AREA_PARAM", 
+    "ROOM_BASE_LIGHTING_LOAD_ON_PARAM", 
+    "ROOM_DESIGN_LIGHTING_LOAD_PARAM", 
+    "ROOM_DESIGN_LIGHTING_LOAD_PER_AREA_PARAM", 
+    "ROOM_LIGHTING_LOAD_UNITS_PARAM", 
+    "ROOM_PLENUM_LIGHTING_PARAM", 
+    "SPACE_LIGHTING_LOAD_PARAM", 
+    "SPACE_LIGHTING_LOAD_PER_AREA_PARAM", 
+    "SPACE_LIGHTING_SCHEDULE_PARAM", 
+    "THERMAL_MATERIAL_PARAM_TRANSMITS_LIGHT", 
+    "VIEW_SOLARSTUDY_IS_LIGHTING_STUDY_TYPE", 
+    "VIEW_SOLARSTUDY_LIGHTING_ALTITUDE_TEXT", 
+    "VIEW_SOLARSTUDY_LIGHTING_ALTITUDE_VALUE", 
+    "VIEW_SOLARSTUDY_LIGHTING_AZIMUTH_TEXT", 
+    "VIEW_SOLARSTUDY_LIGHTING_AZIMUTH_VALUE", 
+    "VIEW_SOLARSTUDY_LIGHTING_PRESET_INDEX"
+  ], 
+  "ff_visible_prop": "True", 
+  "ff_IS_VISIBLE_PARAM": {
+    "ro": false, 
+    "name": "Visible", 
+    "value": 1, 
+    "vs": "Yes", 
+    "storage": "Integer", 
+    "bip": "IS_VISIBLE_PARAM"
+  }, 
+  "subcats": [
+    "<Hidden Lines>", 
+    "Light Source"
+  ], 
+  "lightish_bics": [
+    "OST_LightLine", 
+    "OST_LightingDeviceTags", 
+    "OST_LightingDevices", 
+    "OST_LightingFixtureSource", 
+    "OST_LightingFixtureTags", 
+    "OST_LightingFixtures", 
+    "OST_LightingFixturesHiddenLines", 
+    "OST_Lights"
+  ], 
+  "build": "25.4.50.35", 
+  "ref_planes": [
+    {
+      "name": "Center (Front/Back)", 
+      "normal": [
+        0.0, 
+        -1.0, 
+        -1.382799582304306e-14
+      ], 
+      "bubble": [
+        5.0, 
+        0.0, 
+        -2.0
+      ], 
+      "isref": "Center (Front/Back)", 
+      "free": [
+        -5.0, 
+        0.0, 
+        -2.0
+      ]
+    }, 
+    {
+      "name": "Reference Plane", 
+      "normal": [
+        -1.2419827854319071e-16, 
+        -6.7875947383744017e-15, 
+        1.0
+      ], 
+      "bubble": [
+        5.4454507495136353, 
+        -6.6423607081427809, 
+        -5.0546828253683215e-14
+      ], 
+      "isref": "Not a Reference", 
+      "free": [
+        -5.0, 
+        -6.6423607081427809, 
+        -5.1844135255380487e-14
+      ]
+    }, 
+    {
+      "name": "Center (Left/Right)", 
+      "normal": [
+        1.0, 
+        0.0, 
+        -1.0275282144242559e-14
+      ], 
+      "bubble": [
+        0.0, 
+        5.0, 
+        -2.0
+      ], 
+      "isref": "Center (Left/Right)", 
+      "free": [
+        0.0, 
+        -5.0, 
+        -2.0
+      ]
+    }
+  ], 
+  "params_after_category": [
+    [
+      "Default Elevation", 
+      "Double"
+    ], 
+    [
+      "Type Comments", 
+      "String"
+    ], 
+    [
+      "Description", 
+      "String"
+    ], 
+    [
+      "Lamp", 
+      "String"
+    ], 
+    [
+      "Type Image", 
+      "ElementId"
+    ], 
+    [
+      "Model", 
+      "String"
+    ], 
+    [
+      "Calculate Coefficient of Utilization", 
+      "Integer"
+    ], 
+    [
+      "Type IFC Predefined Type", 
+      "String"
+    ], 
+    [
+      "Wattage Comments", 
+      "String"
+    ], 
+    [
+      "Coefficient of Utilization", 
+      "Double"
+    ], 
+    [
+      "Apparent Power", 
+      "Double"
+    ], 
+    [
+      "Assembly Code", 
+      "String"
+    ], 
+    [
+      "Export Type to IFC As", 
+      "String"
+    ], 
+    [
+      "Cost", 
+      "Double"
+    ], 
+    [
+      "URL", 
+      "String"
+    ], 
+    [
+      "Keynote", 
+      "String"
+    ], 
+    [
+      "Manufacturer", 
+      "String"
+    ]
+  ], 
+  "light_sources": [], 
+  "version": "2025", 
+  "ff_params": [
+    {
+      "ro": true, 
+      "name": "Category", 
+      "value": "-1", 
+      "vs": "", 
+      "storage": "ElementId", 
+      "bip": "ELEM_CATEGORY_PARAM_MT"
+    }, 
+    {
+      "ro": true, 
+      "name": "Category", 
+      "value": "-1", 
+      "vs": "", 
+      "storage": "ElementId", 
+      "bip": "ELEM_CATEGORY_PARAM"
+    }, 
+    {
+      "ro": true, 
+      "name": "Design Option", 
+      "value": "-1", 
+      "vs": "-1", 
+      "storage": "ElementId", 
+      "bip": "DESIGN_OPTION_ID"
+    }, 
+    {
+      "ro": false, 
+      "name": "Visible", 
+      "value": 1, 
+      "vs": "Yes", 
+      "storage": "Integer", 
+      "bip": "IS_VISIBLE_PARAM"
+    }, 
+    {
+      "ro": false, 
+      "name": "Subcategory", 
+      "value": "-1", 
+      "vs": "<None>", 
+      "storage": "ElementId", 
+      "bip": "FAMILY_ELEM_SUBCATEGORY"
+    }, 
+    {
+      "ro": false, 
+      "name": "Material", 
+      "value": "-1", 
+      "vs": "<By Category>", 
+      "storage": "ElementId", 
+      "bip": "MATERIAL_ID_PARAM"
+    }, 
+    {
+      "ro": true, 
+      "name": "Family Name", 
+      "value": null, 
+      "vs": null, 
+      "storage": "String", 
+      "bip": "SYMBOL_FAMILY_NAME_PARAM"
+    }, 
+    {
+      "ro": true, 
+      "name": "Type Name", 
+      "value": null, 
+      "vs": null, 
+      "storage": "String", 
+      "bip": "ALL_MODEL_TYPE_NAME"
+    }, 
+    {
+      "ro": false, 
+      "name": "Visibility/Graphics Overrides", 
+      "value": 57406, 
+      "vs": null, 
+      "storage": "Integer", 
+      "bip": "GEOM_VISIBILITY_PARAM"
+    }, 
+    {
+      "ro": false, 
+      "name": "Solid/Void", 
+      "value": 0, 
+      "vs": "Solid", 
+      "storage": "Integer", 
+      "bip": "ELEMENT_IS_CUTTING"
+    }, 
+    {
+      "ro": false, 
+      "name": "Show Shape Handles", 
+      "value": 1, 
+      "vs": "Yes", 
+      "storage": "Integer", 
+      "bip": "OFFSETFACES_SHOW_SHAPE_HANDLES"
+    }
+  ], 
+  "placement_type": "WorkPlaneBased", 
+  "category_now": "Lighting Fixtures", 
+  "done": true, 
+  "elements_after_category": [
+    [
+      "Level", 
+      "Levels", 
+      "21"
+    ], 
+    [
+      "ViewPlan", 
+      "Views", 
+      "23"
+    ], 
+    [
+      "ViewPlan", 
+      "Views", 
+      "27"
+    ], 
+    [
+      "ViewSection", 
+      "Views", 
+      "31"
+    ], 
+    [
+      "ViewSection", 
+      "Views", 
+      "35"
+    ], 
+    [
+      "ViewSection", 
+      "Views", 
+      "39"
+    ], 
+    [
+      "ViewSection", 
+      "Views", 
+      "43"
+    ], 
+    [
+      "ReferencePlane", 
+      "Reference Planes", 
+      "46"
+    ], 
+    [
+      "ReferencePlane", 
+      "Reference Planes", 
+      "47"
+    ], 
+    [
+      "ReferencePlane", 
+      "Reference Planes", 
+      "48"
+    ], 
+    [
+      "Material", 
+      "Materials", 
+      "238"
+    ], 
+    [
+      "Material", 
+      "Materials", 
+      "239"
+    ], 
+    [
+      "Material", 
+      "Materials", 
+      "240"
+    ], 
+    [
+      "Material", 
+      "Materials", 
+      "241"
+    ], 
+    [
+      "Element", 
+      "Cameras", 
+      "461"
+    ], 
+    [
+      "Element", 
+      "Section Boxes", 
+      "462"
+    ], 
+    [
+      "View3D", 
+      "Views", 
+      "463"
+    ], 
+    [
+      "Element", 
+      "Work Plane Grid", 
+      "693"
+    ], 
+    [
+      "Element", 
+      "Work Plane Grid", 
+      "694"
+    ], 
+    [
+      "Element", 
+      "Work Plane Grid", 
+      "695"
+    ], 
+    [
+      "Element", 
+      "Work Plane Grid", 
+      "696"
+    ], 
+    [
+      "Element", 
+      "Work Plane Grid", 
+      "697"
+    ], 
+    [
+      "Element", 
+      "Work Plane Grid", 
+      "698"
+    ], 
+    [
+      "Element", 
+      "Work Plane Grid", 
+      "699"
+    ], 
+    [
+      "Element", 
+      "Work Plane Grid", 
+      "700"
+    ], 
+    [
+      "LoadCase", 
+      "Structural Load Cases", 
+      "1207"
+    ], 
+    [
+      "LoadCase", 
+      "Structural Load Cases", 
+      "1209"
+    ], 
+    [
+      "LoadCase", 
+      "Structural Load Cases", 
+      "1211"
+    ], 
+    [
+      "LoadCase", 
+      "Structural Load Cases", 
+      "1213"
+    ], 
+    [
+      "LoadCase", 
+      "Structural Load Cases", 
+      "1215"
+    ], 
+    [
+      "LoadCase", 
+      "Structural Load Cases", 
+      "1217"
+    ], 
+    [
+      "LoadCase", 
+      "Structural Load Cases", 
+      "1219"
+    ], 
+    [
+      "LoadCase", 
+      "Structural Load Cases", 
+      "1221"
+    ], 
+    [
+      "Material", 
+      "Materials", 
+      "1223"
+    ], 
+    [
+      "SunAndShadowSettings", 
+      "Sun Path", 
+      "1267"
+    ], 
+    [
+      "ModelLine", 
+      "<Sketch>", 
+      "1539"
+    ], 
+    [
+      "ModelLine", 
+      "<Sketch>", 
+      "1540"
+    ], 
+    [
+      "ModelLine", 
+      "<Sketch>", 
+      "1541"
+    ], 
+    [
+      "ModelLine", 
+      "<Sketch>", 
+      "1542"
+    ], 
+    [
+      "Dimension", 
+      "Constraints", 
+      "1717"
+    ], 
+    [
+      "Dimension", 
+      "Constraints", 
+      "1719"
+    ], 
+    [
+      "InternalOrigin", 
+      "Internal Origin", 
+      "1756"
+    ], 
+    [
+      "Material", 
+      "Materials", 
+      "2092"
+    ], 
+    [
+      "ElectricalDemandFactorDefinition", 
+      "Electrical Demand Factor Definitions", 
+      "2196"
+    ], 
+    [
+      "ElectricalLoadClassification", 
+      "Electrical Load Classifications", 
+      "2197"
+    ], 
+    [
+      "ParameterElement", 
+      "Electrical Load Classification Parameter Element", 
+      "2203"
+    ], 
+    [
+      "ElectricalLoadClassification", 
+      "Electrical Load Classifications", 
+      "2204"
+    ], 
+    [
+      "ParameterElement", 
+      "Electrical Load Classification Parameter Element", 
+      "2210"
+    ], 
+    [
+      "ElectricalLoadClassification", 
+      "Electrical Load Classifications", 
+      "2211"
+    ], 
+    [
+      "ParameterElement", 
+      "Electrical Load Classification Parameter Element", 
+      "2217"
+    ], 
+    [
+      "ElectricalLoadClassification", 
+      "Electrical Load Classifications", 
+      "2218"
+    ], 
+    [
+      "ParameterElement", 
+      "Electrical Load Classification Parameter Element", 
+      "2224"
+    ], 
+    [
+      "ElectricalLoadClassification", 
+      "Electrical Load Classifications", 
+      "2225"
+    ], 
+    [
+      "ParameterElement", 
+      "Electrical Load Classification Parameter Element", 
+      "2231"
+    ], 
+    [
+      "ElectricalLoadClassification", 
+      "Electrical Load Classifications", 
+      "2232"
+    ], 
+    [
+      "ParameterElement", 
+      "Electrical Load Classification Parameter Element", 
+      "2238"
+    ], 
+    [
+      "ParameterElement", 
+      "Electrical Load Classification Parameter Element", 
+      "2280"
+    ], 
+    [
+      "ParameterElement", 
+      "Electrical Load Classification Parameter Element", 
+      "2281"
+    ], 
+    [
+      "ParameterElement", 
+      "Electrical Load Classification Parameter Element", 
+      "2282"
+    ], 
+    [
+      "ParameterElement", 
+      "Electrical Load Classification Parameter Element", 
+      "2283"
+    ], 
+    [
+      "ParameterElement", 
+      "Electrical Load Classification Parameter Element", 
+      "2284"
+    ], 
+    [
+      "ParameterElement", 
+      "Electrical Load Classification Parameter Element", 
+      "2285"
+    ], 
+    [
+      "ParameterElement", 
+      "Electrical Load Classification Parameter Element", 
+      "2286"
+    ], 
+    [
+      "ParameterElement", 
+      "Electrical Load Classification Parameter Element", 
+      "2287"
+    ], 
+    [
+      "ParameterElement", 
+      "Electrical Load Classification Parameter Element", 
+      "2288"
+    ], 
+    [
+      "ParameterElement", 
+      "Electrical Load Classification Parameter Element", 
+      "2289"
+    ], 
+    [
+      "ParameterElement", 
+      "Electrical Load Classification Parameter Element", 
+      "2290"
+    ], 
+    [
+      "ParameterElement", 
+      "Electrical Load Classification Parameter Element", 
+      "2291"
+    ], 
+    [
+      "ParameterElement", 
+      "Electrical Load Classification Parameter Element", 
+      "2292"
+    ], 
+    [
+      "ParameterElement", 
+      "Electrical Load Classification Parameter Element", 
+      "2293"
+    ], 
+    [
+      "ParameterElement", 
+      "Electrical Load Classification Parameter Element", 
+      "2294"
+    ], 
+    [
+      "ParameterElement", 
+      "Electrical Load Classification Parameter Element", 
+      "2295"
+    ], 
+    [
+      "ParameterElement", 
+      "Electrical Load Classification Parameter Element", 
+      "2296"
+    ], 
+    [
+      "ParameterElement", 
+      "Electrical Load Classification Parameter Element", 
+      "2297"
+    ], 
+    [
+      "ParameterElement", 
+      "Electrical Load Classification Parameter Element", 
+      "2298"
+    ], 
+    [
+      "ParameterElement", 
+      "Electrical Load Classification Parameter Element", 
+      "2299"
+    ], 
+    [
+      "ParameterElement", 
+      "Electrical Load Classification Parameter Element", 
+      "2300"
+    ], 
+    [
+      "ParameterElement", 
+      "Electrical Load Classification Parameter Element", 
+      "2301"
+    ], 
+    [
+      "ParameterElement", 
+      "Electrical Load Classification Parameter Element", 
+      "2302"
+    ], 
+    [
+      "ParameterElement", 
+      "Electrical Load Classification Parameter Element", 
+      "2303"
+    ], 
+    [
+      "ParameterElement", 
+      "Electrical Load Classification Parameter Element", 
+      "2304"
+    ], 
+    [
+      "ParameterElement", 
+      "Electrical Load Classification Parameter Element", 
+      "2305"
+    ], 
+    [
+      "ParameterElement", 
+      "Electrical Load Classification Parameter Element", 
+      "2306"
+    ], 
+    [
+      "ParameterElement", 
+      "Electrical Load Classification Parameter Element", 
+      "2307"
+    ], 
+    [
+      "ParameterElement", 
+      "Electrical Load Classification Parameter Element", 
+      "2308"
+    ], 
+    [
+      "ParameterElement", 
+      "Electrical Load Classification Parameter Element", 
+      "2309"
+    ], 
+    [
+      "Material", 
+      "Materials", 
+      "3101"
+    ]
+  ], 
+  "views": [
+    [
+      "Ref. Level", 
+      "FloorPlan"
+    ], 
+    [
+      "Ref. Level", 
+      "CeilingPlan"
+    ], 
+    [
+      "Back", 
+      "Elevation"
+    ], 
+    [
+      "Front", 
+      "Elevation"
+    ], 
+    [
+      "Left", 
+      "Elevation"
+    ], 
+    [
+      "Right", 
+      "Elevation"
+    ], 
+    [
+      "Project View", 
+      "ProjectBrowser"
+    ], 
+    [
+      "View 1", 
+      "ThreeD"
+    ]
+  ], 
+  "family_params": [
+    {
+      "ro": false, 
+      "name": "Round Connector Dimension", 
+      "value": 1, 
+      "vs": "Use Diameter", 
+      "storage": "Integer", 
+      "bip": "FAMILY_ROUNDCONNECTOR_DIMENSIONTYPE"
+    }, 
+    {
+      "ro": false, 
+      "name": "Light Source", 
+      "value": 0, 
+      "vs": "No", 
+      "storage": "Integer", 
+      "bip": "FBX_ASSET_TYPE"
+    }, 
+    {
+      "ro": true, 
+      "name": "Category", 
+      "value": "-1", 
+      "vs": "", 
+      "storage": "ElementId", 
+      "bip": "ELEM_CATEGORY_PARAM_MT"
+    }, 
+    {
+      "ro": true, 
+      "name": "Category", 
+      "value": "-1", 
+      "vs": "", 
+      "storage": "ElementId", 
+      "bip": "ELEM_CATEGORY_PARAM"
+    }, 
+    {
+      "ro": false, 
+      "name": "Room Calculation Point", 
+      "value": 0, 
+      "vs": "No", 
+      "storage": "Integer", 
+      "bip": "ROOM_CALCULATION_POINT"
+    }, 
+    {
+      "ro": false, 
+      "name": "Maintain Annotation Orientation", 
+      "value": 0, 
+      "vs": "No", 
+      "storage": "Integer", 
+      "bip": "FAMILY_ELECTRICAL_MAINTAIN_ANNOTATION_ORIENTATION"
+    }, 
+    {
+      "ro": false, 
+      "name": "Part Type", 
+      "value": 0, 
+      "vs": "Normal", 
+      "storage": "Integer", 
+      "bip": "FAMILY_CONTENT_PART_TYPE"
+    }, 
+    {
+      "ro": true, 
+      "name": "Design Option", 
+      "value": "-1", 
+      "vs": "-1", 
+      "storage": "ElementId", 
+      "bip": "DESIGN_OPTION_ID"
+    }, 
+    {
+      "ro": true, 
+      "name": "Host", 
+      "value": 5, 
+      "vs": "Face", 
+      "storage": "Integer", 
+      "bip": "FAMILY_HOSTING_BEHAVIOR"
+    }, 
+    {
+      "ro": false, 
+      "name": "Shared", 
+      "value": 0, 
+      "vs": "No", 
+      "storage": "Integer", 
+      "bip": "FAMILY_SHARED"
+    }, 
+    {
+      "ro": false, 
+      "name": "Cut with Voids When Loaded", 
+      "value": 0, 
+      "vs": "No", 
+      "storage": "Integer", 
+      "bip": "FAMILY_ALLOW_CUT_WITH_VOIDS"
+    }, 
+    {
+      "ro": true, 
+      "name": "OmniClass Title", 
+      "value": "", 
+      "vs": "", 
+      "storage": "String", 
+      "bip": "OMNICLASS_DESCRIPTION"
+    }, 
+    {
+      "ro": false, 
+      "name": "OmniClass Number", 
+      "value": "", 
+      "vs": "", 
+      "storage": "String", 
+      "bip": "OMNICLASS_CODE"
+    }, 
+    {
+      "ro": true, 
+      "name": "Family Name", 
+      "value": null, 
+      "vs": null, 
+      "storage": "String", 
+      "bip": "SYMBOL_FAMILY_NAME_PARAM"
+    }, 
+    {
+      "ro": true, 
+      "name": "Type Name", 
+      "value": null, 
+      "vs": null, 
+      "storage": "String", 
+      "bip": "ALL_MODEL_TYPE_NAME"
+    }
+  ], 
+  "before_params": [
+    "Assembly Code", 
+    "Cost", 
+    "Model", 
+    "URL", 
+    "Keynote", 
+    "Manufacturer", 
+    "Description", 
+    "Type Image", 
+    "Export Type to IFC As", 
+    "Type Comments", 
+    "Default Elevation", 
+    "Type IFC Predefined Type"
+  ], 
+  "template_category": "Generic Models", 
+  "template_elements": [
+    [
+      "Level", 
+      "Levels", 
+      "21"
+    ], 
+    [
+      "ViewPlan", 
+      "Views", 
+      "23"
+    ], 
+    [
+      "ViewPlan", 
+      "Views", 
+      "27"
+    ], 
+    [
+      "ViewSection", 
+      "Views", 
+      "31"
+    ], 
+    [
+      "ViewSection", 
+      "Views", 
+      "35"
+    ], 
+    [
+      "ViewSection", 
+      "Views", 
+      "39"
+    ], 
+    [
+      "ViewSection", 
+      "Views", 
+      "43"
+    ], 
+    [
+      "ReferencePlane", 
+      "Reference Planes", 
+      "46"
+    ], 
+    [
+      "ReferencePlane", 
+      "Reference Planes", 
+      "47"
+    ], 
+    [
+      "ReferencePlane", 
+      "Reference Planes", 
+      "48"
+    ], 
+    [
+      "Material", 
+      "Materials", 
+      "238"
+    ], 
+    [
+      "Material", 
+      "Materials", 
+      "239"
+    ], 
+    [
+      "Material", 
+      "Materials", 
+      "240"
+    ], 
+    [
+      "Material", 
+      "Materials", 
+      "241"
+    ], 
+    [
+      "Element", 
+      "Cameras", 
+      "461"
+    ], 
+    [
+      "Element", 
+      "Section Boxes", 
+      "462"
+    ], 
+    [
+      "View3D", 
+      "Views", 
+      "463"
+    ], 
+    [
+      "Element", 
+      "Work Plane Grid", 
+      "693"
+    ], 
+    [
+      "Element", 
+      "Work Plane Grid", 
+      "694"
+    ], 
+    [
+      "Element", 
+      "Work Plane Grid", 
+      "695"
+    ], 
+    [
+      "Element", 
+      "Work Plane Grid", 
+      "696"
+    ], 
+    [
+      "Element", 
+      "Work Plane Grid", 
+      "697"
+    ], 
+    [
+      "Element", 
+      "Work Plane Grid", 
+      "698"
+    ], 
+    [
+      "Element", 
+      "Work Plane Grid", 
+      "699"
+    ], 
+    [
+      "Element", 
+      "Work Plane Grid", 
+      "700"
+    ], 
+    [
+      "LoadCase", 
+      "Structural Load Cases", 
+      "1207"
+    ], 
+    [
+      "LoadCase", 
+      "Structural Load Cases", 
+      "1209"
+    ], 
+    [
+      "LoadCase", 
+      "Structural Load Cases", 
+      "1211"
+    ], 
+    [
+      "LoadCase", 
+      "Structural Load Cases", 
+      "1213"
+    ], 
+    [
+      "LoadCase", 
+      "Structural Load Cases", 
+      "1215"
+    ], 
+    [
+      "LoadCase", 
+      "Structural Load Cases", 
+      "1217"
+    ], 
+    [
+      "LoadCase", 
+      "Structural Load Cases", 
+      "1219"
+    ], 
+    [
+      "LoadCase", 
+      "Structural Load Cases", 
+      "1221"
+    ], 
+    [
+      "Material", 
+      "Materials", 
+      "1223"
+    ], 
+    [
+      "SunAndShadowSettings", 
+      "Sun Path", 
+      "1267"
+    ], 
+    [
+      "ModelLine", 
+      "<Sketch>", 
+      "1539"
+    ], 
+    [
+      "ModelLine", 
+      "<Sketch>", 
+      "1540"
+    ], 
+    [
+      "ModelLine", 
+      "<Sketch>", 
+      "1541"
+    ], 
+    [
+      "ModelLine", 
+      "<Sketch>", 
+      "1542"
+    ], 
+    [
+      "Dimension", 
+      "Constraints", 
+      "1717"
+    ], 
+    [
+      "Dimension", 
+      "Constraints", 
+      "1719"
+    ], 
+    [
+      "InternalOrigin", 
+      "Internal Origin", 
+      "1756"
+    ], 
+    [
+      "Material", 
+      "Materials", 
+      "2092"
+    ], 
+    [
+      "ElectricalDemandFactorDefinition", 
+      "Electrical Demand Factor Definitions", 
+      "2196"
+    ], 
+    [
+      "ElectricalLoadClassification", 
+      "Electrical Load Classifications", 
+      "2197"
+    ], 
+    [
+      "ParameterElement", 
+      "Electrical Load Classification Parameter Element", 
+      "2203"
+    ], 
+    [
+      "ElectricalLoadClassification", 
+      "Electrical Load Classifications", 
+      "2204"
+    ], 
+    [
+      "ParameterElement", 
+      "Electrical Load Classification Parameter Element", 
+      "2210"
+    ], 
+    [
+      "ElectricalLoadClassification", 
+      "Electrical Load Classifications", 
+      "2211"
+    ], 
+    [
+      "ParameterElement", 
+      "Electrical Load Classification Parameter Element", 
+      "2217"
+    ], 
+    [
+      "ElectricalLoadClassification", 
+      "Electrical Load Classifications", 
+      "2218"
+    ], 
+    [
+      "ParameterElement", 
+      "Electrical Load Classification Parameter Element", 
+      "2224"
+    ], 
+    [
+      "ElectricalLoadClassification", 
+      "Electrical Load Classifications", 
+      "2225"
+    ], 
+    [
+      "ParameterElement", 
+      "Electrical Load Classification Parameter Element", 
+      "2231"
+    ], 
+    [
+      "ElectricalLoadClassification", 
+      "Electrical Load Classifications", 
+      "2232"
+    ], 
+    [
+      "ParameterElement", 
+      "Electrical Load Classification Parameter Element", 
+      "2238"
+    ], 
+    [
+      "ParameterElement", 
+      "Electrical Load Classification Parameter Element", 
+      "2280"
+    ], 
+    [
+      "ParameterElement", 
+      "Electrical Load Classification Parameter Element", 
+      "2281"
+    ], 
+    [
+      "ParameterElement", 
+      "Electrical Load Classification Parameter Element", 
+      "2282"
+    ], 
+    [
+      "ParameterElement", 
+      "Electrical Load Classification Parameter Element", 
+      "2283"
+    ], 
+    [
+      "ParameterElement", 
+      "Electrical Load Classification Parameter Element", 
+      "2284"
+    ], 
+    [
+      "ParameterElement", 
+      "Electrical Load Classification Parameter Element", 
+      "2285"
+    ], 
+    [
+      "ParameterElement", 
+      "Electrical Load Classification Parameter Element", 
+      "2286"
+    ], 
+    [
+      "ParameterElement", 
+      "Electrical Load Classification Parameter Element", 
+      "2287"
+    ], 
+    [
+      "ParameterElement", 
+      "Electrical Load Classification Parameter Element", 
+      "2288"
+    ], 
+    [
+      "ParameterElement", 
+      "Electrical Load Classification Parameter Element", 
+      "2289"
+    ], 
+    [
+      "ParameterElement", 
+      "Electrical Load Classification Parameter Element", 
+      "2290"
+    ], 
+    [
+      "ParameterElement", 
+      "Electrical Load Classification Parameter Element", 
+      "2291"
+    ], 
+    [
+      "ParameterElement", 
+      "Electrical Load Classification Parameter Element", 
+      "2292"
+    ], 
+    [
+      "ParameterElement", 
+      "Electrical Load Classification Parameter Element", 
+      "2293"
+    ], 
+    [
+      "ParameterElement", 
+      "Electrical Load Classification Parameter Element", 
+      "2294"
+    ], 
+    [
+      "ParameterElement", 
+      "Electrical Load Classification Parameter Element", 
+      "2295"
+    ], 
+    [
+      "ParameterElement", 
+      "Electrical Load Classification Parameter Element", 
+      "2296"
+    ], 
+    [
+      "ParameterElement", 
+      "Electrical Load Classification Parameter Element", 
+      "2297"
+    ], 
+    [
+      "ParameterElement", 
+      "Electrical Load Classification Parameter Element", 
+      "2298"
+    ], 
+    [
+      "ParameterElement", 
+      "Electrical Load Classification Parameter Element", 
+      "2299"
+    ], 
+    [
+      "ParameterElement", 
+      "Electrical Load Classification Parameter Element", 
+      "2300"
+    ], 
+    [
+      "ParameterElement", 
+      "Electrical Load Classification Parameter Element", 
+      "2301"
+    ], 
+    [
+      "ParameterElement", 
+      "Electrical Load Classification Parameter Element", 
+      "2302"
+    ], 
+    [
+      "ParameterElement", 
+      "Electrical Load Classification Parameter Element", 
+      "2303"
+    ], 
+    [
+      "ParameterElement", 
+      "Electrical Load Classification Parameter Element", 
+      "2304"
+    ], 
+    [
+      "ParameterElement", 
+      "Electrical Load Classification Parameter Element", 
+      "2305"
+    ], 
+    [
+      "ParameterElement", 
+      "Electrical Load Classification Parameter Element", 
+      "2306"
+    ], 
+    [
+      "ParameterElement", 
+      "Electrical Load Classification Parameter Element", 
+      "2307"
+    ], 
+    [
+      "ParameterElement", 
+      "Electrical Load Classification Parameter Element", 
+      "2308"
+    ], 
+    [
+      "ParameterElement", 
+      "Electrical Load Classification Parameter Element", 
+      "2309"
+    ], 
+    [
+      "Material", 
+      "Materials", 
+      "3101"
+    ]
+  ], 
+  "source_cat": [
+    "Light Source", 
+    "-2001121"
+  ]
+}

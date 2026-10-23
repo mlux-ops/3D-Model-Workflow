@@ -1,0 +1,65 @@
+{
+ "method": "floor-plane homography from fitted joints: vanishing point of 5 vertical joints, horizon from linear joint spacing, across scale from the 24 in tile width, forward scale F from stone isotropy",
+ "joint_straightness_after_rectification": {
+  "joint0": {
+   "mean_X": -49.75,
+   "std_X_in": 0.0,
+   "max_dev_in": 0.0,
+   "n_bands": 10
+  },
+  "joint1": {
+   "mean_X": -25.812,
+   "std_X_in": 0.0,
+   "max_dev_in": 0.0,
+   "n_bands": 10
+  },
+  "joint2": {
+   "mean_X": -1.75,
+   "std_X_in": 0.0,
+   "max_dev_in": 0.0,
+   "n_bands": 10
+  },
+  "joint3": {
+   "mean_X": 22.188,
+   "std_X_in": 0.0,
+   "max_dev_in": 0.0,
+   "n_bands": 10
+  }
+ },
+ "joint_spacing_in": [
+  23.938,
+  24.062,
+  23.938
+ ],
+ "depth_visible_above_joint_in": 34.8,
+ "depth_visible_below_joint_in": 8.9,
+ "isotropy_Ex_over_Ey_vs_F": {
+  "100000": 0.636,
+  "120000": 0.787,
+  "140000": 0.9,
+  "160000": 0.978,
+  "180000": 1.112,
+  "200000": 1.236
+ },
+ "F_chosen": 160000.0,
+ "native_resolution_of_rectified_floor_px_per_in": {
+  "across": [
+   16.4,
+   22.1
+  ],
+  "forward": [
+   5.6,
+   10.3
+  ]
+ },
+ "feature_scale_check_acf_half_width_in": {
+  "floor_rectified_XZ": [
+   1.312,
+   1.312
+  ],
+  "swatch_at_41.67ppi_XY": [
+   1.438,
+   1.562
+  ]
+ }
+}
