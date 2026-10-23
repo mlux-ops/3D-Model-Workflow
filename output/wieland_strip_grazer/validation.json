@@ -1,0 +1,364 @@
+{
+  "views": {
+    "oblique": "E:\\Claude\\3D-Model-Workflow\\output\\wieland_strip_grazer\\views\\oblique.png", 
+    "front": "E:\\Claude\\3D-Model-Workflow\\output\\wieland_strip_grazer\\views\\front.png"
+  }, 
+  "visual_verdict": "PENDING REVIEWER", 
+  "family": {
+    "warnings": [], 
+    "type_parameters": {
+      "Spot Beam Angle": 0.17453292519943295, 
+      "Emit from Line Length": 4.8333333333333330, 
+      "Body Finish": {
+        "instance": false, 
+        "value": "Grazer - Matte Black"
+      }, 
+      "Tilt Angle": 1.5707963267948966, 
+      "Spot Field Angle": 0.52359877559829882
+    }, 
+    "category": "Lighting Fixtures", 
+    "light_source_param": 1, 
+    "types": [
+      "4-10 Grazer 2800K"
+    ], 
+    "light": {
+      "color_class": "CustomInitialColor", 
+      "color_temperature_K": 2800.0, 
+      "origin_in": [
+        0.0, 
+        0.0, 
+        1.75
+      ], 
+      "shape": "Line", 
+      "light_distribution": "SpotLightDistribution", 
+      "intensity_Flux": 2500.0, 
+      "loss_factor_class": "BasicLossFactor", 
+      "basisZ": [
+        0.0, 
+        -0.0, 
+        -1.0
+      ], 
+      "basisX": [
+        1.0, 
+        0.0, 
+        0.0
+      ], 
+      "loss_factor_value": 1.0, 
+      "n_types": 1, 
+      "light_shape": "LineLightShape", 
+      "intensity_class": "InitialFluxIntensity", 
+      "distribution": "Spot"
+    }, 
+    "cone_bbox_in": {
+      "n_points": 5163, 
+      "x": [
+        -32.153900000000000, 
+        32.153900000000000
+      ], 
+      "y": [
+        -32.153900000000000, 
+        32.153900000000000
+      ], 
+      "z": [
+        1.75, 
+        121.75
+      ]
+    }, 
+    "placement_type": "WorkPlaneBased"
+  }, 
+  "technical_pass": true, 
+  "hosting": {
+    "instance_origin_in": [
+      0.0, 
+      0.0, 
+      0.0
+    ], 
+    "instance_transform_basisZ": [
+      0.0, 
+      0.0, 
+      1.0
+    ], 
+    "top_z_in": 0.0, 
+    "top_face_normal": [
+      0.0, 
+      0.0, 
+      1.0
+    ], 
+    "instance_transform_basisX": [
+      1.0, 
+      0.0, 
+      0.0
+    ], 
+    "host_is_floor": true
+  }, 
+  "stages": [
+    "family reopened", 
+    "placed", 
+    "measured", 
+    "material substitution", 
+    "views exported", 
+    "done"
+  ], 
+  "envelope_in": {
+    "faces_by_material": {
+      "Grazer - Matte Black": 6
+    }, 
+    "x": [
+      -29.0, 
+      29.0
+    ], 
+    "light_source_proxy_solids_excluded": 1, 
+    "y": [
+      -1.0, 
+      1.0
+    ], 
+    "size": {
+      "L": 58.0, 
+      "W": 2.0, 
+      "H": 1.5
+    }, 
+    "z": [
+      0.0, 
+      1.5
+    ]
+  }, 
+  "light_world": {
+    "origin_in": [
+      0.0, 
+      0.0, 
+      1.75
+    ], 
+    "emission_direction": [
+      0.0, 
+      0.0, 
+      1.0
+    ], 
+    "height_above_host_in": 1.75
+  }, 
+  "material_substitution_faces": {
+    "TEST RED": 6
+  }, 
+  "gates": {
+    "family_warnings_zero": {
+      "pass": true, 
+      "detail": []
+    }, 
+    "tilt_90": {
+      "pass": true, 
+      "detail": 90.0
+    }, 
+    "source_origin_centered_1_75_above_host": {
+      "pass": true, 
+      "detail": [
+        0.0, 
+        0.0, 
+        1.75
+      ]
+    }, 
+    "source_rotated_180_about_x": {
+      "pass": true, 
+      "detail": [
+        [
+          1.0, 
+          0.0, 
+          0.0
+        ], 
+        [
+          0.0, 
+          -0.0, 
+          -1.0
+        ]
+      ]
+    }, 
+    "body_finish_type_param": {
+      "pass": true, 
+      "detail": {
+        "instance": false, 
+        "value": "Grazer - Matte Black"
+      }
+    }, 
+    "light_emits_up_in_world": {
+      "pass": true, 
+      "detail": [
+        0.0, 
+        0.0, 
+        1.0
+      ]
+    }, 
+    "instance_axes_align": {
+      "pass": true, 
+      "detail": {
+        "instance_origin_in": [
+          0.0, 
+          0.0, 
+          0.0
+        ], 
+        "instance_transform_basisZ": [
+          0.0, 
+          0.0, 
+          1.0
+        ], 
+        "top_z_in": 0.0, 
+        "top_face_normal": [
+          0.0, 
+          0.0, 
+          1.0
+        ], 
+        "instance_transform_basisX": [
+          1.0, 
+          0.0, 
+          0.0
+        ], 
+        "host_is_floor": true
+      }
+    }, 
+    "category_lighting_fixtures": {
+      "pass": true, 
+      "detail": "Lighting Fixtures"
+    }, 
+    "hosted_on_ledge_top_face": {
+      "pass": true, 
+      "detail": {
+        "instance_origin_in": [
+          0.0, 
+          0.0, 
+          0.0
+        ], 
+        "instance_transform_basisZ": [
+          0.0, 
+          0.0, 
+          1.0
+        ], 
+        "top_z_in": 0.0, 
+        "top_face_normal": [
+          0.0, 
+          0.0, 
+          1.0
+        ], 
+        "instance_transform_basisX": [
+          1.0, 
+          0.0, 
+          0.0
+        ], 
+        "host_is_floor": true
+      }
+    }, 
+    "field_30deg": {
+      "pass": true, 
+      "detail": 29.999999999999996
+    }, 
+    "material_substitution": {
+      "pass": true, 
+      "detail": {
+        "TEST RED": 6
+      }
+    }, 
+    "flux_2500": {
+      "pass": true, 
+      "detail": [
+        "InitialFluxIntensity", 
+        2500.0
+      ]
+    }, 
+    "distribution_spot": {
+      "pass": true, 
+      "detail": [
+        "Spot", 
+        "SpotLightDistribution"
+      ]
+    }, 
+    "source_clear_of_body": {
+      "pass": true, 
+      "detail": [
+        1.75, 
+        1.5
+      ]
+    }, 
+    "placement_work_plane_based": {
+      "pass": true, 
+      "detail": "WorkPlaneBased"
+    }, 
+    "shape_line": {
+      "pass": true, 
+      "detail": [
+        "Line", 
+        "LineLightShape"
+      ]
+    }, 
+    "light_source_flag_on": {
+      "pass": true, 
+      "detail": null
+    }, 
+    "beam_10deg": {
+      "pass": true, 
+      "detail": 10.0
+    }, 
+    "body_4ft10_x_2_x_1_5": {
+      "pass": true, 
+      "detail": {
+        "L": 58.0, 
+        "W": 2.0, 
+        "H": 1.5
+      }
+    }, 
+    "loss_factor_1": {
+      "pass": true, 
+      "detail": 1.0
+    }, 
+    "light_height_1_75_above_host": {
+      "pass": true, 
+      "detail": 1.75
+    }, 
+    "cct_2800": {
+      "pass": true, 
+      "detail": [
+        "CustomInitialColor", 
+        2800.0
+      ]
+    }, 
+    "type_name": {
+      "pass": true, 
+      "detail": [
+        "4-10 Grazer 2800K"
+      ]
+    }, 
+    "body_sits_on_host_face": {
+      "pass": true, 
+      "detail": [
+        [
+          -29.0, 
+          29.0
+        ], 
+        [
+          0.0, 
+          1.5
+        ]
+      ]
+    }, 
+    "cone_points_up_not_along_fixture": {
+      "pass": true, 
+      "detail": {
+        "n_points": 5163, 
+        "x": [
+          -32.153900000000000, 
+          32.153900000000000
+        ], 
+        "y": [
+          -32.153900000000000, 
+          32.153900000000000
+        ], 
+        "z": [
+          1.75, 
+          121.75
+        ]
+      }
+    }, 
+    "line_length_4ft10": {
+      "pass": true, 
+      "detail": 58.0
+    }
+  }, 
+  "not_verified": [
+    "Ray trace / render of the graze effect on the fluted stone (headless Revit cannot render artificial light); spec says to confirm in a Ray Trace view"
+  ]
+}

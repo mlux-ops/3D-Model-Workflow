@@ -1,0 +1,202 @@
+{
+  "light_source_ids": [
+    3202
+  ], 
+  "all_parameters": [
+    [
+      "Body Finish", 
+      "ElementId", 
+      false
+    ], 
+    [
+      "Wattage Comments", 
+      "String", 
+      false
+    ], 
+    [
+      "Type Image", 
+      "ElementId", 
+      false
+    ], 
+    [
+      "Description", 
+      "String", 
+      false
+    ], 
+    [
+      "Model", 
+      "String", 
+      false
+    ], 
+    [
+      "Keynote", 
+      "String", 
+      false
+    ], 
+    [
+      "Calculate Coefficient of Utilization", 
+      "Integer", 
+      true
+    ], 
+    [
+      "Tilt Angle", 
+      "Double", 
+      false
+    ], 
+    [
+      "Light Loss Factor", 
+      "None", 
+      false
+    ], 
+    [
+      "Initial Intensity", 
+      "None", 
+      false
+    ], 
+    [
+      "Type Comments", 
+      "String", 
+      false
+    ], 
+    [
+      "Emit from Line Length", 
+      "Double", 
+      false
+    ], 
+    [
+      "Assembly Code", 
+      "String", 
+      false
+    ], 
+    [
+      "URL", 
+      "String", 
+      false
+    ], 
+    [
+      "Apparent Power", 
+      "Double", 
+      false
+    ], 
+    [
+      "Coefficient of Utilization", 
+      "Double", 
+      true
+    ], 
+    [
+      "Type IFC Predefined Type", 
+      "String", 
+      false
+    ], 
+    [
+      "Spot Field Angle", 
+      "Double", 
+      false
+    ], 
+    [
+      "Dimming Lamp Color Temperature Shift", 
+      "Integer", 
+      false
+    ], 
+    [
+      "Default Elevation", 
+      "Double", 
+      false
+    ], 
+    [
+      "Cost", 
+      "Double", 
+      false
+    ], 
+    [
+      "Light Source Symbol Length", 
+      "Double", 
+      false
+    ], 
+    [
+      "Manufacturer", 
+      "String", 
+      false
+    ], 
+    [
+      "Initial Color", 
+      "None", 
+      false
+    ], 
+    [
+      "Export Type to IFC As", 
+      "String", 
+      false
+    ], 
+    [
+      "Lamp", 
+      "String", 
+      false
+    ], 
+    [
+      "Color Filter", 
+      "Integer", 
+      false
+    ], 
+    [
+      "Spot Beam Angle", 
+      "Double", 
+      false
+    ]
+  ], 
+  "ok": true, 
+  "light_type_set": true, 
+  "light_params_set": {
+    "Spot Field Angle": 0.52359877559829882, 
+    "Spot Beam Angle": 0.17453292519943295, 
+    "Tilt Angle": 1.5707963267948966, 
+    "Emit from Line Length": 4.8333333333333330
+  }, 
+  "revit_version": "2025", 
+  "stages": [
+    "family created", 
+    "category set", 
+    "light source enabled, type created", 
+    "material and body", 
+    "shape Line, distribution Spot", 
+    "light source moved and rotated", 
+    "light type values", 
+    "light type parameters", 
+    "saved"
+  ], 
+  "light_before": {
+    "basisX": [
+      1.0, 
+      0.0, 
+      0.0
+    ], 
+    "origin_in": [
+      0.0, 
+      0.0, 
+      0.0
+    ], 
+    "basisZ": [
+      0.0, 
+      0.0, 
+      1.0
+    ]
+  }, 
+  "body_id": 3208, 
+  "light_after": {
+    "basisX": [
+      1.0, 
+      0.0, 
+      0.0
+    ], 
+    "origin_in": [
+      0.0, 
+      0.0, 
+      1.75
+    ], 
+    "basisZ": [
+      0.0, 
+      -1.2246467991473532e-16, 
+      -1.0
+    ]
+  }
+}

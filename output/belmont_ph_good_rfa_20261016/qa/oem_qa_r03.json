@@ -1,0 +1,2967 @@
+{
+  "technical_pass_count": 4, 
+  "results": [
+    {
+      "files_unchanged": true, 
+      "id": "alr1280090", 
+      "family_geometry": {
+        "xyz_in": [
+          63.943702999999999, 
+          50.577466999999999, 
+          73.985584000000003
+        ], 
+        "excluded_reference_or_light_elements": [], 
+        "measurement_method": "visible native solids/meshes, triangulated faces and sampled analytic edges; nested GetInstanceGeometry()", 
+        "aborted": false, 
+        "xyz_mm": [
+          1624.1700499999999, 
+          1284.6676600000001, 
+          1879.2338400000001
+        ], 
+        "mesh_count": 549, 
+        "available": true, 
+        "element_class_counts": {
+          "FreeFormElement": 1, 
+          "FamilyInstance": 1, 
+          "Sweep": 2
+        }, 
+        "null_analytic_edges_skipped": 0, 
+        "solid_count": 16, 
+        "minimum_xyz_mm": [
+          -812.08501999999999, 
+          -642.33383000000003, 
+          2120.7661899999998
+        ], 
+        "maximum_xyz_mm": [
+          812.08501999999999, 
+          642.33383000000003, 
+          4000.0000300000002
+        ], 
+        "scope": "family-document geometry only; corroboration required from placed instance", 
+        "geometry_face_materials": [
+          {
+            "material": {
+              "name": "BULB_GLASS", 
+              "transparency": 100, 
+              "bound": true, 
+              "rgb": [
+                245, 
+                245, 
+                243
+              ], 
+              "id": 4650, 
+              "appearance_asset_name": "Glass (Clear)"
+            }, 
+            "face_count": 64
+          }, 
+          {
+            "material": {
+              "name": "BULB_PLASTIC", 
+              "transparency": 0, 
+              "bound": true, 
+              "rgb": [
+                245, 
+                245, 
+                243
+              ], 
+              "id": 4651, 
+              "appearance_asset_name": "Plastic - Translucent Glossy (White)"
+            }, 
+            "face_count": 40
+          }, 
+          {
+            "material": {
+              "name": "CASSIA_AG-FINISH", 
+              "transparency": 0, 
+              "bound": true, 
+              "rgb": [
+                207, 
+                181, 
+                59
+              ], 
+              "id": 4653, 
+              "appearance_asset_name": "Gold - Polished"
+            }, 
+            "face_count": 198
+          }, 
+          {
+            "material": {
+              "name": "CASSIA_OPAL_GLASS", 
+              "transparency": 14, 
+              "bound": true, 
+              "rgb": [
+                245, 
+                245, 
+                243
+              ], 
+              "id": 4655, 
+              "appearance_asset_name": "Glass - Frosted"
+            }, 
+            "face_count": 32
+          }
+        ], 
+        "complete": true, 
+        "nested_geometry_instances": 1, 
+        "errors": [], 
+        "point_count": 37578
+      }, 
+      "source_vs_placed_geometry": {
+        "source_family_dimensions_are_installation_authority": false, 
+        "source_control_inflation_note": "Source family document may contain 96-in reference/template solids; use placed visible solids for installation geometry. A source/placed difference alone does not identify the exact element.", 
+        "instantiated_physical_xyz_mm": [
+          1624.1700499999999, 
+          1284.6676600000001, 
+          1879.2338400000001
+        ], 
+        "source_96in_control_extent_flag": false, 
+        "source_family_document_xyz_mm": [
+          1624.1700499999999, 
+          1284.6676600000001, 
+          1879.2338400000001
+        ], 
+        "installation_measurement_basis": "physical solid geometry from the actual placed FamilyInstance"
+      }, 
+      "model": "LP549448", 
+      "scheduled_finish": "Matte Black / Clear", 
+      "manufacturer_dimensions_mm": null, 
+      "category": "Lighting Fixtures", 
+      "connectors_and_light": {
+        "family_connector_elements": [
+          {
+            "name": "Power - Unbalanced", 
+            "domain": "DomainElectrical", 
+            "id": 11301, 
+            "category": "Connector Element"
+          }
+        ], 
+        "light_source_elements": [], 
+        "photometry_status": "NOT_CALIBRATED_BY_THIS_AUDIT", 
+        "electrical_connector_count": 1, 
+        "light_source_detected": false
+      }, 
+      "family_file_after": {
+        "path": "E:\\Claude\\3D-Model-Workflow\\output\\belmont_ph_good_rfa_20261016\\families\\Alora_Cassia_LP549448MBCL_R2025.rfa", 
+        "bytes": 2043904, 
+        "sha256": "27ce97b87c28cabaf249ebc4410ce9bf1b387e16a2232e2fc29e153530c09ac3"
+      }, 
+      "placement_type": "OneLevelBasedHosted", 
+      "photometric_release": "UNVERIFIED", 
+      "family_path": "E:\\Claude\\3D-Model-Workflow\\output\\belmont_ph_good_rfa_20261016\\families\\Alora_Cassia_LP549448MBCL_R2025.rfa", 
+      "scheduled_variant": "LP549448MBCL", 
+      "family_warning_messages": [], 
+      "manufacturer_dimension_match": "NOT_EVALUATED_SOURCE_SCOPE_REQUIRED", 
+      "matches_prior_output_sha256": true, 
+      "family_warning_count": 0, 
+      "finish_diagnosis": {
+        "status": "PARTIAL_FINISH_MATCH", 
+        "scheduled_variant": "LP549448MBCL", 
+        "explicit_binding_verification": false, 
+        "best_candidate": {
+          "evidence": [
+            "LP549448MBOP", 
+            "CASSIA_OPAL_GLASS", 
+            "CASSIA_MB_FINISH", 
+            "LP549448"
+          ], 
+          "matched_count": 1, 
+          "type": "LP549448MBOP", 
+          "required_finish_matches": {
+            "matte black": true, 
+            "clear": false
+          }
+        }, 
+        "type_candidates": [
+          {
+            "evidence": [
+              "LP549448MBOP", 
+              "CASSIA_OPAL_GLASS", 
+              "CASSIA_MB_FINISH", 
+              "LP549448"
+            ], 
+            "matched_count": 1, 
+            "type": "LP549448MBOP", 
+            "required_finish_matches": {
+              "matte black": true, 
+              "clear": false
+            }
+          }, 
+          {
+            "evidence": [
+              "LP549448AGOP", 
+              "CASSIA_OPAL_GLASS", 
+              "CASSIA_AG-FINISH", 
+              "LP549448"
+            ], 
+            "matched_count": 0, 
+            "type": "LP549448AGOP", 
+            "required_finish_matches": {
+              "matte black": false, 
+              "clear": false
+            }
+          }
+        ], 
+        "matching_types": [], 
+        "scheduled_finish": "Matte Black / Clear"
+      }, 
+      "category_pass": true, 
+      "oem_input_before": {
+        "path": "E:\\Claude\\3D-Model-Workflow\\output\\belmont_ph_good_rfa_20261016\\sources\\oem\\extracted\\ALR1280090_LP549448_Cassia_Revit\\LP549448-Cassia.rfa", 
+        "bytes": 2768896, 
+        "sha256": "1bd05892bc0598d43b30afca32f648ad26fbd6df2e3776bd8c169b1ad743db9e"
+      }, 
+      "previous_native_batch": {
+        "status": "PASS", 
+        "technical_pass": true, 
+        "warnings": 0, 
+        "dimension_fit_evaluated": false
+      }, 
+      "dimension_comparison_previous": {
+        "delta_actual_minus_prior_mm": [
+          1344.1700499999999, 
+          1174.6676600000001, 
+          663.27143999999998
+        ], 
+        "prior_xyz_mm": [
+          280.0, 
+          110.0, 
+          1215.9623999999999
+        ], 
+        "actual_placed_xyz_mm": [
+          1624.1700499999999, 
+          1284.6676600000001, 
+          1879.2338400000001
+        ], 
+        "note": "Disagreement may expose template/light-source/control geometry in the earlier source-document measurement; investigate measured solid provenance.", 
+        "evaluated": true, 
+        "agreement_with_prior_within_1mm": false, 
+        "max_abs_difference_mm": 1344.1700499999999
+      }, 
+      "material_finish_release": "REVIEW_REQUIRED", 
+      "qa_pass": true, 
+      "status": "TECHNICAL_PASS_FINISH_HOLD", 
+      "type_and_materials": {
+        "count": 2, 
+        "parameter_names": [
+          "Type Comments", 
+          "Cost", 
+          "ROD_LENGTH", 
+          "Manufacturer", 
+          "URL", 
+          "GLASS_COLOR", 
+          "Export Type to IFC As", 
+          "Lamp", 
+          "Assembly Code", 
+          "Apparent Power", 
+          "Type Image", 
+          "Wattage Comments", 
+          "Description", 
+          "Default Elevation", 
+          "SUSPENSION_DISTANCE", 
+          "Calculate Coefficient of Utilization", 
+          "Type IFC Predefined Type", 
+          "METAL_FINISH", 
+          "Keynote", 
+          "Coefficient of Utilization", 
+          "Model"
+        ], 
+        "materials_defined": [
+          {
+            "name": "Default", 
+            "transparency": 0, 
+            "bound": true, 
+            "rgb": [
+              127, 
+              127, 
+              127
+            ], 
+            "id": 1739, 
+            "appearance_asset_name": "Default (1)"
+          }, 
+          {
+            "name": "Default Roof", 
+            "transparency": 0, 
+            "bound": true, 
+            "rgb": [
+              0, 
+              127, 
+              0
+            ], 
+            "id": 1740, 
+            "appearance_asset_name": "Default Roof"
+          }, 
+          {
+            "name": "Default Wall", 
+            "transparency": 0, 
+            "bound": true, 
+            "rgb": [
+              127, 
+              127, 
+              127
+            ], 
+            "id": 1741, 
+            "appearance_asset_name": "Default Wall"
+          }, 
+          {
+            "name": "Glass", 
+            "transparency": 75, 
+            "bound": true, 
+            "rgb": [
+              0, 
+              0, 
+              255
+            ], 
+            "id": 1742, 
+            "appearance_asset_name": "Glass (1)"
+          }, 
+          {
+            "name": "Poche", 
+            "transparency": 0, 
+            "bound": true, 
+            "rgb": [
+              0, 
+              0, 
+              255
+            ], 
+            "id": 3167, 
+            "appearance_asset_name": "Poche"
+          }, 
+          {
+            "name": "Default Light Source", 
+            "transparency": 75, 
+            "bound": true, 
+            "rgb": [
+              255, 
+              255, 
+              0
+            ], 
+            "id": 3633, 
+            "appearance_asset_name": "Default Light Source"
+          }, 
+          {
+            "name": "CASSIA_MB_FINISH", 
+            "transparency": 0, 
+            "bound": true, 
+            "rgb": [
+              25, 
+              25, 
+              25
+            ], 
+            "id": 4647, 
+            "appearance_asset_name": "Plastic - Matte (Black)"
+          }, 
+          {
+            "name": "BULB_GLASS", 
+            "transparency": 100, 
+            "bound": true, 
+            "rgb": [
+              245, 
+              245, 
+              243
+            ], 
+            "id": 4650, 
+            "appearance_asset_name": "Glass (Clear)"
+          }, 
+          {
+            "name": "BULB_PLASTIC", 
+            "transparency": 0, 
+            "bound": true, 
+            "rgb": [
+              245, 
+              245, 
+              243
+            ], 
+            "id": 4651, 
+            "appearance_asset_name": "Plastic - Translucent Glossy (White)"
+          }, 
+          {
+            "name": "CASSIA_AG-FINISH", 
+            "transparency": 0, 
+            "bound": true, 
+            "rgb": [
+              207, 
+              181, 
+              59
+            ], 
+            "id": 4653, 
+            "appearance_asset_name": "Gold - Polished"
+          }, 
+          {
+            "name": "CASSIA_OPAL_GLASS", 
+            "transparency": 14, 
+            "bound": true, 
+            "rgb": [
+              245, 
+              245, 
+              243
+            ], 
+            "id": 4655, 
+            "appearance_asset_name": "Glass - Frosted"
+          }, 
+          {
+            "name": "Analytical Panels", 
+            "transparency": 50, 
+            "bound": true, 
+            "rgb": [
+              251, 
+              197, 
+              153
+            ], 
+            "id": 11815, 
+            "appearance_asset_name": "Analytical Panels"
+          }
+        ], 
+        "types": [
+          {
+            "name": "LP549448MBOP", 
+            "photometry_fields": [
+              {
+                "name": "Wattage Comments", 
+                "value": "MAX 40W PER BULB", 
+                "display": null, 
+                "storage_type": "String", 
+                "is_instance": false, 
+                "formula": null
+              }, 
+              {
+                "name": "Description", 
+                "value": null, 
+                "display": null, 
+                "storage_type": "String", 
+                "is_instance": false, 
+                "formula": null
+              }
+            ], 
+            "identity_fields": [
+              {
+                "name": "Manufacturer", 
+                "value": null, 
+                "display": null, 
+                "storage_type": "String", 
+                "is_instance": false, 
+                "formula": null
+              }, 
+              {
+                "name": "Description", 
+                "value": null, 
+                "display": null, 
+                "storage_type": "String", 
+                "is_instance": false, 
+                "formula": null
+              }, 
+              {
+                "name": "Model", 
+                "value": "LP549448", 
+                "display": null, 
+                "storage_type": "String", 
+                "is_instance": false, 
+                "formula": null
+              }
+            ], 
+            "finish_fields": [
+              {
+                "name": "GLASS_COLOR", 
+                "id_value": 4655, 
+                "display": null, 
+                "material": {
+                  "name": "CASSIA_OPAL_GLASS", 
+                  "transparency": 14, 
+                  "bound": true, 
+                  "rgb": [
+                    245, 
+                    245, 
+                    243
+                  ], 
+                  "id": 4655, 
+                  "appearance_asset_name": "Glass - Frosted"
+                }, 
+                "storage_type": "ElementId", 
+                "is_instance": false, 
+                "formula": null
+              }, 
+              {
+                "name": "METAL_FINISH", 
+                "id_value": 4647, 
+                "display": null, 
+                "material": {
+                  "name": "CASSIA_MB_FINISH", 
+                  "transparency": 0, 
+                  "bound": true, 
+                  "rgb": [
+                    25, 
+                    25, 
+                    25
+                  ], 
+                  "id": 4647, 
+                  "appearance_asset_name": "Plastic - Matte (Black)"
+                }, 
+                "storage_type": "ElementId", 
+                "is_instance": false, 
+                "formula": null
+              }
+            ], 
+            "materials": [
+              {
+                "name": "GLASS_COLOR", 
+                "id_value": 4655, 
+                "display": null, 
+                "material": {
+                  "name": "CASSIA_OPAL_GLASS", 
+                  "transparency": 14, 
+                  "bound": true, 
+                  "rgb": [
+                    245, 
+                    245, 
+                    243
+                  ], 
+                  "id": 4655, 
+                  "appearance_asset_name": "Glass - Frosted"
+                }, 
+                "storage_type": "ElementId", 
+                "is_instance": false, 
+                "formula": null
+              }, 
+              {
+                "name": "METAL_FINISH", 
+                "id_value": 4647, 
+                "display": null, 
+                "material": {
+                  "name": "CASSIA_MB_FINISH", 
+                  "transparency": 0, 
+                  "bound": true, 
+                  "rgb": [
+                    25, 
+                    25, 
+                    25
+                  ], 
+                  "id": 4647, 
+                  "appearance_asset_name": "Plastic - Matte (Black)"
+                }, 
+                "storage_type": "ElementId", 
+                "is_instance": false, 
+                "formula": null
+              }
+            ]
+          }, 
+          {
+            "name": "LP549448AGOP", 
+            "photometry_fields": [
+              {
+                "name": "Wattage Comments", 
+                "value": "MAX 40W PER BULB", 
+                "display": null, 
+                "storage_type": "String", 
+                "is_instance": false, 
+                "formula": null
+              }, 
+              {
+                "name": "Description", 
+                "value": null, 
+                "display": null, 
+                "storage_type": "String", 
+                "is_instance": false, 
+                "formula": null
+              }
+            ], 
+            "identity_fields": [
+              {
+                "name": "Manufacturer", 
+                "value": null, 
+                "display": null, 
+                "storage_type": "String", 
+                "is_instance": false, 
+                "formula": null
+              }, 
+              {
+                "name": "Description", 
+                "value": null, 
+                "display": null, 
+                "storage_type": "String", 
+                "is_instance": false, 
+                "formula": null
+              }, 
+              {
+                "name": "Model", 
+                "value": "LP549448", 
+                "display": null, 
+                "storage_type": "String", 
+                "is_instance": false, 
+                "formula": null
+              }
+            ], 
+            "finish_fields": [
+              {
+                "name": "GLASS_COLOR", 
+                "id_value": 4655, 
+                "display": null, 
+                "material": {
+                  "name": "CASSIA_OPAL_GLASS", 
+                  "transparency": 14, 
+                  "bound": true, 
+                  "rgb": [
+                    245, 
+                    245, 
+                    243
+                  ], 
+                  "id": 4655, 
+                  "appearance_asset_name": "Glass - Frosted"
+                }, 
+                "storage_type": "ElementId", 
+                "is_instance": false, 
+                "formula": null
+              }, 
+              {
+                "name": "METAL_FINISH", 
+                "id_value": 4653, 
+                "display": null, 
+                "material": {
+                  "name": "CASSIA_AG-FINISH", 
+                  "transparency": 0, 
+                  "bound": true, 
+                  "rgb": [
+                    207, 
+                    181, 
+                    59
+                  ], 
+                  "id": 4653, 
+                  "appearance_asset_name": "Gold - Polished"
+                }, 
+                "storage_type": "ElementId", 
+                "is_instance": false, 
+                "formula": null
+              }
+            ], 
+            "materials": [
+              {
+                "name": "GLASS_COLOR", 
+                "id_value": 4655, 
+                "display": null, 
+                "material": {
+                  "name": "CASSIA_OPAL_GLASS", 
+                  "transparency": 14, 
+                  "bound": true, 
+                  "rgb": [
+                    245, 
+                    245, 
+                    243
+                  ], 
+                  "id": 4655, 
+                  "appearance_asset_name": "Glass - Frosted"
+                }, 
+                "storage_type": "ElementId", 
+                "is_instance": false, 
+                "formula": null
+              }, 
+              {
+                "name": "METAL_FINISH", 
+                "id_value": 4653, 
+                "display": null, 
+                "material": {
+                  "name": "CASSIA_AG-FINISH", 
+                  "transparency": 0, 
+                  "bound": true, 
+                  "rgb": [
+                    207, 
+                    181, 
+                    59
+                  ], 
+                  "id": 4653, 
+                  "appearance_asset_name": "Gold - Polished"
+                }, 
+                "storage_type": "ElementId", 
+                "is_instance": false, 
+                "formula": null
+              }
+            ]
+          }
+        ], 
+        "parameter_count": 21
+      }, 
+      "temporary_project_placement": {
+        "level_based_placement_verified": true, 
+        "family_placement_type": "OneLevelBasedHosted", 
+        "host_test_method": "level_point", 
+        "success": true, 
+        "host_verified": false, 
+        "attempted": true, 
+        "isolated_disposable_project": true, 
+        "attempts": [
+          {
+            "error": "Family cannot be placed as hosted on an input face reference, because its FamilyPlacementType is not WorkPlaneBased\r\nParameter name: symbol", 
+            "method": "ceiling_face", 
+            "created": false
+          }, 
+          {
+            "error": "Family cannot be placed as hosted on an input face reference, because its FamilyPlacementType is not WorkPlaneBased\r\nParameter name: symbol", 
+            "method": "wall_face", 
+            "created": false
+          }, 
+          {
+            "geometry": {
+              "xyz_in": [
+                63.943702999999999, 
+                50.577466999999999, 
+                73.985584000000003
+              ], 
+              "measurement_method": "visible native solids/meshes, triangulated faces and sampled analytic edges; nested GetInstanceGeometry()", 
+              "aborted": false, 
+              "xyz_mm": [
+                1624.1700499999999, 
+                1284.6676600000001, 
+                1879.2338400000001
+              ], 
+              "mesh_count": 549, 
+              "available": true, 
+              "null_analytic_edges_skipped": 0, 
+              "solid_count": 16, 
+              "minimum_xyz_mm": [
+                -812.08501999999999, 
+                -642.33383000000003, 
+                2120.7661899999998
+              ], 
+              "maximum_xyz_mm": [
+                812.08501999999999, 
+                642.33383000000003, 
+                4000.0000300000002
+              ], 
+              "geometry_face_materials": [
+                {
+                  "material": {
+                    "name": "CASSIA_MB_FINISH", 
+                    "transparency": 0, 
+                    "bound": true, 
+                    "rgb": [
+                      25, 
+                      25, 
+                      25
+                    ], 
+                    "id": 2807, 
+                    "appearance_asset_name": "Plastic - Matte (Black)"
+                  }, 
+                  "face_count": 198
+                }, 
+                {
+                  "material": {
+                    "name": "BULB_GLASS", 
+                    "transparency": 100, 
+                    "bound": true, 
+                    "rgb": [
+                      245, 
+                      245, 
+                      243
+                    ], 
+                    "id": 2810, 
+                    "appearance_asset_name": "Glass (Clear)"
+                  }, 
+                  "face_count": 64
+                }, 
+                {
+                  "material": {
+                    "name": "BULB_PLASTIC", 
+                    "transparency": 0, 
+                    "bound": true, 
+                    "rgb": [
+                      245, 
+                      245, 
+                      243
+                    ], 
+                    "id": 2811, 
+                    "appearance_asset_name": "Plastic - Translucent Glossy (White)"
+                  }, 
+                  "face_count": 40
+                }, 
+                {
+                  "material": {
+                    "name": "CASSIA_OPAL_GLASS", 
+                    "transparency": 14, 
+                    "bound": true, 
+                    "rgb": [
+                      245, 
+                      245, 
+                      243
+                    ], 
+                    "id": 2815, 
+                    "appearance_asset_name": "Glass - Frosted"
+                  }, 
+                  "face_count": 32
+                }
+              ], 
+              "complete": true, 
+              "nested_geometry_instances": 1, 
+              "errors": [], 
+              "point_count": 37578
+            }, 
+            "method": "level_point", 
+            "created": true, 
+            "host_id": null, 
+            "warnings": [], 
+            "hosted_on_expected_element": false, 
+            "location_ft": [
+              -2.7044113417643554e-14, 
+              0.0, 
+              13.123359580052446
+            ], 
+            "symbol_name": null
+          }
+        ], 
+        "warnings": [], 
+        "geometry": {
+          "xyz_in": [
+            63.943702999999999, 
+            50.577466999999999, 
+            73.985584000000003
+          ], 
+          "measurement_method": "visible native solids/meshes, triangulated faces and sampled analytic edges; nested GetInstanceGeometry()", 
+          "aborted": false, 
+          "xyz_mm": [
+            1624.1700499999999, 
+            1284.6676600000001, 
+            1879.2338400000001
+          ], 
+          "mesh_count": 549, 
+          "available": true, 
+          "null_analytic_edges_skipped": 0, 
+          "solid_count": 16, 
+          "minimum_xyz_mm": [
+            -812.08501999999999, 
+            -642.33383000000003, 
+            2120.7661899999998
+          ], 
+          "maximum_xyz_mm": [
+            812.08501999999999, 
+            642.33383000000003, 
+            4000.0000300000002
+          ], 
+          "geometry_face_materials": [
+            {
+              "material": {
+                "name": "CASSIA_MB_FINISH", 
+                "transparency": 0, 
+                "bound": true, 
+                "rgb": [
+                  25, 
+                  25, 
+                  25
+                ], 
+                "id": 2807, 
+                "appearance_asset_name": "Plastic - Matte (Black)"
+              }, 
+              "face_count": 198
+            }, 
+            {
+              "material": {
+                "name": "BULB_GLASS", 
+                "transparency": 100, 
+                "bound": true, 
+                "rgb": [
+                  245, 
+                  245, 
+                  243
+                ], 
+                "id": 2810, 
+                "appearance_asset_name": "Glass (Clear)"
+              }, 
+              "face_count": 64
+            }, 
+            {
+              "material": {
+                "name": "BULB_PLASTIC", 
+                "transparency": 0, 
+                "bound": true, 
+                "rgb": [
+                  245, 
+                  245, 
+                  243
+                ], 
+                "id": 2811, 
+                "appearance_asset_name": "Plastic - Translucent Glossy (White)"
+              }, 
+              "face_count": 40
+            }, 
+            {
+              "material": {
+                "name": "CASSIA_OPAL_GLASS", 
+                "transparency": 14, 
+                "bound": true, 
+                "rgb": [
+                  245, 
+                  245, 
+                  243
+                ], 
+                "id": 2815, 
+                "appearance_asset_name": "Glass - Frosted"
+              }, 
+              "face_count": 32
+            }
+          ], 
+          "complete": true, 
+          "nested_geometry_instances": 1, 
+          "errors": [], 
+          "point_count": 37578
+        }, 
+        "tested_type": null
+      }, 
+      "family_file_before": {
+        "path": "E:\\Claude\\3D-Model-Workflow\\output\\belmont_ph_good_rfa_20261016\\families\\Alora_Cassia_LP549448MBCL_R2025.rfa", 
+        "bytes": 2043904, 
+        "sha256": "27ce97b87c28cabaf249ebc4410ce9bf1b387e16a2232e2fc29e153530c09ac3"
+      }, 
+      "oem_input_after": {
+        "path": "E:\\Claude\\3D-Model-Workflow\\output\\belmont_ph_good_rfa_20261016\\sources\\oem\\extracted\\ALR1280090_LP549448_Cassia_Revit\\LP549448-Cassia.rfa", 
+        "bytes": 2768896, 
+        "sha256": "1bd05892bc0598d43b30afca32f648ad26fbd6df2e3776bd8c169b1ad743db9e"
+      }
+    }, 
+    {
+      "files_unchanged": true, 
+      "id": "kzc1353667", 
+      "family_geometry": {
+        "xyz_in": [
+          5.5007469999999996, 
+          5.5373190000000001, 
+          26.075728999999999
+        ], 
+        "excluded_reference_or_light_elements": [], 
+        "measurement_method": "visible native solids/meshes, triangulated faces and sampled analytic edges; nested GetInstanceGeometry()", 
+        "aborted": false, 
+        "xyz_mm": [
+          139.71897000000001, 
+          140.64791000000000, 
+          662.32353000000001
+        ], 
+        "mesh_count": 44, 
+        "available": true, 
+        "element_class_counts": {
+          "Revolution": 4
+        }, 
+        "null_analytic_edges_skipped": 0, 
+        "solid_count": 4, 
+        "minimum_xyz_mm": [
+          -69.859480000000005, 
+          -70.323960000000000, 
+          3337.6765000000000
+        ], 
+        "maximum_xyz_mm": [
+          69.859480000000005, 
+          70.323960000000000, 
+          4000.0000300000002
+        ], 
+        "scope": "family-document geometry only; corroboration required from placed instance", 
+        "geometry_face_materials": [
+          {
+            "material": {
+              "name": "Glass", 
+              "transparency": 99, 
+              "bound": true, 
+              "rgb": [
+                255, 
+                255, 
+                255
+              ], 
+              "id": 1742, 
+              "appearance_asset_name": "Glass (1)"
+            }, 
+            "face_count": 6
+          }, 
+          {
+            "material": {
+              "name": "Glass Frosted", 
+              "transparency": 95, 
+              "bound": true, 
+              "rgb": [
+                192, 
+                192, 
+                192
+              ], 
+              "id": 8722, 
+              "appearance_asset_name": "Glass (1)"
+            }, 
+            "face_count": 16
+          }
+        ], 
+        "complete": true, 
+        "nested_geometry_instances": 0, 
+        "errors": [], 
+        "point_count": 2166
+      }, 
+      "source_vs_placed_geometry": {
+        "source_family_dimensions_are_installation_authority": false, 
+        "source_control_inflation_note": "Source family document may contain 96-in reference/template solids; use placed visible solids for installation geometry. A source/placed difference alone does not identify the exact element.", 
+        "instantiated_physical_xyz_mm": [
+          477.36926000000000, 
+          485.36541000000000, 
+          1109.1663100000001
+        ], 
+        "source_96in_control_extent_flag": false, 
+        "source_family_document_xyz_mm": [
+          139.71897000000001, 
+          140.64791000000000, 
+          662.32353000000001
+        ], 
+        "installation_measurement_basis": "physical solid geometry from the actual placed FamilyInstance"
+      }, 
+      "model": "PD3106", 
+      "scheduled_finish": "Brushed Gold", 
+      "manufacturer_dimensions_mm": null, 
+      "category": "Lighting Fixtures", 
+      "connectors_and_light": {
+        "family_connector_elements": [], 
+        "light_source_elements": [
+          {
+            "class": "Element", 
+            "name": "", 
+            "id": 3626
+          }
+        ], 
+        "photometry_status": "NOT_CALIBRATED_BY_THIS_AUDIT", 
+        "electrical_connector_count": 0, 
+        "light_source_detected": true
+      }, 
+      "family_file_after": {
+        "path": "E:\\Claude\\3D-Model-Workflow\\output\\belmont_ph_good_rfa_20261016\\families\\Kuzco_Bolla_PD3106_BG_R2025.rfa", 
+        "bytes": 524288, 
+        "sha256": "eb5cf17c25531152acc8e51ccb0ad5bd80913ae547f878d9108d059090e6f2f3"
+      }, 
+      "placement_type": "OneLevelBasedHosted", 
+      "photometric_release": "UNVERIFIED", 
+      "family_path": "E:\\Claude\\3D-Model-Workflow\\output\\belmont_ph_good_rfa_20261016\\families\\Kuzco_Bolla_PD3106_BG_R2025.rfa", 
+      "scheduled_variant": "PD3106-BG", 
+      "family_warning_messages": [], 
+      "manufacturer_dimension_match": "NOT_EVALUATED_SOURCE_SCOPE_REQUIRED", 
+      "matches_prior_output_sha256": true, 
+      "family_warning_count": 0, 
+      "finish_diagnosis": {
+        "status": "FINISH_UNVERIFIED", 
+        "scheduled_variant": "PD3106-BG", 
+        "explicit_binding_verification": false, 
+        "best_candidate": {
+          "evidence": [
+            "Type 1", 
+            "16777215", 
+            "PD3106"
+          ], 
+          "matched_count": 0, 
+          "type": "Type 1", 
+          "required_finish_matches": {
+            "brushed gold": false
+          }
+        }, 
+        "type_candidates": [
+          {
+            "evidence": [
+              "Type 1", 
+              "16777215", 
+              "PD3106"
+            ], 
+            "matched_count": 0, 
+            "type": "Type 1", 
+            "required_finish_matches": {
+              "brushed gold": false
+            }
+          }
+        ], 
+        "matching_types": [], 
+        "scheduled_finish": "Brushed Gold"
+      }, 
+      "category_pass": true, 
+      "oem_input_before": {
+        "path": "E:\\Claude\\3D-Model-Workflow\\output\\belmont_ph_good_rfa_20261016\\sources\\oem\\extracted\\KZC1353667_PD3106_Bolla_Revit\\PD3106 - Bolla.rfa", 
+        "bytes": 425984, 
+        "sha256": "8d84d0a6842b26ca3b8686f86948172349d1d1aec04a75a2b68af4463ef5c98a"
+      }, 
+      "previous_native_batch": {
+        "status": "PASS", 
+        "technical_pass": true, 
+        "warnings": 0, 
+        "dimension_fit_evaluated": false
+      }, 
+      "dimension_comparison_previous": {
+        "delta_actual_minus_prior_mm": [
+          337.65026000000000, 
+          344.71751000000000, 
+          446.84280999999999
+        ], 
+        "prior_xyz_mm": [
+          139.71899999999999, 
+          140.64789999999999, 
+          662.32349999999997
+        ], 
+        "actual_placed_xyz_mm": [
+          477.36926000000000, 
+          485.36541000000000, 
+          1109.1663100000001
+        ], 
+        "note": "Disagreement may expose template/light-source/control geometry in the earlier source-document measurement; investigate measured solid provenance.", 
+        "evaluated": true, 
+        "agreement_with_prior_within_1mm": false, 
+        "max_abs_difference_mm": 446.84280999999999
+      }, 
+      "material_finish_release": "REVIEW_REQUIRED", 
+      "qa_pass": true, 
+      "status": "TECHNICAL_PASS_FINISH_HOLD", 
+      "type_and_materials": {
+        "count": 1, 
+        "parameter_names": [
+          "Initial Color", 
+          "URL", 
+          "Type Image", 
+          "Tilt Angle", 
+          "Model", 
+          "Assembly Code", 
+          "Type IFC Predefined Type", 
+          "Type Comments", 
+          "Calculate Coefficient of Utilization", 
+          "Lamp", 
+          "Dimming Lamp Color Temperature Shift", 
+          "Initial Intensity", 
+          "Apparent Power", 
+          "Manufacturer", 
+          "Keynote", 
+          "Photometric Web File", 
+          "Coefficient of Utilization", 
+          "Light Loss Factor", 
+          "Wattage Comments", 
+          "Cost", 
+          "Default Elevation", 
+          "Description", 
+          "Export Type to IFC As", 
+          "Color Filter"
+        ], 
+        "materials_defined": [
+          {
+            "name": "Default", 
+            "transparency": 0, 
+            "bound": true, 
+            "rgb": [
+              127, 
+              127, 
+              127
+            ], 
+            "id": 1739, 
+            "appearance_asset_name": "Default (1)"
+          }, 
+          {
+            "name": "Default Roof", 
+            "transparency": 0, 
+            "bound": true, 
+            "rgb": [
+              0, 
+              127, 
+              0
+            ], 
+            "id": 1740, 
+            "appearance_asset_name": "Default Roof"
+          }, 
+          {
+            "name": "Default Wall", 
+            "transparency": 0, 
+            "bound": true, 
+            "rgb": [
+              127, 
+              127, 
+              127
+            ], 
+            "id": 1741, 
+            "appearance_asset_name": "Default Wall"
+          }, 
+          {
+            "name": "Glass", 
+            "transparency": 99, 
+            "bound": true, 
+            "rgb": [
+              255, 
+              255, 
+              255
+            ], 
+            "id": 1742, 
+            "appearance_asset_name": "Glass (1)"
+          }, 
+          {
+            "name": "Poche", 
+            "transparency": 0, 
+            "bound": true, 
+            "rgb": [
+              0, 
+              0, 
+              255
+            ], 
+            "id": 3167, 
+            "appearance_asset_name": "Poche"
+          }, 
+          {
+            "name": "Default Light Source", 
+            "transparency": 75, 
+            "bound": true, 
+            "rgb": [
+              255, 
+              255, 
+              0
+            ], 
+            "id": 3633, 
+            "appearance_asset_name": "Default Light Source"
+          }, 
+          {
+            "name": "Material __RGBA_0.627_0.627_0.627", 
+            "transparency": 0, 
+            "bound": true, 
+            "rgb": [
+              160, 
+              160, 
+              160
+            ], 
+            "id": 4411, 
+            "appearance_asset_name": null
+          }, 
+          {
+            "name": "Glass Frosted", 
+            "transparency": 95, 
+            "bound": true, 
+            "rgb": [
+              192, 
+              192, 
+              192
+            ], 
+            "id": 8722, 
+            "appearance_asset_name": "Glass (1)"
+          }, 
+          {
+            "name": "Analytical Panels", 
+            "transparency": 50, 
+            "bound": true, 
+            "rgb": [
+              251, 
+              197, 
+              153
+            ], 
+            "id": 8993, 
+            "appearance_asset_name": "Analytical Panels"
+          }
+        ], 
+        "types": [
+          {
+            "name": "Type 1", 
+            "photometry_fields": [
+              {
+                "name": "Dimming Lamp Color Temperature Shift", 
+                "value": 0, 
+                "display": null, 
+                "storage_type": "Integer", 
+                "is_instance": false, 
+                "formula": null
+              }, 
+              {
+                "name": "Initial Intensity", 
+                "display": null, 
+                "storage_type": "None", 
+                "is_instance": false, 
+                "formula": null
+              }, 
+              {
+                "name": "Photometric Web File", 
+                "value": "PD3106-CH.IES", 
+                "display": null, 
+                "storage_type": "String", 
+                "is_instance": false, 
+                "formula": null
+              }, 
+              {
+                "name": "Light Loss Factor", 
+                "display": null, 
+                "storage_type": "None", 
+                "is_instance": false, 
+                "formula": null
+              }, 
+              {
+                "name": "Wattage Comments", 
+                "value": null, 
+                "display": null, 
+                "storage_type": "String", 
+                "is_instance": false, 
+                "formula": null
+              }, 
+              {
+                "name": "Description", 
+                "value": null, 
+                "display": null, 
+                "storage_type": "String", 
+                "is_instance": false, 
+                "formula": null
+              }
+            ], 
+            "identity_fields": [
+              {
+                "name": "Model", 
+                "value": "PD3106", 
+                "display": null, 
+                "storage_type": "String", 
+                "is_instance": false, 
+                "formula": null
+              }, 
+              {
+                "name": "Manufacturer", 
+                "value": null, 
+                "display": null, 
+                "storage_type": "String", 
+                "is_instance": false, 
+                "formula": null
+              }, 
+              {
+                "name": "Description", 
+                "value": null, 
+                "display": null, 
+                "storage_type": "String", 
+                "is_instance": false, 
+                "formula": null
+              }
+            ], 
+            "finish_fields": [
+              {
+                "name": "Initial Color", 
+                "display": null, 
+                "storage_type": "None", 
+                "is_instance": false, 
+                "formula": null
+              }, 
+              {
+                "name": "Dimming Lamp Color Temperature Shift", 
+                "value": 0, 
+                "display": null, 
+                "storage_type": "Integer", 
+                "is_instance": false, 
+                "formula": null
+              }, 
+              {
+                "name": "Color Filter", 
+                "value": 16777215, 
+                "display": null, 
+                "storage_type": "Integer", 
+                "is_instance": false, 
+                "formula": null
+              }
+            ], 
+            "materials": [
+              {
+                "name": "Initial Color", 
+                "display": null, 
+                "storage_type": "None", 
+                "is_instance": false, 
+                "formula": null
+              }, 
+              {
+                "name": "Dimming Lamp Color Temperature Shift", 
+                "value": 0, 
+                "display": null, 
+                "storage_type": "Integer", 
+                "is_instance": false, 
+                "formula": null
+              }, 
+              {
+                "name": "Color Filter", 
+                "value": 16777215, 
+                "display": null, 
+                "storage_type": "Integer", 
+                "is_instance": false, 
+                "formula": null
+              }
+            ]
+          }
+        ], 
+        "parameter_count": 24
+      }, 
+      "temporary_project_placement": {
+        "level_based_placement_verified": true, 
+        "family_placement_type": "OneLevelBasedHosted", 
+        "host_test_method": "level_point", 
+        "success": true, 
+        "host_verified": false, 
+        "attempted": true, 
+        "isolated_disposable_project": true, 
+        "attempts": [
+          {
+            "error": "Family cannot be placed as hosted on an input face reference, because its FamilyPlacementType is not WorkPlaneBased\r\nParameter name: symbol", 
+            "method": "ceiling_face", 
+            "created": false
+          }, 
+          {
+            "error": "Family cannot be placed as hosted on an input face reference, because its FamilyPlacementType is not WorkPlaneBased\r\nParameter name: symbol", 
+            "method": "wall_face", 
+            "created": false
+          }, 
+          {
+            "geometry": {
+              "xyz_in": [
+                18.794065000000000, 
+                19.108875000000001, 
+                43.667965000000002
+              ], 
+              "measurement_method": "visible native solids/meshes, triangulated faces and sampled analytic edges; nested GetInstanceGeometry()", 
+              "aborted": false, 
+              "xyz_mm": [
+                477.36926000000000, 
+                485.36541000000000, 
+                1109.1663100000001
+              ], 
+              "mesh_count": 45, 
+              "available": true, 
+              "null_analytic_edges_skipped": 0, 
+              "solid_count": 4, 
+              "minimum_xyz_mm": [
+                -243.34905000000001, 
+                -241.92752999999999, 
+                2890.8337200000001
+              ], 
+              "maximum_xyz_mm": [
+                234.02021999999999, 
+                243.43788000000001, 
+                4000.0000300000002
+              ], 
+              "geometry_face_materials": [
+                {
+                  "material": {
+                    "name": "Glass Frosted", 
+                    "transparency": 95, 
+                    "bound": true, 
+                    "rgb": [
+                      192, 
+                      192, 
+                      192
+                    ], 
+                    "id": 2801, 
+                    "appearance_asset_name": "Glass (1)"
+                  }, 
+                  "face_count": 16
+                }, 
+                {
+                  "material": {
+                    "name": "Glass", 
+                    "transparency": 75, 
+                    "bound": true, 
+                    "rgb": [
+                      0, 
+                      0, 
+                      255
+                    ], 
+                    "id": 93, 
+                    "appearance_asset_name": null
+                  }, 
+                  "face_count": 6
+                }
+              ], 
+              "complete": true, 
+              "nested_geometry_instances": 1, 
+              "errors": [], 
+              "point_count": 3498
+            }, 
+            "method": "level_point", 
+            "created": true, 
+            "host_id": null, 
+            "warnings": [], 
+            "hosted_on_expected_element": false, 
+            "location_ft": [
+              -2.7044113417643554e-14, 
+              0.0, 
+              13.123359580052446
+            ], 
+            "symbol_name": null
+          }
+        ], 
+        "warnings": [], 
+        "geometry": {
+          "xyz_in": [
+            18.794065000000000, 
+            19.108875000000001, 
+            43.667965000000002
+          ], 
+          "measurement_method": "visible native solids/meshes, triangulated faces and sampled analytic edges; nested GetInstanceGeometry()", 
+          "aborted": false, 
+          "xyz_mm": [
+            477.36926000000000, 
+            485.36541000000000, 
+            1109.1663100000001
+          ], 
+          "mesh_count": 45, 
+          "available": true, 
+          "null_analytic_edges_skipped": 0, 
+          "solid_count": 4, 
+          "minimum_xyz_mm": [
+            -243.34905000000001, 
+            -241.92752999999999, 
+            2890.8337200000001
+          ], 
+          "maximum_xyz_mm": [
+            234.02021999999999, 
+            243.43788000000001, 
+            4000.0000300000002
+          ], 
+          "geometry_face_materials": [
+            {
+              "material": {
+                "name": "Glass Frosted", 
+                "transparency": 95, 
+                "bound": true, 
+                "rgb": [
+                  192, 
+                  192, 
+                  192
+                ], 
+                "id": 2801, 
+                "appearance_asset_name": "Glass (1)"
+              }, 
+              "face_count": 16
+            }, 
+            {
+              "material": {
+                "name": "Glass", 
+                "transparency": 75, 
+                "bound": true, 
+                "rgb": [
+                  0, 
+                  0, 
+                  255
+                ], 
+                "id": 93, 
+                "appearance_asset_name": null
+              }, 
+              "face_count": 6
+            }
+          ], 
+          "complete": true, 
+          "nested_geometry_instances": 1, 
+          "errors": [], 
+          "point_count": 3498
+        }, 
+        "tested_type": null
+      }, 
+      "family_file_before": {
+        "path": "E:\\Claude\\3D-Model-Workflow\\output\\belmont_ph_good_rfa_20261016\\families\\Kuzco_Bolla_PD3106_BG_R2025.rfa", 
+        "bytes": 524288, 
+        "sha256": "eb5cf17c25531152acc8e51ccb0ad5bd80913ae547f878d9108d059090e6f2f3"
+      }, 
+      "oem_input_after": {
+        "path": "E:\\Claude\\3D-Model-Workflow\\output\\belmont_ph_good_rfa_20261016\\sources\\oem\\extracted\\KZC1353667_PD3106_Bolla_Revit\\PD3106 - Bolla.rfa", 
+        "bytes": 425984, 
+        "sha256": "8d84d0a6842b26ca3b8686f86948172349d1d1aec04a75a2b68af4463ef5c98a"
+      }
+    }, 
+    {
+      "files_unchanged": true, 
+      "id": "mfr1415595", 
+      "family_geometry": {
+        "xyz_in": [
+          96.0, 
+          96.0, 
+          26.401574000000000
+        ], 
+        "excluded_reference_or_light_elements": [], 
+        "measurement_method": "visible native solids/meshes, triangulated faces and sampled analytic edges; nested GetInstanceGeometry()", 
+        "aborted": false, 
+        "xyz_mm": [
+          2438.4000000000001, 
+          2438.4000000000001, 
+          670.59997999999996
+        ], 
+        "mesh_count": 2372, 
+        "available": true, 
+        "element_class_counts": {
+          "FreeFormElement": 9, 
+          "Extrusion": 1, 
+          "ImportInstance": 13
+        }, 
+        "null_analytic_edges_skipped": 2, 
+        "solid_count": 28, 
+        "minimum_xyz_mm": [
+          -1219.2000000000000, 
+          -1219.2000000000000, 
+          -304.80000000000001
+        ], 
+        "maximum_xyz_mm": [
+          1219.2000000000000, 
+          1219.2000000000000, 
+          365.79998000000001
+        ], 
+        "scope": "family-document geometry only; corroboration required from placed instance", 
+        "geometry_face_materials": [], 
+        "complete": true, 
+        "nested_geometry_instances": 13, 
+        "errors": [], 
+        "point_count": 107323
+      }, 
+      "source_vs_placed_geometry": {
+        "source_family_dimensions_are_installation_authority": false, 
+        "source_control_inflation_note": "Source family document may contain 96-in reference/template solids; use placed visible solids for installation geometry. A source/placed difference alone does not identify the exact element.", 
+        "instantiated_physical_xyz_mm": [
+          1028.0764899999999, 
+          1180.6584600000001, 
+          972.82405000000006
+        ], 
+        "source_96in_control_extent_flag": true, 
+        "source_family_document_xyz_mm": [
+          2438.4000000000001, 
+          2438.4000000000001, 
+          670.59997999999996
+        ], 
+        "installation_measurement_basis": "physical solid geometry from the actual placed FamilyInstance"
+      }, 
+      "model": "FR-W2502-52L", 
+      "scheduled_finish": "Soft Brass / Matte Black", 
+      "fan_blade_sweep": {
+        "status": "MATCH_WITHIN_TOLERANCE", 
+        "passed": true, 
+        "not_an_aabb_check": true, 
+        "radial_center_method": "FamilyInstance.GetTransform().Origin", 
+        "axis_vertical_alignment": 1.0, 
+        "solids_sampled": 27, 
+        "delta_actual_minus_nominal_mm": 0.89252100000000001, 
+        "outermost_solid_point_xyz_mm": [
+          -297.98066699999998, 
+          -589.85193200000003, 
+          -613.57708300000002
+        ], 
+        "evaluated": true, 
+        "actual_twice_rmax_mm": 1321.6925209999999, 
+        "radial_solid_samples": 107275, 
+        "null_analytic_edges_skipped": 2, 
+        "expected_blade_sweep_mm": 1320.8000000000000, 
+        "axis_center_xy_mm": [
+          -0.0, 
+          -0.0
+        ], 
+        "tolerance_mm": 1.0, 
+        "measurement_scope": "placed fan instance positive-volume solids; not source-family control/reference extents", 
+        "abs_error_mm": 0.89252100000000001, 
+        "placed_instance_xyz_aabb_mm": [
+          1028.0764899999999, 
+          1180.6584600000001, 
+          972.82405000000006
+        ]
+      }, 
+      "category": "Lighting Fixtures", 
+      "connectors_and_light": {
+        "family_connector_elements": [], 
+        "light_source_elements": [
+          {
+            "class": "Element", 
+            "name": "", 
+            "id": 3044
+          }
+        ], 
+        "photometry_status": "NOT_CALIBRATED_BY_THIS_AUDIT", 
+        "electrical_connector_count": 0, 
+        "light_source_detected": true
+      }, 
+      "manufacturer_dimensions_mm": {
+        "blade_sweep_nominal": 1320.8000000000000
+      }, 
+      "placement_type": "WorkPlaneBased", 
+      "family_file_after": {
+        "path": "E:\\Claude\\3D-Model-Workflow\\output\\belmont_ph_good_rfa_20261016\\families\\ModernForms_Smooth_FR-W2502-52L_SBMB_R2025.rfa", 
+        "bytes": 8613888, 
+        "sha256": "45c76b46fba9daebcf5d0ebbedb7b5592d4eaa50cbbd4b5b59fe44321b7b8e18"
+      }, 
+      "photometric_release": "UNVERIFIED", 
+      "family_path": "E:\\Claude\\3D-Model-Workflow\\output\\belmont_ph_good_rfa_20261016\\families\\ModernForms_Smooth_FR-W2502-52L_SBMB_R2025.rfa", 
+      "scheduled_variant": "FR-W2502-52L-SB/MB", 
+      "family_warning_messages": [], 
+      "manufacturer_dimension_match": "MATCH_WITHIN_TOLERANCE", 
+      "matches_prior_output_sha256": true, 
+      "family_warning_count": 0, 
+      "finish_diagnosis": {
+        "status": "FINISH_UNVERIFIED", 
+        "scheduled_variant": "FR-W2502-52L-SB/MB", 
+        "explicit_binding_verification": false, 
+        "best_candidate": {
+          "evidence": [
+            " ", 
+            "16777215"
+          ], 
+          "matched_count": 0, 
+          "type": " ", 
+          "required_finish_matches": {
+            "soft brass": false, 
+            "matte black": false
+          }
+        }, 
+        "type_candidates": [
+          {
+            "evidence": [
+              " ", 
+              "16777215"
+            ], 
+            "matched_count": 0, 
+            "type": " ", 
+            "required_finish_matches": {
+              "soft brass": false, 
+              "matte black": false
+            }
+          }
+        ], 
+        "matching_types": [], 
+        "scheduled_finish": "Soft Brass / Matte Black"
+      }, 
+      "category_pass": true, 
+      "oem_input_before": {
+        "path": "E:\\Claude\\3D-Model-Workflow\\output\\belmont_ph_good_rfa_20261016\\sources\\oem\\extracted\\MFR1415595_FR-W2502_Smooth_Revit\\FR-W2502-52L.rfa", 
+        "bytes": 8507392, 
+        "sha256": "5275e71a2d6cfd033b4cb6d6fa1351d0e78c953586bdbcafe2b905893286d617"
+      }, 
+      "previous_native_batch": {
+        "status": "PASS", 
+        "technical_pass": true, 
+        "warnings": 0, 
+        "dimension_fit_evaluated": false
+      }, 
+      "dimension_comparison_previous": {
+        "delta_actual_minus_prior_mm": [
+          -1410.3235099999999, 
+          -1257.7415400000000, 
+          302.22404999999998
+        ], 
+        "prior_xyz_mm": [
+          2438.4000000000001, 
+          2438.4000000000001, 
+          670.60000000000002
+        ], 
+        "actual_placed_xyz_mm": [
+          1028.0764899999999, 
+          1180.6584600000001, 
+          972.82405000000006
+        ], 
+        "note": "Disagreement may expose template/light-source/control geometry in the earlier source-document measurement; investigate measured solid provenance.", 
+        "evaluated": true, 
+        "agreement_with_prior_within_1mm": false, 
+        "max_abs_difference_mm": 1410.3235099999999
+      }, 
+      "material_finish_release": "REVIEW_REQUIRED", 
+      "qa_pass": true, 
+      "status": "TECHNICAL_PASS_FINISH_HOLD", 
+      "type_and_materials": {
+        "count": 1, 
+        "parameter_names": [
+          "Export Type to IFC As", 
+          "Type Comments", 
+          "Initial Color", 
+          "Type IFC Predefined Type", 
+          "Color Filter", 
+          "Photometric Web File", 
+          "Lamp", 
+          "Calculate Coefficient of Utilization", 
+          "Emit from Line Length", 
+          "URL", 
+          "Light Loss Factor", 
+          "Initial Intensity", 
+          "Tilt Angle", 
+          "Model", 
+          "Dimming Lamp Color Temperature Shift", 
+          "Wattage Comments", 
+          "Type Image", 
+          "Cost", 
+          "Manufacturer", 
+          "Coefficient of Utilization", 
+          "Assembly Code", 
+          "Default Elevation", 
+          "Keynote", 
+          "Apparent Power", 
+          "Description"
+        ], 
+        "materials_defined": [
+          {
+            "name": "Default", 
+            "transparency": 0, 
+            "bound": true, 
+            "rgb": [
+              127, 
+              127, 
+              127
+            ], 
+            "id": 238, 
+            "appearance_asset_name": "Default (1)"
+          }, 
+          {
+            "name": "Default Roof", 
+            "transparency": 0, 
+            "bound": true, 
+            "rgb": [
+              0, 
+              127, 
+              0
+            ], 
+            "id": 239, 
+            "appearance_asset_name": "Default Roof"
+          }, 
+          {
+            "name": "Default Wall", 
+            "transparency": 0, 
+            "bound": true, 
+            "rgb": [
+              127, 
+              127, 
+              127
+            ], 
+            "id": 240, 
+            "appearance_asset_name": "Default Wall"
+          }, 
+          {
+            "name": "Glass", 
+            "transparency": 75, 
+            "bound": true, 
+            "rgb": [
+              0, 
+              0, 
+              255
+            ], 
+            "id": 241, 
+            "appearance_asset_name": "Glass (1)"
+          }, 
+          {
+            "name": "Poche", 
+            "transparency": 0, 
+            "bound": true, 
+            "rgb": [
+              0, 
+              0, 
+              255
+            ], 
+            "id": 1223, 
+            "appearance_asset_name": "Poche"
+          }, 
+          {
+            "name": "Default Light Source", 
+            "transparency": 75, 
+            "bound": true, 
+            "rgb": [
+              255, 
+              255, 
+              0
+            ], 
+            "id": 2092, 
+            "appearance_asset_name": "Default Light Source"
+          }, 
+          {
+            "name": "\u6e32\u67d3\u6750\u8d28 255-255-255", 
+            "transparency": 0, 
+            "bound": true, 
+            "rgb": [
+              255, 
+              255, 
+              255
+            ], 
+            "id": 2869, 
+            "appearance_asset_name": null
+          }, 
+          {
+            "name": "\u6e32\u67d3\u6750\u8d28 204-204-204", 
+            "transparency": 0, 
+            "bound": true, 
+            "rgb": [
+              204, 
+              204, 
+              204
+            ], 
+            "id": 2912, 
+            "appearance_asset_name": null
+          }, 
+          {
+            "name": "\u6e32\u67d3\u6750\u8d28 101-101-101", 
+            "transparency": 0, 
+            "bound": true, 
+            "rgb": [
+              101, 
+              101, 
+              101
+            ], 
+            "id": 2918, 
+            "appearance_asset_name": null
+          }, 
+          {
+            "name": "\u6e32\u67d3\u6750\u8d28 192-192-192", 
+            "transparency": 0, 
+            "bound": true, 
+            "rgb": [
+              192, 
+              192, 
+              192
+            ], 
+            "id": 2925, 
+            "appearance_asset_name": null
+          }, 
+          {
+            "name": "Analytical Panels", 
+            "transparency": 50, 
+            "bound": true, 
+            "rgb": [
+              251, 
+              197, 
+              153
+            ], 
+            "id": 3261, 
+            "appearance_asset_name": "Analytical Panels"
+          }
+        ], 
+        "types": [
+          {
+            "name": " ", 
+            "photometry_fields": [
+              {
+                "name": "Photometric Web File", 
+                "value": "FR-W2502-52L.IES", 
+                "display": null, 
+                "storage_type": "String", 
+                "is_instance": false, 
+                "formula": null
+              }, 
+              {
+                "name": "Light Loss Factor", 
+                "display": null, 
+                "storage_type": "None", 
+                "is_instance": false, 
+                "formula": null
+              }, 
+              {
+                "name": "Initial Intensity", 
+                "display": null, 
+                "storage_type": "None", 
+                "is_instance": false, 
+                "formula": null
+              }, 
+              {
+                "name": "Dimming Lamp Color Temperature Shift", 
+                "value": 0, 
+                "display": null, 
+                "storage_type": "Integer", 
+                "is_instance": false, 
+                "formula": null
+              }, 
+              {
+                "name": "Wattage Comments", 
+                "value": null, 
+                "display": null, 
+                "storage_type": "String", 
+                "is_instance": false, 
+                "formula": null
+              }, 
+              {
+                "name": "Description", 
+                "value": null, 
+                "display": null, 
+                "storage_type": "String", 
+                "is_instance": false, 
+                "formula": null
+              }
+            ], 
+            "identity_fields": [
+              {
+                "name": "Model", 
+                "value": null, 
+                "display": null, 
+                "storage_type": "String", 
+                "is_instance": false, 
+                "formula": null
+              }, 
+              {
+                "name": "Manufacturer", 
+                "value": null, 
+                "display": null, 
+                "storage_type": "String", 
+                "is_instance": false, 
+                "formula": null
+              }, 
+              {
+                "name": "Description", 
+                "value": null, 
+                "display": null, 
+                "storage_type": "String", 
+                "is_instance": false, 
+                "formula": null
+              }
+            ], 
+            "finish_fields": [
+              {
+                "name": "Initial Color", 
+                "display": null, 
+                "storage_type": "None", 
+                "is_instance": false, 
+                "formula": null
+              }, 
+              {
+                "name": "Color Filter", 
+                "value": 16777215, 
+                "display": null, 
+                "storage_type": "Integer", 
+                "is_instance": false, 
+                "formula": null
+              }, 
+              {
+                "name": "Dimming Lamp Color Temperature Shift", 
+                "value": 0, 
+                "display": null, 
+                "storage_type": "Integer", 
+                "is_instance": false, 
+                "formula": null
+              }
+            ], 
+            "materials": [
+              {
+                "name": "Initial Color", 
+                "display": null, 
+                "storage_type": "None", 
+                "is_instance": false, 
+                "formula": null
+              }, 
+              {
+                "name": "Color Filter", 
+                "value": 16777215, 
+                "display": null, 
+                "storage_type": "Integer", 
+                "is_instance": false, 
+                "formula": null
+              }, 
+              {
+                "name": "Dimming Lamp Color Temperature Shift", 
+                "value": 0, 
+                "display": null, 
+                "storage_type": "Integer", 
+                "is_instance": false, 
+                "formula": null
+              }
+            ]
+          }
+        ], 
+        "parameter_count": 25
+      }, 
+      "temporary_project_placement": {
+        "level_based_placement_verified": false, 
+        "family_placement_type": "WorkPlaneBased", 
+        "host_test_method": "ceiling_face", 
+        "success": true, 
+        "host_verified": true, 
+        "attempted": true, 
+        "isolated_disposable_project": true, 
+        "fan_axis": {
+          "center_method": "FamilyInstance.GetTransform().Origin", 
+          "abs_local_z_dot_world_z": 1.0, 
+          "center_xy_ft": [
+            -1.9753924888402427e-14, 
+            -2.765599164608612e-14
+          ]
+        }, 
+        "attempts": [
+          {
+            "location_ft": [
+              7.9663940008269113e-16, 
+              0.0, 
+              -0.99999999999999389
+            ], 
+            "symbol_name": null, 
+            "created": true, 
+            "hosted_on_expected_element": true, 
+            "method": "ceiling_face", 
+            "fan_axis": {
+              "center_method": "FamilyInstance.GetTransform().Origin", 
+              "abs_local_z_dot_world_z": 1.0, 
+              "center_xy_ft": [
+                -1.9753924888402427e-14, 
+                -2.765599164608612e-14
+              ]
+            }, 
+            "warnings": [], 
+            "geometry": {
+              "xyz_in": [
+                40.475451999999997, 
+                46.482616000000000, 
+                38.300159999999998
+              ], 
+              "measurement_method": "visible native solids/meshes, triangulated faces and sampled analytic edges; nested GetInstanceGeometry()", 
+              "aborted": false, 
+              "xyz_mm": [
+                1028.0764899999999, 
+                1180.6584600000001, 
+                972.82405000000006
+              ], 
+              "mesh_count": 2367, 
+              "available": true, 
+              "null_analytic_edges_skipped": 2, 
+              "solid_count": 27, 
+              "minimum_xyz_mm": [
+                -367.69790000000000, 
+                -591.31758000000002, 
+                -1277.6240499999999
+              ], 
+              "maximum_xyz_mm": [
+                660.37859000000003, 
+                589.34087999999997, 
+                -304.80000000000001
+              ], 
+              "physical_solid_radial": {
+                "excludes": "family document template/reference solids; top-level mesh and non-solid symbolic geometry", 
+                "twice_maximum_radius_mm": 1321.6925209999999, 
+                "measured": true, 
+                "source": "placed instance, positive-volume DB.Solid face triangulation and valid analytic edges only", 
+                "physical_solid_samples": 107275, 
+                "maximum_radius_mm": 660.84626000000003, 
+                "outermost_solid_point_xyz_mm": [
+                  -297.98066699999998, 
+                  -589.85193200000003, 
+                  -613.57708300000002
+                ], 
+                "center_xy_mm": [
+                  -0.0, 
+                  -0.0
+                ]
+              }, 
+              "complete": true, 
+              "geometry_face_materials": [], 
+              "nested_geometry_instances": 1, 
+              "errors": [], 
+              "point_count": 110171
+            }, 
+            "host_id": 3775, 
+            "fan_sweep": {
+              "status": "MATCH_WITHIN_TOLERANCE", 
+              "passed": true, 
+              "not_an_aabb_check": true, 
+              "radial_center_method": "FamilyInstance.GetTransform().Origin", 
+              "axis_vertical_alignment": 1.0, 
+              "solids_sampled": 27, 
+              "delta_actual_minus_nominal_mm": 0.89252100000000001, 
+              "outermost_solid_point_xyz_mm": [
+                -297.98066699999998, 
+                -589.85193200000003, 
+                -613.57708300000002
+              ], 
+              "evaluated": true, 
+              "actual_twice_rmax_mm": 1321.6925209999999, 
+              "radial_solid_samples": 107275, 
+              "null_analytic_edges_skipped": 2, 
+              "expected_blade_sweep_mm": 1320.8000000000000, 
+              "axis_center_xy_mm": [
+                -0.0, 
+                -0.0
+              ], 
+              "tolerance_mm": 1.0, 
+              "measurement_scope": "placed fan instance positive-volume solids; not source-family control/reference extents", 
+              "abs_error_mm": 0.89252100000000001, 
+              "placed_instance_xyz_aabb_mm": [
+                1028.0764899999999, 
+                1180.6584600000001, 
+                972.82405000000006
+              ]
+            }
+          }
+        ], 
+        "warnings": [], 
+        "geometry": {
+          "xyz_in": [
+            40.475451999999997, 
+            46.482616000000000, 
+            38.300159999999998
+          ], 
+          "measurement_method": "visible native solids/meshes, triangulated faces and sampled analytic edges; nested GetInstanceGeometry()", 
+          "aborted": false, 
+          "xyz_mm": [
+            1028.0764899999999, 
+            1180.6584600000001, 
+            972.82405000000006
+          ], 
+          "mesh_count": 2367, 
+          "available": true, 
+          "null_analytic_edges_skipped": 2, 
+          "solid_count": 27, 
+          "minimum_xyz_mm": [
+            -367.69790000000000, 
+            -591.31758000000002, 
+            -1277.6240499999999
+          ], 
+          "maximum_xyz_mm": [
+            660.37859000000003, 
+            589.34087999999997, 
+            -304.80000000000001
+          ], 
+          "physical_solid_radial": {
+            "excludes": "family document template/reference solids; top-level mesh and non-solid symbolic geometry", 
+            "twice_maximum_radius_mm": 1321.6925209999999, 
+            "measured": true, 
+            "source": "placed instance, positive-volume DB.Solid face triangulation and valid analytic edges only", 
+            "physical_solid_samples": 107275, 
+            "maximum_radius_mm": 660.84626000000003, 
+            "outermost_solid_point_xyz_mm": [
+              -297.98066699999998, 
+              -589.85193200000003, 
+              -613.57708300000002
+            ], 
+            "center_xy_mm": [
+              -0.0, 
+              -0.0
+            ]
+          }, 
+          "complete": true, 
+          "geometry_face_materials": [], 
+          "nested_geometry_instances": 1, 
+          "errors": [], 
+          "point_count": 110171
+        }, 
+        "fan_sweep": {
+          "status": "MATCH_WITHIN_TOLERANCE", 
+          "passed": true, 
+          "not_an_aabb_check": true, 
+          "radial_center_method": "FamilyInstance.GetTransform().Origin", 
+          "axis_vertical_alignment": 1.0, 
+          "solids_sampled": 27, 
+          "delta_actual_minus_nominal_mm": 0.89252100000000001, 
+          "outermost_solid_point_xyz_mm": [
+            -297.98066699999998, 
+            -589.85193200000003, 
+            -613.57708300000002
+          ], 
+          "evaluated": true, 
+          "actual_twice_rmax_mm": 1321.6925209999999, 
+          "radial_solid_samples": 107275, 
+          "null_analytic_edges_skipped": 2, 
+          "expected_blade_sweep_mm": 1320.8000000000000, 
+          "axis_center_xy_mm": [
+            -0.0, 
+            -0.0
+          ], 
+          "tolerance_mm": 1.0, 
+          "measurement_scope": "placed fan instance positive-volume solids; not source-family control/reference extents", 
+          "abs_error_mm": 0.89252100000000001, 
+          "placed_instance_xyz_aabb_mm": [
+            1028.0764899999999, 
+            1180.6584600000001, 
+            972.82405000000006
+          ]
+        }, 
+        "tested_type": null
+      }, 
+      "family_file_before": {
+        "path": "E:\\Claude\\3D-Model-Workflow\\output\\belmont_ph_good_rfa_20261016\\families\\ModernForms_Smooth_FR-W2502-52L_SBMB_R2025.rfa", 
+        "bytes": 8613888, 
+        "sha256": "45c76b46fba9daebcf5d0ebbedb7b5592d4eaa50cbbd4b5b59fe44321b7b8e18"
+      }, 
+      "oem_input_after": {
+        "path": "E:\\Claude\\3D-Model-Workflow\\output\\belmont_ph_good_rfa_20261016\\sources\\oem\\extracted\\MFR1415595_FR-W2502_Smooth_Revit\\FR-W2502-52L.rfa", 
+        "bytes": 8507392, 
+        "sha256": "5275e71a2d6cfd033b4cb6d6fa1351d0e78c953586bdbcafe2b905893286d617"
+      }
+    }, 
+    {
+      "files_unchanged": true, 
+      "id": "mfr201959", 
+      "family_geometry": {
+        "xyz_in": [
+          96.0, 
+          96.0, 
+          15.110236000000000
+        ], 
+        "excluded_reference_or_light_elements": [], 
+        "measurement_method": "visible native solids/meshes, triangulated faces and sampled analytic edges; nested GetInstanceGeometry()", 
+        "aborted": false, 
+        "xyz_mm": [
+          2438.4000000000001, 
+          2438.4000000000001, 
+          383.80000000000001
+        ], 
+        "mesh_count": 1670, 
+        "available": true, 
+        "element_class_counts": {
+          "FreeFormElement": 25, 
+          "Extrusion": 1
+        }, 
+        "null_analytic_edges_skipped": 0, 
+        "solid_count": 26, 
+        "minimum_xyz_mm": [
+          -1219.2000000000000, 
+          -1219.2000000000000, 
+          -304.80000000000001
+        ], 
+        "maximum_xyz_mm": [
+          1219.2000000000000, 
+          1219.2000000000000, 
+          79.0
+        ], 
+        "scope": "family-document geometry only; corroboration required from placed instance", 
+        "geometry_face_materials": [
+          {
+            "material": {
+              "name": "Diffuser-01", 
+              "transparency": 0, 
+              "bound": true, 
+              "rgb": [
+                204, 
+                204, 
+                204
+              ], 
+              "id": 3541, 
+              "appearance_asset_name": "WFC5834 - Diffuser"
+            }, 
+            "face_count": 52
+          }, 
+          {
+            "material": {
+              "name": "\u9752\u94dc\u8272\uff0c\u5efa\u7b51", 
+              "transparency": 0, 
+              "bound": true, 
+              "rgb": [
+                120, 
+                120, 
+                120
+              ], 
+              "id": 3546, 
+              "appearance_asset_name": "\u9752\u94dc - \u94dc\u7eff\u8272"
+            }, 
+            "face_count": 336
+          }
+        ], 
+        "complete": true, 
+        "nested_geometry_instances": 0, 
+        "errors": [], 
+        "point_count": 37869
+      }, 
+      "source_vs_placed_geometry": {
+        "source_family_dimensions_are_installation_authority": false, 
+        "source_control_inflation_note": "Source family document may contain 96-in reference/template solids; use placed visible solids for installation geometry. A source/placed difference alone does not identify the exact element.", 
+        "instantiated_physical_xyz_mm": [
+          684.50000999999997, 
+          535.75537999999995, 
+          407.11860999999999
+        ], 
+        "source_96in_control_extent_flag": true, 
+        "source_family_document_xyz_mm": [
+          2438.4000000000001, 
+          2438.4000000000001, 
+          383.80000000000001
+        ], 
+        "installation_measurement_basis": "physical solid geometry from the actual placed FamilyInstance"
+      }, 
+      "model": "WS-3127", 
+      "scheduled_finish": "Chrome", 
+      "manufacturer_dimensions_mm": null, 
+      "category": "Lighting Fixtures", 
+      "connectors_and_light": {
+        "family_connector_elements": [], 
+        "light_source_elements": [
+          {
+            "class": "Element", 
+            "name": "", 
+            "id": 3653
+          }
+        ], 
+        "photometry_status": "NOT_CALIBRATED_BY_THIS_AUDIT", 
+        "electrical_connector_count": 0, 
+        "light_source_detected": true
+      }, 
+      "family_file_after": {
+        "path": "E:\\Claude\\3D-Model-Workflow\\output\\belmont_ph_good_rfa_20261016\\families\\ModernForms_Vogue_WS-3127_CH_R2025.rfa", 
+        "bytes": 1400832, 
+        "sha256": "1dcb1673b31ff277f9482bc5ded7a244922598f782196d2d2804c773768db4df"
+      }, 
+      "placement_type": "WorkPlaneBased", 
+      "photometric_release": "UNVERIFIED", 
+      "family_path": "E:\\Claude\\3D-Model-Workflow\\output\\belmont_ph_good_rfa_20261016\\families\\ModernForms_Vogue_WS-3127_CH_R2025.rfa", 
+      "scheduled_variant": "WS-3127-CH", 
+      "family_warning_messages": [], 
+      "manufacturer_dimension_match": "NOT_EVALUATED_SOURCE_SCOPE_REQUIRED", 
+      "matches_prior_output_sha256": true, 
+      "family_warning_count": 0, 
+      "finish_diagnosis": {
+        "status": "FINISH_UNVERIFIED", 
+        "scheduled_variant": "WS-3127-CH", 
+        "explicit_binding_verification": false, 
+        "best_candidate": {
+          "evidence": [
+            " ", 
+            "16777215"
+          ], 
+          "matched_count": 0, 
+          "type": " ", 
+          "required_finish_matches": {
+            "chrome": false
+          }
+        }, 
+        "type_candidates": [
+          {
+            "evidence": [
+              " ", 
+              "16777215"
+            ], 
+            "matched_count": 0, 
+            "type": " ", 
+            "required_finish_matches": {
+              "chrome": false
+            }
+          }
+        ], 
+        "matching_types": [], 
+        "scheduled_finish": "Chrome"
+      }, 
+      "category_pass": true, 
+      "oem_input_before": {
+        "path": "E:\\Claude\\3D-Model-Workflow\\output\\belmont_ph_good_rfa_20261016\\sources\\oem\\extracted\\MFR201959_WS-3120_Vogue_family_Revit\\WS-3127.rfa", 
+        "bytes": 1294336, 
+        "sha256": "bf4bd0f22c65eec080fc8e022c8fb817f526903408d17bbe52f752d3f4fab155"
+      }, 
+      "previous_native_batch": {
+        "status": "PASS", 
+        "technical_pass": true, 
+        "warnings": 0, 
+        "dimension_fit_evaluated": false
+      }, 
+      "dimension_comparison_previous": {
+        "delta_actual_minus_prior_mm": [
+          -1753.8999899999999, 
+          -1902.6446200000000, 
+          23.318610000000000
+        ], 
+        "prior_xyz_mm": [
+          2438.4000000000001, 
+          2438.4000000000001, 
+          383.80000000000001
+        ], 
+        "actual_placed_xyz_mm": [
+          684.50000999999997, 
+          535.75537999999995, 
+          407.11860999999999
+        ], 
+        "note": "Disagreement may expose template/light-source/control geometry in the earlier source-document measurement; investigate measured solid provenance.", 
+        "evaluated": true, 
+        "agreement_with_prior_within_1mm": false, 
+        "max_abs_difference_mm": 1902.6446200000000
+      }, 
+      "material_finish_release": "REVIEW_REQUIRED", 
+      "qa_pass": true, 
+      "status": "TECHNICAL_PASS_FINISH_HOLD", 
+      "type_and_materials": {
+        "count": 1, 
+        "parameter_names": [
+          "Apparent Power", 
+          "Cost", 
+          "Type Comments", 
+          "Light Loss Factor", 
+          "Model", 
+          "Calculate Coefficient of Utilization", 
+          "URL", 
+          "Description", 
+          "Keynote", 
+          "DENGZHAO", 
+          "Coefficient of Utilization", 
+          "Type Image", 
+          "Export Type to IFC As", 
+          "Assembly Code", 
+          "Initial Intensity", 
+          "Tilt Angle", 
+          "AB", 
+          "Color Filter", 
+          "Wattage Comments", 
+          "Default Elevation", 
+          "Lamp", 
+          "Type IFC Predefined Type", 
+          "Photometric Web File", 
+          "Manufacturer", 
+          "Initial Color", 
+          "Dimming Lamp Color Temperature Shift"
+        ], 
+        "materials_defined": [
+          {
+            "name": "Default", 
+            "transparency": 0, 
+            "bound": true, 
+            "rgb": [
+              127, 
+              127, 
+              127
+            ], 
+            "id": 238, 
+            "appearance_asset_name": "Default (1)"
+          }, 
+          {
+            "name": "Default Roof", 
+            "transparency": 0, 
+            "bound": true, 
+            "rgb": [
+              0, 
+              127, 
+              0
+            ], 
+            "id": 239, 
+            "appearance_asset_name": "Default Roof"
+          }, 
+          {
+            "name": "Default Wall", 
+            "transparency": 0, 
+            "bound": true, 
+            "rgb": [
+              127, 
+              127, 
+              127
+            ], 
+            "id": 240, 
+            "appearance_asset_name": "Default Wall"
+          }, 
+          {
+            "name": "Glass", 
+            "transparency": 75, 
+            "bound": true, 
+            "rgb": [
+              0, 
+              0, 
+              255
+            ], 
+            "id": 241, 
+            "appearance_asset_name": "Glass (1)"
+          }, 
+          {
+            "name": "Poche", 
+            "transparency": 0, 
+            "bound": true, 
+            "rgb": [
+              0, 
+              0, 
+              255
+            ], 
+            "id": 1223, 
+            "appearance_asset_name": "Poche"
+          }, 
+          {
+            "name": "Default Light Source", 
+            "transparency": 75, 
+            "bound": true, 
+            "rgb": [
+              255, 
+              255, 
+              0
+            ], 
+            "id": 2092, 
+            "appearance_asset_name": "Default Light Source"
+          }, 
+          {
+            "name": "\u6e32\u67d3\u6750\u8d28 255-255-255", 
+            "transparency": 0, 
+            "bound": true, 
+            "rgb": [
+              255, 
+              255, 
+              255
+            ], 
+            "id": 2885, 
+            "appearance_asset_name": null
+          }, 
+          {
+            "name": "\u6e32\u67d3\u6750\u8d28 127-255-127", 
+            "transparency": 0, 
+            "bound": true, 
+            "rgb": [
+              127, 
+              255, 
+              127
+            ], 
+            "id": 2888, 
+            "appearance_asset_name": null
+          }, 
+          {
+            "name": "\u6e32\u67d3\u6750\u8d28 159-127-255", 
+            "transparency": 0, 
+            "bound": true, 
+            "rgb": [
+              159, 
+              127, 
+              255
+            ], 
+            "id": 2890, 
+            "appearance_asset_name": null
+          }, 
+          {
+            "name": "\u6e32\u67d3\u6750\u8d28 0-0-0", 
+            "transparency": 0, 
+            "bound": true, 
+            "rgb": [
+              0, 
+              0, 
+              0
+            ], 
+            "id": 2892, 
+            "appearance_asset_name": null
+          }, 
+          {
+            "name": "\u6e32\u67d3\u6750\u8d28 255-127-191", 
+            "transparency": 0, 
+            "bound": true, 
+            "rgb": [
+              255, 
+              127, 
+              191
+            ], 
+            "id": 2894, 
+            "appearance_asset_name": null
+          }, 
+          {
+            "name": "\u6e32\u67d3\u6750\u8d28 255-127-255", 
+            "transparency": 0, 
+            "bound": true, 
+            "rgb": [
+              255, 
+              127, 
+              255
+            ], 
+            "id": 2896, 
+            "appearance_asset_name": null
+          }, 
+          {
+            "name": "\u6e32\u67d3\u6750\u8d28 127-127-255", 
+            "transparency": 0, 
+            "bound": true, 
+            "rgb": [
+              127, 
+              127, 
+              255
+            ], 
+            "id": 2898, 
+            "appearance_asset_name": null
+          }, 
+          {
+            "name": "Diffuser-01", 
+            "transparency": 0, 
+            "bound": true, 
+            "rgb": [
+              204, 
+              204, 
+              204
+            ], 
+            "id": 3541, 
+            "appearance_asset_name": "WFC5834 - Diffuser"
+          }, 
+          {
+            "name": "\u9752\u94dc\u8272\uff0c\u5efa\u7b51", 
+            "transparency": 0, 
+            "bound": true, 
+            "rgb": [
+              120, 
+              120, 
+              120
+            ], 
+            "id": 3546, 
+            "appearance_asset_name": "\u9752\u94dc - \u94dc\u7eff\u8272"
+          }, 
+          {
+            "name": "Analytical Panels", 
+            "transparency": 50, 
+            "bound": true, 
+            "rgb": [
+              251, 
+              197, 
+              153
+            ], 
+            "id": 3896, 
+            "appearance_asset_name": "Analytical Panels"
+          }
+        ], 
+        "types": [
+          {
+            "name": " ", 
+            "photometry_fields": [
+              {
+                "name": "Light Loss Factor", 
+                "display": null, 
+                "storage_type": "None", 
+                "is_instance": false, 
+                "formula": null
+              }, 
+              {
+                "name": "Description", 
+                "value": null, 
+                "display": null, 
+                "storage_type": "String", 
+                "is_instance": false, 
+                "formula": null
+              }, 
+              {
+                "name": "Initial Intensity", 
+                "display": null, 
+                "storage_type": "None", 
+                "is_instance": false, 
+                "formula": null
+              }, 
+              {
+                "name": "Wattage Comments", 
+                "value": null, 
+                "display": null, 
+                "storage_type": "String", 
+                "is_instance": false, 
+                "formula": null
+              }, 
+              {
+                "name": "Photometric Web File", 
+                "value": "WS-3127.IES", 
+                "display": null, 
+                "storage_type": "String", 
+                "is_instance": false, 
+                "formula": null
+              }, 
+              {
+                "name": "Dimming Lamp Color Temperature Shift", 
+                "value": 0, 
+                "display": null, 
+                "storage_type": "Integer", 
+                "is_instance": false, 
+                "formula": null
+              }
+            ], 
+            "identity_fields": [
+              {
+                "name": "Model", 
+                "value": null, 
+                "display": null, 
+                "storage_type": "String", 
+                "is_instance": false, 
+                "formula": null
+              }, 
+              {
+                "name": "Description", 
+                "value": null, 
+                "display": null, 
+                "storage_type": "String", 
+                "is_instance": false, 
+                "formula": null
+              }, 
+              {
+                "name": "Manufacturer", 
+                "value": null, 
+                "display": null, 
+                "storage_type": "String", 
+                "is_instance": false, 
+                "formula": null
+              }
+            ], 
+            "finish_fields": [
+              {
+                "name": "Color Filter", 
+                "value": 16777215, 
+                "display": null, 
+                "storage_type": "Integer", 
+                "is_instance": false, 
+                "formula": null
+              }, 
+              {
+                "name": "Initial Color", 
+                "display": null, 
+                "storage_type": "None", 
+                "is_instance": false, 
+                "formula": null
+              }, 
+              {
+                "name": "Dimming Lamp Color Temperature Shift", 
+                "value": 0, 
+                "display": null, 
+                "storage_type": "Integer", 
+                "is_instance": false, 
+                "formula": null
+              }
+            ], 
+            "materials": [
+              {
+                "name": "Color Filter", 
+                "value": 16777215, 
+                "display": null, 
+                "storage_type": "Integer", 
+                "is_instance": false, 
+                "formula": null
+              }, 
+              {
+                "name": "Initial Color", 
+                "display": null, 
+                "storage_type": "None", 
+                "is_instance": false, 
+                "formula": null
+              }, 
+              {
+                "name": "Dimming Lamp Color Temperature Shift", 
+                "value": 0, 
+                "display": null, 
+                "storage_type": "Integer", 
+                "is_instance": false, 
+                "formula": null
+              }
+            ]
+          }
+        ], 
+        "parameter_count": 26
+      }, 
+      "temporary_project_placement": {
+        "level_based_placement_verified": false, 
+        "family_placement_type": "WorkPlaneBased", 
+        "host_test_method": "wall_face", 
+        "success": true, 
+        "host_verified": true, 
+        "attempted": true, 
+        "isolated_disposable_project": true, 
+        "attempts": [
+          {
+            "geometry": {
+              "xyz_in": [
+                26.948819000000000, 
+                21.092732000000002, 
+                16.028292000000000
+              ], 
+              "measurement_method": "visible native solids/meshes, triangulated faces and sampled analytic edges; nested GetInstanceGeometry()", 
+              "aborted": false, 
+              "xyz_mm": [
+                684.50000999999997, 
+                535.75537999999995, 
+                407.11860999999999
+              ], 
+              "mesh_count": 1665, 
+              "available": true, 
+              "null_analytic_edges_skipped": 0, 
+              "solid_count": 25, 
+              "minimum_xyz_mm": [
+                -342.25, 
+                97.599999999999994, 
+                1327.2438400000001
+              ], 
+              "maximum_xyz_mm": [
+                342.25, 
+                633.35537999999997, 
+                1734.3624500000001
+              ], 
+              "geometry_face_materials": [
+                {
+                  "material": {
+                    "name": "Diffuser-01", 
+                    "transparency": 0, 
+                    "bound": true, 
+                    "rgb": [
+                      204, 
+                      204, 
+                      204
+                    ], 
+                    "id": 2804, 
+                    "appearance_asset_name": "WFC5834 - Diffuser"
+                  }, 
+                  "face_count": 52
+                }, 
+                {
+                  "material": {
+                    "name": "\u9752\u94dc\u8272\uff0c\u5efa\u7b51", 
+                    "transparency": 0, 
+                    "bound": true, 
+                    "rgb": [
+                      120, 
+                      120, 
+                      120
+                    ], 
+                    "id": 2808, 
+                    "appearance_asset_name": "\u9752\u94dc - \u94dc\u7eff\u8272"
+                  }, 
+                  "face_count": 336
+                }
+              ], 
+              "complete": true, 
+              "nested_geometry_instances": 1, 
+              "errors": [], 
+              "point_count": 40717
+            }, 
+            "method": "wall_face", 
+            "created": true, 
+            "host_id": 3731, 
+            "warnings": [], 
+            "hosted_on_expected_element": true, 
+            "location_ft": [
+              0.0, 
+              0.33333333333332715, 
+              5.0
+            ], 
+            "symbol_name": null
+          }
+        ], 
+        "warnings": [], 
+        "geometry": {
+          "xyz_in": [
+            26.948819000000000, 
+            21.092732000000002, 
+            16.028292000000000
+          ], 
+          "measurement_method": "visible native solids/meshes, triangulated faces and sampled analytic edges; nested GetInstanceGeometry()", 
+          "aborted": false, 
+          "xyz_mm": [
+            684.50000999999997, 
+            535.75537999999995, 
+            407.11860999999999
+          ], 
+          "mesh_count": 1665, 
+          "available": true, 
+          "null_analytic_edges_skipped": 0, 
+          "solid_count": 25, 
+          "minimum_xyz_mm": [
+            -342.25, 
+            97.599999999999994, 
+            1327.2438400000001
+          ], 
+          "maximum_xyz_mm": [
+            342.25, 
+            633.35537999999997, 
+            1734.3624500000001
+          ], 
+          "geometry_face_materials": [
+            {
+              "material": {
+                "name": "Diffuser-01", 
+                "transparency": 0, 
+                "bound": true, 
+                "rgb": [
+                  204, 
+                  204, 
+                  204
+                ], 
+                "id": 2804, 
+                "appearance_asset_name": "WFC5834 - Diffuser"
+              }, 
+              "face_count": 52
+            }, 
+            {
+              "material": {
+                "name": "\u9752\u94dc\u8272\uff0c\u5efa\u7b51", 
+                "transparency": 0, 
+                "bound": true, 
+                "rgb": [
+                  120, 
+                  120, 
+                  120
+                ], 
+                "id": 2808, 
+                "appearance_asset_name": "\u9752\u94dc - \u94dc\u7eff\u8272"
+              }, 
+              "face_count": 336
+            }
+          ], 
+          "complete": true, 
+          "nested_geometry_instances": 1, 
+          "errors": [], 
+          "point_count": 40717
+        }, 
+        "tested_type": null
+      }, 
+      "family_file_before": {
+        "path": "E:\\Claude\\3D-Model-Workflow\\output\\belmont_ph_good_rfa_20261016\\families\\ModernForms_Vogue_WS-3127_CH_R2025.rfa", 
+        "bytes": 1400832, 
+        "sha256": "1dcb1673b31ff277f9482bc5ded7a244922598f782196d2d2804c773768db4df"
+      }, 
+      "oem_input_after": {
+        "path": "E:\\Claude\\3D-Model-Workflow\\output\\belmont_ph_good_rfa_20261016\\sources\\oem\\extracted\\MFR201959_WS-3120_Vogue_family_Revit\\WS-3127.rfa", 
+        "bytes": 1294336, 
+        "sha256": "bf4bd0f22c65eec080fc8e022c8fb817f526903408d17bbe52f752d3f4fab155"
+      }
+    }
+  ], 
+  "finished_count": 4, 
+  "revit_version": "2025", 
+  "completed_utc": "2026-10-16T05:55:33Z", 
+  "purpose": "651 Belmont PH GOOD OEM independent native QA R03", 
+  "release_ready": false, 
+  "schema_version": 3, 
+  "disposable_project_saved": false, 
+  "release_holds": [
+    "Exact type/finish and non-fan OEM dimensions require confirmed manufacturer source/variant review", 
+    "Native emitter/IES quality and visual review are separate from file/placement inspection"
+  ], 
+  "read_only_sources": true, 
+  "family_count": 4, 
+  "duration_seconds": 25.983000000000001, 
+  "started_utc": "2026-10-16T05:55:07Z"
+}

@@ -1,0 +1,60 @@
+{
+  "archive_bytes": 10345,
+  "archive_crc_pass": true,
+  "archive_members": [
+    "FR-W2502-52L.IES"
+  ],
+  "archive_path": "E:\\Claude\\3D-Model-Workflow\\output\\belmont_ph_good_rfa_20261016\\sources\\photometry\\MFR1415595_FR-W2502-52_IES_official.zip",
+  "archive_sha256": "c9efc10fbe0789df3e85759ba587572bff0fb13a69e4e966571ae25b374b170a",
+  "base_model": "FR-W2502-52L",
+  "ies_bytes": 25749,
+  "ies_path": "E:\\Claude\\3D-Model-Workflow\\output\\belmont_ph_good_rfa_20261016\\sources\\photometry\\FR-W2502-52L.IES",
+  "ies_sha256": "6044dda98294020d03decd14ad118be2717845536597d1ca9bb9cc296fdcda8e",
+  "ies_validation": {
+    "candela_multiplier": 1.0,
+    "candela_samples": 3077,
+    "cct_specific_photometry_verified": false,
+    "finish_specific_photometry_verified": false,
+    "header_tags": {
+      "ISSUEDATE": "2024-11-26 15:35:29",
+      "LAMPPOSITION": "0,0",
+      "LUMCAT": "Ceiling Fans",
+      "LUMINAIRE": "FR-W2502-52L",
+      "MANUFAC": "WAC Lighting",
+      "NEARFIELD": "",
+      "OTHER": "EVERFINE GO-R5000_V2 SYSTEM",
+      "TEST": "",
+      "TESTDATE": "2024-11-25",
+      "TESTLAB": "WAC Lighting"
+    },
+    "horizontal_angles": 17,
+    "integrated_flux_diff_percent": -0.011,
+    "integrated_flux_lm_approx": 707.00955,
+    "lamp_lumens": 707.09,
+    "lamps": 1,
+    "max_candela": 244.86,
+    "official_delivered_lumens": 707,
+    "official_nominal_led_watts": 16,
+    "photometric_type": "C",
+    "standard": "IESNA:LM-63-2002",
+    "test_input_watts": 16.7549,
+    "tested_watts_diff_from_nominal_percent": 4.718,
+    "tilt": "NONE",
+    "units_type": "feet",
+    "valid": true,
+    "vertical_angles": 181
+  },
+  "limitations": [
+    "IES names exact base model, not Soft Brass/Matte Black finish or CCT variant",
+    "Raw type-string IES reference in OEM RFA is not proof of a bound Revit LightFamily",
+    "Candidate Revit LightFamily/distribution/native propagation must be checked before SaveAs",
+    "IES file must accompany candidate unless native photometric cache portability is verified"
+  ],
+  "manufacturer": "WAC Lighting / Modern Forms",
+  "official_archive_url": "https://modernforms.com/images/products/IES_FILES/FR-W2502-52_IES.zip",
+  "official_product_url": "https://modernforms.com/product/smooth/",
+  "official_spec_url": "https://modernforms.com/images/products/SPECSHEET_PDF/FR-W2502_SPSHT.pdf",
+  "sku": "FR-W2502-52L-SB/MB",
+  "status": "EXACT_MANUFACTURER_LM63_VALIDATED_NATIVE_REVIT_BINDING_PENDING",
+  "verified_at_utc": "2026-10-16T08:20:57.530747+00:00"
+}

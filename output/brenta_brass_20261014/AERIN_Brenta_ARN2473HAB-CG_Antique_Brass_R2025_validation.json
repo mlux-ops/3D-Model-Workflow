@@ -1,0 +1,126 @@
+{
+  "manufacturer": "Visual Comfort Signature / AERIN", 
+  "bounds_method": "Fine native face meshes plus 128-sample analytic edges", 
+  "stage": "failed", 
+  "inferences": "Published nominal envelope: 3.5 W x 18.5 H x 3.75 projection inches; backplate 3.5 x 5.25. Glass end diameter 2.024, sleeve diameter 1.914 and height 3.611, diffuser diameter 1.347 and total length 17.237 are manufacturer-model-derived. Printed overall dimensions govern over the slightly oversized source model. Glass wall .085, backplate projection .875, small edge rounds and diffuser end radius .30 are source-photo-informed approximations. Hand-Rubbed Antique Brass is an appearance approximation; no measured finish calibration. Fixed native geometry; editable material parameters; 2700K appearance glow, no photometric source. Requires the manufacturer-specified smaller 2x4-inch junction box.", 
+  "type": "Hand-Rubbed Antique Brass - White Glass", 
+  "parts": [
+    {
+      "id": "3218", 
+      "volume_ft3": 0.0093035885607845974, 
+      "name": "Brass rectangular backplate"
+    }, 
+    {
+      "id": "3219", 
+      "volume_ft3": 0.0015983684482066937, 
+      "name": "Brass mounting standoff"
+    }, 
+    {
+      "id": "3220", 
+      "volume_ft3": 0.0060010680571769585, 
+      "name": "Brass central sleeve"
+    }, 
+    {
+      "id": "3221", 
+      "volume_ft3": 0.0022894753428242265, 
+      "name": "Upper subtly flared clear glass shell"
+    }, 
+    {
+      "id": "3222", 
+      "volume_ft3": 0.0047893376283999209, 
+      "name": "Upper rounded white diffuser"
+    }, 
+    {
+      "id": "3223", 
+      "volume_ft3": 0.0022894753428242265, 
+      "name": "Lower subtly flared clear glass shell"
+    }, 
+    {
+      "id": "3224", 
+      "volume_ft3": 0.0047893376283999209, 
+      "name": "Lower rounded white diffuser"
+    }
+  ], 
+  "revit_build": "25.4.50.35", 
+  "source_url": "https://www.lightology.com/index.php?module=prod_detail&prod_id=1241670&option_id=1241669", 
+  "appearance_defaults": {
+    "Diffuser Finish": {
+      "gloss": 0.17999999999999999, 
+      "transparency": 0, 
+      "diffuse_bitmap": "E:\\Claude\\3D-Model-Workflow\\output\\brenta_brass_20261014\\textures\\Brenta_White_Diffuser_Color.png", 
+      "luminance": 100, 
+      "cct_k": 2700, 
+      "is_metal": false, 
+      "rgb": [
+        248, 
+        244, 
+        234
+      ]
+    }, 
+    "Glass Finish": {
+      "gloss": 0.93999999999999995, 
+      "transparency": 0.88, 
+      "diffuse_bitmap": "E:\\Claude\\3D-Model-Workflow\\output\\brenta_brass_20261014\\textures\\Brenta_Clear_Glass_Color.png", 
+      "luminance": 0, 
+      "cct_k": null, 
+      "is_metal": false, 
+      "rgb": [
+        246, 
+        248, 
+        246
+      ]
+    }, 
+    "Metal Finish": {
+      "gloss": 0.5, 
+      "transparency": 0, 
+      "diffuse_bitmap": "E:\\Claude\\3D-Model-Workflow\\output\\brenta_brass_20261014\\textures\\Brenta_Hand_Rubbed_Antique_Brass_Color.png", 
+      "luminance": 0, 
+      "cct_k": null, 
+      "is_metal": true, 
+      "rgb": [
+        174, 
+        143, 
+        91
+      ]
+    }
+  }, 
+  "revit_version": "2025", 
+  "model": "ARN 2473HAB-CG", 
+  "rfa_path": "E:\\Claude\\3D-Model-Workflow\\output\\brenta_brass_20261014\\AERIN_Brenta_ARN2473HAB-CG_Antique_Brass_R2025.rfa", 
+  "cct_k": 2700, 
+  "started_utc": "2026-10-14T17:22:14.386000Z", 
+  "diffuser_end_rounding_inferred_in": 0.29999999999999999, 
+  "bounds_in": [
+    -1.75, 
+    -9.2499997615814209, 
+    -1.215702225812492e-24, 
+    1.75, 
+    9.2499997615814209, 
+    3.75
+  ], 
+  "finish": "Hand-Rubbed Antique Brass", 
+  "expected_dimensions_in": [
+    3.5, 
+    18.5, 
+    3.75
+  ], 
+  "template_form_ids": [
+    "1537"
+  ], 
+  "display_bounds_in": [
+    -1.75, 
+    -9.25, 
+    0.0, 
+    1.75, 
+    9.25, 
+    3.7004691944906973
+  ], 
+  "error": "Traceback (most recent call last):\n  File \"E:\\Claude\\3D-Model-Workflow\\output\\brenta_brass_20261014\\source\\build_brenta_brass.py\", line 84, in <module>\n    report = f.finish()\n  File \"E:\\Claude\\3D-Model-Workflow\\output\\brenta_brass_20261014\\source\\native_fixture_support.py\", line 219, in finish\n    self.doc.SaveAs(self.path,so);self._export(self.doc,views,self.basename)\n  File \"E:\\Claude\\3D-Model-Workflow\\output\\brenta_brass_20261014\\source\\native_fixture_support.py\", line 206, in _export\n    doc.ExportImage(options)\nException: Failed to export image due to an error with the inputs.\n", 
+  "actual_dimensions_in": [
+    3.5, 
+    18.499999523162842, 
+    3.75
+  ], 
+  "technical_pass": false, 
+  "geometry_basis": "Native reconstruction using published dimensions and manufacturer component proportions"
+}

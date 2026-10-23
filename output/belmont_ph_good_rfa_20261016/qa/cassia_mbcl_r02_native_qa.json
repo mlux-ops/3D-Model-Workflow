@@ -1,0 +1,182 @@
+{
+  "candidate": "E:\\Claude\\3D-Model-Workflow\\output\\belmont_ph_good_rfa_20261016\\candidates\\Alora_Cassia_LP549448MBCL_R2025_R02.rfa", 
+  "checks": {
+    "agop_original_materials": true, 
+    "all_exact_type_names": true, 
+    "build_receipt_matches_candidate": true, 
+    "clear_glass_95_shaded_transparency": true, 
+    "clear_glass_realistic_appearance": true, 
+    "clear_glass_type_binding": true, 
+    "lighting_fixture_category": true, 
+    "matte_black_preserved": true, 
+    "mbop_original_materials": true, 
+    "no_family_warnings": true, 
+    "one_level_based_hosted_type": true, 
+    "original_and_candidate_files_unchanged": true, 
+    "sha256_expected_Alora_Cassia_LP549448MBCL_R2025.rfa": true, 
+    "sha256_expected_Alora_Cassia_LP549448MBCL_R2025_R02.rfa": true, 
+    "sha256_expected_LP549448-Cassia.rfa": true
+  }, 
+  "error": "Traceback (most recent call last):\n  File \"E:\\Claude\\3D-Model-Workflow\\output\\belmont_ph_good_rfa_20261016\\qa\\cassia_mbcl_r02_native_qa.py\", line 515, in main\n    report['placement'] = check_placement(app)\n  File \"E:\\Claude\\3D-Model-Workflow\\output\\belmont_ph_good_rfa_20261016\\qa\\cassia_mbcl_r02_native_qa.py\", line 403, in check_placement\n    matches = [project.GetElement(tid) for tid in loaded.GetFamilySymbolIds()]\nAttributeError: 'bool' object has no attribute 'GetFamilySymbolIds'\n", 
+  "family_category": "Lighting Fixtures", 
+  "family_placement_type": "OneLevelBasedHosted", 
+  "family_warnings": [], 
+  "files_unchanged": true, 
+  "output": "E:\\Claude\\3D-Model-Workflow\\output\\belmont_ph_good_rfa_20261016\\qa\\cassia_mbcl_r02_native_qa.json", 
+  "photometric_status": "NOT_TESTED_BY_THIS_SCRIPT", 
+  "purpose": "Independent native read-only QA of Cassia LP549448MBCL R02", 
+  "revit_version": "2025", 
+  "run_utc": "2026-10-16T06:02:47Z", 
+  "schema_version": 1, 
+  "source_files_after": {
+    "E:\\Claude\\3D-Model-Workflow\\output\\belmont_ph_good_rfa_20261016\\candidates\\Alora_Cassia_LP549448MBCL_R2025_R02.rfa": {
+      "bytes": 2048000, 
+      "exists": true, 
+      "path": "E:\\Claude\\3D-Model-Workflow\\output\\belmont_ph_good_rfa_20261016\\candidates\\Alora_Cassia_LP549448MBCL_R2025_R02.rfa", 
+      "sha256": "c380fb71be8d69008911cef833b0838e53bc96b84650ece9d63d817ab56f3c02"
+    }, 
+    "E:\\Claude\\3D-Model-Workflow\\output\\belmont_ph_good_rfa_20261016\\families\\Alora_Cassia_LP549448MBCL_R2025.rfa": {
+      "bytes": 2043904, 
+      "exists": true, 
+      "path": "E:\\Claude\\3D-Model-Workflow\\output\\belmont_ph_good_rfa_20261016\\families\\Alora_Cassia_LP549448MBCL_R2025.rfa", 
+      "sha256": "27ce97b87c28cabaf249ebc4410ce9bf1b387e16a2232e2fc29e153530c09ac3"
+    }, 
+    "E:\\Claude\\3D-Model-Workflow\\output\\belmont_ph_good_rfa_20261016\\qa\\cassia_mbcl_r02_build.json": {
+      "bytes": 2155, 
+      "exists": true, 
+      "path": "E:\\Claude\\3D-Model-Workflow\\output\\belmont_ph_good_rfa_20261016\\qa\\cassia_mbcl_r02_build.json", 
+      "sha256": "a742ec4f0a499126e526fffa07193036fcfb076fdfdf7472be22e6ea2903a6c8"
+    }, 
+    "E:\\Claude\\3D-Model-Workflow\\output\\belmont_ph_good_rfa_20261016\\sources\\oem\\extracted\\ALR1280090_LP549448_Cassia_Revit\\LP549448-Cassia.rfa": {
+      "bytes": 2768896, 
+      "exists": true, 
+      "path": "E:\\Claude\\3D-Model-Workflow\\output\\belmont_ph_good_rfa_20261016\\sources\\oem\\extracted\\ALR1280090_LP549448_Cassia_Revit\\LP549448-Cassia.rfa", 
+      "sha256": "1bd05892bc0598d43b30afca32f648ad26fbd6df2e3776bd8c169b1ad743db9e"
+    }
+  }, 
+  "source_files_before": {
+    "E:\\Claude\\3D-Model-Workflow\\output\\belmont_ph_good_rfa_20261016\\candidates\\Alora_Cassia_LP549448MBCL_R2025_R02.rfa": {
+      "bytes": 2048000, 
+      "exists": true, 
+      "path": "E:\\Claude\\3D-Model-Workflow\\output\\belmont_ph_good_rfa_20261016\\candidates\\Alora_Cassia_LP549448MBCL_R2025_R02.rfa", 
+      "sha256": "c380fb71be8d69008911cef833b0838e53bc96b84650ece9d63d817ab56f3c02"
+    }, 
+    "E:\\Claude\\3D-Model-Workflow\\output\\belmont_ph_good_rfa_20261016\\families\\Alora_Cassia_LP549448MBCL_R2025.rfa": {
+      "bytes": 2043904, 
+      "exists": true, 
+      "path": "E:\\Claude\\3D-Model-Workflow\\output\\belmont_ph_good_rfa_20261016\\families\\Alora_Cassia_LP549448MBCL_R2025.rfa", 
+      "sha256": "27ce97b87c28cabaf249ebc4410ce9bf1b387e16a2232e2fc29e153530c09ac3"
+    }, 
+    "E:\\Claude\\3D-Model-Workflow\\output\\belmont_ph_good_rfa_20261016\\qa\\cassia_mbcl_r02_build.json": {
+      "bytes": 2155, 
+      "exists": true, 
+      "path": "E:\\Claude\\3D-Model-Workflow\\output\\belmont_ph_good_rfa_20261016\\qa\\cassia_mbcl_r02_build.json", 
+      "sha256": "a742ec4f0a499126e526fffa07193036fcfb076fdfdf7472be22e6ea2903a6c8"
+    }, 
+    "E:\\Claude\\3D-Model-Workflow\\output\\belmont_ph_good_rfa_20261016\\sources\\oem\\extracted\\ALR1280090_LP549448_Cassia_Revit\\LP549448-Cassia.rfa": {
+      "bytes": 2768896, 
+      "exists": true, 
+      "path": "E:\\Claude\\3D-Model-Workflow\\output\\belmont_ph_good_rfa_20261016\\sources\\oem\\extracted\\ALR1280090_LP549448_Cassia_Revit\\LP549448-Cassia.rfa", 
+      "sha256": "1bd05892bc0598d43b30afca32f648ad26fbd6df2e3776bd8c169b1ad743db9e"
+    }
+  }, 
+  "source_spec_url": "https://s3-us-west-2.amazonaws.com/catsy.870/LP549448_Spec_Sheet.pdf", 
+  "status": "ERROR", 
+  "type_materials": {
+    "checks": {
+      "agop_original_materials": true, 
+      "all_exact_type_names": true, 
+      "clear_glass_95_shaded_transparency": true, 
+      "clear_glass_realistic_appearance": true, 
+      "clear_glass_type_binding": true, 
+      "matte_black_preserved": true, 
+      "mbop_original_materials": true
+    }, 
+    "type_names": [
+      "LP549448AGOP", 
+      "LP549448MBCL", 
+      "LP549448MBOP"
+    ], 
+    "types": {
+      "LP549448AGOP": {
+        "GLASS_COLOR": {
+          "appearance": "Glass - Frosted", 
+          "appearance_asset_bound": true, 
+          "id": 4655, 
+          "name": "CASSIA_OPAL_GLASS", 
+          "rgb": [
+            245, 
+            245, 
+            243
+          ], 
+          "transparency_percent": 14
+        }, 
+        "METAL_FINISH": {
+          "appearance": "Gold - Polished", 
+          "appearance_asset_bound": true, 
+          "id": 4653, 
+          "name": "CASSIA_AG-FINISH", 
+          "rgb": [
+            207, 
+            181, 
+            59
+          ], 
+          "transparency_percent": 0
+        }
+      }, 
+      "LP549448MBCL": {
+        "GLASS_COLOR": {
+          "appearance": "Cassia Clear Glass LP549448MBCL", 
+          "appearance_asset_bound": true, 
+          "id": 11944, 
+          "name": "CASSIA_CLEAR_GLASS_MBCL", 
+          "rgb": [
+            245, 
+            245, 
+            243
+          ], 
+          "transparency_percent": 95
+        }, 
+        "METAL_FINISH": {
+          "appearance": "Plastic - Matte (Black)", 
+          "appearance_asset_bound": true, 
+          "id": 4647, 
+          "name": "CASSIA_MB_FINISH", 
+          "rgb": [
+            25, 
+            25, 
+            25
+          ], 
+          "transparency_percent": 0
+        }
+      }, 
+      "LP549448MBOP": {
+        "GLASS_COLOR": {
+          "appearance": "Glass - Frosted", 
+          "appearance_asset_bound": true, 
+          "id": 4655, 
+          "name": "CASSIA_OPAL_GLASS", 
+          "rgb": [
+            245, 
+            245, 
+            243
+          ], 
+          "transparency_percent": 14
+        }, 
+        "METAL_FINISH": {
+          "appearance": "Plastic - Matte (Black)", 
+          "appearance_asset_bound": true, 
+          "id": 4647, 
+          "name": "CASSIA_MB_FINISH", 
+          "rgb": [
+            25, 
+            25, 
+            25
+          ], 
+          "transparency_percent": 0
+        }
+      }
+    }
+  }, 
+  "visual_render_status": "NOT_TESTED_BY_THIS_SCRIPT"
+}

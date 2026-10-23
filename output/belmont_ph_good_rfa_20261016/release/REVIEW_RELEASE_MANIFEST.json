@@ -1,0 +1,77 @@
+{
+  "archive": "E:\\Claude\\3D-Model-Workflow\\output\\belmont_ph_good_rfa_20261016\\release\\Belmont_PH_GOOD_Lighting_RFA_REVIEW_20261016_r01.zip",
+  "archive_sha256": "515ae8dfa5e4e3f2fa0857cf8a4c59312ee62f318ec80b8f527f9b11830acb0f",
+  "rfas": [
+    {
+      "smartsheet_sku": "ALR1280090",
+      "file_name": "Alora_Cassia_LP549448MBCL_R2025.rfa",
+      "kind": "oem",
+      "sha256": "27ce97b87c28cabaf249ebc4410ce9bf1b387e16a2232e2fc29e153530c09ac3",
+      "bytes": 2043904,
+      "native_batch_status": "PASS",
+      "native_receipt": "E:\\Claude\\3D-Model-Workflow\\output\\belmont_ph_good_rfa_20261016\\runner\\receipts\\alr1280090.json",
+      "remaining_acceptance": "Verify source finish/type, electrical and project placement"
+    },
+    {
+      "smartsheet_sku": "HIN990485",
+      "file_name": "Hinkley_Eos_53860BK_R2025.rfa",
+      "kind": "custom",
+      "sha256": "deb0703e15dd52c559589acd3fb8ff08c0506c6fc824c528fc39b2e43987a10e",
+      "bytes": 466944,
+      "native_batch_status": "PASS",
+      "native_receipt": "E:\\Claude\\3D-Model-Workflow\\output\\belmont_ph_good_rfa_20261016\\runner\\receipts\\hin990485.json",
+      "remaining_acceptance": "HOLD: visual-fidelity approval, IES and connector"
+    },
+    {
+      "smartsheet_sku": "KZC1353667",
+      "file_name": "Kuzco_Bolla_PD3106_BG_R2025.rfa",
+      "kind": "oem",
+      "sha256": "eb5cf17c25531152acc8e51ccb0ad5bd80913ae547f878d9108d059090e6f2f3",
+      "bytes": 524288,
+      "native_batch_status": "PASS",
+      "native_receipt": "E:\\Claude\\3D-Model-Workflow\\output\\belmont_ph_good_rfa_20261016\\runner\\receipts\\kzc1353667.json",
+      "remaining_acceptance": "Verify source finish/type, electrical and project placement"
+    },
+    {
+      "smartsheet_sku": "MFR1415595",
+      "file_name": "ModernForms_Smooth_FR-W2502-52L_SBMB_R2025.rfa",
+      "kind": "oem",
+      "sha256": "45c76b46fba9daebcf5d0ebbedb7b5592d4eaa50cbbd4b5b59fe44321b7b8e18",
+      "bytes": 8613888,
+      "native_batch_status": "PASS",
+      "native_receipt": "E:\\Claude\\3D-Model-Workflow\\output\\belmont_ph_good_rfa_20261016\\runner\\receipts\\mfr1415595.json",
+      "remaining_acceptance": "Verify source finish/type, electrical and project placement"
+    },
+    {
+      "smartsheet_sku": "MFR201959",
+      "file_name": "ModernForms_Vogue_WS-3127_CH_R2025.rfa",
+      "kind": "oem",
+      "sha256": "1dcb1673b31ff277f9482bc5ded7a244922598f782196d2d2804c773768db4df",
+      "bytes": 1400832,
+      "native_batch_status": "PASS",
+      "native_receipt": "E:\\Claude\\3D-Model-Workflow\\output\\belmont_ph_good_rfa_20261016\\runner\\receipts\\mfr201959.json",
+      "remaining_acceptance": "Verify source finish/type, electrical and project placement"
+    },
+    {
+      "smartsheet_sku": "QUO1249827",
+      "file_name": "Quorum_Veno_858-59_R2025.rfa",
+      "kind": "custom",
+      "sha256": "0ca00bebf1238e8a587dfe41865c820339e9a2aa314a1816b4b77c35561c1444",
+      "bytes": 479232,
+      "native_batch_status": "PASS",
+      "native_receipt": "E:\\Claude\\3D-Model-Workflow\\output\\belmont_ph_good_rfa_20261016\\runner\\receipts\\quo1249827.json",
+      "remaining_acceptance": "HOLD: visual-fidelity approval, IES and connector"
+    },
+    {
+      "smartsheet_sku": "VCS833918",
+      "file_name": "Visual_Comfort_Nodes_KW1041BBS_Burnished_Brass_R2025.rfa",
+      "kind": "reuse",
+      "sha256": "446223760904a196d04c30cdd9f8676b0f67d46c0e91516080a160e8db91879f",
+      "bytes": 479232,
+      "native_batch_status": "prior accepted",
+      "native_receipt": null,
+      "remaining_acceptance": "Existing visualization-approved family; project validation pending"
+    }
+  ],
+  "status": "REVIEW_ONLY"
+}

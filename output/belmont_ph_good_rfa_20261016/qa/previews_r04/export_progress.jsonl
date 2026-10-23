@@ -1,0 +1,28 @@
+{"utc": "2026-10-16T07:21:22Z", "stage": "BATCH_STARTED", "id": null, "detail": {"families": ["cassia_r02", "hinkley_eos_r02", "vogue_ch_r02", "quorum_veno_r03", "bolla_oem", "smooth_oem"]}}
+{"utc": "2026-10-16T07:21:23Z", "stage": "OPEN_RFA", "id": "cassia_r02", "detail": null}
+{"utc": "2026-10-16T07:21:29Z", "stage": "EXPORT_PROJECT_VIEW_FRONT", "id": "cassia_r02", "detail": null}
+{"utc": "2026-10-16T07:21:29Z", "stage": "EXPORT_PROJECT_VIEW_OBLIQUE", "id": "cassia_r02", "detail": null}
+{"utc": "2026-10-16T07:21:29Z", "stage": "OPEN_RFA", "id": "hinkley_eos_r02", "detail": null}
+{"utc": "2026-10-16T07:21:31Z", "stage": "EXPORT_PROJECT_VIEW_FRONT", "id": "hinkley_eos_r02", "detail": null}
+{"utc": "2026-10-16T07:21:31Z", "stage": "EXPORT_PROJECT_VIEW_OBLIQUE", "id": "hinkley_eos_r02", "detail": null}
+{"utc": "2026-10-16T07:21:31Z", "stage": "OPEN_RFA", "id": "vogue_ch_r02", "detail": null}
+{"utc": "2026-10-16T07:21:34Z", "stage": "EXPORT_PROJECT_VIEW_FRONT", "id": "vogue_ch_r02", "detail": null}
+{"utc": "2026-10-16T07:21:34Z", "stage": "EXPORT_PROJECT_VIEW_OBLIQUE", "id": "vogue_ch_r02", "detail": null}
+{"utc": "2026-10-16T07:21:34Z", "stage": "OPEN_RFA", "id": "quorum_veno_r03", "detail": null}
+{"utc": "2026-10-16T07:21:36Z", "stage": "EXPORT_PROJECT_VIEW_FRONT", "id": "quorum_veno_r03", "detail": null}
+{"utc": "2026-10-16T07:21:37Z", "stage": "PROJECT_IMAGE_ERROR_FRONT", "id": "quorum_veno_r03", "detail": "Traceback (most recent call last):\n  File \"E:\\Claude\\3D-Model-Workflow\\output\\belmont_ph_good_rfa_20261016\\qa\\export_rfa_previews_r04.py\", line 711, in render_target\n    row['image']=export_one(project, view,spec['id']+'_'+label)\n  File \"E:\\Claude\\3D-Model-Workflow\\output\\belmont_ph_good_rfa_20261016\\qa\\export_rfa_previews_r04.py\", line 558, in export_one\n    raise RuntimeError('PNG image is not approximately 1200px on longest side: ' +\nRuntimeError: PNG image is not approximately 1200px on longest side: [1200, 3600]\n"}
+{"utc": "2026-10-16T07:21:37Z", "stage": "FAMILY_VIEW_FALLBACK_FRONT", "id": "quorum_veno_r03", "detail": null}
+{"utc": "2026-10-16T07:21:37Z", "stage": "EXPORT_PROJECT_VIEW_OBLIQUE", "id": "quorum_veno_r03", "detail": null}
+{"utc": "2026-10-16T07:21:37Z", "stage": "PROJECT_IMAGE_ERROR_OBLIQUE", "id": "quorum_veno_r03", "detail": "Traceback (most recent call last):\n  File \"E:\\Claude\\3D-Model-Workflow\\output\\belmont_ph_good_rfa_20261016\\qa\\export_rfa_previews_r04.py\", line 711, in render_target\n    row['image']=export_one(project, view,spec['id']+'_'+label)\n  File \"E:\\Claude\\3D-Model-Workflow\\output\\belmont_ph_good_rfa_20261016\\qa\\export_rfa_previews_r04.py\", line 558, in export_one\n    raise RuntimeError('PNG image is not approximately 1200px on longest side: ' +\nRuntimeError: PNG image is not approximately 1200px on longest side: [1200, 2792]\n"}
+{"utc": "2026-10-16T07:21:37Z", "stage": "FAMILY_VIEW_FALLBACK_OBLIQUE", "id": "quorum_veno_r03", "detail": null}
+{"utc": "2026-10-16T07:21:38Z", "stage": "OPEN_RFA", "id": "bolla_oem", "detail": null}
+{"utc": "2026-10-16T07:21:39Z", "stage": "EXPORT_PROJECT_VIEW_FRONT", "id": "bolla_oem", "detail": null}
+{"utc": "2026-10-16T07:21:40Z", "stage": "PROJECT_IMAGE_ERROR_FRONT", "id": "bolla_oem", "detail": "Traceback (most recent call last):\n  File \"E:\\Claude\\3D-Model-Workflow\\output\\belmont_ph_good_rfa_20261016\\qa\\export_rfa_previews_r04.py\", line 711, in render_target\n    row['image']=export_one(project, view,spec['id']+'_'+label)\n  File \"E:\\Claude\\3D-Model-Workflow\\output\\belmont_ph_good_rfa_20261016\\qa\\export_rfa_previews_r04.py\", line 558, in export_one\n    raise RuntimeError('PNG image is not approximately 1200px on longest side: ' +\nRuntimeError: PNG image is not approximately 1200px on longest side: [1200, 4022]\n"}
+{"utc": "2026-10-16T07:21:40Z", "stage": "FAMILY_VIEW_FALLBACK_FRONT", "id": "bolla_oem", "detail": null}
+{"utc": "2026-10-16T07:21:40Z", "stage": "EXPORT_PROJECT_VIEW_OBLIQUE", "id": "bolla_oem", "detail": null}
+{"utc": "2026-10-16T07:21:41Z", "stage": "PROJECT_IMAGE_ERROR_OBLIQUE", "id": "bolla_oem", "detail": "Traceback (most recent call last):\n  File \"E:\\Claude\\3D-Model-Workflow\\output\\belmont_ph_good_rfa_20261016\\qa\\export_rfa_previews_r04.py\", line 711, in render_target\n    row['image']=export_one(project, view,spec['id']+'_'+label)\n  File \"E:\\Claude\\3D-Model-Workflow\\output\\belmont_ph_good_rfa_20261016\\qa\\export_rfa_previews_r04.py\", line 558, in export_one\n    raise RuntimeError('PNG image is not approximately 1200px on longest side: ' +\nRuntimeError: PNG image is not approximately 1200px on longest side: [1200, 3060]\n"}
+{"utc": "2026-10-16T07:21:41Z", "stage": "FAMILY_VIEW_FALLBACK_OBLIQUE", "id": "bolla_oem", "detail": null}
+{"utc": "2026-10-16T07:21:42Z", "stage": "OPEN_RFA", "id": "smooth_oem", "detail": null}
+{"utc": "2026-10-16T07:21:47Z", "stage": "EXPORT_PROJECT_VIEW_FRONT", "id": "smooth_oem", "detail": null}
+{"utc": "2026-10-16T07:21:48Z", "stage": "EXPORT_PROJECT_VIEW_OBLIQUE", "id": "smooth_oem", "detail": null}
+{"utc": "2026-10-16T07:21:49Z", "stage": "BATCH_COMPLETED", "id": null, "detail": {"fallback_png_views": 2, "preview_complete": false, "project_png_views": 8}}

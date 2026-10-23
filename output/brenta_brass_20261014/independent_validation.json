@@ -1,0 +1,214 @@
+{
+  "finished_utc": "2026-10-14T17:27:59.620000Z", 
+  "reopened": true, 
+  "revit_version": "2025", 
+  "import_instance_count": 0, 
+  "native_mesh": {
+    "file": "E:\\Claude\\3D-Model-Workflow\\output\\brenta_brass_20261014\\native_mesh.json.gz", 
+    "parts": 7, 
+    "triangles": 10624
+  }, 
+  "component_dimensions_in": [
+    [
+      3.5, 
+      5.25, 
+      0.875
+    ], 
+    [
+      1.1200000047683716, 
+      2.4800000000000000, 
+      0.99500003457069397
+    ], 
+    [
+      1.9140000343322754, 
+      3.6110000610351562, 
+      1.9140000343322754
+    ], 
+    [
+      2.0240000000000000, 
+      7.5499997735023499, 
+      2.0240000000000000
+    ], 
+    [
+      1.3470000028610229, 
+      6.9384997558593753, 
+      1.3470000000000004
+    ], 
+    [
+      2.0240000000000000, 
+      7.5499997735023499, 
+      2.0240000000000000
+    ], 
+    [
+      1.3470000028610229, 
+      6.9384997558593753, 
+      1.3470000000000004
+    ]
+  ], 
+  "project_warnings": [], 
+  "native_solid_count": 7, 
+  "dimensions_in": [
+    3.5, 
+    18.499999523162842, 
+    3.75
+  ], 
+  "pass": true, 
+  "started_utc": "2026-10-14T17:27:41.450000Z", 
+  "type_name": "Hand-Rubbed Antique Brass - White Glass", 
+  "placements": {
+    "Horizontal": {
+      "pass": true, 
+      "hostface_verified": true, 
+      "expected_in": [
+        18.5, 
+        3.75, 
+        3.5
+      ], 
+      "dimensions_in": [
+        18.499999523162842, 
+        3.75, 
+        3.5000038146972656
+      ], 
+      "normal_dot": 1.0
+    }, 
+    "Vertical": {
+      "pass": true, 
+      "hostface_verified": true, 
+      "expected_in": [
+        3.5, 
+        3.75, 
+        18.5
+      ], 
+      "dimensions_in": [
+        3.5000004768374069, 
+        3.75, 
+        18.500003814697266
+      ], 
+      "normal_dot": 1.0
+    }
+  }, 
+  "placement": "WorkPlaneBased", 
+  "horizontal_camera_front_of_wall": true, 
+  "model": "ARN 2473HAB-CG", 
+  "hosting_behavior": 5, 
+  "rfa_path": "E:\\Claude\\3D-Model-Workflow\\output\\brenta_brass_20261014\\AERIN_Brenta_ARN2473HAB-CG_Antique_Brass_R2025.rfa", 
+  "category": "Lighting Fixtures", 
+  "family_materials": {
+    "Metal Finish": {
+      "generic_transparency": 0.0, 
+      "rgb": [
+        174, 
+        143, 
+        91
+      ], 
+      "bitmap_exists": true, 
+      "generic_self_illum_luminance": 0.0, 
+      "generic_self_illum_color_temperature": 6500.0, 
+      "bitmap": "E:\\Claude\\3D-Model-Workflow\\output\\brenta_brass_20261014\\textures\\Brenta_Hand_Rubbed_Antique_Brass_Color.png", 
+      "bitmap_sha256": "0842825e3a8ab5d3313ecad6c715c1f670cc8c43634e81070ee4586407a5e6c6", 
+      "name": "AERIN_Brenta_ARN2473HAB-CG_Antique_Brass_R2025 Metal Finish", 
+      "generic_is_metal": true, 
+      "generic_glossiness": 0.5
+    }, 
+    "Glass Finish": {
+      "generic_transparency": 0.88, 
+      "rgb": [
+        246, 
+        248, 
+        246
+      ], 
+      "bitmap_exists": true, 
+      "generic_self_illum_luminance": 0.0, 
+      "generic_self_illum_color_temperature": 6500.0, 
+      "bitmap": "E:\\Claude\\3D-Model-Workflow\\output\\brenta_brass_20261014\\textures\\Brenta_Clear_Glass_Color.png", 
+      "bitmap_sha256": "c032c7e95efb42b62fd2ec85cf2cb3e5e0ee62ca03ba46416939ee2081e6fb8f", 
+      "name": "AERIN_Brenta_ARN2473HAB-CG_Antique_Brass_R2025 Glass Finish", 
+      "generic_is_metal": false, 
+      "generic_glossiness": 0.93999999999999995
+    }, 
+    "Diffuser Finish": {
+      "generic_transparency": 0.0, 
+      "rgb": [
+        248, 
+        244, 
+        234
+      ], 
+      "bitmap_exists": true, 
+      "generic_self_illum_luminance": 100.0, 
+      "generic_self_illum_color_temperature": 2700.0, 
+      "bitmap": "E:\\Claude\\3D-Model-Workflow\\output\\brenta_brass_20261014\\textures\\Brenta_White_Diffuser_Color.png", 
+      "bitmap_sha256": "621a538c01e2e7ca7af3fe29a43a1140e8fabdece949ac75a1d00ed79fb86dbb", 
+      "name": "AERIN_Brenta_ARN2473HAB-CG_Antique_Brass_R2025 Diffuser Finish", 
+      "generic_is_metal": false, 
+      "generic_glossiness": 0.17999999999999999
+    }
+  }, 
+  "gates": {
+    "both_orientations": true, 
+    "nominal_dimensions": true, 
+    "cct": true, 
+    "native_geometry": true, 
+    "reopened_2025": true, 
+    "nonmetallic_glass": true, 
+    "brass_finish": true, 
+    "material_parameters": true, 
+    "textures_resolved": true, 
+    "category": true, 
+    "correct_model": true, 
+    "geometry_views": true, 
+    "warnings": true, 
+    "native_face_based": true
+  }, 
+  "view_exports": [
+    {
+      "view": "Front", 
+      "style": "Shading", 
+      "pass": true
+    }, 
+    {
+      "view": "Side", 
+      "style": "Shading", 
+      "pass": true
+    }, 
+    {
+      "view": "Oblique", 
+      "style": "Shading", 
+      "pass": true
+    }, 
+    {
+      "view": "Material", 
+      "style": "Realistic", 
+      "pass": true
+    }, 
+    {
+      "view": "Horizontal Wall Placement", 
+      "style": "Shading", 
+      "pass": true
+    }
+  ], 
+  "material_tests": {
+    "Metal Finish": {
+      "changed_faces": 30, 
+      "appearance_survives_load": true, 
+      "restored_faces": 30, 
+      "assigned_faces": 30, 
+      "pass": true
+    }, 
+    "Glass Finish": {
+      "changed_faces": 24, 
+      "appearance_survives_load": true, 
+      "restored_faces": 24, 
+      "assigned_faces": 24, 
+      "pass": true
+    }, 
+    "Diffuser Finish": {
+      "changed_faces": 16, 
+      "appearance_survives_load": true, 
+      "restored_faces": 16, 
+      "assigned_faces": 16, 
+      "pass": true
+    }
+  }, 
+  "sha256": "94c09770209e107e5c6f53d3ccca9e0a560a9bdff869f17ab15610f76375cc5e", 
+  "family_warnings": []
+}

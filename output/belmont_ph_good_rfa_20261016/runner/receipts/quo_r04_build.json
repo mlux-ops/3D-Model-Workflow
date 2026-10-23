@@ -1,0 +1,6 @@
+{
+  "target": "E:\\Claude\\3D-Model-Workflow\\output\\belmont_ph_good_rfa_20261016\\candidates\\Quorum_Veno_858-59_R2025_R04_UNAPPROVED.rfa", 
+  "status": "FAIL", 
+  "source_builder": "E:\\Claude\\3D-Model-Workflow\\output\\belmont_ph_good_rfa_20261016\\scripts\\build_quo_858_59_r04.py", 
+  "error": "Traceback (most recent call last):\n  File \"E:\\Claude\\3D-Model-Workflow\\output\\belmont_ph_good_rfa_20261016\\runner\\build_quo_r04_native.py\", line 18, in <module>\n    execfile(SCRIPT,scope)\n  File \"E:\\Claude\\3D-Model-Workflow\\output\\belmont_ph_good_rfa_20261016\\scripts\\build_quo_858_59_r04.py\", line 95, in <module>\n    f.text('Lamp', 'One E26 medium-base, maximum 100W; lamp not supplied')\n  File \"E:\\Claude\\3D-Model-Workflow\\output\\belmont_ph_good_rfa_20261016\\scripts\\belmont_fixture_core.py\", line 65, in text\n    p = self.fm.AddParameter(name,self.DB.GroupTypeId.IdentityData,self.DB.SpecTypeId.String.Text,False)\nException: The name 'Lamp' is already in use.\r\nParameter name: parameterName\n"
+}

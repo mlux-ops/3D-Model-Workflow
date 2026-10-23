@@ -1,5 +1,9 @@
 # Project memory and error logging
 
+## File paths in replies
+
+User instruction, recorded 2026-10-04: **Every file path you give the user must be a full absolute path they can copy and paste**, for example `E:\Claude\3D-Model-Workflow\output\wieland_strip_grazer\README.md`. No relative paths, no `output/...` shorthand, no bare filenames, no `~`. This applies to every reply, summary, README, hand-off note and memory entry. Use Windows backslash form for local files and put each path in code formatting. For Drive files, give the full Drive-mount path (`F:\My Drive\3D Model Workflow\...`) and the Drive link. Paths inside this file and in scripts may stay relative where they are code or repo-internal references; paths shown to the user may not.
+
 ## Effort level
 
 User instruction, recorded 2026-09-26: **Default effort is high. Use max only for challenging textures, and only when the user requests it.** Don't pick max, or xhigh, on your own initiative, including for subagents and headless runs. The evidence is in `output/effort-trial-2026-09-26-hex/TRIAL_RESULTS.md`: max gave the best texture at about 4× the cost of high, and xhigh gave no clear gain over high.

@@ -1,0 +1,21 @@
+{
+  "error": "Traceback (most recent call last):\n  File \"E:\\Claude\\3D-Model-Workflow\\output\\belmont_ph_good_rfa_20261016\\scripts\\bind_smooth_frw2502_r03_exact_ies.py\", line 282, in main\n    before = read_native_light(doc, require_writable=True)\n  File \"E:\\Claude\\3D-Model-Workflow\\output\\belmont_ph_good_rfa_20261016\\scripts\\bind_smooth_frw2502_r03_exact_ies.py\", line 214, in read_native_light\n    require(count == 1,\n  File \"E:\\Claude\\3D-Model-Workflow\\output\\belmont_ph_good_rfa_20261016\\scripts\\bind_smooth_frw2502_r03_exact_ies.py\", line 55, in require\n    raise RuntimeError(msg)\nRuntimeError: BLOCKED_NATIVE_LIGHT_TYPE_COUNT: expected 1; got 0\n", 
+  "finish": "SB/MB", 
+  "ies": "E:\\Claude\\3D-Model-Workflow\\output\\belmont_ph_good_rfa_20261016\\sources\\photometry\\FR-W2502-52L.IES", 
+  "ies_sha256": "6044dda98294020d03decd14ad118be2717845536597d1ca9bb9cc296fdcda8e", 
+  "ies_test_input_watts": 16.754899999999999, 
+  "ies_test_lumens": 707.09000000000003, 
+  "manufacturer_archive_url": "https://modernforms.com/images/products/IES_FILES/FR-W2502-52_IES.zip", 
+  "model": "FR-W2502-52L", 
+  "official_ies_sha256_after": "6044dda98294020d03decd14ad118be2717845536597d1ca9bb9cc296fdcda8e", 
+  "official_ies_unchanged": true, 
+  "output": "E:\\Claude\\3D-Model-Workflow\\output\\belmont_ph_good_rfa_20261016\\candidates\\ModernForms_Smooth_FR-W2502-52L_SBMB_R2025_R03_IES_UNAPPROVED.rfa", 
+  "protected_source_sha256_after": "f1741c711a07a26101c550b580a2db6be99bc4d3689cb75104eaafb0834379db", 
+  "r02_native_qa_sha256": "2ea2921f50d0bff745f5693c1e3a3eb6be1e79af3ed2d8462e2e03f2248b0d08", 
+  "revit_version": "2025", 
+  "source": "E:\\Claude\\3D-Model-Workflow\\output\\belmont_ph_good_rfa_20261016\\candidates\\ModernForms_Smooth_FR-W2502-52L_SBMB_R2025_R02_PARTIAL_UNAPPROVED.rfa", 
+  "source_sha256": "f1741c711a07a26101c550b580a2db6be99bc4d3689cb75104eaafb0834379db", 
+  "source_unchanged": true, 
+  "status": "BLOCKED_OR_ERROR_NO_RELEASE", 
+  "validation_manifest_sha256": "b9d8836a641a1c4e6b912d5aabe36f7d738110a389e615f61e9f38c2c3b7c622"
+}

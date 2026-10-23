@@ -11,7 +11,8 @@ from Autodesk.Revit import DB
 from System.Collections.Generic import List
 
 OUT = os.path.normpath('E:/Claude/3D-Model-Workflow/output/wieland_strip_grazer')
-RFA_NAME = 'Wieland_Hidden_Linear_Wall_Grazer_4-10_2800K_R2025.rfa'
+RFA_NAME = 'Wieland_Hidden_Linear_Wall_Grazer_4-10_2800K_R2025_Rev2.rfa'
+RFA_REV1 = os.path.join(OUT, 'Wieland_Hidden_Linear_Wall_Grazer_4-10_2800K_R2025.rfa')   # superseded: tilt 0, cone points along the fixture (-X)
 RFA = os.path.join(OUT, RFA_NAME)
 TEMPLATE = r'C:\ProgramData\Autodesk\RVT 2025\Family Templates\English-Imperial\Generic Model face based.rft'
 TYPE_NAME = '4-10 Grazer 2800K'
@@ -25,7 +26,7 @@ SOURCE_Z = BODY_H + 0.25  # 1 3/4 in above the host face, 1/4 in above the body 
 LINE_LENGTH = BODY_L      # Emit from Line Length 4'-10"
 BEAM_DEG = 10.0
 FIELD_DEG = 30.0          # spec range 25-30 deg
-TILT_DEG = 0.0            # source is rotated 180 deg about X, so the tilt is 0
+TILT_DEG = 90.0           # Rev2: a Line + Spot cone points along the line (-X) at tilt 0, and straight up (+Z) at 90 once the source is rotated 180 deg about X (measured, explore_aim.py)
 FLUX_LM = 2500.0
 CCT_K = 2800.0
 LOSS = 1.0

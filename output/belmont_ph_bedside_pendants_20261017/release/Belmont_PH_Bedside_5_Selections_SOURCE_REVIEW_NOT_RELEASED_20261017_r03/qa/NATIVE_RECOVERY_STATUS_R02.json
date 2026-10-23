@@ -1,0 +1,77 @@
+{
+  "date": "2026-10-17",
+  "status": "NATIVE_EXECUTION_BLOCKED_NO_RECOVERY_RECEIPT",
+  "previous_crash": {
+    "status": "HOLD_STARTUP_CRASH_BEFORE_PROBE",
+    "revit_build": "2025.4.5 20260410_1515(x64)",
+    "observed_exception": "0xe06d7363",
+    "observed_journal_local_time": "2026-10-17 01:19:15.053",
+    "timezone": "America/Chicago",
+    "cause": "UNKNOWN",
+    "last_verified_stage": "Native startup; loadAllDB completed; exception before pyRevit command.",
+    "probe_receipt_exists": false,
+    "identical_launch_retried": false,
+    "prior_launcher_receipt": "E:\\Claude\\3D-Model-Workflow\\output\\belmont_ph_bedside_pendants_20261017\\runner\\receipts\\probe_launcher_r01.json",
+    "prior_launcher_receipt_sha256": "833fe187dbb0de281707f63662a4cf2c354f39db0b40ee8dc6fc9c471cdd24ac",
+    "journal": "E:\\Claude\\3D-Model-Workflow\\output\\belmont_ph_bedside_pendants_20261017\\temp\\606c5606-70b2-4142-8856-4d54aa2cb7e6\\journal.0001.txt",
+    "journal_sha256": "fd60b5a1c9fb4308555f675aa807864ec0a62fb0516faf388b3a7121a178cfe6",
+    "visible_process_check": "Get-Process at approximately 01:20 local: no Revit/pyrevit processes visible, including recorded CLI PID 49704.",
+    "cim_inspection": "Access denied; Get-Process fallback used.",
+    "active_user_model": "No user document opened, edited, saved or closed by this execution.",
+    "native_open_types_materials_geometry_ceiling_light_visual": "ALL_PENDING",
+    "recovery": "Clear isolated Revit startup failure before one serialized native QA/build run; do not route to active user model."
+  },
+  "existing_revit_process": {
+    "utc": "2026-10-17T07:18:13.761777+00:00",
+    "scope": "READ_ONLY_PROCESS_TREE_AND_TOP_LEVEL_WINDOW_METADATA",
+    "processes": [
+      {
+        "pid": 7860,
+        "parent_pid": 13256,
+        "exe_name": "explorer.exe",
+        "threads": 315
+      },
+      {
+        "pid": 11796,
+        "parent_pid": 7860,
+        "exe_name": "Revit.exe",
+        "threads": 206
+      }
+    ],
+    "revit_windows": [],
+    "window_enumeration_success": false,
+    "window_enumeration_error": 0,
+    "ownership_conclusion": "No automatic ownership or document-state inference. Do not attach/terminate.",
+    "native_launch_performed": false
+  },
+  "offline_preflight": {
+    "utc": "2026-10-17T07:16:53.159933+00:00",
+    "mode": "PREFLIGHT_ONLY",
+    "run_id": "r02_preflight",
+    "original_hashes_verified": 4,
+    "visible_processes": [
+      {
+        "Id": 11796,
+        "ProcessName": "Revit",
+        "Path": "C:\\Program Files\\Autodesk\\Revit 2025\\Revit.exe",
+        "SessionId": 1,
+        "Responding": true,
+        "MainWindowTitle": "",
+        "StartTimeUtc": "2026-10-17T06:54:13.7757437Z"
+      }
+    ],
+    "native_script": "E:\\Claude\\3D-Model-Workflow\\output\\belmont_ph_bedside_pendants_20261017\\qa\\native_readonly_oem_r02.py",
+    "native_script_sha256": "82f54ecff253ac3086dde7bd1c320244fa0f4f0c473170334dc365a90ad25701",
+    "pyrevit_cli_exists": true,
+    "status": "HOLD_UNRESOLVED_EXISTING_PROCESS",
+    "recovery_evidence_required_before_launch": true,
+    "native_launch_performed": false
+  },
+  "native_launches_this_followup": 0,
+  "active_user_model_changes": 0,
+  "native_script_prepared": "E:\\Claude\\3D-Model-Workflow\\output\\belmont_ph_bedside_pendants_20261017\\qa\\native_readonly_oem_r02.py",
+  "script_static_safety_status": "OFFLINE_SAFETY_AND_COMPILE_PASS_NOT_NATIVE_EXECUTION",
+  "supported_import_method": "Revit 2025 Document.Import(path, ImportOptions3DM, View); optional native importer required.",
+  "alternative_method_tested": false,
+  "unresolved": "No successful isolated document-free Revit 2025 probe or changed startup recovery evidence available."
+}

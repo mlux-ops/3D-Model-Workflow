@@ -1,0 +1,33 @@
+# AERIN Brenta ARN 2473HAB-CG — source accuracy review
+
+Date: 2026-10-14. Scope: independent read-only review of the existing Bronze builder as a geometry starting point for the requested Hand-Rubbed Antique Brass visualization family. No Revit execution or native modification was performed by this reviewer.
+
+## Actionable discrepancy — confirmed
+
+**The existing builder still creates the Bronze SKU, finish, and family identity.** In `E:\Claude\3D-Model-Workflow\output\lightology_20260923\f03_1241670\build_brenta.py`, line 10 defines `ARN2473BZ-CG`, `Bronze - White Glass - 2700K`, and a Bronze-named RFA; lines 11 and 16–19 give the backplate, standoff, and sleeve the dark `Bronze Finish` (`RGB 61,49,39`); line 30 points to `option_id=1241668`. The required target is **ARN 2473HAB-CG**, **Hand-Rubbed Antique Brass**, Lightology **option_id=1241669**. Update all three metal components' appearance and the family file/type/model identifiers and source link together. The product photograph shows warm golden brushed/aged brass, materially different from the dark existing Bronze family. This discrepancy is certain and consequential for a presentation RFA.
+
+Authoritative SKU/dimensions: https://www.lightology.com/index.php?module=prod_detail&prod_id=1241670&option_id=1241669 and https://www.visualcomfort.com/us/p/brenta-single-sconce-arn2473?selected_product=ARN+2473HAB-CG . The existing locally saved page confirms the exact option, finish and SKU: `E:\Claude\3D-Model-Workflow\output\brenta_brass_20261014\references\lightology_brass.txt`. A product photograph showing the brass finish: https://lighting.baysidesupply.com/vendors/279/large/ARN2473HABCG.png .
+
+## Geometry reconciliation — no consequential deviation verified
+
+| Feature | Source authority | Actual existing builder / evidence | Disposition |
+| --- | --- | --- | --- |
+| Published fixture envelope | Lightology and manufacturer: **3.5 in W × 18.5 in H × 3.75 in wall extension** | Builder line 10 uses `[3.5,18.5,3.75]`; previous native `validation.json` recorded **3.5000 × 18.4999995 × 3.7500 in**. | Correct nominal dimensions; retain. |
+| Backplate plan and center | Dimensioned drawing: **3.5 × 5.25 in** plate, centered **9.25 in** from either tube end | Builder line 16 gives x `±1.75`, y `±2.625`; entire tube runs y `±9.25`. | Correct front elevation proportions and vertical centering; retain. |
+| Outer clear glass and taper | Manufacturer RFA sampled solid bounding size **2.0238 × 2.0207 × 18.5770 in**; source photo/line silhouette shows tubes flaring *slightly outward toward the free ends*. | Builder lines 23–25 revolve a shell from **1.820 in OD at sleeve** to **2.024 in OD at the ends** with a small rounded lip. Published overall length is preserved at 18.5 in rather than the slightly oversize RFA solid. | Taper direction and approximate 11.2% outward diameter increase agree with source. No evidence supports a new taper revision. |
+| Inner luminous diffuser | Manufacturer RFA sampled solid bounding size **1.3467 in OD × 17.2371 in long**; product photos show warm-white center inside clear outer tube and inset end tips. | Builder lines 26–27 use **1.347 in max OD × 17.237 in total length**, stopping ~**0.632 in** inside each outer glass free end. | Diameter, length, and revealed clear end section agree; retain pending new brass render confirmation. |
+| Center metal sleeve | Manufacturer RFA sampled solid **1.9136 in diameter × 3.6107 in height**; photos show a single central band, vertically symmetric. | Builder line 19 uses **1.914 in diameter × 3.611 in height**; this is ~19.5% of overall fixture height. | Correct silhouette and proportions; retain geometry, change finish. |
+| Wall extension | Published **3.75 in** from wall to farthest face | Builder line 18 centers tube at **2.738 in** from wall, adding **1.012 in** outer glass radius to produce **3.750 in**. Previous native gate confirms it. | Correct; retain. |
+
+## Inferences and visual-check boundary
+
+The **0.875 in backplate depth**, **1.12 × 2.48 in rectangular connecting standoff**, **0.085 in glass end wall**, exact diffuser taper, and fine edge roundovers are *builder interpretations*, not published detail dimensions. The manufacturer backplate solid's **0.920 in local depth** suggests a substantial raised cover, but its local bounding box does not prove the complete installed plate thickness or exact connector placement. The previous native oblique and studio images show a visually plausible separate backplate, rectangular support and round sleeve; the brass source image shows a polished recess and curved highlights at the connection. That area merits a close oblique finish/shape comparison, with no basis yet to change its size. In particular, **do not restore the obsolete `SOURCE_REVIEW.md` values** of 1.75 in glass OD, 2.0 in sleeve OD, 3.5 in sleeve height and 0.18 in plate depth: those predate the corrected builder and manufacturer measurements.
+
+## Provenance / limits
+
+- Dimensioned drawing: `E:\Claude\3D-Model-Workflow\output\brenta_brass_20261014\references\lightology_line_reference.jpg`; secondary horizontal product image: `E:\Claude\3D-Model-Workflow\output\brenta_brass_20261014\references\lightology_additional_reference.jpg` (Polished Nickel geometry reference, **not** brass color).
+- Manufacturer geometry sample: `E:\Claude\3D-Model-Workflow\output\brenta_brass_20261014\references\manufacturer_component_measurements.json` (individual mesh-local bounding boxes; not full assembly transforms).
+- Builder and successful *historical Bronze* native measurement report: `E:\Claude\3D-Model-Workflow\output\lightology_20260923\f03_1241670\build_brenta.py` and `E:\Claude\3D-Model-Workflow\output\lightology_20260923\f03_1241670\validation.json`. Its native exports were inspected in `E:\Claude\3D-Model-Workflow\output\lightology_20260923\f03_1241670\evidence`. That older native pass does **not** validate the requested new brass family.
+- New brass render, actual brass appearance values and native reopen/hosted checks remain with PRIME. The external photograph establishes the target finish, but does not independently measure hidden standoff dimensions or metal roughness.
+
+**Review conclusion:** The corrected F03 body is a defensible dimensional starting point; the confirmed release-blocking mismatch is the inherited Bronze identity and metal appearance. The only shape requiring targeted scrutiny is the inferred connector/backplate detail at an oblique camera angle. No other significant proportional or taper error is supported by the available manufacturer measurements, line drawing, source photos, or previous native geometry evidence.

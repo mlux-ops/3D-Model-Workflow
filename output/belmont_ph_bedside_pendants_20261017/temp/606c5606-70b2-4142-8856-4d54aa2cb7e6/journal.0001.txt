@@ -1,0 +1,61 @@
+' 0:< Initial VM: Avail 134213262 MB, Used 25 MB, Peak 25; RAM: Avail 4593 MB, Used 64 MB, Peak 25 
+' 0:< GUI Resource Usage GDI: Avail 9997, Used 3, User: Used 1 
+'C 17-Oct-2026 01:18:57.223;  started recording journal file 
+' Build: 20260410_1515(x64)
+' Branch: RELEASE_2025.4.5
+' Release: 2025.4.5
+Dim Jrn
+Set Jrn = CrsJournalScript
+'C 17-Oct-2026 01:18:57.227;  ->desktop InitApplication 
+'C 17-Oct-2026 01:18:57.233;  <-desktop InitApplication 
+'C 17-Oct-2026 01:18:57.233;  ->desktop InitNativeInstance 
+' 0:< ::0:: Delta VM: Avail -3 -> 134213259 MB, Used 25 MB; RAM: Avail +53 -> 4646 MB, Used +1 -> 65 MB, Peak +1 -> 66 MB 
+' 0:< GUI Resource Usage GDI: Avail 9997, Used 3, User: Used 6 
+' 0:< Options::loadOptions: m_strDataLibraryLocations=Imperial Library=C:\ProgramData\Autodesk\RVT 2025\Libraries\English-Imperial\US\, Metric Library=C:\ProgramData\Autodesk\RVT 2025\Libraries\English\US\ (defaultLib==\Library) 
+' 0:< ::0:: Delta VM: Avail -2 -> 134213258 MB, Used 25 MB, Peak +0 -> 26 MB; RAM: Avail -24 -> 4623 MB, Used +1 -> 67 MB, Peak +1 -> 67 MB 
+' 0:< GUI Resource Usage GDI: Avail 9997, Used 3, User: Used 6 
+' 0:< Actual language code=ENU 
+' 0:< ::0:: Delta VM: Avail -6 -> 134213252 MB, Used +9 -> 35 MB, Peak +9 -> 35 MB; RAM: Avail +89 -> 4712 MB, Used +8 -> 75 MB, Peak +8 -> 75 MB 
+' 0:< GUI Resource Usage GDI: Avail 9997, Used 3, User: Used 6 
+'  4.218220   1:<<<wait for ForgeUnitsAdapter::configureFolders 
+' 0:< ::0:: Delta VM: Avail +1 -> 134213253 MB, Used 35 MB; RAM: Avail -136 -> 4577 MB, Used 75 MB 
+' 0:< GUI Resource Usage GDI: Avail 9997, Used 3, User: Used 6 
+' 0:< Interoperability engine "RealDWG Shared 2025" installed version is 25.0.171.0. 
+' 0:< ::0:: Delta VM: Avail -54 -> 134213200 MB, Used +5 -> 40 MB, Peak +7 -> 42 MB; RAM: Avail -104 -> 4473 MB, Used +12 -> 88 MB, Peak +13 -> 89 MB 
+' 0:< GUI Resource Usage GDI: Avail 9987, Used 13, User: Used 26 
+'C 17-Oct-2026 01:19:12.115;   0:< manage involvement - application init 
+' 0:< ::0:: Delta VM: Avail -16 -> 134213184 MB, Used +1 -> 42 MB; RAM: Avail -11 -> 4462 MB, Used +7 -> 95 MB, Peak +5 -> 95 MB 
+' 0:< GUI Resource Usage GDI: Avail 9965, Used 35, User: Used 40 
+' 0:< IdSDK environment is commercial 
+'C 17-Oct-2026 01:19:12.254;  DBG_WARN: idsdk_set_product_config failed #3212, the idsdk_server is 0: line 68 of F:\Ship25.4.5\2025_px64\Source\Foundation\Utility\AdWebServiceIdSDKImpl.cpp. 
+'C 17-Oct-2026 01:19:12.254;  DBG_WARN: Set server config fails: line 159 of F:\Ship25.4.5\2025_px64\Source\Foundation\Utility\AdWebServiceIdSDKImpl.cpp. 
+' 0:< ::0:: Delta VM: Avail -81 -> 134213104 MB, Used +3 -> 45 MB, Peak +2 -> 45 MB; RAM: Avail -3 -> 4460 MB, Used +11 -> 106 MB, Peak +13 -> 108 MB 
+' 0:< GUI Resource Usage GDI: Avail 9965, Used 35, User: Used 56 
+'C 17-Oct-2026 01:19:12.379;   0:< License initialization complete 
+' 0:< License version: 8.0.7.53 
+'C 17-Oct-2026 01:19:12.408;  ->loadAllDB (this=0000020D54F28800) 
+' 0:< ::0:: Delta VM: Avail -155 -> 134212949 MB, Used +11 -> 56 MB, Peak +11 -> 56 MB; RAM: Avail -80 -> 4381 MB, Used +42 -> 149 MB, Peak +41 -> 149 MB 
+' 0:< GUI Resource Usage GDI: Avail 9958, Used 42, User: Used 58 
+'C 17-Oct-2026 01:19:13.439;  <-loadAllDB (this=0000020D54F28800) 
+' 0:< ::0:: Delta VM: Avail -264648 -> 133948302 MB, Used +10 -> 67 MB, Peak +10 -> 67 MB; RAM: Avail -104 -> 4278 MB, Used +40 -> 189 MB, Peak +41 -> 191 MB 
+' 0:< GUI Resource Usage GDI: Avail 9958, Used 42, User: Used 84 
+' 0:< SystemSettings: 
+' 0:<                   16=multiCoreCharacteristic 
+' 0:<                 true=isDotNetInstalled 
+' 0:<                 true=isAspNetInstalled 
+' 0:<               8.0.27=dotNetInstalledVersionString 
+' 0:<                false=isProcessUserModeExceptionPolicyDisabledForCallbackFilter 
+' 0:< ::0:: Delta VM: Avail -2 -> 133948300 MB, Used 67 MB, Peak +5 -> 72 MB; RAM: Avail +37 -> 4316 MB, Used +1 -> 190 MB, Peak +4 -> 195 MB 
+' 0:< GUI Resource Usage GDI: Avail 9958, Used 42, User: Used 83 
+' 0:< Exception occurred 
+'C 17-Oct-2026 01:19:15.053;   0:< ExceptionCode=0xe06d7363 ExceptionFlags=0x00000081 ExceptionAddress=00007FFD2079408A 
+'C 17-Oct-2026 01:19:15.053;  BC: 2,0,1 
+' 0:<   System (MB) [Available /  Total ]  [Revit Memory Usage (MB)   ] 
+' 0:< RAM Statistics:     4314 /    31893       190=InUse      195=Peak  
+' 0:< VM  Statistics: 133948301 / 134217727        67=InUse       72=Peak  
+' 0:< ::0:: Delta VM: Avail -65757 -> 133882544 MB, Used +4 -> 71 MB; RAM: Avail -37 -> 4279 MB, Used +6 -> 197 MB, Peak +1 -> 197 MB 
+' 0:< GUI Resource Usage GDI: Avail 9958, Used 42, User: Used 82 
+' 0:< CefSharp has been shutdown successfully! 
+' 0:< Unconverted MessageBox "An unrecoverable error has occurred.  The program will now be terminated.  All of your data has been recently saved, so there is no need to create recovery files.
+'
+'Select Help or press F1 for more information on possible causes of unrecoverable errors." 

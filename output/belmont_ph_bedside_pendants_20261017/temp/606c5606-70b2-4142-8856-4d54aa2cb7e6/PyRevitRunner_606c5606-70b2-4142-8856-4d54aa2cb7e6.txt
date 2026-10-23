@@ -1,0 +1,17 @@
+' pyrevitrunner generated journal
+' 0:< 'C 2026-10-17T06:18:56Z;
+Dim Jrn
+Set Jrn = CrsJournalScript
+Jrn.Directive "DebugMode", "PerformAutomaticActionInErrorDialog", 1
+Jrn.Directive "DebugMode", "PermissiveJournal", 1
+Jrn.RibbonEvent "TabActivated:Add-Ins"
+Jrn.RibbonEvent "Execute external command:CustomCtrl_%CustomCtrl_%Add-Ins%pyRevitRunner%PyRevitRunnerCommand:PyRevitRunner.PyRevitRunnerCommand"
+Jrn.Data "APIStringStringMapJournalData"  _
+    , 5 _
+    , "ScriptSource" , "E:\Claude\3D-Model-Workflow\output\belmont_ph_bedside_pendants_20261017\runner\probe_native.py" _
+    , "SearchPaths" , "" _
+    , "Models" , "" _
+    , "EngineConfigs" , "{""full_frame"": true}" _
+    , "LogFile" , "E:\Claude\3D-Model-Workflow\output\belmont_ph_bedside_pendants_20261017\temp\606c5606-70b2-4142-8856-4d54aa2cb7e6\PyRevitRunner_606c5606-70b2-4142-8856-4d54aa2cb7e6.log"
+Jrn.Command "SystemMenu" , "Quit the application; prompts to save projects , ID_APP_EXIT"
+Jrn.Data "TaskDialogResult" , "Do you want to save changes to Untitled?", "No", "IDNO"

@@ -1,0 +1,71 @@
+{
+  "actual": [
+    {
+      "connector_count": 0, 
+      "connectors": [], 
+      "light_source": [
+        {
+          "Flux": 2400.0, 
+          "distribution_class": "Autodesk.Revit.DB.Lighting.PhotometricWebLightDistribution", 
+          "ies_file": "WS-3127.IES", 
+          "initial_color_class": "Autodesk.Revit.DB.Lighting.CustomInitialColor", 
+          "initial_intensity_class": "Autodesk.Revit.DB.Lighting.InitialFluxIntensity", 
+          "temperature_kelvin": 3000.0, 
+          "tilt_radians": 1.0471975511965967, 
+          "type_name": "WS-3127-CH"
+        }
+      ], 
+      "materials": {
+        "PHGOOD_VOGUE_CH_CHROME": {
+          "appearance_id": "4004", 
+          "color": [
+            207, 
+            211, 
+            216
+          ], 
+          "transparency": 0
+        }, 
+        "PHGOOD_VOGUE_MOUTH_BLOWN_OPAL": {
+          "appearance_id": "4005", 
+          "color": [
+            0, 
+            0, 
+            0
+          ], 
+          "transparency": 0
+        }
+      }, 
+      "path": "E:\\Claude\\3D-Model-Workflow\\output\\belmont_ph_good_rfa_20261016\\candidates\\ModernForms_Vogue_WS-3127_CH_R2025_R02.rfa", 
+      "sha256": "e5d49df849079974e7e1e3e3718a898e7f9671d0ca03633f4dead35fc1c0d9b8", 
+      "status": "READ_ONLY_INSPECTED", 
+      "type_parameters": {
+        "FBX_LIGHT_INITIAL_COLOR_TEMPERATURE": {
+          "present": false
+        }, 
+        "FBX_LIGHT_LIMUNOUS_FLUX": {
+          "present": false
+        }, 
+        "FBX_LIGHT_PHOTOMETRIC_FILE": {
+          "present": true, 
+          "storage": "String", 
+          "value": "WS-3127.IES"
+        }, 
+        "RBS_ELEC_APPARENT_LOAD": {
+          "present": true, 
+          "storage": "Double", 
+          "value": null
+        }
+      }, 
+      "warnings": []
+    }, 
+    {
+      "path": "E:\\Claude\\3D-Model-Workflow\\output\\belmont_ph_good_rfa_20261016\\candidates\\ModernForms_Vogue_WS-3127_CH_R2025_R03.rfa", 
+      "status": "NOT_BUILT"
+    }
+  ], 
+  "expected_current_watts": 40.600000000000001, 
+  "expected_default_cct_kelvin": 3000, 
+  "expected_delivered_lumens": 2993, 
+  "release_status": "HOLD until verified current IES, connector and wattage semantics", 
+  "scope": "READ_ONLY Native Revit 2025 R02/R03 emitter and electrical audit"
+}

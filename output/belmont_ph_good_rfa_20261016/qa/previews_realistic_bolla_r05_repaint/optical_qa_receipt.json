@@ -1,0 +1,238 @@
+{
+  "all_sources_unchanged": true, 
+  "all_two_realistic_images_ready": true, 
+  "checkerboard_expected_squares": 64, 
+  "display_style_required": "Realistic", 
+  "disposable_projects_saved": false, 
+  "expected_images": 2, 
+  "finished_utc": "2026-10-16T08:53:27Z", 
+  "native_revit_version": "2025", 
+  "optical_conclusion_requires_visual_review": true, 
+  "purpose": "651 Belmont PH Good Bolla R05 painted-glass optical diagnostic", 
+  "readback_status": "TWO_IMAGES_READY_FOR_HUMAN_OPTICAL_QA", 
+  "release_ready": false, 
+  "results": [
+    {
+      "camera_view": {
+        "aspect_crop_view_ft": [
+          1.0010800000000000, 
+          1.0010800000000000
+        ], 
+        "camera_eye_from_glass": [
+          0.0, 
+          -0.99920100000000001, 
+          0.039967999999999997
+        ], 
+        "checker_not_hidden": true, 
+        "framing": "square_crop_of_actual_clear_glass_and_checker_only", 
+        "native_display_style": "Realistic", 
+        "orthographic": true, 
+        "section_bounds_ft": {
+          "max": [
+            0.51570899999999997, 
+            0.40459050000000002, 
+            11.683363699999999
+          ], 
+          "min": [
+            -0.51570899999999997, 
+            -0.36723280000000003, 
+            10.653676500000000
+          ]
+        }, 
+        "view_id": 3733, 
+        "view_name": "PHGOOD_REALISTIC_bolla_r05_front"
+      }, 
+      "checker": {
+        "board_center_ft": [
+          0.0, 
+          0.25294899999999998, 
+          11.168445200000001
+        ], 
+        "board_height_in": 9.0850000000000009, 
+        "board_width_in": 9.1010000000000009, 
+        "checker_material_ids": {
+          "dark": 3663, 
+          "light": 3665
+        }, 
+        "checker_material_rgb": {
+          "dark": [
+            14, 
+            14, 
+            17
+          ], 
+          "light": [
+            245, 
+            245, 
+            238
+          ]
+        }, 
+        "checker_thickness_in": 0.044999999999999998, 
+        "checker_tile_count": 64, 
+        "nearest_clear_glass_to_checker_front_in": 0.22, 
+        "placed_geometry": "native DirectShape SolidOptions per-face materials"
+      }, 
+      "disposable_project_saved": false, 
+      "finished_utc": "2026-10-16T08:53:24Z", 
+      "glass": {
+        "glass_aabb_world_ft": {
+          "max": [
+            0.22919778525829315, 
+            0.23072164408239612, 
+            11.406744003295898
+          ], 
+          "min": [
+            -0.22919778525829315, 
+            -0.23072164408239523, 
+            10.950382232666016
+          ]
+        }, 
+        "glass_face_count": 6, 
+        "glass_material": "BOLLA_R05_CLEAR_OUTER_DIAGNOSTIC", 
+        "glass_material_ids": [
+          2807
+        ], 
+        "glass_point_count": 1354, 
+        "glass_sizes_mm": [
+          139.71899999999999, 
+          140.64800000000000, 
+          139.09899999999999
+        ], 
+        "positive_volume_solids": 4
+      }, 
+      "original_source_modified": false, 
+      "png": {
+        "bytes": 105320, 
+        "display_style_verified": "Realistic", 
+        "exporter": "native Revit2025 Document.ExportImage", 
+        "path": "E:\\Claude\\3D-Model-Workflow\\output\\belmont_ph_good_rfa_20261016\\qa\\previews_realistic_bolla_r05_repaint\\bolla_r05_front.png", 
+        "pixels": [
+          1400, 
+          1400
+        ], 
+        "sha256": "51edd0f83a8d516ed8473ba077854d3980549ce8af4239fb02428265c7221d42"
+      }, 
+      "previews_are_photo_or_refraction_certification": false, 
+      "source_after_sha256": "9efac7fb1c890f806acafbd4374d2e76240bc82568bff675de5e08c723a2603f", 
+      "source_rfa": "E:\\Claude\\3D-Model-Workflow\\output\\belmont_ph_good_rfa_20261016\\candidates\\Kuzco_Bolla_PD3106_BG_R2025_R05_REPAINT_OPTICAL_DIAGNOSTIC_UNAPPROVED.rfa", 
+      "source_sha256_expected": "9efac7fb1c890f806acafbd4374d2e76240bc82568bff675de5e08c723a2603f", 
+      "started_utc": "2026-10-16T08:53:08Z", 
+      "status": "NATIVE_REALISTIC_PNG_SAVED", 
+      "target": "bolla_r05", 
+      "view": "front"
+    }, 
+    {
+      "camera_view": {
+        "aspect_crop_view_ft": [
+          1.0025299999999999, 
+          1.0025299999999999
+        ], 
+        "camera_eye_from_glass": [
+          0.58901510000000001, 
+          -0.69295890000000004, 
+          0.41577540000000002
+        ], 
+        "checker_not_hidden": true, 
+        "framing": "square_crop_of_actual_clear_glass_and_checker_only", 
+        "native_display_style": "Realistic", 
+        "orthographic": true, 
+        "section_bounds_ft": {
+          "max": [
+            0.386853, 
+            0.68205800000000005, 
+            11.562172600000000
+          ], 
+          "min": [
+            -0.68124059999999997, 
+            -0.372087, 
+            10.587150599999999
+          ]
+        }, 
+        "view_id": 3733, 
+        "view_name": "PHGOOD_REALISTIC_bolla_r05_oblique"
+      }, 
+      "checker": {
+        "board_center_ft": [
+          -0.14829819999999999, 
+          0.1744685, 
+          11.073881999999999
+        ], 
+        "board_height_in": 9.1140000000000008, 
+        "board_width_in": 9.1129999999999995, 
+        "checker_material_ids": {
+          "dark": 3663, 
+          "light": 3665
+        }, 
+        "checker_material_rgb": {
+          "dark": [
+            14, 
+            14, 
+            17
+          ], 
+          "light": [
+            245, 
+            245, 
+            238
+          ]
+        }, 
+        "checker_thickness_in": 0.044999999999999998, 
+        "checker_tile_count": 64, 
+        "nearest_clear_glass_to_checker_front_in": 0.22, 
+        "placed_geometry": "native DirectShape SolidOptions per-face materials"
+      }, 
+      "disposable_project_saved": false, 
+      "finished_utc": "2026-10-16T08:53:27Z", 
+      "glass": {
+        "glass_aabb_world_ft": {
+          "max": [
+            0.22919778525829315, 
+            0.23072164408239612, 
+            11.406744003295898
+          ], 
+          "min": [
+            -0.22919778525829315, 
+            -0.23072164408239523, 
+            10.950382232666016
+          ]
+        }, 
+        "glass_face_count": 6, 
+        "glass_material": "BOLLA_R05_CLEAR_OUTER_DIAGNOSTIC", 
+        "glass_material_ids": [
+          2807
+        ], 
+        "glass_point_count": 1354, 
+        "glass_sizes_mm": [
+          139.71899999999999, 
+          140.64800000000000, 
+          139.09899999999999
+        ], 
+        "positive_volume_solids": 4
+      }, 
+      "original_source_modified": false, 
+      "png": {
+        "bytes": 113052, 
+        "display_style_verified": "Realistic", 
+        "exporter": "native Revit2025 Document.ExportImage", 
+        "path": "E:\\Claude\\3D-Model-Workflow\\output\\belmont_ph_good_rfa_20261016\\qa\\previews_realistic_bolla_r05_repaint\\bolla_r05_oblique.png", 
+        "pixels": [
+          1400, 
+          1400
+        ], 
+        "sha256": "5b58e337cdaddb769e3d70e3cef561730600dc5f4e34088a94876da5634d3190"
+      }, 
+      "previews_are_photo_or_refraction_certification": false, 
+      "source_after_sha256": "9efac7fb1c890f806acafbd4374d2e76240bc82568bff675de5e08c723a2603f", 
+      "source_rfa": "E:\\Claude\\3D-Model-Workflow\\output\\belmont_ph_good_rfa_20261016\\candidates\\Kuzco_Bolla_PD3106_BG_R2025_R05_REPAINT_OPTICAL_DIAGNOSTIC_UNAPPROVED.rfa", 
+      "source_sha256_expected": "9efac7fb1c890f806acafbd4374d2e76240bc82568bff675de5e08c723a2603f", 
+      "started_utc": "2026-10-16T08:53:24Z", 
+      "status": "NATIVE_REALISTIC_PNG_SAVED", 
+      "target": "bolla_r05", 
+      "view": "oblique"
+    }
+  ], 
+  "rfa_count": 1, 
+  "schema_version": 1, 
+  "sources_saved": false, 
+  "started_utc": "2026-10-16T08:53:08Z", 
+  "successful_native_realistic_images": 2, 
+  "test_placement": "isolated unsaved project per family and camera"
+}

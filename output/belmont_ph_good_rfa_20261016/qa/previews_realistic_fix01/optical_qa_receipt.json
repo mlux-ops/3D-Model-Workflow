@@ -1,0 +1,454 @@
+{
+  "all_four_realistic_images_ready": true, 
+  "all_sources_unchanged": true, 
+  "checkerboard_expected_squares": 64, 
+  "display_style_required": "Realistic", 
+  "disposable_projects_saved": false, 
+  "expected_images": 4, 
+  "finished_utc": "2026-10-16T08:10:26Z", 
+  "native_revit_version": "2025", 
+  "optical_conclusion_requires_visual_review": true, 
+  "purpose": "651 Belmont PH Good Bolla R03 and Quorum R04 Realistic glass optical QA", 
+  "readback_status": "FOUR_IMAGES_READY_FOR_HUMAN_OPTICAL_QA", 
+  "release_ready": false, 
+  "results": [
+    {
+      "camera_view": {
+        "aspect_crop_view_ft": [
+          1.0010800000000000, 
+          1.0010800000000000
+        ], 
+        "camera_eye_from_glass": [
+          0.0, 
+          -0.99920100000000001, 
+          0.039967999999999997
+        ], 
+        "checker_not_hidden": true, 
+        "framing": "square_crop_of_actual_clear_glass_and_checker_only", 
+        "native_display_style": "Realistic", 
+        "orthographic": true, 
+        "section_bounds_ft": {
+          "max": [
+            0.51570899999999997, 
+            0.40459050000000002, 
+            11.683363699999999
+          ], 
+          "min": [
+            -0.51570899999999997, 
+            -0.36723280000000003, 
+            10.653676500000000
+          ]
+        }, 
+        "view_id": 3727, 
+        "view_name": "PHGOOD_REALISTIC_bolla_r03_front"
+      }, 
+      "checker": {
+        "board_center_ft": [
+          0.0, 
+          0.25294899999999998, 
+          11.168445200000001
+        ], 
+        "board_height_in": 9.0850000000000009, 
+        "board_width_in": 9.1010000000000009, 
+        "checker_material_ids": {
+          "dark": 3657, 
+          "light": 3659
+        }, 
+        "checker_material_rgb": {
+          "dark": [
+            14, 
+            14, 
+            17
+          ], 
+          "light": [
+            245, 
+            245, 
+            238
+          ]
+        }, 
+        "checker_thickness_in": 0.044999999999999998, 
+        "checker_tile_count": 64, 
+        "nearest_clear_glass_to_checker_front_in": 0.22, 
+        "placed_geometry": "native DirectShape SolidOptions per-face materials"
+      }, 
+      "disposable_project_saved": false, 
+      "finished_utc": "2026-10-16T08:10:19Z", 
+      "glass": {
+        "glass_aabb_world_ft": {
+          "max": [
+            0.22919778525829315, 
+            0.23072164408239612, 
+            11.406744003295898
+          ], 
+          "min": [
+            -0.22919778525829315, 
+            -0.23072164408239523, 
+            10.950382232666016
+          ]
+        }, 
+        "glass_face_count": 6, 
+        "glass_material": "Glass", 
+        "glass_material_ids": [
+          93
+        ], 
+        "glass_point_count": 1354, 
+        "glass_sizes_mm": [
+          139.71899999999999, 
+          140.64800000000000, 
+          139.09899999999999
+        ], 
+        "positive_volume_solids": 4
+      }, 
+      "original_source_modified": false, 
+      "png": {
+        "bytes": 118752, 
+        "display_style_verified": "Realistic", 
+        "exporter": "native Revit2025 Document.ExportImage", 
+        "path": "E:\\Claude\\3D-Model-Workflow\\output\\belmont_ph_good_rfa_20261016\\qa\\previews_realistic_fix01\\bolla_r03_front.png", 
+        "pixels": [
+          1400, 
+          1400
+        ], 
+        "sha256": "3f72b3e193d94f0ef619aec7437c9057de9e68935d818d066d4e4818f2c5fba5"
+      }, 
+      "previews_are_photo_or_refraction_certification": false, 
+      "source_after_sha256": "c2baa17404d66866d4eeeb7c72daf12f0b757b039baaf4e67736dbaacbc53ed6", 
+      "source_rfa": "E:\\Claude\\3D-Model-Workflow\\output\\belmont_ph_good_rfa_20261016\\candidates\\Kuzco_Bolla_PD3106_BG_R2025_IES_FINISH_R03_PARTIAL.rfa", 
+      "source_sha256_expected": "c2baa17404d66866d4eeeb7c72daf12f0b757b039baaf4e67736dbaacbc53ed6", 
+      "started_utc": "2026-10-16T08:10:03Z", 
+      "status": "NATIVE_REALISTIC_PNG_SAVED", 
+      "target": "bolla_r03", 
+      "view": "front"
+    }, 
+    {
+      "camera_view": {
+        "aspect_crop_view_ft": [
+          1.0025299999999999, 
+          1.0025299999999999
+        ], 
+        "camera_eye_from_glass": [
+          0.58901510000000001, 
+          -0.69295890000000004, 
+          0.41577540000000002
+        ], 
+        "checker_not_hidden": true, 
+        "framing": "square_crop_of_actual_clear_glass_and_checker_only", 
+        "native_display_style": "Realistic", 
+        "orthographic": true, 
+        "section_bounds_ft": {
+          "max": [
+            0.386853, 
+            0.68205800000000005, 
+            11.562172600000000
+          ], 
+          "min": [
+            -0.68124059999999997, 
+            -0.372087, 
+            10.587150599999999
+          ]
+        }, 
+        "view_id": 3727, 
+        "view_name": "PHGOOD_REALISTIC_bolla_r03_oblique"
+      }, 
+      "checker": {
+        "board_center_ft": [
+          -0.14829819999999999, 
+          0.1744685, 
+          11.073881999999999
+        ], 
+        "board_height_in": 9.1140000000000008, 
+        "board_width_in": 9.1129999999999995, 
+        "checker_material_ids": {
+          "dark": 3657, 
+          "light": 3659
+        }, 
+        "checker_material_rgb": {
+          "dark": [
+            14, 
+            14, 
+            17
+          ], 
+          "light": [
+            245, 
+            245, 
+            238
+          ]
+        }, 
+        "checker_thickness_in": 0.044999999999999998, 
+        "checker_tile_count": 64, 
+        "nearest_clear_glass_to_checker_front_in": 0.22, 
+        "placed_geometry": "native DirectShape SolidOptions per-face materials"
+      }, 
+      "disposable_project_saved": false, 
+      "finished_utc": "2026-10-16T08:10:22Z", 
+      "glass": {
+        "glass_aabb_world_ft": {
+          "max": [
+            0.22919778525829315, 
+            0.23072164408239612, 
+            11.406744003295898
+          ], 
+          "min": [
+            -0.22919778525829315, 
+            -0.23072164408239523, 
+            10.950382232666016
+          ]
+        }, 
+        "glass_face_count": 6, 
+        "glass_material": "Glass", 
+        "glass_material_ids": [
+          93
+        ], 
+        "glass_point_count": 1354, 
+        "glass_sizes_mm": [
+          139.71899999999999, 
+          140.64800000000000, 
+          139.09899999999999
+        ], 
+        "positive_volume_solids": 4
+      }, 
+      "original_source_modified": false, 
+      "png": {
+        "bytes": 115046, 
+        "display_style_verified": "Realistic", 
+        "exporter": "native Revit2025 Document.ExportImage", 
+        "path": "E:\\Claude\\3D-Model-Workflow\\output\\belmont_ph_good_rfa_20261016\\qa\\previews_realistic_fix01\\bolla_r03_oblique.png", 
+        "pixels": [
+          1400, 
+          1400
+        ], 
+        "sha256": "6ad4dce3eee388a8d9aedfd009cc17eee28fb8827f75864602dae3a6330f88f9"
+      }, 
+      "previews_are_photo_or_refraction_certification": false, 
+      "source_after_sha256": "c2baa17404d66866d4eeeb7c72daf12f0b757b039baaf4e67736dbaacbc53ed6", 
+      "source_rfa": "E:\\Claude\\3D-Model-Workflow\\output\\belmont_ph_good_rfa_20261016\\candidates\\Kuzco_Bolla_PD3106_BG_R2025_IES_FINISH_R03_PARTIAL.rfa", 
+      "source_sha256_expected": "c2baa17404d66866d4eeeb7c72daf12f0b757b039baaf4e67736dbaacbc53ed6", 
+      "started_utc": "2026-10-16T08:10:19Z", 
+      "status": "NATIVE_REALISTIC_PNG_SAVED", 
+      "target": "bolla_r03", 
+      "view": "oblique"
+    }, 
+    {
+      "camera_view": {
+        "aspect_crop_view_ft": [
+          1.6506700000000001, 
+          1.6506700000000001
+        ], 
+        "camera_eye_from_glass": [
+          0.0, 
+          -0.99920100000000001, 
+          0.039967999999999997
+        ], 
+        "checker_not_hidden": true, 
+        "framing": "square_crop_of_actual_clear_glass_and_checker_only", 
+        "native_display_style": "Realistic", 
+        "orthographic": true, 
+        "section_bounds_ft": {
+          "max": [
+            0.83327169999999995, 
+            0.72538539999999996, 
+            -3.3462597000000001
+          ], 
+          "min": [
+            -0.83327169999999995, 
+            -0.68327170000000004, 
+            -5.0457936999999999
+          ]
+        }, 
+        "view_id": 3758, 
+        "view_name": "PHGOOD_REALISTIC_quorum_r04_front"
+      }, 
+      "checker": {
+        "board_center_ft": [
+          0.0, 
+          0.47545690000000002, 
+          -4.1961016999999998
+        ], 
+        "board_height_in": 15.006000000000000, 
+        "board_width_in": 14.600000000000000, 
+        "checker_material_ids": {
+          "dark": 3688, 
+          "light": 3690
+        }, 
+        "checker_material_rgb": {
+          "dark": [
+            14, 
+            14, 
+            17
+          ], 
+          "light": [
+            245, 
+            245, 
+            238
+          ]
+        }, 
+        "checker_thickness_in": 0.044999999999999998, 
+        "checker_tile_count": 64, 
+        "nearest_clear_glass_to_checker_front_in": 0.22, 
+        "placed_geometry": "native DirectShape SolidOptions per-face materials"
+      }, 
+      "disposable_project_saved": false, 
+      "finished_utc": "2026-10-16T08:10:24Z", 
+      "glass": {
+        "glass_aabb_world_ft": {
+          "max": [
+            0.4583333432674408, 
+            0.45833333333330567, 
+            -3.7083332538604736
+          ], 
+          "min": [
+            -0.4583333432674408, 
+            -0.45833333333336096, 
+            -4.6458334922790527
+          ]
+        }, 
+        "glass_face_count": 60, 
+        "glass_material": "Clear Glass", 
+        "glass_material_ids": [
+          2811
+        ], 
+        "glass_point_count": 4648, 
+        "glass_sizes_mm": [
+          279.39999999999998, 
+          279.39999999999998, 
+          285.75
+        ], 
+        "positive_volume_solids": 6
+      }, 
+      "original_source_modified": false, 
+      "png": {
+        "bytes": 98631, 
+        "display_style_verified": "Realistic", 
+        "exporter": "native Revit2025 Document.ExportImage", 
+        "path": "E:\\Claude\\3D-Model-Workflow\\output\\belmont_ph_good_rfa_20261016\\qa\\previews_realistic_fix01\\quorum_r04_front.png", 
+        "pixels": [
+          1400, 
+          1400
+        ], 
+        "sha256": "908ffbc87b5e4bd174cc1759b8bdd03982264b4804fffdd510ac7e601f7e6305"
+      }, 
+      "previews_are_photo_or_refraction_certification": false, 
+      "source_after_sha256": "c115f4919582fad4cff1405c4ccca06ed173aeaec1186fba47fecea0653a7e35", 
+      "source_rfa": "E:\\Claude\\3D-Model-Workflow\\output\\belmont_ph_good_rfa_20261016\\candidates\\Quorum_Veno_858-59_R2025_R04_UNAPPROVED.rfa", 
+      "source_sha256_expected": "c115f4919582fad4cff1405c4ccca06ed173aeaec1186fba47fecea0653a7e35", 
+      "started_utc": "2026-10-16T08:10:22Z", 
+      "status": "NATIVE_REALISTIC_PNG_SAVED", 
+      "target": "quorum_r04", 
+      "view": "front"
+    }, 
+    {
+      "camera_view": {
+        "aspect_crop_view_ft": [
+          1.7188099999999999, 
+          1.7188099999999999
+        ], 
+        "camera_eye_from_glass": [
+          0.58901510000000001, 
+          -0.69295890000000004, 
+          0.41577540000000002
+        ], 
+        "checker_not_hidden": true, 
+        "framing": "square_crop_of_actual_clear_glass_and_checker_only", 
+        "native_display_style": "Realistic", 
+        "orthographic": true, 
+        "section_bounds_ft": {
+          "max": [
+            0.70808249999999995, 
+            1.1789111999999999, 
+            -3.4585840999999999
+          ], 
+          "min": [
+            -1.1680406999999999, 
+            -0.70808249999999995, 
+            -5.2165293999999998
+          ]
+        }, 
+        "view_id": 3758, 
+        "view_name": "PHGOOD_REALISTIC_quorum_r04_oblique"
+      }, 
+      "checker": {
+        "board_center_ft": [
+          -0.2798988, 
+          0.32929269999999999, 
+          -4.3746590000000003
+        ], 
+        "board_height_in": 15.625999999999999, 
+        "board_width_in": 14.586000000000000, 
+        "checker_material_ids": {
+          "dark": 3688, 
+          "light": 3690
+        }, 
+        "checker_material_rgb": {
+          "dark": [
+            14, 
+            14, 
+            17
+          ], 
+          "light": [
+            245, 
+            245, 
+            238
+          ]
+        }, 
+        "checker_thickness_in": 0.044999999999999998, 
+        "checker_tile_count": 64, 
+        "nearest_clear_glass_to_checker_front_in": 0.22, 
+        "placed_geometry": "native DirectShape SolidOptions per-face materials"
+      }, 
+      "disposable_project_saved": false, 
+      "finished_utc": "2026-10-16T08:10:26Z", 
+      "glass": {
+        "glass_aabb_world_ft": {
+          "max": [
+            0.4583333432674408, 
+            0.45833333333330567, 
+            -3.7083332538604736
+          ], 
+          "min": [
+            -0.4583333432674408, 
+            -0.45833333333336096, 
+            -4.6458334922790527
+          ]
+        }, 
+        "glass_face_count": 60, 
+        "glass_material": "Clear Glass", 
+        "glass_material_ids": [
+          2811
+        ], 
+        "glass_point_count": 4648, 
+        "glass_sizes_mm": [
+          279.39999999999998, 
+          279.39999999999998, 
+          285.75
+        ], 
+        "positive_volume_solids": 6
+      }, 
+      "original_source_modified": false, 
+      "png": {
+        "bytes": 111896, 
+        "display_style_verified": "Realistic", 
+        "exporter": "native Revit2025 Document.ExportImage", 
+        "path": "E:\\Claude\\3D-Model-Workflow\\output\\belmont_ph_good_rfa_20261016\\qa\\previews_realistic_fix01\\quorum_r04_oblique.png", 
+        "pixels": [
+          1400, 
+          1399
+        ], 
+        "sha256": "7787886715ff6dabb7c911ec26bb0e0b26557115e702f7fef489e3c21f0205be"
+      }, 
+      "previews_are_photo_or_refraction_certification": false, 
+      "source_after_sha256": "c115f4919582fad4cff1405c4ccca06ed173aeaec1186fba47fecea0653a7e35", 
+      "source_rfa": "E:\\Claude\\3D-Model-Workflow\\output\\belmont_ph_good_rfa_20261016\\candidates\\Quorum_Veno_858-59_R2025_R04_UNAPPROVED.rfa", 
+      "source_sha256_expected": "c115f4919582fad4cff1405c4ccca06ed173aeaec1186fba47fecea0653a7e35", 
+      "started_utc": "2026-10-16T08:10:24Z", 
+      "status": "NATIVE_REALISTIC_PNG_SAVED", 
+      "target": "quorum_r04", 
+      "view": "oblique"
+    }
+  ], 
+  "rfa_count": 2, 
+  "schema_version": 1, 
+  "sources_saved": false, 
+  "started_utc": "2026-10-16T08:10:03Z", 
+  "successful_native_realistic_images": 4, 
+  "test_placement": "isolated unsaved project per family and camera"
+}

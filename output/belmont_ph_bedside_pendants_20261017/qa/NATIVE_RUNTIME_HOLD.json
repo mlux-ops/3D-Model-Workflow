@@ -1,0 +1,20 @@
+{
+  "status": "HOLD_STARTUP_CRASH_BEFORE_PROBE",
+  "revit_build": "2025.4.5 20260410_1515(x64)",
+  "observed_exception": "0xe06d7363",
+  "observed_journal_local_time": "2026-10-17 01:19:15.053",
+  "timezone": "America/Chicago",
+  "cause": "UNKNOWN",
+  "last_verified_stage": "Native startup; loadAllDB completed; exception before pyRevit command.",
+  "probe_receipt_exists": false,
+  "identical_launch_retried": false,
+  "prior_launcher_receipt": "E:\\Claude\\3D-Model-Workflow\\output\\belmont_ph_bedside_pendants_20261017\\runner\\receipts\\probe_launcher_r01.json",
+  "prior_launcher_receipt_sha256": "833fe187dbb0de281707f63662a4cf2c354f39db0b40ee8dc6fc9c471cdd24ac",
+  "journal": "E:\\Claude\\3D-Model-Workflow\\output\\belmont_ph_bedside_pendants_20261017\\temp\\606c5606-70b2-4142-8856-4d54aa2cb7e6\\journal.0001.txt",
+  "journal_sha256": "fd60b5a1c9fb4308555f675aa807864ec0a62fb0516faf388b3a7121a178cfe6",
+  "visible_process_check": "Get-Process at approximately 01:20 local: no Revit/pyrevit processes visible, including recorded CLI PID 49704.",
+  "cim_inspection": "Access denied; Get-Process fallback used.",
+  "active_user_model": "No user document opened, edited, saved or closed by this execution.",
+  "native_open_types_materials_geometry_ceiling_light_visual": "ALL_PENDING",
+  "recovery": "Clear isolated Revit startup failure before one serialized native QA/build run; do not route to active user model."
+}

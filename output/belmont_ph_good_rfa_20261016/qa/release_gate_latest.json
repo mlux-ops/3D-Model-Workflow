@@ -1,0 +1,216 @@
+{
+  "base_batch": {
+    "pass": true,
+    "evidence": "E:\\Claude\\3D-Model-Workflow\\output\\belmont_ph_good_rfa_20261016\\runner\\receipts\\batch_final.json",
+    "reason": "Six native save/reopen checks"
+  },
+  "families": {
+    "ALR1280090": {
+      "native": {
+        "pass": true,
+        "evidence": "E:\\Claude\\3D-Model-Workflow\\output\\belmont_ph_good_rfa_20261016\\qa\\cassia_mbcl_r02_native_qa_fix03.json",
+        "reason": "MBCL type and level placement"
+      },
+      "visual": {
+        "pass": false,
+        "evidence": "E:\\Claude\\3D-Model-Workflow\\output\\belmont_ph_good_rfa_20261016\\qa\\previews",
+        "reason": "Detached meshes and manufacturer appearance not approved"
+      },
+      "photometry": {
+        "pass": false,
+        "evidence": "E:\\Claude\\3D-Model-Workflow\\output\\belmont_ph_good_rfa_20261016\\qa\\previews",
+        "reason": "Four E12 sockets, lamp output is owner/selectable; electrical/photometry unverified"
+      }
+    },
+    "HIN990485": {
+      "native": {
+        "pass": true,
+        "evidence": "E:\\Claude\\3D-Model-Workflow\\output\\belmont_ph_good_rfa_20261016\\qa\\hin_r03_native_qa.json",
+        "reason": "R03 wall-host and measured OEM geometry"
+      },
+      "geometry": {
+        "pass": true,
+        "evidence": "E:\\Claude\\3D-Model-Workflow\\output\\belmont_ph_good_rfa_20261016\\qa\\hin_r03_native_qa.json",
+        "reason": "R03 modeled 25 x5.5 x3 in published envelope"
+      },
+      "exact_ies_source": {
+        "pass": true,
+        "evidence": "E:\\Claude\\3D-Model-Workflow\\output\\belmont_ph_good_rfa_20261016\\sources\\photometry\\HIN53860BK_IES_VERIFICATION.json",
+        "reason": "Verified official 2024 Hinkley 53860BK IES companion"
+      },
+      "native_light_source": {
+        "pass": false,
+        "evidence": "E:\\Claude\\3D-Model-Workflow\\output\\belmont_ph_good_rfa_20261016\\qa\\hin_r04_ies_native_qa.json",
+        "reason": "R03 generic family template lacks native LightFamily; exact IES cannot yet drive a Revit emitter"
+      },
+      "photometry": {
+        "pass": false,
+        "evidence": "E:\\Claude\\3D-Model-Workflow\\output\\belmont_ph_good_rfa_20261016\\qa\\hin_r03_native_qa.json",
+        "reason": "Source-specific IES/LED lumens and electrical connector unverified"
+      }
+    },
+    "KZC1353667": {
+      "native": {
+        "pass": true,
+        "evidence": "E:\\Claude\\3D-Model-Workflow\\output\\belmont_ph_good_rfa_20261016\\qa\\oem_qa_r03.json",
+        "reason": "OEM source/placement geometry"
+      },
+      "ies": {
+        "pass": true,
+        "evidence": "E:\\Claude\\3D-Model-Workflow\\output\\belmont_ph_good_rfa_20261016\\qa\\bolla_bg_ies_r02_native_receipt.json",
+        "reason": "Exact BG IES Revit readback; companion IES path required"
+      },
+      "ies_portability": {
+        "pass": false,
+        "evidence": "E:\\Claude\\3D-Model-Workflow\\output\\belmont_ph_good_rfa_20261016\\qa\\bolla_bg_ies_r02_native_receipt.json",
+        "reason": "Native IES cache absent; external companion path must be relocated/readback in target machine"
+      },
+      "material": {
+        "pass": true,
+        "evidence": "E:\\Claude\\3D-Model-Workflow\\output\\belmont_ph_good_rfa_20261016\\qa\\bolla_bg_r03_partial_finish_receipt.json",
+        "reason": "Identified canopy/black cable/neck face material revision saved; four tiny collar faces left neutral"
+      },
+      "visual": {
+        "pass": false,
+        "evidence": "E:\\Claude\\3D-Model-Workflow\\output\\belmont_ph_good_rfa_20261016\\qa\\previews_r05",
+        "reason": "Clear glass Shaded view hue, grommet and metallic PBR require realistic product acceptance"
+      }
+    },
+    "MFR1415595": {
+      "native": {
+        "pass": true,
+        "evidence": "E:\\Claude\\3D-Model-Workflow\\output\\belmont_ph_good_rfa_20261016\\qa\\oem_qa_r03.json",
+        "reason": "52-inch blade radial sweep"
+      },
+      "material": {
+        "pass": true,
+        "evidence": "E:\\Claude\\3D-Model-Workflow\\output\\belmont_ph_good_rfa_20261016\\qa\\smooth_sbmb_r02_native_qa.json",
+        "reason": "Identified Soft Brass and Matte Black native FreeFormElement surfaces checked"
+      },
+      "visual": {
+        "pass": false,
+        "evidence": "E:\\Claude\\3D-Model-Workflow\\output\\belmont_ph_good_rfa_20261016\\qa\\previews_r05",
+        "reason": "Unclassified imports/lens and surface appearance remain optical hold"
+      },
+      "electrical": {
+        "pass": false,
+        "evidence": "E:\\Claude\\3D-Model-Workflow\\output\\belmont_ph_good_rfa_20261016\\qa\\inspect_oem_material_parts.json",
+        "reason": "Smart fan voltage/controller/LED ratings and wiring connectors require QA"
+      }
+    },
+    "MFR201959": {
+      "native": {
+        "pass": true,
+        "evidence": "E:\\Claude\\3D-Model-Workflow\\output\\belmont_ph_good_rfa_20261016\\qa\\oem_qa_r03.json",
+        "reason": "Original OEM placement/geometry"
+      },
+      "material": {
+        "pass": true,
+        "evidence": "E:\\Claude\\3D-Model-Workflow\\output\\belmont_ph_good_rfa_20261016\\runner\\receipts\\vogue_ch_r02_build.json",
+        "reason": "Chrome and opal material parameters saved/reopened"
+      },
+      "preliminary_visualization": {
+        "pass": true,
+        "evidence": "E:\\Claude\\3D-Model-Workflow\\output\\belmont_ph_good_rfa_20261016\\qa\\vogue_ws3127_r03_noies_independent_qa.json",
+        "reason": "R03 2993lm/3000K generic non-OEM spherical light, no obsolete 2017 IES"
+      },
+      "photometry": {
+        "pass": false,
+        "evidence": "E:\\Claude\\3D-Model-Workflow\\output\\belmont_ph_good_rfa_20261016\\sources\\photometry\\photometry_manifest.json",
+        "reason": "Official 2017 IES differs from current published lumen/wattage"
+      }
+    },
+    "QUO1249827": {
+      "native": {
+        "pass": true,
+        "evidence": "E:\\Claude\\3D-Model-Workflow\\output\\belmont_ph_good_rfa_20261016\\runner\\receipts\\quo_r04_native_qa.json",
+        "reason": "R04 ceiling face hosted and 11in envelope"
+      },
+      "visual": {
+        "pass": false,
+        "evidence": "E:\\Claude\\3D-Model-Workflow\\output\\belmont_ph_good_rfa_20261016\\qa\\previews",
+        "reason": "Clear bell silhouette is photo-interpreted, no OEM CAD surface authority"
+      },
+      "photometry": {
+        "pass": false,
+        "evidence": "E:\\Claude\\3D-Model-Workflow\\output\\belmont_ph_good_rfa_20261016\\runner\\receipts\\quo_r04_native_qa.json",
+        "reason": "E26 lamp/IES and electrical connector not verified"
+      }
+    },
+    "VCS833918": {
+      "rfa": {
+        "pass": true,
+        "evidence": "E:\\Claude\\3D-Model-Workflow\\output\\belmont_ph_good_rfa_20261016\\release",
+        "reason": "Reused existing accepted visualization RFA"
+      },
+      "project": {
+        "pass": false,
+        "evidence": "E:\\Claude\\3D-Model-Workflow\\output\\belmont_ph_good_rfa_20261016\\release",
+        "reason": "Current Penthouse installation and wiring not independently verified"
+      }
+    }
+  },
+  "ready_for_construction": false,
+  "held_gates": [
+    {
+      "sku": "ALR1280090",
+      "gate": "visual",
+      "reason": "Detached meshes and manufacturer appearance not approved"
+    },
+    {
+      "sku": "ALR1280090",
+      "gate": "photometry",
+      "reason": "Four E12 sockets, lamp output is owner/selectable; electrical/photometry unverified"
+    },
+    {
+      "sku": "HIN990485",
+      "gate": "native_light_source",
+      "reason": "R03 generic family template lacks native LightFamily; exact IES cannot yet drive a Revit emitter"
+    },
+    {
+      "sku": "HIN990485",
+      "gate": "photometry",
+      "reason": "Source-specific IES/LED lumens and electrical connector unverified"
+    },
+    {
+      "sku": "KZC1353667",
+      "gate": "ies_portability",
+      "reason": "Native IES cache absent; external companion path must be relocated/readback in target machine"
+    },
+    {
+      "sku": "KZC1353667",
+      "gate": "visual",
+      "reason": "Clear glass Shaded view hue, grommet and metallic PBR require realistic product acceptance"
+    },
+    {
+      "sku": "MFR1415595",
+      "gate": "visual",
+      "reason": "Unclassified imports/lens and surface appearance remain optical hold"
+    },
+    {
+      "sku": "MFR1415595",
+      "gate": "electrical",
+      "reason": "Smart fan voltage/controller/LED ratings and wiring connectors require QA"
+    },
+    {
+      "sku": "MFR201959",
+      "gate": "photometry",
+      "reason": "Official 2017 IES differs from current published lumen/wattage"
+    },
+    {
+      "sku": "QUO1249827",
+      "gate": "visual",
+      "reason": "Clear bell silhouette is photo-interpreted, no OEM CAD surface authority"
+    },
+    {
+      "sku": "QUO1249827",
+      "gate": "photometry",
+      "reason": "E26 lamp/IES and electrical connector not verified"
+    },
+    {
+      "sku": "VCS833918",
+      "gate": "project",
+      "reason": "Current Penthouse installation and wiring not independently verified"
+    }
+  ]
+}

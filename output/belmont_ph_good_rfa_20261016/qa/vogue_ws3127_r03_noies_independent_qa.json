@@ -1,0 +1,97 @@
+{
+  "R02": {
+    "connector_count": 0, 
+    "connector_ids": [], 
+    "distribution_class": "PhotometricWebLightDistribution", 
+    "distribution_ies": "WS-3127.IES", 
+    "family_type_ies": "WS-3127.IES", 
+    "light_distribution_style": "PhotometricWeb", 
+    "materials": {
+      "PHGOOD_VOGUE_CH_CHROME": {
+        "appearance_id": "4004", 
+        "color": [
+          207, 
+          211, 
+          216
+        ], 
+        "transparency": 0
+      }, 
+      "PHGOOD_VOGUE_MOUTH_BLOWN_OPAL": {
+        "appearance_id": "4005", 
+        "color": [
+          0, 
+          0, 
+          0
+        ], 
+        "transparency": 0
+      }
+    }, 
+    "path": "E:\\Claude\\3D-Model-Workflow\\output\\belmont_ph_good_rfa_20261016\\candidates\\ModernForms_Vogue_WS-3127_CH_R2025_R02.rfa", 
+    "sha256": "e5d49df849079974e7e1e3e3718a898e7f9671d0ca03633f4dead35fc1c0d9b8", 
+    "source_cct_kelvin": 3000.0, 
+    "source_flux_lumens": 2400.0, 
+    "type_metadata": {
+      "PH GOOD Finish Review Notes": "Original source material named architectural bronze / patina drives 336 metal faces. Converted appearance to HIGH-REFLECTIVITY CHROME candidate for scheduled WS-3127-CH. Original Diffuser-01 drives 52 faces; converted appearance to approximated etched opal glass. Numerical RGB/gloss/transparency are visual estimates, not OEM shaders. All original geometry, placements, photometric source, and electrical content remain as supplied by the OEM. A native readback, glass/metal visual review, and dimension review are needed before release. Sources: https://modernforms.com/product/vogue/ ; https://modernforms.com/dynamic-specsheet/?download=specs5&ppid=1546"
+    }, 
+    "warnings": []
+  }, 
+  "R03": {
+    "connector_count": 0, 
+    "connector_ids": [], 
+    "distribution_class": "SphericalLightDistribution", 
+    "distribution_ies": null, 
+    "family_type_ies": null, 
+    "light_distribution_style": "Spherical", 
+    "materials": {
+      "PHGOOD_VOGUE_CH_CHROME": {
+        "appearance_id": "4004", 
+        "color": [
+          207, 
+          211, 
+          216
+        ], 
+        "transparency": 0
+      }, 
+      "PHGOOD_VOGUE_MOUTH_BLOWN_OPAL": {
+        "appearance_id": "4005", 
+        "color": [
+          0, 
+          0, 
+          0
+        ], 
+        "transparency": 0
+      }
+    }, 
+    "path": "E:\\Claude\\3D-Model-Workflow\\output\\belmont_ph_good_rfa_20261016\\candidates\\ModernForms_Vogue_WS-3127_CH_R2025_R03.rfa", 
+    "sha256": "424e1645c08295c4b0ca1b9f6df03d230ad7e756b8a57834ac5f9b645666ad3f", 
+    "source_cct_kelvin": 3000.0, 
+    "source_flux_lumens": 2993.0, 
+    "type_metadata": {
+      "PH GOOD CCT Options": "3000K default; field adjustable to 2700K/3500K (OEM)", 
+      "PH GOOD Electrical Load Status": "NO MEP ELECTRICAL CONNECTOR - 40.6W OEM INPUT POWER ONLY - CIRCUIT VA UNKNOWN", 
+      "PH GOOD Finish Review Notes": "Original source material named architectural bronze / patina drives 336 metal faces. Converted appearance to HIGH-REFLECTIVITY CHROME candidate for scheduled WS-3127-CH. Original Diffuser-01 drives 52 faces; converted appearance to approximated etched opal glass. Numerical RGB/gloss/transparency are visual estimates, not OEM shaders. All original geometry, placements, photometric source, and electrical content remain as supplied by the OEM. A native readback, glass/metal visual review, and dimension review are needed before release. Sources: https://modernforms.com/product/vogue/ ; https://modernforms.com/dynamic-specsheet/?download=specs5&ppid=1546", 
+      "PH GOOD Manufacturer Evidence": "https://modernforms.com/product/vogue/ ; https://modernforms.com/dynamic-specsheet/?download=specs5&ppid=1546", 
+      "PH GOOD OEM Default CCT": 3000.0, 
+      "PH GOOD OEM Delivered Flux": 2993.0, 
+      "PH GOOD OEM Input Power": 40.600000000000001, 
+      "PH GOOD Photometric Status": "NO CURRENT OEM IES - GENERIC SPHERICAL VISUALIZATION ONLY - PHOTOMETRIC CALCS HOLD"
+    }, 
+    "warnings": []
+  }, 
+  "checks": {
+    "OEM_numeric_types": true, 
+    "R02_still_historical_web": true, 
+    "R03_CCT": true, 
+    "R03_generic_no_ies": true, 
+    "R03_initial_flux": true, 
+    "no_connector": true, 
+    "no_new_warnings": true, 
+    "status_disclosure": true, 
+    "visual_materials_preserved": true
+  }, 
+  "electrical_circuit_release": false, 
+  "lighting_calc_release": false, 
+  "manufacturer_ies_matched": false, 
+  "quality_class": "VISUALIZATION_PRELIMINARY_NON_OEM_DISTRIBUTION", 
+  "status": "PASS_PRELIMINARY_NON_OEM_DISTRIBUTION"
+}

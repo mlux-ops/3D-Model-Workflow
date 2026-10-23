@@ -1,0 +1,305 @@
+{
+  "status": "OEM_CAD_BYTES_AND_OFFLINE_MESH_VERIFIED_NOT_NATIVE_RFA",
+  "archive": "E:\\Claude\\3D-Model-Workflow\\output\\belmont_ph_bedside_pendants_20261017\\sources\\premium\\originals\\SCHNEID_Stucco_Share_3D.zip",
+  "archive_sha256": "b59b212eb37ff7311ac66dff38db282849b15f3d524b0e7d31e7753a7429ad72",
+  "archive_crc": "PASS",
+  "archive_members": 19,
+  "rfa_members": 0,
+  "oem_cad_sources": [
+    {
+      "file": "E:\\Claude\\3D-Model-Workflow\\output\\belmont_ph_bedside_pendants_20261017\\sources\\premium\\schneid_official_no2\\Stucco No.2.3dm",
+      "bytes": 6055200,
+      "sha256": "4893770f0fbdedb2b1eccd50d60196f0fef7f01f67af5f8707cab33e6f96be8e",
+      "archive_member": "Stucco Lamp No.2/Stucco No.2.3dm",
+      "original_byte_identity": true
+    },
+    {
+      "file": "E:\\Claude\\3D-Model-Workflow\\output\\belmont_ph_bedside_pendants_20261017\\sources\\premium\\schneid_official_no2\\Stucco No.2.3ds",
+      "bytes": 404343,
+      "sha256": "53429869516ba0a1a9282f5c7539e97f63690a4ade12d43ff2f5d327003dfc9e",
+      "archive_member": "Stucco Lamp No.2/Stucco No.2.3ds",
+      "original_byte_identity": true
+    },
+    {
+      "file": "E:\\Claude\\3D-Model-Workflow\\output\\belmont_ph_bedside_pendants_20261017\\sources\\premium\\schneid_official_no2\\Stucco No.2.skp",
+      "bytes": 2846121,
+      "sha256": "cadc434baf06e91b7155e983046c85d18b03adea198591bc4e247baf41abba7c",
+      "archive_member": "Stucco Lamp No.2/Stucco No.2.skp",
+      "original_byte_identity": true
+    },
+    {
+      "file": "E:\\Claude\\3D-Model-Workflow\\output\\belmont_ph_bedside_pendants_20261017\\sources\\premium\\schneid_official_no2\\Stucco No.2.stl",
+      "bytes": 18754541,
+      "sha256": "1f06f13b2132cc73050d1a6e843cd9e886dfd92938326ce3f5e74d5f7e04c06a",
+      "archive_member": "Stucco Lamp No.2/Stucco No.2.stl",
+      "original_byte_identity": true
+    },
+    {
+      "file": "E:\\Claude\\3D-Model-Workflow\\output\\belmont_ph_bedside_pendants_20261017\\sources\\premium\\schneid_official_no2\\Stucco No.2.stp",
+      "bytes": 606439,
+      "sha256": "2aa896860b242fbb5c22f34eb6fb7b0dca93b478dcf0cd05753186153f5c968b",
+      "archive_member": "Stucco Lamp No.2/Stucco No.2.stp",
+      "original_byte_identity": true
+    }
+  ],
+  "datasheet": "E:\\Claude\\3D-Model-Workflow\\output\\belmont_ph_bedside_pendants_20261017\\sources\\premium\\originals\\SCHNEID_STUCCO_DataSheet.pdf",
+  "datasheet_sha256": "7cb59b0d3ef3f308081ef0386438086d155c71b4be23fa08d4093365af75f6e8",
+  "datasheet_text": "E:\\Claude\\3D-Model-Workflow\\output\\belmont_ph_bedside_pendants_20261017\\qa\\SCHNEID_DATASHEET_TEXT_R02.txt",
+  "corrected_manufacturer_dimensions_mm": {
+    "No2_ceramic_body": {
+      "diameter": 105.0,
+      "height": 265.0
+    },
+    "No2_ceiling_rose": {
+      "diameter": 140.0,
+      "height": 140.0
+    }
+  },
+  "source_worker_dimension_correction": "Earlier 100x265mm body and 105x125mm rose mixed variants; No2 PDF explicitly says 105x265mm and 140x140mm.",
+  "stl": "E:\\Claude\\3D-Model-Workflow\\output\\belmont_ph_bedside_pendants_20261017\\sources\\premium\\schneid_official_no2\\Stucco No.2.stl",
+  "stl_sha256": "1f06f13b2132cc73050d1a6e843cd9e886dfd92938326ce3f5e74d5f7e04c06a",
+  "stl_triangle_count": 59289,
+  "stl_bounds_source_units": [
+    [
+      -71.966796875,
+      -70.36723327636719,
+      473.0000305175781
+    ],
+    [
+      67.966796875,
+      69.5,
+      1782.0
+    ]
+  ],
+  "stl_extents_source_units": [
+    139.93359375,
+    139.8672332763672,
+    1308.9999694824219
+  ],
+  "step_declared_units": "MILLIMETRES",
+  "stl_units": "STL has no intrinsic units; millimetres inferred from same-package STEP and physical component dimensions.",
+  "connected_components": [
+    {
+      "index": 0,
+      "vertices": 4897,
+      "triangles": 9794,
+      "minimum_source_xyz": [
+        -53.09156799316406,
+        -51.87299728393555,
+        566.4881591796875
+      ],
+      "maximum_source_xyz": [
+        49.09156799316406,
+        50.87299728393555,
+        828.2080078125
+      ],
+      "extents_source_units": [
+        102.18313598632812,
+        102.7459945678711,
+        261.7198486328125
+      ],
+      "watertight": true
+    },
+    {
+      "index": 1,
+      "vertices": 4210,
+      "triangles": 8055,
+      "minimum_source_xyz": [
+        -21.08492088317871,
+        -19.500185012817383,
+        608.8499145507812
+      ],
+      "maximum_source_xyz": [
+        16.970293045043945,
+        18.499685287475586,
+        627.5731811523438
+      ],
+      "extents_source_units": [
+        38.055213928222656,
+        37.99987030029297,
+        18.7232666015625
+      ],
+      "watertight": false
+    },
+    {
+      "index": 2,
+      "vertices": 3805,
+      "triangles": 7606,
+      "minimum_source_xyz": [
+        -9.437907218933105,
+        -7.937748908996582,
+        627.491943359375
+      ],
+      "maximum_source_xyz": [
+        5.437504291534424,
+        6.937414646148682,
+        647.4920043945312
+      ],
+      "extents_source_units": [
+        14.87541151046753,
+        14.875163555145264,
+        20.00006103515625
+      ],
+      "watertight": true
+    },
+    {
+      "index": 3,
+      "vertices": 3316,
+      "triangles": 6267,
+      "minimum_source_xyz": [
+        -21.27240562438965,
+        -19.50028419494629,
+        566.4829711914062
+      ],
+      "maximum_source_xyz": [
+        16.934263229370117,
+        18.50033950805664,
+        609.0169067382812
+      ],
+      "extents_source_units": [
+        38.206668853759766,
+        38.00062370300293,
+        42.533935546875
+      ],
+      "watertight": false
+    },
+    {
+      "index": 4,
+      "vertices": 2211,
+      "triangles": 4393,
+      "minimum_source_xyz": [
+        -71.966796875,
+        -70.36723327636719,
+        1634.625
+      ],
+      "maximum_source_xyz": [
+        67.966796875,
+        69.5,
+        1782.0
+      ],
+      "extents_source_units": [
+        139.93359375,
+        139.8672332763672,
+        147.375
+      ],
+      "watertight": false
+    },
+    {
+      "index": 5,
+      "vertices": 878,
+      "triangles": 1690,
+      "minimum_source_xyz": [
+        -20.5,
+        -19.0001220703125,
+        566.5687255859375
+      ],
+      "maximum_source_xyz": [
+        16.5,
+        17.9998779296875,
+        603.5687255859375
+      ],
+      "extents_source_units": [
+        37.0,
+        37.0,
+        37.0
+      ],
+      "watertight": false
+    },
+    {
+      "index": 6,
+      "vertices": 128,
+      "triangles": 252,
+      "minimum_source_xyz": [
+        -5.75,
+        -4.25,
+        777.7194213867188
+      ],
+      "maximum_source_xyz": [
+        1.75,
+        3.25,
+        1771.228271484375
+      ],
+      "extents_source_units": [
+        7.5,
+        7.5,
+        993.5088500976562
+      ],
+      "watertight": true
+    },
+    {
+      "index": 7,
+      "vertices": 128,
+      "triangles": 252,
+      "minimum_source_xyz": [
+        -9.0,
+        -7.5,
+        807.2080078125
+      ],
+      "maximum_source_xyz": [
+        5.0,
+        6.5,
+        824.2080078125
+      ],
+      "extents_source_units": [
+        14.0,
+        14.0,
+        17.0
+      ],
+      "watertight": true
+    },
+    {
+      "index": 8,
+      "vertices": 159,
+      "triangles": 252,
+      "minimum_source_xyz": [
+        -10.99710750579834,
+        -9.49725341796875,
+        627.491943359375
+      ],
+      "maximum_source_xyz": [
+        6.9991888999938965,
+        8.498920440673828,
+        627.491943359375
+      ],
+      "extents_source_units": [
+        17.996296405792236,
+        17.996173858642578,
+        0.0
+      ],
+      "watertight": false
+    },
+    {
+      "index": 9,
+      "vertices": 155,
+      "triangles": 245,
+      "minimum_source_xyz": [
+        -20.58766746520996,
+        -19.00028419494629,
+        608.8499145507812
+      ],
+      "maximum_source_xyz": [
+        16.43619728088379,
+        18.000320434570312,
+        609.0169067382812
+      ],
+      "extents_source_units": [
+        37.02386474609375,
+        37.0006046295166,
+        0.1669921875
+      ],
+      "watertight": false
+    }
+  ],
+  "connected_component_count": 20128,
+  "component_scope": "Ten largest topological mesh components only; STL disconnected triangles are not semantic CAD parts.",
+  "previews": [
+    "E:\\Claude\\3D-Model-Workflow\\output\\belmont_ph_bedside_pendants_20261017\\previews\\SCHNEID_OEM_STL_FRONT_R02.png",
+    "E:\\Claude\\3D-Model-Workflow\\output\\belmont_ph_bedside_pendants_20261017\\previews\\SCHNEID_OEM_STL_OBLIQUE_R02.png"
+  ],
+  "neutral_preview_is_not_clay_finish_verification": true,
+  "native_import_available_in_revit_2025_api": "Document.Import(path, ImportOptions3DM, View) returns ElementId; requires optional importer and native execution.",
+  "native_import_executed": false,
+  "native_rfa_created": false,
+  "ul_variant": "OEM CAD has no verified E26 UL socket/certification; exact retailer UL lamp/voltage needs separate confirmation.",
+  "release_status": "REVIEW_NOT_RELEASED"
+}

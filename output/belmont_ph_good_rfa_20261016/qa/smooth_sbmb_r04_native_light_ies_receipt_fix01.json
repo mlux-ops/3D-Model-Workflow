@@ -1,0 +1,525 @@
+{
+  "default_cct_kelvin": 3000.0, 
+  "error": "Traceback (most recent call last):\n  File \"E:\\Claude\\3D-Model-Workflow\\output\\belmont_ph_good_rfa_20261016\\scripts\\build_smooth_frw2502_r04_native_light_ies_fix01.py\", line 412, in main\n    lf,lt=native_light(doc)\n  File \"E:\\Claude\\3D-Model-Workflow\\output\\belmont_ph_good_rfa_20261016\\scripts\\build_smooth_frw2502_r04_native_light_ies_fix01.py\", line 246, in native_light\n    require(lf is not None and int(lf.GetNumberOfLightTypes())==1,\n  File \"E:\\Claude\\3D-Model-Workflow\\output\\belmont_ph_good_rfa_20261016\\scripts\\build_smooth_frw2502_r04_native_light_ies_fix01.py\", line 72, in require\n    raise RuntimeError(message)\nRuntimeError: BLOCK_NO_NATIVE_LIGHTTYPE_AFTER_ACTIVATION\n", 
+  "lens_source_dimensions": {
+    "blade_ids": [
+      2997, 
+      2998, 
+      2999
+    ], 
+    "imports": [
+      2977, 
+      2980, 
+      2982, 
+      2985, 
+      2986, 
+      2987, 
+      2988, 
+      2989, 
+      2990, 
+      2991, 
+      2992, 
+      2993, 
+      2994
+    ], 
+    "lens_center_mm": [
+      0.0, 
+      0.49999999998679812, 
+      355.04999818527642
+    ], 
+    "lens_mm": [
+      -56.750000000000014, 
+      -56.250000000013252, 
+      344.29999818527256, 
+      56.750000000000014, 
+      57.249999999986848, 
+      365.79999818528023
+    ], 
+    "radial_sweep_mm": 1321.6925205853231
+  }, 
+  "manufacturer_archive_url": "https://modernforms.com/images/products/IES_FILES/FR-W2502-52_IES.zip", 
+  "manufacturer_nominal_light_kit_watts": 16.0, 
+  "model": "FR-W2502-52L-SB/MB", 
+  "native_probe_sha256": "ad8db65bdd92ca96e5089715909b4adc2bcab31017512c5fc2aa99c40f0bac6f", 
+  "native_recovery_strategy": "Already-ON owner FBX_ASSET_TYPE 1 with zero LightTypes: reset to 0 in isolated transaction, commit, re-enable 1 in second transaction, require one REAL LightType.", 
+  "not_certified": [
+    "finish-specific light photometry", 
+    "CCT-specific angular photometry", 
+    "fan motor electric load", 
+    "MEP connector/circuit scheduling", 
+    "IES orientation in project"
+  ], 
+  "official_ies": "E:\\Claude\\3D-Model-Workflow\\output\\belmont_ph_good_rfa_20261016\\sources\\photometry\\FR-W2502-52L.IES", 
+  "official_ies_sha256": "6044dda98294020d03decd14ad118be2717845536597d1ca9bb9cc296fdcda8e", 
+  "official_ies_sha256_after": "6044dda98294020d03decd14ad118be2717845536597d1ca9bb9cc296fdcda8e", 
+  "original_native_flag": 1, 
+  "photometric_test_lumens": 707.09000000000003, 
+  "photometric_test_watts": 16.754899999999999, 
+  "protected_r02_sha256_after": "f1741c711a07a26101c550b580a2db6be99bc4d3689cb75104eaafb0834379db", 
+  "protected_sources_unchanged": true, 
+  "r02_native_qa_sha256": "2ea2921f50d0bff745f5693c1e3a3eb6be1e79af3ed2d8462e2e03f2248b0d08", 
+  "reset_off_verified": true, 
+  "source": "E:\\Claude\\3D-Model-Workflow\\output\\belmont_ph_good_rfa_20261016\\candidates\\ModernForms_Smooth_FR-W2502-52L_SBMB_R2025_R02_PARTIAL_UNAPPROVED.rfa", 
+  "source_physical_fingerprint": {
+    "elements": [
+      [
+        2977, 
+        "<property# Name on Element>", 
+        [
+          -0.19685038999999999, 
+          -0.19501176000000001, 
+          1.0180446100000000, 
+          0.19685038999999999, 
+          0.19829260000000001, 
+          1.1968503900000000
+        ], 
+        []
+      ], 
+      [
+        2980, 
+        "<property# Name on Element>", 
+        [
+          -0.22930250999999999, 
+          -0.27045055000000001, 
+          -1e-08, 
+          0.22349949999999999, 
+          0.27668817000000001, 
+          0.20833333000000001
+        ], 
+        []
+      ], 
+      [
+        2982, 
+        "<property# Name on Element>", 
+        [
+          -0.059670819999999999, 
+          -0.058234910000000001, 
+          0.56660104, 
+          0.059670819999999999, 
+          0.061515750000000001, 
+          0.59612860000000001
+        ], 
+        []
+      ], 
+      [
+        2985, 
+        "<property# Name on Element>", 
+        [
+          -0.098526909999999995, 
+          -0.096883609999999995, 
+          0.13991159, 
+          0.098471840000000005, 
+          0.10016733, 
+          0.24490133
+        ], 
+        []
+      ], 
+      [
+        2986, 
+        "<property# Name on Element>", 
+        [
+          -0.21104965000000001, 
+          -0.19394295, 
+          1.0557742699999999, 
+          0.18823345, 
+          0.20534014, 
+          1.1771653500000001
+        ], 
+        []
+      ], 
+      [
+        2987, 
+        "<property# Name on Element>", 
+        [
+          -0.11171549, 
+          0.02657791, 
+          0.18081675999999999, 
+          -0.063389139999999997, 
+          0.065923200000000001, 
+          0.20304150000000001
+        ], 
+        []
+      ], 
+      [
+        2988, 
+        "<property# Name on Element>", 
+        [
+          -0.014284470000000001, 
+          0.097215220000000005, 
+          0.19922834, 
+          0.014284470000000001, 
+          0.12588189, 
+          0.22353799999999999
+        ], 
+        []
+      ], 
+      [
+        2989, 
+        "<property# Name on Element>", 
+        [
+          -0.017120199999999999, 
+          -0.12542465999999999, 
+          0.19922834, 
+          0.017120199999999999, 
+          -0.091110769999999994, 
+          0.22353799999999999
+        ], 
+        []
+      ], 
+      [
+        2990, 
+        "<property# Name on Element>", 
+        [
+          0.044891899999999998, 
+          0.057857270000000002, 
+          0.70487721999999997, 
+          0.073948319999999998, 
+          0.086958649999999998, 
+          0.74253608000000004
+        ], 
+        []
+      ], 
+      [
+        2991, 
+        "<property# Name on Element>", 
+        [
+          0.072958809999999999, 
+          0.04050728, 
+          0.96440287999999996, 
+          0.11989701, 
+          0.087445480000000006, 
+          0.99538121000000002
+        ], 
+        []
+      ], 
+      [
+        2992, 
+        "<property# Name on Element>", 
+        [
+          -0.0075549500000000004, 
+          -0.078093010000000004, 
+          1.0158300499999999, 
+          0.0075549500000000004, 
+          -0.062983109999999995, 
+          1.0292273000000001
+        ], 
+        []
+      ], 
+      [
+        2993, 
+        "<property# Name on Element>", 
+        [
+          -0.067966730000000003, 
+          0.032271330000000001, 
+          1.0101427700000001, 
+          -0.05705006, 
+          0.043187990000000002, 
+          1.0235400200000000
+        ], 
+        []
+      ], 
+      [
+        2994, 
+        "<property# Name on Element>", 
+        [
+          0.05705006, 
+          0.032271330000000001, 
+          1.0101427700000001, 
+          0.067966730000000003, 
+          0.043187990000000002, 
+          1.0235400200000000
+        ], 
+        []
+      ], 
+      [
+        2997, 
+        "<property# Name on GenericForm>", 
+        [
+          -1.2011319499999999, 
+          0.0032808199999999998, 
+          0.94459168000000004, 
+          0.12160820999999999, 
+          1.9400665500000001, 
+          1.1115485500000000
+        ], 
+        [
+          3370
+        ]
+      ], 
+      [
+        2998, 
+        "<property# Name on GenericForm>", 
+        [
+          -1.2064024499999999, 
+          -1.9335856600000001, 
+          0.94459168000000004, 
+          0.12160846, 
+          8.9999999999999999e-08, 
+          1.1115485500000000
+        ], 
+        [
+          3370
+        ]
+      ], 
+      [
+        2999, 
+        "<property# Name on GenericForm>", 
+        [
+          0.051769849999999999, 
+          -0.2106316, 
+          0.94459168000000004, 
+          2.1665964199999999, 
+          0.21391287, 
+          1.1115485500000000
+        ], 
+        [
+          3370
+        ]
+      ], 
+      [
+        3000, 
+        "<property# Name on GenericForm>", 
+        [
+          -0.18618766, 
+          -0.18454724, 
+          1.1295931699999999, 
+          0.18618766, 
+          0.18782808000000001, 
+          1.2001312300000000
+        ], 
+        []
+      ], 
+      [
+        3038, 
+        "<property# Name on GenericForm>", 
+        [
+          -0.19685038999999999, 
+          -0.19501176000000001, 
+          0.71128608000000004, 
+          0.19685038999999999, 
+          0.19829260000000001, 
+          1.0131233500000001
+        ], 
+        [
+          3372
+        ]
+      ], 
+      [
+        3039, 
+        "<property# Name on GenericForm>", 
+        [
+          -0.13451444000000001, 
+          -0.13267673999999999, 
+          0.57972440000000003, 
+          0.13451444000000001, 
+          0.13595757999999999, 
+          0.71784775999999995
+        ], 
+        [
+          3372
+        ]
+      ], 
+      [
+        3040, 
+        "<property# Name on GenericForm>", 
+        [
+          -0.043613249999999999, 
+          -0.041993969999999999, 
+          0.14450763, 
+          0.043611829999999997, 
+          0.045273529999999999, 
+          0.64450763
+        ], 
+        [
+          3372
+        ]
+      ], 
+      [
+        3041, 
+        "<property# Name on GenericForm>", 
+        [
+          -0.29363517, 
+          -0.29199475000000003, 
+          -1e-08, 
+          0.29363517, 
+          0.29527558999999998, 
+          0.21489501
+        ], 
+        [
+          3372
+        ]
+      ], 
+      [
+        3042, 
+        "<property# Name on GenericForm>", 
+        [
+          -0.12795276, 
+          -0.12631234, 
+          0.21489501, 
+          0.12795276, 
+          0.12959318, 
+          0.22900261999999999
+        ], 
+        [
+          3372
+        ]
+      ]
+    ], 
+    "materials": [
+      [
+        238, 
+        "Default", 
+        [
+          127, 
+          127, 
+          127
+        ], 
+        0, 
+        2477
+      ], 
+      [
+        239, 
+        "Default Roof", 
+        [
+          0, 
+          127, 
+          0
+        ], 
+        0, 
+        2478
+      ], 
+      [
+        240, 
+        "Default Wall", 
+        [
+          127, 
+          127, 
+          127
+        ], 
+        0, 
+        2479
+      ], 
+      [
+        241, 
+        "Glass", 
+        [
+          0, 
+          0, 
+          255
+        ], 
+        75, 
+        2480
+      ], 
+      [
+        1223, 
+        "Poche", 
+        [
+          0, 
+          0, 
+          255
+        ], 
+        0, 
+        2481
+      ], 
+      [
+        2092, 
+        "Default Light Source", 
+        [
+          255, 
+          255, 
+          0
+        ], 
+        75, 
+        2482
+      ], 
+      [
+        2869, 
+        "\u6e32\u67d3\u6750\u8d28 255-255-255", 
+        [
+          255, 
+          255, 
+          255
+        ], 
+        0, 
+        -1
+      ], 
+      [
+        2912, 
+        "\u6e32\u67d3\u6750\u8d28 204-204-204", 
+        [
+          204, 
+          204, 
+          204
+        ], 
+        0, 
+        -1
+      ], 
+      [
+        2918, 
+        "\u6e32\u67d3\u6750\u8d28 101-101-101", 
+        [
+          101, 
+          101, 
+          101
+        ], 
+        0, 
+        -1
+      ], 
+      [
+        2925, 
+        "\u6e32\u67d3\u6750\u8d28 192-192-192", 
+        [
+          192, 
+          192, 
+          192
+        ], 
+        0, 
+        -1
+      ], 
+      [
+        3261, 
+        "Analytical Panels", 
+        [
+          251, 
+          197, 
+          153
+        ], 
+        50, 
+        3262
+      ], 
+      [
+        3370, 
+        "PH GOOD Smooth MB ABS Blades R02 Provisional", 
+        [
+          14, 
+          14, 
+          14
+        ], 
+        0, 
+        3369
+      ], 
+      [
+        3372, 
+        "PH GOOD Smooth SB Housing R02 Provisional", 
+        [
+          175, 
+          156, 
+          113
+        ], 
+        0, 
+        3371
+      ]
+    ], 
+    "placement": "WorkPlaneBased", 
+    "types": [
+      " "
+    ]
+  }, 
+  "source_sha256": "f1741c711a07a26101c550b580a2db6be99bc4d3689cb75104eaafb0834379db", 
+  "source_type_name": " ", 
+  "source_validation_sha256": "b9d8836a641a1c4e6b912d5aabe36f7d738110a389e615f61e9f38c2c3b7c622", 
+  "source_warnings": [], 
+  "status": "BLOCKED_OR_ERROR_NO_RELEASE", 
+  "target": "E:\\Claude\\3D-Model-Workflow\\output\\belmont_ph_good_rfa_20261016\\candidates\\ModernForms_Smooth_FR-W2502-52L_SBMB_R2025_R04_NATIVE_LIGHT_IES_UNAPPROVED.rfa", 
+  "time_utc": "2026-10-16T08:58:46Z"
+}
