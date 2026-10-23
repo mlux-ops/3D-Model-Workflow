@@ -37,7 +37,7 @@ self-illuminated; colours sampled from the product top view, metals below the pi
 
 | Parameter | RGB | Gloss | Applies to |
 |---|---|---|---|
-| Top Finish | 0, 18, 28 | 0.90 | ceramic glass |
+| Top Finish | 0, 0, 0 | 1.00 | pitch black polished ceramic glass (user direction 2026-10-22; photo median was blue-tinted) |
 | Frame Finish | 120, 122, 125 | 0.50 | stainless edge band |
 | Grate Finish | 73, 72, 77 | 0.25 | 5 cast-iron grates |
 | Burner Finish | 78, 74, 75 | 0.30 | caps, bowls, wok outer cap |

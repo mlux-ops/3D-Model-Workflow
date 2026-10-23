@@ -1,0 +1,2169 @@
+{
+  "appearance_source_asset": "ACADGen-001", 
+  "build_bounds_mm": [
+    -471.0, 
+    -263.00000782012938, 
+    -71.0, 
+    471.0, 
+    263.00000782012938, 
+    37.0
+  ], 
+  "checkpoint_utc": "2026-10-23T04:49:07.345000Z", 
+  "dimension_parameters_mm": {
+    "Built-in Height": 78.0, 
+    "Casing Depth": 46.0, 
+    "Cutout Depth": 500.0, 
+    "Cutout Width": 916.0, 
+    "Height Above Counter": 7.0, 
+    "Overall Depth": 526.0, 
+    "Overall Height": 53.0, 
+    "Overall Width": 942.0
+  }, 
+  "failed_gates": [], 
+  "family": {
+    "always_vertical": 0, 
+    "category": "Specialty Equipment", 
+    "freeform_count": 32, 
+    "measured_bounds_mm": [
+      -471.0, 
+      -263.00000782012938, 
+      -71.0, 
+      471.0, 
+      263.00000782012938, 
+      37.0
+    ], 
+    "part_bindings": [
+      {
+        "found": true, 
+        "group": "frame", 
+        "id": "3254", 
+        "material_parameter": "Frame Finish", 
+        "subcategory": "Cooktop Frame"
+      }, 
+      {
+        "found": true, 
+        "group": "glass", 
+        "id": "3255", 
+        "material_parameter": "Top Finish", 
+        "subcategory": "Cooktop Glass"
+      }, 
+      {
+        "found": true, 
+        "group": "casing", 
+        "id": "3256", 
+        "material_parameter": "Housing Finish", 
+        "subcategory": "Housing"
+      }, 
+      {
+        "found": true, 
+        "group": "electronics_housing", 
+        "id": "3257", 
+        "material_parameter": "Housing Finish", 
+        "subcategory": "Housing"
+      }, 
+      {
+        "found": true, 
+        "group": "gas_connection", 
+        "id": "3258", 
+        "material_parameter": "Housing Finish", 
+        "subcategory": "Housing"
+      }, 
+      {
+        "found": true, 
+        "group": "knob_0", 
+        "id": "3259", 
+        "material_parameter": "Knob Finish", 
+        "subcategory": "Control Knobs"
+      }, 
+      {
+        "found": true, 
+        "group": "knob_1", 
+        "id": "3260", 
+        "material_parameter": "Knob Finish", 
+        "subcategory": "Control Knobs"
+      }, 
+      {
+        "found": true, 
+        "group": "knob_2", 
+        "id": "3261", 
+        "material_parameter": "Knob Finish", 
+        "subcategory": "Control Knobs"
+      }, 
+      {
+        "found": true, 
+        "group": "knob_3", 
+        "id": "3262", 
+        "material_parameter": "Knob Finish", 
+        "subcategory": "Control Knobs"
+      }, 
+      {
+        "found": true, 
+        "group": "knob_4", 
+        "id": "3263", 
+        "material_parameter": "Knob Finish", 
+        "subcategory": "Control Knobs"
+      }, 
+      {
+        "found": true, 
+        "group": "wok_bowl", 
+        "id": "3264", 
+        "material_parameter": "Burner Finish", 
+        "subcategory": "Burner Caps"
+      }, 
+      {
+        "found": true, 
+        "group": "wok_outer_head", 
+        "id": "3265", 
+        "material_parameter": "Burner Ring Finish", 
+        "subcategory": "Burner Heads"
+      }, 
+      {
+        "found": true, 
+        "group": "wok_outer_cap", 
+        "id": "3266", 
+        "material_parameter": "Burner Finish", 
+        "subcategory": "Burner Caps"
+      }, 
+      {
+        "found": true, 
+        "group": "wok_head", 
+        "id": "3267", 
+        "material_parameter": "Burner Ring Finish", 
+        "subcategory": "Burner Heads"
+      }, 
+      {
+        "found": true, 
+        "group": "wok_cap", 
+        "id": "3268", 
+        "material_parameter": "Burner Finish", 
+        "subcategory": "Burner Caps"
+      }, 
+      {
+        "found": true, 
+        "group": "economy_bowl", 
+        "id": "3269", 
+        "material_parameter": "Burner Finish", 
+        "subcategory": "Burner Caps"
+      }, 
+      {
+        "found": true, 
+        "group": "economy_head", 
+        "id": "3270", 
+        "material_parameter": "Burner Ring Finish", 
+        "subcategory": "Burner Heads"
+      }, 
+      {
+        "found": true, 
+        "group": "economy_cap", 
+        "id": "3271", 
+        "material_parameter": "Burner Finish", 
+        "subcategory": "Burner Caps"
+      }, 
+      {
+        "found": true, 
+        "group": "normal_rear_bowl", 
+        "id": "3272", 
+        "material_parameter": "Burner Finish", 
+        "subcategory": "Burner Caps"
+      }, 
+      {
+        "found": true, 
+        "group": "normal_rear_head", 
+        "id": "3273", 
+        "material_parameter": "Burner Ring Finish", 
+        "subcategory": "Burner Heads"
+      }, 
+      {
+        "found": true, 
+        "group": "normal_rear_cap", 
+        "id": "3274", 
+        "material_parameter": "Burner Finish", 
+        "subcategory": "Burner Caps"
+      }, 
+      {
+        "found": true, 
+        "group": "power_bowl", 
+        "id": "3275", 
+        "material_parameter": "Burner Finish", 
+        "subcategory": "Burner Caps"
+      }, 
+      {
+        "found": true, 
+        "group": "power_head", 
+        "id": "3276", 
+        "material_parameter": "Burner Ring Finish", 
+        "subcategory": "Burner Heads"
+      }, 
+      {
+        "found": true, 
+        "group": "power_cap", 
+        "id": "3277", 
+        "material_parameter": "Burner Finish", 
+        "subcategory": "Burner Caps"
+      }, 
+      {
+        "found": true, 
+        "group": "normal_front_bowl", 
+        "id": "3278", 
+        "material_parameter": "Burner Finish", 
+        "subcategory": "Burner Caps"
+      }, 
+      {
+        "found": true, 
+        "group": "normal_front_head", 
+        "id": "3279", 
+        "material_parameter": "Burner Ring Finish", 
+        "subcategory": "Burner Heads"
+      }, 
+      {
+        "found": true, 
+        "group": "normal_front_cap", 
+        "id": "3280", 
+        "material_parameter": "Burner Finish", 
+        "subcategory": "Burner Caps"
+      }, 
+      {
+        "found": true, 
+        "group": "grate_rear_left", 
+        "id": "3281", 
+        "material_parameter": "Grate Finish", 
+        "subcategory": "Grates"
+      }, 
+      {
+        "found": true, 
+        "group": "grate_rear_right", 
+        "id": "3282", 
+        "material_parameter": "Grate Finish", 
+        "subcategory": "Grates"
+      }, 
+      {
+        "found": true, 
+        "group": "grate_front_left", 
+        "id": "3283", 
+        "material_parameter": "Grate Finish", 
+        "subcategory": "Grates"
+      }, 
+      {
+        "found": true, 
+        "group": "grate_front_right", 
+        "id": "3284", 
+        "material_parameter": "Grate Finish", 
+        "subcategory": "Grates"
+      }, 
+      {
+        "found": true, 
+        "group": "grate_wok", 
+        "id": "3285", 
+        "material_parameter": "Grate Finish", 
+        "subcategory": "Grates"
+      }
+    ], 
+    "placement_type": "WorkPlaneBased", 
+    "rays": {
+      "built_in_height_with_box": {
+        "measured_mm": 78.0, 
+        "method": "Solid.IntersectWithCurve span along (11.5, 6.0, -200) -> (11.5, 6.0, 200)", 
+        "pass": true, 
+        "provenance": "PUBLISHED", 
+        "segments_mm": [
+          [
+            [
+              11.5, 
+              6.0, 
+              0.0
+            ], 
+            [
+              11.5, 
+              6.0, 
+              6.9999999999999991
+            ]
+          ], 
+          [
+            [
+              11.5, 
+              6.0, 
+              -46.0
+            ], 
+            [
+              11.5, 
+              6.0, 
+              0.0
+            ]
+          ], 
+          [
+            [
+              11.5, 
+              6.0, 
+              -71.0
+            ], 
+            [
+              11.5, 
+              6.0, 
+              -46.0
+            ]
+          ]
+        ], 
+        "target_mm": 78.0, 
+        "tol_mm": 0.63500000000000001
+      }, 
+      "cap_economy_diameter": {
+        "measured_mm": 55.722526863020136, 
+        "method": "Solid.IntersectWithCurve span along (-14.699999999999989, 145.0, 21.5) -> (48.300000000000011, 145.0, 21.5)", 
+        "pass": true, 
+        "provenance": "PHOTO", 
+        "segments_mm": [
+          [
+            [
+              -11.061263431510058, 
+              145.0, 
+              21.500000000000004
+            ], 
+            [
+              44.661263431510079, 
+              145.0, 
+              21.500000000000004
+            ]
+          ]
+        ], 
+        "target_mm": 55.722526863020128, 
+        "tol_mm": 0.63500000000000001
+      }, 
+      "cap_normal_front_diameter": {
+        "measured_mm": 68.963758598266679, 
+        "method": "Solid.IntersectWithCurve span along (306.0, -80.0, 21.5) -> (382.0, -80.0, 21.5)", 
+        "pass": true, 
+        "provenance": "PHOTO", 
+        "segments_mm": [
+          [
+            [
+              309.51812070086669, 
+              -80.0, 
+              21.500000000000004
+            ], 
+            [
+              378.48187929913337, 
+              -80.0, 
+              21.500000000000004
+            ]
+          ]
+        ], 
+        "target_mm": 68.963758598266665, 
+        "tol_mm": 0.63500000000000001
+      }, 
+      "cap_normal_rear_diameter": {
+        "measured_mm": 73.020545054114763, 
+        "method": "Solid.IntersectWithCurve span along (238.60000000000002, 145.0, 21.5) -> (318.60000000000002, 145.0, 21.5)", 
+        "pass": true, 
+        "provenance": "PHOTO", 
+        "segments_mm": [
+          [
+            [
+              242.08972747294266, 
+              145.0, 
+              21.500000000000004
+            ], 
+            [
+              315.11027252705742, 
+              145.0, 
+              21.500000000000004
+            ]
+          ]
+        ], 
+        "target_mm": 73.020545054114734, 
+        "tol_mm": 0.63500000000000001
+      }, 
+      "cap_power_diameter": {
+        "measured_mm": 108.33743581975716, 
+        "method": "Solid.IntersectWithCurve span along (-106.5, -80.0, 21.5) -> (8.5, -80.0, 21.5)", 
+        "pass": true, 
+        "provenance": "PHOTO", 
+        "segments_mm": [
+          [
+            [
+              -103.16871790987858, 
+              -80.0, 
+              21.500000000000004
+            ], 
+            [
+              5.1687179098785796, 
+              -80.0, 
+              21.500000000000004
+            ]
+          ]
+        ], 
+        "target_mm": 108.33743581975715, 
+        "tol_mm": 0.63500000000000001
+      }, 
+      "cap_wok_diameter": {
+        "measured_mm": 42.332020977033437, 
+        "method": "Solid.IntersectWithCurve span along (-343.0, 73.0, 21.5) -> (-293.0, 73.0, 21.5)", 
+        "pass": true, 
+        "provenance": "PHOTO", 
+        "segments_mm": [
+          [
+            [
+              -339.16601048851669, 
+              73.0, 
+              21.500000000000004
+            ], 
+            [
+              -296.83398951148325, 
+              73.0, 
+              21.500000000000004
+            ]
+          ]
+        ], 
+        "target_mm": 42.332020977033451, 
+        "tol_mm": 0.63500000000000001
+      }, 
+      "casing_depth_below_counter": {
+        "measured_mm": -46.0, 
+        "method": "Solid.IntersectWithCurve start along (-430.0, -240.0, -200) -> (-430.0, -240.0, 200)", 
+        "pass": true, 
+        "provenance": "DRAWING", 
+        "segments_mm": [
+          [
+            [
+              -430.0, 
+              -240.0, 
+              0.0
+            ], 
+            [
+              -430.0, 
+              -240.0, 
+              6.9999999999999991
+            ]
+          ], 
+          [
+            [
+              -430.0, 
+              -240.0, 
+              -46.0
+            ], 
+            [
+              -430.0, 
+              -240.0, 
+              0.0
+            ]
+          ]
+        ], 
+        "target_mm": -46.0, 
+        "tol_mm": 0.63500000000000001
+      }, 
+      "casing_plan_depth": {
+        "measured_mm": 490.0, 
+        "method": "Solid.IntersectWithCurve span along (-300, -313.0, -30) -> (-300, 313.0, -30)", 
+        "pass": true, 
+        "provenance": "INFERRED", 
+        "segments_mm": [
+          [
+            [
+              -300.0, 
+              -247.00000000000003, 
+              -30.0
+            ], 
+            [
+              -300.0, 
+              242.99999999999997, 
+              -30.0
+            ]
+          ]
+        ], 
+        "target_mm": 490.0, 
+        "tol_mm": 0.63500000000000001
+      }, 
+      "casing_width": {
+        "measured_mm": 914.0, 
+        "method": "Solid.IntersectWithCurve span along (-521.0, -100, -30) -> (521.0, -100, -30)", 
+        "pass": true, 
+        "provenance": "DRAWING", 
+        "segments_mm": [
+          [
+            [
+              -457.0, 
+              -100.0, 
+              -30.0
+            ], 
+            [
+              456.99999999999994, 
+              -100.0, 
+              -30.0
+            ]
+          ]
+        ], 
+        "target_mm": 914.0, 
+        "tol_mm": 0.63500000000000001
+      }, 
+      "frame_band": {
+        "measured_mm": 7.5, 
+        "method": "Solid.IntersectWithCurve first_len along (-521.0, 0, 3.5) -> (521.0, 0, 3.5)", 
+        "pass": true, 
+        "provenance": "PHOTO", 
+        "segments_mm": [
+          [
+            [
+              -471.0, 
+              0.0, 
+              3.5
+            ], 
+            [
+              -463.5, 
+              0.0, 
+              3.5
+            ]
+          ], 
+          [
+            [
+              463.50000000000006, 
+              0.0, 
+              3.5
+            ], 
+            [
+              471.0, 
+              0.0, 
+              3.5
+            ]
+          ], 
+          [
+            [
+              -463.5, 
+              0.0, 
+              3.5
+            ], 
+            [
+              463.50000000000006, 
+              0.0, 
+              3.5
+            ]
+          ]
+        ], 
+        "target_mm": 7.5, 
+        "tol_mm": 0.63500000000000001
+      }, 
+      "grate_bar_count": {
+        "measured_mm": 3.0, 
+        "method": "Solid.IntersectWithCurve count along (-129.0, 29.0, 17.0) -> (-129.0, 249.0, 17.0)", 
+        "pass": true, 
+        "provenance": "PHOTO", 
+        "segments_mm": [
+          [
+            [
+              -129.0, 
+              63.0, 
+              17.0
+            ], 
+            [
+              -129.0, 
+              71.0, 
+              17.0
+            ]
+          ], 
+          [
+            [
+              -129.0, 
+              135.0, 
+              17.0
+            ], 
+            [
+              -129.0, 
+              143.0, 
+              17.0
+            ]
+          ], 
+          [
+            [
+              -129.0, 
+              213.0, 
+              17.0
+            ], 
+            [
+              -129.0, 
+              221.0, 
+              17.0
+            ]
+          ]
+        ], 
+        "target_mm": 3, 
+        "tol_mm": 0
+      }, 
+      "grate_bar_thickness": {
+        "measured_mm": 8.0, 
+        "method": "Solid.IntersectWithCurve first_len along (-129.0, 29.0, 17.0) -> (-129.0, 249.0, 17.0)", 
+        "pass": true, 
+        "provenance": "PHOTO", 
+        "segments_mm": [
+          [
+            [
+              -129.0, 
+              63.0, 
+              17.0
+            ], 
+            [
+              -129.0, 
+              71.0, 
+              17.0
+            ]
+          ], 
+          [
+            [
+              -129.0, 
+              135.0, 
+              17.0
+            ], 
+            [
+              -129.0, 
+              143.0, 
+              17.0
+            ]
+          ], 
+          [
+            [
+              -129.0, 
+              213.0, 
+              17.0
+            ], 
+            [
+              -129.0, 
+              221.0, 
+              17.0
+            ]
+          ]
+        ], 
+        "target_mm": 8.0, 
+        "tol_mm": 0.63500000000000001
+      }, 
+      "grate_opening_is_open": {
+        "measured_mm": 0.0, 
+        "method": "Solid.IntersectWithCurve none along (-129.0, 178.0, 7.5) -> (-129.0, 178.0, 200)", 
+        "pass": true, 
+        "provenance": "PHOTO", 
+        "segments_mm": [], 
+        "target_mm": 0, 
+        "tol_mm": 0
+      }, 
+      "grate_top_above_counter": {
+        "measured_mm": 37.0, 
+        "method": "Solid.IntersectWithCurve end along (-129.0, 139.0, 7.5) -> (-129.0, 139.0, 200)", 
+        "pass": true, 
+        "provenance": "INFERRED", 
+        "segments_mm": [
+          [
+            [
+              -129.0, 
+              139.0, 
+              7.5
+            ], 
+            [
+              -129.0, 
+              139.0, 
+              37.0
+            ]
+          ]
+        ], 
+        "target_mm": 37.0, 
+        "tol_mm": 0.63500000000000001
+      }, 
+      "knob_0_diameter": {
+        "measured_mm": 34.682704623486330, 
+        "method": "Solid.IntersectWithCurve span along (-274.5, -210.0, 13.0) -> (-194.5, -210.0, 13.0)", 
+        "pass": true, 
+        "provenance": "PHOTO", 
+        "segments_mm": [
+          [
+            [
+              -251.84135231174315, 
+              -210.0, 
+              13.0
+            ], 
+            [
+              -217.15864768825682, 
+              -210.0, 
+              13.0
+            ]
+          ]
+        ], 
+        "target_mm": 34.682704623486330, 
+        "tol_mm": 0.63500000000000001
+      }, 
+      "knob_1_diameter": {
+        "measured_mm": 34.682704623486330, 
+        "method": "Solid.IntersectWithCurve span along (14.5, -210.0, 13.0) -> (94.5, -210.0, 13.0)", 
+        "pass": true, 
+        "provenance": "PHOTO", 
+        "segments_mm": [
+          [
+            [
+              37.158647688256835, 
+              -210.0, 
+              13.0
+            ], 
+            [
+              71.841352311743165, 
+              -210.0, 
+              13.0
+            ]
+          ]
+        ], 
+        "target_mm": 34.682704623486330, 
+        "tol_mm": 0.63500000000000001
+      }, 
+      "knob_2_diameter": {
+        "measured_mm": 34.682704623486345, 
+        "method": "Solid.IntersectWithCurve span along (75.200000000000045, -210.0, 13.0) -> (155.20000000000005, -210.0, 13.0)", 
+        "pass": true, 
+        "provenance": "PHOTO", 
+        "segments_mm": [
+          [
+            [
+              97.858647688256880, 
+              -210.0, 
+              13.0
+            ], 
+            [
+              132.54135231174322, 
+              -210.0, 
+              13.0
+            ]
+          ]
+        ], 
+        "target_mm": 34.682704623486330, 
+        "tol_mm": 0.63500000000000001
+      }, 
+      "knob_3_diameter": {
+        "measured_mm": 34.682704623486330, 
+        "method": "Solid.IntersectWithCurve span along (135.29999999999995, -210.0, 13.0) -> (215.29999999999995, -210.0, 13.0)", 
+        "pass": true, 
+        "provenance": "PHOTO", 
+        "segments_mm": [
+          [
+            [
+              157.95864768825678, 
+              -210.0, 
+              13.0
+            ], 
+            [
+              192.64135231174311, 
+              -210.0, 
+              13.0
+            ]
+          ]
+        ], 
+        "target_mm": 34.682704623486330, 
+        "tol_mm": 0.63500000000000001
+      }, 
+      "knob_4_diameter": {
+        "measured_mm": 34.682704623486330, 
+        "method": "Solid.IntersectWithCurve span along (195.60000000000002, -210.0, 13.0) -> (275.60000000000002, -210.0, 13.0)", 
+        "pass": true, 
+        "provenance": "PHOTO", 
+        "segments_mm": [
+          [
+            [
+              218.25864768825684, 
+              -210.0, 
+              13.0
+            ], 
+            [
+              252.94135231174317, 
+              -210.0, 
+              13.0
+            ]
+          ]
+        ], 
+        "target_mm": 34.682704623486330, 
+        "tol_mm": 0.63500000000000001
+      }, 
+      "knob_count": {
+        "measured_mm": 5.0, 
+        "method": "Solid.IntersectWithCurve count along (-471.0, -216.0, 13.0) -> (471.0, -216.0, 13.0)", 
+        "pass": true, 
+        "provenance": "PHOTO", 
+        "segments_mm": [
+          [
+            [
+              -252.84999999999997, 
+              -216.0, 
+              13.0
+            ], 
+            [
+              -216.15000000000001, 
+              -216.0, 
+              13.0
+            ]
+          ], 
+          [
+            [
+              36.149999999999970, 
+              -216.0, 
+              13.0
+            ], 
+            [
+              72.850000000000023, 
+              -216.0, 
+              13.0
+            ]
+          ], 
+          [
+            [
+              96.850000000000051, 
+              -216.0, 
+              13.0
+            ], 
+            [
+              133.55000000000010, 
+              -216.0, 
+              13.0
+            ]
+          ], 
+          [
+            [
+              156.94999999999993, 
+              -216.0, 
+              13.0
+            ], 
+            [
+              193.64999999999998, 
+              -216.0, 
+              13.0
+            ]
+          ], 
+          [
+            [
+              217.25000000000003, 
+              -216.0, 
+              13.0
+            ], 
+            [
+              253.95000000000007, 
+              -216.0, 
+              13.0
+            ]
+          ]
+        ], 
+        "target_mm": 5, 
+        "tol_mm": 0
+      }, 
+      "overall_depth": {
+        "measured_mm": 526.0, 
+        "method": "Solid.IntersectWithCurve span along (-440.0, -313.0, 3.5) -> (-440.0, 313.0, 3.5)", 
+        "pass": true, 
+        "provenance": "PUBLISHED", 
+        "segments_mm": [
+          [
+            [
+              -440.0, 
+              -263.0, 
+              3.5
+            ], 
+            [
+              -440.0, 
+              -255.49999999999997, 
+              3.5
+            ]
+          ], 
+          [
+            [
+              -440.0, 
+              255.49999999999997, 
+              3.5
+            ], 
+            [
+              -440.0, 
+              262.99999999999994, 
+              3.5
+            ]
+          ], 
+          [
+            [
+              -440.0, 
+              -255.49999999999997, 
+              3.5
+            ], 
+            [
+              -440.0, 
+              255.49999999999997, 
+              3.5
+            ]
+          ]
+        ], 
+        "target_mm": 526.0, 
+        "tol_mm": 0.63500000000000001
+      }, 
+      "overall_height": {
+        "measured_mm": 53.0, 
+        "method": "Solid.IntersectWithCurve span along (-430.0, -240.0, -200) -> (-430.0, -240.0, 200)", 
+        "pass": true, 
+        "provenance": "PUBLISHED", 
+        "segments_mm": [
+          [
+            [
+              -430.0, 
+              -240.0, 
+              0.0
+            ], 
+            [
+              -430.0, 
+              -240.0, 
+              6.9999999999999991
+            ]
+          ], 
+          [
+            [
+              -430.0, 
+              -240.0, 
+              -46.0
+            ], 
+            [
+              -430.0, 
+              -240.0, 
+              0.0
+            ]
+          ]
+        ], 
+        "target_mm": 53.0, 
+        "tol_mm": 0.63500000000000001
+      }, 
+      "overall_width": {
+        "measured_mm": 942.0, 
+        "method": "Solid.IntersectWithCurve span along (-521.0, 0, 3.5) -> (521.0, 0, 3.5)", 
+        "pass": true, 
+        "provenance": "PUBLISHED", 
+        "segments_mm": [
+          [
+            [
+              -471.0, 
+              0.0, 
+              3.5
+            ], 
+            [
+              -463.5, 
+              0.0, 
+              3.5
+            ]
+          ], 
+          [
+            [
+              463.50000000000006, 
+              0.0, 
+              3.5
+            ], 
+            [
+              471.0, 
+              0.0, 
+              3.5
+            ]
+          ], 
+          [
+            [
+              -463.5, 
+              0.0, 
+              3.5
+            ], 
+            [
+              463.50000000000006, 
+              0.0, 
+              3.5
+            ]
+          ]
+        ], 
+        "target_mm": 942.0, 
+        "tol_mm": 0.63500000000000001
+      }, 
+      "top_above_counter": {
+        "measured_mm": 7.0, 
+        "method": "Solid.IntersectWithCurve end along (-430.0, -240.0, -200) -> (-430.0, -240.0, 200)", 
+        "pass": true, 
+        "provenance": "DRAWING", 
+        "segments_mm": [
+          [
+            [
+              -430.0, 
+              -240.0, 
+              0.0
+            ], 
+            [
+              -430.0, 
+              -240.0, 
+              6.9999999999999991
+            ]
+          ], 
+          [
+            [
+              -430.0, 
+              -240.0, 
+              -46.0
+            ], 
+            [
+              -430.0, 
+              -240.0, 
+              0.0
+            ]
+          ]
+        ], 
+        "target_mm": 7.0, 
+        "tol_mm": 0.63500000000000001
+      }, 
+      "wok_ring_chord": {
+        "measured_mm": 213.76622745419814, 
+        "method": "Solid.IntersectWithCurve span along (-468.0, 117.0, 22.0) -> (-168.0, 117.0, 22.0)", 
+        "pass": true, 
+        "provenance": "PHOTO", 
+        "segments_mm": [
+          [
+            [
+              -424.88311372709910, 
+              117.0, 
+              22.0
+            ], 
+            [
+              -415.97958971132715, 
+              117.0, 
+              22.0
+            ]
+          ], 
+          [
+            [
+              -220.02041028867285, 
+              117.0, 
+              22.0
+            ], 
+            [
+              -211.11688627290093, 
+              117.0, 
+              22.0
+            ]
+          ]
+        ], 
+        "target_mm": 213.76622745419820, 
+        "tol_mm": 0.63500000000000001
+      }
+    }, 
+    "reopened": true, 
+    "rfa_bytes": 618496, 
+    "rfa_mtime_utc": "2026-10-23T04:48:59Z", 
+    "saved_dimension_parameters_mm": {
+      "Built-in Height": 77.999996400000029, 
+      "Casing Depth": 46.000009600000006, 
+      "Cutout Depth": 499.99999060000010, 
+      "Cutout Width": 915.99999680000019, 
+      "Height Above Counter": 7.0000114000000000, 
+      "Overall Depth": 525.99998940000012, 
+      "Overall Height": 52.999995600000013, 
+      "Overall Width": 941.99999560000003
+    }, 
+    "type_name": "KM 3054-1 - 37 1/8 in - Black Ceramic Glass", 
+    "warnings": []
+  }, 
+  "family_images": [
+    "KM3054_Family - 3D View - Front.png", 
+    "KM3054_Family - 3D View - Oblique Realistic.png", 
+    "KM3054_Family - 3D View - Oblique.png", 
+    "KM3054_Family - 3D View - Side.png", 
+    "KM3054_Family - 3D View - Top.png", 
+    "KM3054_Family - 3D View - Underside.png"
+  ], 
+  "family_views": [
+    "Top", 
+    "Front", 
+    "Side", 
+    "Oblique", 
+    "Underside", 
+    "Oblique Realistic"
+  ], 
+  "family_warnings": [], 
+  "finished_utc": "2026-10-23T04:49:07.345000Z", 
+  "gates": {
+    "actual_face_host": true, 
+    "family_rays": true, 
+    "hosted_rays": true, 
+    "materials_reach_faces": true, 
+    "orientation_normal_dot_1": true, 
+    "parts_bound": true, 
+    "reopened_category_workplane": true, 
+    "saved_parameters": true, 
+    "views_exported": true, 
+    "zero_warnings": true
+  }, 
+  "group_bindings": [
+    {
+      "element_ids": [
+        "3254"
+      ], 
+      "expected_material_parameter": "Frame Finish", 
+      "expected_subcategory": "Cooktop Frame", 
+      "group": "frame", 
+      "material_key": "frame", 
+      "parts": [
+        "frame"
+      ]
+    }, 
+    {
+      "element_ids": [
+        "3255"
+      ], 
+      "expected_material_parameter": "Top Finish", 
+      "expected_subcategory": "Cooktop Glass", 
+      "group": "glass", 
+      "material_key": "top", 
+      "parts": [
+        "glass"
+      ]
+    }, 
+    {
+      "element_ids": [
+        "3256"
+      ], 
+      "expected_material_parameter": "Housing Finish", 
+      "expected_subcategory": "Housing", 
+      "group": "casing", 
+      "material_key": "housing", 
+      "parts": [
+        "casing"
+      ]
+    }, 
+    {
+      "element_ids": [
+        "3257"
+      ], 
+      "expected_material_parameter": "Housing Finish", 
+      "expected_subcategory": "Housing", 
+      "group": "electronics_housing", 
+      "material_key": "housing", 
+      "parts": [
+        "electronics_housing"
+      ]
+    }, 
+    {
+      "element_ids": [
+        "3258"
+      ], 
+      "expected_material_parameter": "Housing Finish", 
+      "expected_subcategory": "Housing", 
+      "group": "gas_connection", 
+      "material_key": "housing", 
+      "parts": [
+        "gas_connection"
+      ]
+    }, 
+    {
+      "element_ids": [
+        "3259"
+      ], 
+      "expected_material_parameter": "Knob Finish", 
+      "expected_subcategory": "Control Knobs", 
+      "group": "knob_0", 
+      "material_key": "knob", 
+      "parts": [
+        "knob_0_body", 
+        "knob_0_fin"
+      ]
+    }, 
+    {
+      "element_ids": [
+        "3260"
+      ], 
+      "expected_material_parameter": "Knob Finish", 
+      "expected_subcategory": "Control Knobs", 
+      "group": "knob_1", 
+      "material_key": "knob", 
+      "parts": [
+        "knob_1_body", 
+        "knob_1_fin"
+      ]
+    }, 
+    {
+      "element_ids": [
+        "3261"
+      ], 
+      "expected_material_parameter": "Knob Finish", 
+      "expected_subcategory": "Control Knobs", 
+      "group": "knob_2", 
+      "material_key": "knob", 
+      "parts": [
+        "knob_2_body", 
+        "knob_2_fin"
+      ]
+    }, 
+    {
+      "element_ids": [
+        "3262"
+      ], 
+      "expected_material_parameter": "Knob Finish", 
+      "expected_subcategory": "Control Knobs", 
+      "group": "knob_3", 
+      "material_key": "knob", 
+      "parts": [
+        "knob_3_body", 
+        "knob_3_fin"
+      ]
+    }, 
+    {
+      "element_ids": [
+        "3263"
+      ], 
+      "expected_material_parameter": "Knob Finish", 
+      "expected_subcategory": "Control Knobs", 
+      "group": "knob_4", 
+      "material_key": "knob", 
+      "parts": [
+        "knob_4_body", 
+        "knob_4_fin"
+      ]
+    }, 
+    {
+      "element_ids": [
+        "3264"
+      ], 
+      "expected_material_parameter": "Burner Finish", 
+      "expected_subcategory": "Burner Caps", 
+      "group": "wok_bowl", 
+      "material_key": "burner", 
+      "parts": [
+        "wok_bowl"
+      ]
+    }, 
+    {
+      "element_ids": [
+        "3265"
+      ], 
+      "expected_material_parameter": "Burner Ring Finish", 
+      "expected_subcategory": "Burner Heads", 
+      "group": "wok_outer_head", 
+      "material_key": "ring", 
+      "parts": [
+        "wok_outer_head"
+      ]
+    }, 
+    {
+      "element_ids": [
+        "3266"
+      ], 
+      "expected_material_parameter": "Burner Finish", 
+      "expected_subcategory": "Burner Caps", 
+      "group": "wok_outer_cap", 
+      "material_key": "burner", 
+      "parts": [
+        "wok_outer_cap"
+      ]
+    }, 
+    {
+      "element_ids": [
+        "3267"
+      ], 
+      "expected_material_parameter": "Burner Ring Finish", 
+      "expected_subcategory": "Burner Heads", 
+      "group": "wok_head", 
+      "material_key": "ring", 
+      "parts": [
+        "wok_head"
+      ]
+    }, 
+    {
+      "element_ids": [
+        "3268"
+      ], 
+      "expected_material_parameter": "Burner Finish", 
+      "expected_subcategory": "Burner Caps", 
+      "group": "wok_cap", 
+      "material_key": "burner", 
+      "parts": [
+        "wok_cap"
+      ]
+    }, 
+    {
+      "element_ids": [
+        "3269"
+      ], 
+      "expected_material_parameter": "Burner Finish", 
+      "expected_subcategory": "Burner Caps", 
+      "group": "economy_bowl", 
+      "material_key": "burner", 
+      "parts": [
+        "economy_bowl"
+      ]
+    }, 
+    {
+      "element_ids": [
+        "3270"
+      ], 
+      "expected_material_parameter": "Burner Ring Finish", 
+      "expected_subcategory": "Burner Heads", 
+      "group": "economy_head", 
+      "material_key": "ring", 
+      "parts": [
+        "economy_head"
+      ]
+    }, 
+    {
+      "element_ids": [
+        "3271"
+      ], 
+      "expected_material_parameter": "Burner Finish", 
+      "expected_subcategory": "Burner Caps", 
+      "group": "economy_cap", 
+      "material_key": "burner", 
+      "parts": [
+        "economy_cap"
+      ]
+    }, 
+    {
+      "element_ids": [
+        "3272"
+      ], 
+      "expected_material_parameter": "Burner Finish", 
+      "expected_subcategory": "Burner Caps", 
+      "group": "normal_rear_bowl", 
+      "material_key": "burner", 
+      "parts": [
+        "normal_rear_bowl"
+      ]
+    }, 
+    {
+      "element_ids": [
+        "3273"
+      ], 
+      "expected_material_parameter": "Burner Ring Finish", 
+      "expected_subcategory": "Burner Heads", 
+      "group": "normal_rear_head", 
+      "material_key": "ring", 
+      "parts": [
+        "normal_rear_head"
+      ]
+    }, 
+    {
+      "element_ids": [
+        "3274"
+      ], 
+      "expected_material_parameter": "Burner Finish", 
+      "expected_subcategory": "Burner Caps", 
+      "group": "normal_rear_cap", 
+      "material_key": "burner", 
+      "parts": [
+        "normal_rear_cap"
+      ]
+    }, 
+    {
+      "element_ids": [
+        "3275"
+      ], 
+      "expected_material_parameter": "Burner Finish", 
+      "expected_subcategory": "Burner Caps", 
+      "group": "power_bowl", 
+      "material_key": "burner", 
+      "parts": [
+        "power_bowl"
+      ]
+    }, 
+    {
+      "element_ids": [
+        "3276"
+      ], 
+      "expected_material_parameter": "Burner Ring Finish", 
+      "expected_subcategory": "Burner Heads", 
+      "group": "power_head", 
+      "material_key": "ring", 
+      "parts": [
+        "power_head"
+      ]
+    }, 
+    {
+      "element_ids": [
+        "3277"
+      ], 
+      "expected_material_parameter": "Burner Finish", 
+      "expected_subcategory": "Burner Caps", 
+      "group": "power_cap", 
+      "material_key": "burner", 
+      "parts": [
+        "power_cap"
+      ]
+    }, 
+    {
+      "element_ids": [
+        "3278"
+      ], 
+      "expected_material_parameter": "Burner Finish", 
+      "expected_subcategory": "Burner Caps", 
+      "group": "normal_front_bowl", 
+      "material_key": "burner", 
+      "parts": [
+        "normal_front_bowl"
+      ]
+    }, 
+    {
+      "element_ids": [
+        "3279"
+      ], 
+      "expected_material_parameter": "Burner Ring Finish", 
+      "expected_subcategory": "Burner Heads", 
+      "group": "normal_front_head", 
+      "material_key": "ring", 
+      "parts": [
+        "normal_front_head"
+      ]
+    }, 
+    {
+      "element_ids": [
+        "3280"
+      ], 
+      "expected_material_parameter": "Burner Finish", 
+      "expected_subcategory": "Burner Caps", 
+      "group": "normal_front_cap", 
+      "material_key": "burner", 
+      "parts": [
+        "normal_front_cap"
+      ]
+    }, 
+    {
+      "element_ids": [
+        "3281"
+      ], 
+      "expected_material_parameter": "Grate Finish", 
+      "expected_subcategory": "Grates", 
+      "group": "grate_rear_left", 
+      "material_key": "grate", 
+      "parts": [
+        "grate_rear_left_ring", 
+        "grate_rear_left_finger_0", 
+        "grate_rear_left_finger_1", 
+        "grate_rear_left_finger_2", 
+        "grate_rear_left_finger_3", 
+        "grate_rear_left_mid_l", 
+        "grate_rear_left_mid_r", 
+        "grate_rear_left_top_l", 
+        "grate_rear_left_bot_l", 
+        "grate_rear_left_top_r", 
+        "grate_rear_left_bot_r", 
+        "grate_rear_left_stub_top", 
+        "grate_rear_left_stub_bot"
+      ]
+    }, 
+    {
+      "element_ids": [
+        "3282"
+      ], 
+      "expected_material_parameter": "Grate Finish", 
+      "expected_subcategory": "Grates", 
+      "group": "grate_rear_right", 
+      "material_key": "grate", 
+      "parts": [
+        "grate_rear_right_ring", 
+        "grate_rear_right_finger_0", 
+        "grate_rear_right_finger_1", 
+        "grate_rear_right_finger_2", 
+        "grate_rear_right_finger_3", 
+        "grate_rear_right_mid_l", 
+        "grate_rear_right_mid_r", 
+        "grate_rear_right_top_l", 
+        "grate_rear_right_bot_l", 
+        "grate_rear_right_top_r", 
+        "grate_rear_right_bot_r", 
+        "grate_rear_right_stub_top", 
+        "grate_rear_right_stub_bot"
+      ]
+    }, 
+    {
+      "element_ids": [
+        "3283"
+      ], 
+      "expected_material_parameter": "Grate Finish", 
+      "expected_subcategory": "Grates", 
+      "group": "grate_front_left", 
+      "material_key": "grate", 
+      "parts": [
+        "grate_front_left_ring", 
+        "grate_front_left_finger_0", 
+        "grate_front_left_finger_1", 
+        "grate_front_left_finger_2", 
+        "grate_front_left_finger_3", 
+        "grate_front_left_mid_l", 
+        "grate_front_left_mid_r", 
+        "grate_front_left_top_l", 
+        "grate_front_left_bot_l", 
+        "grate_front_left_top_r", 
+        "grate_front_left_bot_r", 
+        "grate_front_left_stub_top", 
+        "grate_front_left_stub_bot"
+      ]
+    }, 
+    {
+      "element_ids": [
+        "3284"
+      ], 
+      "expected_material_parameter": "Grate Finish", 
+      "expected_subcategory": "Grates", 
+      "group": "grate_front_right", 
+      "material_key": "grate", 
+      "parts": [
+        "grate_front_right_ring", 
+        "grate_front_right_finger_0", 
+        "grate_front_right_finger_1", 
+        "grate_front_right_finger_2", 
+        "grate_front_right_finger_3", 
+        "grate_front_right_mid_l", 
+        "grate_front_right_mid_r", 
+        "grate_front_right_top_l", 
+        "grate_front_right_bot_l", 
+        "grate_front_right_top_r", 
+        "grate_front_right_bot_r", 
+        "grate_front_right_stub_top", 
+        "grate_front_right_stub_bot"
+      ]
+    }, 
+    {
+      "element_ids": [
+        "3285"
+      ], 
+      "expected_material_parameter": "Grate Finish", 
+      "expected_subcategory": "Grates", 
+      "group": "grate_wok", 
+      "material_key": "grate", 
+      "parts": [
+        "grate_wok_ring", 
+        "grate_wok_arm_in_0", 
+        "grate_wok_arm_out_0", 
+        "grate_wok_arm_in_1", 
+        "grate_wok_arm_out_1", 
+        "grate_wok_arm_in_2", 
+        "grate_wok_arm_out_2", 
+        "grate_wok_arm_in_3", 
+        "grate_wok_arm_out_3"
+      ]
+    }
+  ], 
+  "hosted": {
+    "basis_z": [
+      0.0, 
+      0.0, 
+      1.0
+    ], 
+    "face_normal": [
+      0.0, 
+      0.0, 
+      1.0
+    ], 
+    "host_face_z_mm": 914.40000000000009, 
+    "host_id": "3797", 
+    "host_kind": "floor top face at 36.0 in (disposable countertop stand-in)", 
+    "host_type": "Floor 1", 
+    "hostface_present": true, 
+    "images": [
+      "KM3054_Hosted - 3D View - Hosted On Counter.png"
+    ], 
+    "instance_host_id": "3797", 
+    "instance_origin_z_mm": 914.40000000000009, 
+    "isolated_images": [
+      "KM3054_Isolated - 3D View - Isolated Front.png", 
+      "KM3054_Isolated - 3D View - Isolated Oblique Realistic.png", 
+      "KM3054_Isolated - 3D View - Isolated Oblique.png", 
+      "KM3054_Isolated - 3D View - Isolated Side.png", 
+      "KM3054_Isolated - 3D View - Isolated Top.png", 
+      "KM3054_Isolated - 3D View - Isolated Underside.png"
+    ], 
+    "material_substitution": {
+      "Burner Finish": {
+        "faces_carrying_substitute": 68, 
+        "faces_inspected": 462, 
+        "restored": true, 
+        "solids_fully_carrying_substitute": 11, 
+        "writable": true
+      }, 
+      "Burner Ring Finish": {
+        "faces_carrying_substitute": 38, 
+        "faces_inspected": 462, 
+        "restored": true, 
+        "solids_fully_carrying_substitute": 6, 
+        "writable": true
+      }, 
+      "Frame Finish": {
+        "faces_carrying_substitute": 10, 
+        "faces_inspected": 462, 
+        "restored": true, 
+        "solids_fully_carrying_substitute": 1, 
+        "writable": true
+      }, 
+      "Grate Finish": {
+        "faces_carrying_substitute": 267, 
+        "faces_inspected": 462, 
+        "restored": true, 
+        "solids_fully_carrying_substitute": 5, 
+        "writable": true
+      }, 
+      "Housing Finish": {
+        "faces_carrying_substitute": 18, 
+        "faces_inspected": 462, 
+        "restored": true, 
+        "solids_fully_carrying_substitute": 3, 
+        "writable": true
+      }, 
+      "Knob Finish": {
+        "faces_carrying_substitute": 55, 
+        "faces_inspected": 462, 
+        "restored": true, 
+        "solids_fully_carrying_substitute": 5, 
+        "writable": true
+      }, 
+      "Top Finish": {
+        "faces_carrying_substitute": 6, 
+        "faces_inspected": 462, 
+        "restored": true, 
+        "solids_fully_carrying_substitute": 1, 
+        "writable": true
+      }
+    }, 
+    "normal_dot": 1.0, 
+    "rays": {
+      "built_in_height_with_box": {
+        "measured_mm": 78.0, 
+        "method": "Solid.IntersectWithCurve span along (11.5, 6.0, -200) -> (11.5, 6.0, 200)", 
+        "pass": true, 
+        "provenance": "PUBLISHED", 
+        "segments_mm": [
+          [
+            [
+              11.5, 
+              6.0, 
+              -70.999999999999972
+            ], 
+            [
+              11.5, 
+              6.0, 
+              -45.999999999999964
+            ]
+          ], 
+          [
+            [
+              11.5, 
+              6.0, 
+              -45.999999999999964
+            ], 
+            [
+              11.5, 
+              6.0, 
+              0.0
+            ]
+          ], 
+          [
+            [
+              11.5, 
+              6.0, 
+              0.0
+            ], 
+            [
+              11.5, 
+              6.0, 
+              7.0000000000000329
+            ]
+          ]
+        ], 
+        "target_mm": 78.0, 
+        "tol_mm": 0.63500000000000001
+      }, 
+      "casing_depth_below_counter": {
+        "measured_mm": -45.999999999999972, 
+        "method": "Solid.IntersectWithCurve start along (-430.0, -240.0, -200) -> (-430.0, -240.0, 200)", 
+        "pass": true, 
+        "provenance": "DRAWING", 
+        "segments_mm": [
+          [
+            [
+              -430.0, 
+              -240.0, 
+              -45.999999999999964
+            ], 
+            [
+              -430.0, 
+              -240.0, 
+              0.0
+            ]
+          ], 
+          [
+            [
+              -430.0, 
+              -240.0, 
+              0.0
+            ], 
+            [
+              -430.0, 
+              -240.0, 
+              7.0000000000000329
+            ]
+          ]
+        ], 
+        "target_mm": -46.0, 
+        "tol_mm": 0.63500000000000001
+      }, 
+      "knob_count": {
+        "measured_mm": 5.0, 
+        "method": "Solid.IntersectWithCurve count along (-471.0, -216.0, 13.0) -> (471.0, -216.0, 13.0)", 
+        "pass": true, 
+        "provenance": "PHOTO", 
+        "segments_mm": [
+          [
+            [
+              217.24999999999997, 
+              -216.0, 
+              13.000000000000023
+            ], 
+            [
+              253.95000000000005, 
+              -216.0, 
+              13.000000000000023
+            ]
+          ], 
+          [
+            [
+              156.94999999999987, 
+              -216.0, 
+              13.000000000000023
+            ], 
+            [
+              193.64999999999992, 
+              -216.0, 
+              13.000000000000023
+            ]
+          ], 
+          [
+            [
+              96.850000000000009, 
+              -216.0, 
+              13.000000000000023
+            ], 
+            [
+              133.55000000000007, 
+              -216.0, 
+              13.000000000000023
+            ]
+          ], 
+          [
+            [
+              36.150000000000006, 
+              -216.0, 
+              13.000000000000023
+            ], 
+            [
+              72.850000000000051, 
+              -216.0, 
+              13.000000000000023
+            ]
+          ], 
+          [
+            [
+              -252.84999999999997, 
+              -216.0, 
+              13.000000000000023
+            ], 
+            [
+              -216.15000000000001, 
+              -216.0, 
+              13.000000000000023
+            ]
+          ]
+        ], 
+        "target_mm": 5, 
+        "tol_mm": 0
+      }, 
+      "overall_depth": {
+        "measured_mm": 526.0, 
+        "method": "Solid.IntersectWithCurve span along (-440.0, -313.0, 3.5) -> (-440.0, 313.0, 3.5)", 
+        "pass": true, 
+        "provenance": "PUBLISHED", 
+        "segments_mm": [
+          [
+            [
+              -440.0, 
+              -255.49999999999997, 
+              3.5000000000000164
+            ], 
+            [
+              -440.0, 
+              255.49999999999994, 
+              3.5000000000000164
+            ]
+          ], 
+          [
+            [
+              -440.0, 
+              -263.0, 
+              3.5000000000000164
+            ], 
+            [
+              -440.0, 
+              -255.49999999999997, 
+              3.5000000000000164
+            ]
+          ], 
+          [
+            [
+              -440.0, 
+              255.49999999999994, 
+              3.5000000000000164
+            ], 
+            [
+              -440.0, 
+              263.0, 
+              3.5000000000000164
+            ]
+          ]
+        ], 
+        "target_mm": 526.0, 
+        "tol_mm": 0.63500000000000001
+      }, 
+      "overall_height": {
+        "measured_mm": 53.0, 
+        "method": "Solid.IntersectWithCurve span along (-430.0, -240.0, -200) -> (-430.0, -240.0, 200)", 
+        "pass": true, 
+        "provenance": "PUBLISHED", 
+        "segments_mm": [
+          [
+            [
+              -430.0, 
+              -240.0, 
+              -45.999999999999964
+            ], 
+            [
+              -430.0, 
+              -240.0, 
+              0.0
+            ]
+          ], 
+          [
+            [
+              -430.0, 
+              -240.0, 
+              0.0
+            ], 
+            [
+              -430.0, 
+              -240.0, 
+              7.0000000000000329
+            ]
+          ]
+        ], 
+        "target_mm": 53.0, 
+        "tol_mm": 0.63500000000000001
+      }, 
+      "overall_width": {
+        "measured_mm": 942.0, 
+        "method": "Solid.IntersectWithCurve span along (-521.0, 0, 3.5) -> (521.0, 0, 3.5)", 
+        "pass": true, 
+        "provenance": "PUBLISHED", 
+        "segments_mm": [
+          [
+            [
+              -463.5, 
+              0.0, 
+              3.5000000000000164
+            ], 
+            [
+              463.50000000000006, 
+              0.0, 
+              3.5000000000000164
+            ]
+          ], 
+          [
+            [
+              -471.0, 
+              0.0, 
+              3.5000000000000164
+            ], 
+            [
+              -463.5, 
+              0.0, 
+              3.5000000000000164
+            ]
+          ], 
+          [
+            [
+              463.50000000000006, 
+              0.0, 
+              3.5000000000000164
+            ], 
+            [
+              471.0, 
+              0.0, 
+              3.5000000000000164
+            ]
+          ]
+        ], 
+        "target_mm": 942.0, 
+        "tol_mm": 0.63500000000000001
+      }, 
+      "top_above_counter": {
+        "measured_mm": 7.0000000000000284, 
+        "method": "Solid.IntersectWithCurve end along (-430.0, -240.0, -200) -> (-430.0, -240.0, 200)", 
+        "pass": true, 
+        "provenance": "DRAWING", 
+        "segments_mm": [
+          [
+            [
+              -430.0, 
+              -240.0, 
+              -45.999999999999964
+            ], 
+            [
+              -430.0, 
+              -240.0, 
+              0.0
+            ]
+          ], 
+          [
+            [
+              -430.0, 
+              -240.0, 
+              0.0
+            ], 
+            [
+              -430.0, 
+              -240.0, 
+              7.0000000000000329
+            ]
+          ]
+        ], 
+        "target_mm": 7.0, 
+        "tol_mm": 0.63500000000000001
+      }
+    }, 
+    "warnings": []
+  }, 
+  "isolated_host_hidden": {
+    "Isolated Front": {
+      "hidden": [
+        "3797"
+      ], 
+      "requested": [
+        "3797"
+      ]
+    }, 
+    "Isolated Oblique": {
+      "hidden": [
+        "3797"
+      ], 
+      "requested": [
+        "3797"
+      ]
+    }, 
+    "Isolated Oblique Realistic": {
+      "hidden": [
+        "3797"
+      ], 
+      "requested": [
+        "3797"
+      ]
+    }, 
+    "Isolated Side": {
+      "hidden": [
+        "3797"
+      ], 
+      "requested": [
+        "3797"
+      ]
+    }, 
+    "Isolated Top": {
+      "hidden": [
+        "3797"
+      ], 
+      "requested": [
+        "3797"
+      ]
+    }, 
+    "Isolated Underside": {
+      "hidden": [
+        "3797"
+      ], 
+      "requested": [
+        "3797"
+      ]
+    }
+  }, 
+  "materials": {
+    "Burner Finish": {
+      "bitmaps": "none", 
+      "glossiness": 0.29999999999999999, 
+      "material": "KM3054 Burner Finish", 
+      "reflectivity_0": 0.059999999999999998, 
+      "reflectivity_90": 0.25, 
+      "rgb": [
+        78, 
+        74, 
+        75
+      ], 
+      "self_illum_luminance": 0.0, 
+      "source": "enamelled burner caps and bowls, p40 of the power-burner cap (median 79,76,77)"
+    }, 
+    "Burner Ring Finish": {
+      "bitmaps": "none", 
+      "glossiness": 0.40000000000000002, 
+      "material": "KM3054 Burner Ring Finish", 
+      "reflectivity_0": 0.14999999999999999, 
+      "reflectivity_90": 0.5, 
+      "rgb": [
+        183, 
+        180, 
+        188
+      ], 
+      "self_illum_luminance": 0.0, 
+      "source": "aluminium burner heads, p25 of the wok head (median 231,230,233)"
+    }, 
+    "Frame Finish": {
+      "bitmaps": "none", 
+      "glossiness": 0.5, 
+      "material": "KM3054 Frame Finish", 
+      "reflectivity_0": 0.20000000000000001, 
+      "reflectivity_90": 0.59999999999999998, 
+      "rgb": [
+        120, 
+        122, 
+        125
+      ], 
+      "self_illum_luminance": 0.0, 
+      "source": "stainless frame band, p40 (median 122,122,129)"
+    }, 
+    "Grate Finish": {
+      "bitmaps": "none", 
+      "glossiness": 0.25, 
+      "material": "KM3054 Grate Finish", 
+      "reflectivity_0": 0.050000000000000003, 
+      "reflectivity_90": 0.20000000000000001, 
+      "rgb": [
+        73, 
+        72, 
+        77
+      ], 
+      "self_illum_luminance": 0.0, 
+      "source": "matte black enamelled cast iron, p25 of bar pixels (median 90,90,100)"
+    }, 
+    "Housing Finish": {
+      "bitmaps": "none", 
+      "glossiness": 0.29999999999999999, 
+      "material": "KM3054 Housing Finish", 
+      "reflectivity_0": 0.10000000000000001, 
+      "reflectivity_90": 0.29999999999999999, 
+      "rgb": [
+        150, 
+        152, 
+        155
+      ], 
+      "self_illum_luminance": 0.0, 
+      "source": "below-counter casing, not visible in any source photo (INFERRED)"
+    }, 
+    "Knob Finish": {
+      "bitmaps": "none", 
+      "glossiness": 0.5, 
+      "material": "KM3054 Knob Finish", 
+      "reflectivity_0": 0.20000000000000001, 
+      "reflectivity_90": 0.59999999999999998, 
+      "rgb": [
+        184, 
+        185, 
+        187
+      ], 
+      "self_illum_luminance": 0.0, 
+      "source": "stainless knobs, p40 (median 192,192,193)"
+    }, 
+    "Top Finish": {
+      "bitmaps": "none", 
+      "glossiness": 1.0, 
+      "material": "KM3054 Top Finish", 
+      "reflectivity_0": 0.080000000000000002, 
+      "reflectivity_90": 0.94999999999999996, 
+      "rgb": [
+        0, 
+        0, 
+        0
+      ], 
+      "self_illum_luminance": 0.0, 
+      "source": "pitch black polished ceramic glass (USER REVIEW 2026-10-22; the studio photo median (0,18,28) carries a blue tint the user rejected)"
+    }
+  }, 
+  "product": "Miele KM 3054-1 gas cooktop (material number 11766750)", 
+  "profile_problems": [], 
+  "repo_root": "C:\\Users\\found\\Documents\\3\\3D-Model-Workflow", 
+  "repo_root_source": "KM3054_REPO_ROOT", 
+  "revit_build": "25.4.60.9", 
+  "revit_version": "2025", 
+  "rfa_name": "Miele_KM3054-1_Gas_Cooktop_R2025.rfa", 
+  "rfa_path": "C:\\Users\\found\\Documents\\3\\3D-Model-Workflow\\output\\miele_km3054_1\\Miele_KM3054-1_Gas_Cooktop_R2025.rfa", 
+  "run_dir": "C:\\Users\\found\\Documents\\3\\3D-Model-Workflow\\output\\miele_km3054_1", 
+  "script": "build_km3054.py", 
+  "short_curve_tolerance_in": 0.030723174687499997, 
+  "stage": "complete", 
+  "stage_detail": "group grate_wok", 
+  "started_utc": "2026-10-23T04:48:49.730000Z", 
+  "technical_pass": true, 
+  "template": "C:\\ProgramData\\Autodesk\\RVT 2025\\Family Templates\\English-Imperial\\Generic Model face based.rft", 
+  "template_form_ids": [
+    "1537"
+  ], 
+  "template_host_candidates": [
+    {
+      "category": null, 
+      "class": "Extrusion", 
+      "id": "1537"
+    }
+  ], 
+  "template_host_hidden": {
+    "Front": {
+      "hidden": [
+        "1537"
+      ], 
+      "requested": [
+        "1537"
+      ]
+    }, 
+    "Oblique": {
+      "hidden": [
+        "1537"
+      ], 
+      "requested": [
+        "1537"
+      ]
+    }, 
+    "Oblique Realistic": {
+      "hidden": [
+        "1537"
+      ], 
+      "requested": [
+        "1537"
+      ]
+    }, 
+    "Side": {
+      "hidden": [
+        "1537"
+      ], 
+      "requested": [
+        "1537"
+      ]
+    }, 
+    "Top": {
+      "hidden": [
+        "1537"
+      ], 
+      "requested": [
+        "1537"
+      ]
+    }, 
+    "Underside": {
+      "hidden": [
+        "1537"
+      ], 
+      "requested": [
+        "1537"
+      ]
+    }
+  }, 
+  "unions": {
+    "grate_front_left": "unioned 13 parts", 
+    "grate_front_right": "unioned 13 parts", 
+    "grate_rear_left": "unioned 13 parts", 
+    "grate_rear_right": "unioned 13 parts", 
+    "grate_wok": "unioned 9 parts", 
+    "knob_0": "unioned 2 parts", 
+    "knob_1": "unioned 2 parts", 
+    "knob_2": "unioned 2 parts", 
+    "knob_3": "unioned 2 parts", 
+    "knob_4": "unioned 2 parts"
+  }, 
+  "units": "measurements in mm in the family frame; host face at z = 0", 
+  "visual_verdict": "PENDING REVIEWER"
+}

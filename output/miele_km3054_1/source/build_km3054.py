@@ -78,8 +78,9 @@ import km3054_geometry as G  # noqa: E402
 # Appearance values: colours sampled from 20000084693 (top view). Metals use a percentile
 # below the pixel median so the renderer's specular lift is not double-counted.
 MATERIALS = {
-    'top': {'rgb': (0, 18, 28), 'gloss': 0.90, 'r0': 0.08, 'r90': 0.60, 'cls': 'Glass',
-            'note': 'black ceramic glass, median of glass pixels (0,18,28)'},
+    'top': {'rgb': (0, 0, 0), 'gloss': 1.00, 'r0': 0.08, 'r90': 0.95, 'cls': 'Glass',
+            'note': 'pitch black polished ceramic glass (USER REVIEW 2026-10-22; the studio '
+                    'photo median (0,18,28) carries a blue tint the user rejected)'},
     'frame': {'rgb': (120, 122, 125), 'gloss': 0.50, 'r0': 0.20, 'r90': 0.60, 'cls': 'Metal',
               'note': 'stainless frame band, p40 (median 122,122,129)'},
     'grate': {'rgb': (73, 72, 77), 'gloss': 0.25, 'r0': 0.05, 'r90': 0.20, 'cls': 'Metal',

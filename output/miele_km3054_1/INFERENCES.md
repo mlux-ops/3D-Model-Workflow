@@ -42,7 +42,7 @@ twice; nothing is self-illuminated and no bitmaps are bound.
 
 | Parameter | RGB | Sample |
 |---|---|---|
-| Top Finish | 0, 18, 28 | glass median (studio render tints black glass blue-black) |
+| Top Finish | 0, 0, 0, glossiness 1.00, reflectivity 0.08 / 0.95 | USER REVIEW 2026-10-22: pitch black polished glass. The photo median (0,18,28) carries a blue tint from the studio lighting that the user rejected. |
 | Frame Finish | 120, 122, 125 | frame p40 (median 122, 122, 129) |
 | Grate Finish | 73, 72, 77 | bar p25 (median 90, 90, 100); product: matte black enamel |
 | Burner Finish | 78, 74, 75 | power-burner cap p40 (median 79, 76, 77) |
