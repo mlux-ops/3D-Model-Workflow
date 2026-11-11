@@ -2,7 +2,7 @@
 
 Companion to [PLAN.md](PLAN.md). This file is written as each step finishes, so a new session can resume from it.
 
-**Status at 23:55 Central on 2026-11-10: in progress.** Four of the eight acceptance lines are measured and pass (agent server, baseline, sun, Path Tracer). The Datasmith import has crashed the editor twice on the same assertion (23:32 and 23:45); a third attempt with a workaround from Epic is journaled under "Step 1.7". Phase 1 is not complete.
+**Status at 00:10 Central on 2026-11-11: in progress.** Five of the eight acceptance lines are measured and pass (agent server, baseline, sun, Path Tracer, light units). The Datasmith import has crashed the editor twice on the same assertion; the workaround from Epic needs one line in a project settings file and a restart, and waits for the owner's yes (see "Step 1.7"). Phase 1 is not complete.
 
 **Nothing in the Unreal project has been saved.** No asset, level or setting was written. The level `L_R15_Production` has no unsaved changes, and the editor's settings and camera were put back after every measurement. The only files this work wrote inside the project folder are the measurement logs the engine itself writes under `Saved\Profiling\CSV\`.
 
@@ -16,7 +16,7 @@ Companion to [PLAN.md](PLAN.md). This file is written as each step finishes, so 
 | Reimport | 20 of 20 assignments survive | Not yet measured | Waits for the import and the owner's second export |
 | Path Tracer | Three renders with no crash | **Three 3840 by 2160 renders completed, 48 to 50 seconds each, no crash.** They are correct only with one ray-tracing setting changed; see "Step 1.9". | **Pass, with a condition** |
 | Sun | Bearing and height within 0.5 degree of NOAA | **Bearing differs by 0.05 degree, height by 0.06 degree.** | **Pass** |
-| Light units | Within 10 percent of 79.6 lux | Not yet measured | Waits for the archive |
+| Light units | Within 10 percent of 79.6 lux | **79.5 lux** read against a 1,000-lux reference light (0.15 percent low); 76.6 lux if the test card is taken as an ideal matte surface (3.8 percent low) | **Pass** |
 | Soak | Two hours, no crash, video memory growth of 5 percent or less | Not yet measured | Last, because it occupies the editor for two hours |
 
 ## Where each step stands
@@ -33,7 +33,7 @@ Companion to [PLAN.md](PLAN.md). This file is written as each step finishes, so 
 | 1.8 | Reimport rehearsal | Not started. Waits for 1.7 and the owner's second export. |
 | 1.9 | Three path-traced renders of station S1 | **Done.** See "Step 1.9". |
 | 1.10 | Sun direction against the NOAA calculator | **Done** for the engine's sun calculation. The same check on a sun placed in a level is added when the scratch level exists. |
-| 1.11 | 1,000-lumen light, illuminance at 1 m | Not started. Waits for 1.5. |
+| 1.11 | 1,000-lumen light, illuminance at 1 m | **Done.** See "Step 1.11". |
 | 1.12 | Lumen World Cache and overlapping glass, on and off | **Part done.** Overlapping glass measured; World Cache needs a saved project setting and a restart. See "Step 1.12". |
 | 1.13 | Two-hour soak | Not started. |
 | 1.14 | Remove the Belmont and beech content | Approved by the owner; reference check done (see "Step 1.14"); not yet deleted. |
@@ -214,6 +214,25 @@ The three pictures agree: mean difference 0.07 to 0.09 of 255. The plan allows 1
 | 2 | Full meshes, cluster method | Correct (`trial4_...png`) |
 
 The three 4K renders used 2, and the variable was put back to 0 afterwards. **The Path Tracer is usable as ground truth only with value 2.** The same stand-in meshes are why reflections in the real-time view look blocky (audit finding ML4); whether value 2 is affordable in real time is for Phase 8.
+
+## Step 1.11: light units
+
+A 1,000-lumen point light should give 1000 / (4 x pi) = 79.58 lux on a surface 1 m away that faces it.
+
+The editor's view options in 5.9.0 offer no read-out of illuminance in lux for a point light (the only one is for the sky light). So the reading was taken another way, in the saved scratch level `/Game/Wieland1529/Scratch/L_P1_LightUnits`: a matte card of 50 percent reflectance lies 1 m under the light in an otherwise empty, black level, and a capture camera reads the card's brightness in the engine's physical units at the point directly under the light. A second light of known strength, a 1,000-lux directional light pointing straight down, is read on the same card through the same camera as a reference.
+
+| Reading | Value (lux) | Against expected |
+|---|---|---|
+| Point light at 1 m, read against the reference light | **79.46** | 0.15 percent low |
+| Point light at 2 m, read against the reference light | 19.81 | 0.4 percent low (expected 19.89) |
+| Point light at 1 m, taking the card as an ideal matte surface | 76.58 | 3.8 percent low |
+| Reference light, taking the card as an ideal matte surface | 963.7 | 3.6 percent low (set to 1,000) |
+| Every light off | 0 | |
+
+Both lights read about 3.7 percent low when the card is taken as ideal. The shortfall is the same for both, so it belongs to the card and not to the lights: this project draws rough matte surfaces with a model that is a little darker than the ideal at the camera's angle. The engine's lumens and lux agree with each other to 0.15 percent, and the fall-off with distance follows the inverse-square law to 0.3 percent.
+
+Record: `review\phase1\light_units_check.json`.
+
 
 ## Step 1.12: the two new 5.9 settings
 
