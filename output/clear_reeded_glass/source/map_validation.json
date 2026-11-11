@@ -1,0 +1,76 @@
+{
+  "files": {
+    "bump": {
+      "width": 2048,
+      "height": 2048,
+      "bit_depth": 16,
+      "color_type": "grey",
+      "bytes": 40485,
+      "path": "E:/Claude/3D-Model-Workflow/.claude/worktrees/revit-clear-reeded-glass-4376d3/output/clear_reeded_glass/textures/Clear_Reeded_Glass_0p5in_Bump_16bit.png"
+    },
+    "normal": {
+      "width": 2048,
+      "height": 2048,
+      "bit_depth": 16,
+      "color_type": "rgb",
+      "bytes": 138934,
+      "path": "E:/Claude/3D-Model-Workflow/.claude/worktrees/revit-clear-reeded-glass-4376d3/output/clear_reeded_glass/textures/Clear_Reeded_Glass_0p5in_Normal_16bit.png"
+    },
+    "color": {
+      "width": 2048,
+      "height": 2048,
+      "bit_depth": 8,
+      "color_type": "rgb",
+      "bytes": 15746,
+      "path": "E:/Claude/3D-Model-Workflow/.claude/worktrees/revit-clear-reeded-glass-4376d3/output/clear_reeded_glass/textures/Clear_Reeded_Glass_0p5in_Color.png"
+    }
+  },
+  "checks": {
+    "header_bump": true,
+    "header_normal": true,
+    "header_color": true,
+    "bump_periodic_by_one_reed": true,
+    "bump_uniform_along_length": true,
+    "bump_left_right_mirror": true,
+    "bump_wrap_step_dn": 0,
+    "bump_max_interior_step_dn": 1074,
+    "bump_wrap_not_worse_than_interior": true,
+    "bump_range_dn": [
+      540,
+      65534
+    ],
+    "normal_periodic_by_one_reed": true,
+    "normal_uniform_along_length": true,
+    "normal_left_right_mirror": true,
+    "normal_green_flat": true,
+    "normal_red_left_flank_below_mid": true,
+    "normal_red_right_flank_above_mid": true,
+    "color_spatially_uniform": true
+  },
+  "sample_size": {
+    "width_in": 4.0,
+    "height_in": 4.0,
+    "revit": "0'-4\" x 0'-4\"",
+    "pixel_aspect": 1.0,
+    "physical_aspect": 1.0
+  },
+  "relief": {
+    "reed_depth_mm": 1.5,
+    "bump_full_range_mm": 1.5,
+    "pitch_in": 0.5,
+    "pitch_mm": 12.7,
+    "arc_radius_mm": 14.1908,
+    "flank_angle_at_valley_deg": 26.58,
+    "grout_joint_mm": "not applicable (no joint in glass)",
+    "clearance_mm": "not applicable (no joint in glass)",
+    "glass_thickness_mm_nominal": 6.0
+  },
+  "geometry": {
+    "pitch_mm": 12.7,
+    "arc_radius_mm": 14.190833,
+    "edge_slope_deg": 26.581603,
+    "px_per_reed": 256,
+    "mm_per_px": 0.049609
+  },
+  "all_checks_pass": true
+}

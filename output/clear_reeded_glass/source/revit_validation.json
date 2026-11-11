@@ -1,0 +1,788 @@
+{
+  "adsklib": {
+    "reason": "A material library is created in the Revit Material Browser; there is no Revit API route. Not attempted by this script.", 
+    "status": "PENDING"
+  }, 
+  "appearance_schema": "PrismTransparentSchema", 
+  "exports": {
+    "lightA": "exported", 
+    "lightB": "exported"
+  }, 
+  "failed_gates": {
+    "flat_bare": [], 
+    "flat_bitmap": [], 
+    "height": [], 
+    "normal": []
+  }, 
+  "legacy_comparison_assignments": {
+    "generic_height": {
+      "generic_bump_amount": 1.0, 
+      "generic_bump_map": "UnifiedBitmap <- Clear_Reeded_Glass_0p5in_Bump_16bit.png", 
+      "generic_diffuse": "UnifiedBitmap <- Clear_Reeded_Glass_0p5in_Color.png", 
+      "generic_glossiness": 1.0, 
+      "generic_reflectivity_at_0deg": 0.040000000000000001, 
+      "generic_reflectivity_at_90deg": 1.0, 
+      "generic_refraction_index": 1.5200000000000000, 
+      "generic_transparency": 0.92000000000000004
+    }, 
+    "generic_normal": {
+      "generic_bump_amount": 1.0, 
+      "generic_bump_map": "BumpMap <- Clear_Reeded_Glass_0p5in_Normal_16bit.png", 
+      "generic_diffuse": "UnifiedBitmap <- Clear_Reeded_Glass_0p5in_Color.png", 
+      "generic_glossiness": 1.0, 
+      "generic_reflectivity_at_0deg": 0.040000000000000001, 
+      "generic_reflectivity_at_90deg": 1.0, 
+      "generic_refraction_index": 1.5200000000000000, 
+      "generic_transparency": 0.92000000000000004
+    }, 
+    "solidglass_bitmap": {
+      "solidglass_bump_amount": 1.0, 
+      "solidglass_bump_enable": 3, 
+      "solidglass_bump_map": "UnifiedBitmap <- Clear_Reeded_Glass_0p5in_Bump_16bit.png", 
+      "solidglass_glossiness": 0.0, 
+      "solidglass_reflectance": 0.050000000000000003, 
+      "solidglass_refr_ior": 1.5200000000000000, 
+      "solidglass_transmittance": 6, 
+      "solidglass_transmittance_custom_color": "UnifiedBitmap <- Clear_Reeded_Glass_0p5in_Color.png"
+    }, 
+    "solidglass_height": {
+      "solidglass_bump_amount": 1.0, 
+      "solidglass_bump_enable": 3, 
+      "solidglass_bump_map": "UnifiedBitmap <- Clear_Reeded_Glass_0p5in_Bump_16bit.png", 
+      "solidglass_glossiness": 0.0, 
+      "solidglass_reflectance": 0.050000000000000003, 
+      "solidglass_refr_ior": 1.5200000000000000, 
+      "solidglass_transmittance": 0
+    }
+  }, 
+  "legacy_readback": {
+    "generic_height": {
+      "deliverable": false, 
+      "graphics_transparency_percent": 80, 
+      "material_class": "Glass", 
+      "material_name": "QA Generic Glass - height", 
+      "schema": "GenericSchema", 
+      "textures": {
+        "generic_bump_map": {
+          "file_exists": true, 
+          "path": "E:\\Claude\\3D-Model-Workflow\\.claude\\worktrees\\revit-clear-reeded-glass-4376d3\\output\\clear_reeded_glass\\textures\\Clear_Reeded_Glass_0p5in_Bump_16bit.png", 
+          "rotation_deg": 0.0, 
+          "schema": "UnifiedBitmapSchema", 
+          "size_x_in": 4.0, 
+          "size_y_in": 4.0, 
+          "u_repeat": true, 
+          "v_repeat": true
+        }, 
+        "generic_diffuse": {
+          "file_exists": true, 
+          "path": "E:\\Claude\\3D-Model-Workflow\\.claude\\worktrees\\revit-clear-reeded-glass-4376d3\\output\\clear_reeded_glass\\textures\\Clear_Reeded_Glass_0p5in_Color.png", 
+          "rotation_deg": 0.0, 
+          "schema": "UnifiedBitmapSchema", 
+          "size_x_in": 4.0, 
+          "size_y_in": 4.0, 
+          "u_repeat": true, 
+          "v_repeat": true
+        }
+      }, 
+      "values": {
+        "generic_ao_details": true, 
+        "generic_ao_distance": 4.0, 
+        "generic_ao_on": false, 
+        "generic_ao_samples": 16, 
+        "generic_backface_cull": false, 
+        "generic_bump_amount": 1.0, 
+        "generic_bump_map": [
+          0.0, 
+          0.0, 
+          0.0, 
+          1.0
+        ], 
+        "generic_cutout_opacity": 1.0, 
+        "generic_diffuse": [
+          0.31985999999999998, 
+          0.30415999999999999, 
+          0.30197000000000002, 
+          1.0
+        ], 
+        "generic_diffuse_colorspace": 2, 
+        "generic_diffuse_image_fade": 1.0, 
+        "generic_glossiness": 1.0, 
+        "generic_is_metal": false, 
+        "generic_refl_depth": 0, 
+        "generic_reflection_glossy_samples": 12, 
+        "generic_reflectivity_at_0deg": 0.040000000000000001, 
+        "generic_reflectivity_at_90deg": 1.0, 
+        "generic_refr_depth": -1, 
+        "generic_refraction_glossy_samples": 12, 
+        "generic_refraction_index": 1.5200000000000000, 
+        "generic_refraction_translucency_weight": 0.0, 
+        "generic_roundcorners_allow_different_materials": false, 
+        "generic_roundcorners_radius": 0.0, 
+        "generic_self_illum_color_temperature": 6500.0, 
+        "generic_self_illum_filter_map": [
+          1.0, 
+          1.0, 
+          1.0, 
+          1.0
+        ], 
+        "generic_self_illum_filter_map_colorspace": 2, 
+        "generic_self_illum_luminance": 0.0, 
+        "generic_transparency": 0.92000000000000004, 
+        "generic_transparency_image_fade": 1.0
+      }
+    }, 
+    "generic_normal": {
+      "deliverable": false, 
+      "graphics_transparency_percent": 80, 
+      "material_class": "Glass", 
+      "material_name": "QA Generic Glass - normal", 
+      "schema": "GenericSchema", 
+      "textures": {
+        "generic_bump_map": {
+          "file_exists": true, 
+          "path": "E:\\Claude\\3D-Model-Workflow\\.claude\\worktrees\\revit-clear-reeded-glass-4376d3\\output\\clear_reeded_glass\\textures\\Clear_Reeded_Glass_0p5in_Normal_16bit.png", 
+          "rotation_deg": 0.0, 
+          "schema": "BumpMapSchema", 
+          "size_x_in": 4.0, 
+          "size_y_in": 4.0, 
+          "u_repeat": true, 
+          "v_repeat": true
+        }, 
+        "generic_diffuse": {
+          "file_exists": true, 
+          "path": "E:\\Claude\\3D-Model-Workflow\\.claude\\worktrees\\revit-clear-reeded-glass-4376d3\\output\\clear_reeded_glass\\textures\\Clear_Reeded_Glass_0p5in_Color.png", 
+          "rotation_deg": 0.0, 
+          "schema": "UnifiedBitmapSchema", 
+          "size_x_in": 4.0, 
+          "size_y_in": 4.0, 
+          "u_repeat": true, 
+          "v_repeat": true
+        }
+      }, 
+      "values": {
+        "generic_ao_details": true, 
+        "generic_ao_distance": 4.0, 
+        "generic_ao_on": false, 
+        "generic_ao_samples": 16, 
+        "generic_backface_cull": false, 
+        "generic_bump_amount": 1.0, 
+        "generic_bump_map": [
+          0.0, 
+          0.0, 
+          0.0, 
+          1.0
+        ], 
+        "generic_cutout_opacity": 1.0, 
+        "generic_diffuse": [
+          0.31985999999999998, 
+          0.30415999999999999, 
+          0.30197000000000002, 
+          1.0
+        ], 
+        "generic_diffuse_colorspace": 2, 
+        "generic_diffuse_image_fade": 1.0, 
+        "generic_glossiness": 1.0, 
+        "generic_is_metal": false, 
+        "generic_refl_depth": 0, 
+        "generic_reflection_glossy_samples": 12, 
+        "generic_reflectivity_at_0deg": 0.040000000000000001, 
+        "generic_reflectivity_at_90deg": 1.0, 
+        "generic_refr_depth": -1, 
+        "generic_refraction_glossy_samples": 12, 
+        "generic_refraction_index": 1.5200000000000000, 
+        "generic_refraction_translucency_weight": 0.0, 
+        "generic_roundcorners_allow_different_materials": false, 
+        "generic_roundcorners_radius": 0.0, 
+        "generic_self_illum_color_temperature": 6500.0, 
+        "generic_self_illum_filter_map": [
+          1.0, 
+          1.0, 
+          1.0, 
+          1.0
+        ], 
+        "generic_self_illum_filter_map_colorspace": 2, 
+        "generic_self_illum_luminance": 0.0, 
+        "generic_transparency": 0.92000000000000004, 
+        "generic_transparency_image_fade": 1.0
+      }
+    }, 
+    "solidglass_bitmap": {
+      "deliverable": true, 
+      "graphics_transparency_percent": 80, 
+      "material_class": "Glass", 
+      "material_name": "Clear Reeded Glass - 0.5in Vertical Reed", 
+      "schema": "SolidGlassSchema", 
+      "textures": {
+        "solidglass_bump_map": {
+          "file_exists": true, 
+          "path": "E:\\Claude\\3D-Model-Workflow\\.claude\\worktrees\\revit-clear-reeded-glass-4376d3\\output\\clear_reeded_glass\\textures\\Clear_Reeded_Glass_0p5in_Bump_16bit.png", 
+          "rotation_deg": 0.0, 
+          "schema": "UnifiedBitmapSchema", 
+          "size_x_in": 4.0, 
+          "size_y_in": 4.0, 
+          "u_repeat": true, 
+          "v_repeat": true
+        }, 
+        "solidglass_transmittance_custom_color": {
+          "file_exists": true, 
+          "path": "E:\\Claude\\3D-Model-Workflow\\.claude\\worktrees\\revit-clear-reeded-glass-4376d3\\output\\clear_reeded_glass\\textures\\Clear_Reeded_Glass_0p5in_Color.png", 
+          "rotation_deg": 0.0, 
+          "schema": "UnifiedBitmapSchema", 
+          "size_x_in": 4.0, 
+          "size_y_in": 4.0, 
+          "u_repeat": true, 
+          "v_repeat": true
+        }
+      }, 
+      "values": {
+        "solidglass_bump_amount": 1.0, 
+        "solidglass_bump_enable": 3, 
+        "solidglass_color_by_object": false, 
+        "solidglass_glossiness": 0.0, 
+        "solidglass_refl_depth": 0, 
+        "solidglass_reflectance": 0.050000000000000003, 
+        "solidglass_refr_depth": -1, 
+        "solidglass_refr_falloff_dist_mm": 6.0, 
+        "solidglass_refr_ior": 1.5200000000000000, 
+        "solidglass_roundcorners_allow_different_materials": false, 
+        "solidglass_roundcorners_on": false, 
+        "solidglass_roundcorners_radius": 0.25, 
+        "solidglass_transmittance": 6, 
+        "solidglass_transmittance_custom_color": [
+          0.97999999999999998, 
+          0.97999999999999998, 
+          0.97999999999999998, 
+          1.0
+        ], 
+        "solidglass_transmittance_custom_color_colorspace": 2
+      }
+    }, 
+    "solidglass_height": {
+      "deliverable": false, 
+      "graphics_transparency_percent": 80, 
+      "material_class": "Glass", 
+      "material_name": "QA Solid Glass - height, preset clear colour", 
+      "schema": "SolidGlassSchema", 
+      "textures": {
+        "solidglass_bump_map": {
+          "file_exists": true, 
+          "path": "E:\\Claude\\3D-Model-Workflow\\.claude\\worktrees\\revit-clear-reeded-glass-4376d3\\output\\clear_reeded_glass\\textures\\Clear_Reeded_Glass_0p5in_Bump_16bit.png", 
+          "rotation_deg": 0.0, 
+          "schema": "UnifiedBitmapSchema", 
+          "size_x_in": 4.0, 
+          "size_y_in": 4.0, 
+          "u_repeat": true, 
+          "v_repeat": true
+        }
+      }, 
+      "values": {
+        "solidglass_bump_amount": 1.0, 
+        "solidglass_bump_enable": 3, 
+        "solidglass_color_by_object": false, 
+        "solidglass_glossiness": 0.0, 
+        "solidglass_refl_depth": 0, 
+        "solidglass_reflectance": 0.050000000000000003, 
+        "solidglass_refr_depth": -1, 
+        "solidglass_refr_falloff_dist_mm": 6.0, 
+        "solidglass_refr_ior": 1.5200000000000000, 
+        "solidglass_roundcorners_allow_different_materials": false, 
+        "solidglass_roundcorners_on": false, 
+        "solidglass_roundcorners_radius": 0.25, 
+        "solidglass_transmittance": 0, 
+        "solidglass_transmittance_custom_color": [
+          0.86499999999999999, 
+          0.91000000000000003, 
+          0.86599999999999999, 
+          1.0
+        ], 
+        "solidglass_transmittance_custom_color_colorspace": 2
+      }
+    }
+  }, 
+  "notes": [
+    {
+      "light_A": [
+        {
+          "altitude_deg": 20.0, 
+          "azimuth_deg": 90.0, 
+          "relative_to_view": true, 
+          "settings_id": "2973", 
+          "view": "front height"
+        }, 
+        {
+          "altitude_deg": 20.0, 
+          "azimuth_deg": 90.0, 
+          "relative_to_view": true, 
+          "settings_id": "2984", 
+          "view": "front normal"
+        }, 
+        {
+          "altitude_deg": 20.0, 
+          "azimuth_deg": 90.0, 
+          "relative_to_view": true, 
+          "settings_id": "2995", 
+          "view": "front flat_bitmap"
+        }, 
+        {
+          "altitude_deg": 20.0, 
+          "azimuth_deg": 90.0, 
+          "relative_to_view": true, 
+          "settings_id": "3006", 
+          "view": "front flat_bare"
+        }, 
+        {
+          "altitude_deg": 20.0, 
+          "azimuth_deg": 90.0, 
+          "relative_to_view": true, 
+          "settings_id": "3017", 
+          "view": "front generic_height"
+        }, 
+        {
+          "altitude_deg": 20.0, 
+          "azimuth_deg": 90.0, 
+          "relative_to_view": true, 
+          "settings_id": "3028", 
+          "view": "front generic_normal"
+        }, 
+        {
+          "altitude_deg": 20.0, 
+          "azimuth_deg": 90.0, 
+          "relative_to_view": true, 
+          "settings_id": "3039", 
+          "view": "front solidglass_height"
+        }, 
+        {
+          "altitude_deg": 20.0, 
+          "azimuth_deg": 90.0, 
+          "relative_to_view": true, 
+          "settings_id": "3050", 
+          "view": "front solidglass_bitmap"
+        }, 
+        {
+          "altitude_deg": 20.0, 
+          "azimuth_deg": 90.0, 
+          "relative_to_view": true, 
+          "settings_id": "3061", 
+          "view": "oblique height"
+        }, 
+        {
+          "altitude_deg": 20.0, 
+          "azimuth_deg": 90.0, 
+          "relative_to_view": true, 
+          "settings_id": "3072", 
+          "view": "oblique normal"
+        }, 
+        {
+          "altitude_deg": 20.0, 
+          "azimuth_deg": 90.0, 
+          "relative_to_view": true, 
+          "settings_id": "3083", 
+          "view": "oblique generic_height"
+        }, 
+        {
+          "altitude_deg": 20.0, 
+          "azimuth_deg": 90.0, 
+          "relative_to_view": true, 
+          "settings_id": "3094", 
+          "view": "oblique generic_normal"
+        }, 
+        {
+          "altitude_deg": 20.0, 
+          "azimuth_deg": 90.0, 
+          "relative_to_view": true, 
+          "settings_id": "3105", 
+          "view": "oblique solidglass_height"
+        }, 
+        {
+          "altitude_deg": 20.0, 
+          "azimuth_deg": 90.0, 
+          "relative_to_view": true, 
+          "settings_id": "3116", 
+          "view": "oblique solidglass_bitmap"
+        }, 
+        {
+          "altitude_deg": 20.0, 
+          "azimuth_deg": 90.0, 
+          "relative_to_view": true, 
+          "settings_id": "3127", 
+          "view": "front height TEXTURES style"
+        }
+      ]
+    }, 
+    {
+      "light_B": [
+        {
+          "altitude_deg": 20.0, 
+          "azimuth_deg": 270.0, 
+          "relative_to_view": true, 
+          "settings_id": "2973", 
+          "view": "front height"
+        }, 
+        {
+          "altitude_deg": 20.0, 
+          "azimuth_deg": 270.0, 
+          "relative_to_view": true, 
+          "settings_id": "2984", 
+          "view": "front normal"
+        }, 
+        {
+          "altitude_deg": 20.0, 
+          "azimuth_deg": 270.0, 
+          "relative_to_view": true, 
+          "settings_id": "2995", 
+          "view": "front flat_bitmap"
+        }, 
+        {
+          "altitude_deg": 20.0, 
+          "azimuth_deg": 270.0, 
+          "relative_to_view": true, 
+          "settings_id": "3006", 
+          "view": "front flat_bare"
+        }, 
+        {
+          "altitude_deg": 20.0, 
+          "azimuth_deg": 270.0, 
+          "relative_to_view": true, 
+          "settings_id": "3017", 
+          "view": "front generic_height"
+        }, 
+        {
+          "altitude_deg": 20.0, 
+          "azimuth_deg": 270.0, 
+          "relative_to_view": true, 
+          "settings_id": "3028", 
+          "view": "front generic_normal"
+        }, 
+        {
+          "altitude_deg": 20.0, 
+          "azimuth_deg": 270.0, 
+          "relative_to_view": true, 
+          "settings_id": "3039", 
+          "view": "front solidglass_height"
+        }, 
+        {
+          "altitude_deg": 20.0, 
+          "azimuth_deg": 270.0, 
+          "relative_to_view": true, 
+          "settings_id": "3050", 
+          "view": "front solidglass_bitmap"
+        }, 
+        {
+          "altitude_deg": 20.0, 
+          "azimuth_deg": 270.0, 
+          "relative_to_view": true, 
+          "settings_id": "3061", 
+          "view": "oblique height"
+        }, 
+        {
+          "altitude_deg": 20.0, 
+          "azimuth_deg": 270.0, 
+          "relative_to_view": true, 
+          "settings_id": "3072", 
+          "view": "oblique normal"
+        }, 
+        {
+          "altitude_deg": 20.0, 
+          "azimuth_deg": 270.0, 
+          "relative_to_view": true, 
+          "settings_id": "3083", 
+          "view": "oblique generic_height"
+        }, 
+        {
+          "altitude_deg": 20.0, 
+          "azimuth_deg": 270.0, 
+          "relative_to_view": true, 
+          "settings_id": "3094", 
+          "view": "oblique generic_normal"
+        }, 
+        {
+          "altitude_deg": 20.0, 
+          "azimuth_deg": 270.0, 
+          "relative_to_view": true, 
+          "settings_id": "3105", 
+          "view": "oblique solidglass_height"
+        }, 
+        {
+          "altitude_deg": 20.0, 
+          "azimuth_deg": 270.0, 
+          "relative_to_view": true, 
+          "settings_id": "3116", 
+          "view": "oblique solidglass_bitmap"
+        }, 
+        {
+          "altitude_deg": 20.0, 
+          "azimuth_deg": 270.0, 
+          "relative_to_view": true, 
+          "settings_id": "3127", 
+          "view": "front height TEXTURES style"
+        }
+      ]
+    }
+  ], 
+  "project_warnings": [], 
+  "qa_images": [
+    "lightA - 3D View - front flat_bare.png", 
+    "lightA - 3D View - front flat_bitmap.png", 
+    "lightA - 3D View - front generic_height.png", 
+    "lightA - 3D View - front generic_normal.png", 
+    "lightA - 3D View - front height TEXTURES style.png", 
+    "lightA - 3D View - front height.png", 
+    "lightA - 3D View - front normal.png", 
+    "lightA - 3D View - front solidglass_bitmap.png", 
+    "lightA - 3D View - front solidglass_height.png", 
+    "lightA - 3D View - oblique generic_height.png", 
+    "lightA - 3D View - oblique generic_normal.png", 
+    "lightA - 3D View - oblique height.png", 
+    "lightA - 3D View - oblique normal.png", 
+    "lightA - 3D View - oblique solidglass_bitmap.png", 
+    "lightA - 3D View - oblique solidglass_height.png", 
+    "lightB - 3D View - front generic_height.png", 
+    "lightB - 3D View - front generic_normal.png", 
+    "lightB - 3D View - front height.png", 
+    "lightB - 3D View - front normal.png", 
+    "lightB - 3D View - front solidglass_bitmap.png", 
+    "lightB - 3D View - front solidglass_height.png"
+  ], 
+  "ray_traced_render": "NOT RUN - no API route; Realistic viewport exports only", 
+  "reopened": true, 
+  "revit_build": "25.4.50.35", 
+  "revit_pass": true, 
+  "revit_version": "2025", 
+  "run_dir": "E:\\Claude\\3D-Model-Workflow\\.claude\\worktrees\\revit-clear-reeded-glass-4376d3\\output\\clear_reeded_glass", 
+  "rvt_bytes": 544768, 
+  "rvt_path": "E:\\Claude\\3D-Model-Workflow\\.claude\\worktrees\\revit-clear-reeded-glass-4376d3\\output\\clear_reeded_glass\\qa\\Clear_Reeded_Glass_QA_DISPOSABLE_R2025.rvt", 
+  "script": "build_revit.py", 
+  "stage": "complete", 
+  "textures": {
+    "bump": "E:\\Claude\\3D-Model-Workflow\\.claude\\worktrees\\revit-clear-reeded-glass-4376d3\\output\\clear_reeded_glass\\textures\\Clear_Reeded_Glass_0p5in_Bump_16bit.png", 
+    "color": "E:\\Claude\\3D-Model-Workflow\\.claude\\worktrees\\revit-clear-reeded-glass-4376d3\\output\\clear_reeded_glass\\textures\\Clear_Reeded_Glass_0p5in_Color.png", 
+    "normal": "E:\\Claude\\3D-Model-Workflow\\.claude\\worktrees\\revit-clear-reeded-glass-4376d3\\output\\clear_reeded_glass\\textures\\Clear_Reeded_Glass_0p5in_Normal_16bit.png"
+  }, 
+  "transfer_project_standards_used": false, 
+  "variants": {
+    "flat_bare": {
+      "color_bitmap": null, 
+      "deliverable": false, 
+      "gates": {
+        "class_glass": true, 
+        "graphics_transparency": true, 
+        "ior": true, 
+        "no_color_bitmap": true, 
+        "no_relief": true, 
+        "roughness_zero": true, 
+        "schema_is_transparent": true, 
+        "transmission_distance": true
+      }, 
+      "graphics_color_rgb": [
+        "225", 
+        "236", 
+        "238"
+      ], 
+      "graphics_transparency_percent": 80, 
+      "material_class": "Glass", 
+      "material_name": "QA Clear Glass - bare", 
+      "pass": true, 
+      "relief": null, 
+      "schema": "PrismTransparentSchema", 
+      "surface_albedo": [
+        1.0, 
+        1.0, 
+        1.0, 
+        1.0
+      ], 
+      "surface_roughness": 0.0, 
+      "transparent_color": [
+        0.97999999999999998, 
+        0.97999999999999998, 
+        0.97999999999999998, 
+        1.0
+      ], 
+      "transparent_distance_mm": 6.0, 
+      "transparent_ior": 1.5200000000000000, 
+      "use_render_appearance_for_shading": false
+    }, 
+    "flat_bitmap": {
+      "color_bitmap": {
+        "path": "E:\\Claude\\3D-Model-Workflow\\.claude\\worktrees\\revit-clear-reeded-glass-4376d3\\output\\clear_reeded_glass\\textures\\Clear_Reeded_Glass_0p5in_Color.png", 
+        "rotation_deg": 0.0, 
+        "schema": "UnifiedBitmapSchema", 
+        "size_x_in": 4.0, 
+        "size_y_in": 4.0, 
+        "u_repeat": true, 
+        "v_repeat": true
+      }, 
+      "deliverable": false, 
+      "gates": {
+        "class_glass": true, 
+        "color_bitmap_bound": true, 
+        "color_bitmap_file_exists": true, 
+        "color_bitmap_sample_size": true, 
+        "graphics_transparency": true, 
+        "ior": true, 
+        "no_relief": true, 
+        "roughness_zero": true, 
+        "schema_is_transparent": true, 
+        "transmission_distance": true
+      }, 
+      "graphics_color_rgb": [
+        "225", 
+        "236", 
+        "238"
+      ], 
+      "graphics_transparency_percent": 80, 
+      "material_class": "Glass", 
+      "material_name": "QA Clear Glass - colour bitmap only", 
+      "pass": true, 
+      "relief": null, 
+      "schema": "PrismTransparentSchema", 
+      "surface_albedo": [
+        1.0, 
+        1.0, 
+        1.0, 
+        1.0
+      ], 
+      "surface_roughness": 0.0, 
+      "transparent_color": [
+        0.97999999999999998, 
+        0.97999999999999998, 
+        0.97999999999999998, 
+        1.0
+      ], 
+      "transparent_distance_mm": 6.0, 
+      "transparent_ior": 1.5200000000000000, 
+      "use_render_appearance_for_shading": false
+    }, 
+    "height": {
+      "color_bitmap": {
+        "path": "E:\\Claude\\3D-Model-Workflow\\.claude\\worktrees\\revit-clear-reeded-glass-4376d3\\output\\clear_reeded_glass\\textures\\Clear_Reeded_Glass_0p5in_Color.png", 
+        "rotation_deg": 0.0, 
+        "schema": "UnifiedBitmapSchema", 
+        "size_x_in": 4.0, 
+        "size_y_in": 4.0, 
+        "u_repeat": true, 
+        "v_repeat": true
+      }, 
+      "deliverable": true, 
+      "gates": {
+        "class_glass": true, 
+        "color_bitmap_bound": true, 
+        "color_bitmap_file_exists": true, 
+        "color_bitmap_sample_size": true, 
+        "graphics_transparency": true, 
+        "ior": true, 
+        "relief_bound": true, 
+        "relief_depth_mm": true, 
+        "relief_file_exists": true, 
+        "relief_sample_size": true, 
+        "relief_type": true, 
+        "roughness_zero": true, 
+        "schema_is_transparent": true, 
+        "transmission_distance": true
+      }, 
+      "graphics_color_rgb": [
+        "225", 
+        "236", 
+        "238"
+      ], 
+      "graphics_transparency_percent": 80, 
+      "material_class": "Glass", 
+      "material_name": "Clear Reeded Glass - 0.5in Vertical Reed (PBR Height Map)", 
+      "pass": true, 
+      "relief": {
+        "bumpmap_Depth_mm": 1.5, 
+        "bumpmap_NormalScale": 1.0, 
+        "bumpmap_Type": 0, 
+        "path": "E:\\Claude\\3D-Model-Workflow\\.claude\\worktrees\\revit-clear-reeded-glass-4376d3\\output\\clear_reeded_glass\\textures\\Clear_Reeded_Glass_0p5in_Bump_16bit.png", 
+        "rotation_deg": 0.0, 
+        "schema": "BumpMapSchema", 
+        "size_x_in": 4.0, 
+        "size_y_in": 4.0, 
+        "u_repeat": true, 
+        "v_repeat": true
+      }, 
+      "schema": "PrismTransparentSchema", 
+      "surface_albedo": [
+        1.0, 
+        1.0, 
+        1.0, 
+        1.0
+      ], 
+      "surface_roughness": 0.0, 
+      "transparent_color": [
+        0.97999999999999998, 
+        0.97999999999999998, 
+        0.97999999999999998, 
+        1.0
+      ], 
+      "transparent_distance_mm": 6.0, 
+      "transparent_ior": 1.5200000000000000, 
+      "use_render_appearance_for_shading": false
+    }, 
+    "normal": {
+      "color_bitmap": {
+        "path": "E:\\Claude\\3D-Model-Workflow\\.claude\\worktrees\\revit-clear-reeded-glass-4376d3\\output\\clear_reeded_glass\\textures\\Clear_Reeded_Glass_0p5in_Color.png", 
+        "rotation_deg": 0.0, 
+        "schema": "UnifiedBitmapSchema", 
+        "size_x_in": 4.0, 
+        "size_y_in": 4.0, 
+        "u_repeat": true, 
+        "v_repeat": true
+      }, 
+      "deliverable": true, 
+      "gates": {
+        "class_glass": true, 
+        "color_bitmap_bound": true, 
+        "color_bitmap_file_exists": true, 
+        "color_bitmap_sample_size": true, 
+        "graphics_transparency": true, 
+        "ior": true, 
+        "relief_bound": true, 
+        "relief_file_exists": true, 
+        "relief_sample_size": true, 
+        "relief_type": true, 
+        "roughness_zero": true, 
+        "schema_is_transparent": true, 
+        "transmission_distance": true
+      }, 
+      "graphics_color_rgb": [
+        "225", 
+        "236", 
+        "238"
+      ], 
+      "graphics_transparency_percent": 80, 
+      "material_class": "Glass", 
+      "material_name": "Clear Reeded Glass - 0.5in Vertical Reed (PBR Normal Map)", 
+      "pass": true, 
+      "relief": {
+        "bumpmap_Depth_mm": 25.399999999999999, 
+        "bumpmap_NormalScale": 1.0, 
+        "bumpmap_Type": 1, 
+        "path": "E:\\Claude\\3D-Model-Workflow\\.claude\\worktrees\\revit-clear-reeded-glass-4376d3\\output\\clear_reeded_glass\\textures\\Clear_Reeded_Glass_0p5in_Normal_16bit.png", 
+        "rotation_deg": 0.0, 
+        "schema": "BumpMapSchema", 
+        "size_x_in": 4.0, 
+        "size_y_in": 4.0, 
+        "u_repeat": true, 
+        "v_repeat": true
+      }, 
+      "schema": "PrismTransparentSchema", 
+      "surface_albedo": [
+        1.0, 
+        1.0, 
+        1.0, 
+        1.0
+      ], 
+      "surface_roughness": 0.0, 
+      "transparent_color": [
+        0.97999999999999998, 
+        0.97999999999999998, 
+        0.97999999999999998, 
+        1.0
+      ], 
+      "transparent_distance_mm": 6.0, 
+      "transparent_ior": 1.5200000000000000, 
+      "use_render_appearance_for_shading": false
+    }
+  }, 
+  "zero_project_warnings": true
+}

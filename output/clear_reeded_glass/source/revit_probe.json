@@ -1,0 +1,2356 @@
+{
+ "connect_tests": {
+  "GenericSchema": {
+   "color_by_object": {
+    "BumpMap": "none", 
+    "UnifiedBitmap": "none"
+   }, 
+   "common_Tint_color": {
+    "BumpMap": "none", 
+    "UnifiedBitmap": "none"
+   }, 
+   "common_Tint_color_colorspace": {
+    "BumpMap": "ERR The asset property is not editable.", 
+    "UnifiedBitmap": "ERR The asset property is not editable."
+   }, 
+   "generic_bump_amount": {
+    "BumpMap": "ok", 
+    "UnifiedBitmap": "ok"
+   }, 
+   "generic_bump_map": {
+    "BumpMap": "ok", 
+    "UnifiedBitmap": "ok"
+   }, 
+   "generic_cutout_opacity": {
+    "BumpMap": "ok", 
+    "UnifiedBitmap": "ok"
+   }, 
+   "generic_diffuse": {
+    "BumpMap": "ok", 
+    "UnifiedBitmap": "ok"
+   }, 
+   "generic_diffuse_colorspace": {
+    "BumpMap": "ERR The asset property is not editable.", 
+    "UnifiedBitmap": "ERR The asset property is not editable."
+   }, 
+   "generic_diffuse_image_fade": {
+    "BumpMap": "none", 
+    "UnifiedBitmap": "none"
+   }, 
+   "generic_self_illum_color_temperature": {
+    "BumpMap": "none", 
+    "UnifiedBitmap": "none"
+   }, 
+   "generic_self_illum_filter_map_colorspace": {
+    "BumpMap": "ERR The asset property is not editable.", 
+    "UnifiedBitmap": "ERR The asset property is not editable."
+   }
+  }, 
+  "GlazingSchema": {
+   "common_Tint_color": {
+    "BumpMap": "none", 
+    "UnifiedBitmap": "none"
+   }, 
+   "common_Tint_color_colorspace": {
+    "BumpMap": "ERR The asset property is not editable.", 
+    "UnifiedBitmap": "ERR The asset property is not editable."
+   }, 
+   "glazing_color_by_object": {
+    "BumpMap": "none", 
+    "UnifiedBitmap": "none"
+   }, 
+   "glazing_transmittance_color": {
+    "BumpMap": "none", 
+    "UnifiedBitmap": "none"
+   }, 
+   "glazing_transmittance_map": {
+    "BumpMap": "ok", 
+    "UnifiedBitmap": "ok"
+   }, 
+   "glazing_transmittance_map_colorspace": {
+    "BumpMap": "ERR The asset property is not editable.", 
+    "UnifiedBitmap": "ERR The asset property is not editable."
+   }
+  }, 
+  "PrismGlazingSchema": {
+   "glazing_f0_colorspace": {
+    "BumpMap": "ERR The asset property is not editable.", 
+    "UnifiedBitmap": "ERR The asset property is not editable."
+   }, 
+   "glazing_transmission_color": {
+    "BumpMap": "ok", 
+    "UnifiedBitmap": "ok"
+   }, 
+   "glazing_transmission_color_colorspace": {
+    "BumpMap": "ERR The asset property is not editable.", 
+    "UnifiedBitmap": "ERR The asset property is not editable."
+   }, 
+   "glazing_transmission_color_urn": {
+    "BumpMap": "ERR The asset property is not editable.", 
+    "UnifiedBitmap": "ERR The asset property is not editable."
+   }, 
+   "glazing_transmission_roughness": {
+    "BumpMap": "ok", 
+    "UnifiedBitmap": "ok"
+   }, 
+   "glazing_transmission_roughness_urn": {
+    "BumpMap": "ERR The asset property is not editable.", 
+    "UnifiedBitmap": "ERR The asset property is not editable."
+   }, 
+   "surface_albedo": {
+    "BumpMap": "ok", 
+    "UnifiedBitmap": "ok"
+   }, 
+   "surface_albedo_colorspace": {
+    "BumpMap": "ERR The asset property is not editable.", 
+    "UnifiedBitmap": "ERR The asset property is not editable."
+   }, 
+   "surface_albedo_urn": {
+    "BumpMap": "ERR The asset property is not editable.", 
+    "UnifiedBitmap": "ERR The asset property is not editable."
+   }, 
+   "surface_cutout": {
+    "BumpMap": "ok", 
+    "UnifiedBitmap": "ok"
+   }, 
+   "surface_cutout_urn": {
+    "BumpMap": "ERR The asset property is not editable.", 
+    "UnifiedBitmap": "ERR The asset property is not editable."
+   }, 
+   "surface_normal": {
+    "BumpMap": "ok", 
+    "UnifiedBitmap": "ok"
+   }, 
+   "surface_normal_urn": {
+    "BumpMap": "ERR The asset property is not editable.", 
+    "UnifiedBitmap": "ERR The asset property is not editable."
+   }, 
+   "surface_roughness": {
+    "BumpMap": "ok", 
+    "UnifiedBitmap": "ok"
+   }, 
+   "surface_roughness_urn": {
+    "BumpMap": "ERR The asset property is not editable.", 
+    "UnifiedBitmap": "ERR The asset property is not editable."
+   }
+  }, 
+  "PrismOpaqueSchema": {
+   "opaque_albedo": {
+    "BumpMap": "ok", 
+    "UnifiedBitmap": "ok"
+   }, 
+   "opaque_albedo_colorspace": {
+    "BumpMap": "ERR The asset property is not editable.", 
+    "UnifiedBitmap": "ERR The asset property is not editable."
+   }, 
+   "opaque_albedo_urn": {
+    "BumpMap": "ERR The asset property is not editable.", 
+    "UnifiedBitmap": "ERR The asset property is not editable."
+   }, 
+   "opaque_luminance_modifier_colorspace": {
+    "BumpMap": "ERR The asset property is not editable.", 
+    "UnifiedBitmap": "ERR The asset property is not editable."
+   }, 
+   "opaque_mfp_modifier_colorspace": {
+    "BumpMap": "ERR The asset property is not editable.", 
+    "UnifiedBitmap": "ERR The asset property is not editable."
+   }, 
+   "surface_albedo": {
+    "BumpMap": "ok", 
+    "UnifiedBitmap": "ok"
+   }, 
+   "surface_albedo_colorspace": {
+    "BumpMap": "ERR The asset property is not editable.", 
+    "UnifiedBitmap": "ERR The asset property is not editable."
+   }, 
+   "surface_albedo_urn": {
+    "BumpMap": "ERR The asset property is not editable.", 
+    "UnifiedBitmap": "ERR The asset property is not editable."
+   }, 
+   "surface_cutout": {
+    "BumpMap": "ok", 
+    "UnifiedBitmap": "ok"
+   }, 
+   "surface_cutout_urn": {
+    "BumpMap": "ERR The asset property is not editable.", 
+    "UnifiedBitmap": "ERR The asset property is not editable."
+   }, 
+   "surface_normal": {
+    "BumpMap": "ok", 
+    "UnifiedBitmap": "ok"
+   }, 
+   "surface_normal_urn": {
+    "BumpMap": "ERR The asset property is not editable.", 
+    "UnifiedBitmap": "ERR The asset property is not editable."
+   }, 
+   "surface_roughness": {
+    "BumpMap": "ok", 
+    "UnifiedBitmap": "ok"
+   }, 
+   "surface_roughness_urn": {
+    "BumpMap": "ERR The asset property is not editable.", 
+    "UnifiedBitmap": "ERR The asset property is not editable."
+   }
+  }, 
+  "PrismTransparentSchema": {
+   "surface_albedo": {
+    "BumpMap": "ok", 
+    "UnifiedBitmap": "ok"
+   }, 
+   "surface_albedo_colorspace": {
+    "BumpMap": "ERR The asset property is not editable.", 
+    "UnifiedBitmap": "ERR The asset property is not editable."
+   }, 
+   "surface_albedo_urn": {
+    "BumpMap": "ERR The asset property is not editable.", 
+    "UnifiedBitmap": "ERR The asset property is not editable."
+   }, 
+   "surface_cutout": {
+    "BumpMap": "ok", 
+    "UnifiedBitmap": "ok"
+   }, 
+   "surface_cutout_urn": {
+    "BumpMap": "ERR The asset property is not editable.", 
+    "UnifiedBitmap": "ERR The asset property is not editable."
+   }, 
+   "surface_normal": {
+    "BumpMap": "ok", 
+    "UnifiedBitmap": "ok"
+   }, 
+   "surface_normal_urn": {
+    "BumpMap": "ERR The asset property is not editable.", 
+    "UnifiedBitmap": "ERR The asset property is not editable."
+   }, 
+   "surface_roughness": {
+    "BumpMap": "ok", 
+    "UnifiedBitmap": "ok"
+   }, 
+   "surface_roughness_urn": {
+    "BumpMap": "ERR The asset property is not editable.", 
+    "UnifiedBitmap": "ERR The asset property is not editable."
+   }, 
+   "transparent_color": {
+    "BumpMap": "none", 
+    "UnifiedBitmap": "none"
+   }, 
+   "transparent_color_colorspace": {
+    "BumpMap": "ERR The asset property is not editable.", 
+    "UnifiedBitmap": "ERR The asset property is not editable."
+   }
+  }, 
+  "SolidGlassSchema": {
+   "common_Tint_color": {
+    "BumpMap": "none", 
+    "UnifiedBitmap": "none"
+   }, 
+   "common_Tint_color_colorspace": {
+    "BumpMap": "ERR The asset property is not editable.", 
+    "UnifiedBitmap": "ERR The asset property is not editable."
+   }, 
+   "solidglass_bump_amount": {
+    "BumpMap": "none", 
+    "UnifiedBitmap": "none"
+   }, 
+   "solidglass_bump_enable": {
+    "BumpMap": "none", 
+    "UnifiedBitmap": "none"
+   }, 
+   "solidglass_bump_map": {
+    "BumpMap": "ok", 
+    "UnifiedBitmap": "ok"
+   }, 
+   "solidglass_color_by_object": {
+    "BumpMap": "none", 
+    "UnifiedBitmap": "none"
+   }, 
+   "solidglass_transmittance": {
+    "BumpMap": "none", 
+    "UnifiedBitmap": "none"
+   }, 
+   "solidglass_transmittance_custom_color": {
+    "BumpMap": "ok", 
+    "UnifiedBitmap": "ok"
+   }, 
+   "solidglass_transmittance_custom_color_colorspace": {
+    "BumpMap": "ERR The asset property is not editable.", 
+    "UnifiedBitmap": "ERR The asset property is not editable."
+   }
+  }
+ }, 
+ "revit_build": "25.4.50.35", 
+ "revit_version": "2025", 
+ "schema_counts": {
+  "CeramicSchema": 45, 
+  "ConcreteSchema": 30, 
+  "DecalAppearanceSchema": 1, 
+  "DecalSchema": 1, 
+  "GenericSchema": 667, 
+  "GlazingSchema": 20, 
+  "HardwoodSchema": 172, 
+  "MasonryCMUSchema": 52, 
+  "MetalSchema": 88, 
+  "MetallicPaintSchema": 33, 
+  "MirrorSchema": 9, 
+  "PlasticVinylSchema": 69, 
+  "PrismGlazingSchema": 25, 
+  "PrismLayeredSchema": 21, 
+  "PrismMetalSchema": 105, 
+  "PrismOpaqueSchema": 1023, 
+  "PrismTransparentSchema": 39, 
+  "PrismWoodSchema": 1, 
+  "SolidGlassSchema": 24, 
+  "StoneSchema": 28, 
+  "TilingAppearanceSchema": 498, 
+  "TilingPatternSchema": 58, 
+  "WallPaintSchema": 82, 
+  "WaterSchema": 9
+ }, 
+ "schemas": {
+  "GenericSchema": {
+   "library_asset_name": "ACADGen-001", 
+   "properties": [
+    [
+     "AdvancedUIDefinition", 
+     "String", 
+     "Mats/Generic/GenericAdvancedUI.xml"
+    ], 
+    [
+     "AssetLibID", 
+     "String", 
+     "314DE259-5443-4621-BFBD-1730C6CC9AE9"
+    ], 
+    [
+     "BaseSchema", 
+     "String", 
+     "GenericSchema"
+    ], 
+    [
+     "ExchangeGUID", 
+     "String", 
+     ""
+    ], 
+    [
+     "Hidden", 
+     "Boolean", 
+     false
+    ], 
+    [
+     "ImplementationGeneric", 
+     "String", 
+     ""
+    ], 
+    [
+     "ImplementationMentalRay", 
+     "String", 
+     "Mats/Generic/MentalImage.xml"
+    ], 
+    [
+     "ImplementationOGS", 
+     "String", 
+     "Mats/Generic/OGS.xml"
+    ], 
+    [
+     "ImplementationPreview", 
+     "String", 
+     "Mats/Generic/PreviewColor.xml"
+    ], 
+    [
+     "SchemaVersion", 
+     "Integer", 
+     6
+    ], 
+    [
+     "UIDefinition", 
+     "String", 
+     "Mats/Generic/GenericUI.xml"
+    ], 
+    [
+     "UIName", 
+     "String", 
+     "ACADGen-001"
+    ], 
+    [
+     "VersionGUID", 
+     "String", 
+     "ACADGen-001"
+    ], 
+    [
+     "assettype", 
+     "String", 
+     "materialappearance"
+    ], 
+    [
+     "category", 
+     "String", 
+     ":Concrete/Cast-In-Place:Default:Miscellaneous"
+    ], 
+    [
+     "color_by_object", 
+     "Boolean", 
+     false
+    ], 
+    [
+     "common_Shared_Asset", 
+     "Integer", 
+     0
+    ], 
+    [
+     "common_Tint_color", 
+     "Double4", 
+     [
+      0.315, 
+      0.315, 
+      0.315, 
+      1.0
+     ]
+    ], 
+    [
+     "common_Tint_color_colorspace", 
+     "Integer", 
+     2
+    ], 
+    [
+     "common_Tint_toggle", 
+     "Boolean", 
+     false
+    ], 
+    [
+     "description", 
+     "String", 
+     "Generic material."
+    ], 
+    [
+     "generic_ao_details", 
+     "Boolean", 
+     true
+    ], 
+    [
+     "generic_ao_distance", 
+     "Double1", 
+     4.0
+    ], 
+    [
+     "generic_ao_on", 
+     "Boolean", 
+     false
+    ], 
+    [
+     "generic_ao_samples", 
+     "Integer", 
+     16
+    ], 
+    [
+     "generic_backface_cull", 
+     "Boolean", 
+     false
+    ], 
+    [
+     "generic_bump_amount", 
+     "Double1", 
+     0.29999999999999999
+    ], 
+    [
+     "generic_bump_map", 
+     "Double4", 
+     [
+      0.0, 
+      0.0, 
+      0.0, 
+      1.0
+     ]
+    ], 
+    [
+     "generic_cutout_opacity", 
+     "Double1", 
+     1.0
+    ], 
+    [
+     "generic_diffuse", 
+     "Double4", 
+     [
+      0.31985999999999998, 
+      0.30415999999999999, 
+      0.30197000000000002, 
+      1.0
+     ], 
+     "connected=1"
+    ], 
+    [
+     "generic_diffuse_colorspace", 
+     "Integer", 
+     2
+    ], 
+    [
+     "generic_diffuse_image_fade", 
+     "Double1", 
+     1.0
+    ], 
+    [
+     "generic_glossiness", 
+     "Double1", 
+     0.0
+    ], 
+    [
+     "generic_is_metal", 
+     "Boolean", 
+     false
+    ], 
+    [
+     "generic_refl_depth", 
+     "Integer", 
+     0
+    ], 
+    [
+     "generic_reflection_glossy_samples", 
+     "Integer", 
+     12
+    ], 
+    [
+     "generic_reflectivity_at_0deg", 
+     "Double1", 
+     0.0
+    ], 
+    [
+     "generic_reflectivity_at_90deg", 
+     "Double1", 
+     0.0
+    ], 
+    [
+     "generic_refr_depth", 
+     "Integer", 
+     -1
+    ], 
+    [
+     "generic_refraction_glossy_samples", 
+     "Integer", 
+     12
+    ], 
+    [
+     "generic_refraction_index", 
+     "Double1", 
+     1.0
+    ], 
+    [
+     "generic_refraction_translucency_weight", 
+     "Double1", 
+     0.0
+    ], 
+    [
+     "generic_roundcorners_allow_different_materials", 
+     "Boolean", 
+     false
+    ], 
+    [
+     "generic_roundcorners_radius", 
+     "Double1", 
+     0.0
+    ], 
+    [
+     "generic_self_illum_color_temperature", 
+     "Double1", 
+     6500.0
+    ], 
+    [
+     "generic_self_illum_filter_map", 
+     "Double4", 
+     [
+      1.0, 
+      1.0, 
+      1.0, 
+      1.0
+     ]
+    ], 
+    [
+     "generic_self_illum_filter_map_colorspace", 
+     "Integer", 
+     2
+    ], 
+    [
+     "generic_self_illum_luminance", 
+     "Double1", 
+     0.0
+    ], 
+    [
+     "generic_transparency", 
+     "Double1", 
+     0.0
+    ], 
+    [
+     "generic_transparency_image_fade", 
+     "Double1", 
+     1.0
+    ], 
+    [
+     "keyword", 
+     "String", 
+     ":AutoCAD:Concrete.Cast-In-Place.Exposed Aggregate.Coarse:materials:generic"
+    ], 
+    [
+     "localname", 
+     "String", 
+     "Generic"
+    ], 
+    [
+     "localtype", 
+     "String", 
+     "Appearance"
+    ], 
+    [
+     "mode", 
+     "Integer", 
+     4
+    ], 
+    [
+     "revision", 
+     "Integer", 
+     1
+    ], 
+    [
+     "swatch", 
+     "String", 
+     "Swatch-Cube"
+    ], 
+    [
+     "thumbnail", 
+     "String", 
+     "lib:?Mats\\Generic\\Presets\\t_ACADGen-001.png"
+    ], 
+    [
+     "version", 
+     "Integer", 
+     4
+    ]
+   ]
+  }, 
+  "GlazingSchema": {
+   "library_asset_name": "Glazing", 
+   "properties": [
+    [
+     "AdvancedUIDefinition", 
+     "String", 
+     "Mats/Glazing/GlazingAdvancedUI.xml"
+    ], 
+    [
+     "AssetLibID", 
+     "String", 
+     "314DE259-5443-4621-BFBD-1730C6CC9AE9"
+    ], 
+    [
+     "BaseSchema", 
+     "String", 
+     "GlazingSchema"
+    ], 
+    [
+     "ExchangeGUID", 
+     "String", 
+     ""
+    ], 
+    [
+     "Hidden", 
+     "Boolean", 
+     false
+    ], 
+    [
+     "ImplementationGeneric", 
+     "String", 
+     "Mats/Glazing/Generic.xml"
+    ], 
+    [
+     "ImplementationMentalRay", 
+     "String", 
+     "Mats/Glazing/MentalImage.xml"
+    ], 
+    [
+     "ImplementationOGS", 
+     "String", 
+     "Mats/Glazing/OGS.xml"
+    ], 
+    [
+     "ImplementationPreview", 
+     "String", 
+     "Mats/Glazing/PreviewColor.xml"
+    ], 
+    [
+     "SchemaVersion", 
+     "Integer", 
+     5
+    ], 
+    [
+     "UIDefinition", 
+     "String", 
+     "Mats/Glazing/GlazingUI.xml"
+    ], 
+    [
+     "UIName", 
+     "String", 
+     "Glazing"
+    ], 
+    [
+     "VersionGUID", 
+     "String", 
+     "Glazing"
+    ], 
+    [
+     "assettype", 
+     "String", 
+     "materialappearance"
+    ], 
+    [
+     "category", 
+     "String", 
+     ":Default:Glass"
+    ], 
+    [
+     "common_Shared_Asset", 
+     "Integer", 
+     0
+    ], 
+    [
+     "common_Tint_color", 
+     "Double4", 
+     [
+      0.315, 
+      0.315, 
+      0.315, 
+      1.0
+     ]
+    ], 
+    [
+     "common_Tint_color_colorspace", 
+     "Integer", 
+     2
+    ], 
+    [
+     "common_Tint_toggle", 
+     "Boolean", 
+     false
+    ], 
+    [
+     "description", 
+     "String", 
+     "Glazing material."
+    ], 
+    [
+     "glazing_color_by_object", 
+     "Boolean", 
+     false
+    ], 
+    [
+     "glazing_no_levels", 
+     "Integer", 
+     2
+    ], 
+    [
+     "glazing_refl_depth", 
+     "Integer", 
+     0
+    ], 
+    [
+     "glazing_reflectance", 
+     "Double1", 
+     0.14999999999999999
+    ], 
+    [
+     "glazing_refr_depth", 
+     "Integer", 
+     -1
+    ], 
+    [
+     "glazing_transmittance_color", 
+     "Integer", 
+     0
+    ], 
+    [
+     "glazing_transmittance_map", 
+     "Double4", 
+     [
+      0.77600000000000002, 
+      0.82699999999999996, 
+      0.76900000000000002, 
+      1.0
+     ]
+    ], 
+    [
+     "glazing_transmittance_map_colorspace", 
+     "Integer", 
+     2
+    ], 
+    [
+     "keyword", 
+     "String", 
+     ":materials:glazing"
+    ], 
+    [
+     "localname", 
+     "String", 
+     "Glazing"
+    ], 
+    [
+     "localtype", 
+     "String", 
+     "Appearance"
+    ], 
+    [
+     "mode", 
+     "Integer", 
+     4
+    ], 
+    [
+     "revision", 
+     "Integer", 
+     1
+    ], 
+    [
+     "swatch", 
+     "String", 
+     "Swatch-CurtainWall"
+    ], 
+    [
+     "thumbnail", 
+     "String", 
+     "lib:?Mats\\Glazing\\glazing.png"
+    ], 
+    [
+     "version", 
+     "Integer", 
+     4
+    ]
+   ]
+  }, 
+  "PrismGlazingSchema": {
+   "library_asset_name": "Prism-2000", 
+   "properties": [
+    [
+     "AdvancedUIDefinition", 
+     "String", 
+     ""
+    ], 
+    [
+     "AssetLibID", 
+     "String", 
+     "314DE259-5443-4621-BFBD-1730C6CC9AE9"
+    ], 
+    [
+     "BaseSchema", 
+     "String", 
+     "PrismGlazingSchema"
+    ], 
+    [
+     "ExchangeGUID", 
+     "String", 
+     ""
+    ], 
+    [
+     "Hidden", 
+     "Boolean", 
+     false
+    ], 
+    [
+     "ImplementationGeneric", 
+     "String", 
+     "Mats/PrismGlazing/Generic.xml"
+    ], 
+    [
+     "SchemaVersion", 
+     "Integer", 
+     3
+    ], 
+    [
+     "UIDefinition", 
+     "String", 
+     "Mats/PrismGlazing/PrismGlazingUI.xml"
+    ], 
+    [
+     "UIName", 
+     "String", 
+     "Prism-2000"
+    ], 
+    [
+     "VersionGUID", 
+     "String", 
+     "Prism-2000"
+    ], 
+    [
+     "assettype", 
+     "String", 
+     "materialappearance"
+    ], 
+    [
+     "category", 
+     "String", 
+     ":Glass/Glazing:Default"
+    ], 
+    [
+     "description", 
+     "String", 
+     "Clear glazing - Single pane"
+    ], 
+    [
+     "glazing_backface_culling", 
+     "Boolean", 
+     true
+    ], 
+    [
+     "glazing_f0", 
+     "Double4", 
+     [
+      0.31330000000000002, 
+      0.31330000000000002, 
+      0.31330000000000002, 
+      1.0
+     ]
+    ], 
+    [
+     "glazing_f0_colorspace", 
+     "Integer", 
+     1
+    ], 
+    [
+     "glazing_f0_urn", 
+     "String", 
+     ""
+    ], 
+    [
+     "glazing_transmission_color", 
+     "Double4", 
+     [
+      0.94528000000000001, 
+      0.94528000000000001, 
+      0.94528000000000001, 
+      1.0
+     ]
+    ], 
+    [
+     "glazing_transmission_color_colorspace", 
+     "Integer", 
+     1
+    ], 
+    [
+     "glazing_transmission_color_urn", 
+     "String", 
+     ""
+    ], 
+    [
+     "glazing_transmission_roughness", 
+     "Double1", 
+     0.0
+    ], 
+    [
+     "glazing_transmission_roughness_urn", 
+     "String", 
+     ""
+    ], 
+    [
+     "interior_model", 
+     "Integer", 
+     5
+    ], 
+    [
+     "keyword", 
+     "String", 
+     ":Glazing:Clear:Single Pane:materials:glazing"
+    ], 
+    [
+     "localname", 
+     "String", 
+     "Glazing"
+    ], 
+    [
+     "localtype", 
+     "String", 
+     "Appearance"
+    ], 
+    [
+     "revision", 
+     "Integer", 
+     1
+    ], 
+    [
+     "surface_albedo", 
+     "Double4", 
+     [
+      1.0, 
+      1.0, 
+      1.0, 
+      1.0
+     ]
+    ], 
+    [
+     "surface_albedo_colorspace", 
+     "Integer", 
+     1
+    ], 
+    [
+     "surface_albedo_urn", 
+     "String", 
+     ""
+    ], 
+    [
+     "surface_anisotropy", 
+     "Double1", 
+     0.0
+    ], 
+    [
+     "surface_anisotropy_urn", 
+     "String", 
+     ""
+    ], 
+    [
+     "surface_cutout", 
+     "Reference", 
+     "<Reference>"
+    ], 
+    [
+     "surface_cutout_urn", 
+     "String", 
+     ""
+    ], 
+    [
+     "surface_ndf_type", 
+     "Integer", 
+     1
+    ], 
+    [
+     "surface_normal", 
+     "Reference", 
+     "<Reference>"
+    ], 
+    [
+     "surface_normal_urn", 
+     "String", 
+     ""
+    ], 
+    [
+     "surface_rotation", 
+     "Double1", 
+     0.0
+    ], 
+    [
+     "surface_rotation_urn", 
+     "String", 
+     ""
+    ], 
+    [
+     "surface_roughness", 
+     "Double1", 
+     0.0
+    ], 
+    [
+     "surface_roughness_urn", 
+     "String", 
+     ""
+    ], 
+    [
+     "swatch", 
+     "String", 
+     "Swatch-CurtainWall"
+    ], 
+    [
+     "thumbnail", 
+     "String", 
+     "lib:?Mats\\PrismGlazing\\Presets\\t_Prism-2000.png"
+    ], 
+    [
+     "version", 
+     "Integer", 
+     1
+    ]
+   ]
+  }, 
+  "PrismOpaqueSchema": {
+   "library_asset_name": "Prism-087", 
+   "properties": [
+    [
+     "AdvancedUIDefinition", 
+     "String", 
+     ""
+    ], 
+    [
+     "AssetLibID", 
+     "String", 
+     "314DE259-5443-4621-BFBD-1730C6CC9AE9"
+    ], 
+    [
+     "BaseSchema", 
+     "String", 
+     "PrismOpaqueSchema"
+    ], 
+    [
+     "ExchangeGUID", 
+     "String", 
+     ""
+    ], 
+    [
+     "Hidden", 
+     "Boolean", 
+     false
+    ], 
+    [
+     "ImplementationGeneric", 
+     "String", 
+     "Mats/PrismOpaque/Generic.xml"
+    ], 
+    [
+     "SchemaVersion", 
+     "Integer", 
+     9
+    ], 
+    [
+     "UIDefinition", 
+     "String", 
+     "Mats/PrismOpaque/PrismOpaqueUI.xml"
+    ], 
+    [
+     "UIName", 
+     "String", 
+     "Prism-087"
+    ], 
+    [
+     "VersionGUID", 
+     "String", 
+     "Prism-087"
+    ], 
+    [
+     "assettype", 
+     "String", 
+     "materialappearance"
+    ], 
+    [
+     "category", 
+     "String", 
+     ":Fabric/Leather:Default"
+    ], 
+    [
+     "description", 
+     "String", 
+     "Leather - black"
+    ], 
+    [
+     "interior_model", 
+     "Integer", 
+     0
+    ], 
+    [
+     "keyword", 
+     "String", 
+     ":Leather and Cloth:Leather:materials:opaque"
+    ], 
+    [
+     "localname", 
+     "String", 
+     "Opaque"
+    ], 
+    [
+     "localtype", 
+     "String", 
+     "Appearance"
+    ], 
+    [
+     "opaque_albedo", 
+     "Double4", 
+     [
+      1.0, 
+      1.0, 
+      1.0, 
+      1.0
+     ], 
+     "connected=1"
+    ], 
+    [
+     "opaque_albedo_colorspace", 
+     "Integer", 
+     1
+    ], 
+    [
+     "opaque_albedo_urn", 
+     "String", 
+     ""
+    ], 
+    [
+     "opaque_emission", 
+     "Boolean", 
+     false
+    ], 
+    [
+     "opaque_f0", 
+     "Double1", 
+     0.02772225
+    ], 
+    [
+     "opaque_f0_urn", 
+     "String", 
+     ""
+    ], 
+    [
+     "opaque_luminance", 
+     "Double1", 
+     0.0
+    ], 
+    [
+     "opaque_luminance_modifier", 
+     "Double4", 
+     [
+      1.0, 
+      1.0, 
+      1.0, 
+      1.0
+     ]
+    ], 
+    [
+     "opaque_luminance_modifier_colorspace", 
+     "Integer", 
+     1
+    ], 
+    [
+     "opaque_luminance_modifier_urn", 
+     "String", 
+     ""
+    ], 
+    [
+     "opaque_mfp", 
+     "Distance", 
+     [
+      0.5, 
+      "autodesk.unit.unit:millimeters-1.0.1"
+     ]
+    ], 
+    [
+     "opaque_mfp_modifier", 
+     "Double4", 
+     [
+      1.0, 
+      1.0, 
+      1.0, 
+      1.0
+     ]
+    ], 
+    [
+     "opaque_mfp_modifier_colorspace", 
+     "Integer", 
+     1
+    ], 
+    [
+     "opaque_mfp_modifier_urn", 
+     "String", 
+     ""
+    ], 
+    [
+     "opaque_translucency", 
+     "Boolean", 
+     false
+    ], 
+    [
+     "revision", 
+     "Integer", 
+     1
+    ], 
+    [
+     "surface_albedo", 
+     "Double4", 
+     [
+      1.0, 
+      1.0, 
+      1.0, 
+      1.0
+     ]
+    ], 
+    [
+     "surface_albedo_colorspace", 
+     "Integer", 
+     1
+    ], 
+    [
+     "surface_albedo_urn", 
+     "String", 
+     ""
+    ], 
+    [
+     "surface_anisotropy", 
+     "Double1", 
+     0.0
+    ], 
+    [
+     "surface_anisotropy_urn", 
+     "String", 
+     ""
+    ], 
+    [
+     "surface_cutout", 
+     "Reference", 
+     "<Reference>"
+    ], 
+    [
+     "surface_cutout_urn", 
+     "String", 
+     ""
+    ], 
+    [
+     "surface_ndf_type", 
+     "Integer", 
+     1
+    ], 
+    [
+     "surface_normal", 
+     "Reference", 
+     "<Reference>", 
+     "connected=1"
+    ], 
+    [
+     "surface_normal_urn", 
+     "String", 
+     ""
+    ], 
+    [
+     "surface_rotation", 
+     "Double1", 
+     0.0
+    ], 
+    [
+     "surface_rotation_urn", 
+     "String", 
+     ""
+    ], 
+    [
+     "surface_roughness", 
+     "Double1", 
+     0.20000000000000001, 
+     "connected=1"
+    ], 
+    [
+     "surface_roughness_urn", 
+     "String", 
+     ""
+    ], 
+    [
+     "swatch", 
+     "String", 
+     "Swatch-Drapery"
+    ], 
+    [
+     "thumbnail", 
+     "String", 
+     "lib:?Mats\\PrismOpaque\\Presets\\t_Prism-087.png"
+    ], 
+    [
+     "version", 
+     "Integer", 
+     1
+    ]
+   ]
+  }, 
+  "PrismTransparentSchema": {
+   "library_asset_name": "Prism-1170", 
+   "properties": [
+    [
+     "AdvancedUIDefinition", 
+     "String", 
+     ""
+    ], 
+    [
+     "AssetLibID", 
+     "String", 
+     "314DE259-5443-4621-BFBD-1730C6CC9AE9"
+    ], 
+    [
+     "BaseSchema", 
+     "String", 
+     "PrismTransparentSchema"
+    ], 
+    [
+     "ExchangeGUID", 
+     "String", 
+     ""
+    ], 
+    [
+     "Hidden", 
+     "Boolean", 
+     false
+    ], 
+    [
+     "ImplementationGeneric", 
+     "String", 
+     "Mats/PrismTransparent/Generic.xml"
+    ], 
+    [
+     "SchemaVersion", 
+     "Integer", 
+     7
+    ], 
+    [
+     "UIDefinition", 
+     "String", 
+     "Mats/PrismTransparent/PrismTransparentUI.xml"
+    ], 
+    [
+     "UIName", 
+     "String", 
+     "Prism-1170"
+    ], 
+    [
+     "VersionGUID", 
+     "String", 
+     "Prism-1170"
+    ], 
+    [
+     "assettype", 
+     "String", 
+     "materialappearance"
+    ], 
+    [
+     "category", 
+     "String", 
+     ":Miscellaneous/Base Materials:Default"
+    ], 
+    [
+     "description", 
+     "String", 
+     "Base Material - Transparent"
+    ], 
+    [
+     "interior_model", 
+     "Integer", 
+     3
+    ], 
+    [
+     "keyword", 
+     "String", 
+     ":AEC:Other:materials:transparent"
+    ], 
+    [
+     "localname", 
+     "String", 
+     "Transparent"
+    ], 
+    [
+     "localtype", 
+     "String", 
+     "Appearance"
+    ], 
+    [
+     "revision", 
+     "Integer", 
+     1
+    ], 
+    [
+     "surface_albedo", 
+     "Double4", 
+     [
+      1.0, 
+      1.0, 
+      1.0, 
+      1.0
+     ]
+    ], 
+    [
+     "surface_albedo_colorspace", 
+     "Integer", 
+     1
+    ], 
+    [
+     "surface_albedo_urn", 
+     "String", 
+     ""
+    ], 
+    [
+     "surface_anisotropy", 
+     "Double1", 
+     0.0
+    ], 
+    [
+     "surface_anisotropy_urn", 
+     "String", 
+     ""
+    ], 
+    [
+     "surface_cutout", 
+     "Reference", 
+     "<Reference>"
+    ], 
+    [
+     "surface_cutout_urn", 
+     "String", 
+     ""
+    ], 
+    [
+     "surface_ndf_type", 
+     "Integer", 
+     1
+    ], 
+    [
+     "surface_normal", 
+     "Reference", 
+     "<Reference>"
+    ], 
+    [
+     "surface_normal_urn", 
+     "String", 
+     ""
+    ], 
+    [
+     "surface_rotation", 
+     "Double1", 
+     0.0
+    ], 
+    [
+     "surface_rotation_urn", 
+     "String", 
+     ""
+    ], 
+    [
+     "surface_roughness", 
+     "Double1", 
+     0.0
+    ], 
+    [
+     "surface_roughness_urn", 
+     "String", 
+     ""
+    ], 
+    [
+     "swatch", 
+     "String", 
+     "Swatch-Sphere2"
+    ], 
+    [
+     "thumbnail", 
+     "String", 
+     "lib:?Mats\\PrismTransparent\\Presets\\t_Prism-1170.png"
+    ], 
+    [
+     "transparent_color", 
+     "Double4", 
+     [
+      0.45000000000000001, 
+      0.45000000000000001, 
+      0.45000000000000001, 
+      1.0
+     ]
+    ], 
+    [
+     "transparent_color_colorspace", 
+     "Integer", 
+     1
+    ], 
+    [
+     "transparent_distance", 
+     "Distance", 
+     [
+      1000.0, 
+      "autodesk.unit.unit:millimeters-1.0.1"
+     ]
+    ], 
+    [
+     "transparent_ior", 
+     "Double1", 
+     1.5
+    ], 
+    [
+     "version", 
+     "Integer", 
+     1
+    ]
+   ]
+  }, 
+  "SolidGlassSchema": {
+   "library_asset_name": "Glass-001", 
+   "properties": [
+    [
+     "AdvancedUIDefinition", 
+     "String", 
+     "Mats/SolidGlass/SolidGlassAdvancedUI.xml"
+    ], 
+    [
+     "AssetLibID", 
+     "String", 
+     "314DE259-5443-4621-BFBD-1730C6CC9AE9"
+    ], 
+    [
+     "BaseSchema", 
+     "String", 
+     "SolidGlassSchema"
+    ], 
+    [
+     "ExchangeGUID", 
+     "String", 
+     ""
+    ], 
+    [
+     "Hidden", 
+     "Boolean", 
+     false
+    ], 
+    [
+     "ImplementationGeneric", 
+     "String", 
+     "Mats/SolidGlass/Generic.xml"
+    ], 
+    [
+     "ImplementationMentalRay", 
+     "String", 
+     "Mats/SolidGlass/MentalImage.xml"
+    ], 
+    [
+     "ImplementationOGS", 
+     "String", 
+     "Mats/SolidGlass/OGS.xml"
+    ], 
+    [
+     "ImplementationPreview", 
+     "String", 
+     "Mats/SolidGlass/PreviewColor.xml"
+    ], 
+    [
+     "SchemaVersion", 
+     "Integer", 
+     5
+    ], 
+    [
+     "UIDefinition", 
+     "String", 
+     "Mats/SolidGlass/SolidGlassUI.xml"
+    ], 
+    [
+     "UIName", 
+     "String", 
+     "Glass-001"
+    ], 
+    [
+     "VersionGUID", 
+     "String", 
+     "Glass-001"
+    ], 
+    [
+     "assettype", 
+     "String", 
+     "materialappearance"
+    ], 
+    [
+     "category", 
+     "String", 
+     ":Glass:Default"
+    ], 
+    [
+     "common_Shared_Asset", 
+     "Integer", 
+     0
+    ], 
+    [
+     "common_Tint_color", 
+     "Double4", 
+     [
+      0.315, 
+      0.315, 
+      0.315, 
+      1.0
+     ]
+    ], 
+    [
+     "common_Tint_color_colorspace", 
+     "Integer", 
+     2
+    ], 
+    [
+     "common_Tint_toggle", 
+     "Boolean", 
+     false
+    ], 
+    [
+     "description", 
+     "String", 
+     "Solid Glass material."
+    ], 
+    [
+     "keyword", 
+     "String", 
+     ":glass:transparent:clear:green:materials:interior"
+    ], 
+    [
+     "localname", 
+     "String", 
+     "Solid Glass"
+    ], 
+    [
+     "localtype", 
+     "String", 
+     "Appearance"
+    ], 
+    [
+     "mode", 
+     "Integer", 
+     4
+    ], 
+    [
+     "reflection_glossy_samples", 
+     "Integer", 
+     32
+    ], 
+    [
+     "refraction_glossy_samples", 
+     "Integer", 
+     32
+    ], 
+    [
+     "revision", 
+     "Integer", 
+     1
+    ], 
+    [
+     "solidglass_bump_amount", 
+     "Double1", 
+     0.29999999999999999
+    ], 
+    [
+     "solidglass_bump_enable", 
+     "Integer", 
+     0
+    ], 
+    [
+     "solidglass_bump_map", 
+     "Reference", 
+     "<Reference>", 
+     "connected=1"
+    ], 
+    [
+     "solidglass_color_by_object", 
+     "Boolean", 
+     false
+    ], 
+    [
+     "solidglass_glossiness", 
+     "Double1", 
+     0.0
+    ], 
+    [
+     "solidglass_refl_depth", 
+     "Integer", 
+     0
+    ], 
+    [
+     "solidglass_reflectance", 
+     "Double1", 
+     0.050000000000000003
+    ], 
+    [
+     "solidglass_refr_depth", 
+     "Integer", 
+     -1
+    ], 
+    [
+     "solidglass_refr_falloff_dist", 
+     "Distance", 
+     [
+      6.0, 
+      "autodesk.unit.unit:millimeters-1.0.1"
+     ]
+    ], 
+    [
+     "solidglass_refr_ior", 
+     "Double1", 
+     1.5200000000000000
+    ], 
+    [
+     "solidglass_roundcorners_allow_different_materials", 
+     "Boolean", 
+     false
+    ], 
+    [
+     "solidglass_roundcorners_on", 
+     "Boolean", 
+     false
+    ], 
+    [
+     "solidglass_roundcorners_radius", 
+     "Double1", 
+     0.25
+    ], 
+    [
+     "solidglass_transmittance", 
+     "Integer", 
+     1
+    ], 
+    [
+     "solidglass_transmittance_custom_color", 
+     "Double4", 
+     [
+      0.86499999999999999, 
+      0.91000000000000003, 
+      0.86599999999999999, 
+      1.0
+     ]
+    ], 
+    [
+     "solidglass_transmittance_custom_color_colorspace", 
+     "Integer", 
+     2
+    ], 
+    [
+     "swatch", 
+     "String", 
+     "Swatch-Vase"
+    ], 
+    [
+     "thumbnail", 
+     "String", 
+     "lib:?Mats\\SolidGlass\\Presets\\t_Glass-001.png"
+    ], 
+    [
+     "version", 
+     "Integer", 
+     4
+    ]
+   ]
+  }
+ }, 
+ "stage": "complete", 
+ "texprops_BumpMap": [
+  [
+   "AdvancedUIDefinition", 
+   "String", 
+   ""
+  ], 
+  [
+   "AssetLibID", 
+   "String", 
+   "314DE259-5443-4621-BFBD-1730C6CC9AE9"
+  ], 
+  [
+   "BaseSchema", 
+   "String", 
+   "BumpMapSchema"
+  ], 
+  [
+   "ExchangeGUID", 
+   "String", 
+   ""
+  ], 
+  [
+   "Hidden", 
+   "Boolean", 
+   false
+  ], 
+  [
+   "ImplementationGeneric", 
+   "String", 
+   ""
+  ], 
+  [
+   "ImplementationMentalRay", 
+   "String", 
+   ""
+  ], 
+  [
+   "ImplementationOGS", 
+   "String", 
+   ""
+  ], 
+  [
+   "ImplementationPreview", 
+   "String", 
+   ""
+  ], 
+  [
+   "SchemaVersion", 
+   "Integer", 
+   5
+  ], 
+  [
+   "UIDefinition", 
+   "String", 
+   "Maps/BumpMap/BumpMapUI.xml"
+  ], 
+  [
+   "UIName", 
+   "String", 
+   "BumpMap"
+  ], 
+  [
+   "VersionGUID", 
+   "String", 
+   "BumpMap"
+  ], 
+  [
+   "assettype", 
+   "String", 
+   "texture"
+  ], 
+  [
+   "bumpmap_Bitmap", 
+   "String", 
+   ""
+  ], 
+  [
+   "bumpmap_Bitmap_urn", 
+   "String", 
+   ""
+  ], 
+  [
+   "bumpmap_Depth", 
+   "Distance", 
+   [
+    1.0, 
+    "autodesk.unit.unit:inches-1.0.1"
+   ]
+  ], 
+  [
+   "bumpmap_NormalScale", 
+   "Double1", 
+   1.0
+  ], 
+  [
+   "bumpmap_Type", 
+   "Integer", 
+   0
+  ], 
+  [
+   "category", 
+   "String", 
+   ""
+  ], 
+  [
+   "common_Shared_Asset", 
+   "Integer", 
+   0
+  ], 
+  [
+   "common_Tint_color", 
+   "Double4", 
+   [
+    0.315, 
+    0.315, 
+    0.315, 
+    1.0
+   ]
+  ], 
+  [
+   "common_Tint_color_colorspace", 
+   "Integer", 
+   2
+  ], 
+  [
+   "common_Tint_toggle", 
+   "Boolean", 
+   false
+  ], 
+  [
+   "description", 
+   "String", 
+   "Bump Map."
+  ], 
+  [
+   "keyword", 
+   "String", 
+   ":maps:misc"
+  ], 
+  [
+   "localname", 
+   "String", 
+   "Bump Texture"
+  ], 
+  [
+   "localtype", 
+   "String", 
+   "Texture"
+  ], 
+  [
+   "revision", 
+   "Integer", 
+   1
+  ], 
+  [
+   "swatch", 
+   "String", 
+   ""
+  ], 
+  [
+   "texture_LinkTextureTransforms", 
+   "Boolean", 
+   false
+  ], 
+  [
+   "texture_MapChannel", 
+   "Integer", 
+   1
+  ], 
+  [
+   "texture_MapChannel_ID_Advanced", 
+   "Integer", 
+   1
+  ], 
+  [
+   "texture_MapChannel_UVWSource_Advanced", 
+   "Integer", 
+   0
+  ], 
+  [
+   "texture_OffsetLock", 
+   "Boolean", 
+   false
+  ], 
+  [
+   "texture_RealWorldOffsetX", 
+   "Distance", 
+   [
+    0.0, 
+    "autodesk.unit.unit:inches-1.0.1"
+   ]
+  ], 
+  [
+   "texture_RealWorldOffsetY", 
+   "Distance", 
+   [
+    0.0, 
+    "autodesk.unit.unit:inches-1.0.1"
+   ]
+  ], 
+  [
+   "texture_RealWorldScaleX", 
+   "Distance", 
+   [
+    1.0, 
+    "autodesk.unit.unit:inches-1.0.1"
+   ]
+  ], 
+  [
+   "texture_RealWorldScaleY", 
+   "Distance", 
+   [
+    1.0, 
+    "autodesk.unit.unit:inches-1.0.1"
+   ]
+  ], 
+  [
+   "texture_ScaleLock", 
+   "Boolean", 
+   true
+  ], 
+  [
+   "texture_UOffset", 
+   "Double1", 
+   0.0
+  ], 
+  [
+   "texture_URepeat", 
+   "Boolean", 
+   true
+  ], 
+  [
+   "texture_UScale", 
+   "Double1", 
+   1.0
+  ], 
+  [
+   "texture_UVScale", 
+   "Double1", 
+   1.0
+  ], 
+  [
+   "texture_VOffset", 
+   "Double1", 
+   0.0
+  ], 
+  [
+   "texture_VRepeat", 
+   "Boolean", 
+   true
+  ], 
+  [
+   "texture_VScale", 
+   "Double1", 
+   1.0
+  ], 
+  [
+   "texture_WAngle", 
+   "Double1", 
+   0.0
+  ], 
+  [
+   "thumbnail", 
+   "String", 
+   "lib:?Maps\\BumpMap\\BumpMap.png"
+  ], 
+  [
+   "version", 
+   "Integer", 
+   4
+  ]
+ ], 
+ "texprops_UnifiedBitmap": [
+  [
+   "AdvancedUIDefinition", 
+   "String", 
+   "Maps/UnifiedBitmap/UnifiedBitmapAdvancedUI.xml"
+  ], 
+  [
+   "AssetLibID", 
+   "String", 
+   "314DE259-5443-4621-BFBD-1730C6CC9AE9"
+  ], 
+  [
+   "BaseSchema", 
+   "String", 
+   "UnifiedBitmapSchema"
+  ], 
+  [
+   "ExchangeGUID", 
+   "String", 
+   ""
+  ], 
+  [
+   "Hidden", 
+   "Boolean", 
+   false
+  ], 
+  [
+   "ImplementationGeneric", 
+   "String", 
+   ""
+  ], 
+  [
+   "ImplementationMentalRay", 
+   "String", 
+   "Maps/UnifiedBitmap/MentalImage.xml"
+  ], 
+  [
+   "ImplementationOGS", 
+   "String", 
+   "Maps/UnifiedBitmap/OGS.xml"
+  ], 
+  [
+   "ImplementationPreview", 
+   "String", 
+   ""
+  ], 
+  [
+   "SchemaVersion", 
+   "Integer", 
+   5
+  ], 
+  [
+   "UIDefinition", 
+   "String", 
+   "Maps/UnifiedBitmap/UnifiedBitmapUI.xml"
+  ], 
+  [
+   "UIName", 
+   "String", 
+   "UnifiedBitmap"
+  ], 
+  [
+   "VersionGUID", 
+   "String", 
+   "UnifiedBitmap"
+  ], 
+  [
+   "assettype", 
+   "String", 
+   "texture"
+  ], 
+  [
+   "category", 
+   "String", 
+   ""
+  ], 
+  [
+   "common_Shared_Asset", 
+   "Integer", 
+   0
+  ], 
+  [
+   "common_Tint_color", 
+   "Double4", 
+   [
+    0.315, 
+    0.315, 
+    0.315, 
+    1.0
+   ]
+  ], 
+  [
+   "common_Tint_color_colorspace", 
+   "Integer", 
+   2
+  ], 
+  [
+   "common_Tint_toggle", 
+   "Boolean", 
+   false
+  ], 
+  [
+   "description", 
+   "String", 
+   "Unified Bitmap."
+  ], 
+  [
+   "keyword", 
+   "String", 
+   ":maps:misc"
+  ], 
+  [
+   "localname", 
+   "String", 
+   "Bitmap Texture"
+  ], 
+  [
+   "localtype", 
+   "String", 
+   "Texture"
+  ], 
+  [
+   "revision", 
+   "Integer", 
+   1
+  ], 
+  [
+   "swatch", 
+   "String", 
+   ""
+  ], 
+  [
+   "texture_LinkTextureTransforms", 
+   "Boolean", 
+   false
+  ], 
+  [
+   "texture_MapChannel", 
+   "Integer", 
+   1
+  ], 
+  [
+   "texture_MapChannel_ID_Advanced", 
+   "Integer", 
+   1
+  ], 
+  [
+   "texture_MapChannel_UVWSource_Advanced", 
+   "Integer", 
+   0
+  ], 
+  [
+   "texture_OffsetLock", 
+   "Boolean", 
+   false
+  ], 
+  [
+   "texture_RealWorldOffsetX", 
+   "Distance", 
+   [
+    0.0, 
+    "autodesk.unit.unit:inches-1.0.1"
+   ]
+  ], 
+  [
+   "texture_RealWorldOffsetY", 
+   "Distance", 
+   [
+    0.0, 
+    "autodesk.unit.unit:inches-1.0.1"
+   ]
+  ], 
+  [
+   "texture_RealWorldScaleX", 
+   "Distance", 
+   [
+    12.0, 
+    "autodesk.unit.unit:inches-1.0.1"
+   ]
+  ], 
+  [
+   "texture_RealWorldScaleY", 
+   "Distance", 
+   [
+    12.0, 
+    "autodesk.unit.unit:inches-1.0.1"
+   ]
+  ], 
+  [
+   "texture_ScaleLock", 
+   "Boolean", 
+   true
+  ], 
+  [
+   "texture_UOffset", 
+   "Double1", 
+   0.0
+  ], 
+  [
+   "texture_URepeat", 
+   "Boolean", 
+   true
+  ], 
+  [
+   "texture_UScale", 
+   "Double1", 
+   1.0
+  ], 
+  [
+   "texture_UVScale", 
+   "Double1", 
+   1.0
+  ], 
+  [
+   "texture_VOffset", 
+   "Double1", 
+   0.0
+  ], 
+  [
+   "texture_VRepeat", 
+   "Boolean", 
+   true
+  ], 
+  [
+   "texture_VScale", 
+   "Double1", 
+   1.0
+  ], 
+  [
+   "texture_WAngle", 
+   "Double1", 
+   0.0
+  ], 
+  [
+   "thumbnail", 
+   "String", 
+   "lib:?Maps\\UnifiedBitmap\\UnifiedBitmap.png"
+  ], 
+  [
+   "unifiedbitmap_Bitmap", 
+   "String", 
+   ""
+  ], 
+  [
+   "unifiedbitmap_Bitmap_urn", 
+   "String", 
+   ""
+  ], 
+  [
+   "unifiedbitmap_Blur", 
+   "Double1", 
+   0.01
+  ], 
+  [
+   "unifiedbitmap_Blur_Offset", 
+   "Double1", 
+   0.0
+  ], 
+  [
+   "unifiedbitmap_Filtering", 
+   "Integer", 
+   0
+  ], 
+  [
+   "unifiedbitmap_Invert", 
+   "Boolean", 
+   false
+  ], 
+  [
+   "unifiedbitmap_RGBAmount", 
+   "Double1", 
+   1.0
+  ], 
+  [
+   "version", 
+   "Integer", 
+   4
+  ]
+ ]
+}
