@@ -1,0 +1,38 @@
+# PH-BATH2 — Candidate B — complete tile design option
+
+This specification is a design option for independent evaluation; model geometry, manufacturer compliance, procurement terms and owner approval must be verified.
+
+## Room program, material identity and selected fixtures
+
+**Shared room authority.** PH $2.8M bathtub bathroom; Sapphire/Sandstone maker-wet-listed, Duravit tub and Hansgrohe Matte White, NO PAN. [room drawing geometry](../../../geometry.json); [room selected fixtures](../../../plumbing.json). Two identical PH copies. Original quoted per-copy material-only $920.28; not an owner room cap or current bid. All 15%-inclusive source gross once: 89.7 wall; 40.2 LEVEL; 3.67 niche.
+
+**Material design.** Maintain maker-wet-listed glossy Sapphire 2x20 stacked tub walls and existing Sandstone 2x20 wet niche beside the selected white Duravit tub and Matte White Hansgrohe. Set Daltile Prime RL21 Dynamic Beige 12x24 Matte on the LEVEL bath floor, with a single floor color family coordinated in the Penthouse sample kit. This room has NO tiled shower PAN.
+
+## Source-specific wall, floor, drain and price control
+
+| Surface | Individual maker product / finish / application | Original per-copy gross or measured gap | Historical USD source vs actual alternate price | Exact test, cut, joint, edge and build gate |
+|---|---|---|---|---|
+| W1 tub back and W2/W3 returns | ELM Tones Sapphire 2x20 Glossy [exact maker](https://www.elmsurfaces.com/product/sapphire-tones) explicitly Wet Areas YES; 8.5-mm nominal ceramic | Source 89.7 gross SF/copy; W1 59.496x93 in, W2/W3 30.60x93 in; true valve/face reductions null | Source 8806221100941188 $623.42 at $6.95/SF dated 2026-09-03, current matching lot null | PASS wet tub walls; coordinate 2x20 nominal 9.75-in W1 ends, 5.30-in returns before joints and actual caliber, Matte White escutcheon cutouts and grout |
+| AT2 wet niche back/returns/sill | ELM Tones Sandstone 2x20 Glossy [exact maker](https://www.elmsurfaces.com/product/sandstone-tones) Wet Areas YES; same family ceramic format | 3.67 gross SF original niche, actual recessed face/back/returns/sill and Sapphire opening deduction null | Source 7218602365288324 $25.51 at $6.95/SF dated 2026-09-03; corrected net purchasing null | PASS niche manufacturer wet use; continuous waterproof back/positive sill fall, measured recess returns, exposed profile, reduce field face once |
+| LEVEL bath floor (tub room) | Daltile Prime Dynamic Beige RL21 **12x24 Matte** 3/8-in [Daltile Prime RL21 product](https://www.daltile.com/products/stone-look/prime/dynamic-beige); maker wet/level application yes, Target >=0.42 does not provide actual measured DCOF | 40.2 gross SF original floor including 15% (approx 35 SF source room); no separate PAN or added SF | Source 221234311266180 Cortar Grey Soft $271.35, NOT a Prime substitution quote; RL21 12x24 price, real carton and labor null | FAIL exact manufacturer SKU/finish raw wet DCOF result; individual RL21 maker 1/8-in grout recommendation, actual joint/caliber to be approved, wood threshold and tub apron perimeter to surveyed section |
+| Tub flange/threshold/sample scope | Selected Duravit 700332000000090 tub and Hansgrohe Matte White actual models per room plumbing; no drain change/no tiled pan | Other floor/trim LF, niche opening and tub height not surveyed; 15% original gross includes source cutting waste | Original three-line tile-only $920.28/unit remains dated basis; grout/membrane/cartons/current bid null | Flange termination/positive niche sill and movement joint against tub, selected fittings, final grout and signed sample HOLD |
+
+## Drawing-derived dimensional and waterproofing study
+
+**Nominal wall coordinates:** W1 59.496 in, W2/W3 30.60 in, height 93 in. The nominal W1 tub-back wall width 59.496 in versus selected 59-in Duravit 700332000000090 nominal tub length yields only 0.496 in total nominal difference BEFORE actual rough opening, tub flange/tiling/backer thickness and field tolerance. This is an exact documented dimensional FIT HOLD, neither proven fit nor proven clash; obtain the correct 1529 as-built rough opening, manufacturer's actual installation envelope, both end clearances, waterproof flange and finished tile section before approval. All are provisional dimensions in [room drawing geometry](../../../geometry.json). Verify real tile size/caliber, window and valve axes, exposed corners, movement joints, grout joint, sill/return waterproofing, edge profiles and drain location against a confirmed 1529 model. The existing wall-cut studies are not released installation elevations.
+
+**Execution and sample gate.** This palette preserves individually wet-authorized Sapphire and Sandstone while assigning a specifically maker-wet-level-suitable 12x24 RL21 floor. The selected RL21 LEVEL floor is a conditional, independently specified 12x24 product; manufacturer reported application suitability does not equal an exact wet laboratory test or an already purchased material. RL21 and any other PH hex mosaic sharing its color code are distinct SKUs and manufacturing origins, not an interchangeable case/lot. The tub needs waterproof flanges and no sloped tiled shower pan, regardless of nearby primary shower hardware. Floor raw test and current installed bid are required before acceptance.
+
+## Manufacturer evidence and separate release gates
+
+**Explicit individual gates:** Sapphire WET WALL and Sandstone wet NICHE individual maker PASS; RL21 12x24 LEVEL only Target >=0.42, exact wet numeric raw report FAIL; actual tub flange, niche netting, Chicago quote and signed samples HOLD; PAN N/A.
+
+Source geometry is from the 1529 handoff/drawing export, not an identity-confirmed native 1529 Revit model. Maker application permission, an exact SKU/finish measured wet DCOF result, and physical drain/waterproof assembly approval are different evidence types. Owner room caps, signed samples, actual current Chicago lots/ETA, landed and installed bids, carton-order quantities, exact joints and trim lengths remain null. No owner or purchase release is established.
+
+## Cost/quantity, owner/GC decision and market bounds
+
+**Source arithmetic.** Original $920.28/unit tile-only material source ×2 PH copies, preserving every gross 15% inclusion once; per-room installed quote, current actual order/carton quantities and alternate-vs-source dollar delta are **null**. Manufacturer carton figures where known are packaging facts only, not approved case orders. The existing Sandstone wet niche carries 3.67 gross SF in the original source; subtract its physical wall opening and add only verified recess back/returns/sill once. The selected Duravit tub has NO tiled shower pan.
+
+**Market discipline.** PH buyer target $2.8M, TX $2.7M, comparator $2.4M–$3.2M. [14 listings / nine distinct buildings](../../../../../research/comps/COMPS.md) are listing-copy amenities, not certified images or evidence of specific competitor tile patterns; four 405 W Armitage records represent one building. Actual owner room/material allowance and sample signoff **null**.
+
+**Required evidence before contract or PO.** Confirm manufacturer raw wet DCOF for each actual LEVEL/PAN SKU, exact wet-use finish and selected point/linear rough/waterproof assembly; obtain measured 1529 field plan, source-to-net takeoff with real carton coverage, owner-approved color/grout/edge and signed cost, current Chicago supplier stock/lead/freight and GC flood-test/shop drawings. [R13 RL21 individual-format audit](../../../../../research/products/R13_PH_RL21_MULTI_FORMAT_LEVEL_LINEAR_POINT_SOURCE_EVIDENCE.md) provides only the scoped multi-format desk evidence. No purchase or fixture substitution authorized.

@@ -1,0 +1,14 @@
+# Floor-plan geometry corrections — November 9, 2026
+
+- Reopened model resolved with fresh session 7f6f24a2-cc0d-4567-8beb-02467aba0ced, PID 31808; installed native release 3f41f299be45. External MCP authentication returned 401; existing in-process dispatcher used with native session guard and preserved operation receipts. No restart, close, save or synchronize.
+- Native commit 675dbe05-db95-43a9-8684-1ad3f6fa86ea placed existing TX WC 203A/B in correct PlanTopology circuits, preserving IDs/UniqueIDs; corrected copied upper limits. Names 310A to BATH 4 and 311A/B to WIC 4 corrected against A2.2. 310B already BATH 4. No physical walls, fixtures or furniture changed.
+- Initial placement preview failed height validation and rolled back; corrected upper level, previewed successfully, then committed once. All five records independently read back. Do not repeat the mutation.
+- Floor plan A2.2 identifies 310A/B as Bath 4, not 311A/B. Actual finish boundaries 5 ft x 7.020833 ft, 35.104167 SF. Adjacent 5 ft 5 in printed width pertains to closet, not bathroom clear width. Corrected runtime mapping without modifying frozen picks.json.
+- PDF libraries absent under Python 3.14: used bundled pypdf and Poppler. Browser/geometry dependencies isolated in task python_deps; no system package changes.
+- One simultaneous read-only dispatcher call received another export response. Serialized all subsequent native calls; reconciled all output operation IDs and reran independent tessellation checks. No concurrent model mutation occurred.
+- Old hardcoded export directory corrected before compiling. PH4 material clone corrupted an atlas Set; removed unnecessary clone and verified repeated room switches. Embedded-module browser error output is now captured/redacted rather than printed.
+- Corrected native plan cameras, removed obsolete PH4 311 focus control, and resolved both PH2 full-height tile-return previews against actual parallel native side-wall faces instead of stale perpendicular host metadata.
+- Legacy bed/nightstands inside source TX Bath4 A and view-specific FilledRegions retained as optional source artifacts; not deleted from Revit, not presented as normal bathroom contents. Bathroom towel rails remain visible.
+- Frozen product selections, quantities and programs preserved byte-for-byte. Native model repairs are committed but not saved/synchronized. Native source fidelity is distinct from selected-product installation certification.
+
+- November 9 pre-publication refresh found no Revit process and no bridge connection (read-only attempt 2c2b4131-eac6-426d-9a21-6a586be04dc3). Last successful live readback is 40a89212-c2b5-4914-9c49-0100c66587b9. No model write retried. Asked user to reopen for persistence verification; viewer retains last verified native snapshot.

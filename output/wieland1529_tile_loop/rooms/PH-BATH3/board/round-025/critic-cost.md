@@ -1,0 +1,47 @@
+# PH-BATH3 — round 025 independent COST/SELECTION critique (seat weight 0.20)
+
+Blind options **A** and **B** independently reviewed **2026-11-06 America/Chicago** with five separately evidenced 1–5 procurement criteria. **TUB versus WALK-IN is OWNER-UNSELECTED; the basin is also UNSELECTED.** Delta **DT062412 Chrome four-plane POINT** and a tile PAN exist *only if the owner chooses WALK-IN*. Under TUB, PAN is N/A, and this drain is not tub waste. Historical quantities cover **one** room instance; two instances are recorded only for the multiunit cost rollup. No weighted board totals.
+
+**Source basis:** [Elm same-job September 4, 2026 quoted Tones Sapphire/Copper/Sandstone Glossy 2x20 at **$6.95/SF**, 6.50 SF/box](../../../../inputs/TRADE_QUOTES.md), thread **1a068e80c92c255f**; exact Elm [Sapphire](https://www.elmsurfaces.com/product/sapphire-tones), [Copper](https://www.elmsurfaces.com/product/copper-tones), [Sandstone](https://www.elmsurfaces.com/product/sandstone-tones) each individually lists **Wet Areas WALL**, not FLOOR. Elm [Tones collection](https://www.elmsurfaces.com/product-collection/tones) advertises quick ship / U.S. stocked and typical 2–4 weeks, **not reserved 1529 stock**. F&D [Luxe Sand 101317949](https://www.flooranddecor.com/porcelain-tile/luxe-sand-matte-porcelain-tile-101317949.html) shows **$3.49/SF/$54.08 per 15.52-SF box**, and [Riviera Oat 101487775](https://www.flooranddecor.com/porcelain-tile/riviera-oat-matte-porcelain-tile-101487775.html) shows **$3.99/SF/$63.84 per 16-SF box** on the default **Kirkwood/Atlanta** storefront. Another sourced store snapshot showed **$4.39/SF/$70.24 Riviera box** ([documented comparison](../../../../research/products/R022_FD_LUXE_SAND_RIVIERA_OAT_24PLUS_LEVEL_AND_SHOWER_PAN.md)). Neither is a verified Chicago price.
+
+## Option A — Sapphire wet WALL / Sandstone wet NICHE / Luxe Sand 24x24 LEVEL; POINT PAN conditional
+
+| Independent cost criterion | Score | Cited evidence and reason |
+|---|---:|---|
+| 1. Exact same-job Elm costs | **5/5** | Quoted **$6.95/SF** covers **Sapphire WALL** and **Sandstone NICHE** as colors of the same 2x20 Tones line. Source gross per room **86.20 SF WALL +8.63 SF NICHE**, separately itemized; wet-wall permission independently listed for both colors. [Owner quote table](../../../../inputs/TRADE_QUOTES.md); [Sapphire](https://www.elmsurfaces.com/product/sapphire-tones); [Sandstone](https://www.elmsurfaces.com/product/sandstone-tones) |
+| 2. Floor and conditional pan retail | **5/5** | **Luxe Sand SKU101317949 $3.49/SF** at public non-Chicago storefront, lower than B; 24x24 **Bathroom Floor YES, Shower Floor YES, published wet DCOF >=0.42**. POINT PAN applicability is conditional on WALK-IN; no claim of approved four-plane cut plan. [F&D exact product page](https://www.flooranddecor.com/porcelain-tile/luxe-sand-matte-porcelain-tile-101317949.html); [B3 plumbing program ambiguity](../../plumbing.json) |
+| 3. Original SF / once-only 15% / screen | **4/5** | Original per-copy gross **86.20 WALL, 40.20 combined LEVEL/PAN, 8.63 NICHE**, **15% included once**; source-row SF extensions give **$599.09 + $140.30 + $59.98 = $799.37**. Historical original **$930.42**; its **125% = $1,163.03 (decimal half-up)** is merely a provisional comparison, **not an owner-allocated room budget**. [A proposed source ids](candidates/A.md); [historical waste caution](../../../../research/products/R025_PH_THREE_ROOM_QUOTED_ELM_FD_LFT_WET_GATE_EVIDENCE.md) |
+| 4. Branch-accurate 15% / 25% waste | **2/5** | With **TUB**, no PAN; with **WALK-IN**, new order basis must be **LEVEL net×1.15 + separate POINT PAN net×1.25**. Old 40.20 combined gross cannot be split or re-wasted, nor can a POINT drain be charged under TUB. Unverified 5.00-ft back wall / 2.33-ft returns and unspecified wet-floor boundaries prevent final yield. [Geometry](../../geometry.json); [A explicit branch](candidates/A.md); [owner LFT rule](../../../../state/OWNER_FEEDBACK.md) |
+| 5. Boxes / current delivery certainty | **2/5** | Illustrative **ceil(86.20/6.50)=14 Sapphire WALL boxes, ceil(8.63/6.50)=2 Sandstone NICHE boxes, ceil(40.20/15.52)=3 Luxe boxes** yield roughly **$885.04 boxed products**, using actual F&D **$54.08/box**; only old gross, not the branch-correct procurement quantity. No Chicago source warehouse count, shade lot, freight, tax, trim or 1529 delivery quote. [Elm Tones box/lead record](../../../../inputs/TRADE_QUOTES.md); [F&D box/store page](https://www.flooranddecor.com/porcelain-tile/luxe-sand-matte-porcelain-tile-101317949.html) |
+
+**Arithmetic mean A:** (5 + 5 + 4 + 2 + 2) / 5 = **3.6/5**.  
+**top_fix A:** Obtain the owner's PH-BATH3 TUB-versus-WALK-IN program decision so the separate POINT PAN quantity can be included or excluded before recalculating cartons.  
+**confidence A:** medium for product price; low for final quantity and branch-specific delivered cost.
+
+## Option B — Copper wet WALL / Sandstone wet NICHE / Riviera Oat 24x48 LEVEL; POINT PAN conditional
+
+| Independent cost criterion | Score | Cited evidence and reason |
+|---|---:|---|
+| 1. Exact same-job Elm costs | **5/5** | Quoted **Tones Copper and Sandstone $6.95/SF** for **86.20 SF WALL and 8.63 SF NICHE**, respectively. Both *individual* maker pages list **Wet Areas**, with no floor-use transfer and no separate niche area added. [Sep 4 trade quote](../../../../inputs/TRADE_QUOTES.md); [Copper](https://www.elmsurfaces.com/product/copper-tones); [Sandstone](https://www.elmsurfaces.com/product/sandstone-tones) |
+| 2. Floor and conditional pan retail | **4/5** | Riviera **SKU101487775** is **$3.99/SF** on currently selected out-of-market store, another snapshot **$4.39/SF**. Published **24x48 Shower Floor/Bathroom Floor and wet DCOF >=0.42** satisfy item-level use; $0.50–$0.90/SF more than A with no Chicago commercial quote. [F&D product](https://www.flooranddecor.com/porcelain-tile/riviera-oat-matte-porcelain-tile-101487775.html); [store variance evidence](../../../../research/products/R022_FD_LUXE_SAND_RIVIERA_OAT_24PLUS_LEVEL_AND_SHOWER_PAN.md) |
+| 3. Original SF / once-only 15% / screen | **4/5** | On exactly **86.20 +40.20 +8.63 already-15%-gross source SF**, product-only extension is **$819.47–$835.55** vs **$930.42 original**, an **+$20.10–$36.18** SF extension above A. **$1,163.03** (125% original) remains provisional, not an owner budget hard-gate PASS. [B source row/price lineage](candidates/B.md); [owner budget unallocated](../../../../state/OWNER_FEEDBACK.md) |
+| 4. Branch-accurate 15% / 25% waste | **2/5** | Owner has not decided TUB/WALK-IN; **TUB = PAN N/A**, only **WALK-IN = LEVEL net×1.15 + separate four-plane POINT PAN net×1.25**. The **23.58x47.28** Riviera format needs measured pan-cut yield but cannot be rejected just for installer-managed slope; no independent net PAN or opening offsets are receipted. [B source](candidates/B.md); [exact tile size](https://www.flooranddecor.com/porcelain-tile/riviera-oat-matte-porcelain-tile-101487775.html); [geometry](../../geometry.json) |
+| 5. Boxes / current delivery certainty | **2/5** | Historical gross illustration: **14 Copper WALL boxes +2 Sandstone NICHE boxes +ceil(40.20/16)=3 Riviera boxes** gives roughly **$914.32–$933.52 boxed product only**. Actual TUB or WALK-IN scope changes order; exact Chicago cartons, two-color lots, shipping, tax and installation accessories unpriced. [Elm actual Tones carton quote](../../../../inputs/TRADE_QUOTES.md); [F&D Riviera box/site](https://www.flooranddecor.com/porcelain-tile/riviera-oat-matte-porcelain-tile-101487775.html) |
+
+**Arithmetic mean B:** (5 + 4 + 4 + 2 + 2) / 5 = **3.4/5**.  
+**top_fix B:** Resolve the TUB-versus-WALK-IN choice before calculating 24x48 POINT PAN cuts and the branch's billable material quantity.  
+**confidence B:** medium for quoted/published unit rates; low for complete branch cost.
+
+## gate_flags
+
+| Gate | A | B |
+|---|---|---|
+| WALL | **PASS** — individually listed Elm Sapphire Tones wet WALL | **PASS** — individually listed Elm Copper Tones wet WALL |
+| NICHE | **PASS** — individually listed Sandstone wet NICHE/WALL | **PASS** — individually listed Sandstone wet NICHE/WALL |
+| LEVEL | **PASS** — Luxe 24x24 Bathroom Floor + wet DCOF >=0.42 | **PASS** — Riviera 24x48 Bathroom Floor + wet DCOF >=0.42 |
+| Conditional PAN | **UNKNOWN (owner branch)** — if WALK-IN, maker **PASS** for Luxe Shower Floor + DCOF; if TUB, **N/A** and Delta POINT excluded | **UNKNOWN (owner branch)** — if WALK-IN, maker **PASS** for Riviera Shower Floor + DCOF; if TUB, **N/A** and Delta POINT excluded |
+| BUDGET | **UNKNOWN** — owner allocation and fully delivered, branch-accurate cost absent; provisional 125% is not approval | **UNKNOWN** — same |
+| GEOMETRY | **UNKNOWN** — assumed 5.00×2.33-ft TUB envelope vs conditional WALK-IN; no native openings/POINT drain center or <3-in sliver proof | **UNKNOWN** — same, plus 24x48 cut yield |
+| CHICAGO STOCK | **UNKNOWN** — Tones U.S.-stocked collection claim and F&D Atlanta listing do not establish local lot/cartons | **UNKNOWN** — same |
+
+**Precision:** source extensions use full-precision SF×$/SF and round the aggregate once; **$930.42×1.25=$1,163.025 => $1,163.03 half-up**, never $1,163.02. The F&D page's **$54.08 per 15.52-SF Luxe box** controls the illustrative carton total despite a small discrepancy with **15.52×rounded $3.49=$54.16**. No hard-gate FAIL established by cost source, no owner branch/basin selection, no board weighting, outreach, contract or order.

@@ -1,0 +1,11 @@
+# R037 permitted-vendor shower CEILING case study: exact White Stack SKU — NOT YET QUALIFIED
+
+**2026-11-07; research-only, no new selection/approval.** Floor & Decor (owner-eligible seller) published an actual featured **shower arch continued to the shower ceiling** in its Grant & Little Real People, Real Projects case, identifying **White Stack Porcelain Mosaic** as the material. Source:
+https://www.flooranddecor.com/blogs/grant-little-warm-spaces-cool-people.html
+
+Exact own-item F&D product: **Festival White Stack Porcelain Mosaic SKU100966605**, nominal **11×12 sheet**, actual 11.20×11.80 in, 0.50×4-in porcelain chips, glossy pressed, 6mm, 0.92 SF per sheet, 10 sheets/box, **$6.49/piece at the selected Kirkwood Atlanta store** (dated selected-store public retail; NOT Chicago quote, matching lot or installed price).
+https://www.flooranddecor.com/porcelain-tile/white-stack-porcelain-mosaic-100966605.html
+
+The product page lists **Shower Walls YES**, **Shower Floors YES** and general Floor/Wall placement. The published project demonstrates an actual ceiling design, unlike a generic product mockup. But **neither source explicitly grants exact SKU/finish manufacturer's wet shower overhead CEILING application authorization or specifies a manufacturer-issued allowable overhead fastening/setting system**. The article is editorial marketing, not an exact technical installation warranty/permission. Shower-wall use and seller showcased precedent are not interchangeable with mandatory exact tile-product ceiling authorization. Do not declare pass. The tile is also a small-format mosaic sheet, which is a legitimate ceiling concept but not a large-format LEVEL/PAN substitution.
+
+**Decision: Primary exact wet CEILING hard gate remains BLOCKED** for PH-PRIMARY and TX-PRIMARY, consequently PH-WC and TX-WC remain inherited and blocked. The existing selected 48-in Brizo BNX factory-solid LINEAR grates, separate roughs, no niches and tiled overhead intent remain unchanged. Full qualification requires (1) exact manufacturer permission for installation above an actual wet shower and (2) compatible documented ceiling waterproof substrate, mortar/support/attachment system. No vendor contact, samples, owner change or procurement claimed.

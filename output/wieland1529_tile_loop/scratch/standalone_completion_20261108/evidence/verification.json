@@ -1,0 +1,1104 @@
+{
+  "status": "PASS",
+  "physicalInstancesChecked": 26,
+  "coverage": "All 26 full-room navigation/source/camera checks, then focused rechecks of the 10 affected A/B cases and final gallery/control checks.",
+  "browser": "Chrome / software WebGL",
+  "viewports": [
+    [
+      1480,
+      900
+    ],
+    [
+      390,
+      844
+    ]
+  ],
+  "standaloneOffline": true,
+  "externalRequests": [],
+  "runtimeErrors": [],
+  "frozenPicksUnchanged": true,
+  "nativeGeometrySourceUnchanged": true,
+  "cases": [
+    {
+      "room": "PH-PRIMARY/304A",
+      "wallIds": [
+        16428735,
+        16428738,
+        16428717,
+        16428636,
+        16428716,
+        16428799
+      ],
+      "source": {
+        "room": "PH-PRIMARY",
+        "instance": "304A",
+        "area": {
+          "wallFaceSF": 122.0562,
+          "drawingStudySF": 103.09,
+          "historicalSF": 103,
+          "differencePercent": 18.4,
+          "unresolved": true
+        },
+        "holds": [
+          "Room area and adjacency remain unresolved.",
+          "Basin, shower and linear-drain installation: UNLOCATED."
+        ],
+        "roomMembershipCertified": false,
+        "geometryBasis": "Saved native wall curves and hosted openings; room assignment inferred",
+        "nativeWallIds": [
+          16428636,
+          16428716,
+          16428717,
+          16428735,
+          16428738,
+          16428799
+        ],
+        "wallReceipt": "11fe1ae7-dd61-4a81-9b56-4bd3af4b8194",
+        "fixtureStudies": false,
+        "hasWC": false,
+        "liveRevitVerified": false,
+        "selectionDataChanged": false
+      },
+      "cameraFits": true
+    },
+    {
+      "room": "PH-PRIMARY/304B",
+      "wallIds": [
+        15957323,
+        15961954,
+        15957304,
+        15224601,
+        15957305,
+        15957326
+      ],
+      "source": {
+        "room": "PH-PRIMARY",
+        "instance": "304B",
+        "area": {
+          "wallFaceSF": 122.0562,
+          "drawingStudySF": 103.09,
+          "historicalSF": 103,
+          "differencePercent": 18.4,
+          "unresolved": true
+        },
+        "holds": [
+          "Room area and adjacency remain unresolved.",
+          "Basin, shower and linear-drain installation: UNLOCATED."
+        ],
+        "roomMembershipCertified": false,
+        "geometryBasis": "Saved native wall curves and hosted openings; room assignment inferred",
+        "nativeWallIds": [
+          15224601,
+          15957304,
+          15957305,
+          15957323,
+          15957326,
+          15961954
+        ],
+        "wallReceipt": "11fe1ae7-dd61-4a81-9b56-4bd3af4b8194",
+        "fixtureStudies": false,
+        "hasWC": false,
+        "liveRevitVerified": false,
+        "selectionDataChanged": false
+      },
+      "cameraFits": true
+    },
+    {
+      "room": "PH-BATH2/305A",
+      "wallIds": [
+        16428780,
+        16428596,
+        10808894,
+        12590818
+      ],
+      "source": {
+        "room": "PH-BATH2",
+        "instance": "305A",
+        "area": {
+          "wallFaceSF": 35.0992,
+          "drawingStudySF": 35,
+          "historicalSF": 35,
+          "differencePercent": 0.28,
+          "unresolved": false
+        },
+        "holds": [
+          "WC body and support are illustrative. Native insertion locators are shown; optional 3D studies are unverified.",
+          "Tub footprint is nominal and source-fitted; its body, depth and connections are illustrative."
+        ],
+        "roomMembershipCertified": false,
+        "geometryBasis": "Saved native wall curves and hosted openings; room assignment inferred",
+        "nativeWallIds": [
+          10808894,
+          12590818,
+          16428596,
+          16428780
+        ],
+        "wallReceipt": "11fe1ae7-dd61-4a81-9b56-4bd3af4b8194",
+        "fixtureStudies": false,
+        "hasWC": true,
+        "liveRevitVerified": false,
+        "selectionDataChanged": false
+      },
+      "cameraFits": true
+    },
+    {
+      "room": "PH-BATH2/305B",
+      "wallIds": [
+        15959004,
+        12590818,
+        10808894,
+        12380128
+      ],
+      "source": {
+        "room": "PH-BATH2",
+        "instance": "305B",
+        "area": {
+          "wallFaceSF": 35.0993,
+          "drawingStudySF": 35,
+          "historicalSF": 35,
+          "differencePercent": 0.28,
+          "unresolved": false
+        },
+        "holds": [
+          "WC body and support are illustrative. Native insertion locators are shown; optional 3D studies are unverified.",
+          "Tub footprint is nominal and source-fitted; its body, depth and connections are illustrative."
+        ],
+        "roomMembershipCertified": false,
+        "geometryBasis": "Saved native wall curves and hosted openings; room assignment inferred",
+        "nativeWallIds": [
+          10808894,
+          12380128,
+          12590818,
+          15959004
+        ],
+        "wallReceipt": "11fe1ae7-dd61-4a81-9b56-4bd3af4b8194",
+        "fixtureStudies": false,
+        "hasWC": true,
+        "liveRevitVerified": false,
+        "selectionDataChanged": false
+      },
+      "cameraFits": true
+    },
+    {
+      "room": "PH-BATH3/307A",
+      "wallIds": [
+        16428745,
+        16428762,
+        16428739,
+        10870528
+      ],
+      "source": {
+        "room": "PH-BATH3",
+        "instance": "307A",
+        "area": {
+          "wallFaceSF": 34.9271,
+          "drawingStudySF": 35,
+          "historicalSF": 35,
+          "differencePercent": -0.21,
+          "unresolved": false
+        },
+        "holds": [
+          "Tub versus walk-in: UNSELECTED. The plan symbol is a reference.",
+          "WC body and support are illustrative. Native insertion locators are shown; optional 3D studies are unverified."
+        ],
+        "roomMembershipCertified": false,
+        "geometryBasis": "Saved native wall curves and hosted openings; room assignment inferred",
+        "nativeWallIds": [
+          10870528,
+          16428739,
+          16428745,
+          16428762
+        ],
+        "wallReceipt": "11fe1ae7-dd61-4a81-9b56-4bd3af4b8194",
+        "fixtureStudies": false,
+        "hasWC": true,
+        "liveRevitVerified": false,
+        "selectionDataChanged": false
+      },
+      "cameraFits": true
+    },
+    {
+      "room": "PH-BATH3/307B",
+      "wallIds": [
+        15957350,
+        15957333,
+        10534415,
+        15957327
+      ],
+      "source": {
+        "room": "PH-BATH3",
+        "instance": "307B",
+        "area": {
+          "wallFaceSF": 34.9271,
+          "drawingStudySF": 35,
+          "historicalSF": 35,
+          "differencePercent": -0.21,
+          "unresolved": false
+        },
+        "holds": [
+          "Tub versus walk-in: UNSELECTED. The plan symbol is a reference.",
+          "WC body and support are illustrative. Native insertion locators are shown; optional 3D studies are unverified."
+        ],
+        "roomMembershipCertified": false,
+        "geometryBasis": "Saved native wall curves and hosted openings; room assignment inferred",
+        "nativeWallIds": [
+          10534415,
+          15957327,
+          15957333,
+          15957350
+        ],
+        "wallReceipt": "11fe1ae7-dd61-4a81-9b56-4bd3af4b8194",
+        "fixtureStudies": false,
+        "hasWC": true,
+        "liveRevitVerified": false,
+        "selectionDataChanged": false
+      },
+      "cameraFits": true
+    },
+    {
+      "room": "PH-BATH4/311A",
+      "wallIds": [
+        16428619,
+        16428805,
+        10870528,
+        16428613,
+        10534418,
+        16428814
+      ],
+      "source": {
+        "room": "PH-BATH4",
+        "instance": "311A",
+        "area": {
+          "wallFaceSF": 26.9792,
+          "drawingStudySF": 27.08,
+          "historicalSF": 35,
+          "differencePercent": -0.37,
+          "unresolved": false
+        },
+        "holds": [
+          "311 is the wet room; 310 is separate context. The historic material pool stays combined once."
+        ],
+        "roomMembershipCertified": false,
+        "geometryBasis": "Saved native wall curves and hosted openings; room assignment inferred",
+        "nativeWallIds": [
+          10870528,
+          16428613,
+          16428619,
+          16428805
+        ],
+        "wallReceipt": "11fe1ae7-dd61-4a81-9b56-4bd3af4b8194",
+        "fixtureStudies": false,
+        "hasWC": false,
+        "liveRevitVerified": false,
+        "selectionDataChanged": false
+      },
+      "cameraFits": true
+    },
+    {
+      "room": "PH-BATH4/311B",
+      "wallIds": [
+        16377761,
+        12459984,
+        12459931,
+        10534415,
+        10534418,
+        16377779
+      ],
+      "source": {
+        "room": "PH-BATH4",
+        "instance": "311B",
+        "area": {
+          "wallFaceSF": 26.9792,
+          "drawingStudySF": 27.08,
+          "historicalSF": 35,
+          "differencePercent": -0.37,
+          "unresolved": false
+        },
+        "holds": [
+          "311 is the wet room; 310 is separate context. The historic material pool stays combined once.",
+          "WC body and support are illustrative. Native insertion locators are shown; optional 3D studies are unverified."
+        ],
+        "roomMembershipCertified": false,
+        "geometryBasis": "Saved native wall curves and hosted openings; room assignment inferred",
+        "nativeWallIds": [
+          10534415,
+          12459931,
+          12459984,
+          16377761
+        ],
+        "wallReceipt": "11fe1ae7-dd61-4a81-9b56-4bd3af4b8194",
+        "fixtureStudies": false,
+        "hasWC": true,
+        "liveRevitVerified": false,
+        "selectionDataChanged": false
+      },
+      "cameraFits": true
+    },
+    {
+      "room": "PH-POWDER/405A",
+      "wallIds": [
+        12631904,
+        12384940,
+        12384944,
+        10542988
+      ],
+      "source": {
+        "room": "PH-POWDER",
+        "instance": "405A",
+        "area": {
+          "wallFaceSF": 27.9863,
+          "drawingStudySF": 27.95,
+          "historicalSF": 28,
+          "differencePercent": 0.13,
+          "unresolved": false
+        },
+        "holds": [
+          "Basin: UNLOCATED. Its illustrative footprint does not fit the native countertop bounds.",
+          "WC body and support are illustrative. Native insertion locators are shown; optional 3D studies are unverified."
+        ],
+        "roomMembershipCertified": false,
+        "geometryBasis": "Saved native wall curves and hosted openings; room assignment inferred",
+        "nativeWallIds": [
+          10542988,
+          12384940,
+          12384944,
+          12631904
+        ],
+        "wallReceipt": "11fe1ae7-dd61-4a81-9b56-4bd3af4b8194",
+        "fixtureStudies": false,
+        "hasWC": true,
+        "liveRevitVerified": false,
+        "selectionDataChanged": false
+      },
+      "cameraFits": true
+    },
+    {
+      "room": "PH-POWDER/405B",
+      "wallIds": [
+        10542988,
+        12613765,
+        12063200,
+        12631697
+      ],
+      "source": {
+        "room": "PH-POWDER",
+        "instance": "405B",
+        "area": {
+          "wallFaceSF": 27.5518,
+          "drawingStudySF": 27.95,
+          "historicalSF": 28,
+          "differencePercent": -1.42,
+          "unresolved": false
+        },
+        "holds": [
+          "Basin: UNLOCATED. Its illustrative footprint does not fit the native countertop bounds.",
+          "WC body and support are illustrative. Native insertion locators are shown; optional 3D studies are unverified."
+        ],
+        "roomMembershipCertified": false,
+        "geometryBasis": "Saved native wall curves and hosted openings; room assignment inferred",
+        "nativeWallIds": [
+          10542988,
+          12063200,
+          12613765,
+          12631697
+        ],
+        "wallReceipt": "11fe1ae7-dd61-4a81-9b56-4bd3af4b8194",
+        "fixtureStudies": false,
+        "hasWC": true,
+        "liveRevitVerified": false,
+        "selectionDataChanged": false
+      },
+      "cameraFits": true
+    },
+    {
+      "room": "PH-WC/314A",
+      "wallIds": [
+        16428800,
+        16428717,
+        16428738,
+        16428735
+      ],
+      "source": {
+        "room": "PH-WC",
+        "instance": "314A",
+        "area": {
+          "wallFaceSF": 14.6389,
+          "drawingStudySF": 14.64,
+          "historicalSF": 15,
+          "differencePercent": -0.01,
+          "unresolved": false
+        },
+        "holds": [
+          "WC body and support are illustrative. Native insertion locators are shown; optional 3D studies are unverified."
+        ],
+        "roomMembershipCertified": false,
+        "geometryBasis": "Saved native wall curves and hosted openings; room assignment inferred",
+        "nativeWallIds": [
+          16428717,
+          16428735,
+          16428738,
+          16428800
+        ],
+        "wallReceipt": "11fe1ae7-dd61-4a81-9b56-4bd3af4b8194",
+        "fixtureStudies": false,
+        "hasWC": true,
+        "liveRevitVerified": false,
+        "selectionDataChanged": false
+      },
+      "cameraFits": true
+    },
+    {
+      "room": "PH-WC/314B",
+      "wallIds": [
+        15957305,
+        15962034,
+        15957323,
+        15957326
+      ],
+      "source": {
+        "room": "PH-WC",
+        "instance": "314B",
+        "area": {
+          "wallFaceSF": 14.6389,
+          "drawingStudySF": 14.64,
+          "historicalSF": 15,
+          "differencePercent": -0.01,
+          "unresolved": false
+        },
+        "holds": [
+          "WC body and support are illustrative. Native insertion locators are shown; optional 3D studies are unverified."
+        ],
+        "roomMembershipCertified": false,
+        "geometryBasis": "Saved native wall curves and hosted openings; room assignment inferred",
+        "nativeWallIds": [
+          15957305,
+          15957323,
+          15957326,
+          15962034
+        ],
+        "wallReceipt": "11fe1ae7-dd61-4a81-9b56-4bd3af4b8194",
+        "fixtureStudies": false,
+        "hasWC": true,
+        "liveRevitVerified": false,
+        "selectionDataChanged": false
+      },
+      "cameraFits": true
+    },
+    {
+      "room": "TX-PRIMARY/202A",
+      "wallIds": [
+        16437698,
+        16437699,
+        16414456,
+        18037302,
+        16437654,
+        17993834
+      ],
+      "source": {
+        "room": "TX-PRIMARY",
+        "instance": "202A",
+        "area": {
+          "wallFaceSF": 104.4577,
+          "drawingStudySF": 87.02,
+          "historicalSF": 87,
+          "differencePercent": 20.04,
+          "unresolved": true
+        },
+        "holds": [
+          "Room area and adjacency remain unresolved.",
+          "Basin, shower and linear-drain installation: UNLOCATED."
+        ],
+        "roomMembershipCertified": false,
+        "geometryBasis": "Saved native wall curves and hosted openings; room assignment inferred",
+        "nativeWallIds": [
+          16414456,
+          16437654,
+          16437698,
+          16437699,
+          17993834,
+          18037302
+        ],
+        "wallReceipt": "11fe1ae7-dd61-4a81-9b56-4bd3af4b8194",
+        "fixtureStudies": false,
+        "hasWC": false,
+        "liveRevitVerified": false,
+        "selectionDataChanged": false
+      },
+      "cameraFits": true
+    },
+    {
+      "room": "TX-PRIMARY/202B",
+      "wallIds": [
+        18056006,
+        10812435,
+        18055998,
+        18055999,
+        18056073,
+        18055982
+      ],
+      "source": {
+        "room": "TX-PRIMARY",
+        "instance": "202B",
+        "area": {
+          "wallFaceSF": 104.4577,
+          "drawingStudySF": 87.02,
+          "historicalSF": 87,
+          "differencePercent": 20.04,
+          "unresolved": true
+        },
+        "holds": [
+          "Room area and adjacency remain unresolved.",
+          "Basin, shower and linear-drain installation: UNLOCATED."
+        ],
+        "roomMembershipCertified": false,
+        "geometryBasis": "Saved native wall curves and hosted openings; room assignment inferred",
+        "nativeWallIds": [
+          10812435,
+          18055982,
+          18055998,
+          18055999,
+          18056006,
+          18056073
+        ],
+        "wallReceipt": "11fe1ae7-dd61-4a81-9b56-4bd3af4b8194",
+        "fixtureStudies": false,
+        "hasWC": false,
+        "liveRevitVerified": false,
+        "selectionDataChanged": false
+      },
+      "cameraFits": true
+    },
+    {
+      "room": "TX-BATH2/205A",
+      "wallIds": [
+        16437696,
+        16437605,
+        16437598,
+        16437623
+      ],
+      "source": {
+        "room": "TX-BATH2",
+        "instance": "205A",
+        "area": {
+          "wallFaceSF": 37.5118,
+          "drawingStudySF": 38.35,
+          "historicalSF": 38,
+          "differencePercent": -2.19,
+          "unresolved": false
+        },
+        "holds": [
+          "WC body and support are illustrative. Native insertion locators are shown; optional 3D studies are unverified.",
+          "Tub footprint is nominal and source-fitted; its body, depth and connections are illustrative."
+        ],
+        "roomMembershipCertified": false,
+        "geometryBasis": "Saved native wall curves and hosted openings; room assignment inferred",
+        "nativeWallIds": [
+          16437598,
+          16437605,
+          16437623,
+          16437696
+        ],
+        "wallReceipt": "11fe1ae7-dd61-4a81-9b56-4bd3af4b8194",
+        "fixtureStudies": false,
+        "hasWC": true,
+        "liveRevitVerified": false,
+        "selectionDataChanged": false
+      },
+      "cameraFits": true
+    },
+    {
+      "room": "TX-BATH2/205B",
+      "wallIds": [
+        15501471,
+        12459747,
+        12459687,
+        12459729
+      ],
+      "source": {
+        "room": "TX-BATH2",
+        "instance": "205B",
+        "area": {
+          "wallFaceSF": 39.5094,
+          "drawingStudySF": 38.35,
+          "historicalSF": 38,
+          "differencePercent": 3.02,
+          "unresolved": false
+        },
+        "holds": [
+          "WC body and support are illustrative. Native insertion locators are shown; optional 3D studies are unverified.",
+          "Tub footprint is nominal and source-fitted; its body, depth and connections are illustrative."
+        ],
+        "roomMembershipCertified": false,
+        "geometryBasis": "Saved native wall curves and hosted openings; room assignment inferred",
+        "nativeWallIds": [
+          12459687,
+          12459729,
+          12459747,
+          15501471
+        ],
+        "wallReceipt": "11fe1ae7-dd61-4a81-9b56-4bd3af4b8194",
+        "fixtureStudies": false,
+        "hasWC": true,
+        "liveRevitVerified": false,
+        "selectionDataChanged": false
+      },
+      "cameraFits": true
+    },
+    {
+      "room": "TX-BATH3/207A",
+      "wallIds": [
+        10534418,
+        16437989,
+        16437623,
+        16437693
+      ],
+      "source": {
+        "room": "TX-BATH3",
+        "instance": "207A",
+        "area": {
+          "wallFaceSF": 36.9792,
+          "drawingStudySF": 36.98,
+          "historicalSF": 37,
+          "differencePercent": -0.0,
+          "unresolved": false
+        },
+        "holds": [
+          "Tub versus walk-in: UNSELECTED. The plan symbol is a reference.",
+          "WC body and support are illustrative. Native insertion locators are shown; optional 3D studies are unverified."
+        ],
+        "roomMembershipCertified": false,
+        "geometryBasis": "Saved native wall curves and hosted openings; room assignment inferred",
+        "nativeWallIds": [
+          10534418,
+          16437623,
+          16437693,
+          16437989
+        ],
+        "wallReceipt": "11fe1ae7-dd61-4a81-9b56-4bd3af4b8194",
+        "fixtureStudies": false,
+        "hasWC": true,
+        "liveRevitVerified": false,
+        "selectionDataChanged": false
+      },
+      "cameraFits": true
+    },
+    {
+      "room": "TX-BATH3/207B",
+      "wallIds": [
+        14358111,
+        12459747,
+        16437951,
+        10534418
+      ],
+      "source": {
+        "room": "TX-BATH3",
+        "instance": "207B",
+        "area": {
+          "wallFaceSF": 39.7526,
+          "drawingStudySF": 36.98,
+          "historicalSF": 37,
+          "differencePercent": 7.5,
+          "unresolved": false
+        },
+        "holds": [
+          "Tub versus walk-in: UNSELECTED. The plan symbol is a reference.",
+          "WC body and support are illustrative. Native insertion locators are shown; optional 3D studies are unverified."
+        ],
+        "roomMembershipCertified": false,
+        "geometryBasis": "Saved native wall curves and hosted openings; room assignment inferred",
+        "nativeWallIds": [
+          10534418,
+          12459747,
+          14358111,
+          16437951
+        ],
+        "wallReceipt": "11fe1ae7-dd61-4a81-9b56-4bd3af4b8194",
+        "fixtureStudies": false,
+        "hasWC": true,
+        "liveRevitVerified": false,
+        "selectionDataChanged": false
+      },
+      "cameraFits": true
+    },
+    {
+      "room": "TX-BATH4/007A",
+      "wallIds": [
+        18147992,
+        18148026,
+        17182810,
+        12030749,
+        16306739,
+        18147159
+      ],
+      "source": {
+        "room": "TX-BATH4",
+        "instance": "007A",
+        "area": {
+          "wallFaceSF": 32.2554,
+          "drawingStudySF": 38.89,
+          "historicalSF": 38.5,
+          "differencePercent": -17.06,
+          "unresolved": true
+        },
+        "holds": [
+          "Room area and adjacency remain unresolved.",
+          "Selected tub: 3D UNLOCATED. No installed tub is shown.",
+          "WC body and support are illustrative. Native insertion locators are shown; optional 3D studies are unverified."
+        ],
+        "roomMembershipCertified": false,
+        "geometryBasis": "Saved native wall curves and hosted openings; room assignment inferred",
+        "nativeWallIds": [
+          12030749,
+          16306739,
+          17182810,
+          18147159,
+          18147992,
+          18148026
+        ],
+        "wallReceipt": "11fe1ae7-dd61-4a81-9b56-4bd3af4b8194",
+        "fixtureStudies": false,
+        "hasWC": true,
+        "liveRevitVerified": false,
+        "selectionDataChanged": false
+      },
+      "cameraFits": true
+    },
+    {
+      "room": "TX-BATH4/007B",
+      "wallIds": [
+        18131310,
+        18131375,
+        18140004,
+        16275464,
+        16275500,
+        16072876
+      ],
+      "source": {
+        "room": "TX-BATH4",
+        "instance": "007B",
+        "area": {
+          "wallFaceSF": 35.8261,
+          "drawingStudySF": 38.89,
+          "historicalSF": 38.5,
+          "differencePercent": -7.88,
+          "unresolved": false
+        },
+        "holds": [
+          "Selected tub: 3D UNLOCATED. No installed tub is shown.",
+          "WC body and support are illustrative. Native insertion locators are shown; optional 3D studies are unverified."
+        ],
+        "roomMembershipCertified": false,
+        "geometryBasis": "Saved native wall curves and hosted openings; room assignment inferred",
+        "nativeWallIds": [
+          16072876,
+          16275464,
+          16275500,
+          18131310,
+          18131375,
+          18140004
+        ],
+        "wallReceipt": "11fe1ae7-dd61-4a81-9b56-4bd3af4b8194",
+        "fixtureStudies": false,
+        "hasWC": true,
+        "liveRevitVerified": false,
+        "selectionDataChanged": false
+      },
+      "cameraFits": true
+    },
+    {
+      "room": "TX-POWDER/102A",
+      "wallIds": [
+        15950802,
+        16414456,
+        15950781,
+        15950782
+      ],
+      "source": {
+        "room": "TX-POWDER",
+        "instance": "102A",
+        "area": {
+          "wallFaceSF": 21.0205,
+          "drawingStudySF": 22.17,
+          "historicalSF": 22.5,
+          "differencePercent": -5.18,
+          "unresolved": false
+        },
+        "holds": [
+          "Wall finish: NO PICK. Basin and faucet are not selected or located.",
+          "WC body and support are illustrative. Native insertion locators are shown; optional 3D studies are unverified."
+        ],
+        "roomMembershipCertified": false,
+        "geometryBasis": "Saved native wall curves and hosted openings; room assignment inferred",
+        "nativeWallIds": [
+          15950781,
+          15950782,
+          15950802,
+          16414456
+        ],
+        "wallReceipt": "11fe1ae7-dd61-4a81-9b56-4bd3af4b8194",
+        "fixtureStudies": false,
+        "hasWC": true,
+        "liveRevitVerified": false,
+        "selectionDataChanged": false
+      },
+      "cameraFits": true
+    },
+    {
+      "room": "TX-POWDER/102B",
+      "wallIds": [
+        15802223,
+        10812435,
+        12271819,
+        15802225
+      ],
+      "source": {
+        "room": "TX-POWDER",
+        "instance": "102B",
+        "area": {
+          "wallFaceSF": 21.0205,
+          "drawingStudySF": 22.17,
+          "historicalSF": 22.5,
+          "differencePercent": -5.18,
+          "unresolved": false
+        },
+        "holds": [
+          "Wall finish: NO PICK. Basin and faucet are not selected or located.",
+          "WC body and support are illustrative. Native insertion locators are shown; optional 3D studies are unverified."
+        ],
+        "roomMembershipCertified": false,
+        "geometryBasis": "Saved native wall curves and hosted openings; room assignment inferred",
+        "nativeWallIds": [
+          10812435,
+          12271819,
+          15802223,
+          15802225
+        ],
+        "wallReceipt": "11fe1ae7-dd61-4a81-9b56-4bd3af4b8194",
+        "fixtureStudies": false,
+        "hasWC": true,
+        "liveRevitVerified": false,
+        "selectionDataChanged": false
+      },
+      "cameraFits": true
+    },
+    {
+      "room": "TX-POWDER2/010A",
+      "wallIds": [
+        11221732,
+        18798773,
+        12635534,
+        12030727
+      ],
+      "source": {
+        "room": "TX-POWDER2",
+        "instance": "010A",
+        "area": {
+          "wallFaceSF": 26.5915,
+          "drawingStudySF": 26.69,
+          "historicalSF": 27,
+          "differencePercent": -0.37,
+          "unresolved": false
+        },
+        "holds": [
+          "Basin: UNSELECTED. Selected faucet installation: UNLOCATED.",
+          "WC body and support are illustrative. Native insertion locators are shown; optional 3D studies are unverified."
+        ],
+        "roomMembershipCertified": false,
+        "geometryBasis": "Saved native wall curves and hosted openings; room assignment inferred",
+        "nativeWallIds": [
+          11221732,
+          12030727,
+          12635534,
+          18798773
+        ],
+        "wallReceipt": "11fe1ae7-dd61-4a81-9b56-4bd3af4b8194",
+        "fixtureStudies": false,
+        "hasWC": true,
+        "liveRevitVerified": false,
+        "selectionDataChanged": false
+      },
+      "cameraFits": true
+    },
+    {
+      "room": "TX-POWDER2/010B",
+      "wallIds": [
+        12635534,
+        18798112,
+        11221731,
+        12636082
+      ],
+      "source": {
+        "room": "TX-POWDER2",
+        "instance": "010B",
+        "area": {
+          "wallFaceSF": 27.2856,
+          "drawingStudySF": 26.69,
+          "historicalSF": 27,
+          "differencePercent": 2.23,
+          "unresolved": false
+        },
+        "holds": [
+          "Basin: UNSELECTED. Selected faucet installation: UNLOCATED.",
+          "WC body and support are illustrative. Native insertion locators are shown; optional 3D studies are unverified."
+        ],
+        "roomMembershipCertified": false,
+        "geometryBasis": "Saved native wall curves and hosted openings; room assignment inferred",
+        "nativeWallIds": [
+          11221731,
+          12635534,
+          12636082,
+          18798112
+        ],
+        "wallReceipt": "11fe1ae7-dd61-4a81-9b56-4bd3af4b8194",
+        "fixtureStudies": false,
+        "hasWC": true,
+        "liveRevitVerified": false,
+        "selectionDataChanged": false
+      },
+      "cameraFits": true
+    },
+    {
+      "room": "TX-WC/203A",
+      "wallIds": [
+        16437699,
+        17993834,
+        16414456,
+        16437698
+      ],
+      "source": {
+        "room": "TX-WC",
+        "instance": "203A",
+        "area": {
+          "wallFaceSF": 13.783,
+          "drawingStudySF": 14,
+          "historicalSF": 14,
+          "differencePercent": -1.55,
+          "unresolved": false
+        },
+        "holds": [
+          "WC body and support are illustrative. Native insertion locators are shown; optional 3D studies are unverified."
+        ],
+        "roomMembershipCertified": false,
+        "geometryBasis": "Saved native wall curves and hosted openings; room assignment inferred",
+        "nativeWallIds": [
+          16414456,
+          16437698,
+          16437699,
+          17993834
+        ],
+        "wallReceipt": "11fe1ae7-dd61-4a81-9b56-4bd3af4b8194",
+        "fixtureStudies": false,
+        "hasWC": true,
+        "liveRevitVerified": false,
+        "selectionDataChanged": false
+      },
+      "cameraFits": true
+    },
+    {
+      "room": "TX-WC/203B",
+      "wallIds": [
+        18055998,
+        10812435,
+        18056073,
+        18055999
+      ],
+      "source": {
+        "room": "TX-WC",
+        "instance": "203B",
+        "area": {
+          "wallFaceSF": 13.783,
+          "drawingStudySF": 14,
+          "historicalSF": 14,
+          "differencePercent": -1.55,
+          "unresolved": false
+        },
+        "holds": [
+          "WC body and support are illustrative. Native insertion locators are shown; optional 3D studies are unverified."
+        ],
+        "roomMembershipCertified": false,
+        "geometryBasis": "Saved native wall curves and hosted openings; room assignment inferred",
+        "nativeWallIds": [
+          10812435,
+          18055998,
+          18055999,
+          18056073
+        ],
+        "wallReceipt": "11fe1ae7-dd61-4a81-9b56-4bd3af4b8194",
+        "fixtureStudies": false,
+        "hasWC": true,
+        "liveRevitVerified": false,
+        "selectionDataChanged": false
+      },
+      "cameraFits": true
+    }
+  ],
+  "interactions": [
+    "PH-WC/314A: WC study on/off",
+    "PH-WC/314B: WC study on/off",
+    "TX-BATH2/205A: WC study on/off",
+    "TX-BATH2/205B: WC study on/off",
+    "TX-WC/203A: WC study on/off",
+    "TX-WC/203B: WC study on/off",
+    "A/B change",
+    "section on/off",
+    "source lines on/off",
+    "material inspector",
+    "source notes",
+    "full / study / context",
+    "390px phone: focus / exit / camera menu / plan",
+    "offline gallery: 13 image captures / card navigation / cancel and restore"
+  ],
+  "resolvedInitialFindings": [
+    "R069 membership metadata was not a universal containment failure. Focused checks compared actual R068/R069 mesh XYZ bounds with source bounds.",
+    "Separate 310B WC source locator added using its native_fixture_evidence record; 310A WIC remains without placed fixtures.",
+    "WC plan locators restricted to Full Bathroom coordinate frame.",
+    "Phone focus exit remains pinned while other controls scroll."
+  ],
+  "limitations": [
+    "Saved source evidence only; live native bridge returned HTTP 401.",
+    "Room membership, area conflicts and unresolved fixture installations remain explicitly unverified.",
+    "Generic sanitary studies are not manufacturer geometry or construction acceptance."
+  ],
+  "publishedViewer": "E:\\Claude\\3D-Model-Workflow\\output\\wieland1529_tile_loop\\deliverables\\viewer3d\\index.html",
+  "evidenceFiles": [
+    "verification-initial.json",
+    "verification-focused.json",
+    "verification-release-controls.json"
+  ],
+  "finalSmoke": {
+    "status": "PASS",
+    "testedViewer": "H:\\Games\\3D Modeling Workflows\\3D Model Workflow\\output\\wieland1529-viewer-completion-20261108\\scratch\\final-standalone\\index.html",
+    "published": false,
+    "checks": [
+      "assembled JS syntax",
+      "offline load",
+      "WC study on/off",
+      "source lines native locator on/off",
+      "updated study/source labels",
+      "A/B switch",
+      "pinned phone Exit",
+      "no phone overflow",
+      "primary conflict retained"
+    ],
+    "errors": [],
+    "externalRequests": []
+  },
+  "publishedFileSmoke": {
+    "status": "PASS",
+    "testedViewer": "E:\\Claude\\3D-Model-Workflow\\output\\wieland1529_tile_loop\\deliverables\\viewer3d\\index.html",
+    "published": true,
+    "checks": [
+      "actual published file startup",
+      "offline load",
+      "WC study on/off",
+      "source lines native locator on/off",
+      "updated study/source labels",
+      "A/B switch",
+      "pinned phone Exit",
+      "no phone overflow",
+      "primary conflict retained"
+    ],
+    "errors": [],
+    "externalRequests": []
+  }
+}

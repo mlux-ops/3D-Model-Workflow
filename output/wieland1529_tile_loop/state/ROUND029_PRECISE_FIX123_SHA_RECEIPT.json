@@ -1,0 +1,68 @@
+{
+    "round":  29,
+    "date":  "2026-11-07",
+    "source_reviewer":  "state/ROUND029_INDEPENDENT_REVIEWER40_PREPARED_CLEARANCE.json",
+    "reviewer_verdict":  "PRECISE FIX",
+    "status":  "FIX_1_2_3_APPLIED_AWAITING_INDEPENDENT_REPEAT",
+    "owner_truth":  "TX-POWDER2 73072341 finish 341 Brushed Black Chrome verified in plumbing notes despite null structured finish; basin remains unselected",
+    "fixes":  [
+                  "F1 matrix reconciles verified SKU notes and structured null; retained card owner finish",
+                  "F2 PH-WC B Tower aligns PH-PRIMARY B; TX-WC B Chastain aligns TX-PRIMARY B; parent inherited only",
+                  "F3 TX-PRIMARY card LEVEL and LINEAR PAN B link exact Chastain 101130557 with Camelback price and local discontinued warning; 13 cards remain \u003c=450 words"
+              ],
+    "source_file_changes":  [
+                                {
+                                    "path":  "research/products/R029_NINE_ROOM_COORDINATED_OPTION_MATRIX_20261107.md",
+                                    "before":  {
+                                                   "path":  "research/products/R029_NINE_ROOM_COORDINATED_OPTION_MATRIX_20261107.md",
+                                                   "sha256":  "24685afc640b2c0bb698ddbf476cd4b5411f6c089b416bd479bad32746518a54",
+                                                   "bytes":  39164
+                                               },
+                                    "after":  {
+                                                  "path":  "research/products/R029_NINE_ROOM_COORDINATED_OPTION_MATRIX_20261107.md",
+                                                  "sha256":  "cc776bda3805e78cedb1219c107907ed285ab49bbe60ada437d91b967e95c905",
+                                                  "bytes":  39532
+                                              }
+                                },
+                                {
+                                    "path":  "deliverables/r029-13-owner-review-PROVISIONAL/TX-PRIMARY.md",
+                                    "before":  {
+                                                   "path":  "deliverables/r029-13-owner-review-PROVISIONAL/TX-PRIMARY.md",
+                                                   "sha256":  "70e60b25059292062f44625f7a6ddef29ffcf8603ea061f232660c79f8a574a2",
+                                                   "bytes":  4111
+                                               },
+                                    "after":  {
+                                                  "path":  "deliverables/r029-13-owner-review-PROVISIONAL/TX-PRIMARY.md",
+                                                  "sha256":  "528a61eba5d705fd01c06b5be2d28d88ecc5fc059fbe62a1dcbe3e1b674b00c6",
+                                                  "bytes":  4251
+                                              }
+                                }
+                            ],
+    "manifest_before":  [
+                            {
+                                "path":  "state/ROUND029_PREPARED_RESEARCH_SNAPSHOT_MANIFEST.json",
+                                "sha256":  "7c7ac8e98bc9fa958b2676e7b449bb28d79cbed202814f12eae3e74fbfa083e0",
+                                "bytes":  3207
+                            },
+                            {
+                                "path":  "state/ROUND029_13_PROVISIONAL_OWNER_CARDS_SNAPSHOT.json",
+                                "sha256":  "649bf4c87074479bb9009a0052066ecdb2c1c9ac40e7558626d2105be16ab9e2",
+                                "bytes":  6014
+                            }
+                        ],
+    "manifest_after":  [
+                           {
+                               "path":  "state/ROUND029_PREPARED_RESEARCH_SNAPSHOT_MANIFEST.json",
+                               "sha256":  "b9d874d9795833bb270cb21ca2665ad197858dd885e74a025cee653328e23a66",
+                               "bytes":  3207
+                           },
+                           {
+                               "path":  "state/ROUND029_13_PROVISIONAL_OWNER_CARDS_SNAPSHOT.json",
+                               "sha256":  "5d5a7bf2f80e0b6e2d5d5241774c636de0e0b85da475c31cb5999470dea087bd",
+                               "bytes":  6014
+                           }
+                       ],
+    "acceptance":  false,
+    "formal_pre_dispatch":  false,
+    "global_done":  false
+}

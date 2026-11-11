@@ -1,0 +1,138 @@
+{
+  "round": 27,
+  "phase": "1-SOURCE_FROZEN_PENDING_INDEPENDENT_PREDISPATCH_REVIEW",
+  "focus_rooms": [
+    "PH-BATH2",
+    "TX-BATH2",
+    "TX-BATH4"
+  ],
+  "neutral_candidates": {
+    "rooms/PH-BATH2/board/round-027/candidates/A.md": {
+      "sha256": "4881f9edbb55fa35a977af89900edfcc8f4941c62a469b5a736d23985492374e",
+      "bytes": 3749
+    },
+    "rooms/PH-BATH2/board/round-027/candidates/B.md": {
+      "sha256": "6499a20892c79753c31e84f1f9d02ac0b6e471070c55d3eeabc310db760ccf5e",
+      "bytes": 3638
+    },
+    "rooms/TX-BATH2/board/round-027/candidates/A.md": {
+      "sha256": "6e9c3b8bfc914c528fe9e783077eef216f16d9a7987b8848e4546e6f5ec81f46",
+      "bytes": 3564
+    },
+    "rooms/TX-BATH2/board/round-027/candidates/B.md": {
+      "sha256": "0ea69182eea2617d65b8531bd88e5f9290f80921cdf2d1cc8762f75b4d76154e",
+      "bytes": 3564
+    },
+    "rooms/TX-BATH4/board/round-027/candidates/A.md": {
+      "sha256": "58abaeca1a3d8d33545f366fa898f3a2b90f66cdf704ea4a7c8c93337b9717a3",
+      "bytes": 3703
+    },
+    "rooms/TX-BATH4/board/round-027/candidates/B.md": {
+      "sha256": "3711feec131f50fe9b1f94e0076522731dc1dc10144c8c055131c5b87034267f",
+      "bytes": 3718
+    }
+  },
+  "prime_only_private_keys": {
+    "rooms/PH-BATH2/board/round-027/_key.json": {
+      "sha256": "e1215bc924abde55a4e4fa698c301cfb7b09541db9081768a81092c83e065100",
+      "bytes": 183
+    },
+    "rooms/TX-BATH2/board/round-027/_key.json": {
+      "sha256": "1487152e8bd43628a9613749225b3cb6dd7401bbd31d08b7712671c30b54f0af",
+      "bytes": 183
+    },
+    "rooms/TX-BATH4/board/round-027/_key.json": {
+      "sha256": "28b5356b4318205c82cb0cce2ec8f76f214bf6c4c218384c3f03be73776ce11d",
+      "bytes": 183
+    }
+  },
+  "signed_parents": {
+    "state/ROUND027_THREE_DURAVIT_TUB_BATHS_PREPARED_NOT_SUBMITTED.json": {
+      "sha256": "ec25d1a70aaae12b8fe213c4f22da7156571bda5b25e6a5b3218c14ef06ffac7",
+      "bytes": 3856
+    },
+    "state/ROUND027_TUB_PREPARED_FIX1_SOURCE_SCOPE_SUPERSEDING_ONE_FILE.json": {
+      "sha256": "2ef014c12d43dcf16947f4110ddccb51368e9c8069ef2ab17f664370cca3d945",
+      "bytes": 1059
+    },
+    "state/ROUND024_AUTHENTIC_FOUR_SEAT_COLLECTION_SCORED_NO_CHAMPIONS.json": {
+      "sha256": "b69c17171493327bc1becfa8b8b81cac82a43ebb2940ce6fe23b7ff701637f43",
+      "bytes": 9498
+    },
+    "state/ROUND026_AUTHENTIC_FOUR_SEAT_COLLECTION_SCORED_NO_CHAMPIONS.json": {
+      "sha256": "69fb4d28db00850601f5481a5512b016bf7edcd2194d6eefdf46fd6e0650f294",
+      "bytes": 10973
+    },
+    "state/ROUND025_SCOPEFIX1_INDEPENDENT_POSTSCORE_REVIEWER30_CLEARANCE.json": {
+      "sha256": "cb97b1a042f63b0688760737d47a6765eb4303a5fbde5fccfdbf67e7ffaf363d",
+      "bytes": 2698
+    }
+  },
+  "neutralization_audit": {
+    "rooms/PH-BATH2/board/round-027/candidates/A.md": {
+      "source_prepared": "rooms/PH-BATH2/board/round-027/prepared/candidates/A.md",
+      "prepared_fingerprint_after_fix1": {
+        "sha256": "23809234ea6996db85c495ea7984e7c42343f65a38384f6ea1528461a0d14dd4",
+        "bytes": 5765
+      },
+      "neutralization": "Exact item schedule and all owner/price/geometry knowns retained without prior scores/outcomes"
+    },
+    "rooms/PH-BATH2/board/round-027/candidates/B.md": {
+      "source_prepared": "rooms/PH-BATH2/board/round-027/prepared/candidates/B.md",
+      "prepared_fingerprint_after_fix1": {
+        "sha256": "ca1b9e8f2c83572656278768403304a0e052099e083f6286f6268c72f0399d09",
+        "bytes": 5526
+      },
+      "neutralization": "Exact item schedule and all owner/price/geometry knowns retained without prior scores/outcomes"
+    },
+    "rooms/TX-BATH2/board/round-027/candidates/A.md": {
+      "source_prepared": "rooms/TX-BATH2/board/round-027/prepared/candidates/A.md",
+      "prepared_fingerprint_after_fix1": {
+        "sha256": "8a220b1e5c941a3285b435ab32b67255418559a078f635770bd7a6103f8a6934",
+        "bytes": 4556
+      },
+      "neutralization": "Exact item schedule and all owner/price/geometry knowns retained without prior scores/outcomes"
+    },
+    "rooms/TX-BATH2/board/round-027/candidates/B.md": {
+      "source_prepared": "rooms/TX-BATH2/board/round-027/prepared/candidates/B.md",
+      "prepared_fingerprint_after_fix1": {
+        "sha256": "0a9c322e1d9570cbe452de198d53495c947e40c02ba3f3d9c9aceb96f5062f59",
+        "bytes": 4439
+      },
+      "neutralization": "Exact item schedule and all owner/price/geometry knowns retained without prior scores/outcomes"
+    },
+    "rooms/TX-BATH4/board/round-027/candidates/A.md": {
+      "source_prepared": "rooms/TX-BATH4/board/round-027/prepared/candidates/A.md",
+      "prepared_fingerprint_after_fix1": {
+        "sha256": "ce8fea3681cbdd59fa8898030a1db62855094c95cc39d42719688170859314f0",
+        "bytes": 5193
+      },
+      "neutralization": "Exact item schedule and all owner/price/geometry knowns retained without prior scores/outcomes"
+    },
+    "rooms/TX-BATH4/board/round-027/candidates/B.md": {
+      "source_prepared": "rooms/TX-BATH4/board/round-027/prepared/candidates/B.md",
+      "prepared_fingerprint_after_fix1": {
+        "sha256": "a4e9eab87adb2aedb2573a2bb12cb6dd60f6ba42d69564a162ba8a1146f8de70",
+        "bytes": 4997
+      },
+      "neutralization": "Exact item schedule and all owner/price/geometry knowns retained without prior scores/outcomes"
+    }
+  },
+  "vendors": [
+    "Elm Surfaces",
+    "MSI Surfaces",
+    "Porcelanosa",
+    "Floor & Decor"
+  ],
+  "all_three_Duravit_TUB_no_tiled_PAN": true,
+  "original_four_unit_material": 23572.44,
+  "original_gross_waste_once_pct": 15,
+  "native_room_geometry_and_Chicago_delivery": "UNKNOWN",
+  "owner_budget_125_percent": "PROVISIONAL",
+  "independent_reviewer": null,
+  "critic_dispatch": null,
+  "weighted_scores": null,
+  "champions_changed": false,
+  "owner_approval": false,
+  "global_DONE": false
+}

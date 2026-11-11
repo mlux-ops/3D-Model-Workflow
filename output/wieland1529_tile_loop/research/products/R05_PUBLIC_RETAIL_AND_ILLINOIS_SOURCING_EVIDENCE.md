@@ -1,0 +1,29 @@
+# R05 — exact-SKU retail price observations, Illinois access and packaging variance
+
+**Observation date:** 2026-11-06. Public listings only. **No checkout, vendor contact, postal-code quote, purchase, price hold, stock confirmation, owner approval or buyer selection.** These are **third-party asking prices** and *not* a confirmed Chicago landed bid, SHB project rate, budget allowance or inventory. Shop floor-space and sample availability are not verified. Keep historical 2026-09-03 ELM project source and every frozen Round004 comparison unchanged.
+
+## Exact product/source audit
+
+| Product/source | Explicit public asking price | Identified selling unit and coverage | Source type; limitations |
+|---|---:|---|---|
+| Glazzio Harmonic Rondo **HNC6615** 12×24 DCOF Matte, [Floor Signature, Troy IL](https://shop.floorsignature.com/products/glazzio-harmonic-12x24-rondo-12x24-dcof-matte-hnc6615) | **$32.76 / box**; display **$3.38 / SF** | **9.69 SF per box**, 5 pieces; displayed orderable, but manufacturer quantity/availability and delivery timing explicitly checked at later order review | Public online price for one seller in **Troy, Illinois** (not Chicago); ZIP-dependent freight/liftgate unknown, tax, stock and current account terms null. Display asking price is not a two-unit volume or installed quote. |
+| Same **HNC6615**, [Great Britain Tile online catalog](https://www.gbtilecollections.com/zio-harmonic-rondo-12-x-24-dcof-matte-porcelain-tile.html) | **$38.38 / box** | **9.69 SF per box**, 5 pieces | Independent online retail asking price; website says a *two-box minimum* and generic 1–2-business-day dispatch. Neither confirms actual Chicago receipt/lot, project fulfillment, or unchanged checkout price. **Do not infer the two seller prices are the same contract.** |
+| Glazzio Harmonic Rondo **HNC6715** 2×2 hex DCOF Matte, [Floor Signature, Troy IL](https://shop.floorsignature.com/products/glazzio-harmonic-hex-mosaic-rondo-dcof-matte-hex-mosaic-hnc6715) | **$13.57 / sheet** | Seller uses **approximately 1.00 SF per sheet**, sells *individual sheets*, says 5 sheets/factory carton | Public online sheet asking price only. Distinguish seller's nominal 1-SF sheet from maker's **4.85 SF/5-sheet box** calibrated coverage. Freight calculator shows separate destination-dependent delivery, not a Chicago supplier confirmation. |
+| **HNC6615 maker product detail**, [Glazzio Surfaces](https://glazziosurfaces.com/products/harmonic-rondo-12x24-matte-porcelain-tile) | Manufacturer MSRP/project quote **null** | **9.69 SF/box**, 5 units, 8.25-mm, recommended 2–3-mm grout joint and <=30% offset | Manufacturer reports **DCOF WET >0.50**; published lower bound, not an exact measured laboratory point/certificate. |
+| **HNC6715 maker product detail**, [Glazzio Surfaces](https://glazziosurfaces.com/products/harmonic-rondo-2x2-matte-hex-mosaic) | Manufacturer MSRP/project quote **null** | **4.85 SF/box**, five sheets x **0.97 SF calibrated**; 8.25-mm, shower-floor YES | Manufacturer **DCOF WET >0.50** reported; signed lab numeric point/method unknown. Older exact [HNC6715 legacy maker listing](https://www.glazziotiles.com/default.aspx?itemcode=HNC6715&page=item+detail) instead states **DCOF >0.42** and approximately 1 SF/sheet. Preserve both versioned declarations and resolve before release. |
+
+**Local sourcing conclusion:** an *Illinois* pickup point in Troy is verified from the seller's web page, but **NO Chicago-area distributor/stocking depth, specific lot, shipping charge, guaranteed ETA, contractor rate or local availability** has been established for either exact SKU. Glazzio's public [dealer locator](https://www.glazziotiles.com/content.aspx?file=customerpages/locate_dealers.htm) requires submitting a form; **none was submitted**. No claimed Chicago stock.
+
+## Non-orderable PH Bath4 packaging / retail sensitivity illustration
+
+This exercise is conditional on the **unresolved** 35-versus-27-SF area and an entirely *hypothetical* **25.6-SF level / 14.6-SF pan gross split**, which replaces rather than adds to the carried **40.2 gross SF** floor source (including original 15% waste):
+
+| Exact SKU and hypothetical scope | Maker carton formula | Illustrated retail material subtotal (Floor Signature) |
+|---|---|---:|
+| HNC6615 25.6 SF level | ceil(25.6 / 9.69) = **3 boxes** (29.07-SF coverage) | **3 × $32.76 = $98.28** |
+| HNC6715 14.6 SF pan | ceil(14.6 / 4.85) = **4 factory cartons** = 20 sheets (19.40-SF maker coverage) | **20 × $13.57 = $271.40** |
+| **Combined illustrated material** | Gross requested 40.2 SF, maker carton coverage total 48.47 SF | **$369.68 per room copy**, *not a quote or purchase quantity* |
+
+**Important:** Floor Signature's individual-sheet pricing is not evidence of a guaranteed *4.85-SF manufacturer-box sale* or of unbroken box packing; the 4-box equivalence assumes 20 individual sheets are available at that online public price. **Do not** add another 15% waste to 25.6 or 14.6, apply the scenario to a second WC, or substitute the arithmetic for a measured four-plane pan. Freight, tax, order minimum, mixed-SKU delivery, carton breakage, all trims, grout, membrane, labor, contractor pricing and exact shade remain **null**. PH4 historical $271.35 Charcoal Soft floor line is a different manufacturer/spec and not a comparable current approved bid. No $98.33 price *increase* can be declared as a project variance without signed equivalent-scope prices and installation.
+
+**Strict technical note:** manufacturer-reported `>0.50` vs legacy `>0.42` SKU-specific inequalities each exceed the 0.42 board numeric threshold, but neither supplies the *raw exact measured point, lab method/date or certificate* requested in this project's stricter review. R05 cannot backfill or pass the closed Round004 candidates, and owner-selected sample appearance must still be established.

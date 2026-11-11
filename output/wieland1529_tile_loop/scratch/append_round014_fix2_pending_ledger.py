@@ -1,0 +1,23 @@
+"""One-time auditable independent R014 shared research and R16 FIX2 pending Reviewer."""
+from pathlib import Path
+import hashlib,json
+R=Path(__file__).resolve().parents[1]
+p=R/'state/ROUND014_R16_REVIEWER_FIX2.json'
+c=json.loads(p.read_text(encoding='utf-8'))
+s=R/'state/ROUND014_SUBMISSION.json'
+m=R/'deliverables/integrated-r16/MANIFEST.json'
+assert c['source_submission_before_after']['new']['sha256']==hashlib.sha256(s.read_bytes()).hexdigest()
+assert c['r16_manifest_before_after']['new']['sha256']==hashlib.sha256(m.read_bytes()).hexdigest()
+assert c['R014_critic_files']==0 and c['all_critic_scores'] is None and c['weighted_scoring'] is None
+assert not c['owner_approval'] and not c['procurement_release']
+ledger=R/'state/LEDGER.md'
+header='## R014 independent pre-dispatch reviewer exact FIX2 and R16 signed program-specific gates — 2026-11-06'
+text=ledger.read_text(encoding='utf-8')
+assert header not in text
+notes=[header,
+'- Standing non-Pro Reviewer worker-14 independently returned second precise R014 FIX: the common critic-readable maker research (not the neutral candidate packets) revealed historical/revised identities through labels such as "Revised PH" Sapphire versus "Original PH" Opal. The Reviewer independently verified prior source FIX1 corrected all four candidate maker/role defects and confirmed all four SHA/bytes, 44 links, 6 original dated source row IDs/costs, private role keys, selected Delta/Brizo 4in SQUARE POINT, owner tub/walk-in and PH basin UNSELECTED, 0 critics, R014 scores NULL. Reviewer also independently found R16 book incorrectly grouped TX2 CHROME and TX4 MATTE WHITE, and blanket raw floor/PAN gates on three REAL TUB rooms, DRY powder/wood floors, inherited WCs and owner conditional Bath3. Three R16 27-row tub-floor carton formulas mistakenly used generic if-walk-in/linear branch.',
+'- Executed one-time scratch/correct_round014_r16_reviewer_fix2.py PASS. Shared maker research now lists individual Sapphire/Sandstone/Emerald/Opal wet permissions and RL21/Glazzio objective product specifications with NO historical/revised/earlier challenger role labels. All original dated 2026-09-03 source lines remain as COMMON evidence. Re-signed state/ROUND014_SUBMISSION.json with maker research fingerprint, current SHA '+hashlib.sha256(s.read_bytes()).hexdigest()+'; all four neutral candidate original SHA/bytes unchanged, private keys unchanged, zero critic dispatch, all_critic_scores:null. Exact old/new maker research, submission, R16 book, source CSV and MANIFEST SHA recorded in state/ROUND014_R16_REVIEWER_FIX2.json; no original R013 or older signed packages touched.',
+'- R16 corrected all 13 GOOD/BETTER/BEST BEST release gate columns by exact program: PH2/TX2/TX4 selected Duravit tub requires LEVEL raw numerical wet DCOF ONLY, no tiled PAN; three dry powder vanity/wood floors require real faucet/basin/edge/finish but wet shower LEVEL/PAN N/A; PH/TX shared WCs inherit corresponding Primary LEVEL test and have NO independent PAN/order; PH3/TX3 owner TUB or WALK-IN undetermined, conditional raw POINT PAN and square-drain rough only IF owner authorizes WALK-IN; PH/TX primaries/PH4 actual selected showers require separate raw LEVEL and PAN tests. TX2 Hansgrohe CHROME + owner basin unselected; TX4 Hansgrohe MATTE WHITE and no TX2 basin issue. Exactly three R16 27-source-row actual TUB-floor carton formulas now LEVEL-only; $23,572.44 historic four-unit tile material with original single 15% gross factor, 2 unpriced excluded Primary niche rows NO ORDER, 25 W cuts unchanged, all owner/GC releases FALSE. Re-signed two affected R16 outputs and manifest, other two output SHA unchanged; current R16 MANIFEST SHA '+hashlib.sha256(m.read_bytes()).hexdigest()+'. Independent read-only QA PASS all 4 neutral SHA, 32 relative links, 4 R16 signed files, 27 source rows, 25 cuts, 3 tub-only formulas, no release.',
+'- Corrected same-round <=4000-character five-section ROUND REPORT sent to existing independent Reviewer worker-14; its REAL verdict on R014 source FIX2/R16 remains PENDING. No independent specialists woken or given private mappings; all R014 score fields NULL. Public manufacturer pages independently confirm local ELM Chicago and Daltile design/trade channels (research/procurement/R16_PUBLIC_CHICAGO_MAKER_CHANNELS_NO_QUOTE_20261106.md), but exact SKU lot/stock/price/ETA/current SHB installed quote NULL; no vendor contacted. Overall 13-room owner/GC objective OPEN and model 1529 not certified (native 1527).']
+ledger.write_text(text+'\n\n'+'\n'.join(notes)+'\n',encoding='utf-8')
+print('PASS substantial R014 precise source FIX2 and R16 program gates ledger appended; independent verdict pending')

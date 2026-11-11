@@ -1,0 +1,29 @@
+{
+ "schema_version": 1,
+ "operation_id": "7fffbc6c-93e4-489d-aaf9-049d6b89a15c",
+ "status": "failed",
+ "request": {
+  "schema_version": 1,
+  "operation_id": "7fffbc6c-93e4-489d-aaf9-049d6b89a15c",
+  "operation": "elements.query",
+  "document": {
+   "session_id": "2978497e-b41f-497f-81f3-7be82e0e133d"
+  },
+  "arguments": {
+   "category": "OST_Rooms",
+   "name_contains": "BATH",
+   "limit": 500
+  }
+ },
+ "result": null,
+ "error": {
+  "code": "InvalidOperationException",
+  "message": "The rotation property is not supported for the Element related to this LocationPoint.",
+  "details": null
+ },
+ "cancel_requested": false,
+ "created_utc": "2026-11-07T23:59:12.4353213Z",
+ "finished_utc": "2026-11-07T23:59:12.4892299Z",
+ "elapsed_ms": 46.6865,
+ "transaction_status": "not_started"
+}

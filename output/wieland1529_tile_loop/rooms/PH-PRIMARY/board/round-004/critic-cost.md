@@ -1,0 +1,50 @@
+# PH-PRIMARY — Round 004 independent procurement critique (critic-cost, seat weight 0.20)
+
+**Blind basis — 2026-11-06.** Review restricted to candidate A and C, this room's geometry/plumbing, board/owner feedback and permitted shared product/manufacturer evidence. Two PH units. The 1527-named model has not been verified as 1529; 5.854-ft and 4.646-ft shower walls, 9.25-ft tile height, 103-SF prior bath floor and 5.854 × 4.646-ft shower footprint are **drawing-derived**, not measured. Selected shower drain: Brizo **48-in linear BT0734816-BNX**, rough **BR73480** (room plumbing.json), orientation/pitch unknown. **NO primary niche:** old 7.41-SF unpriced line is out of scope. All quoted SF **already include 15% waste**. The owner feedback gives PH sales target **$2.8M**, but **room tile budget = null**; no 125% fail or unearned pass can be declared. This critique scores procurement evidence, not overall board outcome.
+
+## Candidate A — flat Bone wet walls + PF07 12×24 level floor and 2×2 mosaic pan
+
+| Exactly five procurement criteria | Score (1–5) | Independent, source-grounded reason |
+|---|---:|---|
+| **1. Historic quoted economics** | **3** | PH ELM 2026-09-03 wall/ceiling row **4302621473570692** carries 143.0 SF × $8.14/SF = **$1,164.02/unit** flat-Bone rate reference; floor row **2715002737917828** actually carries **135.6 SF × $7.82/SF = $1,060.39 blended**. These are not quotes for PF07 (candidate A lines 9–12; [ELM flat Bone](https://www.elmsurfaces.com/product/cortar-bone)). |
+| **2. Source quantities + 15% already included** | **4** | **143.0 SF** walls plus shower ceiling, **104.32 SF** level + WC and **31.28 SF** pan add to **135.6 SF** floor gross with 15% included, not new pan SF. Live measured dimensions, drain pitch and cartons are still **null** (candidate A lines 9–15; geometry.json). |
+| **3. True dated quote vs illustrative alternative** | **2** | $6.27/SF is a **public third-party retail** PF07 12×24 observation, not a project quote; PF07 2×2 unit rate, box coverage and supplier quote are **null** ([PF07 12×24 evidence](../../../../research/products/daltile-portfolio-cream-pf07-12x24-matte.md), [PF07 mosaic evidence](../../../../research/products/daltile-portfolio-cream-pf07-2x2-matte.md)). |
+| **4. Stock/lead/current procurement** | **2** | ELM Cortar's **10–12 weeks / 50% deposit / 300-SF minimum** are historic supplier terms, not actual Chicago inventory/ETA; Daltile has local facilities but **neither PF07 format's exact local stock/lead is confirmed** (candidate A line 19; [Daltile locations](https://locations.daltile.com/il/chicago/)). |
+| **5. Viable alternative against owner cap UNKNOWN** | **2** | Wet-listed flat Bone removes Reed wet risk, and the small pan format separates level from slope, but **no completed two-format PF07 quote, approved floor DCOF or owner room cap** permits a reliable cost-to-cap decision (candidate A lines 11–19; owner feedback line 11). |
+
+**Overall cost seat_score: 2.6 / 5.0** (arithmetic mean: 3+4+2+2+2 = 13/5). **confidence: low** for complete substituted cost; **medium** for historic rate/quantity traceability.
+
+**Lineage and extension:** full 143.0-SF flat Bone historical rate reference **$1,164.02/unit**; current ELM **single blended** floor allowance **$1,060.39/unit**, a **historic two-line reference of $2,224.41/unit**, not this candidate's new price. Source's split **104.32×$8.14 + 31.28×$6.75 = $1,060.3048 unrounded / $1,060.30 rounded**, whereas the real ELM **135.6×$7.82 = $1,060.39**; the **$0.09 difference** demonstrates that component rates are **unverified allocations, NOT independently confirmed quoted lines**. Never move either old Bone amount to PF07. PF07 field **104.32×$6.27 = $654.09** by public area rate only; at its reported **17.02 SF/$106.72 carton**, **7 cartons per unit / 119.14 SF / $747.04** is a possible public-retail packaging illustration. The PF07 2×2 pan **price = null**, so **new tile material total = null**. All grout, edge, setting, waterproofing, freight, sales tax, ceiling labor and attic stock are **null**; no waste multiplier again.
+
+**top_fix:** Obtain an **exact two-unit itemized supplier package** for Bone flat 143.0-SF field plus **both PF07 formats**, with certified measured wet DCOF by SKU, 48-in Brizo linear-drain/pan details, case rounding, Chicago arrival and installed accessory allowances.
+
+**gate_flags:**
+- **FAIL — LEVEL_BATH_FLOOR_DCOF:** Daltile [Cream PF07](https://www.daltile.com/products/concrete-look/portfolio/cream) says **Wet & Level Interior Floors yes / Target DCOF Wet ≥0.42**, but **measured exact PF07 12×24 Matte wet DCOF = null**; maker's target is not the measured SKU test. Board gate 2 fails.
+- **FAIL — SHOWER_PAN_DCOF (separate):** PF07 **2×2 Matte mosaic** has a maker *Shower Floors* application and **Target ≥0.42**, but **exact measured mosaic SKU wet DCOF = null**; board gate 2 fails independently ([PF07 mosaic](../../../../research/products/daltile-portfolio-cream-pf07-2x2-matte.md)).
+- **PASS manufacturer application only — WET_WALL:** Flat ELM [Cortar Bone Soft](https://www.elmsurfaces.com/product/cortar-bone) lists Wet Areas; [Bone Reed relief](https://www.elmsurfaces.com/product/bone-reed-cortar) does not. This candidate **excludes Reed from wet surfaces**.
+- **HOLD — geometry, delivery, quote:** Linear drain wall/position, pan slope, calibrated cuts, item-by-item price, current lot/lead, owner approval = **null**. No documented discontinued/no-US-distribution failure; no 125% budget assessment without a room cap.
+
+## Candidate C — Bone Soft/Reed wall concept and blended Cortar floor
+
+| Exactly five procurement criteria | Score (1–5) | Independent, source-grounded reason |
+|---|---:|---|
+| **1. Historic quoted economics** | **4** | Same-room, dated ELM 2026-09-03 entries **4302621473570692** (143.0 SF wall/ceiling @ $8.14 flat-reference) and **2715002737917828** (135.6 SF floor @ **$7.82 blended**) support a **$2,224.41/unit** historical rate extension; **Reed's actual SF share is unpriced** (candidate C lines 7–15, 28–30). |
+| **2. Source quantities + 15% already included** | **3** | 143.0-SF walls/ceiling and 135.6-SF floor already include 15% waste and WC; **Reed wet-panel share** and **12×24 shower-pan portion** cannot be confirmed by a measured layout or final case count (candidate C lines 7–10, 24–30; geometry.json). |
+| **3. True dated quote vs illustrative alternative** | **4** | Unlike a Daltile substitute, the original **blended $7.82/SF floor row is genuinely dated ELM**; however v4's **all Anti-Slip** floor language conflicts with quoted **Soft level + 12×24 Anti-Slip pan** and **$7.37/SF Reed has no measured area**, so neither is separately reconfirmed (candidate C lines 7–9, 22). |
+| **4. Stock/lead/current procurement** | **2** | Quoted Cortar overseas terms **10–12 weeks, 50% deposit, 300-SF import minimum** have **no current lot-by-finish stock, production/Chicago arrival, pooling or purchaser confirmation**, especially for Reed (same-project maker evidence, [Reed](https://www.elmsurfaces.com/product/bone-reed-cortar)). |
+| **5. Viable alternative against owner cap UNKNOWN** | **1** | Historic cost is at least a priceable reference but **wet Reed lacks manufacturer Wet Areas approval**, actual Soft/Anti-Slip floor formats fail measured wet-DCOF gate, and owner room cap **null**; no viable order release or 125%-comparison can follow (candidate C lines 8–16). |
+
+**Overall cost seat_score: 2.8 / 5.0** (4+3+4+2+1 = 14/5). **confidence: medium** for old quoted-rate comparison; **low** for actual mixed-finish/order economics.
+
+**Historic line-rate arithmetic:** wall/ceiling flat-reference **143.0×$8.14 = $1,164.02/unit**, floor **135.6×$7.82 = $1,060.39/unit**, **$2,224.41/unit** / **$4,448.82 for two copies**, *before* any verified Reed/Soft quantity allocation, carton rounding, install/frt/tax. Historical Reed quote **$7.37/SF** is **not a measured Reed purchase total**. **No primary niche** (historic unpriced 7.41 SF expressly excluded), no third line. A plausible **104.32 Soft +31.28 Anti-Slip** component structure is **NOT** a new independently quoted replacement for the original **$1,060.39 blended floor**. No actual project owner room cap is established.
+
+**top_fix:** Obtain a **reconciled current ELM finish-by-finish schedule** that either proves a product-specific Reed wet-wall approval or excludes it, separates Soft level and genuinely certified small-format pan SKU at the 48-in Brizo drain, and obtains case-rounded landed pricing.
+
+**gate_flags:**
+- **FAIL — REED_WET_WALL:** [Bone Reed relief](https://www.elmsurfaces.com/product/bone-reed-cortar) lists Walls/Back Splashes, not Wet Areas, and its panel is unlocated in the wet wall envelope (product research: [Reed wet hold](../../../../research/products/elm-cortar-bone-reed-wet-hold.md)); flat Bone Wet Areas approval cannot transfer to Reed.
+- **FAIL — LEVEL_BATH_FLOOR_DCOF:** Quoted **24×48 Soft level field** (or v4's proposed full Anti-Slip variant) lacks published exact measured wet DCOF ≥0.42; maker application categories do not supply numeric certification (candidate C line 9; [Bone](https://www.elmsurfaces.com/product/cortar-bone)).
+- **FAIL — SHOWER_PAN_DCOF (separate):** Quoted **12×24 Anti-Slip shower pan** lacks exact measured wet DCOF ≥0.42, and its 48-in **linear drain slope suitability is not verified** (candidate C lines 9, 26; room plumbing.json).
+- **HOLD — quote, geometry and release:** Source v4/ELM floor finish dispute, Reed SF, exact Chicago lot/lead, cut sections and owner room budget = **null**; no evidenced discontinued/no-US-distribution gate failure and **no 125% budget gate without cap**.
+
+**Review boundary:** The PH $2.8M target and **14 market transactions in nine buildings** are context only; four sales at 405 W Armitage reflect **one** development design precedent, not four tile examples. No comp photos or particular material prevalence inferred ([shared comps](../../../../research/comps/COMPS.md)).
+

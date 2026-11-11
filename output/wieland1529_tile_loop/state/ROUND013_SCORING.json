@@ -1,0 +1,569 @@
+{
+  "round": 13,
+  "as_of": "2026-11-06",
+  "scoring_turn": "2026-11-06 NEW DISTINCT user/prime continuation after source-only 19:04 UTC R013 submission turn",
+  "source_submission": "state/ROUND013_SUBMISSION.json",
+  "source_submission_sha256": "55836b04247b2286d9f5e4dca2160b05dd567a094d0f391f6aa25c13ad8235d9",
+  "source_dispatch_sha256": "6a72f16d6efbc9de2131ee7ff2ae1846f1a26a9e21ec6f656760ffa00fbf4c23",
+  "source_collection_sha256": "4f0bbc757bd4d71cd029ca452141b0c77bea91e848d3d6c9e4d02368e20ca172",
+  "reviewer_clearance_receipt_sha256": "3c674cfdad5046eb16b82585118463d24320be3ddd9d1c6164cb24c3092f1394",
+  "independent_reviewer": "worker-14 (successor to permanently exhausted worker-11); read-only CONTINUE on R013 collection and R14 FIX",
+  "rubric_weights": {
+    "market": 0.3,
+    "design": 0.25,
+    "build": 0.25,
+    "cost": 0.2
+  },
+  "verification": {
+    "frozen_candidates": 6,
+    "original_critics": 12,
+    "criteria": 114,
+    "recalculated_seat_means": 24,
+    "local_links": 333,
+    "valid": true
+  },
+  "room_results": {
+    "PH-PRIMARY": {
+      "room": "PH-PRIMARY",
+      "round": 13,
+      "historical_letter": "A",
+      "revised_letter": "B",
+      "critic_file_fingerprints": {
+        "market": {
+          "file": "rooms/PH-PRIMARY/board/round-013/critic-market.md",
+          "worker": "worker-13",
+          "sha256": "b0269a72b083e91de9fb0a10211f56ab1946a3983a81b293737089d85085682a",
+          "bytes": 10202
+        },
+        "design": {
+          "file": "rooms/PH-PRIMARY/board/round-013/critic-design.md",
+          "worker": "worker-9",
+          "sha256": "88132c4945e72fbe98b019e20e901f90d6db3d7095af268eecfed38ebb646833",
+          "bytes": 13519
+        },
+        "build": {
+          "file": "rooms/PH-PRIMARY/board/round-013/critic-build.md",
+          "worker": "worker-10",
+          "sha256": "db57f13d75874333133a95da0ae7dd8d87e1f35b5b9e576a99080d1a78258eef",
+          "bytes": 10501
+        },
+        "cost": {
+          "file": "rooms/PH-PRIMARY/board/round-013/critic-cost.md",
+          "worker": "worker-12",
+          "sha256": "1725d6d142212b56bb0e8e2ae0cc61fcc7a675a114333032c6311340b6038de6",
+          "bytes": 11266
+        }
+      },
+      "candidates": {
+        "A": {
+          "role": "historic v4 Bone Soft/Reed relief, Cortar Bone Soft LEVEL and AntiSlip linear PAN",
+          "individual_critic_scores": {
+            "market": 3.8,
+            "design": 3.0,
+            "build": 1.6,
+            "cost": 2.2
+          },
+          "individual_criterion_scores": {
+            "market": {
+              "criterion_scores": [
+                4.0,
+                4.0,
+                3.0,
+                4.0
+              ],
+              "arithmetic_mean": 3.8
+            },
+            "design": {
+              "criterion_scores": [
+                4.0,
+                4.0,
+                4.0,
+                2.0,
+                1.0
+              ],
+              "arithmetic_mean": 3.0
+            },
+            "build": {
+              "criterion_scores": [
+                1.0,
+                2.0,
+                1.0,
+                2.0,
+                2.0
+              ],
+              "arithmetic_mean": 1.6
+            },
+            "cost": {
+              "criterion_scores": [
+                3.0,
+                3.0,
+                2.0,
+                2.0,
+                1.0
+              ],
+              "arithmetic_mean": 2.2
+            }
+          },
+          "weighted_score": 2.73,
+          "minimum_critic_score": 1.6,
+          "all_critics_at_least_3": false,
+          "all_hard_gates_pass": false,
+          "gate_reasons": [
+            "FAIL WET WALL/CEILING: exact ELM Cortar Bone Reed 24x48 relief has no individual Wet Areas listing; flat Cortar Bone wet listing is NOT transferable.",
+            "FAIL LEVEL: original Cortar Bone Soft 24x48 bath and PH WC floor exact individual SKU/finish raw numerical measured wet DCOF certificate absent.",
+            "FAIL LINEAR PAN: original Cortar Bone Anti-Slip 12x24 sloped pan exact individual raw measured wet DCOF and approved 48-in linear-drain slope/format absent.",
+            "HOLD: selected Brizo Black Onyx BT0734816-BNX 48-in LINEAR + mandatory BR73480 rough needs actual liner/membrane/grate/curb/flood-test assembly; no Primary niche.",
+            "HOLD: correct live native 1529 Revit project not verified (open native 1527); drawing sizes/openings/valve/threshold/niche/floor-pan boundaries are provisional.",
+            "HOLD: exact SKU/carton yield, project quantity, current Chicago available dye lot/ETA, installed supplier bid and signed owner per-room cost cap missing; do not invent budget 125% gate FAIL.",
+            "HOLD: source quote gross already includes 15% waste ONCE, two copies; no duplicate WC, field+niche faces, split LEVEL/PAN gross, samples or trim order.",
+            "HOLD: owner has NOT signed final 1:1 tile/grout/fixture selections or procurement authorization; material and GC release FALSE."
+          ],
+          "frozen_candidate_sha256": "44c74f6d5cbc1dbe4a7f19be61d1489512d5139732ff21f10d8d9f489d9f8ee7"
+        },
+        "B": {
+          "role": "revised flat Bone, distinct Prime RL21 level/hex linear PAN, Brizo solid grate study",
+          "individual_critic_scores": {
+            "market": 4.0,
+            "design": 3.8,
+            "build": 2.6,
+            "cost": 2.4
+          },
+          "individual_criterion_scores": {
+            "market": {
+              "criterion_scores": [
+                4.0,
+                4.0,
+                4.0,
+                4.0
+              ],
+              "arithmetic_mean": 4.0
+            },
+            "design": {
+              "criterion_scores": [
+                5.0,
+                4.0,
+                4.0,
+                3.0,
+                3.0
+              ],
+              "arithmetic_mean": 3.8
+            },
+            "build": {
+              "criterion_scores": [
+                3.0,
+                3.0,
+                3.0,
+                2.0,
+                2.0
+              ],
+              "arithmetic_mean": 2.6
+            },
+            "cost": {
+              "criterion_scores": [
+                2.0,
+                3.0,
+                2.0,
+                2.0,
+                3.0
+              ],
+              "arithmetic_mean": 2.4
+            }
+          },
+          "weighted_score": 3.28,
+          "minimum_critic_score": 2.4,
+          "all_critics_at_least_3": false,
+          "all_hard_gates_pass": false,
+          "gate_reasons": [
+            "PASS WET WALL LISTING ONLY: individual ELM Cortar Bone flat Soft 24x48 maker Wet Areas yes; 111-in wet ceiling fastening still needs qualified installation system.",
+            "FAIL LEVEL: proposed Daltile Prime RL21 Dynamic Beige 12x24 Matte USA 3/8-in for LEVEL bath and shared PH WC has maker Target wet DCOF >=0.42, NOT exact raw measured numerical laboratory test.",
+            "FAIL LINEAR PAN: distinct RL21 1.5-in Hex Matte Mexico 5/16-in linear-shower mosaic has maker application Target only, no exact raw measured numerical wet DCOF test.",
+            "HOLD: Brizo BT0734816-BNX factory solid grate bypasses decorative tile-in insert chip-thickness tolerance ONLY; BR73480 rough/membrane/pan slope and flood-tested assembly remain unapproved; older 1/4-in vs current 5/16-in mosaic nominal conflicting, not proven incompatibility.",
+            "HOLD: source packet 1/8-in RL21 grout study vs manufacturer page 3/16-in variant requires exact product-revision/physical joint approval.",
+            "HOLD: correct live native 1529 Revit project not verified (open native 1527); drawing sizes/openings/valve/threshold/niche/floor-pan boundaries are provisional.",
+            "HOLD: exact SKU/carton yield, project quantity, current Chicago available dye lot/ETA, installed supplier bid and signed owner per-room cost cap missing; do not invent budget 125% gate FAIL.",
+            "HOLD: source quote gross already includes 15% waste ONCE, two copies; no duplicate WC, field+niche faces, split LEVEL/PAN gross, samples or trim order.",
+            "HOLD: owner has NOT signed final 1:1 tile/grout/fixture selections or procurement authorization; material and GC release FALSE."
+          ],
+          "frozen_candidate_sha256": "0d8a0adbc86e3c99b8e3757c7668d6cfcfa9a44c15e2cf33a38d942f52209dd9"
+        }
+      },
+      "status": "blocked",
+      "champion_id": null,
+      "champion_score": null,
+      "accepted_challenger": false,
+      "owner_approved": false,
+      "procurement_release": false,
+      "source_selection_preserved": true,
+      "previous_scored_round": 10,
+      "previous_scored_status": "blocked",
+      "challenger_margin": 0.55,
+      "challenger_margin_at_least_025": true,
+      "challenger_acceptance_pass": false,
+      "gate_qualified_champion": null,
+      "conditional_visual_direction": "B",
+      "decision": "BLOCKED: no fully wet-tested or installation/owner/cost-gate qualified source or revised champion. Revised visual/sample study remains conditional only."
+    },
+    "PH-BATH2": {
+      "room": "PH-BATH2",
+      "round": 13,
+      "historical_letter": "C",
+      "revised_letter": "B",
+      "critic_file_fingerprints": {
+        "market": {
+          "file": "rooms/PH-BATH2/board/round-013/critic-market.md",
+          "worker": "worker-13",
+          "sha256": "5a0fec9aa199e45b1dab3a2939ea0f54e0befd4a5513afbc263f180727e76de6",
+          "bytes": 9369
+        },
+        "design": {
+          "file": "rooms/PH-BATH2/board/round-013/critic-design.md",
+          "worker": "worker-9",
+          "sha256": "9444bf8ba13b7f5d68ca17a489d84eb70d8a8ca60b14c8b93bc7ce4c179a92da",
+          "bytes": 12432
+        },
+        "build": {
+          "file": "rooms/PH-BATH2/board/round-013/critic-build.md",
+          "worker": "worker-10",
+          "sha256": "d436a47b5acc5bf81f7cbf8828cf9a94715806fdabd4fe92958661cbc933912c",
+          "bytes": 9623
+        },
+        "cost": {
+          "file": "rooms/PH-BATH2/board/round-013/critic-cost.md",
+          "worker": "worker-12",
+          "sha256": "4e4b37eaa1e4c68dd94f003d8dc7a3767d1ccc5b03b9699b9ad888c2440dc372",
+          "bytes": 10265
+        }
+      },
+      "candidates": {
+        "B": {
+          "role": "revised Sapphire/Sandstone with Prime RL21 12x24 LEVEL and retained Duravit tub",
+          "individual_critic_scores": {
+            "market": 4.0,
+            "design": 3.8,
+            "build": 2.4,
+            "cost": 2.6
+          },
+          "individual_criterion_scores": {
+            "market": {
+              "criterion_scores": [
+                4.0,
+                4.0,
+                4.0,
+                4.0
+              ],
+              "arithmetic_mean": 4.0
+            },
+            "design": {
+              "criterion_scores": [
+                5.0,
+                4.0,
+                4.0,
+                3.0,
+                3.0
+              ],
+              "arithmetic_mean": 3.8
+            },
+            "build": {
+              "criterion_scores": [
+                3.0,
+                3.0,
+                3.0,
+                2.0,
+                1.0
+              ],
+              "arithmetic_mean": 2.4
+            },
+            "cost": {
+              "criterion_scores": [
+                2.0,
+                4.0,
+                2.0,
+                2.0,
+                3.0
+              ],
+              "arithmetic_mean": 2.6
+            }
+          },
+          "weighted_score": 3.27,
+          "minimum_critic_score": 2.4,
+          "all_critics_at_least_3": false,
+          "all_hard_gates_pass": false,
+          "gate_reasons": [
+            "PASS WET TUB WALL AND NICHE: individual ELM Tones Sapphire 2x20 Glossy and Sandstone 2x20 listings; selected Duravit 700332000000090 TUB and Hansgrohe MATTE WHITE, NO tiled PAN.",
+            "FAIL LEVEL: proposed Daltile Prime Dynamic Beige RL21 12x24 Matte bath LEVEL uses maker Target >=0.42, not individual exact raw numerical measured wet DCOF laboratory result; PAN N/A.",
+            "HOLD: drawing W1 59.496-in vs nominal 59-in Duravit tub gives only 0.496-in total before backer, finish, flange and rough clearances. Exact manufacturer tub envelope, waterproof flange and correct 1529 rough opening mandatory.",
+            "HOLD: RL21 maker grout 1/8 vs 3/16 conflicting page snapshots and actual shade/lot/caliber/installed quote require manufacturer/GC verification.",
+            "HOLD: correct live native 1529 Revit project not verified (open native 1527); drawing sizes/openings/valve/threshold/niche/floor-pan boundaries are provisional.",
+            "HOLD: exact SKU/carton yield, project quantity, current Chicago available dye lot/ETA, installed supplier bid and signed owner per-room cost cap missing; do not invent budget 125% gate FAIL.",
+            "HOLD: source quote gross already includes 15% waste ONCE, two copies; no duplicate WC, field+niche faces, split LEVEL/PAN gross, samples or trim order.",
+            "HOLD: owner has NOT signed final 1:1 tile/grout/fixture selections or procurement authorization; material and GC release FALSE."
+          ],
+          "frozen_candidate_sha256": "6f5c91022bb0a81d91fb4acd9d27bc9ff096022876f120ca0ebfff113643fc70"
+        },
+        "C": {
+          "role": "historic v4 Sapphire/Sandstone, Cortar Grey Soft LEVEL, retained Duravit tub",
+          "individual_critic_scores": {
+            "market": 3.8,
+            "design": 3.4,
+            "build": 2.2,
+            "cost": 2.8
+          },
+          "individual_criterion_scores": {
+            "market": {
+              "criterion_scores": [
+                4.0,
+                4.0,
+                3.0,
+                4.0
+              ],
+              "arithmetic_mean": 3.8
+            },
+            "design": {
+              "criterion_scores": [
+                5.0,
+                4.0,
+                3.0,
+                3.0,
+                2.0
+              ],
+              "arithmetic_mean": 3.4
+            },
+            "build": {
+              "criterion_scores": [
+                2.0,
+                3.0,
+                3.0,
+                2.0,
+                1.0
+              ],
+              "arithmetic_mean": 2.2
+            },
+            "cost": {
+              "criterion_scores": [
+                3.0,
+                4.0,
+                3.0,
+                2.0,
+                2.0
+              ],
+              "arithmetic_mean": 2.8
+            }
+          },
+          "weighted_score": 3.1,
+          "minimum_critic_score": 2.2,
+          "all_critics_at_least_3": false,
+          "all_hard_gates_pass": false,
+          "gate_reasons": [
+            "PASS WET TUB WALL AND NICHE: individual ELM Tones Sapphire 2x20 Glossy and Tones Sandstone 2x20 wet application listings both confirmed; no tiled shower PAN exists.",
+            "FAIL LEVEL: original ELM Cortar Grey Soft 12x24 bath floor has no exact SKU/finish raw numerical measured wet DCOF certificate; no PAN floor test is applicable.",
+            "HOLD: drawing W1 59.496-in vs selected Duravit 700332000000090 nominal 59-in tub leaves only 0.496-in TOTAL nominal difference before rough, flange, waterproof backer, tile and tolerances; fit neither proven nor disproven.",
+            "HOLD: correct live native 1529 Revit project not verified (open native 1527); drawing sizes/openings/valve/threshold/niche/floor-pan boundaries are provisional.",
+            "HOLD: exact SKU/carton yield, project quantity, current Chicago available dye lot/ETA, installed supplier bid and signed owner per-room cost cap missing; do not invent budget 125% gate FAIL.",
+            "HOLD: source quote gross already includes 15% waste ONCE, two copies; no duplicate WC, field+niche faces, split LEVEL/PAN gross, samples or trim order.",
+            "HOLD: owner has NOT signed final 1:1 tile/grout/fixture selections or procurement authorization; material and GC release FALSE."
+          ],
+          "frozen_candidate_sha256": "662fa8d775fe4ed35f2eae0067130929b70ed3ed1dbeb902a18cd4f50452eefa"
+        }
+      },
+      "status": "blocked",
+      "champion_id": null,
+      "champion_score": null,
+      "accepted_challenger": false,
+      "owner_approved": false,
+      "procurement_release": false,
+      "source_selection_preserved": true,
+      "previous_scored_round": 10,
+      "previous_scored_status": "blocked",
+      "challenger_margin": 0.17,
+      "challenger_margin_at_least_025": false,
+      "challenger_acceptance_pass": false,
+      "gate_qualified_champion": null,
+      "conditional_visual_direction": "B",
+      "decision": "BLOCKED: no fully wet-tested or installation/owner/cost-gate qualified source or revised champion. Revised visual/sample study remains conditional only."
+    },
+    "PH-BATH4": {
+      "room": "PH-BATH4",
+      "round": 13,
+      "historical_letter": "C",
+      "revised_letter": "A",
+      "critic_file_fingerprints": {
+        "market": {
+          "file": "rooms/PH-BATH4/board/round-013/critic-market.md",
+          "worker": "worker-13",
+          "sha256": "bedb7cfabc689c5eb3d465144566002468eabe972238058883f017422d32e071",
+          "bytes": 10541
+        },
+        "design": {
+          "file": "rooms/PH-BATH4/board/round-013/critic-design.md",
+          "worker": "worker-9",
+          "sha256": "e943d7942ba66d51ab35d1de0f7830381202cf094e6e55c3407540582d626007",
+          "bytes": 14027
+        },
+        "build": {
+          "file": "rooms/PH-BATH4/board/round-013/critic-build.md",
+          "worker": "worker-10",
+          "sha256": "c860212a7a966af0d6daf892b8321914112fcb5a2483b080764a95ec6400a30d",
+          "bytes": 10942
+        },
+        "cost": {
+          "file": "rooms/PH-BATH4/board/round-013/critic-cost.md",
+          "worker": "worker-12",
+          "sha256": "282fc24c423abe662304380f3b82759dae3cc7cbd7b61554c74972790fdfebc9",
+          "bytes": 12002
+        }
+      },
+      "candidates": {
+        "A": {
+          "role": "revised flat Bone/Soho, Prime RL21 level/hex square PAN, selected Brizo point drain",
+          "individual_critic_scores": {
+            "market": 4.0,
+            "design": 3.8,
+            "build": 2.4,
+            "cost": 2.4
+          },
+          "individual_criterion_scores": {
+            "market": {
+              "criterion_scores": [
+                4.0,
+                4.0,
+                4.0,
+                4.0
+              ],
+              "arithmetic_mean": 4.0
+            },
+            "design": {
+              "criterion_scores": [
+                5.0,
+                4.0,
+                4.0,
+                3.0,
+                3.0
+              ],
+              "arithmetic_mean": 3.8
+            },
+            "build": {
+              "criterion_scores": [
+                3.0,
+                3.0,
+                3.0,
+                2.0,
+                1.0
+              ],
+              "arithmetic_mean": 2.4
+            },
+            "cost": {
+              "criterion_scores": [
+                2.0,
+                3.0,
+                2.0,
+                2.0,
+                3.0
+              ],
+              "arithmetic_mean": 2.4
+            }
+          },
+          "weighted_score": 3.23,
+          "minimum_critic_score": 2.4,
+          "all_critics_at_least_3": false,
+          "all_hard_gates_pass": false,
+          "gate_reasons": [
+            "PASS WET WALL/NICHE ONLY: ELM flat Cortar Bone Soft 24x48 is individually Wet Areas listed; independently listed Soho Black 2x10 Glossy wet niche. Not permission for Ribbed Bone or Clara Caviar.",
+            "FAIL LEVEL: proposed Prime RL21 Dynamic Beige 12x24 Matte LEVEL maker Target wet DCOF >=0.42 is NOT the exact raw numerical measured SKU test.",
+            "FAIL POINT PAN: distinct Prime RL21 1.5-in Hex Matte shower POINT PAN Target only, not exact raw measured wet DCOF; actual maker-approved four-plane Brizo square point install/waterproof detail missing.",
+            "HOLD: selected actual 4-in SQUARE POINT Brizo BT062415-BNX Black Onyx WALK-IN; owner 35-SF vs old 27-SF area, source Soft/Anti-Slip and combined 40.2 gross level/pan source must be reconciled, no tub.",
+            "HOLD: original 107.2-SF/unit full Ribbed itemization potentially absent from old supplier grand total (214.4 SF across two copies) is vendor reconciliation only, NOT payable shortage or approved credit.",
+            "HOLD: correct live native 1529 Revit project not verified (open native 1527); drawing sizes/openings/valve/threshold/niche/floor-pan boundaries are provisional.",
+            "HOLD: exact SKU/carton yield, project quantity, current Chicago available dye lot/ETA, installed supplier bid and signed owner per-room cost cap missing; do not invent budget 125% gate FAIL.",
+            "HOLD: source quote gross already includes 15% waste ONCE, two copies; no duplicate WC, field+niche faces, split LEVEL/PAN gross, samples or trim order.",
+            "HOLD: owner has NOT signed final 1:1 tile/grout/fixture selections or procurement authorization; material and GC release FALSE."
+          ],
+          "frozen_candidate_sha256": "af2126d14ec88a91a236a4647de83958400a9e3ef02ee86b4bb261c4ad204fc1"
+        },
+        "C": {
+          "role": "historic v4 full Ribbed/Caviar/Charcoal source with selected Brizo point drain",
+          "individual_critic_scores": {
+            "market": 3.5,
+            "design": 2.8,
+            "build": 1.4,
+            "cost": 2.2
+          },
+          "individual_criterion_scores": {
+            "market": {
+              "criterion_scores": [
+                4.0,
+                4.0,
+                3.0,
+                3.0
+              ],
+              "arithmetic_mean": 3.5
+            },
+            "design": {
+              "criterion_scores": [
+                4.0,
+                3.0,
+                4.0,
+                2.0,
+                1.0
+              ],
+              "arithmetic_mean": 2.8
+            },
+            "build": {
+              "criterion_scores": [
+                1.0,
+                2.0,
+                1.0,
+                2.0,
+                1.0
+              ],
+              "arithmetic_mean": 1.4
+            },
+            "cost": {
+              "criterion_scores": [
+                3.0,
+                3.0,
+                2.0,
+                2.0,
+                1.0
+              ],
+              "arithmetic_mean": 2.2
+            }
+          },
+          "weighted_score": 2.54,
+          "minimum_critic_score": 1.4,
+          "all_critics_at_least_3": false,
+          "all_hard_gates_pass": false,
+          "gate_reasons": [
+            "FAIL WET WALL: full 107.2-SF/unit Cortar Bone Ribbed 24x48 Relief has no individual maker Wet Areas listing; flat Bone permission cannot transfer.",
+            "FAIL WET NICHE: original Clara Tierra Madre Caviar 2x8 individually Wet Areas unlisted, even though other finishes may be listed.",
+            "FAIL LEVEL: original Cortar Charcoal Soft 12x24 LEVEL exact individual raw wet numerical measured DCOF unavailable; source Soft vs handoff Anti-Slip finish conflicting.",
+            "FAIL SQUARE POINT PAN: original Charcoal Soft/Anti-Slip sloped walk-in POINT PAN exact format, maker listing, numerical raw measured wet DCOF and 4-plane suitable drain assembly unavailable.",
+            "HOLD: selected Brizo Black Onyx BT062415-BNX 4-in SQUARE POINT on actual WALK-IN shower, NOT a tub, requiring measured rough/membrane/four-plane slope/flood section.",
+            "HOLD: correct live native 1529 Revit project not verified (open native 1527); drawing sizes/openings/valve/threshold/niche/floor-pan boundaries are provisional.",
+            "HOLD: exact SKU/carton yield, project quantity, current Chicago available dye lot/ETA, installed supplier bid and signed owner per-room cost cap missing; do not invent budget 125% gate FAIL.",
+            "HOLD: source quote gross already includes 15% waste ONCE, two copies; no duplicate WC, field+niche faces, split LEVEL/PAN gross, samples or trim order.",
+            "HOLD: owner has NOT signed final 1:1 tile/grout/fixture selections or procurement authorization; material and GC release FALSE."
+          ],
+          "frozen_candidate_sha256": "ad87ff26997f9e7bc5dbe8b66e7d8dc1f3081516da98f0cb59c191fc561cd79d"
+        }
+      },
+      "status": "blocked",
+      "champion_id": null,
+      "champion_score": null,
+      "accepted_challenger": false,
+      "owner_approved": false,
+      "procurement_release": false,
+      "source_selection_preserved": true,
+      "previous_scored_round": 10,
+      "previous_scored_status": "blocked",
+      "challenger_margin": 0.69,
+      "challenger_margin_at_least_025": true,
+      "challenger_acceptance_pass": false,
+      "gate_qualified_champion": null,
+      "conditional_visual_direction": "A",
+      "decision": "BLOCKED: no fully wet-tested or installation/owner/cost-gate qualified source or revised champion. Revised visual/sample study remains conditional only."
+    }
+  },
+  "owner_approval": false,
+  "procurement_release": false,
+  "global_program_done": false
+}

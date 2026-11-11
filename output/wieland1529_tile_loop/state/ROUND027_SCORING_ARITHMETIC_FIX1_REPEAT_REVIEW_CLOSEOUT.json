@@ -1,0 +1,20 @@
+{
+  "artifact_type": "additive closeout for FIX1; original FIX1 receipt is preserved unchanged",
+  "fix1_path": "state/ROUND027_SCORING_ARITHMETIC_FIX1_RECEIPT.json",
+  "fix1_sha256": "e69edcb82b88c2f158957614b100f04f26053671c9db9d78b7a7dc2270d31cf9",
+  "fix1_bytes": 2773,
+  "repeat_reviewer": {
+    "worker": "worker-40",
+    "run_id": "8a358fec-5853-4dea-81a6-0d5ef17fedf1",
+    "report": "state/ROUND027_POSTSCORE_REVIEWER40_REPORT.md",
+    "report_sha256": "f61ffd16e473153575c085f588316bb1c50a0f2e7f5d3f82aa75153758e16f79",
+    "report_bytes": 3213,
+    "clearance": "state/ROUND027_INDEPENDENT_POSTSCORE_REVIEWER40_CLEARANCE.json",
+    "clearance_sha256": "105862b5ed615e6cdf0d1a006c7be0fffdcad561335b581dece62956e3c5a7fd",
+    "clearance_bytes": 12960,
+    "exact_verdict": "CONTINUE FOR R027 NONACCEPTANCE ONLY"
+  },
+  "review_result": "PASS: four weighted-total corrections, unchanged TX-BATH2 totals, all 24 criterion means, all 12 seat means, all twelve valid critique fingerprints and all FIX1 before/after hashes independently rechecked. No additional arithmetic FIX required.",
+  "acceptance": "NONE. R027 remains nonaccepted for all three rooms; no champion promoted.",
+  "status_supersedes": "FIX1's original status CORRECTED_AWAITING_INDEPENDENT_REPEAT_REVIEW is historically accurate at creation time; this closeout records that the repeat review subsequently completed."
+}

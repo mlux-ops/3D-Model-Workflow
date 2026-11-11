@@ -1,0 +1,521 @@
+{
+  "round": "020/021",
+  "as_of": "2026-11-06",
+  "independent_non_pro_reviewer": "worker-15",
+  "original_reviewer_verdict": "FIX — R20 contradictory retailer 8 pieces versus 17.49SF for 12x24 and R21 generic inapplicable witness text",
+  "R20_original_initial_manifest_sha256_before_first_stage": "c298f924085b22873b88e2a19850a0b7f2a3f2fcf85757b009ed607c13159fd0",
+  "R20_manifest_before_resumed_stage": {
+    "sha256": "9559680c13f602d22fdf32ff5c3eac42e3ead515f6fcff0d2d34aa231dd676ae",
+    "bytes": 1907
+  },
+  "R20_manifest_after": {
+    "sha256": "9559680c13f602d22fdf32ff5c3eac42e3ead515f6fcff0d2d34aa231dd676ae",
+    "bytes": 1907
+  },
+  "first_R20_retailer_conflict_correction_committed_before_R21_scope_validation_failure": true,
+  "R21_manifest_before": {
+    "sha256": "c277d5f8eec635150d069b73feefad040e885ebc7a2e7d5d369bcba56bb6c202",
+    "bytes": 1884
+  },
+  "R21_manifest_after": {
+    "sha256": "a212a902fcf61433cbcf165c05b07681abffcb3f70ae9f8deeb8e0756989ad66",
+    "bytes": 1884
+  },
+  "R20_outputs_before": {
+    "R20_7_PUBLIC_MAKER_VS_RETAIL_CODE_ORIGIN_JOINT_CARTON_PRICE_SOURCES.csv": {
+      "sha256": "d7fe0843d57b1f5ad5bb343f2146df6c0920ffe39ad5392c0602f33ec50441e5",
+      "bytes": 4041
+    },
+    "R20_PUBLIC_ORDER_CODE_CARTON_ORIGIN_AND_RETAIL_VARIANT_CAVEATS.md": {
+      "sha256": "bb83d12a3cf7ccbdbf2b98f5b02d6ea675421ae061e3c00e034da3b9bb6218de",
+      "bytes": 5431
+    },
+    "R20_TX2_TX4_CONDITIONAL_LEVEL_FLOOR_NET_CASE_AND_GC_BID_GATES.csv": {
+      "sha256": "f0b678b5b0a9eff07ab283282201ac350592a299811783ecadc697592de40d54",
+      "bytes": 1514
+    },
+    "START_HERE_R20.md": {
+      "sha256": "ce39f01c77015177669d93106b79a54ffbaf888f707202361b2d168a2d218a7a",
+      "bytes": 408
+    }
+  },
+  "R20_outputs_after": {
+    "R20_7_PUBLIC_MAKER_VS_RETAIL_CODE_ORIGIN_JOINT_CARTON_PRICE_SOURCES.csv": {
+      "sha256": "d7fe0843d57b1f5ad5bb343f2146df6c0920ffe39ad5392c0602f33ec50441e5",
+      "bytes": 4041
+    },
+    "R20_PUBLIC_ORDER_CODE_CARTON_ORIGIN_AND_RETAIL_VARIANT_CAVEATS.md": {
+      "sha256": "bb83d12a3cf7ccbdbf2b98f5b02d6ea675421ae061e3c00e034da3b9bb6218de",
+      "bytes": 5431
+    },
+    "R20_TX2_TX4_CONDITIONAL_LEVEL_FLOOR_NET_CASE_AND_GC_BID_GATES.csv": {
+      "sha256": "f0b678b5b0a9eff07ab283282201ac350592a299811783ecadc697592de40d54",
+      "bytes": 1514
+    },
+    "START_HERE_R20.md": {
+      "sha256": "ce39f01c77015177669d93106b79a54ffbaf888f707202361b2d168a2d218a7a",
+      "bytes": 408
+    }
+  },
+  "R21_outputs_before": {
+    "R21_156_FIELD_INSPECTION_AND_TRADE_WITNESS_HOLD_POINTS.csv": {
+      "sha256": "d8f944bbaee81275d00f5bf97beb297ccf52cadb9d65006f99e1d0a23f7541d7",
+      "bytes": 76770
+    },
+    "R21_WET_ROOM_SHOP_AND_PHOTO_WITNESS_MANUAL.md": {
+      "sha256": "8b6387a0651035e8a73677efa86974b809b3fe47a861b15e551f64e89e0e60ba",
+      "bytes": 7418
+    },
+    "START_HERE_R21.md": {
+      "sha256": "197dc1bb4a75fe7066f9824cb510cf1e226bad84ac33cb083ede6fea1888868f",
+      "bytes": 416
+    }
+  },
+  "R21_outputs_after": {
+    "R21_156_FIELD_INSPECTION_AND_TRADE_WITNESS_HOLD_POINTS.csv": {
+      "sha256": "8f19da7f2b2e57b15422c1112ad65b07b8515b47bd8bb8c525be357c598670eb",
+      "bytes": 76248
+    },
+    "R21_WET_ROOM_SHOP_AND_PHOTO_WITNESS_MANUAL.md": {
+      "sha256": "8b6387a0651035e8a73677efa86974b809b3fe47a861b15e551f64e89e0e60ba",
+      "bytes": 7418
+    },
+    "START_HERE_R21.md": {
+      "sha256": "197dc1bb4a75fe7066f9824cb510cf1e226bad84ac33cb083ede6fea1888868f",
+      "bytes": 416
+    }
+  },
+  "retailer_original_conflicting_piece_count": "8",
+  "retailer_original_conflicting_case_sf": "17.49",
+  "calculated_impossible_sf_per_nominal_12x24_piece": "2.18625",
+  "supplier_confirmed_EL30_carton_yield": null,
+  "retailer_case_metrics_available_to_order": false,
+  "specific_scope_cells_changed": 104,
+  "specific_scope_changed_room_steps": [
+    {
+      "room": "PH-PRIMARY",
+      "step": "02_INDIVIDUAL_MAKER_WALL_APPLICATION"
+    },
+    {
+      "room": "PH-PRIMARY",
+      "step": "03_INDIVIDUAL_NICHE_APPLICATION_AND_NET"
+    },
+    {
+      "room": "PH-PRIMARY",
+      "step": "04_LEVEL_FLOOR_RAW_WET_LAB"
+    },
+    {
+      "room": "PH-PRIMARY",
+      "step": "05_INDEPENDENT_SHOWER_PAN_RAW_WET_LAB"
+    },
+    {
+      "room": "PH-PRIMARY",
+      "step": "06_SELECTED_PLUMBING_ROUGH_AND_MODEL_BRANCH"
+    },
+    {
+      "room": "PH-PRIMARY",
+      "step": "07_MEMBRANE_SLOPE_AND_TUB_FLANGE_SHOP"
+    },
+    {
+      "room": "PH-PRIMARY",
+      "step": "08_INSPECTION_LEAK_OR_FLOOD_TEST"
+    },
+    {
+      "room": "PH-PRIMARY",
+      "step": "10_MEASURED_NET_AREA_AND_CONDITIONAL_FULL_CASES"
+    },
+    {
+      "room": "PH-BATH2",
+      "step": "02_INDIVIDUAL_MAKER_WALL_APPLICATION"
+    },
+    {
+      "room": "PH-BATH2",
+      "step": "03_INDIVIDUAL_NICHE_APPLICATION_AND_NET"
+    },
+    {
+      "room": "PH-BATH2",
+      "step": "04_LEVEL_FLOOR_RAW_WET_LAB"
+    },
+    {
+      "room": "PH-BATH2",
+      "step": "05_INDEPENDENT_SHOWER_PAN_RAW_WET_LAB"
+    },
+    {
+      "room": "PH-BATH2",
+      "step": "06_SELECTED_PLUMBING_ROUGH_AND_MODEL_BRANCH"
+    },
+    {
+      "room": "PH-BATH2",
+      "step": "07_MEMBRANE_SLOPE_AND_TUB_FLANGE_SHOP"
+    },
+    {
+      "room": "PH-BATH2",
+      "step": "08_INSPECTION_LEAK_OR_FLOOD_TEST"
+    },
+    {
+      "room": "PH-BATH2",
+      "step": "10_MEASURED_NET_AREA_AND_CONDITIONAL_FULL_CASES"
+    },
+    {
+      "room": "PH-BATH3",
+      "step": "02_INDIVIDUAL_MAKER_WALL_APPLICATION"
+    },
+    {
+      "room": "PH-BATH3",
+      "step": "03_INDIVIDUAL_NICHE_APPLICATION_AND_NET"
+    },
+    {
+      "room": "PH-BATH3",
+      "step": "04_LEVEL_FLOOR_RAW_WET_LAB"
+    },
+    {
+      "room": "PH-BATH3",
+      "step": "05_INDEPENDENT_SHOWER_PAN_RAW_WET_LAB"
+    },
+    {
+      "room": "PH-BATH3",
+      "step": "06_SELECTED_PLUMBING_ROUGH_AND_MODEL_BRANCH"
+    },
+    {
+      "room": "PH-BATH3",
+      "step": "07_MEMBRANE_SLOPE_AND_TUB_FLANGE_SHOP"
+    },
+    {
+      "room": "PH-BATH3",
+      "step": "08_INSPECTION_LEAK_OR_FLOOD_TEST"
+    },
+    {
+      "room": "PH-BATH3",
+      "step": "10_MEASURED_NET_AREA_AND_CONDITIONAL_FULL_CASES"
+    },
+    {
+      "room": "PH-BATH4",
+      "step": "02_INDIVIDUAL_MAKER_WALL_APPLICATION"
+    },
+    {
+      "room": "PH-BATH4",
+      "step": "03_INDIVIDUAL_NICHE_APPLICATION_AND_NET"
+    },
+    {
+      "room": "PH-BATH4",
+      "step": "04_LEVEL_FLOOR_RAW_WET_LAB"
+    },
+    {
+      "room": "PH-BATH4",
+      "step": "05_INDEPENDENT_SHOWER_PAN_RAW_WET_LAB"
+    },
+    {
+      "room": "PH-BATH4",
+      "step": "06_SELECTED_PLUMBING_ROUGH_AND_MODEL_BRANCH"
+    },
+    {
+      "room": "PH-BATH4",
+      "step": "07_MEMBRANE_SLOPE_AND_TUB_FLANGE_SHOP"
+    },
+    {
+      "room": "PH-BATH4",
+      "step": "08_INSPECTION_LEAK_OR_FLOOD_TEST"
+    },
+    {
+      "room": "PH-BATH4",
+      "step": "10_MEASURED_NET_AREA_AND_CONDITIONAL_FULL_CASES"
+    },
+    {
+      "room": "PH-POWDER",
+      "step": "02_INDIVIDUAL_MAKER_WALL_APPLICATION"
+    },
+    {
+      "room": "PH-POWDER",
+      "step": "03_INDIVIDUAL_NICHE_APPLICATION_AND_NET"
+    },
+    {
+      "room": "PH-POWDER",
+      "step": "04_LEVEL_FLOOR_RAW_WET_LAB"
+    },
+    {
+      "room": "PH-POWDER",
+      "step": "05_INDEPENDENT_SHOWER_PAN_RAW_WET_LAB"
+    },
+    {
+      "room": "PH-POWDER",
+      "step": "06_SELECTED_PLUMBING_ROUGH_AND_MODEL_BRANCH"
+    },
+    {
+      "room": "PH-POWDER",
+      "step": "07_MEMBRANE_SLOPE_AND_TUB_FLANGE_SHOP"
+    },
+    {
+      "room": "PH-POWDER",
+      "step": "08_INSPECTION_LEAK_OR_FLOOD_TEST"
+    },
+    {
+      "room": "PH-POWDER",
+      "step": "10_MEASURED_NET_AREA_AND_CONDITIONAL_FULL_CASES"
+    },
+    {
+      "room": "PH-WC",
+      "step": "02_INDIVIDUAL_MAKER_WALL_APPLICATION"
+    },
+    {
+      "room": "PH-WC",
+      "step": "03_INDIVIDUAL_NICHE_APPLICATION_AND_NET"
+    },
+    {
+      "room": "PH-WC",
+      "step": "04_LEVEL_FLOOR_RAW_WET_LAB"
+    },
+    {
+      "room": "PH-WC",
+      "step": "05_INDEPENDENT_SHOWER_PAN_RAW_WET_LAB"
+    },
+    {
+      "room": "PH-WC",
+      "step": "06_SELECTED_PLUMBING_ROUGH_AND_MODEL_BRANCH"
+    },
+    {
+      "room": "PH-WC",
+      "step": "07_MEMBRANE_SLOPE_AND_TUB_FLANGE_SHOP"
+    },
+    {
+      "room": "PH-WC",
+      "step": "08_INSPECTION_LEAK_OR_FLOOD_TEST"
+    },
+    {
+      "room": "PH-WC",
+      "step": "10_MEASURED_NET_AREA_AND_CONDITIONAL_FULL_CASES"
+    },
+    {
+      "room": "TX-PRIMARY",
+      "step": "02_INDIVIDUAL_MAKER_WALL_APPLICATION"
+    },
+    {
+      "room": "TX-PRIMARY",
+      "step": "03_INDIVIDUAL_NICHE_APPLICATION_AND_NET"
+    },
+    {
+      "room": "TX-PRIMARY",
+      "step": "04_LEVEL_FLOOR_RAW_WET_LAB"
+    },
+    {
+      "room": "TX-PRIMARY",
+      "step": "05_INDEPENDENT_SHOWER_PAN_RAW_WET_LAB"
+    },
+    {
+      "room": "TX-PRIMARY",
+      "step": "06_SELECTED_PLUMBING_ROUGH_AND_MODEL_BRANCH"
+    },
+    {
+      "room": "TX-PRIMARY",
+      "step": "07_MEMBRANE_SLOPE_AND_TUB_FLANGE_SHOP"
+    },
+    {
+      "room": "TX-PRIMARY",
+      "step": "08_INSPECTION_LEAK_OR_FLOOD_TEST"
+    },
+    {
+      "room": "TX-PRIMARY",
+      "step": "10_MEASURED_NET_AREA_AND_CONDITIONAL_FULL_CASES"
+    },
+    {
+      "room": "TX-BATH2",
+      "step": "02_INDIVIDUAL_MAKER_WALL_APPLICATION"
+    },
+    {
+      "room": "TX-BATH2",
+      "step": "03_INDIVIDUAL_NICHE_APPLICATION_AND_NET"
+    },
+    {
+      "room": "TX-BATH2",
+      "step": "04_LEVEL_FLOOR_RAW_WET_LAB"
+    },
+    {
+      "room": "TX-BATH2",
+      "step": "05_INDEPENDENT_SHOWER_PAN_RAW_WET_LAB"
+    },
+    {
+      "room": "TX-BATH2",
+      "step": "06_SELECTED_PLUMBING_ROUGH_AND_MODEL_BRANCH"
+    },
+    {
+      "room": "TX-BATH2",
+      "step": "07_MEMBRANE_SLOPE_AND_TUB_FLANGE_SHOP"
+    },
+    {
+      "room": "TX-BATH2",
+      "step": "08_INSPECTION_LEAK_OR_FLOOD_TEST"
+    },
+    {
+      "room": "TX-BATH2",
+      "step": "10_MEASURED_NET_AREA_AND_CONDITIONAL_FULL_CASES"
+    },
+    {
+      "room": "TX-BATH3",
+      "step": "02_INDIVIDUAL_MAKER_WALL_APPLICATION"
+    },
+    {
+      "room": "TX-BATH3",
+      "step": "03_INDIVIDUAL_NICHE_APPLICATION_AND_NET"
+    },
+    {
+      "room": "TX-BATH3",
+      "step": "04_LEVEL_FLOOR_RAW_WET_LAB"
+    },
+    {
+      "room": "TX-BATH3",
+      "step": "05_INDEPENDENT_SHOWER_PAN_RAW_WET_LAB"
+    },
+    {
+      "room": "TX-BATH3",
+      "step": "06_SELECTED_PLUMBING_ROUGH_AND_MODEL_BRANCH"
+    },
+    {
+      "room": "TX-BATH3",
+      "step": "07_MEMBRANE_SLOPE_AND_TUB_FLANGE_SHOP"
+    },
+    {
+      "room": "TX-BATH3",
+      "step": "08_INSPECTION_LEAK_OR_FLOOD_TEST"
+    },
+    {
+      "room": "TX-BATH3",
+      "step": "10_MEASURED_NET_AREA_AND_CONDITIONAL_FULL_CASES"
+    },
+    {
+      "room": "TX-BATH4",
+      "step": "02_INDIVIDUAL_MAKER_WALL_APPLICATION"
+    },
+    {
+      "room": "TX-BATH4",
+      "step": "03_INDIVIDUAL_NICHE_APPLICATION_AND_NET"
+    },
+    {
+      "room": "TX-BATH4",
+      "step": "04_LEVEL_FLOOR_RAW_WET_LAB"
+    },
+    {
+      "room": "TX-BATH4",
+      "step": "05_INDEPENDENT_SHOWER_PAN_RAW_WET_LAB"
+    },
+    {
+      "room": "TX-BATH4",
+      "step": "06_SELECTED_PLUMBING_ROUGH_AND_MODEL_BRANCH"
+    },
+    {
+      "room": "TX-BATH4",
+      "step": "07_MEMBRANE_SLOPE_AND_TUB_FLANGE_SHOP"
+    },
+    {
+      "room": "TX-BATH4",
+      "step": "08_INSPECTION_LEAK_OR_FLOOD_TEST"
+    },
+    {
+      "room": "TX-BATH4",
+      "step": "10_MEASURED_NET_AREA_AND_CONDITIONAL_FULL_CASES"
+    },
+    {
+      "room": "TX-POWDER",
+      "step": "02_INDIVIDUAL_MAKER_WALL_APPLICATION"
+    },
+    {
+      "room": "TX-POWDER",
+      "step": "03_INDIVIDUAL_NICHE_APPLICATION_AND_NET"
+    },
+    {
+      "room": "TX-POWDER",
+      "step": "04_LEVEL_FLOOR_RAW_WET_LAB"
+    },
+    {
+      "room": "TX-POWDER",
+      "step": "05_INDEPENDENT_SHOWER_PAN_RAW_WET_LAB"
+    },
+    {
+      "room": "TX-POWDER",
+      "step": "06_SELECTED_PLUMBING_ROUGH_AND_MODEL_BRANCH"
+    },
+    {
+      "room": "TX-POWDER",
+      "step": "07_MEMBRANE_SLOPE_AND_TUB_FLANGE_SHOP"
+    },
+    {
+      "room": "TX-POWDER",
+      "step": "08_INSPECTION_LEAK_OR_FLOOD_TEST"
+    },
+    {
+      "room": "TX-POWDER",
+      "step": "10_MEASURED_NET_AREA_AND_CONDITIONAL_FULL_CASES"
+    },
+    {
+      "room": "TX-POWDER2",
+      "step": "02_INDIVIDUAL_MAKER_WALL_APPLICATION"
+    },
+    {
+      "room": "TX-POWDER2",
+      "step": "03_INDIVIDUAL_NICHE_APPLICATION_AND_NET"
+    },
+    {
+      "room": "TX-POWDER2",
+      "step": "04_LEVEL_FLOOR_RAW_WET_LAB"
+    },
+    {
+      "room": "TX-POWDER2",
+      "step": "05_INDEPENDENT_SHOWER_PAN_RAW_WET_LAB"
+    },
+    {
+      "room": "TX-POWDER2",
+      "step": "06_SELECTED_PLUMBING_ROUGH_AND_MODEL_BRANCH"
+    },
+    {
+      "room": "TX-POWDER2",
+      "step": "07_MEMBRANE_SLOPE_AND_TUB_FLANGE_SHOP"
+    },
+    {
+      "room": "TX-POWDER2",
+      "step": "08_INSPECTION_LEAK_OR_FLOOD_TEST"
+    },
+    {
+      "room": "TX-POWDER2",
+      "step": "10_MEASURED_NET_AREA_AND_CONDITIONAL_FULL_CASES"
+    },
+    {
+      "room": "TX-WC",
+      "step": "02_INDIVIDUAL_MAKER_WALL_APPLICATION"
+    },
+    {
+      "room": "TX-WC",
+      "step": "03_INDIVIDUAL_NICHE_APPLICATION_AND_NET"
+    },
+    {
+      "room": "TX-WC",
+      "step": "04_LEVEL_FLOOR_RAW_WET_LAB"
+    },
+    {
+      "room": "TX-WC",
+      "step": "05_INDEPENDENT_SHOWER_PAN_RAW_WET_LAB"
+    },
+    {
+      "room": "TX-WC",
+      "step": "06_SELECTED_PLUMBING_ROUGH_AND_MODEL_BRANCH"
+    },
+    {
+      "room": "TX-WC",
+      "step": "07_MEMBRANE_SLOPE_AND_TUB_FLANGE_SHOP"
+    },
+    {
+      "room": "TX-WC",
+      "step": "08_INSPECTION_LEAK_OR_FLOOD_TEST"
+    },
+    {
+      "room": "TX-WC",
+      "step": "10_MEASURED_NET_AREA_AND_CONDITIONAL_FULL_CASES"
+    }
+  ],
+  "non_description_156_row_keys_quantities_release_flags_unchanged": true,
+  "R21_predecessor_R20_parent_sha_relinked": true,
+  "older_signed_R014_R015_R017_R018_R019_unchanged": true,
+  "R014_scoring": null,
+  "R015_scoring": null,
+  "owner_approval": false,
+  "GC_release": false,
+  "procurement_release": false,
+  "global_13_room_done": false
+}

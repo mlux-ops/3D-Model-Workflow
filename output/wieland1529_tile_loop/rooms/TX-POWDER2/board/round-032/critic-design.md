@@ -1,0 +1,43 @@
+# R032 — independent blind DESIGN critique — TX-POWDER2
+
+**Seat:** DESIGN 0.25; independently rated two neutral candidates only, five equally weighted 1–5 DESIGN criteria. **Date:** 2026-11-07. **Decision authority:** none; prime applies other critic weights and champion rules.
+
+## Room evidence and fixed scope
+TX-POWDER2; copies 009A/009B. DRY vanity wall W1 **3.806 ft × 9.25 ft** assumed, prior 27-SF room, **wood floor unchanged** ([own geometry](../../geometry.json)). Source-listed deck-mounted single-hole **Hansgrohe Tecturis E 73072341** is **Brushed Black Chrome**: [own plumbing.json](../../plumbing.json) row notes suffix **341** explicitly establish finish despite structured `finish: null`. Owner **basin UNSELECTED**; no tile LEVEL, PAN, NICHE or CEILING.
+
+**Price and quantity control:** Original **40.50 SF/copy gross** already includes the initial **15% waste ONCE**: A **40.50×$8.20=$332.10/copy**; B **40.50×$5.56=$225.18/copy**. Tile only; no basin, separate backsplash, wood-floor tile or new waste allowance. Source: [same-job Elm 2026-09-04 trade quotes](../../../../inputs/TRADE_QUOTES.md), versus exact [F&D Purity SKU 100507722](https://www.flooranddecor.com/ceramic-tile/la-belle-purity-high-gloss-ceramic-tile-100507722.html) or [Antique Blue SKU 100507706](https://www.flooranddecor.com/ceramic-tile/la-belle-antique-blue-high-gloss-ceramic-tile-100507706.html) public Kirkwood Atlanta GA 2026-11-07 retail where applicable. No Chicago stock or landed cost asserted.
+
+## Candidate A
+Elm Vera Forma **Indigo Edge** Glossy **6×6 relief** dry wall, nominal 8.6 mm; **$8.20/SF** 2026-09-04 Elm trade quote for 1529 Wieland; [manufacturer product](https://www.elmsurfaces.com/product/indigo-edge-vera-forma), [Vera Forma maker collection](https://www.elmsurfaces.com/product-collection/vera-forma).
+
+| Independent DESIGN criterion | Rating | Evidence-based reason |
+|---|---:|---|
+| Faucet form and selected / known metal | 4/5 | Dark Indigo Edge and **Brushed Black Chrome** Tecturis 73072341 offer deliberate dark-tonal coordination, while light reflected from glossy relief may separate the two dark finishes; no selected basin finish may be assumed ([maker Indigo](https://www.elmsurfaces.com/product/indigo-edge-vera-forma), [own plumbing suffix 341](../../plumbing.json)). |
+| Relief, mounting-plane and mirror integration | 3/5 | The faucet is **deck mounted**, not penetrating relief wall tile; nevertheless a 3D **6×6** face can complicate mirror standoffs, edge trims and flat backsplash-backplate landing; exact basin, mirror and mount positions remain unknown ([own plumbing](../../plumbing.json), Candidate A lines 7,10,18). |
+| Palette and wood-floor relationship | 4/5 | Indigo gloss contrasts a naturally warmer wood floor material, offering a deliberate cool wall / warm floor hierarchy, though actual timber species/stain and reflected blue cast are unverified ([own geometry floor_finish](../../geometry.json), [maker Indigo](https://www.elmsurfaces.com/product/indigo-edge-vera-forma)). |
+| Feature proportion, module, layout and grout | 4/5 | A nominal **6-in grid** is a strong clear module on the **3.806-ft ≈45.7-in** assumed wall; to avoid thin exposed edges, the mirror-centered layout must be redimensioned rather than declaring an exact cut plan ([own geometry](../../geometry.json), Candidate A line 10). |
+| Visual interest / material hierarchy | 5/5 | Sculpted indigo ceramic supplies memorable color and depth while leaving the retained wood floor uninterrupted. OT01 #2N demonstrates strong, intentionally layered dry-bath contrast only; it does not establish a 6×6 tile precedent ([OT01 photo review](../../../../research/comps/R030_AUTHENTIC_OLD_TOWN_PHOTOGRAPHIC_EVIDENCE_20261107.md), lines 7–11). |
+
+**Seat mean:** **4.0/5** = (4 + 3 + 4 + 4 + 5) / 5 = **4.0**, arithmetic mean to one decimal.
+**top_fix:** Produce a mirror-centered 6×6 relief elevation with **flat mirror/splash landings and edge profiles**, resolving tile thickness/side cuts while retaining the Brushed Black Chrome deck faucet and leaving basin UNSELECTED.
+**gate_flags:** **No confirmed hard gate failure**: Elm Vera Forma Indigo Edge maker designates **Walls** for this dry feature; no obsolete shower wet-area approval required, no floor DCOF applicable. Brushed Black Chrome 73072341 may harmonize with deep indigo without a proven HIGH clash; no owner veto. **Basin remains UNSELECTED**, so true deck-faucet projection, sink rim relation, mirror and tile/splash extent OPEN. Actual 6×6 cuts, owner budget, current Chicago lots/ETA and delivered cost OPEN.
+**confidence:** **medium-low**
+
+## Candidate B
+Floor & Decor **La Belle Antique Blue High Gloss** pressed ceramic **3×12**, exact **SKU 100507706**; **$5.56/SF** from **$1.39 per 0.25-SF piece** Kirkwood Atlanta GA selected storefront retail 2026-11-07; [exact product](https://www.flooranddecor.com/ceramic-tile/la-belle-antique-blue-high-gloss-ceramic-tile-100507706.html).
+
+| Independent DESIGN criterion | Rating | Evidence-based reason |
+|---|---:|---|
+| Faucet form and selected / known metal | 4/5 | Saturated antique blue can visually complement confirmed **Brushed Black Chrome 73072341** without a warm-gold/black-chrome clash; however both surfaces are dark and the deck-faucet geometry is conditional on the unselected basin ([own plumbing](../../plumbing.json), [La Belle Antique Blue 100507706](https://www.flooranddecor.com/ceramic-tile/la-belle-antique-blue-high-gloss-ceramic-tile-100507706.html)). |
+| Relief, mounting-plane and mirror integration | 4/5 | Less relief than sculptural Indigo Edge makes glossy **3×12 pressed ceramic** comparatively straightforward at mirror edges and a future backsplash land; the deck-mounted faucet does not create tile-wall penetrations, but sink/mirror elevation is still unknown ([F&D product](https://www.flooranddecor.com/ceramic-tile/la-belle-antique-blue-high-gloss-ceramic-tile-100507706.html), [plumbing](../../plumbing.json)). |
+| Palette and wood-floor relationship | 4/5 | Glossy antique-blue wall provides clear cool-colored counterpoint to the existing wood floor, without modifying wood or claiming its grain/stain; the exact wood tone and vanity finish remain unverified ([own geometry](../../geometry.json), [exact Antique Blue color](https://www.flooranddecor.com/ceramic-tile/la-belle-antique-blue-high-gloss-ceramic-tile-100507706.html)). |
+| Feature proportion, module, layout and grout | 4/5 | **3×12** module is adaptable on the **3.806-ft × 9.25-ft** vanity feature, but the candidate says 'stack' without a field-verified horizontal/vertical orientation, grout size, mirror cut or exposed terminal position ([own geometry](../../geometry.json), Candidate B lines 7,10,18). |
+| Visual interest / material hierarchy | 4/5 | Saturated small rectangular blue offers visual interest and good gloss/light response, although its flat profile is less materially differentiated than Indigo relief. OT01's powder photo illustrates deliberate contrast but provides no antique-blue tile precedent ([Old Town dry comp photo report](../../../../research/comps/R030_AUTHENTIC_OLD_TOWN_PHOTOGRAPHIC_EVIDENCE_20261107.md), lines 7–11). |
+
+**Seat mean:** **4.0/5** = (4 + 4 + 4 + 4 + 4) / 5 = **4.0**, arithmetic mean to one decimal.
+**top_fix:** Resolve the owner basin and mirror elevation sufficiently to set the Antique Blue **3×12 orientation, grout and side terminations** around the confirmed 341 Brushed Black Chrome deck faucet; do not substitute a basin.
+**gate_flags:** **No confirmed hard tile gate failure**: La Belle Antique Blue exact SKU 100507706 currently listed on official F&D site as an interior wall product, no selected-store discontinuation observed. Dry-wall use means **no wet-wall listing or floor DCOF requirement**. Confirmed Brushed Black Chrome 341 is not a demonstrated HIGH color conflict. Basin selection, spout projection and depth, mirror/splash, Chicago matched lots and pricing, actual geometry and tile budget OPEN. Out-of-state retail does not equal Chicago availability.
+**confidence:** **medium-low**
+
+**Blind review method and evidence boundary:** Only current-round [A](candidates/A.md) and [B](candidates/B.md) for this room, [own geometry](../../geometry.json), [own plumbing](../../plumbing.json), four mandatory governance documents, permitted `research/products`, attributable `research/comps`, and linked official product pages. No earlier critiques, scoring, private accepted/incumbent mapping, ROOMS, ledger, histories or other seats used. The photographs establish observed material character only, not exact proposed products or widespread market prevalence.
+

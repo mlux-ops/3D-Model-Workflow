@@ -1,0 +1,25 @@
+"""Preserve original FORMAL R017 room/score line, append R43/R44 shop facts."""
+from pathlib import Path
+import hashlib
+B=Path(__file__).resolve().parents[1]
+P=B/"deliverables/integrated-r43-four-wet-bath-niche-focal-wall-fabrication-and-13room-GC/MANIFEST.json"
+assert hashlib.sha256(P.read_bytes()).hexdigest()=="71921913b2f8efb733a40d1ca87154c8d816af1519e1a59e5f7dc03943a5d6b0"
+S=B/"state/ROUND041_FULL_AND_R42_FOLLOWON_CURRENT_ACTIVE_BOARD_FIVE_LINE_STATUS.txt"
+base=S.read_text(encoding="utf-8").splitlines()
+assert len(base)==5 and base[0]=="STATUS round=017 phase=4-deepen" and base[1].count("=")==13
+out=B/"state/ROUND043_FULL_AND_R44_NEXT_SOURCE_CURRENT_ACTIVE_BOARD_FIVE_LINE_STATUS.txt"
+assert not out.exists()
+blockers=("R43 PH3/TX3 owner TUB vs WALKIN UNSELECTED (PH3 basin UNSELECTED); PH4 actual WALKIN Brizo BT062415-BNX BNX square POINT with independent four-plane PAN and LEVEL; TX4 actual Duravit tub/Hansgrohe Matte White NO tiled PAN. "
+ "Source W3 PH3 27.96in centered24in hypothetical niche creates 1.98in side-piers FAIL required 3in; centered16in creates 5.98in source-only PASS; PH4/TX4 W3 30.48in centered24in 3.24in nominal piers but hypothetical quarter-inch edge profile each side yields 2.99in finished FAIL (R44 max width23.98in); TX3 W3 31.20in 24in centered3.60in, offset1in2.60in FAIL; actual niche locations/count, glass/pipe/valve, trim and real native 1529 measurement unknown. "
+ "Individual original PH3 Tones Opal wet WALL, PH4 Cortar Bone Ribbed wet WALL and Clara Caviar wet NICHE permissions absent, TX3 Tones Emerald archived maker wet WALL but exact live SKU recheck missing, TX4 Cortar Charcoal original Soft 24x48 individual application and Caviar niche pending. Soho/Noho wet WALL individually listed but factory exact order SKU, waterproof approved NICHE/membrane/backer, calibrations/joints/installed finish-plane and owner alternative unselected; dry wall zoning requires actual verified outside spray/glass. "
+ "R42 PH2/TX4 original Hansgrohe 15758701 thermostat conflicts with 72411701 PB-only diverter spout; 01850181 rough/current piping, actual 8-18in METAL single elbow no PEX drop and maker-approved one selected control/spout correction unverified; TX2 original selected Duravit/Chrome tub complete mixer/spout/rough item missing, all three actual Duravit tubs NO tiled PAN. "
+ "Original PH/TX Primary Brizo Black Onyx BNX 48in LINEAR drains + required separate roughs, NO new niches; WC inherited floor once, TX203A unplaced and original quote LEVEL/WC/PAN included/excluded unknown; powder wood dry wall floor DCOF N/A, PH Brizo WALL/R65700, TX AXOR vs Metropol competing WALL trims/rough owner unselected, TX Powder2 original DECK Tecturis E basin UNSELECTED. "
+ "Individual original exact RAW numeric wet LEVEL and distinct POINT/LINEAR PAN lab reports absent (tub-only PAN and powder WOOD N/A), true 1529 site unavailable (accessible 1527 not certifiable), measured waterproofing/selected rough/threshold and independent factory niche system, real physical 1:1 samples/renders absent; original quote opening vs full-wall and PAN included/excluded mutually exclusive, original historical $23572.44 four-unit material-only with original15pct gross once, old niche/Sandstone/Grey/powder already included, no paid credit or payable shortage automatically. No current Chicago exact SKU/lot/case/stock/freight/ETA, full GC installed bid or owner/trade/purchase approvals. "
+ "Original DESIGN worker9 FAILED missing two R014 critiques, R015 three-critic HOLD, frozen original R017 source keys and no full independent panel; sole standing non-Pro Reviewer15 FINISHED/nonrevivable, R43 independent report UNSENT/UNREVIEWED, no weighted score/champion release; entire 13-room objective OPEN")
+nxt=("Develop full R44 measured fabrication jig across 8 PH3/PH4/TX3/TX4 physical units using actual architect-certified 1529 W3 finish width, valve/glass obstruction and selected niche field offsets with real maker trim projection: R44 preliminary 108 continuous max-opening scenarios source signed SHA b354b6fffe308bc204c68ee7a56559a6ed3c7dab6ae3dcaea8621f1d43e5c0f5, NOT integrated approval. "
+ "Obtain exact manufacturer SKU/color/finish WALL and independent NICHE membrane/tub flange/Brizo or Delta POINT assembly, actual numeric wet LEVEL vs separate POINT/LINEAR PAN labs, physical 1:1, true old purchased/paid stock/credit and real Chicago supplier and full GC labor bid, owner/architect/plumber/WP/tiler/supplier/GC/purchaser signatures. "
+ "Keep all original owner-selected fixtures and undecided bath programs, original 13 rooms/26 instances and R017 original four specialist MARKET .30 DESIGN .25 BUILD .25 COST .20 with each >=3.0, hard gates and >=+.25 advantage; no contact, purchasing, Revit/Smartsheet/Git/model writes or GLOBAL DONE")
+lines=[base[0],base[1],"changed: none","blockers: "+blockers,"next: "+nxt]
+assert len(lines)==5 and lines[1].count("=")==13
+out.write_text("\n".join(lines)+"\n",encoding="utf-8")
+print("R43_R44_FORMAL_R017_BOARD_STATUS_5LINES",len(out.read_bytes()))

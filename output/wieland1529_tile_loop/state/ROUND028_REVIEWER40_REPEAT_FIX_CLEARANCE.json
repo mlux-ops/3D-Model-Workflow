@@ -1,0 +1,119 @@
+{
+  "round": 28,
+  "date": "2026-11-07",
+  "reviewer": "worker-40",
+  "scope": "R028 PRECISE FIX A/B repeat audit only",
+  "exact_verdict": "CONTINUE",
+  "cleared_for": "SOURCE_CORRECTION_ONLY",
+  "report": {
+    "path": "state/ROUND028_REVIEWER40_REPEAT_FIX_REVIEW.md",
+    "sha256": "9368d544356bda11c2eb0ff9fef7b63ed37b9345f8d4b76d15e485ab1de562f0",
+    "bytes": 2787
+  },
+  "control_receipt": {
+    "path": "state/ROUND028_REVIEWER40_PRECISE_FIX_A_B_SHA_RECEIPT.json",
+    "sha256": "0ecb9a496a9e24382b24ca74f9144405ee5b4d16cfbf0d1e449ae8aa0f23acca",
+    "bytes": 3645
+  },
+  "prior_reviewer_clearance": {
+    "path": "state/ROUND028_INDEPENDENT_REVIEWER40_CLEARANCE.json",
+    "sha256": "711cd207f7c2ae612d4613ae1ca9831580a2247b504700b40ca41d43ee2f5a2b",
+    "bytes": 7323
+  },
+  "receipt_modification_verification": [
+    {
+      "path": "rooms/PH-PRIMARY/vendor_comparison.md",
+      "before_sha256": "692e7dabe127ce2f0f75a0f9d9c3f59dde51fa5642583847213d60cdeb3dd725",
+      "before_bytes": 11533,
+      "after_sha256": "8de68930faa2bacc3c928d32611144d6f3b4e42ad750ef8ae2b6be497a52a283",
+      "after_bytes": 15982,
+      "before_matches_prior_clearance": true,
+      "after_matches_live": true,
+      "corrected_bottega_surface_rows": 2
+    },
+    {
+      "path": "rooms/PH-BATH3/vendor_comparison.md",
+      "before_sha256": "6f6c079056934cc1c3ec4cd726df29af380fca9522b9ccdca5bf500d418005f9",
+      "before_bytes": 13017,
+      "after_sha256": "30128f1e7e1e7d56d93e9c07769bab56edeb04a13bd09ecf7b654635ea6e94e1",
+      "after_bytes": 18171,
+      "before_matches_prior_clearance": true,
+      "after_matches_live": true,
+      "corrected_bottega_surface_rows": 3
+    },
+    {
+      "path": "rooms/PH-BATH4/vendor_comparison.md",
+      "before_sha256": "c2f0e4b665ffb3b70c3797ae40e279d5a7ffe639f311010666d765f33f39e7ad",
+      "before_bytes": 13334,
+      "after_sha256": "8fd6927ca73430517e22f73ea40b368e151af5deb997d6fcef4af2f8536d5ff6",
+      "after_bytes": 18519,
+      "before_matches_prior_clearance": true,
+      "after_matches_live": true,
+      "corrected_bottega_surface_rows": 3
+    },
+    {
+      "path": "rooms/TX-PRIMARY/vendor_comparison.md",
+      "before_sha256": "b6643c769d7b4466b8678a69e9c8e78afaf5887f7a5fddcdf4bc8b65164041dd",
+      "before_bytes": 11175,
+      "after_sha256": "7f7d0c8c98bce2496a37aaa8bfa6fb03abb2a84e3191f21b0fc8e5cd2d0e29d4",
+      "after_bytes": 15674,
+      "before_matches_prior_clearance": true,
+      "after_matches_live": true,
+      "corrected_bottega_surface_rows": 2
+    },
+    {
+      "path": "research/products/13_ROOM_SURFACE_QUALIFICATION_GAP_REGISTER_20261107.md",
+      "before_sha256": "5fbc75fdcae565cfef4c340c187ed2ad9a0aae0732e5a5f758c64daed393f4de",
+      "before_bytes": 16252,
+      "after_sha256": "545ee48f5c6e3adc65a49d89315b50f16afc8023cdfd325c11fe5d5c3321f3aa",
+      "after_bytes": 16576,
+      "before_matches_prior_clearance": true,
+      "after_matches_live": true,
+      "corrected_bottega_surface_rows": 0
+    }
+  ],
+  "new_primary_research": {
+    "path": "research/products/R029_LIVE_PRIMARY_SOURCE_RECHECK_20261107.md",
+    "sha256": "6d571236c66d4868a780c571b5b0f46fac03aae37e7e21fe4365b458e7bd3a63",
+    "bytes": 5308,
+    "matches_receipt_and_live": true
+  },
+  "fix_a": {
+    "corrected_comparison_surface_rows": 10,
+    "room_row_counts": {"PH-PRIMARY": 2, "PH-BATH3": 3, "PH-BATH4": 3, "TX-PRIMARY": 2},
+    "sku_price_size_verified": [
+      {"sku": "100323039", "size": "31x31", "usd_per_sf": 11.95},
+      {"sku": "100324943", "size": "23x23", "usd_per_sf": 10.95},
+      {"sku": "100307901", "size": "47x47", "usd_per_sf": 12.95}
+    ],
+    "sku_specific_wet_permission_and_dcof": "UNKNOWN",
+    "passed": true
+  },
+  "fix_b": {
+    "distinct_product_designs": ["Luxe Sand (both formats count as one)", "Riviera Oat", "Chastain Ivory", "Tower Gray"],
+    "third_distinct_pan_product_missing_claim_corrected": true,
+    "wet_dcof_and_shower_floor_yes_is_product_level_only": true,
+    "chastain_camelback_usd_per_sf": 4.49,
+    "chastain_camelback_usd_per_box": 69.06,
+    "chastain_kirkwood_indexed_price": 3.99,
+    "chastain_kirkwood_selected_store_local_discontinuation": true,
+    "chastain_chicago_orderability": "UNKNOWN; not demonstrated",
+    "four_comparisons_preserve_availability_warning": true,
+    "passed": true
+  },
+  "owner_branch": {
+    "TX-BATH3": "owner-UNRESOLVED tub versus walk-in; TUB has PAN N/A and WALK-IN has only conditional BNX POINT PAN",
+    "no_owner_decision_invented": true,
+    "passed": true
+  },
+  "limits": {
+    "scope_limited_to_source_fix": true,
+    "r029_candidates_status": "PREPARED NOT FROZEN per permitted comparisons; candidate files not read",
+    "separate_independent_pre_dispatch_review_required": true,
+    "critic_dispatch_authorized": false,
+    "champion_acceptance_authorized": false,
+    "procurement_authorized": false,
+    "global_DONE": false
+  },
+  "next_command": "Prime: continue room-isolated R029 candidate/evidence preparation, then submit the prepared unfrozen cohort for a separate independent pre-dispatch review. No dispatch or champion promotion from this source-fix clearance."
+}

@@ -1,0 +1,455 @@
+{
+  "candidate": "E:\\Claude\\3D-Model-Workflow\\output\\belmont_ph_good_rfa_20261016\\candidates\\Alora_Cassia_LP549448MBCL_R2025_R02.rfa", 
+  "checks": {
+    "agop_original_materials": true, 
+    "all_exact_type_names": true, 
+    "black_material_used_on_placed_faces": true, 
+    "build_receipt_matches_candidate": true, 
+    "clear_glass_95_shaded_transparency": true, 
+    "clear_glass_realistic_appearance": true, 
+    "clear_glass_type_binding": true, 
+    "clear_material_used_on_placed_faces": true, 
+    "complete_placed_solid_geometry": true, 
+    "level_based_placement": true, 
+    "lighting_fixture_category": true, 
+    "manufacturer_48x13_375x6_body": true, 
+    "matte_black_preserved": true, 
+    "mbop_original_materials": true, 
+    "no_family_warnings": true, 
+    "no_project_warnings": true, 
+    "one_level_based_hosted_type": true, 
+    "original_and_candidate_files_unchanged": true, 
+    "sha256_expected_Alora_Cassia_LP549448MBCL_R2025.rfa": true, 
+    "sha256_expected_Alora_Cassia_LP549448MBCL_R2025_R02.rfa": true, 
+    "sha256_expected_LP549448-Cassia.rfa": true
+  }, 
+  "family_category": "Lighting Fixtures", 
+  "family_placement_type": "OneLevelBasedHosted", 
+  "family_warnings": [], 
+  "files_unchanged": true, 
+  "mesh_visual_review": {
+    "full_display_geometry_accounted_for": false, 
+    "loose_mesh_count": 4, 
+    "note": "Unclassified detached meshes not used as native solid-envelope authority", 
+    "status": "REVIEW_PENDING"
+  }, 
+  "output": "E:\\Claude\\3D-Model-Workflow\\output\\belmont_ph_good_rfa_20261016\\qa\\cassia_mbcl_r02_native_qa_fix03.json", 
+  "photometric_status": "NOT_TESTED_BY_THIS_SCRIPT", 
+  "placement": {
+    "attempted": true, 
+    "disposable_project": true, 
+    "expected_level_id": 8565, 
+    "family_placement_type": "OneLevelBasedHosted", 
+    "geometry": {
+      "all_display_geometry_accounted_for": false, 
+      "complete": false, 
+      "errors": [], 
+      "full_solid_envelope": {
+        "max_local_in": [
+          23.938829999999999, 
+          6.6848900000000002, 
+          157.48032000000001
+        ], 
+        "min_local_in": [
+          -23.938829999999999, 
+          -6.6848900000000002, 
+          105.83069999999999
+        ], 
+        "xyz_in": [
+          47.877659999999999, 
+          13.369790000000000, 
+          51.649610000000003
+        ]
+      }, 
+      "loose_mesh_count": 4, 
+      "material_face_counts": {
+        "(unbound)": 211, 
+        "BULB_GLASS": 64, 
+        "BULB_PLASTIC": 40, 
+        "CASSIA_CLEAR_GLASS_MBCL": 32, 
+        "CASSIA_MB_FINISH": 198
+      }, 
+      "measurement_method": "Placed native solids; all triangulated faces and sampled analytic edges, nested GetInstanceGeometry, inverse instance transform", 
+      "nested_geometry_instance_count": 1, 
+      "null_analytic_edges_skipped": 0, 
+      "positive_volume_solid_count": 16, 
+      "solid_geometry_complete": true
+    }, 
+    "level": {
+      "level_id": 8565, 
+      "level_reference_matches": true, 
+      "note": "OneLevelBasedHosted legitimately places by Level and may have no physical Host", 
+      "observed_level_ids": {
+        "Element.LevelId": 8565, 
+        "FAMILY_LEVEL_PARAM": 8565, 
+        "INSTANCE_SCHEDULE_ONLY_LEVEL_PARAM": -1
+      }, 
+      "physical_host_id": null
+    }, 
+    "level_based_placement_verified": true, 
+    "manufacturer_body": {
+      "axis_convention": "max(local X,local Y)=L; min=W; local Z=H", 
+      "black_face_count": 165, 
+      "body_envelope_local_xyz": {
+        "max_local_in": [
+          23.938829999999999, 
+          6.6848900000000002, 
+          111.73622000000000
+        ], 
+        "min_local_in": [
+          -23.938829999999999, 
+          -6.6848900000000002, 
+          105.83069999999999
+        ], 
+        "xyz_in": [
+          47.877659999999999, 
+          13.369790000000000, 
+          5.9055200000000001
+        ]
+      }, 
+      "delta_in_LWH": [
+        -0.12234, 
+        -0.0052100000000000002, 
+        -0.094479999999999995
+      ], 
+      "evaluated": true, 
+      "glass_anchor_envelope": {
+        "max_local_in": [
+          23.938829999999999, 
+          6.6848900000000002, 
+          111.73622000000000
+        ], 
+        "min_local_in": [
+          -23.938829999999999, 
+          -6.6848900000000002, 
+          105.83069999999999
+        ], 
+        "xyz_in": [
+          47.877659999999999, 
+          13.369790000000000, 
+          5.9055200000000001
+        ]
+      }, 
+      "glass_anchor_solid_count": 4, 
+      "glass_face_count": 32, 
+      "max_abs_error_in": 0.12234, 
+      "measured_body_in_LWH": [
+        47.877659999999999, 
+        13.369790000000000, 
+        5.9055200000000001
+      ], 
+      "nominal_body_in_LWH": [
+        48.0, 
+        13.375, 
+        6.0
+      ], 
+      "omitted_solids": [
+        {
+          "materials": {
+            "(unbound)": 2, 
+            "CASSIA_MB_FINISH": 2
+          }, 
+          "solid_index": 0, 
+          "why": "tall_suspension_or_control", 
+          "xyz_in": [
+            0.47244000000000003, 
+            0.47244000000000003, 
+            46.041829999999997
+          ]
+        }, 
+        {
+          "materials": {
+            "(unbound)": 2, 
+            "CASSIA_MB_FINISH": 2
+          }, 
+          "solid_index": 1, 
+          "why": "tall_suspension_or_control", 
+          "xyz_in": [
+            0.47244000000000003, 
+            0.47244000000000003, 
+            46.0
+          ]
+        }, 
+        {
+          "materials": {
+            "(unbound)": 104, 
+            "CASSIA_MB_FINISH": 29
+          }, 
+          "solid_index": 2, 
+          "why": "outside_shade_body_region", 
+          "xyz_in": [
+            11.023619999999999, 
+            4.3307099999999998, 
+            2.2244100000000002
+          ]
+        }
+      ], 
+      "passed": true, 
+      "scope_supported": true, 
+      "selected_solids": 13, 
+      "selection_rule": "Whole positive-volume solids with known fixture materials, <=6.75 in tall, intersecting clear shade vertical neighborhood (+/-1 in); excludes long drops/reference controls", 
+      "status": "MATCH_WITHIN_0_125_IN", 
+      "tolerance_in_each_dimension": 0.125
+    }, 
+    "placed_symbol_id": 8541, 
+    "placed_symbol_name": "LP549448MBCL", 
+    "placement_api": "NewFamilyInstance(XYZ, FamilySymbol, Level, StructuralType)", 
+    "project_saved": false, 
+    "selection_method": "exact loaded-family symbol IDs + unique glass and metal material fingerprint; names informational", 
+    "warnings": []
+  }, 
+  "placement_diagnostics": {
+    "loaded_family_id": 2783, 
+    "loaded_family_name": "Alora_Cassia_LP549448MBCL_R2025_R02", 
+    "loaded_family_symbol_ids": [
+      8537, 
+      8539, 
+      8541
+    ], 
+    "loaded_symbols": [
+      {
+        "family_name": "Alora_Cassia_LP549448MBCL_R2025_R02", 
+        "glass": {
+          "appearance": "Glass - Frosted", 
+          "material_id": 2815, 
+          "name": "CASSIA_OPAL_GLASS", 
+          "parameter_found": true, 
+          "storage_type": "ElementId", 
+          "transparency_percent": 14
+        }, 
+        "id": 8537, 
+        "labels": {
+          "ALL_MODEL_TYPE_NAME": "LP549448MBOP", 
+          "Family and Type": null, 
+          "SYMBOL_NAME_PARAM": "LP549448MBOP", 
+          "Type Name": "LP549448MBOP", 
+          "element_name": "LP549448MBOP", 
+          "symbol_name_param": "LP549448MBOP"
+        }, 
+        "metal": {
+          "appearance": "Plastic - Matte (Black)", 
+          "material_id": 2807, 
+          "name": "CASSIA_MB_FINISH", 
+          "parameter_found": true, 
+          "storage_type": "ElementId", 
+          "transparency_percent": 0
+        }
+      }, 
+      {
+        "family_name": "Alora_Cassia_LP549448MBCL_R2025_R02", 
+        "glass": {
+          "appearance": "Glass - Frosted", 
+          "material_id": 2815, 
+          "name": "CASSIA_OPAL_GLASS", 
+          "parameter_found": true, 
+          "storage_type": "ElementId", 
+          "transparency_percent": 14
+        }, 
+        "id": 8539, 
+        "labels": {
+          "ALL_MODEL_TYPE_NAME": "LP549448AGOP", 
+          "Family and Type": null, 
+          "SYMBOL_NAME_PARAM": "LP549448AGOP", 
+          "Type Name": "LP549448AGOP", 
+          "element_name": "LP549448AGOP", 
+          "symbol_name_param": "LP549448AGOP"
+        }, 
+        "metal": {
+          "appearance": "Gold - Polished", 
+          "material_id": 2813, 
+          "name": "CASSIA_AG-FINISH", 
+          "parameter_found": true, 
+          "storage_type": "ElementId", 
+          "transparency_percent": 0
+        }
+      }, 
+      {
+        "family_name": "Alora_Cassia_LP549448MBCL_R2025_R02", 
+        "glass": {
+          "appearance": "Cassia Clear Glass LP549448MBCL", 
+          "material_id": 2820, 
+          "name": "CASSIA_CLEAR_GLASS_MBCL", 
+          "parameter_found": true, 
+          "storage_type": "ElementId", 
+          "transparency_percent": 95
+        }, 
+        "id": 8541, 
+        "labels": {
+          "ALL_MODEL_TYPE_NAME": "LP549448MBCL", 
+          "Family and Type": null, 
+          "SYMBOL_NAME_PARAM": "LP549448MBCL", 
+          "Type Name": "LP549448MBCL", 
+          "element_name": "LP549448MBCL", 
+          "symbol_name_param": "LP549448MBCL"
+        }, 
+        "metal": {
+          "appearance": "Plastic - Matte (Black)", 
+          "material_id": 2807, 
+          "name": "CASSIA_MB_FINISH", 
+          "parameter_found": true, 
+          "storage_type": "ElementId", 
+          "transparency_percent": 0
+        }
+      }
+    ], 
+    "matching_symbol_ids": [
+      8541
+    ], 
+    "selection_method": "exact loaded-family symbol IDs + unique glass and metal material fingerprint; names informational"
+  }, 
+  "purpose": "Independent native read-only QA of Cassia LP549448MBCL R02", 
+  "revit_version": "2025", 
+  "run_utc": "2026-10-16T06:35:45Z", 
+  "schema_version": 1, 
+  "source_files_after": {
+    "E:\\Claude\\3D-Model-Workflow\\output\\belmont_ph_good_rfa_20261016\\candidates\\Alora_Cassia_LP549448MBCL_R2025_R02.rfa": {
+      "bytes": 2048000, 
+      "exists": true, 
+      "path": "E:\\Claude\\3D-Model-Workflow\\output\\belmont_ph_good_rfa_20261016\\candidates\\Alora_Cassia_LP549448MBCL_R2025_R02.rfa", 
+      "sha256": "c380fb71be8d69008911cef833b0838e53bc96b84650ece9d63d817ab56f3c02"
+    }, 
+    "E:\\Claude\\3D-Model-Workflow\\output\\belmont_ph_good_rfa_20261016\\families\\Alora_Cassia_LP549448MBCL_R2025.rfa": {
+      "bytes": 2043904, 
+      "exists": true, 
+      "path": "E:\\Claude\\3D-Model-Workflow\\output\\belmont_ph_good_rfa_20261016\\families\\Alora_Cassia_LP549448MBCL_R2025.rfa", 
+      "sha256": "27ce97b87c28cabaf249ebc4410ce9bf1b387e16a2232e2fc29e153530c09ac3"
+    }, 
+    "E:\\Claude\\3D-Model-Workflow\\output\\belmont_ph_good_rfa_20261016\\qa\\cassia_mbcl_r02_build.json": {
+      "bytes": 2155, 
+      "exists": true, 
+      "path": "E:\\Claude\\3D-Model-Workflow\\output\\belmont_ph_good_rfa_20261016\\qa\\cassia_mbcl_r02_build.json", 
+      "sha256": "a742ec4f0a499126e526fffa07193036fcfb076fdfdf7472be22e6ea2903a6c8"
+    }, 
+    "E:\\Claude\\3D-Model-Workflow\\output\\belmont_ph_good_rfa_20261016\\sources\\oem\\extracted\\ALR1280090_LP549448_Cassia_Revit\\LP549448-Cassia.rfa": {
+      "bytes": 2768896, 
+      "exists": true, 
+      "path": "E:\\Claude\\3D-Model-Workflow\\output\\belmont_ph_good_rfa_20261016\\sources\\oem\\extracted\\ALR1280090_LP549448_Cassia_Revit\\LP549448-Cassia.rfa", 
+      "sha256": "1bd05892bc0598d43b30afca32f648ad26fbd6df2e3776bd8c169b1ad743db9e"
+    }
+  }, 
+  "source_files_before": {
+    "E:\\Claude\\3D-Model-Workflow\\output\\belmont_ph_good_rfa_20261016\\candidates\\Alora_Cassia_LP549448MBCL_R2025_R02.rfa": {
+      "bytes": 2048000, 
+      "exists": true, 
+      "path": "E:\\Claude\\3D-Model-Workflow\\output\\belmont_ph_good_rfa_20261016\\candidates\\Alora_Cassia_LP549448MBCL_R2025_R02.rfa", 
+      "sha256": "c380fb71be8d69008911cef833b0838e53bc96b84650ece9d63d817ab56f3c02"
+    }, 
+    "E:\\Claude\\3D-Model-Workflow\\output\\belmont_ph_good_rfa_20261016\\families\\Alora_Cassia_LP549448MBCL_R2025.rfa": {
+      "bytes": 2043904, 
+      "exists": true, 
+      "path": "E:\\Claude\\3D-Model-Workflow\\output\\belmont_ph_good_rfa_20261016\\families\\Alora_Cassia_LP549448MBCL_R2025.rfa", 
+      "sha256": "27ce97b87c28cabaf249ebc4410ce9bf1b387e16a2232e2fc29e153530c09ac3"
+    }, 
+    "E:\\Claude\\3D-Model-Workflow\\output\\belmont_ph_good_rfa_20261016\\qa\\cassia_mbcl_r02_build.json": {
+      "bytes": 2155, 
+      "exists": true, 
+      "path": "E:\\Claude\\3D-Model-Workflow\\output\\belmont_ph_good_rfa_20261016\\qa\\cassia_mbcl_r02_build.json", 
+      "sha256": "a742ec4f0a499126e526fffa07193036fcfb076fdfdf7472be22e6ea2903a6c8"
+    }, 
+    "E:\\Claude\\3D-Model-Workflow\\output\\belmont_ph_good_rfa_20261016\\sources\\oem\\extracted\\ALR1280090_LP549448_Cassia_Revit\\LP549448-Cassia.rfa": {
+      "bytes": 2768896, 
+      "exists": true, 
+      "path": "E:\\Claude\\3D-Model-Workflow\\output\\belmont_ph_good_rfa_20261016\\sources\\oem\\extracted\\ALR1280090_LP549448_Cassia_Revit\\LP549448-Cassia.rfa", 
+      "sha256": "1bd05892bc0598d43b30afca32f648ad26fbd6df2e3776bd8c169b1ad743db9e"
+    }
+  }, 
+  "source_spec_url": "https://s3-us-west-2.amazonaws.com/catsy.870/LP549448_Spec_Sheet.pdf", 
+  "status": "TECHNICAL_PASS_VISUAL_REVIEW_PENDING", 
+  "type_materials": {
+    "checks": {
+      "agop_original_materials": true, 
+      "all_exact_type_names": true, 
+      "clear_glass_95_shaded_transparency": true, 
+      "clear_glass_realistic_appearance": true, 
+      "clear_glass_type_binding": true, 
+      "matte_black_preserved": true, 
+      "mbop_original_materials": true
+    }, 
+    "type_names": [
+      "LP549448AGOP", 
+      "LP549448MBCL", 
+      "LP549448MBOP"
+    ], 
+    "types": {
+      "LP549448AGOP": {
+        "GLASS_COLOR": {
+          "appearance": "Glass - Frosted", 
+          "appearance_asset_bound": true, 
+          "id": 4655, 
+          "name": "CASSIA_OPAL_GLASS", 
+          "rgb": [
+            245, 
+            245, 
+            243
+          ], 
+          "transparency_percent": 14
+        }, 
+        "METAL_FINISH": {
+          "appearance": "Gold - Polished", 
+          "appearance_asset_bound": true, 
+          "id": 4653, 
+          "name": "CASSIA_AG-FINISH", 
+          "rgb": [
+            207, 
+            181, 
+            59
+          ], 
+          "transparency_percent": 0
+        }
+      }, 
+      "LP549448MBCL": {
+        "GLASS_COLOR": {
+          "appearance": "Cassia Clear Glass LP549448MBCL", 
+          "appearance_asset_bound": true, 
+          "id": 11944, 
+          "name": "CASSIA_CLEAR_GLASS_MBCL", 
+          "rgb": [
+            245, 
+            245, 
+            243
+          ], 
+          "transparency_percent": 95
+        }, 
+        "METAL_FINISH": {
+          "appearance": "Plastic - Matte (Black)", 
+          "appearance_asset_bound": true, 
+          "id": 4647, 
+          "name": "CASSIA_MB_FINISH", 
+          "rgb": [
+            25, 
+            25, 
+            25
+          ], 
+          "transparency_percent": 0
+        }
+      }, 
+      "LP549448MBOP": {
+        "GLASS_COLOR": {
+          "appearance": "Glass - Frosted", 
+          "appearance_asset_bound": true, 
+          "id": 4655, 
+          "name": "CASSIA_OPAL_GLASS", 
+          "rgb": [
+            245, 
+            245, 
+            243
+          ], 
+          "transparency_percent": 14
+        }, 
+        "METAL_FINISH": {
+          "appearance": "Plastic - Matte (Black)", 
+          "appearance_asset_bound": true, 
+          "id": 4647, 
+          "name": "CASSIA_MB_FINISH", 
+          "rgb": [
+            25, 
+            25, 
+            25
+          ], 
+          "transparency_percent": 0
+        }
+      }
+    }
+  }, 
+  "visual_render_status": "NOT_TESTED_BY_THIS_SCRIPT"
+}

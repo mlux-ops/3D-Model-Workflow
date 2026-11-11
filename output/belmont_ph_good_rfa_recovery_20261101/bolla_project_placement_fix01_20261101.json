@@ -1,0 +1,9 @@
+{
+  "source": "E:\\Claude\\3D-Model-Workflow\\output\\belmont_ph_good_rfa_recovery_20261101\\unpacked\\REVIEW_RFAs\\Kuzco_Bolla_PD3106_BG_R2025_R05_REPAINT_OPTICAL_DIAGNOSTIC_UNAPPROVED.rfa", 
+  "error": "'NoneType' object has no attribute 'Min'", 
+  "type": "Type 1", 
+  "status": "PLACEMENT_FAILED", 
+  "traceback": "Traceback (most recent call last):\n  File \"E:\\Claude\\3D-Model-Workflow\\output\\belmont_ph_good_rfa_recovery_20261101\\bolla_project_placement_fix01_20261101.py\", line 31, in <module>\n    res['bounding_box']=[float(inst.get_BoundingBox(None).Min.X),float(inst.get_BoundingBox(None).Min.Y),float(inst.get_BoundingBox(None).Min.Z),float(inst.get_BoundingBox(None).Max.X),float(inst.get_BoundingBox(None).Max.Y),float(inst.get_BoundingBox(None).Max.Z)]\nAttributeError: 'NoneType' object has no attribute 'Min'\n", 
+  "family": "Kuzco_Bolla_PD3106_BG_R2025_R05_REPAINT_OPTICAL_DIAGNOSTIC_UNAPPROVED", 
+  "instance_id": 3663
+}

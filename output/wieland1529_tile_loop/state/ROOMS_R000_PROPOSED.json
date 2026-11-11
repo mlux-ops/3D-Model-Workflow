@@ -1,0 +1,763 @@
+{
+  "_note": "Provisional 1529 tile loop Round 0 inventory. Actual Revit project identity and every dimension must be checked before design/layout acceptance.",
+  "as_of": "2026-11-06",
+  "price_band": {
+    "PH": {
+      "sale_price_usd": 2800000,
+      "unit_count": 2
+    },
+    "TX": {
+      "sale_price_usd": 2700000,
+      "unit_count": 2
+    },
+    "comps_target_min_usd": 2400000,
+    "comps_target_max_usd": 3200000
+  },
+  "tile_budget_upgrade_stance": null,
+  "tile_budget_upgrade_stance_reason": "state/OWNER_FEEDBACK.md says FILL IN",
+  "revit_project_check": {
+    "status": "blocked_unverified",
+    "model_project_name": null,
+    "model_project_number": null,
+    "model_project_address": null,
+    "model_document_title": null,
+    "model_document_path": null,
+    "document_session_id": null,
+    "observed_revit_process": "Revit 2025 running; document identity unknown",
+    "blocker": "No Revit named read tools available. H: native Revit integration is outside CoS approved roots.",
+    "fallback_geometry_source": "HANDOFF_1529_Wieland_Tile.md, v4 selection / v7 takeoff, Google Drive 12gJwYBe70RT8xjwjp9jpzBwvPad1iiMS"
+  },
+  "source_reconciliation": [
+    {
+      "issue": "Sheet title 1527 vs 1529",
+      "observed": "Smartsheet title FINISH DATABASE - 1527 Wieland; tile and plumbing rows job number 25-006 1529 Wieland",
+      "status": "identity caution"
+    },
+    {
+      "issue": "Primary floor finish mismatch",
+      "observed": "v4 whole-floor Anti-Slip; Smartsheet row blended Soft floor and Anti-Slip pan",
+      "status": "unresolved"
+    },
+    {
+      "issue": "PH Bath 4 floor finish mismatch",
+      "observed": "v4 Cortar Charcoal Anti-Slip; Smartsheet quote Cortar Charcoal Soft",
+      "status": "unresolved"
+    },
+    {
+      "issue": "Niche quantities",
+      "observed": "v4 says niche layouts unconfirmed; Smartsheet has priced accent quantity estimates",
+      "status": "provisional"
+    }
+  ],
+  "source_documents": {
+    "tile_schedule": "HANDOFF_1529_Wieland_Tile.md, v4 selection / v7 takeoff, Google Drive 12gJwYBe70RT8xjwjp9jpzBwvPad1iiMS",
+    "tile_quote": "FINISH DATABASE - 1527 Wieland (rows for job 25-006 1529 Wieland), Smartsheet 8569278453206916, read 2026-11-06",
+    "plumbing": "Smartsheet 8569278453206916, plumbing rows, read 2026-11-06",
+    "fixtures_deck": "1529_Wieland_Fixtures_v3_2.pdf, Google Drive 1XBZwGrspwZFDZ7jicgCe41FVjNBxPhLS"
+  },
+  "rooms": [
+    {
+      "id": "PH-PRIMARY",
+      "unit_type": "Penthouse",
+      "room_name": "Primary Bathroom",
+      "unit_count": 2,
+      "revit_room_numbers": [
+        "304A",
+        "304B"
+      ],
+      "status": "seeded",
+      "owner_status": null,
+      "champion_id": "v4-PH-PRIMARY",
+      "champion_score": null,
+      "last_round": 0,
+      "floor_area_sf_prior": 103,
+      "floor_area_status": "prior Revit area; live Revit unverified",
+      "tiled_wall_run_lf_prior": 10.5,
+      "carried_tile_rows": [
+        {
+          "surface": "wall",
+          "smartsheet_row_id": "4302621473570692",
+          "carried_description": "Cortar Bone 24x48 Soft - shower walls + ceiling; feature panel Cortar Bone Reed 24x48 Relief",
+          "qty_sf_per_unit": 143.0,
+          "quoted_rate_usd_per_sf": 8.14,
+          "extended_quote_cost_usd_per_unit": 1164.02,
+          "sheet_cost_of_good_sold": 1283.33205,
+          "source": "FINISH DATABASE - 1527 Wieland (rows for job 25-006 1529 Wieland), Smartsheet 8569278453206916, read 2026-11-06",
+          "v4_scope_status": "quoted row; reconcile to v4",
+          "note": "Quoted quantities may differ from physically confirmed installed area; takeoff includes 15% waste, accents require niche layout confirmation."
+        },
+        {
+          "surface": "floor",
+          "smartsheet_row_id": "2715002737917828",
+          "carried_description": "Cortar Bone 24x48 Soft floor + Cortar Bone 12x24 Anti-Slip shower pan (incl. PH WC floor 15 SF)",
+          "qty_sf_per_unit": 135.6,
+          "quoted_rate_usd_per_sf": 7.82,
+          "extended_quote_cost_usd_per_unit": 1060.39,
+          "sheet_cost_of_good_sold": 1169.08218,
+          "source": "FINISH DATABASE - 1527 Wieland (rows for job 25-006 1529 Wieland), Smartsheet 8569278453206916, read 2026-11-06",
+          "v4_scope_status": "quoted row; reconcile to v4",
+          "note": "Quoted quantities may differ from physically confirmed installed area; takeoff includes 15% waste, accents require niche layout confirmation."
+        },
+        {
+          "surface": "accent",
+          "smartsheet_row_id": "6554421287255940",
+          "carried_description": "Niche Tile - PRODUCT NOT SELECTED | CORRECTION 2026-10-01: NO PRIMARY-BATH NICHE / NO TILE PRODUCT per governing Wieland tile schedule.",
+          "qty_sf_per_unit": 7.41,
+          "quoted_rate_usd_per_sf": null,
+          "extended_quote_cost_usd_per_unit": null,
+          "sheet_cost_of_good_sold": 0.0,
+          "source": "FINISH DATABASE - 1527 Wieland (rows for job 25-006 1529 Wieland), Smartsheet 8569278453206916, read 2026-11-06",
+          "v4_scope_status": "historical, excluded: no primary niche scope",
+          "note": "Quoted quantities may differ from physically confirmed installed area; takeoff includes 15% waste, accents require niche layout confirmation."
+        }
+      ],
+      "carried_quote_material_subtotal_usd_per_unit": 2224.41,
+      "carried_budget_material_only_usd_per_unit": null,
+      "carried_budget_missing_reason": "Sheet has a tile-section budget, but no per-room allocated budget; provisional quote subtotal shown separately.",
+      "open_gaps": [
+        "Cortar Bone Reed WT2 wet-wall listing absent; no feature-area split.",
+        "Primary shower 24x48 floor slope, drain location and wet DCOF must be validated.",
+        "Primary niches/accent are outside the schedule; do not add any niche product or quantity.",
+        "Floor tile wet DCOF >=0.42 has not been independently confirmed from a current manufacturer document."
+      ],
+      "no_sink_selection": false
+    },
+    {
+      "id": "PH-BATH2",
+      "unit_type": "Penthouse",
+      "room_name": "Bath 2",
+      "unit_count": 2,
+      "revit_room_numbers": [
+        "305A",
+        "305B"
+      ],
+      "status": "seeded",
+      "owner_status": null,
+      "champion_id": "v4-PH-BATH2",
+      "champion_score": null,
+      "last_round": 0,
+      "floor_area_sf_prior": 35,
+      "floor_area_status": "prior Revit area; live Revit unverified",
+      "tiled_wall_run_lf_prior": 10.06,
+      "carried_tile_rows": [
+        {
+          "surface": "wall",
+          "smartsheet_row_id": "8806221100941188",
+          "carried_description": "Tones Sapphire 2x20 Glossy - tub surround, stacked",
+          "qty_sf_per_unit": 89.7,
+          "quoted_rate_usd_per_sf": 6.95,
+          "extended_quote_cost_usd_per_unit": 623.42,
+          "sheet_cost_of_good_sold": 687.3150375,
+          "source": "FINISH DATABASE - 1527 Wieland (rows for job 25-006 1529 Wieland), Smartsheet 8569278453206916, read 2026-11-06",
+          "v4_scope_status": "quoted row; reconcile to v4",
+          "note": "Quoted quantities may differ from physically confirmed installed area; takeoff includes 15% waste, accents require niche layout confirmation."
+        },
+        {
+          "surface": "floor",
+          "smartsheet_row_id": "221234311266180",
+          "carried_description": "Cortar Grey 12x24 Soft - floor",
+          "qty_sf_per_unit": 40.2,
+          "quoted_rate_usd_per_sf": 6.75,
+          "extended_quote_cost_usd_per_unit": 271.35,
+          "sheet_cost_of_good_sold": 299.163375,
+          "source": "FINISH DATABASE - 1527 Wieland (rows for job 25-006 1529 Wieland), Smartsheet 8569278453206916, read 2026-11-06",
+          "v4_scope_status": "quoted row; reconcile to v4",
+          "note": "Quoted quantities may differ from physically confirmed installed area; takeoff includes 15% waste, accents require niche layout confirmation."
+        },
+        {
+          "surface": "accent",
+          "smartsheet_row_id": "7218602365288324",
+          "carried_description": "Tones Sandstone 2x20 Glossy - niche",
+          "qty_sf_per_unit": 3.67,
+          "quoted_rate_usd_per_sf": 6.95,
+          "extended_quote_cost_usd_per_unit": 25.51,
+          "sheet_cost_of_good_sold": 28.12091625,
+          "source": "FINISH DATABASE - 1527 Wieland (rows for job 25-006 1529 Wieland), Smartsheet 8569278453206916, read 2026-11-06",
+          "v4_scope_status": "quoted row; reconcile to v4",
+          "note": "Quoted quantities may differ from physically confirmed installed area; takeoff includes 15% waste, accents require niche layout confirmation."
+        }
+      ],
+      "carried_quote_material_subtotal_usd_per_unit": 920.28,
+      "carried_budget_material_only_usd_per_unit": null,
+      "carried_budget_missing_reason": "Sheet has a tile-section budget, but no per-room allocated budget; provisional quote subtotal shown separately.",
+      "open_gaps": [
+        "Tub alcove wet-wall lengths and deck height are drawing-derived, not live Revit measurements.",
+        "Floor tile wet DCOF >=0.42 has not been independently confirmed from a current manufacturer document.",
+        "Accent/niche area and location require confirmed measured layout; cannot add to wall field quantity."
+      ],
+      "no_sink_selection": false
+    },
+    {
+      "id": "PH-BATH3",
+      "unit_type": "Penthouse",
+      "room_name": "Bath 3",
+      "unit_count": 2,
+      "revit_room_numbers": [
+        "307A",
+        "307B"
+      ],
+      "status": "seeded",
+      "owner_status": null,
+      "champion_id": "v4-PH-BATH3",
+      "champion_score": null,
+      "last_round": 0,
+      "floor_area_sf_prior": 35,
+      "floor_area_status": "prior Revit area; live Revit unverified",
+      "tiled_wall_run_lf_prior": 9.67,
+      "carried_tile_rows": [
+        {
+          "surface": "wall",
+          "smartsheet_row_id": "4724833938636676",
+          "carried_description": "Tones Opal 2x20 Glossy - tub surround, stacked",
+          "qty_sf_per_unit": 86.2,
+          "quoted_rate_usd_per_sf": 6.95,
+          "extended_quote_cost_usd_per_unit": 599.09,
+          "sheet_cost_of_good_sold": 660.496725,
+          "source": "FINISH DATABASE - 1527 Wieland (rows for job 25-006 1529 Wieland), Smartsheet 8569278453206916, read 2026-11-06",
+          "v4_scope_status": "quoted row; reconcile to v4",
+          "note": "Quoted quantities may differ from physically confirmed installed area; takeoff includes 15% waste, accents require niche layout confirmation."
+        },
+        {
+          "surface": "floor",
+          "smartsheet_row_id": "2473034124951428",
+          "carried_description": "Cortar Bone 12x24 Soft - floor",
+          "qty_sf_per_unit": 40.2,
+          "quoted_rate_usd_per_sf": 6.75,
+          "extended_quote_cost_usd_per_unit": 271.35,
+          "sheet_cost_of_good_sold": 299.163375,
+          "source": "FINISH DATABASE - 1527 Wieland (rows for job 25-006 1529 Wieland), Smartsheet 8569278453206916, read 2026-11-06",
+          "v4_scope_status": "quoted row; reconcile to v4",
+          "note": "Quoted quantities may differ from physically confirmed installed area; takeoff includes 15% waste, accents require niche layout confirmation."
+        },
+        {
+          "surface": "accent",
+          "smartsheet_row_id": "1589102831075204",
+          "carried_description": "Tones Sandstone 2x20 Glossy - niche",
+          "qty_sf_per_unit": 8.63,
+          "quoted_rate_usd_per_sf": 6.95,
+          "extended_quote_cost_usd_per_unit": 59.98,
+          "sheet_cost_of_good_sold": 66.12629625,
+          "source": "FINISH DATABASE - 1527 Wieland (rows for job 25-006 1529 Wieland), Smartsheet 8569278453206916, read 2026-11-06",
+          "v4_scope_status": "quoted row; reconcile to v4",
+          "note": "Quoted quantities may differ from physically confirmed installed area; takeoff includes 15% waste, accents require niche layout confirmation."
+        }
+      ],
+      "carried_quote_material_subtotal_usd_per_unit": 930.42,
+      "carried_budget_material_only_usd_per_unit": null,
+      "carried_budget_missing_reason": "Sheet has a tile-section budget, but no per-room allocated budget; provisional quote subtotal shown separately.",
+      "open_gaps": [
+        "Tones Opal WT6 tub-wall wet-area listing unverified.",
+        "Sink unselected.",
+        "Tub alcove wet-wall lengths and deck height are drawing-derived, not live Revit measurements.",
+        "Floor tile wet DCOF >=0.42 has not been independently confirmed from a current manufacturer document.",
+        "Accent/niche area and location require confirmed measured layout; cannot add to wall field quantity."
+      ],
+      "no_sink_selection": true
+    },
+    {
+      "id": "PH-BATH4",
+      "unit_type": "Penthouse",
+      "room_name": "Bath 4",
+      "unit_count": 2,
+      "revit_room_numbers": [
+        "311A",
+        "311B"
+      ],
+      "status": "seeded",
+      "owner_status": null,
+      "champion_id": "v4-PH-BATH4",
+      "champion_score": null,
+      "last_round": 0,
+      "floor_area_sf_prior": 35,
+      "floor_area_status": "owner 35 SF; prior Revit 27 SF conflict; live Revit unverified",
+      "tiled_wall_run_lf_prior": 10.08,
+      "carried_tile_rows": [
+        {
+          "surface": "wall",
+          "smartsheet_row_id": "6976633752321924",
+          "carried_description": "Cortar Bone Ribbed 24x48 Relief - full shower wall, floor to ceiling",
+          "qty_sf_per_unit": 107.2,
+          "quoted_rate_usd_per_sf": 7.37,
+          "extended_quote_cost_usd_per_unit": 790.06,
+          "sheet_cost_of_good_sold": 871.04556,
+          "source": "FINISH DATABASE - 1527 Wieland (rows for job 25-006 1529 Wieland), Smartsheet 8569278453206916, read 2026-11-06",
+          "v4_scope_status": "quoted row; reconcile to v4",
+          "note": "Quoted quantities may differ from physically confirmed installed area; takeoff includes 15% waste, accents require niche layout confirmation."
+        },
+        {
+          "surface": "floor",
+          "smartsheet_row_id": "1347134218108804",
+          "carried_description": "Cortar Charcoal 12x24 Soft - floor",
+          "qty_sf_per_unit": 40.2,
+          "quoted_rate_usd_per_sf": 6.75,
+          "extended_quote_cost_usd_per_unit": 271.35,
+          "sheet_cost_of_good_sold": 299.163375,
+          "source": "FINISH DATABASE - 1527 Wieland (rows for job 25-006 1529 Wieland), Smartsheet 8569278453206916, read 2026-11-06",
+          "v4_scope_status": "quoted row; reconcile to v4",
+          "note": "Quoted quantities may differ from physically confirmed installed area; takeoff includes 15% waste, accents require niche layout confirmation."
+        },
+        {
+          "surface": "accent",
+          "smartsheet_row_id": "6092702458445700",
+          "carried_description": "Clara Tierra Madre Caviar 2x8 zellige - niche",
+          "qty_sf_per_unit": 8.63,
+          "quoted_rate_usd_per_sf": 33.7,
+          "extended_quote_cost_usd_per_unit": 290.83,
+          "sheet_cost_of_good_sold": 320.6411775,
+          "source": "FINISH DATABASE - 1527 Wieland (rows for job 25-006 1529 Wieland), Smartsheet 8569278453206916, read 2026-11-06",
+          "v4_scope_status": "quoted row; reconcile to v4",
+          "note": "Quoted quantities may differ from physically confirmed installed area; takeoff includes 15% waste, accents require niche layout confirmation."
+        }
+      ],
+      "carried_quote_material_subtotal_usd_per_unit": 1352.24,
+      "carried_budget_material_only_usd_per_unit": null,
+      "carried_budget_missing_reason": "Sheet has a tile-section budget, but no per-room allocated budget; provisional quote subtotal shown separately.",
+      "open_gaps": [
+        "Cortar Bone Ribbed WT9 wet-wall listing absent; quoted order quantity unconfirmed.",
+        "Clara Caviar AT1 niche wet-area listing absent.",
+        "35/27 SF room-area discrepancy.",
+        "FT6 Anti-Slip v4 contradicts live sheet Soft description.",
+        "Floor tile wet DCOF >=0.42 has not been independently confirmed from a current manufacturer document.",
+        "Accent/niche area and location require confirmed measured layout; cannot add to wall field quantity."
+      ],
+      "no_sink_selection": false
+    },
+    {
+      "id": "PH-POWDER",
+      "unit_type": "Penthouse",
+      "room_name": "Powder Room",
+      "unit_count": 2,
+      "revit_room_numbers": [
+        "405A",
+        "405B"
+      ],
+      "status": "seeded",
+      "owner_status": null,
+      "champion_id": "v4-PH-POWDER",
+      "champion_score": null,
+      "last_round": 0,
+      "floor_area_sf_prior": 28,
+      "floor_area_status": "prior Revit area; live Revit unverified",
+      "tiled_wall_run_lf_prior": 4.224,
+      "carried_tile_rows": [
+        {
+          "surface": "vanity_wall",
+          "smartsheet_row_id": "6851772612214660",
+          "carried_description": "Vera Forma Earth Lines 2x10 Glossy Relief - vanity feature wall",
+          "qty_sf_per_unit": 44.9,
+          "quoted_rate_usd_per_sf": 8.2,
+          "extended_quote_cost_usd_per_unit": 368.18,
+          "sheet_cost_of_good_sold": 405.91845,
+          "source": "FINISH DATABASE - 1527 Wieland (rows for job 25-006 1529 Wieland), Smartsheet 8569278453206916, read 2026-11-06",
+          "v4_scope_status": "quoted row; reconcile to v4",
+          "note": "Quoted quantities may differ from physically confirmed installed area; takeoff includes 15% waste, accents require niche layout confirmation."
+        }
+      ],
+      "carried_quote_material_subtotal_usd_per_unit": 368.18,
+      "carried_budget_material_only_usd_per_unit": null,
+      "carried_budget_missing_reason": "Sheet has a tile-section budget, but no per-room allocated budget; provisional quote subtotal shown separately.",
+      "open_gaps": [
+        "Vanity wall length is drawing-derived and not validated against Revit openings."
+      ],
+      "no_sink_selection": false
+    },
+    {
+      "id": "PH-WC",
+      "unit_type": "Penthouse",
+      "room_name": "Primary WC",
+      "unit_count": 2,
+      "revit_room_numbers": [
+        "313A",
+        "313B"
+      ],
+      "status": "seeded",
+      "owner_status": null,
+      "champion_id": "v4-PH-WC",
+      "champion_score": null,
+      "last_round": 0,
+      "floor_area_sf_prior": 15,
+      "floor_area_status": "prior Revit area; live Revit unverified",
+      "tiled_wall_run_lf_prior": null,
+      "carried_tile_rows": [],
+      "carried_quote_material_subtotal_usd_per_unit": 0.0,
+      "carried_budget_material_only_usd_per_unit": null,
+      "carried_budget_missing_reason": "Sheet has a tile-section budget, but no per-room allocated budget; provisional quote subtotal shown separately.",
+      "open_gaps": [
+        "WC area is included in primary floor quoted quantity; do not duplicate material cost.",
+        "Floor tile wet DCOF >=0.42 has not been independently confirmed from a current manufacturer document."
+      ],
+      "no_sink_selection": false
+    },
+    {
+      "id": "TX-PRIMARY",
+      "unit_type": "Triplex",
+      "room_name": "Primary Bathroom",
+      "unit_count": 2,
+      "revit_room_numbers": [
+        "202A",
+        "202B"
+      ],
+      "status": "seeded",
+      "owner_status": null,
+      "champion_id": "v4-TX-PRIMARY",
+      "champion_score": null,
+      "last_round": 0,
+      "floor_area_sf_prior": 87,
+      "floor_area_status": "prior Revit area; live Revit unverified",
+      "tiled_wall_run_lf_prior": 9.96,
+      "carried_tile_rows": [
+        {
+          "surface": "wall",
+          "smartsheet_row_id": "8102533659164548",
+          "carried_description": "Cortar Clay 24x48 Soft - shower walls + ceiling; feature panel Cortar Clay Ribbed 24x48 Relief",
+          "qty_sf_per_unit": 134.4,
+          "quoted_rate_usd_per_sf": 8.14,
+          "extended_quote_cost_usd_per_unit": 1094.02,
+          "sheet_cost_of_good_sold": 1206.15264,
+          "source": "FINISH DATABASE - 1527 Wieland (rows for job 25-006 1529 Wieland), Smartsheet 8569278453206916, read 2026-11-06",
+          "v4_scope_status": "quoted row; reconcile to v4",
+          "note": "Quoted quantities may differ from physically confirmed installed area; takeoff includes 15% waste, accents require niche layout confirmation."
+        },
+        {
+          "surface": "floor",
+          "smartsheet_row_id": "784184264687492",
+          "carried_description": "Cortar Clay 24x48 Soft floor + Cortar Clay 12x24 Anti-Slip shower pan (incl. TX WC floor 14 SF)",
+          "qty_sf_per_unit": 116.1,
+          "quoted_rate_usd_per_sf": 7.8,
+          "extended_quote_cost_usd_per_unit": 905.58,
+          "sheet_cost_of_good_sold": 998.40195,
+          "source": "FINISH DATABASE - 1527 Wieland (rows for job 25-006 1529 Wieland), Smartsheet 8569278453206916, read 2026-11-06",
+          "v4_scope_status": "quoted row; reconcile to v4",
+          "note": "Quoted quantities may differ from physically confirmed installed area; takeoff includes 15% waste, accents require niche layout confirmation."
+        },
+        {
+          "surface": "accent",
+          "smartsheet_row_id": "3840902644760452",
+          "carried_description": "Niche Tile - PRODUCT NOT SELECTED | CORRECTION 2026-10-01: NO PRIMARY-BATH NICHE / NO TILE PRODUCT per governing Wieland tile schedule.",
+          "qty_sf_per_unit": 8.63,
+          "quoted_rate_usd_per_sf": null,
+          "extended_quote_cost_usd_per_unit": null,
+          "sheet_cost_of_good_sold": 0.0,
+          "source": "FINISH DATABASE - 1527 Wieland (rows for job 25-006 1529 Wieland), Smartsheet 8569278453206916, read 2026-11-06",
+          "v4_scope_status": "historical, excluded: no primary niche scope",
+          "note": "Quoted quantities may differ from physically confirmed installed area; takeoff includes 15% waste, accents require niche layout confirmation."
+        }
+      ],
+      "carried_quote_material_subtotal_usd_per_unit": 1999.6,
+      "carried_budget_material_only_usd_per_unit": null,
+      "carried_budget_missing_reason": "Sheet has a tile-section budget, but no per-room allocated budget; provisional quote subtotal shown separately.",
+      "open_gaps": [
+        "Cortar Clay Ribbed WT4 wet-wall listing absent; no feature-area split.",
+        "Primary shower 24x48 floor slope, drain location and wet DCOF must be validated.",
+        "Primary niches/accent are outside the schedule; do not add any niche product or quantity.",
+        "Floor tile wet DCOF >=0.42 has not been independently confirmed from a current manufacturer document."
+      ],
+      "no_sink_selection": false
+    },
+    {
+      "id": "TX-BATH2",
+      "unit_type": "Triplex",
+      "room_name": "Bath 2",
+      "unit_count": 2,
+      "revit_room_numbers": [
+        "205A",
+        "205B"
+      ],
+      "status": "seeded",
+      "owner_status": null,
+      "champion_id": "v4-TX-BATH2",
+      "champion_score": null,
+      "last_round": 0,
+      "floor_area_sf_prior": 38,
+      "floor_area_status": "prior Revit area; live Revit unverified",
+      "tiled_wall_run_lf_prior": 10.41,
+      "carried_tile_rows": [
+        {
+          "surface": "wall",
+          "smartsheet_row_id": "3035984078372740",
+          "carried_description": "Tones Copper 2x20 Glossy - tub surround, stacked",
+          "qty_sf_per_unit": 92.8,
+          "quoted_rate_usd_per_sf": 6.95,
+          "extended_quote_cost_usd_per_unit": 644.96,
+          "sheet_cost_of_good_sold": 711.0684,
+          "source": "FINISH DATABASE - 1527 Wieland (rows for job 25-006 1529 Wieland), Smartsheet 8569278453206916, read 2026-11-06",
+          "v4_scope_status": "quoted row; reconcile to v4",
+          "note": "Quoted quantities may differ from physically confirmed installed area; takeoff includes 15% waste, accents require niche layout confirmation."
+        },
+        {
+          "surface": "floor",
+          "smartsheet_row_id": "7539583705743236",
+          "carried_description": "Cortar Clay 12x24 Soft - floor",
+          "qty_sf_per_unit": 43.7,
+          "quoted_rate_usd_per_sf": 6.75,
+          "extended_quote_cost_usd_per_unit": 294.98,
+          "sheet_cost_of_good_sold": 325.2099375,
+          "source": "FINISH DATABASE - 1527 Wieland (rows for job 25-006 1529 Wieland), Smartsheet 8569278453206916, read 2026-11-06",
+          "v4_scope_status": "quoted row; reconcile to v4",
+          "note": "Quoted quantities may differ from physically confirmed installed area; takeoff includes 15% waste, accents require niche layout confirmation."
+        },
+        {
+          "surface": "accent",
+          "smartsheet_row_id": "8344502272130948",
+          "carried_description": "Tones Sandstone 2x20 Glossy - niche",
+          "qty_sf_per_unit": 8.63,
+          "quoted_rate_usd_per_sf": 6.95,
+          "extended_quote_cost_usd_per_unit": 59.98,
+          "sheet_cost_of_good_sold": 66.12629625,
+          "source": "FINISH DATABASE - 1527 Wieland (rows for job 25-006 1529 Wieland), Smartsheet 8569278453206916, read 2026-11-06",
+          "v4_scope_status": "quoted row; reconcile to v4",
+          "note": "Quoted quantities may differ from physically confirmed installed area; takeoff includes 15% waste, accents require niche layout confirmation."
+        }
+      ],
+      "carried_quote_material_subtotal_usd_per_unit": 999.92,
+      "carried_budget_material_only_usd_per_unit": null,
+      "carried_budget_missing_reason": "Sheet has a tile-section budget, but no per-room allocated budget; provisional quote subtotal shown separately.",
+      "open_gaps": [
+        "Sink unselected.",
+        "Tub alcove wet-wall lengths and deck height are drawing-derived, not live Revit measurements.",
+        "Floor tile wet DCOF >=0.42 has not been independently confirmed from a current manufacturer document.",
+        "Accent/niche area and location require confirmed measured layout; cannot add to wall field quantity."
+      ],
+      "no_sink_selection": true
+    },
+    {
+      "id": "TX-BATH3",
+      "unit_type": "Triplex",
+      "room_name": "Bath 3",
+      "unit_count": 2,
+      "revit_room_numbers": [
+        "207A",
+        "207B"
+      ],
+      "status": "seeded",
+      "owner_status": null,
+      "champion_id": "v4-TX-BATH3",
+      "champion_score": null,
+      "last_round": 0,
+      "floor_area_sf_prior": 37,
+      "floor_area_status": "prior Revit area; live Revit unverified",
+      "tiled_wall_run_lf_prior": 10.3,
+      "carried_tile_rows": [
+        {
+          "surface": "wall",
+          "smartsheet_row_id": "6413683798900612",
+          "carried_description": "Tones Emerald 2x20 Glossy - tub surround, stacked",
+          "qty_sf_per_unit": 91.8,
+          "quoted_rate_usd_per_sf": 6.95,
+          "extended_quote_cost_usd_per_unit": 638.01,
+          "sheet_cost_of_good_sold": 703.406025,
+          "source": "FINISH DATABASE - 1527 Wieland (rows for job 25-006 1529 Wieland), Smartsheet 8569278453206916, read 2026-11-06",
+          "v4_scope_status": "quoted row; reconcile to v4",
+          "note": "Quoted quantities may differ from physically confirmed installed area; takeoff includes 15% waste, accents require niche layout confirmation."
+        },
+        {
+          "surface": "floor",
+          "smartsheet_row_id": "4161883985215364",
+          "carried_description": "Cortar Grey 12x24 Soft - floor",
+          "qty_sf_per_unit": 42.5,
+          "quoted_rate_usd_per_sf": 6.75,
+          "extended_quote_cost_usd_per_unit": 286.88,
+          "sheet_cost_of_good_sold": 316.2796875,
+          "source": "FINISH DATABASE - 1527 Wieland (rows for job 25-006 1529 Wieland), Smartsheet 8569278453206916, read 2026-11-06",
+          "v4_scope_status": "quoted row; reconcile to v4",
+          "note": "Quoted quantities may differ from physically confirmed installed area; takeoff includes 15% waste, accents require niche layout confirmation."
+        },
+        {
+          "surface": "accent",
+          "smartsheet_row_id": "1026152877653892",
+          "carried_description": "Tones Sandstone 2x20 Glossy - niche",
+          "qty_sf_per_unit": 4.89,
+          "quoted_rate_usd_per_sf": 6.95,
+          "extended_quote_cost_usd_per_unit": 33.99,
+          "sheet_cost_of_good_sold": 37.46901375,
+          "source": "FINISH DATABASE - 1527 Wieland (rows for job 25-006 1529 Wieland), Smartsheet 8569278453206916, read 2026-11-06",
+          "v4_scope_status": "quoted row; reconcile to v4",
+          "note": "Quoted quantities may differ from physically confirmed installed area; takeoff includes 15% waste, accents require niche layout confirmation."
+        }
+      ],
+      "carried_quote_material_subtotal_usd_per_unit": 958.88,
+      "carried_budget_material_only_usd_per_unit": null,
+      "carried_budget_missing_reason": "Sheet has a tile-section budget, but no per-room allocated budget; provisional quote subtotal shown separately.",
+      "open_gaps": [
+        "Tub alcove wet-wall lengths and deck height are drawing-derived, not live Revit measurements.",
+        "Floor tile wet DCOF >=0.42 has not been independently confirmed from a current manufacturer document.",
+        "Accent/niche area and location require confirmed measured layout; cannot add to wall field quantity."
+      ],
+      "no_sink_selection": false
+    },
+    {
+      "id": "TX-BATH4",
+      "unit_type": "Triplex",
+      "room_name": "Bath 4",
+      "unit_count": 2,
+      "revit_room_numbers": [
+        "007A",
+        "007B"
+      ],
+      "status": "seeded",
+      "owner_status": null,
+      "champion_id": "v4-TX-BATH4",
+      "champion_score": null,
+      "last_round": 0,
+      "floor_area_sf_prior": 38.5,
+      "floor_area_status": "prior Revit area; live Revit unverified",
+      "tiled_wall_run_lf_prior": 10.08,
+      "carried_tile_rows": [
+        {
+          "surface": "wall",
+          "smartsheet_row_id": "502709287976836",
+          "carried_description": "Cortar Charcoal 24x48 Soft - tub surround, tone-on-tone",
+          "qty_sf_per_unit": 89.8,
+          "quoted_rate_usd_per_sf": 8.14,
+          "extended_quote_cost_usd_per_unit": 730.97,
+          "sheet_cost_of_good_sold": 805.89663,
+          "source": "FINISH DATABASE - 1527 Wieland (rows for job 25-006 1529 Wieland), Smartsheet 8569278453206916, read 2026-11-06",
+          "v4_scope_status": "quoted row; reconcile to v4",
+          "note": "Quoted quantities may differ from physically confirmed installed area; takeoff includes 15% waste, accents require niche layout confirmation."
+        },
+        {
+          "surface": "floor",
+          "smartsheet_row_id": "5006308915347332",
+          "carried_description": "Cortar Bone 12x24 Soft - floor",
+          "qty_sf_per_unit": 44.3,
+          "quoted_rate_usd_per_sf": 6.75,
+          "extended_quote_cost_usd_per_unit": 299.02,
+          "sheet_cost_of_good_sold": 329.6750625,
+          "source": "FINISH DATABASE - 1527 Wieland (rows for job 25-006 1529 Wieland), Smartsheet 8569278453206916, read 2026-11-06",
+          "v4_scope_status": "quoted row; reconcile to v4",
+          "note": "Quoted quantities may differ from physically confirmed installed area; takeoff includes 15% waste, accents require niche layout confirmation."
+        },
+        {
+          "surface": "accent",
+          "smartsheet_row_id": "5529752505024388",
+          "carried_description": "Clara Tierra Madre Caviar 2x8 zellige - niche",
+          "qty_sf_per_unit": 8.63,
+          "quoted_rate_usd_per_sf": 33.7,
+          "extended_quote_cost_usd_per_unit": 290.83,
+          "sheet_cost_of_good_sold": 320.6411775,
+          "source": "FINISH DATABASE - 1527 Wieland (rows for job 25-006 1529 Wieland), Smartsheet 8569278453206916, read 2026-11-06",
+          "v4_scope_status": "quoted row; reconcile to v4",
+          "note": "Quoted quantities may differ from physically confirmed installed area; takeoff includes 15% waste, accents require niche layout confirmation."
+        }
+      ],
+      "carried_quote_material_subtotal_usd_per_unit": 1320.82,
+      "carried_budget_material_only_usd_per_unit": null,
+      "carried_budget_missing_reason": "Sheet has a tile-section budget, but no per-room allocated budget; provisional quote subtotal shown separately.",
+      "open_gaps": [
+        "Clara Caviar AT1 niche wet-area listing absent.",
+        "Cortar Bone Ribbed WT9 accent area not quantified within Charcoal field.",
+        "Drawing takeoff is tub alcove, not shower.",
+        "Tub alcove wet-wall lengths and deck height are drawing-derived, not live Revit measurements.",
+        "Floor tile wet DCOF >=0.42 has not been independently confirmed from a current manufacturer document.",
+        "Accent/niche area and location require confirmed measured layout; cannot add to wall field quantity."
+      ],
+      "no_sink_selection": false
+    },
+    {
+      "id": "TX-POWDER",
+      "unit_type": "Triplex",
+      "room_name": "Powder Room",
+      "unit_count": 2,
+      "revit_room_numbers": [
+        "102A",
+        "102B"
+      ],
+      "status": "seeded",
+      "owner_status": null,
+      "champion_id": "v4-TX-POWDER",
+      "champion_score": null,
+      "last_round": 0,
+      "floor_area_sf_prior": 22.5,
+      "floor_area_status": "prior Revit area; live Revit unverified",
+      "tiled_wall_run_lf_prior": 2.99,
+      "carried_tile_rows": [
+        {
+          "surface": "vanity_wall",
+          "smartsheet_row_id": "4966802551603076",
+          "carried_description": "Haze Camel + Haze Wheat 1.6x5 Matte - vanity feature wall, stacked mix",
+          "qty_sf_per_unit": 31.8,
+          "quoted_rate_usd_per_sf": 11.93,
+          "extended_quote_cost_usd_per_unit": 379.37,
+          "sheet_cost_of_good_sold": 418.259835,
+          "source": "FINISH DATABASE - 1527 Wieland (rows for job 25-006 1529 Wieland), Smartsheet 8569278453206916, read 2026-11-06",
+          "v4_scope_status": "quoted row; reconcile to v4",
+          "note": "Quoted quantities may differ from physically confirmed installed area; takeoff includes 15% waste, accents require niche layout confirmation."
+        }
+      ],
+      "carried_quote_material_subtotal_usd_per_unit": 379.37,
+      "carried_budget_material_only_usd_per_unit": null,
+      "carried_budget_missing_reason": "Sheet has a tile-section budget, but no per-room allocated budget; provisional quote subtotal shown separately.",
+      "open_gaps": [
+        "Vanity wall length is drawing-derived and not validated against Revit openings."
+      ],
+      "no_sink_selection": false
+    },
+    {
+      "id": "TX-POWDER2",
+      "unit_type": "Triplex",
+      "room_name": "Powder 2",
+      "unit_count": 2,
+      "revit_room_numbers": [
+        "009A",
+        "009B"
+      ],
+      "status": "seeded",
+      "owner_status": null,
+      "champion_id": "v4-TX-POWDER2",
+      "champion_score": null,
+      "last_round": 0,
+      "floor_area_sf_prior": 27,
+      "floor_area_status": "prior Revit area; live Revit unverified",
+      "tiled_wall_run_lf_prior": 3.806,
+      "carried_tile_rows": [
+        {
+          "surface": "vanity_wall",
+          "smartsheet_row_id": "7258108729032580",
+          "carried_description": "Vera Forma Indigo Edge 6x6 Glossy Relief - vanity feature wall",
+          "qty_sf_per_unit": 40.5,
+          "quoted_rate_usd_per_sf": 8.2,
+          "extended_quote_cost_usd_per_unit": 332.1,
+          "sheet_cost_of_good_sold": 366.14025,
+          "source": "FINISH DATABASE - 1527 Wieland (rows for job 25-006 1529 Wieland), Smartsheet 8569278453206916, read 2026-11-06",
+          "v4_scope_status": "quoted row; reconcile to v4",
+          "note": "Quoted quantities may differ from physically confirmed installed area; takeoff includes 15% waste, accents require niche layout confirmation."
+        }
+      ],
+      "carried_quote_material_subtotal_usd_per_unit": 332.1,
+      "carried_budget_material_only_usd_per_unit": null,
+      "carried_budget_missing_reason": "Sheet has a tile-section budget, but no per-room allocated budget; provisional quote subtotal shown separately.",
+      "open_gaps": [
+        "Sink unselected.",
+        "Vanity wall length is drawing-derived and not validated against Revit openings."
+      ],
+      "no_sink_selection": true
+    },
+    {
+      "id": "TX-WC",
+      "unit_type": "Triplex",
+      "room_name": "Primary WC",
+      "unit_count": 2,
+      "revit_room_numbers": [
+        "203A",
+        "203B"
+      ],
+      "status": "seeded",
+      "owner_status": null,
+      "champion_id": "v4-TX-WC",
+      "champion_score": null,
+      "last_round": 0,
+      "floor_area_sf_prior": 14,
+      "floor_area_status": "203B prior Revit area; 203A unplaced; live Revit unverified",
+      "tiled_wall_run_lf_prior": null,
+      "carried_tile_rows": [],
+      "carried_quote_material_subtotal_usd_per_unit": 0.0,
+      "carried_budget_material_only_usd_per_unit": null,
+      "carried_budget_missing_reason": "Sheet has a tile-section budget, but no per-room allocated budget; provisional quote subtotal shown separately.",
+      "open_gaps": [
+        "WC area is included in primary floor quoted quantity; do not duplicate material cost.",
+        "Floor tile wet DCOF >=0.42 has not been independently confirmed from a current manufacturer document."
+      ],
+      "no_sink_selection": false
+    }
+  ]
+}

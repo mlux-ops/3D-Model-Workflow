@@ -1,0 +1,5 @@
+# TX-BATH4 — final Round 002 verdict
+
+**All four critiques complete.** B (v4 Charcoal/Bone Ribbed/Clara/Bone floor) scored **2.79** (market 3.7, design 3.0, build 1.8, cost 2.4). A (flat Charcoal/Soho Black niche/Bone Soft floor, Ribbed excluded from wet area) scored **3.41** (4.1, 3.6, 3.2, 2.4), **+0.62**. Despite improvement, A FAILS exact Bone Soft 12×24 wet-floor DCOF and cost seat **2.4 <3.0**; B also FAILS Clara wet-niche and Bone Ribbed wet-wall manufacturer approvals. Demote B; **blocked, no accepted champion**. Flat Charcoal/Soho remains only a conditional preferred wall/niche direction.
+
+**Next:** prove exact floor DCOF or select documented qualifying floor; verify tub and niche geometry/field displacement, 24×48 cuts, grout with Hansgrohe Matte White, current Soho price/Chicago lead and Cortar import minima. Carried material floor extension is **$299.02/unit** (raw $299.025), not a newly accepted quote; cost critic re-rounded this to $299.03, a one-cent arithmetic presentation difference with no gate impact.

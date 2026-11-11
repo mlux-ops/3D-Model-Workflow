@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>1529 Wieland | Bathroom 3D Material Viewer</title>
+<style>
+:root{color-scheme:dark;--bg:#0e1319;--panel:#141b22;--panel2:#1b2530;--line:#2d3b48;--ink:#edf1f2;--muted:#9dabba;--accent:#d5b48f;--green:#b4dfc4}
+*{box-sizing:border-box}html,body{margin:0;height:100%;font-family:Inter,"Segoe UI",Arial,sans-serif;background:var(--bg);color:var(--ink)}button,select{font:inherit}button{cursor:pointer}#app{height:100%;display:grid;grid-template-columns:295px minmax(0,1fr) 325px;grid-template-rows:67px minmax(0,1fr);overflow:hidden}
+header{grid-column:1/-1;background:#0e151b;border-bottom:1px solid var(--line);display:flex;align-items:center;justify-content:space-between;padding:0 26px;gap:16px}
+.brand{display:flex;align-items:center;gap:12px;font-weight:750;font-size:15px;letter-spacing:.075em}.mark{height:34px;width:34px;border:1px solid #9c8a72;display:grid;place-items:center;color:var(--accent);font-family:Georgia,serif;font-size:18px}.brand small{font-size:10px;font-weight:500;color:var(--muted);display:block;letter-spacing:.19em;margin-top:4px}
+.subhead{font-size:11px;color:#aec1cf;letter-spacing:.09em;text-transform:uppercase}.righthead{display:flex;align-items:center;gap:15px}.tag{border:1px solid #77654a;color:#dbc2a1;padding:7px 10px;border-radius:4px;font-size:11px;letter-spacing:.05em}
+aside{background:var(--panel);min-height:0;overflow:auto}aside.left{border-right:1px solid var(--line);padding:22px 15px}aside.right{border-left:1px solid var(--line);padding:23px 19px}
+.eyebrow{font-weight:650;font-size:10px;letter-spacing:.18em;text-transform:uppercase;color:var(--accent);margin:5px 10px 12px}
+.room-btn{width:100%;border:1px solid transparent;background:transparent;color:#c2cbd4;text-align:left;padding:12px 13px;border-radius:7px;display:flex;align-items:center;gap:10px;margin-bottom:4px;transition:.2s}
+.room-btn:hover{background:#202c38}.room-btn.active{background:#283645;color:#fff;border-color:#58687a}.room-code{font-size:13px;font-weight:700}.room-meta{margin-top:3px;color:#93a6b7;font-size:11px}.room-dot{border-radius:50%;width:7px;height:7px;background:#b7d9c2;flex-shrink:0}.room-dot.empty{background:#cfad7c}.room-text{flex:1}
+.side-note{color:#8493a0;font-size:11px;line-height:1.6;margin:25px 8px;border-top:1px solid var(--line);padding-top:16px}
+#stage{min-width:0;min-height:0;position:relative;overflow:hidden;background:radial-gradient(ellipse at 55% 36%,#263544 0%,#0e141b 75%)}
+#render{width:100%;height:100%;display:block;touch-action:none}
+.stage-top{pointer-events:none;position:absolute;top:25px;left:28px;right:24px;display:flex;justify-content:space-between;align-items:flex-start;gap:16px}
+h1{font-size:27px;margin:4px 0 6px;font-weight:600;letter-spacing:-.035em}.scene-note{color:#c0cbd2;font-size:12px;line-height:1.5;max-width:680px}.alert{display:inline-block;background:#6b4c25d9;color:#f5dcb4;font-size:11px;border:1px solid #a7845a;padding:7px 10px;border-radius:3px}
+.stage-bottom{pointer-events:none;position:absolute;left:22px;right:22px;bottom:20px;display:flex;justify-content:space-between;gap:10px}
+.hud{background:#101820dd;border:1px solid #42505e;padding:10px 14px;border-radius:6px;color:#b9c9d4;font-size:11px;line-height:1.5}.hud strong{color:#eee}
+.tools{position:absolute;right:18px;top:132px;display:flex;flex-direction:column;gap:7px}
+.tool{background:#17212dd9;color:#e6eef3;border:1px solid #536375;border-radius:6px;padding:9px 11px;font-size:11px;min-width:86px}
+.tool:hover{background:#35465a}
+.right h2{font-size:17px;font-weight:650;margin:7px 0 8px;letter-spacing:-.02em}.muted{font-size:12px;color:#9aabb8;line-height:1.65}
+.measure{display:grid;grid-template-columns:1fr 1fr;gap:6px;margin:15px 0}.measure div{padding:10px;background:var(--panel2);border-radius:5px}.measure span{display:block;color:#94a8b6;font-size:10px}.measure strong{display:block;margin-top:6px;font-size:13px}
+.sep{border:0;border-top:1px solid var(--line);margin:22px 0}
+.surface{background:#1b2631;border:1px solid #304253;border-radius:8px;padding:11px;margin-top:9px;cursor:pointer;text-align:left;color:inherit;width:100%}.surface:hover,.surface.selected{border-color:var(--accent);background:#293746}.swatch{width:39px;height:39px;border-radius:4px;border:1px solid #87959b;flex-shrink:0;object-fit:cover;background:#aaa}.surface-name{font-size:12px;font-weight:650}.surface-sub{font-size:11px;color:#9eacb9;margin-top:5px}
+.surface-row{display:flex;align-items:center;gap:10px}.material-detail{margin-top:10px;padding:13px;border:1px solid #435261;border-radius:6px;font-size:11px;color:#cbd7df;line-height:1.6;overflow-wrap:anywhere}.material-detail a{color:#e7c9a2}.material-detail b{color:white}
+.switchline{display:flex;align-items:center;justify-content:space-between;padding:12px 2px;font-size:12px}.switchline input{accent-color:var(--accent)}
+.btnline{display:flex;gap:8px}.btnline button{padding:10px 12px;background:#253443;color:#ebf0f4;border:1px solid #405369;border-radius:6px;flex:1;font-size:11px}
+.btnline button:disabled{opacity:.4;cursor:not-allowed}
+.foot{font-size:10px;color:#98a7b4;line-height:1.6}
+#error{position:absolute;left:25px;right:25px;top:45%;padding:17px;background:#412b2bbf;border:1px solid #d69e82;border-radius:8px;display:none;font-size:13px}
+@media(max-width:1200px){#app{grid-template-columns:230px minmax(0,1fr) 280px}aside.left{padding:15px 8px}aside.right{padding:16px 13px}}
+@media(max-width:860px){#app{grid-template-columns:minmax(0,1fr);grid-template-rows:60px 68px minmax(360px,1fr) 280px;overflow:auto;height:auto;min-height:100vh}header{grid-column:1;grid-row:1;padding:0 15px}.subhead{display:none}aside.left{grid-row:2;border:none;border-bottom:1px solid var(--line);padding:7px;white-space:nowrap;overflow:auto;display:flex;gap:4px}.left .eyebrow,.side-note{display:none}.room-btn{width:auto;min-width:145px;margin:0;padding:9px}#stage{grid-row:3;height:60vh;min-height:420px}aside.right{grid-row:4;border:none;border-top:1px solid var(--line)}.stage-top{top:12px;left:15px;right:12px}h1{font-size:20px}.tools{top:105px}.stage-bottom{bottom:8px}}
+</style>
+</head>
+<body>
+<div id="app">
+ <header>
+   <div class="brand"><div class="mark">S</div><div>SHB STUDIO<small>ARCHITECTURE / DESIGN</small></div></div>
+   <div class="subhead">1529 WIELAND · INTERACTIVE MATERIAL STUDY</div>
+   <div class="righthead"><span class="tag">FROZEN TILE PICKS</span></div>
+ </header>
+ <aside class="left"><div class="eyebrow">Bathroom schedule · 13</div><div id="room-list"></div><div class="side-note">Room-specific element assignments have not been verified. The 3D viewport uses actual Revit bounding boxes from the open model as contextual geometry, not measured room reconstruction.</div></aside>
+ <section id="stage"><canvas id="render"></canvas>
+   <div class="stage-top"><div><div class="eyebrow" style="margin:0">MODEL VIEW · MATERIAL PREVIEW</div><h1 id="room-title">PH-BATH4</h1><div id="room-description" class="scene-note"></div></div><div class="alert">CONTEXT ONLY · NOT FIELD-ACCURATE</div></div>
+   <div class="tools"><button class="tool" id="reset">Reset view</button><button class="tool" id="toggle-walls">Hide walls</button><button class="tool" id="toggle-bounds">Show edges</button></div>
+   <div class="stage-bottom"><div class="hud"><strong>Drag</strong> orbit · <strong>Shift + drag</strong> pan · <strong>Scroll</strong> zoom · <strong>Double-click</strong> reset</div><div class="hud" id="model-count"></div></div>
+   <div id="error">Three-dimensional rendering could not start. Check CDN access. This page requires WebGL and a connection to the pinned Three.js library.</div>
+ </section>
+ <aside class="right"><div class="eyebrow" style="margin:0">Specification inspector</div><h2 id="spec-title">Current surfaces</h2><p class="muted" id="spec-sub">Click any material to view its specification and highlight the matching surface.</p><div class="measure"><div><span>VIEWER STATUS</span><strong id="confidence">Context-only</strong></div><div><span>OWNER APPROVAL</span><strong>Not granted</strong></div></div>
+   <hr class="sep"><div class="eyebrow" style="margin:0">Frozen surface picks · indicative overlays</div><div id="surfaces"></div><div id="material-info" class="material-detail" hidden></div>
+   <hr class="sep"><div class="switchline"><span>Historical alternative</span><label><input type="checkbox" id="alternative" disabled aria-label="Show alternative material"> <span id="alternative-label">Not released</span></label></div><p class="muted">A historical challenger is not an approved or active alternative. The frozen current selection is applied exclusively.</p>
+   <div class="btnline"><button id="open-accuracy">Accuracy notes</button><button id="copy-room">Copy room ID</button></div><hr class="sep"><div class="foot">Source: live open Revit 2025, read-only queries. Geometry = Revit bounding boxes; not true solids. Maker image = stand-in, not a physical sample. Tile joint layout = visual approximation. This is not a construction coordination, procurement or owner-release model.</div></aside>
+</div>
+<script id="data" type="application/json">__VIEWER_JSON__</script>
+<script type="importmap">__IMPORT_MAP__</script>
+<script type="module">
+import * as THREE from 'three';
+import { OrbitControls } from 'orbit-controls';
+const payload=JSON.parse(document.getElementById('data').textContent),rooms=payload.rooms;
+const canvas=document.getElementById('render'),stage=document.getElementById('stage');
+const renderer=new THREE.WebGLRenderer({canvas,antialias:true,alpha:true,powerPreference:'high-performance'});
+renderer.setPixelRatio(Math.min(devicePixelRatio,2));renderer.shadowMap.enabled=true;renderer.shadowMap.type=THREE.PCFSoftShadowMap;renderer.toneMapping=THREE.ACESFilmicToneMapping;renderer.toneMappingExposure=1.3;renderer.outputColorSpace=THREE.SRGBColorSpace;
+const scene=new THREE.Scene();scene.background=new THREE.Color(0x19222b);scene.fog=new THREE.FogExp2(0x1d2933,.012);
+const camera=new THREE.PerspectiveCamera(47,1,.035,800);
+const orbit=new OrbitControls(camera,renderer.domElement);orbit.enableDamping=true;orbit.dampingFactor=.085;orbit.maxPolarAngle=Math.PI*.89;orbit.minDistance=2;orbit.maxDistance=160;orbit.enablePan=true;
+scene.add(new THREE.HemisphereLight(0xd6e8ff,0x554c43,2.0));const sun=new THREE.DirectionalLight(0xffe8ce,4.4);sun.position.set(-13,25,18);sun.castShadow=true;sun.shadow.mapSize.set(2048,2048);sun.shadow.camera.near=.1;sun.shadow.camera.far=120;sun.shadow.bias=-.00035;scene.add(sun);
+const fill=new THREE.DirectionalLight(0xe1efff,2);fill.position.set(12,6,-12);scene.add(fill);
+const pmrem=new THREE.PMREMGenerator(renderer);const envscene=new THREE.Scene();envscene.background=new THREE.Color(0x6f8291);
+const hemi=new THREE.HemisphereLight(0xe9f6ff,0x75634e,3);envscene.add(hemi);scene.environment=pmrem.fromScene(envscene,.02).texture;
+const mats={
+ wall:new THREE.MeshStandardMaterial({color:0xd7d6d0,roughness:.78,metalness:0}),
+ glass:new THREE.MeshPhysicalMaterial({color:0x92bfdd,roughness:.07,metalness:.02,transmission:.65,transparent:true,opacity:.38,side:THREE.DoubleSide}),
+ metal:new THREE.MeshStandardMaterial({color:0x26282b,metalness:.84,roughness:.19}),
+ porcelain:new THREE.MeshPhysicalMaterial({color:0xe6e2dc,roughness:.2,metalness:.02,clearcoat:.55,clearcoatRoughness:.2}),
+ wood:new THREE.MeshStandardMaterial({color:0x85725e,roughness:.48,metalness:0}),
+ neutral:new THREE.MeshStandardMaterial({color:0x777f83,roughness:.86,metalness:0}),
+ floor:new THREE.MeshStandardMaterial({color:0xc5bdae,roughness:.7,metalness:0})
+};
+let modelGroup=new THREE.Group();scene.add(modelGroup);
+let currentRoom=null,highlight=-1,edgeVisible=false,wallVisible=true,altActive=false,textureCache=new Map(),parts=[];
+function activeProducts(){return (altActive&&currentRoom?.alternative?.products)||currentRoom?.products||[];}
+const loader=new THREE.TextureLoader();
+function makeTileMaterial(p){
+ const name=(p?.name||'').toLowerCase(),size=p?.size||'',gloss=/gloss|purity|sapphire|sandstone|indigo/.test(name);
+ const matte=/matte|pienza|luxe|riviera|cortar/.test(name);
+ const texCanvas=document.createElement('canvas');texCanvas.width=512;texCanvas.height=512;
+ const cx=texCanvas.getContext('2d');
+ const light=gloss?'#ddd8cb':'#d6d1c4';cx.fillStyle=light;cx.fillRect(0,0,512,512);
+ let w=/2.?x.?20/i.test(size)?90:/3.?x.?12/i.test(size)?110:/6.?x.?6/i.test(size)?170:235;
+ let h=/2.?x.?20/i.test(size)?225:/3.?x.?12/i.test(size)?170:/6.?x.?6/i.test(size)?170:230;
+ const n=(name.match(/sandstone|beige|terra|cortar/)?.[0]||'');
+ if(n)cx.fillStyle=/sandstone|terra/.test(n)?'#b6a38d':'#b6b7b3';else if(/indigo|antique|sapphire/.test(name))cx.fillStyle='#455d73';else cx.fillStyle='#d3ccc3';
+ const tileColor=cx.fillStyle;cx.fillStyle='#8c8a82';cx.fillRect(0,0,512,512);
+ for(let y=0;y<512;y+=h)for(let x=0;x<512;x+=w){
+  cx.fillStyle=tileColor;cx.fillRect(x+2,y+2,w-4,h-4);
+  cx.strokeStyle='rgba(255,255,255,.11)';cx.lineWidth=2;cx.strokeRect(x+7,y+7,w-14,h-14);
+  for(let j=0;j<8;j++){cx.fillStyle='rgba(250,250,242,.014)';cx.fillRect(x+Math.random()*w,y+Math.random()*h,4+Math.random()*w/8,1);}
+ }
+ const tex=new THREE.CanvasTexture(texCanvas);tex.wrapS=tex.wrapT=THREE.RepeatWrapping;tex.colorSpace=THREE.SRGBColorSpace;tex.anisotropy=8;
+ const mat=new THREE.MeshPhysicalMaterial({map:tex,roughness:gloss?.2:(matte?.83:.52),metalness:0,clearcoat:gloss?.48:.05,clearcoatRoughness:gloss?.13:.6});
+ if(p?.image){const img=new Image();img.onload=()=>{
+  const c=document.createElement('canvas');c.width=c.height=512;const g=c.getContext('2d');g.drawImage(texCanvas,0,0);
+  g.globalAlpha=.28;const ratio=Math.max(512/img.width,512/img.height),sw=img.width*ratio,sh=img.height*ratio;
+  g.drawImage(img,(512-sw)/2,(512-sh)/2,sw,sh);g.globalAlpha=1;
+  const t=new THREE.CanvasTexture(c);t.wrapS=t.wrapT=THREE.RepeatWrapping;t.colorSpace=THREE.SRGBColorSpace;t.anisotropy=8;t.repeat.set(2.5,1.9);mat.map=t;mat.needsUpdate=true;
+ };img.src=p.image;}
+ return mat;
+}
+function boxGeom(bounds,anchor){const lo=bounds.min,hi=bounds.max,dx=Math.max(.025,hi[0]-lo[0]),dy=Math.max(.025,hi[1]-lo[1]),dz=Math.max(.025,hi[2]-lo[2]);
+ return {size:[dx,dz,dy],center:[(lo[0]+hi[0])/2-anchor[0],(lo[2]+hi[2])/2-anchor[2],(lo[1]+hi[1])/2-anchor[1]]};}
+function meshFromBounds(o,anchor,material,kind,surfaceIndex=-1){
+ const d=boxGeom(o.bounds,anchor),maxDim=Math.max(...d.size);if(maxDim>32)return;
+ const geo=new THREE.BoxGeometry(...d.size);
+ const mesh=new THREE.Mesh(geo,material);mesh.position.set(...d.center);
+ mesh.castShadow=kind!=='floor'&&kind!=='wall';mesh.receiveShadow=true;mesh.userData={id:o.id,name:o.name,category:kind,receipt:o.receipt_id,surfaceIndex,dimensionsFeet:d.size.map(x=>+x.toFixed(3))};
+ if(kind==='wall'){mesh.material=material.clone();mesh.material.transparent=true;mesh.material.opacity=wallVisible?.91:.03;}
+ if(kind==='window'){mesh.material=mats.glass;mesh.castShadow=false;}
+ if(kind==='door'){mesh.material=mats.wood;}
+ modelGroup.add(mesh);parts.push(mesh);
+ if(edgeVisible){const edges=new THREE.LineSegments(new THREE.EdgesGeometry(geo),new THREE.LineBasicMaterial({color:0x8ca1b2,transparent:true,opacity:.55}));mesh.add(edges);}
+ return mesh;
+}
+function findSurface(room,which){
+ const r=room.products||[];
+ const f=which==='wall'?r.find(p=>/wall|tub|wet/i.test(p.surface)):
+ which==='floor'?r.find(p=>/level|floor|pan/i.test(p.surface)):r.find(p=>/niche/i.test(p.surface));
+ return f||null;
+}
+function frame(){
+ const bounds=new THREE.Box3().setFromObject(modelGroup);
+ let center=bounds.isEmpty()?new THREE.Vector3():bounds.getCenter(new THREE.Vector3());
+ // Camera centers on visible subset (bounded Revit elements only), not an inferred room centroid.
+ let size=bounds.isEmpty()?new THREE.Vector3(12,9,12):bounds.getSize(new THREE.Vector3());
+ const radius=Math.min(35,Math.max(8,size.length()*.64));
+ orbit.target.copy(center);camera.position.copy(center).add(new THREE.Vector3(radius*.8,radius*.62,radius*1.1));camera.near=.03;camera.far=800;camera.updateProjectionMatrix();orbit.update();
+}
+function materialInspector(index){highlight=index;const p=activeProducts()[index];const info=document.getElementById('material-info');
+ if(!p){info.hidden=true;return}info.hidden=false;
+ const esc=s=>String(s??'').replace(/[&<>"']/g,ch=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[ch]));
+ info.innerHTML='<b>'+esc(p.name)+'</b><div style="margin-top:4px">'+esc(p.surface)+'</div><div>Nominal size: '+esc(p.size)+'</div><div>Price/source: '+esc(p.price)+'</div><div>'+(/niche/i.test(p.surface)?'Niche location/geometry unavailable from the native Revit bridge; no actual niche mesh is displayed.':'Preview applied to model-derived context bounds; exact room face attribution is unverified.')+'</div>'+(p.image?.includes('sandstone')?'<div>Sandstone thumbnail is a Sandstone/Copper MIXED maker installation, not Sandstone-only appearance.</div>':'')+'<div>Maker image is not a verified sample.</div><a href="'+esc(p.url)+'" rel="noopener noreferrer" target="_blank">Official product page ↗</a>';
+ document.querySelectorAll('.surface').forEach((x,i)=>x.classList.toggle('selected',i===index));
+ parts.forEach(part=>{
+  const hit=part.userData.surfaceIndex===index;
+  if(part.material?.emissive){part.material.emissive.set(hit?0x55412a:0x000000);part.material.emissiveIntensity=hit?.22:0;}
+ });
+}
+function buildRoom(rid){
+ const r=rooms.find(q=>q.id===rid);if(!r)return;if(!r.alternative)altActive=false;currentRoom=r;
+ const old=modelGroup;modelGroup=new THREE.Group();scene.add(modelGroup);scene.remove(old);
+ old.traverse(o=>{if(o.geometry)o.geometry.dispose()});parts=[];
+ const ctx=r.model_context,anchor=ctx.anchor_ft;
+ let surfaces=activeProducts(),wall=surfaces.find(p=>/wall|tub|wet/i.test(p.surface))||null,floor=surfaces.find(p=>/level|floor|pan/i.test(p.surface))||null,niche=surfaces.find(p=>/niche/i.test(p.surface))||null;
+ const wallMaterial=wall?makeTileMaterial(wall):mats.neutral,floorMaterial=floor?makeTileMaterial(floor):mats.floor;
+ const floorObjects=ctx.floors||[];const localFloors=floorObjects.filter(o=>Math.abs(o.bounds.min[2]-anchor[2])<4);
+ for(const o of localFloors){
+  const b=o.bounds,cut={min:[Math.max(b.min[0],anchor[0]-11),Math.max(b.min[1],anchor[1]-11),b.min[2]],max:[Math.min(b.max[0],anchor[0]+11),Math.min(b.max[1],anchor[1]+11),Math.min(b.max[2],anchor[2]+.5)]};
+  if(cut.max[0]>cut.min[0]&&cut.max[1]>cut.min[1])meshFromBounds({...o,bounds:cut},anchor,floorMaterial,'floor',surfaces.indexOf(floor));
+ }
+ for(const o of ctx.walls||[]){
+  const b=o.bounds;
+  if(b.min[2]>=anchor[2]+11||b.max[2]<=anchor[2]-2)continue;
+  meshFromBounds(o,anchor,wallMaterial,'wall',surfaces.indexOf(wall));
+ }
+ for(const o of ctx.windows||[])meshFromBounds(o,anchor,mats.glass,'window');
+ for(const o of ctx.doors||[])meshFromBounds(o,anchor,mats.wood,'door');
+ for(const o of ctx.casework||[])meshFromBounds(o,anchor,mats.wood,'casework');
+ for(const o of ctx.fixtures||[])meshFromBounds(o,anchor,mats.porcelain,'fixture');
+ // Neutral scene base is purely visual context, not a Revit floor or measured slab.
+ const ground=new THREE.Mesh(new THREE.PlaneGeometry(120,120),new THREE.MeshStandardMaterial({color:0x1f2a33,roughness:.91}));
+ ground.rotation.x=-Math.PI/2;ground.position.y=-2.05;ground.receiveShadow=true;modelGroup.add(ground);
+ const grid=new THREE.GridHelper(80,40,0x637381,0x354552);grid.position.y=-2.02;grid.material.opacity=.16;grid.material.transparent=true;modelGroup.add(grid);
+ const ui=document.getElementById('room-list');ui.querySelectorAll('.room-btn').forEach(b=>b.classList.toggle('active',b.dataset.room===r.id));
+ document.getElementById('room-title').textContent=r.id+' / '+r.title;
+ document.getElementById('room-description').textContent=(r.has_pick?(altActive?'Unselected historical alternative preview; frozen picks unchanged. ':'Frozen tile scheme shown on model-derived context bounding boxes. '):'NO PICK YET — all tile surfaces neutral. ')+'Room-to-element attribution unverified.';
+ document.getElementById('confidence').textContent=r.has_pick?'Context proxy':'No selected tile';
+ document.getElementById('model-count').textContent=parts.length+' actual Revit element bounds · room association unverified';
+ document.getElementById('spec-title').textContent=r.id+' · '+(altActive?'Historical alternative preview':r.has_pick?'Frozen current picks':'No pick yet');
+ const alt=document.getElementById('alternative');alt.disabled=!r.alternative;alt.checked=!!(r.alternative&&altActive);
+ document.getElementById('alternative-label').textContent=r.alternative?(altActive?'Unselected preview':'Compare unselected'):'Not available';
+ const list=document.getElementById('surfaces');list.innerHTML='';
+ if(!surfaces.length){list.innerHTML='<div class="muted" style="padding:12px;background:#26313d;border-radius:5px;margin-top:11px">NO PICK YET<br>Neutral materials only. Do not infer owner approval.</div>';}
+ for(let i=0;i<surfaces.length;i++){const p=surfaces[i],btn=document.createElement('button');btn.className='surface';
+  const sw=document.createElement('div');sw.className='surface-row';const img=document.createElement('img');img.className='swatch';
+  if(p.image)img.src=p.image;else img.alt='No verified tile thumbnail';
+  const text=document.createElement('div');const title=document.createElement('div');title.className='surface-name';title.textContent=p.surface;const s=document.createElement('div');s.className='surface-sub';s.textContent=p.name+(/niche/i.test(p.surface)?' · geometry unavailable':'');
+  text.append(title,s);sw.append(img,text);btn.append(sw);btn.addEventListener('click',()=>materialInspector(i));list.append(btn);}
+ document.getElementById('material-info').hidden=true;frame();
+ history.replaceState(null,'','#'+encodeURIComponent(rid));
+}
+const list=document.getElementById('room-list');for(const r of rooms){const b=document.createElement('button');b.className='room-btn';b.dataset.room=r.id;const dot=document.createElement('span');dot.className='room-dot'+(r.has_pick?'':' empty');const t=document.createElement('span');t.className='room-text';const code=document.createElement('div');code.className='room-code';code.textContent=r.id;const meta=document.createElement('div');meta.className='room-meta';meta.textContent=r.has_pick?'Provisional material palette':'No pick yet';t.append(code,meta);b.append(dot,t);b.addEventListener('click',()=>buildRoom(r.id));list.append(b);}
+document.getElementById('reset').onclick=()=>frame();document.getElementById('alternative').onchange=e=>{altActive=!!e.target.checked&&!!currentRoom.alternative;buildRoom(currentRoom.id);};
+document.getElementById('toggle-walls').onclick=()=>{wallVisible=!wallVisible;for(const p of parts)if(p.userData.category==='wall')p.visible=wallVisible;document.getElementById('toggle-walls').textContent=wallVisible?'Hide walls':'Show walls';};
+document.getElementById('toggle-bounds').onclick=()=>{edgeVisible=!edgeVisible;document.getElementById('toggle-bounds').textContent=edgeVisible?'Hide edges':'Show edges';buildRoom(currentRoom.id);};
+canvas.addEventListener('dblclick',frame);
+document.getElementById('open-accuracy').onclick=()=>window.open('ACCURACY.md','_blank');
+document.getElementById('copy-room').onclick=()=>navigator.clipboard?.writeText(currentRoom?.id||'');
+const observer=new ResizeObserver(()=>{const w=stage.clientWidth,h=stage.clientHeight;renderer.setSize(w,h,false);camera.aspect=Math.max(.1,w/h);camera.updateProjectionMatrix()});observer.observe(stage);
+function animate(){requestAnimationFrame(animate);orbit.update();renderer.render(scene,camera)}animate();
+buildRoom(rooms.some(r=>r.id===decodeURIComponent(location.hash.slice(1)))?decodeURIComponent(location.hash.slice(1)):'PH-BATH4');
+</script>
+</body></html>

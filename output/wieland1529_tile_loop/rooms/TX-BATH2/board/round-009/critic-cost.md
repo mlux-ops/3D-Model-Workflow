@@ -1,0 +1,50 @@
+# TX-BATH2 — Round 009 independent blind cost critique
+
+**Seat:** `critic-cost` (procurement; weight **0.20**). **Review date:** 2026-11-06. This file evaluates exactly neutral alternatives **A** and **C**, without inferring their origin. Each quantity below is **per one of two TX unit copies**, derived from original ELM quote/handoff and drawing-only [room geometry](../../geometry.json), not verified native 1529 measurements. The selected program in [plumbing](../../plumbing.json) is a **Duravit Starck 59-in built-in tub** with **Hansgrohe Chrome**, and **sink/basin unselected** (row `326865367203716`). **No tiled shower pan** is in scope. Owner's room budget/upcharge limit is **null** ([owner feedback](../../../../state/OWNER_FEEDBACK.md)); 125% cannot be scored as a hard cost failure.
+
+## Candidate A — Copper + Sandstone tub wall/niche, Cortar Clay Soft level floor
+
+| Five required procurement criteria | Score (1–5) | Independent, source-grounded reason |
+|---|---:|---|
+| **1. Exact ELM original USD and gross source rows** | **5** | Original 2026-09-03 ELM IDs/rates and carried extensions agree: **3035984078372740** Copper **92.8 SF×$6.95=$644.96**; **8344502272130948** Sandstone **8.63 SF×$6.95=$59.98**; **7539583705743236** Clay Soft **43.7 SF×$6.75=$294.98**, summed **$999.92/unit** ([candidate A](candidates/A.md), lines 12–14, 30). |
+| **2. Credible takeoff, niche netting, embedded 15%** | **2** | Original **92.8 wall +8.63 niche** are **both gross with 15%** but niche may displace Copper field; a measured niche/back/sill and field-face deduction are not provided, so **$999.92 is not a purchasable net-wall order** ([geometry](../../geometry.json), W1/W2/W3; [candidate A](candidates/A.md), lines 14, 29–31). |
+| **3. Current alternate price/verified sales offer vs old quote** | **4** | All three original material lines have a **real dated same-room ELM historical rate**, with no new substituted product; however **no current supplier re-quote, delivered material price, cartons, trim or installer amount** exists ([candidate A](candidates/A.md), lines 12–15, 30). |
+| **4. Chicago stock, lead, logistics** | **2** | Historic Tones US-stocked/quick-ship and Cortar overseas **10–12-week/300-SF** notes do not demonstrate project lot, two-unit case fill, freight or Chicago ETA; all actual supply commitments **null** ([Tones Copper evidence](../../../../research/products/elm-tones-copper-2x20.md); [ELM Cortar Clay](https://www.elmsurfaces.com/product/cortar-clay)). |
+| **5. Owner-cap, testing and scope release** | **2** | Product-specific Copper/Sandstone **Wet Areas** is recorded for tub wall/niche but **Cortar Clay 12×24 Soft exact measured wet DCOF is null → bath-floor FAIL**; no owner basin/room cap, so no 125% test ([R05 wet-use register](../../../../research/products/R05_WET_LISTINGS_DCOF_INSTALLATION_EVIDENCE.md)). |
+
+**seat_score: 3.0 / 5.0** — mean **(5+2+4+2+2)/5 = 3.0**. **confidence: medium** for historical row IDs and amounts; **low** for ordered quantities, current Chicago supply and owner release.
+
+**Dated source cost / overlap:** Original **$644.96 + $59.98 + $294.98 = $999.92/unit**, two copies **$1,999.84**, historical **material-only**, not current bid or owner room cap. The **92.8 / 8.63 / 43.7 SF** each contain **one 15% waste factor**, not another surcharge. If the full **8.63 SF gross niche truly replaced** an equal Copper face, a *hypothetical* Copper allocation would be **84.17 SF × $6.95 ≈ $584.98**, plus Sandstone **$59.98** = **$644.96 wall+niche**; do **not** claim this reduction as measured, since actual niche side returns and shelves could alter the balance. Final netted material quantity/cost, boxes, trim sticks, grout, waterproofing, tax, freight and labor `null`.
+
+**top_fix:** Obtain a **measured two-unit tub/niche/level-floor purchase schedule** with an exact **Clay 12×24 Soft wet DCOF test** or a separately priced certified replacement, including niche face deduction, return areas, current Chicago stock and installed trims.
+
+**gate_flags:**
+- **PASS manufacturer wet-wall application (limited):** [ELM Copper 2×20 Glossy](https://www.elmsurfaces.com/product/copper-tones) and [Sandstone 2×20 Glossy](https://www.elmsurfaces.com/product/sandstone-tones) have individual maker/project Wet Areas records in [Copper](../../../../research/products/elm-tones-copper-2x20.md) and [Sandstone](../../../../research/products/elm-tones-sandstone-2x20.md). Wet use does not certify floor slip performance.
+- **FAIL — LEVEL BATH FLOOR EXACT WET DCOF:** [Cortar Clay](https://www.elmsurfaces.com/product/cortar-clay) lists Wet Areas for flat tile but no **exact tested wet DCOF ≥0.42** for **12×24 Soft**; floor purchase remains held despite original ELM rate.
+- **SHOWER PAN N/A:** Duravit tub; do **not** fabricate square/linear shower drain or pan purchase.
+- **HOLD — takeoff and ownership:** TX2 basin **unselected**; native 1527-named model not confirmed as 1529, niche and chrome fitting cutouts unverified, lot/ETA and budget cap `null`. No proven discontinued/no-US-distribution gate failure; **no 125% room-budget fail**.
+
+## Candidate C — Copper/Sandstone measured-netting concept plus HNC6615 bath level floor
+
+| Five required procurement criteria | Score (1–5) | Independent, source-grounded reason |
+|---|---:|---|
+| **1. Exact ELM original USD and gross source rows** | **4** | Accurately retains original three historical ELM rows **3035984078372740** ($644.96), **8344502272130948** ($59.98) and **7539583705743236** ($294.98), **$999.92/unit historical**, while explicitly **not** assigning Clay Soft's floor rate to HNC6615 ([candidate C](candidates/C.md), lines 9–15). |
+| **2. Credible takeoff, niche netting, embedded 15%** | **4** | Provisional **84.17 SF Copper +8.63 SF Sandstone=92.8 gross wall/niche**, and **43.7 SF** separate level floor, all with **one 15%** already; remaining niche backs/returns/actual 1529 dimensions mean box/order quantities **not confirmed** ([candidate C](candidates/C.md), lines 9–12). |
+| **3. Current alternate price/verified sales offer vs old quote** | **2** | Exact **HNC6615 price for SHB/Chicago = null**; dated [public Floor Signature Troy IL](../../../../research/products/R05_PUBLIC_RETAIL_AND_ILLINOIS_SOURCING_EVIDENCE.md) **$32.76/box asking** is **not a verified delivered supplier offer**, so no price variance against historical $294.98 Clay floor can be confirmed. |
+| **4. Chicago stock, lead, logistics** | **2** | Glazzio maker's **9.69-SF/box** gives packaging only, not today's **Chicago lots, fulfillment or freight**; Tones collection lead is generic, HNC older/newer maker evidence must be reconciled, actual ETA/lot **null** ([HNC exact maker](https://glazziosurfaces.com/products/harmonic-rondo-12x24-matte-porcelain-tile)). |
+| **5. Owner-cap, testing and scope release** | **2** | Wet-listed Copper/Sandstone tub use, and HNC SKU-specific maker **DCOF WET >0.50** published, but **raw exact tested point/certificate null**, tub details and basin unselected, owner cap null; strict signoff remains **HOLD/FAIL** ([maker HNC](https://glazziosurfaces.com/products/harmonic-rondo-12x24-matte-porcelain-tile); [board gate](../../../../board/BOARD.md)). |
+
+**seat_score: 2.8 / 5.0** — mean **(4+4+2+2+2)/5 = 2.8**. **confidence: medium** for source quantities, case size and maker-reported bound; **low** for new delivered price and approval.
+
+**Distinct money bases:** Original unnetted dated ELM quote **$999.92/unit /$1,999.84/two copies** is **Copper full 92.8 gross +Sandstone niche 8.63 gross +Clay Soft 43.7 gross**. Proposed equal-area niche displacement yields a *non-orderable* same-rate Copper/Sandstone **$644.96/unit** wall/niche illustration, not a refreshed two-unit ELM quote. Substitute **HNC6615 43.7-SF gross floor** is **NOT priced by ELM $6.75/SF**. If one hypothetically orders the maker's **9.69 SF/box** against that old gross, **ceil(43.7/9.69)=5 boxes**, **48.45 SF** (extra **4.75 SF** over the already-wasted source gross); the dated Troy IL public asking **5×$32.76=$163.80/unit** is a **retail math illustration only**. Never state that difference from old $294.98 floor is an actual saving: available lot, Chicago delivered supplier quote, labor/trim and the 1529 takeoff are all `null`. No additional floor/pan for the tub.
+
+**top_fix:** Establish **an itemized delivered Chicago HNC6615 and two-color ELM package** with a maker's raw wet-slip certification, measured niche net/returns and the owner-selected basin/fixture cut layout; only then compare full cost with the source.
+
+**gate_flags:**
+- **PASS manufacturer wet-wall application (limited):** Product-specific ELM [Copper](https://www.elmsurfaces.com/product/copper-tones) and [Sandstone](https://www.elmsurfaces.com/product/sandstone-tones) **Wet Areas** recorded in permitted maker audit; exact lots and waterproofed niche details pending.
+- **FAIL / not cleared — LEVEL BATH FLOOR EXACT WET DCOF:** [Glazzio HNC6615](https://glazziosurfaces.com/products/harmonic-rondo-12x24-matte-porcelain-tile) individual product reports **>0.50**; older maker listing **>0.42**. These are **measured-test lower-bound claims but not a raw exact numeric point/test certificate**, so the strict exact-result release remains held (not the same deficiency as Daltile's generic Target ≥0.42).
+- **SHOWER PAN N/A:** Existing **Duravit built-in tub**, no tile shower floor or square-drain pan required.
+- **HOLD — room and economics:** Sink/basin **unselected**; Chicago delivered quote/lead, niche return geometry, real case quantities, owner-approved cap and identified 1529 model `null`. **No inferable 125% fail**.
+
+**Market boundary:** TX sale target **$2.7M**; 14 listed/sold units in **nine independent buildings** (four 405 W Armitage transactions = **one** development) provide program context only. No authenticated tile photographs establish Copper, HNC or grout buyer preference ([research](../../../../research/comps/R05_OLD_TOWN_DESIGN_EVIDENCE_AND_ROOM_TIERS.md)).
+

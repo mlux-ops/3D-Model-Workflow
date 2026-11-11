@@ -1,0 +1,21 @@
+{
+  "emitter_origin_before": [
+    0.0, 
+    0.0, 
+    0.26666666666666666
+  ], 
+  "error": "Traceback (most recent call last):\n  File \"E:\\Claude\\3D-Model-Workflow\\output\\belmont_ph_good_rfa_recovery_20261101\\smooth_parent_retrofit_r09\\build_smooth_parent_r09_fix02.py\", line 160, in build\n    report['working_optics']=optical_check(seed_doc)\n  File \"E:\\Claude\\3D-Model-Workflow\\output\\belmont_ph_good_rfa_recovery_20261101\\smooth_parent_retrofit_r09\\build_smooth_parent_r09_fix02.py\", line 62, in optical_check\n    need(isinstance(flux,DB.Lighting.InitialFluxIntensity) and abs(float(flux.Flux)-707.09)<.02,\n  File \"E:\\Claude\\3D-Model-Workflow\\output\\belmont_ph_good_rfa_recovery_20261101\\smooth_parent_retrofit_r09\\build_smooth_parent_r09_fix02.py\", line 28, in need\n    if not condition: raise RuntimeError(message)\nRuntimeError: Wrong tested luminous flux: type=<type 'InitialFluxIntensity'> measured=1109.0 expected=707.09\n", 
+  "ies": "E:\\Claude\\3D-Model-Workflow\\output\\belmont_ph_good_rfa_recovery_20261101\\unpacked\\SOURCES\\IES\\FR-W2502-52L.IES", 
+  "ies_sha256": "6044dda98294020d03decd14ad118be2717845536597d1ca9bb9cc296fdcda8e", 
+  "input_hashes_preserved": true, 
+  "nested_family": "ModernForms_Smooth_FR-W2502-52L_SBMB_R2025_R02_PARTIAL_UNAPPROVED", 
+  "nested_symbol": "ModernForms_Smooth_FR-W2502-52L_SBMB_R2025_R02_PARTIAL_UNAPPROVED", 
+  "optical_orientation_requires_project_qa": true, 
+  "seed": "E:\\Claude\\3D-Model-Workflow\\output\\belmont_ph_good_rfa_recovery_20261101\\unpacked\\REVIEW_RFAs\\Hinkley_Eos_53860BK_R2025_R05_NATIVE_LIGHT_IES_UNAPPROVED.rfa", 
+  "seed_removed_physical_elements": 10, 
+  "seed_sha256": "f9ab27d564ddac1c3242209d771ff5202a2de3f27b8f9e23840a6ae6133d85ae", 
+  "source": "E:\\Claude\\3D-Model-Workflow\\output\\belmont_ph_good_rfa_recovery_20261101\\unpacked\\REVIEW_RFAs\\ModernForms_Smooth_FR-W2502-52L_SBMB_R2025_R02_PARTIAL_UNAPPROVED.rfa", 
+  "source_sha256": "f1741c711a07a26101c550b580a2db6be99bc4d3689cb75104eaafb0834379db", 
+  "status": "BLOCKED_NO_RELEASE", 
+  "timestamp_utc": "2026-11-01T16:12:16Z"
+}

@@ -1,0 +1,13 @@
+# R023 four permitted vendors, large LEVEL floor and Duravit tub selections
+
+Research observed November 6–7, 2026. Newest owner feedback authorizes Elm Surfaces, MSI Surfaces, Porcelanosa and Floor & Decor only. Platform, Daltile and Emser are NOT authorized future champions. Original prior signed alternatives remain historical, not dispatchable.
+
+Floor & Decor **Luxe Sand SKU 101317949** https://www.flooranddecor.com/porcelain-tile/luxe-sand-matte-porcelain-tile-101317949.html : 24x24 nominal/23.70 actual, matte 8mm rectified, wet DCOF >=0.42, Shower Floor YES / Bathroom Floor YES, observed non-Chicago online $3.49/SF, 15.52SF/$54.08 carton.
+
+Floor & Decor **Riviera Oat SKU 101487775** https://www.flooranddecor.com/porcelain-tile/riviera-oat-matte-porcelain-tile-101487775.html : 24x48 nominal/23.58x47.28 actual, matte 8mm rectified, wet DCOF >=0.42, Shower Floor YES / Bathroom Floor YES, public two storefront price observations $3.99–$4.39/SF, box 16SF/$63.84–$70.24. Neither guarantees Chicago dye lot, lead, stock or project price. Proposed 1/8-inch grout a design assumption until maker/sample verified.
+
+**Porcelanosa official U.S. catalog** https://store.porcelanosa.com/us/search/bottega : Bottega Caliza 23x47 manufacturer item 100280172 $5.98/SF and 23x23 manufacturer item 100324943 $10.95/SF posted. This is a real allowable price/appearance comparison, NOT an approved bath LEVEL or PAN selection: exact per-SKU published wet DCOF >=0.42 and wet-floor application technical sheet still unavailable. Do not infer rating from the Ant. variant or 20mm paver.
+
+**ELM individual wet WALL/NICHE product pages**: Tones Sapphire https://www.elmsurfaces.com/product/sapphire-tones; Copper https://www.elmsurfaces.com/product/copper-tones; Sandstone https://www.elmsurfaces.com/product/sandstone-tones; Soho Ivory https://www.elmsurfaces.com/product/soho-ivory; Soho Black https://www.elmsurfaces.com/product/soho-black; Noho Ivory https://www.elmsurfaces.com/product/noho-ivory; Cortar Charcoal FLAT https://www.elmsurfaces.com/product/cortar-charcoal. Use only individual Wet Areas listed finishes, never inherit from unlisted ribbed or Caviar colors. Elm replacement quote currently UNKNOWN.
+
+inputs/TRADE_QUOTES.md was absent at live R023 inspection. Price hierarchy: job 25-006 trade quote, then dated earlier-job quote (older than 12 months indicative only), then current manufacturer/store retail. No Gmail/vendor outreach and no invented trade prices. Three chosen Duravit TUB rooms have no tiled shower PAN; preferred 24in+ floor is LEVEL only. Room geometry is prior drawing-derived and still requires native read-only Revit receipt/actual element corroboration. Historic original waste 15% once and total $23,572.44 unchanged.

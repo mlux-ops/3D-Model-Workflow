@@ -1,0 +1,36 @@
+{
+  "round": 27,
+  "fix_id": "R027-SCORING-ARITHMETIC-FIX1",
+  "status": "CORRECTED_AWAITING_INDEPENDENT_REPEAT_REVIEW",
+  "trigger": {
+    "reviewer_worker": "worker-40",
+    "reviewer_run_id": "8a358fec-5853-4dea-81a6-0d5ef17fedf1",
+    "report": "state/ROUND027_POSTSCORE_REVIEWER40_REPORT.md",
+    "report_sha256_before_fix": "e7f49c9baf60ce0ef039c5a44febe6975fcdccbef6f1742723bdc6b1385d8c31",
+    "verdict": "PRECISE FIX",
+    "finding": "Four prime-authored weighted totals were arithmetically incorrect; all criterion ratings and specialist means recompute correctly."
+  },
+  "weights": {"MARKET": 0.30, "DESIGN": 0.25, "BUILD": 0.25, "COST": 0.20},
+  "corrections": [
+    {"room":"PH-BATH2","candidate":"A","seat_means":{"MARKET":4.3,"DESIGN":4.3,"BUILD":3.2,"COST":3.4},"original":3.82,"corrected":3.845,"calculation":"4.3*.30 + 4.3*.25 + 3.2*.25 + 3.4*.20 = 3.845"},
+    {"room":"PH-BATH2","candidate":"B","seat_means":{"MARKET":4.2,"DESIGN":4.2,"BUILD":2.7,"COST":3.3},"original":3.63,"corrected":3.645,"calculation":"4.2*.30 + 4.2*.25 + 2.7*.25 + 3.3*.20 = 3.645"},
+    {"room":"TX-BATH4","candidate":"A","seat_means":{"MARKET":3.5,"DESIGN":3.7,"BUILD":2.9,"COST":3.0},"original":3.31,"corrected":3.30,"calculation":"3.5*.30 + 3.7*.25 + 2.9*.25 + 3.0*.20 = 3.30"},
+    {"room":"TX-BATH4","candidate":"B","seat_means":{"MARKET":3.5,"DESIGN":3.6,"BUILD":2.6,"COST":2.5},"original":3.045,"corrected":3.10,"calculation":"3.5*.30 + 3.6*.25 + 2.6*.25 + 2.5*.20 = 3.10"}
+  ],
+  "unchanged_totals": {"TX-BATH2":{"A":3.99,"B":3.695}},
+  "affected_files": [
+    {
+      "path":"state/ROUND027_AUTHENTIC_FOUR_SEAT_COLLECTION_SCORED_NO_CHAMPIONS.json",
+      "before":{"bytes":6486,"sha256":"33d2e5e4de648f6f7fbace0b19bb8c6638c9a035735ac7fbf16a860cdec65f51"},
+      "after":{"bytes":6488,"sha256":"6763602ce6014dade1c58eb63e4a611f1fb4ec0fcf33491ad5fa2a9bd7685559"}
+    },
+    {
+      "path":"state/ROUND027_SCORING_FIVE_SECTION_REVIEWER_REPORT.md",
+      "before":{"bytes":1980,"sha256":"499d62ff85de0bd23ea9abebc27c8a6e3de0fc155f5d1fa5ef1244e949cd14af"},
+      "after":{"bytes":2085,"sha256":"4cedcf30c9e5fde25c40df54d139ef2796dce969ba6de0d81617b9791f05b10a"}
+    }
+  ],
+  "source_critique_files": "UNCHANGED; original twelve valid critic files remain as scored, with source hashes recorded in the collection receipt.",
+  "acceptance_effect": "NONE. PH-BATH2 B remains below 3.0; TX-BATH4 A and B remain below 3.0. TX-BATH2 passes numeric seat minimums only; technical and commercial gates remain UNKNOWN. No incumbent is fabricated. No champion promoted. Owner budget remains FILL IN.",
+  "required_next": "Reviewer40 must independently repeat the post-score review against the corrected receipt and report, then issue an exact updated verdict and clearance artifact."
+}

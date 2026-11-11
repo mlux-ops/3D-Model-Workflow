@@ -1,0 +1,25 @@
+{
+ "schema_version": 1,
+ "operation_id": "cbbda242-6666-409a-af41-449f9eced1c6",
+ "status": "failed",
+ "request": {
+  "schema_version": 1,
+  "operation_id": "cbbda242-6666-409a-af41-449f9eced1c6",
+  "operation": "api.lookup",
+  "document": {
+   "session_id": "2978497e-b41f-497f-81f3-7be82e0e133d"
+  },
+  "arguments": {}
+ },
+ "result": null,
+ "error": {
+  "code": "ArgumentException",
+  "message": "The value cannot be an empty string. (Parameter 'name')",
+  "details": null
+ },
+ "cancel_requested": false,
+ "created_utc": "2026-11-08T00:08:30.7774485Z",
+ "finished_utc": "2026-11-08T00:08:30.7944200Z",
+ "elapsed_ms": 12.6313,
+ "transaction_status": "not_started"
+}

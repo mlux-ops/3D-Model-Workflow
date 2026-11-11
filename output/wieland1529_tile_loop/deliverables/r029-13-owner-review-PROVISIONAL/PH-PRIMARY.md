@@ -1,0 +1,20 @@
+# PH-PRIMARY — R029 provisional owner tile review
+
+**PROVISIONAL / NOT FINAL / NOT OWNER APPROVED.** **Status:** BLOCKED; accepted champion NONE. **Design:** R027 ranked a Riviera Oat/Bone-flat direction only. The NEW R029 schemes are A: flat Bone wet walls + ivory Luxe Sand LEVEL/LINEAR PAN; B: Tower Gray walls, LEVEL and LINEAR PAN. Both are PREPARED NOT FROZEN; no ceiling tile qualifies yet.
+
+| Surface | Direction under review | Traceable alternatives / exact gate |
+|---|---|---|
+| Wet WALL | A Bone FLAT; B Tower Gray; no Ribbed/Reed. | [Elm Cortar Bone FLAT Soft 24x48](https://www.elmsurfaces.com/product/cortar-bone); [F&D Luxe Sand 101317865 24x48](https://www.flooranddecor.com/porcelain-tile/luxe-sand-matte-porcelain-tile-101317865.html); [F&D Tower Gray 100887140 24x48](https://www.flooranddecor.com/porcelain-tile/tower-gray-matte-porcelain-tile-100887140.html). Individual wet/shower-wall pages; ceiling not covered. |
+| Bath LEVEL + inherited PH-WC | A Luxe Sand 24x24; B Tower Gray 24x48. | [F&D Luxe Sand 101317949 24x24](https://www.flooranddecor.com/porcelain-tile/luxe-sand-matte-porcelain-tile-101317949.html); [F&D Riviera Oat 101487775 24x48](https://www.flooranddecor.com/porcelain-tile/riviera-oat-matte-porcelain-tile-101487775.html); [F&D Tower Gray 100887140 24x48](https://www.flooranddecor.com/porcelain-tile/tower-gray-matte-porcelain-tile-100887140.html). Exact pages: Bathroom Floor YES and wet DCOF >=0.42. |
+| 48-in LINEAR PAN | Same A/B floor SKU, installer-cut to LINEAR. | [F&D Luxe Sand 101317949 24x24](https://www.flooranddecor.com/porcelain-tile/luxe-sand-matte-porcelain-tile-101317949.html); [F&D Riviera Oat 101487775 24x48](https://www.flooranddecor.com/porcelain-tile/riviera-oat-matte-porcelain-tile-101487775.html); [F&D Tower Gray 100887140 24x48](https://www.flooranddecor.com/porcelain-tile/tower-gray-matte-porcelain-tile-100887140.html). Exact pages: Shower Floor YES and wet DCOF >=0.42; drain cuts unmeasured. |
+| Shower CEILING | Hold; no ceiling tile selected. | Bone FLAT, Luxe Sand 101317865 and Tower Gray 100887140: 0/3 verified overhead permissions. NICHE: N/A. |
+
+**Plumbing and room:** Two PH copies 304A/304B; Brizo Black Onyx BT0734816-BNX 48-in LINEAR, solid factory BNX grate and separate BR73480 rough; selected Duravit Starck 700337000000090 tub retained; no niche. Historical floor 103 SF, drawing-derived and unverified.
+
+**Original cost (two copies):** Per copy: WALL 143.00 gross SF @ $8.14; combined LEVEL/LINEAR PAN/PH-WC 135.60 gross SF @ $7.82; historical niche 7.41 SF excluded. Carried tile material $2,224.41/copy. Original quoted gross areas include **15% waste once**; replacement rates are indicative, not a delivered or installed bid.
+
+**Buyer context:** OT01's attributable Old Town bathroom photo shows a dry powder-like contrast composition only; OT05 wet-bath imagery is unverified. Penthouse buyer target $2.8M within the $2.4M-$3.2M comparison band; no comp verifies a shower SKU.
+
+**Owner and verification holds:** Reconcile 143-SF wall gross against unverified W1/W2, tub-adjacent scope and ceiling. Confirm slope/threshold cuts, drain location, overhead assembly and actual split of LEVEL/PAN/WC. Native Revit/field dimensions **UNVERIFIED**; Tower Gray: locally discontinued at Kirkwood; Chicago matching lot/cases **UNVERIFIED**; ETA **UNKNOWN**; complete box-rounded delivered and installed cost **FILL IN**; owner room tile budget/upgrade stance **FILL IN**. No board freeze, selection or purchasing release.
+
+**Evidence:** [R027 signed predecessor](../r027-13-owner-review-PROVISIONAL/PH-PRIMARY.md) · [room comparison](../../rooms/PH-PRIMARY/vendor_comparison.md) · [R029 prepared schemes](../../rooms/PH-PRIMARY/board/round-029/prepared/schemes.md) · [surface qualification register](../../research/products/13_ROOM_SURFACE_QUALIFICATION_GAP_REGISTER_20261107.md) · [trade quote basis](../../inputs/TRADE_QUOTES.md) · [Old Town image provenance](../../research/comps/R021_OT05_PHOTO_PROVENANCE_AND_OLD_TOWN_COMPARISON.md).

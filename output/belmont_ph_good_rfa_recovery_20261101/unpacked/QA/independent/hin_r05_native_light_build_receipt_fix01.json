@@ -1,0 +1,420 @@
+{
+  "candidate_sha256": "f9ab27d564ddac1c3242209d771ff5202a2de3f27b8f9e23840a6ae6133d85ae", 
+  "catalog_lumens": 1000.0, 
+  "catalog_watts": 19.0, 
+  "cct_kelvin": 3000.0, 
+  "cri": 93, 
+  "electrical_connector": "UNVERIFIED_NOT_CREATED", 
+  "exact_official_ies_file": "E:\\Claude\\3D-Model-Workflow\\output\\belmont_ph_good_rfa_20261016\\sources\\photometry\\HIN53860BK_53860_official.ies", 
+  "geometry_from_R03_photo_reconstruction": "PRESERVED_NOT_OEM_CAD", 
+  "ies_sha256": "b8f4e409bd01f235c2a6a17024825aca667dc187dd95ceb84a5adec90c50e8b9", 
+  "ies_test_lumens": 1109.0, 
+  "ies_test_watts": 18.449999999999999, 
+  "led_engine": "5386XD", 
+  "model": "53860BK", 
+  "native_ies_portability": "COMPANION_FILE_REQUIRED", 
+  "native_template_provenance": "R03 Generic Model face based template; Revit Lighting Fixtures category, converted to REAL native LightFamily with OwnerFamily.FBX_ASSET_TYPE=1, preserves face hosting.", 
+  "new_r05_candidate": "E:\\Claude\\3D-Model-Workflow\\output\\belmont_ph_good_rfa_20261016\\candidates\\Hinkley_Eos_53860BK_R2025_R05_NATIVE_LIGHT_IES_UNAPPROVED.rfa", 
+  "official_ies_preserved": true, 
+  "official_ies_url": "https://hinkleymedia.s3.amazonaws.com/Products/files/ies/53860.ies", 
+  "receipt_utc": "2026-10-16T08:05:34Z", 
+  "render_orientation_and_visual_qa": "PENDING", 
+  "saved_envelope": {
+    "max_ft": [
+      1.0416666269302368, 
+      0.2291666716337204, 
+      0.25
+    ], 
+    "min_ft": [
+      -1.0416666269302368, 
+      -0.2291666716337204, 
+      -4.0337246214212224e-25
+    ], 
+    "physical_points": 4859, 
+    "xyz_in": [
+      24.999999046325684, 
+      5.5000001192092896, 
+      3.0
+    ]
+  }, 
+  "saved_native_light": {
+    "category": "Lighting Fixtures", 
+    "distribution_class": "PhotometricWebLightDistribution", 
+    "family_placement_type": "WorkPlaneBased", 
+    "ies_light_type_path": "HIN53860BK_53860_official.ies", 
+    "ies_type_parameter_path": "HIN53860BK_53860_official.ies", 
+    "light_distribution_style": "PhotometricWeb", 
+    "light_shape_style": "Point", 
+    "light_source_flag": 1, 
+    "native_initial_flux_lm": 1109.0, 
+    "native_initial_kelvin": 3000.0, 
+    "native_light_source_element_ids": [
+      3237
+    ], 
+    "native_source_transform_basis_z": [
+      0.0, 
+      0.0, 
+      1.0
+    ], 
+    "native_source_transform_origin_ft": [
+      0.0, 
+      0.0, 
+      0.26666666666666666
+    ], 
+    "warnings": []
+  }, 
+  "source_envelope": {
+    "max_ft": [
+      1.0416666269302368, 
+      0.2291666716337204, 
+      0.25
+    ], 
+    "min_ft": [
+      -1.0416666269302368, 
+      -0.2291666716337204, 
+      -4.0337246214212224e-25
+    ], 
+    "physical_points": 4859, 
+    "xyz_in": [
+      24.999999046325684, 
+      5.5000001192092896, 
+      3.0
+    ]
+  }, 
+  "source_geometry_and_materials_unchanged": true, 
+  "source_physical": {
+    "finish_type_values": [
+      [
+        "Black Steel Material", 
+        3221
+      ], 
+      [
+        "Etched Diffuser Material", 
+        3223
+      ]
+    ], 
+    "materials": [
+      {
+        "appearance_asset_id": 2477, 
+        "id": 238, 
+        "material_class": "Miscellaneous", 
+        "name": "Default", 
+        "rgb": [
+          127, 
+          127, 
+          127
+        ], 
+        "transparency": 0
+      }, 
+      {
+        "appearance_asset_id": 2478, 
+        "id": 239, 
+        "material_class": "Miscellaneous", 
+        "name": "Default Roof", 
+        "rgb": [
+          0, 
+          127, 
+          0
+        ], 
+        "transparency": 0
+      }, 
+      {
+        "appearance_asset_id": 2479, 
+        "id": 240, 
+        "material_class": "Miscellaneous", 
+        "name": "Default Wall", 
+        "rgb": [
+          127, 
+          127, 
+          127
+        ], 
+        "transparency": 0
+      }, 
+      {
+        "appearance_asset_id": 2480, 
+        "id": 241, 
+        "material_class": "Glass", 
+        "name": "Glass", 
+        "rgb": [
+          0, 
+          0, 
+          255
+        ], 
+        "transparency": 75
+      }, 
+      {
+        "appearance_asset_id": 2481, 
+        "id": 1223, 
+        "material_class": "System", 
+        "name": "Poche", 
+        "rgb": [
+          0, 
+          0, 
+          255
+        ], 
+        "transparency": 0
+      }, 
+      {
+        "appearance_asset_id": 2482, 
+        "id": 2092, 
+        "material_class": "System", 
+        "name": "Default Light Source", 
+        "rgb": [
+          255, 
+          255, 
+          0
+        ], 
+        "transparency": 75
+      }, 
+      {
+        "appearance_asset_id": 3102, 
+        "id": 3101, 
+        "material_class": "Unassigned", 
+        "name": "Analytical Panels", 
+        "rgb": [
+          251, 
+          197, 
+          153
+        ], 
+        "transparency": 50
+      }, 
+      {
+        "appearance_asset_id": 3225, 
+        "id": 3221, 
+        "material_class": "Metal", 
+        "name": "Hinkley Black Painted Steel 53860BK", 
+        "rgb": [
+          24, 
+          24, 
+          25
+        ], 
+        "transparency": 0
+      }, 
+      {
+        "appearance_asset_id": 3226, 
+        "id": 3223, 
+        "material_class": "Glass", 
+        "name": "Hinkley Etched Opal Glass 53860BK", 
+        "rgb": [
+          242, 
+          243, 
+          240
+        ], 
+        "transparency": 4
+      }
+    ], 
+    "physical_freeform": [
+      {
+        "bbox_ft": [
+          -0.19791666999999999, 
+          -0.19791666999999999, 
+          0.0, 
+          0.19791666999999999, 
+          0.19791666999999999, 
+          0.014999999999999999
+        ], 
+        "comments": null, 
+        "id": 3227, 
+        "material_parameter": 3221, 
+        "materials": [
+          3221
+        ]
+      }, 
+      {
+        "bbox_ft": [
+          -0.22916666999999999, 
+          -0.22916666999999999, 
+          0.014999999999999999, 
+          0.22916666999999999, 
+          0.22916666999999999, 
+          0.031666670000000001
+        ], 
+        "comments": null, 
+        "id": 3228, 
+        "material_parameter": 3221, 
+        "materials": [
+          3221
+        ]
+      }, 
+      {
+        "bbox_ft": [
+          -0.05583333, 
+          -0.05583333, 
+          0.031666670000000001, 
+          0.05583333, 
+          0.05583333, 
+          0.16916666999999999
+        ], 
+        "comments": null, 
+        "id": 3229, 
+        "material_parameter": 3221, 
+        "materials": [
+          3221
+        ]
+      }, 
+      {
+        "bbox_ft": [
+          -0.085000000000000006, 
+          -0.093333330000000006, 
+          0.16666666999999999, 
+          0.085000000000000006, 
+          0.093333330000000006, 
+          0.18166667
+        ], 
+        "comments": null, 
+        "id": 3230, 
+        "material_parameter": 3221, 
+        "materials": [
+          3221
+        ]
+      }, 
+      {
+        "bbox_ft": [
+          -0.94499999999999995, 
+          0.073333330000000002, 
+          0.18625, 
+          0.94499999999999995, 
+          0.096666669999999996, 
+          0.20958333000000001
+        ], 
+        "comments": null, 
+        "id": 3231, 
+        "material_parameter": 3221, 
+        "materials": [
+          3221
+        ]
+      }, 
+      {
+        "bbox_ft": [
+          -0.94499999999999995, 
+          -0.096666669999999996, 
+          0.18625, 
+          0.94499999999999995, 
+          -0.073333330000000002, 
+          0.20958333000000001
+        ], 
+        "comments": null, 
+        "id": 3232, 
+        "material_parameter": 3221, 
+        "materials": [
+          3221
+        ]
+      }, 
+      {
+        "bbox_ft": [
+          -1.0369354600000000, 
+          -0.096666669999999996, 
+          0.18625, 
+          -0.94499999999999995, 
+          0.096666669999999996, 
+          0.20958333000000001
+        ], 
+        "comments": null, 
+        "id": 3233, 
+        "material_parameter": 3221, 
+        "materials": [
+          3221
+        ]
+      }, 
+      {
+        "bbox_ft": [
+          0.94499999999999995, 
+          -0.096666669999999996, 
+          0.18625, 
+          1.0369354600000000, 
+          0.096666669999999996, 
+          0.20958333000000001
+        ], 
+        "comments": null, 
+        "id": 3234, 
+        "material_parameter": 3221, 
+        "materials": [
+          3221
+        ]
+      }, 
+      {
+        "bbox_ft": [
+          -0.875, 
+          0.032916670000000002, 
+          0.14583333000000001, 
+          0.58333332999999998, 
+          0.13708333, 
+          0.25
+        ], 
+        "comments": null, 
+        "id": 3235, 
+        "material_parameter": 3223, 
+        "materials": [
+          3223
+        ]
+      }, 
+      {
+        "bbox_ft": [
+          -0.58333332999999998, 
+          -0.13708333, 
+          0.14583333000000001, 
+          0.875, 
+          -0.032916670000000002, 
+          0.25
+        ], 
+        "comments": null, 
+        "id": 3236, 
+        "material_parameter": 3223, 
+        "materials": [
+          3223
+        ]
+      }
+    ], 
+    "placement_type": "WorkPlaneBased"
+  }, 
+  "source_preserved": true, 
+  "source_rfa": "E:\\Claude\\3D-Model-Workflow\\output\\belmont_ph_good_rfa_20261016\\candidates\\Hinkley_Eos_53860BK_R2025_R03_UNAPPROVED.rfa", 
+  "source_sha256": "f98a11733c8896549a8a16e956001379df3eb16f76f59acbc2e7197c9713ea70", 
+  "source_warnings": [], 
+  "stage": "E:\\Claude\\3D-Model-Workflow\\output\\belmont_ph_good_rfa_20261016\\candidates\\_stage_hin_53860bk_r05_3dc79ab2f785480d8f65eb1e31d32a17.rfa", 
+  "status": "R05_REAL_LIGHTFAMILY_NATIVE_IES_REOPEN_PASS_VISUAL_HOLD", 
+  "working_envelope": {
+    "max_ft": [
+      1.0416666269302368, 
+      0.2291666716337204, 
+      0.25
+    ], 
+    "min_ft": [
+      -1.0416666269302368, 
+      -0.2291666716337204, 
+      -4.0337246214212224e-25
+    ], 
+    "physical_points": 4859, 
+    "xyz_in": [
+      24.999999046325684, 
+      5.5000001192092896, 
+      3.0
+    ]
+  }, 
+  "working_native_light": {
+    "category": "Lighting Fixtures", 
+    "distribution_class": "PhotometricWebLightDistribution", 
+    "family_placement_type": "WorkPlaneBased", 
+    "ies_light_type_path": "HIN53860BK_53860_official.ies", 
+    "ies_type_parameter_path": "HIN53860BK_53860_official.ies", 
+    "light_distribution_style": "PhotometricWeb", 
+    "light_shape_style": "Point", 
+    "light_source_flag": 1, 
+    "native_initial_flux_lm": 1109.0, 
+    "native_initial_kelvin": 3000.0, 
+    "native_light_source_element_ids": [
+      3237
+    ], 
+    "native_source_transform_basis_z": [
+      0.0, 
+      0.0, 
+      1.0
+    ], 
+    "native_source_transform_origin_ft": [
+      0.0, 
+      0.0, 
+      0.26666666666666666
+    ], 
+    "warnings": []
+  }
+}

@@ -1,0 +1,105 @@
+{
+  "round": 12,
+  "phase": "2-board",
+  "event": "12 original independent blind reports collected for scoring in NEXT DISTINCT turn",
+  "source_submission_sha256": "052fbb09f5802bc08cff1818afdc8c717170182952bb3faea7162e0a1abc1c2e",
+  "source_dispatch_sha256": "243dce4bdc80e40c78faaeaf1691f2eab1ee50eb457f76ad49638cc9c74fafff",
+  "critic_worker_seats": {
+    "critic-market": "worker-3",
+    "critic-design": "worker-9",
+    "critic-build": "worker-10",
+    "critic-cost": "worker-12"
+  },
+  "all_critic_scores": null,
+  "weighted_scoring_complete": false,
+  "report_files": {
+    "TX-PRIMARY": {
+      "market": {
+        "file": "rooms/TX-PRIMARY/board/round-012/critic-market.md",
+        "worker": "worker-3",
+        "sha256": "7f275b95add8ee6d04ad47fd2e1ecb4148690572a45b5c59254041a8dc9299ae",
+        "bytes": 11048
+      },
+      "design": {
+        "file": "rooms/TX-PRIMARY/board/round-012/critic-design.md",
+        "worker": "worker-9",
+        "sha256": "626674930f0914539ac040cd5d222dac5b6893e6fb6f33e4a33a841c9444ff1b",
+        "bytes": 11168
+      },
+      "build": {
+        "file": "rooms/TX-PRIMARY/board/round-012/critic-build.md",
+        "worker": "worker-10",
+        "sha256": "4924bda36fb70e4eb49a9c9d471d903c5e3536148af0f416986cdb058c876d6d",
+        "bytes": 9172
+      },
+      "cost": {
+        "file": "rooms/TX-PRIMARY/board/round-012/critic-cost.md",
+        "worker": "worker-12",
+        "sha256": "b1839e60d6c39c4f139946008106c4684b1dcc79c3e83534a788482678586bc0",
+        "bytes": 9677
+      }
+    },
+    "TX-BATH2": {
+      "market": {
+        "file": "rooms/TX-BATH2/board/round-012/critic-market.md",
+        "worker": "worker-3",
+        "sha256": "b6cc81d0e65bed638406660a9f5e920b68e58686f11e440fa0fd5d6d02ee8ca5",
+        "bytes": 10071
+      },
+      "design": {
+        "file": "rooms/TX-BATH2/board/round-012/critic-design.md",
+        "worker": "worker-9",
+        "sha256": "713b94c0a23af1bf838df66685d5241fe6d21a61ccb4044b5a2f5b2e3820f6c1",
+        "bytes": 10771
+      },
+      "build": {
+        "file": "rooms/TX-BATH2/board/round-012/critic-build.md",
+        "worker": "worker-10",
+        "sha256": "fd93201bcee061a27b2d138f05c5a6cfd1a9aef6c333f544be3f507d3f9aecc2",
+        "bytes": 8136
+      },
+      "cost": {
+        "file": "rooms/TX-BATH2/board/round-012/critic-cost.md",
+        "worker": "worker-12",
+        "sha256": "b59399ec855dcda6c39bf78aa90da0a4a3869ffc82b2f76b161fad4eb37c9b2e",
+        "bytes": 8791
+      }
+    },
+    "TX-BATH4": {
+      "market": {
+        "file": "rooms/TX-BATH4/board/round-012/critic-market.md",
+        "worker": "worker-3",
+        "sha256": "5470d85fe2a78d3863d0cb412cbf7719c6cf1f615e1cd516893f6636a208a763",
+        "bytes": 10616
+      },
+      "design": {
+        "file": "rooms/TX-BATH4/board/round-012/critic-design.md",
+        "worker": "worker-9",
+        "sha256": "ecf1f19ed94bc014de1ff8c1baa6de3a8639ff447a5fe07e5f6303ef2af8a21d",
+        "bytes": 11633
+      },
+      "build": {
+        "file": "rooms/TX-BATH4/board/round-012/critic-build.md",
+        "worker": "worker-10",
+        "sha256": "cdeb7297db22af9a5c2328dfc2a50068d329533ee8c908dcbb4f0200ab788b50",
+        "bytes": 8805
+      },
+      "cost": {
+        "file": "rooms/TX-BATH4/board/round-012/critic-cost.md",
+        "worker": "worker-12",
+        "sha256": "dd5584e67b5402b126447c4803dbe3c0d39e48b0d6690abd9af4519a00a68b32",
+        "bytes": 9314
+      }
+    }
+  },
+  "local_links": 380,
+  "role_language_for_reviewer": [
+    {
+      "room": "TX-PRIMARY",
+      "seat": "market",
+      "text": [
+        "**Market seat only:** C may yield a more coherent flat wet field while B retains a historical source reference. **Both fail mandatory exact wet floor and pan tests.** No whole-board ranking, incumbent identification or owner selection is implied."
+      ]
+    }
+  ]
+}

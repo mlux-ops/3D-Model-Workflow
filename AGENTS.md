@@ -16,6 +16,15 @@ User instruction, recorded 2026-09-11: **Every time there is an error, log it in
 
 Existing discipline-specific conventions remain in [WORKFLOW.md](WORKFLOW.md).
 
+## 1529 Wieland bathroom tile loop
+
+Added 2026-11-06. For any task about 1529 Wieland bathroom tile selection, the critique board, or
+reading the Wieland Revit model for it, read
+[output/wieland1529_tile_loop/AGENTS.md](output/wieland1529_tile_loop/AGENTS.md) and
+[output/wieland1529_tile_loop/REVIT.md](output/wieland1529_tile_loop/REVIT.md) first. That loop
+reads Revit only; it never changes the model. Setup and prompts:
+[RUNBOOK.md](output/wieland1529_tile_loop/RUNBOOK.md), [PROMPTS.md](output/wieland1529_tile_loop/PROMPTS.md).
+
 ## Material deliverables
 
 User instruction, recorded 2026-09-18: An `.adsklib` with its required companion textures and setup notes is sufficient for material delivery. Individual Revit projects (`.rvt`) are not required when the library is provided; do not produce them by default. Temporary projects may be used for creation or validation. Deliver an RVT only when specifically requested or needed because no ADSKLIB is provided.

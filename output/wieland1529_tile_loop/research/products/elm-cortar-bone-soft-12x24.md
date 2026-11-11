@@ -1,0 +1,8 @@
+# ELM Surfaces — Cortar Bone 12 x 24 Soft (scheduled PH-BATH3 floor)
+
+**Evidence reviewed:** 2026-11-06. Retained floor FT4; this is not a new floor substitution.
+
+- **Manufacturer:** https://www.elmsurfaces.com/product/cortar-bone — 12 x 24, Soft and Anti-Slip finishes, Floors and Wet Areas applications listed for **flat Bone**. **Wet-area manufacturer application:** yes. **Published wet DCOF for 12x24 Soft:** `null` / **unknown**; **DCOF >=0.42 documented:** **no**. Manufacturer application tag does **not** satisfy the separate floor DCOF gate. **Shower floor application:** unsupported for this unmeasured drain/finish configuration.
+- **Project quote:** Smartsheet tile export, PH-BATH3 row `2473034124951428`, **2026-09-03 ELM quote**, **40.2 SF gross per unit**, **$6.75/SF**, 9mm, six pieces per box, 11.52 SF/box; estimated tile-rate subtotal **$271.35/unit** before labor/freight/tax/box rounding. Notes list **10–12 weeks**, 50% deposit and 300 SF import minimum on the Cortar group; date-specific inventory is **unknown**.
+- **Area evidence:** PH-BATH3 `geometry.json` **35 SF** prior Revit-derived but unverified; **40.2 SF gross** scheduled with approx. 15% waste. Fixture/sink and door thresholds not measured; no verified corner/transition cuts. Grout suggested **tonal warm bone** for sampling, **manufacturer/color/width TBD**; edge/wood transition profile **TBD**.
+- **Release hold:** bath-floor wet **DCOF >=0.42** must be sourced from manufacturer for **exact Bone/Soft/12x24** before pass; wet-area listing alone is insufficient. **Model identity:** unverified; **current inventory/ETA:** `null`; **manufacturer SKU:** `null`.

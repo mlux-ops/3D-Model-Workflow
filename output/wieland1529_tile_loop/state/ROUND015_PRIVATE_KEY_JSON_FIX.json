@@ -1,0 +1,35 @@
+{
+  "round": 15,
+  "as_of": "2026-11-06",
+  "reason": "original private JSON source had literal trailing backslash-n not a newline; fixed BEFORE reviewer or any critic dispatch",
+  "private_key_repairs": [
+    {
+      "room": "TX-BATH2",
+      "before": {
+        "sha256": "101357db42574a48730630e9747480cf4a23b10090122d6269f56c2f1b28bc01",
+        "bytes": 319
+      },
+      "after": {
+        "sha256": "e507aa2c0a8a5d77f32ef858b92bc87385b594166c8f932fb48c3dfc26c6f579",
+        "bytes": 319
+      },
+      "private": true
+    },
+    {
+      "room": "TX-BATH4",
+      "before": {
+        "sha256": "3f61647123dd5c3081541906f9c46b170b3da9f9725c3e6566aa69443316179a",
+        "bytes": 328
+      },
+      "after": {
+        "sha256": "0dae991f000b7b50703465c9ae0f5e73f7fc5e1ede7ef0215a596458237d54f7",
+        "bytes": 328
+      },
+      "private": true
+    }
+  ],
+  "critic_dispatch": false,
+  "weighted_scoring": null,
+  "owner_approval": false,
+  "procurement_release": false
+}

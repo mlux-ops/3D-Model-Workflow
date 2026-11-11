@@ -1,0 +1,299 @@
+{
+  "operation_id": "675dbe05-db95-43a9-8684-1ad3f6fa86ea",
+  "request": {
+    "path": "E:\\Claude\\3D-Model-Workflow\\.claude\\worktrees\\native-revit-workflow-8fafd0\\output\\1527_wieland\\kitchens\\scripts\\bath_audit_675dbe05-db95-43a9-8684-1ad3f6fa86ea_repair_room_records.py",
+    "args": {
+      "commit": true,
+      "preview_path": "H:\\Games\\3D Modeling Workflows\\3D Model Workflow\\output\\wieland-floorplan-corrections-20261108\\room-repair-preview.json",
+      "output_path": "H:\\Games\\3D Modeling Workflows\\3D Model Workflow\\output\\wieland-floorplan-corrections-20261108\\room-repair-committed.json",
+      "expected_pid": 31808,
+      "session_id": "7f6f24a2-cc0d-4567-8beb-02467aba0ced",
+      "discovery_operation": "8170b477-45b4-45cb-b1bc-635648df82ea",
+      "guard_path": "H:\\Games\\3D Modeling Workflows\\3D Model Workflow\\output\\wieland-floorplan-corrections-20261108\\audit_guard.py",
+      "operation_id": "675dbe05-db95-43a9-8684-1ad3f6fa86ea"
+    }
+  },
+  "state": "returned",
+  "response": {
+    "log": [],
+    "ok": true,
+    "result": {
+      "transaction_status": "Committed",
+      "before": [
+        {
+          "level_id": 10470880,
+          "lower_offset_ft": 0.0,
+          "upper_offset_ft": 0.0,
+          "upper_level_id": -1,
+          "unique_id": "6a61d38d-4028-4b1e-a46d-6ff29308dc52-00f9b0ac",
+          "area_sf": 0.0,
+          "number": "203A",
+          "point": null,
+          "id": 16363692,
+          "name": "TOILET",
+          "version_guid": "6398d84f-a606-42a0-bf09-66fc8fdaa0af"
+        },
+        {
+          "level_id": 10470880,
+          "lower_offset_ft": 0.0,
+          "upper_offset_ft": 6.0,
+          "upper_level_id": 10470880,
+          "unique_id": "6a61d38d-4028-4b1e-a46d-6ff29308dc52-00f9b0a9",
+          "area_sf": 7.094489384301994,
+          "number": "203B",
+          "point": [
+            -539.3457727624543,
+            200.36030601559779,
+            17.333333333332995
+          ],
+          "id": 16363689,
+          "name": "TOILET",
+          "version_guid": "407fb4a3-b1e3-448d-8a92-7e6ecdde0797"
+        },
+        {
+          "level_id": 10470966,
+          "lower_offset_ft": 0.0,
+          "upper_offset_ft": 10.0,
+          "upper_level_id": 10470966,
+          "unique_id": "6d4e0087-121f-4c46-91dd-4f8693f8275b-00f2f121",
+          "area_sf": 35.10416666667675,
+          "number": "310A",
+          "point": [
+            -515.0288522893392,
+            244.89442709616313,
+            27.999999999999666
+          ],
+          "id": 15921441,
+          "name": "WIC 4",
+          "version_guid": "407fb4a3-b1e3-448d-8a92-7e6ecdde0797"
+        },
+        {
+          "level_id": 10470966,
+          "lower_offset_ft": 0.0,
+          "upper_offset_ft": 10.0,
+          "upper_level_id": 10470966,
+          "unique_id": "6d4e0087-121f-4c46-91dd-4f8693f8275b-00f2f127",
+          "area_sf": 26.979166666677322,
+          "number": "311B",
+          "point": [
+            -549.9681948380787,
+            236.9455161839267,
+            27.999999999999666
+          ],
+          "id": 15921447,
+          "name": "BATH 4",
+          "version_guid": "407fb4a3-b1e3-448d-8a92-7e6ecdde0797"
+        },
+        {
+          "level_id": 10470966,
+          "lower_offset_ft": 0.0,
+          "upper_offset_ft": 10.0,
+          "upper_level_id": 10470966,
+          "unique_id": "6d4e0087-121f-4c46-91dd-4f8693f8275b-00f2f12a",
+          "area_sf": 26.979166666678566,
+          "number": "311A",
+          "point": [
+            -515.88750041223,
+            236.98718285059365,
+            27.999999999999666
+          ],
+          "id": 15921450,
+          "name": "BATH 4",
+          "version_guid": "407fb4a3-b1e3-448d-8a92-7e6ecdde0797"
+        }
+      ],
+      "save_or_sync": false,
+      "document_session_id": "7f6f24a2-cc0d-4567-8beb-02467aba0ced",
+      "counts": {
+        "room_names_corrected": 3,
+        "room_records": 5,
+        "wc_records_placed": 2
+      },
+      "operation_id": "675dbe05-db95-43a9-8684-1ad3f6fa86ea",
+      "commit_requested": true,
+      "readback": [
+        {
+          "level_id": 10470880,
+          "lower_offset_ft": 0.0,
+          "upper_offset_ft": 0.0,
+          "upper_level_id": 10470966,
+          "unique_id": "6a61d38d-4028-4b1e-a46d-6ff29308dc52-00f9b0ac",
+          "area_sf": 13.782986111109551,
+          "number": "203A",
+          "point": [
+            -513.1900188589843,
+            210.8500447784985,
+            17.333333333332995
+          ],
+          "id": 16363692,
+          "name": "TOILET",
+          "version_guid": "f60bb0d9-e25d-47e4-8866-bbe479e8480a"
+        },
+        {
+          "level_id": 10470880,
+          "lower_offset_ft": 0.0,
+          "upper_offset_ft": 0.0,
+          "upper_level_id": 10470966,
+          "unique_id": "6a61d38d-4028-4b1e-a46d-6ff29308dc52-00f9b0a9",
+          "area_sf": 13.782986111107164,
+          "number": "203B",
+          "point": [
+            -552.2108521923199,
+            210.8500447784985,
+            17.333333333332995
+          ],
+          "id": 16363689,
+          "name": "TOILET",
+          "version_guid": "f60bb0d9-e25d-47e4-8866-bbe479e8480a"
+        },
+        {
+          "level_id": 10470966,
+          "lower_offset_ft": 0.0,
+          "upper_offset_ft": 10.0,
+          "upper_level_id": 10470966,
+          "unique_id": "6d4e0087-121f-4c46-91dd-4f8693f8275b-00f2f121",
+          "area_sf": 35.10416666667675,
+          "number": "310A",
+          "point": [
+            -515.0288522893392,
+            244.89442709616313,
+            27.999999999999666
+          ],
+          "id": 15921441,
+          "name": "BATH 4",
+          "version_guid": "f60bb0d9-e25d-47e4-8866-bbe479e8480a"
+        },
+        {
+          "level_id": 10470966,
+          "lower_offset_ft": 0.0,
+          "upper_offset_ft": 10.0,
+          "upper_level_id": 10470966,
+          "unique_id": "6d4e0087-121f-4c46-91dd-4f8693f8275b-00f2f127",
+          "area_sf": 26.979166666677322,
+          "number": "311B",
+          "point": [
+            -549.9681948380787,
+            236.9455161839267,
+            27.999999999999666
+          ],
+          "id": 15921447,
+          "name": "WIC 4",
+          "version_guid": "f60bb0d9-e25d-47e4-8866-bbe479e8480a"
+        },
+        {
+          "level_id": 10470966,
+          "lower_offset_ft": 0.0,
+          "upper_offset_ft": 10.0,
+          "upper_level_id": 10470966,
+          "unique_id": "6d4e0087-121f-4c46-91dd-4f8693f8275b-00f2f12a",
+          "area_sf": 26.979166666678566,
+          "number": "311A",
+          "point": [
+            -515.88750041223,
+            236.98718285059365,
+            27.999999999999666
+          ],
+          "id": 15921450,
+          "name": "WIC 4",
+          "version_guid": "f60bb0d9-e25d-47e4-8866-bbe479e8480a"
+        }
+      ],
+      "status": "COMMITTED",
+      "pid": 31808,
+      "after": [
+        {
+          "level_id": 10470880,
+          "lower_offset_ft": 0.0,
+          "upper_offset_ft": 0.0,
+          "upper_level_id": 10470966,
+          "unique_id": "6a61d38d-4028-4b1e-a46d-6ff29308dc52-00f9b0ac",
+          "area_sf": 13.782986111109551,
+          "number": "203A",
+          "point": [
+            -513.1900188589843,
+            210.8500447784985,
+            17.333333333332995
+          ],
+          "id": 16363692,
+          "name": "TOILET",
+          "version_guid": "f60bb0d9-e25d-47e4-8866-bbe479e8480a"
+        },
+        {
+          "level_id": 10470880,
+          "lower_offset_ft": 0.0,
+          "upper_offset_ft": 0.0,
+          "upper_level_id": 10470966,
+          "unique_id": "6a61d38d-4028-4b1e-a46d-6ff29308dc52-00f9b0a9",
+          "area_sf": 13.782986111107164,
+          "number": "203B",
+          "point": [
+            -552.2108521923199,
+            210.8500447784985,
+            17.333333333332995
+          ],
+          "id": 16363689,
+          "name": "TOILET",
+          "version_guid": "f60bb0d9-e25d-47e4-8866-bbe479e8480a"
+        },
+        {
+          "level_id": 10470966,
+          "lower_offset_ft": 0.0,
+          "upper_offset_ft": 10.0,
+          "upper_level_id": 10470966,
+          "unique_id": "6d4e0087-121f-4c46-91dd-4f8693f8275b-00f2f121",
+          "area_sf": 35.10416666667675,
+          "number": "310A",
+          "point": [
+            -515.0288522893392,
+            244.89442709616313,
+            27.999999999999666
+          ],
+          "id": 15921441,
+          "name": "BATH 4",
+          "version_guid": "f60bb0d9-e25d-47e4-8866-bbe479e8480a"
+        },
+        {
+          "level_id": 10470966,
+          "lower_offset_ft": 0.0,
+          "upper_offset_ft": 10.0,
+          "upper_level_id": 10470966,
+          "unique_id": "6d4e0087-121f-4c46-91dd-4f8693f8275b-00f2f127",
+          "area_sf": 26.979166666677322,
+          "number": "311B",
+          "point": [
+            -549.9681948380787,
+            236.9455161839267,
+            27.999999999999666
+          ],
+          "id": 15921447,
+          "name": "WIC 4",
+          "version_guid": "f60bb0d9-e25d-47e4-8866-bbe479e8480a"
+        },
+        {
+          "level_id": 10470966,
+          "lower_offset_ft": 0.0,
+          "upper_offset_ft": 10.0,
+          "upper_level_id": 10470966,
+          "unique_id": "6d4e0087-121f-4c46-91dd-4f8693f8275b-00f2f12a",
+          "area_sf": 26.979166666678566,
+          "number": "311A",
+          "point": [
+            -515.88750041223,
+            236.98718285059365,
+            27.999999999999666
+          ],
+          "id": 15921450,
+          "name": "WIC 4",
+          "version_guid": "f60bb0d9-e25d-47e4-8866-bbe479e8480a"
+        }
+      ],
+      "failures": [
+        {
+          "description": "A Room was deleted from all model views but still remains in this project. \r\n The room can be removed from any schedule or placed back in the model using the Room command.",
+          "elements": [],
+          "severity": "Warning"
+        }
+      ]
+    }
+  }
+}

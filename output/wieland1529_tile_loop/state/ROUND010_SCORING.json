@@ -1,0 +1,514 @@
+{
+  "as_of": "2026-11-06",
+  "round": 10,
+  "source_submission": "state/ROUND010_SUBMISSION.json",
+  "source_submission_sha256": "b09020963544c2906fa5e4ae2bbbc490366f8bd83878747e4fda4978f6247352",
+  "source_critic_collection": "state/ROUND010_CRITIC_COLLECTION.json",
+  "source_collection_sha256": "52faa7514cb4425e5a44c57f8610350c316e1ddb6437356a669ef6c736e55c58",
+  "verification": {
+    "candidate_frozen_files": 6,
+    "actual_independent_critiques": 12,
+    "criterion_checks": 114,
+    "local_links": 378,
+    "all_valid": true
+  },
+  "room_results": {
+    "PH-PRIMARY": {
+      "room": "PH-PRIMARY",
+      "round": 10,
+      "critics_complete": true,
+      "critic_file_fingerprints": {
+        "market": {
+          "sha256": "f100253df5f71ccceefbdde52af643c8d0938ec8f1ec4d9b27d1d6c0553f940b",
+          "bytes": 10134
+        },
+        "design": {
+          "sha256": "0b89476f35bf4b6c0258cf566386a0bd09d57819d1dd7ec037c9f489d1e98e41",
+          "bytes": 13665
+        },
+        "build": {
+          "sha256": "41a73d30ccabfdbdce2e6aec542017ed99d30f91d361e63bc7d809470eea89eb",
+          "bytes": 12542
+        },
+        "cost": {
+          "sha256": "0d30c75ab2eb6147138f7b5a10e518583bdcf5588748e12ccc26a736300b4c6f",
+          "bytes": 11097
+        }
+      },
+      "weights": {
+        "market": 0.3,
+        "design": 0.25,
+        "build": 0.25,
+        "cost": 0.2
+      },
+      "incumbent_letter": "C",
+      "challenger_letter": "A",
+      "candidates": {
+        "A": {
+          "role": "revised design option",
+          "seat_scores": {
+            "market": 3.7,
+            "design": 4.0,
+            "build": 3.0,
+            "cost": 2.6
+          },
+          "criterion_scores": {
+            "market": {
+              "criterion_scores": [
+                4.2,
+                4.2,
+                3.0,
+                3.4
+              ],
+              "mean": 3.7
+            },
+            "design": {
+              "criterion_scores": [
+                5.0,
+                4.0,
+                4.0,
+                4.0,
+                3.0
+              ],
+              "mean": 4.0
+            },
+            "build": {
+              "criterion_scores": [
+                4.0,
+                3.0,
+                3.0,
+                3.0,
+                2.0
+              ],
+              "mean": 3.0
+            },
+            "cost": {
+              "criterion_scores": [
+                4.0,
+                3.0,
+                2.0,
+                2.0,
+                2.0
+              ],
+              "mean": 2.6
+            }
+          },
+          "weighted_score": 3.38,
+          "minimum_critic_score": 2.6,
+          "all_seat_minimum_3_pass": false,
+          "hard_gates_pass": false,
+          "gate_reasons": [
+            "FAIL: actual SKU-and-finish-specific bath LEVEL-floor wet DCOF raw numeric test report remains unavailable; a manufacturer reported >0.50 bound or Target >=0.42 is not the approved measured test point",
+            "FAIL: actual 48-in Brizo selected LINEAR pan tile exact maker lab wet-DCOF remains unavailable",
+            "HOLD: Prime RL21 hex product order variant and manufacturer-approved linear rough/grate/membrane/slope section, HNC-to-RL21 transition and verified 1529 site geometry unavailable",
+            "HOLD: true native 1529 model/site verification, exact current Chicago landed material/installed bid and lot/lead, signed owner room cap and selection unavailable; cannot infer 125% cost gate failure"
+          ],
+          "source_candidate_sha256": "a29278ff8af2be05718be345b9fa3231654247557320bc3d916ca4efe5026976"
+        },
+        "C": {
+          "role": "historic v4 source",
+          "seat_scores": {
+            "market": 3.4,
+            "design": 3.0,
+            "build": 1.6,
+            "cost": 2.4
+          },
+          "criterion_scores": {
+            "market": {
+              "criterion_scores": [
+                3.8,
+                3.5,
+                3.0,
+                3.3
+              ],
+              "mean": 3.4
+            },
+            "design": {
+              "criterion_scores": [
+                4.0,
+                3.0,
+                3.0,
+                3.0,
+                2.0
+              ],
+              "mean": 3.0
+            },
+            "build": {
+              "criterion_scores": [
+                2.0,
+                2.0,
+                1.0,
+                2.0,
+                1.0
+              ],
+              "mean": 1.6
+            },
+            "cost": {
+              "criterion_scores": [
+                4.0,
+                2.0,
+                3.0,
+                2.0,
+                1.0
+              ],
+              "mean": 2.4
+            }
+          },
+          "weighted_score": 2.65,
+          "minimum_critic_score": 1.6,
+          "all_seat_minimum_3_pass": false,
+          "hard_gates_pass": false,
+          "gate_reasons": [
+            "FAIL: actual SKU-and-finish-specific bath LEVEL-floor wet DCOF raw numeric test report remains unavailable; a manufacturer reported >0.50 bound or Target >=0.42 is not the approved measured test point",
+            "FAIL: actual 48-in Brizo selected LINEAR pan tile exact maker lab wet-DCOF remains unavailable",
+            "HOLD: Prime RL21 hex product order variant and manufacturer-approved linear rough/grate/membrane/slope section, HNC-to-RL21 transition and verified 1529 site geometry unavailable",
+            "FAIL: Cortar Bone Reed relief in shower lacks individual maker Wet Areas approval",
+            "HOLD: true native 1529 model/site verification, exact current Chicago landed material/installed bid and lot/lead, signed owner room cap and selection unavailable; cannot infer 125% cost gate failure"
+          ],
+          "source_candidate_sha256": "c12bcefecbbe06666fcd182ab6a718c6831486f07864a37bd4331112ad836bec"
+        }
+      },
+      "margin": 0.73,
+      "status": "blocked",
+      "decision": "both_candidates_blocked_exact_numeric_wet_floor_or_pan_gate",
+      "champion_id": null,
+      "champion_score": null,
+      "accepted_challenger": false,
+      "owner_approved": false,
+      "procurement_release": false,
+      "provisional_design_preference": "A",
+      "report": "board/round-010/ROUND_REPORT.md"
+    },
+    "PH-BATH2": {
+      "room": "PH-BATH2",
+      "round": 10,
+      "critics_complete": true,
+      "critic_file_fingerprints": {
+        "market": {
+          "sha256": "60e0f7e461089ea635b563f947e9ef0803b7bd24fbdb475fcad88c98eddc018d",
+          "bytes": 9415
+        },
+        "design": {
+          "sha256": "d0893a66f89cb1ea446223a0773b2366823f92724653e8df62628d38a95e4286",
+          "bytes": 12367
+        },
+        "build": {
+          "sha256": "a3b4527a4d67df8b652c5bf536165b26d296bb5fc473fd91ac450f8b4706e5ec",
+          "bytes": 11265
+        },
+        "cost": {
+          "sha256": "f7ae42fefd65bf7568d5c398eaf7d66bd1d632814763bc94815fd6e417418b23",
+          "bytes": 9546
+        }
+      },
+      "weights": {
+        "market": 0.3,
+        "design": 0.25,
+        "build": 0.25,
+        "cost": 0.2
+      },
+      "incumbent_letter": "A",
+      "challenger_letter": "C",
+      "candidates": {
+        "A": {
+          "role": "historic v4 source",
+          "seat_scores": {
+            "market": 3.7,
+            "design": 3.6,
+            "build": 3.2,
+            "cost": 3.4
+          },
+          "criterion_scores": {
+            "market": {
+              "criterion_scores": [
+                3.9,
+                3.9,
+                3.0,
+                4.0
+              ],
+              "mean": 3.7
+            },
+            "design": {
+              "criterion_scores": [
+                4.0,
+                4.0,
+                4.0,
+                3.0,
+                3.0
+              ],
+              "mean": 3.6
+            },
+            "build": {
+              "criterion_scores": [
+                4.0,
+                3.0,
+                4.0,
+                3.0,
+                2.0
+              ],
+              "mean": 3.2
+            },
+            "cost": {
+              "criterion_scores": [
+                5.0,
+                3.0,
+                4.0,
+                2.0,
+                3.0
+              ],
+              "mean": 3.4
+            }
+          },
+          "weighted_score": 3.49,
+          "minimum_critic_score": 3.2,
+          "all_seat_minimum_3_pass": true,
+          "hard_gates_pass": false,
+          "gate_reasons": [
+            "FAIL: actual SKU-and-finish-specific bath LEVEL-floor wet DCOF raw numeric test report remains unavailable; a manufacturer reported >0.50 bound or Target >=0.42 is not the approved measured test point",
+            "PASS for wall only: individual ELM Tones Sapphire 2x20 Glossy and Sandstone Wet Areas approved; Duravit and Matte White actual tub, NO tiled shower pan",
+            "HOLD: tub flange/vanity wall/niche opening and net return, exact level tile and threshold geometry, finish and supplier offer unresolved",
+            "HOLD: true native 1529 model/site verification, exact current Chicago landed material/installed bid and lot/lead, signed owner room cap and selection unavailable; cannot infer 125% cost gate failure"
+          ],
+          "source_candidate_sha256": "49fe338acf60e2f92ebe7dd28202317e7c601814c4b09ab18cca937b71ce167a"
+        },
+        "C": {
+          "role": "revised design option",
+          "seat_scores": {
+            "market": 3.7,
+            "design": 4.2,
+            "build": 3.4,
+            "cost": 2.8
+          },
+          "criterion_scores": {
+            "market": {
+              "criterion_scores": [
+                4.0,
+                4.1,
+                3.0,
+                3.5
+              ],
+              "mean": 3.7
+            },
+            "design": {
+              "criterion_scores": [
+                5.0,
+                4.0,
+                4.0,
+                4.0,
+                4.0
+              ],
+              "mean": 4.2
+            },
+            "build": {
+              "criterion_scores": [
+                4.0,
+                4.0,
+                4.0,
+                3.0,
+                2.0
+              ],
+              "mean": 3.4
+            },
+            "cost": {
+              "criterion_scores": [
+                4.0,
+                4.0,
+                2.0,
+                2.0,
+                2.0
+              ],
+              "mean": 2.8
+            }
+          },
+          "weighted_score": 3.57,
+          "minimum_critic_score": 2.8,
+          "all_seat_minimum_3_pass": false,
+          "hard_gates_pass": false,
+          "gate_reasons": [
+            "FAIL: actual SKU-and-finish-specific bath LEVEL-floor wet DCOF raw numeric test report remains unavailable; a manufacturer reported >0.50 bound or Target >=0.42 is not the approved measured test point",
+            "PASS for wall only: individual ELM Tones Sapphire 2x20 Glossy and Sandstone Wet Areas approved; Duravit and Matte White actual tub, NO tiled shower pan",
+            "HOLD: tub flange/vanity wall/niche opening and net return, exact level tile and threshold geometry, finish and supplier offer unresolved",
+            "HOLD: true native 1529 model/site verification, exact current Chicago landed material/installed bid and lot/lead, signed owner room cap and selection unavailable; cannot infer 125% cost gate failure"
+          ],
+          "source_candidate_sha256": "395100799412e3e36c789d20ae1523abc8ae3c04b01715c8d41b9f1d726bfd59"
+        }
+      },
+      "margin": 0.08,
+      "status": "blocked",
+      "decision": "both_candidates_blocked_exact_numeric_wet_floor_or_pan_gate",
+      "champion_id": null,
+      "champion_score": null,
+      "accepted_challenger": false,
+      "owner_approved": false,
+      "procurement_release": false,
+      "provisional_design_preference": "C",
+      "report": "board/round-010/ROUND_REPORT.md"
+    },
+    "PH-BATH4": {
+      "room": "PH-BATH4",
+      "round": 10,
+      "critics_complete": true,
+      "critic_file_fingerprints": {
+        "market": {
+          "sha256": "4a72c7e964aed3c5265c83d1304d4e89fe11d4f5774a77b660a437323236dff5",
+          "bytes": 10304
+        },
+        "design": {
+          "sha256": "a472c1623f3cbacdb75de485cad1a4184013509e7209d3ba2c63d251dbf55816",
+          "bytes": 15143
+        },
+        "build": {
+          "sha256": "d7be0cfa42984f800205d79a934ca583190fe2323b9beb81ce3c7d8f19cdc110",
+          "bytes": 13030
+        },
+        "cost": {
+          "sha256": "199f7a013fad79b21e8a8228fd5fb44e5d76655ff888f5d25131acfd58946490",
+          "bytes": 11887
+        }
+      },
+      "weights": {
+        "market": 0.3,
+        "design": 0.25,
+        "build": 0.25,
+        "cost": 0.2
+      },
+      "incumbent_letter": "C",
+      "challenger_letter": "B",
+      "candidates": {
+        "B": {
+          "role": "revised design option",
+          "seat_scores": {
+            "market": 3.7,
+            "design": 4.2,
+            "build": 3.0,
+            "cost": 2.2
+          },
+          "criterion_scores": {
+            "market": {
+              "criterion_scores": [
+                4.1,
+                4.1,
+                3.0,
+                3.6
+              ],
+              "mean": 3.7
+            },
+            "design": {
+              "criterion_scores": [
+                5.0,
+                4.0,
+                4.0,
+                4.0,
+                4.0
+              ],
+              "mean": 4.2
+            },
+            "build": {
+              "criterion_scores": [
+                4.0,
+                3.0,
+                3.0,
+                3.0,
+                2.0
+              ],
+              "mean": 3.0
+            },
+            "cost": {
+              "criterion_scores": [
+                3.0,
+                3.0,
+                1.0,
+                2.0,
+                2.0
+              ],
+              "mean": 2.2
+            }
+          },
+          "weighted_score": 3.35,
+          "minimum_critic_score": 2.2,
+          "all_seat_minimum_3_pass": false,
+          "hard_gates_pass": false,
+          "gate_reasons": [
+            "FAIL: actual SKU-and-finish-specific bath LEVEL-floor wet DCOF raw numeric test report remains unavailable; a manufacturer reported >0.50 bound or Target >=0.42 is not the approved measured test point",
+            "FAIL: selected Brizo BT062415-BNX 4-in SQUARE POINT walk-in shower pan exact maker SKU wet DCOF unavailable",
+            "HOLD: old 35-versus-27 SF owner/source discrepancy, original Cortar Charcoal Soft-vs-AntiSlip supplier finish, actual four-plane 4-in point drain/pan footprint unmeasured",
+            "HOLD: true native 1529 model/site verification, exact current Chicago landed material/installed bid and lot/lead, signed owner room cap and selection unavailable; cannot infer 125% cost gate failure"
+          ],
+          "source_candidate_sha256": "b9501a6bc64099f2728c2bd203971401196b4b43411bf9d23e54908444fa8567"
+        },
+        "C": {
+          "role": "historic v4 source",
+          "seat_scores": {
+            "market": 3.3,
+            "design": 2.8,
+            "build": 1.4,
+            "cost": 2.4
+          },
+          "criterion_scores": {
+            "market": {
+              "criterion_scores": [
+                3.6,
+                3.3,
+                3.0,
+                3.3
+              ],
+              "mean": 3.3
+            },
+            "design": {
+              "criterion_scores": [
+                4.0,
+                3.0,
+                3.0,
+                3.0,
+                1.0
+              ],
+              "mean": 2.8
+            },
+            "build": {
+              "criterion_scores": [
+                1.0,
+                2.0,
+                1.0,
+                2.0,
+                1.0
+              ],
+              "mean": 1.4
+            },
+            "cost": {
+              "criterion_scores": [
+                4.0,
+                2.0,
+                3.0,
+                2.0,
+                1.0
+              ],
+              "mean": 2.4
+            }
+          },
+          "weighted_score": 2.52,
+          "minimum_critic_score": 1.4,
+          "all_seat_minimum_3_pass": false,
+          "hard_gates_pass": false,
+          "gate_reasons": [
+            "FAIL: actual SKU-and-finish-specific bath LEVEL-floor wet DCOF raw numeric test report remains unavailable; a manufacturer reported >0.50 bound or Target >=0.42 is not the approved measured test point",
+            "FAIL: selected Brizo BT062415-BNX 4-in SQUARE POINT walk-in shower pan exact maker SKU wet DCOF unavailable",
+            "HOLD: old 35-versus-27 SF owner/source discrepancy, original Cortar Charcoal Soft-vs-AntiSlip supplier finish, actual four-plane 4-in point drain/pan footprint unmeasured",
+            "FAIL: full wet Cortar Bone Ribbed Relief and Clara Caviar shower niche both lack individual manufacturer Wet Areas listings",
+            "HOLD: true native 1529 model/site verification, exact current Chicago landed material/installed bid and lot/lead, signed owner room cap and selection unavailable; cannot infer 125% cost gate failure"
+          ],
+          "source_candidate_sha256": "b69dbca06c55126973ba41994fc2d07b42347311e1eb63f9e1a6ca96547d6425"
+        }
+      },
+      "margin": 0.83,
+      "status": "blocked",
+      "decision": "both_candidates_blocked_exact_numeric_wet_floor_or_pan_gate",
+      "champion_id": null,
+      "champion_score": null,
+      "accepted_challenger": false,
+      "owner_approved": false,
+      "procurement_release": false,
+      "provisional_design_preference": "B",
+      "report": "board/round-010/ROUND_REPORT.md"
+    }
+  }
+}

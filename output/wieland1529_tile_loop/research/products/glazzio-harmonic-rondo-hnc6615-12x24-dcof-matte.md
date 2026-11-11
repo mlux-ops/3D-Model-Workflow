@@ -1,0 +1,11 @@
+# Verified manufacturer-linked alternative: Glazzio Harmonic Rondo 12x24 DCOF Matte
+
+**Manufacturer exact item:** HNC6615 (Harmonic Rondo); https://glazziosurfaces.com/products/harmonic-rondo-12x24-matte-porcelain-tile ; maker page rechecked 2026-11-06. **Material:** porcelain; **finish:** DCOF Matte; **size:** nominal 12x24 in, actual 11.73x23.62 in; **thickness:** 8.25 mm; V2 slight; maker says 24 faces. Packed five pieces and 9.69 SF/box. Maker pattern guidance stacked/bond, stagger no more than 30%, joint 2-3 mm trial; confirm received production lot.
+
+**SKU-specific maker testing declaration:** Manufacturer's individual HNC6615 product detail says **DCOF WET >0.50** in its TESTING table, distinct from Daltile's generic application **Target >=0.42** table. **Exact raw AcuTest measured point value and underlying lab certificate are still null**, and manufacturer test method not explicitly named on this product page. Therefore this is a **high-quality evidence-backed floor candidate with a manufacturer-reported tested lower bound above 0.42**, not a final board pass under any interpretation requiring the actual test report rather than published bound.
+
+**Application:** Maker lists Residential Floors YES, Commercial Floors YES, Shower Wall YES and Shower Floor YES; 12x24 format is proposed for **level bathroom floor**, **not** four-plane point-drain pan. Match with separate exact-shape small-format tile that can negotiate folds. Pattern/flatness and 2-3 mm joint remain on-site manufacturer coordination issues.
+
+**Cost / Chicago sourcing:** direct project ELM rate, local distributor lot, showroom stock, delivery lead, new item price, cartons for 1529, freight, trim and install cost all **null**. Do not transfer Daltile PF07/PF05 $6.27/SF public price or a historical Cortar quote to this manufacturer. No outreach, account sign-up, sample order or purchasing took place.
+
+**Potential program use:** investigate as a competitive tested-claim alternative for **PH Bath2, PH Bath3, TX Bath2 and PH/TX Primary level field** only once material color harmonizes with owner selections and cost, exact raw test documentation and Chicago distributor supply are obtained. It is not inserted into any pending blind-board packet, so current board hashes/independence remain intact.

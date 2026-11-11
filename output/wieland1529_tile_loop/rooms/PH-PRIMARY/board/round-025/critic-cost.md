@@ -1,0 +1,47 @@
+# PH-PRIMARY — round 025 independent COST/SELECTION critique (seat weight 0.20)
+
+Blind options **A** and **B** assessed independently on **2026-11-06 America/Chicago**. Scores below are five equally averaged procurement criteria (1–5 each), **not board-weighted totals**. Dollar figures are **per one PH-PRIMARY instance**; the old schedule carries two instances, not two copies of waste per instance. The proposal is a cost screen, not an order.
+
+**Source hierarchy:** [same-job Elm quote extracted verbatim, 2026-09-04, message 1a06e29c0b2333f4](../../../../inputs/TRADE_QUOTES.md) (24x48 **Cortar Bone flat Soft $8.14/SF**, 15.39 SF/carton, original import estimate 10–12 weeks, 50% deposit, 300 SF minimum across imported colors/sizes); [official Elm Bone wet-WALL application](https://www.elmsurfaces.com/product/cortar-bone); [F&D Luxe Sand 101317949 current retail/product specifications](https://www.flooranddecor.com/porcelain-tile/luxe-sand-matte-porcelain-tile-101317949.html); [F&D Riviera Oat 101487775 current retail/product specifications](https://www.flooranddecor.com/porcelain-tile/riviera-oat-matte-porcelain-tile-101487775.html); [current research's separately observed $4.39 store snapshot](../../../../research/products/R022_FD_LUXE_SAND_RIVIERA_OAT_24PLUS_LEVEL_AND_SHOWER_PAN.md). F&D web pages in this check defaulted to **Kirkwood/Atlanta, Georgia**, not any Chicago store: Luxe **$3.49/SF, $54.08/15.52-SF box**; Riviera **$3.99/SF, $63.84/16.00-SF box**. Riviera **$4.39/SF, $70.24/box** comes from the separately recorded Camelback storefront snapshot. These are non-Chicago retail observations, never guaranteed SHB trade rates or local stock.
+
+## Option A — Bone flat WALL, no NICHE, Luxe Sand 24x24 LEVEL and selected 48-inch LINEAR PAN
+
+| Independent cost criterion | Score | Cited evidence and reason |
+|---|---:|---|
+| 1. Exact vendor/item quote | **5/5** | Same-job 2026-09-04 Elm **$8.14/SF** supports Bone **flat Soft 24x48** only; original wall source **143.00 gross SF**, and maker lists **Wet Areas**. No substitution of unlisted relief, floor or ceiling claims. [Trade quote](../../../../inputs/TRADE_QUOTES.md); [Elm exact product](https://www.elmsurfaces.com/product/cortar-bone) |
+| 2. Exact LEVEL/PAN retail price | **5/5** | F&D **SKU 101317949 $3.49/SF** current non-Chicago display; product page lists **24x24, DCOF >=0.42, Bathroom Floor and Shower Floor**. Lower sourced unit rate than B; Chicago transactional price unverified. [F&D Luxe product](https://www.flooranddecor.com/porcelain-tile/luxe-sand-matte-porcelain-tile-101317949.html) |
+| 3. Original SF and cost discipline | **4/5** | Old source **143.00 gross WALL + 135.60 gross LEVEL/PAN/PH-WC**, both **already include 15% once**. One-copy SF-extended product screen **143×8.14 + 135.60×3.49 = $1,637.26**, vs original **$2,224.41**; **125% × original = $2,780.51** only as a provisional comparison, **not owner-allocated budget or hard-gate PASS**. [Frozen neutral A source and source row ids](candidates/A.md); [waste method](../../../../research/products/R025_PH_THREE_ROOM_QUOTED_ELM_FD_LFT_WET_GATE_EVIDENCE.md) |
+| 4. Separate quantity/cut-waste basis | **3/5** | The **135.60 SF is blended**, not a verified LEVEL/PAN/WC partition. New replacement takeoff must be **LEVEL net×1.15 + LINEAR PAN net×1.25 + inherited PH-WC net×1.15**, WC once. Do not apply a second waste percentage to original gross; 24x24 to installer-cut LINEAR is a conditional field-yield issue, not an automatic failure. [Owner large-format and installer rule](../../../../state/OWNER_FEEDBACK.md); [room geometry with unverified offsets](../../geometry.json); [A scope](candidates/A.md) |
+| 5. Cartons, logistics, lots | **2/5** | On **old gross only**, illustrative minimum **ceil(143/15.39)=10 Elm cartons** and **ceil(135.60/15.52)=9 F&D cartons**; material-only full-carton screen approximately **$1,739.47** using Elm $/SF extension and posted F&D **$54.08/box**. It excludes delivered freight/tax, cut-heavy PAN uplift, grout/trim/setting and confirmed same-lot quantities. Elm import terms and F&D Atlanta-only pickup/ETA do not establish Chicago availability. [Elm quote terms](../../../../inputs/TRADE_QUOTES.md); [F&D store/box display](https://www.flooranddecor.com/porcelain-tile/luxe-sand-matte-porcelain-tile-101317949.html) |
+
+**Arithmetic mean A:** (5 + 5 + 4 + 3 + 2) / 5 = **3.8/5**.  
+**top_fix A:** Replace the blended 135.60-gross-SF floor source with receipt-verified separate LEVEL, LINEAR PAN and inherited PH-WC net takeoffs before releasing a carton quantity.  
+**confidence A:** medium (source price/product-use strong; delivered cost/geometry/stock unknown).
+
+## Option B — Bone flat WALL, no NICHE, Riviera Oat 24x48 LEVEL and selected 48-inch LINEAR PAN
+
+| Independent cost criterion | Score | Cited evidence and reason |
+|---|---:|---|
+| 1. Exact vendor/item quote | **5/5** | Same Bone **flat Soft 24x48** Elm job quote **$8.14/SF**, **143.00 gross WALL SF**; separate **BR73480 rough** with **BT0734816-BNX 48-inch LINEAR** unchanged and no niche. [Elm job quote](../../../../inputs/TRADE_QUOTES.md); [Elm wet-WALL listing](https://www.elmsurfaces.com/product/cortar-bone); [plumbing source](../../plumbing.json) |
+| 2. Exact LEVEL/PAN retail price | **4/5** | F&D **SKU 101487775 24x48** page currently displays **$3.99/SF** at Kirkwood; an earlier exact-product storefront check was **$4.39/SF**. Published **DCOF >=0.42** and Shower Floor/ Bathroom Floor listing support both proposed surfaces, but its price is **$0.50–$0.90/SF** above A at compared snapshots. [F&D Riviera product](https://www.flooranddecor.com/porcelain-tile/riviera-oat-matte-porcelain-tile-101487775.html); [store variance](../../../../research/products/R022_FD_LUXE_SAND_RIVIERA_OAT_24PLUS_LEVEL_AND_SHOWER_PAN.md) |
+| 3. Original SF and cost discipline | **4/5** | Same historical **143.00 wall +135.60 combined floor gross SF (15% waste included once)** gives **$1,705.06–$1,759.30** SF-extended product screen, against **$2,224.41** original and **$2,780.51** provisional 125%-of-original, which **is not an owner-approved allocation**. Difference from A: **+$67.80 to +$122.04** on historical SF. [Option B source row ids, arithmetic](candidates/B.md); [owner budget stance still blank](../../../../state/OWNER_FEEDBACK.md) |
+| 4. Separate quantity/cut-waste basis | **2/5** | Separate **LEVEL net×1.15 + LINEAR PAN net×1.25 + inherited PH-WC net×1.15** is mandatory; source gross cannot receive waste twice. The larger **23.58x47.28 actual** tile on the selected LINEAR PAN needs an actual installer cut/yield survey to substantiate the 25% pan allowance; geometry is not yet element-receipted. [F&D SKU dimensions](https://www.flooranddecor.com/porcelain-tile/riviera-oat-matte-porcelain-tile-101487775.html); [geometry](../../geometry.json); [owner rule](../../../../state/OWNER_FEEDBACK.md) |
+| 5. Cartons, logistics, lots | **2/5** | On **old gross only**, **10 Elm boxes** plus **ceil(135.60/16)=9 Riviera boxes** imply **$1,827.31–$1,884.91** illustrative boxed products (16 SF/box, **$63.84–$70.24/box**); delivered Chicago price, shade lot, pickup stock, added LINEAR cuts, freight/tax and trim remain unknown. [Elm box/lead terms](../../../../inputs/TRADE_QUOTES.md); [F&D exact SKU](https://www.flooranddecor.com/porcelain-tile/riviera-oat-matte-porcelain-tile-101487775.html) |
+
+**Arithmetic mean B:** (5 + 4 + 4 + 2 + 2) / 5 = **3.4/5**.  
+**top_fix B:** Verify a site-dimensioned 24x48 LINEAR PAN cut yield before carrying its separate 25% waste and ordering Riviera cartons.  
+**confidence B:** medium.
+
+## gate_flags (each option; cost seat, source-specific)
+
+| Gate | A | B |
+|---|---|---|
+| WALL | **PASS** — exact Elm flat Bone Soft wet WALL listing; any existing ceiling separately **UNKNOWN** | **PASS** — same flat Bone wet WALL; ceiling **UNKNOWN** |
+| NICHE | **PASS (N/A)** — owner prohibits Primary niche | **PASS (N/A)** — owner prohibits Primary niche |
+| LEVEL | **PASS** — F&D Luxe individual published wet DCOF >=0.42 and Bathroom Floor | **PASS** — Riviera individual published wet DCOF >=0.42 and Bathroom Floor |
+| Conditional PAN (selected LINEAR here) | **PASS (tile product only)** — same SKU published Shower Floor + wet DCOF; cut/assembly within GEOMETRY unknown | **PASS (tile product only)** — same SKU published Shower Floor + wet DCOF; cut/assembly within GEOMETRY unknown |
+| BUDGET | **UNKNOWN** — no owner-allocated carried room cap; 125% original is provisional; complete installed/delivered cost missing | **UNKNOWN** — same missing owner allocation and full cost |
+| GEOMETRY | **UNKNOWN** — W1 5.854 ft/W2 4.646 ft drawing-derived, drain, openings, <3-inch focal-edge slivers and cut yields unverified | **UNKNOWN** — same measured gaps; larger tile cut yield unverified |
+| CHICAGO STOCK | **UNKNOWN** — current F&D Chicago cartons/lot and Elm warehouse/confirmed lead unverified | **UNKNOWN** — current F&D Chicago cartons/lot and Elm warehouse/confirmed lead unverified |
+
+No hard-gate **FAIL** is proven by these cost sources. PASS on LEVEL/PAN is **product-use evidence**, not installation acceptance. The Floor & Decor Luxe page shows **$54.08/box** despite rounded **15.52 SF × $3.49 = $54.16**; illustrative whole-carton calculations deliberately use its *posted box price*. No contractual rate, complete delivered total, approval, board weighting or procurement authority is claimed.

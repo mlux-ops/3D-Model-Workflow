@@ -1,0 +1,27 @@
+{
+ "schema_version": 1,
+ "operation_id": "9b686506-05a5-4ee5-93ea-02326c1c6eb8",
+ "status": "failed",
+ "request": {
+  "schema_version": 1,
+  "operation_id": "9b686506-05a5-4ee5-93ea-02326c1c6eb8",
+  "operation": "view.inspect",
+  "document": {
+   "session_id": "2978497e-b41f-497f-81f3-7be82e0e133d"
+  },
+  "arguments": {
+   "element_id": 1084918
+  }
+ },
+ "result": null,
+ "error": {
+  "code": "KeyNotFoundException",
+  "message": "The given key was not present in the dictionary.",
+  "details": null
+ },
+ "cancel_requested": false,
+ "created_utc": "2026-11-07T07:52:15.1326070Z",
+ "finished_utc": "2026-11-07T07:52:15.1421090Z",
+ "elapsed_ms": 2.5218,
+ "transaction_status": "not_started"
+}

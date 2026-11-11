@@ -1,0 +1,158 @@
+{
+  "status": "FIX",
+  "phase": "before",
+  "focus_cases": [
+    "PH-PRIMARY/304A",
+    "PH-PRIMARY/304B",
+    "TX-PRIMARY/202A",
+    "TX-PRIMARY/202B",
+    "PH-BATH2/305A",
+    "PH-BATH2/305B",
+    "TX-BATH2/205A",
+    "TX-BATH2/205B"
+  ],
+  "errors": [
+    "selected nominal Duravit tub shell missing PH-BATH2_305A",
+    "selected nominal Duravit tub shell missing PH-BATH2_305B",
+    "selected nominal Duravit tub shell missing TX-BATH2_205A",
+    "selected nominal Duravit tub shell missing TX-BATH2_205B"
+  ],
+  "interactions": [],
+  "picks_sha256": "a468848af7a7390a796a1d489b9a493b991dc5d30e478ed10eb0284818f92d0d",
+  "source_receipts": {
+    "PH-PRIMARY_304A": {
+      "source_wall_segments": 8,
+      "rendered_wall_pieces": 11,
+      "native_casework_ids": [
+        16428733
+      ],
+      "native_door_ids": [
+        16428722,
+        16428737
+      ],
+      "native_ceiling_source": true,
+      "selected_3d_tub": false,
+      "modes": [
+        "full",
+        "study",
+        "context"
+      ]
+    },
+    "PH-PRIMARY_304B": {
+      "source_wall_segments": 8,
+      "rendered_wall_pieces": 11,
+      "native_casework_ids": [
+        15957321
+      ],
+      "native_door_ids": [
+        15957310,
+        15957325
+      ],
+      "native_ceiling_source": true,
+      "selected_3d_tub": false,
+      "modes": [
+        "full",
+        "study"
+      ]
+    },
+    "TX-PRIMARY_202A": {
+      "source_wall_segments": 10,
+      "rendered_wall_pieces": 15,
+      "native_casework_ids": [
+        16437668
+      ],
+      "native_door_ids": [
+        16437700
+      ],
+      "native_ceiling_source": false,
+      "selected_3d_tub": false,
+      "modes": [
+        "full",
+        "study"
+      ]
+    },
+    "TX-PRIMARY_202B": {
+      "source_wall_segments": 10,
+      "rendered_wall_pieces": 15,
+      "native_casework_ids": [
+        18055995
+      ],
+      "native_door_ids": [
+        18056000
+      ],
+      "native_ceiling_source": false,
+      "selected_3d_tub": false,
+      "modes": [
+        "full",
+        "study"
+      ]
+    },
+    "PH-BATH2_305A": {
+      "source_wall_segments": 4,
+      "rendered_wall_pieces": 6,
+      "native_casework_ids": [
+        16428794
+      ],
+      "native_door_ids": [
+        16428635
+      ],
+      "native_ceiling_source": true,
+      "selected_3d_tub": true,
+      "modes": [
+        "full",
+        "study"
+      ]
+    },
+    "PH-BATH2_305B": {
+      "source_wall_segments": 4,
+      "rendered_wall_pieces": 6,
+      "native_casework_ids": [
+        15960228
+      ],
+      "native_door_ids": [
+        12591854
+      ],
+      "native_ceiling_source": true,
+      "selected_3d_tub": true,
+      "modes": [
+        "full",
+        "study"
+      ]
+    },
+    "TX-BATH2_205A": {
+      "source_wall_segments": 6,
+      "rendered_wall_pieces": 7,
+      "native_casework_ids": [
+        16437622
+      ],
+      "native_door_ids": [
+        16437617
+      ],
+      "native_ceiling_source": true,
+      "selected_3d_tub": true,
+      "modes": [
+        "full",
+        "study",
+        "context"
+      ]
+    },
+    "TX-BATH2_205B": {
+      "source_wall_segments": 6,
+      "rendered_wall_pieces": 7,
+      "native_casework_ids": [
+        12459746
+      ],
+      "native_door_ids": [
+        12459741
+      ],
+      "native_ceiling_source": true,
+      "selected_3d_tub": true,
+      "modes": [
+        "full",
+        "study"
+      ]
+    }
+  },
+  "visual_deltas": [],
+  "physical_capture_count": 26
+}

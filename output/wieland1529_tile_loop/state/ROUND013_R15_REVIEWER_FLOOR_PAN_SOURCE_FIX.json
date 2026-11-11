@@ -1,0 +1,55 @@
+{
+  "as_of": "2026-11-06",
+  "round": 13,
+  "reviewer": "worker-14",
+  "precise_fix": "13 originally copied R13 generic floor_pan_and_drain closure strings in new R15 CURRENT trade register replaced by exact individual room program, manufacturer, LINEAR/POINT/TUB/DRY/WC distinctions; original R13 remains signed and untouched",
+  "affected_rooms": [
+    "PH-PRIMARY",
+    "PH-BATH2",
+    "PH-BATH3",
+    "PH-BATH4",
+    "PH-POWDER",
+    "PH-WC",
+    "TX-PRIMARY",
+    "TX-BATH2",
+    "TX-BATH3",
+    "TX-BATH4",
+    "TX-POWDER",
+    "TX-POWDER2",
+    "TX-WC"
+  ],
+  "old_action_file": {
+    "bytes": 38949,
+    "sha256": "86249c5c7da79cf9d0df36ccc6c0bdb638a6f1abe0f5e98a78a1a5575ef725be"
+  },
+  "new_action_file": {
+    "bytes": 40285,
+    "sha256": "ee009a1c2b3fbeab057abbdec6e8ae476200548842cb421810fabab8ff0c3191"
+  },
+  "unchanged_three_other_outputs": {
+    "R15_OWNER_GC_13_ROOM_SCORE_AND_EVIDENCE_BOOK.md": {
+      "bytes": 12950,
+      "sha256": "1e9a18745818d6fa7accd2bd6dcc73f3c4c516fc9c0731ba65416f602d28e219"
+    },
+    "R15_13_ROOM_SCORED_OWNER_RELEASE_REGISTER.csv": {
+      "bytes": 5517,
+      "sha256": "5ba99f34f33b0722d8cbbcdd04c6dc3479bce1b7f76550ff95af0f530cbb99d6"
+    },
+    "START_HERE_R15.md": {
+      "bytes": 428,
+      "sha256": "e715809ab7b30140bc0ed8774b102008409ad68f228230530bab83c95867be50"
+    }
+  },
+  "old_manifest": {
+    "bytes": 1420,
+    "sha256": "a5ec30ed6d0650dac7a802a2a71e5a4876a95d73ac2244d4608cd5244066c7c9"
+  },
+  "new_manifest": {
+    "bytes": 1420,
+    "sha256": "c491339ca86161853630929c4804a7cccdb26e0a4e9a4142ab022299d46194df"
+  },
+  "old_r013_candidate_and_critic_sha_unchanged": true,
+  "r013_scoring_receipt_unchanged": true,
+  "owner_approval": false,
+  "procurement_release": false
+}

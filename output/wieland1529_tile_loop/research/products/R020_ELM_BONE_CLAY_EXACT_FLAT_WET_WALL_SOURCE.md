@@ -1,0 +1,7 @@
+# R020 individually permitted flat Bone and Clay wet WALL (observed 2026-11-06)
+
+Official ELM https://www.elmsurfaces.com/product/cortar-bone and https://www.elmsurfaces.com/product/cortar-clay list the respective **Bone** and **Clay** flat product pages, **24x48** size, **Soft** finish, and **Walls / Wet Areas** among applications. These are flat individually listed wet WALL surfaces, not a transferable permit for distinct **Reed** / **Ribbed Relief** products. Both 24x48 flat tiles are proposed only for shower WALL and historical ceiling scope; manufacturer page's wall listing does not independently clear ceiling overhead bonding / fastening, which stays HOLD.
+
+Selected Brizo Black Onyx shower trims are unchanged. A controlled BOUNDED Soho Black 2x10 glossy PH feature or Soho Emerald 2x10 glossy TX feature is another independently maker wet WALL listed product; each replaces part of existing quoted wall gross, not extra niche/tile. https://www.elmsurfaces.com/product/soho-black and https://www.elmsurfaces.com/product/soho-emerald each list Wet Areas and 9.5mm. Actual W2 wall interval, valving, vertical module, reveals, plane transitions, complete project cost and live dimensions are UNKNOWN. Never transfer maker wet permission to original Bone Reed or Clay Ribbed.
+
+Original Smartsheet $8.14/SF wall rows are historical composite Bone/Clay wall+ceiling+relief rates, not a newly quoted purchase rate for alternate panel or verified currently available Chicago lot. No outreach or release.

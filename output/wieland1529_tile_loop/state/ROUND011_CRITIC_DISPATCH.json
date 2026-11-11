@@ -1,0 +1,42 @@
+{
+  "round": 11,
+  "as_of": "2026-11-06",
+  "phase": "2-board",
+  "all_critic_scores": null,
+  "scoring_deferred_to_next_distinct_turn": true,
+  "source_submission": "state/ROUND011_SUBMISSION.json",
+  "source_submission_sha256": "827621f7afd308606a2562491cd65851d7cb18502393e88140f181aee8c8f38e",
+  "candidate_sha256": {
+    "PH-BATH3": {
+      "A": {
+        "sha256": "e9c87ac9d205a5b33903e081e4fd59dd04b59ce9bd5d666762611dd1b4ced700",
+        "bytes": 11127
+      },
+      "B": {
+        "sha256": "125529410bd27239752d811e26b23404fba499bb75ad2a330581d98c7049fcdb",
+        "bytes": 9748
+      }
+    },
+    "TX-BATH3": {
+      "B": {
+        "sha256": "e7c1eaee829915840c7024998ce3382495f31a017346c1042a5b43158a276b24",
+        "bytes": 11485
+      },
+      "C": {
+        "sha256": "f38f55774d68de6b685596501e5e325fad03e604fccee2d67451a678b9f2cfa0",
+        "bytes": 9873
+      }
+    }
+  },
+  "independent_reviewer": "worker-8",
+  "reviewer_verdict": "DONE FOR R011 FOUR-SEAT DISPATCH",
+  "critic_worker_seats": {
+    "critic-market": "worker-3",
+    "critic-design": "worker-9",
+    "critic-build": "worker-10",
+    "critic-cost": "worker-6"
+  },
+  "source_roles_unavailable_to_specialists": true,
+  "owner_approvals": false,
+  "procurement_released": false
+}

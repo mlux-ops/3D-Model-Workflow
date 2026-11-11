@@ -1,0 +1,5 @@
+# ELM Surfaces Tones Copper 2x20 Glossy — retained TX-BATH2 wet wall
+
+- **Source checked 2026-11-06:** https://www.elmsurfaces.com/product/copper-tones ; Tones collection https://www.elmsurfaces.com/product-collection/tones . Collection **Tones**, **Copper**, nominal **2x20 in**, **Glossy**; manufacturer **Wet Areas: yes** according to 2026-11-06 Smartsheet ELM audit, row `3035984078372740`. Published floor DCOF: `null`, not proposed for any floor.
+- **Project ELM quote (2026-09-03):** **92.8 SF gross per TX unit × $6.95/SF = $644.96/unit**, two units 185.6 SF; Smartsheet row `3035984078372740`, quoted US-stocked/quick-ship but exact Chicago stock/arrival **`null`**.
+- **Detail:** horizontal stacked copper glaze, proposed close tonal grout (exact grout `null`), 1/8-in provisional joint pending manufacturer's install sheet; trim at tub return and exposed edge `null` pending sample/installation detail. Do not use any wall DCOF as a floor rating. Tub geometry and niche measured coordinates are not verified.

@@ -1,0 +1,49 @@
+{
+  "as_of": "2026-11-06",
+  "round": 10,
+  "phase": "2-board",
+  "all_critic_scores": null,
+  "candidate_files": {
+    "PH-PRIMARY": {
+      "A": {
+        "sha256": "a29278ff8af2be05718be345b9fa3231654247557320bc3d916ca4efe5026976",
+        "bytes": 11178
+      },
+      "C": {
+        "sha256": "c12bcefecbbe06666fcd182ab6a718c6831486f07864a37bd4331112ad836bec",
+        "bytes": 6793
+      }
+    },
+    "PH-BATH2": {
+      "A": {
+        "sha256": "49fe338acf60e2f92ebe7dd28202317e7c601814c4b09ab18cca937b71ce167a",
+        "bytes": 6722
+      },
+      "C": {
+        "sha256": "395100799412e3e36c789d20ae1523abc8ae3c04b01715c8d41b9f1d726bfd59",
+        "bytes": 10084
+      }
+    },
+    "PH-BATH4": {
+      "B": {
+        "sha256": "b9501a6bc64099f2728c2bd203971401196b4b43411bf9d23e54908444fa8567",
+        "bytes": 12399
+      },
+      "C": {
+        "sha256": "b69dbca06c55126973ba41994fc2d07b42347311e1eb63f9e1a6ca96547d6425",
+        "bytes": 7325
+      }
+    }
+  },
+  "critic_seats": [
+    "critic-market",
+    "critic-design",
+    "critic-build",
+    "critic-cost"
+  ],
+  "owner_approval": null,
+  "native_1529_confirmed": false,
+  "release_allowed": false,
+  "prior_round004_round009_frozen_unchanged": true,
+  "pre_dispatch_fix": "Independent R010 reviewer FIX: historical-role headings neutralized, source floor and wall corrected, room-specific tub/linear/point drain and metal, dry powders N/A, WC inherited floor. Re-frozen BEFORE critic dispatch."
+}

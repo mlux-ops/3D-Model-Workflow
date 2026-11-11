@@ -1,0 +1,295 @@
+{
+  "as_of": "2026-11-06",
+  "round": 12,
+  "phase": "2-board",
+  "all_critic_scores": null,
+  "candidate_files": {
+    "TX-PRIMARY": {
+      "B": {
+        "sha256": "bc576a98474fc33d2cf0f5b4cc04a85ee64fbd88722fe2560bf01e41d5132a32",
+        "bytes": 7388
+      },
+      "C": {
+        "sha256": "f7e66b042e91204c29dd1639ecee72da655f8ea2537ee0da93c8e9c1caca6bdc",
+        "bytes": 7582
+      }
+    },
+    "TX-BATH2": {
+      "A": {
+        "sha256": "daceb7ea98df8996584f9f778c6034594f91e59d2db651d961def999e047c622",
+        "bytes": 7419
+      },
+      "C": {
+        "sha256": "b3d5c4f6c7b2c114f68b545b3112c60eef02ca9331d42f2eaf8fcf7c48ae71e4",
+        "bytes": 7063
+      }
+    },
+    "TX-BATH4": {
+      "A": {
+        "sha256": "ce0c1bf2efa3261066358f1a27d38ae1f8a4326d3bf5a5d951f9cef08be2586a",
+        "bytes": 7150
+      },
+      "B": {
+        "sha256": "0f551b07a69cee42a597b86aa9707a2289ee100a6d761d60f2d956844c378113",
+        "bytes": 7417
+      }
+    }
+  },
+  "independent_preflight": "pending non-Pro worker-8 read-only",
+  "critic_dispatch": "NOT DISPATCHED",
+  "owner_approval": false,
+  "procurement_release": false,
+  "revit_1529_verified": false,
+  "prior_rounds_unmodified": true,
+  "pre_dispatch_reviewer_fix": {
+    "reviewer": "worker-8",
+    "result": "FIX: remove cross-room/cross-role shared boilerplate and repair 62.484-inch Bath2 cut; six packets corrected BEFORE critics",
+    "original_vs_corrected": {
+      "TX-PRIMARY": {
+        "B": {
+          "prior": {
+            "sha256": "d182ae24105ee07199ccef128147c1da924f0477109f0d3e7e84efbc52240c4b",
+            "bytes": 8109
+          },
+          "corrected": {
+            "sha256": "68508733790026c34842010d698f5330c3e9a1fdad91664c123e7bdbf24e16b2",
+            "bytes": 7351
+          }
+        },
+        "C": {
+          "prior": {
+            "sha256": "fdf8670c06eb74bd606546090d17b84dc33bd8324228b116bf7f08fe8d7c47fa",
+            "bytes": 8123
+          },
+          "corrected": {
+            "sha256": "e2192edeebb51759fb9057d21d8107ab8cdca7f667ffdc9cc10bdc867f71f1e8",
+            "bytes": 7581
+          }
+        }
+      },
+      "TX-BATH2": {
+        "A": {
+          "prior": {
+            "sha256": "1fb0f37739dfb67a8e6eba1f18eb054cd26f5b5dd7ffd8d0a96d1f655ba3715b",
+            "bytes": 8094
+          },
+          "corrected": {
+            "sha256": "83ea6fc49848f8ecf62e3953ca095d9fd8edda645778dd96f23bcd7d058210fa",
+            "bytes": 7412
+          }
+        },
+        "C": {
+          "prior": {
+            "sha256": "bc84477779b293fd8f128635ebd712c9fababf739f86d466fa7d8a0e744cb28f",
+            "bytes": 7984
+          },
+          "corrected": {
+            "sha256": "67d520ee7ac9bd1dc1cdbc9863f95c2c3e15f4122cda272a028054570ebdc85a",
+            "bytes": 7059
+          }
+        }
+      },
+      "TX-BATH4": {
+        "A": {
+          "prior": {
+            "sha256": "19eb16ad641c17612760251c4276306843a9801d37677759c35cbd294121a2dc",
+            "bytes": 8014
+          },
+          "corrected": {
+            "sha256": "e5c5282211e07b7b9d1ac28ff214bdaccf9deeb47e67894dad380b1ab2757305",
+            "bytes": 7174
+          }
+        },
+        "B": {
+          "prior": {
+            "sha256": "2109f9a3288a94c9b5a22c15f0e529f87e24be34f8e4e9e05d04178ba36fe3f3",
+            "bytes": 8108
+          },
+          "corrected": {
+            "sha256": "d0635db528bac965b4895e05a3782016212098110a1fdb2a660201b928ecb41a",
+            "bytes": 7418
+          }
+        }
+      }
+    },
+    "critic_reports_present": false,
+    "all_critic_scores": null,
+    "owner_release": false
+  },
+  "pre_dispatch_local_link_fix": {
+    "reason": "Two primary source packet relative plumbing.md citations fixed prior to dispatch",
+    "audited_sha": {
+      "B": {
+        "prior": {
+          "sha256": "68508733790026c34842010d698f5330c3e9a1fdad91664c123e7bdbf24e16b2",
+          "bytes": 7351
+        },
+        "corrected": {
+          "sha256": "70fa7fcccf501386f29675a55646c64fb9cef0572ba4ec95a4a9d5052cf244d3",
+          "bytes": 7354
+        }
+      },
+      "C": {
+        "prior": {
+          "sha256": "e2192edeebb51759fb9057d21d8107ab8cdca7f667ffdc9cc10bdc867f71f1e8",
+          "bytes": 7581
+        },
+        "corrected": {
+          "sha256": "4097c88f4cfc324212d1dc4bac46e112f8daca20fd89a2fa696b3ea440507348",
+          "bytes": 7584
+        }
+      }
+    },
+    "critics_dispatched": false,
+    "scores": null
+  },
+  "pre_dispatch_reviewer_fix2": {
+    "reviewer": "worker-8 (permanently finished after independent pre-dispatch FIX)",
+    "source_correction": "Six exact source table wall/floor/accent gates and room-only sample briefs; removed surviving alternate/other-room references before critics",
+    "old_new_sha": {
+      "TX-PRIMARY": {
+        "B": {
+          "prior": {
+            "sha256": "70fa7fcccf501386f29675a55646c64fb9cef0572ba4ec95a4a9d5052cf244d3",
+            "bytes": 7354
+          },
+          "corrected": {
+            "sha256": "d0b11a8bba147705a25511199d33bbc1acc1c8d9315d8e1795e6a5fc9c581419",
+            "bytes": 7424
+          }
+        },
+        "C": {
+          "prior": {
+            "sha256": "4097c88f4cfc324212d1dc4bac46e112f8daca20fd89a2fa696b3ea440507348",
+            "bytes": 7584
+          },
+          "corrected": {
+            "sha256": "10a8564547aaec2223bc5bd36857c1569c1f5b362855a73c6d544297c6cb74b3",
+            "bytes": 7608
+          }
+        }
+      },
+      "TX-BATH2": {
+        "A": {
+          "prior": {
+            "sha256": "83ea6fc49848f8ecf62e3953ca095d9fd8edda645778dd96f23bcd7d058210fa",
+            "bytes": 7412
+          },
+          "corrected": {
+            "sha256": "ca6badce21af7d35486d3e660cc6c0740010f32ffe53b7b4f5296b631528892f",
+            "bytes": 7404
+          }
+        },
+        "C": {
+          "prior": {
+            "sha256": "67d520ee7ac9bd1dc1cdbc9863f95c2c3e15f4122cda272a028054570ebdc85a",
+            "bytes": 7059
+          },
+          "corrected": {
+            "sha256": "8df03d8264e6eab90a4f1cc04a65a677f518d7268ff81d88c08f0477c37198a2",
+            "bytes": 7018
+          }
+        }
+      },
+      "TX-BATH4": {
+        "A": {
+          "prior": {
+            "sha256": "e5c5282211e07b7b9d1ac28ff214bdaccf9deeb47e67894dad380b1ab2757305",
+            "bytes": 7174
+          },
+          "corrected": {
+            "sha256": "63418d40299f481424eb22c83cd76bbc278bb226a5801bbbac6941d4d7478f13",
+            "bytes": 7124
+          }
+        },
+        "B": {
+          "prior": {
+            "sha256": "d0635db528bac965b4895e05a3782016212098110a1fdb2a660201b928ecb41a",
+            "bytes": 7418
+          },
+          "corrected": {
+            "sha256": "481fc5ef8602188c536f77de5bd6a6d62c08d5d64b084e53bed765b2a077779a",
+            "bytes": 7386
+          }
+        }
+      }
+    },
+    "specialist_files": 0,
+    "scoring": null,
+    "new_reviewer_required": true
+  },
+  "pre_dispatch_new_reviewer_fix": {
+    "reviewer": "worker-11 non-Pro",
+    "source_changes": "Six candidate-specific W geometry/tub-waste, wet niche/sample and owner-release text fixes, preserving private keys",
+    "prior_and_corrected_sha": {
+      "TX-PRIMARY": {
+        "B": {
+          "old": {
+            "sha256": "d0b11a8bba147705a25511199d33bbc1acc1c8d9315d8e1795e6a5fc9c581419",
+            "bytes": 7424
+          },
+          "new": {
+            "sha256": "bc576a98474fc33d2cf0f5b4cc04a85ee64fbd88722fe2560bf01e41d5132a32",
+            "bytes": 7388
+          }
+        },
+        "C": {
+          "old": {
+            "sha256": "10a8564547aaec2223bc5bd36857c1569c1f5b362855a73c6d544297c6cb74b3",
+            "bytes": 7608
+          },
+          "new": {
+            "sha256": "f7e66b042e91204c29dd1639ecee72da655f8ea2537ee0da93c8e9c1caca6bdc",
+            "bytes": 7582
+          }
+        }
+      },
+      "TX-BATH2": {
+        "A": {
+          "old": {
+            "sha256": "ca6badce21af7d35486d3e660cc6c0740010f32ffe53b7b4f5296b631528892f",
+            "bytes": 7404
+          },
+          "new": {
+            "sha256": "daceb7ea98df8996584f9f778c6034594f91e59d2db651d961def999e047c622",
+            "bytes": 7419
+          }
+        },
+        "C": {
+          "old": {
+            "sha256": "8df03d8264e6eab90a4f1cc04a65a677f518d7268ff81d88c08f0477c37198a2",
+            "bytes": 7018
+          },
+          "new": {
+            "sha256": "b3d5c4f6c7b2c114f68b545b3112c60eef02ca9331d42f2eaf8fcf7c48ae71e4",
+            "bytes": 7063
+          }
+        }
+      },
+      "TX-BATH4": {
+        "A": {
+          "old": {
+            "sha256": "63418d40299f481424eb22c83cd76bbc278bb226a5801bbbac6941d4d7478f13",
+            "bytes": 7124
+          },
+          "new": {
+            "sha256": "ce0c1bf2efa3261066358f1a27d38ae1f8a4326d3bf5a5d951f9cef08be2586a",
+            "bytes": 7150
+          }
+        },
+        "B": {
+          "old": {
+            "sha256": "481fc5ef8602188c536f77de5bd6a6d62c08d5d64b084e53bed765b2a077779a",
+            "bytes": 7386
+          },
+          "new": {
+            "sha256": "0f551b07a69cee42a597b86aa9707a2289ee100a6d761d60f2d956844c378113",
+            "bytes": 7417
+          }
+        }
+      }
+    },
+    "critics_dispatched": false,
+    "all_critic_scores": null
+  }
+}

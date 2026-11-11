@@ -1,0 +1,24 @@
+{
+  "artifact_type": "controlled metadata correction receipt",
+  "date": "2026-11-07",
+  "basis": "Owner confirmation in state/OWNER_FEEDBACK.md line 38: 1527 and 1529 Wieland are the same building; native model 25-006 1527 N Wieland is the correct model for the 1529 tile package.",
+  "scope": "Only model_identity_verified and source_caveat in the 13 room geometry.json files were corrected. No dimensions, element IDs, areas, openings, niches, drain locations or measured flags were changed.",
+  "rooms": [
+    {"room":"PH-PRIMARY","before":{"bytes":5482,"sha256":"bc7240deef76fe20ad0297d73a09487babf6b4cce4b337b1e42436e3da53d47d"},"after":{"bytes":5572,"sha256":"d9c904f0197aa211bec9ae0fb131a52f4e43fd7b12387fdb221d43f7a3cc0d6d"}},
+    {"room":"PH-BATH2","before":{"bytes":6842,"sha256":"878d6183ff766b49be2ebd30714215fec1f669285ad6108b3ddebd9de06a00fe"},"after":{"bytes":6932,"sha256":"3ef0d6be535112b9a32f555819e91abaa638772855a1bb8449757fc377b5886d"}},
+    {"room":"PH-BATH3","before":{"bytes":6837,"sha256":"0800d74bf15443bcd31699395815c7a9abde84d9ad35b93ee2dd30d2192d8797"},"after":{"bytes":6927,"sha256":"8979d6ecfdb790701827314eea131e2ed209e9058bce6753a594e00bc87c16c3"}},
+    {"room":"PH-BATH4","before":{"bytes":6847,"sha256":"f21e45dde8ac0bf8944a5d4863435edf29d3950bbf3fed8f4c19a538e94a72dc"},"after":{"bytes":6937,"sha256":"dfdd638d09badd48152b48c7d406cf9758660f41688c7c0d35de4f9c3d89d78e"}},
+    {"room":"PH-POWDER","before":{"bytes":3333,"sha256":"d91a1bd45f75579cb081061d4151438e34a26db3ba3e0b79fead726358a0ad67"},"after":{"bytes":3423,"sha256":"e2d1e4341ca413cdcd68ad2314ca382f5e1d33b73445ab7af7d2a6c2204be7db"}},
+    {"room":"PH-WC","before":{"bytes":1656,"sha256":"0c0a751cf0e0d6eb28fbee8bbbf1537d4210a59e923fa67e515236146c9fa9da"},"after":{"bytes":1746,"sha256":"e68dbf07fc111f8110fdb9734699da44969749bcd283ffea44d708766359d79a"}},
+    {"room":"TX-PRIMARY","before":{"bytes":5483,"sha256":"e62567e16d82cb5ec4fc73d15675377df14280c1e48600fb022ec2724b36b0fd"},"after":{"bytes":5573,"sha256":"c96e0903192a769ae9d19f54b40cf24783330958f1de5620dbfc9bc297417300"}},
+    {"room":"TX-BATH2","before":{"bytes":6837,"sha256":"52dfb1281d11b5f230c2fe777119af7776ed5fb8f3be1f843423ebcb434df69a"},"after":{"bytes":6927,"sha256":"9fdacddf9fadb1b060611197b8714e9530ec4738b4d69420b04846b1f547010f"}},
+    {"room":"TX-BATH3","before":{"bytes":6832,"sha256":"d6ae3035ddc1210853412a208f31b4c6de3151fe5791aa83bcbb439d60ce7367"},"after":{"bytes":6922,"sha256":"1af47611ce98d23da03efb061ffcc2ef0e89ad19be523e2e79a6a932d8575695"}},
+    {"room":"TX-BATH4","before":{"bytes":6838,"sha256":"ec59be957e8ba03b30e56c00633e56d35dd699fa5a0e336920b792a5c24e6081"},"after":{"bytes":6928,"sha256":"faa4fd95f8154ac917dda2b903760d779788771ddc9045bd151cdbeed5d49ae1"}},
+    {"room":"TX-POWDER","before":{"bytes":3331,"sha256":"b6c863c86901dcc1e71312af4ec53ff2966355f82ca488880dc5e5cf51313a6e"},"after":{"bytes":3421,"sha256":"99d66a2d193677c3526129bbb52cf41116d7f1e9a1b868bd1497a59cc9e9f964"}},
+    {"room":"TX-POWDER2","before":{"bytes":3332,"sha256":"d2b6f6429bd7ee6a1762a998fa592928ac5daf36133f04a90a241fc98b452ad8"},"after":{"bytes":3422,"sha256":"4d7aabad6ed79929710b02766015e052e3ec91683af6638e4e4112b5575bdf79"}},
+    {"room":"TX-WC","before":{"bytes":1674,"sha256":"a07d5eb6d94c23b1d6c009b01a8749072b434ead1c6c4b222c9de8e8c4d39d04"},"after":{"bytes":1764,"sha256":"6a7607cdcef3af5dbc4676b0806be6b14b47da2351ff9cc2d5ce0c7b806b1365"}}
+  ],
+  "verification": "All 13 updated JSON files parse. model_identity_verified=true in all. Every tiled-wall length remains live_revit_verified=false; no native element IDs or measurements were created.",
+  "revit_document_identity_receipt": "state/ROOMS.json revit_project_check.document_identity_receipt 611ba505-28e4-489b-971b-1f2e20d0dc47",
+  "acceptance_effect": "NONE. This resolves only building identity metadata, not geometry qualification, candidate acceptance or procurement."
+}

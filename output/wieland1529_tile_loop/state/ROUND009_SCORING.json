@@ -1,0 +1,505 @@
+{
+  "as_of": "2026-11-06",
+  "round": 9,
+  "source_submission": "state/ROUND009_SUBMISSION.json",
+  "source_submission_sha256": "376361865ccc258fc313509640485c4dd5ccfb2117822f5b5167215c37ebea2f",
+  "verification": {
+    "candidate_frozen_files": 6,
+    "actual_independent_critiques": 12,
+    "criterion_checks": 114,
+    "local_links": 381,
+    "all_valid": true
+  },
+  "room_results": {
+    "TX-PRIMARY": {
+      "room": "TX-PRIMARY",
+      "round": 9,
+      "critics_complete": true,
+      "critic_file_fingerprints": {
+        "market": {
+          "sha256": "70e72398c30d0490f84341269ca77b1e41c078430084a0321f02c600f6a1c896",
+          "bytes": 10459
+        },
+        "design": {
+          "sha256": "a20a1c7e2957b20f5dde33ce61828d061acfdb73ef5d1ab6da383a69f174dcc7",
+          "bytes": 14862
+        },
+        "build": {
+          "sha256": "b78b44fe0581b738c1870f5486b4066c6bbfb7030a3589dae5f37f38bfe4f36b",
+          "bytes": 13194
+        },
+        "cost": {
+          "sha256": "08a50b835222316a48c471fa2c35fb4218913a46769d8bd251d888bab5ced081",
+          "bytes": 11897
+        }
+      },
+      "weights": {
+        "market": 0.3,
+        "design": 0.25,
+        "build": 0.25,
+        "cost": 0.2
+      },
+      "incumbent_letter": "C",
+      "challenger_letter": "A",
+      "candidates": {
+        "A": {
+          "role": "revised design option",
+          "seat_scores": {
+            "market": 3.8,
+            "design": 4.0,
+            "build": 3.0,
+            "cost": 2.8
+          },
+          "criterion_scores": {
+            "market": {
+              "criterion_scores": [
+                4.2,
+                4.1,
+                3.0,
+                4.0
+              ],
+              "mean": 3.8
+            },
+            "design": {
+              "criterion_scores": [
+                5.0,
+                4.0,
+                4.0,
+                4.0,
+                3.0
+              ],
+              "mean": 4.0
+            },
+            "build": {
+              "criterion_scores": [
+                4.0,
+                3.0,
+                3.0,
+                3.0,
+                2.0
+              ],
+              "mean": 3.0
+            },
+            "cost": {
+              "criterion_scores": [
+                4.0,
+                4.0,
+                2.0,
+                2.0,
+                2.0
+              ],
+              "mean": 2.8
+            }
+          },
+          "weighted_score": 3.45,
+          "minimum_critic_score": 2.8,
+          "all_seat_minimum_3_pass": false,
+          "hard_gates_pass": false,
+          "gate_reasons": [
+            "FAIL: exact measured product-specific bath level-floor wet DCOF unavailable for selected source/alternative SKU",
+            "FAIL: selected 48-in Brizo linear shower pan exact measured SKU wet DCOF unavailable",
+            "HOLD: actual RL21 Prime mosaic order SKU, liner/slope/48-in linear drain connection, 1529 geometry and manufacturer brochure version reconciliation unavailable",
+            "HOLD: current landed Chicago pricing/lot/lead and owner room budget/signoff unavailable; cannot infer >125% gate failure"
+          ],
+          "source_candidate_sha256": "42a759ad6ff12d0a3080daf790d075ad8bd72ede7659202a86884940ece926bf"
+        },
+        "C": {
+          "role": "historic v4 source",
+          "seat_scores": {
+            "market": 3.3,
+            "design": 2.8,
+            "build": 1.6,
+            "cost": 2.6
+          },
+          "criterion_scores": {
+            "market": {
+              "criterion_scores": [
+                3.8,
+                3.5,
+                3.0,
+                3.0
+              ],
+              "mean": 3.3
+            },
+            "design": {
+              "criterion_scores": [
+                4.0,
+                3.0,
+                3.0,
+                2.0,
+                2.0
+              ],
+              "mean": 2.8
+            },
+            "build": {
+              "criterion_scores": [
+                2.0,
+                2.0,
+                1.0,
+                2.0,
+                1.0
+              ],
+              "mean": 1.6
+            },
+            "cost": {
+              "criterion_scores": [
+                4.0,
+                3.0,
+                3.0,
+                2.0,
+                1.0
+              ],
+              "mean": 2.6
+            }
+          },
+          "weighted_score": 2.61,
+          "minimum_critic_score": 1.6,
+          "all_seat_minimum_3_pass": false,
+          "hard_gates_pass": false,
+          "gate_reasons": [
+            "FAIL: exact measured product-specific bath level-floor wet DCOF unavailable for selected source/alternative SKU",
+            "FAIL: selected 48-in Brizo linear shower pan exact measured SKU wet DCOF unavailable",
+            "HOLD: actual RL21 Prime mosaic order SKU, liner/slope/48-in linear drain connection, 1529 geometry and manufacturer brochure version reconciliation unavailable",
+            "FAIL: Cortar Clay Ribbed relief individual Wet Areas approval absent",
+            "HOLD: current landed Chicago pricing/lot/lead and owner room budget/signoff unavailable; cannot infer >125% gate failure"
+          ],
+          "source_candidate_sha256": "c9a4874559d3c4aecc1cc4c3f9476dcfbf7033947050d4c2187a1b58f8145dad"
+        }
+      },
+      "margin": 0.84,
+      "status": "blocked",
+      "decision": "retain_no_qualified_candidate_due_exact_wet_floor_test_holds",
+      "champion_id": null,
+      "champion_score": null,
+      "accepted_challenger": false,
+      "owner_approved": false,
+      "provisional_design_preference": "A",
+      "report": "board/round-009/ROUND_REPORT.md"
+    },
+    "TX-BATH2": {
+      "room": "TX-BATH2",
+      "round": 9,
+      "critics_complete": true,
+      "critic_file_fingerprints": {
+        "market": {
+          "sha256": "4fadf8141f0754eed3a35d45e4639ad2fc62a835e11a34363ddebafa9633fb44",
+          "bytes": 8852
+        },
+        "design": {
+          "sha256": "ef39831377931ffe9fdd5f8094aad73682997b9d84311a8855112ed5c20dd8e7",
+          "bytes": 13563
+        },
+        "build": {
+          "sha256": "9a27eec65c5042337da5f81472e826e1e0b1dfa31323a8f7c15425a6061f39b0",
+          "bytes": 11430
+        },
+        "cost": {
+          "sha256": "e6539b69b95c5bf7b7c64d6efecaf1c6c7f23314035d552ad6e1bd0f4af66797",
+          "bytes": 10076
+        }
+      },
+      "weights": {
+        "market": 0.3,
+        "design": 0.25,
+        "build": 0.25,
+        "cost": 0.2
+      },
+      "incumbent_letter": "A",
+      "challenger_letter": "C",
+      "candidates": {
+        "A": {
+          "role": "historic v4 source",
+          "seat_scores": {
+            "market": 3.7,
+            "design": 3.6,
+            "build": 3.2,
+            "cost": 3.0
+          },
+          "criterion_scores": {
+            "market": {
+              "criterion_scores": [
+                4.0,
+                3.9,
+                3.0,
+                4.0
+              ],
+              "mean": 3.7
+            },
+            "design": {
+              "criterion_scores": [
+                4.0,
+                4.0,
+                4.0,
+                3.0,
+                3.0
+              ],
+              "mean": 3.6
+            },
+            "build": {
+              "criterion_scores": [
+                4.0,
+                3.0,
+                4.0,
+                3.0,
+                2.0
+              ],
+              "mean": 3.2
+            },
+            "cost": {
+              "criterion_scores": [
+                5.0,
+                2.0,
+                4.0,
+                2.0,
+                2.0
+              ],
+              "mean": 3.0
+            }
+          },
+          "weighted_score": 3.41,
+          "minimum_critic_score": 3.0,
+          "all_seat_minimum_3_pass": true,
+          "hard_gates_pass": false,
+          "gate_reasons": [
+            "FAIL: exact measured product-specific bath level-floor wet DCOF unavailable for selected source/alternative SKU",
+            "HOLD: actual niche face netting, unselected owner basin, 1529 tub/finish geometry and supplier availability unknown",
+            "HOLD: current landed Chicago pricing/lot/lead and owner room budget/signoff unavailable; cannot infer >125% gate failure"
+          ],
+          "source_candidate_sha256": "3f562ff62ced5e36476980cd7e7e47abb1cda82ee0b904977253f82039debc01"
+        },
+        "C": {
+          "role": "revised design option",
+          "seat_scores": {
+            "market": 3.8,
+            "design": 4.0,
+            "build": 3.4,
+            "cost": 2.8
+          },
+          "criterion_scores": {
+            "market": {
+              "criterion_scores": [
+                4.1,
+                4.0,
+                3.0,
+                4.0
+              ],
+              "mean": 3.8
+            },
+            "design": {
+              "criterion_scores": [
+                4.0,
+                4.0,
+                4.0,
+                4.0,
+                4.0
+              ],
+              "mean": 4.0
+            },
+            "build": {
+              "criterion_scores": [
+                4.0,
+                4.0,
+                4.0,
+                3.0,
+                2.0
+              ],
+              "mean": 3.4
+            },
+            "cost": {
+              "criterion_scores": [
+                4.0,
+                4.0,
+                2.0,
+                2.0,
+                2.0
+              ],
+              "mean": 2.8
+            }
+          },
+          "weighted_score": 3.55,
+          "minimum_critic_score": 2.8,
+          "all_seat_minimum_3_pass": false,
+          "hard_gates_pass": false,
+          "gate_reasons": [
+            "FAIL: exact measured product-specific bath level-floor wet DCOF unavailable for selected source/alternative SKU",
+            "HOLD: actual niche face netting, unselected owner basin, 1529 tub/finish geometry and supplier availability unknown",
+            "HOLD: current landed Chicago pricing/lot/lead and owner room budget/signoff unavailable; cannot infer >125% gate failure"
+          ],
+          "source_candidate_sha256": "fd2d8254996202952b72560386f9ee82adf34b2d4513a271067a1d56f48a7a71"
+        }
+      },
+      "margin": 0.14,
+      "status": "blocked",
+      "decision": "retain_no_qualified_candidate_due_exact_wet_floor_test_holds",
+      "champion_id": null,
+      "champion_score": null,
+      "accepted_challenger": false,
+      "owner_approved": false,
+      "provisional_design_preference": "C",
+      "report": "board/round-009/ROUND_REPORT.md"
+    },
+    "TX-BATH4": {
+      "room": "TX-BATH4",
+      "round": 9,
+      "critics_complete": true,
+      "critic_file_fingerprints": {
+        "market": {
+          "sha256": "037bfa9a9c00ac9954fce1c66fd59b944367f2e9d1647398869a477d54293bc7",
+          "bytes": 9726
+        },
+        "design": {
+          "sha256": "097a767adfdf4de5a8ea517e31be74352ff08d2d5872daa8b46782e04a9ecf1b",
+          "bytes": 14367
+        },
+        "build": {
+          "sha256": "d47e4c2e95c82e1761a34f468aff765eddc0193b308b336101482826709a6002",
+          "bytes": 12080
+        },
+        "cost": {
+          "sha256": "53ba3ecbbaee4663c540b4b2bfdce9be0cf2a7b22996d5e5c32d2f439e7fb73e",
+          "bytes": 10646
+        }
+      },
+      "weights": {
+        "market": 0.3,
+        "design": 0.25,
+        "build": 0.25,
+        "cost": 0.2
+      },
+      "incumbent_letter": "B",
+      "challenger_letter": "A",
+      "candidates": {
+        "A": {
+          "role": "revised design option",
+          "seat_scores": {
+            "market": 3.8,
+            "design": 3.8,
+            "build": 3.2,
+            "cost": 2.6
+          },
+          "criterion_scores": {
+            "market": {
+              "criterion_scores": [
+                4.1,
+                4.0,
+                3.0,
+                4.2
+              ],
+              "mean": 3.8
+            },
+            "design": {
+              "criterion_scores": [
+                4.0,
+                4.0,
+                3.0,
+                4.0,
+                4.0
+              ],
+              "mean": 3.8
+            },
+            "build": {
+              "criterion_scores": [
+                4.0,
+                3.0,
+                4.0,
+                3.0,
+                2.0
+              ],
+              "mean": 3.2
+            },
+            "cost": {
+              "criterion_scores": [
+                4.0,
+                3.0,
+                2.0,
+                2.0,
+                2.0
+              ],
+              "mean": 2.6
+            }
+          },
+          "weighted_score": 3.41,
+          "minimum_critic_score": 2.6,
+          "all_seat_minimum_3_pass": false,
+          "hard_gates_pass": false,
+          "gate_reasons": [
+            "FAIL: exact measured product-specific bath level-floor wet DCOF unavailable for selected source/alternative SKU",
+            "HOLD: actual tub niche returns/sill and measured floor/transition geometry unavailable",
+            "HOLD: current landed Chicago pricing/lot/lead and owner room budget/signoff unavailable; cannot infer >125% gate failure"
+          ],
+          "source_candidate_sha256": "23a73dc4e5a9e21b2c03fb5df47c72f88d81edf7307c6dd417f81fa65f034cd4"
+        },
+        "B": {
+          "role": "historic v4 source",
+          "seat_scores": {
+            "market": 3.3,
+            "design": 2.8,
+            "build": 2.0,
+            "cost": 2.6
+          },
+          "criterion_scores": {
+            "market": {
+              "criterion_scores": [
+                3.7,
+                3.3,
+                3.0,
+                3.1
+              ],
+              "mean": 3.3
+            },
+            "design": {
+              "criterion_scores": [
+                4.0,
+                3.0,
+                3.0,
+                2.0,
+                2.0
+              ],
+              "mean": 2.8
+            },
+            "build": {
+              "criterion_scores": [
+                1.0,
+                2.0,
+                4.0,
+                2.0,
+                1.0
+              ],
+              "mean": 2.0
+            },
+            "cost": {
+              "criterion_scores": [
+                5.0,
+                2.0,
+                3.0,
+                2.0,
+                1.0
+              ],
+              "mean": 2.6
+            }
+          },
+          "weighted_score": 2.71,
+          "minimum_critic_score": 2.0,
+          "all_seat_minimum_3_pass": false,
+          "hard_gates_pass": false,
+          "gate_reasons": [
+            "FAIL: exact measured product-specific bath level-floor wet DCOF unavailable for selected source/alternative SKU",
+            "HOLD: actual tub niche returns/sill and measured floor/transition geometry unavailable",
+            "FAIL: Cortar Bone Ribbed and Clara Caviar niche exact Wet Areas listings absent",
+            "HOLD: current landed Chicago pricing/lot/lead and owner room budget/signoff unavailable; cannot infer >125% gate failure"
+          ],
+          "source_candidate_sha256": "cdcecc68657b08c90164597f4519e6e6bb75bd2bf6433a98259cb0b7d01eb1b6"
+        }
+      },
+      "margin": 0.7,
+      "status": "blocked",
+      "decision": "retain_no_qualified_candidate_due_exact_wet_floor_test_holds",
+      "champion_id": null,
+      "champion_score": null,
+      "accepted_challenger": false,
+      "owner_approved": false,
+      "provisional_design_preference": "A",
+      "report": "board/round-009/ROUND_REPORT.md"
+    }
+  }
+}

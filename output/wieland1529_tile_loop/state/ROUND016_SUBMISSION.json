@@ -1,0 +1,90 @@
+{
+  "round": 16,
+  "as_of": "2026-11-06",
+  "phase": "1-comps SOURCE_PREPARED_AWAIT_INDEPENDENT_PREDISPATCH",
+  "focus_rooms": [
+    "PH-POWDER",
+    "TX-POWDER",
+    "TX-POWDER2"
+  ],
+  "reason": "three active DRY powder rooms not blocked by Bath3 owner TUB/WALK-IN; prior scored lower than stable 4.0; selected faucets and 1to1 relief mounting, exact local cost and mirror/calibrated cuts are independently closable",
+  "room_source_per_copy_gross_and_usd": {
+    "PH-POWDER": {
+      "gross_sf_with_original_15pct_once": "44.9",
+      "material_usd": "368.18",
+      "copies": 2
+    },
+    "TX-POWDER": {
+      "gross_sf_with_original_15pct_once": "31.8",
+      "material_usd": "379.37",
+      "copies": 2
+    },
+    "TX-POWDER2": {
+      "gross_sf_with_original_15pct_once": "40.5",
+      "material_usd": "332.10",
+      "copies": 2
+    }
+  },
+  "candidate_source": {
+    "PH-POWDER": {
+      "A": {
+        "path": "rooms/PH-POWDER/board/round-016/candidates/A.md",
+        "sha256": "b59083b258847c86970d3b53a73570fc70d563161b957a0fcc76702c70592fc1",
+        "bytes": 4942
+      },
+      "C": {
+        "path": "rooms/PH-POWDER/board/round-016/candidates/C.md",
+        "sha256": "e411f195732104d078ebf968f5347f9b756e3d2214ff4924ab5f688b7e469aa4",
+        "bytes": 5064
+      }
+    },
+    "TX-POWDER": {
+      "B": {
+        "path": "rooms/TX-POWDER/board/round-016/candidates/B.md",
+        "sha256": "4c82bdcf4c7479572b5a4bf1611f516cbd0a9e89136a985f2c721787fee962f9",
+        "bytes": 6170
+      },
+      "C": {
+        "path": "rooms/TX-POWDER/board/round-016/candidates/C.md",
+        "sha256": "d84879cea00c739c3518f28b94d00050f147391ba127e6bb7c602225179ceeac",
+        "bytes": 5950
+      }
+    },
+    "TX-POWDER2": {
+      "A": {
+        "path": "rooms/TX-POWDER2/board/round-016/candidates/A.md",
+        "sha256": "085d88c1e0f532e00f165cd09345c46b7c3b23c4012c8ffd49f3a1c13d08eaf2",
+        "bytes": 5285
+      },
+      "B": {
+        "path": "rooms/TX-POWDER2/board/round-016/candidates/B.md",
+        "sha256": "a55050f3cbcf8b942f3e3ac044a2858995929f8b9e97a7bbd2fdcb6031a12dde",
+        "bytes": 5119
+      }
+    }
+  },
+  "confidential_mappings": {
+    "PH-POWDER": "rooms/PH-POWDER/board/round-016/_key.json",
+    "TX-POWDER": "rooms/TX-POWDER/board/round-016/_key.json",
+    "TX-POWDER2": "rooms/TX-POWDER2/board/round-016/_key.json"
+  },
+  "shared_maker_research": "research/products/R16_POWDER_THREE_ROOM_FLAT_LANDING_SHOP_AND_COMP_SOURCE_20261106.md",
+  "shared_maker_research_fingerprint": {
+    "sha256": "095a50f2ef6f091ac06cc40bdb7ed331540cf593f2798c1dd1f52532c998a130",
+    "bytes": 3965
+  },
+  "owner_approved": false,
+  "correct_1529_native_model_verified": false,
+  "all_critic_scores": null,
+  "R016_weighted_scoring": null,
+  "predispatch_reviewer_verdict": null,
+  "critic_dispatch": "NOT_DISPATCHED",
+  "original_R014_design_absent": true,
+  "original_R015_four_seat_undispatched": true,
+  "owner_bath3_program_preserved": true,
+  "no_vendor_contact_or_purchase": true,
+  "R014_source_sha256": "946b3eda0a097961e28e76823607fd7d52b82209156e5bb59cdeb9c36450c8ed",
+  "R015_source_sha256": "cf150c8156ab556c0b7dee386f62d8cdda33a4e14ea54019731fc345957dbca8",
+  "last_signed_R21_manifest_sha256": "a212a902fcf61433cbcf165c05b07681abffcb3f70ae9f8deeb8e0756989ad66",
+  "revision": "SAME-R016 independent worker-15 FIX1 maker/rough and deck + FIX2 exact 3 neutral role/temporal phrase removals; six frozen packets resig without changing other three options, shared maker study or private keys; no score or critic dispatch"
+}

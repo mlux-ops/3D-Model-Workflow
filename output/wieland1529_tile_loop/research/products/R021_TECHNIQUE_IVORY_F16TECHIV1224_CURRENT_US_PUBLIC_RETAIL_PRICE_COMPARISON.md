@@ -1,0 +1,10 @@
+# R021 exact product price cross-check — Emser Technique Ivory LEVEL F16TECHIV1224
+
+Public sources checked 2026-11-06 (not Chicago project order quotes):
+
+- Emser exact maker **F16TECHIV1224, Technique Ivory 12x24 Matte**: https://www.emser.com/product/technique-f16techiv1224 . **9 mm**, pressed porcelain, recommended **1/8-in joint**, maker published **DCOF >0.60**, Commercial Floor Wet YES, Residential Floor YES. It is a **LEVEL tile proposal** in R020 Primary and paired with *distinct* F16TECHIV1212MO 2x2 mosaic for sloping LINEAR PAN. Rating is a lower bound, **not invented raw measured AcuTest**.
+- Carpet Exchange exact F16TECHIV1224 https://carpetexchange.com/f16techiv1224.html: posted **$3.59/SF**, **$44.91/carton**, 12.51 SF per carton, **Available for Backorder** (not in-stock). Exact math 44.91/12.51 = **$3.5899/SF** before freight/tax. Site's word 'GRAY' in one metadata field conflicts with official Ivory, so use factory color identity, not retailer descriptive labels.
+- Kennedy Tile exact F16TECHIV1224 https://www.kennedytilellc.com/product/technique-ivory-12x24/ posted **$3.77/SF**, 12.51 SF/box and **five-box minimum on shipped orders**. This is a retailer policy, not every vendor's requirement.
+- Stone & Tile Shoppe exact F16TECHIV1224 https://stoneandtileshoppe.com/products/technique-f16techiv-ivory-matte-porcelain-tile posted **$4.69/SF**, store-claimed 'in stock' and normal delivery 5–10 business days **for that seller only**. Do not interpret site as Chicago local warehouse stock.
+
+**Observed nonlocal U.S. public retail range $3.59–$4.69/SF**, 12.51 SF/carton *per two sources*, subject to purchase-unit/lot/price verification. This does not price a Primary total because original PH 135.6SF and TX 116.1SF gross **combine LEVEL+LINEAR PAN+WC**, and the Technique 12x24 SKU covers LEVEL only. Separate mosaic pan SF and actual maker quote unknown; **no honest full-room delta or 125% gating math can yet be computed**. Never add a new 15% to original gross. Emser local showroom at 880 Devon Ave, Bensenville IL proves location, **not local inventory**. No outreach, quote requests or orders.

@@ -1,0 +1,90 @@
+{
+  "round": 13,
+  "as_of": "2026-11-06",
+  "reviewer": "worker-11",
+  "verdict": "FIX five specific pre-dispatch neutral/source/geometry defects",
+  "submission_sha256_before": "5e2eff14139a90bdfffde8477b6f9ff0bfc18a413f681b3a913d37057612bd3c",
+  "submission_sha256_after": "55836b04247b2286d9f5e4dca2160b05dd567a094d0f391f6aa25c13ad8235d9",
+  "candidate_sha_before_after": {
+    "PH-PRIMARY": {
+      "A": {
+        "before": {
+          "sha256": "6631e896dc49401c9954a5a63f5b14fe2d3e8d6e5a5778ba1d427a679ebe0c8f",
+          "bytes": 6730
+        },
+        "after": {
+          "sha256": "44c74f6d5cbc1dbe4a7f19be61d1489512d5139732ff21f10d8d9f489d9f8ee7",
+          "bytes": 6758
+        }
+      },
+      "B": {
+        "before": {
+          "sha256": "58e201d4e79f3c9ce9df6346a0057c635e8a70b1eb46947202d65896917e44d7",
+          "bytes": 7479
+        },
+        "after": {
+          "sha256": "0d8a0adbc86e3c99b8e3757c7668d6cfcfa9a44c15e2cf33a38d942f52209dd9",
+          "bytes": 7593
+        }
+      }
+    },
+    "PH-BATH2": {
+      "B": {
+        "before": {
+          "sha256": "cda1085c5582cd40791ea0aeff25e2582f865b34be89c9b59f6335927faef0ea",
+          "bytes": 6994
+        },
+        "after": {
+          "sha256": "6f5c91022bb0a81d91fb4acd9d27bc9ff096022876f120ca0ebfff113643fc70",
+          "bytes": 7738
+        }
+      },
+      "C": {
+        "before": {
+          "sha256": "9c8a7524a412c90057d98b0c5b7a2c57342666253138a6423c0a6190b5186ee5",
+          "bytes": 6725
+        },
+        "after": {
+          "sha256": "662fa8d775fe4ed35f2eae0067130929b70ed3ed1dbeb902a18cd4f50452eefa",
+          "bytes": 7324
+        }
+      }
+    },
+    "PH-BATH4": {
+      "A": {
+        "before": {
+          "sha256": "275572baf8a6ea7129fa8c818919188d2b4316e999b055e35fef7e12963ebca9",
+          "bytes": 7266
+        },
+        "after": {
+          "sha256": "af2126d14ec88a91a236a4647de83958400a9e3ef02ee86b4bb261c4ad204fc1",
+          "bytes": 7460
+        }
+      },
+      "C": {
+        "before": {
+          "sha256": "847cbe2586b744af03fda28ba6e3ca1c546253a93ff196837f3d2da79fac02e9",
+          "bytes": 6860
+        },
+        "after": {
+          "sha256": "ad87ff26997f9e7bc5dbe8b66e7d8dc1f3081516da98f0cb59c191fc561cd79d",
+          "bytes": 7006
+        }
+      }
+    }
+  },
+  "replacement_counts": {
+    "PH-PRIMARY/A": 1,
+    "PH-PRIMARY/B": 2,
+    "PH-BATH2/B": 4,
+    "PH-BATH2/C": 2,
+    "PH-BATH4/A": 2,
+    "PH-BATH4/C": 1
+  },
+  "source_private_keys_unchanged": true,
+  "original_scored_round010_round012_untouched": true,
+  "critics_absent": true,
+  "all_critic_scores": null,
+  "owner_approved": false,
+  "procurement_release": false
+}

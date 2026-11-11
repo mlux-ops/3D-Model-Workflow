@@ -1,0 +1,64 @@
+{
+  "as_of": "2026-11-06",
+  "round": 13,
+  "phase": "2-board",
+  "source_submission": "state/ROUND013_SUBMISSION.json",
+  "source_submission_sha256": "55836b04247b2286d9f5e4dca2160b05dd567a094d0f391f6aa25c13ad8235d9",
+  "candidate_files": {
+    "PH-PRIMARY": {
+      "A": {
+        "sha256": "44c74f6d5cbc1dbe4a7f19be61d1489512d5139732ff21f10d8d9f489d9f8ee7",
+        "bytes": 6758
+      },
+      "B": {
+        "sha256": "0d8a0adbc86e3c99b8e3757c7668d6cfcfa9a44c15e2cf33a38d942f52209dd9",
+        "bytes": 7593
+      }
+    },
+    "PH-BATH2": {
+      "B": {
+        "sha256": "6f5c91022bb0a81d91fb4acd9d27bc9ff096022876f120ca0ebfff113643fc70",
+        "bytes": 7738
+      },
+      "C": {
+        "sha256": "662fa8d775fe4ed35f2eae0067130929b70ed3ed1dbeb902a18cd4f50452eefa",
+        "bytes": 7324
+      }
+    },
+    "PH-BATH4": {
+      "A": {
+        "sha256": "af2126d14ec88a91a236a4647de83958400a9e3ef02ee86b4bb261c4ad204fc1",
+        "bytes": 7460
+      },
+      "C": {
+        "sha256": "ad87ff26997f9e7bc5dbe8b66e7d8dc1f3081516da98f0cb59c191fc561cd79d",
+        "bytes": 7006
+      }
+    }
+  },
+  "source_preflight_reviewer": "worker-11",
+  "independent_preflight": "CONTINUE - DONE FOR R013 FOUR-SEAT BLIND CRITIC DISPATCH ONLY, not globally DONE",
+  "original_preflight_reviewer_fix": "state/ROUND013_PREDISPATCH_REVIEWER_FIX1.json",
+  "reviewer_verified_local_links": 32,
+  "critic_worker_seats": {
+    "critic-market": "worker-13",
+    "critic-design": "worker-9",
+    "critic-build": "worker-10",
+    "critic-cost": "worker-12"
+  },
+  "reused_sleeping": [
+    "worker-9",
+    "worker-10",
+    "worker-12"
+  ],
+  "replacement_market_reason": "Original market worker-3 permanently finished; no revival or duplicate reviewer",
+  "four_authentic_seat_dispatch_messages_delivered": true,
+  "source_roles_unavailable_to_critics": true,
+  "original_source_receipt_score_fields_preserved_null": true,
+  "scoring_deferred_to_next_distinct_prime_turn": true,
+  "all_critic_scores": null,
+  "weighted_scoring": null,
+  "owner_approved": false,
+  "procurement_release": false,
+  "revit_1529_verified": false
+}

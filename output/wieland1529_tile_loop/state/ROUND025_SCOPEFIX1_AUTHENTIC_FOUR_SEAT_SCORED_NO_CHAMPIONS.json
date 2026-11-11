@@ -1,0 +1,491 @@
+{
+  "round": 25,
+  "phase": "CORRECTIVE_CLEAN_ROOM_FOUR_SEAT_SCORED_NO_CHAMPIONS_INDEPENDENT_REVIEW_PENDING",
+  "supersedes_first_pass_scope_violation_only": "state/ROUND025_AUTHENTIC_FOUR_SEAT_COLLECTION_SCORED_NO_CHAMPIONS.json",
+  "first_pass_originals_unchanged": true,
+  "precise_fix": "state/ROUND025_POSTSCORE_REVIEWER22_PRECISE_FIX_SOURCE_SCOPE.md",
+  "source_freeze_sha": {
+    "sha256": "1571467e0895b45cae67d73a7cecd4ecde8fd94074d2e5ffc77038e15216eaa6",
+    "bytes": 3165
+  },
+  "original_dispatch": {
+    "sha256": "0ba9cb33da829f43de8dd0faa94f3d39d63e767972278c8c7eb5ada9a303f671",
+    "bytes": 1182
+  },
+  "market_design_replacements": [
+    "worker-28",
+    "worker-29"
+  ],
+  "authentic_original_build_cost": [
+    "worker-25",
+    "worker-26"
+  ],
+  "four_seat_weights": {
+    "market": "0.30",
+    "design": "0.25",
+    "build": "0.25",
+    "cost": "0.20"
+  },
+  "source_scope": "STRICT: corrected MARKET/DESIGN reviewed only same-room geometry/plumbing/current candidate plus permitted global research/inputs/BOARD/OWNER; no other room links",
+  "new_reports": {
+    "PH-PRIMARY": {
+      "market": {
+        "worker": "worker-28",
+        "weight": "0.30",
+        "file": "rooms/PH-PRIMARY/board/round-025/critic-market-scopefix1.md",
+        "sha256": "54e8d98dd92fe37d68b4d7c9e978170b50461d8467da0ccb8fd99fceccd1c389",
+        "bytes": 9204,
+        "candidate_scores": {
+          "A": {
+            "criteria": [
+              4,
+              3,
+              4,
+              4
+            ],
+            "mean": 3.8
+          },
+          "B": {
+            "criteria": [
+              4,
+              4,
+              4,
+              4
+            ],
+            "mean": 4.0
+          }
+        }
+      },
+      "design": {
+        "worker": "worker-29",
+        "weight": "0.25",
+        "file": "rooms/PH-PRIMARY/board/round-025/critic-design-scopefix1.md",
+        "sha256": "639ba264b7a2335d8c4765a92c6ad6d175f5efee643fc6606853db1974845344",
+        "bytes": 8886,
+        "candidate_scores": {
+          "A": {
+            "criteria": [
+              5,
+              4,
+              4,
+              4,
+              3
+            ],
+            "mean": 4.0
+          },
+          "B": {
+            "criteria": [
+              5,
+              5,
+              4,
+              4,
+              4
+            ],
+            "mean": 4.4
+          }
+        }
+      },
+      "build": {
+        "worker": "worker-25",
+        "weight": "0.25",
+        "file": "rooms/PH-PRIMARY/board/round-025/critic-build.md",
+        "sha256": "f5a021d6756f12382b264bc301f04e08b8f46ec3dff26c5d9b26e2e3f908b6c8",
+        "bytes": 8416,
+        "candidate_scores": {
+          "A": {
+            "criteria": [
+              5,
+              5,
+              2,
+              4,
+              3
+            ],
+            "mean": 3.8
+          },
+          "B": {
+            "criteria": [
+              5,
+              5,
+              2,
+              3,
+              3
+            ],
+            "mean": 3.6
+          }
+        }
+      },
+      "cost": {
+        "worker": "worker-26",
+        "weight": "0.20",
+        "file": "rooms/PH-PRIMARY/board/round-025/critic-cost.md",
+        "sha256": "4210ed2e62b4bcb5bd7c74efd4d645da92055c4050c85f48c0c3c67c51aeeae8",
+        "bytes": 9502,
+        "candidate_scores": {
+          "A": {
+            "criteria": [
+              5,
+              5,
+              4,
+              3,
+              2
+            ],
+            "mean": 3.8
+          },
+          "B": {
+            "criteria": [
+              5,
+              4,
+              4,
+              2,
+              2
+            ],
+            "mean": 3.4
+          }
+        }
+      }
+    },
+    "PH-BATH3": {
+      "market": {
+        "worker": "worker-28",
+        "weight": "0.30",
+        "file": "rooms/PH-BATH3/board/round-025/critic-market-scopefix1.md",
+        "sha256": "d91efd2a7285824de4b6f07cee5d7ddac828a35311c73058caae0c00551bd636",
+        "bytes": 9695,
+        "candidate_scores": {
+          "A": {
+            "criteria": [
+              4,
+              4,
+              4,
+              3
+            ],
+            "mean": 3.8
+          },
+          "B": {
+            "criteria": [
+              4,
+              4,
+              3,
+              4
+            ],
+            "mean": 3.8
+          }
+        }
+      },
+      "design": {
+        "worker": "worker-29",
+        "weight": "0.25",
+        "file": "rooms/PH-BATH3/board/round-025/critic-design-scopefix1.md",
+        "sha256": "ccdfca3c3da3e5bf7c18ce1b3bce6fd6d4b023a187f7f432764a587f28fbbcec",
+        "bytes": 9457,
+        "candidate_scores": {
+          "A": {
+            "criteria": [
+              4,
+              4,
+              4,
+              3,
+              4
+            ],
+            "mean": 3.8
+          },
+          "B": {
+            "criteria": [
+              4,
+              3,
+              3,
+              3,
+              4
+            ],
+            "mean": 3.4
+          }
+        }
+      },
+      "build": {
+        "worker": "worker-25",
+        "weight": "0.25",
+        "file": "rooms/PH-BATH3/board/round-025/critic-build.md",
+        "sha256": "00078de8ee38693f683a899dfd2ff3ad9f2ae0d74ac6be076ab681625ea93964",
+        "bytes": 8831,
+        "candidate_scores": {
+          "A": {
+            "criteria": [
+              5,
+              4,
+              2,
+              4,
+              3
+            ],
+            "mean": 3.6
+          },
+          "B": {
+            "criteria": [
+              5,
+              4,
+              2,
+              3,
+              3
+            ],
+            "mean": 3.4
+          }
+        }
+      },
+      "cost": {
+        "worker": "worker-26",
+        "weight": "0.20",
+        "file": "rooms/PH-BATH3/board/round-025/critic-cost.md",
+        "sha256": "8b98d464a379c6c8a1e5d599379c87484b875e39179a46239e25a0ec58157d6b",
+        "bytes": 9559,
+        "candidate_scores": {
+          "A": {
+            "criteria": [
+              5,
+              5,
+              4,
+              2,
+              2
+            ],
+            "mean": 3.6
+          },
+          "B": {
+            "criteria": [
+              5,
+              4,
+              4,
+              2,
+              2
+            ],
+            "mean": 3.4
+          }
+        }
+      }
+    },
+    "PH-BATH4": {
+      "market": {
+        "worker": "worker-28",
+        "weight": "0.30",
+        "file": "rooms/PH-BATH4/board/round-025/critic-market-scopefix1.md",
+        "sha256": "50c7aa5c110b40adfa9e51d190716ffbc249ad596d75c3b159c3bc45676a50b9",
+        "bytes": 9253,
+        "candidate_scores": {
+          "A": {
+            "criteria": [
+              4,
+              4,
+              4,
+              4
+            ],
+            "mean": 4.0
+          },
+          "B": {
+            "criteria": [
+              4,
+              4,
+              3,
+              4
+            ],
+            "mean": 3.8
+          }
+        }
+      },
+      "design": {
+        "worker": "worker-29",
+        "weight": "0.25",
+        "file": "rooms/PH-BATH4/board/round-025/critic-design-scopefix1.md",
+        "sha256": "3f70bc5f7a8e2e553c33b2f37ddbac10f92abb299257ea47f35af13e9ee9ab1f",
+        "bytes": 8822,
+        "candidate_scores": {
+          "A": {
+            "criteria": [
+              5,
+              4,
+              4,
+              4,
+              4
+            ],
+            "mean": 4.2
+          },
+          "B": {
+            "criteria": [
+              4,
+              4,
+              3,
+              3,
+              4
+            ],
+            "mean": 3.6
+          }
+        }
+      },
+      "build": {
+        "worker": "worker-25",
+        "weight": "0.25",
+        "file": "rooms/PH-BATH4/board/round-025/critic-build.md",
+        "sha256": "538c412dad2887577cb95abaf849d8e2a167afa708b38fb251250550e43cafaa",
+        "bytes": 8731,
+        "candidate_scores": {
+          "A": {
+            "criteria": [
+              4,
+              5,
+              2,
+              4,
+              3
+            ],
+            "mean": 3.6
+          },
+          "B": {
+            "criteria": [
+              4,
+              4,
+              2,
+              3,
+              3
+            ],
+            "mean": 3.2
+          }
+        }
+      },
+      "cost": {
+        "worker": "worker-26",
+        "weight": "0.20",
+        "file": "rooms/PH-BATH4/board/round-025/critic-cost.md",
+        "sha256": "e82761bbef8c26c5aa73a3202bc225904d7bcee664ed06fadf0153479d52e605",
+        "bytes": 9447,
+        "candidate_scores": {
+          "A": {
+            "criteria": [
+              5,
+              5,
+              4,
+              3,
+              2
+            ],
+            "mean": 3.8
+          },
+          "B": {
+            "criteria": [
+              5,
+              4,
+              4,
+              2,
+              2
+            ],
+            "mean": 3.4
+          }
+        }
+      }
+    }
+  },
+  "critic_files_count": 12,
+  "criterion_scores_count": 114,
+  "weighted_results": {
+    "PH-PRIMARY": {
+      "A": {
+        "individual": {
+          "market": 3.8,
+          "design": 4.0,
+          "build": 3.8,
+          "cost": 3.8
+        },
+        "minimum": 3.8,
+        "all_seats_at_least_3": true,
+        "raw_weighted": "3.850",
+        "weighted": 3.85,
+        "hard_gates_all_pass": false,
+        "champion_accepted": false
+      },
+      "B": {
+        "individual": {
+          "market": 4.0,
+          "design": 4.4,
+          "build": 3.6,
+          "cost": 3.4
+        },
+        "minimum": 3.4,
+        "all_seats_at_least_3": true,
+        "raw_weighted": "3.880",
+        "weighted": 3.88,
+        "hard_gates_all_pass": false,
+        "champion_accepted": false
+      }
+    },
+    "PH-BATH3": {
+      "A": {
+        "individual": {
+          "market": 3.8,
+          "design": 3.8,
+          "build": 3.6,
+          "cost": 3.6
+        },
+        "minimum": 3.6,
+        "all_seats_at_least_3": true,
+        "raw_weighted": "3.710",
+        "weighted": 3.71,
+        "hard_gates_all_pass": false,
+        "champion_accepted": false
+      },
+      "B": {
+        "individual": {
+          "market": 3.8,
+          "design": 3.4,
+          "build": 3.4,
+          "cost": 3.4
+        },
+        "minimum": 3.4,
+        "all_seats_at_least_3": true,
+        "raw_weighted": "3.520",
+        "weighted": 3.52,
+        "hard_gates_all_pass": false,
+        "champion_accepted": false
+      }
+    },
+    "PH-BATH4": {
+      "A": {
+        "individual": {
+          "market": 4.0,
+          "design": 4.2,
+          "build": 3.6,
+          "cost": 3.8
+        },
+        "minimum": 3.6,
+        "all_seats_at_least_3": true,
+        "raw_weighted": "3.910",
+        "weighted": 3.91,
+        "hard_gates_all_pass": false,
+        "champion_accepted": false
+      },
+      "B": {
+        "individual": {
+          "market": 3.8,
+          "design": 3.6,
+          "build": 3.2,
+          "cost": 3.4
+        },
+        "minimum": 3.2,
+        "all_seats_at_least_3": true,
+        "raw_weighted": "3.520",
+        "weighted": 3.52,
+        "hard_gates_all_pass": false,
+        "champion_accepted": false
+      }
+    }
+  },
+  "native_cut_slivers_and_drain": "UNKNOWN",
+  "delivered_carton_material_cost_and_room_budget": "UNKNOWN",
+  "chicago_exact_lot_stock_ETA": "UNKNOWN",
+  "PH_BATH3_TUB_WALKIN_and_basin": "UNSELECTED",
+  "PH_BATH4_35_vs_27_SF": "UNKNOWN",
+  "published_product_dcof": ">=0.42 on exact F&D LEVEL and applicable selected/conditional PAN tiles; not raw lab number",
+  "no_incumbent_all_three_blocked": true,
+  "plus_0_25": "N/A; no existing same-round incumbent",
+  "revit_identity_1527_equals_1529": true,
+  "original_historic_13_rooms_26_instances_27_rows_usd": 23572.44,
+  "original_waste_once_pct": 15,
+  "r026_phase": "separate frozen future TX source pending Reviewer27 pre-dispatch; no R026 critic score",
+  "champion_changes": false,
+  "owner_approval": false,
+  "procurement_release": false,
+  "independent_post_correction_reviewer": null,
+  "global_DONE": false
+}

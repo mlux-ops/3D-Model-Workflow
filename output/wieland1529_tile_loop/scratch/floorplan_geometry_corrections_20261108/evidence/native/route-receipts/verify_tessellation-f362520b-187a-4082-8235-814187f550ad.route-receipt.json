@@ -1,0 +1,60 @@
+{
+  "operation_id": "f362520b-187a-4082-8235-814187f550ad",
+  "request": {
+    "path": "E:\\Claude\\3D-Model-Workflow\\.claude\\worktrees\\native-revit-workflow-8fafd0\\output\\1527_wieland\\kitchens\\scripts\\bath_audit_f362520b-187a-4082-8235-814187f550ad_verify_tessellation.py",
+    "args": {
+      "element_ids": [
+        15517582,
+        15517868
+      ],
+      "expected_pid": 31808,
+      "session_id": "7f6f24a2-cc0d-4567-8beb-02467aba0ced",
+      "discovery_operation": "8170b477-45b4-45cb-b1bc-635648df82ea",
+      "guard_path": "H:\\Games\\3D Modeling Workflows\\3D Model Workflow\\output\\wieland-floorplan-corrections-20261108\\audit_guard.py",
+      "operation_id": "f362520b-187a-4082-8235-814187f550ad"
+    }
+  },
+  "state": "returned",
+  "response": {
+    "log": [],
+    "ok": true,
+    "result": {
+      "elements": [
+        {
+          "id": 15517582,
+          "native_instance_mesh_bounds": [
+            [
+              -553.3462524414062,
+              240.8654327392578,
+              21.329833984375
+            ],
+            [
+              -552.5991821289062,
+              241.4871368408203,
+              22.034812927246094
+            ]
+          ],
+          "vertices": 4413,
+          "version_guid": "fe48046e-fdf6-42cc-ba84-5e861c3bc8e6"
+        },
+        {
+          "id": 15517868,
+          "native_instance_mesh_bounds": [
+            [
+              -552.8504028320312,
+              240.73072814941406,
+              23.53043556213379
+            ],
+            [
+              -552.0761108398438,
+              241.70822143554688,
+              24.18903350830078
+            ]
+          ],
+          "vertices": 718,
+          "version_guid": "fe48046e-fdf6-42cc-ba84-5e861c3bc8e6"
+        }
+      ]
+    }
+  }
+}

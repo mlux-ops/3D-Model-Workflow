@@ -1,0 +1,3 @@
+# R17 separate public numerical floor product leads — not certified lab
+
+Read research/products/R17_PUBLIC_EXACT_NUMERIC_DCOF_PRODUCT_PAGE_NOT_RAW_LAB_20261106.md and R17_2_EXACT_SKU_PUBLIC_NUMERIC_VS_RAW_LAB_GATES.csv. Merchant exact SKU and public displayed 0.66 are not original individual raw lab ANSI wet DCOF certificates. Both TX tub-room LEVEL floors remain blocked until raw lab method and report, exact project SKU/lot, actual 1529 geometry, vendor-verified carton, installed bid, owner and GC signatures. Frozen R015 neutral packets and entire signed R17 original are untouched. No sale or order.

@@ -1,0 +1,74 @@
+{
+  "round": 27,
+  "phase": "CONTINUE_FOR_R027_BLIND_CRITIC_DISPATCH_ONLY",
+  "receipt_type": "prime_persisted_record_of_authentic_independent_worker_verdict",
+  "reviewer": {
+    "worker_id": "worker-40",
+    "label": "R027 FIX3 final preflight",
+    "run_id": "a4dfd6f1-b4f0-4b66-97e6-e3f5713ba3d0",
+    "exact_verdict": "CONTINUE FOR R027 BLIND CRITIC DISPATCH ONLY",
+    "report_source": "Authentic worker-40 result returned by Chat On Steroids agents status in this prime session; five-section report persisted at state/ROUND027_REVIEWER40_PREDISPATCH_FIVE_SECTION_REPORT.md",
+    "changes_by_reviewer": "NONE; independent read-only review"
+  },
+  "fix3_receipt": {
+    "file": "state/ROUND027_PREDISPATCH_FIX3_FOUR_ROOM_LINKS_REFROZEN.json",
+    "sha256": "8f809519932dc9f8b02ad477f57e14b890d1ac71179adc919f6f5acd358fb73a",
+    "bytes": 5529
+  },
+  "final_neutral_candidates": {
+    "rooms/PH-BATH2/board/round-027/candidates/A.md": {"sha256":"11b2420a3219c836e9dd9d2c391fe8f09f57f30f65fd0495dcb7982071b1fb3c","bytes":3745},
+    "rooms/PH-BATH2/board/round-027/candidates/B.md": {"sha256":"fa9673968f1326a97904931c88ea9df06e9c4871fd32c816dfe4a34f2f230174","bytes":3634},
+    "rooms/TX-BATH2/board/round-027/candidates/A.md": {"sha256":"2586470b37fd00a90dde3680aae343e6638a1b5abba7ae3e515e8fc0bd9d3ed6","bytes":3560},
+    "rooms/TX-BATH2/board/round-027/candidates/B.md": {"sha256":"7cb85ced94f08a23b1d761da4f03c785c84eecc3f1051f322727646ec9db6ec3","bytes":3560},
+    "rooms/TX-BATH4/board/round-027/candidates/A.md": {"sha256":"fbcd86bd213e616607ab90c74ea2aba5626eee8d0ffac3629bfc946a1a455106","bytes":3715},
+    "rooms/TX-BATH4/board/round-027/candidates/B.md": {"sha256":"31684da05eb7b14c430c3560ad4b5d461319fbd67497988b5b5a323dd9fba827","bytes":3730}
+  },
+  "same_room_only_product_research": {
+    "research/products/R027_PH_BATH2_BLIND_PRODUCT_EVIDENCE.md": {"sha256":"05303da7b1df45021aa19027a899b3f16f0f3f53b9fb2a0ffac7cfa94dddb25f","bytes":4318},
+    "research/products/R027_TX_BATH2_BLIND_PRODUCT_EVIDENCE.md": {"sha256":"c4d4bc01ab04cde09c198a69f44874cc10e0104b90c91380425780e52087aac8","bytes":4255},
+    "research/products/R027_TX_BATH4_BLIND_PRODUCT_EVIDENCE.md": {"sha256":"7e82b2a0e6110885b1eae70865c6fb54318f37fc9ab9ae459f7814e957dff2f3","bytes":4329}
+  },
+  "private_key_fingerprints_verified_without_disclosure": {
+    "rooms/PH-BATH2/board/round-027/_key.json": {"sha256":"e1215bc924abde55a4e4fa698c301cfb7b09541db9081768a81092c83e065100","bytes":183},
+    "rooms/TX-BATH2/board/round-027/_key.json": {"sha256":"1487152e8bd43628a9613749225b3cb6dd7401bbd31d08b7712671c30b54f0af","bytes":183},
+    "rooms/TX-BATH4/board/round-027/_key.json": {"sha256":"28b5356b4318205c82cb0cce2ec8f76f214bf6c4c218384c3f03be73776ce11d","bytes":183}
+  },
+  "signed_ancestors_verified": {
+    "state/ROUND027_THREE_DURAVIT_TUB_BATHS_PREPARED_NOT_SUBMITTED.json": {"sha256":"ec25d1a70aaae12b8fe213c4f22da7156571bda5b25e6a5b3218c14ef06ffac7","bytes":3856},
+    "state/ROUND027_TUB_PREPARED_FIX1_SOURCE_SCOPE_SUPERSEDING_ONE_FILE.json": {"sha256":"2ef014c12d43dcf16947f4110ddccb51368e9c8069ef2ab17f664370cca3d945","bytes":1059},
+    "state/ROUND024_AUTHENTIC_FOUR_SEAT_COLLECTION_SCORED_NO_CHAMPIONS.json": {"sha256":"b69c17171493327bc1becfa8b8b81cac82a43ebb2940ce6fe23b7ff701637f43","bytes":9498},
+    "state/ROUND026_AUTHENTIC_FOUR_SEAT_COLLECTION_SCORED_NO_CHAMPIONS.json": {"sha256":"69fb4d28db00850601f5481a5512b016bf7edcd2194d6eefdf46fd6e0650f294","bytes":10973},
+    "state/ROUND025_SCOPEFIX1_INDEPENDENT_POSTSCORE_REVIEWER30_CLEARANCE.json": {"sha256":"cb97b1a042f63b0688760737d47a6765eb4303a5fbde5fccfdbf67e7ffaf363d","bytes":2698}
+  },
+  "predecessors_verified": {
+    "state/ROUND027_FORMAL_THREE_TUB_ROOMS_SOURCE_FROZEN_PREDISPATCH.json": {"sha256":"cbc7d09b68a81840e352209290d8fb1395be8b592c4c02306ab6f848a1044d44","bytes":5783},
+    "state/ROUND027_PREDISPATCH_FIX2_ROOM_ONLY_RESEARCH_REFREEZE.json": {"sha256":"7f561dced2759f41fadd9190260dfccd24758b06d4d762fe545450b9a9f32324","bytes":5092}
+  },
+  "independent_findings": {
+    "all_six_candidate_hash_and_byte_pairs_match": true,
+    "all_three_room_only_research_hash_and_byte_pairs_match": true,
+    "all_three_private_key_fingerprints_match": true,
+    "all_five_signed_ancestor_hash_and_byte_pairs_match": true,
+    "own_room_research_links_only": true,
+    "shared_multi_room_research_leak_remaining": false,
+    "prior_round_outcomes_in_inspected_blind_set": false,
+    "other_room_candidate_mappings_in_inspected_blind_set": false,
+    "three_distinct_wall_niche_level_options_per_room": true,
+    "unqualified_msi_or_porcelanosa_items_promoted": false,
+    "all_three_duravit_tub_programs_have_no_tiled_pan": true,
+    "historical_13_26_27_23572_44_and_15_percent_once_preserved": true
+  },
+  "open_hard_gates": [
+    "native Revit element and field geometry, openings, tub rough dimensions, niche dimensions and focal cuts",
+    "Chicago matching dye lot, cartons, current availability and ETA",
+    "complete delivered cost including freight, tax, grout, trim and setting materials",
+    "any remaining product-specific application and plumbing compatibility holds"
+  ],
+  "dispatch_authorization": "R027 blind four-seat specialist dispatch only for PH-BATH2, TX-BATH2 and TX-BATH4; one independent room-only assignment per seat per room",
+  "critic_dispatch": null,
+  "weighted_scores": null,
+  "champions_changed": false,
+  "owner_approval": false,
+  "procurement_release": false,
+  "global_DONE": false
+}

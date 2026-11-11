@@ -1,0 +1,13 @@
+# TX-BATH3 | R026 tile decision addendum | PROVISIONAL / NOT APPROVED
+
+**Formal status:** BLOCKED, no compliant four-seat champion. Two TX Bath3 physical copies. Historic carried material **$958.88 per copy**; provisional 125%-of-original comparison **$1,198.60 per copy**, NOT an owner-set budget.
+
+**A — emerald scheme:** Elm **Soho Emerald 2x10 Glossy** individually listed Wet Areas WALL (price unquoted); Elm **Tones Sandstone 2x20 Glossy** separately listed Wet Areas NICHE; F&D **Riviera Oat 24x48 matte SKU101487775** bath LEVEL and conditional same-SKU installer-cut POINT PAN, exact published wet DCOF >=0.42, Shower Floors YES. **B — copper scheme:** Elm **Tones Copper 2x20 Glossy** individually Wet Areas WALL-listed + Sandstone NICHE; F&D **Luxe Sand 24x24 matte SKU101317949** bath LEVEL and conditional independently wet-listed same-SKU POINT PAN, published DCOF >=0.42, Shower Floors YES.
+
+**Design/actual plumbing:** A offers jewel-toned glossy green with warm stone, B a quoted warm copper field and ivory floor. Both anchor **Brizo Roccesco Brilliance Black Onyx**. Owner **TUB versus WALK-IN UNSELECTED**. Brizo **BT062415-BNX 4in POINT** is a shower drain only if WALK-IN; tub branch has NO tiled PAN and must not use this shower drain as tub waste. Do not infer TX3's basin unselected from PH3.
+
+**Price versus historical budget:** Elm same-job Sept 4, 2026 Tones Copper/Sandstone **$6.95/SF** each. Soho Emerald exact $/SF **UNKNOWN**, cannot borrow Tones Emerald quote. F&D Luxe public **$3.49/SF**, Riviera **$3.99–$4.39/SF** store dependent, Chicago stock/lot not established. Original 15% source waste already included; only after owner decides program and native measurements can LEVEL net x1.15 and WALK-IN-only PAN net x1.25 replace original gross. Full delivered cost, carton rounding, trim, freight, native cut geometry and Chicago timing UNKNOWN.
+
+**Old Town photos:** OT01 documented dry powder-like white paneled wall/patterned upper wall/dark vanity/contrasting floor supports deliberate material hierarchy only, not maker wet wall, grout size or exact metal. OT01–04 one building; OT05 bathroom imagery not verified; adjacent Lincoln Park/Gold Coast second-tier evidence.
+
+**Owner-only decisions:** Select TUB versus WALK-IN, choose preferred Emerald versus Copper, grout and niche treatment, then verify actual geometry/pan area, full quote and local stock. Sources: research/products/R026_TX_WET_BATH_SOURCED_SELECTION_COMPARISON.md, R026 prepared A/B and 2026-09-04 Elm trade file. **No final champion, independent review, owner approval, sample or purchase.**

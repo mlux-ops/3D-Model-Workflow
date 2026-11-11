@@ -1,0 +1,252 @@
+{
+  "round": 24,
+  "phase": "FOUR_CRITICS_COLLECTED_WEIGHTED_CALCULATED_NO_ACCEPTED_CHAMPION",
+  "source_receipt_sha256": "91426540de3df3163271d6269464bd08fb2e2f431a2dcf038002c5b3604f9fe3",
+  "clearance_sha256": "e2ae1b5af4e7f152908c3909158ea116eb8dc20668aeec855b9a1d5fb6a10feb",
+  "dispatch_sha256": "7ea7c5e3f87795b7103cf0170faf570f6cfc64c4650800085d7ddbbf59a666ff",
+  "critic_authentic_sources_sha256_bytes": {
+    "rooms/PH-BATH2/board/round-024/critic-market.md": {
+      "sha256": "9797f4334e8b63e34597d7d763c28fb429bd733b8f7cfeeef44f53c5ffb7b1c9",
+      "bytes": 9777,
+      "worker": "worker-17"
+    },
+    "rooms/PH-BATH2/board/round-024/critic-design.md": {
+      "sha256": "56d446b9439995aa2d226b1fd9802f8799f1461754eda66cbf2b92397dd7b16f",
+      "bytes": 10204,
+      "worker": "worker-18"
+    },
+    "rooms/PH-BATH2/board/round-024/critic-build.md": {
+      "sha256": "7c5994f8572dce413f781e8d37df40eeb2c50900c5b8203da7a82fff8eab30e8",
+      "bytes": 8537,
+      "worker": "worker-19"
+    },
+    "rooms/PH-BATH2/board/round-024/critic-cost.md": {
+      "sha256": "074709ab314c77b05abe34b2f078fd3126797c1aacbb7880e0871a76175b5ff6",
+      "bytes": 8708,
+      "worker": "worker-20"
+    },
+    "rooms/TX-BATH2/board/round-024/critic-market.md": {
+      "sha256": "ba72fb0d23f890783ef359574d7322861618469b164ec96d2956296a3a2f2f31",
+      "bytes": 10021,
+      "worker": "worker-17"
+    },
+    "rooms/TX-BATH2/board/round-024/critic-design.md": {
+      "sha256": "2aaa314a31dd7a4bc70010c09cce486c09437b2d3928abddbe4823cbc454d3c5",
+      "bytes": 9650,
+      "worker": "worker-18"
+    },
+    "rooms/TX-BATH2/board/round-024/critic-build.md": {
+      "sha256": "5b3344020f3cd28ca1496ae105195e4153cc7819f8e7f5b6bb5b39cc87199aef",
+      "bytes": 8048,
+      "worker": "worker-19"
+    },
+    "rooms/TX-BATH2/board/round-024/critic-cost.md": {
+      "sha256": "a26e7541ef62affc110c971963bbbb8a5c0fe61e0e1a5f8ec1391955d1d83525",
+      "bytes": 8091,
+      "worker": "worker-20"
+    },
+    "rooms/TX-BATH4/board/round-024/critic-market.md": {
+      "sha256": "b9f6773627df4935babbe30e5b2ab5b605a71a47a03195f710c6434afac2ea87",
+      "bytes": 10613,
+      "worker": "worker-17"
+    },
+    "rooms/TX-BATH4/board/round-024/critic-design.md": {
+      "sha256": "25411e7f1d173e1b343f104cdfff80db9cf8f2dd836415c70771d5555c85fd17",
+      "bytes": 10134,
+      "worker": "worker-18"
+    },
+    "rooms/TX-BATH4/board/round-024/critic-build.md": {
+      "sha256": "ab6bda4a2530b4a828028086e3639f970eb5e6e6b2d77722d02cb43d6991db3b",
+      "bytes": 8913,
+      "worker": "worker-19"
+    },
+    "rooms/TX-BATH4/board/round-024/critic-cost.md": {
+      "sha256": "a0efb1b83e4d4f7538fa542665d2b1d2aa0f773eea99be0e83bec65dfba4516d",
+      "bytes": 8520,
+      "worker": "worker-20"
+    }
+  },
+  "weights": {
+    "critic-market": 0.3,
+    "critic-design": 0.25,
+    "critic-build": 0.25,
+    "critic-cost": 0.2
+  },
+  "rooms": {
+    "PH-BATH2": {
+      "seat_scores": {
+        "critic-market": {
+          "A": 4.0,
+          "B": 3.8,
+          "worker": "worker-17"
+        },
+        "critic-design": {
+          "A": 3.6,
+          "B": 3.8,
+          "worker": "worker-18"
+        },
+        "critic-build": {
+          "A": 3.8,
+          "B": 3.2,
+          "worker": "worker-19"
+        },
+        "critic-cost": {
+          "A": 3.4,
+          "B": 2.0,
+          "worker": "worker-20"
+        }
+      },
+      "candidates": {
+        "A": {
+          "weighted_arithmetic": 3.73,
+          "seat_minimum": 3.4,
+          "individual_seat_threshold": "SEAT_MIN_PASS",
+          "documented_wet_wall_and_niche": "PASS",
+          "documented_exact_level_wet_dcof": "PASS_PUBLISHED_GE_0.42",
+          "tiled_pan": "N/A_SELECTED_DURAVIT_TUB",
+          "budget_125_percent_full_delivered": "UNKNOWN",
+          "native_revit_geometry_focal_cuts": "UNKNOWN",
+          "current_us_distribution": "PASS_ACTIVE_PRODUCT_PAGE",
+          "chicago_exact_lot_and_eta": "UNKNOWN",
+          "all_applicable_hard_gates_pass": false,
+          "champion_elected": false,
+          "reason": "Full delivered-material budget and source-native tile geometry remain unknown; minimum-seat rule also fails where indicated."
+        },
+        "B": {
+          "weighted_arithmetic": 3.29,
+          "seat_minimum": 2.0,
+          "individual_seat_threshold": "SEAT_MIN_FAIL",
+          "documented_wet_wall_and_niche": "PASS",
+          "documented_exact_level_wet_dcof": "PASS_PUBLISHED_GE_0.42",
+          "tiled_pan": "N/A_SELECTED_DURAVIT_TUB",
+          "budget_125_percent_full_delivered": "UNKNOWN",
+          "native_revit_geometry_focal_cuts": "UNKNOWN",
+          "current_us_distribution": "PASS_ACTIVE_PRODUCT_PAGE",
+          "chicago_exact_lot_and_eta": "UNKNOWN",
+          "all_applicable_hard_gates_pass": false,
+          "champion_elected": false,
+          "reason": "Full delivered-material budget and source-native tile geometry remain unknown; minimum-seat rule also fails where indicated."
+        }
+      }
+    },
+    "TX-BATH2": {
+      "seat_scores": {
+        "critic-market": {
+          "A": 3.5,
+          "B": 3.8,
+          "worker": "worker-17"
+        },
+        "critic-design": {
+          "A": 3.8,
+          "B": 3.4,
+          "worker": "worker-18"
+        },
+        "critic-build": {
+          "A": 3.8,
+          "B": 3.2,
+          "worker": "worker-19"
+        },
+        "critic-cost": {
+          "A": 3.2,
+          "B": 2.0,
+          "worker": "worker-20"
+        }
+      },
+      "candidates": {
+        "A": {
+          "weighted_arithmetic": 3.59,
+          "seat_minimum": 3.2,
+          "individual_seat_threshold": "SEAT_MIN_PASS",
+          "documented_wet_wall_and_niche": "PASS",
+          "documented_exact_level_wet_dcof": "PASS_PUBLISHED_GE_0.42",
+          "tiled_pan": "N/A_SELECTED_DURAVIT_TUB",
+          "budget_125_percent_full_delivered": "UNKNOWN",
+          "native_revit_geometry_focal_cuts": "UNKNOWN",
+          "current_us_distribution": "PASS_ACTIVE_PRODUCT_PAGE",
+          "chicago_exact_lot_and_eta": "UNKNOWN",
+          "all_applicable_hard_gates_pass": false,
+          "champion_elected": false,
+          "reason": "Full delivered-material budget and source-native tile geometry remain unknown; minimum-seat rule also fails where indicated."
+        },
+        "B": {
+          "weighted_arithmetic": 3.19,
+          "seat_minimum": 2.0,
+          "individual_seat_threshold": "SEAT_MIN_FAIL",
+          "documented_wet_wall_and_niche": "PASS",
+          "documented_exact_level_wet_dcof": "PASS_PUBLISHED_GE_0.42",
+          "tiled_pan": "N/A_SELECTED_DURAVIT_TUB",
+          "budget_125_percent_full_delivered": "UNKNOWN",
+          "native_revit_geometry_focal_cuts": "UNKNOWN",
+          "current_us_distribution": "PASS_ACTIVE_PRODUCT_PAGE",
+          "chicago_exact_lot_and_eta": "UNKNOWN",
+          "all_applicable_hard_gates_pass": false,
+          "champion_elected": false,
+          "reason": "Full delivered-material budget and source-native tile geometry remain unknown; minimum-seat rule also fails where indicated."
+        }
+      }
+    },
+    "TX-BATH4": {
+      "seat_scores": {
+        "critic-market": {
+          "A": 4.0,
+          "B": 3.3,
+          "worker": "worker-17"
+        },
+        "critic-design": {
+          "A": 3.8,
+          "B": 3.4,
+          "worker": "worker-18"
+        },
+        "critic-build": {
+          "A": 3.4,
+          "B": 3.0,
+          "worker": "worker-19"
+        },
+        "critic-cost": {
+          "A": 2.2,
+          "B": 2.0,
+          "worker": "worker-20"
+        }
+      },
+      "candidates": {
+        "A": {
+          "weighted_arithmetic": 3.44,
+          "seat_minimum": 2.2,
+          "individual_seat_threshold": "SEAT_MIN_FAIL",
+          "documented_wet_wall_and_niche": "PASS",
+          "documented_exact_level_wet_dcof": "PASS_PUBLISHED_GE_0.42",
+          "tiled_pan": "N/A_SELECTED_DURAVIT_TUB",
+          "budget_125_percent_full_delivered": "UNKNOWN",
+          "native_revit_geometry_focal_cuts": "UNKNOWN",
+          "current_us_distribution": "PASS_ACTIVE_PRODUCT_PAGE",
+          "chicago_exact_lot_and_eta": "UNKNOWN",
+          "all_applicable_hard_gates_pass": false,
+          "champion_elected": false,
+          "reason": "Full delivered-material budget and source-native tile geometry remain unknown; minimum-seat rule also fails where indicated."
+        },
+        "B": {
+          "weighted_arithmetic": 2.99,
+          "seat_minimum": 2.0,
+          "individual_seat_threshold": "SEAT_MIN_FAIL",
+          "documented_wet_wall_and_niche": "PASS",
+          "documented_exact_level_wet_dcof": "PASS_PUBLISHED_GE_0.42",
+          "tiled_pan": "N/A_SELECTED_DURAVIT_TUB",
+          "budget_125_percent_full_delivered": "UNKNOWN",
+          "native_revit_geometry_focal_cuts": "UNKNOWN",
+          "current_us_distribution": "PASS_ACTIVE_PRODUCT_PAGE",
+          "chicago_exact_lot_and_eta": "UNKNOWN",
+          "all_applicable_hard_gates_pass": false,
+          "champion_elected": false,
+          "reason": "Full delivered-material budget and source-native tile geometry remain unknown; minimum-seat rule also fails where indicated."
+        }
+      }
+    }
+  },
+  "owner_missing_seat_exception_used": false,
+  "champion_changes": false,
+  "original_13room_objective": "OPEN",
+  "underlying_accepted_prior_champions_unchanged": true,
+  "independent_scoring_reviewer": "PENDING",
+  "owner_approval": false,
+  "procurement_release": false
+}

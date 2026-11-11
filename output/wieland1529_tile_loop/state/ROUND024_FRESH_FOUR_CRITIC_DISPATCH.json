@@ -1,0 +1,22 @@
+{
+  "round": 24,
+  "phase": "2-board",
+  "rooms": ["PH-BATH2", "TX-BATH2", "TX-BATH4"],
+  "source_receipt": "state/ROUND024_FROZEN_THREE_DURAVIT_TUB_BLIND_SOURCE.json",
+  "reviewer_clearance": "state/ROUND024_FRESH_INDEPENDENT_REVIEWER_CLEARANCE.json",
+  "reviewer_worker": "worker-16",
+  "reviewer_verdict": "CONTINUE for critic dispatch only",
+  "critic_run_id": "701a35fa-1013-4826-af01-97b74e108b51",
+  "specialists": {
+    "critic-market": {"worker": "worker-17", "weight": 0.30, "status": "invited"},
+    "critic-design": {"worker": "worker-18", "weight": 0.25, "status": "invited"},
+    "critic-build": {"worker": "worker-19", "weight": 0.25, "status": "invited"},
+    "critic-cost": {"worker": "worker-20", "weight": 0.20, "status": "invited"}
+  },
+  "critics_see_private_keys": false,
+  "critic_reports_collected": false,
+  "scores_computed": false,
+  "champion_changes": false,
+  "owner_release": false,
+  "global_done": false
+}

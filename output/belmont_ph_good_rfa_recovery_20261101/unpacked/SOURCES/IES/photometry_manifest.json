@@ -1,0 +1,146 @@
+{
+  "project": "651 Belmont Penthouse GOOD",
+  "retrieved_utc": "2026-10-16T05:55:37.333704+00:00",
+  "scope": "OEM IES archives and exact model/variant source inspection only; no Revit modifications.",
+  "fixtures": [
+    {
+      "sku": "KZC1353667",
+      "manufacturer": "Kuzco",
+      "model": "PD3106-BG",
+      "product_url": "https://kuzcolighting.com/products/bolla-pd3106-kuzco",
+      "source_zip_url": "https://s3.us-west-2.amazonaws.com/catsy.870/IES-PD3106-Bolla.zip",
+      "zip_filename": "KZC1353667_PD3106_Bolla_IES.zip",
+      "selected_archive_member": "IES-PD3106-Bolla/PD3106-BG - Bolla.IES",
+      "output_filename": "PD3106-BG - Bolla.IES",
+      "variant_matching": "Exact model and BG finish; separate BG_OP / BG_SM files excluded.",
+      "zip_path": "E:\\Claude\\3D-Model-Workflow\\output\\belmont_ph_good_rfa_20261016\\sources\\photometry\\KZC1353667_PD3106_Bolla_IES.zip",
+      "zip_bytes": 1635229,
+      "zip_sha256": "539c10e3d20290f298e07ca30a3327dacdc7464fa8f9186ad620cba82054be27",
+      "zip_signature_valid": true,
+      "zip_crc_pass": true,
+      "available_ies_members": [
+        "IES-PD3106-Bolla/PD3106 - Bolla.IES",
+        "IES-PD3106-Bolla/PD3106-BG - Bolla.IES",
+        "IES-PD3106-Bolla/PD3106-BG_OP - Bolla.IES",
+        "IES-PD3106-Bolla/PD3106-BG_SM - Bolla.IES",
+        "IES-PD3106-Bolla/PD3106-BK - Bolla.IES",
+        "IES-PD3106-Bolla/PD3106-BK_OP - Bolla.IES",
+        "IES-PD3106-Bolla/PD3106-BK_SM - Bolla.IES",
+        "IES-PD3106-Bolla/PD3106-OP - Bolla.IES",
+        "IES-PD3106-Bolla/PD3106-SM - Bolla.IES"
+      ],
+      "ies_path": "E:\\Claude\\3D-Model-Workflow\\output\\belmont_ph_good_rfa_20261016\\sources\\photometry\\PD3106-BG - Bolla.IES",
+      "ies_bytes": 39098,
+      "ies_sha256": "9e9f70e2eecc3b1c4130bea2f3fcb3c5a1798fb61363185348b635cd71737ce4",
+      "lm63": {
+        "lm63_version": "IESNA:LM-63-2002",
+        "tilt": "TILT=NONE",
+        "headers": {
+          "TEST": "2809-24",
+          "TESTLAB": "KUZCO LIGHTING",
+          "ISSUEDATE": "2024-11-14 09:53:48",
+          "MANUFAC": "KUZCO LIGHTING",
+          "LUMINAIRE": "PENDANT",
+          "LAMP": "AC LED Module"
+        },
+        "valid": true,
+        "reason": "LM-63 header, TILT, angular grids and candela matrix parsed",
+        "lamps": 1,
+        "lumens_per_lamp": -1.0,
+        "candela_multiplier": 1.0,
+        "vertical_angles": 181,
+        "horizontal_angles": 37,
+        "photometric_type": 1,
+        "units_type": 2,
+        "test_wattage": 2.5,
+        "vertical_extent_degrees": [
+          0.0,
+          180.0
+        ],
+        "horizontal_extent_degrees": [
+          0.0,
+          360.0
+        ],
+        "candela_count": 6697,
+        "max_candela_unscaled": 71.65
+      },
+      "status": "VALID_IES_MODEL_MATCH",
+      "confidence": "high for exact PD3106-BG variant"
+    },
+    {
+      "sku": "MFR201959",
+      "manufacturer": "Modern Forms",
+      "model": "WS-3127-CH",
+      "product_url": "https://modernforms.com/product/vogue/",
+      "source_zip_url": "https://modernforms.com/images/products/IES_FILES/WS-3120_IESF.zip",
+      "zip_filename": "MFR201959_WS-3120_Vogue_family_IES.zip",
+      "selected_archive_member": "WS-3127.IES",
+      "output_filename": "WS-3127.IES",
+      "variant_matching": "Exact 27-inch WS-3127 model; file name does not identify Chrome finish or CCT.",
+      "zip_path": "E:\\Claude\\3D-Model-Workflow\\output\\belmont_ph_good_rfa_20261016\\sources\\photometry\\MFR201959_WS-3120_Vogue_family_IES.zip",
+      "zip_bytes": 29296,
+      "zip_sha256": "6c2fbb98a3aabc2f03486c42ea70058a12ec801dd160edcb1ff09db1d29ab074",
+      "zip_signature_valid": true,
+      "zip_crc_pass": true,
+      "available_ies_members": [
+        "WS-3120.IES",
+        "WS-3127.IES",
+        "WS-3139.IES"
+      ],
+      "ies_path": "E:\\Claude\\3D-Model-Workflow\\output\\belmont_ph_good_rfa_20261016\\sources\\photometry\\WS-3127.IES",
+      "ies_bytes": 30423,
+      "ies_sha256": "6c0a0da084b9fde830f254d8afff7d7b92df1a8e13cca7334e2c4e7e92c4837d",
+      "lm63": {
+        "lm63_version": "IESNA:LM-63-2002",
+        "tilt": "TILT=NONE",
+        "headers": {
+          "TEST": "",
+          "TESTLAB": "WAC Lighting",
+          "ISSUEDATE": "2017-11-09 14:10:40",
+          "MANUFAC": "WAC Lighting",
+          "LUMINAIRE": "LED Wall Sconce",
+          "LAMP": "NA"
+        },
+        "valid": true,
+        "reason": "LM-63 header, TILT, angular grids and candela matrix parsed",
+        "lamps": 1,
+        "lumens_per_lamp": 2424.9,
+        "candela_multiplier": 1.0,
+        "vertical_angles": 181,
+        "horizontal_angles": 17,
+        "photometric_type": 1,
+        "units_type": 1,
+        "test_wattage": 38.9472,
+        "vertical_extent_degrees": [
+          0.0,
+          180.0
+        ],
+        "horizontal_extent_degrees": [
+          0.0,
+          360.0
+        ],
+        "candela_count": 3077,
+        "max_candela_unscaled": 412.25
+      },
+      "status": "VALID_IES_MODEL_MATCH",
+      "confidence": "high for model-specific file; finish/CCT unconfirmed"
+    },
+    {
+      "sku": "HIN990485",
+      "manufacturer": "Hinkley",
+      "model": "53860BK",
+      "product_url": "https://www.hinkley.com/53860bk.html",
+      "spec_url": "https://www.hinkley.com/product_spec_print/download/advancedpdf/product_id/52426/53860BK.pdf",
+      "status": "IES_DIRECT_LINK_UNRESOLVED",
+      "notes": "Official product page is client-rendered. Static HTML and manufacturer-source searches returned no exact downloadable 53860BK IES. Photometry may require a manufacturer inquiry; no other Eos model substituted."
+    },
+    {
+      "sku": "MFR1415595",
+      "manufacturer": "Modern Forms",
+      "model": "FR-W2502-52L-SB/MB",
+      "product_url": "https://modernforms.com/product/smooth/",
+      "status": "IES_NOT_LISTED_NO_EXACT_DOWNLOAD_FOUND",
+      "notes": "Manufacturer Smooth page lists spec sheet, instructions and Revit, without IES. Three inferred FR-W2502 IES ZIP paths returned HTTP 404; no photometric file assigned."
+    }
+  ]
+}

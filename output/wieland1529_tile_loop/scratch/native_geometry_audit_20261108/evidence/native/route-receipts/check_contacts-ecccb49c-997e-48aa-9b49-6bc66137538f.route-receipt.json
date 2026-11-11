@@ -1,0 +1,113 @@
+{
+  "operation_id": "ecccb49c-997e-48aa-9b49-6bc66137538f",
+  "request": {
+    "path": "E:\\Claude\\3D-Model-Workflow\\.claude\\worktrees\\native-revit-workflow-8fafd0\\output\\1527_wieland\\kitchens\\scripts\\bath_audit_ecccb49c-997e-48aa-9b49-6bc66137538f_check_contacts.py",
+    "args": {
+      "pairs": [
+        {
+          "ids": [
+            16428736,
+            16428737
+          ],
+          "rooms": [
+            "PH-WC/314A"
+          ],
+          "kind": "WC / Doors"
+        },
+        {
+          "ids": [
+            15957324,
+            15957325
+          ],
+          "rooms": [
+            "PH-WC/314B"
+          ],
+          "kind": "WC / Doors"
+        },
+        {
+          "ids": [
+            16437628,
+            16437630
+          ],
+          "rooms": [
+            "TX-BATH3/207A"
+          ],
+          "kind": "WC / Doors"
+        },
+        {
+          "ids": [
+            15950765,
+            15950822
+          ],
+          "rooms": [
+            "TX-POWDER/102A"
+          ],
+          "kind": "WC / Doors"
+        }
+      ],
+      "expected_pid": 72064,
+      "session_id": "b29598c2-76f2-40ac-b6a0-b8b3f2455a5e",
+      "discovery_operation": "195855a2-1b57-49ac-ba77-59e1be74f481",
+      "guard_path": "H:\\Games\\3D Modeling Workflows\\3D Model Workflow\\output\\wieland1529-native-room-audit-20261108\\audit_guard.py",
+      "operation_id": "ecccb49c-997e-48aa-9b49-6bc66137538f"
+    }
+  },
+  "state": "returned",
+  "response": {
+    "ok": true,
+    "log": [],
+    "result": {
+      "read_only": true,
+      "pairs": [
+        {
+          "boolean_errors": [],
+          "rooms": [
+            "PH-WC/314A"
+          ],
+          "intersection_cf": 0.0,
+          "ids": [
+            16428736,
+            16428737
+          ],
+          "kind": "WC / Doors"
+        },
+        {
+          "boolean_errors": [],
+          "rooms": [
+            "PH-WC/314B"
+          ],
+          "intersection_cf": 0.0,
+          "ids": [
+            15957324,
+            15957325
+          ],
+          "kind": "WC / Doors"
+        },
+        {
+          "boolean_errors": [],
+          "rooms": [
+            "TX-BATH3/207A"
+          ],
+          "intersection_cf": 0.0,
+          "ids": [
+            16437628,
+            16437630
+          ],
+          "kind": "WC / Doors"
+        },
+        {
+          "boolean_errors": [],
+          "rooms": [
+            "TX-POWDER/102A"
+          ],
+          "intersection_cf": 0.0,
+          "ids": [
+            15950765,
+            15950822
+          ],
+          "kind": "WC / Doors"
+        }
+      ]
+    }
+  }
+}

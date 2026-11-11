@@ -1,0 +1,6 @@
+{
+  "source_builder": "E:\\Claude\\3D-Model-Workflow\\output\\belmont_ph_good_rfa_20261016\\scripts\\build_quo_858_59_r02.py", 
+  "target": "E:\\Claude\\3D-Model-Workflow\\output\\belmont_ph_good_rfa_20261016\\candidates\\Quorum_Veno_858-59_R2025_R02_UNAPPROVED.rfa", 
+  "status": "FAIL", 
+  "error": "Traceback (most recent call last):\n  File \"E:\\Claude\\3D-Model-Workflow\\output\\belmont_ph_good_rfa_20261016\\runner\\build_quo_r02_native.py\", line 18, in <module>\n    execfile(SCRIPT,scope)\n  File \"E:\\Claude\\3D-Model-Workflow\\output\\belmont_ph_good_rfa_20261016\\scripts\\build_quo_858_59_r02.py\", line 71, in <module>\n    inner_rev=DB.CurveLoop.CreateViaReversed(inner)\nAttributeError: 'type' object has no attribute 'CreateViaReversed'\n"
+}

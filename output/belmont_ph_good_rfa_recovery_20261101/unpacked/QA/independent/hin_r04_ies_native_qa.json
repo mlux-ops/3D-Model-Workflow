@@ -1,0 +1,25 @@
+{
+  "ies_lab": {
+    "watts": 18.449999999999999, 
+    "date": "2024-08-15", 
+    "lumens": 1109
+  }, 
+  "source_preserved": true, 
+  "status": "BLOCKED_OR_ERROR", 
+  "ies_sha256": "b8f4e409bd01f235c2a6a17024825aca667dc187dd95ceb84a5adec90c50e8b9", 
+  "ies": "E:\\Claude\\3D-Model-Workflow\\output\\belmont_ph_good_rfa_20261016\\sources\\photometry\\HIN53860BK_53860_official.ies", 
+  "error": "Traceback (most recent call last):\n  File \"E:\\Claude\\3D-Model-Workflow\\output\\belmont_ph_good_rfa_20261016\\scripts\\bind_hin_53860bk_ies_r04.py\", line 82, in main\n    fm,lt,dist,param=light_state(doc)\n  File \"E:\\Claude\\3D-Model-Workflow\\output\\belmont_ph_good_rfa_20261016\\scripts\\bind_hin_53860bk_ies_r04.py\", line 43, in light_state\n    family=DB.Lighting.LightFamily.GetLightFamily(doc)\nException: The Document is the argument that is being validated The document is not valid because it is not a light family document.\r\nParameter name: document\n", 
+  "catalog": {
+    "watts": 19, 
+    "voltage_v": 120, 
+    "cri": 93, 
+    "lamp_name": "5386XD", 
+    "lumens": 1000, 
+    "cct_k": 3000
+  }, 
+  "source_sha256": "f98a11733c8896549a8a16e956001379df3eb16f76f59acbc2e7197c9713ea70", 
+  "candidate": "E:\\Claude\\3D-Model-Workflow\\output\\belmont_ph_good_rfa_20261016\\candidates\\Hinkley_Eos_53860BK_R2025_R04_IES_UNAPPROVED.rfa", 
+  "official_ies_url": "https://hinkleymedia.s3.amazonaws.com/Products/files/ies/53860.ies", 
+  "source_hash_after": "f98a11733c8896549a8a16e956001379df3eb16f76f59acbc2e7197c9713ea70", 
+  "source_rfa": "E:\\Claude\\3D-Model-Workflow\\output\\belmont_ph_good_rfa_20261016\\candidates\\Hinkley_Eos_53860BK_R2025_R03_UNAPPROVED.rfa"
+}

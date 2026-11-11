@@ -1,0 +1,31 @@
+{
+  "as_of": "2026-11-06",
+  "round": 12,
+  "independent_reviewer": "worker-11",
+  "verdict_addressed": "FIX scorer syntax and obsolete three TX open_gaps source/revised attribution",
+  "scorer_script_sha256_before": "0c44336b30e5ad64d92fdd731e36253027229123665bacaf8d5dee0f2367a8c9e",
+  "scorer_script_sha256_after": "ec75c6d2b77761c65be17d9c7739ae77a473ceb5392667e4ec746bdd06ebadd3",
+  "scorer_ast_parse_pass": true,
+  "formal_scoring_rerun": false,
+  "rooms_sha256_before": "61720b25b05bb3a91ff8eb5af98729d540b7a718031167e435e6f375c1218606",
+  "rooms_sha256_after": "05c4491f05cc2c99155cd5ed7140fbfb54069451ef45dd8fcf71aba6d46d3303",
+  "only_room_open_gaps_entries_replaced": true,
+  "rooms": [
+    "TX-BATH2",
+    "TX-BATH4",
+    "TX-PRIMARY"
+  ],
+  "two_entries_replaced_per_room": true,
+  "immutable_artifact_hashes": {
+    "state/ROUND012_SCORING.json": "4821b98e4958852ec21263a33437ecf5d149fa9f2f5fd0784803253f2cb235fe",
+    "state/ROUND012_SUBMISSION.json": "052fbb09f5802bc08cff1818afdc8c717170182952bb3faea7162e0a1abc1c2e",
+    "state/ROUND012_CRITIC_DISPATCH.json": "243dce4bdc80e40c78faaeaf1691f2eab1ee50eb457f76ad49638cc9c74fafff",
+    "state/ROUND012_CRITIC_COLLECTION.json": "a7ff351e3751191209132dbea58d706726871a6afe5b85e735111969e73bb1bb",
+    "deliverables/integrated-r12/MANIFEST.json": "fca5a12778eb5c7d807a17d70b8ddec16b12dd4e2afa1ca0c9e0eefda579a277",
+    "deliverables/integrated-r13/MANIFEST.json": "b6f30e50eeeba2439186f85f44502b227faa044c13e4929acf1ae2d8bc60f3c5"
+  },
+  "original_candidate_or_critic_modified": false,
+  "scores_and_statuses_unchanged": true,
+  "owner_approved": false,
+  "procurement_release": false
+}

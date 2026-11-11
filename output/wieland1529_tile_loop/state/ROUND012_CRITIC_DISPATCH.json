@@ -1,0 +1,52 @@
+{
+  "round": 12,
+  "phase": "2-board",
+  "as_of": "2026-11-06",
+  "source_submission": "state/ROUND012_SUBMISSION.json",
+  "source_submission_sha256": "052fbb09f5802bc08cff1818afdc8c717170182952bb3faea7162e0a1abc1c2e",
+  "candidate_files": {
+    "TX-PRIMARY": {
+      "B": {
+        "sha256": "bc576a98474fc33d2cf0f5b4cc04a85ee64fbd88722fe2560bf01e41d5132a32",
+        "bytes": 7388
+      },
+      "C": {
+        "sha256": "f7e66b042e91204c29dd1639ecee72da655f8ea2537ee0da93c8e9c1caca6bdc",
+        "bytes": 7582
+      }
+    },
+    "TX-BATH2": {
+      "A": {
+        "sha256": "daceb7ea98df8996584f9f778c6034594f91e59d2db651d961def999e047c622",
+        "bytes": 7419
+      },
+      "C": {
+        "sha256": "b3d5c4f6c7b2c114f68b545b3112c60eef02ca9331d42f2eaf8fcf7c48ae71e4",
+        "bytes": 7063
+      }
+    },
+    "TX-BATH4": {
+      "A": {
+        "sha256": "ce0c1bf2efa3261066358f1a27d38ae1f8a4326d3bf5a5d951f9cef08be2586a",
+        "bytes": 7150
+      },
+      "B": {
+        "sha256": "0f551b07a69cee42a597b86aa9707a2289ee100a6d761d60f2d956844c378113",
+        "bytes": 7417
+      }
+    }
+  },
+  "independent_reviewer": "worker-11",
+  "preflight": "DONE FOR R012 FOUR-SEAT DISPATCH",
+  "critic_worker_seats": {
+    "critic-market": "worker-3",
+    "critic-design": "worker-9",
+    "critic-build": "worker-10",
+    "critic-cost": "worker-12"
+  },
+  "source_roles_unavailable_to_critics": true,
+  "scoring_deferred_to_next_distinct_turn": true,
+  "all_critic_scores": null,
+  "owner_approved": false,
+  "procurement_release": false
+}

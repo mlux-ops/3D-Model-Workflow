@@ -1,0 +1,43 @@
+# R033 — independent blind DESIGN critique — TX-WC
+
+**Seat:** DESIGN (weight 0.25); five independent evidence-based criteria scored 1–5 for each anonymous current-round A/B. Values are arithmetic DESIGN seat means, **not global board weights or acceptance**. **Date:** 2026-11-07.
+
+## Identifiers and inherited-scope controls
+**Scope:** two proposed dry toilet-room floors; [`geometry.json`](../../../geometry.json) identifies **203A / 203B**, with **203A unplaced** and 14 SF an earlier unverified **203B** estimate. **R033 A/B incorrectly label physical copies 202A/202B** (these refer to the Primary suite, not the WC room IDs); neither 203A footprint nor its entry is verified. Own [`plumbing.json`](../../../plumbing.json) lists no standalone WC fixtures, so do not assign BNX metal to a WC toilet. Parent **TX-PRIMARY** has BNX **48-in LINEAR solid-grate** shower drain and no niche; its independently tiled wet shower CEILING is unqualified. WC is LEVEL only, not a shower, pan, niche, wall or ceiling.
+
+**Commercial / scope note:** Both proposed products are currently displayed on their individual Floor & Decor pages at **Kirkwood (Atlanta, Georgia)** retail **2026-11-07**—these figures are **not Chicago stock, matching-lot confirmation, project trade quote, ETA or landed price**. [Trade quote input](../../../../inputs/TRADE_QUOTES.md) contains no determinable 1529 Wieland F&D per-SF trade quote. The source's original **15% waste was included ONCE in the parent Primary floor-pool takeoff**; **WC incremental quantity/purchase/cost is zero as an independent order line**. The inherited WC tile must match *the ultimately chosen Primary LEVEL exact SKU, shade, lot and grout*; do not separately pick or purchase a WC tile.
+
+## Candidate A
+**Scheme (conditional only):** Floor & Decor **Riviera Oat Matte Porcelain 24×48** (actual 23.58×47.28 in), **SKU 101487775**, 8mm rectified; **$3.99/SF** 2026-11-07 Kirkwood GA selected-store retail. [Exact official product page](https://www.flooranddecor.com/porcelain-tile/riviera-oat-matte-porcelain-tile-101487775.html).
+
+| Independent DESIGN criterion | Rating / 5 | Evidence and reason |
+|---|---:|---|
+| Exact parent LEVEL inheritance and coherence | 4 | Conditional parent-line unity: A.md line 7 requires the **exact Riviera Oat 101487775** shade/lot chosen by **TX-PRIMARY** for LEVEL; the parent bath's own CEILING remains on technical hold so this cannot be declared an adopted standalone WC selection (A.md lines 7,10,14). |
+| Grout, threshold and door-axis continuity | 3 | Maker permits **1/16, 1/8 or 3/16-in joints**. A clean warm beige matte continuation is plausible, but door threshold, adjoining room axes and the **203A unplaced** geometry mean the **47.28-in tile** joint continuity is unverified ([exact Riviera Oat](https://www.flooranddecor.com/porcelain-tile/riviera-oat-matte-porcelain-tile-101487775.html), [WC geometry](../../../geometry.json)). |
+| Large-format calm material and WC scale | 4 | Large-format **warm travertine-look 24×48 matte** tile could read as one calm material between the Primary and a compact dry toilet room; the prior **14 SF applies only to 203B**, so layout quality for both copies cannot be certified ([official Riviera](https://www.flooranddecor.com/porcelain-tile/riviera-oat-matte-porcelain-tile-101487775.html), [own geometry](../../../geometry.json)). |
+| Plumbing/BNX context and color harmony | 4 | Riviera's muted warm-beige field gives visual counterpoint to the **adjacent TX-PRIMARY's BNX dark hardware** without inventing other parent wall finishes. No WC-only fixture metal is listed in [own plumbing.json](../../../plumbing.json), and no BNX shower drain crosses into the WC (A.md lines 3,14). |
+| No independent WC accent or floor order | 5 | A.md lines 3,8,10 honor a single LEVEL surface inherited from the parent floor pool, with **no separate SKU, order, SF allocation, pan or added waste**. Designer intent remains a parent grout and lot continuation only. |
+
+**seat_mean:** **4.0/5**, exact arithmetic **(4 + 3 + 4 + 4 + 5) / 5 = 4.0**.
+**top_fix:** Resolve 203A's actual placement and correct the 202A/202B candidate labels, then draw the **same parent Riviera Oat joint axis across the verified WC thresholds** before confirming continuity.
+**gate_flags:** **No demonstrated exact-tile hard failure:** F&D **Riviera Oat 101487775** official page separately lists **Bathroom Floor YES**, **Shower Floor YES**, published wet **DCOF ≥0.42** and current U.S. product offering. WC is dry LEVEL; parent LINEAR PAN (not a WC surface) needs separate technical layout. No owner tile veto or confirmed HIGH BNX clash. **Dependent/not released:** TX-PRIMARY parent LEVEL uncommitted and independent wet ceiling technical HOLD; 203A WC placement unresolved, candidate 202A/B labels conflict with own 203A/B geometry; true door/joint cuts, Chicago lot, owner budget and delivered rate unknown. Historical 15% waste counted only in parent floor, no new WC cost.
+**confidence:** low
+
+## Candidate B
+**Scheme (conditional only):** Floor & Decor **Perimeter Gray Matte Porcelain 24×48** (nominal 24×48), **SKU 101239218**, 9mm rectified; **$3.99/SF** 2026-11-07 Kirkwood GA selected-store retail. [Exact official product page](https://www.flooranddecor.com/porcelain-tile/perimeter-gray-matte-porcelain-tile-101239218.html).
+
+| Independent DESIGN criterion | Rating / 5 | Evidence and reason |
+|---|---:|---|
+| Exact parent LEVEL inheritance and coherence | 4 | Parent dependency is explicit in B.md lines 7,10,14: WC can carry gray Perimeter **only when the same exact 101239218 SKU/shade/lot becomes TX-PRIMARY LEVEL**, and neither the parent selection nor shower ceiling has been finalized. |
+| Grout, threshold and door-axis continuity | 3 | Matte rectified Perimeter accommodates maker suggested **1/16, 1/8 or 3/16** grout, but no verified 203A door or threshold is available to extend a 24×48 grid across the suite; no physically demonstrated match ([Perimeter exact page](https://www.flooranddecor.com/porcelain-tile/perimeter-gray-matte-porcelain-tile-101239218.html), [own WC geometry](../../../geometry.json)). |
+| Large-format calm material and WC scale | 3 | Large-format concrete gray could create a quiet floor, yet a 48-in unit is hard to visually judge in the 14-SF *203B-only* estimate and the entirely unplaced **203A**; no valid room-wide full-tile/edge-cut layout is available ([Perimeter maker page](https://www.flooranddecor.com/porcelain-tile/perimeter-gray-matte-porcelain-tile-101239218.html), own geometry.json). |
+| Plumbing/BNX context and color harmony | 4 | Cool gray matte beside **parent Brizo BNX dark shower controls** can be restrained rather than clashing, but has less warm visual relief and the **WC plumbing file contains no fixture finish**; BNX drain is parent-only (B.md line 14; [own plumbing](../../../plumbing.json)). |
+| No independent WC accent or floor order | 5 | B.md lines 3,8,10 make Perimeter only a potential **inherited** parent material; no WC-specific accent, added tile quantity, tile order, wall/pan/drain or ceiling is allowed. This correctly limits design scope. |
+
+**seat_mean:** **3.8/5**, exact arithmetic **(4 + 3 + 3 + 4 + 5) / 5 = 3.8**.
+**top_fix:** Verify 203A placement and 203B threshold, correct the misleading 202A/B copy identifiers, and establish a **parent Perimeter Gray 24×48 joint/doorway layout** only after the TX-PRIMARY LEVEL is chosen.
+**gate_flags:** **No demonstrated hard tile failure:** exact F&D **Perimeter Gray SKU 101239218** official page publishes **Bathroom Floor YES**, separate **Shower Floor YES**, and wet **DCOF ≥0.42**; no documented current discontinued status, owner tile veto or HIGH BNX clash. The WC has **no shower/PAN** even though product shower-floor qualification is independently listed. **Parent TX-PRIMARY wet ceiling and LEVEL remain unresolved**, so WC inheritance is conditional, not approved/ordered. 203A unplaced and 202A/B copy-label error, doorway/sliver, GA-vs-Chicago lots, owner budget and all-in costs OPEN.
+**confidence:** low
+
+**Strict blind evidence boundary:** Read only this WC's [current A](candidates/A.md) and [current B](candidates/B.md), [own geometry](../../../geometry.json), [own plumbing](../../../plumbing.json), four governance files in required order, and the exact official Floor & Decor product listings; no parent-room candidate file, earlier score, champion/incumbent map, historical room notes, state ROOMS/LEDGER, keys or peer critique consulted. An independent WC floor choice cannot override the future parent Primary whole-room tile decision.
+

@@ -1,0 +1,7 @@
+# ELM Cortar Clay Ribbed 24×48 Relief — explicit TX wet hold
+
+Manufacturer's product page: https://www.elmsurfaces.com/product/clay-ribbed-cortar (checked 2026-11-06). **Nominal 24×48 in, Relief, 9mm**; applications list **Walls** and **Back Splashes** only; **Wet Areas NOT listed**. It is not approved for the primary shower wall/ceiling by a product-specific manufacturer document. **Hard gate: FAIL** if introduced on any wet shower wall until an explicit manufacturer approval covers this exact color/finish/application. The flat Cortar Clay Wet Areas listing does not transfer to Ribbed.
+
+**Historical reference price:** ELM 2026-09-03 quote records **$7.37/SF for Clay Ribbed** in TX Primary wall row `8102533659164548`, with $8.14/SF for flat Soft. No **measured relief-panel area** exists: quantity `null`; no assumed Ribbed savings or order line. The same **134.4 SF** wall+ceiling gross envelope must be subdivided if an approval is ever granted; an accent cannot increase the total by adding duplicate SF. Historic 10–12 week overseas / 50% deposit / 300 SF minimum applies to Cortar project quote, **current delivery `null`**.
+
+**Design disposition for Round003:** remove Ribbed entirely from wet walls, replace its notional share with wet-listed flat Clay. **Grout/profile/relief-lippage checks** remain non-applicable while Ribbed is excluded; any future dry-wall proposal requires real wall location and owner review.

@@ -1,0 +1,50 @@
+﻿# -*- coding: utf-8 -*-
+import os,json,traceback,hashlib
+import clr
+clr.AddReference('RevitAPI')
+from Autodesk.Revit import DB
+ROOT=r'E:\Claude\3D-Model-Workflow\output\belmont_ph_good_rfa_recovery_20261101'
+SRC=os.path.join(ROOT,'bolla_oem_clean','extracted','PD3106 - Bolla.rfa')
+OUT=os.path.join(ROOT,'bolla_oem_clean\\bolla_official_project_placement.json')
+res={'source':SRC,'status':'STARTED'}
+app=__revit__.Application
+project=None;family_doc=None;transaction=None
+try:
+    project=app.NewProjectDocument(DB.UnitSystem.Metric)
+    family_doc=app.OpenDocumentFile(SRC)
+    loaded=family_doc.LoadFamily(project)
+    if loaded is None:raise RuntimeError('FamilyDocument.LoadFamily returned None')
+    symbols=[project.GetElement(x) for x in loaded.GetFamilySymbolIds()]
+    if len(symbols)!=1:raise RuntimeError('Expected one type, got '+str(len(symbols)))
+    sym=symbols[0]
+    levels=list(DB.FilteredElementCollector(project).OfClass(DB.Level))
+    if not levels:raise RuntimeError('No level in disposable project')
+    lev=levels[0]
+    transaction=DB.Transaction(project,'Disposable Bolla placement test');transaction.Start()
+    if not sym.IsActive:sym.Activate()
+    project.Regenerate()
+    inst=project.Create.NewFamilyInstance(DB.XYZ(0,0,8),sym,lev,DB.Structure.StructuralType.NonStructural)
+    project.Regenerate()
+    res['instance_id']=int(inst.Id.IntegerValue)
+    res['type']=str(DB.Element.Name.GetValue(sym))
+    res['family']=str(loaded.Name)
+    res['commit_status']=str(transaction.Commit());transaction=None
+    persisted=project.GetElement(DB.ElementId(res['instance_id']))
+    res['persisted_instance']=bool(persisted)
+    if persisted:
+        bbox=persisted.get_BoundingBox(None)
+        res['bounding_box']=[float(bbox.Min.X),float(bbox.Min.Y),float(bbox.Min.Z),float(bbox.Max.X),float(bbox.Max.Y),float(bbox.Max.Z)] if bbox else None
+        res['placed_instance_category']=str(persisted.Category.Name)
+    res['warnings']=[w.GetDescriptionText() for w in project.GetWarnings()]
+    res['status']='PLACED_PASS' if res['persisted_instance'] and not res['warnings'] else 'PLACEMENT_NOT_PERSISTED'
+except Exception as e:
+    res['status']='PLACEMENT_FAILED';res['error']=str(e);res['traceback']=traceback.format_exc()[-4000:]
+finally:
+    if transaction:
+        try:transaction.RollBack()
+        except:pass
+    if family_doc:family_doc.Close(False)
+    if project:project.Close(False)
+    with open(OUT,'w') as f:f.write(json.dumps(res,indent=2))
+print('BOLLA_PLACEMENT',res['status'],res.get('error',''))
+

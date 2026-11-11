@@ -1,0 +1,47 @@
+# R011 independent interior DESIGN critique — PH-BATH3
+
+**Blind scope:** Candidate letters A and B only. **Seat:** interior design (board weight 0.25, applied by prime only). Five integer criteria on a 1–5 scale; seat score is their unweighted arithmetic mean, rounded to one decimal. The two options are concepts, not owner approvals or final installation specifications. No role mapping, prior round result, or other critic is used.
+
+**Room facts and evidentiary boundary:** The [room plumbing schedule](../../plumbing.json) identifies Hansgrohe Chrome shower trim/head, **Delta DT062412 Chrome 4-in square point drain** and an **owner-unselected basin** (source row 2580485884149636). The [geometry packet](../../geometry.json) describes an assumed 5.00-ft tub-back wall and 2.33-ft returns, 7.75-ft nominal tiled height and 35-SF historical floor area. Its live 1529 Revit identity, opening/niche dimensions, drain and branch are **not verified**. Neither a tub nor a walk-in shower is selected by the owner; the existing point drain is not a tub waste/overflow. PH target sale price is $2.8M per [owner feedback](../../../../state/OWNER_FEEDBACK.md). [Market comps OT01–OT05 and LP01–LP03](../../../../research/comps/COMPS.md) describe premium bath programs, but establish **no photographed tile palette**. Product-specific maker evidence: [ELM Sandstone](https://www.elmsurfaces.com/product/sandstone-tones) explicitly includes Wet Areas; [ELM Opal](https://www.elmsurfaces.com/product/opal-tones) individually lists Walls and Back Splashes **without Wet Areas**; the general [Tones collection](https://www.elmsurfaces.com/product-collection/tones) cannot grant Opal individual approval. [Glazzio HNC6615](https://glazziosurfaces.com/products/harmonic-rondo-12x24-matte-porcelain-tile) and [HNC6715](https://glazziosurfaces.com/products/harmonic-rondo-2x2-matte-hex-mosaic) list wet DCOF **>0.50** as a *lower bound*, not a released exact raw SKU lab value; the [local test register](../../../../research/products/R10_EXACT_SKU_WET_USAGE_AND_CARTON_DECISION_REGISTER.md) retains the stricter evidence gate as FAIL.
+
+## Candidate A
+
+**Scheme:** Individually Wet Areas-listed **ELM Tones Sandstone glossy 2x20** on the wet field and existing niche allowance, horizontally centered and carried through returns; sampled warm bone grout against Chrome shower trim. Proposed **Glazzio HNC6615 12x24** on level bath floor, with **HNC6715 2x2 hex** as a conditional point-drain pan *only after an owner-selected walk-in*. See [A specification](candidates/A.md), [Sandstone product audit](../../../../research/products/elm-tones-sandstone-2x20.md) and the two official Glazzio pages above.
+
+| Distinct DESIGN criterion | 1–5 | Evidence and design judgment |
+|---|---:|---|
+| Selected plumbing finish and form | **4** | Warm Sandstone/honed-neutral floor idea is compatible in palette with [Hansgrohe Chrome and Delta Chrome square drain](../../plumbing.json); the tile-in square point-drain form is acknowledged. The sink/basin remains unselected, preventing complete vanity/finish coordination. |
+| Unit cohesion, buyer band and room scale | **4** | One Sandstone wet field and a same-material niche avoid an additional accent in a historical **35-SF** room; 2x20 suits the reported **60-in W1 / 27.96-in returns**. At [PH $2.8M; comps OT01–OT05](../../../../research/comps/COMPS.md), measured, deliberate wet walls are appropriate, but no verified comp photo proves the specific hue or format is preferred. |
+| Lighting and color behavior | **4** | Glossy light Sandstone with a proposed warm-bone joint could brighten a small bath while preserving Chrome clarity; [individual ELM product](https://www.elmsurfaces.com/product/sandstone-tones) confirms the glossy finish. No measured daylight, CRI, vanity/shower luminaires or mounted samples exist, so reflections and warmth remain judgments. |
+| Grout, joints, cuts and niche detail | **3** | [A elevation study](candidates/A.md) balances nominal horizontal edges at **10.00 in W1** and **3.98 in on W2/W3**, and calls for continuing courses and a low-key same-material inset. Actual tile caliber/joints, niche back/sill/returns, fixture penetrations, sill fall and trim color are not dimensioned in [geometry.json](../../geometry.json). |
+| Drain, wet transition and tub/walk-in buildability | **2** | A contains distinct level [HNC6615](https://glazziosurfaces.com/products/harmonic-rondo-12x24-matte-porcelain-tile) and conditional pan [HNC6715](https://glazziosurfaces.com/products/harmonic-rondo-2x2-matte-hex-mosaic), a more credible square-drain slope concept than one large-format pan. But tub and walk-in branches are both unselected; drain center, shower footprint, pan slope, membrane, threshold and **exact raw wet DCOF** are unverified ([candidate A](candidates/A.md); [room geometry](../../geometry.json)). |
+
+**Arithmetic:** (4 + 4 + 4 + 3 + 2) / 5 = **3.4 / 5.0**.
+
+**top_fix:** Obtain the owner’s **tub-versus-walk-in decision**, then issue verified 1529 elevations/fixture and drain positions with a dimensioned Sandstone wall/niche layout and branch-specific level/pan assembly; obtain actual SKU wet-floor test evidence before release.
+
+**gate_flags:** `WET_WALL_PASS_SANDSTONE` (individual ELM Wet Areas); **`WET_FLOOR_RAW_DCOF_FAIL`** (maker HNC6615/HNC6715 publishes >0.50 threshold, not exact raw test; pan only relevant if walk-in); `OWNER_TUB_OR_WALKIN_UNSELECTED_HOLD`; `POINT_DRAIN_VS_TUB_DOCUMENT_CONFLICT_HOLD`; `1529_REVIT_ID_AND_CUTS_UNVERIFIED_HOLD`; `PH_BASIN_UNSELECTED_HOLD`. No HIGH-severity plumbing metal/form clash is established. A pending owner budget cap is unknown, so no invented budget gate.
+
+**confidence:** **medium** for color/form assessment, **low** for execution readiness due to absent 1529-verified coordinates, natural/artificial lighting evidence and program selection.
+
+## Candidate B
+
+**Scheme:** ELM Tones **Opal glossy 2x20** horizontally stacked on the wet field with a contrasting Wet Areas-listed **Sandstone niche**, Cortar Bone 12x24 Soft on the level floor, and **no selected small-format shower-pan SKU**. See [B specification](candidates/B.md), individual [Opal](https://www.elmsurfaces.com/product/opal-tones) and [Sandstone](https://www.elmsurfaces.com/product/sandstone-tones) maker pages.
+
+| Distinct DESIGN criterion | 1–5 | Evidence and design judgment |
+|---|---:|---|
+| Selected plumbing finish and form | **4** | Pale Opal/Sandstone with [Hansgrohe and Delta Chrome plumbing](../../plumbing.json) has no demonstrated high-severity color or shape collision; square point drain is identified. Basins/vanity relation stay unselected and the tub-versus-shower use remains open. |
+| Unit cohesion, buyer band and room scale | **3** | The Opal-plus-Sandstone niche creates one modest accent in a **35-SF** historically reported bath ([geometry](../../geometry.json)), yet two adjacent light-color fields require an actual sample to justify distinction. [Comps OT01–OT05](../../../../research/comps/COMPS.md) describe premium functions but show no verifiable matching tile finish. |
+| Lighting and color behavior | **4** | [Opal individually lists glossy](https://www.elmsurfaces.com/product/opal-tones), potentially giving a bright room against reflective Chrome; the warmer niche may create subtle relief. Actual lamp temperatures, mirror and daylight are unknown, and no sample proves separation between Opal/Sandstone. |
+| Grout, joints, cuts and niche detail | **2** | [B elevation](candidates/B.md) shows plausible nominal **10.00-in W1** and **3.98-in return** end cuts but does not select a grout color/width, niche trim/sill plane or validated full corner-wrap layout; [geometry](../../geometry.json) does not locate openings or the niche. |
+| Drain, wet transition and tub/walk-in buildability | **1** | The **Opal individual maker page does not list Wet Areas** for an intended wet wall ([Opal source](https://www.elmsurfaces.com/product/opal-tones)); [Cortar Bone Soft floor](candidates/B.md) has no exact raw wet DCOF and no compatible selected point-pan mosaic. [Delta square drain](../../plumbing.json) conflicts with assumed tub alcove until the owner selects and the GC coordinates an actual assembly. |
+
+**Arithmetic:** (4 + 3 + 4 + 2 + 1) / 5 = **2.8 / 5.0**.
+
+**top_fix:** Replace the Opal wet field with an **individually manufacturer Wet Areas-listed wall product** while retaining an intentional Chrome/niche composition; then resolve the owner-selected bath program and tested bath-floor / conditional pan specification.
+
+**gate_flags:** **`WET_WALL_FAIL_OPAL`** (individual product lists Walls and Back Splashes, no Wet Areas); **`WET_FLOOR_RAW_DCOF_FAIL`** (Cortar Bone Soft exact raw wet test absent); `WALKIN_PAN_UNSELECTED_HOLD` (if shower option); `OWNER_TUB_OR_WALKIN_UNSELECTED_HOLD`; `POINT_DRAIN_VS_TUB_DOCUMENT_CONFLICT_HOLD`; `1529_REVIT_ID_AND_CUTS_UNVERIFIED_HOLD`; `PH_BASIN_UNSELECTED_HOLD`. No HIGH-severity plumbing finish clash established; unknown budget cap is not called a failure.
+
+**confidence:** **medium** for the verified Opal wall-approval deficiency and fixture-color fit; **low** for final cuts, bathroom branch and light.
+
+**Design-seat conclusion only:** A addresses the critical wall-use listing and simplifies the niche composition. **Neither candidate is release-ready** under the strict wet-floor test and unresolved owner program gates. This is an independent seat judgment, with no weighted total or acceptance decision.

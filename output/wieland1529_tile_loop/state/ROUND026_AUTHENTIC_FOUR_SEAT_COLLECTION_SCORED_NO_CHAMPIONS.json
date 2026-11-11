@@ -1,0 +1,393 @@
+{
+  "round": 26,
+  "phase": "DISTINCT_POSTDISPATCH_COLLECTED_FOUR_AUTHENTIC_SCORED_NO_CHAMPIONS",
+  "reviewer_status": "PENDING_INDEPENDENT_POSTSCORE_REVIEW",
+  "signed_predecessors": {
+    "state/ROUND026_FORMAL_TWO_TX_ROOMS_SOURCE_FROZEN_PREDISPATCH.json": {
+      "sha256": "06309ffa33bdc80ad1d877d7648f914770438aa6d1fe63f3f82e0bac55ef848f",
+      "bytes": 4075
+    },
+    "state/ROUND026_INDEPENDENT_PREDISPATCH_REVIEWER27_CLEARANCE.json": {
+      "sha256": "c051fe73ceaeded6705e416b119b8ca572d5e638cf39f94148a9cad808a82cb3",
+      "bytes": 2196
+    },
+    "state/ROUND026_FOUR_FRESH_AUTHENTIC_CRITIC_DISPATCH.json": {
+      "sha256": "a4906265e8bd488fdcdc9e6fc05e61a47d4d79a7577aefcc084068c832a497f1",
+      "bytes": 1637
+    },
+    "state/ROUND026_TX_FOUR_SCHEMES_TWO_OWNER_CARDS_SIGNED.json": {
+      "sha256": "c30a37c560bfa1a77d80b32b1ff902843b3a26d16cedc524e5c528154ff59d24",
+      "bytes": 2293
+    },
+    "state/ROUND025_SCOPEFIX1_INDEPENDENT_POSTSCORE_REVIEWER30_CLEARANCE.json": {
+      "sha256": "cb97b1a042f63b0688760737d47a6765eb4303a5fbde5fccfdbf67e7ffaf363d",
+      "bytes": 2698
+    }
+  },
+  "freeze_signed_checks": {
+    "neutral_candidates": 4,
+    "prime_only_private_keys": 2,
+    "signed_parents": 4,
+    "prepared_files": 7,
+    "prepared_parents": 3
+  },
+  "authentic_worker_ids": {
+    "market": "worker-31",
+    "design": "worker-32",
+    "build": "worker-33",
+    "cost": "worker-34"
+  },
+  "original_critic_reports": {
+    "room_count": 2,
+    "file_count": 8,
+    "candidate_seat_means": 16,
+    "criterion_values": 76,
+    "fingerprints_scores_local_links": {
+      "TX-PRIMARY": {
+        "market": {
+          "file": "rooms/TX-PRIMARY/board/round-026/critic-market.md",
+          "fingerprint": {
+            "sha256": "293e41c1d6c2f342f1876669987f959c31618e34550397bc0a99fb5f8c5ac368",
+            "bytes": 12083
+          },
+          "local_links": 47,
+          "candidates": {
+            "A": {
+              "criteria": [
+                4,
+                4,
+                4,
+                4
+              ],
+              "mean": 4.0
+            },
+            "B": {
+              "criteria": [
+                4,
+                4,
+                3,
+                4
+              ],
+              "mean": 3.8
+            }
+          }
+        },
+        "design": {
+          "file": "rooms/TX-PRIMARY/board/round-026/critic-design.md",
+          "fingerprint": {
+            "sha256": "44af5d1ce89eee4f73f02f975fd9f3131a93c0cf15ff42bceff0578714d3d3e8",
+            "bytes": 10457
+          },
+          "local_links": 0,
+          "candidates": {
+            "A": {
+              "criteria": [
+                4,
+                5,
+                4,
+                3,
+                4
+              ],
+              "mean": 4.0
+            },
+            "B": {
+              "criteria": [
+                4,
+                4,
+                4,
+                3,
+                4
+              ],
+              "mean": 3.8
+            }
+          }
+        },
+        "build": {
+          "file": "rooms/TX-PRIMARY/board/round-026/critic-build.md",
+          "fingerprint": {
+            "sha256": "49262cbf9356fd3cb6b19311b3449df3835603a6003df8dbf8537969e5a1aea4",
+            "bytes": 8262
+          },
+          "local_links": 13,
+          "candidates": {
+            "A": {
+              "criteria": [
+                4,
+                4,
+                4,
+                3,
+                3
+              ],
+              "mean": 3.6
+            },
+            "B": {
+              "criteria": [
+                4,
+                4,
+                4,
+                3,
+                3
+              ],
+              "mean": 3.6
+            }
+          }
+        },
+        "cost": {
+          "file": "rooms/TX-PRIMARY/board/round-026/critic-cost.md",
+          "fingerprint": {
+            "sha256": "7a03d7cfcface67c8519e7a539380db79ebf25652cf906ba98a48047c4c7b66f",
+            "bytes": 9922
+          },
+          "local_links": 28,
+          "candidates": {
+            "A": {
+              "criteria": [
+                4,
+                3,
+                2,
+                2,
+                2
+              ],
+              "mean": 2.6
+            },
+            "B": {
+              "criteria": [
+                5,
+                3,
+                2,
+                2,
+                2
+              ],
+              "mean": 2.8
+            }
+          }
+        }
+      },
+      "TX-BATH3": {
+        "market": {
+          "file": "rooms/TX-BATH3/board/round-026/critic-market.md",
+          "fingerprint": {
+            "sha256": "f7d716f34ebebe5bb2ef261ff9c833ec0e2347c72b56910d40305f7340493824",
+            "bytes": 13421
+          },
+          "local_links": 57,
+          "candidates": {
+            "A": {
+              "criteria": [
+                4,
+                4,
+                3,
+                3
+              ],
+              "mean": 3.5
+            },
+            "B": {
+              "criteria": [
+                4,
+                4,
+                4,
+                4
+              ],
+              "mean": 4.0
+            }
+          }
+        },
+        "design": {
+          "file": "rooms/TX-BATH3/board/round-026/critic-design.md",
+          "fingerprint": {
+            "sha256": "fdcd5bc1721c2b8a2504af5a1e3e8d96a631c1ef16ff200781e97ca4fb2cc76e",
+            "bytes": 11181
+          },
+          "local_links": 0,
+          "candidates": {
+            "A": {
+              "criteria": [
+                4,
+                4,
+                3,
+                3,
+                4
+              ],
+              "mean": 3.6
+            },
+            "B": {
+              "criteria": [
+                5,
+                4,
+                4,
+                3,
+                4
+              ],
+              "mean": 4.0
+            }
+          }
+        },
+        "build": {
+          "file": "rooms/TX-BATH3/board/round-026/critic-build.md",
+          "fingerprint": {
+            "sha256": "4bccac68338542f1cbad63f089bd582eaa9313699cd24cf94dcc478b35c9c43b",
+            "bytes": 8637
+          },
+          "local_links": 16,
+          "candidates": {
+            "A": {
+              "criteria": [
+                4,
+                3,
+                3,
+                3,
+                3
+              ],
+              "mean": 3.2
+            },
+            "B": {
+              "criteria": [
+                4,
+                4,
+                4,
+                3,
+                3
+              ],
+              "mean": 3.6
+            }
+          }
+        },
+        "cost": {
+          "file": "rooms/TX-BATH3/board/round-026/critic-cost.md",
+          "fingerprint": {
+            "sha256": "db3e96c013b4ca50da4e98b9001055fd2b286ecff1c440f52715393ab86d6c3e",
+            "bytes": 10175
+          },
+          "local_links": 34,
+          "candidates": {
+            "A": {
+              "criteria": [
+                2,
+                2,
+                2,
+                2,
+                1
+              ],
+              "mean": 1.8
+            },
+            "B": {
+              "criteria": [
+                4,
+                3,
+                3,
+                2,
+                3
+              ],
+              "mean": 3.0
+            }
+          }
+        }
+      }
+    }
+  },
+  "weights": {
+    "market": 0.3,
+    "design": 0.25,
+    "build": 0.25,
+    "cost": 0.2
+  },
+  "scoring_independently_recomputed": {
+    "TX-PRIMARY": {
+      "A": {
+        "seat_means": {
+          "market": 4.0,
+          "design": 4.0,
+          "build": 3.6,
+          "cost": 2.6
+        },
+        "weighted": 3.62,
+        "raw_weighted": "3.620",
+        "minimum": 2.6,
+        "four_seats_minimum_3": false,
+        "all_hard_gates_pass": false,
+        "champion_accepted": false
+      },
+      "B": {
+        "seat_means": {
+          "market": 3.8,
+          "design": 3.8,
+          "build": 3.6,
+          "cost": 2.8
+        },
+        "weighted": 3.55,
+        "raw_weighted": "3.550",
+        "minimum": 2.8,
+        "four_seats_minimum_3": false,
+        "all_hard_gates_pass": false,
+        "champion_accepted": false
+      }
+    },
+    "TX-BATH3": {
+      "A": {
+        "seat_means": {
+          "market": 3.5,
+          "design": 3.6,
+          "build": 3.2,
+          "cost": 1.8
+        },
+        "weighted": 3.11,
+        "raw_weighted": "3.110",
+        "minimum": 1.8,
+        "four_seats_minimum_3": false,
+        "all_hard_gates_pass": false,
+        "champion_accepted": false
+      },
+      "B": {
+        "seat_means": {
+          "market": 4.0,
+          "design": 4.0,
+          "build": 3.6,
+          "cost": 3.0
+        },
+        "weighted": 3.7,
+        "raw_weighted": "3.700",
+        "minimum": 3.0,
+        "four_seats_minimum_3": true,
+        "all_hard_gates_pass": false,
+        "champion_accepted": false
+      }
+    }
+  },
+  "seat_minimum_ge_3_required": true,
+  "TX_PRIMARY_both_A_B_COST_below_3": true,
+  "TX_BATH3_A_COST_below_3": true,
+  "TX_BATH3_B_every_seat_ge_3": true,
+  "real_same_round_incumbent": false,
+  "plus_0_25_rule": "N/A: both rooms BLOCKED no same-round incumbent, cannot manufacture weighted margin",
+  "hard_gate_pass": false,
+  "hard_gate_findings": {
+    "exact_Elm_wet_WALL_NICHE": "PASS where applicable based on dated individual product evidence; primary has NO niche",
+    "exact_FD_floor_PAN_item": "PASS for individual product use: Luxe 101317949 and Riviera 101487775 published wet DCOF >=0.42 and Bath/Shower Floor",
+    "TX_PRIMARY_tiled_shower_ceiling": "UNKNOWN separate overhead application, wall permission cannot transfer",
+    "native_room_drain_cut_geometry": "UNKNOWN, no verified receipts, visible <3in sliver and installer PAN cuts not proved",
+    "TX_BATH3_TUB_vs_WALKIN": "OWNER UNSELECTED, selected square BNX POINT only WALK-IN, no tiled PAN if tub",
+    "complete_carton_rounded_delivered_cost_vs_owner_allocated_budget": "UNKNOWN; original 125% material comparison provisional",
+    "Chicago_exact_lot_quantity_inventory_ETA": "UNKNOWN; non-Chicago public prices not actual Chicago delivered offer",
+    "owner_do_not_use": "PASS no forbidden new vendor",
+    "no_new_champions": "BLOCKED on original minimum scores and mandatory unknown gates"
+  },
+  "historical_baseline": {
+    "room_count": 13,
+    "physical_instances": 26,
+    "original_material_rows": 27,
+    "material_usd": "23572.44"
+  },
+  "rooms_status_counts": {
+    "blocked": 8,
+    "active": 3,
+    "seeded": 2
+  },
+  "original_source_waste_included_once_pct": 15,
+  "R025_corrected_scopefix": "Independent Reviewer30 cleared corrected scoring for NONACCEPTANCE only; no champion",
+  "R026_separate_program": "R026 four genuine specialist reports now collected in next turn; no score in R026 dispatch phase",
+  "room_statuses_changed": false,
+  "champions_changed": false,
+  "owner_approval": false,
+  "procurement_release": false,
+  "global_DONE": false
+}

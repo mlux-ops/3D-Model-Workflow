@@ -1,0 +1,157 @@
+{
+  "schema": 1,
+  "as_of": "2026-11-06",
+  "room_results": {
+    "TX-BATH2": {
+      "round": 2,
+      "review_complete": true,
+      "seat_weights": {
+        "market": 0.3,
+        "design": 0.25,
+        "build": 0.25,
+        "cost": 0.2
+      },
+      "candidates": {
+        "C": {
+          "role": "governing v4 incumbent",
+          "seat_scores": {
+            "market": 3.9,
+            "design": 3.6,
+            "build": 3.0,
+            "cost": 3.0
+          },
+          "weighted_score": 3.42,
+          "minimum_critic_score": 3.0,
+          "passes_all_gates": false,
+          "reasons": [
+            "Exact measured wet DCOF >=0.42 absent for bathroom floor"
+          ]
+        },
+        "B": {
+          "role": "revised candidate",
+          "seat_scores": {
+            "market": 4.1,
+            "design": 4.0,
+            "build": 3.2,
+            "cost": 2.8
+          },
+          "weighted_score": 3.59,
+          "minimum_critic_score": 2.8,
+          "passes_all_gates": false,
+          "reasons": [
+            "Exact measured wet DCOF >=0.42 absent for bathroom floor"
+          ]
+        }
+      },
+      "incumbent_letter": "C",
+      "challenger_letter": "B",
+      "challenger_margin": 0.17,
+      "accepted": false,
+      "decision": "both_failed_hard_floor_gate_no_champion",
+      "provisional_design_preference": "B",
+      "score_gate_failure": true
+    },
+    "TX-BATH3": {
+      "round": 2,
+      "review_complete": true,
+      "seat_weights": {
+        "market": 0.3,
+        "design": 0.25,
+        "build": 0.25,
+        "cost": 0.2
+      },
+      "candidates": {
+        "A": {
+          "role": "governing v4 incumbent",
+          "seat_scores": {
+            "market": 3.9,
+            "design": 3.2,
+            "build": 2.4,
+            "cost": 2.0
+          },
+          "weighted_score": 2.97,
+          "minimum_critic_score": 2.0,
+          "passes_all_gates": false,
+          "reasons": [
+            "Exact measured wet DCOF >=0.42 absent for bathroom floor",
+            "Tub/walk-in shower scope unresolved; pan area and drain geometry missing"
+          ]
+        },
+        "B": {
+          "role": "revised candidate",
+          "seat_scores": {
+            "market": 4.1,
+            "design": 4.0,
+            "build": 2.8,
+            "cost": 2.2
+          },
+          "weighted_score": 3.37,
+          "minimum_critic_score": 2.2,
+          "passes_all_gates": false,
+          "reasons": [
+            "Exact measured wet DCOF >=0.42 absent for bathroom floor",
+            "Tub/walk-in shower scope unresolved; pan area and drain geometry missing"
+          ]
+        }
+      },
+      "incumbent_letter": "A",
+      "challenger_letter": "B",
+      "challenger_margin": 0.4,
+      "accepted": false,
+      "decision": "both_failed_hard_floor_gate_no_champion",
+      "provisional_design_preference": "B",
+      "score_gate_failure": true
+    },
+    "TX-BATH4": {
+      "round": 2,
+      "review_complete": true,
+      "seat_weights": {
+        "market": 0.3,
+        "design": 0.25,
+        "build": 0.25,
+        "cost": 0.2
+      },
+      "candidates": {
+        "B": {
+          "role": "governing v4 incumbent",
+          "seat_scores": {
+            "market": 3.7,
+            "design": 3.0,
+            "build": 1.8,
+            "cost": 2.4
+          },
+          "weighted_score": 2.79,
+          "minimum_critic_score": 1.8,
+          "passes_all_gates": false,
+          "reasons": [
+            "Exact measured wet DCOF >=0.42 absent for bathroom floor",
+            "Clara Caviar tub niche lacks manufacturer Wet Areas listing",
+            "Bone Ribbed relief not approved for wet tub walls"
+          ]
+        },
+        "A": {
+          "role": "revised candidate",
+          "seat_scores": {
+            "market": 4.1,
+            "design": 3.6,
+            "build": 3.2,
+            "cost": 2.4
+          },
+          "weighted_score": 3.41,
+          "minimum_critic_score": 2.4,
+          "passes_all_gates": false,
+          "reasons": [
+            "Exact measured wet DCOF >=0.42 absent for bathroom floor"
+          ]
+        }
+      },
+      "incumbent_letter": "B",
+      "challenger_letter": "A",
+      "challenger_margin": 0.62,
+      "accepted": false,
+      "decision": "both_failed_hard_floor_gate_no_champion",
+      "provisional_design_preference": "A",
+      "score_gate_failure": true
+    }
+  }
+}

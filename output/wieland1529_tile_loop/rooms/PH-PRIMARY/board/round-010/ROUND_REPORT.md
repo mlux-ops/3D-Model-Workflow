@@ -1,0 +1,18 @@
+# PH-PRIMARY — Round010 scored four-seat blind board
+
+**BLOCKED:** neither candidate has a qualified exact numeric measured floor (and where applicable shower-pan) wet DCOF. No accepted champion, owner authorization or material purchasing release. All four independent critiques were completed and SHA checked for BOTH letters before the prime privately opened room role keys. Original neutral candidate packets and submission receipt remain frozen.
+
+| Private role | Letter | Market .30 | Design .25 | Build .25 | Cost .20 | Weighted | Minimum | Wet gate |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---|
+| Historic v4 source | C | 3.4 | 3.0 | 1.6 | 2.4 | 2.65 | 1.6 | FAIL |
+| Revised conditional | A | 3.7 | 4.0 | 3.0 | 2.6 | 3.38 | 2.6 | FAIL |
+
+Revised weighted margin +0.73 against required +0.25; revised minimum seat 2.6 against required >=3.0. Even a positive score margin does NOT remove DCOF gate failure and cannot establish owner acceptance or purchase authorization.
+
+Candidate C (historic v4 source): FAIL: actual SKU-and-finish-specific bath LEVEL-floor wet DCOF raw numeric test report remains unavailable; a manufacturer reported >0.50 bound or Target >=0.42 is not the approved measured test point; FAIL: actual 48-in Brizo selected LINEAR pan tile exact maker lab wet-DCOF remains unavailable; HOLD: Prime RL21 hex product order variant and manufacturer-approved linear rough/grate/membrane/slope section, HNC-to-RL21 transition and verified 1529 site geometry unavailable; FAIL: Cortar Bone Reed relief in shower lacks individual maker Wet Areas approval; HOLD: true native 1529 model/site verification, exact current Chicago landed material/installed bid and lot/lead, signed owner room cap and selection unavailable; cannot infer 125% cost gate failure
+Candidate A (revised design option): FAIL: actual SKU-and-finish-specific bath LEVEL-floor wet DCOF raw numeric test report remains unavailable; a manufacturer reported >0.50 bound or Target >=0.42 is not the approved measured test point; FAIL: actual 48-in Brizo selected LINEAR pan tile exact maker lab wet-DCOF remains unavailable; HOLD: Prime RL21 hex product order variant and manufacturer-approved linear rough/grate/membrane/slope section, HNC-to-RL21 transition and verified 1529 site geometry unavailable; HOLD: true native 1529 model/site verification, exact current Chicago landed material/installed bid and lot/lead, signed owner room cap and selection unavailable; cannot infer 125% cost gate failure
+
+Conditional material and fixture direction, NOT owner selection: Source-backed visual direction only: flat ELM Cortar Bone wet wall/ceiling, HNC6615 level/WC study, Daltile Prime RL21 1.5-in hex linear pan; actual Brizo Black Onyx 48-in linear, NO NICHE
+Independent next technical/owner evidence: Independent exact numerical wet DCOF lab certificates for both HNC level and Prime RL21 pan; manufacturer linear drain/membrane/slope/overhead 24x48 system; true 1529 project geometry and price/cap
+Historical ELM 2026-09-03 material-only tile quote $2224.41/unit x2 copies, original 15% gross source waste already included; primary WCs share Primary floor; historic unpriced Primary niche excluded. Exact new material/installed offer, current Chicago lot, signed owner room cap, real 1529 field geometry, trim LF/cartons and accepted test report all null. No 125% gate conclusion without actual room cap. Verified market set 14 listings/9 building groups, Old Town first, LP/GC secondary; 405 W Armitage four sales one precedent.
+Formal evidence: state/ROUND010_SCORING.json; separately immutable state/ROUND010_SUBMISSION.json (original all_critic_scores:null); state/ROUND010_CRITIC_COLLECTION.json with all 12 SHA; each critic-market/design/build/cost.md.

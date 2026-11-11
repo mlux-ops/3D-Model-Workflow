@@ -1,0 +1,207 @@
+{
+  "operation_id": "e873c70e-beda-4b6c-807b-e60f1fd73e66",
+  "request": {
+    "path": "E:\\Claude\\3D-Model-Workflow\\.claude\\worktrees\\native-revit-workflow-8fafd0\\output\\1527_wieland\\kitchens\\scripts\\bath_audit_e873c70e-beda-4b6c-807b-e60f1fd73e66_repair_room_records.py",
+    "args": {
+      "commit": false,
+      "output_path": "H:\\Games\\3D Modeling Workflows\\3D Model Workflow\\output\\wieland-floorplan-corrections-20261108\\room-repair-preview.json",
+      "expected_pid": 31808,
+      "session_id": "7f6f24a2-cc0d-4567-8beb-02467aba0ced",
+      "discovery_operation": "8170b477-45b4-45cb-b1bc-635648df82ea",
+      "guard_path": "H:\\Games\\3D Modeling Workflows\\3D Model Workflow\\output\\wieland-floorplan-corrections-20261108\\audit_guard.py",
+      "operation_id": "e873c70e-beda-4b6c-807b-e60f1fd73e66"
+    }
+  },
+  "state": "http_error",
+  "http_status": 500,
+  "response": {
+    "traceback": "Traceback (most recent call last):\n  File \"E:\\pyRevit Extensions\\KitchenTools.extension\\startup.py\", line 68, in run_script\n    exec(code, scope)\n  File \"E:\\Claude\\3D-Model-Workflow\\.claude\\worktrees\\native-revit-workflow-8fafd0\\output\\1527_wieland\\kitchens\\scripts\\bath_audit_e873c70e-beda-4b6c-807b-e60f1fd73e66_repair_room_records.py\", line 52, in <module>\n    assert status==DB.TransactionStatus.Committed,'Native transaction did not commit'\nAssertionError: Native transaction did not commit\n",
+    "log": [],
+    "ok": false,
+    "result": {
+      "transaction_status": "RolledBack",
+      "before": [
+        {
+          "version_guid": "6398d84f-a606-42a0-bf09-66fc8fdaa0af",
+          "number": "203A",
+          "id": 16363692,
+          "name": "TOILET",
+          "area_sf": 0.0,
+          "level_id": 10470880,
+          "point": null,
+          "unique_id": "6a61d38d-4028-4b1e-a46d-6ff29308dc52-00f9b0ac"
+        },
+        {
+          "version_guid": "407fb4a3-b1e3-448d-8a92-7e6ecdde0797",
+          "number": "203B",
+          "id": 16363689,
+          "name": "TOILET",
+          "area_sf": 7.094489384301994,
+          "level_id": 10470880,
+          "point": [
+            -539.3457727624543,
+            200.36030601559779,
+            17.333333333332995
+          ],
+          "unique_id": "6a61d38d-4028-4b1e-a46d-6ff29308dc52-00f9b0a9"
+        },
+        {
+          "version_guid": "407fb4a3-b1e3-448d-8a92-7e6ecdde0797",
+          "number": "310A",
+          "id": 15921441,
+          "name": "WIC 4",
+          "area_sf": 35.10416666667675,
+          "level_id": 10470966,
+          "point": [
+            -515.0288522893392,
+            244.89442709616313,
+            27.999999999999666
+          ],
+          "unique_id": "6d4e0087-121f-4c46-91dd-4f8693f8275b-00f2f121"
+        },
+        {
+          "version_guid": "407fb4a3-b1e3-448d-8a92-7e6ecdde0797",
+          "number": "311B",
+          "id": 15921447,
+          "name": "BATH 4",
+          "area_sf": 26.979166666677322,
+          "level_id": 10470966,
+          "point": [
+            -549.9681948380787,
+            236.9455161839267,
+            27.999999999999666
+          ],
+          "unique_id": "6d4e0087-121f-4c46-91dd-4f8693f8275b-00f2f127"
+        },
+        {
+          "version_guid": "407fb4a3-b1e3-448d-8a92-7e6ecdde0797",
+          "number": "311A",
+          "id": 15921450,
+          "name": "BATH 4",
+          "area_sf": 26.979166666678566,
+          "level_id": 10470966,
+          "point": [
+            -515.88750041223,
+            236.98718285059365,
+            27.999999999999666
+          ],
+          "unique_id": "6d4e0087-121f-4c46-91dd-4f8693f8275b-00f2f12a"
+        }
+      ],
+      "save_or_sync": false,
+      "document_session_id": "7f6f24a2-cc0d-4567-8beb-02467aba0ced",
+      "operation_id": "e873c70e-beda-4b6c-807b-e60f1fd73e66",
+      "commit_requested": false,
+      "status": "ROLLED_BACK",
+      "pid": 31808,
+      "error": "Native transaction did not commit",
+      "after": [
+        {
+          "version_guid": "f60bb0d9-e25d-47e4-8866-bbe479e8480a",
+          "number": "203A",
+          "id": 16363692,
+          "name": "TOILET",
+          "area_sf": 13.782986111109551,
+          "level_id": 10470880,
+          "point": [
+            -513.1900188589843,
+            210.8500447784985,
+            17.333333333332995
+          ],
+          "unique_id": "6a61d38d-4028-4b1e-a46d-6ff29308dc52-00f9b0ac"
+        },
+        {
+          "version_guid": "f60bb0d9-e25d-47e4-8866-bbe479e8480a",
+          "number": "203B",
+          "id": 16363689,
+          "name": "TOILET",
+          "area_sf": 13.782986111107164,
+          "level_id": 10470880,
+          "point": [
+            -552.2108521923199,
+            210.8500447784985,
+            17.333333333332995
+          ],
+          "unique_id": "6a61d38d-4028-4b1e-a46d-6ff29308dc52-00f9b0a9"
+        },
+        {
+          "version_guid": "f60bb0d9-e25d-47e4-8866-bbe479e8480a",
+          "number": "310A",
+          "id": 15921441,
+          "name": "BATH 4",
+          "area_sf": 35.10416666667675,
+          "level_id": 10470966,
+          "point": [
+            -515.0288522893392,
+            244.89442709616313,
+            27.999999999999666
+          ],
+          "unique_id": "6d4e0087-121f-4c46-91dd-4f8693f8275b-00f2f121"
+        },
+        {
+          "version_guid": "f60bb0d9-e25d-47e4-8866-bbe479e8480a",
+          "number": "311B",
+          "id": 15921447,
+          "name": "WIC 4",
+          "area_sf": 26.979166666677322,
+          "level_id": 10470966,
+          "point": [
+            -549.9681948380787,
+            236.9455161839267,
+            27.999999999999666
+          ],
+          "unique_id": "6d4e0087-121f-4c46-91dd-4f8693f8275b-00f2f127"
+        },
+        {
+          "version_guid": "f60bb0d9-e25d-47e4-8866-bbe479e8480a",
+          "number": "311A",
+          "id": 15921450,
+          "name": "WIC 4",
+          "area_sf": 26.979166666678566,
+          "level_id": 10470966,
+          "point": [
+            -515.88750041223,
+            236.98718285059365,
+            27.999999999999666
+          ],
+          "unique_id": "6d4e0087-121f-4c46-91dd-4f8693f8275b-00f2f12a"
+        }
+      ],
+      "failures": [
+        {
+          "description": "Room must have a height greater than 0.",
+          "elements": [
+            16363689
+          ],
+          "severity": "Error"
+        },
+        {
+          "description": "Room must have a height greater than 0.",
+          "elements": [
+            16363692
+          ],
+          "severity": "Error"
+        },
+        {
+          "description": "Room Volume is being calculated above the Upper Limit of this Room. Change the Upper Limit and Offset or change the height of volume calculations.",
+          "elements": [
+            16363689
+          ],
+          "severity": "Warning"
+        },
+        {
+          "description": "Room Volume is being calculated above the Upper Limit of this Room. Change the Upper Limit and Offset or change the height of volume calculations.",
+          "elements": [
+            16363692
+          ],
+          "severity": "Warning"
+        },
+        {
+          "description": "A Room was deleted from all model views but still remains in this project. \r\n The room can be removed from any schedule or placed back in the model using the Room command.",
+          "elements": [],
+          "severity": "Warning"
+        }
+      ]
+    }
+  }
+}

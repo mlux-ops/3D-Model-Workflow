@@ -1,0 +1,18 @@
+# PH-BATH2 — Round010 scored four-seat blind board
+
+**BLOCKED:** neither candidate has a qualified exact numeric measured floor (and where applicable shower-pan) wet DCOF. No accepted champion, owner authorization or material purchasing release. All four independent critiques were completed and SHA checked for BOTH letters before the prime privately opened room role keys. Original neutral candidate packets and submission receipt remain frozen.
+
+| Private role | Letter | Market .30 | Design .25 | Build .25 | Cost .20 | Weighted | Minimum | Wet gate |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---|
+| Historic v4 source | A | 3.7 | 3.6 | 3.2 | 3.4 | 3.49 | 3.2 | FAIL |
+| Revised conditional | C | 3.7 | 4.2 | 3.4 | 2.8 | 3.57 | 2.8 | FAIL |
+
+Revised weighted margin +0.08 against required +0.25; revised minimum seat 2.8 against required >=3.0. Even a positive score margin does NOT remove DCOF gate failure and cannot establish owner acceptance or purchase authorization.
+
+Candidate A (historic v4 source): FAIL: actual SKU-and-finish-specific bath LEVEL-floor wet DCOF raw numeric test report remains unavailable; a manufacturer reported >0.50 bound or Target >=0.42 is not the approved measured test point; PASS for wall only: individual ELM Tones Sapphire 2x20 Glossy and Sandstone Wet Areas approved; Duravit and Matte White actual tub, NO tiled shower pan; HOLD: tub flange/vanity wall/niche opening and net return, exact level tile and threshold geometry, finish and supplier offer unresolved; HOLD: true native 1529 model/site verification, exact current Chicago landed material/installed bid and lot/lead, signed owner room cap and selection unavailable; cannot infer 125% cost gate failure
+Candidate C (revised design option): FAIL: actual SKU-and-finish-specific bath LEVEL-floor wet DCOF raw numeric test report remains unavailable; a manufacturer reported >0.50 bound or Target >=0.42 is not the approved measured test point; PASS for wall only: individual ELM Tones Sapphire 2x20 Glossy and Sandstone Wet Areas approved; Duravit and Matte White actual tub, NO tiled shower pan; HOLD: tub flange/vanity wall/niche opening and net return, exact level tile and threshold geometry, finish and supplier offer unresolved; HOLD: true native 1529 model/site verification, exact current Chicago landed material/installed bid and lot/lead, signed owner room cap and selection unavailable; cannot infer 125% cost gate failure
+
+Conditional material and fixture direction, NOT owner selection: Preserve maker Wet Areas-PASS ELM Tones Sapphire 2x20 Glossy with Duravit 59-in tub and Matte White Hansgrohe; study HNC6615 level floor; NO tiled shower pan
+Independent next technical/owner evidence: Exact product-specific HNC6615/other level-floor numeric wet DCOF raw test, actual tub flange and niche net return, joint/grout/threshold, verified local quote and owner sample sign-off
+Historical ELM 2026-09-03 material-only tile quote $920.28/unit x2 copies, original 15% gross source waste already included; primary WCs share Primary floor; historic unpriced Primary niche excluded. Exact new material/installed offer, current Chicago lot, signed owner room cap, real 1529 field geometry, trim LF/cartons and accepted test report all null. No 125% gate conclusion without actual room cap. Verified market set 14 listings/9 building groups, Old Town first, LP/GC secondary; 405 W Armitage four sales one precedent.
+Formal evidence: state/ROUND010_SCORING.json; separately immutable state/ROUND010_SUBMISSION.json (original all_critic_scores:null); state/ROUND010_CRITIC_COLLECTION.json with all 12 SHA; each critic-market/design/build/cost.md.

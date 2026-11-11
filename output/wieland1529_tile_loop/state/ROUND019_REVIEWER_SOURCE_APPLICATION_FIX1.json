@@ -1,0 +1,80 @@
+{
+  "round": 19,
+  "as_of": "2026-11-06",
+  "independent_reviewer": "worker-15",
+  "reviewer_actual_verdict": "FIX — R19 applicability and raw-source wet condition wording, SAME-R019",
+  "fixes": [
+    "3 dry wood-floor powder LEVEL/WALL/NICHE wet tests N/A",
+    "2 inherited WC LEVEL parent-single-source and wet WALL/NICHE N/A",
+    "both Primary niches NO ADDITIONAL NICHE / NO ORDER",
+    "six distinct standalone baths LEVEL lab requests do not copy WC",
+    "manufacturer SGS color A326.3 wet test condition unspecified",
+    "selected Delta PH and Brizo TX Bath3 POINT drains explicit conditional WALK-IN and never tub waste"
+  ],
+  "old_manifest": {
+    "sha256": "8de01474d0c681ee61ba8d69ea7d4ef50aa2b3d76cbb819b77867eb9f58187a8",
+    "bytes": 1982
+  },
+  "corrected_manifest": {
+    "sha256": "145523cf3a6953a8349e49d32d1eade41df3e723737237a7119ff4f508d8cde1",
+    "bytes": 2020
+  },
+  "output_changes": [
+    {
+      "file": "R19_13_ROOM_ORIGINAL_LAB_SPECIMEN_AND_APPROVAL_REQUEST_MATRIX.csv",
+      "before": {
+        "sha256": "8b0bad174d3804dc77a1fb5cb5e4773b54a17e86c8a4571409f3a1b7f196cdde",
+        "bytes": 9609
+      },
+      "after": {
+        "sha256": "c79b81eaf01226f92e87d48b0fb17188db7a508e2e45f4e29b9f571b3d1c4495",
+        "bytes": 9313
+      },
+      "changed": true
+    },
+    {
+      "file": "R19_7_COLOR_SGS_DCOF_EVIDENCE_QUALITY_AND_INSTALLER_HOLDS.md",
+      "before": {
+        "sha256": "6aa34156ff9b377e7e7eda32f0a7dff52f9f9f6f07deaa841d3a042b835ac809",
+        "bytes": 5668
+      },
+      "after": {
+        "sha256": "2e11212de323dbbb5f00936c963807c852b738a0083a965d6b1032ca99eb8ec0",
+        "bytes": 5974
+      },
+      "changed": true
+    },
+    {
+      "file": "R19_7_MAKER_COLOR_SPECIFIC_NUMERIC_THIRD_PARTY_SUMMARY_NOT_ORIGINAL_LAB.csv",
+      "before": {
+        "sha256": "9f47ab20ef0da45c464d3cb216733da5ca72c577549a09cb1fea595a529dfe16",
+        "bytes": 4047
+      },
+      "after": {
+        "sha256": "9f47ab20ef0da45c464d3cb216733da5ca72c577549a09cb1fea595a529dfe16",
+        "bytes": 4047
+      },
+      "changed": false
+    },
+    {
+      "file": "START_HERE_R19.md",
+      "before": {
+        "sha256": "49432e4edc5a15e91b56db68afb3e9b07a2f1ef160b84c3c48d90495e19c2c6e",
+        "bytes": 641
+      },
+      "after": {
+        "sha256": "5dbc09b4ef30cd02ae87b6dfbea0cf8b348dce1b9ace6ec2f538919dc6b42328",
+        "bytes": 744
+      },
+      "changed": true
+    }
+  ],
+  "original_color_report_csv_byte_identical": true,
+  "older_R014_R015_R017_R018_source_preserved": true,
+  "R014_scoring": null,
+  "R015_scoring": null,
+  "owner_approval": false,
+  "GC_release": false,
+  "procurement_release": false,
+  "global_13_room_done": false
+}

@@ -1,0 +1,229 @@
+{
+  "round": 39,
+  "date": "2026-11-07",
+  "criterion_count": 76,
+  "seat_means_count": 16,
+  "weighted_count": 4,
+  "original_seats": {
+    "market": "worker-84",
+    "design": "worker-88 strict-blind replacement",
+    "build": "worker-86",
+    "cost": "worker-87"
+  },
+  "excluded_original_design": "worker-85 — archived, not counted",
+  "owner_approvals": 0,
+  "rooms": {
+    "TX-POWDER": {
+      "previous_id": "round-003-B",
+      "incumbent_letter": "A",
+      "challenger_letter": "B",
+      "selected_letter": null,
+      "selected_id": null,
+      "selected_score": null,
+      "other_score": null,
+      "changed": true,
+      "four_seat_complete": true,
+      "owner_approved": false,
+      "challenger_delta": -0.46,
+      "decision_summary": "NO gate-qualified candidate: incumbent A COST2.8 FAIL, challenger B DESIGN2.8 FAIL; prior incumbent demoted, room BLOCKED pending fresh allowed-vendor board.",
+      "material_gross_rate_per_copy_usd": null,
+      "technical_holds": "DRY vanity WALL only, existing WOOD floor retained. Wall-mounted Hansgrohe faucet visible finish UNCONFIRMED, mirror/cuts/substrate unmeasured. Prior Haze incumbent COST2.8 <3.0 and Pienza challenger DESIGN2.8 <3.0; neither passes strict four-seat minimum. New materially distinct allowed-vendor WALL alternatives required. Chicago exact lot, landed pricing and owner budget FILL IN pending.",
+      "scores": {
+        "A": {
+          "market": {
+            "criteria": [
+              "4",
+              "4",
+              "3",
+              "3"
+            ],
+            "mean": "3.5"
+          },
+          "design": {
+            "criteria": [
+              "4",
+              "3",
+              "4",
+              "3",
+              "4"
+            ],
+            "mean": "3.6"
+          },
+          "build": {
+            "criteria": [
+              "4",
+              "4",
+              "4",
+              "3",
+              "3"
+            ],
+            "mean": "3.6"
+          },
+          "cost": {
+            "criteria": [
+              "5",
+              "2",
+              "2",
+              "3",
+              "2"
+            ],
+            "mean": "2.8"
+          },
+          "weighted": "3.410",
+          "minimum_seat": "2.8",
+          "specialist_gate_pass": false
+        },
+        "B": {
+          "market": {
+            "criteria": [
+              "3",
+              "2",
+              "4",
+              "3"
+            ],
+            "mean": "3.0"
+          },
+          "design": {
+            "criteria": [
+              "3",
+              "3",
+              "3",
+              "3",
+              "2"
+            ],
+            "mean": "2.8"
+          },
+          "build": {
+            "criteria": [
+              "5",
+              "2",
+              "2",
+              "3",
+              "3"
+            ],
+            "mean": "3.0"
+          },
+          "cost": {
+            "criteria": [
+              "3",
+              "5",
+              "3",
+              "2",
+              "2"
+            ],
+            "mean": "3.0"
+          },
+          "weighted": "2.950",
+          "minimum_seat": "2.8",
+          "specialist_gate_pass": false
+        }
+      }
+    },
+    "TX-POWDER2": {
+      "previous_id": "v4-TX-POWDER2",
+      "incumbent_letter": "A",
+      "challenger_letter": "B",
+      "selected_letter": "A",
+      "selected_id": "v4-TX-POWDER2",
+      "selected_score": 3.66,
+      "other_score": 3.74,
+      "changed": false,
+      "four_seat_complete": true,
+      "owner_approved": false,
+      "challenger_delta": 0.08,
+      "decision_summary": "Both A/B pass specialist and product dry WALL gates; B +0.080 below qualified A incumbent displacement +0.250. Retain Indigo Edge.",
+      "material_gross_rate_per_copy_usd": 332.1,
+      "technical_holds": "DRY vanity WALL only, existing WOOD floor retained; Hansgrohe Tecturis E 73072341 deck-mounted Brushed Black Chrome; basin UNSELECTED. Manufacturer product-specific item and current exact matching lot, 6x6 relief edge/mirror/vanity setout, carton/Chicago landed pricing and budget FILL IN pending.",
+      "scores": {
+        "A": {
+          "market": {
+            "criteria": [
+              "3",
+              "5",
+              "3",
+              "4"
+            ],
+            "mean": "3.8"
+          },
+          "design": {
+            "criteria": [
+              "4",
+              "4",
+              "4",
+              "3",
+              "4"
+            ],
+            "mean": "3.8"
+          },
+          "build": {
+            "criteria": [
+              "4",
+              "4",
+              "3",
+              "3",
+              "3"
+            ],
+            "mean": "3.4"
+          },
+          "cost": {
+            "criteria": [
+              "5",
+              "4",
+              "4",
+              "3",
+              "2"
+            ],
+            "mean": "3.6"
+          },
+          "weighted": "3.660",
+          "minimum_seat": "3.4",
+          "specialist_gate_pass": true
+        },
+        "B": {
+          "market": {
+            "criteria": [
+              "3",
+              "4",
+              "4",
+              "4"
+            ],
+            "mean": "3.8"
+          },
+          "design": {
+            "criteria": [
+              "4",
+              "3",
+              "4",
+              "3",
+              "3"
+            ],
+            "mean": "3.4"
+          },
+          "build": {
+            "criteria": [
+              "5",
+              "4",
+              "4",
+              "3",
+              "3"
+            ],
+            "mean": "3.8"
+          },
+          "cost": {
+            "criteria": [
+              "5",
+              "5",
+              "3",
+              "4",
+              "3"
+            ],
+            "mean": "4.0"
+          },
+          "weighted": "3.740",
+          "minimum_seat": "3.4",
+          "specialist_gate_pass": true
+        }
+      }
+    }
+  }
+}

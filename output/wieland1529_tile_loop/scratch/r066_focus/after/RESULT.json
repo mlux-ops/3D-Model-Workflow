@@ -1,0 +1,99 @@
+{
+  "status": "PASS",
+  "phase": "after",
+  "focus_cases": [
+    "PH-PRIMARY/304A",
+    "PH-PRIMARY/304B",
+    "TX-PRIMARY/202A",
+    "TX-PRIMARY/202B",
+    "PH-BATH4/311A",
+    "PH-BATH4/311B",
+    "TX-BATH4/007A",
+    "TX-BATH4/007B"
+  ],
+  "checks": [
+    "PH-PRIMARY_304A Focus A/B, section and source controls",
+    "TX-PRIMARY_202A Focus A/B, section and source controls",
+    "PH-BATH4_311A Focus A/B, section and source controls",
+    "TX-BATH4_007A Focus A/B, section and source controls"
+  ],
+  "errors": [],
+  "source_geometry": {
+    "PH-PRIMARY_304A": {
+      "native_walls": 11,
+      "source_countertops": 1,
+      "object_count": 63
+    },
+    "PH-PRIMARY_304B": {
+      "native_walls": 11,
+      "source_countertops": 1,
+      "object_count": 63
+    },
+    "TX-PRIMARY_202A": {
+      "native_walls": 15,
+      "source_countertops": 1,
+      "object_count": 72
+    },
+    "TX-PRIMARY_202B": {
+      "native_walls": 15,
+      "source_countertops": 1,
+      "object_count": 72
+    },
+    "PH-BATH4_311A": {
+      "native_walls": 13,
+      "source_countertops": 0,
+      "object_count": 72
+    },
+    "PH-BATH4_311B": {
+      "native_walls": 13,
+      "source_countertops": 0,
+      "object_count": 77
+    },
+    "TX-BATH4_007A": {
+      "native_walls": 9,
+      "source_countertops": 1,
+      "object_count": 55
+    },
+    "TX-BATH4_007B": {
+      "native_walls": 10,
+      "source_countertops": 1,
+      "object_count": 56
+    }
+  },
+  "protected_count": 43,
+  "picks_sha256": "a468848af7a7390a796a1d489b9a493b991dc5d30e478ed10eb0284818f92d0d",
+  "visual_deltas": [
+    {
+      "key": "PH-PRIMARY/304A",
+      "pixel_delta": 0.91
+    },
+    {
+      "key": "PH-PRIMARY/304B",
+      "pixel_delta": 1.0
+    },
+    {
+      "key": "TX-PRIMARY/202A",
+      "pixel_delta": 0.78
+    },
+    {
+      "key": "TX-PRIMARY/202B",
+      "pixel_delta": 0.77
+    },
+    {
+      "key": "PH-BATH4/311A",
+      "pixel_delta": 3.45
+    },
+    {
+      "key": "PH-BATH4/311B",
+      "pixel_delta": 3.42
+    },
+    {
+      "key": "TX-BATH4/007A",
+      "pixel_delta": 79.42
+    },
+    {
+      "key": "TX-BATH4/007B",
+      "pixel_delta": 79.89
+    }
+  ]
+}

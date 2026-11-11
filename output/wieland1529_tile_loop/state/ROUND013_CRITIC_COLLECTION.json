@@ -1,0 +1,172 @@
+{
+  "round": 13,
+  "phase": "2-board",
+  "as_of": "2026-11-06",
+  "source_submission_sha256": "55836b04247b2286d9f5e4dca2160b05dd567a094d0f391f6aa25c13ad8235d9",
+  "dispatch_receipt_sha256": "6a72f16d6efbc9de2131ee7ff2ae1846f1a26a9e21ec6f656760ffa00fbf4c23",
+  "reviewer_cleared_pre_dispatch": "worker-11 CONTINUE (FIX1 source-specific same-round rereview)",
+  "critic_worker_seats": {
+    "critic-market": "worker-13",
+    "critic-design": "worker-9",
+    "critic-build": "worker-10",
+    "critic-cost": "worker-12"
+  },
+  "report_files": {
+    "PH-PRIMARY": {
+      "critic-market": {
+        "sha256": "b0269a72b083e91de9fb0a10211f56ab1946a3983a81b293737089d85085682a",
+        "bytes": 10202,
+        "worker_id": "worker-13",
+        "candidate_letters": [
+          "A",
+          "B"
+        ]
+      },
+      "critic-design": {
+        "sha256": "88132c4945e72fbe98b019e20e901f90d6db3d7095af268eecfed38ebb646833",
+        "bytes": 13519,
+        "worker_id": "worker-9",
+        "candidate_letters": [
+          "A",
+          "B"
+        ]
+      },
+      "critic-build": {
+        "sha256": "db57f13d75874333133a95da0ae7dd8d87e1f35b5b9e576a99080d1a78258eef",
+        "bytes": 10501,
+        "worker_id": "worker-10",
+        "candidate_letters": [
+          "A",
+          "B"
+        ]
+      },
+      "critic-cost": {
+        "sha256": "1725d6d142212b56bb0e8e2ae0cc61fcc7a675a114333032c6311340b6038de6",
+        "bytes": 11266,
+        "worker_id": "worker-12",
+        "candidate_letters": [
+          "A",
+          "B"
+        ]
+      }
+    },
+    "PH-BATH2": {
+      "critic-market": {
+        "sha256": "5a0fec9aa199e45b1dab3a2939ea0f54e0befd4a5513afbc263f180727e76de6",
+        "bytes": 9369,
+        "worker_id": "worker-13",
+        "candidate_letters": [
+          "B",
+          "C"
+        ]
+      },
+      "critic-design": {
+        "sha256": "9444bf8ba13b7f5d68ca17a489d84eb70d8a8ca60b14c8b93bc7ce4c179a92da",
+        "bytes": 12432,
+        "worker_id": "worker-9",
+        "candidate_letters": [
+          "B",
+          "C"
+        ]
+      },
+      "critic-build": {
+        "sha256": "d436a47b5acc5bf81f7cbf8828cf9a94715806fdabd4fe92958661cbc933912c",
+        "bytes": 9623,
+        "worker_id": "worker-10",
+        "candidate_letters": [
+          "B",
+          "C"
+        ]
+      },
+      "critic-cost": {
+        "sha256": "4e4b37eaa1e4c68dd94f003d8dc7a3767d1ccc5b03b9699b9ad888c2440dc372",
+        "bytes": 10265,
+        "worker_id": "worker-12",
+        "candidate_letters": [
+          "B",
+          "C"
+        ]
+      }
+    },
+    "PH-BATH4": {
+      "critic-market": {
+        "sha256": "bedb7cfabc689c5eb3d465144566002468eabe972238058883f017422d32e071",
+        "bytes": 10541,
+        "worker_id": "worker-13",
+        "candidate_letters": [
+          "A",
+          "C"
+        ]
+      },
+      "critic-design": {
+        "sha256": "e943d7942ba66d51ab35d1de0f7830381202cf094e6e55c3407540582d626007",
+        "bytes": 14027,
+        "worker_id": "worker-9",
+        "candidate_letters": [
+          "A",
+          "C"
+        ]
+      },
+      "critic-build": {
+        "sha256": "c860212a7a966af0d6daf892b8321914112fcb5a2483b080764a95ec6400a30d",
+        "bytes": 10942,
+        "worker_id": "worker-10",
+        "candidate_letters": [
+          "A",
+          "C"
+        ]
+      },
+      "critic-cost": {
+        "sha256": "282fc24c423abe662304380f3b82759dae3cc7cbd7b61554c74972790fdfebc9",
+        "bytes": 12002,
+        "worker_id": "worker-12",
+        "candidate_letters": [
+          "A",
+          "C"
+        ]
+      }
+    }
+  },
+  "original_source_candidates_preserved": {
+    "PH-PRIMARY": {
+      "A": {
+        "sha256": "44c74f6d5cbc1dbe4a7f19be61d1489512d5139732ff21f10d8d9f489d9f8ee7",
+        "bytes": 6758
+      },
+      "B": {
+        "sha256": "0d8a0adbc86e3c99b8e3757c7668d6cfcfa9a44c15e2cf33a38d942f52209dd9",
+        "bytes": 7593
+      }
+    },
+    "PH-BATH2": {
+      "B": {
+        "sha256": "6f5c91022bb0a81d91fb4acd9d27bc9ff096022876f120ca0ebfff113643fc70",
+        "bytes": 7738
+      },
+      "C": {
+        "sha256": "662fa8d775fe4ed35f2eae0067130929b70ed3ed1dbeb902a18cd4f50452eefa",
+        "bytes": 7324
+      }
+    },
+    "PH-BATH4": {
+      "A": {
+        "sha256": "af2126d14ec88a91a236a4647de83958400a9e3ef02ee86b4bb261c4ad204fc1",
+        "bytes": 7460
+      },
+      "C": {
+        "sha256": "ad87ff26997f9e7bc5dbe8b66e7d8dc1f3081516da98f0cb59c191fc561cd79d",
+        "bytes": 7006
+      }
+    }
+  },
+  "total_critic_files": 12,
+  "distinct_seats": 4,
+  "local_links": 333,
+  "individual_criteria": 114,
+  "independent_unweighted_arithmetic_means": 24,
+  "all_critic_scores": null,
+  "weighted_scoring": null,
+  "owner_approved": false,
+  "procurement_release": false,
+  "next_action": "Perform private candidate role mapping and weighted calculations ONLY in genuinely subsequent distinct prime turn; hard gates always prevail"
+}

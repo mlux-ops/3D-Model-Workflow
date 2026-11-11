@@ -1,0 +1,72 @@
+{
+  "round": 11,
+  "phase": "2-board",
+  "event": "eight original independent specialist critiques collected for subsequent distinct-turn scoring",
+  "source_receipt": "state/ROUND011_SUBMISSION.json",
+  "source_submission_sha256": "827621f7afd308606a2562491cd65851d7cb18502393e88140f181aee8c8f38e",
+  "dispatch_receipt": "state/ROUND011_CRITIC_DISPATCH.json",
+  "source_dispatch_sha256": "b7b0a06c6713916a3415f953df983999f86f0d2c6c23207acd77da196290fea3",
+  "critic_seats": {
+    "critic-market": "worker-3",
+    "critic-design": "worker-9",
+    "critic-build": "worker-10",
+    "critic-cost": "worker-6"
+  },
+  "weighted_scoring_complete": false,
+  "all_critic_scores": null,
+  "report_files": {
+    "PH-BATH3": {
+      "market": {
+        "file": "rooms/PH-BATH3/board/round-011/critic-market.md",
+        "worker": "worker-3",
+        "sha256": "2e9133d1629f4f6455d2f9f4fc8b13d7b3b579294093a798c4426474c63f79c8",
+        "bytes": 11752
+      },
+      "design": {
+        "file": "rooms/PH-BATH3/board/round-011/critic-design.md",
+        "worker": "worker-9",
+        "sha256": "a3af0e5c0cc3cd3a32f7b1577b4abf6113945d33f004e8c729761e051280a991",
+        "bytes": 9521
+      },
+      "build": {
+        "file": "rooms/PH-BATH3/board/round-011/critic-build.md",
+        "worker": "worker-10",
+        "sha256": "772344f7b05b6c8115c6743bb3af662dbaa7f3038905cf60f57a924fecfed664",
+        "bytes": 9366
+      },
+      "cost": {
+        "file": "rooms/PH-BATH3/board/round-011/critic-cost.md",
+        "worker": "worker-6",
+        "sha256": "0abd6558feffa7df13a99f63889af03184bdedc08dc949cd46bfb0a1577f50e8",
+        "bytes": 12212
+      }
+    },
+    "TX-BATH3": {
+      "market": {
+        "file": "rooms/TX-BATH3/board/round-011/critic-market.md",
+        "worker": "worker-3",
+        "sha256": "876865fe0e907d3f4101232a8c0f2a700fffaf44627b9d065be16fa69825d92c",
+        "bytes": 11245
+      },
+      "design": {
+        "file": "rooms/TX-BATH3/board/round-011/critic-design.md",
+        "worker": "worker-9",
+        "sha256": "89fa3088d28202ac12e7e118e8a8e143190bc6e3bd79da3cffcb27d1b229bbd4",
+        "bytes": 9793
+      },
+      "build": {
+        "file": "rooms/TX-BATH3/board/round-011/critic-build.md",
+        "worker": "worker-10",
+        "sha256": "14abf863167eff905b1ad6d283904689ea028571043b13bdb902358c3fdc51be",
+        "bytes": 9324
+      },
+      "cost": {
+        "file": "rooms/TX-BATH3/board/round-011/critic-cost.md",
+        "worker": "worker-6",
+        "sha256": "1eef13960eaa86a354bdd459f4ec51ae3406fc7a99800aae75c4f538784b8e30",
+        "bytes": 11416
+      }
+    }
+  },
+  "resolved_local_links": 236
+}

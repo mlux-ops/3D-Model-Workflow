@@ -1,0 +1,5 @@
+# ELM Surfaces Tones Emerald 2x20 Glossy — retained TX-BATH3 wet walls
+
+- **Manufacturer product:** https://www.elmsurfaces.com/product/emerald-tones ; collection https://www.elmsurfaces.com/product-collection/tones . **Tones Emerald 2x20 Glossy**, wall tile with **Wet Areas** expressly confirmed in project ELM audit, Smartsheet row `6413683798900612` read 2026-11-06. This wall rating gives **no floor DCOF value**; numeric wet DCOF `null` and not needed for wall-only installation.
+- **Project price:** ELM dated **2026-09-03**, **91.8 SF gross/unit at $6.95/SF = $638.01/unit** (two TX units 183.6 SF). Quick-ship/US-stocked reported on historical project row; Chicago-specific quantity and ETA **`null`**, no vendor contact.
+- **Design:** horizontal stacked Emerald to complement selected Brizo Black Onyx; retain warm Sandstone niche by existing row `1026152877653892` **4.89 SF gross/unit × $6.95/SF**, only existing niche scope. Field/return measurements and shower/tub identification remain disputed, so layout cuts and niche area require verification. Grout and edge profiles remain `null` pending samples and exact fixture penetrations.

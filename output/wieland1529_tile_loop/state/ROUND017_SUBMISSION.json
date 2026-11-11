@@ -1,0 +1,114 @@
+{
+  "round": 17,
+  "as_of": "2026-11-06",
+  "phase": "1-comps SOURCE_PREPARED_AWAIT_INDEPENDENT_PREDISPATCH",
+  "focus_rooms": [
+    "PH-BATH3",
+    "TX-BATH3",
+    "PH-BATH4",
+    "PH-PRIMARY"
+  ],
+  "blind_source_candidates": {
+    "PH-BATH3": {
+      "A": {
+        "path": "rooms/PH-BATH3/board/round-017/candidates/A.md",
+        "sha256": "792930e6adbc2b4a1f1fd98a50e5446fbf7339e4077c6d4c649b574f9da94196",
+        "bytes": 6328
+      },
+      "C": {
+        "path": "rooms/PH-BATH3/board/round-017/candidates/C.md",
+        "sha256": "c16d54984eb742fd717689357a0e82c3bdfc1b03294a1d2a9e2c5a4916be26c8",
+        "bytes": 6222
+      }
+    },
+    "TX-BATH3": {
+      "B": {
+        "path": "rooms/TX-BATH3/board/round-017/candidates/B.md",
+        "sha256": "3225c38667f23dd014190aaea1686386f202ec076cc8c4692a4081f1ff06590a",
+        "bytes": 6046
+      },
+      "C": {
+        "path": "rooms/TX-BATH3/board/round-017/candidates/C.md",
+        "sha256": "cd805685742bfc35c4af57c54b37e0262e146f8e884adf6f347ced856aed62eb",
+        "bytes": 6173
+      }
+    },
+    "PH-BATH4": {
+      "A": {
+        "path": "rooms/PH-BATH4/board/round-017/candidates/A.md",
+        "sha256": "ad45070c9019d002e1eab1278797bdf5339a352441e964f0c1808ad1b439b7ef",
+        "bytes": 6272
+      },
+      "C": {
+        "path": "rooms/PH-BATH4/board/round-017/candidates/C.md",
+        "sha256": "fce0d10e32ddecae2f34583eabd67e39bfe2388a4bbebad750913913239dc701",
+        "bytes": 6373
+      }
+    },
+    "PH-PRIMARY": {
+      "B": {
+        "path": "rooms/PH-PRIMARY/board/round-017/candidates/B.md",
+        "sha256": "8742b3aadf5d65eea950fd620fb154d44f8df836c97e1e1ba1e7635cfb912cb3",
+        "bytes": 6209
+      },
+      "C": {
+        "path": "rooms/PH-PRIMARY/board/round-017/candidates/C.md",
+        "sha256": "f466cb7602a24471c4ff6d92264c3080fa586a785df5fe21398d0c077e4172a6",
+        "bytes": 6055
+      }
+    }
+  },
+  "confidential_prime_only_mappings": {
+    "PH-BATH3": {
+      "path": "rooms/PH-BATH3/board/round-017/_key.json",
+      "sha256": "affcd6209bc3c97ddf2d17ec5b22a8e5e214c52ff310f6cf8c0eddda9543e623",
+      "bytes": 302
+    },
+    "TX-BATH3": {
+      "path": "rooms/TX-BATH3/board/round-017/_key.json",
+      "sha256": "dbaee5dc8377acdaf91d417b8b1be4db3d2271ae23f8ce1ea8b135ea45afe922",
+      "bytes": 300
+    },
+    "PH-BATH4": {
+      "path": "rooms/PH-BATH4/board/round-017/_key.json",
+      "sha256": "fa8aee086572062f893d580697e4becf1716f27fcdaf4ecdee58713b86d49f9a",
+      "bytes": 313
+    },
+    "PH-PRIMARY": {
+      "path": "rooms/PH-PRIMARY/board/round-017/_key.json",
+      "sha256": "071854b405dddd5d5f09026150bebfec2e60aaabb1c04987a33ccae9d4b97c58",
+      "bytes": 323
+    }
+  },
+  "shared_maker_research": {
+    "path": "research/products/R17_FOUR_WET_ROOM_CONDITIONAL_ASSEMBLY_SOURCE_20261106.md",
+    "sha256": "70702548d6d69df350b954136a2980dcee9efb434928481a3d3e6ba0878e5e2e",
+    "bytes": 5490
+  },
+  "owner_approved": false,
+  "verified_native_1529": false,
+  "all_critic_scores": null,
+  "R017_weighted_scoring": null,
+  "predispatch_reviewer_verdict": null,
+  "critic_dispatch": "NOT_DISPATCHED",
+  "four_authentic_original_seat_dispatch_authorized": false,
+  "R014_critic_files": 6,
+  "R014_required": 8,
+  "original_design_worker9": "FAILED",
+  "R014_scoring": null,
+  "R015_dispatch": "HOLD",
+  "R015_scoring": null,
+  "R016_dispatch": "NOT_DISPATCHED",
+  "R016_scoring": null,
+  "R016_source_sha256": "dcc6e38897a0f92f65c372c2bc9526b54ddb139e9bdfff1788522e3007599d6a",
+  "R022_manifest_sha256": "32e5ceb807e33e642680dec47aa378d21d5ba9f7b05462214277cb89e7d76df1",
+  "R023_manifest_sha256": "2eec511f9b6920fd7553e634a1178b85f43f72bf4abb26a832114bc8d7a80ee5",
+  "historical_four_unit_material_only_usd": "23572.44",
+  "original_15pct_waste_once": true,
+  "owner_release": false,
+  "GC_release": false,
+  "purchase_release": false,
+  "new_materials_are_conditional": true,
+  "reviewer_source_preflight_pending": true,
+  "source_revision": "same-R017 pre-review room-specific fixture paragraph AND Windows double-CR newline normalization, without changes to maker claims, private mapping, original costs, scoring or dispatch"
+}

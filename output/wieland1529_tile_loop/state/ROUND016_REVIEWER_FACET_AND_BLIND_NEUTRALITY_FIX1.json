@@ -1,0 +1,90 @@
+{
+  "round": 16,
+  "as_of": "2026-11-06",
+  "reviewer": "worker-15",
+  "reviewer_verdict": "PRECISE FIX — AXOR versus hansgrohe trim family and wrong rough identity, and TX Powder2 blind role/deck word leak",
+  "source_before": {
+    "sha256": "1265b5fce959a862d1e7c067c44be434eba174a56ab57b595d1365309221aa2e",
+    "bytes": 3382
+  },
+  "source_after": {
+    "sha256": "e08ea2e57fa161a55756a00b3953c1249329f8e4fad1082daf8edf725968997a",
+    "bytes": 3717
+  },
+  "file_changes": [
+    {
+      "file": "rooms/TX-POWDER/board/round-016/candidates/B.md",
+      "reason": "original product family and rough-type manufacturer conflict; proper room-only drywall faucet shop HOLD",
+      "replacements": 6,
+      "before": {
+        "sha256": "8c7292ef53f10031cae36051f3f7b79d6720c4a353ca587da055e6fd7b4cdeed",
+        "bytes": 4905
+      },
+      "after": {
+        "sha256": "b0fe08eee37c65a91a75bc2b213fba549d942b2a023793d62c9446139c10cb5a",
+        "bytes": 6038
+      }
+    },
+    {
+      "file": "rooms/TX-POWDER/board/round-016/candidates/C.md",
+      "reason": "original product family and rough-type manufacturer conflict; proper room-only drywall faucet shop HOLD",
+      "replacements": 5,
+      "before": {
+        "sha256": "47e8127bda4bfd6960f0332cabb66b0f90cff5400eb56bfe130edb7062476b31",
+        "bytes": 4855
+      },
+      "after": {
+        "sha256": "d84879cea00c739c3518f28b94d00050f147391ba127e6bb7c602225179ceeac",
+        "bytes": 5950
+      }
+    },
+    {
+      "file": "rooms/TX-POWDER2/board/round-016/candidates/A.md",
+      "reason": "remove implicit historical source-role cues and irrelevant wall-mounted faucet/escutcheon from DECK sink room",
+      "replacements": 8,
+      "before": {
+        "sha256": "a20c4049410a4f011c41d40e8b03ea7c460929165d54912aa0288d55ec6f36f1",
+        "bytes": 4907
+      },
+      "after": {
+        "sha256": "8877d9c35034d6bb44c390abf0b4515caf722e7ed9f44a12a3f12af9d9ebb85b",
+        "bytes": 5239
+      }
+    },
+    {
+      "file": "rooms/TX-POWDER2/board/round-016/candidates/B.md",
+      "reason": "remove implicit historical source-role cues and irrelevant wall-mounted faucet/escutcheon from DECK sink room",
+      "replacements": 8,
+      "before": {
+        "sha256": "4a6974ebdff1ef0bac593a16193709b7b9cc891505b98dac2f6e852aa284ce2a",
+        "bytes": 4868
+      },
+      "after": {
+        "sha256": "a55050f3cbcf8b942f3e3ac044a2858995929f8b9e97a7bbd2fdcb6031a12dde",
+        "bytes": 5119
+      }
+    },
+    {
+      "file": "research/products/R16_POWDER_THREE_ROOM_FLAT_LANDING_SHOP_AND_COMP_SOURCE_20261106.md",
+      "reason": "maker primary official source product/finish/rough conflict",
+      "replacements": 2,
+      "before": {
+        "sha256": "cb8a00b1051f948f7fa154c16bff27c3dcf288772fb7abc26fa827e1faba3ca8",
+        "bytes": 2945
+      },
+      "after": {
+        "sha256": "095a50f2ef6f091ac06cc40bdb7ed331540cf593f2798c1dd1f52532c998a130",
+        "bytes": 3965
+      }
+    }
+  ],
+  "source_original_plumbing_rows_modified": false,
+  "private_maps_modified": false,
+  "critic_dispatch": "NOT_DISPATCHED",
+  "R014_scoring": null,
+  "R015_scoring": null,
+  "R016_scoring": null,
+  "owner_approval": false,
+  "GC_release": false,
+  "procurement_release": false
+}

@@ -1,0 +1,29 @@
+{
+  "default_cct_kelvin": 3000.0, 
+  "error": "Traceback (most recent call last):\n  File \"E:\\Claude\\3D-Model-Workflow\\output\\belmont_ph_good_rfa_20261016\\scripts\\build_smooth_frw2502_r04_native_light_ies.py\", line 340, in main\n    require(flag is not None and not flag.IsReadOnly and\n  File \"E:\\Claude\\3D-Model-Workflow\\output\\belmont_ph_good_rfa_20261016\\scripts\\build_smooth_frw2502_r04_native_light_ies.py\", line 65, in require\n    raise RuntimeError(message)\nRuntimeError: BLOCK_LIGHT_FLAG_UNAVAILABLE_OR_ALREADY_ACTIVE\n", 
+  "manufacturer_archive_url": "https://modernforms.com/images/products/IES_FILES/FR-W2502-52_IES.zip", 
+  "manufacturer_nominal_light_kit_watts": 16.0, 
+  "model": "FR-W2502-52L-SB/MB", 
+  "not_certified": [
+    "finish-specific light photometry", 
+    "CCT-specific angular photometry", 
+    "fan motor electric load", 
+    "MEP connector/circuit scheduling", 
+    "IES orientation in project"
+  ], 
+  "official_ies": "E:\\Claude\\3D-Model-Workflow\\output\\belmont_ph_good_rfa_20261016\\sources\\photometry\\FR-W2502-52L.IES", 
+  "official_ies_sha256": "6044dda98294020d03decd14ad118be2717845536597d1ca9bb9cc296fdcda8e", 
+  "official_ies_sha256_after": "6044dda98294020d03decd14ad118be2717845536597d1ca9bb9cc296fdcda8e", 
+  "photometric_test_lumens": 707.09000000000003, 
+  "photometric_test_watts": 16.754899999999999, 
+  "protected_r02_sha256_after": "f1741c711a07a26101c550b580a2db6be99bc4d3689cb75104eaafb0834379db", 
+  "protected_sources_unchanged": true, 
+  "r02_native_qa_sha256": "2ea2921f50d0bff745f5693c1e3a3eb6be1e79af3ed2d8462e2e03f2248b0d08", 
+  "source": "E:\\Claude\\3D-Model-Workflow\\output\\belmont_ph_good_rfa_20261016\\candidates\\ModernForms_Smooth_FR-W2502-52L_SBMB_R2025_R02_PARTIAL_UNAPPROVED.rfa", 
+  "source_sha256": "f1741c711a07a26101c550b580a2db6be99bc4d3689cb75104eaafb0834379db", 
+  "source_type_name": " ", 
+  "source_validation_sha256": "b9d8836a641a1c4e6b912d5aabe36f7d738110a389e615f61e9f38c2c3b7c622", 
+  "status": "BLOCKED_OR_ERROR_NO_RELEASE", 
+  "target": "E:\\Claude\\3D-Model-Workflow\\output\\belmont_ph_good_rfa_20261016\\candidates\\ModernForms_Smooth_FR-W2502-52L_SBMB_R2025_R04_NATIVE_LIGHT_IES_UNAPPROVED.rfa", 
+  "time_utc": "2026-10-16T08:52:01Z"
+}

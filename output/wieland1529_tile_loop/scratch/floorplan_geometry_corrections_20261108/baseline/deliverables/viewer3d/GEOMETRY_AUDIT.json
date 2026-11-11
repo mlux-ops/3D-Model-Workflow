@@ -1,0 +1,779 @@
+{
+  "status": "VERIFIED_VIEWER_GEOMETRY_WITH_EXPLICIT_SOURCE_HOLDS",
+  "created_utc": "2026-11-08T13:31:52.305271+00:00",
+  "document": {
+    "read_only": true,
+    "session_discovery_operation": "195855a2-1b57-49ac-ba77-59e1be74f481",
+    "title": "25-006 1527 N Wieland",
+    "pid": 72064,
+    "path": "Autodesk Docs://25-006 1527 N Wieland St/25-006 1527 N Wieland.rvt",
+    "session_id": "b29598c2-76f2-40ac-b6a0-b8b3f2455a5e",
+    "is_modified": false
+  },
+  "final_readback_operation": "31ce786a-e66b-4969-8a09-caee0784ffba",
+  "native_source_elements_verified": 347,
+  "native_room_boundaries": 24,
+  "wall_derived_wc_enclosures": 2,
+  "separate_adjacent_native_rooms": 2,
+  "unique_displayed_source_elements": 319,
+  "browser_mode_checks": 52,
+  "browser_errors": [],
+  "external_requests": [],
+  "frozen_picks_sha256": "a468848af7a7390a796a1d489b9a493b991dc5d30e478ed10eb0284818f92d0d",
+  "native_mesher_microface_omissions": [
+    {
+      "id": 17074252,
+      "faces": 4,
+      "area_sf": 3.02022576528142e-05
+    },
+    {
+      "id": 17074649,
+      "faces": 4,
+      "area_sf": 3.02022576528142e-05
+    }
+  ],
+  "model_writes": false,
+  "save_or_sync": false,
+  "rooms": [
+    {
+      "key": "PH-PRIMARY/304A",
+      "native_room_id": 15921408,
+      "native_room_number": "304A",
+      "membership_verified": true,
+      "area_sf": 122.0170355902633,
+      "historical_drawing_area_sf": 103.09,
+      "ceiling": {
+        "id": 16229921,
+        "underside_height_ft": 9.156200000000332,
+        "basis": "native ceiling-face triangles intersecting room footprint"
+      },
+      "source_element_count": 16,
+      "native_wall_ids": [
+        16428636,
+        16428716,
+        16428717,
+        16428735,
+        16428738,
+        16428799
+      ],
+      "frozen_program": "PRIMARY_WALK_IN_LINEAR",
+      "notes": [
+        "Current area differs from historical takeoff. Selected walk-in/drain installation remains unlocated; source-model tub is a separate reference.",
+        "Native Room-property conflicts on 16428737: position/level used; family associations are not repaired in Revit.",
+        "Above-ceiling adjacent-storey object excluded: 12070458."
+      ],
+      "excluded_out_of_room_elements": [
+        {
+          "id": 12070458,
+          "category": "Furniture",
+          "name": "DSW-rfa-Vitra-25931-bim3edab0a9",
+          "lowest_geometry_height_ft": 10.625000000000334,
+          "basis": "Entire native element is above the actual finish-ceiling underside; adjacent-storey content, not bathroom geometry."
+        }
+      ]
+    },
+    {
+      "key": "PH-PRIMARY/304B",
+      "native_room_id": 15921405,
+      "native_room_number": "304B",
+      "membership_verified": true,
+      "area_sf": 122.01703559026777,
+      "historical_drawing_area_sf": 103.09,
+      "ceiling": {
+        "id": 17275157,
+        "underside_height_ft": 9.156200000000332,
+        "basis": "native ceiling-face triangles intersecting room footprint"
+      },
+      "source_element_count": 28,
+      "native_wall_ids": [
+        15224601,
+        15957304,
+        15957305,
+        15957323,
+        15957326,
+        15961954
+      ],
+      "frozen_program": "PRIMARY_WALK_IN_LINEAR",
+      "notes": [
+        "Current area differs from historical takeoff. Selected walk-in/drain installation remains unlocated; source-model tub is a separate reference.",
+        "Native Room-property conflicts on 15957325: position/level used; family associations are not repaired in Revit.",
+        "Above-ceiling adjacent-storey object excluded: 18375050."
+      ],
+      "excluded_out_of_room_elements": [
+        {
+          "id": 18375050,
+          "category": "Furniture",
+          "name": "DSW-rfa-Vitra-25931-bim3edab0a9",
+          "lowest_geometry_height_ft": 10.625000000000334,
+          "basis": "Entire native element is above the actual finish-ceiling underside; adjacent-storey content, not bathroom geometry."
+        }
+      ]
+    },
+    {
+      "key": "PH-BATH2/305A",
+      "native_room_id": 15921411,
+      "native_room_number": "305A",
+      "membership_verified": true,
+      "area_sf": 35.09928385415643,
+      "historical_drawing_area_sf": 35.0,
+      "ceiling": {
+        "id": 17274941,
+        "underside_height_ft": 9.156200000000332,
+        "basis": "native ceiling-face triangles intersecting room footprint"
+      },
+      "source_element_count": 14,
+      "native_wall_ids": [
+        10808894,
+        10937080,
+        12590818,
+        16428596,
+        16428780
+      ],
+      "frozen_program": "DURAVIT_TUB_SELECTED",
+      "notes": [
+        "One unsupported wall-study rectangle withheld; material retained in Wet-zone detail. Selected tub remains a nominal study."
+      ],
+      "excluded_out_of_room_elements": []
+    },
+    {
+      "key": "PH-BATH2/305B",
+      "native_room_id": 15921414,
+      "native_room_number": "305B",
+      "membership_verified": true,
+      "area_sf": 35.09928385415679,
+      "historical_drawing_area_sf": 35.0,
+      "ceiling": {
+        "id": 17462968,
+        "underside_height_ft": 9.156200000000332,
+        "basis": "native ceiling-face triangles intersecting room footprint"
+      },
+      "source_element_count": 18,
+      "native_wall_ids": [
+        10808894,
+        10937080,
+        12380128,
+        12590818,
+        15959004
+      ],
+      "frozen_program": "DURAVIT_TUB_SELECTED",
+      "notes": [
+        "One unsupported wall-study rectangle withheld; material retained in Wet-zone detail. Selected tub remains a nominal study."
+      ],
+      "excluded_out_of_room_elements": []
+    },
+    {
+      "key": "PH-BATH3/307A",
+      "native_room_id": 15921429,
+      "native_room_number": "307A",
+      "membership_verified": true,
+      "area_sf": 34.92708333334334,
+      "historical_drawing_area_sf": 35.0,
+      "ceiling": {
+        "id": 16229887,
+        "underside_height_ft": 9.156200000000332,
+        "basis": "native ceiling-face triangles intersecting room footprint"
+      },
+      "source_element_count": 12,
+      "native_wall_ids": [
+        10870528,
+        16428739,
+        16428744,
+        16428745
+      ],
+      "frozen_program": "TUB_OR_WALK_IN_UNSELECTED",
+      "notes": [
+        "Tub versus walk-in remains UNSELECTED."
+      ],
+      "excluded_out_of_room_elements": []
+    },
+    {
+      "key": "PH-BATH3/307B",
+      "native_room_id": 15921432,
+      "native_room_number": "307B",
+      "membership_verified": true,
+      "area_sf": 34.92708333334192,
+      "historical_drawing_area_sf": 35.0,
+      "ceiling": {
+        "id": 16229767,
+        "underside_height_ft": 9.156200000000332,
+        "basis": "native ceiling-face triangles intersecting room footprint"
+      },
+      "source_element_count": 15,
+      "native_wall_ids": [
+        10534415,
+        15957327,
+        15957332,
+        15957333
+      ],
+      "frozen_program": "TUB_OR_WALK_IN_UNSELECTED",
+      "notes": [
+        "Tub versus walk-in remains UNSELECTED.",
+        "Above-ceiling adjacent-storey object excluded: 17460872."
+      ],
+      "excluded_out_of_room_elements": [
+        {
+          "id": 17460872,
+          "category": "Lighting Fixtures",
+          "name": "Lighting_Fixture-Focal_Point-ID-3.5_Adjustable_Accent",
+          "lowest_geometry_height_ft": 9.250000000000334,
+          "basis": "Entire native element is above the actual finish-ceiling underside; adjacent-storey content, not bathroom geometry."
+        }
+      ]
+    },
+    {
+      "key": "PH-BATH4/311A",
+      "native_room_id": 15921450,
+      "native_room_number": "311A",
+      "membership_verified": true,
+      "area_sf": 26.979166666678758,
+      "historical_drawing_area_sf": 27.08,
+      "ceiling": {
+        "id": 16229834,
+        "underside_height_ft": 9.156200000000332,
+        "basis": "native ceiling-face triangles intersecting room footprint"
+      },
+      "source_element_count": 18,
+      "native_wall_ids": [
+        10534418,
+        10870528,
+        16428613,
+        16428619,
+        16428805,
+        16428814
+      ],
+      "frozen_program": "WALK_IN_SELECTED",
+      "notes": [
+        "311 main space and 310 adjacency remain separate. 310A is WIC 4; 310B is Bath 4. Frozen combined material pool unchanged."
+      ],
+      "excluded_out_of_room_elements": []
+    },
+    {
+      "key": "PH-BATH4/311B",
+      "native_room_id": 15921447,
+      "native_room_number": "311B",
+      "membership_verified": true,
+      "area_sf": 26.979166666677337,
+      "historical_drawing_area_sf": 27.08,
+      "ceiling": {
+        "id": 16229809,
+        "underside_height_ft": 9.156200000000332,
+        "basis": "native ceiling-face triangles intersecting room footprint"
+      },
+      "source_element_count": 22,
+      "native_wall_ids": [
+        10534415,
+        10534418,
+        12459931,
+        12459984,
+        16377761,
+        16377779
+      ],
+      "frozen_program": "WALK_IN_SELECTED",
+      "notes": [
+        "311 main space and 310 adjacency remain separate. 310A is WIC 4; 310B is Bath 4. Frozen combined material pool unchanged."
+      ],
+      "excluded_out_of_room_elements": []
+    },
+    {
+      "key": "PH-POWDER/405A",
+      "native_room_id": 15925464,
+      "native_room_number": "405A",
+      "membership_verified": true,
+      "area_sf": 27.986328125004427,
+      "historical_drawing_area_sf": 27.95,
+      "ceiling": {
+        "id": 16247025,
+        "underside_height_ft": 9.083333333333677,
+        "basis": "native ceiling-face triangles intersecting room footprint"
+      },
+      "source_element_count": 15,
+      "native_wall_ids": [
+        10542988,
+        12384940,
+        12384944,
+        12631904
+      ],
+      "frozen_program": "DRY_WOOD",
+      "notes": [
+        "Prior basin locator was a wall faucet; removed that misleading basin proxy. Selected basin installation remains unlocated.",
+        "Native Room-property conflicts on 16951723: position/level used; family associations are not repaired in Revit."
+      ],
+      "excluded_out_of_room_elements": []
+    },
+    {
+      "key": "PH-POWDER/405B",
+      "native_room_id": 15925461,
+      "native_room_number": "405B",
+      "membership_verified": true,
+      "area_sf": 27.551757812504405,
+      "historical_drawing_area_sf": 27.95,
+      "ceiling": {
+        "id": 16247025,
+        "underside_height_ft": 9.083333333333677,
+        "basis": "native ceiling-face triangles intersecting room footprint"
+      },
+      "source_element_count": 15,
+      "native_wall_ids": [
+        10542988,
+        12063200,
+        12613765,
+        12631697
+      ],
+      "frozen_program": "DRY_WOOD",
+      "notes": [
+        "Prior basin locator was a wall faucet; removed that misleading basin proxy. Selected basin installation remains unlocated.",
+        "Native Room-property conflicts on 16951721: position/level used; family associations are not repaired in Revit."
+      ],
+      "excluded_out_of_room_elements": []
+    },
+    {
+      "key": "PH-WC/314A",
+      "native_room_id": 15926307,
+      "native_room_number": "313A",
+      "membership_verified": true,
+      "area_sf": 14.638888888889051,
+      "historical_drawing_area_sf": 14.64,
+      "ceiling": {
+        "id": 16229931,
+        "underside_height_ft": 9.156200000000332,
+        "basis": "native ceiling-face triangles intersecting room footprint"
+      },
+      "source_element_count": 9,
+      "native_wall_ids": [
+        16428717,
+        16428735,
+        16428738,
+        16428800
+      ],
+      "frozen_program": "WC_PRIMARY_INHERITED",
+      "notes": [
+        "Viewer 314A maps to native 313A.",
+        "Above-ceiling adjacent-storey object excluded: 12070455."
+      ],
+      "excluded_out_of_room_elements": [
+        {
+          "id": 12070455,
+          "category": "Furniture",
+          "name": "DSW-rfa-Vitra-25931-bim3edab0a9",
+          "lowest_geometry_height_ft": 10.625000000000334,
+          "basis": "Entire native element is above the actual finish-ceiling underside; adjacent-storey content, not bathroom geometry."
+        }
+      ]
+    },
+    {
+      "key": "PH-WC/314B",
+      "native_room_id": 15926310,
+      "native_room_number": "313B",
+      "membership_verified": true,
+      "area_sf": 14.638888888889051,
+      "historical_drawing_area_sf": 14.64,
+      "ceiling": {
+        "id": 16229759,
+        "underside_height_ft": 9.156200000000332,
+        "basis": "native ceiling-face triangles intersecting room footprint"
+      },
+      "source_element_count": 10,
+      "native_wall_ids": [
+        15957305,
+        15957323,
+        15957326,
+        15962034
+      ],
+      "frozen_program": "WC_PRIMARY_INHERITED",
+      "notes": [
+        "Viewer 314B maps to native 313B.",
+        "Above-ceiling adjacent-storey object excluded: 18375051."
+      ],
+      "excluded_out_of_room_elements": [
+        {
+          "id": 18375051,
+          "category": "Furniture",
+          "name": "DSW-rfa-Vitra-25931-bim3edab0a9",
+          "lowest_geometry_height_ft": 10.625000000000334,
+          "basis": "Entire native element is above the actual finish-ceiling underside; adjacent-storey content, not bathroom geometry."
+        }
+      ]
+    },
+    {
+      "key": "TX-PRIMARY/202A",
+      "native_room_id": 10540416,
+      "native_room_number": "202A",
+      "membership_verified": true,
+      "area_sf": 105.09309895831323,
+      "historical_drawing_area_sf": 87.02,
+      "ceiling": {
+        "id": 15840800,
+        "underside_height_ft": 9.302066666667006,
+        "basis": "native ceiling-face triangles intersecting room footprint"
+      },
+      "source_element_count": 23,
+      "native_wall_ids": [
+        16414456,
+        16437654,
+        16437655,
+        16437698,
+        16437699,
+        17993834,
+        18037302
+      ],
+      "frozen_program": "PRIMARY_WALK_IN_LINEAR",
+      "notes": [
+        "Current area differs from historical takeoff. Selected walk-in/drain installation remains unlocated; source-model tub is a separate reference.",
+        "Native Room-property conflicts on 15997703, 16437657, 16437668, 16437700, 16437701, 17114616, 17114618, 17180004, 17180006, 18006284: position/level used; family associations are not repaired in Revit."
+      ],
+      "excluded_out_of_room_elements": []
+    },
+    {
+      "key": "TX-PRIMARY/202B",
+      "native_room_id": 15882851,
+      "native_room_number": "202B",
+      "membership_verified": true,
+      "area_sf": 105.09309895830853,
+      "historical_drawing_area_sf": 87.02,
+      "ceiling": {
+        "id": 16210952,
+        "underside_height_ft": 9.249966666667007,
+        "basis": "native ceiling-face triangles intersecting room footprint"
+      },
+      "source_element_count": 19,
+      "native_wall_ids": [
+        10812435,
+        18055982,
+        18055983,
+        18055998,
+        18055999,
+        18056006,
+        18056073
+      ],
+      "frozen_program": "PRIMARY_WALK_IN_LINEAR",
+      "notes": [
+        "Current area differs from historical takeoff. Selected walk-in/drain installation remains unlocated; source-model tub is a separate reference.",
+        "Native Room-property conflicts on 18055984: position/level used; family associations are not repaired in Revit."
+      ],
+      "excluded_out_of_room_elements": []
+    },
+    {
+      "key": "TX-BATH2/205A",
+      "native_room_id": 15883581,
+      "native_room_number": "205A",
+      "membership_verified": true,
+      "area_sf": 37.51182725695847,
+      "historical_drawing_area_sf": 38.35,
+      "ceiling": {
+        "id": 16211049,
+        "underside_height_ft": 9.249966666667007,
+        "basis": "native ceiling-face triangles intersecting room footprint"
+      },
+      "source_element_count": 16,
+      "native_wall_ids": [
+        10870528,
+        16437598,
+        16437605,
+        16437623,
+        16437696
+      ],
+      "frozen_program": "DURAVIT_TUB_SELECTED",
+      "notes": [
+        "Selected tub remains a nominal study; native bathtub shown separately in Native room.",
+        "Native Room-property conflicts on 16437617, 16437622, 16437672, 17180989: position/level used; family associations are not repaired in Revit."
+      ],
+      "excluded_out_of_room_elements": []
+    },
+    {
+      "key": "TX-BATH2/205B",
+      "native_room_id": 15883772,
+      "native_room_number": "205B",
+      "membership_verified": true,
+      "area_sf": 39.50944010418009,
+      "historical_drawing_area_sf": 38.35,
+      "ceiling": {
+        "id": 16210996,
+        "underside_height_ft": 9.249966666667007,
+        "basis": "native ceiling-face triangles intersecting room footprint"
+      },
+      "source_element_count": 16,
+      "native_wall_ids": [
+        10534415,
+        12459687,
+        12459729,
+        12459747,
+        15501471
+      ],
+      "frozen_program": "DURAVIT_TUB_SELECTED",
+      "notes": [
+        "Selected tub remains a nominal study; native bathtub shown separately in Native room."
+      ],
+      "excluded_out_of_room_elements": []
+    },
+    {
+      "key": "TX-BATH3/207A",
+      "native_room_id": 15883594,
+      "native_room_number": "207A",
+      "membership_verified": true,
+      "area_sf": 36.97916666666656,
+      "historical_drawing_area_sf": 36.98,
+      "ceiling": {
+        "id": 16211067,
+        "underside_height_ft": 9.249966666667007,
+        "basis": "native ceiling-face triangles intersecting room footprint"
+      },
+      "source_element_count": 15,
+      "native_wall_ids": [
+        10534418,
+        16437623,
+        16437693,
+        16437989
+      ],
+      "frozen_program": "TUB_OR_WALK_IN_UNSELECTED",
+      "notes": [
+        "Tub versus walk-in remains UNSELECTED.",
+        "Native Room-property conflicts on 16437695: position/level used; family associations are not repaired in Revit.",
+        "Above-ceiling adjacent-storey object excluded: 16438318."
+      ],
+      "excluded_out_of_room_elements": [
+        {
+          "id": 16438318,
+          "category": "Casework",
+          "name": "Countertop144",
+          "lowest_geometry_height_ft": 10.500000666667006,
+          "basis": "Entire native element is above the actual finish-ceiling underside; adjacent-storey content, not bathroom geometry."
+        }
+      ]
+    },
+    {
+      "key": "TX-BATH3/207B",
+      "native_room_id": 15883784,
+      "native_room_number": "207B",
+      "membership_verified": true,
+      "area_sf": 39.75260416666962,
+      "historical_drawing_area_sf": 36.98,
+      "ceiling": {
+        "id": 16211015,
+        "underside_height_ft": 9.249966666667007,
+        "basis": "native ceiling-face triangles intersecting room footprint"
+      },
+      "source_element_count": 20,
+      "native_wall_ids": [
+        10534418,
+        12459747,
+        14358111,
+        16437951
+      ],
+      "frozen_program": "TUB_OR_WALK_IN_UNSELECTED",
+      "notes": [
+        "Tub versus walk-in remains UNSELECTED.",
+        "Native Room-property conflicts on 15282474: position/level used; family associations are not repaired in Revit.",
+        "Above-ceiling adjacent-storey object excluded: 16438253."
+      ],
+      "excluded_out_of_room_elements": [
+        {
+          "id": 16438253,
+          "category": "Casework",
+          "name": "Countertop168",
+          "lowest_geometry_height_ft": 10.500000666667006,
+          "basis": "Entire native element is above the actual finish-ceiling underside; adjacent-storey content, not bathroom geometry."
+        }
+      ]
+    },
+    {
+      "key": "TX-BATH4/007A",
+      "native_room_id": 15879005,
+      "native_room_number": "007A",
+      "membership_verified": true,
+      "area_sf": 34.90720445185942,
+      "historical_drawing_area_sf": 38.89,
+      "ceiling": {
+        "id": 16988292,
+        "underside_height_ft": 10.083300000000001,
+        "basis": "native ceiling-face triangles intersecting room footprint"
+      },
+      "source_element_count": 17,
+      "native_wall_ids": [
+        16306739,
+        16306745,
+        17182810,
+        18147159,
+        18147992,
+        18148026
+      ],
+      "frozen_program": "DURAVIT_TUB_SELECTED",
+      "notes": [
+        "Selected tub remains UNLOCATED; no tub installation invented."
+      ],
+      "excluded_out_of_room_elements": []
+    },
+    {
+      "key": "TX-BATH4/007B",
+      "native_room_id": 15879020,
+      "native_room_number": "007B",
+      "membership_verified": true,
+      "area_sf": 35.77039970122368,
+      "historical_drawing_area_sf": 38.89,
+      "ceiling": null,
+      "source_element_count": 12,
+      "native_wall_ids": [
+        16072876,
+        16275464,
+        16275500,
+        18131310,
+        18131375,
+        18140004
+      ],
+      "frozen_program": "DURAVIT_TUB_SELECTED",
+      "notes": [
+        "Selected tub remains UNLOCATED; no tub installation invented.",
+        "No matched native finish ceiling; overhead structure is labeled separately."
+      ],
+      "excluded_out_of_room_elements": []
+    },
+    {
+      "key": "TX-POWDER/102A",
+      "native_room_id": 15881991,
+      "native_room_number": "102A",
+      "membership_verified": true,
+      "area_sf": 22.74544270833619,
+      "historical_drawing_area_sf": 22.17,
+      "ceiling": {
+        "id": 16206567,
+        "underside_height_ft": 9.23953333333334,
+        "basis": "native ceiling-face triangles intersecting room footprint"
+      },
+      "source_element_count": 13,
+      "native_wall_ids": [
+        15950802
+      ],
+      "frozen_program": "DRY_WOOD",
+      "notes": [
+        "Wall finish remains NO PICK; native geometry does not choose products."
+      ],
+      "excluded_out_of_room_elements": []
+    },
+    {
+      "key": "TX-POWDER/102B",
+      "native_room_id": 15881451,
+      "native_room_number": "102B",
+      "membership_verified": true,
+      "area_sf": 22.203884548612564,
+      "historical_drawing_area_sf": 22.17,
+      "ceiling": {
+        "id": 15821462,
+        "underside_height_ft": 9.23953333333334,
+        "basis": "native ceiling-face triangles intersecting room footprint"
+      },
+      "source_element_count": 14,
+      "native_wall_ids": [
+        10812435,
+        12271819,
+        15802223
+      ],
+      "frozen_program": "DRY_WOOD",
+      "notes": [
+        "Wall finish remains NO PICK; native geometry does not choose products.",
+        "Native Room-property conflicts on 15802673: position/level used; family associations are not repaired in Revit."
+      ],
+      "excluded_out_of_room_elements": []
+    },
+    {
+      "key": "TX-POWDER2/010A",
+      "native_room_id": 15879414,
+      "native_room_number": "010A",
+      "membership_verified": true,
+      "area_sf": 27.285590277777032,
+      "historical_drawing_area_sf": 26.69,
+      "ceiling": {
+        "id": 17186328,
+        "underside_height_ft": 10.083300000000001,
+        "basis": "native ceiling-face triangles intersecting room footprint"
+      },
+      "source_element_count": 17,
+      "native_wall_ids": [
+        11221732,
+        12635534,
+        12636082,
+        18798773
+      ],
+      "frozen_program": "DRY_WOOD",
+      "notes": [
+        "Basin remains UNSELECTED; source-model basin is a reference.",
+        "Native Room-property conflicts on 16306691: position/level used; family associations are not repaired in Revit."
+      ],
+      "excluded_out_of_room_elements": []
+    },
+    {
+      "key": "TX-POWDER2/010B",
+      "native_room_id": 15879411,
+      "native_room_number": "010B",
+      "membership_verified": true,
+      "area_sf": 27.285590277781978,
+      "historical_drawing_area_sf": 26.69,
+      "ceiling": {
+        "id": 17186320,
+        "underside_height_ft": 10.083300000000001,
+        "basis": "native ceiling-face triangles intersecting room footprint"
+      },
+      "source_element_count": 12,
+      "native_wall_ids": [
+        11221731,
+        12635534,
+        12636082,
+        18798112
+      ],
+      "frozen_program": "DRY_WOOD",
+      "notes": [
+        "Basin remains UNSELECTED; source-model basin is a reference.",
+        "Native Room-property conflicts on 17133383: position/level used; family associations are not repaired in Revit."
+      ],
+      "excluded_out_of_room_elements": []
+    },
+    {
+      "key": "TX-WC/203A",
+      "native_room_id": null,
+      "native_room_number": null,
+      "membership_verified": false,
+      "area_sf": 13.783001303799795,
+      "historical_drawing_area_sf": 14.0,
+      "ceiling": {
+        "id": 15840800,
+        "underside_height_ft": 9.302066666667006,
+        "basis": "native ceiling-face triangles intersecting room footprint"
+      },
+      "source_element_count": 9,
+      "native_wall_ids": [
+        16414456,
+        16437698,
+        16437699,
+        17993834
+      ],
+      "frozen_program": "WC_PRIMARY_INHERITED",
+      "notes": [
+        "Physical enclosure verified by wall faces; native Room record invalid."
+      ],
+      "excluded_out_of_room_elements": []
+    },
+    {
+      "key": "TX-WC/203B",
+      "native_room_id": null,
+      "native_room_number": null,
+      "membership_verified": false,
+      "area_sf": 13.783001303799525,
+      "historical_drawing_area_sf": 14.0,
+      "ceiling": {
+        "id": 15840800,
+        "underside_height_ft": 9.302066666667006,
+        "basis": "native ceiling-face triangles intersecting room footprint"
+      },
+      "source_element_count": 9,
+      "native_wall_ids": [
+        10812435,
+        18055998,
+        18055999,
+        18056073
+      ],
+      "frozen_program": "WC_PRIMARY_INHERITED",
+      "notes": [
+        "Physical enclosure verified by wall faces; native Room record invalid."
+      ],
+      "excluded_out_of_room_elements": []
+    }
+  ]
+}

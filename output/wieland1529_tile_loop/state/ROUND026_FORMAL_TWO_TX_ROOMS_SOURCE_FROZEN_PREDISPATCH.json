@@ -1,0 +1,106 @@
+{
+  "round": 26,
+  "phase": "1-SOURCE_FROZEN_PENDING_INDEPENDENT_PREDISPATCH_REVIEW",
+  "focus_rooms": [
+    "TX-PRIMARY",
+    "TX-BATH3"
+  ],
+  "neutral_candidates": {
+    "rooms/TX-PRIMARY/board/round-026/candidates/A.md": {
+      "sha256": "b7264ff36e727147368e4b8749424553f93b505a5659ec6458a6d06e94b8e223",
+      "bytes": 3858
+    },
+    "rooms/TX-PRIMARY/board/round-026/candidates/B.md": {
+      "sha256": "150dc82b1b5dab9ba880045b7d8c088878d36d83c4f791be0fdca9c512fa027b",
+      "bytes": 4199
+    },
+    "rooms/TX-BATH3/board/round-026/candidates/A.md": {
+      "sha256": "ed2ba80433a09d8bffbf813d311f849b764f07157d2f34e46e859c2e1454267b",
+      "bytes": 4142
+    },
+    "rooms/TX-BATH3/board/round-026/candidates/B.md": {
+      "sha256": "100ede2e6a32009cda02a6d97986784b9b4ca6bcf5d0fc56232c752718f524ba",
+      "bytes": 4087
+    }
+  },
+  "prime_only_private_keys": {
+    "rooms/TX-PRIMARY/board/round-026/_key.json": {
+      "sha256": "2e15c8720afd207e8470c83a34925aed21450df240240e3d8586343d8ef9550e",
+      "bytes": 371
+    },
+    "rooms/TX-BATH3/board/round-026/_key.json": {
+      "sha256": "338790baa266806046d8f2ccd6832c7df915116f4c6d4ffa876caf5f5d58828e",
+      "bytes": 369
+    }
+  },
+  "signed_parents": {
+    "state/ROUND026_TX_FOUR_SCHEMES_TWO_OWNER_CARDS_SIGNED.json": {
+      "sha256": "c30a37c560bfa1a77d80b32b1ff902843b3a26d16cedc524e5c528154ff59d24",
+      "bytes": 2293
+    },
+    "state/ROUND026_TWO_TX_WET_BATHS_PREPARED_NOT_SUBMITTED.json": {
+      "sha256": "aaffb3dd2ad6b38ad9f88a451802bcb21e62cf9d3e2574145bd69f9c7553cf75",
+      "bytes": 1772
+    },
+    "state/ROUND025_FOUR_AUTHENTIC_CRITIC_DISPATCH.json": {
+      "sha256": "0ba9cb33da829f43de8dd0faa94f3d39d63e767972278c8c7eb5ada9a303f671",
+      "bytes": 1182
+    },
+    "state/ROUND024_AUTHENTIC_FOUR_SEAT_COLLECTION_SCORED_NO_CHAMPIONS.json": {
+      "sha256": "b69c17171493327bc1becfa8b8b81cac82a43ebb2940ce6fe23b7ff701637f43",
+      "bytes": 9498
+    }
+  },
+  "source_preservation": "Four neutral copies normalized only; original seven signed prepared files unchanged",
+  "neutralization_audit": {
+    "rooms/TX-PRIMARY/board/round-026/candidates/A.md": {
+      "from_signed_prepared": "rooms/TX-PRIMARY/board/round-026/prepared/candidates/A.md",
+      "source": {
+        "sha256": "ddf2bfced3f365f22d61c9eed156f203accfadcf0fc4e161570c3346409573d9",
+        "bytes": 3992
+      },
+      "normalization": "heading/conclusion earlier-round redaction"
+    },
+    "rooms/TX-PRIMARY/board/round-026/candidates/B.md": {
+      "from_signed_prepared": "rooms/TX-PRIMARY/board/round-026/prepared/candidates/B.md",
+      "source": {
+        "sha256": "7bee78d9e49e49218081f9072b2d9747a9b639d80060baf90adfe9123809c44c",
+        "bytes": 4281
+      },
+      "normalization": "heading/conclusion earlier-round redaction; separate Tones Copper maker link"
+    },
+    "rooms/TX-BATH3/board/round-026/candidates/A.md": {
+      "from_signed_prepared": "rooms/TX-BATH3/board/round-026/prepared/candidates/A.md",
+      "source": {
+        "sha256": "df10e8e7775d03175c789422e7057a8cc61e214c31fca42c72d6b443d958f625",
+        "bytes": 4274
+      },
+      "normalization": "heading/conclusion earlier-round redaction"
+    },
+    "rooms/TX-BATH3/board/round-026/candidates/B.md": {
+      "from_signed_prepared": "rooms/TX-BATH3/board/round-026/prepared/candidates/B.md",
+      "source": {
+        "sha256": "b22feb3928001841ab28ae5278dbe52d5b2936268d7662d6ea40f42577444e50",
+        "bytes": 4219
+      },
+      "normalization": "heading/conclusion earlier-round redaction"
+    }
+  },
+  "allowed_vendors": [
+    "Elm Surfaces",
+    "MSI Surfaces",
+    "Porcelanosa",
+    "Floor & Decor"
+  ],
+  "original_material_total_four_unit_usd": 23572.44,
+  "source_gross_waste_included_once_pct": 15,
+  "TX_BATH3_TUB_WALKIN_owner": "UNSELECTED",
+  "TX_BATH3_basin_status": "NOT DECLARED UNSELECTED",
+  "pre_dispatch_independent_verdict": null,
+  "four_critic_reports": false,
+  "formal_scores": null,
+  "champions_changed": false,
+  "owner_approval": false,
+  "procurement_release": false,
+  "global_DONE": false
+}

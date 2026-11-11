@@ -1,0 +1,101 @@
+{
+  "round": 16,
+  "as_of": "2026-11-06",
+  "reviewer": "worker-15",
+  "reviewer_actual_verdict": "PRECISE FIX2 — three residual neutral source-role comparison phrases",
+  "source_before": {
+    "sha256": "e08ea2e57fa161a55756a00b3953c1249329f8e4fad1082daf8edf725968997a",
+    "bytes": 3717
+  },
+  "source_after": {
+    "sha256": "dcc6e38897a0f92f65c372c2bc9526b54ddb139e9bdfff1788522e3007599d6a",
+    "bytes": 3639
+  },
+  "changed_candidates": [
+    {
+      "room": "TX-POWDER",
+      "letter": "B",
+      "path": "rooms/TX-POWDER/board/round-016/candidates/B.md",
+      "before": {
+        "sha256": "b0fe08eee37c65a91a75bc2b213fba549d942b2a023793d62c9446139c10cb5a",
+        "bytes": 6038
+      },
+      "after": {
+        "sha256": "4c82bdcf4c7479572b5a4bf1611f516cbd0a9e89136a985f2c721787fee962f9",
+        "bytes": 6170
+      },
+      "exact_replacements": 1,
+      "interrupted_write_reconciled": true
+    },
+    {
+      "room": "TX-POWDER2",
+      "letter": "A",
+      "path": "rooms/TX-POWDER2/board/round-016/candidates/A.md",
+      "before": {
+        "sha256": "8877d9c35034d6bb44c390abf0b4515caf722e7ed9f44a12a3f12af9d9ebb85b",
+        "bytes": 5239
+      },
+      "after": {
+        "sha256": "085d88c1e0f532e00f165cd09345c46b7c3b23c4012c8ffd49f3a1c13d08eaf2",
+        "bytes": 5285
+      },
+      "exact_replacements": 2,
+      "interrupted_write_reconciled": false
+    },
+    {
+      "room": "PH-POWDER",
+      "letter": "C",
+      "path": "rooms/PH-POWDER/board/round-016/candidates/C.md",
+      "before": {
+        "sha256": "e6015f9889cba660077f5ece4f792a85eb6279a32560146f99294a64d8e283e6",
+        "bytes": 5032
+      },
+      "after": {
+        "sha256": "e411f195732104d078ebf968f5347f9b756e3d2214ff4924ab5f688b7e469aa4",
+        "bytes": 5064
+      },
+      "exact_replacements": 1,
+      "interrupted_write_reconciled": false
+    }
+  ],
+  "other_three_candidate_fingerprints_byte_identical": {
+    "PH-POWDER/A": {
+      "sha256": "b59083b258847c86970d3b53a73570fc70d563161b957a0fcc76702c70592fc1",
+      "bytes": 4942
+    },
+    "TX-POWDER/C": {
+      "sha256": "d84879cea00c739c3518f28b94d00050f147391ba127e6bb7c602225179ceeac",
+      "bytes": 5950
+    },
+    "TX-POWDER2/B": {
+      "sha256": "a55050f3cbcf8b942f3e3ac044a2858995929f8b9e97a7bbd2fdcb6031a12dde",
+      "bytes": 5119
+    }
+  },
+  "shared_maker_research_unchanged": {
+    "sha256": "095a50f2ef6f091ac06cc40bdb7ed331540cf593f2798c1dd1f52532c998a130",
+    "bytes": 3965
+  },
+  "all_three_private_mappings_unchanged": {
+    "PH-POWDER": {
+      "sha256": "aed3a16b04eb5d115cecc4ae08a874f6bea0c5115aa77758fbfa424a117dd577",
+      "bytes": 356
+    },
+    "TX-POWDER": {
+      "sha256": "483d71deec3268d338698a160a34cc0588f773f4d4ba1fdd29b5765d36c08f0d",
+      "bytes": 332
+    },
+    "TX-POWDER2": {
+      "sha256": "d2149a377d5b3b08e224f8dd8aff7da53ccd2f39e9fd99c79f83cf759ce74760",
+      "bytes": 336
+    }
+  },
+  "original_plumbing_Smartsheet_Revit_modified": false,
+  "critic_dispatch": "NOT_DISPATCHED",
+  "R014_scoring": null,
+  "R015_scoring": null,
+  "R016_scoring": null,
+  "owner_approval": false,
+  "GC_release": false,
+  "procurement_release": false
+}

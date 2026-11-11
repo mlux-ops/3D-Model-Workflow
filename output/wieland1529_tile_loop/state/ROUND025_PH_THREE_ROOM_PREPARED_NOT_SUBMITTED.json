@@ -1,0 +1,145 @@
+{
+  "round": 25,
+  "phase": "SOURCE_PREPARED_NOT_SUBMITTED_R024_BOARD_ACTIVE",
+  "cohort": [
+    "PH-PRIMARY",
+    "PH-BATH3",
+    "PH-BATH4"
+  ],
+  "files": {
+    "research/products/R025_PH_THREE_ROOM_QUOTED_ELM_FD_LFT_WET_GATE_EVIDENCE.md": {
+      "sha256": "50e7531ce1d1990f1cc6b46dbd0528f7958db79a33de9da4cf6b93c119f18133",
+      "bytes": 4545
+    },
+    "rooms/PH-PRIMARY/board/round-025/prepared/candidates/A.md": {
+      "sha256": "825d8f18f2004c2312529a791683d3b36080a35b50c4f5518249644c37ea942d",
+      "bytes": 5180
+    },
+    "rooms/PH-PRIMARY/board/round-025/prepared/candidates/B.md": {
+      "sha256": "829523d574383c02cd7972b3e2daa58bab59a5efa8f43dd3b631f0d3e151e9fd",
+      "bytes": 5197
+    },
+    "rooms/PH-BATH3/board/round-025/prepared/candidates/A.md": {
+      "sha256": "e034f4f20ee52b545a08e90ba8bbfc99d2d0f5018c44d22d5befeed2eae42d16",
+      "bytes": 5398
+    },
+    "rooms/PH-BATH3/board/round-025/prepared/candidates/B.md": {
+      "sha256": "0ce42a269e535a64dcd797186deaefe639e0406a8de00ef5210c84c9863c5136",
+      "bytes": 5413
+    },
+    "rooms/PH-BATH4/board/round-025/prepared/candidates/A.md": {
+      "sha256": "beb17df231ddf4b3dd584df89f768140407a6f69772572e2150dff5f183ca133",
+      "bytes": 5285
+    },
+    "rooms/PH-BATH4/board/round-025/prepared/candidates/B.md": {
+      "sha256": "ea37c27a0651cd49b2a7f126a70d8c8721b8fb878d6c4beead603ea7e077f28b",
+      "bytes": 5263
+    }
+  },
+  "immutable_parents": {
+    "state/ROUND019_TILE_ONLY_NEXT_COHORT_SOURCE_AWAIT_R018_FORMAL_CLEARANCE.json": {
+      "sha256": "d37836b40dc599ada7f9fa5bd8147b3b80b0ec5cddd22ef28593e38d8d6b5f72",
+      "bytes": 5306
+    },
+    "state/ROUND022_LARGE_FORMAT_PRIMARY_PH4_SOURCE_PRELIMINARY_NOT_SUBMITTED.json": {
+      "sha256": "e7db6cb480868ee70876a6d4383c6e7bf5d82257e1967041e7d809834555b52b",
+      "bytes": 6442
+    },
+    "state/ROUND023_TRADE_PRICING_13_ROOM_ADDENDUM_SHA.json": {
+      "sha256": "33d60eed4f02079ec7e4eb53eb3b4265fbd5fc338573762b37670eda685f50b0",
+      "bytes": 6093
+    },
+    "state/ROUND024_FROZEN_THREE_DURAVIT_TUB_BLIND_SOURCE.json": {
+      "sha256": "91426540de3df3163271d6269464bd08fb2e2f431a2dcf038002c5b3604f9fe3",
+      "bytes": 2178
+    }
+  },
+  "allowed_vendors": [
+    "Elm Surfaces",
+    "MSI Surfaces",
+    "Porcelanosa",
+    "Floor & Decor"
+  ],
+  "historical_material_total_usd": 23572.44,
+  "all_six_product_schemes": "ELM exact wet-listed wall/niche + F&D exact large-format wet LEVEL and conditional shower PAN",
+  "PH_BATH3_owner_tub_vs_walkin": "UNSELECTED",
+  "PH_BATH3_owner_basin": "UNSELECTED",
+  "reviewer_preflight": null,
+  "critic_dispatch": null,
+  "weighted_scores": null,
+  "champions_changed": false,
+  "owner_approved": false,
+  "samples_ordered": false,
+  "FIX1": {
+    "independent_reviewer": "worker-21 PRECISE FIX",
+    "description": "Source room-specific POINT/LINEAR and TUB/WALK-IN language; provisional 125%-of-carried arithmetic, NULL owner allocation, exact PH3 half-up threshold",
+    "changes": [
+      {
+        "path": "rooms/PH-PRIMARY/board/round-025/prepared/candidates/A.md",
+        "before": {
+          "sha256": "5227727d9f4ae8540ab63a8eaefa6faf416704b3240d4f9460d1f427d237df2d",
+          "bytes": 5003
+        },
+        "after": {
+          "sha256": "825d8f18f2004c2312529a791683d3b36080a35b50c4f5518249644c37ea942d",
+          "bytes": 5180
+        }
+      },
+      {
+        "path": "rooms/PH-PRIMARY/board/round-025/prepared/candidates/B.md",
+        "before": {
+          "sha256": "c38cfa99100464b1b6b52eb165a4591cf3c2818a370116831135cdd30483ef81",
+          "bytes": 5020
+        },
+        "after": {
+          "sha256": "829523d574383c02cd7972b3e2daa58bab59a5efa8f43dd3b631f0d3e151e9fd",
+          "bytes": 5197
+        }
+      },
+      {
+        "path": "rooms/PH-BATH3/board/round-025/prepared/candidates/A.md",
+        "before": {
+          "sha256": "8099c0c1e3a005b26ab7c53e57084f63eada470f13208fcc389080153900a69e",
+          "bytes": 5205
+        },
+        "after": {
+          "sha256": "e034f4f20ee52b545a08e90ba8bbfc99d2d0f5018c44d22d5befeed2eae42d16",
+          "bytes": 5398
+        }
+      },
+      {
+        "path": "rooms/PH-BATH3/board/round-025/prepared/candidates/B.md",
+        "before": {
+          "sha256": "de8760dbe5f9fb0c24917bca0e5a725ca4955d554ab99206342812ab7a9f32e3",
+          "bytes": 5220
+        },
+        "after": {
+          "sha256": "0ce42a269e535a64dcd797186deaefe639e0406a8de00ef5210c84c9863c5136",
+          "bytes": 5413
+        }
+      },
+      {
+        "path": "rooms/PH-BATH4/board/round-025/prepared/candidates/A.md",
+        "before": {
+          "sha256": "2704d744c5c5e36aac1e109c9d115345af98756eec0c363a208e1810047de868",
+          "bytes": 5158
+        },
+        "after": {
+          "sha256": "beb17df231ddf4b3dd584df89f768140407a6f69772572e2150dff5f183ca133",
+          "bytes": 5285
+        }
+      },
+      {
+        "path": "rooms/PH-BATH4/board/round-025/prepared/candidates/B.md",
+        "before": {
+          "sha256": "fe1e236b6dd8be3c0683c89ad3def821086eab44cbd5dd4a97c31ed81e497a86",
+          "bytes": 5136
+        },
+        "after": {
+          "sha256": "ea37c27a0651cd49b2a7f126a70d8c8721b8fb878d6c4beead603ea7e077f28b",
+          "bytes": 5263
+        }
+      }
+    ]
+  }
+}

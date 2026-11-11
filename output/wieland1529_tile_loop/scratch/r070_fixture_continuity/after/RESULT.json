@@ -1,0 +1,298 @@
+{
+  "status": "PASS",
+  "phase": "after",
+  "cases": [
+    "PH-WC/314A",
+    "PH-WC/314B",
+    "TX-WC/203A",
+    "TX-WC/203B",
+    "PH-BATH2/305A",
+    "PH-BATH2/305B",
+    "TX-BATH2/205A",
+    "TX-BATH2/205B"
+  ],
+  "actual_chrome_captures": 18,
+  "errors": [],
+  "scene_roi_deltas": [
+    [
+      "PH-WC_314A_ISO.png",
+      0.147
+    ],
+    [
+      "PH-WC_314A_DETAIL.png",
+      46.661
+    ],
+    [
+      "PH-WC_314B_ISO.png",
+      0.133
+    ],
+    [
+      "PH-WC_314B_DETAIL.png",
+      45.755
+    ],
+    [
+      "TX-WC_203A_ISO.png",
+      0.144
+    ],
+    [
+      "TX-WC_203A_DETAIL.png",
+      59.373
+    ],
+    [
+      "TX-WC_203A_REVIT_CONTEXT.png",
+      0.0
+    ],
+    [
+      "TX-WC_203B_ISO.png",
+      0.121
+    ],
+    [
+      "TX-WC_203B_DETAIL.png",
+      60.813
+    ],
+    [
+      "PH-BATH2_305A_ISO.png",
+      1.222
+    ],
+    [
+      "PH-BATH2_305A_DETAIL.png",
+      0.84
+    ],
+    [
+      "PH-BATH2_305A_WET_STUDY.png",
+      0.0
+    ],
+    [
+      "PH-BATH2_305B_ISO.png",
+      1.03
+    ],
+    [
+      "PH-BATH2_305B_DETAIL.png",
+      0.736
+    ],
+    [
+      "TX-BATH2_205A_ISO.png",
+      0.869
+    ],
+    [
+      "TX-BATH2_205A_DETAIL.png",
+      1.17
+    ],
+    [
+      "TX-BATH2_205B_ISO.png",
+      0.691
+    ],
+    [
+      "TX-BATH2_205B_DETAIL.png",
+      1.018
+    ]
+  ],
+  "source_html_sha256": "c291cda1ddd9ed27c494c56500b47bf015bfa48314dbf5d0ab96eddf753e8d6d",
+  "picks_sha256": "a468848af7a7390a796a1d489b9a493b991dc5d30e478ed10eb0284818f92d0d",
+  "source_aware_corrective_validation": {
+    "method": "Source-fixture ROI pixel comparison on all 16 actual Chrome ISO/DETAIL after vs before captures",
+    "physical_captures_unchanged": true,
+    "full_26_or_78_legacy_suite_repeated": false,
+    "source_and_3d_provenance_checks_from_initial_chrome_pass": true,
+    "initial_only_invalid_global_appearance_errors": [
+      "no visible ceramic model improvement PH-WC_314A_ISO.png",
+      "no visible ceramic model improvement PH-WC_314B_ISO.png",
+      "no visible ceramic model improvement TX-WC_203A_ISO.png",
+      "no visible ceramic model improvement TX-WC_203B_ISO.png"
+    ],
+    "details": [
+      {
+        "name": "PH-WC_314A_ISO.png",
+        "source_fixture_roi": [
+          625,
+          430,
+          835,
+          630
+        ],
+        "mean_rgb_delta": 0.48,
+        "minimum": 0.1,
+        "actual_chrome_photograph": true
+      },
+      {
+        "name": "PH-WC_314A_DETAIL.png",
+        "source_fixture_roi": [
+          625,
+          430,
+          835,
+          630
+        ],
+        "mean_rgb_delta": 15.436,
+        "minimum": 1.0,
+        "actual_chrome_photograph": true
+      },
+      {
+        "name": "PH-WC_314B_ISO.png",
+        "source_fixture_roi": [
+          625,
+          430,
+          835,
+          630
+        ],
+        "mean_rgb_delta": 0.434,
+        "minimum": 0.1,
+        "actual_chrome_photograph": true
+      },
+      {
+        "name": "PH-WC_314B_DETAIL.png",
+        "source_fixture_roi": [
+          625,
+          430,
+          835,
+          630
+        ],
+        "mean_rgb_delta": 16.221,
+        "minimum": 1.0,
+        "actual_chrome_photograph": true
+      },
+      {
+        "name": "TX-WC_203A_ISO.png",
+        "source_fixture_roi": [
+          625,
+          430,
+          835,
+          630
+        ],
+        "mean_rgb_delta": 0.47,
+        "minimum": 0.1,
+        "actual_chrome_photograph": true
+      },
+      {
+        "name": "TX-WC_203A_DETAIL.png",
+        "source_fixture_roi": [
+          625,
+          430,
+          835,
+          630
+        ],
+        "mean_rgb_delta": 17.089,
+        "minimum": 1.0,
+        "actual_chrome_photograph": true
+      },
+      {
+        "name": "TX-WC_203B_ISO.png",
+        "source_fixture_roi": [
+          625,
+          430,
+          835,
+          630
+        ],
+        "mean_rgb_delta": 0.396,
+        "minimum": 0.1,
+        "actual_chrome_photograph": true
+      },
+      {
+        "name": "TX-WC_203B_DETAIL.png",
+        "source_fixture_roi": [
+          625,
+          430,
+          835,
+          630
+        ],
+        "mean_rgb_delta": 17.734,
+        "minimum": 1.0,
+        "actual_chrome_photograph": true
+      },
+      {
+        "name": "PH-BATH2_305A_ISO.png",
+        "source_fixture_roi": [
+          530,
+          395,
+          940,
+          730
+        ],
+        "mean_rgb_delta": 1.222,
+        "minimum": 0.6,
+        "actual_chrome_photograph": true
+      },
+      {
+        "name": "PH-BATH2_305A_DETAIL.png",
+        "source_fixture_roi": [
+          530,
+          395,
+          940,
+          730
+        ],
+        "mean_rgb_delta": 0.84,
+        "minimum": 0.6,
+        "actual_chrome_photograph": true
+      },
+      {
+        "name": "PH-BATH2_305B_ISO.png",
+        "source_fixture_roi": [
+          530,
+          395,
+          940,
+          730
+        ],
+        "mean_rgb_delta": 1.03,
+        "minimum": 0.6,
+        "actual_chrome_photograph": true
+      },
+      {
+        "name": "PH-BATH2_305B_DETAIL.png",
+        "source_fixture_roi": [
+          530,
+          395,
+          940,
+          730
+        ],
+        "mean_rgb_delta": 0.736,
+        "minimum": 0.6,
+        "actual_chrome_photograph": true
+      },
+      {
+        "name": "TX-BATH2_205A_ISO.png",
+        "source_fixture_roi": [
+          530,
+          395,
+          940,
+          730
+        ],
+        "mean_rgb_delta": 0.869,
+        "minimum": 0.6,
+        "actual_chrome_photograph": true
+      },
+      {
+        "name": "TX-BATH2_205A_DETAIL.png",
+        "source_fixture_roi": [
+          530,
+          395,
+          940,
+          730
+        ],
+        "mean_rgb_delta": 1.17,
+        "minimum": 0.6,
+        "actual_chrome_photograph": true
+      },
+      {
+        "name": "TX-BATH2_205B_ISO.png",
+        "source_fixture_roi": [
+          530,
+          395,
+          940,
+          730
+        ],
+        "mean_rgb_delta": 0.691,
+        "minimum": 0.6,
+        "actual_chrome_photograph": true
+      },
+      {
+        "name": "TX-BATH2_205B_DETAIL.png",
+        "source_fixture_roi": [
+          530,
+          395,
+          940,
+          730
+        ],
+        "mean_rgb_delta": 1.018,
+        "minimum": 0.6,
+        "actual_chrome_photograph": true
+      }
+    ]
+  }
+}

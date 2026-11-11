@@ -1,0 +1,358 @@
+{
+  "round": 36,
+  "date": "2026-11-07",
+  "original_criterion_count": 114,
+  "criterion_count": 114,
+  "seat_means_count": 24,
+  "weighted_count": 6,
+  "weights": {
+    "market": 0.3,
+    "design": 0.25,
+    "build": 0.25,
+    "cost": 0.2
+  },
+  "blind_integrity": "Original MARKET74 and BUILD78 strict-blind verified; isolated DESIGN 8524a1a2 and COST dc724613 (continued 810eda39) independently source-only; contaminated attempts 75/76/77/79/80 excluded",
+  "technical_note": "Only exact tile product applications checked; assembly/geometry/owner/commercial holds retained",
+  "owner_approvals": 0,
+  "rooms": {
+    "PH-BATH4": {
+      "incumbent_id": "round-030-B",
+      "incumbent_letter": "A",
+      "challenger_letter": "B",
+      "selected_letter": "B",
+      "selected_id": "round-036-B",
+      "selected_score": 3.86,
+      "other_score": 3.28,
+      "four_seat_complete": true,
+      "changed": true,
+      "decision_summary": "incumbent fails minimum specialist >=3.0; eligible challenger takes over",
+      "challenger_minus_incumbent": 0.58,
+      "incumbent_eligible_minimum": false,
+      "challenger_eligible_minimum": true,
+      "minimum_seat": 3.2,
+      "room_budget": "FILL IN",
+      "owner_approved": false,
+      "allowed_vendor_maker_applications": "Product-level maker wet WALL/vertical niche and separate exact LEVEL/PAN Shower Floor YES, wet DCOF>=0.42 checked; full physical assembly/field cuts NOT released",
+      "material_gross_rate_per_copy": 500.7,
+      "original_15_percent_waste": "included once; no new per-copy area or duplicated PAN purchase",
+      "conditional_pan_extra_sf": null,
+      "conditional_pan_extra_cost": null,
+      "scores": {
+        "A": {
+          "market": {
+            "criteria": [
+              "3",
+              "2",
+              "3",
+              "3"
+            ],
+            "mean": "2.8"
+          },
+          "design": {
+            "criteria": [
+              "3",
+              "3",
+              "5",
+              "4",
+              "4"
+            ],
+            "mean": "3.8"
+          },
+          "build": {
+            "criteria": [
+              "3",
+              "4",
+              "4",
+              "3",
+              "3"
+            ],
+            "mean": "3.4"
+          },
+          "cost": {
+            "criteria": [
+              "4",
+              "3",
+              "3",
+              "3",
+              "3"
+            ],
+            "mean": "3.2"
+          },
+          "weighted": "3.280",
+          "minimum_seat": "2.8",
+          "specialist_gate_pass": false
+        },
+        "B": {
+          "market": {
+            "criteria": [
+              "4",
+              "4",
+              "5",
+              "4"
+            ],
+            "mean": "4.3"
+          },
+          "design": {
+            "criteria": [
+              "4",
+              "5",
+              "4",
+              "4",
+              "4"
+            ],
+            "mean": "4.2"
+          },
+          "build": {
+            "criteria": [
+              "3",
+              "4",
+              "3",
+              "3",
+              "3"
+            ],
+            "mean": "3.2"
+          },
+          "cost": {
+            "criteria": [
+              "4",
+              "4",
+              "4",
+              "3",
+              "3"
+            ],
+            "mean": "3.6"
+          },
+          "weighted": "3.860",
+          "minimum_seat": "3.2",
+          "specialist_gate_pass": true
+        }
+      }
+    },
+    "PH-BATH3": {
+      "incumbent_id": "round-030-A",
+      "incumbent_letter": "B",
+      "challenger_letter": "A",
+      "selected_letter": "A",
+      "selected_id": "round-036-A",
+      "selected_score": 3.63,
+      "other_score": 3.36,
+      "four_seat_complete": true,
+      "changed": true,
+      "decision_summary": "incumbent fails minimum specialist >=3.0; eligible challenger takes over",
+      "challenger_minus_incumbent": 0.27,
+      "incumbent_eligible_minimum": false,
+      "challenger_eligible_minimum": true,
+      "minimum_seat": 3.2,
+      "room_budget": "FILL IN",
+      "owner_approved": false,
+      "allowed_vendor_maker_applications": "Product-level maker wet WALL/vertical niche and separate exact LEVEL/PAN Shower Floor YES, wet DCOF>=0.42 checked; full physical assembly/field cuts NOT released",
+      "material_gross_rate_per_copy": 598.71,
+      "original_15_percent_waste": "included once; no new per-copy area or duplicated PAN purchase",
+      "conditional_pan_extra_sf": null,
+      "conditional_pan_extra_cost": null,
+      "scores": {
+        "A": {
+          "market": {
+            "criteria": [
+              "3",
+              "4",
+              "4",
+              "4"
+            ],
+            "mean": "3.8"
+          },
+          "design": {
+            "criteria": [
+              "4",
+              "4",
+              "4",
+              "4",
+              "4"
+            ],
+            "mean": "4.0"
+          },
+          "build": {
+            "criteria": [
+              "3",
+              "4",
+              "4",
+              "3",
+              "3"
+            ],
+            "mean": "3.4"
+          },
+          "cost": {
+            "criteria": [
+              "3",
+              "4",
+              "3",
+              "3",
+              "3"
+            ],
+            "mean": "3.2"
+          },
+          "weighted": "3.630",
+          "minimum_seat": "3.2",
+          "specialist_gate_pass": true
+        },
+        "B": {
+          "market": {
+            "criteria": [
+              "4",
+              "5",
+              "3",
+              "3"
+            ],
+            "mean": "3.8"
+          },
+          "design": {
+            "criteria": [
+              "3",
+              "4",
+              "4",
+              "3",
+              "3"
+            ],
+            "mean": "3.4"
+          },
+          "build": {
+            "criteria": [
+              "4",
+              "3",
+              "4",
+              "3",
+              "3"
+            ],
+            "mean": "3.4"
+          },
+          "cost": {
+            "criteria": [
+              "2",
+              "2",
+              "3",
+              "3",
+              "3"
+            ],
+            "mean": "2.6"
+          },
+          "weighted": "3.360",
+          "minimum_seat": "2.6",
+          "specialist_gate_pass": false
+        }
+      }
+    },
+    "TX-BATH3": {
+      "incumbent_id": "round-031-B",
+      "incumbent_letter": "A",
+      "challenger_letter": "B",
+      "selected_letter": "A",
+      "selected_id": "round-031-B",
+      "selected_score": 3.63,
+      "other_score": 3.61,
+      "four_seat_complete": true,
+      "changed": false,
+      "decision_summary": "eligible incumbent defended; challenger delta -0.020 below effective displacement",
+      "challenger_minus_incumbent": -0.02,
+      "incumbent_eligible_minimum": true,
+      "challenger_eligible_minimum": false,
+      "minimum_seat": 3.2,
+      "room_budget": "FILL IN",
+      "owner_approved": false,
+      "allowed_vendor_maker_applications": "Product-level maker wet WALL/vertical niche and separate exact LEVEL/PAN Shower Floor YES, wet DCOF>=0.42 checked; full physical assembly/field cuts NOT released",
+      "material_gross_rate_per_copy": 685.92,
+      "original_15_percent_waste": "included once; no new per-copy area or duplicated PAN purchase",
+      "conditional_pan_extra_sf": null,
+      "conditional_pan_extra_cost": null,
+      "scores": {
+        "A": {
+          "market": {
+            "criteria": [
+              "4",
+              "3",
+              "4",
+              "4"
+            ],
+            "mean": "3.8"
+          },
+          "design": {
+            "criteria": [
+              "4",
+              "4",
+              "5",
+              "3",
+              "3"
+            ],
+            "mean": "3.8"
+          },
+          "build": {
+            "criteria": [
+              "4",
+              "4",
+              "4",
+              "3",
+              "3"
+            ],
+            "mean": "3.6"
+          },
+          "cost": {
+            "criteria": [
+              "3",
+              "4",
+              "3",
+              "3",
+              "3"
+            ],
+            "mean": "3.2"
+          },
+          "weighted": "3.630",
+          "minimum_seat": "3.2",
+          "specialist_gate_pass": true
+        },
+        "B": {
+          "market": {
+            "criteria": [
+              "4",
+              "5",
+              "4",
+              "3"
+            ],
+            "mean": "4.0"
+          },
+          "design": {
+            "criteria": [
+              "4",
+              "4",
+              "5",
+              "4",
+              "4"
+            ],
+            "mean": "4.2"
+          },
+          "build": {
+            "criteria": [
+              "4",
+              "3",
+              "3",
+              "3",
+              "3"
+            ],
+            "mean": "3.2"
+          },
+          "cost": {
+            "criteria": [
+              "3",
+              "2",
+              "3",
+              "3",
+              "3"
+            ],
+            "mean": "2.8"
+          },
+          "weighted": "3.610",
+          "minimum_seat": "2.8",
+          "specialist_gate_pass": false
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "round": 27,
+  "artifact_type": "additive retrospective dispatch-evidence audit; NOT a contemporaneous dispatch receipt",
+  "status": "RECONSTRUCTED_FROM_AUTHENTIC_WORKER_RESULTS_AND_SCORED_COLLECTION",
+  "limitation": "The expected state/ROUND027_FOUR_FRESH_AUTHENTIC_CRITIC_DISPATCH.json was not found. This artifact does not claim to be that missing receipt or to prove exact dispatch timestamps/order.",
+  "worker_family_run_id": "41d507e4-c330-4400-af7a-840c98ebd7f5",
+  "reviewer_run_id": "8a358fec-5853-4dea-81a6-0d5ef17fedf1",
+  "reviewer_verdict": "CONTINUE FOR R027 NONACCEPTANCE ONLY",
+  "valid_final_assignments": [
+    {"room":"PH-BATH2","seat":"MARKET","worker":"worker-41","file":"rooms/PH-BATH2/board/round-027/critic-market.md","sha256":"bd5d9795ec4de22f46dc596e0cc7ed6393a10a82f4c38a60f14ec2766c3564c3","bytes":9357},
+    {"room":"PH-BATH2","seat":"DESIGN","worker":"worker-42","file":"rooms/PH-BATH2/board/round-027/critic-design.md","sha256":"3b3c76a7ed22d1e290a4f5b62d527a3af01e8314d12efc0aaa536ec6ae848391","bytes":8224},
+    {"room":"PH-BATH2","seat":"BUILD","worker":"worker-43","file":"rooms/PH-BATH2/board/round-027/critic-build.md","sha256":"e41f047ddc7728c5f19900ed6f4b02ebc6290acc48dc7510f11e23fc84356821","bytes":9006},
+    {"room":"PH-BATH2","seat":"COST","worker":"worker-44","file":"rooms/PH-BATH2/board/round-027/critic-cost.md","sha256":"bd5b817f982167a4ed0a8071cdbd6c69ceba7d1c3dbf5b2702ea18a9e1c87ed6","bytes":7944},
+    {"room":"TX-BATH2","seat":"MARKET","worker":"worker-45","file":"rooms/TX-BATH2/board/round-027/critic-market.md","sha256":"c50067cbaa77653b652de77892635219ac91b1261268fcb4fa3c228bf6e9361d","bytes":6705},
+    {"room":"TX-BATH2","seat":"DESIGN","worker":"worker-47","file":"scratch/R027_TX_BATH2_DESIGN_REPLACEMENT.md","sha256":"db81ec39870df7877561da3ee8f752d5816f1d888f4c88e5e5115018cbfe0439","bytes":6948},
+    {"room":"TX-BATH2","seat":"BUILD","worker":"worker-48","file":"scratch/R027_TX_BATH2_BUILD_REPLACEMENT.md","sha256":"a73b74e15f3bcc89ff822f92e7792250063d38a2d0878444c49a15b9f99091fa","bytes":6095},
+    {"room":"TX-BATH2","seat":"COST","worker":"worker-54","file":"scratch/R027_TX_BATH2_COST_REPLACEMENT.md","sha256":"cad4b45107d2b761d9c170429eaa6cdaa939362e59946d02fcdfa0c35b6e6283","bytes":14803},
+    {"room":"TX-BATH4","seat":"MARKET","worker":"worker-50","file":"rooms/TX-BATH4/board/round-027/critic-market.md","sha256":"9b6898bbe9bb2aee602a25a209474be13e538140246428f4c22c41245e32194f","bytes":4765},
+    {"room":"TX-BATH4","seat":"DESIGN","worker":"worker-51","file":"rooms/TX-BATH4/board/round-027/critic-design.md","sha256":"0a33de84787746f4b9d65ffcad2b6ca6c262084dcc417e217f7cef52fe6ff85e","bytes":7308},
+    {"room":"TX-BATH4","seat":"BUILD","worker":"worker-52","file":"rooms/TX-BATH4/board/round-027/critic-build.md","sha256":"906833c6d2c5497abe337e97dbb89824baf4a35ac8c5a6ac5e01ffad9eb38368","bytes":7816},
+    {"room":"TX-BATH4","seat":"COST","worker":"worker-53","file":"rooms/TX-BATH4/board/round-027/critic-cost.md","sha256":"e04181d9d358106a7a8f83092b1570a94c84fbbba942befa3a3a92c298dd2bfd","bytes":5921}
+  ],
+  "excluded_historical_assignments": [
+    {"worker":"worker-42","room":"TX-BATH2","seat":"DESIGN","reason":"Cross-room reuse; same worker validly covered PH-BATH2 DESIGN."},
+    {"worker":"worker-43","room":"TX-BATH2","seat":"BUILD","reason":"Cross-room reuse; same worker validly covered PH-BATH2 BUILD."},
+    {"worker":"worker-49","room":"TX-BATH2","seat":"COST","reason":"Prohibited vendor_comparison register read recorded in collection receipt; excluded."},
+    {"worker":"worker-46","room":"TX-BATH2","seat":"MARKET replacement","reason":"Unnecessary duplicate; original worker45 MARKET retained."}
+  ],
+  "validation": {
+    "valid_assignment_count": 12,
+    "distinct_worker_count": 12,
+    "rooms_with_four_distinct_seats": ["PH-BATH2","TX-BATH2","TX-BATH4"],
+    "all_12_file_hash_byte_pairs_match_scored_collection_and_reviewer_clearance": true,
+    "worker54_completion_result_verified_in_family": true,
+    "private_mappings_exposed": false,
+    "no_champion_promoted": true,
+    "score_receipt": "state/ROUND027_AUTHENTIC_FOUR_SEAT_COLLECTION_SCORED_NO_CHAMPIONS.json",
+    "independent_repeat_review": "state/ROUND027_INDEPENDENT_POSTSCORE_REVIEWER40_CLEARANCE.json"
+  },
+  "acceptance": "NONE; all three rooms remain blocked. This audit records evidence provenance only."
+}

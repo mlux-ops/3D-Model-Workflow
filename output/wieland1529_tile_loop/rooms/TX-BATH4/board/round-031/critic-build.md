@@ -1,0 +1,43 @@
+# R031 independent blind BUILD critique — TX-BATH4
+
+**Seat:** BUILD / installer + GC, 0.25 weighting for prime's later computation only. Evaluate R031 **A** and **B** separately for physical **007A/007B**; five equally weighted criteria rated 1–5, arithmetic mean at one decimal. No prior score or incumbent mapping considered.
+
+**Fixed room program:** [plumbing.json](../../plumbing.json) selects **Duravit Starck 700332000000090 white 59 × 29.5-in TUB**, Hansgrohe **Rainfinity/Ecostat Matte White** wall fixtures, Westbrass tub waste/overflow. **No tiled PAN**, no 4-in point drain, no tiled ceiling. Drawing-only [geometry.json](../../geometry.json): W1 **5.00 ft**, W2/W3 **2.54 ft**, assumed tile height **7.75 ft** and prior floor **38.5 SF**; all live openings, niche position and actual cuts unverified. Source quantities per copy **89.80 gross SF WALL, 8.63 gross SF all niche faces combined, 44.30 gross SF LEVEL** already carry **15% waste once**.
+
+## Candidate A — Elm Cortar Charcoal FLAT Soft walls / Tones Sandstone niche / Luxe Sand LEVEL
+
+| BUILD criterion | 1–5 | Independent installation evidence |
+|---|---:|---|
+| **1. Individual maker wet WALL and LEVEL wet DCOF** | **5** | [Elm Cortar **Charcoal FLAT Soft 24×48**](https://www.elmsurfaces.com/product/cortar-charcoal) individually lists **Walls + Wet Areas**; this permission is **not transferred to Ribbed/Reed**. [Elm Tones Sandstone 2×20](https://www.elmsurfaces.com/product/sandstone-tones) separately lists **Walls + Wet Areas** for niche. Exact [F&D Luxe Sand 24×24 **101317949**](https://www.flooranddecor.com/porcelain-tile/luxe-sand-matte-porcelain-tile-101317949.html) lists **wet DCOF ≥0.42 and Bathroom Floor YES**. Tub PAN **N/A**. |
+| **2. Wall substrate and large-format setout** | **3** | 9-mm 24×48 vertical straight-stack avoids running-bond half offsets, but demands flat wet-wall substrate and careful handling in the drawing 5.00-ft back/2.54-ft return geometry. Manufacturer actual calibration, corners, full-height courses, Matte White valve penetrations and potential <3-in focal cuts remain unverified ([geometry.json](../../geometry.json), [plumbing.json](../../plumbing.json)). |
+| **3. Selected tub/wet-wall and material transition** | **4** | Duravit TUB and actual Hansgrohe Matte White iBox/valve/tub spout are identifiable in [plumbing.json](../../plumbing.json), helping center planned penetrations. Tub flange, rim movement joint, membrane return and backer support still need a measured section; **no new pan/waste conversion**. Sandstone niche **8.5 mm vs Cortar 9 mm** requires setting-plane/profile coordination. |
+| **4. Niche returns/head/sill and trim** | **2** | The **2×20 Sandstone** fits a wet-wall listing yet long pieces in an unmeasured recess may require difficult short crops; niche aperture, back, returns, top and positive-fall sill are all unknown. **8.63 gross SF covers the five faces once**, with opening deduction, 9-to-8.5-mm interface, waterproof corners, profile depth/finish and grout transition held. |
+| **5. LEVEL layout and original waste accounting** | **3** | **23.70-in actual, 8-mm rectified** Luxe meets owner's nominal 24-in floor preference and exact wet DCOF. Original **44.30 gross SF** already includes 15% waste; real 38.5-SF floor around tub/door/fixtures, threshold, substrate flatness and visible minimum cuts remain unknown. No separate shower PAN or speculative cut waste is billed. |
+
+**BUILD A seat mean:** (5 + 3 + 4 + 2 + 3) ÷ 5 = **3.4 / 5**.
+
+**top_fix A:** Measure the niche and wet-tub elevations, then resolve the **Cortar 24×48 wall edge/penetration setout and Sandstone 9-to-8.5-mm recess sill/profile** with positive fall and no focal slivers.
+
+**hard gate_flags A:** **None confirmed**: exact wet WALL listings and Luxe LEVEL DCOF qualify; no selected global/local discontinuation, recorded owner veto or Matte White finish clash evidenced. **OPEN field/commercial risks:** actual 24×48 field fitting, tub flange/membrane, niche edge and sill assembly, local lot/ETA and approved budget/landed cost. **TUB/no PAN.**
+
+**confidence A:** **Medium**.
+
+## Candidate B — F&D Perimeter Gray walls / La Belle Purity niche / Riviera Oat LEVEL
+
+| BUILD criterion | 1–5 | Independent installation evidence |
+|---|---:|---|
+| **1. Exact wet WALL and LEVEL DCOF + SKU/availability identity** | **5** | Selected wall is **Floor & Decor Adessi Perimeter Gray SKU 101239218**, **not Chastain**: [exact Perimeter product page](https://www.flooranddecor.com/porcelain-tile/perimeter-gray-matte-porcelain-tile-101239218.html) lists **Shower Walls YES**, and also **wet DCOF ≥0.42, Bathroom Floor/Shower Floor YES** (only its wall use is selected here). [La Belle Purity **100507722**](https://www.flooranddecor.com/ceramic-tile/la-belle-purity-high-gloss-ceramic-tile-100507722.html) explicitly has **Shower Walls YES / Shower Floor NO**, suitable at niche faces. Exact [Riviera Oat **101487775**](https://www.flooranddecor.com/porcelain-tile/riviera-oat-matte-porcelain-tile-101487775.html) lists **Bathroom Floor YES and wet DCOF ≥0.42**. Dated [R030 exact-SKU store study](../../../../research/products/R030_FIVE_SKU_LIVE_STORE_CONTEXT_VERIFICATION_20261107.md) records **no local discontinued notice for selected Perimeter**; its Chicago lot remains unknown. |
+| **2. Wall substrate and large-format setout** | **3** | 9-mm rectified **Perimeter 24×48**, vertical straight stack, is workable on flat substrate but requires full-height module/valve/glass placement study. Seller shows **48×24-in dimension fields vs only 7.75 SF/piece**: factory actual face caliber cannot be assumed from nominal length; under-3-in focal cuts not established in 5.00-ft and 2.54-ft drawing walls. |
+| **3. Selected tub/wet-wall and material transition** | **4** | Branded Hansgrohe Matte White tub spout, valve/iBox and Duravit/Westbrass assembly are identifiable in [plumbing.json](../../plumbing.json), allowing a planned penetration grid. Tub flange/setting membrane, movement joint and bath level threshold still require field sections. **9-mm Perimeter field vs 8.5-mm pressed La Belle** must be resolved at niche edges. |
+| **4. Niche returns/head/sill and trim** | **3** | La Belle **3×12 pressed** pieces shorten niche returns compared with A's 20-in sticks and exact **Shower Walls YES** supports wet faces. Actual W3 aperture, return/head, positive fall on sill, membrane corners, profile depth/finish, 1/16-in niche versus proposed field grout and edge behavior remain unverified; **8.63 gross SF covers all faces once**. La Belle Shower Floor NO is irrelevant to niche-only use. |
+| **5. LEVEL layout and original waste accounting** | **2** | Riviera Oat **23.58×47.28-in actual /8-mm rectified** is an owner-preferred large-format **24×48 nominal** LEVEL with published DCOF and Bathroom Floor YES. It creates longer cuts around a small ~38.5-SF bath than A's 24×24 tile; real threshold/vanity/tub cuts and visible <3-in slivers are unverified, not automatic vetoes. Original **44.30 gross SF** already contains source 15% waste; no tiled PAN or second overage. |
+
+**BUILD B seat mean:** (5 + 3 + 4 + 3 + 2) ÷ 5 = **3.4 / 5**.
+
+**top_fix B:** Obtain Perimeter **101239218 factory-calibrated tile size** and a room LEVEL/Wall cut grid showing no unavoidable focal slivers, then detail the **La Belle 8.5-mm niche sill/edge transition** against 9-mm Perimeter.
+
+**hard gate_flags B:** **None confirmed for specified products.** Exact **Perimeter Gray 101239218** shower-wall permission, **Riviera Oat 101487775** bathroom wet DCOF, and **Purity 100507722** wet niche-wall permission each separately evidenced. No Chastain in selected surfaces; its documented site-local discontinuation warning must **not** be transferred to Perimeter. No known Matte White clash or owner veto. **OPEN:** unmeasured minimum cuts, factory caliber, waterproof tub/niche sill/profile, Chicago matching lot and all-in budget. **PAN N/A (Duravit TUB).**
+
+**confidence B:** **Medium** — exact SKU applications verified, wall/floor geometry and Chicago distribution unmeasured.
+
+**Source/commercial discipline:** own current R031 candidate A and B, own geometry.json/plumbing.json, linked exact manufacturer/vendor pages, permitted research/products/elm-cortar-charcoal-24x48-soft.md, elm-tones-sandstone-2x20.md, R030_FIVE_SKU_LIVE_STORE_CONTEXT_VERIFICATION_20261107.md, and inputs/TRADE_QUOTES.md. Elm same-job **2026-09-04 $8.14/SF Cortar and $6.95/SF Tones** are quotes, not guaranteed current lots. F&D **Perimeter $3.99, Purity $5.56, Riviera $3.99/SF** are **2026-11-07 Kirkwood, Georgia retail**; no Chicago inventory assertion, purchase, installation or champion selection.

@@ -1,0 +1,3 @@
+# R19 — manufacturer-published ANSI A326.3 numeric color DCOF; wet test condition unspecified
+
+This is an additive future manufacturer LAB source lead, NOT a replacement for v4 or R014/R015 frozen blind candidates. Official Zia Cantera ANSI A326.3 manufacturer color table credits SGS and publishes seven decimal values, but the actual wet fluid/test condition and underlying original specimen report, exact tested format/SKU/finish/sealer/wax and installed condition are unavailable; strict individual RAW original lab gate remains unclosed. The original $23,572.44 four-unit historic basis, 15% once, 13 owner rooms, selected plumbing, source scores null and release false remain. No sample, render, quote, vendor outreach or purchases.

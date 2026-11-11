@@ -1,0 +1,3 @@
+# Soho Emerald 2x10 Glossy exact wet WALL item — R019 2026-11-06
+
+Official manufacturer https://www.elmsurfaces.com/product/soho-emerald — **Soho Emerald**, **2 x 10 in**, **Glossy**, **9.5 mm**. Individual product lists **Walls, Wet Areas**. Supports a wet shower/TUB surround **wall**, not a floor; does not imply original Tones Emerald's exact finish approval. 2x10 vertical stacked field option contrasts with Brizo Black Onyx. Chicago ELM distributor company present but available exact dye lot, factory SKU/order code, carton yield, project price and ETA UNKNOWN. Owner has not selected the change; no purchase.

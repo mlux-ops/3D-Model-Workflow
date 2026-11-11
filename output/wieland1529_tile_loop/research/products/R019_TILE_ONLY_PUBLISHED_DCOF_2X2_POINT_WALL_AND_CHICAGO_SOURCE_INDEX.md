@@ -1,0 +1,15 @@
+# R019 blocked wet-bath tile-selection evidence — 2026-11-06
+
+Distinct next-source focus PH-BATH3, PH-BATH4 and TX-BATH3. R018 stays source-frozen/UNSCORED and must receive formal independent pre-dispatch clearance and four authentic original specialist critiques BEFORE dispatching/scoring R019. Not an owner selection or installed shop/PO.
+
+**Actual blocker substitutions:** PH-BATH3 source Tones Opal individual wet-wall unlisted -> sourced individual Sapphire (archived manufacturer item) or current Noho Ivory wet WALL. PH-BATH4 original Bone Ribbed wet WALL + Caviar NICHE unlisted -> flat Bone wet WALL + separately wet-listed Soho Black or Ivory NICHE. TX-BATH3 original Tones Emerald exact current product wet approval uncertain -> individually wet-listed Soho Emerald green or Noho Ivory matte WALL, separately wet-listed Sandstone or Soho Black NICHE. All bath LEVEL original Cortar Soft floors lack product-published wet DCOF -> exact Emser Capisco Trosa/Boden 12x24 Matte item-published >=0.60 for LEVEL only.
+
+**Genuinely new POINT PAN options:** exact Emser Technique Ivory F16TECHIV1212MO 2x2 Matte 9.5mm and Source Pure White W71SOURPWH1212MO2 2x2 Matte 6mm each individually list **Shower Floor Residential YES** and **wet DCOF >0.60**, not generic family targets. 2x2 allows proposed four-plane transitions at 4in square POINT only with actual drain/mesh/backer approval. For PH3/TX3 owner unselected TUB branch, PAN N/A; WALK-IN conditional and square drain never substitutes tub waste. PH4 WALK-IN fixed.
+
+**Board gate interpretation:** board/BOARD.md explicitly requires a published product-specific wet DCOF >=0.42, not an invented exact laboratory point. Maker DCOF >=0.60 or >0.60 is a genuine published bound; meets that narrow board criterion but does not document exact raw reading or site waterproofing/drain assembly. Product-specific current U.S. maker page = evidence of U.S. distribution; Chicago actual orderable same lot/on-hand cartons/lead = UNKNOWN. ELM public site states Chicago address; Emser official list has Bensenville IL showroom. No vendor contact.
+
+**Historical cost:** original material-only totals PH3 $930.42, PH4 $1,352.24, TX3 $958.88 per room copy, each original 15% gross waste already ONCE. Wall/floor/niche line SF and price are exact source carried *old items* not alternative quotes. New PAN SF, substitute price, installation cost and owner per-room budget are UNKNOWN. Original entire four-unit source remains $23,572.44.
+
+**Market evidence:** OT01-04 one 405 W Armitage development, OT05 1849 N Mohawk different Old Town Triangle property; listing text supports program only unless bath photo is visually attributable. Adjacent LP/GC explicitly secondary. No visual claims made without an inspected exact bath photo.
+
+**Formal state:** original DESIGN worker-9 failed/not listening; original Reviewer worker-15 finished/nonrevivable. No private history role mapping or signed predecessor mutation. R019 candidate source prepared in advance of independent R018 clearance, **NOT_DISPATCHED, score NULL, championship unchanged**.

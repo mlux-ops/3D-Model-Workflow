@@ -1,0 +1,171 @@
+{
+  "round": 22,
+  "phase": "NEXT_ELIGIBLE_BLOCKED_SOURCE_PRELIMINARY_NOT_SUBMITTED",
+  "rooms": [
+    "PH-PRIMARY",
+    "TX-PRIMARY",
+    "PH-BATH4"
+  ],
+  "owner_large_format_floor_and_pan_directive": "2026-11-07 latest OWNER_FEEDBACK lines 53-57",
+  "manufacturer_and_US_availability_gate": "PRODUCT_PAGE_DOC_PASSES_NARROW_DCOF_SHOWER_USE, CHICAGO_LOT_UNVERIFIED",
+  "files": {
+    "research/products/R022_FD_LUXE_SAND_RIVIERA_OAT_24PLUS_LEVEL_AND_SHOWER_PAN.md": {
+      "sha256": "9ba1ef80fa15172a6802128bcb7af6a6934de63ad87e38ea5ab58894583356cf",
+      "bytes": 5439
+    },
+    "rooms/PH-PRIMARY/board/round-022/candidates/A.md": {
+      "sha256": "af62cdb1329e028e8587c2fa14533fa036e5049ced8eb295560c0f086d3ee703",
+      "bytes": 5647
+    },
+    "rooms/PH-PRIMARY/board/round-022/candidates/B.md": {
+      "sha256": "3c8d96d9ada90c4391da81270bc32a103bd5a145b883c6501ccd85a176451e63",
+      "bytes": 6048
+    },
+    "rooms/TX-PRIMARY/board/round-022/candidates/A.md": {
+      "sha256": "36d939ffe370f2890548a40ca576af8ff03eb2c876b0eed22753fdb6ae8ef332",
+      "bytes": 5895
+    },
+    "rooms/TX-PRIMARY/board/round-022/candidates/B.md": {
+      "sha256": "2ee93ad5d6a23080a065d28aaf3e391f5173368a0266615d2437a77fc0c68bb8",
+      "bytes": 5827
+    },
+    "rooms/PH-BATH4/board/round-022/candidates/A.md": {
+      "sha256": "bc50022d1523a9d42f90742e54c2f9f730651462809545c6f00edb65293f5fcd",
+      "bytes": 5828
+    },
+    "rooms/PH-BATH4/board/round-022/candidates/B.md": {
+      "sha256": "da0bbabfca0d0edfbff58f26a86a183c0b0002c8591fb85fe340290fa7f141ef",
+      "bytes": 6068
+    }
+  },
+  "immutable_parents": {
+    "state/ROUND018_TUB_TILE_SOURCE_PREPARED_AWAIT_BLIND_PREFLIGHT.json": {
+      "sha256": "4f65a040f95a885c17e05be972c08192b9fbc6181f1fda0b3517fb1072f3d4f9",
+      "bytes": 1985
+    },
+    "state/ROUND019_TILE_ONLY_NEXT_COHORT_SOURCE_AWAIT_R018_FORMAL_CLEARANCE.json": {
+      "sha256": "d37836b40dc599ada7f9fa5bd8147b3b80b0ec5cddd22ef28593e38d8d6b5f72",
+      "bytes": 5306
+    },
+    "state/ROUND020_PRIMARY_TILE_SOURCE_PREPARED_NOT_SUBMITTED.json": {
+      "sha256": "4114c4386a0f616b59e39a641b47408c485d360fca9c753d10b0e357ff1fcca3",
+      "bytes": 2776
+    },
+    "state/ROUND021_POWDER_TILE_PRELIMINARY_SOURCE_NOT_SUBMITTED.json": {
+      "sha256": "a1c1d41ae3ab50738db3a868f6675b5a84a52a08df633f5e9cbea3a262660a9c",
+      "bytes": 3898
+    },
+    "state/ROUND021_ALLOWED_VENDOR_POLICY_AND_EXTRA_CHALLENGERS_PRELIMINARY.json": {
+      "sha256": "44c57fcc6ba0b4d2621d3c257c4bf159410b7732924e291af894740fbfe7a272",
+      "bytes": 4595
+    }
+  },
+  "neutral_role_map": "NONE: no incumbent champions in these blocked rooms, all options unaccepted",
+  "independent_predispatch": null,
+  "four_authentic_critics": false,
+  "formal_dispatch": "NOT_DISPATCHED",
+  "score": null,
+  "champion_changes": false,
+  "owner_approved": false,
+  "procurement_release": false,
+  "native_1527_equals_1529_owner_confirmed": true,
+  "native_element_room_recheck_pending": true,
+  "FIX1": {
+    "reason": "Floor & Decor Riviera Oat 24x48 price varies across seller stores; 2026-11-06 Camelback page shows $4.39/SF $70.24/box, earlier different storefront showed $3.99/SF $63.84/box; neither Chicago stock/price",
+    "changes": [
+      {
+        "path": "research/products/R022_FD_LUXE_SAND_RIVIERA_OAT_24PLUS_LEVEL_AND_SHOWER_PAN.md",
+        "before": {
+          "sha256": "3f792de55029e97798166af81543083942f0f5ef9798c9f270994e018df9f94a",
+          "bytes": 5302
+        },
+        "after": {
+          "sha256": "12818d410d9b1e1636b29b837efa5cbcb9d9ab1e1d06bb7b0203c8966fa3f276",
+          "bytes": 5437
+        }
+      },
+      {
+        "path": "rooms/PH-PRIMARY/board/round-022/candidates/B.md",
+        "before": {
+          "sha256": "d7359ebf211e639dc011d390b842b65a44c6a445d1afbc24b27918d952abd51d",
+          "bytes": 5839
+        },
+        "after": {
+          "sha256": "6322f6862c8ce7a46f8e8e1c1aa294c3a1cedacbbe4177658fd934d6e109a001",
+          "bytes": 5977
+        }
+      },
+      {
+        "path": "rooms/TX-PRIMARY/board/round-022/candidates/A.md",
+        "before": {
+          "sha256": "2d6e519f834d853a0a190df892712e6e002ccce0d0ae3abd88c5c784b34d940e",
+          "bytes": 5686
+        },
+        "after": {
+          "sha256": "2b574b5849d84acc4a75f4e2847b134fc1446be986e59ded8b9dd7cbba094791",
+          "bytes": 5824
+        }
+      },
+      {
+        "path": "rooms/PH-BATH4/board/round-022/candidates/B.md",
+        "before": {
+          "sha256": "6f682d22d722c10c2571a3709e5734798d5f18053a171f482435dacaa3decae9",
+          "bytes": 5859
+        },
+        "after": {
+          "sha256": "513fd22820536c99195a59755b6f3d241a15aaf7603f82fc163ee34d1112fe8f",
+          "bytes": 5997
+        }
+      }
+    ]
+  },
+  "FIX2": {
+    "reason": "Correct residual Riviera Oat site-default $3.99 claim and malformed source formatting; price is storefront-dependent $3.99 to $4.39",
+    "changes": [
+      {
+        "path": "research/products/R022_FD_LUXE_SAND_RIVIERA_OAT_24PLUS_LEVEL_AND_SHOWER_PAN.md",
+        "before": {
+          "sha256": "12818d410d9b1e1636b29b837efa5cbcb9d9ab1e1d06bb7b0203c8966fa3f276",
+          "bytes": 5437
+        },
+        "after": {
+          "sha256": "9ba1ef80fa15172a6802128bcb7af6a6934de63ad87e38ea5ab58894583356cf",
+          "bytes": 5439
+        }
+      },
+      {
+        "path": "rooms/PH-PRIMARY/board/round-022/candidates/B.md",
+        "before": {
+          "sha256": "6322f6862c8ce7a46f8e8e1c1aa294c3a1cedacbbe4177658fd934d6e109a001",
+          "bytes": 5977
+        },
+        "after": {
+          "sha256": "3c8d96d9ada90c4391da81270bc32a103bd5a145b883c6501ccd85a176451e63",
+          "bytes": 6048
+        }
+      },
+      {
+        "path": "rooms/TX-PRIMARY/board/round-022/candidates/A.md",
+        "before": {
+          "sha256": "2b574b5849d84acc4a75f4e2847b134fc1446be986e59ded8b9dd7cbba094791",
+          "bytes": 5824
+        },
+        "after": {
+          "sha256": "36d939ffe370f2890548a40ca576af8ff03eb2c876b0eed22753fdb6ae8ef332",
+          "bytes": 5895
+        }
+      },
+      {
+        "path": "rooms/PH-BATH4/board/round-022/candidates/B.md",
+        "before": {
+          "sha256": "513fd22820536c99195a59755b6f3d241a15aaf7603f82fc163ee34d1112fe8f",
+          "bytes": 5997
+        },
+        "after": {
+          "sha256": "da0bbabfca0d0edfbff58f26a86a183c0b0002c8591fb85fe340290fa7f141ef",
+          "bytes": 6068
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,106 @@
+{
+ "schema_version": 1,
+ "operation_id": "229b77eb-ec5f-4eb5-b6d8-d4511dfe009d",
+ "status": "completed",
+ "request": {
+  "schema_version": 1,
+  "operation_id": "229b77eb-ec5f-4eb5-b6d8-d4511dfe009d",
+  "operation": "elements.query",
+  "document": {
+   "session_id": "915612da-3558-4041-9d21-e0da02c90cb3"
+  },
+  "arguments": {
+   "category": "OST_PlumbingFixtures",
+   "limit": 2
+  }
+ },
+ "result": {
+  "items": [
+   {
+    "document_session_id": "915612da-3558-4041-9d21-e0da02c90cb3",
+    "id": 12030725,
+    "unique_id": "b332f9ed-c4eb-42c5-a721-ea9512f4e13f-00b79305",
+    "name": "270AA.101",
+    "category": "Plumbing Fixtures",
+    "category_id": -2001160,
+    "type_id": 5286564,
+    "pinned": true,
+    "group_id": 12030728,
+    "level_id": -1,
+    "location": {
+     "point": [
+      -532.4191855256511,
+      259.9823363327459,
+      -5.000000000000051
+     ],
+     "rotation_radians": 4.712388980384686
+    },
+    "bounds": {
+     "min": [
+      -532.4191855256511,
+      259.2583779994125,
+      -5.000000000000071
+     ],
+     "max": [
+      -529.8983521923177,
+      260.70629466607915,
+      -2.4375000000000506
+     ]
+    },
+    "host_id": 10506977,
+    "family_name": null,
+    "placement_type": null,
+    "view_family": null,
+    "view_type": null,
+    "elevation": null
+   },
+   {
+    "document_session_id": "915612da-3558-4041-9d21-e0da02c90cb3",
+    "id": 12030729,
+    "unique_id": "b332f9ed-c4eb-42c5-a721-ea9512f4e13f-00b79309",
+    "name": "Drain Pump",
+    "category": "Plumbing Fixtures",
+    "category_id": -2001160,
+    "type_id": 1498449,
+    "pinned": true,
+    "group_id": 12030728,
+    "level_id": 10506977,
+    "location": {
+     "point": [
+      -530.7629355256507,
+      238.3446560638425,
+      -4.999999999999978
+     ],
+     "rotation_radians": 4.712388980384709
+    },
+    "bounds": {
+     "min": [
+      -532.0337688589841,
+      237.21965606384248,
+      -5.0000000000000835
+     ],
+     "max": [
+      -529.5021580963349,
+      239.46965606384256,
+      -1.9010416666665217
+     ]
+    },
+    "host_id": null,
+    "family_name": null,
+    "placement_type": null,
+    "view_family": null,
+    "view_type": null,
+    "elevation": null
+   }
+  ],
+  "offset": 0,
+  "next_offset": 2,
+  "units": "internal feet"
+ },
+ "error": null,
+ "cancel_requested": false,
+ "created_utc": "2026-11-06T10:34:35.6529272Z",
+ "finished_utc": "2026-11-06T10:34:35.7107415Z",
+ "elapsed_ms": 41.7961,
+ "transaction_status": "not_started"
+}

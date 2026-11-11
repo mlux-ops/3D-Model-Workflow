@@ -1,0 +1,3 @@
+# Noho Ivory 2x10 Matte exact wet WALL item — R019 2026-11-06
+
+Official manufacturer https://www.elmsurfaces.com/product/noho-ivory — **Noho Ivory**, **2 x 10 in**, **Matte**, **9.5 mm**. Individual product lists **Walls, Wet Areas** (also Floors, but no numeric wet DCOF published on this item). Proposed *wet WALL* only; no LEVEL/PAN inference. Ivory warm-neutral, offset or vertical stacked layout conditional on owner design and actual wall receipt geometry. Current maker US page exists; Chicago exact SKU, stock/lot, carton yield, resale price and lead time UNKNOWN. Do not substitute Soho Ivory glossy identity or infer another Noho color permission. No procurement or owner approval.

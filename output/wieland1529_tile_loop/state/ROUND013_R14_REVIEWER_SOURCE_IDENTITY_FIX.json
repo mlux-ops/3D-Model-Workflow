@@ -1,0 +1,46 @@
+{
+  "as_of": "2026-11-06",
+  "reviewer": "worker-11",
+  "exact_fix": "R14 TX-BATH4 revised Emser manufacturer SKU and LEVEL identity, not Daltile RL21; unchanged original Cortar Bone Soft, Soho Ivory/Caviar wet gate and tub program",
+  "output_before_after": {
+    "R14_OWNER_13_ROOM_EXACT_RELEASE_DECISIONS.md": {
+      "before": {
+        "sha256": "f5d334e7cae12598fc01d72b6f34044c4dfe4b0bffb3d789cc044cee29189f57",
+        "bytes": 15463
+      },
+      "after": {
+        "sha256": "d9aba0370219854c44ce84c9b40d29f63c93b157f75e002ba90af3cd5f182752",
+        "bytes": 15495
+      }
+    },
+    "R14_13_ROOM_EXACT_SOURCE_AND_OWNER_GC_RELEASE_BRIDGE.csv": {
+      "before": {
+        "sha256": "c2f282f6aa1830876dd11d6d0d28e48bc2889197798242d29a85f1292c2ee21a",
+        "bytes": 6862
+      },
+      "after": {
+        "sha256": "c981e61c94e7d0b89c93fe3b64f487156b9ef94fc8a454b4fb082eb4aba144e0",
+        "bytes": 6894
+      }
+    }
+  },
+  "third_file_unchanged": {
+    "START_HERE_R14.md": {
+      "sha256": "f8802abb6c032b012698c224b23301e5538f376211a25f23d6110ed84f4543c6",
+      "bytes": 730
+    }
+  },
+  "manifest_before": {
+    "sha256": "d405ffac5fcfa7e2be36ab7e0cbb59c34b507bfa27bdb2f82cc93bafb21a0590",
+    "bytes": 1112
+  },
+  "manifest_after": {
+    "sha256": "e7fcc86fa76e373e5d4663d25a3e7be65cc6616b6be98ba49da891116a1df4d2",
+    "bytes": 1112
+  },
+  "original_r013_candidate_and_critic_files_unchanged": true,
+  "scored_round012_unchanged": true,
+  "all_critic_scores": null,
+  "owner_approval": false,
+  "procurement_release": false
+}

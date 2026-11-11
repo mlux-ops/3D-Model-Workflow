@@ -1,0 +1,53 @@
+{
+  "round": 26,
+  "phase": "ADDITIVE_SOURCE_PREPARED_ONLY_WAIT_R025_BOARD",
+  "focus": [
+    "TX-PRIMARY",
+    "TX-BATH3"
+  ],
+  "neutral_options": {
+    "rooms/TX-PRIMARY/board/round-026/prepared/candidates/A.md": {
+      "sha256": "ddf2bfced3f365f22d61c9eed156f203accfadcf0fc4e161570c3346409573d9",
+      "bytes": 3992
+    },
+    "rooms/TX-PRIMARY/board/round-026/prepared/candidates/B.md": {
+      "sha256": "7bee78d9e49e49218081f9072b2d9747a9b639d80060baf90adfe9123809c44c",
+      "bytes": 4281
+    },
+    "rooms/TX-BATH3/board/round-026/prepared/candidates/A.md": {
+      "sha256": "df10e8e7775d03175c789422e7057a8cc61e214c31fca42c72d6b443d958f625",
+      "bytes": 4274
+    },
+    "rooms/TX-BATH3/board/round-026/prepared/candidates/B.md": {
+      "sha256": "b22feb3928001841ab28ae5278dbe52d5b2936268d7662d6ea40f42577444e50",
+      "bytes": 4219
+    }
+  },
+  "signed_parent_receipts": {
+    "state/ROUND025_FORMAL_THREE_PH_ROOMS_SOURCE_FROZEN_PREDISPATCH.json": {
+      "sha256": "1571467e0895b45cae67d73a7cecd4ecde8fd94074d2e5ffc77038e15216eaa6",
+      "bytes": 3165
+    },
+    "state/ROUND025_PH_THREE_ROOM_PREPARED_NOT_SUBMITTED.json": {
+      "sha256": "9dda72d0c553612abd3de75cebe8feb0167551dda0be35ff9c41ca49dc021d32",
+      "bytes": 5258
+    },
+    "state/ROUND023_TRADE_PRICING_13_ROOM_ADDENDUM_SHA.json": {
+      "sha256": "33d60eed4f02079ec7e4eb53eb3b4265fbd5fc338573762b37670eda685f50b0",
+      "bytes": 6093
+    }
+  },
+  "user_vendors": [
+    "Elm Surfaces",
+    "MSI Surfaces",
+    "Porcelanosa",
+    "Floor & Decor"
+  ],
+  "historical_material_total_usd": 23572.44,
+  "owner_TX_BATH3_TUB_vs_WALKIN": "UNSELECTED",
+  "reviewer_preflight": null,
+  "critic_dispatch": null,
+  "weighted_score": null,
+  "champions_changed": false,
+  "global_DONE": false
+}

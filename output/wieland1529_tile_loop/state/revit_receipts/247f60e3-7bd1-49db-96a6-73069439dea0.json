@@ -1,0 +1,28 @@
+{
+ "schema_version": 1,
+ "operation_id": "247f60e3-7bd1-49db-96a6-73069439dea0",
+ "status": "failed",
+ "request": {
+  "schema_version": 1,
+  "operation_id": "247f60e3-7bd1-49db-96a6-73069439dea0",
+  "operation": "elements.query",
+  "document": {
+   "session_id": "915612da-3558-4041-9d21-e0da02c90cb3"
+  },
+  "arguments": {
+   "category": "Rooms",
+   "limit": 5
+  }
+ },
+ "result": null,
+ "error": {
+  "code": "ArgumentException",
+  "message": "Requested value 'Rooms' was not found.",
+  "details": null
+ },
+ "cancel_requested": false,
+ "created_utc": "2026-11-06T10:34:16.7056835Z",
+ "finished_utc": "2026-11-06T10:34:16.7230669Z",
+ "elapsed_ms": 10.4603,
+ "transaction_status": "not_started"
+}

@@ -1,0 +1,111 @@
+{
+  "round": 28,
+  "date": "2026-11-07",
+  "reviewer": "worker-40",
+  "review_type": "independent in-turn continuation source audit",
+  "exact_verdict": "PRECISE FIX",
+  "phase": "RESEARCH_CONTINUATION_SOURCE_CORRECTIONS_REQUIRED_NO_DISPATCH",
+  "report": {
+    "path": "state/ROUND028_REVIEWER40_REPORT.md",
+    "sha256": "30ade20939232be57873eb6459e4e2baaae10dbbdc66be6a4a8bdd8054b66432",
+    "bytes": 5154
+  },
+  "reviewed_source_snapshots": [
+    {"path": "board/BOARD.md", "sha256": "95050bc3bed4a240d7ca0ad1b23bb8ae5d917542107b8cf028b2e3bf9fedada0", "bytes": 7303},
+    {"path": "state/OWNER_FEEDBACK.md", "sha256": "aed20a94af1bef32c2c540a3f10b5f7331f63d6ae6fa0d385d18fe94d98735b9", "bytes": 13334},
+    {"path": "inputs/TRADE_QUOTES.md", "sha256": "8a220f0ec64b0eadaba5272b757f5e18259455a0285a13a91d7ca57213d935a6", "bytes": 18488},
+    {"path": "state/ROUND028_CONTINUATION_FIVE_SECTION_REPORT.md", "sha256": "6eb028d6634329aed0499318744917d9224e978689d6f27133422b05a6e20c7c", "bytes": 2744},
+    {"path": "research/products/R028_FD_WET_RATED_LARGE_FORMAT_ADDITIONS_20261107.md", "sha256": "7a095ea8e8df84618cd57d9b4cfe3d9a2306b330b1c47ed2521892d9c89def68", "bytes": 3298},
+    {"path": "research/products/13_ROOM_SURFACE_QUALIFICATION_GAP_REGISTER_20261107.md", "sha256": "5fbc75fdcae565cfef4c340c187ed2ad9a0aae0732e5a5f758c64daed393f4de", "bytes": 16252},
+    {"path": "research/products/R028_LARGE_FORMAT_FOUR_VENDOR_QUALIFICATION_20261106.md", "sha256": "dbd5628f7fdb5989873c276590bd105822e96ee3e1b6ca9afa5375b210b4889d", "bytes": 19403},
+    {"path": "state/ROUND028_GEOMETRY_IDENTITY_METADATA_FIX1.json", "sha256": "828fdbbb174f8e4cf4b011ef1fe1533aa848919135e435cedb0469e135e9203a", "bytes": 3915},
+    {"path": "rooms/PH-PRIMARY/vendor_comparison.md", "sha256": "692e7dabe127ce2f0f75a0f9d9c3f59dde51fa5642583847213d60cdeb3dd725", "bytes": 11533},
+    {"path": "rooms/PH-BATH3/vendor_comparison.md", "sha256": "6f6c079056934cc1c3ec4cd726df29af380fca9522b9ccdca5bf500d418005f9", "bytes": 13017},
+    {"path": "rooms/PH-BATH4/vendor_comparison.md", "sha256": "c2f0e4b665ffb3b70c3797ae40e279d5a7ffe639f311010666d765f33f39e7ad", "bytes": 13334},
+    {"path": "rooms/TX-PRIMARY/vendor_comparison.md", "sha256": "b6643c769d7b4466b8678a69e9c8e78afaf5887f7a5fddcdf4bc8b65164041dd", "bytes": 11175}
+  ],
+  "scope": {
+    "rooms": 13,
+    "physical_instances": 26,
+    "original_material_rows": 27,
+    "historical_material_only_usd": "23572.44",
+    "original_waste_percent_included_once": 15,
+    "allowed_vendors": ["Elm Surfaces", "MSI Surfaces", "Porcelanosa", "Floor & Decor"],
+    "superseded_historical_vendors_ineligible": ["Platform Surfaces", "Daltile", "Emser"],
+    "per_room_budget": "FILL IN"
+  },
+  "precise_fixes": [
+    {
+      "id": "R028-FIX-A",
+      "issue": "Superseded Porcelanosa Bottega Caliza SKU 100323039 is mapped to multiple nominal sizes and public price is omitted from current priority comparison tables.",
+      "affected_lines": {
+        "rooms/PH-PRIMARY/vendor_comparison.md": [60, 64],
+        "rooms/PH-BATH3/vendor_comparison.md": [66, 70, 74],
+        "rooms/PH-BATH4/vendor_comparison.md": [67, 71, 75],
+        "rooms/TX-PRIMARY/vendor_comparison.md": [59, 63]
+      },
+      "correct_mapping": [
+        {"sku": "100323039", "nominal_size": "31x31", "official_us_public_usd_per_sf": 11.95},
+        {"sku": "100324943", "nominal_size": "23x23", "official_us_public_usd_per_sf": 10.95},
+        {"sku": "100307901", "nominal_size": "47x47", "official_us_public_usd_per_sf": 12.95}
+      ],
+      "wet_permission_and_dcof": "UNKNOWN for each exact official US SKU; third-party technical data is not transferable",
+      "evidence": "research/products/R028_LARGE_FORMAT_FOUR_VENDOR_QUALIFICATION_20261106.md lines 63-73 and 85-88; 13_ROOM_SURFACE_QUALIFICATION_GAP_REGISTER_20261107.md line 32"
+    },
+    {
+      "id": "R028-FIX-B",
+      "issue": "PH-PRIMARY three-distinct-PAN-product shortage statement is stale after Chastain Ivory and Tower Gray additions; correct the distinction between product-level eligibility and room-level gate clearance.",
+      "affected_lines": {
+        "research/products/13_ROOM_SURFACE_QUALIFICATION_GAP_REGISTER_20261107.md": [69]
+      },
+      "supporting_product_rows": [26, 27],
+      "distinct_product_level_pan_options": [
+        "Floor & Decor Luxe Sand 101317949 or 101317865 (same product in two formats)",
+        "Floor & Decor Riviera Oat 101487775",
+        "Floor & Decor Chastain Ivory 101130557",
+        "Floor & Decor Tower Gray 100887140"
+      ],
+      "evidence": "research/products/R028_FD_WET_RATED_LARGE_FORMAT_ADDITIONS_20261107.md lines 5-18",
+      "remaining_room_specific_checks": ["drain cut layout and minimum visible cuts", "Chicago matching lot and ETA", "room-specific priced materials and waste", "neutral source freeze and independent pre-dispatch clearance"],
+      "related_room_comparisons": ["PH-PRIMARY", "PH-BATH3", "PH-BATH4", "TX-PRIMARY"]
+    }
+  ],
+  "technical_limits": {
+    "elm_flat_wet_permission_does_not_transfer_to_ribbed_or_reed": true,
+    "msi_murcia_cordova_shower_floor_permission": "UNKNOWN",
+    "porcelanosa_exact_sku_wet_technical_permissions": "UNKNOWN",
+    "fd_101130557_and_100887140_exact_shower_floor_yes_dcof_gte_042": true,
+    "fd_non_chicago_store_prices_are_not_chicago_inventory": true,
+    "wet_wall_permission_does_not_equal_ceiling_or_niche_permission": true,
+    "large_format_pan_cutting_and_sloping_allowed_by_owner": true,
+    "all_native_cut_geometry": "UNKNOWN",
+    "current_chicago_lots_eta_and_complete_delivered_cost": "UNKNOWN"
+  },
+  "geometry_identity_receipt_review": {
+    "source_receipt_room_count": 13,
+    "unique_room_ids": 13,
+    "same_90_byte_after_minus_before_change_in_each": true,
+    "owner_confirms_1527_and_1529_same_building": true,
+    "model_identity_metadata_claim": "VERIFIED_BY_OWNER",
+    "native_measurements_verified": false,
+    "geometry_files_directly_opened_in_this_scoped_review": false
+  },
+  "owner_branches_preserved": {
+    "PH-PRIMARY": "BNX 48-inch LINEAR, separate roughs/factory grate, NO NICHE, inherited PH-WC once",
+    "PH-BATH3": "Tub versus walk-in unresolved; basin UNSELECTED; point PAN only in walk-in branch",
+    "PH-BATH4": "Owner-selected WALK-IN / BNX POINT; unresolved 35 vs 27 SF takeoff and niche details",
+    "TX-PRIMARY": "BNX 48-inch LINEAR, separate roughs/factory grate, NO NICHE, inherited TX-WC once",
+    "other_program_branches": "TX-BATH3 conflict, PH-BATH3/TX-BATH2/TX-POWDER2 basin selections and powder/WC surfaces remain governed by the 13-room matrix"
+  },
+  "readiness": {
+    "dispatch_ready_cohorts": 0,
+    "neutral_candidate_frozen": false,
+    "independent_pre_dispatch_clearance_for_r028": false,
+    "critic_dispatch_authorized": false,
+    "champions_changed": false,
+    "owner_approval": false,
+    "procurement_authorized": false,
+    "global_DONE": false
+  },
+  "next_command": "Prime: correct R028-FIX-A and R028-FIX-B in the cited existing comparisons/register, integrate Chastain and Tower into the four priority comparisons without promoting room-level gates, continue 13-room exact surface qualification and prepare 2-4 room-isolated neutral source sets, then seek fresh independent pre-dispatch clearance. Do not dispatch critics or accept champions."
+}

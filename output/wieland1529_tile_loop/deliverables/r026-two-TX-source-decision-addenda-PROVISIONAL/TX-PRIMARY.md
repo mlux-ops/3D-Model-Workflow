@@ -1,0 +1,13 @@
+# TX-PRIMARY | R026 tile decision addendum | PROVISIONAL / NOT APPROVED
+
+**Formal status:** BLOCKED; no compliant four-seat champion. Two physical TX Primary copies. Source historical material $1,999.60 per copy; 125%-of-original provisional comparison $2,499.50 per copy is **not** an owner-allocated budget.
+
+**A — quiet warm scheme:** Wet WALL Elm Cortar Clay **FLAT Soft 24x48**, individually Wet Areas-listed; no niche. Bath LEVEL + independently LINEAR shower PAN Floor & Decor **Riviera Oat 24x48 matte SKU101487775**, exact seller product wet DCOF >=0.42, Shower Floors YES. **B — contrasted scheme:** Same flat Clay main WALL plus separately wet-listed Elm **Tones Copper 2x20 Glossy bounded feature**, net allocation unknown; LEVEL + LINEAR PAN Floor & Decor **Luxe Sand 24x24 matte SKU101317949**, independently wet DCOF >=0.42 and Shower Floors YES.
+
+**Plumbing and rationale:** Owner Brizo **BT0734816-BNX Black Onyx 48in LINEAR**, separate BR73480 rough, solid BNX factory grate; **NO niches**. TX-WC receives the identical LEVEL tile from the parent once. A is warmer, continuous stone-like calm; B creates a controlled amber glazed focal wall that frames BNX hardware without changing fixtures. Owner installer cuts/slopes 24in+ tile in PAN; no assumption about tile-in insert or installed waterproof stack.
+
+**Cost comparison:** Exact Elm job-25-006 quote September 4, 2026: flat Cortar Clay **$8.14/SF** and Tones Copper **$6.95/SF**, applicable only to individual product. F&D Riviera **$3.99–$4.39/SF** and Luxe **$3.49/SF** public non-Chicago snapshots, not guaranteed local stock or price. Original room material source 15% waste included once; new eligible replacement estimate requires separately verified LEVEL net x1.15 + LINEAR PAN net x1.25 + TX-WC net x1.15 once. Exact features, delivered cartons, freight and local lot unverified; full budget gate UNKNOWN.
+
+**Old Town photographic comparison:** OT01 attributable powder-like bath photographs white wainscot, patterned upper wall, dark vanity and contrasted floor: useful only for layering/contrast, not evidence of shower tile SKU or grout. OT01–04 one building; OT05 bathroom photographs not authenticated; Lincoln Park/Gold Coast secondary.
+
+**Owner-only decision / release:** Choose A versus B visual direction and grout; verify element-receipt native cuts, shower drain location, same-lot Chicago stock/ETA, case-rounded complete material cost and approved budget. Sources: research/products/R026_TX_WET_BATH_SOURCED_SELECTION_COMPARISON.md, R026 prepared candidate A/B, owner-provided inputs/TRADE_QUOTES.md. **Not source-frozen, critiqued, accepted, sampled or ordered.**

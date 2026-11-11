@@ -1,0 +1,131 @@
+{
+  "round": 27,
+  "phase": "CONTROLLED_R027_PREDISPATCH_FIX2_SOURCE_REFROZEN_PENDING_FRESH_REVIEWER",
+  "reason": "Independent Reviewer38 PRECISE FIX removed historical R024 outcome and other-room A/B source mapping from permitted product research access",
+  "historical_formal_freeze_receipt": {
+    "file": "state/ROUND027_FORMAL_THREE_TUB_ROOMS_SOURCE_FROZEN_PREDISPATCH.json",
+    "sha256": "cbc7d09b68a81840e352209290d8fb1395be8b592c4c02306ab6f848a1044d44",
+    "bytes": 5783
+  },
+  "original_prepared_source_unchanged": true,
+  "corrected_neutral_candidates_before_after": {
+    "rooms/PH-BATH2/board/round-027/candidates/A.md": {
+      "old": {
+        "sha256": "4881f9edbb55fa35a977af89900edfcc8f4941c62a469b5a736d23985492374e",
+        "bytes": 3749
+      },
+      "new": {
+        "sha256": "4881f9edbb55fa35a977af89900edfcc8f4941c62a469b5a736d23985492374e",
+        "bytes": 3749
+      }
+    },
+    "rooms/PH-BATH2/board/round-027/candidates/B.md": {
+      "old": {
+        "sha256": "6499a20892c79753c31e84f1f9d02ac0b6e471070c55d3eeabc310db760ccf5e",
+        "bytes": 3638
+      },
+      "new": {
+        "sha256": "6499a20892c79753c31e84f1f9d02ac0b6e471070c55d3eeabc310db760ccf5e",
+        "bytes": 3638
+      }
+    },
+    "rooms/TX-BATH2/board/round-027/candidates/A.md": {
+      "old": {
+        "sha256": "6e9c3b8bfc914c528fe9e783077eef216f16d9a7987b8848e4546e6f5ec81f46",
+        "bytes": 3564
+      },
+      "new": {
+        "sha256": "6e9c3b8bfc914c528fe9e783077eef216f16d9a7987b8848e4546e6f5ec81f46",
+        "bytes": 3564
+      }
+    },
+    "rooms/TX-BATH2/board/round-027/candidates/B.md": {
+      "old": {
+        "sha256": "0ea69182eea2617d65b8531bd88e5f9290f80921cdf2d1cc8762f75b4d76154e",
+        "bytes": 3564
+      },
+      "new": {
+        "sha256": "0ea69182eea2617d65b8531bd88e5f9290f80921cdf2d1cc8762f75b4d76154e",
+        "bytes": 3564
+      }
+    },
+    "rooms/TX-BATH4/board/round-027/candidates/A.md": {
+      "old": {
+        "sha256": "58abaeca1a3d8d33545f366fa898f3a2b90f66cdf704ea4a7c8c93337b9717a3",
+        "bytes": 3703
+      },
+      "new": {
+        "sha256": "fbcd86bd213e616607ab90c74ea2aba5626eee8d0ffac3629bfc946a1a455106",
+        "bytes": 3715
+      }
+    },
+    "rooms/TX-BATH4/board/round-027/candidates/B.md": {
+      "old": {
+        "sha256": "3711feec131f50fe9b1f94e0076522731dc1dc10144c8c055131c5b87034267f",
+        "bytes": 3718
+      },
+      "new": {
+        "sha256": "31684da05eb7b14c430c3560ad4b5d461319fbd67497988b5b5a323dd9fba827",
+        "bytes": 3730
+      }
+    }
+  },
+  "three_critic_safe_room_specific_research": {
+    "research/products/R027_PH_BATH2_BLIND_PRODUCT_EVIDENCE.md": {
+      "sha256": "05303da7b1df45021aa19027a899b3f16f0f3f53b9fb2a0ffac7cfa94dddb25f",
+      "bytes": 4318
+    },
+    "research/products/R027_TX_BATH2_BLIND_PRODUCT_EVIDENCE.md": {
+      "sha256": "c4d4bc01ab04cde09c198a69f44874cc10e0104b90c91380425780e52087aac8",
+      "bytes": 4255
+    },
+    "research/products/R027_TX_BATH4_BLIND_PRODUCT_EVIDENCE.md": {
+      "sha256": "7e82b2a0e6110885b1eae70865c6fb54318f37fc9ab9ae459f7814e957dff2f3",
+      "bytes": 4329
+    }
+  },
+  "prime_only_private_keys_unchanged": {
+    "rooms/PH-BATH2/board/round-027/_key.json": {
+      "sha256": "e1215bc924abde55a4e4fa698c301cfb7b09541db9081768a81092c83e065100",
+      "bytes": 183
+    },
+    "rooms/TX-BATH2/board/round-027/_key.json": {
+      "sha256": "1487152e8bd43628a9613749225b3cb6dd7401bbd31d08b7712671c30b54f0af",
+      "bytes": 183
+    },
+    "rooms/TX-BATH4/board/round-027/_key.json": {
+      "sha256": "28b5356b4318205c82cb0cce2ec8f76f214bf6c4c218384c3f03be73776ce11d",
+      "bytes": 183
+    }
+  },
+  "five_original_signed_parents_unchanged": {
+    "state/ROUND027_THREE_DURAVIT_TUB_BATHS_PREPARED_NOT_SUBMITTED.json": {
+      "sha256": "ec25d1a70aaae12b8fe213c4f22da7156571bda5b25e6a5b3218c14ef06ffac7",
+      "bytes": 3856
+    },
+    "state/ROUND027_TUB_PREPARED_FIX1_SOURCE_SCOPE_SUPERSEDING_ONE_FILE.json": {
+      "sha256": "2ef014c12d43dcf16947f4110ddccb51368e9c8069ef2ab17f664370cca3d945",
+      "bytes": 1059
+    },
+    "state/ROUND024_AUTHENTIC_FOUR_SEAT_COLLECTION_SCORED_NO_CHAMPIONS.json": {
+      "sha256": "b69c17171493327bc1becfa8b8b81cac82a43ebb2940ce6fe23b7ff701637f43",
+      "bytes": 9498
+    },
+    "state/ROUND026_AUTHENTIC_FOUR_SEAT_COLLECTION_SCORED_NO_CHAMPIONS.json": {
+      "sha256": "69fb4d28db00850601f5481a5512b016bf7edcd2194d6eefdf46fd6e0650f294",
+      "bytes": 10973
+    },
+    "state/ROUND025_SCOPEFIX1_INDEPENDENT_POSTSCORE_REVIEWER30_CLEARANCE.json": {
+      "sha256": "cb97b1a042f63b0688760737d47a6765eb4303a5fbde5fccfdbf67e7ffaf363d",
+      "bytes": 2698
+    }
+  },
+  "source_access": "Blind critics may read only same-room neutral candidates/geometry/plumbing, corresponding room-safe research, other cleared global manufacturer/products/inputs/BOARD/OWNER, not multi-room outcome research",
+  "independent_post_FIX_reviewer": null,
+  "critic_dispatch": null,
+  "weighted_score": null,
+  "champion_changes": false,
+  "owner_approval": false,
+  "procurement_release": false,
+  "global_DONE": false
+}

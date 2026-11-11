@@ -1,0 +1,52 @@
+# R026 — TX-PRIMARY — independent DESIGN critic (seat weight 0.25)
+
+Blind comparison of **A** and **B** only. Five independent design criteria are scored **1–5** with integer evidence-based marks; the unweighted mean of this seat's five criteria is rounded **half-up to one decimal**. No board-weighted score or selection authority is exercised. Design assessment is conditional on source measurements and physical samples.
+
+**Room-specific evidence:** `rooms/TX-PRIMARY/geometry.json` (W1 5.1875 ft, W2 4.7708 ft, 9.25-ft tiled height, assumed corner-shower footprint); `rooms/TX-PRIMARY/plumbing.json` (Brizo **BT0734816-BNX** 48-in Black Onyx linear drain, separate **BR73480** rough, BNX Roccesco fixtures, Victoria + Albert Terrassa gloss-white freestanding tub); [manufacturer Brizo trim](https://www.brizo.com/bath/product/BT0734816-BNX) and [rough](https://www.brizo.com/bath/product/BR73480); `state/OWNER_FEEDBACK.md` (large-format floor and installer-cut pan priority; four-vendor rule); `research/products/R022_FD_LUXE_SAND_RIVIERA_OAT_24PLUS_LEVEL_AND_SHOWER_PAN.md`; `research/products/R023_1529_JOB_ELM_TRADE_QUOTE_EVIDENCE_20260904.md`; `research/comps/R020_OLD_TOWN_ATRIBUTABLE_BATH_PHOTO_OBSERVATIONS.md`. The selected factory **solid BNX grate** is retained. **No niches**; the associated TX-WC inherits this bath's LEVEL selection once. Excluded historical body sprays are not part of the design.
+
+## Candidate A — Clay flat wet field / Riviera Oat 24x48 level and LINEAR pan
+
+| Design criterion | 1–5 | Room-specific evidence and judgment |
+| --- | ---: | --- |
+| Palette and material cohesion | **4** | [Elm Cortar Clay flat Soft](https://www.elmsurfaces.com/product/cortar-clay) warm limestone-look 24x48 and [Riviera Oat 101487775](https://www.flooranddecor.com/porcelain-tile/riviera-oat-matte-porcelain-tile-101487775.html) matte travertine-look 24x48 make a restrained tonal scheme; actual Clay/Oat undertones still require a side-by-side sample (`candidates/A.md`, lines 5, 9, 13). |
+| Fixture, finish and drain relationship | **5** | Black Onyx Roccesco shapes, 48-in **LINEAR** solid-grate drain and gloss-white freestanding Terrassa provide a clean contrast with the quiet surfaces (`plumbing.json`, BT0734816-BNX, BR73480, TER-N-SW-OF; `candidates/A.md`, lines 3, 11). No finish clash seen. |
+| Scale and composition | **4** | Rectified 24x48 modules can read calm over 9 ft 3 in high walls and the linear-slope floor; W1/W2 are about 62.25/57.25 in wide, but a centered stack, ceiling cuts, openings and focal-edge slivers are not proven (`geometry.json`, W1/W2, openings unknown; `candidates/A.md`, line 17). |
+| Grout, corners and surface transitions | **3** | A provisional 1/8-in FLOOR joint is stated, but wall grout color/width, shower-ceiling permission and termination, movement joints, exterior edges and floor-to-linear-drain layout lack a coordinated elevation (`candidates/A.md`, lines 11, 17–19; `research/products/elm-cortar-clay-flat-24x48-soft.md`). |
+| Buyer-facing hierarchy and longevity | **4** | Matte, low-joint warm surfaces allow the white tub and Black Onyx plumbing to remain the focal elements for a $2.7M triplex primary bath. OT01 shows a contrasting *dry powder-like bath*, not a comparable primary wet-room specification (`state/OWNER_FEEDBACK.md`, price band; `research/comps/R020_OLD_TOWN_ATRIBUTABLE_BATH_PHOTO_OBSERVATIONS.md`). |
+
+**Seat mean A:** (4 + 5 + 4 + 3 + 4) / 5 = **4.0 / 5** (one-decimal half-up).  
+**top_fix A:** Issue one coordinated, centered 24x48 wall/ceiling and floor-to-linear-drain elevation specifying a sample-approved warm grout system and all visible terminations; demonstrate no focal-edge cut below ~3 in.  
+**finish_clash_severity A:** **NONE**; Black Onyx is an intentional contrast, subject to physical undertone review.  
+**confidence A:** **MEDIUM** (authentic item permissions and plumbing selections; measured composition and physical samples pending).
+
+## Candidate B — Clay flat plus limited Copper accent / Luxe Sand 24x24 level and LINEAR pan
+
+| Design criterion | 1–5 | Room-specific evidence and judgment |
+| --- | ---: | --- |
+| Palette and material cohesion | **4** | Wet-listed [Elm Cortar Clay flat Soft](https://www.elmsurfaces.com/product/cortar-clay), [Tones Copper 2x20 Glossy](https://www.elmsurfaces.com/product/copper-tones) and [Luxe Sand 101317949](https://www.flooranddecor.com/porcelain-tile/luxe-sand-matte-porcelain-tile-101317949.html) combine warm texture with an ivory matte ground. The copper accent needs a drawn limit to avoid three competing fields (`candidates/B.md`, lines 5, 9, 13). |
+| Fixture, finish and drain relationship | **4** | BNX solid linear grate and Roccesco fixtures still read as intentional dark metal contrast, but a large glossy Copper area could compete with the dramatic Black Onyx fittings and freestanding tub (`plumbing.json`, BT0734816-BNX, TER-N-SW-OF; `candidates/B.md`, lines 3, 5, 11). Clash severity **LOW**, not HIGH. |
+| Scale and composition | **4** | Rectified 24x24 LEVEL and LINEAR PAN meet the large-format preference and give a smaller visual module than A; a limited 2x20 feature offers a secondary scale. Actual Copper area, stack direction and W1/W2 cut grid are unspecified (`geometry.json`, W1/W2; `candidates/B.md`, lines 5, 9, 15, 17). |
+| Grout, corners and surface transitions | **3** | Two wall sizes/finishes increase alignment, edge-trim and grout-joint decisions; floor 1/8 in is only a starting point and the feature/net area is unmeasured (`candidates/B.md`, lines 5, 15, 17–19; `research/products/elm-tones-copper-2x20.md`). |
+| Buyer-facing hierarchy and longevity | **4** | Controlled Copper can add a distinct warm focal element while the tub and BNX fittings carry the primary-bath identity; an uncontrolled band would risk excess ornament. OT01 photo does not establish wet-shower color demand (`research/comps/R020_OLD_TOWN_ATRIBUTABLE_BATH_PHOTO_OBSERVATIONS.md`; `candidates/B.md`, line 13). |
+
+**Seat mean B:** (4 + 4 + 4 + 3 + 4) / 5 = **3.8 / 5** (one-decimal half-up).  
+**top_fix B:** Draw and dimension the **one limited Copper feature plane**, including its exact start/stop and tile/grout transition to flat Clay, before evaluating the contrast as the room's focal composition.  
+**finish_clash_severity B:** **LOW** (a visual hierarchy risk, **not** a disqualifying HIGH plumbing-finish clash).  
+**confidence B:** **MEDIUM** (exact surface products described; Copper allocation, finish samples and cuts unknown).
+
+## Surface-specific hard-gate flags
+
+| Hard gate | A | B | Basis and limits |
+| --- | --- | --- | --- |
+| Wet **WALL** manufacturer permission | **PASS** | **PASS** | A/B [Clay **flat** Wet Areas](https://www.elmsurfaces.com/product/cortar-clay); B also individual [Tones Copper Wet Areas](https://www.elmsurfaces.com/product/copper-tones), `research/products/elm-tones-copper-2x20.md`. No approval transfer to Clay Ribbed/Reed. |
+| **NICHE** scope and owner veto | **PASS** | **PASS** | Owner-directed **no niche** (`candidates/A.md`, `candidates/B.md`, line 7); no niche tile is claimed or charged. No product on `state/OWNER_FEEDBACK.md` do-not-use list. |
+| **LEVEL** bathroom/WC floor wet permission and DCOF | **PASS** | **PASS** | Exact [Riviera Oat 101487775](https://www.flooranddecor.com/porcelain-tile/riviera-oat-matte-porcelain-tile-101487775.html) or [Luxe Sand 101317949](https://www.flooranddecor.com/porcelain-tile/luxe-sand-matte-porcelain-tile-101317949.html) lists bathroom floors, published DCOF **>=0.42**; inherited TX-WC floor is counted only once in scope. This is a threshold, not an invented test value. |
+| Separate **48-in LINEAR PAN tile** permission/DCOF | **PASS** | **PASS** | Each exact LEVEL SKU separately lists **Shower Floors YES** with published DCOF **>=0.42**. Owner installer may cut/grade large format for LINEAR; same SKU on PAN is still a distinct area (`research/products/R022_FD_LUXE_SAND_RIVIERA_OAT_24PLUS_LEVEL_AND_SHOWER_PAN.md`). |
+| **LINEAR** drain-to-pan assembly and focal cuts | **UNKNOWN** | **UNKNOWN** | Brizo BT0734816-BNX solid grate and distinct BR73480 rough are selected; native drain line, slope, threshold, waterproof assembly, floor/PAN boundaries and sub-3-in focal cuts are unverified (`plumbing.json`, `geometry.json`; `research/products/R020_BRIZO_BNX_48_LINEAR_TILE_FRAME_SOLID_AND_WP_GATE.md`). |
+| Shower **CEILING** product-specific permission | **UNKNOWN** | **UNKNOWN** | `geometry.json` calls for shower ceiling tiling; maker's **WALL** Wet Areas listing is not an independent ceiling-system approval. Confirm exact ceiling material, overhead exposure and bonded system. |
+| Overall **GEOMETRY** / penetrations | **UNKNOWN** | **UNKNOWN** | W1/W2 and ceiling derived from prior drawings; opening/jamb, fixture coordinates and live element/cut receipts missing. No physical sliver failure demonstrated (`geometry.json`). |
+| Room **BUDGET** / delivered total | **UNKNOWN** | **UNKNOWN** | $1,999.60 original material per copy and $2,499.50 **provisional 125%-of-original comparison**, **not** an allocated owner budget. Elm same-job Clay $8.14/SF and B Copper $6.95/SF; FD storefront floor rates are $3.99–4.39/SF (A) and $3.49/SF (B), not case-rounded landed Chicago totals. LEVEL net ×1.15 + separate LINEAR PAN net ×1.25 + TX-WC inherited net ×1.15 once, replacing historic already-wasted gross (`candidates/A.md`, `candidates/B.md`, lines 15; `inputs/TRADE_QUOTES.md`). |
+| **CHICAGO** batch stock/ETA | **UNKNOWN** | **UNKNOWN** | Current exact Chicago cartons, matching lot, freight and quote validity have no confirmation; seller product eligibility does not guarantee local stock (`research/products/R023_1529_JOB_ELM_TRADE_QUOTE_EVIDENCE_20260904.md`). |
+| Plumbing **FINISH clash** | **PASS** | **PASS** | Retained Brilliance Black Onyx vs intentional warm tile contrast. Severity **NONE** A / **LOW** B, **no HIGH conflict** (`plumbing.json`; A/B lines 3, 5, 9). |
+
+**Applicability:** POINT PAN is **not specified** for TX-PRIMARY; the selected drain is **48-in LINEAR**. Wall Wet Areas listing is not permission to use wall products on the LEVEL floor/PAN or ceiling. Original 15% gross waste is not multiplied again; net room/two-copy quantities, carton yield and complete delivered costs remain unverified. Exact design score reflects quality of the proposed aesthetic, not a gate-cleared procurement or owner selection.

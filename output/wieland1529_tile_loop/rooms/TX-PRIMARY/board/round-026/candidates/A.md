@@ -1,0 +1,19 @@
+# TX-PRIMARY — neutral candidate A
+
+**Actual program and owner holds:** Owner-selected Brizo Black Onyx BT0734816-BNX 48in LINEAR with separate BR73480 rough, factory SOLID BNX grate and NO niches; TX-WC inherits same bath LEVEL tile once.
+
+**Wet WALL:** [Elm Cortar Clay FLAT Soft 24x48](https://www.elmsurfaces.com/product/cortar-clay). FLAT Wet Areas WALL (not Ribbed). Wall approval not transferred to relief variant, niche, floor, ceiling or another color. Wet-wall substrate/grout/transition selection held to actual room geometry.
+
+**NICHE:** NONE by explicit owner direction; original excluded and unpriced niche reference must not be added to cost or scope.
+
+**LEVEL bath floor:** Floor & Decor [Vetta Elements Riviera Oat, SKU 101487775](https://www.flooranddecor.com/porcelain-tile/riviera-oat-matte-porcelain-tile-101487775.html), nominal 24x48, actual 23.58x47.28, 8mm matte rectified; exact item Bathroom Floor YES, published wet DCOF >=0.42 (threshold only, not invented raw lab number).
+
+**Separate PAN:** SELECTED 48in LINEAR shower PAN, exact same SKU as LEVEL, independently Shower Floor YES and published wet DCOF >=0.42. Installer cuts/slopes large tile; neither 6mm mosaic nor unapproved tile-in insert is assumed. Actual slope, drain rough/waterproof assembly and visible cuts under 3in require native receipts and installer acceptance; do not disqualify the tile simply because it is large format.
+
+**Design and Old Town comparison:** quiet warm monochrome Clay + travertine-look 24x48 LINEAR floor. Actual selected Black Onyx metal is retained. Only OT01 has an attributable powder-like bath photo (dark vanity, white wainscot, patterned upper wall, contrasted floor); no photographed Old Town tub/shower specific tile/grout is authenticated. OT01–OT04 are one building, OT05 bath image unverified. Lincoln Park and Gold Coast secondary, no invented buyer premium.
+
+**Actual 1529 job costs:** Original carried material $1999.60/room copy, original 125%-of-quote *provisional* comparison $2499.50, NOT owner-allocated budget (actual ROOMS room budget NULL). Source original gross, 15% waste already counted ONCE: WALL 134.40 SF, FLOOR 116.10 SF, ACCENT 8.63 SF. Original finished quote row costs are NOT new substitution quotes. Exact Cortar Clay FLAT 24x48 in matching Elm 2026-09-04 job trade quote $8.14/SF. Floor & Decor Riviera Oat public observed $3.99–4.39/SF (non-Chicago storefront, current Chicago price/lot/ETA UNKNOWN), box 16.00SF; actual room delivered subtotal UNKNOWN after freight/cartons/mortar/trim and true PAN/LEVEL area split. Compute actual LEVEL net x1.15 + independent LINEAR PAN net x1.25 + TX-WC inherited net x1.15 ONCE, replacing original combined floor gross, not compounded on original 15%.
+
+**Native geometry and manufacturer source:** 1527 and 1529 SAME building owner-confirmed; prior drawing-derived W lengths W1 5.188ft x 9.25ft (drawing only), W2 4.771ft x 9.25ft (drawing only); no native individual element/room/drain receipt to certify layout or a focal-edge cut >=3in. Wet WALL, LEVEL, and independently conditional PAN applications must be checked at actual exact product/size/finish; F&D public seller catalog and original Elm Wet Areas research establish item-level published eligibility, NOT local physical stock. 24in+ FLOOR/PAN priority complied; potential unrectified edge/thickness alternatives not falsely substituted. Proposed floor grout 1/8in is only an owner/installer sample starting point.
+
+**Verification limits:** Manufacturer product applications, publicly quoted exact prices, and unresolved owner choices are identified above. This neutral option is not an approved specification: native opening/drain/cut dimensions, complete delivered case-rounded costs, Chicago lot/ETA, and applicable owner-only decisions still require evidence. No owner or procurement release.

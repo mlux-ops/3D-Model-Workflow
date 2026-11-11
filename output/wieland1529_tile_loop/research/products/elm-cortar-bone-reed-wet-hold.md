@@ -1,0 +1,7 @@
+# ELM Cortar Bone Reed 24×48 Relief — PH-PRIMARY wet-wall exclusion
+
+Manufacturer individual listing verified 2026-11-06: https://www.elmsurfaces.com/product/bone-reed-cortar . **Bone Reed**, Cortar, **24×48 in**, **Relief**, **9 mm**; published applications **Walls** and **Back Splashes**, **Wet Areas omitted**. The manufacturer's separate **flat Bone** product https://www.elmsurfaces.com/product/cortar-bone lists Wet Areas, but that rating **does not transfer** to Reed. Product-specific wet-wall approval **unverified / hard gate FAIL** for use in PH Primary shower walls or ceiling.
+
+The historical ELM 2026-09-03 quote on PH Primary Smartsheet row **4302621473570692** states Reed relief **$7.37/SF**, flat Bone Soft **$8.14/SF**, with full walls/ceiling **143.0 SF gross/unit already containing 15% waste**. Reed's installed measured area/split is **null**; no legitimate Reed-to-flat savings calculation can be made until the feature is dimensioned. Round004 challenger assigns **all 143.0 SF to maker Wet Areas-listed flat Bone at the same-project flat reference rate**, subject to revised quote. Do not add 143.0 to any separate Reed line.
+
+Reed remains an **excluded wet-zone material**, no proposed new dry placement, and no owner approval is implied. Written product-specific wet-area authorization would be required before reconsideration. Historic Cortar quote says overseas, 10–12 weeks, 50% deposit and 300-SF import minimum; current lot/Chicago ship date null.

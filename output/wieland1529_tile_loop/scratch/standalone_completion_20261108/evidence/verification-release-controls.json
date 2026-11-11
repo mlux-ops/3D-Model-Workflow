@@ -1,0 +1,123 @@
+{
+  "status": "PASS",
+  "testedViewer": "H:\\Games\\3D Modeling Workflows\\3D Model Workflow\\output\\wieland1529-viewer-completion-20261108\\deliverables\\viewer3d\\index.html",
+  "standaloneFile": "H:\\Games\\3D Modeling Workflows\\3D Model Workflow\\output\\wieland1529-viewer-completion-20261108\\scratch\\standalone-check\\index.html",
+  "viewports": [
+    [
+      1480,
+      900
+    ],
+    [
+      390,
+      844
+    ]
+  ],
+  "browser": "Chrome / software WebGL",
+  "browserPlugin": "not available; existing Python Playwright used",
+  "physicalInstancesChecked": 2,
+  "cases": [
+    {
+      "room": "PH-BATH4/311A",
+      "wallIds": [
+        16428619,
+        16428805,
+        10870528,
+        16428613,
+        10534418,
+        16428814
+      ],
+      "source": {
+        "room": "PH-BATH4",
+        "instance": "311A",
+        "area": {
+          "wallFaceSF": 26.9792,
+          "drawingStudySF": 27.08,
+          "historicalSF": 35,
+          "differencePercent": -0.37,
+          "unresolved": false
+        },
+        "holds": [
+          "311 is the wet room; 310 is separate context. The historic material pool stays combined once."
+        ],
+        "roomMembershipCertified": false,
+        "geometryBasis": "Saved native wall curves and hosted openings; room assignment inferred",
+        "nativeWallIds": [
+          10870528,
+          16428613,
+          16428619,
+          16428805
+        ],
+        "wallReceipt": "11fe1ae7-dd61-4a81-9b56-4bd3af4b8194",
+        "fixtureStudies": false,
+        "hasWC": false,
+        "liveRevitVerified": false,
+        "selectionDataChanged": false
+      },
+      "cameraFits": true
+    },
+    {
+      "room": "PH-BATH4/311B",
+      "wallIds": [
+        16377761,
+        12459984,
+        12459931,
+        10534415,
+        10534418,
+        16377779
+      ],
+      "source": {
+        "room": "PH-BATH4",
+        "instance": "311B",
+        "area": {
+          "wallFaceSF": 26.9792,
+          "drawingStudySF": 27.08,
+          "historicalSF": 35,
+          "differencePercent": -0.37,
+          "unresolved": false
+        },
+        "holds": [
+          "311 is the wet room; 310 is separate context. The historic material pool stays combined once.",
+          "WC body and support are illustrative. Native insertion locators are shown; optional 3D studies are unverified."
+        ],
+        "roomMembershipCertified": false,
+        "geometryBasis": "Saved native wall curves and hosted openings; room assignment inferred",
+        "nativeWallIds": [
+          10534415,
+          12459931,
+          12459984,
+          16377761
+        ],
+        "wallReceipt": "11fe1ae7-dd61-4a81-9b56-4bd3af4b8194",
+        "fixtureStudies": false,
+        "hasWC": true,
+        "liveRevitVerified": false,
+        "selectionDataChanged": false
+      },
+      "cameraFits": true
+    }
+  ],
+  "interactions": [
+    "A/B change",
+    "section on/off",
+    "source lines on/off",
+    "material inspector",
+    "source notes",
+    "full / study / context",
+    "390px phone: focus / exit / camera menu / plan",
+    "offline gallery: 13 image captures / card navigation / cancel and restore"
+  ],
+  "screenshots": [
+    "release-desktop.png",
+    "release-PH-BATH4.png",
+    "release-mobile-focus.png",
+    "release-mobile.png",
+    "release-gallery.png"
+  ],
+  "externalRequests": [],
+  "errors": [],
+  "limitations": [
+    "Saved source evidence only; live native bridge returned HTTP 401.",
+    "Room membership, area conflicts and unresolved fixture installations remain explicitly unverified.",
+    "Generic sanitary studies are not manufacturer geometry or construction acceptance."
+  ]
+}

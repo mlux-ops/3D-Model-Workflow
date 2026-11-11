@@ -1,0 +1,69 @@
+{
+  "round": 27,
+  "phase": "SCORING_COMPLETE_POSTSCORE_REVIEW_PENDING",
+  "source_authority": {
+    "reviewer_worker": "worker-40",
+    "reviewer_run_id": "a4dfd6f1-b4f0-4b66-97e6-e3f5713ba3d0",
+    "exact_pre_dispatch_verdict": "CONTINUE FOR R027 BLIND CRITIC DISPATCH ONLY",
+    "clearance_receipt": "state/ROUND027_INDEPENDENT_PREDISPATCH_REVIEWER40_CLEARANCE.json",
+    "dispatch_scope": "Three room-isolated four-seat panels: PH-BATH2, TX-BATH2, TX-BATH4. No score or acceptance was authorized by Reviewer40; the distinct subsequent prime turn now performs collection and arithmetic only."
+  },
+  "frozen_source": {
+    "receipt": "state/ROUND027_PREDISPATCH_FIX3_FOUR_ROOM_LINKS_REFROZEN.json",
+    "sha256": "8f809519932dc9f8b02ad477f57e14b890d1ac71179adc919f6f5acd358fb73a",
+    "neutral_candidates": 6,
+    "room_only_research_files": 3,
+    "private_mappings": 3,
+    "signed_ancestors": 5,
+    "live_sha_byte_recheck": "PASS"
+  },
+  "seat_weights": {"MARKET":0.30,"DESIGN":0.25,"BUILD":0.25,"COST":0.20},
+  "valid_critic_assignments": [
+    {"room":"PH-BATH2","seat":"MARKET","worker":"worker-41","file":"rooms/PH-BATH2/board/round-027/critic-market.md","sha256":"bd5d9795ec4de22f46dc596e0cc7ed6393a10a82f4c38a60f14ec2766c3564c3","bytes":9357},
+    {"room":"PH-BATH2","seat":"DESIGN","worker":"worker-42","file":"rooms/PH-BATH2/board/round-027/critic-design.md","sha256":"3b3c76a7ed22d1e290a4f5b62d527a3af01e8314d12efc0aaa536ec6ae848391","bytes":8224},
+    {"room":"PH-BATH2","seat":"BUILD","worker":"worker-43","file":"rooms/PH-BATH2/board/round-027/critic-build.md","sha256":"e41f047ddc7728c5f19900ed6f4b02ebc6290acc48dc7510f11e23fc84356821","bytes":9006},
+    {"room":"PH-BATH2","seat":"COST","worker":"worker-44","file":"rooms/PH-BATH2/board/round-027/critic-cost.md","sha256":"bd5b817f982167a4ed0a8071cdbd6c69ceba7d1c3dbf5b2702ea18a9e1c87ed6","bytes":7944},
+    {"room":"TX-BATH2","seat":"MARKET","worker":"worker-45","file":"rooms/TX-BATH2/board/round-027/critic-market.md","sha256":"c50067cbaa77653b652de77892635219ac91b1261268fcb4fa3c228bf6e9361d","bytes":6705},
+    {"room":"TX-BATH2","seat":"DESIGN","worker":"worker-47","file":"scratch/R027_TX_BATH2_DESIGN_REPLACEMENT.md","sha256":"db81ec39870df7877561da3ee8f752d5816f1d888f4c88e5e5115018cbfe0439","bytes":6948},
+    {"room":"TX-BATH2","seat":"BUILD","worker":"worker-48","file":"scratch/R027_TX_BATH2_BUILD_REPLACEMENT.md","sha256":"a73b74e15f3bcc89ff822f92e7792250063d38a2d0878444c49a15b9f99091fa","bytes":6095},
+    {"room":"TX-BATH2","seat":"COST","worker":"worker-54","file":"scratch/R027_TX_BATH2_COST_REPLACEMENT.md","sha256":"cad4b45107d2b761d9c170429eaa6cdaa939362e59946d02fcdfa0c35b6e6283","bytes":14803},
+    {"room":"TX-BATH4","seat":"MARKET","worker":"worker-50","file":"rooms/TX-BATH4/board/round-027/critic-market.md","sha256":"9b6898bbe9bb2aee602a25a209474be13e538140246428f4c22c41245e32194f","bytes":4765},
+    {"room":"TX-BATH4","seat":"DESIGN","worker":"worker-51","file":"rooms/TX-BATH4/board/round-027/critic-design.md","sha256":"0a33de84787746f4b9d65ffcad2b6ca6c262084dcc417e217f7cef52fe6ff85e","bytes":7308},
+    {"room":"TX-BATH4","seat":"BUILD","worker":"worker-52","file":"rooms/TX-BATH4/board/round-027/critic-build.md","sha256":"906833c6d2c5497abe337e97dbb89824baf4a35ac8c5a6ac5e01ffad9eb38368","bytes":7816},
+    {"room":"TX-BATH4","seat":"COST","worker":"worker-53","file":"rooms/TX-BATH4/board/round-027/critic-cost.md","sha256":"e04181d9d358106a7a8f83092b1570a94c84fbbba942befa3a3a92c298dd2bfd","bytes":5921}
+  ],
+  "excluded_historical_reports": [
+    {"room":"TX-BATH2","seat":"DESIGN","worker":"worker-42","file":"rooms/TX-BATH2/board/round-027/critic-design.md","reason":"same worker already reviewed PH-BATH2 DESIGN in this round; cross-room reuse violates independence; preserved, not scored"},
+    {"room":"TX-BATH2","seat":"BUILD","worker":"worker-43","file":"rooms/TX-BATH2/board/round-027/critic-build.md","reason":"same worker already reviewed PH-BATH2 BUILD in this round; cross-room reuse violates independence; preserved, not scored"},
+    {"room":"TX-BATH2","seat":"COST","worker":"worker-49","file":"rooms/TX-BATH2/board/round-027/critic-cost.md","reason":"worker read a prohibited vendor_comparison register outside the allow-list; preserved, not scored"},
+    {"room":"TX-BATH2","seat":"MARKET replacement","worker":"worker-46","file":"scratch/R027_TX_BATH2_MARKET_REPLACEMENT.md","reason":"unnecessary duplicate; valid original MARKET worker45 retained; not scored"}
+  ],
+  "arithmetic": {
+    "PH-BATH2": {
+      "A":{"MARKET":4.3,"DESIGN":4.3,"BUILD":3.2,"COST":3.4,"weighted":3.845,"minimum":3.2},
+      "B":{"MARKET":4.2,"DESIGN":4.2,"BUILD":2.7,"COST":3.3,"weighted":3.645,"minimum":2.7},
+      "calculation":"A=4.3*.30+4.3*.25+3.2*.25+3.4*.20=3.845; B=4.2*.30+4.2*.25+2.7*.25+3.3*.20=3.645"
+    },
+    "TX-BATH2": {
+      "A":{"MARKET":4.0,"DESIGN":4.1,"BUILD":4.1,"COST":3.7,"weighted":3.99,"minimum":3.7},
+      "B":{"MARKET":3.8,"DESIGN":4.0,"BUILD":3.5,"COST":3.4,"weighted":3.695,"minimum":3.4},
+      "calculation":"A=4.0*.30+4.1*.25+4.1*.25+3.7*.20=3.99; B=3.8*.30+4.0*.25+3.5*.25+3.4*.20=3.695"
+    },
+    "TX-BATH4": {
+      "A":{"MARKET":3.5,"DESIGN":3.7,"BUILD":2.9,"COST":3.0,"weighted":3.30,"minimum":2.9},
+      "B":{"MARKET":3.5,"DESIGN":3.6,"BUILD":2.6,"COST":2.5,"weighted":3.10,"minimum":2.5},
+      "calculation":"A=3.5*.30+3.7*.25+2.9*.25+3.0*.20=3.30; B=3.5*.30+3.6*.25+2.6*.25+2.5*.20=3.10"
+    }
+  },
+  "hard_gate_assessment": {
+    "PH-BATH2":"BLOCKED: both candidates fail individual specialist minimum for B; geometry, niche, tub interface, Chicago stock and complete delivered cost remain UNKNOWN. TUB means no tiled PAN.",
+    "TX-BATH2":"BLOCKED: both candidates meet numeric specialist minimums, but native geometry and visible-cut layout, Chicago stock/ETA and full delivered cost remain UNKNOWN. Basin remains unselected; TUB means no tiled PAN.",
+    "TX-BATH4":"BLOCKED: both candidates fail at least one individual specialist minimum (A BUILD 2.9; B BUILD 2.6 and COST 2.5); geometry, Chicago stock and full delivered cost remain UNKNOWN. TUB means no tiled PAN."
+  },
+  "incumbent_comparison":"No accepted same-round incumbent is evidenced for these blocked rooms. The +0.25 challenger rule cannot be satisfied by inventing an incumbent; no candidate is accepted.",
+  "champions_changed":false,
+  "owner_approval":false,
+  "procurement_release":false,
+  "post_score_independent_review":"PENDING",
+  "global_DONE":false
+}

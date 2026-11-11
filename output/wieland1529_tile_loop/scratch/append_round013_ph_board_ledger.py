@@ -1,0 +1,19 @@
+"""One-time R012 final clearance and R013 PH source submission ledger entry."""
+from pathlib import Path
+import hashlib,json
+root=Path(__file__).resolve().parents[1]
+ledger=root/'state/LEDGER.md'
+sub=root/'state/ROUND013_SUBMISSION.json'
+receipt=json.loads(sub.read_text(encoding='utf-8'))
+assert receipt['all_critic_scores'] is None and receipt['critic_dispatch']=='NOT DISPATCHED'
+heading='## R012 FIX2 independent clearance and R013 PH neutral blind submission - 2026-11-06'
+previous=ledger.read_text(encoding='utf-8')
+assert heading not in previous
+sha=hashlib.sha256(sub.read_bytes()).hexdigest()
+text='\n\n'+heading+'\n'
+text+='- Standing non-Pro Reviewer worker-11 independently returned CONTINUE after R012 FIX2. Python scorer syntax and three TX room source-versus-revised open_gaps now PASS; exact old/new SHA and no-rescore receipt state/ROUND012_POST_SCORE_REVIEWER_FIX2.json. Reviewer independently verified unchanged original six frozen candidate/12 authentic critic SHA, R012 scored receipt, six R12 and five R13 signed owner outputs, 65 trade actions, 25 wall studies, 27 original material rows and historic $23,572.44 with original 15% gross waste included once. All R012 TX Primary 2.78 to 3.15 +0.37, TX Bath2 3.17 to 3.38 +0.21, TX Bath4 2.76 to 3.24 +0.48 remain BLOCKED; no owner approval, champion or procurement release.\n'
+text+='- Authored two new maker-grounded PH technical research notes: research/products/R13_PH_SOURCE_PRESERVING_INSTALLATION_ALTERNATIVES_20261106.md and R13_PH_RL21_MULTI_FORMAT_LEVEL_LINEAR_POINT_SOURCE_EVIDENCE.md. RL21 Dynamic Beige 12x24 LEVEL USA 3/8-in and RL21 1.5in Hex PAN Mexico 5/16-in are distinct SKU formats with differing origin/thickness, unknown exact raw measured wet DCOF and unquoted local cartons. Maker wet Target is NOT measured lab certificate. PH Primary retains Brizo BT0734816-BNX 48in LINEAR/BR73480 no niche and separate Duravit; manufacturer factory solid grate study is a real configuration that may eliminate tile-in insert chip-thickness coordination, but bonded membrane/liner/slope remain HOLD. PH Bath2 maker wet-approved Sapphire/Sandstone remains selected Duravit/Matte White TUB, no tiled PAN. PH Bath4 WALK-IN square Brizo BNX point drain, flat Bone/Soho wet-listed direction versus unlisted Ribbed/Caviar, 35-versus-27 SF and Soft/AntiSlip issues held.\n'
+text+='- Created six fresh neutral source-specific PH Round013 candidates PH-PRIMARY A/B, PH-BATH2 B/C, PH-BATH4 A/C and three private prime/Reviewer-only _key.json role files. Each candidate has same mandated line3, five-column source quantity/dated price/manufacturer application and installation gate table, source-specific LEVEL versus PAN, selected fixtures and exact model/cost holds. Nonmutating scratch/verify_round013_ph_source_preflight.py PASS six SHA-ready candidates, 33 resolved local source citations, per-room file-size symmetry and zero public role phrases, no critic files. Frozen state/ROUND013_SUBMISSION.json SHA '+sha+' with 6 exact source SHA/bytes, all_critic_scores:null and dispatch NOT DISPATCHED. No R010 or R012 frozen candidate, historical scores or signed R12/R13 package touched.\n'
+text+='- Existing standing Reviewer worker-11 has been sent a five-section Round013 PH read-only pre-dispatch audit request. Await explicit FIX/CONTINUE before authentic independent critic dispatch; scoring only in a subsequent distinct turn. Real native 1529 model not verified (current open Revit 1527), exact individual raw LEVEL/PAN wet DCOF, approved point/linear drain membrane section, measured wall/niche/pan cuts, Chicago stock/lot/price/ETA, cartons, owner caps and signed selections remain null. Global 13-room design/procurement objective remains OPEN; Revit/Smartsheet unchanged and no vendor communications or purchasing actions.\n'
+ledger.write_text(previous+text,encoding='utf-8')
+print('PASS substantive R012 clearance + R013 blind PH submission LEDGER entry SHA',sha)

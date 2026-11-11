@@ -1,0 +1,33 @@
+{
+  "round": 27,
+  "phase": "ADDITIVE_PROVISIONAL_OWNER_CARD_REVIEWER_STATUS_CORRECTION",
+  "authority": "Authentic signed R026 independent post-score Reviewer35 clearance; no change to score or verdict scope",
+  "predecessor_manifest": "state/ROUND027_13_PROVISIONAL_OWNER_PREVIEWS_SIGNED.json",
+  "predecessor_manifest_sha256": "d0f4e434cda786afdf9cf4509c7b3ddaa68bf211a628dcef65f6f172574e953b",
+  "changed_cards": {
+    "deliverables/r027-13-owner-review-PROVISIONAL/TX-PRIMARY.md": {
+      "before_sha256": "f8a5c6c835027e72691e8c8d66b5624f3864434903d3c76fa8d8b65d47028e5e",
+      "before_bytes": 2068,
+      "after_sha256": "98a12314bc4edd2f87bf0e9460dbcbae62e0126313672f8895769a9a0c935f7a",
+      "after_bytes": 2103,
+      "correction": "Replace stale Reviewer35 pending language with exact CONTINUE FOR R026 NONACCEPTANCE SCORING ONLY; no champion acceptance implied."
+    },
+    "deliverables/r027-13-owner-review-PROVISIONAL/TX-BATH3.md": {
+      "before_sha256": "55a6671d5c3332d2e090ef79c08d6089cf1a68b73f9eae51f38e4f5f4e8980df",
+      "before_bytes": 2268,
+      "after_sha256": "4b18d8bbb682a6348414cbfbe9eae22ccbb0c6469a49c0ba2c59747cf6f7095f",
+      "after_bytes": 2314,
+      "correction": "Replace stale R026 independent post-score review pending language with exact Reviewer35 CONTINUE nonacceptance verdict; no champion acceptance implied."
+    }
+  },
+  "unchanged_cards": "Other eleven R027 provisional cards and README left untouched by this correction.",
+  "reviewer35_source": "state/ROUND026_INDEPENDENT_POSTSCORE_REVIEWER35_CLEARANCE.json",
+  "reviewer35_run_id": "8c7087b8-0c7e-4cc5-9584-446198aab975",
+  "exact_verdict": "CONTINUE FOR R026 NONACCEPTANCE SCORING ONLY",
+  "R024_PH_BATH2": "No authentic R024 post-score independent verdict receipt was found; retain its pending language until independently verified.",
+  "R024_TX_BATH2_AND_TX_BATH4": "Reviewer16 receipt is pre-dispatch only; no post-score clearance is claimed.",
+  "owner_approval": false,
+  "champions_promoted": false,
+  "procurement_release": false,
+  "global_DONE": false
+}

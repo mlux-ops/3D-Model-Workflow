@@ -1,0 +1,88 @@
+{
+  "round": 28,
+  "date": "2026-11-07",
+  "type": "controlled source accuracy amendment after Reviewer40 PRECISE FIX",
+  "reviewer_clearance": "state/ROUND028_INDEPENDENT_REVIEWER40_CLEARANCE.json",
+  "reviewer_verdict_before_fix": "PRECISE FIX",
+  "reviewer_report": "state/ROUND028_REVIEWER40_REPORT.md",
+  "modifications": [
+    {
+      "path": "rooms/PH-PRIMARY/vendor_comparison.md",
+      "before": {
+        "sha256": "692e7dabe127ce2f0f75a0f9d9c3f59dde51fa5642583847213d60cdeb3dd725",
+        "bytes": 11533
+      },
+      "after": {
+        "sha256": "8de68930faa2bacc3c928d32611144d6f3b4e42ad750ef8ae2b6be497a52a283",
+        "bytes": 15982
+      },
+      "corrected_bottega_rows": 2
+    },
+    {
+      "path": "rooms/PH-BATH3/vendor_comparison.md",
+      "before": {
+        "sha256": "6f6c079056934cc1c3ec4cd726df29af380fca9522b9ccdca5bf500d418005f9",
+        "bytes": 13017
+      },
+      "after": {
+        "sha256": "30128f1e7e1e7d56d93e9c07769bab56edeb04a13bd09ecf7b654635ea6e94e1",
+        "bytes": 18171
+      },
+      "corrected_bottega_rows": 3
+    },
+    {
+      "path": "rooms/PH-BATH4/vendor_comparison.md",
+      "before": {
+        "sha256": "c2f0e4b665ffb3b70c3797ae40e279d5a7ffe639f311010666d765f33f39e7ad",
+        "bytes": 13334
+      },
+      "after": {
+        "sha256": "8fd6927ca73430517e22f73ea40b368e151af5deb997d6fcef4af2f8536d5ff6",
+        "bytes": 18519
+      },
+      "corrected_bottega_rows": 3
+    },
+    {
+      "path": "rooms/TX-PRIMARY/vendor_comparison.md",
+      "before": {
+        "sha256": "b6643c769d7b4466b8678a69e9c8e78afaf5887f7a5fddcdf4bc8b65164041dd",
+        "bytes": 11175
+      },
+      "after": {
+        "sha256": "7f7d0c8c98bce2496a37aaa8bfa6fb03abb2a84e3191f21b0fc8e5cd2d0e29d4",
+        "bytes": 15674
+      },
+      "corrected_bottega_rows": 2
+    },
+    {
+      "path": "research/products/13_ROOM_SURFACE_QUALIFICATION_GAP_REGISTER_20261107.md",
+      "before": {
+        "sha256": "5fbc75fdcae565cfef4c340c187ed2ad9a0aae0732e5a5f758c64daed393f4de",
+        "bytes": 16252
+      },
+      "after": {
+        "sha256": "545ee48f5c6e3adc65a49d89315b50f16afc8023cdfd325c11fe5d5c3321f3aa",
+        "bytes": 16576
+      },
+      "corrected_bottega_rows": 0
+    }
+  ],
+  "new_research": {
+    "path": "research/products/R029_LIVE_PRIMARY_SOURCE_RECHECK_20261107.md",
+    "sha256": "6d571236c66d4868a780c571b5b0f46fac03aae37e7e21fe4365b458e7bd3a63",
+    "bytes": 5308
+  },
+  "details": [
+    "FIX-A: 10 stale combined Bottega mappings replaced with separate US SKU/format/public-price entries (31x31 100323039 $11.95; 23x23 100324943 $10.95; 47x47 100307901 $12.95). All wet application/DCOF remain UNKNOWN.",
+    "FIX-B: corrected erroneous distinct-PAN shortage and integrated four distinct Floor & Decor product-level wet-rated 24x24/24x48 choices into each priority-room comparison, with exact sizes/cases and price contexts.",
+    "Owner-controlled TX-BATH3 tub vs walk-in branch wording additionally corrected; no owner decision invented.",
+    "External current F&D store-dependent availability caveat for Chastain and Tower carton rounding noted. No Chicago matching stock, ETA or full cost inferred."
+  ],
+  "preserved": [
+    "All original signed R018-R027 freezes, critique reports, nonacceptance scores and clearance",
+    "R028 independent report and clearance unchanged",
+    "13 geometry identity receipt hashes unchanged",
+    "13 ROOMS champion selections unchanged and 13 owner packets still provisional"
+  ],
+  "status": "SOURCE_FIX_APPLIED_NOT_INDEPENDENTLY_RECLEARED; no pre-dispatch clearance or critic dispatch, champion acceptance, procurement or global DONE"
+}

@@ -1,0 +1,175 @@
+{
+  "round": 27,
+  "phase": "CONTINUE_FOR_R027_NONACCEPTANCE_ONLY",
+  "receipt_type": "independent post-score reviewer clearance",
+  "reviewer": {
+    "worker_id": "worker-40",
+    "label": "R027 independent post-score review",
+    "run_id": "8a358fec-5853-4dea-81a6-0d5ef17fedf1",
+    "exact_verdict": "CONTINUE FOR R027 NONACCEPTANCE ONLY",
+    "report": {
+      "file": "state/ROUND027_POSTSCORE_REVIEWER40_REPORT.md",
+      "sha256": "f61ffd16e473153575c085f588316bb1c50a0f2e7f5d3f82aa75153758e16f79",
+      "bytes": 3213,
+      "characters": 3213
+    },
+    "changes_by_reviewer": "Updated only the two assigned Reviewer40 post-score outputs. No collection, scoring report, candidate, research, critique or acceptance file was changed."
+  },
+  "source_receipts": {
+    "fix3": {
+      "file": "state/ROUND027_PREDISPATCH_FIX3_FOUR_ROOM_LINKS_REFROZEN.json",
+      "sha256": "8f809519932dc9f8b02ad477f57e14b890d1ac71179adc919f6f5acd358fb73a",
+      "bytes": 5529,
+      "verified": true
+    },
+    "formal_freeze": {
+      "file": "state/ROUND027_FORMAL_THREE_TUB_ROOMS_SOURCE_FROZEN_PREDISPATCH.json",
+      "sha256": "cbc7d09b68a81840e352209290d8fb1395be8b592c4c02306ab6f848a1044d44",
+      "bytes": 5783,
+      "verified": true
+    },
+    "fix2": {
+      "file": "state/ROUND027_PREDISPATCH_FIX2_ROOM_ONLY_RESEARCH_REFREEZE.json",
+      "sha256": "7f561dced2759f41fadd9190260dfccd24758b06d4d762fe545450b9a9f32324",
+      "bytes": 5092,
+      "verified": true
+    },
+    "predispatch_clearance": {
+      "file": "state/ROUND027_INDEPENDENT_PREDISPATCH_REVIEWER40_CLEARANCE.json",
+      "sha256": "d598d97ef5d32f359ddc2479c7b4cc1189e9b38b5d8116fc5d471587929f33fe",
+      "bytes": 5485,
+      "verified": true
+    },
+    "prepared_source": {
+      "file": "state/ROUND027_THREE_DURAVIT_TUB_BATHS_PREPARED_NOT_SUBMITTED.json",
+      "sha256": "ec25d1a70aaae12b8fe213c4f22da7156571bda5b25e6a5b3218c14ef06ffac7",
+      "bytes": 3856,
+      "verified": true
+    },
+    "prepared_fix1": {
+      "file": "state/ROUND027_TUB_PREPARED_FIX1_SOURCE_SCOPE_SUPERSEDING_ONE_FILE.json",
+      "sha256": "2ef014c12d43dcf16947f4110ddccb51368e9c8069ef2ab17f664370cca3d945",
+      "bytes": 1059,
+      "verified": true
+    },
+    "scored_collection": {
+      "file": "state/ROUND027_AUTHENTIC_FOUR_SEAT_COLLECTION_SCORED_NO_CHAMPIONS.json",
+      "sha256": "6763602ce6014dade1c58eb63e4a611f1fb4ec0fcf33491ad5fa2a9bd7685559",
+      "bytes": 6488,
+      "verified_readback": true
+    },
+    "scoring_report": {
+      "file": "state/ROUND027_SCORING_FIVE_SECTION_REVIEWER_REPORT.md",
+      "sha256": "4cedcf30c9e5fde25c40df54d139ef2796dce969ba6de0d81617b9791f05b10a",
+      "bytes": 2085,
+      "verified_readback": true
+    },
+    "scoring_arithmetic_fix1": {
+      "file": "state/ROUND027_SCORING_ARITHMETIC_FIX1_RECEIPT.json",
+      "sha256": "e69edcb82b88c2f158957614b100f04f26053671c9db9d78b7a7dc2270d31cf9",
+      "bytes": 2773,
+      "verified_readback": true
+    }
+  },
+  "fingerprint_audit": {
+    "six_neutral_candidates": [
+      {"file":"rooms/PH-BATH2/board/round-027/candidates/A.md","sha256":"11b2420a3219c836e9dd9d2c391fe8f09f57f30f65fd0495dcb7982071b1fb3c","bytes":3745,"match":true},
+      {"file":"rooms/PH-BATH2/board/round-027/candidates/B.md","sha256":"fa9673968f1326a97904931c88ea9df06e9c4871fd32c816dfe4a34f2f230174","bytes":3634,"match":true},
+      {"file":"rooms/TX-BATH2/board/round-027/candidates/A.md","sha256":"2586470b37fd00a90dde3680aae343e6638a1b5abba7ae3e515e8fc0bd9d3ed6","bytes":3560,"match":true},
+      {"file":"rooms/TX-BATH2/board/round-027/candidates/B.md","sha256":"7cb85ced94f08a23b1d761da4f03c785c84eecc3f1051f322727646ec9db6ec3","bytes":3560,"match":true},
+      {"file":"rooms/TX-BATH4/board/round-027/candidates/A.md","sha256":"fbcd86bd213e616607ab90c74ea2aba5626eee8d0ffac3629bfc946a1a455106","bytes":3715,"match":true},
+      {"file":"rooms/TX-BATH4/board/round-027/candidates/B.md","sha256":"31684da05eb7b14c430c3560ad4b5d461319fbd67497988b5b5a323dd9fba827","bytes":3730,"match":true}
+    ],
+    "three_room_only_research_files": [
+      {"file":"research/products/R027_PH_BATH2_BLIND_PRODUCT_EVIDENCE.md","sha256":"05303da7b1df45021aa19027a899b3f16f0f3f53b9fb2a0ffac7cfa94dddb25f","bytes":4318,"match":true},
+      {"file":"research/products/R027_TX_BATH2_BLIND_PRODUCT_EVIDENCE.md","sha256":"c4d4bc01ab04cde09c198a69f44874cc10e0104b90c91380425780e52087aac8","bytes":4255,"match":true},
+      {"file":"research/products/R027_TX_BATH4_BLIND_PRODUCT_EVIDENCE.md","sha256":"7e82b2a0e6110885b1eae70865c6fb54318f37fc9ab9ae459f7814e957dff2f3","bytes":4329,"match":true}
+    ],
+    "twelve_valid_critic_assignments": [
+      {"room":"PH-BATH2","seat":"MARKET","worker":"worker-41","file":"rooms/PH-BATH2/board/round-027/critic-market.md","sha256":"bd5d9795ec4de22f46dc596e0cc7ed6393a10a82f4c38a60f14ec2766c3564c3","bytes":9357,"match":true},
+      {"room":"PH-BATH2","seat":"DESIGN","worker":"worker-42","file":"rooms/PH-BATH2/board/round-027/critic-design.md","sha256":"3b3c76a7ed22d1e290a4f5b62d527a3af01e8314d12efc0aaa536ec6ae848391","bytes":8224,"match":true},
+      {"room":"PH-BATH2","seat":"BUILD","worker":"worker-43","file":"rooms/PH-BATH2/board/round-027/critic-build.md","sha256":"e41f047ddc7728c5f19900ed6f4b02ebc6290acc48dc7510f11e23fc84356821","bytes":9006,"match":true},
+      {"room":"PH-BATH2","seat":"COST","worker":"worker-44","file":"rooms/PH-BATH2/board/round-027/critic-cost.md","sha256":"bd5b817f982167a4ed0a8071cdbd6c69ceba7d1c3dbf5b2702ea18a9e1c87ed6","bytes":7944,"match":true},
+      {"room":"TX-BATH2","seat":"MARKET","worker":"worker-45","file":"rooms/TX-BATH2/board/round-027/critic-market.md","sha256":"c50067cbaa77653b652de77892635219ac91b1261268fcb4fa3c228bf6e9361d","bytes":6705,"match":true},
+      {"room":"TX-BATH2","seat":"DESIGN","worker":"worker-47","file":"scratch/R027_TX_BATH2_DESIGN_REPLACEMENT.md","sha256":"db81ec39870df7877561da3ee8f752d5816f1d888f4c88e5e5115018cbfe0439","bytes":6948,"match":true},
+      {"room":"TX-BATH2","seat":"BUILD","worker":"worker-48","file":"scratch/R027_TX_BATH2_BUILD_REPLACEMENT.md","sha256":"a73b74e15f3bcc89ff822f92e7792250063d38a2d0878444c49a15b9f99091fa","bytes":6095,"match":true},
+      {"room":"TX-BATH2","seat":"COST","worker":"worker-54","file":"scratch/R027_TX_BATH2_COST_REPLACEMENT.md","sha256":"cad4b45107d2b761d9c170429eaa6cdaa939362e59946d02fcdfa0c35b6e6283","bytes":14803,"match":true},
+      {"room":"TX-BATH4","seat":"MARKET","worker":"worker-50","file":"rooms/TX-BATH4/board/round-027/critic-market.md","sha256":"9b6898bbe9bb2aee602a25a209474be13e538140246428f4c22c41245e32194f","bytes":4765,"match":true},
+      {"room":"TX-BATH4","seat":"DESIGN","worker":"worker-51","file":"rooms/TX-BATH4/board/round-027/critic-design.md","sha256":"0a33de84787746f4b9d65ffcad2b6ca6c262084dcc417e217f7cef52fe6ff85e","bytes":7308,"match":true},
+      {"room":"TX-BATH4","seat":"BUILD","worker":"worker-52","file":"rooms/TX-BATH4/board/round-027/critic-build.md","sha256":"906833c6d2c5497abe337e97dbb89824baf4a35ac8c5a6ac5e01ffad9eb38368","bytes":7816,"match":true},
+      {"room":"TX-BATH4","seat":"COST","worker":"worker-53","file":"rooms/TX-BATH4/board/round-027/critic-cost.md","sha256":"e04181d9d358106a7a8f83092b1570a94c84fbbba942befa3a3a92c298dd2bfd","bytes":5921,"match":true}
+    ],
+    "valid_assignment_count": 12,
+    "unique_worker_count": 12,
+    "assignments_per_room": {"PH-BATH2":4,"TX-BATH2":4,"TX-BATH4":4},
+    "assignments_per_seat": {"MARKET":3,"DESIGN":3,"BUILD":3,"COST":3},
+    "all_valid_critic_hash_byte_pairs_match": true,
+    "all_candidate_hash_byte_pairs_match_fix3": true,
+    "all_room_research_hash_byte_pairs_match_fix3": true
+  },
+  "excluded_reports": [
+    {"worker":"worker-42","room":"TX-BATH2","seat":"DESIGN","file":"rooms/TX-BATH2/board/round-027/critic-design.md","sha256":"c380c4fee2a0af4c01ce4485790bee3844c1acbc4b3acc3f3cea4c6af807e74a","bytes":8708,"reason":"same worker already reviewed PH-BATH2 DESIGN; cross-room reuse; preserved and not scored"},
+    {"worker":"worker-43","room":"TX-BATH2","seat":"BUILD","file":"rooms/TX-BATH2/board/round-027/critic-build.md","sha256":"8332570322a3de6986799b842ef01a2e7ce522b3358590478289b8df9ebfbc29","bytes":8717,"reason":"same worker already reviewed PH-BATH2 BUILD; cross-room reuse; preserved and not scored"},
+    {"worker":"worker-49","room":"TX-BATH2","seat":"COST","file":"rooms/TX-BATH2/board/round-027/critic-cost.md","sha256":"037df0e26cfaa93bafaa7929aaa45db838f60539b81c831577198dca5b89021b","bytes":9195,"reason":"collection receipt records a prohibited vendor_comparison register read; preserved and not scored; report text does not cite the register"},
+    {"worker":"worker-46","room":"TX-BATH2","seat":"MARKET replacement","file":"scratch/R027_TX_BATH2_MARKET_REPLACEMENT.md","sha256":"c22e79844aef663a4a8ebbf005e2715781658ae4761b3d8d1dc43d7370907944","bytes":11540,"reason":"unnecessary duplicate; valid original MARKET worker45 retained; preserved and not scored"}
+  ],
+  "source_scope_audit": {
+    "shared_R027_TUB_THREE_ROOM_SOURCED_ALTERNATIVES_in_candidates_research_or_valid_critiques": false,
+    "vendor_comparison_register_reference_in_candidates_research_or_valid_critiques": false,
+    "other_room_identifiers_in_candidates_research_or_valid_critiques": false,
+    "prior_round_outcome_references_in_candidates_research_or_valid_critiques": false,
+    "private_key_contents_read": false,
+    "private_A_B_mapping_read": false
+  },
+  "seat_means_and_weighted_recomputation": {
+    "weights": {"MARKET":0.30,"DESIGN":0.25,"BUILD":0.25,"COST":0.20},
+    "means_are_correct": true,
+    "PH-BATH2": {
+      "A": {"seat_means":{"MARKET":4.3,"DESIGN":4.3,"BUILD":3.2,"COST":3.4},"recorded_weighted":3.845,"correct_weighted":3.845,"formula":"4.3*.30 + 4.3*.25 + 3.2*.25 + 3.4*.20"},
+      "B": {"seat_means":{"MARKET":4.2,"DESIGN":4.2,"BUILD":2.7,"COST":3.3},"recorded_weighted":3.645,"correct_weighted":3.645,"formula":"4.2*.30 + 4.2*.25 + 2.7*.25 + 3.3*.20"}
+    },
+    "TX-BATH2": {
+      "A": {"seat_means":{"MARKET":4.0,"DESIGN":4.1,"BUILD":4.1,"COST":3.7},"recorded_weighted":3.99,"correct_weighted":3.99},
+      "B": {"seat_means":{"MARKET":3.8,"DESIGN":4.0,"BUILD":3.5,"COST":3.4},"recorded_weighted":3.695,"correct_weighted":3.695}
+    },
+    "TX-BATH4": {
+      "A": {"seat_means":{"MARKET":3.5,"DESIGN":3.7,"BUILD":2.9,"COST":3.0},"recorded_weighted":3.3,"correct_weighted":3.3,"formula":"3.5*.30 + 3.7*.25 + 2.9*.25 + 3.0*.20"},
+      "B": {"seat_means":{"MARKET":3.5,"DESIGN":3.6,"BUILD":2.6,"COST":2.5},"recorded_weighted":3.1,"correct_weighted":3.1,"formula":"3.5*.30 + 3.6*.25 + 2.6*.25 + 2.5*.20"}
+    },
+    "fix1_before_after_hashes_verified": true,
+    "all_24_criterion_mean_expressions_recomputed_correctly": true,
+    "all_12_critic_seat_means_recomputed_correctly": true,
+    "all_six_weighted_totals_match_corrected_collection_and_report": true,
+    "exact_correction_targets": [
+      "state/ROUND027_AUTHENTIC_FOUR_SEAT_COLLECTION_SCORED_NO_CHAMPIONS.json",
+      "state/ROUND027_SCORING_FIVE_SECTION_REVIEWER_REPORT.md"
+    ]
+  },
+  "individual_minimums": {
+    "PH-BATH2": {"A":{"minimum":3.2,"passes":true},"B":{"minimum":2.7,"passes":false,"failing_seat":"BUILD"}},
+    "TX-BATH2": {"A":{"minimum":3.7,"passes":true},"B":{"minimum":3.4,"passes":true}},
+    "TX-BATH4": {"A":{"minimum":2.9,"passes":false,"failing_seat":"BUILD"},"B":{"minimum":2.5,"passes":false,"failing_seats":["BUILD","COST"]}}
+  },
+  "hard_gate_review": {
+    "wet_wall_and_niche": "Room-specific maker Wet Areas evidence is present for proposed products.",
+    "bath_floor_slip": "F&D SKUs 101317949 and 101487775 publish wet DCOF >=0.42 and Bathroom Floor suitability.",
+    "shower_pan": "N/A in all three selected Duravit tub rooms; no tiled PAN.",
+    "geometry": "UNKNOWN; TX-BATH2 has a potential sub-3-in horizontal 2x20 wall end cut on assumed W1; TX-BATH4 nominal return cuts are near 3 in. No verified Revit/field cut layout.",
+    "availability": "No confirmed discontinuation or absence-of-US-distribution failure; Chicago matching lot, cartons and ETA remain UNKNOWN.",
+    "budget": "Owner budget stance is FILL IN; 125% comparison is provisional; complete delivered cost remains UNKNOWN.",
+    "plumbing": "PH-BATH2 Matte White; TX-BATH2 Chrome with basin UNSELECTED; TX-BATH4 Matte White with thermostat/diverter compatibility held."
+  },
+  "incumbent_rule": {
+    "collection_receipt_statement": "No accepted same-round incumbent is evidenced for these blocked rooms.",
+    "private_mapping_read": false,
+    "plus_0_25_comparison": "Not independently verifiable from the permitted sources; no candidate accepted."
+  },
+  "acceptance_state": {
+    "champions_changed": false,
+    "owner_approval": false,
+    "procurement_release": false,
+    "global_DONE": false,
+    "acceptance_stopped_pending_exact_weighted_total_correction": false,
+    "acceptance_still_blocked_by_specialist_minimums_and_unknown_gates": true
+  }
+}

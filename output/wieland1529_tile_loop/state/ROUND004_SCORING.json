@@ -1,0 +1,329 @@
+{
+  "as_of": "2026-11-06",
+  "source_submission": "state/ROUND004_SUBMISSION.json",
+  "round": 4,
+  "verification": {
+    "candidate_immutable_files": 8,
+    "independent_critique_files": 16,
+    "criterion_checks": 152,
+    "source_links_count": 600,
+    "all_16_valid": true
+  },
+  "room_results": {
+    "PH-PRIMARY": {
+      "room": "PH-PRIMARY",
+      "round": 4,
+      "critics_complete": true,
+      "weights": {
+        "market": 0.3,
+        "design": 0.25,
+        "build": 0.25,
+        "cost": 0.2
+      },
+      "critic_file_fingerprints": {
+        "market": {
+          "sha256": "e588219d61c1d74f59901a999b4214ccae2e9a5e8223402c96dd019dd853ca8d",
+          "bytes": 9100
+        },
+        "design": {
+          "sha256": "55bf21bd900aaa5c3b267b012a29af4936a8c383ddcd34e980727dd3d93dce51",
+          "bytes": 11375
+        },
+        "build": {
+          "sha256": "d993756a65bac0467483594db25578d23328aaf12419685ee4298704df6bbd6a",
+          "bytes": 10154
+        },
+        "cost": {
+          "sha256": "e2ece32d37713f607d99f22762b8cb4a2d67b5daed3a37907d97c81a90175d6a",
+          "bytes": 10152
+        }
+      },
+      "candidates": {
+        "A": {
+          "role": "revised design option",
+          "seat_scores": {
+            "market": 4.0,
+            "design": 4.0,
+            "build": 3.0,
+            "cost": 2.6
+          },
+          "weighted_score": 3.47,
+          "minimum_critic_score": 2.6,
+          "all_seat_minimum_3_pass": false,
+          "hard_gates_pass": false,
+          "gate_reasons": [
+            "FAIL: floor exact measured SKU wet DCOF unavailable",
+            "FAIL: shower pan exact measured SKU wet DCOF unavailable"
+          ],
+          "source_candidate_sha256": "ce61f447d52033c87ac00cf9c084a49b1000a6a116c6a6de505a30ca2aa4935b"
+        },
+        "C": {
+          "role": "historic v4 source",
+          "seat_scores": {
+            "market": 3.4,
+            "design": 3.2,
+            "build": 1.8,
+            "cost": 2.8
+          },
+          "weighted_score": 2.83,
+          "minimum_critic_score": 1.8,
+          "all_seat_minimum_3_pass": false,
+          "hard_gates_pass": false,
+          "gate_reasons": [
+            "FAIL: floor exact measured SKU wet DCOF unavailable",
+            "FAIL: shower pan exact measured SKU wet DCOF unavailable",
+            "FAIL: wet-wall relief or niche product-specific approval absent"
+          ],
+          "source_candidate_sha256": "5c32e987676f146ff99f3a3e0f36e33cd64fa7019dbca0ca696232250c02aebb"
+        }
+      },
+      "incumbent_letter": "C",
+      "challenger_letter": "A",
+      "margin": 0.64,
+      "decision": "both_candidates_blocked_floor_gate",
+      "status": "blocked",
+      "champion_id": null,
+      "champion_score": null,
+      "accepted_challenger": false,
+      "owner_approved": false,
+      "provisional_design_preference": "A",
+      "report": "board/round-004/ROUND_REPORT.md"
+    },
+    "PH-BATH2": {
+      "room": "PH-BATH2",
+      "round": 4,
+      "critics_complete": true,
+      "weights": {
+        "market": 0.3,
+        "design": 0.25,
+        "build": 0.25,
+        "cost": 0.2
+      },
+      "critic_file_fingerprints": {
+        "market": {
+          "sha256": "bc56a0d49d3488fb4c6d083b4f61ead1f966fce1cad7c4eb9bf3b5085fda4680",
+          "bytes": 8309
+        },
+        "design": {
+          "sha256": "b16a664e86c5258ac757db1aae23814c631fe5a1542d8637adb369835e3e39aa",
+          "bytes": 11000
+        },
+        "build": {
+          "sha256": "194a4d4d484fd4b16c412ad1ae357fb05dffb010aecb5d77191dcaf4bfb79250",
+          "bytes": 9529
+        },
+        "cost": {
+          "sha256": "3e1c9b869ff6126c9608cb1936f402ecc18b9c7da749a1fa980e375868abbc01",
+          "bytes": 9293
+        }
+      },
+      "candidates": {
+        "A": {
+          "role": "historic v4 source",
+          "seat_scores": {
+            "market": 3.6,
+            "design": 3.6,
+            "build": 3.2,
+            "cost": 3.2
+          },
+          "weighted_score": 3.42,
+          "minimum_critic_score": 3.2,
+          "all_seat_minimum_3_pass": true,
+          "hard_gates_pass": false,
+          "gate_reasons": [
+            "FAIL: floor exact measured SKU wet DCOF unavailable"
+          ],
+          "source_candidate_sha256": "3c7a42f418dc47a8d34018d4ce5f7dcb5afeed5d0b8be6c7fff24eed2e962030"
+        },
+        "B": {
+          "role": "revised design option",
+          "seat_scores": {
+            "market": 3.8,
+            "design": 3.8,
+            "build": 3.2,
+            "cost": 2.8
+          },
+          "weighted_score": 3.45,
+          "minimum_critic_score": 2.8,
+          "all_seat_minimum_3_pass": false,
+          "hard_gates_pass": false,
+          "gate_reasons": [
+            "FAIL: floor exact measured SKU wet DCOF unavailable"
+          ],
+          "source_candidate_sha256": "295abe6b070aa705d4d0b232096d42cb1e821de832bfddbd023aa166ac19016a"
+        }
+      },
+      "incumbent_letter": "A",
+      "challenger_letter": "B",
+      "margin": 0.03,
+      "decision": "both_candidates_blocked_floor_gate",
+      "status": "blocked",
+      "champion_id": null,
+      "champion_score": null,
+      "accepted_challenger": false,
+      "owner_approved": false,
+      "provisional_design_preference": "B",
+      "report": "board/round-004/ROUND_REPORT.md"
+    },
+    "PH-BATH3": {
+      "room": "PH-BATH3",
+      "round": 4,
+      "critics_complete": true,
+      "weights": {
+        "market": 0.3,
+        "design": 0.25,
+        "build": 0.25,
+        "cost": 0.2
+      },
+      "critic_file_fingerprints": {
+        "market": {
+          "sha256": "e1c96c4244dfab71ab5ed1eedb4b50d68461994a55511ac7a8a5389904596341",
+          "bytes": 9149
+        },
+        "design": {
+          "sha256": "c44ea999ee2f5b7bb6c1278f2005e1ea86a8233c58ffde17304d43c11b126631",
+          "bytes": 11817
+        },
+        "build": {
+          "sha256": "a64cffa57717a1cc76619505ac130d8cd5f2e230458e5c315ee7dafe98bf33c7",
+          "bytes": 9765
+        },
+        "cost": {
+          "sha256": "3b1cef46afcc7a348dcaeeb564808399af2913c8ab377aac544312cecaccffc4",
+          "bytes": 9775
+        }
+      },
+      "candidates": {
+        "B": {
+          "role": "historic v4 source",
+          "seat_scores": {
+            "market": 3.4,
+            "design": 3.2,
+            "build": 1.8,
+            "cost": 2.6
+          },
+          "weighted_score": 2.79,
+          "minimum_critic_score": 1.8,
+          "all_seat_minimum_3_pass": false,
+          "hard_gates_pass": false,
+          "gate_reasons": [
+            "FAIL: floor exact measured SKU wet DCOF unavailable",
+            "FAIL: wet-wall relief or niche product-specific approval absent",
+            "HOLD: tub/Delta square point-drain configuration and unselected basin"
+          ],
+          "source_candidate_sha256": "6035c5fcd9d06ec3ee2c60c7bd2a831d77f9e0018b19bc250aa4d0ddddc8f82c"
+        },
+        "C": {
+          "role": "revised design option",
+          "seat_scores": {
+            "market": 3.8,
+            "design": 3.8,
+            "build": 2.8,
+            "cost": 2.8
+          },
+          "weighted_score": 3.35,
+          "minimum_critic_score": 2.8,
+          "all_seat_minimum_3_pass": false,
+          "hard_gates_pass": false,
+          "gate_reasons": [
+            "FAIL: floor exact measured SKU wet DCOF unavailable",
+            "HOLD: tub/Delta square point-drain configuration and unselected basin"
+          ],
+          "source_candidate_sha256": "bc91d4754c0a5d2ff09176e3769d50ba89ac3e6147b0091fdd6bdd42534ec725"
+        }
+      },
+      "incumbent_letter": "B",
+      "challenger_letter": "C",
+      "margin": 0.56,
+      "decision": "both_candidates_blocked_floor_gate",
+      "status": "blocked",
+      "champion_id": null,
+      "champion_score": null,
+      "accepted_challenger": false,
+      "owner_approved": false,
+      "provisional_design_preference": "C",
+      "report": "board/round-004/ROUND_REPORT.md"
+    },
+    "PH-BATH4": {
+      "room": "PH-BATH4",
+      "round": 4,
+      "critics_complete": true,
+      "weights": {
+        "market": 0.3,
+        "design": 0.25,
+        "build": 0.25,
+        "cost": 0.2
+      },
+      "critic_file_fingerprints": {
+        "market": {
+          "sha256": "3bd08880a0b9a0c3364d54dd44462c5d5d5c91e4dcad0e9ec10f66837a89c443",
+          "bytes": 9820
+        },
+        "design": {
+          "sha256": "475b9128167a063259eaafb97173715955f8541133aaba5f1aca306d0295925a",
+          "bytes": 11776
+        },
+        "build": {
+          "sha256": "116b7da6ef487067341e1d35017d2c02d74c2d10f06d4a537eee5500084e5dfa",
+          "bytes": 10814
+        },
+        "cost": {
+          "sha256": "879fd2ecf59150e058cb1554ca9d7e0598d13bc7b1232a65574fe0377a5dfe97",
+          "bytes": 10922
+        }
+      },
+      "candidates": {
+        "A": {
+          "role": "historic v4 source",
+          "seat_scores": {
+            "market": 3.2,
+            "design": 3.0,
+            "build": 1.4,
+            "cost": 2.0
+          },
+          "weighted_score": 2.46,
+          "minimum_critic_score": 1.4,
+          "all_seat_minimum_3_pass": false,
+          "hard_gates_pass": false,
+          "gate_reasons": [
+            "FAIL: floor exact measured SKU wet DCOF unavailable",
+            "FAIL: shower pan exact measured SKU wet DCOF unavailable",
+            "FAIL: wet-wall relief or niche product-specific approval absent",
+            "HOLD: 35-vs-27-SF floor and Soft-versus-Anti-Slip quoted finish"
+          ],
+          "source_candidate_sha256": "4f266245d4e9d7158fc6eb0497cc75da64ba0417231b4415169c0d89d2fc410e"
+        },
+        "B": {
+          "role": "revised design option",
+          "seat_scores": {
+            "market": 3.9,
+            "design": 4.0,
+            "build": 3.0,
+            "cost": 2.2
+          },
+          "weighted_score": 3.36,
+          "minimum_critic_score": 2.2,
+          "all_seat_minimum_3_pass": false,
+          "hard_gates_pass": false,
+          "gate_reasons": [
+            "FAIL: floor exact measured SKU wet DCOF unavailable",
+            "FAIL: shower pan exact measured SKU wet DCOF unavailable",
+            "HOLD: 35-vs-27-SF floor and Soft-versus-Anti-Slip quoted finish"
+          ],
+          "source_candidate_sha256": "651a0e3dd01bdfe1acb0f3cb95b4399c93366bb4086c84958de8a2f625b811ba"
+        }
+      },
+      "incumbent_letter": "A",
+      "challenger_letter": "B",
+      "margin": 0.9,
+      "decision": "both_candidates_blocked_floor_gate",
+      "status": "blocked",
+      "champion_id": null,
+      "champion_score": null,
+      "accepted_challenger": false,
+      "owner_approved": false,
+      "provisional_design_preference": "B",
+      "report": "board/round-004/ROUND_REPORT.md"
+    }
+  }
+}

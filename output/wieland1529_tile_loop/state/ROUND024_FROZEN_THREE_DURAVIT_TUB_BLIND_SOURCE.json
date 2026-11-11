@@ -1,0 +1,60 @@
+{
+  "round": 24,
+  "phase": "SOURCE_FROZEN_PRE_DISPATCH_REVIEWER_REQUIRED",
+  "focus_rooms": [
+    "PH-BATH2",
+    "TX-BATH2",
+    "TX-BATH4"
+  ],
+  "neutral_candidates": {
+    "rooms/PH-BATH2/board/round-024/candidates/A.md": {
+      "sha256": "a8b0d017e615f0bd15cd92d593ba285151583a935be52165134b69da861a50d0",
+      "bytes": 4795
+    },
+    "rooms/PH-BATH2/board/round-024/candidates/B.md": {
+      "sha256": "d00bf28ed559035ce9ea63e59b428288bc926bba8f23ba127d02a3835e3fba6f",
+      "bytes": 4847
+    },
+    "rooms/TX-BATH2/board/round-024/candidates/A.md": {
+      "sha256": "4cae631725ef99408610497d2ff14a5ef1871450ab3958c526e8e4a24a2b3a28",
+      "bytes": 4795
+    },
+    "rooms/TX-BATH2/board/round-024/candidates/B.md": {
+      "sha256": "6a5bf199ea956eb5ce227b0362d45204817d49f4db0c8664eb06384918131a32",
+      "bytes": 4823
+    },
+    "rooms/TX-BATH4/board/round-024/candidates/A.md": {
+      "sha256": "aa60ffc17577101276bd76333d002b48e53a3e404205f50fa41e5d27b17eaa46",
+      "bytes": 4893
+    },
+    "rooms/TX-BATH4/board/round-024/candidates/B.md": {
+      "sha256": "9a2a4a7e238afb1a2e113085b9f5e520b7b0c200c09cdaeb5471ae22f6416afb",
+      "bytes": 4901
+    }
+  },
+  "private_keys_not_for_critics": [
+    "rooms/PH-BATH2/board/round-024/_key.json",
+    "rooms/TX-BATH2/board/round-024/_key.json",
+    "rooms/TX-BATH4/board/round-024/_key.json"
+  ],
+  "immutable_parent_receipts": {
+    "state/ROUND023_THREE_DURAVIT_TUB_LFT_PRELIMINARY_NOT_SUBMITTED.json": {
+      "sha256": "e86c5abcf54497b10200e6df26767bf379bf988755d918c04f90942aaecf0e0c",
+      "bytes": 2548
+    },
+    "state/ROUND023_TRADE_PRICING_13_ROOM_ADDENDUM_SHA.json": {
+      "sha256": "33d60eed4f02079ec7e4eb53eb3b4265fbd5fc338573762b37670eda685f50b0",
+      "bytes": 6093
+    }
+  },
+  "same_job_elm_trade_quote": "2026-09-04 1a068e80c92c255f",
+  "wet_floor_gate": "F&D exact item published >=.42 and Bathroom Floor YES",
+  "all_three_programs": "SELECTED_DURAVIT_TUB_NO_TILED_PAN",
+  "independent_reviewer_clearance": null,
+  "critic_dispatch": null,
+  "four_authentic_reports": false,
+  "formal_scores": null,
+  "champions_changed": false,
+  "owner_approval": false,
+  "purchase_release": false
+}

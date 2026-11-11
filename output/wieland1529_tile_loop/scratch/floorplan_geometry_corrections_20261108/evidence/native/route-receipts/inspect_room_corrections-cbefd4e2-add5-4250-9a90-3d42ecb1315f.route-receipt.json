@@ -1,0 +1,40 @@
+{
+  "operation_id": "cbefd4e2-add5-4250-9a90-3d42ecb1315f",
+  "request": {
+    "path": "E:\\Claude\\3D-Model-Workflow\\.claude\\worktrees\\native-revit-workflow-8fafd0\\output\\1527_wieland\\kitchens\\scripts\\bath_audit_cbefd4e2-add5-4250-9a90-3d42ecb1315f_inspect_room_corrections.py",
+    "args": {
+      "expected_pid": 31808,
+      "session_id": "7f6f24a2-cc0d-4567-8beb-02467aba0ced",
+      "discovery_operation": "8170b477-45b4-45cb-b1bc-635648df82ea",
+      "guard_path": "H:\\Games\\3D Modeling Workflows\\3D Model Workflow\\output\\wieland-floorplan-corrections-20261108\\audit_guard.py",
+      "operation_id": "cbefd4e2-add5-4250-9a90-3d42ecb1315f"
+    }
+  },
+  "state": "http_error",
+  "http_status": 500,
+  "response": {
+    "traceback": "Traceback (most recent call last):\n  File \"E:\\pyRevit Extensions\\KitchenTools.extension\\startup.py\", line 68, in run_script\n    exec(code, scope)\n  File \"E:\\Claude\\3D-Model-Workflow\\.claude\\worktrees\\native-revit-workflow-8fafd0\\output\\1527_wieland\\kitchens\\scripts\\bath_audit_cbefd4e2-add5-4250-9a90-3d42ecb1315f_inspect_room_corrections.py\", line 9, in <module>\n    p=c.GetPointInside()\nException: Could not obtain valid UV point in this project from circuit.\n",
+    "log": [],
+    "ok": false,
+    "result": {
+      "circuits": [
+        {
+          "area_sf": 13.782986111109551,
+          "point": [
+            -513.1900188589843,
+            210.8500447784985
+          ],
+          "sides": 4
+        },
+        {
+          "area_sf": 13.782986111107164,
+          "point": [
+            -552.2108521923199,
+            210.8500447784985
+          ],
+          "sides": 4
+        }
+      ]
+    }
+  }
+}

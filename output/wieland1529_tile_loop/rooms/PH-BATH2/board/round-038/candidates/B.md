@@ -1,0 +1,24 @@
+# R038 neutral candidate B - PH-BATH2
+
+**STRICT-BLIND SOURCE:** A/B identity says NOTHING about prior selection role; do not read previous rounds, mappings, state/ROOMS, LEDGER, champion/history, other critics, role-annotated research/products notes, or other room histories.
+
+**Actual plumbing and immutable room program:** Two physical 305A/305B, owner-selected Duravit 59-inch TUB and Hansgrohe Matte White, no tiled shower PAN/drain or wet overhead; retain tub waste/flange; selected basin program unchanged.
+**Drawing-only geometry:** Drawing W1 4.958 ft and two assumed 2.55 ft returns, 7.75 ft tiled height, original ~35 SF bath; 59.496-inch assumed tub alcove versus nominal 59-inch tub is NOT as-built clearance.
+
+| Actual surface | Exact maker/variant/size/official URL | Product-level maker application, size and price provenance | One original gross SF pool / gross-rate extension |
+|---|---|---|---|
+| Wet TUB WALL | [Floor & Decor Pienza Terra Matte Porcelain 24x48 SKU110850387](https://www.flooranddecor.com/porcelain-tile/pienza-terra-matte-porcelain-tile-110850387.html) | Shower Walls YES; Shower Floors YES; 23.59x47.30 actual, 9 mm rectified; $2.99/SF (2026-11-07 selected OUT-OF-STATE public retail, NOT Chicago) | 89.7 original gross SF x $2.99/SF = $268.20 |
+| Niche VERTICAL wet faces | [Elm Surfaces Tones Sandstone Glossy 2x20](https://www.elmsurfaces.com/product/sandstone-tones) | Maker Walls + Wet Areas YES; 8.5 mm; horizontal sill assembly unapproved; $6.95/SF (2026-09-04 actual 1529 trade quote) | 3.67 original gross SF x $6.95/SF = $25.51 |
+| Bathroom LEVEL | [Floor & Decor De Rossi Ivory Matte Porcelain 24x24 SKU100996800](https://www.flooranddecor.com/porcelain-tile/de-rossi-ivory-matte-porcelain-tile-100996800.html) | Bathroom Floor YES; Shower Floor YES; published wet DCOF >=0.42; 23.50x23.50 actual, 10.5 mm rectified; $6.99/SF (2026-11-07 selected OUT-OF-STATE public retail, NOT Chicago) | 40.2 original gross SF x $6.99/SF = $281.00 |
+
+**Material-only gross area-rate illustration:** $574.71/physical copy, two physical copies at full-precision x2 $1149.42. Historical 15% waste ALREADY included ONCE. This is NOT carton rounded or current Chicago matched-lot freight/tax/installed price. Original 27 historical rows and $23,572.44 baseline unchanged; room budget FILL IN, zero owner approvals.
+
+**Technical distinctions:** A maker's exact wet WALL approval is separate from horizontal niche-sill waterproofing. Bathroom LEVEL exact manufacturer wet DCOF >=0.42 and Bathroom Floor YES, not shower ceiling approval. Product wet suitability never establishes full installed flange, point drain, waterproof assembly, cuts/slivers, current matched lots, stock or lead time. No tiled PAN exists for selected Duravit tub.
+
+**Stylistic review question:** How does this actual product composition read against verified OT01 *dry powder-only* image and OT04 glossy green *wet shower* image in the SAME 405 W Armitage development? Maker/SKU/grout of comparable unknown; OT05 bath image unverified; Lincoln Park and Gold Coast are adjacent market only. Compare selected plumbing contrast, format, grout and unit-wide distinctiveness without inventing imagery.
+
+**At least three genuinely distinct family options for potential future comparison, NOT additional selections:** Wet wall: [Elm Cortar Charcoal flat](https://www.elmsurfaces.com/product/cortar-charcoal), [F&D Pienza Terra](https://www.flooranddecor.com/porcelain-tile/pienza-terra-matte-porcelain-tile-110850387.html), [F&D La Belle Antique Blue](https://www.flooranddecor.com/ceramic-tile/la-belle-antique-blue-high-gloss-ceramic-tile-100507706.html). Wet vertical niche: [Elm Tones Sandstone](https://www.elmsurfaces.com/product/sandstone-tones), [F&D La Belle Purity](https://www.flooranddecor.com/ceramic-tile/la-belle-purity-high-gloss-ceramic-tile-100507722.html), [Elm Soho Ivory](https://www.elmsurfaces.com/product/soho-ivory) price on request. Bathroom LEVEL: [F&D Luxe Sand 24x24](https://www.flooranddecor.com/porcelain-tile/luxe-sand-matte-porcelain-tile-101317949.html), [F&D De Rossi 24x24](https://www.flooranddecor.com/porcelain-tile/de-rossi-ivory-matte-porcelain-tile-100996800.html), [F&D Pienza Terra 24x48](https://www.flooranddecor.com/porcelain-tile/pienza-terra-matte-porcelain-tile-110850387.html), [MSI Livingstyle Cream 24x24](https://www.msisurfaces.com/porcelain-livingstyle/cream/) price on request. Qualify exact chosen makers separately; NO tiled ceiling approval implied.
+
+**Four independent specialist scoring required:** MARKET 4 criteria 0.30, DESIGN 5 criteria 0.25, BUILD 5 criteria 0.25, COST 5 criteria 0.20; each 1-5 integer evidence reasons, HALF_UP 1-decimal means, top_fix, gate_flags and confidence. No scoring or owner acceptance exists merely because this source was prepared.
+
+**No Git, fabrication, procurement, samples, vendor contact/email, orders, Revit/Smartsheet writes, deployment or owner approval.**

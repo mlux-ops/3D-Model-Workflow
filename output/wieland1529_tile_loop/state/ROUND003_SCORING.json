@@ -1,0 +1,174 @@
+{
+  "as_of": "2026-11-06",
+  "room_results": {
+    "TX-PRIMARY": {
+      "room": "TX-PRIMARY",
+      "round": 3,
+      "critics_complete": true,
+      "weights": {
+        "market": 0.3,
+        "design": 0.25,
+        "build": 0.25,
+        "cost": 0.2
+      },
+      "candidates": {
+        "A": {
+          "role": "incumbent historical v4",
+          "seat_scores": {
+            "market": 3.8,
+            "design": 3.0,
+            "build": 2.2,
+            "cost": 2.6
+          },
+          "weighted_score": 2.96,
+          "minimum_critic_score": 2.2,
+          "hard_gates_pass": false,
+          "gate_assessment": "wet-floor DCOF definitively fails strict board evidence",
+          "gate_reasons": [
+            "FAIL: no exact measured SKU wet DCOF for floor and pan",
+            "FAIL/HOLD: Clay Ribbed lacks Wet Areas listing if used inside shower"
+          ]
+        },
+        "B": {
+          "role": "revised candidate",
+          "seat_scores": {
+            "market": 4.2,
+            "design": 4.0,
+            "build": 2.8,
+            "cost": 2.2
+          },
+          "weighted_score": 3.4,
+          "minimum_critic_score": 2.2,
+          "hard_gates_pass": false,
+          "gate_assessment": "wet-floor DCOF definitively fails strict board evidence",
+          "gate_reasons": [
+            "FAIL: no exact measured SKU wet DCOF for floor and pan",
+            "HOLD: PF07 12x24 plus 2x2 linear-drain pan slope/position unverified"
+          ]
+        }
+      },
+      "incumbent_letter": "A",
+      "challenger_letter": "B",
+      "margin": 0.44,
+      "decision": "blocked_no_qualified_floor_or_pan",
+      "status": "blocked",
+      "champion_id": null,
+      "champion_score": null,
+      "accepted_challenger": false,
+      "report": "board/round-003/ROUND_REPORT.md"
+    },
+    "TX-POWDER": {
+      "room": "TX-POWDER",
+      "round": 3,
+      "critics_complete": true,
+      "weights": {
+        "market": 0.3,
+        "design": 0.25,
+        "build": 0.25,
+        "cost": 0.2
+      },
+      "candidates": {
+        "C": {
+          "role": "incumbent historical v4",
+          "seat_scores": {
+            "market": 3.8,
+            "design": 3.0,
+            "build": 2.8,
+            "cost": 3.0
+          },
+          "weighted_score": 3.19,
+          "minimum_critic_score": 2.8,
+          "hard_gates_pass": true,
+          "gate_assessment": "floor and wet-wall hard gates NOT APPLICABLE; no proven owner veto, impossible geometry, discontinuation or >125% budget overrun, but source geometry, actual Chicago stock and install quote require later verification",
+          "gate_reasons": [
+            "Dry wall only; wood floor => tile wet-floor DCOF N/A",
+            "HOLD: 1529 geometry, 70:30 color split and faucet mounting not verified"
+          ]
+        },
+        "B": {
+          "role": "revised candidate",
+          "seat_scores": {
+            "market": 4.1,
+            "design": 3.8,
+            "build": 3.4,
+            "cost": 3.2
+          },
+          "weighted_score": 3.67,
+          "minimum_critic_score": 3.2,
+          "hard_gates_pass": true,
+          "gate_assessment": "floor and wet-wall hard gates NOT APPLICABLE; no proven owner veto, impossible geometry, discontinuation or >125% budget overrun, but source geometry, actual Chicago stock and install quote require later verification",
+          "gate_reasons": [
+            "Dry wall only; wood floor => tile wet-floor DCOF N/A",
+            "HOLD: 1529 geometry, 70:30 color split and faucet mounting not verified"
+          ]
+        }
+      },
+      "incumbent_letter": "C",
+      "challenger_letter": "B",
+      "margin": 0.48,
+      "decision": "accept_challenger",
+      "status": "active",
+      "champion_id": "round-003-B",
+      "champion_score": 3.67,
+      "accepted_challenger": true,
+      "report": "board/round-003/ROUND_REPORT.md"
+    },
+    "TX-POWDER2": {
+      "room": "TX-POWDER2",
+      "round": 3,
+      "critics_complete": true,
+      "weights": {
+        "market": 0.3,
+        "design": 0.25,
+        "build": 0.25,
+        "cost": 0.2
+      },
+      "candidates": {
+        "B": {
+          "role": "incumbent historical v4",
+          "seat_scores": {
+            "market": 3.8,
+            "design": 3.0,
+            "build": 2.8,
+            "cost": 3.2
+          },
+          "weighted_score": 3.23,
+          "minimum_critic_score": 2.8,
+          "hard_gates_pass": true,
+          "gate_assessment": "floor and wet-wall hard gates NOT APPLICABLE; no proven owner veto, impossible geometry, discontinuation or >125% budget overrun, but source geometry, actual Chicago stock and install quote require later verification",
+          "gate_reasons": [
+            "Dry wall only; wood floor => tile wet-floor DCOF N/A",
+            "HOLD: owner basin unselected, fixture/backing dimensions unknown"
+          ]
+        },
+        "A": {
+          "role": "revised candidate",
+          "seat_scores": {
+            "market": 4.0,
+            "design": 4.0,
+            "build": 3.4,
+            "cost": 2.4
+          },
+          "weighted_score": 3.53,
+          "minimum_critic_score": 2.4,
+          "hard_gates_pass": true,
+          "gate_assessment": "floor and wet-wall hard gates NOT APPLICABLE; no proven owner veto, impossible geometry, discontinuation or >125% budget overrun, but source geometry, actual Chicago stock and install quote require later verification",
+          "gate_reasons": [
+            "Dry wall only; wood floor => tile wet-floor DCOF N/A",
+            "HOLD: owner basin unselected, fixture/backing dimensions unknown",
+            "HOLD: smooth panel material, area, price and washability unverified"
+          ]
+        }
+      },
+      "incumbent_letter": "B",
+      "challenger_letter": "A",
+      "margin": 0.3,
+      "decision": "retain_v4_until_full_gate_clearance",
+      "status": "active",
+      "champion_id": "v4-TX-POWDER2",
+      "champion_score": 3.23,
+      "accepted_challenger": false,
+      "report": "board/round-003/ROUND_REPORT.md"
+    }
+  }
+}

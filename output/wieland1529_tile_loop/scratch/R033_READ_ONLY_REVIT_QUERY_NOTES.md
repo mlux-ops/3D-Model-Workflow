@@ -1,0 +1,14 @@
+# R033 read-only live Revit source attempts — 2026-11-07
+
+Read `REVIT.md` and used only `tools/revit_read.py` read-only wrapper, never write/sync.
+
+- `documents.list` PASS, receipt **38f03dac-2617-44e1-a4b3-6b2b158f49ba**: current native open model title `25-006 1527 N Wieland`, correct owner-confirmed project; current document session `2978497e-b41f-497f-81f3-7be82e0e133d`. Workshared and modified **by existing user state**; this work did not change it.
+- Attempted `elements.query` for `OST_Schedules`, name contains ROOM, first PowerShell `Set-Content -Encoding UTF8` generated UTF-8 BOM. Wrapper's `json.loads(...)` rejected BOM. **Fix:** write JSON via `System.IO.File.WriteAllText(..., New-Object System.Text.UTF8Encoding($false))`, without BOM. Subsequent read-only query PASS, receipt **45437620-82d3-4d5a-a595-bccc78579b83**: `ROOM SCHEDULE - IN UNIT` id **1084918** and `ROOM SCHEDULE` id **1084926**.
+- Tried `view.inspect` with `{"element_id":1084918}` exactly once via wrapper; returned failed job **9b686506-05a5-4ee5-93ea-02326c1c6eb8**, code `KeyNotFoundException` / `The given key was not present in the dictionary.` **No result/room rows certified.** Do not repeat the same unverified argument; get exact bridge schema from documented capabilities/working known use before a new query.
+- Therefore PH-WC source **313A/B vs R033 candidate 304A/B** and TX-WC **203A/B vs candidate 202A/B, 203A unplaced** remain explicitly unresolved. No native area, door, threshold, 3-inch cut, pan or ceiling geometry obtained. Retain BLOCKED status and provisional baseline, do not fabricate native measurements.
+
+## R034 bounded alternative extraction — no new attributable WC room geometry
+
+- Using the only documented allowed read-only `tools/revit_read.py` wrapper, a fresh `elements.query` with `{"category":"OST_PlumbingFixtures","limit":500}` completed (receipt **3721a67b-bcce-40e0-846c-e9c1154ec38f**, same confirmed native session `2978497e-b41f-497f-81f3-7be82e0e133d`). It returned actual native plumbing-fixture element IDs, model point locations and three-dimensional bounding boxes.
+- These fixture elements were **not tied to verified PH-WC 313A/B or TX-WC 203A/B room number/area/door/partition records**. Pipe/fixture bounds alone cannot certify WC placement or tile cut width; no physical room geometry was transferred to `geometry.json`, product layout, pan takeoff or owner packet. No Revit change or transaction occurred.
+- `scratch/r034_find_working_native_reads.py` scanned past successful native receipt argument shapes for a verified usable `view.inspect` or `parameters.query` on actual room/schedules; none found. Previous incorrect `view.inspect` `element_id` shape and `OST_Rooms` rotation error were **not repeated**. Preserve room-number discrepancy and field/native dimension holds rather than manufacture a width or future approval.

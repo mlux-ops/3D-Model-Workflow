@@ -1,0 +1,3683 @@
+{
+  "schema_version": 1, 
+  "completed_utc": "2026-10-16T05:42:15Z", 
+  "read_only_sources": true, 
+  "finished_count": 4, 
+  "release_ready": false, 
+  "release_holds": [
+    "Exact type/finish and OEM dimensions require confirmed manufacturer source/variant review", 
+    "Native emitter/IES quality and visual review are separate from file/placement inspection"
+  ], 
+  "started_utc": "2026-10-16T05:41:50Z", 
+  "disposable_project_saved": false, 
+  "revit_version": "2025", 
+  "purpose": "651 Belmont PH GOOD OEM independent native QA", 
+  "family_count": 4, 
+  "technical_pass_count": 1, 
+  "duration_seconds": 25.010999999999999, 
+  "results": [
+    {
+      "id": "alr1280090", 
+      "dimension_comparison_previous": {
+        "prior_xyz_mm": [
+          280.0, 
+          110.0, 
+          1215.9623999999999
+        ], 
+        "reason": "Independent placed native envelope missing or incomplete", 
+        "evaluated": false
+      }, 
+      "finish_diagnosis": {
+        "best_candidate": {
+          "required_finish_matches": {
+            "matte black": true, 
+            "clear": false
+          }, 
+          "type": "LP549448MBOP", 
+          "matched_count": 1, 
+          "evidence": [
+            "LP549448MBOP", 
+            "CASSIA_OPAL_GLASS", 
+            "CASSIA_MB_FINISH", 
+            "LP549448"
+          ]
+        }, 
+        "matching_types": [], 
+        "scheduled_finish": "Matte Black / Clear", 
+        "status": "PARTIAL_FINISH_MATCH", 
+        "type_candidates": [
+          {
+            "required_finish_matches": {
+              "matte black": true, 
+              "clear": false
+            }, 
+            "type": "LP549448MBOP", 
+            "matched_count": 1, 
+            "evidence": [
+              "LP549448MBOP", 
+              "CASSIA_OPAL_GLASS", 
+              "CASSIA_MB_FINISH", 
+              "LP549448"
+            ]
+          }, 
+          {
+            "required_finish_matches": {
+              "matte black": false, 
+              "clear": false
+            }, 
+            "type": "LP549448AGOP", 
+            "matched_count": 0, 
+            "evidence": [
+              "LP549448AGOP", 
+              "CASSIA_OPAL_GLASS", 
+              "CASSIA_AG-FINISH", 
+              "LP549448"
+            ]
+          }
+        ], 
+        "explicit_binding_verification": false, 
+        "scheduled_variant": "LP549448MBCL"
+      }, 
+      "category_pass": true, 
+      "oem_input_before": {
+        "path": "E:\\Claude\\3D-Model-Workflow\\output\\belmont_ph_good_rfa_20261016\\sources\\oem\\extracted\\ALR1280090_LP549448_Cassia_Revit\\LP549448-Cassia.rfa", 
+        "sha256": "1bd05892bc0598d43b30afca32f648ad26fbd6df2e3776bd8c169b1ad743db9e", 
+        "bytes": 2768896
+      }, 
+      "category": "Lighting Fixtures", 
+      "previous_native_batch": {
+        "dimension_fit_evaluated": false, 
+        "status": "PASS", 
+        "warnings": 0, 
+        "technical_pass": true
+      }, 
+      "temporary_project_placement": {
+        "geometry": {
+          "available": false
+        }, 
+        "family_placement_type": "OneLevelBasedHosted", 
+        "warnings": [], 
+        "isolated_disposable_project": true, 
+        "host_verified": false, 
+        "tested_type": null, 
+        "attempts": [
+          {
+            "created": false, 
+            "method": "ceiling_face", 
+            "error": "Family cannot be placed as hosted on an input face reference, because its FamilyPlacementType is not WorkPlaneBased\r\nParameter name: symbol"
+          }, 
+          {
+            "created": false, 
+            "method": "wall_face", 
+            "error": "Family cannot be placed as hosted on an input face reference, because its FamilyPlacementType is not WorkPlaneBased\r\nParameter name: symbol"
+          }, 
+          {
+            "created": true, 
+            "method": "level_point", 
+            "hosted_on_expected_element": false, 
+            "location_ft": [
+              -2.7044113417643554e-14, 
+              0.0, 
+              13.123359580052446
+            ], 
+            "host_id": null, 
+            "warnings": [], 
+            "symbol_name": null, 
+            "geometry": {
+              "available": true, 
+              "nested_geometry_instances": 1, 
+              "xyz_mm": [
+                1624.1700499999999, 
+                1284.6676600000001, 
+                1879.2338400000001
+              ], 
+              "maximum_xyz_mm": [
+                812.08501999999999, 
+                642.33383000000003, 
+                4000.0000300000002
+              ], 
+              "errors": [], 
+              "point_count": 96186, 
+              "mesh_count": 549, 
+              "solid_count": 16, 
+              "geometry_face_materials": [
+                {
+                  "material": {
+                    "transparency": 0, 
+                    "name": "CASSIA_MB_FINISH", 
+                    "appearance_asset_name": "Plastic - Matte (Black)", 
+                    "rgb": [
+                      25, 
+                      25, 
+                      25
+                    ], 
+                    "bound": true, 
+                    "id": 2807
+                  }, 
+                  "face_count": 198
+                }, 
+                {
+                  "material": {
+                    "transparency": 100, 
+                    "name": "BULB_GLASS", 
+                    "appearance_asset_name": "Glass (Clear)", 
+                    "rgb": [
+                      245, 
+                      245, 
+                      243
+                    ], 
+                    "bound": true, 
+                    "id": 2810
+                  }, 
+                  "face_count": 64
+                }, 
+                {
+                  "material": {
+                    "transparency": 0, 
+                    "name": "BULB_PLASTIC", 
+                    "appearance_asset_name": "Plastic - Translucent Glossy (White)", 
+                    "rgb": [
+                      245, 
+                      245, 
+                      243
+                    ], 
+                    "bound": true, 
+                    "id": 2811
+                  }, 
+                  "face_count": 40
+                }, 
+                {
+                  "material": {
+                    "transparency": 14, 
+                    "name": "CASSIA_OPAL_GLASS", 
+                    "appearance_asset_name": "Glass - Frosted", 
+                    "rgb": [
+                      245, 
+                      245, 
+                      243
+                    ], 
+                    "bound": true, 
+                    "id": 2815
+                  }, 
+                  "face_count": 32
+                }
+              ], 
+              "xyz_in": [
+                63.943702999999999, 
+                50.577466999999999, 
+                73.985584000000003
+              ], 
+              "aborted": false, 
+              "minimum_xyz_mm": [
+                -812.08501999999999, 
+                -642.33383000000003, 
+                2120.7661899999998
+              ], 
+              "measurement_method": "visible native solids/meshes, triangulated faces and sampled analytic edges; nested GetInstanceGeometry()", 
+              "complete": true
+            }
+          }
+        ], 
+        "attempted": true, 
+        "reason": "No verified host/placement with complete visible geometry", 
+        "success": false
+      }, 
+      "material_finish_release": "REVIEW_REQUIRED", 
+      "review_reasons": [
+        "Complete placed geometry and category/warnings/hosting gate not established"
+      ], 
+      "model": "LP549448", 
+      "type_and_materials": {
+        "count": 2, 
+        "parameter_count": 21, 
+        "parameter_names": [
+          "Description", 
+          "GLASS_COLOR", 
+          "Type IFC Predefined Type", 
+          "ROD_LENGTH", 
+          "SUSPENSION_DISTANCE", 
+          "Lamp", 
+          "Apparent Power", 
+          "Assembly Code", 
+          "Type Image", 
+          "Type Comments", 
+          "Default Elevation", 
+          "Cost", 
+          "Keynote", 
+          "URL", 
+          "Wattage Comments", 
+          "METAL_FINISH", 
+          "Manufacturer", 
+          "Export Type to IFC As", 
+          "Coefficient of Utilization", 
+          "Model", 
+          "Calculate Coefficient of Utilization"
+        ], 
+        "types": [
+          {
+            "name": "LP549448MBOP", 
+            "finish_fields": [
+              {
+                "name": "GLASS_COLOR", 
+                "is_instance": false, 
+                "material": {
+                  "transparency": 14, 
+                  "name": "CASSIA_OPAL_GLASS", 
+                  "appearance_asset_name": "Glass - Frosted", 
+                  "rgb": [
+                    245, 
+                    245, 
+                    243
+                  ], 
+                  "bound": true, 
+                  "id": 4655
+                }, 
+                "formula": null, 
+                "storage_type": "ElementId", 
+                "id_value": 4655, 
+                "display": null
+              }, 
+              {
+                "name": "METAL_FINISH", 
+                "is_instance": false, 
+                "material": {
+                  "transparency": 0, 
+                  "name": "CASSIA_MB_FINISH", 
+                  "appearance_asset_name": "Plastic - Matte (Black)", 
+                  "rgb": [
+                    25, 
+                    25, 
+                    25
+                  ], 
+                  "bound": true, 
+                  "id": 4647
+                }, 
+                "formula": null, 
+                "storage_type": "ElementId", 
+                "id_value": 4647, 
+                "display": null
+              }
+            ], 
+            "materials": [
+              {
+                "name": "GLASS_COLOR", 
+                "is_instance": false, 
+                "material": {
+                  "transparency": 14, 
+                  "name": "CASSIA_OPAL_GLASS", 
+                  "appearance_asset_name": "Glass - Frosted", 
+                  "rgb": [
+                    245, 
+                    245, 
+                    243
+                  ], 
+                  "bound": true, 
+                  "id": 4655
+                }, 
+                "formula": null, 
+                "storage_type": "ElementId", 
+                "id_value": 4655, 
+                "display": null
+              }, 
+              {
+                "name": "METAL_FINISH", 
+                "is_instance": false, 
+                "material": {
+                  "transparency": 0, 
+                  "name": "CASSIA_MB_FINISH", 
+                  "appearance_asset_name": "Plastic - Matte (Black)", 
+                  "rgb": [
+                    25, 
+                    25, 
+                    25
+                  ], 
+                  "bound": true, 
+                  "id": 4647
+                }, 
+                "formula": null, 
+                "storage_type": "ElementId", 
+                "id_value": 4647, 
+                "display": null
+              }
+            ], 
+            "photometry_fields": [
+              {
+                "name": "Description", 
+                "value": null, 
+                "is_instance": false, 
+                "formula": null, 
+                "storage_type": "String", 
+                "display": null
+              }, 
+              {
+                "name": "Wattage Comments", 
+                "value": "MAX 40W PER BULB", 
+                "is_instance": false, 
+                "formula": null, 
+                "storage_type": "String", 
+                "display": null
+              }
+            ], 
+            "identity_fields": [
+              {
+                "name": "Description", 
+                "value": null, 
+                "is_instance": false, 
+                "formula": null, 
+                "storage_type": "String", 
+                "display": null
+              }, 
+              {
+                "name": "Manufacturer", 
+                "value": null, 
+                "is_instance": false, 
+                "formula": null, 
+                "storage_type": "String", 
+                "display": null
+              }, 
+              {
+                "name": "Model", 
+                "value": "LP549448", 
+                "is_instance": false, 
+                "formula": null, 
+                "storage_type": "String", 
+                "display": null
+              }
+            ]
+          }, 
+          {
+            "name": "LP549448AGOP", 
+            "finish_fields": [
+              {
+                "name": "GLASS_COLOR", 
+                "is_instance": false, 
+                "material": {
+                  "transparency": 14, 
+                  "name": "CASSIA_OPAL_GLASS", 
+                  "appearance_asset_name": "Glass - Frosted", 
+                  "rgb": [
+                    245, 
+                    245, 
+                    243
+                  ], 
+                  "bound": true, 
+                  "id": 4655
+                }, 
+                "formula": null, 
+                "storage_type": "ElementId", 
+                "id_value": 4655, 
+                "display": null
+              }, 
+              {
+                "name": "METAL_FINISH", 
+                "is_instance": false, 
+                "material": {
+                  "transparency": 0, 
+                  "name": "CASSIA_AG-FINISH", 
+                  "appearance_asset_name": "Gold - Polished", 
+                  "rgb": [
+                    207, 
+                    181, 
+                    59
+                  ], 
+                  "bound": true, 
+                  "id": 4653
+                }, 
+                "formula": null, 
+                "storage_type": "ElementId", 
+                "id_value": 4653, 
+                "display": null
+              }
+            ], 
+            "materials": [
+              {
+                "name": "GLASS_COLOR", 
+                "is_instance": false, 
+                "material": {
+                  "transparency": 14, 
+                  "name": "CASSIA_OPAL_GLASS", 
+                  "appearance_asset_name": "Glass - Frosted", 
+                  "rgb": [
+                    245, 
+                    245, 
+                    243
+                  ], 
+                  "bound": true, 
+                  "id": 4655
+                }, 
+                "formula": null, 
+                "storage_type": "ElementId", 
+                "id_value": 4655, 
+                "display": null
+              }, 
+              {
+                "name": "METAL_FINISH", 
+                "is_instance": false, 
+                "material": {
+                  "transparency": 0, 
+                  "name": "CASSIA_AG-FINISH", 
+                  "appearance_asset_name": "Gold - Polished", 
+                  "rgb": [
+                    207, 
+                    181, 
+                    59
+                  ], 
+                  "bound": true, 
+                  "id": 4653
+                }, 
+                "formula": null, 
+                "storage_type": "ElementId", 
+                "id_value": 4653, 
+                "display": null
+              }
+            ], 
+            "photometry_fields": [
+              {
+                "name": "Description", 
+                "value": null, 
+                "is_instance": false, 
+                "formula": null, 
+                "storage_type": "String", 
+                "display": null
+              }, 
+              {
+                "name": "Wattage Comments", 
+                "value": "MAX 40W PER BULB", 
+                "is_instance": false, 
+                "formula": null, 
+                "storage_type": "String", 
+                "display": null
+              }
+            ], 
+            "identity_fields": [
+              {
+                "name": "Description", 
+                "value": null, 
+                "is_instance": false, 
+                "formula": null, 
+                "storage_type": "String", 
+                "display": null
+              }, 
+              {
+                "name": "Manufacturer", 
+                "value": null, 
+                "is_instance": false, 
+                "formula": null, 
+                "storage_type": "String", 
+                "display": null
+              }, 
+              {
+                "name": "Model", 
+                "value": "LP549448", 
+                "is_instance": false, 
+                "formula": null, 
+                "storage_type": "String", 
+                "display": null
+              }
+            ]
+          }
+        ], 
+        "materials_defined": [
+          {
+            "transparency": 0, 
+            "name": "Default", 
+            "appearance_asset_name": "Default (1)", 
+            "rgb": [
+              127, 
+              127, 
+              127
+            ], 
+            "bound": true, 
+            "id": 1739
+          }, 
+          {
+            "transparency": 0, 
+            "name": "Default Roof", 
+            "appearance_asset_name": "Default Roof", 
+            "rgb": [
+              0, 
+              127, 
+              0
+            ], 
+            "bound": true, 
+            "id": 1740
+          }, 
+          {
+            "transparency": 0, 
+            "name": "Default Wall", 
+            "appearance_asset_name": "Default Wall", 
+            "rgb": [
+              127, 
+              127, 
+              127
+            ], 
+            "bound": true, 
+            "id": 1741
+          }, 
+          {
+            "transparency": 75, 
+            "name": "Glass", 
+            "appearance_asset_name": "Glass (1)", 
+            "rgb": [
+              0, 
+              0, 
+              255
+            ], 
+            "bound": true, 
+            "id": 1742
+          }, 
+          {
+            "transparency": 0, 
+            "name": "Poche", 
+            "appearance_asset_name": "Poche", 
+            "rgb": [
+              0, 
+              0, 
+              255
+            ], 
+            "bound": true, 
+            "id": 3167
+          }, 
+          {
+            "transparency": 75, 
+            "name": "Default Light Source", 
+            "appearance_asset_name": "Default Light Source", 
+            "rgb": [
+              255, 
+              255, 
+              0
+            ], 
+            "bound": true, 
+            "id": 3633
+          }, 
+          {
+            "transparency": 0, 
+            "name": "CASSIA_MB_FINISH", 
+            "appearance_asset_name": "Plastic - Matte (Black)", 
+            "rgb": [
+              25, 
+              25, 
+              25
+            ], 
+            "bound": true, 
+            "id": 4647
+          }, 
+          {
+            "transparency": 100, 
+            "name": "BULB_GLASS", 
+            "appearance_asset_name": "Glass (Clear)", 
+            "rgb": [
+              245, 
+              245, 
+              243
+            ], 
+            "bound": true, 
+            "id": 4650
+          }, 
+          {
+            "transparency": 0, 
+            "name": "BULB_PLASTIC", 
+            "appearance_asset_name": "Plastic - Translucent Glossy (White)", 
+            "rgb": [
+              245, 
+              245, 
+              243
+            ], 
+            "bound": true, 
+            "id": 4651
+          }, 
+          {
+            "transparency": 0, 
+            "name": "CASSIA_AG-FINISH", 
+            "appearance_asset_name": "Gold - Polished", 
+            "rgb": [
+              207, 
+              181, 
+              59
+            ], 
+            "bound": true, 
+            "id": 4653
+          }, 
+          {
+            "transparency": 14, 
+            "name": "CASSIA_OPAL_GLASS", 
+            "appearance_asset_name": "Glass - Frosted", 
+            "rgb": [
+              245, 
+              245, 
+              243
+            ], 
+            "bound": true, 
+            "id": 4655
+          }, 
+          {
+            "transparency": 50, 
+            "name": "Analytical Panels", 
+            "appearance_asset_name": "Analytical Panels", 
+            "rgb": [
+              251, 
+              197, 
+              153
+            ], 
+            "bound": true, 
+            "id": 11815
+          }
+        ]
+      }, 
+      "qa_pass": false, 
+      "oem_input_after": {
+        "path": "E:\\Claude\\3D-Model-Workflow\\output\\belmont_ph_good_rfa_20261016\\sources\\oem\\extracted\\ALR1280090_LP549448_Cassia_Revit\\LP549448-Cassia.rfa", 
+        "sha256": "1bd05892bc0598d43b30afca32f648ad26fbd6df2e3776bd8c169b1ad743db9e", 
+        "bytes": 2768896
+      }, 
+      "connectors_and_light": {
+        "family_connector_elements": [
+          {
+            "category": "Connector Element", 
+            "name": "Power - Unbalanced", 
+            "domain": "DomainElectrical", 
+            "id": 11301
+          }
+        ], 
+        "electrical_connector_count": 1, 
+        "light_source_detected": false, 
+        "photometry_status": "NOT_CALIBRATED_BY_THIS_AUDIT", 
+        "light_source_elements": []
+      }, 
+      "family_path": "E:\\Claude\\3D-Model-Workflow\\output\\belmont_ph_good_rfa_20261016\\families\\Alora_Cassia_LP549448MBCL_R2025.rfa", 
+      "scheduled_variant": "LP549448MBCL", 
+      "files_unchanged": true, 
+      "manufacturer_dimension_match": "NOT_EVALUATED_SOURCE_SCOPE_REQUIRED", 
+      "matches_prior_output_sha256": true, 
+      "status": "HOLD", 
+      "family_warning_messages": [], 
+      "family_file_after": {
+        "path": "E:\\Claude\\3D-Model-Workflow\\output\\belmont_ph_good_rfa_20261016\\families\\Alora_Cassia_LP549448MBCL_R2025.rfa", 
+        "sha256": "27ce97b87c28cabaf249ebc4410ce9bf1b387e16a2232e2fc29e153530c09ac3", 
+        "bytes": 2043904
+      }, 
+      "placement_type": "OneLevelBasedHosted", 
+      "manufacturer_dimensions_mm": null, 
+      "family_geometry": {
+        "available": true, 
+        "nested_geometry_instances": 1, 
+        "xyz_mm": [
+          1624.1700499999999, 
+          1284.6676600000001, 
+          1879.2338400000001
+        ], 
+        "excluded_reference_or_light_elements": [], 
+        "maximum_xyz_mm": [
+          812.08501999999999, 
+          642.33383000000003, 
+          4000.0000300000002
+        ], 
+        "errors": [], 
+        "point_count": 96186, 
+        "mesh_count": 549, 
+        "element_class_counts": {
+          "FreeFormElement": 1, 
+          "FamilyInstance": 1, 
+          "Sweep": 2
+        }, 
+        "solid_count": 16, 
+        "geometry_face_materials": [
+          {
+            "material": {
+              "transparency": 100, 
+              "name": "BULB_GLASS", 
+              "appearance_asset_name": "Glass (Clear)", 
+              "rgb": [
+                245, 
+                245, 
+                243
+              ], 
+              "bound": true, 
+              "id": 4650
+            }, 
+            "face_count": 64
+          }, 
+          {
+            "material": {
+              "transparency": 0, 
+              "name": "BULB_PLASTIC", 
+              "appearance_asset_name": "Plastic - Translucent Glossy (White)", 
+              "rgb": [
+                245, 
+                245, 
+                243
+              ], 
+              "bound": true, 
+              "id": 4651
+            }, 
+            "face_count": 40
+          }, 
+          {
+            "material": {
+              "transparency": 0, 
+              "name": "CASSIA_AG-FINISH", 
+              "appearance_asset_name": "Gold - Polished", 
+              "rgb": [
+                207, 
+                181, 
+                59
+              ], 
+              "bound": true, 
+              "id": 4653
+            }, 
+            "face_count": 198
+          }, 
+          {
+            "material": {
+              "transparency": 14, 
+              "name": "CASSIA_OPAL_GLASS", 
+              "appearance_asset_name": "Glass - Frosted", 
+              "rgb": [
+                245, 
+                245, 
+                243
+              ], 
+              "bound": true, 
+              "id": 4655
+            }, 
+            "face_count": 32
+          }
+        ], 
+        "xyz_in": [
+          63.943702999999999, 
+          50.577466999999999, 
+          73.985584000000003
+        ], 
+        "aborted": false, 
+        "minimum_xyz_mm": [
+          -812.08501999999999, 
+          -642.33383000000003, 
+          2120.7661899999998
+        ], 
+        "measurement_method": "visible native solids/meshes, triangulated faces and sampled analytic edges; nested GetInstanceGeometry()", 
+        "scope": "family-document geometry only; corroboration required from placed instance", 
+        "complete": true
+      }, 
+      "family_file_before": {
+        "path": "E:\\Claude\\3D-Model-Workflow\\output\\belmont_ph_good_rfa_20261016\\families\\Alora_Cassia_LP549448MBCL_R2025.rfa", 
+        "sha256": "27ce97b87c28cabaf249ebc4410ce9bf1b387e16a2232e2fc29e153530c09ac3", 
+        "bytes": 2043904
+      }, 
+      "photometric_release": "UNVERIFIED", 
+      "family_warning_count": 0, 
+      "scheduled_finish": "Matte Black / Clear"
+    }, 
+    {
+      "id": "kzc1353667", 
+      "dimension_comparison_previous": {
+        "prior_xyz_mm": [
+          139.71899999999999, 
+          140.64789999999999, 
+          662.32349999999997
+        ], 
+        "reason": "Independent placed native envelope missing or incomplete", 
+        "evaluated": false
+      }, 
+      "finish_diagnosis": {
+        "best_candidate": {
+          "required_finish_matches": {
+            "brushed gold": false
+          }, 
+          "type": "Type 1", 
+          "matched_count": 0, 
+          "evidence": [
+            "Type 1", 
+            "16777215", 
+            "PD3106"
+          ]
+        }, 
+        "matching_types": [], 
+        "scheduled_finish": "Brushed Gold", 
+        "status": "FINISH_UNVERIFIED", 
+        "type_candidates": [
+          {
+            "required_finish_matches": {
+              "brushed gold": false
+            }, 
+            "type": "Type 1", 
+            "matched_count": 0, 
+            "evidence": [
+              "Type 1", 
+              "16777215", 
+              "PD3106"
+            ]
+          }
+        ], 
+        "explicit_binding_verification": false, 
+        "scheduled_variant": "PD3106-BG"
+      }, 
+      "category_pass": true, 
+      "oem_input_before": {
+        "path": "E:\\Claude\\3D-Model-Workflow\\output\\belmont_ph_good_rfa_20261016\\sources\\oem\\extracted\\KZC1353667_PD3106_Bolla_Revit\\PD3106 - Bolla.rfa", 
+        "sha256": "8d84d0a6842b26ca3b8686f86948172349d1d1aec04a75a2b68af4463ef5c98a", 
+        "bytes": 425984
+      }, 
+      "category": "Lighting Fixtures", 
+      "previous_native_batch": {
+        "dimension_fit_evaluated": false, 
+        "status": "PASS", 
+        "warnings": 0, 
+        "technical_pass": true
+      }, 
+      "temporary_project_placement": {
+        "geometry": {
+          "available": false
+        }, 
+        "family_placement_type": "OneLevelBasedHosted", 
+        "warnings": [], 
+        "isolated_disposable_project": true, 
+        "host_verified": false, 
+        "tested_type": null, 
+        "attempts": [
+          {
+            "created": false, 
+            "method": "ceiling_face", 
+            "error": "Family cannot be placed as hosted on an input face reference, because its FamilyPlacementType is not WorkPlaneBased\r\nParameter name: symbol"
+          }, 
+          {
+            "created": false, 
+            "method": "wall_face", 
+            "error": "Family cannot be placed as hosted on an input face reference, because its FamilyPlacementType is not WorkPlaneBased\r\nParameter name: symbol"
+          }, 
+          {
+            "created": true, 
+            "method": "level_point", 
+            "hosted_on_expected_element": false, 
+            "location_ft": [
+              -2.7044113417643554e-14, 
+              0.0, 
+              13.123359580052446
+            ], 
+            "host_id": null, 
+            "warnings": [], 
+            "symbol_name": null, 
+            "geometry": {
+              "available": true, 
+              "nested_geometry_instances": 1, 
+              "xyz_mm": [
+                477.36926000000000, 
+                485.36541000000000, 
+                1109.1663100000001
+              ], 
+              "maximum_xyz_mm": [
+                234.02021999999999, 
+                243.43788000000001, 
+                4000.0000300000002
+              ], 
+              "errors": [], 
+              "point_count": 6666, 
+              "mesh_count": 45, 
+              "solid_count": 4, 
+              "geometry_face_materials": [
+                {
+                  "material": {
+                    "transparency": 95, 
+                    "name": "Glass Frosted", 
+                    "appearance_asset_name": "Glass (1)", 
+                    "rgb": [
+                      192, 
+                      192, 
+                      192
+                    ], 
+                    "bound": true, 
+                    "id": 2801
+                  }, 
+                  "face_count": 16
+                }, 
+                {
+                  "material": {
+                    "transparency": 75, 
+                    "name": "Glass", 
+                    "appearance_asset_name": null, 
+                    "rgb": [
+                      0, 
+                      0, 
+                      255
+                    ], 
+                    "bound": true, 
+                    "id": 93
+                  }, 
+                  "face_count": 6
+                }
+              ], 
+              "xyz_in": [
+                18.794065000000000, 
+                19.108875000000001, 
+                43.667965000000002
+              ], 
+              "aborted": false, 
+              "minimum_xyz_mm": [
+                -243.34905000000001, 
+                -241.92752999999999, 
+                2890.8337200000001
+              ], 
+              "measurement_method": "visible native solids/meshes, triangulated faces and sampled analytic edges; nested GetInstanceGeometry()", 
+              "complete": true
+            }
+          }
+        ], 
+        "attempted": true, 
+        "reason": "No verified host/placement with complete visible geometry", 
+        "success": false
+      }, 
+      "material_finish_release": "REVIEW_REQUIRED", 
+      "review_reasons": [
+        "Complete placed geometry and category/warnings/hosting gate not established"
+      ], 
+      "model": "PD3106", 
+      "type_and_materials": {
+        "count": 1, 
+        "parameter_count": 24, 
+        "parameter_names": [
+          "Initial Color", 
+          "Dimming Lamp Color Temperature Shift", 
+          "Coefficient of Utilization", 
+          "Type Comments", 
+          "Type Image", 
+          "Default Elevation", 
+          "Type IFC Predefined Type", 
+          "Description", 
+          "Initial Intensity", 
+          "Calculate Coefficient of Utilization", 
+          "Light Loss Factor", 
+          "Apparent Power", 
+          "URL", 
+          "Tilt Angle", 
+          "Cost", 
+          "Manufacturer", 
+          "Keynote", 
+          "Color Filter", 
+          "Wattage Comments", 
+          "Lamp", 
+          "Export Type to IFC As", 
+          "Photometric Web File", 
+          "Model", 
+          "Assembly Code"
+        ], 
+        "types": [
+          {
+            "name": "Type 1", 
+            "finish_fields": [
+              {
+                "name": "Initial Color", 
+                "is_instance": false, 
+                "formula": null, 
+                "storage_type": "None", 
+                "display": null
+              }, 
+              {
+                "name": "Dimming Lamp Color Temperature Shift", 
+                "value": 0, 
+                "is_instance": false, 
+                "formula": null, 
+                "storage_type": "Integer", 
+                "display": null
+              }, 
+              {
+                "name": "Color Filter", 
+                "value": 16777215, 
+                "is_instance": false, 
+                "formula": null, 
+                "storage_type": "Integer", 
+                "display": null
+              }
+            ], 
+            "materials": [
+              {
+                "name": "Initial Color", 
+                "is_instance": false, 
+                "formula": null, 
+                "storage_type": "None", 
+                "display": null
+              }, 
+              {
+                "name": "Dimming Lamp Color Temperature Shift", 
+                "value": 0, 
+                "is_instance": false, 
+                "formula": null, 
+                "storage_type": "Integer", 
+                "display": null
+              }, 
+              {
+                "name": "Color Filter", 
+                "value": 16777215, 
+                "is_instance": false, 
+                "formula": null, 
+                "storage_type": "Integer", 
+                "display": null
+              }
+            ], 
+            "photometry_fields": [
+              {
+                "name": "Dimming Lamp Color Temperature Shift", 
+                "value": 0, 
+                "is_instance": false, 
+                "formula": null, 
+                "storage_type": "Integer", 
+                "display": null
+              }, 
+              {
+                "name": "Description", 
+                "value": null, 
+                "is_instance": false, 
+                "formula": null, 
+                "storage_type": "String", 
+                "display": null
+              }, 
+              {
+                "name": "Initial Intensity", 
+                "is_instance": false, 
+                "formula": null, 
+                "storage_type": "None", 
+                "display": null
+              }, 
+              {
+                "name": "Light Loss Factor", 
+                "is_instance": false, 
+                "formula": null, 
+                "storage_type": "None", 
+                "display": null
+              }, 
+              {
+                "name": "Wattage Comments", 
+                "value": null, 
+                "is_instance": false, 
+                "formula": null, 
+                "storage_type": "String", 
+                "display": null
+              }, 
+              {
+                "name": "Photometric Web File", 
+                "value": "PD3106-CH.IES", 
+                "is_instance": false, 
+                "formula": null, 
+                "storage_type": "String", 
+                "display": null
+              }
+            ], 
+            "identity_fields": [
+              {
+                "name": "Description", 
+                "value": null, 
+                "is_instance": false, 
+                "formula": null, 
+                "storage_type": "String", 
+                "display": null
+              }, 
+              {
+                "name": "Manufacturer", 
+                "value": null, 
+                "is_instance": false, 
+                "formula": null, 
+                "storage_type": "String", 
+                "display": null
+              }, 
+              {
+                "name": "Model", 
+                "value": "PD3106", 
+                "is_instance": false, 
+                "formula": null, 
+                "storage_type": "String", 
+                "display": null
+              }
+            ]
+          }
+        ], 
+        "materials_defined": [
+          {
+            "transparency": 0, 
+            "name": "Default", 
+            "appearance_asset_name": "Default (1)", 
+            "rgb": [
+              127, 
+              127, 
+              127
+            ], 
+            "bound": true, 
+            "id": 1739
+          }, 
+          {
+            "transparency": 0, 
+            "name": "Default Roof", 
+            "appearance_asset_name": "Default Roof", 
+            "rgb": [
+              0, 
+              127, 
+              0
+            ], 
+            "bound": true, 
+            "id": 1740
+          }, 
+          {
+            "transparency": 0, 
+            "name": "Default Wall", 
+            "appearance_asset_name": "Default Wall", 
+            "rgb": [
+              127, 
+              127, 
+              127
+            ], 
+            "bound": true, 
+            "id": 1741
+          }, 
+          {
+            "transparency": 99, 
+            "name": "Glass", 
+            "appearance_asset_name": "Glass (1)", 
+            "rgb": [
+              255, 
+              255, 
+              255
+            ], 
+            "bound": true, 
+            "id": 1742
+          }, 
+          {
+            "transparency": 0, 
+            "name": "Poche", 
+            "appearance_asset_name": "Poche", 
+            "rgb": [
+              0, 
+              0, 
+              255
+            ], 
+            "bound": true, 
+            "id": 3167
+          }, 
+          {
+            "transparency": 75, 
+            "name": "Default Light Source", 
+            "appearance_asset_name": "Default Light Source", 
+            "rgb": [
+              255, 
+              255, 
+              0
+            ], 
+            "bound": true, 
+            "id": 3633
+          }, 
+          {
+            "transparency": 0, 
+            "name": "Material __RGBA_0.627_0.627_0.627", 
+            "appearance_asset_name": null, 
+            "rgb": [
+              160, 
+              160, 
+              160
+            ], 
+            "bound": true, 
+            "id": 4411
+          }, 
+          {
+            "transparency": 95, 
+            "name": "Glass Frosted", 
+            "appearance_asset_name": "Glass (1)", 
+            "rgb": [
+              192, 
+              192, 
+              192
+            ], 
+            "bound": true, 
+            "id": 8722
+          }, 
+          {
+            "transparency": 50, 
+            "name": "Analytical Panels", 
+            "appearance_asset_name": "Analytical Panels", 
+            "rgb": [
+              251, 
+              197, 
+              153
+            ], 
+            "bound": true, 
+            "id": 8993
+          }
+        ]
+      }, 
+      "qa_pass": false, 
+      "oem_input_after": {
+        "path": "E:\\Claude\\3D-Model-Workflow\\output\\belmont_ph_good_rfa_20261016\\sources\\oem\\extracted\\KZC1353667_PD3106_Bolla_Revit\\PD3106 - Bolla.rfa", 
+        "sha256": "8d84d0a6842b26ca3b8686f86948172349d1d1aec04a75a2b68af4463ef5c98a", 
+        "bytes": 425984
+      }, 
+      "connectors_and_light": {
+        "family_connector_elements": [], 
+        "electrical_connector_count": 0, 
+        "light_source_detected": true, 
+        "photometry_status": "NOT_CALIBRATED_BY_THIS_AUDIT", 
+        "light_source_elements": [
+          {
+            "name": "", 
+            "class": "Element", 
+            "id": 3626
+          }
+        ]
+      }, 
+      "family_path": "E:\\Claude\\3D-Model-Workflow\\output\\belmont_ph_good_rfa_20261016\\families\\Kuzco_Bolla_PD3106_BG_R2025.rfa", 
+      "scheduled_variant": "PD3106-BG", 
+      "files_unchanged": true, 
+      "manufacturer_dimension_match": "NOT_EVALUATED_SOURCE_SCOPE_REQUIRED", 
+      "matches_prior_output_sha256": true, 
+      "status": "HOLD", 
+      "family_warning_messages": [], 
+      "family_file_after": {
+        "path": "E:\\Claude\\3D-Model-Workflow\\output\\belmont_ph_good_rfa_20261016\\families\\Kuzco_Bolla_PD3106_BG_R2025.rfa", 
+        "sha256": "eb5cf17c25531152acc8e51ccb0ad5bd80913ae547f878d9108d059090e6f2f3", 
+        "bytes": 524288
+      }, 
+      "placement_type": "OneLevelBasedHosted", 
+      "manufacturer_dimensions_mm": null, 
+      "family_geometry": {
+        "available": true, 
+        "nested_geometry_instances": 0, 
+        "xyz_mm": [
+          139.71897000000001, 
+          140.64791000000000, 
+          662.32353000000001
+        ], 
+        "excluded_reference_or_light_elements": [], 
+        "maximum_xyz_mm": [
+          69.859480000000005, 
+          70.323960000000000, 
+          4000.0000300000002
+        ], 
+        "errors": [], 
+        "point_count": 5334, 
+        "mesh_count": 44, 
+        "element_class_counts": {
+          "Revolution": 4
+        }, 
+        "solid_count": 4, 
+        "geometry_face_materials": [
+          {
+            "material": {
+              "transparency": 99, 
+              "name": "Glass", 
+              "appearance_asset_name": "Glass (1)", 
+              "rgb": [
+                255, 
+                255, 
+                255
+              ], 
+              "bound": true, 
+              "id": 1742
+            }, 
+            "face_count": 6
+          }, 
+          {
+            "material": {
+              "transparency": 95, 
+              "name": "Glass Frosted", 
+              "appearance_asset_name": "Glass (1)", 
+              "rgb": [
+                192, 
+                192, 
+                192
+              ], 
+              "bound": true, 
+              "id": 8722
+            }, 
+            "face_count": 16
+          }
+        ], 
+        "xyz_in": [
+          5.5007469999999996, 
+          5.5373190000000001, 
+          26.075728999999999
+        ], 
+        "aborted": false, 
+        "minimum_xyz_mm": [
+          -69.859480000000005, 
+          -70.323960000000000, 
+          3337.6765000000000
+        ], 
+        "measurement_method": "visible native solids/meshes, triangulated faces and sampled analytic edges; nested GetInstanceGeometry()", 
+        "scope": "family-document geometry only; corroboration required from placed instance", 
+        "complete": true
+      }, 
+      "family_file_before": {
+        "path": "E:\\Claude\\3D-Model-Workflow\\output\\belmont_ph_good_rfa_20261016\\families\\Kuzco_Bolla_PD3106_BG_R2025.rfa", 
+        "sha256": "eb5cf17c25531152acc8e51ccb0ad5bd80913ae547f878d9108d059090e6f2f3", 
+        "bytes": 524288
+      }, 
+      "photometric_release": "UNVERIFIED", 
+      "family_warning_count": 0, 
+      "scheduled_finish": "Brushed Gold"
+    }, 
+    {
+      "id": "mfr1415595", 
+      "dimension_comparison_previous": {
+        "prior_xyz_mm": [
+          2438.4000000000001, 
+          2438.4000000000001, 
+          670.60000000000002
+        ], 
+        "reason": "Independent placed native envelope missing or incomplete", 
+        "evaluated": false
+      }, 
+      "finish_diagnosis": {
+        "best_candidate": {
+          "required_finish_matches": {
+            "matte black": false, 
+            "soft brass": false
+          }, 
+          "type": " ", 
+          "matched_count": 0, 
+          "evidence": [
+            " ", 
+            "16777215"
+          ]
+        }, 
+        "matching_types": [], 
+        "scheduled_finish": "Soft Brass / Matte Black", 
+        "status": "FINISH_UNVERIFIED", 
+        "type_candidates": [
+          {
+            "required_finish_matches": {
+              "matte black": false, 
+              "soft brass": false
+            }, 
+            "type": " ", 
+            "matched_count": 0, 
+            "evidence": [
+              " ", 
+              "16777215"
+            ]
+          }
+        ], 
+        "explicit_binding_verification": false, 
+        "scheduled_variant": "FR-W2502-52L-SB/MB"
+      }, 
+      "category_pass": true, 
+      "oem_input_before": {
+        "path": "E:\\Claude\\3D-Model-Workflow\\output\\belmont_ph_good_rfa_20261016\\sources\\oem\\extracted\\MFR1415595_FR-W2502_Smooth_Revit\\FR-W2502-52L.rfa", 
+        "sha256": "5275e71a2d6cfd033b4cb6d6fa1351d0e78c953586bdbcafe2b905893286d617", 
+        "bytes": 8507392
+      }, 
+      "category": "Lighting Fixtures", 
+      "previous_native_batch": {
+        "dimension_fit_evaluated": false, 
+        "status": "PASS", 
+        "warnings": 0, 
+        "technical_pass": true
+      }, 
+      "temporary_project_placement": {
+        "geometry": {
+          "available": false
+        }, 
+        "family_placement_type": "WorkPlaneBased", 
+        "warnings": [], 
+        "isolated_disposable_project": true, 
+        "host_verified": false, 
+        "tested_type": null, 
+        "attempts": [
+          {
+            "created": true, 
+            "method": "ceiling_face", 
+            "hosted_on_expected_element": true, 
+            "location_ft": [
+              7.9663940008269113e-16, 
+              0.0, 
+              -0.99999999999999389
+            ], 
+            "host_id": 3775, 
+            "warnings": [], 
+            "symbol_name": null, 
+            "geometry": {
+              "available": true, 
+              "nested_geometry_instances": 1, 
+              "xyz_mm": [
+                1028.0764899999999, 
+                1180.6584600000001, 
+                972.82405000000006
+              ], 
+              "maximum_xyz_mm": [
+                660.37859000000003, 
+                589.34087999999997, 
+                -304.80000000000001
+              ], 
+              "errors": [
+                "Analytic edge: 'NoneType' object has no attribute 'Evaluate'", 
+                "Analytic edge: 'NoneType' object has no attribute 'Evaluate'", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete"
+              ], 
+              "point_count": 350000, 
+              "mesh_count": 2199, 
+              "solid_count": 19, 
+              "geometry_face_materials": [], 
+              "xyz_in": [
+                40.475451999999997, 
+                46.482616000000000, 
+                38.300159999999998
+              ], 
+              "aborted": true, 
+              "minimum_xyz_mm": [
+                -367.69790000000000, 
+                -591.31758000000002, 
+                -1277.6240499999999
+              ], 
+              "measurement_method": "visible native solids/meshes, triangulated faces and sampled analytic edges; nested GetInstanceGeometry()", 
+              "complete": false
+            }
+          }, 
+          {
+            "created": true, 
+            "method": "wall_face", 
+            "hosted_on_expected_element": true, 
+            "location_ft": [
+              0.0, 
+              0.33333333333332715, 
+              5.0
+            ], 
+            "host_id": 3772, 
+            "warnings": [], 
+            "symbol_name": null, 
+            "geometry": {
+              "available": true, 
+              "nested_geometry_instances": 1, 
+              "xyz_mm": [
+                1028.0764899999999, 
+                972.82396000000006, 
+                1180.6584600000001
+              ], 
+              "maximum_xyz_mm": [
+                660.37859000000003, 
+                1074.4239500000001, 
+                2113.3409200000001
+              ], 
+              "errors": [
+                "Analytic edge: 'NoneType' object has no attribute 'Evaluate'", 
+                "Analytic edge: 'NoneType' object has no attribute 'Evaluate'", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete"
+              ], 
+              "point_count": 350000, 
+              "mesh_count": 2199, 
+              "solid_count": 19, 
+              "geometry_face_materials": [], 
+              "xyz_in": [
+                40.475451999999997, 
+                38.300156000000001, 
+                46.482616000000000
+              ], 
+              "aborted": true, 
+              "minimum_xyz_mm": [
+                -367.69790000000000, 
+                101.59999000000001, 
+                932.68245999999999
+              ], 
+              "measurement_method": "visible native solids/meshes, triangulated faces and sampled analytic edges; nested GetInstanceGeometry()", 
+              "complete": false
+            }
+          }, 
+          {
+            "created": true, 
+            "method": "level_point", 
+            "hosted_on_expected_element": false, 
+            "location_ft": [
+              2.0550564288485118e-14, 
+              -2.765599164608612e-14, 
+              -6.137491269689685e-15
+            ], 
+            "host_id": null, 
+            "warnings": [], 
+            "symbol_name": null, 
+            "geometry": {
+              "available": true, 
+              "nested_geometry_instances": 1, 
+              "xyz_mm": [
+                1028.0764899999999, 
+                1180.6584600000001, 
+                972.82398000000001
+              ], 
+              "maximum_xyz_mm": [
+                660.37859000000003, 
+                591.31758000000002, 
+                972.82398000000001
+              ], 
+              "errors": [
+                "Analytic edge: 'NoneType' object has no attribute 'Evaluate'", 
+                "Analytic edge: 'NoneType' object has no attribute 'Evaluate'", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+                "Analytic edge: Exceeded geometry vertex budget; envelope incomplete"
+              ], 
+              "point_count": 350000, 
+              "mesh_count": 2199, 
+              "solid_count": 19, 
+              "geometry_face_materials": [], 
+              "xyz_in": [
+                40.475451999999997, 
+                46.482616000000000, 
+                38.300156999999999
+              ], 
+              "aborted": true, 
+              "minimum_xyz_mm": [
+                -367.69790000000000, 
+                -589.34087999999997, 
+                -0.0
+              ], 
+              "measurement_method": "visible native solids/meshes, triangulated faces and sampled analytic edges; nested GetInstanceGeometry()", 
+              "complete": false
+            }
+          }
+        ], 
+        "attempted": true, 
+        "reason": "No verified host/placement with complete visible geometry", 
+        "success": false
+      }, 
+      "material_finish_release": "REVIEW_REQUIRED", 
+      "review_reasons": [
+        "Complete placed geometry and category/warnings/hosting gate not established"
+      ], 
+      "model": "FR-W2502-52L", 
+      "type_and_materials": {
+        "count": 1, 
+        "parameter_count": 25, 
+        "parameter_names": [
+          "Model", 
+          "Keynote", 
+          "URL", 
+          "Lamp", 
+          "Initial Intensity", 
+          "Assembly Code", 
+          "Initial Color", 
+          "Description", 
+          "Color Filter", 
+          "Photometric Web File", 
+          "Wattage Comments", 
+          "Type Image", 
+          "Default Elevation", 
+          "Light Loss Factor", 
+          "Tilt Angle", 
+          "Manufacturer", 
+          "Coefficient of Utilization", 
+          "Type Comments", 
+          "Apparent Power", 
+          "Calculate Coefficient of Utilization", 
+          "Export Type to IFC As", 
+          "Dimming Lamp Color Temperature Shift", 
+          "Cost", 
+          "Type IFC Predefined Type", 
+          "Emit from Line Length"
+        ], 
+        "types": [
+          {
+            "name": " ", 
+            "finish_fields": [
+              {
+                "name": "Initial Color", 
+                "is_instance": false, 
+                "formula": null, 
+                "storage_type": "None", 
+                "display": null
+              }, 
+              {
+                "name": "Color Filter", 
+                "value": 16777215, 
+                "is_instance": false, 
+                "formula": null, 
+                "storage_type": "Integer", 
+                "display": null
+              }, 
+              {
+                "name": "Dimming Lamp Color Temperature Shift", 
+                "value": 0, 
+                "is_instance": false, 
+                "formula": null, 
+                "storage_type": "Integer", 
+                "display": null
+              }
+            ], 
+            "materials": [
+              {
+                "name": "Initial Color", 
+                "is_instance": false, 
+                "formula": null, 
+                "storage_type": "None", 
+                "display": null
+              }, 
+              {
+                "name": "Color Filter", 
+                "value": 16777215, 
+                "is_instance": false, 
+                "formula": null, 
+                "storage_type": "Integer", 
+                "display": null
+              }, 
+              {
+                "name": "Dimming Lamp Color Temperature Shift", 
+                "value": 0, 
+                "is_instance": false, 
+                "formula": null, 
+                "storage_type": "Integer", 
+                "display": null
+              }
+            ], 
+            "photometry_fields": [
+              {
+                "name": "Initial Intensity", 
+                "is_instance": false, 
+                "formula": null, 
+                "storage_type": "None", 
+                "display": null
+              }, 
+              {
+                "name": "Description", 
+                "value": null, 
+                "is_instance": false, 
+                "formula": null, 
+                "storage_type": "String", 
+                "display": null
+              }, 
+              {
+                "name": "Photometric Web File", 
+                "value": "FR-W2502-52L.IES", 
+                "is_instance": false, 
+                "formula": null, 
+                "storage_type": "String", 
+                "display": null
+              }, 
+              {
+                "name": "Wattage Comments", 
+                "value": null, 
+                "is_instance": false, 
+                "formula": null, 
+                "storage_type": "String", 
+                "display": null
+              }, 
+              {
+                "name": "Light Loss Factor", 
+                "is_instance": false, 
+                "formula": null, 
+                "storage_type": "None", 
+                "display": null
+              }, 
+              {
+                "name": "Dimming Lamp Color Temperature Shift", 
+                "value": 0, 
+                "is_instance": false, 
+                "formula": null, 
+                "storage_type": "Integer", 
+                "display": null
+              }
+            ], 
+            "identity_fields": [
+              {
+                "name": "Model", 
+                "value": null, 
+                "is_instance": false, 
+                "formula": null, 
+                "storage_type": "String", 
+                "display": null
+              }, 
+              {
+                "name": "Description", 
+                "value": null, 
+                "is_instance": false, 
+                "formula": null, 
+                "storage_type": "String", 
+                "display": null
+              }, 
+              {
+                "name": "Manufacturer", 
+                "value": null, 
+                "is_instance": false, 
+                "formula": null, 
+                "storage_type": "String", 
+                "display": null
+              }
+            ]
+          }
+        ], 
+        "materials_defined": [
+          {
+            "transparency": 0, 
+            "name": "Default", 
+            "appearance_asset_name": "Default (1)", 
+            "rgb": [
+              127, 
+              127, 
+              127
+            ], 
+            "bound": true, 
+            "id": 238
+          }, 
+          {
+            "transparency": 0, 
+            "name": "Default Roof", 
+            "appearance_asset_name": "Default Roof", 
+            "rgb": [
+              0, 
+              127, 
+              0
+            ], 
+            "bound": true, 
+            "id": 239
+          }, 
+          {
+            "transparency": 0, 
+            "name": "Default Wall", 
+            "appearance_asset_name": "Default Wall", 
+            "rgb": [
+              127, 
+              127, 
+              127
+            ], 
+            "bound": true, 
+            "id": 240
+          }, 
+          {
+            "transparency": 75, 
+            "name": "Glass", 
+            "appearance_asset_name": "Glass (1)", 
+            "rgb": [
+              0, 
+              0, 
+              255
+            ], 
+            "bound": true, 
+            "id": 241
+          }, 
+          {
+            "transparency": 0, 
+            "name": "Poche", 
+            "appearance_asset_name": "Poche", 
+            "rgb": [
+              0, 
+              0, 
+              255
+            ], 
+            "bound": true, 
+            "id": 1223
+          }, 
+          {
+            "transparency": 75, 
+            "name": "Default Light Source", 
+            "appearance_asset_name": "Default Light Source", 
+            "rgb": [
+              255, 
+              255, 
+              0
+            ], 
+            "bound": true, 
+            "id": 2092
+          }, 
+          {
+            "transparency": 0, 
+            "name": "\u6e32\u67d3\u6750\u8d28 255-255-255", 
+            "appearance_asset_name": null, 
+            "rgb": [
+              255, 
+              255, 
+              255
+            ], 
+            "bound": true, 
+            "id": 2869
+          }, 
+          {
+            "transparency": 0, 
+            "name": "\u6e32\u67d3\u6750\u8d28 204-204-204", 
+            "appearance_asset_name": null, 
+            "rgb": [
+              204, 
+              204, 
+              204
+            ], 
+            "bound": true, 
+            "id": 2912
+          }, 
+          {
+            "transparency": 0, 
+            "name": "\u6e32\u67d3\u6750\u8d28 101-101-101", 
+            "appearance_asset_name": null, 
+            "rgb": [
+              101, 
+              101, 
+              101
+            ], 
+            "bound": true, 
+            "id": 2918
+          }, 
+          {
+            "transparency": 0, 
+            "name": "\u6e32\u67d3\u6750\u8d28 192-192-192", 
+            "appearance_asset_name": null, 
+            "rgb": [
+              192, 
+              192, 
+              192
+            ], 
+            "bound": true, 
+            "id": 2925
+          }, 
+          {
+            "transparency": 50, 
+            "name": "Analytical Panels", 
+            "appearance_asset_name": "Analytical Panels", 
+            "rgb": [
+              251, 
+              197, 
+              153
+            ], 
+            "bound": true, 
+            "id": 3261
+          }
+        ]
+      }, 
+      "qa_pass": false, 
+      "oem_input_after": {
+        "path": "E:\\Claude\\3D-Model-Workflow\\output\\belmont_ph_good_rfa_20261016\\sources\\oem\\extracted\\MFR1415595_FR-W2502_Smooth_Revit\\FR-W2502-52L.rfa", 
+        "sha256": "5275e71a2d6cfd033b4cb6d6fa1351d0e78c953586bdbcafe2b905893286d617", 
+        "bytes": 8507392
+      }, 
+      "connectors_and_light": {
+        "family_connector_elements": [], 
+        "electrical_connector_count": 0, 
+        "light_source_detected": true, 
+        "photometry_status": "NOT_CALIBRATED_BY_THIS_AUDIT", 
+        "light_source_elements": [
+          {
+            "name": "", 
+            "class": "Element", 
+            "id": 3044
+          }
+        ]
+      }, 
+      "family_path": "E:\\Claude\\3D-Model-Workflow\\output\\belmont_ph_good_rfa_20261016\\families\\ModernForms_Smooth_FR-W2502-52L_SBMB_R2025.rfa", 
+      "scheduled_variant": "FR-W2502-52L-SB/MB", 
+      "files_unchanged": true, 
+      "manufacturer_dimension_match": "NOT_EVALUATED_SOURCE_SCOPE_REQUIRED", 
+      "matches_prior_output_sha256": true, 
+      "status": "HOLD", 
+      "family_warning_messages": [], 
+      "family_file_after": {
+        "path": "E:\\Claude\\3D-Model-Workflow\\output\\belmont_ph_good_rfa_20261016\\families\\ModernForms_Smooth_FR-W2502-52L_SBMB_R2025.rfa", 
+        "sha256": "45c76b46fba9daebcf5d0ebbedb7b5592d4eaa50cbbd4b5b59fe44321b7b8e18", 
+        "bytes": 8613888
+      }, 
+      "placement_type": "WorkPlaneBased", 
+      "manufacturer_dimensions_mm": null, 
+      "family_geometry": {
+        "available": true, 
+        "nested_geometry_instances": 13, 
+        "xyz_mm": [
+          2438.4000000000001, 
+          2438.4000000000001, 
+          670.59997999999996
+        ], 
+        "excluded_reference_or_light_elements": [], 
+        "maximum_xyz_mm": [
+          1219.2000000000000, 
+          1219.2000000000000, 
+          365.79998000000001
+        ], 
+        "errors": [
+          "Analytic edge: 'NoneType' object has no attribute 'Evaluate'", 
+          "Analytic edge: 'NoneType' object has no attribute 'Evaluate'", 
+          "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+          "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+          "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+          "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+          "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+          "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+          "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+          "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+          "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+          "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+          "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+          "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+          "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+          "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+          "Analytic edge: Exceeded geometry vertex budget; envelope incomplete", 
+          "Analytic edge: Exceeded geometry vertex budget; envelope incomplete"
+        ], 
+        "point_count": 350000, 
+        "mesh_count": 2146, 
+        "element_class_counts": {
+          "FreeFormElement": 9, 
+          "Extrusion": 1, 
+          "ImportInstance": 13
+        }, 
+        "solid_count": 23, 
+        "geometry_face_materials": [], 
+        "xyz_in": [
+          96.0, 
+          96.0, 
+          26.401574000000000
+        ], 
+        "aborted": true, 
+        "minimum_xyz_mm": [
+          -1219.2000000000000, 
+          -1219.2000000000000, 
+          -304.80000000000001
+        ], 
+        "measurement_method": "visible native solids/meshes, triangulated faces and sampled analytic edges; nested GetInstanceGeometry()", 
+        "scope": "family-document geometry only; corroboration required from placed instance", 
+        "complete": false
+      }, 
+      "family_file_before": {
+        "path": "E:\\Claude\\3D-Model-Workflow\\output\\belmont_ph_good_rfa_20261016\\families\\ModernForms_Smooth_FR-W2502-52L_SBMB_R2025.rfa", 
+        "sha256": "45c76b46fba9daebcf5d0ebbedb7b5592d4eaa50cbbd4b5b59fe44321b7b8e18", 
+        "bytes": 8613888
+      }, 
+      "photometric_release": "UNVERIFIED", 
+      "family_warning_count": 0, 
+      "scheduled_finish": "Soft Brass / Matte Black"
+    }, 
+    {
+      "id": "mfr201959", 
+      "dimension_comparison_previous": {
+        "delta_actual_minus_prior_mm": [
+          -1753.8999899999999, 
+          -1902.6446200000000, 
+          23.318610000000000
+        ], 
+        "actual_placed_xyz_mm": [
+          684.50000999999997, 
+          535.75537999999995, 
+          407.11860999999999
+        ], 
+        "prior_xyz_mm": [
+          2438.4000000000001, 
+          2438.4000000000001, 
+          383.80000000000001
+        ], 
+        "note": "Disagreement may expose template/light-source/control geometry in the earlier source-document measurement; investigate measured solid provenance.", 
+        "evaluated": true, 
+        "max_abs_difference_mm": 1902.6446200000000, 
+        "agreement_with_prior_within_1mm": false
+      }, 
+      "finish_diagnosis": {
+        "best_candidate": {
+          "required_finish_matches": {
+            "chrome": false
+          }, 
+          "type": " ", 
+          "matched_count": 0, 
+          "evidence": [
+            " ", 
+            "16777215"
+          ]
+        }, 
+        "matching_types": [], 
+        "scheduled_finish": "Chrome", 
+        "status": "FINISH_UNVERIFIED", 
+        "type_candidates": [
+          {
+            "required_finish_matches": {
+              "chrome": false
+            }, 
+            "type": " ", 
+            "matched_count": 0, 
+            "evidence": [
+              " ", 
+              "16777215"
+            ]
+          }
+        ], 
+        "explicit_binding_verification": false, 
+        "scheduled_variant": "WS-3127-CH"
+      }, 
+      "category_pass": true, 
+      "oem_input_before": {
+        "path": "E:\\Claude\\3D-Model-Workflow\\output\\belmont_ph_good_rfa_20261016\\sources\\oem\\extracted\\MFR201959_WS-3120_Vogue_family_Revit\\WS-3127.rfa", 
+        "sha256": "bf4bd0f22c65eec080fc8e022c8fb817f526903408d17bbe52f752d3f4fab155", 
+        "bytes": 1294336
+      }, 
+      "category": "Lighting Fixtures", 
+      "previous_native_batch": {
+        "dimension_fit_evaluated": false, 
+        "status": "PASS", 
+        "warnings": 0, 
+        "technical_pass": true
+      }, 
+      "temporary_project_placement": {
+        "geometry": {
+          "available": true, 
+          "nested_geometry_instances": 1, 
+          "xyz_mm": [
+            684.50000999999997, 
+            535.75537999999995, 
+            407.11860999999999
+          ], 
+          "maximum_xyz_mm": [
+            342.25, 
+            633.35537999999997, 
+            1734.3624500000001
+          ], 
+          "errors": [], 
+          "point_count": 133557, 
+          "mesh_count": 1665, 
+          "solid_count": 25, 
+          "geometry_face_materials": [
+            {
+              "material": {
+                "transparency": 0, 
+                "name": "Diffuser-01", 
+                "appearance_asset_name": "WFC5834 - Diffuser", 
+                "rgb": [
+                  204, 
+                  204, 
+                  204
+                ], 
+                "bound": true, 
+                "id": 2804
+              }, 
+              "face_count": 52
+            }, 
+            {
+              "material": {
+                "transparency": 0, 
+                "name": "\u9752\u94dc\u8272\uff0c\u5efa\u7b51", 
+                "appearance_asset_name": "\u9752\u94dc - \u94dc\u7eff\u8272", 
+                "rgb": [
+                  120, 
+                  120, 
+                  120
+                ], 
+                "bound": true, 
+                "id": 2808
+              }, 
+              "face_count": 336
+            }
+          ], 
+          "xyz_in": [
+            26.948819000000000, 
+            21.092732000000002, 
+            16.028292000000000
+          ], 
+          "aborted": false, 
+          "minimum_xyz_mm": [
+            -342.25, 
+            97.599999999999994, 
+            1327.2438400000001
+          ], 
+          "measurement_method": "visible native solids/meshes, triangulated faces and sampled analytic edges; nested GetInstanceGeometry()", 
+          "complete": true
+        }, 
+        "family_placement_type": "WorkPlaneBased", 
+        "warnings": [], 
+        "isolated_disposable_project": true, 
+        "host_test_method": "wall_face", 
+        "host_verified": true, 
+        "tested_type": null, 
+        "attempts": [
+          {
+            "created": true, 
+            "method": "wall_face", 
+            "hosted_on_expected_element": true, 
+            "location_ft": [
+              0.0, 
+              0.33333333333332715, 
+              5.0
+            ], 
+            "host_id": 3731, 
+            "warnings": [], 
+            "symbol_name": null, 
+            "geometry": {
+              "available": true, 
+              "nested_geometry_instances": 1, 
+              "xyz_mm": [
+                684.50000999999997, 
+                535.75537999999995, 
+                407.11860999999999
+              ], 
+              "maximum_xyz_mm": [
+                342.25, 
+                633.35537999999997, 
+                1734.3624500000001
+              ], 
+              "errors": [], 
+              "point_count": 133557, 
+              "mesh_count": 1665, 
+              "solid_count": 25, 
+              "geometry_face_materials": [
+                {
+                  "material": {
+                    "transparency": 0, 
+                    "name": "Diffuser-01", 
+                    "appearance_asset_name": "WFC5834 - Diffuser", 
+                    "rgb": [
+                      204, 
+                      204, 
+                      204
+                    ], 
+                    "bound": true, 
+                    "id": 2804
+                  }, 
+                  "face_count": 52
+                }, 
+                {
+                  "material": {
+                    "transparency": 0, 
+                    "name": "\u9752\u94dc\u8272\uff0c\u5efa\u7b51", 
+                    "appearance_asset_name": "\u9752\u94dc - \u94dc\u7eff\u8272", 
+                    "rgb": [
+                      120, 
+                      120, 
+                      120
+                    ], 
+                    "bound": true, 
+                    "id": 2808
+                  }, 
+                  "face_count": 336
+                }
+              ], 
+              "xyz_in": [
+                26.948819000000000, 
+                21.092732000000002, 
+                16.028292000000000
+              ], 
+              "aborted": false, 
+              "minimum_xyz_mm": [
+                -342.25, 
+                97.599999999999994, 
+                1327.2438400000001
+              ], 
+              "measurement_method": "visible native solids/meshes, triangulated faces and sampled analytic edges; nested GetInstanceGeometry()", 
+              "complete": true
+            }
+          }
+        ], 
+        "attempted": true, 
+        "success": true
+      }, 
+      "material_finish_release": "REVIEW_REQUIRED", 
+      "model": "WS-3127", 
+      "type_and_materials": {
+        "count": 1, 
+        "parameter_count": 26, 
+        "parameter_names": [
+          "Wattage Comments", 
+          "AB", 
+          "Tilt Angle", 
+          "URL", 
+          "Model", 
+          "Type IFC Predefined Type", 
+          "Initial Intensity", 
+          "Default Elevation", 
+          "Type Image", 
+          "Type Comments", 
+          "Initial Color", 
+          "Keynote", 
+          "DENGZHAO", 
+          "Coefficient of Utilization", 
+          "Dimming Lamp Color Temperature Shift", 
+          "Apparent Power", 
+          "Description", 
+          "Lamp", 
+          "Calculate Coefficient of Utilization", 
+          "Cost", 
+          "Photometric Web File", 
+          "Manufacturer", 
+          "Light Loss Factor", 
+          "Color Filter", 
+          "Export Type to IFC As", 
+          "Assembly Code"
+        ], 
+        "types": [
+          {
+            "name": " ", 
+            "finish_fields": [
+              {
+                "name": "Initial Color", 
+                "is_instance": false, 
+                "formula": null, 
+                "storage_type": "None", 
+                "display": null
+              }, 
+              {
+                "name": "Dimming Lamp Color Temperature Shift", 
+                "value": 0, 
+                "is_instance": false, 
+                "formula": null, 
+                "storage_type": "Integer", 
+                "display": null
+              }, 
+              {
+                "name": "Color Filter", 
+                "value": 16777215, 
+                "is_instance": false, 
+                "formula": null, 
+                "storage_type": "Integer", 
+                "display": null
+              }
+            ], 
+            "materials": [
+              {
+                "name": "Initial Color", 
+                "is_instance": false, 
+                "formula": null, 
+                "storage_type": "None", 
+                "display": null
+              }, 
+              {
+                "name": "Dimming Lamp Color Temperature Shift", 
+                "value": 0, 
+                "is_instance": false, 
+                "formula": null, 
+                "storage_type": "Integer", 
+                "display": null
+              }, 
+              {
+                "name": "Color Filter", 
+                "value": 16777215, 
+                "is_instance": false, 
+                "formula": null, 
+                "storage_type": "Integer", 
+                "display": null
+              }
+            ], 
+            "photometry_fields": [
+              {
+                "name": "Wattage Comments", 
+                "value": null, 
+                "is_instance": false, 
+                "formula": null, 
+                "storage_type": "String", 
+                "display": null
+              }, 
+              {
+                "name": "Initial Intensity", 
+                "is_instance": false, 
+                "formula": null, 
+                "storage_type": "None", 
+                "display": null
+              }, 
+              {
+                "name": "Dimming Lamp Color Temperature Shift", 
+                "value": 0, 
+                "is_instance": false, 
+                "formula": null, 
+                "storage_type": "Integer", 
+                "display": null
+              }, 
+              {
+                "name": "Description", 
+                "value": null, 
+                "is_instance": false, 
+                "formula": null, 
+                "storage_type": "String", 
+                "display": null
+              }, 
+              {
+                "name": "Photometric Web File", 
+                "value": "WS-3127.IES", 
+                "is_instance": false, 
+                "formula": null, 
+                "storage_type": "String", 
+                "display": null
+              }, 
+              {
+                "name": "Light Loss Factor", 
+                "is_instance": false, 
+                "formula": null, 
+                "storage_type": "None", 
+                "display": null
+              }
+            ], 
+            "identity_fields": [
+              {
+                "name": "Model", 
+                "value": null, 
+                "is_instance": false, 
+                "formula": null, 
+                "storage_type": "String", 
+                "display": null
+              }, 
+              {
+                "name": "Description", 
+                "value": null, 
+                "is_instance": false, 
+                "formula": null, 
+                "storage_type": "String", 
+                "display": null
+              }, 
+              {
+                "name": "Manufacturer", 
+                "value": null, 
+                "is_instance": false, 
+                "formula": null, 
+                "storage_type": "String", 
+                "display": null
+              }
+            ]
+          }
+        ], 
+        "materials_defined": [
+          {
+            "transparency": 0, 
+            "name": "Default", 
+            "appearance_asset_name": "Default (1)", 
+            "rgb": [
+              127, 
+              127, 
+              127
+            ], 
+            "bound": true, 
+            "id": 238
+          }, 
+          {
+            "transparency": 0, 
+            "name": "Default Roof", 
+            "appearance_asset_name": "Default Roof", 
+            "rgb": [
+              0, 
+              127, 
+              0
+            ], 
+            "bound": true, 
+            "id": 239
+          }, 
+          {
+            "transparency": 0, 
+            "name": "Default Wall", 
+            "appearance_asset_name": "Default Wall", 
+            "rgb": [
+              127, 
+              127, 
+              127
+            ], 
+            "bound": true, 
+            "id": 240
+          }, 
+          {
+            "transparency": 75, 
+            "name": "Glass", 
+            "appearance_asset_name": "Glass (1)", 
+            "rgb": [
+              0, 
+              0, 
+              255
+            ], 
+            "bound": true, 
+            "id": 241
+          }, 
+          {
+            "transparency": 0, 
+            "name": "Poche", 
+            "appearance_asset_name": "Poche", 
+            "rgb": [
+              0, 
+              0, 
+              255
+            ], 
+            "bound": true, 
+            "id": 1223
+          }, 
+          {
+            "transparency": 75, 
+            "name": "Default Light Source", 
+            "appearance_asset_name": "Default Light Source", 
+            "rgb": [
+              255, 
+              255, 
+              0
+            ], 
+            "bound": true, 
+            "id": 2092
+          }, 
+          {
+            "transparency": 0, 
+            "name": "\u6e32\u67d3\u6750\u8d28 255-255-255", 
+            "appearance_asset_name": null, 
+            "rgb": [
+              255, 
+              255, 
+              255
+            ], 
+            "bound": true, 
+            "id": 2885
+          }, 
+          {
+            "transparency": 0, 
+            "name": "\u6e32\u67d3\u6750\u8d28 127-255-127", 
+            "appearance_asset_name": null, 
+            "rgb": [
+              127, 
+              255, 
+              127
+            ], 
+            "bound": true, 
+            "id": 2888
+          }, 
+          {
+            "transparency": 0, 
+            "name": "\u6e32\u67d3\u6750\u8d28 159-127-255", 
+            "appearance_asset_name": null, 
+            "rgb": [
+              159, 
+              127, 
+              255
+            ], 
+            "bound": true, 
+            "id": 2890
+          }, 
+          {
+            "transparency": 0, 
+            "name": "\u6e32\u67d3\u6750\u8d28 0-0-0", 
+            "appearance_asset_name": null, 
+            "rgb": [
+              0, 
+              0, 
+              0
+            ], 
+            "bound": true, 
+            "id": 2892
+          }, 
+          {
+            "transparency": 0, 
+            "name": "\u6e32\u67d3\u6750\u8d28 255-127-191", 
+            "appearance_asset_name": null, 
+            "rgb": [
+              255, 
+              127, 
+              191
+            ], 
+            "bound": true, 
+            "id": 2894
+          }, 
+          {
+            "transparency": 0, 
+            "name": "\u6e32\u67d3\u6750\u8d28 255-127-255", 
+            "appearance_asset_name": null, 
+            "rgb": [
+              255, 
+              127, 
+              255
+            ], 
+            "bound": true, 
+            "id": 2896
+          }, 
+          {
+            "transparency": 0, 
+            "name": "\u6e32\u67d3\u6750\u8d28 127-127-255", 
+            "appearance_asset_name": null, 
+            "rgb": [
+              127, 
+              127, 
+              255
+            ], 
+            "bound": true, 
+            "id": 2898
+          }, 
+          {
+            "transparency": 0, 
+            "name": "Diffuser-01", 
+            "appearance_asset_name": "WFC5834 - Diffuser", 
+            "rgb": [
+              204, 
+              204, 
+              204
+            ], 
+            "bound": true, 
+            "id": 3541
+          }, 
+          {
+            "transparency": 0, 
+            "name": "\u9752\u94dc\u8272\uff0c\u5efa\u7b51", 
+            "appearance_asset_name": "\u9752\u94dc - \u94dc\u7eff\u8272", 
+            "rgb": [
+              120, 
+              120, 
+              120
+            ], 
+            "bound": true, 
+            "id": 3546
+          }, 
+          {
+            "transparency": 50, 
+            "name": "Analytical Panels", 
+            "appearance_asset_name": "Analytical Panels", 
+            "rgb": [
+              251, 
+              197, 
+              153
+            ], 
+            "bound": true, 
+            "id": 3896
+          }
+        ]
+      }, 
+      "qa_pass": true, 
+      "oem_input_after": {
+        "path": "E:\\Claude\\3D-Model-Workflow\\output\\belmont_ph_good_rfa_20261016\\sources\\oem\\extracted\\MFR201959_WS-3120_Vogue_family_Revit\\WS-3127.rfa", 
+        "sha256": "bf4bd0f22c65eec080fc8e022c8fb817f526903408d17bbe52f752d3f4fab155", 
+        "bytes": 1294336
+      }, 
+      "connectors_and_light": {
+        "family_connector_elements": [], 
+        "electrical_connector_count": 0, 
+        "light_source_detected": true, 
+        "photometry_status": "NOT_CALIBRATED_BY_THIS_AUDIT", 
+        "light_source_elements": [
+          {
+            "name": "", 
+            "class": "Element", 
+            "id": 3653
+          }
+        ]
+      }, 
+      "family_path": "E:\\Claude\\3D-Model-Workflow\\output\\belmont_ph_good_rfa_20261016\\families\\ModernForms_Vogue_WS-3127_CH_R2025.rfa", 
+      "scheduled_variant": "WS-3127-CH", 
+      "files_unchanged": true, 
+      "manufacturer_dimension_match": "NOT_EVALUATED_SOURCE_SCOPE_REQUIRED", 
+      "matches_prior_output_sha256": true, 
+      "status": "TECHNICAL_PASS_FINISH_HOLD", 
+      "family_warning_messages": [], 
+      "family_file_after": {
+        "path": "E:\\Claude\\3D-Model-Workflow\\output\\belmont_ph_good_rfa_20261016\\families\\ModernForms_Vogue_WS-3127_CH_R2025.rfa", 
+        "sha256": "1dcb1673b31ff277f9482bc5ded7a244922598f782196d2d2804c773768db4df", 
+        "bytes": 1400832
+      }, 
+      "placement_type": "WorkPlaneBased", 
+      "manufacturer_dimensions_mm": null, 
+      "family_geometry": {
+        "available": true, 
+        "nested_geometry_instances": 0, 
+        "xyz_mm": [
+          2438.4000000000001, 
+          2438.4000000000001, 
+          383.80000000000001
+        ], 
+        "excluded_reference_or_light_elements": [], 
+        "maximum_xyz_mm": [
+          1219.2000000000000, 
+          1219.2000000000000, 
+          79.0
+        ], 
+        "errors": [], 
+        "point_count": 130709, 
+        "mesh_count": 1670, 
+        "element_class_counts": {
+          "FreeFormElement": 25, 
+          "Extrusion": 1
+        }, 
+        "solid_count": 26, 
+        "geometry_face_materials": [
+          {
+            "material": {
+              "transparency": 0, 
+              "name": "Diffuser-01", 
+              "appearance_asset_name": "WFC5834 - Diffuser", 
+              "rgb": [
+                204, 
+                204, 
+                204
+              ], 
+              "bound": true, 
+              "id": 3541
+            }, 
+            "face_count": 52
+          }, 
+          {
+            "material": {
+              "transparency": 0, 
+              "name": "\u9752\u94dc\u8272\uff0c\u5efa\u7b51", 
+              "appearance_asset_name": "\u9752\u94dc - \u94dc\u7eff\u8272", 
+              "rgb": [
+                120, 
+                120, 
+                120
+              ], 
+              "bound": true, 
+              "id": 3546
+            }, 
+            "face_count": 336
+          }
+        ], 
+        "xyz_in": [
+          96.0, 
+          96.0, 
+          15.110236000000000
+        ], 
+        "aborted": false, 
+        "minimum_xyz_mm": [
+          -1219.2000000000000, 
+          -1219.2000000000000, 
+          -304.80000000000001
+        ], 
+        "measurement_method": "visible native solids/meshes, triangulated faces and sampled analytic edges; nested GetInstanceGeometry()", 
+        "scope": "family-document geometry only; corroboration required from placed instance", 
+        "complete": true
+      }, 
+      "family_file_before": {
+        "path": "E:\\Claude\\3D-Model-Workflow\\output\\belmont_ph_good_rfa_20261016\\families\\ModernForms_Vogue_WS-3127_CH_R2025.rfa", 
+        "sha256": "1dcb1673b31ff277f9482bc5ded7a244922598f782196d2d2804c773768db4df", 
+        "bytes": 1400832
+      }, 
+      "photometric_release": "UNVERIFIED", 
+      "family_warning_count": 0, 
+      "scheduled_finish": "Chrome"
+    }
+  ]
+}

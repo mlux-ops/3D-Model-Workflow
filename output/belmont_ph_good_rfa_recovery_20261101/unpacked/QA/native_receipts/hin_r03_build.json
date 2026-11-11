@@ -1,0 +1,79 @@
+{
+  "source_builder": "E:\\Claude\\3D-Model-Workflow\\output\\belmont_ph_good_rfa_20261016\\scripts\\build_hin_53860bk_r03.py", 
+  "status": "SAVED_PENDING_INDEPENDENT_NATIVE_QA", 
+  "builder_result": {
+    "part_count": 10, 
+    "candidate_version": "R03_UNAPPROVED", 
+    "material_parameters": [
+      "Black Steel", 
+      "Etched Diffuser"
+    ], 
+    "hosting": "face based / WorkPlaneBased", 
+    "photometry": "NO_VALIDATED_IES_OR_ELECTRICAL_CONNECTOR", 
+    "geometry_dimensions_in": [
+      24.999999046325684, 
+      5.5000001192092896, 
+      3.0
+    ], 
+    "source_urls": [
+      "https://www.hinkley.com/53860bk.html", 
+      "https://www.hinkley.com/product_spec_print/download/pdf/product_id/52426/Advanced/1", 
+      "https://www.hinkley.com/media/catalog/product/2/f/2f013ee2ee5d2d0fc4fbd9688adb2dd6-53860BK_dim1.jpg", 
+      "https://d1lnz90t7xw0i5.cloudfront.net/Products/files/53860.pdf"
+    ], 
+    "inner_wall_plate_diameter_in": 4.75, 
+    "measured_r03_xyz_in": [
+      24.999999046325684, 
+      5.5000001192092896, 
+      3.0
+    ], 
+    "published_xyz_in": [
+      25.0, 
+      5.5, 
+      3.0
+    ], 
+    "category": "Lighting Fixtures", 
+    "rfa_path": "E:\\Claude\\3D-Model-Workflow\\output\\belmont_ph_good_rfa_20261016\\candidates\\Hinkley_Eos_53860BK_R2025_R03_UNAPPROVED.rfa", 
+    "visual_source_review": "PENDING_NATIVE_FRONT_OBLIQUE_COMPARISON", 
+    "dimension_delta_abs_in": [
+      9.5367431640625e-07, 
+      1.1920928955078125e-07, 
+      0.0
+    ], 
+    "revit_version": "2025", 
+    "status": "SAVED_PENDING_INDEPENDENT_NATIVE_QA", 
+    "geometry_release": "HOLD_PENDING_INDEPENDENT_VISUAL_AND_DIMENSION_QA", 
+    "r02_sha256": "362925c6338b45894b0fff18dc8385c008dd0c83ae76408b1cca485905250618", 
+    "source_photo_sha256": "31b6a99bb2666549379e380db35b835f77a4991b0262753227994a7626737977", 
+    "glass_surrogate": "Closed exterior etched diffuser envelope (not literal solid glass)", 
+    "source_part_dimensions": {
+      "distributor": {
+        "glass_diameter": 1.25, 
+        "glass_length": 17.5
+      }, 
+      "manufacturer": {
+        "projection": 3.0, 
+        "W": 25.0, 
+        "backplate_d": 4.75, 
+        "H": 5.5
+      }, 
+      "photo_derived": {
+        "rail_y": 1.0200000000000000, 
+        "return_radius": 1.0200000000000000, 
+        "visible_cover_d": 5.5
+      }
+    }, 
+    "visible_cover_diameter_in": 5.5
+  }, 
+  "target": "E:\\Claude\\3D-Model-Workflow\\output\\belmont_ph_good_rfa_20261016\\candidates\\Hinkley_Eos_53860BK_R2025_R03_UNAPPROVED.rfa", 
+  "progress": [
+    {
+      "utc": "2026-10-16T07:11:25Z", 
+      "stage": "hinkley_r03_source_guards_pass"
+    }, 
+    {
+      "utc": "2026-10-16T07:11:38Z", 
+      "stage": "hinkley_r03_candidate_saved_unapproved"
+    }
+  ]
+}

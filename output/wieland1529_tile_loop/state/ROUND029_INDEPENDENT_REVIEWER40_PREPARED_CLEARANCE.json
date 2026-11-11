@@ -1,0 +1,101 @@
+{
+  "round": 29,
+  "reviewer": "worker-40",
+  "review_type": "distinct independent prepared-stage research review; NOT pre-dispatch clearance",
+  "date": "2026-11-07",
+  "exact_verdict": "PRECISE FIX",
+  "report": {
+    "path": "state/ROUND029_REVIEWER40_PREPARED_REPORT.md",
+    "sha256": "439a4508c373fe0fdc111fe7a54edad17372fa3096b1ae2c681c7e22d5f1e1d1",
+    "bytes": 2985,
+    "five_sections": true
+  },
+  "verified_receipts": {
+    "prepared_manifest": {
+      "path": "state/ROUND029_PREPARED_RESEARCH_SNAPSHOT_MANIFEST.json",
+      "sha256": "7c7ac8e98bc9fa958b2676e7b449bb28d79cbed202814f12eae3e74fbfa083e0",
+      "bytes": 3207,
+      "files_verified_sha_and_bytes": 6,
+      "files_disagreeing": 0
+    },
+    "owner_cards_snapshot": {
+      "path": "state/ROUND029_13_PROVISIONAL_OWNER_CARDS_SNAPSHOT.json",
+      "sha256": "649bf4c87074479bb9009a0052066ecdb2c1c9ac40e7558626d2105be16ab9e2",
+      "bytes": 6014,
+      "files_verified_sha_and_bytes": 14,
+      "files_disagreeing": 0,
+      "room_cards": 13,
+      "readme": 1,
+      "all_cards_provisional_not_final": true,
+      "card_words_min": 324,
+      "card_words_max": 435,
+      "one_page_printed_fit": "NOT_VERIFIED; Markdown word count only"
+    },
+    "continuation_report": {
+      "path": "state/ROUND029_CONTINUATION_FIVE_SECTION_REPORT.md",
+      "sha256": "eea9c989e3d25f447ff3b445482a2f89e194e83fb50072a9d80414c618195665",
+      "bytes": 3909
+    },
+    "nine_room_matrix": {
+      "path": "research/products/R029_NINE_ROOM_COORDINATED_OPTION_MATRIX_20261107.md",
+      "sha256": "24685afc640b2c0bb698ddbf476cd4b5411f6c089b416bd479bad32746518a54",
+      "bytes": 39164
+    }
+  },
+  "scope": {
+    "unique_room_ids": 13,
+    "physical_copies": 26,
+    "original_material_rows": 27,
+    "historical_material_only_usd": 23572.44,
+    "original_waste_counted_once_percent": 15,
+    "priority_prepared_scheme_files": 4,
+    "additional_rooms_in_matrix": 9
+  },
+  "source_accuracy": {
+    "manufacturer_qualification_is_product_level_not_room_level": true,
+    "msi_and_porcelanosa_pan_permissions_unverified": true,
+    "chicago_matching_lots_delivered_cost_and_geometry_unverified": true,
+    "local_discontinuation_does_not_prove_global_or_chicago_availability": true
+  },
+  "owner_scope": {
+    "selected_duravit_tub_rooms_no_tiled_pan": ["PH-BATH2", "TX-BATH2", "TX-BATH4"],
+    "tub_or_walk_in_unresolved": ["PH-BATH3", "TX-BATH3"],
+    "basin_unselected": ["PH-BATH3", "TX-BATH2", "TX-POWDER2"],
+    "parent_wc_inherited_once": ["PH-WC", "TX-WC"],
+    "owner_branches_not_selected_by_review": true
+  },
+  "precise_fixes": [
+    {
+      "id": "F1",
+      "file": "research/products/R029_NINE_ROOM_COORDINATED_OPTION_MATRIX_20261107.md",
+      "lines": [137, 145],
+      "issue": "Treats TX-POWDER2 Hansgrohe Brushed Black Chrome finish as unverified solely from null structured field, despite explicit verified suffix 341 in rooms/TX-POWDER2/plumbing.json notes lines 22 and 38.",
+      "correction": "Reconcile narrative to verified notes, preserve existing owner-card finish and unselected basin."
+    },
+    {
+      "id": "F2",
+      "file": "research/products/R029_NINE_ROOM_COORDINATED_OPTION_MATRIX_20261107.md",
+      "lines": [79, 80, 81, 152, 153, 154],
+      "issue": "PH-WC B labels Riviera where prepared PH-PRIMARY B is Tower Gray; TX-WC B labels Luxe where TX-PRIMARY B is Chastain.",
+      "correction": "Align conditional WC A/B labels to current prepared parent schemes; retain other product choices as unselected conditional comparators and never create WC-specific champion."
+    },
+    {
+      "id": "F3",
+      "file": "deliverables/r029-13-owner-review-PROVISIONAL/TX-PRIMARY.md",
+      "lines": [8, 9],
+      "issue": "Proposed B Chastain Ivory LEVEL/LINEAR PAN mentioned but SKU 101130557 source link missing from surface alternatives.",
+      "correction": "Add the exact SKU/link, $4.49/SF Camelback source, and selected-store availability caveat to both rows."
+    }
+  ],
+  "readiness": {
+    "status": "PREPARED NOT FROZEN",
+    "new_accepted_champions": 0,
+    "final_accepted_owner_packets": 0,
+    "formal_independent_pre_dispatch_clearance": false,
+    "critic_dispatch_authorized": false,
+    "champion_acceptance_authorized": false,
+    "procurement_authorized": false,
+    "global_DONE": false
+  },
+  "next_command": "Prime: resolve F1-F3, rehash affected R029 snapshot entries, obtain independent repeat prepared-stage review; then request a separate FORMAL pre-dispatch review before any critic dispatch or acceptance."
+}

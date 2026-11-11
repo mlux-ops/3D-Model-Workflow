@@ -1,0 +1,26 @@
+{
+  "round": 25,
+  "phase": "2-board",
+  "focus_rooms": ["PH-PRIMARY", "PH-BATH3", "PH-BATH4"],
+  "frozen_receipt": "state/ROUND025_FORMAL_THREE_PH_ROOMS_SOURCE_FROZEN_PREDISPATCH.json",
+  "independent_predispatch_reviewer": "worker-22",
+  "reviewer_verdict": "CONTINUE FOR CRITIC DISPATCH ONLY",
+  "reviewer_receipt": "state/ROUND025_INDEPENDENT_PREDISPATCH_REVIEWER22_CLEARANCE.json",
+  "run_id": "0a72848e-6cb2-462d-9478-1eccba986835",
+  "seats": {
+    "critic-market": {"worker": "worker-23", "weight": 0.30, "status": "invited"},
+    "critic-design": {"worker": "worker-24", "weight": 0.25, "status": "invited"},
+    "critic-build": {"worker": "worker-25", "weight": 0.25, "status": "invited"},
+    "critic-cost": {"worker": "worker-26", "weight": 0.20, "status": "invited"}
+  },
+  "critic_private_source_access": false,
+  "four_authentic_critiques_collected": false,
+  "score_in_this_dispatch_phase": false,
+  "future_collection_phase": "distinct next prime turn per BOARD.md",
+  "native_geometry_hard_gate": "UNKNOWN",
+  "complete_delivered_budget": "UNKNOWN",
+  "chicago_stock_eta": "UNKNOWN",
+  "champion_changes": false,
+  "owner_release": false,
+  "global_done": false
+}

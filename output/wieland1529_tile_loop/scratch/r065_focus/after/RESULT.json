@@ -1,0 +1,57 @@
+{
+  "status": "PASS",
+  "phase": "after",
+  "physical_instances": [
+    "PH-BATH2/305A",
+    "PH-BATH2/305B",
+    "PH-BATH3/307A",
+    "PH-BATH3/307B",
+    "TX-BATH2/205A",
+    "TX-BATH2/205B",
+    "TX-BATH3/207A",
+    "TX-BATH3/207B"
+  ],
+  "focus_captures": 8,
+  "picks_sha256": "a468848af7a7390a796a1d489b9a493b991dc5d30e478ed10eb0284818f92d0d",
+  "delta_vs_before": [
+    {
+      "key": "PH-BATH2/305A",
+      "average_delta": 11.474
+    },
+    {
+      "key": "PH-BATH2/305B",
+      "average_delta": 11.93
+    },
+    {
+      "key": "PH-BATH3/307A",
+      "average_delta": 13.843
+    },
+    {
+      "key": "PH-BATH3/307B",
+      "average_delta": 11.327
+    },
+    {
+      "key": "TX-BATH2/205A",
+      "average_delta": 20.459
+    },
+    {
+      "key": "TX-BATH2/205B",
+      "average_delta": 21.452
+    },
+    {
+      "key": "TX-BATH3/207A",
+      "average_delta": 13.955
+    },
+    {
+      "key": "TX-BATH3/207B",
+      "average_delta": 13.802
+    }
+  ],
+  "checks": [
+    "PH-BATH2/305A finish/source/section/A-B controls",
+    "PH-BATH3/307A finish/source/section/A-B controls",
+    "TX-BATH2/205A finish/source/section/A-B controls",
+    "TX-BATH3/207A finish/source/section/A-B controls"
+  ],
+  "errors": []
+}

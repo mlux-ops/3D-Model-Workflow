@@ -1,0 +1,363 @@
+{
+  "as_of": "2026-11-06",
+  "round": 11,
+  "reviewer_prior_clearance": "worker-8 CONTINUE — formal scoring in NEXT DISTINCT TURN",
+  "source_submission": "state/ROUND011_SUBMISSION.json",
+  "source_submission_sha256": "827621f7afd308606a2562491cd65851d7cb18502393e88140f181aee8c8f38e",
+  "source_critic_collection": "state/ROUND011_CRITIC_COLLECTION.json",
+  "source_collection_sha256": "ad3ee0b443b8e0d481132bb253c5663c871fa99ad2a1df10afbb4c96f34dd5c5",
+  "source_dispatch_sha256": "b7b0a06c6713916a3415f953df983999f86f0d2c6c23207acd77da196290fea3",
+  "verification": {
+    "candidate_frozen_files": 4,
+    "actual_independent_critiques": 8,
+    "criterion_checks": 76,
+    "seat_means_verified": 16,
+    "local_links": 236,
+    "all_valid": true
+  },
+  "room_results": {
+    "PH-BATH3": {
+      "room": "PH-BATH3",
+      "round": 11,
+      "critics_complete": true,
+      "critic_file_fingerprints": {
+        "market": {
+          "sha256": "2e9133d1629f4f6455d2f9f4fc8b13d7b3b579294093a798c4426474c63f79c8",
+          "bytes": 11752,
+          "worker": "worker-3"
+        },
+        "design": {
+          "sha256": "a3af0e5c0cc3cd3a32f7b1577b4abf6113945d33f004e8c729761e051280a991",
+          "bytes": 9521,
+          "worker": "worker-9"
+        },
+        "build": {
+          "sha256": "772344f7b05b6c8115c6743bb3af662dbaa7f3038905cf60f57a924fecfed664",
+          "bytes": 9366,
+          "worker": "worker-10"
+        },
+        "cost": {
+          "sha256": "0abd6558feffa7df13a99f63889af03184bdedc08dc949cd46bfb0a1577f50e8",
+          "bytes": 12212,
+          "worker": "worker-6"
+        }
+      },
+      "weights": {
+        "market": 0.3,
+        "design": 0.25,
+        "build": 0.25,
+        "cost": 0.2
+      },
+      "incumbent_letter": "B",
+      "challenger_letter": "A",
+      "candidates": {
+        "A": {
+          "role": "revised owner-program-conditional design",
+          "seat_scores": {
+            "market": 3.7,
+            "design": 3.4,
+            "build": 2.4,
+            "cost": 2.6
+          },
+          "criterion_scores": {
+            "market": {
+              "criterion_scores": [
+                4.1,
+                4.1,
+                3.0,
+                3.4
+              ],
+              "mean": 3.7
+            },
+            "design": {
+              "criterion_scores": [
+                4.0,
+                4.0,
+                4.0,
+                3.0,
+                2.0
+              ],
+              "mean": 3.4
+            },
+            "build": {
+              "criterion_scores": [
+                3.0,
+                3.0,
+                2.0,
+                2.0,
+                2.0
+              ],
+              "mean": 2.4
+            },
+            "cost": {
+              "criterion_scores": [
+                4.0,
+                3.0,
+                2.0,
+                2.0,
+                2.0
+              ],
+              "mean": 2.6
+            }
+          },
+          "weighted_score": 3.08,
+          "minimum_critic_score": 2.4,
+          "all_seat_minimum_3_pass": false,
+          "hard_gates_pass": false,
+          "gate_reasons": [
+            "FAIL: exact maker-SKU-and-finish raw measured numeric wet DCOF certificate for LEVEL floor remains unavailable; published >0.50 lower bounds and Daltile targets are not accepted raw test values",
+            "PASS WALL ONLY: individual ELM Tones Sandstone 2x20 Glossy wet field and existing niche Wet Areas listed",
+            "HOLD: PH sink UNSELECTED and drawing-origin tub alcove conflicts with scheduled Delta DT062412 Chrome 4-inch square shower point drain",
+            "FAIL if owner elects WALK-IN: HNC6715 conditional 2x2 point-pan maker >0.50 bound is not accepted raw tested numeric DCOF; pan polygon/membrane/grate interface not certified",
+            "HOLD: correct 1529 native model/site dimensions, original niche field-face deduction, approved drain/membrane/threshold, current Chicago lot/quote/ETA, room material cap, owner signature all unverified; no invented 125% budget failure"
+          ],
+          "source_candidate_sha256": "e9c87ac9d205a5b33903e081e4fd59dd04b59ce9bd5d666762611dd1b4ced700"
+        },
+        "B": {
+          "role": "historic v4 source",
+          "seat_scores": {
+            "market": 3.5,
+            "design": 2.8,
+            "build": 1.8,
+            "cost": 2.6
+          },
+          "criterion_scores": {
+            "market": {
+              "criterion_scores": [
+                3.7,
+                3.6,
+                3.0,
+                3.6
+              ],
+              "mean": 3.5
+            },
+            "design": {
+              "criterion_scores": [
+                4.0,
+                3.0,
+                4.0,
+                2.0,
+                1.0
+              ],
+              "mean": 2.8
+            },
+            "build": {
+              "criterion_scores": [
+                1.0,
+                3.0,
+                1.0,
+                2.0,
+                2.0
+              ],
+              "mean": 1.8
+            },
+            "cost": {
+              "criterion_scores": [
+                5.0,
+                2.0,
+                3.0,
+                2.0,
+                1.0
+              ],
+              "mean": 2.6
+            }
+          },
+          "weighted_score": 2.72,
+          "minimum_critic_score": 1.8,
+          "all_seat_minimum_3_pass": false,
+          "hard_gates_pass": false,
+          "gate_reasons": [
+            "FAIL: exact maker-SKU-and-finish raw measured numeric wet DCOF certificate for LEVEL floor remains unavailable; published >0.50 lower bounds and Daltile targets are not accepted raw test values",
+            "FAIL: original ELM Tones Opal 2x20 Glossy lacks individual maker Wet Areas authorization for wet wall",
+            "HOLD: PH sink UNSELECTED and drawing-origin tub alcove conflicts with scheduled Delta DT062412 Chrome 4-inch square shower point drain",
+            "FAIL if owner elects WALK-IN: no selected compatible tested small-format point-pan material or verified four-plane drain slope detail",
+            "HOLD: correct 1529 native model/site dimensions, original niche field-face deduction, approved drain/membrane/threshold, current Chicago lot/quote/ETA, room material cap, owner signature all unverified; no invented 125% budget failure"
+          ],
+          "source_candidate_sha256": "125529410bd27239752d811e26b23404fba499bb75ad2a330581d98c7049fcdb"
+        }
+      },
+      "margin": 0.36,
+      "status": "blocked",
+      "decision": "both_candidates_blocked_floor_and_conditional_point_pan_exact_dcof_and_owner_program",
+      "champion_id": null,
+      "champion_score": null,
+      "accepted_challenger": false,
+      "owner_approved": false,
+      "procurement_release": false,
+      "provisional_design_preference": "A",
+      "report": "board/round-011/ROUND_REPORT.md"
+    },
+    "TX-BATH3": {
+      "room": "TX-BATH3",
+      "round": 11,
+      "critics_complete": true,
+      "critic_file_fingerprints": {
+        "market": {
+          "sha256": "876865fe0e907d3f4101232a8c0f2a700fffaf44627b9d065be16fa69825d92c",
+          "bytes": 11245,
+          "worker": "worker-3"
+        },
+        "design": {
+          "sha256": "89fa3088d28202ac12e7e118e8a8e143190bc6e3bd79da3cffcb27d1b229bbd4",
+          "bytes": 9793,
+          "worker": "worker-9"
+        },
+        "build": {
+          "sha256": "14abf863167eff905b1ad6d283904689ea028571043b13bdb902358c3fdc51be",
+          "bytes": 9324,
+          "worker": "worker-10"
+        },
+        "cost": {
+          "sha256": "1eef13960eaa86a354bdd459f4ec51ae3406fc7a99800aae75c4f538784b8e30",
+          "bytes": 11416,
+          "worker": "worker-6"
+        }
+      },
+      "weights": {
+        "market": 0.3,
+        "design": 0.25,
+        "build": 0.25,
+        "cost": 0.2
+      },
+      "incumbent_letter": "C",
+      "challenger_letter": "B",
+      "candidates": {
+        "B": {
+          "role": "revised owner-program-conditional design",
+          "seat_scores": {
+            "market": 3.7,
+            "design": 3.4,
+            "build": 2.4,
+            "cost": 2.6
+          },
+          "criterion_scores": {
+            "market": {
+              "criterion_scores": [
+                4.1,
+                4.2,
+                3.0,
+                3.4
+              ],
+              "mean": 3.7
+            },
+            "design": {
+              "criterion_scores": [
+                5.0,
+                4.0,
+                3.0,
+                2.0,
+                3.0
+              ],
+              "mean": 3.4
+            },
+            "build": {
+              "criterion_scores": [
+                3.0,
+                3.0,
+                2.0,
+                2.0,
+                2.0
+              ],
+              "mean": 2.4
+            },
+            "cost": {
+              "criterion_scores": [
+                4.0,
+                3.0,
+                2.0,
+                2.0,
+                2.0
+              ],
+              "mean": 2.6
+            }
+          },
+          "weighted_score": 3.08,
+          "minimum_critic_score": 2.4,
+          "all_seat_minimum_3_pass": false,
+          "hard_gates_pass": false,
+          "gate_reasons": [
+            "FAIL: exact maker-SKU-and-finish raw measured numeric wet DCOF certificate for LEVEL floor remains unavailable; published >0.50 lower bounds and Daltile targets are not accepted raw test values",
+            "PASS WALL ONLY: individual ELM Tones Emerald wet field and Sandstone niche Wet Areas documented",
+            "HOLD: drawing tub alcove versus selected Brizo BT062415-BNX Brilliance Black Onyx 4-inch square shower point drain, owner tub/walk-in election unresolved",
+            "HOLD: nominal vertical 1.60-inch strips must be eliminated/re-dimensioned after actual caliber and elevations; not automatically the unrelated 24x48 under-3-inch geometry gate",
+            "FAIL if owner elects WALK-IN: HNC6715 conditional 2x2 point-pan maker >0.50 bound is not accepted raw tested numeric DCOF; pan polygon/membrane/grate interface not certified",
+            "HOLD: correct 1529 native model/site dimensions, original niche field-face deduction, approved drain/membrane/threshold, current Chicago lot/quote/ETA, room material cap, owner signature all unverified; no invented 125% budget failure"
+          ],
+          "source_candidate_sha256": "e7c1eaee829915840c7024998ce3382495f31a017346c1042a5b43158a276b24"
+        },
+        "C": {
+          "role": "historic v4 source",
+          "seat_scores": {
+            "market": 3.6,
+            "design": 3.2,
+            "build": 2.0,
+            "cost": 2.8
+          },
+          "criterion_scores": {
+            "market": {
+              "criterion_scores": [
+                3.8,
+                3.8,
+                3.0,
+                3.7
+              ],
+              "mean": 3.6
+            },
+            "design": {
+              "criterion_scores": [
+                5.0,
+                4.0,
+                3.0,
+                3.0,
+                1.0
+              ],
+              "mean": 3.2
+            },
+            "build": {
+              "criterion_scores": [
+                2.0,
+                3.0,
+                1.0,
+                2.0,
+                2.0
+              ],
+              "mean": 2.0
+            },
+            "cost": {
+              "criterion_scores": [
+                5.0,
+                2.0,
+                3.0,
+                2.0,
+                2.0
+              ],
+              "mean": 2.8
+            }
+          },
+          "weighted_score": 2.94,
+          "minimum_critic_score": 2.0,
+          "all_seat_minimum_3_pass": false,
+          "hard_gates_pass": false,
+          "gate_reasons": [
+            "FAIL: exact maker-SKU-and-finish raw measured numeric wet DCOF certificate for LEVEL floor remains unavailable; published >0.50 lower bounds and Daltile targets are not accepted raw test values",
+            "PASS WALL ONLY: individual ELM Tones Emerald wet field and Sandstone niche Wet Areas documented",
+            "HOLD: drawing tub alcove versus selected Brizo BT062415-BNX Brilliance Black Onyx 4-inch square shower point drain, owner tub/walk-in election unresolved",
+            "FAIL if owner elects WALK-IN: no selected compatible tested small-format point-pan material or verified four-plane drain slope detail",
+            "HOLD: correct 1529 native model/site dimensions, original niche field-face deduction, approved drain/membrane/threshold, current Chicago lot/quote/ETA, room material cap, owner signature all unverified; no invented 125% budget failure"
+          ],
+          "source_candidate_sha256": "f38f55774d68de6b685596501e5e325fad03e604fccee2d67451a678b9f2cfa0"
+        }
+      },
+      "margin": 0.14,
+      "status": "blocked",
+      "decision": "both_candidates_blocked_floor_and_conditional_point_pan_exact_dcof_and_owner_program",
+      "champion_id": null,
+      "champion_score": null,
+      "accepted_challenger": false,
+      "owner_approved": false,
+      "procurement_release": false,
+      "provisional_design_preference": "B",
+      "report": "board/round-011/ROUND_REPORT.md"
+    }
+  }
+}

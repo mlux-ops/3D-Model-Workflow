@@ -1,0 +1,50 @@
+{
+  "round": 11,
+  "as_of": "2026-11-06",
+  "phase": "2-board",
+  "all_critic_scores": null,
+  "candidate_files": {
+    "PH-BATH3": {
+      "A": {
+        "sha256": "e9c87ac9d205a5b33903e081e4fd59dd04b59ce9bd5d666762611dd1b4ced700",
+        "bytes": 11127
+      },
+      "B": {
+        "sha256": "125529410bd27239752d811e26b23404fba499bb75ad2a330581d98c7049fcdb",
+        "bytes": 9748
+      }
+    },
+    "TX-BATH3": {
+      "B": {
+        "sha256": "e7c1eaee829915840c7024998ce3382495f31a017346c1042a5b43158a276b24",
+        "bytes": 11485
+      },
+      "C": {
+        "sha256": "f38f55774d68de6b685596501e5e325fad03e604fccee2d67451a678b9f2cfa0",
+        "bytes": 9873
+      }
+    }
+  },
+  "critic_seats": [
+    "critic-market",
+    "critic-design",
+    "critic-build",
+    "critic-cost"
+  ],
+  "owner_program_selected": false,
+  "revit_1529_native_verified": false,
+  "procurement_released": false,
+  "independent_preflight_status": "pending independent non-Pro Reviewer",
+  "new_board_dispatch_status": "NOT DISPATCHED; await Reviewer FIX or CONTINUE",
+  "prior_rounds_001_through_010_scoring_and_source_unchanged": true,
+  "pre_dispatch_corrected_source_lineage": {
+    "room": "PH-BATH3",
+    "letter": "A",
+    "reviewer": "worker-8",
+    "reason": "Correct original 86.20 SF wet wall as Opal (not Sandstone); 8.63 SF historical Sandstone niche separate",
+    "prior_sha256": "7715d2c39ed37a0ec4ffc85f6146b2ea5dcb0f718e05d00a2dfbcd3a76671479",
+    "updated_sha256": "e9c87ac9d205a5b33903e081e4fd59dd04b59ce9bd5d666762611dd1b4ced700",
+    "critics_dispatched": false,
+    "all_critic_scores": null
+  }
+}

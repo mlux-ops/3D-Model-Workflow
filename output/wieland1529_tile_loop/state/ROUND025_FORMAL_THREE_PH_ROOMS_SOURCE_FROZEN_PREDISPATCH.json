@@ -1,0 +1,85 @@
+{
+  "round": 25,
+  "phase": "1-SOURCE_FROZEN_PENDING_INDEPENDENT_PREDISPATCH_REVIEWER",
+  "focus_rooms": [
+    "PH-PRIMARY",
+    "PH-BATH3",
+    "PH-BATH4"
+  ],
+  "neutral_candidates": {
+    "rooms/PH-PRIMARY/board/round-025/candidates/A.md": {
+      "sha256": "825d8f18f2004c2312529a791683d3b36080a35b50c4f5518249644c37ea942d",
+      "bytes": 5180
+    },
+    "rooms/PH-PRIMARY/board/round-025/candidates/B.md": {
+      "sha256": "829523d574383c02cd7972b3e2daa58bab59a5efa8f43dd3b631f0d3e151e9fd",
+      "bytes": 5197
+    },
+    "rooms/PH-BATH3/board/round-025/candidates/A.md": {
+      "sha256": "e034f4f20ee52b545a08e90ba8bbfc99d2d0f5018c44d22d5befeed2eae42d16",
+      "bytes": 5398
+    },
+    "rooms/PH-BATH3/board/round-025/candidates/B.md": {
+      "sha256": "0ce42a269e535a64dcd797186deaefe639e0406a8de00ef5210c84c9863c5136",
+      "bytes": 5413
+    },
+    "rooms/PH-BATH4/board/round-025/candidates/A.md": {
+      "sha256": "beb17df231ddf4b3dd584df89f768140407a6f69772572e2150dff5f183ca133",
+      "bytes": 5285
+    },
+    "rooms/PH-BATH4/board/round-025/candidates/B.md": {
+      "sha256": "ea37c27a0651cd49b2a7f126a70d8c8721b8fb878d6c4beead603ea7e077f28b",
+      "bytes": 5263
+    }
+  },
+  "prime_only_private_keys": {
+    "rooms/PH-PRIMARY/board/round-025/_key.json": {
+      "sha256": "71e2c74120708f4c678977435a8cbc00c65361fabea4b8267659b6ac10ba0d90",
+      "bytes": 402
+    },
+    "rooms/PH-BATH3/board/round-025/_key.json": {
+      "sha256": "4ded47a2399445619f13899b21150cd4a606b93cef192b7ae4ab0785373d08c1",
+      "bytes": 400
+    },
+    "rooms/PH-BATH4/board/round-025/_key.json": {
+      "sha256": "be28dd21688c9972b8049271c7bb26c5dd7fa7baa6e1a6ffb13a08b04c83fdd4",
+      "bytes": 400
+    }
+  },
+  "signed_parents": {
+    "state/ROUND025_PH_THREE_ROOM_PREPARED_NOT_SUBMITTED.json": {
+      "sha256": "9dda72d0c553612abd3de75cebe8feb0167551dda0be35ff9c41ca49dc021d32",
+      "bytes": 5258
+    },
+    "state/ROUND025_REVIEWER21_FIX1_INDEPENDENT_CONTINUE_PREPARED_ONLY.json": {
+      "sha256": "023cd64547521d91f5869f3645cf18cab044ae66e1a92f26f0629d85ff8d2420",
+      "bytes": 1077
+    },
+    "state/ROUND024_AUTHENTIC_FOUR_SEAT_COLLECTION_SCORED_NO_CHAMPIONS.json": {
+      "sha256": "b69c17171493327bc1becfa8b8b81cac82a43ebb2940ce6fe23b7ff701637f43",
+      "bytes": 9498
+    },
+    "state/ROUND025_13_OWNER_SELECTION_CARDS_SHA.json": {
+      "sha256": "3d1d7bcb8ccad6309518a6a82491b2b734abcd040183338a9563c5d8e22a740c",
+      "bytes": 7716
+    }
+  },
+  "source_copy_policy": "BYTE_IDENTICAL_FROM_REVIEWER_CLEARED_FIX1",
+  "allowed_vendors": [
+    "Elm Surfaces",
+    "MSI Surfaces",
+    "Porcelanosa",
+    "Floor & Decor"
+  ],
+  "original_historical_material_usd": 23572.44,
+  "source_waste_already_included_pct": 15,
+  "three_candidates_per_surface_comparisons": "existing room vendor_comparison_R023_current.md; preserve comparison as provisional",
+  "independent_predispatch_reviewer": null,
+  "four_authentic_critic_reports": false,
+  "formal_scores": null,
+  "champion_changes": false,
+  "owner_decision_PH_BATH3_TUB_VS_WALKIN": "UNSELECTED",
+  "owner_decision_PH_BATH3_BASIN": "UNSELECTED",
+  "global_DONE": false,
+  "owner_release": false
+}

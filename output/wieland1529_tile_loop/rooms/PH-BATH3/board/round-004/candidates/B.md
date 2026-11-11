@@ -1,0 +1,25 @@
+# PH-BATH3 — Candidate B — Opal/Sandstone tub surround and Bone floor
+
+**Round 004 / per Penthouse unit; two units.** This specification is a design option for independent evaluation; model geometry, manufacturer compliance, procurement terms and owner approval must be verified.
+
+| Surface | Product / size / finish | Installation and geometry | Historical per-unit cost and quantity | Evidence and hard gate |
+|---|---|---|---|---|
+| Tub surround | ELM Tones Opal 2×20 Glossy | Prior 5.0 ft back, 2.33 ft returns, tiled 7.75 ft above tub deck; 86.2 SF gross with 15% waste. | Carried **86.2 SF/unit** incl. 15% waste; **$6.95/SF**, **$599.09/unit**; Smartsheet row `4724833938636676` | Exact Opal Wet Areas approval unavailable => FAIL for tub walls |
+| Level bathroom floor | ELM Cortar Bone 12×24 Soft | 40.2 SF gross with 15% waste; bath floor only, no inferred sloped pan. | Carried **40.2 SF/unit** incl. 15% waste; **$6.75/SF**, **$271.35/unit**; Smartsheet row `2473034124951428` | Exact wet DCOF >=0.42 unverified => FAIL |
+| Tub niche | ELM Tones Sandstone 2×20 Glossy | 8.63 SF estimated gross, must deduct corresponding field face; sink remains owner-unselected. | Carried **8.63 SF/unit** incl. 15% waste; **$6.95/SF**, **$59.98/unit**; Smartsheet row `1589102831075204` | Sandstone listed Wet Areas; unknown recess returns and sill. |
+
+## Evidence, compatibility and procurement
+- Verified current building model: **NO**. Drawing-derived `geometry.json` dimensions are provisional and cannot be represented as the measured 1529 building; the open model is named 1527 Wieland. No model, floor type, fixture or owner input was changed.
+- Existing carried tile-only historical subtotal **$930.42/unit** from ELM September 3, 2026, and Smartsheet snapshot November 6, 2026; **not** a room budget, supplier reconfirmation or installed cost.
+- Materials are specified for two PH units. Rates exclude final cartons/attic stock, field-to-niche netting, mortar, substrate flatness, waterproof membrane, accessories, grout, trim, freight, tax, labor, current Chicago lot and ETA (all `null`). The 15% waste already exists in carried quantity.
+- Manufacturer application listings are finish/format-specific; collection-level Floors/Walls alone cannot substitute Wet Areas for wet wall, and Daltile 'Target DCOF Wet >=0.42' does not supply a tested exact-finish numeric floor value. Do not treat a fail as release-ready.
+- Compare against 14 Old Town-focused comparable listings from nine buildings in `research/comps/COMPS.md`; Old Town evidence relates to premium bath program, not verified visual tile duplicates. PH target **$2.8M** in owner feedback, comp range **$2.4–$3.2M**.
+- Source: room `geometry.json` / `plumbing.json`, governing v4 handoff and fixture deck, `original Smartsheet quote row references above` quote snapshot, `research/products/`. No owner approval or selection inferred.
+
+## Exact product-use, historic quote and construction review
+
+The historic wet tub field names Tones **Opal 2x20 Glossy**; **exact Opal Wet Areas listing was not found** and must be treated as FAIL in a tub/wet wall pending manufacturer proof, even if the project has an old quote. The separately [Wet Areas-listed Tones Sandstone](../../../../../research/products/elm-tones-sandstone-2x20.md) is shown for the existing niche; its manufacturer approval does **not** transfer to Opal. No alternative finish or owner substitution is included in this specific material scheme. The old full [geometry](../../../geometry.json) is W1 **5.00 ft / 60 in**, returns W2/W3 **2.33 ft / 27.96 in**, tiled **7.75 ft / 93 in** above tub rim, gross source wall **86.2 SF**. The tub back nominal 60-inch width needs a balanced 20-inch course rather than an assumed no-cut fit once grout, actual size and niche penetrations are considered.
+
+The [plumbing source](../../../plumbing.json) includes **Hansgrohe Chrome** shower head 04925000, valve trim 15758001 and a **Delta DT062412 4-in Chrome square tile-in shower drain**; source geometry names a tub alcove. These are conflicting program/rough evidence. Do not add a pan, remove a tub, select a basin or transfer a point-drain SKU to the tub without owner/model clarification. A sink/basin is marked **unselected** in this room. A credible section needs tub-flange waterproofing if tub governs; if a walk-in shower governs, wet wall heights and a newly measured pan, drain offset and small-format mosaic test are mandatory.
+
+Source quote is **86.2 SF Opal wall at $6.95/SF = $599.09**, **8.63 SF Sandstone niche at $6.95/SF = $59.98**, and **40.2 SF Cortar Bone Soft floor at $6.75/SF = $271.35**: carried total **$930.42/unit**. Historic recorded **94.83 SF combined wall+niche gross** is NOT evidence that the niche does or does not overlap the field; deduct measured face when actual opening/back/returns are confirmed. The Bone Soft floor has exact measured wet DCOF **null**. Current Chicago SKU-specific lot/ETA, cartons, grout/edge, waterproofing, installation price and owner cap are null. [OT01–OT05](../../../../../research/comps/COMPS.md) confirm bath program quality, not an Opal tile buyer precedent.

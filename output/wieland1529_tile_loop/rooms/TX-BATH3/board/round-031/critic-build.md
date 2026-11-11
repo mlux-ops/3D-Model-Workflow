@@ -1,0 +1,43 @@
+# R031 independent blind BUILD critique — TX-BATH3
+
+**Seat:** BUILD / tile installer and GC; seat weight 0.25 assigned to prime for later aggregation only. Score **A and B independently** for two physical 207A/207B baths. Five equally counted 1–5 criterion ratings yield an unweighted, exact one-decimal seat arithmetic mean. No champion mapping, prior critiques or other seat scores used.
+
+**Conditional owner program:** **TUB versus WALK-IN remains UNSELECTED**. Own [plumbing.json](../../plumbing.json) lists Brizo Roccesco **Brilliance Black Onyx (BNX)** controls and [Brizo BT062415-BNX 4-in square tile-in POINT shower drain](https://www.brizo.com/bath/product/BT062415-BNX), applicable **only if WALK-IN is selected**. For TUB, no tiled PAN or point shower drain; bathtub model, flange and waste/overflow selection remain open. No tiled ceiling. Drawing-only [geometry.json](../../geometry.json): W1 **5.10 ft**, returns **2.60 ft** each, assumed wall tile height **7.75 ft**, prior LEVEL floor **37 SF**; live drain coordinate, niches and elevations absent. Historical **91.80 gross SF wall + 4.89 gross SF total niche faces + 42.50 gross SF LEVEL** have **15% waste once**. If WALK-IN, PAN area/cut waste must be *separately measured* and added to program scope; do not treat LEVEL as PAN.
+
+## Candidate A — Elm Copper field / Elm Sandstone niche / Luxe Sand LEVEL and conditional POINT PAN
+
+| BUILD criterion | 1–5 | Independent installation evidence |
+|---|---:|---|
+| **1. Exact wet WALL / bath LEVEL / optional shower PAN product eligibility** | **5** | [Elm Tones Copper 2×20](https://www.elmsurfaces.com/product/copper-tones) and [Tones Sandstone 2×20](https://www.elmsurfaces.com/product/sandstone-tones) individually list **Walls + Wet Areas**. Exact [F&D Luxe Sand 24×24 **101317949**](https://www.flooranddecor.com/porcelain-tile/luxe-sand-matte-porcelain-tile-101317949.html) publishes **wet DCOF ≥0.42, Bathroom Floor YES, and separately Shower Floor YES** for the optional installer-cut POINT PAN. TUB branch PAN **N/A**. |
+| **2. Wall substrate, format and setout** | **4** | Same 8.5-mm body for 2×20 Copper/Sandstone reduces mismatch. Horizontal aligned long-stick grid across drawing 5.10-ft back and 2.60-ft returns can be balanced, but exact tile calibration, mounting flatness, 7.75-ft tile height, BNX valve/head penetrations, corner movement joints and edge cuts remain survey-dependent ([geometry.json](../../geometry.json), [plumbing.json](../../plumbing.json)). |
+| **3. Conditional TUB/WALK-IN waterproof and drain execution** | **3** | Under **TUB**, a real tub flange/waste/overflow and membrane detail must be selected; no fabricated POINT PAN. Under **WALK-IN**, Luxe **23.70×23.70-in, 8-mm rectified** has exact shower-floor permission and owner-endorsed large-format installer cuts for a four-plane slope to BNX **BT062415-BNX** POINT. Drain centerline, finish frame/rough depth, slope, curb/threshold, waterproof interface and potential <3-in visible cuts are **unknown**, not an automatic large-format veto. |
+| **4. Niche sill/returns, waterproofing and edge profile** | **3** | Wet-listed Sandstone matches Copper 8.5-mm thickness, but provisional **4.89 gross SF is all niche back/side/head/sill faces combined**, not each. The actual recess, W3 opening credit, membrane corners, positively sloped horizontal sill and exposed profile are unresolved. |
+| **5. Quantities, joints, level floor and program readiness** | **3** | Luxe 24×24 LEVEL meets owner size target. Historical **42.50 gross SF** and 91.80/4.89 wall/niche gross carry original 15% waste once. The conditional WALK-IN must have its own **PAN net/gross and installer-cut allowance**; dry floor tile layout, niche aperture, doorway and threshold measurements are absent. Product pricing does not verify Chicago same-lot stock. |
+
+**BUILD score A:** (5 + 4 + 3 + 3 + 3) ÷ 5 = **3.6 / 5**.
+
+**top_fix A:** Issue two **separate owner-dependent floor/wet-envelope scopes**, measuring tub/flange interfaces under TUB and the **BNX POINT location plus four-plane Luxe cuts** under WALK-IN; preserve the single original LEVEL floor area.
+
+**hard gate_flags A:** **No confirmed product hard-gate failure**: both exact Elm wet WALL finishes listed; Luxe **101317949** exact wet DCOF and independent Shower Floor listing published; no recorded owner veto, selected discontinuation or BNX finish clash. **OPEN rather than gate fail:** TUB-versus-WALK-IN owner choice, tub SKU/rough, POINT waterproof assembly and possible under-3-in slivers, unverified niche/sill/edges, Chicago lots and owner budget/landed costs.
+
+**confidence A:** **Medium** on exact product qualifications; **low-to-medium** on unresolved physical program.
+
+## Candidate B — F&D La Belle Antique Blue field / La Belle Purity niche / Luxe Sand LEVEL and conditional POINT PAN
+
+| BUILD criterion | 1–5 | Independent installation evidence |
+|---|---:|---|
+| **1. Exact wet WALL / bath LEVEL / optional shower PAN product eligibility** | **5** | Exact [La Belle Antique Blue 3×12 **100507706**](https://www.flooranddecor.com/ceramic-tile/la-belle-antique-blue-high-gloss-ceramic-tile-100507706.html) and [La Belle Purity **100507722**](https://www.flooranddecor.com/ceramic-tile/la-belle-purity-high-gloss-ceramic-tile-100507722.html) show **Shower Walls YES, Shower Floors NO**, correctly confined to field walls/niche. Exact [Luxe Sand **101317949**](https://www.flooranddecor.com/porcelain-tile/luxe-sand-matte-porcelain-tile-101317949.html) alone is specified LEVEL and conditional PAN, with **wet DCOF ≥0.42, Bathroom Floor YES and Shower Floor YES**. |
+| **2. Wall substrate, format and setout** | **4** | 3×12 glazed field modules provide relatively flexible cut positions around BNX shower controls, 5.10-ft W1 and 2.60-ft returns; aligned courses avoid 24×48 lippage burdens. Antique Blue exact body gauge is **not established**, while pressed-edge/tile caliber, field grout and penetration spacing remain unknown. |
+| **3. Conditional TUB/WALK-IN waterproof and drain execution** | **3** | Same owner-dependent branches: **TUB has no PAN and requires a selected tub flange/waste/overflow**; **WALK-IN** uses only Luxe Sand 24×24, whose maker Shower Floor permission and wet DCOF are supported, cut into four planes toward the BNX **4-in POINT**. Tile-in frame, rough/membrane seal, substrate fall, drain center and <3-in visible cut widths lack measurements; no general prohibition on large-format slope. |
+| **4. Niche sill/returns, waterproofing and edge profile** | **3** | La Belle Purity 3×12 is more convenient for narrow return pieces than long sticks, and same family offers potential grout coordination; however **Antique Blue body thickness is unverified** versus Purity's 8.5 mm. Original **4.89 gross SF** covers all niche faces; opening deduction, positive sill fall, trim section, membrane corners and junction grout remain pending. |
+| **5. Quantities, joints, level floor and program readiness** | **3** | One verified **24×24 Luxe LEVEL** and separate optional PAN concept avoid substituting wall-only La Belle into floor. The original **42.50 gross SF LEVEL** carries 15% once; actual niche opening, threshold, LEVEL geometry and branch-specific PAN waste are unmeasured, while product-specific Kirkwood retail cannot establish Chicago lot. |
+
+**BUILD score B:** (5 + 4 + 3 + 3 + 3) ÷ 5 = **3.6 / 5**.
+
+**top_fix B:** Verify **Antique Blue tile thickness/calibration at the Purity niche transition**, and establish the owner's TUB/WALK-IN branch with a separate BNX 4-in POINT cut/slope plan only if selected.
+
+**hard gate_flags B:** **No selected-product hard-gate failure established.** La Belle wet-wall listings are individual, and **Shower Floor NO does not apply to their wall/niche-only roles**; Luxe independently clears LEVEL/conditional PAN wet DCOF and Shower Floor. **OPEN:** owner program/tub waste, actual POINT slope/rough/membrane and 3-in cuts, niche gauge/sill and profile, Chicago lots, budget/landed pricing. No product discontinued or BNX finish clash evidenced.
+
+**confidence B:** **Medium** on product qualification; **low-to-medium** on conditional installation geometry.
+
+**Evidence/pricing boundary:** own R031 A/B, geometry.json, plumbing.json, exact linked vendor pages; permitted research/products/elm-tones-copper-2x20.md, elm-tones-sandstone-2x20.md, R030_FIVE_SKU_LIVE_STORE_CONTEXT_VERIFICATION_20261107.md; inputs/TRADE_QUOTES.md. Elm Copper/Sandstone **$6.95/SF** is **2026-09-04 same-project quote**. F&D La Belle **$5.56/SF**, Luxe **$3.49/SF** are **2026-11-07 Kirkwood GA retail**; no Chicago stock, program choice or pan area inferred. No cross-seat championship decision.

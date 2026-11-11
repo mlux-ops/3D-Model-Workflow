@@ -1,0 +1,1552 @@
+{
+  "operation_id": "a1ed1b4c-3dd6-471b-90d9-b1ca9de3d7d1",
+  "request": {
+    "path": "E:\\Claude\\3D-Model-Workflow\\.claude\\worktrees\\native-revit-workflow-8fafd0\\output\\1527_wieland\\kitchens\\scripts\\bath_audit_a1ed1b4c-3dd6-471b-90d9-b1ca9de3d7d1_inspect_room_corrections.py",
+    "args": {
+      "expected_pid": 31808,
+      "session_id": "7f6f24a2-cc0d-4567-8beb-02467aba0ced",
+      "discovery_operation": "8170b477-45b4-45cb-b1bc-635648df82ea",
+      "guard_path": "H:\\Games\\3D Modeling Workflows\\3D Model Workflow\\output\\wieland-floorplan-corrections-20261108\\audit_guard.py",
+      "operation_id": "a1ed1b4c-3dd6-471b-90d9-b1ca9de3d7d1"
+    }
+  },
+  "state": "returned",
+  "response": {
+    "log": [],
+    "ok": true,
+    "result": {
+      "targets": [
+        {
+          "existing_room": 16738657,
+          "number": "203A",
+          "point": [
+            -513.304602,
+            210.850045
+          ]
+        },
+        {
+          "existing_room": null,
+          "number": "203B",
+          "point": [
+            -552.096269,
+            210.850045
+          ]
+        }
+      ],
+      "counts": {
+        "circuits": 2,
+        "tags": 4
+      },
+      "tags": [
+        {
+          "id": 15921442,
+          "room_id": 15921441,
+          "number": "310A",
+          "view": 10539751,
+          "point": [
+            -515.3592152531634,
+            241.67305526332217,
+            33.999999999999666
+          ]
+        },
+        {
+          "id": 15921445,
+          "room_id": 15921444,
+          "number": "310B",
+          "view": 10539751,
+          "point": [
+            -550.1619569231065,
+            241.6883101460016,
+            0.0
+          ]
+        },
+        {
+          "id": 15921448,
+          "room_id": 15921447,
+          "number": "311B",
+          "view": 10539751,
+          "point": [
+            -549.9681948380787,
+            236.77884951726008,
+            0.0
+          ]
+        },
+        {
+          "id": 15921451,
+          "room_id": 15921450,
+          "number": "311A",
+          "view": 10539751,
+          "point": [
+            -515.1654531681355,
+            236.820516183927,
+            0.0
+          ]
+        }
+      ],
+      "warnings": [
+        {
+          "description": "Some columns in the project are excluded from the graphical column schedule view.",
+          "elements": [
+            11971993
+          ],
+          "id": "682db07c-3e59-4576-9c0d-bb03011e128e"
+        },
+        {
+          "description": "Some columns in the project are excluded from the graphical column schedule view.",
+          "elements": [
+            11971994
+          ],
+          "id": "682db07c-3e59-4576-9c0d-bb03011e128e"
+        },
+        {
+          "description": "Elements have duplicate \"Number\" values.",
+          "elements": [
+            8500515,
+            8501361
+          ],
+          "id": "6e1efefe-c8e0-483d-8482-150b9f1da21a"
+        },
+        {
+          "description": "Elements have duplicate \"Number\" values.",
+          "elements": [
+            10540416,
+            15882897
+          ],
+          "id": "6e1efefe-c8e0-483d-8482-150b9f1da21a"
+        },
+        {
+          "description": "Elements have duplicate \"Number\" values.",
+          "elements": [
+            10712004,
+            15879014
+          ],
+          "id": "6e1efefe-c8e0-483d-8482-150b9f1da21a"
+        },
+        {
+          "description": "Elements have duplicate \"Number\" values.",
+          "elements": [
+            15879008,
+            15879471
+          ],
+          "id": "6e1efefe-c8e0-483d-8482-150b9f1da21a"
+        },
+        {
+          "description": "Elements have duplicate \"Number\" values.",
+          "elements": [
+            15929091,
+            16416215
+          ],
+          "id": "6e1efefe-c8e0-483d-8482-150b9f1da21a"
+        },
+        {
+          "description": "Elements have duplicate \"Number\" values.",
+          "elements": [
+            16290125,
+            16299513
+          ],
+          "id": "6e1efefe-c8e0-483d-8482-150b9f1da21a"
+        },
+        {
+          "description": "Elements have duplicate \"Type Mark\" values.",
+          "elements": [
+            205988,
+            12624391
+          ],
+          "id": "6e1efefe-c8e0-483d-8482-150b9f1da21a"
+        },
+        {
+          "description": "Elements have duplicate \"Type Mark\" values.",
+          "elements": [
+            1346226,
+            12590278
+          ],
+          "id": "6e1efefe-c8e0-483d-8482-150b9f1da21a"
+        },
+        {
+          "description": "Elements have duplicate \"Type Mark\" values.",
+          "elements": [
+            2212668,
+            16362753
+          ],
+          "id": "6e1efefe-c8e0-483d-8482-150b9f1da21a"
+        },
+        {
+          "description": "Elements have duplicate \"Type Mark\" values.",
+          "elements": [
+            7508704,
+            15930229
+          ],
+          "id": "6e1efefe-c8e0-483d-8482-150b9f1da21a"
+        },
+        {
+          "description": "Elements have duplicate \"Type Mark\" values.",
+          "elements": [
+            7665663,
+            16777330
+          ],
+          "id": "6e1efefe-c8e0-483d-8482-150b9f1da21a"
+        },
+        {
+          "description": "Elements have duplicate \"Type Mark\" values.",
+          "elements": [
+            10990177,
+            11026299
+          ],
+          "id": "6e1efefe-c8e0-483d-8482-150b9f1da21a"
+        },
+        {
+          "description": "Elements have duplicate \"Type Mark\" values.",
+          "elements": [
+            11034480,
+            11297390
+          ],
+          "id": "6e1efefe-c8e0-483d-8482-150b9f1da21a"
+        },
+        {
+          "description": "Elements have duplicate \"Type Mark\" values.",
+          "elements": [
+            11730423,
+            12094214
+          ],
+          "id": "6e1efefe-c8e0-483d-8482-150b9f1da21a"
+        },
+        {
+          "description": "Elements have duplicate \"Type Mark\" values.",
+          "elements": [
+            15964111,
+            18549724
+          ],
+          "id": "6e1efefe-c8e0-483d-8482-150b9f1da21a"
+        },
+        {
+          "description": "Elements have duplicate \"Type Mark\" values.",
+          "elements": [
+            16065182,
+            18057818
+          ],
+          "id": "6e1efefe-c8e0-483d-8482-150b9f1da21a"
+        },
+        {
+          "description": "Elements have duplicate \"Type Mark\" values.",
+          "elements": [
+            16441727,
+            18149576
+          ],
+          "id": "6e1efefe-c8e0-483d-8482-150b9f1da21a"
+        },
+        {
+          "description": "Elements have duplicate \"Type Mark\" values.",
+          "elements": [
+            16558080,
+            18013142
+          ],
+          "id": "6e1efefe-c8e0-483d-8482-150b9f1da21a"
+        },
+        {
+          "description": "Elements have duplicate \"Type Mark\" values.",
+          "elements": [
+            17552550,
+            18152572
+          ],
+          "id": "6e1efefe-c8e0-483d-8482-150b9f1da21a"
+        },
+        {
+          "description": "Elements have duplicate \"Type Mark\" values.",
+          "elements": [
+            17786251,
+            18036892
+          ],
+          "id": "6e1efefe-c8e0-483d-8482-150b9f1da21a"
+        },
+        {
+          "description": "Elements have duplicate \"Type Mark\" values.",
+          "elements": [
+            1645281,
+            11026927,
+            16264543
+          ],
+          "id": "6e1efefe-c8e0-483d-8482-150b9f1da21a"
+        },
+        {
+          "description": "Elements have duplicate \"Type Mark\" values.",
+          "elements": [
+            3073147,
+            5286573,
+            6666270
+          ],
+          "id": "6e1efefe-c8e0-483d-8482-150b9f1da21a"
+        },
+        {
+          "description": "Elements have duplicate \"Type Mark\" values.",
+          "elements": [
+            3271585,
+            5286624,
+            12203577
+          ],
+          "id": "6e1efefe-c8e0-483d-8482-150b9f1da21a"
+        },
+        {
+          "description": "Elements have duplicate \"Type Mark\" values.",
+          "elements": [
+            11014571,
+            11080030,
+            11657513
+          ],
+          "id": "6e1efefe-c8e0-483d-8482-150b9f1da21a"
+        },
+        {
+          "description": "Elements have duplicate \"Type Mark\" values.",
+          "elements": [
+            16441716,
+            16446998,
+            18075535
+          ],
+          "id": "6e1efefe-c8e0-483d-8482-150b9f1da21a"
+        },
+        {
+          "description": "Elements have duplicate \"Type Mark\" values.",
+          "elements": [
+            16474258,
+            16998049,
+            17207852
+          ],
+          "id": "6e1efefe-c8e0-483d-8482-150b9f1da21a"
+        },
+        {
+          "description": "Elements have duplicate \"Type Mark\" values.",
+          "elements": [
+            16779311,
+            17546667,
+            18727345
+          ],
+          "id": "6e1efefe-c8e0-483d-8482-150b9f1da21a"
+        },
+        {
+          "description": "Elements have duplicate \"Type Mark\" values.",
+          "elements": [
+            16986524,
+            16994087,
+            17005133
+          ],
+          "id": "6e1efefe-c8e0-483d-8482-150b9f1da21a"
+        },
+        {
+          "description": "Elements have duplicate \"Type Mark\" values.",
+          "elements": [
+            9896463,
+            10811000,
+            11658189,
+            12451270
+          ],
+          "id": "6e1efefe-c8e0-483d-8482-150b9f1da21a"
+        },
+        {
+          "description": "Elements have duplicate \"Mark\" values.",
+          "elements": [
+            16949395,
+            16951721
+          ],
+          "id": "6e1efefe-c8e0-483d-8482-150b9f1da21a"
+        },
+        {
+          "description": "A wall and a room separation line overlap. One of them may be ignored when Revit finds room boundaries. Shorten or delete the room separation line to remove the overlap.",
+          "elements": [
+            10534415,
+            15880927
+          ],
+          "id": "f7b3a015-c3eb-4a3f-b345-c474ec07d43f"
+        },
+        {
+          "description": "A wall and a room separation line overlap. One of them may be ignored when Revit finds room boundaries. Shorten or delete the room separation line to remove the overlap.",
+          "elements": [
+            10534418,
+            15880926
+          ],
+          "id": "f7b3a015-c3eb-4a3f-b345-c474ec07d43f"
+        },
+        {
+          "description": "Highlighted walls overlap. One of them may be ignored when Revit finds room boundaries. Use Cut Geometry to embed one wall within the other.",
+          "elements": [
+            10534455,
+            11235693
+          ],
+          "id": "988a6cb2-7050-4a5c-a946-60d652df66c3"
+        },
+        {
+          "description": "Highlighted walls overlap. One of them may be ignored when Revit finds room boundaries. Use Cut Geometry to embed one wall within the other.",
+          "elements": [
+            10534455,
+            12708175
+          ],
+          "id": "988a6cb2-7050-4a5c-a946-60d652df66c3"
+        },
+        {
+          "description": "A wall and a room separation line overlap. One of them may be ignored when Revit finds room boundaries. Shorten or delete the room separation line to remove the overlap.",
+          "elements": [
+            10534455,
+            15879619
+          ],
+          "id": "f7b3a015-c3eb-4a3f-b345-c474ec07d43f"
+        },
+        {
+          "description": "A wall and a room separation line overlap. One of them may be ignored when Revit finds room boundaries. Shorten or delete the room separation line to remove the overlap.",
+          "elements": [
+            10534455,
+            15921473
+          ],
+          "id": "f7b3a015-c3eb-4a3f-b345-c474ec07d43f"
+        },
+        {
+          "description": "Highlighted walls overlap. One of them may be ignored when Revit finds room boundaries. Use Cut Geometry to embed one wall within the other.",
+          "elements": [
+            10539382,
+            12634251
+          ],
+          "id": "988a6cb2-7050-4a5c-a946-60d652df66c3"
+        },
+        {
+          "description": "Highlighted walls overlap. One of them may be ignored when Revit finds room boundaries. Use Cut Geometry to embed one wall within the other.",
+          "elements": [
+            10541397,
+            11990922
+          ],
+          "id": "988a6cb2-7050-4a5c-a946-60d652df66c3"
+        },
+        {
+          "description": "Highlighted walls overlap. One of them may be ignored when Revit finds room boundaries. Use Cut Geometry to embed one wall within the other.",
+          "elements": [
+            10543514,
+            17182861
+          ],
+          "id": "988a6cb2-7050-4a5c-a946-60d652df66c3"
+        },
+        {
+          "description": "Highlighted walls overlap. One of them may be ignored when Revit finds room boundaries. Use Cut Geometry to embed one wall within the other.",
+          "elements": [
+            10600427,
+            11972181
+          ],
+          "id": "988a6cb2-7050-4a5c-a946-60d652df66c3"
+        },
+        {
+          "description": "Highlighted walls overlap. One of them may be ignored when Revit finds room boundaries. Use Cut Geometry to embed one wall within the other.",
+          "elements": [
+            10608960,
+            11285775
+          ],
+          "id": "988a6cb2-7050-4a5c-a946-60d652df66c3"
+        },
+        {
+          "description": "A wall and a room separation line overlap. One of them may be ignored when Revit finds room boundaries. Shorten or delete the room separation line to remove the overlap.",
+          "elements": [
+            10608960,
+            16869992
+          ],
+          "id": "f7b3a015-c3eb-4a3f-b345-c474ec07d43f"
+        },
+        {
+          "description": "Highlighted walls overlap. One of them may be ignored when Revit finds room boundaries. Use Cut Geometry to embed one wall within the other or tab-select one of the grouped overlapping walls and exclude it from the group instance.",
+          "elements": [
+            10608960,
+            18798773
+          ],
+          "id": "988a6cb2-7050-4a5c-a946-60d652df66c3"
+        },
+        {
+          "description": "Highlighted walls overlap. One of them may be ignored when Revit finds room boundaries. Use Cut Geometry to embed one wall within the other.",
+          "elements": [
+            10735026,
+            10895001
+          ],
+          "id": "988a6cb2-7050-4a5c-a946-60d652df66c3"
+        },
+        {
+          "description": "A wall and a room separation line overlap. One of them may be ignored when Revit finds room boundaries. Shorten or delete the room separation line to remove the overlap.",
+          "elements": [
+            10735026,
+            15880929
+          ],
+          "id": "f7b3a015-c3eb-4a3f-b345-c474ec07d43f"
+        },
+        {
+          "description": "Highlighted walls overlap. One of them may be ignored when Revit finds room boundaries. Use Cut Geometry to embed one wall within the other.",
+          "elements": [
+            10735248,
+            10895002
+          ],
+          "id": "988a6cb2-7050-4a5c-a946-60d652df66c3"
+        },
+        {
+          "description": "A wall and a room separation line overlap. One of them may be ignored when Revit finds room boundaries. Shorten or delete the room separation line to remove the overlap.",
+          "elements": [
+            10741762,
+            15408736
+          ],
+          "id": "f7b3a015-c3eb-4a3f-b345-c474ec07d43f"
+        },
+        {
+          "description": "A wall and a room separation line overlap. One of them may be ignored when Revit finds room boundaries. Shorten or delete the room separation line to remove the overlap.",
+          "elements": [
+            10741762,
+            16414456
+          ],
+          "id": "f7b3a015-c3eb-4a3f-b345-c474ec07d43f"
+        },
+        {
+          "description": "Highlighted walls overlap. One of them may be ignored when Revit finds room boundaries. Use Cut Geometry to embed one wall within the other.",
+          "elements": [
+            10808894,
+            17492700
+          ],
+          "id": "988a6cb2-7050-4a5c-a946-60d652df66c3"
+        },
+        {
+          "description": "Highlighted walls overlap. One of them may be ignored when Revit finds room boundaries. Use Cut Geometry to embed one wall within the other.",
+          "elements": [
+            10812435,
+            10915013
+          ],
+          "id": "988a6cb2-7050-4a5c-a946-60d652df66c3"
+        },
+        {
+          "description": "Highlighted walls overlap. One of them may be ignored when Revit finds room boundaries. Use Cut Geometry to embed one wall within the other.",
+          "elements": [
+            10812435,
+            16376933
+          ],
+          "id": "988a6cb2-7050-4a5c-a946-60d652df66c3"
+        },
+        {
+          "description": "A wall and a room separation line overlap. One of them may be ignored when Revit finds room boundaries. Shorten or delete the room separation line to remove the overlap.",
+          "elements": [
+            10812435,
+            16417138
+          ],
+          "id": "f7b3a015-c3eb-4a3f-b345-c474ec07d43f"
+        },
+        {
+          "description": "A wall and a room separation line overlap. One of them may be ignored when Revit finds room boundaries. Shorten or delete the room separation line to remove the overlap.",
+          "elements": [
+            10835791,
+            15879621
+          ],
+          "id": "f7b3a015-c3eb-4a3f-b345-c474ec07d43f"
+        },
+        {
+          "description": "Highlighted walls overlap. One of them may be ignored when Revit finds room boundaries. Use Cut Geometry to embed one wall within the other.",
+          "elements": [
+            10855522,
+            15408736
+          ],
+          "id": "988a6cb2-7050-4a5c-a946-60d652df66c3"
+        },
+        {
+          "description": "A wall and a room separation line overlap. One of them may be ignored when Revit finds room boundaries. Shorten or delete the room separation line to remove the overlap.",
+          "elements": [
+            10870528,
+            15880870
+          ],
+          "id": "f7b3a015-c3eb-4a3f-b345-c474ec07d43f"
+        },
+        {
+          "description": "Highlighted walls overlap. One of them may be ignored when Revit finds room boundaries. Use Cut Geometry to embed one wall within the other.",
+          "elements": [
+            10870528,
+            16414456
+          ],
+          "id": "988a6cb2-7050-4a5c-a946-60d652df66c3"
+        },
+        {
+          "description": "Highlighted walls overlap. One of them may be ignored when Revit finds room boundaries. Use Cut Geometry to embed one wall within the other.",
+          "elements": [
+            10870528,
+            16437696
+          ],
+          "id": "988a6cb2-7050-4a5c-a946-60d652df66c3"
+        },
+        {
+          "description": "A wall and a room separation line overlap. One of them may be ignored when Revit finds room boundaries. Shorten or delete the room separation line to remove the overlap.",
+          "elements": [
+            10870528,
+            16739327
+          ],
+          "id": "f7b3a015-c3eb-4a3f-b345-c474ec07d43f"
+        },
+        {
+          "description": "A wall and a room separation line overlap. One of them may be ignored when Revit finds room boundaries. Shorten or delete the room separation line to remove the overlap.",
+          "elements": [
+            10870528,
+            16869883
+          ],
+          "id": "f7b3a015-c3eb-4a3f-b345-c474ec07d43f"
+        },
+        {
+          "description": "Highlighted walls overlap. One of them may be ignored when Revit finds room boundaries. Use Cut Geometry to embed one wall within the other.",
+          "elements": [
+            10889683,
+            11660353
+          ],
+          "id": "988a6cb2-7050-4a5c-a946-60d652df66c3"
+        },
+        {
+          "description": "A wall and a room separation line overlap. One of them may be ignored when Revit finds room boundaries. Shorten or delete the room separation line to remove the overlap.",
+          "elements": [
+            10900729,
+            16417135
+          ],
+          "id": "f7b3a015-c3eb-4a3f-b345-c474ec07d43f"
+        },
+        {
+          "description": "A wall and a room separation line overlap. One of them may be ignored when Revit finds room boundaries. Shorten or delete the room separation line to remove the overlap.",
+          "elements": [
+            10937080,
+            15921472
+          ],
+          "id": "f7b3a015-c3eb-4a3f-b345-c474ec07d43f"
+        },
+        {
+          "description": "Highlighted walls overlap. One of them may be ignored when Revit finds room boundaries. Use Cut Geometry to embed one wall within the other.",
+          "elements": [
+            10952463,
+            16083944
+          ],
+          "id": "988a6cb2-7050-4a5c-a946-60d652df66c3"
+        },
+        {
+          "description": "Highlighted walls overlap. One of them may be ignored when Revit finds room boundaries. Use Cut Geometry to embed one wall within the other.",
+          "elements": [
+            10954367,
+            15803346
+          ],
+          "id": "988a6cb2-7050-4a5c-a946-60d652df66c3"
+        },
+        {
+          "description": "A wall and a room separation line overlap. One of them may be ignored when Revit finds room boundaries. Shorten or delete the room separation line to remove the overlap.",
+          "elements": [
+            10954367,
+            15880108
+          ],
+          "id": "f7b3a015-c3eb-4a3f-b345-c474ec07d43f"
+        },
+        {
+          "description": "A wall and a room separation line overlap. One of them may be ignored when Revit finds room boundaries. Shorten or delete the room separation line to remove the overlap.",
+          "elements": [
+            10954367,
+            15881525
+          ],
+          "id": "f7b3a015-c3eb-4a3f-b345-c474ec07d43f"
+        },
+        {
+          "description": "Highlighted walls overlap. One of them may be ignored when Revit finds room boundaries. Use Cut Geometry to embed one wall within the other.",
+          "elements": [
+            10954367,
+            16961567
+          ],
+          "id": "988a6cb2-7050-4a5c-a946-60d652df66c3"
+        },
+        {
+          "description": "Highlighted walls overlap. One of them may be ignored when Revit finds room boundaries. Use Cut Geometry to embed one wall within the other.",
+          "elements": [
+            11118145,
+            16376933
+          ],
+          "id": "988a6cb2-7050-4a5c-a946-60d652df66c3"
+        },
+        {
+          "description": "Highlighted walls overlap. One of them may be ignored when Revit finds room boundaries. Use Cut Geometry to embed one wall within the other or tab-select one of the grouped overlapping walls and exclude it from the group instance.",
+          "elements": [
+            11285775,
+            18798112
+          ],
+          "id": "988a6cb2-7050-4a5c-a946-60d652df66c3"
+        },
+        {
+          "description": "Highlighted walls overlap. One of them may be ignored when Revit finds room boundaries. Use Cut Geometry to embed one wall within the other or tab-select one of the grouped overlapping walls and exclude it from the group instance.",
+          "elements": [
+            11285775,
+            18798773
+          ],
+          "id": "988a6cb2-7050-4a5c-a946-60d652df66c3"
+        },
+        {
+          "description": "Highlighted walls overlap. One of them may be ignored when Revit finds room boundaries. Use Cut Geometry to embed one wall within the other.",
+          "elements": [
+            11660353,
+            14399727
+          ],
+          "id": "988a6cb2-7050-4a5c-a946-60d652df66c3"
+        },
+        {
+          "description": "A wall and a room separation line overlap. One of them may be ignored when Revit finds room boundaries. Shorten or delete the room separation line to remove the overlap.",
+          "elements": [
+            11660353,
+            15879621
+          ],
+          "id": "f7b3a015-c3eb-4a3f-b345-c474ec07d43f"
+        },
+        {
+          "description": "A wall and a room separation line overlap. One of them may be ignored when Revit finds room boundaries. Shorten or delete the room separation line to remove the overlap.",
+          "elements": [
+            11660353,
+            15921475
+          ],
+          "id": "f7b3a015-c3eb-4a3f-b345-c474ec07d43f"
+        },
+        {
+          "description": "A wall and a room separation line overlap. One of them may be ignored when Revit finds room boundaries. Shorten or delete the room separation line to remove the overlap.",
+          "elements": [
+            11966943,
+            16417137
+          ],
+          "id": "f7b3a015-c3eb-4a3f-b345-c474ec07d43f"
+        },
+        {
+          "description": "A wall and a room separation line overlap. One of them may be ignored when Revit finds room boundaries. Shorten or delete the room separation line to remove the overlap.",
+          "elements": [
+            11967335,
+            16417115
+          ],
+          "id": "f7b3a015-c3eb-4a3f-b345-c474ec07d43f"
+        },
+        {
+          "description": "Highlighted walls overlap. One of them may be ignored when Revit finds room boundaries. Use Cut Geometry to embed one wall within the other.",
+          "elements": [
+            11972181,
+            11993635
+          ],
+          "id": "988a6cb2-7050-4a5c-a946-60d652df66c3"
+        },
+        {
+          "description": "Highlighted walls overlap. One of them may be ignored when Revit finds room boundaries. Use Cut Geometry to embed one wall within the other.",
+          "elements": [
+            11972181,
+            16013472
+          ],
+          "id": "988a6cb2-7050-4a5c-a946-60d652df66c3"
+        },
+        {
+          "description": "A wall and a room separation line overlap. One of them may be ignored when Revit finds room boundaries. Shorten or delete the room separation line to remove the overlap.",
+          "elements": [
+            11973898,
+            15879619
+          ],
+          "id": "f7b3a015-c3eb-4a3f-b345-c474ec07d43f"
+        },
+        {
+          "description": "Highlighted walls overlap. One of them may be ignored when Revit finds room boundaries. Use Cut Geometry to embed one wall within the other.",
+          "elements": [
+            11974259,
+            11993635
+          ],
+          "id": "988a6cb2-7050-4a5c-a946-60d652df66c3"
+        },
+        {
+          "description": "Highlighted walls overlap. One of them may be ignored when Revit finds room boundaries. Use Cut Geometry to embed one wall within the other.",
+          "elements": [
+            11974259,
+            16013472
+          ],
+          "id": "988a6cb2-7050-4a5c-a946-60d652df66c3"
+        },
+        {
+          "description": "A wall and a room separation line overlap. One of them may be ignored when Revit finds room boundaries. Shorten or delete the room separation line to remove the overlap.",
+          "elements": [
+            11974259,
+            16417137
+          ],
+          "id": "f7b3a015-c3eb-4a3f-b345-c474ec07d43f"
+        },
+        {
+          "description": "Highlighted walls overlap. One of them may be ignored when Revit finds room boundaries. Use Cut Geometry to embed one wall within the other.",
+          "elements": [
+            11993635,
+            16013472
+          ],
+          "id": "988a6cb2-7050-4a5c-a946-60d652df66c3"
+        },
+        {
+          "description": "A wall and a room separation line overlap. One of them may be ignored when Revit finds room boundaries. Shorten or delete the room separation line to remove the overlap.",
+          "elements": [
+            12017327,
+            16306834
+          ],
+          "id": "f7b3a015-c3eb-4a3f-b345-c474ec07d43f"
+        },
+        {
+          "description": "A wall and a room separation line overlap. One of them may be ignored when Revit finds room boundaries. Shorten or delete the room separation line to remove the overlap.",
+          "elements": [
+            12017327,
+            16449490
+          ],
+          "id": "f7b3a015-c3eb-4a3f-b345-c474ec07d43f"
+        },
+        {
+          "description": "Highlighted walls overlap. One of them may be ignored when Revit finds room boundaries. Use Cut Geometry to embed one wall within the other or tab-select one of the grouped overlapping walls and exclude it from the group instance.",
+          "elements": [
+            12030727,
+            12636082
+          ],
+          "id": "988a6cb2-7050-4a5c-a946-60d652df66c3"
+        },
+        {
+          "description": "Highlighted walls overlap. One of them may be ignored when Revit finds room boundaries. Use Cut Geometry to embed one wall within the other or tab-select one of the grouped overlapping walls and exclude it from the group instance.",
+          "elements": [
+            12030733,
+            18144936
+          ],
+          "id": "988a6cb2-7050-4a5c-a946-60d652df66c3"
+        },
+        {
+          "description": "Highlighted walls overlap. One of them may be ignored when Revit finds room boundaries. Use Cut Geometry to embed one wall within the other or tab-select one of the grouped overlapping walls and exclude it from the group instance.",
+          "elements": [
+            12030749,
+            16306745
+          ],
+          "id": "988a6cb2-7050-4a5c-a946-60d652df66c3"
+        },
+        {
+          "description": "Highlighted walls overlap. One of them may be ignored when Revit finds room boundaries. Use Cut Geometry to embed one wall within the other or tab-select one of the grouped overlapping walls and exclude it from the group instance.",
+          "elements": [
+            12030752,
+            16306692
+          ],
+          "id": "988a6cb2-7050-4a5c-a946-60d652df66c3"
+        },
+        {
+          "description": "A wall and a room separation line overlap. One of them may be ignored when Revit finds room boundaries. Shorten or delete the room separation line to remove the overlap. You can tab-select one of the overlapping elements to exclude it from the group instance.",
+          "elements": [
+            12030763,
+            16306830
+          ],
+          "id": "f7b3a015-c3eb-4a3f-b345-c474ec07d43f"
+        },
+        {
+          "description": "Highlighted walls overlap. One of them may be ignored when Revit finds room boundaries. Use Cut Geometry to embed one wall within the other or tab-select one of the grouped overlapping walls and exclude it from the group instance.",
+          "elements": [
+            12030763,
+            17123680
+          ],
+          "id": "988a6cb2-7050-4a5c-a946-60d652df66c3"
+        },
+        {
+          "description": "A wall and a room separation line overlap. One of them may be ignored when Revit finds room boundaries. Shorten or delete the room separation line to remove the overlap.",
+          "elements": [
+            12271819,
+            15880108
+          ],
+          "id": "f7b3a015-c3eb-4a3f-b345-c474ec07d43f"
+        },
+        {
+          "description": "Highlighted lines overlap. Lines may not form closed loops.",
+          "elements": [
+            12660208,
+            14326827,
+            14328012
+          ],
+          "id": "6891f0e6-5858-4e2f-bb34-801e0b87f60d"
+        },
+        {
+          "description": "Highlighted lines overlap. Lines may not form closed loops.",
+          "elements": [
+            15414256,
+            15414293,
+            15414319
+          ],
+          "id": "6891f0e6-5858-4e2f-bb34-801e0b87f60d"
+        },
+        {
+          "description": "Highlighted lines overlap. Lines may not form closed loops.",
+          "elements": [
+            15414248,
+            15414378,
+            15414381
+          ],
+          "id": "6891f0e6-5858-4e2f-bb34-801e0b87f60d"
+        },
+        {
+          "description": "There are identical instances in the same place. This will result in double counting in schedules.",
+          "elements": [
+            15744361,
+            15891400
+          ],
+          "id": "b4176cef-6086-45a8-a066-c3fd424c9412"
+        },
+        {
+          "description": "A wall and a room separation line overlap. One of them may be ignored when Revit finds room boundaries. Shorten or delete the room separation line to remove the overlap.",
+          "elements": [
+            15802223,
+            15881407
+          ],
+          "id": "f7b3a015-c3eb-4a3f-b345-c474ec07d43f"
+        },
+        {
+          "description": "A wall and a room separation line overlap. One of them may be ignored when Revit finds room boundaries. Shorten or delete the room separation line to remove the overlap.",
+          "elements": [
+            15802225,
+            15881322
+          ],
+          "id": "f7b3a015-c3eb-4a3f-b345-c474ec07d43f"
+        },
+        {
+          "description": "A wall and a room separation line overlap. One of them may be ignored when Revit finds room boundaries. Shorten or delete the room separation line to remove the overlap.",
+          "elements": [
+            15803155,
+            15881471
+          ],
+          "id": "f7b3a015-c3eb-4a3f-b345-c474ec07d43f"
+        },
+        {
+          "description": "A wall and a room separation line overlap. One of them may be ignored when Revit finds room boundaries. Shorten or delete the room separation line to remove the overlap.",
+          "elements": [
+            15803346,
+            15880108
+          ],
+          "id": "f7b3a015-c3eb-4a3f-b345-c474ec07d43f"
+        },
+        {
+          "description": "A wall and a room separation line overlap. One of them may be ignored when Revit finds room boundaries. Shorten or delete the room separation line to remove the overlap.",
+          "elements": [
+            15803346,
+            15881525
+          ],
+          "id": "f7b3a015-c3eb-4a3f-b345-c474ec07d43f"
+        },
+        {
+          "description": "Highlighted room separation lines overlap. One of them may be ignored when Revit finds room boundaries. Delete one of the lines.",
+          "elements": [
+            15879618,
+            15882171
+          ],
+          "id": "374396c0-984d-4f72-a081-30ab7dacb66d"
+        },
+        {
+          "description": "A wall and a room separation line overlap. One of them may be ignored when Revit finds room boundaries. Shorten or delete the room separation line to remove the overlap.",
+          "elements": [
+            15879618,
+            16010104
+          ],
+          "id": "f7b3a015-c3eb-4a3f-b345-c474ec07d43f"
+        },
+        {
+          "description": "Highlighted room separation lines overlap. One of them may be ignored when Revit finds room boundaries. Delete one of the lines.",
+          "elements": [
+            15879621,
+            15882099
+          ],
+          "id": "374396c0-984d-4f72-a081-30ab7dacb66d"
+        },
+        {
+          "description": "A wall and a room separation line overlap. One of them may be ignored when Revit finds room boundaries. Shorten or delete the room separation line to remove the overlap.",
+          "elements": [
+            15879834,
+            15950927
+          ],
+          "id": "f7b3a015-c3eb-4a3f-b345-c474ec07d43f"
+        },
+        {
+          "description": "A wall and a room separation line overlap. One of them may be ignored when Revit finds room boundaries. Shorten or delete the room separation line to remove the overlap.",
+          "elements": [
+            15879834,
+            16147256
+          ],
+          "id": "f7b3a015-c3eb-4a3f-b345-c474ec07d43f"
+        },
+        {
+          "description": "Highlighted room separation lines overlap. One of them may be ignored when Revit finds room boundaries. Delete one of the lines.",
+          "elements": [
+            15879834,
+            16737445
+          ],
+          "id": "374396c0-984d-4f72-a081-30ab7dacb66d"
+        },
+        {
+          "description": "Highlighted room separation lines overlap. One of them may be ignored when Revit finds room boundaries. Delete one of the lines.",
+          "elements": [
+            15879834,
+            16738397
+          ],
+          "id": "374396c0-984d-4f72-a081-30ab7dacb66d"
+        },
+        {
+          "description": "Highlighted room separation lines overlap. One of them may be ignored when Revit finds room boundaries. Delete one of the lines.",
+          "elements": [
+            15879834,
+            16870440
+          ],
+          "id": "374396c0-984d-4f72-a081-30ab7dacb66d"
+        },
+        {
+          "description": "Highlighted room separation lines overlap. One of them may be ignored when Revit finds room boundaries. Delete one of the lines.",
+          "elements": [
+            15880108,
+            15881525
+          ],
+          "id": "374396c0-984d-4f72-a081-30ab7dacb66d"
+        },
+        {
+          "description": "A wall and a room separation line overlap. One of them may be ignored when Revit finds room boundaries. Shorten or delete the room separation line to remove the overlap.",
+          "elements": [
+            15880108,
+            16961567
+          ],
+          "id": "f7b3a015-c3eb-4a3f-b345-c474ec07d43f"
+        },
+        {
+          "description": "Highlighted room separation lines overlap. One of them may be ignored when Revit finds room boundaries. Delete one of the lines.",
+          "elements": [
+            15880687,
+            15880926
+          ],
+          "id": "374396c0-984d-4f72-a081-30ab7dacb66d"
+        },
+        {
+          "description": "A wall and a room separation line overlap. One of them may be ignored when Revit finds room boundaries. Shorten or delete the room separation line to remove the overlap.",
+          "elements": [
+            15881525,
+            16961567
+          ],
+          "id": "f7b3a015-c3eb-4a3f-b345-c474ec07d43f"
+        },
+        {
+          "description": "A wall and a room separation line overlap. One of them may be ignored when Revit finds room boundaries. Shorten or delete the room separation line to remove the overlap.",
+          "elements": [
+            15881970,
+            15950903
+          ],
+          "id": "f7b3a015-c3eb-4a3f-b345-c474ec07d43f"
+        },
+        {
+          "description": "A wall and a room separation line overlap. One of them may be ignored when Revit finds room boundaries. Shorten or delete the room separation line to remove the overlap.",
+          "elements": [
+            15881970,
+            15950926
+          ],
+          "id": "f7b3a015-c3eb-4a3f-b345-c474ec07d43f"
+        },
+        {
+          "description": "A wall and a room separation line overlap. One of them may be ignored when Revit finds room boundaries. Shorten or delete the room separation line to remove the overlap.",
+          "elements": [
+            15881978,
+            15950781
+          ],
+          "id": "f7b3a015-c3eb-4a3f-b345-c474ec07d43f"
+        },
+        {
+          "description": "A wall and a room separation line overlap. One of them may be ignored when Revit finds room boundaries. Shorten or delete the room separation line to remove the overlap.",
+          "elements": [
+            15881984,
+            15950782
+          ],
+          "id": "f7b3a015-c3eb-4a3f-b345-c474ec07d43f"
+        },
+        {
+          "description": "Highlighted room separation lines overlap. One of them may be ignored when Revit finds room boundaries. Delete one of the lines.",
+          "elements": [
+            15881984,
+            15950787
+          ],
+          "id": "374396c0-984d-4f72-a081-30ab7dacb66d"
+        },
+        {
+          "description": "A wall and a room separation line overlap. One of them may be ignored when Revit finds room boundaries. Shorten or delete the room separation line to remove the overlap.",
+          "elements": [
+            15882171,
+            16010104
+          ],
+          "id": "f7b3a015-c3eb-4a3f-b345-c474ec07d43f"
+        },
+        {
+          "description": "A wall and a room separation line overlap. One of them may be ignored when Revit finds room boundaries. Shorten or delete the room separation line to remove the overlap.",
+          "elements": [
+            15882547,
+            17121716
+          ],
+          "id": "f7b3a015-c3eb-4a3f-b345-c474ec07d43f"
+        },
+        {
+          "description": "A wall and a room separation line overlap. One of them may be ignored when Revit finds room boundaries. Shorten or delete the room separation line to remove the overlap. You can tab-select one of the overlapping elements to exclude it from the group instance.",
+          "elements": [
+            15941451,
+            16417136
+          ],
+          "id": "f7b3a015-c3eb-4a3f-b345-c474ec07d43f"
+        },
+        {
+          "description": "A wall and a room separation line overlap. One of them may be ignored when Revit finds room boundaries. Shorten or delete the room separation line to remove the overlap.",
+          "elements": [
+            15950781,
+            15950788
+          ],
+          "id": "f7b3a015-c3eb-4a3f-b345-c474ec07d43f"
+        },
+        {
+          "description": "A wall and a room separation line overlap. One of them may be ignored when Revit finds room boundaries. Shorten or delete the room separation line to remove the overlap.",
+          "elements": [
+            15950782,
+            15950787
+          ],
+          "id": "f7b3a015-c3eb-4a3f-b345-c474ec07d43f"
+        },
+        {
+          "description": "A wall and a room separation line overlap. One of them may be ignored when Revit finds room boundaries. Shorten or delete the room separation line to remove the overlap.",
+          "elements": [
+            15950927,
+            16737445
+          ],
+          "id": "f7b3a015-c3eb-4a3f-b345-c474ec07d43f"
+        },
+        {
+          "description": "A wall and a room separation line overlap. One of them may be ignored when Revit finds room boundaries. Shorten or delete the room separation line to remove the overlap.",
+          "elements": [
+            16083944,
+            16417113
+          ],
+          "id": "f7b3a015-c3eb-4a3f-b345-c474ec07d43f"
+        },
+        {
+          "description": "A wall and a room separation line overlap. One of them may be ignored when Revit finds room boundaries. Shorten or delete the room separation line to remove the overlap.",
+          "elements": [
+            16147256,
+            16737445
+          ],
+          "id": "f7b3a015-c3eb-4a3f-b345-c474ec07d43f"
+        },
+        {
+          "description": "A wall and a room separation line overlap. One of them may be ignored when Revit finds room boundaries. Shorten or delete the room separation line to remove the overlap.",
+          "elements": [
+            16264025,
+            16417136
+          ],
+          "id": "f7b3a015-c3eb-4a3f-b345-c474ec07d43f"
+        },
+        {
+          "description": "A wall and a room separation line overlap. One of them may be ignored when Revit finds room boundaries. Shorten or delete the room separation line to remove the overlap.",
+          "elements": [
+            16306830,
+            17123680
+          ],
+          "id": "f7b3a015-c3eb-4a3f-b345-c474ec07d43f"
+        },
+        {
+          "description": "A wall and a room separation line overlap. One of them may be ignored when Revit finds room boundaries. Shorten or delete the room separation line to remove the overlap.",
+          "elements": [
+            16376933,
+            16417138
+          ],
+          "id": "f7b3a015-c3eb-4a3f-b345-c474ec07d43f"
+        },
+        {
+          "description": "A wall and a room separation line overlap. One of them may be ignored when Revit finds room boundaries. Shorten or delete the room separation line to remove the overlap.",
+          "elements": [
+            16414456,
+            16739327
+          ],
+          "id": "f7b3a015-c3eb-4a3f-b345-c474ec07d43f"
+        },
+        {
+          "description": "A wall and a room separation line overlap. One of them may be ignored when Revit finds room boundaries. Shorten or delete the room separation line to remove the overlap.",
+          "elements": [
+            16414456,
+            16869883
+          ],
+          "id": "f7b3a015-c3eb-4a3f-b345-c474ec07d43f"
+        },
+        {
+          "description": "A wall and a room separation line overlap. One of them may be ignored when Revit finds room boundaries. Shorten or delete the room separation line to remove the overlap.",
+          "elements": [
+            16735964,
+            17123680
+          ],
+          "id": "f7b3a015-c3eb-4a3f-b345-c474ec07d43f"
+        },
+        {
+          "description": "A wall and a room separation line overlap. One of them may be ignored when Revit finds room boundaries. Shorten or delete the room separation line to remove the overlap.",
+          "elements": [
+            16737740,
+            17136033
+          ],
+          "id": "f7b3a015-c3eb-4a3f-b345-c474ec07d43f"
+        },
+        {
+          "description": "Highlighted room separation lines overlap. One of them may be ignored when Revit finds room boundaries. Delete one of the lines.",
+          "elements": [
+            16738397,
+            16870440
+          ],
+          "id": "374396c0-984d-4f72-a081-30ab7dacb66d"
+        },
+        {
+          "description": "A wall and a room separation line overlap. One of them may be ignored when Revit finds room boundaries. Shorten or delete the room separation line to remove the overlap.",
+          "elements": [
+            16738536,
+            16868686
+          ],
+          "id": "f7b3a015-c3eb-4a3f-b345-c474ec07d43f"
+        },
+        {
+          "description": "Highlighted room separation lines overlap. One of them may be ignored when Revit finds room boundaries. Delete one of the lines.",
+          "elements": [
+            16739327,
+            16869883
+          ],
+          "id": "374396c0-984d-4f72-a081-30ab7dacb66d"
+        },
+        {
+          "description": "A wall and a room separation line overlap. One of them may be ignored when Revit finds room boundaries. Shorten or delete the room separation line to remove the overlap.",
+          "elements": [
+            16868686,
+            16869992
+          ],
+          "id": "f7b3a015-c3eb-4a3f-b345-c474ec07d43f"
+        },
+        {
+          "description": "A wall and a room separation line overlap. One of them may be ignored when Revit finds room boundaries. Shorten or delete the room separation line to remove the overlap.",
+          "elements": [
+            16870257,
+            17121716
+          ],
+          "id": "f7b3a015-c3eb-4a3f-b345-c474ec07d43f"
+        },
+        {
+          "description": "Highlighted lines overlap. Lines may not form closed loops.",
+          "elements": [
+            18264385,
+            18264389,
+            18264395
+          ],
+          "id": "6891f0e6-5858-4e2f-bb34-801e0b87f60d"
+        },
+        {
+          "description": "Highlighted lines overlap. Lines may not form closed loops.",
+          "elements": [
+            18264385,
+            18264390,
+            18264395
+          ],
+          "id": "6891f0e6-5858-4e2f-bb34-801e0b87f60d"
+        },
+        {
+          "description": "Highlighted room separation lines overlap. One of them may be ignored when Revit finds room boundaries. Delete one of the lines. You can tab-select one of the overlapping elements to exclude it from the group instance.",
+          "elements": [
+            18362335,
+            18362496
+          ],
+          "id": "374396c0-984d-4f72-a081-30ab7dacb66d"
+        },
+        {
+          "description": "Insert conflicts with joined Wall.",
+          "elements": [
+            16428715,
+            18405561
+          ],
+          "id": "7240576f-66ca-40e7-bc79-be5af5f891f5"
+        },
+        {
+          "description": "Insert conflicts with joined Wall.",
+          "elements": [
+            15940538,
+            18406286
+          ],
+          "id": "7240576f-66ca-40e7-bc79-be5af5f891f5"
+        },
+        {
+          "description": "Insert conflicts with joined Wall.",
+          "elements": [
+            15964925,
+            15965180,
+            18406385
+          ],
+          "id": "7240576f-66ca-40e7-bc79-be5af5f891f5"
+        },
+        {
+          "description": "Room is not in a properly enclosed region",
+          "elements": [
+            10765461
+          ],
+          "id": "ce3275c6-1c51-402e-8de3-df3a3d566f5c"
+        },
+        {
+          "description": "Room is not in a properly enclosed region",
+          "elements": [
+            15454000
+          ],
+          "id": "ce3275c6-1c51-402e-8de3-df3a3d566f5c"
+        },
+        {
+          "description": "Room is not in a properly enclosed region",
+          "elements": [
+            15879291
+          ],
+          "id": "ce3275c6-1c51-402e-8de3-df3a3d566f5c"
+        },
+        {
+          "description": "Room is not in a properly enclosed region",
+          "elements": [
+            15882897
+          ],
+          "id": "ce3275c6-1c51-402e-8de3-df3a3d566f5c"
+        },
+        {
+          "description": "Room is not in a properly enclosed region",
+          "elements": [
+            15921393
+          ],
+          "id": "ce3275c6-1c51-402e-8de3-df3a3d566f5c"
+        },
+        {
+          "description": "Room is not in a properly enclosed region",
+          "elements": [
+            15921396
+          ],
+          "id": "ce3275c6-1c51-402e-8de3-df3a3d566f5c"
+        },
+        {
+          "description": "Room is not in a properly enclosed region",
+          "elements": [
+            15925329
+          ],
+          "id": "ce3275c6-1c51-402e-8de3-df3a3d566f5c"
+        },
+        {
+          "description": "Room is not in a properly enclosed region",
+          "elements": [
+            16417165
+          ],
+          "id": "ce3275c6-1c51-402e-8de3-df3a3d566f5c"
+        },
+        {
+          "description": "Multiple Rooms are in the same enclosed region.  The correct area and perimeter will be assigned to one Room and the others will display \"Redundant Room.\"  You should separate the regions, delete the extra Rooms, or move them into different regions.",
+          "elements": [
+            10567254,
+            15926966
+          ],
+          "id": "83d4a67c-818c-4291-adaf-f2d33064fea8"
+        },
+        {
+          "description": "Multiple Rooms are in the same enclosed region.  The correct area and perimeter will be assigned to one Room and the others will display \"Redundant Room.\"  You should separate the regions, delete the extra Rooms, or move them into different regions.",
+          "elements": [
+            15880911,
+            15882783
+          ],
+          "id": "83d4a67c-818c-4291-adaf-f2d33064fea8"
+        },
+        {
+          "description": "Multiple Rooms are in the same enclosed region.  The correct area and perimeter will be assigned to one Room and the others will display \"Redundant Room.\"  You should separate the regions, delete the extra Rooms, or move them into different regions.",
+          "elements": [
+            15881594,
+            15882525
+          ],
+          "id": "83d4a67c-818c-4291-adaf-f2d33064fea8"
+        },
+        {
+          "description": "Area is not in a properly enclosed region",
+          "elements": [
+            8500515
+          ],
+          "id": "ce3275c6-1c51-402e-8de3-df3a3d566f5c"
+        },
+        {
+          "description": "Area is not in a properly enclosed region",
+          "elements": [
+            8501361
+          ],
+          "id": "ce3275c6-1c51-402e-8de3-df3a3d566f5c"
+        },
+        {
+          "description": "Area is not in a properly enclosed region",
+          "elements": [
+            8930527
+          ],
+          "id": "ce3275c6-1c51-402e-8de3-df3a3d566f5c"
+        },
+        {
+          "description": "Two elements were not automatically joined because one or both is not editable.",
+          "elements": [
+            10534418,
+            10548338
+          ],
+          "id": "26c3c00a-50fc-4b42-bbae-4300bf4fb4f4"
+        },
+        {
+          "description": "Rectangular opening doesn't cut its host.",
+          "elements": [
+            11221730
+          ],
+          "id": "9e039ed2-44c3-4f24-b836-27068f12c4e5"
+        },
+        {
+          "description": "Rectangular opening doesn't cut its host.",
+          "elements": [
+            15779698
+          ],
+          "id": "9e039ed2-44c3-4f24-b836-27068f12c4e5"
+        },
+        {
+          "description": "Rectangular opening doesn't cut its host.",
+          "elements": [
+            16642973
+          ],
+          "id": "9e039ed2-44c3-4f24-b836-27068f12c4e5"
+        },
+        {
+          "description": "Rectangular opening doesn't cut its host.",
+          "elements": [
+            16643094
+          ],
+          "id": "9e039ed2-44c3-4f24-b836-27068f12c4e5"
+        },
+        {
+          "description": "Elements do not intersect.",
+          "elements": [
+            10534514,
+            15556077
+          ],
+          "id": "807adcd9-c8be-4986-a60f-b8fe131c293c"
+        },
+        {
+          "description": "Elements do not intersect.",
+          "elements": [
+            15413933,
+            18539588
+          ],
+          "id": "807adcd9-c8be-4986-a60f-b8fe131c293c"
+        },
+        {
+          "description": "Line in Sketch is slightly off axis and may cause inaccuracies.",
+          "elements": [
+            10534437,
+            10855301
+          ],
+          "id": "ec905b6a-064b-48e1-a6c7-51e2cf092490"
+        },
+        {
+          "description": "Wall is slightly off axis and may cause inaccuracies.",
+          "elements": [
+            10855522
+          ],
+          "id": "fb1d4583-6b62-4ccb-9cb8-7c2e849b4d43"
+        },
+        {
+          "description": "Line in Sketch is slightly off axis and may cause inaccuracies.",
+          "elements": [
+            11338720,
+            11338856
+          ],
+          "id": "ec905b6a-064b-48e1-a6c7-51e2cf092490"
+        },
+        {
+          "description": "Line in Sketch is slightly off axis and may cause inaccuracies.",
+          "elements": [
+            11339030,
+            11339065
+          ],
+          "id": "ec905b6a-064b-48e1-a6c7-51e2cf092490"
+        },
+        {
+          "description": "Line in Sketch is slightly off axis and may cause inaccuracies.",
+          "elements": [
+            16954298,
+            16954300
+          ],
+          "id": "ec905b6a-064b-48e1-a6c7-51e2cf092490"
+        },
+        {
+          "description": "Line in Sketch is slightly off axis and may cause inaccuracies.",
+          "elements": [
+            16954298,
+            16954302
+          ],
+          "id": "ec905b6a-064b-48e1-a6c7-51e2cf092490"
+        },
+        {
+          "description": "The Actual Run Width of one or more runs is less than the Minimum Run Width specified in the stair type.",
+          "elements": [
+            10874340
+          ],
+          "id": "5d337ec0-5ec1-4039-917a-55b1c420db59"
+        },
+        {
+          "description": "The Actual Riser Height of stair is greater than the Maximum Riser Height specified in the stair type. ",
+          "elements": [
+            17118921
+          ],
+          "id": "5e59fb09-9f8e-4600-89c8-c524dc481196"
+        },
+        {
+          "description": "The Actual Riser Height of stair is greater than the Maximum Riser Height specified in the stair type. ",
+          "elements": [
+            17124197
+          ],
+          "id": "5e59fb09-9f8e-4600-89c8-c524dc481196"
+        },
+        {
+          "description": "Stair bottom end exceeds or cannot reach the base elevation of the stair. Add/remove risers at the bottom end by control or change the stair run's \"Relative Base Height\" parameter in the properties palette.",
+          "elements": [
+            18264361
+          ],
+          "id": "e79a1d64-a28f-4abe-9a89-3963be321f97"
+        },
+        {
+          "description": "The rail is not continuous.  Breaks in the rail usually occur at sharply-angled transitions. To fix the problem, try:\r\n - Changing the transition style in the rail type properties, or\r\n - Modifying the railing path at the transition.",
+          "elements": [
+            11035018
+          ],
+          "id": "4d5fea31-ba0d-45d0-b439-7008c39a42b7"
+        },
+        {
+          "description": "The rail is not continuous.  Breaks in the rail usually occur at sharply-angled transitions. To fix the problem, try:\r\n - Changing the transition style in the rail type properties, or\r\n - Modifying the railing path at the transition.",
+          "elements": [
+            11035047
+          ],
+          "id": "4d5fea31-ba0d-45d0-b439-7008c39a42b7"
+        },
+        {
+          "description": "Stair top end exceeds or cannot reach the top elevation of the stair. Add/remove risers at the top end by control or change the stair run's \"Relative Top Height\" parameter in the properties palette.",
+          "elements": [
+            10874023
+          ],
+          "id": "057af793-26e5-4556-bc69-91d67e8a6fd2"
+        },
+        {
+          "description": "Stair top end exceeds or cannot reach the top elevation of the stair. Add/remove risers at the top end by control or change the stair run's \"Relative Top Height\" parameter in the properties palette.",
+          "elements": [
+            12497986
+          ],
+          "id": "057af793-26e5-4556-bc69-91d67e8a6fd2"
+        },
+        {
+          "description": "Stair top end exceeds or cannot reach the top elevation of the stair. Add/remove risers at the top end by control or change the stair run's \"Relative Top Height\" parameter in the properties palette.",
+          "elements": [
+            17118921
+          ],
+          "id": "057af793-26e5-4556-bc69-91d67e8a6fd2"
+        },
+        {
+          "description": "Stair top end exceeds or cannot reach the top elevation of the stair. Add/remove risers at the top end by control or change the stair run's \"Relative Top Height\" parameter in the properties palette.",
+          "elements": [
+            17124197
+          ],
+          "id": "057af793-26e5-4556-bc69-91d67e8a6fd2"
+        }
+      ],
+      "circuits": [
+        {
+          "area_sf": 13.782986111109551,
+          "point": [
+            -513.1900188589843,
+            210.8500447784985
+          ],
+          "sides": 4
+        },
+        {
+          "area_sf": 13.782986111107164,
+          "point": [
+            -552.2108521923199,
+            210.8500447784985
+          ],
+          "sides": 4
+        }
+      ]
+    }
+  }
+}

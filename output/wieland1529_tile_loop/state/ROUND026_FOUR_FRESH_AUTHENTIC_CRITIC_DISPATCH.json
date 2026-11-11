@@ -1,0 +1,31 @@
+{
+  "round": 26,
+  "phase": "2-board",
+  "focus_rooms": ["TX-PRIMARY", "TX-BATH3"],
+  "source_freeze": "state/ROUND026_FORMAL_TWO_TX_ROOMS_SOURCE_FROZEN_PREDISPATCH.json",
+  "independent_preflight_reviewer": "worker-27",
+  "preflight_verdict": "CONTINUE FOR R026 BLIND CRITIC DISPATCH ONLY",
+  "preflight_receipt": "state/ROUND026_INDEPENDENT_PREDISPATCH_REVIEWER27_CLEARANCE.json",
+  "run_id": "f4dd9661-e529-4c9a-8c06-18e2c6251052",
+  "seats": {
+    "critic-market": {"worker": "worker-31", "weight": 0.30, "status": "invited"},
+    "critic-design": {"worker": "worker-32", "weight": 0.25, "status": "invited"},
+    "critic-build": {"worker": "worker-33", "weight": 0.25, "status": "invited"},
+    "critic-cost": {"worker": "worker-34", "weight": 0.20, "status": "invited"}
+  },
+  "strict_room_specific_source_policy": "Each seat may consult only the particular room geometry/plumbing/current A-B candidates, globally permitted research/products and research/comps and inputs, BOARD, OWNER_FEEDBACK and official maker pages. No other room source files, prior results, private mappings or critiques.",
+  "private_key_disclosed": false,
+  "source_frozen_candidates": 4,
+  "segregated_private_keys": 2,
+  "authentic_critic_reports_collected_in_this_dispatch": false,
+  "score_in_this_dispatch_phase": false,
+  "future_scoring_in_distinct_prime_turn": true,
+  "native_geometry_hard_gate": "UNKNOWN",
+  "owner_TX_BATH3_TUB_vs_WALKIN": "UNSELECTED",
+  "complete_delivered_cost": "UNKNOWN",
+  "chicago_stock_lot_eta": "UNKNOWN",
+  "champion_changes": false,
+  "owner_approval": false,
+  "procurement_release": false,
+  "global_DONE": false
+}

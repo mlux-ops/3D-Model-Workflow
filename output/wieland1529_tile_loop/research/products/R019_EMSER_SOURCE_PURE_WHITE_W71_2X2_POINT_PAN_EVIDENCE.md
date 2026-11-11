@@ -1,0 +1,5 @@
+# Emser Source Pure White exact 2x2 shower POINT pan — R019 2026-11-06
+
+Official https://www.emser.com/product/source-w71sourpwh1212mo2 — **W71SOURPWH1212MO2**, unglazed porcelain 2x2/12x12 mesh-backed mosaic, **Pure White**, **Matte**, **6 mm**, recommended grout 1/8 inch (maker color 642 Ash), individual **DCOF >0.60**, **Commercial Floor Wet YES**, **Shower Floor Residential YES**. Published maker test-result lower bound (NOT invented actual raw point) satisfies board's product-published >=0.42 on a shower pan, subject to point-drain/slope and manufacturer-approved waterproof assembly. Explicitly DIFFERENT from another similarly named Source SKU W16SOURPUWH1212MO2M (reported 5.5 mm): do not interchange without new verification.
+
+Retailer nonlocal public example https://www.gbtilecollections.com/emser-source-pure-white-matte-porcelain-mosaic.html reported $11.77 per 0.95-SF sheet as of research; **not** Chicago warehouse current project quote, installed cost, or verified available shade lot. Manufacturer US catalog active, Chicago exact stock/ETA, current usable case yield and actual four-plane pan SF UNKNOWN; tub branch PAN N/A. No orders.

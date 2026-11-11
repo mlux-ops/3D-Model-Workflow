@@ -1,0 +1,68 @@
+{
+ "schema_version": 1,
+ "operation_id": "e912fd52-709c-4110-a8b2-96e2f26ec4c4",
+ "status": "completed",
+ "request": {
+  "schema_version": 1,
+  "operation_id": "e912fd52-709c-4110-a8b2-96e2f26ec4c4",
+  "operation": "elements.query",
+  "document": {
+   "session_id": "915612da-3558-4041-9d21-e0da02c90cb3"
+  },
+  "arguments": {
+   "category": "OST_Walls",
+   "limit": 1
+  }
+ },
+ "result": {
+  "items": [
+   {
+    "document_session_id": "915612da-3558-4041-9d21-e0da02c90cb3",
+    "id": 4143428,
+    "unique_id": "f09f5dbf-8ab7-4253-9bc5-c1e6c06d8146-003f3944",
+    "name": "Walls 2",
+    "category": "Walls",
+    "category_id": -2000011,
+    "type_id": 4143426,
+    "pinned": false,
+    "group_id": -1,
+    "level_id": -1,
+    "location": {
+     "point": [
+      0,
+      0,
+      0
+     ],
+     "rotation_radians": 0
+    },
+    "bounds": {
+     "min": [
+      -5.363439283601642,
+      -61.409184033378146,
+      0.5416666666666665
+     ],
+     "max": [
+      10.821358979371535,
+      -61.388350700044754,
+      3.3333333333333544
+     ]
+    },
+    "host_id": null,
+    "family_name": null,
+    "placement_type": null,
+    "view_family": null,
+    "view_type": null,
+    "elevation": null
+   }
+  ],
+  "offset": 0,
+  "next_offset": 1,
+  "units": "internal feet"
+ },
+ "error": null,
+ "cancel_requested": false,
+ "created_utc": "2026-11-06T10:34:36.8542856Z",
+ "finished_utc": "2026-11-06T10:34:36.8779095Z",
+ "elapsed_ms": 13.6227,
+ "transaction_status": "not_started"
+}

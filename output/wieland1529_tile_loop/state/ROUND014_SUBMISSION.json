@@ -1,0 +1,65 @@
+{
+  "round": 14,
+  "as_of": "2026-11-06",
+  "phase": "2-board",
+  "rooms": [
+    "PH-BATH3",
+    "TX-BATH3"
+  ],
+  "source_authority": "2026-09-03 original 6 Smartsheet tile rows and owner selected square shower drain vs tub conflict, maker individual sources, provisional geometry",
+  "freeze_purpose": "Only source-neutral R014 PH/TX Bath3 candidates frozen; reviewer pre-dispatch requested, no critic dispatch, no weighted scoring, no champion",
+  "candidate_files": {
+    "PH-BATH3": {
+      "A": {
+        "sha256": "f3c1021ca0284b2a12a75b53411cbdbf4e97a3f74b2341f5bcba71d97390cbe1",
+        "bytes": 9825,
+        "file": "rooms/PH-BATH3/board/round-014/candidates/A.md"
+      },
+      "C": {
+        "sha256": "bbc2beebe83c75d1f1181e69fdd759e04b112fa688bcdebd4b0486be45f71b99",
+        "bytes": 9496,
+        "file": "rooms/PH-BATH3/board/round-014/candidates/C.md"
+      }
+    },
+    "TX-BATH3": {
+      "B": {
+        "sha256": "f0f31a37d68232b1077664380e8cc3a95b6c1b49b820b3f2fafb36c62f015d59",
+        "bytes": 9697,
+        "file": "rooms/TX-BATH3/board/round-014/candidates/B.md"
+      },
+      "C": {
+        "sha256": "58ce1b981302be2a769a2e38025321e9a799b2c2695d203c8724bec894bb370e",
+        "bytes": 9897,
+        "file": "rooms/TX-BATH3/board/round-014/candidates/C.md"
+      }
+    }
+  },
+  "private_key_paths": [
+    "rooms/PH-BATH3/board/round-014/_key.json",
+    "rooms/TX-BATH3/board/round-014/_key.json"
+  ],
+  "critic_seats": {
+    "market": 0.3,
+    "design": 0.25,
+    "build": 0.25,
+    "cost": 0.2
+  },
+  "critic_dispatch": "NOT DISPATCHED",
+  "all_critic_scores": null,
+  "weighted_scoring": null,
+  "reviewer_preflight_verdict": null,
+  "owner_tub_vs_walkin": null,
+  "ph_sink_owner_selected": false,
+  "owner_approved": false,
+  "procurement_release": false,
+  "original_gross_15pct_waste_included_once": true,
+  "original_per_copy_usd": {
+    "PH-BATH3": 930.42,
+    "TX-BATH3": 958.88
+  },
+  "correct_native_1529_verified": false,
+  "revision": "pre-dispatch source-only FIX1 after independent worker-14 precise review; NO critics dispatched, no scored arithmetic",
+  "source_fix_receipt": "state/ROUND014_PREDISPATCH_REVIEWER_FIX1.json",
+  "maker_research_sha256": "52ce52ec97c0bbc4e01790fb80ffc655aad35a772b180910835fc6960cf3e982",
+  "research_role_language_fix": "independent worker-14 FIX2: shared critic-readable R014 research has neutral material descriptions without private source/alternative role labels"
+}
