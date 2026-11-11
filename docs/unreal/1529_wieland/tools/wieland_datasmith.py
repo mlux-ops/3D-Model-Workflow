@@ -134,6 +134,174 @@ def start_reimport(scene_asset_path, result_path):
     })
 
 
+def finish_asset_compilation():
+    """Wait until the editor has finished preparing every loaded asset. Returns the seconds it took.
+
+    In 5.9.0 a Datasmith reimport that replaces a changed mesh crashes the
+    editor if that mesh is still being prepared in the background, which it is
+    for some seconds after a level loads (reimport R2 of Phase 1). Call this in
+    its own tool call after loading the level and before start_reimport().
+    Never start a reimport in the call that loads the level.
+    """
+    started = time.time()
+    unreal.AutomationUtilsBlueprintLibrary.finish_all_asset_compilation()
+    return round(time.time() - started, 2)
+
+
+def source_file(scene_asset_path, new_file=None):
+    """Read, and with new_file change, the source file an imported Datasmith scene asset records.
+
+    The change is made to the loaded asset only; it reaches disk when the asset is saved.
+    """
+    asset = unreal.EditorAssetLibrary.load_asset(scene_asset_path)
+    if asset is None:
+        raise RuntimeError("no asset at " + scene_asset_path)
+    data = asset.get_editor_property("asset_import_data")
+    before = data.get_first_filename()
+    if new_file is not None:
+        if not os.path.exists(new_file):
+            raise RuntimeError("no such file: " + new_file)
+        data.scripted_add_filename(new_file, 0, "")
+    return {"before": before, "now": data.get_first_filename()}
+
+
+def count_components(prefixes=()):
+    """Read-only: mesh and light components in the open level.
+
+    Datasmith attaches some parts to one actor as components, so counting
+    actors undercounts; this is the count to set beside the export file's
+    ActorMesh and Light elements. For each text in prefixes it also counts the
+    mesh components whose mesh asset name, or whose owning actor's label,
+    begins with that text.
+    """
+    components = unreal.get_editor_subsystem(unreal.EditorActorSubsystem).get_all_level_actors_components()
+    meshes = 0
+    meshes_without_mesh = 0
+    lights = 0
+    light_classes = {}
+    distinct_meshes = set()
+    by_mesh_name = {prefix: 0 for prefix in prefixes}
+    by_actor_label = {prefix: 0 for prefix in prefixes}
+    for component in components:
+        if isinstance(component, unreal.StaticMeshComponent):
+            meshes += 1
+            mesh = component.static_mesh
+            if mesh is None:
+                meshes_without_mesh += 1
+            else:
+                distinct_meshes.add(mesh.get_path_name())
+            owner = component.get_owner()
+            label = owner.get_actor_label() if owner is not None else ""
+            name = mesh.get_name() if mesh is not None else ""
+            for prefix in prefixes:
+                if name.startswith(prefix):
+                    by_mesh_name[prefix] += 1
+                if label.startswith(prefix):
+                    by_actor_label[prefix] += 1
+        elif isinstance(component, unreal.LightComponent):
+            lights += 1
+            class_name = component.get_class().get_name()
+            light_classes[class_name] = light_classes.get(class_name, 0) + 1
+    return {
+        "level": _world_path(),
+        "components": len(components),
+        "static_mesh_components": meshes,
+        "static_mesh_components_without_mesh": meshes_without_mesh,
+        "distinct_meshes_in_use": len(distinct_meshes),
+        "light_components": lights,
+        "light_component_classes": light_classes,
+        "mesh_components_by_mesh_name_prefix": by_mesh_name,
+        "mesh_components_by_actor_label_prefix": by_actor_label,
+    }
+
+
+def check_assignments(table_path):
+    """Read-only: which of the Unreal-side material assignments in the saved table are still in place.
+
+    The table is the one written for the reimport rehearsal: "on_objects"
+    (a material override on one placed object, stored in the level),
+    "on_meshes" (a material slot changed on an imported mesh, stored in the
+    mesh) and "extra_edits_to_imported_materials" (colour and glossiness set
+    directly on imported materials).
+    """
+    with open(table_path, encoding="utf-8") as handle:
+        table = json.load(handle)
+    actors = unreal.get_editor_subsystem(unreal.EditorActorSubsystem).get_all_level_actors()
+    by_name = {}
+    by_revit_id = {}
+    for actor in actors:
+        by_name[actor.get_name()] = actor
+        for tag in actor.tags:
+            text = str(tag)
+            if text.startswith("Revit.Element.Id."):
+                by_revit_id.setdefault(text, []).append(actor)
+    rows = []
+    number = 0
+    for entry in table.get("on_objects", []):
+        number += 1
+        row = {"no": number, "kind": "on object", "what": entry.get("actor"), "kept": False}
+        actor = by_name.get(entry.get("actor_name"))
+        row["found_by"] = "actor name"
+        if actor is None or actor.get_actor_label() != entry.get("actor"):
+            candidates = by_revit_id.get(entry.get("revit_element_id"), [])
+            same_label = [a for a in candidates if a.get_actor_label() == entry.get("actor")]
+            actor = (same_label or candidates or [None])[0]
+            row["found_by"] = "Revit element id"
+        if actor is None:
+            row["problem"] = "the object is not in the level"
+        else:
+            component = actor.get_component_by_class(unreal.StaticMeshComponent)
+            if component is None:
+                row["problem"] = "the object has no mesh component"
+            else:
+                material = component.get_material(entry.get("slot", 0))
+                row["material_now"] = material.get_path_name() if material else None
+                mesh = component.static_mesh
+                row["mesh_now"] = mesh.get_path_name() if mesh else None
+                row["same_mesh"] = row["mesh_now"] == entry.get("mesh")
+                row["kept"] = row["material_now"] == entry.get("assigned_material")
+        rows.append(row)
+    for entry in table.get("on_meshes", []):
+        number += 1
+        row = {"no": number, "kind": "on mesh", "what": entry.get("mesh", "").rsplit(".", 1)[-1], "kept": False}
+        mesh = unreal.EditorAssetLibrary.load_asset(entry.get("mesh"))
+        if mesh is None:
+            row["problem"] = "the mesh asset is not in the project"
+        else:
+            material = mesh.get_material(entry.get("slot", 0))
+            row["material_now"] = material.get_path_name() if material else None
+            row["kept"] = row["material_now"] == entry.get("assigned_material")
+        rows.append(row)
+    edits = []
+    for entry in table.get("extra_edits_to_imported_materials", []):
+        row = {"material": entry.get("material", "").rsplit("/", 1)[-1], "kept": False}
+        instance = unreal.EditorAssetLibrary.load_asset(entry.get("material"))
+        if instance is None:
+            row["problem"] = "the material is not in the project"
+        else:
+            colour = unreal.MaterialEditingLibrary.get_material_instance_vector_parameter_value(instance, "DiffuseColor")
+            gloss = unreal.MaterialEditingLibrary.get_material_instance_scalar_parameter_value(instance, "Glossiness")
+            row["colour_now"] = [round(colour.r, 4), round(colour.g, 4), round(colour.b, 4)]
+            row["glossiness_now"] = round(gloss, 4)
+            want = entry.get("set_to", {})
+            want_colour = want.get("DiffuseColor", [None, None, None])
+            colour_kept = all(w is not None and abs(n - w) < 0.002 for n, w in zip(row["colour_now"], want_colour))
+            gloss_kept = want.get("Glossiness") is not None and abs(gloss - want["Glossiness"]) < 0.002
+            row["kept"] = bool(colour_kept and gloss_kept)
+        edits.append(row)
+    return {
+        "level": _world_path(),
+        "kept_on_objects": sum(1 for r in rows if r["kind"] == "on object" and r["kept"]),
+        "kept_on_meshes": sum(1 for r in rows if r["kind"] == "on mesh" and r["kept"]),
+        "kept_total": sum(1 for r in rows if r["kept"]),
+        "of": len(rows),
+        "material_edits_kept": sum(1 for r in edits if r["kept"]),
+        "material_edits_of": len(edits),
+        "rows": rows,
+        "material_edits": edits,
+    }
+
+
 def count_level():
     """Read-only: what the open level holds, by actor class, with the Datasmith counts."""
     actors = unreal.get_editor_subsystem(unreal.EditorActorSubsystem).get_all_level_actors()
