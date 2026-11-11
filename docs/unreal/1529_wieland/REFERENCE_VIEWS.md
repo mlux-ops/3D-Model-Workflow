@@ -24,6 +24,13 @@ All positions are provisional until Phase 2 replaces them with surveyed ones. Th
 
 Headings are true bearings, clockwise from true north. The street is taken to run about one degree west of true north; Phase 2 measures it.
 
+## What the owner settled on 2026-11-10
+
+- The scene is for design review of finishes, and nothing is published.
+- There is one review condition: the summer afternoon, with every light fixture on at its real output. The site-visit match is kept only for scoring against the owner's photographs. The summer morning and dusk rows below are kept as a record and are not rendered.
+- The building is two mirrored halves, each a triplex below and a penthouse above. The design views below are set in one triplex and one penthouse.
+- The Revit model's property lines govern the building's position.
+
 ## Lighting conditions
 
 | Name | Date and time | Sun (hand-calculated; Phase 8 replaces this with the engine's value checked against the NOAA calculator) | Purpose |
@@ -57,13 +64,13 @@ These are scored against a path-traced render of the same view, which Phase 8 tr
 
 | Station | Position | What it tests |
 |---|---|---|
-| D1 Roof deck | On the roof deck at standing eye height, looking south-east | The distant-city stand-in and sky |
-| D2 Main living space | The largest street-facing room of one unit, looking toward the windows | Interior finishes, furniture, daylight through glass, the view of the street from inside |
-| D3 Kitchen | Looking along the counter run with a window to one side | Cabinet, counter and appliance materials under mixed daylight and fixtures |
-| D4 Bathroom | Tiled wall under a wall light at a glancing angle | Tile relief under grazing light, as this repository's material rules require |
-| D5 Entry at dusk | Outside the front door, dusk condition | Exterior fixtures in physical units against fixed exposure |
+| D1 Penthouse roof deck | On the penthouse's roof deck at standing eye height, looking south-east | The distant-city stand-in, sky, deck finishes and pergola |
+| D2 Penthouse living space | The penthouse's largest street-facing room, looking toward the windows | Interior finishes, furniture, daylight through glass, the view of the street from inside |
+| D3 Triplex kitchen | Looking along the counter run with a window to one side | Cabinet, counter and splashback finishes and their alternatives, under daylight and fixtures |
+| D4 Triplex bathroom | Tiled wall under a wall light at a glancing angle | Tile relief under grazing light, as this repository's material rules require, and the tile alternatives |
+| D5 Triplex rear patios | From the covered patio looking out across the uncovered patio | Exterior paving, metalwork and door finishes and their alternatives |
 
-The owner chooses the unit and rooms for D2 to D4 once the Revit model is opened. Each design view's exact position, heading and lens are then set from the Revit model in Phase 6 and entered in this table. Until then they are: standing eye height of 1.60 m, a 24 mm lens, and the heading described in the table.
+The owner names the half of the building and the exact rooms for D2 to D4. Each design view's exact position, heading and lens are then set from the Revit model in Phase 6 and entered in this table. Until then they are: standing eye height of 1.60 m, a 24 mm lens, and the heading described in the table.
 
 ## Tolerances proposed, and the evidence behind each
 

@@ -15,6 +15,43 @@ Written 2026-11-10. Companion to [PLAN.md](PLAN.md). Each decision has a recomme
 | New construction | Confirmed by the owner on 2026-11-10 after the report: the building is new construction on the cleared lot. "Match reality" applies to the surroundings, and the building is checked against the Revit model. This settles decision 1 below. |
 | Working method | The owner intends to run build sessions from the terminal inside the Unreal editor, using the installed Unreal Engine skills for Claude Code. |
 
+## Settled in the interview of 2026-11-10
+
+The owner answered these one at a time after the first report. Where an answer differs from a recommended default further down this file, the answer here governs. PLAN.md still has to be revised to match the rows marked "changes the plan".
+
+| Subject | Answer | Effect |
+|---|---|---|
+| Purpose | Design review only. Nothing is published. | Sources marked "personal use" are usable. Licences are still recorded for every asset. |
+| What the scene decides | Interior and exterior finishes. | Effort splits between the interiors and the street views; the far surroundings stay simple. |
+| Alternatives | Switchable alternatives for chosen surfaces, live and in stills. | Changes the plan: the material table gains a column per alternative and the engine's variant tool is used. The owner still has to list the surfaces and their options. |
+| Outputs | Everything: live scene, 4K stills, packaged Windows build, 60-second animation. | No change. |
+| Engine | Commit to 5.9 now, in `D:\Unreal_Engine_Projects\Wieland1527 5.9`. | Changes the plan: the Phase 1 gate becomes a set of tests in 5.9 only. The 5.8 original is never opened in 5.9 or modified. No DLSS; the distant city is public laser-survey massing. Supersedes decisions 2 and 6. |
+| If a test fails in 5.9 | Work around it inside 5.9 and record the limitation. | Changes the plan: no automatic retreat to 5.8. |
+| Revit export | The owner provides the Datasmith export, as one file for the whole building. It is at `E:\Claude\3D-Model-Workflow\references\1529 Wieland - Datasmith\25-006_1527_N_Wieland-3DView-3D_View_188.udatasmith`. | Changes the plan: Phase 3 starts from this file; objects are grouped by Revit level and category after import. |
+| Lot lines | The Revit model's property lines govern. | Settles decision 7. The building is placed by the Revit survey point carried in the export. |
+| Site visit | Once now; a summer visit is decided later. | Settles decision 5. |
+| Existing site model | Same project, new surroundings built one object per building; the old merged parts are kept for comparison until the new ones pass, then removed. | Settles decision 4. |
+| Interior scope | All four units, fully refined. | Changes the plan: Phase 6 is about four times larger than drafted, and interiors become the main load on frame time and video memory. Supersedes decision 11. |
+| Model for build sessions | Fable 5.2 in the editor's agent terminal. A settings file pinning it was placed, with approval, at `D:\Unreal_Engine_Projects\Wieland1527 5.9\.claude\settings.json`. | Open. After the pin, Fable 5.2 appeared in the panel's list, but choosing it gave "Could not change the agent setting." The editor log gives no reason. Whether a new chat already runs on Fable 5.2 because of the pin has not been checked. |
+| Surfaces with alternatives | Exterior metal, windows and doors; kitchen fronts, counters and splashbacks; bathroom tile, fixtures and main flooring. Not the facade stone and masonry. The owner names up to two alternatives per surface after the material audit. | Written into PLAN.md, Phases 5 and 6. |
+| Revit materials | Kept as exported by default. The Agent audits every material and gives a confidence figure for each texture's fidelity; the owner decides per material whether it is rebuilt natively in Unreal. | Written into PLAN.md, Phase 5, step 5.0. Supersedes the "names are the specification" approach in the first draft. |
+| Lighting | One review condition: the summer afternoon (15 August, 15:30). Every fixture is on at its real output. | Dusk, morning, overcast and night conditions are not rendered. Supersedes the dusk view. |
+| Loading | Inside a unit, that unit is loaded and the others are not. From the street, only rooms behind a visible window are loaded. | Written into PLAN.md, Phase 6. |
+| Furniture | One approved set per room type, reused across units. Each acquisition is approved separately. | Settles part of decision 8. |
+| The four units | Two mirrored, identically finished halves; each has a triplex below and a penthouse above. One triplex and one penthouse are refined; the other half reuses that work mirrored. | Halves the "all four units" effort. |
+| Animation | Two continuous 30-second moves with no cut inside either: one through a triplex, ending with 10 seconds on its rear covered and uncovered patios; one through a penthouse, ending with 10 seconds on its roof deck. Each shows the circulation through the whole unit. Rendered with the real-time renderer at its highest settings. | Settles decision 13. These two moves are also the interior performance paths. |
+| Build order | Surroundings first, as the phases are numbered. | No change. |
+| Engine cache | On D:, capped at 20 GB. H: turned out to be an external USB hard disk, so it holds archives and rendered frames only. | Settles decision 9. |
+| Drive upload | Everything, including the Unreal project archive of about 30 GB. | Settles decision 12. |
+| Temporary files from the planning session | Left in place. | Settles decision 10, apart from the access key in the earlier work's log, which is still the owner's to restrict or replace. |
+
+Facts read from the owner's material during the interview:
+
+- The open Revit model is `Autodesk Docs://25-006 1527 N Wieland St/25-006 1527 N Wieland.rvt`, project 25-006, status "ISSUE FOR CONSTRUCTION". It has about 140,000 elements, 122 rooms, 321 light fixtures in 20 families and 350 saved camera views. Levels: lower level at -5 ft 0 in, grade at 0, first floor at 6 ft 8 in, second at 17 ft 4 in, third at 28 ft 0 in, fourth at 38 ft 8 in, roof top at 49 ft 4 in, top of penthouse roof at 59 ft 0 in.
+- The Datasmith export was written by Revit 2025 at the Unreal 5.3 level (format 0.24). It holds 1,294 meshes, 3,562 placed objects, 2,072 materials, 94 textures and 587 lights, in 0.67 GB. One 16K Indiana limestone colour map is 610 MB of that.
+- Every light in the export is a point light with a unit-less intensity (values from 9.29 to 6,870). Ten photometric files are referenced and seven are present. Named fixtures include Focal Point adjustable accents, Kohler Purist sconces, Alcon 12303, Lumenwerx Aera, Visual Comfort Stagger, Simes Walker and a Zero Mist pendant.
+- The export carries the Revit survey point and a site-location object.
+
 ## Decisions waiting on the owner
 
 They are ordered by how much each could change the plan.
