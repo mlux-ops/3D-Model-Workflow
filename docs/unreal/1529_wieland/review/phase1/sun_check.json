@@ -63,5 +63,49 @@
   "elevation_with_refraction_deg": 0.055
  },
  "tolerance_deg": 0.5,
- "result": "pass"
+ "result": "pass",
+ "placed_sun_actor": {
+  "date_checked": "2026-11-11",
+  "actor": "/SunPosition/SunSky (class SunSky_C), spawned in the scratch level /Game/Wieland1529/Scratch/L_P1_LightUnits and removed again; the level was not saved",
+  "set_on_the_actor": {
+   "Latitude": 41.910215,
+   "Longitude": -87.635389,
+   "TimeZone": -6.0,
+   "UseDaylightSavingTime": true,
+   "Month": 8,
+   "Day": 15,
+   "SolarTime": 15.5
+  },
+  "year": {
+   "value_used": 2019,
+   "why": "the actor's Year property cannot be edited on a placed instance; it is fixed in the Blueprint class at 2019"
+  },
+  "actor_readout": {
+   "Azimuth": 241.804,
+   "CorrectedElevation_minus_180": 46.475
+  },
+  "north_offset_0": {
+   "toward_sun_xyz": [
+    -0.3254,
+    -0.607,
+    0.7251
+   ],
+   "meaning": "with NorthOffset 0 the actor takes +X as north and +Y as east: the bearing reads 241.80 in those axes"
+  },
+  "north_offset_180": {
+   "toward_sun_xyz": [
+    0.32539,
+    0.60695,
+    0.72507
+   ],
+   "bearing_in_this_project_axes_deg": 241.804,
+   "height_deg": 46.475,
+   "meaning": "this project's levels have north at -X and east at -Y, so the actor needs NorthOffset 180, plus whatever Phase 2 measures for the street's turn from true north"
+  },
+  "difference_from_noaa_2026_deg": {
+   "bearing": 0.134,
+   "height": 0.135
+  },
+  "result": "pass: within 0.5 degree, although the year stands at 2019"
+ }
 }

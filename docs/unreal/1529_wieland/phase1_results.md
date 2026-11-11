@@ -32,7 +32,7 @@ Companion to [PLAN.md](PLAN.md). This file is written as each step finishes, so 
 | 1.7 | Import the Datasmith file into a scratch level | **Done** on the fourth attempt, at 00:39 on 2026-11-11. See "Step 1.7". |
 | 1.8 | Reimport rehearsal | **In progress.** The 20 assignments are made and saved; a first reimport from the unchanged file is journaled; the rehearsal proper waits for the owner's second export. See "Step 1.8". |
 | 1.9 | Three path-traced renders of station S1 | **Done.** See "Step 1.9". |
-| 1.10 | Sun direction against the NOAA calculator | **Done** for the engine's sun calculation. The same check on a sun placed in a level is added when the scratch level exists. |
+| 1.10 | Sun direction against the NOAA calculator | **Done**, for the engine's sun calculation and for a sun placed in a level. See "Step 1.10". |
 | 1.11 | 1,000-lumen light, illuminance at 1 m | **Done.** See "Step 1.11". |
 | 1.12 | Lumen World Cache and overlapping glass, on and off | **Part done.** Overlapping glass measured. For Lumen World Cache the owner approved the saved setting and the restart it needs (00:17 on 2026-11-11); it is to be tried after the import's outcome is recorded, with its own restart, so that the two changes are not mixed. See "Step 1.12" and "How to resume". |
 | 1.13 | Two-hour soak | **Not run, by the owner's decision; moved to Phase 9, where it runs on the finished scene** (`PLAN.md`, step 9.11). A run was started at 00:02:43 on 2026-11-11 and stopped at 00:09:58 on the owner's instruction, after 7 of 120 walks, with no crash. It is not a result. Its short log is kept in `review\phase1\soak\` as a trial of the soak script. The trial showed two faults in the script, both now corrected and neither re-run; see `PROJECT_MEMORY.md`. |
@@ -159,7 +159,19 @@ How it was done:
 
 The plan's hand-calculated figures (about 46 degrees, bearing about 242) agree.
 
-Not yet covered: this checks the calculation. A sun actually placed in a level also applies a north offset, which is the value Phase 2 measures. That placement is checked in the scratch level once it exists.
+**The same check on a sun placed in a level**, made on 2026-11-11 in the scratch level `L_P1_LightUnits` with the engine's sun-and-sky actor, which was removed again afterwards:
+
+| Reading | Bearing (degrees) | Height (degrees) |
+|---|---|---|
+| The placed sun, read from the direction of its light | 241.80 | 46.48 |
+| NOAA for 2026 | 241.67 | 46.34 |
+| Difference | 0.13 | 0.14 |
+
+Three things this showed, all for Phase 8:
+
+1. **The actor's north setting must be 180 in this project.** With its north offset at 0 the actor takes the level's +X as north. This project's levels have north at -X. At 180 the light comes from the right direction. Whatever Phase 2 measures for the street's turn from true north is added to that. The existing production level has 35, the engine's template value.
+2. **The actor's year cannot be set on a placed sun.** It is fixed at 2019 inside the actor's Blueprint (its editable definition), and the editor refuses a change on the placed copy. That is why the placed sun is 0.13 degree from NOAA where the bare calculation is 0.05. Either the Blueprint's default is changed, or 0.15 degree is accepted.
+3. The actor's daylight-saving dates are also 2019's (10 March to 3 November). For 15 August that makes no difference.
 
 Record: `review\phase1\sun_check.json`.
 
