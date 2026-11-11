@@ -1,0 +1,210 @@
+{
+ "info": {
+  "engine": "5.9.0-60351404+++UE5+Release-5.9",
+  "level": "/Game/Wieland/R15_Landscape/L_R15_Production",
+  "date": "2026-11-10",
+  "viewport_pixels": [
+   2038,
+   782
+  ],
+  "viewport_fov_deg": 90,
+  "screen_percentage": 100,
+  "scalability": "Epic (every sg group at 3), as in the October benchmark",
+  "game_view": true,
+  "realtime": true,
+  "as_found_before_capture": {
+   "Slate.bAllowThrottling": "1",
+   "sg.LandscapeQuality": "4",
+   "r.Streaming.PoolSize": "3000",
+   "r.Editor.Viewport.ScreenPercentage": "100",
+   "r.ScreenPercentage.MaxResolution": "0",
+   "r.Editor.Viewport.MaxRenderingResolution": "2160"
+  }
+ },
+ "started_unix": 1794369770.4981096,
+ "finished_unix": 1794369830.5950453,
+ "warmup_seconds": 8.0,
+ "csv_folder": "D:/Unreal_Engine_Projects/Wieland1527 5.9/Saved/Profiling\\CSV",
+ "error": null,
+ "jobs": [
+  {
+   "name": "front_context",
+   "kind": "view",
+   "job": {
+    "name": "front_context",
+    "kind": "view",
+    "loc": [
+     -15259.844,
+     -3627.884,
+     319.824
+    ],
+    "target": [
+     -16900.0,
+     -6500.0,
+     700.0
+    ],
+    "seconds": 10.0,
+    "cvars": {
+     "sg.ViewDistanceQuality": 3,
+     "sg.AntiAliasingQuality": 3,
+     "sg.ShadowQuality": 3,
+     "sg.GlobalIlluminationQuality": 3,
+     "sg.ReflectionQuality": 3,
+     "sg.PostProcessQuality": 3,
+     "sg.TextureQuality": 3,
+     "sg.EffectsQuality": 3,
+     "sg.FoliageQuality": 3,
+     "sg.ShadingQuality": 3,
+     "r.Streaming.PoolSize": 1000,
+     "r.Editor.Viewport.ScreenPercentage": 100,
+     "Slate.bAllowThrottling": 0,
+     "t.MaxFPS": 0,
+     "r.VSync": 0
+    }
+   },
+   "wall_start_unix": 1794369778.5288987,
+   "recorded_seconds": 10.002808000001096,
+   "ticks": 1158,
+   "foreground_fraction": 1.0,
+   "tick_ms_mean": 8.638596371305216,
+   "tick_ms_p95": 10.403800755739212,
+   "tick_ms_max": 19.522402435541153,
+   "camera_first": {
+    "loc": [
+     -15259.844,
+     -3627.884,
+     319.824
+    ],
+    "rot_pitch_yaw_roll": [
+     6.557124933445489,
+     -119.72904114807653,
+     1.0591072834633902e-07
+    ]
+   },
+   "camera_last": {
+    "loc": [
+     -15259.844,
+     -3627.884,
+     319.824
+    ],
+    "rot_pitch_yaw_roll": [
+     6.557124933445489,
+     -119.72904114807653,
+     1.0591072834633902e-07
+    ]
+   },
+   "new_csv_files": [
+    "Profile(20261110_220258).csv"
+   ],
+   "tick_ms_series": null
+  },
+  {
+   "name": "dense_planting",
+   "kind": "view",
+   "job": {
+    "name": "dense_planting",
+    "kind": "view",
+    "loc": [
+     -17400.0,
+     -4800.0,
+     130.0
+    ],
+    "target": [
+     -17600.0,
+     -5160.0,
+     45.0
+    ],
+    "seconds": 10.0
+   },
+   "wall_start_unix": 1794369798.5515723,
+   "recorded_seconds": 10.004603600000337,
+   "ticks": 1188,
+   "foreground_fraction": 1.0,
+   "tick_ms_mean": 8.422528280679023,
+   "tick_ms_p95": 9.359098970890045,
+   "tick_ms_max": 15.234902501106262,
+   "camera_first": {
+    "loc": [
+     -17400.0,
+     -4800.0,
+     130.0
+    ],
+    "rot_pitch_yaw_roll": [
+     -11.661987625120766,
+     -119.05460409907714,
+     -1.8641950509040491e-07
+    ]
+   },
+   "camera_last": {
+    "loc": [
+     -17400.0,
+     -4800.0,
+     130.0
+    ],
+    "rot_pitch_yaw_roll": [
+     -11.661987625120766,
+     -119.05460409907714,
+     -1.8641950509040491e-07
+    ]
+   },
+   "new_csv_files": [
+    "Profile(20261110_220318).csv"
+   ],
+   "tick_ms_series": null
+  },
+  {
+   "name": "block_overview",
+   "kind": "view",
+   "job": {
+    "name": "block_overview",
+    "kind": "view",
+    "loc": [
+     -18900.0,
+     -2900.0,
+     1800.0
+    ],
+    "target": [
+     -16500.0,
+     -9000.0,
+     300.0
+    ],
+    "seconds": 10.0
+   },
+   "wall_start_unix": 1794369818.5807683,
+   "recorded_seconds": 10.003214399999706,
+   "ticks": 1197,
+   "foreground_fraction": 0.0,
+   "tick_ms_mean": 8.357975018851041,
+   "tick_ms_p95": 8.840598165988922,
+   "tick_ms_max": 11.26759871840477,
+   "camera_first": {
+    "loc": [
+     -18900.0,
+     -2900.0,
+     1800.0
+    ],
+    "rot_pitch_yaw_roll": [
+     -12.888954637406618,
+     -68.52320902045962,
+     -1.1840273335594739e-07
+    ]
+   },
+   "camera_last": {
+    "loc": [
+     -18900.0,
+     -2900.0,
+     1800.0
+    ],
+    "rot_pitch_yaw_roll": [
+     -12.888954637406618,
+     -68.52320902045962,
+     -1.1840273335594739e-07
+    ]
+   },
+   "new_csv_files": [
+    "Profile(20261110_220338).csv"
+   ],
+   "tick_ms_series": null
+  }
+ ]
+}

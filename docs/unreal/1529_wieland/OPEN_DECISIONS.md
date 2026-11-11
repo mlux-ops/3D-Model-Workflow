@@ -41,7 +41,7 @@ The owner answered these one at a time after the first report. Where an answer d
 | The four units | Two mirrored, identically finished halves; each has a triplex below and a penthouse above. One triplex and one penthouse are refined; the other half reuses that work mirrored. | Halves the "all four units" effort. |
 | Animation | Two continuous 30-second moves with no cut inside either: one through a triplex, ending with 10 seconds on its rear covered and uncovered patios; one through a penthouse, ending with 10 seconds on its roof deck. Each shows the circulation through the whole unit. Rendered with the real-time renderer at its highest settings. | Settles decision 13. These two moves are also the interior performance paths. |
 | Build order | Surroundings first, as the phases are numbered. | No change. |
-| Engine cache | On D:, capped at 20 GB. H: turned out to be an external USB hard disk, so it holds archives and rendered frames only. | Done on 2026-11-10: the Windows user variable `UE-LocalDataCachePath` points to `D:\UE_DerivedDataCache`, and the cache was seen filling there after the restart. About 9.2 GB of old cache data is still on C: and is no longer used; deleting it is the owner's call. Settles decision 9 and plan step 1.4. |
+| Engine cache | On D:, capped at 20 GB. H: turned out to be an external USB hard disk, so it holds archives and rendered frames only. | Done on 2026-11-10: the Windows user variable `UE-LocalDataCachePath` points to `D:\UE_DerivedDataCache`, and the cache was seen filling there after the restart. The old cache data (9.4 GB) was deleted on 2026-11-10 with the owner's approval. It was stored on E: through a folder link, so the space was freed on E:, not C:. Settles decision 9 and plan step 1.4. |
 | Drive upload | Everything, including the Unreal project archive of about 30 GB. | Settles decision 12. |
 | Temporary files from the planning session | Left in place. | Settles decision 10, apart from the access key in the earlier work's log, which is still the owner's to restrict or replace. |
 
@@ -106,7 +106,7 @@ They are ordered by how much each could change the plan.
 
 ### 9. Disk layout
 
-- **What was measured on 2026-11-10:** free space is C: 20.8 GB, D: 61.0 GB, E: 57.2 GB, H: 233.7 GB. The engine keeps 10.5 GB of processed-asset data on C:. The project copy holds 10 GB of content from other projects.
+- **What was measured on 2026-11-10:** free space is C: 20.8 GB, D: 61.0 GB, E: 57.2 GB, H: 233.7 GB. The engine kept 10.5 GB of processed-asset data in a folder under the user profile that is a link to `E:\AppData-Moved\UnrealEngine`, so it was on E:, not C: as first reported. The project copy holds 10 GB of content from other projects.
 - **Recommended default:** the owner sets the environment variable `UE-LocalDataCachePath` to a folder on H: so that the cache leaves C:; the unrelated content is removed from the working copy; archives and offline frames go to H:.
 - **If H: is a slow hard disk:** the cache goes to D: instead with a 20 GB cap, which leaves D: at 31 GB free against its 25 GB floor. E: has no room for it.
 - **Not yet known:** whether that variable moves the 10.5 GB at all. Epic's page names a different default folder from the one the data sits in. Phase 1 step 1.4 measures it.

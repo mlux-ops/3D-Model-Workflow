@@ -186,9 +186,9 @@ Free space was measured on 2026-11-10. Caps are proposals; every download behind
 
 | Drive | Free now (GB) | Planned change (GB) | Free afterwards (GB) | Floor to keep free (GB) |
 |---|---|---|---|---|
-| C: | 20.8 | Nothing new is written here. The engine keeps 10.5 GB of data under the user profile on C:. Step 1.4 tests whether Epic's documented variable moves it to D:; if it does, up to 10.5 is freed. | 20.8, or up to about 31 if the move works | 15 |
+| C: | 20.8 | Nothing new is written here. The engine's data folder under the user profile is a link to `E:\AppData-Moved\UnrealEngine`, so the engine cache was never on C:. Free space on C: fell from 20.8 to 18.6 during 2026-11-10; the cause has not been looked into. | 18.6, measured at 22:40 on 2026-11-10 | 15 |
 | D: | 61.0 | Working project grows by up to 20. Engine cache moved here from C:, capped at 20. Unrelated content removed from the working copy (frees 10). | 31.0 | 25 |
-| E: | 57.2 | Site data 6 (lidar up to 4, county extracts 1.5, other 0.5); owner's photographs 5; texture sources 10; profiles, evidence and review renders 10. Total 31. | 26.2 | 25 |
+| E: | 57.2 at first; 66.8 after 9.4 of old engine cache was deleted on 2026-11-10 | Site data 6 (lidar up to 4, county extracts 1.5, other 0.5); owner's photographs 5; texture sources 10; profiles, evidence and review renders 10. Total 31. | 35.8 | 25 |
 | H: | 233.7 | H: is an external USB hard disk, so no cache goes here. The latest two project archives at up to 30 each, 60; offline frames 45 (1,800 frames at about 25 MB); packaged builds 15. Total 120. | 113.7 | 50 |
 
 Already on D: and counted in "free now": engine 5.9 (33.5 GB), the 5.8 project (22.1 GB) and the 5.9 copy (17.2 GB). Once the engine is chosen, the unused project copy moves to an H: archive.
@@ -209,7 +209,7 @@ Each is asked at the step that needs it. None has been asked or done yet.
 |---|---|---|---|
 | Start the editor's agent server | Owner | none | none |
 | Update engine 5.8.3 to 5.8.4 | Not needed: the owner committed to 5.9 | none | none |
-| Set `UE-LocalDataCachePath` to a folder on D: so the engine cache leaves C: | Owner | moves about 10.5 GB to D: | none |
+| Set `UE-LocalDataCachePath` to a folder on D: | Done on 2026-11-10 at the owner's request | none | none |
 | Remove the 651 Belmont and beech-tree content from the working project copy | Agent, after approval | frees 10 GB | none |
 | Download 2022 lidar tiles for the block | Agent, after approval | estimated 4 GB or less; confirmed on the tile page first | none |
 | Download county parcel, 2022 footprint and 2025 aerial extracts for the block | Agent, after approval | 1.5 GB or less | none |
@@ -247,7 +247,7 @@ Each is asked at the step that needs it. None has been asked or done yet.
 | 1.1 | Make the agent server start with the editor (the per-user setting `bAutoStartServer`). Open Claude Code in the editor's terminal, confirm the model shows as `claude-fable-5-2` (pinned by `D:\Unreal_Engine_Projects\Wieland1527 5.9\.claude\settings.json`), and confirm a read-only tool call succeeds. After approval, place the pointer file in the project folder. | Editor Preferences; the editor's terminal | Owner sets; Agent confirms |
 | 1.2 | List the tool sets the server offers and record them. On 2026-11-10 it listed 115. | `unreal-mcp` skill: `list_toolsets` | Agent |
 | 1.3 | Finish the live audit: read the material on every part of the existing level | `unreal-mcp` skill, read-only | Agent |
-| 1.4 | Move the engine cache off C: by setting `UE-LocalDataCachePath` to a folder on D:; restart editor and launcher; measure whether the 10.5 GB under the user profile shrinks and new cache files land on D: | Windows environment variable; folder sizes | Owner sets; Agent measures |
+| 1.4 | Done on 2026-11-10: `UE-LocalDataCachePath` is set to `D:\UE_DerivedDataCache`, and the engine's cache server reports that folder. Confirm it is still in use and stays under its 20 GB cap | Folder sizes | Agent |
 | 1.5 | Archive the 5.9 project copy to H: before its first save in this plan | File copy | Agent, after approval to write to H: |
 | 1.6 | Run the existing three-view timing and the fixed exterior path; save profile M0 under `docs\unreal\1529_wieland\profiles\` | Editor's performance tools through the agent server | Agent |
 | 1.7 | Import the Datasmith file into a scratch level. Count the imported objects and lights against the file (3,562 and 587) and check one known dimension: the first floor is 2.032 m above grade | Datasmith importer through Python | Agent |
@@ -276,7 +276,7 @@ Each is asked at the step that needs it. None has been asked or done yet.
 - 5.9 is an unstable preview, and the owner has chosen to work around its defects. Each workaround narrows what the scene can show, so each is reported as it is adopted.
 - The Datasmith file was written at the Unreal 5.3 level and may not import cleanly into 5.9.
 - The agent server is experimental and does not start by itself unless set to.
-- The cache does not move, or the move is skipped, and C: fills during shader compilation.
+- C: has under 19 GB free and shrank during 2026-11-10. If it nears its 15 GB floor, find what is writing to it before continuing.
 - Preview defects appear later. Mitigation: archive the project to H: at every milestone.
 
 **Leaves behind.** Profile M0; the completed live audit appended to `SITE_MODEL_AUDIT.md`; `phase1_results.md`; a tested import and reimport method.
