@@ -1,0 +1,128 @@
+# Engine notes: Unreal Engine features the plan depends on
+
+Read on 2026-11-10 unless a row says otherwise. Companion to [PLAN.md](PLAN.md).
+
+## How to read this file
+
+Each row gives a feature, its status, where that was read, and one of three evidence classes:
+
+- **Read** means the status was read on the named page. It has not been tried in the editor.
+- **Observed** means it was seen on this workstation on 2026-11-10 (installed files, the running editor's log, the project file).
+- **Needs test** means the page is silent, ambiguous, or the feature is too new to trust without running it. The test is named in the last column and is scheduled in Phase 1 of the plan.
+
+Two cautions apply to every row:
+
+1. Epic's documentation site serves the same page under each engine version. A page titled "Unreal Engine 5.9 Documentation" had body text identical to its 5.8 version in the three cases compared (Lumen, Nanite Foliage, Substrate). A 5.9 title therefore does not show that Epic re-checked the page for 5.9.
+2. The pages were read through a fetch tool that returns short fragments. Text in quotation marks is a verbatim fragment. Everything else is paraphrase.
+
+## The release itself
+
+| Fact | Status | Source | Evidence |
+|---|---|---|---|
+| 5.9 Preview is not an ordinary preview | Epic titles it "Unreal Engine 5.9 MegaJam Preview" and says "This isn't a typical Unreal Engine Preview." It "should be considered as unstable until the final release". Epic recommends copying projects, not converting them. It was built in about a week with a shorter test pass than usual. | https://forums.unrealengine.com/t/unreal-engine-5-9-megajam-preview/2852840 (posted 2026-11-09) | Read |
+| Release notes | Titled "Unreal Engine 5.9 Preview Release Notes", "Last updated 11/9/26". Short page. No Known Issues section. | https://dev.epicgames.com/documentation/unreal-engine/unreal-engine-5-9-release-notes | Read |
+| Not mentioned anywhere in the 5.9 notes | Datasmith, Revit, Substrate, MegaLights, Path Tracer, Temporal Super Resolution, DLSS, sky, atmosphere, clouds, fog, exposure, virtual textures, Nanite tessellation, Procedural Vegetation Editor, Georeferencing, Cesium | same page, several passes | Read (absence) |
+| Known issues listed by Epic | Mostly the new web target, editor crashes (UE-411502, UE-410941, UE-411097) and MCP defaults (UE-412135). No Lumen, Nanite, Substrate or DirectX 12 issue is listed. With a short test pass, that absence is weak evidence of stability. | forum thread above | Read |
+| Hands-on reviews of rendering stability | None found on 2026-11-10 | two web searches | Read (absence) |
+| Latest stable release | Unreal Engine 5.8, announced 2026-06-17. Latest hotfix found: 5.8.4 (forum post dated 2026-10-20 on the topic page). | https://forums.unrealengine.com/t/unreal-engine-5-8-released/2729274 and https://forums.unrealengine.com/t/5-8-4-hotfix-released/2842775 | Read |
+| Installed on this workstation | 5.9.0 at `D:\Games\UE_5.9` (33.5 GB measured). 5.8.3 at `D:\Games\Unreal Engine\UE_5.8` (one hotfix behind 5.8.4). Twinmotion 2024.1.2 at `D:\Games\Twinmotion2024.1`. The Fab plugin is installed for both engines. | launcher manifests in `C:\ProgramData\Epic\EpicGamesLauncher\Data\Manifests` | Observed |
+| Asset compatibility | Assets saved by a newer engine do not open in an older one (owner's statement, consistent with Epic's advice to copy rather than convert). | kickoff brief; forum thread above | Read |
+
+## Rendering and lighting
+
+| Feature | Status in 5.9 Preview | Source | Evidence | Test still needed |
+|---|---|---|---|---|
+| Lumen global illumination and reflections | Unlabeled (treated by Epic as a standard feature). "Uses Hardware Ray Tracing for Lumen features when supported by the video card, RHI, and operating system." (RHI is the engine's layer that talks to the graphics driver, here DirectX 12.) | https://dev.epicgames.com/documentation/en-us/unreal-engine/lumen-global-illumination-and-reflections-in-unreal-engine?application_version=5.9 | Read | Compare against a path-traced frame at each reference view |
+| Lumen hardware ray tracing | Unlabeled. Needs an NVIDIA RTX 2000 series card or newer and DirectX 12. "Lumen Hardware Ray Tracing now requires SM6 to be set in Project Settings." (SM6 is Shader Model 6, a DirectX 12 feature level; the existing project's settings file already targets it.) | https://dev.epicgames.com/documentation/en-us/unreal-engine/lumen-technical-details-in-unreal-engine?application_version=5.9 and https://dev.epicgames.com/documentation/unreal-engine/hardware-and-software-specifications-for-unreal-engine | Read | Confirm it is on in the project |
+| Lumen World Cache (new in 5.9) | No status label. "Lumen World Cache is a way for Lumen to store the lighting it finds when rays hit surfaces." "It requires Hardware Ray Tracing and is turned on per project." No setting name or console variable is given, and no documentation page beyond the release notes exists. | 5.9 release notes | Needs test | Find the setting, then measure quality against the path tracer and cost in milliseconds, on and off |
+| Order-independent transparency for overlapping glass (new in 5.9; Epic's name is Adaptive Voxel-Based Order Independent Transparency) | No status label. It "blends overlapping translucent surfaces, such as glass, smoke and particles, correctly". "Translucent materials need to output only their own colour for it to composite correctly." | 5.9 release notes | Needs test | Window-behind-window and glass-railing cases at the reference views |
+| Nanite geometry | Unlabeled. Supports opaque and masked materials. | https://dev.epicgames.com/documentation/en-us/unreal-engine/nanite-virtualized-geometry-in-unreal-engine?application_version=5.9 | Read | None beyond normal use |
+| Nanite culling improvements (new in 5.9) | No label. "Scenes get the benefit automatically with no content changes, and the gains grow with scene size." | 5.9 release notes | Read | Shows up, or not, in the fixed-path profile |
+| Nanite Foliage | **Experimental.** "Learn to use this Experimental feature, but use caution when shipping with it." "Nanite Foliage is not enabled by default for projects." An older page still calls Nanite foliage Beta, so Epic's pages disagree. | https://dev.epicgames.com/documentation/en-us/unreal-engine/nanite-foliage?application_version=5.9 | Read | One street tree, close and far, with and without it |
+| Dynamic Wind | **Experimental plugin.** Simulates each bone on the graphics card. "Only has support for global wind direction." | 5.9 release notes; Nanite Foliage page | Read | Frame cost with the block's trees moving |
+| Procedural Vegetation Editor | **Experimental.** "It is not enabled by default and must be turned on for each project that uses it." Already enabled in the existing project. | https://dev.epicgames.com/documentation/unreal-engine/procedural-vegetation-editor-in-unreal-engine?application_version=5.9; project file | Read, Observed | Whether it can produce the species the site needs |
+| Nanite tessellation (displacement) | **Experimental.** "There is currently no solution for crack-free displacement." "Scalar displacement only." | https://dev.epicgames.com/documentation/en-us/unreal-engine/working-with-naniteenabled-content?application_version=5.9 | Read | Brick and stone relief under grazing light, checked for cracks at mesh seams |
+| Virtual Shadow Maps | Unlabeled. 5.9 adds a debug overview mode. | https://dev.epicgames.com/documentation/en-us/unreal-engine/virtual-shadow-maps-in-unreal-engine?application_version=5.9 | Read | None beyond normal use |
+| MegaLights (many shadowed lights at once) | The 5.9 notes are silent. The 5.8 notes say "Megalights is now entering Production Ready status with Unreal Engine 5.8." Not compatible with the forward renderer. | https://dev.epicgames.com/documentation/en-us/unreal-engine/unreal-engine-5-8-release-notes?application_version=5.8 | Read for 5.8; Needs test in 5.9 | Interior evening view with every fixture on |
+| Substrate materials | No page-level label. "Substrate is enabled by default for any newly created project." "Platform support and testing is currently incomplete." Existing projects keep the older material path unless they opt in. In the Path Tracer it "Has Beta support". | https://dev.epicgames.com/documentation/en-us/unreal-engine/overview-of-substrate-materials-in-unreal-engine?application_version=5.9 | Read | Whether the existing project has it on; one glass and one coated-metal material in both the real-time renderer and the Path Tracer |
+| Path Tracer | No page-level label. "The Path Tracer requires Hardware Ray Tracing to be enabled for the project." Volumetric clouds are only "Partially" supported. The 5.8.4 hotfix fixed "missing specular profile in certain substrate materials". | https://dev.epicgames.com/documentation/en-us/unreal-engine/path-tracer-in-unreal-engine?application_version=5.9 | Read | Three clean renders of one reference view without a crash; sky and cloud appearance against the real-time sky |
+| Ray-traced translucency | Unlabeled. "The translucent shadow is treated as opaque, meaning no colored shadows or light transmission through the material." | https://dev.epicgames.com/documentation/en-us/unreal-engine/hardware-ray-tracing-in-unreal-engine?application_version=5.9 | Read | Window glass at the frontal reference view |
+| Temporal Super Resolution (Epic's built-in upscaler) | Unlabeled. | https://dev.epicgames.com/documentation/en-us/unreal-engine/temporal-super-resolution-in-unreal-engine?application_version=5.9 | Read | Quality at 67 percent internal resolution on foliage and brick |
+| NVIDIA DLSS plugin | Builds exist for 5.5 to 5.8 only (plugin 8.9.0, October 2026). **No 5.9 build.** | https://developer.nvidia.com/rtx/dlss/get-started | Read | None; unavailable on 5.9 |
+| Sky Atmosphere, Volumetric Clouds, height fog | Unlabeled. Clouds are not ray traced: the system "only takes into account the clouds as rendered into the Sky Light." | Sky Atmosphere, Volumetric Cloud and Exponential Height Fog pages with `?application_version=5.9` | Read | None beyond normal use |
+| Light fixture photometric files (IES profiles) | Unlabeled. | https://dev.epicgames.com/documentation/en-us/unreal-engine/using-ies-light-profiles-in-unreal-engine?application_version=5.9 | Read | One manufacturer file on one fixture, measured in the editor |
+| Physical light units | **Page did not load** (only a table of contents came back). | https://dev.epicgames.com/documentation/en-us/unreal-engine/physical-lighting-units-in-unreal-engine | Needs test | Set a sun at about 100,000 lux and a known lamp in lumens; confirm exposure behaves |
+| Exposure from physical camera settings | Unlabeled. Manual metering uses one fixed value; "Apply Physical Camera Exposure" derives it from aperture, shutter and sensitivity (paraphrase). | https://dev.epicgames.com/documentation/en-us/unreal-engine/auto-exposure-in-unreal-engine?application_version=5.9 | Read | None beyond normal use |
+| Virtual textures | Unlabeled for both the streaming and runtime kinds. | https://dev.epicgames.com/documentation/en-us/unreal-engine/virtual-texturing-in-unreal-engine?application_version=5.9 | Read | Memory effect in the video-memory budget |
+| Lighting documentation | Epic states the lighting pages were reviewed by AI against the 5.9 source and that "Some suggestions still require SME and verification approvals". Treat lighting pages as leads. | 5.9 release notes | Read | n/a |
+
+## Revit to Unreal
+
+| Feature | Status | Source | Evidence | Test still needed |
+|---|---|---|---|---|
+| Datasmith exporter inside Revit | "As of Unreal Engine 5.3, Autodesk now manages newer versions of the Revit exporter plugin" "and is shipped directly in Revit 2024+." | https://dev.epicgames.com/documentation/unreal-engine/datasmith-supported-software-and-file-types | Read | Confirm the command exists in the installed Revit 2025.4 |
+| Which engine a Revit 2025 export targets | Epic does not say. A reseller's guide dated 2026-05-01 says the exporter built into Revit 2025 is at the "UE 5.3" level. Epic's general rule: "Always use the version of an export plugin that matches the Unreal Engine and Datasmith plugin versions", although an older file "may" import into a newer engine. | Epic page above; https://resources.imaginit.com/support-blog/revit-to-twinmotion-compatibility-guide (third party) | Needs test | **First risk to settle.** Export one small view from Revit 2025 and import it into both 5.8 and 5.9 |
+| Revit 2025 export may ask for Twinmotion | Forum reports say Revit 2025 asked users to install Twinmotion before exporting. Epic staff replied "You do not have to install a plugin on Revit version above 2023." No fix shown. Twinmotion 2024.1.2 is installed here, which may satisfy it. | https://forums.unrealengine.com/t/unreal-engine-5-4-datasmith-plugin-with-revit-2025/2010708 | Read (community) | Seen during the test export |
+| Datasmith importer plugin | No status or deprecation label. Enabled in the existing project. | https://dev.epicgames.com/documentation/unreal-engine/datasmith-plugins-for-unreal-engine; project file | Read, Observed | The import test above |
+| Reimport keeps Unreal-side work | "Datasmith **always** recreates all Parent Material Assets". Meshes, textures and material instances are recreated "only if you have modified them" in the source. "When Datasmith recreates an Asset, it may overwrite changes that you've made to that Asset in Unreal!" Material assignments on meshes and actors are overrides and are kept: "You should never lose any changes you make to properties on your Assets and Actors." | https://dev.epicgames.com/documentation/unreal-engine/datasmith-reimport-workflow-in-unreal-engine | Read | Change one wall in Revit, re-export, reimport, and count surviving assignments |
+| Live link from Revit (Datasmith Direct Link) | **Beta.** "Learn to use this **Beta** feature, but use caution when shipping with it." | https://dev.epicgames.com/documentation/unreal-engine/using-datasmith-direct-link-in-unreal-engine | Read | Not used by the plan |
+| Import recipes (Dataprep) | No status label. "Make reusable recipes that import assets and prepare them for real-time rendering." | https://dev.epicgames.com/documentation/unreal-engine/dataprep-import-customization-in-unreal-engine | Read | Whether a recipe can swap Revit materials for library materials by name |
+| Datasmith replaced by another importer | No official statement found. | Datasmith pages above | Read (absence) | n/a |
+
+## Site, sun and surroundings
+
+| Feature | Status | Source | Evidence | Test still needed |
+|---|---|---|---|---|
+| Georeferencing plugin | No status label. "Unreal Engine comes with a Georeferencing plugin". | https://dev.epicgames.com/documentation/unreal-engine/georeferencing-a-level-in-unreal-engine | Read | Round-trip three known points between map coordinates and level coordinates |
+| Sun Position Calculator plugin | No status label. Takes latitude, longitude, time zone, north offset, date and time. Already enabled in the existing project. A daylight-saving setting is not mentioned on the page. | https://dev.epicgames.com/documentation/unreal-engine/geographically-accurate-sun-positioning-tool-in-unreal-engine; project file | Read, Observed | Compare its sun azimuth and altitude with the NOAA solar calculator for one date and time, to 0.5 degree |
+| Cesium for Unreal (streams Google's 3D city tiles) | Latest release 2.31.0 (2026-11-02) supports "Unreal Engine v5.6, v5.7, and v5.8". **No 5.9 support.** | https://github.com/CesiumGS/cesium-unreal/releases | Read | None; unavailable on 5.9. See SOURCES.md for the terms that govern the tiles |
+| Procedural Content Generation framework | No status label. 5.9 adds a Concave Hull node. | https://dev.epicgames.com/documentation/unreal-engine/procedural-content-generation-framework-in-unreal-engine | Read | None beyond normal use |
+| Level instances and packed level actors | No status label. | https://dev.epicgames.com/documentation/unreal-engine/level-instancing-in-unreal-engine | Read | None |
+
+## Agent access to the editor
+
+| Feature | Status | Source | Evidence | Test still needed |
+|---|---|---|---|---|
+| Unreal MCP (the server inside the editor that lets an outside agent run editor tools) | **Experimental.** "Unreal MCP is Experimental." "Auto-start is on by default, so the MCP server starts every time the editor launches." Default address `http://127.0.0.1:8000/mcp`. Console command to start it: `ModelContextProtocol.StartServer`. "There's no authentication layer, so don't expose the server beyond the local machine." | https://dev.epicgames.com/documentation/unreal-engine/unreal-mcp-in-unreal-editor | Read | See next row |
+| Unreal MCP on this workstation | At 19:00 on 2026-11-10 the plugin was loaded in the open 5.9 editor but the editor listened on no port. After the owner restarted the editor at 19:23, the server answered at `http://127.0.0.1:8000/mcp` and reported engine 5.9.0 and project `Wieland1527 5.9`. Epic's page says auto-start is on by default; the installed skill's setup notes say "The default is for the MCP server to stay stopped." The first observation agrees with the skill. The 5.8 project's per-user settings hold `bAutoStartServer=True`; the 5.9 copy's did not when checked. Epic lists a known issue about MCP defaults (UE-412135). | editor log; port checks; a handshake with the server, 2026-11-10 | Observed | Set auto-start in the 5.9 copy and confirm after a restart |
+| Tool sets offered by the running server | 115 tool sets were listed on 2026-11-10. They include tools for actors, levels, assets, materials and material instances, textures, static meshes, scene capture, performance capture (frame-time file, statistics, per-pass GPU profiler), console variables and logs, configuration settings, Python (`execute_python`), procedural content, the Procedural Vegetation Editor, source control, Fab, automation tests and project skills, plus top-level tools that trigger Movie Render Graph renders. This confirms the tool sets the kickoff brief named. Epic's page names only some of them. | `list_toolsets` on the running server | Observed | Try one read-only tool from each set the plan uses |
+| How tools are found and run | The server advertises `list_toolsets`, `describe_toolsets`, `describe_tools` and `call_tool`. Each tool declares whether it reads, writes or executes. The Python tool takes a code block, runs on the editor's main thread, and returns the script's final expression. Two read-only scripts ran successfully on 2026-11-10. | the server's own tool list and the Python tool's usage notes | Observed | n/a |
+| Claude Code plugin `unreal-engine-skills-for-claude-code`, version 3.1.2 | Installed by the owner at 19:25 on 2026-11-10 under `C:\Users\cowey\.claude\plugins\cache\claude-plugins-official\`. It holds three skills: `unreal-mcp` (working in a live editor), `unreal-skill` (writing skills that live in an Unreal project) and `create-toolset` (writing new tools). Its text names a `describe_toolset` tool; the 5.9 server's tool is `describe_toolsets`. It requires the `AllToolsets` plugin for the full tool list and advises one port per open editor. It describes an optional helper program that keeps a session alive across editor restarts; that program is not present in this 5.9 install. A plugin installed during a session loads when the next session starts. | the plugin's files | Observed | Confirm the skills appear in the next session's skill list |
+| Running Claude Code from inside the editor | Epic documents that "Unreal Editor starts the agent as a local program and communicates with it over the Agent Client Protocol (ACP)" and that "The editor connects the agent to this editor's Unreal MCP server, so you don't need a client config file." The owner plans to work this way. | https://dev.epicgames.com/documentation/unreal-engine/run-external-ai-agents-in-the-unreal-assistant-panel-in-unreal-engine and the Unreal MCP page | Read | Open Claude Code in the editor's terminal and make one read-only tool call; check which other connections (browser, Revit, Drive) that session has |
+| Tool sets named by Epic | Named on the page: navigation mesh, scene capture, console, widget finder, performance ("Perf (CSV and GPU profiler, Stats)"), input, plus authoring of Blueprints, materials, procedural content and Sequencer content, a geometry tool set and a Python tool (`execute_python`). | Unreal MCP page; https://dev.epicgames.com/documentation/unreal-engine/using-python-with-ai-agents-in-unreal-engine | Read | Superseded by the observed list above |
+| Movie rendering through the agent | "Unreal Canvas Bridge exposes Movie Render Graph rendering to Canvas as MCP tools." Unreal Canvas is experimental. | 5.9 release notes | Read | One still rendered through the tool |
+| Unreal Assistant panel with Claude Code | Supported agents include Claude Code. Permission modes for Claude Code: Manual, Accept edits, Plan, Auto, Bypass permissions (paraphrase). The release notes name a different five-level setting ("Ask, Read, Edit, Auto or Full") that no page defines. | https://dev.epicgames.com/documentation/unreal-engine/run-external-ai-agents-in-the-unreal-assistant-panel-in-unreal-engine | Read | Which setting actually appears in the panel |
+| Fab from an agent | The notes mention only Fab image and mesh *generation*. The running server does list a Fab tool set; what it can do was not read. | 5.9 release notes; `list_toolsets` | Needs test | Only if the owner approves getting an asset from Fab |
+| Python in the editor | 5.9 removes the old Python Foundation Packages plugin and adds control of extra search paths. | 5.9 release notes | Read | Run one read-only script |
+
+## Output and measurement
+
+| Feature | Status | Source | Evidence | Test still needed |
+|---|---|---|---|---|
+| Movie Render Graph (the newer batch renderer) | **Beta.** Has a path-traced renderer node with a denoiser and high-resolution tiling. The older Movie Render Queue presets "can be used interchangeably". | https://dev.epicgames.com/documentation/unreal-engine/movie-render-pipeline-in-unreal-engine and https://dev.epicgames.com/documentation/unreal-engine/movie-render-graph-nodes-in-unreal-engine | Read | One 3840 x 2160 path-traced still, timed |
+| Unreal Insights and `stat gpu` | No status label. `stat gpu` "Displays GPU statistics for the frame." | https://dev.epicgames.com/documentation/unreal-engine/unreal-insights-in-unreal-engine and https://dev.epicgames.com/documentation/unreal-engine/stat-commands-in-unreal-engine | Read | None |
+| Frame-by-frame capture to a spreadsheet file (CSV profiler) and the per-pass GPU profiler | Current pages did not load. The earlier work on this project already captured such files in 5.8, so the tools exist. | earlier release notes at `D:\Unreal_Engine_Projects\Wieland1527 5.9\R15_README.md` | Observed (5.8) | Re-run the same capture in the chosen engine |
+| Local cache of processed assets | Epic's page gives the default as `C:\ProgramData\Epic\Zen\Data\` and says it can be moved: "You can also set an environment variable of `UE-LocalDataCachePath` to a path of your choice." On this workstation that folder is nearly empty and 10.5 GB of engine data sits in `C:\Users\cowey\AppData\Local\UnrealEngine`. The variable is not set. | https://dev.epicgames.com/documentation/unreal-engine/using-derived-data-cache-in-unreal-engine; measured 2026-11-10 | Read, Observed | After the owner approves moving it, confirm new cache files land on the chosen drive |
+| Engine install size | Epic publishes no figure. Measured here: 5.9.0 occupies 33.5 GB. | measured 2026-11-10 | Observed | n/a |
+| Hardware Epic recommends | 32 GB of memory, 8 GB or more of video memory, a ray-tracing-capable card for Lumen and MegaLights. This workstation meets it. | https://dev.epicgames.com/documentation/unreal-engine/hardware-and-software-specifications-for-unreal-engine | Read | n/a |
+
+## Long-standing features the plan uses without having read a 5.9 page
+
+No page was read on 2026-11-10 for any of these. Each is ordinary engine equipment of many years' standing, and each is marked **Needs test** in the phase that first uses it.
+
+| Feature | First used in | Test |
+|---|---|---|
+| Decals and layered materials (for weathering) | Phase 5 | One stained wall rendered in both tiers |
+| Texture streaming pool (the 4.0 GB budget line) | Phase 5 and Phase 9 | Pool size and overflow warnings in the profile |
+| Sub-levels (one per building part, zone and lighting condition) | Phase 3 | Load and unload each without errors |
+| Refracting glass in the Path Tracer | Phase 5 and Phase 8 | One window rendered path-traced |
+| Editor read-out of illuminance in lux | Phase 1, step 1.12 | The 79.6 lux check itself |
+| Packaging a project for Windows | Phase 11 | The packaged build is run and profiled by itself in step 11.5 |
+
+## What could not be read
+
+- Any Epic statement on Datasmith or Revit in 5.9.
+- The setting that turns Lumen World Cache on.
+- Epic's physical light units page, the current profiler pages, and the dedicated Dynamic Wind page (each returned only a table of contents).
+- Definitions of the Unreal Assistant's access levels.
+- Autodesk's help page for the Revit 2025 export command (the link returned "not found").
