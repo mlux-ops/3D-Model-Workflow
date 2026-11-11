@@ -15,6 +15,8 @@ Companion to [PLAN.md](PLAN.md). This file is written as each step finishes, so 
 5. **The existing site model is in the right place** (within 0.25 m, turned about 1.1 degrees) with heights typically 1.1 m low, and it has no building directly behind the lot.
 6. **The county's parcel is 1.1 to 1.2 ft deeper than the record lot.** Its front line is right and its rear line is not; do not take lot depth from it.
 
+**Why Phase 3 was not begun in the same chat.** At 16:01 the editor held 23.4 GB, which is the plan's memory budget for it, and free commit was 14.3 GB. An import on top of that would have run close to the 12 GB floor that stopped the editor once already. The editor restart the owner has said will be made frees that memory, and it ends the chat that ran Phases 1 and 2. The opening prompt for the next chat is `KICKOFF_PHASE3.md`: after the restart, paste it into a new chat in the Assistant panel.
+
 ## Acceptance list
 
 | Line | Target | Result | Status |
@@ -311,6 +313,7 @@ New:
 - `docs\unreal\1529_wieland\phase2_results.md` (this file)
 - `docs\unreal\1529_wieland\site_survey.csv`
 - `docs\unreal\1529_wieland\site_gaps.md`
+- `docs\unreal\1529_wieland\KICKOFF_PHASE3.md` (the opening prompt for the next chat)
 - `docs\unreal\1529_wieland\review\phase2\level_frame.json`
 - `docs\unreal\1529_wieland\review\phase2\site_analysis.json`
 - `docs\unreal\1529_wieland\review\phase2\site_neighbours.csv`
