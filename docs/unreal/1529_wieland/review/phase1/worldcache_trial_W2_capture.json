@@ -1,0 +1,249 @@
+{
+ "info": {
+  "step": "1.12 Lumen World Cache trial W2: Allowed 0, 1, 0, 1 at S1, Lit view mode (W1 in the opposite order)",
+  "viewport_pixels": [
+   2038,
+   782
+  ],
+  "quality": "Epic, pool 1000, SP 100, t.MaxFPS 1000, Game View on (left in force from W1)",
+  "station": "S1",
+  "view_mode": "<ViewModeIndex.VMI_LIT: 3>",
+  "r.Lumen.WorldCache.Supported": "true",
+  "r.Lumen.HardwareRayTracing": "1"
+ },
+ "started_unix": 1794423164.9285223,
+ "finished_unix": 1794423273.0300276,
+ "warmup_seconds": 15.0,
+ "csv_folder": "D:/Unreal_Engine_Projects/Wieland1527 5.9/Saved/Profiling\\CSV",
+ "error": null,
+ "jobs": [
+  {
+   "name": "worldcache_W2_off_S1_a",
+   "kind": "view",
+   "job": {
+    "name": "worldcache_W2_off_S1_a",
+    "kind": "view",
+    "loc": [
+     -16236.7,
+     -3650.0,
+     158.2
+    ],
+    "rot": [
+     12.0,
+     -90.0,
+     0.0
+    ],
+    "seconds": 10.0,
+    "cvars": {
+     "r.Lumen.WorldCache.Allowed": 0
+    }
+   },
+   "wall_start_unix": 1794423179.938257,
+   "recorded_seconds": 10.005415000006906,
+   "ticks": 1175,
+   "foreground_fraction": 1.0,
+   "tick_ms_mean": 8.520676338292184,
+   "tick_ms_p95": 14.909900724887848,
+   "tick_ms_max": 19.844699651002884,
+   "camera_first": {
+    "loc": [
+     -16236.7,
+     -3650.0,
+     158.2
+    ],
+    "rot_pitch_yaw_roll": [
+     12.0,
+     -90.0,
+     0.0
+    ]
+   },
+   "camera_last": {
+    "loc": [
+     -16236.7,
+     -3650.0,
+     158.2
+    ],
+    "rot_pitch_yaw_roll": [
+     12.0,
+     -90.0,
+     0.0
+    ]
+   },
+   "new_csv_files": [
+    "Profile(20261111_125259).csv"
+   ],
+   "tick_ms_series": null
+  },
+  {
+   "name": "worldcache_W2_on_S1_a",
+   "kind": "view",
+   "job": {
+    "name": "worldcache_W2_on_S1_a",
+    "kind": "view",
+    "loc": [
+     -16236.7,
+     -3650.0,
+     158.2
+    ],
+    "rot": [
+     12.0,
+     -90.0,
+     0.0
+    ],
+    "seconds": 10.0,
+    "cvars": {
+     "r.Lumen.WorldCache.Allowed": 1
+    }
+   },
+   "wall_start_unix": 1794423206.9654763,
+   "recorded_seconds": 10.00250230000529,
+   "ticks": 1195,
+   "foreground_fraction": 1.0,
+   "tick_ms_mean": 8.372825605475255,
+   "tick_ms_p95": 15.724200755357742,
+   "tick_ms_max": 19.66959983110428,
+   "camera_first": {
+    "loc": [
+     -16236.7,
+     -3650.0,
+     158.2
+    ],
+    "rot_pitch_yaw_roll": [
+     12.0,
+     -90.0,
+     0.0
+    ]
+   },
+   "camera_last": {
+    "loc": [
+     -16236.7,
+     -3650.0,
+     158.2
+    ],
+    "rot_pitch_yaw_roll": [
+     12.0,
+     -90.0,
+     0.0
+    ]
+   },
+   "new_csv_files": [
+    "Profile(20261111_125326).csv"
+   ],
+   "tick_ms_series": null
+  },
+  {
+   "name": "worldcache_W2_off_S1_b",
+   "kind": "view",
+   "job": {
+    "name": "worldcache_W2_off_S1_b",
+    "kind": "view",
+    "loc": [
+     -16236.7,
+     -3650.0,
+     158.2
+    ],
+    "rot": [
+     12.0,
+     -90.0,
+     0.0
+    ],
+    "seconds": 10.0,
+    "cvars": {
+     "r.Lumen.WorldCache.Allowed": 0
+    }
+   },
+   "wall_start_unix": 1794423233.9804783,
+   "recorded_seconds": 10.005269999994198,
+   "ticks": 1175,
+   "foreground_fraction": 1.0,
+   "tick_ms_mean": 8.526510637491308,
+   "tick_ms_p95": 14.582198113203049,
+   "tick_ms_max": 24.349600076675415,
+   "camera_first": {
+    "loc": [
+     -16236.7,
+     -3650.0,
+     158.2
+    ],
+    "rot_pitch_yaw_roll": [
+     12.0,
+     -90.0,
+     0.0
+    ]
+   },
+   "camera_last": {
+    "loc": [
+     -16236.7,
+     -3650.0,
+     158.2
+    ],
+    "rot_pitch_yaw_roll": [
+     12.0,
+     -90.0,
+     0.0
+    ]
+   },
+   "new_csv_files": [
+    "Profile(20261111_125353).csv"
+   ],
+   "tick_ms_series": null
+  },
+  {
+   "name": "worldcache_W2_on_S1_b",
+   "kind": "view",
+   "job": {
+    "name": "worldcache_W2_on_S1_b",
+    "kind": "view",
+    "loc": [
+     -16236.7,
+     -3650.0,
+     158.2
+    ],
+    "rot": [
+     12.0,
+     -90.0,
+     0.0
+    ],
+    "seconds": 10.0,
+    "cvars": {
+     "r.Lumen.WorldCache.Allowed": 1
+    }
+   },
+   "wall_start_unix": 1794423261.0044842,
+   "recorded_seconds": 10.001413899997715,
+   "ticks": 1198,
+   "foreground_fraction": 1.0,
+   "tick_ms_mean": 8.349099247801881,
+   "tick_ms_p95": 15.864796936511993,
+   "tick_ms_max": 19.297897815704346,
+   "camera_first": {
+    "loc": [
+     -16236.7,
+     -3650.0,
+     158.2
+    ],
+    "rot_pitch_yaw_roll": [
+     12.0,
+     -90.0,
+     0.0
+    ]
+   },
+   "camera_last": {
+    "loc": [
+     -16236.7,
+     -3650.0,
+     158.2
+    ],
+    "rot_pitch_yaw_roll": [
+     12.0,
+     -90.0,
+     0.0
+    ]
+   },
+   "new_csv_files": [
+    "Profile(20261111_125421).csv"
+   ],
+   "tick_ms_series": null
+  }
+ ]
+}
