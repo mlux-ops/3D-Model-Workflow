@@ -290,36 +290,109 @@ To restore: copy the two folders back from `H:\Wieland1529_archives\2026-11-10_p
 
 | # | Step | What | Size on disk | Cost |
 |---|---|---|---|---|
-| 1 | 1.14 | Say whether the level `Content\L_Belmont_Production_RECOVERY_20261006.umap` may be deleted with the two approved folders. It is the only asset that refers to the Belmont folder. | Frees 1.12 MB | None |
-| 2 | 1.1 | Say whether to keep the pointer file `CLAUDE.md`, which was written without explicit approval | Under 2 KB | None |
-| 3 | 1.8 | Move one interior wall about a foot in Revit (any one change you can name will do), export the same 3D view as `25-006_1527_N_Wieland-3DView-3D_View_188_r2.udatasmith` into `E:\Claude\3D-Model-Workflow\references\1529 Wieland - Datasmith\`, and say which element changed. Needed only if the import can be made to work. | 0.67 GB on E: | None |
-| 4 | 1.12 | Lumen World Cache can only be tried by saving a project-wide rendering setting and restarting the editor; say whether to do that | A few bytes in `Config\DefaultEngine.ini` | None; shaders recompile after the restart |
-| 5 | - | The panel was in Bypass permissions, by the owner's report. The plan advises a mode that asks first. | None | None |
+| 1 | 1.7 | **Yes or no** to adding the line `r.Material.UseShaderCompilationParameters=0` at the end of the section `[/Script/Engine.RendererSettings]` in `D:\Unreal_Engine_Projects\Wieland1527 5.9\Config\DefaultEngine.ini`, followed by an editor restart. It is Epic's temporary workaround for the assertion that crashes the import. It is project-wide, changes no asset, and is undone by deleting the line. | 45 bytes; the shader rebuild time and cache growth it causes are to be measured | None |
+| 2 | 1.14 | Say whether the level `Content\L_Belmont_Production_RECOVERY_20261006.umap` may be deleted. It is the only asset that pointed at the Belmont folder, and it now points at 792 deleted assets. | Frees 1.12 MB | None |
+| 3 | 1.1 | Say whether to keep the pointer file `CLAUDE.md`, which was written without explicit approval | Under 2 KB | None |
+| 4 | 1.8 | Move one interior wall about a foot in Revit (any one change you can name will do), export the same 3D view as `25-006_1527_N_Wieland-3DView-3D_View_188_r2.udatasmith` into `E:\Claude\3D-Model-Workflow\references\1529 Wieland - Datasmith\`, and say which element changed. Needed only if the import can be made to work. | 0.67 GB on E: | None |
+| 5 | 1.12 | Lumen World Cache can only be tried by saving a project-wide rendering setting and restarting the editor; say whether to do that | A few bytes in `Config\DefaultEngine.ini` | None; shaders recompile after the restart |
+| 6 | - | The panel was in Bypass permissions during the first session, by the owner's report. The plan advises a mode that asks first. | None | None |
 
 ## How to resume
 
 1. Read this file, then the last section of `PROJECT_MEMORY.md`.
-2. Confirm the level has no unsaved changes before doing anything.
-3. Open: step 1.7 (the import; the next attempt is described under "Step 1.7" and needs the owner's yes) and step 1.8 (the reimport rehearsal, which depends on it). The soak is not part of Phase 1.
-4. Everything else waits for the archive on H:.
+2. Confirm the open level has no unsaved changes before doing anything. Never save `L_R15_Production`.
+3. The import, step 1.7. Only after the owner's yes: add the line named above, ask the owner to restart the editor, and confirm that `r.Material.UseShaderCompilationParameters` reads 0. Record how long shaders then compile and how much `D:\UE_DerivedDataCache` grows (it held 2.00 GB at 23:51 on 2026-11-10). Journal the import as attempt 4 under "Step 1.7" and commit before making it. Import with `tools\wieland_datasmith.py` into `/Game/Wieland1529/Scratch/L_P1_DatasmithImport`. If it crashes, stop importing, take the line out again, and record the plan's fallback, the FBX route, as the workaround.
+4. If the import works: count objects and lights with `wieland_datasmith.count_level()`; check the known dimension (top of element 12330199 against the top of `Site_GRADE_GRADE`, expected 203.2 cm); save the scratch level and the assets under `/Game/Wieland1529/Scratch/P1` by name; then assign 20 materials and rehearse the reimport with the owner's second export.
+5. The soak is not part of Phase 1. It is step 9.11 of the plan.
 
-## Files written so far
+## What was saved or changed in the project
 
-In `E:\Claude\3D-Model-Workflow\.claude\worktrees\1529-wieland-scene-plan-e84a03\`:
+In `D:\Unreal_Engine_Projects\Wieland1527 5.9\`:
 
-- `docs\unreal\1529_wieland\phase1_results.md` (this file)
-- `docs\unreal\1529_wieland\SITE_MODEL_AUDIT.md` (section appended)
-- `docs\unreal\1529_wieland\site_model_audit_materials.json`
-- `docs\unreal\1529_wieland\profiles\2026-11-10_M0\profile.md`, and beside it the capture records `capture_A_views_epic_sp100`, `capture_B_views`, `capture_C_path`, `capture_D_path_warm` (each a `.json` and a `.analysis.json`), `gpu_passes_stations.json`, `gpu_passes_stations.summary.json`, and 20 compressed logs in `csv\`
+| Item | What |
+|---|---|
+| `CLAUDE.md` | New. The pointer file; written without explicit approval and waiting for the owner's word. |
+| `Content\Wieland1529\Scratch\L_P1_DatasmithImport.umap` | New. An empty scratch level for the import. |
+| `Content\Wieland1529\Scratch\L_P1_LightUnits.umap` | New. The light-check level: one card, one point light, one hidden reference light, one capture camera. |
+| `Content\Wieland1529\Scratch\M_P1_Lambert50.uasset` | New. The matte 50 percent grey material on the card. |
+| `Content\Belmont\`, `Content\EuropeanBeech\` | Deleted, with the owner's approval. 9.88 GB. Copies are in the H: archive. |
+| `Saved\Profiling\CSV\` | 24 measurement logs written by the engine's profiler, named `Profile(2026111...)`. |
+| `Saved\Crashes\` | Written by the engine: two crash records (23:32 and 23:45, the import) and two warning records (22:02 and 22:40, harmless, from the viewport's real-time switch). |
+| Everything under `Content\Wieland\`, the level `L_R15_Production`, and every settings file | Not changed. Nothing was saved over. |
+
+On H:, with the owner's approval: `H:\Wieland1529_archives\2026-11-10_pre-phase1\Wieland1527 5.9\` (11,657 files, 17.24 GB), the project as it stood before any of the above.
+
+## Files written in the plan's working copy
+
+In `E:\Claude\3D-Model-Workflow\.claude\worktrees\1529-wieland-scene-plan-e84a03\`. Changed: `PROJECT_MEMORY.md` (entries appended), `docs\unreal\1529_wieland\SITE_MODEL_AUDIT.md` (section appended), `docs\unreal\1529_wieland\PLAN.md` (the soak moved from Phase 1 to Phase 9). New:
+
+- `docs\unreal\1529_wieland\phase1_results.md`
+- `docs\unreal\1529_wieland\profiles\2026-11-10_M0\capture_A_views_epic_sp100.analysis.json`
+- `docs\unreal\1529_wieland\profiles\2026-11-10_M0\capture_A_views_epic_sp100.json`
+- `docs\unreal\1529_wieland\profiles\2026-11-10_M0\capture_B_views.analysis.json`
+- `docs\unreal\1529_wieland\profiles\2026-11-10_M0\capture_B_views.json`
+- `docs\unreal\1529_wieland\profiles\2026-11-10_M0\capture_C_path.analysis.json`
+- `docs\unreal\1529_wieland\profiles\2026-11-10_M0\capture_C_path.json`
+- `docs\unreal\1529_wieland\profiles\2026-11-10_M0\capture_D_path_warm.analysis.json`
+- `docs\unreal\1529_wieland\profiles\2026-11-10_M0\capture_D_path_warm.json`
+- `docs\unreal\1529_wieland\profiles\2026-11-10_M0\csv\block_overview.csv.gz`
+- `docs\unreal\1529_wieland\profiles\2026-11-10_M0\csv\cinematic_sp100_block_overview.csv.gz`
+- `docs\unreal\1529_wieland\profiles\2026-11-10_M0\csv\cinematic_sp100_dense_planting.csv.gz`
+- `docs\unreal\1529_wieland\profiles\2026-11-10_M0\csv\cinematic_sp100_front_context.csv.gz`
+- `docs\unreal\1529_wieland\profiles\2026-11-10_M0\csv\cinematic_sp152_block_overview.csv.gz`
+- `docs\unreal\1529_wieland\profiles\2026-11-10_M0\csv\cinematic_sp152_dense_planting.csv.gz`
+- `docs\unreal\1529_wieland\profiles\2026-11-10_M0\csv\cinematic_sp152_front_context.csv.gz`
+- `docs\unreal\1529_wieland\profiles\2026-11-10_M0\csv\dense_planting.csv.gz`
+- `docs\unreal\1529_wieland\profiles\2026-11-10_M0\csv\epic_sp100_block_overview.csv.gz`
+- `docs\unreal\1529_wieland\profiles\2026-11-10_M0\csv\epic_sp100_dense_planting.csv.gz`
+- `docs\unreal\1529_wieland\profiles\2026-11-10_M0\csv\epic_sp100_front_context.csv.gz`
+- `docs\unreal\1529_wieland\profiles\2026-11-10_M0\csv\epic_sp152_block_overview.csv.gz`
+- `docs\unreal\1529_wieland\profiles\2026-11-10_M0\csv\epic_sp152_dense_planting.csv.gz`
+- `docs\unreal\1529_wieland\profiles\2026-11-10_M0\csv\epic_sp152_front_context.csv.gz`
+- `docs\unreal\1529_wieland\profiles\2026-11-10_M0\csv\front_context.csv.gz`
+- `docs\unreal\1529_wieland\profiles\2026-11-10_M0\csv\path_cinematic_sp152.csv.gz`
+- `docs\unreal\1529_wieland\profiles\2026-11-10_M0\csv\path_epic_sp100.csv.gz`
+- `docs\unreal\1529_wieland\profiles\2026-11-10_M0\csv\path_epic_sp100_warm.csv.gz`
+- `docs\unreal\1529_wieland\profiles\2026-11-10_M0\csv\path_epic_sp152.csv.gz`
+- `docs\unreal\1529_wieland\profiles\2026-11-10_M0\csv\path_epic_sp152_warm.csv.gz`
+- `docs\unreal\1529_wieland\profiles\2026-11-10_M0\gpu_passes_stations.json`
+- `docs\unreal\1529_wieland\profiles\2026-11-10_M0\gpu_passes_stations.summary.json`
+- `docs\unreal\1529_wieland\profiles\2026-11-10_M0\profile.md`
 - `docs\unreal\1529_wieland\review\phase1\agent_server_50_calls.json`
+- `docs\unreal\1529_wieland\review\phase1\archive_2026-11-10_pre-phase1.robocopy.log`
+- `docs\unreal\1529_wieland\review\phase1\csv\oit_off_S1.csv.gz`
+- `docs\unreal\1529_wieland\review\phase1\csv\oit_off_again_S1.csv.gz`
+- `docs\unreal\1529_wieland\review\phase1\csv\oit_on_all_glass_S1.csv.gz`
+- `docs\unreal\1529_wieland\review\phase1\csv\oit_on_default_S1.csv.gz`
+- `docs\unreal\1529_wieland\review\phase1\light_units_check.json`
+- `docs\unreal\1529_wieland\review\phase1\oit_S1_capture.analysis.json`
+- `docs\unreal\1529_wieland\review\phase1\oit_S1_capture.json`
+- `docs\unreal\1529_wieland\review\phase1\oit_S1_difference_x8.png`
+- `docs\unreal\1529_wieland\review\phase1\oit_S1_off_1.png`
+- `docs\unreal\1529_wieland\review\phase1\oit_S1_off_2.png`
+- `docs\unreal\1529_wieland\review\phase1\oit_S1_on_all_glass.png`
+- `docs\unreal\1529_wieland\review\phase1\oit_S1_windows_off_left_on_right.png`
+- `docs\unreal\1529_wieland\review\phase1\pathtracer\S1_pathtraced_4k_run1.0000.png`
+- `docs\unreal\1529_wieland\review\phase1\pathtracer\S1_pathtraced_4k_run2.0000.png`
+- `docs\unreal\1529_wieland\review\phase1\pathtracer\S1_pathtraced_4k_run3.0000.png`
+- `docs\unreal\1529_wieland\review\phase1\pathtracer\S1_pathtraced_run1_preview_1600.png`
+- `docs\unreal\1529_wieland\review\phase1\pathtracer\pathtracer_runs.json`
+- `docs\unreal\1529_wieland\review\phase1\pathtracer\trial1_720p_16spp_nanite_mode0_fallback_meshes.png`
+- `docs\unreal\1529_wieland\review\phase1\pathtracer\trial2_720p_16spp_nanite_mode1_walls_missing.png`
+- `docs\unreal\1529_wieland\review\phase1\pathtracer\trial4_720p_16spp_nanite_mode2_correct.png`
+- `docs\unreal\1529_wieland\review\phase1\soak\soak_loops.jsonl`
+- `docs\unreal\1529_wieland\review\phase1\soak\soak_loops.jsonl.summary.json`
+- `docs\unreal\1529_wieland\review\phase1\soak\soak_system_log.csv`
 - `docs\unreal\1529_wieland\review\phase1\sun_check.json`
-- `docs\unreal\1529_wieland\tools\wieland_profile.py` (runs in the editor; drives the camera and the engine's profiler)
+- `docs\unreal\1529_wieland\site_model_audit_materials.json`
 - `docs\unreal\1529_wieland\tools\analyze_profile_csv.py`
-- `docs\unreal\1529_wieland\tools\reduce_gpu_passes.py`
+- `docs\unreal\1529_wieland\tools\compare_images.py`
 - `docs\unreal\1529_wieland\tools\mcp_readonly_calls_test.py`
-- `PROJECT_MEMORY.md` (entries appended)
+- `docs\unreal\1529_wieland\tools\reduce_gpu_passes.py`
+- `docs\unreal\1529_wieland\tools\wieland_datasmith.py`
+- `docs\unreal\1529_wieland\tools\wieland_profile.py`
+- `docs\unreal\1529_wieland\tools\wieland_render.py`
 
-In `D:\Unreal_Engine_Projects\Wieland1527 5.9\Saved\Profiling\CSV\`, written by the engine's profiler: 20 files named `Profile(20261110_22....).csv`.
 
 ## Appendix: the 109 tool sets
 
