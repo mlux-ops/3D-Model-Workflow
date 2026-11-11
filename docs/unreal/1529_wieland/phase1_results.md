@@ -2,9 +2,9 @@
 
 Companion to [PLAN.md](PLAN.md). This file is written as each step finishes, so a new session can resume from it.
 
-**Status at 00:50 Central on 2026-11-11: in progress.** Six acceptance lines are measured and pass (agent server, baseline, sun, Path Tracer, light units, import). The import passed on the fourth attempt, with Epic's one-line workaround in force. The soak is no longer part of Phase 1. One line is open: the reimport rehearsal, which needs the owner's second export. The Lumen World Cache trial, approved by the owner, follows it.
+**Status at 10:05 Central on 2026-11-11: in progress.** Six acceptance lines are measured and pass (agent server, baseline, sun, Path Tracer, light units, import). The soak is no longer part of Phase 1. One line is open: the reimport rehearsal, which waits for the owner's second export. The Lumen World Cache trial waits for an editor restart. The editor crashed at 00:55 when Windows ran out of virtual memory; nothing was lost.
 
-**Nothing in the Unreal project has been saved.** No asset, level or setting was written. The level `L_R15_Production` has no unsaved changes, and the editor's settings and camera were put back after every measurement. The only files this work wrote inside the project folder are the measurement logs the engine itself writes under `Saved\Profiling\CSV\`.
+**What has been saved in the Unreal project** is listed under "What was saved or changed in the project": three scratch levels' worth of test content under `/Game/Wieland1529/Scratch/`, two lines in `Config\DefaultEngine.ini`, and three deletions the owner approved. The level `L_R15_Production` and everything under `Content\Wieland\` are unchanged and were never saved over.
 
 ## Acceptance list
 
@@ -34,7 +34,7 @@ Companion to [PLAN.md](PLAN.md). This file is written as each step finishes, so 
 | 1.9 | Three path-traced renders of station S1 | **Done.** See "Step 1.9". |
 | 1.10 | Sun direction against the NOAA calculator | **Done**, for the engine's sun calculation and for a sun placed in a level. See "Step 1.10". |
 | 1.11 | 1,000-lumen light, illuminance at 1 m | **Done.** See "Step 1.11". |
-| 1.12 | Lumen World Cache and overlapping glass, on and off | **Part done.** Overlapping glass measured. For Lumen World Cache the owner approved the saved setting and the restart it needs (00:17 on 2026-11-11); it is to be tried after the import's outcome is recorded, with its own restart, so that the two changes are not mixed. See "Step 1.12" and "How to resume". |
+| 1.12 | Lumen World Cache and overlapping glass, on and off | **Part done.** Overlapping glass measured. Lumen World Cache: the setting line is written, a valid reference is captured, and the trial itself waits for an editor restart. See "Step 1.12". |
 | 1.13 | Two-hour soak | **Not run, by the owner's decision; moved to Phase 9, where it runs on the finished scene** (`PLAN.md`, step 9.11). A run was started at 00:02:43 on 2026-11-11 and stopped at 00:09:58 on the owner's instruction, after 7 of 120 walks, with no crash. It is not a result. Its short log is kept in `review\phase1\soak\` as a trial of the soak script. The trial showed two faults in the script, both now corrected and neither re-run; see `PROJECT_MEMORY.md`. |
 | 1.14 | Remove the Belmont and beech content | **Done.** The two folders at 00:01 and, with the owner's further approval, the Belmont recovery level at 00:18 on 2026-11-11. See "Step 1.14". |
 | 1.15 | This file | In progress. |
@@ -366,7 +366,19 @@ Record: `review\phase1\light_units_check.json`.
 
 Cost: 0.3 ms, inside the plan's 1.0 ms limit. Visible difference: none that can be told from the scene's own movement. Inside the windows of 1533 the pictures differ by 2 to 5 levels of 255 with the setting on, against 1 to 3 between two captures with nothing changed (clouds reflected in the glass move). S1 in this scene has no glass behind glass. **Not kept for now**, by the plan's rule; to be judged again where glass overlaps (the Revit building's railings and windows). Captures: `review\phase1\oit_S1_*`.
 
-**Lumen World Cache.** The switch is `r.Lumen.WorldCache.Supported`, found by searching the console variables; it has no entry in Project Settings. It is off, and it is read-only while the editor runs ("is read only!"). Trying it means saving a project-wide rendering setting and restarting, which is the owner's decision. **Not tested.**
+**Lumen World Cache.** The switch is `r.Lumen.WorldCache.Supported`, found by searching the console variables; it has no entry in Project Settings. It is off, and it is read-only while the editor runs ("is read only!"), so it needs a line in the settings file and a restart. The owner approved both at 00:17 on 2026-11-11.
+
+**The trial has not been made.** What exists:
+
+| Item | State |
+|---|---|
+| The setting line | Written at 10:03 on 2026-11-11: `r.Lumen.WorldCache.Supported=True`, line 44 of `Config\DefaultEngine.ini`. No effect until the editor is restarted. |
+| Reference at S1 without the feature | Captured at 09:59, Epic quality, 2038 by 782: **6.11 and 6.06 ms** of graphics-card time (two 10-second captures), with a picture, `review\phase1\worldcache_reference_lit_S1.png` |
+| Captures with the feature on | None yet |
+
+**Two captures taken at 00:52 are not usable and are kept only as a record** (`worldcache_before_capture.*`). They read 2.0 and 2.1 ms because the viewport was in Unlit view mode, which draws flat colours with no light, shadow or sky (`worldcache_invalid_unlit_view_S1.png`). The editor had come back from its 00:32 restart in that mode: its saved layout holds Unlit for the perspective viewport. The view mode was set back to Lit before the reference above. Every capture script must now check the view mode first.
+
+After the restart: confirm `r.Lumen.WorldCache.Supported` reads true, confirm the view mode is Lit, record free memory, then capture S1 with `r.Lumen.WorldCache.Allowed` at 1 and at 0, with timings and pictures. Keep the line only if the difference is visible and costs no more than 1.0 ms; otherwise take it out.
 
 ## Step 1.14: content removal
 
@@ -398,6 +410,17 @@ Because nothing from the folders was loaded, the files were removed directly fro
 To restore any of this: copy it back from `H:\Wieland1529_archives\2026-11-10_pre-phase1\Wieland1527 5.9\Content\`.
 
 
+## Memory before heavy steps
+
+By the owner's instruction of 2026-11-11: before an import, a reimport, a path-traced render or a lighting trial, free physical memory and free commit (the virtual memory Windows can still hand out) are read and written here. Under 12 GB of free commit the step is not started and the owner is told.
+
+| Time | Step about to start | Free physical memory (GB) | Free commit (GB) | Started |
+|---|---|---|---|---|
+| 09:57 on 2026-11-11 | Lighting captures at S1 (reference for the World Cache trial) | 12.3 of 31.1 | 30.0 of 79.1 | Yes |
+
+For the record, readings taken before the rule existed: at 00:46, just before reimport R1, 4.5 GB physical and 8.2 GB commit were free, with the editor at 20.5 GB and Revit at 12.5 GB. At 00:51 commit free was 6.0 GB. The editor crashed at 00:55.
+
+
 ## Findings that bear on the plan
 
 1. **Station S1 as the plan places it is inside a building.** The plan puts the west sidewalk 18 m west of the front lot line, from an assumed 66-foot right-of-way. In the existing model the face of the building on the west side stands about 17.2 m from the front lot line at the lot's centre line, so that point is under its roof. For this baseline the walking line is 14.0 m west of the front lot line, on the modelled sidewalk. Either the model's street is too narrow or the assumption is too wide; Phase 2 measures the real width.
@@ -412,9 +435,9 @@ To restore any of this: copy it back from `H:\Wieland1529_archives\2026-11-10_pr
 
 | # | Step | What | Size on disk | Cost |
 |---|---|---|---|---|
-| 1 | 1.7 | **Restart the editor**, so that the workaround line takes effect. Close it normally and open `Wieland1527.uproject` again. If it offers to restore anything, decline. | None | None; shaders are rebuilt after the start, and the time is measured |
+| 1 | 1.12 | **Restart the editor**, so that the Lumen World Cache line takes effect. Not urgent; it can wait until after the reimport. | None | None; Lumen's shaders are rebuilt after the start |
 | 2 | 1.8 | Move one interior wall about a foot in Revit (any one change you can name will do), export the same 3D view as `25-006_1527_N_Wieland-3DView-3D_View_188_r2.udatasmith` into `E:\Claude\3D-Model-Workflow\references\1529 Wieland - Datasmith\`, and say which element changed. Needed only if the import works. | 0.67 GB on E: | None |
-| 3 | 1.12 | A second restart later, for the Lumen World Cache trial | None | None |
+| 3 | - | Keep Revit and other large programs closed while the editor does heavy work, or say when they are open: the 00:55 crash was Windows running out of virtual memory with both open | None | None |
 
 Answered by the owner at 00:17 on 2026-11-11: yes to the workaround line; yes to deleting the Belmont recovery level; remove the pointer file; yes to trying Lumen World Cache.
 
@@ -429,7 +452,7 @@ Text to give a new session in the editor's panel: "Continue Phase 1 of the 1529 
 5. **Journal the import as attempt 4** in the table under "Step 1.7", with a pending marker, and commit. Then load `/Game/Wieland1529/Scratch/L_P1_DatasmithImport` and import with `tools\wieland_datasmith.py` (`start_import`, assets to `/Game/Wieland1529/Scratch/P1`, lightmap UVs off), writing its record to `review\phase1\datasmith_import_attempt4.json`.
 6. **If it crashes:** by the owner's instruction, stop importing. Take line 43 out of `Config\DefaultEngine.ini` again, record the plan's fallback (the FBX route) as the workaround for the import line and "re-apply assignments by script" for the reimport line, and report. The ways forward and their costs are under "Step 1.7".
 7. **If it works:** count objects and lights with `wieland_datasmith.count_level()` (the file holds 3,562 placed mesh objects and 587 lights; 99.5 percent is 3,545 and 585). Check the known dimension: the top of the object tagged `Revit.Element.Id.12330199` against the top of `Site_GRADE_GRADE`, expected 203.2 cm, within 0.1 cm. Save the scratch level and the assets under `/Game/Wieland1529/Scratch/P1` by name. Then assign 20 materials, save a table of them, and rehearse the reimport with the owner's second export.
-8. **Lumen World Cache**, approved by the owner, after the import's outcome is recorded: add `r.Lumen.WorldCache.Supported=True` to the same section of `Config\DefaultEngine.ini`, ask the owner to restart, then capture station S1 with `r.Lumen.WorldCache.Allowed` at 1 and at 0, with timings. Keep the line only if the difference is visible and costs no more than 1.0 ms at S1; otherwise take it out.
+8. **Lumen World Cache.** The line is written. After the owner's restart, follow the last paragraph of "Step 1.12".
 9. The soak is not part of Phase 1. It is step 9.11 of the plan.
 
 ## What was saved or changed in the project
@@ -438,7 +461,7 @@ In `D:\Unreal_Engine_Projects\Wieland1527 5.9\`:
 
 | Item | What |
 |---|---|
-| `Config\DefaultEngine.ini` | **Changed at 00:18 on 2026-11-11, with the owner's yes:** one line added as line 43, `r.Material.UseShaderCompilationParameters=0`, at the end of the section `[/Script/Engine.RendererSettings]`. To undo: delete that line and restart the editor. No other settings file was changed. |
+| `Config\DefaultEngine.ini` | **Two lines added at the end of `[/Script/Engine.RendererSettings]`, each with the owner's yes.** Line 43, at 00:18 on 2026-11-11: `r.Material.UseShaderCompilationParameters=0`, the workaround the import needs. Line 44, at 10:03: `r.Lumen.WorldCache.Supported=True`, for the World Cache trial; it has no effect until the next editor start and is taken out again if the trial does not justify it. To undo either: delete the line and restart. No other settings file was changed. |
 | `Content\Wieland1529\Scratch\L_P1_DatasmithImport.umap` | New. The scratch level that holds the imported building (12.2 MB). |
 | `Content\Wieland1529\Scratch\P1\` | New. The imported assets: 1,647 files, 0.71 GB (1,294 meshes, 280 materials, 72 textures, 1 Datasmith scene). |
 | `Content\Wieland1529\Scratch\L_P1_LightUnits.umap` | New. The light-check level: one card, one point light, one hidden reference light, one capture camera. |

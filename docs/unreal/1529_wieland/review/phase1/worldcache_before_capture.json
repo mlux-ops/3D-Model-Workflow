@@ -1,0 +1,150 @@
+{
+ "info": {
+  "step": "1.12, Lumen World Cache: reference before the setting is added",
+  "engine": "5.9.0-60351404+++UE5+Release-5.9",
+  "level": "/Game/Wieland/R15_Landscape/L_R15_Production",
+  "date": "2026-11-11",
+  "viewport_pixels": [
+   2038,
+   782
+  ],
+  "viewport_fov_deg": 90,
+  "quality": "Epic (every sg group at 3), texture pool 1000 MB, screen percentage 100, t.MaxFPS 1000, Game View on",
+  "station": "S1 at (-16236.7, -3650, 158.2), yaw -90, pitch up 12",
+  "r.Lumen.WorldCache.Supported": "false",
+  "r.Material.UseShaderCompilationParameters": "0"
+ },
+ "started_unix": 1794379977.7628808,
+ "finished_unix": 1794380021.6802728,
+ "warmup_seconds": 8.0,
+ "csv_folder": "D:/Unreal_Engine_Projects/Wieland1527 5.9/Saved/Profiling\\CSV",
+ "error": null,
+ "jobs": [
+  {
+   "name": "worldcache_not_supported_S1_a",
+   "kind": "view",
+   "job": {
+    "name": "worldcache_not_supported_S1_a",
+    "kind": "view",
+    "loc": [
+     -16236.7,
+     -3650.0,
+     158.2
+    ],
+    "rot": [
+     12.0,
+     -90.0,
+     0.0
+    ],
+    "seconds": 10.0,
+    "cvars": {
+     "sg.ViewDistanceQuality": 3,
+     "sg.AntiAliasingQuality": 3,
+     "sg.ShadowQuality": 3,
+     "sg.GlobalIlluminationQuality": 3,
+     "sg.ReflectionQuality": 3,
+     "sg.PostProcessQuality": 3,
+     "sg.TextureQuality": 3,
+     "sg.EffectsQuality": 3,
+     "sg.FoliageQuality": 3,
+     "sg.ShadingQuality": 3,
+     "sg.LandscapeQuality": 3,
+     "r.Streaming.PoolSize": 1000,
+     "r.Editor.Viewport.ScreenPercentage": 100,
+     "t.MaxFPS": 1000,
+     "Slate.bAllowThrottling": 0,
+     "r.VSync": 0
+    }
+   },
+   "wall_start_unix": 1794379989.6697574,
+   "recorded_seconds": 10.000485600001412,
+   "ticks": 1869,
+   "foreground_fraction": 0.0,
+   "tick_ms_mean": 5.348562654117775,
+   "tick_ms_p95": 7.625598460435867,
+   "tick_ms_max": 28.620898723602295,
+   "camera_first": {
+    "loc": [
+     -16236.7,
+     -3650.0,
+     158.2
+    ],
+    "rot_pitch_yaw_roll": [
+     12.0,
+     -90.0,
+     0.0
+    ]
+   },
+   "camera_last": {
+    "loc": [
+     -16236.7,
+     -3650.0,
+     158.2
+    ],
+    "rot_pitch_yaw_roll": [
+     12.0,
+     -90.0,
+     0.0
+    ]
+   },
+   "new_csv_files": [
+    "Profile(20261111_005309).csv"
+   ],
+   "tick_ms_series": null
+  },
+  {
+   "name": "worldcache_not_supported_S1_b",
+   "kind": "view",
+   "job": {
+    "name": "worldcache_not_supported_S1_b",
+    "kind": "view",
+    "loc": [
+     -16236.7,
+     -3650.0,
+     158.2
+    ],
+    "rot": [
+     12.0,
+     -90.0,
+     0.0
+    ],
+    "seconds": 10.0
+   },
+   "wall_start_unix": 1794380009.6701317,
+   "recorded_seconds": 10.003454300000158,
+   "ticks": 2589,
+   "foreground_fraction": 0.0,
+   "tick_ms_mean": 3.863099150938065,
+   "tick_ms_p95": 5.477800965309143,
+   "tick_ms_max": 11.555798351764679,
+   "camera_first": {
+    "loc": [
+     -16236.7,
+     -3650.0,
+     158.2
+    ],
+    "rot_pitch_yaw_roll": [
+     12.0,
+     -90.0,
+     0.0
+    ]
+   },
+   "camera_last": {
+    "loc": [
+     -16236.7,
+     -3650.0,
+     158.2
+    ],
+    "rot_pitch_yaw_roll": [
+     12.0,
+     -90.0,
+     0.0
+    ]
+   },
+   "new_csv_files": [
+    "Profile(20261111_005329).csv"
+   ],
+   "tick_ms_series": null
+  }
+ ]
+}
