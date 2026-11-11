@@ -211,6 +211,8 @@ Already on D: and counted in "free now": engine 5.9 (33.5 GB), the 5.8 project (
 
 Each is asked at the step that needs it. None has been asked or done yet.
 
+**Standing approval of 2026-11-11.** At about 15:35 the owner answered "B" to a request that named each action, its size and its cost (`phase2_results.md`, "The one approval this phase needs"). It approves, without a further question: the Phase 2 downloads of county and state map data into `E:\Wieland1529_site_data\`; reading sheets T1.1 and T1.4 of the drawing set on the owner's Google Drive and keeping a copy of them there; and the rows of the table below that cost nothing, inside the caps the table gives, namely public-domain textures (10 GB in total), manufacturers' light-distribution files (under 50 MB), a Python package where one proves necessary, and render frames, packaged builds and project archives to H: as budgeted. A session that uses it records each use, with its size, in the phase's results file. **Still asked each time:** anything with a price (the Fab and library rows), any deletion, and any push or merge. Not covered, because not named in the request: creating an account or key, and Google's 3D city tiles.
+
 | Action | Who acts | Size on disk | Cost |
 |---|---|---|---|
 | Start the editor's agent server | Owner | none | none |

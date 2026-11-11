@@ -76,6 +76,14 @@ The square is 300 m on a side, centred between the two parcel centres: east 1,17
 
 **Where it would be written:** `E:\Wieland1529_site_data\`, a new folder outside every repository, with a text file beside each download naming its address, its date and its terms. Not into the repository: the county's terms leave redistribution unclear (`SOURCES.md`), and both the plan's working copy and the main checkout's `references\` folder are under git.
 
+### The downloads
+
+Each is written here before it is made, as in Phase 1.
+
+| No. | Time | What is done | Outcome |
+|---|---|---|---|
+| D1 | 15:42 on 2026-11-11 | With the owner's approval: create `E:\Wieland1529_site_data\` and fetch the five extracts into it with `tools\fetch_site_data.py` (a 300 m square, snapped outward to each image service's own pixel grid, nearest-neighbour sampling, each file beside a text file naming its address, time, box, checksum and terms). Then copy sheets T1.1 and T1.4 out of the drawing set, which is on the owner's Google Drive and reachable on this machine as `F:\Shared drives\SHB Jobs\25-006 1529 N Wieland\5-Drawings\PDFs\20260722_Progress\25-006 1527 N Wieland_Arch_20260722.pdf` (42.5 MB), into `E:\Wieland1529_site_data\drawings\`. The whole set is not copied. | SITE_DATA_D1_OUTCOME_PENDING: if this line still reads so, the session ended during the downloads; look in the folder for `fetch_record.json` |
+
 ## The one approval this phase needs
 
 Asked of the owner at 15:30 on 2026-11-11, as one request, by the plan's rule "Ask first" and the owner's instruction to this session.
@@ -86,6 +94,8 @@ Asked of the owner at 15:30 on 2026-11-11, as one request, by the plan's rule "A
 | Read the survey sheet T1.1 and the site plan T1.4 from the drawing set `25-006 1527 N Wieland_Arch_20260722.pdf` on the owner's Google Drive, and keep a copy of those two sheets in the same folder | The size of the file, not yet known; the two sheets are a few MB | None |
 
 Not asked for, because not needed on this route: any package install, raw laser-scan tiles, any change to the Unreal project.
+
+**Approved by the owner at about 15:35 on 2026-11-11, with the answer "B".** The request had offered two answers. A was the two items above only. B, which the owner chose, is those two items **plus a standing approval** for the other items on the plan's approvals list that cost nothing, inside the plan's size caps: public-domain textures (10 GB in total), manufacturers' light-distribution files (under 50 MB), a Python package if one proves necessary, and render frames and project archives to H: as budgeted. Still asked each time: anything with a price, any deletion, and any push or merge. The standing approval is written into `PLAN.md` under "Approvals this plan will ask for".
 
 ## What only the owner can supply, and what happens without it
 
