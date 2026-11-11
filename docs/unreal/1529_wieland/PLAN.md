@@ -256,7 +256,7 @@ Each is asked at the step that needs it. None has been asked or done yet.
 | 1.10 | Compare the engine's sun direction with the NOAA calculator for 15 August, 15:30 Central Daylight Time at the lot centre | Sun Position plugin; NOAA Solar Calculator in a browser | Agent, or Owner if the session has no browser |
 | 1.11 | Place a 1,000-lumen point light in a dark scratch level and read the illuminance at 1 m | Editor's lighting visualization | Agent |
 | 1.12 | Find and switch on Lumen World Cache and the new handling of overlapping glass; capture S1 with each on and off, with timings. Keep each one only if the difference is visible and it adds no more than 1.0 ms at S1 | Project settings; scene capture | Agent |
-| 1.13 | Run the fixed exterior path in a loop for two hours | Editor's performance tools | Agent |
+| 1.13 | Not run in Phase 1. The two-hour soak was meant to help choose between 5.8 and 5.9, and that choice is made. By the owner's decision on 2026-11-11 it moved to Phase 9, step 9.11, where it runs on the finished scene. | n/a | n/a |
 | 1.14 | Remove the unrelated 651 Belmont and beech-tree content from the project, after approval | Editor content browser through the agent server | Agent |
 | 1.15 | Write every result and every workaround into `docs\unreal\1529_wieland\phase1_results.md` | Text editor | Agent |
 
@@ -269,7 +269,7 @@ Each is asked at the step that needs it. None has been asked or done yet.
 - Path Tracer: three renders complete with no crash. Workaround: Lumen at its highest settings stands in as ground truth and is labelled as such.
 - Sun: bearing and height within 0.5 degree of the NOAA values.
 - Light units: the reading is within 10 percent of 79.6 lux.
-- Soak: two hours with no crash and video memory growing by no more than 5 percent.
+- Soak: not run, by the owner's decision on 2026-11-11; moved to Phase 9, where it runs on the finished scene. Phase 1 is complete without it.
 
 **Main risks.**
 
@@ -663,12 +663,14 @@ Each is asked at the step that needs it. None has been asked or done yet.
 | 9.8 | Upscaling: confirm 67 percent internal resolution; compare 60 and 75 percent on foliage and brick | Scene capture | Agent |
 | 9.9 | After each change, run the paths, save the timing, and re-render S1 and D2 to compare with ground truth | Performance tools; image comparison | Agent |
 | 9.10 | Save profile M7 and a change log listing each change with its measured effect in milliseconds and megabytes | `docs\unreal\1529_wieland\profiles\` | Agent |
+| 9.11 | Soak: run the fixed exterior path in a loop for two hours on the finished scene, from a script that writes one line to a file after each walk, and add the result to profile M7. Moved here from Phase 1, step 1.13, by the owner's decision on 2026-11-11. | `docs\unreal\1529_wieland\tools\wieland_profile.py`, function `soak` | Agent |
 
 **Acceptance.**
 
 - Exterior path and interior path: 95th-percentile frame time 16.67 ms or less; no frame over 33.3 ms; graphics-card time 14.5 ms or less on average.
 - Each render pass within its budget, or the overrun is offset by a named pass that is under.
 - Peak video memory 13.0 GB or less.
+- Soak: two hours of the fixed exterior path on the finished scene with no crash, and video memory growing by no more than 5 percent.
 - The Phase 8 real-time tolerance still holds at every view.
 - Every change in the log has a before and an after measurement.
 
@@ -679,7 +681,7 @@ Each is asked at the step that needs it. None has been asked or done yet.
 - No DLSS on 5.9; the engine's own upscaler is the only choice there.
 - A setting that saves time may break the Phase 8 match; step 9.9 exists to catch that.
 
-**Leaves behind.** Profile M7; the change log; the real-time settings recorded as a named configuration.
+**Leaves behind.** Profile M7, including the soak record; the change log; the real-time settings recorded as a named configuration.
 
 ---
 

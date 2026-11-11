@@ -1,0 +1,61 @@
+{
+ "info": {
+  "step": "1.13 two-hour soak",
+  "engine": "5.9.0-60351404+++UE5+Release-5.9",
+  "level": "/Game/Wieland/R15_Landscape/L_R15_Production (unchanged, unsaved)",
+  "viewport_pixels": [
+   2038,
+   782
+  ],
+  "viewport_fov_deg": 90,
+  "quality": "Epic (every sg group at 3), texture pool 1000 MB, screen percentage 100, t.MaxFPS 1000, Game View on",
+  "path": "the fixed exterior path of profile M0, walked 120 times, 60 s each",
+  "started_local": "2026-11-11 00:02:43"
+ },
+ "job": {
+  "name": "soak_path_epic_sp100",
+  "kind": "path",
+  "loc": [
+   -11736.7,
+   -3650.0,
+   158.2
+  ],
+  "end": [
+   -20136.7,
+   -3650.0,
+   158.2
+  ],
+  "target": [
+   -16236.7,
+   -5364.8,
+   303.2
+  ],
+  "seconds": 60.0,
+  "cvars": {
+   "sg.ViewDistanceQuality": 3,
+   "sg.AntiAliasingQuality": 3,
+   "sg.ShadowQuality": 3,
+   "sg.GlobalIlluminationQuality": 3,
+   "sg.ReflectionQuality": 3,
+   "sg.PostProcessQuality": 3,
+   "sg.TextureQuality": 3,
+   "sg.EffectsQuality": 3,
+   "sg.FoliageQuality": 3,
+   "sg.ShadingQuality": 3,
+   "sg.LandscapeQuality": 3,
+   "r.Streaming.PoolSize": 1000,
+   "r.Editor.Viewport.ScreenPercentage": 100,
+   "t.MaxFPS": 1000,
+   "Slate.bAllowThrottling": 0,
+   "r.VSync": 0
+  }
+ },
+ "loops_asked": 120,
+ "loops_finished": 7,
+ "ticks_total": 112351,
+ "ticks_over_33ms_total": 10,
+ "worst_tick_ms": 89.75930511951447,
+ "run_started_unix": 1794376971.0211508,
+ "finished_unix": 1794377398.5230162,
+ "error": " cancelled"
+}
