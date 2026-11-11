@@ -630,6 +630,8 @@ For the record, readings taken before the rule existed: at 00:46, just before re
 
 Done earlier: the owner made the second export at 11:08 on 2026-11-11, restarted the editor at 11:25 and 11:39, and chose the way forward for the reimport.
 
+**Two decisions by the owner, at about 15:20 on 2026-11-11,** in the owner's words: "disregard the missing texture files, it willl be part of your texture audit for replacement. disregard the C; drive space dont let it affect yuor work. continue". Both are written into `PLAN.md` (a rule that C: is not a gate, and the two carry-over rows) and `OPEN_DECISIONS.md` (decision 15). The work then continued with Phase 2; its record is `phase2_results.md`. At 15:22 the editor had not yet been restarted (it was still the process started at 11:39), so the World Cache was still in use in the running editor.
+
 Answered by the owner at 00:17 on 2026-11-11: yes to the workaround line; yes to deleting the Belmont recovery level; remove the pointer file; yes to trying Lumen World Cache.
 
 ## How to resume
