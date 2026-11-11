@@ -2,7 +2,7 @@
 
 Companion to [PLAN.md](PLAN.md). This file is written as each step finishes, so a new session can resume from it.
 
-**Status: in progress, paused at the owner's request on 2026-11-10 at about 22:15 Central.** Steps 1.2 and 1.3 are finished. Step 1.6 is part done. No other step has started. Phase 1 is not complete.
+**Status: in progress.** The session paused at the owner's request from about 22:05 to 22:36 Central on 2026-11-10, while the planning session moved the engine cache to D: and restarted the editor (step 1.4), and then resumed. Steps 1.2, 1.3 and 1.4 are finished. Step 1.6 is part done. Phase 1 is not complete.
 
 **Nothing in the Unreal project was saved.** No asset, level or setting was written. The level `L_R15_Production` has no unsaved changes, and the editor's settings and camera are back as they were found. The only files the work wrote inside the project folder are three measurement files the engine itself writes under `Saved\Profiling\CSV\`.
 
@@ -25,7 +25,7 @@ Companion to [PLAN.md](PLAN.md). This file is written as each step finishes, so 
 | 1.1 | Agent server starts with the editor; model confirmed; pointer file | Server and model confirmed. The server started by itself when the editor launched at 21:18 (the log shows "Starting MCP server on port 8000" on the first frame). `bAutoStartServer` is in none of the project's settings files, so whether that came from the engine's default or from a setting stored elsewhere is not established. Pointer file: waiting for the owner's approval. |
 | 1.2 | List the tool sets | **Done.** 109 tool sets. See below. |
 | 1.3 | Finish the live audit | **Done.** Appended to [SITE_MODEL_AUDIT.md](SITE_MODEL_AUDIT.md). See below. |
-| 1.4 | Move the engine cache off C: | Waiting for the owner's action. |
+| 1.4 | Move the engine cache to D: | **Done by the planning session at 22:05**, with the editor restarted at 22:08. Confirmed by this session at 22:37: `D:\UE_DerivedDataCache` held 1.57 GB in 92 files and was still being written. The plan's cap is 20 GB. The old cache was on E:, not C:; see "Findings" below. |
 | 1.5 | Archive the project to H: | Waiting for the owner's approval. |
 | 1.6 | Baseline profile M0 | **Part done.** Three views captured once at one setting. See below for what is still to capture. |
 | 1.7 | Import the Datasmith file into a scratch level | Not started. Waits for 1.5. |
@@ -126,7 +126,8 @@ A true bearing converts to the level's yaw as: yaw = bearing - 180.
 1. **Station S1 as the plan places it is inside a building.** The plan puts the west sidewalk 18 m west of the front lot line, from an assumed 66-foot right-of-way. In the existing model the face of the building on the west side stands about 17.2 m from the front lot line at the lot's centre line, so that point is under its roof. For this baseline the walking line is 14.0 m west of the front lot line, on the modelled sidewalk. Either the model's street is too narrow or the assumption is too wide; Phase 2 measures the real width.
 2. **The editor was found at Cinematic quality, not Epic.** Every quality group read 4, and the texture pool read 3,000 MB. The October benchmark used 3 and 1,000 MB. Profiles must state which they use.
 3. **The project is larger than the plan records:** 22.4 GB against 17.2 GB. `Intermediate` holds 5.14 GB of files the engine rebuilds.
-4. **Free space moves by gigabytes for reasons outside this work.** C: read 17.05 GB at 21:47 and 19.77 GB at 22:12 (the plan recorded 20.8). H: read 233.72 GB and then 230.62 GB; this work wrote nothing to H:. D: 52.86 GB, E: 57.49 GB.
+4. **Free space on C: moves by gigabytes for reasons outside this work.** C: read 17.05 GB at 21:47, 19.77 GB at 22:12 and 18.87 GB at 22:36 (the plan recorded 20.8). The cause is not known. H: read 233.72 GB and then 230.62 GB; this work wrote nothing to H:. At 22:36, D: had 51.27 GB and E: 66.75 GB.
+4a. **A correction to this session's first message.** It said the engine cache held 9.2 GB on C:, and gave C:'s small margin as the reason to move the cache before the import. That was wrong. `C:\Users\cowey\AppData\Local\UnrealEngine` is a link to `E:\AppData-Moved\UnrealEngine`, so the cache was on E:. The planning session found this at 22:40 and corrected the plan. What writes to C: during an import is therefore unknown, and C: is watched during step 1.7.
 5. **The editor does not slow down when it is in the background** ("Use Less CPU when in Background" is off), which makes captures less sensitive to which window is in front.
 
 ## Waiting on the owner
@@ -135,7 +136,7 @@ A true bearing converts to the level's yaw as: yaw = bearing - 180.
 |---|---|---|---|---|
 | 1 | 1.5 | Approve copying the project to `H:\Wieland1529_archives\2026-11-10_pre-phase1\`, without `Intermediate` and `DerivedDataCache` | 17.2 GB on H: (22.4 GB for a complete copy) | None |
 | 2 | 1.14 | Approve deleting `Content\Belmont` and `Content\EuropeanBeech`, after the archive exists and after a check that no Wieland asset refers to them | Frees 9.88 GB on D: | None |
-| 3 | 1.4 | Set the Windows user variable `UE-LocalDataCachePath` to a folder on D:, then restart the Epic launcher and the editor | The cache on C: is 9.2 GB (`Common\DerivedDataCache` 5.91 GB, `Common\Zen` 3.27 GB) | None; the restart ends the session |
+| 3 | 1.4 | Done on 2026-11-10 | - | - |
 | 4 | 1.8 | Change one element in Revit, export the same 3D view to the same folder under a new name ending `_r2`, and say which element changed | 0.67 GB on E: | None |
 | 5 | 1.1 | Approve a pointer file `CLAUDE.md` in the project folder | Under 2 KB | None |
 | 6 | - | Say what the panel's permission selector shows | None | None |
