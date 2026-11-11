@@ -62,6 +62,20 @@ def _foreground():
         return None
 
 
+def _force_realtime():
+    """Keep the level viewport drawing every frame, also when the editor is not the front window.
+
+    Without this the viewport stops redrawing on every tick while the editor is
+    in the background, and the frame times then measure the editor's interface
+    and not the scene. The first call in an editor run writes a harmless warning
+    record ("No realtime override was found").
+    """
+    try:
+        unreal.get_editor_subsystem(unreal.LevelEditorSubsystem).editor_set_viewport_realtime(True)
+    except Exception as exc:
+        _S["error"] = (_S.get("error") or "") + " realtime: " + repr(exc)
+
+
 def csv_dir():
     saved = unreal.Paths.convert_relative_path_to_full(unreal.Paths.project_saved_dir())
     return os.path.join(saved, "Profiling", "CSV")
@@ -334,6 +348,7 @@ def soak(job, loops, log_path, info=None, warmup_seconds=8.0, csv_every=5, csv_s
         dts=[],
         fg=0,
     )
+    _force_realtime()
     for name, value in (job.get("cvars") or {}).items():
         _cmd("%s %s" % (name, value))
     _place(job, 0.0)
@@ -363,6 +378,7 @@ def start(jobs, result_path, info=None, warmup_seconds=8.0, settle_seconds=2.0):
         started=time.time(),
         handle=None,
     )
+    _force_realtime()
     _S["handle"] = unreal.register_slate_post_tick_callback(_tick)
     total = sum(float(j["seconds"]) + float(warmup_seconds) + float(settle_seconds) for j in jobs)
     return "started %d jobs, about %.0f seconds" % (len(jobs), total)

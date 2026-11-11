@@ -2,7 +2,7 @@
 
 Companion to [PLAN.md](PLAN.md). This file is written as each step finishes, so a new session can resume from it.
 
-**Status at 00:05 Central on 2026-11-11: in progress.** Five of the eight acceptance lines are measured and pass (agent server, baseline, sun, Path Tracer, light units). The Datasmith import has crashed the editor twice on the same assertion; the workaround from Epic needs one line in a project settings file and a restart, and waits for the owner's yes (see "Step 1.7"). The approved content removal is done. The two-hour soak is the next step. Phase 1 is not complete.
+**Status at 00:20 Central on 2026-11-11: in progress.** Five acceptance lines are measured and pass (agent server, baseline, sun, Path Tracer, light units). The soak is no longer part of Phase 1, by the owner's decision. Two lines are open: the Datasmith import, which has crashed the editor twice and waits for the owner's yes to a one-line workaround (see "Step 1.7"), and the reimport rehearsal, which depends on it.
 
 **Nothing in the Unreal project has been saved.** No asset, level or setting was written. The level `L_R15_Production` has no unsaved changes, and the editor's settings and camera were put back after every measurement. The only files this work wrote inside the project folder are the measurement logs the engine itself writes under `Saved\Profiling\CSV\`.
 
@@ -17,7 +17,7 @@ Companion to [PLAN.md](PLAN.md). This file is written as each step finishes, so 
 | Path Tracer | Three renders with no crash | **Three 3840 by 2160 renders completed, 48 to 50 seconds each, no crash.** They are correct only with one ray-tracing setting changed; see "Step 1.9". | **Pass, with a condition** |
 | Sun | Bearing and height within 0.5 degree of NOAA | **Bearing differs by 0.05 degree, height by 0.06 degree.** | **Pass** |
 | Light units | Within 10 percent of 79.6 lux | **79.5 lux** read against a 1,000-lux reference light (0.15 percent low); 76.6 lux if the test card is taken as an ideal matte surface (3.8 percent low) | **Pass** |
-| Soak | Two hours, no crash, video memory growth of 5 percent or less | Not yet measured | Last, because it occupies the editor for two hours |
+| Soak | Two hours, no crash, video memory growth of 5 percent or less | Not run, by the owner's decision; moved to Phase 9, where it runs on the finished scene | **Not part of Phase 1** |
 
 ## Where each step stands
 
@@ -35,7 +35,7 @@ Companion to [PLAN.md](PLAN.md). This file is written as each step finishes, so 
 | 1.10 | Sun direction against the NOAA calculator | **Done** for the engine's sun calculation. The same check on a sun placed in a level is added when the scratch level exists. |
 | 1.11 | 1,000-lumen light, illuminance at 1 m | **Done.** See "Step 1.11". |
 | 1.12 | Lumen World Cache and overlapping glass, on and off | **Part done.** Overlapping glass measured; World Cache needs a saved project setting and a restart. See "Step 1.12". |
-| 1.13 | Two-hour soak | **Started at 00:02:43 on 2026-11-11; due to end at about 02:03.** One line is written to `review\phase1\soak\soak_loops.jsonl` after each of the 120 walks, and `soak_loops.jsonl.summary.json` appears when it ends. If the log stops short and no summary exists, the editor crashed or the soak was stopped at the last line's time. |
+| 1.13 | Two-hour soak | **Not run, by the owner's decision; moved to Phase 9, where it runs on the finished scene** (`PLAN.md`, step 9.11). A run was started at 00:02:43 on 2026-11-11 and stopped at 00:09:58 on the owner's instruction, after 7 of 120 walks, with no crash. It is not a result. Its short log is kept in `review\phase1\soak\` as a trial of the soak script. The trial showed one fault in the script, now corrected; see `PROJECT_MEMORY.md`. |
 | 1.14 | Remove the Belmont and beech content | **Done at 00:01 on 2026-11-11.** See "Step 1.14". |
 | 1.15 | This file | In progress. |
 
@@ -300,7 +300,7 @@ To restore: copy the two folders back from `H:\Wieland1529_archives\2026-11-10_p
 
 1. Read this file, then the last section of `PROJECT_MEMORY.md`.
 2. Confirm the level has no unsaved changes before doing anything.
-3. Steps that need no approval and are still open: 1.9 (path-traced renders), 1.12 (find the two new settings and compare them through console variables, without saving), 1.13 (soak).
+3. Open: step 1.7 (the import; the next attempt is described under "Step 1.7" and needs the owner's yes) and step 1.8 (the reimport rehearsal, which depends on it). The soak is not part of Phase 1.
 4. Everything else waits for the archive on H:.
 
 ## Files written so far
