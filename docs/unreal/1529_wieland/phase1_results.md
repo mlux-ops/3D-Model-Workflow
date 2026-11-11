@@ -290,13 +290,15 @@ Ten on meshes. Each replaces the first material of one imported mesh with the ma
 | 19 | Runs | `Runs_Non-Monolithic_Run_2__Tread_1__Nosing_1_4__Riser_2` | `Finishes_-_Flooring__Oak` |
 | 20 | Electrical Fixtures | `Electrical_Fixtures_33816_33815_PUNT_Black_ceiling_fan_with_DC_motor` | `FARO_Black` |
 
+**An extra check, outside the 20.** Because a reimport rewrites every imported material, three imported materials were also edited directly at 00:49, to learn whether such edits survive: `00_Soffit_2_Color_White`, `KM3054_Grate_Finish` and `z_Miele_Design_Zinc_Steel` each had their colour set to (0.123, 0.456, 0.789) and their glossiness to 0.321, and were saved. Their earlier values are in `review\phase1\reimport_assignments.json`. The next reimport shows whether the edits hold.
+
 ### Reimports
 
 Each reimport is written here before it is made, as with the import.
 
 | No. | Time | What was tried | Outcome |
 |---|---|---|---|
-| R1 | 00:50 | Reimport of the imported scene from the **same, unchanged file**, with the importer's defaults (update the placed objects; do not bring back deleted ones). Purpose: prove the reimport route works in 5.9.0 with the workaround in force, and see whether the 20 assignments survive a reimport in which nothing changed. It does not replace the rehearsal with the owner's changed export. | REIMPORT_R1_OUTCOME_PENDING: if this line still reads so, the editor crashed during reimport R1 |
+| R1 | 00:50 | Reimport of the imported scene from the **same, unchanged file**, with the importer's defaults (update the placed objects; do not bring back deleted ones). Purpose: prove the reimport route works in 5.9.0 with the workaround in force, and see whether the 20 assignments survive a reimport in which nothing changed. It does not replace the rehearsal with the owner's changed export. | **No crash; success in 24.5 seconds at 00:47.** No mesh was imported again, because none had changed. **20 of 20 assignments survived**: 10 of 10 on objects and 10 of 10 on meshes. The level still holds 3,562 mesh objects and 587 lights. The reimport did rewrite all 280 imported materials, 22 textures and 7 light-distribution files, although nothing had changed in the file; they and the level were saved again by name afterwards. Record: `review\phase1\datasmith_reimport_R1.json`. |
 
 
 ## Step 1.9: path-traced renders
