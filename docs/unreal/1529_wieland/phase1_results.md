@@ -35,7 +35,7 @@ Companion to [PLAN.md](PLAN.md). This file is written as each step finishes, so 
 | 1.10 | Sun direction against the NOAA calculator | **Done** for the engine's sun calculation. The same check on a sun placed in a level is added when the scratch level exists. |
 | 1.11 | 1,000-lumen light, illuminance at 1 m | **Done.** See "Step 1.11". |
 | 1.12 | Lumen World Cache and overlapping glass, on and off | **Part done.** Overlapping glass measured; World Cache needs a saved project setting and a restart. See "Step 1.12". |
-| 1.13 | Two-hour soak | Not started. |
+| 1.13 | Two-hour soak | **Started at 00:02:43 on 2026-11-11; due to end at about 02:03.** One line is written to `review\phase1\soak\soak_loops.jsonl` after each of the 120 walks, and `soak_loops.jsonl.summary.json` appears when it ends. If the log stops short and no summary exists, the editor crashed or the soak was stopped at the last line's time. |
 | 1.14 | Remove the Belmont and beech content | **Done at 00:01 on 2026-11-11.** See "Step 1.14". |
 | 1.15 | This file | In progress. |
 
