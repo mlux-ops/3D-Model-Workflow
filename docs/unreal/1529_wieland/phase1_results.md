@@ -2,7 +2,7 @@
 
 Companion to [PLAN.md](PLAN.md). This file is written as each step finishes, so a new session can resume from it.
 
-**Status at 10:05 Central on 2026-11-11: in progress.** Six acceptance lines are measured and pass (agent server, baseline, sun, Path Tracer, light units, import). The soak is no longer part of Phase 1. One line is open: the reimport rehearsal, which waits for the owner's second export. The Lumen World Cache trial waits for an editor restart. The editor crashed at 00:55 when Windows ran out of virtual memory; nothing was lost.
+**Status at 12:45 Central on 2026-11-11: in progress.** Six acceptance lines are measured and pass (agent server, baseline, sun, Path Tracer, light units, import). The soak is no longer part of Phase 1. One line is open: the reimport rehearsal. **Reimport R2 from the owner's second export ran at 11:21 and crashed the editor at 11:22:20; nothing was lost and nothing from it reached disk.** Its cause is read from the engine's source and recorded under "Step 1.8". The Lumen World Cache setting is now in force (the variable reads true after the 11:39 restart) and its trial is next. A new session took over at 12:38: the editor answers, the workaround variable reads 0, no asset is unsaved, and the working copy was clean at commit `e661bb7`. Earlier, the editor crashed at 00:55 when Windows ran out of virtual memory; nothing was lost then either.
 
 **What has been saved in the Unreal project** is listed under "What was saved or changed in the project": three scratch levels' worth of test content under `/Game/Wieland1529/Scratch/`, two lines in `Config\DefaultEngine.ini`, and three deletions the owner approved. The level `L_R15_Production` and everything under `Content\Wieland\` are unchanged and were never saved over.
 
@@ -311,7 +311,33 @@ Each reimport is written here before it is made, as with the import.
 | No. | Time | What was tried | Outcome |
 |---|---|---|---|
 | R1 | 00:50 | Reimport of the imported scene from the **same, unchanged file**, with the importer's defaults (update the placed objects; do not bring back deleted ones). Purpose: prove the reimport route works in 5.9.0 with the workaround in force, and see whether the 20 assignments survive a reimport in which nothing changed. It does not replace the rehearsal with the owner's changed export. | **No crash; success in 24.5 seconds at 00:47.** No mesh was imported again, because none had changed. **20 of 20 assignments survived**: 10 of 10 on objects and 10 of 10 on meshes. The level still holds 3,562 mesh objects and 587 lights. The reimport did rewrite all 280 imported materials, 22 textures and 7 light-distribution files, although nothing had changed in the file; they and the level were saved again by name afterwards. Record: `review\phase1\datasmith_reimport_R1.json`. |
-| R2 | 11:22 on 2026-11-11 | **The rehearsal proper:** reimport from the owner's second export, `25-006_1527_N_Wieland-3DView-3D_View_188_r2.udatasmith`, written 11:08. The owner swapped some light fixtures. Compared with the first file it holds 571 lights against 587, 1,288 meshes against 1,294, 284 materials against 280; 22 placed objects are gone and 14 are new; 13 meshes keep their name with changed content. Method: point the imported scene's recorded source file at the second export, then reimport with the importer's defaults. Workaround line in force. | REIMPORT_R2_OUTCOME_PENDING: if this line still reads so, the editor crashed during reimport R2 |
+| R2 | 11:22 on 2026-11-11 | **The rehearsal proper:** reimport from the owner's second export, `25-006_1527_N_Wieland-3DView-3D_View_188_r2.udatasmith`, written 11:08. The owner swapped some light fixtures. Compared with the first file it holds 571 lights against 587, 1,288 meshes against 1,294, 284 materials against 280; 22 placed objects are gone and 14 are new; 13 meshes keep their name with changed content. Method: point the imported scene's recorded source file at the second export, then reimport with the importer's defaults. Workaround line in force. | **The editor crashed at 11:22:20, 28 seconds into the reimport.** Engine assertion (a built-in self-check that stops the program) `StaticMeshDescriptionBulkData != nullptr`, `StaticMeshSourceData.cpp` line 326, with `DatasmithSceneElement.ReimportScene` on the script stack. Not a memory failure. Nothing reached disk, so R2 gives no count of surviving assignments. Found at 12:38 by the session that took over; see "Reimport R2: the crash and its cause" below. Crash record: `Saved\Crashes\UECC-Windows-86D475F047311BC81EFD42A667941506_0001`. |
+
+### Reimport R2: the crash and its cause
+
+Found at 12:38 on 2026-11-11 by the session that took over from the one that journaled R2. Sources: the editor's log of that run (`Saved\Logs\Wieland1527-backup-2026.11.11-17.22.45.log`; its clock is UTC, six hours ahead of Central), the crash record, and the engine's source files under `D:\Games\UE_5.9\Engine\`. No reimport was repeated to find this.
+
+| Time | What the log shows |
+|---|---|
+| 11:21:44 | The scratch level `L_P1_DatasmithImport` starts to load |
+| 11:21:52.07 | The level has finished loading |
+| 11:21:52.67 | The reimport from the second export is already running: it reads the file, then brings in its textures |
+| 11:22:20.85 | Assertion `StaticMeshDescriptionBulkData != nullptr`, `StaticMeshSourceData.cpp` line 326. The editor stops. |
+
+**The state of the project after the crash: as reimport R1 left it.** Checked at 12:38 without loading anything. `L_P1_DatasmithImport.umap` was last written at 00:48:49. All 1,647 files under `Content\Wieland1529\Scratch\P1\` were last written between 00:39 and 00:48. The asset list holds 1 Datasmith scene, 1,294 meshes, 280 materials, 65 textures and 7 light-distribution files there. The Datasmith scene asset still records the first export as its source file (`25-006_1527_N_Wieland-3DView-3D_View_188.udatasmith`). The 20 assignments are therefore still in place as saved at 00:47, and reimport R1's result (20 of 20) stands.
+
+**The cause, read from the engine's 5.9.0 source.** After a level loads, the editor goes on preparing each of its meshes for drawing in the background; Epic calls this asset compilation. Four facts, each read in the source:
+
+1. When a mesh in the new file has changed and already exists in the project, the reimport makes a copy of the existing mesh, and before copying it takes the mesh's source geometry out of it (`DuplicateStaticMesh`, `DatasmithImporterUtils.cpp` line 1354).
+2. Copying a mesh that is still being prepared in the background forces that preparation to finish first (`UStaticMesh::Serialize`, `StaticMesh.cpp` lines 7689 to 7704).
+3. When preparation of a mesh finishes, the engine tells the Content Browser to refresh what it knows about that mesh (`StaticMeshCompiler.cpp` line 436).
+4. That refresh asks the mesh whether its source geometry is valid. The check at line 326 stops the editor if the geometry is not there, and because of fact 1 it is not.
+
+The crash record's call stack lists the same parts of the engine in the same order: Datasmith importer, object copy, engine, Content Browser, engine. It carries no function names, because the engine's debug files are not installed. So this reading fits everything observed, but it is not proven.
+
+**Why this reimport and not the earlier work.** R2 began 0.6 seconds after the level finished loading, so the level's 1,294 meshes were still being prepared. Reimport R1 ran with the level already open for eight minutes, and it copied no mesh, because no mesh had changed. The first import had no existing mesh to copy. R2 is the first time this project asked 5.9.0 to replace a mesh that was still being prepared. Whether the reimport of a changed mesh works once preparation has finished is not yet known.
+
+**This is a fault in engine 5.9.0, not in the export or the project.** It can be met in real use: reimporting straight after opening a level.
 
 
 ## Step 1.9: path-traced renders
@@ -419,6 +445,7 @@ By the owner's instruction of 2026-11-11: before an import, a reimport, a path-t
 |---|---|---|---|---|
 | 09:57 on 2026-11-11 | Lighting captures at S1 (reference for the World Cache trial) | 12.3 of 31.1 | 30.0 of 79.1 | Yes |
 | 11:17 on 2026-11-11 | Reimport R2 from the second export (Revit open at 6.5 GB, editor at 15.5 GB) | 6.2 of 31.1 | 18.4 of 79.1 | Yes |
+| 12:38 on 2026-11-11 | None yet: the state check of the session that took over (Revit closed, editor at 14.9 GB, started 11:39) | 8.3 of 31.1 | 26.6 of 79.1 | - |
 
 For the record, readings taken before the rule existed: at 00:46, just before reimport R1, 4.5 GB physical and 8.2 GB commit were free, with the editor at 20.5 GB and Revit at 12.5 GB. At 00:51 commit free was 6.0 GB. The editor crashed at 00:55.
 
