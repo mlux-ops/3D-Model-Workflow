@@ -30,7 +30,7 @@ Companion to [PLAN.md](PLAN.md). This file is written as each step finishes, so 
 | 1.5 | Archive the project to H: | **Done at 23:28**, approved by the owner. See "Step 1.5". |
 | 1.6 | Baseline profile M0 | **Done.** [profiles/2026-11-10_M0/profile.md](profiles/2026-11-10_M0/profile.md). |
 | 1.7 | Import the Datasmith file into a scratch level | **Done** on the fourth attempt, at 00:39 on 2026-11-11. See "Step 1.7". |
-| 1.8 | Reimport rehearsal | Not started. Waits for 1.7 and the owner's second export. |
+| 1.8 | Reimport rehearsal | **In progress.** The 20 assignments are made and saved; a first reimport from the unchanged file is journaled; the rehearsal proper waits for the owner's second export. See "Step 1.8". |
 | 1.9 | Three path-traced renders of station S1 | **Done.** See "Step 1.9". |
 | 1.10 | Sun direction against the NOAA calculator | **Done** for the engine's sun calculation. The same check on a sun placed in a level is added when the scratch level exists. |
 | 1.11 | 1,000-lumen light, illuminance at 1 m | **Done.** See "Step 1.11". |
@@ -252,6 +252,51 @@ The crash is repeatable: both attempts stopped at the same point, when the impor
 | D. Substrate off for the whole project | Possibly everything | Changes how every material in the project is drawn. The owner's decision. | No evidence points to it: the assertion concerns which shadow shaders are built, not Substrate. Not recommended on what is known. |
 
 A caution that follows from the same fault, **not tested**: the project already holds October's Datasmith imports under `/Game/Wieland/Revit1527` (1,720 assets). 356 of their materials use the same parent, `RevitReference`. None is loaded. Opening the two levels there, `L_Wieland_Revit_Integration_r01` and `L_Pilot`, may crash this 5.9.0 editor in the same way. They were not opened.
+
+
+## Step 1.8: reimport rehearsal
+
+The question: when the Revit model changes and is exported again, does work done in Unreal on the imported building survive the reimport?
+
+**The 20 Unreal-side assignments**, made at 00:47 on 2026-11-11 in `/Game/Wieland1529/Scratch/L_P1_DatasmithImport` and saved. They are of two kinds, because Unreal keeps them in two different places. The table with full paths is `review\phase1\reimport_assignments.json`.
+
+Ten on placed objects. Each replaces the first material of one object in the level with the marker material `M_P1_Marker_OnObject` (magenta). The change is stored in the level.
+
+| No. | Revit category | Object | Revit element ID | Material it replaced |
+|---|---|---|---|---|
+| 1 | Walls | `Walls_Basic_Wall_B2010_Exterior_Wall_Havord_block_w__1_GYP_14` | 10534415 | `Concrete_Masonry_Units` |
+| 2 | Floors | `Floors_Floor_Wood_Joist_16__-_Wood_Finish` | 10534437 | `Calacatta_Vena_None_86_6_x_43_4_inches__M4W6HI_` |
+| 3 | Doors | `Doors_Door-Garage-Flush_Panel_-_Copy_16__X_7_` | 10663660 | `Acrylic_-_Waterworks_-_White` |
+| 4 | Windows | `Windows_Window-Single_Hung-Marvin-Essential_3_4__x_8_8_` | 10765950 | `Ultrex-Marvin-Pebblegray` |
+| 5 | Casework | `Casework_Countertop146_Countertop` | 11998145 | `Countertop_1_` |
+| 6 | Ceilings | `Ceilings_Compound_Ceiling_GWB_58` | 15744361 | `Gypsum_Wall_Board` |
+| 7 | Furniture | `Furniture_Bed_simpleBoxFrame_Queen_Pillow_double_1900x1385w_11` | 12017319 | `Textile_-_White` |
+| 8 | Plumbing Fixtures | `Plumbing_Fixtures_Washer_PW_6080_Miele_Drain_Pump_5` | 12459707 | `Finish_-_Black` |
+| 9 | Structural Columns | `Structural_Columns_Timber-Column_6x6_3` | 11210177 | `Cedar` |
+| 10 | Lighting Devices | `Lighting_Devices_Lighting_Switch_3_Way` | 15597595 | `RNT_Material` |
+
+Ten on meshes. Each replaces the first material of one imported mesh with the marker material `M_P1_Marker_OnMesh` (cyan). The change is stored in the mesh, so every object that uses that mesh shows it.
+
+| No. | Revit category | Mesh | Material it replaced |
+|---|---|---|---|
+| 11 | Generic Models | `Generic_Models_SURROUNDING_BUILDINGS_SURROUNDING_BUILDINGS` | `00_Soffit_2_Color_White` |
+| 12 | Lighting Fixtures | `Lighting_Fixtures_Recessed_Can_Light_18377_2_Recessed_Can_Light_18377` | `LIGHT_BULB_BRASS` |
+| 13 | Specialty Equipment | `Specialty_Equipment_Display-LG_Electronics-US340C_Free_Standing_-_65”_UHD_Signa` | `Metal_-_LG_Electronics_-_Black` |
+| 14 | Structural Framing | `Structural_Framing_Structural_Framing_6_Structural_Framing_1` | `Cedar` |
+| 15 | Roofs | `Roofs_Basic_Roof_Generic_-_8___w_TPO` | `white_plastic` |
+| 16 | Railings | `Railings_Railing_Fence_-_Regular` | `Wood` |
+| 17 | Supports | `Supports_Stringer_Stringer_-_2__Width_8` | `09_23_00_Gypsum_Wall_Board` |
+| 18 | Landings | `Landings_Non-Monolithic_Landing_Non-Monolithic_Landing` | `Finishes_-_Flooring__Oak` |
+| 19 | Runs | `Runs_Non-Monolithic_Run_2__Tread_1__Nosing_1_4__Riser_2` | `Finishes_-_Flooring__Oak` |
+| 20 | Electrical Fixtures | `Electrical_Fixtures_33816_33815_PUNT_Black_ceiling_fan_with_DC_motor` | `FARO_Black` |
+
+### Reimports
+
+Each reimport is written here before it is made, as with the import.
+
+| No. | Time | What was tried | Outcome |
+|---|---|---|---|
+| R1 | 00:50 | Reimport of the imported scene from the **same, unchanged file**, with the importer's defaults (update the placed objects; do not bring back deleted ones). Purpose: prove the reimport route works in 5.9.0 with the workaround in force, and see whether the 20 assignments survive a reimport in which nothing changed. It does not replace the rehearsal with the owner's changed export. | REIMPORT_R1_OUTCOME_PENDING: if this line still reads so, the editor crashed during reimport R1 |
 
 
 ## Step 1.9: path-traced renders
