@@ -23,6 +23,8 @@ Made at 16:14 on 2026-11-11.
 | The plan's working copy | Clean at commit `0246dc7`. |
 | Where the editor keeps its folders | Off C:, as the owner's decision on storage limits asks: engine, project, cache and page file on D:; temporary and shader folders on E:; the per-user engine folder is a link to E:. |
 
+| J8 | 16:42 on 2026-11-11 | Step 3.10 again, in the editor started at 16:30, with only the building level loaded. **Free commit read 34.2 GB at 16:41** (other programs had released about 10 GB since 16:39), editor at 15.2 GB, Revit closed, so the owner's 30 GB floor is met and the reimport is run **unchanged**, from the full second export in `ImportStaging\2026-11-11_export_2\`. The "before" state was read first and matches J6 (`review\phase3\reimport_before.json`). A script writes the editor's committed memory and the machine's free commit to `review\phase3\reimport_memory_log.csv` every two seconds. The reduced copy (`ImportStaging\2026-11-11_export_2_reduced\`, six images cut to at most 4,096 pixels) is kept as the next thing to try. | PHASE3_J8_PENDING: if this line still reads so, the editor ran out of memory again; read the memory log, then reimport from the reduced copy |
+
 ## After the crash of 16:30
 
 Found at 16:38 on 2026-11-11 by a new chat, with read-only calls, after the owner restarted the editor at 16:30.
