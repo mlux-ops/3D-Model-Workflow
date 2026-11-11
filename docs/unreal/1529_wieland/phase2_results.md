@@ -82,7 +82,54 @@ Each is written here before it is made, as in Phase 1.
 
 | No. | Time | What is done | Outcome |
 |---|---|---|---|
-| D1 | 15:42 on 2026-11-11 | With the owner's approval: create `E:\Wieland1529_site_data\` and fetch the five extracts into it with `tools\fetch_site_data.py` (a 300 m square, snapped outward to each image service's own pixel grid, nearest-neighbour sampling, each file beside a text file naming its address, time, box, checksum and terms). Then copy sheets T1.1 and T1.4 out of the drawing set, which is on the owner's Google Drive and reachable on this machine as `F:\Shared drives\SHB Jobs\25-006 1529 N Wieland\5-Drawings\PDFs\20260722_Progress\25-006 1527 N Wieland_Arch_20260722.pdf` (42.5 MB), into `E:\Wieland1529_site_data\drawings\`. The whole set is not copied. | SITE_DATA_D1_OUTCOME_PENDING: if this line still reads so, the session ended during the downloads; look in the folder for `fetch_record.json` |
+| D1 | 15:42 on 2026-11-11 | With the owner's approval: create `E:\Wieland1529_site_data\` and fetch the five extracts into it with `tools\fetch_site_data.py` (a 300 m square, snapped outward to each image service's own pixel grid, nearest-neighbour sampling, each file beside a text file naming its address, time, box, checksum and terms). Then copy sheets T1.1 and T1.4 out of the drawing set, which is on the owner's Google Drive and reachable on this machine as `F:\Shared drives\SHB Jobs\25-006 1529 N Wieland\5-Drawings\PDFs\20260722_Progress\25-006 1527 N Wieland_Arch_20260722.pdf` (42.5 MB), into `E:\Wieland1529_site_data\drawings\`. The whole set is not copied. | **Done, 15:37 to 15:42.** The five extracts arrived, 24.4 MB in all: 258 parcels, 170 footprints, the two height surfaces at 985 by 985 cells, and the aerial photograph at 1,969 by 1,969 pixels. Sheets T1.1 and T1.4 were copied out of the drawing set (pages 2 and 5 of 20; 5.1 MB) and the set itself was only read. See "What is in the site data folder". |
+| D2 | 15:40 on 2026-11-11 | A package had to be installed after all, under the standing approval: the survey on sheet T1.1 is a picture with no text in it, and this machine had nothing that can draw a PDF page (the session's own reader needs a program that is not installed). `pymupdf` was installed with `pip install --target`, into `E:\Wieland1529_site_data\_python_packages\`, so that nothing was added to Python itself or to C:. | **Done, and larger than it should have been: 225 MB in 3,778 files.** The package's current version pulls in a set of others (among them `onnxruntime` and a second copy of NumPy) that drawing a page does not need. It works: the sheets were drawn as pictures and read. Nothing in Python's own folders changed; the folder is put on the path only for `tools\render_pdf_page.py`. Removing the unneeded part is a deletion and was not done. |
+
+### What is in the site data folder
+
+`E:\Wieland1529_site_data\`, outside every repository, 277 MB at 15:42 on 2026-11-11:
+
+| What | Files | Size |
+|---|---|---|
+| The five extracts, each with a `.source.txt` beside it, and `fetch_record.json` | 11 | 24.4 MB |
+| `drawings\`: sheets T1.1 and T1.4 as one-page PDFs with the text found on them, four pictures drawn from them, and `drawings.source.txt` | 9 | 8.1 MB |
+| `drawings\T1.1_embedded_pictures\`: 90 picture tiles pulled out of sheet T1.1 in a first attempt to read it. They are of no use, and are kept only because removing them is a deletion | 90 | 19.2 MB |
+| `_python_packages\`: `pymupdf` and what it pulled in | 3,778 | 225.2 MB |
+
+The coordinate system each file states for itself (step 2.3): the parcels say EPSG 3435 (State Plane East, 1983 datum, US survey feet); the footprints say EPSG 6455 (the same projection on the datum's 2011 adjustment); the three image services describe themselves as "NAD 1983 (2011) State Plane Illinois East, US feet", and the two height surfaces give heights in US survey feet above NAVD 88. So everything is in one projection and one unit, and the only difference is the datum's realization between the parcels and the rest. That difference is measured, not assumed, in step 2.4.
+
+## What the survey and the site plan say
+
+Read on 2026-11-11 from the two sheets, drawn as pictures at 220 dots per inch. The plat of survey is by Professionals Associated - MM Survey Co., order 19-94826, fieldwork 18 August 2025, signed 20 August 2025, scale 1 inch to 15 ft. It describes two parcels, "commonly known as 1527-31 North Wieland Street", 5,132.96 sq ft in all.
+
+**The lot as measured.** Lengths in feet; "record" is the figure of the recorded plat, "measured" is what the surveyor found on the ground.
+
+| Line | Record | Measured |
+|---|---|---|
+| West line, the Wieland frontage | 49.50 | 50.18 (north parcel 24.75, south parcel 25.43) |
+| North line | 102.20 | 102.01 |
+| East line, the rear | 49.50 | 50.50 (north parcel 24.75, south parcel 25.75) |
+| South line | 102.20 | 101.93 |
+
+| Corner | Angle inside the lot |
+|---|---|
+| North-west | 90 degrees 11 minutes 38 seconds |
+| North-east | 89 degrees 43 minutes 03 seconds |
+| South-east | 90 degrees 06 minutes 06 seconds |
+| South-west | 89 degrees 59 minutes 13 seconds |
+
+The four angles add to exactly 360 degrees, and walking the four measured sides with those angles returns to the start within 0.003 ft, so the figures were read correctly.
+
+**Six things the sheets settle or change:**
+
+1. **The survey carries no compass bearing.** It gives lengths and angles, and a north arrow drawn along the street. So the plan's second way of finding true north, "the survey's north arrow", is not a measurement. Step 2.4 uses a different second way; see there.
+2. **Wieland Street's right-of-way is 50 ft wide, not 66 ft.** The plat marks "50' R.O.W. public street" and 25.00 ft from the front lot line to the street's centre line. The plan had assumed 66 ft, which is why station S1 fell inside the building opposite in Phase 1. The site plan gives 11 ft 10 1/4 in from the front lot line to the kerb.
+3. **There is no alley behind the lot.** The rear line meets the neighbours' lots directly: a four-storey brick and concrete-block building 0.22 to 0.34 ft east of the line, and a two-storey brick and block building, number 1532, at the south-east corner. `REFERENCE_VIEWS.md` lists the alley as unseen; it does not exist here.
+4. **The property lines that govern are the record ones.** The owner settled that the Revit model's property lines govern, and the site plan draws them as 49.5 ft by 102.2 ft. The measured frontage of 50.18 ft appears on the site plan only as a note (50 ft 2 1/4 in).
+5. **The neighbours' walls against the lot lines:** number 1533 to the north, a five-storey brick building, stands on the north line; number 1525 to the south, a two-storey frame building, stands 0.37 to 0.68 ft south of the south line. These are used below to check the map data.
+6. **In the parkway:** a concrete kerb and walk, three planters and an iron fence on the plat; two existing parkway trees and a new sod planter 5 ft by 7 ft 11 in on the site plan. The north-west lot corner is 266.87 ft south of the south line of West North Avenue.
+
+The two houses the plat shows on the lot, numbers 1527 and 1531, are the ones since demolished.
 
 ## The one approval this phase needs
 
