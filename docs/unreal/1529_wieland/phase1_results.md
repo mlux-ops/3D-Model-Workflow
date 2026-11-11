@@ -352,7 +352,7 @@ The level also holds one mesh component that is not from the import, the editor'
 
 **On disk after saving** (13:21, the level and the 374 changed assets, each by name; nothing else): `L_P1_DatasmithImport.umap` 12.7 MB; `Content\Wieland1529\Scratch\P1\` 1,670 files and 0.96 GB, against 1,647 files and 0.71 GB before. The growth of 0.25 GB is larger than the "few MB" estimated in the table of ways forward, and nearly all of it is one texture: the second export's folder holds 76 image files against the first's 64, among them a 16,000-pixel Indiana limestone image (`...Tranche-2-001-COLOR-16K`, 211 MB in the project) that the first export named but did not contain. Its companion (`...Tranche-1...`, 631 MB) was already there. Those two textures are 0.84 GB of the folder's 0.96 GB, which matters for the video-memory budget in Phase 5. The scene asset now records the second export as its source file. No error was logged and no crash record was written.
 
-**Eight texture files that the export names were not in its folder,** so the materials that use them came in without them. These are for the owner to look at in Revit, where the material's image path probably points at a file Revit could not find at export: `RS10242_Wall_BoothBayBlue_BW.jpg`, `ETH_Teak_NaturalOutdoor.jpg`, `Endicott SN-8 Black Glazed Thinbrick Modular Stack 11.3 x 24.5 inches texture.jpg` and its `bump.jpg`, `Material_Leaf_N2D.png`, `White Aluminum.jpg`, `Bandalux_9920.png` and `Bandalux_OpennessFactor_Simulator.png`. Three more entries name only `generic`. Whether the first export lacked the same files was not checked.
+**Eight texture files that the export names were not in its folder,** so the materials that use them came in without them. These are for the owner to look at in Revit, where the material's image path probably points at a file Revit could not find at export: `RS10242_Wall_BoothBayBlue_BW.jpg`, `ETH_Teak_NaturalOutdoor.jpg`, `Endicott SN-8 Black Glazed Thinbrick Modular Stack 11.3 x 24.5 inches texture.jpg` and its `bump.jpg`, `Material_Leaf_N2D.png`, `White Aluminum.jpg`, `Bandalux_9920.png` and `Bandalux_OpennessFactor_Simulator.png`. Three more entries name only `generic`. Checked afterwards: the first export names the same eight files and its folder lacks them too, and none of the eight is on drive C:, D: or E:.
 
 ### Reimport R2: the crash and its cause
 
@@ -616,11 +616,11 @@ For the record, readings taken before the rule existed: at 00:46, just before re
 |---|---|---|---|---|
 | 1 | 1.12 | **Restart the editor.** The owner said on 2026-11-11 that this will be done. Two reasons for it: the removal of the World Cache line takes effect only at a restart, and the editor held 23.4 GB after the reimport. | None | None |
 
-**Nothing else in Phase 1 waits on the owner.** On 2026-11-11, after the report that Phase 1 was complete, the owner wrote: "i will restart but i need you to complete all other required steps i dont want to interact with this workflow anymore". What that left, and what was done with each item between 13:30 and 13:40:
+**Nothing else in Phase 1 waits on the owner.** On 2026-11-11, after the report that Phase 1 was complete, the owner wrote: "i will restart but i need you to complete all other required steps i dont want to interact with this workflow anymore". What that left, and what was done with each item between 13:30 and 13:42:
 
 | Item | What was done |
 |---|---|
-| The eight texture files that the export names and does not contain | Checked: both exports name them and neither contains them, so this is a standing condition of the Revit materials, not something the second export introduced. It is now a task for Phases 3 and 5 (`PLAN.md`, end of the Phase 1 section) with a default that needs nothing from the owner (`OPEN_DECISIONS.md`, decision 15). |
+| The eight texture files that the export names and does not contain | Checked: both exports name them and neither contains them, so this is a standing condition of the Revit materials, not something the second export introduced. A search of C:, D: and E: by file name (finished at 13:41) found none of the eight, so they are not on this workstation's drives and cannot be copied in. It is now a task for Phases 3 and 5 (`PLAN.md`, end of the Phase 1 section) with a default that needs nothing from the owner (`OPEN_DECISIONS.md`, decision 15). |
 | C: under the plan's 15 GB floor | The cause was looked for with a read-only scan, as the plan's risk list asks. It is not this work. See finding 4, which now names the writers. |
 | Revit closed during heavy work, and the memory reading | Now a rule of every phase in `PLAN.md`, so it does not depend on anyone remembering it. |
 | The check that the World Cache removal took effect | Cannot be made before the restart. It is the first check of the next session, written at the end of the Phase 1 section of `PLAN.md`. |
@@ -802,7 +802,7 @@ Written between 13:17 and 13:25 on 2026-11-11 by the same session, for reimport 
 - `docs\unreal\1529_wieland\review\phase1\datasmith_reimport_R3_after.json`
 - `docs\unreal\1529_wieland\review\phase1\datasmith_reimport_R3_before.json`
 
-Written between 13:30 and 13:40 on 2026-11-11 by the same session, to close the phase. New: `docs\unreal\1529_wieland\review\phase1\archive_2026-11-11_phase1-complete.robocopy.log`. Changed, so that later sessions find Phase 1's rules and findings where they read:
+Written between 13:30 and 13:42 on 2026-11-11 by the same session, to close the phase. New: `docs\unreal\1529_wieland\review\phase1\archive_2026-11-11_phase1-complete.robocopy.log`. Changed, so that later sessions find Phase 1's rules and findings where they read:
 
 - `docs\unreal\1529_wieland\PLAN.md` (four rules added under "Rules for every phase"; a status line and a table of carry-over items in the Phase 1 section)
 - `docs\unreal\1529_wieland\ENGINE_NOTES.md` (a section "Phase 1 test results" and a note pointing to it)
