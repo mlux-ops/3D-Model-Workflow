@@ -347,6 +347,9 @@ def soak(job, loops, log_path, info=None, warmup_seconds=8.0, csv_every=5, csv_s
         worst_ms=None,
         dts=[],
         fg=0,
+        csv_every=int(csv_every),
+        csv_seconds=float(csv_seconds),
+        csv_state=None,
     )
     _force_realtime()
     for name, value in (job.get("cvars") or {}).items():
