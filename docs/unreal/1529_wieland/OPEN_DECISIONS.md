@@ -12,6 +12,8 @@ Written 2026-11-10. Companion to [PLAN.md](PLAN.md). Each decision has a recomme
 | Interiors | In scope. The Revit interior is fully built out and is to be refined in detail, furniture, geometry and materials. |
 | Site visit | Yes. The shot list is in [REFERENCE_VIEWS.md](REFERENCE_VIEWS.md). |
 | Starting point | The existing "1527 Wieland" Unreal site model is to be audited and improved. The audit is in [SITE_MODEL_AUDIT.md](SITE_MODEL_AUDIT.md). |
+| New construction | Confirmed by the owner on 2026-11-10 after the report: the building is new construction on the cleared lot. "Match reality" applies to the surroundings, and the building is checked against the Revit model. This settles decision 1 below. |
+| Working method | The owner intends to run build sessions from the terminal inside the Unreal editor, using the installed Unreal Engine skills for Claude Code. |
 
 ## Decisions waiting on the owner
 
