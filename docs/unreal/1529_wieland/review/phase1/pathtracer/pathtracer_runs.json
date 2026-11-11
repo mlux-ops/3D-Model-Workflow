@@ -1,0 +1,81 @@
+{
+ "step": "1.9",
+ "date": "2026-11-10",
+ "engine": "5.9.0-60351404",
+ "level": "/Game/Wieland/R15_Landscape/L_R15_Production (unchanged, unsaved)",
+ "station": {
+  "name": "S1",
+  "location_cm": [
+   -16236.7,
+   -3650.0,
+   158.2
+  ],
+  "yaw": -90.0,
+  "pitch": 12.0,
+  "horizontal_field_of_view_deg": 73.74,
+  "lens": "24 mm on a 36 mm wide frame"
+ },
+ "method": "Movie Render Graph Quick Render of the current viewport, one-off basic settings (no asset created): Path Tracer, 3840 x 2160 PNG, 1024 samples per pixel, spatial denoiser, 240 warm-up frames, Play-in-Editor execution",
+ "required_console_variable": {
+  "name": "r.RayTracing.Nanite.Mode",
+  "value_used": 2,
+  "value_as_found": 0,
+  "restored_to": 0,
+  "why": "0 traces the reduced stand-in meshes of Nanite parts (holes and spikes); 1 lost every Nanite part and logged a staging buffer overflow; 2 traces the full geometry"
+ },
+ "runs": [
+  {
+   "file": "S1_pathtraced_4k_run1.0000.png",
+   "seconds": 49.763,
+   "bytes": 14338727,
+   "card_memory_peak_mib": 11888
+  },
+  {
+   "file": "S1_pathtraced_4k_run2.0000.png",
+   "seconds": 48.168,
+   "bytes": 14338310,
+   "card_memory_peak_mib": 11921
+  },
+  {
+   "file": "S1_pathtraced_4k_run3.0000.png",
+   "seconds": 48.267,
+   "bytes": 14339709,
+   "card_memory_peak_mib": 11849
+  }
+ ],
+ "agreement_between_runs": {
+  "run1_vs_run2": {
+   "mean_difference_of_255": 0.09,
+   "pixels_over_24_levels_percent": 0.02
+  },
+  "run1_vs_run3": {
+   "mean_difference_of_255": 0.065,
+   "pixels_over_24_levels_percent": 0.02
+  }
+ },
+ "trials_1280x720_16_samples": [
+  {
+   "file": "trial1_720p_16spp_nanite_mode0_fallback_meshes.png",
+   "r.RayTracing.Nanite.Mode": 0,
+   "seconds": 66.2,
+   "outcome": "completed; geometry wrong: walls and ground show holes and spikes, arcade and fence missing (first render also compiled the path tracer's shaders)"
+  },
+  {
+   "file": "trial2_720p_16spp_nanite_mode1_walls_missing.png",
+   "r.RayTracing.Nanite.Mode": 1,
+   "seconds": 1.0,
+   "outcome": "completed; every Nanite part missing, only glass and trees drawn; log: Nanite Ray Tracing staging buffer overflow"
+  },
+  {
+   "file": "trial4_720p_16spp_nanite_mode2_correct.png",
+   "r.RayTracing.Nanite.Mode": 2,
+   "seconds": 1.1,
+   "outcome": "completed; geometry correct"
+  }
+ ],
+ "crashes": 0,
+ "renders_completed": 8,
+ "acceptance": "three renders complete with no crash",
+ "result": "pass, on condition that r.RayTracing.Nanite.Mode is 2",
+ "offline_budget_check": "plan allows 10 minutes per path-traced 3840 x 2160 still; measured 48 to 50 s at 1024 samples per pixel on this scene; plan allows 15.0 GB of video memory offline; measured 11.9 GB on the whole card"
+}

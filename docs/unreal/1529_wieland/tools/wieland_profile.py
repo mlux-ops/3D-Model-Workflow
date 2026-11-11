@@ -189,18 +189,156 @@ def _step(delta_seconds):
         return
 
 
+def _finish_soak():
+    handle = _S.get("handle")
+    if handle is not None:
+        try:
+            unreal.unregister_slate_post_tick_callback(handle)
+        except Exception as exc:
+            _S["error"] = (_S.get("error") or "") + " unregister: " + repr(exc)
+        _S["handle"] = None
+    summary = {
+        "info": _S.get("info"),
+        "job": _S.get("job"),
+        "loops_asked": _S.get("loops"),
+        "loops_finished": _S.get("loop", 0),
+        "ticks_total": _S.get("ticks_total", 0),
+        "ticks_over_33ms_total": _S.get("over33_total", 0),
+        "worst_tick_ms": _S.get("worst_ms"),
+        "run_started_unix": _S.get("run_started"),
+        "finished_unix": time.time(),
+        "error": _S.get("error"),
+    }
+    with open(_S["log_path"] + ".summary.json", "w", encoding="utf-8") as handle_out:
+        json.dump(summary, handle_out, indent=1)
+    _S["active"] = False
+    _S["phase"] = "done"
+
+
+def _soak_step(delta_seconds):
+    now = time.perf_counter()
+    state = _S
+    job = state["job"]
+    if state["phase"] == "warmup":
+        _place(job, 0.0)
+        if now - state["t0"] >= state["warmup"]:
+            state["phase"] = "run"
+            state["t0"] = now
+            state["dts"] = []
+            state["fg"] = 0
+            state["run_started"] = time.time()
+        return
+    elapsed = now - state["t0"]
+    _place(job, min(1.0, elapsed / job["seconds"]))
+    state["dts"].append(delta_seconds)
+    if _foreground():
+        state["fg"] += 1
+    # every few loops, record a short CSV profile so the engine's own video-memory figure is on file
+    every = state.get("csv_every") or 0
+    if every and state["loop"] % every == 0:
+        if state.get("csv_state") is None and elapsed < 1.0:
+            state["csv_before"] = _list_csv()
+            _cmd("CsvProfile Start")
+            state["csv_state"] = "on"
+        elif state.get("csv_state") == "on" and elapsed >= state["csv_seconds"]:
+            _cmd("CsvProfile Stop")
+            state["csv_state"] = "stopped"
+    if elapsed < job["seconds"]:
+        return
+    dts_ms = sorted(d * 1000.0 for d in state["dts"])
+    count = len(dts_ms)
+    over33 = sum(1 for d in dts_ms if d > 33.333)
+    state["loop"] += 1
+    state["ticks_total"] += count
+    state["over33_total"] += over33
+    state["worst_ms"] = max(state["worst_ms"] or 0.0, dts_ms[-1])
+    line = {
+        "loop": state["loop"],
+        "unix": round(time.time(), 1),
+        "ticks": count,
+        "ms_mean": round(sum(dts_ms) / count, 3),
+        "ms_p95": round(_percentile_floor(dts_ms, 0.95), 3),
+        "ms_max": round(dts_ms[-1], 3),
+        "over_33ms": over33,
+        "foreground_fraction": round(state["fg"] / count, 2),
+    }
+    if state.get("csv_state") == "stopped":
+        line["csv"] = sorted(_list_csv() - state["csv_before"])
+    state["csv_state"] = None
+    with open(state["log_path"], "a", encoding="utf-8") as handle_out:
+        handle_out.write(json.dumps(line) + "\n")
+    if state["loop"] >= state["loops"]:
+        _finish_soak()
+        return
+    state["t0"] = now
+    state["dts"] = []
+    state["fg"] = 0
+
+
 def _tick(delta_seconds):
     if not _S.get("active"):
         return
+    soaking = _S.get("mode") == "soak"
     try:
-        _step(delta_seconds)
+        if soaking:
+            _soak_step(delta_seconds)
+        else:
+            _step(delta_seconds)
     except Exception as exc:
         _S["error"] = repr(exc)
+        if soaking:
+            _finish_soak()
+            return
         try:
             _cmd("CsvProfile Stop")
         except Exception:
             pass
         _finish()
+
+
+def soak(job, loops, log_path, info=None, warmup_seconds=8.0, csv_every=5, csv_seconds=2.0):
+    """Walk one path job over and over.
+
+    After every loop one JSON line (frame count, mean, 95th percentile and
+    worst frame) is appended to log_path, so a crash leaves the record so far.
+    Every csv_every loops (0 turns this off) the first csv_seconds of the loop
+    are also recorded with the engine's CSV profile, whose file name goes into
+    that loop's line; it carries the engine's own video-memory figure.
+    When the last loop ends, log_path + ".summary.json" is written. Returns at
+    once; the loops run on the editor's ticks.
+    """
+    if _S.get("active"):
+        raise RuntimeError("a capture is already running: " + json.dumps(status()))
+    if os.path.exists(log_path) or os.path.exists(log_path + ".summary.json"):
+        raise RuntimeError("log already exists: " + log_path)
+    if job.get("kind") != "path":
+        raise RuntimeError("soak needs a path job")
+    _S.clear()
+    _S.update(
+        active=True,
+        mode="soak",
+        job=job,
+        loops=int(loops),
+        loop=0,
+        phase="warmup",
+        t0=time.perf_counter(),
+        log_path=log_path,
+        info=info,
+        warmup=float(warmup_seconds),
+        error=None,
+        started=time.time(),
+        handle=None,
+        ticks_total=0,
+        over33_total=0,
+        worst_ms=None,
+        dts=[],
+        fg=0,
+    )
+    for name, value in (job.get("cvars") or {}).items():
+        _cmd("%s %s" % (name, value))
+    _place(job, 0.0)
+    _S["handle"] = unreal.register_slate_post_tick_callback(_tick)
+    return "soak started: %d loops of %.0f seconds" % (int(loops), float(job["seconds"]))
 
 
 def start(jobs, result_path, info=None, warmup_seconds=8.0, settle_seconds=2.0):
@@ -231,6 +369,16 @@ def start(jobs, result_path, info=None, warmup_seconds=8.0, settle_seconds=2.0):
 
 
 def status():
+    if _S.get("mode") == "soak":
+        return {
+            "active": bool(_S.get("active")),
+            "mode": "soak",
+            "phase": _S.get("phase"),
+            "loops_finished": _S.get("loop", 0),
+            "loops_asked": _S.get("loops"),
+            "worst_tick_ms": _S.get("worst_ms"),
+            "error": _S.get("error"),
+        }
     return {
         "active": bool(_S.get("active")),
         "phase": _S.get("phase"),
@@ -244,10 +392,13 @@ def status():
 def cancel():
     """Stop after the current tick and write whatever was recorded."""
     if _S.get("active"):
+        _S["error"] = (_S.get("error") or "") + " cancelled"
+        if _S.get("mode") == "soak":
+            _finish_soak()
+            return status()
         try:
             _cmd("CsvProfile Stop")
         except Exception:
             pass
-        _S["error"] = (_S.get("error") or "") + " cancelled"
         _finish()
     return status()

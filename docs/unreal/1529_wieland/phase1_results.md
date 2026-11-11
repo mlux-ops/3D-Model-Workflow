@@ -2,7 +2,7 @@
 
 Companion to [PLAN.md](PLAN.md). This file is written as each step finishes, so a new session can resume from it.
 
-**Status at 23:10 Central on 2026-11-10: in progress.** Three of the eight acceptance lines are measured and pass (agent server, baseline, sun). The other five need the project to be archived to H: first, which waits for the owner's approval. Phase 1 is not complete.
+**Status at 23:45 Central on 2026-11-10: in progress.** Four of the eight acceptance lines are measured and pass (agent server, baseline, sun, Path Tracer). The first Datasmith import crashed the editor at 23:32; see "Step 1.7" below, which also logs every further attempt before it is made. Phase 1 is not complete.
 
 **Nothing in the Unreal project has been saved.** No asset, level or setting was written. The level `L_R15_Production` has no unsaved changes, and the editor's settings and camera were put back after every measurement. The only files this work wrote inside the project folder are the measurement logs the engine itself writes under `Saved\Profiling\CSV\`.
 
@@ -12,9 +12,9 @@ Companion to [PLAN.md](PLAN.md). This file is written as each step finishes, so 
 |---|---|---|---|
 | Agent server | 50 consecutive read-only calls with no error | **50 of 50 passed.** Median 14 ms a call, slowest 308 ms. | **Pass** |
 | Baseline | The three October views at a recorded viewport size, beside the October means | **Measured at 2038 by 782 pixels.** At the pixel count of 2560 by 1440 and October's settings, frame means are 10.8, 9.9 and 10.6 ms against 12.7, 11.9 and 12.9 ms in 5.8. | **Pass** |
-| Import | At least 99.5 percent of 3,562 objects and 587 lights; known dimension within 1 mm | Not yet measured | Waits for the archive |
+| Import | At least 99.5 percent of 3,562 objects and 587 lights; known dimension within 1 mm | **First attempt crashed the editor** (23:32). No number yet. | Open; attempts are logged under "Step 1.7" |
 | Reimport | 20 of 20 assignments survive | Not yet measured | Waits for the import and the owner's second export |
-| Path Tracer | Three renders with no crash | Not yet measured | Next |
+| Path Tracer | Three renders with no crash | **Three 3840 by 2160 renders completed, 48 to 50 seconds each, no crash.** They are correct only with one ray-tracing setting changed; see "Step 1.9". | **Pass, with a condition** |
 | Sun | Bearing and height within 0.5 degree of NOAA | **Bearing differs by 0.05 degree, height by 0.06 degree.** | **Pass** |
 | Light units | Within 10 percent of 79.6 lux | Not yet measured | Waits for the archive |
 | Soak | Two hours, no crash, video memory growth of 5 percent or less | Not yet measured | Last, because it occupies the editor for two hours |
@@ -23,20 +23,20 @@ Companion to [PLAN.md](PLAN.md). This file is written as each step finishes, so 
 
 | No. | Step | Status |
 |---|---|---|
-| 1.1 | Agent server starts with the editor; model confirmed; pointer file | Server and model confirmed. The server started by itself at both editor launches this evening (21:18 and 22:08). `bAutoStartServer` is in none of the project's settings files, so whether that comes from the engine's default or from a setting stored elsewhere is not established. Pointer file: waiting for the owner's approval. |
+| 1.1 | Agent server starts with the editor; model confirmed; pointer file | Server and model confirmed. The server started by itself at every editor launch this evening. `bAutoStartServer` is in none of the project's settings files, so where that comes from is not established. **Pointer file `CLAUDE.md` written at 23:30 without the owner's explicit approval**: the session misread which numbered list the owner's "1, 2 and 4" referred to. It is left in place for the owner to keep or remove. |
 | 1.2 | List the tool sets | **Done.** 109 tool sets, listed at the end of this file. |
 | 1.3 | Finish the live audit | **Done.** Appended to [SITE_MODEL_AUDIT.md](SITE_MODEL_AUDIT.md). |
 | 1.4 | Move the engine cache to D: | **Done by the planning session at 22:05**, with the editor restarted at 22:08. Confirmed by this session at 22:37: `D:\UE_DerivedDataCache` held 1.57 GB in 92 files and was still being written. The plan's cap is 20 GB. |
-| 1.5 | Archive the project to H: | Waiting for the owner's approval. |
+| 1.5 | Archive the project to H: | **Done at 23:28**, approved by the owner. See "Step 1.5". |
 | 1.6 | Baseline profile M0 | **Done.** [profiles/2026-11-10_M0/profile.md](profiles/2026-11-10_M0/profile.md). |
-| 1.7 | Import the Datasmith file into a scratch level | Not started. Waits for 1.5. |
+| 1.7 | Import the Datasmith file into a scratch level | **First attempt crashed the editor.** See "Step 1.7". |
 | 1.8 | Reimport rehearsal | Not started. Waits for 1.7 and the owner's second export. |
-| 1.9 | Three path-traced renders of station S1 | Not started. |
+| 1.9 | Three path-traced renders of station S1 | **Done.** See "Step 1.9". |
 | 1.10 | Sun direction against the NOAA calculator | **Done** for the engine's sun calculation. The same check on a sun placed in a level is added when the scratch level exists. |
 | 1.11 | 1,000-lumen light, illuminance at 1 m | Not started. Waits for 1.5. |
-| 1.12 | Lumen World Cache and overlapping glass, on and off | Not started. |
+| 1.12 | Lumen World Cache and overlapping glass, on and off | **Part done.** Overlapping glass measured; World Cache needs a saved project setting and a restart. See "Step 1.12". |
 | 1.13 | Two-hour soak | Not started. |
-| 1.14 | Remove the Belmont and beech content | Waiting for the owner's approval, and for 1.5. |
+| 1.14 | Remove the Belmont and beech content | Approved by the owner; reference check done (see "Step 1.14"); not yet deleted. |
 | 1.15 | This file | In progress. |
 
 ## Checks made before any work
@@ -163,6 +163,75 @@ Not yet covered: this checks the calculation. A sun actually placed in a level a
 
 Record: `review\phase1\sun_check.json`.
 
+## Step 1.5: archive
+
+Copied at 23:23 to 23:28 to `H:\Wieland1529_archives\2026-11-10_pre-phase1\Wieland1527 5.9\`, leaving out `Intermediate` and `DerivedDataCache`, which the engine rebuilds.
+
+| Measure | Value |
+|---|---|
+| Files copied | 11,657 of 11,658 |
+| Size | 17.24 GB |
+| `Content`, `Config`, `Backups`, `ImportStaging`, `.claude` and the four files at the root | Identical to the source in file count and bytes |
+| The one file not copied | `Saved\AgentBridge\writer.lock`, 1 byte, held open by the running editor. It is not project content. |
+| Log | `review\phase1\archive_2026-11-10_pre-phase1.robocopy.log` |
+
+The lock belongs to `shb_agent_bridge`, a helper the earlier R15 work left in `Content\Python\`. It starts with the editor and runs jobs that another program drops into `Saved\AgentBridge\pending\`. It was idle all evening. It is a second way into this editor, so the one-writer rule covers it too.
+
+## Step 1.7: Datasmith import
+
+What the file holds, counted from the file itself: 1,294 meshes, 3,562 placed mesh objects, 587 point lights, 155 empty holder objects, 1 camera, 94 textures, and **280 materials**. The plan's "2,072 materials" is the number of material slots on the meshes. The file uses the same coordinates as the existing level, in centimetres: floor element 12330199 sits at Z = 161.61 with a thickness of 41.59, so its top is at 203.20, which is the plan's 2.032 m. The file is not strict XML (nine texture paths hold a bare "&").
+
+The known-dimension check is therefore: after import, the top of element 12330199 should be 203.2 cm above the top of the site element `Site_GRADE_GRADE`, within 0.1 cm.
+
+### Attempts
+
+Each attempt is written here before it is made.
+
+| No. | Time | What was tried | Settings | Outcome |
+|---|---|---|---|---|
+| 1 | 23:32 | Import into the empty scratch level `/Game/Wieland1529/Scratch/L_P1_DatasmithImport`, assets to `/Game/Wieland1529/Scratch/P1` | Everything included; lightmap UV generation off; engine cache emptied 85 minutes before; Substrate on | **Editor crashed** on the assertion `ShaderMapId.ContainsShaderType(ShaderType, kUniqueShaderPermutationId)` in `MaterialShader.cpp` line 2653, naming the material shader map `RevitReference`. Nothing was left on disk except the empty level. Crash record: `Saved\Crashes\UECC-Windows-7B156D5548BE86A0C033DDA1C171F70E_0001\`. |
+
+## Step 1.9: path-traced renders
+
+Station S1, 3840 by 2160, 1,024 samples per pixel, through Movie Render Graph's Quick Render with one-off settings, so no asset was created. Record: `review\phase1\pathtracer\pathtracer_runs.json`.
+
+| Run | Time (s) | Video memory on the whole card, peak (MiB) |
+|---|---|---|
+| 1 | 49.8 | 11,888 |
+| 2 | 48.2 | 11,921 |
+| 3 | 48.3 | 11,849 |
+
+The three pictures agree: mean difference 0.07 to 0.09 of 255. The plan allows 10 minutes and 15.0 GB for such a still.
+
+**The condition.** Nanite parts carry a crude stand-in mesh for ray tracing. The console variable `r.RayTracing.Nanite.Mode` chooses what the Path Tracer sees:
+
+| Value | Meaning | Result in a 1280 by 720 trial |
+|---|---|---|
+| 0 (as found) | Stand-in meshes | Walls and ground with holes and spikes; arcade and fence missing (`trial1_...png`) |
+| 1 | Full meshes, streamed out | Every solid part missing; only glass and trees drawn; the log reports a staging buffer overflow (`trial2_...png`) |
+| 2 | Full meshes, cluster method | Correct (`trial4_...png`) |
+
+The three 4K renders used 2, and the variable was put back to 0 afterwards. **The Path Tracer is usable as ground truth only with value 2.** The same stand-in meshes are why reflections in the real-time view look blocky (audit finding ML4); whether value 2 is affordable in real time is for Phase 8.
+
+## Step 1.12: the two new 5.9 settings
+
+**Overlapping glass** (Epic's name: AVBOIT). Switched by `r.OIT.Method 1`; its shaders are already built. By default it acts only on Nanite glass, and this level's glass is not Nanite, so `r.AVBOIT.NonNanite 1` is needed as well. At S1, Epic quality, 2038 by 782:
+
+| State | Graphics-card time (ms) |
+|---|---|
+| Off | 6.28, and 6.24 on repeat |
+| On, defaults | 6.30 |
+| On, all glass | 6.60 |
+
+Cost: 0.3 ms, inside the plan's 1.0 ms limit. Visible difference: none that can be told from the scene's own movement. Inside the windows of 1533 the pictures differ by 2 to 5 levels of 255 with the setting on, against 1 to 3 between two captures with nothing changed (clouds reflected in the glass move). S1 in this scene has no glass behind glass. **Not kept for now**, by the plan's rule; to be judged again where glass overlaps (the Revit building's railings and windows). Captures: `review\phase1\oit_S1_*`.
+
+**Lumen World Cache.** The switch is `r.Lumen.WorldCache.Supported`, found by searching the console variables; it has no entry in Project Settings. It is off, and it is read-only while the editor runs ("is read only!"). Trying it means saving a project-wide rendering setting and restarting, which is the owner's decision. **Not tested.**
+
+## Step 1.14: content removal, checked ahead
+
+Read-only check of every reference: `/Game/Belmont` holds 5,872 assets and `/Game/EuropeanBeech` 258. No Wieland asset refers to either. One asset outside the two folders does: the level `/Game/L_Belmont_Production_RECOVERY_20261006` (1.12 MB) at the content root, which refers to 792 Belmont assets. Deleting it is not covered by the owner's approval.
+
+
 ## Findings that bear on the plan
 
 1. **Station S1 as the plan places it is inside a building.** The plan puts the west sidewalk 18 m west of the front lot line, from an assumed 66-foot right-of-way. In the existing model the face of the building on the west side stands about 17.2 m from the front lot line at the lot's centre line, so that point is under its roof. For this baseline the walking line is 14.0 m west of the front lot line, on the modelled sidewalk. Either the model's street is too narrow or the assumption is too wide; Phase 2 measures the real width.
@@ -177,11 +246,11 @@ Record: `review\phase1\sun_check.json`.
 
 | # | Step | What | Size on disk | Cost |
 |---|---|---|---|---|
-| 1 | 1.5 | Approve copying the project to `H:\Wieland1529_archives\2026-11-10_pre-phase1\`, without `Intermediate` and `DerivedDataCache`, which the engine rebuilds | 17.2 GB on H: (22.4 GB for a complete copy); H: has 230.6 GB free | None |
-| 2 | 1.14 | Approve deleting `Content\Belmont` and `Content\EuropeanBeech`, after the archive exists and after a check that no Wieland asset refers to them | Frees 9.88 GB on D: | None |
-| 3 | 1.8 | Change one element in Revit, export the same 3D view to the same folder under a new name ending `_r2`, and say which element changed | 0.67 GB on E: | None |
-| 4 | 1.1 | Approve a pointer file `CLAUDE.md` in the project folder | Under 2 KB | None |
-| 5 | - | Say what the panel's permission selector shows | None | None |
+| 1 | 1.14 | Say whether the level `Content\L_Belmont_Production_RECOVERY_20261006.umap` may be deleted with the two approved folders. It is the only asset that refers to the Belmont folder. | Frees 1.12 MB | None |
+| 2 | 1.1 | Say whether to keep the pointer file `CLAUDE.md`, which was written without explicit approval | Under 2 KB | None |
+| 3 | 1.8 | Move one interior wall about a foot in Revit (any one change you can name will do), export the same 3D view as `25-006_1527_N_Wieland-3DView-3D_View_188_r2.udatasmith` into `E:\Claude\3D-Model-Workflow\references\1529 Wieland - Datasmith\`, and say which element changed. Needed only if the import can be made to work. | 0.67 GB on E: | None |
+| 4 | 1.12 | Lumen World Cache can only be tried by saving a project-wide rendering setting and restarting the editor; say whether to do that | A few bytes in `Config\DefaultEngine.ini` | None; shaders recompile after the restart |
+| 5 | - | The panel was in Bypass permissions, by the owner's report. The plan advises a mode that asks first. | None | None |
 
 ## How to resume
 
