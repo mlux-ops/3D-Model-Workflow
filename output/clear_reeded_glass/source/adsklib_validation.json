@@ -1,0 +1,86 @@
+{
+  "stage": "complete",
+  "library": "E:\\Claude\\3D-Model-Workflow\\.claude\\worktrees\\revit-clear-reeded-glass-4376d3\\output\\clear_reeded_glass\\Clear_Reeded_Glass_0p5in_R2025.adsklib",
+  "note": "archive readback only; not a Revit load test",
+  "gates": {
+    "zip_crc_clean": true,
+    "single_asset_library": true,
+    "exactly_three_materials": true,
+    "one_solid_glass_two_transparent": true,
+    "three_material_names_present": true,
+    "no_qa_material_exported": true,
+    "five_image_bindings_by_filename": true,
+    "connected_slots_as_built": true,
+    "companion_textures_present": true,
+    "three_material_thumbnails_extracted": true
+  },
+  "errors": [],
+  "size_bytes": 184461,
+  "sha256": "b510d0263055c95f1520171ccdba802b00e611cbc5d3118969f595fbc53fb035",
+  "entries": 82,
+  "library_guid": [
+    "0B0F7FFB-F2B0-4525-94FD-F8220549290C"
+  ],
+  "material_count": 3,
+  "appearance_schemas": {
+    "SolidGlassSchema": 1,
+    "PrismTransparentSchema": 2
+  },
+  "material_names_found": {
+    "Clear Reeded Glass - 0.5in Vertical Reed": true,
+    "Clear Reeded Glass - 0.5in Vertical Reed (PBR Height Map)": true,
+    "Clear Reeded Glass - 0.5in Vertical Reed (PBR Normal Map)": true
+  },
+  "image_bindings": {
+    "Clear_Reeded_Glass_0p5in_Bump_16bit.png": 2,
+    "Clear_Reeded_Glass_0p5in_Normal_16bit.png": 1,
+    "Clear_Reeded_Glass_0p5in_Color.png": 3
+  },
+  "connected_slots": {
+    "solidglass_bump_map:UnifiedBitmap": 1,
+    "solidglass_transmittance_custom_color:UnifiedBitmap": 1,
+    "surface_albedo:UnifiedBitmap": 2,
+    "surface_normal:BumpMap": 2
+  },
+  "bound_directory_expected": "E:\\Claude\\3D-Model-Workflow\\.claude\\worktrees\\revit-clear-reeded-glass-4376d3\\output\\clear_reeded_glass\\textures\\",
+  "bound_directory_found": true,
+  "bound_path_kind": "absolute",
+  "companion_textures": {
+    "Clear_Reeded_Glass_0p5in_Bump_16bit.png": {
+      "present": true,
+      "size_bytes": 40485,
+      "sha256": "a5cd262d1ca00a948ec47664f88336e93a47af693b771e428b7ddd9cfa8378d7"
+    },
+    "Clear_Reeded_Glass_0p5in_Normal_16bit.png": {
+      "present": true,
+      "size_bytes": 138934,
+      "sha256": "bfae60749bb9791ceb6abb2ec41560c5cc09d0423a7f2cc3356a6bd02ca9138f"
+    },
+    "Clear_Reeded_Glass_0p5in_Color.png": {
+      "present": true,
+      "size_bytes": 15746,
+      "sha256": "617cf46055caa141ef7a75c50c2968744fb822c524011683f1a0bba16ab3cc9d"
+    }
+  },
+  "thumbnails": [
+    {
+      "asset_id": "71AB7B8D-F61A-4887-96AE-423ED0390DF1",
+      "label": "pbr_normal_map",
+      "file": "E:\\Claude\\3D-Model-Workflow\\.claude\\worktrees\\revit-clear-reeded-glass-4376d3\\output\\clear_reeded_glass\\evidence\\adsklib_thumbnail_pbr_normal_map.png",
+      "bytes": 45761
+    },
+    {
+      "asset_id": "D231B020-BD14-48F1-814F-0268FC4D2C35",
+      "label": "pbr_height_map",
+      "file": "E:\\Claude\\3D-Model-Workflow\\.claude\\worktrees\\revit-clear-reeded-glass-4376d3\\output\\clear_reeded_glass\\evidence\\adsklib_thumbnail_pbr_height_map.png",
+      "bytes": 30469
+    },
+    {
+      "asset_id": "PhysMat",
+      "label": "solid_glass_default",
+      "file": "E:\\Claude\\3D-Model-Workflow\\.claude\\worktrees\\revit-clear-reeded-glass-4376d3\\output\\clear_reeded_glass\\evidence\\adsklib_thumbnail_solid_glass_default.png",
+      "bytes": 51011
+    }
+  ],
+  "all_gates_pass": true
+}

@@ -1,6 +1,6 @@
 # Clear Reeded Glass, 1/2 in vertical reed — Revit 2025 material
 
-Status, 2026-11-11: maps and Revit materials are built and verified. **The `.adsklib` is not made yet.** A material library can only be created in Revit's Material Browser, and that step could not be automated here (see "What is not done"). Nothing is on Google Drive yet.
+Status, 2026-11-11: maps, Revit materials and the `.adsklib` are done. The library was exported from Revit's Material Browser by the owner and passes an archive readback (`source\adsklib_validation.json`). It has not been loaded into a second project by the builder, and no ray-traced scene render has been checked. Drive delivery is recorded in `PROJECT_MEMORY.md`.
 
 Folder: `E:\Claude\3D-Model-Workflow\.claude\worktrees\revit-clear-reeded-glass-4376d3\output\clear_reeded_glass\` (branch `claude/revit-clear-reeded-glass-4376d3`).
 
@@ -72,36 +72,40 @@ Revit's relief slot holds one image, read as height or as normal, so the two map
 
 - **Realistic viewport:** the Solid Glass material draws faint vertical reeds over a dark background, with a light veil from the polished surface. Both Transparent (PBR) materials render as plain flat glass. They were pixel-identical to a pane with no relief at all, so the viewport ignores relief on that type.
 - **The bound colour bitmap does no harm:** on both types, the pane with the bitmap was pixel-identical to the pane without it.
+- **Revit's own material thumbnails show relief on all three materials.** The swatch previews stored inside the library (`evidence\adsklib_thumbnail_*.png`) have highlights broken into fine ribs on the Solid Glass vase and on both Transparent (PBR) spheres. So the PBR height and normal maps do respond in Revit's swatch renderer, even though the Realistic viewport ignores them. A swatch is not a scene render: it does not show a background bent through the reeds.
 - **Texture scale and direction are right:** a diagnostic stripe on the backdrop showed 1/2 in vertical stripes at the expected spacing.
 
 ## What is not done or not verified
 
-1. **The `.adsklib` does not exist.** Revit has no API for material libraries. UI Automation reached the Manage tab of a separate Revit window, but Revit does not expose the ribbon buttons to it, and driving the Material Browser would have meant taking over the mouse and keyboard. Steps to make it by hand are below.
-2. **No ray-traced render was run** (no API route). How the reeds bend what is seen through the glass is therefore unverified for all three materials. This is the main open question; the PBR materials exist because they are expected to render best, but that is an expectation, not a result.
-3. **The normal map's red-channel direction is verified on the image only**, not under a known light in Revit. The viewport does not respond to the PBR normal map, so it could not be checked there. If a render shows the reeds lit from the wrong side, tick Invert on the image in the Texture Editor.
-4. Two Solid Glass values were set by number through the API and should be glanced at in the Appearance tab: Color should read **Custom** (stored as 6) and Relief Pattern should read **Custom** (stored as 3). Roughness should read **0**.
+1. **The library has not been loaded into a second Revit project by the builder.** Revit has no API for material libraries, so opening it means the Material Browser. What is verified is the file itself: it is a clean archive holding exactly the three materials, none of the `QA` ones, with all five image bindings (`source\adsklib_validation.json`).
+2. **No ray-traced scene render was run** (no API route). How the reeds bend what is seen through the glass is unverified for all three materials. The swatch thumbnails show the relief is active; they do not show refraction.
+3. **The normal map's red-channel direction is verified on the image only**, not under a known light in Revit. If a render shows the reeds lit from the wrong side, tick Invert on the image in the Texture Editor.
+4. Two Solid Glass values were set by number through the API and should be glanced at in the Appearance tab: Color should read **Custom** (stored as 6) and Relief Pattern should read **Custom** (stored as 3). Roughness should read **0**. The library does carry an image on the Color slot and on the Relief Pattern slot, which is consistent with both being Custom.
 5. Reflectance, relief amount, transparency and shading colour are estimates to tune by eye.
 6. No V-Ray assets: not requested.
 
-## Making the library (about a minute)
+## How the library was made
 
-1. In Revit 2025 open `E:\Claude\3D-Model-Workflow\.claude\worktrees\revit-clear-reeded-glass-4376d3\output\clear_reeded_glass\qa\Clear_Reeded_Glass_QA_DISPOSABLE_R2025.rvt`.
-2. Manage tab, Materials.
-3. Bottom-left of the Material Browser, the folder icon menu, **Create New Library**. Save as `E:\Claude\3D-Model-Workflow\.claude\worktrees\revit-clear-reeded-glass-4376d3\output\clear_reeded_glass\Clear_Reeded_Glass_0p5in_R2025.adsklib`.
-4. In the project materials list, type `Clear Reeded` in the search box. Right-click each of the three `Clear Reeded Glass - 0.5in Vertical Reed...` materials, **Add to**, the new library. Skip the materials whose names start with `QA`.
-5. Click OK and close the project without saving.
+`Clear_Reeded_Glass_0p5in_R2025.adsklib` was created in Revit 2025's Material Browser (Create New Library, then Add to for the three materials) from `qa\Clear_Reeded_Glass_QA_DISPOSABLE_R2025.rvt`. It was not written by a script. Size 184,461 bytes, SHA-256 `b510d0263055c95f1520171ccdba802b00e611cbc5d3118969f595fbc53fb035`.
 
 ## Loading the library in a project
 
-Manage, Materials, folder icon menu, **Open Existing Library**, pick the `.adsklib`. Drag a material into the project. If an image shows as missing, either re-pick it in the Appearance tab or add the package's `textures` folder under File, Options, Rendering, Additional Render Appearance Paths. The images are bound by absolute path to this worktree's `textures` folder, which stops existing if the worktree is removed.
+1. Unzip the package to a permanent folder.
+2. In Revit: File, Options, Rendering, **Additional Render Appearance Paths**, add the package's `textures` folder. Do this first.
+3. Manage, Materials, folder icon menu, **Open Existing Library**, pick `Clear_Reeded_Glass_0p5in_R2025.adsklib`.
+4. Drag a material into the project.
+
+Step 2 matters. The library stores each image by absolute path to the folder it was built in, `E:\Claude\3D-Model-Workflow\.claude\worktrees\revit-clear-reeded-glass-4376d3\output\clear_reeded_glass\textures\`. That folder is a temporary git worktree and will stop existing. With the `textures` folder on the render appearance path Revit finds the images by file name. If an image still shows as missing, re-pick it in the Appearance tab; the Sample Size is 4 in x 4 in.
 
 ## Files
 
 | Path | What it is |
 |---|---|
+| `Clear_Reeded_Glass_0p5in_R2025.adsklib` | the material library, three materials |
 | `textures\` | the three maps |
 | `source\build_maps.py`, `source\map_validation.json` | map generator and its checks |
 | `source\probe_revit_schemas.py`, `source\revit_probe.json` | which Revit appearance types accept which slots |
 | `source\build_revit.py`, `source\revit_validation.json` | material builder, readback, test views |
-| `evidence\` | grazing-light, wrap and section previews; Revit viewport comparison |
-| `qa\` | disposable Revit project and raw view exports; not deliverables |
+| `source\verify_adsklib.py`, `source\adsklib_validation.json` | archive readback of the library |
+| `evidence\` | grazing-light, wrap and section previews; Revit viewport comparison; Revit's swatch thumbnails from the library |
+| `qa\` | disposable Revit project and raw view exports; not deliverables, not in the package ZIP |
