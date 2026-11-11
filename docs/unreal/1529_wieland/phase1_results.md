@@ -35,7 +35,7 @@ Companion to [PLAN.md](PLAN.md). This file is written as each step finishes, so 
 | 1.10 | Sun direction against the NOAA calculator | **Done** for the engine's sun calculation. The same check on a sun placed in a level is added when the scratch level exists. |
 | 1.11 | 1,000-lumen light, illuminance at 1 m | **Done.** See "Step 1.11". |
 | 1.12 | Lumen World Cache and overlapping glass, on and off | **Part done.** Overlapping glass measured; World Cache needs a saved project setting and a restart. See "Step 1.12". |
-| 1.13 | Two-hour soak | **Not run, by the owner's decision; moved to Phase 9, where it runs on the finished scene** (`PLAN.md`, step 9.11). A run was started at 00:02:43 on 2026-11-11 and stopped at 00:09:58 on the owner's instruction, after 7 of 120 walks, with no crash. It is not a result. Its short log is kept in `review\phase1\soak\` as a trial of the soak script. The trial showed one fault in the script, now corrected; see `PROJECT_MEMORY.md`. |
+| 1.13 | Two-hour soak | **Not run, by the owner's decision; moved to Phase 9, where it runs on the finished scene** (`PLAN.md`, step 9.11). A run was started at 00:02:43 on 2026-11-11 and stopped at 00:09:58 on the owner's instruction, after 7 of 120 walks, with no crash. It is not a result. Its short log is kept in `review\phase1\soak\` as a trial of the soak script. The trial showed two faults in the script, both now corrected and neither re-run; see `PROJECT_MEMORY.md`. |
 | 1.14 | Remove the Belmont and beech content | **Done at 00:01 on 2026-11-11.** See "Step 1.14". |
 | 1.15 | This file | In progress. |
 
