@@ -10,6 +10,8 @@ Each row gives a feature, its status, where that was read, and one of three evid
 - **Observed** means it was seen on this workstation on 2026-11-10 (installed files, the running editor's log, the project file).
 - **Needs test** means the page is silent, ambiguous, or the feature is too new to trust without running it. The test is named in the last column and is scheduled in Phase 1 of the plan.
 
+**Phase 1 ran those tests on 2026-11-10 and 2026-11-11.** Their results are in the last section of this file, "Phase 1 test results". For every feature named there, that section is the current word and the row above it is history.
+
 Two cautions apply to every row:
 
 1. Epic's documentation site serves the same page under each engine version. A page titled "Unreal Engine 5.9 Documentation" had body text identical to its 5.8 version in the three cases compared (Lumen, Nanite Foliage, Substrate). A 5.9 title therefore does not show that Epic re-checked the page for 5.9.
@@ -127,3 +129,23 @@ No page was read on 2026-11-10 for any of these. Each is ordinary engine equipme
 - Epic's physical light units page, the current profiler pages, and the dedicated Dynamic Wind page (each returned only a table of contents).
 - Definitions of the Unreal Assistant's access levels.
 - Autodesk's help page for the Revit 2025 export command (the link returned "not found").
+
+## Phase 1 test results
+
+Measured in engine 5.9.0, build 60351404, on this workstation, on 2026-11-10 and 2026-11-11. Every figure and its method is in [phase1_results.md](phase1_results.md); the section is named in the last column. Faults and their fixes are logged in `PROJECT_MEMORY.md` at the repository root.
+
+| Feature | Result | What a later phase must do | Where in `phase1_results.md` |
+|---|---|---|---|
+| Agent server | Starts with the editor. 109 tool sets. 50 of 50 read-only calls passed, median 14 ms. | Nothing. Count tool sets by names that contain a dot. | "Acceptance: agent server" |
+| Datasmith import | Crashes the editor with an assertion in `MaterialShader.cpp` line 2653 on Datasmith's `RevitReference` material. Works with `r.Material.UseShaderCompilationParameters=0` in `[/Script/Engine.RendererSettings]` of `Config\DefaultEngine.ini`: 3,562 of 3,562 objects and 587 of 587 lights in 28 seconds. | Keep the line. After each engine update, test once without it in a scratch copy. | "Step 1.7" |
+| Datasmith reimport | Works, and keeps Unreal-side material work: 20 of 20 assignments and 3 of 3 direct material edits survived a reimport from a changed export. It crashes the editor (`StaticMeshSourceData.cpp` line 326) if it is started while the level's meshes are still being prepared, as they are for some seconds after a level loads. It renumbers the labels of same-named objects and leaves the files of removed meshes and materials in place. | Load the level, finish asset preparation in a separate call, then reimport. Find objects by Revit element ID. Save the import folder and the level by name afterwards. | "Step 1.8" |
+| Startup-only settings | A rendering variable that is read-only while the editor runs takes effect from `[/Script/Engine.RendererSettings]`. The project's `[ConsoleVariables]` section is not applied by 5.9.0: its `t.MaxFPS=60` reads 0 in the running editor. | Put such lines in the renderer section, restart, and read the variable back. | "What was saved or changed in the project"; the second point is in `PROJECT_MEMORY.md` |
+| Path Tracer | Three 3840 by 2160 renders, 48 to 50 seconds each, no crash. Correct only with `r.RayTracing.Nanite.Mode 2`; at the project's value 0 it draws reduced stand-in meshes with holes, and at 1 it loses every Nanite part. | Set 2 for each render and put it back. A permanent value is a Phase 8 decision. | "Step 1.9" |
+| Nanite ray tracing in real time | With `r.RayTracing.Nanite.Mode 2`, Lumen's picture of a shaded wall at S1 comes close to the path-traced one. It costs roughly 0.5 ms on the graphics card; that figure is rough. | Decide in Phase 8, with a proper measurement. | "Step 1.12", "World Cache: results" |
+| Lumen World Cache | Switched by `r.Lumen.WorldCache.Supported` (startup only) and `r.Lumen.WorldCache.Allowed` (on by default, changeable while the editor runs). Acts only with Lumen's hardware ray tracing. At S1 it is 0.34 to 0.44 ms cheaper and holds about 0.4 GB less video memory, and it turns shaded walls grey where the path-traced render shows them warm. | Off; the line is not in the settings file. Try again in Phase 8 on the finished scene, judged against a path-traced render. | "Step 1.12" |
+| Overlapping glass (AVBOIT) | Switched by `r.OIT.Method 1`; glass that is not Nanite also needs `r.AVBOIT.NonNanite 1`. Costs 0.3 ms at S1, where no glass overlaps and no difference shows. | Off. Judge again where glass overlaps: the Revit building's railings and windows. | "Step 1.12" |
+| Sun Position Calculator | The engine's sun calculation is within 0.05 degree of bearing and 0.06 degree of height of NOAA. On a placed sun-and-sky actor the year cannot be changed and stays at 2019, which costs about 0.1 degree; with north offset 0 the actor takes +X as north, and this project's north is -X. | Set north offset to 180 plus the street's measured turn from true north. | "Step 1.10" |
+| Physical light units | A 1,000-lumen point light reads 79.5 lux at 1 m against 79.6 expected. The editor has no illuminance read-out for a point light; the reading is taken from a matte card and calibrated against a 1,000-lux light. | Calibrate every brightness reading the same way; do not read it as absolute. | "Step 1.11" |
+| CSV profile | Frame, game-thread and graphics-card times read normally. The `RenderThreadTime` column reads 0 in 5.9.0. The editor caps frames at 120 a second unless `t.MaxFPS 1000` is set. | The render-thread budget cannot be checked from the CSV profile; Phase 9 needs another source. Set `t.MaxFPS 1000` for captures and put it back. | "Step 1.6" |
+| Editor's own state | The editor starts at Cinematic quality, not Epic, and can come back from a restart in Unlit view mode. | Set the quality and check the view mode before every capture. | "Findings that bear on the plan" |
+| Python in the editor | Several names a script might expect do not exist in 5.9; each is listed with its replacement in `PROJECT_MEMORY.md`. | Look a name up with the Python tool's `search_symbols` before calling it. | - |

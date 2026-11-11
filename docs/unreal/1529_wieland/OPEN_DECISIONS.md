@@ -141,3 +141,16 @@ They are ordered by how much each could change the plan.
 | Blender for re-modelling the adjacent buildings | Not used; the editor's own geometry tools are used | If approved, modelling is faster and adds an FBX step per building |
 | Mapillary street imagery | Looking only | If the owner wants it used for textures or measurements, its terms need a legal reading first, as SOURCES.md explains |
 | The existing project's Revit import (`Content\Wieland\Revit1527`, 2 GB, no recorded source) | Kept for comparison until Phase 3's fresh import is accepted, then removed | Keeping it costs 2 GB on D: |
+
+### 15. Decisions raised by Phase 1
+
+Added on 2026-11-11 when Phase 1 closed. **None needs an answer now.** Each is asked in the phase named, with a measurement beside it; until then the recommended default is in force. The measurements behind them are in `phase1_results.md`.
+
+| Subject | Recommended default | If otherwise |
+|---|---|---|
+| Phase 8: ray tracing of Nanite parts in real time (`r.RayTracing.Nanite.Mode 2`, a project-wide setting) | Set only for the length of each path-traced render, as now. Phase 8 measures it at the reference views and asks | Saved for the project, it brings the real-time picture closer to the path-traced one and costs roughly 0.5 ms a frame |
+| Phase 8: Lumen World Cache (the 5.9 store for bounced light) | Off. Phase 8 tries it once more on the finished scene, against a path-traced render | On, every level is about 0.4 ms cheaper and holds 0.4 GB less video memory, and shaded walls lose their warm colour |
+| Phase 3: the test content under `/Game/Wieland1529/Scratch/` (the second export, with 20 marker materials and three recoloured materials; 0.97 GB on D:, copied to H:) | Kept until Phase 3's own import is accepted, then removed | Removing it earlier frees 0.97 GB and loses the worked reimport example |
+| Phase 3: files a reimport leaves behind (meshes and materials the new export no longer has) | Left in place, listed, and removed once when the import is accepted | Removing them after every reimport keeps the folder small and is a deletion each time |
+| Phase 5: eight texture files that both exports name and neither contains | Not chased in Revit. The materials that use them are listed in the material audit and given their image in Unreal | If the image paths are repaired in Revit, the next export carries the files |
+| Any phase: a pointer file in the project folder | None, by the owner's word of 2026-11-11. Each session's opening prompt gives the plan's full path | With one, a session started in the project folder loads the plan's rules by itself |

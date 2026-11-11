@@ -1,5 +1,7 @@
 # Resume prompt: finishing Phase 1 in a new chat, 2026-11-11
 
+> **Used, and no longer needed.** Phase 1 was completed on 2026-11-11 at 13:25 by the chat this prompt started. Do not paste it again. The results are in `phase1_results.md`, and what later phases must carry over is at the end of the Phase 1 section of `PLAN.md`.
+
 Written with the `fable-prompt-architect` skill. It replaces `RESUME_PHASE1.md`, which described the state after the first crash and is out of date. Paste everything below the line into a **new chat** in the Unreal 5.9 Assistant panel. Before pasting, check that the model shows as Fable 5.2 and choose a permission mode other than "Bypass permissions".
 
 ---

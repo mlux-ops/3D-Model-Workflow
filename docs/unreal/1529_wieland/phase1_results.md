@@ -10,6 +10,8 @@ Companion to [PLAN.md](PLAN.md). This file is written as each step finishes, so 
 
 **The Lumen World Cache trial is done** (step 1.12): the difference is visible, the feature is about 0.4 ms cheaper and not dearer, and the setting does not stay, because it moves the picture away from the path-traced render. Its line was taken out of the settings file at 12:59.
 
+**Nothing in Phase 1 waits on the owner except restarting the editor,** which the owner has said will be done. Phase 1's rules and findings were carried into `PLAN.md`, `ENGINE_NOTES.md` and `OPEN_DECISIONS.md` on 2026-11-11, so that a later session finds them without being told; see "Waiting on the owner".
+
 A new session took over at 12:38 on 2026-11-11 from the one that ran out of credit at 11:18. Earlier, the editor crashed at 00:55 when Windows ran out of virtual memory; nothing was lost then either.
 
 **What has been saved in the Unreal project** is listed under "What was saved or changed in the project": three scratch levels' worth of test content under `/Game/Wieland1529/Scratch/`, one line in `Config\DefaultEngine.ini` (a second was added for the World Cache trial and taken out again after it), and three deletions the owner approved. The level `L_R15_Production` and everything under `Content\Wieland\` are unchanged and were never saved over.
@@ -597,7 +599,7 @@ For the record, readings taken before the rule existed: at 00:46, just before re
 1. **Station S1 as the plan places it is inside a building.** The plan puts the west sidewalk 18 m west of the front lot line, from an assumed 66-foot right-of-way. In the existing model the face of the building on the west side stands about 17.2 m from the front lot line at the lot's centre line, so that point is under its roof. For this baseline the walking line is 14.0 m west of the front lot line, on the modelled sidewalk. Either the model's street is too narrow or the assumption is too wide; Phase 2 measures the real width.
 2. **The editor was found at Cinematic quality, not Epic.** Every quality group read 4, and the texture pool read 3,000 MB. The October benchmark used 3 and 1,000 MB. Cinematic costs about twice as much graphics-card time on this scene.
 3. **The project is larger than the plan records:** 22.4 GB against 17.2 GB. `Intermediate` holds 5.14 GB of files the engine rebuilds.
-4. **Free space on C: moves by gigabytes for reasons outside this work.** C: read 17.05 GB at 21:47, 19.77 GB at 22:12 and 18.87 GB at 22:36 (the plan recorded 20.8). The cause is not known. H: read 233.72 GB and then 230.62 GB; this work wrote nothing to H:. At 22:36, D: had 51.27 GB and E: 66.75 GB.
+4. **Free space on C: moves by gigabytes for reasons outside this work.** C: read 17.05 GB at 21:47, 19.77 GB at 22:12 and 18.87 GB at 22:36 (the plan recorded 20.8). The cause is not known. H: read 233.72 GB and then 230.62 GB; this work wrote nothing to H:. At 22:36, D: had 51.27 GB and E: 66.75 GB. **The cause was looked for on 2026-11-11, when C: had fallen to 12.8 GB, under the plan's 15 GB floor.** A read-only scan listed every file on C: written since 2026-11-10, 14.6 GB in all, by folder. The writers are: a Windows update being staged, about 3.5 GB (`C:\Windows\SoftwareDistribution\Download` 1.0 GB, `C:\$WinREAgent\Scratch` 0.9 GB, new components under `C:\Windows\WinSxS` about 0.8 GB, and its logs); program updates (the Epic launcher and its online services 1.3 GB, two versions of the Claude desktop app 1.6 GB, Unreal Canvas's Python packages 0.6 GB, Node packages 0.4 GB); and caches (Google Drive 0.7 GB, browsers 0.5 GB). Claude's own chat records came to 0.26 GB. None of it is this project: the engine's cache and the page file are on D:. Written bytes are not the same as lost space, since an update replaces files, but they show who writes. A staged Windows update is normally cleared after Windows installs it.
 5. **A correction to this session's first message.** It said the engine cache held 9.2 GB on C:, and gave C:'s small margin as the reason to move the cache before the import. That was wrong. `C:\Users\cowey\AppData\Local\UnrealEngine` is a link to `E:\AppData-Moved\UnrealEngine`, so the cache was on E:. The planning session found this at 22:40 and corrected the plan. What writes to C: during an import is therefore unknown, and C: is watched during step 1.7.
 6. **The editor does not slow down when it is in the background** ("Use Less CPU when in Background" is off), so captures taken while the owner works in another window are usable. Each capture records whether the editor was in front.
 7. **Two sessions write to the plan's working copy.** While this session was paused, the planning session's commit `644edc7` took in this session's uncommitted files under a message that describes only the cache correction. Nothing was lost. From here this session stages only its own files, by path.
@@ -612,12 +614,21 @@ For the record, readings taken before the rule existed: at 00:46, just before re
 
 | # | Step | What | Size on disk | Cost |
 |---|---|---|---|---|
-| 1 | 1.8 | Nothing: the owner chose way forward A, and it was made as reimport R3 and worked. For the owner to look at in Revit when convenient: the eight texture files the second export names but does not contain, listed under "Reimport R3: result". | - | - |
-| 2 | 1.12 | **Restart the editor before the next heavy step, and before opening Revit beside it.** Two reasons: the removal of the World Cache line takes effect only at a restart, and the editor holds 23.4 GB after the reimport, with 18.3 GB of free commit left at 13:25. That is above the 12 GB floor, but it is the size the editor had when Windows ran out of virtual memory at 00:55 with Revit open. | None | None |
-| 3 | - | Keep Revit and other large programs closed while the editor does heavy work, or say when they are open: the 00:55 crash was Windows running out of virtual memory with both open. Revit was closed at 12:38. | None | None |
-| 4 | - | For information: C: had 12.7 GB free at 13:02 on 2026-11-11, against 17 to 19 GB on 2026-11-10. This work writes nothing to C: except the chat's own records under `C:\Users\cowey\.claude\`. The cause is still not found (finding 4 above). | - | - |
+| 1 | 1.12 | **Restart the editor.** The owner said on 2026-11-11 that this will be done. Two reasons for it: the removal of the World Cache line takes effect only at a restart, and the editor held 23.4 GB after the reimport. | None | None |
 
-Done since this table was first written: the owner made the second export at 11:08 on 2026-11-11 (the earlier item 2), and restarted the editor at 11:25 and 11:39 (the earlier item 1).
+**Nothing else in Phase 1 waits on the owner.** On 2026-11-11, after the report that Phase 1 was complete, the owner wrote: "i will restart but i need you to complete all other required steps i dont want to interact with this workflow anymore". What that left, and what was done with each item between 13:30 and 13:40:
+
+| Item | What was done |
+|---|---|
+| The eight texture files that the export names and does not contain | Checked: both exports name them and neither contains them, so this is a standing condition of the Revit materials, not something the second export introduced. It is now a task for Phases 3 and 5 (`PLAN.md`, end of the Phase 1 section) with a default that needs nothing from the owner (`OPEN_DECISIONS.md`, decision 15). |
+| C: under the plan's 15 GB floor | The cause was looked for with a read-only scan, as the plan's risk list asks. It is not this work. See finding 4, which now names the writers. |
+| Revit closed during heavy work, and the memory reading | Now a rule of every phase in `PLAN.md`, so it does not depend on anyone remembering it. |
+| The check that the World Cache removal took effect | Cannot be made before the restart. It is the first check of the next session, written at the end of the Phase 1 section of `PLAN.md`. |
+| Phase 1's findings | Carried into the files later sessions read: four rules in `PLAN.md` under "Rules for every phase", a table of carry-over items at the end of its Phase 1 section, the test results in `ENGINE_NOTES.md`, and the choices that come later in `OPEN_DECISIONS.md`, decision 15. |
+| An archive at the milestone | What Phase 1 added to the project was copied to `H:\Wieland1529_archives\2026-11-11_phase1-complete\` and verified; see "What was saved or changed in the project". |
+| The two resume prompts | Marked at their top as used and not to be pasted again. |
+
+Done earlier: the owner made the second export at 11:08 on 2026-11-11, restarted the editor at 11:25 and 11:39, and chose the way forward for the reimport.
 
 Answered by the owner at 00:17 on 2026-11-11: yes to the workaround line; yes to deleting the Belmont recovery level; remove the pointer file; yes to trying Lumen World Cache.
 
@@ -665,6 +676,8 @@ In `D:\Unreal_Engine_Projects\Wieland1527 5.9\`:
 | Everything under `Content\Wieland\` and the level `L_R15_Production` | Not changed. Nothing was saved over. |
 
 On H:, with the owner's approval: `H:\Wieland1529_archives\2026-11-10_pre-phase1\Wieland1527 5.9\` (11,657 files, 17.24 GB), the project as it stood before any of the above, including the three deleted items and the settings file without the added line.
+
+Also on H:, written at 13:34 on 2026-11-11 at the close of Phase 1, as the plan's risk list asks for an archive at every milestone: `H:\Wieland1529_archives\2026-11-11_phase1-complete\Wieland1527 5.9\`, holding the project's `Config` folder (32 files) and `Content\Wieland1529\` (1,675 files), 0.97 GB in all. It is a copy of what Phase 1 added or changed, not of the whole project; with the first archive beside it, it restores the project as Phase 1 left it. Every file matched its source in count and bytes. Log: `review\phase1\archive_2026-11-11_phase1-complete.robocopy.log`.
 
 
 ## Files written in the plan's working copy
@@ -788,6 +801,13 @@ Written between 13:17 and 13:25 on 2026-11-11 by the same session, for reimport 
 - `docs\unreal\1529_wieland\review\phase1\datasmith_reimport_R3.json`
 - `docs\unreal\1529_wieland\review\phase1\datasmith_reimport_R3_after.json`
 - `docs\unreal\1529_wieland\review\phase1\datasmith_reimport_R3_before.json`
+
+Written between 13:30 and 13:40 on 2026-11-11 by the same session, to close the phase. New: `docs\unreal\1529_wieland\review\phase1\archive_2026-11-11_phase1-complete.robocopy.log`. Changed, so that later sessions find Phase 1's rules and findings where they read:
+
+- `docs\unreal\1529_wieland\PLAN.md` (four rules added under "Rules for every phase"; a status line and a table of carry-over items in the Phase 1 section)
+- `docs\unreal\1529_wieland\ENGINE_NOTES.md` (a section "Phase 1 test results" and a note pointing to it)
+- `docs\unreal\1529_wieland\OPEN_DECISIONS.md` (decision 15, none of it needed now)
+- `docs\unreal\1529_wieland\RESUME_PHASE1.md` and `docs\unreal\1529_wieland\RESUME_PHASE1_2026-11-11.md` (a note at the top that they are used and not to be pasted again)
 
 
 ## Appendix: the 109 tool sets
