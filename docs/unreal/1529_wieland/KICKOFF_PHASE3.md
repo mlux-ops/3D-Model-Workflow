@@ -12,6 +12,8 @@ Written on 2026-11-11 with the `fable-prompt-architect` skill, by the session th
 
 # Phase 3 of the 1529 N. Wieland scene plan: the building, imported and placed
 
+**Phase 3 was begun on 2026-11-11 at 16:16, in the chat that wrote this prompt, without an editor restart.** Read `docs\unreal\1529_wieland\phase3_results.md` before anything else: its status block and its journal say which steps are done, and a journal line that still reads PENDING marks a step that was running when that chat ended. Carry on from there, and take everything below as the rules and the background, not as a list of steps still to do.
+
 ## What this session is for
 
 You are carrying out Phase 3 of an existing plan in the Unreal Engine 5.9 project `D:\Unreal_Engine_Projects\Wieland1527 5.9\Wieland1527.uproject`. Phases 1 and 2 were finished on 2026-11-11 by an earlier chat whose memory you do not have; everything it did is written down and committed, and you work from its records. Phase 3 brings the whole building from my Revit export into its own Unreal level, at its true position, with a repeatable way to take in later exports that keeps every Unreal-side material assignment and edit.
