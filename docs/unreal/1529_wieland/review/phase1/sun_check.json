@@ -1,0 +1,67 @@
+{
+ "step": "1.10",
+ "date_checked": "2026-11-10",
+ "case": "15 August 2026, 15:30:00 Central Daylight Time (UTC-5), lot centre 41.910215, -87.635389",
+ "engine": {
+  "function": "unreal.SunPositionFunctionLibrary.get_sun_position (Sun Position Calculator plugin, engine 5.9.0)",
+  "inputs": {
+   "latitude": 41.910215,
+   "longitude": -87.635389,
+   "time_zone": -6.0,
+   "is_daylight_saving_time": true,
+   "year": 2026,
+   "month": 8,
+   "day": 15,
+   "hours": 15,
+   "minutes": 30,
+   "seconds": 0
+  },
+  "raw": {
+   "elevation": 226.37994384765625,
+   "corrected_elevation": 226.39529418945312,
+   "azimuth": 241.72023010253906
+  },
+  "note": "the plugin returns elevation plus 180 degrees; the same inputs given as time zone -5 with daylight saving off return identical values",
+  "azimuth_deg": 241.72023010253906,
+  "elevation_deg": 46.37994384765625,
+  "elevation_with_refraction_deg": 46.39529418945312
+ },
+ "noaa_calculator_page": {
+  "url": "https://gml.noaa.gov/grad/solcalc/",
+  "read_with": "headless Chromium 157.0.8103.39 driven by the session's browser tool; values read from the page's fields after entry",
+  "fields": {
+   "Latitude": "41.910215",
+   "Longitude": "-87.635389",
+   "Time Zone": "America/Chicago",
+   "UTC Offset": "-05:00",
+   "Month": "Aug",
+   "Day": "15",
+   "Year": "2026",
+   "Hour": "15",
+   "Minute": "30",
+   "Second": "00",
+   "Equation of Time (minutes)": "-4.43",
+   "Solar Declination": "13.84",
+   "Solar Noon": "12:55:06",
+   "Apparent Sunrise": "05:59",
+   "Apparent Sunset": "19:51",
+   "Azimuth": "241.67",
+   "Elevation": "46.34"
+  },
+  "note": "the page's elevation includes atmospheric refraction; it shows two decimals"
+ },
+ "noaa_equations_run_locally": {
+  "azimuth_deg": 241.6671,
+  "elevation_deg": 46.3248,
+  "elevation_with_refraction_deg": 46.3402,
+  "declination_deg": 13.8402,
+  "equation_of_time_min": -4.4306,
+  "note": "NOAA's published spreadsheet equations, run in Python as a cross-check; they reproduce the page"
+ },
+ "difference_engine_minus_noaa_page": {
+  "azimuth_deg": 0.05,
+  "elevation_with_refraction_deg": 0.055
+ },
+ "tolerance_deg": 0.5,
+ "result": "pass"
+}
