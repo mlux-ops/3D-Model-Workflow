@@ -407,6 +407,16 @@ Cost: 0.3 ms, inside the plan's 1.0 ms limit. Visible difference: none that can 
 
 After the restart: confirm `r.Lumen.WorldCache.Supported` reads true, confirm the view mode is Lit, record free memory, then capture S1 with `r.Lumen.WorldCache.Allowed` at 1 and at 0, with timings and pictures. Keep the line only if the difference is visible and costs no more than 1.0 ms; otherwise take it out.
 
+### The World Cache trial
+
+Written before the trial is made, as with the import and the reimports.
+
+**Checked at 12:46 on 2026-11-11, after the editor's 11:39 restart:** `r.Lumen.WorldCache.Supported` reads true, set by the project's settings file, so line 44 took effect. `r.Lumen.WorldCache.Allowed` reads true, so the feature has been in use since that restart. `r.Lumen.HardwareRayTracing` reads 1; the feature's own help text says it acts only there ("Lumen hardware ray tracing samples the world cache instead of the surface cache"). The view mode is Lit. The open level is `L_R15_Production`, with nothing unsaved. No shader compiler process is running. The editor had come up at Cinematic quality (every quality group at 4, texture pool 3,000 MB, Game View off); the trial sets the reference's Epic settings and puts the found values back afterwards.
+
+| No. | Time | What is tried | Outcome |
+|---|---|---|---|
+| W1 | 12:48 on 2026-11-11 | At S1 in `L_R15_Production`, with the reference's settings (Epic quality, texture pool 1,000 MB, 100 percent screen percentage, `t.MaxFPS 1000`, Game View on): four 10-second captures, each after 15 seconds of settling, with `r.Lumen.WorldCache.Allowed` at 1, 0, 1 and 0 in turn, then one picture in each state. Free physical memory 8.4 of 31.1 GB, free commit 26.5 of 79.1 GB, video memory 7.8 of 16.4 GB in use. Every console setting is put back afterwards and nothing is saved. | WORLDCACHE_W1_OUTCOME_PENDING: if this line still reads so, the editor crashed or the session ended during the trial |
+
 ## Step 1.14: content removal
 
 Approved by the owner for the two folders `Content\Belmont` and `Content\EuropeanBeech`.
@@ -446,6 +456,7 @@ By the owner's instruction of 2026-11-11: before an import, a reimport, a path-t
 | 09:57 on 2026-11-11 | Lighting captures at S1 (reference for the World Cache trial) | 12.3 of 31.1 | 30.0 of 79.1 | Yes |
 | 11:17 on 2026-11-11 | Reimport R2 from the second export (Revit open at 6.5 GB, editor at 15.5 GB) | 6.2 of 31.1 | 18.4 of 79.1 | Yes |
 | 12:38 on 2026-11-11 | None yet: the state check of the session that took over (Revit closed, editor at 14.9 GB, started 11:39) | 8.3 of 31.1 | 26.6 of 79.1 | - |
+| 12:46 on 2026-11-11 | Lumen World Cache trial W1 at S1 (Revit closed, editor at 15.0 GB, video memory 7.8 of 16.4 GB in use) | 8.4 of 31.1 | 26.5 of 79.1 | Yes |
 
 For the record, readings taken before the rule existed: at 00:46, just before reimport R1, 4.5 GB physical and 8.2 GB commit were free, with the editor at 20.5 GB and Revit at 12.5 GB. At 00:51 commit free was 6.0 GB. The editor crashed at 00:55.
 
