@@ -2,7 +2,7 @@
 
 Companion to [PLAN.md](PLAN.md). This file is written as each step finishes, so a new session can resume from it.
 
-**Status at 00:10 Central on 2026-11-11: in progress.** Five of the eight acceptance lines are measured and pass (agent server, baseline, sun, Path Tracer, light units). The Datasmith import has crashed the editor twice on the same assertion; the workaround from Epic needs one line in a project settings file and a restart, and waits for the owner's yes (see "Step 1.7"). Phase 1 is not complete.
+**Status at 00:05 Central on 2026-11-11: in progress.** Five of the eight acceptance lines are measured and pass (agent server, baseline, sun, Path Tracer, light units). The Datasmith import has crashed the editor twice on the same assertion; the workaround from Epic needs one line in a project settings file and a restart, and waits for the owner's yes (see "Step 1.7"). The approved content removal is done. The two-hour soak is the next step. Phase 1 is not complete.
 
 **Nothing in the Unreal project has been saved.** No asset, level or setting was written. The level `L_R15_Production` has no unsaved changes, and the editor's settings and camera were put back after every measurement. The only files this work wrote inside the project folder are the measurement logs the engine itself writes under `Saved\Profiling\CSV\`.
 
@@ -36,7 +36,7 @@ Companion to [PLAN.md](PLAN.md). This file is written as each step finishes, so 
 | 1.11 | 1,000-lumen light, illuminance at 1 m | **Done.** See "Step 1.11". |
 | 1.12 | Lumen World Cache and overlapping glass, on and off | **Part done.** Overlapping glass measured; World Cache needs a saved project setting and a restart. See "Step 1.12". |
 | 1.13 | Two-hour soak | Not started. |
-| 1.14 | Remove the Belmont and beech content | Approved by the owner; reference check done (see "Step 1.14"); not yet deleted. |
+| 1.14 | Remove the Belmont and beech content | **Done at 00:01 on 2026-11-11.** See "Step 1.14". |
 | 1.15 | This file | In progress. |
 
 ## Checks made before any work
@@ -248,9 +248,32 @@ Cost: 0.3 ms, inside the plan's 1.0 ms limit. Visible difference: none that can 
 
 **Lumen World Cache.** The switch is `r.Lumen.WorldCache.Supported`, found by searching the console variables; it has no entry in Project Settings. It is off, and it is read-only while the editor runs ("is read only!"). Trying it means saving a project-wide rendering setting and restarting, which is the owner's decision. **Not tested.**
 
-## Step 1.14: content removal, checked ahead
+## Step 1.14: content removal
 
-Read-only check of every reference: `/Game/Belmont` holds 5,872 assets and `/Game/EuropeanBeech` 258. No Wieland asset refers to either. One asset outside the two folders does: the level `/Game/L_Belmont_Production_RECOVERY_20261006` (1.12 MB) at the content root, which refers to 792 Belmont assets. Deleting it is not covered by the owner's approval.
+Approved by the owner for the two folders `Content\Belmont` and `Content\EuropeanBeech`.
+
+Checks made immediately before deleting, all read-only:
+
+| Check | Result |
+|---|---|
+| Assets in the two folders | 5,872 and 258 |
+| Wieland assets that refer to them | None |
+| Assets outside the two folders that refer to them | One: the level `/Game/L_Belmont_Production_RECOVERY_20261006` at the content root (792 references). It is Belmont's own. |
+| Assets from the two folders loaded in the editor | None |
+| Settings files that name the folders | None |
+| Archive copies on H: | Identical in file count and bytes (5,872 files, 3.19 GB; 258 files, 7.41 GB) |
+| Links inside the folders | None |
+
+Because nothing from the folders was loaded, the files were removed directly from disk at 00:01 and the editor's asset list was then rescanned. Deleting through the editor would have loaded all 6,130 assets first, including old Datasmith materials, which is the kind of load that crashes the import.
+
+| Outcome | Value |
+|---|---|
+| Space freed on D: | 9.88 GB (50.70 GB free before, 60.58 GB after) |
+| Assets the editor lists under the two folders | 0 |
+| Assets left under `/Game` | 2,918 |
+| Assets that still point at the deleted folders | One: `/Game/L_Belmont_Production_RECOVERY_20261006` (1.12 MB). **Left in place**: deleting it is not covered by the approval. It will show missing content if opened. |
+
+To restore: copy the two folders back from `H:\Wieland1529_archives\2026-11-10_pre-phase1\Wieland1527 5.9\Content\`.
 
 
 ## Findings that bear on the plan
