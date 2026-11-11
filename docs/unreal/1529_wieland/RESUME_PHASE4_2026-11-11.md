@@ -36,7 +36,7 @@ Start with the state: with read-only calls, confirm the editor answers, that the
 
 Then fix the mesh step before running any batch:
 
-- Give every generated mesh one UV channel and fill it (for example `unreal.GeometryScript_UVs.set_num_uv_channels(mesh, 1)` followed by a box projection), before the static mesh asset is created. Check the exact function names against the 5.9 Python API rather than trusting these.
+- Give every generated mesh one UV channel and fill it (for example `unreal.GeometryScript_UVs.set_num_uv_channels(mesh, 1)` followed by a box projection), before the static mesh asset is created. Check the exact function names against the 5.9 Python API rather than trusting these. If the 5.9 buffers type has a UV field, filling it before the append is a simpler alternative.
 - Count the triangles the append rejects, per file, and record the total. If the count is material, fix the topology where the files are made (`build_surroundings.py`: duplicate or reversed faces, shared edges used by more than two faces) rather than accepting holes.
 - Test with a batch of one file, check the asset in the level, and only then run the batches. Journal and commit before each batch, as before.
 
