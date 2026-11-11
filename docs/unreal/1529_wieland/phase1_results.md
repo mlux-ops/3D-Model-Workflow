@@ -311,6 +311,7 @@ Each reimport is written here before it is made, as with the import.
 | No. | Time | What was tried | Outcome |
 |---|---|---|---|
 | R1 | 00:50 | Reimport of the imported scene from the **same, unchanged file**, with the importer's defaults (update the placed objects; do not bring back deleted ones). Purpose: prove the reimport route works in 5.9.0 with the workaround in force, and see whether the 20 assignments survive a reimport in which nothing changed. It does not replace the rehearsal with the owner's changed export. | **No crash; success in 24.5 seconds at 00:47.** No mesh was imported again, because none had changed. **20 of 20 assignments survived**: 10 of 10 on objects and 10 of 10 on meshes. The level still holds 3,562 mesh objects and 587 lights. The reimport did rewrite all 280 imported materials, 22 textures and 7 light-distribution files, although nothing had changed in the file; they and the level were saved again by name afterwards. Record: `review\phase1\datasmith_reimport_R1.json`. |
+| R2 | 11:22 on 2026-11-11 | **The rehearsal proper:** reimport from the owner's second export, `25-006_1527_N_Wieland-3DView-3D_View_188_r2.udatasmith`, written 11:08. The owner swapped some light fixtures. Compared with the first file it holds 571 lights against 587, 1,288 meshes against 1,294, 284 materials against 280; 22 placed objects are gone and 14 are new; 13 meshes keep their name with changed content. Method: point the imported scene's recorded source file at the second export, then reimport with the importer's defaults. Workaround line in force. | REIMPORT_R2_OUTCOME_PENDING: if this line still reads so, the editor crashed during reimport R2 |
 
 
 ## Step 1.9: path-traced renders
@@ -417,6 +418,7 @@ By the owner's instruction of 2026-11-11: before an import, a reimport, a path-t
 | Time | Step about to start | Free physical memory (GB) | Free commit (GB) | Started |
 |---|---|---|---|---|
 | 09:57 on 2026-11-11 | Lighting captures at S1 (reference for the World Cache trial) | 12.3 of 31.1 | 30.0 of 79.1 | Yes |
+| 11:17 on 2026-11-11 | Reimport R2 from the second export (Revit open at 6.5 GB, editor at 15.5 GB) | 6.2 of 31.1 | 18.4 of 79.1 | Yes |
 
 For the record, readings taken before the rule existed: at 00:46, just before reimport R1, 4.5 GB physical and 8.2 GB commit were free, with the editor at 20.5 GB and Revit at 12.5 GB. At 00:51 commit free was 6.0 GB. The editor crashed at 00:55.
 
