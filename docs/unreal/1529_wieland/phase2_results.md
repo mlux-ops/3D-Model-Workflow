@@ -205,7 +205,9 @@ Recorded in `review\phase2\level_frame.json` and applied by `tools\wieland_geo.p
 
     new x = old x + 15,482.32 cm        new y = old y + 5,053.7 cm
 
-and no turn. This rests on the earlier registration's two figures. Phase 3 confirms it against the survey point the export carries, before it places the building.
+and no turn. This rests on the earlier registration's two figures, which were taken from an older FBX export of the same Revit model.
+
+**What the Datasmith export itself carries, read from the second export at 16:02:** a site-location object at 0, 0, 0; a survey point at (1,800.66, 1,703.06, -25,043.59) cm; and a project base point at (-3,722.25, -2,091.81, 0) cm, each with its Revit element ID. Its only data about them are the two points' positions in Revit's own coordinates. It holds no latitude or longitude, no map coordinates for the survey point and no angle to true north. In the new frame the survey point lies 173 m south and 68 m west of the lot's south-west corner and the base point 118 m south and 30 m west, so neither is a lot corner. **Step 3.3 of the plan, "place the import by the Revit survey point", therefore cannot work as written:** the survey point's place in the real world is not in the file. Phase 3 has to place the building by the lot instead: find the property lines or the site object in the import, or the building's street face (10 ft 2 1/2 in behind the front lot line, 43 ft 4 in wide, centred on the lot), and check that the shift above puts them on the governing lot.
 
 **A true bearing to a yaw in the level:** yaw = bearing - 178.82 degrees. Phase 1 used "bearing - 180", which assumed the level's north was true north; it is 1.18 degrees off.
 
