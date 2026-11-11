@@ -2,9 +2,15 @@
 
 Companion to [PLAN.md](PLAN.md). This file is written as each step finishes, so a new session can resume from it.
 
-**Status at 12:45 Central on 2026-11-11: in progress.** Six acceptance lines are measured and pass (agent server, baseline, sun, Path Tracer, light units, import). The soak is no longer part of Phase 1. One line is open: the reimport rehearsal. **Reimport R2 from the owner's second export ran at 11:21 and crashed the editor at 11:22:20; nothing was lost and nothing from it reached disk.** Its cause is read from the engine's source and recorded under "Step 1.8". The Lumen World Cache setting is now in force (the variable reads true after the 11:39 restart) and its trial is next. A new session took over at 12:38: the editor answers, the workaround variable reads 0, no asset is unsaved, and the working copy was clean at commit `e661bb7`. Earlier, the editor crashed at 00:55 when Windows ran out of virtual memory; nothing was lost then either.
+**Status at 13:06 Central on 2026-11-11: Phase 1 is complete except for one acceptance line, the reimport rehearsal, which waits for the owner's choice.** Six acceptance lines are measured and pass (agent server, baseline, sun, Path Tracer, light units, import). The soak is no longer part of Phase 1. Every step in the table below is done except 1.8.
 
-**What has been saved in the Unreal project** is listed under "What was saved or changed in the project": three scratch levels' worth of test content under `/Game/Wieland1529/Scratch/`, two lines in `Config\DefaultEngine.ini`, and three deletions the owner approved. The level `L_R15_Production` and everything under `Content\Wieland\` are unchanged and were never saved over.
+**What is not complete, exactly:** the reimport from the owner's second export has no measured result. It was started once, at 11:21 (reimport R2), and crashed the editor at 11:22:20; nothing was lost and nothing from it reached disk. The cause is read from the engine's source: the reimport began 0.6 seconds after the level finished loading, while its meshes were still being prepared. By the owner's instruction a reimport that crashed is not repeated unchanged, so four ways forward are set out under "Step 1.8", with one recommended. What is known so far: a reimport from the unchanged file kept 20 of 20 assignments (R1), and none of the 20 sits on anything the second export changes.
+
+**The Lumen World Cache trial is done** (step 1.12): the difference is visible, the feature is about 0.4 ms cheaper and not dearer, and the setting does not stay, because it moves the picture away from the path-traced render. Its line was taken out of the settings file at 12:59.
+
+A new session took over at 12:38 on 2026-11-11 from the one that ran out of credit at 11:18. Earlier, the editor crashed at 00:55 when Windows ran out of virtual memory; nothing was lost then either.
+
+**What has been saved in the Unreal project** is listed under "What was saved or changed in the project": three scratch levels' worth of test content under `/Game/Wieland1529/Scratch/`, one line in `Config\DefaultEngine.ini` (a second was added for the World Cache trial and taken out again after it), and three deletions the owner approved. The level `L_R15_Production` and everything under `Content\Wieland\` are unchanged and were never saved over.
 
 ## Acceptance list
 
@@ -13,7 +19,7 @@ Companion to [PLAN.md](PLAN.md). This file is written as each step finishes, so 
 | Agent server | 50 consecutive read-only calls with no error | **50 of 50 passed.** Median 14 ms a call, slowest 308 ms. | **Pass** |
 | Baseline | The three October views at a recorded viewport size, beside the October means | **Measured at 2038 by 782 pixels.** At the pixel count of 2560 by 1440 and October's settings, frame means are 10.8, 9.9 and 10.6 ms against 12.7, 11.9 and 12.9 ms in 5.8. | **Pass** |
 | Import | At least 99.5 percent of 3,562 objects and 587 lights; known dimension within 1 mm | **3,562 of 3,562 placed objects and 587 of 587 lights (100 percent each). First floor 2,032.00 mm above grade, against 2,032 mm.** On the fourth attempt, with one settings line added as a workaround for an engine fault. | **Pass, with a condition** |
-| Reimport | 20 of 20 assignments survive | Not yet measured | Waits for the import and the owner's second export |
+| Reimport | 20 of 20 assignments survive | **Not measured with the second export.** From the unchanged file (R1): 20 of 20 survived. From the second export (R2, 11:21 on 2026-11-11): the editor crashed after 28 seconds; nothing reached disk. Cause read from the engine's source; none of the 20 sits on anything the second export changes. See "Step 1.8". | **Open: waits for the owner's choice among four ways forward** |
 | Path Tracer | Three renders with no crash | **Three 3840 by 2160 renders completed, 48 to 50 seconds each, no crash.** They are correct only with one ray-tracing setting changed; see "Step 1.9". | **Pass, with a condition** |
 | Sun | Bearing and height within 0.5 degree of NOAA | **Bearing differs by 0.05 degree, height by 0.06 degree.** | **Pass** |
 | Light units | Within 10 percent of 79.6 lux | **79.5 lux** read against a 1,000-lux reference light (0.15 percent low); 76.6 lux if the test card is taken as an ideal matte surface (3.8 percent low) | **Pass** |
@@ -30,14 +36,14 @@ Companion to [PLAN.md](PLAN.md). This file is written as each step finishes, so 
 | 1.5 | Archive the project to H: | **Done at 23:28**, approved by the owner. See "Step 1.5". |
 | 1.6 | Baseline profile M0 | **Done.** [profiles/2026-11-10_M0/profile.md](profiles/2026-11-10_M0/profile.md). |
 | 1.7 | Import the Datasmith file into a scratch level | **Done** on the fourth attempt, at 00:39 on 2026-11-11. See "Step 1.7". |
-| 1.8 | Reimport rehearsal | **In progress.** The 20 assignments are made and saved; a first reimport from the unchanged file is journaled; the rehearsal proper waits for the owner's second export. See "Step 1.8". |
+| 1.8 | Reimport rehearsal | **Open; the only step not done.** The 20 assignments are made and saved. Reimport R1 from the unchanged file kept 20 of 20. Reimport R2 from the owner's second export crashed the editor at 11:22:20 on 2026-11-11, with nothing lost. The cause is recorded, the two exports are compared, and four ways forward wait for the owner's choice. See "Step 1.8". |
 | 1.9 | Three path-traced renders of station S1 | **Done.** See "Step 1.9". |
 | 1.10 | Sun direction against the NOAA calculator | **Done**, for the engine's sun calculation and for a sun placed in a level. See "Step 1.10". |
 | 1.11 | 1,000-lumen light, illuminance at 1 m | **Done.** See "Step 1.11". |
-| 1.12 | Lumen World Cache and overlapping glass, on and off | **Part done.** Overlapping glass measured. Lumen World Cache: the setting line is written, a valid reference is captured, and the trial itself waits for an editor restart. See "Step 1.12". |
+| 1.12 | Lumen World Cache and overlapping glass, on and off | **Done.** Overlapping glass: 0.3 ms, no visible difference at S1, not kept for now. Lumen World Cache, tried at 12:47 to 12:58 on 2026-11-11: visible difference, about 0.4 ms cheaper, not kept, because it moves the picture away from the path-traced render; its settings line was taken out at 12:59. See "Step 1.12". |
 | 1.13 | Two-hour soak | **Not run, by the owner's decision; moved to Phase 9, where it runs on the finished scene** (`PLAN.md`, step 9.11). A run was started at 00:02:43 on 2026-11-11 and stopped at 00:09:58 on the owner's instruction, after 7 of 120 walks, with no crash. It is not a result. Its short log is kept in `review\phase1\soak\` as a trial of the soak script. The trial showed two faults in the script, both now corrected and neither re-run; see `PROJECT_MEMORY.md`. |
 | 1.14 | Remove the Belmont and beech content | **Done.** The two folders at 00:01 and, with the owner's further approval, the Belmont recovery level at 00:18 on 2026-11-11. See "Step 1.14". |
-| 1.15 | This file | In progress. |
+| 1.15 | This file | **Done, apart from the result of step 1.8,** which is added when the owner has chosen. |
 
 ## Checks made before any work
 
@@ -339,6 +345,38 @@ The crash record's call stack lists the same parts of the engine in the same ord
 
 **This is a fault in engine 5.9.0, not in the export or the project.** It can be met in real use: reimporting straight after opening a level.
 
+### What the second export changes, and what a reimport should show
+
+Made at 13:00 on 2026-11-11 with `tools\compare_udatasmith.py`, which reads the two export files only; the editor is not involved. Full lists: `review\phase1\datasmith_export_r1_vs_r2.json`.
+
+| Kind | First export | Second export | Gone | New | Changed |
+|---|---|---|---|---|---|
+| Meshes | 1,294 | 1,288 | 15 | 9 | 13 (same name, new content) |
+| Placed mesh objects | 3,562 | 3,562 | 15 | 14 | 28 (17 moved; 11 given another mesh, one of those also moved) |
+| Lights | 587 | 571 | 16 fewer | - | - |
+| Materials | 280 | 284 | 1 | 5 | not comparable: every material that names a texture differs, because the textures' folder name changed |
+
+The counts of gone, new and changed objects are by the name Datasmith gives each object; 15 or 16 objects in each file share a name with another, which is why 15 gone and 14 new still leave the total at 3,562. Lights share names between copies of one fixture, so only their totals are given. The earlier session's journal line says "22 placed objects are gone and 14 are new"; how it counted the 22 is not recorded, and this table does not reproduce that figure. The totals of meshes, lights and materials, and the 13 changed meshes, agree with it.
+
+What changed, in words: five Focal Point adjustable accent fixtures and one Lumenwerx cylinder are gone; the mesh of a recessed Lumenwerx Via fixture is new; seven Fritz Hansen rugs, two Barrow lounge chairs, a side table, a coffee table, a dining chair, a seating pad and a one-seat sofa are new; one interior partition, two primary vanities, a countertop, a footstool, an end-seat sofa, a top rail, a ceiling and a terrace reveal are gone; the 13 changed meshes are niches, Kohler Purist sconces, a ceiling, casework and AXOR bathroom fittings.
+
+**None of the 20 assignments sits on anything that changed.** For each of the 20, the object it marks is in the second export with the same name and the same mesh, and that mesh is not one of the 13 changed or 15 removed. So a reimport that works can be expected to keep 20 of 20, and anything less would be a real loss, not an effect of the owner's edits.
+
+**Signs that the changes arrived**, to check after a reimport: 571 light components in the level, against 587 now; 57 mesh components whose label begins `Lighting_Fixtures_Lighting_Fixture-Focal_Point-ID-3_5_Adjustable_Accent`, against 62 now; 8 labelled `Furniture_Furniture_Other-Furniture_Fritz-Hansen_Rug-Dots_Default`, against 1 now; the 13 changed mesh files under `Scratch\P1\` with a new write time, and 9 new mesh files.
+
+### Ways forward for the reimport line
+
+By the owner's instruction a reimport that crashed the editor is not repeated unchanged, and the owner chooses how to go on. No reimport has been made since the crash.
+
+| | Way forward | Size on disk | Cost | What it settles |
+|---|---|---|---|---|
+| A | **Repeat the reimport with one change: wait first.** Load the scratch level; in a separate call, wait until the editor has finished preparing every asset (`unreal.AutomationUtilsBlueprintLibrary.finish_all_asset_compilation()`); only then point the scene asset at the second export and reimport. This removes the condition the crash needed. It is also what a person does by hand: open the level, let it settle, reimport. | The 0.71 GB under `Scratch\P1\` is rewritten in place and grows by a few MB (9 new meshes, 4 more materials), and only if the result is saved | About 2 minutes. If the reading of the cause is wrong, the editor crashes again: nothing is lost, but the editor and the chat have to be started again | The acceptance line as written: how many of 20 survive, and whether the changes arrive |
+| B | **As A, with background mesh preparation switched off for the length of the reimport** (`Editor.AsyncStaticMeshCompilation 0`, a console setting put back afterwards). A second change, kept for use only if A crashes. | As A | As A | As A |
+| C | **The plan's fallback: no reimport.** Import the second export fresh into a new folder `/Game/Wieland1529/Scratch/P1_r2` in a new scratch level, and put the 20 assignments back by script from `review\phase1\reimport_assignments.json`. A fresh import is the route that worked in attempt 4. | About 0.7 GB new on D:, which has 59 GB free | About 2 minutes | Whether the changes arrive, and whether assignments can be put back by script. Not whether they survive a reimport |
+| D | **Close the line as it stands** and carry it to Phase 3 as an open risk: a reimport of an unchanged file keeps 20 of 20; a reimport that replaces meshes crashes 5.9.0 when started while a level's meshes are still being prepared; untested otherwise. | None | None now; the question comes back in Phase 3 with the real model | Nothing new |
+
+Recommended: A. If A crashes, B. If B crashes, C. Whichever is chosen is journaled in the table under "Reimports" as R3 and committed before it is made, and the memory reading is taken first.
+
 
 ## Step 1.9: path-traced renders
 
@@ -395,7 +433,7 @@ Cost: 0.3 ms, inside the plan's 1.0 ms limit. Visible difference: none that can 
 
 **Lumen World Cache.** The switch is `r.Lumen.WorldCache.Supported`, found by searching the console variables; it has no entry in Project Settings. It is off, and it is read-only while the editor runs ("is read only!"), so it needs a line in the settings file and a restart. The owner approved both at 00:17 on 2026-11-11.
 
-**The trial has not been made.** What exists:
+**The trial was made on 2026-11-11 between 12:47 and 12:58 and is written up under "World Cache: results" below. The line was then taken out.** What existed before the trial:
 
 | Item | State |
 |---|---|
@@ -415,9 +453,62 @@ Written before the trial is made, as with the import and the reimports.
 
 | No. | Time | What is tried | Outcome |
 |---|---|---|---|
-| W1 | 12:48 on 2026-11-11 | At S1 in `L_R15_Production`, with the reference's settings (Epic quality, texture pool 1,000 MB, 100 percent screen percentage, `t.MaxFPS 1000`, Game View on): four 10-second captures, each after 15 seconds of settling, with `r.Lumen.WorldCache.Allowed` at 1, 0, 1 and 0 in turn, then one picture in each state. Free physical memory 8.4 of 31.1 GB, free commit 26.5 of 79.1 GB, video memory 7.8 of 16.4 GB in use. Every console setting is put back afterwards and nothing is saved. | **No crash; four captures, four pictures and a per-pass check made, 12:47 to 12:53.** Graphics-card time on 5.64, off 5.98, on 5.99, off 6.43 ms. The readings rose through the run whichever state was set, so W2 repeats them in the opposite order. Results are written up below once W2 is in. |
-| W2 | 12:54 on 2026-11-11 | The same four captures in the opposite order (`r.Lumen.WorldCache.Allowed` at 0, 1, 0, 1), with no other call made to the editor while they run, to separate the feature's effect from the upward drift seen in W1. Memory as for W1. | **No crash; four captures, 12:52 to 12:54, with the editor in front.** Graphics-card time off 6.26, on 5.91, off 6.28, on 5.84 ms. No drift this time. All console settings were put back at 12:55 and read back; nothing is unsaved. |
-| W3 | 12:59 on 2026-11-11 | One extra pair of pictures at S1, on and off, with `r.RayTracing.Nanite.Mode` at 2 for the length of the check (its found value is 0; the path-traced renders of step 1.9 needed 2 to draw the walls correctly). Reason: with the World Cache on, the shaded front of the frame house turns from warm beige to grey-blue, and the path-traced render shows it warm beige; this checks whether the reduced stand-in meshes that ray tracing uses at value 0 are the cause. Epic settings as in W1. Everything is put back afterwards; nothing is saved. | WORLDCACHE_W3_OUTCOME_PENDING: if this line still reads so, the editor crashed or the session ended during the check |
+| W1 | 12:47 on 2026-11-11 | At S1 in `L_R15_Production`, with the reference's settings (Epic quality, texture pool 1,000 MB, 100 percent screen percentage, `t.MaxFPS 1000`, Game View on): four 10-second captures, each after 15 seconds of settling, with `r.Lumen.WorldCache.Allowed` at 1, 0, 1 and 0 in turn, then one picture in each state. Free physical memory 8.4 of 31.1 GB, free commit 26.5 of 79.1 GB, video memory 7.8 of 16.4 GB in use. Every console setting is put back afterwards and nothing is saved. | **No crash; four captures, four pictures and a per-pass check made, 12:47 to 12:52.** Graphics-card time on 5.64, off 5.98, on 5.99, off 6.43 ms. The readings rose through the run whichever state was set, so W2 repeats them in the opposite order. Written up under "World Cache: results". |
+| W2 | 12:52 on 2026-11-11 | The same four captures in the opposite order (`r.Lumen.WorldCache.Allowed` at 0, 1, 0, 1), with no other call made to the editor while they run, to separate the feature's effect from the upward drift seen in W1. Memory as for W1. | **No crash; four captures, 12:52 to 12:54, with the editor in front.** Graphics-card time off 6.26, on 5.91, off 6.28, on 5.84 ms. No drift this time. All console settings were put back at 12:55 and read back; nothing is unsaved. |
+| W3 | 12:57 on 2026-11-11 | One extra pair of pictures at S1, on and off, with `r.RayTracing.Nanite.Mode` at 2 for the length of the check (its found value is 0; the path-traced renders of step 1.9 needed 2 to draw the walls correctly). Reason: with the World Cache on, the shaded front of the frame house turns from warm beige to grey-blue, and the path-traced render shows it warm beige; this checks whether the reduced stand-in meshes that ray tracing uses at value 0 are the cause. Epic settings as in W1. Everything is put back afterwards; nothing is saved. | **No crash; two pictures and a per-pass timing, 12:57 to 12:58.** The stand-in meshes are not the cause: with the World Cache on, the house front reads grey at value 2 as well. All console settings were put back and read back (`r.RayTracing.Nanite.Mode` 0, `r.Lumen.WorldCache.Allowed` true, Cinematic quality, Game View off); nothing is unsaved. |
+
+### World Cache: results
+
+**The difference is visible. The feature costs nothing: it is about 0.4 ms cheaper and uses about 0.4 GB less video memory. The setting does not stay,** because the visible difference is a loss when measured against the path-traced render. Line 44 was taken out of `Config\DefaultEngine.ini` at 12:59 on 2026-11-11.
+
+Lumen is Unreal's real-time system for light that bounces between surfaces. Until 5.9 it kept that light in a store called the Surface Cache; the World Cache is the new store that replaces it when the setting is on.
+
+**Cost.** Ten-second captures at S1, Epic quality, 2038 by 782 pixels, 15 seconds of settling before each. W1 ran with the editor behind another window, W2 with it in front.
+
+| Run, in the order captured | World Cache | Graphics-card time (ms) | Frame time (ms) | Peak video memory (MB) |
+|---|---|---|---|---|
+| W1 | on | 5.64 | 6.70 | 4,456 |
+| W1 | off | 5.98 | 7.11 | 4,915 |
+| W1 | on | 5.99 | 7.29 | 4,531 |
+| W1 | off | 6.43 | 7.83 | 4,920 |
+| W2 | off | 6.26 | 8.52 | 5,022 |
+| W2 | on | 5.91 | 8.37 | 4,662 |
+| W2 | off | 6.28 | 8.52 | 5,022 |
+| W2 | on | 5.84 | 8.54 | 4,667 |
+
+In each of the four neighbouring pairs, the capture with the World Cache on is cheaper, by 0.34 to 0.44 ms of graphics-card time (0.39 ms on average), and it holds 355 to 459 MB less video memory. W1's readings rose through the run in both states; W2, in the opposite order and with no other call made to the editor, shows no such drift and the same difference. The morning's reference from before the setting was in force read 6.11 and 6.06 ms, the same as "off" here, so switching the feature off by console gives the lighting the project had before.
+
+Why it is cheaper, from a per-pass reading of four frames in each state (`review\phase1\worldcache_trial_W1_gpu_passes.json`): with the feature on, a pass named `LumenWorldCache` appears and takes 0.06 ms, and the Surface Cache's passes stop (`LumenSceneLighting`, 0.28 ms, and `LumenSceneUpdate`, about 0.2 ms). This also proves the feature really ran.
+
+**Visible difference.** Yes. In `review\phase1\worldcache_W1_off_above_on_S1.png` (off above, on below) the shaded front of the frame house on the right turns from warm beige to grey-blue, the shaded brick on the left darkens, and the window glass reflects darker. Two pictures of a moving scene never match pixel for pixel (clouds, leaves), so the measure used is the mean brightness of each cell of a 3 by 4 grid over the frame, on a scale of 0 to 255 (`tools\image_levels.py`):
+
+| Pair | Largest change in a cell | Average change over the 12 cells |
+|---|---|---|
+| Off against off, 26 seconds apart (nothing changed) | 1.7 | 0.8 |
+| Off against the morning's reference, three hours apart (nothing changed) | 3.4 | 1.2 |
+| On against off | 8.4 | 3.4 |
+| The second "on" picture against the same "off" | 8.1 | 3.3 |
+
+**Which is nearer the truth.** The path-traced render of step 1.9 is the plan's measure of correct light. The mean colour of the house front, in a box of each picture (the path-traced render has a different frame shape, so its box was placed by eye on the same wall):
+
+| Picture | Red | Green | Blue | Red minus blue | Brightness |
+|---|---|---|---|---|---|
+| Path-traced render of 10 November | 151.6 | 140.7 | 125.7 | +25.9 | 139.3 |
+| World Cache off, as the project stands | 157.2 | 153.0 | 145.8 | +11.4 | 152.0 |
+| World Cache on, as the project stands | 135.5 | 144.4 | 147.0 | -11.4 | 142.3 |
+| World Cache off, `r.RayTracing.Nanite.Mode 2` (check W3) | 155.7 | 142.3 | 126.2 | +29.5 | 141.4 |
+| World Cache on, `r.RayTracing.Nanite.Mode 2` (check W3) | 122.2 | 125.3 | 122.6 | -0.4 | 123.4 |
+
+"Red minus blue" above zero is a warm wall, below zero a cool one. The path-traced wall is warm. With the World Cache off the wall is warm; with it on the wall is cool or grey, in both ray-tracing modes. Check W3 was made because ray tracing in this project draws each Nanite part as a reduced stand-in mesh (value 0), which had spoiled the first path-traced trials; it shows that the stand-in meshes are not what turns the wall grey. Why the World Cache does so in this scene is not established.
+
+**Decision.** The earlier rule was "keep the line only if the difference is visible and costs no more than 1.0 ms". Both hold. The line is taken out all the same, for three reasons. First, the visible difference moves the picture away from the path-traced render, and the plan's aim is a match with reality. Second, the line does not merely make the feature available: `r.Lumen.WorldCache.Allowed` is on by default, so with the line in place every level of the project is lit by the World Cache. Third, the baseline profile M0 and the six acceptance lines were measured without it. Taking the line out is what the record of 10:03 said would happen if the trial did not justify it. To put it back: add `r.Lumen.WorldCache.Supported=True` at the end of `[/Script/Engine.RendererSettings]` and restart the editor. The removal takes effect at the next editor start; until then the running editor still has the feature on, as it was found.
+
+**Two things this leaves for Phase 8,** neither acted on here:
+
+1. The World Cache is cheaper by 0.4 ms and 0.4 GB. It is worth trying again on the finished scene and after each engine update, judged against a path-traced render of the same view.
+2. With the World Cache off, `r.RayTracing.Nanite.Mode 2` brings the real-time picture closer to the path-traced one at this wall (red minus blue +29.5 against +25.9, where the project's present value 0 gives +11.4). From four single frames in each state it costs roughly 0.5 ms on the graphics card (6.84 against 6.29 ms); that figure is rough. This is the same setting step 1.9 found the Path Tracer needs.
+
+Records: `review\phase1\worldcache_trial_W1_capture.json` and `_W2_capture.json` with their `.analysis.json`, the eight engine logs in `review\phase1\csv\worldcache_W*.csv.gz`, and the pictures `worldcache_W1_*.png`, `worldcache_W3_*.png` and `worldcache_house_front_W1off_W1on_W3off_W3on.png`.
 
 ## Step 1.14: content removal
 
@@ -459,6 +550,7 @@ By the owner's instruction of 2026-11-11: before an import, a reimport, a path-t
 | 11:17 on 2026-11-11 | Reimport R2 from the second export (Revit open at 6.5 GB, editor at 15.5 GB) | 6.2 of 31.1 | 18.4 of 79.1 | Yes |
 | 12:38 on 2026-11-11 | None yet: the state check of the session that took over (Revit closed, editor at 14.9 GB, started 11:39) | 8.3 of 31.1 | 26.6 of 79.1 | - |
 | 12:46 on 2026-11-11 | Lumen World Cache trial W1 at S1 (Revit closed, editor at 15.0 GB, video memory 7.8 of 16.4 GB in use) | 8.4 of 31.1 | 26.5 of 79.1 | Yes |
+| 12:56 on 2026-11-11 | World Cache check W3 at S1, with Nanite ray tracing at 2 for its length (video memory 8.0 of 16.4 GB in use) | 8.4 of 31.1 | 25.5 of 79.1 | Yes |
 
 For the record, readings taken before the rule existed: at 00:46, just before reimport R1, 4.5 GB physical and 8.2 GB commit were free, with the editor at 20.5 GB and Revit at 12.5 GB. At 00:51 commit free was 6.0 GB. The editor crashed at 00:55.
 
@@ -472,20 +564,35 @@ For the record, readings taken before the rule existed: at 00:46, just before re
 5. **A correction to this session's first message.** It said the engine cache held 9.2 GB on C:, and gave C:'s small margin as the reason to move the cache before the import. That was wrong. `C:\Users\cowey\AppData\Local\UnrealEngine` is a link to `E:\AppData-Moved\UnrealEngine`, so the cache was on E:. The planning session found this at 22:40 and corrected the plan. What writes to C: during an import is therefore unknown, and C: is watched during step 1.7.
 6. **The editor does not slow down when it is in the background** ("Use Less CPU when in Background" is off), so captures taken while the owner works in another window are usable. Each capture records whether the editor was in front.
 7. **Two sessions write to the plan's working copy.** While this session was paused, the planning session's commit `644edc7` took in this session's uncommitted files under a message that describes only the cache correction. Nothing was lost. From here this session stages only its own files, by path.
+8. **In 5.9.0 a Datasmith reimport must not be started straight after a level is opened.** A reimport that replaces a changed mesh crashes the editor if that mesh is still being prepared in the background, as it is for some seconds after the level loads (reimport R2, "Step 1.8"). Until an engine update fixes it, every reimport in Phase 3 and later waits for asset preparation to finish first. Whether that is enough is what the way forward marked A would show.
+9. **The Lumen World Cache is cheaper but, in this scene, less true.** It saves about 0.4 ms and 0.4 GB of video memory at S1 and turns shaded walls grey where the path-traced render shows them warm ("Step 1.12"). It is off again; Phase 8 should try it once more on the finished scene.
+10. **`r.RayTracing.Nanite.Mode 2` brings the real-time picture closer to the path-traced one,** at roughly 0.5 ms (a rough figure). The project runs at 0. Step 1.9 found the Path Tracer needs 2. A project-wide choice for Phase 8.
 
 ## Waiting on the owner
 
 | # | Step | What | Size on disk | Cost |
 |---|---|---|---|---|
-| 1 | 1.12 | **Restart the editor**, so that the Lumen World Cache line takes effect. Not urgent; it can wait until after the reimport. | None | None; Lumen's shaders are rebuilt after the start |
-| 2 | 1.8 | Move one interior wall about a foot in Revit (any one change you can name will do), export the same 3D view as `25-006_1527_N_Wieland-3DView-3D_View_188_r2.udatasmith` into `E:\Claude\3D-Model-Workflow\references\1529 Wieland - Datasmith\`, and say which element changed. Needed only if the import works. | 0.67 GB on E: | None |
-| 3 | - | Keep Revit and other large programs closed while the editor does heavy work, or say when they are open: the 00:55 crash was Windows running out of virtual memory with both open | None | None |
+| 1 | 1.8 | **Choose how to go on with the reimport rehearsal:** A, B, C or D in the table "Ways forward for the reimport line" under "Step 1.8". A is recommended: load the level, wait until the editor has finished preparing its assets, then reimport from the second export. | A and B: the 0.71 GB under `Scratch\P1\` rewritten in place, a few MB larger. C: about 0.7 GB new on D:. D: none | A, B and C: about 2 minutes. A and B: if the editor crashes again, nothing is lost, but the editor and the chat must be started again |
+| 2 | 1.12 | **Restart the editor at some convenient time,** so that the removal of the World Cache line takes effect. Not urgent, and not needed before the reimport: until then the running editor lights every level with the World Cache, which does not affect the reimport. | None | None |
+| 3 | - | Keep Revit and other large programs closed while the editor does heavy work, or say when they are open: the 00:55 crash was Windows running out of virtual memory with both open. Revit was closed at 12:38. | None | None |
+| 4 | - | For information: C: had 12.7 GB free at 13:02 on 2026-11-11, against 17 to 19 GB on 2026-11-10. This work writes nothing to C: except the chat's own records under `C:\Users\cowey\.claude\`. The cause is still not found (finding 4 above). | - | - |
+
+Done since this table was first written: the owner made the second export at 11:08 on 2026-11-11 (the earlier item 2), and restarted the editor at 11:25 and 11:39 (the earlier item 1).
 
 Answered by the owner at 00:17 on 2026-11-11: yes to the workaround line; yes to deleting the Belmont recovery level; remove the pointer file; yes to trying Lumen World Cache.
 
 ## How to resume
 
 Text to give a new session in the editor's panel: "Continue Phase 1 of the 1529 N. Wieland plan. Read `E:\Claude\3D-Model-Workflow\.claude\worktrees\1529-wieland-scene-plan-e84a03\docs\unreal\1529_wieland\phase1_results.md`, section 'How to resume', and the last section of `PROJECT_MEMORY.md` in that working copy, then carry on from step 3 there."
+
+**As of 13:06 on 2026-11-11, one thing is left: the reimport rehearsal (step 1.8), once the owner has chosen a way forward.** Steps 3 to 8 of the list below are done or overtaken and are kept as history. For the way forward marked A:
+
+- Read the memory figures and write them under "Memory before heavy steps"; under 12 GB of free commit, stop and tell the owner.
+- Add a row R3 to the table under "Reimports" with a pending marker, and commit it.
+- Load `/Game/Wieland1529/Scratch/L_P1_DatasmithImport`. In a **separate** call, run `unreal.AutomationUtilsBlueprintLibrary.finish_all_asset_compilation()` and let it return. Never start a reimport in the call that loads the level.
+- Point the scene asset `/Game/Wieland1529/Scratch/P1/25-006_1527_N_Wieland-3DView-3D_View_188/25-006_1527_N_Wieland-3DView-3D_View_188` at the second export (its `asset_import_data`, with `scripted_add_filename(<file>, 0, "")`), then reimport with `tools\wieland_datasmith.py`, `start_reimport(<scene asset>, <result file>)`, writing `review\phase1\datasmith_reimport_R3.json`.
+- Count what survived against `review\phase1\reimport_assignments.json` (10 on objects, 10 on meshes, and the three edited materials), and check the signs listed under "What the second export changes". Count components, not actors.
+- Save the level and the assets under `/Game/Wieland1529/Scratch/P1` by name, write the result into the acceptance list, the step table and the status block, and commit.
 
 1. Read this file, then the last section of `PROJECT_MEMORY.md`.
 2. Confirm the open level has no unsaved changes before doing anything. Never save `L_R15_Production`. Never use "Save All".
@@ -503,7 +610,7 @@ In `D:\Unreal_Engine_Projects\Wieland1527 5.9\`:
 
 | Item | What |
 |---|---|
-| `Config\DefaultEngine.ini` | **Two lines added at the end of `[/Script/Engine.RendererSettings]`, each with the owner's yes.** Line 43, at 00:18 on 2026-11-11: `r.Material.UseShaderCompilationParameters=0`, the workaround the import needs. Line 44, at 10:03: `r.Lumen.WorldCache.Supported=True`, for the World Cache trial; it has no effect until the next editor start and is taken out again if the trial does not justify it. To undo either: delete the line and restart. No other settings file was changed. |
+| `Config\DefaultEngine.ini` | **One line added at the end of `[/Script/Engine.RendererSettings]`, with the owner's yes.** Line 43, at 00:18 on 2026-11-11: `r.Material.UseShaderCompilationParameters=0`, the workaround the import needs. It stays; to undo it, delete the line and restart. A second line, `r.Lumen.WorldCache.Supported=True`, was added as line 44 at 10:03 with the owner's yes for the World Cache trial and **taken out again at 12:59**, because the trial did not justify it; the file is back at 2,513 bytes, its size before that line. The removal takes effect at the next editor start; the editor that was running at 12:59 still has the feature on. No other settings file was changed. |
 | `Content\Wieland1529\Scratch\L_P1_DatasmithImport.umap` | New. The scratch level that holds the imported building (12.2 MB). |
 | `Content\Wieland1529\Scratch\P1\` | New. The imported assets: 1,647 files, 0.71 GB (1,294 meshes, 280 materials, 72 textures, 1 Datasmith scene). |
 | `Content\Wieland1529\Scratch\L_P1_LightUnits.umap` | New. The light-check level: one card, one point light, one hidden reference light, one capture camera. |
@@ -511,8 +618,9 @@ In `D:\Unreal_Engine_Projects\Wieland1527 5.9\`:
 | `Content\Belmont\`, `Content\EuropeanBeech\` | Deleted at 00:01 on 2026-11-11, with the owner's approval. 9.88 GB. |
 | `Content\L_Belmont_Production_RECOVERY_20261006.umap` | Deleted at 00:18 on 2026-11-11, with the owner's approval. 1.12 MB. |
 | `CLAUDE.md` | Written at 23:29 on 2026-11-10 without explicit approval; removed at 00:18 on 2026-11-11 on the owner's word. Not present now. |
-| `Saved\Profiling\CSV\` | 24 measurement logs written by the engine's profiler, named `Profile(2026111...)`. |
-| `Saved\Crashes\` | Written by the engine: two crash records (23:32 and 23:45, the import) and two warning records (22:02 and 22:40, harmless, from the viewport's real-time switch). |
+| `Saved\Profiling\CSV\` | 63 measurement logs written by the engine's profiler, named `Profile(2026111...)`; the last eight are the World Cache trial's. |
+| `Saved\Screenshots\P1_worldcache\` | New at 12:50 on 2026-11-11: six pictures from the World Cache trial, 14.9 MB. Copies are in the plan's working copy. |
+| `Saved\Crashes\` | Written by the engine during this work: four crash records (23:32 and 23:45, the import; 00:55, out of virtual memory; 11:22 on 2026-11-11, reimport R2) and five warning records (22:02, 22:40, 00:53, 09:57 and 12:47). The warnings at 22:02, 22:40 and 12:47 were read: each is the harmless one from the viewport's real-time switch at the first capture of an editor run. The other two were written at the first capture of their editor runs and were not read. |
 | Everything under `Content\Wieland\` and the level `L_R15_Production` | Not changed. Nothing was saved over. |
 
 On H:, with the owner's approval: `H:\Wieland1529_archives\2026-11-10_pre-phase1\Wieland1527 5.9\` (11,657 files, 17.24 GB), the project as it stood before any of the above, including the three deleted items and the settings file without the added line.
@@ -588,6 +696,51 @@ In `E:\Claude\3D-Model-Workflow\.claude\worktrees\1529-wieland-scene-plan-e84a03
 - `docs\unreal\1529_wieland\tools\wieland_datasmith.py`
 - `docs\unreal\1529_wieland\tools\wieland_profile.py`
 - `docs\unreal\1529_wieland\tools\wieland_render.py`
+
+Written between 00:39 and 09:58 on 2026-11-11 by the earlier session and not listed above until now:
+
+- `docs\unreal\1529_wieland\review\phase1\csv\worldcache_not_supported_S1_a.csv.gz`
+- `docs\unreal\1529_wieland\review\phase1\csv\worldcache_not_supported_S1_b.csv.gz`
+- `docs\unreal\1529_wieland\review\phase1\csv\worldcache_reference_lit_S1_a.csv.gz`
+- `docs\unreal\1529_wieland\review\phase1\csv\worldcache_reference_lit_S1_b.csv.gz`
+- `docs\unreal\1529_wieland\review\phase1\datasmith_import_attempt4.json`
+- `docs\unreal\1529_wieland\review\phase1\datasmith_import_check.json`
+- `docs\unreal\1529_wieland\review\phase1\datasmith_reimport_R1.json`
+- `docs\unreal\1529_wieland\review\phase1\reimport_assignments.json`
+- `docs\unreal\1529_wieland\review\phase1\worldcache_before_capture.analysis.json`
+- `docs\unreal\1529_wieland\review\phase1\worldcache_before_capture.json`
+- `docs\unreal\1529_wieland\review\phase1\worldcache_invalid_unlit_view_S1.png`
+- `docs\unreal\1529_wieland\review\phase1\worldcache_reference_lit_capture.analysis.json`
+- `docs\unreal\1529_wieland\review\phase1\worldcache_reference_lit_capture.json`
+- `docs\unreal\1529_wieland\review\phase1\worldcache_reference_lit_S1.png`
+
+Written between 12:45 and 13:06 on 2026-11-11 by the session that took over at 12:38 (it also changed this file and `PROJECT_MEMORY.md`):
+
+- `docs\unreal\1529_wieland\review\phase1\csv\worldcache_W1_off_S1_a.csv.gz`
+- `docs\unreal\1529_wieland\review\phase1\csv\worldcache_W1_off_S1_b.csv.gz`
+- `docs\unreal\1529_wieland\review\phase1\csv\worldcache_W1_on_S1_a.csv.gz`
+- `docs\unreal\1529_wieland\review\phase1\csv\worldcache_W1_on_S1_b.csv.gz`
+- `docs\unreal\1529_wieland\review\phase1\csv\worldcache_W2_off_S1_a.csv.gz`
+- `docs\unreal\1529_wieland\review\phase1\csv\worldcache_W2_off_S1_b.csv.gz`
+- `docs\unreal\1529_wieland\review\phase1\csv\worldcache_W2_on_S1_a.csv.gz`
+- `docs\unreal\1529_wieland\review\phase1\csv\worldcache_W2_on_S1_b.csv.gz`
+- `docs\unreal\1529_wieland\review\phase1\datasmith_export_r1_vs_r2.json`
+- `docs\unreal\1529_wieland\review\phase1\worldcache_house_front_W1off_W1on_W3off_W3on.png`
+- `docs\unreal\1529_wieland\review\phase1\worldcache_trial_W1_capture.analysis.json`
+- `docs\unreal\1529_wieland\review\phase1\worldcache_trial_W1_capture.json`
+- `docs\unreal\1529_wieland\review\phase1\worldcache_trial_W1_gpu_passes.json`
+- `docs\unreal\1529_wieland\review\phase1\worldcache_trial_W2_capture.analysis.json`
+- `docs\unreal\1529_wieland\review\phase1\worldcache_trial_W2_capture.json`
+- `docs\unreal\1529_wieland\review\phase1\worldcache_W1_difference_off_on_x8.png`
+- `docs\unreal\1529_wieland\review\phase1\worldcache_W1_off_1_S1.png`
+- `docs\unreal\1529_wieland\review\phase1\worldcache_W1_off_2_S1.png`
+- `docs\unreal\1529_wieland\review\phase1\worldcache_W1_off_above_on_S1.png`
+- `docs\unreal\1529_wieland\review\phase1\worldcache_W1_on_1_S1.png`
+- `docs\unreal\1529_wieland\review\phase1\worldcache_W1_on_2_S1.png`
+- `docs\unreal\1529_wieland\review\phase1\worldcache_W3_nanite2_off_S1.png`
+- `docs\unreal\1529_wieland\review\phase1\worldcache_W3_nanite2_on_S1.png`
+- `docs\unreal\1529_wieland\tools\compare_udatasmith.py`
+- `docs\unreal\1529_wieland\tools\image_levels.py`
 
 
 ## Appendix: the 109 tool sets
