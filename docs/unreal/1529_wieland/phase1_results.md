@@ -190,6 +190,7 @@ Each attempt is written here before it is made.
 | No. | Time | What was tried | Settings | Outcome |
 |---|---|---|---|---|
 | 1 | 23:32 | Import into the empty scratch level `/Game/Wieland1529/Scratch/L_P1_DatasmithImport`, assets to `/Game/Wieland1529/Scratch/P1` | Everything included; lightmap UV generation off; engine cache emptied 85 minutes before; Substrate on | **Editor crashed** on the assertion `ShaderMapId.ContainsShaderType(ShaderType, kUniqueShaderPermutationId)` in `MaterialShader.cpp` line 2653, naming the material shader map `RevitReference`. Nothing was left on disk except the empty level. Crash record: `Saved\Crashes\UECC-Windows-7B156D5548BE86A0C033DDA1C171F70E_0001\`. |
+| 2 | 23:52 | The same import, repeated unchanged, after the editor restart. Before it: the Datasmith parent material `/DatasmithContent/Materials/RevitReference` was loaded in the scratch level and no shader compiler process was running. Purpose: learn whether the crash repeats once shaders are no longer compiling. | As attempt 1: everything included; lightmap UV generation off; Substrate on; same level and asset folder | ATTEMPT_2_OUTCOME_PENDING: if this line still reads so, the editor crashed during attempt 2 |
 
 ## Step 1.9: path-traced renders
 
