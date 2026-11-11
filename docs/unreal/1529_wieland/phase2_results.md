@@ -2,24 +2,42 @@
 
 Companion to [PLAN.md](PLAN.md). This file is written as each step finishes, so a new session can resume from it. Phase 1's record is [phase1_results.md](phase1_results.md).
 
-**Status at 15:30 Central on 2026-11-11: begun; the groundwork that needs no approval is done; the next step waits for one approval.** The owner wrote "continue" at about 15:20 after Phase 1 was closed, and the session read that as: go on with the plan. Nothing has been downloaded, installed or changed in the Unreal project in this phase.
+**Status at 16:00 Central on 2026-11-11: Phase 2 is complete as far as it can be without the site visit. All four acceptance lines pass, two of them by a route that differs from the plan's wording; each difference is named in the acceptance list.** The owner wrote "continue" at about 15:20 after Phase 1 was closed, and approved the phase's downloads at about 15:35 (answer "B"). Nothing in the Unreal project was changed in this phase: the existing level was only read.
 
-**What is waiting, exactly:** step 2.2 downloads public map data, and the plan and the owner's standing instruction both require approval before any download. The request is under "The one approval this phase needs". Everything after step 2.2 depends on that data.
+**What is not done, exactly:** the site visit (step 2.1) and the two steps that depend on its photographs and measurements (the rest of 2.8, and 2.9). They are the owner's. Nothing later in the plan is blocked by them: what the visit would have shown is listed in `site_gaps.md` and is shown as neutral placeholders until evidence arrives.
+
+**The six things this phase found that later phases need:**
+
+1. **The lot in the level.** The level's origin is the lot's south-west corner. The level's north (-X) runs along the front lot line and east is -Y, the axes of the existing level and of the Revit export. The lot that governs is the record rectangle, 49.50 ft by 102.20 ft: 15.088 m by 31.151 m.
+2. **True north.** The front lot line runs 1.18 degrees west of true north.
+3. **The Revit export and the existing level sit in this frame by a shift only:** new x = old x + 15,482.32 cm, new y = old y + 5,053.7 cm, as far as the earlier registration's figures hold. Phase 3 checks it against the export's own survey point.
+4. **Wieland Street's right-of-way is 50 ft, not 66 ft,** and there is no alley behind the lot. The stations are re-set; station S7 cannot exist as written.
+5. **The existing site model is in the right place** (within 0.25 m, turned about 1.1 degrees) with heights typically 1.1 m low, and it has no building directly behind the lot.
+6. **The county's parcel is 1.1 to 1.2 ft deeper than the record lot.** Its front line is right and its rear line is not; do not take lot depth from it.
+
+## Acceptance list
+
+| Line | Target | Result | Status |
+|---|---|---|---|
+| Lot corners | Three surveyed lot corners convert from map to level coordinates and back within 0.05 m | **All four corners of the governing lot return to the start exactly (0.000 m).** The projection itself agrees with the county's own figures within 2.4 mm. The corners are the record lot's, placed on the county's front line; the plat of survey has no coordinates of its own to convert. | **Pass** |
+| True north | Recorded to 0.2 degree; two methods (parcel outline and the survey's north arrow) agree within 0.3 degree | **The street grid runs 1.17 degrees west of true north by the parcel lines of the block and 1.14 degrees by the walls of its buildings in the 2022 footprints: 0.03 degree apart.** The lot's own front line gives 1.18. The plan's second method cannot be used: the survey carries no bearing, only a north arrow drawn along the street. Building walls, which come from 2022 imagery and laser scan and not from the parcel records, stand in as the independent second method. | **Pass, with a different second method** |
+| Plan view | The lot outline and the neighbours' footprints over the county aerial photograph show every kerb line and building corner within 1.0 m | **The east kerb: within 0.3 m, which is the limit of 1 ft cells. Building corners that the survey ties to the lot lines: within 0.64 m.** Measured, not judged by eye: the kerb's step in the 2022 ground surface lies between 11 and 12 ft from the front lot line, where the site plan puts it at 11 ft 10 1/4 in; and the 2022 footprints' corners are set against the survey's ties, the worst being the south-west corner of number 1533. The overlay picture was made from the data and is kept outside the repository because it contains the county's photograph; it is not an engine render, since the scene has no new surroundings yet. | **Pass, by measurement** |
+| Trees and street furniture | Every tree and item of street furniture visible from a station has a row in the survey table or in the gaps list | **26 rows in `site_survey.csv`, 34 tall objects in `review\phase2\site_trees.csv`, and 12 gaps in `site_gaps.md`.** Every kind of thing a station can see is in one of the three. Most trees and all street furniture are there as gaps, because the visit was not made. | **Pass, mostly by the gaps list** |
 
 ## Where each step stands
 
 | No. | Step | Status |
 |---|---|---|
-| 2.1 | Site visit | **The owner's, not done.** Not required for the steps below. Without it, everything a station can see that has no evidence goes into the gaps list of step 2.10 and gets a neutral placeholder, as the plan's rules say. |
-| 2.2 | Download the map data for a 300 m square around the lot | **Prepared; waits for approval.** The sources are confirmed and the request is sized: about 25 MB, against the 5.5 GB the plan allowed. See "Step 2.2". |
-| 2.3 | Read each file's coordinate system; convert everything to one system | **The conversion is written and checked;** the files' own headers are read when the files arrive. See "Step 2.3". |
-| 2.4 | True north from the parcel outlines and from the survey | Not started. A first figure from the two parcel centres: the street runs 1.20 degrees west of true north. The parcel outlines (step 2.2) and the survey sheet give the real one. |
-| 2.5 | Level origin, level-to-map transform, the sun tool's north offset | Not started. The transform's code is written (`tools\wieland_geo.py`, `LevelFrame`). |
-| 2.6 | Re-anchor the existing site model; measure how far its buildings sit from the map data | Not started. Needs the editor, and is better made after the owner's restart. |
-| 2.7 | Ground, kerb and sidewalk levels, roof heights and shapes, tree crowns | Not started. Planned from the state's ready-made height surfaces, not from raw laser-scan tiles; see "Step 2.2". |
-| 2.8 | Enter the site-visit measurements | Waits for step 2.1. |
-| 2.9 | Name each tree's species from the owner's photographs | Waits for step 2.1. |
-| 2.10 | List every gap | Not started. |
+| 2.1 | Site visit | **The owner's, not done.** Not required for anything below. |
+| 2.2 | Download the map data for a 300 m square around the lot | **Done** with the owner's approval: 24.4 MB, against the 5.5 GB the plan allowed. See "Step 2.2". |
+| 2.3 | Read each file's coordinate system; convert everything to one system | **Done.** Every file states Illinois State Plane East in US survey feet; the parcels on the 1983 datum, the rest on its 2011 adjustment. No difference between the two shows at the lot beyond about 0.1 m. See "Step 2.3" and "What is in the site data folder". |
+| 2.4 | True north from the parcel outlines and from the survey | **Done,** with building walls in place of the survey's arrow. See "Step 2.4". |
+| 2.5 | Level origin, level-to-map transform, the sun tool's north offset | **Done,** apart from the sign of the sun tool's offset, which Phase 8's sun check settles between two stated values. See "Step 2.5". |
+| 2.6 | Re-anchor the existing site model; measure how far its buildings sit from the map data | **Done as a measurement.** The existing level was not moved or saved: it is never saved, and Phase 4 builds new surroundings. The tie between its frame and the new one is a shift. See "Step 2.6". |
+| 2.7 | Ground, kerb and sidewalk levels, roof heights and shapes, tree crowns | **Done** from the state's two height surfaces and the county's footprints. See "Step 2.7". |
+| 2.8 | Enter the site-visit measurements | **Part done.** `site_survey.csv` holds 26 rows from the plat of survey, the site plan and the 2022 surfaces. The rows only a visit can give are in the gaps list. |
+| 2.9 | Name each tree's species from the owner's photographs | **Waits for step 2.1.** No photographs exist. |
+| 2.10 | List every gap | **Done.** `site_gaps.md`, 12 gaps. |
 
 ## Checks made before any work
 
@@ -131,6 +149,122 @@ The four angles add to exactly 360 degrees, and walking the four measured sides 
 
 The two houses the plat shows on the lot, numbers 1527 and 1531, are the ones since demolished.
 
+## Step 2.4: the lot on the map, and true north
+
+Measured at 15:45 to 15:50 on 2026-11-11 with `tools\site_analysis.py`. Every figure is in `review\phase2\site_analysis.json`.
+
+**The county's parcel against the record and the survey.** The lot is the two county parcels of the site taken together.
+
+| Measure | County parcels, 2025 | Record | Survey, measured |
+|---|---|---|---|
+| Frontage (ft) | 49.50 | 49.50 | 50.18 |
+| Depth (ft) | 103.32 on the north line, 103.40 on the south | 102.20 | 102.01 and 101.93 |
+| Right-of-way width at the lot (ft) | 50.05 | - | 50.00 |
+| North-west corner to the south line of West North Avenue (ft) | 269.35 | - | 266.87 |
+
+The county's parcel has the record frontage and is 1.1 to 1.2 ft too deep. Which of its two long ends is off was settled by two things that do not depend on the parcel records:
+
+- **The kerbs.** In the 2022 ground surface the east kerb's step lies between 11 and 12 ft west of the county's front line and the west kerb's between 38 and 39 ft. The site plan puts the east kerb 11 ft 10 1/4 in from the front lot line, and the two kerbs sit evenly about the middle of the 50 ft right-of-way. So the county's front line is where the survey and the site plan have it.
+- **The wall behind the lot.** The survey puts the four-storey building's wall 0.22 to 0.34 ft east of the rear line. With the record depth that is 102.4 to 102.5 ft east of the front line, and the county's 2022 footprint of that building has its near edge at 102.1 to 103.1 ft. With the county's own rear line it would have to be at 103.6.
+
+**So the lot that governs is the record rectangle, 49.50 ft by 102.20 ft, on the county's front line, with its south-west corner at the county parcel's south-west corner.** This is also what the owner settled: the Revit model's property lines govern, and the site plan draws them at these dimensions. The county's rear corners lie 0.34 and 0.37 m beyond it and are not used. Along the street the county's parcels and the survey differ by 2.5 ft over 267 ft to North Avenue; that is a difference in other owners' lots and does not move this one, whose north line carries number 1533's wall within 0.33 ft in the 2022 footprints.
+
+| Corner of the governing lot | Latitude | Longitude | State Plane east and north (ft) | Level x and y (cm) |
+|---|---|---|---|---|
+| South-west | 41.91014441 | -87.63557673 | 1,174,176.240 and 1,910,619.020 | 0.00 and 0.00 |
+| North-west | 41.91028022 | -87.63558046 | 1,174,174.820 and 1,910,668.500 | -1,508.76 and 0.00 |
+| North-east | 41.91028598 | -87.63520509 | 1,174,276.978 and 1,910,671.431 | -1,508.76 and -3,115.06 |
+| South-east | 41.91015018 | -87.63520136 | 1,174,278.398 and 1,910,621.952 | 0.00 and -3,115.06 |
+
+**True north.** A bearing below is the turn of a line of the street grid from north, negative to the west. Grid north of the State Plane system lies 0.4662 degrees east of true north here, so a true bearing is the grid bearing plus 0.4662.
+
+| Method | Grid bearing (degrees) | True bearing (degrees) | Basis |
+|---|---|---|---|
+| The lot's front line, county parcel | -1.6438 | **-1.1776** | One line, 49.5 ft long |
+| 1. Parcel lines of the block | -1.6327 | -1.1665 | 527 parcel edges over 40 ft, 300 m square; they scatter by 0.10 degree |
+| 2. Building walls, 2022 footprints | -1.6074 | -1.1412 | 500 wall lines over 25 ft; they scatter by 0.75 degree |
+
+The two methods differ by 0.025 degree. The value recorded for the site is the lot's own front line: **the level's north runs 1.18 degrees west of true north.** The county parcel's rear line bears 0.09 degree differently from its front line, which is one more sign that the rear line is the weak one.
+
+## Step 2.5: the level frame
+
+Recorded in `review\phase2\level_frame.json` and applied by `tools\wieland_geo.py` (`LevelFrame`).
+
+| | |
+|---|---|
+| Origin | The lot's south-west corner: level 0, 0, 0 |
+| Origin on the map | East 1,174,176.240 ft, north 1,910,619.020 ft (Illinois State Plane East); latitude 41.91014441, longitude -87.63557673 |
+| Origin's height | 595.45 ft above NAVD 88, the ground there in the 2022 surface. Level Z = 0 is that height. |
+| North | -X, along the front lot line, south to north. Its grid bearing is -1.6438 degrees and its true bearing -1.1776. |
+| East | -Y, toward the rear of the lot |
+| Units | Centimetres; 1 US survey foot is 30.48006 cm |
+
+**These are the axes of the existing level and of the Revit export.** A first version of the frame had east on +Y, taken from the earlier project's registration file, which describes Blender's frame. That would have mirrored the site. It was caught before anything used it, by setting the frame beside Phase 1's record of the level's axes; `wieland_geo.py` now checks the handedness when it is run.
+
+**The tie to the existing level and to the Revit export:** both have the lot's centre line at X = -16,236.7 and its front line at Y = -5,053.7 (`phase1_results.md`, "Positions used"), with the same axes. So
+
+    new x = old x + 15,482.32 cm        new y = old y + 5,053.7 cm
+
+and no turn. This rests on the earlier registration's two figures. Phase 3 confirms it against the survey point the export carries, before it places the building.
+
+**A true bearing to a yaw in the level:** yaw = bearing - 178.82 degrees. Phase 1 used "bearing - 180", which assumed the level's north was true north; it is 1.18 degrees off.
+
+**The sun tool's north offset:** 181.18 or 178.82 degrees. True north lies 1.18 degrees clockwise of the level's -X, and Phase 1 found that the tool takes +X as north at offset 0; which sign the tool's offset has was not tested here. Phase 8 settles it with the sun check of step 1.10: the right value puts the sun of 15 August, 15:30 at NOAA's bearing.
+
+**The stations, re-set.** With a 50 ft right-of-way the west kerb is 11.7 m and the far side of the west sidewalk 15.2 m west of the front lot line, so the west walking line is at 14.0 m. The plan had it at 18 m, inside the buildings opposite. `review\phase2\stations.csv` gives every station in every frame; station S1 is at latitude 41.9102097, longitude -87.6357473, which is level (-754.4, 1,400.0) and existing level (-16,236.7, -3,653.7). Station S7 has no place: there is no alley.
+
+## Step 2.6: the existing site model against the map data
+
+Measured at 15:50 to 15:53 on 2026-11-11, read-only. The existing level `L_R15_Production` was open with nothing unsaved before and after. Its top surface was read by tracing straight down at every point of a 2 m grid, 266 m square, with `tools\wieland_site_probe.py` (17,956 points, 5,652 of them over the model), and compared with the 2022 surfaces and footprints by `tools\compare_existing_model.py`. Records: `review\phase2\existing_model_heights_2m.*`, `existing_model_street_sections.json`, `existing_model_vs_map.json` and `.csv`.
+
+**The level was not re-anchored in the sense of moving it.** It is never saved, and the owner settled that the surroundings are built new in Phase 4. What Phase 2 leaves is the tie between its frame and the new one (the shift under "Step 2.5") and the measure of how good it is.
+
+| Measure | Result |
+|---|---|
+| Extent of the model | 104 m south to 98 m north of the lot's south-west corner; 46 m west to 136 m east |
+| Position of its buildings | The overlap of its building areas with the 2022 footprints is 0.59 as it stands and at best 0.63, reached with a shift of 0.25 m and a clockwise turn of 1.1 degrees. So it is in place within a quarter of a metre, and its buildings are laid out about a degree off the lot, which fits the earlier note that its north was assumed to be true north |
+| Heights | 43 buildings compared: the model is 1.1 m lower than the 2022 scan at the middle of the range; 15 are within 1 m and 36 within 3 m |
+| The street at the lot | East kerb 3.6 m and west kerb about 11.5 m west of the front lot line, road crown at 7.5 m: within 0.2 m of the 2022 surface (3.6, 11.7 and 7.7 m). The west buildings' faces at 17.2 to 18.1 m, where the 2022 footprints have 17.6 and 18.1 m |
+| Missing | 12 footprints of 2022 have no building in the model. One is the four-storey building directly behind the lot, 14.3 m high; the others near the lot are low structures of 3.6 to 3.8 m |
+
+Nearest neighbours, heights above ground in metres:
+
+| Building | Model | 2022 scan, middle of the roof | County's figure, highest point |
+|---|---|---|---|
+| Number 1533, north, on the lot line | 15.0 | 13.8 | 15.3 |
+| Number 1525, south | 8.1 | 8.4 | 9.4 |
+| Four-storey building behind the lot | none | 14.3 | 15.1 |
+| Behind the lot, to the south | 10.5 | 10.0 | 14.9 |
+| Number 1532, at the south-east corner | 6.8 | 5.8 | 9.7 |
+| Opposite, across Wieland | 15.3 and 14.6 | 15.1 and 15.4 | 18.3 and 17.4 |
+
+The county's figure is each building's highest point, which is a chimney, a penthouse or a parapet; the scan's figure here is the middle of the roof. A flat roof with a parapet reads about a metre apart between the two, as number 1533 does.
+
+**Two things about the existing level that Phase 1 did not have right.** The lot itself holds no ground: a trace at the lot's centre hits nothing. And at the lot's centre line the west sidewalk is missing from 11.3 to 15.0 m west of the front lot line, which is the whole sidewalk there; station S1 stands over that hole. Phase 1's statement that the sidewalk was traced "along the whole path" holds 2.4 m to the south, where the surface is there, and not at S1 itself.
+
+## Step 2.7: ground, kerbs, roofs and tree crowns
+
+From the state's 2022 top surface and bare-ground surface (1 ft cells, flown leafless in spring 2022) and the county's 2022 footprints. Heights are feet above NAVD 88; the level's Z = 0 is 595.45 ft.
+
+**Ground across the street and the lot,** through the middle of the frontage:
+
+| Where | Ground (ft) | Above the level origin (m) |
+|---|---|---|
+| West right-of-way line, 50 ft west of the front lot line | 595.44 | 0.00 |
+| West gutter, 37 to 38 ft west | 594.70 | -0.23 |
+| Street centre line, 25 ft west | 595.33 | -0.04 |
+| East gutter, 13 to 14 ft west | 594.86 | -0.18 |
+| East sidewalk | 595.47 | +0.01 |
+| Front lot line | 595.48 | +0.01 |
+| Lot centre | 595.54 | +0.03 |
+| Rear lot line | 596.78 | +0.41 |
+
+The street is all but level; the kerbs stand 0.15 to 0.2 m above their gutters; the lot rises 0.4 m from front to rear. The full section at 1 ft steps is in `site_analysis.json`.
+
+**Buildings.** 75 footprints lie within 260 ft of the lot. `review\phase2\site_neighbours.csv` gives each one's position in map and level coordinates, its footprint area, the ground under it, the height of the middle of its roof and of its high parts, whether the roof is flat or pitched, and the county's own height beside it. Two of the 75 are the houses that stood on the lot in 2022.
+
+**Tall things outside buildings.** 34 within 330 ft, in `review\phase2\site_trees.csv`: everything over 15 ft above the ground and outside every footprint, 60 to 8,000 sq ft in plan. Most are tree crowns; some are poles, signs or roof parts that overhang a footprint. Four stand in Wieland's right-of-way within 150 ft of the lot, and two of those are the parkway trees the site plan marks at either end of the frontage: 12.7 m and 15.9 m tall, each about 10 m across when leafless. A crown's centre is not its trunk, and the scan is leafless, so spreads are low.
+
 ## The one approval this phase needs
 
 Asked of the owner at 15:30 on 2026-11-11, as one request, by the plan's rule "Ask first" and the owner's instruction to this session.
@@ -149,9 +283,51 @@ Not asked for, because not needed on this route: any package install, raw laser-
 | Item | Step | Without it |
 |---|---|---|
 | The site visit: the shot list and measurement list of `REFERENCE_VIEWS.md` | 2.1, 2.8, 2.9 | The phase goes on from public data alone. Tree species, trunk sizes, street furniture, the alley, and anything built since spring 2022 are listed as gaps (step 2.10) and shown as neutral placeholders. They can be filled in whenever photographs arrive; nothing later is blocked. |
-| Confirming true north against the survey's north arrow | 2.4 | The session reads the arrow from sheet T1.1 itself and records both figures; the plan's test is that the two methods agree within 0.3 degree. |
+| Confirming true north against the survey's north arrow | 2.4 | Not possible for anyone: the survey carries no bearing, only an arrow drawn along the street. Building walls in the 2022 footprints took its place as the second method, and the two agree within 0.03 degree. |
+
+## What was changed in the Unreal project
+
+Nothing. The existing level was read with downward traces, and it had nothing unsaved before or after. No asset, level or setting was created, changed or saved. The editor had not been restarted since 11:39 when this phase ran, so the Lumen World Cache was still on in the running editor; that has no bearing on anything measured here.
+
+No profile was run at the end of this phase: the plan asks for one from every phase that changes the scene, and this one did not.
+
+## What the standing approval was used for
+
+| Use | Size | Where |
+|---|---|---|
+| The five map extracts | 24.4 MB | `E:\Wieland1529_site_data\` |
+| Sheets T1.1 and T1.4 copied out of the drawing set, with pictures drawn from them | 8.1 MB, and 19.2 MB of picture tiles of no use | `E:\Wieland1529_site_data\drawings\` |
+| The Python package `pymupdf`, to draw a PDF page as a picture | 225.2 MB, far more than drawing a page needs | `E:\Wieland1529_site_data\_python_packages\` |
+| Pictures made from the data, which contain the county's aerial photograph | 7.6 MB | `E:\Wieland1529_site_data\derived\` |
+
+The folder holds 284 MB in all at 16:00. Nothing was bought, deleted or pushed. Two things in it are of no further use and could be removed if the owner wishes, 244 MB together: the picture tiles and the package. Running the tools also left a `__pycache__` folder beside them in the working copy; it is not committed.
 
 ## Files written in the plan's working copy
 
+New:
+
 - `docs\unreal\1529_wieland\phase2_results.md` (this file)
+- `docs\unreal\1529_wieland\site_survey.csv`
+- `docs\unreal\1529_wieland\site_gaps.md`
+- `docs\unreal\1529_wieland\review\phase2\level_frame.json`
+- `docs\unreal\1529_wieland\review\phase2\site_analysis.json`
+- `docs\unreal\1529_wieland\review\phase2\site_neighbours.csv`
+- `docs\unreal\1529_wieland\review\phase2\site_trees.csv`
+- `docs\unreal\1529_wieland\review\phase2\stations.csv`
+- `docs\unreal\1529_wieland\review\phase2\existing_model_heights_2m.f32`
+- `docs\unreal\1529_wieland\review\phase2\existing_model_heights_2m.json`
+- `docs\unreal\1529_wieland\review\phase2\existing_model_street_sections.json`
+- `docs\unreal\1529_wieland\review\phase2\existing_model_vs_map.json`
+- `docs\unreal\1529_wieland\review\phase2\existing_model_vs_map.csv`
 - `docs\unreal\1529_wieland\tools\wieland_geo.py`
+- `docs\unreal\1529_wieland\tools\fetch_site_data.py`
+- `docs\unreal\1529_wieland\tools\extract_drawing_sheets.py`
+- `docs\unreal\1529_wieland\tools\render_pdf_page.py`
+- `docs\unreal\1529_wieland\tools\site_analysis.py`
+- `docs\unreal\1529_wieland\tools\site_stations.py`
+- `docs\unreal\1529_wieland\tools\wieland_site_probe.py`
+- `docs\unreal\1529_wieland\tools\compare_existing_model.py`
+
+Changed: `PROJECT_MEMORY.md`, `docs\unreal\1529_wieland\PLAN.md`, `docs\unreal\1529_wieland\OPEN_DECISIONS.md`, `docs\unreal\1529_wieland\REFERENCE_VIEWS.md`, `docs\unreal\1529_wieland\phase1_results.md`.
+
+Not in the repository, on purpose: everything under `E:\Wieland1529_site_data\`. The county's terms leave redistribution unclear, and the drawing sheets are the owner's private documents. The tables in `review\phase2\` hold numbers measured from that data, not the data.

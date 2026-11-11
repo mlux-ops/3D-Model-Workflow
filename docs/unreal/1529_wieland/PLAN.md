@@ -316,6 +316,20 @@ Each is asked at the step that needs it. None has been asked or done yet.
 
 ## Phase 2: Site data and georeferencing
 
+**Status: complete on 2026-11-11 as far as it can be without the site visit.** All four acceptance lines pass, two by a route that differs from the wording below; `phase2_results.md` names each difference. Not done: the site visit (step 2.1) and what depends on its photographs (the rest of 2.8, and 2.9). They are the owner's and block nothing; what they would have shown is in `site_gaps.md`.
+
+**What Phase 2 leaves for later phases.**
+
+| For | Item |
+|---|---|
+| Every phase | **The level frame.** Origin at the lot's south-west corner; north is -X along the front lot line, east is -Y; the lot that governs is the record rectangle, 15.088 m along the street by 31.151 m deep. The frame is `review\phase2\level_frame.json`, applied by `tools\wieland_geo.py`. The level's north runs 1.18 degrees west of true north. A true bearing becomes a yaw as yaw = bearing - 178.82. |
+| Phase 3 | The Revit export and the existing level sit in this frame by a shift only, new x = old x + 15,482.32 cm and new y = old y + 5,053.7 cm, as far as the earlier registration's two figures hold. Before placing the building, confirm it against the survey point the export carries. |
+| Phase 3 | Do not take the lot's depth from the county parcel: it is 1.1 to 1.2 ft too deep. Its front line is right. |
+| Phase 4 | Build the surroundings from `review\phase2\site_neighbours.csv` (75 footprints with heights and roof form) and the files under `E:\Wieland1529_site_data\`, which is outside the repository because the county's terms leave redistribution unclear. Wieland's right-of-way is 50 ft: kerbs 3.6 m and 11.7 m west of the front lot line, road crown at 7.6 m. There is no alley. The existing model is within 0.25 m of these positions, about 1.1 degrees off the lot, about 1.1 m low, and has no building directly behind the lot. |
+| Phase 4 and Phase 7 | `review\phase2\site_trees.csv` holds 34 tall objects outside buildings, most of them tree crowns measured leafless in 2022. The two parkway trees at the frontage are 12.7 m and 15.9 m tall. Species, trunks and street furniture are gaps. |
+| Phase 8 | The sun tool's north offset is 181.18 or 178.82 degrees; the sun check of step 1.10 decides which. |
+| Whoever next edits `REFERENCE_VIEWS.md` | The stations are re-set in `review\phase2\stations.csv`, and a correction block is at the head of that file. Station S7 needs a new place: there is no alley. |
+
 **Goal.** One coordinate frame for the lot, the street and the neighbours, tied to the survey, with true north measured, and the site visit done.
 
 **Inputs.**

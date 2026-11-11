@@ -13,7 +13,11 @@ Three things, so that Phase 2 needs no map-projection package installed:
    from true north, and how much the projection stretches distances.
 3. State Plane coordinates to and from the Unreal level, once Phase 2 has
    chosen the level's origin and north. The level's axes are those of the
-   existing model: -X is north, +Y is east, +Z is up, in centimetres.
+   existing Unreal level and of the Datasmith import: -X is north, -Y is
+   east, +Z is up, in centimetres. (Seen from above, Unreal's +Y lies to the
+   right of +X, so north on -X puts east on -Y. East on +Y would mirror the
+   site. The earlier project's registration file says "+Y east"; that is
+   Blender's frame, not Unreal's.)
 
 The projection is the transverse Mercator in Krueger's series as extended by
 Karney (2011) to sixth order; it is good to a fraction of a millimetre
@@ -153,22 +157,28 @@ class LevelFrame:
         self.origin_y_cm = float(origin_y_cm)
         self.origin_z_cm = float(origin_z_cm)
 
+    def level_from_site(self, north_ft, east_ft):
+        """Level x and y (cm) of a point given as feet along the level's north and feet along its east, from the origin."""
+        return self.origin_x_cm - north_ft * CM_PER_US_SURVEY_FOOT, self.origin_y_cm - east_ft * CM_PER_US_SURVEY_FOOT
+
+    def site_from_level(self, x_cm, y_cm):
+        """Feet along the level's north and feet along its east, from the origin, of a level point."""
+        return -(x_cm - self.origin_x_cm) / CM_PER_US_SURVEY_FOOT, -(y_cm - self.origin_y_cm) / CM_PER_US_SURVEY_FOOT
+
     def level_from_map(self, east_ft, north_ft, height_ft=None):
         theta = math.radians(self.north_grid_bearing_deg)
         d_east = east_ft - self.origin_east_ft
         d_north = north_ft - self.origin_north_ft
         along_north = d_east * math.sin(theta) + d_north * math.cos(theta)
         along_east = d_east * math.cos(theta) - d_north * math.sin(theta)
-        x = self.origin_x_cm - along_north * CM_PER_US_SURVEY_FOOT
-        y = self.origin_y_cm + along_east * CM_PER_US_SURVEY_FOOT
+        x, y = self.level_from_site(along_north, along_east)
         if height_ft is None:
             return x, y
         return x, y, self.origin_z_cm + (height_ft - self.origin_height_ft) * CM_PER_US_SURVEY_FOOT
 
     def map_from_level(self, x_cm, y_cm, z_cm=None):
         theta = math.radians(self.north_grid_bearing_deg)
-        along_north = -(x_cm - self.origin_x_cm) / CM_PER_US_SURVEY_FOOT
-        along_east = (y_cm - self.origin_y_cm) / CM_PER_US_SURVEY_FOOT
+        along_north, along_east = self.site_from_level(x_cm, y_cm)
         east = self.origin_east_ft + along_north * math.sin(theta) + along_east * math.cos(theta)
         north = self.origin_north_ft + along_north * math.cos(theta) - along_east * math.sin(theta)
         if z_cm is None:
@@ -226,6 +236,14 @@ def _check():
     print("level frame there and back: %.2e ft east, %.2e ft north, %.2e ft height" % (abs(e - 1174250.0), abs(n - 1910700.0), abs(h - 600.0)))
     north_x, north_y = frame.level_from_map(1174200.0 + math.sin(math.radians(-1.7)) * 100.0, 1910600.0 + math.cos(math.radians(-1.7)) * 100.0)
     print("a point 100 ft along the level's north lands at x %+.2f cm, y %+.2f cm from the origin (expect x -3048.01, y 0.00)" % (north_x - 100.0, north_y + 200.0))
+    east_x, east_y = frame.level_from_map(1174200.0 + math.cos(math.radians(-1.7)) * 100.0, 1910600.0 - math.sin(math.radians(-1.7)) * 100.0)
+    print("a point 100 ft along the level's east lands at x %+.2f cm, y %+.2f cm from the origin (expect x 0.00, y -3048.01)" % (east_x - 100.0, east_y + 200.0))
+    # Handedness: seen from above, Unreal's +Y lies to the right of +X, as east lies to the right of north on a map.
+    # So the turn from the level's north to its east must have the same sign as the turn from +X to +Y, which is +1.
+    north_vec = (north_x - 100.0, north_y + 200.0)
+    east_vec = (east_x - 100.0, east_y + 200.0)
+    turn = north_vec[0] * east_vec[1] - north_vec[1] * east_vec[0]
+    print("handedness check: %s" % ("ok, the level is not mirrored" if turn > 0 else "MIRRORED: east lies on the wrong side of north"))
 
 
 if __name__ == "__main__":

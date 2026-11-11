@@ -24,6 +24,16 @@ All positions are provisional until Phase 2 replaces them with surveyed ones. Th
 
 Headings are true bearings, clockwise from true north. The street is taken to run about one degree west of true north; Phase 2 measures it.
 
+### Corrected by Phase 2 on 2026-11-11
+
+Phase 2 measured the street and the lot (`phase2_results.md`). Three things in this file are wrong as written, and the figures below replace them. The tables further down are left as they were written, so that the change can be seen.
+
+- **The right-of-way of Wieland Street is 50 ft (15.24 m), not 66 ft.** The plat of survey says so, and the county parcels and the 2022 ground surface agree. The west kerb is 11.7 m and the far side of the west sidewalk 15.2 m west of the front lot line. The west sidewalk's walking line is therefore 14.0 m west of the front lot line, not 18 m; a point 18 m west is inside the buildings opposite.
+- **Every station on the west sidewalk (S1 to S5) moves 4 m east.** Their latitudes change by less than a metre. Every station's position in latitude and longitude, in State Plane coordinates, in the new level frame and in the existing level is in `review\phase2\stations.csv`. S1 is at latitude 41.9102097, longitude -87.6357473.
+- **There is no alley behind the lot, so station S7 cannot exist as written.** The rear lot line meets the neighbours' lots, with a four-storey building 0.2 to 0.3 ft beyond it. A rear view has to be taken from the building's own rear decks, and is a design view, not a reference view.
+
+The lot centre used in this file, latitude 41.910215 and longitude -87.635389, is right within 0.2 m. True north is now measured: the lot's front line runs 1.18 degrees west of it. A bearing in the station table converts to a yaw in the level as yaw = bearing - 178.82 degrees.
+
 ## What the owner settled on 2026-11-10
 
 - The scene is for design review of finishes, and nothing is published.
