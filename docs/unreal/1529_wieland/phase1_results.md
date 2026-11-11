@@ -2,7 +2,7 @@
 
 Companion to [PLAN.md](PLAN.md). This file is written as each step finishes, so a new session can resume from it.
 
-**Status at 00:20 Central on 2026-11-11: in progress.** Five acceptance lines are measured and pass (agent server, baseline, sun, Path Tracer, light units). The soak is no longer part of Phase 1, by the owner's decision. Two lines are open: the Datasmith import, which has crashed the editor twice and waits for the owner's yes to a one-line workaround (see "Step 1.7"), and the reimport rehearsal, which depends on it.
+**Status at 00:25 Central on 2026-11-11: in progress, waiting for an editor restart.** Five acceptance lines are measured and pass (agent server, baseline, sun, Path Tracer, light units). The soak is no longer part of Phase 1. Two lines are open: the Datasmith import and the reimport rehearsal. The owner approved Epic's one-line workaround for the import crash; the line is written and takes effect when the editor is next started. See "How to resume".
 
 **Nothing in the Unreal project has been saved.** No asset, level or setting was written. The level `L_R15_Production` has no unsaved changes, and the editor's settings and camera were put back after every measurement. The only files this work wrote inside the project folder are the measurement logs the engine itself writes under `Saved\Profiling\CSV\`.
 
@@ -23,7 +23,7 @@ Companion to [PLAN.md](PLAN.md). This file is written as each step finishes, so 
 
 | No. | Step | Status |
 |---|---|---|
-| 1.1 | Agent server starts with the editor; model confirmed; pointer file | Server and model confirmed. The server started by itself at every editor launch this evening. `bAutoStartServer` is in none of the project's settings files, so where that comes from is not established. **Pointer file `CLAUDE.md` written at 23:30 without the owner's explicit approval**: the session misread which numbered list the owner's "1, 2 and 4" referred to. It is left in place for the owner to keep or remove. |
+| 1.1 | Agent server starts with the editor; model confirmed; pointer file | Server and model confirmed. The server started by itself at every editor launch. `bAutoStartServer` is in none of the project's settings files, so where that comes from is not established. The pointer file `CLAUDE.md` was written at 23:29 on 2026-11-10 without the owner's explicit approval and **removed at 00:18 on 2026-11-11 on the owner's word**. A session started in the project folder therefore does not load the plan's rules by itself; give it the resume text under "How to resume". |
 | 1.2 | List the tool sets | **Done.** 109 tool sets, listed at the end of this file. |
 | 1.3 | Finish the live audit | **Done.** Appended to [SITE_MODEL_AUDIT.md](SITE_MODEL_AUDIT.md). |
 | 1.4 | Move the engine cache to D: | **Done by the planning session at 22:05**, with the editor restarted at 22:08. Confirmed by this session at 22:37: `D:\UE_DerivedDataCache` held 1.57 GB in 92 files and was still being written. The plan's cap is 20 GB. |
@@ -34,9 +34,9 @@ Companion to [PLAN.md](PLAN.md). This file is written as each step finishes, so 
 | 1.9 | Three path-traced renders of station S1 | **Done.** See "Step 1.9". |
 | 1.10 | Sun direction against the NOAA calculator | **Done** for the engine's sun calculation. The same check on a sun placed in a level is added when the scratch level exists. |
 | 1.11 | 1,000-lumen light, illuminance at 1 m | **Done.** See "Step 1.11". |
-| 1.12 | Lumen World Cache and overlapping glass, on and off | **Part done.** Overlapping glass measured; World Cache needs a saved project setting and a restart. See "Step 1.12". |
+| 1.12 | Lumen World Cache and overlapping glass, on and off | **Part done.** Overlapping glass measured. For Lumen World Cache the owner approved the saved setting and the restart it needs (00:17 on 2026-11-11); it is to be tried after the import's outcome is recorded, with its own restart, so that the two changes are not mixed. See "Step 1.12" and "How to resume". |
 | 1.13 | Two-hour soak | **Not run, by the owner's decision; moved to Phase 9, where it runs on the finished scene** (`PLAN.md`, step 9.11). A run was started at 00:02:43 on 2026-11-11 and stopped at 00:09:58 on the owner's instruction, after 7 of 120 walks, with no crash. It is not a result. Its short log is kept in `review\phase1\soak\` as a trial of the soak script. The trial showed two faults in the script, both now corrected and neither re-run; see `PROJECT_MEMORY.md`. |
-| 1.14 | Remove the Belmont and beech content | **Done at 00:01 on 2026-11-11.** See "Step 1.14". |
+| 1.14 | Remove the Belmont and beech content | **Done.** The two folders at 00:01 and, with the owner's further approval, the Belmont recovery level at 00:18 on 2026-11-11. See "Step 1.14". |
 | 1.15 | This file | In progress. |
 
 ## Checks made before any work
@@ -191,7 +191,7 @@ Each attempt is written here before it is made.
 |---|---|---|---|---|
 | 1 | 23:32 | Import into the empty scratch level `/Game/Wieland1529/Scratch/L_P1_DatasmithImport`, assets to `/Game/Wieland1529/Scratch/P1` | Everything included; lightmap UV generation off; engine cache emptied 85 minutes before; Substrate on | **Editor crashed** on the assertion `ShaderMapId.ContainsShaderType(ShaderType, kUniqueShaderPermutationId)` in `MaterialShader.cpp` line 2653, naming the material shader map `RevitReference`. Nothing was left on disk except the empty level. Crash record: `Saved\Crashes\UECC-Windows-7B156D5548BE86A0C033DDA1C171F70E_0001\`. |
 | 2 | 23:45 | The same import, repeated unchanged, after the editor restart. Before it: the Datasmith parent material `/DatasmithContent/Materials/RevitReference` was loaded in the scratch level and no shader compiler process was running. Purpose: learn whether the crash repeats once shaders are no longer compiling. | As attempt 1: everything included; lightmap UV generation off; Substrate on; same level and asset folder | **Editor crashed** at 23:45:18, about 20 seconds into the import, on the same assertion and the same material (`Metal_-_Stainless_Steel`, parent `RevitReference`, "is missing expected shader type TShadowDepthPSCombined"). So the crash repeats and does not depend on shaders compiling in the background. Nothing was left on disk. Crash record: `Saved\Crashes\UECC-Windows-4B47E20049E2F30ADC524CB84F0C1600_0000\`. |
-| 3 | 23:58 | The same import with one console variable changed for this editor run only, not saved: `r.Material.UseShaderCompilationParameters` from 1 to 0. This is the temporary workaround an Epic staff member gave for this assertion in engine 5.8 (https://forums.unrealengine.com/t/cooking-crash-materials/2738422, post of 12 June 2026; lead supplied by the owner). It makes the engine decide which shaders to compile from the material's conservative data, at the cost of compiling some shaders that are not needed. Untested in 5.9. Procedure: set the variable in the running editor and read it back; if the editor refuses, make no import and ask the owner; otherwise wait for any shader compiling to stop, then import. Shader compile time and cache growth are recorded. **By the owner's instruction, if this attempt crashes, importing stops and the variable is put back.** | As attempt 1 otherwise: everything included; lightmap UV generation off; Substrate on; same level and asset folder | **Not made.** At 23:53 the running editor refused the change ("r.Material.UseShaderCompilationParameters is read only!") and the value stayed 1, so the variable applies only at startup. No import was started and nothing was changed. Proposed to the owner: add the line `r.Material.UseShaderCompilationParameters=0` at the end of the section `[/Script/Engine.RendererSettings]` in `Config\DefaultEngine.ini`, then restart the editor. Waiting for the owner's yes. The import itself will be journaled as attempt 4 once the variable reads 0. |
+| 3 | 23:58 | The same import with one console variable changed for this editor run only, not saved: `r.Material.UseShaderCompilationParameters` from 1 to 0. This is the temporary workaround an Epic staff member gave for this assertion in engine 5.8 (https://forums.unrealengine.com/t/cooking-crash-materials/2738422, post of 12 June 2026; lead supplied by the owner). It makes the engine decide which shaders to compile from the material's conservative data, at the cost of compiling some shaders that are not needed. Untested in 5.9. Procedure: set the variable in the running editor and read it back; if the editor refuses, make no import and ask the owner; otherwise wait for any shader compiling to stop, then import. Shader compile time and cache growth are recorded. **By the owner's instruction, if this attempt crashes, importing stops and the variable is put back.** | As attempt 1 otherwise: everything included; lightmap UV generation off; Substrate on; same level and asset folder | **Not made.** At 23:53 the running editor refused the change ("r.Material.UseShaderCompilationParameters is read only!") and the value stayed 1, so the variable applies only at startup. No import was started and nothing was changed. Proposed to the owner: add the line `r.Material.UseShaderCompilationParameters=0` at the end of the section `[/Script/Engine.RendererSettings]` in `Config\DefaultEngine.ini`, then restart the editor. **The owner said yes at 00:17 on 2026-11-11, and the line was written at 00:18** as line 43 of `Config\DefaultEngine.ini` (2,468 bytes before, 2,513 after). It takes effect at the next editor start. The import itself is journaled as attempt 4 once the variable reads 0. |
 
 ### Where the import stands, and the ways forward
 
@@ -287,7 +287,9 @@ Because nothing from the folders was loaded, the files were removed directly fro
 | Assets left under `/Game` | 2,918 |
 | Assets that still point at the deleted folders | One: `/Game/L_Belmont_Production_RECOVERY_20261006` (1.12 MB). **Left in place**: deleting it is not covered by the approval. It will show missing content if opened. |
 
-To restore: copy the two folders back from `H:\Wieland1529_archives\2026-11-10_pre-phase1\Wieland1527 5.9\Content\`.
+**The recovery level.** With the owner's approval of 00:17, `Content\L_Belmont_Production_RECOVERY_20261006.umap` (1,178,422 bytes) was deleted at 00:18. Checked first: it was not loaded, nothing referred to it, every one of its 797 references pointed at Belmont or engine content, and the archive holds an identical copy. The editor's asset list now shows 2,917 assets under `/Game` and nothing that points at the deleted folders.
+
+To restore any of this: copy it back from `H:\Wieland1529_archives\2026-11-10_pre-phase1\Wieland1527 5.9\Content\`.
 
 
 ## Findings that bear on the plan
@@ -304,20 +306,25 @@ To restore: copy the two folders back from `H:\Wieland1529_archives\2026-11-10_p
 
 | # | Step | What | Size on disk | Cost |
 |---|---|---|---|---|
-| 1 | 1.7 | **Yes or no** to adding the line `r.Material.UseShaderCompilationParameters=0` at the end of the section `[/Script/Engine.RendererSettings]` in `D:\Unreal_Engine_Projects\Wieland1527 5.9\Config\DefaultEngine.ini`, followed by an editor restart. It is Epic's temporary workaround for the assertion that crashes the import. It is project-wide, changes no asset, and is undone by deleting the line. | 45 bytes; the shader rebuild time and cache growth it causes are to be measured | None |
-| 2 | 1.14 | Say whether the level `Content\L_Belmont_Production_RECOVERY_20261006.umap` may be deleted. It is the only asset that pointed at the Belmont folder, and it now points at 792 deleted assets. | Frees 1.12 MB | None |
-| 3 | 1.1 | Say whether to keep the pointer file `CLAUDE.md`, which was written without explicit approval | Under 2 KB | None |
-| 4 | 1.8 | Move one interior wall about a foot in Revit (any one change you can name will do), export the same 3D view as `25-006_1527_N_Wieland-3DView-3D_View_188_r2.udatasmith` into `E:\Claude\3D-Model-Workflow\references\1529 Wieland - Datasmith\`, and say which element changed. Needed only if the import can be made to work. | 0.67 GB on E: | None |
-| 5 | 1.12 | Lumen World Cache can only be tried by saving a project-wide rendering setting and restarting the editor; say whether to do that | A few bytes in `Config\DefaultEngine.ini` | None; shaders recompile after the restart |
-| 6 | - | The panel was in Bypass permissions during the first session, by the owner's report. The plan advises a mode that asks first. | None | None |
+| 1 | 1.7 | **Restart the editor**, so that the workaround line takes effect. Close it normally and open `Wieland1527.uproject` again. If it offers to restore anything, decline. | None | None; shaders are rebuilt after the start, and the time is measured |
+| 2 | 1.8 | Move one interior wall about a foot in Revit (any one change you can name will do), export the same 3D view as `25-006_1527_N_Wieland-3DView-3D_View_188_r2.udatasmith` into `E:\Claude\3D-Model-Workflow\references\1529 Wieland - Datasmith\`, and say which element changed. Needed only if the import works. | 0.67 GB on E: | None |
+| 3 | 1.12 | A second restart later, for the Lumen World Cache trial | None | None |
+
+Answered by the owner at 00:17 on 2026-11-11: yes to the workaround line; yes to deleting the Belmont recovery level; remove the pointer file; yes to trying Lumen World Cache.
 
 ## How to resume
 
+Text to give a new session in the editor's panel: "Continue Phase 1 of the 1529 N. Wieland plan. Read `E:\Claude\3D-Model-Workflow\.claude\worktrees\1529-wieland-scene-plan-e84a03\docs\unreal\1529_wieland\phase1_results.md`, section 'How to resume', and the last section of `PROJECT_MEMORY.md` in that working copy, then carry on from step 3 there."
+
 1. Read this file, then the last section of `PROJECT_MEMORY.md`.
-2. Confirm the open level has no unsaved changes before doing anything. Never save `L_R15_Production`.
-3. The import, step 1.7. Only after the owner's yes: add the line named above, ask the owner to restart the editor, and confirm that `r.Material.UseShaderCompilationParameters` reads 0. Record how long shaders then compile and how much `D:\UE_DerivedDataCache` grows (it held 2.00 GB at 23:51 on 2026-11-10). Journal the import as attempt 4 under "Step 1.7" and commit before making it. Import with `tools\wieland_datasmith.py` into `/Game/Wieland1529/Scratch/L_P1_DatasmithImport`. If it crashes, stop importing, take the line out again, and record the plan's fallback, the FBX route, as the workaround.
-4. If the import works: count objects and lights with `wieland_datasmith.count_level()`; check the known dimension (top of element 12330199 against the top of `Site_GRADE_GRADE`, expected 203.2 cm); save the scratch level and the assets under `/Game/Wieland1529/Scratch/P1` by name; then assign 20 materials and rehearse the reimport with the owner's second export.
-5. The soak is not part of Phase 1. It is step 9.11 of the plan.
+2. Confirm the open level has no unsaved changes before doing anything. Never save `L_R15_Production`. Never use "Save All".
+3. **Confirm the workaround took.** Read `r.Material.UseShaderCompilationParameters` in the editor. It must read 0. If it reads 1, the section the line sits in was not honoured for this variable: tell the owner before moving the line.
+4. **Record what the workaround cost.** Shader compile time: from the editor's log of this start, the `LogShaderCompilers` summary ("Shaders Compiled", "Time at least one job was in flight"), and wait until no `ShaderCompileWorker` process is busy. Cache growth: the size of `D:\UE_DerivedDataCache` against 2.003 GB in 235 files, measured at 00:18:21 on 2026-11-11, just before the line was written.
+5. **Journal the import as attempt 4** in the table under "Step 1.7", with a pending marker, and commit. Then load `/Game/Wieland1529/Scratch/L_P1_DatasmithImport` and import with `tools\wieland_datasmith.py` (`start_import`, assets to `/Game/Wieland1529/Scratch/P1`, lightmap UVs off), writing its record to `review\phase1\datasmith_import_attempt4.json`.
+6. **If it crashes:** by the owner's instruction, stop importing. Take line 43 out of `Config\DefaultEngine.ini` again, record the plan's fallback (the FBX route) as the workaround for the import line and "re-apply assignments by script" for the reimport line, and report. The ways forward and their costs are under "Step 1.7".
+7. **If it works:** count objects and lights with `wieland_datasmith.count_level()` (the file holds 3,562 placed mesh objects and 587 lights; 99.5 percent is 3,545 and 585). Check the known dimension: the top of the object tagged `Revit.Element.Id.12330199` against the top of `Site_GRADE_GRADE`, expected 203.2 cm, within 0.1 cm. Save the scratch level and the assets under `/Game/Wieland1529/Scratch/P1` by name. Then assign 20 materials, save a table of them, and rehearse the reimport with the owner's second export.
+8. **Lumen World Cache**, approved by the owner, after the import's outcome is recorded: add `r.Lumen.WorldCache.Supported=True` to the same section of `Config\DefaultEngine.ini`, ask the owner to restart, then capture station S1 with `r.Lumen.WorldCache.Allowed` at 1 and at 0, with timings. Keep the line only if the difference is visible and costs no more than 1.0 ms at S1; otherwise take it out.
+9. The soak is not part of Phase 1. It is step 9.11 of the plan.
 
 ## What was saved or changed in the project
 
@@ -325,16 +332,19 @@ In `D:\Unreal_Engine_Projects\Wieland1527 5.9\`:
 
 | Item | What |
 |---|---|
-| `CLAUDE.md` | New. The pointer file; written without explicit approval and waiting for the owner's word. |
+| `Config\DefaultEngine.ini` | **Changed at 00:18 on 2026-11-11, with the owner's yes:** one line added as line 43, `r.Material.UseShaderCompilationParameters=0`, at the end of the section `[/Script/Engine.RendererSettings]`. To undo: delete that line and restart the editor. No other settings file was changed. |
 | `Content\Wieland1529\Scratch\L_P1_DatasmithImport.umap` | New. An empty scratch level for the import. |
 | `Content\Wieland1529\Scratch\L_P1_LightUnits.umap` | New. The light-check level: one card, one point light, one hidden reference light, one capture camera. |
 | `Content\Wieland1529\Scratch\M_P1_Lambert50.uasset` | New. The matte 50 percent grey material on the card. |
-| `Content\Belmont\`, `Content\EuropeanBeech\` | Deleted, with the owner's approval. 9.88 GB. Copies are in the H: archive. |
+| `Content\Belmont\`, `Content\EuropeanBeech\` | Deleted at 00:01 on 2026-11-11, with the owner's approval. 9.88 GB. |
+| `Content\L_Belmont_Production_RECOVERY_20261006.umap` | Deleted at 00:18 on 2026-11-11, with the owner's approval. 1.12 MB. |
+| `CLAUDE.md` | Written at 23:29 on 2026-11-10 without explicit approval; removed at 00:18 on 2026-11-11 on the owner's word. Not present now. |
 | `Saved\Profiling\CSV\` | 24 measurement logs written by the engine's profiler, named `Profile(2026111...)`. |
 | `Saved\Crashes\` | Written by the engine: two crash records (23:32 and 23:45, the import) and two warning records (22:02 and 22:40, harmless, from the viewport's real-time switch). |
-| Everything under `Content\Wieland\`, the level `L_R15_Production`, and every settings file | Not changed. Nothing was saved over. |
+| Everything under `Content\Wieland\` and the level `L_R15_Production` | Not changed. Nothing was saved over. |
 
-On H:, with the owner's approval: `H:\Wieland1529_archives\2026-11-10_pre-phase1\Wieland1527 5.9\` (11,657 files, 17.24 GB), the project as it stood before any of the above.
+On H:, with the owner's approval: `H:\Wieland1529_archives\2026-11-10_pre-phase1\Wieland1527 5.9\` (11,657 files, 17.24 GB), the project as it stood before any of the above, including the three deleted items and the settings file without the added line.
+
 
 ## Files written in the plan's working copy
 
