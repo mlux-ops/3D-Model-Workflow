@@ -2,7 +2,7 @@
 
 Companion to [PLAN.md](PLAN.md). This file is written as each step finishes, so a new session can resume from it.
 
-**Status at 00:40 Central on 2026-11-11: in progress.** Five acceptance lines are measured and pass (agent server, baseline, sun, Path Tracer, light units). The soak is no longer part of Phase 1. The editor was restarted at 00:32 and the workaround variable reads 0. Import attempt 4 is journaled under "Step 1.7" and is being made.
+**Status at 00:50 Central on 2026-11-11: in progress.** Six acceptance lines are measured and pass (agent server, baseline, sun, Path Tracer, light units, import). The import passed on the fourth attempt, with Epic's one-line workaround in force. The soak is no longer part of Phase 1. One line is open: the reimport rehearsal, which needs the owner's second export. The Lumen World Cache trial, approved by the owner, follows it.
 
 **Nothing in the Unreal project has been saved.** No asset, level or setting was written. The level `L_R15_Production` has no unsaved changes, and the editor's settings and camera were put back after every measurement. The only files this work wrote inside the project folder are the measurement logs the engine itself writes under `Saved\Profiling\CSV\`.
 
@@ -12,7 +12,7 @@ Companion to [PLAN.md](PLAN.md). This file is written as each step finishes, so 
 |---|---|---|---|
 | Agent server | 50 consecutive read-only calls with no error | **50 of 50 passed.** Median 14 ms a call, slowest 308 ms. | **Pass** |
 | Baseline | The three October views at a recorded viewport size, beside the October means | **Measured at 2038 by 782 pixels.** At the pixel count of 2560 by 1440 and October's settings, frame means are 10.8, 9.9 and 10.6 ms against 12.7, 11.9 and 12.9 ms in 5.8. | **Pass** |
-| Import | At least 99.5 percent of 3,562 objects and 587 lights; known dimension within 1 mm | **Two attempts crashed the editor** (23:32, 23:45). No number yet. | Open; attempts are logged under "Step 1.7" |
+| Import | At least 99.5 percent of 3,562 objects and 587 lights; known dimension within 1 mm | **3,562 of 3,562 placed objects and 587 of 587 lights (100 percent each). First floor 2,032.00 mm above grade, against 2,032 mm.** On the fourth attempt, with one settings line added as a workaround for an engine fault. | **Pass, with a condition** |
 | Reimport | 20 of 20 assignments survive | Not yet measured | Waits for the import and the owner's second export |
 | Path Tracer | Three renders with no crash | **Three 3840 by 2160 renders completed, 48 to 50 seconds each, no crash.** They are correct only with one ray-tracing setting changed; see "Step 1.9". | **Pass, with a condition** |
 | Sun | Bearing and height within 0.5 degree of NOAA | **Bearing differs by 0.05 degree, height by 0.06 degree.** | **Pass** |
@@ -29,7 +29,7 @@ Companion to [PLAN.md](PLAN.md). This file is written as each step finishes, so 
 | 1.4 | Move the engine cache to D: | **Done by the planning session at 22:05**, with the editor restarted at 22:08. Confirmed by this session at 22:37: `D:\UE_DerivedDataCache` held 1.57 GB in 92 files and was still being written. The plan's cap is 20 GB. |
 | 1.5 | Archive the project to H: | **Done at 23:28**, approved by the owner. See "Step 1.5". |
 | 1.6 | Baseline profile M0 | **Done.** [profiles/2026-11-10_M0/profile.md](profiles/2026-11-10_M0/profile.md). |
-| 1.7 | Import the Datasmith file into a scratch level | **First attempt crashed the editor.** See "Step 1.7". |
+| 1.7 | Import the Datasmith file into a scratch level | **Done** on the fourth attempt, at 00:39 on 2026-11-11. See "Step 1.7". |
 | 1.8 | Reimport rehearsal | Not started. Waits for 1.7 and the owner's second export. |
 | 1.9 | Three path-traced renders of station S1 | **Done.** See "Step 1.9". |
 | 1.10 | Sun direction against the NOAA calculator | **Done** for the engine's sun calculation. The same check on a sun placed in a level is added when the scratch level exists. |
@@ -194,13 +194,59 @@ Each attempt is written here before it is made.
 | 3 | 23:58 | The same import with one console variable changed for this editor run only, not saved: `r.Material.UseShaderCompilationParameters` from 1 to 0. This is the temporary workaround an Epic staff member gave for this assertion in engine 5.8 (https://forums.unrealengine.com/t/cooking-crash-materials/2738422, post of 12 June 2026; lead supplied by the owner). It makes the engine decide which shaders to compile from the material's conservative data, at the cost of compiling some shaders that are not needed. Untested in 5.9. Procedure: set the variable in the running editor and read it back; if the editor refuses, make no import and ask the owner; otherwise wait for any shader compiling to stop, then import. Shader compile time and cache growth are recorded. **By the owner's instruction, if this attempt crashes, importing stops and the variable is put back.** | As attempt 1 otherwise: everything included; lightmap UV generation off; Substrate on; same level and asset folder | **Not made.** At 23:53 the running editor refused the change ("r.Material.UseShaderCompilationParameters is read only!") and the value stayed 1, so the variable applies only at startup. No import was started and nothing was changed. Proposed to the owner: add the line `r.Material.UseShaderCompilationParameters=0` at the end of the section `[/Script/Engine.RendererSettings]` in `Config\DefaultEngine.ini`, then restart the editor. **The owner said yes at 00:17 on 2026-11-11, and the line was written at 00:18** as line 43 of `Config\DefaultEngine.ini` (2,468 bytes before, 2,513 after). It takes effect at the next editor start. The import itself is journaled as attempt 4 once the variable reads 0. |
 | 4 | 00:41 | The same import with Epic's workaround in force. The owner restarted the editor at 00:32. Confirmed before the attempt: `r.Material.UseShaderCompilationParameters` reads 0 in the running editor, and this start's log shows "Set CVar [[r.Material.UseShaderCompilationParameters:0]]". Cost of the setting at startup: none measurable. The log shows no shader compiling after the start, no shader compiler process was running five minutes later, and the cache held 2.003 GB, as before (250 files against 235). Any cost during the import is measured from the cache size and the log afterwards. **By the owner's instruction, if this attempt crashes, importing stops and line 43 of `Config\DefaultEngine.ini` is taken out again.** | As attempt 1 otherwise: everything included; lightmap UV generation off; Substrate on; level `/Game/Wieland1529/Scratch/L_P1_DatasmithImport`, assets to `/Game/Wieland1529/Scratch/P1`; record to `review\phase1\datasmith_import_attempt4.json` | **No crash. The import call returned success at 00:39 after 28.2 seconds**, reporting 1,294 meshes and 2,602 actors. Counts against the file, the dimension check, the saves and the cost in shader compiling are recorded below under "Result of attempt 4" as each is made. |
 
-### Where the import stands, and the ways forward
+### Result of attempt 4
+
+The import ran at 00:39 on 2026-11-11 in the scratch level `/Game/Wieland1529/Scratch/L_P1_DatasmithImport` and took 28.2 seconds. The editor did not crash. Record: `review\phase1\datasmith_import_attempt4.json`.
+
+| Measure | In the file | Arrived | Share |
+|---|---|---|---|
+| Placed mesh objects | 3,562 | 3,562 | 100 percent |
+| Lights | 587 | 587 | 100 percent |
+| Meshes | 1,294 | 1,294 | 100 percent |
+| Materials | 280 | 280 | 100 percent |
+| Textures | 94 named | 72 (65 images and 7 light-distribution files) | 9 image files named in the file are not in the export folder; see below |
+| Camera | 1 | 1 | |
+
+How the objects arrive: Unreal makes 2,602 actors (its word for objects placed in a level) from them. 1,935 of those carry the 3,562 meshes and 557 carry the 587 lights, because Datasmith attaches the parts of some Revit families to one actor. A count of actors alone would read 1,935 and 557 and look like a shortfall; the count must be of mesh and light parts.
+
+**Known dimension.** The floor with Revit element ID 12330199 (type `Floor Generic - 1'-2"`, on the level 1ST FLOOR) has its top at Z = 203.2000 cm. The site element `Site_GRADE_GRADE` has its top at Z = 0.0000 cm. The first floor is therefore 2,032.00 mm above grade, against 2,032 mm in the drawings: a difference under 0.01 mm. The same floor measures 1,320.80 cm across, the building's 13.208 m width.
+
+**Position.** The import sits in the existing level's coordinates with no adjustment: its floor lies at the level coordinates the earlier registration file gives for the lot. Phase 3 can place the building by importing it, without re-registering.
+
+**Saved.** The imported assets (1,647 files, 0.71 GB, under `Content\Wieland1529\Scratch\P1\`) and the scratch level (12.2 MB) were saved by name at 00:40. Nothing else was saved.
+
+**What the workaround cost.**
+
+| Measure | Value |
+|---|---|
+| At editor start, with the line in force | Nothing measurable: no shader compiling in the log, cache unchanged at 2.003 GB |
+| During and after the import | 82 shaders compiled; 45 seconds with a compile job running; 314 seconds of processor time over 8 workers |
+| Cache growth | 2 MB (2.003 GB to 2.005 GB) |
+| Of 21,702 shader requests | 77 percent were already in the cache and 21 percent in memory |
+
+Most of the shaders the import needed were already in the cache, left there by the two crashed attempts. An import into an empty cache will take longer; that is the import's own cost, not the workaround's. The workaround's own share is the 82 extra shaders.
+
+**The condition on this pass.** The import works only with the line `r.Material.UseShaderCompilationParameters=0` in `Config\DefaultEngine.ini`. It is a temporary workaround for an engine fault that Epic described for 5.8. It stays in the project until an engine update fixes the fault; each engine update should be tested by taking the line out and importing once.
+
+**Found in the import, for later phases.**
+
+1. **Nine image files are missing from the export.** The file names them, and Revit did not write them into the export folder, so the materials that use them arrive without those images: `Bandalux_9920.png`, `Bandalux_OpennessFactor_Simulator.png`, `diffuse_Oak Veneered MDF Staggered 51.2 x 78 inches (NG7H6O) (5).jpeg`, `Endicott SN-8 Black Glazed Thinbrick Modular Stack 11.3 x 24.5 inches bump.jpg`, `Endicott SN-8 Black Glazed Thinbrick Modular Stack 11.3 x 24.5 inches texture.jpg`, `ETH_Teak_NaturalOutdoor.jpg`, `Material_Leaf_N2D.png`, `RS10242_Wall_BoothBayBlue_BW.jpg`, `White Aluminum.jpg`. In Revit these are materials whose image paths do not resolve on the exporting computer.
+2. **One object lies about 865 m from the building.** A generic model, Revit element ID 18049581, about 0.6 by 2.9 by 2.7 m, at 441 m north and 885 m east of the model's origin. Every other mesh object is within 60 m of the building. It is probably a stray element in the Revit view.
+3. **The lights carry no physical units.** All 587 arrive as point lights with unitless intensity (9.3 to 6,870, median 100). 60 carry a light-distribution file. All cast shadows. Phase 8, which wants every fixture at its real output, has to convert them.
+4. **No imported mesh is set to Nanite** (checked on 60). Phase 3 decides that.
+5. **The editor held 24.4 GB of memory after the import**, just over the plan's 24 GB budget for it, with the production level's content still in memory from earlier in the run.
+6. **1,301 warnings "Missing actor referenced in metadata"** were logged. They are Revit data blocks in the file that name no placed object (the file holds 5,589 such blocks, and 4,288 of them name a placed object). No placed object lacks its data: all 2,600 imported actors and all 1,657 parts attached to another actor carry their Revit data (category, family, type and the rest), checked one by one.
+
+
+### The ways forward that were weighed before attempt 4
+
+Option A below was taken on 2026-11-11 with the owner's yes, and it worked. The others were not needed. The table is kept as the record of what each would have cost.
 
 The crash is repeatable: both attempts stopped at the same point, when the importer made its first material from Datasmith's Revit parent material, `RevitReference`. The engine then found that the set of shaders it had built for that parent did not include one it expected (`TShadowDepthPSCombined`). An Epic staff member described this assertion for engine 5.8 and named a temporary workaround.
 
 | Option | What it keeps | What it costs | What is known |
 |---|---|---|---|
-| A. Epic's workaround: one line in `Config\DefaultEngine.ini` and a restart. **Waiting for the owner's yes.** | Everything: reimport, the Revit data on each object, Revit's materials | A project-wide setting; shaders are rebuilt once, and the time and cache growth will be measured | Untested in 5.9. By the owner's instruction, a crash with it set ends the import attempts. |
+| A. Epic's workaround: one line in `Config\DefaultEngine.ini` and a restart. **Taken; it worked (attempt 4).** | Everything: reimport, the Revit data on each object, Revit's materials | A project-wide setting; shaders are rebuilt once, and the time and cache growth will be measured | Untested in 5.9. By the owner's instruction, a crash with it set ends the import attempts. |
 | B. Import without materials, an option of the importer itself | Geometry, lights, the Revit data on each object, reimport | Revit's materials do not arrive; all 280 would be made in Unreal. The plan's default was to keep them as exported. | Untried. It skips the step that crashes. It is still an import, so it needs the owner's word after a third crash. |
 | C. The FBX route, the plan's named fallback | Geometry | Loses reimport and the Revit data on each object; materials are made in Unreal | Worked in October on 5.8 |
 | D. Substrate off for the whole project | Possibly everything | Changes how every material in the project is drawn. The owner's decision. | No evidence points to it: the assertion concerns which shadow shaders are built, not Substrate. Not recommended on what is known. |
@@ -334,7 +380,8 @@ In `D:\Unreal_Engine_Projects\Wieland1527 5.9\`:
 | Item | What |
 |---|---|
 | `Config\DefaultEngine.ini` | **Changed at 00:18 on 2026-11-11, with the owner's yes:** one line added as line 43, `r.Material.UseShaderCompilationParameters=0`, at the end of the section `[/Script/Engine.RendererSettings]`. To undo: delete that line and restart the editor. No other settings file was changed. |
-| `Content\Wieland1529\Scratch\L_P1_DatasmithImport.umap` | New. An empty scratch level for the import. |
+| `Content\Wieland1529\Scratch\L_P1_DatasmithImport.umap` | New. The scratch level that holds the imported building (12.2 MB). |
+| `Content\Wieland1529\Scratch\P1\` | New. The imported assets: 1,647 files, 0.71 GB (1,294 meshes, 280 materials, 72 textures, 1 Datasmith scene). |
 | `Content\Wieland1529\Scratch\L_P1_LightUnits.umap` | New. The light-check level: one card, one point light, one hidden reference light, one capture camera. |
 | `Content\Wieland1529\Scratch\M_P1_Lambert50.uasset` | New. The matte 50 percent grey material on the card. |
 | `Content\Belmont\`, `Content\EuropeanBeech\` | Deleted at 00:01 on 2026-11-11, with the owner's approval. 9.88 GB. |
