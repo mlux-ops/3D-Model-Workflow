@@ -25,6 +25,8 @@ import traceback
 import unreal
 
 SCRATCH_ROOT = "/Game/Wieland1529/Scratch/"
+# The folders this plan owns in the project. Phase 1 tested under Scratch; Phase 3 builds under Building.
+ALLOWED_ROOTS = (SCRATCH_ROOT, "/Game/Wieland1529/Building/")
 _STATE = {}
 
 
@@ -33,9 +35,10 @@ def _world_path():
 
 
 def _require_scratch_level():
+    """Refuse unless the open level is one of this plan's own, so that the existing production level is never changed."""
     path = _world_path()
-    if not path.startswith(SCRATCH_ROOT):
-        raise RuntimeError("refused: the open level is %s, not a scratch level under %s" % (path, SCRATCH_ROOT))
+    if not path.startswith(ALLOWED_ROOTS):
+        raise RuntimeError("refused: the open level is %s, not a level under %s" % (path, " or ".join(ALLOWED_ROOTS)))
     return path
 
 
@@ -105,8 +108,8 @@ def start_import(file_path, destination_folder, result_path, lightmap_uvs=False)
     level = _require_scratch_level()
     if not os.path.exists(file_path):
         raise RuntimeError("no such file: " + file_path)
-    if not destination_folder.startswith(SCRATCH_ROOT):
-        raise RuntimeError("refused: assets must go under " + SCRATCH_ROOT)
+    if not destination_folder.startswith(ALLOWED_ROOTS):
+        raise RuntimeError("refused: assets must go under " + " or ".join(ALLOWED_ROOTS))
     _STATE.clear()
     _STATE.update(file=file_path, destination=destination_folder, lightmap_uvs=bool(lightmap_uvs))
     return _schedule("import", result_path, {
