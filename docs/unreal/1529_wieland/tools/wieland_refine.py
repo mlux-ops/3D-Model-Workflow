@@ -33,7 +33,10 @@ ROUND_CM = 0.2       # each face is pulled back 2 mm from a sharp edge (less whe
 PASSES_CM = (ROUND_CM, 0.05, 0.02, 0.01, 0.005, 0.005)
 MESH_FOLDER = "/Game/Wieland1529/Interiors/Meshes"
 WELD_CM = 0.005
-MERGE_CM = 0.015     # before rounding, steps and slivers smaller than 0.15 mm are closed up
+# Before rounding, steps and slivers smaller than this are closed up. Two sizes are tried and the
+# better result kept: 0.15 mm suits finely modelled fixtures, 0.6 mm closes the 0.4 mm steps
+# that the Revit casework and doors carry (a step that small cannot be rounded by 2 mm).
+MERGE_TRIALS_CM = (0.015, 0.06)
 
 _ARRAY_CACHE = {}
 
@@ -249,6 +252,39 @@ def count_near(camera, radius=200.0, angle=SHARP_ANGLE):
             total_cm += length
     rows.sort(key=lambda row: -row[2])
     return total, round(total_cm, 1), rows
+
+
+_COUNTS = {}
+
+
+def count_begin(name, camera, radius=200.0, angle=SHARP_ANGLE):
+    """Start a count that is carried out in short steps (the editor must not be held long)."""
+    todo = components_near(camera, radius)
+    _COUNTS[name] = {"camera": camera, "radius": radius, "angle": angle, "todo": todo, "rows": []}
+    return len(todo)
+
+
+def count_step(name, seconds=12.0):
+    """Work on a started count for about `seconds`. Returns the number of objects still to do."""
+    import time
+    state = _COUNTS[name]
+    start = time.time()
+    while state["todo"] and time.time() - start < seconds:
+        actor, component = state["todo"].pop()
+        positions, triangles = mesh_arrays(component.static_mesh)
+        world, flipped = _world_positions(component, positions)
+        found = sharp_edges(world, triangles, flipped, state["angle"], state["camera"], state["radius"])
+        if found:
+            length = sum(_length(_sub(b, a)) for a, b, _ in found)
+            state["rows"].append((actor.get_actor_label(), component.static_mesh.get_path_name(), len(found),
+                                  round(length, 1)))
+    return len(state["todo"])
+
+
+def count_result(name):
+    """(total, total cm, rows) of a finished count, rows sorted by count."""
+    rows = sorted(_COUNTS[name]["rows"], key=lambda row: -row[2])
+    return sum(row[2] for row in rows), round(sum(row[3] for row in rows), 1), rows
 
 
 # ----------------------------------------------------------------------------- rounding
@@ -626,32 +662,42 @@ def rounded_arrays(static_mesh):
     high = [max(p[k] for p in positions) for k in range(3)]
     centre = tuple((low[k] + high[k]) / 2.0 for k in range(3))
     local = [_sub(p, centre) for p in positions]
-    state = (local, triangles, triangle_uvs, materials)
-    best = None
-    left = before
-    passes = 0
-    report = {"edges_rounded": 0, "corners_left": 0, "reduced": 0}
-    for number, distance in enumerate(PASSES_CM):
-        result = round_pass(state[0], state[1], state[2], state[3], distance, MERGE_CM if number == 0 else 0.0)
-        state = result[:4]
-        if number == 0:
-            report = result[4]
-        now = len(sharp_edges(state[0], state[1]))
-        if best is None or now < left:
-            best = state
-            left = now
-            passes = number + 1
-        if now == 0:
-            break
-    local, new_triangles, new_uvs, new_materials = best
-    out_positions = [_add(p, centre) for p in local]
     slack = 0.01
-    stray = sum(1 for p in out_positions if any(p[k] < low[k] - slack or p[k] > high[k] + slack for k in range(3)))
-    info = {"before": before, "after": left, "triangles_before": len(triangles),
-            "triangles_after": len(new_triangles), "passes": passes, "stray_vertices": stray,
-            "edges_rounded": report["edges_rounded"], "corners_left": report["corners_left"],
-            "reduced": report["reduced"]}
-    return out_positions, new_triangles, new_uvs, new_materials, info
+    chosen = None
+    for merge in MERGE_TRIALS_CM:
+        state = (local, triangles, triangle_uvs, materials)
+        best = None
+        left = before
+        passes = 0
+        report = {"edges_rounded": 0, "corners_left": 0, "reduced": 0}
+        for number, distance in enumerate(PASSES_CM):
+            result = round_pass(state[0], state[1], state[2], state[3], distance, merge if number == 0 else 0.0)
+            state = result[:4]
+            if number == 0:
+                report = result[4]
+            now = len(sharp_edges(state[0], state[1]))
+            # A pass that pushes a vertex outside the original outline is not kept.
+            outside = any(abs(p[k]) > (high[k] - low[k]) / 2.0 + slack for p in state[0] for k in range(3))
+            if best is None or (now < left and not outside):
+                best = state
+                left = now
+                passes = number + 1
+            if now == 0 or outside:
+                break
+        out_positions = [_add(p, centre) for p in best[0]]
+        stray = sum(1 for p in out_positions
+                    if any(p[k] < low[k] - slack or p[k] > high[k] + slack for k in range(3)))
+        lost = len(best[1]) < len(triangles)
+        rank = (1 if (stray or lost) else 0, left)
+        if chosen is None or rank < chosen[0]:
+            info = {"before": before, "after": left, "triangles_before": len(triangles),
+                    "triangles_after": len(best[1]), "passes": passes, "stray_vertices": stray,
+                    "edges_rounded": report["edges_rounded"], "corners_left": report["corners_left"],
+                    "reduced": report["reduced"], "merge_cm": merge}
+            chosen = (rank, out_positions, best[1], best[2], best[3], info)
+        if rank == (0, 0):
+            break
+    return chosen[1], chosen[2], chosen[3], chosen[4], chosen[5]
 
 
 def _dynamic_from_arrays(positions, triangles, triangle_uvs, materials):
@@ -717,3 +763,37 @@ def rounded_copy(static_mesh, folder=MESH_FOLDER, save=True):
     info["path"] = path
     info["existed"] = False
     return info
+
+
+# ----------------------------------------------------------------------------- swaps
+
+def good_copy(info):
+    """A rounded copy is used only if it has fewer sharp edges, lost no faces and has no stray vertex."""
+    return (info["after"] < info["before"] and info["triangles_after"] >= info["triangles_before"]
+            and not info.get("stray_vertices"))
+
+
+def swap_meshes(mapping, actors=None):
+    """Put new meshes on the objects that use the source meshes. mapping: source path -> new path.
+
+    Only the object's reference changes (an override in the level); the Datasmith mesh asset is
+    untouched. Returns rows (actor label, component name, source path, new path).
+    """
+    if actors is None:
+        actors = unreal.get_editor_subsystem(unreal.EditorActorSubsystem).get_all_level_actors()
+    loaded = {}
+    rows = []
+    for actor in actors:
+        for component in actor.get_components_by_class(unreal.StaticMeshComponent):
+            mesh = component.static_mesh
+            if mesh is None:
+                continue
+            source = mesh.get_path_name()
+            target = mapping.get(source)
+            if target is None:
+                continue
+            if target not in loaded:
+                loaded[target] = unreal.EditorAssetLibrary.load_asset(target)
+            component.set_static_mesh(loaded[target])
+            rows.append((actor.get_actor_label(), component.get_name(), source, loaded[target].get_path_name()))
+    return rows
