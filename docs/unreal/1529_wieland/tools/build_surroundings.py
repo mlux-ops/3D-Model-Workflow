@@ -19,6 +19,10 @@ smoothed over 3 ft and capped at its 97th percentile so that tree crowns
 hanging over a roof do not become spikes. The two houses that stood on the
 lot in 2022 are left out; so is any footprint that the data square cuts.
 
+No neighbour may stand on the lot. The county's footprints are roof outlines and a few reach 2 to 20 cm over the
+lot lines; each is cut back to the lot line, and the three neighbours that the plat of survey of August 2025 ties
+to the lot are cut back to the surveyed line instead (see SURVEY_LINES).
+
 Ground: the 2022 bare-ground surface as tiles of 164 ft (50 m): the four
 tiles around the lot at 1 ft cells, the rest at 4 ft. The lot itself is cut
 out, because the building brings its own ground, ramps and patios.
@@ -50,6 +54,39 @@ LOT_Y = (-3115.06, 0.0)
 ROOF_STEP_CM = 100.0
 TILE_FT = 164
 ZONE_1_CM = 4000.0
+
+
+# Plat of survey, August 2025: where a neighbour's wall stands against the lot, in feet north and east of the lot's
+# south-west corner. Each entry is a line through two points and the side of it on which the neighbour stays.
+SURVEY_LINES = {
+    # number 1525, south: its north wall runs from 0.68 ft south of the south line (6.51 ft east of the front line)
+    # to 0.37 ft south of it (about 55.1 ft east)
+    781632: {"north_east_ft": [(-0.68, 6.51), (-0.37, 55.1)], "stays": "south"},
+    # the four-storey building at the rear: its corners are 0.22 and 0.34 ft east of the rear line (record depth 102.20 ft)
+    781010: {"north_east_ft": [(0.0, 102.42), (49.5, 102.54)], "stays": "east"},
+}
+
+
+def keep_off_the_lot(object_id, polygon, lot):
+    """Cut a neighbour's footprint back so that it does not stand on the lot. Returns the footprint and the area cut, sq cm."""
+    before = polygon.area
+    line = SURVEY_LINES.get(object_id)
+    if line is None and not polygon.intersects(lot):
+        return polygon, 0.0
+    if line is not None:
+        (n0, e0), (n1, e1) = line["north_east_ft"]
+        p0 = np.array([-n0 * FT_CM, -e0 * FT_CM])
+        p1 = np.array([-n1 * FT_CM, -e1 * FT_CM])
+        along = (p1 - p0) / np.hypot(*(p1 - p0))
+        a, b = p0 - along * 1.0e5, p1 + along * 1.0e5
+        # level frame: north is -X and east is -Y, so "south" is toward +X and "east" toward -Y
+        away = np.array([1.0e6, 0.0]) if line["stays"] == "south" else np.array([0.0, -1.0e6])
+        polygon = polygon.intersection(Polygon([tuple(a), tuple(b), tuple(b + away), tuple(a + away)]))
+    polygon = polygon.difference(lot)
+    if polygon.geom_type != "Polygon":
+        parts = sorted(getattr(polygon, "geoms", []), key=lambda g: -g.area)
+        polygon = parts[0] if parts else polygon
+    return polygon, before - polygon.area
 
 
 class Frame:
@@ -264,6 +301,10 @@ def main(argv):
         if polygon.intersection(lot).area > 2.0e5:
             manifest["left_out"].append({"object_id": object_id, "why": "one of the two houses that stood on the lot in 2022"})
             continue
+        polygon, cut = keep_off_the_lot(object_id, polygon, lot)
+        if polygon.is_empty or polygon.geom_type != "Polygon":
+            manifest["left_out"].append({"object_id": object_id, "why": "nothing left once cut back to the lot line"})
+            continue
         made = building_mesh(polygon, frame, top_smooth, ground, valid)
         if made is None:
             manifest["left_out"].append({"object_id": object_id, "why": "cut by the edge of the data square, or too small to shape"})
@@ -276,6 +317,9 @@ def main(argv):
         entry = {"name": name, "object_id": object_id, "zone": zone, "distance_from_lot_m": round(distance / 100.0, 1), "pivot_cm": [round(v, 1) for v in pivot],
                  "triangles": int(len(triangles)), "county_height_m": None if attributes.get("Height") is None else round(float(attributes["Height"]) * 0.3048006, 2)}
         entry.update(stats)
+        if cut > 1.0:
+            entry["cut_back_off_the_lot_sq_m"] = round(cut / 1.0e4, 3)
+            entry["cut_back_to"] = "the surveyed line (plat of survey, August 2025)" if object_id in SURVEY_LINES else "the lot line"
         manifest["buildings"].append(entry)
 
     # ---- ground tiles
@@ -328,6 +372,7 @@ def main(argv):
     print(json.dumps({"buildings": len(b), "zone_1": sum(1 for e in b if e["zone"] == 1), "zone_2": sum(1 for e in b if e["zone"] == 2),
                       "building_triangles": sum(e["triangles"] for e in b), "left_out": len(manifest["left_out"]),
                       "buildings_not_sound": [e["name"] for e in b if not e["sound"]],
+                      "cut_back_off_the_lot": {e["name"]: e["cut_back_off_the_lot_sq_m"] for e in b if "cut_back_off_the_lot_sq_m" in e},
                       "edges_with_3_faces": sum(e["edges_with_3_faces"] for e in b),
                       "edges_with_faces_turned_against_each_other": sum(e["edges_with_faces_turned_against_each_other"] for e in b),
                       "left_out_why": sorted({e["why"] for e in manifest["left_out"]}),

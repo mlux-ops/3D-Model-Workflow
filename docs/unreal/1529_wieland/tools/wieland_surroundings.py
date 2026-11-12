@@ -187,6 +187,52 @@ async def build(folder, start=0, count=40, record_path=None):
             "problems": problems[:8], "seconds": round(time.time() - started, 1), "next": nxt if nxt < len(names) else None}
 
 
+async def rebuild(folder, names, record_path=None):
+    """Give objects that already exist the mesh of their files again, after the files were made anew.
+
+    The asset and the object keep their names; the asset's geometry is replaced and the object is moved to
+    the file's pivot. An object or asset that is missing is reported under "problems" and nothing is made
+    in its place (build() does that).
+    """
+    _require_level()
+    existing = _existing()
+    done = 0
+    problems = []
+    records = []
+    for name in names:
+        data = _read(folder, name + ".json")
+        actor = existing.get(name)
+        static_mesh = unreal.EditorAssetLibrary.load_asset(MESH_ROOT + name) if unreal.EditorAssetLibrary.does_asset_exist(MESH_ROOT + name) else None
+        if actor is None or static_mesh is None:
+            problems.append(name + ": its object or its asset is missing; nothing done")
+            continue
+        mesh, record = _make_mesh(data)
+        records.append(record)
+        if not _mesh_is_whole(record) or record["rejected"]:
+            problems.append(name + ": mesh in memory is not whole (%d triangles rejected); the asset was left as it was" % record["rejected"])
+            continue
+        options = unreal.GeometryScriptCopyMeshToAssetOptions()
+        options.enable_recompute_normals = False
+        options.emit_transaction = False
+        _, outcome = unreal.GeometryScript_AssetUtils.copy_mesh_to_static_mesh(mesh, static_mesh, options, unreal.GeometryScriptMeshWriteLOD())
+        if outcome != unreal.GeometryScriptOutcomePins.SUCCESS or not _asset_matches(static_mesh, data):
+            problems.append(name + ": the asset does not hold the new mesh after the copy")
+            continue
+        if not _ensure_nanite(static_mesh):
+            problems.append(name + ": Nanite is off after the copy")
+        pivot = data["pivot"]
+        actor.modify(True)
+        actor.set_actor_location(unreal.Vector(pivot[0], pivot[1], pivot[2]), False, False)
+        done += 1
+        await asyncio.sleep(0)
+    if record_path and records:
+        with open(record_path, "a", encoding="utf-8") as handle:
+            for record in records:
+                record["rebuilt"] = True
+                handle.write(json.dumps(record) + "\n")
+    return {"asked": len(names), "rebuilt": done, "problems": problems}
+
+
 def summary():
     """Read-only: what the surroundings level holds."""
     zones, kinds = {}, {}
