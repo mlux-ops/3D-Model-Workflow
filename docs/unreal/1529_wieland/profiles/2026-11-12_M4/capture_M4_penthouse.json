@@ -1,0 +1,265 @@
+{
+ "info": {
+  "step": "Phase 6, step 6.10: profile M4, part penthouse",
+  "level": "/Game/Wieland1529/L_Site_M4.L_Site_M4",
+  "quality": "Epic (3), pool 1000, SP 100, t.MaxFPS 1000, Game View on",
+  "view_mode": "Lit",
+  "lighting": "Placeholder_Sun 10.0 lux, pitch -45, yaw -135, sky atmosphere and sky light; no interior lighting",
+  "viewport_pixels": [
+   2038,
+   782
+  ],
+  "unit_levels_shown": [
+   "NorthPenthouse"
+  ],
+  "site": "default after Phase 7: earlier detailed buildings, new ground, 34 trees leaf-on with wind, far city",
+  "interior_lists": "Revit as exported (kitchen, bath, floor)",
+  "found_before": {
+   "sg.ViewDistanceQuality": 4.0,
+   "sg.AntiAliasingQuality": 4.0,
+   "sg.ShadowQuality": 4.0,
+   "sg.GlobalIlluminationQuality": 4.0,
+   "sg.ReflectionQuality": 4.0,
+   "sg.PostProcessQuality": 4.0,
+   "sg.TextureQuality": 4.0,
+   "sg.EffectsQuality": 4.0,
+   "sg.FoliageQuality": 4.0,
+   "sg.ShadingQuality": 4.0,
+   "sg.LandscapeQuality": 4.0,
+   "r.Streaming.PoolSize": 3000.0,
+   "r.Editor.Viewport.ScreenPercentage": 100.0,
+   "t.MaxFPS": 0.0,
+   "Slate.bAllowThrottling": 1.0,
+   "r.VSync": 0.0
+  },
+  "foreground_attempt": {
+   "was": 5636622,
+   "front": true
+  }
+ },
+ "started_unix": 1794521536.920871,
+ "finished_unix": 1794521617.0135345,
+ "warmup_seconds": 8.0,
+ "csv_folder": "D:/Unreal_Engine_Projects/Wieland1527 5.9/Saved/Profiling\\CSV",
+ "error": null,
+ "jobs": [
+  {
+   "name": "M4_penthouse_path_indoors_first_walk",
+   "kind": "route",
+   "job": {
+    "kind": "route",
+    "name": "M4_penthouse_path_indoors_first_walk",
+    "points": [
+     [
+      -1050.0,
+      -850.0,
+      1013.4
+     ],
+     [
+      -1000.0,
+      -1000.0,
+      1013.4
+     ],
+     [
+      -1000.0,
+      -2000.0,
+      1013.4
+     ],
+     [
+      -1000.0,
+      -2000.0,
+      1338.6
+     ],
+     [
+      -1000.0,
+      -1250.0,
+      1338.6
+     ],
+     [
+      -960.0,
+      -840.0,
+      1338.6
+     ],
+     [
+      -1000.0,
+      -1250.0,
+      1338.6
+     ]
+    ],
+    "seconds": 20.0,
+    "_yaw": -95.57219780396454
+   },
+   "wall_start_unix": 1794521544.9557889,
+   "recorded_seconds": 20.001333100022748,
+   "ticks": 2369,
+   "foreground_fraction": 1.0,
+   "tick_ms_mean": 8.442222076649402,
+   "tick_ms_p95": 15.232700854539871,
+   "tick_ms_max": 20.575497299432755,
+   "camera_first": {
+    "loc": [
+     -1049.4642478153862,
+     -851.6072565538411,
+     1013.4
+    ],
+    "rot_pitch_yaw_roll": [
+     0.0,
+     -71.56504821777344,
+     0.0
+    ]
+   },
+   "camera_last": {
+    "loc": [
+     -1000.0,
+     -1249.9999999999995,
+     1338.6
+    ],
+    "rot_pitch_yaw_roll": [
+     0.0,
+     -95.57219696044922,
+     0.0
+    ]
+   },
+   "new_csv_files": [
+    "Profile(20261112_161224).csv"
+   ],
+   "tick_ms_series": null
+  },
+  {
+   "name": "M4_penthouse_path_indoors",
+   "kind": "route",
+   "job": {
+    "kind": "route",
+    "name": "M4_penthouse_path_indoors",
+    "points": [
+     [
+      -1050.0,
+      -850.0,
+      1013.4
+     ],
+     [
+      -1000.0,
+      -1000.0,
+      1013.4
+     ],
+     [
+      -1000.0,
+      -2000.0,
+      1013.4
+     ],
+     [
+      -1000.0,
+      -2000.0,
+      1338.6
+     ],
+     [
+      -1000.0,
+      -1250.0,
+      1338.6
+     ],
+     [
+      -960.0,
+      -840.0,
+      1338.6
+     ],
+     [
+      -1000.0,
+      -1250.0,
+      1338.6
+     ]
+    ],
+    "seconds": 20.0,
+    "_yaw": -95.57219780396422
+   },
+   "wall_start_unix": 1794521574.9725223,
+   "recorded_seconds": 20.003502699983073,
+   "ticks": 2371,
+   "foreground_fraction": 1.0,
+   "tick_ms_mean": 8.43578051478739,
+   "tick_ms_p95": 14.845900237560272,
+   "tick_ms_max": 20.768698304891586,
+   "camera_first": {
+    "loc": [
+     -1049.3084425563904,
+     -852.0746723308287,
+     1013.4
+    ],
+    "rot_pitch_yaw_roll": [
+     0.0,
+     -71.56504821777344,
+     0.0
+    ]
+   },
+   "camera_last": {
+    "loc": [
+     -1000.0,
+     -1249.9999999999995,
+     1338.6
+    ],
+    "rot_pitch_yaw_roll": [
+     0.0,
+     -95.57219696044922,
+     0.0
+    ]
+   },
+   "new_csv_files": [
+    "Profile(20261112_161254).csv"
+   ],
+   "tick_ms_series": null
+  },
+  {
+   "name": "M4_hold_D2",
+   "kind": "view",
+   "job": {
+    "kind": "view",
+    "name": "M4_hold_D2",
+    "loc": [
+     -960.0,
+     -840.0,
+     1339.0
+    ],
+    "target": [
+     -1200.0,
+     -330.0,
+     1320.0
+    ],
+    "seconds": 10.0
+   },
+   "wall_start_unix": 1794521604.990765,
+   "recorded_seconds": 10.007801099971402,
+   "ticks": 1161,
+   "foreground_fraction": 1.0,
+   "tick_ms_mean": 8.617064515313231,
+   "tick_ms_p95": 14.412600547075272,
+   "tick_ms_max": 19.717302173376083,
+   "camera_first": {
+    "loc": [
+     -960.0,
+     -840.0,
+     1339.0
+    ],
+    "rot_pitch_yaw_roll": [
+     -1.9306484991808328,
+     115.20112364547508,
+     3.006444230311472e-08
+    ]
+   },
+   "camera_last": {
+    "loc": [
+     -960.0,
+     -840.0,
+     1339.0
+    ],
+    "rot_pitch_yaw_roll": [
+     -1.9306484991808328,
+     115.20112364547508,
+     3.006444230311472e-08
+    ]
+   },
+   "new_csv_files": [
+    "Profile(20261112_161324).csv"
+   ],
+   "tick_ms_series": null
+  }
+ ]
+}

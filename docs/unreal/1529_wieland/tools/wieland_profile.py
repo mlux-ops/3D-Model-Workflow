@@ -21,7 +21,8 @@ but the module stays loaded, so its state persists between calls):
 
 A job is a dict:
     name     label used in the record
-    kind     "view" (camera held still) or "path" (camera moves loc -> end)
+    kind     "view" (camera held still), "path" (camera moves loc -> end) or "route" (camera walks along
+             "points", a list of [x, y, z], at one speed, looking the way it walks)
     loc      [x, y, z] in level units (cm)
     end      [x, y, z], path jobs only
     target   [x, y, z] the camera looks at; or give "rot" for view jobs
@@ -34,6 +35,7 @@ Nothing here saves an asset or a level.
 
 import ctypes
 import json
+import math
 import os
 import time
 
@@ -142,7 +144,36 @@ def _list_csv():
     return set(os.listdir(folder))
 
 
+def _route_point(points, distance):
+    """The point at a distance along a line through several points, and the leg it lies on."""
+    for index in range(len(points) - 1):
+        a, b = points[index], points[index + 1]
+        leg = sum((b[k] - a[k]) ** 2 for k in range(3)) ** 0.5
+        if distance <= leg or index == len(points) - 2:
+            t = min(1.0, distance / leg) if leg > 0.0 else 1.0
+            return [a[k] + (b[k] - a[k]) * t for k in range(3)], index
+        distance -= leg
+    return list(points[-1]), len(points) - 2
+
+
+def _place_route(job, fraction):
+    """kind "route": the camera walks at one speed along job["points"] and looks the way it walks
+    (level with the floor; on a leg that only climbs it keeps the heading it had)."""
+    points = job["points"]
+    total = sum(sum((points[i + 1][k] - points[i][k]) ** 2 for k in range(3)) ** 0.5 for i in range(len(points) - 1))
+    here, _ = _route_point(points, total * fraction)
+    ahead, _ = _route_point(points, min(total, total * fraction + float(job.get("look_ahead_cm", 150.0))))
+    dx, dy = ahead[0] - here[0], ahead[1] - here[1]
+    if (dx * dx + dy * dy) ** 0.5 > 5.0:
+        job["_yaw"] = math.degrees(math.atan2(dy, dx))
+    rotation = unreal.Rotator(pitch=float(job.get("pitch", 0.0)), yaw=float(job.get("_yaw", 0.0)), roll=0.0)
+    unreal.get_editor_subsystem(unreal.UnrealEditorSubsystem).set_level_viewport_camera_info(unreal.Vector(here[0], here[1], here[2]), rotation)
+    return here, [rotation.pitch, rotation.yaw, rotation.roll]
+
+
 def _place(job, fraction):
+    if job["kind"] == "route":
+        return _place_route(job, fraction)
     loc = job["loc"]
     if job["kind"] == "path":
         end = job["end"]
