@@ -805,6 +805,33 @@ def swap_meshes(mapping, actors=None):
     return rows
 
 
+def swaps_from_csv(csv_path, actors=None, folder="/Game/Wieland1529/Building/Datasmith"):
+    """Apply again the swaps recorded in mesh_swaps.csv (after a restart, or in a derived level).
+
+    A row's imported mesh is found by name among the meshes the objects use now, under `folder`.
+    Returns (rows applied, recorded names that no object uses).
+    """
+    import csv
+    wanted = {}
+    with open(csv_path, newline="", encoding="utf-8") as handle:
+        for row in csv.DictReader(handle):
+            wanted[row["imported_mesh_name"]] = row["replacement_mesh_path"]
+    if actors is None:
+        actors = unreal.get_editor_subsystem(unreal.EditorActorSubsystem).get_all_level_actors()
+    mapping = {}
+    for actor in actors:
+        for component in actor.get_components_by_class(unreal.StaticMeshComponent):
+            mesh = component.static_mesh
+            if mesh is None:
+                continue
+            path = mesh.get_path_name()
+            if path.startswith(folder) and mesh.get_name() in wanted:
+                mapping[path] = wanted[mesh.get_name()]
+    rows = swap_meshes(mapping, actors)
+    used = set(path.split(".")[-1] for path in mapping)
+    return rows, sorted(name for name in wanted if name not in used)
+
+
 # ----------------------------------------------------------------------------- batch
 
 _BATCH = {}
