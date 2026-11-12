@@ -62,6 +62,60 @@ def _foreground():
         return None
 
 
+def _own_main_window():
+    """Handle of the editor's largest visible top-level window, or 0."""
+    user32 = ctypes.windll.user32
+    found = []
+    proto = ctypes.WINFUNCTYPE(ctypes.c_bool, ctypes.c_void_p, ctypes.c_void_p)
+
+    def visit(hwnd, _):
+        pid = ctypes.c_ulong(0)
+        user32.GetWindowThreadProcessId(ctypes.c_void_p(hwnd), ctypes.byref(pid))
+        if pid.value == os.getpid() and user32.IsWindowVisible(ctypes.c_void_p(hwnd)):
+            rect = (ctypes.c_long * 4)()
+            user32.GetWindowRect(ctypes.c_void_p(hwnd), rect)
+            found.append(((rect[2] - rect[0]) * (rect[3] - rect[1]), hwnd))
+        return True
+
+    user32.EnumWindows(proto(visit), 0)
+    return max(found)[1] if found else 0
+
+
+def to_front():
+    """Try to make the editor the foreground window.
+
+    Returns {"was": handle of the window that was in front, "front": True or
+    False}. Windows only lets a background process take the foreground in some
+    cases; a short press of the Alt key is the documented way to be allowed.
+    Nothing in Windows' settings is changed.
+    """
+    user32 = ctypes.windll.user32
+    was = user32.GetForegroundWindow()
+    hwnd = _own_main_window()
+    if not hwnd:
+        return {"was": was, "front": False}
+    user32.keybd_event(0x12, 0, 0, 0)
+    user32.SetForegroundWindow(ctypes.c_void_p(hwnd))
+    user32.keybd_event(0x12, 0, 2, 0)
+    return {"was": was, "front": bool(_foreground())}
+
+
+def give_front_back(was):
+    """Put the window that was in front before to_front() back in front."""
+    user32 = ctypes.windll.user32
+    user32.keybd_event(0x12, 0, 0, 0)
+    user32.SetForegroundWindow(ctypes.c_void_p(was))
+    user32.keybd_event(0x12, 0, 2, 0)
+    return bool(_foreground())
+
+
+def png_size(path):
+    """Width and height in pixels from a PNG file's header."""
+    with open(path, "rb") as handle:
+        head = handle.read(24)
+    return [int.from_bytes(head[16:20], "big"), int.from_bytes(head[20:24], "big")]
+
+
 def _force_realtime():
     """Keep the level viewport drawing every frame, also when the editor is not the front window.
 
