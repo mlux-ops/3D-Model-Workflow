@@ -21,6 +21,7 @@ Nothing here edits or saves an asset that Datasmith created.
 
 import bisect
 import math
+import time
 
 import unreal
 
@@ -731,10 +732,11 @@ def rounded_name(static_mesh):
     return "SM_W1529_R_" + static_mesh.get_name()
 
 
-def rounded_copy(static_mesh, folder=MESH_FOLDER, save=True):
+def rounded_copy(static_mesh, folder=MESH_FOLDER, save=True, only_good=False):
     """Create (or return, if it exists) the rounded copy of a mesh as a new saved asset.
 
     Returns a dict: path, existed, sharp edges before and after, triangles before and after.
+    With only_good, a copy that fails good_copy() is not written and the path is None.
     """
     path = "%s/%s" % (folder, rounded_name(static_mesh))
     if unreal.EditorAssetLibrary.does_asset_exist(path):
@@ -745,6 +747,10 @@ def rounded_copy(static_mesh, folder=MESH_FOLDER, save=True):
                 "after": len(sharp_edges(positions, triangles)), "triangles_before": len(before_triangles),
                 "triangles_after": len(triangles)}
     positions, triangles, triangle_uvs, materials, info = rounded_arrays(static_mesh)
+    if only_good and not good_copy(info):
+        info["path"] = None
+        info["existed"] = False
+        return info
     dynamic = _dynamic_from_arrays(positions, triangles, triangle_uvs, materials)
     options = unreal.GeometryScriptCreateNewStaticMeshAssetOptions()
     options.set_editor_property("enable_recompute_normals", False)
@@ -797,3 +803,67 @@ def swap_meshes(mapping, actors=None):
             component.set_static_mesh(loaded[target])
             rows.append((actor.get_actor_label(), component.get_name(), source, loaded[target].get_path_name()))
     return rows
+
+
+# ----------------------------------------------------------------------------- batch
+
+_BATCH = {}
+
+
+def batch_begin(paths, max_triangles=60000, seconds_per_tick=0.5):
+    """Round a list of meshes in the background, a little on every editor tick.
+
+    paths: mesh asset paths. Results collect in _BATCH: done (source path -> info dict),
+    skipped (source path -> reason), errors (source path -> message). Returns the number queued.
+    """
+    batch_end()
+    _BATCH.clear()
+    _BATCH.update({"todo": list(paths), "done": {}, "skipped": {}, "errors": {}, "current": None,
+                   "max_triangles": max_triangles, "seconds": seconds_per_tick, "started": time.time(),
+                   "finished": None})
+    _BATCH["handle"] = unreal.register_slate_post_tick_callback(_batch_tick)
+    return len(_BATCH["todo"])
+
+
+def _batch_tick(delta_seconds):
+    end = time.time() + _BATCH["seconds"]
+    while _BATCH["todo"] and time.time() < end:
+        path = _BATCH["todo"].pop()
+        _BATCH["current"] = path
+        try:
+            mesh = unreal.EditorAssetLibrary.load_asset(path)
+            if mesh is None:
+                _BATCH["skipped"][path] = "not found"
+                continue
+            count = mesh.get_num_triangles(0)
+            if count > _BATCH["max_triangles"]:
+                _BATCH["skipped"][path] = "over %d triangles (%d)" % (_BATCH["max_triangles"], count)
+                continue
+            positions, triangles = mesh_arrays(mesh)
+            before = len(sharp_edges(positions, triangles))
+            forget(mesh)
+            if before == 0:
+                _BATCH["skipped"][path] = "no sharp edge"
+                continue
+            info = rounded_copy(mesh, only_good=True)
+            forget()
+            _BATCH["done"][path] = info
+        except Exception as error:  # one bad mesh must not stop the batch
+            _BATCH["errors"][path] = "%s: %s" % (type(error).__name__, error)
+    if not _BATCH["todo"]:
+        _BATCH["current"] = None
+        _BATCH["finished"] = time.time()
+        batch_end()
+
+
+def batch_end():
+    handle = _BATCH.pop("handle", None)
+    if handle is not None:
+        unreal.unregister_slate_post_tick_callback(handle)
+
+
+def batch_status():
+    """(left, done, skipped, errors, current path, seconds running)."""
+    stop = _BATCH.get("finished") or time.time()
+    return (len(_BATCH.get("todo", ())), len(_BATCH.get("done", ())), len(_BATCH.get("skipped", ())),
+            len(_BATCH.get("errors", ())), _BATCH.get("current"), round(stop - _BATCH.get("started", stop), 1))
