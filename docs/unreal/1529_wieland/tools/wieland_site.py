@@ -731,3 +731,105 @@ async def fit_parts(start=0, count=1):
             for part in sorted(known):
                 writer.writerow(known[part])
     return {"done": len(rows), "problems": problems, "rows": rows if len(rows) <= 2 else len(rows), "dirty": dirty()}
+
+
+# ---------------------------------------------------------------------------------------------
+# Step 7.2-b: the two Revit objects that do not belong in the site view. Their Datasmith mesh assets are
+# not touched; only the placed object's mesh component is made not visible, and the change is recorded.
+
+BUILDING_LEVEL = "/Game/Wieland1529/Building/L_Building"
+REVIT_HIDDEN = ("Site_GRADE_GRADE", "Generic_Models_SURROUNDING_BUILDINGS_SURROUNDING_BUILDINGS")
+REVIT_LIST = "Revit site objects"
+REVIT_OPTION_HIDDEN = "Hidden (site view)"
+REVIT_OPTION_SHOWN = "Shown (as exported from Revit)"
+REVIT_RECORD = REVIEW + "/revit_hidden_objects.csv"
+
+
+def _revit_objects():
+    found = _by_label(REVIT_HIDDEN)
+    return [found[label] for label in REVIT_HIDDEN if label in found and level_of(found[label]) == BUILDING_LEVEL]
+
+
+def revit_state():
+    out = []
+    for actor in _revit_objects():
+        component = actor.get_component_by_class(unreal.StaticMeshComponent)
+        origin, extent = component.get_local_bounds()
+        out.append({"object": actor.get_actor_label(), "level": level_of(actor), "component": component.get_name(),
+                    "mesh": _path(component.static_mesh), "visible": bool(component.get_editor_property("visible")),
+                    "revit_element_id": ";".join(str(t).split(".")[-1] for t in actor.tags if str(t).startswith("Revit.Element.Id."))})
+    return out
+
+
+def revit_hide(labels, visible=False):
+    """Makes the mesh component of the named Revit objects not visible (children keep their own state)."""
+    changed = 0
+    for actor in _revit_objects():
+        if actor.get_actor_label() not in labels:
+            continue
+        component = actor.get_component_by_class(unreal.StaticMeshComponent)
+        if bool(component.get_editor_property("visible")) != bool(visible):
+            component.modify()
+            component.set_visibility(bool(visible), False)
+            changed += 1
+    return {"changed": changed, "state": revit_state(), "dirty": dirty()}
+
+
+def revit_record():
+    import csv
+    rows = revit_state()
+    with open(REVIT_RECORD, "w", newline="", encoding="utf-8") as handle:
+        writer = csv.DictWriter(handle, fieldnames=list(rows[0].keys()) + ["override", "how_to_undo"])
+        writer.writeheader()
+        for row in rows:
+            row["override"] = "mesh component property Visible = False on the placed object; mesh asset untouched"
+            row["how_to_undo"] = "Variant Manager, list '%s', option '%s'; or tick Visible on the component" % (REVIT_LIST, REVIT_OPTION_SHOWN)
+            writer.writerow(row)
+    return rows
+
+
+def build_revit_variants():
+    """Adds (or remakes) the list "Revit site objects" in the variant asset, two options, and saves the asset by name."""
+    _require(SITE_LEVEL)
+    library = unreal.VariantManagerLibrary
+    sets_asset = variant_asset()
+    for index in reversed(range(sets_asset.get_num_variant_sets())):
+        old = sets_asset.get_variant_set(index)
+        if str(old.get_display_text()) == REVIT_LIST:
+            library.remove_variant_set(sets_asset, old)
+    variant_set = unreal.VariantSet()
+    variant_set.set_display_text(REVIT_LIST)
+    library.add_variant_set(sets_asset, variant_set)
+    result = {"objects": len(_revit_objects()), "values": 0, "missed": 0}
+    for option, shown in ((REVIT_OPTION_HIDDEN, False), (REVIT_OPTION_SHOWN, True)):
+        variant = unreal.Variant()
+        variant.set_display_text(option)
+        library.add_variant(variant_set, variant)
+        for actor in _revit_objects():
+            library.add_actor_binding(variant, actor)
+            value = None
+            for name in library.get_capturable_properties(actor):
+                if str(name).endswith("/ Visible") and "Billboard" not in str(name):
+                    value = library.capture_property(variant, actor, str(name))
+                    break
+            if value is None:
+                result["missed"] += 1
+                continue
+            library.set_value_bool(value, shown)
+            result["values"] += 1
+    result["saved"] = bool(unreal.EditorAssetLibrary.save_loaded_asset(sets_asset, False))
+    return result
+
+
+def switch_list(list_name, option):
+    sets_asset = variant_asset()
+    for index in range(sets_asset.get_num_variant_sets()):
+        variant_set = sets_asset.get_variant_set(index)
+        if str(variant_set.get_display_text()) != list_name:
+            continue
+        for number in range(variant_set.get_num_variants()):
+            variant = variant_set.get_variant(number)
+            if str(variant.get_display_text()) == option:
+                variant.switch_on()
+                return {"list": list_name, "option": option, "revit": [(r["object"], r["visible"]) for r in revit_state()]}
+    return {"error": "no such list or option"}
