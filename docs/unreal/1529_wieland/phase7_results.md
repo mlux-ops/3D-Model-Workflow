@@ -1,6 +1,12 @@
 # Phase 7 results: site, surroundings and vegetation
 
-Status: STARTED at 09:15 on 2026-11-12, unattended, in a headless session against the editor
+Status: PAUSED by the owner at 10:45 on 2026-11-12, at a clean step boundary: J1 to J8 are done
+and committed (last `c36d01ac`, J8 saved by name, nothing left changed in the editor). Next is
+step 7.1-b (audit fixes A5, ML2, A10), then the lawn left PENDING in J7, step 7.3 vegetation and
+the review renders. The supervising watcher is stopped; resume by re-arming it (it reads
+`current_phase.txt` = 7 and relaunches this phase from the journal).
+
+Earlier status: STARTED at 09:15 on 2026-11-12, unattended, in a headless session against the editor
 started at 09:13. Scope by the owner's instruction of 2026-11-12: the site model and its
 surroundings only (neighbouring buildings, the site's ground and street, vegetation). The
 interiors, the house's own materials, lighting proper (Phase 8), optimisation and delivery are

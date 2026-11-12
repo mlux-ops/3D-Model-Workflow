@@ -1102,3 +1102,9 @@ Entries from the session that carried out Phase 5, 20:43 to 22:05. Results are i
 - Fix (09:11): `watcher.ps1` now runs detached (started through WMI, single copy via `watcher.pid`) and acts by itself: relaunches the agent when it has stopped mid-phase (a `| PENDING |` journal cell), stops a stuck agent after a usage limit and relaunches 5 minutes after the reset time parsed by `digest.py`, kills and relaunches after 90 minutes of no activity, and starts the next phase from `prompt_phase<N+1>.txt` when a phase closes. Prompts for Phases 7 to 11 were written ahead (commit `48f8441a`). A cap of 5 relaunches without a new commit stops loops. Anything it cannot handle goes to `alerts.txt`; it no longer exits.
 - Verified: reset-time parsing against the real message (02:30 next day) and a dated form; both scripts parse; the detached launch path runs `run_worker.py` (it refused correctly while the lock was held). Not yet observed end to end on a real limit.
 - Prevention: an unattended loop must never rely on the supervisor being available to continue.
+
+### Phase 7 paused by the owner -- 2026-11-12 10:45 (supervising session)
+
+- Not an error: the owner asked to stop the agent at a good spot. The watcher (pid 64020) was stopped first at 10:22 so it could not relaunch anything; `stop_at_commit.ps1` then waited for the agent's next journal commit and killed the headless agent (pid 56412) at 10:45 right after `c36d01ac` (J8 done: materials on the 92 uncovered Phase 4 buildings, saved by name).
+- State: J1 to J8 done; no step in flight, nothing unsaved. Remaining: 7.1-b audit fixes (A5, ML2, A10), lawn (PENDING in J7, no licensed grass image), 7.3 vegetation, review renders. Phase 6 remains paused after J11; queue `6 8 9 10 11` is unchanged.
+- Resume: re-arm `watcher.ps1` (detached); `current_phase.txt` is 7, so it relaunches Phase 7 from the journal. A stale `worker.lock` is cleared by the watcher.
