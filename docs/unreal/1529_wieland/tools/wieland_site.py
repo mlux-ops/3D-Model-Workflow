@@ -301,3 +301,20 @@ async def height_grid(mesh_path, offset, out_prefix, top=60000.0, chunk=4000):
     with open(out_prefix + ".json", "w", encoding="utf-8") as handle:
         json.dump(header, handle)
     return header
+
+
+async def height_jobs(jobs_path, start=0, count=1000):
+    """Read-only. Runs height_grid for jobs [start, start + count) of a JSON list of {name, mesh, offset, group}."""
+    with open(jobs_path, "r", encoding="utf-8") as handle:
+        jobs = json.load(handle)
+    out = {"jobs": len(jobs), "done": 0, "errors": [], "cells_hit": 0}
+    for job in jobs[start:start + count]:
+        prefix = REVIEW + "/heights/" + job["group"] + "/" + job["name"]
+        header = await height_grid(job["mesh"], job["offset"], prefix)
+        if "error" in header:
+            out["errors"].append(header["error"])
+        else:
+            out["done"] += 1
+            out["cells_hit"] += header["hits"]
+        await asyncio.sleep(0)
+    return out
