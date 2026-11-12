@@ -48,13 +48,27 @@ Words used the same way throughout this file:
 
 ## Checks made before any work
 
-Filled in by J1.
+Read at 09:23 to 09:25 on 2026-11-12:
+
+- Editor: Unreal 5.9.0, process started 09:13, ready for calls at 09:22 (it spent the first nine
+  minutes building the earlier level's meshes). It had opened the earlier production level on its
+  own, as the project's start level. No package was marked as changed, before or after the reading.
+- Free commit memory: 27.0 GB of 79.1 GB, with the editor holding 18.9 GB while the earlier
+  production level and its eleven trees are loaded. That is under the 30 GB line, so the first
+  act of step 7.0 is to leave that level (a new, empty level is opened), which gives its memory back.
+- The engine setting `r.Material.UseShaderCompilationParameters` reads 0, as the plan requires.
+- The terminal's own connection to the editor's agent server failed at 09:14 because the editor
+  was still loading. The work goes through `tools\ue_call.py` instead, which speaks to the same
+  server; the toolset for Python is `editor_toolset.toolsets.python_scripting.PythonScriptingTools`,
+  tool `execute_python`.
 
 ## Journal
 
 | No. | Time | What is done | Outcome |
 |---|---|---|---|
-| J1 | 09:20 on 2026-11-12 | Checks before any work (editor, free commit memory, open level, unsaved packages, the engine setting `r.Material.UseShaderCompilationParameters`), then a read-only inspection for step 7.0: the 58 parts, the two planting holders and their positions in the earlier production level (read through `L_Site_M1`, which shows that level by reference; the earlier production level itself is not opened for change), what `L_Site_M2` and `L_Surroundings` hold now, and which vegetation assets in the project have a licence line in `asset_licences.csv`. Nothing is changed or saved. | PENDING |
+| J1 | 09:20 on 2026-11-12 | Checks before any work (editor, free commit memory, open level, unsaved packages, the engine setting `r.Material.UseShaderCompilationParameters`), then a read-only inspection for step 7.0: the 58 parts, the two planting holders and their positions in the earlier production level (read through `L_Site_M1`, which shows that level by reference; the earlier production level itself is not opened for change), what `L_Site_M2` and `L_Surroundings` hold now, and which vegetation assets in the project have a licence line in `asset_licences.csv`. Nothing is changed or saved. | DONE at 09:25. Read in the earlier production level itself (the editor had it open; it was not changed and not saved), not through `L_Site_M1`. Records: `review\phase7\old_level_readback.json` (all 64 objects) and `review\phase7\old_level_trees.json`. Found: 58 parts (31 opaque, all with Nanite, which is the engine's system for very detailed meshes; 27 glass, without), every part placed at 0, 0, 0 without turn or scale, 645 material slots showing 123 materials, 13 of the slots through an override on the placed object. Shifted into the new frame the parts reach from 98 m north to 106 m south of the lot's south-west corner and from 46 m west to 137 m east. Every opaque part also carries ground (asphalt, concrete paving, turf, wood chips), merged with its buildings. The eleven trees are instanced skinned meshes of the Megaplant library (no licence record), 6 to 18 m tall; the 2,557 ground plants are Poly Haven models (grass, moss, weed, shrub) whose licence line reads NO RECORD because the grass texture's source is recorded three ways. So no vegetation asset in the project has a recorded licence: every plant placed in this phase is a stand-in and is listed for the owner. |
+| J2 | 09:26 | Step 7.0, first part: a new, empty level `/Game/Wieland1529/Surroundings/L_Surroundings_R15` is made and opened (this also unloads the earlier production level, without saving it). One part is placed first (`R15_PART_opaque_xm02_yp00_part01`): same mesh, at the shift x + 15,482.32 cm, y + 5,053.7 cm, with the same materials, the object-level overrides included; it is compared with the record of J1. Then the other 57. Each copy is tagged `W1529.R15Copy`. The level is saved by name. Nothing else is saved. | DONE at 09:26. The trial part matched its record (same mesh, bounds within 0.0004 cm, 9 of 9 slots). Then all 58: 58 copies, 645 of 645 material slots show the same material as in the earlier production level, largest difference of any bounding box 0.0005 cm, shadow settings the same, no problem reported. `L_Surroundings_R15` saved by name (154,590 bytes); no package left marked as changed. The earlier production level's file still carries its date of 10 November 19:00: it was not saved. Tool: `tools\wieland_site.py` (`new_level`, `place_parts`, `verify_parts`, `save_current`). |
+| J3 | 09:29 | Step 7.0, measuring before anything is hidden (read-only): for each of the 31 opaque parts and each Phase 4 object (144 buildings, 37 ground objects) the height of the top surface is read on one shared grid of 0.5 m cells, by rays cast straight down on the mesh itself. From the two height maps: which Phase 4 buildings the earlier buildings cover, footprint and roof height of each against Phase 4 and the 2022 laser scan, and how the earlier parts' own ground lies against the Phase 4 ground. Files go to `review\phase7\heights\`. Nothing is changed or saved. | PENDING |
 
 ## Acceptance lines
 

@@ -6,6 +6,7 @@ Usage:
     python -B ue_call.py tool <toolset name> <tool name> [<json arguments>]
     python -B ue_call.py py <script file> [timeout seconds]
     python -B ue_call.py pyc "<python source>" [timeout seconds]
+    python -B ue_call.py ws "<expression using ws, the module wieland_site>" [timeout seconds]
 
 Speaks the Model Context Protocol over HTTP to http://127.0.0.1:8000/mcp, the
 same way `mcp_readonly_calls_test.py` does. `py` sends a script file to the
@@ -14,6 +15,7 @@ Standard library only.
 """
 
 import json
+import os
 import sys
 import urllib.error
 import urllib.request
@@ -111,6 +113,15 @@ def main(argv):
         if mode == "tool":
             arguments = json.loads(argv[4]) if len(argv) > 4 else {}
             return show(client.call("call_tool", {"toolset_name": argv[2], "tool_name": argv[3], "arguments": arguments}, 300.0))
+        if mode == "ws":
+            # One expression against the Phase 7 editor module, reloaded so that edits to the file count.
+            tools = os.path.dirname(os.path.abspath(__file__)).replace(os.sep, "/")
+            source = ("import sys\nimport importlib\nsys.dont_write_bytecode = True\n"
+                      "TOOLS = %r\nif TOOLS not in sys.path:\n    sys.path.insert(0, TOOLS)\n"
+                      "import wieland_site as ws\nimportlib.reload(ws)\n" % tools) + argv[2] + "\n"
+            timeout = float(argv[3]) if len(argv) > 3 else 300.0
+            arguments = {"script": {"language": "Python", "content": source}}
+            return show(client.call("call_tool", {"toolset_name": PY_TOOLSET, "tool_name": PY_TOOL, "arguments": arguments}, timeout))
         if mode in ("py", "pyc"):
             if mode == "py":
                 with open(argv[2], "r", encoding="utf-8") as handle:

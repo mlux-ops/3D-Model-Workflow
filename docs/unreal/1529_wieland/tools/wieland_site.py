@@ -11,7 +11,10 @@ Nothing here saves the earlier production level, and nothing here edits an asset
 created. Functions that save say so and save named assets only.
 """
 
+import array
+import asyncio
 import json
+import math
 import os
 
 import unreal
@@ -127,3 +130,174 @@ def inspect_level(level_path, out_json):
     for record in records:
         classes[record["class"]] = classes.get(record["class"], 0) + 1
     return {"level": level_path, "objects": len(records), "classes": classes}
+
+
+# ---------------------------------------------------------------------------------------------
+# Step 7.0: placed copies of the earlier production level's 58 parts in a level of their own.
+
+REVIEW = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "review", "phase7").replace(os.sep, "/")
+OLD_READBACK = REVIEW + "/old_level_readback.json"
+
+
+def new_level(path):
+    """Make a new, empty level at the path and open it. Refuses when the asset exists already."""
+    if unreal.EditorAssetLibrary.does_asset_exist(path):
+        return {"error": "exists already: " + path}
+    subsystem = unreal.get_editor_subsystem(unreal.LevelEditorSubsystem)
+    made = bool(subsystem.new_level(path))
+    return {"made": made, "world": world_path()}
+
+
+def _require(path):
+    if world_path() != path:
+        raise RuntimeError("refused: the open level is %s, not %s" % (world_path(), path))
+
+
+def old_parts():
+    with open(OLD_READBACK, encoding="utf-8") as handle:
+        records = json.load(handle)
+    return [r for r in records if r["class"] == "StaticMeshActor" and r["label"].startswith("R15_PART_")]
+
+
+def place_parts(start=0, count=1):
+    """Place copies of parts [start, start + count) of the J1 record in the open level L_Surroundings_R15.
+
+    A copy shows the same mesh at the old place plus SHIFT, and carries the old object's material
+    overrides. A part whose copy exists already is passed over. Nothing is saved here.
+    """
+    _require(R15_LEVEL)
+    existing = {a.get_actor_label() for a in actors()}
+    subsystem = unreal.get_editor_subsystem(unreal.EditorActorSubsystem)
+    made, skipped, problems = [], 0, []
+    for record in old_parts()[start:start + count]:
+        label = record["label"]
+        if label in existing:
+            skipped += 1
+            continue
+        part = record["components"][0]
+        mesh = unreal.load_asset(part["mesh"])
+        if mesh is None:
+            problems.append(label + ": mesh missing")
+            continue
+        location = unreal.Vector(record["location"][0] + SHIFT[0], record["location"][1] + SHIFT[1], record["location"][2] + SHIFT[2])
+        rotation = unreal.Rotator(pitch=record["rotation"][0], yaw=record["rotation"][1], roll=record["rotation"][2])
+        actor = subsystem.spawn_actor_from_object(mesh, location, rotation)
+        if actor is None:
+            problems.append(label + ": no object could be placed")
+            continue
+        actor.set_actor_label(label)
+        actor.set_actor_scale3d(unreal.Vector(*record["scale"]))
+        kind = "Glass" if "_glass_" in label else "Opaque"
+        actor.set_folder_path(unreal.Name("Surroundings R15/" + kind))
+        actor.tags = [unreal.Name(TAG_R15), unreal.Name("W1529.Kind.R15" + kind)]
+        component = actor.static_mesh_component
+        component.set_editor_property("mobility", unreal.ComponentMobility.STATIC)
+        component.set_editor_property("cast_shadow", part["cast_shadow"])
+        for index, slot in enumerate(part["slots"]):
+            if slot["override"]:
+                material = unreal.load_asset(slot["shown"])
+                if material is None:
+                    problems.append("%s: override material of slot %d missing" % (label, index))
+                else:
+                    component.set_material(index, material)
+        made.append(label)
+    return {"made": len(made), "skipped": skipped, "problems": problems, "first": made[:1]}
+
+
+def verify_parts():
+    """Read-only. Compare every copy in the open level with the J1 record: mesh, place, materials shown."""
+    found = {a.get_actor_label(): a for a in actors() if TAG_R15 in [str(t) for t in a.tags]}
+    wrong, slots, worst = [], 0, 0.0
+    parts = old_parts()
+    for record in parts:
+        actor = found.get(record["label"])
+        if actor is None:
+            wrong.append(record["label"] + ": missing")
+            continue
+        part = record["components"][0]
+        component = actor.static_mesh_component
+        if _path(component.static_mesh) != part["mesh"]:
+            wrong.append(record["label"] + ": other mesh")
+        origin, extent = actor.get_actor_bounds(False)
+        want = [record["bounds_origin"][i] + SHIFT[i] for i in range(3)]
+        off = max(abs(origin.x - want[0]), abs(origin.y - want[1]), abs(origin.z - want[2]),
+                  abs(extent.x - record["bounds_extent"][0]), abs(extent.y - record["bounds_extent"][1]),
+                  abs(extent.z - record["bounds_extent"][2]))
+        worst = max(worst, off)
+        if off > 0.01:
+            wrong.append("%s: bounds differ by %.3f cm" % (record["label"], off))
+        if component.get_num_materials() != len(part["slots"]):
+            wrong.append(record["label"] + ": slot count")
+            continue
+        for index, slot in enumerate(part["slots"]):
+            slots += 1
+            if _path(component.get_material(index)) != slot["shown"]:
+                wrong.append("%s: slot %d shows another material" % (record["label"], index))
+        if bool(component.get_editor_property("cast_shadow")) != part["cast_shadow"]:
+            wrong.append(record["label"] + ": shadow setting")
+    return {"parts_in_record": len(parts), "copies": len(found), "slots_compared": slots,
+            "largest_bounds_difference_cm": round(worst, 4), "wrong": wrong[:12], "wrong_count": len(wrong)}
+
+
+def save_current(expected_path):
+    """Save the open level by name; refuses when the open level is not the expected one."""
+    _require(expected_path)
+    if expected_path == OLD_LEVEL:
+        raise RuntimeError("refused: the earlier production level is never saved")
+    saved = bool(unreal.get_editor_subsystem(unreal.LevelEditorSubsystem).save_current_level())
+    return {"saved": saved, "level": expected_path, "still_marked": dirty()}
+
+
+# ---------------------------------------------------------------------------------------------
+# Height maps: the top surface of a mesh on a shared grid, read by rays cast straight down.
+
+CELL = 50.0  # cm; cell (i, j) has its centre at ((i + 0.5) * CELL, (j + 0.5) * CELL) in level coordinates
+
+
+async def height_grid(mesh_path, offset, out_prefix, top=60000.0, chunk=4000):
+    """Read-only. Writes <out_prefix>.json (header) and <out_prefix>.f32 (rows of float32, -99999 = no hit).
+
+    offset: where the mesh's origin stands in the level, [x, y, z] in cm.
+    """
+    mesh_asset = unreal.load_asset(mesh_path)
+    if mesh_asset is None:
+        return {"error": "mesh missing: " + mesh_path}
+    dynamic = unreal.DynamicMesh()
+    options = unreal.GeometryScriptCopyMeshFromAssetOptions()
+    lod = unreal.GeometryScriptMeshReadLOD()
+    _, outcome = unreal.GeometryScript_AssetUtils.copy_mesh_from_static_mesh(mesh_asset, dynamic, options, lod)
+    if outcome != unreal.GeometryScriptOutcomePins.SUCCESS:
+        return {"error": "mesh could not be read: " + mesh_path}
+    triangles = dynamic.get_triangle_count()
+    _, bvh = unreal.GeometryScript_MeshSpatial.build_bvh_for_mesh(dynamic)
+    box = mesh_asset.get_bounding_box()
+    i0 = int(math.floor((box.min.x + offset[0]) / CELL))
+    i1 = int(math.floor((box.max.x + offset[0]) / CELL))
+    j0 = int(math.floor((box.min.y + offset[1]) / CELL))
+    j1 = int(math.floor((box.max.y + offset[1]) / CELL))
+    ni, nj = i1 - i0 + 1, j1 - j0 + 1
+    values = array.array("f", [-99999.0]) * (ni * nj)
+    query = unreal.GeometryScriptSpatialQueryOptions()
+    down = unreal.Vector(0.0, 0.0, -1.0)
+    spatial = unreal.GeometryScript_MeshSpatial
+    hits = 0
+    done = 0
+    for i in range(ni):
+        x = (i0 + i + 0.5) * CELL - offset[0]
+        for j in range(nj):
+            y = (j0 + j + 0.5) * CELL - offset[1]
+            _, hit, _ = spatial.find_nearest_ray_intersection_with_mesh(dynamic, bvh, unreal.Vector(x, y, top), down, query)
+            if hit.hit:
+                values[i * nj + j] = hit.hit_position.z + offset[2]
+                hits += 1
+            done += 1
+            if done % chunk == 0:
+                await asyncio.sleep(0)
+    os.makedirs(os.path.dirname(out_prefix), exist_ok=True)
+    with open(out_prefix + ".f32", "wb") as handle:
+        values.tofile(handle)
+    header = {"mesh": mesh_path, "offset": list(offset), "cell_cm": CELL, "i0": i0, "j0": j0, "ni": ni, "nj": nj,
+              "triangles": triangles, "hits": hits}
+    with open(out_prefix + ".json", "w", encoding="utf-8") as handle:
+        json.dump(header, handle)
+    return header
