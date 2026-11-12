@@ -82,6 +82,20 @@ These are scored against a path-traced render of the same view, which Phase 8 tr
 
 The owner names the half of the building and the exact rooms for D2 to D4. Each design view's exact position, heading and lens are then set from the Revit model in Phase 6 and entered in this table. Until then they are: standing eye height of 1.60 m, a 24 mm lens, and the heading described in the table.
 
+### Provisional positions set in Phase 6 (2026-11-11), pending the owner's choice of half and rooms
+
+The owner has not yet named the half or the rooms, so Phase 6 used the north half and the rooms below. Positions are in the Unreal level's frame, in centimetres (origin at the lot's south-west corner, north is -X, east is -Y, up is +Z). The eye is 1.60 m above the finished floor and the lens is 24 mm on a 36 mm frame (73.7 degrees wide) in every view. Headings are compass bearings (0 = north, 90 = east); pitch is degrees below the horizon. The same numbers are in `tools\wieland_interiors.py` (`DESIGN_VIEWS`).
+
+| Station | Room used | Camera X, Y, Z (cm) | Looks at X, Y, Z (cm) | Heading | Pitch down |
+|---|---|---|---|---|---|
+| D1 | North penthouse roof deck, under the pergola | -1300, -1560, 1684 | -900, -2300, 1640 | 118 | 3.0 |
+| D2 | North penthouse, 4th floor, street-facing kitchen room | -960, -840, 1339 | -1200, -330, 1320 | 295 | 1.9 |
+| D3 | North triplex, 1st floor kitchen, along the counter toward the street window | -1100, -930, 363 | -1340, -560, 320 | 303 | 5.6 |
+| D4 | North triplex, 2nd floor hall bath (tub, toilet, basin, wall light) | -1375, -2020, 688 | -1250, -2210, 630 | 123 | 14.3 |
+| D5 | North triplex, 1st floor covered rear patio, looking out to the rear | -1190, -2262, 363 | -1190, -2800, 330 | 90 | 3.5 |
+
+Two things the owner should know about these rooms. The penthouse's largest street-facing room is its kitchen and island; the living and dining space is behind the stair and faces the rear. In the Revit model, the walls of the D4 bath carry the gypsum-board material and no tile; only the shower fitting carries a porcelain material. D4 can therefore test tile relief only through a tile alternative (see `phase6_results.md`), not through the material Revit exported.
+
 ## Tolerances proposed, and the evidence behind each
 
 A tolerance is only proposed where a named source can support it. "Site visit" means the owner's tape or laser measurement.

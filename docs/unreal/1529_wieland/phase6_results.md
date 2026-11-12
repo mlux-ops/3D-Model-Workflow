@@ -47,7 +47,8 @@ Words used the same way throughout this file:
 
 | No. | Time | What is done | Outcome |
 |---|---|---|---|
-| J1 | 22:13 | Step 6.1: count what the Revit export holds per unit and room, set provisional D1 to D5 cameras, take grey renders, list room by room what the geometry lacks at camera distance | PENDING |
+| J1 | 22:13 to 22:23 | Step 6.1: count what the Revit export holds per unit and room, set provisional D1 to D5 cameras, take grey renders, list room by room what the geometry lacks at camera distance | DONE. 29 grey pictures (D1 to D5 and 24 north rooms) under a temporary 150-candela work lamp, because rooms have no lighting yet. Gap list with 9 gaps in my own working order in `review\phase6\gap_list.md`; the owner has not prioritized. Provisional D1 to D5 positions entered in `REFERENCE_VIEWS.md` (north half). Found: the export is already partly furnished; 0 baseboards; 5 switches in the whole model; D4 bath walls are gypsum board, not tile. Nothing saved in the Unreal project. |
+| J2 | 22:23 | Step 6.2, first room only: north triplex kitchen (D3). Count sharp edges within 2 m of the D3 camera, make rounded copies of those meshes as new assets under `/Game/Wieland1529/Interiors/`, generate baseboard and switch plate, record swaps in `mesh_swaps.csv`, count again, check the picture before any batch | PENDING |
 
 ## Acceptance lines
 
