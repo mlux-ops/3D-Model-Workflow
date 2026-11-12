@@ -318,3 +318,299 @@ async def height_jobs(jobs_path, start=0, count=1000):
             out["cells_hit"] += header["hits"]
         await asyncio.sleep(0)
     return out
+
+
+# ---------------------------------------------------------------------------------------------
+# Step 7.0: the earlier detailed buildings as the default view of L_Site_M2, switchable.
+
+VARIANT_FOLDER = "/Game/Wieland1529/Surroundings"
+VARIANT_ASSET = "LVS_W1529_Surroundings"
+VARIANT_LIST = "Surroundings"
+OPTION_R15 = "Earlier detailed buildings"
+OPTION_PHASE4 = "Phase 4 survey massing"
+VISIBLE_PROPERTY = "Static Mesh Component / Visible"
+HIDDEN_LIST = REVIEW + "/phase4_hidden_buildings.json"
+
+
+def add_sublevel(path):
+    """With L_Site_M2 open: add a level to it as always loaded. Does nothing when it is there already."""
+    _require(SITE_LEVEL)
+    if path in levels():
+        return {"added": False, "levels": levels()}
+    streaming = unreal.EditorLevelUtils.add_level_to_world(world(), path, unreal.LevelStreamingAlwaysLoaded)
+    return {"added": streaming is not None, "levels": levels()}
+
+
+def hidden_names():
+    with open(HIDDEN_LIST, "r", encoding="utf-8") as handle:
+        return json.load(handle)["hidden_with_earlier_detailed_buildings"]
+
+
+def _by_label(labels):
+    wanted = set(labels)
+    return {a.get_actor_label(): a for a in actors() if a.get_actor_label() in wanted}
+
+
+def r15_copies():
+    return [a for a in actors() if any(str(t) == TAG_R15 for t in a.tags)]
+
+
+def set_visible(labels, visible):
+    """Sets the mesh component of the named objects visible or not. Returns how many were changed."""
+    found = _by_label(labels)
+    changed = 0
+    for label in labels:
+        actor = found.get(label)
+        if actor is None:
+            continue
+        component = actor.get_component_by_class(unreal.StaticMeshComponent)
+        if bool(component.get_editor_property("visible")) != bool(visible):
+            component.modify()
+            component.set_visibility(bool(visible), False)
+            changed += 1
+    return {"asked": len(labels), "found": len(found), "changed": changed}
+
+
+def visible_state():
+    """Read-only: how many of the earlier copies and of the Phase 4 buildings on the hide list are visible."""
+    names = hidden_names()
+    found = _by_label(names)
+    copies = r15_copies()
+    seen = lambda a: bool(a.get_component_by_class(unreal.StaticMeshComponent).get_editor_property("visible"))
+    others = [a for a in actors() if a.get_actor_label().startswith("SB_") and a.get_actor_label() not in found]
+    return {"earlier_copies": len(copies), "earlier_copies_visible": sum(1 for a in copies if seen(a)),
+            "phase4_on_hide_list": len(found), "phase4_on_hide_list_visible": sum(1 for a in found.values() if seen(a)),
+            "phase4_other_buildings": len(others), "phase4_other_buildings_visible": sum(1 for a in others if seen(a))}
+
+
+def variant_asset():
+    return unreal.load_asset(VARIANT_FOLDER + "/" + VARIANT_ASSET)
+
+
+def build_variants():
+    """Makes (or remakes) the list "Surroundings" with its two options and saves the asset by name.
+
+    The values are written into the options directly: the earlier copies visible and the Phase 4 buildings
+    of the hide list not visible, and the other way round.
+    """
+    _require(SITE_LEVEL)
+    library = unreal.VariantManagerLibrary
+    sets_asset = variant_asset()
+    if sets_asset is None:
+        sets_asset = library.create_level_variant_sets_asset(VARIANT_ASSET, VARIANT_FOLDER)
+    for index in reversed(range(sets_asset.get_num_variant_sets())):
+        old = sets_asset.get_variant_set(index)
+        if str(old.get_display_text()) == VARIANT_LIST:
+            library.remove_variant_set(sets_asset, old)
+    variant_set = unreal.VariantSet()
+    variant_set.set_display_text(VARIANT_LIST)
+    library.add_variant_set(sets_asset, variant_set)
+    copies = r15_copies()
+    phase4 = list(_by_label(hidden_names()).values())
+    result = {"earlier_copies": len(copies), "phase4_buildings": len(phase4), "values": 0, "missed": 0}
+    for option in (OPTION_R15, OPTION_PHASE4):
+        variant = unreal.Variant()
+        variant.set_display_text(option)
+        library.add_variant(variant_set, variant)
+        for group, shown in ((copies, option == OPTION_R15), (phase4, option == OPTION_PHASE4)):
+            for actor in group:
+                library.add_actor_binding(variant, actor)
+                value = library.capture_property(variant, actor, VISIBLE_PROPERTY)
+                if value is None:
+                    result["missed"] += 1
+                    continue
+                library.set_value_bool(value, shown)
+                result["values"] += 1
+    result["saved"] = bool(unreal.EditorAssetLibrary.save_loaded_asset(sets_asset, False))
+    return result
+
+
+def switch(option):
+    """One action: put one option of the list "Surroundings" on."""
+    sets_asset = variant_asset()
+    if sets_asset is None:
+        return {"error": "no variant asset"}
+    for index in range(sets_asset.get_num_variant_sets()):
+        variant_set = sets_asset.get_variant_set(index)
+        if str(variant_set.get_display_text()) != VARIANT_LIST:
+            continue
+        for number in range(variant_set.get_num_variants()):
+            variant = variant_set.get_variant(number)
+            if str(variant.get_display_text()) == option:
+                variant.switch_on()
+                return {"option": option, "state": visible_state()}
+    return {"error": "no such option: " + option}
+
+
+def save_levels(paths):
+    """Save the named loaded levels (the top level or its sublevels) by name. Refuses the earlier level."""
+    out = {}
+    for path in paths:
+        if path == OLD_LEVEL or path not in levels():
+            out[path] = "refused"
+            continue
+        package = unreal.find_package(path)
+        out[path] = bool(unreal.EditorLoadingAndSavingUtils.save_packages([package], False)) if package else "no package"
+    out["left_marked"] = dirty()
+    return out
+
+
+# ---------------------------------------------------------------------------------------------
+# Station pictures from the editor's viewport (view mode Lit, a named quality, settings put back).
+
+STATION_CAMERAS = REVIEW + "/../phase4/stations/station_cameras.json"
+SHOT_TAG = "W1529TempStation"
+QUALITY_SETTINGS = ("sg.ViewDistanceQuality", "sg.AntiAliasingQuality", "sg.ShadowQuality", "sg.GlobalIlluminationQuality",
+                    "sg.ReflectionQuality", "sg.PostProcessQuality", "sg.TextureQuality", "sg.EffectsQuality",
+                    "sg.FoliageQuality", "sg.ShadingQuality", "sg.LandscapeQuality")
+CAPTURE_SETTINGS = {"t.MaxFPS": 1000}
+BEFORE_FILE = REVIEW + "/scratch/settings_before.json"   # kept in a file: the module is reloaded between calls
+
+
+def _before_read():
+    if os.path.exists(BEFORE_FILE):
+        with open(BEFORE_FILE, "r", encoding="utf-8") as handle:
+            return json.load(handle)
+    return {}
+
+
+def _get(name):
+    return unreal.SystemLibrary.get_console_variable_float_value(name)
+
+
+def _set(name, value):
+    text = str(int(value)) if float(value) == int(value) else str(value)
+    unreal.SystemLibrary.execute_console_command(world(), "%s %s" % (name, text))
+
+
+def settings_now():
+    names = list(QUALITY_SETTINGS) + list(CAPTURE_SETTINGS) + ["r.RayTracing.Nanite.Mode", "r.Material.UseShaderCompilationParameters",
+                                                             "r.Streaming.PoolSize", "r.ScreenPercentage"]
+    return {name: _get(name) for name in names}
+
+
+def shots_begin(quality=3):
+    """Temporary cameras at the stations, the named quality (3 = Epic), the capture settings. Nothing is saved."""
+    before = _before_read()
+    if not before:
+        before = {name: _get(name) for name in list(QUALITY_SETTINGS) + list(CAPTURE_SETTINGS)}
+        os.makedirs(os.path.dirname(BEFORE_FILE), exist_ok=True)
+        with open(BEFORE_FILE, "w", encoding="utf-8") as handle:
+            json.dump(before, handle)
+    for name in QUALITY_SETTINGS:
+        _set(name, quality)
+    for name, value in CAPTURE_SETTINGS.items():
+        _set(name, value)
+    with open(STATION_CAMERAS, "r", encoding="utf-8") as handle:
+        cameras = json.load(handle)["cameras"]
+    subsystem = unreal.get_editor_subsystem(unreal.EditorActorSubsystem)
+    editor = unreal.get_editor_subsystem(unreal.LevelEditorSubsystem)
+    editor.set_current_level_by_name(world_path().split("/")[-1])
+    have = {str(t) for a in actors() for t in a.tags if SHOT_TAG in [str(x) for x in a.tags]}
+    made = 0
+    for name, record in cameras.items():
+        if name in have:
+            continue
+        loc, rot = record["loc"], record["rot"]
+        camera = subsystem.spawn_actor_from_class(unreal.CameraActor, unreal.Vector(*loc), unreal.Rotator(pitch=rot[0], yaw=rot[1], roll=rot[2]))
+        camera.set_actor_label("TEMP_" + name)
+        camera.tags = [SHOT_TAG, name]
+        component = camera.camera_component
+        component.set_editor_property("field_of_view", record["fov_h"])
+        component.set_editor_property("constrain_aspect_ratio", True)
+        component.set_editor_property("aspect_ratio", 16.0 / 9.0)
+        made += 1
+    return {"cameras_made": made, "before": before, "now": settings_now()}
+
+
+def shot(name, out_path, width=1920, height=1080):
+    """Ask for one picture; the file appears a few frames later."""
+    for actor in actors():
+        tags = [str(t) for t in actor.tags]
+        if SHOT_TAG in tags and name in tags:
+            os.makedirs(os.path.dirname(out_path), exist_ok=True)
+            unreal.AutomationLibrary.take_high_res_screenshot(width, height, out_path, actor)
+            return True
+    return False
+
+
+async def shots(names, folder, suffix, width=1920, height=1080, wait_frames=600):
+    """Take the named station pictures one after the other, waiting for each file."""
+    out = {}
+    for name in names:
+        path = "%s/%s_%s.png" % (folder, name, suffix)
+        if os.path.exists(path):
+            os.remove(path)
+        if not shot(name, path, width, height):
+            out[name] = "no camera"
+            continue
+        frames = 0
+        while not os.path.exists(path) and frames < wait_frames:
+            await asyncio.sleep(0.05)
+            frames += 1
+        out[name] = os.path.exists(path)
+    return out
+
+
+def shots_end():
+    """Remove the temporary cameras and put the settings back. Returns what the settings read afterwards."""
+    subsystem = unreal.get_editor_subsystem(unreal.EditorActorSubsystem)
+    removed = 0
+    for actor in list(actors()):
+        if SHOT_TAG in [str(t) for t in actor.tags]:
+            subsystem.destroy_actor(actor)
+            removed += 1
+    before = _before_read()
+    for name, value in before.items():
+        _set(name, value)
+    if os.path.exists(BEFORE_FILE):
+        os.remove(BEFORE_FILE)
+    return {"cameras_removed": removed, "put_back": before, "now": settings_now(), "dirty": dirty()}
+
+
+# ---------------------------------------------------------------------------------------------
+# Raw mesh data of a part, for working out off line which triangles are ground and how far to move.
+
+def _dynamic(mesh_path):
+    mesh_asset = unreal.load_asset(mesh_path)
+    if mesh_asset is None:
+        raise RuntimeError("mesh missing: " + mesh_path)
+    dynamic = unreal.DynamicMesh()
+    _, outcome = unreal.GeometryScript_AssetUtils.copy_mesh_from_static_mesh(
+        mesh_asset, dynamic, unreal.GeometryScriptCopyMeshFromAssetOptions(), unreal.GeometryScriptMeshReadLOD())
+    if outcome != unreal.GeometryScriptOutcomePins.SUCCESS:
+        raise RuntimeError("mesh could not be read: " + mesh_path)
+    return mesh_asset, dynamic
+
+
+def dump_mesh(mesh_path, out_path):
+    """Read-only. Writes vertex positions, triangle corners and triangle material numbers to a .npz file."""
+    import numpy
+    mesh_asset, dynamic = _dynamic(mesh_path)
+    lists = unreal.GeometryScript_List
+    # Each query returns its list and a flag for gaps in the numbering as its last two values.
+    positions, vertex_gaps = unreal.GeometryScript_MeshQueries.get_all_vertex_positions(dynamic, False)[-2:]
+    corners, triangle_gaps = unreal.GeometryScript_MeshQueries.get_all_triangle_indices(dynamic, False)[-2:]
+    material_ids = unreal.GeometryScript_Materials.get_all_triangle_material_i_ds(dynamic)[-2]
+    p = numpy.array([(v.x, v.y, v.z) for v in lists.convert_vector_list_to_array(positions)], dtype=numpy.float64)
+    t = numpy.array([(c.x, c.y, c.z) for c in lists.convert_triangle_list_to_array(corners)], dtype=numpy.int32)
+    m = numpy.array(list(lists.convert_index_list_to_array(material_ids)), dtype=numpy.int32)
+    slots = [(str(s.material_slot_name), _path(s.material_interface)) for s in mesh_asset.static_materials]
+    os.makedirs(os.path.dirname(out_path), exist_ok=True)
+    numpy.savez_compressed(out_path, positions=p, triangles=t, material_ids=m,
+                           slot_names=numpy.array([s[0] for s in slots]), slot_materials=numpy.array([s[1] for s in slots]))
+    return {"vertices": int(p.shape[0]), "triangles": int(t.shape[0]), "material_ids": int(m.shape[0]), "slots": len(slots),
+            "vertex_gaps": bool(vertex_gaps), "triangle_gaps": bool(triangle_gaps)}
+
+
+async def dump_parts(start=0, count=100):
+    out = {"done": 0, "triangles": 0, "gaps": []}
+    for record in old_parts()[start:start + count]:
+        mesh_path = record["components"][0]["mesh"]
+        result = dump_mesh(mesh_path, REVIEW + "/fit/raw/" + record["label"] + ".npz")
+        out["done"] += 1
+        out["triangles"] += result["triangles"]
+        if result["vertex_gaps"] or result["triangle_gaps"] or result["triangles"] != result["material_ids"]:
+            out["gaps"].append(record["label"])
+        await asyncio.sleep(0)
+    return out
