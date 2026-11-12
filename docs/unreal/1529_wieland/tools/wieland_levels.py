@@ -420,6 +420,23 @@ def save_master():
     return bool(editor.save_current_level())
 
 
+def save_unit_level(group):
+    """Save one of the five interior levels by name while it is loaded under L_Site_M4.
+    Refuses while temporary cameras or lamps of the view tools are in it."""
+    world = _world()
+    for level in unreal.EditorLevelUtils.get_levels(world):
+        package = level.get_outermost()
+        if package.get_name() != level_path(group):
+            continue
+        short = level_path(group).split("/")[-1]
+        temporary = [a.get_actor_label() for a in _actors()
+                     if _level_name(a) == short and a.get_actor_label().startswith("TEMP_")]
+        if temporary:
+            raise RuntimeError("refused: temporary objects in the level: %s" % temporary[:5])
+        return bool(unreal.EditorLoadingAndSavingUtils.save_packages([package], False))
+    raise RuntimeError("the level of %s is not loaded" % group)
+
+
 def census():
     """Read-only: objects per level and per unit mark in what is loaded now."""
     counts = {}
