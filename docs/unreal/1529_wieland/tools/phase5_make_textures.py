@@ -18,6 +18,7 @@ periodic functions), so its opposite edges match.
     T_W1529_Tile24x12_C.png  colour of one 24 by 12 inch tile with its joint
     T_W1529_Tile24x12_N.png  relief of the same tile
     T_W1529_Tile24x12_R.png  roughness of the same tile
+    T_W1529_CMU_C/N/R.png    colour, relief and roughness of concrete block
 
 A table of what each image is, with its physical size, is written beside
 them as generated_textures.csv.
@@ -123,6 +124,32 @@ def main(folder):
                          ("R", "Roughness: face 0.25, joint 0.90.")):
         note("T_W1529_Tile24x12_%s.png" % suffix, "1024 x 512", "%.4f by %.4f m (24 by 12 in, from the material's name)" % (
             width_m, height_m), "One tile with a 3 mm joint (assumed), stacked bond (assumed). " + what)
+
+    # Concrete block: two courses of 16 by 8 inch blocks (nominal, joint included)
+    # in running bond, so that the field is 16 by 16 inches and wraps.
+    block_w, block_h, joint, recess = 16.0 * INCH, 8.0 * INCH, 0.010, 0.003
+    px = 512
+    pixel = block_w / px
+    x = ((np.arange(px) + 0.5) * pixel)[None, :]
+    y = ((np.arange(px) + 0.5) * pixel)[:, None]
+    course = np.floor(y / block_h)
+    in_course = y - course * block_h
+    shifted = np.mod(x + course * block_w / 2.0, block_w)
+    edge = np.minimum(np.minimum(shifted, block_w - shifted), np.minimum(in_course, block_h - in_course))
+    face = np.clip((edge - joint / 2.0) / 0.003, 0.0, 1.0)
+    grain = (cloud(px, 120.0, 51) - 0.5) * 0.0006 * face
+    save(folder, "T_W1529_CMU_N.png", normal_from_height(face * recess + grain, pixel, pixel))
+    in_joint = edge < joint / 2.0
+    speckle = 225.0 + 30.0 * cloud(px, 150.0, 52)
+    colour = np.where(in_joint, 190.0, speckle)
+    save(folder, "T_W1529_CMU_C.png", np.round(colour).astype(np.uint8)[..., None].repeat(3, axis=2))
+    rough = np.where(in_joint, 235, 225).astype(np.uint8)
+    save(folder, "T_W1529_CMU_R.png", rough[..., None].repeat(3, axis=2))
+    for suffix, what in (("C", "Colour: near-white speckled block face, slightly darker joint; the instance tints it."),
+                         ("N", "Relief: the joint lies 3 mm below the face; fine grain on the face."),
+                         ("R", "Roughness: face 0.88, joint 0.92.")):
+        note("T_W1529_CMU_%s.png" % suffix, "512 x 512", "%.4f by %.4f m (two courses of 16 by 8 in blocks)" % (
+            block_w, block_w), "Concrete block, 10 mm joint, running bond (all assumed: the nominal block). " + what)
 
     with open(os.path.join(folder, "generated_textures.csv"), "w", encoding="utf-8", newline="") as handle:
         writer = csv.DictWriter(handle, fieldnames=list(rows[0].keys()))
