@@ -293,22 +293,34 @@ def card_place(name, location, facing_bearing=None, facing_height=90.0):
     c = capture.capture_component2d
     c.set_editor_property("texture_target", target)
     c.set_editor_property("fov_angle", 20.0)
-    c.set_editor_property("capture_source", unreal.SceneCaptureSource.SCS_SCENE_COLOR_HDR)
+    # In this scene a capture clamps its output at 1.0, so the scene colour itself (thousands of units in
+    # daylight) cannot be read. The exposed colour before tone mapping can: it is the scene colour divided
+    # by 2 to the power of the exposure value (measured in J3: exact to four digits at three exposures).
+    c.set_editor_property("capture_source", unreal.SceneCaptureSource.SCS_FINAL_COLOR_HDR)
+    c.set_editor_property("show_flag_settings", [unreal.EngineShowFlagsSetting(show_flag_name="Tonemapper", enabled=False)])
     c.set_editor_property("capture_every_frame", True)
     c.set_editor_property("always_persist_rendering_state", True)
-    normal = transform.transform_vector(unreal.Vector(0.0, 0.0, 1.0))
+    normal = card.get_actor_up_vector()
     return {"card": card.get_actor_label(), "normal": [normal.x, normal.y, normal.z]}
 
 
-def card_read(name):
-    """The card's brightness at the centre pixel, and the lux that brightness means."""
+def card_read(name, exposure_label="LGT_Exposure_Outdoors", ev100=None):
+    """The card's brightness at the centre pixel, and the lux that brightness means.
+
+    The capture gives the exposed colour; it is turned back into scene units with the exposure value in
+    force at the card (by default that of the outdoor volume; give ev100 when the card lies in another)."""
+    if ev100 is None:
+        ev100 = read_exposure(exposure_label)["ev100"]
     for actor in actors():
         tags = [str(t) for t in actor.tags]
         if TAG_TEMP in tags and name in tags and isinstance(actor, unreal.SceneCapture2D):
             target = actor.capture_component2d.texture_target
             pixel = unreal.RenderingLibrary.read_render_target_raw_pixel(world(), target, 64, 64)
-            luminance = 0.2126 * pixel.r + 0.7152 * pixel.g + 0.0722 * pixel.b
-            return {"r": pixel.r, "g": pixel.g, "b": pixel.b, "luminance": luminance,
+            exposed = 0.2126 * pixel.r + 0.7152 * pixel.g + 0.0722 * pixel.b
+            scale = 2.0 ** ev100
+            luminance = exposed * scale
+            return {"r": pixel.r * scale, "g": pixel.g * scale, "b": pixel.b * scale, "exposed": exposed, "ev100": ev100,
+                    "clamped": max(pixel.r, pixel.g, pixel.b) >= 0.999, "luminance": luminance,
                     "lux": luminance * 1000.0 / CARD_PER_1000_LUX}
     return {"error": "no capture named " + name}
 
@@ -355,3 +367,48 @@ def write_json(name, data):
     with open(path, "w", encoding="utf-8") as handle:
         json.dump(data, handle, indent=1)
     return path
+
+
+# ---------------------------------------------------------------------------------------------
+# Reading the brightness of a real surface (no card): a capture camera aimed at a point.
+
+def probe_place(name, eye, target, fov=10.0):
+    """A capture camera at eye, aimed at target; it reads the exposed colour before tone mapping."""
+    subsystem = unreal.get_editor_subsystem(unreal.EditorActorSubsystem)
+    _current(MASTER_LEVEL)
+    direction = unreal.Vector(*target) - unreal.Vector(*eye)
+    capture = subsystem.spawn_actor_from_class(unreal.SceneCapture2D, unreal.Vector(*eye), direction.rotator())
+    capture.set_actor_label("TEMP_probe_" + name)
+    capture.tags = [TAG_TEMP, name]
+    c = capture.capture_component2d
+    c.set_editor_property("texture_target", unreal.RenderingLibrary.create_render_target2d(
+        world(), 128, 128, unreal.TextureRenderTargetFormat.RTF_RGBA32F))
+    c.set_editor_property("fov_angle", fov)
+    c.set_editor_property("capture_source", unreal.SceneCaptureSource.SCS_FINAL_COLOR_HDR)
+    c.set_editor_property("show_flag_settings", [unreal.EngineShowFlagsSetting(show_flag_name="Tonemapper", enabled=False)])
+    c.set_editor_property("capture_every_frame", True)
+    c.set_editor_property("always_persist_rendering_state", True)
+    return capture.get_actor_label()
+
+
+def probe_read(name, ev100, grid=8):
+    """Mean exposed brightness over a grid of pixels, in scene units, and in stops against middle grey (0.18)."""
+    for actor in actors():
+        tags = [str(t) for t in actor.tags]
+        if TAG_TEMP in tags and name in tags and isinstance(actor, unreal.SceneCapture2D):
+            target = actor.capture_component2d.texture_target
+            total = 0.0
+            top = 0.0
+            count = 0
+            for i in range(grid):
+                for j in range(grid):
+                    x = int((i + 0.5) * 128 / grid)
+                    y = int((j + 0.5) * 128 / grid)
+                    pixel = unreal.RenderingLibrary.read_render_target_raw_pixel(world(), target, x, y)
+                    total += 0.2126 * pixel.r + 0.7152 * pixel.g + 0.0722 * pixel.b
+                    top = max(top, pixel.r, pixel.g, pixel.b)
+                    count += 1
+            exposed = total / count
+            return {"exposed": exposed, "luminance": exposed * 2.0 ** ev100, "clamped": top >= 0.999,
+                    "stops_against_middle_grey": math.log2(exposed / 0.18) if exposed > 0 else None}
+    return {"error": "no probe named " + name}
