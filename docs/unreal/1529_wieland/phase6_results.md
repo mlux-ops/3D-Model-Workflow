@@ -1,6 +1,6 @@
 # Phase 6 results: interiors
 
-Status: DONE at 16:20 on 2026-11-12. J1 to J15 are finished and committed (J12 was stopped and is replaced by J14); every acceptance line below carries a number or a workaround with its reason. Nothing was pushed. Phase 8 (lighting) starts in its own session.
+Status: DONE at 16:15 on 2026-11-12. J1 to J15 are finished and committed (J12 was stopped and is replaced by J14); every acceptance line below carries a number or a workaround with its reason. Nothing was pushed. Phase 8 (lighting) starts in its own session.
 
 Earlier status: RESUMED at 15:46 on 2026-11-12 to finish the phase after Phase 7 closed (journal lines J13 onward): the check against the Phase 7 changes, step 6.9 (J12 redone in full as J14), step 6.10 (profile M4) and the final report.
 
@@ -83,7 +83,7 @@ The seven lines of the plan for Phase 6, each with what was measured.
 | 6 | Loading: with the viewer in any one unit the other three are unloaded; no window seen from S1 or S9 shows an empty room | Ten streaming boxes; all 24 room cameras of the north half and their 24 mirror points load exactly their own unit; S1, S9 and the roof deck load all four; read back again on 12 November. 12 of 12 front rooms hold at least one object, every room with a street window at least two (81 stand-ins). Not run in play mode: free memory was under the 30 GB floor on 11 November | Met by reading the boxes back; the play-mode run is still to do |
 | 7 | Interior paths: recorded now; brought inside the frame budget in Phase 9 | Profile M4 (`profiles\2026-11-12_M4\`): triplex path 8.54 ms a frame (worst 22.28 ms, graphics card 6.14 ms), penthouse path indoors 8.44 ms (worst 20.77 ms, 5.95 ms) and roof deck 8.69 ms (worst 18.69 ms, 6.47 ms), exterior path 9.18 ms (worst 17.61 ms, 7.33 ms); no frame over 33.3 ms; video memory at most 5,991 MB; viewport 2,038 by 782, quality Epic, editor in the foreground. The interior paths are provisional | Recorded |
 
-## What was saved or changed in the Unreal project by the finishing session (12 November, 15:46 to 16:20)
+## What was saved or changed in the Unreal project by the finishing session (12 November, 15:46 to 16:15)
 
 - `/Game/Wieland1529/L_Site_M4`: now also loads the four Phase 7 levels (`L_Surroundings_R15`, `L_SiteWorks`, `L_FarCity`, `L_Vegetation`), always loaded. Saved by name.
 - `/Game/Wieland1529/Interiors/Levels/L_W1529_Shell`: the two Revit site objects (site slab and neighbour massing) are not visible, by an override on the placed copy. Saved by name.
