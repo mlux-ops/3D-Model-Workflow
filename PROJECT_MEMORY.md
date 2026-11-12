@@ -1087,3 +1087,10 @@ Entries from the session that carried out Phase 5, 20:43 to 22:05. Results are i
 - 2026-11-11, found in the audit and not mended: the stair stringer meshes carry no texture coordinates; Substrate is switched on in the project; `/Game/Wieland1529/Scratch/M_Probe5` has been unsaved since Phase 1. Status: listed for the owner.
 - 2026-11-11, steps 5.3 and 5.9 and the colour line could not be done as written: there are no photographs. Nothing was taken from Google Street View or map imagery. Status: open until the site visit.
 - 2026-11-11, the advisor checkpoints could again not be made: this session has no advisor tool. The closing diff was checked by the session itself against the scope. Status: noted for the owner.
+
+### Phase 6 paused by the owner -- 2026-11-11 22:48 (supervising session)
+
+- Not an error: the owner asked to stop the unattended Phase 6 run immediately. The headless agent (session `85926560-462e-4bf5-9139-9a4483cae6e0`) was killed with `taskkill /T /F` mid-step J2 (step 6.2, north triplex kitchen). The 15-minute watcher was stopped first, so nothing will relaunch or restart the editor.
+- State: J1 (step 6.1) done and committed in `6b98c89c`. J2 left no saved asset (no `Content\Wieland1529\Interiors\` folder on disk); unsaved meshes may sit in the editor's memory and should be discarded, not saved. The agent's partial `tools\wieland_refine.py` is committed as found.
+- Resume: redo J2 from its start; see the status lines at the top of `docs\unreal\1529_wieland\phase6_results.md`. Re-arm `watcher.ps1` only when an unattended run is wanted again.
+- Lesson: killing a worker mid-step costs at most one step because the journal commits a PENDING line before each step; prefer stopping at a journal commit when the owner allows the wait.
