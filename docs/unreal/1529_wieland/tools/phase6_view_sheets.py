@@ -25,9 +25,11 @@ VIEWS = (
 )
 NOTES = [
     "Camera positions are provisional (REFERENCE_VIEWS.md), north half, 24 mm lens, eye 160 cm over the finished floor.",
-    "Light: a temporary 150-candela work lamp above the camera; the rooms have no lighting of their own before Phase 7.",
-    "Grey: view mode Lighting Only. Material: view mode Lit, named quality Epic, Revit materials as exported.",
-    "Furniture: grey blocks are stand-ins for the proposed furniture, which the owner has not approved.",
+    "Light: review daylight and a temporary 150-candela work lamp above the camera; the rooms have no lighting of their own before Phase 8.",
+    "Grey: view mode Lighting Only. Material: view mode Lit. Both: editor viewport, named quality Epic, 1,920 by 1,080, automatic exposure.",
+    "Site outside: as it stands by default after Phase 7 (earlier detailed neighbour buildings, new ground, trees leaf-on, distant-city stand-in).",
+    "This picture waits on the owner for: keep or rebuild per material (Revit materials shown); the names of the finish alternatives;",
+    "furniture (grey blocks are stand-ins for the proposed pieces); the site visit and photographs (trees, far city and neighbours are stand-ins).",
 ]
 
 
@@ -75,16 +77,16 @@ def main(argv):
         else:
             draw.rectangle((x, top, x + PANEL[0], top + PANEL[1]), fill=(235, 235, 235), outline=(160, 0, 0), width=3)
             draw.text((x + 30, top + 30), "PLACEHOLDER: no Revit view.", fill=(160, 0, 0), font=big)
-            draw.text((x + 30, top + 80), "No Revit view from this camera has been exported, so there is", fill=(60, 60, 60),
+            draw.text((x + 30, top + 80), "No Revit view from this camera exists: Revit is not opened or changed", fill=(60, 60, 60),
                       font=small)
-            draw.text((x + 30, top + 108), "nothing to compare these renders with (step 6.9 as written).",
+            draw.text((x + 30, top + 108), "by these sessions. The owner can export the five views to compare.",
                       fill=(60, 60, 60), font=small)
         draw.text((x, top + PANEL[1] + 6), "Revit view of the same camera", fill=(0, 0, 0), font=small)
         y = top + PANEL[1] + 40
         for note in NOTES:
             draw.text((MARGIN, y), note, fill=(0, 0, 0), font=small)
             y += 28
-        sheet.save(os.path.join(output_folder, "%s_sheet.png" % view))
+        sheet.save(os.path.join(output_folder, "%s_sheet.jpg" % view), quality=88)
         made += 1
     print("sheets written: %d" % made)
     return 0
