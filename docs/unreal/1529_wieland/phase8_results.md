@@ -1,6 +1,8 @@
 # Phase 8 results: lighting and atmosphere
 
-Status: STARTED at 16:38 on 2026-11-12. Unattended run; the owner is away. Nothing is pushed.
+Status: PAUSED by the owner at 17:09 on 2026-11-12, just after J7 was committed (`0a834488`), before usage ran out. J1 to J4, J6 and J7 are done. J5 (step 8.4 part 1, fixture table and data-sheet search) was still marked in progress: check its outputs before continuing it. The agent was stopped with `taskkill`, and any unsaved editor changes since J7 are unknown. The supervising watcher is stopped. To resume, re-arm it (`current_phase.txt` = 8) or paste `KICKOFF_PHASE8.md` into the panel.
+
+Earlier status: STARTED at 16:38 on 2026-11-12. Unattended run; the owner is away. Nothing is pushed.
 
 This file is the journal of the phase. A line marked PENDING is written and committed before
 its step starts; the line is replaced by the outcome when the step ends.

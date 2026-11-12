@@ -1168,3 +1168,9 @@ Journal: `docs\unreal\1529_wieland\phase6_results.md`, lines J13 to J15. Every e
 - Free commit memory was 20.5 GB at the start (under the 30 GB rule, nothing to unload) and rose above 30 GB once `L_Site_M2` was closed; it stayed above 30 GB during profile M4. Status: noted.
 - Acceptance lines that cannot be met as written: no Revit views of D1 to D5 exist (line 1); sharp edges are not zero (line 3); the halves are not mirror images (line 4). Status: reported with numbers; listed for the owner.
 - The advisor checkpoints of the global rules could not be made: no advisor tool in this session. Status: noted for the owner.
+
+### Phase 8 paused by the owner -- 2026-11-12 17:09 (supervising session)
+
+- Not an error: the owner asked to stop before usage ran out. The watcher (pid 61952) was stopped first, then the headless Phase 8 agent (pid 84332) and its children, with `taskkill /T /F`, two minutes after `0a834488` (J7 done).
+- State: J1 to J4, J6 and J7 are done. J5 (fixture table, data-sheet search) was marked in progress, so inspect its outputs before redoing it. Phases 6 and 7 are DONE. The queue after Phase 8 is `9 10 11`.
+- Resume: re-arm `watcher.ps1` (it relaunches Phase 8 from the journal), or paste `KICKOFF_PHASE8.md` into the editor panel with the monitor off.
