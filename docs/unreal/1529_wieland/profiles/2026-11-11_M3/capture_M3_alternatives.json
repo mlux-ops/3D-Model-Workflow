@@ -1,0 +1,206 @@
+{
+ "info": {
+  "step": "Phase 5, L12: profile M3, second recording: switchable alternatives on",
+  "level": "/Game/Wieland1529/L_Site_M2",
+  "quality": "Epic, pool 1000, SP 100, t.MaxFPS 1000, Game View on (left set by the first recording)",
+  "view_mode": "Lit",
+  "settings_at_start": {
+   "sg.ShadowQuality": "3",
+   "sg.TextureQuality": "3",
+   "r.Streaming.PoolSize": "1000",
+   "r.Editor.Viewport.ScreenPercentage": "100",
+   "t.MaxFPS": "1000",
+   "Slate.bAllowThrottling": "0",
+   "r.VSync": "0"
+  },
+  "hidden_count": 2,
+  "foreground_attempt": {
+   "was": 1187040,
+   "front": true
+  },
+  "alternatives_on": {
+   "slots_switched": 3106,
+   "slots_left_because_they_had_their_own_override": 0,
+   "candidates": 115
+  }
+ },
+ "started_unix": 1794455233.9526796,
+ "finished_unix": 1794455394.0819547,
+ "warmup_seconds": 8.0,
+ "csv_folder": "D:/Unreal_Engine_Projects/Wieland1527 5.9/Saved/Profiling\\CSV",
+ "error": null,
+ "jobs": [
+  {
+   "name": "M3b_path_epic_sp100_first_walk",
+   "kind": "path",
+   "job": {
+    "kind": "path",
+    "loc": [
+     3745.62,
+     1403.7,
+     158.2
+    ],
+    "end": [
+     -4654.38,
+     1403.7,
+     158.2
+    ],
+    "target": [
+     -754.38,
+     -311.1,
+     303.2
+    ],
+    "seconds": 60.0,
+    "name": "M3b_path_epic_sp100_first_walk"
+   },
+   "wall_start_unix": 1794455242.011769,
+   "recorded_seconds": 60.00166189999436,
+   "ticks": 7367,
+   "foreground_fraction": 1.0,
+   "tick_ms_mean": 8.146146396044816,
+   "tick_ms_p95": 15.987299382686615,
+   "tick_ms_max": 24.887599050998688,
+   "camera_first": {
+    "loc": [
+     3744.229240001824,
+     1403.7,
+     158.2
+    ],
+    "rot_pitch_yaw_roll": [
+     1.7251273613705385,
+     -159.13393015539458,
+     3.711023871702278e-08
+    ]
+   },
+   "camera_last": {
+    "loc": [
+     -4654.38,
+     1403.7,
+     158.2
+    ],
+    "rot_pitch_yaw_roll": [
+     1.9492981210073128,
+     -23.73472281886692,
+     6.253944946197807e-09
+    ]
+   },
+   "new_csv_files": [
+    "Profile(20261111_214722).csv"
+   ],
+   "tick_ms_series": null
+  },
+  {
+   "name": "M3b_path_epic_sp100",
+   "kind": "path",
+   "job": {
+    "kind": "path",
+    "loc": [
+     3745.62,
+     1403.7,
+     158.2
+    ],
+    "end": [
+     -4654.38,
+     1403.7,
+     158.2
+    ],
+    "target": [
+     -754.38,
+     -311.1,
+     303.2
+    ],
+    "seconds": 60.0,
+    "name": "M3b_path_epic_sp100"
+   },
+   "wall_start_unix": 1794455312.0260048,
+   "recorded_seconds": 60.01234220000333,
+   "ticks": 7371,
+   "foreground_fraction": 1.0,
+   "tick_ms_mean": 8.140663030476345,
+   "tick_ms_p95": 15.9791000187397,
+   "tick_ms_max": 20.715199410915375,
+   "camera_first": {
+    "loc": [
+     3744.169684000609,
+     1403.7,
+     158.2
+    ],
+    "rot_pitch_yaw_roll": [
+     1.7251472906086676,
+     -159.1336776967497,
+     3.7110608655289174e-08
+    ]
+   },
+   "camera_last": {
+    "loc": [
+     -4654.38,
+     1403.7,
+     158.2
+    ],
+    "rot_pitch_yaw_roll": [
+     1.9492981210073128,
+     -23.73472281886692,
+     6.253944946197807e-09
+    ]
+   },
+   "new_csv_files": [
+    "Profile(20261111_214832).csv"
+   ],
+   "tick_ms_series": null
+  },
+  {
+   "name": "M3b_hold_S1",
+   "kind": "view",
+   "job": {
+    "kind": "view",
+    "name": "M3b_hold_S1",
+    "loc": [
+     -754.4,
+     1400.0,
+     158.6
+    ],
+    "rot": [
+     8.0,
+     -88.82,
+     0.0
+    ],
+    "seconds": 10.0
+   },
+   "wall_start_unix": 1794455382.061111,
+   "recorded_seconds": 10.011519299994688,
+   "ticks": 1230,
+   "foreground_fraction": 1.0,
+   "tick_ms_mean": 8.13099138317554,
+   "tick_ms_p95": 15.69179818034172,
+   "tick_ms_max": 18.248300999403,
+   "camera_first": {
+    "loc": [
+     -754.4,
+     1400.0,
+     158.6
+    ],
+    "rot_pitch_yaw_roll": [
+     8.0,
+     -88.81999969482422,
+     0.0
+    ]
+   },
+   "camera_last": {
+    "loc": [
+     -754.4,
+     1400.0,
+     158.6
+    ],
+    "rot_pitch_yaw_roll": [
+     8.0,
+     -88.81999969482422,
+     0.0
+    ]
+   },
+   "new_csv_files": [
+    "Profile(20261111_214942).csv"
+   ],
+   "tick_ms_series": null
+  }
+ ]
+}

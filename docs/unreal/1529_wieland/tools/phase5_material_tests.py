@@ -7,8 +7,9 @@
 For every image a candidate uses it makes the repository's wrap preview: the
 image laid 3 by 3, with the place where four copies meet cut out at full
 size beside it. It measures the step across the wrapping edge against the
-ordinary step between neighbouring pixels (the seam figure), and how uneven
-the image is at large scale (the figure that makes a repeat easy to spot).
+strongest step between two neighbouring lines of pixels anywhere inside the
+image (the seam figure), and how uneven the image is at large scale (the
+figure that makes a repeat easy to spot).
 From the candidate's swatch picture it measures whether the relief shows on
 the wall piece lit at a grazing angle. With the largest surface each
 material covers in the model (measured in the editor) it then writes one
@@ -16,7 +17,12 @@ row per candidate. A finite image always repeats; the test is whether the
 repeat is recognisable, not whether it exists.
 
 Thresholds (this project's own, stated so that they can be argued with):
-    seam figure      edge step / ordinary step, the worse of the two directions; pass at 2.0 or less
+    seam figure      mean step from the last line of pixels to the first, divided by the largest mean step
+                     between two neighbouring lines inside the image (not less than 0.002, so that a nearly
+                     flat image is not failed over nothing); the worse of the two directions; pass at 1.5
+                     or less. A figure of 1 means the wrapping edge is no stronger than the strongest line
+                     the image already has, such as a joint. (The first version divided by the average
+                     step, which failed every image with joints and every nearly flat image.)
     large-scale      standard deviation of the image's brightness averaged in an 8 by 8 grid, over its mean;
     unevenness       0.05 or less counts as even
     grazing light    fine detail on the grazing-lit wall piece at least 0.010 (brightness 0 to 1)
@@ -56,9 +62,10 @@ def seam_figure(lum):
     figures = []
     for axis in (0, 1):
         moved = np.moveaxis(lum, axis, 0)
-        inside = np.abs(np.diff(moved, axis=0)).mean()
-        edge = np.abs(moved[0] - moved[-1]).mean()
-        figures.append(edge / max(inside, 1e-4))
+        lines = moved.reshape(moved.shape[0], -1)
+        inside = np.abs(np.diff(lines, axis=0)).mean(axis=1).max()
+        edge = np.abs(lines[0] - lines[-1]).mean()
+        figures.append(edge / max(inside, 0.002))
     return max(figures)
 
 
@@ -185,7 +192,7 @@ def main(candidates_csv, params_json, sets_folder, generated_folder, swatch_fold
             tiling, tiling_pass = "An image file was not found for the test.", False
         else:
             worst = max(seams)
-            seam_ok = worst <= 2.0
+            seam_ok = worst <= 1.5
             anti = bool(switches.get("AntiRepeat"))
             if repeats != "" and repeats <= 1.0:
                 repeat_ok, why = True, "the largest surface is no larger than one field"
