@@ -27,8 +27,12 @@ import unreal
 import wieland_levels
 import wieland_refine
 
-FLOORS = (("Lower", -152.4), ("Floor1", 203.2), ("Floor2", 528.3), ("Floor3", 853.4), ("Floor4", 1178.6))
-PENTHOUSE_FLOORS = ("Floor3", "Floor4")
+FLOORS = (("Lower", -152.4), ("Floor1", 203.2), ("Floor2", 528.3), ("Floor3", 853.4), ("Floor4", 1178.6),
+          ("Roof", 1524.0))
+PENTHOUSE_FLOORS = ("Floor3", "Floor4", "Roof")
+# On the roof level only the enclosed rooms take a baseboard, not the wall faces towards the deck:
+# (x_min, y_min, x_max, y_max) of the room of each half.
+ROOF_ROOMS = ((-1400.0, -1454.0, -907.0, -936.0), (-601.8, -1454.0, -108.8, -936.0))
 CUT = 5.0          # height of the cut above the finished floor
 THICK = 1.2        # baseboard thickness
 HEIGHT = 10.0      # baseboard height
@@ -286,6 +290,9 @@ def plan_runs(window=None, floors=None):
                     if top is None:
                         tally["no floor"] = tally.get("no floor", 0) + 1
                         return None
+                    if floor == "Roof" and not any(r[0] < x < r[2] and r[1] < y < r[3] for r in ROOF_ROOMS):
+                        tally["on the deck"] = tally.get("on the deck", 0) + 1
+                        return None
                     if _inside(blocker_boxes, x, y, top + 0.5, top + HEIGHT):
                         tally["covered"] = tally.get("covered", 0) + 1
                         return None
@@ -431,14 +438,19 @@ def write_runs(runs, csv_path):
             "per_object": sorted(("%s_%s" % key, n) for key, n in counts.items())}
 
 
-def _eased_box(centre, axes, half):
-    """A box with every edge eased by EASE: positions and triangles, each triangle with its own vertices."""
+def _eased_box(centre, axes, half, ease=EASE):
+    """A box with every edge eased by `ease`: positions and triangles, each triangle with its own vertices."""
+    # The three axes may form a mirrored frame (a run's along, out of the wall, up) or a plain one.
+    mirrored = (axes[0][0] * (axes[1][1] * axes[2][2] - axes[1][2] * axes[2][1])
+                - axes[0][1] * (axes[1][0] * axes[2][2] - axes[1][2] * axes[2][0])
+                + axes[0][2] * (axes[1][0] * axes[2][1] - axes[1][1] * axes[2][0])) < 0.0
+
     def place(local):
         return tuple(centre[i] + axes[0][i] * local[0] + axes[1][i] * local[1] + axes[2][i] * local[2]
                      for i in range(3))
 
     def corner_point(axis, signs):
-        return tuple(signs[i] * (half[i] if i == axis else half[i] - EASE) for i in range(3))
+        return tuple(signs[i] * (half[i] if i == axis else half[i] - ease) for i in range(3))
 
     faces = []
     for axis in range(3):
@@ -474,9 +486,10 @@ def _eased_box(centre, axes, half):
             normal = (u[1] * v[2] - u[2] * v[1], u[2] * v[0] - u[0] * v[2], u[0] * v[1] - u[1] * v[0])
             middle = ((a[0] + b[0] + c[0]) / 3.0, (a[1] + b[1] + c[1]) / 3.0, (a[2] + b[2] + c[2]) / 3.0)
             # Unreal's front faces wind clockwise, so in the level the cross product of a well-ordered face
-            # points inwards. The axes of a run (along, out of the wall, up) are a mirrored frame, which
-            # turns the order round once more: here, in the box's own frame, it must point outwards.
-            if normal[0] * middle[0] + normal[1] * middle[1] + normal[2] * middle[2] < 0.0:
+            # points inwards. A mirrored frame turns the order round once more: there, in the box's own
+            # frame, it must point outwards.
+            outwards = normal[0] * middle[0] + normal[1] * middle[1] + normal[2] * middle[2] > 0.0
+            if outwards != mirrored:
                 b, c = c, b
             base = len(positions)
             positions.extend([place(a), place(b), place(c)])
