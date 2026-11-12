@@ -188,6 +188,67 @@ def alternatives_state():
     return {"slots_on": len(_STATE["on"])}
 
 
+STATIONS = {
+    "S1": ([-754.4, 1400.0, 158.6], [8.0, -88.82, 0.0]),
+    "S3": ([-3254.4, 1400.0, 162.0], [8.0, -43.82, 0.0]),
+    "S6": ([-3508.8, 210.0, 173.1], [8.0, 1.18, 0.0]),
+}
+STATION_FOV = 73.74
+STATION_TAG = "W1529TempStation"
+REVIT_STAND_INS = ("Site_GRADE_GRADE", "Generic_Models_SURROUNDING_BUILDINGS_SURROUNDING_BUILDINGS")
+
+
+def _actors():
+    world = unreal.get_editor_subsystem(unreal.UnrealEditorSubsystem).get_editor_world()
+    return unreal.GameplayStatics.get_all_actors_of_class(world, unreal.Actor)
+
+
+def stations_begin():
+    """Place one temporary camera per station and hide Revit's slab and massing in the editor only."""
+    subsystem = unreal.get_editor_subsystem(unreal.EditorActorSubsystem)
+    made = 0
+    for name, (location, rotation) in STATIONS.items():
+        camera = subsystem.spawn_actor_from_class(
+            unreal.CameraActor, unreal.Vector(*location),
+            unreal.Rotator(pitch=rotation[0], yaw=rotation[1], roll=rotation[2]))
+        camera.set_actor_label("TEMP_" + name)
+        camera.tags = [STATION_TAG, name]
+        component = camera.camera_component
+        component.set_editor_property("field_of_view", STATION_FOV)
+        component.set_editor_property("constrain_aspect_ratio", True)
+        component.set_editor_property("aspect_ratio", 16.0 / 9.0)
+        made += 1
+    hidden = 0
+    for actor in _actors():
+        if actor.get_actor_label() in REVIT_STAND_INS:
+            actor.set_is_temporarily_hidden_in_editor(True)
+            hidden += 1
+    return {"cameras": made, "hidden": hidden}
+
+
+def station_shot(name, out_path, width=1920, height=1080):
+    for actor in _actors():
+        tags = [str(t) for t in actor.tags]
+        if STATION_TAG in tags and name in tags:
+            unreal.AutomationLibrary.take_high_res_screenshot(width, height, out_path, actor)
+            return True
+    return False
+
+
+def stations_end():
+    """Remove the temporary cameras and show Revit's slab and massing again."""
+    subsystem = unreal.get_editor_subsystem(unreal.EditorActorSubsystem)
+    removed, shown = 0, 0
+    for actor in list(_actors()):
+        if STATION_TAG in [str(t) for t in actor.tags]:
+            subsystem.destroy_actor(actor)
+            removed += 1
+        elif actor.get_actor_label() in REVIT_STAND_INS:
+            actor.set_is_temporarily_hidden_in_editor(False)
+            shown += 1
+    return {"cameras_removed": removed, "shown_again": shown}
+
+
 def dirty_packages():
     utils = unreal.EditorLoadingAndSavingUtils
     return sorted(p.get_name() for p in list(utils.get_dirty_content_packages()) + list(utils.get_dirty_map_packages()))
