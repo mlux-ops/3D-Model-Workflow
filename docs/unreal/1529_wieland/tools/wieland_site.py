@@ -614,3 +614,120 @@ async def dump_parts(start=0, count=100):
             out["gaps"].append(record["label"])
         await asyncio.sleep(0)
     return out
+
+
+# ---------------------------------------------------------------------------------------------
+# The fit: new mesh assets, made from the earlier parts' meshes, that sit on the surveyed ground.
+# The earlier mesh assets are only read. What to leave out and how far to move is worked out off line
+# by phase7_fit.py; here it is applied, written to a new asset and put on the copy as a recorded swap.
+
+FIT_FOLDER = "/Game/Wieland1529/Surroundings/R15Fit"
+FIT_SWAPS = REVIEW + "/r15_fit_swaps.csv"
+TAG_GROUND_ONLY = "W1529.R15GroundOnly"
+
+
+def fit_part(label):
+    """Makes (or remakes) the fitted mesh asset of one part and puts it on the part's copy. Saves the asset by name.
+
+    Returns one record for r15_fit_swaps.csv. A part of which nothing stays (ground only) gets no asset:
+    its copy is made not visible and is given the tag W1529.R15GroundOnly in place of W1529.R15Copy.
+    """
+    import numpy
+    record = [r for r in old_parts() if r["label"] == label][0]
+    source_path = record["components"][0]["mesh"]
+    raw = numpy.load(REVIEW + "/fit/raw/" + label + ".npz")
+    plan = numpy.load(REVIEW + "/fit/plan/" + label + ".npz")
+    actor = _by_label([label]).get(label)
+    if actor is None:
+        raise RuntimeError("copy missing: " + label)
+    location, scale, rotation = actor.get_actor_location(), actor.get_actor_scale3d(), actor.get_actor_rotation()
+    if (max(abs(location.x - SHIFT[0]), abs(location.y - SHIFT[1]), abs(location.z - SHIFT[2])) > 0.01
+            or max(abs(scale.x - 1), abs(scale.y - 1), abs(scale.z - 1)) > 1e-6
+            or max(abs(rotation.pitch), abs(rotation.yaw), abs(rotation.roll)) > 1e-6):
+        raise RuntimeError("copy is not at the plain shift: " + label)
+    component = actor.static_mesh_component
+    out = {"part": label, "earlier_mesh": source_path, "fitted_mesh": "", "triangles_before": int(plan["triangles"]),
+           "triangles_left_out": int(plan["remove"].shape[0]), "triangles_after": 0, "lowest_move_cm": "", "highest_move_cm": "",
+           "nanite": "", "slots": "", "saved": "", "note": ""}
+    kept = int(plan["triangles"]) - int(plan["remove"].shape[0])
+    if kept == 0:
+        component.modify()
+        component.set_visibility(False, False)
+        actor.modify()
+        actor.tags = [unreal.Name(TAG_GROUND_ONLY)] + [t for t in actor.tags if str(t) not in (TAG_R15, TAG_GROUND_ONLY)]
+        out["note"] = "ground only: nothing stays; the copy is not visible and is no longer in the list of options"
+        return out
+    source, dynamic = _dynamic(source_path)
+    lists = unreal.GeometryScript_List
+    positions = unreal.GeometryScript_MeshQueries.get_all_vertex_positions(dynamic, False)[-2]
+    now = numpy.array([(v.x, v.y, v.z) for v in lists.convert_vector_list_to_array(positions)], dtype=numpy.float64)
+    if now.shape != raw["positions"].shape or float(numpy.abs(now - raw["positions"]).max()) > 1e-3:
+        raise RuntimeError("the mesh read now differs from the raw data: " + label)
+    lift = plan["lift"]
+    moved = [unreal.Vector(float(p[0]), float(p[1]), float(p[2] + d)) for p, d in zip(now, lift)]
+    edits = unreal.GeometryScript_MeshEdits
+    edits.set_all_mesh_vertex_positions(dynamic, lists.convert_array_to_vector_list(moved))
+    remove = [int(i) for i in plan["remove"]]
+    if remove:
+        edits.delete_triangles_from_mesh(dynamic, lists.convert_array_to_index_list(remove, unreal.GeometryScriptIndexType.TRIANGLE), True)
+    after = int(dynamic.get_triangle_count())
+    if after != kept:
+        raise RuntimeError("%s: %d triangles stay in memory, %d expected" % (label, after, kept))
+    target_path = FIT_FOLDER + "/SM_R15fit_" + label[len("R15_PART_"):]
+    library = unreal.EditorAssetLibrary
+    target = library.load_asset(target_path) if library.does_asset_exist(target_path) else library.duplicate_asset(source_path, target_path)
+    if target is None:
+        raise RuntimeError("no new asset: " + target_path)
+    options = unreal.GeometryScriptCopyMeshToAssetOptions()
+    options.enable_recompute_normals = False
+    options.emit_transaction = False
+    _, outcome = unreal.GeometryScript_AssetUtils.copy_mesh_to_static_mesh(dynamic, target, options, unreal.GeometryScriptMeshWriteLOD())
+    if outcome != unreal.GeometryScriptOutcomePins.SUCCESS:
+        raise RuntimeError("the new asset could not be written: " + target_path)
+    # Nanite as on the earlier mesh: on for the opaque parts, off for the glass parts (Nanite cannot show see-through materials).
+    meshes = unreal.get_editor_subsystem(unreal.StaticMeshEditorSubsystem)
+    wanted = bool(meshes.get_nanite_settings(source).enabled)
+    settings = meshes.get_nanite_settings(target)
+    if bool(settings.enabled) != wanted:
+        settings.enabled = wanted
+        meshes.set_nanite_settings(target, settings, True)
+    out["nanite"] = bool(meshes.get_nanite_settings(target).enabled)
+    if out["nanite"] != wanted:
+        raise RuntimeError("Nanite setting differs from the earlier mesh: " + target_path)
+    same_slots = [_path(s.material_interface) for s in target.static_materials] == [_path(s.material_interface) for s in source.static_materials]
+    shown_before = [_path(component.get_material(i)) for i in range(component.get_num_materials())]
+    component.modify()
+    component.set_static_mesh(target)
+    shown_after = [_path(component.get_material(i)) for i in range(component.get_num_materials())]
+    used = lift[numpy.unique(raw["triangles"][numpy.setdiff1d(numpy.arange(int(plan["triangles"])), plan["remove"])])]
+    out.update({"fitted_mesh": target_path, "triangles_after": after,
+                "lowest_move_cm": round(float(used.min()), 1), "highest_move_cm": round(float(used.max()), 1),
+                "slots": "same" if same_slots and shown_before == shown_after else "DIFFERENT",
+                "saved": bool(library.save_loaded_asset(target, False))})
+    return out
+
+
+async def fit_parts(start=0, count=1):
+    """Fits parts [start, start + count) and writes or extends r15_fit_swaps.csv. Nothing but the new assets is saved."""
+    import csv
+    _require(SITE_LEVEL)
+    rows, problems = [], []
+    for record in old_parts()[start:start + count]:
+        try:
+            rows.append(fit_part(record["label"]))
+        except Exception as error:
+            problems.append("%s: %s" % (record["label"], error))
+        await asyncio.sleep(0)
+    known = {}
+    if os.path.exists(FIT_SWAPS):
+        with open(FIT_SWAPS, newline="", encoding="utf-8") as handle:
+            known = {r["part"]: r for r in csv.DictReader(handle)}
+    for row in rows:
+        known[row["part"]] = row
+    if known:
+        with open(FIT_SWAPS, "w", newline="", encoding="utf-8") as handle:
+            writer = csv.DictWriter(handle, fieldnames=list(next(iter(known.values())).keys()))
+            writer.writeheader()
+            for part in sorted(known):
+                writer.writerow(known[part])
+    return {"done": len(rows), "problems": problems, "rows": rows if len(rows) <= 2 else len(rows), "dirty": dirty()}
