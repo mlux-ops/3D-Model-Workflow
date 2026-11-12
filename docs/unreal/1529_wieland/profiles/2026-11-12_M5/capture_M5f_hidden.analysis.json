@@ -1,0 +1,111 @@
+{
+ "source_record": "capture_M5f_hidden.json",
+ "info": {
+  "step": "Phase 7, J11: profile M5, path only, vegetation hidden, in the order shown, hidden, shown",
+  "level": "/Game/Wieland1529/L_Site_M2",
+  "quality": "Epic (3), pool 1000, SP 100, t.MaxFPS 1000, Game View on",
+  "view_mode": "Lit",
+  "lighting": "as the first recording",
+  "foreground": {
+   "was": 5636622,
+   "front": true
+  }
+ },
+ "method": "final header row; every positive FrameTime row; p95 = value at floor(0.95 * (n - 1))",
+ "jobs": [
+  {
+   "name": "M5f_hidden_path",
+   "kind": "path",
+   "csv": [
+    "Profile(20261112_152136).csv"
+   ],
+   "foreground_fraction": 1.0,
+   "recorded_seconds": 60.00399319999269,
+   "tick_ms_mean": 8.47546621022512,
+   "tick_ms_p95": 14.223698526620865,
+   "tick_ms_max": 21.728496998548508,
+   "frames": 7079,
+   "columns": 294,
+   "mean_fps": 117.9772689084539,
+   "frames_over_16_667ms": 109,
+   "frames_over_33_333ms": 0,
+   "stats": {
+    "FrameTime": {
+     "mean": 8.47620909733013,
+     "p95": 14.062,
+     "min": 4.6694,
+     "max": 21.7679
+    },
+    "GPUTime": {
+     "mean": 5.901906780618732,
+     "p95": 6.4581,
+     "min": 5.3233,
+     "max": 7.2722
+    },
+    "GameThreadTime": {
+     "mean": 7.006923308376889,
+     "p95": 9.5813,
+     "min": 4.4858,
+     "max": 19.4039
+    },
+    "RenderThreadTime": {
+     "mean": 0.002383754767622546,
+     "p95": 0.001,
+     "min": 0.0004,
+     "max": 6.3093
+    },
+    "RHIThreadTime": {
+     "mean": 0.25902901539765505,
+     "p95": 0.4664,
+     "min": 0.0663,
+     "max": 4.3069
+    },
+    "GPUMem/LocalUsedMB": {
+     "mean": 5782.357041926825,
+     "p95": 5783.1641,
+     "min": 0.0,
+     "max": 5788.1641
+    },
+    "GPUMem/LocalBudgetMB": {
+     "mean": 15277.841503037153,
+     "p95": 15280.0,
+     "min": 0.0,
+     "max": 15280.0
+    },
+    "RHI/DrawCalls": {
+     "mean": 1342.0690775533267,
+     "p95": 1555.0,
+     "min": 1171.0,
+     "max": 1787.0
+    },
+    "RHI/PrimitivesDrawn": {
+     "mean": 293440.4930074869,
+     "p95": 793856.0,
+     "min": 84342.0,
+     "max": 1073624.0
+    },
+    "TextureStreaming/DesiredDataLoadedPercent": {
+     "mean": 100.0,
+     "p95": 100.0,
+     "min": 100.0,
+     "max": 100.0
+    },
+    "MemoryFreeMB": {
+     "mean": 8111.892073979376,
+     "p95": 8167.0703,
+     "min": 7682.4258,
+     "max": 8179.168
+    },
+    "PhysicalUsedMB": {
+     "mean": 4255.598121005792,
+     "p95": 4284.6211,
+     "min": 4250.6641,
+     "max": 4293.1641
+    }
+   },
+   "metadata": {},
+   "copied_to": "M5f_hidden_path.csv.gz",
+   "copied_bytes": 2153214
+  }
+ ]
+}
