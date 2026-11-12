@@ -1,6 +1,6 @@
 # Site gaps: what a station can see for which no evidence was gathered
 
-Written on 2026-11-11 by Phase 2 of [PLAN.md](PLAN.md), step 2.10. Companion to [site_survey.csv](site_survey.csv), which lists what is known, and to [phase2_results.md](phase2_results.md).
+Written on 2026-11-11 by Phase 2 of [PLAN.md](PLAN.md), step 2.10; gaps 13 to 18 added the same day by Phase 4 (see [phase4_results.md](phase4_results.md)). Companion to [site_survey.csv](site_survey.csv), which lists what is known, and to [phase2_results.md](phase2_results.md).
 
 By the plan's rule "Evidence over habit", each item here is shown in the scene as a neutral placeholder until evidence arrives, and nothing is filled in with what is typical for the neighbourhood. The site visit of step 2.1 has not been made; it is the owner's, and it would close most of this list. Nothing later in the plan is blocked by it.
 
@@ -20,6 +20,12 @@ By the plan's rule "Evidence over habit", each item here is shown in the scene a
 | 10 | The lot's own present state during construction (hoarding, excavation, the shell as it rises). | Every exterior station | Not needed: the scene shows the finished building | The finished building |
 | 11 | Leaf-on appearance of every tree. The scan is leafless and a November visit would be too. | Every exterior station | A summer visit, which the owner left to be decided later | Crowns filled to the measured spread |
 | 12 | The distant city seen along the street to the south. | S5 | Decision 6 of `OPEN_DECISIONS.md` | The plan's default: simplified massing and sky, in Phase 4 |
+| 13 | Parapets, ridges and roof edges of the neighbours. Phase 4 built each neighbour as a block on the county's outline with heights from the laser scan, whose 1 ft cells do not resolve a parapet thinner than about 1 m: 5 of 23 buildings in Zone 1 and 24 of 120 in Zone 2 have their highest part more than 0.3 m from the scan, and roof edges look ragged in the grey renders. | Every exterior station | Photographs of each roof line with a scale, or a parapet height taken on site | The laser-scan block as built, plain grey |
+| 14 | Zone 3 and Zone 4 (one block further, and the city beyond). The site data is a 300 m square, so the ground ends about 150 m from the lot and stations S4, S5 and S6 show its end as a dark band under the horizon. | S4, S5, S6 | The owner's approval to download the laser scan and footprints for a larger area | Nothing beyond the square; sky |
+| 15 | The ground on the lot itself. The laser scan of 2022 shows the two houses since demolished, so the lot was cut out of the new ground; the Revit model's site slab covers the lot but also covers the street (gap 17). | S1 to S6, S9 | The Revit site slab cut back to the lot, or the site plan's finished grades modelled in Phase 5 | `SG_lot_placeholder`: one flat piece 1 cm under the datum, tagged `W1529.Placeholder` |
+| 16 | Daylight in the new site level `L_Site_M2`. | Every station | Phase 8 (lighting and atmosphere) | `Placeholder_Sun` (10 lux), `Placeholder_SkyAtmosphere`, `Placeholder_SkyLight`, tagged `W1529.Placeholder` |
+| 17 | Which surroundings stay: the Revit model's own site slab (`Site_GRADE_GRADE`) and massing of the neighbours (`Generic_Models_SURROUNDING_BUILDINGS`) overlap the surroundings of Phase 4. The slab's top at height 0 covers the new street by up to 92 cm. | Every exterior station | The owner's decision; recommended: hide the massing, cut the slab back to the lot in Revit | Both are left unchanged and visible; hidden in the editor only while rendering |
+| 18 | The south-west (front) corner of number 1533 and the kerb lines. The county's outline puts that corner 63.3 cm from where the plat of survey shows it; the site plan's kerb offsets differ from the laser scan by up to 54 cm (east kerb) and 119 cm (west kerb). | S1, S3, S6, S8 | A tape from the lot's front corners to number 1533's wall and to both kerbs | The county's outline and the laser scan's kerbs, as built |
 
 ## What is not a gap any more
 
