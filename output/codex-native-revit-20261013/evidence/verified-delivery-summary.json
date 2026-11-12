@@ -1,0 +1,50 @@
+{
+  "schema_version": 1,
+  "package_identity": "codex-native-revit-2025",
+  "native_reports": {
+    "family_lifecycle": {
+      "path": "evidence/native-attempt-02/family-native-report.json",
+      "status": "passed",
+      "checks": 7
+    },
+    "project_workflow": {
+      "path": "evidence/workflow-attempt-02/native-workflow-report.json",
+      "status": "technical_pass",
+      "checks": 13
+    },
+    "hosting_and_response_recovery": {
+      "path": "evidence/hosting-recovery-01/native-hosting-recovery.json",
+      "status": "passed",
+      "checks": 6
+    },
+    "annotations_mirror_dependency_fencing": {
+      "path": "evidence/annotations-batch-02/native-hosting-recovery.json",
+      "status": "passed",
+      "checks": 8
+    },
+    "final_compiled_two_sheet_workflow": {
+      "path": "evidence/compiled-sheets-final/native-hosting-recovery.json",
+      "status": "passed",
+      "checks": 8
+    },
+    "final_export_safety": {
+      "path": "evidence/export-safety-final/native-hosting-recovery.json",
+      "status": "passed",
+      "checks": 9
+    },
+    "final_real_mcp_stdio": {
+      "path": "evidence/native-mcp-stdio-export-safe.json",
+      "status": "passed",
+      "checks": 0
+    }
+  },
+  "pass": true,
+  "assembly_sha256": "3F41F299BE45F6AE328CCB7CD34415EB0CC85E15FDBB066D18A27E0729A07126",
+  "current_mcp_target": {
+    "port": 49328,
+    "native_process_id": 48092,
+    "scope": "disposable acceptance documents"
+  },
+  "full_requested_scope_complete": false,
+  "limitations_file": "docs/CAPABILITY-MATRIX.md"
+}

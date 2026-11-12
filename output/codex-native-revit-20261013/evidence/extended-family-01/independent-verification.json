@@ -1,0 +1,286 @@
+{
+  "native_process_id": 27208,
+  "technical_pass": true,
+  "checks": {
+    "isolated-process": {
+      "actual": 27208,
+      "expected": 27208,
+      "tolerance": 1e-06,
+      "pass": true
+    },
+    "flex-native-job-completed": {
+      "actual": "completed",
+      "expected": "completed",
+      "tolerance": 1e-06,
+      "pass": true
+    },
+    "flex-native-group-rolled-back": {
+      "actual": "rolled_back",
+      "expected": "rolled_back",
+      "tolerance": 1e-06,
+      "pass": true
+    },
+    "flex-restoration-confirmed": {
+      "actual": true,
+      "expected": true,
+      "tolerance": 1e-06,
+      "pass": true
+    },
+    "flex-0-axis-0": {
+      "actual": 2.5000000000000027,
+      "expected": 2.5,
+      "tolerance": 1e-06,
+      "pass": true
+    },
+    "flex-0-axis-1": {
+      "actual": 1.75,
+      "expected": 1.75,
+      "tolerance": 1e-06,
+      "pass": true
+    },
+    "flex-0-axis-2": {
+      "actual": 3.5,
+      "expected": 3.5,
+      "tolerance": 1e-06,
+      "pass": true
+    },
+    "flex-0-volume": {
+      "actual": 15.312500000000004,
+      "expected": 15.3125,
+      "tolerance": 1e-06,
+      "pass": true
+    },
+    "flex-1-axis-0": {
+      "actual": 1.2500000000000018,
+      "expected": 1.25,
+      "tolerance": 1e-06,
+      "pass": true
+    },
+    "flex-1-axis-1": {
+      "actual": 1,
+      "expected": 1.0,
+      "tolerance": 1e-06,
+      "pass": true
+    },
+    "flex-1-axis-2": {
+      "actual": 2,
+      "expected": 2.0,
+      "tolerance": 1e-06,
+      "pass": true
+    },
+    "flex-1-volume": {
+      "actual": 2.500000000000002,
+      "expected": 2.5,
+      "tolerance": 1e-06,
+      "pass": true
+    },
+    "saved-native-axis-matches-parameter-0": {
+      "actual": 2,
+      "expected": 2,
+      "tolerance": 1e-06,
+      "pass": true
+    },
+    "saved-native-axis-matches-parameter-1": {
+      "actual": 1.5,
+      "expected": 1.5,
+      "tolerance": 1e-06,
+      "pass": true
+    },
+    "saved-native-axis-matches-parameter-2": {
+      "actual": 3,
+      "expected": 3,
+      "tolerance": 1e-06,
+      "pass": true
+    },
+    "saved-native-volume-matches-parameters": {
+      "actual": 9,
+      "expected": 9.0,
+      "tolerance": 1e-06,
+      "pass": true
+    },
+    "saved-native-category": {
+      "actual": "Casework",
+      "expected": "Casework",
+      "tolerance": 1e-06,
+      "pass": true
+    },
+    "saved-path-contained-in-evidence": {
+      "actual": true,
+      "expected": true,
+      "tolerance": 1e-06,
+      "pass": true
+    },
+    "saved-file-hash": {
+      "actual": "6f08682dc5b250aba9ce0de34e87aff02cc9ce6371d130884a08c23fb1c79262",
+      "expected": "6f08682dc5b250aba9ce0de34e87aff02cc9ce6371d130884a08c23fb1c79262",
+      "tolerance": 1e-06,
+      "pass": true
+    },
+    "saved-file-nonempty": {
+      "actual": true,
+      "expected": true,
+      "tolerance": 1e-06,
+      "pass": true
+    },
+    "effective-smoke-revolution": {
+      "actual": true,
+      "expected": true,
+      "tolerance": 1e-06,
+      "pass": true
+    },
+    "effective-smoke-blend": {
+      "actual": true,
+      "expected": true,
+      "tolerance": 1e-06,
+      "pass": true
+    },
+    "effective-smoke-sweep": {
+      "actual": true,
+      "expected": true,
+      "tolerance": 1e-06,
+      "pass": true
+    },
+    "effective-smoke-void": {
+      "actual": true,
+      "expected": true,
+      "tolerance": 1e-06,
+      "pass": true
+    },
+    "effective-smoke-reference-plane": {
+      "actual": true,
+      "expected": true,
+      "tolerance": 1e-06,
+      "pass": true
+    },
+    "effective-smoke-formula": {
+      "actual": true,
+      "expected": true,
+      "tolerance": 1e-06,
+      "pass": true
+    },
+    "effective-smoke-material-association": {
+      "actual": true,
+      "expected": true,
+      "tolerance": 1e-06,
+      "pass": true
+    },
+    "effective-smoke-nested-load": {
+      "actual": true,
+      "expected": true,
+      "tolerance": 1e-06,
+      "pass": true
+    },
+    "repair-receipt-revolution-1": {
+      "actual": "passed",
+      "expected": "passed",
+      "tolerance": 1e-06,
+      "pass": true
+    },
+    "repair-receipt-material-1": {
+      "actual": "passed",
+      "expected": "passed",
+      "tolerance": 1e-06,
+      "pass": true
+    },
+    "unexplained-original-check-failures": {
+      "actual": false,
+      "expected": false,
+      "tolerance": 1e-06,
+      "pass": true
+    }
+  },
+  "first_attempt_failed_checks_retained": [
+    {
+      "check": "revolution-native-volume",
+      "actual": 9.42476415120661,
+      "expected": 9.42477796076938,
+      "tolerance": 1e-06,
+      "pass": false
+    }
+  ],
+  "assisted_repairs": {
+    "revolution-1": {
+      "status": "passed",
+      "assisted_repair": true,
+      "mutation": false,
+      "reason": "Native Solid.Volume documentation permits tessellated approximation of curved surfaces; explicit absolute volume tolerance changed to 1e-4 cubic feet. Original 1e-6 failure retained.",
+      "actual_volume": 9.42476415120661,
+      "expected_volume": 9.42477796076938,
+      "absolute_error": 1.3809562769750983e-05
+    },
+    "material-1": {
+      "status": "passed",
+      "assisted_repair": true,
+      "reason": "Use full Material ForgeTypeId because Material is a nested SpecTypeId.Reference property, not root SpecTypeId.Material.",
+      "binding": {
+        "element": {
+          "document_session_id": "1c64f2b9-f730-464a-9a8c-45adcf7b0d0a",
+          "id": 2964,
+          "unique_id": "7e72f32c-f132-466b-8fb6-6dfd26e3e741-00000b94",
+          "name": "Revolve",
+          "category": null,
+          "category_id": null,
+          "type_id": -1,
+          "pinned": false,
+          "group_id": -1,
+          "level_id": -1,
+          "location": null,
+          "bounds": {
+            "min": [
+              7.9999999999999964,
+              -2.0000000000000013,
+              0
+            ],
+            "max": [
+              12.000000000000004,
+              2.0000000000000018,
+              1
+            ]
+          },
+          "host_id": null,
+          "family_name": null,
+          "placement_type": null,
+          "view_family": null,
+          "view_type": null,
+          "elevation": null
+        },
+        "element_parameter_id": -1002107,
+        "associated_family_parameter": {
+          "id": 3797,
+          "name": "SmokeMaterial",
+          "storage_type": "ElementId",
+          "data_type": "autodesk.spec.aec:material-1.0.0",
+          "group": "autodesk.parameter.group:materials-1.0.0",
+          "instance": false,
+          "read_only": false,
+          "shared": false,
+          "reporting": false,
+          "formula": null
+        }
+      },
+      "material": {
+        "document_session_id": "1c64f2b9-f730-464a-9a8c-45adcf7b0d0a",
+        "id": 238,
+        "unique_id": "2d8cd686-679b-486d-ba8a-47493d4dad3c-000000ee",
+        "name": "Default",
+        "category": "Materials",
+        "category_id": -2000700,
+        "type_id": -1,
+        "pinned": false,
+        "group_id": -1,
+        "level_id": -1,
+        "location": null,
+        "bounds": null,
+        "host_id": null,
+        "family_name": null,
+        "placement_type": null,
+        "view_family": null,
+        "view_type": null,
+        "elevation": null
+      },
+      "scope": "Actual form Material parameter readback; appearance/render not tested."
+    }
+  },
+  "visual_acceptance": "not assessed",
+  "boundary": "Native synthetic Casework parametric geometry and targeted basic family API smokes; no production/manufacturer design acceptance."
+}

@@ -1,0 +1,951 @@
+{
+  "run_id": "b876ec94-9cfd-4987-b1e1-09ed060c1bd8",
+  "status": "passed",
+  "steps": {
+    "project": {
+      "schema_version": 1,
+      "operation_id": "5ed27b3f-91fe-565b-a5ef-0c39bb8a17b7",
+      "status": "completed",
+      "request": {
+        "arguments": {
+          "template": "C:\\ProgramData\\Autodesk\\RVT 2025\\Templates\\Default_I_ENU.rte"
+        },
+        "document": {},
+        "operation": "document.create",
+        "operation_id": "5ed27b3f-91fe-565b-a5ef-0c39bb8a17b7",
+        "preconditions": {},
+        "schema_version": 1
+      },
+      "result": {
+        "session_id": "41b48df9-b654-4f88-ae20-1c36f36e713b",
+        "title": "Project1",
+        "path": "",
+        "is_family": false,
+        "is_read_only": false,
+        "is_modified": false,
+        "is_workshared": false
+      },
+      "error": null,
+      "cancel_requested": false,
+      "created_utc": "2026-10-14T05:30:30.0221602Z",
+      "finished_utc": "2026-10-14T05:30:30.6398550Z",
+      "elapsed_ms": 601.5277,
+      "transaction_status": "not_started"
+    },
+    "viewtypes": {
+      "schema_version": 1,
+      "operation_id": "50c196a0-e9b7-557c-91fa-16c54de71261",
+      "status": "completed",
+      "request": {
+        "arguments": {
+          "class": "ViewFamilyType",
+          "types": true
+        },
+        "document": {
+          "session_id": "41b48df9-b654-4f88-ae20-1c36f36e713b"
+        },
+        "operation": "elements.query",
+        "operation_id": "50c196a0-e9b7-557c-91fa-16c54de71261",
+        "preconditions": {},
+        "schema_version": 1
+      },
+      "result": {
+        "items": [
+          {
+            "document_session_id": "41b48df9-b654-4f88-ae20-1c36f36e713b",
+            "id": 75905,
+            "unique_id": "42eb2886-bbe4-469f-897b-4b39594f7390-00012881",
+            "name": "Floor Plan",
+            "category": null,
+            "category_id": null,
+            "type_id": -1,
+            "pinned": false,
+            "group_id": -1,
+            "level_id": -1,
+            "location": null,
+            "bounds": null,
+            "host_id": null,
+            "family_name": null,
+            "placement_type": null,
+            "view_family": "FloorPlan",
+            "view_type": null,
+            "elevation": null
+          },
+          {
+            "document_session_id": "41b48df9-b654-4f88-ae20-1c36f36e713b",
+            "id": 75906,
+            "unique_id": "42eb2886-bbe4-469f-897b-4b39594f7390-00012882",
+            "name": "Ceiling Plan",
+            "category": null,
+            "category_id": null,
+            "type_id": -1,
+            "pinned": false,
+            "group_id": -1,
+            "level_id": -1,
+            "location": null,
+            "bounds": null,
+            "host_id": null,
+            "family_name": null,
+            "placement_type": null,
+            "view_family": "CeilingPlan",
+            "view_type": null,
+            "elevation": null
+          },
+          {
+            "document_session_id": "41b48df9-b654-4f88-ae20-1c36f36e713b",
+            "id": 75907,
+            "unique_id": "42eb2886-bbe4-469f-897b-4b39594f7390-00012883",
+            "name": "Building Section",
+            "category": null,
+            "category_id": null,
+            "type_id": -1,
+            "pinned": false,
+            "group_id": -1,
+            "level_id": -1,
+            "location": null,
+            "bounds": null,
+            "host_id": null,
+            "family_name": null,
+            "placement_type": null,
+            "view_family": "Section",
+            "view_type": null,
+            "elevation": null
+          },
+          {
+            "document_session_id": "41b48df9-b654-4f88-ae20-1c36f36e713b",
+            "id": 75908,
+            "unique_id": "42eb2886-bbe4-469f-897b-4b39594f7390-00012884",
+            "name": "Detail",
+            "category": null,
+            "category_id": null,
+            "type_id": -1,
+            "pinned": false,
+            "group_id": -1,
+            "level_id": -1,
+            "location": null,
+            "bounds": null,
+            "host_id": null,
+            "family_name": null,
+            "placement_type": null,
+            "view_family": "Detail",
+            "view_type": null,
+            "elevation": null
+          },
+          {
+            "document_session_id": "41b48df9-b654-4f88-ae20-1c36f36e713b",
+            "id": 75909,
+            "unique_id": "42eb2886-bbe4-469f-897b-4b39594f7390-00012885",
+            "name": "Detail",
+            "category": null,
+            "category_id": null,
+            "type_id": -1,
+            "pinned": false,
+            "group_id": -1,
+            "level_id": -1,
+            "location": null,
+            "bounds": null,
+            "host_id": null,
+            "family_name": null,
+            "placement_type": null,
+            "view_family": "Drafting",
+            "view_type": null,
+            "elevation": null
+          },
+          {
+            "document_session_id": "41b48df9-b654-4f88-ae20-1c36f36e713b",
+            "id": 75910,
+            "unique_id": "42eb2886-bbe4-469f-897b-4b39594f7390-00012886",
+            "name": "Building Elevation",
+            "category": null,
+            "category_id": null,
+            "type_id": -1,
+            "pinned": false,
+            "group_id": -1,
+            "level_id": -1,
+            "location": null,
+            "bounds": null,
+            "host_id": null,
+            "family_name": null,
+            "placement_type": null,
+            "view_family": "Elevation",
+            "view_type": null,
+            "elevation": null
+          },
+          {
+            "document_session_id": "41b48df9-b654-4f88-ae20-1c36f36e713b",
+            "id": 75911,
+            "unique_id": "42eb2886-bbe4-469f-897b-4b39594f7390-00012887",
+            "name": "Interior Elevation",
+            "category": null,
+            "category_id": null,
+            "type_id": -1,
+            "pinned": false,
+            "group_id": -1,
+            "level_id": -1,
+            "location": null,
+            "bounds": null,
+            "host_id": null,
+            "family_name": null,
+            "placement_type": null,
+            "view_family": "Elevation",
+            "view_type": null,
+            "elevation": null
+          },
+          {
+            "document_session_id": "41b48df9-b654-4f88-ae20-1c36f36e713b",
+            "id": 75912,
+            "unique_id": "42eb2886-bbe4-469f-897b-4b39594f7390-00012888",
+            "name": "3D View",
+            "category": null,
+            "category_id": null,
+            "type_id": -1,
+            "pinned": false,
+            "group_id": -1,
+            "level_id": -1,
+            "location": null,
+            "bounds": null,
+            "host_id": null,
+            "family_name": null,
+            "placement_type": null,
+            "view_family": "ThreeDimensional",
+            "view_type": null,
+            "elevation": null
+          },
+          {
+            "document_session_id": "41b48df9-b654-4f88-ae20-1c36f36e713b",
+            "id": 75913,
+            "unique_id": "42eb2886-bbe4-469f-897b-4b39594f7390-00012889",
+            "name": "Schedule",
+            "category": null,
+            "category_id": null,
+            "type_id": -1,
+            "pinned": false,
+            "group_id": -1,
+            "level_id": -1,
+            "location": null,
+            "bounds": null,
+            "host_id": null,
+            "family_name": null,
+            "placement_type": null,
+            "view_family": "Schedule",
+            "view_type": null,
+            "elevation": null
+          },
+          {
+            "document_session_id": "41b48df9-b654-4f88-ae20-1c36f36e713b",
+            "id": 75914,
+            "unique_id": "42eb2886-bbe4-469f-897b-4b39594f7390-0001288a",
+            "name": "Sheet",
+            "category": null,
+            "category_id": null,
+            "type_id": -1,
+            "pinned": false,
+            "group_id": -1,
+            "level_id": -1,
+            "location": null,
+            "bounds": null,
+            "host_id": null,
+            "family_name": null,
+            "placement_type": null,
+            "view_family": "Sheet",
+            "view_type": null,
+            "elevation": null
+          },
+          {
+            "document_session_id": "41b48df9-b654-4f88-ae20-1c36f36e713b",
+            "id": 75915,
+            "unique_id": "42eb2886-bbe4-469f-897b-4b39594f7390-0001288b",
+            "name": "Walkthrough",
+            "category": null,
+            "category_id": null,
+            "type_id": -1,
+            "pinned": false,
+            "group_id": -1,
+            "level_id": -1,
+            "location": null,
+            "bounds": null,
+            "host_id": null,
+            "family_name": null,
+            "placement_type": null,
+            "view_family": "Walkthrough",
+            "view_type": null,
+            "elevation": null
+          },
+          {
+            "document_session_id": "41b48df9-b654-4f88-ae20-1c36f36e713b",
+            "id": 75916,
+            "unique_id": "42eb2886-bbe4-469f-897b-4b39594f7390-0001288c",
+            "name": "Rendering",
+            "category": null,
+            "category_id": null,
+            "type_id": -1,
+            "pinned": false,
+            "group_id": -1,
+            "level_id": -1,
+            "location": null,
+            "bounds": null,
+            "host_id": null,
+            "family_name": null,
+            "placement_type": null,
+            "view_family": "ImageView",
+            "view_type": null,
+            "elevation": null
+          },
+          {
+            "document_session_id": "41b48df9-b654-4f88-ae20-1c36f36e713b",
+            "id": 75917,
+            "unique_id": "42eb2886-bbe4-469f-897b-4b39594f7390-0001288d",
+            "name": "Cost Report",
+            "category": null,
+            "category_id": null,
+            "type_id": -1,
+            "pinned": false,
+            "group_id": -1,
+            "level_id": -1,
+            "location": null,
+            "bounds": null,
+            "host_id": null,
+            "family_name": null,
+            "placement_type": null,
+            "view_family": "CostReport",
+            "view_type": null,
+            "elevation": null
+          },
+          {
+            "document_session_id": "41b48df9-b654-4f88-ae20-1c36f36e713b",
+            "id": 80663,
+            "unique_id": "7c26900c-8ab1-4a92-8dae-6dbd60fbad2f-00013b17",
+            "name": "Wall Section",
+            "category": null,
+            "category_id": null,
+            "type_id": -1,
+            "pinned": false,
+            "group_id": -1,
+            "level_id": -1,
+            "location": null,
+            "bounds": null,
+            "host_id": null,
+            "family_name": null,
+            "placement_type": null,
+            "view_family": "Section",
+            "view_type": null,
+            "elevation": null
+          },
+          {
+            "document_session_id": "41b48df9-b654-4f88-ae20-1c36f36e713b",
+            "id": 83169,
+            "unique_id": "b20812af-a644-42eb-b55b-45cf0863f9e3-000144e1",
+            "name": "Legend",
+            "category": null,
+            "category_id": null,
+            "type_id": -1,
+            "pinned": false,
+            "group_id": -1,
+            "level_id": -1,
+            "location": null,
+            "bounds": null,
+            "host_id": null,
+            "family_name": null,
+            "placement_type": null,
+            "view_family": "Legend",
+            "view_type": null,
+            "elevation": null
+          },
+          {
+            "document_session_id": "41b48df9-b654-4f88-ae20-1c36f36e713b",
+            "id": 85158,
+            "unique_id": "cacd2bf5-1bc3-4cfb-8692-99756445c888-00014ca6",
+            "name": "Loads Report",
+            "category": null,
+            "category_id": null,
+            "type_id": -1,
+            "pinned": false,
+            "group_id": -1,
+            "level_id": -1,
+            "location": null,
+            "bounds": null,
+            "host_id": null,
+            "family_name": null,
+            "placement_type": null,
+            "view_family": "LoadsReport",
+            "view_type": null,
+            "elevation": null
+          },
+          {
+            "document_session_id": "41b48df9-b654-4f88-ae20-1c36f36e713b",
+            "id": 85159,
+            "unique_id": "cacd2bf5-1bc3-4cfb-8692-99756445c888-00014ca7",
+            "name": "Pressure Loss Report",
+            "category": null,
+            "category_id": null,
+            "type_id": -1,
+            "pinned": false,
+            "group_id": -1,
+            "level_id": -1,
+            "location": null,
+            "bounds": null,
+            "host_id": null,
+            "family_name": null,
+            "placement_type": null,
+            "view_family": "PressureLossReport",
+            "view_type": null,
+            "elevation": null
+          },
+          {
+            "document_session_id": "41b48df9-b654-4f88-ae20-1c36f36e713b",
+            "id": 85160,
+            "unique_id": "cacd2bf5-1bc3-4cfb-8692-99756445c888-00014ca8",
+            "name": "Panel Schedule Report",
+            "category": null,
+            "category_id": null,
+            "type_id": -1,
+            "pinned": false,
+            "group_id": -1,
+            "level_id": -1,
+            "location": null,
+            "bounds": null,
+            "host_id": null,
+            "family_name": null,
+            "placement_type": null,
+            "view_family": "PanelSchedule",
+            "view_type": null,
+            "elevation": null
+          },
+          {
+            "document_session_id": "41b48df9-b654-4f88-ae20-1c36f36e713b",
+            "id": 100930,
+            "unique_id": "2219634f-479c-4f76-8306-45772e7e609d-00018a42",
+            "name": "Graphical Column Schedule",
+            "category": null,
+            "category_id": null,
+            "type_id": -1,
+            "pinned": false,
+            "group_id": -1,
+            "level_id": -1,
+            "location": null,
+            "bounds": null,
+            "host_id": null,
+            "family_name": null,
+            "placement_type": null,
+            "view_family": "GraphicalColumnSchedule",
+            "view_type": null,
+            "elevation": null
+          },
+          {
+            "document_session_id": "41b48df9-b654-4f88-ae20-1c36f36e713b",
+            "id": 101010,
+            "unique_id": "a3a48391-65cd-47ba-9a92-a2abbb36cfac-00018a92",
+            "name": "Structural Plan",
+            "category": null,
+            "category_id": null,
+            "type_id": -1,
+            "pinned": false,
+            "group_id": -1,
+            "level_id": -1,
+            "location": null,
+            "bounds": null,
+            "host_id": null,
+            "family_name": null,
+            "placement_type": null,
+            "view_family": "StructuralPlan",
+            "view_type": null,
+            "elevation": null
+          },
+          {
+            "document_session_id": "41b48df9-b654-4f88-ae20-1c36f36e713b",
+            "id": 307362,
+            "unique_id": "d5621198-2b08-49b4-8d35-601f5b7586ff-0004b0a2",
+            "name": "Analysis Report",
+            "category": null,
+            "category_id": null,
+            "type_id": -1,
+            "pinned": false,
+            "group_id": -1,
+            "level_id": -1,
+            "location": null,
+            "bounds": null,
+            "host_id": null,
+            "family_name": null,
+            "placement_type": null,
+            "view_family": "SystemsAnalysisReport",
+            "view_type": null,
+            "elevation": null
+          }
+        ],
+        "offset": 0,
+        "next_offset": null,
+        "units": "internal feet"
+      },
+      "error": null,
+      "cancel_requested": false,
+      "created_utc": "2026-10-14T05:30:31.5752710Z",
+      "finished_utc": "2026-10-14T05:30:31.6152852Z",
+      "elapsed_ms": 26.0523,
+      "transaction_status": "not_started"
+    },
+    "view": {
+      "schema_version": 1,
+      "operation_id": "d757ce27-3572-53f7-b492-8a50cf29faf7",
+      "status": "completed",
+      "request": {
+        "arguments": {
+          "kind": "drafting",
+          "name": "EXPORT PREFIX REGRESSION",
+          "scale": 24,
+          "type": "42eb2886-bbe4-469f-897b-4b39594f7390-00012885"
+        },
+        "document": {
+          "session_id": "41b48df9-b654-4f88-ae20-1c36f36e713b"
+        },
+        "operation": "view.create",
+        "operation_id": "d757ce27-3572-53f7-b492-8a50cf29faf7",
+        "preconditions": {},
+        "schema_version": 1
+      },
+      "result": {
+        "data": {
+          "document_session_id": "41b48df9-b654-4f88-ae20-1c36f36e713b",
+          "id": 315389,
+          "unique_id": "42b2eeab-7f92-49fd-bdad-1a2e74874afa-0004cffd",
+          "name": "EXPORT PREFIX REGRESSION",
+          "category": "Views",
+          "category_id": -2000279,
+          "type_id": 75909,
+          "pinned": false,
+          "group_id": -1,
+          "level_id": -1,
+          "location": null,
+          "bounds": {
+            "min": [
+              -100,
+              -100,
+              -1000
+            ],
+            "max": [
+              100,
+              100,
+              -0.1
+            ]
+          },
+          "host_id": null,
+          "family_name": null,
+          "placement_type": null,
+          "view_family": null,
+          "view_type": "DraftingView",
+          "elevation": null
+        },
+        "transaction_status": "committed",
+        "actual_elements": [
+          {
+            "document_session_id": "41b48df9-b654-4f88-ae20-1c36f36e713b",
+            "id": 315389,
+            "unique_id": "42b2eeab-7f92-49fd-bdad-1a2e74874afa-0004cffd",
+            "name": "EXPORT PREFIX REGRESSION",
+            "category": "Views",
+            "category_id": -2000279,
+            "type_id": 75909,
+            "pinned": false,
+            "group_id": -1,
+            "level_id": -1,
+            "location": null,
+            "bounds": {
+              "min": [
+                -100,
+                -100,
+                -1000
+              ],
+              "max": [
+                100,
+                100,
+                -0.1
+              ]
+            },
+            "host_id": null,
+            "family_name": null,
+            "placement_type": null,
+            "view_family": null,
+            "view_type": "DraftingView",
+            "elevation": null
+          }
+        ],
+        "warnings": []
+      },
+      "error": null,
+      "cancel_requested": false,
+      "created_utc": "2026-10-14T05:30:31.9338370Z",
+      "finished_utc": "2026-10-14T05:30:32.0005191Z",
+      "elapsed_ms": 56.3734,
+      "transaction_status": "committed"
+    },
+    "texttypes": {
+      "schema_version": 1,
+      "operation_id": "ffaf0e4b-f78c-5986-98cd-04fbaee701d7",
+      "status": "completed",
+      "request": {
+        "arguments": {
+          "class": "TextNoteType",
+          "types": true
+        },
+        "document": {
+          "session_id": "41b48df9-b654-4f88-ae20-1c36f36e713b"
+        },
+        "operation": "elements.query",
+        "operation_id": "ffaf0e4b-f78c-5986-98cd-04fbaee701d7",
+        "preconditions": {},
+        "schema_version": 1
+      },
+      "result": {
+        "items": [
+          {
+            "document_session_id": "41b48df9-b654-4f88-ae20-1c36f36e713b",
+            "id": 234,
+            "unique_id": "933c4a06-93b8-11d3-80f8-00c04f8efc32-000000ea",
+            "name": "1/4\" Arial",
+            "category": null,
+            "category_id": null,
+            "type_id": -1,
+            "pinned": false,
+            "group_id": -1,
+            "level_id": -1,
+            "location": null,
+            "bounds": null,
+            "host_id": null,
+            "family_name": null,
+            "placement_type": null,
+            "view_family": null,
+            "view_type": null,
+            "elevation": null
+          },
+          {
+            "document_session_id": "41b48df9-b654-4f88-ae20-1c36f36e713b",
+            "id": 10352,
+            "unique_id": "7169facf-e488-11d3-9188-0000863f27ad-00002870",
+            "name": "3/32\" Arial",
+            "category": null,
+            "category_id": null,
+            "type_id": -1,
+            "pinned": false,
+            "group_id": -1,
+            "level_id": -1,
+            "location": null,
+            "bounds": null,
+            "host_id": null,
+            "family_name": null,
+            "placement_type": null,
+            "view_family": null,
+            "view_type": null,
+            "elevation": null
+          },
+          {
+            "document_session_id": "41b48df9-b654-4f88-ae20-1c36f36e713b",
+            "id": 179068,
+            "unique_id": "33dbb7c2-aae5-4edf-8d61-b103b9be2fde-0002bb7c",
+            "name": "Schedule Default",
+            "category": null,
+            "category_id": null,
+            "type_id": -1,
+            "pinned": false,
+            "group_id": -1,
+            "level_id": -1,
+            "location": null,
+            "bounds": null,
+            "host_id": null,
+            "family_name": null,
+            "placement_type": null,
+            "view_family": null,
+            "view_type": null,
+            "elevation": null
+          }
+        ],
+        "offset": 0,
+        "next_offset": null,
+        "units": "internal feet"
+      },
+      "error": null,
+      "cancel_requested": false,
+      "created_utc": "2026-10-14T05:30:32.3579848Z",
+      "finished_utc": "2026-10-14T05:30:32.3700718Z",
+      "elapsed_ms": 1.009,
+      "transaction_status": "not_started"
+    },
+    "text": {
+      "schema_version": 1,
+      "operation_id": "11706df1-2dca-5d83-89ce-d59ff795ab41",
+      "status": "completed",
+      "request": {
+        "arguments": {
+          "point": [
+            0,
+            0,
+            0
+          ],
+          "text": "IMMUTABLE NATIVE EXPORT TEST",
+          "type": "933c4a06-93b8-11d3-80f8-00c04f8efc32-000000ea",
+          "view": "42b2eeab-7f92-49fd-bdad-1a2e74874afa-0004cffd"
+        },
+        "document": {
+          "session_id": "41b48df9-b654-4f88-ae20-1c36f36e713b"
+        },
+        "operation": "annotation.text",
+        "operation_id": "11706df1-2dca-5d83-89ce-d59ff795ab41",
+        "preconditions": {},
+        "schema_version": 1
+      },
+      "result": {
+        "data": {
+          "document_session_id": "41b48df9-b654-4f88-ae20-1c36f36e713b",
+          "id": 315396,
+          "unique_id": "42b2eeab-7f92-49fd-bdad-1a2e74874afa-0004d004",
+          "name": "1/4\" Arial",
+          "category": "Text Notes",
+          "category_id": -2000300,
+          "type_id": 234,
+          "pinned": false,
+          "group_id": -1,
+          "level_id": -1,
+          "location": null,
+          "bounds": null,
+          "host_id": null,
+          "family_name": null,
+          "placement_type": null,
+          "view_family": null,
+          "view_type": null,
+          "elevation": null
+        },
+        "transaction_status": "committed",
+        "actual_elements": [
+          {
+            "document_session_id": "41b48df9-b654-4f88-ae20-1c36f36e713b",
+            "id": 315396,
+            "unique_id": "42b2eeab-7f92-49fd-bdad-1a2e74874afa-0004d004",
+            "name": "1/4\" Arial",
+            "category": "Text Notes",
+            "category_id": -2000300,
+            "type_id": 234,
+            "pinned": false,
+            "group_id": -1,
+            "level_id": -1,
+            "location": null,
+            "bounds": null,
+            "host_id": null,
+            "family_name": null,
+            "placement_type": null,
+            "view_family": null,
+            "view_type": null,
+            "elevation": null
+          }
+        ],
+        "warnings": []
+      },
+      "error": null,
+      "cancel_requested": false,
+      "created_utc": "2026-10-14T05:30:32.7554587Z",
+      "finished_utc": "2026-10-14T05:30:32.7813351Z",
+      "elapsed_ms": 14.7149,
+      "transaction_status": "committed"
+    },
+    "first": {
+      "schema_version": 1,
+      "operation_id": "5e7eb87a-86f0-54c3-95a7-88c3c4927941",
+      "status": "completed",
+      "request": {
+        "arguments": {
+          "path_prefix": "H:\\Games\\3D Modeling Workflows\\3D Model Workflow\\output\\codex-native-revit-20261013\\evidence\\export-safety-final\\safe_first",
+          "pixels": 1000,
+          "view": "42b2eeab-7f92-49fd-bdad-1a2e74874afa-0004cffd"
+        },
+        "document": {
+          "session_id": "41b48df9-b654-4f88-ae20-1c36f36e713b"
+        },
+        "operation": "capture.export",
+        "operation_id": "5e7eb87a-86f0-54c3-95a7-88c3c4927941",
+        "preconditions": {},
+        "schema_version": 1
+      },
+      "result": {
+        "files": [
+          "H:\\Games\\3D Modeling Workflows\\3D Model Workflow\\output\\codex-native-revit-20261013\\evidence\\export-safety-final\\safe_first - Drafting View - EXPORT PREFIX REGRESSION.png"
+        ],
+        "native_export": true
+      },
+      "error": null,
+      "cancel_requested": false,
+      "created_utc": "2026-10-14T05:30:33.1607509Z",
+      "finished_utc": "2026-10-14T05:30:33.4227592Z",
+      "elapsed_ms": 247.5563,
+      "transaction_status": "not_started"
+    },
+    "rejected-dotted": {
+      "schema_version": 1,
+      "operation_id": "1d48f76c-f615-418b-9e74-8c781a923fea",
+      "status": "failed",
+      "request": {
+        "arguments": {
+          "path_prefix": "H:\\Games\\3D Modeling Workflows\\3D Model Workflow\\output\\codex-native-revit-20261013\\evidence\\export-safety-final\\safe_first.changed",
+          "pixels": 1000,
+          "view": "42b2eeab-7f92-49fd-bdad-1a2e74874afa-0004cffd"
+        },
+        "document": {
+          "session_id": "41b48df9-b654-4f88-ae20-1c36f36e713b"
+        },
+        "operation": "capture.export",
+        "operation_id": "1d48f76c-f615-418b-9e74-8c781a923fea",
+        "preconditions": {},
+        "schema_version": 1
+      },
+      "result": null,
+      "error": {
+        "code": "ArgumentException",
+        "message": "Capture prefix filename must contain no dots or extension: Revit truncates dotted prefixes and can overwrite another export. Use underscores instead.",
+        "details": null
+      },
+      "cancel_requested": false,
+      "created_utc": "2026-10-14T05:30:33.9538559Z",
+      "finished_utc": "2026-10-14T05:30:33.9682434Z",
+      "elapsed_ms": 0.8269,
+      "transaction_status": "not_started"
+    },
+    "rejected-existing": {
+      "schema_version": 1,
+      "operation_id": "739f806d-d217-48b6-91b6-0d576fc898ab",
+      "status": "failed",
+      "request": {
+        "arguments": {
+          "path_prefix": "H:\\Games\\3D Modeling Workflows\\3D Model Workflow\\output\\codex-native-revit-20261013\\evidence\\export-safety-final\\safe_first",
+          "pixels": 1000,
+          "view": "42b2eeab-7f92-49fd-bdad-1a2e74874afa-0004cffd"
+        },
+        "document": {
+          "session_id": "41b48df9-b654-4f88-ae20-1c36f36e713b"
+        },
+        "operation": "capture.export",
+        "operation_id": "739f806d-d217-48b6-91b6-0d576fc898ab",
+        "preconditions": {},
+        "schema_version": 1
+      },
+      "result": null,
+      "error": {
+        "code": "ArgumentException",
+        "message": "Capture prefix already exists.",
+        "details": null
+      },
+      "cancel_requested": false,
+      "created_utc": "2026-10-14T05:30:34.2889301Z",
+      "finished_utc": "2026-10-14T05:30:34.3060508Z",
+      "elapsed_ms": 3.3411,
+      "transaction_status": "not_started"
+    },
+    "rejected-relative": {
+      "schema_version": 1,
+      "operation_id": "56bd2b7e-ebbb-4be4-92f8-5f50098fb65b",
+      "status": "failed",
+      "request": {
+        "arguments": {
+          "path_prefix": "relative_prefix",
+          "pixels": 1000,
+          "view": "42b2eeab-7f92-49fd-bdad-1a2e74874afa-0004cffd"
+        },
+        "document": {
+          "session_id": "41b48df9-b654-4f88-ae20-1c36f36e713b"
+        },
+        "operation": "capture.export",
+        "operation_id": "56bd2b7e-ebbb-4be4-92f8-5f50098fb65b",
+        "preconditions": {},
+        "schema_version": 1
+      },
+      "result": null,
+      "error": {
+        "code": "ArgumentException",
+        "message": "Capture requires an absolute path prefix.",
+        "details": null
+      },
+      "cancel_requested": false,
+      "created_utc": "2026-10-14T05:30:34.8370055Z",
+      "finished_utc": "2026-10-14T05:30:34.8613963Z",
+      "elapsed_ms": 0.5546,
+      "transaction_status": "not_started"
+    },
+    "second": {
+      "schema_version": 1,
+      "operation_id": "af5a1676-aa7a-5778-aaf6-06aad428d7c0",
+      "status": "completed",
+      "request": {
+        "arguments": {
+          "path_prefix": "H:\\Games\\3D Modeling Workflows\\3D Model Workflow\\output\\codex-native-revit-20261013\\evidence\\export-safety-final\\safe_second",
+          "pixels": 1000,
+          "view": "42b2eeab-7f92-49fd-bdad-1a2e74874afa-0004cffd"
+        },
+        "document": {
+          "session_id": "41b48df9-b654-4f88-ae20-1c36f36e713b"
+        },
+        "operation": "capture.export",
+        "operation_id": "af5a1676-aa7a-5778-aaf6-06aad428d7c0",
+        "preconditions": {},
+        "schema_version": 1
+      },
+      "result": {
+        "files": [
+          "H:\\Games\\3D Modeling Workflows\\3D Model Workflow\\output\\codex-native-revit-20261013\\evidence\\export-safety-final\\safe_second - Drafting View - EXPORT PREFIX REGRESSION.png"
+        ],
+        "native_export": true
+      },
+      "error": null,
+      "cancel_requested": false,
+      "created_utc": "2026-10-14T05:30:35.2954341Z",
+      "finished_utc": "2026-10-14T05:30:35.4288363Z",
+      "elapsed_ms": 120.5286,
+      "transaction_status": "not_started"
+    }
+  },
+  "checks": {
+    "nonempty-actual-file-list": {
+      "actual": true,
+      "expected": true,
+      "pass": true
+    },
+    "dotted-rejected": {
+      "actual": "failed",
+      "expected": "failed",
+      "pass": true
+    },
+    "dotted-preserved-safe_first - Drafting View - EXPORT PREFIX REGRESSION.png": {
+      "actual": "b9c0bfa651682b7604c2c20df74d8bf5e36ae8df70d9badf0ea8f88af93a61ea",
+      "expected": "b9c0bfa651682b7604c2c20df74d8bf5e36ae8df70d9badf0ea8f88af93a61ea",
+      "pass": true
+    },
+    "existing-rejected": {
+      "actual": "failed",
+      "expected": "failed",
+      "pass": true
+    },
+    "existing-preserved-safe_first - Drafting View - EXPORT PREFIX REGRESSION.png": {
+      "actual": "b9c0bfa651682b7604c2c20df74d8bf5e36ae8df70d9badf0ea8f88af93a61ea",
+      "expected": "b9c0bfa651682b7604c2c20df74d8bf5e36ae8df70d9badf0ea8f88af93a61ea",
+      "pass": true
+    },
+    "relative-rejected": {
+      "actual": "failed",
+      "expected": "failed",
+      "pass": true
+    },
+    "relative-preserved-safe_first - Drafting View - EXPORT PREFIX REGRESSION.png": {
+      "actual": "b9c0bfa651682b7604c2c20df74d8bf5e36ae8df70d9badf0ea8f88af93a61ea",
+      "expected": "b9c0bfa651682b7604c2c20df74d8bf5e36ae8df70d9badf0ea8f88af93a61ea",
+      "pass": true
+    },
+    "second-native-file-list": {
+      "actual": true,
+      "expected": true,
+      "pass": true
+    },
+    "second-preserves-first-safe_first - Drafting View - EXPORT PREFIX REGRESSION.png": {
+      "actual": "b9c0bfa651682b7604c2c20df74d8bf5e36ae8df70d9badf0ea8f88af93a61ea",
+      "expected": "b9c0bfa651682b7604c2c20df74d8bf5e36ae8df70d9badf0ea8f88af93a61ea",
+      "pass": true
+    }
+  },
+  "native": true,
+  "original_export_hashes": {
+    "H:\\Games\\3D Modeling Workflows\\3D Model Workflow\\output\\codex-native-revit-20261013\\evidence\\export-safety-final\\safe_first - Drafting View - EXPORT PREFIX REGRESSION.png": "b9c0bfa651682b7604c2c20df74d8bf5e36ae8df70d9badf0ea8f88af93a61ea"
+  }
+}

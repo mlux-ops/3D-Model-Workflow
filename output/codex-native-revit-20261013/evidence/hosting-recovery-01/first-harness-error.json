@@ -1,0 +1,2607 @@
+{
+  "run_id": "395e3a01-ebc0-4eaa-ac6b-c935b1f384a6",
+  "status": "incomplete",
+  "steps": {
+    "project": {
+      "schema_version": 1,
+      "operation_id": "e347ed67-544a-5d10-96af-d02ffe87f8db",
+      "status": "completed",
+      "request": {
+        "arguments": {
+          "template": "C:\\ProgramData\\Autodesk\\RVT 2025\\Templates\\Default_I_ENU.rte"
+        },
+        "document": {},
+        "operation": "document.create",
+        "operation_id": "e347ed67-544a-5d10-96af-d02ffe87f8db",
+        "preconditions": {},
+        "schema_version": 1
+      },
+      "result": {
+        "session_id": "487c6ada-2fc8-44a2-91d5-7e45ac56621a",
+        "title": "Project3",
+        "path": "",
+        "is_family": false,
+        "is_read_only": false,
+        "is_modified": false,
+        "is_workshared": false
+      },
+      "error": null,
+      "cancel_requested": false,
+      "created_utc": "2026-10-14T05:03:17.1135422Z",
+      "finished_utc": "2026-10-14T05:03:17.4978621Z",
+      "elapsed_ms": 371.6495,
+      "transaction_status": "not_started"
+    },
+    "levels": {
+      "schema_version": 1,
+      "operation_id": "2ed48658-6fc2-5969-8df6-1807d1798d03",
+      "status": "completed",
+      "request": {
+        "arguments": {
+          "class": "Level"
+        },
+        "document": {
+          "session_id": "487c6ada-2fc8-44a2-91d5-7e45ac56621a"
+        },
+        "operation": "elements.query",
+        "operation_id": "2ed48658-6fc2-5969-8df6-1807d1798d03",
+        "preconditions": {},
+        "schema_version": 1
+      },
+      "result": {
+        "items": [
+          {
+            "document_session_id": "487c6ada-2fc8-44a2-91d5-7e45ac56621a",
+            "id": 30,
+            "unique_id": "933c4a06-93b8-11d3-80f8-00c04f8efc32-0000001e",
+            "name": "Level 1",
+            "category": "Levels",
+            "category_id": -2000240,
+            "type_id": 27,
+            "pinned": false,
+            "group_id": -1,
+            "level_id": -1,
+            "location": null,
+            "bounds": null,
+            "host_id": null,
+            "family_name": null,
+            "placement_type": null,
+            "view_family": null,
+            "view_type": null,
+            "elevation": 0
+          },
+          {
+            "document_session_id": "487c6ada-2fc8-44a2-91d5-7e45ac56621a",
+            "id": 9946,
+            "unique_id": "6341822b-d4f3-11d3-a039-0000863f1523-000026da",
+            "name": "Level 2",
+            "category": "Levels",
+            "category_id": -2000240,
+            "type_id": 27,
+            "pinned": false,
+            "group_id": -1,
+            "level_id": -1,
+            "location": null,
+            "bounds": null,
+            "host_id": null,
+            "family_name": null,
+            "placement_type": null,
+            "view_family": null,
+            "view_type": null,
+            "elevation": 9.999999999998435
+          }
+        ],
+        "offset": 0,
+        "next_offset": null,
+        "units": "internal feet"
+      },
+      "error": null,
+      "cancel_requested": false,
+      "created_utc": "2026-10-14T05:03:17.9958975Z",
+      "finished_utc": "2026-10-14T05:03:18.0106450Z",
+      "elapsed_ms": 1.6169,
+      "transaction_status": "not_started"
+    },
+    "wall-types": {
+      "schema_version": 1,
+      "operation_id": "630e3cb7-355f-58a6-a16a-55f315bb1245",
+      "status": "completed",
+      "request": {
+        "arguments": {
+          "class": "WallType",
+          "types": true
+        },
+        "document": {
+          "session_id": "487c6ada-2fc8-44a2-91d5-7e45ac56621a"
+        },
+        "operation": "elements.query",
+        "operation_id": "630e3cb7-355f-58a6-a16a-55f315bb1245",
+        "preconditions": {},
+        "schema_version": 1
+      },
+      "result": {
+        "items": [
+          {
+            "document_session_id": "487c6ada-2fc8-44a2-91d5-7e45ac56621a",
+            "id": 219,
+            "unique_id": "933c4a06-93b8-11d3-80f8-00c04f8efc32-000000db",
+            "name": "Generic - 6\"",
+            "category": "Walls",
+            "category_id": -2000011,
+            "type_id": -1,
+            "pinned": false,
+            "group_id": -1,
+            "level_id": -1,
+            "location": null,
+            "bounds": null,
+            "host_id": null,
+            "family_name": null,
+            "placement_type": null,
+            "view_family": null,
+            "view_type": null,
+            "elevation": null
+          },
+          {
+            "document_session_id": "487c6ada-2fc8-44a2-91d5-7e45ac56621a",
+            "id": 220,
+            "unique_id": "933c4a06-93b8-11d3-80f8-00c04f8efc32-000000dc",
+            "name": "Interior - 5\" Partition (2-hr)",
+            "category": "Walls",
+            "category_id": -2000011,
+            "type_id": -1,
+            "pinned": false,
+            "group_id": -1,
+            "level_id": -1,
+            "location": null,
+            "bounds": null,
+            "host_id": null,
+            "family_name": null,
+            "placement_type": null,
+            "view_family": null,
+            "view_type": null,
+            "elevation": null
+          },
+          {
+            "document_session_id": "487c6ada-2fc8-44a2-91d5-7e45ac56621a",
+            "id": 221,
+            "unique_id": "933c4a06-93b8-11d3-80f8-00c04f8efc32-000000dd",
+            "name": "Exterior - Brick on Mtl. Stud",
+            "category": "Walls",
+            "category_id": -2000011,
+            "type_id": -1,
+            "pinned": false,
+            "group_id": -1,
+            "level_id": -1,
+            "location": null,
+            "bounds": null,
+            "host_id": null,
+            "family_name": null,
+            "placement_type": null,
+            "view_family": null,
+            "view_type": null,
+            "elevation": null
+          },
+          {
+            "document_session_id": "487c6ada-2fc8-44a2-91d5-7e45ac56621a",
+            "id": 249,
+            "unique_id": "933c54e0-93b8-11d3-80f8-00c04f8efc32-000000f9",
+            "name": "Generic - 8\"",
+            "category": "Walls",
+            "category_id": -2000011,
+            "type_id": -1,
+            "pinned": false,
+            "group_id": -1,
+            "level_id": -1,
+            "location": null,
+            "bounds": null,
+            "host_id": null,
+            "family_name": null,
+            "placement_type": null,
+            "view_family": null,
+            "view_type": null,
+            "elevation": null
+          },
+          {
+            "document_session_id": "487c6ada-2fc8-44a2-91d5-7e45ac56621a",
+            "id": 250,
+            "unique_id": "933c54e0-93b8-11d3-80f8-00c04f8efc32-000000fa",
+            "name": "Exterior - Brick on CMU",
+            "category": "Walls",
+            "category_id": -2000011,
+            "type_id": -1,
+            "pinned": false,
+            "group_id": -1,
+            "level_id": -1,
+            "location": null,
+            "bounds": null,
+            "host_id": null,
+            "family_name": null,
+            "placement_type": null,
+            "view_family": null,
+            "view_type": null,
+            "elevation": null
+          },
+          {
+            "document_session_id": "487c6ada-2fc8-44a2-91d5-7e45ac56621a",
+            "id": 251,
+            "unique_id": "933c54e0-93b8-11d3-80f8-00c04f8efc32-000000fb",
+            "name": "Generic - 12\"",
+            "category": "Walls",
+            "category_id": -2000011,
+            "type_id": -1,
+            "pinned": false,
+            "group_id": -1,
+            "level_id": -1,
+            "location": null,
+            "bounds": null,
+            "host_id": null,
+            "family_name": null,
+            "placement_type": null,
+            "view_family": null,
+            "view_type": null,
+            "elevation": null
+          },
+          {
+            "document_session_id": "487c6ada-2fc8-44a2-91d5-7e45ac56621a",
+            "id": 252,
+            "unique_id": "933c54e0-93b8-11d3-80f8-00c04f8efc32-000000fc",
+            "name": "Generic - 5\"",
+            "category": "Walls",
+            "category_id": -2000011,
+            "type_id": -1,
+            "pinned": false,
+            "group_id": -1,
+            "level_id": -1,
+            "location": null,
+            "bounds": null,
+            "host_id": null,
+            "family_name": null,
+            "placement_type": null,
+            "view_family": null,
+            "view_type": null,
+            "elevation": null
+          },
+          {
+            "document_session_id": "487c6ada-2fc8-44a2-91d5-7e45ac56621a",
+            "id": 253,
+            "unique_id": "933c54e1-93b8-11d3-80f8-00c04f8efc32-000000fd",
+            "name": "Generic - 12\" Masonry",
+            "category": "Walls",
+            "category_id": -2000011,
+            "type_id": -1,
+            "pinned": false,
+            "group_id": -1,
+            "level_id": -1,
+            "location": null,
+            "bounds": null,
+            "host_id": null,
+            "family_name": null,
+            "placement_type": null,
+            "view_family": null,
+            "view_type": null,
+            "elevation": null
+          },
+          {
+            "document_session_id": "487c6ada-2fc8-44a2-91d5-7e45ac56621a",
+            "id": 254,
+            "unique_id": "933c54e1-93b8-11d3-80f8-00c04f8efc32-000000fe",
+            "name": "Generic - 8\" Masonry",
+            "category": "Walls",
+            "category_id": -2000011,
+            "type_id": -1,
+            "pinned": false,
+            "group_id": -1,
+            "level_id": -1,
+            "location": null,
+            "bounds": null,
+            "host_id": null,
+            "family_name": null,
+            "placement_type": null,
+            "view_family": null,
+            "view_type": null,
+            "elevation": null
+          },
+          {
+            "document_session_id": "487c6ada-2fc8-44a2-91d5-7e45ac56621a",
+            "id": 255,
+            "unique_id": "933c54e1-93b8-11d3-80f8-00c04f8efc32-000000ff",
+            "name": "Generic - 6\" Masonry",
+            "category": "Walls",
+            "category_id": -2000011,
+            "type_id": -1,
+            "pinned": false,
+            "group_id": -1,
+            "level_id": -1,
+            "location": null,
+            "bounds": null,
+            "host_id": null,
+            "family_name": null,
+            "placement_type": null,
+            "view_family": null,
+            "view_type": null,
+            "elevation": null
+          },
+          {
+            "document_session_id": "487c6ada-2fc8-44a2-91d5-7e45ac56621a",
+            "id": 256,
+            "unique_id": "933c54e1-93b8-11d3-80f8-00c04f8efc32-00000100",
+            "name": "Exterior - CMU Insulated",
+            "category": "Walls",
+            "category_id": -2000011,
+            "type_id": -1,
+            "pinned": false,
+            "group_id": -1,
+            "level_id": -1,
+            "location": null,
+            "bounds": null,
+            "host_id": null,
+            "family_name": null,
+            "placement_type": null,
+            "view_family": null,
+            "view_type": null,
+            "elevation": null
+          },
+          {
+            "document_session_id": "487c6ada-2fc8-44a2-91d5-7e45ac56621a",
+            "id": 257,
+            "unique_id": "933c54e1-93b8-11d3-80f8-00c04f8efc32-00000101",
+            "name": "Generic - 4\" Brick",
+            "category": "Walls",
+            "category_id": -2000011,
+            "type_id": -1,
+            "pinned": false,
+            "group_id": -1,
+            "level_id": -1,
+            "location": null,
+            "bounds": null,
+            "host_id": null,
+            "family_name": null,
+            "placement_type": null,
+            "view_family": null,
+            "view_type": null,
+            "elevation": null
+          },
+          {
+            "document_session_id": "487c6ada-2fc8-44a2-91d5-7e45ac56621a",
+            "id": 258,
+            "unique_id": "933c54e1-93b8-11d3-80f8-00c04f8efc32-00000102",
+            "name": "Interior - 3 1/8\" Partition (1-hr)",
+            "category": "Walls",
+            "category_id": -2000011,
+            "type_id": -1,
+            "pinned": false,
+            "group_id": -1,
+            "level_id": -1,
+            "location": null,
+            "bounds": null,
+            "host_id": null,
+            "family_name": null,
+            "placement_type": null,
+            "view_family": null,
+            "view_type": null,
+            "elevation": null
+          },
+          {
+            "document_session_id": "487c6ada-2fc8-44a2-91d5-7e45ac56621a",
+            "id": 261,
+            "unique_id": "b0ff40ff-93b6-11d3-80f8-00c04f8efc32-00000105",
+            "name": "Interior - 4 7/8\" Partition (1-hr)",
+            "category": "Walls",
+            "category_id": -2000011,
+            "type_id": -1,
+            "pinned": false,
+            "group_id": -1,
+            "level_id": -1,
+            "location": null,
+            "bounds": null,
+            "host_id": null,
+            "family_name": null,
+            "placement_type": null,
+            "view_family": null,
+            "view_type": null,
+            "elevation": null
+          },
+          {
+            "document_session_id": "487c6ada-2fc8-44a2-91d5-7e45ac56621a",
+            "id": 262,
+            "unique_id": "b0ff411c-93b6-11d3-80f8-00c04f8efc32-00000106",
+            "name": "Interior - 6 1/8\" Partition (2-hr)",
+            "category": "Walls",
+            "category_id": -2000011,
+            "type_id": -1,
+            "pinned": false,
+            "group_id": -1,
+            "level_id": -1,
+            "location": null,
+            "bounds": null,
+            "host_id": null,
+            "family_name": null,
+            "placement_type": null,
+            "view_family": null,
+            "view_type": null,
+            "elevation": null
+          },
+          {
+            "document_session_id": "487c6ada-2fc8-44a2-91d5-7e45ac56621a",
+            "id": 263,
+            "unique_id": "b0ff411d-93b6-11d3-80f8-00c04f8efc32-00000107",
+            "name": "Interior - 5 1/2\" Partition (1-hr)",
+            "category": "Walls",
+            "category_id": -2000011,
+            "type_id": -1,
+            "pinned": false,
+            "group_id": -1,
+            "level_id": -1,
+            "location": null,
+            "bounds": null,
+            "host_id": null,
+            "family_name": null,
+            "placement_type": null,
+            "view_family": null,
+            "view_type": null,
+            "elevation": null
+          },
+          {
+            "document_session_id": "487c6ada-2fc8-44a2-91d5-7e45ac56621a",
+            "id": 264,
+            "unique_id": "b0ff411e-93b6-11d3-80f8-00c04f8efc32-00000108",
+            "name": "Exterior - EIFS on Mtl. Stud",
+            "category": "Walls",
+            "category_id": -2000011,
+            "type_id": -1,
+            "pinned": false,
+            "group_id": -1,
+            "level_id": -1,
+            "location": null,
+            "bounds": null,
+            "host_id": null,
+            "family_name": null,
+            "placement_type": null,
+            "view_family": null,
+            "view_type": null,
+            "elevation": null
+          },
+          {
+            "document_session_id": "487c6ada-2fc8-44a2-91d5-7e45ac56621a",
+            "id": 21854,
+            "unique_id": "b0b76196-1902-482f-b464-0488e33408cc-0000555e",
+            "name": "Curtain Wall 1",
+            "category": "Walls",
+            "category_id": -2000011,
+            "type_id": -1,
+            "pinned": false,
+            "group_id": -1,
+            "level_id": -1,
+            "location": null,
+            "bounds": null,
+            "host_id": null,
+            "family_name": null,
+            "placement_type": null,
+            "view_family": null,
+            "view_type": null,
+            "elevation": null
+          },
+          {
+            "document_session_id": "487c6ada-2fc8-44a2-91d5-7e45ac56621a",
+            "id": 29243,
+            "unique_id": "11378b51-2d3a-48f2-93a3-9f7d59040dce-0000723b",
+            "name": "Foundation - 12\" Concrete",
+            "category": "Walls",
+            "category_id": -2000011,
+            "type_id": -1,
+            "pinned": false,
+            "group_id": -1,
+            "level_id": -1,
+            "location": null,
+            "bounds": null,
+            "host_id": null,
+            "family_name": null,
+            "placement_type": null,
+            "view_family": null,
+            "view_type": null,
+            "elevation": null
+          },
+          {
+            "document_session_id": "487c6ada-2fc8-44a2-91d5-7e45ac56621a",
+            "id": 29244,
+            "unique_id": "11378b51-2d3a-48f2-93a3-9f7d59040dce-0000723c",
+            "name": "Retaining - 12\" Concrete",
+            "category": "Walls",
+            "category_id": -2000011,
+            "type_id": -1,
+            "pinned": false,
+            "group_id": -1,
+            "level_id": -1,
+            "location": null,
+            "bounds": null,
+            "host_id": null,
+            "family_name": null,
+            "placement_type": null,
+            "view_family": null,
+            "view_type": null,
+            "elevation": null
+          },
+          {
+            "document_session_id": "487c6ada-2fc8-44a2-91d5-7e45ac56621a",
+            "id": 43831,
+            "unique_id": "d4ea8d98-8854-4658-8262-84bea4d66d6f-0000ab37",
+            "name": "Generic - 8\" - Filled",
+            "category": "Walls",
+            "category_id": -2000011,
+            "type_id": -1,
+            "pinned": false,
+            "group_id": -1,
+            "level_id": -1,
+            "location": null,
+            "bounds": null,
+            "host_id": null,
+            "family_name": null,
+            "placement_type": null,
+            "view_family": null,
+            "view_type": null,
+            "elevation": null
+          },
+          {
+            "document_session_id": "487c6ada-2fc8-44a2-91d5-7e45ac56621a",
+            "id": 45098,
+            "unique_id": "a81de4e0-0363-42ce-b778-cf9bc0e86b60-0000b02a",
+            "name": "Soffit - 1/2\" GWB & Metal Stud",
+            "category": "Walls",
+            "category_id": -2000011,
+            "type_id": -1,
+            "pinned": false,
+            "group_id": -1,
+            "level_id": -1,
+            "location": null,
+            "bounds": null,
+            "host_id": null,
+            "family_name": null,
+            "placement_type": null,
+            "view_family": null,
+            "view_type": null,
+            "elevation": null
+          },
+          {
+            "document_session_id": "487c6ada-2fc8-44a2-91d5-7e45ac56621a",
+            "id": 47381,
+            "unique_id": "22408d62-e4e7-4b75-9b8b-a2a157a1c32f-0000b915",
+            "name": "Exterior - Brick and CMU on MTL. Stud",
+            "category": "Walls",
+            "category_id": -2000011,
+            "type_id": -1,
+            "pinned": false,
+            "group_id": -1,
+            "level_id": -1,
+            "location": null,
+            "bounds": null,
+            "host_id": null,
+            "family_name": null,
+            "placement_type": null,
+            "view_family": null,
+            "view_type": null,
+            "elevation": null
+          },
+          {
+            "document_session_id": "487c6ada-2fc8-44a2-91d5-7e45ac56621a",
+            "id": 56765,
+            "unique_id": "3c13a3b1-a00f-4862-9e11-ca8a6bcf2126-0000ddbd",
+            "name": "Storefront",
+            "category": "Walls",
+            "category_id": -2000011,
+            "type_id": -1,
+            "pinned": false,
+            "group_id": -1,
+            "level_id": -1,
+            "location": null,
+            "bounds": null,
+            "host_id": null,
+            "family_name": null,
+            "placement_type": null,
+            "view_family": null,
+            "view_type": null,
+            "elevation": null
+          },
+          {
+            "document_session_id": "487c6ada-2fc8-44a2-91d5-7e45ac56621a",
+            "id": 56766,
+            "unique_id": "3c13a3b1-a00f-4862-9e11-ca8a6bcf2126-0000ddbe",
+            "name": "Exterior Glazing",
+            "category": "Walls",
+            "category_id": -2000011,
+            "type_id": -1,
+            "pinned": false,
+            "group_id": -1,
+            "level_id": -1,
+            "location": null,
+            "bounds": null,
+            "host_id": null,
+            "family_name": null,
+            "placement_type": null,
+            "view_family": null,
+            "view_type": null,
+            "elevation": null
+          },
+          {
+            "document_session_id": "487c6ada-2fc8-44a2-91d5-7e45ac56621a",
+            "id": 76677,
+            "unique_id": "7cacd49c-ac17-4591-ad0a-cbc9bb40015a-00012b85",
+            "name": "Exterior - Brick Over CMU w Metal Stud",
+            "category": "Stacked Walls",
+            "category_id": -2003500,
+            "type_id": -1,
+            "pinned": false,
+            "group_id": -1,
+            "level_id": -1,
+            "location": null,
+            "bounds": null,
+            "host_id": null,
+            "family_name": null,
+            "placement_type": null,
+            "view_family": null,
+            "view_type": null,
+            "elevation": null
+          },
+          {
+            "document_session_id": "487c6ada-2fc8-44a2-91d5-7e45ac56621a",
+            "id": 83171,
+            "unique_id": "fcb996df-2e6e-4994-b4be-7b0dbb166632-000144e3",
+            "name": "Exterior - CMU on Mtl. Stud",
+            "category": "Walls",
+            "category_id": -2000011,
+            "type_id": -1,
+            "pinned": false,
+            "group_id": -1,
+            "level_id": -1,
+            "location": null,
+            "bounds": null,
+            "host_id": null,
+            "family_name": null,
+            "placement_type": null,
+            "view_family": null,
+            "view_type": null,
+            "elevation": null
+          }
+        ],
+        "offset": 0,
+        "next_offset": null,
+        "units": "internal feet"
+      },
+      "error": null,
+      "cancel_requested": false,
+      "created_utc": "2026-10-14T05:03:18.4500935Z",
+      "finished_utc": "2026-10-14T05:03:18.4641202Z",
+      "elapsed_ms": 2.5822,
+      "transaction_status": "not_started"
+    },
+    "wall": {
+      "schema_version": 1,
+      "operation_id": "8c9bacd8-5e8c-503a-a89d-1d752e43a6b4",
+      "status": "completed",
+      "request": {
+        "arguments": {
+          "end": [
+            10,
+            0,
+            0
+          ],
+          "height": 8,
+          "level": "933c4a06-93b8-11d3-80f8-00c04f8efc32-0000001e",
+          "start": [
+            0,
+            0,
+            0
+          ],
+          "type": "933c4a06-93b8-11d3-80f8-00c04f8efc32-000000db"
+        },
+        "document": {
+          "session_id": "487c6ada-2fc8-44a2-91d5-7e45ac56621a"
+        },
+        "operation": "wall.create",
+        "operation_id": "8c9bacd8-5e8c-503a-a89d-1d752e43a6b4",
+        "preconditions": {},
+        "schema_version": 1
+      },
+      "result": {
+        "data": {
+          "document_session_id": "487c6ada-2fc8-44a2-91d5-7e45ac56621a",
+          "id": 315389,
+          "unique_id": "a7a2c99b-7bb5-4139-80b2-9214c211d92c-0004cffd",
+          "name": "Generic - 6\"",
+          "category": "Walls",
+          "category_id": -2000011,
+          "type_id": 219,
+          "pinned": false,
+          "group_id": -1,
+          "level_id": 30,
+          "location": {
+            "start": [
+              0,
+              0,
+              0
+            ],
+            "end": [
+              10,
+              0,
+              0
+            ]
+          },
+          "bounds": null,
+          "host_id": null,
+          "family_name": null,
+          "placement_type": null,
+          "view_family": null,
+          "view_type": null,
+          "elevation": null
+        },
+        "transaction_status": "committed",
+        "actual_elements": [
+          {
+            "document_session_id": "487c6ada-2fc8-44a2-91d5-7e45ac56621a",
+            "id": 315389,
+            "unique_id": "a7a2c99b-7bb5-4139-80b2-9214c211d92c-0004cffd",
+            "name": "Generic - 6\"",
+            "category": "Walls",
+            "category_id": -2000011,
+            "type_id": 219,
+            "pinned": false,
+            "group_id": -1,
+            "level_id": 30,
+            "location": {
+              "start": [
+                0,
+                0,
+                0
+              ],
+              "end": [
+                10,
+                0,
+                0
+              ]
+            },
+            "bounds": {
+              "min": [
+                0,
+                -0.25,
+                0
+              ],
+              "max": [
+                10,
+                0.25,
+                8
+              ]
+            },
+            "host_id": null,
+            "family_name": null,
+            "placement_type": null,
+            "view_family": null,
+            "view_type": null,
+            "elevation": null
+          }
+        ],
+        "warnings": []
+      },
+      "error": null,
+      "cancel_requested": false,
+      "created_utc": "2026-10-14T05:03:18.8713687Z",
+      "finished_utc": "2026-10-14T05:03:18.9060095Z",
+      "elapsed_ms": 9.2586,
+      "transaction_status": "committed"
+    },
+    "wall-geometry": {
+      "schema_version": 1,
+      "operation_id": "54a2e71c-1b10-51df-ac1c-339f582fcc6e",
+      "status": "completed",
+      "request": {
+        "arguments": {
+          "element": "a7a2c99b-7bb5-4139-80b2-9214c211d92c-0004cffd",
+          "geometry": true
+        },
+        "document": {
+          "session_id": "487c6ada-2fc8-44a2-91d5-7e45ac56621a"
+        },
+        "operation": "elements.inspect",
+        "operation_id": "54a2e71c-1b10-51df-ac1c-339f582fcc6e",
+        "preconditions": {},
+        "schema_version": 1
+      },
+      "result": {
+        "element": {
+          "document_session_id": "487c6ada-2fc8-44a2-91d5-7e45ac56621a",
+          "id": 315389,
+          "unique_id": "a7a2c99b-7bb5-4139-80b2-9214c211d92c-0004cffd",
+          "name": "Generic - 6\"",
+          "category": "Walls",
+          "category_id": -2000011,
+          "type_id": 219,
+          "pinned": false,
+          "group_id": -1,
+          "level_id": 30,
+          "location": {
+            "start": [
+              0,
+              0,
+              0
+            ],
+            "end": [
+              10,
+              0,
+              0
+            ]
+          },
+          "bounds": {
+            "min": [
+              0,
+              -0.25,
+              0
+            ],
+            "max": [
+              10,
+              0.25,
+              8
+            ]
+          },
+          "host_id": null,
+          "family_name": null,
+          "placement_type": null,
+          "view_family": null,
+          "view_type": null,
+          "elevation": null
+        },
+        "dependent_ids": [
+          315389
+        ],
+        "phase_created_id": 118390,
+        "phase_demolished_id": -1,
+        "design_option": null,
+        "workset_id": 0,
+        "editable": true,
+        "transform": null,
+        "geometry": [
+          {
+            "kind": "solid",
+            "volume": 39.99999999999999,
+            "faces": 6,
+            "edges": 12
+          },
+          {
+            "kind": "face",
+            "area": 80,
+            "reference": "a7a2c99b-7bb5-4139-80b2-9214c211d92c-0004cffd:5:SURFACE",
+            "normal": [
+              0,
+              -1,
+              0
+            ]
+          },
+          {
+            "kind": "face",
+            "area": 80,
+            "reference": "a7a2c99b-7bb5-4139-80b2-9214c211d92c-0004cffd:6:SURFACE",
+            "normal": [
+              0,
+              1,
+              0
+            ]
+          },
+          {
+            "kind": "face",
+            "area": 5,
+            "reference": "a7a2c99b-7bb5-4139-80b2-9214c211d92c-0004cffd:7:SURFACE",
+            "normal": [
+              0,
+              0,
+              -1
+            ]
+          },
+          {
+            "kind": "face",
+            "area": 4,
+            "reference": "a7a2c99b-7bb5-4139-80b2-9214c211d92c-0004cffd:10:SURFACE",
+            "normal": [
+              1,
+              0,
+              0
+            ]
+          },
+          {
+            "kind": "face",
+            "area": 5,
+            "reference": "a7a2c99b-7bb5-4139-80b2-9214c211d92c-0004cffd:14:SURFACE",
+            "normal": [
+              0,
+              0,
+              1
+            ]
+          },
+          {
+            "kind": "face",
+            "area": 4,
+            "reference": "a7a2c99b-7bb5-4139-80b2-9214c211d92c-0004cffd:18:SURFACE",
+            "normal": [
+              -1,
+              0,
+              0
+            ]
+          }
+        ]
+      },
+      "error": null,
+      "cancel_requested": false,
+      "created_utc": "2026-10-14T05:03:19.2623060Z",
+      "finished_utc": "2026-10-14T05:03:19.2792812Z",
+      "elapsed_ms": 0.7733,
+      "transaction_status": "not_started"
+    },
+    "Codex_Wall_Hosted-create": {
+      "schema_version": 1,
+      "operation_id": "8f14336e-4a8b-53c2-b311-e69b99b62faf",
+      "status": "completed",
+      "request": {
+        "arguments": {
+          "template": "C:\\ProgramData\\Autodesk\\RVT 2025\\Family Templates\\English-Imperial\\Casework wall based.rft"
+        },
+        "document": {},
+        "operation": "family.create",
+        "operation_id": "8f14336e-4a8b-53c2-b311-e69b99b62faf",
+        "preconditions": {},
+        "schema_version": 1
+      },
+      "result": {
+        "session_id": "a7756bf9-7d1d-4504-bc2d-8ddaad91854b",
+        "document": {
+          "session_id": "a7756bf9-7d1d-4504-bc2d-8ddaad91854b",
+          "title": "Family2",
+          "path": "",
+          "is_family": true,
+          "is_read_only": false,
+          "is_modified": false,
+          "is_workshared": false
+        },
+        "template": "C:\\ProgramData\\Autodesk\\RVT 2025\\Family Templates\\English-Imperial\\Casework wall based.rft",
+        "transaction_status": "not_applicable",
+        "saved": false
+      },
+      "error": null,
+      "cancel_requested": false,
+      "created_utc": "2026-10-14T05:03:19.6941996Z",
+      "finished_utc": "2026-10-14T05:03:19.8658164Z",
+      "elapsed_ms": 160.6127,
+      "transaction_status": "not_applicable"
+    },
+    "Codex_Wall_Hosted-type": {
+      "schema_version": 1,
+      "operation_id": "b4c815fb-3e50-55c2-b9d8-9e916bc2aae3",
+      "status": "completed",
+      "request": {
+        "arguments": {
+          "name": "Codex_Wall_Hosted"
+        },
+        "document": {
+          "session_id": "a7756bf9-7d1d-4504-bc2d-8ddaad91854b"
+        },
+        "operation": "family.type.create",
+        "operation_id": "b4c815fb-3e50-55c2-b9d8-9e916bc2aae3",
+        "preconditions": {},
+        "schema_version": 1
+      },
+      "result": {
+        "result": {
+          "name": "Codex_Wall_Hosted",
+          "values": [
+            {
+              "parameter": {
+                "id": -1010104,
+                "name": "URL",
+                "storage_type": "String",
+                "data_type": "autodesk.spec.string:url-2.0.0",
+                "group": "autodesk.parameter.group:identityData-1.0.0",
+                "instance": false,
+                "read_only": false,
+                "shared": false,
+                "reporting": false,
+                "formula": null
+              },
+              "value": null
+            },
+            {
+              "parameter": {
+                "id": -1001208,
+                "name": "Finish",
+                "storage_type": "String",
+                "data_type": "autodesk.spec:spec.string-2.0.0",
+                "group": "autodesk.parameter.group:materials-1.0.0",
+                "instance": false,
+                "read_only": false,
+                "shared": false,
+                "reporting": false,
+                "formula": null
+              },
+              "value": null
+            },
+            {
+              "parameter": {
+                "id": -1010108,
+                "name": "Manufacturer",
+                "storage_type": "String",
+                "data_type": "autodesk.spec:spec.string-2.0.0",
+                "group": "autodesk.parameter.group:identityData-1.0.0",
+                "instance": false,
+                "read_only": false,
+                "shared": false,
+                "reporting": false,
+                "formula": null
+              },
+              "value": null
+            },
+            {
+              "parameter": {
+                "id": -1152384,
+                "name": "Type Image",
+                "storage_type": "ElementId",
+                "data_type": "autodesk.spec.reference:image-1.0.0",
+                "group": "autodesk.parameter.group:identityData-1.0.0",
+                "instance": false,
+                "read_only": false,
+                "shared": false,
+                "reporting": false,
+                "formula": null
+              },
+              "value": null
+            },
+            {
+              "parameter": {
+                "id": -1010109,
+                "name": "Model",
+                "storage_type": "String",
+                "data_type": "autodesk.spec:spec.string-2.0.0",
+                "group": "autodesk.parameter.group:identityData-1.0.0",
+                "instance": false,
+                "read_only": false,
+                "shared": false,
+                "reporting": false,
+                "formula": null
+              },
+              "value": null
+            },
+            {
+              "parameter": {
+                "id": -1019017,
+                "name": "Type IFC Predefined Type",
+                "storage_type": "String",
+                "data_type": "autodesk.spec:spec.string-2.0.0",
+                "group": "autodesk.parameter.group:ifc-1.0.0",
+                "instance": false,
+                "read_only": false,
+                "shared": false,
+                "reporting": false,
+                "formula": null
+              },
+              "value": null
+            },
+            {
+              "parameter": {
+                "id": -1010103,
+                "name": "Description",
+                "storage_type": "String",
+                "data_type": "autodesk.spec:spec.string-2.0.0",
+                "group": "autodesk.parameter.group:identityData-1.0.0",
+                "instance": false,
+                "read_only": false,
+                "shared": false,
+                "reporting": false,
+                "formula": null
+              },
+              "value": null
+            },
+            {
+              "parameter": {
+                "id": -1010003,
+                "name": "Depth",
+                "storage_type": "Double",
+                "data_type": "autodesk.spec.aec:length-2.0.1",
+                "group": "autodesk.parameter.group:dimensions-1.0.0",
+                "instance": false,
+                "read_only": false,
+                "shared": false,
+                "reporting": false,
+                "formula": null
+              },
+              "value": 2
+            },
+            {
+              "parameter": {
+                "id": -1001207,
+                "name": "Construction Type",
+                "storage_type": "String",
+                "data_type": "autodesk.spec:spec.string-2.0.0",
+                "group": "autodesk.parameter.group:construction-1.0.0",
+                "instance": false,
+                "read_only": false,
+                "shared": false,
+                "reporting": false,
+                "formula": null
+              },
+              "value": null
+            },
+            {
+              "parameter": {
+                "id": -1019015,
+                "name": "Export Type to IFC As",
+                "storage_type": "String",
+                "data_type": "autodesk.spec:spec.string-2.0.0",
+                "group": "autodesk.parameter.group:ifc-1.0.0",
+                "instance": false,
+                "read_only": false,
+                "shared": false,
+                "reporting": false,
+                "formula": null
+              },
+              "value": null
+            },
+            {
+              "parameter": {
+                "id": -1002500,
+                "name": "Assembly Code",
+                "storage_type": "String",
+                "data_type": "autodesk.spec:spec.string-2.0.0",
+                "group": "autodesk.parameter.group:identityData-1.0.0",
+                "instance": false,
+                "read_only": false,
+                "shared": false,
+                "reporting": false,
+                "formula": null
+              },
+              "value": null
+            },
+            {
+              "parameter": {
+                "id": -1010105,
+                "name": "Type Comments",
+                "storage_type": "String",
+                "data_type": "autodesk.spec:spec.string-2.0.0",
+                "group": "autodesk.parameter.group:identityData-1.0.0",
+                "instance": false,
+                "read_only": false,
+                "shared": false,
+                "reporting": false,
+                "formula": null
+              },
+              "value": null
+            },
+            {
+              "parameter": {
+                "id": -1001301,
+                "name": "Width",
+                "storage_type": "Double",
+                "data_type": "autodesk.spec.aec:length-2.0.1",
+                "group": "autodesk.parameter.group:dimensions-1.0.0",
+                "instance": false,
+                "read_only": false,
+                "shared": false,
+                "reporting": false,
+                "formula": null
+              },
+              "value": null
+            },
+            {
+              "parameter": {
+                "id": -1154647,
+                "name": "Default Elevation",
+                "storage_type": "Double",
+                "data_type": "autodesk.spec.aec:length-2.0.1",
+                "group": "autodesk.parameter.group:constraints-1.0.0",
+                "instance": false,
+                "read_only": false,
+                "shared": false,
+                "reporting": false,
+                "formula": null
+              },
+              "value": 0
+            },
+            {
+              "parameter": {
+                "id": -1140422,
+                "name": "Keynote",
+                "storage_type": "String",
+                "data_type": "autodesk.spec:spec.string-2.0.0",
+                "group": "autodesk.parameter.group:identityData-1.0.0",
+                "instance": false,
+                "read_only": false,
+                "shared": false,
+                "reporting": false,
+                "formula": null
+              },
+              "value": null
+            },
+            {
+              "parameter": {
+                "id": -1001300,
+                "name": "Height",
+                "storage_type": "Double",
+                "data_type": "autodesk.spec.aec:length-2.0.1",
+                "group": "autodesk.parameter.group:dimensions-1.0.0",
+                "instance": false,
+                "read_only": false,
+                "shared": false,
+                "reporting": false,
+                "formula": null
+              },
+              "value": 3
+            },
+            {
+              "parameter": {
+                "id": -1001205,
+                "name": "Cost",
+                "storage_type": "Double",
+                "data_type": "autodesk.spec.measurable:currency-2.0.0",
+                "group": "autodesk.parameter.group:identityData-1.0.0",
+                "instance": false,
+                "read_only": false,
+                "shared": false,
+                "reporting": false,
+                "formula": null
+              },
+              "value": null
+            },
+            {
+              "parameter": {
+                "id": 2415,
+                "name": "Length",
+                "storage_type": "Double",
+                "data_type": "autodesk.spec.aec:length-2.0.0",
+                "group": "autodesk.parameter.group:dimensions-1.0.0",
+                "instance": false,
+                "read_only": false,
+                "shared": false,
+                "reporting": false,
+                "formula": null
+              },
+              "value": 4
+            }
+          ]
+        },
+        "transaction_status": "committed",
+        "saved": false,
+        "document": {
+          "session_id": "a7756bf9-7d1d-4504-bc2d-8ddaad91854b",
+          "title": "Family2",
+          "path": "",
+          "is_family": true,
+          "is_read_only": false,
+          "is_modified": true,
+          "is_workshared": false
+        },
+        "warnings": []
+      },
+      "error": null,
+      "cancel_requested": false,
+      "created_utc": "2026-10-14T05:03:20.4843051Z",
+      "finished_utc": "2026-10-14T05:03:20.5005408Z",
+      "elapsed_ms": 3.9367,
+      "transaction_status": "committed"
+    },
+    "Codex_Wall_Hosted-geometry": {
+      "schema_version": 1,
+      "operation_id": "ccd08248-6cb0-54b9-804f-1d5eff3f10b8",
+      "status": "completed",
+      "request": {
+        "arguments": {
+          "end": 1,
+          "plane": {
+            "normal": [
+              0,
+              0,
+              1
+            ],
+            "origin": [
+              0,
+              0,
+              0
+            ]
+          },
+          "profile": [
+            [
+              [
+                0,
+                0,
+                0
+              ],
+              [
+                1,
+                0,
+                0
+              ],
+              [
+                1,
+                1,
+                0
+              ],
+              [
+                0,
+                1,
+                0
+              ]
+            ]
+          ],
+          "units": "feet"
+        },
+        "document": {
+          "session_id": "a7756bf9-7d1d-4504-bc2d-8ddaad91854b"
+        },
+        "operation": "family.extrusion.create",
+        "operation_id": "ccd08248-6cb0-54b9-804f-1d5eff3f10b8",
+        "preconditions": {},
+        "schema_version": 1
+      },
+      "result": {
+        "result": {
+          "element": {
+            "document_session_id": "a7756bf9-7d1d-4504-bc2d-8ddaad91854b",
+            "id": 5225,
+            "unique_id": "0350d6f8-0906-4a0d-a656-32d9733907d3-00001469",
+            "name": "Extrusion",
+            "category": null,
+            "category_id": null,
+            "type_id": -1,
+            "pinned": false,
+            "group_id": -1,
+            "level_id": -1,
+            "location": null,
+            "bounds": {
+              "min": [
+                0,
+                0,
+                0
+              ],
+              "max": [
+                1,
+                1,
+                1
+              ]
+            },
+            "host_id": null,
+            "family_name": null,
+            "placement_type": null,
+            "view_family": null,
+            "view_type": null,
+            "elevation": null
+          },
+          "sketch_plane": {
+            "document_session_id": "a7756bf9-7d1d-4504-bc2d-8ddaad91854b",
+            "id": 5223,
+            "unique_id": "0350d6f8-0906-4a0d-a656-32d9733907d3-00001467",
+            "name": "<not associated>",
+            "category": null,
+            "category_id": null,
+            "type_id": -1,
+            "pinned": false,
+            "group_id": -1,
+            "level_id": -1,
+            "location": null,
+            "bounds": null,
+            "host_id": null,
+            "family_name": null,
+            "placement_type": null,
+            "view_family": null,
+            "view_type": null,
+            "elevation": null
+          },
+          "is_solid": true,
+          "start": 0,
+          "end": 1,
+          "geometry": {
+            "bounds": {
+              "min": [
+                0,
+                0,
+                0
+              ],
+              "max": [
+                1,
+                1,
+                1
+              ],
+              "transform_origin": [
+                0,
+                0,
+                0
+              ],
+              "transform_x": [
+                1,
+                0,
+                0
+              ],
+              "transform_y": [
+                0,
+                1,
+                0
+              ],
+              "transform_z": [
+                0,
+                0,
+                1
+              ]
+            },
+            "solids": [
+              {
+                "volume": 0.9999999999999999,
+                "faces": 6,
+                "edges": 12
+              }
+            ]
+          },
+          "units": "feet"
+        },
+        "transaction_status": "committed",
+        "saved": false,
+        "document": {
+          "session_id": "a7756bf9-7d1d-4504-bc2d-8ddaad91854b",
+          "title": "Family2",
+          "path": "",
+          "is_family": true,
+          "is_read_only": false,
+          "is_modified": true,
+          "is_workshared": false
+        },
+        "warnings": []
+      },
+      "error": null,
+      "cancel_requested": false,
+      "created_utc": "2026-10-14T05:03:20.9764473Z",
+      "finished_utc": "2026-10-14T05:03:21.0098965Z",
+      "elapsed_ms": 22.2665,
+      "transaction_status": "committed"
+    },
+    "Codex_Wall_Hosted-save": {
+      "schema_version": 1,
+      "operation_id": "82f61a20-0c55-559d-8a28-113cd37e14b6",
+      "status": "completed",
+      "request": {
+        "arguments": {
+          "path": "H:\\Games\\3D Modeling Workflows\\3D Model Workflow\\output\\codex-native-revit-20261013\\evidence\\hosting-recovery-01\\Codex_Wall_Hosted.rfa"
+        },
+        "document": {
+          "session_id": "a7756bf9-7d1d-4504-bc2d-8ddaad91854b"
+        },
+        "operation": "family.save",
+        "operation_id": "82f61a20-0c55-559d-8a28-113cd37e14b6",
+        "preconditions": {},
+        "schema_version": 1
+      },
+      "result": {
+        "document": {
+          "session_id": "a7756bf9-7d1d-4504-bc2d-8ddaad91854b",
+          "title": "Codex_Wall_Hosted",
+          "path": "H:\\Games\\3D Modeling Workflows\\3D Model Workflow\\output\\codex-native-revit-20261013\\evidence\\hosting-recovery-01\\Codex_Wall_Hosted.rfa",
+          "is_family": true,
+          "is_read_only": false,
+          "is_modified": false,
+          "is_workshared": false
+        },
+        "path": "H:\\Games\\3D Modeling Workflows\\3D Model Workflow\\output\\codex-native-revit-20261013\\evidence\\hosting-recovery-01\\Codex_Wall_Hosted.rfa",
+        "bytes": 462848,
+        "saved": true,
+        "transaction_status": "not_applicable",
+        "external_boundary": "Saved file is durable and is not undone by a document transaction rollback."
+      },
+      "error": null,
+      "cancel_requested": false,
+      "created_utc": "2026-10-14T05:03:21.3179676Z",
+      "finished_utc": "2026-10-14T05:03:21.7151796Z",
+      "elapsed_ms": 368.7372,
+      "transaction_status": "not_applicable"
+    },
+    "Codex_Face_Hosted-create": {
+      "schema_version": 1,
+      "operation_id": "fefb85ec-84b6-5fe5-a422-21c06a026db9",
+      "status": "completed",
+      "request": {
+        "arguments": {
+          "template": "C:\\ProgramData\\Autodesk\\RVT 2025\\Family Templates\\English-Imperial\\Generic Model face based.rft"
+        },
+        "document": {},
+        "operation": "family.create",
+        "operation_id": "fefb85ec-84b6-5fe5-a422-21c06a026db9",
+        "preconditions": {},
+        "schema_version": 1
+      },
+      "result": {
+        "session_id": "0ef264f1-8c9a-40bf-964f-5c4ee7d13f54",
+        "document": {
+          "session_id": "0ef264f1-8c9a-40bf-964f-5c4ee7d13f54",
+          "title": "Family3",
+          "path": "",
+          "is_family": true,
+          "is_read_only": false,
+          "is_modified": false,
+          "is_workshared": false
+        },
+        "template": "C:\\ProgramData\\Autodesk\\RVT 2025\\Family Templates\\English-Imperial\\Generic Model face based.rft",
+        "transaction_status": "not_applicable",
+        "saved": false
+      },
+      "error": null,
+      "cancel_requested": false,
+      "created_utc": "2026-10-14T05:03:22.1999155Z",
+      "finished_utc": "2026-10-14T05:03:23.1882485Z",
+      "elapsed_ms": 176.0923,
+      "transaction_status": "not_applicable"
+    },
+    "Codex_Face_Hosted-type": {
+      "schema_version": 1,
+      "operation_id": "0d14c4bf-8ca9-55f8-93f8-92aa91a5ef89",
+      "status": "completed",
+      "request": {
+        "arguments": {
+          "name": "Codex_Face_Hosted"
+        },
+        "document": {
+          "session_id": "0ef264f1-8c9a-40bf-964f-5c4ee7d13f54"
+        },
+        "operation": "family.type.create",
+        "operation_id": "0d14c4bf-8ca9-55f8-93f8-92aa91a5ef89",
+        "preconditions": {},
+        "schema_version": 1
+      },
+      "result": {
+        "result": {
+          "name": "Codex_Face_Hosted",
+          "values": [
+            {
+              "parameter": {
+                "id": -1019015,
+                "name": "Export Type to IFC As",
+                "storage_type": "String",
+                "data_type": "autodesk.spec:spec.string-2.0.0",
+                "group": "autodesk.parameter.group:ifc-1.0.0",
+                "instance": false,
+                "read_only": false,
+                "shared": false,
+                "reporting": false,
+                "formula": null
+              },
+              "value": null
+            },
+            {
+              "parameter": {
+                "id": -1140422,
+                "name": "Keynote",
+                "storage_type": "String",
+                "data_type": "autodesk.spec:spec.string-2.0.0",
+                "group": "autodesk.parameter.group:identityData-1.0.0",
+                "instance": false,
+                "read_only": false,
+                "shared": false,
+                "reporting": false,
+                "formula": null
+              },
+              "value": null
+            },
+            {
+              "parameter": {
+                "id": -1002500,
+                "name": "Assembly Code",
+                "storage_type": "String",
+                "data_type": "autodesk.spec:spec.string-2.0.0",
+                "group": "autodesk.parameter.group:identityData-1.0.0",
+                "instance": false,
+                "read_only": false,
+                "shared": false,
+                "reporting": false,
+                "formula": null
+              },
+              "value": null
+            },
+            {
+              "parameter": {
+                "id": -1019017,
+                "name": "Type IFC Predefined Type",
+                "storage_type": "String",
+                "data_type": "autodesk.spec:spec.string-2.0.0",
+                "group": "autodesk.parameter.group:ifc-1.0.0",
+                "instance": false,
+                "read_only": false,
+                "shared": false,
+                "reporting": false,
+                "formula": null
+              },
+              "value": null
+            },
+            {
+              "parameter": {
+                "id": -1010104,
+                "name": "URL",
+                "storage_type": "String",
+                "data_type": "autodesk.spec.string:url-2.0.0",
+                "group": "autodesk.parameter.group:identityData-1.0.0",
+                "instance": false,
+                "read_only": false,
+                "shared": false,
+                "reporting": false,
+                "formula": null
+              },
+              "value": null
+            },
+            {
+              "parameter": {
+                "id": -1001205,
+                "name": "Cost",
+                "storage_type": "Double",
+                "data_type": "autodesk.spec.measurable:currency-2.0.0",
+                "group": "autodesk.parameter.group:identityData-1.0.0",
+                "instance": false,
+                "read_only": false,
+                "shared": false,
+                "reporting": false,
+                "formula": null
+              },
+              "value": null
+            },
+            {
+              "parameter": {
+                "id": -1152384,
+                "name": "Type Image",
+                "storage_type": "ElementId",
+                "data_type": "autodesk.spec.reference:image-1.0.0",
+                "group": "autodesk.parameter.group:identityData-1.0.0",
+                "instance": false,
+                "read_only": false,
+                "shared": false,
+                "reporting": false,
+                "formula": null
+              },
+              "value": null
+            },
+            {
+              "parameter": {
+                "id": -1010103,
+                "name": "Description",
+                "storage_type": "String",
+                "data_type": "autodesk.spec:spec.string-2.0.0",
+                "group": "autodesk.parameter.group:identityData-1.0.0",
+                "instance": false,
+                "read_only": false,
+                "shared": false,
+                "reporting": false,
+                "formula": null
+              },
+              "value": null
+            },
+            {
+              "parameter": {
+                "id": -1010105,
+                "name": "Type Comments",
+                "storage_type": "String",
+                "data_type": "autodesk.spec:spec.string-2.0.0",
+                "group": "autodesk.parameter.group:identityData-1.0.0",
+                "instance": false,
+                "read_only": false,
+                "shared": false,
+                "reporting": false,
+                "formula": null
+              },
+              "value": null
+            },
+            {
+              "parameter": {
+                "id": -1010108,
+                "name": "Manufacturer",
+                "storage_type": "String",
+                "data_type": "autodesk.spec:spec.string-2.0.0",
+                "group": "autodesk.parameter.group:identityData-1.0.0",
+                "instance": false,
+                "read_only": false,
+                "shared": false,
+                "reporting": false,
+                "formula": null
+              },
+              "value": null
+            },
+            {
+              "parameter": {
+                "id": -1010109,
+                "name": "Model",
+                "storage_type": "String",
+                "data_type": "autodesk.spec:spec.string-2.0.0",
+                "group": "autodesk.parameter.group:identityData-1.0.0",
+                "instance": false,
+                "read_only": false,
+                "shared": false,
+                "reporting": false,
+                "formula": null
+              },
+              "value": null
+            },
+            {
+              "parameter": {
+                "id": -1001320,
+                "name": "Default Elevation",
+                "storage_type": "Double",
+                "data_type": "autodesk.spec.aec:length-2.0.1",
+                "group": "autodesk.parameter.group:constraints-1.0.0",
+                "instance": false,
+                "read_only": false,
+                "shared": false,
+                "reporting": false,
+                "formula": null
+              },
+              "value": 4
+            }
+          ]
+        },
+        "transaction_status": "committed",
+        "saved": false,
+        "document": {
+          "session_id": "0ef264f1-8c9a-40bf-964f-5c4ee7d13f54",
+          "title": "Family3",
+          "path": "",
+          "is_family": true,
+          "is_read_only": false,
+          "is_modified": true,
+          "is_workshared": false
+        },
+        "warnings": []
+      },
+      "error": null,
+      "cancel_requested": false,
+      "created_utc": "2026-10-14T05:03:23.7654295Z",
+      "finished_utc": "2026-10-14T05:03:23.7804293Z",
+      "elapsed_ms": 3.9683,
+      "transaction_status": "committed"
+    },
+    "Codex_Face_Hosted-geometry": {
+      "schema_version": 1,
+      "operation_id": "b4ac979f-e7b5-5168-bea4-6790025316f0",
+      "status": "completed",
+      "request": {
+        "arguments": {
+          "end": 1,
+          "plane": {
+            "normal": [
+              0,
+              0,
+              1
+            ],
+            "origin": [
+              0,
+              0,
+              0
+            ]
+          },
+          "profile": [
+            [
+              [
+                0,
+                0,
+                0
+              ],
+              [
+                1,
+                0,
+                0
+              ],
+              [
+                1,
+                1,
+                0
+              ],
+              [
+                0,
+                1,
+                0
+              ]
+            ]
+          ],
+          "units": "feet"
+        },
+        "document": {
+          "session_id": "0ef264f1-8c9a-40bf-964f-5c4ee7d13f54"
+        },
+        "operation": "family.extrusion.create",
+        "operation_id": "b4ac979f-e7b5-5168-bea4-6790025316f0",
+        "preconditions": {},
+        "schema_version": 1
+      },
+      "result": {
+        "result": {
+          "element": {
+            "document_session_id": "0ef264f1-8c9a-40bf-964f-5c4ee7d13f54",
+            "id": 3204,
+            "unique_id": "f70ece9c-d42c-42ad-a938-9394519c56b6-00000c84",
+            "name": "Extrusion",
+            "category": null,
+            "category_id": null,
+            "type_id": -1,
+            "pinned": false,
+            "group_id": -1,
+            "level_id": -1,
+            "location": null,
+            "bounds": {
+              "min": [
+                0,
+                0,
+                0
+              ],
+              "max": [
+                1,
+                1,
+                1
+              ]
+            },
+            "host_id": null,
+            "family_name": null,
+            "placement_type": null,
+            "view_family": null,
+            "view_type": null,
+            "elevation": null
+          },
+          "sketch_plane": {
+            "document_session_id": "0ef264f1-8c9a-40bf-964f-5c4ee7d13f54",
+            "id": 3202,
+            "unique_id": "f70ece9c-d42c-42ad-a938-9394519c56b6-00000c82",
+            "name": "<not associated>",
+            "category": null,
+            "category_id": null,
+            "type_id": -1,
+            "pinned": false,
+            "group_id": -1,
+            "level_id": -1,
+            "location": null,
+            "bounds": null,
+            "host_id": null,
+            "family_name": null,
+            "placement_type": null,
+            "view_family": null,
+            "view_type": null,
+            "elevation": null
+          },
+          "is_solid": true,
+          "start": 0,
+          "end": 1,
+          "geometry": {
+            "bounds": {
+              "min": [
+                0,
+                0,
+                0
+              ],
+              "max": [
+                1,
+                1,
+                1
+              ],
+              "transform_origin": [
+                0,
+                0,
+                0
+              ],
+              "transform_x": [
+                1,
+                0,
+                0
+              ],
+              "transform_y": [
+                0,
+                1,
+                0
+              ],
+              "transform_z": [
+                0,
+                0,
+                1
+              ]
+            },
+            "solids": [
+              {
+                "volume": 0.9999999999999999,
+                "faces": 6,
+                "edges": 12
+              }
+            ]
+          },
+          "units": "feet"
+        },
+        "transaction_status": "committed",
+        "saved": false,
+        "document": {
+          "session_id": "0ef264f1-8c9a-40bf-964f-5c4ee7d13f54",
+          "title": "Family3",
+          "path": "",
+          "is_family": true,
+          "is_read_only": false,
+          "is_modified": true,
+          "is_workshared": false
+        },
+        "warnings": []
+      },
+      "error": null,
+      "cancel_requested": false,
+      "created_utc": "2026-10-14T05:03:24.1314664Z",
+      "finished_utc": "2026-10-14T05:03:24.1669284Z",
+      "elapsed_ms": 14.1988,
+      "transaction_status": "committed"
+    },
+    "Codex_Face_Hosted-save": {
+      "schema_version": 1,
+      "operation_id": "4dbe9256-dd77-509e-bc15-67ccd0fb866f",
+      "status": "completed",
+      "request": {
+        "arguments": {
+          "path": "H:\\Games\\3D Modeling Workflows\\3D Model Workflow\\output\\codex-native-revit-20261013\\evidence\\hosting-recovery-01\\Codex_Face_Hosted.rfa"
+        },
+        "document": {
+          "session_id": "0ef264f1-8c9a-40bf-964f-5c4ee7d13f54"
+        },
+        "operation": "family.save",
+        "operation_id": "4dbe9256-dd77-509e-bc15-67ccd0fb866f",
+        "preconditions": {},
+        "schema_version": 1
+      },
+      "result": {
+        "document": {
+          "session_id": "0ef264f1-8c9a-40bf-964f-5c4ee7d13f54",
+          "title": "Codex_Face_Hosted",
+          "path": "H:\\Games\\3D Modeling Workflows\\3D Model Workflow\\output\\codex-native-revit-20261013\\evidence\\hosting-recovery-01\\Codex_Face_Hosted.rfa",
+          "is_family": true,
+          "is_read_only": false,
+          "is_modified": false,
+          "is_workshared": false
+        },
+        "path": "H:\\Games\\3D Modeling Workflows\\3D Model Workflow\\output\\codex-native-revit-20261013\\evidence\\hosting-recovery-01\\Codex_Face_Hosted.rfa",
+        "bytes": 458752,
+        "saved": true,
+        "transaction_status": "not_applicable",
+        "external_boundary": "Saved file is durable and is not undone by a document transaction rollback."
+      },
+      "error": null,
+      "cancel_requested": false,
+      "created_utc": "2026-10-14T05:03:24.5248913Z",
+      "finished_utc": "2026-10-14T05:03:24.9019448Z",
+      "elapsed_ms": 366.4069,
+      "transaction_status": "not_applicable"
+    },
+    "wall-hosted-load": {
+      "schema_version": 1,
+      "operation_id": "c407e6bd-c8f7-5b48-be17-c8d54f8cfed8",
+      "status": "completed",
+      "request": {
+        "arguments": {
+          "path": "H:\\Games\\3D Modeling Workflows\\3D Model Workflow\\output\\codex-native-revit-20261013\\evidence\\hosting-recovery-01\\Codex_Wall_Hosted.rfa",
+          "replacement_policy": "reject"
+        },
+        "document": {
+          "session_id": "487c6ada-2fc8-44a2-91d5-7e45ac56621a"
+        },
+        "operation": "family.load",
+        "operation_id": "c407e6bd-c8f7-5b48-be17-c8d54f8cfed8",
+        "preconditions": {},
+        "schema_version": 1
+      },
+      "result": {
+        "result": {
+          "loaded": true,
+          "family": {
+            "document_session_id": "487c6ada-2fc8-44a2-91d5-7e45ac56621a",
+            "id": 315390,
+            "unique_id": "a7a2c99b-7bb5-4139-80b2-9214c211d92c-0004cffe",
+            "name": "Codex_Wall_Hosted",
+            "category": null,
+            "category_id": null,
+            "type_id": -1,
+            "pinned": false,
+            "group_id": -1,
+            "level_id": -1,
+            "location": null,
+            "bounds": null,
+            "host_id": null,
+            "family_name": null,
+            "placement_type": null,
+            "view_family": null,
+            "view_type": null,
+            "elevation": null
+          },
+          "path": "H:\\Games\\3D Modeling Workflows\\3D Model Workflow\\output\\codex-native-revit-20261013\\evidence\\hosting-recovery-01\\Codex_Wall_Hosted.rfa",
+          "replacement_policy": "reject",
+          "outcome": "loaded",
+          "callback_decisions": []
+        },
+        "transaction_status": "committed",
+        "saved": false,
+        "document": {
+          "session_id": "487c6ada-2fc8-44a2-91d5-7e45ac56621a",
+          "title": "Project3",
+          "path": "",
+          "is_family": false,
+          "is_read_only": false,
+          "is_modified": true,
+          "is_workshared": false
+        },
+        "warnings": []
+      },
+      "error": null,
+      "cancel_requested": false,
+      "created_utc": "2026-10-14T05:03:25.3456103Z",
+      "finished_utc": "2026-10-14T05:03:26.6159970Z",
+      "elapsed_ms": 533.6753,
+      "transaction_status": "committed"
+    },
+    "wall-hosted-symbol": {
+      "schema_version": 1,
+      "operation_id": "dcf772f2-d77e-5187-a656-37206ae3a0f9",
+      "status": "completed",
+      "request": {
+        "arguments": {
+          "category": "OST_Casework",
+          "class": "FamilySymbol",
+          "types": true
+        },
+        "document": {
+          "session_id": "487c6ada-2fc8-44a2-91d5-7e45ac56621a"
+        },
+        "operation": "elements.query",
+        "operation_id": "dcf772f2-d77e-5187-a656-37206ae3a0f9",
+        "preconditions": {},
+        "schema_version": 1
+      },
+      "result": {
+        "items": [
+          {
+            "document_session_id": "487c6ada-2fc8-44a2-91d5-7e45ac56621a",
+            "id": 316187,
+            "unique_id": "a7a2c99b-7bb5-4139-80b2-9214c211d92c-0004d31b",
+            "name": "Codex_Wall_Hosted",
+            "category": "Casework",
+            "category_id": -2001000,
+            "type_id": -1,
+            "pinned": false,
+            "group_id": -1,
+            "level_id": -1,
+            "location": null,
+            "bounds": null,
+            "host_id": null,
+            "family_name": "Codex_Wall_Hosted",
+            "placement_type": "OneLevelBasedHosted",
+            "view_family": null,
+            "view_type": null,
+            "elevation": null
+          }
+        ],
+        "offset": 0,
+        "next_offset": null,
+        "units": "internal feet"
+      },
+      "error": null,
+      "cancel_requested": false,
+      "created_utc": "2026-10-14T05:03:27.2602913Z",
+      "finished_utc": "2026-10-14T05:03:27.2730329Z",
+      "elapsed_ms": 1.7375,
+      "transaction_status": "not_started"
+    },
+    "wall-hosted-place": {
+      "schema_version": 1,
+      "operation_id": "acd473a5-124e-5524-aaa4-a80cdf14e540",
+      "status": "completed",
+      "request": {
+        "arguments": {
+          "host": "a7a2c99b-7bb5-4139-80b2-9214c211d92c-0004cffd",
+          "level": "933c4a06-93b8-11d3-80f8-00c04f8efc32-0000001e",
+          "point": [
+            3,
+            0,
+            2
+          ],
+          "type": "a7a2c99b-7bb5-4139-80b2-9214c211d92c-0004d31b"
+        },
+        "document": {
+          "session_id": "487c6ada-2fc8-44a2-91d5-7e45ac56621a"
+        },
+        "operation": "family.place",
+        "operation_id": "acd473a5-124e-5524-aaa4-a80cdf14e540",
+        "preconditions": {},
+        "schema_version": 1
+      },
+      "result": {
+        "data": {
+          "placement_type": "OneLevelBasedHosted",
+          "instances": [
+            {
+              "document_session_id": "487c6ada-2fc8-44a2-91d5-7e45ac56621a",
+              "id": 316205,
+              "unique_id": "a7a2c99b-7bb5-4139-80b2-9214c211d92c-0004d32d",
+              "name": "Codex_Wall_Hosted",
+              "category": "Casework",
+              "category_id": -2001000,
+              "type_id": 316187,
+              "pinned": false,
+              "group_id": -1,
+              "level_id": 30,
+              "location": {
+                "point": [
+                  3,
+                  0,
+                  2
+                ],
+                "rotation_radians": 0
+              },
+              "bounds": {
+                "min": [
+                  0.9999999999999916,
+                  -1.4988357199199224e-29,
+                  2
+                ],
+                "max": [
+                  5.000000000000004,
+                  2.249999999999996,
+                  5
+                ]
+              },
+              "host_id": 315389,
+              "family_name": null,
+              "placement_type": null,
+              "view_family": null,
+              "view_type": null,
+              "elevation": null
+            }
+          ]
+        },
+        "transaction_status": "committed",
+        "actual_elements": [
+          {
+            "document_session_id": "487c6ada-2fc8-44a2-91d5-7e45ac56621a",
+            "id": 316205,
+            "unique_id": "a7a2c99b-7bb5-4139-80b2-9214c211d92c-0004d32d",
+            "name": "Codex_Wall_Hosted",
+            "category": "Casework",
+            "category_id": -2001000,
+            "type_id": 316187,
+            "pinned": false,
+            "group_id": -1,
+            "level_id": 30,
+            "location": {
+              "point": [
+                3,
+                0,
+                2
+              ],
+              "rotation_radians": 0
+            },
+            "bounds": {
+              "min": [
+                0.9999999999999916,
+                -1.4988357199199224e-29,
+                2
+              ],
+              "max": [
+                5.000000000000004,
+                2.249999999999996,
+                5
+              ]
+            },
+            "host_id": 315389,
+            "family_name": null,
+            "placement_type": null,
+            "view_family": null,
+            "view_type": null,
+            "elevation": null
+          }
+        ],
+        "warnings": []
+      },
+      "error": null,
+      "cancel_requested": false,
+      "created_utc": "2026-10-14T05:03:27.7325644Z",
+      "finished_utc": "2026-10-14T05:03:27.7971248Z",
+      "elapsed_ms": 50.3761,
+      "transaction_status": "committed"
+    },
+    "wall-hosted-verify": {
+      "schema_version": 1,
+      "operation_id": "71f49a74-b7aa-56cb-b3c4-9b41007f1610",
+      "status": "completed",
+      "request": {
+        "arguments": {
+          "element": "a7a2c99b-7bb5-4139-80b2-9214c211d92c-0004d32d",
+          "geometry": true
+        },
+        "document": {
+          "session_id": "487c6ada-2fc8-44a2-91d5-7e45ac56621a"
+        },
+        "operation": "elements.inspect",
+        "operation_id": "71f49a74-b7aa-56cb-b3c4-9b41007f1610",
+        "preconditions": {},
+        "schema_version": 1
+      },
+      "result": {
+        "element": {
+          "document_session_id": "487c6ada-2fc8-44a2-91d5-7e45ac56621a",
+          "id": 316205,
+          "unique_id": "a7a2c99b-7bb5-4139-80b2-9214c211d92c-0004d32d",
+          "name": "Codex_Wall_Hosted",
+          "category": "Casework",
+          "category_id": -2001000,
+          "type_id": 316187,
+          "pinned": false,
+          "group_id": -1,
+          "level_id": 30,
+          "location": {
+            "point": [
+              3,
+              0,
+              2
+            ],
+            "rotation_radians": 0
+          },
+          "bounds": {
+            "min": [
+              0.9999999999999916,
+              -1.4988357199199224e-29,
+              2
+            ],
+            "max": [
+              5.000000000000004,
+              2.249999999999996,
+              5
+            ]
+          },
+          "host_id": 315389,
+          "family_name": null,
+          "placement_type": null,
+          "view_family": null,
+          "view_type": null,
+          "elevation": null
+        },
+        "dependent_ids": [
+          316205
+        ],
+        "phase_created_id": 118390,
+        "phase_demolished_id": -1,
+        "design_option": null,
+        "workset_id": 0,
+        "editable": true,
+        "transform": {
+          "origin": [
+            3,
+            0,
+            2
+          ],
+          "basis_x": [
+            1,
+            0,
+            0
+          ],
+          "basis_y": [
+            0,
+            1,
+            0
+          ],
+          "basis_z": [
+            0,
+            0,
+            1
+          ]
+        },
+        "geometry": [
+          {
+            "kind": "solid",
+            "volume": 0,
+            "faces": 0,
+            "edges": 0
+          },
+          {
+            "kind": "solid",
+            "volume": 0.9999999999999999,
+            "faces": 6,
+            "edges": 12
+          },
+          {
+            "kind": "face",
+            "area": 1,
+            "reference": "a7a2c99b-7bb5-4139-80b2-9214c211d92c-0004d32e:29:SURFACE",
+            "normal": [
+              0,
+              0,
+              1
+            ]
+          },
+          {
+            "kind": "face",
+            "area": 1,
+            "reference": "a7a2c99b-7bb5-4139-80b2-9214c211d92c-0004d32e:34:SURFACE",
+            "normal": [
+              0,
+              0,
+              -1
+            ]
+          },
+          {
+            "kind": "face",
+            "area": 1,
+            "reference": "a7a2c99b-7bb5-4139-80b2-9214c211d92c-0004d32e:39:SURFACE",
+            "normal": [
+              1,
+              0,
+              0
+            ]
+          },
+          {
+            "kind": "face",
+            "area": 1,
+            "reference": "a7a2c99b-7bb5-4139-80b2-9214c211d92c-0004d32e:42:SURFACE",
+            "normal": [
+              0,
+              1,
+              0
+            ]
+          },
+          {
+            "kind": "face",
+            "area": 1,
+            "reference": "a7a2c99b-7bb5-4139-80b2-9214c211d92c-0004d32e:44:SURFACE",
+            "normal": [
+              -1,
+              0,
+              0
+            ]
+          },
+          {
+            "kind": "face",
+            "area": 1,
+            "reference": "a7a2c99b-7bb5-4139-80b2-9214c211d92c-0004d32e:46:SURFACE",
+            "normal": [
+              0,
+              -1,
+              0
+            ]
+          }
+        ]
+      },
+      "error": null,
+      "cancel_requested": false,
+      "created_utc": "2026-10-14T05:03:28.2523242Z",
+      "finished_utc": "2026-10-14T05:03:28.2745040Z",
+      "elapsed_ms": 6.6081,
+      "transaction_status": "not_started"
+    },
+    "face-hosted-load": {
+      "schema_version": 1,
+      "operation_id": "ce39890a-01ea-58c0-9d68-32dc3f1ba2c7",
+      "status": "completed",
+      "request": {
+        "arguments": {
+          "path": "H:\\Games\\3D Modeling Workflows\\3D Model Workflow\\output\\codex-native-revit-20261013\\evidence\\hosting-recovery-01\\Codex_Face_Hosted.rfa",
+          "replacement_policy": "reject"
+        },
+        "document": {
+          "session_id": "487c6ada-2fc8-44a2-91d5-7e45ac56621a"
+        },
+        "operation": "family.load",
+        "operation_id": "ce39890a-01ea-58c0-9d68-32dc3f1ba2c7",
+        "preconditions": {},
+        "schema_version": 1
+      },
+      "result": {
+        "result": {
+          "loaded": true,
+          "family": {
+            "document_session_id": "487c6ada-2fc8-44a2-91d5-7e45ac56621a",
+            "id": 316207,
+            "unique_id": "a7a2c99b-7bb5-4139-80b2-9214c211d92c-0004d32f",
+            "name": "Codex_Face_Hosted",
+            "category": null,
+            "category_id": null,
+            "type_id": -1,
+            "pinned": false,
+            "group_id": -1,
+            "level_id": -1,
+            "location": null,
+            "bounds": null,
+            "host_id": null,
+            "family_name": null,
+            "placement_type": null,
+            "view_family": null,
+            "view_type": null,
+            "elevation": null
+          },
+          "path": "H:\\Games\\3D Modeling Workflows\\3D Model Workflow\\output\\codex-native-revit-20261013\\evidence\\hosting-recovery-01\\Codex_Face_Hosted.rfa",
+          "replacement_policy": "reject",
+          "outcome": "loaded",
+          "callback_decisions": []
+        },
+        "transaction_status": "committed",
+        "saved": false,
+        "document": {
+          "session_id": "487c6ada-2fc8-44a2-91d5-7e45ac56621a",
+          "title": "Project3",
+          "path": "",
+          "is_family": false,
+          "is_read_only": false,
+          "is_modified": true,
+          "is_workshared": false
+        },
+        "warnings": []
+      },
+      "error": null,
+      "cancel_requested": false,
+      "created_utc": "2026-10-14T05:03:28.6349578Z",
+      "finished_utc": "2026-10-14T05:03:29.0155677Z",
+      "elapsed_ms": 364.9408,
+      "transaction_status": "committed"
+    },
+    "face-hosted-symbol": {
+      "schema_version": 1,
+      "operation_id": "b5871f2e-ab6d-5a9e-b96b-b70451ac5344",
+      "status": "completed",
+      "request": {
+        "arguments": {
+          "category": "OST_GenericModel",
+          "class": "FamilySymbol",
+          "types": true
+        },
+        "document": {
+          "session_id": "487c6ada-2fc8-44a2-91d5-7e45ac56621a"
+        },
+        "operation": "elements.query",
+        "operation_id": "b5871f2e-ab6d-5a9e-b96b-b70451ac5344",
+        "preconditions": {},
+        "schema_version": 1
+      },
+      "result": {
+        "items": [
+          {
+            "document_session_id": "487c6ada-2fc8-44a2-91d5-7e45ac56621a",
+            "id": 317015,
+            "unique_id": "a7a2c99b-7bb5-4139-80b2-9214c211d92c-0004d657",
+            "name": "Codex_Face_Hosted",
+            "category": "Generic Models",
+            "category_id": -2000151,
+            "type_id": -1,
+            "pinned": false,
+            "group_id": -1,
+            "level_id": -1,
+            "location": null,
+            "bounds": null,
+            "host_id": null,
+            "family_name": "Codex_Face_Hosted",
+            "placement_type": "WorkPlaneBased",
+            "view_family": null,
+            "view_type": null,
+            "elevation": null
+          }
+        ],
+        "offset": 0,
+        "next_offset": null,
+        "units": "internal feet"
+      },
+      "error": null,
+      "cancel_requested": false,
+      "created_utc": "2026-10-14T05:03:29.5006088Z",
+      "finished_utc": "2026-10-14T05:03:29.5127207Z",
+      "elapsed_ms": 1.0231,
+      "transaction_status": "not_started"
+    }
+  },
+  "checks": {
+    "wall-hosted-host": {
+      "actual": 315389,
+      "expected": 315389,
+      "pass": true
+    }
+  },
+  "native": true,
+  "wall-hosted": {
+    "placement_type": "OneLevelBasedHosted",
+    "element": {
+      "document_session_id": "487c6ada-2fc8-44a2-91d5-7e45ac56621a",
+      "id": 316205,
+      "unique_id": "a7a2c99b-7bb5-4139-80b2-9214c211d92c-0004d32d",
+      "name": "Codex_Wall_Hosted",
+      "category": "Casework",
+      "category_id": -2001000,
+      "type_id": 316187,
+      "pinned": false,
+      "group_id": -1,
+      "level_id": 30,
+      "location": {
+        "point": [
+          3,
+          0,
+          2
+        ],
+        "rotation_radians": 0
+      },
+      "bounds": {
+        "min": [
+          0.9999999999999916,
+          -1.4988357199199224e-29,
+          2
+        ],
+        "max": [
+          5.000000000000004,
+          2.249999999999996,
+          5
+        ]
+      },
+      "host_id": 315389,
+      "family_name": null,
+      "placement_type": null,
+      "view_family": null,
+      "view_type": null,
+      "elevation": null
+    },
+    "geometry": [
+      {
+        "kind": "solid",
+        "volume": 0,
+        "faces": 0,
+        "edges": 0
+      },
+      {
+        "kind": "solid",
+        "volume": 0.9999999999999999,
+        "faces": 6,
+        "edges": 12
+      },
+      {
+        "kind": "face",
+        "area": 1,
+        "reference": "a7a2c99b-7bb5-4139-80b2-9214c211d92c-0004d32e:29:SURFACE",
+        "normal": [
+          0,
+          0,
+          1
+        ]
+      },
+      {
+        "kind": "face",
+        "area": 1,
+        "reference": "a7a2c99b-7bb5-4139-80b2-9214c211d92c-0004d32e:34:SURFACE",
+        "normal": [
+          0,
+          0,
+          -1
+        ]
+      },
+      {
+        "kind": "face",
+        "area": 1,
+        "reference": "a7a2c99b-7bb5-4139-80b2-9214c211d92c-0004d32e:39:SURFACE",
+        "normal": [
+          1,
+          0,
+          0
+        ]
+      },
+      {
+        "kind": "face",
+        "area": 1,
+        "reference": "a7a2c99b-7bb5-4139-80b2-9214c211d92c-0004d32e:42:SURFACE",
+        "normal": [
+          0,
+          1,
+          0
+        ]
+      },
+      {
+        "kind": "face",
+        "area": 1,
+        "reference": "a7a2c99b-7bb5-4139-80b2-9214c211d92c-0004d32e:44:SURFACE",
+        "normal": [
+          -1,
+          0,
+          0
+        ]
+      },
+      {
+        "kind": "face",
+        "area": 1,
+        "reference": "a7a2c99b-7bb5-4139-80b2-9214c211d92c-0004d32e:46:SURFACE",
+        "normal": [
+          0,
+          -1,
+          0
+        ]
+      }
+    ]
+  },
+  "error": "'NoneType' object is not subscriptable"
+}

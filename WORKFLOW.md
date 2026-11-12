@@ -1,3 +1,7 @@
+# Native Revit entry point
+
+For native Revit work, first read [AGENTS.md](AGENTS.md), [docs/NATIVE-REVIT.md](docs/NATIVE-REVIT.md), and [native-revit.json](native-revit.json). For another computer, follow [the setup guide](docs/NATIVE-REVIT-SETUP.md).
+
 # Fixture visualization families
 
 Project-wide memory and error logging: see [AGENTS.md](AGENTS.md) and [PROJECT_MEMORY.md](PROJECT_MEMORY.md). Record every error and its solution there, including errors in work outside the fixture-family workflow below.
@@ -170,3 +174,7 @@ Created output/focus/DCW_Focus_X3_Black_Adjustable_R2025.rfa. Cord Length instan
 - In a two-view drawing of a 3-fold fixture, the elevation shows two of the three globes superimposed: check the offset ratio (here 0.50 = cos 60) before reading a "two-globe" elevation literally. Renders viewed opposite one globe show the far globe lower and partly hidden when the camera is below the fixture.
 - Ceiling face-based Lighting Fixtures family with editable Metal, Glass and Lamp finishes; socket sleeves and candle lamps are inferred and hidden by opal, kept so a clear-glass swap reads correctly. Fixed geometry; no light source or MEP data.
 - Built by a native kit (`output/cassia/run_cassia.ps1`); constants shared by builder, offline dry-run and verifier in `source/cassia_geometry.py`. Native build, visual review and Drive delivery were pending at the time of writing; see `output/cassia/README.md` and PROJECT_MEMORY.md.
+
+## Standing geometry rule — November 4, 2026
+
+All geometry created by any agent must remain directly editable by the user in Revit at any time. No DirectShape elements. Use native editable system elements or native families with editable sketches, forms, and meaningful exposed dimensions/material parameters. Do not substitute imported meshes, opaque FreeFormElement solids, or flattened geometry for editable construction. Verify Edit Family/Edit Sketch and parameter behavior before acceptance. Apply this rule to replacement geometry as well as new work.

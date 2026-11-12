@@ -1,3 +1,52 @@
+# Agent entry point
+
+## Native Revit integration
+
+For Revit work, start with [docs/NATIVE-REVIT.md](docs/NATIVE-REVIT.md).
+The authoritative release pointer is [native-revit.json](native-revit.json).
+Use `codex-native-revit-2025` / `native_revit_*` tools when available. Discover
+tools by name or description if they are deferred. If MCP is unavailable, use
+`python tools/revit.py <command>` for the same bridge and receipt protocol. This
+wrapper reads the current client config, including URL and matching token file;
+it also works when an existing chat's MCP process still caches old settings.
+Do not choose an older bridge, pyRevit workflow, copied DLL, or dated output
+folder merely because a search finds it first. Older workflows remain useful
+references; select them deliberately when the native integration lacks a needed
+capability, and explain that limitation.
+
+Before native work:
+
+1. Run `python tools/revit-doctor.py` from the repo root. This is read-only.
+2. Check live capabilities and the returned Revit process ID.
+3. Submit `documents.list` with `document: {}`; select the intended document's
+   fresh session ID and verify title/path before further operations.
+4. Read the operation contract and native evidence linked in the guide.
+
+Never infer connectivity from installation or a visible tool catalog. Never
+infer the intended document from the active window. Keep original operation IDs;
+reconcile timeouts/unknown completion before another mutation. Saving and
+synchronizing are explicit operations requiring task authorization and verified
+receipts. Do not restart/close Revit or discard unsaved work to repair a bridge.
+Never print, commit, or copy authentication tokens into prompts or repo files.
+
+## Modeling work
+
+Read [WORKFLOW.md](WORKFLOW.md) for modeling and visual acceptance requirements.
+Preserve source references and existing deliverables. Write new artifact work to
+its own `output/<task>/` directory. Verify native results and visual fidelity
+separately. Record task errors and their resolution by appending to
+`PROJECT_MEMORY.md`; preserve historical entries. Documentation and integration
+maintenance may update their owning repo files when requested.
+
+When updating the integration, update `native-revit.json`, the guide, and relevant
+setup instructions together. Verify the actual installed assembly and live
+process separately; a source change does not update an already running add-in.
+
+
+## Standing geometry rule — November 4, 2026
+
+All geometry created by any agent must remain directly editable by the user in Revit at any time. No DirectShape elements. Use native editable system elements or native families with editable sketches, forms, and meaningful exposed dimensions/material parameters. Do not substitute imported meshes, opaque FreeFormElement solids, or flattened geometry for editable construction. Verify Edit Family/Edit Sketch and parameter behavior before acceptance. Apply this rule to replacement geometry as well as new work.
+
 # Project memory and error logging
 
 ## Stalls and retries

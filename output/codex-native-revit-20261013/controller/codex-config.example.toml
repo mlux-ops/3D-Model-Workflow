@@ -1,0 +1,11 @@
+# Merge after replacing interpreter and installed-controller paths.
+# This example does not alter the user's existing MCP servers or configuration.
+[mcp_servers.codex-native-revit-2025]
+command = 'C:\Python314\python.exe'
+args = ['H:\Games\3D Modeling Workflows\3D Model Workflow\output\codex-native-revit-20261013\controller\native_revit.py', 'stdio']
+startup_timeout_sec = 15
+tool_timeout_sec = 180
+
+[mcp_servers.codex-native-revit-2025.env]
+CODEX_NATIVE_REVIT_URL = 'http://127.0.0.1:49327'
+# Set CODEX_NATIVE_REVIT_TOKEN_FILE if the add-in uses an alternate state directory.

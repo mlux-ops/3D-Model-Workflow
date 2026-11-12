@@ -1,0 +1,19 @@
+{
+  "steps": [
+    {
+      "id": "discover-open-documents",
+      "operation": "documents.list",
+      "document": {},
+      "arguments": {},
+      "depends_on": []
+    },
+    {
+      "id": "discover-open-documents-after-prerequisite",
+      "operation": "documents.list",
+      "document": {},
+      "arguments": {},
+      "depends_on": ["discover-open-documents"]
+    }
+  ],
+  "timeout_seconds": 30
+}

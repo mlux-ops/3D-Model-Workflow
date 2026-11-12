@@ -1,0 +1,24 @@
+test_all_document_queries_use_targeted_jobs (test_controller.ControllerTests.test_all_document_queries_use_targeted_jobs) ... ok
+test_auth_and_detached_capabilities (test_controller.ControllerTests.test_auth_and_detached_capabilities) ... ok
+test_batch_blocks_failed_dependents_and_runs_independent_steps (test_controller.ControllerTests.test_batch_blocks_failed_dependents_and_runs_independent_steps) ... ok
+test_batch_cycles_and_missing_dependencies_fail_before_submission (test_controller.ControllerTests.test_batch_cycles_and_missing_dependencies_fail_before_submission) ... ok
+test_batch_resolves_new_identifiers_and_resume_never_recreates (test_controller.ControllerTests.test_batch_resolves_new_identifiers_and_resume_never_recreates) ... ok
+test_cache_write_failure_preserves_actual_receipt_and_original_id (test_controller.ControllerTests.test_cache_write_failure_preserves_actual_receipt_and_original_id) ... ok
+test_changed_batch_graph_is_rejected_before_additional_posts (test_controller.ControllerTests.test_changed_batch_graph_is_rejected_before_additional_posts) ... ok
+test_corrupt_local_record_can_query_but_cannot_resubmit (test_controller.ControllerTests.test_corrupt_local_record_can_query_but_cannot_resubmit) ... ok
+test_invalid_batch_timeout_is_rejected_before_post (test_controller.ControllerTests.test_invalid_batch_timeout_is_rejected_before_post) ... ok
+test_invalid_receipt_is_unknown_not_success (test_controller.ControllerTests.test_invalid_receipt_is_unknown_not_success) ... ok
+test_loopback_origin_enforced (test_controller.ControllerTests.test_loopback_origin_enforced) ... ok
+test_mcp_protocol_structured_results_notifications_and_errors (test_controller.ControllerTests.test_mcp_protocol_structured_results_notifications_and_errors) ... ok
+test_mcp_stdout_is_only_json_rpc_and_survives_bad_json (test_controller.ControllerTests.test_mcp_stdout_is_only_json_rpc_and_survives_bad_json) ... ok
+test_missing_server_receipt_never_replays_local_reservation (test_controller.ControllerTests.test_missing_server_receipt_never_replays_local_reservation) ... ok
+test_native_atomic_batch_orders_dependencies_and_rejects_unhandled_guards (test_controller.ControllerTests.test_native_atomic_batch_orders_dependencies_and_rejects_unhandled_guards) ... ok
+test_native_atomic_batch_rejects_placeholders_before_post (test_controller.ControllerTests.test_native_atomic_batch_rejects_placeholders_before_post) ... ok
+test_receipt_persists_and_reused_id_only_queries (test_controller.ControllerTests.test_receipt_persists_and_reused_id_only_queries) ... ok
+test_timeout_keeps_original_id_then_reconciles_without_replay (test_controller.ControllerTests.test_timeout_keeps_original_id_then_reconciles_without_replay) ... ok
+test_wait_timeout_and_safe_cancellation_receipt (test_controller.ControllerTests.test_wait_timeout_and_safe_cancellation_receipt) ... ok
+
+----------------------------------------------------------------------
+Ran 19 tests in 1.189s
+
+OK

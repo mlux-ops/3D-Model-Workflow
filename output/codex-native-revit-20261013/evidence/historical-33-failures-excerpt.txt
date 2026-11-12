@@ -1,0 +1,166 @@
+2026-10-13 12:10:40,901 - RevitMCP_ExternalServer.bootstrap - INFO - MCP Tool executed: create_text_note (view_id=14347656)
+2026-10-13 12:10:40,902 - RevitMCP_ExternalServer.bootstrap - INFO - Using pre-configured Revit MCP API base URL: http://localhost:48884/revit-mcp-v1
+2026-10-13 12:10:42,994 - RevitMCP_ExternalServer.bootstrap - INFO - Revit MCP API success for /drafting/text_note: {'view': '<dict keys=3>', 'status': 'success', 'message': "Created text note in view 'DUPLEX - KITCHEN - ISLAND FRONT'.", 'text_note_id': '17993053'}
+2026-10-13 12:10:42,994 - RevitMCP_ExternalServer.bootstrap - INFO - Executing step 7: create_text_note - 
+2026-10-13 12:10:42,994 - RevitMCP_ExternalServer.bootstrap - INFO - MCP Tool executed: create_text_note (view_id=14347656)
+2026-10-13 12:10:42,994 - RevitMCP_ExternalServer.bootstrap - INFO - Using pre-configured Revit MCP API base URL: http://localhost:48884/revit-mcp-v1
+2026-10-13 12:10:45,088 - RevitMCP_ExternalServer.bootstrap - INFO - Revit MCP API success for /drafting/text_note: {'view': '<dict keys=3>', 'status': 'success', 'message': "Created text note in view 'DUPLEX - KITCHEN - ISLAND FRONT'.", 'text_note_id': '17993054'}
+2026-10-13 12:10:45,088 - RevitMCP_ExternalServer.bootstrap - INFO - Workflow completed: Successfully completed all 7 planned steps
+2026-10-13 12:10:46,990 - RevitMCP_ExternalServer.bootstrap - INFO - MCP Tool executed: export_active_view_image with pixel_size=2000 format=png
+2026-10-13 12:10:46,990 - RevitMCP_ExternalServer.bootstrap - INFO - Using pre-configured Revit MCP API base URL: http://localhost:48884/revit-mcp-v1
+2026-10-13 12:10:49,403 - RevitMCP_ExternalServer.bootstrap - INFO - Revit MCP API success for /views/active/export_image: {'requested_pixel_size': 2000, 'view': '<dict keys=4>', 'message': "Exported active view 'DUPLEX - KITCHEN - ISLAND FRONT'.", 'capture_dir': 'C:\\Users\\cowey\\AppData\\Roaming\\pyRevit\\Extensions\\RevitMCP.extension\\.revitmcp_runtime\\captures', 'format': 'png', 'file_size_bytes': '70071', 'mime_type': 'image/png', 'status': 'success', 'image_path': 'C:\\Users\\cowey\\AppData\\Roaming\\pyRevit\\Extensions\\RevitMCP.extension\\.revitmcp_runtime\\captures\\active_view_20261013_121049_14347656_duplex_-_kitchen_-_island_front - Elevation - D... [truncated]', 'artifact_type': 'image'}
+2026-10-13 12:10:56,992 - RevitMCP_ExternalServer.bootstrap - INFO - MCP Tool executed: delete_elements with 2 resolved element IDs (dry_run=False, confirm_delete=True, max_count=2, unpin_before_delete=None, deletion_mode=individual)
+2026-10-13 12:10:56,992 - RevitMCP_ExternalServer.bootstrap - INFO - Using pre-configured Revit MCP API base URL: http://localhost:48884/revit-mcp-v1
+2026-10-13 12:10:59,760 - RevitMCP_ExternalServer.bootstrap - INFO - Revit MCP API success for /elements/delete: {'deleted_input_count': 2, 'deleted_ids': '<list len=2>', 'candidates': '<list len=2>', 'deleted_total_count': 2, 'skipped': '<list len=0>', 'invalid_ids': '<list len=0>', 'failed': '<list len=0>', 'message': 'Deleted 2 of 2 input elements; Revit reported 2 total deleted elements including dependents.', 'unpinned_ids': '<list len=0>', 'dry_run': False, 'unpin_before_delete': False, 'deleted_input_ids': '<list len=2>', 'confirm_delete': True, 'deletion_mode': 'individual', 'requested_count': 2, 'candidate_count': 2, 'missing_ids': '<list len=0>', 'status': 'success', 'input_element_ids': '<list len=2>'}
+2026-10-13 12:11:02,682 - RevitMCP_ExternalServer.bootstrap - INFO - MCP Tool executed: create_text_note (view_id=14347656)
+2026-10-13 12:11:02,682 - RevitMCP_ExternalServer.bootstrap - INFO - Using pre-configured Revit MCP API base URL: http://localhost:48884/revit-mcp-v1
+2026-10-13 12:11:04,858 - RevitMCP_ExternalServer.bootstrap - INFO - Revit MCP API success for /drafting/text_note: {'view': '<dict keys=3>', 'status': 'success', 'message': "Created text note in view 'DUPLEX - KITCHEN - ISLAND FRONT'.", 'text_note_id': '17993055'}
+2026-10-13 12:11:07,395 - RevitMCP_ExternalServer.bootstrap - INFO - MCP Tool executed: activate_view with view_id=14346479, view_name=None, exact_match=None
+2026-10-13 12:11:07,395 - RevitMCP_ExternalServer.bootstrap - INFO - Using pre-configured Revit MCP API base URL: http://localhost:48884/revit-mcp-v1
+2026-10-13 12:11:09,737 - RevitMCP_ExternalServer.bootstrap - INFO - Revit MCP API success for /views/activate: {'previous_view': '<dict keys=4>', 'status': 'success', 'message': "Activated view 'DUPLEX - KITCHEN PLANS AND ELEVATIONS'.", 'active_view': '<dict keys=4>'}
+2026-10-13 12:11:11,855 - RevitMCP_ExternalServer.bootstrap - INFO - MCP Tool executed: export_active_view_image with pixel_size=3000 format=png
+2026-10-13 12:11:11,855 - RevitMCP_ExternalServer.bootstrap - INFO - Using pre-configured Revit MCP API base URL: http://localhost:48884/revit-mcp-v1
+2026-10-13 12:11:14,951 - RevitMCP_ExternalServer.bootstrap - INFO - Revit MCP API success for /views/active/export_image: {'requested_pixel_size': 3000, 'view': '<dict keys=4>', 'message': "Exported active view 'DUPLEX - KITCHEN PLANS AND ELEVATIONS'.", 'capture_dir': 'C:\\Users\\cowey\\AppData\\Roaming\\pyRevit\\Extensions\\RevitMCP.extension\\.revitmcp_runtime\\captures', 'format': 'png', 'file_size_bytes': '429628', 'mime_type': 'image/png', 'status': 'success', 'image_path': 'C:\\Users\\cowey\\AppData\\Roaming\\pyRevit\\Extensions\\RevitMCP.extension\\.revitmcp_runtime\\captures\\active_view_20261013_121113_14346479_duplex_-_kitchen_plans_and_elevations - Sheet -... [truncated]', 'artifact_type': 'image'}
+2026-10-13 12:28:31,939 - RevitMCP_ExternalServer.bootstrap - INFO - MCP Tool executed: plan_and_execute_workflow - Executing 33 planned steps
+2026-10-13 12:28:31,939 - RevitMCP_ExternalServer.bootstrap - INFO - Executing step 1: delete_elements - 
+2026-10-13 12:28:31,939 - RevitMCP_ExternalServer.bootstrap - INFO - MCP Tool executed: delete_elements with 32 resolved element IDs (dry_run=False, confirm_delete=True, max_count=40, unpin_before_delete=False, deletion_mode=individual)
+2026-10-13 12:28:31,939 - RevitMCP_ExternalServer.bootstrap - INFO - Using pre-configured Revit MCP API base URL: http://localhost:48884/revit-mcp-v1
+2026-10-13 12:28:33,994 - RevitMCP_ExternalServer.bootstrap - ERROR - Error communicating with Revit MCP API at http://localhost:48884/revit-mcp-v1 for /elements/delete: HTTP 400. API Response: No valid existing elements were provided.
+2026-10-13 12:28:33,994 - RevitMCP_ExternalServer.bootstrap - INFO - Executing step 2: create_text_note - 
+2026-10-13 12:28:33,994 - RevitMCP_ExternalServer.bootstrap - INFO - MCP Tool executed: create_text_note (view_id=17992826)
+2026-10-13 12:28:33,994 - RevitMCP_ExternalServer.bootstrap - INFO - Using pre-configured Revit MCP API base URL: http://localhost:48884/revit-mcp-v1
+2026-10-13 12:28:36,040 - RevitMCP_ExternalServer.bootstrap - ERROR - Error communicating with Revit MCP API at http://localhost:48884/revit-mcp-v1 for /drafting/text_note: HTTP 400. API Response: view_id '17992826' is not a valid view.
+2026-10-13 12:28:36,040 - RevitMCP_ExternalServer.bootstrap - INFO - Executing step 3: create_text_note - 
+2026-10-13 12:28:36,040 - RevitMCP_ExternalServer.bootstrap - INFO - MCP Tool executed: create_text_note (view_id=17992826)
+2026-10-13 12:28:36,040 - RevitMCP_ExternalServer.bootstrap - INFO - Using pre-configured Revit MCP API base URL: http://localhost:48884/revit-mcp-v1
+2026-10-13 12:28:38,080 - RevitMCP_ExternalServer.bootstrap - ERROR - Error communicating with Revit MCP API at http://localhost:48884/revit-mcp-v1 for /drafting/text_note: HTTP 400. API Response: view_id '17992826' is not a valid view.
+2026-10-13 12:28:38,080 - RevitMCP_ExternalServer.bootstrap - INFO - Executing step 4: create_text_note - 
+2026-10-13 12:28:38,080 - RevitMCP_ExternalServer.bootstrap - INFO - MCP Tool executed: create_text_note (view_id=17992826)
+2026-10-13 12:28:38,080 - RevitMCP_ExternalServer.bootstrap - INFO - Using pre-configured Revit MCP API base URL: http://localhost:48884/revit-mcp-v1
+2026-10-13 12:28:40,126 - RevitMCP_ExternalServer.bootstrap - ERROR - Error communicating with Revit MCP API at http://localhost:48884/revit-mcp-v1 for /drafting/text_note: HTTP 400. API Response: view_id '17992826' is not a valid view.
+2026-10-13 12:28:40,127 - RevitMCP_ExternalServer.bootstrap - INFO - Executing step 5: create_text_note - 
+2026-10-13 12:28:40,127 - RevitMCP_ExternalServer.bootstrap - INFO - MCP Tool executed: create_text_note (view_id=17992826)
+2026-10-13 12:28:40,127 - RevitMCP_ExternalServer.bootstrap - INFO - Using pre-configured Revit MCP API base URL: http://localhost:48884/revit-mcp-v1
+2026-10-13 12:28:42,181 - RevitMCP_ExternalServer.bootstrap - ERROR - Error communicating with Revit MCP API at http://localhost:48884/revit-mcp-v1 for /drafting/text_note: HTTP 400. API Response: view_id '17992826' is not a valid view.
+2026-10-13 12:28:42,181 - RevitMCP_ExternalServer.bootstrap - INFO - Executing step 6: create_text_note - 
+2026-10-13 12:28:42,181 - RevitMCP_ExternalServer.bootstrap - INFO - MCP Tool executed: create_text_note (view_id=17992826)
+2026-10-13 12:28:42,181 - RevitMCP_ExternalServer.bootstrap - INFO - Using pre-configured Revit MCP API base URL: http://localhost:48884/revit-mcp-v1
+2026-10-13 12:28:44,223 - RevitMCP_ExternalServer.bootstrap - ERROR - Error communicating with Revit MCP API at http://localhost:48884/revit-mcp-v1 for /drafting/text_note: HTTP 400. API Response: view_id '17992826' is not a valid view.
+2026-10-13 12:28:44,223 - RevitMCP_ExternalServer.bootstrap - INFO - Executing step 7: create_text_note - 
+2026-10-13 12:28:44,223 - RevitMCP_ExternalServer.bootstrap - INFO - MCP Tool executed: create_text_note (view_id=17992826)
+2026-10-13 12:28:44,223 - RevitMCP_ExternalServer.bootstrap - INFO - Using pre-configured Revit MCP API base URL: http://localhost:48884/revit-mcp-v1
+2026-10-13 12:28:46,253 - RevitMCP_ExternalServer.bootstrap - ERROR - Error communicating with Revit MCP API at http://localhost:48884/revit-mcp-v1 for /drafting/text_note: HTTP 400. API Response: view_id '17992826' is not a valid view.
+2026-10-13 12:28:46,253 - RevitMCP_ExternalServer.bootstrap - INFO - Executing step 8: create_text_note - 
+2026-10-13 12:28:46,253 - RevitMCP_ExternalServer.bootstrap - INFO - MCP Tool executed: create_text_note (view_id=17992826)
+2026-10-13 12:28:46,253 - RevitMCP_ExternalServer.bootstrap - INFO - Using pre-configured Revit MCP API base URL: http://localhost:48884/revit-mcp-v1
+2026-10-13 12:28:48,308 - RevitMCP_ExternalServer.bootstrap - ERROR - Error communicating with Revit MCP API at http://localhost:48884/revit-mcp-v1 for /drafting/text_note: HTTP 400. API Response: view_id '17992826' is not a valid view.
+2026-10-13 12:28:48,308 - RevitMCP_ExternalServer.bootstrap - INFO - Executing step 9: create_text_note - 
+2026-10-13 12:28:48,308 - RevitMCP_ExternalServer.bootstrap - INFO - MCP Tool executed: create_text_note (view_id=17992826)
+2026-10-13 12:28:48,308 - RevitMCP_ExternalServer.bootstrap - INFO - Using pre-configured Revit MCP API base URL: http://localhost:48884/revit-mcp-v1
+2026-10-13 12:28:50,373 - RevitMCP_ExternalServer.bootstrap - ERROR - Error communicating with Revit MCP API at http://localhost:48884/revit-mcp-v1 for /drafting/text_note: HTTP 400. API Response: view_id '17992826' is not a valid view.
+2026-10-13 12:28:50,373 - RevitMCP_ExternalServer.bootstrap - INFO - Executing step 10: create_text_note - 
+2026-10-13 12:28:50,373 - RevitMCP_ExternalServer.bootstrap - INFO - MCP Tool executed: create_text_note (view_id=17992826)
+2026-10-13 12:28:50,373 - RevitMCP_ExternalServer.bootstrap - INFO - Using pre-configured Revit MCP API base URL: http://localhost:48884/revit-mcp-v1
+2026-10-13 12:28:52,400 - RevitMCP_ExternalServer.bootstrap - ERROR - Error communicating with Revit MCP API at http://localhost:48884/revit-mcp-v1 for /drafting/text_note: HTTP 400. API Response: view_id '17992826' is not a valid view.
+2026-10-13 12:28:52,400 - RevitMCP_ExternalServer.bootstrap - INFO - Executing step 11: create_text_note - 
+2026-10-13 12:28:52,400 - RevitMCP_ExternalServer.bootstrap - INFO - MCP Tool executed: create_text_note (view_id=17992826)
+2026-10-13 12:28:52,400 - RevitMCP_ExternalServer.bootstrap - INFO - Using pre-configured Revit MCP API base URL: http://localhost:48884/revit-mcp-v1
+2026-10-13 12:28:54,431 - RevitMCP_ExternalServer.bootstrap - ERROR - Error communicating with Revit MCP API at http://localhost:48884/revit-mcp-v1 for /drafting/text_note: HTTP 400. API Response: view_id '17992826' is not a valid view.
+2026-10-13 12:28:54,431 - RevitMCP_ExternalServer.bootstrap - INFO - Executing step 12: create_text_note - 
+2026-10-13 12:28:54,431 - RevitMCP_ExternalServer.bootstrap - INFO - MCP Tool executed: create_text_note (view_id=17992826)
+2026-10-13 12:28:54,431 - RevitMCP_ExternalServer.bootstrap - INFO - Using pre-configured Revit MCP API base URL: http://localhost:48884/revit-mcp-v1
+2026-10-13 12:28:56,474 - RevitMCP_ExternalServer.bootstrap - ERROR - Error communicating with Revit MCP API at http://localhost:48884/revit-mcp-v1 for /drafting/text_note: HTTP 400. API Response: view_id '17992826' is not a valid view.
+2026-10-13 12:28:56,474 - RevitMCP_ExternalServer.bootstrap - INFO - Executing step 13: create_text_note - 
+2026-10-13 12:28:56,474 - RevitMCP_ExternalServer.bootstrap - INFO - MCP Tool executed: create_text_note (view_id=17992826)
+2026-10-13 12:28:56,474 - RevitMCP_ExternalServer.bootstrap - INFO - Using pre-configured Revit MCP API base URL: http://localhost:48884/revit-mcp-v1
+2026-10-13 12:28:58,515 - RevitMCP_ExternalServer.bootstrap - ERROR - Error communicating with Revit MCP API at http://localhost:48884/revit-mcp-v1 for /drafting/text_note: HTTP 400. API Response: view_id '17992826' is not a valid view.
+2026-10-13 12:28:58,515 - RevitMCP_ExternalServer.bootstrap - INFO - Executing step 14: create_text_note - 
+2026-10-13 12:28:58,515 - RevitMCP_ExternalServer.bootstrap - INFO - MCP Tool executed: create_text_note (view_id=17992826)
+2026-10-13 12:28:58,515 - RevitMCP_ExternalServer.bootstrap - INFO - Using pre-configured Revit MCP API base URL: http://localhost:48884/revit-mcp-v1
+2026-10-13 12:29:00,548 - RevitMCP_ExternalServer.bootstrap - ERROR - Error communicating with Revit MCP API at http://localhost:48884/revit-mcp-v1 for /drafting/text_note: HTTP 400. API Response: view_id '17992826' is not a valid view.
+2026-10-13 12:29:00,548 - RevitMCP_ExternalServer.bootstrap - INFO - Executing step 15: create_text_note - 
+2026-10-13 12:29:00,548 - RevitMCP_ExternalServer.bootstrap - INFO - MCP Tool executed: create_text_note (view_id=17992826)
+2026-10-13 12:29:00,548 - RevitMCP_ExternalServer.bootstrap - INFO - Using pre-configured Revit MCP API base URL: http://localhost:48884/revit-mcp-v1
+2026-10-13 12:29:02,583 - RevitMCP_ExternalServer.bootstrap - ERROR - Error communicating with Revit MCP API at http://localhost:48884/revit-mcp-v1 for /drafting/text_note: HTTP 400. API Response: view_id '17992826' is not a valid view.
+2026-10-13 12:29:02,583 - RevitMCP_ExternalServer.bootstrap - INFO - Executing step 16: create_text_note - 
+2026-10-13 12:29:02,583 - RevitMCP_ExternalServer.bootstrap - INFO - MCP Tool executed: create_text_note (view_id=17992826)
+2026-10-13 12:29:02,583 - RevitMCP_ExternalServer.bootstrap - INFO - Using pre-configured Revit MCP API base URL: http://localhost:48884/revit-mcp-v1
+2026-10-13 12:29:04,623 - RevitMCP_ExternalServer.bootstrap - ERROR - Error communicating with Revit MCP API at http://localhost:48884/revit-mcp-v1 for /drafting/text_note: HTTP 400. API Response: view_id '17992826' is not a valid view.
+2026-10-13 12:29:04,623 - RevitMCP_ExternalServer.bootstrap - INFO - Executing step 17: create_text_note - 
+2026-10-13 12:29:04,623 - RevitMCP_ExternalServer.bootstrap - INFO - MCP Tool executed: create_text_note (view_id=17992826)
+2026-10-13 12:29:04,623 - RevitMCP_ExternalServer.bootstrap - INFO - Using pre-configured Revit MCP API base URL: http://localhost:48884/revit-mcp-v1
+2026-10-13 12:29:06,680 - RevitMCP_ExternalServer.bootstrap - ERROR - Error communicating with Revit MCP API at http://localhost:48884/revit-mcp-v1 for /drafting/text_note: HTTP 400. API Response: view_id '17992826' is not a valid view.
+2026-10-13 12:29:06,680 - RevitMCP_ExternalServer.bootstrap - INFO - Executing step 18: create_text_note - 
+2026-10-13 12:29:06,680 - RevitMCP_ExternalServer.bootstrap - INFO - MCP Tool executed: create_text_note (view_id=17992826)
+2026-10-13 12:29:06,680 - RevitMCP_ExternalServer.bootstrap - INFO - Using pre-configured Revit MCP API base URL: http://localhost:48884/revit-mcp-v1
+2026-10-13 12:29:08,716 - RevitMCP_ExternalServer.bootstrap - ERROR - Error communicating with Revit MCP API at http://localhost:48884/revit-mcp-v1 for /drafting/text_note: HTTP 400. API Response: view_id '17992826' is not a valid view.
+2026-10-13 12:29:08,716 - RevitMCP_ExternalServer.bootstrap - INFO - Executing step 19: create_text_note - 
+2026-10-13 12:29:08,716 - RevitMCP_ExternalServer.bootstrap - INFO - MCP Tool executed: create_text_note (view_id=17992826)
+2026-10-13 12:29:08,716 - RevitMCP_ExternalServer.bootstrap - INFO - Using pre-configured Revit MCP API base URL: http://localhost:48884/revit-mcp-v1
+2026-10-13 12:29:10,764 - RevitMCP_ExternalServer.bootstrap - ERROR - Error communicating with Revit MCP API at http://localhost:48884/revit-mcp-v1 for /drafting/text_note: HTTP 400. API Response: view_id '17992826' is not a valid view.
+2026-10-13 12:29:10,764 - RevitMCP_ExternalServer.bootstrap - INFO - Executing step 20: create_text_note - 
+2026-10-13 12:29:10,764 - RevitMCP_ExternalServer.bootstrap - INFO - MCP Tool executed: create_text_note (view_id=17992826)
+2026-10-13 12:29:10,764 - RevitMCP_ExternalServer.bootstrap - INFO - Using pre-configured Revit MCP API base URL: http://localhost:48884/revit-mcp-v1
+2026-10-13 12:29:12,790 - RevitMCP_ExternalServer.bootstrap - ERROR - Error communicating with Revit MCP API at http://localhost:48884/revit-mcp-v1 for /drafting/text_note: HTTP 400. API Response: view_id '17992826' is not a valid view.
+2026-10-13 12:29:12,790 - RevitMCP_ExternalServer.bootstrap - INFO - Executing step 21: create_text_note - 
+2026-10-13 12:29:12,790 - RevitMCP_ExternalServer.bootstrap - INFO - MCP Tool executed: create_text_note (view_id=17992826)
+2026-10-13 12:29:12,790 - RevitMCP_ExternalServer.bootstrap - INFO - Using pre-configured Revit MCP API base URL: http://localhost:48884/revit-mcp-v1
+2026-10-13 12:29:14,848 - RevitMCP_ExternalServer.bootstrap - ERROR - Error communicating with Revit MCP API at http://localhost:48884/revit-mcp-v1 for /drafting/text_note: HTTP 400. API Response: view_id '17992826' is not a valid view.
+2026-10-13 12:29:14,848 - RevitMCP_ExternalServer.bootstrap - INFO - Executing step 22: create_text_note - 
+2026-10-13 12:29:14,848 - RevitMCP_ExternalServer.bootstrap - INFO - MCP Tool executed: create_text_note (view_id=17992826)
+2026-10-13 12:29:14,848 - RevitMCP_ExternalServer.bootstrap - INFO - Using pre-configured Revit MCP API base URL: http://localhost:48884/revit-mcp-v1
+2026-10-13 12:29:16,891 - RevitMCP_ExternalServer.bootstrap - ERROR - Error communicating with Revit MCP API at http://localhost:48884/revit-mcp-v1 for /drafting/text_note: HTTP 400. API Response: view_id '17992826' is not a valid view.
+2026-10-13 12:29:16,891 - RevitMCP_ExternalServer.bootstrap - INFO - Executing step 23: create_text_note - 
+2026-10-13 12:29:16,891 - RevitMCP_ExternalServer.bootstrap - INFO - MCP Tool executed: create_text_note (view_id=17992826)
+2026-10-13 12:29:16,891 - RevitMCP_ExternalServer.bootstrap - INFO - Using pre-configured Revit MCP API base URL: http://localhost:48884/revit-mcp-v1
+2026-10-13 12:29:18,927 - RevitMCP_ExternalServer.bootstrap - ERROR - Error communicating with Revit MCP API at http://localhost:48884/revit-mcp-v1 for /drafting/text_note: HTTP 400. API Response: view_id '17992826' is not a valid view.
+2026-10-13 12:29:18,927 - RevitMCP_ExternalServer.bootstrap - INFO - Executing step 24: create_text_note - 
+2026-10-13 12:29:18,927 - RevitMCP_ExternalServer.bootstrap - INFO - MCP Tool executed: create_text_note (view_id=17992826)
+2026-10-13 12:29:18,927 - RevitMCP_ExternalServer.bootstrap - INFO - Using pre-configured Revit MCP API base URL: http://localhost:48884/revit-mcp-v1
+2026-10-13 12:29:20,970 - RevitMCP_ExternalServer.bootstrap - ERROR - Error communicating with Revit MCP API at http://localhost:48884/revit-mcp-v1 for /drafting/text_note: HTTP 400. API Response: view_id '17992826' is not a valid view.
+2026-10-13 12:29:20,970 - RevitMCP_ExternalServer.bootstrap - INFO - Executing step 25: create_text_note - 
+2026-10-13 12:29:20,970 - RevitMCP_ExternalServer.bootstrap - INFO - MCP Tool executed: create_text_note (view_id=17992826)
+2026-10-13 12:29:20,970 - RevitMCP_ExternalServer.bootstrap - INFO - Using pre-configured Revit MCP API base URL: http://localhost:48884/revit-mcp-v1
+2026-10-13 12:29:23,018 - RevitMCP_ExternalServer.bootstrap - ERROR - Error communicating with Revit MCP API at http://localhost:48884/revit-mcp-v1 for /drafting/text_note: HTTP 400. API Response: view_id '17992826' is not a valid view.
+2026-10-13 12:29:23,019 - RevitMCP_ExternalServer.bootstrap - INFO - Executing step 26: create_text_note - 
+2026-10-13 12:29:23,019 - RevitMCP_ExternalServer.bootstrap - INFO - MCP Tool executed: create_text_note (view_id=17992826)
+2026-10-13 12:29:23,019 - RevitMCP_ExternalServer.bootstrap - INFO - Using pre-configured Revit MCP API base URL: http://localhost:48884/revit-mcp-v1
+2026-10-13 12:29:25,065 - RevitMCP_ExternalServer.bootstrap - ERROR - Error communicating with Revit MCP API at http://localhost:48884/revit-mcp-v1 for /drafting/text_note: HTTP 400. API Response: view_id '17992826' is not a valid view.
+2026-10-13 12:29:25,065 - RevitMCP_ExternalServer.bootstrap - INFO - Executing step 27: create_text_note - 
+2026-10-13 12:29:25,065 - RevitMCP_ExternalServer.bootstrap - INFO - MCP Tool executed: create_text_note (view_id=17992826)
+2026-10-13 12:29:25,065 - RevitMCP_ExternalServer.bootstrap - INFO - Using pre-configured Revit MCP API base URL: http://localhost:48884/revit-mcp-v1
+2026-10-13 12:29:27,106 - RevitMCP_ExternalServer.bootstrap - ERROR - Error communicating with Revit MCP API at http://localhost:48884/revit-mcp-v1 for /drafting/text_note: HTTP 400. API Response: view_id '17992826' is not a valid view.
+2026-10-13 12:29:27,106 - RevitMCP_ExternalServer.bootstrap - INFO - Executing step 28: create_text_note - 
+2026-10-13 12:29:27,106 - RevitMCP_ExternalServer.bootstrap - INFO - MCP Tool executed: create_text_note (view_id=17992826)
+2026-10-13 12:29:27,106 - RevitMCP_ExternalServer.bootstrap - INFO - Using pre-configured Revit MCP API base URL: http://localhost:48884/revit-mcp-v1
+2026-10-13 12:29:29,135 - RevitMCP_ExternalServer.bootstrap - ERROR - Error communicating with Revit MCP API at http://localhost:48884/revit-mcp-v1 for /drafting/text_note: HTTP 400. API Response: view_id '17992826' is not a valid view.
+2026-10-13 12:29:29,135 - RevitMCP_ExternalServer.bootstrap - INFO - Executing step 29: create_text_note - 
+2026-10-13 12:29:29,135 - RevitMCP_ExternalServer.bootstrap - INFO - MCP Tool executed: create_text_note (view_id=17992826)
+2026-10-13 12:29:29,135 - RevitMCP_ExternalServer.bootstrap - INFO - Using pre-configured Revit MCP API base URL: http://localhost:48884/revit-mcp-v1
+2026-10-13 12:29:31,178 - RevitMCP_ExternalServer.bootstrap - ERROR - Error communicating with Revit MCP API at http://localhost:48884/revit-mcp-v1 for /drafting/text_note: HTTP 400. API Response: view_id '17992826' is not a valid view.
+2026-10-13 12:29:31,178 - RevitMCP_ExternalServer.bootstrap - INFO - Executing step 30: create_text_note - 
+2026-10-13 12:29:31,178 - RevitMCP_ExternalServer.bootstrap - INFO - MCP Tool executed: create_text_note (view_id=17992826)
+2026-10-13 12:29:31,178 - RevitMCP_ExternalServer.bootstrap - INFO - Using pre-configured Revit MCP API base URL: http://localhost:48884/revit-mcp-v1
+2026-10-13 12:29:33,195 - RevitMCP_ExternalServer.bootstrap - ERROR - Error communicating with Revit MCP API at http://localhost:48884/revit-mcp-v1 for /drafting/text_note: HTTP 400. API Response: view_id '17992826' is not a valid view.
+2026-10-13 12:29:33,195 - RevitMCP_ExternalServer.bootstrap - INFO - Executing step 31: create_text_note - 
+2026-10-13 12:29:33,195 - RevitMCP_ExternalServer.bootstrap - INFO - MCP Tool executed: create_text_note (view_id=17992826)
+2026-10-13 12:29:33,195 - RevitMCP_ExternalServer.bootstrap - INFO - Using pre-configured Revit MCP API base URL: http://localhost:48884/revit-mcp-v1
+2026-10-13 12:29:35,267 - RevitMCP_ExternalServer.bootstrap - ERROR - Error communicating with Revit MCP API at http://localhost:48884/revit-mcp-v1 for /drafting/text_note: HTTP 400. API Response: view_id '17992826' is not a valid view.
+2026-10-13 12:29:35,267 - RevitMCP_ExternalServer.bootstrap - INFO - Executing step 32: create_text_note - 
+2026-10-13 12:29:35,267 - RevitMCP_ExternalServer.bootstrap - INFO - MCP Tool executed: create_text_note (view_id=17992826)
+2026-10-13 12:29:35,267 - RevitMCP_ExternalServer.bootstrap - INFO - Using pre-configured Revit MCP API base URL: http://localhost:48884/revit-mcp-v1
+2026-10-13 12:29:37,303 - RevitMCP_ExternalServer.bootstrap - ERROR - Error communicating with Revit MCP API at http://localhost:48884/revit-mcp-v1 for /drafting/text_note: HTTP 400. API Response: view_id '17992826' is not a valid view.
+2026-10-13 12:29:37,303 - RevitMCP_ExternalServer.bootstrap - INFO - Executing step 33: create_text_note - 
+2026-10-13 12:29:37,303 - RevitMCP_ExternalServer.bootstrap - INFO - MCP Tool executed: create_text_note (view_id=17992826)
+2026-10-13 12:29:37,303 - RevitMCP_ExternalServer.bootstrap - INFO - Using pre-configured Revit MCP API base URL: http://localhost:48884/revit-mcp-v1
+2026-10-13 12:29:39,361 - RevitMCP_ExternalServer.bootstrap - ERROR - Error communicating with Revit MCP API at http://localhost:48884/revit-mcp-v1 for /drafting/text_note: HTTP 400. API Response: view_id '17992826' is not a valid view.
+2026-10-13 12:29:39,361 - RevitMCP_ExternalServer.bootstrap - INFO - Workflow completed: All 33 steps failed
+2026-10-13 12:30:46,168 - RevitMCP_ExternalServer.bootstrap - INFO - MCP Tool executed: activate_view with view_id=17992826, view_name=None, exact_match=None
+2026-10-13 12:30:46,168 - RevitMCP_ExternalServer.bootstrap - INFO - Using pre-configured Revit MCP API base URL: http://localhost:48884/revit-mcp-v1
+2026-10-13 12:30:48,387 - RevitMCP_ExternalServer.bootstrap - INFO - Revit MCP API success for /views/activate: {'previous_view': '<dict keys=4>', 'status': 'success', 'message': "Activated view 'ID1.0 - TRIPLEX KITCHEN APPLIANCE + PLUMBING SCHEDULE'.", 'active_view': '<dict keys=4>'}
+2026-10-13 12:30:50,760 - RevitMCP_ExternalServer.bootstrap - INFO - MCP Tool executed: get_active_view_elements with 1 category filters and limit=200
+2026-10-13 12:30:50,760 - RevitMCP_ExternalServer.bootstrap - INFO - Using pre-configured Revit MCP API base URL: http://localhost:48884/revit-mcp-v1
+2026-10-13 12:30:52,804 - RevitMCP_ExternalServer.bootstrap - INFO - Revit MCP API success for /views/active/elements: {'element_ids': '<list len=15>', 'truncated': False, 'total_count': 15, 'returned_count': 15, 'elements': '<list len=15>', 'view': '<dict keys=3>', 'status': 'success', 'category_filters': '<list len=1>', 'message': 'Found 15 matching elements in the active view.', 'limit': 200}
+2026-10-13 12:30:52,804 - RevitMCP_ExternalServer.bootstrap - INFO - Stored 15 element IDs for category 'active_view_DUPLEX - KITCHEN - N ELEV._Text Notes' with key 'active_view_duplex_-_kitchen_-_n_elev._text_notes' and handle 'res_aaf805c3d4c4'
+2026-10-13 12:30:56,223 - RevitMCP_ExternalServer.bootstrap - INFO - MCP Tool executed: activate_view with view_id=17992826, view_name=None, exact_match=None
+2026-10-13 12:30:56,223 - RevitMCP_ExternalServer.bootstrap - INFO - Using pre-configured Revit MCP API base URL: http://localhost:48884/revit-mcp-v1

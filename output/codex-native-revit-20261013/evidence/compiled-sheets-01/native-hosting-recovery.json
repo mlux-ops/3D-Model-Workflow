@@ -1,0 +1,4844 @@
+{
+  "run_id": "b1f2efea-93f0-45e1-afd8-2ee838994351",
+  "status": "passed",
+  "steps": {
+    "project": {
+      "schema_version": 1,
+      "operation_id": "f14affae-e486-5512-aa68-a4f38e985995",
+      "status": "completed",
+      "request": {
+        "arguments": {
+          "template": "C:\\ProgramData\\Autodesk\\RVT 2025\\Templates\\Default_I_ENU.rte"
+        },
+        "document": {},
+        "operation": "document.create",
+        "operation_id": "f14affae-e486-5512-aa68-a4f38e985995",
+        "preconditions": {},
+        "schema_version": 1
+      },
+      "result": {
+        "session_id": "7e0f86a4-f174-412c-b34b-390306cec37f",
+        "title": "Project4",
+        "path": "",
+        "is_family": false,
+        "is_read_only": false,
+        "is_modified": false,
+        "is_workshared": false
+      },
+      "error": null,
+      "cancel_requested": false,
+      "created_utc": "2026-10-14T05:09:02.5814273Z",
+      "finished_utc": "2026-10-14T05:09:02.9595793Z",
+      "elapsed_ms": 371.52,
+      "transaction_status": "not_started"
+    },
+    "family-load": {
+      "schema_version": 1,
+      "operation_id": "518a6fbd-e1fb-5b29-ab49-364a52db7c95",
+      "status": "completed",
+      "request": {
+        "arguments": {
+          "path": "H:\\Games\\3D Modeling Workflows\\3D Model Workflow\\output\\codex-native-revit-20261013\\evidence\\extended-family-01\\cabinet-attempt-1-Codex_Parametric_Casework.rfa",
+          "replacement_policy": "reject"
+        },
+        "document": {
+          "session_id": "7e0f86a4-f174-412c-b34b-390306cec37f"
+        },
+        "operation": "family.load",
+        "operation_id": "518a6fbd-e1fb-5b29-ab49-364a52db7c95",
+        "preconditions": {},
+        "schema_version": 1
+      },
+      "result": {
+        "result": {
+          "loaded": true,
+          "family": {
+            "document_session_id": "7e0f86a4-f174-412c-b34b-390306cec37f",
+            "id": 315389,
+            "unique_id": "5dfd0b93-0be2-413e-8a48-41f969832334-0004cffd",
+            "name": "cabinet-attempt-1-Codex_Parametric_Casework",
+            "category": null,
+            "category_id": null,
+            "type_id": -1,
+            "pinned": false,
+            "group_id": -1,
+            "level_id": -1,
+            "location": null,
+            "bounds": null,
+            "host_id": null,
+            "family_name": null,
+            "placement_type": null,
+            "view_family": null,
+            "view_type": null,
+            "elevation": null
+          },
+          "path": "H:\\Games\\3D Modeling Workflows\\3D Model Workflow\\output\\codex-native-revit-20261013\\evidence\\extended-family-01\\cabinet-attempt-1-Codex_Parametric_Casework.rfa",
+          "replacement_policy": "reject",
+          "outcome": "loaded",
+          "callback_decisions": []
+        },
+        "transaction_status": "committed",
+        "saved": false,
+        "document": {
+          "session_id": "7e0f86a4-f174-412c-b34b-390306cec37f",
+          "title": "Project4",
+          "path": "",
+          "is_family": false,
+          "is_read_only": false,
+          "is_modified": true,
+          "is_workshared": false
+        },
+        "warnings": []
+      },
+      "error": null,
+      "cancel_requested": false,
+      "created_utc": "2026-10-14T05:09:03.4235435Z",
+      "finished_utc": "2026-10-14T05:09:03.8175671Z",
+      "elapsed_ms": 387.1795,
+      "transaction_status": "committed"
+    },
+    "symbols": {
+      "schema_version": 1,
+      "operation_id": "829ef94f-11d0-59db-b38f-37dab51965f1",
+      "status": "completed",
+      "request": {
+        "arguments": {
+          "category": "OST_Casework",
+          "class": "FamilySymbol",
+          "types": true
+        },
+        "document": {
+          "session_id": "7e0f86a4-f174-412c-b34b-390306cec37f"
+        },
+        "operation": "elements.query",
+        "operation_id": "829ef94f-11d0-59db-b38f-37dab51965f1",
+        "preconditions": {},
+        "schema_version": 1
+      },
+      "result": {
+        "items": [
+          {
+            "document_session_id": "7e0f86a4-f174-412c-b34b-390306cec37f",
+            "id": 316180,
+            "unique_id": "5dfd0b93-0be2-413e-8a48-41f969832334-0004d314",
+            "name": "Codex_Parametric_Box",
+            "category": "Casework",
+            "category_id": -2001000,
+            "type_id": -1,
+            "pinned": false,
+            "group_id": -1,
+            "level_id": -1,
+            "location": null,
+            "bounds": null,
+            "host_id": null,
+            "family_name": "cabinet-attempt-1-Codex_Parametric_Casework",
+            "placement_type": "OneLevelBased",
+            "view_family": null,
+            "view_type": null,
+            "elevation": null
+          }
+        ],
+        "offset": 0,
+        "next_offset": null,
+        "units": "internal feet"
+      },
+      "error": null,
+      "cancel_requested": false,
+      "created_utc": "2026-10-14T05:09:04.1658024Z",
+      "finished_utc": "2026-10-14T05:09:04.1731962Z",
+      "elapsed_ms": 0.894,
+      "transaction_status": "not_started"
+    },
+    "levels": {
+      "schema_version": 1,
+      "operation_id": "eac3f38c-6f07-522d-9acf-114480022028",
+      "status": "completed",
+      "request": {
+        "arguments": {
+          "class": "Level"
+        },
+        "document": {
+          "session_id": "7e0f86a4-f174-412c-b34b-390306cec37f"
+        },
+        "operation": "elements.query",
+        "operation_id": "eac3f38c-6f07-522d-9acf-114480022028",
+        "preconditions": {},
+        "schema_version": 1
+      },
+      "result": {
+        "items": [
+          {
+            "document_session_id": "7e0f86a4-f174-412c-b34b-390306cec37f",
+            "id": 30,
+            "unique_id": "933c4a06-93b8-11d3-80f8-00c04f8efc32-0000001e",
+            "name": "Level 1",
+            "category": "Levels",
+            "category_id": -2000240,
+            "type_id": 27,
+            "pinned": false,
+            "group_id": -1,
+            "level_id": -1,
+            "location": null,
+            "bounds": null,
+            "host_id": null,
+            "family_name": null,
+            "placement_type": null,
+            "view_family": null,
+            "view_type": null,
+            "elevation": 0
+          },
+          {
+            "document_session_id": "7e0f86a4-f174-412c-b34b-390306cec37f",
+            "id": 9946,
+            "unique_id": "6341822b-d4f3-11d3-a039-0000863f1523-000026da",
+            "name": "Level 2",
+            "category": "Levels",
+            "category_id": -2000240,
+            "type_id": 27,
+            "pinned": false,
+            "group_id": -1,
+            "level_id": -1,
+            "location": null,
+            "bounds": null,
+            "host_id": null,
+            "family_name": null,
+            "placement_type": null,
+            "view_family": null,
+            "view_type": null,
+            "elevation": 9.999999999998435
+          }
+        ],
+        "offset": 0,
+        "next_offset": null,
+        "units": "internal feet"
+      },
+      "error": null,
+      "cancel_requested": false,
+      "created_utc": "2026-10-14T05:09:18.9862994Z",
+      "finished_utc": "2026-10-14T05:09:18.9960652Z",
+      "elapsed_ms": 1.4606,
+      "transaction_status": "not_started"
+    },
+    "cabinet-run": {
+      "schema_version": 1,
+      "operation_id": "968a28d3-a7e9-59c4-8512-b44b333e695a",
+      "status": "completed",
+      "request": {
+        "arguments": {
+          "instances": [
+            {
+              "level": "933c4a06-93b8-11d3-80f8-00c04f8efc32-0000001e",
+              "point": [
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "level": "933c4a06-93b8-11d3-80f8-00c04f8efc32-0000001e",
+              "point": [
+                3,
+                0,
+                0
+              ]
+            },
+            {
+              "level": "933c4a06-93b8-11d3-80f8-00c04f8efc32-0000001e",
+              "point": [
+                6,
+                0,
+                0
+              ]
+            }
+          ],
+          "type": "5dfd0b93-0be2-413e-8a48-41f969832334-0004d314"
+        },
+        "document": {
+          "session_id": "7e0f86a4-f174-412c-b34b-390306cec37f"
+        },
+        "operation": "family.place",
+        "operation_id": "968a28d3-a7e9-59c4-8512-b44b333e695a",
+        "preconditions": {},
+        "schema_version": 1
+      },
+      "result": {
+        "data": {
+          "placement_type": "OneLevelBased",
+          "instances": [
+            {
+              "document_session_id": "7e0f86a4-f174-412c-b34b-390306cec37f",
+              "id": 316195,
+              "unique_id": "5dfd0b93-0be2-413e-8a48-41f969832334-0004d323",
+              "name": "Codex_Parametric_Box",
+              "category": "Casework",
+              "category_id": -2001000,
+              "type_id": 316180,
+              "pinned": false,
+              "group_id": -1,
+              "level_id": 30,
+              "location": {
+                "point": [
+                  0,
+                  0,
+                  0
+                ],
+                "rotation_radians": 0
+              },
+              "bounds": {
+                "min": [
+                  -2.000000000000018,
+                  -2.00000000000002,
+                  -1.2833922625249017e-30
+                ],
+                "max": [
+                  1.9999999999999867,
+                  1.5,
+                  3.000000000000017
+                ]
+              },
+              "host_id": null,
+              "family_name": null,
+              "placement_type": null,
+              "view_family": null,
+              "view_type": null,
+              "elevation": null
+            },
+            {
+              "document_session_id": "7e0f86a4-f174-412c-b34b-390306cec37f",
+              "id": 316196,
+              "unique_id": "5dfd0b93-0be2-413e-8a48-41f969832334-0004d324",
+              "name": "Codex_Parametric_Box",
+              "category": "Casework",
+              "category_id": -2001000,
+              "type_id": 316180,
+              "pinned": false,
+              "group_id": -1,
+              "level_id": 30,
+              "location": {
+                "point": [
+                  3,
+                  0,
+                  0
+                ],
+                "rotation_radians": 0
+              },
+              "bounds": {
+                "min": [
+                  0.9999999999999816,
+                  -2.00000000000002,
+                  -1.2833922625249017e-30
+                ],
+                "max": [
+                  4.999999999999987,
+                  1.5,
+                  3.000000000000017
+                ]
+              },
+              "host_id": null,
+              "family_name": null,
+              "placement_type": null,
+              "view_family": null,
+              "view_type": null,
+              "elevation": null
+            },
+            {
+              "document_session_id": "7e0f86a4-f174-412c-b34b-390306cec37f",
+              "id": 316197,
+              "unique_id": "5dfd0b93-0be2-413e-8a48-41f969832334-0004d325",
+              "name": "Codex_Parametric_Box",
+              "category": "Casework",
+              "category_id": -2001000,
+              "type_id": 316180,
+              "pinned": false,
+              "group_id": -1,
+              "level_id": 30,
+              "location": {
+                "point": [
+                  6,
+                  0,
+                  0
+                ],
+                "rotation_radians": 0
+              },
+              "bounds": {
+                "min": [
+                  3.9999999999999822,
+                  -2.00000000000002,
+                  -1.2833922625249017e-30
+                ],
+                "max": [
+                  7.999999999999988,
+                  1.5,
+                  3.000000000000017
+                ]
+              },
+              "host_id": null,
+              "family_name": null,
+              "placement_type": null,
+              "view_family": null,
+              "view_type": null,
+              "elevation": null
+            }
+          ]
+        },
+        "transaction_status": "committed",
+        "actual_elements": [
+          {
+            "document_session_id": "7e0f86a4-f174-412c-b34b-390306cec37f",
+            "id": 316195,
+            "unique_id": "5dfd0b93-0be2-413e-8a48-41f969832334-0004d323",
+            "name": "Codex_Parametric_Box",
+            "category": "Casework",
+            "category_id": -2001000,
+            "type_id": 316180,
+            "pinned": false,
+            "group_id": -1,
+            "level_id": 30,
+            "location": {
+              "point": [
+                0,
+                0,
+                0
+              ],
+              "rotation_radians": 0
+            },
+            "bounds": {
+              "min": [
+                -2.000000000000018,
+                -2.00000000000002,
+                -1.2833922625249017e-30
+              ],
+              "max": [
+                1.9999999999999867,
+                1.5,
+                3.000000000000017
+              ]
+            },
+            "host_id": null,
+            "family_name": null,
+            "placement_type": null,
+            "view_family": null,
+            "view_type": null,
+            "elevation": null
+          },
+          {
+            "document_session_id": "7e0f86a4-f174-412c-b34b-390306cec37f",
+            "id": 316196,
+            "unique_id": "5dfd0b93-0be2-413e-8a48-41f969832334-0004d324",
+            "name": "Codex_Parametric_Box",
+            "category": "Casework",
+            "category_id": -2001000,
+            "type_id": 316180,
+            "pinned": false,
+            "group_id": -1,
+            "level_id": 30,
+            "location": {
+              "point": [
+                3,
+                0,
+                0
+              ],
+              "rotation_radians": 0
+            },
+            "bounds": {
+              "min": [
+                0.9999999999999816,
+                -2.00000000000002,
+                -1.2833922625249017e-30
+              ],
+              "max": [
+                4.999999999999987,
+                1.5,
+                3.000000000000017
+              ]
+            },
+            "host_id": null,
+            "family_name": null,
+            "placement_type": null,
+            "view_family": null,
+            "view_type": null,
+            "elevation": null
+          },
+          {
+            "document_session_id": "7e0f86a4-f174-412c-b34b-390306cec37f",
+            "id": 316197,
+            "unique_id": "5dfd0b93-0be2-413e-8a48-41f969832334-0004d325",
+            "name": "Codex_Parametric_Box",
+            "category": "Casework",
+            "category_id": -2001000,
+            "type_id": 316180,
+            "pinned": false,
+            "group_id": -1,
+            "level_id": 30,
+            "location": {
+              "point": [
+                6,
+                0,
+                0
+              ],
+              "rotation_radians": 0
+            },
+            "bounds": {
+              "min": [
+                3.9999999999999822,
+                -2.00000000000002,
+                -1.2833922625249017e-30
+              ],
+              "max": [
+                7.999999999999988,
+                1.5,
+                3.000000000000017
+              ]
+            },
+            "host_id": null,
+            "family_name": null,
+            "placement_type": null,
+            "view_family": null,
+            "view_type": null,
+            "elevation": null
+          }
+        ],
+        "warnings": []
+      },
+      "error": null,
+      "cancel_requested": false,
+      "created_utc": "2026-10-14T05:09:19.3387183Z",
+      "finished_utc": "2026-10-14T05:09:19.3851296Z",
+      "elapsed_ms": 37.2442,
+      "transaction_status": "committed"
+    },
+    "duplicate": {
+      "schema_version": 1,
+      "operation_id": "2a41f28a-53b2-58d1-8e9b-b4f0d28579f6",
+      "status": "completed",
+      "request": {
+        "arguments": {
+          "name": "Codex_Three_Axis_Modified",
+          "type": "5dfd0b93-0be2-413e-8a48-41f969832334-0004d314"
+        },
+        "document": {
+          "session_id": "7e0f86a4-f174-412c-b34b-390306cec37f"
+        },
+        "operation": "type.duplicate",
+        "operation_id": "2a41f28a-53b2-58d1-8e9b-b4f0d28579f6",
+        "preconditions": {},
+        "schema_version": 1
+      },
+      "result": {
+        "data": {
+          "document_session_id": "7e0f86a4-f174-412c-b34b-390306cec37f",
+          "id": 316198,
+          "unique_id": "5dfd0b93-0be2-413e-8a48-41f969832334-0004d326",
+          "name": "Codex_Three_Axis_Modified",
+          "category": "Casework",
+          "category_id": -2001000,
+          "type_id": -1,
+          "pinned": false,
+          "group_id": -1,
+          "level_id": -1,
+          "location": null,
+          "bounds": null,
+          "host_id": null,
+          "family_name": "cabinet-attempt-1-Codex_Parametric_Casework",
+          "placement_type": "OneLevelBased",
+          "view_family": null,
+          "view_type": null,
+          "elevation": null
+        },
+        "transaction_status": "committed",
+        "actual_elements": [
+          {
+            "document_session_id": "7e0f86a4-f174-412c-b34b-390306cec37f",
+            "id": 316198,
+            "unique_id": "5dfd0b93-0be2-413e-8a48-41f969832334-0004d326",
+            "name": "Codex_Three_Axis_Modified",
+            "category": "Casework",
+            "category_id": -2001000,
+            "type_id": -1,
+            "pinned": false,
+            "group_id": -1,
+            "level_id": -1,
+            "location": null,
+            "bounds": {
+              "min": [
+                -1.9385245901639527,
+                -2.00000000000002,
+                -1.2833922625249017e-30
+              ],
+              "max": [
+                2.0614754098360524,
+                1.5,
+                3.000000000000017
+              ]
+            },
+            "host_id": null,
+            "family_name": "cabinet-attempt-1-Codex_Parametric_Casework",
+            "placement_type": "OneLevelBased",
+            "view_family": null,
+            "view_type": null,
+            "elevation": null
+          }
+        ],
+        "warnings": []
+      },
+      "error": null,
+      "cancel_requested": false,
+      "created_utc": "2026-10-14T05:09:19.7191466Z",
+      "finished_utc": "2026-10-14T05:09:19.7486382Z",
+      "elapsed_ms": 21.5107,
+      "transaction_status": "committed"
+    },
+    "set-CodexWidth": {
+      "schema_version": 1,
+      "operation_id": "3a04c8d2-f934-58af-878a-01511fec791c",
+      "status": "completed",
+      "request": {
+        "arguments": {
+          "allow_type_change": true,
+          "element": "5dfd0b93-0be2-413e-8a48-41f969832334-0004d326",
+          "name": "CodexWidth",
+          "value": 2.5
+        },
+        "document": {
+          "session_id": "7e0f86a4-f174-412c-b34b-390306cec37f"
+        },
+        "operation": "parameter.set",
+        "operation_id": "3a04c8d2-f934-58af-878a-01511fec791c",
+        "preconditions": {},
+        "schema_version": 1
+      },
+      "result": {
+        "data": {
+          "element": {
+            "document_session_id": "7e0f86a4-f174-412c-b34b-390306cec37f",
+            "id": 316198,
+            "unique_id": "5dfd0b93-0be2-413e-8a48-41f969832334-0004d326",
+            "name": "Codex_Three_Axis_Modified",
+            "category": "Casework",
+            "category_id": -2001000,
+            "type_id": -1,
+            "pinned": false,
+            "group_id": -1,
+            "level_id": -1,
+            "location": null,
+            "bounds": {
+              "min": [
+                -1.9385245901639527,
+                -2.00000000000002,
+                -1.2833922625249017e-30
+              ],
+              "max": [
+                2.0614754098360524,
+                1.5,
+                3.000000000000017
+              ]
+            },
+            "host_id": null,
+            "family_name": "cabinet-attempt-1-Codex_Parametric_Casework",
+            "placement_type": "OneLevelBased",
+            "view_family": null,
+            "view_type": null,
+            "elevation": null
+          },
+          "parameter_id": 316177,
+          "before": 2,
+          "after": 2.5
+        },
+        "transaction_status": "committed",
+        "actual_elements": [
+          {
+            "document_session_id": "7e0f86a4-f174-412c-b34b-390306cec37f",
+            "id": 316198,
+            "unique_id": "5dfd0b93-0be2-413e-8a48-41f969832334-0004d326",
+            "name": "Codex_Three_Axis_Modified",
+            "category": "Casework",
+            "category_id": -2001000,
+            "type_id": -1,
+            "pinned": false,
+            "group_id": -1,
+            "level_id": -1,
+            "location": null,
+            "bounds": {
+              "min": [
+                -1.9385245901639527,
+                -2.00000000000002,
+                -1.2833922625249017e-30
+              ],
+              "max": [
+                2.0614754098360524,
+                1.5,
+                3.000000000000017
+              ]
+            },
+            "host_id": null,
+            "family_name": "cabinet-attempt-1-Codex_Parametric_Casework",
+            "placement_type": "OneLevelBased",
+            "view_family": null,
+            "view_type": null,
+            "elevation": null
+          }
+        ],
+        "warnings": []
+      },
+      "error": null,
+      "cancel_requested": false,
+      "created_utc": "2026-10-14T05:09:20.1602380Z",
+      "finished_utc": "2026-10-14T05:09:20.1858987Z",
+      "elapsed_ms": 17.3135,
+      "transaction_status": "committed"
+    },
+    "set-CodexDepth": {
+      "schema_version": 1,
+      "operation_id": "8cb9f462-98bd-51a3-a1d1-8b038866f1f0",
+      "status": "completed",
+      "request": {
+        "arguments": {
+          "allow_type_change": true,
+          "element": "5dfd0b93-0be2-413e-8a48-41f969832334-0004d326",
+          "name": "CodexDepth",
+          "value": 1.75
+        },
+        "document": {
+          "session_id": "7e0f86a4-f174-412c-b34b-390306cec37f"
+        },
+        "operation": "parameter.set",
+        "operation_id": "8cb9f462-98bd-51a3-a1d1-8b038866f1f0",
+        "preconditions": {},
+        "schema_version": 1
+      },
+      "result": {
+        "data": {
+          "element": {
+            "document_session_id": "7e0f86a4-f174-412c-b34b-390306cec37f",
+            "id": 316198,
+            "unique_id": "5dfd0b93-0be2-413e-8a48-41f969832334-0004d326",
+            "name": "Codex_Three_Axis_Modified",
+            "category": "Casework",
+            "category_id": -2001000,
+            "type_id": -1,
+            "pinned": false,
+            "group_id": -1,
+            "level_id": -1,
+            "location": null,
+            "bounds": {
+              "min": [
+                -1.9385245901639527,
+                -2.00000000000002,
+                -1.2833922625249017e-30
+              ],
+              "max": [
+                2.061475409836053,
+                1.75,
+                3.000000000000017
+              ]
+            },
+            "host_id": null,
+            "family_name": "cabinet-attempt-1-Codex_Parametric_Casework",
+            "placement_type": "OneLevelBased",
+            "view_family": null,
+            "view_type": null,
+            "elevation": null
+          },
+          "parameter_id": 316178,
+          "before": 1.5,
+          "after": 1.75
+        },
+        "transaction_status": "committed",
+        "actual_elements": [
+          {
+            "document_session_id": "7e0f86a4-f174-412c-b34b-390306cec37f",
+            "id": 316198,
+            "unique_id": "5dfd0b93-0be2-413e-8a48-41f969832334-0004d326",
+            "name": "Codex_Three_Axis_Modified",
+            "category": "Casework",
+            "category_id": -2001000,
+            "type_id": -1,
+            "pinned": false,
+            "group_id": -1,
+            "level_id": -1,
+            "location": null,
+            "bounds": {
+              "min": [
+                -1.9385245901639527,
+                -2.00000000000002,
+                -1.2833922625249017e-30
+              ],
+              "max": [
+                2.061475409836053,
+                1.75,
+                3.000000000000017
+              ]
+            },
+            "host_id": null,
+            "family_name": "cabinet-attempt-1-Codex_Parametric_Casework",
+            "placement_type": "OneLevelBased",
+            "view_family": null,
+            "view_type": null,
+            "elevation": null
+          }
+        ],
+        "warnings": []
+      },
+      "error": null,
+      "cancel_requested": false,
+      "created_utc": "2026-10-14T05:09:20.5476307Z",
+      "finished_utc": "2026-10-14T05:09:20.5765787Z",
+      "elapsed_ms": 19.5146,
+      "transaction_status": "committed"
+    },
+    "set-CodexHeight": {
+      "schema_version": 1,
+      "operation_id": "d016fc32-4895-5a07-b442-a0b198099f4b",
+      "status": "completed",
+      "request": {
+        "arguments": {
+          "allow_type_change": true,
+          "element": "5dfd0b93-0be2-413e-8a48-41f969832334-0004d326",
+          "name": "CodexHeight",
+          "value": 3.5
+        },
+        "document": {
+          "session_id": "7e0f86a4-f174-412c-b34b-390306cec37f"
+        },
+        "operation": "parameter.set",
+        "operation_id": "d016fc32-4895-5a07-b442-a0b198099f4b",
+        "preconditions": {},
+        "schema_version": 1
+      },
+      "result": {
+        "data": {
+          "element": {
+            "document_session_id": "7e0f86a4-f174-412c-b34b-390306cec37f",
+            "id": 316198,
+            "unique_id": "5dfd0b93-0be2-413e-8a48-41f969832334-0004d326",
+            "name": "Codex_Three_Axis_Modified",
+            "category": "Casework",
+            "category_id": -2001000,
+            "type_id": -1,
+            "pinned": false,
+            "group_id": -1,
+            "level_id": -1,
+            "location": null,
+            "bounds": {
+              "min": [
+                -1.9385245901639527,
+                -2.00000000000002,
+                -1.2833922625249017e-30
+              ],
+              "max": [
+                2.061475409836053,
+                1.75,
+                3.5
+              ]
+            },
+            "host_id": null,
+            "family_name": "cabinet-attempt-1-Codex_Parametric_Casework",
+            "placement_type": "OneLevelBased",
+            "view_family": null,
+            "view_type": null,
+            "elevation": null
+          },
+          "parameter_id": 316179,
+          "before": 3,
+          "after": 3.5
+        },
+        "transaction_status": "committed",
+        "actual_elements": [
+          {
+            "document_session_id": "7e0f86a4-f174-412c-b34b-390306cec37f",
+            "id": 316198,
+            "unique_id": "5dfd0b93-0be2-413e-8a48-41f969832334-0004d326",
+            "name": "Codex_Three_Axis_Modified",
+            "category": "Casework",
+            "category_id": -2001000,
+            "type_id": -1,
+            "pinned": false,
+            "group_id": -1,
+            "level_id": -1,
+            "location": null,
+            "bounds": {
+              "min": [
+                -1.9385245901639527,
+                -2.00000000000002,
+                -1.2833922625249017e-30
+              ],
+              "max": [
+                2.061475409836053,
+                1.75,
+                3.5
+              ]
+            },
+            "host_id": null,
+            "family_name": "cabinet-attempt-1-Codex_Parametric_Casework",
+            "placement_type": "OneLevelBased",
+            "view_family": null,
+            "view_type": null,
+            "elevation": null
+          }
+        ],
+        "warnings": []
+      },
+      "error": null,
+      "cancel_requested": false,
+      "created_utc": "2026-10-14T05:09:20.9329886Z",
+      "finished_utc": "2026-10-14T05:09:20.9584199Z",
+      "elapsed_ms": 18.8701,
+      "transaction_status": "committed"
+    },
+    "change-type": {
+      "schema_version": 1,
+      "operation_id": "03331e95-56a7-592b-bd81-5b6567cd1423",
+      "status": "completed",
+      "request": {
+        "arguments": {
+          "element": "5dfd0b93-0be2-413e-8a48-41f969832334-0004d323",
+          "type": "5dfd0b93-0be2-413e-8a48-41f969832334-0004d326"
+        },
+        "document": {
+          "session_id": "7e0f86a4-f174-412c-b34b-390306cec37f"
+        },
+        "operation": "element.type",
+        "operation_id": "03331e95-56a7-592b-bd81-5b6567cd1423",
+        "preconditions": {},
+        "schema_version": 1
+      },
+      "result": {
+        "data": {
+          "before_type_id": 316180,
+          "element": {
+            "document_session_id": "7e0f86a4-f174-412c-b34b-390306cec37f",
+            "id": 316195,
+            "unique_id": "5dfd0b93-0be2-413e-8a48-41f969832334-0004d323",
+            "name": "Codex_Three_Axis_Modified",
+            "category": "Casework",
+            "category_id": -2001000,
+            "type_id": 316198,
+            "pinned": false,
+            "group_id": -1,
+            "level_id": 30,
+            "location": {
+              "point": [
+                0,
+                0,
+                0
+              ],
+              "rotation_radians": 0
+            },
+            "bounds": {
+              "min": [
+                -2.000000000000018,
+                -2.00000000000002,
+                -1.2833922625249017e-30
+              ],
+              "max": [
+                1.9999999999999871,
+                1.75,
+                3.5
+              ]
+            },
+            "host_id": null,
+            "family_name": null,
+            "placement_type": null,
+            "view_family": null,
+            "view_type": null,
+            "elevation": null
+          }
+        },
+        "transaction_status": "committed",
+        "actual_elements": [
+          {
+            "document_session_id": "7e0f86a4-f174-412c-b34b-390306cec37f",
+            "id": 316195,
+            "unique_id": "5dfd0b93-0be2-413e-8a48-41f969832334-0004d323",
+            "name": "Codex_Three_Axis_Modified",
+            "category": "Casework",
+            "category_id": -2001000,
+            "type_id": 316198,
+            "pinned": false,
+            "group_id": -1,
+            "level_id": 30,
+            "location": {
+              "point": [
+                0,
+                0,
+                0
+              ],
+              "rotation_radians": 0
+            },
+            "bounds": {
+              "min": [
+                -2.000000000000018,
+                -2.00000000000002,
+                -1.2833922625249017e-30
+              ],
+              "max": [
+                1.9999999999999871,
+                1.75,
+                3.5
+              ]
+            },
+            "host_id": null,
+            "family_name": null,
+            "placement_type": null,
+            "view_family": null,
+            "view_type": null,
+            "elevation": null
+          }
+        ],
+        "warnings": []
+      },
+      "error": null,
+      "cancel_requested": false,
+      "created_utc": "2026-10-14T05:09:21.3942196Z",
+      "finished_utc": "2026-10-14T05:09:21.4083845Z",
+      "elapsed_ms": 5.9872,
+      "transaction_status": "committed"
+    },
+    "instance-geometry": {
+      "schema_version": 1,
+      "operation_id": "3cf9737c-237c-5490-bc1e-a128e88c0420",
+      "status": "completed",
+      "request": {
+        "arguments": {
+          "element": "5dfd0b93-0be2-413e-8a48-41f969832334-0004d323",
+          "geometry": true
+        },
+        "document": {
+          "session_id": "7e0f86a4-f174-412c-b34b-390306cec37f"
+        },
+        "operation": "elements.inspect",
+        "operation_id": "3cf9737c-237c-5490-bc1e-a128e88c0420",
+        "preconditions": {},
+        "schema_version": 1
+      },
+      "result": {
+        "element": {
+          "document_session_id": "7e0f86a4-f174-412c-b34b-390306cec37f",
+          "id": 316195,
+          "unique_id": "5dfd0b93-0be2-413e-8a48-41f969832334-0004d323",
+          "name": "Codex_Three_Axis_Modified",
+          "category": "Casework",
+          "category_id": -2001000,
+          "type_id": 316198,
+          "pinned": false,
+          "group_id": -1,
+          "level_id": 30,
+          "location": {
+            "point": [
+              0,
+              0,
+              0
+            ],
+            "rotation_radians": 0
+          },
+          "bounds": {
+            "min": [
+              -2.000000000000018,
+              -2.00000000000002,
+              -1.2833922625249017e-30
+            ],
+            "max": [
+              1.9999999999999871,
+              1.75,
+              3.5
+            ]
+          },
+          "host_id": null,
+          "family_name": null,
+          "placement_type": null,
+          "view_family": null,
+          "view_type": null,
+          "elevation": null
+        },
+        "dependent_ids": [
+          316195
+        ],
+        "phase_created_id": 118390,
+        "phase_demolished_id": -1,
+        "design_option": null,
+        "workset_id": 0,
+        "editable": true,
+        "transform": {
+          "origin": [
+            -0.0614754098360656,
+            0,
+            0
+          ],
+          "basis_x": [
+            1,
+            0,
+            0
+          ],
+          "basis_y": [
+            0,
+            1,
+            0
+          ],
+          "basis_z": [
+            0,
+            0,
+            1
+          ]
+        },
+        "geometry": [
+          {
+            "kind": "solid",
+            "volume": 0,
+            "faces": 0,
+            "edges": 0
+          },
+          {
+            "kind": "solid",
+            "volume": 15.312499999999996,
+            "faces": 6,
+            "edges": 12
+          },
+          {
+            "kind": "face",
+            "area": 4.375,
+            "reference": "5dfd0b93-0be2-413e-8a48-41f969832334-0004d326:9:SURFACE",
+            "normal": [
+              0,
+              0,
+              1
+            ]
+          },
+          {
+            "kind": "face",
+            "area": 4.375,
+            "reference": "5dfd0b93-0be2-413e-8a48-41f969832334-0004d326:14:SURFACE",
+            "normal": [
+              0,
+              0,
+              -1
+            ]
+          },
+          {
+            "kind": "face",
+            "area": 6.125,
+            "reference": "5dfd0b93-0be2-413e-8a48-41f969832334-0004d326:19:SURFACE",
+            "normal": [
+              1,
+              0,
+              0
+            ]
+          },
+          {
+            "kind": "face",
+            "area": 8.75,
+            "reference": "5dfd0b93-0be2-413e-8a48-41f969832334-0004d326:22:SURFACE",
+            "normal": [
+              0,
+              1,
+              0
+            ]
+          },
+          {
+            "kind": "face",
+            "area": 6.125,
+            "reference": "5dfd0b93-0be2-413e-8a48-41f969832334-0004d326:24:SURFACE",
+            "normal": [
+              -1,
+              0,
+              0
+            ]
+          },
+          {
+            "kind": "face",
+            "area": 8.75,
+            "reference": "5dfd0b93-0be2-413e-8a48-41f969832334-0004d326:26:SURFACE",
+            "normal": [
+              0,
+              -1,
+              0
+            ]
+          }
+        ]
+      },
+      "error": null,
+      "cancel_requested": false,
+      "created_utc": "2026-10-14T05:09:21.8142271Z",
+      "finished_utc": "2026-10-14T05:09:21.8214382Z",
+      "elapsed_ms": 0.6168,
+      "transaction_status": "not_started"
+    },
+    "unrelated-type": {
+      "schema_version": 1,
+      "operation_id": "7144f56d-331c-5552-a947-f89adb807c58",
+      "status": "completed",
+      "request": {
+        "arguments": {
+          "element": "5dfd0b93-0be2-413e-8a48-41f969832334-0004d324"
+        },
+        "document": {
+          "session_id": "7e0f86a4-f174-412c-b34b-390306cec37f"
+        },
+        "operation": "elements.inspect",
+        "operation_id": "7144f56d-331c-5552-a947-f89adb807c58",
+        "preconditions": {},
+        "schema_version": 1
+      },
+      "result": {
+        "element": {
+          "document_session_id": "7e0f86a4-f174-412c-b34b-390306cec37f",
+          "id": 316196,
+          "unique_id": "5dfd0b93-0be2-413e-8a48-41f969832334-0004d324",
+          "name": "Codex_Parametric_Box",
+          "category": "Casework",
+          "category_id": -2001000,
+          "type_id": 316180,
+          "pinned": false,
+          "group_id": -1,
+          "level_id": 30,
+          "location": {
+            "point": [
+              3,
+              0,
+              0
+            ],
+            "rotation_radians": 0
+          },
+          "bounds": {
+            "min": [
+              0.9999999999999816,
+              -2.00000000000002,
+              -1.2833922625249017e-30
+            ],
+            "max": [
+              4.999999999999987,
+              1.5,
+              3.000000000000017
+            ]
+          },
+          "host_id": null,
+          "family_name": null,
+          "placement_type": null,
+          "view_family": null,
+          "view_type": null,
+          "elevation": null
+        },
+        "dependent_ids": [
+          316196
+        ],
+        "phase_created_id": 118390,
+        "phase_demolished_id": -1,
+        "design_option": null,
+        "workset_id": 0,
+        "editable": true,
+        "transform": {
+          "origin": [
+            2.9385245901639343,
+            0,
+            0
+          ],
+          "basis_x": [
+            1,
+            0,
+            0
+          ],
+          "basis_y": [
+            0,
+            1,
+            0
+          ],
+          "basis_z": [
+            0,
+            0,
+            1
+          ]
+        },
+        "geometry": null
+      },
+      "error": null,
+      "cancel_requested": false,
+      "created_utc": "2026-10-14T05:09:22.2177390Z",
+      "finished_utc": "2026-10-14T05:09:22.2252400Z",
+      "elapsed_ms": 0.3204,
+      "transaction_status": "not_started"
+    },
+    "comments": {
+      "schema_version": 1,
+      "operation_id": "b4c5ba91-9711-5672-8e1e-41cc2b4ae263",
+      "status": "completed",
+      "request": {
+        "arguments": {
+          "arguments": {
+            "comment": "Codex disposable compiled API test",
+            "document_session_id": "7e0f86a4-f174-412c-b34b-390306cec37f",
+            "element_unique_id": "5dfd0b93-0be2-413e-8a48-41f969832334-0004d323"
+          },
+          "assembly": "H:\\Games\\3D Modeling Workflows\\3D Model Workflow\\output\\codex-native-revit-20261013\\tests\\CompiledProbe\\bin\\Release\\net8.0-windows\\CodexNativeRevit.CompiledProbe.dll",
+          "expected_changes": [
+            "instance_comments"
+          ],
+          "purpose": "Disposable native acceptance comments",
+          "type": "CodexNativeRevit.CompiledProbe.ProbeModify"
+        },
+        "document": {
+          "session_id": "7e0f86a4-f174-412c-b34b-390306cec37f"
+        },
+        "operation": "compiled.modify",
+        "operation_id": "b4c5ba91-9711-5672-8e1e-41cc2b4ae263",
+        "preconditions": {},
+        "schema_version": 1
+      },
+      "result": {
+        "data": {
+          "probe": "one_instance_comment_update",
+          "document_session_id": "7e0f86a4-f174-412c-b34b-390306cec37f",
+          "element_id": 316195,
+          "element_unique_id": "5dfd0b93-0be2-413e-8a48-41f969832334-0004d323",
+          "built_in_parameter": "ALL_MODEL_INSTANCE_COMMENTS",
+          "parameter_id": -1010106,
+          "before": null,
+          "after": "Codex disposable compiled API test",
+          "declared_model_effect": "Only this instance's built-in Comments parameter is explicitly set."
+        },
+        "transaction_status": "committed",
+        "actual_elements": [],
+        "warnings": []
+      },
+      "error": null,
+      "cancel_requested": false,
+      "created_utc": "2026-10-14T05:09:22.6285372Z",
+      "finished_utc": "2026-10-14T05:09:22.6882429Z",
+      "elapsed_ms": 52.0574,
+      "transaction_status": "committed"
+    },
+    "view-types": {
+      "schema_version": 1,
+      "operation_id": "a6e41968-e138-544b-ae56-4942c212f1bc",
+      "status": "completed",
+      "request": {
+        "arguments": {
+          "class": "ViewFamilyType",
+          "types": true
+        },
+        "document": {
+          "session_id": "7e0f86a4-f174-412c-b34b-390306cec37f"
+        },
+        "operation": "elements.query",
+        "operation_id": "a6e41968-e138-544b-ae56-4942c212f1bc",
+        "preconditions": {},
+        "schema_version": 1
+      },
+      "result": {
+        "items": [
+          {
+            "document_session_id": "7e0f86a4-f174-412c-b34b-390306cec37f",
+            "id": 75905,
+            "unique_id": "42eb2886-bbe4-469f-897b-4b39594f7390-00012881",
+            "name": "Floor Plan",
+            "category": null,
+            "category_id": null,
+            "type_id": -1,
+            "pinned": false,
+            "group_id": -1,
+            "level_id": -1,
+            "location": null,
+            "bounds": null,
+            "host_id": null,
+            "family_name": null,
+            "placement_type": null,
+            "view_family": "FloorPlan",
+            "view_type": null,
+            "elevation": null
+          },
+          {
+            "document_session_id": "7e0f86a4-f174-412c-b34b-390306cec37f",
+            "id": 75906,
+            "unique_id": "42eb2886-bbe4-469f-897b-4b39594f7390-00012882",
+            "name": "Ceiling Plan",
+            "category": null,
+            "category_id": null,
+            "type_id": -1,
+            "pinned": false,
+            "group_id": -1,
+            "level_id": -1,
+            "location": null,
+            "bounds": null,
+            "host_id": null,
+            "family_name": null,
+            "placement_type": null,
+            "view_family": "CeilingPlan",
+            "view_type": null,
+            "elevation": null
+          },
+          {
+            "document_session_id": "7e0f86a4-f174-412c-b34b-390306cec37f",
+            "id": 75907,
+            "unique_id": "42eb2886-bbe4-469f-897b-4b39594f7390-00012883",
+            "name": "Building Section",
+            "category": null,
+            "category_id": null,
+            "type_id": -1,
+            "pinned": false,
+            "group_id": -1,
+            "level_id": -1,
+            "location": null,
+            "bounds": null,
+            "host_id": null,
+            "family_name": null,
+            "placement_type": null,
+            "view_family": "Section",
+            "view_type": null,
+            "elevation": null
+          },
+          {
+            "document_session_id": "7e0f86a4-f174-412c-b34b-390306cec37f",
+            "id": 75908,
+            "unique_id": "42eb2886-bbe4-469f-897b-4b39594f7390-00012884",
+            "name": "Detail",
+            "category": null,
+            "category_id": null,
+            "type_id": -1,
+            "pinned": false,
+            "group_id": -1,
+            "level_id": -1,
+            "location": null,
+            "bounds": null,
+            "host_id": null,
+            "family_name": null,
+            "placement_type": null,
+            "view_family": "Detail",
+            "view_type": null,
+            "elevation": null
+          },
+          {
+            "document_session_id": "7e0f86a4-f174-412c-b34b-390306cec37f",
+            "id": 75909,
+            "unique_id": "42eb2886-bbe4-469f-897b-4b39594f7390-00012885",
+            "name": "Detail",
+            "category": null,
+            "category_id": null,
+            "type_id": -1,
+            "pinned": false,
+            "group_id": -1,
+            "level_id": -1,
+            "location": null,
+            "bounds": null,
+            "host_id": null,
+            "family_name": null,
+            "placement_type": null,
+            "view_family": "Drafting",
+            "view_type": null,
+            "elevation": null
+          },
+          {
+            "document_session_id": "7e0f86a4-f174-412c-b34b-390306cec37f",
+            "id": 75910,
+            "unique_id": "42eb2886-bbe4-469f-897b-4b39594f7390-00012886",
+            "name": "Building Elevation",
+            "category": null,
+            "category_id": null,
+            "type_id": -1,
+            "pinned": false,
+            "group_id": -1,
+            "level_id": -1,
+            "location": null,
+            "bounds": null,
+            "host_id": null,
+            "family_name": null,
+            "placement_type": null,
+            "view_family": "Elevation",
+            "view_type": null,
+            "elevation": null
+          },
+          {
+            "document_session_id": "7e0f86a4-f174-412c-b34b-390306cec37f",
+            "id": 75911,
+            "unique_id": "42eb2886-bbe4-469f-897b-4b39594f7390-00012887",
+            "name": "Interior Elevation",
+            "category": null,
+            "category_id": null,
+            "type_id": -1,
+            "pinned": false,
+            "group_id": -1,
+            "level_id": -1,
+            "location": null,
+            "bounds": null,
+            "host_id": null,
+            "family_name": null,
+            "placement_type": null,
+            "view_family": "Elevation",
+            "view_type": null,
+            "elevation": null
+          },
+          {
+            "document_session_id": "7e0f86a4-f174-412c-b34b-390306cec37f",
+            "id": 75912,
+            "unique_id": "42eb2886-bbe4-469f-897b-4b39594f7390-00012888",
+            "name": "3D View",
+            "category": null,
+            "category_id": null,
+            "type_id": -1,
+            "pinned": false,
+            "group_id": -1,
+            "level_id": -1,
+            "location": null,
+            "bounds": null,
+            "host_id": null,
+            "family_name": null,
+            "placement_type": null,
+            "view_family": "ThreeDimensional",
+            "view_type": null,
+            "elevation": null
+          },
+          {
+            "document_session_id": "7e0f86a4-f174-412c-b34b-390306cec37f",
+            "id": 75913,
+            "unique_id": "42eb2886-bbe4-469f-897b-4b39594f7390-00012889",
+            "name": "Schedule",
+            "category": null,
+            "category_id": null,
+            "type_id": -1,
+            "pinned": false,
+            "group_id": -1,
+            "level_id": -1,
+            "location": null,
+            "bounds": null,
+            "host_id": null,
+            "family_name": null,
+            "placement_type": null,
+            "view_family": "Schedule",
+            "view_type": null,
+            "elevation": null
+          },
+          {
+            "document_session_id": "7e0f86a4-f174-412c-b34b-390306cec37f",
+            "id": 75914,
+            "unique_id": "42eb2886-bbe4-469f-897b-4b39594f7390-0001288a",
+            "name": "Sheet",
+            "category": null,
+            "category_id": null,
+            "type_id": -1,
+            "pinned": false,
+            "group_id": -1,
+            "level_id": -1,
+            "location": null,
+            "bounds": null,
+            "host_id": null,
+            "family_name": null,
+            "placement_type": null,
+            "view_family": "Sheet",
+            "view_type": null,
+            "elevation": null
+          },
+          {
+            "document_session_id": "7e0f86a4-f174-412c-b34b-390306cec37f",
+            "id": 75915,
+            "unique_id": "42eb2886-bbe4-469f-897b-4b39594f7390-0001288b",
+            "name": "Walkthrough",
+            "category": null,
+            "category_id": null,
+            "type_id": -1,
+            "pinned": false,
+            "group_id": -1,
+            "level_id": -1,
+            "location": null,
+            "bounds": null,
+            "host_id": null,
+            "family_name": null,
+            "placement_type": null,
+            "view_family": "Walkthrough",
+            "view_type": null,
+            "elevation": null
+          },
+          {
+            "document_session_id": "7e0f86a4-f174-412c-b34b-390306cec37f",
+            "id": 75916,
+            "unique_id": "42eb2886-bbe4-469f-897b-4b39594f7390-0001288c",
+            "name": "Rendering",
+            "category": null,
+            "category_id": null,
+            "type_id": -1,
+            "pinned": false,
+            "group_id": -1,
+            "level_id": -1,
+            "location": null,
+            "bounds": null,
+            "host_id": null,
+            "family_name": null,
+            "placement_type": null,
+            "view_family": "ImageView",
+            "view_type": null,
+            "elevation": null
+          },
+          {
+            "document_session_id": "7e0f86a4-f174-412c-b34b-390306cec37f",
+            "id": 75917,
+            "unique_id": "42eb2886-bbe4-469f-897b-4b39594f7390-0001288d",
+            "name": "Cost Report",
+            "category": null,
+            "category_id": null,
+            "type_id": -1,
+            "pinned": false,
+            "group_id": -1,
+            "level_id": -1,
+            "location": null,
+            "bounds": null,
+            "host_id": null,
+            "family_name": null,
+            "placement_type": null,
+            "view_family": "CostReport",
+            "view_type": null,
+            "elevation": null
+          },
+          {
+            "document_session_id": "7e0f86a4-f174-412c-b34b-390306cec37f",
+            "id": 80663,
+            "unique_id": "7c26900c-8ab1-4a92-8dae-6dbd60fbad2f-00013b17",
+            "name": "Wall Section",
+            "category": null,
+            "category_id": null,
+            "type_id": -1,
+            "pinned": false,
+            "group_id": -1,
+            "level_id": -1,
+            "location": null,
+            "bounds": null,
+            "host_id": null,
+            "family_name": null,
+            "placement_type": null,
+            "view_family": "Section",
+            "view_type": null,
+            "elevation": null
+          },
+          {
+            "document_session_id": "7e0f86a4-f174-412c-b34b-390306cec37f",
+            "id": 83169,
+            "unique_id": "b20812af-a644-42eb-b55b-45cf0863f9e3-000144e1",
+            "name": "Legend",
+            "category": null,
+            "category_id": null,
+            "type_id": -1,
+            "pinned": false,
+            "group_id": -1,
+            "level_id": -1,
+            "location": null,
+            "bounds": null,
+            "host_id": null,
+            "family_name": null,
+            "placement_type": null,
+            "view_family": "Legend",
+            "view_type": null,
+            "elevation": null
+          },
+          {
+            "document_session_id": "7e0f86a4-f174-412c-b34b-390306cec37f",
+            "id": 85158,
+            "unique_id": "cacd2bf5-1bc3-4cfb-8692-99756445c888-00014ca6",
+            "name": "Loads Report",
+            "category": null,
+            "category_id": null,
+            "type_id": -1,
+            "pinned": false,
+            "group_id": -1,
+            "level_id": -1,
+            "location": null,
+            "bounds": null,
+            "host_id": null,
+            "family_name": null,
+            "placement_type": null,
+            "view_family": "LoadsReport",
+            "view_type": null,
+            "elevation": null
+          },
+          {
+            "document_session_id": "7e0f86a4-f174-412c-b34b-390306cec37f",
+            "id": 85159,
+            "unique_id": "cacd2bf5-1bc3-4cfb-8692-99756445c888-00014ca7",
+            "name": "Pressure Loss Report",
+            "category": null,
+            "category_id": null,
+            "type_id": -1,
+            "pinned": false,
+            "group_id": -1,
+            "level_id": -1,
+            "location": null,
+            "bounds": null,
+            "host_id": null,
+            "family_name": null,
+            "placement_type": null,
+            "view_family": "PressureLossReport",
+            "view_type": null,
+            "elevation": null
+          },
+          {
+            "document_session_id": "7e0f86a4-f174-412c-b34b-390306cec37f",
+            "id": 85160,
+            "unique_id": "cacd2bf5-1bc3-4cfb-8692-99756445c888-00014ca8",
+            "name": "Panel Schedule Report",
+            "category": null,
+            "category_id": null,
+            "type_id": -1,
+            "pinned": false,
+            "group_id": -1,
+            "level_id": -1,
+            "location": null,
+            "bounds": null,
+            "host_id": null,
+            "family_name": null,
+            "placement_type": null,
+            "view_family": "PanelSchedule",
+            "view_type": null,
+            "elevation": null
+          },
+          {
+            "document_session_id": "7e0f86a4-f174-412c-b34b-390306cec37f",
+            "id": 100930,
+            "unique_id": "2219634f-479c-4f76-8306-45772e7e609d-00018a42",
+            "name": "Graphical Column Schedule",
+            "category": null,
+            "category_id": null,
+            "type_id": -1,
+            "pinned": false,
+            "group_id": -1,
+            "level_id": -1,
+            "location": null,
+            "bounds": null,
+            "host_id": null,
+            "family_name": null,
+            "placement_type": null,
+            "view_family": "GraphicalColumnSchedule",
+            "view_type": null,
+            "elevation": null
+          },
+          {
+            "document_session_id": "7e0f86a4-f174-412c-b34b-390306cec37f",
+            "id": 101010,
+            "unique_id": "a3a48391-65cd-47ba-9a92-a2abbb36cfac-00018a92",
+            "name": "Structural Plan",
+            "category": null,
+            "category_id": null,
+            "type_id": -1,
+            "pinned": false,
+            "group_id": -1,
+            "level_id": -1,
+            "location": null,
+            "bounds": null,
+            "host_id": null,
+            "family_name": null,
+            "placement_type": null,
+            "view_family": "StructuralPlan",
+            "view_type": null,
+            "elevation": null
+          },
+          {
+            "document_session_id": "7e0f86a4-f174-412c-b34b-390306cec37f",
+            "id": 307362,
+            "unique_id": "d5621198-2b08-49b4-8d35-601f5b7586ff-0004b0a2",
+            "name": "Analysis Report",
+            "category": null,
+            "category_id": null,
+            "type_id": -1,
+            "pinned": false,
+            "group_id": -1,
+            "level_id": -1,
+            "location": null,
+            "bounds": null,
+            "host_id": null,
+            "family_name": null,
+            "placement_type": null,
+            "view_family": "SystemsAnalysisReport",
+            "view_type": null,
+            "elevation": null
+          }
+        ],
+        "offset": 0,
+        "next_offset": null,
+        "units": "internal feet"
+      },
+      "error": null,
+      "cancel_requested": false,
+      "created_utc": "2026-10-14T05:09:22.9802126Z",
+      "finished_utc": "2026-10-14T05:09:22.9882235Z",
+      "elapsed_ms": 1.2476,
+      "transaction_status": "not_started"
+    },
+    "3d": {
+      "schema_version": 1,
+      "operation_id": "32a9aa67-c49d-5aaf-9f1f-abfd4f55a8cd",
+      "status": "completed",
+      "request": {
+        "arguments": {
+          "kind": "3d",
+          "name": "CODEX - NATIVE PARAMETRIC CASEWORK",
+          "scale": 24,
+          "type": "42eb2886-bbe4-469f-897b-4b39594f7390-00012888"
+        },
+        "document": {
+          "session_id": "7e0f86a4-f174-412c-b34b-390306cec37f"
+        },
+        "operation": "view.create",
+        "operation_id": "32a9aa67-c49d-5aaf-9f1f-abfd4f55a8cd",
+        "preconditions": {},
+        "schema_version": 1
+      },
+      "result": {
+        "data": {
+          "document_session_id": "7e0f86a4-f174-412c-b34b-390306cec37f",
+          "id": 316202,
+          "unique_id": "5dfd0b93-0be2-413e-8a48-41f969832334-0004d32a",
+          "name": "CODEX - NATIVE PARAMETRIC CASEWORK",
+          "category": "Views",
+          "category_id": -2000279,
+          "type_id": 75912,
+          "pinned": false,
+          "group_id": -1,
+          "level_id": -1,
+          "location": null,
+          "bounds": {
+            "min": [
+              -100,
+              -100,
+              -1000
+            ],
+            "max": [
+              100,
+              100,
+              -0.1
+            ]
+          },
+          "host_id": null,
+          "family_name": null,
+          "placement_type": null,
+          "view_family": null,
+          "view_type": "ThreeD",
+          "elevation": null
+        },
+        "transaction_status": "committed",
+        "actual_elements": [
+          {
+            "document_session_id": "7e0f86a4-f174-412c-b34b-390306cec37f",
+            "id": 316202,
+            "unique_id": "5dfd0b93-0be2-413e-8a48-41f969832334-0004d32a",
+            "name": "CODEX - NATIVE PARAMETRIC CASEWORK",
+            "category": "Views",
+            "category_id": -2000279,
+            "type_id": 75912,
+            "pinned": false,
+            "group_id": -1,
+            "level_id": -1,
+            "location": null,
+            "bounds": {
+              "min": [
+                -100,
+                -100,
+                -1000
+              ],
+              "max": [
+                100,
+                100,
+                -0.1
+              ]
+            },
+            "host_id": null,
+            "family_name": null,
+            "placement_type": null,
+            "view_family": null,
+            "view_type": "ThreeD",
+            "elevation": null
+          }
+        ],
+        "warnings": []
+      },
+      "error": null,
+      "cancel_requested": false,
+      "created_utc": "2026-10-14T05:09:23.7243644Z",
+      "finished_utc": "2026-10-14T05:09:23.8070040Z",
+      "elapsed_ms": 75.4693,
+      "transaction_status": "committed"
+    },
+    "3d-settings": {
+      "schema_version": 1,
+      "operation_id": "ee1fc856-8563-5e7d-a302-d23bfadb248e",
+      "status": "completed",
+      "request": {
+        "arguments": {
+          "category_visibility": {
+            "OST_Casework": true,
+            "OST_Levels": false
+          },
+          "detail_level": "Fine",
+          "section_box": {
+            "max": [
+              9,
+              3,
+              5
+            ],
+            "min": [
+              -1,
+              -1,
+              -1
+            ]
+          },
+          "view": "5dfd0b93-0be2-413e-8a48-41f969832334-0004d32a"
+        },
+        "document": {
+          "session_id": "7e0f86a4-f174-412c-b34b-390306cec37f"
+        },
+        "operation": "view.settings",
+        "operation_id": "ee1fc856-8563-5e7d-a302-d23bfadb248e",
+        "preconditions": {},
+        "schema_version": 1
+      },
+      "result": {
+        "data": {
+          "document_session_id": "7e0f86a4-f174-412c-b34b-390306cec37f",
+          "id": 316202,
+          "unique_id": "5dfd0b93-0be2-413e-8a48-41f969832334-0004d32a",
+          "name": "CODEX - NATIVE PARAMETRIC CASEWORK",
+          "category": "Views",
+          "category_id": -2000279,
+          "type_id": 75912,
+          "pinned": false,
+          "group_id": -1,
+          "level_id": -1,
+          "location": null,
+          "bounds": {
+            "min": [
+              -100,
+              -100,
+              -1000
+            ],
+            "max": [
+              100,
+              100,
+              -0.1
+            ]
+          },
+          "host_id": null,
+          "family_name": null,
+          "placement_type": null,
+          "view_family": null,
+          "view_type": "ThreeD",
+          "elevation": null
+        },
+        "transaction_status": "committed",
+        "actual_elements": [
+          {
+            "document_session_id": "7e0f86a4-f174-412c-b34b-390306cec37f",
+            "id": 316202,
+            "unique_id": "5dfd0b93-0be2-413e-8a48-41f969832334-0004d32a",
+            "name": "CODEX - NATIVE PARAMETRIC CASEWORK",
+            "category": "Views",
+            "category_id": -2000279,
+            "type_id": 75912,
+            "pinned": false,
+            "group_id": -1,
+            "level_id": -1,
+            "location": null,
+            "bounds": {
+              "min": [
+                -100,
+                -100,
+                -1000
+              ],
+              "max": [
+                100,
+                100,
+                -0.1
+              ]
+            },
+            "host_id": null,
+            "family_name": null,
+            "placement_type": null,
+            "view_family": null,
+            "view_type": "ThreeD",
+            "elevation": null
+          }
+        ],
+        "warnings": []
+      },
+      "error": null,
+      "cancel_requested": false,
+      "created_utc": "2026-10-14T05:09:24.1267680Z",
+      "finished_utc": "2026-10-14T05:09:24.1392447Z",
+      "elapsed_ms": 6.5218,
+      "transaction_status": "committed"
+    },
+    "camera": {
+      "schema_version": 1,
+      "operation_id": "788037d6-426a-5b20-a7a6-e9f670ddd463",
+      "status": "completed",
+      "request": {
+        "arguments": {
+          "arguments": {
+            "action": "view_orientation",
+            "document_session_id": "7e0f86a4-f174-412c-b34b-390306cec37f",
+            "eye": [
+              14,
+              18,
+              12
+            ],
+            "forward": [
+              -0.4962916669854651,
+              -0.7444375004781977,
+              -0.44666250028691856
+            ],
+            "up": [
+              -0.24776377655560522,
+              -0.3716456648334078,
+              0.8947025264507967
+            ],
+            "view_unique_id": "5dfd0b93-0be2-413e-8a48-41f969832334-0004d32a"
+          },
+          "assembly": "H:\\Games\\3D Modeling Workflows\\3D Model Workflow\\output\\codex-native-revit-20261013\\tests\\CompiledProbe\\bin\\Release\\net8.0-windows\\CodexNativeRevit.CompiledProbe.dll",
+          "expected_changes": [
+            "view_orientation"
+          ],
+          "purpose": "Disposable native acceptance camera",
+          "type": "CodexNativeRevit.CompiledProbe.ProbeModify"
+        },
+        "document": {
+          "session_id": "7e0f86a4-f174-412c-b34b-390306cec37f"
+        },
+        "operation": "compiled.modify",
+        "operation_id": "788037d6-426a-5b20-a7a6-e9f670ddd463",
+        "preconditions": {},
+        "schema_version": 1
+      },
+      "result": {
+        "data": {
+          "probe": "native_view_orientation",
+          "document_session_id": "7e0f86a4-f174-412c-b34b-390306cec37f",
+          "view_id": 316202,
+          "view_unique_id": "5dfd0b93-0be2-413e-8a48-41f969832334-0004d32a",
+          "before": {
+            "eye": [
+              71.32968933856749,
+              -69.91869265933813,
+              80.32752579791534
+            ],
+            "up": [
+              -0.408248290463863,
+              0.408248290463863,
+              0.816496580927726
+            ],
+            "forward": [
+              -0.5773502691896258,
+              0.5773502691896258,
+              -0.5773502691896258
+            ]
+          },
+          "after": {
+            "eye": [
+              14,
+              18,
+              12
+            ],
+            "up": [
+              -0.24776377655560522,
+              -0.3716456648334078,
+              0.8947025264507967
+            ],
+            "forward": [
+              -0.4962916669854652,
+              -0.7444375004781978,
+              -0.4466625002869186
+            ]
+          },
+          "IsPerspective": false,
+          "declared_model_effect": "Only the explicitly identified unlocked 3D view's orientation is set."
+        },
+        "transaction_status": "committed",
+        "actual_elements": [],
+        "warnings": []
+      },
+      "error": null,
+      "cancel_requested": false,
+      "created_utc": "2026-10-14T05:09:24.4848234Z",
+      "finished_utc": "2026-10-14T05:09:24.5038876Z",
+      "elapsed_ms": 11.0081,
+      "transaction_status": "committed"
+    },
+    "query": {
+      "schema_version": 1,
+      "operation_id": "1b46cce5-2382-59d6-8ad3-b0850aabfb88",
+      "status": "completed",
+      "request": {
+        "arguments": {
+          "arguments": {
+            "document_session_id": "7e0f86a4-f174-412c-b34b-390306cec37f",
+            "view_unique_id": "5dfd0b93-0be2-413e-8a48-41f969832334-0004d32a"
+          },
+          "assembly": "H:\\Games\\3D Modeling Workflows\\3D Model Workflow\\output\\codex-native-revit-20261013\\tests\\CompiledProbe\\bin\\Release\\net8.0-windows\\CodexNativeRevit.CompiledProbe.dll",
+          "expected_changes": [],
+          "purpose": "Disposable native acceptance query",
+          "type": "CodexNativeRevit.CompiledProbe.ProbeQuery"
+        },
+        "document": {
+          "session_id": "7e0f86a4-f174-412c-b34b-390306cec37f"
+        },
+        "operation": "compiled.query",
+        "operation_id": "1b46cce5-2382-59d6-8ad3-b0850aabfb88",
+        "preconditions": {},
+        "schema_version": 1
+      },
+      "result": {
+        "probe": "read_only_native_api",
+        "document": {
+          "session_id": "7e0f86a4-f174-412c-b34b-390306cec37f",
+          "title": "Project4",
+          "path": "",
+          "is_family": false,
+          "is_read_only": false,
+          "is_modified": true,
+          "is_workshared": false
+        },
+        "element_count_including_types": 3800,
+        "api": {
+          "revit_version": "2025",
+          "build": "25.4.50.35",
+          "view_category_methods": [
+            "Boolean CanCategoryBeHidden(Autodesk.Revit.DB.ElementId)",
+            "Void SetCategoryHidden(Autodesk.Revit.DB.ElementId, Boolean)",
+            "Boolean GetCategoryHidden(Autodesk.Revit.DB.ElementId)"
+          ]
+        },
+        "units": {
+          "native_length_unit": "feet",
+          "native_angle_unit": "radians",
+          "display_length_unit": "autodesk.unit.unit:feetFractionalInches-1.0.0",
+          "display_angle_unit": "autodesk.unit.unit:degrees-1.0.1"
+        },
+        "view": {
+          "document_session_id": "7e0f86a4-f174-412c-b34b-390306cec37f",
+          "id": 316202,
+          "unique_id": "5dfd0b93-0be2-413e-8a48-41f969832334-0004d32a",
+          "name": "CODEX - NATIVE PARAMETRIC CASEWORK",
+          "view_type": "ThreeD",
+          "is_template": false,
+          "category": null
+        },
+        "declared_model_effect": "none"
+      },
+      "error": null,
+      "cancel_requested": false,
+      "created_utc": "2026-10-14T05:09:24.8658664Z",
+      "finished_utc": "2026-10-14T05:09:24.8952178Z",
+      "elapsed_ms": 14.2901,
+      "transaction_status": "not_started"
+    },
+    "sheet1": {
+      "schema_version": 1,
+      "operation_id": "19ab5fec-2efc-540f-9ea8-847103bf494a",
+      "status": "completed",
+      "request": {
+        "arguments": {
+          "name": "DISPOSABLE THREE-AXIS CASEWORK",
+          "number": "TEST-ID1.0"
+        },
+        "document": {
+          "session_id": "7e0f86a4-f174-412c-b34b-390306cec37f"
+        },
+        "operation": "sheet.create",
+        "operation_id": "19ab5fec-2efc-540f-9ea8-847103bf494a",
+        "preconditions": {},
+        "schema_version": 1
+      },
+      "result": {
+        "data": {
+          "document_session_id": "7e0f86a4-f174-412c-b34b-390306cec37f",
+          "id": 316211,
+          "unique_id": "5dfd0b93-0be2-413e-8a48-41f969832334-0004d333",
+          "name": "DISPOSABLE THREE-AXIS CASEWORK",
+          "category": "Sheets",
+          "category_id": -2003100,
+          "type_id": 75914,
+          "pinned": false,
+          "group_id": -1,
+          "level_id": -1,
+          "location": null,
+          "bounds": {
+            "min": [
+              -100,
+              -100,
+              -1000
+            ],
+            "max": [
+              100,
+              100,
+              -0.1
+            ]
+          },
+          "host_id": null,
+          "family_name": null,
+          "placement_type": null,
+          "view_family": null,
+          "view_type": "DrawingSheet",
+          "elevation": null
+        },
+        "transaction_status": "committed",
+        "actual_elements": [
+          {
+            "document_session_id": "7e0f86a4-f174-412c-b34b-390306cec37f",
+            "id": 316211,
+            "unique_id": "5dfd0b93-0be2-413e-8a48-41f969832334-0004d333",
+            "name": "DISPOSABLE THREE-AXIS CASEWORK",
+            "category": "Sheets",
+            "category_id": -2003100,
+            "type_id": 75914,
+            "pinned": false,
+            "group_id": -1,
+            "level_id": -1,
+            "location": null,
+            "bounds": {
+              "min": [
+                -100,
+                -100,
+                -1000
+              ],
+              "max": [
+                100,
+                100,
+                -0.1
+              ]
+            },
+            "host_id": null,
+            "family_name": null,
+            "placement_type": null,
+            "view_family": null,
+            "view_type": "DrawingSheet",
+            "elevation": null
+          }
+        ],
+        "warnings": []
+      },
+      "error": null,
+      "cancel_requested": false,
+      "created_utc": "2026-10-14T05:09:25.3029091Z",
+      "finished_utc": "2026-10-14T05:09:25.3141417Z",
+      "elapsed_ms": 5.2326,
+      "transaction_status": "committed"
+    },
+    "viewport1": {
+      "schema_version": 1,
+      "operation_id": "aea83298-6163-5b2e-a258-062d303e46d0",
+      "status": "completed",
+      "request": {
+        "arguments": {
+          "center": [
+            1,
+            1,
+            0
+          ],
+          "sheet": "5dfd0b93-0be2-413e-8a48-41f969832334-0004d333",
+          "view": "5dfd0b93-0be2-413e-8a48-41f969832334-0004d32a"
+        },
+        "document": {
+          "session_id": "7e0f86a4-f174-412c-b34b-390306cec37f"
+        },
+        "operation": "viewport.place",
+        "operation_id": "aea83298-6163-5b2e-a258-062d303e46d0",
+        "preconditions": {},
+        "schema_version": 1
+      },
+      "result": {
+        "data": {
+          "element": {
+            "document_session_id": "7e0f86a4-f174-412c-b34b-390306cec37f",
+            "id": 316216,
+            "unique_id": "5dfd0b93-0be2-413e-8a48-41f969832334-0004d338",
+            "name": "Viewport 1",
+            "category": "Viewports",
+            "category_id": -2000510,
+            "type_id": 9835,
+            "pinned": false,
+            "group_id": -1,
+            "level_id": -1,
+            "location": null,
+            "bounds": null,
+            "host_id": null,
+            "family_name": null,
+            "placement_type": null,
+            "view_family": null,
+            "view_type": null,
+            "elevation": null
+          },
+          "sheet_id": 316211,
+          "view_id": 316202,
+          "center": [
+            1,
+            1,
+            -0.9351784226607176
+          ],
+          "box": {
+            "min": [
+              0.8224343157236287,
+              0.8673368571508563,
+              -1.0927734965402491
+            ],
+            "max": [
+              1.1775656842763713,
+              1.1326631428491436,
+              -0.7775833487811861
+            ]
+          },
+          "label_box": {
+            "min": [
+              0.8116009823902954,
+              0.8297491654233478,
+              -0.14759507387953152
+            ],
+            "max": [
+              1.1675656842763713,
+              0.8790870970082979,
+              -0.14759507387953152
+            ]
+          },
+          "label_offset": [
+            0.010000000000000009,
+            -0.020416666666665972,
+            0
+          ],
+          "label_line_length": 0.3351313685527426,
+          "rotation": "None"
+        },
+        "transaction_status": "committed",
+        "actual_elements": [
+          {
+            "document_session_id": "7e0f86a4-f174-412c-b34b-390306cec37f",
+            "id": 316216,
+            "unique_id": "5dfd0b93-0be2-413e-8a48-41f969832334-0004d338",
+            "name": "Viewport 1",
+            "category": "Viewports",
+            "category_id": -2000510,
+            "type_id": 9835,
+            "pinned": false,
+            "group_id": -1,
+            "level_id": -1,
+            "location": null,
+            "bounds": null,
+            "host_id": null,
+            "family_name": null,
+            "placement_type": null,
+            "view_family": null,
+            "view_type": null,
+            "elevation": null
+          }
+        ],
+        "warnings": []
+      },
+      "error": null,
+      "cancel_requested": false,
+      "created_utc": "2026-10-14T05:09:25.7086557Z",
+      "finished_utc": "2026-10-14T05:09:25.7357627Z",
+      "elapsed_ms": 20.2762,
+      "transaction_status": "committed"
+    },
+    "viewport-label1": {
+      "schema_version": 1,
+      "operation_id": "35c2c54e-a7bd-5320-93a6-871ca75e1961",
+      "status": "completed",
+      "request": {
+        "arguments": {
+          "label_line_length": 0.5,
+          "label_offset": [
+            0,
+            0,
+            0
+          ],
+          "viewport": "5dfd0b93-0be2-413e-8a48-41f969832334-0004d338"
+        },
+        "document": {
+          "session_id": "7e0f86a4-f174-412c-b34b-390306cec37f"
+        },
+        "operation": "viewport.settings",
+        "operation_id": "35c2c54e-a7bd-5320-93a6-871ca75e1961",
+        "preconditions": {},
+        "schema_version": 1
+      },
+      "result": {
+        "data": {
+          "element": {
+            "document_session_id": "7e0f86a4-f174-412c-b34b-390306cec37f",
+            "id": 316216,
+            "unique_id": "5dfd0b93-0be2-413e-8a48-41f969832334-0004d338",
+            "name": "Viewport 1",
+            "category": "Viewports",
+            "category_id": -2000510,
+            "type_id": 9835,
+            "pinned": false,
+            "group_id": -1,
+            "level_id": -1,
+            "location": null,
+            "bounds": null,
+            "host_id": null,
+            "family_name": null,
+            "placement_type": null,
+            "view_family": null,
+            "view_type": null,
+            "elevation": null
+          },
+          "sheet_id": 316211,
+          "view_id": 316202,
+          "center": [
+            1,
+            1,
+            -0.9351784226607176
+          ],
+          "box": {
+            "min": [
+              0.8224343157236287,
+              0.8673368571508563,
+              -1.0927734965402491
+            ],
+            "max": [
+              1.1775656842763713,
+              1.1326631428491436,
+              -0.7775833487811861
+            ]
+          },
+          "label_box": {
+            "min": [
+              0.8016009823902954,
+              0.8501658320900137,
+              -0.14759507387953152
+            ],
+            "max": [
+              1.3224343157236287,
+              0.8995037636749639,
+              -0.14759507387953152
+            ]
+          },
+          "label_offset": [
+            0,
+            0,
+            0
+          ],
+          "label_line_length": 0.5,
+          "rotation": "None"
+        },
+        "transaction_status": "committed",
+        "actual_elements": [
+          {
+            "document_session_id": "7e0f86a4-f174-412c-b34b-390306cec37f",
+            "id": 316216,
+            "unique_id": "5dfd0b93-0be2-413e-8a48-41f969832334-0004d338",
+            "name": "Viewport 1",
+            "category": "Viewports",
+            "category_id": -2000510,
+            "type_id": 9835,
+            "pinned": false,
+            "group_id": -1,
+            "level_id": -1,
+            "location": null,
+            "bounds": null,
+            "host_id": null,
+            "family_name": null,
+            "placement_type": null,
+            "view_family": null,
+            "view_type": null,
+            "elevation": null
+          }
+        ],
+        "warnings": []
+      },
+      "error": null,
+      "cancel_requested": false,
+      "created_utc": "2026-10-14T05:09:26.0705826Z",
+      "finished_utc": "2026-10-14T05:09:26.0910682Z",
+      "elapsed_ms": 10.6404,
+      "transaction_status": "committed"
+    },
+    "schedule": {
+      "schema_version": 1,
+      "operation_id": "48c3b8b9-030d-5629-b3bf-7943b4d907f0",
+      "status": "completed",
+      "request": {
+        "arguments": {
+          "category": "OST_Casework",
+          "fields": [
+            "Family and Type",
+            "Count"
+          ],
+          "name": "Native Casework Types"
+        },
+        "document": {
+          "session_id": "7e0f86a4-f174-412c-b34b-390306cec37f"
+        },
+        "operation": "schedule.create",
+        "operation_id": "48c3b8b9-030d-5629-b3bf-7943b4d907f0",
+        "preconditions": {},
+        "schema_version": 1
+      },
+      "result": {
+        "data": {
+          "document_session_id": "7e0f86a4-f174-412c-b34b-390306cec37f",
+          "id": 316217,
+          "unique_id": "5dfd0b93-0be2-413e-8a48-41f969832334-0004d339",
+          "name": "Native Casework Types",
+          "category": "Schedules",
+          "category_id": -2000573,
+          "type_id": 75913,
+          "pinned": false,
+          "group_id": -1,
+          "level_id": -1,
+          "location": null,
+          "bounds": {
+            "min": [
+              -100,
+              -100,
+              -1000
+            ],
+            "max": [
+              100,
+              100,
+              -0.1
+            ]
+          },
+          "host_id": null,
+          "family_name": null,
+          "placement_type": null,
+          "view_family": null,
+          "view_type": "Schedule",
+          "elevation": null
+        },
+        "transaction_status": "committed",
+        "actual_elements": [
+          {
+            "document_session_id": "7e0f86a4-f174-412c-b34b-390306cec37f",
+            "id": 316217,
+            "unique_id": "5dfd0b93-0be2-413e-8a48-41f969832334-0004d339",
+            "name": "Native Casework Types",
+            "category": "Schedules",
+            "category_id": -2000573,
+            "type_id": 75913,
+            "pinned": false,
+            "group_id": -1,
+            "level_id": -1,
+            "location": null,
+            "bounds": {
+              "min": [
+                -100,
+                -100,
+                -1000
+              ],
+              "max": [
+                100,
+                100,
+                -0.1
+              ]
+            },
+            "host_id": null,
+            "family_name": null,
+            "placement_type": null,
+            "view_family": null,
+            "view_type": "Schedule",
+            "elevation": null
+          }
+        ],
+        "warnings": []
+      },
+      "error": null,
+      "cancel_requested": false,
+      "created_utc": "2026-10-14T05:09:26.4418572Z",
+      "finished_utc": "2026-10-14T05:09:26.4563205Z",
+      "elapsed_ms": 7.8053,
+      "transaction_status": "committed"
+    },
+    "schedule-widths": {
+      "schema_version": 1,
+      "operation_id": "19ba5a4e-328c-5e68-bdfe-45d334050d52",
+      "status": "completed",
+      "request": {
+        "arguments": {
+          "arguments": {
+            "action": "schedule_widths",
+            "document_session_id": "7e0f86a4-f174-412c-b34b-390306cec37f",
+            "schedule_unique_id": "5dfd0b93-0be2-413e-8a48-41f969832334-0004d339",
+            "widths": [
+              1,
+              0.3
+            ]
+          },
+          "assembly": "H:\\Games\\3D Modeling Workflows\\3D Model Workflow\\output\\codex-native-revit-20261013\\tests\\CompiledProbe\\bin\\Release\\net8.0-windows\\CodexNativeRevit.CompiledProbe.dll",
+          "expected_changes": [
+            "schedule_widths"
+          ],
+          "purpose": "Disposable native acceptance schedule-widths",
+          "type": "CodexNativeRevit.CompiledProbe.ProbeModify"
+        },
+        "document": {
+          "session_id": "7e0f86a4-f174-412c-b34b-390306cec37f"
+        },
+        "operation": "compiled.modify",
+        "operation_id": "19ba5a4e-328c-5e68-bdfe-45d334050d52",
+        "preconditions": {},
+        "schema_version": 1
+      },
+      "result": {
+        "data": {
+          "probe": "native_schedule_field_widths",
+          "document_session_id": "7e0f86a4-f174-412c-b34b-390306cec37f",
+          "schedule_id": 316217,
+          "schedule_unique_id": "5dfd0b93-0be2-413e-8a48-41f969832334-0004d339",
+          "before": [
+            {
+              "field_id": 0,
+              "name": "Family and Type",
+              "grid_column_width": 0.08333333333333333,
+              "sheet_column_width": 0.08333333333333333
+            },
+            {
+              "field_id": 1,
+              "name": "Count",
+              "grid_column_width": 0.08333333333333333,
+              "sheet_column_width": 0.08333333333333333
+            }
+          ],
+          "after": [
+            {
+              "field_id": 0,
+              "name": "Family and Type",
+              "grid_column_width": 1,
+              "sheet_column_width": 1
+            },
+            {
+              "field_id": 1,
+              "name": "Count",
+              "grid_column_width": 0.3,
+              "sheet_column_width": 0.3
+            }
+          ],
+          "unit": "internal feet",
+          "declared_model_effect": "Sheet and grid widths of this explicitly identified native schedule's fields."
+        },
+        "transaction_status": "committed",
+        "actual_elements": [],
+        "warnings": []
+      },
+      "error": null,
+      "cancel_requested": false,
+      "created_utc": "2026-10-14T05:09:27.0483252Z",
+      "finished_utc": "2026-10-14T05:09:27.0707228Z",
+      "elapsed_ms": 13.706,
+      "transaction_status": "committed"
+    },
+    "schedule-place": {
+      "schema_version": 1,
+      "operation_id": "6e581b9f-40ff-568f-9cfc-90d7362d79a0",
+      "status": "completed",
+      "request": {
+        "arguments": {
+          "point": [
+            2.6,
+            1.8,
+            0
+          ],
+          "schedule": "5dfd0b93-0be2-413e-8a48-41f969832334-0004d339",
+          "sheet": "5dfd0b93-0be2-413e-8a48-41f969832334-0004d333"
+        },
+        "document": {
+          "session_id": "7e0f86a4-f174-412c-b34b-390306cec37f"
+        },
+        "operation": "schedule.place",
+        "operation_id": "6e581b9f-40ff-568f-9cfc-90d7362d79a0",
+        "preconditions": {},
+        "schema_version": 1
+      },
+      "result": {
+        "data": {
+          "element": {
+            "document_session_id": "7e0f86a4-f174-412c-b34b-390306cec37f",
+            "id": 316224,
+            "unique_id": "5dfd0b93-0be2-413e-8a48-41f969832334-0004d340",
+            "name": "Native Casework Types",
+            "category": "Schedule Graphics",
+            "category_id": -2000570,
+            "type_id": -1,
+            "pinned": false,
+            "group_id": -1,
+            "level_id": -1,
+            "location": null,
+            "bounds": null,
+            "host_id": null,
+            "family_name": null,
+            "placement_type": null,
+            "view_family": null,
+            "view_type": null,
+            "elevation": null
+          },
+          "schedule_id": 316217,
+          "sheet_id": 316211,
+          "point": [
+            2.6,
+            1.8,
+            0
+          ],
+          "bounds": {
+            "min": [
+              2.5930555555555554,
+              1.6585042322150898,
+              0
+            ],
+            "max": [
+              3.9069444444444446,
+              1.8,
+              0
+            ]
+          }
+        },
+        "transaction_status": "committed",
+        "actual_elements": [
+          {
+            "document_session_id": "7e0f86a4-f174-412c-b34b-390306cec37f",
+            "id": 316224,
+            "unique_id": "5dfd0b93-0be2-413e-8a48-41f969832334-0004d340",
+            "name": "Native Casework Types",
+            "category": "Schedule Graphics",
+            "category_id": -2000570,
+            "type_id": -1,
+            "pinned": false,
+            "group_id": -1,
+            "level_id": -1,
+            "location": null,
+            "bounds": null,
+            "host_id": null,
+            "family_name": null,
+            "placement_type": null,
+            "view_family": null,
+            "view_type": null,
+            "elevation": null
+          }
+        ],
+        "warnings": []
+      },
+      "error": null,
+      "cancel_requested": false,
+      "created_utc": "2026-10-14T05:09:27.4547387Z",
+      "finished_utc": "2026-10-14T05:09:27.4829934Z",
+      "elapsed_ms": 21.9287,
+      "transaction_status": "committed"
+    },
+    "layout1-propose": {
+      "schema_version": 1,
+      "operation_id": "b8beb1b8-8ca5-5006-afca-e9f17f5fb4d8",
+      "status": "completed",
+      "request": {
+        "arguments": {
+          "content_region": [
+            0,
+            0,
+            4,
+            3
+          ],
+          "moves": [
+            {
+              "element": "5dfd0b93-0be2-413e-8a48-41f969832334-0004d338",
+              "point": [
+                1,
+                1,
+                0
+              ]
+            },
+            {
+              "element": "5dfd0b93-0be2-413e-8a48-41f969832334-0004d340",
+              "point": [
+                2.6,
+                1.8,
+                0
+              ]
+            }
+          ]
+        },
+        "document": {
+          "session_id": "7e0f86a4-f174-412c-b34b-390306cec37f"
+        },
+        "operation": "layout.propose",
+        "operation_id": "b8beb1b8-8ca5-5006-afca-e9f17f5fb4d8",
+        "preconditions": {},
+        "schema_version": 1
+      },
+      "result": {
+        "proposal": [
+          {
+            "element": {
+              "document_session_id": "7e0f86a4-f174-412c-b34b-390306cec37f",
+              "id": 316216,
+              "unique_id": "5dfd0b93-0be2-413e-8a48-41f969832334-0004d338",
+              "name": "Viewport 1",
+              "category": "Viewports",
+              "category_id": -2000510,
+              "type_id": 9835,
+              "pinned": false,
+              "group_id": -1,
+              "level_id": -1,
+              "location": null,
+              "bounds": null,
+              "host_id": null,
+              "family_name": null,
+              "placement_type": null,
+              "view_family": null,
+              "view_type": null,
+              "elevation": null
+            },
+            "point": [
+              1,
+              1,
+              0
+            ],
+            "predicted_bounds": {
+              "min": [
+                0.8016009823902954,
+                0.8501658320900137,
+                0.9351784226607176
+              ],
+              "max": [
+                1.3224343157236287,
+                1.1326631428491436,
+                0.9351784226607176
+              ]
+            }
+          },
+          {
+            "element": {
+              "document_session_id": "7e0f86a4-f174-412c-b34b-390306cec37f",
+              "id": 316224,
+              "unique_id": "5dfd0b93-0be2-413e-8a48-41f969832334-0004d340",
+              "name": "Native Casework Types",
+              "category": "Schedule Graphics",
+              "category_id": -2000570,
+              "type_id": -1,
+              "pinned": false,
+              "group_id": -1,
+              "level_id": -1,
+              "location": null,
+              "bounds": null,
+              "host_id": null,
+              "family_name": null,
+              "placement_type": null,
+              "view_family": null,
+              "view_type": null,
+              "elevation": null
+            },
+            "point": [
+              2.6,
+              1.8,
+              0
+            ],
+            "predicted_bounds": {
+              "min": [
+                2.5930555555555554,
+                1.6585042322150898,
+                0
+              ],
+              "max": [
+                3.9069444444444446,
+                1.8,
+                0
+              ]
+            }
+          }
+        ],
+        "issues": [],
+        "valid": true,
+        "units": "sheet feet",
+        "limitation": "Checks supplied moves and reserved rectangles. Include all existing sheet content in the proposal; text/detail annotations are not inferred."
+      },
+      "error": null,
+      "cancel_requested": false,
+      "created_utc": "2026-10-14T05:09:27.8664131Z",
+      "finished_utc": "2026-10-14T05:09:27.8799494Z",
+      "elapsed_ms": 7.1036,
+      "transaction_status": "not_started"
+    },
+    "layout1-apply": {
+      "schema_version": 1,
+      "operation_id": "4fa18508-b092-59cb-95cd-818aaaafbce3",
+      "status": "completed",
+      "request": {
+        "arguments": {
+          "content_region": [
+            0,
+            0,
+            4,
+            3
+          ],
+          "moves": [
+            {
+              "element": "5dfd0b93-0be2-413e-8a48-41f969832334-0004d338",
+              "point": [
+                1,
+                1,
+                0
+              ]
+            },
+            {
+              "element": "5dfd0b93-0be2-413e-8a48-41f969832334-0004d340",
+              "point": [
+                2.6,
+                1.8,
+                0
+              ]
+            }
+          ]
+        },
+        "document": {
+          "session_id": "7e0f86a4-f174-412c-b34b-390306cec37f"
+        },
+        "operation": "layout.apply",
+        "operation_id": "4fa18508-b092-59cb-95cd-818aaaafbce3",
+        "preconditions": {},
+        "schema_version": 1
+      },
+      "result": {
+        "data": {
+          "elements": [
+            {
+              "element": {
+                "document_session_id": "7e0f86a4-f174-412c-b34b-390306cec37f",
+                "id": 316216,
+                "unique_id": "5dfd0b93-0be2-413e-8a48-41f969832334-0004d338",
+                "name": "Viewport 1",
+                "category": "Viewports",
+                "category_id": -2000510,
+                "type_id": 9835,
+                "pinned": false,
+                "group_id": -1,
+                "level_id": -1,
+                "location": null,
+                "bounds": null,
+                "host_id": null,
+                "family_name": null,
+                "placement_type": null,
+                "view_family": null,
+                "view_type": null,
+                "elevation": null
+              },
+              "sheet_id": 316211,
+              "view_id": 316202,
+              "center": [
+                1,
+                1,
+                -0.9351784226607176
+              ],
+              "box": {
+                "min": [
+                  0.8224343157236287,
+                  0.8673368571508563,
+                  -1.0927734965402491
+                ],
+                "max": [
+                  1.1775656842763713,
+                  1.1326631428491436,
+                  -0.7775833487811861
+                ]
+              },
+              "label_box": {
+                "min": [
+                  0.8016009823902954,
+                  0.8501658320900137,
+                  0.7875833487811861
+                ],
+                "max": [
+                  1.3224343157236287,
+                  0.8995037636749639,
+                  0.7875833487811861
+                ]
+              },
+              "label_offset": [
+                0,
+                0,
+                0
+              ],
+              "label_line_length": 0.5,
+              "rotation": "None"
+            },
+            {
+              "element": {
+                "document_session_id": "7e0f86a4-f174-412c-b34b-390306cec37f",
+                "id": 316224,
+                "unique_id": "5dfd0b93-0be2-413e-8a48-41f969832334-0004d340",
+                "name": "Native Casework Types",
+                "category": "Schedule Graphics",
+                "category_id": -2000570,
+                "type_id": -1,
+                "pinned": false,
+                "group_id": -1,
+                "level_id": -1,
+                "location": null,
+                "bounds": null,
+                "host_id": null,
+                "family_name": null,
+                "placement_type": null,
+                "view_family": null,
+                "view_type": null,
+                "elevation": null
+              },
+              "schedule_id": 316217,
+              "sheet_id": 316211,
+              "point": [
+                2.6,
+                1.8,
+                0
+              ],
+              "bounds": {
+                "min": [
+                  2.5930555555555554,
+                  1.6585042322150898,
+                  0
+                ],
+                "max": [
+                  3.9069444444444446,
+                  1.8,
+                  0
+                ]
+              }
+            }
+          ],
+          "verification": {
+            "proposal": [
+              {
+                "element": {
+                  "document_session_id": "7e0f86a4-f174-412c-b34b-390306cec37f",
+                  "id": 316216,
+                  "unique_id": "5dfd0b93-0be2-413e-8a48-41f969832334-0004d338",
+                  "name": "Viewport 1",
+                  "category": "Viewports",
+                  "category_id": -2000510,
+                  "type_id": 9835,
+                  "pinned": false,
+                  "group_id": -1,
+                  "level_id": -1,
+                  "location": null,
+                  "bounds": null,
+                  "host_id": null,
+                  "family_name": null,
+                  "placement_type": null,
+                  "view_family": null,
+                  "view_type": null,
+                  "elevation": null
+                },
+                "point": [
+                  1,
+                  1,
+                  0
+                ],
+                "predicted_bounds": {
+                  "min": [
+                    0.8016009823902954,
+                    0.8501658320900137,
+                    0.9351784226607176
+                  ],
+                  "max": [
+                    1.3224343157236287,
+                    1.1326631428491436,
+                    0.9351784226607176
+                  ]
+                }
+              },
+              {
+                "element": {
+                  "document_session_id": "7e0f86a4-f174-412c-b34b-390306cec37f",
+                  "id": 316224,
+                  "unique_id": "5dfd0b93-0be2-413e-8a48-41f969832334-0004d340",
+                  "name": "Native Casework Types",
+                  "category": "Schedule Graphics",
+                  "category_id": -2000570,
+                  "type_id": -1,
+                  "pinned": false,
+                  "group_id": -1,
+                  "level_id": -1,
+                  "location": null,
+                  "bounds": null,
+                  "host_id": null,
+                  "family_name": null,
+                  "placement_type": null,
+                  "view_family": null,
+                  "view_type": null,
+                  "elevation": null
+                },
+                "point": [
+                  2.6,
+                  1.8,
+                  0
+                ],
+                "predicted_bounds": {
+                  "min": [
+                    2.5930555555555554,
+                    1.6585042322150898,
+                    0
+                  ],
+                  "max": [
+                    3.9069444444444446,
+                    1.8,
+                    0
+                  ]
+                }
+              }
+            ],
+            "issues": [],
+            "valid": true,
+            "units": "sheet feet",
+            "limitation": "Checks supplied moves and reserved rectangles. Include all existing sheet content in the proposal; text/detail annotations are not inferred."
+          }
+        },
+        "transaction_status": "committed",
+        "actual_elements": [
+          {
+            "document_session_id": "7e0f86a4-f174-412c-b34b-390306cec37f",
+            "id": 316216,
+            "unique_id": "5dfd0b93-0be2-413e-8a48-41f969832334-0004d338",
+            "name": "Viewport 1",
+            "category": "Viewports",
+            "category_id": -2000510,
+            "type_id": 9835,
+            "pinned": false,
+            "group_id": -1,
+            "level_id": -1,
+            "location": null,
+            "bounds": null,
+            "host_id": null,
+            "family_name": null,
+            "placement_type": null,
+            "view_family": null,
+            "view_type": null,
+            "elevation": null
+          },
+          {
+            "document_session_id": "7e0f86a4-f174-412c-b34b-390306cec37f",
+            "id": 316224,
+            "unique_id": "5dfd0b93-0be2-413e-8a48-41f969832334-0004d340",
+            "name": "Native Casework Types",
+            "category": "Schedule Graphics",
+            "category_id": -2000570,
+            "type_id": -1,
+            "pinned": false,
+            "group_id": -1,
+            "level_id": -1,
+            "location": null,
+            "bounds": null,
+            "host_id": null,
+            "family_name": null,
+            "placement_type": null,
+            "view_family": null,
+            "view_type": null,
+            "elevation": null
+          }
+        ],
+        "warnings": []
+      },
+      "error": null,
+      "cancel_requested": false,
+      "created_utc": "2026-10-14T05:09:28.4979354Z",
+      "finished_utc": "2026-10-14T05:09:28.5378446Z",
+      "elapsed_ms": 33.7688,
+      "transaction_status": "committed"
+    },
+    "plan": {
+      "schema_version": 1,
+      "operation_id": "49b89b14-adb4-5053-b1a5-1cd709a9744a",
+      "status": "completed",
+      "request": {
+        "arguments": {
+          "kind": "plan",
+          "level": "933c4a06-93b8-11d3-80f8-00c04f8efc32-0000001e",
+          "name": "CODEX - CASEWORK PLAN",
+          "scale": 24,
+          "type": "42eb2886-bbe4-469f-897b-4b39594f7390-00012881"
+        },
+        "document": {
+          "session_id": "7e0f86a4-f174-412c-b34b-390306cec37f"
+        },
+        "operation": "view.create",
+        "operation_id": "49b89b14-adb4-5053-b1a5-1cd709a9744a",
+        "preconditions": {},
+        "schema_version": 1
+      },
+      "result": {
+        "data": {
+          "document_session_id": "7e0f86a4-f174-412c-b34b-390306cec37f",
+          "id": 316225,
+          "unique_id": "5dfd0b93-0be2-413e-8a48-41f969832334-0004d341",
+          "name": "CODEX - CASEWORK PLAN",
+          "category": "Views",
+          "category_id": -2000279,
+          "type_id": 75905,
+          "pinned": false,
+          "group_id": -1,
+          "level_id": -1,
+          "location": null,
+          "bounds": {
+            "min": [
+              -100,
+              -100,
+              -1000
+            ],
+            "max": [
+              100,
+              100,
+              -0.1
+            ]
+          },
+          "host_id": null,
+          "family_name": null,
+          "placement_type": null,
+          "view_family": null,
+          "view_type": "FloorPlan",
+          "elevation": null
+        },
+        "transaction_status": "committed",
+        "actual_elements": [
+          {
+            "document_session_id": "7e0f86a4-f174-412c-b34b-390306cec37f",
+            "id": 316225,
+            "unique_id": "5dfd0b93-0be2-413e-8a48-41f969832334-0004d341",
+            "name": "CODEX - CASEWORK PLAN",
+            "category": "Views",
+            "category_id": -2000279,
+            "type_id": 75905,
+            "pinned": false,
+            "group_id": -1,
+            "level_id": -1,
+            "location": null,
+            "bounds": {
+              "min": [
+                -100,
+                -100,
+                -1000
+              ],
+              "max": [
+                100,
+                100,
+                -0.1
+              ]
+            },
+            "host_id": null,
+            "family_name": null,
+            "placement_type": null,
+            "view_family": null,
+            "view_type": "FloorPlan",
+            "elevation": null
+          }
+        ],
+        "warnings": []
+      },
+      "error": null,
+      "cancel_requested": false,
+      "created_utc": "2026-10-14T05:09:28.8301064Z",
+      "finished_utc": "2026-10-14T05:09:28.8482791Z",
+      "elapsed_ms": 11.2035,
+      "transaction_status": "committed"
+    },
+    "plan-crop": {
+      "schema_version": 1,
+      "operation_id": "40fd7215-5a95-5ee7-985c-bbe1a28050c3",
+      "status": "completed",
+      "request": {
+        "arguments": {
+          "crop": {
+            "max": [
+              9,
+              3,
+              1
+            ],
+            "min": [
+              -1,
+              -1,
+              0
+            ]
+          },
+          "detail_level": "Fine",
+          "view": "5dfd0b93-0be2-413e-8a48-41f969832334-0004d341"
+        },
+        "document": {
+          "session_id": "7e0f86a4-f174-412c-b34b-390306cec37f"
+        },
+        "operation": "view.settings",
+        "operation_id": "40fd7215-5a95-5ee7-985c-bbe1a28050c3",
+        "preconditions": {},
+        "schema_version": 1
+      },
+      "result": {
+        "data": {
+          "document_session_id": "7e0f86a4-f174-412c-b34b-390306cec37f",
+          "id": 316225,
+          "unique_id": "5dfd0b93-0be2-413e-8a48-41f969832334-0004d341",
+          "name": "CODEX - CASEWORK PLAN",
+          "category": "Views",
+          "category_id": -2000279,
+          "type_id": 75905,
+          "pinned": false,
+          "group_id": -1,
+          "level_id": -1,
+          "location": null,
+          "bounds": {
+            "min": [
+              -1,
+              -1,
+              -1000
+            ],
+            "max": [
+              9,
+              3,
+              1
+            ]
+          },
+          "host_id": null,
+          "family_name": null,
+          "placement_type": null,
+          "view_family": null,
+          "view_type": "FloorPlan",
+          "elevation": null
+        },
+        "transaction_status": "committed",
+        "actual_elements": [
+          {
+            "document_session_id": "7e0f86a4-f174-412c-b34b-390306cec37f",
+            "id": 316225,
+            "unique_id": "5dfd0b93-0be2-413e-8a48-41f969832334-0004d341",
+            "name": "CODEX - CASEWORK PLAN",
+            "category": "Views",
+            "category_id": -2000279,
+            "type_id": 75905,
+            "pinned": false,
+            "group_id": -1,
+            "level_id": -1,
+            "location": null,
+            "bounds": {
+              "min": [
+                -1,
+                -1,
+                -1000
+              ],
+              "max": [
+                9,
+                3,
+                1
+              ]
+            },
+            "host_id": null,
+            "family_name": null,
+            "placement_type": null,
+            "view_family": null,
+            "view_type": "FloorPlan",
+            "elevation": null
+          }
+        ],
+        "warnings": []
+      },
+      "error": null,
+      "cancel_requested": false,
+      "created_utc": "2026-10-14T05:09:29.2061893Z",
+      "finished_utc": "2026-10-14T05:09:29.2389433Z",
+      "elapsed_ms": 26.4937,
+      "transaction_status": "committed"
+    },
+    "elevation": {
+      "schema_version": 1,
+      "operation_id": "bba66a3e-5965-5359-8847-9065b6a6d67c",
+      "status": "completed",
+      "request": {
+        "arguments": {
+          "arguments": {
+            "action": "create_elevation",
+            "document_session_id": "7e0f86a4-f174-412c-b34b-390306cec37f",
+            "elevation_type_unique_id": "42eb2886-bbe4-469f-897b-4b39594f7390-00012887",
+            "index": 1,
+            "name": "CODEX - CASEWORK ELEVATION",
+            "plan_view_unique_id": "5dfd0b93-0be2-413e-8a48-41f969832334-0004d341",
+            "point": [
+              4,
+              6,
+              0
+            ],
+            "scale": 24
+          },
+          "assembly": "H:\\Games\\3D Modeling Workflows\\3D Model Workflow\\output\\codex-native-revit-20261013\\tests\\CompiledProbe\\bin\\Release\\net8.0-windows\\CodexNativeRevit.CompiledProbe.dll",
+          "expected_changes": [
+            "create_elevation"
+          ],
+          "purpose": "Disposable native acceptance elevation",
+          "type": "CodexNativeRevit.CompiledProbe.ProbeModify"
+        },
+        "document": {
+          "session_id": "7e0f86a4-f174-412c-b34b-390306cec37f"
+        },
+        "operation": "compiled.modify",
+        "operation_id": "bba66a3e-5965-5359-8847-9065b6a6d67c",
+        "preconditions": {},
+        "schema_version": 1
+      },
+      "result": {
+        "data": {
+          "probe": "native_elevation_creation",
+          "document_session_id": "7e0f86a4-f174-412c-b34b-390306cec37f",
+          "elevation": {
+            "document_session_id": "7e0f86a4-f174-412c-b34b-390306cec37f",
+            "id": 316237,
+            "unique_id": "5dfd0b93-0be2-413e-8a48-41f969832334-0004d34d",
+            "name": "CODEX - CASEWORK ELEVATION"
+          },
+          "marker": {
+            "document_session_id": "7e0f86a4-f174-412c-b34b-390306cec37f",
+            "id": 316235,
+            "unique_id": "5dfd0b93-0be2-413e-8a48-41f969832334-0004d34b"
+          },
+          "host_plan": {
+            "document_session_id": "7e0f86a4-f174-412c-b34b-390306cec37f",
+            "id": 316225,
+            "unique_id": "5dfd0b93-0be2-413e-8a48-41f969832334-0004d341"
+          },
+          "index": 1,
+          "requested_marker_rotation_radians": 0,
+          "view_direction": [
+            -6.2172489379008656e-15,
+            -1,
+            0
+          ],
+          "right_direction": [
+            1,
+            -6.2172489379008656e-15,
+            0
+          ],
+          "up_direction": [
+            0,
+            0,
+            1
+          ],
+          "actual_scale": 24,
+          "crop_box_active": true,
+          "crop_box": {
+            "min": [
+              -3.0000000000000187,
+              -2,
+              -10
+            ],
+            "max": [
+              11.000000000000007,
+              16.999999999998437,
+              0
+            ],
+            "transform": {
+              "origin": [
+                3.730349362740526e-14,
+                6.000000000000025,
+                0
+              ],
+              "basis_x": [
+                1,
+                -6.2172489379008656e-15,
+                0
+              ],
+              "basis_y": [
+                0,
+                0,
+                1
+              ],
+              "basis_z": [
+                -6.2172489379008656e-15,
+                -1,
+                0
+              ]
+            }
+          },
+          "unit": "internal feet; rotation radians",
+          "declared_model_effect": "One native elevation marker and one native elevation view hosted by the explicitly identified plan."
+        },
+        "transaction_status": "committed",
+        "actual_elements": [
+          {
+            "document_session_id": "7e0f86a4-f174-412c-b34b-390306cec37f",
+            "id": 316237,
+            "unique_id": "5dfd0b93-0be2-413e-8a48-41f969832334-0004d34d",
+            "name": "CODEX - CASEWORK ELEVATION",
+            "category": "Views",
+            "category_id": -2000279,
+            "type_id": 75911,
+            "pinned": false,
+            "group_id": -1,
+            "level_id": -1,
+            "location": null,
+            "bounds": {
+              "min": [
+                -3.0000000000000187,
+                -2,
+                -10
+              ],
+              "max": [
+                11.000000000000007,
+                16.999999999998437,
+                0
+              ]
+            },
+            "host_id": null,
+            "family_name": null,
+            "placement_type": null,
+            "view_family": null,
+            "view_type": "Elevation",
+            "elevation": null
+          },
+          {
+            "document_session_id": "7e0f86a4-f174-412c-b34b-390306cec37f",
+            "id": 316235,
+            "unique_id": "5dfd0b93-0be2-413e-8a48-41f969832334-0004d34b",
+            "name": "Elevation 1",
+            "category": "Elevations",
+            "category_id": -2000535,
+            "type_id": 75911,
+            "pinned": false,
+            "group_id": -1,
+            "level_id": -1,
+            "location": null,
+            "bounds": null,
+            "host_id": null,
+            "family_name": null,
+            "placement_type": null,
+            "view_family": null,
+            "view_type": null,
+            "elevation": null
+          },
+          {
+            "document_session_id": "7e0f86a4-f174-412c-b34b-390306cec37f",
+            "id": 316225,
+            "unique_id": "5dfd0b93-0be2-413e-8a48-41f969832334-0004d341",
+            "name": "CODEX - CASEWORK PLAN",
+            "category": "Views",
+            "category_id": -2000279,
+            "type_id": 75905,
+            "pinned": false,
+            "group_id": -1,
+            "level_id": -1,
+            "location": null,
+            "bounds": {
+              "min": [
+                -1,
+                -1,
+                -1000
+              ],
+              "max": [
+                9,
+                3,
+                1
+              ]
+            },
+            "host_id": null,
+            "family_name": null,
+            "placement_type": null,
+            "view_family": null,
+            "view_type": "FloorPlan",
+            "elevation": null
+          }
+        ],
+        "warnings": []
+      },
+      "error": null,
+      "cancel_requested": false,
+      "created_utc": "2026-10-14T05:09:29.8634541Z",
+      "finished_utc": "2026-10-14T05:09:29.8946550Z",
+      "elapsed_ms": 24.4875,
+      "transaction_status": "committed"
+    },
+    "elevation-crop": {
+      "schema_version": 1,
+      "operation_id": "758cc528-e118-526e-b2ea-5994b600e162",
+      "status": "completed",
+      "request": {
+        "arguments": {
+          "crop": {
+            "max": [
+              6,
+              5,
+              10
+            ],
+            "min": [
+              -6,
+              -1,
+              0
+            ]
+          },
+          "detail_level": "Fine",
+          "view": "5dfd0b93-0be2-413e-8a48-41f969832334-0004d34d"
+        },
+        "document": {
+          "session_id": "7e0f86a4-f174-412c-b34b-390306cec37f"
+        },
+        "operation": "view.settings",
+        "operation_id": "758cc528-e118-526e-b2ea-5994b600e162",
+        "preconditions": {},
+        "schema_version": 1
+      },
+      "result": {
+        "data": {
+          "document_session_id": "7e0f86a4-f174-412c-b34b-390306cec37f",
+          "id": 316237,
+          "unique_id": "5dfd0b93-0be2-413e-8a48-41f969832334-0004d34d",
+          "name": "CODEX - CASEWORK ELEVATION",
+          "category": "Views",
+          "category_id": -2000279,
+          "type_id": 75911,
+          "pinned": false,
+          "group_id": -1,
+          "level_id": -1,
+          "location": null,
+          "bounds": {
+            "min": [
+              -6,
+              -1,
+              -10
+            ],
+            "max": [
+              6,
+              5,
+              10
+            ]
+          },
+          "host_id": null,
+          "family_name": null,
+          "placement_type": null,
+          "view_family": null,
+          "view_type": "Elevation",
+          "elevation": null
+        },
+        "transaction_status": "committed",
+        "actual_elements": [
+          {
+            "document_session_id": "7e0f86a4-f174-412c-b34b-390306cec37f",
+            "id": 316237,
+            "unique_id": "5dfd0b93-0be2-413e-8a48-41f969832334-0004d34d",
+            "name": "CODEX - CASEWORK ELEVATION",
+            "category": "Views",
+            "category_id": -2000279,
+            "type_id": 75911,
+            "pinned": false,
+            "group_id": -1,
+            "level_id": -1,
+            "location": null,
+            "bounds": {
+              "min": [
+                -6,
+                -1,
+                -20
+              ],
+              "max": [
+                6,
+                5,
+                0
+              ]
+            },
+            "host_id": null,
+            "family_name": null,
+            "placement_type": null,
+            "view_family": null,
+            "view_type": "Elevation",
+            "elevation": null
+          }
+        ],
+        "warnings": []
+      },
+      "error": null,
+      "cancel_requested": false,
+      "created_utc": "2026-10-14T05:09:30.2543073Z",
+      "finished_utc": "2026-10-14T05:09:30.2668245Z",
+      "elapsed_ms": 6.3595,
+      "transaction_status": "committed"
+    },
+    "sheet2": {
+      "schema_version": 1,
+      "operation_id": "46029e4e-989a-559f-8527-f5d3d033ec47",
+      "status": "completed",
+      "request": {
+        "arguments": {
+          "name": "DISPOSABLE PLAN AND ELEVATION",
+          "number": "TEST-ID1.1"
+        },
+        "document": {
+          "session_id": "7e0f86a4-f174-412c-b34b-390306cec37f"
+        },
+        "operation": "sheet.create",
+        "operation_id": "46029e4e-989a-559f-8527-f5d3d033ec47",
+        "preconditions": {},
+        "schema_version": 1
+      },
+      "result": {
+        "data": {
+          "document_session_id": "7e0f86a4-f174-412c-b34b-390306cec37f",
+          "id": 316245,
+          "unique_id": "5dfd0b93-0be2-413e-8a48-41f969832334-0004d355",
+          "name": "DISPOSABLE PLAN AND ELEVATION",
+          "category": "Sheets",
+          "category_id": -2003100,
+          "type_id": 75914,
+          "pinned": false,
+          "group_id": -1,
+          "level_id": -1,
+          "location": null,
+          "bounds": {
+            "min": [
+              -100,
+              -100,
+              -1000
+            ],
+            "max": [
+              100,
+              100,
+              -0.1
+            ]
+          },
+          "host_id": null,
+          "family_name": null,
+          "placement_type": null,
+          "view_family": null,
+          "view_type": "DrawingSheet",
+          "elevation": null
+        },
+        "transaction_status": "committed",
+        "actual_elements": [
+          {
+            "document_session_id": "7e0f86a4-f174-412c-b34b-390306cec37f",
+            "id": 316245,
+            "unique_id": "5dfd0b93-0be2-413e-8a48-41f969832334-0004d355",
+            "name": "DISPOSABLE PLAN AND ELEVATION",
+            "category": "Sheets",
+            "category_id": -2003100,
+            "type_id": 75914,
+            "pinned": false,
+            "group_id": -1,
+            "level_id": -1,
+            "location": null,
+            "bounds": {
+              "min": [
+                -100,
+                -100,
+                -1000
+              ],
+              "max": [
+                100,
+                100,
+                -0.1
+              ]
+            },
+            "host_id": null,
+            "family_name": null,
+            "placement_type": null,
+            "view_family": null,
+            "view_type": "DrawingSheet",
+            "elevation": null
+          }
+        ],
+        "warnings": []
+      },
+      "error": null,
+      "cancel_requested": false,
+      "created_utc": "2026-10-14T05:09:30.6133571Z",
+      "finished_utc": "2026-10-14T05:09:30.6266139Z",
+      "elapsed_ms": 5.8993,
+      "transaction_status": "committed"
+    },
+    "plan-place": {
+      "schema_version": 1,
+      "operation_id": "58032888-4f3b-5866-aa8c-fe7276edb033",
+      "status": "completed",
+      "request": {
+        "arguments": {
+          "center": [
+            1,
+            1.5,
+            0
+          ],
+          "sheet": "5dfd0b93-0be2-413e-8a48-41f969832334-0004d355",
+          "view": "5dfd0b93-0be2-413e-8a48-41f969832334-0004d341"
+        },
+        "document": {
+          "session_id": "7e0f86a4-f174-412c-b34b-390306cec37f"
+        },
+        "operation": "viewport.place",
+        "operation_id": "58032888-4f3b-5866-aa8c-fe7276edb033",
+        "preconditions": {},
+        "schema_version": 1
+      },
+      "result": {
+        "data": {
+          "element": {
+            "document_session_id": "7e0f86a4-f174-412c-b34b-390306cec37f",
+            "id": 316250,
+            "unique_id": "5dfd0b93-0be2-413e-8a48-41f969832334-0004d35a",
+            "name": "Viewport 1",
+            "category": "Viewports",
+            "category_id": -2000510,
+            "type_id": 9835,
+            "pinned": false,
+            "group_id": -1,
+            "level_id": -1,
+            "location": null,
+            "bounds": null,
+            "host_id": null,
+            "family_name": null,
+            "placement_type": null,
+            "view_family": null,
+            "view_type": null,
+            "elevation": null
+          },
+          "sheet_id": 316245,
+          "view_id": 316225,
+          "center": [
+            1,
+            1.5,
+            0.07291666666666666
+          ],
+          "box": {
+            "min": [
+              0.7816666666666667,
+              1.4066666666666665,
+              -0.01
+            ],
+            "max": [
+              1.2183333333333335,
+              1.5933333333333333,
+              0.15583333333333332
+            ]
+          },
+          "label_box": {
+            "min": [
+              0.7708333333333335,
+              1.369078974939158,
+              -0.07291666666666666
+            ],
+            "max": [
+              1.2083333333333335,
+              1.402143940644843,
+              -0.07291666666666666
+            ]
+          },
+          "label_offset": [
+            0.010000000000000009,
+            -0.02041666666666586,
+            0
+          ],
+          "label_line_length": 0.4166666666666667,
+          "rotation": "None"
+        },
+        "transaction_status": "committed",
+        "actual_elements": [
+          {
+            "document_session_id": "7e0f86a4-f174-412c-b34b-390306cec37f",
+            "id": 316250,
+            "unique_id": "5dfd0b93-0be2-413e-8a48-41f969832334-0004d35a",
+            "name": "Viewport 1",
+            "category": "Viewports",
+            "category_id": -2000510,
+            "type_id": 9835,
+            "pinned": false,
+            "group_id": -1,
+            "level_id": -1,
+            "location": null,
+            "bounds": null,
+            "host_id": null,
+            "family_name": null,
+            "placement_type": null,
+            "view_family": null,
+            "view_type": null,
+            "elevation": null
+          }
+        ],
+        "warnings": []
+      },
+      "error": null,
+      "cancel_requested": false,
+      "created_utc": "2026-10-14T05:09:30.9973243Z",
+      "finished_utc": "2026-10-14T05:09:31.0224898Z",
+      "elapsed_ms": 18.3424,
+      "transaction_status": "committed"
+    },
+    "elevation-place": {
+      "schema_version": 1,
+      "operation_id": "f5193f40-9116-53b9-a4a4-2deb68864b57",
+      "status": "completed",
+      "request": {
+        "arguments": {
+          "center": [
+            2.8,
+            1.5,
+            0
+          ],
+          "sheet": "5dfd0b93-0be2-413e-8a48-41f969832334-0004d355",
+          "view": "5dfd0b93-0be2-413e-8a48-41f969832334-0004d34d"
+        },
+        "document": {
+          "session_id": "7e0f86a4-f174-412c-b34b-390306cec37f"
+        },
+        "operation": "viewport.place",
+        "operation_id": "f5193f40-9116-53b9-a4a4-2deb68864b57",
+        "preconditions": {},
+        "schema_version": 1
+      },
+      "result": {
+        "data": {
+          "element": {
+            "document_session_id": "7e0f86a4-f174-412c-b34b-390306cec37f",
+            "id": 316251,
+            "unique_id": "5dfd0b93-0be2-413e-8a48-41f969832334-0004d35b",
+            "name": "Viewport 1",
+            "category": "Viewports",
+            "category_id": -2000510,
+            "type_id": 9835,
+            "pinned": false,
+            "group_id": -1,
+            "level_id": -1,
+            "location": null,
+            "bounds": null,
+            "host_id": null,
+            "family_name": null,
+            "placement_type": null,
+            "view_family": null,
+            "view_type": null,
+            "elevation": null
+          },
+          "sheet_id": 316245,
+          "view_id": 316237,
+          "center": [
+            2.8,
+            1.5,
+            -0.41666666666666663
+          ],
+          "box": {
+            "min": [
+              2.4455989583333335,
+              1.365,
+              -0.8433333333333333
+            ],
+            "max": [
+              3.1544010416666666,
+              1.635,
+              0.01
+            ]
+          },
+          "label_box": {
+            "min": [
+              2.434765625,
+              1.3274123082724916,
+              -0.41666666666666663
+            ],
+            "max": [
+              3.144401041666667,
+              1.3604772739781765,
+              -0.41666666666666663
+            ]
+          },
+          "label_offset": [
+            0.009999999999999787,
+            -0.02041666666666586,
+            0
+          ],
+          "label_line_length": 0.6888020833333333,
+          "rotation": "None"
+        },
+        "transaction_status": "committed",
+        "actual_elements": [
+          {
+            "document_session_id": "7e0f86a4-f174-412c-b34b-390306cec37f",
+            "id": 316251,
+            "unique_id": "5dfd0b93-0be2-413e-8a48-41f969832334-0004d35b",
+            "name": "Viewport 1",
+            "category": "Viewports",
+            "category_id": -2000510,
+            "type_id": 9835,
+            "pinned": false,
+            "group_id": -1,
+            "level_id": -1,
+            "location": null,
+            "bounds": null,
+            "host_id": null,
+            "family_name": null,
+            "placement_type": null,
+            "view_family": null,
+            "view_type": null,
+            "elevation": null
+          }
+        ],
+        "warnings": []
+      },
+      "error": null,
+      "cancel_requested": false,
+      "created_utc": "2026-10-14T05:09:31.3433511Z",
+      "finished_utc": "2026-10-14T05:09:31.3842024Z",
+      "elapsed_ms": 33.8745,
+      "transaction_status": "committed"
+    },
+    "plan-label": {
+      "schema_version": 1,
+      "operation_id": "42808b3c-b7a0-5bd9-80ed-14683fec4851",
+      "status": "completed",
+      "request": {
+        "arguments": {
+          "label_line_length": 0.5,
+          "label_offset": [
+            0,
+            0,
+            0
+          ],
+          "viewport": "5dfd0b93-0be2-413e-8a48-41f969832334-0004d35a"
+        },
+        "document": {
+          "session_id": "7e0f86a4-f174-412c-b34b-390306cec37f"
+        },
+        "operation": "viewport.settings",
+        "operation_id": "42808b3c-b7a0-5bd9-80ed-14683fec4851",
+        "preconditions": {},
+        "schema_version": 1
+      },
+      "result": {
+        "data": {
+          "element": {
+            "document_session_id": "7e0f86a4-f174-412c-b34b-390306cec37f",
+            "id": 316250,
+            "unique_id": "5dfd0b93-0be2-413e-8a48-41f969832334-0004d35a",
+            "name": "Viewport 1",
+            "category": "Viewports",
+            "category_id": -2000510,
+            "type_id": 9835,
+            "pinned": false,
+            "group_id": -1,
+            "level_id": -1,
+            "location": null,
+            "bounds": null,
+            "host_id": null,
+            "family_name": null,
+            "placement_type": null,
+            "view_family": null,
+            "view_type": null,
+            "elevation": null
+          },
+          "sheet_id": 316245,
+          "view_id": 316225,
+          "center": [
+            1,
+            1.5,
+            0.07291666666666666
+          ],
+          "box": {
+            "min": [
+              0.7816666666666667,
+              1.4066666666666665,
+              -0.01
+            ],
+            "max": [
+              1.2183333333333335,
+              1.5933333333333333,
+              0.15583333333333332
+            ]
+          },
+          "label_box": {
+            "min": [
+              0.7608333333333335,
+              1.389495641605824,
+              -0.07291666666666666
+            ],
+            "max": [
+              1.2816666666666667,
+              1.422560607311509,
+              -0.07291666666666666
+            ]
+          },
+          "label_offset": [
+            0,
+            0,
+            0
+          ],
+          "label_line_length": 0.5,
+          "rotation": "None"
+        },
+        "transaction_status": "committed",
+        "actual_elements": [
+          {
+            "document_session_id": "7e0f86a4-f174-412c-b34b-390306cec37f",
+            "id": 316250,
+            "unique_id": "5dfd0b93-0be2-413e-8a48-41f969832334-0004d35a",
+            "name": "Viewport 1",
+            "category": "Viewports",
+            "category_id": -2000510,
+            "type_id": 9835,
+            "pinned": false,
+            "group_id": -1,
+            "level_id": -1,
+            "location": null,
+            "bounds": null,
+            "host_id": null,
+            "family_name": null,
+            "placement_type": null,
+            "view_family": null,
+            "view_type": null,
+            "elevation": null
+          }
+        ],
+        "warnings": []
+      },
+      "error": null,
+      "cancel_requested": false,
+      "created_utc": "2026-10-14T05:09:31.7278133Z",
+      "finished_utc": "2026-10-14T05:09:31.7469316Z",
+      "elapsed_ms": 12.7943,
+      "transaction_status": "committed"
+    },
+    "elevation-label": {
+      "schema_version": 1,
+      "operation_id": "014bd284-20b8-5bc1-b9ed-3d7c138f0d97",
+      "status": "completed",
+      "request": {
+        "arguments": {
+          "label_line_length": 0.5,
+          "label_offset": [
+            0,
+            0,
+            0
+          ],
+          "viewport": "5dfd0b93-0be2-413e-8a48-41f969832334-0004d35b"
+        },
+        "document": {
+          "session_id": "7e0f86a4-f174-412c-b34b-390306cec37f"
+        },
+        "operation": "viewport.settings",
+        "operation_id": "014bd284-20b8-5bc1-b9ed-3d7c138f0d97",
+        "preconditions": {},
+        "schema_version": 1
+      },
+      "result": {
+        "data": {
+          "element": {
+            "document_session_id": "7e0f86a4-f174-412c-b34b-390306cec37f",
+            "id": 316251,
+            "unique_id": "5dfd0b93-0be2-413e-8a48-41f969832334-0004d35b",
+            "name": "Viewport 1",
+            "category": "Viewports",
+            "category_id": -2000510,
+            "type_id": 9835,
+            "pinned": false,
+            "group_id": -1,
+            "level_id": -1,
+            "location": null,
+            "bounds": null,
+            "host_id": null,
+            "family_name": null,
+            "placement_type": null,
+            "view_family": null,
+            "view_type": null,
+            "elevation": null
+          },
+          "sheet_id": 316245,
+          "view_id": 316237,
+          "center": [
+            2.8,
+            1.5,
+            -0.41666666666666663
+          ],
+          "box": {
+            "min": [
+              2.4455989583333335,
+              1.365,
+              -0.8433333333333333
+            ],
+            "max": [
+              3.1544010416666666,
+              1.635,
+              0.01
+            ]
+          },
+          "label_box": {
+            "min": [
+              2.424765625,
+              1.3478289749391574,
+              -0.41666666666666663
+            ],
+            "max": [
+              2.9455989583333335,
+              1.3808939406448424,
+              -0.41666666666666663
+            ]
+          },
+          "label_offset": [
+            0,
+            0,
+            0
+          ],
+          "label_line_length": 0.5,
+          "rotation": "None"
+        },
+        "transaction_status": "committed",
+        "actual_elements": [
+          {
+            "document_session_id": "7e0f86a4-f174-412c-b34b-390306cec37f",
+            "id": 316251,
+            "unique_id": "5dfd0b93-0be2-413e-8a48-41f969832334-0004d35b",
+            "name": "Viewport 1",
+            "category": "Viewports",
+            "category_id": -2000510,
+            "type_id": 9835,
+            "pinned": false,
+            "group_id": -1,
+            "level_id": -1,
+            "location": null,
+            "bounds": null,
+            "host_id": null,
+            "family_name": null,
+            "placement_type": null,
+            "view_family": null,
+            "view_type": null,
+            "elevation": null
+          }
+        ],
+        "warnings": []
+      },
+      "error": null,
+      "cancel_requested": false,
+      "created_utc": "2026-10-14T05:09:32.1914690Z",
+      "finished_utc": "2026-10-14T05:09:32.2189650Z",
+      "elapsed_ms": 20.8813,
+      "transaction_status": "committed"
+    },
+    "layout2-propose": {
+      "schema_version": 1,
+      "operation_id": "1c18a525-ed2a-5f41-8f9d-aba210534a45",
+      "status": "completed",
+      "request": {
+        "arguments": {
+          "content_region": [
+            0,
+            0,
+            4,
+            3
+          ],
+          "moves": [
+            {
+              "element": "5dfd0b93-0be2-413e-8a48-41f969832334-0004d35a",
+              "point": [
+                1,
+                1.5,
+                0
+              ]
+            },
+            {
+              "element": "5dfd0b93-0be2-413e-8a48-41f969832334-0004d35b",
+              "point": [
+                2.8,
+                1.5,
+                0
+              ]
+            }
+          ]
+        },
+        "document": {
+          "session_id": "7e0f86a4-f174-412c-b34b-390306cec37f"
+        },
+        "operation": "layout.propose",
+        "operation_id": "1c18a525-ed2a-5f41-8f9d-aba210534a45",
+        "preconditions": {},
+        "schema_version": 1
+      },
+      "result": {
+        "proposal": [
+          {
+            "element": {
+              "document_session_id": "7e0f86a4-f174-412c-b34b-390306cec37f",
+              "id": 316250,
+              "unique_id": "5dfd0b93-0be2-413e-8a48-41f969832334-0004d35a",
+              "name": "Viewport 1",
+              "category": "Viewports",
+              "category_id": -2000510,
+              "type_id": 9835,
+              "pinned": false,
+              "group_id": -1,
+              "level_id": -1,
+              "location": null,
+              "bounds": null,
+              "host_id": null,
+              "family_name": null,
+              "placement_type": null,
+              "view_family": null,
+              "view_type": null,
+              "elevation": null
+            },
+            "point": [
+              1,
+              1.5,
+              0
+            ],
+            "predicted_bounds": {
+              "min": [
+                0.7608333333333335,
+                1.389495641605824,
+                -0.07291666666666666
+              ],
+              "max": [
+                1.2816666666666667,
+                1.5933333333333333,
+                -0.07291666666666666
+              ]
+            }
+          },
+          {
+            "element": {
+              "document_session_id": "7e0f86a4-f174-412c-b34b-390306cec37f",
+              "id": 316251,
+              "unique_id": "5dfd0b93-0be2-413e-8a48-41f969832334-0004d35b",
+              "name": "Viewport 1",
+              "category": "Viewports",
+              "category_id": -2000510,
+              "type_id": 9835,
+              "pinned": false,
+              "group_id": -1,
+              "level_id": -1,
+              "location": null,
+              "bounds": null,
+              "host_id": null,
+              "family_name": null,
+              "placement_type": null,
+              "view_family": null,
+              "view_type": null,
+              "elevation": null
+            },
+            "point": [
+              2.8,
+              1.5,
+              0
+            ],
+            "predicted_bounds": {
+              "min": [
+                2.424765625,
+                1.3478289749391574,
+                0.41666666666666663
+              ],
+              "max": [
+                3.1544010416666666,
+                1.635,
+                0.41666666666666663
+              ]
+            }
+          }
+        ],
+        "issues": [],
+        "valid": true,
+        "units": "sheet feet",
+        "limitation": "Checks supplied moves and reserved rectangles. Include all existing sheet content in the proposal; text/detail annotations are not inferred."
+      },
+      "error": null,
+      "cancel_requested": false,
+      "created_utc": "2026-10-14T05:09:32.6832404Z",
+      "finished_utc": "2026-10-14T05:09:32.7094215Z",
+      "elapsed_ms": 18.0874,
+      "transaction_status": "not_started"
+    },
+    "layout2-apply": {
+      "schema_version": 1,
+      "operation_id": "04914e68-7f86-5494-8967-0a97fe1c40ee",
+      "status": "completed",
+      "request": {
+        "arguments": {
+          "content_region": [
+            0,
+            0,
+            4,
+            3
+          ],
+          "moves": [
+            {
+              "element": "5dfd0b93-0be2-413e-8a48-41f969832334-0004d35a",
+              "point": [
+                1,
+                1.5,
+                0
+              ]
+            },
+            {
+              "element": "5dfd0b93-0be2-413e-8a48-41f969832334-0004d35b",
+              "point": [
+                2.8,
+                1.5,
+                0
+              ]
+            }
+          ]
+        },
+        "document": {
+          "session_id": "7e0f86a4-f174-412c-b34b-390306cec37f"
+        },
+        "operation": "layout.apply",
+        "operation_id": "04914e68-7f86-5494-8967-0a97fe1c40ee",
+        "preconditions": {},
+        "schema_version": 1
+      },
+      "result": {
+        "data": {
+          "elements": [
+            {
+              "element": {
+                "document_session_id": "7e0f86a4-f174-412c-b34b-390306cec37f",
+                "id": 316250,
+                "unique_id": "5dfd0b93-0be2-413e-8a48-41f969832334-0004d35a",
+                "name": "Viewport 1",
+                "category": "Viewports",
+                "category_id": -2000510,
+                "type_id": 9835,
+                "pinned": false,
+                "group_id": -1,
+                "level_id": -1,
+                "location": null,
+                "bounds": null,
+                "host_id": null,
+                "family_name": null,
+                "placement_type": null,
+                "view_family": null,
+                "view_type": null,
+                "elevation": null
+              },
+              "sheet_id": 316245,
+              "view_id": 316225,
+              "center": [
+                1,
+                1.5,
+                0.07291666666666666
+              ],
+              "box": {
+                "min": [
+                  0.7816666666666667,
+                  1.4066666666666665,
+                  -0.01
+                ],
+                "max": [
+                  1.2183333333333335,
+                  1.5933333333333333,
+                  0.15583333333333332
+                ]
+              },
+              "label_box": {
+                "min": [
+                  0.7608333333333335,
+                  1.389495641605824,
+                  -0.14583333333333331
+                ],
+                "max": [
+                  1.2816666666666667,
+                  1.422560607311509,
+                  -0.14583333333333331
+                ]
+              },
+              "label_offset": [
+                0,
+                0,
+                0
+              ],
+              "label_line_length": 0.5,
+              "rotation": "None"
+            },
+            {
+              "element": {
+                "document_session_id": "7e0f86a4-f174-412c-b34b-390306cec37f",
+                "id": 316251,
+                "unique_id": "5dfd0b93-0be2-413e-8a48-41f969832334-0004d35b",
+                "name": "Viewport 1",
+                "category": "Viewports",
+                "category_id": -2000510,
+                "type_id": 9835,
+                "pinned": false,
+                "group_id": -1,
+                "level_id": -1,
+                "location": null,
+                "bounds": null,
+                "host_id": null,
+                "family_name": null,
+                "placement_type": null,
+                "view_family": null,
+                "view_type": null,
+                "elevation": null
+              },
+              "sheet_id": 316245,
+              "view_id": 316237,
+              "center": [
+                2.8,
+                1.5,
+                -0.41666666666666663
+              ],
+              "box": {
+                "min": [
+                  2.4455989583333335,
+                  1.365,
+                  -0.8433333333333333
+                ],
+                "max": [
+                  3.1544010416666666,
+                  1.635,
+                  0.01
+                ]
+              },
+              "label_box": {
+                "min": [
+                  2.424765625,
+                  1.3478289749391574,
+                  0
+                ],
+                "max": [
+                  2.9455989583333335,
+                  1.3808939406448424,
+                  0
+                ]
+              },
+              "label_offset": [
+                0,
+                0,
+                0
+              ],
+              "label_line_length": 0.5,
+              "rotation": "None"
+            }
+          ],
+          "verification": {
+            "proposal": [
+              {
+                "element": {
+                  "document_session_id": "7e0f86a4-f174-412c-b34b-390306cec37f",
+                  "id": 316250,
+                  "unique_id": "5dfd0b93-0be2-413e-8a48-41f969832334-0004d35a",
+                  "name": "Viewport 1",
+                  "category": "Viewports",
+                  "category_id": -2000510,
+                  "type_id": 9835,
+                  "pinned": false,
+                  "group_id": -1,
+                  "level_id": -1,
+                  "location": null,
+                  "bounds": null,
+                  "host_id": null,
+                  "family_name": null,
+                  "placement_type": null,
+                  "view_family": null,
+                  "view_type": null,
+                  "elevation": null
+                },
+                "point": [
+                  1,
+                  1.5,
+                  0
+                ],
+                "predicted_bounds": {
+                  "min": [
+                    0.7608333333333335,
+                    1.389495641605824,
+                    -0.07291666666666666
+                  ],
+                  "max": [
+                    1.2816666666666667,
+                    1.5933333333333333,
+                    -0.07291666666666666
+                  ]
+                }
+              },
+              {
+                "element": {
+                  "document_session_id": "7e0f86a4-f174-412c-b34b-390306cec37f",
+                  "id": 316251,
+                  "unique_id": "5dfd0b93-0be2-413e-8a48-41f969832334-0004d35b",
+                  "name": "Viewport 1",
+                  "category": "Viewports",
+                  "category_id": -2000510,
+                  "type_id": 9835,
+                  "pinned": false,
+                  "group_id": -1,
+                  "level_id": -1,
+                  "location": null,
+                  "bounds": null,
+                  "host_id": null,
+                  "family_name": null,
+                  "placement_type": null,
+                  "view_family": null,
+                  "view_type": null,
+                  "elevation": null
+                },
+                "point": [
+                  2.8,
+                  1.5,
+                  0
+                ],
+                "predicted_bounds": {
+                  "min": [
+                    2.424765625,
+                    1.3478289749391574,
+                    0.41666666666666663
+                  ],
+                  "max": [
+                    3.1544010416666666,
+                    1.635,
+                    0.41666666666666663
+                  ]
+                }
+              }
+            ],
+            "issues": [],
+            "valid": true,
+            "units": "sheet feet",
+            "limitation": "Checks supplied moves and reserved rectangles. Include all existing sheet content in the proposal; text/detail annotations are not inferred."
+          }
+        },
+        "transaction_status": "committed",
+        "actual_elements": [
+          {
+            "document_session_id": "7e0f86a4-f174-412c-b34b-390306cec37f",
+            "id": 316250,
+            "unique_id": "5dfd0b93-0be2-413e-8a48-41f969832334-0004d35a",
+            "name": "Viewport 1",
+            "category": "Viewports",
+            "category_id": -2000510,
+            "type_id": 9835,
+            "pinned": false,
+            "group_id": -1,
+            "level_id": -1,
+            "location": null,
+            "bounds": null,
+            "host_id": null,
+            "family_name": null,
+            "placement_type": null,
+            "view_family": null,
+            "view_type": null,
+            "elevation": null
+          },
+          {
+            "document_session_id": "7e0f86a4-f174-412c-b34b-390306cec37f",
+            "id": 316251,
+            "unique_id": "5dfd0b93-0be2-413e-8a48-41f969832334-0004d35b",
+            "name": "Viewport 1",
+            "category": "Viewports",
+            "category_id": -2000510,
+            "type_id": 9835,
+            "pinned": false,
+            "group_id": -1,
+            "level_id": -1,
+            "location": null,
+            "bounds": null,
+            "host_id": null,
+            "family_name": null,
+            "placement_type": null,
+            "view_family": null,
+            "view_type": null,
+            "elevation": null
+          }
+        ],
+        "warnings": []
+      },
+      "error": null,
+      "cancel_requested": false,
+      "created_utc": "2026-10-14T05:09:33.0232816Z",
+      "finished_utc": "2026-10-14T05:09:33.0802153Z",
+      "elapsed_ms": 50.817,
+      "transaction_status": "committed"
+    },
+    "capture-casework": {
+      "schema_version": 1,
+      "operation_id": "11b8e746-9ef9-5039-a58e-f7906a0984f1",
+      "status": "completed",
+      "request": {
+        "arguments": {
+          "path_prefix": "H:\\Games\\3D Modeling Workflows\\3D Model Workflow\\output\\codex-native-revit-20261013\\evidence\\compiled-sheets-01\\casework",
+          "pixels": 1600,
+          "view": "5dfd0b93-0be2-413e-8a48-41f969832334-0004d32a"
+        },
+        "document": {
+          "session_id": "7e0f86a4-f174-412c-b34b-390306cec37f"
+        },
+        "operation": "capture.export",
+        "operation_id": "11b8e746-9ef9-5039-a58e-f7906a0984f1",
+        "preconditions": {},
+        "schema_version": 1
+      },
+      "result": {
+        "files": [
+          "H:\\Games\\3D Modeling Workflows\\3D Model Workflow\\output\\codex-native-revit-20261013\\evidence\\compiled-sheets-01\\casework - 3D View - CODEX - NATIVE PARAMETRIC CASEWORK.png"
+        ],
+        "native_export": true
+      },
+      "error": null,
+      "cancel_requested": false,
+      "created_utc": "2026-10-14T05:09:33.5062180Z",
+      "finished_utc": "2026-10-14T05:09:33.7884664Z",
+      "elapsed_ms": 274.5262,
+      "transaction_status": "not_started"
+    },
+    "capture-TEST-ID1.0": {
+      "schema_version": 1,
+      "operation_id": "38db1865-640e-583b-9ca6-76be663c9fe3",
+      "status": "completed",
+      "request": {
+        "arguments": {
+          "path_prefix": "H:\\Games\\3D Modeling Workflows\\3D Model Workflow\\output\\codex-native-revit-20261013\\evidence\\compiled-sheets-01\\TEST-ID1.0",
+          "pixels": 1600,
+          "view": "5dfd0b93-0be2-413e-8a48-41f969832334-0004d333"
+        },
+        "document": {
+          "session_id": "7e0f86a4-f174-412c-b34b-390306cec37f"
+        },
+        "operation": "capture.export",
+        "operation_id": "38db1865-640e-583b-9ca6-76be663c9fe3",
+        "preconditions": {},
+        "schema_version": 1
+      },
+      "result": {
+        "files": [],
+        "native_export": true
+      },
+      "error": null,
+      "cancel_requested": false,
+      "created_utc": "2026-10-14T05:09:34.3988967Z",
+      "finished_utc": "2026-10-14T05:09:34.7030124Z",
+      "elapsed_ms": 297.4807,
+      "transaction_status": "not_started"
+    },
+    "capture-TEST-ID1.1": {
+      "schema_version": 1,
+      "operation_id": "c2f78f64-8e7d-5f98-9c41-165fd0f3d08c",
+      "status": "completed",
+      "request": {
+        "arguments": {
+          "path_prefix": "H:\\Games\\3D Modeling Workflows\\3D Model Workflow\\output\\codex-native-revit-20261013\\evidence\\compiled-sheets-01\\TEST-ID1.1",
+          "pixels": 1600,
+          "view": "5dfd0b93-0be2-413e-8a48-41f969832334-0004d355"
+        },
+        "document": {
+          "session_id": "7e0f86a4-f174-412c-b34b-390306cec37f"
+        },
+        "operation": "capture.export",
+        "operation_id": "c2f78f64-8e7d-5f98-9c41-165fd0f3d08c",
+        "preconditions": {},
+        "schema_version": 1
+      },
+      "result": {
+        "files": [],
+        "native_export": true
+      },
+      "error": null,
+      "cancel_requested": false,
+      "created_utc": "2026-10-14T05:09:35.2411884Z",
+      "finished_utc": "2026-10-14T05:09:35.3202929Z",
+      "elapsed_ms": 72.2537,
+      "transaction_status": "not_started"
+    },
+    "save-project": {
+      "schema_version": 1,
+      "operation_id": "d9f69e87-5a57-56de-8b4c-286c3230c9cb",
+      "status": "completed",
+      "request": {
+        "arguments": {
+          "path": "H:\\Games\\3D Modeling Workflows\\3D Model Workflow\\output\\codex-native-revit-20261013\\evidence\\compiled-sheets-01\\Codex_Three_Axis_Sheets_Test.rvt"
+        },
+        "document": {
+          "session_id": "7e0f86a4-f174-412c-b34b-390306cec37f"
+        },
+        "operation": "document.save_as",
+        "operation_id": "d9f69e87-5a57-56de-8b4c-286c3230c9cb",
+        "preconditions": {},
+        "schema_version": 1
+      },
+      "result": {
+        "document": {
+          "session_id": "7e0f86a4-f174-412c-b34b-390306cec37f",
+          "title": "Codex_Three_Axis_Sheets_Test",
+          "path": "H:\\Games\\3D Modeling Workflows\\3D Model Workflow\\output\\codex-native-revit-20261013\\evidence\\compiled-sheets-01\\Codex_Three_Axis_Sheets_Test.rvt",
+          "is_family": false,
+          "is_read_only": false,
+          "is_modified": false,
+          "is_workshared": false
+        },
+        "external_effect": "file written; not undoable by project transaction"
+      },
+      "error": null,
+      "cancel_requested": false,
+      "created_utc": "2026-10-14T05:09:35.6330856Z",
+      "finished_utc": "2026-10-14T05:09:36.4576501Z",
+      "elapsed_ms": 818.1746,
+      "transaction_status": "not_started"
+    }
+  },
+  "checks": {
+    "native-width": {
+      "actual": 2.5,
+      "expected": 2.5,
+      "pass": true
+    },
+    "native-depth": {
+      "actual": 1.75,
+      "expected": 1.75,
+      "pass": true
+    },
+    "native-height": {
+      "actual": 3.5,
+      "expected": 3.5,
+      "pass": true
+    },
+    "native-volume": {
+      "actual": 15.312499999999996,
+      "expected": 15.3125,
+      "pass": true
+    },
+    "unrelated-type-unchanged": {
+      "actual": 316180,
+      "expected": 316180,
+      "pass": true
+    },
+    "layout1-valid": {
+      "actual": true,
+      "expected": true,
+      "pass": true
+    },
+    "layout2-valid": {
+      "actual": true,
+      "expected": true,
+      "pass": true
+    }
+  },
+  "native": true,
+  "error": "",
+  "compiled_comments_readback": {
+    "probe": "one_instance_comment_update",
+    "document_session_id": "7e0f86a4-f174-412c-b34b-390306cec37f",
+    "element_id": 316195,
+    "element_unique_id": "5dfd0b93-0be2-413e-8a48-41f969832334-0004d323",
+    "built_in_parameter": "ALL_MODEL_INSTANCE_COMMENTS",
+    "parameter_id": -1010106,
+    "before": null,
+    "after": "Codex disposable compiled API test",
+    "declared_model_effect": "Only this instance's built-in Comments parameter is explicitly set."
+  },
+  "compiled_query": {
+    "probe": "read_only_native_api",
+    "document": {
+      "session_id": "7e0f86a4-f174-412c-b34b-390306cec37f",
+      "title": "Project4",
+      "path": "",
+      "is_family": false,
+      "is_read_only": false,
+      "is_modified": true,
+      "is_workshared": false
+    },
+    "element_count_including_types": 3800,
+    "api": {
+      "revit_version": "2025",
+      "build": "25.4.50.35",
+      "view_category_methods": [
+        "Boolean CanCategoryBeHidden(Autodesk.Revit.DB.ElementId)",
+        "Void SetCategoryHidden(Autodesk.Revit.DB.ElementId, Boolean)",
+        "Boolean GetCategoryHidden(Autodesk.Revit.DB.ElementId)"
+      ]
+    },
+    "units": {
+      "native_length_unit": "feet",
+      "native_angle_unit": "radians",
+      "display_length_unit": "autodesk.unit.unit:feetFractionalInches-1.0.0",
+      "display_angle_unit": "autodesk.unit.unit:degrees-1.0.1"
+    },
+    "view": {
+      "document_session_id": "7e0f86a4-f174-412c-b34b-390306cec37f",
+      "id": 316202,
+      "unique_id": "5dfd0b93-0be2-413e-8a48-41f969832334-0004d32a",
+      "name": "CODEX - NATIVE PARAMETRIC CASEWORK",
+      "view_type": "ThreeD",
+      "is_template": false,
+      "category": null
+    },
+    "declared_model_effect": "none"
+  },
+  "limitations": [
+    "Synthetic box category Casework, not manufacturer cabinets",
+    "Synthetic 4x3 sheet content regions, no production titleblock/print release",
+    "Visual/design acceptance requires user review",
+    "Compiled plugin directory enabled for this test process only"
+  ]
+}

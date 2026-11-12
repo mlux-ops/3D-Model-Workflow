@@ -1,0 +1,48 @@
+# Capability and evidence matrix
+
+Statuses describe this implementation, not the entire Revit API. `Native tested` requires a durable native receipt plus numerical checks. `Implemented / untested` means code compiles against installed Revit 2025 assemblies but no native acceptance evidence is asserted. Final release 3f41f299be45 passed the three-axis cabinet/two-sheet/compiled/stdio workflow and export-safety regression in isolated process 48092. Earlier native family/hosting tests and repaired mirror/annotation tests retain their exact build/process boundaries.
+
+| Requested capability | Native API | Implementation / evidence | Conditions and limitations |
+|---|---|---|---|
+| Loopback authentication, versioned schemas, persistent jobs | .NET + native event API | Implemented; controller protocol tested; initial native queue exercised | Token possession grants local tool access; current-user processes share trust |
+| Serialized native execution / ExternalEvent | Yes | Initial native jobs completed through queue | Revit modal state can keep jobs queued; no background Revit API calls |
+| Explicit targeting and stale IDs | Yes | Native stale-ID rejection tested; final numeric-reference guard compiled | Session IDs expire with process/document; path/title/kind guards supported; unknown guards rejected |
+| Transactions / rollback / undo entries | Yes | Native failed atomic batch restored all three coordinates; pinned rejection | One project transaction; family own transactions; file/reload external boundaries |
+| Cancellation / timeout / reconnect | Safe boundaries | Native timeout -> unknown -> completed, dropped HTTP response recovery and no replay tested; cancellation races recorded | All eight native query cancel trials completed before cancellation; queued cancellation and native process-restart recovery remain unproved |
+| Open documents / active view / selection | Yes | Document discovery native tested; context compiled | Background documents can have no active UI view |
+| Categories / families / types / instances / paging | Yes | Native element/type/level queries tested | Summaries return first; max 500/page; common native class/category filters |
+| Parameters / units / writable ownership | Yes | Native type parameter change and unrelated type preservation tested | Name ambiguity rejected; instance/type separated; arbitrary project parameter binding not implemented |
+| Levels / phases / worksets / design options | Yes | Basic identity/level/elevation and element metadata implemented | Full phase/workset option rule validation, checkout orchestration not implemented |
+| Hosts / relationships / dependencies | Yes | Native host ID and deletion-preview support implemented; tests partial | No universal relationship graph; reference reconstruction restricted by native geometry |
+| Locations / transforms / bounding geometry | Yes | Native numerical transforms and height readbacks tested | Geometry returns solid summaries and face references, not tessellation payloads |
+| Linked/shared coordinates | Yes | Implemented / untested | Linked source doc and transform; shared transform direction explicit; linked editing not claimed |
+| API lookup / runtime reflection | Yes | Native GenericForm lookup tested | Installed API types/members; not full official help text inside the server |
+| RFA load / type activation | Yes | Synthetic Casework save/reopen/load/activation native tested | Explicit reject / overwrite policy; no universal manufacturer family guarantees |
+| One-level unhosted family placement / batches | Yes | Native synthetic cabinet run tested | Actual location returned; rotation vertical axis; no invented dimensions |
+| Wall-hosted placement | Yes | Native synthetic wall-based placement and host readback tested | Host + level + family placement enum; template/category restrictions apply |
+| Face / work-plane placement | Yes | Native synthetic face-based placement and host readback tested | Valid stable face reference and in-plane reference direction required; abstract work-plane selection UI not automated |
+| Curve-based placement | Yes | Implemented / untested | CurveBased overload only; structural CurveDrivenStructural and adaptive families rejected |
+| Move / rotate / copy / change type | Yes | Native tested with actual coordinates / angle / copied identifiers | Pinned/grouped/other-user owned elements guarded |
+| Mirror / flip / location-curve edit | Yes | Native wall mirror and curve edit tested after collector repair; flips implemented / untested | Mirrored endpoints [0,0,0] to [-8,0,0]; native family restrictions; no hidden unpin/group edits |
+| Type duplication / writable parameters | Yes | Native instance geometry proved Width 2.5 / Depth 1.75 / Height 3.5 ft after duplicate type edits; unrelated type unchanged | Synthetic Casework geometry only; manufacturer parameter behavior must be tested separately |
+| Native walls / floors | Yes | Native creation completed in initial workflow | Straight wall / planar floor boundary; supported native parameter/curve changes; roofs/ceilings/MEP/structural creation not implemented |
+| Kitchen dimensions / hosts / clearance verification | Yes + detached checks | Partial synthetic test only | No manufacturer family, supplied clearance requirements or actual appliance set; design acceptance pending |
+| Family create / edit / open / save / close / reload | Yes | Create/open/save/close/load native tested; edit/reload compiled untested | New-path-only save; background close; editable conventional families; multi-document lifecycle not atomic |
+| Extrusions / true parametric association / flex | Yes | Native Width/Depth face-label constraints + Height association; two simultaneous three-axis flex cases, rollback, save and reopen tested | Independent verifier: 31 checks; synthetic box, no manufacturer fidelity claim |
+| Revolutions / sweeps / blends / voids | Yes | Basic native forms tested; revolution volume verified after explicit tolerance repair | Native curved-volume approximation documented; custom spline/vertex mapping unsupported; void creation is not proof of a cut |
+| Reference planes / dimensions / constraints | Yes | Native reference plane and labeled dimensions tested | Direct extrusion face constraints demonstrated; independent alignment operation and universal reconstruction unproved |
+| Parameters / formulas / materials / nested families | Yes | Native formula and form Material association/readback tested; nested family definition loaded | Material ForgeTypeId argument repair documented; appearance and nested-instance placement not tested |
+| Sheet/titleblock/view/viewport/schedule inspection | Yes | Native viewport/schedule bound and coordinate readbacks tested | Printable/content region supplied explicitly; titleblock-specific reserved regions not inferred |
+| Explicit viewport placement / movement / labels | Yes | Native positions and label-length adjustment tested | Rotation/type changes compiled untested; Revit viewport eligibility restrictions |
+| Real schedule placement / movement | Yes | Native ViewSchedule and ScheduleSheetInstance tested | Schedule graphic is native, not a drawn drafting table |
+| Layout proposal / collisions / reserved regions | Yes + detached rectangle math | Native invalid proposal rejected and corrected layout numerically valid | Include all content in moves/reserved rectangles; arbitrary annotations not auto-collided; automatic alignment/distribution tooling not yet provided |
+| Plan / drafting / 3D creation / duplicate / view settings | Yes | Native 3D/plan, active section box, visibility and camera tested; native elevation through shipped compiled extension | Camera/elevation are compiled extension operations; dedicated base section/elevation creation not yet implemented; drafting/annotations in separate acceptance report |
+| Dimensions / tags / text / detail lines / filled regions | Yes | Native text/detail lines/filled region/8-foot dimension and detailing duplication tested; tags untested | Exact native reference/type/view restrictions; annotation reconstruction not general |
+| Schedule fields / filters / sort / itemization | Yes | Native fields and grid/sheet column widths tested; filters/sort compiled untested | Column widths via shipped compiled extension; broader formatting not implemented |
+| ID1.0 / ID1.1 composition acceptance | Yes | Two synthetic test sheets with 3D/real schedule and plan/native elevation, both layout gates passed; unaltered captures inspected | Actual production titleblock/print regions, manufacturer content and visual/design approval pending |
+| Extensible C# execution | Yes | Native full-trust query, Comments change, camera, schedule widths and elevation tested | Plugin directory enabled only for test process; normal installed sessions default disabled; no secure in-process sandbox |
+| In-process Python / pyRevit agent runtime | Host dependent | Unsupported by installed pyRevit 6.4 runtime | Upstream experimental runtime not installed or upgraded; CPython execution not claimed |
+| Standalone GPT-6 Astra API app | Separate provider boundary | Conditional; not implemented | No API credential available; Codex Astra catalog is not API-project access proof |
+| Save / sync / publication | Yes, conditional | Explicit new-path SaveAs tested; synchronization/publication unsupported | Workshared SaveAs/sync/production overwrite are rejected; no implicit file or cloud effects |
+
+Every untested, conditional or unsupported row remains outstanding under the original comprehensive completion standard. A vertical slice and installation package do not complete those rows.

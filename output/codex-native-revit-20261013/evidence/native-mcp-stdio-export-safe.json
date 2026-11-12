@@ -1,0 +1,463 @@
+{
+  "native": true,
+  "transport": "MCP stdio -> authenticated loopback -> ExternalEvent",
+  "calls": [
+    {
+      "request": {
+        "jsonrpc": "2.0",
+        "id": 1,
+        "method": "initialize",
+        "params": {
+          "protocolVersion": "2025-06-18",
+          "capabilities": {},
+          "clientInfo": {
+            "name": "native-acceptance-probe",
+            "version": "1"
+          }
+        }
+      },
+      "response": {
+        "id": 1,
+        "jsonrpc": "2.0",
+        "result": {
+          "capabilities": {
+            "tools": {
+              "listChanged": false
+            }
+          },
+          "instructions": "Use explicit document session identities and preconditions. Keep operation IDs; unknown completion requires reconciliation. Native saves and synchronization are explicit operations.",
+          "protocolVersion": "2025-06-18",
+          "serverInfo": {
+            "name": "codex-native-revit",
+            "version": "1.0.0"
+          }
+        }
+      }
+    },
+    {
+      "request": {
+        "jsonrpc": "2.0",
+        "id": 2,
+        "method": "tools/list",
+        "params": {}
+      },
+      "response": {
+        "id": 2,
+        "jsonrpc": "2.0",
+        "result": {
+          "tools": [
+            {
+              "annotations": {
+                "destructiveHint": false,
+                "idempotentHint": true,
+                "openWorldHint": false,
+                "readOnlyHint": true
+              },
+              "description": "Discover detached bridge capabilities. Native document queries must be submitted as jobs.",
+              "inputSchema": {
+                "additionalProperties": false,
+                "properties": {},
+                "required": [],
+                "type": "object"
+              },
+              "name": "native_revit_capabilities"
+            },
+            {
+              "annotations": {
+                "destructiveHint": true,
+                "idempotentHint": false,
+                "openWorldHint": true,
+                "readOnlyHint": false
+              },
+              "description": "Submit one explicitly targeted Revit job. Retain operation_id; reconcile any unknown completion before considering a new mutation.",
+              "inputSchema": {
+                "additionalProperties": false,
+                "properties": {
+                  "arguments": {
+                    "type": "object"
+                  },
+                  "document": {
+                    "type": "object"
+                  },
+                  "operation": {
+                    "type": "string"
+                  },
+                  "operation_id": {
+                    "format": "uuid",
+                    "type": "string"
+                  },
+                  "preconditions": {
+                    "type": "object"
+                  }
+                },
+                "required": [
+                  "operation",
+                  "document"
+                ],
+                "type": "object"
+              },
+              "name": "native_revit_submit"
+            },
+            {
+              "annotations": {
+                "destructiveHint": false,
+                "idempotentHint": true,
+                "openWorldHint": false,
+                "readOnlyHint": true
+              },
+              "description": "Read a persistent operation receipt without resubmitting the operation.",
+              "inputSchema": {
+                "additionalProperties": false,
+                "properties": {
+                  "operation_id": {
+                    "format": "uuid",
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "operation_id"
+                ],
+                "type": "object"
+              },
+              "name": "native_revit_job"
+            },
+            {
+              "annotations": {
+                "destructiveHint": false,
+                "idempotentHint": true,
+                "openWorldHint": false,
+                "readOnlyHint": false
+              },
+              "description": "Request cancellation at a safe boundary. Read the eventual receipt to determine whether changes completed.",
+              "inputSchema": {
+                "additionalProperties": false,
+                "properties": {
+                  "operation_id": {
+                    "format": "uuid",
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "operation_id"
+                ],
+                "type": "object"
+              },
+              "name": "native_revit_cancel"
+            },
+            {
+              "annotations": {
+                "destructiveHint": false,
+                "idempotentHint": true,
+                "openWorldHint": false,
+                "readOnlyHint": true
+              },
+              "description": "Poll the original operation. A timeout returns unknown_completion and never implies rollback.",
+              "inputSchema": {
+                "additionalProperties": false,
+                "properties": {
+                  "operation_id": {
+                    "format": "uuid",
+                    "type": "string"
+                  },
+                  "poll_interval": {
+                    "maximum": 10,
+                    "minimum": 0.01,
+                    "type": "number"
+                  },
+                  "timeout_seconds": {
+                    "maximum": 120,
+                    "minimum": 0,
+                    "type": "number"
+                  }
+                },
+                "required": [
+                  "operation_id"
+                ],
+                "type": "object"
+              },
+              "name": "native_revit_wait"
+            },
+            {
+              "annotations": {
+                "destructiveHint": true,
+                "idempotentHint": false,
+                "openWorldHint": true,
+                "readOnlyHint": false
+              },
+              "description": "Execute a dependency graph with deterministic receipts; block failed dependents, report partial completion. Client batches are not atomic. A named native operation can implement its declared transaction boundary.",
+              "inputSchema": {
+                "additionalProperties": false,
+                "properties": {
+                  "batch_id": {
+                    "format": "uuid",
+                    "type": "string"
+                  },
+                  "document": {
+                    "type": "object"
+                  },
+                  "native_operation": {
+                    "type": "string"
+                  },
+                  "preconditions": {
+                    "type": "object"
+                  },
+                  "steps": {
+                    "items": {
+                      "type": "object"
+                    },
+                    "maxItems": 1000,
+                    "minItems": 1,
+                    "type": "array"
+                  },
+                  "timeout_seconds": {
+                    "maximum": 120,
+                    "minimum": 0,
+                    "type": "number"
+                  }
+                },
+                "required": [
+                  "steps"
+                ],
+                "type": "object"
+              },
+              "name": "native_revit_batch"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "request": {
+        "jsonrpc": "2.0",
+        "id": 3,
+        "method": "tools/call",
+        "params": {
+          "name": "native_revit_capabilities",
+          "arguments": {}
+        }
+      },
+      "response": {
+        "id": 3,
+        "jsonrpc": "2.0",
+        "result": {
+          "content": [
+            {
+              "text": "{\"family_operations\":[\"family.create\",\"family.open\",\"family.edit\",\"family.inspect\",\"family.save\",\"family.close\",\"family.load\",\"family.reload\",\"family.geometry.inspect\",\"family.extrusion.create\",\"family.extrusion.modify\",\"family.revolution.create\",\"family.blend.create\",\"family.sweep.create\",\"family.reference_plane.create\",\"family.dimension.create\",\"family.alignment.create\",\"family.parameter.add\",\"family.parameter.set\",\"family.parameter.formula\",\"family.parameter.associate\",\"family.type.create\",\"family.type.set\",\"family.type.flex\"],\"flexible_execution\":\"trusted compiled plugins; disabled by default\",\"identity\":\"codex-native-revit-2025\",\"max_body_bytes\":2000000,\"operations\":[\"documents.list\",\"context.query\",\"elements.query\",\"elements.inspect\",\"parameters.query\",\"categories.query\",\"warnings.query\",\"links.query\",\"coordinates.convert\",\"api.lookup\",\"document.create\",\"document.save_as\",\"document.close\",\"family.place\",\"element.move\",\"element.rotate\",\"element.copy\",\"element.mirror\",\"element.type\",\"element.flip\",\"element.pin\",\"element.curve\",\"element.delete_preview\",\"element.delete\",\"parameter.set\",\"type.duplicate\",\"wall.create\",\"floor.create\",\"view.create\",\"view.inspect\",\"view.duplicate\",\"view.settings\",\"sheet.create\",\"sheet.inspect\",\"viewport.place\",\"viewport.move\",\"viewport.settings\",\"schedule.create\",\"schedule.place\",\"schedule.move\",\"schedule.settings\",\"annotation.text\",\"annotation.lines\",\"annotation.dimension\",\"annotation.tag\",\"annotation.filled_region\",\"layout.propose\",\"layout.apply\",\"capture.export\",\"compiled.query\",\"compiled.modify\",\"batch.atomic\"],\"process_id\":48092,\"schema_version\":1,\"units\":\"Internal feet; angle radians; sheet coordinates feet\"}",
+              "type": "text"
+            }
+          ],
+          "isError": false,
+          "structuredContent": {
+            "family_operations": [
+              "family.create",
+              "family.open",
+              "family.edit",
+              "family.inspect",
+              "family.save",
+              "family.close",
+              "family.load",
+              "family.reload",
+              "family.geometry.inspect",
+              "family.extrusion.create",
+              "family.extrusion.modify",
+              "family.revolution.create",
+              "family.blend.create",
+              "family.sweep.create",
+              "family.reference_plane.create",
+              "family.dimension.create",
+              "family.alignment.create",
+              "family.parameter.add",
+              "family.parameter.set",
+              "family.parameter.formula",
+              "family.parameter.associate",
+              "family.type.create",
+              "family.type.set",
+              "family.type.flex"
+            ],
+            "flexible_execution": "trusted compiled plugins; disabled by default",
+            "identity": "codex-native-revit-2025",
+            "max_body_bytes": 2000000,
+            "operations": [
+              "documents.list",
+              "context.query",
+              "elements.query",
+              "elements.inspect",
+              "parameters.query",
+              "categories.query",
+              "warnings.query",
+              "links.query",
+              "coordinates.convert",
+              "api.lookup",
+              "document.create",
+              "document.save_as",
+              "document.close",
+              "family.place",
+              "element.move",
+              "element.rotate",
+              "element.copy",
+              "element.mirror",
+              "element.type",
+              "element.flip",
+              "element.pin",
+              "element.curve",
+              "element.delete_preview",
+              "element.delete",
+              "parameter.set",
+              "type.duplicate",
+              "wall.create",
+              "floor.create",
+              "view.create",
+              "view.inspect",
+              "view.duplicate",
+              "view.settings",
+              "sheet.create",
+              "sheet.inspect",
+              "viewport.place",
+              "viewport.move",
+              "viewport.settings",
+              "schedule.create",
+              "schedule.place",
+              "schedule.move",
+              "schedule.settings",
+              "annotation.text",
+              "annotation.lines",
+              "annotation.dimension",
+              "annotation.tag",
+              "annotation.filled_region",
+              "layout.propose",
+              "layout.apply",
+              "capture.export",
+              "compiled.query",
+              "compiled.modify",
+              "batch.atomic"
+            ],
+            "process_id": 48092,
+            "schema_version": 1,
+            "units": "Internal feet; angle radians; sheet coordinates feet"
+          }
+        }
+      }
+    },
+    {
+      "request": {
+        "jsonrpc": "2.0",
+        "id": 4,
+        "method": "tools/call",
+        "params": {
+          "name": "native_revit_submit",
+          "arguments": {
+            "operation": "documents.list",
+            "document": {}
+          }
+        }
+      },
+      "response": {
+        "id": 4,
+        "jsonrpc": "2.0",
+        "result": {
+          "content": [
+            {
+              "text": "{\"cancel_requested\":false,\"created_utc\":\"2026-10-14T05:30:59.2676771Z\",\"elapsed_ms\":0,\"error\":null,\"finished_utc\":null,\"operation_id\":\"fc76c18a-bc39-40b8-a4d1-0bb0a34f5cfa\",\"request\":{\"arguments\":{},\"document\":{},\"operation\":\"documents.list\",\"operation_id\":\"fc76c18a-bc39-40b8-a4d1-0bb0a34f5cfa\",\"preconditions\":{},\"schema_version\":1},\"result\":null,\"schema_version\":1,\"status\":\"queued\",\"transaction_status\":\"not_started\"}",
+              "type": "text"
+            }
+          ],
+          "isError": false,
+          "structuredContent": {
+            "cancel_requested": false,
+            "created_utc": "2026-10-14T05:30:59.2676771Z",
+            "elapsed_ms": 0,
+            "error": null,
+            "finished_utc": null,
+            "operation_id": "fc76c18a-bc39-40b8-a4d1-0bb0a34f5cfa",
+            "request": {
+              "arguments": {},
+              "document": {},
+              "operation": "documents.list",
+              "operation_id": "fc76c18a-bc39-40b8-a4d1-0bb0a34f5cfa",
+              "preconditions": {},
+              "schema_version": 1
+            },
+            "result": null,
+            "schema_version": 1,
+            "status": "queued",
+            "transaction_status": "not_started"
+          }
+        }
+      }
+    },
+    {
+      "request": {
+        "jsonrpc": "2.0",
+        "id": 5,
+        "method": "tools/call",
+        "params": {
+          "name": "native_revit_wait",
+          "arguments": {
+            "operation_id": "fc76c18a-bc39-40b8-a4d1-0bb0a34f5cfa",
+            "timeout_seconds": 30
+          }
+        }
+      },
+      "response": {
+        "id": 5,
+        "jsonrpc": "2.0",
+        "result": {
+          "content": [
+            {
+              "text": "{\"cancel_requested\":false,\"created_utc\":\"2026-10-14T05:30:59.2676771Z\",\"elapsed_ms\":0.4963,\"error\":null,\"finished_utc\":\"2026-10-14T05:30:59.5824340Z\",\"operation_id\":\"fc76c18a-bc39-40b8-a4d1-0bb0a34f5cfa\",\"request\":{\"arguments\":{},\"document\":{},\"operation\":\"documents.list\",\"operation_id\":\"fc76c18a-bc39-40b8-a4d1-0bb0a34f5cfa\",\"preconditions\":{},\"schema_version\":1},\"result\":[{\"is_family\":false,\"is_modified\":false,\"is_read_only\":false,\"is_workshared\":false,\"path\":\"H:\\\\Games\\\\3D Modeling Workflows\\\\3D Model Workflow\\\\output\\\\codex-native-revit-20261013\\\\evidence\\\\compiled-sheets-final\\\\Codex_Three_Axis_Sheets_Coverage_Checked.rvt\",\"session_id\":\"96550c45-039f-46ec-9778-09e6a8b54373\",\"title\":\"Codex_Three_Axis_Sheets_Coverage_Checked\"},{\"is_family\":false,\"is_modified\":true,\"is_read_only\":false,\"is_workshared\":false,\"path\":\"\",\"session_id\":\"41b48df9-b654-4f88-ae20-1c36f36e713b\",\"title\":\"Project1\"}],\"schema_version\":1,\"status\":\"completed\",\"transaction_status\":\"not_started\"}",
+              "type": "text"
+            }
+          ],
+          "isError": false,
+          "structuredContent": {
+            "cancel_requested": false,
+            "created_utc": "2026-10-14T05:30:59.2676771Z",
+            "elapsed_ms": 0.4963,
+            "error": null,
+            "finished_utc": "2026-10-14T05:30:59.5824340Z",
+            "operation_id": "fc76c18a-bc39-40b8-a4d1-0bb0a34f5cfa",
+            "request": {
+              "arguments": {},
+              "document": {},
+              "operation": "documents.list",
+              "operation_id": "fc76c18a-bc39-40b8-a4d1-0bb0a34f5cfa",
+              "preconditions": {},
+              "schema_version": 1
+            },
+            "result": [
+              {
+                "is_family": false,
+                "is_modified": false,
+                "is_read_only": false,
+                "is_workshared": false,
+                "path": "H:\\Games\\3D Modeling Workflows\\3D Model Workflow\\output\\codex-native-revit-20261013\\evidence\\compiled-sheets-final\\Codex_Three_Axis_Sheets_Coverage_Checked.rvt",
+                "session_id": "96550c45-039f-46ec-9778-09e6a8b54373",
+                "title": "Codex_Three_Axis_Sheets_Coverage_Checked"
+              },
+              {
+                "is_family": false,
+                "is_modified": true,
+                "is_read_only": false,
+                "is_workshared": false,
+                "path": "",
+                "session_id": "41b48df9-b654-4f88-ae20-1c36f36e713b",
+                "title": "Project1"
+              }
+            ],
+            "schema_version": 1,
+            "status": "completed",
+            "transaction_status": "not_started"
+          }
+        }
+      }
+    }
+  ],
+  "status": "passed",
+  "server_identity": {
+    "name": "codex-native-revit",
+    "version": "1.0.0"
+  },
+  "tool_count": 6,
+  "native_process_id": 48092,
+  "native_operation_id": "fc76c18a-bc39-40b8-a4d1-0bb0a34f5cfa"
+}

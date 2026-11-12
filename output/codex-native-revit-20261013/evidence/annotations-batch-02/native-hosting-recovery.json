@@ -1,0 +1,4110 @@
+{
+  "run_id": "ed195430-2d6e-4556-a7dd-42d0293ef219",
+  "status": "passed",
+  "steps": {
+    "project": {
+      "schema_version": 1,
+      "operation_id": "f6a48f31-5cf5-533a-839e-3a86e0defdc0",
+      "status": "completed",
+      "request": {
+        "arguments": {
+          "template": "C:\\ProgramData\\Autodesk\\RVT 2025\\Templates\\Default_I_ENU.rte"
+        },
+        "document": {},
+        "operation": "document.create",
+        "operation_id": "f6a48f31-5cf5-533a-839e-3a86e0defdc0",
+        "preconditions": {},
+        "schema_version": 1
+      },
+      "result": {
+        "session_id": "673df6e1-fad5-4284-a996-76ca0ec9b729",
+        "title": "Project1",
+        "path": "",
+        "is_family": false,
+        "is_read_only": false,
+        "is_modified": false,
+        "is_workshared": false
+      },
+      "error": null,
+      "cancel_requested": false,
+      "created_utc": "2026-10-14T05:20:41.8728632Z",
+      "finished_utc": "2026-10-14T05:21:06.6134674Z",
+      "elapsed_ms": 908.7501,
+      "transaction_status": "not_started"
+    },
+    "view-types": {
+      "schema_version": 1,
+      "operation_id": "4cb6b76f-5a9c-59e4-b918-a0e1579d1e29",
+      "status": "completed",
+      "request": {
+        "arguments": {
+          "class": "ViewFamilyType",
+          "types": true
+        },
+        "document": {
+          "session_id": "673df6e1-fad5-4284-a996-76ca0ec9b729"
+        },
+        "operation": "elements.query",
+        "operation_id": "4cb6b76f-5a9c-59e4-b918-a0e1579d1e29",
+        "preconditions": {},
+        "schema_version": 1
+      },
+      "result": {
+        "items": [
+          {
+            "document_session_id": "673df6e1-fad5-4284-a996-76ca0ec9b729",
+            "id": 75905,
+            "unique_id": "42eb2886-bbe4-469f-897b-4b39594f7390-00012881",
+            "name": "Floor Plan",
+            "category": null,
+            "category_id": null,
+            "type_id": -1,
+            "pinned": false,
+            "group_id": -1,
+            "level_id": -1,
+            "location": null,
+            "bounds": null,
+            "host_id": null,
+            "family_name": null,
+            "placement_type": null,
+            "view_family": "FloorPlan",
+            "view_type": null,
+            "elevation": null
+          },
+          {
+            "document_session_id": "673df6e1-fad5-4284-a996-76ca0ec9b729",
+            "id": 75906,
+            "unique_id": "42eb2886-bbe4-469f-897b-4b39594f7390-00012882",
+            "name": "Ceiling Plan",
+            "category": null,
+            "category_id": null,
+            "type_id": -1,
+            "pinned": false,
+            "group_id": -1,
+            "level_id": -1,
+            "location": null,
+            "bounds": null,
+            "host_id": null,
+            "family_name": null,
+            "placement_type": null,
+            "view_family": "CeilingPlan",
+            "view_type": null,
+            "elevation": null
+          },
+          {
+            "document_session_id": "673df6e1-fad5-4284-a996-76ca0ec9b729",
+            "id": 75907,
+            "unique_id": "42eb2886-bbe4-469f-897b-4b39594f7390-00012883",
+            "name": "Building Section",
+            "category": null,
+            "category_id": null,
+            "type_id": -1,
+            "pinned": false,
+            "group_id": -1,
+            "level_id": -1,
+            "location": null,
+            "bounds": null,
+            "host_id": null,
+            "family_name": null,
+            "placement_type": null,
+            "view_family": "Section",
+            "view_type": null,
+            "elevation": null
+          },
+          {
+            "document_session_id": "673df6e1-fad5-4284-a996-76ca0ec9b729",
+            "id": 75908,
+            "unique_id": "42eb2886-bbe4-469f-897b-4b39594f7390-00012884",
+            "name": "Detail",
+            "category": null,
+            "category_id": null,
+            "type_id": -1,
+            "pinned": false,
+            "group_id": -1,
+            "level_id": -1,
+            "location": null,
+            "bounds": null,
+            "host_id": null,
+            "family_name": null,
+            "placement_type": null,
+            "view_family": "Detail",
+            "view_type": null,
+            "elevation": null
+          },
+          {
+            "document_session_id": "673df6e1-fad5-4284-a996-76ca0ec9b729",
+            "id": 75909,
+            "unique_id": "42eb2886-bbe4-469f-897b-4b39594f7390-00012885",
+            "name": "Detail",
+            "category": null,
+            "category_id": null,
+            "type_id": -1,
+            "pinned": false,
+            "group_id": -1,
+            "level_id": -1,
+            "location": null,
+            "bounds": null,
+            "host_id": null,
+            "family_name": null,
+            "placement_type": null,
+            "view_family": "Drafting",
+            "view_type": null,
+            "elevation": null
+          },
+          {
+            "document_session_id": "673df6e1-fad5-4284-a996-76ca0ec9b729",
+            "id": 75910,
+            "unique_id": "42eb2886-bbe4-469f-897b-4b39594f7390-00012886",
+            "name": "Building Elevation",
+            "category": null,
+            "category_id": null,
+            "type_id": -1,
+            "pinned": false,
+            "group_id": -1,
+            "level_id": -1,
+            "location": null,
+            "bounds": null,
+            "host_id": null,
+            "family_name": null,
+            "placement_type": null,
+            "view_family": "Elevation",
+            "view_type": null,
+            "elevation": null
+          },
+          {
+            "document_session_id": "673df6e1-fad5-4284-a996-76ca0ec9b729",
+            "id": 75911,
+            "unique_id": "42eb2886-bbe4-469f-897b-4b39594f7390-00012887",
+            "name": "Interior Elevation",
+            "category": null,
+            "category_id": null,
+            "type_id": -1,
+            "pinned": false,
+            "group_id": -1,
+            "level_id": -1,
+            "location": null,
+            "bounds": null,
+            "host_id": null,
+            "family_name": null,
+            "placement_type": null,
+            "view_family": "Elevation",
+            "view_type": null,
+            "elevation": null
+          },
+          {
+            "document_session_id": "673df6e1-fad5-4284-a996-76ca0ec9b729",
+            "id": 75912,
+            "unique_id": "42eb2886-bbe4-469f-897b-4b39594f7390-00012888",
+            "name": "3D View",
+            "category": null,
+            "category_id": null,
+            "type_id": -1,
+            "pinned": false,
+            "group_id": -1,
+            "level_id": -1,
+            "location": null,
+            "bounds": null,
+            "host_id": null,
+            "family_name": null,
+            "placement_type": null,
+            "view_family": "ThreeDimensional",
+            "view_type": null,
+            "elevation": null
+          },
+          {
+            "document_session_id": "673df6e1-fad5-4284-a996-76ca0ec9b729",
+            "id": 75913,
+            "unique_id": "42eb2886-bbe4-469f-897b-4b39594f7390-00012889",
+            "name": "Schedule",
+            "category": null,
+            "category_id": null,
+            "type_id": -1,
+            "pinned": false,
+            "group_id": -1,
+            "level_id": -1,
+            "location": null,
+            "bounds": null,
+            "host_id": null,
+            "family_name": null,
+            "placement_type": null,
+            "view_family": "Schedule",
+            "view_type": null,
+            "elevation": null
+          },
+          {
+            "document_session_id": "673df6e1-fad5-4284-a996-76ca0ec9b729",
+            "id": 75914,
+            "unique_id": "42eb2886-bbe4-469f-897b-4b39594f7390-0001288a",
+            "name": "Sheet",
+            "category": null,
+            "category_id": null,
+            "type_id": -1,
+            "pinned": false,
+            "group_id": -1,
+            "level_id": -1,
+            "location": null,
+            "bounds": null,
+            "host_id": null,
+            "family_name": null,
+            "placement_type": null,
+            "view_family": "Sheet",
+            "view_type": null,
+            "elevation": null
+          },
+          {
+            "document_session_id": "673df6e1-fad5-4284-a996-76ca0ec9b729",
+            "id": 75915,
+            "unique_id": "42eb2886-bbe4-469f-897b-4b39594f7390-0001288b",
+            "name": "Walkthrough",
+            "category": null,
+            "category_id": null,
+            "type_id": -1,
+            "pinned": false,
+            "group_id": -1,
+            "level_id": -1,
+            "location": null,
+            "bounds": null,
+            "host_id": null,
+            "family_name": null,
+            "placement_type": null,
+            "view_family": "Walkthrough",
+            "view_type": null,
+            "elevation": null
+          },
+          {
+            "document_session_id": "673df6e1-fad5-4284-a996-76ca0ec9b729",
+            "id": 75916,
+            "unique_id": "42eb2886-bbe4-469f-897b-4b39594f7390-0001288c",
+            "name": "Rendering",
+            "category": null,
+            "category_id": null,
+            "type_id": -1,
+            "pinned": false,
+            "group_id": -1,
+            "level_id": -1,
+            "location": null,
+            "bounds": null,
+            "host_id": null,
+            "family_name": null,
+            "placement_type": null,
+            "view_family": "ImageView",
+            "view_type": null,
+            "elevation": null
+          },
+          {
+            "document_session_id": "673df6e1-fad5-4284-a996-76ca0ec9b729",
+            "id": 75917,
+            "unique_id": "42eb2886-bbe4-469f-897b-4b39594f7390-0001288d",
+            "name": "Cost Report",
+            "category": null,
+            "category_id": null,
+            "type_id": -1,
+            "pinned": false,
+            "group_id": -1,
+            "level_id": -1,
+            "location": null,
+            "bounds": null,
+            "host_id": null,
+            "family_name": null,
+            "placement_type": null,
+            "view_family": "CostReport",
+            "view_type": null,
+            "elevation": null
+          },
+          {
+            "document_session_id": "673df6e1-fad5-4284-a996-76ca0ec9b729",
+            "id": 80663,
+            "unique_id": "7c26900c-8ab1-4a92-8dae-6dbd60fbad2f-00013b17",
+            "name": "Wall Section",
+            "category": null,
+            "category_id": null,
+            "type_id": -1,
+            "pinned": false,
+            "group_id": -1,
+            "level_id": -1,
+            "location": null,
+            "bounds": null,
+            "host_id": null,
+            "family_name": null,
+            "placement_type": null,
+            "view_family": "Section",
+            "view_type": null,
+            "elevation": null
+          },
+          {
+            "document_session_id": "673df6e1-fad5-4284-a996-76ca0ec9b729",
+            "id": 83169,
+            "unique_id": "b20812af-a644-42eb-b55b-45cf0863f9e3-000144e1",
+            "name": "Legend",
+            "category": null,
+            "category_id": null,
+            "type_id": -1,
+            "pinned": false,
+            "group_id": -1,
+            "level_id": -1,
+            "location": null,
+            "bounds": null,
+            "host_id": null,
+            "family_name": null,
+            "placement_type": null,
+            "view_family": "Legend",
+            "view_type": null,
+            "elevation": null
+          },
+          {
+            "document_session_id": "673df6e1-fad5-4284-a996-76ca0ec9b729",
+            "id": 85158,
+            "unique_id": "cacd2bf5-1bc3-4cfb-8692-99756445c888-00014ca6",
+            "name": "Loads Report",
+            "category": null,
+            "category_id": null,
+            "type_id": -1,
+            "pinned": false,
+            "group_id": -1,
+            "level_id": -1,
+            "location": null,
+            "bounds": null,
+            "host_id": null,
+            "family_name": null,
+            "placement_type": null,
+            "view_family": "LoadsReport",
+            "view_type": null,
+            "elevation": null
+          },
+          {
+            "document_session_id": "673df6e1-fad5-4284-a996-76ca0ec9b729",
+            "id": 85159,
+            "unique_id": "cacd2bf5-1bc3-4cfb-8692-99756445c888-00014ca7",
+            "name": "Pressure Loss Report",
+            "category": null,
+            "category_id": null,
+            "type_id": -1,
+            "pinned": false,
+            "group_id": -1,
+            "level_id": -1,
+            "location": null,
+            "bounds": null,
+            "host_id": null,
+            "family_name": null,
+            "placement_type": null,
+            "view_family": "PressureLossReport",
+            "view_type": null,
+            "elevation": null
+          },
+          {
+            "document_session_id": "673df6e1-fad5-4284-a996-76ca0ec9b729",
+            "id": 85160,
+            "unique_id": "cacd2bf5-1bc3-4cfb-8692-99756445c888-00014ca8",
+            "name": "Panel Schedule Report",
+            "category": null,
+            "category_id": null,
+            "type_id": -1,
+            "pinned": false,
+            "group_id": -1,
+            "level_id": -1,
+            "location": null,
+            "bounds": null,
+            "host_id": null,
+            "family_name": null,
+            "placement_type": null,
+            "view_family": "PanelSchedule",
+            "view_type": null,
+            "elevation": null
+          },
+          {
+            "document_session_id": "673df6e1-fad5-4284-a996-76ca0ec9b729",
+            "id": 100930,
+            "unique_id": "2219634f-479c-4f76-8306-45772e7e609d-00018a42",
+            "name": "Graphical Column Schedule",
+            "category": null,
+            "category_id": null,
+            "type_id": -1,
+            "pinned": false,
+            "group_id": -1,
+            "level_id": -1,
+            "location": null,
+            "bounds": null,
+            "host_id": null,
+            "family_name": null,
+            "placement_type": null,
+            "view_family": "GraphicalColumnSchedule",
+            "view_type": null,
+            "elevation": null
+          },
+          {
+            "document_session_id": "673df6e1-fad5-4284-a996-76ca0ec9b729",
+            "id": 101010,
+            "unique_id": "a3a48391-65cd-47ba-9a92-a2abbb36cfac-00018a92",
+            "name": "Structural Plan",
+            "category": null,
+            "category_id": null,
+            "type_id": -1,
+            "pinned": false,
+            "group_id": -1,
+            "level_id": -1,
+            "location": null,
+            "bounds": null,
+            "host_id": null,
+            "family_name": null,
+            "placement_type": null,
+            "view_family": "StructuralPlan",
+            "view_type": null,
+            "elevation": null
+          },
+          {
+            "document_session_id": "673df6e1-fad5-4284-a996-76ca0ec9b729",
+            "id": 307362,
+            "unique_id": "d5621198-2b08-49b4-8d35-601f5b7586ff-0004b0a2",
+            "name": "Analysis Report",
+            "category": null,
+            "category_id": null,
+            "type_id": -1,
+            "pinned": false,
+            "group_id": -1,
+            "level_id": -1,
+            "location": null,
+            "bounds": null,
+            "host_id": null,
+            "family_name": null,
+            "placement_type": null,
+            "view_family": "SystemsAnalysisReport",
+            "view_type": null,
+            "elevation": null
+          }
+        ],
+        "offset": 0,
+        "next_offset": null,
+        "units": "internal feet"
+      },
+      "error": null,
+      "cancel_requested": false,
+      "created_utc": "2026-10-14T05:21:06.9676484Z",
+      "finished_utc": "2026-10-14T05:21:07.0030602Z",
+      "elapsed_ms": 24.7629,
+      "transaction_status": "not_started"
+    },
+    "drafting": {
+      "schema_version": 1,
+      "operation_id": "8ccf843c-630e-5b45-a933-f09fd3be7bfe",
+      "status": "completed",
+      "request": {
+        "arguments": {
+          "kind": "drafting",
+          "name": "CODEX DISPOSABLE DRAFTING",
+          "scale": 24,
+          "type": "42eb2886-bbe4-469f-897b-4b39594f7390-00012885"
+        },
+        "document": {
+          "session_id": "673df6e1-fad5-4284-a996-76ca0ec9b729"
+        },
+        "operation": "view.create",
+        "operation_id": "8ccf843c-630e-5b45-a933-f09fd3be7bfe",
+        "preconditions": {},
+        "schema_version": 1
+      },
+      "result": {
+        "data": {
+          "document_session_id": "673df6e1-fad5-4284-a996-76ca0ec9b729",
+          "id": 315389,
+          "unique_id": "6c15d509-137d-43fb-8628-d610f36eef36-0004cffd",
+          "name": "CODEX DISPOSABLE DRAFTING",
+          "category": "Views",
+          "category_id": -2000279,
+          "type_id": 75909,
+          "pinned": false,
+          "group_id": -1,
+          "level_id": -1,
+          "location": null,
+          "bounds": {
+            "min": [
+              -100,
+              -100,
+              -1000
+            ],
+            "max": [
+              100,
+              100,
+              -0.1
+            ]
+          },
+          "host_id": null,
+          "family_name": null,
+          "placement_type": null,
+          "view_family": null,
+          "view_type": "DraftingView",
+          "elevation": null
+        },
+        "transaction_status": "committed",
+        "actual_elements": [
+          {
+            "document_session_id": "673df6e1-fad5-4284-a996-76ca0ec9b729",
+            "id": 315389,
+            "unique_id": "6c15d509-137d-43fb-8628-d610f36eef36-0004cffd",
+            "name": "CODEX DISPOSABLE DRAFTING",
+            "category": "Views",
+            "category_id": -2000279,
+            "type_id": 75909,
+            "pinned": false,
+            "group_id": -1,
+            "level_id": -1,
+            "location": null,
+            "bounds": {
+              "min": [
+                -100,
+                -100,
+                -1000
+              ],
+              "max": [
+                100,
+                100,
+                -0.1
+              ]
+            },
+            "host_id": null,
+            "family_name": null,
+            "placement_type": null,
+            "view_family": null,
+            "view_type": "DraftingView",
+            "elevation": null
+          }
+        ],
+        "warnings": []
+      },
+      "error": null,
+      "cancel_requested": false,
+      "created_utc": "2026-10-14T05:21:07.1253705Z",
+      "finished_utc": "2026-10-14T05:21:07.2166386Z",
+      "elapsed_ms": 78.0878,
+      "transaction_status": "committed"
+    },
+    "text-types": {
+      "schema_version": 1,
+      "operation_id": "5b8d389c-d54d-59b7-8a26-3dcd583e8af7",
+      "status": "completed",
+      "request": {
+        "arguments": {
+          "class": "TextNoteType",
+          "types": true
+        },
+        "document": {
+          "session_id": "673df6e1-fad5-4284-a996-76ca0ec9b729"
+        },
+        "operation": "elements.query",
+        "operation_id": "5b8d389c-d54d-59b7-8a26-3dcd583e8af7",
+        "preconditions": {},
+        "schema_version": 1
+      },
+      "result": {
+        "items": [
+          {
+            "document_session_id": "673df6e1-fad5-4284-a996-76ca0ec9b729",
+            "id": 234,
+            "unique_id": "933c4a06-93b8-11d3-80f8-00c04f8efc32-000000ea",
+            "name": "1/4\" Arial",
+            "category": null,
+            "category_id": null,
+            "type_id": -1,
+            "pinned": false,
+            "group_id": -1,
+            "level_id": -1,
+            "location": null,
+            "bounds": null,
+            "host_id": null,
+            "family_name": null,
+            "placement_type": null,
+            "view_family": null,
+            "view_type": null,
+            "elevation": null
+          },
+          {
+            "document_session_id": "673df6e1-fad5-4284-a996-76ca0ec9b729",
+            "id": 10352,
+            "unique_id": "7169facf-e488-11d3-9188-0000863f27ad-00002870",
+            "name": "3/32\" Arial",
+            "category": null,
+            "category_id": null,
+            "type_id": -1,
+            "pinned": false,
+            "group_id": -1,
+            "level_id": -1,
+            "location": null,
+            "bounds": null,
+            "host_id": null,
+            "family_name": null,
+            "placement_type": null,
+            "view_family": null,
+            "view_type": null,
+            "elevation": null
+          },
+          {
+            "document_session_id": "673df6e1-fad5-4284-a996-76ca0ec9b729",
+            "id": 179068,
+            "unique_id": "33dbb7c2-aae5-4edf-8d61-b103b9be2fde-0002bb7c",
+            "name": "Schedule Default",
+            "category": null,
+            "category_id": null,
+            "type_id": -1,
+            "pinned": false,
+            "group_id": -1,
+            "level_id": -1,
+            "location": null,
+            "bounds": null,
+            "host_id": null,
+            "family_name": null,
+            "placement_type": null,
+            "view_family": null,
+            "view_type": null,
+            "elevation": null
+          }
+        ],
+        "offset": 0,
+        "next_offset": null,
+        "units": "internal feet"
+      },
+      "error": null,
+      "cancel_requested": false,
+      "created_utc": "2026-10-14T05:21:07.6699045Z",
+      "finished_utc": "2026-10-14T05:21:07.6833949Z",
+      "elapsed_ms": 1.4716,
+      "transaction_status": "not_started"
+    },
+    "text": {
+      "schema_version": 1,
+      "operation_id": "35bba35b-6f59-54f8-a7f9-478de561f64e",
+      "status": "completed",
+      "request": {
+        "arguments": {
+          "point": [
+            0,
+            0,
+            0
+          ],
+          "text": "CODEX NATIVE TEST ONLY",
+          "type": "933c4a06-93b8-11d3-80f8-00c04f8efc32-000000ea",
+          "view": "6c15d509-137d-43fb-8628-d610f36eef36-0004cffd"
+        },
+        "document": {
+          "session_id": "673df6e1-fad5-4284-a996-76ca0ec9b729"
+        },
+        "operation": "annotation.text",
+        "operation_id": "35bba35b-6f59-54f8-a7f9-478de561f64e",
+        "preconditions": {},
+        "schema_version": 1
+      },
+      "result": {
+        "data": {
+          "document_session_id": "673df6e1-fad5-4284-a996-76ca0ec9b729",
+          "id": 315396,
+          "unique_id": "6c15d509-137d-43fb-8628-d610f36eef36-0004d004",
+          "name": "1/4\" Arial",
+          "category": "Text Notes",
+          "category_id": -2000300,
+          "type_id": 234,
+          "pinned": false,
+          "group_id": -1,
+          "level_id": -1,
+          "location": null,
+          "bounds": null,
+          "host_id": null,
+          "family_name": null,
+          "placement_type": null,
+          "view_family": null,
+          "view_type": null,
+          "elevation": null
+        },
+        "transaction_status": "committed",
+        "actual_elements": [
+          {
+            "document_session_id": "673df6e1-fad5-4284-a996-76ca0ec9b729",
+            "id": 315396,
+            "unique_id": "6c15d509-137d-43fb-8628-d610f36eef36-0004d004",
+            "name": "1/4\" Arial",
+            "category": "Text Notes",
+            "category_id": -2000300,
+            "type_id": 234,
+            "pinned": false,
+            "group_id": -1,
+            "level_id": -1,
+            "location": null,
+            "bounds": null,
+            "host_id": null,
+            "family_name": null,
+            "placement_type": null,
+            "view_family": null,
+            "view_type": null,
+            "elevation": null
+          }
+        ],
+        "warnings": []
+      },
+      "error": null,
+      "cancel_requested": false,
+      "created_utc": "2026-10-14T05:21:07.8251724Z",
+      "finished_utc": "2026-10-14T05:21:07.8646823Z",
+      "elapsed_ms": 25.1092,
+      "transaction_status": "committed"
+    },
+    "lines": {
+      "schema_version": 1,
+      "operation_id": "65330702-d989-54fc-8244-0e7d7b662626",
+      "status": "completed",
+      "request": {
+        "arguments": {
+          "segments": [
+            {
+              "end": [
+                3,
+                -1,
+                0
+              ],
+              "start": [
+                0,
+                -1,
+                0
+              ]
+            },
+            {
+              "end": [
+                3,
+                -2,
+                0
+              ],
+              "start": [
+                3,
+                -1,
+                0
+              ]
+            }
+          ],
+          "view": "6c15d509-137d-43fb-8628-d610f36eef36-0004cffd"
+        },
+        "document": {
+          "session_id": "673df6e1-fad5-4284-a996-76ca0ec9b729"
+        },
+        "operation": "annotation.lines",
+        "operation_id": "65330702-d989-54fc-8244-0e7d7b662626",
+        "preconditions": {},
+        "schema_version": 1
+      },
+      "result": {
+        "data": [
+          {
+            "document_session_id": "673df6e1-fad5-4284-a996-76ca0ec9b729",
+            "id": 315397,
+            "unique_id": "6c15d509-137d-43fb-8628-d610f36eef36-0004d005",
+            "name": "Detail Lines",
+            "category": "Lines",
+            "category_id": -2000051,
+            "type_id": -1,
+            "pinned": false,
+            "group_id": -1,
+            "level_id": -1,
+            "location": {
+              "start": [
+                0,
+                -1,
+                0
+              ],
+              "end": [
+                3,
+                -1,
+                0
+              ]
+            },
+            "bounds": {
+              "min": [
+                0,
+                -1,
+                0
+              ],
+              "max": [
+                3,
+                -1,
+                0
+              ]
+            },
+            "host_id": null,
+            "family_name": null,
+            "placement_type": null,
+            "view_family": null,
+            "view_type": null,
+            "elevation": null
+          },
+          {
+            "document_session_id": "673df6e1-fad5-4284-a996-76ca0ec9b729",
+            "id": 315398,
+            "unique_id": "6c15d509-137d-43fb-8628-d610f36eef36-0004d006",
+            "name": "Detail Lines",
+            "category": "Lines",
+            "category_id": -2000051,
+            "type_id": -1,
+            "pinned": false,
+            "group_id": -1,
+            "level_id": -1,
+            "location": {
+              "start": [
+                3,
+                -1,
+                0
+              ],
+              "end": [
+                3,
+                -2,
+                0
+              ]
+            },
+            "bounds": {
+              "min": [
+                3,
+                -2,
+                0
+              ],
+              "max": [
+                3,
+                -1,
+                0
+              ]
+            },
+            "host_id": null,
+            "family_name": null,
+            "placement_type": null,
+            "view_family": null,
+            "view_type": null,
+            "elevation": null
+          }
+        ],
+        "transaction_status": "committed",
+        "actual_elements": [
+          {
+            "document_session_id": "673df6e1-fad5-4284-a996-76ca0ec9b729",
+            "id": 315397,
+            "unique_id": "6c15d509-137d-43fb-8628-d610f36eef36-0004d005",
+            "name": "Detail Lines",
+            "category": "Lines",
+            "category_id": -2000051,
+            "type_id": -1,
+            "pinned": false,
+            "group_id": -1,
+            "level_id": -1,
+            "location": {
+              "start": [
+                0,
+                -1,
+                0
+              ],
+              "end": [
+                3,
+                -1,
+                0
+              ]
+            },
+            "bounds": {
+              "min": [
+                0,
+                -1,
+                0
+              ],
+              "max": [
+                3,
+                -1,
+                0
+              ]
+            },
+            "host_id": null,
+            "family_name": null,
+            "placement_type": null,
+            "view_family": null,
+            "view_type": null,
+            "elevation": null
+          },
+          {
+            "document_session_id": "673df6e1-fad5-4284-a996-76ca0ec9b729",
+            "id": 315398,
+            "unique_id": "6c15d509-137d-43fb-8628-d610f36eef36-0004d006",
+            "name": "Detail Lines",
+            "category": "Lines",
+            "category_id": -2000051,
+            "type_id": -1,
+            "pinned": false,
+            "group_id": -1,
+            "level_id": -1,
+            "location": {
+              "start": [
+                3,
+                -1,
+                0
+              ],
+              "end": [
+                3,
+                -2,
+                0
+              ]
+            },
+            "bounds": {
+              "min": [
+                3,
+                -2,
+                0
+              ],
+              "max": [
+                3,
+                -1,
+                0
+              ]
+            },
+            "host_id": null,
+            "family_name": null,
+            "placement_type": null,
+            "view_family": null,
+            "view_type": null,
+            "elevation": null
+          }
+        ],
+        "warnings": []
+      },
+      "error": null,
+      "cancel_requested": false,
+      "created_utc": "2026-10-14T05:21:08.0011633Z",
+      "finished_utc": "2026-10-14T05:21:08.0323148Z",
+      "elapsed_ms": 18.142,
+      "transaction_status": "committed"
+    },
+    "region-types": {
+      "schema_version": 1,
+      "operation_id": "417fe5af-89a6-5d22-9d99-e3b32f8d920a",
+      "status": "completed",
+      "request": {
+        "arguments": {
+          "class": "FilledRegionType",
+          "types": true
+        },
+        "document": {
+          "session_id": "673df6e1-fad5-4284-a996-76ca0ec9b729"
+        },
+        "operation": "elements.query",
+        "operation_id": "417fe5af-89a6-5d22-9d99-e3b32f8d920a",
+        "preconditions": {},
+        "schema_version": 1
+      },
+      "result": {
+        "items": [
+          {
+            "document_session_id": "673df6e1-fad5-4284-a996-76ca0ec9b729",
+            "id": 22053,
+            "unique_id": "b0b76196-1902-482f-b464-0488e33408cc-00005625",
+            "name": "Diagonal Crosshatch",
+            "category": "Detail Items",
+            "category_id": -2002000,
+            "type_id": -1,
+            "pinned": false,
+            "group_id": -1,
+            "level_id": -1,
+            "location": null,
+            "bounds": null,
+            "host_id": null,
+            "family_name": null,
+            "placement_type": null,
+            "view_family": null,
+            "view_type": null,
+            "elevation": null
+          },
+          {
+            "document_session_id": "673df6e1-fad5-4284-a996-76ca0ec9b729",
+            "id": 23048,
+            "unique_id": "6fbd4f55-dda0-11d4-92d2-0000863f27ad-00005a08",
+            "name": "Diagonal Up",
+            "category": "Detail Items",
+            "category_id": -2002000,
+            "type_id": -1,
+            "pinned": false,
+            "group_id": -1,
+            "level_id": -1,
+            "location": null,
+            "bounds": null,
+            "host_id": null,
+            "family_name": null,
+            "placement_type": null,
+            "view_family": null,
+            "view_type": null,
+            "elevation": null
+          },
+          {
+            "document_session_id": "673df6e1-fad5-4284-a996-76ca0ec9b729",
+            "id": 23052,
+            "unique_id": "6fbd4f55-dda0-11d4-92d2-0000863f27ad-00005a0c",
+            "name": "Diagonal Down",
+            "category": "Detail Items",
+            "category_id": -2002000,
+            "type_id": -1,
+            "pinned": false,
+            "group_id": -1,
+            "level_id": -1,
+            "location": null,
+            "bounds": null,
+            "host_id": null,
+            "family_name": null,
+            "placement_type": null,
+            "view_family": null,
+            "view_type": null,
+            "elevation": null
+          },
+          {
+            "document_session_id": "673df6e1-fad5-4284-a996-76ca0ec9b729",
+            "id": 23056,
+            "unique_id": "6fbd4f55-dda0-11d4-92d2-0000863f27ad-00005a10",
+            "name": "Horizontal Lines",
+            "category": "Detail Items",
+            "category_id": -2002000,
+            "type_id": -1,
+            "pinned": false,
+            "group_id": -1,
+            "level_id": -1,
+            "location": null,
+            "bounds": null,
+            "host_id": null,
+            "family_name": null,
+            "placement_type": null,
+            "view_family": null,
+            "view_type": null,
+            "elevation": null
+          },
+          {
+            "document_session_id": "673df6e1-fad5-4284-a996-76ca0ec9b729",
+            "id": 23060,
+            "unique_id": "6fbd4f55-dda0-11d4-92d2-0000863f27ad-00005a14",
+            "name": "Vertical Lines",
+            "category": "Detail Items",
+            "category_id": -2002000,
+            "type_id": -1,
+            "pinned": false,
+            "group_id": -1,
+            "level_id": -1,
+            "location": null,
+            "bounds": null,
+            "host_id": null,
+            "family_name": null,
+            "placement_type": null,
+            "view_family": null,
+            "view_type": null,
+            "elevation": null
+          },
+          {
+            "document_session_id": "673df6e1-fad5-4284-a996-76ca0ec9b729",
+            "id": 23064,
+            "unique_id": "6fbd4f55-dda0-11d4-92d2-0000863f27ad-00005a18",
+            "name": "Solid Black",
+            "category": "Detail Items",
+            "category_id": -2002000,
+            "type_id": -1,
+            "pinned": false,
+            "group_id": -1,
+            "level_id": -1,
+            "location": null,
+            "bounds": null,
+            "host_id": null,
+            "family_name": null,
+            "placement_type": null,
+            "view_family": null,
+            "view_type": null,
+            "elevation": null
+          },
+          {
+            "document_session_id": "673df6e1-fad5-4284-a996-76ca0ec9b729",
+            "id": 23068,
+            "unique_id": "6fbd4f55-dda0-11d4-92d2-0000863f27ad-00005a1c",
+            "name": "Wood 1",
+            "category": "Detail Items",
+            "category_id": -2002000,
+            "type_id": -1,
+            "pinned": false,
+            "group_id": -1,
+            "level_id": -1,
+            "location": null,
+            "bounds": null,
+            "host_id": null,
+            "family_name": null,
+            "placement_type": null,
+            "view_family": null,
+            "view_type": null,
+            "elevation": null
+          },
+          {
+            "document_session_id": "673df6e1-fad5-4284-a996-76ca0ec9b729",
+            "id": 23072,
+            "unique_id": "6fbd4f55-dda0-11d4-92d2-0000863f27ad-00005a20",
+            "name": "Ortho Crosshatch",
+            "category": "Detail Items",
+            "category_id": -2002000,
+            "type_id": -1,
+            "pinned": false,
+            "group_id": -1,
+            "level_id": -1,
+            "location": null,
+            "bounds": null,
+            "host_id": null,
+            "family_name": null,
+            "placement_type": null,
+            "view_family": null,
+            "view_type": null,
+            "elevation": null
+          },
+          {
+            "document_session_id": "673df6e1-fad5-4284-a996-76ca0ec9b729",
+            "id": 75720,
+            "unique_id": "4351fd15-8040-4382-8f6c-456bb2656a9a-000127c8",
+            "name": "Diagonal Crosshatch - Transparent",
+            "category": "Detail Items",
+            "category_id": -2002000,
+            "type_id": -1,
+            "pinned": false,
+            "group_id": -1,
+            "level_id": -1,
+            "location": null,
+            "bounds": null,
+            "host_id": null,
+            "family_name": null,
+            "placement_type": null,
+            "view_family": null,
+            "view_type": null,
+            "elevation": null
+          },
+          {
+            "document_session_id": "673df6e1-fad5-4284-a996-76ca0ec9b729",
+            "id": 75724,
+            "unique_id": "4351fd15-8040-4382-8f6c-456bb2656a9a-000127cc",
+            "name": "Diagonal Down - Transparent",
+            "category": "Detail Items",
+            "category_id": -2002000,
+            "type_id": -1,
+            "pinned": false,
+            "group_id": -1,
+            "level_id": -1,
+            "location": null,
+            "bounds": null,
+            "host_id": null,
+            "family_name": null,
+            "placement_type": null,
+            "view_family": null,
+            "view_type": null,
+            "elevation": null
+          },
+          {
+            "document_session_id": "673df6e1-fad5-4284-a996-76ca0ec9b729",
+            "id": 131760,
+            "unique_id": "11e6c5eb-eebd-4cba-ae44-6a059b7a69c8-000202b0",
+            "name": "Wood 2",
+            "category": "Detail Items",
+            "category_id": -2002000,
+            "type_id": -1,
+            "pinned": false,
+            "group_id": -1,
+            "level_id": -1,
+            "location": null,
+            "bounds": null,
+            "host_id": null,
+            "family_name": null,
+            "placement_type": null,
+            "view_family": null,
+            "view_type": null,
+            "elevation": null
+          }
+        ],
+        "offset": 0,
+        "next_offset": null,
+        "units": "internal feet"
+      },
+      "error": null,
+      "cancel_requested": false,
+      "created_utc": "2026-10-14T05:21:08.1711354Z",
+      "finished_utc": "2026-10-14T05:21:08.1854246Z",
+      "elapsed_ms": 1.4173,
+      "transaction_status": "not_started"
+    },
+    "filled-region": {
+      "schema_version": 1,
+      "operation_id": "979f3cea-93a5-5adf-99d6-d05f860ff3a1",
+      "status": "completed",
+      "request": {
+        "arguments": {
+          "profile": [
+            [
+              0,
+              -3,
+              0
+            ],
+            [
+              2,
+              -3,
+              0
+            ],
+            [
+              2,
+              -4,
+              0
+            ],
+            [
+              0,
+              -4,
+              0
+            ]
+          ],
+          "type": "b0b76196-1902-482f-b464-0488e33408cc-00005625",
+          "view": "6c15d509-137d-43fb-8628-d610f36eef36-0004cffd"
+        },
+        "document": {
+          "session_id": "673df6e1-fad5-4284-a996-76ca0ec9b729"
+        },
+        "operation": "annotation.filled_region",
+        "operation_id": "979f3cea-93a5-5adf-99d6-d05f860ff3a1",
+        "preconditions": {},
+        "schema_version": 1
+      },
+      "result": {
+        "data": {
+          "document_session_id": "673df6e1-fad5-4284-a996-76ca0ec9b729",
+          "id": 315401,
+          "unique_id": "6c15d509-137d-43fb-8628-d610f36eef36-0004d009",
+          "name": "Detail Filled Region",
+          "category": "Detail Items",
+          "category_id": -2002000,
+          "type_id": 22053,
+          "pinned": false,
+          "group_id": -1,
+          "level_id": -1,
+          "location": null,
+          "bounds": null,
+          "host_id": null,
+          "family_name": null,
+          "placement_type": null,
+          "view_family": null,
+          "view_type": null,
+          "elevation": null
+        },
+        "transaction_status": "committed",
+        "actual_elements": [
+          {
+            "document_session_id": "673df6e1-fad5-4284-a996-76ca0ec9b729",
+            "id": 315401,
+            "unique_id": "6c15d509-137d-43fb-8628-d610f36eef36-0004d009",
+            "name": "Detail Filled Region",
+            "category": "Detail Items",
+            "category_id": -2002000,
+            "type_id": 22053,
+            "pinned": false,
+            "group_id": -1,
+            "level_id": -1,
+            "location": null,
+            "bounds": {
+              "min": [
+                0,
+                -4,
+                0
+              ],
+              "max": [
+                2,
+                -3,
+                0
+              ]
+            },
+            "host_id": null,
+            "family_name": null,
+            "placement_type": null,
+            "view_family": null,
+            "view_type": null,
+            "elevation": null
+          }
+        ],
+        "warnings": []
+      },
+      "error": null,
+      "cancel_requested": false,
+      "created_utc": "2026-10-14T05:21:08.3925520Z",
+      "finished_utc": "2026-10-14T05:21:08.4220190Z",
+      "elapsed_ms": 18.2571,
+      "transaction_status": "committed"
+    },
+    "drafting-duplicate": {
+      "schema_version": 1,
+      "operation_id": "9ba5db95-9cb4-570a-93e0-708dab20f6f6",
+      "status": "completed",
+      "request": {
+        "arguments": {
+          "name": "CODEX DUPLICATE WITH DETAILS",
+          "option": "WithDetailing",
+          "view": "6c15d509-137d-43fb-8628-d610f36eef36-0004cffd"
+        },
+        "document": {
+          "session_id": "673df6e1-fad5-4284-a996-76ca0ec9b729"
+        },
+        "operation": "view.duplicate",
+        "operation_id": "9ba5db95-9cb4-570a-93e0-708dab20f6f6",
+        "preconditions": {},
+        "schema_version": 1
+      },
+      "result": {
+        "data": {
+          "document_session_id": "673df6e1-fad5-4284-a996-76ca0ec9b729",
+          "id": 315408,
+          "unique_id": "6c15d509-137d-43fb-8628-d610f36eef36-0004d010",
+          "name": "CODEX DUPLICATE WITH DETAILS",
+          "category": "Views",
+          "category_id": -2000279,
+          "type_id": 75909,
+          "pinned": false,
+          "group_id": -1,
+          "level_id": -1,
+          "location": null,
+          "bounds": {
+            "min": [
+              -100,
+              -100,
+              -1000
+            ],
+            "max": [
+              100,
+              100,
+              -0.1
+            ]
+          },
+          "host_id": null,
+          "family_name": null,
+          "placement_type": null,
+          "view_family": null,
+          "view_type": "DraftingView",
+          "elevation": null
+        },
+        "transaction_status": "committed",
+        "actual_elements": [
+          {
+            "document_session_id": "673df6e1-fad5-4284-a996-76ca0ec9b729",
+            "id": 315408,
+            "unique_id": "6c15d509-137d-43fb-8628-d610f36eef36-0004d010",
+            "name": "CODEX DUPLICATE WITH DETAILS",
+            "category": "Views",
+            "category_id": -2000279,
+            "type_id": 75909,
+            "pinned": false,
+            "group_id": -1,
+            "level_id": -1,
+            "location": null,
+            "bounds": {
+              "min": [
+                -100,
+                -100,
+                -1000
+              ],
+              "max": [
+                100,
+                100,
+                -0.1
+              ]
+            },
+            "host_id": null,
+            "family_name": null,
+            "placement_type": null,
+            "view_family": null,
+            "view_type": "DraftingView",
+            "elevation": null
+          }
+        ],
+        "warnings": []
+      },
+      "error": null,
+      "cancel_requested": false,
+      "created_utc": "2026-10-14T05:21:08.5731652Z",
+      "finished_utc": "2026-10-14T05:21:08.7235137Z",
+      "elapsed_ms": 137.4007,
+      "transaction_status": "committed"
+    },
+    "text-before-failure": {
+      "schema_version": 1,
+      "operation_id": "4ebf7845-f6bb-52eb-9ce8-16a3d8840dd0",
+      "status": "completed",
+      "request": {
+        "arguments": {
+          "class": "TextNote",
+          "limit": 500
+        },
+        "document": {
+          "session_id": "673df6e1-fad5-4284-a996-76ca0ec9b729"
+        },
+        "operation": "elements.query",
+        "operation_id": "4ebf7845-f6bb-52eb-9ce8-16a3d8840dd0",
+        "preconditions": {},
+        "schema_version": 1
+      },
+      "result": {
+        "items": [
+          {
+            "document_session_id": "673df6e1-fad5-4284-a996-76ca0ec9b729",
+            "id": 315396,
+            "unique_id": "6c15d509-137d-43fb-8628-d610f36eef36-0004d004",
+            "name": "1/4\" Arial",
+            "category": "Text Notes",
+            "category_id": -2000300,
+            "type_id": 234,
+            "pinned": false,
+            "group_id": -1,
+            "level_id": -1,
+            "location": null,
+            "bounds": null,
+            "host_id": null,
+            "family_name": null,
+            "placement_type": null,
+            "view_family": null,
+            "view_type": null,
+            "elevation": null
+          },
+          {
+            "document_session_id": "673df6e1-fad5-4284-a996-76ca0ec9b729",
+            "id": 315415,
+            "unique_id": "6c15d509-137d-43fb-8628-d610f36eef36-0004d017",
+            "name": "1/4\" Arial",
+            "category": "Text Notes",
+            "category_id": -2000300,
+            "type_id": 234,
+            "pinned": false,
+            "group_id": -1,
+            "level_id": -1,
+            "location": null,
+            "bounds": null,
+            "host_id": null,
+            "family_name": null,
+            "placement_type": null,
+            "view_family": null,
+            "view_type": null,
+            "elevation": null
+          }
+        ],
+        "offset": 0,
+        "next_offset": null,
+        "units": "internal feet"
+      },
+      "error": null,
+      "cancel_requested": false,
+      "created_utc": "2026-10-14T05:21:09.0847210Z",
+      "finished_utc": "2026-10-14T05:21:09.1036104Z",
+      "elapsed_ms": 1.7743,
+      "transaction_status": "not_started"
+    },
+    "text-after-failure": {
+      "schema_version": 1,
+      "operation_id": "8cac2d92-8848-5ae1-8506-8c043e55225f",
+      "status": "completed",
+      "request": {
+        "arguments": {
+          "class": "TextNote",
+          "limit": 500
+        },
+        "document": {
+          "session_id": "673df6e1-fad5-4284-a996-76ca0ec9b729"
+        },
+        "operation": "elements.query",
+        "operation_id": "8cac2d92-8848-5ae1-8506-8c043e55225f",
+        "preconditions": {},
+        "schema_version": 1
+      },
+      "result": {
+        "items": [
+          {
+            "document_session_id": "673df6e1-fad5-4284-a996-76ca0ec9b729",
+            "id": 315396,
+            "unique_id": "6c15d509-137d-43fb-8628-d610f36eef36-0004d004",
+            "name": "1/4\" Arial",
+            "category": "Text Notes",
+            "category_id": -2000300,
+            "type_id": 234,
+            "pinned": false,
+            "group_id": -1,
+            "level_id": -1,
+            "location": null,
+            "bounds": null,
+            "host_id": null,
+            "family_name": null,
+            "placement_type": null,
+            "view_family": null,
+            "view_type": null,
+            "elevation": null
+          },
+          {
+            "document_session_id": "673df6e1-fad5-4284-a996-76ca0ec9b729",
+            "id": 315415,
+            "unique_id": "6c15d509-137d-43fb-8628-d610f36eef36-0004d017",
+            "name": "1/4\" Arial",
+            "category": "Text Notes",
+            "category_id": -2000300,
+            "type_id": 234,
+            "pinned": false,
+            "group_id": -1,
+            "level_id": -1,
+            "location": null,
+            "bounds": null,
+            "host_id": null,
+            "family_name": null,
+            "placement_type": null,
+            "view_family": null,
+            "view_type": null,
+            "elevation": null
+          }
+        ],
+        "offset": 0,
+        "next_offset": null,
+        "units": "internal feet"
+      },
+      "error": null,
+      "cancel_requested": false,
+      "created_utc": "2026-10-14T05:21:09.7764616Z",
+      "finished_utc": "2026-10-14T05:21:09.7887834Z",
+      "elapsed_ms": 1.0358,
+      "transaction_status": "not_started"
+    },
+    "levels": {
+      "schema_version": 1,
+      "operation_id": "d793921f-2da9-52d1-a5a7-ec5ff76a384c",
+      "status": "completed",
+      "request": {
+        "arguments": {
+          "class": "Level"
+        },
+        "document": {
+          "session_id": "673df6e1-fad5-4284-a996-76ca0ec9b729"
+        },
+        "operation": "elements.query",
+        "operation_id": "d793921f-2da9-52d1-a5a7-ec5ff76a384c",
+        "preconditions": {},
+        "schema_version": 1
+      },
+      "result": {
+        "items": [
+          {
+            "document_session_id": "673df6e1-fad5-4284-a996-76ca0ec9b729",
+            "id": 30,
+            "unique_id": "933c4a06-93b8-11d3-80f8-00c04f8efc32-0000001e",
+            "name": "Level 1",
+            "category": "Levels",
+            "category_id": -2000240,
+            "type_id": 27,
+            "pinned": false,
+            "group_id": -1,
+            "level_id": -1,
+            "location": null,
+            "bounds": null,
+            "host_id": null,
+            "family_name": null,
+            "placement_type": null,
+            "view_family": null,
+            "view_type": null,
+            "elevation": 0
+          },
+          {
+            "document_session_id": "673df6e1-fad5-4284-a996-76ca0ec9b729",
+            "id": 9946,
+            "unique_id": "6341822b-d4f3-11d3-a039-0000863f1523-000026da",
+            "name": "Level 2",
+            "category": "Levels",
+            "category_id": -2000240,
+            "type_id": 27,
+            "pinned": false,
+            "group_id": -1,
+            "level_id": -1,
+            "location": null,
+            "bounds": null,
+            "host_id": null,
+            "family_name": null,
+            "placement_type": null,
+            "view_family": null,
+            "view_type": null,
+            "elevation": 9.999999999998435
+          }
+        ],
+        "offset": 0,
+        "next_offset": null,
+        "units": "internal feet"
+      },
+      "error": null,
+      "cancel_requested": false,
+      "created_utc": "2026-10-14T05:21:10.0278397Z",
+      "finished_utc": "2026-10-14T05:21:10.0409807Z",
+      "elapsed_ms": 2.5301,
+      "transaction_status": "not_started"
+    },
+    "wall-types": {
+      "schema_version": 1,
+      "operation_id": "8bb2e039-09c9-5c4a-a353-8ecfcc6560a8",
+      "status": "completed",
+      "request": {
+        "arguments": {
+          "class": "WallType",
+          "types": true
+        },
+        "document": {
+          "session_id": "673df6e1-fad5-4284-a996-76ca0ec9b729"
+        },
+        "operation": "elements.query",
+        "operation_id": "8bb2e039-09c9-5c4a-a353-8ecfcc6560a8",
+        "preconditions": {},
+        "schema_version": 1
+      },
+      "result": {
+        "items": [
+          {
+            "document_session_id": "673df6e1-fad5-4284-a996-76ca0ec9b729",
+            "id": 219,
+            "unique_id": "933c4a06-93b8-11d3-80f8-00c04f8efc32-000000db",
+            "name": "Generic - 6\"",
+            "category": "Walls",
+            "category_id": -2000011,
+            "type_id": -1,
+            "pinned": false,
+            "group_id": -1,
+            "level_id": -1,
+            "location": null,
+            "bounds": null,
+            "host_id": null,
+            "family_name": null,
+            "placement_type": null,
+            "view_family": null,
+            "view_type": null,
+            "elevation": null
+          },
+          {
+            "document_session_id": "673df6e1-fad5-4284-a996-76ca0ec9b729",
+            "id": 220,
+            "unique_id": "933c4a06-93b8-11d3-80f8-00c04f8efc32-000000dc",
+            "name": "Interior - 5\" Partition (2-hr)",
+            "category": "Walls",
+            "category_id": -2000011,
+            "type_id": -1,
+            "pinned": false,
+            "group_id": -1,
+            "level_id": -1,
+            "location": null,
+            "bounds": null,
+            "host_id": null,
+            "family_name": null,
+            "placement_type": null,
+            "view_family": null,
+            "view_type": null,
+            "elevation": null
+          },
+          {
+            "document_session_id": "673df6e1-fad5-4284-a996-76ca0ec9b729",
+            "id": 221,
+            "unique_id": "933c4a06-93b8-11d3-80f8-00c04f8efc32-000000dd",
+            "name": "Exterior - Brick on Mtl. Stud",
+            "category": "Walls",
+            "category_id": -2000011,
+            "type_id": -1,
+            "pinned": false,
+            "group_id": -1,
+            "level_id": -1,
+            "location": null,
+            "bounds": null,
+            "host_id": null,
+            "family_name": null,
+            "placement_type": null,
+            "view_family": null,
+            "view_type": null,
+            "elevation": null
+          },
+          {
+            "document_session_id": "673df6e1-fad5-4284-a996-76ca0ec9b729",
+            "id": 249,
+            "unique_id": "933c54e0-93b8-11d3-80f8-00c04f8efc32-000000f9",
+            "name": "Generic - 8\"",
+            "category": "Walls",
+            "category_id": -2000011,
+            "type_id": -1,
+            "pinned": false,
+            "group_id": -1,
+            "level_id": -1,
+            "location": null,
+            "bounds": null,
+            "host_id": null,
+            "family_name": null,
+            "placement_type": null,
+            "view_family": null,
+            "view_type": null,
+            "elevation": null
+          },
+          {
+            "document_session_id": "673df6e1-fad5-4284-a996-76ca0ec9b729",
+            "id": 250,
+            "unique_id": "933c54e0-93b8-11d3-80f8-00c04f8efc32-000000fa",
+            "name": "Exterior - Brick on CMU",
+            "category": "Walls",
+            "category_id": -2000011,
+            "type_id": -1,
+            "pinned": false,
+            "group_id": -1,
+            "level_id": -1,
+            "location": null,
+            "bounds": null,
+            "host_id": null,
+            "family_name": null,
+            "placement_type": null,
+            "view_family": null,
+            "view_type": null,
+            "elevation": null
+          },
+          {
+            "document_session_id": "673df6e1-fad5-4284-a996-76ca0ec9b729",
+            "id": 251,
+            "unique_id": "933c54e0-93b8-11d3-80f8-00c04f8efc32-000000fb",
+            "name": "Generic - 12\"",
+            "category": "Walls",
+            "category_id": -2000011,
+            "type_id": -1,
+            "pinned": false,
+            "group_id": -1,
+            "level_id": -1,
+            "location": null,
+            "bounds": null,
+            "host_id": null,
+            "family_name": null,
+            "placement_type": null,
+            "view_family": null,
+            "view_type": null,
+            "elevation": null
+          },
+          {
+            "document_session_id": "673df6e1-fad5-4284-a996-76ca0ec9b729",
+            "id": 252,
+            "unique_id": "933c54e0-93b8-11d3-80f8-00c04f8efc32-000000fc",
+            "name": "Generic - 5\"",
+            "category": "Walls",
+            "category_id": -2000011,
+            "type_id": -1,
+            "pinned": false,
+            "group_id": -1,
+            "level_id": -1,
+            "location": null,
+            "bounds": null,
+            "host_id": null,
+            "family_name": null,
+            "placement_type": null,
+            "view_family": null,
+            "view_type": null,
+            "elevation": null
+          },
+          {
+            "document_session_id": "673df6e1-fad5-4284-a996-76ca0ec9b729",
+            "id": 253,
+            "unique_id": "933c54e1-93b8-11d3-80f8-00c04f8efc32-000000fd",
+            "name": "Generic - 12\" Masonry",
+            "category": "Walls",
+            "category_id": -2000011,
+            "type_id": -1,
+            "pinned": false,
+            "group_id": -1,
+            "level_id": -1,
+            "location": null,
+            "bounds": null,
+            "host_id": null,
+            "family_name": null,
+            "placement_type": null,
+            "view_family": null,
+            "view_type": null,
+            "elevation": null
+          },
+          {
+            "document_session_id": "673df6e1-fad5-4284-a996-76ca0ec9b729",
+            "id": 254,
+            "unique_id": "933c54e1-93b8-11d3-80f8-00c04f8efc32-000000fe",
+            "name": "Generic - 8\" Masonry",
+            "category": "Walls",
+            "category_id": -2000011,
+            "type_id": -1,
+            "pinned": false,
+            "group_id": -1,
+            "level_id": -1,
+            "location": null,
+            "bounds": null,
+            "host_id": null,
+            "family_name": null,
+            "placement_type": null,
+            "view_family": null,
+            "view_type": null,
+            "elevation": null
+          },
+          {
+            "document_session_id": "673df6e1-fad5-4284-a996-76ca0ec9b729",
+            "id": 255,
+            "unique_id": "933c54e1-93b8-11d3-80f8-00c04f8efc32-000000ff",
+            "name": "Generic - 6\" Masonry",
+            "category": "Walls",
+            "category_id": -2000011,
+            "type_id": -1,
+            "pinned": false,
+            "group_id": -1,
+            "level_id": -1,
+            "location": null,
+            "bounds": null,
+            "host_id": null,
+            "family_name": null,
+            "placement_type": null,
+            "view_family": null,
+            "view_type": null,
+            "elevation": null
+          },
+          {
+            "document_session_id": "673df6e1-fad5-4284-a996-76ca0ec9b729",
+            "id": 256,
+            "unique_id": "933c54e1-93b8-11d3-80f8-00c04f8efc32-00000100",
+            "name": "Exterior - CMU Insulated",
+            "category": "Walls",
+            "category_id": -2000011,
+            "type_id": -1,
+            "pinned": false,
+            "group_id": -1,
+            "level_id": -1,
+            "location": null,
+            "bounds": null,
+            "host_id": null,
+            "family_name": null,
+            "placement_type": null,
+            "view_family": null,
+            "view_type": null,
+            "elevation": null
+          },
+          {
+            "document_session_id": "673df6e1-fad5-4284-a996-76ca0ec9b729",
+            "id": 257,
+            "unique_id": "933c54e1-93b8-11d3-80f8-00c04f8efc32-00000101",
+            "name": "Generic - 4\" Brick",
+            "category": "Walls",
+            "category_id": -2000011,
+            "type_id": -1,
+            "pinned": false,
+            "group_id": -1,
+            "level_id": -1,
+            "location": null,
+            "bounds": null,
+            "host_id": null,
+            "family_name": null,
+            "placement_type": null,
+            "view_family": null,
+            "view_type": null,
+            "elevation": null
+          },
+          {
+            "document_session_id": "673df6e1-fad5-4284-a996-76ca0ec9b729",
+            "id": 258,
+            "unique_id": "933c54e1-93b8-11d3-80f8-00c04f8efc32-00000102",
+            "name": "Interior - 3 1/8\" Partition (1-hr)",
+            "category": "Walls",
+            "category_id": -2000011,
+            "type_id": -1,
+            "pinned": false,
+            "group_id": -1,
+            "level_id": -1,
+            "location": null,
+            "bounds": null,
+            "host_id": null,
+            "family_name": null,
+            "placement_type": null,
+            "view_family": null,
+            "view_type": null,
+            "elevation": null
+          },
+          {
+            "document_session_id": "673df6e1-fad5-4284-a996-76ca0ec9b729",
+            "id": 261,
+            "unique_id": "b0ff40ff-93b6-11d3-80f8-00c04f8efc32-00000105",
+            "name": "Interior - 4 7/8\" Partition (1-hr)",
+            "category": "Walls",
+            "category_id": -2000011,
+            "type_id": -1,
+            "pinned": false,
+            "group_id": -1,
+            "level_id": -1,
+            "location": null,
+            "bounds": null,
+            "host_id": null,
+            "family_name": null,
+            "placement_type": null,
+            "view_family": null,
+            "view_type": null,
+            "elevation": null
+          },
+          {
+            "document_session_id": "673df6e1-fad5-4284-a996-76ca0ec9b729",
+            "id": 262,
+            "unique_id": "b0ff411c-93b6-11d3-80f8-00c04f8efc32-00000106",
+            "name": "Interior - 6 1/8\" Partition (2-hr)",
+            "category": "Walls",
+            "category_id": -2000011,
+            "type_id": -1,
+            "pinned": false,
+            "group_id": -1,
+            "level_id": -1,
+            "location": null,
+            "bounds": null,
+            "host_id": null,
+            "family_name": null,
+            "placement_type": null,
+            "view_family": null,
+            "view_type": null,
+            "elevation": null
+          },
+          {
+            "document_session_id": "673df6e1-fad5-4284-a996-76ca0ec9b729",
+            "id": 263,
+            "unique_id": "b0ff411d-93b6-11d3-80f8-00c04f8efc32-00000107",
+            "name": "Interior - 5 1/2\" Partition (1-hr)",
+            "category": "Walls",
+            "category_id": -2000011,
+            "type_id": -1,
+            "pinned": false,
+            "group_id": -1,
+            "level_id": -1,
+            "location": null,
+            "bounds": null,
+            "host_id": null,
+            "family_name": null,
+            "placement_type": null,
+            "view_family": null,
+            "view_type": null,
+            "elevation": null
+          },
+          {
+            "document_session_id": "673df6e1-fad5-4284-a996-76ca0ec9b729",
+            "id": 264,
+            "unique_id": "b0ff411e-93b6-11d3-80f8-00c04f8efc32-00000108",
+            "name": "Exterior - EIFS on Mtl. Stud",
+            "category": "Walls",
+            "category_id": -2000011,
+            "type_id": -1,
+            "pinned": false,
+            "group_id": -1,
+            "level_id": -1,
+            "location": null,
+            "bounds": null,
+            "host_id": null,
+            "family_name": null,
+            "placement_type": null,
+            "view_family": null,
+            "view_type": null,
+            "elevation": null
+          },
+          {
+            "document_session_id": "673df6e1-fad5-4284-a996-76ca0ec9b729",
+            "id": 21854,
+            "unique_id": "b0b76196-1902-482f-b464-0488e33408cc-0000555e",
+            "name": "Curtain Wall 1",
+            "category": "Walls",
+            "category_id": -2000011,
+            "type_id": -1,
+            "pinned": false,
+            "group_id": -1,
+            "level_id": -1,
+            "location": null,
+            "bounds": null,
+            "host_id": null,
+            "family_name": null,
+            "placement_type": null,
+            "view_family": null,
+            "view_type": null,
+            "elevation": null
+          },
+          {
+            "document_session_id": "673df6e1-fad5-4284-a996-76ca0ec9b729",
+            "id": 29243,
+            "unique_id": "11378b51-2d3a-48f2-93a3-9f7d59040dce-0000723b",
+            "name": "Foundation - 12\" Concrete",
+            "category": "Walls",
+            "category_id": -2000011,
+            "type_id": -1,
+            "pinned": false,
+            "group_id": -1,
+            "level_id": -1,
+            "location": null,
+            "bounds": null,
+            "host_id": null,
+            "family_name": null,
+            "placement_type": null,
+            "view_family": null,
+            "view_type": null,
+            "elevation": null
+          },
+          {
+            "document_session_id": "673df6e1-fad5-4284-a996-76ca0ec9b729",
+            "id": 29244,
+            "unique_id": "11378b51-2d3a-48f2-93a3-9f7d59040dce-0000723c",
+            "name": "Retaining - 12\" Concrete",
+            "category": "Walls",
+            "category_id": -2000011,
+            "type_id": -1,
+            "pinned": false,
+            "group_id": -1,
+            "level_id": -1,
+            "location": null,
+            "bounds": null,
+            "host_id": null,
+            "family_name": null,
+            "placement_type": null,
+            "view_family": null,
+            "view_type": null,
+            "elevation": null
+          },
+          {
+            "document_session_id": "673df6e1-fad5-4284-a996-76ca0ec9b729",
+            "id": 43831,
+            "unique_id": "d4ea8d98-8854-4658-8262-84bea4d66d6f-0000ab37",
+            "name": "Generic - 8\" - Filled",
+            "category": "Walls",
+            "category_id": -2000011,
+            "type_id": -1,
+            "pinned": false,
+            "group_id": -1,
+            "level_id": -1,
+            "location": null,
+            "bounds": null,
+            "host_id": null,
+            "family_name": null,
+            "placement_type": null,
+            "view_family": null,
+            "view_type": null,
+            "elevation": null
+          },
+          {
+            "document_session_id": "673df6e1-fad5-4284-a996-76ca0ec9b729",
+            "id": 45098,
+            "unique_id": "a81de4e0-0363-42ce-b778-cf9bc0e86b60-0000b02a",
+            "name": "Soffit - 1/2\" GWB & Metal Stud",
+            "category": "Walls",
+            "category_id": -2000011,
+            "type_id": -1,
+            "pinned": false,
+            "group_id": -1,
+            "level_id": -1,
+            "location": null,
+            "bounds": null,
+            "host_id": null,
+            "family_name": null,
+            "placement_type": null,
+            "view_family": null,
+            "view_type": null,
+            "elevation": null
+          },
+          {
+            "document_session_id": "673df6e1-fad5-4284-a996-76ca0ec9b729",
+            "id": 47381,
+            "unique_id": "22408d62-e4e7-4b75-9b8b-a2a157a1c32f-0000b915",
+            "name": "Exterior - Brick and CMU on MTL. Stud",
+            "category": "Walls",
+            "category_id": -2000011,
+            "type_id": -1,
+            "pinned": false,
+            "group_id": -1,
+            "level_id": -1,
+            "location": null,
+            "bounds": null,
+            "host_id": null,
+            "family_name": null,
+            "placement_type": null,
+            "view_family": null,
+            "view_type": null,
+            "elevation": null
+          },
+          {
+            "document_session_id": "673df6e1-fad5-4284-a996-76ca0ec9b729",
+            "id": 56765,
+            "unique_id": "3c13a3b1-a00f-4862-9e11-ca8a6bcf2126-0000ddbd",
+            "name": "Storefront",
+            "category": "Walls",
+            "category_id": -2000011,
+            "type_id": -1,
+            "pinned": false,
+            "group_id": -1,
+            "level_id": -1,
+            "location": null,
+            "bounds": null,
+            "host_id": null,
+            "family_name": null,
+            "placement_type": null,
+            "view_family": null,
+            "view_type": null,
+            "elevation": null
+          },
+          {
+            "document_session_id": "673df6e1-fad5-4284-a996-76ca0ec9b729",
+            "id": 56766,
+            "unique_id": "3c13a3b1-a00f-4862-9e11-ca8a6bcf2126-0000ddbe",
+            "name": "Exterior Glazing",
+            "category": "Walls",
+            "category_id": -2000011,
+            "type_id": -1,
+            "pinned": false,
+            "group_id": -1,
+            "level_id": -1,
+            "location": null,
+            "bounds": null,
+            "host_id": null,
+            "family_name": null,
+            "placement_type": null,
+            "view_family": null,
+            "view_type": null,
+            "elevation": null
+          },
+          {
+            "document_session_id": "673df6e1-fad5-4284-a996-76ca0ec9b729",
+            "id": 76677,
+            "unique_id": "7cacd49c-ac17-4591-ad0a-cbc9bb40015a-00012b85",
+            "name": "Exterior - Brick Over CMU w Metal Stud",
+            "category": "Stacked Walls",
+            "category_id": -2003500,
+            "type_id": -1,
+            "pinned": false,
+            "group_id": -1,
+            "level_id": -1,
+            "location": null,
+            "bounds": null,
+            "host_id": null,
+            "family_name": null,
+            "placement_type": null,
+            "view_family": null,
+            "view_type": null,
+            "elevation": null
+          },
+          {
+            "document_session_id": "673df6e1-fad5-4284-a996-76ca0ec9b729",
+            "id": 83171,
+            "unique_id": "fcb996df-2e6e-4994-b4be-7b0dbb166632-000144e3",
+            "name": "Exterior - CMU on Mtl. Stud",
+            "category": "Walls",
+            "category_id": -2000011,
+            "type_id": -1,
+            "pinned": false,
+            "group_id": -1,
+            "level_id": -1,
+            "location": null,
+            "bounds": null,
+            "host_id": null,
+            "family_name": null,
+            "placement_type": null,
+            "view_family": null,
+            "view_type": null,
+            "elevation": null
+          }
+        ],
+        "offset": 0,
+        "next_offset": null,
+        "units": "internal feet"
+      },
+      "error": null,
+      "cancel_requested": false,
+      "created_utc": "2026-10-14T05:21:10.2184933Z",
+      "finished_utc": "2026-10-14T05:21:10.2339557Z",
+      "elapsed_ms": 2.7757,
+      "transaction_status": "not_started"
+    },
+    "wall": {
+      "schema_version": 1,
+      "operation_id": "e8cdf8ef-6fae-57a0-9a9e-9bb87b695dd6",
+      "status": "completed",
+      "request": {
+        "arguments": {
+          "end": [
+            8,
+            0,
+            0
+          ],
+          "height": 6,
+          "level": "933c4a06-93b8-11d3-80f8-00c04f8efc32-0000001e",
+          "start": [
+            0,
+            0,
+            0
+          ],
+          "type": "933c4a06-93b8-11d3-80f8-00c04f8efc32-000000db"
+        },
+        "document": {
+          "session_id": "673df6e1-fad5-4284-a996-76ca0ec9b729"
+        },
+        "operation": "wall.create",
+        "operation_id": "e8cdf8ef-6fae-57a0-9a9e-9bb87b695dd6",
+        "preconditions": {},
+        "schema_version": 1
+      },
+      "result": {
+        "data": {
+          "document_session_id": "673df6e1-fad5-4284-a996-76ca0ec9b729",
+          "id": 315427,
+          "unique_id": "6c15d509-137d-43fb-8628-d610f36eef36-0004d023",
+          "name": "Generic - 6\"",
+          "category": "Walls",
+          "category_id": -2000011,
+          "type_id": 219,
+          "pinned": false,
+          "group_id": -1,
+          "level_id": 30,
+          "location": {
+            "start": [
+              0,
+              0,
+              0
+            ],
+            "end": [
+              8,
+              0,
+              0
+            ]
+          },
+          "bounds": null,
+          "host_id": null,
+          "family_name": null,
+          "placement_type": null,
+          "view_family": null,
+          "view_type": null,
+          "elevation": null
+        },
+        "transaction_status": "committed",
+        "actual_elements": [
+          {
+            "document_session_id": "673df6e1-fad5-4284-a996-76ca0ec9b729",
+            "id": 315427,
+            "unique_id": "6c15d509-137d-43fb-8628-d610f36eef36-0004d023",
+            "name": "Generic - 6\"",
+            "category": "Walls",
+            "category_id": -2000011,
+            "type_id": 219,
+            "pinned": false,
+            "group_id": -1,
+            "level_id": 30,
+            "location": {
+              "start": [
+                0,
+                0,
+                0
+              ],
+              "end": [
+                8,
+                0,
+                0
+              ]
+            },
+            "bounds": {
+              "min": [
+                0,
+                -0.25,
+                0
+              ],
+              "max": [
+                8,
+                0.25,
+                6
+              ]
+            },
+            "host_id": null,
+            "family_name": null,
+            "placement_type": null,
+            "view_family": null,
+            "view_type": null,
+            "elevation": null
+          }
+        ],
+        "warnings": []
+      },
+      "error": null,
+      "cancel_requested": false,
+      "created_utc": "2026-10-14T05:21:10.3992131Z",
+      "finished_utc": "2026-10-14T05:21:10.4249258Z",
+      "elapsed_ms": 13.6152,
+      "transaction_status": "committed"
+    },
+    "wall-geometry": {
+      "schema_version": 1,
+      "operation_id": "05e223f5-e169-54cf-a589-1908804d5a7d",
+      "status": "completed",
+      "request": {
+        "arguments": {
+          "element": "6c15d509-137d-43fb-8628-d610f36eef36-0004d023",
+          "geometry": true
+        },
+        "document": {
+          "session_id": "673df6e1-fad5-4284-a996-76ca0ec9b729"
+        },
+        "operation": "elements.inspect",
+        "operation_id": "05e223f5-e169-54cf-a589-1908804d5a7d",
+        "preconditions": {},
+        "schema_version": 1
+      },
+      "result": {
+        "element": {
+          "document_session_id": "673df6e1-fad5-4284-a996-76ca0ec9b729",
+          "id": 315427,
+          "unique_id": "6c15d509-137d-43fb-8628-d610f36eef36-0004d023",
+          "name": "Generic - 6\"",
+          "category": "Walls",
+          "category_id": -2000011,
+          "type_id": 219,
+          "pinned": false,
+          "group_id": -1,
+          "level_id": 30,
+          "location": {
+            "start": [
+              0,
+              0,
+              0
+            ],
+            "end": [
+              8,
+              0,
+              0
+            ]
+          },
+          "bounds": {
+            "min": [
+              0,
+              -0.25,
+              0
+            ],
+            "max": [
+              8,
+              0.25,
+              6
+            ]
+          },
+          "host_id": null,
+          "family_name": null,
+          "placement_type": null,
+          "view_family": null,
+          "view_type": null,
+          "elevation": null
+        },
+        "dependent_ids": [
+          315427
+        ],
+        "phase_created_id": 118390,
+        "phase_demolished_id": -1,
+        "design_option": null,
+        "workset_id": 0,
+        "editable": true,
+        "transform": null,
+        "geometry": [
+          {
+            "kind": "solid",
+            "volume": 24,
+            "faces": 6,
+            "edges": 12
+          },
+          {
+            "kind": "face",
+            "area": 48,
+            "reference": "6c15d509-137d-43fb-8628-d610f36eef36-0004d023:5:SURFACE",
+            "normal": [
+              0,
+              -1,
+              0
+            ]
+          },
+          {
+            "kind": "face",
+            "area": 48,
+            "reference": "6c15d509-137d-43fb-8628-d610f36eef36-0004d023:6:SURFACE",
+            "normal": [
+              0,
+              1,
+              0
+            ]
+          },
+          {
+            "kind": "face",
+            "area": 4,
+            "reference": "6c15d509-137d-43fb-8628-d610f36eef36-0004d023:7:SURFACE",
+            "normal": [
+              0,
+              0,
+              -1
+            ]
+          },
+          {
+            "kind": "face",
+            "area": 3,
+            "reference": "6c15d509-137d-43fb-8628-d610f36eef36-0004d023:10:SURFACE",
+            "normal": [
+              1,
+              0,
+              0
+            ]
+          },
+          {
+            "kind": "face",
+            "area": 4,
+            "reference": "6c15d509-137d-43fb-8628-d610f36eef36-0004d023:14:SURFACE",
+            "normal": [
+              0,
+              0,
+              1
+            ]
+          },
+          {
+            "kind": "face",
+            "area": 3,
+            "reference": "6c15d509-137d-43fb-8628-d610f36eef36-0004d023:18:SURFACE",
+            "normal": [
+              -1,
+              0,
+              0
+            ]
+          }
+        ]
+      },
+      "error": null,
+      "cancel_requested": false,
+      "created_utc": "2026-10-14T05:21:10.6173990Z",
+      "finished_utc": "2026-10-14T05:21:10.6534245Z",
+      "elapsed_ms": 24.49,
+      "transaction_status": "not_started"
+    },
+    "plan": {
+      "schema_version": 1,
+      "operation_id": "3ef11bb9-4239-55c1-b658-baf4d811fb2a",
+      "status": "completed",
+      "request": {
+        "arguments": {
+          "kind": "plan",
+          "level": "933c4a06-93b8-11d3-80f8-00c04f8efc32-0000001e",
+          "name": "CODEX DIMENSION PLAN",
+          "scale": 24,
+          "type": "42eb2886-bbe4-469f-897b-4b39594f7390-00012881"
+        },
+        "document": {
+          "session_id": "673df6e1-fad5-4284-a996-76ca0ec9b729"
+        },
+        "operation": "view.create",
+        "operation_id": "3ef11bb9-4239-55c1-b658-baf4d811fb2a",
+        "preconditions": {},
+        "schema_version": 1
+      },
+      "result": {
+        "data": {
+          "document_session_id": "673df6e1-fad5-4284-a996-76ca0ec9b729",
+          "id": 315428,
+          "unique_id": "6c15d509-137d-43fb-8628-d610f36eef36-0004d024",
+          "name": "CODEX DIMENSION PLAN",
+          "category": "Views",
+          "category_id": -2000279,
+          "type_id": 75905,
+          "pinned": false,
+          "group_id": -1,
+          "level_id": -1,
+          "location": null,
+          "bounds": {
+            "min": [
+              -100,
+              -100,
+              -1000
+            ],
+            "max": [
+              100,
+              100,
+              -0.1
+            ]
+          },
+          "host_id": null,
+          "family_name": null,
+          "placement_type": null,
+          "view_family": null,
+          "view_type": "FloorPlan",
+          "elevation": null
+        },
+        "transaction_status": "committed",
+        "actual_elements": [
+          {
+            "document_session_id": "673df6e1-fad5-4284-a996-76ca0ec9b729",
+            "id": 315428,
+            "unique_id": "6c15d509-137d-43fb-8628-d610f36eef36-0004d024",
+            "name": "CODEX DIMENSION PLAN",
+            "category": "Views",
+            "category_id": -2000279,
+            "type_id": 75905,
+            "pinned": false,
+            "group_id": -1,
+            "level_id": -1,
+            "location": null,
+            "bounds": {
+              "min": [
+                -100,
+                -100,
+                -1000
+              ],
+              "max": [
+                100,
+                100,
+                -0.1
+              ]
+            },
+            "host_id": null,
+            "family_name": null,
+            "placement_type": null,
+            "view_family": null,
+            "view_type": "FloorPlan",
+            "elevation": null
+          }
+        ],
+        "warnings": []
+      },
+      "error": null,
+      "cancel_requested": false,
+      "created_utc": "2026-10-14T05:21:10.8516274Z",
+      "finished_utc": "2026-10-14T05:21:10.8729429Z",
+      "elapsed_ms": 9.8375,
+      "transaction_status": "committed"
+    },
+    "dimension": {
+      "schema_version": 1,
+      "operation_id": "6c4dce5c-cee0-5016-b0a4-89d3c1d55c55",
+      "status": "completed",
+      "request": {
+        "arguments": {
+          "end": [
+            8,
+            -2,
+            0
+          ],
+          "references": [
+            "6c15d509-137d-43fb-8628-d610f36eef36-0004d023:10:SURFACE",
+            "6c15d509-137d-43fb-8628-d610f36eef36-0004d023:18:SURFACE"
+          ],
+          "start": [
+            0,
+            -2,
+            0
+          ],
+          "view": "6c15d509-137d-43fb-8628-d610f36eef36-0004d024"
+        },
+        "document": {
+          "session_id": "673df6e1-fad5-4284-a996-76ca0ec9b729"
+        },
+        "operation": "annotation.dimension",
+        "operation_id": "6c4dce5c-cee0-5016-b0a4-89d3c1d55c55",
+        "preconditions": {},
+        "schema_version": 1
+      },
+      "result": {
+        "data": {
+          "document_session_id": "673df6e1-fad5-4284-a996-76ca0ec9b729",
+          "id": 315438,
+          "unique_id": "6c15d509-137d-43fb-8628-d610f36eef36-0004d02e",
+          "name": "Linear - 3/32\" Arial",
+          "category": "Dimensions",
+          "category_id": -2000260,
+          "type_id": 16,
+          "pinned": false,
+          "group_id": -1,
+          "level_id": -1,
+          "location": null,
+          "bounds": null,
+          "host_id": null,
+          "family_name": null,
+          "placement_type": null,
+          "view_family": null,
+          "view_type": null,
+          "elevation": null
+        },
+        "transaction_status": "committed",
+        "actual_elements": [
+          {
+            "document_session_id": "673df6e1-fad5-4284-a996-76ca0ec9b729",
+            "id": 315438,
+            "unique_id": "6c15d509-137d-43fb-8628-d610f36eef36-0004d02e",
+            "name": "Linear - 3/32\" Arial",
+            "category": "Dimensions",
+            "category_id": -2000260,
+            "type_id": 16,
+            "pinned": false,
+            "group_id": -1,
+            "level_id": -1,
+            "location": null,
+            "bounds": null,
+            "host_id": null,
+            "family_name": null,
+            "placement_type": null,
+            "view_family": null,
+            "view_type": null,
+            "elevation": null
+          }
+        ],
+        "warnings": []
+      },
+      "error": null,
+      "cancel_requested": false,
+      "created_utc": "2026-10-14T05:21:11.0085957Z",
+      "finished_utc": "2026-10-14T05:21:11.0330539Z",
+      "elapsed_ms": 12.9648,
+      "transaction_status": "committed"
+    },
+    "dimension-parameters": {
+      "schema_version": 1,
+      "operation_id": "f513f1ba-bfd6-5604-9a60-c782a2a9d329",
+      "status": "completed",
+      "request": {
+        "arguments": {
+          "element": "6c15d509-137d-43fb-8628-d610f36eef36-0004d02e"
+        },
+        "document": {
+          "session_id": "673df6e1-fad5-4284-a996-76ca0ec9b729"
+        },
+        "operation": "parameters.query",
+        "operation_id": "f513f1ba-bfd6-5604-9a60-c782a2a9d329",
+        "preconditions": {},
+        "schema_version": 1
+      },
+      "result": {
+        "instance": [
+          {
+            "id": -1140363,
+            "name": "Category",
+            "guid": null,
+            "storage_type": "ElementId",
+            "data_type": "",
+            "unit": null,
+            "is_read_only": true,
+            "has_value": true,
+            "value": -2000260,
+            "formatted": "Dimensions"
+          },
+          {
+            "id": -1140362,
+            "name": "Category",
+            "guid": null,
+            "storage_type": "ElementId",
+            "data_type": "",
+            "unit": null,
+            "is_read_only": true,
+            "has_value": true,
+            "value": -2000260,
+            "formatted": "Dimensions"
+          },
+          {
+            "id": -1013201,
+            "name": "Design Option",
+            "guid": null,
+            "storage_type": "ElementId",
+            "data_type": "",
+            "unit": null,
+            "is_read_only": true,
+            "has_value": true,
+            "value": -1,
+            "formatted": "-1"
+          },
+          {
+            "id": -1006521,
+            "name": "Total Length",
+            "guid": null,
+            "storage_type": "Double",
+            "data_type": "autodesk.spec.aec:length-2.0.1",
+            "unit": "autodesk.unit.unit:feetFractionalInches-1.0.0",
+            "is_read_only": true,
+            "has_value": true,
+            "value": 8,
+            "formatted": "8' - 0\""
+          },
+          {
+            "id": -1006520,
+            "name": "Count",
+            "guid": null,
+            "storage_type": "Integer",
+            "data_type": "autodesk.spec:spec.int64-2.0.0",
+            "unit": null,
+            "is_read_only": true,
+            "has_value": true,
+            "value": 2,
+            "formatted": "2"
+          },
+          {
+            "id": -1006477,
+            "name": "Baseline Offset",
+            "guid": null,
+            "storage_type": "Double",
+            "data_type": "autodesk.spec.aec:sheetLength-2.0.0",
+            "unit": "autodesk.unit.unit:fractionalInches-1.0.0",
+            "is_read_only": true,
+            "has_value": true,
+            "value": 0,
+            "formatted": "0\""
+          },
+          {
+            "id": -1004515,
+            "name": "Leader",
+            "guid": null,
+            "storage_type": "Integer",
+            "data_type": "autodesk.spec:spec.bool-1.0.0",
+            "unit": null,
+            "is_read_only": false,
+            "has_value": true,
+            "value": 1,
+            "formatted": "Yes"
+          },
+          {
+            "id": -1004510,
+            "name": "Label",
+            "guid": null,
+            "storage_type": "ElementId",
+            "data_type": "",
+            "unit": null,
+            "is_read_only": false,
+            "has_value": true,
+            "value": -1,
+            "formatted": "<None>"
+          },
+          {
+            "id": -1004500,
+            "name": "Value",
+            "guid": null,
+            "storage_type": "Double",
+            "data_type": "autodesk.spec.aec:length-2.0.1",
+            "unit": "autodesk.unit.unit:feetFractionalInches-1.0.0",
+            "is_read_only": true,
+            "has_value": true,
+            "value": 8,
+            "formatted": "8' - 0\""
+          },
+          {
+            "id": -1002052,
+            "name": "Family and Type",
+            "guid": null,
+            "storage_type": "ElementId",
+            "data_type": "",
+            "unit": null,
+            "is_read_only": false,
+            "has_value": true,
+            "value": 16,
+            "formatted": "Linear Dimension Style: Linear - 3/32\" Arial"
+          },
+          {
+            "id": -1002051,
+            "name": "Family",
+            "guid": null,
+            "storage_type": "ElementId",
+            "data_type": "",
+            "unit": null,
+            "is_read_only": false,
+            "has_value": true,
+            "value": 16,
+            "formatted": "Linear Dimension Style"
+          },
+          {
+            "id": -1002050,
+            "name": "Type",
+            "guid": null,
+            "storage_type": "ElementId",
+            "data_type": "",
+            "unit": null,
+            "is_read_only": false,
+            "has_value": true,
+            "value": 16,
+            "formatted": "Linear - 3/32\" Arial"
+          },
+          {
+            "id": -1002002,
+            "name": "Family Name",
+            "guid": null,
+            "storage_type": "String",
+            "data_type": "autodesk.spec:spec.string-2.0.0",
+            "unit": null,
+            "is_read_only": true,
+            "has_value": false,
+            "value": null,
+            "formatted": null
+          },
+          {
+            "id": -1002001,
+            "name": "Type Name",
+            "guid": null,
+            "storage_type": "String",
+            "data_type": "autodesk.spec:spec.string-2.0.0",
+            "unit": null,
+            "is_read_only": true,
+            "has_value": false,
+            "value": null,
+            "formatted": null
+          },
+          {
+            "id": -1002000,
+            "name": "Type Id",
+            "guid": null,
+            "storage_type": "ElementId",
+            "data_type": "",
+            "unit": null,
+            "is_read_only": true,
+            "has_value": true,
+            "value": 16,
+            "formatted": "16"
+          }
+        ],
+        "type": [
+          {
+            "id": -1140363,
+            "name": "Category",
+            "guid": null,
+            "storage_type": "ElementId",
+            "data_type": "",
+            "unit": null,
+            "is_read_only": true,
+            "has_value": true,
+            "value": -1,
+            "formatted": ""
+          },
+          {
+            "id": -1140362,
+            "name": "Category",
+            "guid": null,
+            "storage_type": "ElementId",
+            "data_type": "",
+            "unit": null,
+            "is_read_only": true,
+            "has_value": true,
+            "value": -1,
+            "formatted": ""
+          },
+          {
+            "id": -1013201,
+            "name": "Design Option",
+            "guid": null,
+            "storage_type": "ElementId",
+            "data_type": "",
+            "unit": null,
+            "is_read_only": true,
+            "has_value": true,
+            "value": -1,
+            "formatted": "-1"
+          },
+          {
+            "id": -1006526,
+            "name": "Dimension Suffix",
+            "guid": null,
+            "storage_type": "String",
+            "data_type": "autodesk.spec:spec.string-2.0.0",
+            "unit": null,
+            "is_read_only": false,
+            "has_value": true,
+            "value": "",
+            "formatted": ""
+          },
+          {
+            "id": -1006525,
+            "name": "Dimension Prefix",
+            "guid": null,
+            "storage_type": "String",
+            "data_type": "autodesk.spec:spec.string-2.0.0",
+            "unit": null,
+            "is_read_only": false,
+            "has_value": true,
+            "value": "",
+            "formatted": ""
+          },
+          {
+            "id": -1006523,
+            "name": "Interior Tick Mark Display",
+            "guid": null,
+            "storage_type": "Integer",
+            "data_type": "",
+            "unit": null,
+            "is_read_only": false,
+            "has_value": true,
+            "value": 0,
+            "formatted": "Dynamic"
+          },
+          {
+            "id": -1006522,
+            "name": "Witness Line Tick Mark",
+            "guid": null,
+            "storage_type": "ElementId",
+            "data_type": "",
+            "unit": null,
+            "is_read_only": false,
+            "has_value": true,
+            "value": -1,
+            "formatted": "None"
+          },
+          {
+            "id": -1006519,
+            "name": "Alternate Units Suffix",
+            "guid": null,
+            "storage_type": "String",
+            "data_type": "autodesk.spec:spec.string-2.0.0",
+            "unit": null,
+            "is_read_only": false,
+            "has_value": true,
+            "value": "",
+            "formatted": ""
+          },
+          {
+            "id": -1006518,
+            "name": "Alternate Units Prefix",
+            "guid": null,
+            "storage_type": "String",
+            "data_type": "autodesk.spec:spec.string-2.0.0",
+            "unit": null,
+            "is_read_only": false,
+            "has_value": true,
+            "value": "",
+            "formatted": ""
+          },
+          {
+            "id": -1006517,
+            "name": "Equality Witness Display",
+            "guid": null,
+            "storage_type": "Integer",
+            "data_type": "",
+            "unit": null,
+            "is_read_only": false,
+            "has_value": true,
+            "value": 0,
+            "formatted": "Tick and Line"
+          },
+          {
+            "id": -1006516,
+            "name": "Suppress Spaces",
+            "guid": null,
+            "storage_type": "Integer",
+            "data_type": "autodesk.spec:spec.bool-1.0.0",
+            "unit": null,
+            "is_read_only": false,
+            "has_value": true,
+            "value": 0,
+            "formatted": "No"
+          },
+          {
+            "id": -1006515,
+            "name": "Equality Formula",
+            "guid": null,
+            "storage_type": "None",
+            "data_type": "",
+            "unit": null,
+            "is_read_only": false,
+            "has_value": false,
+            "value": null,
+            "formatted": null
+          },
+          {
+            "id": -1006514,
+            "name": "Leader Tick Mark",
+            "guid": null,
+            "storage_type": "ElementId",
+            "data_type": "",
+            "unit": null,
+            "is_read_only": false,
+            "has_value": true,
+            "value": -1,
+            "formatted": "None"
+          },
+          {
+            "id": -1006512,
+            "name": "Equality Text",
+            "guid": null,
+            "storage_type": "String",
+            "data_type": "autodesk.spec:spec.string-2.0.0",
+            "unit": null,
+            "is_read_only": false,
+            "has_value": true,
+            "value": "EQ",
+            "formatted": "EQ"
+          },
+          {
+            "id": -1006510,
+            "name": "Show Leader When Text Moves",
+            "guid": null,
+            "storage_type": "Integer",
+            "data_type": "",
+            "unit": null,
+            "is_read_only": false,
+            "has_value": true,
+            "value": 1,
+            "formatted": "Beyond Witness Lines"
+          },
+          {
+            "id": -1006508,
+            "name": "Leader Type",
+            "guid": null,
+            "storage_type": "Integer",
+            "data_type": "",
+            "unit": null,
+            "is_read_only": false,
+            "has_value": true,
+            "value": 1,
+            "formatted": "Arc"
+          },
+          {
+            "id": -1006468,
+            "name": "Ordinate Dimension Settings",
+            "guid": null,
+            "storage_type": "None",
+            "data_type": "",
+            "unit": null,
+            "is_read_only": true,
+            "has_value": false,
+            "value": null,
+            "formatted": null
+          },
+          {
+            "id": -1006467,
+            "name": "Dimension String Type",
+            "guid": null,
+            "storage_type": "Integer",
+            "data_type": "",
+            "unit": null,
+            "is_read_only": false,
+            "has_value": true,
+            "value": 1,
+            "formatted": "Continuous"
+          },
+          {
+            "id": -1006465,
+            "name": "Flipped Dimension Line Extension",
+            "guid": null,
+            "storage_type": "Double",
+            "data_type": "autodesk.spec.aec:sheetLength-2.0.0",
+            "unit": "autodesk.unit.unit:fractionalInches-1.0.0",
+            "is_read_only": true,
+            "has_value": true,
+            "value": 0.0078125,
+            "formatted": "3/32\""
+          },
+          {
+            "id": -1006464,
+            "name": "Interior Tick Mark",
+            "guid": null,
+            "storage_type": "ElementId",
+            "data_type": "",
+            "unit": null,
+            "is_read_only": true,
+            "has_value": true,
+            "value": 28800,
+            "formatted": "Diagonal 3/64\""
+          },
+          {
+            "id": -1006456,
+            "name": "Alternate Units",
+            "guid": null,
+            "storage_type": "Integer",
+            "data_type": "",
+            "unit": null,
+            "is_read_only": false,
+            "has_value": true,
+            "value": 0,
+            "formatted": "None"
+          },
+          {
+            "id": -1006454,
+            "name": "Alternate Units Format",
+            "guid": null,
+            "storage_type": "None",
+            "data_type": "",
+            "unit": null,
+            "is_read_only": false,
+            "has_value": false,
+            "value": null,
+            "formatted": null
+          },
+          {
+            "id": -1006448,
+            "name": "Read Convention",
+            "guid": null,
+            "storage_type": "Integer",
+            "data_type": "",
+            "unit": null,
+            "is_read_only": false,
+            "has_value": true,
+            "value": 1,
+            "formatted": "Up, then Left"
+          },
+          {
+            "id": -1006446,
+            "name": "Dimension Line Snap Distance",
+            "guid": null,
+            "storage_type": "Double",
+            "data_type": "autodesk.spec.aec:sheetLength-2.0.0",
+            "unit": "autodesk.unit.unit:fractionalInches-1.0.0",
+            "is_read_only": false,
+            "has_value": true,
+            "value": 0.020833333333333332,
+            "formatted": "1/4\""
+          },
+          {
+            "id": -1006445,
+            "name": "Centerline Tick Mark",
+            "guid": null,
+            "storage_type": "ElementId",
+            "data_type": "",
+            "unit": null,
+            "is_read_only": false,
+            "has_value": true,
+            "value": -2,
+            "formatted": "Default"
+          },
+          {
+            "id": -1006435,
+            "name": "Show Opening Height",
+            "guid": null,
+            "storage_type": "Integer",
+            "data_type": "autodesk.spec:spec.bool-1.0.0",
+            "unit": null,
+            "is_read_only": false,
+            "has_value": true,
+            "value": 0,
+            "formatted": "No"
+          },
+          {
+            "id": -1006434,
+            "name": "Centerline Pattern",
+            "guid": null,
+            "storage_type": "ElementId",
+            "data_type": "",
+            "unit": null,
+            "is_read_only": false,
+            "has_value": true,
+            "value": -3000010,
+            "formatted": "Solid"
+          },
+          {
+            "id": -1006433,
+            "name": "Witness Line Length",
+            "guid": null,
+            "storage_type": "Double",
+            "data_type": "autodesk.spec.aec:sheetLength-2.0.0",
+            "unit": "autodesk.unit.unit:fractionalInches-1.0.0",
+            "is_read_only": true,
+            "has_value": true,
+            "value": 0.0078125,
+            "formatted": "3/32\""
+          },
+          {
+            "id": -1006432,
+            "name": "Witness Line Control",
+            "guid": null,
+            "storage_type": "Integer",
+            "data_type": "",
+            "unit": null,
+            "is_read_only": false,
+            "has_value": true,
+            "value": 0,
+            "formatted": "Gap to Element"
+          },
+          {
+            "id": -1006431,
+            "name": "Dimension Line Extension",
+            "guid": null,
+            "storage_type": "Double",
+            "data_type": "autodesk.spec.aec:sheetLength-2.0.0",
+            "unit": "autodesk.unit.unit:fractionalInches-1.0.0",
+            "is_read_only": false,
+            "has_value": true,
+            "value": 0.0078125,
+            "formatted": "3/32\""
+          },
+          {
+            "id": -1006430,
+            "name": "Centerline Symbol",
+            "guid": null,
+            "storage_type": "ElementId",
+            "data_type": "",
+            "unit": null,
+            "is_read_only": false,
+            "has_value": true,
+            "value": -1,
+            "formatted": "None"
+          },
+          {
+            "id": -1006429,
+            "name": "Text Background",
+            "guid": null,
+            "storage_type": "Integer",
+            "data_type": "",
+            "unit": null,
+            "is_read_only": false,
+            "has_value": true,
+            "value": 0,
+            "formatted": "Opaque"
+          },
+          {
+            "id": -1006427,
+            "name": "Units Format",
+            "guid": null,
+            "storage_type": "None",
+            "data_type": "",
+            "unit": null,
+            "is_read_only": false,
+            "has_value": false,
+            "value": null,
+            "formatted": null
+          },
+          {
+            "id": -1006412,
+            "name": "Tick Mark Line Weight",
+            "guid": null,
+            "storage_type": "Integer",
+            "data_type": "",
+            "unit": null,
+            "is_read_only": false,
+            "has_value": true,
+            "value": 5,
+            "formatted": "5"
+          },
+          {
+            "id": -1006405,
+            "name": "Witness Line Gap to Element",
+            "guid": null,
+            "storage_type": "Double",
+            "data_type": "autodesk.spec.aec:sheetLength-2.0.0",
+            "unit": "autodesk.unit.unit:fractionalInches-1.0.0",
+            "is_read_only": false,
+            "has_value": true,
+            "value": 0.005208333333333333,
+            "formatted": "1/16\""
+          },
+          {
+            "id": -1006404,
+            "name": "Witness Line Extension",
+            "guid": null,
+            "storage_type": "Double",
+            "data_type": "autodesk.spec.aec:sheetLength-2.0.0",
+            "unit": "autodesk.unit.unit:fractionalInches-1.0.0",
+            "is_read_only": false,
+            "has_value": true,
+            "value": 0.0078125,
+            "formatted": "3/32\""
+          },
+          {
+            "id": -1006401,
+            "name": "Text Offset",
+            "guid": null,
+            "storage_type": "Double",
+            "data_type": "autodesk.spec.aec:sheetLength-2.0.0",
+            "unit": "autodesk.unit.unit:fractionalInches-1.0.0",
+            "is_read_only": false,
+            "has_value": true,
+            "value": 0.005208333333333333,
+            "formatted": "1/16\""
+          },
+          {
+            "id": -1006327,
+            "name": "Width Factor",
+            "guid": null,
+            "storage_type": "Double",
+            "data_type": "autodesk.spec.aec:number-2.0.0",
+            "unit": "autodesk.unit.unit:general-1.0.1",
+            "is_read_only": false,
+            "has_value": true,
+            "value": 1,
+            "formatted": "1"
+          },
+          {
+            "id": -1006323,
+            "name": "Tick Mark",
+            "guid": null,
+            "storage_type": "ElementId",
+            "data_type": "",
+            "unit": null,
+            "is_read_only": false,
+            "has_value": true,
+            "value": 22810,
+            "formatted": "Diagonal 1/8\""
+          },
+          {
+            "id": -1006313,
+            "name": "Underline",
+            "guid": null,
+            "storage_type": "Integer",
+            "data_type": "autodesk.spec:spec.bool-1.0.0",
+            "unit": null,
+            "is_read_only": false,
+            "has_value": true,
+            "value": 0,
+            "formatted": "No"
+          },
+          {
+            "id": -1006312,
+            "name": "Italic",
+            "guid": null,
+            "storage_type": "Integer",
+            "data_type": "autodesk.spec:spec.bool-1.0.0",
+            "unit": null,
+            "is_read_only": false,
+            "has_value": true,
+            "value": 0,
+            "formatted": "No"
+          },
+          {
+            "id": -1006311,
+            "name": "Bold",
+            "guid": null,
+            "storage_type": "Integer",
+            "data_type": "autodesk.spec:spec.bool-1.0.0",
+            "unit": null,
+            "is_read_only": false,
+            "has_value": true,
+            "value": 0,
+            "formatted": "No"
+          },
+          {
+            "id": -1006304,
+            "name": "Color",
+            "guid": null,
+            "storage_type": "Integer",
+            "data_type": "",
+            "unit": null,
+            "is_read_only": false,
+            "has_value": true,
+            "value": 0,
+            "formatted": null
+          },
+          {
+            "id": -1006303,
+            "name": "Line Weight",
+            "guid": null,
+            "storage_type": "Integer",
+            "data_type": "",
+            "unit": null,
+            "is_read_only": false,
+            "has_value": true,
+            "value": 1,
+            "formatted": "1"
+          },
+          {
+            "id": -1006301,
+            "name": "Text Size",
+            "guid": null,
+            "storage_type": "Double",
+            "data_type": "autodesk.spec.aec:sheetLength-2.0.0",
+            "unit": "autodesk.unit.unit:fractionalInches-1.0.0",
+            "is_read_only": false,
+            "has_value": true,
+            "value": 0.0078125,
+            "formatted": "3/32\""
+          },
+          {
+            "id": -1006300,
+            "name": "Text Font",
+            "guid": null,
+            "storage_type": "String",
+            "data_type": "autodesk.spec:spec.string-2.0.0",
+            "unit": null,
+            "is_read_only": false,
+            "has_value": true,
+            "value": "Arial",
+            "formatted": "Arial"
+          },
+          {
+            "id": -1002002,
+            "name": "Family Name",
+            "guid": null,
+            "storage_type": "String",
+            "data_type": "autodesk.spec:spec.string-2.0.0",
+            "unit": null,
+            "is_read_only": true,
+            "has_value": true,
+            "value": "Linear Dimension Style",
+            "formatted": "Linear Dimension Style"
+          },
+          {
+            "id": -1002001,
+            "name": "Type Name",
+            "guid": null,
+            "storage_type": "String",
+            "data_type": "autodesk.spec:spec.string-2.0.0",
+            "unit": null,
+            "is_read_only": true,
+            "has_value": true,
+            "value": "Linear - 3/32\" Arial",
+            "formatted": "Linear - 3/32\" Arial"
+          }
+        ],
+        "type_id": 16,
+        "owner_is_type": false
+      },
+      "error": null,
+      "cancel_requested": false,
+      "created_utc": "2026-10-14T05:21:11.1721397Z",
+      "finished_utc": "2026-10-14T05:21:11.2145774Z",
+      "elapsed_ms": 21.1651,
+      "transaction_status": "not_started"
+    },
+    "mirror": {
+      "schema_version": 1,
+      "operation_id": "14725bc3-e2f1-5f6a-9fd1-4717d9a40248",
+      "status": "completed",
+      "request": {
+        "arguments": {
+          "copy": true,
+          "element": "6c15d509-137d-43fb-8628-d610f36eef36-0004d023",
+          "normal": [
+            1,
+            0,
+            0
+          ],
+          "origin": [
+            0,
+            0,
+            0
+          ]
+        },
+        "document": {
+          "session_id": "673df6e1-fad5-4284-a996-76ca0ec9b729"
+        },
+        "operation": "element.mirror",
+        "operation_id": "14725bc3-e2f1-5f6a-9fd1-4717d9a40248",
+        "preconditions": {},
+        "schema_version": 1
+      },
+      "result": {
+        "data": {
+          "before": {
+            "document_session_id": "673df6e1-fad5-4284-a996-76ca0ec9b729",
+            "id": 315427,
+            "unique_id": "6c15d509-137d-43fb-8628-d610f36eef36-0004d023",
+            "name": "Generic - 6\"",
+            "category": "Walls",
+            "category_id": -2000011,
+            "type_id": 219,
+            "pinned": false,
+            "group_id": -1,
+            "level_id": 30,
+            "location": {
+              "start": [
+                0,
+                0,
+                0
+              ],
+              "end": [
+                8,
+                0,
+                0
+              ]
+            },
+            "bounds": {
+              "min": [
+                0,
+                -0.25,
+                0
+              ],
+              "max": [
+                8,
+                0.25,
+                6
+              ]
+            },
+            "host_id": null,
+            "family_name": null,
+            "placement_type": null,
+            "view_family": null,
+            "view_type": null,
+            "elevation": null
+          },
+          "after": [
+            {
+              "document_session_id": "673df6e1-fad5-4284-a996-76ca0ec9b729",
+              "id": 315440,
+              "unique_id": "6c15d509-137d-43fb-8628-d610f36eef36-0004d030",
+              "name": "Generic - 6\"",
+              "category": "Walls",
+              "category_id": -2000011,
+              "type_id": 219,
+              "pinned": false,
+              "group_id": -1,
+              "level_id": 30,
+              "location": {
+                "start": [
+                  0,
+                  0,
+                  0
+                ],
+                "end": [
+                  -8,
+                  0,
+                  0
+                ]
+              },
+              "bounds": {
+                "min": [
+                  -8,
+                  -0.25,
+                  0
+                ],
+                "max": [
+                  0,
+                  0.25,
+                  6
+                ]
+              },
+              "host_id": null,
+              "family_name": null,
+              "placement_type": null,
+              "view_family": null,
+              "view_type": null,
+              "elevation": null
+            }
+          ]
+        },
+        "transaction_status": "committed",
+        "actual_elements": [
+          {
+            "document_session_id": "673df6e1-fad5-4284-a996-76ca0ec9b729",
+            "id": 315427,
+            "unique_id": "6c15d509-137d-43fb-8628-d610f36eef36-0004d023",
+            "name": "Generic - 6\"",
+            "category": "Walls",
+            "category_id": -2000011,
+            "type_id": 219,
+            "pinned": false,
+            "group_id": -1,
+            "level_id": 30,
+            "location": {
+              "start": [
+                0,
+                0,
+                0
+              ],
+              "end": [
+                8,
+                0,
+                0
+              ]
+            },
+            "bounds": {
+              "min": [
+                0,
+                -0.25,
+                0
+              ],
+              "max": [
+                8,
+                0.25,
+                6
+              ]
+            },
+            "host_id": null,
+            "family_name": null,
+            "placement_type": null,
+            "view_family": null,
+            "view_type": null,
+            "elevation": null
+          },
+          {
+            "document_session_id": "673df6e1-fad5-4284-a996-76ca0ec9b729",
+            "id": 315440,
+            "unique_id": "6c15d509-137d-43fb-8628-d610f36eef36-0004d030",
+            "name": "Generic - 6\"",
+            "category": "Walls",
+            "category_id": -2000011,
+            "type_id": 219,
+            "pinned": false,
+            "group_id": -1,
+            "level_id": 30,
+            "location": {
+              "start": [
+                0,
+                0,
+                0
+              ],
+              "end": [
+                -8,
+                0,
+                0
+              ]
+            },
+            "bounds": {
+              "min": [
+                -8,
+                -0.25,
+                0
+              ],
+              "max": [
+                0,
+                0.25,
+                6
+              ]
+            },
+            "host_id": null,
+            "family_name": null,
+            "placement_type": null,
+            "view_family": null,
+            "view_type": null,
+            "elevation": null
+          }
+        ],
+        "warnings": []
+      },
+      "error": null,
+      "cancel_requested": false,
+      "created_utc": "2026-10-14T05:21:11.3535376Z",
+      "finished_utc": "2026-10-14T05:21:11.4890186Z",
+      "elapsed_ms": 114.1333,
+      "transaction_status": "committed"
+    },
+    "wall-curve": {
+      "schema_version": 1,
+      "operation_id": "b8fb595a-3d3e-5e19-b991-a9056ca31e66",
+      "status": "completed",
+      "request": {
+        "arguments": {
+          "element": "6c15d509-137d-43fb-8628-d610f36eef36-0004d023",
+          "end": [
+            8,
+            1,
+            0
+          ],
+          "start": [
+            0,
+            0,
+            0
+          ]
+        },
+        "document": {
+          "session_id": "673df6e1-fad5-4284-a996-76ca0ec9b729"
+        },
+        "operation": "element.curve",
+        "operation_id": "b8fb595a-3d3e-5e19-b991-a9056ca31e66",
+        "preconditions": {},
+        "schema_version": 1
+      },
+      "result": {
+        "data": {
+          "document_session_id": "673df6e1-fad5-4284-a996-76ca0ec9b729",
+          "id": 315427,
+          "unique_id": "6c15d509-137d-43fb-8628-d610f36eef36-0004d023",
+          "name": "Generic - 6\"",
+          "category": "Walls",
+          "category_id": -2000011,
+          "type_id": 219,
+          "pinned": false,
+          "group_id": -1,
+          "level_id": 30,
+          "location": {
+            "start": [
+              0,
+              0,
+              0
+            ],
+            "end": [
+              8,
+              1,
+              0
+            ]
+          },
+          "bounds": {
+            "min": [
+              -0.031008683647302117,
+              -0.2500000000000002,
+              0
+            ],
+            "max": [
+              8.031008683647306,
+              1.2480694691784173,
+              6
+            ]
+          },
+          "host_id": null,
+          "family_name": null,
+          "placement_type": null,
+          "view_family": null,
+          "view_type": null,
+          "elevation": null
+        },
+        "transaction_status": "committed",
+        "actual_elements": [
+          {
+            "document_session_id": "673df6e1-fad5-4284-a996-76ca0ec9b729",
+            "id": 315427,
+            "unique_id": "6c15d509-137d-43fb-8628-d610f36eef36-0004d023",
+            "name": "Generic - 6\"",
+            "category": "Walls",
+            "category_id": -2000011,
+            "type_id": 219,
+            "pinned": false,
+            "group_id": -1,
+            "level_id": 30,
+            "location": {
+              "start": [
+                0,
+                0,
+                0
+              ],
+              "end": [
+                8,
+                1,
+                0
+              ]
+            },
+            "bounds": {
+              "min": [
+                -0.031008683647302117,
+                -0.2500000000000002,
+                0
+              ],
+              "max": [
+                8.031008683647306,
+                1.2480694691784173,
+                6
+              ]
+            },
+            "host_id": null,
+            "family_name": null,
+            "placement_type": null,
+            "view_family": null,
+            "view_type": null,
+            "elevation": null
+          }
+        ],
+        "warnings": []
+      },
+      "error": null,
+      "cancel_requested": false,
+      "created_utc": "2026-10-14T05:21:11.8421415Z",
+      "finished_utc": "2026-10-14T05:21:12.9315013Z",
+      "elapsed_ms": 18.0614,
+      "transaction_status": "committed"
+    },
+    "wall-curve-readback": {
+      "schema_version": 1,
+      "operation_id": "4981cb3e-c011-5fd2-8edb-a3a462de8f3d",
+      "status": "completed",
+      "request": {
+        "arguments": {
+          "element": "6c15d509-137d-43fb-8628-d610f36eef36-0004d023"
+        },
+        "document": {
+          "session_id": "673df6e1-fad5-4284-a996-76ca0ec9b729"
+        },
+        "operation": "elements.inspect",
+        "operation_id": "4981cb3e-c011-5fd2-8edb-a3a462de8f3d",
+        "preconditions": {},
+        "schema_version": 1
+      },
+      "result": {
+        "element": {
+          "document_session_id": "673df6e1-fad5-4284-a996-76ca0ec9b729",
+          "id": 315427,
+          "unique_id": "6c15d509-137d-43fb-8628-d610f36eef36-0004d023",
+          "name": "Generic - 6\"",
+          "category": "Walls",
+          "category_id": -2000011,
+          "type_id": 219,
+          "pinned": false,
+          "group_id": -1,
+          "level_id": 30,
+          "location": {
+            "start": [
+              0,
+              0,
+              0
+            ],
+            "end": [
+              8,
+              1,
+              0
+            ]
+          },
+          "bounds": {
+            "min": [
+              -0.031008683647302117,
+              -0.2500000000000002,
+              0
+            ],
+            "max": [
+              8.031008683647306,
+              1.2480694691784173,
+              6
+            ]
+          },
+          "host_id": null,
+          "family_name": null,
+          "placement_type": null,
+          "view_family": null,
+          "view_type": null,
+          "elevation": null
+        },
+        "dependent_ids": [
+          315427,
+          315438
+        ],
+        "phase_created_id": 118390,
+        "phase_demolished_id": -1,
+        "design_option": null,
+        "workset_id": 0,
+        "editable": true,
+        "transform": null,
+        "geometry": null
+      },
+      "error": null,
+      "cancel_requested": false,
+      "created_utc": "2026-10-14T05:21:13.3697462Z",
+      "finished_utc": "2026-10-14T05:21:13.3814786Z",
+      "elapsed_ms": 0.5056,
+      "transaction_status": "not_started"
+    },
+    "delete-preview": {
+      "schema_version": 1,
+      "operation_id": "660c0bd9-df33-5a1a-8e16-d26983b95060",
+      "status": "completed",
+      "request": {
+        "arguments": {
+          "element": "6c15d509-137d-43fb-8628-d610f36eef36-0004d004"
+        },
+        "document": {
+          "session_id": "673df6e1-fad5-4284-a996-76ca0ec9b729"
+        },
+        "operation": "element.delete_preview",
+        "operation_id": "660c0bd9-df33-5a1a-8e16-d26983b95060",
+        "preconditions": {},
+        "schema_version": 1
+      },
+      "result": {
+        "deleted_ids_if_applied": [
+          315396
+        ],
+        "transaction_status": "rolled_back"
+      },
+      "error": null,
+      "cancel_requested": false,
+      "created_utc": "2026-10-14T05:21:13.7509883Z",
+      "finished_utc": "2026-10-14T05:21:13.7710182Z",
+      "elapsed_ms": 4.0983,
+      "transaction_status": "rolled_back"
+    },
+    "delete": {
+      "schema_version": 1,
+      "operation_id": "a49f587d-78c8-5f7f-bcd5-881ece46d137",
+      "status": "completed",
+      "request": {
+        "arguments": {
+          "element": "6c15d509-137d-43fb-8628-d610f36eef36-0004d004",
+          "expected_deleted_ids": [
+            315396
+          ]
+        },
+        "document": {
+          "session_id": "673df6e1-fad5-4284-a996-76ca0ec9b729"
+        },
+        "operation": "element.delete",
+        "operation_id": "a49f587d-78c8-5f7f-bcd5-881ece46d137",
+        "preconditions": {},
+        "schema_version": 1
+      },
+      "result": {
+        "data": {
+          "deleted_ids": [
+            315396
+          ]
+        },
+        "transaction_status": "committed",
+        "actual_elements": [],
+        "warnings": []
+      },
+      "error": null,
+      "cancel_requested": false,
+      "created_utc": "2026-10-14T05:21:13.9811148Z",
+      "finished_utc": "2026-10-14T05:21:13.9979810Z",
+      "elapsed_ms": 5.4096,
+      "transaction_status": "committed"
+    },
+    "capture": {
+      "schema_version": 1,
+      "operation_id": "62cb63d5-6c50-562f-9986-c3e01b8ae2c3",
+      "status": "completed",
+      "request": {
+        "arguments": {
+          "path_prefix": "H:\\Games\\3D Modeling Workflows\\3D Model Workflow\\output\\codex-native-revit-20261013\\evidence\\annotations-batch-02\\drafting-native",
+          "pixels": 1200,
+          "view": "6c15d509-137d-43fb-8628-d610f36eef36-0004cffd"
+        },
+        "document": {
+          "session_id": "673df6e1-fad5-4284-a996-76ca0ec9b729"
+        },
+        "operation": "capture.export",
+        "operation_id": "62cb63d5-6c50-562f-9986-c3e01b8ae2c3",
+        "preconditions": {},
+        "schema_version": 1
+      },
+      "result": {
+        "files": [
+          "H:\\Games\\3D Modeling Workflows\\3D Model Workflow\\output\\codex-native-revit-20261013\\evidence\\annotations-batch-02\\drafting-native - Drafting View - CODEX DISPOSABLE DRAFTING.png"
+        ],
+        "native_export": true
+      },
+      "error": null,
+      "cancel_requested": false,
+      "created_utc": "2026-10-14T05:21:14.1622554Z",
+      "finished_utc": "2026-10-14T05:21:14.5074627Z",
+      "elapsed_ms": 334.5926,
+      "transaction_status": "not_started"
+    }
+  },
+  "checks": {
+    "detail-lines-count": {
+      "actual": 2,
+      "expected": 2,
+      "pass": true
+    },
+    "dependent-blocked": {
+      "actual": "blocked",
+      "expected": "blocked",
+      "pass": true
+    },
+    "independent-completed": {
+      "actual": "completed",
+      "expected": "completed",
+      "pass": true
+    },
+    "dependent-did-not-create": {
+      "actual": 2,
+      "expected": 2,
+      "pass": true
+    },
+    "native-dimension-length": {
+      "actual": 8,
+      "expected": 8,
+      "pass": true
+    },
+    "mirror-copy-count": {
+      "actual": 1,
+      "expected": 1,
+      "pass": true
+    },
+    "curve-end-y": {
+      "actual": 1,
+      "expected": 1,
+      "pass": true
+    },
+    "deleted-target-present": {
+      "actual": true,
+      "expected": true,
+      "pass": true
+    }
+  },
+  "native": true,
+  "dependency_batch": {
+    "schema_version": 1,
+    "batch_id": "ed195430-2d6e-4556-a7dd-42d0293ef219",
+    "status": "partial_completion",
+    "atomic": false,
+    "steps": {
+      "bad-view": {
+        "schema_version": 1,
+        "operation_id": "04194aee-7295-56bd-b2fe-29570ffb76c9",
+        "status": "rolled_back",
+        "request": {
+          "arguments": {
+            "point": [
+              0,
+              0,
+              0
+            ],
+            "text": "THIS MUST FAIL",
+            "type": "933c4a06-93b8-11d3-80f8-00c04f8efc32-000000ea",
+            "view": "missing-view"
+          },
+          "document": {
+            "session_id": "673df6e1-fad5-4284-a996-76ca0ec9b729"
+          },
+          "operation": "annotation.text",
+          "operation_id": "04194aee-7295-56bd-b2fe-29570ffb76c9",
+          "preconditions": {},
+          "schema_version": 1
+        },
+        "result": null,
+        "error": {
+          "code": "RolledBackException",
+          "message": "Element does not exist in the target document.",
+          "details": "Element does not exist in the target document."
+        },
+        "cancel_requested": false,
+        "created_utc": "2026-10-14T05:21:09.3953808Z",
+        "finished_utc": "2026-10-14T05:21:09.4098137Z",
+        "elapsed_ms": 2.5055,
+        "transaction_status": "rolledback"
+      },
+      "independent-read": {
+        "schema_version": 1,
+        "operation_id": "c0d4120b-f836-5faf-863b-0b831d210933",
+        "status": "completed",
+        "request": {
+          "arguments": {
+            "class": "TextNote"
+          },
+          "document": {
+            "session_id": "673df6e1-fad5-4284-a996-76ca0ec9b729"
+          },
+          "operation": "elements.query",
+          "operation_id": "c0d4120b-f836-5faf-863b-0b831d210933",
+          "preconditions": {},
+          "schema_version": 1
+        },
+        "result": {
+          "items": [
+            {
+              "document_session_id": "673df6e1-fad5-4284-a996-76ca0ec9b729",
+              "id": 315396,
+              "unique_id": "6c15d509-137d-43fb-8628-d610f36eef36-0004d004",
+              "name": "1/4\" Arial",
+              "category": "Text Notes",
+              "category_id": -2000300,
+              "type_id": 234,
+              "pinned": false,
+              "group_id": -1,
+              "level_id": -1,
+              "location": null,
+              "bounds": null,
+              "host_id": null,
+              "family_name": null,
+              "placement_type": null,
+              "view_family": null,
+              "view_type": null,
+              "elevation": null
+            },
+            {
+              "document_session_id": "673df6e1-fad5-4284-a996-76ca0ec9b729",
+              "id": 315415,
+              "unique_id": "6c15d509-137d-43fb-8628-d610f36eef36-0004d017",
+              "name": "1/4\" Arial",
+              "category": "Text Notes",
+              "category_id": -2000300,
+              "type_id": 234,
+              "pinned": false,
+              "group_id": -1,
+              "level_id": -1,
+              "location": null,
+              "bounds": null,
+              "host_id": null,
+              "family_name": null,
+              "placement_type": null,
+              "view_family": null,
+              "view_type": null,
+              "elevation": null
+            }
+          ],
+          "offset": 0,
+          "next_offset": null,
+          "units": "internal feet"
+        },
+        "error": null,
+        "cancel_requested": false,
+        "created_utc": "2026-10-14T05:21:09.5660446Z",
+        "finished_utc": "2026-10-14T05:21:09.5780369Z",
+        "elapsed_ms": 1.1434,
+        "transaction_status": "not_started"
+      },
+      "dependent-text": {
+        "status": "blocked",
+        "reason": "prerequisite_not_completed",
+        "depends_on": [
+          "bad-view"
+        ]
+      }
+    },
+    "metrics": {
+      "http_round_trips": 4,
+      "request_bytes": 539,
+      "response_bytes": 3238,
+      "elapsed_seconds": 0.37182149998261593
+    }
+  },
+  "limitations": [
+    "Tag placement not included; requires an explicit compatible tag fixture",
+    "Native dependent batch stops failed view prerequisites",
+    "No production annotations changed"
+  ]
+}
