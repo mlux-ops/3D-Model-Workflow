@@ -83,6 +83,16 @@ def _asset_matches(static_mesh, data):
     return description.get_triangle_count() == len(data["triangles"]) and meshes.get_num_uv_channels(static_mesh, 0) >= 1
 
 
+def _ensure_nanite(static_mesh):
+    """Switch Nanite on for a mesh asset that lacks it. Returns whether it is on afterwards."""
+    meshes = unreal.get_editor_subsystem(unreal.StaticMeshEditorSubsystem)
+    settings = meshes.get_nanite_settings(static_mesh)
+    if not settings.enabled:
+        settings.enabled = True
+        meshes.set_nanite_settings(static_mesh, settings, True)
+    return bool(meshes.get_nanite_settings(static_mesh).enabled)
+
+
 def _read(folder, file_name):
     with open(os.path.join(folder, file_name), encoding="utf-8") as handle:
         return json.load(handle)
@@ -138,7 +148,11 @@ async def build(folder, start=0, count=40, record_path=None):
                 problems.append(name + ": mesh in memory has no UV channel or no triangles; no asset made")
                 continue
             options = unreal.GeometryScriptCreateNewStaticMeshAssetOptions()
+            # enable_nanite alone left the first asset without Nanite in 5.9.0; the setting that counts is nanite_settings
             options.enable_nanite = True
+            nanite = unreal.MeshNaniteSettings()
+            nanite.enabled = True
+            options.nanite_settings = nanite
             options.enable_collision = True
             options.enable_recompute_normals = False
             static_mesh, outcome = unreal.GeometryScript_NewAssetUtils.create_new_static_mesh_asset_from_mesh(mesh, asset_path, options)
@@ -146,6 +160,8 @@ async def build(folder, start=0, count=40, record_path=None):
             failed += 1
             problems.append(name + ": no asset came back")
             continue
+        if not _ensure_nanite(static_mesh):
+            problems.append(name + ": Nanite could not be switched on; the object was placed without it")
         pivot = data["pivot"]
         actor = actors.spawn_actor_from_object(static_mesh, unreal.Vector(pivot[0], pivot[1], pivot[2]), unreal.Rotator(0.0, 0.0, 0.0))
         if actor is None:
