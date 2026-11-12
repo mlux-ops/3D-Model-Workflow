@@ -11,7 +11,10 @@ and a placed object. A manifest of what was made, with each building's
 measured heights, goes to <manifest .json> inside the repository.
 
 Buildings: one object per 2022 footprint. Walls follow the footprint from the
-ground to the roof; the roof is the 2022 top surface inside the footprint,
+ground to the roof, and the roof's triangles use every piece of the footprint
+as an edge, so that each building is one skin, open only at its foot (checked
+per building and written to the manifest as "sound"). The roof is the 2022
+top surface inside the footprint,
 smoothed over 3 ft and capped at its 97th percentile so that tree crowns
 hanging over a roof do not become spikes. The two houses that stood on the
 lot in 2022 are left out; so is any footprint that the data square cuts.
@@ -89,6 +92,16 @@ def wind(vertices, triangles, outward):
     return t
 
 
+def topology(triangles):
+    """Count what makes a mesh unsound: edges shared by more than two faces, faces turned against their neighbour, open edges."""
+    t = np.asarray(triangles)
+    directed = np.vstack([t[:, [0, 1]], t[:, [1, 2]], t[:, [2, 0]]])
+    _, used = np.unique(np.sort(directed, axis=1), axis=0, return_counts=True)
+    _, same_way = np.unique(directed, axis=0, return_counts=True)
+    return {"edges_with_3_faces": int((used > 2).sum()), "edges_with_faces_turned_against_each_other": int((same_way > 1).sum()),
+            "open_edges": int((used == 1).sum())}
+
+
 def densify(ring, step):
     out = []
     for (x0, y0), (x1, y1) in zip(ring[:-1], ring[1:]):
@@ -133,15 +146,39 @@ def building_mesh(polygon, frame, top_smooth, ground, valid):
     tree = cKDTree(np.column_stack([sx, sy]))
 
     boundary = densify(list(polygon.exterior.coords), ROOF_STEP_CM)
+    boundary = [p for k, p in enumerate(boundary) if math.hypot(p[0] - boundary[k - 1][0], p[1] - boundary[k - 1][1]) > 1.0]
+    if len(boundary) < 3:
+        return None
     ix, iy = np.meshgrid(np.arange(minx + 50.0, maxx, ROOF_STEP_CM), np.arange(miny + 50.0, maxy, ROOF_STEP_CM))
     interior = [(a, b) for a, b in zip(ix.ravel(), iy.ravel()) if inner_prepared.contains(Point(a, b))]
-    points = np.array(boundary + interior)
+    # The roof's triangles must use every piece of the outline as an edge. A plain Delaunay triangulation does not
+    # promise that, and where it fails a roof triangle crosses the outline: the roof then overhangs or misses the wall
+    # and three faces meet on one edge, which Unreal rejects. So a missing piece is halved until every piece is an edge.
+    for _ in range(40):
+        points = np.array(boundary + interior)
+        count_boundary = len(boundary)
+        triangulation = Delaunay(points)
+        simplices = triangulation.simplices
+        present = set()
+        for a, b in ((0, 1), (1, 2), (2, 0)):
+            present.update(zip(np.minimum(simplices[:, a], simplices[:, b]).tolist(), np.maximum(simplices[:, a], simplices[:, b]).tolist()))
+        missing = [i for i in range(count_boundary) if (min(i, (i + 1) % count_boundary), max(i, (i + 1) % count_boundary)) not in present]
+        if not missing:
+            break
+        for i in reversed(missing):
+            j = (i + 1) % count_boundary
+            boundary.insert(i + 1, ((boundary[i][0] + boundary[j][0]) / 2.0, (boundary[i][1] + boundary[j][1]) / 2.0))
+    else:
+        return None
     _, nearest = tree.query(points)
     z = heights[nearest]
-    count_boundary = len(boundary)
-    triangulation = Delaunay(points)
     keep = []
-    for simplex in triangulation.simplices:
+    for simplex in simplices:
+        # Points along one straight wall are not exactly in line once computed, so the triangulation makes
+        # triangles of no width there, lying on the wall. Such a triangle would be a third face on the wall's top edge.
+        (ax, ay), (bx, by), (cx, cy) = points[simplex]
+        if abs((bx - ax) * (cy - ay) - (cx - ax) * (by - ay)) < 1.0:
+            continue
         centre = points[simplex].mean(axis=0)
         if prepared.contains(Point(centre[0], centre[1])):
             keep.append(simplex)
@@ -155,24 +192,29 @@ def building_mesh(polygon, frame, top_smooth, ground, valid):
     vertices = np.vstack([roof_vertices, base])
     offset = len(roof_vertices)
     wall, outward = [], []
+    # outward is to the right of the outline's direction when the outline runs counter-clockwise, to the left otherwise
+    side = 1.0 if polygon.exterior.is_ccw else -1.0
+    if not Polygon(boundary).exterior.is_ccw == polygon.exterior.is_ccw:
+        side = -side
     for i in range(count_boundary):
         j = (i + 1) % count_boundary
-        mid = (points[i] + points[j]) / 2.0
         direction = points[j] - points[i]
         length = math.hypot(direction[0], direction[1])
-        if length < 1.0e-6:
-            continue
-        perpendicular = np.array([direction[1], -direction[0]]) / length
-        if prepared.contains(Point(mid[0] + perpendicular[0] * 5.0, mid[1] + perpendicular[1] * 5.0)):
-            perpendicular = -perpendicular
+        perpendicular = side * np.array([direction[1], -direction[0]]) / length
         out = [perpendicular[0], perpendicular[1], 0.0]
         wall.append([i, j, offset + j])
         wall.append([i, offset + j, offset + i])
         outward += [out, out]
     walls = wind(vertices, np.array(wall), np.array(outward))
     triangles = np.vstack([roof, walls])
-    stats = {"ground_cm": round(ground_here + 30.0, 1), "roof_typical_cm": round(float(np.median(heights)), 1), "roof_high_cm": round(cap, 1),
-             "roof_low_cm": round(float(np.percentile(heights, 10)), 1), "footprint_sq_m": round(polygon.area / 1.0e4, 1)}
+    stats = topology(triangles)
+    stats["foot_edges"] = count_boundary
+    if stats["edges_with_3_faces"] or stats["edges_with_faces_turned_against_each_other"] or stats["open_edges"] != count_boundary:
+        stats["sound"] = False
+    else:
+        stats["sound"] = True
+    stats.update({"ground_cm": round(ground_here + 30.0, 1), "roof_typical_cm": round(float(np.median(heights)), 1), "roof_high_cm": round(cap, 1),
+             "roof_low_cm": round(float(np.percentile(heights, 10)), 1), "footprint_sq_m": round(polygon.area / 1.0e4, 1)})
     return vertices, triangles, stats
 
 
@@ -285,6 +327,9 @@ def main(argv):
     b = manifest["buildings"]
     print(json.dumps({"buildings": len(b), "zone_1": sum(1 for e in b if e["zone"] == 1), "zone_2": sum(1 for e in b if e["zone"] == 2),
                       "building_triangles": sum(e["triangles"] for e in b), "left_out": len(manifest["left_out"]),
+                      "buildings_not_sound": [e["name"] for e in b if not e["sound"]],
+                      "edges_with_3_faces": sum(e["edges_with_3_faces"] for e in b),
+                      "edges_with_faces_turned_against_each_other": sum(e["edges_with_faces_turned_against_each_other"] for e in b),
                       "left_out_why": sorted({e["why"] for e in manifest["left_out"]}),
                       "ground_tiles": len(manifest["ground"]), "ground_triangles": sum(e["triangles"] for e in manifest["ground"]),
                       "fine_tiles": sum(1 for e in manifest["ground"] if e["cell_ft"] == 1)}))
