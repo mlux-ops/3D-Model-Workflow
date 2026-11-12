@@ -117,11 +117,11 @@ def main(argv):
         if mode == "tool":
             arguments = json.loads(argv[4]) if len(argv) > 4 else {}
             return show(client.call("call_tool", {"toolset_name": argv[2], "tool_name": argv[3], "arguments": arguments}, 300.0))
-        if mode in ("wg", "wm", "wv", "wa"):
+        if mode in ("wg", "wm", "wv", "wa", "wl"):
             # As "ws", with one more Phase 7 module loaded too: wieland_ground (as wg), wieland_massing (as wm)
-            # wieland_vegetation (as wv) or wieland_audit (as wa).
+            # wieland_vegetation (as wv), wieland_audit (as wa) or, for Phase 8, wieland_lighting (as wl).
             tools = os.path.dirname(os.path.abspath(__file__)).replace(os.sep, "/")
-            module = {"wg": "wieland_ground", "wm": "wieland_massing", "wv": "wieland_vegetation", "wa": "wieland_audit"}[mode]
+            module = {"wg": "wieland_ground", "wm": "wieland_massing", "wv": "wieland_vegetation", "wa": "wieland_audit", "wl": "wieland_lighting"}[mode]
             source = ("import sys\nimport importlib\nsys.dont_write_bytecode = True\n"
                       "TOOLS = %r\nif TOOLS not in sys.path:\n    sys.path.insert(0, TOOLS)\n"
                       "import wieland_site as ws\nimportlib.reload(ws)\n"
