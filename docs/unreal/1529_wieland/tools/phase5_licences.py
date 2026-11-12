@@ -145,8 +145,20 @@ def _texture_group(name):
             "Not recorded per image.", NONE, "No record found; listed for the owner.")
 
 
+LIBRARY = ("Repository package: Daltile Remedy Hydro tile",
+           "Colour, relief and roughness images of this repository's package of the Daltile Remedy Hydro 2 by 10 inch "
+           "fluted tile, and the library instance built from them in Phase 5 (assigned to no surface)",
+           "This repository's package under output\\; its colour image is derived from the manufacturer's product "
+           "pictures",
+           "Relief and roughness: this repository's own work. Colour: the manufacturer's terms for its product pictures "
+           "are not recorded.",
+           NONE, "material_library.csv; the package's manifest and README. Listed for the owner; nothing deleted.")
+
+
 def classify(relative):
     path = relative.replace("\\", "/")
+    if path.startswith("Wieland1529/Materials/Library/") or "/T_W1529_Daltile_" in path:
+        return LIBRARY
     for folder, group, what, source, licence, status, note in FOLDERS:
         if folder == "" or path == folder or path.startswith(folder + "/"):
             if "/Textures/" in path and ("Datasmith" in path or "Revit1527" in path or "/Scratch/" in path):
