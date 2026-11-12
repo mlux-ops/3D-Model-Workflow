@@ -35,11 +35,47 @@ def _rows(csv_path):
         return list(csv.DictReader(handle))
 
 
-def build_candidates(csv_path, start=0, count=1000, rebuild=False):
-    """Build and save the instances of rows [start, start + count); returns a summary."""
+def verify_candidates(csv_path):
+    """Compare every instance with its row: parent, numbers, colours, images. Returns the rows that differ."""
+    wrong = {}
+    for row in _rows(csv_path):
+        instance = unreal.load_asset(row["candidate_asset"])
+        if instance is None:
+            wrong[row["material"]] = ["asset missing"]
+            continue
+        found = []
+        parent = instance.get_editor_property("parent")
+        if parent is None or parent.get_path_name().split(".")[0] != row["parent"]:
+            found.append("parent")
+        for key, value in json.loads(row["scalars"]).items():
+            if abs(MEL.get_material_instance_scalar_parameter_value(instance, key) - float(value)) > 1e-4:
+                found.append(key)
+        for key, value in json.loads(row["vectors"]).items():
+            colour = MEL.get_material_instance_vector_parameter_value(instance, key)
+            if max(abs(a - b) for a, b in zip((colour.r, colour.g, colour.b, colour.a), value)) > 1e-4:
+                found.append(key)
+        for key, value in json.loads(row["textures"]).items():
+            texture = MEL.get_material_instance_texture_parameter_value(instance, key)
+            if texture is None or texture.get_path_name().split(".")[0] != value:
+                found.append(key)
+        for key, value in json.loads(row["switches"]).items():
+            if bool(MEL.get_material_instance_static_switch_parameter_value(instance, key)) != bool(value):
+                found.append(key)
+        if found:
+            wrong[row["material"]] = found
+    return wrong
+
+
+def build_candidates(csv_path, start=0, count=1000, rebuild=False, only=None):
+    """Build and save the instances of rows [start, start + count); returns a summary.
+
+    only: a list of material names; when given, other rows are passed over.
+    """
     tools = unreal.AssetToolsHelpers.get_asset_tools()
     built, skipped, problems = [], 0, []
     for row in _rows(csv_path)[start:start + count]:
+        if only is not None and row["material"] not in only:
+            continue
         path = row["candidate_asset"]
         exists = unreal.EditorAssetLibrary.does_asset_exist(path)
         if exists and not rebuild:

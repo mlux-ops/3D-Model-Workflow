@@ -371,6 +371,23 @@ class Maker:
                           "Revit left the gloss at its default; the value here is from the name only.")
 
 
+def tune(name, recipe):
+    """Corrections the test table (phase5_material_tests.py) asked for; one change per finding."""
+    images = " ".join(recipe["textures"].values())
+    # the relief of these three sets did not show on the wall piece lit at a grazing angle
+    if any(key in images for key in ("Fabric061", "Concrete046", "Travertine009")):
+        recipe["scalars"]["NormalStrength"] = 2.0
+    # the leather image is uneven at large scale, so its repeat could be recognised when laid plainly
+    if "Leather031" in images:
+        recipe["switches"]["AntiRepeat"] = True
+    # Revit's relief image of this block does not wrap (a visible seam); the colour image does
+    if name.startswith("CMU_Block"):
+        recipe["textures"].pop("NormalMap", None)
+        recipe["scalars"].pop("NormalStrength", None)
+        recipe["note"] += " Revit's relief image is left out because it shows a seam where it wraps."
+    return recipe
+
+
 def main(audit_csv, params_json, sets_folder, out_csv):
     with open(audit_csv, encoding="utf-8", newline="") as handle:
         audit = list(csv.DictReader(handle))
@@ -382,7 +399,7 @@ def main(audit_csv, params_json, sets_folder, out_csv):
         if int(item["confidence"]) > 3:
             continue
         name = item["material"]
-        recipe = maker.recipe(name, item["family"])
+        recipe = tune(name, maker.recipe(name, item["family"]))
         rows.append({
             "material": name,
             "family": item["family"],
