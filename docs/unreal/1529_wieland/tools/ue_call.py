@@ -20,8 +20,8 @@ import urllib.request
 
 URL = "http://127.0.0.1:8000/mcp"
 PROTOCOL = "2025-06-18"
-PY_TOOLSET = "EditorToolset.PythonToolset"
-PY_TOOL = "ExecutePython"
+PY_TOOLSET = "editor_toolset.toolsets.python_scripting.PythonScriptingTools"
+PY_TOOL = "execute_python"
 
 
 class Client:
