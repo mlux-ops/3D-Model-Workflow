@@ -290,6 +290,136 @@ def make_master():
             "sublevels": sublevels()}
 
 
+# Step 6.8, part 2: boxes that load the unit levels by where the viewer stands.
+# (x_min, y_min, z_min, x_max, y_max, z_max) in level centimetres. The building's outer wall faces are
+# x -1417 to -91 and y -3024 to -311; the penthouse floors end at y -2486 (a terrace lies behind them);
+# the 3rd finished floor is at 853.4 and the roof deck floor at 1524.
+TAG_GENERATED = "W1529.Generated"
+VOLUME_LABEL = "SV_W1529_"
+FAR = (-6000.0, -8000.0, -600.0, 4000.0, 6000.0, 5000.0)  # the outdoor region the boxes cover
+UNIT_BOXES = {
+    "NorthTriplex": (-1420.0, -3026.0, -250.0, PARTY_X, -309.0, 833.0),
+    "SouthTriplex": (PARTY_X, -3026.0, -250.0, -88.0, -309.0, 833.0),
+    "NorthPenthouse": (-1420.0, -2490.0, 833.0, PARTY_X, -309.0, 1514.0),
+    "SouthPenthouse": (PARTY_X, -2490.0, 833.0, -88.0, -309.0, 1514.0),
+}
+OUTDOOR_BOXES = {
+    "Outdoor_North": (FAR[0], FAR[1], FAR[2], -1418.0, FAR[4], FAR[5]),
+    "Outdoor_South": (-90.0, FAR[1], FAR[2], FAR[3], FAR[4], FAR[5]),
+    "Outdoor_Street": (-1420.0, -311.0, FAR[2], -88.0, FAR[4], FAR[5]),
+    "Outdoor_Rear": (-1420.0, FAR[1], FAR[2], -88.0, -3024.0, FAR[5]),
+    "Outdoor_RoofDeck": (-1420.0, -3026.0, 1512.0, -88.0, -309.0, FAR[5]),
+    "Outdoor_RearTerrace": (-1420.0, -3026.0, 831.0, -88.0, -2488.0, 1514.0),
+}
+VOLUME_HEAD = ["box", "loads", "x_min", "y_min", "z_min", "x_max", "y_max", "z_max", "meaning"]
+
+
+def _volume_actors():
+    return [a for a in _actors() if isinstance(a, unreal.LevelStreamingVolume)]
+
+
+def _volume_box(actor):
+    origin, extent = actor.get_actor_bounds(False)
+    return (origin.x - extent.x, origin.y - extent.y, origin.z - extent.z,
+            origin.x + extent.x, origin.y + extent.y, origin.z + extent.z)
+
+
+def make_volumes(out_csv):
+    """With L_Site_M4 open: place the boxes in the top level, tie each unit level to its own box and
+    to every outdoor box, and write the list. Does not save; see save_master(). Refuses when boxes exist."""
+    world = _world()
+    if world.get_path_name().split(".")[0] != MASTER_LEVEL:
+        raise RuntimeError("refused: the open level is %s, not %s" % (world.get_path_name(), MASTER_LEVEL))
+    if _volume_actors():
+        raise RuntimeError("refused: the level has streaming boxes already")
+    editor = unreal.get_editor_subsystem(unreal.LevelEditorSubsystem)
+    editor.set_current_level_by_name(MASTER_LEVEL.split("/")[-1])
+    subsystem = unreal.get_editor_subsystem(unreal.EditorActorSubsystem)
+    made = {}
+    rows = []
+    boxes = dict(UNIT_BOXES)
+    boxes.update(OUTDOOR_BOXES)
+    for name, box in boxes.items():
+        centre = unreal.Vector((box[0] + box[3]) / 2.0, (box[1] + box[4]) / 2.0, (box[2] + box[5]) / 2.0)
+        actor = subsystem.spawn_actor_from_class(unreal.LevelStreamingVolume, centre, unreal.Rotator())
+        if _level_name(actor) != MASTER_LEVEL.split("/")[-1]:
+            raise RuntimeError("the box %s went to %s" % (name, _level_name(actor)))
+        # A new volume is a cube of 200 cm; the scale brings it to the size wanted.
+        actor.set_actor_scale3d(unreal.Vector((box[3] - box[0]) / 200.0, (box[4] - box[1]) / 200.0,
+                                              (box[5] - box[2]) / 200.0))
+        actor.set_actor_label(VOLUME_LABEL + name)
+        actor.set_folder_path("W1529_Generated/StreamingBoxes")
+        actor.tags = [unreal.Name(TAG_GENERATED)]
+        actor.set_editor_property("streaming_usage", unreal.StreamingVolumeUsage.SVB_LOADING_AND_VISIBILITY)
+        made[name] = actor
+        loads = name if name in UNIT_BOXES else "all four unit levels"
+        meaning = "inside this unit" if name in UNIT_BOXES else "outdoors"
+        rows.append([VOLUME_LABEL + name, loads] + [round(v, 1) for v in _volume_box(actor)] + [meaning])
+    tied = {}
+    for group in UNIT_GROUPS:
+        streaming = unreal.GameplayStatics.get_streaming_level(world, level_path(group))
+        if streaming is None:
+            raise RuntimeError("the level of %s is not in the top level" % group)
+        streaming.set_editor_property("editor_streaming_volumes",
+                                      [made[group]] + [made[name] for name in OUTDOOR_BOXES])
+        tied[group] = len(streaming.get_editor_property("editor_streaming_volumes"))
+    with open(out_csv, "w", newline="", encoding="utf-8") as handle:
+        writer = csv.writer(handle)
+        writer.writerow(VOLUME_HEAD)
+        writer.writerows(rows)
+    return {"boxes": len(made), "tied": tied}
+
+
+def loaded_at(point):
+    """Read-only: which unit levels the boxes saved in the open level load for a viewer at this point.
+    Reads the boxes and their ties back from the level, as the engine does when the scene runs."""
+    world = _world()
+    found = {}
+    for group in UNIT_GROUPS:
+        streaming = unreal.GameplayStatics.get_streaming_level(world, level_path(group))
+        inside = []
+        for volume in streaming.get_editor_property("editor_streaming_volumes"):
+            box = _volume_box(volume)
+            if all(box[i] <= point[i] <= box[i + 3] for i in range(3)):
+                inside.append(volume.get_actor_label())
+        found[group] = inside
+    return found
+
+
+def show_for(point):
+    """Show in the editor only the unit levels that loaded_at() gives for this point (the shell and
+    the surroundings stay). The editor itself keeps every level in memory; this sets what is drawn."""
+    world = _world()
+    state = loaded_at(point)
+    for level in unreal.EditorLevelUtils.get_levels(world):
+        package = level.get_outermost().get_name()
+        for group in UNIT_GROUPS:
+            if package == level_path(group):
+                unreal.EditorLevelUtils.set_level_visibility(level, bool(state[group]), False)
+    return sorted(group for group in UNIT_GROUPS if state[group])
+
+
+def show_all():
+    world = _world()
+    for level in unreal.EditorLevelUtils.get_levels(world):
+        if level.get_outermost().get_name() != world.get_outermost().get_name():
+            unreal.EditorLevelUtils.set_level_visibility(level, True, False)
+
+
+def save_master():
+    """Save L_Site_M4 by name. Refuses while temporary cameras or lamps of the view tools are in it."""
+    world = _world()
+    if world.get_path_name().split(".")[0] != MASTER_LEVEL:
+        raise RuntimeError("refused: the open level is %s, not %s" % (world.get_path_name(), MASTER_LEVEL))
+    temporary = [a.get_actor_label() for a in _actors()
+                 if _level_name(a) == MASTER_LEVEL.split("/")[-1] and a.get_actor_label().startswith("TEMP_")]
+    if temporary:
+        raise RuntimeError("refused: temporary objects in the level: %s" % temporary[:5])
+    editor = unreal.get_editor_subsystem(unreal.LevelEditorSubsystem)
+    editor.set_current_level_by_name(MASTER_LEVEL.split("/")[-1])
+    return bool(editor.save_current_level())
+
+
 def census():
     """Read-only: objects per level and per unit mark in what is loaded now."""
     counts = {}
