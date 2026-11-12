@@ -370,6 +370,149 @@ def write_json(name, data):
 
 
 # ---------------------------------------------------------------------------------------------
+# Haze, distance fog and clouds (step 8.6), and the standard daylight readings.
+
+OPEN_AIR = (-754.0, -1500.0, 5500.0)       # 55 m above the lot, clear of every roof
+OPEN_AIR_2 = (-1754.0, -1500.0, 5500.0)    # a second card 10 m north; that one faces the sun
+SIDEWALK = (-754.4, 250.0, 2.0)            # on the sidewalk in front of the building
+SIDEWALK_BARE = (-454.4, 250.0, 2.0)       # the sidewalk surface itself, 3 m south of the card
+
+
+def component_of(label, cls):
+    actor = by_label(label)
+    if actor is None:
+        return None
+    found = actor.get_components_by_class(cls)
+    return found[0] if found else None
+
+
+def props(label, cls, names, values=None):
+    """Read the named properties of an object's component; with values (a dict), set those first."""
+    component = component_of(label, cls)
+    if component is None:
+        return {"error": "no " + label}
+    if values:
+        component.modify()
+        for key, value in values.items():
+            component.set_editor_property(key, value)
+    out = {}
+    for key in names:
+        try:
+            value = component.get_editor_property(key)
+        except Exception as error:  # a property name that this engine version does not have
+            out[key] = "ERROR " + str(error)[:80]
+            continue
+        if isinstance(value, (unreal.LinearColor, unreal.Color)):
+            value = [value.r, value.g, value.b, value.a]
+        elif isinstance(value, (bool, int, float, str)):
+            pass
+        else:
+            value = str(value)
+        out[key] = value
+    return out
+
+
+def add_to_lighting(cls, label, condition="SummerAfternoon", location=(0.0, 0.0, 0.0)):
+    """Add an object of the class to the lighting level of the condition, unless one with the label is there."""
+    path = CONDITIONS[condition][0]
+    existing = by_label(label, path)
+    if existing is not None:
+        return {"label": label, "existed": True}
+    if not _current(path):
+        return {"error": "cannot make the lighting level current"}
+    try:
+        _spawn(cls, label, [TAG_GENERATED, TAG_LIGHTING, TAG_LIGHTING + "." + condition], location)
+    finally:
+        _current(MASTER_LEVEL)
+    return {"label": label, "existed": False, "level": level_of(by_label(label))}
+
+
+def window_restore():
+    """A minimized editor draws nothing: captures read zero and pictures fail (found in J4). This puts every
+    minimized window of the editor back on screen without bringing it to the front (bringing it to the
+    front and then losing the front is what minimized it). Returns how many windows were minimized."""
+    import ctypes
+    user32 = ctypes.windll.user32
+    found = []
+    proto = ctypes.WINFUNCTYPE(ctypes.c_bool, ctypes.c_void_p, ctypes.c_void_p)
+
+    def visit(hwnd, _):
+        pid = ctypes.c_ulong(0)
+        user32.GetWindowThreadProcessId(ctypes.c_void_p(hwnd), ctypes.byref(pid))
+        if pid.value == os.getpid() and user32.IsWindowVisible(ctypes.c_void_p(hwnd)) and user32.IsIconic(ctypes.c_void_p(hwnd)):
+            found.append(hwnd)
+        return True
+
+    user32.EnumWindows(proto(visit), 0)
+    for hwnd in found:
+        user32.ShowWindow(ctypes.c_void_p(hwnd), 4)  # SW_SHOWNOACTIVATE
+    return len(found)
+
+
+def view_station(name):
+    """Put the editor's view at a station camera of Phase 4 and keep the view drawing every frame."""
+    path = os.path.join(os.path.dirname(REVIEW), "phase4", "stations", "station_cameras.json")
+    with open(path, "r", encoding="utf-8") as handle:
+        record = json.load(handle)["cameras"][name]
+    loc, rot = record["loc"], record["rot"]
+    unreal.get_editor_subsystem(unreal.UnrealEditorSubsystem).set_level_viewport_camera_info(
+        unreal.Vector(*loc), unreal.Rotator(pitch=rot[0], yaw=rot[1], roll=rot[2]))
+    unreal.get_editor_subsystem(unreal.LevelEditorSubsystem).editor_set_viewport_realtime(True)
+    return record
+
+
+async def frame_ms(seconds=4.0, settle=2.0):
+    """Mean and 95th-percentile time of the editor's frames over a few seconds, in milliseconds, and whether
+    the editor was the front window. A quick comparison figure, not a profile."""
+    import ctypes
+    await wait_frames(settle)
+    deltas = []
+    handle = unreal.register_slate_post_tick_callback(lambda dt: deltas.append(dt))
+    try:
+        await wait_frames(seconds)
+    finally:
+        unreal.unregister_slate_post_tick_callback(handle)
+    values = sorted(d * 1000.0 for d in deltas)
+    if not values:
+        return {"error": "no frames"}
+    pid = ctypes.c_ulong(0)
+    ctypes.windll.user32.GetWindowThreadProcessId(ctypes.windll.user32.GetForegroundWindow(), ctypes.byref(pid))
+    return {"frames": len(values), "mean_ms": round(sum(values) / len(values), 3),
+            "p95_ms": round(values[int(0.95 * (len(values) - 1))], 3), "editor_in_front": pid.value == os.getpid()}
+
+
+async def daylight_readings(settle=5.0, sidewalk=True):
+    """The J3 readings again: flat card in open air (sun and sky, then sky alone), a card facing the sun,
+    a flat card on the sidewalk, and the bare sidewalk. Temporary objects are removed at the end."""
+    out = {"windows_restored": window_restore(), "removed_before": temp_clear()}
+    ev = read_exposure("LGT_Exposure_Outdoors")["ev100"]
+    sun = read_sun()
+    out["sun"] = sun
+    out["ev100"] = ev
+    card_place("flat", OPEN_AIR)
+    card_place("facing", OPEN_AIR_2, sun["bearing"], sun["height"])
+    if sidewalk:
+        card_place("walk", SIDEWALK)
+        probe_place("concrete", (SIDEWALK_BARE[0] - 80.0, SIDEWALK_BARE[1], 62.0), SIDEWALK_BARE)
+    await wait_frames(settle)
+    out["flat_sun_and_sky"] = card_read("flat")
+    out["facing_sun"] = card_read("facing")
+    if sidewalk:
+        out["sidewalk_card"] = card_read("walk")
+        out["sidewalk_concrete"] = probe_read("concrete", ev)
+    card_shade("flat", OPEN_AIR, sun["bearing"], sun["height"])
+    await wait_frames(settle)
+    out["flat_sky_only"] = card_read("flat")
+    out["removed_after"] = temp_clear()
+    out["short"] = {"flat_lux": round(out["flat_sun_and_sky"]["lux"]), "sky_lux": round(out["flat_sky_only"]["lux"]),
+                    "facing_lux": round(out["facing_sun"]["lux"]),
+                    "walk_lux": round(out["sidewalk_card"]["lux"]) if sidewalk else None,
+                    "concrete_stops": round(out["sidewalk_concrete"]["stops_against_middle_grey"], 3) if sidewalk else None,
+                    "clamped": any(out[k].get("clamped") for k in ("flat_sun_and_sky", "facing_sun", "flat_sky_only"))}
+    return out
+
+
+# ---------------------------------------------------------------------------------------------
 # Reading the brightness of a real surface (no card): a capture camera aimed at a point.
 
 def probe_place(name, eye, target, fov=10.0):
