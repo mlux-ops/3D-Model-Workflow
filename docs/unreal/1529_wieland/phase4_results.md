@@ -2,7 +2,7 @@
 
 Companion to [PLAN.md](PLAN.md). Written as each step finishes, so a new session can resume from it. Earlier records: `phase1_results.md`, `phase2_results.md`, `phase3_results.md`.
 
-**Status at 20:30 Central on 2026-11-11: finished as far as the evidence in hand allows.** Two of the five acceptance lines are met in part, three are answered by a workaround; see "Acceptance" below. (Begun at 17:50; the editor stopped at 17:41:54 on the first mesh asset and the phase was resumed at 19:58.) The owner wrote "continue, do not stop unless absolutely neccessary" after Phase 3 was reported complete.
+**Status at 20:25 Central on 2026-11-11: finished as far as the evidence in hand allows.** Two of the five acceptance lines are met in part, three are answered by a workaround; see "Acceptance" below. (Begun at 17:50; the editor stopped at 17:41:54 on the first mesh asset and the phase was resumed at 19:58.) The owner wrote "continue, do not stop unless absolutely neccessary" after Phase 3 was reported complete.
 
 **What this phase can and cannot be without the site visit.** The plan builds Zone 1 (everything a station sees within 40 m) from the owner's photographs and measurements. There are none: the site visit of Phase 2 was not made. So this phase builds what the evidence in hand supports, which the plan's own risk list foresees: every neighbouring building as its own object with its 2022 footprint, height and roof form, and the ground with its kerbs, all from the 2022 laser scan and the county's footprints. Facade detail, street furniture and the side-by-side sheets against photographs stay as gaps.
 
