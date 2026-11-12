@@ -1094,3 +1094,11 @@ Entries from the session that carried out Phase 5, 20:43 to 22:05. Results are i
 - State: J1 (step 6.1) done and committed in `6b98c89c`. J2 left no saved asset (no `Content\Wieland1529\Interiors\` folder on disk); unsaved meshes may sit in the editor's memory and should be discarded, not saved. The agent's partial `tools\wieland_refine.py` is committed as found.
 - Resume: redo J2 from its start; see the status lines at the top of `docs\unreal\1529_wieland\phase6_results.md`. Re-arm `watcher.ps1` only when an unattended run is wanted again.
 - Lesson: killing a worker mid-step costs at most one step because the journal commits a PENDING line before each step; prefer stopping at a journal commit when the owner allows the wait.
+
+### Overnight idle of Phase 6 -- 2026-11-12 (supervising session)
+
+- Error: the Phase 6 agent hit its usage limit at 00:24 ("resets 2:30am"). The watcher saw it at 00:41, escalated and exited, as it was built to. The supervising session was itself out of usage and could not act, so nothing ran from 02:30 to 09:07. The owner's instruction was that the work must not stop.
+- Cause: the design depended on the supervisor answering every escalation; the watcher could restart the editor but not the agent, and it stopped watching after any escalation.
+- Fix (09:11): `watcher.ps1` now runs detached (started through WMI, single copy via `watcher.pid`) and acts by itself: relaunches the agent when it has stopped mid-phase (a `| PENDING |` journal cell), stops a stuck agent after a usage limit and relaunches 5 minutes after the reset time parsed by `digest.py`, kills and relaunches after 90 minutes of no activity, and starts the next phase from `prompt_phase<N+1>.txt` when a phase closes. Prompts for Phases 7 to 11 were written ahead (commit `48f8441a`). A cap of 5 relaunches without a new commit stops loops. Anything it cannot handle goes to `alerts.txt`; it no longer exits.
+- Verified: reset-time parsing against the real message (02:30 next day) and a dated form; both scripts parse; the detached launch path runs `run_worker.py` (it refused correctly while the lock was held). Not yet observed end to end on a real limit.
+- Prevention: an unattended loop must never rely on the supervisor being available to continue.
