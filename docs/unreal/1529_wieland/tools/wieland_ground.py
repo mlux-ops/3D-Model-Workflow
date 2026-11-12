@@ -48,7 +48,7 @@ SETS = {
     "Asphalt": ("asphalt_03", 2.05),
     "Concrete": ("concrete_floor_03", 2.5),
     "Soil": ("dirt_floor", 2.07),
-    "Lawn": ("wood_chips", 1.3),
+    "Lawn": ("wood_chips", 0.6),
 }
 
 _COVER_UV = """
@@ -95,8 +95,9 @@ return lerp(c, c * (1.0 - Dark), Slab.x);
 
 _LAWN = """
 float lum = dot(C, float3(0.3, 0.59, 0.11));
-float3 tint = lerp(TintA, TintB, smoothstep(0.30, 0.70, Cloud.g));
-return saturate(lum * Gain) * tint;
+float3 tint = lerp(TintA, TintB, smoothstep(0.10, 0.90, Cloud.g));
+// The stand-in image has deep black gaps between its chips; grass has none, so the dark end is lifted.
+return saturate(0.15 + 0.85 * saturate(lum * Gain)) * tint;
 """
 
 _MIX = """
@@ -239,8 +240,8 @@ def build_material():
     soil_colour = tinted(soil[0], "Soil_Tint", (0.75, 0.7, 0.65, 1), "2 Soil")
     lawn_colour = g.custom("Lawn: colour", _LAWN, CMOT.CMOT_FLOAT3, [
         ("C", lawn[0]), ("Cloud", cloud),
-        ("TintA", g.mask(g.vector("Lawn_TintA", (0.20, 0.24, 0.09, 1), "2 Lawn"), r=True, g=True, b=True)),
-        ("TintB", g.mask(g.vector("Lawn_TintB", (0.27, 0.27, 0.12, 1), "2 Lawn"), r=True, g=True, b=True)),
+        ("TintA", g.mask(g.vector("Lawn_TintA", (0.11, 0.16, 0.05, 1), "2 Lawn"), r=True, g=True, b=True)),
+        ("TintB", g.mask(g.vector("Lawn_TintB", (0.15, 0.18, 0.07, 1), "2 Lawn"), r=True, g=True, b=True)),
         ("Gain", g.scalar("Lawn_Gain", 2.2, "2 Lawn"))])
 
     def mixed(description, a, k, p, l, s):
@@ -250,7 +251,10 @@ def build_material():
     shaded = g.custom("Slow change of brightness", _SHADE, CMOT.CMOT_FLOAT3, [
         ("C", colour), ("Slow", slow), ("Macro", g.scalar("MacroVariation", 0.12, "3 Variation"))])
     g.out(shaded, MP.MP_BASE_COLOR)
-    arm = mixed("Occlusion and roughness of the covers", asphalt[2], concrete[2], concrete[2], lawn[2], soil[2])
+    # Grass is matt: the wood-chip image that stands in for it is smoother than grass and showed a blue sheen of the sky.
+    lawn_arm = g.custom("Lawn: matt", "return float3(A.r, max(A.g, Least), A.b);", CMOT.CMOT_FLOAT3,
+                        [("A", lawn[2]), ("Least", g.scalar("Lawn_LeastRoughness", 0.9, "2 Lawn"))])
+    arm = mixed("Occlusion and roughness of the covers", asphalt[2], concrete[2], concrete[2], lawn_arm, soil[2])
     rough = g.node(unreal.MaterialExpressionSaturate)
     g.link(g.binary(unreal.MaterialExpressionMultiply, g.mask(arm, g=True), g.scalar("RoughnessScale", 1.0, "3 Variation")), rough, "")
     g.out(rough, MP.MP_ROUGHNESS)
