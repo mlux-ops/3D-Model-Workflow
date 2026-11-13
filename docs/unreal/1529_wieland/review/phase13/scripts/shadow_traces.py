@@ -2,7 +2,9 @@
 
 Read-only. The sun is not moved: its direction is worked out from the Sun Position plugin for each clock time and
 used only for line tests. Points: a grid every 2.5 ft over the project lot (north 0 to 49.5, east 0 to 102.2 in
-site feet); each point is the first surface met by a line straight down (roof, roof deck, terrace, yard). From
+site feet); each point is the first drawn surface met by a line straight down (roof, roof deck, terrace, yard); points
+that land on a surface inside 1529 (ceilings, furniture, interior partitions, lower floors; 1529 has roof parts without
+collision) are left out and counted separately, so the shares are of outdoor points only. From
 each point a line goes 600 m toward the sun and lists every object it passes through. A point is in shadow
 "as surveyed" when anything other than a hotel object is on the line, and "with the hotel" when anything other
 than the three existing objects the proposed option hides is on the line. Line tests see collision shapes, so
@@ -37,16 +39,6 @@ def vec(east, north, up_cm):
     return unreal.Vector(-north * CM, -east * CM, up_cm)
 
 
-def first_surface(east, north):
-    ignore = [a for a in wh.hotel_actors()] + list(wh._existing_objects())
-    hit = unreal.SystemLibrary.line_trace_single(WORLD, vec(east, north, 9000.0), vec(east, north, -1000.0), TRACE,
-                                                 True, ignore, unreal.DrawDebugTrace.NONE, False)
-    if hit is None:
-        return None
-    fields = hit.to_tuple()
-    return fields[4], (fields[9].get_actor_label() if fields[9] else "")  # impact point, object
-
-
 def shown(actor):
     """True when the object draws: not a Revit stand-in, and at least one visible mesh component. Hidden objects
     still have collision, so they are stepped over here rather than counted as casting shadow."""
@@ -54,6 +46,33 @@ def shown(actor):
         return actor.get_path_name() in HIDDEN
     comps = actor.get_components_by_class(unreal.PrimitiveComponent)
     return any(c.get_editor_property("visible") for c in comps) or actor.get_path_name() in HIDDEN or actor.get_path_name() in HOTEL
+
+
+def first_surface(east, north):
+    """First drawn surface straight down (Revit stand-ins, hotel and hide-list objects stepped over)."""
+    ignore = [a for a in wh.hotel_actors()] + list(wh._existing_objects())
+    for _ in range(16):
+        hit = unreal.SystemLibrary.line_trace_single(WORLD, vec(east, north, 9000.0), vec(east, north, -1000.0), TRACE,
+                                                     True, ignore, unreal.DrawDebugTrace.NONE, False)
+        if hit is None:
+            return None
+        fields = hit.to_tuple()
+        actor = fields[9]
+        if actor is None:
+            return None
+        if shown(actor):
+            return fields[4], actor.get_actor_label()  # impact point, object
+        ignore.append(actor)
+    return None
+
+
+# Surfaces that are inside 1529: a line from above that lands on them has passed through a roof without collision
+# (the plan pictures show 1529 open from above). Such points are not outdoor places and are left out of the shares.
+INTERIOR = ("Ceilings_", "Furniture_", "Walls_Basic_Wall_C1010_Interior", "Floors_Floor_Generic_-_1_-2_")
+
+
+def interior(label):
+    return label.startswith(INTERIOR) or "Interior_Partition" in label
 
 
 def blockers(start, end):
@@ -72,7 +91,7 @@ def blockers(start, end):
     return found
 
 
-points = []
+points, skipped = [], []
 for i in range(20):
     for j in range(41):
         north, east = 1.25 + 2.5 * i, 1.25 + 2.5 * j
@@ -80,6 +99,9 @@ for i in range(20):
         if surface is None:
             continue
         loc, label = surface
+        if interior(label):
+            skipped.append([north, east, label])
+            continue
         points.append({"north": north, "east": east, "z_ft": round(loc.z / CM, 2), "on": label,
                        "start": unreal.Vector(loc.x, loc.y, loc.z + 5.0)})
 
@@ -113,5 +135,6 @@ for r in results:
                     "roof_new_shade_pct": round(100.0 * sum(1 for p in roof if p[4] and not p[3]) / max(1, len(roof)), 1)})
 with open(OUT + "/shadow_traces.json", "w", encoding="utf-8") as handle:
     json.dump({"note": __doc__, "summary": summary, "results": results,
-               "surfaces": sorted({p["on"] for p in points})}, handle, indent=1)
-json.dumps(summary)
+               "surfaces": sorted({p["on"] for p in points}),
+               "left_out_interior": {"count": len(skipped), "labels": sorted({x[2] for x in skipped}), "points": skipped}}, handle, indent=1)
+json.dumps([len(points), len(skipped)] + summary)

@@ -24,7 +24,7 @@ for r, key in enumerate(("existing", "proposed")):
 d.text((10, 2 * H + 70), "PROPOSED hotel, modelled from published renderings and records, not a survey. Real-time renderer, "
        "Nanite ray tracing off, fixed daylight exposure. Sun from the Sun Position plugin (41.910215, -87.635389).",
        fill=(160, 0, 0), font=f)
-d.text((10, 2 * H + 100), "Line tests over the lot (review/phase13/shadow/shadow_traces.json): new shade from the hotel "
-       "0.2 % of the lot at 09:00, 7.9 % at 12:00, 8.2 % at 13:00, 0.1 % at 15:30; roof deck level at most 3.1 % (12:00).",
+d.text((10, 2 * H + 100), "Line tests over the 639 outdoor points of the lot (review/phase13/shadow/shadow_traces.json): new shade from the hotel "
+       "0.3 % at 09:00, 4.7 % at 12:00, 4.9 % at 13:00, 0.2 % at 15:30; roof-deck level at most 3.6 % (12:00).",
        fill=(0, 0, 0), font=f)
 page.save(f"{BASE}/shadow_sheet.jpg", quality=85)
