@@ -1,6 +1,8 @@
 # Phase 11 results: packaging and delivery
 
-Status: STARTED 2026-11-13 08:28 Central. Unattended run; the owner is away. Nothing is pushed.
+Status: PAUSED by the owner at 08:48 on 2026-11-13 for the 5-hour usage limit, during J1 (final stills; PENDING since 08:36). The agent was stopped mid-step; a path-traced still may have been rendering in the editor. Resumes automatically at 10:15. On resuming: wait until the editor's agent server answers (a render may still be finishing), check which of the twelve stills exist in full, render only the missing ones with r.RayTracing.Nanite.Mode 0, then continue.
+
+Earlier status:  STARTED 2026-11-13 08:28 Central. Unattended run; the owner is away. Nothing is pushed.
 
 Project: `D:\Unreal_Engine_Projects\Wieland1527 5.9\Wieland1527.uproject` (Unreal Engine 5.9).
 Plan: `PLAN.md`, Phase 11. This file is the journal of the phase. A line marked PENDING is written and committed before its step starts; it is replaced by the outcome when the step ends.
