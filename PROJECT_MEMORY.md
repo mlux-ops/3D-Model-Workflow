@@ -1237,3 +1237,21 @@ Every error of the phase, with cause, fix and status. "J" numbers are the journa
 - Cause, now well supported: the Nanite ray-tracing build in UE 5.9 (switched on by `r.RayTracing.Nanite.Mode` 2) can fail its own check and hang the graphics card. It happened on the first frame after a level opened, and again during real-time profiling.
 - Prevention, added to the prompts of Phases 12, 9, 10 and 11: leave `r.RayTracing.Nanite.Mode` at 0 except for path-traced renders. For those, let the level settle five minutes first and render one picture at a time. Never adopt mode 2 for the real-time walk-through; report it to the owner as unstable in 5.9.
 - Status: workaround in place. The underlying engine fault is not fixable here; a future engine update may fix it.
+
+### Supervisor made self-sustaining -- 2026-11-13 01:05 (supervising session)
+
+- Owner request: "ensure the editor continues despite any restart or crashes, phase endings or anything".
+- Gaps found in `watcher.ps1` (scratchpad `watch\` folder), none an error yet, all able to stop the build:
+  - after 3 editor restarts, or 5 agent relaunches, with no new commit it stopped for good;
+  - an editor that ran but was hung kept the agent server silent, and the watcher only alerted;
+  - after a phase ended it waited up to 15 more minutes, because it took its own agent's last activity for an editor-panel agent;
+  - it checked only every 15 minutes;
+  - nothing restarted the watcher itself after it died or Windows restarted (the 22:43 restart stopped everything until the supervisor stepped in).
+- Fix:
+  - checks every 5 minutes, with the cheap model's judgement still about every 15 minutes;
+  - after the caps it backs off instead of stopping: an editor restart every 30 minutes, an agent relaunch every 60 minutes;
+  - an editor whose agent server is silent for 60 minutes while the agent is idle for 60 minutes is ended (nothing is saved) and restarted;
+  - its own finished agent no longer counts as an editor-panel agent, so the next phase starts at the next check;
+  - new `keepalive.ps1` restarts the watcher within 2 minutes. It is started at sign-in by `C:\Users\cowey\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup\wieland_keepalive.cmd`, at the owner's request. A `STOP` file in the watch folder pauses it.
+- Verified: both scripts parse; the watcher was ended on purpose at 01:02 and the keep-alive restarted it at 01:04; the Phase 12 agent kept running. The previous watcher is kept as `watcher.ps1.bak_1113`.
+- Limit: after a Windows restart, Windows must be signed in for the Startup entry to run. Ending a hung editor discards unsaved changes; the agents save named assets before each commit.
