@@ -1343,3 +1343,10 @@ Errors and surprises of the phase, each with cause, fix and status. "Jn" is the 
 - Owner request: pause at a good point and restart when the 5-hour limit resets. The limit was 89 percent used and resets at 10:10 local (16:10 UTC). The weekly Fable limit was 83 percent used, resetting 2026-11-19.
 - How: a `STOP` file in the watch folder now holds a resume time (`2026-11-13 10:15`). `keepalive.ps1` was extended to honour it: at that time it removes the file and starts the watcher, which relaunches the open phase. The pause survives a Windows restart, because the keep-alive starts at sign-in. The watcher was stopped at 08:47. `stop_at_commit.ps1` stops the Phase 10 agent at its next journal commit, so it ends at a recorded step.
 - Status: paused; update when the resume is seen.
+
+### Weekly Fable limit reached -- 2026-11-13 13:09 (supervising session)
+
+- Error: the Phase 13 agent stopped at 13:09 with "You're out of usage credits". The weekly Fable limit was at 100 percent and resets 2026-11-19 08:00 local. The 5-hour limit was at 90 percent; the weekly all-models limit at 59 percent.
+- State: Phase 13 J1 to J3 are committed (`3484a4cc`): the parcels and design research, the hotel level with its first full build, and the variant list `Neighbour development`, tested both ways. J4 onward (sheets against the renderings, changed views, shadow, frame-time cost) is not done. Phase 11 waits behind it.
+- Action: the watcher was stopped and a `STOP` file with no time was set, so nothing relaunches into the limit. `run_worker.py` takes the model as its second argument (default `claude-fable-5-2`); the watcher does not pass one.
+- Next step: the owner chooses between waiting for 2026-11-19 or running the remaining work on another model. Status: open.
