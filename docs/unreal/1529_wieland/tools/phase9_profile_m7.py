@@ -193,3 +193,93 @@ def unpose():
     wlv.show_all()
     os.remove(_POSE_FILE)
     return {"put_back": True, "settings": before}
+
+
+# ---- step 9.11: the two-hour soak. It runs on the editor's own ticks, so it goes on when the session that started
+# it has ended; the watcher below keeps the window on screen and puts every setting back when the last loop ends.
+_W = globals().get("_W", {})
+
+
+def _soak_watch(delta_seconds):
+    import time
+
+    state = _W
+    if not state.get("active"):
+        return
+    now = time.time()
+    if now - state["last"] < 5.0:
+        return
+    state["last"] = now
+    try:
+        front = polite_front()
+        state["restored"] += int(front["restored"])
+        status = wp.status()
+        with open(state["folder"] + "/soak_watch.jsonl", "a", encoding="utf-8") as handle:
+            handle.write(json.dumps({"unix": round(now, 1), "front": front["front"], "asked_to_front": front["asked"],
+                                     "window_restored": front["restored"], "idle_seconds": front["idle_seconds"],
+                                     "loops_finished": status.get("loops_finished")}) + "\n")
+        if not status.get("active"):
+            soak_end()
+    except Exception as exc:
+        state["error"] = repr(exc)
+
+
+def soak_start(folder, loops=120, csv_every=3, note=""):
+    """Starts `loops` walks of the exterior path under tier conditions and returns at once. One line per walk goes to
+    <folder>/soak_log.jsonl, one line every five seconds about the window to <folder>/soak_watch.jsonl."""
+    import time
+
+    if _W.get("active"):
+        raise RuntimeError("a soak is already being watched: " + json.dumps(soak_status()))
+    world = _world()
+    os.makedirs(folder, exist_ok=True)
+    cvars = dict(TIER)
+    before = {name: m4._get(name) for name in m4.QUALITY + list(m4.OTHER) + list(cvars)}
+    with open(folder + "/soak_settings_before.json", "w", encoding="utf-8") as handle:
+        json.dump(before, handle)
+    size = unreal.get_editor_subsystem(unreal.UnrealEditorSubsystem).get_level_viewport_size()
+    lights = lighting()
+    _apply(world, cvars)
+    point, jobs = _jobs("exterior", "soak")
+    job = [j for j in jobs if j["kind"] == "path" and not j["name"].endswith("_first_walk")][0]
+    shown = wlv.show_for(point)
+    front = polite_front()
+    info = {"step": "Phase 9, step 9.11, soak of the exterior path%s" % ((": " + note) if note else ""),
+            "level": world.get_path_name(), "quality": "Epic (3), pool 1000, screen percentage 82, t.MaxFPS 1000, Game View on",
+            "view_mode": "Lit", "lighting": lights, "console_variables_for_this_run": cvars,
+            "viewport_pixels": [size.x, size.y], "unit_levels_shown": shown, "found_before": before,
+            "foreground_attempt": front}
+    started = wp.soak(job, loops, folder + "/soak_log.jsonl", info, csv_every=csv_every)
+    _W.clear()
+    _W.update(active=True, folder=folder, before=before, last=0.0, restored=0, error=None, started=time.time(), handle=None)
+    _W["handle"] = unreal.register_slate_post_tick_callback(_soak_watch)
+    return {"started": started, "job": job, "shown": shown, "front": front, "viewport_pixels": [size.x, size.y]}
+
+
+def soak_status():
+    return {"watching": bool(_W.get("active")), "times_window_restored": _W.get("restored"), "watch_error": _W.get("error"),
+            "soak": wp.status()}
+
+
+def soak_end():
+    """Puts every setting back and stops the watcher. Called by the watcher when the last loop has ended; call it by
+    hand (after wp.cancel()) to stop a soak early."""
+    import time
+
+    world = _world()
+    handle = _W.get("handle")
+    if handle is not None:
+        unreal.unregister_slate_post_tick_callback(handle)
+        _W["handle"] = None
+    _W["active"] = False
+    before = _W.get("before") or {}
+    for name, value in before.items():
+        m4._set(world, name, value)
+    unreal.EditorLevelLibrary.editor_set_game_view(False)
+    wlv.show_all()
+    now = {name: m4._get(name) for name in before}
+    record = {"ended_unix": time.time(), "settings_put_back": now == before, "times_window_restored": _W.get("restored"),
+              "watch_error": _W.get("error"), "soak": wp.status()}
+    with open(_W["folder"] + "/soak_end.json", "w", encoding="utf-8") as out:
+        json.dump(record, out, indent=1)
+    return record
