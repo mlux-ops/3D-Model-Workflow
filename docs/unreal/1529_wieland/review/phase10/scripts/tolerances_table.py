@@ -113,9 +113,13 @@ rows = [
      "none", "could not be checked", "Bark, buds and form seen on site, or leaves in summer.",
      "phase7_results.md; review/phase10/trees_check.csv"),
     ("Poles, hydrant, signs, fences, stoops", "0.3 m in plan; 0.1 m in height under 3 m",
-     "None is placed in the level (street lights, utility poles, hydrant, signs, neighbours' fences).",
+     "This plan placed none (street lights, hydrant, signs). The earlier detailed model of the neighbours carries "
+     "its own stoops, railings, iron fences and at least one utility pole with wires (seen at S1 and S9) inside "
+     "its merged meshes; they are not separate objects (review/phase10/furniture_now.json finds none) and their "
+     "places were not compared with anything.",
      "none", "could not be checked",
-     "Position and size of each item taped on site. No public record exists.", "site_gaps.md; phase7_results.md"),
+     "Position and size of each item taped on site. No public record exists.",
+     "site_gaps.md; phase7_results.md; review/phase10/furniture_now.json"),
     ("Camera station", "0.1 m in plan, 0.05 m in eye height, 0.5 degree in heading",
      "Against the surveyed station list: place %.1f cm, heading %.2f degree, eye height within %.1f cm of 1.60 m "
      "at the seven stations." % (place, heading, eye),

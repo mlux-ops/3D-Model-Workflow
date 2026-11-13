@@ -170,8 +170,10 @@ TREES = ("Trees (trunk 0.3 m, diameter 2 cm, height and crown 1.0 m, species nam
          % (len(trees), len(trees), at_point, len(trees), len(trees) - at_point),
          "height passes against the scan; trunk position, diameter and species could not be checked",
          "a tape to each trunk, a girth tape, and bark, buds or leaves seen on site.")
-FURNITURE = ("Poles, hydrant, signs, fences, stoops (0.3 m)", "none is placed in the level", "could not be checked",
-             "each item taped on site.")
+FURNITURE = ("Poles, hydrant, signs, fences, stoops (0.3 m)",
+             "this plan placed none; the earlier detailed model of the neighbours carries its own stoops, railings, "
+             "fences and a utility pole with wires inside its merged meshes, compared with nothing",
+             "could not be checked", "each item taped on site.")
 SUN = ("Sun direction (0.5 degree)", "0.05 degree off the NOAA calculator in bearing and 0.05 in height", "pass", "")
 SHADOW = ("Shadow edges on the ground (0.3 m)",
           "not measured; in its place the shadow of a 3.00 m test pole is 4.6 cm longer than calculated (Phase 8)",
