@@ -11,7 +11,9 @@ brighter, blue = real-time darker, full colour at two stops; picture luminance w
 in review/phase8/scripts/compare_tiers.py). Under them: the score of each tolerance that applies.
 S7: a sheet that says why the station cannot exist.
 S8: the plan picture, and the same picture with the lot (red), the county's 2022 building outlines (cyan) and
-the 34 tree data points (green) drawn over it from data, at ground level. The camera stands 2 km up, so a
+the 34 tree data points (green) drawn over it from data, at ground level; under them, when it exists, the
+path-traced plan picture (made with r.RayTracing.Nanite.Mode 0: fallback copies of the meshes) and the
+difference between the two, with the numbers of review/phase10/scripts/s8_compare.py. The camera stands 2 km up, so a
 roof 12 m high at the picture's edge is drawn 0.36 m further out than its foot; outlines are drawn at their
 foot. The county's aerial photograph is never written into the repository: the sheet that lays it beside the
 plan picture is written to <site data folder>/phase10/S8_plan_beside_aerial.jpg. Nothing is traced from the
@@ -44,6 +46,8 @@ OUT = "review/phase10/sheets"
 TRUTH = "review/phase12/ground_truth/%s_pathtraced.0000.png"
 REAL = "review/phase10/realtime/R1/%s_realtime.0000.png"
 PLAN = "review/phase10/realtime/S8/S8_realtime.0000.png"
+PLAN_TRUTH = "review/phase10/realtime/S8/S8_pathtraced.0000.png"
+PLAN_COMPARE = "review/phase10/compare/S8/compare.json"
 STREET = ("S1", "S2", "S3", "S4", "S5", "S6", "S9")
 PLAN_CENTRE = (-754.4, -1557.5)
 PLAN_HALF_CM = 6000.0
@@ -209,7 +213,30 @@ def street_scores(station):
 
 S7_SCORES = [("Every tolerance", "no picture can be made: the station cannot be stood on", "does not apply",
               "none; a rear view is a design view taken from the building's own rear decks.")]
+
+
+def plan_tier_score():
+    """S8, real-time against path-traced: from review/phase10/scripts/s8_compare.py when the path-traced plan
+    picture exists. That picture was made with r.RayTracing.Nanite.Mode 0 (fallback copies of the meshes)."""
+    name = "Real-time against path-traced (mean 10 percent; no region over 2 percent of frame off by a stop)"
+    if not (os.path.exists(PLAN_TRUTH) and os.path.exists(PLAN_COMPARE)):
+        return (name, "not measured: no path-traced plan picture exists", "could not be checked",
+                "a path-traced plan picture.")
+    with open(PLAN_COMPARE, encoding="utf-8") as handle:
+        tier = json.load(handle)[0]
+    regions = "; ".join("%s %s %.1f%% of frame %+.2f stops" % (
+        f["where"], f["real_time_is"], f["share_of_frame_percent"], f["mean_stops"])
+        for f in tier["regions_over_2_percent"])
+    return (name,
+            "mean brightness %+.1f percent; largest region off by over one stop %.2f percent of the frame%s; the "
+            "path-traced picture was made with Nanite ray tracing off (mode 0), so it traced the meshes' simplified "
+            "fallback copies" % (tier["mean_difference_percent"], tier["largest_region_percent"],
+                                 (" (" + regions + ")") if regions else ""),
+            "pass" if tier["passes"] else "fail", "")
+
+
 S8_SCORES = [
+    plan_tier_score(),
     ("The lot in the world (1.0 m)",
      "lot corners convert between map and level with 0.000 m; the red outline in the right panel is drawn from the "
      "same conversion (Phase 2)", "pass", ""),
@@ -308,8 +335,10 @@ def s8_sheet(data_folder):
 
     title = "1529 N. Wieland, Phase 10, station S8 Plan: straight down over the lot centre, 120 m by 120 m, true north up"
     lines = foot_lines(S8_SCORES)
+    has_truth = os.path.exists(PLAN_TRUTH)
+    rows = 2 if has_truth else 1
     width = side * 2 + MARGIN * 3
-    height = MARGIN + TITLE + side + MARGIN + len(lines) * LINE + MARGIN
+    height = MARGIN + TITLE + rows * (side + MARGIN) + len(lines) * LINE + MARGIN
     sheet = Image.new("RGB", (width, height), (255, 255, 255))
     sdraw = ImageDraw.Draw(sheet)
     sdraw.text((MARGIN, MARGIN), title, fill=(0, 0, 0), font=BIG)
@@ -319,7 +348,15 @@ def s8_sheet(data_folder):
     label(sdraw, left + left, "Real-time plan picture (today). The aerial photograph is kept outside the repository.")
     sheet.paste(marked, right)
     label(sdraw, right + right, "Same, with the lot (red), county 2022 building outlines (cyan), tree data points (green)")
-    y = MARGIN + TITLE + side + MARGIN
+    if has_truth:
+        truth = Image.open(PLAN_TRUTH).convert("RGB").resize((side, side), Image.LANCZOS)
+        low_left = (MARGIN, MARGIN + TITLE + side + MARGIN)
+        low_right = (MARGIN * 2 + side, MARGIN + TITLE + side + MARGIN)
+        sheet.paste(truth, low_left)
+        label(sdraw, low_left + low_left, "Path-traced plan picture (today), Nanite ray tracing off: fallback copies of the meshes traced")
+        sheet.paste(difference(truth, plan), low_right)
+        label(sdraw, low_right + low_right, "Difference: red = real-time brighter, blue = darker, full colour at two stops")
+    y = MARGIN + TITLE + rows * (side + MARGIN)
     for line in lines:
         sdraw.text((MARGIN, y), line, fill=(0, 0, 0), font=SMALL)
         y += LINE

@@ -27,6 +27,8 @@ height = [abs(float(r["height_difference_m"])) for r in tr]
 eye = max(abs(float(r["eye_height_difference_cm"])) for r in st)
 place = max(float(r["position_difference_cm"]) for r in st)
 heading = max(abs(float(r["heading_difference_deg"])) for r in st)
+with open("review/phase10/compare/S8/compare.json", encoding="utf-8") as handle:
+    plan_tier = json.load(handle)[0]
 passed = [r["view"] for r in rt if r["passes"] == "True"]
 failed = ["%s %+.1f%%" % (r["view"], float(r["mean_difference_percent"])) for r in rt if r["passes"] != "True"]
 NOAA_BEARING, NOAA_HEIGHT = 241.67, 46.34
@@ -155,11 +157,14 @@ rows = [
      "A photograph of the sunlit sidewalk with a grey card in it.", "phase8_results.md"),
     ("Real-time render against the path-traced render of the same view",
      "mean brightness within 10 percent; no region over 2 percent of the frame off by more than one stop",
-     "After a fresh start of the editor, today: %d of 12 views pass (%s). Fail: %s."
-     % (len(passed), ", ".join(passed), "; ".join(failed)),
-     "Phase 12 path-traced pictures of the same twelve views",
-     "pass at %d views; fail at %d" % (len(passed), 12 - len(passed)), "",
-     "review/phase10/compare/R1/compare.csv"),
+     "After a fresh start of the editor, today: %d of 12 views pass (%s). Fail: %s. The plan picture S8, a "
+     "thirteenth picture taken from 2 km up: %+.1f%%, largest region %.1f%% of the frame: fail (its path-traced "
+     "picture was made with Nanite ray tracing off, mode 0)."
+     % (len(passed), ", ".join(passed), "; ".join(failed), plan_tier["mean_difference_percent"],
+        plan_tier["largest_region_percent"]),
+     "Phase 12 path-traced pictures of the same twelve views; for S8 the path-traced plan picture of this phase",
+     "pass at %d views; fail at %d and at the plan picture S8" % (len(passed), 12 - len(passed)), "",
+     "review/phase10/compare/R1/compare.csv; review/phase10/compare/S8/compare.csv"),
 ]
 with open("review/phase10/tolerances.csv", "w", newline="", encoding="utf-8") as handle:
     writer = csv.writer(handle)

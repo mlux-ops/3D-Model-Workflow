@@ -1,0 +1,41 @@
+[
+ {
+  "view": "S8",
+  "mean_truth": 0.0608,
+  "mean_real_time": 0.0842,
+  "mean_difference_percent": 38.5,
+  "mean_within_10_percent": false,
+  "pixels_used_percent": 100.0,
+  "blocks_off_by_over_one_stop_percent": 28.7,
+  "largest_region_percent": 11.42,
+  "regions_over_2_percent": [
+   {
+    "share_of_frame_percent": 11.42,
+    "where": "top right",
+    "box_pixels": [
+     880,
+     0,
+     2160,
+     1160
+    ],
+    "real_time_is": "brighter",
+    "mean_stops": 2.48
+   },
+   {
+    "share_of_frame_percent": 9.09,
+    "where": "middle left",
+    "box_pixels": [
+     0,
+     0,
+     760,
+     2160
+    ],
+    "real_time_is": "brighter",
+    "mean_stops": 1.93
+   }
+  ],
+  "passes": false,
+  "path_traced_with_nanite_ray_tracing_mode": 0,
+  "note": "path-traced picture traced the meshes' fallback copies (mode 0); the twelve views' ground truth of Phase 12 used mode 2"
+ }
+]

@@ -91,6 +91,20 @@ ROWS = [
      "pocket-door hardware).",
      "Replace those fixtures with remodelled ones, or accept.",
      "Phase 6", "phase6_results.md"),
+    ("F9", "S8",
+     "Real-time plan picture against path-traced plan picture",
+     "Mean brightness +38.5 percent; two regions of 11.4 and 9.1 percent of the frame 2.5 and 1.9 stops brighter in "
+     "the real-time picture (roofs and ground in shadow). The path-traced picture was made with Nanite ray tracing "
+     "off (mode 0), so it traced the meshes' simplified fallback copies.",
+     "mean 10 percent; no region over 2 percent of the frame off by more than one stop",
+     "Seen in the two pictures, not proven by a trial: the camera stands 2 km above the lot. At that distance the "
+     "real-time renderer draws its far, simplified shadows (soft blots that do not follow the roofs' edges) and "
+     "lights the shadowed sides more; the Path Tracer draws every shadow sharp and deep at any distance. The "
+     "walk-through never shows the scene from this distance.",
+     "Accept, and use the path-traced picture as the plan picture of S8: it is the truer of the two for a plan. "
+     "Its trees are drawn as coarse triangles (fallback copies); a plan picture with full-detail trees needs "
+     "Nanite ray tracing mode 2, which is switched off because it hangs the graphics card in Unreal 5.9.",
+     "Phase 8 (lighting and ground truth)", "review/phase10/sheets/S8_sheet.jpg"),
 ]
 
 
