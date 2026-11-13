@@ -1,6 +1,8 @@
 # Phase 10 results: reality-match review
 
-Status: STARTED 2026-11-13 07:14 Central. Unattended run; the owner is away. Nothing is pushed.
+Status: INTERRUPTED at 08:01 on 2026-11-13 by a GPU crash during J7's path-traced picture of S8 (r.RayTracing.Nanite.Mode had been set to 2 at 08:00; same engine check as before, NaniteClusterRayTracing.usf:539). The supervisor stopped the agent at 08:05; the watcher restarts the editor and relaunches the phase. From now on r.RayTracing.Nanite.Mode stays 0 for every render, path-traced included (see the prompt's rules). On resuming: check what J7 left, re-render S8 with mode 0, and continue.
+
+Earlier status:  STARTED 2026-11-13 07:14 Central. Unattended run; the owner is away. Nothing is pushed.
 
 Project: `D:\Unreal_Engine_Projects\Wieland1527 5.9\Wieland1527.uproject` (Unreal Engine 5.9).
 Plan: `PLAN.md`, Phase 10. This file is the journal of the phase. A line marked PENDING is written and committed before its step starts; it is replaced by the outcome when the step ends.
