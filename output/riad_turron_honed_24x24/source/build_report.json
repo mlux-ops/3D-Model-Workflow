@@ -1,0 +1,140 @@
+{
+  "name": "Riad_Turron_Honed_24x24",
+  "source": "TerrazzoTurron24x24.jpg",
+  "seed": 20261113,
+  "source_crop_px": [
+    400,
+    394,
+    2640,
+    2638
+  ],
+  "chip_fraction": 0.28176605869620575,
+  "matrix_ref_srgb": [
+    243.0,
+    229.0,
+    215.0
+  ],
+  "light_field_range": [
+    0.9380951828448435,
+    1.0546087324105624
+  ],
+  "resample_scale": 0.6827094474153298,
+  "inset_stretch_pct": 1.96,
+  "cells": [
+    {
+      "row": 0,
+      "col": 0,
+      "transform": "r0",
+      "tone": 0.9905
+    },
+    {
+      "row": 0,
+      "col": 1,
+      "transform": "m_r90",
+      "tone": 1.0101
+    },
+    {
+      "row": 0,
+      "col": 2,
+      "transform": "r180",
+      "tone": 0.9913
+    },
+    {
+      "row": 0,
+      "col": 3,
+      "transform": "m_r270",
+      "tone": 0.9902
+    },
+    {
+      "row": 1,
+      "col": 0,
+      "transform": "m_r0",
+      "tone": 1.0014
+    },
+    {
+      "row": 1,
+      "col": 1,
+      "transform": "r270",
+      "tone": 1.0063
+    },
+    {
+      "row": 1,
+      "col": 2,
+      "transform": "m_r180",
+      "tone": 0.9999
+    },
+    {
+      "row": 1,
+      "col": 3,
+      "transform": "r90",
+      "tone": 0.9864
+    }
+  ],
+  "height_mm": {
+    "grout_floor": 0.0,
+    "face_nominal": 1.0,
+    "face_min_on_flat": 0.8817744039404942,
+    "face_max": 1.0746200622519204,
+    "clearance_above_grout_mm": 0.7647591884801738,
+    "porosity_amp": 0.06,
+    "chip_seam": 0.03,
+    "ease": 0.35
+  },
+  "bump_range_mm": [
+    -0.021205833601635596,
+    1.0746200622519204
+  ],
+  "png_headers": {
+    "color": {
+      "width": 6144,
+      "height": 3072,
+      "bit_depth": 8,
+      "color_type": 2
+    },
+    "bump": {
+      "width": 6144,
+      "height": 3072,
+      "bit_depth": 16,
+      "color_type": 0
+    },
+    "normal": {
+      "width": 6144,
+      "height": 3072,
+      "bit_depth": 16,
+      "color_type": 2
+    }
+  },
+  "wrap": {
+    "color": {
+      "typical": 0.1241569941726645,
+      "wrap_x": 0.0,
+      "wrap_y": 0.0
+    },
+    "height_mm": {
+      "typical": 0.014960576881941516,
+      "wrap_x": 0.01969248779090753,
+      "wrap_y": 0.020740227500264424
+    },
+    "normal": {
+      "typical": 0.009803962386376604,
+      "wrap_x": 0.008586028846696094,
+      "wrap_y": 0.008744167962368281
+    }
+  },
+  "checks": {
+    "color_8bit_rgb": true,
+    "bump_16bit_grey": true,
+    "normal_16bit_rgb": true,
+    "aspect_matches_sample_size": true,
+    "all_transforms_distinct": true,
+    "no_self_mirrored_joint_or_corner": true,
+    "clearance_positive": true,
+    "wrap_seamless": true
+  },
+  "pass": true,
+  "sample_size": {
+    "width_in": 96.0,
+    "height_in": 48.0,
+    "revit": "8'-0\" x 4'-0\""
+  }
+}
