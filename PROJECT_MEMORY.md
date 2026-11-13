@@ -1337,3 +1337,9 @@ Errors and surprises of the phase, each with cause, fix and status. "Jn" is the 
 - Whole phase, no owner photographs and no site visit. Fix (workaround): "PLACEHOLDER: no photograph" panels; 9 of 19 tolerances entered as "could not be checked" with the missing evidence named. Status: waits on the owner.
 - Whole phase, no advisor tool in either session. Fix: the closing check of the changed files against the scope was done by hand. Status: reported to the owner.
 - Closing, the working copy still shows `profiles\2026-11-12_M6\memory_log_phase8.csv` as changed. Cause: the memory log process of Phase 8 (process 30032) still appends to it. Fix: left alone, not this phase's process. Status: reported to the owner.
+
+### Paused for the 5-hour usage limit -- 2026-11-13 08:47 (supervising session)
+
+- Owner request: pause at a good point and restart when the 5-hour limit resets. The limit was 89 percent used and resets at 10:10 local (16:10 UTC). The weekly Fable limit was 83 percent used, resetting 2026-11-19.
+- How: a `STOP` file in the watch folder now holds a resume time (`2026-11-13 10:15`). `keepalive.ps1` was extended to honour it: at that time it removes the file and starts the watcher, which relaunches the open phase. The pause survives a Windows restart, because the keep-alive starts at sign-in. The watcher was stopped at 08:47. `stop_at_commit.ps1` stops the Phase 10 agent at its next journal commit, so it ends at a recorded step.
+- Status: paused; update when the resume is seen.
