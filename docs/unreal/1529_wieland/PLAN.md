@@ -698,6 +698,56 @@ Each is asked at the step that needs it. None has been asked or done yet.
 
 ---
 
+## Phase 12: Material rebuild (runs after Phase 8, before Phase 9)
+
+Added by the owner's decision on 2026-11-12: "rebuild 1–2s". It is numbered 12 because the supervisor's queue takes whole numbers; it runs between Phase 8 and Phase 9 so that Phase 9 budgets the final textures.
+
+**Goal.** Every material the owner marked "rebuild", and every material scored 1 or 2 in the Phase 5 audit that the owner left undecided, replaced by a material that shows its finish faithfully and passes this repository's material rules. Every material marked "candidate" switched to its Phase 5 candidate.
+
+**Inputs.**
+
+- `material_audit.csv`, columns `confidence`, `decision` (keep, candidate, rebuild or blank) and `owner_note`. The owner fills the last two from the review page `owner_review\index.html` (started with `owner_review\Open material review.bat`), possibly while this phase runs.
+- The Phase 5 parents, candidates, test method and tables (`material_library.csv`, `material_candidates.csv`, `material_alternatives.csv`, `material_tests.csv`, `texel_density.csv`), and the texel-density table in Phase 5.
+- The Phase 8 ground-truth renders and real-time comparison.
+
+**Which materials.** Read at the start and again before the last step:
+
+| Decision | Confidence | Action |
+|---|---|---|
+| rebuild | any | Rebuild |
+| blank | 1 or 2 | Rebuild (the owner's default of 2026-11-12) |
+| candidate | any | Make the Phase 5 candidate the active material |
+| keep | any | Leave as exported |
+| blank | 3 to 5 | Leave as exported; listed as still open |
+
+**Steps.**
+
+| No. | Step | Tool | Who |
+|---|---|---|---|
+| 12.1 | Build the work list from the table above; for each material record what the finish really is: the owner's note first, else the objects, families and categories that use it, else a labelled assumption | `material_rebuild.csv` | Agent |
+| 12.2 | Rebuild one material first, the one on the most objects, and check it before the rest: an instance of a Phase 5 parent at the plan's texel density, a colour map for every surface, and relief where the finish has it | Material editor through the agent server; Python image processing | Agent |
+| 12.3 | Where a texture is needed and none is on disk, take a public-domain set within the standing approval's cap, record its licence line, and match its colour to the specified finish | Web download within the approved row | Agent |
+| 12.4 | Apply each rebuilt or candidate material as the active one by recorded override or swap, never by editing a Datasmith asset; keep the Revit material switchable back through a Variant Manager list | Editor's agent server | Agent |
+| 12.5 | Test each rebuilt material as in step 5.8: 3 by 3 tiling, the largest uninterrupted surface it covers, grazing light, and relief in millimetres for any sculpted tile | Scene capture; Python | Agent |
+| 12.6 | Re-render the Phase 8 ground truth (path-traced) and the real-time pictures for every view that shows a changed material, and update the Phase 8 comparison numbers for those views | Movie Render Graph; Python image comparison | Agent |
+
+**Acceptance.**
+
+- Every material on the work list has a row in `material_rebuild.csv` with what the finish rests on, its source and licence, field size, and the results of the step 5.8 tests. Every row passes, or names why it cannot.
+- Each rebuilt material scores 4 or 5 on the Phase 5 confidence scale, with the reason, or says what evidence is missing.
+- No Datasmith asset is changed; every swap can be switched back.
+- The Phase 8 real-time tolerance is re-measured at every re-rendered view.
+
+**Main risks.**
+
+- Many low-scored materials are Revit defaults with no finish set; without the owner's note the rebuild rests on the object's name and is labelled as an assumption.
+- Path-traced renders keep the agent server silent for up to about 11 minutes each, and the first path-traced frame after opening a level crashed the graphics card once (2026-11-12); let the level settle before rendering.
+- The 4.0 GB texture pool limits how many high-density surfaces can be in view.
+
+**Leaves behind.** `material_rebuild.csv`; the rebuilt instances under `/Game/Wieland1529/Materials/Rebuilt/`; a Variant Manager list to switch back; updated ground truth and comparison for the affected views.
+
+---
+
 ## Phase 9: Optimization
 
 **Goal.** The real-time tier inside its frame-time and video-memory budgets on the fixed camera paths, with every change shown as a measured cost or saving, and no change to the offline tier's result.
