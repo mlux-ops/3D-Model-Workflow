@@ -338,6 +338,15 @@ def _property_path(library, actor, component, slot):
     wanted = "Material[%d]" % slot
     paths = [str(path) for path in library.get_capturable_properties(actor)]
     name = component.get_name()
+    parts = {path: [part.strip() for part in path.split("/")] for path in paths if path.endswith(wanted)}
+    exact = [path for path, split in parts.items() if len(split) >= 3 and split[-2] == name]
+    if exact:
+        return exact[0]
+    # The object's own (root) part is offered without its name: "Static Mesh Component / Material[0]".
+    if component == actor.get_editor_property("root_component"):
+        root = [path for path, split in parts.items() if len(split) == 2]
+        if len(root) == 1:
+            return root[0]
     exact = [path for path in paths if path.endswith(wanted) and name in path]
     if exact:
         return exact[0]
