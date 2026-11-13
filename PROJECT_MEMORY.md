@@ -1351,3 +1351,35 @@ Errors and surprises of the phase, each with cause, fix and status. "Jn" is the 
 - Action: the watcher was stopped and a `STOP` file with no time was set, so nothing relaunches into the limit. `run_worker.py` takes the model as its second argument (default `claude-fable-5-2`); the watcher does not pass one.
 - Next step: the owner chooses between waiting for 2026-11-19 or running the remaining work on another model. Status: open.
 - Owner decision, 2026-11-13 ~13:15: continue on Opus once the 5-hour limit resets. `watcher.ps1` now passes the model named in `agent_model.txt` (set to `claude-opus-5-5`) to `run_worker.py`. The `STOP` file was set to `2026-11-13 15:25` (the 5-hour limit resets at 15:20 local); the keep-alive then starts the watcher, which relaunches Phase 13 on Opus, then Phase 11. To return to Fable after the weekly reset on 2026-11-19, delete `agent_model.txt`.
+
+## Phase 14: sun-path timelapse videos -- 2026-11-13
+
+### Editor restart for memory -- 2026-11-13 (Phase 14 session)
+
+- Cause: free commit memory was 21.7 GB (79.1 GB limit, 57.4 GB committed; the editor alone held 23.7 GB), under the 30 GB rule. The editor was asked to close with `SystemLibrary.quit_editor()` and reopened on `/Game/Wieland1529/L_Site_M4`; free commit after closing was 47.3 GB.
+- Note: the closing call came back "Canceled" because the agent server went down with the editor; this is expected, not a fault.
+- Status: done; the server answered again about 40 seconds after reopening.
+
+### Two copies of the shooting script ran at once -- 2026-11-13 (Phase 14 session)
+
+- Error: three of the four first MP4 files (`roofdeck_summer`, `reardeck_summer`, `reardeck_winter`) failed to decode ("Invalid NAL unit size"), and every frame of those three days was logged twice.
+- Cause: `run_all.sh` was first started as `nohup ... &` inside a tool call that then reported "completed"; the shell I assumed was killed kept running. I then started a second copy. Both copies wrote the same job file, the same frame folders and the same MP4 files, and their scripts ran interleaved inside the editor, so the sun and exposure of one could be changed under the other. The frames of those three days are not trustworthy even where they look fine.
+- Fix: the three frame folders and their captioned copies were renamed to `*_suspect_doublerun` (nothing deleted) and the three MP4 files moved to `review/phase14/suspect/`; the three days were shot again from scratch with a single copy running. Check each new MP4 with `ffmpeg -v error -i file -f null -` (no output means clean) and look at the frame log for one line per frame.
+- Lesson: start a long job once, with `run_in_background` on the tool call itself, never with `nohup &`; before starting a second copy, look at the process list.
+- Status: fixed. The three days were shot again by a single run; all four final MP4 files decode with no `ffmpeg` errors, have 240 frames at 24 frames a second (10.0 s), and every frame log has one line per frame. The suspect frames and files are kept under `*_suspect_doublerun` and `review/phase14/suspect/` (not committed).
+
+## Phase 13: the proposed hotel at 1520-1528 N. Wells ("The Duke of Wells") -- 2026-11-13 12:30 to 16:00 (two sessions; journal `docs\unreal\1529_wieland\phase13_results.md`)
+
+Errors and surprises of the phase, each with cause, fix and status. "Jn" is the journal line.
+
+- J1, the kickoff's premise was wrong: it placed the hotel across a public alley behind 1529 (east). Cause: the press describes the site from Wells Street; nobody had checked the parcels. Fix: county parcels and the PD 1335 boundary map show no alley; the development land adjoins 1529's south lot line, so the hotel is the south and south-east neighbour and Home 3 stands 1.7 ft from the lot line. Recorded in `proposed_hotel.md` 1.1. Status: fixed; for the owner to confirm.
+- J1, the press says two homes, the PD three. Fix: the PD is the legal record; three modelled. Status: for the owner.
+- J4, the first session stopped at 13:09 with the weekly Fable usage limit (see the supervisor's entry above) while J4 was PENDING. Phase 14 ran in between and restarted the editor at 14:00. Fix: the resumed session (15:31, Opus) inspected what existed (the probe results `measure_traces.json` and the eight model views were complete), reused them, and only made the comparison sheets. Status: handled.
+- J4, the comparison sheets contain copies of the publishers' renderings. Fix: kept on disk, not committed, as for the renderings. Status: for the owner.
+- J5, the side-yard camera (SY) was first placed with the sign of north reversed and too close (inside the side yard, looking at a wall). Cause: site feet north map to level -X; the sign was typed wrongly. Fix: placed 30 ft west of the lot line in Wieland Street, 3 ft south of 1529's south line; test picture checked by eye before the full run. Status: fixed.
+- J6, the first run of the shadow line tests counted objects that are hidden (Revit's neighbour massing and slab stand-ins, hidden for every render) as casting shadow. Cause: a hidden object keeps its collision shape and still stops a line test. Fix: `shadow_traces.py` steps over objects that do not draw (Revit stand-ins and objects without a visible mesh), except the three existing objects of the hide list, which it counts only for the existing option. The new-shade numbers changed by up to 3.5 points (12:00: 4.4 to 7.9 %). Status: fixed. Lesson: line tests see collision, not visibility.
+- J6, the shadow sheet first failed on file names. Cause: `wieland_truth.render` puts the suffix after "realtime" (`S8_realtime_0900.0000.png`). Fix: names corrected in `shadow_sheet.py` and in the docstring of `shadow_pics.py`. Status: fixed.
+- Whole resumed session, free commit memory 29.0 to 29.3 GB, just under the 30 GB line, the editor holding 17.1 to 17.5 GB. Fix (workaround, as Phase 11 J3): only light work was done (real-time pictures, line tests, one profile recording), with the memory log running; no path-traced picture was made. Status: handled; no crash.
+- Whole phase, the kickoff says the hotel "stands on the east side" and asks for the morning shadow. Finding: in August the morning sun is east of the hotel's bearing from 1529, so the morning shadow does not reach the lot (0.2 % at 09:00); the shadow comes around midday (up to 8.2 % at 13:00). Status: reported.
+- Closing, `PROJECT_MEMORY.md` was found rewritten with Windows (CRLF) line endings and with the Phase 14 section not committed. Cause: the Phase 14 session's editor. Fix: line endings put back to LF (content unchanged, checked with `git diff --ignore-cr-at-eol`), then this section added; the Phase 14 section is committed with it. Status: fixed.
+- Closing, the working copy still shows `profiles\2026-11-12_M6\memory_log_phase8.csv` and Phase 11's scripts and job files as changed. Cause: other phases' processes and sessions. Fix: left alone, not this phase's files. Status: reported to the owner.

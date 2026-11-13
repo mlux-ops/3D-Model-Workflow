@@ -1,6 +1,6 @@
 # Phase 13 results: the proposed hotel at 1520-1528 N. Wells ("The Duke of Wells")
 
-Status: STARTED 2026-11-13 12:31 Central. Unattended run; the owner is away. Nothing is pushed.
+Status: DONE at 15:54 on 2026-11-13 (Central). The proposed hotel, its garage and three homes are built in `/Game/Wieland1529/Site/L_ProposedHotel`, switchable by the Variant Manager list "Neighbour development" (default "Duke of Wells (proposed)"), measured, compared with the renderings, and its effect on the views, the shadow and the frame time recorded. Phase 11 resumes: re-render S1, S2, S3, S4, S5, S6, D1 and D5. Nothing is pushed.
 
 Project: `D:\Unreal_Engine_Projects\Wieland1527 5.9\Wieland1527.uproject` (Unreal Engine 5.9).
 Plan: `PLAN.md`, Phase 13. This file is the journal of the phase. A line marked PENDING is written and committed before its step starts; it is replaced by the outcome when the step ends.
@@ -54,4 +54,141 @@ Words used the same way throughout this file:
 | J5 | 15:32 | 13.6 Views from the project that see the hotel: real-time pictures of S1-S9 and D1-D5, the rear of 1529 and its roof deck, and the side yard toward the hotel (there is no alley), each with the option "Duke of Wells (proposed)" and compared with the same view under "Existing buildings (as surveyed)", to list which views change for Phase 11 | DONE 15:42. 13.6 done. 16 views rendered twice with the real-time renderer at 1920 x 1080 (review/phase13/views/existing and proposed; scripts views_rt.py and views_diff.py), Phase 8 cameras and fixed exposure, r.RayTracing.Nanite.Mode read back 0 after each set. Changed pixels (over 40/255) existing -> proposed: S1 17.4 %, S2 25.1 %, S3 10.7 %, S4 13.4 %, S5 2.5 %, S6 10.1 %, S8 16.6 %, S9 0.0 %, D1 6.7 %, D2 0.01 %, D3 0.0 %, D4 0.0 %, D5 11.4 %, roof deck RD 33.3 %, rear patio RP 9.2 %, south side yard SY 27.6 %. Phase 11 re-renders S1, S2, S3, S4, S5, S6, D1, D5; S9, D2, D3, D4 stay. Sheets review/phase13/views/sheet_<view>.jpg, table views/changes.csv. Left on "Duke of Wells (proposed)", 56/56 shown, 0/3 existing shown. |
 | J6 | 15:42 | 13.7 Shadow of the hotel on 1529: plan view and roof deck view at the review condition (15 August, 15:30) and in the morning (15 August, 09:00), each with both options; sun turned with the project's own sun tools and put back to the review condition and read back | DONE 15:46. 13.7 done. Line tests over the project lot (820 points every 2.5 ft on the first surface met from above; review/phase13/shadow/shadow_traces.json, script shadow_traces.py), 15 August 2026, 07:00-19:00 CDT: the hotel adds shade to 0.0 % of the lot at 07:00-08:00, 0.2 % at 09:00, 1.3 % at 10:00, 4.3 % at 11:00, 7.9 % at 12:00, 8.2 % at 13:00, 0.5 % at 14:00, 0.1 % at 15:00-16:00 (review condition 15:30: 0.1 %), 0 % after 17:00. The roof deck level (517 points at 45 ft and above) gets new shade only at 12:00 (3.1 %) and 13:00 (0.4 %). The hotel stands south and south-east of 1529 (not east), so its shadow reaches the lot only around midday, on the south side yard and the lower south face. Pictures: plan view from 80 m at 09:00, 12:30 and 15:30, both options, review/phase13/shadow/shadow_sheet.jpg (script shadow_pics.py, shadow_sheet.py). Sun put back to 15 August 15:30 and read back (bearing 241.72, height 46.40); option left on proposed; Nanite mode read back 0. |
 | J7 | 15:46 | 13.8 Cost of the new level: the exterior part of Phase 11's camera path played once with the hotel level unloaded-equivalent (option existing, hotel objects hidden) and once with the proposed option, frame time and video memory recorded each time with the project's own profiling tool | DONE 15:51. 13.8 done. Exterior path (60 s) and holds S1, S2, S6 recorded under Phase 9 tier conditions (tools/phase9_profile_m7.py, first walk skipped as in state C2; script review/phase13/scripts/profile_exterior.py; records and frame tables profiles/2026-11-13_P13/existing and /proposed). Existing -> proposed: exterior path frame mean 11.10 -> 11.02 ms, 95th percentile 12.64 -> 12.38 ms, worst 22.40 -> 19.60 ms, graphics card 9.98 -> 9.90 ms, frames over 33.3 ms 0 -> 0, over 16.67 ms 4 -> 2 of about 5,400, video memory peak 6,351 -> 6,320 MB, editor in front 100 % both times. The difference is inside the run-to-run spread; the hotel level costs nothing measurable. Settings put back and read back by the tool (settings_put_back true); option left on proposed. |
-| J8 | 15:51 | 13.9 Close the phase: findings, list of views for Phase 11, before-and-after numbers and owner items into this file; errors into PROJECT_MEMORY.md (new Phase 13 section); Status line DONE; commit by explicit path; no push | PENDING |
+| J8 | 15:51 | 13.9 Close the phase: findings, list of views for Phase 11, before-and-after numbers and owner items into this file; errors into PROJECT_MEMORY.md (new Phase 13 section); Status line DONE; commit by explicit path; no push | DONE 15:54. 13.9 done. Findings, the list of views for Phase 11 (re-render S1-S6, D1, D5; keep S9, D2-D4), before-and-after numbers, how to switch, owner items and the file list written below; Phase 13 section added to PROJECT_MEMORY.md; committed by explicit path, not pushed. |
+
+## Findings
+
+Everything below is **proposed, modelled from published renderings and records, not a survey**. Every dimension, its source or its estimate and its uncertainty is in `proposed_hotel.md`; the short form is here.
+
+### Where the hotel stands
+
+- **There is no alley.** The kickoff's premise (the hotel across a public alley behind 1529) does not hold: the county parcels and the planned development's boundary map show block 17-04-203 without an alley; the Wieland lots back straight onto the Wells lots.
+- The development land of City of Chicago Planned Development No. 1335 (as amended 9 Sept 2020) is 149.55 ft north-south by 204.50 ft east-west, from Wieland to Wells, and its **north line is 1529's south lot line**. So the hotel is the project's **south and south-east neighbour**, not its east (rear) neighbour.
+- It uses more parcels than "1520-1528 N. Wells": 1520, 1522, 1524, 1528 and 1530 N. Wells and the rear parts of 1513-1523 N. Wieland (sub-area A, the hotel and garage); the homes stand on the Wieland fronts (sub-area B), one of them on 1525 N. Wieland, right next to 1529. 1532 N. Wells stays (sub-area C).
+- In the project's coordinates (feet north and east of 1529's south-west lot corner): tower floors 3-11 north -137.15 to -36.75, east 77.15 to 178.05 (about 37 ft south of 1529's south lot line); garage west wall at east 28.75; Home 3 north -22.3 to -1.7, east 2.6 to 59.8 (its north wall about 1.7 ft from 1529's lot line).
+- Existing objects on the land, hidden by the proposed option: `SB_782868` (the block of the 3-storey building 1520 N. Wells, `L_Surroundings`) and the two parts of the detailed house 1525 N. Wieland (`R15_PART_opaque_xm04_yp01_part01`, `R15_PART_glass_xm04_yp01_part01`, `L_Surroundings_R15`). The Revit neighbour massing has no separate object on the land (it is one combined stand-in, hidden for every render by the project's tools). Record: `review\phase13\hidden_for_proposed_hotel.csv`.
+- Three single-family homes, not two: the PD (the legal record) has three; the press writes "a pair", counting only those that screen the garage.
+- State of the real project: the PD was extended to 9 Sept 2027 (letter of 8 Oct 2026); the 3-storey building at 1520 N. Wells got a wrecking permit on 1 May 2026; a foreclosure suit over the land was reported in April 2025. The hotel was not under construction in October 2026.
+
+### What was built (in `/Game/Wieland1529/Site/L_ProposedHotel`, streamed into `L_Site_M4`)
+
+56 objects in 7 groups, 61,168 triangles: the 12-storey tower with its terraced setbacks (3rd-floor terraces north and south, 7th-floor terrace on the south wing, 9th on the north wing, 11th on the dark grey projecting part, 12th-floor terrace with glass guard), the 12th floor in dark grey brick, the mechanical penthouse in metal panel, the 3-storey garage with planted roof, the three homes. Red and dark grey brick, recessed windows of 7.5 by 7.5 ft with frames and glass, stone bands, copings and parapets, shopfront, entrance canopy and garage door on Wells. Meshes were generated by the project's own tool (`tools\phase13_hotel_meshes.py`, editor module `tools\wieland_hotel.py`); seven new material instances of the project's own parents under `/Game/Wieland1529/Site/ProposedHotel/Materials`, with colour maps made for this phase (two bricks of 2,048 different bricks each, planted roof, metal panel). No downloaded picture is used as a texture.
+
+### Measured on the model (J4, line probes in the editor) against the recorded numbers
+
+| Item | Recorded (`proposed_hotel.md`) | Measured on the model |
+|---|---|---|
+| Top of the mechanical penthouse above the first floor | 151 ft 4 in (PD, written) | 151.33 ft |
+| 12th-floor roof / 12th-floor terrace | 142.0 / 127.67 ft (PD, written; terrace finish +0.5 ft) | 142.0 / 128.17 ft |
+| 11th, 9th, 7th-floor terraces | 114.67, 93.67, 72.67 ft (PD, written) | 114.67, 93.67, 72.67 ft |
+| 3rd-floor terraces, garage roof | 32.33 ft (PD written; garage roof estimated, 3 ft) | 32.33 ft |
+| 2nd-floor terrace on Wells | 17.0 ft (PD, written) | 17.0 ft |
+| Storeys | 12 | 12 window rows counted |
+| Tower walls (a = ft east, b = ft south of sub-area A's north-west corner) | west 48.4, east 149.3, north 12.0, south 112.4 (scaled, 2 ft) | 48.4, 149.3, 12.0, 112.4 |
+| Wings on Wells | north wing b 0-41.0, south wing b 84.5-124.8, front at a 175.75 (scaled, 2 ft) | 0-41.0, 84.5-124.8, 175.7 |
+| Dark grey projecting part | east face at a 158.3 (scaled, 1.5 ft) | 158.3 |
+| 12th floor | a 64-132.5, b 24.6-88.5 / 103.8 (scaled, 2-4 ft) | 64.0-132.5, 24.6-88.5 / 103.8 |
+| Penthouse | a 66-114.2, b 42.6-82.5 (scaled, 2 ft) | the same |
+| Homes 1, 2, 3 | outlines scaled (2 ft), heights estimated (4 ft) | outlines as recorded; roofs 36.5, 36.5, 34.25 ft above level zero, plus parapets |
+| Windows | about 8 ft (press); 7.5 by 7.5 ft read off renderings (1 ft) | 7.5 ft high on every row |
+
+The model reproduces the recorded numbers to 0.1 ft. Every height is written in the PD; every plan dimension is scaled from small drawings (uncertainty 2 ft, homes 4 ft).
+
+### Model against the published renderings (J4)
+
+Ten side-by-side sheets: `review\phase13\compare_r1.jpg` to `compare_r8.jpg`, `compare_r11.jpg` (Urbanize), `compare_r12.jpg` (architect's page) and `compare_all.jpg`. **These sheets hold copies of the publishers' renderings and are kept on disk only, not committed**, like the renderings themselves. What matches: the massing and every setback, the split of red and dark grey brick (dark middle bay on the west face, dark projecting part on Wells, dark 12th floor), the window rhythm, the planted garage roof, the homes in front of the garage. Differences: the renderings show steel pergolas and furniture on the 12th-floor terrace, furniture and planters on the other terraces, gas lanterns, blade signs, the street clock and street trees, none of which is modelled; the 12th-floor cornice reads lighter and deeper on the model; the renderings' homes have more façade detail (bays, entrances); on two sheets (r2, r4) the model's viewpoint is higher and farther than the rendering's.
+
+### Views that change: the list for Phase 11 (J5)
+
+Each view was rendered with both options with the real-time renderer at the same camera and exposure; the share of the picture that changes is the share of pixels differing by more than 40 of 255 (an unchanged view reads 0.0 %). Sheets `review\phase13\views\sheet_<view>.jpg`, table `review\phase13\views\changes.csv`.
+
+| View | Changed | Changes? | Phase 11 action |
+|---|---|---|---|
+| S1 | 17.4 % | yes | **re-render** |
+| S2 | 25.1 % | yes | **re-render** |
+| S3 | 10.7 % | yes | **re-render** |
+| S4 | 13.4 % | yes | **re-render** |
+| S5 | 2.5 % | yes (tower above the street's trees) | **re-render** |
+| S6 | 10.1 % | yes | **re-render** |
+| S7 | - | cannot exist (no alley) | none |
+| S8 (plan) | 16.6 % | yes | not a Phase 11 still; re-render if the plan picture is delivered |
+| S9 | 0.0 % | no | keep |
+| D1 (roof deck) | 6.7 % | yes | **re-render** |
+| D2 | 0.01 % | no | keep |
+| D3 | 0.0 % | no | keep |
+| D4 | 0.0 % | no | keep |
+| D5 (rear patio) | 11.4 % | yes | **re-render** |
+| Roof deck looking south (RD, Phase 14's camera) | 33.3 % | yes | new view; picture `views\proposed\RD_realtime.0000.png` |
+| Rear patio looking south (RP, Phase 14's camera) | 9.2 % | yes | new view |
+| South side yard from Wieland Street (SY) | 27.6 % | yes | new view |
+
+**Phase 11 re-renders S1, S2, S3, S4, S5, S6, D1 and D5 (eight stills); S9, D2, D3 and D4 stay.** The animation (Phase 11 J5) is to be made with the option "Duke of Wells (proposed)" on: the hotel is visible from the roof deck and along Wieland. Path-traced stills trace each mesh's simplified fallback copy (`r.RayTracing.Nanite.Mode` 0).
+
+### Shadow on 1529 (J6)
+
+The hotel stands south and south-east of 1529, not east. Line tests from 820 points on 1529's lot (every 2.5 ft, on roofs, decks and yard) toward the sun on 15 August 2026 (`review\phase13\shadow\shadow_traces.json`):
+
+| Clock (CDT) | Sun bearing / height (degrees) | New shade on the lot from the hotel | On the roof-deck level (45 ft and up) |
+|---|---|---|---|
+| 07:00-08:00 | 80-90 / 10-21 | 0 % | 0 % |
+| 09:00 (morning) | 101 / 32 | 0.2 % | 0 % |
+| 10:00 | 113 / 43 | 1.3 % | 0 % |
+| 11:00 | 130 / 53 | 4.3 % | 0 % |
+| 12:00 | 153 / 60 | 7.9 % | 3.1 % |
+| 13:00 | 183 / 62 | 8.2 % | 0.4 % |
+| 14:00 | 212 / 59 | 0.5 % | 0 % |
+| 15:30 (review condition) | 242 / 46 | 0.1 % | 0 % |
+| 17:00-19:00 | 261-281 / 31-8 | 0 % | 0 % |
+
+On a mid-August day the hotel's shadow reaches 1529 only from about 10:00 to 14:00, mainly on the south side yard and the lower south face (Home 3, 38 ft high and 1.7 ft away, shades much of that yard); the roof deck is touched only around noon at its south edge. In the morning (09:00) and at the review condition (15:30) the change is negligible. Picture: `review\phase13\shadow\shadow_sheet.jpg` (plan view from 80 m at 09:00, 12:30 and 15:30, both options). In winter, with the sun low in the south, the shadow is far longer and will cover much more of 1529 around midday; Phase 14's 21 December roof-deck video (made with the hotel on) shows it; it was not measured here.
+
+### Cost of the new level (J7): before and after
+
+Exterior path of the M4/M6/M7 profiles (60 s) and holds S1, S2, S6, Phase 9 tier conditions, editor in front 100 % of the time; records `profiles\2026-11-13_P13\`.
+
+| Recording | Option | Frame mean (ms) | 95th percentile | Worst | Over 33.3 ms | Over 16.67 ms | Graphics card mean | Video memory peak (MB) |
+|---|---|---|---|---|---|---|---|---|
+| Exterior path | Existing buildings (before) | 11.10 | 12.64 | 22.40 | 0 of 5,407 | 4 | 9.98 | 6,351 |
+| Exterior path | Duke of Wells (after) | 11.02 | 12.38 | 19.60 | 0 of 5,444 | 2 | 9.90 | 6,320 |
+| Hold S1 | before / after | 11.09 / 11.10 | 12.39 / 12.47 | 15.76 / 14.88 | 0 / 0 | 0 / 0 | 9.96 / 9.97 | 6,319 / 6,320 |
+| Hold S2 | before / after | 11.20 / 10.75 | 12.59 / 12.05 | 16.76 / 19.79 | 0 / 0 | 1 / 1 | 10.08 / 9.65 | 6,319 / 6,320 |
+| Hold S6 | before / after | 10.42 / 10.64 | 11.79 / 11.80 | 14.41 / 14.25 | 0 / 0 | 0 / 0 | 9.31 / 9.54 | 6,319 / 6,320 |
+
+The hotel costs nothing measurable: every difference is inside the spread between two runs. Both runs had the hotel level loaded (the existing option hides its objects), so the memory that holds the level, its 56 meshes and its material instances is in both. Phase 9's final recording (M7, before the hotel existed) read 11.50 ms mean and 12.82 ms 95th percentile on the same path.
+
+### What was saved or changed in the project (whole phase)
+
+- Saved by name in J2-J3: the new level `/Game/Wieland1529/Site/L_ProposedHotel`; meshes, textures and seven material instances under `/Game/Wieland1529/Site/ProposedHotel/`; the top level `/Game/Wieland1529/L_Site_M4` (now streams the hotel level); the variant asset `/Game/Wieland1529/Surroundings/LVS_W1529_Surroundings` (new list "Neighbour development"); `L_Surroundings` and `L_Surroundings_R15` (saved so that the three existing objects open hidden, matching the default option). No Datasmith asset was edited, nothing was deleted, `L_R15_Production` was not saved, "Save All" was not used.
+- Nothing was saved in J4-J8. At the end the editor holds five levels marked unsaved (`L_Site_M4`, `L_ProposedHotel`, `L_Light_SummerAfternoon`, `L_Surroundings_R15`, `L_Surroundings`) only from Phase 14's sun moves, the option switches and the temporary camera; their content equals what is saved (sun at 15 August 15:30, read back bearing 241.72, height 46.40; option "Duke of Wells (proposed)" on, 56 of 56 hotel objects shown, 0 of 3 existing shown). They need not be saved.
+- `r.RayTracing.Nanite.Mode` was 0 throughout and is read back 0; `r.RayTracing.Nanite.MaxAppendInstances` read back 10,000; the profiling tool put back every setting it changed and read them back equal.
+
+### How to switch between the hotel and the existing buildings
+
+In the editor: Window > Variant Manager, open `LVS_W1529_Surroundings` (the object `W1529_Surroundings` in the level), list **Neighbour development**, double-click **Duke of Wells (proposed)** or **Existing buildings (as surveyed)**. The first shows the 56 hotel objects and hides the three existing objects on its land; the second does the reverse. Nothing is deleted either way. Two of the three hidden objects also belong to the older list "Surroundings"; after choosing an option there, choose the wanted option of "Neighbour development" again. From a script: `wieland_hotel.switch(wieland_hotel.OPTION_PROPOSED)`.
+
+## For the owner
+
+1. The kickoff said the hotel is the rear neighbour across an alley. It is not: there is no alley, and the hotel's land adjoins 1529's south lot line (Home 3 stands 1.7 ft from it). Please confirm from your own knowledge of the site.
+2. Every plan dimension of the hotel and the homes is scaled from small public drawings (2 ft; homes 4 ft); the homes' design is not final in the PD; the garage roof height is estimated (3 ft). Dimensioned permit drawings are not public; getting them needs an account or a records request, which is not approved here.
+3. The press says two homes, the PD three; three are modelled.
+4. Whether the hotel will be built as drawn is uncertain (PD extended to Sept 2027, foreclosure suit, an unpublished 2024 change "adding a few rooms"). 12 vs 13 storeys and 151 ft 4 in vs 152 ft differ between sources; the PD's 12 storeys and 151 ft 4 in are modelled.
+5. The ten comparison sheets contain copies of copyrighted renderings and are not committed; decide whether they may go into any delivery.
+6. The existing building 1520 N. Wells may already be demolished (wrecking permit 1 May 2026); the option "Existing buildings (as surveyed)" still shows it as in 2022.
+7. Phase 11 must re-render S1-S6, D1 and D5, and render the animation with the hotel on.
+8. `PROJECT_MEMORY.md` had been rewritten with Windows line endings and an uncommitted Phase 14 section by the Phase 14 session; its line endings were put back and the Phase 14 section committed together with this phase's.
+
+## Files written by this phase
+
+Plan folder `E:\Claude\3D-Model-Workflow\.claude\worktrees\1529-wieland-scene-plan-e84a03\docs\unreal\1529_wieland\`:
+
+- `phase13_results.md`, `proposed_hotel.md`, four rows in `asset_downloads.csv`
+- `tools\phase13_hotel_meshes.py`, `tools\wieland_hotel.py`
+- `review\phase13\scripts\`: journal.py, status.py, parcels_block.py, objects_on_site.py, r15_parts_by_north.py, dump_r15_parts.py, ground_heights.py, list_materials.py, make_textures.py, append_downloads.py, crop.py, wh.py, measure_traces.py, side_by_side.py, views_rt.py, views_diff.py, shadow_traces.py, shadow_pics.py, shadow_sheet.py, profile_exterior.py
+- `review\phase13\parcels_block.csv`, `parcels_block.png`, `objects_on_site.json`, `hidden_for_proposed_hotel.csv`, `measure_traces.json`, `memory_log_phase13.csv`
+- `review\phase13\model_views\m1..m8_*.png`; `review\phase13\compare_r1..r8.jpg`, `compare_r11.jpg`, `compare_r12.jpg`, `compare_all.jpg` (on disk, not committed)
+- `review\phase13\views\existing\` and `views\proposed\` (16 pictures each, not committed), `views\sheet_*.jpg`, `views\changes.csv`, `views\job.json`
+- `review\phase13\shadow\shadow_traces.json`, `shadow_sheet.jpg`, `shadow\existing\` and `shadow\proposed\` (3 pictures each, not committed)
+- `profiles\2026-11-13_P13\existing\` and `profiles\2026-11-13_P13\proposed\`
+- `review\phase13\scratch\` (working pictures and meshes)
+
+Reference downloads: `E:\Wieland1529_site_data\proposed_hotel\` (53 MB of the 500 MB allowed; listed in `manifest.csv` there and in `asset_downloads.csv`).
