@@ -9,7 +9,8 @@ import wieland_truth as wt
 # Phase 10, station S8, one path-traced plan picture, in three calls so that the level can settle five minutes
 # between placing the camera and rendering. The step is read from review/phase10/realtime/S8/pt_job.json:
 #   {"step": "begin"}   place the same temporary camera as s8_plan.py; r.RayTracing.Nanite.Mode stays 0
-#   {"step": "render"}  one picture, 2160 by 2160, Path Tracer, 1024 samples (mode 2 during the render only)
+#   {"step": "render"}  one picture, 2160 by 2160, Path Tracer, 1024 samples, mode 0 (never 2: it hung the
+#                       graphics card at 08:01 on 2026-11-13); refuses to start if the variable does not read 0
 #   {"step": "end"}     camera removed, stand-ins shown, mode back to 0 and read back
 OUT = T.rsplit("/", 1)[0] + "/review/phase10/realtime/S8"
 with open(OUT + "/pt_job.json", "r", encoding="utf-8") as handle:
@@ -39,8 +40,10 @@ if step == "begin":
     unreal.SystemLibrary.execute_console_command(wl.world(), "viewmode lit")
     out["stand_ins_hidden"] = wt._stand_ins(True)
 elif step == "render":
+    if wt.cvar(wt.NANITE_MODE) != 0:
+        raise RuntimeError("r.RayTracing.Nanite.Mode does not read 0; not rendering")
     try:
-        out["record"] = await wt.render("S8", "pt", OUT, 2160, 2160, samples=1024, warm_up_frames=64)
+        out["record"] = await wt.render("S8", "pt", OUT, 2160, 2160, samples=1024, warm_up_frames=64, nanite_mode=0)
     finally:
         out["nanite_mode_after"] = wt.cvar(wt.NANITE_MODE, 0)
         out["append_after"] = wt.cvar(wt.APPEND, wt.APPEND_DEFAULT)

@@ -9,7 +9,7 @@ temporary camera carries the tag that makes wieland_lighting.save() refuse to sa
     import wieland_truth as wt
     wt.begin("S1")                                  # camera, viewport, stand-ins hidden
     await wt.render("S1", "pt", folder, 3840, 2160)  # waits until the file is written
-    wt.end()                                        # camera removed, stand-ins shown, Nanite mode back to 0
+    wt.end()                                        # camera removed, stand-ins shown, Nanite mode set to 0
 """
 import json
 import os
@@ -139,13 +139,17 @@ async def render(name, tier, folder, width=3840, height=2160, samples=None, play
                  warm_up_frames=None, nanite_mode=None, limit_seconds=900.0, suffix="", append_instances=None):
     """Render the view the viewport is locked to and wait for the file.
 
-    tier "pt" is the Path Tracer (r.RayTracing.Nanite.Mode 2 unless given), tier "rt" the real-time
+    tier "pt" is the Path Tracer (r.RayTracing.Nanite.Mode 0 unless given), tier "rt" the real-time
     renderer (mode left as found unless given). Returns the record of wieland_render.status() plus the
     Nanite mode in force and the seconds waited.
+
+    Until 2026-11-13 08:05 the Path Tracer's default here was mode 2. Mode 2 hung the graphics card three
+    times in UE 5.9 (NaniteClusterRayTracing.usf line 539), so by the supervisor's rule it is never set
+    again: path-traced pictures trace the meshes' fallback copies, and each sheet says so.
     """
     path_traced = tier == "pt"
     if nanite_mode is None and path_traced:
-        nanite_mode = 2
+        nanite_mode = 0
     if nanite_mode is not None:
         cvar(NANITE_MODE, nanite_mode)
     if append_instances is None and path_traced:
