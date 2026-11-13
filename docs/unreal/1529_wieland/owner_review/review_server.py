@@ -148,6 +148,12 @@ class Handler(http.server.BaseHTTPRequestHandler):
     def do_POST(self):
         if urllib.parse.urlparse(self.path).path != "/api/decision":
             return self._send(404, "not found", "text/plain")
+        # Only this page may write. A JSON content type forces a browser preflight from any other
+        # site (there is no OPTIONS handler, so it fails); the Host check stops DNS rebinding.
+        ctype = self.headers.get("Content-Type", "")
+        host = self.headers.get("Host", "")
+        if not ctype.lower().startswith("application/json") or host not in ("127.0.0.1:%d" % PORT, "localhost:%d" % PORT):
+            return self._json(403, {"ok": False, "error": "refused: not from the review page"})
         try:
             length = int(self.headers.get("Content-Length", "0"))
             if length <= 0 or length > 10000:

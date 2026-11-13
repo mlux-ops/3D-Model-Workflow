@@ -222,7 +222,7 @@ Each is asked at the step that needs it. None has been asked or done yet.
 | Download 2022 lidar tiles for the block | Agent, after approval | estimated 4 GB or less; confirmed on the tile page first | none |
 | Download county parcel, 2022 footprint and 2025 aerial extracts for the block | Agent, after approval | 1.5 GB or less | none |
 | Export a Datasmith file from the Revit model | Owner. The first export is already provided. | 0.67 GB per export | none |
-| Download public-domain textures | Agent, after approval, per set | 10 GB cap in total | none |
+| Download public-domain textures | Agent, after approval, per set (covered by the standing approval, Phase 12 included; 388 MB used by 2026-11-12) | 10 GB cap in total | none |
 | Download fixture photometric files from manufacturers | Agent, after approval | under 50 MB | none |
 | Get tree models and interior furniture from Fab or another licensed library | Agent, after approval, per item | asked per item | asked per item |
 | Google's 3D city tiles, only if the owner chooses them | Owner creates the account | none on disk | See `OPEN_DECISIONS.md`, decision 6 |
@@ -725,7 +725,7 @@ Added by the owner's decision on 2026-11-12: "rebuild 1–2s". It is numbered 12
 | No. | Step | Tool | Who |
 |---|---|---|---|
 | 12.1 | Build the work list from the table above; for each material record what the finish really is: the owner's note first, else the objects, families and categories that use it, else a labelled assumption | `material_rebuild.csv` | Agent |
-| 12.2 | Rebuild one material first, the one on the most objects, and check it before the rest: an instance of a Phase 5 parent at the plan's texel density, a colour map for every surface, and relief where the finish has it | Material editor through the agent server; Python image processing | Agent |
+| 12.2 | Rebuild one material first and check it before the rest: a material whose finish is already known and only needs a better texture (for example `Cabinet_Wood_Veneer` or `Finishes_-_Flooring__Oak`). Each rebuild is an instance of a Phase 5 parent at the plan's texel density, with a colour map for every surface and relief where the finish has it. A placeholder material used across unrelated categories (for example `RNT_Material`, Revit's default grey on 139 objects in six categories) is not rebuilt as one material: it is rebuilt per category or family group and applied by mesh-slot override | Material editor through the agent server; Python image processing | Agent |
 | 12.3 | Where a texture is needed and none is on disk, take a public-domain set within the standing approval's cap, record its licence line, and match its colour to the specified finish | Web download within the approved row | Agent |
 | 12.4 | Apply each rebuilt or candidate material as the active one by recorded override or swap, never by editing a Datasmith asset; keep the Revit material switchable back through a Variant Manager list | Editor's agent server | Agent |
 | 12.5 | Test each rebuilt material as in step 5.8: 3 by 3 tiling, the largest uninterrupted surface it covers, grazing light, and relief in millimetres for any sculpted tile | Scene capture; Python | Agent |
