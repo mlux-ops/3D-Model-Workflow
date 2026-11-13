@@ -43,7 +43,8 @@ One instruction conflict, decided and to be reported: the kickoff says in one pl
 
 ## Journal
 
-- J1 (step 12.1) PENDING: write `material_rebuild.csv` with one row per work-list material and what its finish rests on.
+- J1 (step 12.1) DONE 01:40: `material_rebuild.csv` has 220 rows: 122 to rebuild (22 brand names, 24 `rebuild`, 1 `keep` with a note, 75 blank), 90 `candidate` rows whose Phase 5 candidate becomes active, 8 left as exported (7 markers and `EAE_Logo`). The recipes are in `tools\phase12_recipes.py`; 55 images were made by `tools\phase12_make_textures.py` into `review\phase12\generated_textures\` (43 MB); three Poly Haven CC0 wood sets were downloaded (42 MB). Nothing in the Unreal project has changed yet.
+- J2 (step 12.2) PENDING: rebuild `Cabinet_Wood_Veneer` first (import its three images, make the instance under `/Game/Wieland1529/Materials/Rebuilt/`, take its swatch picture, make its sheet and look at it) before any batch.
 
 ## Acceptance
 
