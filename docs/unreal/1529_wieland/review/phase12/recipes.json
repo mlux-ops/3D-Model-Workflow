@@ -1669,28 +1669,38 @@
    "confidence": 4,
    "decision": "keep",
    "family": "glass",
-   "field": "none (the Glass parent takes a tint, not a colour image)",
-   "files": {},
+   "field": "1.000 by 1.000 m (plain colour image)",
+   "files": {
+    "BaseColorMap": "E:/Claude/3D-Model-Workflow/.claude/worktrees/1529-wieland-scene-plan-e84a03/docs/unreal/1529_wieland/review/phase12/generated_textures/T_W1529_P12_Flat_EDEDED_C.png"
+   },
    "group": "brand name",
    "material": "Kohler-Frosted_Glass",
    "owner_note": "",
-   "parent": "/Game/Wieland1529/Materials/Parents/M_W1529_Glass",
-   "reason": "The manufacturer states frosted glass.",
-   "rests": "Kohler K-32375-SC01 spec: 'frosted-glass shade'. Glass parent with a rough surface (0.55) and 55 % opacity so that the lamp behind it reads as a soft glow. Used on: Lighting_Fixtures_Light_Fixture-Wall_Sconce-KOHLER-PURIST-K-32375_Not_a_Type-See_Type_Catalog (8); Lighting_Fixtures_Light_Fixture-Wall_Sconce-KOHLER-PURIST-K-32375_L1_1- (1).",
+   "parent": "/Game/Wieland1529/Materials/Parents/M_W1529_Diffuser",
+   "reason": "The manufacturer states frosted glass; the share of light let through (60 %) is a typical figure, not Kohler's.",
+   "rests": "Kohler K-32375-SC01 spec: 'frosted-glass shade'. Diffuser parent (a thin sheet that scatters the light it lets through): white body, rough surface (0.55), 60 % of the light passes to the far side, so the shade reads white and glows from the lamp inside. The Glass parent was tried first and read as dark clear glass. Used on: Lighting_Fixtures_Light_Fixture-Wall_Sconce-KOHLER-PURIST-K-32375_Not_a_Type-See_Type_Catalog (8); Lighting_Fixtures_Light_Fixture-Wall_Sconce-KOHLER-PURIST-K-32375_L1_1- (1).",
    "revit": "/Game/Wieland1529/Building/Datasmith/25-006_1527_N_Wieland-3DView-3D_View_188/Materials/Kohler-Frosted_Glass",
    "scalars": {
-    "Opacity": 0.55,
-    "OpacityGrazing": 0.85,
-    "Roughness": 0.55
+    "RoughnessScale": 0.55,
+    "SizeU_m": 1.0,
+    "SizeV_m": 1.0
    },
-   "source": "No image; values only",
+   "source": "Made by tools/phase12_make_textures.py; this project's own work, no licence needed",
    "switches": {},
-   "textures": {},
+   "textures": {
+    "BaseColorMap": "/Game/Wieland1529/Materials/Textures/T_W1529_P12_Flat_EDEDED_C"
+   },
    "vectors": {
     "Tint": [
-     0.7913,
-     0.8228,
-     0.807,
+     1.0,
+     1.0,
+     1.0,
+     1.0
+    ],
+    "TransmissionColor": [
+     0.6,
+     0.6,
+     0.6,
      1.0
     ]
    }

@@ -32,7 +32,7 @@ GAME = "/Game/Wieland1529/Materials"
 TEX = GAME + "/Textures/"
 PARENTS = {"Opaque": GAME + "/Parents/M_W1529_Opaque", "Metal": GAME + "/Parents/M_W1529_Metal",
            "Glass": GAME + "/Parents/M_W1529_Glass", "Emissive": GAME + "/Parents/M_W1529_Emissive",
-           "StoneBlend": GAME + "/Parents/M_W1529_StoneBlend"}
+           "StoneBlend": GAME + "/Parents/M_W1529_StoneBlend", "Diffuser": GAME + "/Parents/M_W1529_Diffuser"}
 REBUILT = GAME + "/Rebuilt/MI_W1529_R_"
 FOOT_M = 0.3048
 SITE = "E:/Wieland1529_site_data/textures_cc0"
@@ -243,6 +243,14 @@ class Book:
                 "field": "none (the Glass parent takes a tint, not a colour image)",
                 "source": "No image; values only", "rgb": list(tint_rgb)}
 
+    def diffuser(self, rgb, rough, through):
+        """A thin sheet that scatters the light it lets through (frosted glass): its own colour, and
+        the share of the light that comes out on the far side."""
+        recipe = self.coat(rgb, rough)
+        recipe["parent"] = "Diffuser"
+        recipe["vectors"]["TransmissionColor"] = [through, through, through, 1.0]
+        return recipe
+
     def light(self, rgb, luminance, kelvin, rough=0.3):
         """A glowing face: its own colour when off, and light of the Revit luminance (candela per
         square metre) and colour temperature. The project's fixed exposure is in physical units, so
@@ -322,9 +330,12 @@ def write_recipes(b):
         "Clear glass is a plain finish; the family's name and transparency agree. Kohler's sheet does not say clear or frosted.",
         owner="Kohler's spec sheet does not say whether the K-27263 shade is clear or frosted; clear is the Revit family's word.",
         urls=URL_KOHLER_27263)
-    add("Kohler-Frosted_Glass", glass((230, 234, 232), 0.55, 0.85, 0.55),
-        "Kohler K-32375-SC01 spec: 'frosted-glass shade'. Glass parent with a rough surface (0.55) and 55 % opacity so that the "
-        "lamp behind it reads as a soft glow.", 4, "The manufacturer states frosted glass.", urls=URL_KOHLER_32375)
+    add("Kohler-Frosted_Glass", b.diffuser((240, 242, 240), 0.55, 0.6),
+        "Kohler K-32375-SC01 spec: 'frosted-glass shade'. Diffuser parent (a thin sheet that scatters the light it lets through): "
+        "white body, rough surface (0.55), 60 % of the light passes to the far side, so the shade reads white and glows from the "
+        "lamp inside. The Glass parent was tried first and read as dark clear glass.", 4,
+        "The manufacturer states frosted glass; the share of light let through (60 %) is a typical figure, not Kohler's.",
+        urls=URL_KOHLER_32375)
     kohler_cp = ("Kohler finish CP 'Polished Chrome' (listed on Kohler's spec sheets for the Clearflo drains K-7271 and K-7272). "
                  "Chrome plate: Metal parent, chrome's own reflectance (sRGB 196,197,197), near-mirror roughness 0.05.")
     for key in ("Kohler-Metal-CP-Polished_Chrome", "Metal_-_Kohler_-_CP_-_Polished_Chrome", "Metal-Kohler-CP-Polished_Chrome"):

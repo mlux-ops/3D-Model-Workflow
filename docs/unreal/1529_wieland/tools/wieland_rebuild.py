@@ -6,7 +6,7 @@ by a material override on the placed object. Every override is listed in a table
 Manager list with the two options "Revit as exported" and "Phase 12 active", and removed by revert().
 
     import wieland_rebuild as wr
-    wr.build_parents()                    # the two parents this phase adds (copies of the Opaque parent)
+    wr.build_parents()                    # the three parents this phase adds (copies of the Opaque parent)
     wr.import_images(recipes)             # the images the recipes name; existing ones are left alone
     wr.build(recipes, only=[...])         # the instances; rebuild=True remakes existing ones
     wr.sync(recipes, table_csv)           # sets and removes overrides so that the level matches the recipes
@@ -39,6 +39,7 @@ OPTION_ACTIVE = "Phase 12 active"
 
 _EMISSIVE = "M_W1529_Emissive"
 _STONE = "M_W1529_StoneBlend"
+_DIFFUSER = "M_W1529_Diffuser"
 
 _MACRO = """
 float3 ratio = lerp(float3(1.0, 1.0, 1.0), Map.rgb * 2.0, Amount);
@@ -65,12 +66,15 @@ def _copy_of_opaque(name):
 
 
 def build_parents():
-    """Makes the two parents this phase adds; each is the Opaque parent with one more block.
+    """Makes the three parents this phase adds; each is the Opaque parent with one more block.
 
     M_W1529_Emissive: adds light given off by the surface, EmissiveColor (brightness 1) times
     Luminance_cd_m2 (candela per square metre; the project's exposure is in physical units).
     M_W1529_StoneBlend: adds MacroColorMap, a very large image laid in world metres (MacroSize_m) whose
     value, times two, multiplies the colour, so that 0.5 grey changes nothing; MacroColorAmount fades it.
+    M_W1529_Diffuser: a thin sheet that lets light through and scatters it (frosted glass, a lamp shade).
+    It uses the engine's two-sided shading for thin sheets; TransmissionColor is the share of the light
+    that comes out on the far side. The Glass parent cannot do this: it shows what is behind it sharply.
     """
     result = {}
     material, existed = _copy_of_opaque(_EMISSIVE)
@@ -108,6 +112,16 @@ def build_parents():
         result[_STONE] = wp._finish(material)
     else:
         result[_STONE] = "already there"
+    material, existed = _copy_of_opaque(_DIFFUSER)
+    if not existed:
+        material.set_editor_property("shading_model", unreal.MaterialShadingModel.MSM_TWO_SIDED_FOLIAGE)
+        material.set_editor_property("two_sided", True)
+        g = wp._Graph(material)
+        through = g.vector("TransmissionColor", (0.6, 0.6, 0.6, 1), "6 Light")
+        g.out(g.mask(through, r=True, g=True, b=True), wp.MP.MP_SUBSURFACE_COLOR)
+        result[_DIFFUSER] = wp._finish(material)
+    else:
+        result[_DIFFUSER] = "already there"
     return result
 
 
