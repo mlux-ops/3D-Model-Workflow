@@ -119,6 +119,9 @@ def main():
                 rel_r = np.stack([ndimage.gaussian_filter(ndimage.median_filter(rel_r[..., k], 5, mode="nearest"),
                                                           1.5, mode="nearest") for k in range(3)], -1)
                 rel_r = np.clip(rel_r, 1 - FIELD_CLAMP, 1 + FIELD_CLAMP)
+                # rev 3: mean exactly 1 per channel, so clouding redistributes colour within the
+                # tile but never shifts the tile's measured colour (it brightened/tinted tiles before)
+                rel_r = rel_r / rel_r.mean(axis=(0, 1))
                 colours.append(col)
                 fields.append(rel_r)
                 ids.append(tid)

@@ -26,12 +26,12 @@ Every tile colour is a real tile measured from the manufacturer's own frontal wa
 
 | colourway | tile colour range in the map, sRGB (min / median / max of tile centres) | luminance sd |
 |---|---|---|
-| Fes | (93,118,96) / (164,187,170) / (219,239,231): deep sage to pale mint | 33.3 |
-| Ifrane | (144,110,111) / (179,146,147) / (204,168,170): dusty rose to pale pink | 15.1 |
+| Fes | (93,117,95) / (164,187,170) / (217,237,230): deep sage to pale mint | 33.2 |
+| Ifrane | (144,110,111) / (179,146,146) / (202,167,168): dusty rose to pale pink | 15.1 |
 
 Fes varies much more than Ifrane, as it does on the manufacturer's walls.
 
-Each tile also carries the in-tile glaze clouding of a real low-reflection tile from the same wall (rotated or mirrored, limited to ±12%), and the fine specks and pinholes from that colourway's studio swatch.
+Each tile also carries the in-tile glaze clouding of a real low-reflection tile from the same wall (rotated or mirrored, limited to ±12%), and the fine specks and pinholes from that colourway's studio swatch. Both are normalised to a mean of exactly 1, so they move colour around inside a tile without shifting the tile's measured colour. Checked per tile (face interior vs the measured colour): ratio 1.000-1.002, sd under 0.3% in every map (`placed_colour_ratio` in `source/build_report.json`).
 
 Method:
 - **White balance** comes from the white basin in each scene.

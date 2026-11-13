@@ -172,6 +172,7 @@ def main():
         det = sw / ndimage.gaussian_filter(sw, 6)
         det = np.clip(det, 0.80, 1.15)
         det = resize_f(det, (face_px, face_px))
+        det = det / det.mean()                                      # detail never shifts tile colour
         cw[k] = {"gain": gain, "cols": cols, "fields": fields, "detail": det}
         s8 = lin_to_srgb(cols) * 255
         rep[k] = {"exposure_gain": round(gain, 4), "samples": len(cols), "clouding_fields": len(fields),
@@ -266,6 +267,19 @@ def main():
                     placed[k].append(col)
         img = a[..., None] * img + (1 - a[..., None]) * grout
         maps[key] = img
+    # placed vs measured colour per cell: face interior (>5 mm from the outline), linear RGB ratio
+    inner = d > 5.0
+    for key in ("fes", "ifrane", "mix"):
+        ratios = []
+        for r in range(N):
+            for c in range(N):
+                k = key if key != "mix" else ("fes" if choose_fes[r, c] else "ifrane")
+                sl = (slice(r * MOD_PX, (r + 1) * MOD_PX), slice(c * MOD_PX, (c + 1) * MOD_PX))
+                m = inner[sl]
+                ratios.append(maps[key][sl][m].mean(0) / cw[k]["cols"][samp[k][r, c]])
+        ratios = np.array(ratios)
+        rep.setdefault("placed_colour_ratio", {})[key] = {"mean": ratios.mean(0).round(4).tolist(),
+                                                           "sd": ratios.std(0).round(4).tolist()}
     for k in ("fes", "ifrane"):
         p = np.array(placed[k])
         meas = cw[k]["cols"]
@@ -293,6 +307,8 @@ def main():
     chk["all_same_size_square"] = len({(h["width"], h["height"]) for h in hdr.values()}) == 1 and W == H
     chk["no_equal_neighbour_samples"] = adjacent_equal(samp["fes"]) == 0 and adjacent_equal(samp["ifrane"]) == 0
     chk["clearance_positive"] = rep["height_mm"]["clearance_above_grout"] > 0
+    chk["placed_colour_matches_measured"] = all(
+        max(abs(m - 1) for m in v["mean"]) < 0.01 and max(v["sd"]) < 0.01 for v in rep["placed_colour_ratio"].values())
 
     def wrap(a):
         a = a if a.ndim == 3 else a[..., None]
