@@ -10,6 +10,7 @@ image a whole number of times, or from noise filtered in a way that wraps around
     mk.seamless_crop(source, folder, name, band)   # an export image made to repeat without a seam
     mk.limestone_blend(folder)                     # large soft zones of buff and grey, for the stone parent
     mk.resample(source, folder, name, size)        # an export image at a finer pixel grid
+    mk.contrast(source, folder, name, gain)        # a colour image with a stronger figure
 
 Each function returns [file, asset name, kind, physical field in metres or None, note] and skips
 the work when the file is already there.
@@ -160,6 +161,18 @@ def resample(source, folder, name, size):
     if not os.path.exists(path):
         Image.open(source).convert("RGB").resize(size, Image.LANCZOS).save(path)
     return [path, name, "colour", None, "the Revit export's own image at a finer pixel grid"]
+
+
+def contrast(source, folder, name, gain):
+    """A colour image with its light-and-dark figure made `gain` times stronger around its own mean
+    colour (the mean colour stays). For wood whose grain is too faint to read at room distance."""
+    path = os.path.join(folder, name + ".png")
+    if not os.path.exists(path):
+        linear = _to_linear(np.asarray(Image.open(source).convert("RGB"), dtype=np.float64) / 255.0)
+        mean = linear.reshape(-1, 3).mean(axis=0)
+        result = mean[None, None, :] * np.clip(1.0 + gain * (linear / mean[None, None, :] - 1.0), 0.05, 4.0)
+        Image.fromarray(np.round(_to_srgb(result) * 255).astype(np.uint8), "RGB").save(path)
+    return [path, name, "colour", None, "figure made %.1f times stronger around the mean colour" % gain]
 
 
 def mean_linear(path, limit=512):

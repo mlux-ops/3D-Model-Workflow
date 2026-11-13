@@ -159,8 +159,9 @@ class Book:
     def flat(self, rgb):
         return self._own(mk.flat_colour(tuple(rgb), self.generated))
 
-    def veneer(self, set_id, resolution, short):
-        """The three images of a Poly Haven set: colour, relief, roughness."""
+    def veneer(self, set_id, resolution, short, gain=None):
+        """The three images of a Poly Haven set: colour, relief, roughness. With gain, the colour
+        image is a copy whose grain is that many times stronger (the set's own is too faint to read)."""
         result = {}
         for key, part, kind in (("BaseColorMap", "diff", "colour"), ("NormalMap", "nor_dx", "normal"),
                                 ("RoughnessMap", "rough", "mask")):
@@ -169,6 +170,13 @@ class Book:
             self.imports[asset] = [path, kind]
             self.files[asset] = path
             result[key] = asset
+        if gain:
+            source = self.files[result["BaseColorMap"]]
+            del self.imports[result["BaseColorMap"]]
+            item = mk.contrast(source, self.generated, "T_W1529_P12_%s_Strong_C" % short, gain)
+            item[3] = (1.0, 1.0)
+            item[4] = "Poly Haven %s (CC0), %s" % (set_id, item[4])
+            result["BaseColorMap"] = self._own(item)
         return result
 
     def ambient(self, name):
@@ -404,10 +412,10 @@ def write_recipes(b):
     add("Door_-_Frame", coat(dove, 0.45),
         "Owner's note on a keep row: 'same white dove paint as door panel'. Identical to Door_-_Panel.", 4,
         "Paint colour and sheen are named by the owner.", urls=URL_DOVE)
-    oak = b.veneer("oak_veneer_02", "4k", "OakVeneer02")
+    oak = b.veneer("oak_veneer_02", "4k", "OakVeneer02", gain=2.5)
     add("Cabinet_Wood_Veneer", b.wood(oak, (1.0, 1.0), (201, 172, 137), turn=True, anti=True, rough=0.85),
         "Owner's note: 'seamless, non repeating texture of a rift cut white oak'. Poly Haven 'Oak Veneer 02' (straight, tight "
-        "grain as rift cutting gives; 4,096 pixels over 1 m), tinted to the pale neutral of unstained white oak, grain turned "
+        "grain as rift cutting gives; 4,096 pixels over 1 m; its grain made 2.5 times stronger so that it reads at room distance), tinted to the pale neutral of unstained white oak, grain turned "
         "upright, and a second, shifted reading mixed in through a cloud pattern so that no repeat shows.", 4,
         "The owner named the finish; a sharp image at 4,096 pixels per metre.",
         assumption="Grain runs upright on every face (world mapping); the Revit model does not record grain direction per panel.",
@@ -755,6 +763,7 @@ COLUMNS = ["material", "group", "decision_read", "owner_note_read", "read_at", "
 
 
 def main(root):
+    root = os.path.abspath(root).replace("\\", "/")   # the editor reads these paths from another folder
     b = Book(root)
     with open(os.path.join(root, "material_audit.csv"), encoding="utf-8-sig", newline="") as handle:
         audit = list(csv.DictReader(handle))
