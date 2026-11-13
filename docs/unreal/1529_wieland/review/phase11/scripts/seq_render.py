@@ -4,7 +4,8 @@ Reads review/phase11/seq_render_job.json:
     {"asset": "SEQ_W1529_Triplex", "name": "triplex", "folder": "D:/.../animation_frames/triplex",
      "start": 0, "end": 150,            frames start to end-1 (the engine's custom range excludes its end frame)
      "tier": "rt" or "pt", "samples": 8, "warm_up_frames": 64, "width": 3840, "height": 2160,
-     "anti_aliasing": "TSR" or "NONE" or null (null leaves the project's own method)}
+     "anti_aliasing": "TSR" or "NONE" or null (null leaves the project's own method),
+     "quality": [4, 4, 4]}              levels of the engine's quality groups for bounced light, reflections, shadows
 Files are named <name>.<frame, four digits>.png. The render runs on the editor's own ticks through Movie Render
 Graph's quick render of a level sequence, in the editor's world (no play session), as the stills were made.
 
@@ -12,8 +13,8 @@ Before starting it puts the editor in the state of the animation and reads it ba
 r.RayTracing.Nanite.Mode must read 0 (it is never changed here); Revit's ground slab and massing are hidden for
 the session; on-screen messages are off; Lumen's stored lighting is kept at a higher pre-exposure so that the
 bright outdoor frames are not clipped (r.EyeAdaptation.CachedLightingPreExposure 7); for the real-time tier the
-engine's quality groups for bounced light, reflections and shadows are set to their highest level (4,
-"cinematic"); for the path-traced tier the slots for tree leaves are raised as for the stills.
+engine's quality groups for bounced light, reflections and shadows are set to the job's levels (4, "cinematic",
+is the highest; 3 is "epic", the level the walk-through uses); for the path-traced tier the slots for tree leaves are raised as for the stills.
 seq_end.py puts all of that back.
 """
 import sys, json, os, importlib
@@ -52,8 +53,9 @@ state[PRE_EXPOSURE] = wt.cvar(PRE_EXPOSURE, 7)
 if path_traced:
     state[wt.APPEND] = wt.cvar(wt.APPEND, wt.APPEND_FOR_TREES)
 else:
-    for name in QUALITY:
-        state[name] = wt.cvar(name, 4)
+    levels = job.get("quality") or [4, 4, 4]
+    for name, level in zip(QUALITY, levels):
+        state[name] = wt.cvar(name, int(level))
 editor = unreal.get_editor_subsystem(unreal.LevelEditorSubsystem)
 editor.editor_set_viewport_realtime(True)
 unreal.SystemLibrary.execute_console_command(wl.world(), "viewmode lit")

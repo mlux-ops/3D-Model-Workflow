@@ -1,7 +1,7 @@
 """Phase 11, step 11.2: render the frames of one camera move in runs, resuming from whatever is already on disk.
 
     python -B review/phase11/scripts/anim_driver.py <name> <asset> <folder> [--run 150] [--samples 8]
-           [--first N --last M] [--min-free 26] [--tier rt] [--anti-aliasing TSR] [--warm-up 64]
+           [--first N --last M] [--min-free 26] [--tier rt] [--anti-aliasing TSR] [--warm-up 64] [--quality 4,4,4]
 
 Runs outside the editor, from the folder docs/unreal/1529_wieland. In a loop it lists the frames of the move that
 have no file yet (<folder>/<name>.<frame, four digits>.png), takes the first unbroken run of them (at most --run
@@ -67,6 +67,7 @@ def main():
     parser.add_argument("--tier", default="rt")
     parser.add_argument("--anti-aliasing", default=None)
     parser.add_argument("--warm-up", type=int, default=64)
+    parser.add_argument("--quality", default="4,4,4", help="levels for bounced light, reflections, shadows")
     args = parser.parse_args()
     os.makedirs(args.folder, exist_ok=True)
 
@@ -114,7 +115,8 @@ def main():
             time.sleep(30)
             continue
         job = {"asset": args.asset, "name": args.name, "folder": args.folder.replace("\\", "/"), "start": start, "end": end + 1,
-               "tier": args.tier, "samples": args.samples, "warm_up_frames": args.warm_up, "anti_aliasing": args.anti_aliasing}
+               "tier": args.tier, "samples": args.samples, "warm_up_frames": args.warm_up, "anti_aliasing": args.anti_aliasing,
+               "quality": [int(v) for v in args.quality.split(",")]}
         with open("review/phase11/seq_render_job.json", "w", encoding="utf-8") as handle:
             json.dump(job, handle)
         before = len(todo)

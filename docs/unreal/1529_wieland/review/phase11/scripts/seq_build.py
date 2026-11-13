@@ -26,6 +26,7 @@ BASE = "E:/Claude/3D-Model-Workflow/.claude/worktrees/1529-wieland-scene-plan-e8
 FOLDER = "/Game/Wieland1529/Delivery"
 BASE_EV = 14.644
 LABEL = "TEMP_sequence_camera"
+MOTION_BLUR = 0.2   # the engine's 0.5 smears a walk at 1.9 m/s through rooms; 0.2 keeps a trace of it
 
 with open(BASE + "seq_job.json", "r", encoding="utf-8") as handle:
     job = json.load(handle)
@@ -62,16 +63,29 @@ component.set_editor_property("current_focal_length", 24.0)
 focus = component.get_editor_property("focus_settings")
 focus.set_editor_property("focus_method", unreal.CameraFocusMethod.DISABLE)
 component.set_editor_property("focus_settings", focus)
+# A cine camera puts its own aperture into the exposure (f/2.8 unless told), so it is set to the f/8 the lighting
+# level's exposure is written for; found on the first test frames, which came out three stops too bright.
+lens.set_editor_property("min_f_stop", 1.2)
+lens.set_editor_property("max_f_stop", 22.0)
+component.set_editor_property("lens_settings", lens)
+component.set_editor_property("current_aperture", 8.0)
 wt._camera_exposure(component, BASE_EV)
 settings = component.get_editor_property("post_process_settings")
 settings.set_editor_property("override_auto_exposure_bias", True)
 settings.set_editor_property("auto_exposure_bias", BASE_EV - first["ev"])
+settings.set_editor_property("override_motion_blur_amount", True)
+settings.set_editor_property("motion_blur_amount", MOTION_BLUR)
 component.set_editor_property("post_process_settings", settings)
 field_of_view = component.get_editor_property("field_of_view")
 
 camera_binding = sequence.add_spawnable_from_instance(camera)
+# add_possessable also makes an empty binding for the level camera itself; it is removed again below
 component_binding = sequence.add_possessable(component)
 component_binding.set_parent(camera_binding)
+camera_binding.set_display_name("W1529_Camera")
+for binding in list(sequence.get_bindings()):
+    if str(binding.get_display_name()) == LABEL and not binding.get_tracks() and not binding.get_child_possessables():
+        binding.remove()
 actors.destroy_actor(camera)
 
 LINEAR = unreal.MovieSceneKeyInterpolation.LINEAR
