@@ -1,6 +1,8 @@
 # Phase 8 results: lighting and atmosphere
 
-Status: PAUSED by the owner at 17:09 on 2026-11-12, just after J7 was committed (`0a834488`), before usage ran out. J1 to J4, J6 and J7 are done. J5 (step 8.4 part 1, fixture table and data-sheet search) was still marked in progress: check its outputs before continuing it. The agent was stopped with `taskkill`, and any unsaved editor changes since J7 are unknown. The supervising watcher is stopped. To resume, re-arm it (`current_phase.txt` = 8) or paste `KICKOFF_PHASE8.md` into the panel.
+Status: RESUMED at 19:25 on 2026-11-12 by a new unattended session (no memory of the earlier one). Checked on resuming: the editor is a fresh run (process 68852, started 19:21) and had the earlier production level open with nothing marked as changed; the lighting level, the sun, the exposure and the readings of J1 to J4, J6 and J7 are on disk as the journal says; J5 had left downloads in `E:\Wieland1529_site_data\photometry\` but no fixture table and no rows in `asset_downloads.csv`, so J5 is continued from its downloads. Free commit memory 38.1 GB of 79.1 GB.
+
+Earlier status: PAUSED by the owner at 17:09 on 2026-11-12, just after J7 was committed (`0a834488`), before usage ran out. J1 to J4, J6 and J7 are done. J5 (step 8.4 part 1, fixture table and data-sheet search) was still marked in progress: check its outputs before continuing it. The agent was stopped with `taskkill`, and any unsaved editor changes since J7 are unknown. The supervising watcher is stopped. To resume, re-arm it (`current_phase.txt` = 8) or paste `KICKOFF_PHASE8.md` into the panel.
 
 Earlier status: STARTED at 16:38 on 2026-11-12. Unattended run; the owner is away. Nothing is pushed.
 
