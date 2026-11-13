@@ -702,7 +702,7 @@ Each is asked at the step that needs it. None has been asked or done yet.
 
 Added by the owner's decision on 2026-11-12: "rebuild 1–2s". It is numbered 12 because the supervisor's queue takes whole numbers; it runs between Phase 8 and Phase 9 so that Phase 9 budgets the final textures.
 
-**Goal.** Every material the owner marked "rebuild", and every material scored 1 or 2 in the Phase 5 audit that the owner left undecided, replaced by a material that shows its finish faithfully and passes this repository's material rules. Every material marked "candidate" switched to its Phase 5 candidate.
+**Goal.** Every material the owner marked "rebuild", every material the owner left undecided, and every Brizo, Hansgrohe or Kohler finish, replaced by a material that shows its finish faithfully and passes this repository's material rules. Every material marked "candidate" switched to its Phase 5 candidate.
 
 **Inputs.**
 
@@ -714,11 +714,14 @@ Added by the owner's decision on 2026-11-12: "rebuild 1–2s". It is numbered 12
 
 | Decision | Confidence | Action |
 |---|---|---|
+| any decision, name contains Brizo, Hansgrohe or Kohler (any capitalisation) | any | Research and rebuild from the manufacturer's product (owner, 2026-11-13; see below) |
 | rebuild | any | Rebuild |
-| blank | 1 or 2 | Rebuild (the owner's default of 2026-11-12) |
+| blank | any | Rebuild (owner, 2026-11-13: "any left unanswered have the agent rebuild") |
+| keep, with an `owner_note` that asks for a different finish | any | Rebuild to the note (for example `Door_-_Frame`: White Dove paint) |
 | candidate | any | Make the Phase 5 candidate the active material |
 | keep | any | Leave as exported |
-| blank | 3 to 5 | Leave as exported; listed as still open |
+
+**Brand-named finishes (owner, 2026-11-13).** Every material whose name contains Brizo, Hansgrohe or Kohler (22 on 2026-11-13) is rebuilt from the manufacturer's own information, whatever its `decision`. For each one, find the product and finish from the material name, the family that uses it and its Revit model number where there is one. Read the manufacturer's finish name, product pages, specification sheets and product photographs. Set colour, metalness, roughness, anisotropy for brushed finishes, and the colour of transparent or emissive parts from that evidence. Record each source address, with the date read, in `material_rebuild.csv`. Product photographs and sheets are reference only, kept in `E:\Wieland1529_site_data\manufacturer_reference\` and listed in `asset_downloads.csv` (no cost, no account, 500 MB cap). A manufacturer's photograph is never shipped as a texture. The Revit material stays switchable back.
 
 **Steps.**
 

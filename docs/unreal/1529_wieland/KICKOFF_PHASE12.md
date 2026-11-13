@@ -12,7 +12,12 @@ The owner's decisions, and where to read them
 
 The owner answers on a review page that writes straight into `E:\Claude\3D-Model-Workflow\.claude\worktrees\1529-wieland-scene-plan-e84a03\docs\unreal\1529_wieland\material_audit.csv`, columns `decision` (keep, candidate, rebuild, or blank) and `owner_note` (free text: what the finish really is). Every answer is also logged with its time in `owner_review\decisions_log.csv`. The owner may keep answering while you work, so:
 
-- Build the work list from the table in Phase 12 of `PLAN.md` at the start: rebuild every "rebuild" row and every blank row with confidence 1 or 2; make the Phase 5 candidate active for every "candidate" row; leave "keep" rows and blank rows scored 3 to 5 alone.
+- Build the work list from the table in Phase 12 of `PLAN.md` at the start. The owner's rules of 2026-11-13:
+  - Rebuild every "rebuild" row and every blank row, whatever its score.
+  - Rebuild every material whose name contains Brizo, Hansgrohe or Kohler (any capitalisation), whatever its decision. For these, research the actual product: work out the product and finish from the material name, the family that uses it and any model number in the name (for example `Brizo_69080-BL`, `Kohler_K-77685-NA`). Read the manufacturer's finish name, product pages, specification sheets and product photographs. Set colour, metalness, roughness, anisotropy for brushed finishes, and the colour of glass, vitreous china, acrylic or emissive parts from that evidence. Record every source address, with the date read, in `material_rebuild.csv`. Product photographs and sheets are reference only: save them under `E:\Wieland1529_site_data\manufacturer_reference\`, list them in `asset_downloads.csv`, stay within no cost, no account and 500 MB in total, and never ship a manufacturer's photograph as a texture. Brushed and polished metals need roughness and anisotropy that read correctly under grazing light, so check them on the swatch sheet.
+  - Rebuild a "keep" row whose `owner_note` asks for a different finish (for example `Door_-_Frame`: the same White Dove paint as the door panel).
+  - Make the Phase 5 candidate active for every remaining "candidate" row.
+  - Leave the remaining "keep" rows alone.
 - Read the two columns again before each material and before the last step. A row whose answer changed after you handled it is redone at the end. Never write to `material_audit.csv` yourself; record your work in `material_rebuild.csv`.
 - The owner's note outranks anything you infer. Where there is no note and Revit never set a finish, infer it from the objects, families, categories and rooms that use the material, say so in the row, and label the result as an assumption on its sheet.
 
@@ -41,6 +46,7 @@ What is still the owner's
 
 Rules that apply throughout
 
+- Nanite ray tracing: leave the console variable r.RayTracing.Nanite.Mode at 0 except during a path-traced render. In UE 5.9 its ray-tracing build failed an engine check and hung the graphics card twice on 2026-11-12/13 (NaniteClusterRayTracing.usf line 539; once on the first path-traced frame after a level opened, once during real-time profiling). For a path-traced render, let the level settle five minutes first, render one picture at a time, and set it back to 0 afterwards. Do not adopt mode 2 for the real-time walk-through; report it to the owner as unstable in 5.9.
 - Never save `/Game/Wieland/R15_Landscape/L_R15_Production`, never use "Save All", save named assets only, and never edit an asset that Datasmith created; apply changes as overrides, instances, new assets or recorded swaps, and keep every swap switchable back to the Revit material.
 - Memory: the machine has about 79 GB of commit, and other programs hold a large share. Before any heavy step, read free commit; if it is under 30 GB, unload what you can and wait rather than start. Log the editor's committed memory every few seconds during rendering, so a crash leaves evidence.
 - Rebuild one material first and look at its sheet before any batch. Pick one whose finish is already known and only needs a better texture, such as `Cabinet_Wood_Veneer` or `Finishes_-_Flooring__Oak`, not the material on the most objects.

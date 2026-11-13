@@ -95,7 +95,7 @@ textarea { width: 100%; min-height: 54px; resize: vertical; border: 1px solid va
     <p><b>Keep</b> leaves the Revit material as it is. <b>Use candidate</b> switches to the right-hand picture.
     <b>Rebuild</b> asks the agent to make a better material; say in the note what the finish really is
     (product, colour, sheen) if you know. Click a pressed button again to undo it.
-    Materials scored 1 or 2 that you leave undecided are rebuilt by default.</p>
+    Every material you leave undecided is rebuilt. Every Brizo, Hansgrohe or Kohler finish is researched from the manufacturer and rebuilt, whatever you choose.</p>
     <p>Every click is saved at once into <code id="auditpath">material_audit.csv</code> (columns <code>decision</code>
     and <code>owner_note</code>), which is where the agent reads it, and logged in <code>owner_review\decisions_log.csv</code>.
     Notes save when you click outside the box. Keyboard: click a card, then press 1, 2 or 3.</p>
@@ -109,7 +109,9 @@ textarea { width: 100%; min-height: 54px; resize: vertical; border: 1px solid va
 let mats = [];
 let filter = "low";
 const $ = s => document.querySelector(s);
-const LOW = m => (m.confidence ?? 0) <= 2;
+const BRAND = m => /brizo|hansgrohe|kohler/i.test(m.material);
+const AUTO = m => BRAND(m) ? "Brizo, Hansgrohe or Kohler: the agent researches the product and rebuilds it"
+  : (!m.decision ? "Undecided: will be rebuilt" : "");
 
 // Small DOM builder: every value goes in as text, never as markup.
 function h(tag, attrs, ...kids) {
@@ -140,9 +142,10 @@ function matches(m) {
 
 function summary() {
   const decided = mats.filter(m => m.decision).length;
-  const lowOpen = mats.filter(m => !m.decision && LOW(m)).length;
+  const open = mats.filter(m => !m.decision).length;
+  const brand = mats.filter(BRAND).length;
   const by = d => mats.filter(m => m.decision === d).length;
-  $("#summary").textContent = `${decided} of ${mats.length} decided · keep ${by("keep")} · candidate ${by("candidate")} · rebuild ${by("rebuild")} · ${lowOpen} low-scored materials undecided (rebuilt by default)`;
+  $("#summary").textContent = `${decided} of ${mats.length} decided · keep ${by("keep")} · candidate ${by("candidate")} · rebuild ${by("rebuild")} · ${open} undecided (rebuilt) · ${brand} Brizo/Hansgrohe/Kohler (researched and rebuilt)`;
   $("#pbar").style.width = (100 * decided / Math.max(1, mats.length)) + "%";
 }
 
@@ -150,7 +153,8 @@ function why(label, text) { return h("div", { class: "why" }, h("b", {}, label +
 
 function paintState(el, m, statusText) {
   el.querySelectorAll(".btn").forEach(b => b.setAttribute("aria-pressed", String(b.dataset.d === m.decision)));
-  el.querySelector(".default").hidden = !(!m.decision && LOW(m));
+  const auto = AUTO(m); const dflt = el.querySelector(".default");
+  dflt.textContent = auto; dflt.hidden = !auto;
   el.querySelector(".clear").hidden = !m.decision;
   el.querySelector(".msg").textContent = statusText;
 }
@@ -175,7 +179,7 @@ function card(m, i) {
         btn("keep", "1 · Keep", "Revit as exported", false),
         btn("candidate", "2 · Use candidate", "right-hand picture", !m.has_candidate),
         btn("rebuild", "3 · Rebuild", "agent makes a better one", false)),
-      h("div", { class: "default" }, "Undecided: will be rebuilt by default"),
+      h("div", { class: "default" }),
       h("textarea", { placeholder: "Note for the agent (optional): what the finish really is, e.g. white oak, matte" }),
       h("div", { class: "status" }, h("span", { class: "msg" }), h("button", { class: "clear" }, "clear decision"))));
   el.querySelector("textarea").value = m.note || "";
