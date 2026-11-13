@@ -1,0 +1,123 @@
+{
+ "source": "gpu_passes_T_mega_vsm.json",
+ "method": "median of the samples per station and screen percentage; passes assigned to budget rows by name",
+ "budget_rows": [
+  {
+   "key": "geometry",
+   "label": "Geometry: Nanite visibility and surface pass",
+   "budget_ms": 2.0
+  },
+  {
+   "key": "shadows",
+   "label": "Shadows: Virtual Shadow Maps",
+   "budget_ms": 2.0
+  },
+  {
+   "key": "lumen_scene",
+   "label": "Lumen scene update and its lighting caches",
+   "budget_ms": 1.5
+  },
+  {
+   "key": "gi",
+   "label": "Lumen global illumination",
+   "budget_ms": 2.5
+  },
+  {
+   "key": "reflections",
+   "label": "Lumen reflections, including glass",
+   "budget_ms": 1.5
+  },
+  {
+   "key": "direct",
+   "label": "Direct light",
+   "budget_ms": 1.0
+  },
+  {
+   "key": "sky",
+   "label": "Sky, atmosphere, clouds and fog",
+   "budget_ms": 0.8
+  },
+  {
+   "key": "translucent",
+   "label": "Translucent surfaces",
+   "budget_ms": 0.8
+  },
+  {
+   "key": "wind",
+   "label": "Foliage wind",
+   "budget_ms": 0.4
+  },
+  {
+   "key": "upscaling",
+   "label": "Temporal upscaling",
+   "budget_ms": 1.2
+  },
+  {
+   "key": "post",
+   "label": "Post-processing and tone mapping",
+   "budget_ms": 0.8
+  },
+  {
+   "key": "other",
+   "label": "Not in the budget table",
+   "budget_ms": null
+  },
+  {
+   "key": "editor_ui",
+   "label": "Editor interface (outside the scene)",
+   "budget_ms": null
+  }
+ ],
+ "results": [
+  {
+   "station": "D2",
+   "screen_percentage": 82,
+   "samples": 3,
+   "rows_ms": {
+    "geometry": 1.059,
+    "shadows": 4.551,
+    "lumen_scene": 0.936,
+    "gi": 7.23,
+    "reflections": 1.942,
+    "direct": 3.68,
+    "sky": 0.597,
+    "translucent": 0.825,
+    "wind": 0.207,
+    "upscaling": 1.027,
+    "post": 0.263,
+    "other": 0.541,
+    "editor_ui": 0.194
+   },
+   "sum_of_scene_rows_ms": 22.858,
+   "graphics_queue_ms": 15.06,
+   "compute_queue_ms": 8.484,
+   "frame_gpu_ms": 15.32,
+   "frame_ms": 16.833
+  },
+  {
+   "station": "S1",
+   "screen_percentage": 82,
+   "samples": 3,
+   "rows_ms": {
+    "geometry": 1.458,
+    "shadows": 5.044,
+    "lumen_scene": 0.831,
+    "gi": 4.083,
+    "reflections": 0.992,
+    "direct": 1.233,
+    "sky": 0.691,
+    "translucent": 0.624,
+    "wind": 0.22,
+    "upscaling": 1.075,
+    "post": 0.282,
+    "other": 1.104,
+    "editor_ui": 0.179
+   },
+   "sum_of_scene_rows_ms": 17.636,
+   "graphics_queue_ms": 12.96,
+   "compute_queue_ms": 5.325,
+   "frame_gpu_ms": 12.906,
+   "frame_ms": 14.18
+  }
+ ]
+}
