@@ -77,7 +77,7 @@ def main(argv):
             percentage = posed["cvars"].get("r.Editor.Viewport.ScreenPercentage", 100)
             time.sleep(6)
             for sample in range(1, count + 1):
-                py(client, "import wieland_profile as wp\nwp.to_front()")
+                py(client, "importlib.reload(m7)\nm7.polite_front()")
                 time.sleep(1)
                 timings = tool(client, "PerfToolset.StatsToolset", "GetFrameTimings", {})
                 tree = tool(client, "PerfToolset.GpuProfilerToolset", "TriggerGPUProfile", {"minInclusiveMs": 0})

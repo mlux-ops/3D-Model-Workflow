@@ -21,6 +21,7 @@ import unreal
 
 import phase6_profile_m4 as m4
 import wieland_interiors as wi
+import wieland_lighting as wl
 import wieland_levels as wlv
 import wieland_profile as wp
 
@@ -55,6 +56,33 @@ def lighting():
                 if component.get_editor_property("cast_shadows"):
                     out["fixture_lights_casting_shadows"] += 1
     return out
+
+
+def idle_seconds():
+    """Seconds since the last keyboard or mouse input on this computer (Windows' own counter)."""
+    import ctypes
+
+    class LastInput(ctypes.Structure):
+        _fields_ = [("size", ctypes.c_uint), ("time", ctypes.c_uint)]
+
+    info = LastInput(ctypes.sizeof(LastInput), 0)
+    ctypes.windll.user32.GetLastInputInfo(ctypes.byref(info))
+    return ((ctypes.windll.kernel32.GetTickCount() - info.time) & 0xFFFFFFFF) / 1000.0
+
+
+def polite_front(idle_needed=30.0):
+    """Put a minimized editor window back on screen, and ask the editor to the front only when it is not in front
+    already and nobody has used keyboard or mouse for idle_needed seconds. On 2026-11-13 at 05:40 somebody was
+    working in a browser on this computer while state C2 was recorded: the unconditional wp.to_front() of the
+    earlier runs pressed the Alt key into their work every ten seconds, and they minimized the editor twice."""
+    restored = wl.window_restore()
+    in_front = bool(wp._foreground())
+    idle = idle_seconds()
+    asked = False
+    if not in_front and idle >= idle_needed:
+        asked = True
+        in_front = bool(wp.to_front().get("front"))
+    return {"restored": restored, "front": in_front, "asked": asked, "idle_seconds": round(idle, 1)}
 
 
 def _apply(world, cvars):
@@ -97,7 +125,8 @@ async def run(folder, label, parts=("exterior", "triplex", "penthouse", "roofdec
             if trial_seconds:
                 jobs = [dict(jobs[0], seconds=float(trial_seconds), name=jobs[0]["name"] + "_trial")]
             shown = wlv.show_for(point)
-            front = wp.to_front()
+            front = polite_front()
+            restored = front["restored"]
             info = {"step": "Phase 9, state %s, part %s%s" % (label, part, (": " + note) if note else ""),
                     "level": world.get_path_name(),
                     "quality": "Epic (3), pool %s, screen percentage %s, t.MaxFPS 1000, Game View on"
@@ -116,11 +145,10 @@ async def run(folder, label, parts=("exterior", "triplex", "penthouse", "roofdec
             wp.start(jobs, path, info)
             ticks = 0
             while wp.status()["active"]:
-                if ticks % 5 == 0:
-                    wp.to_front()
+                restored += polite_front()["restored"]
                 ticks += 1
                 await asyncio.sleep(2)
-            out.append([part, shown, wp.status()["finished_jobs"], wp.status()["error"]])
+            out.append([part, shown, wp.status()["finished_jobs"], wp.status()["error"], {"times_window_restored": restored}])
     finally:
         for name, value in before.items():
             m4._set(world, name, value)
@@ -147,7 +175,7 @@ def pose(station, cvars=None):
     shown = wlv.show_for(point)
     wp._force_realtime()
     wp._place(job, 0.0)
-    front = wp.to_front()
+    front = polite_front()
     size = unreal.get_editor_subsystem(unreal.UnrealEditorSubsystem).get_level_viewport_size()
     return {"station": station, "shown": shown, "front": front, "viewport_pixels": [size.x, size.y], "cvars": cvars,
             "job": job}
