@@ -54,6 +54,8 @@ def main(argv):
     label = argv[1]
     stations = argv[2].split(",") if len(argv) > 2 and argv[2] else ["S1", "S2", "S6", "D2", "D5"]
     cvars = json.loads(argv[3]) if len(argv) > 3 and argv[3] else None
+    if cvars is not None:
+        cvars = dict({"r.Editor.Viewport.ScreenPercentage": 82}, **cvars)  # tier conditions unless the variables say otherwise
     count = int(argv[4]) if len(argv) > 4 else 3
     folder = "%s/profiles/2026-11-13_M7/%s" % (ROOT, label)
     os.makedirs(folder, exist_ok=True)
