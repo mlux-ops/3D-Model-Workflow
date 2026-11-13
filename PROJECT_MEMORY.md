@@ -1176,3 +1176,9 @@ Journal: `docs\unreal\1529_wieland\phase6_results.md`, lines J13 to J15. Every e
 - Resume: re-arm `watcher.ps1` (it relaunches Phase 8 from the journal), or paste `KICKOFF_PHASE8.md` into the editor panel with the monitor off.
 - Resumed 19:22 by the supervisor: editor reopened (pid 68852), Phase 8 agent relaunched headless, watcher re-armed (pid 27852).
 - Error found before resuming (a latent risk, not yet triggered): the watcher's "phase finished" test looked only for a `| PENDING |` cell. Phase 8's J5 reads "in progress" instead, so the watcher would have taken Phase 8 as done and started Phase 9. Fix: a phase now counts as finished only when its first `Status:` line says DONE. Verified: the script parses; Phases 6 and 7 read DONE, and Phase 8 reads PAUSED, so it stays open.
+
+### Phase 8 paused again by the owner -- 2026-11-12 20:48 (supervising session)
+
+- Error, unresolved: the editor's agent server (port 8000) stopped answering at 19:53, about 13 minutes after J9 (path-traced ground truth) began. It was still silent at 20:48, while Windows reported the editor (pid 68852) as responding. Free commit memory was 27.6 GB, below the 30 GB floor. Probable cause, unconfirmed: a long path-traced render was blocking the editor's game thread, which serves the agent server. Memory pressure is a possible factor.
+- Action: on the owner's request the watcher (pid 27852) and the headless agent (pid 85404) were stopped. The editor was left open and was not saved.
+- Next step: before any resume, check that the agent server answers. If it does not, restart the editor (Don't Save) and redo J9 at a smaller sample count or resolution, checking free commit memory first. The watcher only alerted on SERVER_DOWN and never stepped in. Consider having it treat more than 30 minutes of silence from the agent server during a PENDING step as a stall.
