@@ -228,6 +228,7 @@ Each is asked at the step that needs it. None has been asked or done yet.
 | Google's 3D city tiles, only if the owner chooses them | Owner creates the account | none on disk | See `OPEN_DECISIONS.md`, decision 6 |
 | Delete the Street View captures held in this session's cache | Agent, after approval | frees a few MB | none |
 | Write render frames, packaged builds and project archives to H: | Agent, after approval | up to 120 GB in total, as budgeted | none |
+| Write them to `D:\Wieland1529_delivery\` instead, while H: (the external USB disk) is not connected | Agent; approved by the owner on 2026-11-13 | up to 60 GB | none |
 | Install a Python library if a needed one is missing (map projection, point-cloud reading, image comparison) | Agent, after approval, per library | asked per library | none |
 | Place a short pointer file in the Unreal project folder naming this repository's rules and this plan, so sessions started from the editor's terminal load them | Agent, after approval | under 2 KB | none |
 | Register a project skill in the Unreal project that carries this plan's rules for any agent working in the editor | Agent, after approval | one small asset | none |
