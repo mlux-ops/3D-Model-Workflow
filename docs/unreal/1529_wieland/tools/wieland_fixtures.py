@@ -50,6 +50,22 @@ def _metadata(actor):
     return {str(key): str(value) for key, value in values.items()}
 
 
+def _fixture_of(actor):
+    """The fixture a light actor belongs to.
+
+    Datasmith delivered the fixtures in three forms: a mesh actor with its lights attached as children
+    (most kinds); one actor that holds the meshes and the light together (the EAE kinds), which may itself
+    hang under a ceiling; and lights with no parent at all, whose body is a separate mesh actor with the
+    same Revit element id (the recessed can lights).
+    """
+    if not isinstance(actor, unreal.Light):
+        return actor
+    parent = actor.get_attach_parent_actor()
+    if parent is not None and parent.get_actor_label().startswith("Lighting_Fixtures"):
+        return parent
+    return actor
+
+
 def _enum(value):
     return str(value).split(".")[-1].rstrip(">").split(":")[0]
 
@@ -61,8 +77,7 @@ def light_rows():
         components = actor.get_components_by_class(unreal.LocalLightComponent)
         if not components:
             continue
-        parent = actor.get_attach_parent_actor()
-        fixture = parent if parent is not None and parent.get_class().get_name() != "DatasmithSceneActor" else actor
+        fixture = _fixture_of(actor)
         meta = _metadata(fixture)
         for component in components:
             ies = component.get_editor_property("ies_texture")
@@ -126,7 +141,7 @@ def _number(text, default=None):
 
 
 def _groups():
-    """Loaded lights grouped by fixture: {(level, fixture actor name): [(actor, component, fixture, meta)]}."""
+    """Loaded lights grouped by fixture: {(level, Revit element id): [(actor, component, fixture, meta)]}."""
     groups = {}
     for actor in _actors():
         if UNIT_LEVEL_MARK not in _level_of(actor):
@@ -134,36 +149,70 @@ def _groups():
         components = actor.get_components_by_class(unreal.LocalLightComponent)
         if not components:
             continue
-        parent = actor.get_attach_parent_actor()
-        fixture = parent if parent is not None and parent.get_class().get_name() != "DatasmithSceneActor" else actor
+        fixture = _fixture_of(actor)
         meta = _metadata(fixture)
+        key = (_level_of(actor), _revit_id(fixture) or fixture.get_name())
         for component in components:
-            groups.setdefault((_level_of(actor), fixture.get_name()), []).append((actor, component, fixture, meta))
+            groups.setdefault(key, []).append((actor, component, fixture, meta))
     return groups
 
 
-def apply(model_csv, only_revit_ids=None, dry_run=False):
+def _bodies():
+    """The mesh components that make up each fixture's body: {(level, Revit element id): [component]}."""
+    bodies = {}
+    for actor in _actors():
+        level = _level_of(actor)
+        if UNIT_LEVEL_MARK not in level or isinstance(actor, unreal.Light):
+            continue
+        if not actor.get_actor_label().startswith("Lighting_Fixtures"):
+            continue
+        owner = actor
+        parent = actor.get_attach_parent_actor()
+        # an accessory (a recessed box) hangs under its fixture and counts as part of its body
+        if parent is not None and parent.get_actor_label().startswith("Lighting_Fixtures"):
+            owner = parent
+        key = (level, _revit_id(owner) or owner.get_name())
+        bodies.setdefault(key, []).extend(actor.get_components_by_class(unreal.StaticMeshComponent))
+    return bodies
+
+
+def apply(model_csv, only_revit_ids=None, dry_run=False, body_casts_shadow=False):
     """Set every loaded light of the building from the fixture table.
 
     model_csv is the table of the lights as the Revit model delivered them (fixture_lights_before.csv);
     the value each light had there decides which light of a fixture is its main one, so the result is the
     same however often this runs. only_revit_ids limits the run to some fixtures (try one first).
+    body_casts_shadow: whether the body of a lit fixture casts shadows. A photometric file already holds
+    the shading by the fixture's own body, and most lights sit inside or within 2 cm of that body, so the
+    body of a lit fixture is set not to cast shadows.
     Returns counts and the list of fixtures whose kind is not in the table.
     """
     table = read_table()
+    model = {}
     with open(model_csv, "r", newline="", encoding="utf-8") as handle:
-        model = {(row["level"], row["light_actor"]): _number(row["intensity"], 0.0) for row in csv.DictReader(handle)}
+        for row in csv.DictReader(handle):
+            model[(row["level"], row["light_actor"])] = _number(row["intensity"], 0.0)
     profiles = {}
+    bodies = _bodies()
+    groups = _groups()
+    # The largest value the model gives any light of a kind: a fixture whose main light is missing from
+    # the export keeps its small second light off.
+    kind_top = {}
+    for (level, _id), members in groups.items():
+        kind_key = (members[0][3].get("Element*Family", ""), members[0][3].get("Element*Type", ""))
+        for actor, component, _fixture, _meta in members:
+            value = model.get((level, actor.get_name()), 0.0)
+            kind_top[kind_key] = max(kind_top.get(kind_key, 0.0), value)
     done = {"lights_on": 0, "lights_off": 0, "aimed_down": 0, "fixtures": 0, "unknown_kinds": [], "missing_in_model_table": 0,
-            "levels": set()}
-    for (level, _name), members in sorted(_groups().items()):
-        fixture, meta = members[0][2], members[0][3]
-        revit_id = _revit_id(fixture) or ""
+            "bodies_set": 0, "fixtures_without_body": 0, "main_light_missing": [], "levels": set()}
+    for (level, revit_id), members in sorted(groups.items()):
+        meta = members[0][3]
         if only_revit_ids is not None and revit_id not in only_revit_ids:
             continue
-        kind = table.get((meta.get("Element*Family", ""), meta.get("Element*Type", "")))
+        kind_key = (meta.get("Element*Family", ""), meta.get("Element*Type", ""))
+        kind = table.get(kind_key)
         if kind is None:
-            done["unknown_kinds"].append("%s | %s | %s" % (meta.get("Element*Family", ""), meta.get("Element*Type", ""), revit_id))
+            done["unknown_kinds"].append("%s | %s | %s" % (kind_key[0], kind_key[1], revit_id))
             continue
         done["fixtures"] += 1
         done["levels"].add(level)
@@ -174,9 +223,14 @@ def apply(model_csv, only_revit_ids=None, dry_run=False):
                 done["missing_in_model_table"] += 1
             values.append(model.get(key, component.intensity))
         largest = max(range(len(members)), key=lambda i: (values[i], members[i][0].get_name()))
+        rule = kind["lights_on"]
+        main_ok = values[largest] >= 0.5 * kind_top.get(kind_key, 0.0)
+        if rule == "largest" and not main_ok:
+            done["main_light_missing"].append("%s | %s" % (level.split("/")[-1], revit_id))
+        any_on = False
         for index, (actor, component, _fixture, _meta) in enumerate(members):
-            rule = kind["lights_on"]
-            on = rule == "all" or (rule == "largest" and index == largest)
+            on = rule == "all" or (rule == "largest" and index == largest and main_ok)
+            any_on = any_on or on
             if dry_run:
                 done["lights_on" if on else "lights_off"] += 1
                 continue
@@ -184,7 +238,8 @@ def apply(model_csv, only_revit_ids=None, dry_run=False):
             component.modify()
             component.set_mobility(unreal.ComponentMobility.MOVABLE)
             component.set_editor_property("visible", on)
-            actor.set_actor_hidden_in_game(not on)
+            if isinstance(actor, unreal.Light):
+                actor.set_actor_hidden_in_game(not on)
             if not on:
                 done["lights_off"] += 1
                 continue
@@ -210,10 +265,21 @@ def apply(model_csv, only_revit_ids=None, dry_run=False):
             component.set_editor_property("attenuation_radius", _number(kind["reach_cm"], 1000.0))
             component.set_editor_property("source_radius", _number(kind["source_radius_cm"], 0.0))
             component.set_editor_property("cast_shadows", True)
-            if kind["aim"] == "down":
+            if kind["aim"] == "down" and isinstance(actor, unreal.Light):
                 actor.set_actor_rotation(unreal.Rotator(pitch=-90.0, yaw=0.0, roll=0.0), False)
                 done["aimed_down"] += 1
             done["lights_on"] += 1
+        if any_on and not dry_run:
+            body = bodies.get((level, revit_id), [])
+            if not body:
+                # Phase 6 put a few fixtures' bodies in the neighbouring unit's level
+                body = [mesh for (_level, other_id), meshes in bodies.items() if other_id == revit_id for mesh in meshes]
+            if not body:
+                done["fixtures_without_body"] += 1
+            for mesh in body:
+                mesh.modify()
+                mesh.set_cast_shadow(body_casts_shadow)
+                done["bodies_set"] += 1
     done["levels"] = sorted(done["levels"])
     return done
 

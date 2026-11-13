@@ -79,7 +79,7 @@ KINDS += [
          file=EXPORT + "LDT File - DOWNLED 20W V.2 FLP.IES", asset="IES_EAE_DOWNLED_20W_V2_FLP", file_kind=MAKER_FILE + ", delivered inside the Revit family",
          lumens=None, lumens_source="the file delivered in the Revit family (2,231 lm, 20.5 W). The type name reads 17 W and '1K4'; the family carries the 20 W file",
          kelvin=4000, kelvin_source="the type name (40) and the Revit light's value", on="all", per="light", aim="", radius=3.0,
-         waits_on="Owner: the family mixes a 17 W type name with a 20 W file; confirm the product."),
+         waits_on="Owner: the family mixes a 17 W type name with a 20 W file, and the maker publishes no page for this order code; confirm the product."),
     dict(family="MP75127-Motif", type="MP75127-BK",
          maker="Kuzco", model="Motif multi-pendant MP75127, 13 heads", status="data sheet and maker's file for one head",
          file=EXPORT + "PD75027-CH_SAMPLE.IES", asset="IES_Kuzco_PD75027", file_kind=MAKER_FILE + " of the single pendant PD75027, delivered inside the Revit family",
@@ -92,9 +92,9 @@ KINDS += [
          kelvin=3000, kelvin_source="the file name (30K); the data sheet offers 2,700, 3,000, 3,500 and 4,000 K", on="all", per="light", aim="", radius=3.0,
          waits_on="Owner: colour temperature option (the Revit light says 3,200 K, which is not an option)."),
     dict(family="EAE_KANOLED_V3_133W_5700K", type="Standart",
-         maker="EAE", model="KANOLED V3 133 W 5,700 K (an industrial high-bay fixture)", status="placeholder: stand-in value",
+         maker="EAE", model="KANOLED V3 133 W 5,700 K (a canopy fixture, as over a filling-station forecourt)", status="placeholder: stand-in value",
          file=PHOTO + "_generic_made_here/GENERIC_downlight_60deg.ies", asset="IES_GENERIC_downlight_60deg", file_kind=GENERIC,
-         lumens=1000.0, lumens_source="stand-in. The named product is a 133 W industrial high-bay fixture (about 18,000 lm, 5,700 K); eleven of them hang in rooms of the residences, which cannot be the design intent. 1,000 lm is an ordinary ceiling light",
+         lumens=1000.0, lumens_source="stand-in. The maker lists the named product under canopy lighting (133 W, 5,700 K; no data sheet or photometric file is published in the open, and at a usual 130 lm per watt it would give about 17,000 lm); eleven of them hang in rooms of the residences, which cannot be the design intent. 1,000 lm is an ordinary ceiling light",
          kelvin=3000, kelvin_source="stand-in, to match the downlights (the product is 5,700 K)", on="all", per="light", aim="", radius=3.0,
          waits_on="Owner: which fixture these eleven stand for."),
     dict(family="Simes_Walker_Wall recessed", type="*USE TYPE CATALOGUE*",
@@ -103,16 +103,11 @@ KINDS += [
          lumens=None, lumens_source="the maker's file (411.6 lm, 9.3 W); the catalogue gives 433 lm, 8.8 W",
          kelvin=3000, kelvin_source="the catalogue (3,000 K; the Revit light says 4,000 K)", on="all", per="light", aim="", radius=1.0,
          waits_on="The file is not the same in every direction; which way its front faces was not checked against each wall."),
-    dict(family="Compound Ceiling", type="GWB",
-         maker="EAE", model="ORN 018U 40OD00 2K10 downlight (five lights that Datasmith attached to a ceiling instead of a fixture)", status="maker's file from the Revit family",
-         file=EXPORT + "3293297 - ORN 018U 40OD00 2K10 35 66 ELP.IES", asset="IES_EAE_ORN_018U_2K10", file_kind=MAKER_FILE + ", delivered inside the Revit family",
-         lumens=None, lumens_source="the file delivered in the Revit family (2,036.5 lm, 17.7 W); the type name reads 18 W and '2K10'",
-         kelvin=4000, kelvin_source="the type name (40) and the Revit light's value", on="all", per="light", aim="", radius=3.0, waits_on=""),
     dict(family="ORN 018U 40OD00 2K10 35 66 V6", type="STANDARD",
-         maker="EAE", model="ORN 018U 40OD00 2K10 downlight", status="maker's file from the Revit family",
+         maker="EAE", model="ORN 018U 40OD00 2K10 (Orion) downlight, order code 3293297", status="data sheet and maker's file",
          file=EXPORT + "3293297 - ORN 018U 40OD00 2K10 35 66 ELP.IES", asset="IES_EAE_ORN_018U_2K10", file_kind=MAKER_FILE + ", delivered inside the Revit family",
-         lumens=None, lumens_source="the file delivered in the Revit family (2,036.5 lm, 17.7 W); the type name reads 18 W and '2K10'",
-         kelvin=4000, kelvin_source="the type name (40) and the Revit light's value", on="all", per="light", aim="", radius=3.0, waits_on=""),
+         lumens=None, lumens_source="the file delivered in the Revit family (2,036.5 lm, 17.7 W); the maker's data sheet 3293297-orn-018u-40od00-2k10-35-66-v6.pdf gives 2,100 lm, 18 W, 4,000 K",
+         kelvin=4000, kelvin_source="the data sheet (4,000 K)", on="all", per="light", aim="", radius=3.0, waits_on=""),
     dict(family="Lighting-Wall_Mount-Visual_Comfort_&_Co-Stagger_X-Large_Wall_Sconce", type="700WSSTG63B-LED927-277",
          maker="Visual Comfort (Tech Lighting)", model="Stagger X-Large wall sconce 700WSSTG63B-LED927", status="data sheet; generic shape",
          file=PHOTO + "_generic_made_here/GENERIC_diffuse_globe.ies", asset="IES_GENERIC_diffuse_globe", file_kind=GENERIC,
@@ -121,9 +116,9 @@ KINDS += [
     dict(family="INO TRIPLE circle suspended", type="INO TRIPLE circle suspended, white, 2700 K, 034-3845437H",
          maker="XAL", model="INO Triple circle suspended, 034-3845437H, three rings", status="maker's Revit family values; generic shape",
          file=PHOTO + "_generic_made_here/GENERIC_diffuse_down.ies", asset="IES_GENERIC_diffuse_down", file_kind=GENERIC,
-         lumens=16490.0, lumens_source="the maker's Revit family: 6,870 + 5,500 + 4,120 lm for the three rings",
+         lumens=16490.0, lumens_source="the maker's Revit family: 6,870 + 5,500 + 4,120 lm for the three rings. The maker's web site refused the download of the data sheet (HTTP 403); a search result that could not be checked gives 8,110 lm and 149 W",
          kelvin=2700, kelvin_source="the type name (2700 K)", on="all", per="fixture", aim="", radius=5.0,
-         waits_on="A ring of light is drawn as one point at the ring's centre."),
+         waits_on="Owner: confirm the output from the XAL data sheet (16,490 lm in the family against 8,110 lm in an unchecked search result). A ring of light is drawn as one point at the ring's centre."),
     dict(family="Emergency Wall Pack EM (Floor hosted)", type="EM2 - Emergency Unit - 2 Lamp Heads",
          maker="none named", model="emergency unit with two lamp heads", status="off: lit only when the power fails",
          file="", asset="", file_kind="", lumens=0.0, lumens_source="not lit in normal use", kelvin=3200, kelvin_source="the Revit light's value",
@@ -157,6 +152,12 @@ COLUMNS = ["family", "type", "lights_in_model", "fixtures_in_model", "maker", "m
 def main():
     with open(BEFORE, "r", newline="", encoding="utf-8") as handle:
         model = list(csv.DictReader(handle))
+    # Five ORN downlights hang under a ceiling in the Datasmith scene, and the first inventory took the
+    # ceiling for their fixture. They are ORN downlights like the other four.
+    for row in model:
+        if row["fixture_family"] == "Compound Ceiling" and row["light_label"].startswith("Lighting_Fixtures_ORN_018U"):
+            row["fixture_family"], row["fixture_type"] = "ORN 018U 40OD00 2K10 35 66 V6", "STANDARD"
+            row["fixture_label"] = row["light_label"]
     rows, missing = [], []
     covered = set()
     for kind in KINDS:

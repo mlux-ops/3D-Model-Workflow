@@ -1,0 +1,81 @@
+{
+ "windows_restored": 0,
+ "removed_before": 0,
+ "dry_run_all": {
+  "lights_on": 314,
+  "lights_off": 257,
+  "aimed_down": 0,
+  "fixtures": 289,
+  "unknown_kinds": [],
+  "missing_in_model_table": 0,
+  "bodies_set": 0,
+  "fixtures_without_body": 0,
+  "main_light_missing": [
+   "L_W1529_NorthTriplex | 15876009",
+   "L_W1529_SouthTriplex | 17179826"
+  ],
+  "levels": [
+   "/Game/Wieland1529/Interiors/Levels/L_W1529_NorthPenthouse",
+   "/Game/Wieland1529/Interiors/Levels/L_W1529_NorthTriplex",
+   "/Game/Wieland1529/Interiors/Levels/L_W1529_SouthPenthouse",
+   "/Game/Wieland1529/Interiors/Levels/L_W1529_SouthTriplex"
+  ]
+ },
+ "light_at": [
+  -816.9,
+  -1343.2,
+  815.9
+ ],
+ "lights_in_fixture": 2,
+ "a_before_dark_no_bounce": 0.0,
+ "apply_with_body_shadow": {
+  "lights_on": 1,
+  "lights_off": 1,
+  "aimed_down": 1,
+  "fixtures": 2,
+  "fixtures_without_body": 1,
+  "main_light_missing": [
+   "L_W1529_NorthTriplex | 15876009"
+  ],
+  "levels": [
+   "/Game/Wieland1529/Interiors/Levels/L_W1529_NorthPenthouse",
+   "/Game/Wieland1529/Interiors/Levels/L_W1529_NorthTriplex"
+  ]
+ },
+ "b_lit_body_casts_shadow_no_bounce": 733.44,
+ "apply_no_body_shadow": {
+  "lights_on": 1,
+  "lights_off": 1,
+  "aimed_down": 1,
+  "fixtures": 2,
+  "fixtures_without_body": 1,
+  "main_light_missing": [
+   "L_W1529_NorthTriplex | 15876009"
+  ],
+  "levels": [
+   "/Game/Wieland1529/Interiors/Levels/L_W1529_NorthPenthouse",
+   "/Game/Wieland1529/Interiors/Levels/L_W1529_NorthTriplex"
+  ]
+ },
+ "c_lit_body_no_shadow_no_bounce": 733.44,
+ "d_lit_body_no_shadow_with_bounce": 733.44,
+ "light_now": {
+  "units": "<LightUnits.CANDELAS: 1>",
+  "intensity": 1665.4000244140625,
+  "forward": [
+   -0.0,
+   0.0,
+   -1.0
+  ],
+  "mobility": "<ComponentMobility.MOVABLE: 2>",
+  "visible": true,
+  "file": "IES_GENERIC_downlight_60deg"
+ },
+ "expected_direct_lux": 740.2,
+ "removed_after": 2,
+ "dirty": [
+  "/Game/Wieland1529/L_Site_M4",
+  "/Game/Wieland1529/Interiors/Levels/L_W1529_NorthPenthouse",
+  "/Game/Wieland1529/Interiors/Levels/L_W1529_NorthTriplex"
+ ]
+}
