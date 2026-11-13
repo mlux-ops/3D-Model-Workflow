@@ -25,6 +25,15 @@ CHANGES = [
                "setting MegaLights = on; the level was saved by name",
      "gives_up": "less accurate shadow edges of the lamps (listed trade); same-moment picture check D2 -0.3 % mean, no block "
                  "off by a stop"},
+    {"number": 2, "step": "9.4", "before": "C1", "after": "C2",
+     "change": "Lumen indoors: rays that carry indirect light are lit from Lumen's surface cache; only reflections are "
+               "still lit in full at the point the ray hits (ray lighting mode 'hit lighting for reflections')",
+     "stored": "post-process volumes LGT_Exposure_Interior_4th and LGT_Exposure_Interior_LowerTo3rd in "
+               "/Game/Wieland1529/Lighting/L_Light_SummerAfternoon, setting Lumen ray lighting mode; the level was saved by name",
+     "gives_up": "less detailed indirect light indoors (listed trade); same-moment picture check D1 to D5: mean brightness "
+                 "moves by at most 0.6 points. Condition of the 'after' recording: somebody was working in a web browser, "
+                 "the editor was not the window in front (in front for 49 % of the exterior path only); the three long "
+                 "frames of the exterior path after are game-thread stalls at 45 to 50 s with the graphics card steady"},
 ]
 
 FIELDS = ["change", "plan_step", "what", "where_stored", "what_it_gives_up", "state_before", "state_after", "recording",
