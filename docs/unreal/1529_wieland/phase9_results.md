@@ -1,6 +1,8 @@
 # Phase 9 results: optimization
 
-Status: STARTED 2026-11-13 03:22 Central. Unattended run; the owner is away. Nothing is pushed.
+Status: OWNER DECISION at 07:06 on 2026-11-13: stop the two-hour soak (J9) now and close Phase 9 with the shorter run. 41 of 120 walks were logged by then (the last at 07:05: mean 11.8 ms, 95th percentile 13.8 ms, worst 22.2 ms, no frame over 33.3 ms). Do this first: in the editor's Python, check `m7.soak_status()`; if the soak is still active, call `wp.cancel()` and then `m7.soak_end()` (`tools\phase9_profile_m7.py`), and confirm `settings_put_back` is true in `soak_end.json`. Do not start a new soak. Record J9 as done with the walks that were logged, the video-memory growth over them, and the soak acceptance line as met in part by the owner's decision (shortened from 120 to about 41 walks to start Phase 10 sooner). Then finish the phase: status DONE with the time, final report, commit. Phase 10 starts in its own session.
+
+Earlier status:  STARTED 2026-11-13 03:22 Central. Unattended run; the owner is away. Nothing is pushed.
 
 Project: `D:\Unreal_Engine_Projects\Wieland1527 5.9\Wieland1527.uproject` (Unreal Engine 5.9).
 Plan: `PLAN.md`, Phase 9. This file is the journal of the phase. A line marked PENDING is written and committed before its step starts; it is replaced by the outcome when the step ends.
