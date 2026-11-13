@@ -1,0 +1,106 @@
+08:31:16 S1 starts, 35 GB free
+{"returnValue":"[[\"S1\", \"pt\", 189.3, 12544569, 0.0, 400000.0], {\"cameras_removed\": 1, \"stand_ins_shown\": 2, \"nanite_mode\": 0.0, \"append_instances\": 10000.0}]"}
+08:35:32 S1 settings put back:
+{"returnValue":"{\"end\": {\"cameras_removed\": 0, \"stand_ins_shown\": 2, \"nanite_mode\": 0.0, \"append_instances\": 10000.0}, \"nanite_mode\": 0.0, \"append_instances\": 10000.0}"}
+08:35:33 S1 done in 257 s, 12544569 bytes
+08:35:33 ALL DONE
+08:36:18 S2 starts, 32 GB free
+{"returnValue":"[[\"S2\", \"pt\", 86.2, 12766979, 0.0, 400000.0], {\"cameras_removed\": 1, \"stand_ins_shown\": 2, \"nanite_mode\": 0.0, \"append_instances\": 10000.0}]"}
+08:38:49 S2 settings put back:
+{"returnValue":"{\"end\": {\"cameras_removed\": 0, \"stand_ins_shown\": 2, \"nanite_mode\": 0.0, \"append_instances\": 10000.0}, \"nanite_mode\": 0.0, \"append_instances\": 10000.0}"}
+08:38:50 S2 done in 152 s, 12766979 bytes
+08:38:50 S3 starts, 32 GB free
+{"returnValue":"[[\"S3\", \"pt\", 98.0, 13111435, 0.0, 400000.0], {\"cameras_removed\": 1, \"stand_ins_shown\": 2, \"nanite_mode\": 0.0, \"append_instances\": 10000.0}]"}
+08:41:33 S3 settings put back:
+{"returnValue":"{\"end\": {\"cameras_removed\": 0, \"stand_ins_shown\": 2, \"nanite_mode\": 0.0, \"append_instances\": 10000.0}, \"nanite_mode\": 0.0, \"append_instances\": 10000.0}"}
+08:41:33 S3 done in 163 s, 13111435 bytes
+08:41:34 S4 starts, 32 GB free
+{"returnValue":"[[\"S4\", \"pt\", 68.2, 12063233, 0.0, 400000.0], {\"cameras_removed\": 1, \"stand_ins_shown\": 2, \"nanite_mode\": 0.0, \"append_instances\": 10000.0}]"}
+08:43:47 S4 settings put back:
+{"returnValue":"{\"end\": {\"cameras_removed\": 0, \"stand_ins_shown\": 2, \"nanite_mode\": 0.0, \"append_instances\": 10000.0}, \"nanite_mode\": 0.0, \"append_instances\": 10000.0}"}
+08:43:47 S4 done in 133 s, 12063233 bytes
+08:43:48 S5 starts, 32 GB free
+{"returnValue":"[[\"S5\", \"pt\", 64.9, 12960405, 0.0, 400000.0], {\"cameras_removed\": 1, \"stand_ins_shown\": 2, \"nanite_mode\": 0.0, \"append_instances\": 10000.0}]"}
+08:45:58 S5 settings put back:
+{"returnValue":"{\"end\": {\"cameras_removed\": 0, \"stand_ins_shown\": 2, \"nanite_mode\": 0.0, \"append_instances\": 10000.0}, \"nanite_mode\": 0.0, \"append_instances\": 10000.0}"}
+08:45:58 S5 done in 130 s, 12960405 bytes
+08:45:58 S6 starts, 32 GB free
+{"returnValue":"[[\"S6\", \"pt\", 102.3, 14138250, 0.0, 400000.0], {\"cameras_removed\": 1, \"stand_ins_shown\": 2, \"nanite_mode\": 0.0, \"append_instances\": 10000.0}]"}
+08:48:46 S6 settings put back:
+{"returnValue":"{\"end\": {\"cameras_removed\": 0, \"stand_ins_shown\": 2, \"nanite_mode\": 0.0, \"append_instances\": 10000.0}, \"nanite_mode\": 0.0, \"append_instances\": 10000.0}"}
+08:48:47 S6 done in 169 s, 14138250 bytes
+08:48:48 S9 starts, 36 GB free
+{"returnValue":"[[\"S9\", \"pt\", 113.3, 13847386, 0.0, 400000.0], {\"cameras_removed\": 1, \"stand_ins_shown\": 2, \"nanite_mode\": 0.0, \"append_instances\": 10000.0}]"}
+08:51:47 S9 settings put back:
+{"returnValue":"{\"end\": {\"cameras_removed\": 0, \"stand_ins_shown\": 2, \"nanite_mode\": 0.0, \"append_instances\": 10000.0}, \"nanite_mode\": 0.0, \"append_instances\": 10000.0}"}
+08:51:48 S9 done in 180 s, 13847386 bytes
+08:51:48 D1 starts, 32 GB free
+{"returnValue":"[[\"D1\", \"pt\", 135.6, 11763423, 0.0, 400000.0], {\"cameras_removed\": 1, \"stand_ins_shown\": 2, \"nanite_mode\": 0.0, \"append_instances\": 10000.0}]"}
+08:55:09 D1 settings put back:
+{"returnValue":"{\"end\": {\"cameras_removed\": 0, \"stand_ins_shown\": 2, \"nanite_mode\": 0.0, \"append_instances\": 10000.0}, \"nanite_mode\": 0.0, \"append_instances\": 10000.0}"}
+08:55:10 D1 done in 202 s, 11763423 bytes
+08:55:10 D2 starts, 32 GB free
+Traceback (most recent call last):
+  File "E:\Claude\3D-Model-Workflow\.claude\worktrees\1529-wieland-scene-plan-e84a03\docs\unreal\1529_wieland\tools\ue_call.py", line 158, in <module>
+    sys.exit(main(sys.argv))
+             ~~~~^^^^^^^^^^
+  File "E:\Claude\3D-Model-Workflow\.claude\worktrees\1529-wieland-scene-plan-e84a03\docs\unreal\1529_wieland\tools\ue_call.py", line 149, in main
+    return show(client.call("call_tool", {"toolset_name": PY_TOOLSET, "tool_name": PY_TOOL, "arguments": arguments}, timeout))
+                ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Claude\3D-Model-Workflow\.claude\worktrees\1529-wieland-scene-plan-e84a03\docs\unreal\1529_wieland\tools\ue_call.py", line 82, in call
+    return self.request("tools/call", {"name": name, "arguments": arguments}, timeout)
+           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Claude\3D-Model-Workflow\.claude\worktrees\1529-wieland-scene-plan-e84a03\docs\unreal\1529_wieland\tools\ue_call.py", line 69, in request
+    for message in self.post({"jsonrpc": "2.0", "id": call_id, "method": method, "params": params}, timeout):
+                   ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Claude\3D-Model-Workflow\.claude\worktrees\1529-wieland-scene-plan-e84a03\docs\unreal\1529_wieland\tools\ue_call.py", line 47, in post
+    with urllib.request.urlopen(request, timeout=timeout) as response:
+         ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python314\Lib\urllib\request.py", line 187, in urlopen
+    return opener.open(url, data, timeout)
+           ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python314\Lib\urllib\request.py", line 487, in open
+    response = self._open(req, data)
+  File "C:\Python314\Lib\urllib\request.py", line 504, in _open
+    result = self._call_chain(self.handle_open, protocol, protocol +
+                              '_open', req)
+  File "C:\Python314\Lib\urllib\request.py", line 464, in _call_chain
+    result = func(*args)
+  File "C:\Python314\Lib\urllib\request.py", line 1350, in http_open
+    return self.do_open(http.client.HTTPConnection, req)
+           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python314\Lib\urllib\request.py", line 1325, in do_open
+    r = h.getresponse()
+  File "C:\Python314\Lib\http\client.py", line 1459, in getresponse
+    response.begin()
+    ~~~~~~~~~~~~~~^^
+  File "C:\Python314\Lib\http\client.py", line 336, in begin
+    version, status, reason = self._read_status()
+                              ~~~~~~~~~~~~~~~~~^^
+  File "C:\Python314\Lib\http\client.py", line 297, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+               ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "C:\Python314\Lib\socket.py", line 729, in readinto
+    return self._sock.recv_into(b)
+           ~~~~~~~~~~~~~~~~~~~~^^^
+ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host
+09:25:28 D2 settings put back:
+SERVER NOT REACHABLE: URLError(ConnectionRefusedError(10061, 'No connection could be made because the target machine actively refused it', None, 10061, None))
+09:25:30 D2 STOP: no picture after 1820 s
+10:35:07 resumed session: level settled since 10:29:55
+10:35:08 D2 starts, 30 GB free
+{"returnValue":"[[\"D2\", \"pt\", 644.4, 15311625, 0.0, 400000.0], {\"cameras_removed\": 1, \"stand_ins_shown\": 2, \"nanite_mode\": 0.0, \"append_instances\": 10000.0}]"}
+10:47:01 D2 settings put back:
+{"returnValue":"{\"end\": {\"cameras_removed\": 0, \"stand_ins_shown\": 2, \"nanite_mode\": 0.0, \"append_instances\": 10000.0}, \"nanite_mode\": 0.0, \"append_instances\": 10000.0}"}
+10:47:02 D2 done in 714 s, 15311625 bytes
+10:47:02 ALL DONE
+10:47:49 D3 waits: 27 GB of commit memory free
+10:48:19 D3 waits: 27 GB of commit memory free
+10:48:50 D3 waits: 27 GB of commit memory free
+10:49:20 D3 waits: 27 GB of commit memory free
+10:49:51 D3 waits: 27 GB of commit memory free
+10:50:21 D3 waits: 23 GB of commit memory free
+10:50:52 D3 waits: 27 GB of commit memory free
+10:51:22 D3 waits: 27 GB of commit memory free
+10:51:53 D3 waits: 27 GB of commit memory free
+10:52:23 D3 waits: 27 GB of commit memory free
