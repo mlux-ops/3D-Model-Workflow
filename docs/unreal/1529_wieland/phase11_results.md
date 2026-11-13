@@ -1,6 +1,8 @@
 # Phase 11 results: packaging and delivery
 
-Status: PAUSED by the owner at 08:48 on 2026-11-13 for the 5-hour usage limit, during J1 (final stills; PENDING since 08:36). The agent was stopped mid-step; a path-traced still may have been rendering in the editor. Resumes automatically at 10:15. On resuming: wait until the editor's agent server answers (a render may still be finishing), check which of the twelve stills exist in full, render only the missing ones with r.RayTracing.Nanite.Mode 0, then continue.
+Status: RESUMED 2026-11-13 10:27 Central by a new session, in J1. Found on resuming: eight of the twelve stills exist in full (S1 to S6, S9, D1); D2 to D5 are missing. The editor (process 16168) vanished between 08:59:52 and 09:00:53 while the still D2 was rendering (its log ends at 08:56:39 inside the render; no crash record was written; cause not known). The watcher started the editor again at 10:25:42 (process 41708); its "Restore Packages" window was closed at 10:29 without restoring, and `L_Site_M4` was opened at 10:29:55 (12 levels, 3,059 objects, nothing unsaved, `r.RayTracing.Nanite.Mode` 0). **Drive H: is still not connected. A Google Drive connection exists in this session** (the folder "3D Models" answers), but it takes a file's content only inside the tool call itself, which limits it to small text files.
+
+Earlier status: PAUSED by the owner at 08:48 on 2026-11-13 for the 5-hour usage limit, during J1 (final stills; PENDING since 08:36). The agent was stopped mid-step; a path-traced still may have been rendering in the editor. Resumes automatically at 10:15. On resuming: wait until the editor's agent server answers (a render may still be finishing), check which of the twelve stills exist in full, render only the missing ones with r.RayTracing.Nanite.Mode 0, then continue.
 
 Earlier status:  STARTED 2026-11-13 08:28 Central. Unattended run; the owner is away. Nothing is pushed.
 
