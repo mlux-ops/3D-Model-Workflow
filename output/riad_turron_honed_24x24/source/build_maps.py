@@ -37,6 +37,8 @@ MM_PER_PX = 25.4 / PX_PER_IN                     # 0.396875
 # ---- source face crop (measured from silhouette fits, see SOURCE_SELECTION.md) ---------------
 FACE_BOX = (378, 372, 2662, 2660)      # x0, y0, x1, y1 of the tile face in the 3000 px swatch
 INSET = 22                              # px trimmed each side to drop eased edge / side band
+CHIP_DIST = 0.11                        # sRGB distance from matrix colour that counts as chip
+CHIP_MIN_PX = 150                       # source px (~10 mm^2); smaller specks are matrix aggregate
 
 # ---- height terms (mm) ------------------------------------------------------------------------
 FACE_MM = 1.00          # tile face above grout floor (joint step)
@@ -141,26 +143,26 @@ def main():
     report["source_crop_px"] = [x0 + INSET, y0 + INSET, x1 - INSET, y1 - INSET]
     lin = srgb_to_lin(face)
 
-    # matrix reference: bright, low-chroma pixels
-    sat = face.max(2) - face.min(2)
-    lum = face.mean(2)
-    seed_mask = (sat < np.percentile(sat, 35)) & (lum > np.percentile(lum, 30))
-    mref = np.median(face[seed_mask], axis=0)
-    dist = np.sqrt(((face - mref) ** 2).sum(2))
-    chip = dist > 0.11
-    chip = ndimage.binary_opening(chip, iterations=1)
-    chip = ndimage.binary_closing(chip, iterations=2)
-    lab, n = ndimage.label(chip)
-    sizes = ndimage.sum(chip, lab, range(1, n + 1))
-    keep = np.zeros(n + 1, bool)
-    keep[1:] = sizes >= 40
-    chip = keep[lab]
-    chip = ndimage.binary_fill_holes(chip)
-    report["chip_fraction"] = float(chip.mean())
-    report["matrix_ref_srgb"] = [round(float(v) * 255, 1) for v in mref]
+    def chip_mask(img, min_px):
+        """Chips = pixels far in colour from the cement matrix; tiny components dropped."""
+        sat = img.max(2) - img.min(2)
+        lum = img.mean(2)
+        seed = (sat < np.percentile(sat, 35)) & (lum > np.percentile(lum, 30))
+        ref = np.median(img[seed], axis=0)
+        m = np.sqrt(((img - ref) ** 2).sum(2)) > CHIP_DIST
+        m = ndimage.binary_opening(m, iterations=1)
+        m = ndimage.binary_closing(m, iterations=2)
+        lab, n = ndimage.label(m)
+        sizes = ndimage.sum(m, lab, range(1, n + 1))
+        keep = np.zeros(n + 1, bool)
+        keep[1:] = sizes >= min_px
+        return ndimage.binary_fill_holes(keep[lab]), ref
+
+    # pass 1 on the raw photo, only to find the matrix for the light estimate
+    chip0, _ = chip_mask(face, 40)
 
     # baked studio light: low-frequency luminance of matrix only (normalised convolution)
-    matrix = ~ndimage.binary_dilation(chip, iterations=4)
+    matrix = ~ndimage.binary_dilation(chip0, iterations=4)
     ml = lin.mean(2) * matrix
     sig = 180
     num = ndimage.gaussian_filter(ml, sig, mode="reflect")
@@ -169,6 +171,14 @@ def main():
     gain = field.mean() / field
     report["light_field_range"] = [float(field.min() / field.mean()), float(field.max() / field.mean())]
     lin = lin * gain[..., None]
+    face_c = lin_to_srgb(lin)
+
+    # pass 2 on the de-lit colour (rev 2: pass 1 alone flagged matrix speckle as chip where the
+    # studio light was dimmer, which put seam dips and smoothed porosity into plain matrix)
+    chip, mref = chip_mask(face_c, CHIP_MIN_PX)
+    report["chip_fraction"] = float(chip.mean())
+    report["chip_fraction_pass1_raw"] = float(chip0.mean())
+    report["matrix_ref_srgb"] = [round(float(v) * 255, 1) for v in mref]
 
     # ---------- 2. resample to tile-face pixels ----------
     half_j = JOINT_IN / 2 * PX_PER_IN                 # 2 px
@@ -178,7 +188,7 @@ def main():
         return np.asarray(im.resize((face_px, face_px), mode), dtype=np.float64)
     lin_r = np.stack([rs(lin[..., c], Image.LANCZOS) for c in range(3)], -1)
     chip_r = rs(chip.astype(float), Image.BILINEAR)
-    lum_r = rs(face.mean(2), Image.LANCZOS)
+    lum_r = rs(face_c.mean(2), Image.LANCZOS)
     report["resample_scale"] = face_px / face.shape[0]
     scale_err = (face.shape[0] + 2 * INSET) / face.shape[0] - 1
     report["inset_stretch_pct"] = round(100 * scale_err, 2)
@@ -186,7 +196,11 @@ def main():
     # ---------- 3. per-face height (mm, relative to face) ----------
     matrix_r = 1 - np.clip(chip_r, 0, 1)
     hp = lum_r - ndimage.gaussian_filter(lum_r, 3)                # fine speckle / pores
-    hp = hp / (3 * hp[matrix_r > 0.5].std())
+    # porosity is physically uniform across the face, so normalise speckle contrast locally
+    # (photo noise and light fall-off otherwise make it denser on one side of the tile)
+    w = (matrix_r > 0.5).astype(float)
+    var = ndimage.gaussian_filter(hp ** 2 * w, 40) / np.maximum(ndimage.gaussian_filter(w, 40), 1e-3)
+    hp = hp / (3 * np.sqrt(np.maximum(var, 1e-12)))
     micro = np.clip(hp, -1.5, 1.5) * PORE_MM
     micro = micro * (matrix_r + CHIP_SMOOTH * (1 - matrix_r))
     edge = np.abs(ndimage.sobel(ndimage.gaussian_filter(chip_r, 1.0), 0)) + np.abs(ndimage.sobel(ndimage.gaussian_filter(chip_r, 1.0), 1))
