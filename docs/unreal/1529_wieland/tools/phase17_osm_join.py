@@ -72,7 +72,7 @@ def main(argv):
     els = elements(base)
     tree = STRtree([e["poly"] for e in els])
     county = {str(f["attributes"]["OBJECTID"]): f for f in json.load(open(os.path.join(base, "county", "county_footprints_2022_viewbox.json")))["features"]}
-    rows = list(csv.DictReader(open(os.path.join(base, "targets.csv"), encoding="utf-8")))
+    rows = list(csv.DictReader(open(os.path.join(base, os.environ.get("P17_TARGETS", "targets.csv")), encoding="utf-8")))
     outrows = []
     for r in rows:
         f = county.get(r["bldg_id"])

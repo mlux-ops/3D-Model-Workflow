@@ -436,3 +436,128 @@ def cam_end():
             sub.destroy_actor(a)
             n += 1
     return n
+
+
+# ---------------------------------------------------------------------------------------------------------------
+# Switching: the Variant Manager list "Surroundings" with a third option, the new default.
+
+OPTION_P17 = "Laser-scan model (Phase 17)"
+P17_LEVELS = ("/Game/Wieland1529/Surroundings/L_Skyline_P17", "/Game/Wieland1529/Surroundings/L_Surroundings_P17")
+
+
+def _all_actors():
+    return list(unreal.get_editor_subsystem(unreal.EditorActorSubsystem).get_all_level_actors())
+
+
+def surroundings_groups():
+    """The objects each option shows or hides, by label and tag (read-only)."""
+    import wieland_site as ws
+    acts = _all_actors()
+    hide_list = set(ws.hidden_names())
+    r15 = [a for a in acts if any(str(t) == ws.TAG_R15 for t in a.tags)]
+    sb = [a for a in acts if a.get_actor_label().startswith("SB_")]
+    far = [a for a in acts if a.get_actor_label().startswith("FAR_")]
+    p17 = [a for a in acts if any(str(t) == TAG_PREFIX + "P17" for t in a.tags)]
+    return {"r15": r15, "sb_hide": [a for a in sb if a.get_actor_label() in hide_list],
+            "sb_other": [a for a in sb if a.get_actor_label() not in hide_list], "far": far, "p17": p17}
+
+
+def build_surroundings_list():
+    """Remake the list "Surroundings" with three options, every binding explicit, and save the asset by name:
+    Earlier detailed buildings: the earlier copies, the Phase 4 buildings they do not cover, the far-city stand-in.
+    Phase 4 survey massing: all Phase 4 buildings and the far-city stand-in.
+    Laser-scan model (Phase 17): the Phase 17 buildings, skyline and ground only.
+    The ground of Phase 4 and the site works are in no option (always shown)."""
+    import wieland_site as ws
+    if not world_path().startswith(SITE + "."):
+        raise RuntimeError("refused: the working level is not open")
+    lib = unreal.VariantManagerLibrary
+    sets_asset = ws.variant_asset()
+    for index in reversed(range(sets_asset.get_num_variant_sets())):
+        old = sets_asset.get_variant_set(index)
+        if str(old.get_display_text()) == ws.VARIANT_LIST:
+            lib.remove_variant_set(sets_asset, old)
+    vset = unreal.VariantSet()
+    vset.set_display_text(ws.VARIANT_LIST)
+    lib.add_variant_set(sets_asset, vset)
+    g = surroundings_groups()
+    plan = {
+        OPTION_P17: {"r15": False, "sb_hide": False, "sb_other": False, "far": False, "p17": True},
+        ws.OPTION_R15: {"r15": True, "sb_hide": False, "sb_other": True, "far": True, "p17": False},
+        ws.OPTION_PHASE4: {"r15": False, "sb_hide": True, "sb_other": True, "far": True, "p17": False},
+    }
+    out = {k: len(v) for k, v in g.items()}
+    out["values"] = 0
+    out["missed"] = 0
+    for option, shown in plan.items():
+        variant = unreal.Variant()
+        variant.set_display_text(option)
+        lib.add_variant(vset, variant)
+        for group, visible in shown.items():
+            for actor in g[group]:
+                lib.add_actor_binding(variant, actor)
+                value = lib.capture_property(variant, actor, ws.VISIBLE_PROPERTY)
+                if value is None:
+                    out["missed"] += 1
+                    continue
+                lib.set_value_bool(value, visible)
+                out["values"] += 1
+    out["saved"] = bool(unreal.EditorAssetLibrary.save_loaded_asset(sets_asset, False))
+    return out
+
+
+def set_option_direct(option):
+    """Show and hide the option's objects directly (as the Phase 7 pictures do; the switch itself once asserted)."""
+    import wieland_site as ws
+    g = surroundings_groups()
+    plan = {
+        OPTION_P17: {"r15": False, "sb_hide": False, "sb_other": False, "far": False, "p17": True},
+        ws.OPTION_R15: {"r15": True, "sb_hide": False, "sb_other": True, "far": True, "p17": False},
+        ws.OPTION_PHASE4: {"r15": False, "sb_hide": True, "sb_other": True, "far": True, "p17": False},
+    }[option]
+    changed = 0
+    for group, visible in plan.items():
+        for actor in g[group]:
+            comp = actor.get_component_by_class(unreal.StaticMeshComponent)
+            if comp is None:
+                continue
+            if bool(comp.get_editor_property("visible")) != visible:
+                comp.modify()
+                comp.set_visibility(visible, False)
+                changed += 1
+    return {"option": option, "changed": changed, "groups": {k: len(v) for k, v in g.items()}}
+
+
+# ---------------------------------------------------------------------------------------------------------------
+# Ground beyond the 300 m square: one land-cover colour map over the whole box (no repeat), water apart.
+
+GROUND = MAT_ROOT + "M_W1529_P17_Ground"
+LANDCOVER = MAT_ROOT + "T_W1529_P17_LandCover"
+LANDCOVER_FILE = "E:/Wieland1529_site_data/phase17/meshes_ground/T_W1529_P17_LandCover.png"
+
+
+def ensure_ground_material():
+    if unreal.EditorAssetLibrary.does_asset_exist(GROUND):
+        return unreal.EditorAssetLibrary.load_asset(GROUND)
+    if not unreal.EditorAssetLibrary.does_asset_exist(LANDCOVER):
+        task = unreal.AssetImportTask()
+        task.filename = LANDCOVER_FILE
+        task.destination_path = MAT_ROOT[:-1]
+        task.destination_name = "T_W1529_P17_LandCover"
+        task.automated = True
+        task.save = False
+        unreal.AssetToolsHelpers.get_asset_tools().import_asset_tasks([task])
+    tex = unreal.EditorAssetLibrary.load_asset(LANDCOVER)
+    tex.set_editor_property("srgb", True)
+    tools = unreal.AssetToolsHelpers.get_asset_tools()
+    mat = tools.create_asset("M_W1529_P17_Ground", MAT_ROOT[:-1], unreal.Material, unreal.MaterialFactoryNew())
+    mel = _mel()
+    sample = mel.create_material_expression(mat, unreal.MaterialExpressionTextureSampleParameter2D, -500, 0)
+    sample.set_editor_property("parameter_name", "LandCover")
+    sample.set_editor_property("texture", tex)
+    rough = _scalar(mat, "Roughness", 0.92, -500, 250)
+    mel.connect_material_property(sample, "RGB", unreal.MaterialProperty.MP_BASE_COLOR)
+    mel.connect_material_property(rough, "", unreal.MaterialProperty.MP_ROUGHNESS)
+    mat.set_editor_property("used_with_nanite", True)
+    mel.recompile_material(mat)
+    return mat

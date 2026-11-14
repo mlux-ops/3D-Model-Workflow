@@ -67,14 +67,14 @@ def num(v):
 
 def main(argv):
     base, out = argv[1], argv[2]
-    targets = list(csv.DictReader(open(os.path.join(base, "targets.csv"), encoding="utf-8")))
-    osm = {r["bldg_id"]: r for r in csv.DictReader(open(os.path.join(base, "osm_join.csv"), encoding="utf-8"))}
+    targets = list(csv.DictReader(open(os.path.join(base, os.environ.get("P17_TARGETS", "targets.csv")), encoding="utf-8")))
+    osm = {r["bldg_id"]: r for r in csv.DictReader(open(os.path.join(base, os.environ.get("P17_OSM", "osm_join.csv")), encoding="utf-8"))}
     research = {}
     rpath = os.path.join(base, "tower_materials_research.csv")
     if os.path.exists(rpath):
         research = {r["county_id"].strip(): r for r in csv.DictReader(open(rpath, encoding="utf-8"))}
     recs = {}
-    rec_path = os.path.join(base, "meshes_towers", "towers_record.jsonl")
+    rec_path = os.path.join(base, os.environ.get("P17_MESHES", "meshes_towers"), "towers_record.jsonl")
     if os.path.exists(rec_path):
         for line in open(rec_path, encoding="utf-8"):
             r = json.loads(line)
@@ -84,7 +84,7 @@ def main(argv):
         bid = t["bldg_id"]
         o = osm.get(bid, {})
         name = o.get("name") or o.get("part_names") or ("%s %s" % (o.get("addr:housenumber", ""), o.get("addr:street", ""))).strip()
-        top = recs.get(bid, {}).get("top_incl_masts_m") or float(t["roof_height_m_dsm6ft"] or 0)
+        top = recs.get(bid, {}).get("top_incl_masts_m") or float(t.get("roof_height_m_dsm6ft") or 0)
         r = research.get(bid)
         if r and r.get("facade_type"):
             kind = r["facade_type"].strip()
