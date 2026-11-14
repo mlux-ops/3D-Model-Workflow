@@ -59,18 +59,24 @@ class Tiles:
         for p in self.paths:
             if bid in self.labels[p]:
                 return p
-        return "zzz"
+        return "SITE300"
 
 
-def points_for(bid, pcs):
-    """Returns of one building's box from every streamed tile, and the squares (2,500 ft tiles) they came from."""
+def points_for(bid, pcs, box=None):
+    """Returns of one building's box from every streamed tile, and the squares (2,500 ft tiles) they came from. A Zone
+    1 or 2 building has no box of its own: its returns are those of "SITE300" (the 300 m square) inside box."""
     xs, ys, zs, tiles = [], [], [], []
     for p in pcs.paths:
         labels = pcs.labels[p]
-        if bid not in labels:
+        if bid in labels:
+            d = pcs.arrays(p)
+            sel = (d["box"] == labels.index(bid)) & ~np.isin(d["cls"], SKIP_CLASSES)
+        elif box is not None and "SITE300" in labels:
+            d = pcs.arrays(p)
+            sel = ((d["box"] == labels.index("SITE300")) & ~np.isin(d["cls"], SKIP_CLASSES) & (d["x"] >= box[0])
+                   & (d["x"] <= box[2]) & (d["y"] >= box[1]) & (d["y"] <= box[3]))
+        else:
             continue
-        d = pcs.arrays(p)
-        sel = (d["box"] == labels.index(bid)) & ~np.isin(d["cls"], SKIP_CLASSES)
         xs.append(d["x"][sel]); ys.append(d["y"][sel]); zs.append(d["z"][sel])
         t = pcs.tile[p]
         tiles.append((int(t[:4]) * 100 + 1e6, int(t[4:]) * 100 + 1e6))
@@ -94,14 +100,29 @@ def outline_distances(model, meas):
     return float(allv.mean()), float(np.percentile(allv, 95))
 
 
-def check(rec, grid, pcs, visible_m=None):
-    pts = points_for(rec["id"], pcs)
-    if pts is None:
+def free_edge_distances(model, meas):
+    """Distances in metres from the model's free walls (those that face open space: the returns just outside the wall
+    are not building at the level, so not a party wall with a neighbour) to the returns' outline. A building that
+    touches its neighbours is judged on its street, yard and gangway walls only."""
+    em = edge(model)
+    ring = ndimage.binary_dilation(model, iterations=2) & ~model
+    party = em & ndimage.binary_dilation(meas & ring, iterations=2)
+    free = em & ~party
+    es = edge(meas)
+    if not free.any() or not es.any():
         return None
-    x, y, z, tiles = pts
+    d = ndimage.distance_transform_edt(~es)[free] * FT
+    return float(d.mean()), float(np.percentile(d, 95)), float(free.sum()) / max(float(em.sum()), 1.0)
+
+
+def check(rec, grid, pcs, visible_m=None):
     zm = grid["z"].astype(np.float64)
     x0, y1 = float(grid["x0"]), float(grid["y1"])
     h, w = zm.shape
+    pts = points_for(rec["id"], pcs, (x0, y1 - h, x0 + w, y1))
+    if pts is None:
+        return None
+    x, y, z, tiles = pts
     # Only the part of the grid inside the streamed tiles is judged (a building on a tile edge may have one tile).
     cov = np.zeros((h, w), bool)
     for te, tn in tiles:
@@ -181,7 +202,10 @@ def check(rec, grid, pcs, visible_m=None):
         dd = outline_distances(mm, ms)
         if dd is None:
             continue
-        plans.append({"level_m": round(lv, 2), "mean_m": round(dd[0], 2), "p95_m": round(dd[1], 2)})
+        fe = free_edge_distances(mm, ms)
+        plans.append({"level_m": round(lv, 2), "mean_m": round(dd[0], 2), "p95_m": round(dd[1], 2),
+                      "free_mean_m": round(fe[0], 2) if fe else None, "free_p95_m": round(fe[1], 2) if fe else None,
+                      "free_share": round(fe[2], 2) if fe else 0.0})
     if plans:
         res["footprint_edge_mean_m"] = plans[0]["mean_m"]
         res["footprint_edge_p95_m"] = plans[0]["p95_m"]
@@ -190,6 +214,11 @@ def check(rec, grid, pcs, visible_m=None):
         res["upper_edge_p95_worst_m"] = worst["p95_m"]
         res["upper_edge_worst_level_m"] = worst["level_m"]
         res["upper_edge_mean_m"] = round(float(np.mean([p["mean_m"] for p in upper])), 2)
+        fr = [p for p in plans if p["free_mean_m"] is not None]
+        if fr:
+            res["free_edge_mean_m"] = round(float(np.mean([p["free_mean_m"] for p in fr])), 2)
+            res["free_edge_p95_m"] = round(float(np.max([p["free_p95_m"] for p in fr])), 2)
+            res["free_edge_share"] = round(float(np.mean([p["free_share"] for p in fr])), 2)
     mres = []
     for m in rec.get("masts", []):
         rad = m["radius_ft"] + 3.0
@@ -206,7 +235,7 @@ KEYS = ["id", "name", "form", "distance_m", "returns", "coverage", "model_roof_m
         "roof_measured_m", "roof_err_m", "roof_cells", "highest_model_not_mast_m", "highest_return_not_mast_m",
         "lowest_level_seen_m", "surface_median_m", "surface_p95_m",
         "footprint_edge_mean_m", "footprint_edge_p95_m", "upper_edge_mean_m", "upper_edge_p95_worst_m",
-        "upper_edge_worst_level_m", "mast_err_m", "detail"]
+        "upper_edge_worst_level_m", "free_edge_mean_m", "free_edge_p95_m", "free_edge_share", "mast_err_m", "detail"]
 
 
 def main(argv):

@@ -46,7 +46,7 @@ FT = 0.3048006096
 CM_PER_FT = 30.48006096
 R_EARTH_M = 6371000.0
 K_REFRACTION = 0.13
-MIN_AREA_FT2 = 150.0
+MIN_AREA_FT2 = float(os.environ.get("P17_MIN_AREA", "150"))  # Zone 1 and 2 runs keep roof items down to 16 sq ft
 USE_PC_GRID = False
 FRAME = os.path.join(HERE, "..", "review", "phase2", "level_frame.json")
 D1 = (-1300.0, -1560.0, 1684.0)
@@ -261,6 +261,7 @@ def heightfield(med, bmask, x0, y1, cell, ground_ft, base_ft):
 
 
 PC_FOLDER = "D:/Wieland1529_lidar/derived"
+ZONES = {}
 _PC_LABELS = {}
 _PC_CACHE = {}  # at most two tiles' arrays in memory (each up to 4 GB unpacked); run the ids grouped by tile
 
@@ -274,8 +275,9 @@ def _tile_arrays(path):
     return _PC_CACHE[path]
 
 
-def point_cloud(bid):
-    """Points of this building's box from any streamed tile (x, y, z feet, cls), or None."""
+def point_cloud(bid, box=None):
+    """Points of this building's box from any streamed tile (x, y, z feet, cls), or None. A Zone 1 or 2 building has
+    no box of its own: its points are those of the "SITE300" box (the 300 m square) inside box (map feet)."""
     import glob
     xs, ys, zs, cs = [], [], [], []
     for path in sorted(glob.glob(os.path.join(PC_FOLDER, "pc_*.npz"))):
@@ -284,10 +286,14 @@ def point_cloud(bid):
         if path not in _PC_LABELS:
             _PC_LABELS[path] = [str(v) for v in np.load(path)["labels"]]
         labels = _PC_LABELS[path]
-        if bid not in labels:
+        if bid in labels:
+            d = _tile_arrays(path)
+            sel = d["box"] == labels.index(bid)
+        elif box is not None and "SITE300" in labels:
+            d = _tile_arrays(path)
+            sel = (d["box"] == labels.index("SITE300")) & (d["x"] >= box[0]) & (d["x"] <= box[2]) & (d["y"] >= box[1]) & (d["y"] <= box[3])
+        else:
             continue
-        d = _tile_arrays(path)
-        sel = d["box"] == labels.index(bid)
         xs.append(d["x"][sel]); ys.append(d["y"][sel]); zs.append(d["z"][sel]); cs.append(d["cls"][sel])
     if not xs:
         return None
@@ -359,7 +365,7 @@ def build(bid, row, base, frame, county, dtm6, out):
     r0, r1 = int((gy1 - maxy) / gcell), int((gy1 - miny) / gcell) + 1
     gwin = gz[max(r0, 0):r1, max(c0, 0):c1]
     ground_ft = float(np.nanmedian(gwin)) if np.isfinite(gwin).any() else float(county[bid]["attributes"]["Ground_Z"])
-    pc = point_cloud(bid)
+    pc = point_cloud(bid, (x0, y1 - h * cell, x0 + w * cell, y1))
     height_source = "ISGS 1 ft surface model"
     if pc is not None and USE_PC_GRID:
         # Tried on Willis and not used: the highest return per 1 ft cell picks up facade returns one cell outside the
@@ -511,7 +517,7 @@ def build(bid, row, base, frame, county, dtm6, out):
         return float(np.percentile(err, 95)) if len(err) else 99.0, zr
     prism_p95, prism_grid = p95_of(mesh.mv, mesh.t)
     form, hf_info, model_grid = "terraces", None, prism_grid
-    if prism_p95 > 0.5:
+    if prism_p95 > float(os.environ.get("P17_FORM_P95", "0.5")):
         # The filtered surface shaves narrow crowns (St Regis: 349.8 m against 353.7 m in the returns). Where the
         # building's returns were streamed, each building cell takes the higher of the surface and the highest
         # return in the cell (median over 3 by 3 ft, so a single stray return does not count). Masts stay apart.
@@ -545,8 +551,9 @@ def build(bid, row, base, frame, county, dtm6, out):
         mesh.walls(poly, z0, z1, 2)
         mesh.cap(poly, z1, 2)
     dist = math.hypot(c.x - d1e, c.y - d1n) * FT
-    name = "P17T_%s" % bid
-    data = {"name": name, "kind": "building", "zone": 4 if dist > 1000 else 3, "pivot": [round(v, 2) for v in mesh.pivot],
+    name = "%s_%s" % (os.environ.get("P17_PREFIX", "P17T"), bid)
+    zone = ZONES.get(bid) or (4 if dist > 1000 else 3)
+    data = {"name": name, "kind": "building", "zone": zone, "pivot": [round(v, 2) for v in mesh.pivot],
             "vertices": mesh.v, "triangles": mesh.t, "tri_mat": mesh.m, "uv0_m": mesh.uv}
     with open(os.path.join(out, name + ".json"), "w", encoding="utf-8") as handle:
         json.dump(data, handle)
@@ -571,7 +578,9 @@ def main(argv):
     frame = g.LevelFrame.load(FRAME)
     with open(os.path.join(base, "county", "county_footprints_2022_viewbox.json")) as handle:
         county = {str(f["attributes"]["OBJECTID"]): f for f in json.load(handle)["features"]}
-    rows = {r["bldg_id"]: r for r in csv.DictReader(open(os.path.join(base, "targets.csv"), encoding="utf-8"))}
+    rows = {r["bldg_id"]: r for r in csv.DictReader(open(os.path.join(base, os.environ.get("P17_TARGETS", "targets.csv")), encoding="utf-8"))}
+    if os.environ.get("P17_ZONES"):
+        ZONES.update(json.load(open(os.path.join(base, os.environ["P17_ZONES"]))))
     dtm6 = load(os.path.join(base, "rasters", "view6ft_dtm.npz"))
     ids = argv[3:] or list(rows.keys())
     with open(os.path.join(out, "towers_record.jsonl"), "a", encoding="utf-8", buffering=1) as rec_file:
