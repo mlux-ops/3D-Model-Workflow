@@ -40,6 +40,46 @@
   ]
  },
  {
+  "id": "entry",
+  "markers_found": 3,
+  "temp_actors_removed": 3,
+  "points": [
+   {
+    "point": "lot corner SW",
+    "world_x_cm": 0.0,
+    "world_y_cm": 0.0,
+    "expected_u": 1455.09,
+    "expected_v": 1914.06,
+    "rendered_u": 1455.0,
+    "rendered_v": 1914.0,
+    "error_px": 0.1,
+    "pass": true
+   },
+   {
+    "point": "lot corner NE",
+    "world_x_cm": -1508.8,
+    "world_y_cm": -3115.1,
+    "expected_u": 592.91,
+    "expected_v": 134.0,
+    "rendered_u": 593.0,
+    "rendered_v": 134.0,
+    "error_px": 0.09,
+    "pass": true
+   },
+   {
+    "point": "stair centre",
+    "world_x_cm": -703.0,
+    "world_y_cm": -770.0,
+    "expected_u": 1053.37,
+    "expected_v": 1474.06,
+    "rendered_u": 1053.5,
+    "rendered_v": 1474.0,
+    "error_px": 0.14,
+    "pass": true
+   }
+  ]
+ },
+ {
   "id": "lower_level",
   "markers_found": 3,
   "temp_actors_removed": 3,

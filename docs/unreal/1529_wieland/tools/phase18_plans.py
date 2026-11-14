@@ -42,6 +42,7 @@ PLAN_DEFS = [
     # id, label, floor_z, stair centre used for labelling and the check (centre of a stair run)
     ("site", "Site plan (roofs)", 0.0, (-1055.5, -3069.0)),
     ("lower_level", "Lower level (-1.50 m)", -150.0, (-629.0, -1981.0)),
+    ("entry", "Entry hall and grade (+0.10 m)", 10.0, (-703.0, -770.0)),
     ("first_floor", "1st floor (+2.03 m)", 203.0, (-694.5, -2635.0)),
     ("rear_deck", "Rear deck (+2.03 m, over the garages)", 203.0, (-694.5, -2635.0)),
     ("second_floor", "2nd floor (+5.28 m)", 528.0, (-703.0, -888.0)),
@@ -298,6 +299,10 @@ def write_manifest():
                               "so north cannot point up without breaking the formula. The formula is kept exact; north points "
                               "LEFT on every image (arrow drawn), the street is at the bottom. Level north is %.2f degrees west "
                               "of true north." % LEVEL_NORTH_WEST_OF_TRUE_DEG),
+         "page_yaw_note": ("index.html draws a 'Hold a direction' arrow with yaw_deg 0 pointing to the TOP of the image, "
+                           "clockwise on screen. On these images the top is east (-Y), so the drawn arrow means "
+                           "Unreal yaw = yaw_deg - 90 (0 = east/-Y, 90 = south/+X, 180 = west/street/+Y, 270 = north/-X). "
+                           "The page's label 'from north' does not fit these images; level north is 270 on that dial."),
          "pixel_convention": "u, v measured from the top-left corner of the top-left pixel; pixel i covers u in [i, i+1).",
          "made_by": "Phase 18, tools/phase18_plans.py"}
     with open(os.path.join(PLANS, "manifest.json"), "w", encoding="utf-8") as f:

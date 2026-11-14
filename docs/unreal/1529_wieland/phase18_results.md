@@ -1,15 +1,16 @@
-Status: DONE 2026-11-14 12:25
+Status: DONE 2026-11-14 12:35
 
 # Phase 18: plan images for the owner's path-drawing page
 
 ## What was made
 
-Eight top views, each 2,048 x 2,048 pixels, PNG. They are listed in `owner_review\paths\plans\manifest.json`, and the drawing page at http://127.0.0.1:8766/ shows them as eight tabs.
+Nine top views, each 2,048 x 2,048 pixels, PNG. They are listed in `owner_review\paths\plans\manifest.json`, and the drawing page at http://127.0.0.1:8766/ shows them as nine tabs.
 
 | id | What it shows | Floor level (cm) | Cut height (cm) | Scale |
 |---|---|---|---|---|
 | site | Site plan with roofs on: the lot, the street (both kerbs and the crown line), the neighbours and the trees | 0 (grade) | none, roofs on | 4.88 cm per pixel, 100 m across |
 | lower_level | Lower level | -150 | -30 | 1.75 cm per pixel, 35.84 m across |
+| entry | Entry hall at grade: the front passage from the street door back to the lift (the lower-level rooms show darker below it) | 10 | 130 | 1.75 |
 | first_floor | 1st floor | 203 | 323 | 1.75 |
 | rear_deck | Rear deck over the garages. It is at 1st-floor level, so it uses the same cut as the 1st floor with the deck outlined in green | 203 | 323 | 1.75 |
 | second_floor | 2nd floor | 528 | 648 | 1.75 |
@@ -17,7 +18,7 @@ Eight top views, each 2,048 x 2,048 pixels, PNG. They are listed in `owner_revie
 | fourth_floor | 4th floor, including the rear terrace | 1179 | 1299 | 1.75 |
 | roof_deck | Penthouse roof deck | 1523 | 1643 | 1.75 |
 
-The floor levels are the tops of the Revit floor slabs as they sit in the level. They agree with the plan's figures of 2.032, 5.283, 8.534 and 11.786 m above grade. The lower-level slab is at -1.47 m at the front and -1.52 m at the rear; -1.50 m is used.
+The floor levels are the tops of the Revit floor slabs as they sit in the level. They agree with the plan's figures of 2.032, 5.283, 8.534 and 11.786 m above grade. The lower-level slab is at -1.47 m at the front and -1.52 m at the rear; -1.50 m is used. The shared entry hall has its own slab at +0.10 m, with a lift stop there, so it has its own plan. Without it, a point clicked in the hall would get the 1st floor's height, about 1.9 m too high.
 
 Every floor plan uses the same window and scale, so the building does not move when you switch floors.
 
@@ -58,14 +59,23 @@ The manifest says this outright:
 
 Level north is 1.18 degrees west of true north. The arrow shows level north.
 
-Note for Phase 19: the page's look panel asks for "Direction (° from north, clockwise)". North there should mean level north (-X), not the top of the image.
+Note for Phase 19 and the supervisor: on the page's "Hold a direction" setting, the arrow for 0° points to the TOP of the image, clockwise. On these plans the top is east. So the direction the owner sets by eye converts as Unreal yaw = yaw_deg - 90:
+
+- 0 = east (the rear);
+- 90 = south;
+- 180 = west (the street);
+- 270 = north.
+
+The label "° from north" does not fit these images. This is written into the manifest as `page_yaw_note`. I did not change the page.
+
+The brief mentioned "the alley side". There is no alley behind the lot (PLAN.md, Phase 4). The site plan shows the neighbours behind the lot instead.
 
 ## Mapping (from manifest.json)
 
 | id | world_x_at_left_cm | world_x_at_right_cm | world_y_at_top_cm | world_y_at_bottom_cm |
 |---|---|---|---|---|
 | site | -5754.4 | 4245.6 | -6000.0 | 4000.0 |
-| all seven floor plans | -2546.4 | 1037.6 | -3349.6 | 234.4 |
+| all eight floor plans | -2546.4 | 1037.6 | -3349.6 | 234.4 |
 
 Every image has `width_px` = `height_px` = 2048 and `default_eye_height_cm` 160. Measure u and v from the top-left corner of the image; pixel number i covers u from i to i+1.
 
@@ -83,6 +93,7 @@ The engine rendered the cubes with the plan's own camera. I then found the cube 
 |---|---|---|---|---|---|
 | site | 0.30 | 0.33 | 0.28 | rear yard stair (-1055.5, -3069.0) | pass |
 | lower_level | 0.10 | 0.09 | 0.35 | (-629.0, -1981.0) | pass |
+| entry | 0.10 | 0.09 | 0.14 | (-703.0, -770.0) | pass |
 | first_floor | 0.10 | 0.09 | 0.41 | (-694.5, -2635.0) | pass |
 | rear_deck | 0.10 | 0.09 | 0.41 | (-694.5, -2635.0) | pass |
 | second_floor | 0.10 | 0.09 | 0.18 | (-703.0, -888.0) | pass |
@@ -98,9 +109,9 @@ The engine rendered the cubes with the plan's own camera. I then found the cube 
 The page check:
 
 - `path_server.py` was already running on port 8766.
-- `/api/plans` returns all eight plans.
+- `/api/plans` returns all nine plans.
 - Each `/plan/<id>.png` returns 200 as image/png.
-- A headless-browser screenshot shows the page with eight plan tabs and the site plan loaded: `review\phase18\page_check.png`.
+- A headless-browser screenshot shows the page with plan tabs (taken before the entry plan was added; `/api/plans` was read again afterwards and returns nine) and the site plan loaded: `review\phase18\page_check.png`.
 
 ## Editor state afterwards
 
@@ -130,6 +141,7 @@ The page check:
 - E:\Claude\3D-Model-Workflow\.claude\worktrees\1529-wieland-scene-plan-e84a03\docs\unreal\1529_wieland\owner_review\paths\plans\manifest.json
 - E:\Claude\3D-Model-Workflow\.claude\worktrees\1529-wieland-scene-plan-e84a03\docs\unreal\1529_wieland\owner_review\paths\plans\site.png
 - E:\Claude\3D-Model-Workflow\.claude\worktrees\1529-wieland-scene-plan-e84a03\docs\unreal\1529_wieland\owner_review\paths\plans\lower_level.png
+- E:\Claude\3D-Model-Workflow\.claude\worktrees\1529-wieland-scene-plan-e84a03\docs\unreal\1529_wieland\owner_review\paths\plans\entry.png
 - E:\Claude\3D-Model-Workflow\.claude\worktrees\1529-wieland-scene-plan-e84a03\docs\unreal\1529_wieland\owner_review\paths\plans\first_floor.png
 - E:\Claude\3D-Model-Workflow\.claude\worktrees\1529-wieland-scene-plan-e84a03\docs\unreal\1529_wieland\owner_review\paths\plans\rear_deck.png
 - E:\Claude\3D-Model-Workflow\.claude\worktrees\1529-wieland-scene-plan-e84a03\docs\unreal\1529_wieland\owner_review\paths\plans\second_floor.png
@@ -138,6 +150,7 @@ The page check:
 - E:\Claude\3D-Model-Workflow\.claude\worktrees\1529-wieland-scene-plan-e84a03\docs\unreal\1529_wieland\owner_review\paths\plans\roof_deck.png
 - E:\Claude\3D-Model-Workflow\.claude\worktrees\1529-wieland-scene-plan-e84a03\docs\unreal\1529_wieland\owner_review\paths\plans\check_site.png
 - E:\Claude\3D-Model-Workflow\.claude\worktrees\1529-wieland-scene-plan-e84a03\docs\unreal\1529_wieland\owner_review\paths\plans\check_lower_level.png
+- E:\Claude\3D-Model-Workflow\.claude\worktrees\1529-wieland-scene-plan-e84a03\docs\unreal\1529_wieland\owner_review\paths\plans\check_entry.png
 - E:\Claude\3D-Model-Workflow\.claude\worktrees\1529-wieland-scene-plan-e84a03\docs\unreal\1529_wieland\owner_review\paths\plans\check_first_floor.png
 - E:\Claude\3D-Model-Workflow\.claude\worktrees\1529-wieland-scene-plan-e84a03\docs\unreal\1529_wieland\owner_review\paths\plans\check_rear_deck.png
 - E:\Claude\3D-Model-Workflow\.claude\worktrees\1529-wieland-scene-plan-e84a03\docs\unreal\1529_wieland\owner_review\paths\plans\check_second_floor.png

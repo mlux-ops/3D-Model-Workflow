@@ -31,6 +31,21 @@
    "cut_height_cm": -30.0
   },
   {
+   "id": "entry",
+   "label": "Entry hall and grade (+0.10 m)",
+   "image": "entry.png",
+   "width_px": 2048,
+   "height_px": 2048,
+   "world_x_at_left_cm": -2546.4,
+   "world_x_at_right_cm": 1037.6,
+   "world_y_at_top_cm": -3349.6,
+   "world_y_at_bottom_cm": 234.4,
+   "floor_z_cm": 10.0,
+   "default_eye_height_cm": 160,
+   "cm_per_px": 1.75,
+   "cut_height_cm": 130.0
+  },
+  {
    "id": "first_floor",
    "label": "1st floor (+2.03 m)",
    "image": "first_floor.png",
@@ -127,6 +142,7 @@
  "right_axis": "+X (south)",
  "north_direction_on_image": "left (-X)",
  "orientation_note": "The page's formula ties world X to the horizontal pixel axis, and this level's north is -X, so north cannot point up without breaking the formula. The formula is kept exact; north points LEFT on every image (arrow drawn), the street is at the bottom. Level north is 1.18 degrees west of true north.",
+ "page_yaw_note": "index.html draws a 'Hold a direction' arrow with yaw_deg 0 pointing to the TOP of the image, clockwise on screen. On these images the top is east (-Y), so the drawn arrow means Unreal yaw = yaw_deg - 90 (0 = east/-Y, 90 = south/+X, 180 = west/street/+Y, 270 = north/-X). The page's label 'from north' does not fit these images; level north is 270 on that dial.",
  "pixel_convention": "u, v measured from the top-left corner of the top-left pixel; pixel i covers u in [i, i+1).",
  "made_by": "Phase 18, tools/phase18_plans.py"
 }
