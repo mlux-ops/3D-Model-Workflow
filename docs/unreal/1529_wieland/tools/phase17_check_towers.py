@@ -35,25 +35,44 @@ FT = 0.3048006096
 SKIP_CLASSES = [2, 3, 4, 5, 7, 9, 18]
 
 
-def load_pc(folder):
-    out = {}
-    for path in sorted(glob.glob(os.path.join(folder, "pc_*.npz"))):
-        if not os.path.exists(path + ".source.txt") or path.endswith("_willis.npz"):
-            continue
-        out[path] = np.load(path)
-    return out
+class Tiles:
+    """The streamed tiles: their labels read once; the arrays of at most two tiles kept unpacked at a time."""
+
+    def __init__(self, folder):
+        self.paths = [p for p in sorted(glob.glob(os.path.join(folder, "pc_*.npz")))
+                      if os.path.exists(p + ".source.txt") and not p.endswith("_willis.npz")]
+        self.labels, self.tile, self.cache = {}, {}, {}
+        for p in self.paths:
+            d = np.load(p)
+            self.labels[p] = [str(v) for v in d["labels"]]
+            self.tile[p] = str(d["tile"])
+
+    def arrays(self, p):
+        if p not in self.cache:
+            while len(self.cache) >= 2:
+                self.cache.pop(next(iter(self.cache)))
+            d = np.load(p)
+            self.cache[p] = {k: d[k] for k in ("x", "y", "z", "cls", "box")}
+        return self.cache[p]
+
+    def first(self, bid):
+        for p in self.paths:
+            if bid in self.labels[p]:
+                return p
+        return "zzz"
 
 
 def points_for(bid, pcs):
     """Returns of one building's box from every streamed tile, and the squares (2,500 ft tiles) they came from."""
     xs, ys, zs, tiles = [], [], [], []
-    for d in pcs.values():
-        labels = [str(v) for v in d["labels"]]
+    for p in pcs.paths:
+        labels = pcs.labels[p]
         if bid not in labels:
             continue
+        d = pcs.arrays(p)
         sel = (d["box"] == labels.index(bid)) & ~np.isin(d["cls"], SKIP_CLASSES)
         xs.append(d["x"][sel]); ys.append(d["y"][sel]); zs.append(d["z"][sel])
-        t = str(d["tile"])
+        t = pcs.tile[p]
         tiles.append((int(t[:4]) * 100 + 1e6, int(t[4:]) * 100 + 1e6))
     if not xs:
         return None
@@ -194,7 +213,7 @@ def main(argv):
     folder, out_csv = argv[1], argv[2]
     pcf = argv[3] if len(argv) > 3 else "D:/Wieland1529_lidar/derived"
     only = set(argv[4:])
-    pcs = load_pc(pcf)
+    pcs = Tiles(pcf)
     visible = {}
     tpath = os.path.join(os.path.dirname(os.path.normpath(folder)), "targets.csv")
     if os.path.exists(tpath):
@@ -204,7 +223,7 @@ def main(argv):
         rec = json.loads(line)
         recs[rec["id"]] = rec
     rows = []
-    for bid, rec in recs.items():
+    for bid, rec in sorted(recs.items(), key=lambda kv: pcs.first(kv[0])):
         if only and bid not in only:
             continue
         gpath = os.path.join(folder, rec["name"] + "_grid.npz")

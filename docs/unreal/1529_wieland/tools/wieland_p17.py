@@ -337,3 +337,102 @@ def save_current_level():
     if path.startswith(NEVER_SAVE):
         raise RuntimeError("refused to save " + path)
     return bool(unreal.get_editor_subsystem(unreal.LevelEditorSubsystem).save_current_level())
+
+
+# ---------------------------------------------------------------------------------------------------------------
+# Pictures from the decks, for the check sheets. A temporary camera, piloted, never saved.
+
+SITE = "/Game/Wieland1529/L_Site_M4"
+CAM_LABEL = "TEMP_P17_CAM"
+
+
+def levels():
+    w = unreal.get_editor_subsystem(unreal.UnrealEditorSubsystem).get_editor_world()
+    return [l.get_outer().get_path_name().split(".")[0] for l in unreal.EditorLevelUtils.get_levels(w)]
+
+
+def open_site():
+    """Open the working level (changes in the level open now are discarded, never saved)."""
+    unreal.get_editor_subsystem(unreal.LevelEditorSubsystem).load_level(SITE)
+    return {"world": world_path(), "levels": levels()}
+
+
+def attach(path):
+    """Add a level to the open working level as always loaded (the working level then needs saving by name)."""
+    if not world_path().startswith(SITE + "."):
+        raise RuntimeError("refused: the working level is not open")
+    if path in levels():
+        return False
+    w = unreal.get_editor_subsystem(unreal.UnrealEditorSubsystem).get_editor_world()
+    return unreal.EditorLevelUtils.add_level_to_world(w, path, unreal.LevelStreamingAlwaysLoaded) is not None
+
+
+def hide_labels(prefixes, hidden=True):
+    """Hide (temporarily, in the editor only; not saved) the objects whose label starts with one of prefixes."""
+    n = 0
+    for a in unreal.get_editor_subsystem(unreal.EditorActorSubsystem).get_all_level_actors():
+        if any(a.get_actor_label().startswith(p) for p in prefixes):
+            a.set_is_temporarily_hidden_in_editor(hidden)
+            n += 1
+    return n
+
+
+def cam(location, rotation, fov_h, ev100=None):
+    """Place the temporary camera (level cm; rotation pitch, yaw, roll in degrees) and pilot the viewport with it."""
+    cam_end()
+    sub = unreal.get_editor_subsystem(unreal.EditorActorSubsystem)
+    c = sub.spawn_actor_from_class(unreal.CameraActor, unreal.Vector(*location), unreal.Rotator(pitch=rotation[0], yaw=rotation[1], roll=rotation[2]))
+    c.set_actor_label(CAM_LABEL)
+    comp = c.camera_component
+    comp.set_editor_property("field_of_view", fov_h)
+    comp.set_editor_property("constrain_aspect_ratio", True)
+    comp.set_editor_property("aspect_ratio", 16.0 / 9.0)
+    if ev100 is not None:
+        s = comp.get_editor_property("post_process_settings")
+        s.set_editor_property("override_auto_exposure_method", True)
+        s.set_editor_property("auto_exposure_method", unreal.AutoExposureMethod.AEM_MANUAL)
+        s.set_editor_property("override_auto_exposure_apply_physical_camera_exposure", True)
+        s.set_editor_property("auto_exposure_apply_physical_camera_exposure", False)
+        s.set_editor_property("override_auto_exposure_bias", True)
+        s.set_editor_property("auto_exposure_bias", -float(ev100))
+        comp.set_editor_property("post_process_settings", s)
+        comp.set_editor_property("post_process_blend_weight", 1.0)
+    ed = unreal.get_editor_subsystem(unreal.LevelEditorSubsystem)
+    ed.pilot_level_actor(c)
+    ed.editor_set_viewport_realtime(True)
+    return c
+
+
+def shot(out_path, width=1920, height=1080):
+    for a in unreal.get_editor_subsystem(unreal.EditorActorSubsystem).get_all_level_actors():
+        if a.get_actor_label() == CAM_LABEL:
+            os.makedirs(os.path.dirname(out_path), exist_ok=True)
+            if os.path.exists(out_path):
+                os.remove(out_path)
+            unreal.AutomationLibrary.take_high_res_screenshot(width, height, out_path, a)
+            return True
+    return False
+
+
+async def shot_wait(out_path, width=1920, height=1080, settle_frames=120, wait_frames=1200):
+    for _ in range(settle_frames):
+        await asyncio.sleep(0)
+    if not shot(out_path, width, height):
+        return False
+    n = 0
+    while not os.path.exists(out_path) and n < wait_frames:
+        await asyncio.sleep(0.05)
+        n += 1
+    return os.path.exists(out_path)
+
+
+def cam_end():
+    ed = unreal.get_editor_subsystem(unreal.LevelEditorSubsystem)
+    sub = unreal.get_editor_subsystem(unreal.EditorActorSubsystem)
+    n = 0
+    for a in list(sub.get_all_level_actors()):
+        if a.get_actor_label() == CAM_LABEL:
+            ed.eject_pilot_level_actor()
+            sub.destroy_actor(a)
+            n += 1
+    return n

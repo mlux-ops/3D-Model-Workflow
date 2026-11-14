@@ -241,6 +241,13 @@ def heightfield(med, bmask, x0, y1, cell, ground_ft, base_ft):
     local = P - centre
     ref = np.where(bmask, med, np.nan)
     inner = interior_cells(ref, bmask)
+    zr = raster_top(P, F, x0, y1, w, h, ground_ft)
+    err = np.abs(zr - ref)[inner]
+    err = err[np.isfinite(err)]
+    full_p95 = float(np.percentile(err, 95)) if len(err) else 99.0
+    # The undecimated surface already differs from the cells by its corner heights (each corner takes the highest
+    # of its cells); decimation may add at most 0.05 m to that, and never pass 0.25 m unless the undecimated does.
+    bar = max(0.25, full_p95 + 0.05)
     for red in (0.97, 0.93, 0.85, 0.7):
         pp, ff = fast_simplification.simplify(local.astype(np.float32), F.astype(np.int32), target_reduction=red, agg=5)
         pp = pp.astype(np.float64) + centre
@@ -248,32 +255,38 @@ def heightfield(med, bmask, x0, y1, cell, ground_ft, base_ft):
         err = np.abs(zr - ref)[inner]
         err = err[np.isfinite(err)]
         p95 = float(np.percentile(err, 95)) if len(err) else 99.0
-        if p95 <= 0.25 and len(err) > 0.8 * inner.sum():
+        if p95 <= bar and len(err) > 0.8 * inner.sum():
             return pp, ff, red, p95
-    zr = raster_top(P, F, x0, y1, w, h, ground_ft)
-    err = np.abs(zr - ref)[inner]
-    err = err[np.isfinite(err)]
-    return P, F, 0.0, float(np.percentile(err, 95)) if len(err) else 99.0
+    return P, F, 0.0, full_p95
 
 
 PC_FOLDER = "D:/Wieland1529_lidar/derived"
-_PC_CACHE = {}
+_PC_LABELS = {}
+_PC_CACHE = {}  # at most two tiles' arrays in memory (each up to 4 GB unpacked); run the ids grouped by tile
+
+
+def _tile_arrays(path):
+    if path not in _PC_CACHE:
+        while len(_PC_CACHE) >= 2:
+            _PC_CACHE.pop(next(iter(_PC_CACHE)))
+        d = np.load(path)
+        _PC_CACHE[path] = {k: d[k] for k in ("x", "y", "z", "cls", "box")}
+    return _PC_CACHE[path]
 
 
 def point_cloud(bid):
     """Points of this building's box from any streamed tile (x, y, z feet, cls), or None."""
     import glob
     xs, ys, zs, cs = [], [], [], []
-    for path in glob.glob(os.path.join(PC_FOLDER, "pc_*.npz")):
-        if not os.path.exists(path + ".source.txt"):
-            continue  # still being written by the batch (its record file is written last)
-        if path not in _PC_CACHE:
-            d = np.load(path)
-            _PC_CACHE[path] = {k: d[k] for k in ("x", "y", "z", "cls", "box", "labels")}
-        d = _PC_CACHE[path]
-        labels = list(d["labels"])
+    for path in sorted(glob.glob(os.path.join(PC_FOLDER, "pc_*.npz"))):
+        if not os.path.exists(path + ".source.txt") or path.endswith("_willis.npz"):
+            continue  # still being written by the batch (its record file is written last), or the trial copy
+        if path not in _PC_LABELS:
+            _PC_LABELS[path] = [str(v) for v in np.load(path)["labels"]]
+        labels = _PC_LABELS[path]
         if bid not in labels:
             continue
+        d = _tile_arrays(path)
         sel = d["box"] == labels.index(bid)
         xs.append(d["x"][sel]); ys.append(d["y"][sel]); zs.append(d["z"][sel]); cs.append(d["cls"][sel])
     if not xs:
@@ -281,7 +294,7 @@ def point_cloud(bid):
     return {"x": np.concatenate(xs), "y": np.concatenate(ys), "z": np.concatenate(zs), "cls": np.concatenate(cs)}
 
 
-def pc_masts(pc, ground_ft, terrace, x0, y1, cell, topmask, top_m):
+def pc_masts(pc, ground_ft, terrace, x0, y1, cell, topmask, top_m, surface=None):
     """Masts from returns more than 4 m above the highest terrace within 3 ft, over the building, in clusters of
     at least 5 returns on a 3 ft grid. Top: the second-highest return of the cluster (one stray return is not a top)."""
     h, w = terrace.shape
@@ -314,6 +327,17 @@ def pc_masts(pc, ground_ft, terrace, x0, y1, cell, topmask, top_m):
         rad = min(rad, 12.0)
         cc, rr = int((e - x0) / cell), int((y1 - nn) / cell)
         base = float(tmax[min(max(rr, 0), h - 1), min(max(cc, 0), w - 1)])
+        # Not a mast: a taller wall within 15 ft (a neighbour's facade returns), or a large blob on a low roof (a
+        # crane standing in 2022).
+        blob = lab == i
+        ring_ = ndimage.binary_dilation(blob, iterations=5) & ~ndimage.binary_dilation(blob, iterations=1)
+        rr3, cc3 = np.nonzero(ring_)
+        rr1 = np.clip(rr3 * 3 + 1, 0, h - 1)
+        cc1 = np.clip(cc3 * 3 + 1, 0, w - 1)
+        if surface is not None and len(rr1) and float(np.nanmax(surface[rr1, cc1])) > base + 0.5 * (top - base):
+            continue
+        if rad >= 10.0 and top_m < 100.0:
+            continue
         masts.append({"east": e, "north": nn, "radius_ft": rad, "base_m": base, "top_m": top, "returns": int(k.sum())})
     return masts
 
@@ -362,6 +386,30 @@ def build(bid, row, base, frame, county, dtm6, out):
     # a 3 by 3 median then removes single high spikes.
     closed = ndimage.grey_closing(np.nan_to_num(raw_m, nan=0.0), size=(5, 5))
     med = ndimage.median_filter(closed, size=3)
+    # Trees: the surface model holds the canopy over low roofs (up to 12 m too high near the site). Where the returns
+    # say a cell's top is vegetation (classes 3 to 5 above everything else by 1 m), the cell takes the height of the
+    # nearest cell whose top is a building return.
+    veg_cells = 0
+    if pc is not None:
+        pcc = ((pc["x"] - x0) / cell).astype(int)
+        prr = ((y1 - pc["y"]) / cell).astype(int)
+        inb = (pcc >= 0) & (pcc < w) & (prr >= 0) & (prr < h)
+        hv = (pc["z"] - ground_ft) * FT
+        isveg = np.isin(pc["cls"], [3, 4, 5])
+        nonveg = ~np.isin(pc["cls"], [2, 3, 4, 5, 9])
+        vg = np.full(h * w, -np.inf)
+        bg = np.full(h * w, -np.inf)
+        np.maximum.at(vg, prr[inb & isveg] * w + pcc[inb & isveg], hv[inb & isveg])
+        np.maximum.at(bg, prr[inb & nonveg] * w + pcc[inb & nonveg], hv[inb & nonveg])
+        vg, bg = vg.reshape(h, w), bg.reshape(h, w)
+        tree = np.isfinite(vg) & (vg > np.where(np.isfinite(bg), bg, -1e9) + 1.0) & (med > 2.5)
+        tree = ndimage.binary_dilation(tree, iterations=1) & ~(np.isfinite(bg) & (bg >= med - 1.0))
+        good = np.isfinite(bg) & ~tree
+        if tree.any() and good.any():
+            _, (ir, ic) = ndimage.distance_transform_edt(~good, return_indices=True)
+            fill = np.where(np.isfinite(bg[ir, ic]), bg[ir, ic], 0.0)
+            med = np.where(tree, fill, med)
+            veg_cells = int(tree.sum())
     bmask = grown & (med > 2.5)
     lab, nlab = ndimage.label(bmask)
     if nlab == 0:
@@ -424,7 +472,7 @@ def build(bid, row, base, frame, county, dtm6, out):
     # (Willis: 460 m in the surface model, 525.5 m in the returns, 527 m published).
     mast_source = "surface model"
     if pc is not None:
-        masts = pc_masts(pc, ground_ft, terrace, x0, y1, cell, level == len(tops) - 1, tops[-1])
+        masts = pc_masts(pc, ground_ft, terrace, x0, y1, cell, level == len(tops) - 1, tops[-1], surface=raw_m)
         mast_source = "point cloud"
     # Curvature drop from D1.
     d1e, d1n = frame.map_from_level(D1[0], D1[1])
@@ -512,7 +560,7 @@ def build(bid, row, base, frame, county, dtm6, out):
            "terraces": len(prisms), "roof_top_m": round(top_roof, 2), "mast_count": len(masts),
            "top_incl_masts_m": round(top_all, 2), "curvature_drop_m": round(drop(c.x, c.y), 3),
            "placed_top_m": round(top_all - drop(c.x, c.y), 2), "triangles": len(mesh.t),
-           "mast_source": mast_source, "height_source": height_source, "plan_area_ft2": round(float(bmask.sum()) * cell * cell, 0), "county_height_ft": county[bid]["attributes"]["Height"],
+           "mast_source": mast_source, "height_source": height_source, "tree_cells_replaced": veg_cells, "plan_area_ft2": round(float(bmask.sum()) * cell * cell, 0), "county_height_ft": county[bid]["attributes"]["Height"],
            "county_max_point_ft": county[bid]["attributes"]["Max_Point"], "masts": masts, "prisms": prisms}
     return rec
 
@@ -526,7 +574,7 @@ def main(argv):
     rows = {r["bldg_id"]: r for r in csv.DictReader(open(os.path.join(base, "targets.csv"), encoding="utf-8"))}
     dtm6 = load(os.path.join(base, "rasters", "view6ft_dtm.npz"))
     ids = argv[3:] or list(rows.keys())
-    with open(os.path.join(out, "towers_record.jsonl"), "a", encoding="utf-8") as rec_file:
+    with open(os.path.join(out, "towers_record.jsonl"), "a", encoding="utf-8", buffering=1) as rec_file:
         for bid in ids:
             if not os.path.exists(os.path.join(base, "rasters", "bldg1ft", "%s_dsm.npz" % bid)):
                 print("no 1 ft surface yet", bid)
