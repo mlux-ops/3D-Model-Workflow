@@ -30,6 +30,9 @@ def pct(sorted_values, q):
     return sorted_values[int(math.floor(q * (len(sorted_values) - 1)))] if sorted_values else None
 
 
+csv.field_size_limit(2 ** 31 - 1)  # the record's metadata row holds very long fields (the command line and others)
+
+
 def read(path):
     with open(path, newline="", encoding="utf-8", errors="replace") as handle:
         rows = list(csv.reader(handle))
@@ -62,7 +65,7 @@ def main():
     for row in body:
         events = [e for e in (row[0].split(";") if row and row[0] else []) if e]
         for event in events:
-            name = event.strip()
+            name = event.split("##")[0].strip()  # the record writes each event as <name>##<seconds since start>
             if name not in KNOWN:  # other engine events (console commands and the like) do not move the camera
                 continue
             events_seen.append(name)

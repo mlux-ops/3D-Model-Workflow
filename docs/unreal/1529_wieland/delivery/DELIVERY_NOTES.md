@@ -60,7 +60,7 @@ Copy the `build\` folder anywhere on a Windows 10 or 11 computer (64-bit) and do
 
 Controls in the walk-through: the mouse looks around; W, A, S, D move; E or Space rises, Q or C sinks. The viewer flies (no gravity). Alt+F4 closes the program. The walk-through starts on the west sidewalk at station S1, facing the building. The interior level of each of the four apartments is loaded when the viewer enters that apartment and unloaded when the viewer leaves it (Unreal's streaming boxes, set up in Phase 6); from outside, all four are loaded.
 
-Starting `build\Windows\Wieland1527.exe` directly also opens the walk-through, but with the project's general settings (full pixel count, frame rate capped at 60), not the measured real-time settings.
+Starting `build\Windows\Wieland1527.exe` directly also opens the walk-through (checked: it loads the scene in about one second and reports no errors), but with the project's general settings (full pixel count, frame rate capped at 60), not the measured real-time settings.
 
 What the computer needs: a graphics card for DirectX 12 with hardware ray tracing (for example NVIDIA RTX 30 or 40 series) and preferably 16 GB of video memory, 32 GB of system memory. It was built and measured on an NVIDIA GeForce RTX 4080 (16 GB), an AMD Ryzen 7 7800X3D and 31 GB of memory, Windows 11.
 
@@ -114,6 +114,27 @@ Other limits: nine of the nineteen tolerances of the reference views could not b
 
 `LICENCES.csv` has one row for every group of outside assets that the packaged build contains, found by listing the cooked asset folders of the build against the project's licence records (`asset_licences.csv`, `asset_licence_groups.csv`, `asset_downloads.csv`, `SOURCES.md` in the plan folder). "Not recorded" means that the project holds no record of where the asset came from or of its terms; those rows are listed for the owner to confirm before the build is shown outside the owner's own office.
 
+The build packs 3,543 assets. Every one of them falls in a group of the project's licence record, or is this project's own work, or is Unreal Engine content. `LICENCES.csv` has one row per group (17 groups); `LICENCES_per_asset.csv` has one row per packed asset with its group and licence as recorded.
+
+| Group | Assets in the build | Licence as recorded |
+|---|---|---|
+| This project's own work (Phases 6 to 15) | 1,813 | own work |
+| Unreal Engine and engine-plugin content | 720 | Unreal Engine licence (Epic Games) |
+| Revit export, Phase 3 (the owner's model) | 312 | owner's property; the manufacturers' families inside it carry their makers' terms, not recorded |
+| Surroundings, Phase 4 (county footprints and state laser data) | 181 | recorded (footprints "provided as is"; laser data without restriction) |
+| Phase 5 materials | 142 | recorded (own work on CC0 texture sets) |
+| Poly Haven texture sets | 33 | CC0 (as the earlier project's records state) |
+| ambientCG glass imperfection set | 2 | CC0 |
+| Earlier project's render settings | 1 | owner's own |
+| **Megaplant tree library** (all 34 trees) | 120 | **not recorded** (an earlier note says "UE-only or no-redistribution") |
+| **Earlier project's site model** (neighbour buildings) | 98 | **not recorded** (City of Chicago building footprints, terms page not read) |
+| **Earlier project's production materials** | 37 | **not recorded** (the records contradict each other) |
+| **Revit export images** (Autodesk library 28, other images 28, generated surfaces 16, Indiana limestone 6) | 78 | **not recorded** |
+| **Megascans worn brick** | 2 | **not recorded** (tied to the account that took it) |
+| **Earlier project's other materials** | 4 | **not recorded** |
+
+339 packed assets in 9 groups have no licence record.
+
 ## 9. What still needs the owner
 
 Decisions that stay open; the scene keeps its switchable options and labelled stand-ins as they are until the owner decides:
@@ -121,6 +142,7 @@ Decisions that stay open; the scene keeps its switchable options and labelled st
 1. Mark F1 to F9 (section 6) "fix" or "accept".
 2. The site visit and site photographs, which would let the remaining nine tolerances be checked.
 3. Furniture (the 81 grey stand-ins), the distant city stand-in, the lawn, and up to two finish alternatives per surface (none named yet).
-4. Licences: the rows marked "not recorded" in `LICENCES.csv`, in particular the Megaplant tree library (all 34 trees use it), Fab and Megascans content, and the manufacturers' terms for the light-distribution files and images that came with the Revit families.
+4. Licences: the rows marked "not recorded" in `LICENCES.csv`, in particular the Megaplant tree library (all 34 trees use it), the earlier project's site model and materials, the Megascans brick, and the manufacturers' terms for the light-distribution files and images that came with the Revit families.
 5. 1520 N. Wells: a wrecking permit was issued on 1 May 2026, so the existing building shown there (as surveyed in 2022) may be gone.
-6. The switchable options in the Unreal project: "Surroundings" (earlier detailed buildings or the survey massing), "Revit site objects", "Site ground", "Season" (leaf-on or leaf-off) and the Phase 12 material set; the build shows the saved choice.
+6. Six Miele appliances (the wall ovens and similar built-ins from the Revit families) use a see-through black glass material on Nanite meshes; Nanite draws only solid materials, so the engine replaces that glass with its default material in real time (the build warns about it on start). A solid black glass material, or turning Nanite off for those six meshes, would fix it; that is a change to imported Revit assets and is left for the owner.
+7. The switchable options in the Unreal project: "Surroundings" (earlier detailed buildings or the survey massing), "Revit site objects", "Site ground", "Season" (leaf-on or leaf-off) and the Phase 12 material set; the build shows the saved choice.
