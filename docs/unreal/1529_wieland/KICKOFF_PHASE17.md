@@ -66,6 +66,14 @@ What is still the owner's
 
 Rules that apply throughout
 
+- **Roofs must be clean, built forms, never a draped scan surface** (owner, 2026-11-14: "the roofs of all the new buildings are jagged and unrealistic"). Do not use height fields or any surface that follows the laser-scan cells for any visible roof, tower crown or building top. Use the point cloud only to measure, then build:
+  - **flat roofs:** one plane at the roof's median height (trees, rooftop clutter and scan noise excluded), with a parapet as a clean extrusion of the outline at its measured height and thickness;
+  - **stepped roofs and setbacks:** cluster the roof heights into distinct levels, and build each level as a clean prism with straight edges (outlines simplified to the building's real corners);
+  - **pitched, hipped and mansard roofs:** fit planes to the points (for example RANSAC, with a 0.15 m threshold), intersect them into straight ridges, hips and valleys, and build the planes;
+  - **crowns, spires and masts:** simple primitives (boxes, prisms, cylinders, cones, pyramids) sized from the points;
+  - **rooftop structures** (mechanical penthouses, stair and lift overruns, water tanks), 1.5 m or more tall and 4 square metres or more in area: simple boxes or cylinders. Leave out anything smaller, and anything classified as vegetation.
+  - Measure the error against the fitted forms, not against raw cells. Keep the acceptance numbers (Zone 1 roofs within 0.3 m, towers within 1 m), measured on the clean geometry.
+  - Rebuild every building and tower already built with a height field or scanned roof, Zone 1 first, then the D1 skyline. Check one of each kind on a grazing-light sheet before doing the rest.
 - Never close, quit, kill or restart the Unreal editor yourself (owner, 2026-11-14: a self-restart left the "Restore Packages" window waiting for a click). Only the supervisor's watcher restarts the editor, and only after a crash.
 - Nanite ray tracing is OFF for every render, path-traced included: keep the console variable r.RayTracing.Nanite.Mode at 0 at all times and never set it to 2. In UE 5.9 it hung the graphics card three times (NaniteClusterRayTracing.usf line 539). Path-traced pictures trace the meshes' simplified fallback copies; say so on each sheet. Render one picture at a time and let a freshly opened level settle five minutes first. The agent server does not answer while a picture renders, for up to about 11 minutes.
 - Never save `/Game/Wieland/R15_Landscape/L_R15_Production`, never use "Save All", save named assets only, and never edit an asset that Datasmith created; apply changes as overrides, new assets or recorded swaps.

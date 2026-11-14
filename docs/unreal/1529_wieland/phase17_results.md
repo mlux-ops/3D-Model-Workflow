@@ -2,7 +2,9 @@
 
 Companion to [PLAN.md](PLAN.md), section "Phase 17". Written as each step finishes, so a new session can resume from it.
 
-Status: OWNER DECISION at 14:26 on 2026-11-14: there is no free-memory floor any more ("i dont want it to consider this memory limit anymore"). The editor restart this session asked for at 14:24 was cancelled by the supervisor; the editor (process 40156) stays open as it is. On resuming: do not wait, stop or ask for a restart because free commit memory is low; carry on from the first unfinished journal line (the Zone 1-2 and ground imports, then the photographs and the rest).
+Status: OWNER FEEDBACK at 15:15 on 2026-11-14: the roofs of all the new buildings are jagged and unrealistic. The supervisor stopped the session at 15:15, before the 'clipped form' (straight walls with the scanned roof inside) was written; a path-traced D1 still may still be finishing in the editor. On resuming: read the roof rule in the prompt (clean built forms only: flat planes and parapets, clustered setbacks as prisms, fitted roof planes, simple primitives for crowns and rooftop structures; no height fields or scanned surfaces on any visible roof), rebuild every Zone 1 building and every skyline tower made with a height field or scanned roof, check one of each kind on a grazing-light sheet first, re-measure the acceptance numbers on the clean geometry, then re-render the stills (J20) and carry on.
+
+Earlier status:  OWNER DECISION at 14:26 on 2026-11-14: there is no free-memory floor any more ("i dont want it to consider this memory limit anymore"). The editor restart this session asked for at 14:24 was cancelled by the supervisor; the editor (process 40156) stays open as it is. On resuming: do not wait, stop or ask for a restart because free commit memory is low; carry on from the first unfinished journal line (the Zone 1-2 and ground imports, then the photographs and the rest).
 
 Earlier status:  IN PROGRESS (started 12:33 Central on 2026-11-14, headless session, Opus).
 

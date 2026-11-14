@@ -1526,3 +1526,16 @@ Errors and surprises of the phase, each with cause, fix and status. "Jn" is the 
   - The Phase 17 agent was set to stop at its next commit, so the watcher relaunches it with the new rule.
 - Status: fixed in the scripts and prompts; the watcher was reloaded.
 - 14:25: the owner removed the 30 GB free-memory floor ("i dont want it to consider this memory limit anymore"). The Phase 17 agent had asked for an editor restart at 14:24, because garbage collection could not lift free commit above 30 GB (27.9 GB). The supervisor cancelled that request (`RESTART_EDITOR.cancelled_<time>`) and removed the floor and the restart-request step from the Phase 17, 19 and render prompts. The rule against agents restarting the editor stays, and so does memory logging. The Phase 17 journal's status line tells the next session to carry on without waiting on memory.
+
+### Phase 17 roofs jagged -- 2026-11-14 15:15 (supervising session)
+
+- Owner feedback: the roofs of all the new buildings are jagged and unrealistic.
+- Cause: `tools\phase17_towers.py` built roofs and crowns whose variation exceeded 0.5 m as height fields, following the 1 ft laser-scan cells. Trees, rooftop clutter and scan noise all showed as spikes. The agent was about to add a "clipped" form (straight walls with the scanned roof inside), which would have kept the problem.
+- Fix: the session was stopped at 15:15. The Phase 17 prompt now requires clean built forms only:
+  - flat planes with parapets;
+  - setbacks clustered into prisms;
+  - pitched roofs from fitted planes (RANSAC, 0.15 m);
+  - simple primitives for crowns, masts and rooftop structures 1.5 m or more tall and 4 m² or more in area;
+  - no height fields on any visible roof.
+  - Error is measured against the fitted forms. The journal tells the next session to rebuild every height-field building, Zone 1 first, checking one of each kind on a grazing-light sheet.
+- Status: open until the rebuilt roofs are checked.
