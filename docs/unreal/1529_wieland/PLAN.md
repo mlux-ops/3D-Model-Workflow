@@ -699,20 +699,6 @@ Each is asked at the step that needs it. None has been asked or done yet.
 
 ---
 
-## Phase 13: The proposed hotel at 1520-1528 N. Wells (inserted during Phase 11)
-
-Added by the owner on 2026-11-13: the neighbouring building and the adjacent empty lot are to be redeveloped as "The Duke of Wells", a 12-storey, 151-foot, 203-room hotel by Pappageorge Haymes for Condor Partners, with terraced setbacks, red and dark grey brick, loft windows about eight feet tall, a rooftop terrace, and a three-storey rear garage screened by two three-storey single-family homes (Chicago YIMBY, 11 February 2024). It is the project's rear neighbour across the alley. Phase 11 was interrupted for it and resumes after it.
-
-**Goal.** The proposed hotel modelled on its parcels at the detail level of the earlier detailed neighbour buildings, switchable against the existing buildings, with every dimension sourced or labelled as an estimate.
-
-**Steps.** 13.1 confirm the parcels and the present buildings on them; 13.2 research renderings, permits and planning records (reading approved; reference downloads approved, no cost, 500 MB) and write `proposed_hotel.md`; 13.3 build `L_ProposedHotel`, lowest storeys first; 13.4 the Variant Manager list `Neighbour development`, proposed by default, existing buildings hidden by recorded override; 13.5 sheets against the published renderings, measured height and setbacks; 13.6 the views that change, the hotel's shadow on 1529, and the frame-time cost; 13.7 hand the list of views to re-render to Phase 11.
-
-**Acceptance.** Height within 2 percent of 151 feet; storey count 12; every setback and footprint dimension has a source or a labelled estimate with its uncertainty; both variant options tested both ways; no Datasmith asset changed; the list of changed views written.
-
-**Leaves behind.** `L_ProposedHotel`; the variant list; `proposed_hotel.md`; sheets in `review\phase13\`; the list of views for Phase 11.
-
----
-
 ## Phase 12: Material rebuild (runs after Phase 8, before Phase 9)
 
 Added by the owner's decision on 2026-11-12: "rebuild 1–2s". It is numbered 12 because the supervisor's queue takes whole numbers; it runs between Phase 8 and Phase 9 so that Phase 9 budgets the final textures.

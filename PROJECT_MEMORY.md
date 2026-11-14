@@ -1402,3 +1402,16 @@ Errors and surprises of the phase, each with cause, fix and status. "Jn" is the 
 - J5, the first animation test frames were three stops too bright. Cause: a cine camera puts its own aperture (f/2.8 unless set) into the exposure, while the lighting level's exposure is written for f/8. Fix: `seq_build.py` sets the camera's aperture to f/8 and motion blur to 0.2; both sequences were rebuilt and saved at 12:21 and 12:22 and read back. Status: fixed.
 - J5, the owner interrupted the phase at 12:30 for Phase 13 (the proposed hotel), which changes eight of the twelve stills. Fix: the eight are re-rendered with the hotel on (J6); the earlier eight are kept in `delivery\stills_prehotel\`. Status: in hand.
 - 16:12, the working copy showed `profiles\2026-11-12_M6\memory_log_phase8.csv` with 5,823 lines appended up to 08:56 this morning. Cause: a memory logger started during Phase 11's first session wrote to the Phase 8 file. Fix: left uncommitted and untouched (not deleted); the Phase 11 logger writes to `review\phase11\memory_log_phase11.csv`. Status: reported to the owner.
+
+### Proposed hotel withdrawn by the owner -- 2026-11-13 23:40 (supervising session)
+
+- Owner: "remove the hotel replace with lot we had before. then continue on, remove all hotel work".
+- Done by the supervisor in the repository:
+  - removed `KICKOFF_PHASE13.md`, `phase13_results.md`, `proposed_hotel.md`, `review\phase13\`, `profiles\2026-11-13_P13\` and `tools\wieland_hotel.py`, plus untracked scratch;
+  - removed the Phase 13 section of `PLAN.md` and the four hotel rows of `asset_downloads.csv`.
+  - All of it remains in git history at `26b8b768`. The earlier Phase 13 entries in this file are kept as history.
+- Queued:
+  - Phase 15 (Opus) removes the hotel level, its assets, the `Neighbour development` variant list and the overrides from the Unreal project, restores the existing buildings, and moves `E:\Wieland1529_site_data\proposed_hotel\` to the Recycle Bin.
+  - Phase 16 (Sonnet) redoes the four timelapses without the hotel.
+  - Phase 11 then re-renders any still made with the hotel and continues.
+- A first attempt to strip the hotel rows from `asset_downloads.csv` by splitting on CRLF also deleted unrelated rows, because the file mixes line endings. It was caught in the diff, reverted, and redone by splitting on LF; only the 4 hotel rows went.
