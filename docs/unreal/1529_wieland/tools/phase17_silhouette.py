@@ -91,8 +91,8 @@ def main(argv):
     r = int((float(dtm["y1"]) - cn) / float(dtm["cell"]))
     c = int((ce - float(dtm["x0"])) / float(dtm["cell"]))
     ground_ft = float(np.nanmedian(dtm["z"][max(r - 2, 0):r + 3, max(c - 2, 0):c + 3]))
-    # The level datum: Z = 0 is 595.45 ft above NAVD 88.
-    cam_z_ft = ground_ft - 595.45 + eye_m / FT
+    # Model heights from model_points are feet above NAVD 88 (map elevation 0), like the ground model.
+    cam_z_ft = ground_ft + eye_m / FT
     P, owner, _ = model_points(frame)
     de, dn = P[:, 0] - ce, P[:, 1] - cn
     dist_ft = np.hypot(de, dn)
@@ -115,6 +115,7 @@ def main(argv):
             tower_top[o_] = (float(az[i]), float(el[i]), float(dist_ft[i] * FT))
 
     img = Image.open(photo).convert("RGB")
+    orig_h = img.height
     if crop_top or crop_bot:
         img = img.crop((0, crop_top, img.width, img.height - crop_bot))
     scale = 1.0
@@ -122,11 +123,22 @@ def main(argv):
         scale = 3000.0 / img.width
         img = img.resize((3000, int(img.height * scale)))
     a = np.asarray(img).astype(np.float64)
+    # principal point: the centre of the original photograph, wherever it was cropped
+    cy = (orig_h / 2.0 - crop_top) * scale
     a = ndimage.median_filter(a, size=(3, 3, 1))
     H, W = a.shape[:2]
-    sky = np.median(a[: max(5, H // 40)], axis=0)
-    diff = np.sqrt(((a - sky[None]) ** 2).sum(axis=2))
+    # Sky edge: twilight skies change colour from top to bottom, so each pixel is compared with the smoothed sky a
+    # few rows above it (not with the top rows), and the edge must persist for several rows (stars, aircraft and
+    # sensor noise do not).
+    s = ndimage.gaussian_filter(a, sigma=(2.0, 2.0, 0))
+    gap, run = 8, 6
+    diff = np.zeros((H, W))
+    diff[gap:] = np.sqrt(((s[gap:] - s[:-gap]) ** 2).sum(axis=2))
     bad = diff > thr
+    ref = np.roll(s, gap, axis=0)  # ref[r] = the sky gap rows above row r
+    for k in range(1, run):
+        bad &= np.sqrt(((np.roll(s, -k, axis=0) - ref) ** 2).sum(axis=2)) > thr
+    bad[: max(gap + 2, H // 40)] = False
     first = np.where(bad.any(axis=0), bad.argmax(axis=0), -1).astype(float)
     first[first <= 2] = np.nan
     first[first < 0] = np.nan
@@ -139,7 +151,7 @@ def main(argv):
         e_u = env[np.round(az_u * 100).astype(int) % 36000]
         # pinhole: row from elevation, with the column's distance from the centre
         dx = np.radians(az_u - yaw)
-        rows = H / 2.0 - f * np.tan(np.radians(e_u) - math.radians(pitch)) / np.cos(dx) + u * math.tan(math.radians(roll))
+        rows = cy - f * np.tan(np.radians(e_u) - math.radians(pitch)) / np.cos(dx) + u * math.tan(math.radians(roll))
         rows[e_u <= -89] = np.nan
         return rows
 
@@ -150,15 +162,56 @@ def main(argv):
             return 1e6
         return float(np.median(np.abs(pr[ok] - first[ok])))
 
-    best = None
-    for yaw in np.arange(yaw0 - 25, yaw0 + 25, 0.25):
-        for hf in np.arange(max(5.0, hfov0 * 0.6), hfov0 * 1.4, max(0.5, hfov0 * 0.04)):
-            for pitch in (-2.0, 0.0, 2.0, 4.0):
-                cst = cost((yaw, pitch, 0.0, hf))
-                if best is None or cst < best[0]:
-                    best = (cst, (yaw, pitch, 0.0, hf))
-    res = optimize.minimize(cost, best[1], method="Nelder-Mead", options={"xatol": 1e-3, "fatol": 1e-3, "maxiter": 4000})
-    yaw, pitch, roll, hfov = res.x
+    landmarks = os.environ.get("P17_LANDMARKS", "")
+    if landmarks:
+        # Camera lined up by landmarks instead of by the whole skyline (the photograph's near buildings are not in
+        # the model): P17_LANDMARKS="<county id>:<column>,<county id>:<column>" gives the horizontal centre of two
+        # towers in the original photograph's pixels; P17_HORIZON="<row>" the lake horizon row there. The towers'
+        # model azimuths (mean over their vertices) fix yaw and field of view; the horizon (true dip from the eye
+        # height, with refraction) fixes pitch; roll 0. Every tower top is then an independent measurement.
+        cen = {}
+        for o_ in np.unique(owner):
+            m = owner == o_
+            zs = P[m, 2]
+            m = m & (P[:, 2] >= 0.85 * np.percentile(zs, 95))  # the tower's upper part, not its podium
+            cen[int(o_)] = math.degrees(math.atan2(np.mean(np.sin(np.radians(az[m]))), np.mean(np.cos(np.radians(az[m]))))) % 360
+        lm = [(int(x.split(":")[0]), float(x.split(":")[1]) * scale) for x in landmarks.split(",")]
+        (id1, u1), (id2, u2) = lm[:2]
+        a1, a2 = cen[id1], cen[id2]
+
+        def lm_err(params):
+            yaw_, hf_ = params
+            f_ = (W / 2.0) / math.tan(math.radians(hf_) / 2.0)
+            e1 = W / 2.0 + f_ * math.tan(math.radians(((a1 - yaw_ + 180) % 360) - 180)) - u1
+            e2 = W / 2.0 + f_ * math.tan(math.radians(((a2 - yaw_ + 180) % 360) - 180)) - u2
+            return e1 * e1 + e2 * e2
+        sol = optimize.minimize(lm_err, (yaw0, hfov0), method="Nelder-Mead", options={"xatol": 1e-6, "fatol": 1e-8, "maxiter": 8000})
+        yaw, hfov = sol.x
+        f0 = (W / 2.0) / math.tan(math.radians(hfov) / 2.0)
+        v_h = (float(os.environ["P17_HORIZON"]) - crop_top) * scale
+        dip = -math.degrees(math.sqrt(2 * eye_m * (1 - K) / R))
+        if os.environ.get("P17_HORIZON_DIST_M"):
+            # the row given is a far shore's water line at this distance, not the open-lake horizon
+            dh = float(os.environ["P17_HORIZON_DIST_M"])
+            dip = -math.degrees(eye_m / dh + dh * (1 - K) / (2 * R))
+        pitch = dip - math.degrees(math.atan((cy - v_h) / f0))
+        roll = 0.0
+
+        class _R:
+            pass
+        res = _R()
+        res.x = (yaw, pitch, roll, hfov)
+        res.fun = cost(res.x)
+    else:
+        best = None
+        for yaw in np.arange(yaw0 - 25, yaw0 + 25, 0.25):
+            for hf in np.arange(max(5.0, hfov0 * 0.6), hfov0 * 1.4, max(0.5, hfov0 * 0.04)):
+                for pitch in (-2.0, 0.0, 2.0, 4.0):
+                    cst = cost((yaw, pitch, 0.0, hf))
+                    if best is None or cst < best[0]:
+                        best = (cst, (yaw, pitch, 0.0, hf))
+        res = optimize.minimize(cost, best[1], method="Nelder-Mead", options={"xatol": 1e-3, "fatol": 1e-3, "maxiter": 4000})
+        yaw, pitch, roll, hfov = res.x
     f = (W / 2.0) / math.tan(math.radians(hfov) / 2.0)
     pr = predicted(res.x)
     names = {r_["bldg_id"]: r_["name"] for r_ in csv.DictReader(open(MATS, encoding="utf-8"))}
@@ -193,15 +246,15 @@ def main(argv):
         k = int(np.nanargmin(seg)) + lo
         row_photo = first[k]
         az_photo = (yaw + math.degrees(math.atan((k - W / 2.0) / f))) % 360
-        el_photo = pitch + math.degrees(math.atan((H / 2.0 - row_photo) * math.cos(math.radians(az_photo - yaw)) / f))
+        el_photo = pitch + math.degrees(math.atan((cy - row_photo) * math.cos(math.radians(az_photo - yaw)) / f))
         el_err = el_photo - tel
         az_err = ((az_photo - taz + 180) % 360) - 180
         rows_out.append({"county_id": bid, "name": names.get(str(bid), ""), "distance_m": round(tdist, 1),
                          "model_top_m": rec["top_incl_masts_m"], "model_el_deg": round(tel, 4), "photo_el_deg": round(el_photo, 4),
                          "el_err_deg": round(el_err, 4), "az_err_deg": round(az_err, 4),
                          "el_err_m_at_distance": round(math.tan(math.radians(el_err)) * tdist, 2)})
-        draw.ellipse([u - 4, H / 2.0 - f * math.tan(math.radians(tel - pitch)) - 4, u + 4, H / 2.0 - f * math.tan(math.radians(tel - pitch)) + 4], outline=(255, 255, 0), width=2)
-        draw.text((u + 6, H / 2.0 - f * math.tan(math.radians(tel - pitch)) - 22), (names.get(str(bid)) or str(bid))[:22], fill=(255, 255, 0), font=font)
+        draw.ellipse([u - 4, cy - f * math.tan(math.radians(tel - pitch)) - 4, u + 4, cy - f * math.tan(math.radians(tel - pitch)) + 4], outline=(255, 255, 0), width=2)
+        draw.text((u + 6, cy - f * math.tan(math.radians(tel - pitch)) - 22), (names.get(str(bid)) or str(bid))[:22], fill=(255, 255, 0), font=font)
     img.save(prefix + "_overlay.png")
     if rows_out:
         with open(prefix + "_tops.csv", "w", newline="", encoding="utf-8") as h:

@@ -97,6 +97,32 @@ def ensure_facade_material():
     tex = ensure_noise_texture()
     tools = unreal.AssetToolsHelpers.get_asset_tools()
     mat = tools.create_asset("M_W1529_P17_Facade", MAT_ROOT[:-1], unreal.Material, unreal.MaterialFactoryNew())
+    _facade_graph(mat, tex)
+    return mat
+
+
+def _mask(mat, x, y, channels):
+    """A component mask with every channel set explicitly (unset channels keep defaults that are not all off)."""
+    node = _mel().create_material_expression(mat, unreal.MaterialExpressionComponentMask, x, y)
+    for c in "rgba":
+        node.set_editor_property(c, c in channels)
+    return node
+
+
+def rebuild_facade_material():
+    """Rebuild the parent's graph in place (its instances keep their values by parameter name) and report the
+    compile result. Fixes the first build's masks, which carried channels they were not meant to."""
+    mat = unreal.EditorAssetLibrary.load_asset(PARENT)
+    _mel().delete_all_material_expressions(mat)
+    _facade_graph(mat, ensure_noise_texture())
+    try:
+        st = _mel().get_statistics(mat)
+        return {"ok": True, "ps": st.num_pixel_shader_instructions, "samplers": st.num_samplers}
+    except Exception as e:
+        return {"ok": False, "error": str(e)}
+
+
+def _facade_graph(mat, tex):
     mel = _mel()
     uv = mel.create_material_expression(mat, unreal.MaterialExpressionTextureCoordinate, -1400, 0)
     objpos = mel.create_material_expression(mat, unreal.MaterialExpressionObjectPositionWS, -1400, 100)
@@ -121,13 +147,9 @@ def ensure_facade_material():
     mel.connect_material_expressions(objpos, "", custom, "ObjPos")
     for name, node in params.items():
         mel.connect_material_expressions(node, "", custom, name)
-    glass_mask = mel.create_material_expression(mat, unreal.MaterialExpressionComponentMask, -700, 100)
-    glass_mask.set_editor_property("r", True)
-    fade = mel.create_material_expression(mat, unreal.MaterialExpressionComponentMask, -700, 200)
-    fade.set_editor_property("g", True)
-    cell_uv = mel.create_material_expression(mat, unreal.MaterialExpressionComponentMask, -700, 300)
-    cell_uv.set_editor_property("b", True)
-    cell_uv.set_editor_property("a", True)
+    glass_mask = _mask(mat, -700, 100, "r")
+    fade = _mask(mat, -700, 200, "g")
+    cell_uv = _mask(mat, -700, 300, "ba")
     for node in (glass_mask, fade, cell_uv):
         mel.connect_material_expressions(custom, "", node, "")
     sample = mel.create_material_expression(mat, unreal.MaterialExpressionTextureSampleParameter2D, -500, 300)
@@ -146,10 +168,8 @@ def ensure_facade_material():
     fmetal = _scalar(mat, "FrameMetallic", 0.0, -500, 900)
     half = mel.create_material_expression(mat, unreal.MaterialExpressionConstant, -300, 360)
     half.set_editor_property("r", 0.5)
-    r_ch = mel.create_material_expression(mat, unreal.MaterialExpressionComponentMask, -300, 300)
-    r_ch.set_editor_property("r", True)
-    g_ch = mel.create_material_expression(mat, unreal.MaterialExpressionComponentMask, -300, 420)
-    g_ch.set_editor_property("g", True)
+    r_ch = _mask(mat, -300, 300, "r")
+    g_ch = _mask(mat, -300, 420, "g")
     mel.connect_material_expressions(sample, "RGB", r_ch, "")
     mel.connect_material_expressions(sample, "RGB", g_ch, "")
     one_minus = mel.create_material_expression(mat, unreal.MaterialExpressionOneMinus, -300, 200)
@@ -191,7 +211,6 @@ def ensure_facade_material():
     mel.connect_material_property(metal, "", unreal.MaterialProperty.MP_METALLIC)
     mat.set_editor_property("used_with_nanite", True)
     mel.recompile_material(mat)
-    return mat
 
 
 def ensure_instance(name, params):
