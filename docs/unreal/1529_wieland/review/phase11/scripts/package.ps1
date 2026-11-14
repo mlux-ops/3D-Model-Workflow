@@ -9,7 +9,14 @@
 #   everything they use, into D:\Wieland1529_delivery\package\1529_Wieland_UE5.9_Delivery_2026-11-14\build\.
 # - Every 5 s logs free commit memory and the memory of the packaging processes; under $Floor GB it stops packaging
 #   (the editor, which hosts the agent, must not be starved).
-param([double]$MinFree = 30, [double]$Floor = 12)
+# - Compiler (found at 06:45, J11): the project needs a small game program compiled, and Unreal's build tool finds
+#   compilers only through Visual Studio's installation registry, which on this machine lists no installation (vswhere
+#   reports none), although three complete MSVC compilers are on disk. The build tool also accepts compilers from an
+#   "AutoSDK" folder named by the environment variable UE_SDKS_ROOT, laid out as <root>\HostWin64\Win64\VS2026\<version>
+#   and \VS2022\<version>. With -AutoSdkRoot, that folder is made of directory links (junctions) to the installed
+#   compilers, and UE_SDKS_ROOT is set for this process and its children only. Nothing is installed, nothing in the
+#   registry or in Windows' own settings is changed.
+param([double]$MinFree = 30, [double]$Floor = 12, [string]$AutoSdkRoot = '')
 $ErrorActionPreference = 'Stop'
 $Plan = 'E:\Claude\3D-Model-Workflow\.claude\worktrees\1529-wieland-scene-plan-e84a03\docs\unreal\1529_wieland'
 $Proj = 'D:\Unreal_Engine_Projects\Wieland1527 5.9\Wieland1527.uproject'
@@ -41,6 +48,20 @@ Say ("packaging asked; free commit {0} GB (line {1})" -f $free, $MinFree)
 if ($free -lt $MinFree) { Say 'STOP: under the line; not started'; exit 2 }
 if (Get-Process -Name 'UnrealEditor-Cmd' -ErrorAction SilentlyContinue) { Say 'STOP: a packaging or cook process is already running'; exit 3 }
 
+if ($AutoSdkRoot) {
+    $links = @(
+        @{ Kit = 'VS2026'; Version = '14.50.35717'; Target = 'C:\Program Files (x86)\Microsoft Visual Studio\18\BuildTools\VC\Tools\MSVC\14.50.35717' },
+        @{ Kit = 'VS2022'; Version = '14.44.35207'; Target = 'C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\VC\Tools\MSVC\14.44.35207' })
+    foreach ($l in $links) {
+        $dir = Join-Path $AutoSdkRoot ('HostWin64\Win64\{0}' -f $l.Kit)
+        $link = Join-Path $dir $l.Version
+        New-Item -ItemType Directory -Force -Path $dir | Out-Null
+        if (-not (Test-Path $link)) { & cmd.exe /c mklink /J "$link" "$($l.Target)" | Out-Null }
+        Say ('compiler link {0} -> {1}: cl.exe present {2}' -f $link, $l.Target, (Test-Path (Join-Path $link 'bin\Hostx64\x64\cl.exe')))
+    }
+    $env:UE_SDKS_ROOT = $AutoSdkRoot
+    Say ('UE_SDKS_ROOT={0} for this process and its children only' -f $AutoSdkRoot)
+}
 Copy-Item -Path $Ini -Destination $Backup -Force
 Say ("DefaultEngine.ini copied to {0} (SHA-256 {1})" -f $Backup, (Get-FileHash $Backup -Algorithm SHA256).Hash)
 $text = [IO.File]::ReadAllText($Ini)
@@ -53,7 +74,10 @@ $uatLog = Join-Path $Logs 'package_uat.log'
 $uatArgs = @('BuildCookRun', ('-project="{0}"' -f $Proj), '-noP4', '-platform=Win64', '-clientconfig=Development',
           '-build', '-cook', '-stage', '-pak', '-iostore', '-compressed', '-prereqs', '-archive',
           ('-archivedirectory="{0}"' -f $Archive), '-map=/Game/Wieland1529/L_Site_M4+/Game/Wieland1529/Delivery/L_W1529_Profile',
-          '-unattended', '-utf8output', '-nocompileeditor', '-nodebuginfo')
+          '-unattended', '-utf8output', '-nocompileeditor', '-nodebuginfo',
+          # once the project counts as a code project, the tool looks for a project editor program that does not
+          # exist (found at 06:48, J11); the engine's own editor program cooks it instead
+          '-unrealexe="D:\Games\UE_5.9\Engine\Binaries\Win64\UnrealEditor-Cmd.exe"')
 Say ('RunUAT ' + ($uatArgs -join ' '))
 if (-not (Test-Path $Mem)) { 'time,free_commit_gb,cook_processes_gb,shader_workers_gb,shader_workers,editor_gb' | Out-File -FilePath $Mem -Encoding ascii }
 $started = Get-Date
