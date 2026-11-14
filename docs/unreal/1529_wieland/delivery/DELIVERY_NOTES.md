@@ -15,7 +15,8 @@ Words used the same way throughout:
 | Folder or file | What it is |
 |---|---|
 | `DELIVERY_NOTES.md` | This file. |
-| `LICENCES.csv` | One row for every outside asset group in the packaged build, with its source and licence as recorded (section 8). |
+| `LICENCES.csv` | One row for every group of assets in the packaged build, with its source and licence as recorded (section 8). |
+| `LICENCES_per_asset.csv` | One row for every one of the 3,543 assets packed in the build, with its group and licence as recorded. |
 | `stills\` | Twelve path-traced pictures, 3,840 by 2,160 pixels (section 2). |
 | `video\` | The animation: two 30-second moves and the 60-second film that joins them (section 3). |
 | `comparison\` | For each move, one frame made path-traced beside the same frame made real-time. |
@@ -46,7 +47,7 @@ Things to know when watching:
 
 - The lower level of the triplex has daylight only through small windows; the camera's exposure is raised there, so it reads brighter than it would to the eye.
 - At about 19.9 seconds of the triplex move the camera passes through the plane of the closed glass door onto the patio; reflections in the glass vanish at that moment.
-- The `comparison\` folder holds, for one frame of each move, the real-time frame and the same frame path-traced (1,024 samples): triplex frame 180 (the living room looking to the rear patio) and penthouse frame 300 (the living room). The penthouse pair agrees closely, except a slatted panel beside the opening, which the Path Tracer draws dark with a bright green-yellow strip. The triplex path-traced frame is grainier and darker than the stills and draws the living-room floor as a flat light surface instead of wood planks; the likeliest cause is the simplified copy of the floor mesh that the Path Tracer follows (section 2), but it was not proven. The twelve stills, made the same way from a fixed camera, show wood floors where floors are visible.
+- The `comparison\` folder holds, for one frame of each move, the real-time frame and the same frame path-traced (1,024 samples): triplex frame 180 (the living room looking to the rear patio) and penthouse frame 300 (the living room). The penthouse pair agrees closely, except a slatted panel beside the opening, which the Path Tracer draws dark with a bright green-yellow strip. The triplex path-traced frame is grainier and darker than the stills and draws the living-room floor as a flat light surface instead of wood planks; the likeliest cause is the simplified copy of the floor mesh that the Path Tracer follows (section 2), but it was not proven. The twelve stills, made with the same renderer settings from a fixed camera, show wood floors where floors are visible.
 
 ## 4. The packaged build: how to open and run
 
@@ -56,7 +57,7 @@ Copy the `build\` folder anywhere on a Windows 10 or 11 computer (64-bit) and do
 |---|---|
 | `Run_Walkthrough_2560x1440.bat` | The walk-through, full screen at 2,560 by 1,440, with the real-time settings measured in section 5. |
 | `Run_Walkthrough_Window_1920x1080.bat` | The same in a 1,920 by 1,080 window, for a smaller screen. |
-| `Run_Profile_FixedPaths.bat` | Plays the fixed camera paths of section 5 in a loop, records the frame times and closes by itself after about ten minutes. The record is written to `build\Windows\Wieland1527\Saved\Profiling\CSV\`. |
+| `Run_Profile_FixedPaths.bat` | Plays the fixed camera paths of section 5 in a loop, records 60,000 frames and closes by itself (13 minutes on the computer it was measured on). The record is written to `build\Windows\Wieland1527\Saved\Profiling\CSV\`. |
 
 Controls in the walk-through: the mouse looks around; W, A, S, D move; E or Space rises, Q or C sinks. The viewer flies (no gravity). Alt+F4 closes the program. The walk-through starts on the west sidewalk at station S1, facing the building. The interior level of each of the four apartments is loaded when the viewer enters that apartment and unloaded when the viewer leaves it (Unreal's streaming boxes, set up in Phase 6); from outside, all four are loaded.
 
@@ -67,6 +68,29 @@ What the computer needs: a graphics card for DirectX 12 with hardware ray tracin
 The build is the "Development" kind, not the "Shipping" kind: it keeps the engine's console (key `~`) and the frame-time recorder, which the profile needs. Nothing else differs for the viewer.
 
 The switchable options of the scene (Unreal's Variant Manager lists: "Surroundings", "Revit site objects", "Site ground", "Season", and the Phase 12 material set) cannot be switched in the build; it shows the options that are saved in the levels. They stay switchable in the Unreal project.
+
+## 5. The final profile of the packaged build
+
+The plan's lines for the real-time build: on the fixed camera paths, a 95th-percentile frame time of 16.67 ms or less (60 pictures a second for 95 frames in 100) at 2,560 by 1,440 pixels, and peak video memory of 13.0 GB or less. Both are met.
+
+The fixed paths are those of the plan and of Phase 9: a 60-second walk along the west sidewalk at 1.4 m a second, 1.6 m eye height, keeping the front door in the middle of the picture; 10-second holds at stations S1, S2 and S6; a 30-second walk through the triplex with a 10-second hold at design view D5; a 20-second walk through the penthouse with a hold at D2; and 10 seconds on the roof deck. Each part starts with an 8-second wait at its first point so that the apartment's interior has loaded, and the waits are not counted. The program played the whole 202-second sequence in a loop; the first play warms the program up, and the second play is the profile. Settings: full screen 2,560 by 1,440, 67 % of the pixels computed and enlarged by Temporal Super Resolution, every quality group at "Epic", texture pool 4,000 MB, no frame-rate cap, `r.RayTracing.Nanite.Mode` 0 (all read back from the program's own log).
+
+| Path or hold (second play) | Frames | Mean (ms) | 95th percentile (ms) | Worst (ms) | Graphics card mean (ms) |
+|---|---|---|---|---|---|
+| Street walk, 60 s | 4,300 | 13.96 | 15.19 | 24.20 | 12.35 |
+| Hold S1 | 695 | 14.39 | 15.45 | 23.39 | 12.79 |
+| Hold S2 | 725 | 13.78 | 14.94 | 20.56 | 12.13 |
+| Hold S6 | 750 | 13.33 | 14.47 | 20.44 | 11.78 |
+| Triplex walk, 30 s | 2,485 | 12.07 | 15.47 | 21.87 | 10.57 |
+| Hold D5 | 857 | 11.67 | 12.88 | 19.99 | 10.08 |
+| Penthouse walk indoors, 20 s | 1,506 | 13.28 | 15.84 | 18.76 | 11.73 |
+| Hold D2 | 756 | 13.24 | 14.46 | 17.24 | 11.63 |
+| Roof deck walk, 10 s | 757 | 13.21 | 14.71 | 15.94 | 11.66 |
+| **All paths and holds** | **12,831** | **13.25** | **15.19** | **24.20** | **11.68** |
+
+No frame of the second play took longer than 33.3 ms; 110 of 12,831 frames took longer than 16.67 ms. The first and third plays agree with the second within 0.1 ms on the 95th percentile. Video memory: the program's own reading peaked at 5,479 MB over the whole run (5,461 MB in the second play); Windows reported 5,527 MB more in use on the card at the peak than before the program started.
+
+Conditions to know: the Unreal editor stayed open during the run, on an empty level and not drawing, because it hosted the agent that ran the measurement; it held 6.3 GB of the card's 16 GB, so the program had about 10 GB of video memory available. The figures are a little higher than the editor's figures of Phase 9 (for example 12.82 ms on the street walk), which computed the same number of pixels in a smaller window; these packaged figures are the ones at the true picture size. The full record (60,000 frames) and the program's log are in `profile\`.
 
 ## 6. What is measured, what is assumed, and the known differences
 
@@ -110,9 +134,16 @@ Nine differences were listed for the owner to mark "fix" or "accept" (`review\ph
 
 Other limits: nine of the nineteen tolerances of the reference views could not be checked because no site photographs exist yet (the site visit has not been made); the design views were not checked against Revit views; the soak test of Phase 9 ran 42 of 120 walks.
 
+## 7. Where everything is, and how to check it
+
+- **This package** is delivered as one zip file, `1529_Wieland_UE5.9_Delivery_2026-11-14.zip`. Its size and SHA-256 checksum are written beside it (`.sha256.txt`) on `D:\Wieland1529_delivery\` and in the Google Drive folder `My Drive\Folders\3D Model Workflow\3D Models\1529_Wieland_UE5.9_Delivery_2026-11-14\`. Inside the zip, `MANIFEST_SHA256.txt` lists the size and checksum of every file; on Windows a file can be checked with `certutil -hashfile <file> SHA256`.
+- **The Unreal project** is archived separately as `1529_Wieland_UE5.9_Project_Archive_2026-11-14.zip` (the project file, `Config`, `Content` and `ImportStaging`, which holds the Revit/Datasmith exports; not the folders the engine rebuilds by itself: `Saved`, `Intermediate`, `DerivedDataCache`, `Backups`, `Binaries`), in the same two places, with its checksum beside it.
+- **The animation frames** (1,800 PNG files, 15.6 GB) stay on `D:\Wieland1529_delivery\animation_frames\`, with the path-traced comparison frames and, set aside, the test frames of the first attempt.
+- The working records of this phase (journal, scripts, checks) are in the plan's repository, `docs\unreal\1529_wieland\phase11_results.md` and `review\phase11\`.
+
 ## 8. Licences of outside assets in the packaged build
 
-`LICENCES.csv` has one row for every group of outside assets that the packaged build contains, found by listing the cooked asset folders of the build against the project's licence records (`asset_licences.csv`, `asset_licence_groups.csv`, `asset_downloads.csv`, `SOURCES.md` in the plan folder). "Not recorded" means that the project holds no record of where the asset came from or of its terms; those rows are listed for the owner to confirm before the build is shown outside the owner's own office.
+`LICENCES.csv` has one row for every group of outside assets that the packaged build contains, found by reading the build's own list of packed files (Manifest_UFSFiles_Win64.txt) against the project's licence records (`asset_licences.csv`, `asset_licence_groups.csv`, `asset_downloads.csv`, `SOURCES.md` in the plan folder). "Not recorded" means that the project holds no record of where the asset came from or of its terms; those rows are listed for the owner to confirm before the build is shown outside the owner's own office.
 
 The build packs 3,543 assets. Every one of them falls in a group of the project's licence record, or is this project's own work, or is Unreal Engine content. `LICENCES.csv` has one row per group (17 groups); `LICENCES_per_asset.csv` has one row per packed asset with its group and licence as recorded.
 
