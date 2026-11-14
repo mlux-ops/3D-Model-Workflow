@@ -71,6 +71,7 @@ def viewshed(z, x0, y1, cell, east, north, eye_ft, step_deg, max_ft):
     vis = np.zeros((h, w), np.uint8)
     best = np.full(az.shape, -np.inf)
     top_angle = np.full((h, w), -np.inf, np.float32)
+    front = np.full((h, w), np.inf, np.float32)  # horizon angle just in front of the cell, lowest over the rays
     ds = np.arange(cell, max_ft, cell / 2.0)
     for d in ds:
         e = east + se * d
@@ -88,14 +89,22 @@ def viewshed(z, x0, y1, cell, east, north, eye_ft, step_deg, max_ft):
         seen = good & (ang >= best)
         vis[r[seen], c[seen]] = 1
         np.maximum.at(top_angle, (r[seen], c[seen]), ang[seen].astype(np.float32))
+        np.minimum.at(front, (r[good], c[good]), best[good].astype(np.float32))
         best = np.where(good, np.maximum(best, ang), best)
-    return vis, top_angle
+    return vis, top_angle, front
 
 
 def footprints(path, frame_box):
     with open(path) as handle:
         data = json.load(handle)
     out = []
+    if "features" in data and data["features"] and "attributes" in data["features"][0]:
+        # Cook County 2022 footprints, Esri JSON in State Plane East feet (EPSG 6455): rings used as they are.
+        for f in data["features"]:
+            rings = f.get("geometry", {}).get("rings") or []
+            if rings:
+                out.append((f["attributes"], [[(e, n) for e, n in ring] for ring in rings]))
+        return out
     for f in data["features"]:
         p = f.get("properties", {})
         geom = f.get("geometry")
@@ -146,9 +155,10 @@ def main(argv):
         ground = float(dtm[row, col])
         eye_ft = frame.origin_height_ft + zc / 30.48006 if zc is not None else ground + 160.0 / 30.48006
         max_ft = 40000.0 if name.startswith("D1") else 12000.0
-        vis, top = viewshed(dsm, x0, y1, cell, east, north, eye_ft, step, max_ft)
-        vis_bare, _ = viewshed(bare, x0, y1, cell, east, north, eye_ft, step, max_ft)
-        np.savez_compressed(os.path.join(out, "vis_%s.npz" % name), vis=vis, vis_bare=vis_bare, top=top)
+        vis, top, _ = viewshed(dsm, x0, y1, cell, east, north, eye_ft, step, max_ft)
+        vis_bare, top_bare, front_bare = viewshed(bare, x0, y1, cell, east, north, eye_ft, step, max_ft)
+        np.savez_compressed(os.path.join(out, "vis_%s.npz" % name), vis=vis, vis_bare=vis_bare, top=top, top_bare=top_bare,
+                            front_bare=front_bare)
         # Per building.
         rows = []
         flat = ids.ravel()
@@ -157,8 +167,12 @@ def main(argv):
             summary.setdefault(name, {})[label] = counts
         counts, counts_bare = summary[name]["trees"], summary[name]["bare"]
         maxang = np.full(len(fps) + 1, -np.inf)
-        sel = vis.ravel() > 0
-        np.maximum.at(maxang, flat[sel], top.ravel()[sel])
+        sel = vis_bare.ravel() > 0
+        np.maximum.at(maxang, flat[sel], top_bare.ravel()[sel])
+        horizon = np.full(len(fps) + 1, np.inf)
+        fb = front_bare.ravel()
+        okf = np.isfinite(fb)
+        np.minimum.at(horizon, flat[okf], fb[okf])
         height = dsm - dtm
         hmax = np.zeros(len(fps) + 1)
         np.maximum.at(hmax, flat, np.nan_to_num(height.ravel(), nan=0.0))
@@ -170,14 +184,22 @@ def main(argv):
             cn = sum(n for _, n in rings[0]) / len(rings[0])
             dist = math.hypot(ce - east, cn - north) * FT
             azg = math.degrees(math.atan2(ce - east, cn - north)) % 360.0
+            top_m = hmax[k] * FT
+            vis_h = ""
+            if np.isfinite(maxang[k]) and np.isfinite(horizon[k]):
+                vis_h = round(max(0.0, (math.tan(maxang[k]) - math.tan(horizon[k])) * dist), 1)
             rows.append({
-                "bldg_id": p.get("bldg_id"), "name": (p.get("bldg_name1") or "").strip(),
+                "bldg_id": p.get("bldg_id", p.get("OBJECTID")), "name": (p.get("bldg_name1") or "").strip(),
+                "ground_z_ft": p.get("Ground_Z", ""), "county_max_point_ft": p.get("Max_Point", ""),
+                "centroid_east_ft": round(ce, 1), "centroid_north_ft": round(cn, 1),
                 "address": " ".join(str(p.get(k2) or "") for k2 in ("f_add1", "pre_dir1", "st_name1", "st_type1")).strip(),
                 "stories": p.get("stories") or p.get("no_stories"), "year_built": p.get("year_built"),
                 "distance_m": round(dist, 1), "grid_azimuth_deg": round(azg, 2),
                 "roof_height_m_dsm6ft": round(hmax[k] * FT, 1),
                 "visible_cells": int(counts[k]), "visible_cells_bare_trees": int(counts_bare[k]),
                 "max_elev_angle_deg": round(math.degrees(maxang[k]), 3) if np.isfinite(maxang[k]) else "",
+                "horizon_angle_in_front_deg": round(math.degrees(horizon[k]), 3) if np.isfinite(horizon[k]) else "",
+                "visible_height_m_bare": vis_h,
             })
         rows.sort(key=lambda r: -r["visible_cells_bare_trees"])
         with open(os.path.join(out, "visible_buildings_%s.csv" % name), "w", newline="", encoding="utf-8") as handle:
