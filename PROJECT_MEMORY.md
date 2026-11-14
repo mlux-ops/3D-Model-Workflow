@@ -1443,3 +1443,7 @@ Errors and surprises of the phase, each with cause, fix and status. "Jn" is the 
 - Fix: the script now counts any session record written after it starts, including resumed ones and those in subfolders. Re-armed at 04:55. A new panel prompt, `KICKOFF_PANEL_PHASE11_RESUME.md`, resumes Phase 11 at J7.
 - Prevention: never exclude an earlier session record when detecting a panel agent; the panel may resume it.
 - Status: fixed; to be confirmed when the panel agent starts.
+
+### Supervision ended -- 2026-11-14 11:53 (supervising session)
+
+- The build is complete: Phase 11 DONE at 08:31. At the owner's request the keep-alive's Startup entry (`wieland_keepalive.cmd`) was deleted, and the keep-alive and watcher processes were stopped. Nothing restarts at sign-in. The scripts remain in the scratchpad `watch\` folder if supervision is ever needed again.
