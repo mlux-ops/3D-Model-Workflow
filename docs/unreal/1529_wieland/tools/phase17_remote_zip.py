@@ -21,7 +21,7 @@ import urllib.request
 import zipfile
 
 BASE = "https://chf.isgs.illinois.edu/distribute/district1/cook/2022/cook-las%d.zip"
-UA = "Wieland1529-site-model/1.0 (private architectural visualisation; contact info@shb.studio)"
+UA = "Wieland1529-site-model/1.0 (private architectural visualisation)"
 
 
 class RangeFile:

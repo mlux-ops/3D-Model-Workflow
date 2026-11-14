@@ -17,7 +17,7 @@ import urllib.parse
 import urllib.request
 
 URL = "https://overpass-api.de/api/interpreter"
-UA = "Wieland1529-site-model/1.0 (private architectural visualisation; info@shb.studio)"
+UA = "Wieland1529-site-model/1.0 (private architectural visualisation, one query at a time)"
 QUERY = """[out:json][timeout:120];
 (
   way["building"]({s},{w},{n},{e});
