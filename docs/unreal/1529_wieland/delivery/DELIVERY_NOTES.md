@@ -46,7 +46,7 @@ Things to know when watching:
 
 - The lower level of the triplex has daylight only through small windows; the camera's exposure is raised there, so it reads brighter than it would to the eye.
 - At about 19.9 seconds of the triplex move the camera passes through the plane of the closed glass door onto the patio; reflections in the glass vanish at that moment.
-- The `comparison\` frames show how the real-time renderer differs from the Path Tracer on the same frame (section 6).
+- The `comparison\` folder holds, for one frame of each move, the real-time frame and the same frame path-traced (1,024 samples): triplex frame 180 (the living room looking to the rear patio) and penthouse frame 300 (the living room). The penthouse pair agrees closely, except a slatted panel beside the opening, which the Path Tracer draws dark with a bright green-yellow strip. The triplex path-traced frame is grainier and darker than the stills and draws the living-room floor as a flat light surface instead of wood planks; the likeliest cause is the simplified copy of the floor mesh that the Path Tracer follows (section 2), but it was not proven. The twelve stills, made the same way from a fixed camera, show wood floors where floors are visible.
 
 ## 4. The packaged build: how to open and run
 
