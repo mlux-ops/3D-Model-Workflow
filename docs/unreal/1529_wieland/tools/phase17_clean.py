@@ -61,6 +61,7 @@ SNAP_DEG = 5.0 if ZONE12 else 12.0
 FIT_P90_M = 0.5 if ZONE12 else 1.0  # to choose the form; the acceptance (0.3 m, 1 m) is measured after, by the check
 LEVEL_MIN_FT2 = float(os.environ.get("P17_MIN_AREA", "43" if ZONE12 else "150"))
 MERGE_M = 0.6 if ZONE12 else 0.75
+TOWER_MERGE_M = float(os.environ.get("P17_TOWER_MERGE", "2.0"))  # towers: levels closer than this are one
 BIG_FT2 = 150.0 if ZONE12 else 1500.0
 STRUCT_MIN_FT2 = 43.0   # 4 sq m
 STRUCT_MIN_M = 1.5
@@ -391,8 +392,14 @@ def fit_part(pts, qm, Xg, Yg, ref, addons=True, full=None, planes=None, crown=Fa
         lab, nl = ndimage.label(ndimage.binary_opening(above, iterations=1))
         for i in range(1, nl + 1):
             comp = lab == i
-            if comp.sum() >= STRUCT_MIN_FT2:
+            # A dormer or roof item: 4 sq m or more, and at most 4 m above the planes (a tower shaft standing on a
+            # pitched podium is not a dormer: the part then fails, and the stepped path builds it).
+            if comp.sum() >= STRUCT_MIN_FT2 and float(np.percentile(ref[comp] - zen[comp], 90)) <= 4.0:
                 raised |= comp
+            elif comp.sum() >= STRUCT_MIN_FT2:
+                return None
+        if raised.sum() > 0.25 * full.sum():
+            return None
     judge = qm & ~ndimage.binary_dilation(raised, iterations=1)
     if judge.sum() < 20:
         return None
@@ -591,6 +598,15 @@ def build(bid, base, frame, county, dtm6, out):
     else:
         PE = PN = PZ = pcc = prr = None
         rgrid, refz = None, med
+    if rgrid is not None and not ZONE12:
+        # Towers: the 1 ft surface model is speckled or smoothed over many tall roofs; the levels are grouped on the
+        # higher of it and the returns (scan-line gaps closed over 3 by 3 ft, then a 3 by 3 median), as the earlier
+        # builder's kept form did. Where no return lies within 3 ft, the surface model alone.
+        rc = ndimage.median_filter(ndimage.grey_closing(np.where(np.isfinite(rgrid), rgrid, -50.0), size=(3, 3)), size=3)
+        near_ret = ndimage.binary_dilation(np.isfinite(rgrid), iterations=3)
+        hm = np.where(near_ret & (rc > -40.0), np.maximum(med, rc), med)
+        med0 = np.where(bmask, hm, 0.0)
+        roofz = np.where(bmask, ndimage.grey_opening(med0, size=(5, 5)), 0.0)
     parts_rec = []
 
     # ---- pitched parts
@@ -665,7 +681,7 @@ def build(bid, base, frame, county, dtm6, out):
                 if fit is not None:
                     # The same planes tried over the whole footprint part that holds most of q: kept when they fit it.
                     for bp in bpolys:
-                        if bp is not q and bp.intersection(q).area >= 0.3 * q.area:
+                        if bp is not q and bp.intersection(q).area >= 0.3 * q.area and q.area >= 0.5 * bp.area:
                             fb = fit_poly(bp, True, fit[0])
                             if fb is not None:
                                 q, fit = bp, fb
@@ -710,7 +726,48 @@ def build(bid, base, frame, county, dtm6, out):
             else:
                 merged.append([t])
         area_of = dict(zip(vals.tolist(), counts.tolist()))
+        grp_area = [sum(area_of.get(t, 0) for t in grp) for grp in merged]
         tops = [max(grp, key=lambda t: area_of.get(t, 0)) for grp in merged]
+        if not ZONE12:
+            # Towers: levels closer than one storey (3.5 m) are one level, unless both have a big flat roof of their
+            # own; so a taper becomes a few clean setbacks, not dozens of half-metre terraces.
+            kept, karea = [], []
+            for t, a in zip(tops, grp_area):
+                # (a small level on a large one, under a quarter of its area, is a rooftop structure: kept apart)
+                if kept and t - kept[-1] < TOWER_MERGE_M and not (a >= BIG_FT2 and karea[-1] >= BIG_FT2) and a >= 0.25 * karea[-1]:
+                    if a > karea[-1]:
+                        kept[-1] = t
+                    karea[-1] += a
+                else:
+                    kept.append(t)
+                    karea.append(a)
+            tops = kept
+    # Parts standing well above every level found (a tower shaft whose roof cells are too speckled to pass as flat)
+    # add levels of their own from all their cells.
+    for _ in range(3):
+        if not tops:
+            break
+        tarr = np.array(tops)
+        near_top = tarr[np.abs(roofz[..., None] - tarr[None, None, :]).argmin(axis=-1)]
+        high = fmask & (roofz > near_top + 3.0)
+        lab_h, nh = ndimage.label(high)
+        added = False
+        for k in range(1, nh + 1):
+            comp = lab_h == k
+            if comp.sum() < max(LEVEL_MIN_FT2, BIG_FT2):
+                continue
+            qv = np.round(roofz[comp] * 2.0) / 2.0
+            vv, cn = np.unique(qv, return_counts=True)
+            new_t = [float(v) for v, a in zip(vv, cn) if a >= LEVEL_MIN_FT2]
+            if not new_t:
+                new_t = [float(np.median(roofz[comp]))]
+            for t in new_t:
+                if min(abs(t - x) for x in tops) >= (MERGE_M if ZONE12 else 3.5):
+                    tops.append(t)
+                    added = True
+        tops.sort()
+        if not added:
+            break
     level = np.full((h, w), -1, np.int32)
     if tops:
         tarr = np.array(tops)
@@ -719,6 +776,9 @@ def build(bid, base, frame, county, dtm6, out):
             own = flat & (level == i)
             if own.sum() >= max(LEVEL_MIN_FT2 * 0.5, 10):
                 tops[i] = round(float(np.median(roofz[own])), 2)
+    if os.environ.get("P17_DEBUG"):
+        print("  tops", tops, "fmask", int(fmask.sum()), "flat", int(flat.sum()), "pitched cells", int(pitched_mask.sum()),
+              "footprints", [round(q.area) for q in bpolys], "bmask", int(bmask.sum()))
     d1e, d1n = frame.map_from_level(T.D1[0], T.D1[1])
 
     def drop(e, n):
@@ -898,9 +958,10 @@ def build(bid, base, frame, county, dtm6, out):
                     band_poly = pq.difference(pq.buffer(-2.5, join_style=2))
                     bm = poly_mask(band_poly, x0, y1, w, h) & bmask
                     if bm.sum() >= 20:
-                        rel = med[bm] - t
+                        rel = (med if ZONE12 else np.maximum(med, refz))[bm] - t
                         hp = float(np.percentile(rel, 80))
-                        if 0.3 <= hp <= 2.5 and float(np.mean(rel > 0.5 * hp)) >= 0.5:
+                        # Towers: crown screens around the roof are parapets too (up to 10 m).
+                        if 0.3 <= hp <= (2.5 if ZONE12 else 10.0) and float(np.mean(rel > 0.5 * hp)) >= 0.5:
                             th_ft = float(np.sum(rel > 0.5 * hp)) / max(pq.exterior.length, 1.0)
                             th_ft = min(max(th_ft, 0.2 / FT), 0.6 / FT)
                             par = (round(hp, 2), round(th_ft * FT, 2))
@@ -1073,6 +1134,7 @@ def build(bid, base, frame, county, dtm6, out):
            "placed_top_m": round(top_all - drop(c.x, c.y), 2), "triangles": len(mesh.t),
            "mast_source": mast_source, "height_source": p["height_source"], "returns": pc is not None,
            "tree_cells_replaced": p["veg_cells"], "plan_area_ft2": round(float(bmask.sum()), 0),
+           "noise_flag": len(set(pr["top_m"] for pr in prisms)) > 25 or len(structures) > 40,
            "masts": masts, "prisms": prisms, "wall_shifts_m": wall_shifts, "pitched": parts_rec, "structures": structures}
     return rec
 

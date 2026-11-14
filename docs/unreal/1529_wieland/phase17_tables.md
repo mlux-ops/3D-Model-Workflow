@@ -4,113 +4,122 @@ Companion to `phase17_results.md`. Heights are above the scan's ground at each b
 
 ## Skyline towers (beyond 1 km, 60 m or taller)
 
-{"n": 103, "with_returns": 95, "roof_1m": 80, "roof_n": 93, "high_1m": 52, "high_n": 93, "plan_2m": 84, "plan_n": 95, "mast_1m": 37, "mast_n": 37}
+{"n": 112, "with_returns": 105, "roof_1m": 96, "roof_n": 104, "high_1m": 77, "high_n": 104, "plan_2m": 97, "plan_n": 105, "mast_1m": 37, "mast_n": 37}
 
 | Tower (county id) | Distance (m) | Main roof modelled (m) | Measured (m) | Error (m) | Highest structure modelled (m) | Measured (m) | Error (m) | Top incl. masts (m) | Mast error (m) | Plan edge mean (m) | Built form |
 |---|---|---|---|---|---|---|---|---|---|---|---|
-| Willis Tower (889662) | 3503 | 442.03 | 441.86 | 0.17 | 444.12 | 484.50 | -40.38 | 526.90 | 0.00, 0.00, 0.00 | 1.26 | stepped (14 levels); pitched; 34 rooftop structures; 3 masts |
-| 875 N Michigan (824823) | 1631 | 343.78 | 343.76 | 0.02 | 346.08 | 367.85 | -21.77 | 431.74 | 0.00, 0.00, 0.00 | 1.50 | stepped (6 levels); 7 rooftop structures; 3 masts |
-| Trump International Hotel & Tower Chicago (859995) | 2487 | 351.91 | 348.03 | 3.88 | 351.91 | 359.52 | -7.61 | 416.76 | -0.00, -0.00, -0.00 | 0.53 | stepped (6 levels); 2 rooftop structures; 3 masts |
-| Aon Center (869193) | 3005 | 340.65 | 340.63 | 0.02 | 340.65 | 343.00 | -2.35 | 358.74 | 0.00, 0.00 | 0.43 | stepped (3 levels); 2 masts |
-| Franklin Center North Tower (886111) | 3330 | 265.16 | 265.20 | -0.04 | 265.16 | 268.48 | -3.32 | 304.02 | -0.11, 0.00, -0.00 | 0.87 | stepped (6 levels); pitched; 3 masts |
-| 311 South Wacker Drive (894404) | 3644 | 288.87 | 288.86 | 0.01 | 288.87 | 288.90 | -0.03 | 288.87 | - | 1.37 | stepped (8 levels); pitched; 20 rooftop structures |
-| 900 North Michigan (821343) | 1455 | 244.38 | 244.39 | -0.01 | 265.32 | 261.05 | 4.27 | 265.70 | - | 0.71 | stepped (8 levels); pitched; 13 rooftop structures |
-| Salesforce Tower (864465) | 2548 | 248.99 | 249.02 | -0.03 | 256.12 | 262.48 | -6.36 | 264.14 | 0.00 | 1.36 | stepped (3 levels); 13 rooftop structures; 1 masts |
-| Chase Tower (881912) | 3212 | 255.54 | 255.49 | 0.05 | 257.32 | 257.29 | 0.03 | 257.32 | - | 0.46 | stepped (3 levels); parapet; 2 rooftop structures |
-| 300 North LaSalle (862529) | 2455 | 237.84 | 237.77 | 0.07 | 240.96 | 244.23 | -3.27 | 240.96 | - | 1.06 | stepped (7 levels); 10 rooftop structures |
-| Two Prudential Plaza (869122) | 2955 | 236.89 | 114.62 | 122.27 | 236.89 | 264.78 | -27.89 | 236.89 | - | 2.09 | flat |
-| unnamed (879687) | 3129 | 233.74 | 233.76 | -0.02 | 233.74 | 233.83 | -0.09 | 233.74 | - | 1.60 | stepped (2 levels) |
-| Three First National Plaza (879672) | 3135 | - | - | - | - | - | - | 228.89 | - | 3.53 | stepped (12 levels); 4 rooftop structures |
-| Blue Cross-Blue Shield Tower (870704) | 3101 | 225.53 | 225.57 | -0.04 | 225.53 | 227.47 | -1.94 | 225.53 | - | 1.43 | stepped (6 levels); 14 rooftop structures |
-| ADA Building (835665) | 1854 | 222.83 | 222.84 | -0.01 | 222.83 | 222.91 | -0.08 | 222.83 | - | 0.92 | stepped (8 levels); 4 rooftop structures |
-| Waldorf Astoria Chicago (821651) | 1344 | 209.15 | 190.71 | 18.44 | 212.45 | 212.46 | -0.01 | 212.45 | - | 0.70 | stepped (3 levels); 2 rooftop structures |
-| 330 North Wabash (861033) | 2488 | 203.18 | 203.16 | 0.02 | 208.96 | 209.00 | -0.04 | 208.96 | - | 0.70 | stepped (2 levels); 1 rooftop structures |
-| 71 South Wacker (884240) | 3253 | 206.53 | 206.55 | -0.02 | 208.53 | 208.58 | -0.05 | 208.53 | - | 1.96 | stepped (6 levels); 4 rooftop structures |
-| Wolf Point East (863915) | 2499 | 192.16 | 192.63 | -0.47 | 199.60 | 206.33 | -6.73 | 208.00 | -0.00, -0.00 | 0.86 | stepped (3 levels); 2 rooftop structures; 2 masts |
-| 77 West Wacker (866278) | 2669 | 203.82 | 203.89 | -0.07 | 204.36 | 203.99 | 0.37 | 204.39 | - | 0.33 | pitched; 1 rooftop structures |
-| UBS Tower (880024) | 3108 | 200.00 | 200.02 | -0.02 | 202.49 | 202.83 | -0.34 | 202.49 | - | 1.12 | stepped (7 levels); parapet; 11 rooftop structures |
-| 155 North Wacker (871124) | 2827 | 177.01 | 184.57 | -7.56 | 193.38 | 198.38 | -5.00 | 198.87 | 0.00, 0.00 | 0.34 | stepped (2 levels); 1 rooftop structures; 2 masts |
-| Richard J. Daley Center (873707) | 2940 | 197.57 | 197.56 | 0.01 | 197.57 | 197.95 | -0.38 | 197.57 | - | 0.70 | stepped (3 levels); 3 rooftop structures |
-| 181 West Madison (882394) | 3192 | 196.00 | 195.99 | 0.01 | 196.00 | 196.06 | -0.06 | 196.00 | - | 1.53 | stepped (4 levels); 8 rooftop structures |
-| Heller International Building (884598) | 3288 | 174.34 | 174.34 | 0.00 | 174.34 | 183.03 | -8.69 | 184.36 | -0.00, -0.00 | 0.86 | stepped (8 levels); 5 rooftop structures; 2 masts |
-| Madison Plaza (879805) | 3105 | 181.89 | 181.72 | 0.17 | 182.40 | 182.31 | 0.09 | 182.41 | - | 1.93 | stepped (3 levels); pitched; 7 rooftop structures |
-| One Chicago (836153) | 1650 | 173.05 | 242.76 | -69.71 | 173.05 | 295.94 | -122.89 | 179.82 | -0.85 | 1.27 | stepped (7 levels); pitched; 18 rooftop structures; 1 masts |
-| Michigan Plaza South (867333) | 2868 | 168.05 | 168.05 | 0.00 | 168.05 | 170.00 | -1.95 | 172.94 | 0.00, 0.00 | 1.27 | stepped (5 levels); pitched; 8 rooftop structures; 2 masts |
-| Accenture Tower (879467) | 3131 | 169.86 | 170.93 | -1.07 | 169.86 | 175.44 | -5.58 | 169.86 | - | 2.62 | stepped (11 levels); pitched; 33 rooftop structures |
-| Field Building (887494) | 3403 | - | no returns | - | - | - | - | 164.13 | - | - | stepped (10 levels); parapet; 2 rooftop structures |
-| 222 North Columbus Drive (866170) | 2872 | 159.22 | 159.23 | -0.01 | 163.38 | 163.75 | -0.37 | 163.38 | - | 0.61 | stepped (5 levels); 8 rooftop structures |
-| 215 West Apartments (877787) | 3046 | 154.02 | 154.03 | -0.01 | 154.02 | 154.55 | -0.53 | 154.02 | - | 1.46 | stepped (6 levels); pitched; 1 rooftop structures |
-| LaSalle - Wacker Building (866261) | 2653 | 142.82 | 142.87 | -0.05 | 152.03 | 148.74 | 3.29 | 152.76 | - | 0.33 | stepped (6 levels); 1 rooftop structures |
-| Boeing World Headquarters (873673) | 2948 | 151.79 | 151.63 | 0.16 | 152.27 | 160.62 | -8.35 | 151.82 | - | 1.50 | stepped (6 levels); pitched; 4 rooftop structures |
-| PNC Centre (879799) | 3107 | 150.49 | 150.50 | -0.01 | 150.49 | 150.54 | -0.05 | 150.49 | - | 0.41 | stepped (7 levels); parapet; 4 rooftop structures |
-| No. 9 Walton (821801) | 1287 | 143.68 | 143.75 | -0.07 | 150.09 | 150.10 | -0.01 | 150.09 | - | 0.94 | stepped (3 levels); pitched; 10 rooftop structures |
-| 151 North Franklin (871090) | 2826 | 149.90 | 150.16 | -0.26 | 152.04 | 158.33 | -6.29 | 149.50 | - | 0.56 | flat |
-| AT&T (882849) | 3223 | 148.54 | 148.55 | -0.01 | 148.56 | 148.57 | -0.01 | 148.54 | - | 1.62 | stepped (4 levels); parapet; 5 rooftop structures |
-| Wolf Point West (863968) | 2522 | 145.84 | 145.83 | 0.01 | 145.84 | 146.93 | -1.09 | 145.84 | - | 1.18 | stepped (2 levels) |
-| 540 West Madison (878101) | 3122 | 134.30 | 134.32 | -0.02 | 140.80 | 138.07 | 2.73 | 141.52 | - | 3.07 | stepped (6 levels); 13 rooftop structures |
-| Fifth Third Center (890881) | 3541 | 140.93 | 140.94 | -0.01 | 140.93 | 141.05 | -0.12 | 140.93 | - | 0.17 | stepped (5 levels); 10 rooftop structures |
-| Presidential Towers Garage (882753) | 3286 | 136.82 | 136.79 | 0.03 | 140.42 | 140.43 | -0.01 | 140.42 | - | 0.42 | stepped (7 levels); pitched; 50 rooftop structures |
-| Riverbend (864161) | 2553 | 127.45 | 127.45 | 0.00 | 137.12 | 137.16 | -0.04 | 137.12 | - | 1.06 | stepped (2 levels); 1 rooftop structures |
-| 444 North Michigan (855721) | 2347 | 129.75 | 129.76 | -0.01 | 136.73 | 136.80 | -0.07 | 136.73 | - | 1.12 | flat; 3 rooftop structures |
-| Ann & Robert H. Lurie Children's Hospital (835610) | 1919 | 131.91 | 131.91 | 0.00 | 136.13 | 136.19 | -0.06 | 136.13 | - | 1.45 | stepped (12 levels); 20 rooftop structures |
-| Lake & Wells Apartments (867491) | 2692 | 132.02 | 135.83 | -3.81 | 134.96 | 135.01 | -0.05 | 134.96 | - | 0.73 | stepped (6 levels); 8 rooftop structures |
-| 225 West Randolph (873751) | 2906 | 133.77 | 133.61 | 0.16 | 133.96 | 134.45 | -0.49 | 133.77 | - | 0.13 | stepped (2 levels); 1 rooftop structures |
-| OneEleven (866270) | 2659 | 133.19 | 92.32 | 40.87 | 133.19 | 188.30 | -55.11 | 133.19 | - | 1.63 | stepped (4 levels); 1 rooftop structures |
-| Chicago Marriott Downtown Magnificent Mile (850491) | 2191 | 33.72 | 34.71 | -0.99 | 131.92 | 139.73 | -7.81 | 131.92 | - | 5.35 | pitched; 1 rooftop structures |
-| Alta at K Station (861432) | 2464 | 125.90 | 125.90 | 0.00 | 125.90 | 126.08 | -0.18 | 125.90 | - | 1.06 | stepped (7 levels); parapet; 19 rooftop structures |
-| 10 East Delaware Place (823177) | 1359 | 119.47 | 119.46 | 0.01 | 125.37 | 125.63 | -0.26 | 125.37 | - | 0.54 | stepped (4 levels); 4 rooftop structures |
-| 225 West Wacker (866328) | 2665 | 115.61 | 115.47 | 0.14 | 124.38 | 124.39 | -0.01 | 124.38 | - | 1.39 | stepped (4 levels); pitched; 8 rooftop structures |
-| 777 North Michigan (835763) | 1816 | 121.94 | 121.94 | 0.00 | 121.94 | 122.85 | -0.91 | 121.94 | - | 0.33 | stepped (4 levels) |
-| 333 North Michigan (863308) | 2664 | 121.39 | 119.15 | 2.24 | 121.39 | 121.40 | -0.01 | 121.39 | - | 1.25 | stepped (6 levels); 1 rooftop structures |
-| One Illinois Center (863304) | 2692 | 119.10 | 119.11 | -0.01 | 119.10 | 119.17 | -0.07 | 119.10 | - | 0.30 | flat |
-| Walton on the Park (822821) | 1324 | 104.17 | 105.16 | -0.99 | 109.53 | 109.56 | -0.03 | 109.53 | - | 1.62 | stepped (4 levels); 8 rooftop structures |
-| Left Bank at K Station (864360) | 2586 | 108.50 | 108.52 | -0.02 | 108.50 | 108.56 | -0.06 | 108.50 | - | 0.58 | stepped (6 levels); 22 rooftop structures |
-| Linea (869202) | 2764 | 103.04 | 103.09 | -0.05 | 107.09 | 107.28 | -0.19 | 107.09 | - | 1.19 | stepped (7 levels); 7 rooftop structures |
-| 150 N Riverside (869294) | 2786 | 102.21 | 5.53 | 96.68 | 102.21 | 222.81 | -120.60 | 102.21 | - | 2.43 | flat |
-| River North Point (861253) | 2424 | 97.72 | 97.72 | 0.00 | 97.72 | 98.78 | -1.06 | 97.72 | - | 0.73 | stepped (8 levels); pitched; 14 rooftop structures |
-| 333 North Green (863806) | 2717 | 88.22 | 88.24 | -0.02 | 92.05 | 92.13 | -0.08 | 92.38 | - | 1.96 | stepped (4 levels); 11 rooftop structures |
-| 625 West Adams Street (890113) | 3559 | 89.96 | 89.95 | 0.01 | 89.96 | 90.01 | -0.05 | 89.96 | - | 1.36 | stepped (6 levels); 14 rooftop structures |
-| Merchandise Mart (861246) | 2413 | - | - | - | - | - | - | 89.82 | 0.00 | 1.52 | pitched; 1 rooftop structures; 1 masts |
-| The Residences at 8 East Huron (841018) | 1795 | 88.36 | 88.37 | -0.01 | 88.36 | 89.55 | -1.19 | 88.36 | - | 0.97 | stepped (3 levels) |
-| Chestnut Place Apartments (827738) | 1445 | 86.33 | 86.35 | -0.02 | 86.82 | 86.41 | 0.41 | 86.82 | - | 0.32 | stepped (5 levels); pitched |
-| 605 West Lake Street (869459) | 2841 | 81.11 | 81.11 | 0.00 | 85.68 | 85.71 | -0.03 | 85.68 | - | 0.90 | stepped (5 levels); parapet; 3 rooftop structures |
-| 800 West Fulton Market (865280) | 2780 | 84.66 | 84.95 | -0.29 | 84.66 | 86.94 | -2.28 | 84.66 | - | 2.22 | stepped (11 levels); 1 rooftop structures |
-| Wrigley Building North Addition (858242) | 2444 | 69.94 | 69.65 | 0.29 | 70.44 | 116.90 | -46.46 | 84.66 | 0.00, 0.00 | 0.89 | stepped (6 levels); 3 rooftop structures; 2 masts |
-| 600-614 West Lake Street (867618) | 2767 | 75.56 | 75.57 | -0.01 | 75.56 | 79.61 | -4.05 | 81.24 | 0.00, 0.00 | 1.70 | stepped (5 levels); 6 rooftop structures; 2 masts |
-| Kinzie Station Tower (863929) | 2602 | 81.06 | 81.06 | 0.00 | 81.06 | 81.10 | -0.04 | 81.06 | - | 0.93 | stepped (5 levels); 5 rooftop structures |
+| Willis Tower (889662) | 3503 | 444.37 | 444.24 | 0.13 | 460.12 | 484.50 | -24.38 | 526.90 | 0.00, 0.00, 0.00, 0.00, 0.00, 0.00 | 0.22 | stepped (15 levels); parapet; pitched; 12 rooftop structures; 6 masts |
+| 875 N Michigan (824823) | 1631 | 346.11 | 346.10 | 0.01 | 346.11 | 367.85 | -21.74 | 431.74 | 0.00, 0.00, 0.00 | 0.59 | stepped (23 levels); 38 rooftop structures; 3 masts |
+| Trump International Hotel & Tower Chicago (859995) | 2487 | 358.28 | 358.26 | 0.02 | 359.49 | 359.52 | -0.03 | 416.76 | -0.00 | 0.16 | stepped (8 levels); parapet; 2 rooftop structures; 1 masts |
+| Aon Center (869193) | 3005 | 340.66 | 340.62 | 0.04 | 342.97 | 343.00 | -0.03 | 358.74 | 0.00 | 0.16 | stepped (3 levels); parapet; 6 rooftop structures; 1 masts |
+| St. Regis Chicago (864656) | 2972 | 348.09 | 348.09 | 0.00 | 348.09 | 348.93 | -0.84 | 353.61 | -0.00 | 0.46 | stepped (12 levels); 12 rooftop structures; 1 masts |
+| Franklin Center North Tower (886111) | 3330 | 265.15 | 265.19 | -0.04 | 268.46 | 268.47 | -0.01 | 304.02 | 0.00, 0.00, 0.00 | 0.32 | stepped (8 levels); parapet; pitched; 7 rooftop structures; 3 masts |
+| One Chicago (836153) | 1650 | 293.07 | 293.05 | 0.02 | 296.06 | 295.94 | 0.12 | 300.28 | 0.00 | 0.36 | stepped (19 levels); parapet; pitched; 21 rooftop structures; 1 masts |
+| 311 South Wacker Drive (894404) | 3644 | 288.87 | 288.86 | 0.01 | 290.40 | 288.90 | 1.50 | 288.87 | - | 0.31 | stepped (10 levels); parapet; pitched; 25 rooftop structures |
+| 900 North Michigan (821343) | 1455 | 244.40 | 244.39 | 0.01 | 265.34 | 261.05 | 4.29 | 265.70 | - | 0.55 | stepped (7 levels); pitched; 16 rooftop structures |
+| Salesforce Tower (864465) | 2548 | 252.19 | 252.20 | -0.01 | 256.49 | 262.48 | -5.99 | 264.14 | 0.00 | 0.79 | stepped (7 levels); parapet; 10 rooftop structures; 1 masts |
+| Two Prudential Plaza (869122) | 2955 | 256.97 | 255.69 | 1.28 | 260.76 | 264.78 | -4.02 | 260.76 | - | 0.98 | stepped (8 levels); pitched; 4 rooftop structures |
+| Chase Tower (881912) | 3212 | 255.56 | 255.49 | 0.07 | 257.32 | 257.29 | 0.03 | 257.32 | - | 0.29 | stepped (19 levels); parapet; 3 rooftop structures |
+| 110 North Wacker (874616) | 2960 | 247.10 | 243.07 | 4.03 | 252.31 | 252.32 | -0.01 | 252.31 | - | 0.82 | stepped (7 levels); parapet; 14 rooftop structures |
+| 300 North LaSalle (862529) | 2455 | 240.99 | 240.94 | 0.05 | 244.15 | 244.23 | -0.08 | 244.15 | - | 0.42 | stepped (11 levels); 3 rooftop structures |
+| unnamed (879687) | 3129 | 233.77 | 233.77 | 0.00 | 233.77 | 233.83 | -0.06 | 233.77 | - | 1.56 | stepped (2 levels) |
+| Three First National Plaza (879672) | 3135 | - | - | - | - | - | - | 228.89 | - | 3.35 | stepped (12 levels); 5 rooftop structures |
+| Blue Cross-Blue Shield Tower (870704) | 3101 | 225.58 | 226.01 | -0.43 | 226.72 | 227.47 | -0.75 | 225.58 | - | 0.21 | stepped (6 levels); parapet |
+| BMO Tower (895227) | 3686 | 223.13 | 223.12 | 0.01 | 223.13 | 223.81 | -0.68 | 223.13 | - | 0.33 | stepped (8 levels); parapet; 9 rooftop structures |
+| ADA Building (835665) | 1854 | 222.85 | 222.84 | 0.01 | 223.17 | 222.91 | 0.26 | 222.85 | - | 0.66 | stepped (8 levels); parapet; 5 rooftop structures |
+| 150 N Riverside (869294) | 2786 | 220.80 | 220.77 | 0.03 | 222.79 | 222.81 | -0.02 | 222.79 | - | 0.33 | stepped (6 levels); 6 rooftop structures |
+| Waldorf Astoria Chicago (821651) | 1344 | 209.32 | 209.05 | 0.27 | 212.45 | 212.46 | -0.01 | 212.45 | - | 0.59 | stepped (9 levels); parapet; 3 rooftop structures |
+| 330 North Wabash (861033) | 2488 | 203.16 | 203.17 | -0.01 | 208.97 | 209.00 | -0.03 | 208.97 | - | 0.33 | stepped (2 levels); 1 rooftop structures |
+| 71 South Wacker (884240) | 3253 | 206.62 | 206.57 | 0.05 | 208.56 | 208.58 | -0.02 | 208.56 | - | 0.28 | stepped (5 levels); parapet; 2 rooftop structures |
+| Wolf Point East (863915) | 2499 | 199.60 | 199.59 | 0.01 | 203.38 | 206.33 | -2.95 | 208.00 | -0.00 | 0.64 | stepped (3 levels); parapet; 5 rooftop structures; 1 masts |
+| 77 West Wacker (866278) | 2669 | 201.30 | 200.47 | 0.83 | 201.30 | 203.99 | -2.69 | 201.30 | - | 0.33 | flat |
+| UBS Tower (880024) | 3108 | 200.02 | 200.02 | 0.00 | 200.31 | 202.83 | -2.52 | 200.02 | - | 0.29 | stepped (7 levels); parapet; 1 rooftop structures |
+| Richard J. Daley Center (873707) | 2940 | 197.58 | 197.56 | 0.02 | 197.58 | 197.95 | -0.37 | 197.58 | - | 0.51 | stepped (2 levels); 4 rooftop structures |
+| 181 West Madison (882394) | 3192 | 196.00 | 196.00 | 0.00 | 196.00 | 196.06 | -0.06 | 196.00 | - | 0.28 | stepped (6 levels); parapet; 3 rooftop structures |
+| 155 North Wacker (871124) | 2827 | 193.43 | 193.45 | -0.02 | 195.69 | 198.38 | -2.69 | 193.43 | - | 0.98 | stepped (6 levels); parapet; 6 rooftop structures |
+| OneEleven (866270) | 2659 | 185.83 | 185.82 | 0.01 | 187.85 | 188.30 | -0.45 | 187.85 | - | 0.82 | stepped (6 levels); 3 rooftop structures |
+| Heller International Building (884598) | 3288 | 174.35 | 174.34 | 0.01 | 174.35 | 183.03 | -8.68 | 184.36 | -0.00, -0.00 | 0.41 | stepped (9 levels); parapet; 1 rooftop structures; 2 masts |
+| Madison Plaza (879805) | 3105 | 182.02 | 182.29 | -0.27 | 182.02 | 182.31 | -0.29 | 182.02 | - | 0.43 | stepped (9 levels); 2 rooftop structures |
+| Accenture Tower (879467) | 3131 | 174.52 | 174.41 | 0.11 | 175.02 | 175.44 | -0.42 | 175.05 | - | 0.32 | stepped (18 levels); parapet; pitched; 22 rooftop structures |
+| Michigan Plaza South (867333) | 2868 | 168.06 | 168.04 | 0.02 | 168.06 | 170.00 | -1.94 | 172.94 | 0.00, 0.00 | 0.25 | stepped (4 levels); 2 masts |
+| Field Building (887494) | 3403 | - | no returns | - | - | - | - | 163.92 | - | - | stepped (9 levels); parapet; 5 rooftop structures |
+| 222 North Columbus Drive (866170) | 2872 | 163.40 | 163.41 | -0.01 | 163.40 | 163.75 | -0.35 | 163.40 | - | 0.31 | stepped (6 levels); parapet; pitched; 8 rooftop structures |
+| Boeing World Headquarters (873673) | 2948 | 151.81 | 151.63 | 0.18 | 160.59 | 160.62 | -0.03 | 160.59 | - | 0.94 | stepped (6 levels); 4 rooftop structures |
+| 151 North Franklin (871090) | 2826 | 157.25 | 157.24 | 0.01 | 158.20 | 158.33 | -0.13 | 157.25 | - | 0.30 | stepped (4 levels); parapet; 5 rooftop structures |
+| 215 West Apartments (877787) | 3046 | 154.05 | 154.04 | 0.01 | 154.85 | 154.55 | 0.30 | 154.05 | - | 2.51 | stepped (5 levels); parapet; pitched; 3 rooftop structures |
+| LaSalle - Wacker Building (866261) | 2653 | 142.84 | 142.89 | -0.05 | 152.03 | 148.74 | 3.29 | 152.76 | - | 0.18 | stepped (6 levels); parapet; 1 rooftop structures |
+| PNC Centre (879799) | 3107 | 150.50 | 150.50 | 0.00 | 150.50 | 150.54 | -0.04 | 150.50 | - | 1.61 | stepped (7 levels); parapet; 4 rooftop structures |
+| No. 9 Walton (821801) | 1287 | 145.10 | 145.10 | 0.00 | 150.09 | 150.10 | -0.01 | 150.09 | - | 0.45 | stepped (8 levels); pitched; 9 rooftop structures |
+| AT&T (882849) | 3223 | 148.55 | 148.54 | 0.01 | 148.74 | 148.57 | 0.17 | 148.55 | - | 0.29 | stepped (3 levels); parapet; 9 rooftop structures |
+| 727 West Madison (883031) | 3344 | 145.11 | 145.10 | 0.01 | 148.54 | 148.51 | 0.03 | 148.54 | - | 0.36 | stepped (5 levels); 16 rooftop structures |
+| Wolf Point West (863968) | 2522 | 145.86 | 145.82 | 0.04 | 146.10 | 146.93 | -0.83 | 145.86 | - | 0.63 | stepped (5 levels); parapet; 4 rooftop structures |
+| Fifth Third Center (890881) | 3541 | 140.94 | 140.94 | 0.00 | 140.94 | 141.05 | -0.11 | 140.94 | - | 0.17 | stepped (5 levels); 11 rooftop structures |
+| Chicago Marriott Downtown Magnificent Mile (850491) | 2191 | 136.60 | 136.59 | 0.01 | 139.63 | 139.73 | -0.10 | 139.63 | - | 0.54 | stepped (3 levels); pitched; 5 rooftop structures |
+| 540 West Madison (878101) | 3122 | 138.53 | 138.24 | 0.29 | 139.09 | 138.07 | 1.02 | 139.10 | - | 0.33 | stepped (7 levels); pitched; 9 rooftop structures |
+| Riverbend (864161) | 2553 | 127.47 | 127.46 | 0.01 | 137.13 | 137.16 | -0.03 | 137.13 | - | 0.70 | stepped (3 levels); 1 rooftop structures |
+| Presidential Towers Garage (882753) | 3286 | 136.82 | 136.80 | 0.02 | 136.82 | 140.43 | -3.61 | 136.82 | - | 0.52 | stepped (6 levels); parapet; pitched; 40 rooftop structures |
+| 444 North Michigan (855721) | 2347 | 136.76 | 136.75 | 0.01 | 136.76 | 136.80 | -0.04 | 136.76 | - | 0.65 | stepped (2 levels); 1 rooftop structures |
+| Ann & Robert H. Lurie Children's Hospital (835610) | 1919 | 131.91 | 131.91 | 0.00 | 136.13 | 136.19 | -0.06 | 136.13 | - | 2.69 | stepped (11 levels); parapet; 16 rooftop structures |
+| Lake & Wells Apartments (867491) | 2692 | 134.21 | 134.20 | 0.01 | 134.21 | 135.01 | -0.80 | 134.21 | - | 0.54 | stepped (6 levels); 6 rooftop structures |
+| 225 West Randolph (873751) | 2906 | 133.62 | 133.61 | 0.01 | 134.43 | 134.45 | -0.02 | 133.62 | - | 0.28 | stepped (2 levels); parapet; 1 rooftop structures |
+| Whole Foods Market (878315) | 3237 | 128.27 | 128.26 | 0.01 | 128.27 | 128.31 | -0.04 | 128.27 | - | 0.74 | stepped (7 levels); parapet; 4 rooftop structures |
+| Alta at K Station (861432) | 2464 | 125.91 | 125.90 | 0.01 | 125.91 | 126.08 | -0.17 | 125.91 | - | 0.73 | stepped (6 levels); parapet; 24 rooftop structures |
+| 10 East Delaware Place (823177) | 1359 | 119.47 | 119.46 | 0.01 | 125.38 | 125.63 | -0.25 | 125.38 | - | 0.52 | stepped (2 levels); 4 rooftop structures |
+| 225 West Wacker (866328) | 2665 | 115.62 | 115.48 | 0.14 | 124.39 | 124.39 | 0.00 | 124.39 | - | 1.04 | stepped (6 levels); parapet; pitched; 12 rooftop structures |
+| 777 North Michigan (835763) | 1816 | 121.95 | 121.95 | 0.00 | 121.95 | 122.85 | -0.90 | 121.95 | - | 0.14 | stepped (4 levels); parapet |
+| 333 North Michigan (863308) | 2664 | 121.38 | 119.01 | 2.37 | 121.38 | 121.40 | -0.02 | 121.38 | - | 1.38 | stepped (4 levels) |
+| One Illinois Center (863304) | 2692 | 119.12 | 119.11 | 0.01 | 119.12 | 119.17 | -0.05 | 119.12 | - | 0.30 | flat |
+| Wrigley Building North Addition (858242) | 2444 | 116.97 | 106.86 | 10.11 | 116.97 | 116.90 | 0.07 | 116.97 | - | 0.41 | stepped (7 levels); parapet; 9 rooftop structures |
+| 1110 North Lake Shore Drive (808792) | 1192 | 8.71 | 8.70 | 0.01 | 114.97 | 114.97 | 0.00 | 114.97 | - | 0.89 | stepped (2 levels); parapet; 3 rooftop structures |
+| Walton on the Park (822821) | 1324 | 104.16 | 104.16 | 0.00 | 109.53 | 109.56 | -0.03 | 109.53 | - | 1.13 | stepped (5 levels); 15 rooftop structures |
+| Left Bank at K Station (864360) | 2586 | 108.53 | 108.52 | 0.01 | 108.53 | 108.56 | -0.03 | 108.53 | - | 0.44 | stepped (7 levels); 21 rooftop structures |
+| Merchandise Mart (861246) | 2413 | 107.35 | 107.44 | -0.09 | 108.02 | 107.26 | 0.76 | 108.06 | - | 0.76 | stepped (7 levels); parapet; pitched; 28 rooftop structures |
+| Linea (869202) | 2764 | 101.56 | 101.58 | -0.02 | 106.13 | 107.28 | -1.15 | 106.13 | - | 0.36 | stepped (6 levels); parapet; 8 rooftop structures |
+| 354 North Union Avenue (862622) | 2603 | 13.99 | 12.55 | 1.44 | 74.53 | 74.51 | 0.02 | 100.79 | 0.00, 0.00, 0.00 | 1.12 | stepped (2 levels); parapet; 17 rooftop structures; 3 masts |
+| River North Point (861253) | 2424 | 94.98 | 94.86 | 0.12 | 98.06 | 98.78 | -0.72 | 95.26 | - | 0.49 | stepped (9 levels); parapet; pitched; 19 rooftop structures |
+| 333 North Green (863806) | 2717 | 91.96 | 91.95 | 0.01 | 91.96 | 92.13 | -0.17 | 91.96 | - | 0.45 | stepped (5 levels) |
+| 625 West Adams Street (890113) | 3559 | 89.95 | 89.96 | -0.01 | 89.95 | 90.01 | -0.06 | 89.95 | - | 1.00 | stepped (7 levels); 2 rooftop structures |
+| The Residences at 8 East Huron (841018) | 1795 | 88.39 | 88.38 | 0.01 | 88.39 | 89.55 | -1.16 | 88.39 | - | 0.35 | stepped (4 levels); 1 rooftop structures |
+| The Montgomery (838593) | 1698 | 21.52 | 47.53 | -26.01 | 21.52 | 20.88 | 0.64 | 87.57 | -0.00, -0.00 | 2.80 | stepped (2 levels); 3 rooftop structures; 2 masts |
+| Chestnut Place Apartments (827738) | 1445 | 86.41 | 86.40 | 0.01 | 86.99 | 86.41 | 0.58 | 86.99 | - | 0.27 | stepped (3 levels); pitched |
+| 605 West Lake Street (869459) | 2841 | 81.12 | 81.11 | 0.01 | 85.69 | 85.71 | -0.02 | 85.69 | - | 0.72 | stepped (5 levels); parapet; 8 rooftop structures |
+| 800 West Fulton Market (865280) | 2780 | 84.66 | 84.90 | -0.24 | 84.66 | 86.94 | -2.28 | 84.66 | - | 0.10 | stepped (11 levels) |
+| The Grand on Grand (851669) | 2041 | 71.13 | 71.16 | -0.03 | 84.17 | 84.20 | -0.03 | 84.17 | - | 0.60 | stepped (4 levels); 9 rooftop structures |
+| Kinzie Station Tower (863929) | 2602 | 80.44 | 81.06 | -0.62 | 81.70 | 81.10 | 0.60 | 81.06 | - | 0.72 | stepped (5 levels); parapet; pitched; 7 rooftop structures |
 | unnamed (808684) | 2619 | - | no returns | - | - | - | - | 81.04 | - | - | stepped (2 levels) |
-| The Grand on Grand (851669) | 2041 | 68.69 | 63.42 | 5.27 | 68.69 | 84.20 | -15.51 | 81.01 | -0.00, -0.00 | 1.24 | stepped (3 levels); 2 rooftop structures; 2 masts |
-| BMO Tower (895227) | 3686 | 80.94 | 71.04 | 9.90 | 80.94 | 223.81 | -142.87 | 80.94 | - | 0.99 | flat |
-| Cortland River North (854831) | 2139 | 80.81 | 80.93 | -0.12 | 80.81 | 83.39 | -2.58 | 80.81 | - | 0.35 | stepped (4 levels) |
-| River Place on the Park (842724) | 1851 | 80.15 | 80.15 | 0.00 | 80.15 | 80.24 | -0.09 | 80.15 | - | 0.85 | stepped (3 levels); 5 rooftop structures |
-| 167 Green Street (869697) | 2977 | 79.24 | 79.24 | 0.00 | 79.24 | 81.23 | -1.99 | 79.24 | - | 1.81 | stepped (5 levels); 17 rooftop structures |
-| Thompson Chicago (814587) | 1186 | 72.38 | 72.17 | 0.21 | 73.30 | 78.78 | -5.48 | 77.51 | -0.00 | 2.43 | stepped (3 levels); 1 masts |
-| Flair Tower (844197) | 1783 | 19.38 | 19.46 | -0.08 | 73.30 | 76.21 | -2.91 | 77.38 | 0.00 | 0.88 | stepped (2 levels); pitched; 7 rooftop structures; 1 masts |
-| Delaware Place on the Park (825484) | 1360 | 76.55 | 76.56 | -0.01 | 77.20 | 76.48 | 0.72 | 77.26 | - | 0.49 | stepped (3 levels); pitched |
-| 116-118 North Jefferson Street (875010) | 3016 | 76.09 | 76.09 | 0.00 | 76.09 | 77.03 | -0.94 | 76.09 | - | 1.39 | stepped (5 levels); 4 rooftop structures |
-| 757 North Orleans Street (836819) | 1561 | 71.89 | 71.91 | -0.02 | 74.90 | 74.92 | -0.02 | 74.90 | - | 1.41 | stepped (3 levels); 8 rooftop structures |
-| Erie Centre (846067) | 1880 | 65.21 | 65.08 | 0.13 | 65.21 | 72.37 | -7.16 | 73.57 | 0.00, 0.00 | 2.03 | stepped (2 levels); 3 rooftop structures; 2 masts |
-| unnamed (807574) | 4063 | - | no returns | - | - | - | - | 73.36 | - | - | stepped (9 levels); 30 rooftop structures |
-| Parc Huron (843505) | 1836 | 69.40 | 69.39 | 0.01 | 69.40 | 69.53 | -0.13 | 69.40 | - | 1.71 | stepped (2 levels); 3 rooftop structures |
-| AMLI West Loop (890501) | 3689 | 64.95 | 64.35 | 0.60 | 68.90 | 71.39 | -2.49 | 68.90 | - | 1.80 | stepped (5 levels); 10 rooftop structures |
-| unnamed (697781) | 2116 | - | no returns | - | - | - | - | 68.30 | - | - | stepped (8 levels); parapet; 11 rooftop structures |
-| 1100-1110 North Dearborn Street (811793) | 1002 | 66.99 | 66.99 | 0.00 | 66.99 | 67.05 | -0.06 | 66.99 | - | 0.19 | stepped (3 levels) |
+| Cortland River North (854831) | 2139 | 81.02 | 80.91 | 0.11 | 81.88 | 83.39 | -1.51 | 80.56 | - | 0.90 | stepped (3 levels) |
+| River Place on the Park (842724) | 1851 | 80.15 | 80.15 | 0.00 | 80.64 | 80.24 | 0.40 | 80.15 | - | 0.83 | stepped (3 levels); parapet; 5 rooftop structures |
+| 600-614 West Lake Street (867618) | 2767 | 75.57 | 75.56 | 0.01 | 79.59 | 79.61 | -0.02 | 79.59 | - | 0.86 | stepped (4 levels); 7 rooftop structures |
+| 167 Green Street (869697) | 2977 | 79.24 | 79.22 | 0.02 | 79.24 | 81.23 | -1.99 | 79.24 | - | 0.67 | stepped (5 levels); parapet; 1 rooftop structures |
+| Thompson Chicago (814587) | 1186 | 73.27 | 72.18 | 1.09 | 77.63 | 78.78 | -1.15 | 77.63 | - | 2.14 | stepped (2 levels); 5 rooftop structures |
+| Delaware Place on the Park (825484) | 1360 | 76.32 | 76.35 | -0.03 | 76.81 | 76.48 | 0.33 | 76.81 | - | 0.44 | stepped (3 levels); pitched; 1 rooftop structures |
+| Flair Tower (844197) | 1783 | 73.32 | 69.92 | 3.40 | 76.21 | 76.21 | 0.00 | 76.21 | - | 1.10 | stepped (4 levels); parapet; pitched; 11 rooftop structures |
+| 116-118 North Jefferson Street (875010) | 3016 | 76.16 | 76.08 | 0.08 | 76.16 | 77.03 | -0.87 | 76.16 | - | 0.54 | stepped (5 levels); 5 rooftop structures |
+| 757 North Orleans Street (836819) | 1561 | 71.91 | 71.89 | 0.02 | 74.90 | 74.92 | -0.02 | 74.90 | - | 1.01 | stepped (4 levels); parapet; 17 rooftop structures |
+| SoNo (785344) | 1198 | 70.38 | 70.33 | 0.05 | 74.04 | 74.05 | -0.01 | 74.04 | - | 1.16 | stepped (3 levels); 9 rooftop structures |
+| Erie Centre (846067) | 1880 | 65.31 | 65.07 | 0.24 | 65.31 | 72.37 | -7.06 | 73.57 | 0.00, 0.00 | 2.04 | stepped (2 levels); 3 rooftop structures; 2 masts |
+| unnamed (807574) | 4063 | - | no returns | - | - | - | - | 73.36 | - | - | stepped (8 levels); parapet; 30 rooftop structures |
+| The Hudson (837104) | 1623 | 46.87 | 46.69 | 0.18 | 61.32 | 61.66 | -0.34 | 71.26 | 0.00, -0.01, 0.00, 0.00 | 1.31 | stepped (4 levels); parapet; 10 rooftop structures; 4 masts |
+| Parc Huron (843505) | 1836 | 69.42 | 69.39 | 0.03 | 69.42 | 69.53 | -0.11 | 69.42 | - | 1.29 | stepped (2 levels); 1 rooftop structures |
+| AMLI West Loop (890501) | 3689 | 68.94 | 68.95 | -0.01 | 68.94 | 71.39 | -2.45 | 68.94 | - | 0.99 | stepped (6 levels); parapet; 4 rooftop structures |
+| unnamed (697781) | 2116 | - | no returns | - | - | - | - | 68.89 | - | - | stepped (8 levels); 10 rooftop structures |
+| 1100-1110 North Dearborn Street (811793) | 1002 | 67.00 | 67.00 | 0.00 | 67.52 | 67.05 | 0.47 | 67.00 | - | 0.15 | stepped (3 levels); parapet; 1 rooftop structures |
+| 650-660 West Wayman Street (864130) | 2634 | 23.56 | 23.55 | 0.01 | 66.48 | 66.59 | -0.11 | 66.48 | - | 1.05 | stepped (5 levels); parapet; 43 rooftop structures |
 | unnamed (710227) | 1849 | - | no returns | - | - | - | - | 66.36 | - | - | stepped (2 levels); 10 rooftop structures |
-| unnamed (716911) | 1708 | - | no returns | - | - | - | - | 65.89 | - | - | stepped (5 levels); 8 rooftop structures |
-| Two River Place (840907) | 1803 | 65.52 | 65.53 | -0.01 | 65.52 | 65.58 | -0.06 | 65.52 | - | 0.33 | stepped (4 levels); 5 rooftop structures |
-| unnamed (837303) | 1730 | 42.98 | 42.93 | 0.05 | 43.82 | 49.88 | -6.06 | 64.87 | 0.00 | 0.95 | stepped (4 levels); pitched; 9 rooftop structures; 1 masts |
-| International Tailoring Company Building (894847) | 3815 | 48.19 | 48.20 | -0.01 | 64.68 | 64.88 | -0.20 | 64.68 | - | 2.58 | stepped (2 levels); pitched; 8 rooftop structures |
-| Park Place (848455) | 1996 | 61.20 | 61.20 | 0.00 | 64.30 | 64.32 | -0.02 | 64.30 | - | 0.53 | stepped (6 levels); 3 rooftop structures |
-| Gallery 400 (847101) | 1899 | 60.69 | 60.70 | -0.01 | 64.01 | 64.10 | -0.09 | 64.01 | - | 0.74 | flat; 4 rooftop structures |
-| SoNo (785344) | 1198 | 63.95 | 70.35 | -6.40 | 63.95 | 74.05 | -10.10 | 63.95 | - | 1.74 | stepped (3 levels); 4 rooftop structures |
-| NEXT Chestnut (829770) | 1385 | 20.82 | 20.83 | -0.01 | 20.82 | 20.87 | -0.05 | 63.95 | -0.00 | 0.97 | stepped (2 levels); 5 rooftop structures; 1 masts |
-| 609 West Randolph Street (873863) | 2964 | 62.42 | 62.44 | -0.02 | 63.88 | 63.92 | -0.04 | 63.88 | - | 0.62 | stepped (4 levels); 1 rooftop structures |
-| unnamed (734344) | 1195 | 63.14 | 62.80 | 0.34 | 63.71 | 62.31 | 1.40 | 63.74 | - | 0.76 | stepped (10 levels); pitched; 13 rooftop structures |
-| 340 West Superior (838524) | 1614 | 57.80 | 57.80 | 0.00 | 62.61 | 62.84 | -0.23 | 62.61 | - | 0.32 | stepped (4 levels); 3 rooftop structures |
-| Erie on the Park (843552) | 1862 | 18.62 | 18.62 | 0.00 | 18.62 | 18.68 | -0.06 | 61.02 | - | 9.25 | stepped (2 levels); 5 rooftop structures |
-| Xavier (806827) | 1072 | - | no returns | - | - | - | - | 60.72 | - | - | stepped (5 levels); 14 rooftop structures |
-| unnamed (685087) | 2510 | - | no returns | - | - | - | - | 60.64 | - | - | stepped (2 levels); parapet; 1 rooftop structures |
-| unnamed (822893) | 1220 | 60.62 | 60.57 | 0.05 | 60.62 | 62.18 | -1.56 | 60.62 | - | 0.85 | stepped (3 levels); 2 rooftop structures |
+| unnamed (716911) | 1708 | - | no returns | - | - | - | - | 65.89 | - | - | stepped (3 levels); parapet; 5 rooftop structures |
+| Two River Place (840907) | 1803 | 65.54 | 65.53 | 0.01 | 66.12 | 65.58 | 0.54 | 65.54 | - | 0.26 | stepped (5 levels); parapet; 4 rooftop structures |
+| Parc Chestnut (829659) | 1385 | 59.34 | 59.33 | 0.01 | 59.87 | 60.91 | -1.04 | 65.11 | 0.00, 0.00 | 0.52 | stepped (6 levels); parapet; 3 rooftop structures; 2 masts |
+| unnamed (837303) | 1730 | 42.94 | 42.92 | 0.02 | 43.85 | 49.88 | -6.03 | 64.87 | 0.00 | 0.74 | stepped (6 levels); pitched; 9 rooftop structures; 1 masts |
+| International Tailoring Company Building (894847) | 3815 | 48.22 | 48.23 | -0.01 | 64.77 | 64.88 | -0.11 | 64.77 | - | 2.58 | stepped (3 levels); parapet; pitched; 7 rooftop structures |
+| Park Place (848455) | 1996 | 61.22 | 61.20 | 0.02 | 64.31 | 64.32 | -0.01 | 64.31 | - | 0.35 | stepped (6 levels); 3 rooftop structures |
+| Gallery 400 (847101) | 1899 | 60.72 | 60.70 | 0.02 | 63.98 | 64.10 | -0.12 | 63.98 | - | 0.74 | flat; 3 rooftop structures |
+| NEXT Chestnut (829770) | 1385 | 20.82 | 20.83 | -0.01 | 20.82 | 20.87 | -0.05 | 63.95 | -0.00 | 1.70 | stepped (3 levels); 5 rooftop structures; 1 masts |
+| 340 West Superior (838524) | 1614 | 60.68 | 60.69 | -0.01 | 62.53 | 62.84 | -0.31 | 62.53 | - | 0.29 | stepped (5 levels); parapet; 1 rooftop structures |
+| 609 West Randolph Street (873863) | 2964 | 62.43 | 62.44 | -0.01 | 62.43 | 63.92 | -1.49 | 62.43 | - | 0.26 | stepped (3 levels) |
+| unnamed (734344) | 1195 | 55.89 | 55.90 | -0.01 | 61.66 | 62.31 | -0.65 | 61.66 | - | 0.62 | stepped (10 levels); parapet; 16 rooftop structures |
+| Erie on the Park (843552) | 1862 | 18.63 | 18.62 | 0.01 | 18.63 | 18.68 | -0.05 | 61.02 | - | 9.25 | stepped (2 levels); 5 rooftop structures |
+| unnamed (685087) | 2510 | - | no returns | - | - | - | - | 60.64 | - | - | flat; 1 rooftop structures |
+| unnamed (822893) | 1220 | 60.61 | 60.56 | 0.05 | 60.61 | 62.18 | -1.57 | 60.61 | - | 0.42 | stepped (3 levels); 1 rooftop structures |
 
 ## Zone 1 buildings
 
