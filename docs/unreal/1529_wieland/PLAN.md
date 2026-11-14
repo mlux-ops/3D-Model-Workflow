@@ -699,6 +699,32 @@ Each is asked at the step that needs it. None has been asked or done yet.
 
 ---
 
+## Phase 17: An accurate site model, and the downtown skyline from the roof deck
+
+Added by the owner on 2026-11-14: every visible building with correct geometry and materials true to real conditions, and above all an accurate downtown skyline from the penthouse roof deck. The owner chose a model built from public laser-scan data (our own geometry, usable offline and in the delivery); Google's 3D tiles are not used in any way, because their terms (section 3.2.3) forbid creating content based on them.
+
+**Steps.** 17.1 viewshed: what each station, deck and design view really sees, out to the horizon towards downtown; 17.2 the downtown towers visible from D1, from the Illinois 2022 laser-scan point cloud and OpenStreetMap building parts, with true heights, setbacks, crowns and materials; 17.3 Zone 1 and 2 buildings corrected against the point cloud, with their details and real cladding; 17.4 the ground, streets, parks and lake in view; 17.5 new levels and a new default option "Laser-scan model (Phase 17)" in the Variant Manager list `Surroundings`, the older options kept; 17.6 measured checks, re-rendered stations and design views, frame time against the Phase 9 budget.
+
+**Acceptance.** Zone 1 heights within 0.3 m of the point cloud; skyline towers in view within 1 m in height and 2 m in plan; tower-top angular error against freely licensed skyline photographs reported; every material passes the repository's seamless and grazing-light rule, or is listed as an assumption; the exterior and roof-deck paths stay within the Phase 9 frame-time budget, or the overrun is named.
+
+**Approvals.** Laser-scan surfaces and point clouds, city footprints, OpenStreetMap data and freely licensed photographs, at no cost, 25 GB at most, stored in `D:\Wieland1529_lidar\` and `E:\Wieland1529_site_data\phase17\` (owner, 2026-11-14).
+
+**Leaves behind.** The new surroundings and skyline levels; the viewshed map; the skyline table; the materials table with assumptions; re-rendered stills.
+
+---
+
+## Phases 18 and 19: The owner's own walking paths
+
+Added by the owner on 2026-11-14: the owner draws the walk-through paths and the editor re-renders the videos from them.
+
+**Steps.** Phase 18 (runs first, before Phase 17, so the owner can draw while Phase 17 runs): 18.1 plan images of the site and each floor, with an exact pixel-to-world mapping (`owner_review\paths\plans\manifest.json`); 18.2 the drawing page `owner_review\paths\index.html` (built by the supervising session, served by `path_server.py` at http://127.0.0.1:8766/), which saves each path as JSON. Phase 19 (after Phase 17): 19.1 the path tool `tools\wieland_paths.py`: smooth constant-speed camera, look modes, a line-of-sight check (doors and glass panels passable; stair and lift segments marked), Movie Render Graph render, MP4; 19.2 a test path, then the owner's paths; 19.3 re-rendering on request: the page's "Request videos" button writes `RENDER_REQUEST`, and the watcher starts a short session that runs the tool; 19.4 a new dated delivery package on D: and in Drive, the 2026-11-14 package marked superseded.
+
+**Acceptance.** Three known points land correctly on every plan image; each requested path renders to an MP4 at its stated speed and length with no frame jumps; a path through a wall is refused with its location; finished videos copied to the Drive delivery folder.
+
+**Leaves behind.** The plan images and manifest; the drawing page and its server; the path tool; `RENDER_HOW.md`; the videos.
+
+---
+
 ## Phase 12: Material rebuild (runs after Phase 8, before Phase 9)
 
 Added by the owner's decision on 2026-11-12: "rebuild 1–2s". It is numbered 12 because the supervisor's queue takes whole numbers; it runs between Phase 8 and Phase 9 so that Phase 9 budgets the final textures.

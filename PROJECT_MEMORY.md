@@ -1447,3 +1447,28 @@ Errors and surprises of the phase, each with cause, fix and status. "Jn" is the 
 ### Supervision ended -- 2026-11-14 11:53 (supervising session)
 
 - The build is complete: Phase 11 DONE at 08:31. At the owner's request the keep-alive's Startup entry (`wieland_keepalive.cmd`) was deleted, and the keep-alive and watcher processes were stopped. Nothing restarts at sign-in. The scripts remain in the scratchpad `watch\` folder if supervision is ever needed again.
+
+### New phases 17, 18 and 19 set up -- 2026-11-14 12:15 (supervising session)
+
+- Owner requests:
+  - an accurate site model, with every visible building and the downtown skyline from the penthouse roof deck true to real conditions;
+  - a way to draw the video walking paths themselves, with the editor re-rendering the videos.
+- Owner chose the public laser-scan data over Google 3D tiles. Two owner requests about Google were declined:
+  - working around Google's terms;
+  - building a model to match Google's geometry. The Google Maps Platform Terms, section 3.2.3(c), forbid creating content based on Google Maps content (checked on Google's page 2026-11-14).
+- Order:
+  - Phase 18 first (plan images), so the owner can draw while Phase 17 runs;
+  - then Phase 17 (site model), then Phase 19 (path tool, videos, new delivery revision);
+  - all on Opus while Fable's weekly allowance is used up (resets 2026-11-19).
+- Built by the supervisor:
+  - `owner_review\paths\path_server.py` (port 8766; content-type and host checks; path names restricted; deletes go to `_trash\`);
+  - `owner_review\paths\index.html`;
+  - `owner_review\paths\Open path editor.bat`.
+  - Tested on a copy with a fake plan: saving, a floor change via a stair segment, the request flag, refusals, and a traversal attempt.
+- Watcher changes:
+  - `RENDER_REQUEST` written by the page starts a short Sonnet session (`prompt_render.txt`) once Phase 19 is DONE;
+  - `LaunchWorker` takes a prompt override.
+- Keep-alive Startup entry restored because the owner is away.
+- Errors on the way:
+  1. The drawing page's "plans not made yet" overlay stayed on top of the canvas, because a CSS `display: flex` overrode the `hidden` attribute, so clicks never reached the plan. Fix: `.empty[hidden] { display: none; }`. Verified by clicking points in the browser.
+  2. A PowerShell script used `$P` and `$p` as two variables. PowerShell variable names are case-insensitive, so they were the same variable and the write to PLAN.md failed with "Illegal characters in path". Redone with distinct names; never rely on case to separate PowerShell variables.
