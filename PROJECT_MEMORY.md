@@ -1415,3 +1415,4 @@ Errors and surprises of the phase, each with cause, fix and status. "Jn" is the 
   - Phase 16 (Sonnet) redoes the four timelapses without the hotel.
   - Phase 11 then re-renders any still made with the hotel and continues.
 - A first attempt to strip the hotel rows from `asset_downloads.csv` by splitting on CRLF also deleted unrelated rows, because the file mixes line endings. It was caught in the diff, reverted, and redone by splitting on LF; only the 4 hotel rows went.
+- 23:45: the owner cancelled the timelapse redo ("dont re do timelapses"). Phase 16 was removed from the queue and its kickoff file deleted; the Phase 14 videos, made with the hotel, stay as they are. Queue: Phase 15, then Phase 11.
