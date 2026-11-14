@@ -69,6 +69,14 @@ Words used the same way throughout this file:
 - **Station S7 cannot be rendered** (Phase 2: there is no alley; the point lies inside the rear neighbour's lot). The delivery list of step 11.1 therefore has 12 stills that can exist, not 13. The rear of the building is shown by design view D5.
 - **No finish alternative still is rendered**, because the owner has not asked to compare any alternative and has not named them.
 
+## Space used on D:
+
+The owner's approval of 2026-11-13 allows at most 60 GB in `D:\Wieland1529_delivery\`. Read with `du` at the times given; D: had 117.9 GB free at 06:31 on 2026-11-14.
+
+| Time (2026-11-14) | What was added | Folder total (GB) |
+|---|---|---|
+| 06:31 | animation frames 18.7 GB (triplex 7.99, penthouse 7.59, test and superseded frames 3.08, path-traced comparison 0.02), videos 0.45 GB, the twelve stills 0.17 GB (copied from E:, SHA-256 equal to `review\phase11\stills_checksums.json`) | 19.3 |
+
 ## Journal
 
 | No. | Time (Central) | Step | Outcome |

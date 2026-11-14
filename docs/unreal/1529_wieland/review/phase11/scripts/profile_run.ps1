@@ -23,20 +23,30 @@ $exec = 'scalability 3,r.ScreenPercentage 67,r.Streaming.PoolSize 4000,t.MaxFPS 
 $argList = @('/Game/Wieland1529/Delivery/L_W1529_Profile', '-ResX=2560', '-ResY=1440', '-FullScreen', '-nosplash', '-NoSound',
              ('-ExecCmds="{0}"' -f $exec), ('-csvCaptureFrames={0}' -f $Frames), '-ExitAfterCsvProfiling', '-csvGpuStats',
              ('-csvMetadata="label={0},tier=realtime_M7,output=2560x1440"' -f $Label))
+# Windows' per-process counter ("GPU Process Memory") reads 296,753 MB for the editor on this machine (it counts
+# reserved, not resident, memory of DirectX 12), so the whole card's use ("GPU Adapter Memory", the adapter with the
+# most in use = the RTX 4080) is logged instead, with a baseline taken before the program starts. The program's own
+# reading is the record's GPUMem/LocalUsedMB, as in Phase 9.
+function CardMB($kind) {
+    try {
+        $c = Get-Counter -Counter ("\GPU Adapter Memory(*)\{0}" -f $kind) -ErrorAction Stop
+        return [math]::Round((($c.CounterSamples | Measure-Object CookedValue -Maximum).Maximum / 1MB), 0)
+    } catch { return '' }
+}
+$baseline = @(1..5 | ForEach-Object { CardMB 'Dedicated Usage'; Start-Sleep -Milliseconds 400 })
+Say ('card dedicated memory in use before the program starts (the editor on an empty level, the desktop): {0} MB (five readings: {1})' -f ($baseline | Measure-Object -Maximum).Maximum, ($baseline -join ', '))
+Say ('the editor stays open (it hosts the agent), on an empty level with its viewport not drawing in real time')
 Say ('free commit {0:N1} GB; starting {1} {2}' -f ((Get-CimInstance Win32_OperatingSystem).FreeVirtualMemory / 1MB), $exe.FullName, ($argList -join ' '))
 $p = Start-Process -FilePath $exe.FullName -ArgumentList $argList -PassThru
 $null = $p.Handle
 $mem = Join-Path $Out 'video_memory.csv'
-'time,dedicated_gpu_mb,shared_gpu_mb,free_commit_gb,process_private_gb' | Out-File -FilePath $mem -Encoding ascii
+'time,card_dedicated_mb,card_shared_mb,free_commit_gb,process_private_gb' | Out-File -FilePath $mem -Encoding ascii
 $end = (Get-Date).AddMinutes($MaxMinutes)
 while (-not $p.HasExited) {
-    try {
-        $c = Get-Counter -Counter ("\GPU Process Memory(pid_{0}*)\Dedicated Usage" -f $p.Id), ("\GPU Process Memory(pid_{0}*)\Shared Usage" -f $p.Id) -ErrorAction Stop
-        $ded = ($c.CounterSamples | Where-Object { $_.Path -match 'dedicated usage' } | Measure-Object CookedValue -Sum).Sum / 1MB
-        $sha = ($c.CounterSamples | Where-Object { $_.Path -match 'shared usage' } | Measure-Object CookedValue -Sum).Sum / 1MB
-    } catch { $ded = ''; $sha = '' }
+    $ded = CardMB 'Dedicated Usage'
+    $sha = CardMB 'Shared Usage'
     $priv = try { (Get-Process -Id $p.Id -ErrorAction Stop).PrivateMemorySize64 / 1GB } catch { 0 }
-    '{0},{1},{2},{3:N2},{4:N2}' -f (Get-Date -Format 'yyyy-MM-dd HH:mm:ss'), ($(if ($ded -ne '') { '{0:N0}' -f $ded } else { '' }) -replace ',', ''), ($(if ($sha -ne '') { '{0:N0}' -f $sha } else { '' }) -replace ',', ''), ((Get-CimInstance Win32_OperatingSystem).FreeVirtualMemory / 1MB), $priv | Out-File -FilePath $mem -Encoding ascii -Append
+    '{0},{1},{2},{3:N2},{4:N2}' -f (Get-Date -Format 'yyyy-MM-dd HH:mm:ss'), $ded, $sha, ((Get-CimInstance Win32_OperatingSystem).FreeVirtualMemory / 1MB), $priv | Out-File -FilePath $mem -Encoding ascii -Append
     if ((Get-Date) -gt $end) { Say ('STOP: still running after {0} minutes; program ended' -f $MaxMinutes); Stop-Process -Id $p.Id -Force; break }
     Start-Sleep -Milliseconds 500
 }

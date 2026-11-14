@@ -37,6 +37,15 @@ def dirty():
     return sorted(p.get_name() for p in list(utils.get_dirty_content_packages()) + list(utils.get_dirty_map_packages()))
 
 
+def clean_or_stop(before_what, report):
+    """A level switch with anything unsaved would open a "Save changes?" window that nobody answers."""
+    left = dirty()
+    if left:
+        report["stopped_before"] = before_what
+        report["unsaved"] = left
+        raise RuntimeError("unsaved packages before %s: %s; report so far: %s" % (before_what, left, json.dumps(report, default=str)))
+
+
 out = {}
 if unreal.get_editor_subsystem(unreal.MoviePipelineQueueSubsystem).is_rendering():
     raise RuntimeError("a render is running")
@@ -66,11 +75,17 @@ else:
 out["dirty_after_site_save"] = dirty()
 
 # 2. the profile level: copy L_Site_M4 while it is not the open level
+clean_or_stop("opening an empty level", out)
 utils.new_blank_map(False)
 copy = unreal.EditorAssetLibrary.duplicate_asset(SITE, PROFILE)
 out["duplicated"] = copy.get_path_name() if copy else None
 if not copy:
     raise RuntimeError("could not copy %s to %s" % (SITE, PROFILE))
+out["dirty_after_copy"] = dirty()
+if PROFILE in out["dirty_after_copy"] or not unreal.EditorAssetLibrary.does_asset_exist(PROFILE):
+    # the fresh copy exists only in memory until saved; it is the new asset itself, saved by name before it is opened
+    out["copy_saved"] = bool(unreal.EditorAssetLibrary.save_asset(PROFILE, False))
+clean_or_stop("opening the profile level", out)
 utils.load_map(PROFILE)
 if world_path() != PROFILE:
     raise RuntimeError("the profile level did not open: %s" % world_path())
@@ -102,6 +117,7 @@ out["profile_saved"] = bool(utils.save_map(editor.get_editor_world(), PROFILE))
 out["dirty_after_profile_save"] = dirty()
 
 # 3. back to the walk-through level
+clean_or_stop("opening L_Site_M4 again", out)
 utils.load_map(SITE)
 out["open_at_end"] = world_path()
 out["dirty_at_end"] = dirty()

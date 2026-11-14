@@ -1,6 +1,6 @@
 """Phase 11, step 11.5: reduce the packaged build's frame-time record to the final profile.
 
-    python -B review/phase11/scripts/profile_report.py <capture .csv> <video_memory.csv> <out folder> [label]
+    python -B review/phase11/scripts/profile_report.py <capture .csv> <video_memory.csv> <out folder> <label> <card baseline MB>
 
 The record's first column (EVENTS) carries the name of each shot of SEQ_W1529_ProfilePaths when it starts
 (written by the engine), so every frame is given to the path or hold the camera was on. A "pass" is one play of the
@@ -117,24 +117,31 @@ def main():
         measured = [f for f in rows if f["segment"] and not f["segment"].startswith(SETTLE_PREFIX)]
         per["ALL_PATHS_AND_HOLDS"] = stats(measured)
         report["per_pass"][str(p)] = per
-    vram_win = []
+    card = []
     with open(vram_csv, newline="", encoding="ascii", errors="replace") as handle:
         for row in csv.DictReader(handle):
             try:
-                vram_win.append(float(row["dedicated_gpu_mb"]))
+                card.append(float(row["card_dedicated_mb"]))
             except (ValueError, KeyError):
                 pass
-    report["vram_peak_mb_windows_dedicated"] = round(max(vram_win)) if vram_win else None
+    baseline = float(sys.argv[5]) if len(sys.argv) > 5 else None
+    report["card_dedicated_peak_mb"] = round(max(card)) if card else None
+    report["card_dedicated_baseline_mb"] = baseline
+    report["card_peak_minus_baseline_mb"] = round(max(card) - baseline) if card and baseline is not None else None
+    budget = [f["GPUMem/LocalBudgetMB"] for f in frames if "GPUMem/LocalBudgetMB" in f]
+    report["engine_local_budget_mb"] = [round(min(budget)), round(max(budget))] if budget else None
     profile_pass = str(complete[1]) if len(complete) > 1 else (str(complete[0]) if complete else None)
     report["profile_pass"] = profile_pass
     if profile_pass:
         allp = report["per_pass"][profile_pass]["ALL_PATHS_AND_HOLDS"]
         peak_engine = max((s.get("vram_peak_mb_engine") or 0) for s in report["per_pass"][profile_pass].values() if s)
+        peak_engine_all = max((f.get("GPUMem/LocalUsedMB") or 0) for f in frames)
         report["acceptance"] = {
             "p95_all_paths_ms": allp["p95_ms"], "p95_limit_ms": LIMIT_MS, "p95_met": allp["p95_ms"] <= LIMIT_MS,
             "worst_path_p95_ms": max(s["p95_ms"] for k, s in report["per_pass"][profile_pass].items() if s and not k.startswith(SETTLE_PREFIX) and k != "ALL_PATHS_AND_HOLDS"),
-            "vram_peak_mb_engine": peak_engine, "vram_peak_mb_windows": report["vram_peak_mb_windows_dedicated"],
-            "vram_limit_mb": LIMIT_VRAM_MB, "vram_met": max(peak_engine, report["vram_peak_mb_windows_dedicated"] or 0) <= LIMIT_VRAM_MB}
+            "vram_peak_mb_engine_profile_pass": peak_engine, "vram_peak_mb_engine_whole_record": round(peak_engine_all),
+            "card_peak_minus_baseline_mb": report["card_peak_minus_baseline_mb"],
+            "vram_limit_mb": LIMIT_VRAM_MB, "vram_met": peak_engine_all <= LIMIT_VRAM_MB}
     os.makedirs(out, exist_ok=True)
     with open(os.path.join(out, "final_profile_%s.json" % label), "w", encoding="utf-8") as handle:
         json.dump(report, handle, indent=1)
@@ -152,12 +159,13 @@ def main():
                 seg, s["frames"], s["mean_ms"], s["p95_ms"], s["worst_ms"], s["over_16_67"], s["over_33_3"],
                 s.get("gpu_mean_ms", ""), s.get("game_thread_mean_ms", ""), s.get("render_thread_mean_ms", ""), s.get("vram_peak_mb_engine", "")))
         lines.append("")
-    lines += ["Video memory peak reported by Windows for the program (dedicated): %s MB." % report["vram_peak_mb_windows_dedicated"], ""]
+    lines += ["Video memory, whole graphics card as Windows reports it (dedicated): peak %s MB, %s MB in use before the program started (the editor on an empty level and the desktop), difference %s MB. The engine's own budget for the program: %s MB." % (
+        report["card_dedicated_peak_mb"], report["card_dedicated_baseline_mb"], report["card_peak_minus_baseline_mb"], report["engine_local_budget_mb"]), ""]
     if report.get("acceptance"):
         lines += ["Acceptance: " + json.dumps(report["acceptance"]), ""]
     with open(os.path.join(out, "final_profile_%s.md" % label), "w", encoding="utf-8") as handle:
         handle.write("\n".join(lines))
-    print(json.dumps({k: report[k] for k in ("frames_in_record", "passes_started", "complete_passes", "profile_pass", "vram_peak_mb_windows_dedicated")}))
+    print(json.dumps({k: report[k] for k in ("frames_in_record", "passes_started", "complete_passes", "profile_pass", "card_dedicated_peak_mb", "card_peak_minus_baseline_mb", "engine_local_budget_mb")}))
     print(json.dumps(report.get("acceptance")))
 
 

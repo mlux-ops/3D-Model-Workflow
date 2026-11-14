@@ -34,10 +34,14 @@ if project_root is None:
 found = {}
 
 
+per_file = []  # every cooked asset of the build with its group: the per-asset form of the table
+
+
 def add(group, rel, size):
     entry = found.setdefault(group, {"files": 0, "bytes": 0, "example": rel})
     entry["files"] += 1
     entry["bytes"] += size
+    per_file.append((rel, group, size))
 
 
 def companions(path):
@@ -72,8 +76,11 @@ if os.path.isdir(engine_root):
     for root, _, files in os.walk(engine_root):
         for f in files:
             if f.endswith((".uasset", ".umap")):
+                size = companions(os.path.join(root, f))
                 engine_files += 1
-                engine_bytes += companions(os.path.join(root, f))
+                engine_bytes += size
+                per_file.append(("Engine/" + os.path.relpath(os.path.join(root, f), engine_root).replace(os.sep, "/"),
+                                 "Unreal Engine and engine-plugin content", size))
 
 rows = []
 for group, entry in sorted(found.items(), key=lambda kv: -kv[1]["bytes"]):
@@ -99,6 +106,13 @@ with open(out_csv, "w", newline="", encoding="utf-8") as handle:
     writer = csv.DictWriter(handle, fieldnames=list(rows[0].keys()))
     writer.writeheader()
     writer.writerows(rows)
+status_of = {r["group"]: (r["status"], r["licence_as_recorded"]) for r in rows}
+files_csv = os.path.splitext(out_csv)[0] + "_per_asset.csv"
+with open(files_csv, "w", newline="", encoding="utf-8") as handle:
+    writer = csv.writer(handle)
+    writer.writerow(["asset_in_build", "group", "status", "licence_as_recorded", "cooked_bytes"])
+    for rel, group, size in sorted(per_file):
+        writer.writerow([rel, group, status_of[group][0], status_of[group][1], size])
 summary = {"cooked_folder": cooked, "groups": len(rows),
            "not_recorded_groups": [r["group"] for r in rows if r["status"] in ("NO RECORD", "NOT RECORDED")],
            "not_recorded_mb": round(sum(r["cooked_mb"] for r in rows if r["status"] in ("NO RECORD", "NOT RECORDED")), 1),

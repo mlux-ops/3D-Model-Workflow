@@ -58,7 +58,7 @@ Copy the `build\` folder anywhere on a Windows 10 or 11 computer (64-bit) and do
 | `Run_Walkthrough_Window_1920x1080.bat` | The same in a 1,920 by 1,080 window, for a smaller screen. |
 | `Run_Profile_FixedPaths.bat` | Plays the fixed camera paths of section 5 in a loop, records the frame times and closes by itself after about ten minutes. The record is written to `build\Windows\Wieland1527\Saved\Profiling\CSV\`. |
 
-Controls in the walk-through: the mouse looks around; W, A, S, D move; E or Space rises, Q or C sinks. The viewer flies (no gravity) and stops at walls. Alt+F4 closes the program. The walk-through starts on the west sidewalk at station S1, facing the building. The four apartments load as the viewer enters each one (the same streaming boxes the editor uses), so a short pause on entering a unit is normal.
+Controls in the walk-through: the mouse looks around; W, A, S, D move; E or Space rises, Q or C sinks. The viewer flies (no gravity). Alt+F4 closes the program. The walk-through starts on the west sidewalk at station S1, facing the building. The interior level of each of the four apartments is loaded when the viewer enters that apartment and unloaded when the viewer leaves it (Unreal's streaming boxes, set up in Phase 6); from outside, all four are loaded.
 
 Starting `build\Windows\Wieland1527.exe` directly also opens the walk-through, but with the project's general settings (full pixel count, frame rate capped at 60), not the measured real-time settings.
 
