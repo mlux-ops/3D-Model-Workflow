@@ -98,6 +98,9 @@ The owner's approval of 2026-11-13 allows at most 60 GB in `D:\Wieland1529_deliv
 | Time (2026-11-14) | What was added | Folder total (GB) |
 |---|---|---|
 | 06:31 | animation frames 18.7 GB (triplex 7.99, penthouse 7.59, test and superseded frames 3.08, path-traced comparison 0.02), videos 0.45 GB, the twelve stills 0.17 GB (copied from E:, SHA-256 equal to `review\phase11\stills_checksums.json`) | 19.3 |
+| 07:13 | the package folder `package\1529_Wieland_UE5.9_Delivery_2026-11-14\` 3.3 GB (packaged build 2.58 GB, copies of stills, videos and comparison frames, profile files, notes); `profile_run\` 0.3 GB; `logs\` | 22.9 |
+| 07:15 | the package zip 2.91 GB with its manifest and checksum file | 25.7 |
+| 07:24 | the project archive zip 9.00 GB with its manifest (3.3 MB) and checksum file | 34.3 |
 
 ## Journal
 
