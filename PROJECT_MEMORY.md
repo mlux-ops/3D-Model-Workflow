@@ -1477,3 +1477,15 @@ Errors and surprises of the phase, each with cause, fix and status. "Jn" is the 
   - At 90 percent or more on the weekly all-models window, or on any Opus or Sonnet weekly window, it runs `watch\stop_all.ps1`, which writes `STOP`, ends the watcher and the agent, and leaves the editor open.
   - Weekly all-models usage was at 68 percent at 12:20.
   - Limit: the cron job lives only while the supervising session is open, and it expires after 7 days.
+
+## Phase 18: plan images for the path-drawing page -- 2026-11-14 12:05 to 12:25 (journal `docs\unreal\1529_wieland\phase18_results.md`)
+
+- Made eight 2,048 px top views: the site plan, the lower level, the 1st floor, the rear deck, and the 2nd, 3rd and 4th floors and the roof deck. Each is listed in `owner_review\paths\plans\manifest.json`. Floor plans are cut 1.2 m above the floor and all use one scale (1.75 cm per pixel). Tools: `tools\phase18_capture.py`, `tools\phase18_plans.py`.
+- Check: temporary marker cubes at the SW and NE lot corners and at a stair centre, rendered by the engine, land within 0.41 px of the page's formula on every plan (limit 3 px). The page lists all eight plans, shown in a headless screenshot.
+- Errors and conflicts on the way:
+  1. **North up and the manifest formula cannot both hold.** Cause: the formula ties world X to the horizontal pixel axis, and the level's north is -X; corner values can flip an axis but not turn it a quarter turn. The page's `index.html` uses the formula exactly. Fix: kept the formula exact and put north to the LEFT, with the street at the bottom and a north arrow on every image. The manifest says `north_up: false`, `up_axis: -Y`, `right_axis: +X`. Status: settled; the owner should know the plans show north to the left. Phase 19: "direction from north" on the page means level -X.
+  2. At the start, `owner_review\paths\` held only `path_server.py`, because `index.html` arrived from the supervising session a few minutes later. Status: no action needed.
+  3. Setting `show_only_actors` with `set_editor_property` on a SceneCaptureComponent2D fails ("cannot be edited on templates"). Fix: call `show_only_actor_components(actor)` for each actor instead. One capture actor was left behind by the failed run and was removed by the next run's cleanup. Status: fixed.
+  4. Line traces return nothing in this level, because the meshes have no collision. Fix: took floor heights from the floor-slab bounds instead. Status: noted for later phases.
+  5. A cut at the camera's near plane opens the wall meshes, so the walls vanish from the picture. Fix: walls were drawn from a separate capture looking up from below the floor, with doors and windows drawn from their outlines. Status: fixed.
+- Afterwards the editor lists unsaved changes in `L_Site_M4` (from my temporary actors, now removed) and in both penthouse levels. My scripts placed nothing in the penthouse levels, and their state at the start was not read. Nothing was saved. Do not save these levels.
