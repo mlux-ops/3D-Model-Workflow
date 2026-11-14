@@ -81,25 +81,36 @@ def clean(geom, min_area):
 
 
 class MeshOut:
+    """Triangles in level cm about a pivot, with UV channel 0 in metres (walls: along the wall and up from the
+    ground; roofs: east and north from the pivot), a material number per triangle (0 wall, 1 roof, 2 mast), and the
+    same vertices in map feet at their true height (mv), for the check raster."""
+
     def __init__(self, frame, pivot_map, drop_fn):
-        self.v, self.t, self.m = [], [], []
+        self.v, self.t, self.m, self.uv, self.mv = [], [], [], [], []
         self.frame, self.drop = frame, drop_fn
+        self.pe, self.pn, self.ground = pivot_map
         self.pivot = frame.level_from_map(pivot_map[0], pivot_map[1], pivot_map[2])
 
-    def vert(self, e, n, z_ft):
+    def vert(self, e, n, z_ft, u, w):
         x, y, z = self.frame.level_from_map(e, n, z_ft - self.drop(e, n) / FT)
         self.v.append((round(x - self.pivot[0], 2), round(y - self.pivot[1], 2), round(z - self.pivot[2], 2)))
+        self.uv.append((round(u, 3), round(w, 3)))
+        self.mv.append((e, n, z_ft))
         return len(self.v) - 1
 
     def walls(self, poly, z0, z1, mat):
+        h0, h1 = (z0 - self.ground) * FT, (z1 - self.ground) * FT
         for ring in [poly.exterior] + list(poly.interiors):
             pts = list(ring.coords)[:-1]
             if not ring.is_ccw ^ (ring is not poly.exterior):
                 pts = pts[::-1]  # exterior counter-clockwise seen from above, holes clockwise: walls face out
+            along = 0.0
             for i in range(len(pts)):
                 a, b = pts[i], pts[(i + 1) % len(pts)]
-                i0, i1 = self.vert(a[0], a[1], z0), self.vert(b[0], b[1], z0)
-                i2, i3 = self.vert(b[0], b[1], z1), self.vert(a[0], a[1], z1)
+                length = math.hypot(b[0] - a[0], b[1] - a[1]) * FT
+                i0, i1 = self.vert(a[0], a[1], z0, along, h0), self.vert(b[0], b[1], z0, along + length, h0)
+                i2, i3 = self.vert(b[0], b[1], z1, along + length, h1), self.vert(a[0], a[1], z1, along, h1)
+                along += length
                 # Level frame is mirrored (east = -Y), so winding seen in the level flips: emit as (i0, i2, i1).
                 self.t += [(i0, i2, i1), (i0, i3, i2)]
                 self.m += [mat, mat]
@@ -112,9 +123,137 @@ class MeshOut:
                 continue
             if not Polygon(c).exterior.is_ccw:
                 c = c[::-1]
-            ids = [self.vert(e, n, z) for e, n in c]
+            ids = [self.vert(e, n, z, (e - self.pe) * FT, (n - self.pn) * FT) for e, n in c]
             self.t.append((ids[0], ids[2], ids[1]))
             self.m.append(mat)
+
+    def soup(self, pts_ft, faces):
+        """Add triangles given in map feet (e, n, z), counter-clockwise seen from outside. Each triangle gets its own
+        vertices: roofs (normal more than 60 degrees up) are mapped east and north, walls by the horizontal axis they
+        face least, so a facade grid stays upright on every wall."""
+        for f in faces:
+            a, b, c = pts_ft[f[0]], pts_ft[f[1]], pts_ft[f[2]]
+            nrm = np.cross(b - a, c - a)
+            ln = float(np.linalg.norm(nrm))
+            if ln < 1e-9:
+                continue
+            nrm = nrm / ln
+            ids = []
+            for p in (a, b, c):
+                if abs(nrm[2]) > 0.5:
+                    u, w = (p[0] - self.pe) * FT, (p[1] - self.pn) * FT
+                elif abs(nrm[0]) > abs(nrm[1]):
+                    u, w = (p[1] - self.pn) * FT, (p[2] - self.ground) * FT
+                else:
+                    u, w = (p[0] - self.pe) * FT, (p[2] - self.ground) * FT
+                ids.append(self.vert(float(p[0]), float(p[1]), float(p[2]), u, w))
+            self.t.append((ids[0], ids[2], ids[1]))
+            self.m.append(1 if nrm[2] > 0.5 else 0)
+
+
+def raster_top(mv, tris, x0, y1, w, h, ground_ft):
+    """Highest non-vertical surface of a mesh over a 1 ft grid, in metres above ground (NaN where none)."""
+    z = np.full((h, w), -np.inf)
+    P = np.asarray(mv, dtype=np.float64)
+    for t in tris:
+        a, b, c = P[t[0]], P[t[1]], P[t[2]]
+        den = (b[1] - c[1]) * (a[0] - c[0]) + (c[0] - b[0]) * (a[1] - c[1])
+        if abs(den) < 1e-6:
+            continue  # vertical in plan
+        c0 = max(int(math.floor(min(a[0], b[0], c[0]) - x0)), 0)
+        c1 = min(int(math.ceil(max(a[0], b[0], c[0]) - x0)), w)
+        r0 = max(int(math.floor(y1 - max(a[1], b[1], c[1]))), 0)
+        r1 = min(int(math.ceil(y1 - min(a[1], b[1], c[1]))), h)
+        if c1 <= c0 or r1 <= r0:
+            continue
+        X, Y = np.meshgrid(x0 + np.arange(c0, c1) + 0.5, y1 - np.arange(r0, r1) - 0.5)
+        l1 = ((b[1] - c[1]) * (X - c[0]) + (c[0] - b[0]) * (Y - c[1])) / den
+        l2 = ((c[1] - a[1]) * (X - c[0]) + (a[0] - c[0]) * (Y - c[1])) / den
+        l3 = 1.0 - l1 - l2
+        inside = (l1 >= -1e-6) & (l2 >= -1e-6) & (l3 >= -1e-6)
+        if not inside.any():
+            continue
+        sub = z[r0:r1, c0:c1]
+        np.maximum(sub, np.where(inside, l1 * a[2] + l2 * b[2] + l3 * c[2], -np.inf), out=sub)
+    z = (z - ground_ft) * FT
+    z[~np.isfinite(z)] = np.nan
+    return z
+
+
+def interior_cells(hgrid, valid):
+    """Cells at least 2 ft from a height step of more than 2 m (walls are judged by the plan check instead)."""
+    g0 = np.nan_to_num(hgrid, nan=0.0)
+    step = ndimage.maximum_filter(g0, size=5) - ndimage.minimum_filter(g0, size=5)
+    return valid & (step < 2.0)
+
+
+def heightfield(med, bmask, x0, y1, cell, ground_ft, base_ft):
+    """A closed surface from the filtered 1 ft heights: a vertex at every cell corner touching the building, at the
+    highest of its building cells, two triangles per cell, and a skirt down to the base around the outline; then
+    decimated with fast_simplification as far as the 95th-percentile vertical error over the roof stays at or under
+    0.25 m. Returns (points in map feet, faces, reduction used, p95 error in m)."""
+    import fast_simplification
+    h, w = bmask.shape
+    hz = np.where(bmask, med, -np.inf)
+    pad = np.pad(hz, 1, constant_values=-np.inf)
+    corner = np.maximum.reduce([pad[:-1, :-1], pad[:-1, 1:], pad[1:, :-1], pad[1:, 1:]])  # (h+1, w+1)
+    used = np.isfinite(corner)
+    idx = -np.ones(corner.shape, np.int64)
+    idx[used] = np.arange(int(used.sum()))
+    rr, cc = np.nonzero(used)
+    top = np.column_stack([x0 + cc * cell, y1 - rr * cell, ground_ft + corner[used] / FT])
+    nt = len(top)
+    br, bc = np.nonzero(bmask)
+    a, b, c, d = idx[br, bc], idx[br, bc + 1], idx[br + 1, bc + 1], idx[br + 1, bc]
+    # a north-west, b north-east, c south-east, d south-west: (a, d, c) and (a, c, b) run counter-clockwise from above.
+    faces = [np.column_stack([a, d, c]), np.column_stack([a, c, b])]
+    bot_index = {}
+
+    def bottom(i):
+        if i not in bot_index:
+            bot_index[i] = nt + len(bot_index)
+        return bot_index[i]
+    m = np.pad(bmask, 1)
+    sk = []
+    # For each side of a building cell that faces a non-building cell: the side's two corners, in the order that runs
+    # counter-clockwise around the building seen from above (so the wall faces out).
+    sides = (((-1, 0), (0, 1), (0, 0)),   # north side: from north-east corner to north-west corner
+             ((1, 0), (1, 0), (1, 1)),    # south side: south-west to south-east
+             ((0, -1), (0, 0), (1, 0)),   # west side: north-west to south-west
+             ((0, 1), (1, 1), (0, 1)))    # east side: south-east to north-east
+    for (dr, dc), c1, c2 in sides:
+        side = bmask & ~m[1 + dr:1 + dr + h, 1 + dc:1 + dc + w]
+        for r, cl in zip(*np.nonzero(side)):
+            p, q = int(idx[r + c1[0], cl + c1[1]]), int(idx[r + c2[0], cl + c2[1]])
+            sk.append((p, q, bottom(q), bottom(p)))
+    pts = [top]
+    if sk:
+        order = sorted(bot_index, key=bot_index.get)
+        bots = top[order].copy()
+        bots[:, 2] = base_ft
+        pts.append(bots)
+        sk = np.array(sk)
+        # Outward wall seen from outside: p (top), q (top), bottom(q), bottom(p) runs counter-clockwise.
+        faces += [np.column_stack([sk[:, 0], sk[:, 3], sk[:, 2]]), np.column_stack([sk[:, 0], sk[:, 2], sk[:, 1]])]
+    P = np.vstack(pts)
+    F = np.vstack(faces).astype(np.int64)
+    centre = P.mean(axis=0)
+    local = P - centre
+    ref = np.where(bmask, med, np.nan)
+    inner = interior_cells(ref, bmask)
+    for red in (0.97, 0.93, 0.85, 0.7):
+        pp, ff = fast_simplification.simplify(local.astype(np.float32), F.astype(np.int32), target_reduction=red, agg=5)
+        pp = pp.astype(np.float64) + centre
+        zr = raster_top(pp, ff, x0, y1, w, h, ground_ft)
+        err = np.abs(zr - ref)[inner]
+        err = err[np.isfinite(err)]
+        p95 = float(np.percentile(err, 95)) if len(err) else 99.0
+        if p95 <= 0.25 and len(err) > 0.8 * inner.sum():
+            return pp, ff, red, p95
+    zr = raster_top(P, F, x0, y1, w, h, ground_ft)
+    err = np.abs(zr - ref)[inner]
+    err = err[np.isfinite(err)]
+    return P, F, 0.0, float(np.percentile(err, 95)) if len(err) else 99.0
 
 
 PC_FOLDER = "D:/Wieland1529_lidar/derived"
@@ -295,9 +434,9 @@ def build(bid, row, base, frame, county, dtm6, out):
         return d * d / (2.0 * R_EARTH_M) * (1.0 - K_REFRACTION)
 
     c = outline.centroid
+    base_ft = ground_ft - 1.0 / FT  # 1 m below the ground so no gap shows where the ground model is coarser
     mesh = MeshOut(frame, (c.x, c.y, ground_ft), drop)
     prisms = []
-    base_ft = ground_ft - 1.0 / FT  # 1 m below the ground so no gap shows where the ground model is coarser
     prev_ft = base_ft
     for i, t in enumerate(tops):
         region = clean(region_polygon(level >= i, x0, y1, cell), MIN_AREA_FT2 if i > 0 else 50.0)
@@ -309,6 +448,47 @@ def build(bid, row, base, frame, county, dtm6, out):
             mesh.cap(poly, top_ft, 1)
         prisms.append({"top_m": t, "area_ft2": round(region.area, 1), "wkt": shapely.to_wkt(region, rounding_precision=1)})
         prev_ft = top_ft
+    if not mesh.t:
+        return None
+    # How well the terraces follow the filtered surface: 95th percentile of the vertical difference over the roof,
+    # away from walls. Where it is over 0.5 m (sloped or tapered crowns, pitched roofs), a height field is built
+    # from the same surface and the one with the smaller difference is kept.
+    ref = np.where(bmask, med, np.nan)
+    inner = interior_cells(ref, bmask)
+
+    def p95_of(mv, tris):
+        zr = raster_top(mv, tris, x0, y1, w, h, ground_ft)
+        err = np.abs(zr - ref)[inner]
+        err = err[np.isfinite(err)]
+        return float(np.percentile(err, 95)) if len(err) else 99.0, zr
+    prism_p95, prism_grid = p95_of(mesh.mv, mesh.t)
+    form, hf_info, model_grid = "terraces", None, prism_grid
+    if prism_p95 > 0.5:
+        # The filtered surface shaves narrow crowns (St Regis: 349.8 m against 353.7 m in the returns). Where the
+        # building's returns were streamed, each building cell takes the higher of the surface and the highest
+        # return in the cell (median over 3 by 3 ft, so a single stray return does not count). Masts stay apart.
+        hmed = med
+        if pc is not None:
+            pg = np.full(dsm.size, -np.inf)
+            pcc = ((pc["x"] - x0) / cell).astype(int)
+            prr = ((y1 - pc["y"]) / cell).astype(int)
+            pok = (pcc >= 0) & (pcc < w) & (prr >= 0) & (prr < h) & ~np.isin(pc["cls"], [2, 3, 4, 5, 9])
+            np.maximum.at(pg, prr[pok] * w + pcc[pok], (pc["z"][pok] - ground_ft) * FT)
+            pg = pg.reshape(h, w)
+            pgf = ndimage.median_filter(np.where(np.isfinite(pg), pg, med), size=3)
+            near_mast = np.zeros((h, w), bool)
+            for m in masts:
+                mc, mr = int((m["east"] - x0) / cell), int((y1 - m["north"]) / cell)
+                rad = int(m["radius_ft"] / cell) + 3
+                near_mast[max(mr - rad, 0):mr + rad + 1, max(mc - rad, 0):mc + rad + 1] = True
+            hmed = np.where(bmask & ~near_mast, np.maximum(med, pgf), med)
+        pts, faces, red, hf_p95 = heightfield(hmed, bmask, x0, y1, cell, ground_ft, base_ft)
+        hf_info = {"reduction": red, "p95_m": round(hf_p95, 3), "faces": int(len(faces))}
+        if hf_p95 < prism_p95:
+            mesh = MeshOut(frame, (c.x, c.y, ground_ft), drop)
+            mesh.soup(pts, faces)
+            form = "height field"
+            _, model_grid = p95_of(mesh.mv, mesh.t)
     for m in masts:
         poly = Polygon([(m["east"] + m["radius_ft"] * math.cos(a), m["north"] + m["radius_ft"] * math.sin(a))
                         for a in np.linspace(0, 2 * math.pi, 9)[:-1]])
@@ -316,17 +496,19 @@ def build(bid, row, base, frame, county, dtm6, out):
         z1 = ground_ft + m["top_m"] / FT
         mesh.walls(poly, z0, z1, 2)
         mesh.cap(poly, z1, 2)
-    if not mesh.t:
-        return None
     dist = math.hypot(c.x - d1e, c.y - d1n) * FT
     name = "P17T_%s" % bid
     data = {"name": name, "kind": "building", "zone": 4 if dist > 1000 else 3, "pivot": [round(v, 2) for v in mesh.pivot],
-            "vertices": mesh.v, "triangles": mesh.t, "tri_mat": mesh.m}
+            "vertices": mesh.v, "triangles": mesh.t, "tri_mat": mesh.m, "uv0_m": mesh.uv}
     with open(os.path.join(out, name + ".json"), "w", encoding="utf-8") as handle:
         json.dump(data, handle)
-    top_roof = max(p["top_m"] for p in prisms) if prisms else 0.0
+    # The model's top surface on the 1 ft grid (true heights, before the curvature drop), for the point-cloud check.
+    np.savez_compressed(os.path.join(out, name + "_grid.npz"), z=model_grid.astype(np.float32), x0=x0, y1=y1, cell=cell,
+                        ground_ft=ground_ft, tops=np.array(tops))
+    top_roof = max(tops)
     top_all = max([top_roof] + [m["top_m"] for m in masts])
-    rec = {"id": bid, "name": name, "distance_m": round(dist, 1), "ground_ft": round(ground_ft, 4),
+    rec = {"id": bid, "name": name, "distance_m": round(dist, 1), "ground_ft": round(ground_ft, 4), "form": form,
+           "terrace_p95_m": round(prism_p95, 3), "heightfield": hf_info,
            "terraces": len(prisms), "roof_top_m": round(top_roof, 2), "mast_count": len(masts),
            "top_incl_masts_m": round(top_all, 2), "curvature_drop_m": round(drop(c.x, c.y), 3),
            "placed_top_m": round(top_all - drop(c.x, c.y), 2), "triangles": len(mesh.t),
@@ -355,7 +537,7 @@ def main(argv):
                 continue
             rec_file.write(json.dumps(rec) + "\n")
             print(bid, "terraces", rec["terraces"], "roof %.1f m" % rec["roof_top_m"], "masts", rec["mast_count"],
-                  "top %.1f m" % rec["top_incl_masts_m"], "tris", rec["triangles"])
+                  "top %.1f m" % rec["top_incl_masts_m"], "tris", rec["triangles"], rec["form"], "terrace p95", rec["terrace_p95_m"], rec["heightfield"])
     return 0
 
 

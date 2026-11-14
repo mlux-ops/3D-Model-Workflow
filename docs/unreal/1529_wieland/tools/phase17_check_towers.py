@@ -1,38 +1,34 @@
 """Phase 17: measure built towers and buildings against the 2022 laser-scan point cloud.
 
 Usage:
-    python -B -P phase17_check_towers.py <towers_record.jsonl> <out csv> [point-cloud folder]
+    python -B -P phase17_check_towers.py <mesh folder> <out csv> [point-cloud folder] [id ...]
 
-For each record line (written by phase17_towers.py, with each terrace's outline as WKT) whose building has
-streamed returns (pc_*.npz with a .source.txt, see phase17_las_stream.py):
+For each record in <mesh folder>/towers_record.jsonl (the last line per building wins) whose building has streamed
+returns (pc_*.npz with a .source.txt, see phase17_las_stream.py), using the model's top surface on the 1 ft grid
+(<name>_grid.npz, written by phase17_towers.py, true heights before the curvature drop):
 
-1. A 1 ft grid of the highest return per cell, ground (2), vegetation (3-5) and water (9) left out, as height above
-   the record's ground.
-2. Height error per terrace: over the part of the plan where that terrace is the top surface, eroded by 3 ft so the
-   edges do not count, the median return height minus the modelled top. The roof error is the top terrace's; the
-   worst error is the largest over terraces with at least 300 sq ft of eroded roof and 50 cells of returns.
-3. Plan error per terrace with at least 1,000 sq ft: the cells whose returns reach the terrace top less 1 m, closed
-   over 3 ft, kept within 15 ft of the model outline, as an outline; the mean edge offset is the area between the two
-   outlines divided by the model outline's perimeter. The footprint uses 2.5 m. The worst is reported.
-4. Masts: second-highest return within the mast radius plus 3 ft, against the modelled mast top.
-
-The returns are the same survey as the 1 ft surface model the terraces come from, but a different product (the
-surface model is gridded and filled by the state); the masts come from the returns, so their check is a
-consistency check only and says so.
+1. Measured grid: the highest return per 1 ft cell, ground (2), vegetation (3-5), water (9) and noise left out,
+   in metres above the record's ground.
+2. Roof height: the median of the measured cells over the model's highest roof (cells within 0.5 m of the model's
+   top, away from walls) minus the model's roof top there. Also the highest return over the roof that is not a mast.
+3. Surface: the 95th percentile of the absolute vertical difference, model minus measured, over every cell where
+   either is building and the returns have data, away from walls (2 ft from any step of more than 2 m in either
+   grid); walls are judged by the plan check.
+4. Plan, per level (the footprint at 2.5 m, then each terrace top with at least 1,000 sq ft): the model's outline
+   at the level less 1 m against the measured outline at the same level (closed over 3 ft, kept within 15 ft of the
+   model). Distances from each outline's edge cells to the other's: mean and 95th percentile; the footprint is
+   reported apart, since neighbours that touch it make its measured outline larger.
+5. Masts: the second-highest return within the mast radius plus 3 ft, against the modelled mast top (the masts are
+   taken from the same returns, so this is a consistency check only).
 """
 
 import csv
 import glob
 import json
-import math
 import os
 import sys
 
 import numpy as np
-import shapely
-from shapely import wkt as swkt
-from shapely.geometry import MultiPolygon, Polygon, box as sbox
-from shapely.ops import unary_union
 from scipy import ndimage
 
 FT = 0.3048006096
@@ -44,100 +40,137 @@ def load_pc(folder):
     for path in sorted(glob.glob(os.path.join(folder, "pc_*.npz"))):
         if not os.path.exists(path + ".source.txt") or path.endswith("_willis.npz"):
             continue
-        d = np.load(path)
-        out[path] = d
+        out[path] = np.load(path)
     return out
 
 
 def points_for(bid, pcs):
-    xs, ys, zs = [], [], []
-    for path, d in pcs.items():
+    """Returns of one building's box from every streamed tile, and the squares (2,500 ft tiles) they came from."""
+    xs, ys, zs, tiles = [], [], [], []
+    for d in pcs.values():
         labels = [str(v) for v in d["labels"]]
         if bid not in labels:
             continue
-        box = d["box"]
-        sel = (box == labels.index(bid)) & ~np.isin(d["cls"], SKIP_CLASSES)
+        sel = (d["box"] == labels.index(bid)) & ~np.isin(d["cls"], SKIP_CLASSES)
         xs.append(d["x"][sel]); ys.append(d["y"][sel]); zs.append(d["z"][sel])
+        t = str(d["tile"])
+        tiles.append((int(t[:4]) * 100 + 1e6, int(t[4:]) * 100 + 1e6))
     if not xs:
         return None
-    return np.concatenate(xs), np.concatenate(ys), np.concatenate(zs)
+    return np.concatenate(xs), np.concatenate(ys), np.concatenate(zs), tiles
 
 
-def region_from_mask(mask, x0, y1):
-    rects = []
-    for r in range(mask.shape[0]):
-        row = mask[r]
-        if not row.any():
-            continue
-        d = np.diff(np.concatenate([[0], row.view(np.int8), [0]]))
-        for a, b in zip(np.nonzero(d == 1)[0], np.nonzero(d == -1)[0]):
-            rects.append(sbox(x0 + a, y1 - r - 1, x0 + b, y1 - r))
-    return unary_union(rects) if rects else Polygon()
+def edge(mask):
+    return mask & ~ndimage.binary_erosion(mask)
 
 
-def check(rec, pcs):
+def outline_distances(model, meas):
+    """Distances in metres from each outline's edge cells to the other outline's edge: mean and 95th percentile."""
+    em, es = edge(model), edge(meas)
+    if not em.any() or not es.any():
+        return None
+    dm = ndimage.distance_transform_edt(~es)[em]
+    ds = ndimage.distance_transform_edt(~em)[es]
+    allv = np.concatenate([dm, ds]) * FT
+    return float(allv.mean()), float(np.percentile(allv, 95))
+
+
+def check(rec, grid, pcs, visible_m=None):
     pts = points_for(rec["id"], pcs)
     if pts is None:
         return None
-    x, y, z = pts
-    polys = [swkt.loads(p["wkt"]) for p in rec["prisms"]]
-    tops = [p["top_m"] for p in rec["prisms"]]
-    allp = unary_union(polys)
-    minx, miny, maxx, maxy = allp.buffer(20).bounds
-    x0, y1 = math.floor(minx), math.ceil(maxy)
-    w, h = int(math.ceil(maxx) - x0), int(y1 - math.floor(miny))
+    x, y, z, tiles = pts
+    zm = grid["z"].astype(np.float64)
+    x0, y1 = float(grid["x0"]), float(grid["y1"])
+    h, w = zm.shape
+    # Only the part of the grid inside the streamed tiles is judged (a building on a tile edge may have one tile).
+    cov = np.zeros((h, w), bool)
+    for te, tn in tiles:
+        c0, c1 = int(max(te - x0, 0)), int(min(te + 2500 - x0, w))
+        r0, r1 = int(max(y1 - (tn + 2500), 0)), int(min(y1 - tn, h))
+        if c1 > c0 and r1 > r0:
+            cov[r0:r1, c0:c1] = True
+    zm[~cov] = np.nan
     c = np.floor(x - x0).astype(int)
     r = np.floor(y1 - y).astype(int)
     ok = (c >= 0) & (c < w) & (r >= 0) & (r < h)
-    grid = np.full(h * w, -np.inf)
-    np.maximum.at(grid, r[ok] * w + c[ok], (z[ok] - rec["ground_ft"]) * FT)
-    grid = grid.reshape(h, w)
-    has = np.isfinite(grid)
-    cx = x0 + np.arange(w) + 0.5
-    cy = y1 - np.arange(h) - 0.5
-    gx, gy = np.meshgrid(cx, cy)
-    inside = [shapely.contains_xy(p, gx, gy) for p in polys]
-    model_level = np.full((h, w), -1)
-    for i, m in enumerate(inside):
-        model_level[m] = i
-    res = {"id": rec["id"], "name": rec["name"], "distance_m": rec["distance_m"], "returns": int(len(x)),
-           "model_roof_m": rec["roof_top_m"], "model_top_m": rec["top_incl_masts_m"]}
-    terr = []
-    for i, t in enumerate(tops):
-        own = ndimage.binary_erosion(model_level == i, iterations=3)
-        cells = own & has
-        if own.sum() < 300 or cells.sum() < 50:
-            continue
-        med = float(np.median(grid[cells]))
-        terr.append({"i": i, "top_m": t, "measured_m": round(med, 2), "err_m": round(med - t, 2),
-                     "cells": int(cells.sum())})
-    res["terraces_checked"] = len(terr)
-    if terr:
-        top = max(terr, key=lambda d: d["top_m"])
-        worst = max(terr, key=lambda d: abs(d["err_m"]))
-        res.update({"roof_measured_m": top["measured_m"], "roof_err_m": top["err_m"],
-                    "worst_terrace_err_m": worst["err_m"], "worst_terrace_top_m": worst["top_m"]})
-    filled = ndimage.binary_closing(has, iterations=2)
-    hgrid = np.where(has, grid, -np.inf)
-    hgrid = ndimage.grey_closing(np.where(np.isfinite(hgrid), hgrid, -50.0), size=(3, 3))
+    meas = np.full(h * w, -np.inf)
+    np.maximum.at(meas, r[ok] * w + c[ok], (z[ok] - rec["ground_ft"]) * FT)
+    meas = meas.reshape(h, w)
+    has = np.isfinite(meas)
+    meas[~has] = np.nan
+    # Mast cells (and 3 ft around) are left out of the roof and surface figures; masts are checked apart.
+    mast_cells = np.zeros((h, w), bool)
+    for m in rec.get("masts", []):
+        cc, rr = int(m["east"] - x0), int(y1 - m["north"])
+        rad = int(m["radius_ft"] + 3)
+        mast_cells[max(rr - rad, 0):rr + rad + 1, max(cc - rad, 0):cc + rad + 1] = True
+    res = {"id": rec["id"], "name": rec["name"], "form": rec.get("form", ""), "distance_m": rec["distance_m"],
+           "returns": int(len(x)), "model_roof_m": rec["roof_top_m"], "model_top_m": rec["top_incl_masts_m"],
+           "coverage": round(float(cov.mean()), 3)}
+    model_b = np.nan_to_num(zm, nan=0.0) > 2.5
+    meas_b = np.nan_to_num(meas, nan=0.0) > 2.5
+
+    def flat(g):
+        g0 = np.nan_to_num(g, nan=0.0)
+        return (ndimage.maximum_filter(g0, size=5) - ndimage.minimum_filter(g0, size=5)) < 2.0
+    away = flat(zm) & flat(np.where(has, meas, np.nan)) & ~mast_cells
+    # Roof: cells of the model within 1 m of its main roof (the highest terrace of 150 sq ft or more, the record's
+    # roof_top_m), where both grids are building, away from walls and masts.
+    top = float(rec["roof_top_m"])
+    both = model_b & meas_b & has
+    roofc = (np.abs(np.nan_to_num(zm, nan=-1e9) - top) < 1.0) & away & both
+    if roofc.sum() < 20:
+        roofc = (np.abs(np.nan_to_num(zm, nan=-1e9) - top) < 1.0) & both & ~mast_cells
+    if roofc.any():
+        res["roof_model_m"] = round(float(np.median(zm[roofc])), 2)
+        res["roof_measured_m"] = round(float(np.median(meas[roofc])), 2)
+        res["roof_err_m"] = round(res["roof_model_m"] - res["roof_measured_m"], 2)
+        res["roof_cells"] = int(roofc.sum())
+        over = both & ~mast_cells
+        if over.any():
+            res["highest_model_not_mast_m"] = round(float(np.nanmax(np.where(over, zm, np.nan))), 2)
+            res["highest_return_not_mast_m"] = round(float(np.nanmax(meas[over])), 2)
+    # Vertical error where both grids are building: plan misses belong to the plan check.
+    surf = both & away
+    if surf.sum() >= 20:
+        d = np.abs(np.nan_to_num(zm, nan=0.0) - meas)[surf]
+        res["surface_p95_m"] = round(float(np.percentile(d, 95)), 2)
+        res["surface_median_m"] = round(float(np.median(d)), 2)
+    # Measured cells at a level: highest return per cell, holes between scan lines closed over 3 ft and filled.
+    mg = ndimage.grey_closing(np.nan_to_num(meas, nan=-50.0), size=(3, 3))
+    # Plan levels: the footprint at 2.5 m, then the middle height of each section between successive terrace tops
+    # (an outline compared at exactly a roof's own height is decided by a few centimetres of roof).
+    tops_sorted = sorted(float(t) for t in grid["tops"] if t > 2.5)
+    levels = [2.5] + [round((lo + hi) / 2.0, 2) for lo, hi in zip([0.0] + tops_sorted[:-1], tops_sorted)]
+    # Levels the roof deck sees: those above the roof less the visible height from targets.csv.
+    highest = float(np.nanmax(np.where(mast_cells, np.nan, zm)))
+    lowest_seen = highest - visible_m if visible_m else 0.0
+    res["lowest_level_seen_m"] = round(lowest_seen, 1)
+    # Also three levels evenly spread over the part that is seen, for shapes with few flat roofs (curved or tapered).
+    lo = max(lowest_seen, 2.5)
+    levels = sorted(set(levels + [round(lo + k * (highest - lo) / 4.0, 2) for k in (1, 2, 3)]))
     plans = []
-    for i, (t, p) in enumerate(zip(tops, polys)):
-        if p.area < 1000:
+    zm0 = np.nan_to_num(zm, nan=0.0)
+    for i, lv in enumerate(levels):
+        thr = lv
+        mm = ndimage.binary_fill_holes(zm0 >= thr) & cov
+        if mm.sum() < (1 if i == 0 else 1000) or (i > 0 and lv < lowest_seen):
             continue
-        thr = 2.5 if i == 0 else t - 1.0
-        mask = ndimage.binary_closing(filled & (hgrid >= thr), iterations=3)
-        meas = region_from_mask(mask, x0, y1).intersection(p.buffer(15))
-        meas = meas.buffer(-0.7, join_style=2).buffer(0.7, join_style=2)
-        if meas.is_empty:
+        near = ndimage.binary_dilation(mm, iterations=15)
+        ms = ndimage.binary_fill_holes(ndimage.binary_closing(mg >= thr, iterations=3)) & near & cov
+        dd = outline_distances(mm, ms)
+        if dd is None:
             continue
-        off = meas.symmetric_difference(p).area / max(p.length, 1.0) * FT
-        plans.append({"top_m": t, "offset_m": round(off, 2), "hausdorff_m": round(meas.hausdorff_distance(p) * FT, 2)})
+        plans.append({"level_m": round(lv, 2), "mean_m": round(dd[0], 2), "p95_m": round(dd[1], 2)})
     if plans:
-        res["footprint_offset_m"] = plans[0]["offset_m"]
-        worst = max(plans, key=lambda d: d["offset_m"])
-        res["worst_plan_offset_m"] = worst["offset_m"]
-        res["worst_plan_terrace_m"] = worst["top_m"]
-        res["top_plan_offset_m"] = plans[-1]["offset_m"]
+        res["footprint_edge_mean_m"] = plans[0]["mean_m"]
+        res["footprint_edge_p95_m"] = plans[0]["p95_m"]
+        upper = plans[1:] or plans
+        worst = max(upper, key=lambda p: p["p95_m"])
+        res["upper_edge_p95_worst_m"] = worst["p95_m"]
+        res["upper_edge_worst_level_m"] = worst["level_m"]
+        res["upper_edge_mean_m"] = round(float(np.mean([p["mean_m"] for p in upper])), 2)
     mres = []
     for m in rec.get("masts", []):
         rad = m["radius_ft"] + 3.0
@@ -146,35 +179,49 @@ def check(rec, pcs):
             zz = np.sort((z[sel] - rec["ground_ft"]) * FT)
             mres.append(round(float(zz[-2]) - m["top_m"], 2))
     res["mast_err_m"] = ";".join(str(v) for v in mres)
-    res["detail"] = json.dumps({"terraces": terr, "plans": plans})
+    res["detail"] = json.dumps({"plans": plans})
     return res
 
 
+KEYS = ["id", "name", "form", "distance_m", "returns", "coverage", "model_roof_m", "model_top_m", "roof_model_m",
+        "roof_measured_m", "roof_err_m", "roof_cells", "highest_model_not_mast_m", "highest_return_not_mast_m",
+        "lowest_level_seen_m", "surface_median_m", "surface_p95_m",
+        "footprint_edge_mean_m", "footprint_edge_p95_m", "upper_edge_mean_m", "upper_edge_p95_worst_m",
+        "upper_edge_worst_level_m", "mast_err_m", "detail"]
+
+
 def main(argv):
-    rec_path, out_csv = argv[1], argv[2]
-    folder = argv[3] if len(argv) > 3 else "D:/Wieland1529_lidar/derived"
-    pcs = load_pc(folder)
+    folder, out_csv = argv[1], argv[2]
+    pcf = argv[3] if len(argv) > 3 else "D:/Wieland1529_lidar/derived"
+    only = set(argv[4:])
+    pcs = load_pc(pcf)
+    visible = {}
+    tpath = os.path.join(os.path.dirname(os.path.normpath(folder)), "targets.csv")
+    if os.path.exists(tpath):
+        visible = {r["bldg_id"]: r["visible_height_m_bare"] for r in csv.DictReader(open(tpath, encoding="utf-8"))}
     recs = {}
-    for line in open(rec_path, encoding="utf-8"):
+    for line in open(os.path.join(folder, "towers_record.jsonl"), encoding="utf-8"):
         rec = json.loads(line)
-        if all("wkt" in p for p in rec["prisms"]):
-            recs[rec["id"]] = rec  # last record of an id wins
+        recs[rec["id"]] = rec
     rows = []
     for bid, rec in recs.items():
-        res = check(rec, pcs)
+        if only and bid not in only:
+            continue
+        gpath = os.path.join(folder, rec["name"] + "_grid.npz")
+        if not os.path.exists(gpath):
+            continue
+        vis = visible.get(bid)
+        res = check(rec, np.load(gpath), pcs, float(vis) if vis else None)
         if res is None:
             print("no returns", bid)
             continue
         rows.append(res)
-        print(bid, {k: v for k, v in res.items() if k != "detail"})
-    keys = ["id", "name", "distance_m", "returns", "model_roof_m", "model_top_m", "terraces_checked", "roof_measured_m",
-            "roof_err_m", "worst_terrace_err_m", "worst_terrace_top_m", "footprint_offset_m", "top_plan_offset_m",
-            "worst_plan_offset_m", "worst_plan_terrace_m", "mast_err_m", "detail"]
+        print({k: v for k, v in res.items() if k != "detail"})
     with open(out_csv, "w", newline="", encoding="utf-8") as handle:
-        wr = csv.DictWriter(handle, fieldnames=keys)
+        wr = csv.DictWriter(handle, fieldnames=KEYS)
         wr.writeheader()
         for row in rows:
-            wr.writerow({k: row.get(k, "") for k in keys})
+            wr.writerow({k: row.get(k, "") for k in KEYS})
     return 0
 
 
