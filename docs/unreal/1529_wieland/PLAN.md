@@ -725,6 +725,16 @@ Added by the owner on 2026-11-14: the owner draws the walk-through paths and the
 
 ---
 
+## Phase 20: Refining the surroundings from open images (runs after Phase 17, before Phase 19)
+
+Added by the owner on 2026-11-14: refine the skyline and the surrounding buildings from images. Sources, in order: the owner's photographs (`D:\Wieland1529_owner_photos\`), KartaView street-level imagery (CC BY-SA, no account), Wikimedia Commons, and Mapillary only if the owner provides a token. Google imagery is never used (terms, section 3.2.3). Images are reference only: never shipped as textures and never traced into geometry beyond what the laser scan measured.
+
+**Steps.** 20.1 work list from the Phase 17 viewshed, skyline from D1 first; 20.2 per building: images, cladding, colour, glass, window grid, crown and cornice details as clean elements; 20.3 materials to the repository rule; 20.4 confidence per building; 20.5 panorama, stations, design views and frame time re-checked.
+
+**Leaves behind.** The building table with images and licences; updated materials and details; check sheets.
+
+---
+
 ## Phase 12: Material rebuild (runs after Phase 8, before Phase 9)
 
 Added by the owner's decision on 2026-11-12: "rebuild 1–2s". It is numbered 12 because the supervisor's queue takes whole numbers; it runs between Phase 8 and Phase 9 so that Phase 9 budgets the final textures.
