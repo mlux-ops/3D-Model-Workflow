@@ -257,6 +257,11 @@ def build(bid, row, base, frame, county, dtm6, out):
     tarr = np.array(tops)
     nearest = np.abs(med[..., None] - tarr[None, None, :]).argmin(axis=-1)
     level = np.where(bmask, nearest, -1).astype(np.int32)
+    # Each top is then set to the median of the flat roof cells that took it, so the 0.5 m quantum does not remain.
+    for i in range(len(tops)):
+        own = flat & (level == i)
+        if own.sum() * cell * cell >= MIN_AREA_FT2:
+            tops[i] = round(float(np.median(med[own])), 2)
     # Masts: raw heights well above the terrace surface, in small blobs.
     terrace = np.where(level >= 0, np.array(tops + [0.0])[level], 0.0)
     # A mast stands above everything around it: compare with the highest terrace within 3 ft, so the edges of
@@ -302,7 +307,7 @@ def build(bid, row, base, frame, county, dtm6, out):
         for poly in region.geoms:
             mesh.walls(poly, prev_ft, top_ft, 0)
             mesh.cap(poly, top_ft, 1)
-        prisms.append({"top_m": t, "area_ft2": round(region.area, 1)})
+        prisms.append({"top_m": t, "area_ft2": round(region.area, 1), "wkt": shapely.to_wkt(region, rounding_precision=1)})
         prev_ft = top_ft
     for m in masts:
         poly = Polygon([(m["east"] + m["radius_ft"] * math.cos(a), m["north"] + m["radius_ft"] * math.sin(a))
@@ -321,7 +326,7 @@ def build(bid, row, base, frame, county, dtm6, out):
         json.dump(data, handle)
     top_roof = max(p["top_m"] for p in prisms) if prisms else 0.0
     top_all = max([top_roof] + [m["top_m"] for m in masts])
-    rec = {"id": bid, "name": name, "distance_m": round(dist, 1), "ground_ft": round(ground_ft, 2),
+    rec = {"id": bid, "name": name, "distance_m": round(dist, 1), "ground_ft": round(ground_ft, 4),
            "terraces": len(prisms), "roof_top_m": round(top_roof, 2), "mast_count": len(masts),
            "top_incl_masts_m": round(top_all, 2), "curvature_drop_m": round(drop(c.x, c.y), 3),
            "placed_top_m": round(top_all - drop(c.x, c.y), 2), "triangles": len(mesh.t),
