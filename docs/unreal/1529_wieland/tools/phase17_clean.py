@@ -342,7 +342,7 @@ def slope_deg(pl):
     return math.degrees(math.atan(math.hypot(pl[0], pl[1]) / FT))
 
 
-def fit_part(pts, qm, Xg, Yg, ref, addons=True, full=None, planes=None):
+def fit_part(pts, qm, Xg, Yg, ref, addons=True, full=None, planes=None, crown=False, floor=None):
     """Planes for one part (cells qm) from its returns; accepted when the lowest-plane roof follows the reference
     surface within FIT_P90_M (90th percentile) and beats a single flat roof. Dormers and other raised items (cells
     0.3 m or more above the planes, in patches of 4 sq m or more) are left out of the judgement and returned as a mask,
@@ -361,9 +361,13 @@ def fit_part(pts, qm, Xg, Yg, ref, addons=True, full=None, planes=None):
     zf = float(np.median(Zc))
     p90_flat = float(np.percentile(np.abs(Zc - zf), 90))
 
+    def surf(pls, X, Y):
+        z_ = env_grid(pls, X, Y)
+        return z_ if floor is None else np.maximum(z_, floor)
+
     def score(pls):
         # 75th percentile while choosing planes, so raised items (a dormer's own plane) do not decide.
-        return float(np.percentile(np.abs(env_grid(pls, Xc, Yc) - Zc), 75))
+        return float(np.percentile(np.abs(surf(pls, Xc, Yc) - Zc), 75))
     best = score(planes)
     # A plane below the others over much of the part (a dormer's flat top) cuts the ridge: leave planes out one at a
     # time while that helps.
@@ -380,7 +384,7 @@ def fit_part(pts, qm, Xg, Yg, ref, addons=True, full=None, planes=None):
         return None  # flat: the flat path builds it, with its parapet
     full = qm if full is None else (full | qm)
     zen = np.full(qm.shape, np.nan)
-    zen[full] = env_grid(planes, Xg[full], Yg[full])
+    zen[full] = surf(planes, Xg[full], Yg[full])
     raised = np.zeros(qm.shape, bool)
     if addons:
         above = full & (ref - np.nan_to_num(zen, nan=1e9) > 0.3)
@@ -396,7 +400,10 @@ def fit_part(pts, qm, Xg, Yg, ref, addons=True, full=None, planes=None):
     if os.environ.get("P17_DEBUG"):
         print("  fit: planes", [(round(slope_deg(pl), 1), pl[3]) for pl in planes], "p90 %.3f flat %.3f raised %d cells %d"
               % (p90, p90_flat, int(raised.sum()), int(qm.sum())))
-    if p90 <= FIT_P90_M and p90 < 0.6 * p90_flat:
+    # Steep crowns: one 1 ft cell spans much height, so the bar grows with the part's height range.
+    rng_ = float(np.percentile(Zc, 95) - np.percentile(Zc, 5))
+    bar = max(FIT_P90_M, min(0.1 * rng_, 3.0)) if crown else FIT_P90_M
+    if p90 <= bar and p90 < 0.6 * p90_flat:
         return planes, p90, p90_flat, raised
     return None
 
@@ -439,8 +446,34 @@ def rect_pieces(poly, theta):
 
 # ----------------------------------------------------------------------------------------------- mesh
 
+def triangulate(poly):
+    """Plan triangles of a polygon: constrained Delaunay; when GEOS refuses a polygon (near-collinear inserted
+    points), the polygon cleaned and tried again, then plain Delaunay of its vertices kept inside it."""
+    for q in (poly, poly.buffer(0).simplify(0.01, preserve_topology=True)):
+        try:
+            return [t for t in getattr(shapely.constrained_delaunay_triangles(q), "geoms", [])]
+        except Exception:
+            continue
+    out = []
+    for t in getattr(shapely.delaunay_triangles(poly), "geoms", []):
+        if poly.buffer(0.01).contains(t.centroid):
+            out.append(t)
+    return out
+
+
 class CleanMesh(T.MeshOut):
     """MeshOut with planar roof faces and walls whose top follows a roof."""
+
+    def cap(self, poly, z, mat):
+        for t in triangulate(poly):
+            c = list(t.exterior.coords)[:3]
+            if Polygon(c).area < 1e-6:
+                continue
+            if not Polygon(c).exterior.is_ccw:
+                c = c[::-1]
+            ids = [self.vert(e, n, z, (e - self.pe) * FT, (n - self.pn) * FT) for e, n in c]
+            self.t.append((ids[0], ids[2], ids[1]))
+            self.m.append(mat)
 
     def tri(self, P3, uv, mat):
         """One triangle given counter-clockwise seen from outside, points (e, n, z_ft)."""
@@ -458,8 +491,7 @@ class CleanMesh(T.MeshOut):
         else:
             up, stretch = (0.0, 1.0), 1.0
         along = (up[1], -up[0])
-        tris = shapely.constrained_delaunay_triangles(poly)
-        for t in getattr(tris, "geoms", []):
+        for t in triangulate(poly):
             c = list(t.exterior.coords)[:3]
             if Polygon(c).area < 1e-4:
                 continue
@@ -553,7 +585,9 @@ def build(bid, base, frame, county, dtm6, out):
         np.maximum.at(rgrid, prr * w + pcc, PZ)
         rgrid = rgrid.reshape(h, w)
         # Judging surface: the highest building return per cell, 3 by 3 median (the surface model is smoothed).
-        refz = ndimage.median_filter(np.where(np.isfinite(rgrid), rgrid, med), size=3)
+        # Returns that fall through glass (lanterns, atria) to floors far below are not the roof: never below the
+        # surface model less 0.5 m.
+        refz = np.maximum(ndimage.median_filter(np.where(np.isfinite(rgrid), rgrid, med), size=3), med - 0.5)
     else:
         PE = PN = PZ = pcc = prr = None
         rgrid, refz = None, med
@@ -590,18 +624,21 @@ def build(bid, base, frame, county, dtm6, out):
     pitched_polys = []   # (polygon, planes, p90, p90_flat, kind)
     raised_all = []
 
-    def fit_poly(q, addons, planes=None):
+    def fit_poly(q, addons, planes=None, restrict=None, floor=None):
         inner = q.buffer(-2.0, join_style=2)
         if inner.is_empty:
             return None
         qm = poly_mask(inner, x0, y1, w, h) & bmask
         full = poly_mask(q, x0, y1, w, h) & bmask
+        if restrict is not None:
+            qm &= ndimage.binary_erosion(restrict, iterations=1)
+            full &= restrict
         if PE is not None:
             sel = qm[prr, pcc] & (np.abs(PZ - med[prr, pcc]) < 1.5)
             pts = (PE[sel], PN[sel], PZ[sel])
         else:
             pts = (Xg[qm], Yg[qm], med[qm])
-        return fit_part(pts, qm, Xg, Yg, refz, addons, full, planes)
+        return fit_part(pts, qm, Xg, Yg, refz, addons, full, planes, restrict is not None, floor)
     for i in range(1, nl + 1):
         comp = lab == i
         if comp.sum() < PITCH_MIN_FT2:
@@ -692,6 +729,97 @@ def build(bid, base, frame, county, dtm6, out):
     base_ft = ground_ft - 1.0 / FT
     mesh = CleanMesh(frame, (c.x, c.y, ground_ft), drop)
     zft = lambda m_: ground_ft + m_ / FT  # noqa: E731
+
+    def pyramid_cap(shape, bottom_ft, flat_top, cells):
+        """A pyramid primitive on a flat top: base the rectangle of the cells standing 1 m or more above the top,
+        apex over the highest returns at their 98th percentile. Kept when it follows the returns clearly better than
+        the flat top. Returns (apex in m, p90) or None."""
+        rz = refz[cells]
+        up = cells & (refz > flat_top + 1.0)
+        if up.sum() < 12:
+            return None
+        hull = shapely.MultiPoint(np.column_stack([Xg[up], Yg[up]])).convex_hull.buffer(0.5, join_style=2)
+        base_p = hull.minimum_rotated_rectangle.intersection(shape)
+        base_p = max(base_p.geoms, key=lambda r: r.area) if isinstance(base_p, MultiPolygon) else base_p
+        if not isinstance(base_p, Polygon) or base_p.area < 10.0:
+            return None
+        apex_z = float(np.percentile(refz[up], 98))
+        top_cells = up & (refz >= apex_z - 0.5)
+        if rgrid is not None:
+            rv = np.sort(rgrid[up & np.isfinite(rgrid)])
+            if len(rv) >= 2 and rv[-2] > apex_z:
+                apex_z = float(rv[-2])  # the true top (a finial makes the pyramid sharper, not taller)
+        ax_, ay_ = float(Xg[top_cells].mean()), float(Yg[top_cells].mean())
+        if not base_p.contains(Point(ax_, ay_)):
+            c_ = base_p.centroid
+            ax_, ay_ = c_.x, c_.y
+        ring = ring_with_points(base_p.exterior, [])
+        tris = [((a[0], a[1], flat_top), (b[0], b[1], flat_top), (ax_, ay_, apex_z)) for a, b in zip(ring, ring[1:] + ring[:1])]
+        tri_pts = np.array([[pp[0], pp[1], zft(pp[2])] for t_ in tris for pp in t_])
+        zr = T.raster_top(tri_pts, np.arange(len(tri_pts)).reshape(-1, 3), x0, y1, w, h, ground_ft)
+        model = np.where(np.isfinite(zr), np.maximum(zr, flat_top), flat_top)
+        p90 = float(np.percentile(np.abs(model[cells] - rz), 90))
+        p90_flat = float(np.percentile(np.abs(rz - flat_top), 90))
+        rng_ = float(np.percentile(rz, 95) - np.percentile(rz, 5))
+        if os.environ.get("P17_DEBUG"):
+            print("  pyramid: apex %.2f p90 %.2f flat %.2f" % (apex_z, p90, p90_flat))
+        if not (p90 <= 3.0 and p90 < 0.5 * p90_flat and rng_ >= 1.5):
+            return None
+        for (a, b, ap) in tris:
+            pa, pb, pp = (a[0], a[1], zft(a[2])), (b[0], b[1], zft(b[2])), (ap[0], ap[1], zft(ap[2]))
+            mid = ((a[0] + b[0]) / 2.0, (a[1] + b[1]) / 2.0)
+            run = math.hypot(ap[0] - mid[0], ap[1] - mid[1])
+            ln = math.hypot(b[0] - a[0], b[1] - a[1]) * FT
+            sl = math.hypot(run * FT, apex_z - flat_top)
+            mesh.tri([pa, pb, pp], [(0.0, 0.0), (ln, 0.0), (ln / 2.0, sl)], 1)
+        rest = shape.difference(base_p)
+        for rq in getattr(rest, "geoms", [rest]):
+            if isinstance(rq, Polygon) and rq.area > 0.5:
+                mesh.roof_face(poly_with_points(rq, list(base_p.exterior.coords)), lambda e, n: zft(flat_top), (0.0, 0.0))
+        mesh.walls(shape, bottom_ft, zft(flat_top), 0)
+        return apex_z, p90
+
+    def planed_cap(shape, bottom_ft, flat_top, own):
+        """A crown, pyramid or other sloped top on a level part or rooftop structure: when the returns inside stand
+        clearly off its flat top, planes are fitted and built (walls from bottom_ft up to them). Returns
+        (highest point in m, fit p90) or None when a flat top is right."""
+        sm_ = poly_mask(shape.buffer(-1.0, join_style=2), x0, y1, w, h) & bmask & own
+        if sm_.sum() < 20:
+            return None
+        dev = float(np.percentile(np.abs(refz[sm_] - flat_top), 90))
+        if os.environ.get("P17_DEBUG"):
+            print("  planed_cap: area %.0f top %.2f p90 off flat %.2f" % (shape.area, flat_top, dev))
+        if dev <= 0.6 * FIT_P90_M:
+            return None
+        fit = fit_poly(shape, False, restrict=own, floor=flat_top)
+        if fit is None:
+            return pyramid_cap(shape, bottom_ft, flat_top, sm_)
+        planes = fit[0]
+        # The sloped crown stands where every plane is above the flat top (a convex polygon); the rest is flat.
+        minx, miny, maxx, maxy = shape.bounds
+        cv = [(minx - 10, miny - 10), (maxx + 10, miny - 10), (maxx + 10, maxy + 10), (minx - 10, maxy + 10)]
+        for pl in planes:
+            if cv:
+                cv = clip_halfplane(cv, -pl[0], -pl[1], -(pl[2] - flat_top))
+        crown_poly = shape.intersection(Polygon(cv)) if len(cv) >= 3 else Polygon()
+        crown_poly = max(crown_poly.geoms, key=lambda r: r.area) if isinstance(crown_poly, MultiPolygon) else crown_poly
+        if crown_poly.is_empty or crown_poly.area < 10.0:
+            return None
+        regs = envelope_regions(crown_poly, planes)
+        if not regs:
+            return None
+        allpts = [pt for _, ps in regs for r in ps for pt in r.exterior.coords] + list(shape.exterior.coords) + list(crown_poly.exterior.coords)
+        for k, ps in regs:
+            pl = planes[k]
+            for r in ps:
+                mesh.roof_face(poly_with_points(r, allpts), lambda e, n, pl=pl: zft(plane_z(pl, e, n)), (pl[0], pl[1]))
+        rest = shape.difference(crown_poly)
+        for rq in getattr(rest, "geoms", [rest]):
+            if isinstance(rq, Polygon) and rq.area > 0.5:
+                mesh.roof_face(poly_with_points(rq, allpts), lambda e, n: zft(flat_top), (0.0, 0.0))
+        top_fun = lambda e, n: zft(max(flat_top, min(plane_z(pl, e, n) for pl in planes)))  # noqa: E731
+        mesh.follow_walls(ring_with_points(shape.exterior, allpts), bottom_ft, top_fun)
+        return max(max(flat_top, min(plane_z(pl, e, n) for pl in planes)) for e, n in allpts), fit[1]
     prisms = []
     structures = []
     # Level parts, nested: each part of level i stands on the part of level i-1 that holds it.
@@ -727,6 +855,12 @@ def build(bid, base, frame, county, dtm6, out):
                 if shape.is_empty or not isinstance(shape, Polygon):
                     continue
                 shape = shape.simplify(0.05)
+                child = (fmask & (level > i) & poly_mask(shape, x0, y1, w, h)).sum() >= STRUCT_MIN_FT2
+                pc_ = None if child else planed_cap(shape, par_top - 0.1 / FT, t, fmask & (level >= i))
+                if pc_ is not None:
+                    structures.append({"kind": kind + ", sloped top", "top_m": round(pc_[0], 2), "fit_p90_m": round(pc_[1], 3),
+                                       "height_m": round(dh, 2), "area_ft2": round(shape.area, 1)})
+                    continue
                 mesh.walls(shape, par_top - 0.1 / FT, top_ft, 0)
                 mesh.cap(shape, top_ft, 1)
                 structures.append({"kind": kind, "top_m": t, "height_m": round(dh, 2), "area_ft2": round(shape.area, 1)})
@@ -770,6 +904,39 @@ def build(bid, base, frame, county, dtm6, out):
                             th_ft = float(np.sum(rel > 0.5 * hp)) / max(pq.exterior.length, 1.0)
                             th_ft = min(max(th_ft, 0.2 / FT), 0.6 / FT)
                             par = (round(hp, 2), round(th_ft * FT, 2))
+                child = (fmask & (level > i) & poly_mask(pq, x0, y1, w, h)).sum() >= STRUCT_MIN_FT2
+                # A flat roof that falls gently for drainage: one tilted plane when it follows the returns clearly
+                # better than a level plane.
+                tilt = None
+                if not child:
+                    own_ = flat & (level == i) & poly_mask(pq.buffer(-1.5, join_style=2), x0, y1, w, h)
+                    if own_.sum() >= 40:
+                        Ao = np.column_stack([Xg[own_] - pq.centroid.x, Yg[own_] - pq.centroid.y, np.ones(int(own_.sum()))])
+                        co = np.linalg.lstsq(Ao, refz[own_], rcond=None)[0]
+                        p90_t = float(np.percentile(np.abs(Ao @ co - refz[own_]), 90))
+                        p90_f = float(np.percentile(np.abs(refz[own_] - t), 90))
+                        sl_ = math.degrees(math.atan(math.hypot(co[0], co[1]) / FT))
+                        if 0.3 <= sl_ <= 10.0 and p90_t < 0.7 * p90_f and p90_f - p90_t > 0.1:
+                            tilt = (co[0], co[1], co[2] - co[0] * pq.centroid.x - co[1] * pq.centroid.y, p90_t, sl_)
+                if tilt is not None:
+                    tl = tilt
+                    mesh.follow_walls(ring_with_points(pq.exterior, []), bottom, lambda e, n, tl=tl: zft(plane_z(tl, e, n)))
+                    for hole in pq.interiors:
+                        hr = ring_with_points(hole, [])[::-1]
+                        mesh.follow_walls(hr[::-1] if shapely.geometry.LinearRing(hr).is_ccw else hr, bottom,
+                                          lambda e, n, tl=tl: zft(plane_z(tl, e, n)))
+                    mesh.roof_face(pq, lambda e, n, tl=tl: zft(plane_z(tl, e, n)), (tl[0], tl[1]))
+                    made.append((pq, zft(max(plane_z(tl, e, n) for e, n in pq.exterior.coords))))
+                    prisms.append({"level": i, "top_m": round(plane_z(tl, pq.centroid.x, pq.centroid.y), 2),
+                                   "area_ft2": round(pq.area, 1), "parapet_m": None, "tilt_deg": round(tl[4], 2),
+                                   "tilt_p90_m": round(tl[3], 3), "wkt": shapely.to_wkt(pq, rounding_precision=1)})
+                    continue
+                pc_ = None if (child or par is not None) else planed_cap(pq, bottom, t, fmask & (level >= i))
+                if pc_ is not None:
+                    made.append((pq, top_ft))
+                    prisms.append({"level": i, "top_m": round(pc_[0], 2), "area_ft2": round(pq.area, 1), "parapet_m": None,
+                                   "sloped_top_fit_p90_m": round(pc_[1], 3), "wkt": shapely.to_wkt(pq, rounding_precision=1)})
+                    continue
                 mesh.walls(pq, bottom, top_ft, 0)
                 if par is not None:
                     inner = pq.buffer(-par[1] / FT, join_style=2)
@@ -851,11 +1018,11 @@ def build(bid, base, frame, county, dtm6, out):
     mg0 = np.nan_to_num(model_grid, nan=0.0)
     big_tops = [pr["top_m"] for pr in prisms if pr["area_ft2"] >= 150.0] or [pr["top_m"] for pr in prisms]
     top_roof = max(big_tops)
-    topmask = bmask & (np.abs(mg0 - top_roof) < 1.0)
+    topmask = bmask & (mg0 >= top_roof - 1.0)
     if not topmask.any():
         topmask = bmask & (mg0 >= np.percentile(mg0[bmask], 90))
     if pc is not None:
-        masts = T.pc_masts(pc, ground_ft, mg0, x0, y1, cell, topmask, top_roof, surface=raw_m)
+        masts = T.pc_masts(pc, ground_ft, mg0, x0, y1, cell, topmask, float(np.max(mg0[topmask])), surface=raw_m)
         mast_source = "point cloud"
     else:
         masts = []

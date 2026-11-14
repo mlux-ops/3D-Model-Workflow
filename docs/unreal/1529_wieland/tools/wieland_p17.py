@@ -341,6 +341,72 @@ async def build(folder, names, mesh_root, folder_label, slots, tags=(), replace=
     return out
 
 
+async def swap_build(folder, pairs, mesh_root):
+    """Clean-roof rebuild (phase17_clean.py): for each (new mesh name, existing object label), make the new mesh as a
+    Nanite static mesh under mesh_root (the old mesh asset is kept, never edited or deleted), give it the old mesh's
+    three material slots, and swap it onto the existing object, so the Variant Manager values that name the object
+    still hold. Returns records for mesh_swaps.csv; nothing is saved here."""
+    if not (world_path().startswith(LEVEL_ROOT) or world_path().startswith(SITE + ".")):
+        raise RuntimeError("refused: open level %s is neither the working level nor under %s" % (world_path(), LEVEL_ROOT))
+    existing = _existing()
+    meshes = unreal.get_editor_subsystem(unreal.StaticMeshEditorSubsystem)
+    out = {"swapped": 0, "problems": [], "records": [], "assets": []}
+    started = time.time()
+    for name, label in pairs:
+        actor = existing.get(label)
+        if actor is None:
+            out["problems"].append(label + ": no such object")
+            continue
+        comp = actor.static_mesh_component
+        old = comp.static_mesh
+        with open(os.path.join(folder, name + ".json"), encoding="utf-8") as handle:
+            data = json.load(handle)
+        mesh = _make_mesh(data)
+        path = mesh_root + name
+        if unreal.EditorAssetLibrary.does_asset_exist(path):
+            sm = unreal.EditorAssetLibrary.load_asset(path)
+            options = unreal.GeometryScriptCopyMeshToAssetOptions()
+            options.enable_recompute_normals = False
+            options.emit_transaction = False
+            options.replace_materials = False
+            unreal.GeometryScript_AssetUtils.copy_mesh_to_static_mesh(mesh, sm, options, unreal.GeometryScriptMeshWriteLOD())
+        else:
+            options = unreal.GeometryScriptCreateNewStaticMeshAssetOptions()
+            options.enable_nanite = True
+            nanite = unreal.MeshNaniteSettings()
+            nanite.enabled = True
+            options.nanite_settings = nanite
+            options.enable_collision = False
+            options.enable_recompute_normals = False
+            sm, outcome = unreal.GeometryScript_NewAssetUtils.create_new_static_mesh_asset_from_mesh(mesh, path, options)
+        if sm is None:
+            out["problems"].append(name + ": no asset")
+            continue
+        settings = meshes.get_nanite_settings(sm)
+        if not settings.enabled:
+            settings.enabled = True
+            meshes.set_nanite_settings(sm, settings, True)
+        mats = [old.get_material(i) for i in range(3)] if old is not None else []
+        while len(sm.static_materials) < 3:
+            sm.add_material(mats[len(sm.static_materials)] if len(mats) > len(sm.static_materials) else None)
+        for i, m in enumerate(mats[:3]):
+            if m is not None:
+                sm.set_material(i, m)
+        pivot = data["pivot"]
+        before = actor.get_actor_location()
+        comp.set_static_mesh(sm)
+        actor.set_actor_location(unreal.Vector(pivot[0], pivot[1], pivot[2]), False, False)
+        out["swapped"] += 1
+        out["assets"].append(path)
+        out["records"].append({"object": label, "old_mesh": old.get_path_name().split(".")[0] if old else "",
+                               "new_mesh": path, "triangles": len(data["triangles"]),
+                               "moved_cm": round(before.distance(actor.get_actor_location()), 2),
+                               "materials": [m.get_name() if m else "" for m in mats[:3]]})
+        await asyncio.sleep(0)
+    out["seconds"] = round(time.time() - started, 1)
+    return out
+
+
 def save(paths):
     """Save named assets (levels or assets); refuses L_R15_Production."""
     done = []

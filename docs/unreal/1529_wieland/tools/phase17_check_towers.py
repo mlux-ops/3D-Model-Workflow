@@ -143,7 +143,7 @@ def check(rec, grid, pcs, visible_m=None):
     mast_cells = np.zeros((h, w), bool)
     for m in rec.get("masts", []):
         cc, rr = int(m["east"] - x0), int(y1 - m["north"])
-        rad = int(m["radius_ft"] + 3)
+        rad = int(max(m["radius_ft"], 6.0) + 3)  # antenna platforms and guys spread wider than the mast
         mast_cells[max(rr - rad, 0):rr + rad + 1, max(cc - rad, 0):cc + rad + 1] = True
     res = {"id": rec["id"], "name": rec["name"], "form": rec.get("form", ""), "distance_m": rec["distance_m"],
            "returns": int(len(x)), "model_roof_m": rec["roof_top_m"], "model_top_m": rec["top_incl_masts_m"],
@@ -171,6 +171,11 @@ def check(rec, grid, pcs, visible_m=None):
         if over.any():
             res["highest_model_not_mast_m"] = round(float(np.nanmax(np.where(over, zm, np.nan))), 2)
             res["highest_return_not_mast_m"] = round(float(np.nanmax(meas[over])), 2)
+            # Highest returns of an item the clean-roof rule builds (4 sq m or more): the measured grid opened over
+            # 7 by 7 ft, so chimneys, vents and railings smaller than that do not count.
+            opened = ndimage.grey_opening(np.nan_to_num(ndimage.grey_closing(np.nan_to_num(meas, nan=-50.0), size=(3, 3)), nan=-50.0), size=(7, 7))
+            if over.any():
+                res["highest_return_4m2_m"] = round(float(np.max(opened[over])), 2)
     # Vertical error where both grids are building: plan misses belong to the plan check.
     surf = both & away
     if surf.sum() >= 20:
@@ -233,6 +238,7 @@ def check(rec, grid, pcs, visible_m=None):
 
 KEYS = ["id", "name", "form", "distance_m", "returns", "coverage", "model_roof_m", "model_top_m", "roof_model_m",
         "roof_measured_m", "roof_err_m", "roof_cells", "highest_model_not_mast_m", "highest_return_not_mast_m",
+        "highest_return_4m2_m",
         "lowest_level_seen_m", "surface_median_m", "surface_p95_m",
         "footprint_edge_mean_m", "footprint_edge_p95_m", "upper_edge_mean_m", "upper_edge_p95_worst_m",
         "upper_edge_worst_level_m", "free_edge_mean_m", "free_edge_p95_m", "free_edge_share", "mast_err_m", "detail"]

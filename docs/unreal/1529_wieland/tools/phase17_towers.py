@@ -329,8 +329,16 @@ def pc_masts(pc, ground_ft, terrace, x0, y1, cell, topmask, top_m, surface=None)
         zz = np.sort(zs[k])
         top = float(zz[-2])
         e, nn = float(np.median(xs[k])), float(np.median(ys[k]))
-        rad = max(0.5 / FT, float(np.sqrt(np.var(xs[k]) + np.var(ys[k]))) * 1.2)
-        rad = min(rad, 12.0)
+        # Radius from the upper half of the mast only (platforms and dishes near its foot widen the spread):
+        # 1.5 times the median horizontal distance of those returns from the mast's centre, 0.3 m to 12 ft.
+        up = k.copy()
+        up[k] = zs[k] >= (zs[k].min() + zs[k].max()) / 2.0
+        if up.sum() >= 3:
+            ue, un = float(np.median(xs[up])), float(np.median(ys[up]))
+            rad = 1.5 * float(np.median(np.hypot(xs[up] - ue, ys[up] - un)))
+        else:
+            rad = float(np.sqrt(np.var(xs[k]) + np.var(ys[k]))) * 1.2
+        rad = min(max(rad, 0.3 / FT), 12.0)
         cc, rr = int((e - x0) / cell), int((y1 - nn) / cell)
         base = float(tmax[min(max(rr, 0), h - 1), min(max(cc, 0), w - 1)])
         # Not a mast: a taller wall within 15 ft (a neighbour's facade returns), or a large blob on a low roof (a
