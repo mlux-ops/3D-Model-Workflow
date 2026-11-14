@@ -73,9 +73,10 @@ Read these first, and only these
 
 Rules that apply throughout
 
+- Never close, quit, kill or restart the Unreal editor yourself (owner, 2026-11-14: a self-restart left the "Restore Packages" window waiting for a click). When free commit memory is low, give memory back inside the editor instead: open an empty level and then the working level again, unload streaming levels you do not need, run garbage collection, or wait. Only the supervisor's watcher restarts the editor, and only after a crash. If memory cannot be freed that way, write a PENDING journal line saying so, commit it, create an empty file `E:\Temp\claude\3d9c7db16e141ffd\e9961f27-3017-4918-b5e2-ab932667ff64\scratchpad\watch\RESTART_EDITOR`, and stop; the watcher then restarts the editor cleanly (without the restore prompt) and relaunches you.
 - Nanite ray tracing stays OFF: keep the console variable r.RayTracing.Nanite.Mode at 0; it has hung the graphics card three times. Render one video at a time, and let a freshly opened level settle five minutes first.
 - Never save `/Game/Wieland/R15_Landscape/L_R15_Production`, never use "Save All", save named assets only, never edit a Datasmith asset.
-- Memory: read free commit before each render; under 30 GB, close and reopen the editor or wait.
+- Memory: read free commit before each render; under 30 GB, free memory inside the editor or wait (never restart the editor yourself).
 - Put back any console or quality setting you change, and read it back to confirm.
 - Not approved: anything with a price, an account or key, any deletion, software installation, any push or merge.
 

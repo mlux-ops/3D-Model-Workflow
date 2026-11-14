@@ -1499,3 +1499,14 @@ Errors and surprises of the phase, each with cause, fix and status. "Jn" is the 
 3. J2, `python -I` (isolated mode, used for scripts that read downloaded files) could not import numpy. Cause: `-I` also drops the user site-packages folder, where numpy and Pillow are installed on this machine. Fix: run the phase's own scripts with `python -B -P` (no bytecode, no script folder or current folder on the path) from a neutral working folder; `-I` only for scripts that need the standard library alone. Status: fixed.
 4. J2, a journal edit made through a Python string wrote a vertical-tab character into `phase17_results.md` (`rasters\view6ft` became `rasters<VT>iew6ft`). Cause: `\v` in a non-raw Python string is an escape. Fix: replaced by the two characters; edits to Markdown with Windows paths are made with raw strings or the Edit tool. Status: fixed.
 5. J2, the state's 2022 Cook County point cloud is served only as five zip files of 0.74 to 0.98 TB (`cook-las1.zip` to `cook-las5.zip`), and USGS 3DEP holds only the 2017 Cook scan. Not an error, a constraint. Workaround: the server accepts HTTP range requests, so `tools\phase17_remote_zip.py` reads the zip directory and streams single tiles (2,500 ft square, plain LAS compressed by deflate inside the zip, 1.0 to 1.4 GB each) without storing them whole. Status: in use.
+
+### Agent restarted the editor itself; Restore Packages window -- 2026-11-14 12:52 (supervising session)
+
+- Error: the Phase 17 agent closed and reopened the editor itself at 12:52 to free memory. Because the editor did not shut down cleanly, it left `Saved\Autosaves\PackageRestoreData.json`, and the new editor opened a "Restore Packages" window. That window waited until the owner clicked Skip; unattended, it would have blocked the build.
+- Cause: the phase prompts allowed "close and reopen the editor" when free memory was under 30 GB, and nothing cleared the restore file before a relaunch.
+- Fixes:
+  - All remaining prompts (Phases 17 and 19, and render-on-request) now forbid agents from closing or restarting the editor. They free memory inside it instead: open an empty level and then the working level again, unload streaming levels, run garbage collection, or wait.
+  - If that fails, the agent writes `watch\RESTART_EDITOR` and stops. The watcher then ends the editor without saving and relaunches it.
+  - Before any relaunch, the watcher moves `PackageRestoreData.json` aside (renamed `.skipped_<time>`, never deleted), so no restore window appears. The agents save only named assets before each commit, so the autosave copies are not needed.
+  - The Phase 17 agent was set to stop at its next commit, so the watcher relaunches it with the new rule.
+- Status: fixed in the scripts and prompts; the watcher was reloaded.
