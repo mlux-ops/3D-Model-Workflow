@@ -1472,3 +1472,8 @@ Errors and surprises of the phase, each with cause, fix and status. "Jn" is the 
 - Errors on the way:
   1. The drawing page's "plans not made yet" overlay stayed on top of the canvas, because a CSS `display: flex` overrode the `hidden` attribute, so clicks never reached the plan. Fix: `.empty[hidden] { display: none; }`. Verified by clicking points in the browser.
   2. A PowerShell script used `$P` and `$p` as two variables. PowerShell variable names are case-insensitive, so they were the same variable and the write to PLAN.md failed with "Illegal characters in path". Redone with distinct names; never rely on case to separate PowerShell variables.
+- Owner rule, 2026-11-14 12:20: stop all work if the weekly limit reaches 90 percent.
+  - Scripts cannot read the plan's usage figures, so the supervising session checks `get_usage` every 20 minutes through a session cron job (job ff642a2f, at minutes 7, 27 and 47).
+  - At 90 percent or more on the weekly all-models window, or on any Opus or Sonnet weekly window, it runs `watch\stop_all.ps1`, which writes `STOP`, ends the watcher and the agent, and leaves the editor open.
+  - Weekly all-models usage was at 68 percent at 12:20.
+  - Limit: the cron job lives only while the supervising session is open, and it expires after 7 days.
