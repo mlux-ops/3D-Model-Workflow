@@ -348,7 +348,9 @@ def pc_masts(pc, ground_ft, terrace, x0, y1, cell, topmask, top_m, surface=None)
     return masts
 
 
-def build(bid, row, base, frame, county, dtm6, out):
+def prepare(bid, base, county, dtm6):
+    """The measured inputs of one building, shared with phase17_clean.py: the 1 ft surface filtered and freed of tree
+    canopy (med, metres above ground), the building cells (bmask), the ground, the returns. None when no building."""
     dsm, x0, y1, cell = load(os.path.join(base, "rasters", "bldg1ft", "%s_dsm.npz" % bid))
     rings = county[bid]["geometry"]["rings"]
     outline = unary_union([Polygon(r).buffer(0) for r in rings])
@@ -425,6 +427,17 @@ def build(bid, row, base, frame, county, dtm6, out):
     bmask &= keep
     if not bmask.any():
         return None
+    return {"dsm": dsm, "x0": x0, "y1": y1, "cell": cell, "h": h, "w": w, "outline": outline, "ground_ft": ground_ft,
+            "pc": pc, "raw_m": raw_m, "med": med, "bmask": bmask, "veg_cells": veg_cells, "height_source": height_source}
+
+
+def build(bid, row, base, frame, county, dtm6, out):
+    p = prepare(bid, base, county, dtm6)
+    if p is None:
+        return None
+    dsm, x0, y1, cell, h, w = p["dsm"], p["x0"], p["y1"], p["cell"], p["h"], p["w"]
+    outline, ground_ft, pc, raw_m, med, bmask = p["outline"], p["ground_ft"], p["pc"], p["raw_m"], p["med"], p["bmask"]
+    veg_cells, height_source = p["veg_cells"], p["height_source"]
     # Only flat roof cells define a step height: in the surface model a wall is not vertical but a ramp a few cells
     # wide, and every half-metre of the ramp would otherwise become a false step.
     local_sd = np.sqrt(np.maximum(ndimage.uniform_filter(med * med, 5) - ndimage.uniform_filter(med, 5) ** 2, 0.0))
