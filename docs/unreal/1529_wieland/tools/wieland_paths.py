@@ -490,13 +490,17 @@ def start_render(p, seq, folder):
         raise RuntimeError("r.RayTracing.Nanite.Mode does not read 0; not rendering")
     pt = p.get("quality") == "pathtraced"
     os.makedirs(folder, exist_ok=True)
-    state = {"stand_ins_hidden": wt._stand_ins(True), PRE_EXPOSURE: wt.cvar(PRE_EXPOSURE, 7)}
+    # wt.cvar(name, value) sets and returns the NEW value, so every value is read before it is changed, and the
+    # values read are what end_render puts back (found on the first test render, Phase 19 error 2).
+    names = [PRE_EXPOSURE] + ([wt.APPEND] if pt else list(QUALITY))
+    state = {"before": {n: wt.cvar(n) for n in names}, "stand_ins_hidden": wt._stand_ins(True)}
+    wt.cvar(PRE_EXPOSURE, 7)
     unreal.SystemLibrary.execute_console_command(wl.world(), "DisableAllScreenMessages")
     if pt:
-        state[wt.APPEND] = wt.cvar(wt.APPEND, wt.APPEND_FOR_TREES)
+        wt.cvar(wt.APPEND, wt.APPEND_FOR_TREES)
     else:
         for name, level in zip(QUALITY, (3, 4, 4)):
-            state[name] = wt.cvar(name, level)
+            wt.cvar(name, level)
     s = unreal.MovieGraphQuickRenderModeSettings()
     s.set_configuration_type(unreal.MovieGraphQuickRenderConfigurationType.BASIC)
     s.set_editor_property("post_render_behavior", unreal.MoviePipelinePostRenderActionType.DO_NOTHING)
@@ -538,10 +542,9 @@ def end_render(state):
     """Put back what start_render changed, and read it back."""
     import wieland_truth as wt
     back = {}
-    for name, value in state.items():
-        if name in QUALITY or name in (PRE_EXPOSURE, wt.APPEND):
-            wt.cvar(name, value)
-            back[name] = wt.cvar(name)
+    for name, value in state.get("before", {}).items():
+        wt.cvar(name, value)
+        back[name] = {"put_back": value, "reads": wt.cvar(name)}
     wt._stand_ins(False)
     back["nanite_mode"] = wt.cvar(wt.NANITE_MODE)
     return back
