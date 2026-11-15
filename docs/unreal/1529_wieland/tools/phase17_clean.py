@@ -1175,6 +1175,67 @@ def build(bid, base, frame, county, dtm6, out):
     return rec
 
 
+def fallback_prism(bid, base, frame, county, dtm6, out):
+    """A plain prism for a building whose roof the scan cannot separate from the trees over it (build() finds no
+    level): the county outline regularized, one flat roof at the median of the building returns (class 6) inside the
+    outline, or the county's own height when there are fewer than 20 such returns. Walls and roof wound as CleanMesh
+    does. Added at J23b for county 773890, the one target left on its old height-field build."""
+    p = T.prepare(bid, base, county, dtm6)
+    if p is None:
+        return None
+    x0, y1, w, h = p["x0"], p["y1"], p["w"], p["h"]
+    outline, ground_ft, pc = p["outline"], p["ground_ft"], p["pc"]
+    theta = main_direction(outline)
+    shape = max(getattr(outline, "geoms", [outline]), key=lambda q: q.area)
+    shape = regularize(shape, theta)
+    roof_src, roof_m = "county height", float(county[bid]["attributes"].get("Height") or 0.0) * FT
+    if pc is not None and len(pc["z"]):
+        within = shapely.contains_xy(shape.buffer(-1.0, join_style=2), pc["x"], pc["y"])
+        b6 = within & (pc["cls"] == 6)
+        low = within & np.isin(pc["cls"], [1, 6])
+        if b6.sum() >= 20:
+            roof_m = float(np.median(pc["z"][b6]) - ground_ft) * FT
+            roof_src = "median of %d building returns" % int(b6.sum())
+        elif low.sum() >= 20:
+            # No building in the 2022 scan (county 773890: ground, unclassified returns at 0.7 m, canopy above): the
+            # outline gets what the scan shows, a low slab at the median of the unclassified returns, not the
+            # county's height (a tree top there).
+            roof_m = float(np.median(pc["z"][low]) - ground_ft) * FT
+            roof_src = "no building returns in 2022; low structure, median of %d unclassified returns" % int(low.sum())
+    if roof_m < 0.3:
+        return None
+    d1e, d1n = frame.map_from_level(T.D1[0], T.D1[1])
+
+    def drop(e, n):
+        d = math.hypot(e - d1e, n - d1n) * FT
+        return d * d / (2.0 * T.R_EARTH_M) * (1.0 - T.K_REFRACTION)
+
+    c = shape.centroid
+    mesh = CleanMesh(frame, (c.x, c.y, ground_ft), drop)
+    top_ft = ground_ft + roof_m / FT
+    mesh.walls(shape, ground_ft - 1.0 / FT, top_ft, 0)
+    mesh.cap(shape, top_ft, 1)
+    dist = math.hypot(c.x - d1e, c.y - d1n) * FT
+    name = "%s_%s" % (os.environ.get("P17_PREFIX", "P17R"), bid)
+    data = {"name": name, "kind": "building", "zone": T.ZONES.get(bid) or (4 if dist > 1000 else 3),
+            "pivot": [round(v, 2) for v in mesh.pivot], "vertices": mesh.v, "triangles": mesh.t, "tri_mat": mesh.m,
+            "uv0_m": mesh.uv}
+    with open(os.path.join(out, name + ".json"), "w", encoding="utf-8") as handle:
+        json.dump(data, handle)
+    grid = T.raster_top(mesh.mv, mesh.t, x0, y1, w, h, ground_ft)
+    np.savez_compressed(os.path.join(out, name + "_grid.npz"), z=grid.astype(np.float32), x0=x0, y1=y1, cell=p["cell"],
+                        ground_ft=ground_ft, tops=np.array([round(roof_m, 2)]))
+    return {"id": bid, "name": name, "distance_m": round(dist, 1), "ground_ft": round(ground_ft, 4),
+            "form": "flat (plain prism: roof under trees, %s)" % roof_src, "main_direction_deg": round(math.degrees(theta), 2),
+            "terraces": 1, "roof_top_m": round(roof_m, 2), "mast_count": 0, "top_incl_masts_m": round(roof_m, 2),
+            "curvature_drop_m": round(drop(c.x, c.y), 3), "placed_top_m": round(roof_m - drop(c.x, c.y), 2),
+            "triangles": len(mesh.t), "mast_source": "", "height_source": roof_src, "returns": pc is not None,
+            "tree_cells_replaced": p.get("veg_cells"), "plan_area_ft2": round(shape.area, 0), "noise_flag": False,
+            "masts": [], "prisms": [{"level": 0, "top_m": round(roof_m, 2), "area_ft2": round(shape.area, 1), "parapet_m": None,
+                                     "wkt": shapely.to_wkt(shape, rounding_precision=1)}],
+            "wall_shifts_m": [], "pitched": [], "structures": []}
+
+
 def main(argv):
     base, out = argv[1], argv[2]
     os.makedirs(out, exist_ok=True)
@@ -1196,6 +1257,8 @@ def main(argv):
             except Exception as exc:  # one failed building must not stop a batch; it is listed and rerun
                 print("FAILED", bid, repr(exc))
                 continue
+            if rec is None:
+                rec = fallback_prism(bid, base, frame, county, dtm6, out)
             if rec is None:
                 print("nothing built", bid)
                 continue
