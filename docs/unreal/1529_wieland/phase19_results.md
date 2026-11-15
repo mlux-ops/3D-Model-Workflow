@@ -2,7 +2,7 @@
 
 Companion to [PLAN.md](PLAN.md), section "Phases 18 and 19", and to `KICKOFF_PHASE19.md`. Written as each step finishes, so a new session can resume from it.
 
-Status: IN PROGRESS (started 20:21 Central on 2026-11-14, editor panel session, Opus).
+Status: IN PROGRESS (started 20:16 Central on 2026-11-14, editor panel session, Opus).
 
 ## Words used here
 
@@ -22,4 +22,5 @@ Status: IN PROGRESS (started 20:21 Central on 2026-11-14, editor panel session, 
 
 | No. | Time | What is done | Outcome |
 |---|---|---|---|
-| J1 | 20:21 | Checks before work, read-only: saved paths in `owner_review\paths\`, the page, the editor's state, ffmpeg. | PENDING |
+| J1 | 20:16 | Checks before work, read-only: saved paths in `owner_review\paths\`, the page, the editor's state, ffmpeg. | DONE 20:17. No path saved by the owner yet: `owner_review\paths\` holds only the agent's two test paths (`_test_roofdeck.json`, `_test_wall.json`, written at 20:05 for J3 and J4), so no owner video can be made in this session; the page answers at http://127.0.0.1:8766/ (code 200). Editor: `L_Site_M4` open, `r.RayTracing.Nanite.Mode` 0, the Phase 17 surroundings shown. ffmpeg 9.0.2 installed (nothing new installed). |
+| J2 | 20:17 | Step 1: the site plan image made again so it shows the Phase 17 surroundings, with the same mapping (`tools\phase18_plans.make_plan("site")`, then `check_plan("site")`, the three known points); the Phase 18 images kept beside it as `site_phase18.png` and `check_site_phase18.png`. | PENDING |
