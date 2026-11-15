@@ -40,7 +40,7 @@ Companion to `phase17_results.md`. Heights are above the scan's ground at each b
 | OneEleven (866270) | 2659 | 185.83 | 185.82 | 0.01 | 187.85 | 188.30 | -0.45 | 187.85 | - | 0.82 | stepped (6 levels); 3 rooftop structures |
 | Heller International Building (884598) | 3288 | 174.35 | 174.34 | 0.01 | 174.35 | 183.03 | -8.68 | 184.36 | -0.00, -0.00 | 0.41 | stepped (9 levels); parapet; 1 rooftop structures; 2 masts |
 | Madison Plaza (879805) | 3105 | 182.02 | 182.29 | -0.27 | 182.02 | 182.31 | -0.29 | 182.02 | - | 0.43 | stepped (9 levels); 2 rooftop structures |
-| Accenture Tower (879467) | 3131 | 174.52 | 174.41 | 0.11 | 175.02 | 175.44 | -0.42 | 175.05 | - | 0.32 | stepped (18 levels); parapet; pitched; 22 rooftop structures |
+| Accenture Tower (879467) | 3131 | 174.52 | 174.41 | 0.11 | 175.02 | 175.44 | -0.42 | 175.05 | - | 0.32 | stepped (18 levels); parapet; pitched; 21 rooftop structures |
 | Michigan Plaza South (867333) | 2868 | 168.06 | 168.04 | 0.02 | 168.06 | 170.00 | -1.94 | 172.94 | 0.00, 0.00 | 0.25 | stepped (4 levels); 2 masts |
 | Field Building (887494) | 3403 | - | no returns | - | - | - | - | 163.92 | - | - | stepped (9 levels); parapet; 5 rooftop structures |
 | 222 North Columbus Drive (866170) | 2872 | 163.40 | 163.41 | -0.01 | 163.40 | 163.75 | -0.35 | 163.40 | - | 0.31 | stepped (6 levels); parapet; pitched; 8 rooftop structures |
@@ -55,7 +55,7 @@ Companion to `phase17_results.md`. Heights are above the scan's ground at each b
 | Wolf Point West (863968) | 2522 | 145.86 | 145.82 | 0.04 | 146.10 | 146.93 | -0.83 | 145.86 | - | 0.63 | stepped (5 levels); parapet; 4 rooftop structures |
 | Fifth Third Center (890881) | 3541 | 140.94 | 140.94 | 0.00 | 140.94 | 141.05 | -0.11 | 140.94 | - | 0.17 | stepped (5 levels); 11 rooftop structures |
 | Chicago Marriott Downtown Magnificent Mile (850491) | 2191 | 136.60 | 136.59 | 0.01 | 139.63 | 139.73 | -0.10 | 139.63 | - | 0.54 | stepped (3 levels); pitched; 5 rooftop structures |
-| 540 West Madison (878101) | 3122 | 138.53 | 138.24 | 0.29 | 139.09 | 138.07 | 1.02 | 139.10 | - | 0.33 | stepped (7 levels); pitched; 9 rooftop structures |
+| 540 West Madison (878101) | 3122 | 138.53 | 138.24 | 0.29 | 139.09 | 138.07 | 1.02 | 139.10 | - | 0.33 | stepped (7 levels); pitched; 8 rooftop structures |
 | Riverbend (864161) | 2553 | 127.47 | 127.46 | 0.01 | 137.13 | 137.16 | -0.03 | 137.13 | - | 0.70 | stepped (3 levels); 1 rooftop structures |
 | Presidential Towers Garage (882753) | 3286 | 136.82 | 136.80 | 0.02 | 136.82 | 140.43 | -3.61 | 136.82 | - | 0.52 | stepped (6 levels); parapet; pitched; 40 rooftop structures |
 | 444 North Michigan (855721) | 2347 | 136.76 | 136.75 | 0.01 | 136.76 | 136.80 | -0.04 | 136.76 | - | 0.65 | stepped (2 levels); 1 rooftop structures |
@@ -139,7 +139,7 @@ Companion to `phase17_results.md`. Heights are above the scan's ground at each b
 | unnamed (779625) | 44 | 3.38 | 3.42 | -0.04 | 3.86 | 5.60 | -1.74 | - | pitched | brick (assumed) | #8a4a3c, assumed |
 | 1532 North Wieland Street (780815) | 44 | 15.76 | 15.76 | 0.00 | 15.76 | 16.12 | -0.36 | 0.04 | stepped (2 levels) | brick (Assessor) | #96583f, assumed |
 | 1530 North Wieland Street (781095) | 45 | 14.32 | 14.33 | -0.01 | 14.32 | 16.29 | -1.97 | 0.29 | stepped (2 levels) | brick (Assessor) | #6e4436, assumed |
-| 1534 North Wieland Street (780546) | 46 | 9.05 | 9.16 | -0.11 | 9.56 | 9.10 | 0.46 | 0.56 | pitched; 1 rooftop structures | brick (front) with siding (Assessor) | #6e4436, assumed |
+| 1534 North Wieland Street (780546) | 46 | 8.82 | 9.03 | -0.21 | 9.56 | 9.10 | 0.46 | 0.34 | flat; pitched; 1 rooftop structures | brick (front) with siding (Assessor) | #6e4436, assumed |
 | 1524-1530 North Wieland Street (781415) | 46 | 17.59 | 17.62 | -0.03 | 17.59 | 17.65 | -0.06 | 0.29 | stepped (2 levels); 1 rooftop structures | brick (assumed) | #a35d48, assumed |
 | 1536 North Wieland Street (780254) | 52 | 11.62 | 11.78 | -0.16 | 12.20 | 14.35 | -2.15 | 0.06 | stepped (2 levels); pitched | brick (Assessor) | #a35d48, assumed |
 | Up Down Cigar (779596) | 54 | 7.84 | 7.77 | 0.07 | 8.05 | 8.78 | -0.73 | 0.22 | flat | brick (assumed) | #8c6a52, assumed |
