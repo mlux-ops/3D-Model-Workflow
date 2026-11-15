@@ -245,6 +245,7 @@ def main():
                 'model_roof_ft_above_ground': round(rec.get('roof_top_m', 0) * 3.28084) if rec else '',
                 'model_tip_ft_above_ground': round(rec.get('top_incl_masts_m', 0) * 3.28084) if rec else '',
                 'model_roof_z_cm': round(roof_z), 'model_tip_z_cm': round(tip_z),
+                'roof_cx_cm': round(cx), 'roof_cy_cm': round(cy),
                 'model_elev_roof': round(er, 2), 'd_elev_roof': round(er - row['sheet_elev_roof'], 2),
                 'model_elev_tip': round(et, 2), 'd_elev_tip': round(et - float(sheet_e_tip), 2),
                 'roof_traces': nh,

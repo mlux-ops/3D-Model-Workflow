@@ -640,15 +640,18 @@ def _job(file_path):
             "asset": asset, "sequence": seq, "sequence_made": how, "folder": folder, "summary": summary}
 
 
-def render_requested(include_test=False, on_done=None):
+def render_requested(include_test=False, on_done=None, only=None):
     """Render every requested path that has no up-to-date video, one at a time, on the editor's ticks. Returns at
-    once; progress in _STATE and, at the end, owner_review/paths/last_render.json."""
+    once; progress in _STATE and, at the end, owner_review/paths/last_render.json. only: a list of path names
+    (as saved on the page) to restrict this run to, e.g. ["Grade Level"] to render and look at one video first."""
     unreal = _unreal()
     if _STATE.get("active"):
         return {"already_running": True, "queue": [os.path.basename(f) for f in _STATE.get("queue", [])]}
     queue = []
     skipped = []
     for fp in requested_paths(include_test):
+        if only is not None and os.path.splitext(os.path.basename(fp))[0] not in only:
+            continue
         try:
             p = load(fp)
         except ValueError as exc:
