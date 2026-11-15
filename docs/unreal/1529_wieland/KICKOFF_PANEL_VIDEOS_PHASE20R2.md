@@ -8,6 +8,8 @@ Make the owner's seven walking-path videos and a new delivery revision, then ref
 
 What this session is for
 
+Earlier in this panel session (2026-11-15, from 10:57), you or a previous chat refined the John Hancock Center (875 N Michigan) at the owner's request: tapered, angled sides and visible exterior cross-bracing, in place of the rectangular box. Keep that work. If its journal lines or commit are missing, record it now in `phase20_results.md` (a round-2 journal line with what changed and the asset names) and commit it, then go on. In Part 2, check Hancock in the panorama with the others rather than rebuilding it.
+
 You are working in the Unreal Engine 5.9 project `D:\Unreal_Engine_Projects\Wieland1527 5.9\Wieland1527.uproject`, for the plan in `E:\Claude\3D-Model-Workflow\.claude\worktrees\1529-wieland-scene-plan-e84a03\docs\unreal\1529_wieland\PLAN.md`. You have none of the earlier sessions' memory; their records are in that plan folder. Phases 17, 20 and 19 are DONE (2026-11-14). The owner is away and wants the work to keep going: decide what you can, and put anything that truly needs the owner in the final report.
 
 Part 1: the owner's path videos (do this first)
