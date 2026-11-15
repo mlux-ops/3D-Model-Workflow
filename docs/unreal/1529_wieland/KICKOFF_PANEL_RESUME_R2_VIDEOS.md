@@ -49,9 +49,12 @@ The graphics card has 16 GB. The crash came on a path-traced render at 3,840 by 
    - Read the card's used video memory with `nvidia-smi --query-gpu=memory.used,memory.total --format=csv` and write it in the journal.
    - Start only when used memory is under 9 GB with the level loaded. If it is not, free memory again. If it still is not, say so in one line and look for what holds it, such as another program using the card.
 2. **Log memory while the step runs.** Log the card's used memory and the editor's committed memory every few seconds (`tools\memory_log.ps1`, with `nvidia-smi` added if it lacks it), into the profile folder.
-3. **The D1 path-traced still uses round 1's settings,** not round 2's heavier ones. Use round 1's resolution, samples and console values, which are in `review\phase20\stills_driver.log` and `review\phase20\scripts\`. Leave `r.RayTracing.Nanite.MaxAppendInstances` at its default unless round 1 changed it.
+3. **Stills render at 1,920 by 1,080** (owner, 2026-11-15: 1080p is fine for the stills). This covers the D1 path-traced still and any still you redo.
+   - Otherwise use round 1's samples and console values, which are in `review\phase20\stills_driver.log` and `review\phase20\scripts\`.
+   - Leave `r.RayTracing.Nanite.MaxAppendInstances` at its default unless round 1 changed it.
+   - Note in the journal and the delivery notes that the stills are 1080p by the owner's choice.
    - If memory rises toward 15 GB during the render, stop it before it fails.
-   - If the render fails or stops, change one thing at a time: first the resolution to 1,920 by 1,080, then the sample count. Record each try.
+   - If the render fails or stops, lower the sample count next, and record each try.
 4. **Videos render in real time,** one at a time, with memory freed and measured before each one. The real-time profile measured about 8.8 GB.
    - If a video's memory climbs past 14 GB, stop it. Then lower its resolution or the quality setting that drives memory (for example the virtual shadow map pool or the streaming pool), put the setting back afterwards, and read it back to confirm.
 5. **If an "out of video memory" or other fatal dialog appears again,** do not press OK: that closes the editor, and closing it ends this chat.
