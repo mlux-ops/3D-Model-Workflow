@@ -1,0 +1,145 @@
+{
+ "source_record": "capture_P17_roofdeck.json",
+ "info": {
+  "step": "Phase 9, state P17, part roofdeck: Phase 17: option Laser-scan model shown (418 skyline, 144 Zone 1-2, ground), Phase 9 final state otherwise",
+  "level": "/Game/Wieland1529/L_Site_M4.L_Site_M4",
+  "quality": "Epic (3), pool 1000, screen percentage 82, t.MaxFPS 1000, Game View on",
+  "view_mode": "Lit",
+  "lighting": "L_Light_SummerAfternoon: sun 160000.0 lux, sky, haze, fog, clouds, fixed exposure; 284 fixture lights on, 284 of them casting shadows",
+  "console_variables_for_this_run": {
+   "r.Editor.Viewport.ScreenPercentage": 82
+  },
+  "viewport_pixels": [
+   2038,
+   1198
+  ],
+  "unit_levels_shown": [
+   "NorthPenthouse",
+   "NorthTriplex",
+   "SouthPenthouse",
+   "SouthTriplex"
+  ],
+  "materials": "Phase 12 active",
+  "found_before": {
+   "sg.ViewDistanceQuality": 3.0,
+   "sg.AntiAliasingQuality": 3.0,
+   "sg.ShadowQuality": 3.0,
+   "sg.GlobalIlluminationQuality": 3.0,
+   "sg.ReflectionQuality": 3.0,
+   "sg.PostProcessQuality": 3.0,
+   "sg.TextureQuality": 3.0,
+   "sg.EffectsQuality": 3.0,
+   "sg.FoliageQuality": 3.0,
+   "sg.ShadingQuality": 3.0,
+   "sg.LandscapeQuality": 3.0,
+   "r.Streaming.PoolSize": 1000.0,
+   "r.Editor.Viewport.ScreenPercentage": 100.0,
+   "t.MaxFPS": 0.0,
+   "Slate.bAllowThrottling": 0.0,
+   "r.VSync": 0.0
+  },
+  "foreground_attempt": {
+   "restored": 0,
+   "front": true,
+   "asked": false,
+   "idle_seconds": 132.0
+  }
+ },
+ "method": "final header row; every positive FrameTime row; p95 = value at floor(0.95 * (n - 1))",
+ "jobs": [
+  {
+   "name": "P17_penthouse_path_roof_deck",
+   "kind": "route",
+   "csv": [
+    "Profile(20261114_190244).csv"
+   ],
+   "foreground_fraction": 1.0,
+   "recorded_seconds": 10.011716299995896,
+   "tick_ms_mean": 12.93369186247966,
+   "tick_ms_p95": 16.242999583482742,
+   "tick_ms_max": 23.023400455713272,
+   "frames": 774,
+   "columns": 288,
+   "mean_fps": 77.29495538268539,
+   "frames_over_16_667ms": 19,
+   "frames_over_33_333ms": 0,
+   "stats": {
+    "FrameTime": {
+     "mean": 12.937454909560723,
+     "p95": 16.0027,
+     "min": 6.4038,
+     "max": 22.4842
+    },
+    "GPUTime": {
+     "mean": 10.613304521963824,
+     "p95": 12.2481,
+     "min": 8.3548,
+     "max": 13.9736
+    },
+    "GameThreadTime": {
+     "mean": 9.459939147286821,
+     "p95": 11.6653,
+     "min": 5.8876,
+     "max": 19.279
+    },
+    "RenderThreadTime": {
+     "mean": 0.0008733850129198967,
+     "p95": 0.0011,
+     "min": 0.0005,
+     "max": 0.0019
+    },
+    "RHIThreadTime": {
+     "mean": 0.3311311369509044,
+     "p95": 0.6199,
+     "min": 0.0762,
+     "max": 4.9848
+    },
+    "GPUMem/LocalUsedMB": {
+     "mean": 8671.276854392765,
+     "p95": 8755.4336,
+     "min": 8499.1914,
+     "max": 8755.4336
+    },
+    "GPUMem/LocalBudgetMB": {
+     "mean": 15280.0,
+     "p95": 15280.0,
+     "min": 15280.0,
+     "max": 15280.0
+    },
+    "RHI/DrawCalls": {
+     "mean": 407.59043927648577,
+     "p95": 712.0,
+     "min": 231.0,
+     "max": 815.0
+    },
+    "RHI/PrimitivesDrawn": {
+     "mean": 117004.25193798449,
+     "p95": 286937.0,
+     "min": 28504.0,
+     "max": 403814.0
+    },
+    "TextureStreaming/DesiredDataLoadedPercent": {
+     "mean": 100.0,
+     "p95": 100.0,
+     "min": 100.0,
+     "max": 100.0
+    },
+    "MemoryFreeMB": {
+     "mean": 8953.97621873385,
+     "p95": 8959.4453,
+     "min": 8935.0,
+     "max": 8963.332
+    },
+    "PhysicalUsedMB": {
+     "mean": 3780.3326445736434,
+     "p95": 3781.0703,
+     "min": 3779.3945,
+     "max": 3784.9805
+    }
+   },
+   "metadata": {},
+   "copied_to": "P17_penthouse_path_roof_deck.csv.gz",
+   "copied_bytes": 251854
+  }
+ ]
+}
