@@ -1577,6 +1577,10 @@ Errors and surprises of the phase, each with cause, fix and status. "Jn" is the 
 2. J4, after the test render the tool "put back" the render settings instead of the earlier ones (pre-exposure 7, quality groups 3 / 4 / 4). Cause: `wieland_truth.cvar(name, value)` sets a value and returns the new one; `tools\wieland_paths.py` (like Phase 11's `seq_render.py`, whose `seq_end.py` used fixed values instead) kept what it returned as the value to restore. Fix: the settings were set back by hand to the values before the render (pre-exposure 4, the engine default in `PostProcessEyeAdaptation.cpp`, not set by any configuration file; quality groups 3, read by the profile of 20:11) and read back; the tool now reads each value before changing it and restores those. Status: fixed.
 3. J3, the first wall test line met a kitchen cabinet panel before the wall it was meant to test. Not a fault of the tool (furniture over 0.5 m is solid, as specified); the test line was moved to y = -1000 cm, where it meets the north exterior wall. Status: closed.
 
+## Owner videos -- 2026-11-15 hybrid surroundings
+
+1. J11, 17:56: _test_neighbour was refused at hidden P17Z_780226 after the owner restored the earlier detailed buildings. Cause: check_sight ignored only two Revit stand-ins; component visibility does not disable collision. Fix: ignore actors with primitive components only when all those components are invisible; keep visible walls/furniture solid. Status: pending patch and own-path regression checks.
+
 ## Phase 20 round 2 -- 2026-11-15 11:20 onward (journal `docs\unreal\1529_wieland\phase20_results.md`, J9 on)
 
 1. J9, the owner-requested Hancock rebuild set the masts to the published 457 and 449 m and the roof 1.1 m under the scan, against the rule that measured heights stay. Cause: the rebuild was made from published dimensions before the round-2 brief was read. Fix: J10 put the roof, rooftop structure, mast bases and mast tips back on the scan mesh's levels (masts 43,155 and 42,463 cm). Status: fixed.
