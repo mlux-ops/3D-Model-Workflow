@@ -42,11 +42,11 @@ The owner chose a model built from public laser-scan data: our own geometry, usa
 
 The owner draws walking paths on top views of the site and of each floor (the path page, `Open path editor.bat`), presses "Request videos", and the tool renders each path to an MP4 at its own speed, frame rate and picture size, after checking that the walk does not pass through a wall or other solid object (a path that does is refused, with the object and the place). See `RENDER_HOW.md`.
 
-At the time of this revision the owner had not saved a path yet. `video_paths\` therefore holds the agent's test walk across the penthouse roof deck (`_test_roofdeck.mp4`, 15.2 s, 1,920 by 1,080, 30 frames a second), made to prove the tool; a second test path through the penthouse's north wall was correctly refused.
+At the time of this revision the owner had not saved a path yet. `video_paths\` therefore holds the agent's test walk across the penthouse roof deck (`_test_roofdeck.mp4`, 15.2 s, 1,920 by 1,080, 30 frames a second), made to prove the tool. Two further test paths were correctly refused, with the object and its place: one through the penthouse's north exterior wall, and one from the sidewalk into the north neighbour, 1533 N Wieland (a laser-scan building, which the check treats as solid).
 
 ## 5. Known differences and assumptions
 
-- The surroundings beyond the work list keep Phase 17's materials by building type; 371 of the 418 skyline buildings rest on such assumptions (labelled in the project's `tower_materials.csv`).
+- The surroundings beyond the work list keep Phase 17's materials by building type: 357 of the 418 skyline buildings rest on such assumptions (371 in Phase 17, less the 14 that Phase 20's photographs settled; the project's `tower_materials.csv` holds Phase 17's labels, and `review\phase20\building_table.csv` overrides them for the towers it settled).
 - One county footprint (773890) has no building in the 2022 scan (ground and trees only); it is modelled as the low structure the scan shows.
 - Rooftop items under 1.5 m or 4 square metres are left out by rule; crowns are simplified shapes.
 

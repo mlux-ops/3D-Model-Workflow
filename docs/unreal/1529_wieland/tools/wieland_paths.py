@@ -352,9 +352,14 @@ def check_sight(p, frames, step_cm=25.0):
     """Line traces along the walked segments at eye height. Returns [] when clear, else a list of refusals
     {"segment", "from_point", "to_point", "at_cm", "object", "component"} (the first solid hit of each segment)."""
     unreal = _unreal()
+    import wieland_interiors as wi
     world = _world()
     segs = _segments(p)
     refusals = []
+    # Revit's grade slab and surrounding-building massing are hidden in every render (start_render), so the check
+    # ignores them too and tests what the video shows: the Phase 17 buildings, which are solid to the trace.
+    ignore = [a for a in unreal.get_editor_subsystem(unreal.EditorActorSubsystem).get_all_level_actors()
+              if a.get_actor_label() in wi.REVIT_STAND_INS]
     for k, (kind, poly, i) in enumerate(segs):
         if kind != "walk":
             continue
@@ -373,7 +378,7 @@ def check_sight(p, frames, step_cm=25.0):
         hit_found = None
         for a, b in zip(pts, pts[1:]):
             hits = unreal.SystemLibrary.line_trace_multi(world, unreal.Vector(*a), unreal.Vector(*b),
-                                                         unreal.TraceTypeQuery.TRACE_TYPE_QUERY1, True, [],
+                                                         unreal.TraceTypeQuery.TRACE_TYPE_QUERY1, True, ignore,
                                                          unreal.DrawDebugTrace.NONE, True)
             for h in hits or []:
                 t = h.to_tuple()
@@ -577,9 +582,21 @@ def up_to_date(file_path, p):
     if not (os.path.exists(side) and os.path.exists(mp4)):
         return False
     meta = json.load(open(side, encoding="utf-8"))
+    if meta.get("path_sha256") != checksum(file_path):
+        return False
     req = p.get("render_requested_at")
-    made = meta.get("rendered_at", "")
-    return meta.get("path_sha256") == checksum(file_path) and (not req or made >= str(req))
+    if not req:
+        return True
+
+    def when(text):
+        # path_server.py writes local time without a zone, as this tool does; a value with a zone (for example a
+        # trailing Z) is turned into local time, so the two always compare as times, not as text.
+        t = datetime.datetime.fromisoformat(str(text).replace("Z", "+00:00"))
+        return t.astimezone().replace(tzinfo=None) if t.tzinfo else t
+    try:
+        return when(meta.get("rendered_at", "")) >= when(req)
+    except ValueError:
+        return False
 
 
 def requested_paths(include_test=False):

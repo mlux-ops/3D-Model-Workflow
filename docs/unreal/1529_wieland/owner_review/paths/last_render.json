@@ -1,38 +1,26 @@
 {
- "time": "2026-11-14T20:19:50",
- "rendered": [
-  {
-   "name": "_test_roofdeck",
-   "path_file": "_test_roofdeck.json",
-   "path_sha256": "c4a6d2cbf63660b65b916cab91b026f41c254b28c8d72dc3504650c7546caf0f",
-   "rendered_at": "2026-11-14T20:19:50",
-   "duration_s": 15.2,
-   "frames": 456,
-   "frames_rendered": 456,
-   "planned_frames": 456,
-   "fps": 30,
-   "resolution": [
-    1920,
-    1080
-   ],
-   "quality": "realtime",
-   "speed_m_per_s": 1.0,
-   "length_m": 10.54,
-   "max_step_cm_per_frame": 3.35,
-   "max_turn_deg_per_frame": 1.575,
-   "render_seconds": 68.8,
-   "sequence": "/Game/Wieland1529/Delivery/Paths/SEQ_Path__test_roofdeck_c4a6d2cb",
-   "frames_folder": "D:/Wieland1529_delivery/video_paths_frames/_test_roofdeck_c4a6d2cb",
-   "settings_put_back": {
-    "r.EyeAdaptation.CachedLightingPreExposure": 7.0,
-    "sg.GlobalIlluminationQuality": 3.0,
-    "sg.ReflectionQuality": 4.0,
-    "sg.ShadowQuality": 4.0,
-    "nanite_mode": 0.0
-   }
-  }
- ],
+ "time": "2026-11-14T20:28:53",
+ "rendered": [],
  "refused": [
+  {
+   "path": "_test_neighbour.json",
+   "name": "_test_neighbour",
+   "refused": "segment 1 (point 1 to 2) passes through P17Z_780226 at x -2100, y -320, z 160 cm",
+   "refusals": [
+    {
+     "segment": 1,
+     "from_point": 1,
+     "to_point": 2,
+     "at_cm": [
+      -2100.0,
+      -320.5,
+      160.0
+     ],
+     "object": "P17Z_780226",
+     "component": "StaticMeshComponent0"
+    }
+   ]
+  },
   {
    "path": "_test_wall.json",
    "name": "_test_wall",
@@ -53,5 +41,10 @@
    ]
   }
  ],
- "skipped": []
+ "skipped": [
+  {
+   "path": "_test_roofdeck.json",
+   "skipped": "video up to date"
+  }
+ ]
 }
