@@ -12,6 +12,8 @@ Standing rules: preserve L_R15_Production and Datasmith assets; use named new as
 |---|---|---|---|
 | N1 | 2026-11-15 17:34 | Map the requested inner streets and outer two-block band; inspect the earlier assets, measured outlines and photographic evidence; identify which buildings can be restored and which need new work. | PENDING. |
 
+| N2 | 2026-11-15 17:36 | Restore the 57 fitted earlier detailed pieces while retaining Phase 17 skyline and ground; hide the 52 local Phase 17 replacements identified by the existing measured overlap table. Preserve prior variant choices and write a new hybrid option. Save named copy levels and variant only after readback. | PENDING. |
+
 ## Order
 
 1. Map coverage and supported detail.
