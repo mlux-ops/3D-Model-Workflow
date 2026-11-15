@@ -21,7 +21,7 @@ import numpy as np
 from PIL import Image, ImageDraw, ImageFont
 
 HERE = os.path.dirname(os.path.abspath(__file__))
-MESH = "E:/Wieland1529_site_data/phase17/meshes_towers"
+MESH = os.environ.get("P17_TOWER_MESHES", "E:/Wieland1529_site_data/phase17/meshes_towers_clean")  # clean roofs from J23
 MATS = "E:/Wieland1529_site_data/phase17/tower_materials.csv"
 
 

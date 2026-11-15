@@ -151,7 +151,10 @@ def main(argv):
         x, y, zz = frame.level_from_map(e, n, z - drop / FT)
         verts.append((round(x - pivot[0], 1), round(y - pivot[1], 1), round(zz - pivot[2], 1)))
         uvs.append((round(min(max((e - bx0) / (bx1 - bx0), 0.0), 1.0), 6), round(min(max((by1 - n) / (by1 - by0), 0.0), 1.0), 6)))
-    tris = [(int(t[0]), int(t[2]), int(t[1])) for t in ff]  # mirrored level frame: flip winding
+    # Counter-clockwise from above in map feet is clockwise in the mirrored level frame, which is the engine's front
+    # ((v2 - v0) x (v1 - v0) in level coordinates; measured, J23b): emitted as given, so the ground faces up. (Until
+    # J23b this line flipped the winding and the ground faced down, unseen from above.)
+    tris = [(int(t[0]), int(t[1]), int(t[2])) for t in ff]
     data = {"name": "P17G_Terrain", "kind": "ground", "zone": 4, "pivot": [round(v, 2) for v in pivot],
             "vertices": verts, "triangles": tris, "tri_mat": [int(m) for m in tri_mat], "uv0_m": uvs}
     with open(os.path.join(out, "P17G_Terrain.json"), "w", encoding="utf-8") as handle:

@@ -39,7 +39,7 @@ FRAME = os.path.join(HERE, "..", "review", "phase2", "level_frame.json")
 D1 = (-1300.0, -1560.0, 1684.0)
 K = 0.13
 R = 6371000.0
-MESHES = "E:/Wieland1529_site_data/phase17/meshes_towers"
+MESHES = os.environ.get("P17_TOWER_MESHES", "E:/Wieland1529_site_data/phase17/meshes_towers_clean")  # clean roofs from J23
 MATS = "E:/Wieland1529_site_data/phase17/tower_materials.csv"
 DTM = "E:/Wieland1529_site_data/phase17/rasters/view6ft_dtm.npz"
 
@@ -61,7 +61,7 @@ def model_points(frame):
     d1e, d1n = frame.map_from_level(D1[0], D1[1])
     pts, owner = [], []
     recs = {json.loads(l)["name"]: json.loads(l) for l in open(os.path.join(MESHES, "towers_record.jsonl"), encoding="utf-8")}
-    for path in sorted(glob.glob(os.path.join(MESHES, "P17T_*.json"))):
+    for path in sorted(glob.glob(os.path.join(MESHES, "P17*_*.json"))):
         d = json.load(open(path, encoding="utf-8"))
         v = np.asarray(d["vertices"], np.float64) + np.asarray(d["pivot"])
         t = np.asarray(d["triangles"], np.int64)

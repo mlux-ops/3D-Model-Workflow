@@ -471,6 +471,38 @@ def triangulate(poly):
 class CleanMesh(T.MeshOut):
     """MeshOut with planar roof faces and walls whose top follows a roof."""
 
+    def walls(self, poly, z0, z1, mat):
+        """Vertical walls facing out of the solid. The engine takes a triangle's front from (v2 - v0) x (v1 - v0) in
+        level coordinates (measured on the imported meshes, J23b), and the level frame is a mirror of the map (east =
+        -Y), so with _wall_ring's emission order a wall faces out when its ring runs clockwise seen from above in map
+        feet: the exterior clockwise, holes (courtyards) counter-clockwise. (phase17_towers.MeshOut.walls tests
+        `ring is not poly.exterior`, always true in shapely 2, so its courtyard walls face inward; this replaces it.)
+        Measured by tools/phase17_facing_check.py."""
+        rings = [(poly.exterior, False)] + [(r, True) for r in poly.interiors]
+        for ring, hole in rings:
+            pts = list(ring.coords)[:-1]
+            ccw = shapely.geometry.LinearRing(pts).is_ccw
+            if ccw != hole:
+                pts = pts[::-1]
+            self._wall_ring(pts, lambda e, n: z0, lambda e, n: z1, mat)
+
+    def _wall_ring(self, pts, bot_fun, top_fun, mat):
+        along = 0.0
+        m = len(pts)
+        for i in range(m):
+            a, b = pts[i], pts[(i + 1) % m]
+            ln = math.hypot(b[0] - a[0], b[1] - a[1]) * FT
+            if ln < 1e-4:
+                continue
+            za0, zb0, za1, zb1 = bot_fun(*a), bot_fun(*b), top_fun(*a), top_fun(*b)
+            i0 = self.vert(a[0], a[1], za0, along, (za0 - self.ground) * FT)
+            i1 = self.vert(b[0], b[1], zb0, along + ln, (zb0 - self.ground) * FT)
+            i2 = self.vert(b[0], b[1], zb1, along + ln, (zb1 - self.ground) * FT)
+            i3 = self.vert(a[0], a[1], za1, along, (za1 - self.ground) * FT)
+            along += ln
+            self.t += [(i0, i2, i1), (i0, i3, i2)]
+            self.m += [mat, mat]
+
     def cap(self, poly, z, mat):
         for t in triangulate(poly):
             c = list(t.exterior.coords)[:3]
@@ -479,13 +511,16 @@ class CleanMesh(T.MeshOut):
             if not Polygon(c).exterior.is_ccw:
                 c = c[::-1]
             ids = [self.vert(e, n, z, (e - self.pe) * FT, (n - self.pn) * FT) for e, n in c]
-            self.t.append((ids[0], ids[2], ids[1]))
+            # Counter-clockwise in map feet is clockwise in the mirrored level frame, which is the engine's front:
+            # emitted as given, so the cap faces up (phase17_towers.MeshOut.cap emits it reversed, facing down).
+            self.t.append((ids[0], ids[1], ids[2]))
             self.m.append(mat)
 
     def tri(self, P3, uv, mat):
-        """One triangle given counter-clockwise seen from outside, points (e, n, z_ft)."""
+        """One triangle given counter-clockwise seen from outside, points (e, n, z_ft); emitted as given, so it faces
+        outward in the engine (see cap)."""
         ids = [self.vert(p[0], p[1], p[2], u[0], u[1]) for p, u in zip(P3, uv)]
-        self.t.append((ids[0], ids[2], ids[1]))
+        self.t.append((ids[0], ids[1], ids[2]))
         self.m.append(mat)
 
     def roof_face(self, poly, zfun, grad, mat=1):
@@ -510,23 +545,9 @@ class CleanMesh(T.MeshOut):
             self.tri(P3, uv, mat)
 
     def follow_walls(self, ring_pts, base_ft, top_fun, mat=0):
-        """Walls on a ring given counter-clockwise from above (outward facing), from base_ft up to top_fun(e, n)."""
-        along = 0.0
-        m = len(ring_pts)
-        for i in range(m):
-            a, b = ring_pts[i], ring_pts[(i + 1) % m]
-            ln = math.hypot(b[0] - a[0], b[1] - a[1]) * FT
-            if ln < 1e-4:
-                continue
-            za, zb = top_fun(*a), top_fun(*b)
-            h0 = (base_ft - self.ground) * FT
-            i0 = self.vert(a[0], a[1], base_ft, along, h0)
-            i1 = self.vert(b[0], b[1], base_ft, along + ln, h0)
-            i2 = self.vert(b[0], b[1], zb, along + ln, (zb - self.ground) * FT)
-            i3 = self.vert(a[0], a[1], za, along, (za - self.ground) * FT)
-            along += ln
-            self.t += [(i0, i2, i1), (i0, i3, i2)]
-            self.m += [mat, mat]
+        """Walls on a ring given counter-clockwise from above for an exterior (clockwise for a hole), from base_ft up
+        to top_fun(e, n); emitted reversed, so they face out in the mirrored level frame (see walls)."""
+        self._wall_ring(list(ring_pts)[::-1], lambda e, n: base_ft, top_fun, mat)
 
 
 def ring_with_points(ring, extra, eps=0.01):
@@ -1051,7 +1072,20 @@ def build(bid, base, frame, county, dtm6, out):
             shape = max(shape.geoms, key=lambda r: r.area)
         if shape.is_empty or not isinstance(shape, Polygon) or shape.area < STRUCT_MIN_FT2:
             continue
+        # Pulled 0.3 ft inside the main walls (no two walls in one plane), and standing on the main roof, not on
+        # the ground.
+        shape = shape.intersection(taken.buffer(-0.3, join_style=2))
+        if isinstance(shape, MultiPolygon):
+            shape = max(shape.geoms, key=lambda r: r.area)
+        if shape.is_empty or not isinstance(shape, Polygon) or shape.area < STRUCT_MIN_FT2:
+            continue
         shape = shape.simplify(0.05)
+        host = [pp for pp in clean_pitched if pp[0].contains(shape.centroid)]
+        if host:
+            eave_m = min(min(plane_z(pl, e, n) for pl in host[0][1]) for e, n in shape.exterior.coords)
+            d_base = zft(eave_m - 0.3)
+        else:
+            d_base = base_ft
         sm_ = poly_mask(shape, x0, y1, w, h) & bmask
         fit = fit_poly(shape, False)
         if fit is not None:
@@ -1062,14 +1096,16 @@ def build(bid, base, frame, county, dtm6, out):
                 pl = planes[k]
                 for r in ps:
                     mesh.roof_face(poly_with_points(r, allpts), lambda e, n, pl=pl: zft(plane_z(pl, e, n)), (pl[0], pl[1]))
-            mesh.follow_walls(ring_with_points(shape.exterior, allpts), base_ft,
-                              lambda e, n, planes=planes: zft(min(plane_z(pl, e, n) for pl in planes)))
+            mesh.follow_walls(ring_with_points(shape.exterior, allpts), d_base,
+                              lambda e, n, planes=planes: max(zft(min(plane_z(pl, e, n) for pl in planes)), d_base + 0.1 / FT))
             top_m = max(min(plane_z(pl, e, n) for pl in planes) for e, n in allpts)
             structures.append({"kind": "dormer, pitched", "top_m": round(top_m, 2), "fit_p90_m": round(fit[1], 3),
                                "area_ft2": round(shape.area, 1)})
         elif sm_.sum() >= 10:
             top_m = round(float(np.median(med[sm_])), 2)
-            mesh.walls(shape, base_ft, zft(top_m), 0)
+            if zft(top_m) <= d_base:
+                continue
+            mesh.walls(shape, d_base, zft(top_m), 0)
             mesh.cap(shape, zft(top_m), 1)
             structures.append({"kind": "dormer, flat", "top_m": top_m, "area_ft2": round(shape.area, 1)})
     if not mesh.t:
