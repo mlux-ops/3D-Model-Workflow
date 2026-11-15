@@ -2,7 +2,7 @@
 
 Companion to [PLAN.md](PLAN.md), section "Phase 20", and to `KICKOFF_PHASE20.md`. Written as each step finishes, so a new session can resume from it.
 
-Status: IN PROGRESS (round 2), HALTED at 12:07 on 2026-11-15 by a fatal "out of video memory" error in the editor during the D1 path-traced still (dialog seen at 12:19; pressing OK closes the editor, so clearing it is the owner's). Every model change of round 2 is saved; still to do: the D1 path-traced still, the frame-time profile and the grazing-light frames, then status DONE (see "How to resume round 2"). Round 2 started at 11:20 (editor panel session) from the owner's skyline sightline sheet and the new photograph set (`KICKOFF_PANEL_VIDEOS_PHASE20R2.md`, Part 1).
+Status: IN PROGRESS (round 2), resumed at 17:10 on 2026-11-15; crash history: HALTED at 12:07 on 2026-11-15 by a fatal "out of video memory" error in the editor during the D1 path-traced still (dialog seen at 12:19; pressing OK closes the editor, so clearing it is the owner's). Every model change of round 2 is saved; still to do: the D1 path-traced still, the frame-time profile and the grazing-light frames, then status DONE (see "How to resume round 2"). Round 2 started at 11:20 (editor panel session) from the owner's skyline sightline sheet and the new photograph set (`KICKOFF_PANEL_VIDEOS_PHASE20R2.md`, Part 1).
 
 Round 1 status: DONE at 20:31 on 2026-11-14 (editor panel session, Opus). 40 skyline towers and 48 Zone 1-2 buildings reviewed against open images; 17 material instances refined from photographs; checks, sheets and profile inside the Phase 9 budget; the report is at the end.
 
