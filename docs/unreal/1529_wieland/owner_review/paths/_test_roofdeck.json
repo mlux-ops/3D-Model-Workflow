@@ -1,0 +1,15 @@
+{
+ "name": "_test_roofdeck",
+ "version": 1,
+ "speed_m_per_s": 1.0,
+ "fps": 30,
+ "resolution": [1920, 1080],
+ "quality": "realtime",
+ "points": [
+  {"plan": "roof_deck", "x_cm": -1000.0, "y_cm": -1250.0, "z_cm": 1683.0, "pause_s": 0, "look": {"mode": "forward"}},
+  {"plan": "roof_deck", "x_cm": -1300.0, "y_cm": -1560.0, "z_cm": 1683.0, "pause_s": 1.0, "look": {"mode": "forward"}},
+  {"plan": "roof_deck", "x_cm": -1150.0, "y_cm": -2150.0, "z_cm": 1683.0, "pause_s": 2.0, "look": {"mode": "target", "x_cm": 20000.0, "y_cm": -9000.0, "z_cm": 4000.0}}
+ ],
+ "render_requested_at": "2026-11-14T20:05:00",
+ "note": "Phase 19 test path (agent): a short walk across the penthouse roof deck, turning at the end towards downtown (south-south-east)."
+}
