@@ -208,7 +208,10 @@ class Handler(http.server.BaseHTTPRequestHandler):
                             raise ValueError("no such path: %s" % n)
                         d["render_requested_at"] = now
                         write_json_atomic(f, d)
-                    write_json_atomic(REQUEST, {"requested_at": now, "names": [str(n).strip() for n in names]})
+                    # Add to a pending request instead of replacing it (the owner may press once per path).
+                    pending = (read_json(REQUEST) or {}).get("names") or []
+                    merged = list(dict.fromkeys([str(n).strip() for n in pending] + [str(n).strip() for n in names]))
+                    write_json_atomic(REQUEST, {"requested_at": now, "names": merged})
                     return self._json(200, {"ok": True, "requested_at": now})
             return self._json(404, {"ok": False, "error": "unknown action"})
         except (KeyError, ValueError, TypeError, json.JSONDecodeError) as e:
