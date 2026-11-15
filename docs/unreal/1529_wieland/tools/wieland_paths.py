@@ -358,8 +358,11 @@ def check_sight(p, frames, step_cm=25.0):
     refusals = []
     # Revit's grade slab and surrounding-building massing are hidden in every render (start_render), so the check
     # ignores them too and tests what the video shows: the Phase 17 buildings, which are solid to the trace.
-    ignore = [a for a in unreal.get_editor_subsystem(unreal.EditorActorSubsystem).get_all_level_actors()
-              if a.get_actor_label() in wi.REVIT_STAND_INS]
+    ignore = []
+    for actor in unreal.get_editor_subsystem(unreal.EditorActorSubsystem).get_all_level_actors():
+        components = actor.get_components_by_class(unreal.PrimitiveComponent)
+        if actor.get_actor_label() in wi.REVIT_STAND_INS or (components and not any(c.is_visible() for c in components)):
+            ignore.append(actor)
     for k, (kind, poly, i) in enumerate(segs):
         if kind != "walk":
             continue

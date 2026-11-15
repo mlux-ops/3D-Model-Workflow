@@ -1579,7 +1579,7 @@ Errors and surprises of the phase, each with cause, fix and status. "Jn" is the 
 
 ## Owner videos -- 2026-11-15 hybrid surroundings
 
-1. J11, 17:56: _test_neighbour was refused at hidden P17Z_780226 after the owner restored the earlier detailed buildings. Cause: check_sight ignored only two Revit stand-ins; component visibility does not disable collision. Fix: ignore actors with primitive components only when all those components are invisible; keep visible walls/furniture solid. Status: pending patch and own-path regression checks.
+1. J11, 17:56: _test_neighbour was refused at hidden P17Z_780226 after the owner restored the earlier detailed buildings. Cause: check_sight ignored only two Revit stand-ins; component visibility does not disable collision. Fix: ignore actors with primitive components only when all those components are invisible; keep visible walls/furniture solid. Status: fixed 17:57. Roof-deck own test stays clear, wall own test still refuses the visible exterior wall, neighbour own test now hits the visible R15 detailed model rather than the hidden P17 building. No owner video rendered.
 
 ## Phase 20 round 2 -- 2026-11-15 11:20 onward (journal `docs\unreal\1529_wieland\phase20_results.md`, J9 on)
 
