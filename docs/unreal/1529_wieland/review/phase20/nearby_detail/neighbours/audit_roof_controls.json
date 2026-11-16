@@ -1,0 +1,99 @@
+{
+  "created_utc": "2026-11-16T01:12:50.397409+00:00",
+  "scope": "pointwise roof control, existing permitted 2022 measured clean-roof model; no geometry changes",
+  "survey_authority": "August2025 plat governs horizontal neighbour wall ties. No neighbour roof elevations were found in the recorded survey ties; county Height is the highest point minus ground, not the main roof level.",
+  "sampling": "25cm XY grid only where both legacy and measured clean roof have a triangle; heights in level centimetres",
+  "roof_material_review": {
+    "image": "1533_roof_repaired_saved_realtime.0000.png",
+    "verdict": "FAIL: long streaks remain; image texture changed across precisely the targeted foreground roof, confirming slot4 is the visible surface",
+    "code_evidence": "wieland_parents.py _WORLD_UV picks projection from VertexNormalWS. It uses XY for a Z-facing normal, otherwise XZ/YZ. Native geometric triangle normals are nearly vertical, but imported vertex-normal overlay was not dumped.",
+    "diagnosis": "Suspected inherited vertex normals choose a wall projection: only69cm Z variation is then spread across24m roof. This is a testable hypothesis, not a runtime-normal measurement.",
+    "next_test": "Roof-only parent using explicit world XY texture coordinates, independent of VertexNormalWS; colour map, rotated/scaled second sample, non-repeating cloud blend, roughness, modest relief. Do not modify the shared Opaque parent. Readback and neutral/grazing render required."
+  },
+  "neighbours": [
+    {
+      "object_id": 780226,
+      "name": "1533 north",
+      "clean_mesh_source": "E:\\Wieland1529_site_data\\phase17\\meshes_zone12_clean\\P17RZ_780226.json",
+      "legacy_roof_slot": 4,
+      "legacy_roof_geometric_normal_absZ": [
+        0.999,
+        0.999,
+        1.0,
+        0.999
+      ],
+      "legacy_roof_z_extent_cm": [
+        1438.767,
+        1507.757
+      ],
+      "clean_roof_z_extent_cm": [
+        1364.13,
+        1364.14
+      ],
+      "legacy_minus_full_measured_roof": {
+        "samples": 5758,
+        "p10_cm": 89.63,
+        "median_cm": 107.25,
+        "p90_cm": 128.33,
+        "maximum_abs_cm": 141.59
+      },
+      "common_sampled_area_sq_m": 359.875,
+      "recommendation": "A real main flat-roof height mismatch remains. On new copies only, correct roof/upper facade/glass/coping together to the measured flat roof near1364.14cm; preserve foot, surveyed XY walls, stoops and fences. Ground-anchored vertical mapping of isolated building geometry avoids moving the merged tile and disconnected window pieces. Preserve parapet relative thickness as a labelled model assumption; thin parapet height is not resolved by the old scan. Validate 0.3m pointwise roof agreement and facade continuity."
+    },
+    {
+      "object_id": 781632,
+      "name": "1525 south",
+      "clean_mesh_source": "E:\\Wieland1529_site_data\\phase17\\meshes_zone12_clean\\P17RZ_781632.json",
+      "legacy_roof_slot": 3,
+      "legacy_roof_geometric_normal_absZ": [
+        0.81,
+        0.815,
+        0.822,
+        0.816
+      ],
+      "legacy_roof_z_extent_cm": [
+        663.812,
+        887.802
+      ],
+      "clean_roof_z_extent_cm": [
+        597.26,
+        935.36
+      ],
+      "legacy_minus_full_measured_roof": {
+        "samples": 1459,
+        "p10_cm": -113.04,
+        "median_cm": 0.28,
+        "p90_cm": 39.57,
+        "maximum_abs_cm": 229.36
+      },
+      "common_sampled_area_sq_m": 91.188,
+      "main_gable_clean_triangle_indices": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "main_gable_clean_z_extent_cm": [
+        597.26,
+        872.01
+      ],
+      "legacy_minus_measured_main_gable_only": {
+        "samples": 1108,
+        "p10_cm": -4.95,
+        "median_cm": 3.65,
+        "p90_cm": 40.58,
+        "maximum_abs_cm": 46.33
+      },
+      "common_samples_under_measured_addons": 351,
+      "common_addon_sample_area_sq_m": 21.938,
+      "legacy_minus_addon_tops": {
+        "samples": 351,
+        "p10_cm": -167.22,
+        "median_cm": -96.25,
+        "p90_cm": -25.03,
+        "maximum_abs_cm": 229.36
+      },
+      "recommendation": "Do not raise the complete building by1.02m. That scalar median conflates missing raised roof features and the main gable. Fit main planes and measured rooftop additions separately; preserve surveyed walls/foot and detailed facade. Current measured clean roof has two raised structures absent from legacy roof; do not infer their exact facade finish or openings."
+    }
+  ]
+}
