@@ -1,6 +1,6 @@
 # Nearby building detail extension
 
-Status: IN PROGRESS, owner scope added 2026-11-15 17:33 during crash recovery. Earlier detailed coverage restored and saved; measured extension staged. Two obsolete project-lot footprints excluded, leaving 682 extension targets. Missing facade detail is awaiting the owner's answer to the inference question; no videos or r3 made yet.
+Status: IN PROGRESS, owner scope added 2026-11-15 17:33 during crash recovery. Earlier detailed coverage restored and saved; measured extension staged. Two obsolete project-lot footprints excluded, leaving 682 extension targets. Owner approved inferred facade detail at 18:49; three geometry pilots ready for native visual review. Streets and immediate-neighbour checks underway. No owner videos or r3 made yet.
 
 Owner direction: use the earlier detailed buildings on Wieland and Wells within two blocks, then bring all other buildings in a further two-block band to the same level of quality. Preserve the updated skyline. Finish this model work before the seven walking-path videos and r3 delivery.
 
@@ -27,7 +27,7 @@ Owner update 2026-11-15 18:49: YES to inferred facade windows, trim and colours,
 
 - Editor remains open in L_Site_M4; no unsaved packages at 18:12. Earlier-local/updated-skyline hybrid is saved. The original L_R15_Production file still has its 2026-11-10 19:00:15 save time.
 - Do not run old crash-recovery commands again: clean D1, profile and grazing checks are complete. Phase 20 stays IN PROGRESS because of the added nearby-detail scope.
-- The owner has a pending choice: may missing windows, trim and material colours be inferred as clearly labelled presentation detail? No answer has been received. Keep this distinction from source-verified architecture.
+- Owner approved inferred windows, trim and colours at 18:49, with assumptions recorded. Complete this work without requesting that approval again; keep the distinction from source-verified architecture.
 - Active extension list: E:/Wieland1529_site_data/phase20/nearby_detail/active_targets.csv (682). Source records in review/phase20/nearby_detail/building_evidence.csv. Never activate historical project-lot objects ND_781075 or ND_781331.
 - All 684 measured staging objects are hidden in L_Nearby_Detail. Meshes are in /Game/Wieland1529/Surroundings/NearbyDetail/Meshes. Their hidden state is intentional; full facade detail is not complete.
 - Native helper nearby_detail_import.py validates geometry and writes import_records.jsonl. The new hybrid option is additive in LVS_W1529_Surroundings; do not use wieland_p17.build_surroundings_list(), which would replace the option list and lose the new combination.
@@ -38,7 +38,7 @@ Owner update 2026-11-15 18:49: YES to inferred facade windows, trim and colours,
 
 Owner-readable interim report: D:/Unreal_Engine_Projects/Wieland1527 5.9/Saved/Wieland1529Review/RECOVERY_AND_NEARBY_DETAIL.md. Its companion FILES_WRITTEN.csv lists full absolute paths, sizes and SHA-256 hashes of authored artifacts and native files (incidental engine caches are excluded). Preview images are beside the report. The report makes clear that the facade extension, seven owner videos and r3 are unfinished.
 
-The passive memory logger was stopped at 18:15 after all current heavy work finished; no memory guard is running. Restart passive logging for any later render/profile. Current saved settings: Nanite mode 0, append 10000, cached-lighting pre-exposure 4. No unsaved editor packages at the 18:12 readback.
+The passive memory logger was stopped at 18:15; restart it for the resumed renders and profile. No memory guard is running. Current readback 19:01: L_Site_M4 open, only that working level dirty from temporary review cameras; no active render. Saved render settings remain Nanite mode 0, append 10000, cached-lighting pre-exposure 4.
 
 ## Order
 
