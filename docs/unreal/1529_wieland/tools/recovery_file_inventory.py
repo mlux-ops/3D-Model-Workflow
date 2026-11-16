@@ -29,6 +29,7 @@ def main():
     for folder in (DATA/'phase20/nearby_detail',PROJECT/'Content/Wieland1529/Surroundings/NearbyDetail',
                    PROJECT/'Content/Wieland1529/Delivery/Paths',DOCS/'delivery/video_paths',
                    DOCS/'profiles/2026-11-15_P20R2',DOCS/'profiles/2026-11-15_P20EXT',
+                   DOCS/'review/phase20/nearby_detail',
                    DOCS/'review/phase20/final_extension',
                    Path('D:/Wieland1529_delivery/video_paths_frames'),
                    Path('D:/Wieland1529_delivery/package/1529_Wieland_UE5.9_Delivery_2026-11-15_r3'),
@@ -36,7 +37,10 @@ def main():
         paths.update(p for p in folder.rglob('*') if p.is_file() and p.name!='FILES_WRITTEN.csv')
     paths.update(p for p in (DATA/'phase17/rasters/bldg1ft').glob('*') if p.is_file() and p.stat().st_mtime>=SINCE)
     paths.update(p for p in (DOCS/'tools/__pycache__').glob('*') if p.is_file() and p.stat().st_mtime>=SINCE and
-                 (p.name.startswith('nearby_detail_') or p.name.startswith('phase20_')))
+                 (p.name.startswith('nearby_') or p.name.startswith('phase20_')))
+    for root in (Path('D:/Wieland1529_delivery/package'),Path('F:/My Drive/Folders/3D Model Workflow/3D Models')):
+        note=root/'1529_Wieland_UE5.9_Delivery_2026-11-14_r2/SUPERSEDED.md'
+        if note.exists():paths.add(note)
     for rel in ('Wieland1529/L_Site_M4.umap','Wieland1529/Surroundings/L_Surroundings_R15.umap',
                 'Wieland1529/Surroundings/L_Surroundings_P17.umap','Wieland1529/Surroundings/L_Skyline_P17.umap',
                 'Wieland1529/Surroundings/L_Nearby_Detail.umap','Wieland1529/Lighting/L_Light_SummerAfternoon.umap',

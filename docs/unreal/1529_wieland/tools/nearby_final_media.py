@@ -32,6 +32,18 @@ def main():
         draw.text((12,old.height+40),'Final model - earlier local detail plus four-block refinement',fill='black')
         result.paste(new,(0,old.height+70))
         result.save(FINAL/'panorama'/('compare_'+deck+'_r1_r2.jpg'),quality=90)
+    reference=Path('E:/Wieland1529_site_data/phase20/sheets/skyline_beside_photos.jpg')
+    if reference.exists():
+        old=Image.open(reference).convert('RGB')
+        new=Image.open(FINAL/'panorama/D1S_panorama_sheet_r2.png').convert('RGB')
+        width=3200
+        old=old.resize((width,round(old.height*width/old.width)))
+        new=new.resize((width,round(new.height*width/new.width)))
+        panel=Image.new('RGB',(width,old.height+new.height+10),'white')
+        panel.paste(new,(0,0));panel.paste(old,(0,new.height+10))
+        destination=Path('E:/Wieland1529_site_data/phase20/nearby_detail/review_photos')
+        destination.mkdir(parents=True,exist_ok=True)
+        panel.save(destination/'final_skyline_beside_licensed_photos.jpg',quality=90)
     (FINAL/'comparison_metrics.json').write_text(json.dumps(changes,indent=2),encoding='utf-8')
 
 if __name__=='__main__':main()
