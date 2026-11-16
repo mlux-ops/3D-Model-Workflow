@@ -22,7 +22,7 @@ if wt.cvar(wt.NANITE_MODE) != 0:
 for name in job["views"]:
     begin = wt.begin(name)
     await wl.wait_frames(job.get("settle", 4.0))
-    record = await wt.render(name, job["tier"], OUT, 3840, 2160, samples=job.get("samples"), suffix=job.get("suffix", ""), nanite_mode=0,
+    record = await wt.render(name, job["tier"], OUT, job.get("width", 1920), job.get("height", 1080), samples=job.get("samples"), suffix=job.get("suffix", ""), nanite_mode=0,
                              warm_up_frames=job.get("warm_up_frames"))
     record["begin"] = begin
     out["runs"].append(record)
