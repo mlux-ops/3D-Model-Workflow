@@ -16,6 +16,7 @@ STATE={}
 async def run(kind):
     pre=wt.cvar('r.EyeAdaptation.CachedLightingPreExposure')
     append=wt.cvar(wt.APPEND)
+    sun=wl.by_label('LGT_Sun');sun_before=sun.get_actor_rotation()
     rows=[]
     try:
         if wt.cvar(wt.NANITE_MODE)!=0:raise RuntimeError('Nanite ray tracing must remain0')
@@ -34,6 +35,17 @@ async def run(kind):
             panorama.OUT=str(OUT/'panorama')
             if (OUT/'panorama'/(kind+'_y-090.0000.png')).exists():raise RuntimeError('Deck captures already exist')
             rows,end=await panorama.run(kind)
+        elif kind=='grazing':
+            folder=OUT/'grazing';folder.mkdir(parents=True,exist_ok=True)
+            sun.set_actor_rotation(wl.sun_rotation(75,10),False)
+            for yaw in (-50,-15):
+                name='grazing_final_y%+04d'%yaw
+                if (folder/(name+'_realtime.0000.png')).exists():raise RuntimeError('Grazing capture already exists')
+                panorama.place_camera((-208.8,-1560,4000),yaw)
+                wt._camera_exposure(wl.by_label(wt.CAMERA_LABEL).camera_component,12.644)
+                await asyncio.sleep(2)
+                rows.append(await wt.render(name,'rt',str(folder),1920,1080,samples=1,warm_up_frames=64,nanite_mode=0))
+                STATE['completed']=len(rows)
         elif kind=='profile':
             folder=ROOT/'profiles/2026-11-15_P20EXT'
             rows=await profile.run(str(folder),'P20EXT',parts=('exterior','roofdeck'),skip_first_walk=True,note='Final four-block refinement with detailed neighbours')
@@ -41,7 +53,7 @@ async def run(kind):
         STATE.update(active=False,result=rows)
     except Exception as exc:STATE.update(active=False,error=repr(exc))
     finally:
-        wt.end();wt.cvar(wt.APPEND,append)
+        wt.end();sun.set_actor_rotation(sun_before,False);wt.cvar(wt.APPEND,append)
         wt.cvar('r.EyeAdaptation.CachedLightingPreExposure',pre)
         unreal.SystemLibrary.execute_console_command(wl.world(),'EnableAllScreenMessages')
         STATE['settings_after']={'nanite':wt.cvar(wt.NANITE_MODE),'append':wt.cvar(wt.APPEND),'pre_exposure':wt.cvar('r.EyeAdaptation.CachedLightingPreExposure')}
