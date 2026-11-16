@@ -22,6 +22,7 @@ Owner update 2026-11-15 18:49: YES to inferred facade windows, trim and colours,
 | N5 | 2026-11-15 18:49 | Owner-approved inferred facade detail: real recessed glazing, frames, sills/lintels, plinths and cornices on the measured forms; source materials/storeys where available, visual assumptions recorded elsewhere. Three native pilots and visual review before the batch. | PENDING. |
 | N6 | 2026-11-15 18:49 | Extend built streets, sidewalks and kerbs to the same refinement boundary; preserve existing near-site works and match their levels/materials. Actual road centre lines, inferred widths labelled, safe intersections and no overlap with building footprints/project lot. | PENDING. |
 | N7 | 2026-11-15 18:49 | Separate immediate-neighbour review of 1525 and 1533 N Wieland: close street, lot-facing side and raised roof views; geometry/ground/lot-line checks; repair concrete faults on copies only. | PENDING. |
+| N8 | 2026-11-15 19:16 | Owner explicitly requested a safe pause. Stop offline work and passive logger, restore temporary pilot visibility to the saved hybrid, save named working assets, confirm no render/camera/task remains, and commit a resume checkpoint. | PENDING. |
 
 ## Resume from the current state
 
