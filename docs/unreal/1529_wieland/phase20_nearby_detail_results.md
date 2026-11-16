@@ -28,6 +28,12 @@ Standing rules: preserve L_R15_Production and Datasmith assets; use named new as
 - Once the facade approach is settled, finish the extension, remove visual overlaps through visibility only, refresh the hybrid option to cover the extension, and repeat views, grazing checks and profile for the actual final model. Only then render Grade Level, inspect it, render the other requested paths one at a time, make r3 and verify its Drive metadata. RENDER_REQUEST remains pending and r2 is not marked superseded.
 - Owner 17:19 removed all memory guards. Do not reinstate thresholds or automatic cancellation. Passive logging and routine cleanup are permitted. Nanite ray tracing stays 0; no editor close/restart; named asset saves only; no Datasmith asset edits; no Google content.
 
+## Review artifacts
+
+Owner-readable interim report: D:/Unreal_Engine_Projects/Wieland1527 5.9/Saved/Wieland1529Review/RECOVERY_AND_NEARBY_DETAIL.md. Its companion FILES_WRITTEN.csv lists full absolute paths, sizes and SHA-256 hashes of authored artifacts and native files (incidental engine caches are excluded). Preview images are beside the report. The report makes clear that the facade extension, seven owner videos and r3 are unfinished.
+
+The passive memory logger was stopped at 18:15 after all current heavy work finished; no memory guard is running. Restart passive logging for any later render/profile. Current saved settings: Nanite mode 0, append 10000, cached-lighting pre-exposure 4. No unsaved editor packages at the 18:12 readback.
+
 ## Order
 
 1. Map coverage and supported detail.
