@@ -1,6 +1,6 @@
 # Nearby building detail extension
 
-Status: PAUSED at owner's explicit request, 2026-11-15 19:17. Earlier detailed coverage restored and saved; measured extension staged. Two obsolete project-lot footprints excluded, leaving 682 extension targets. Three facade pilots built and reviewed natively, then hidden again for the pause. Street build partial, neighbour corrections unfinished. No owner videos or r3 made yet. Read PAUSE_CHECKPOINT_2026-11-15.md before resuming.
+Status: IN PROGRESS, resumed by owner 2026-11-15 19:22. Earlier detailed coverage restored and saved; measured extension staged. Two obsolete project-lot footprints excluded, leaving 682 extension targets. Three facade pilots built and reviewed natively, then hidden for the pause. Street build partial, neighbour corrections unfinished. No owner videos or r3 made yet.
 
 Owner direction: use the earlier detailed buildings on Wieland and Wells within two blocks, then bring all other buildings in a further two-block band to the same level of quality. Preserve the updated skyline. Finish this model work before the seven walking-path videos and r3 delivery.
 
@@ -25,6 +25,8 @@ Owner update 2026-11-15 18:49: YES to inferred facade windows, trim and colours,
 | N8 | 2026-11-15 19:16 | Owner explicitly requested a safe pause. Stop offline work and passive logger, restore temporary pilot visibility to the saved hybrid, save named working assets, confirm no render/camera/task remains, and commit a resume checkpoint. | DONE 19:17: all agents paused; offline street builder PID 52688 stopped, passive logger PID 51520 stopped. Named site/R15-copy/P17/detail levels and eight new MIs saved. Dirty packages 0, active renders 0, temporary cameras 0; Nanite 0, append 10000, pre-exposure 4. Native receipt pause_checkpoint_native.json. Whole resumed review GPU peak 10271 MiB, editor commit peak 25.76 GB. Original production save time unchanged, 2026-11-10 19:00:15. |
 
 ## Resume from the current state
+
+| N9 | 2026-11-15 19:22 | Resume from saved checkpoint; complete nearby facade and street geometry, verify all outputs before native activation; resolve neighbour materials and measured roof controls. | PENDING. |
 
 - Editor remains open in L_Site_M4; no unsaved packages at 18:12. Earlier-local/updated-skyline hybrid is saved. The original L_R15_Production file still has its 2026-11-10 19:00:15 save time.
 - Do not run old crash-recovery commands again: clean D1, profile and grazing checks are complete. Phase 20 stays IN PROGRESS because of the added nearby-detail scope.
