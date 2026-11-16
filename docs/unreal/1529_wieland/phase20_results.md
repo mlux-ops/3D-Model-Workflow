@@ -2,7 +2,7 @@
 
 Companion to [PLAN.md](PLAN.md), section "Phase 20", and to `KICKOFF_PHASE20.md`. Written as each step finishes, so a new session can resume from it.
 
-Status: PAUSED at the owner's explicit request, 2026-11-15 19:17. Original round-2 recovery checks completed by 18:08: clean 1080p D1, performance profile with overruns named, and grazing-light review. No second crash. Earlier local detail is restored with the updated skyline. Owner approved inferred facades and four-block streets at 18:49; three facade pilots are saved and hidden, streets are partially built offline, and immediate-neighbour corrections remain. Final-model views/profile, seven videos and r3 are unfinished. Read PAUSE_CHECKPOINT_2026-11-15.md and phase20_nearby_detail_results.md before resuming.
+Status: IN PROGRESS, resumed at owner's request 2026-11-15 19:22. Original round-2 recovery checks completed by 18:08: clean 1080p D1, performance profile with overruns named, and grazing-light review. No second crash. Earlier local detail restored with updated skyline. Full682-facade geometry independently checked, native import underway;180 street tiles built and offline QC passed. Immediate neighbours being refined, inherited ground interference being corrected on a copy. Final-model views/profile, seven videos and r3 remain unfinished. See phase20_nearby_detail_results.md.
 
 Round 1 status: DONE at 20:31 on 2026-11-14 (editor panel session, Opus). 40 skyline towers and 48 Zone 1-2 buildings reviewed against open images; 17 material instances refined from photographs; checks, sheets and profile inside the Phase 9 budget; the report is at the end.
 

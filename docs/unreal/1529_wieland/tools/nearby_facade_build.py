@@ -76,7 +76,7 @@ class Mesh:
         self.orientation_checks=0;self.min_area=math.inf
 
     def tri(self,points,mat,inward=None,uvs=None):
-        p=np.asarray(points,dtype=float)
+        p=np.round(np.asarray(points,dtype=float),6)
         cross=np.cross(p[1]-p[0],p[2]-p[0]);area=np.linalg.norm(cross)/2
         if area<1e-5:return
         if inward is not None and np.dot(cross,inward)<0:
@@ -87,7 +87,7 @@ class Mesh:
             self.orientation_checks+=1
         self.min_area=min(self.min_area,float(area))
         start=len(self.v)
-        self.v.extend([[round(float(a),4) for a in v] for v in p])
+        self.v.extend([[float(a) for a in v] for v in p])
         self.t.append([start,start+1,start+2]);self.m.append(mat)
         # Preserve source roof/mast UV exactly; new detail receives valid physical-scale box mapping.
         if uvs is not None:self.uv.extend(uvs)
@@ -195,7 +195,7 @@ def wall_depth_clear(source_tri,origin,direction,inside=21,outside=100000):
     s=origin-source_tri[:,0];u=f*np.einsum('ij,ij->i',s,h);q=np.cross(s,e1)
     v=f*np.einsum('j,ij->i',direction,q);distance=f*np.einsum('ij,ij->i',e2,q)
     valid&=(u>=-1e-7)&(v>=-1e-7)&(u+v<=1+1e-7)
-    return not np.any(valid&(((distance>.9)&(distance<inside))|((distance<-.9)&(distance>-outside))))
+    return not np.any(valid&(((distance>.002)&(distance<inside))|((distance<-.002)&(distance>-outside))))
 
 
 def build(ctx,bid):
@@ -291,6 +291,13 @@ def build(ctx,bid):
         groups_rec.append({'width_cm':round(width,2),'wall_area_cm2':round(patch.area,2),
                            'opening_area_cm2':round(cut.area,2),'openings':len(entries),'exposed':free,
                            'street_facing':front,'road_distance_m':round(road_distance,2)})
+    # Preserve original short wall strips carrying the measured highest point.
+    measured_max=float(original_v[:,2].max())
+    if max(v[2] for v in mesh.v)<measured_max-.0001:
+        for index,indices in enumerate(data['triangles']):
+            points=original_v[indices]
+            if data['tri_mat'][index]==0 and abs(float(points[:,2].max())-measured_max)<.00001:
+                mesh.tri(points,0,uvs=np.asarray(data['uv0_m'])[indices])
     vertices=np.asarray(mesh.v)
     if not np.isfinite(vertices).all():raise RuntimeError('Non-finite output vertex')
     new_top=float(vertices[:,2].max());source_top=float(original_v[:,2].max())
