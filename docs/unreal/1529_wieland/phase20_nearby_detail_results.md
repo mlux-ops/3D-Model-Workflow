@@ -6,6 +6,8 @@ Owner direction: use the earlier detailed buildings on Wieland and Wells within 
 
 Standing rules: preserve L_R15_Production and Datasmith assets; use named new assets and reversible overrides; clean built forms only; measured positions and heights remain authoritative; no Google content; no fabricated factual facade claims. Owner removed all memory guards at 17:19; passive memory logging continues.
 
+Owner update 2026-11-15 18:49: YES to inferred facade windows, trim and colours, with assumptions recorded. Extend built roads and sidewalks to the same four-block refinement boundary. Pay special attention to the two immediate neighbours, 1525 and 1533 N Wieland. This resolves the pending facade choice; no further approval for that work is needed.
+
 ## Journal
 
 | No. | Time | Step | Outcome |
@@ -16,6 +18,10 @@ Standing rules: preserve L_R15_Production and Datasmith assets; use named new as
 | N2 | 2026-11-15 17:36 | Restore the 57 fitted earlier detailed pieces while retaining Phase 17 skyline and ground; hide the 52 local Phase 17 replacements identified by the existing measured overlap table. Preserve prior variant choices and write a new hybrid option. Save named copy levels and variant only after readback. | DONE 17:38. Earlier pieces 57/57 visible; 52 overlapping P17Z buildings hidden; all remaining 522 Phase 17 objects visible, including the updated skyline and ground. Phase 4 blocks and generic far-city stand-in remain hidden. New additive option Earlier local buildings + updated skyline captures all 776 objects; existing options retained. Saved variant and L_Surroundings_R15, L_Surroundings_P17 by name. S2_hybrid.0000.png checked: detailed front windows, siding, stoops and trim restored, no warning text. |
 
 | N4 | 2026-11-15 17:50 | Native staging of the measured extension in a separate new sublevel and new mesh assets; three pilot forms first, validate triangle count/UV/Nanite and position, then batches. Keep these staging objects hidden until facade decisions and overlap checks are resolved. | DONE 17:55: 684/684 native meshes and placed objects in L_Nearby_Detail, triangle counts match, one UV channel each, Nanite on, all hidden. New assets and this level saved by name. N3 geometry preparation: 498 new clean measured forms plus 186 reused clean forms, 684/684, no build failures, 67145 triangles; 52 earlier detailed buildings excluded from replacement. New source DSM 27.3 MB. |
+
+| N5 | 2026-11-15 18:49 | Owner-approved inferred facade detail: real recessed glazing, frames, sills/lintels, plinths and cornices on the measured forms; source materials/storeys where available, visual assumptions recorded elsewhere. Three native pilots and visual review before the batch. | PENDING. |
+| N6 | 2026-11-15 18:49 | Extend built streets, sidewalks and kerbs to the same refinement boundary; preserve existing near-site works and match their levels/materials. Actual road centre lines, inferred widths labelled, safe intersections and no overlap with building footprints/project lot. | PENDING. |
+| N7 | 2026-11-15 18:49 | Separate immediate-neighbour review of 1525 and 1533 N Wieland: close street, lot-facing side and raised roof views; geometry/ground/lot-line checks; repair concrete faults on copies only. | PENDING. |
 
 ## Resume from the current state
 
