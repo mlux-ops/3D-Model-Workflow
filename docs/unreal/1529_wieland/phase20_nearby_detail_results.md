@@ -56,3 +56,9 @@ The passive memory logger was stopped at 18:15; restart it for the resumed rende
 3. Improve the remaining area to comparable supported detail, recording unknown details and source limitations per building.
 4. Check street views, roof-deck views, grazing light, performance and memory; finish Phase 20 records.
 5. Render the owner's requested paths and make verified r3 delivery.
+
+## Model review continuation
+
+| No. | Time | Step | Outcome |
+|---|---|---|---|
+| N10 | 2026-11-15 20:35 | Verify completed native facade/street activation; diagnose remaining seam by isolating ground, preserve option choices, save named assets and refresh final-model review. | PENDING. Native receipts:682 visible facades, zero visible source overlaps,180 streets imported, copied bare-earth ground installed with shadow casting off. Ground-off diagnostic shows the pointed area is an uncovered pavement area rather than raised ground; geometric membership check underway. Passive logging now in project Saved/Wieland1529Review/memory_render_only_20261115.csv. |
