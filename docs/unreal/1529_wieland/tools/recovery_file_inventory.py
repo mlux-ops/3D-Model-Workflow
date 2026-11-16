@@ -26,7 +26,13 @@ def main():
     for rel in result.stdout.splitlines():
         p=REPO/rel
         if p.is_file():paths.add(p)
-    for folder in (DATA/'phase20/nearby_detail',PROJECT/'Content/Wieland1529/Surroundings/NearbyDetail',REVIEW):
+    for folder in (DATA/'phase20/nearby_detail',PROJECT/'Content/Wieland1529/Surroundings/NearbyDetail',
+                   PROJECT/'Content/Wieland1529/Delivery/Paths',DOCS/'delivery/video_paths',
+                   DOCS/'profiles/2026-11-15_P20R2',DOCS/'profiles/2026-11-15_P20EXT',
+                   DOCS/'review/phase20/final_extension',
+                   Path('D:/Wieland1529_delivery/video_paths_frames'),
+                   Path('D:/Wieland1529_delivery/package/1529_Wieland_UE5.9_Delivery_2026-11-15_r3'),
+                   Path('F:/My Drive/Folders/3D Model Workflow/3D Models/1529_Wieland_UE5.9_Delivery_2026-11-15_r3'),REVIEW):
         paths.update(p for p in folder.rglob('*') if p.is_file() and p.name!='FILES_WRITTEN.csv')
     paths.update(p for p in (DATA/'phase17/rasters/bldg1ft').glob('*') if p.is_file() and p.stat().st_mtime>=SINCE)
     paths.update(p for p in (DOCS/'tools/__pycache__').glob('*') if p.is_file() and p.stat().st_mtime>=SINCE and
@@ -42,6 +48,12 @@ def main():
     for name in ('exterior','roofdeck'):
         record=json.loads((profile/('capture_P20R2_'+name+'.json')).read_text(encoding='utf-8'))
         for job in record['jobs']:
+            for name in job.get('new_csv_files',[]):
+                p=Path(record['csv_folder'])/name
+                if p.exists():paths.add(p)
+    for record_path in (DOCS/'profiles/2026-11-15_P20EXT').glob('capture_*.json'):
+        record=json.loads(record_path.read_text(encoding='utf-8'))
+        for job in record.get('jobs',[]):
             for name in job.get('new_csv_files',[]):
                 p=Path(record['csv_folder'])/name
                 if p.exists():paths.add(p)
