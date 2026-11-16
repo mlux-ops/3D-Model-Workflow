@@ -1,0 +1,14 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <EnableDefaultCompileItems>false</EnableDefaultCompileItems>
+    <AssemblyName>BelmontBedroomTrimInspect</AssemblyName>
+    <Nullable>disable</Nullable>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="BedroomTrimInspect.cs" />
+    <Reference Include="RevitAPI"><HintPath>C:\Program Files\Autodesk\Revit 2025\RevitAPI.dll</HintPath><Private>false</Private></Reference>
+    <Reference Include="RevitAPIUI"><HintPath>C:\Program Files\Autodesk\Revit 2025\RevitAPIUI.dll</HintPath><Private>false</Private></Reference>
+    <Reference Include="CodexNativeRevit"><HintPath>C:\ProgramData\CodexNativeRevit\2025\3f41f299be45\CodexNativeRevit.dll</HintPath><Private>false</Private></Reference>
+  </ItemGroup>
+</Project>

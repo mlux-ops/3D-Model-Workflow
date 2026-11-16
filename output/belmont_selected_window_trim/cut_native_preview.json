@@ -1,0 +1,44 @@
+{
+  "schema_version": 1,
+  "operation_id": "95bc1e75-90de-4895-93f3-b20d9714bcd2",
+  "status": "failed",
+  "request": {
+    "arguments": {
+      "arguments": {
+        "point": [
+          37.33999190966225,
+          -55.69033126642166,
+          37.666666666666664
+        ],
+        "type": "e73ded64-5f20-4863-86c8-288dfb7ac93a-00d7817c"
+      },
+      "assembly": "C:/ProgramData/CodexNativeRevit/plugins/belmont_window_trim/BelmontWindowTrimCutV2.dll",
+      "expected_changes": [],
+      "purpose": "Validate native window trim cuts, protected wall and all three existing dimensions, then roll back completely",
+      "type": "PreviewWindowTrimCut"
+    },
+    "document": {
+      "path": "Autodesk Docs://25 012 - 651 W. Belmont/25-012 651 W. Belmont_Issue for Construction_.rvt",
+      "session_id": "d9136c2f-5567-4bc5-9bc4-e8bd4b966f6c"
+    },
+    "operation": "compiled.query",
+    "operation_id": "95bc1e75-90de-4895-93f3-b20d9714bcd2",
+    "preconditions": {
+      "allow_existing_document": true,
+      "expected_title": "25-012 651 W. Belmont_Issue for Construction_",
+      "is_family": false
+    },
+    "schema_version": 1
+  },
+  "result": null,
+  "error": {
+    "code": "InvalidOperationException",
+    "message": "Native cut volume does not match exact planned opening",
+    "details": null
+  },
+  "cancel_requested": false,
+  "created_utc": "2026-11-12T21:49:43.6410030Z",
+  "finished_utc": "2026-11-12T21:49:44.4675432Z",
+  "elapsed_ms": 820.3323,
+  "transaction_status": "not_started"
+}

@@ -1,0 +1,32 @@
+{
+  "schema_version": 1,
+  "operation_id": "3605bc29-e232-4e89-a9a6-c27a012a944c",
+  "status": "completed",
+  "request": {
+    "arguments": {
+      "discard_changes": true
+    },
+    "document": {
+      "session_id": "8f87b768-9a92-4844-aacb-15f11fbbe2ac"
+    },
+    "operation": "family.close",
+    "operation_id": "3605bc29-e232-4e89-a9a6-c27a012a944c",
+    "preconditions": {
+      "allow_existing_document": true,
+      "is_family": true
+    },
+    "schema_version": 1
+  },
+  "result": {
+    "document_id": "8f87b768-9a92-4844-aacb-15f11fbbe2ac",
+    "closed": true,
+    "saved": false,
+    "transaction_status": "not_applicable"
+  },
+  "error": null,
+  "cancel_requested": false,
+  "created_utc": "2026-11-12T21:52:59.8351133Z",
+  "finished_utc": "2026-11-12T21:53:00.1980411Z",
+  "elapsed_ms": 88.3284,
+  "transaction_status": "not_applicable"
+}

@@ -1,0 +1,1764 @@
+{
+  "schema_version": 1,
+  "operation_id": "207acf09-1b97-4633-9218-e9de941bd20b",
+  "status": "completed",
+  "request": {
+    "arguments": {
+      "path": "C:\\Users\\found\\Documents\\3\\3D-Model-Workflow\\output\\belmont_selected_window_trim\\SHB_Primary_Bedroom_Window_Trim_Adaptation_R2025.rfa",
+      "replacement_policy": "reject"
+    },
+    "document": {
+      "path": "Autodesk Docs://25 012 - 651 W. Belmont/25-012 651 W. Belmont_Issue for Construction_.rvt",
+      "session_id": "d9136c2f-5567-4bc5-9bc4-e8bd4b966f6c"
+    },
+    "operation": "family.load",
+    "operation_id": "207acf09-1b97-4633-9218-e9de941bd20b",
+    "preconditions": {
+      "allow_existing_document": true,
+      "expected_title": "25-012 651 W. Belmont_Issue for Construction_",
+      "is_family": false
+    },
+    "schema_version": 1
+  },
+  "result": {
+    "result": {
+      "loaded": true,
+      "family": {
+        "document_session_id": "d9136c2f-5567-4bc5-9bc4-e8bd4b966f6c",
+        "id": 14122540,
+        "unique_id": "e73ded64-5f20-4863-86c8-288dfb7ac93a-00d77e2c",
+        "name": "SHB_Primary_Bedroom_Window_Trim_Adaptation_R2025",
+        "category": null,
+        "category_id": null,
+        "type_id": -1,
+        "pinned": false,
+        "group_id": -1,
+        "level_id": -1,
+        "location": null,
+        "bounds": null,
+        "host_id": null,
+        "family_name": null,
+        "placement_type": null,
+        "view_family": null,
+        "view_type": null,
+        "elevation": null
+      },
+      "path": "C:\\Users\\found\\Documents\\3\\3D-Model-Workflow\\output\\belmont_selected_window_trim\\SHB_Primary_Bedroom_Window_Trim_Adaptation_R2025.rfa",
+      "replacement_policy": "reject",
+      "outcome": "loaded",
+      "callback_decisions": []
+    },
+    "transaction_status": "committed",
+    "saved": false,
+    "document": {
+      "session_id": "d9136c2f-5567-4bc5-9bc4-e8bd4b966f6c",
+      "title": "25-012 651 W. Belmont_Issue for Construction_",
+      "path": "Autodesk Docs://25 012 - 651 W. Belmont/25-012 651 W. Belmont_Issue for Construction_.rvt",
+      "is_family": false,
+      "is_read_only": false,
+      "is_modified": true,
+      "is_workshared": true
+    },
+    "warnings": [
+      {
+        "description": "Extrusion is too thin.",
+        "severity": "Warning",
+        "elements": [
+          12827960,
+          12828504
+        ]
+      },
+      {
+        "description": "An elevation symbol references views on more than one sheet. It will show a blank sheet reference. To show the correct references, use a separate elevation symbol for the views on each sheet.",
+        "severity": "Warning",
+        "elements": [
+          8716278
+        ]
+      },
+      {
+        "description": "Some columns in the project are excluded from the graphical column schedule view.",
+        "severity": "Warning",
+        "elements": [
+          6784308
+        ]
+      },
+      {
+        "description": "Elements have duplicate \"Number\" values.",
+        "severity": "Warning",
+        "elements": [
+          1629058,
+          5702612
+        ]
+      },
+      {
+        "description": "Elements have duplicate \"Number\" values.",
+        "severity": "Warning",
+        "elements": [
+          1629741,
+          5702608
+        ]
+      },
+      {
+        "description": "Elements have duplicate \"Number\" values.",
+        "severity": "Warning",
+        "elements": [
+          3860305,
+          5702343
+        ]
+      },
+      {
+        "description": "Elements have duplicate \"Number\" values.",
+        "severity": "Warning",
+        "elements": [
+          4317585,
+          5708327
+        ]
+      },
+      {
+        "description": "Elements have duplicate \"Number\" values.",
+        "severity": "Warning",
+        "elements": [
+          4317587,
+          5709520
+        ]
+      },
+      {
+        "description": "Elements have duplicate \"Number\" values.",
+        "severity": "Warning",
+        "elements": [
+          4317589,
+          5708320
+        ]
+      },
+      {
+        "description": "Elements have duplicate \"Number\" values.",
+        "severity": "Warning",
+        "elements": [
+          4317593,
+          5708323
+        ]
+      },
+      {
+        "description": "Elements have duplicate \"Number\" values.",
+        "severity": "Warning",
+        "elements": [
+          4318163,
+          4326227
+        ]
+      },
+      {
+        "description": "Elements have duplicate \"Number\" values.",
+        "severity": "Warning",
+        "elements": [
+          5702148,
+          9515157
+        ]
+      },
+      {
+        "description": "Elements have duplicate \"Number\" values.",
+        "severity": "Warning",
+        "elements": [
+          5702154,
+          5733263
+        ]
+      },
+      {
+        "description": "Elements have duplicate \"Number\" values.",
+        "severity": "Warning",
+        "elements": [
+          5702352,
+          5702373
+        ]
+      },
+      {
+        "description": "Elements have duplicate \"Number\" values.",
+        "severity": "Warning",
+        "elements": [
+          5703547,
+          10068360
+        ]
+      },
+      {
+        "description": "Elements have duplicate \"Number\" values.",
+        "severity": "Warning",
+        "elements": [
+          5703587,
+          5707777
+        ]
+      },
+      {
+        "description": "Elements have duplicate \"Number\" values.",
+        "severity": "Warning",
+        "elements": [
+          5706750,
+          5733305
+        ]
+      },
+      {
+        "description": "Elements have duplicate \"Number\" values.",
+        "severity": "Warning",
+        "elements": [
+          5707735,
+          6042949
+        ]
+      },
+      {
+        "description": "Elements have duplicate \"Number\" values.",
+        "severity": "Warning",
+        "elements": [
+          5708656,
+          7550763
+        ]
+      },
+      {
+        "description": "Elements have duplicate \"Number\" values.",
+        "severity": "Warning",
+        "elements": [
+          5708748,
+          5709438
+        ]
+      },
+      {
+        "description": "Elements have duplicate \"Number\" values.",
+        "severity": "Warning",
+        "elements": [
+          6042491,
+          6042505
+        ]
+      },
+      {
+        "description": "Elements have duplicate \"Number\" values.",
+        "severity": "Warning",
+        "elements": [
+          9515258,
+          9515509
+        ]
+      },
+      {
+        "description": "Elements have duplicate \"Number\" values.",
+        "severity": "Warning",
+        "elements": [
+          1626297,
+          5703169,
+          10067885
+        ]
+      },
+      {
+        "description": "Elements have duplicate \"Number\" values.",
+        "severity": "Warning",
+        "elements": [
+          1628455,
+          5703172,
+          10547190
+        ]
+      },
+      {
+        "description": "Elements have duplicate \"Number\" values.",
+        "severity": "Warning",
+        "elements": [
+          1629309,
+          5703357,
+          10068367
+        ]
+      },
+      {
+        "description": "Elements have duplicate \"Number\" values.",
+        "severity": "Warning",
+        "elements": [
+          1629748,
+          4317105,
+          6041107
+        ]
+      },
+      {
+        "description": "Elements have duplicate \"Number\" values.",
+        "severity": "Warning",
+        "elements": [
+          1630097,
+          4317428,
+          5703644
+        ]
+      },
+      {
+        "description": "Elements have duplicate \"Number\" values.",
+        "severity": "Warning",
+        "elements": [
+          4317407,
+          7954180,
+          10079834
+        ]
+      },
+      {
+        "description": "Elements have duplicate \"Number\" values.",
+        "severity": "Warning",
+        "elements": [
+          4317996,
+          5702151,
+          9037998
+        ]
+      },
+      {
+        "description": "Elements have duplicate \"Number\" values.",
+        "severity": "Warning",
+        "elements": [
+          5710057,
+          6451206,
+          9406583
+        ]
+      },
+      {
+        "description": "Elements have duplicate \"Number\" values.",
+        "severity": "Warning",
+        "elements": [
+          1627711,
+          7549655,
+          10068059,
+          10672446
+        ]
+      },
+      {
+        "description": "Elements have duplicate \"Number\" values.",
+        "severity": "Warning",
+        "elements": [
+          1628837,
+          5703166,
+          7549144,
+          10067879
+        ]
+      },
+      {
+        "description": "Elements have duplicate \"Number\" values.",
+        "severity": "Warning",
+        "elements": [
+          1628933,
+          5702615,
+          5703397,
+          7549533
+        ]
+      },
+      {
+        "description": "Elements have duplicate \"Number\" values.",
+        "severity": "Warning",
+        "elements": [
+          1631164,
+          4317195,
+          5704759,
+          10080641
+        ]
+      },
+      {
+        "description": "Elements have duplicate \"Number\" values.",
+        "severity": "Warning",
+        "elements": [
+          1631166,
+          4317461,
+          5704756,
+          8097904
+        ]
+      },
+      {
+        "description": "Elements have duplicate \"Number\" values.",
+        "severity": "Warning",
+        "elements": [
+          1631699,
+          4317193,
+          5704762,
+          10080200
+        ]
+      },
+      {
+        "description": "Elements have duplicate \"Number\" values.",
+        "severity": "Warning",
+        "elements": [
+          2211625,
+          5702157,
+          5702161,
+          7444820
+        ]
+      },
+      {
+        "description": "Elements have duplicate \"Number\" values.",
+        "severity": "Warning",
+        "elements": [
+          1629745,
+          4317073,
+          5703641,
+          5704213,
+          5704242
+        ]
+      },
+      {
+        "description": "Elements have duplicate \"Number\" values.",
+        "severity": "Warning",
+        "elements": [
+          1630095,
+          4317135,
+          5704753,
+          6041417,
+          6043096
+        ]
+      },
+      {
+        "description": "Elements have duplicate \"Number\" values.",
+        "severity": "Warning",
+        "elements": [
+          1632406,
+          4317465,
+          5704227,
+          7954206,
+          10079831
+        ]
+      },
+      {
+        "description": "Elements have duplicate \"Number\" values.",
+        "severity": "Warning",
+        "elements": [
+          1630099,
+          4317175,
+          5704251,
+          6041109,
+          6043099,
+          7950350
+        ]
+      },
+      {
+        "description": "Elements have duplicate \"Number\" values.",
+        "severity": "Warning",
+        "elements": [
+          1631697,
+          4317133,
+          5704224,
+          5704773,
+          6041105,
+          6041111
+        ]
+      },
+      {
+        "description": "Elements have duplicate \"Type Mark\" values.",
+        "severity": "Warning",
+        "elements": [
+          856722,
+          4810434
+        ]
+      },
+      {
+        "description": "Elements have duplicate \"Type Mark\" values.",
+        "severity": "Warning",
+        "elements": [
+          1260756,
+          5494205
+        ]
+      },
+      {
+        "description": "Elements have duplicate \"Type Mark\" values.",
+        "severity": "Warning",
+        "elements": [
+          1326354,
+          2224312
+        ]
+      },
+      {
+        "description": "Elements have duplicate \"Type Mark\" values.",
+        "severity": "Warning",
+        "elements": [
+          1360402,
+          3327028
+        ]
+      },
+      {
+        "description": "Elements have duplicate \"Type Mark\" values.",
+        "severity": "Warning",
+        "elements": [
+          1498445,
+          2683237
+        ]
+      },
+      {
+        "description": "Elements have duplicate \"Type Mark\" values.",
+        "severity": "Warning",
+        "elements": [
+          1522907,
+          2234597
+        ]
+      },
+      {
+        "description": "Elements have duplicate \"Type Mark\" values.",
+        "severity": "Warning",
+        "elements": [
+          2204525,
+          3229886
+        ]
+      },
+      {
+        "description": "Elements have duplicate \"Type Mark\" values.",
+        "severity": "Warning",
+        "elements": [
+          2205012,
+          3181327
+        ]
+      },
+      {
+        "description": "Elements have duplicate \"Type Mark\" values.",
+        "severity": "Warning",
+        "elements": [
+          2312622,
+          2319913
+        ]
+      },
+      {
+        "description": "Elements have duplicate \"Type Mark\" values.",
+        "severity": "Warning",
+        "elements": [
+          3556187,
+          4524669
+        ]
+      },
+      {
+        "description": "Elements have duplicate \"Type Mark\" values.",
+        "severity": "Warning",
+        "elements": [
+          3560987,
+          4501440
+        ]
+      },
+      {
+        "description": "Elements have duplicate \"Type Mark\" values.",
+        "severity": "Warning",
+        "elements": [
+          4586283,
+          4596440
+        ]
+      },
+      {
+        "description": "Elements have duplicate \"Type Mark\" values.",
+        "severity": "Warning",
+        "elements": [
+          4664440,
+          4701922
+        ]
+      },
+      {
+        "description": "Elements have duplicate \"Type Mark\" values.",
+        "severity": "Warning",
+        "elements": [
+          6558216,
+          9195168
+        ]
+      },
+      {
+        "description": "Elements have duplicate \"Type Mark\" values.",
+        "severity": "Warning",
+        "elements": [
+          7257957,
+          9966503
+        ]
+      },
+      {
+        "description": "Elements have duplicate \"Type Mark\" values.",
+        "severity": "Warning",
+        "elements": [
+          7326081,
+          9949754
+        ]
+      },
+      {
+        "description": "Elements have duplicate \"Type Mark\" values.",
+        "severity": "Warning",
+        "elements": [
+          7692881,
+          7696471
+        ]
+      },
+      {
+        "description": "Elements have duplicate \"Type Mark\" values.",
+        "severity": "Warning",
+        "elements": [
+          9417385,
+          9743045
+        ]
+      },
+      {
+        "description": "Elements have duplicate \"Type Mark\" values.",
+        "severity": "Warning",
+        "elements": [
+          9789639,
+          9950641
+        ]
+      },
+      {
+        "description": "Elements have duplicate \"Type Mark\" values.",
+        "severity": "Warning",
+        "elements": [
+          10778666,
+          12853172
+        ]
+      },
+      {
+        "description": "Elements have duplicate \"Type Mark\" values.",
+        "severity": "Warning",
+        "elements": [
+          980358,
+          1335906,
+          2205308
+        ]
+      },
+      {
+        "description": "Elements have duplicate \"Type Mark\" values.",
+        "severity": "Warning",
+        "elements": [
+          1313769,
+          1336787,
+          2319917
+        ]
+      },
+      {
+        "description": "Elements have duplicate \"Type Mark\" values.",
+        "severity": "Warning",
+        "elements": [
+          1315616,
+          2231111,
+          8079286
+        ]
+      },
+      {
+        "description": "Elements have duplicate \"Type Mark\" values.",
+        "severity": "Warning",
+        "elements": [
+          1317282,
+          2528263,
+          7242503
+        ]
+      },
+      {
+        "description": "Elements have duplicate \"Type Mark\" values.",
+        "severity": "Warning",
+        "elements": [
+          1346226,
+          10172391,
+          11559874
+        ]
+      },
+      {
+        "description": "Elements have duplicate \"Type Mark\" values.",
+        "severity": "Warning",
+        "elements": [
+          1490712,
+          4607566,
+          7537509
+        ]
+      },
+      {
+        "description": "Elements have duplicate \"Type Mark\" values.",
+        "severity": "Warning",
+        "elements": [
+          2234593,
+          5615123,
+          7434799
+        ]
+      },
+      {
+        "description": "Elements have duplicate \"Type Mark\" values.",
+        "severity": "Warning",
+        "elements": [
+          3420678,
+          9245323,
+          10044246
+        ]
+      },
+      {
+        "description": "Elements have duplicate \"Type Mark\" values.",
+        "severity": "Warning",
+        "elements": [
+          6324585,
+          6722548,
+          9805461
+        ]
+      },
+      {
+        "description": "Elements have duplicate \"Type Mark\" values.",
+        "severity": "Warning",
+        "elements": [
+          7257903,
+          9418083,
+          9571569
+        ]
+      },
+      {
+        "description": "Elements have duplicate \"Type Mark\" values.",
+        "severity": "Warning",
+        "elements": [
+          9247836,
+          9334025,
+          9367787
+        ]
+      },
+      {
+        "description": "Elements have duplicate \"Type Mark\" values.",
+        "severity": "Warning",
+        "elements": [
+          9314282,
+          9813649,
+          9967486
+        ]
+      },
+      {
+        "description": "Elements have duplicate \"Type Mark\" values.",
+        "severity": "Warning",
+        "elements": [
+          9409420,
+          9762161,
+          9766280
+        ]
+      },
+      {
+        "description": "Elements have duplicate \"Type Mark\" values.",
+        "severity": "Warning",
+        "elements": [
+          880053,
+          1305808,
+          6477820,
+          9786422
+        ]
+      },
+      {
+        "description": "Elements have duplicate \"Type Mark\" values.",
+        "severity": "Warning",
+        "elements": [
+          1149918,
+          4324231,
+          5483738,
+          6478305
+        ]
+      },
+      {
+        "description": "Elements have duplicate \"Type Mark\" values.",
+        "severity": "Warning",
+        "elements": [
+          1309066,
+          2204860,
+          5536159,
+          9477323
+        ]
+      },
+      {
+        "description": "Elements have duplicate \"Type Mark\" values.",
+        "severity": "Warning",
+        "elements": [
+          1309340,
+          5542877,
+          5725580,
+          9620842
+        ]
+      },
+      {
+        "description": "Elements have duplicate \"Type Mark\" values.",
+        "severity": "Warning",
+        "elements": [
+          1454220,
+          1498441,
+          1598296,
+          7536922
+        ]
+      },
+      {
+        "description": "Elements have duplicate \"Type Mark\" values.",
+        "severity": "Warning",
+        "elements": [
+          1501271,
+          3229894,
+          6313141,
+          6426537
+        ]
+      },
+      {
+        "description": "Elements have duplicate \"Type Mark\" values.",
+        "severity": "Warning",
+        "elements": [
+          2234595,
+          3370161,
+          6310754,
+          6438999
+        ]
+      },
+      {
+        "description": "Elements have duplicate \"Type Mark\" values.",
+        "severity": "Warning",
+        "elements": [
+          2319250,
+          7264657,
+          7446401,
+          7537245
+        ]
+      },
+      {
+        "description": "Elements have duplicate \"Type Mark\" values.",
+        "severity": "Warning",
+        "elements": [
+          4576827,
+          5017042,
+          5223235,
+          5492582
+        ]
+      },
+      {
+        "description": "Elements have duplicate \"Type Mark\" values.",
+        "severity": "Warning",
+        "elements": [
+          949437,
+          1307941,
+          4086986,
+          5594061,
+          9163420
+        ]
+      },
+      {
+        "description": "Elements have duplicate \"Type Mark\" values.",
+        "severity": "Warning",
+        "elements": [
+          1299265,
+          5028820,
+          5037998,
+          6330205,
+          9418330
+        ]
+      },
+      {
+        "description": "Elements have duplicate \"Type Mark\" values.",
+        "severity": "Warning",
+        "elements": [
+          1309231,
+          3548445,
+          5579330,
+          5615219,
+          6409034
+        ]
+      },
+      {
+        "description": "Elements have duplicate \"Type Mark\" values.",
+        "severity": "Warning",
+        "elements": [
+          1299156,
+          1308185,
+          1308772,
+          4095962,
+          4102824,
+          5012960,
+          5534677
+        ]
+      },
+      {
+        "description": "Elements have duplicate \"Type Mark\" values.",
+        "severity": "Warning",
+        "elements": [
+          1309906,
+          4595565,
+          5041131,
+          5735364,
+          5755911,
+          9403390,
+          9634893
+        ]
+      },
+      {
+        "description": "Elements have duplicate \"Type Mark\" values.",
+        "severity": "Warning",
+        "elements": [
+          855392,
+          1359321,
+          1365846,
+          1365852,
+          1365854,
+          1645281,
+          2507961,
+          7444169
+        ]
+      },
+      {
+        "description": "Elements have duplicate \"Type Mark\" values.",
+        "severity": "Warning",
+        "elements": [
+          205988,
+          9656057,
+          12083256,
+          13688255,
+          14009911,
+          14009913,
+          14021324,
+          14021326,
+          14027969
+        ]
+      },
+      {
+        "description": "Elements have duplicate \"Type Mark\" values.",
+        "severity": "Warning",
+        "elements": [
+          1019970,
+          1309448,
+          3537606,
+          5108682,
+          5493345,
+          5567306,
+          5735814,
+          6332026,
+          9601917,
+          9848803
+        ]
+      },
+      {
+        "description": "Elements have duplicate \"Type Mark\" values.",
+        "severity": "Warning",
+        "elements": [
+          882493,
+          1335701,
+          5013014,
+          5405574,
+          5605852,
+          6321044,
+          7175490,
+          7298609,
+          7851031,
+          9197303,
+          9966871
+        ]
+      },
+      {
+        "description": "Elements have duplicate \"Mark\" values.",
+        "severity": "Warning",
+        "elements": [
+          4796983,
+          4986148
+        ]
+      },
+      {
+        "description": "Elements have duplicate \"Mark\" values.",
+        "severity": "Warning",
+        "elements": [
+          4887112,
+          4986080
+        ]
+      },
+      {
+        "description": "Elements have duplicate \"Mark\" values.",
+        "severity": "Warning",
+        "elements": [
+          4913218,
+          4986077
+        ]
+      },
+      {
+        "description": "Elements have duplicate \"Mark\" values.",
+        "severity": "Warning",
+        "elements": [
+          4986081,
+          9677709
+        ]
+      },
+      {
+        "description": "Elements have duplicate \"Mark\" values.",
+        "severity": "Warning",
+        "elements": [
+          4986202,
+          9627471
+        ]
+      },
+      {
+        "description": "Highlighted floors overlap.",
+        "severity": "Warning",
+        "elements": [
+          4812715,
+          11167833
+        ]
+      },
+      {
+        "description": "Highlighted floors overlap.",
+        "severity": "Warning",
+        "elements": [
+          4822790,
+          11541700
+        ]
+      },
+      {
+        "description": "Highlighted floors overlap.",
+        "severity": "Warning",
+        "elements": [
+          4822790,
+          12082831
+        ]
+      },
+      {
+        "description": "Highlighted floors overlap.",
+        "severity": "Warning",
+        "elements": [
+          4822790,
+          12319052
+        ]
+      },
+      {
+        "description": "Highlighted floors overlap.",
+        "severity": "Warning",
+        "elements": [
+          4822790,
+          12320057
+        ]
+      },
+      {
+        "description": "A wall and a room separation line overlap. One of them may be ignored when Revit finds room boundaries. Shorten or delete the room separation line to remove the overlap.",
+        "severity": "Warning",
+        "elements": [
+          4854484,
+          9515216
+        ]
+      },
+      {
+        "description": "A wall and a room separation line overlap. One of them may be ignored when Revit finds room boundaries. Shorten or delete the room separation line to remove the overlap.",
+        "severity": "Warning",
+        "elements": [
+          4854484,
+          9515463
+        ]
+      },
+      {
+        "description": "Highlighted floors overlap.",
+        "severity": "Warning",
+        "elements": [
+          4898627,
+          11559737
+        ]
+      },
+      {
+        "description": "Highlighted floors overlap.",
+        "severity": "Warning",
+        "elements": [
+          4898627,
+          11560182
+        ]
+      },
+      {
+        "description": "Highlighted floors overlap.",
+        "severity": "Warning",
+        "elements": [
+          4898627,
+          12547722
+        ]
+      },
+      {
+        "description": "A wall and a room separation line overlap. One of them may be ignored when Revit finds room boundaries. Shorten or delete the room separation line to remove the overlap.",
+        "severity": "Warning",
+        "elements": [
+          4900053,
+          9038086
+        ]
+      },
+      {
+        "description": "Highlighted walls overlap. One of them may be ignored when Revit finds room boundaries. Use Cut Geometry to embed one wall within the other.",
+        "severity": "Warning",
+        "elements": [
+          4902599,
+          5112428
+        ]
+      },
+      {
+        "description": "Highlighted walls overlap. One of them may be ignored when Revit finds room boundaries. Use Cut Geometry to embed one wall within the other.",
+        "severity": "Warning",
+        "elements": [
+          4902599,
+          12909061
+        ]
+      },
+      {
+        "description": "Highlighted walls overlap. One of them may be ignored when Revit finds room boundaries. Use Cut Geometry to embed one wall within the other.",
+        "severity": "Warning",
+        "elements": [
+          4916408,
+          5030246
+        ]
+      },
+      {
+        "description": "Highlighted walls overlap. One of them may be ignored when Revit finds room boundaries. Use Cut Geometry to embed one wall within the other.",
+        "severity": "Warning",
+        "elements": [
+          4916408,
+          5030457
+        ]
+      },
+      {
+        "description": "Highlighted walls overlap. One of them may be ignored when Revit finds room boundaries. Use Cut Geometry to embed one wall within the other.",
+        "severity": "Warning",
+        "elements": [
+          4916408,
+          5408813
+        ]
+      },
+      {
+        "description": "Highlighted walls overlap. One of them may be ignored when Revit finds room boundaries. Use Cut Geometry to embed one wall within the other.",
+        "severity": "Warning",
+        "elements": [
+          4916408,
+          12909061
+        ]
+      },
+      {
+        "description": "Highlighted walls overlap. One of them may be ignored when Revit finds room boundaries. Use Cut Geometry to embed one wall within the other.",
+        "severity": "Warning",
+        "elements": [
+          4916413,
+          4929410
+        ]
+      },
+      {
+        "description": "Highlighted walls overlap. One of them may be ignored when Revit finds room boundaries. Use Cut Geometry to embed one wall within the other or tab-select one of the grouped overlapping walls and exclude it from the group instance.",
+        "severity": "Warning",
+        "elements": [
+          4986075,
+          5713850
+        ]
+      },
+      {
+        "description": "Highlighted walls overlap. One of them may be ignored when Revit finds room boundaries. Use Cut Geometry to embed one wall within the other or tab-select one of the grouped overlapping walls and exclude it from the group instance.",
+        "severity": "Warning",
+        "elements": [
+          4986075,
+          9815049
+        ]
+      },
+      {
+        "description": "Highlighted floors overlap.",
+        "severity": "Warning",
+        "elements": [
+          5040976,
+          5912257
+        ]
+      },
+      {
+        "description": "Highlighted walls overlap. One of them may be ignored when Revit finds room boundaries. Use Cut Geometry to embed one wall within the other.",
+        "severity": "Warning",
+        "elements": [
+          5112428,
+          6803611
+        ]
+      },
+      {
+        "description": "Highlighted walls overlap. One of them may be ignored when Revit finds room boundaries. Use Cut Geometry to embed one wall within the other.",
+        "severity": "Warning",
+        "elements": [
+          5112428,
+          10784078
+        ]
+      },
+      {
+        "description": "Highlighted walls overlap. One of them may be ignored when Revit finds room boundaries. Use Cut Geometry to embed one wall within the other.",
+        "severity": "Warning",
+        "elements": [
+          5112428,
+          12909061
+        ]
+      },
+      {
+        "description": "Highlighted walls overlap. One of them may be ignored when Revit finds room boundaries. Use Cut Geometry to embed one wall within the other.",
+        "severity": "Warning",
+        "elements": [
+          5408813,
+          12909061
+        ]
+      },
+      {
+        "description": "Highlighted walls overlap. One of them may be ignored when Revit finds room boundaries. Use Cut Geometry to embed one wall within the other.",
+        "severity": "Warning",
+        "elements": [
+          5534142,
+          5534163
+        ]
+      },
+      {
+        "description": "Highlighted walls overlap. One of them may be ignored when Revit finds room boundaries. Use Cut Geometry to embed one wall within the other.",
+        "severity": "Warning",
+        "elements": [
+          5534145,
+          5534163
+        ]
+      },
+      {
+        "description": "Highlighted walls overlap. One of them may be ignored when Revit finds room boundaries. Use Cut Geometry to embed one wall within the other.",
+        "severity": "Warning",
+        "elements": [
+          5534153,
+          5534163
+        ]
+      },
+      {
+        "description": "Highlighted walls overlap. One of them may be ignored when Revit finds room boundaries. Use Cut Geometry to embed one wall within the other.",
+        "severity": "Warning",
+        "elements": [
+          5534154,
+          5534163
+        ]
+      },
+      {
+        "description": "Highlighted walls overlap. One of them may be ignored when Revit finds room boundaries. Use Cut Geometry to embed one wall within the other.",
+        "severity": "Warning",
+        "elements": [
+          5534163,
+          10783492
+        ]
+      },
+      {
+        "description": "Highlighted floors overlap.",
+        "severity": "Warning",
+        "elements": [
+          5567963,
+          12449568
+        ]
+      },
+      {
+        "description": "Highlighted floors overlap.",
+        "severity": "Warning",
+        "elements": [
+          5567963,
+          12479916
+        ]
+      },
+      {
+        "description": "Highlighted floors overlap.",
+        "severity": "Warning",
+        "elements": [
+          5707485,
+          8121234
+        ]
+      },
+      {
+        "description": "Highlighted floors overlap.",
+        "severity": "Warning",
+        "elements": [
+          5912257,
+          14021456
+        ]
+      },
+      {
+        "description": "A wall and a room separation line overlap. One of them may be ignored when Revit finds room boundaries. Shorten or delete the room separation line to remove the overlap.",
+        "severity": "Warning",
+        "elements": [
+          7375075,
+          9970580
+        ]
+      },
+      {
+        "description": "Highlighted walls overlap. One of them may be ignored when Revit finds room boundaries. Use Cut Geometry to embed one wall within the other.",
+        "severity": "Warning",
+        "elements": [
+          9612020,
+          11290846
+        ]
+      },
+      {
+        "description": "Highlighted walls overlap. One of them may be ignored when Revit finds room boundaries. Use Cut Geometry to embed one wall within the other.",
+        "severity": "Warning",
+        "elements": [
+          9655242,
+          11733196
+        ]
+      },
+      {
+        "description": "Highlighted room separation lines overlap. One of them may be ignored when Revit finds room boundaries. Delete one of the lines.",
+        "severity": "Warning",
+        "elements": [
+          10490281,
+          10672348
+        ]
+      },
+      {
+        "description": "A wall and a room separation line overlap. One of them may be ignored when Revit finds room boundaries. Shorten or delete the room separation line to remove the overlap.",
+        "severity": "Warning",
+        "elements": [
+          10762375,
+          11398282
+        ]
+      },
+      {
+        "description": "Highlighted lines overlap. Lines may not form closed loops.",
+        "severity": "Warning",
+        "elements": [
+          8327325,
+          11482081,
+          11494524
+        ]
+      },
+      {
+        "description": "Highlighted lines overlap. Lines may not form closed loops.",
+        "severity": "Warning",
+        "elements": [
+          8327325,
+          11482089,
+          11494524
+        ]
+      },
+      {
+        "description": "Highlighted floors overlap.",
+        "severity": "Warning",
+        "elements": [
+          11560182,
+          12547722
+        ]
+      },
+      {
+        "description": "Insert conflicts with joined Wall.",
+        "severity": "Warning",
+        "elements": [
+          4986074,
+          9652602
+        ]
+      },
+      {
+        "description": "Insert conflicts with joined Wall.",
+        "severity": "Warning",
+        "elements": [
+          4986084,
+          11873316
+        ]
+      },
+      {
+        "description": "Insert conflicts with joined Wall.",
+        "severity": "Warning",
+        "elements": [
+          5713852,
+          7952407
+        ]
+      },
+      {
+        "description": "Room is not in a properly enclosed region",
+        "severity": "Warning",
+        "elements": [
+          4731388
+        ]
+      },
+      {
+        "description": "Room is not in a properly enclosed region",
+        "severity": "Warning",
+        "elements": [
+          4752069
+        ]
+      },
+      {
+        "description": "Room is not in a properly enclosed region",
+        "severity": "Warning",
+        "elements": [
+          4752228
+        ]
+      },
+      {
+        "description": "Room is not in a properly enclosed region",
+        "severity": "Warning",
+        "elements": [
+          4752583
+        ]
+      },
+      {
+        "description": "Room is not in a properly enclosed region",
+        "severity": "Warning",
+        "elements": [
+          4758372
+        ]
+      },
+      {
+        "description": "Room is not in a properly enclosed region",
+        "severity": "Warning",
+        "elements": [
+          4797126
+        ]
+      },
+      {
+        "description": "Room is not in a properly enclosed region",
+        "severity": "Warning",
+        "elements": [
+          6045541
+        ]
+      },
+      {
+        "description": "Room is not in a properly enclosed region",
+        "severity": "Warning",
+        "elements": [
+          7551018
+        ]
+      },
+      {
+        "description": "Multiple Rooms are in the same enclosed region.  The correct area and perimeter will be assigned to one Room and the others will display \"Redundant Room.\"  You should separate the regions, delete the extra Rooms, or move them into different regions.",
+        "severity": "Warning",
+        "elements": [
+          10079831,
+          11398285
+        ]
+      },
+      {
+        "description": "Room Tag is outside of its Room.  Enable Leader or move Room Tag within its Room.",
+        "severity": "Warning",
+        "elements": [
+          4886148
+        ]
+      },
+      {
+        "description": "Room Tag is outside of its Room.  Enable Leader or move Room Tag within its Room.",
+        "severity": "Warning",
+        "elements": [
+          4998201
+        ]
+      },
+      {
+        "description": "Room Tag is outside of its Room.  Enable Leader or move Room Tag within its Room.",
+        "severity": "Warning",
+        "elements": [
+          4998304
+        ]
+      },
+      {
+        "description": "Room Tag is outside of its Room.  Enable Leader or move Room Tag within its Room.",
+        "severity": "Warning",
+        "elements": [
+          4998395
+        ]
+      },
+      {
+        "description": "Room Tag is outside of its Room.  Enable Leader or move Room Tag within its Room.",
+        "severity": "Warning",
+        "elements": [
+          4999386
+        ]
+      },
+      {
+        "description": "Room Tag is outside of its Room.  Enable Leader or move Room Tag within its Room.",
+        "severity": "Warning",
+        "elements": [
+          6234931
+        ]
+      },
+      {
+        "description": "Room Volume is being calculated above the Upper Limit of this Room. Change the Upper Limit and Offset or change the height of volume calculations.",
+        "severity": "Warning",
+        "elements": [
+          5707777
+        ]
+      },
+      {
+        "description": "Area is not in a properly enclosed region",
+        "severity": "Warning",
+        "elements": [
+          4795802
+        ]
+      },
+      {
+        "description": "Area is not in a properly enclosed region",
+        "severity": "Warning",
+        "elements": [
+          6085116
+        ]
+      },
+      {
+        "description": "Area is not in a properly enclosed region",
+        "severity": "Warning",
+        "elements": [
+          6085143
+        ]
+      },
+      {
+        "description": "Area is not in a properly enclosed region",
+        "severity": "Warning",
+        "elements": [
+          6088248
+        ]
+      },
+      {
+        "description": "Area is not in a properly enclosed region",
+        "severity": "Warning",
+        "elements": [
+          6089128
+        ]
+      },
+      {
+        "description": "Area Tag is outside of its Area.  Enable Leader or move Area Tag within its Area.",
+        "severity": "Warning",
+        "elements": [
+          6076375
+        ]
+      },
+      {
+        "description": "Highlighted walls are attached to, but miss, the highlighted targets.",
+        "severity": "Warning",
+        "elements": [
+          5912257,
+          9672408
+        ]
+      },
+      {
+        "description": "Two elements were not automatically joined because one or both is not editable.",
+        "severity": "Warning",
+        "elements": [
+          8146463,
+          8872449
+        ]
+      },
+      {
+        "description": "Two elements were not automatically joined because one or both is not editable.",
+        "severity": "Warning",
+        "elements": [
+          8146470,
+          8872447
+        ]
+      },
+      {
+        "description": "Two elements were not automatically joined because one or both is not editable.",
+        "severity": "Warning",
+        "elements": [
+          8146473,
+          8872449
+        ]
+      },
+      {
+        "description": "A Corner Mullion has been placed at the end of a Curtain Wall that is not joined to another Curtain Wall. The angle of the Corner Mullion will default to 90 degrees.",
+        "severity": "Warning",
+        "elements": [
+          5032831,
+          5032848
+        ]
+      },
+      {
+        "description": "A Corner Mullion has been placed at the end of a Curtain Wall that is not joined to another Curtain Wall. The angle of the Corner Mullion will default to 90 degrees.",
+        "severity": "Warning",
+        "elements": [
+          5032831,
+          5032849
+        ]
+      },
+      {
+        "description": "A Corner Mullion has been placed at the end of a Curtain Wall that is not joined to another Curtain Wall. The angle of the Corner Mullion will default to 90 degrees.",
+        "severity": "Warning",
+        "elements": [
+          5032831,
+          5032856
+        ]
+      },
+      {
+        "description": "A Corner Mullion has been placed at the end of a Curtain Wall that is not joined to another Curtain Wall. The angle of the Corner Mullion will default to 90 degrees.",
+        "severity": "Warning",
+        "elements": [
+          5032831,
+          5032857
+        ]
+      },
+      {
+        "description": "A Corner Mullion has been placed at the end of a Curtain Wall that is not joined to another Curtain Wall. The angle of the Corner Mullion will default to 90 degrees.",
+        "severity": "Warning",
+        "elements": [
+          5032831,
+          5035274
+        ]
+      },
+      {
+        "description": "Highlighted elements are joined but do not intersect.",
+        "severity": "Warning",
+        "elements": [
+          4916428,
+          5053896
+        ]
+      },
+      {
+        "description": "Elements do not intersect.",
+        "severity": "Warning",
+        "elements": [
+          9525004,
+          13688012
+        ]
+      },
+      {
+        "description": "Elements do not intersect.",
+        "severity": "Warning",
+        "elements": [
+          9525004,
+          13688014
+        ]
+      },
+      {
+        "description": "Elements do not intersect.",
+        "severity": "Warning",
+        "elements": [
+          9614156,
+          13285815
+        ]
+      },
+      {
+        "description": "Highlighted elements are joined but do not intersect.",
+        "severity": "Warning",
+        "elements": [
+          11679574,
+          13685480
+        ]
+      },
+      {
+        "description": "Elements do not intersect.",
+        "severity": "Warning",
+        "elements": [
+          9525004,
+          13688012
+        ]
+      },
+      {
+        "description": "Elements do not intersect.",
+        "severity": "Warning",
+        "elements": [
+          9525004,
+          13688014
+        ]
+      },
+      {
+        "description": "Instance of in-place family is not cutting host.",
+        "severity": "Warning",
+        "elements": [
+          4822790,
+          13573724
+        ]
+      },
+      {
+        "description": "Instance of in-place family is not cutting host.",
+        "severity": "Warning",
+        "elements": [
+          5714058,
+          11873379
+        ]
+      },
+      {
+        "description": "Could not create Wall Sweep. Sweep position is outside of its wall. Please check sweep parameters.",
+        "severity": "Warning",
+        "elements": [
+          5534156
+        ]
+      },
+      {
+        "description": "Could not create Wall Sweep. All the segments are of zero length.",
+        "severity": "Warning",
+        "elements": [
+          5534152
+        ]
+      },
+      {
+        "description": "Some panels in this curtain system are slightly malformed.  The problem is most likely ignorable. This problem usually occurs when a panel or parts of a panel have been divided so that they are very narrow.  To better see the malformed panels, temporarily hide the mullion category and set display of lines to \"thin lines\" (using the command on the view menu).",
+        "severity": "Warning",
+        "elements": [
+          3372597,
+          3372896
+        ]
+      },
+      {
+        "description": "Some panels in this curtain system are slightly malformed.  The problem is most likely ignorable. This problem usually occurs when a panel or parts of a panel have been divided so that they are very narrow.  To better see the malformed panels, temporarily hide the mullion category and set display of lines to \"thin lines\" (using the command on the view menu).",
+        "severity": "Warning",
+        "elements": [
+          3372597,
+          3372907
+        ]
+      },
+      {
+        "description": "Some panels in this curtain system are slightly malformed.  The problem is most likely ignorable. This problem usually occurs when a panel or parts of a panel have been divided so that they are very narrow.  To better see the malformed panels, temporarily hide the mullion category and set display of lines to \"thin lines\" (using the command on the view menu).",
+        "severity": "Warning",
+        "elements": [
+          3372597,
+          3372944
+        ]
+      },
+      {
+        "description": "Some panels in this curtain system are slightly malformed.  The problem is most likely ignorable. This problem usually occurs when a panel or parts of a panel have been divided so that they are very narrow.  To better see the malformed panels, temporarily hide the mullion category and set display of lines to \"thin lines\" (using the command on the view menu).",
+        "severity": "Warning",
+        "elements": [
+          3372597,
+          3372948
+        ]
+      },
+      {
+        "description": "Curve-Based Family is slightly off axis and may cause inaccuracies.",
+        "severity": "Warning",
+        "elements": [
+          6002020
+        ]
+      },
+      {
+        "description": "Area separation line is slightly off axis and may cause inaccuracies.",
+        "severity": "Warning",
+        "elements": [
+          6059915
+        ]
+      },
+      {
+        "description": "Area separation line is slightly off axis and may cause inaccuracies.",
+        "severity": "Warning",
+        "elements": [
+          6059963
+        ]
+      },
+      {
+        "description": "Stair bottom end exceeds or cannot reach the base elevation of the stair. Add/remove risers at the bottom end by control or change the stair run's \"Relative Base Height\" parameter in the properties palette.",
+        "severity": "Warning",
+        "elements": [
+          6496567
+        ]
+      },
+      {
+        "description": "Stair bottom end exceeds or cannot reach the base elevation of the stair. Add/remove risers at the bottom end by control or change the stair run's \"Relative Base Height\" parameter in the properties palette.",
+        "severity": "Warning",
+        "elements": [
+          9301401
+        ]
+      },
+      {
+        "description": "The rail is not continuous.  Breaks in the rail usually occur at sharply-angled transitions. To fix the problem, try:\r\n - Changing the transition style in the rail type properties, or\r\n - Modifying the railing path at the transition.",
+        "severity": "Warning",
+        "elements": [
+          10879708
+        ]
+      },
+      {
+        "description": "The rail is not continuous.  Breaks in the rail usually occur at sharply-angled transitions. To fix the problem, try:\r\n - Changing the transition style in the rail type properties, or\r\n - Modifying the railing path at the transition.",
+        "severity": "Warning",
+        "elements": [
+          10879861
+        ]
+      },
+      {
+        "description": "The rail is not continuous.  Breaks in the rail usually occur at sharply-angled transitions. To fix the problem, try:\r\n - Changing the transition style in the rail type properties, or\r\n - Modifying the railing path at the transition.",
+        "severity": "Warning",
+        "elements": [
+          10879987
+        ]
+      },
+      {
+        "description": "The rail is not continuous.  Breaks in the rail usually occur at sharply-angled transitions. To fix the problem, try:\r\n - Changing the transition style in the rail type properties, or\r\n - Modifying the railing path at the transition.",
+        "severity": "Warning",
+        "elements": [
+          10880123
+        ]
+      },
+      {
+        "description": "Stair top end exceeds or cannot reach the top elevation of the stair. Add/remove risers at the top end by control or change the stair run's \"Relative Top Height\" parameter in the properties palette.",
+        "severity": "Warning",
+        "elements": [
+          3230172,
+          3290388
+        ]
+      },
+      {
+        "description": "Stair top end exceeds or cannot reach the top elevation of the stair. Add/remove risers at the top end by control or change the stair run's \"Relative Top Height\" parameter in the properties palette.",
+        "severity": "Warning",
+        "elements": [
+          6086607
+        ]
+      },
+      {
+        "description": "Stair top end exceeds or cannot reach the top elevation of the stair. Add/remove risers at the top end by control or change the stair run's \"Relative Top Height\" parameter in the properties palette.",
+        "severity": "Warning",
+        "elements": [
+          6496567
+        ]
+      }
+    ]
+  },
+  "error": null,
+  "cancel_requested": false,
+  "created_utc": "2026-11-12T21:48:50.2768389Z",
+  "finished_utc": "2026-11-12T21:48:54.4365157Z",
+  "elapsed_ms": 3855.3984,
+  "transaction_status": "committed"
+}

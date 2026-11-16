@@ -1,0 +1,36 @@
+{
+  "schema_version": 1,
+  "operation_id": "bf666ee2-f1c0-4bc5-af2b-43517eee567f",
+  "status": "failed",
+  "request": {
+    "arguments": {
+      "arguments": {},
+      "assembly": "C:/ProgramData/CodexNativeRevit/plugins/belmont_window_trim/BelmontBedroomTrimAdaptation.dll",
+      "expected_changes": [],
+      "purpose": "Plan exact editable extrusion replacements and preview dimension dependencies without committing changes",
+      "type": "PlanTrim"
+    },
+    "document": {
+      "path": "Autodesk Docs://25 012 - 651 W. Belmont/25-012 651 W. Belmont_Issue for Construction_.rvt",
+      "session_id": "d9136c2f-5567-4bc5-9bc4-e8bd4b966f6c"
+    },
+    "operation": "compiled.query",
+    "operation_id": "bf666ee2-f1c0-4bc5-af2b-43517eee567f",
+    "preconditions": {
+      "expected_title": "25-012 651 W. Belmont_Issue for Construction_",
+      "is_family": false
+    },
+    "schema_version": 1
+  },
+  "result": null,
+  "error": {
+    "code": "InvalidOperationException",
+    "message": "Source is not a matching native extrusion",
+    "details": null
+  },
+  "cancel_requested": false,
+  "created_utc": "2026-11-12T21:39:52.7977123Z",
+  "finished_utc": "2026-11-12T21:39:52.8800797Z",
+  "elapsed_ms": 78.1455,
+  "transaction_status": "not_started"
+}

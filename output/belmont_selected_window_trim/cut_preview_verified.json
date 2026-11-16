@@ -1,0 +1,120 @@
+{
+  "schema_version": 1,
+  "operation_id": "83f0ef16-8fad-44fa-9fc8-8eb72e95661e",
+  "status": "completed",
+  "request": {
+    "arguments": {
+      "arguments": {
+        "point": [
+          37.33999190966225,
+          -55.69033126642166,
+          37.666666666666664
+        ],
+        "type": "e73ded64-5f20-4863-86c8-288dfb7ac93a-00d7817c"
+      },
+      "assembly": "C:/ProgramData/CodexNativeRevit/plugins/belmont_window_trim/BelmontWindowTrimCutV4.dll",
+      "expected_changes": [],
+      "purpose": "Verify correct native level-based placement, exact cuts, unchanged wall and dimensions in a fully rolled-back preview",
+      "type": "PreviewWindowTrimCut"
+    },
+    "document": {
+      "path": "Autodesk Docs://25 012 - 651 W. Belmont/25-012 651 W. Belmont_Issue for Construction_.rvt",
+      "session_id": "d9136c2f-5567-4bc5-9bc4-e8bd4b966f6c"
+    },
+    "operation": "compiled.query",
+    "operation_id": "83f0ef16-8fad-44fa-9fc8-8eb72e95661e",
+    "preconditions": {
+      "expected_title": "25-012 651 W. Belmont_Issue for Construction_",
+      "is_family": false
+    },
+    "schema_version": 1
+  },
+  "result": {
+    "preview": true,
+    "data": {
+      "instance": {
+        "document_session_id": "d9136c2f-5567-4bc5-9bc4-e8bd4b966f6c",
+        "id": 14123407,
+        "unique_id": "e73ded64-5f20-4863-86c8-288dfb7ac93a-00d7818f",
+        "name": "Fourth-floor primary bedroom window adaptation",
+        "category": "Casework",
+        "category_id": -2001000,
+        "type_id": 14123388,
+        "pinned": false,
+        "group_id": -1,
+        "level_id": 4209327,
+        "location": {
+          "point": [
+            37.33999190966225,
+            -55.69033126642166,
+            37.66666666666666
+          ],
+          "rotation_radians": 0
+        },
+        "bounds": {
+          "min": [
+            35.79832524299557,
+            -56.19033126642163,
+            37.58333333333333
+          ],
+          "max": [
+            38.881658576328896,
+            -55.19033126642163,
+            47.166666666666664
+          ]
+        },
+        "host_id": null,
+        "family_name": null,
+        "placement_type": null,
+        "view_family": null,
+        "view_type": null,
+        "elevation": null
+      },
+      "native_cut_checks": [
+        {
+          "unique_id": "a90217dd-fa42-44eb-bd0a-2c07a91eab57-00c87ad1",
+          "document_session_id": "d9136c2f-5567-4bc5-9bc4-e8bd4b966f6c",
+          "id": 13138641,
+          "before": 0.7231542312447861,
+          "expected": 0.6510891738319745,
+          "actual": 0.6510891738319753,
+          "linked": true
+        },
+        {
+          "unique_id": "02e59096-cb94-4b8b-9416-b62fba27e642-00d0d34e",
+          "document_session_id": "d9136c2f-5567-4bc5-9bc4-e8bd4b966f6c",
+          "id": 13685582,
+          "before": 0.3370153579340856,
+          "expected": 0.33636431626741814,
+          "actual": 0.3363643162674188,
+          "linked": true
+        },
+        {
+          "unique_id": "676af7a0-33d9-46b9-a8bb-d9537861af37-00cab9d1",
+          "document_session_id": "d9136c2f-5567-4bc5-9bc4-e8bd4b966f6c",
+          "id": 13285841,
+          "before": 0.16511174768517323,
+          "expected": 0.06094508101850181,
+          "actual": 0.06094508101850328,
+          "linked": true
+        }
+      ],
+      "preserved_dimension_ids": [
+        13960635,
+        13960707,
+        13962280
+      ],
+      "protected_wall_id": 13836440,
+      "wall_unchanged": true,
+      "deleted_elements": [],
+      "saved": false
+    },
+    "transaction_status": "rolled_back"
+  },
+  "error": null,
+  "cancel_requested": false,
+  "created_utc": "2026-11-12T21:50:41.5365383Z",
+  "finished_utc": "2026-11-12T21:50:42.0616803Z",
+  "elapsed_ms": 519.3014,
+  "transaction_status": "rolled_back"
+}

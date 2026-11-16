@@ -1,0 +1,178 @@
+{
+  "schema_version": 1,
+  "operation_id": "d0cc9220-87c2-4536-95fd-703dfa87b279",
+  "status": "completed",
+  "request": {
+    "arguments": {
+      "arguments": {
+        "depth": 0.06575520833388993,
+        "rails": [
+          {
+            "name": "Left panel border 1",
+            "profile": [
+              [
+                -1.5416666666666667,
+                -0.06575520833388993,
+                0.7083333333333357
+              ],
+              [
+                -1.5,
+                -0.06575520833388993,
+                0.7083333333333357
+              ],
+              [
+                -1.5,
+                -0.06575520833388993,
+                2.2467191400818365
+              ],
+              [
+                -1.5416666666666667,
+                -0.06575520833388993,
+                2.2467191400818365
+              ]
+            ]
+          },
+          {
+            "name": "Left panel border 2",
+            "profile": [
+              [
+                -1.5416666666666667,
+                -0.06575520833388993,
+                2.2883858067484724
+              ],
+              [
+                -1.5,
+                -0.06575520833388993,
+                2.2883858067484724
+              ],
+              [
+                -1.5,
+                -0.06575520833388993,
+                9.041666666666671
+              ],
+              [
+                -1.5416666666666667,
+                -0.06575520833388993,
+                9.041666666666671
+              ]
+            ]
+          },
+          {
+            "name": "Right panel border 1",
+            "profile": [
+              [
+                1.5,
+                -0.06575520833388993,
+                0.7083333333333357
+              ],
+              [
+                1.5416666666666667,
+                -0.06575520833388993,
+                0.7083333333333357
+              ],
+              [
+                1.5416666666666667,
+                -0.06575520833388993,
+                2.2467191400818365
+              ],
+              [
+                1.5,
+                -0.06575520833388993,
+                2.2467191400818365
+              ]
+            ]
+          },
+          {
+            "name": "Right panel border 2",
+            "profile": [
+              [
+                1.5,
+                -0.06575520833388993,
+                2.2883858067484724
+              ],
+              [
+                1.5416666666666667,
+                -0.06575520833388993,
+                2.2883858067484724
+              ],
+              [
+                1.5416666666666667,
+                -0.06575520833388993,
+                9.041666666666671
+              ],
+              [
+                1.5,
+                -0.06575520833388993,
+                9.041666666666671
+              ]
+            ]
+          }
+        ]
+      },
+      "assembly": "C:/ProgramData/CodexNativeRevit/plugins/belmont_window_trim/BelmontWindowTrimCut.dll",
+      "expected_changes": [
+        "Only the new family: one editable void, four editable molding extrusions, height/thickness/material parameters"
+      ],
+      "purpose": "Author native editable void and panel-border extrusions in the new task family",
+      "type": "BuildWindowTrimCut"
+    },
+    "document": {
+      "session_id": "8f87b768-9a92-4844-aacb-15f11fbbe2ac"
+    },
+    "operation": "compiled.modify",
+    "operation_id": "d0cc9220-87c2-4536-95fd-703dfa87b279",
+    "preconditions": {
+      "allow_existing_document": true,
+      "is_family": true
+    },
+    "schema_version": 1
+  },
+  "result": {
+    "data": {
+      "void_form_id": 2969,
+      "void_editable_sketch_id": 2968,
+      "cut_with_voids_when_loaded": true,
+      "rails": [
+        {
+          "name": "Left panel border 1",
+          "id": 2976,
+          "unique_id": "ca3817d8-9132-45e1-9c24-5beb19425010-00000ba0",
+          "volume": 0.004214869967526966,
+          "editable_sketch_id": 2975
+        },
+        {
+          "name": "Left panel border 2",
+          "id": 2986,
+          "unique_id": "ca3817d8-9132-45e1-9c24-5beb19425010-00000baa",
+          "volume": 0.018502641245049717,
+          "editable_sketch_id": 2985
+        },
+        {
+          "name": "Right panel border 1",
+          "id": 2996,
+          "unique_id": "ca3817d8-9132-45e1-9c24-5beb19425010-00000bb4",
+          "volume": 0.004214869967526966,
+          "editable_sketch_id": 2995
+        },
+        {
+          "name": "Right panel border 2",
+          "id": 3006,
+          "unique_id": "ca3817d8-9132-45e1-9c24-5beb19425010-00000bbe",
+          "volume": 0.018502641245049717,
+          "editable_sketch_id": 3005
+        }
+      ],
+      "native_form_count": 5,
+      "saved": false
+    },
+    "transaction_status": "committed",
+    "actual_elements": [],
+    "warnings": []
+  },
+  "error": null,
+  "cancel_requested": false,
+  "created_utc": "2026-11-12T21:48:26.4580432Z",
+  "finished_utc": "2026-11-12T21:48:26.7253762Z",
+  "elapsed_ms": 263.0373,
+  "transaction_status": "committed"
+}

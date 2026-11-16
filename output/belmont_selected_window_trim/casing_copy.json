@@ -1,0 +1,1688 @@
+{
+  "schema_version": 1,
+  "operation_id": "f9eb37fd-2dd7-4db3-9ace-9fe22068ae8c",
+  "status": "completed",
+  "request": {
+    "arguments": {
+      "element": "79604fd5-7f98-4516-a061-568bee79594d-00cd6422",
+      "vector": [
+        -37.114573333332665,
+        0.9999999999967031,
+        0.0
+      ]
+    },
+    "document": {
+      "path": "Autodesk Docs://25 012 - 651 W. Belmont/25-012 651 W. Belmont_Issue for Construction_.rvt",
+      "session_id": "67d4a78a-e799-4e50-ab09-4ec22a83da30"
+    },
+    "operation": "element.copy",
+    "operation_id": "f9eb37fd-2dd7-4db3-9ace-9fe22068ae8c",
+    "preconditions": {
+      "allow_existing_document": true,
+      "expected_title": "25-012 651 W. Belmont_Issue for Construction_",
+      "is_family": false
+    },
+    "schema_version": 1
+  },
+  "result": {
+    "data": {
+      "before": {
+        "document_session_id": "67d4a78a-e799-4e50-ab09-4ec22a83da30",
+        "id": 13460514,
+        "unique_id": "79604fd5-7f98-4516-a061-568bee79594d-00cd6422",
+        "name": "Trim",
+        "category": "Casework",
+        "category_id": -2001000,
+        "type_id": 13460483,
+        "pinned": false,
+        "group_id": -1,
+        "level_id": 4209327,
+        "location": {
+          "point": [
+            74.45456524299492,
+            -56.69033126641836,
+            37.666666666666664
+          ],
+          "rotation_radians": 3.141592653589712
+        },
+        "bounds": {
+          "min": [
+            72.37123190966156,
+            -56.92383413649961,
+            37.666666666666664
+          ],
+          "max": [
+            76.53789857632827,
+            -56.45074793308486,
+            47
+          ]
+        },
+        "host_id": null,
+        "family_name": null,
+        "placement_type": null,
+        "view_family": null,
+        "view_type": null,
+        "elevation": null
+      },
+      "after": [
+        {
+          "document_session_id": "67d4a78a-e799-4e50-ab09-4ec22a83da30",
+          "id": 14122538,
+          "unique_id": "0e5e1fa8-6b46-4fb4-a64a-e03decd36cde-00d77e2a",
+          "name": "Trim",
+          "category": "Casework",
+          "category_id": -2001000,
+          "type_id": 13460483,
+          "pinned": false,
+          "group_id": -1,
+          "level_id": 4209327,
+          "location": {
+            "point": [
+              37.33999190966225,
+              -55.69033126642166,
+              37.666666666666664
+            ],
+            "rotation_radians": 3.141592653589712
+          },
+          "bounds": {
+            "min": [
+              35.256658576328896,
+              -55.923834136502904,
+              37.666666666666664
+            ],
+            "max": [
+              39.42332524299561,
+              -55.45074793308816,
+              47
+            ]
+          },
+          "host_id": null,
+          "family_name": null,
+          "placement_type": null,
+          "view_family": null,
+          "view_type": null,
+          "elevation": null
+        }
+      ]
+    },
+    "transaction_status": "committed",
+    "actual_elements": [
+      {
+        "document_session_id": "67d4a78a-e799-4e50-ab09-4ec22a83da30",
+        "id": 13460514,
+        "unique_id": "79604fd5-7f98-4516-a061-568bee79594d-00cd6422",
+        "name": "Trim",
+        "category": "Casework",
+        "category_id": -2001000,
+        "type_id": 13460483,
+        "pinned": false,
+        "group_id": -1,
+        "level_id": 4209327,
+        "location": {
+          "point": [
+            74.45456524299492,
+            -56.69033126641836,
+            37.666666666666664
+          ],
+          "rotation_radians": 3.141592653589712
+        },
+        "bounds": {
+          "min": [
+            72.37123190966156,
+            -56.92383413649961,
+            37.666666666666664
+          ],
+          "max": [
+            76.53789857632827,
+            -56.45074793308486,
+            47
+          ]
+        },
+        "host_id": null,
+        "family_name": null,
+        "placement_type": null,
+        "view_family": null,
+        "view_type": null,
+        "elevation": null
+      },
+      {
+        "document_session_id": "67d4a78a-e799-4e50-ab09-4ec22a83da30",
+        "id": 14122538,
+        "unique_id": "0e5e1fa8-6b46-4fb4-a64a-e03decd36cde-00d77e2a",
+        "name": "Trim",
+        "category": "Casework",
+        "category_id": -2001000,
+        "type_id": 13460483,
+        "pinned": false,
+        "group_id": -1,
+        "level_id": 4209327,
+        "location": {
+          "point": [
+            37.33999190966225,
+            -55.69033126642166,
+            37.666666666666664
+          ],
+          "rotation_radians": 3.141592653589712
+        },
+        "bounds": {
+          "min": [
+            35.256658576328896,
+            -55.923834136502904,
+            37.666666666666664
+          ],
+          "max": [
+            39.42332524299561,
+            -55.45074793308816,
+            47
+          ]
+        },
+        "host_id": null,
+        "family_name": null,
+        "placement_type": null,
+        "view_family": null,
+        "view_type": null,
+        "elevation": null
+      }
+    ],
+    "warnings": [
+      {
+        "description": "Extrusion is too thin.",
+        "element_ids": [
+          12827960,
+          12828504
+        ]
+      },
+      {
+        "description": "An elevation symbol references views on more than one sheet. It will show a blank sheet reference. To show the correct references, use a separate elevation symbol for the views on each sheet.",
+        "element_ids": [
+          8716278
+        ]
+      },
+      {
+        "description": "Some columns in the project are excluded from the graphical column schedule view.",
+        "element_ids": [
+          6784308
+        ]
+      },
+      {
+        "description": "Elements have duplicate \"Number\" values.",
+        "element_ids": [
+          1629058,
+          5702612
+        ]
+      },
+      {
+        "description": "Elements have duplicate \"Number\" values.",
+        "element_ids": [
+          1629741,
+          5702608
+        ]
+      },
+      {
+        "description": "Elements have duplicate \"Number\" values.",
+        "element_ids": [
+          3860305,
+          5702343
+        ]
+      },
+      {
+        "description": "Elements have duplicate \"Number\" values.",
+        "element_ids": [
+          4317585,
+          5708327
+        ]
+      },
+      {
+        "description": "Elements have duplicate \"Number\" values.",
+        "element_ids": [
+          4317587,
+          5709520
+        ]
+      },
+      {
+        "description": "Elements have duplicate \"Number\" values.",
+        "element_ids": [
+          4317589,
+          5708320
+        ]
+      },
+      {
+        "description": "Elements have duplicate \"Number\" values.",
+        "element_ids": [
+          4317593,
+          5708323
+        ]
+      },
+      {
+        "description": "Elements have duplicate \"Number\" values.",
+        "element_ids": [
+          4318163,
+          4326227
+        ]
+      },
+      {
+        "description": "Elements have duplicate \"Number\" values.",
+        "element_ids": [
+          5702148,
+          9515157
+        ]
+      },
+      {
+        "description": "Elements have duplicate \"Number\" values.",
+        "element_ids": [
+          5702154,
+          5733263
+        ]
+      },
+      {
+        "description": "Elements have duplicate \"Number\" values.",
+        "element_ids": [
+          5702352,
+          5702373
+        ]
+      },
+      {
+        "description": "Elements have duplicate \"Number\" values.",
+        "element_ids": [
+          5703547,
+          10068360
+        ]
+      },
+      {
+        "description": "Elements have duplicate \"Number\" values.",
+        "element_ids": [
+          5703587,
+          5707777
+        ]
+      },
+      {
+        "description": "Elements have duplicate \"Number\" values.",
+        "element_ids": [
+          5706750,
+          5733305
+        ]
+      },
+      {
+        "description": "Elements have duplicate \"Number\" values.",
+        "element_ids": [
+          5707735,
+          6042949
+        ]
+      },
+      {
+        "description": "Elements have duplicate \"Number\" values.",
+        "element_ids": [
+          5708656,
+          7550763
+        ]
+      },
+      {
+        "description": "Elements have duplicate \"Number\" values.",
+        "element_ids": [
+          5708748,
+          5709438
+        ]
+      },
+      {
+        "description": "Elements have duplicate \"Number\" values.",
+        "element_ids": [
+          6042491,
+          6042505
+        ]
+      },
+      {
+        "description": "Elements have duplicate \"Number\" values.",
+        "element_ids": [
+          9515258,
+          9515509
+        ]
+      },
+      {
+        "description": "Elements have duplicate \"Number\" values.",
+        "element_ids": [
+          1626297,
+          5703169,
+          10067885
+        ]
+      },
+      {
+        "description": "Elements have duplicate \"Number\" values.",
+        "element_ids": [
+          1628455,
+          5703172,
+          10547190
+        ]
+      },
+      {
+        "description": "Elements have duplicate \"Number\" values.",
+        "element_ids": [
+          1629309,
+          5703357,
+          10068367
+        ]
+      },
+      {
+        "description": "Elements have duplicate \"Number\" values.",
+        "element_ids": [
+          1629748,
+          4317105,
+          6041107
+        ]
+      },
+      {
+        "description": "Elements have duplicate \"Number\" values.",
+        "element_ids": [
+          1630097,
+          4317428,
+          5703644
+        ]
+      },
+      {
+        "description": "Elements have duplicate \"Number\" values.",
+        "element_ids": [
+          4317407,
+          7954180,
+          10079834
+        ]
+      },
+      {
+        "description": "Elements have duplicate \"Number\" values.",
+        "element_ids": [
+          4317996,
+          5702151,
+          9037998
+        ]
+      },
+      {
+        "description": "Elements have duplicate \"Number\" values.",
+        "element_ids": [
+          5710057,
+          6451206,
+          9406583
+        ]
+      },
+      {
+        "description": "Elements have duplicate \"Number\" values.",
+        "element_ids": [
+          1627711,
+          7549655,
+          10068059,
+          10672446
+        ]
+      },
+      {
+        "description": "Elements have duplicate \"Number\" values.",
+        "element_ids": [
+          1628837,
+          5703166,
+          7549144,
+          10067879
+        ]
+      },
+      {
+        "description": "Elements have duplicate \"Number\" values.",
+        "element_ids": [
+          1628933,
+          5702615,
+          5703397,
+          7549533
+        ]
+      },
+      {
+        "description": "Elements have duplicate \"Number\" values.",
+        "element_ids": [
+          1631164,
+          4317195,
+          5704759,
+          10080641
+        ]
+      },
+      {
+        "description": "Elements have duplicate \"Number\" values.",
+        "element_ids": [
+          1631166,
+          4317461,
+          5704756,
+          8097904
+        ]
+      },
+      {
+        "description": "Elements have duplicate \"Number\" values.",
+        "element_ids": [
+          1631699,
+          4317193,
+          5704762,
+          10080200
+        ]
+      },
+      {
+        "description": "Elements have duplicate \"Number\" values.",
+        "element_ids": [
+          2211625,
+          5702157,
+          5702161,
+          7444820
+        ]
+      },
+      {
+        "description": "Elements have duplicate \"Number\" values.",
+        "element_ids": [
+          1629745,
+          4317073,
+          5703641,
+          5704213,
+          5704242
+        ]
+      },
+      {
+        "description": "Elements have duplicate \"Number\" values.",
+        "element_ids": [
+          1630095,
+          4317135,
+          5704753,
+          6041417,
+          6043096
+        ]
+      },
+      {
+        "description": "Elements have duplicate \"Number\" values.",
+        "element_ids": [
+          1632406,
+          4317465,
+          5704227,
+          7954206,
+          10079831
+        ]
+      },
+      {
+        "description": "Elements have duplicate \"Number\" values.",
+        "element_ids": [
+          1630099,
+          4317175,
+          5704251,
+          6041109,
+          6043099,
+          7950350
+        ]
+      },
+      {
+        "description": "Elements have duplicate \"Number\" values.",
+        "element_ids": [
+          1631697,
+          4317133,
+          5704224,
+          5704773,
+          6041105,
+          6041111
+        ]
+      },
+      {
+        "description": "Elements have duplicate \"Type Mark\" values.",
+        "element_ids": [
+          856722,
+          4810434
+        ]
+      },
+      {
+        "description": "Elements have duplicate \"Type Mark\" values.",
+        "element_ids": [
+          1260756,
+          5494205
+        ]
+      },
+      {
+        "description": "Elements have duplicate \"Type Mark\" values.",
+        "element_ids": [
+          1326354,
+          2224312
+        ]
+      },
+      {
+        "description": "Elements have duplicate \"Type Mark\" values.",
+        "element_ids": [
+          1360402,
+          3327028
+        ]
+      },
+      {
+        "description": "Elements have duplicate \"Type Mark\" values.",
+        "element_ids": [
+          1498445,
+          2683237
+        ]
+      },
+      {
+        "description": "Elements have duplicate \"Type Mark\" values.",
+        "element_ids": [
+          1522907,
+          2234597
+        ]
+      },
+      {
+        "description": "Elements have duplicate \"Type Mark\" values.",
+        "element_ids": [
+          2204525,
+          3229886
+        ]
+      },
+      {
+        "description": "Elements have duplicate \"Type Mark\" values.",
+        "element_ids": [
+          2205012,
+          3181327
+        ]
+      },
+      {
+        "description": "Elements have duplicate \"Type Mark\" values.",
+        "element_ids": [
+          2312622,
+          2319913
+        ]
+      },
+      {
+        "description": "Elements have duplicate \"Type Mark\" values.",
+        "element_ids": [
+          3556187,
+          4524669
+        ]
+      },
+      {
+        "description": "Elements have duplicate \"Type Mark\" values.",
+        "element_ids": [
+          3560987,
+          4501440
+        ]
+      },
+      {
+        "description": "Elements have duplicate \"Type Mark\" values.",
+        "element_ids": [
+          4586283,
+          4596440
+        ]
+      },
+      {
+        "description": "Elements have duplicate \"Type Mark\" values.",
+        "element_ids": [
+          4664440,
+          4701922
+        ]
+      },
+      {
+        "description": "Elements have duplicate \"Type Mark\" values.",
+        "element_ids": [
+          6558216,
+          9195168
+        ]
+      },
+      {
+        "description": "Elements have duplicate \"Type Mark\" values.",
+        "element_ids": [
+          7257957,
+          9966503
+        ]
+      },
+      {
+        "description": "Elements have duplicate \"Type Mark\" values.",
+        "element_ids": [
+          7326081,
+          9949754
+        ]
+      },
+      {
+        "description": "Elements have duplicate \"Type Mark\" values.",
+        "element_ids": [
+          7692881,
+          7696471
+        ]
+      },
+      {
+        "description": "Elements have duplicate \"Type Mark\" values.",
+        "element_ids": [
+          9417385,
+          9743045
+        ]
+      },
+      {
+        "description": "Elements have duplicate \"Type Mark\" values.",
+        "element_ids": [
+          9789639,
+          9950641
+        ]
+      },
+      {
+        "description": "Elements have duplicate \"Type Mark\" values.",
+        "element_ids": [
+          10778666,
+          12853172
+        ]
+      },
+      {
+        "description": "Elements have duplicate \"Type Mark\" values.",
+        "element_ids": [
+          980358,
+          1335906,
+          2205308
+        ]
+      },
+      {
+        "description": "Elements have duplicate \"Type Mark\" values.",
+        "element_ids": [
+          1313769,
+          1336787,
+          2319917
+        ]
+      },
+      {
+        "description": "Elements have duplicate \"Type Mark\" values.",
+        "element_ids": [
+          1315616,
+          2231111,
+          8079286
+        ]
+      },
+      {
+        "description": "Elements have duplicate \"Type Mark\" values.",
+        "element_ids": [
+          1317282,
+          2528263,
+          7242503
+        ]
+      },
+      {
+        "description": "Elements have duplicate \"Type Mark\" values.",
+        "element_ids": [
+          1346226,
+          10172391,
+          11559874
+        ]
+      },
+      {
+        "description": "Elements have duplicate \"Type Mark\" values.",
+        "element_ids": [
+          1490712,
+          4607566,
+          7537509
+        ]
+      },
+      {
+        "description": "Elements have duplicate \"Type Mark\" values.",
+        "element_ids": [
+          2234593,
+          5615123,
+          7434799
+        ]
+      },
+      {
+        "description": "Elements have duplicate \"Type Mark\" values.",
+        "element_ids": [
+          3420678,
+          9245323,
+          10044246
+        ]
+      },
+      {
+        "description": "Elements have duplicate \"Type Mark\" values.",
+        "element_ids": [
+          6324585,
+          6722548,
+          9805461
+        ]
+      },
+      {
+        "description": "Elements have duplicate \"Type Mark\" values.",
+        "element_ids": [
+          7257903,
+          9418083,
+          9571569
+        ]
+      },
+      {
+        "description": "Elements have duplicate \"Type Mark\" values.",
+        "element_ids": [
+          9247836,
+          9334025,
+          9367787
+        ]
+      },
+      {
+        "description": "Elements have duplicate \"Type Mark\" values.",
+        "element_ids": [
+          9314282,
+          9813649,
+          9967486
+        ]
+      },
+      {
+        "description": "Elements have duplicate \"Type Mark\" values.",
+        "element_ids": [
+          9409420,
+          9762161,
+          9766280
+        ]
+      },
+      {
+        "description": "Elements have duplicate \"Type Mark\" values.",
+        "element_ids": [
+          880053,
+          1305808,
+          6477820,
+          9786422
+        ]
+      },
+      {
+        "description": "Elements have duplicate \"Type Mark\" values.",
+        "element_ids": [
+          1149918,
+          4324231,
+          5483738,
+          6478305
+        ]
+      },
+      {
+        "description": "Elements have duplicate \"Type Mark\" values.",
+        "element_ids": [
+          1309066,
+          2204860,
+          5536159,
+          9477323
+        ]
+      },
+      {
+        "description": "Elements have duplicate \"Type Mark\" values.",
+        "element_ids": [
+          1309340,
+          5542877,
+          5725580,
+          9620842
+        ]
+      },
+      {
+        "description": "Elements have duplicate \"Type Mark\" values.",
+        "element_ids": [
+          1454220,
+          1498441,
+          1598296,
+          7536922
+        ]
+      },
+      {
+        "description": "Elements have duplicate \"Type Mark\" values.",
+        "element_ids": [
+          1501271,
+          3229894,
+          6313141,
+          6426537
+        ]
+      },
+      {
+        "description": "Elements have duplicate \"Type Mark\" values.",
+        "element_ids": [
+          2234595,
+          3370161,
+          6310754,
+          6438999
+        ]
+      },
+      {
+        "description": "Elements have duplicate \"Type Mark\" values.",
+        "element_ids": [
+          2319250,
+          7264657,
+          7446401,
+          7537245
+        ]
+      },
+      {
+        "description": "Elements have duplicate \"Type Mark\" values.",
+        "element_ids": [
+          4576827,
+          5017042,
+          5223235,
+          5492582
+        ]
+      },
+      {
+        "description": "Elements have duplicate \"Type Mark\" values.",
+        "element_ids": [
+          949437,
+          1307941,
+          4086986,
+          5594061,
+          9163420
+        ]
+      },
+      {
+        "description": "Elements have duplicate \"Type Mark\" values.",
+        "element_ids": [
+          1299265,
+          5028820,
+          5037998,
+          6330205,
+          9418330
+        ]
+      },
+      {
+        "description": "Elements have duplicate \"Type Mark\" values.",
+        "element_ids": [
+          1309231,
+          3548445,
+          5579330,
+          5615219,
+          6409034
+        ]
+      },
+      {
+        "description": "Elements have duplicate \"Type Mark\" values.",
+        "element_ids": [
+          1299156,
+          1308185,
+          1308772,
+          4095962,
+          4102824,
+          5012960,
+          5534677
+        ]
+      },
+      {
+        "description": "Elements have duplicate \"Type Mark\" values.",
+        "element_ids": [
+          1309906,
+          4595565,
+          5041131,
+          5735364,
+          5755911,
+          9403390,
+          9634893
+        ]
+      },
+      {
+        "description": "Elements have duplicate \"Type Mark\" values.",
+        "element_ids": [
+          855392,
+          1359321,
+          1365846,
+          1365852,
+          1365854,
+          1645281,
+          2507961,
+          7444169
+        ]
+      },
+      {
+        "description": "Elements have duplicate \"Type Mark\" values.",
+        "element_ids": [
+          205988,
+          9656057,
+          12083256,
+          13688255,
+          14009911,
+          14009913,
+          14021324,
+          14021326,
+          14027969
+        ]
+      },
+      {
+        "description": "Elements have duplicate \"Type Mark\" values.",
+        "element_ids": [
+          1019970,
+          1309448,
+          3537606,
+          5108682,
+          5493345,
+          5567306,
+          5735814,
+          6332026,
+          9601917,
+          9848803
+        ]
+      },
+      {
+        "description": "Elements have duplicate \"Type Mark\" values.",
+        "element_ids": [
+          882493,
+          1335701,
+          5013014,
+          5405574,
+          5605852,
+          6321044,
+          7175490,
+          7298609,
+          7851031,
+          9197303,
+          9966871
+        ]
+      },
+      {
+        "description": "Elements have duplicate \"Mark\" values.",
+        "element_ids": [
+          4796983,
+          4986148
+        ]
+      },
+      {
+        "description": "Elements have duplicate \"Mark\" values.",
+        "element_ids": [
+          4887112,
+          4986080
+        ]
+      },
+      {
+        "description": "Elements have duplicate \"Mark\" values.",
+        "element_ids": [
+          4913218,
+          4986077
+        ]
+      },
+      {
+        "description": "Elements have duplicate \"Mark\" values.",
+        "element_ids": [
+          4986081,
+          9677709
+        ]
+      },
+      {
+        "description": "Elements have duplicate \"Mark\" values.",
+        "element_ids": [
+          4986202,
+          9627471
+        ]
+      },
+      {
+        "description": "Highlighted floors overlap.",
+        "element_ids": [
+          4812715,
+          11167833
+        ]
+      },
+      {
+        "description": "Highlighted floors overlap.",
+        "element_ids": [
+          4822790,
+          11541700
+        ]
+      },
+      {
+        "description": "Highlighted floors overlap.",
+        "element_ids": [
+          4822790,
+          12082831
+        ]
+      },
+      {
+        "description": "Highlighted floors overlap.",
+        "element_ids": [
+          4822790,
+          12319052
+        ]
+      },
+      {
+        "description": "Highlighted floors overlap.",
+        "element_ids": [
+          4822790,
+          12320057
+        ]
+      },
+      {
+        "description": "A wall and a room separation line overlap. One of them may be ignored when Revit finds room boundaries. Shorten or delete the room separation line to remove the overlap.",
+        "element_ids": [
+          4854484,
+          9515216
+        ]
+      },
+      {
+        "description": "A wall and a room separation line overlap. One of them may be ignored when Revit finds room boundaries. Shorten or delete the room separation line to remove the overlap.",
+        "element_ids": [
+          4854484,
+          9515463
+        ]
+      },
+      {
+        "description": "Highlighted floors overlap.",
+        "element_ids": [
+          4898627,
+          11559737
+        ]
+      },
+      {
+        "description": "Highlighted floors overlap.",
+        "element_ids": [
+          4898627,
+          11560182
+        ]
+      },
+      {
+        "description": "Highlighted floors overlap.",
+        "element_ids": [
+          4898627,
+          12547722
+        ]
+      },
+      {
+        "description": "A wall and a room separation line overlap. One of them may be ignored when Revit finds room boundaries. Shorten or delete the room separation line to remove the overlap.",
+        "element_ids": [
+          4900053,
+          9038086
+        ]
+      },
+      {
+        "description": "Highlighted walls overlap. One of them may be ignored when Revit finds room boundaries. Use Cut Geometry to embed one wall within the other.",
+        "element_ids": [
+          4902599,
+          5112428
+        ]
+      },
+      {
+        "description": "Highlighted walls overlap. One of them may be ignored when Revit finds room boundaries. Use Cut Geometry to embed one wall within the other.",
+        "element_ids": [
+          4902599,
+          12909061
+        ]
+      },
+      {
+        "description": "Highlighted walls overlap. One of them may be ignored when Revit finds room boundaries. Use Cut Geometry to embed one wall within the other.",
+        "element_ids": [
+          4916408,
+          5030246
+        ]
+      },
+      {
+        "description": "Highlighted walls overlap. One of them may be ignored when Revit finds room boundaries. Use Cut Geometry to embed one wall within the other.",
+        "element_ids": [
+          4916408,
+          5030457
+        ]
+      },
+      {
+        "description": "Highlighted walls overlap. One of them may be ignored when Revit finds room boundaries. Use Cut Geometry to embed one wall within the other.",
+        "element_ids": [
+          4916408,
+          5408813
+        ]
+      },
+      {
+        "description": "Highlighted walls overlap. One of them may be ignored when Revit finds room boundaries. Use Cut Geometry to embed one wall within the other.",
+        "element_ids": [
+          4916408,
+          12909061
+        ]
+      },
+      {
+        "description": "Highlighted walls overlap. One of them may be ignored when Revit finds room boundaries. Use Cut Geometry to embed one wall within the other.",
+        "element_ids": [
+          4916413,
+          4929410
+        ]
+      },
+      {
+        "description": "Highlighted walls overlap. One of them may be ignored when Revit finds room boundaries. Use Cut Geometry to embed one wall within the other or tab-select one of the grouped overlapping walls and exclude it from the group instance.",
+        "element_ids": [
+          4986075,
+          5713850
+        ]
+      },
+      {
+        "description": "Highlighted walls overlap. One of them may be ignored when Revit finds room boundaries. Use Cut Geometry to embed one wall within the other or tab-select one of the grouped overlapping walls and exclude it from the group instance.",
+        "element_ids": [
+          4986075,
+          9815049
+        ]
+      },
+      {
+        "description": "Highlighted floors overlap.",
+        "element_ids": [
+          5040976,
+          5912257
+        ]
+      },
+      {
+        "description": "Highlighted walls overlap. One of them may be ignored when Revit finds room boundaries. Use Cut Geometry to embed one wall within the other.",
+        "element_ids": [
+          5112428,
+          6803611
+        ]
+      },
+      {
+        "description": "Highlighted walls overlap. One of them may be ignored when Revit finds room boundaries. Use Cut Geometry to embed one wall within the other.",
+        "element_ids": [
+          5112428,
+          10784078
+        ]
+      },
+      {
+        "description": "Highlighted walls overlap. One of them may be ignored when Revit finds room boundaries. Use Cut Geometry to embed one wall within the other.",
+        "element_ids": [
+          5112428,
+          12909061
+        ]
+      },
+      {
+        "description": "Highlighted walls overlap. One of them may be ignored when Revit finds room boundaries. Use Cut Geometry to embed one wall within the other.",
+        "element_ids": [
+          5408813,
+          12909061
+        ]
+      },
+      {
+        "description": "Highlighted walls overlap. One of them may be ignored when Revit finds room boundaries. Use Cut Geometry to embed one wall within the other.",
+        "element_ids": [
+          5534142,
+          5534163
+        ]
+      },
+      {
+        "description": "Highlighted walls overlap. One of them may be ignored when Revit finds room boundaries. Use Cut Geometry to embed one wall within the other.",
+        "element_ids": [
+          5534145,
+          5534163
+        ]
+      },
+      {
+        "description": "Highlighted walls overlap. One of them may be ignored when Revit finds room boundaries. Use Cut Geometry to embed one wall within the other.",
+        "element_ids": [
+          5534153,
+          5534163
+        ]
+      },
+      {
+        "description": "Highlighted walls overlap. One of them may be ignored when Revit finds room boundaries. Use Cut Geometry to embed one wall within the other.",
+        "element_ids": [
+          5534154,
+          5534163
+        ]
+      },
+      {
+        "description": "Highlighted walls overlap. One of them may be ignored when Revit finds room boundaries. Use Cut Geometry to embed one wall within the other.",
+        "element_ids": [
+          5534163,
+          10783492
+        ]
+      },
+      {
+        "description": "Highlighted floors overlap.",
+        "element_ids": [
+          5567963,
+          12449568
+        ]
+      },
+      {
+        "description": "Highlighted floors overlap.",
+        "element_ids": [
+          5567963,
+          12479916
+        ]
+      },
+      {
+        "description": "Highlighted floors overlap.",
+        "element_ids": [
+          5707485,
+          8121234
+        ]
+      },
+      {
+        "description": "Highlighted floors overlap.",
+        "element_ids": [
+          5912257,
+          14021456
+        ]
+      },
+      {
+        "description": "A wall and a room separation line overlap. One of them may be ignored when Revit finds room boundaries. Shorten or delete the room separation line to remove the overlap.",
+        "element_ids": [
+          7375075,
+          9970580
+        ]
+      },
+      {
+        "description": "Highlighted walls overlap. One of them may be ignored when Revit finds room boundaries. Use Cut Geometry to embed one wall within the other.",
+        "element_ids": [
+          9612020,
+          11290846
+        ]
+      },
+      {
+        "description": "Highlighted walls overlap. One of them may be ignored when Revit finds room boundaries. Use Cut Geometry to embed one wall within the other.",
+        "element_ids": [
+          9655242,
+          11733196
+        ]
+      },
+      {
+        "description": "Highlighted room separation lines overlap. One of them may be ignored when Revit finds room boundaries. Delete one of the lines.",
+        "element_ids": [
+          10490281,
+          10672348
+        ]
+      },
+      {
+        "description": "A wall and a room separation line overlap. One of them may be ignored when Revit finds room boundaries. Shorten or delete the room separation line to remove the overlap.",
+        "element_ids": [
+          10762375,
+          11398282
+        ]
+      },
+      {
+        "description": "Highlighted lines overlap. Lines may not form closed loops.",
+        "element_ids": [
+          8327325,
+          11482081,
+          11494524
+        ]
+      },
+      {
+        "description": "Highlighted lines overlap. Lines may not form closed loops.",
+        "element_ids": [
+          8327325,
+          11482089,
+          11494524
+        ]
+      },
+      {
+        "description": "Highlighted floors overlap.",
+        "element_ids": [
+          11560182,
+          12547722
+        ]
+      },
+      {
+        "description": "Insert conflicts with joined Wall.",
+        "element_ids": [
+          4986074,
+          9652602
+        ]
+      },
+      {
+        "description": "Insert conflicts with joined Wall.",
+        "element_ids": [
+          4986084,
+          11873316
+        ]
+      },
+      {
+        "description": "Insert conflicts with joined Wall.",
+        "element_ids": [
+          5713852,
+          7952407
+        ]
+      },
+      {
+        "description": "Room is not in a properly enclosed region",
+        "element_ids": [
+          4731388
+        ]
+      },
+      {
+        "description": "Room is not in a properly enclosed region",
+        "element_ids": [
+          4752069
+        ]
+      },
+      {
+        "description": "Room is not in a properly enclosed region",
+        "element_ids": [
+          4752228
+        ]
+      },
+      {
+        "description": "Room is not in a properly enclosed region",
+        "element_ids": [
+          4752583
+        ]
+      },
+      {
+        "description": "Room is not in a properly enclosed region",
+        "element_ids": [
+          4758372
+        ]
+      },
+      {
+        "description": "Room is not in a properly enclosed region",
+        "element_ids": [
+          4797126
+        ]
+      },
+      {
+        "description": "Room is not in a properly enclosed region",
+        "element_ids": [
+          6045541
+        ]
+      },
+      {
+        "description": "Room is not in a properly enclosed region",
+        "element_ids": [
+          7551018
+        ]
+      },
+      {
+        "description": "Multiple Rooms are in the same enclosed region.  The correct area and perimeter will be assigned to one Room and the others will display \"Redundant Room.\"  You should separate the regions, delete the extra Rooms, or move them into different regions.",
+        "element_ids": [
+          10079831,
+          11398285
+        ]
+      },
+      {
+        "description": "Room Tag is outside of its Room.  Enable Leader or move Room Tag within its Room.",
+        "element_ids": [
+          4886148
+        ]
+      },
+      {
+        "description": "Room Tag is outside of its Room.  Enable Leader or move Room Tag within its Room.",
+        "element_ids": [
+          4998201
+        ]
+      },
+      {
+        "description": "Room Tag is outside of its Room.  Enable Leader or move Room Tag within its Room.",
+        "element_ids": [
+          4998304
+        ]
+      },
+      {
+        "description": "Room Tag is outside of its Room.  Enable Leader or move Room Tag within its Room.",
+        "element_ids": [
+          4998395
+        ]
+      },
+      {
+        "description": "Room Tag is outside of its Room.  Enable Leader or move Room Tag within its Room.",
+        "element_ids": [
+          4999386
+        ]
+      },
+      {
+        "description": "Room Tag is outside of its Room.  Enable Leader or move Room Tag within its Room.",
+        "element_ids": [
+          6234931
+        ]
+      },
+      {
+        "description": "Room Volume is being calculated above the Upper Limit of this Room. Change the Upper Limit and Offset or change the height of volume calculations.",
+        "element_ids": [
+          5707777
+        ]
+      },
+      {
+        "description": "Area is not in a properly enclosed region",
+        "element_ids": [
+          4795802
+        ]
+      },
+      {
+        "description": "Area is not in a properly enclosed region",
+        "element_ids": [
+          6085116
+        ]
+      },
+      {
+        "description": "Area is not in a properly enclosed region",
+        "element_ids": [
+          6085143
+        ]
+      },
+      {
+        "description": "Area is not in a properly enclosed region",
+        "element_ids": [
+          6088248
+        ]
+      },
+      {
+        "description": "Area is not in a properly enclosed region",
+        "element_ids": [
+          6089128
+        ]
+      },
+      {
+        "description": "Area Tag is outside of its Area.  Enable Leader or move Area Tag within its Area.",
+        "element_ids": [
+          6076375
+        ]
+      },
+      {
+        "description": "Highlighted walls are attached to, but miss, the highlighted targets.",
+        "element_ids": [
+          5912257,
+          9672408
+        ]
+      },
+      {
+        "description": "Two elements were not automatically joined because one or both is not editable.",
+        "element_ids": [
+          8146463,
+          8872449
+        ]
+      },
+      {
+        "description": "Two elements were not automatically joined because one or both is not editable.",
+        "element_ids": [
+          8146470,
+          8872447
+        ]
+      },
+      {
+        "description": "Two elements were not automatically joined because one or both is not editable.",
+        "element_ids": [
+          8146473,
+          8872449
+        ]
+      },
+      {
+        "description": "A Corner Mullion has been placed at the end of a Curtain Wall that is not joined to another Curtain Wall. The angle of the Corner Mullion will default to 90 degrees.",
+        "element_ids": [
+          5032831,
+          5032848
+        ]
+      },
+      {
+        "description": "A Corner Mullion has been placed at the end of a Curtain Wall that is not joined to another Curtain Wall. The angle of the Corner Mullion will default to 90 degrees.",
+        "element_ids": [
+          5032831,
+          5032849
+        ]
+      },
+      {
+        "description": "A Corner Mullion has been placed at the end of a Curtain Wall that is not joined to another Curtain Wall. The angle of the Corner Mullion will default to 90 degrees.",
+        "element_ids": [
+          5032831,
+          5032856
+        ]
+      },
+      {
+        "description": "A Corner Mullion has been placed at the end of a Curtain Wall that is not joined to another Curtain Wall. The angle of the Corner Mullion will default to 90 degrees.",
+        "element_ids": [
+          5032831,
+          5032857
+        ]
+      },
+      {
+        "description": "A Corner Mullion has been placed at the end of a Curtain Wall that is not joined to another Curtain Wall. The angle of the Corner Mullion will default to 90 degrees.",
+        "element_ids": [
+          5032831,
+          5035274
+        ]
+      },
+      {
+        "description": "Highlighted elements are joined but do not intersect.",
+        "element_ids": [
+          4916428,
+          5053896
+        ]
+      },
+      {
+        "description": "Elements do not intersect.",
+        "element_ids": [
+          9525004,
+          13688012
+        ]
+      },
+      {
+        "description": "Elements do not intersect.",
+        "element_ids": [
+          9525004,
+          13688014
+        ]
+      },
+      {
+        "description": "Elements do not intersect.",
+        "element_ids": [
+          9614156,
+          13285815
+        ]
+      },
+      {
+        "description": "Highlighted elements are joined but do not intersect.",
+        "element_ids": [
+          11679574,
+          13685480
+        ]
+      },
+      {
+        "description": "Elements do not intersect.",
+        "element_ids": [
+          9525004,
+          13688012
+        ]
+      },
+      {
+        "description": "Elements do not intersect.",
+        "element_ids": [
+          9525004,
+          13688014
+        ]
+      },
+      {
+        "description": "Instance of in-place family is not cutting host.",
+        "element_ids": [
+          4822790,
+          13573724
+        ]
+      },
+      {
+        "description": "Instance of in-place family is not cutting host.",
+        "element_ids": [
+          5714058,
+          11873379
+        ]
+      },
+      {
+        "description": "Could not create Wall Sweep. Sweep position is outside of its wall. Please check sweep parameters.",
+        "element_ids": [
+          5534156
+        ]
+      },
+      {
+        "description": "Could not create Wall Sweep. All the segments are of zero length.",
+        "element_ids": [
+          5534152
+        ]
+      },
+      {
+        "description": "Some panels in this curtain system are slightly malformed.  The problem is most likely ignorable. This problem usually occurs when a panel or parts of a panel have been divided so that they are very narrow.  To better see the malformed panels, temporarily hide the mullion category and set display of lines to \"thin lines\" (using the command on the view menu).",
+        "element_ids": [
+          3372597,
+          3372896
+        ]
+      },
+      {
+        "description": "Some panels in this curtain system are slightly malformed.  The problem is most likely ignorable. This problem usually occurs when a panel or parts of a panel have been divided so that they are very narrow.  To better see the malformed panels, temporarily hide the mullion category and set display of lines to \"thin lines\" (using the command on the view menu).",
+        "element_ids": [
+          3372597,
+          3372907
+        ]
+      },
+      {
+        "description": "Some panels in this curtain system are slightly malformed.  The problem is most likely ignorable. This problem usually occurs when a panel or parts of a panel have been divided so that they are very narrow.  To better see the malformed panels, temporarily hide the mullion category and set display of lines to \"thin lines\" (using the command on the view menu).",
+        "element_ids": [
+          3372597,
+          3372944
+        ]
+      },
+      {
+        "description": "Some panels in this curtain system are slightly malformed.  The problem is most likely ignorable. This problem usually occurs when a panel or parts of a panel have been divided so that they are very narrow.  To better see the malformed panels, temporarily hide the mullion category and set display of lines to \"thin lines\" (using the command on the view menu).",
+        "element_ids": [
+          3372597,
+          3372948
+        ]
+      },
+      {
+        "description": "Curve-Based Family is slightly off axis and may cause inaccuracies.",
+        "element_ids": [
+          6002020
+        ]
+      },
+      {
+        "description": "Area separation line is slightly off axis and may cause inaccuracies.",
+        "element_ids": [
+          6059915
+        ]
+      },
+      {
+        "description": "Area separation line is slightly off axis and may cause inaccuracies.",
+        "element_ids": [
+          6059963
+        ]
+      },
+      {
+        "description": "Stair bottom end exceeds or cannot reach the base elevation of the stair. Add/remove risers at the bottom end by control or change the stair run's \"Relative Base Height\" parameter in the properties palette.",
+        "element_ids": [
+          6496567
+        ]
+      },
+      {
+        "description": "Stair bottom end exceeds or cannot reach the base elevation of the stair. Add/remove risers at the bottom end by control or change the stair run's \"Relative Base Height\" parameter in the properties palette.",
+        "element_ids": [
+          9301401
+        ]
+      },
+      {
+        "description": "The rail is not continuous.  Breaks in the rail usually occur at sharply-angled transitions. To fix the problem, try:\r\n - Changing the transition style in the rail type properties, or\r\n - Modifying the railing path at the transition.",
+        "element_ids": [
+          10879708
+        ]
+      },
+      {
+        "description": "The rail is not continuous.  Breaks in the rail usually occur at sharply-angled transitions. To fix the problem, try:\r\n - Changing the transition style in the rail type properties, or\r\n - Modifying the railing path at the transition.",
+        "element_ids": [
+          10879861
+        ]
+      },
+      {
+        "description": "The rail is not continuous.  Breaks in the rail usually occur at sharply-angled transitions. To fix the problem, try:\r\n - Changing the transition style in the rail type properties, or\r\n - Modifying the railing path at the transition.",
+        "element_ids": [
+          10879987
+        ]
+      },
+      {
+        "description": "The rail is not continuous.  Breaks in the rail usually occur at sharply-angled transitions. To fix the problem, try:\r\n - Changing the transition style in the rail type properties, or\r\n - Modifying the railing path at the transition.",
+        "element_ids": [
+          10880123
+        ]
+      },
+      {
+        "description": "Stair top end exceeds or cannot reach the top elevation of the stair. Add/remove risers at the top end by control or change the stair run's \"Relative Top Height\" parameter in the properties palette.",
+        "element_ids": [
+          3230172,
+          3290388
+        ]
+      },
+      {
+        "description": "Stair top end exceeds or cannot reach the top elevation of the stair. Add/remove risers at the top end by control or change the stair run's \"Relative Top Height\" parameter in the properties palette.",
+        "element_ids": [
+          6086607
+        ]
+      },
+      {
+        "description": "Stair top end exceeds or cannot reach the top elevation of the stair. Add/remove risers at the top end by control or change the stair run's \"Relative Top Height\" parameter in the properties palette.",
+        "element_ids": [
+          6496567
+        ]
+      }
+    ]
+  },
+  "error": null,
+  "cancel_requested": false,
+  "created_utc": "2026-11-12T21:28:52.1017186Z",
+  "finished_utc": "2026-11-12T21:28:52.5685930Z",
+  "elapsed_ms": 462.4979,
+  "transaction_status": "committed"
+}

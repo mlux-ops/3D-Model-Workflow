@@ -1,0 +1,14 @@
+<div id="mc-loading" role="status" aria-live="polite"><div class="mc-loading-card">
+ <p>1529 Wieland — Bathroom material viewer</p>
+ <div class="mc-loading-rule"></div>
+ <p id="mc-loading-text">Unpacking 26 native room boundaries and 17 product images. Everything is embedded; no connection is needed.</p>
+</div></div>
+<script>
+(function(){
+ function fail(msg){var v=document.getElementById('mc-loading');if(!v||v.classList.contains('done'))return;
+  v.classList.add('failed');document.getElementById('mc-loading-text').textContent=
+  'The viewer could not start: '+msg+'. Open this file in a current Chrome or Edge with WebGL enabled.';}
+ window.addEventListener('error',function(e){fail(e.message||'script error');});
+ window.addEventListener('unhandledrejection',function(e){fail(String(e.reason&&e.reason.message||e.reason));});
+})();
+</script>

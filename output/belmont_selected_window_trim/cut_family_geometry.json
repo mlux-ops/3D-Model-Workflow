@@ -1,0 +1,405 @@
+{
+  "schema_version": 1,
+  "operation_id": "5f06747f-352a-45c2-9635-0b1740feec77",
+  "status": "completed",
+  "request": {
+    "arguments": {},
+    "document": {
+      "session_id": "8f87b768-9a92-4844-aacb-15f11fbbe2ac"
+    },
+    "operation": "family.geometry.inspect",
+    "operation_id": "5f06747f-352a-45c2-9635-0b1740feec77",
+    "preconditions": {
+      "allow_existing_document": true,
+      "is_family": true
+    },
+    "schema_version": 1
+  },
+  "result": {
+    "units": "feet",
+    "volume_units": "cubic_feet",
+    "forms": [
+      {
+        "element": {
+          "document_session_id": "8f87b768-9a92-4844-aacb-15f11fbbe2ac",
+          "id": 2969,
+          "unique_id": "ca3817d8-9132-45e1-9c24-5beb19425010-00000b99",
+          "name": "Void Extrusion",
+          "category": null,
+          "category_id": null,
+          "type_id": -1,
+          "pinned": false,
+          "group_id": -1,
+          "level_id": -1,
+          "location": null,
+          "bounds": {
+            "min": [
+              -1.5,
+              -0.5,
+              -0.08333333333333393
+            ],
+            "max": [
+              1.5,
+              0.5,
+              9.5
+            ]
+          },
+          "host_id": null,
+          "family_name": null,
+          "placement_type": null,
+          "view_family": null,
+          "view_type": null,
+          "elevation": null
+        },
+        "is_solid": false,
+        "geometry": {
+          "bounds": {
+            "min": [
+              -1.5,
+              -0.5,
+              -0.08333333333333393
+            ],
+            "max": [
+              1.5,
+              0.5,
+              9.5
+            ],
+            "transform_origin": [
+              0,
+              0,
+              0
+            ],
+            "transform_x": [
+              1,
+              0,
+              0
+            ],
+            "transform_y": [
+              0,
+              1,
+              0
+            ],
+            "transform_z": [
+              0,
+              0,
+              1
+            ]
+          },
+          "solids": [
+            {
+              "volume": -28.750000000000004,
+              "faces": 6,
+              "edges": 12
+            }
+          ]
+        }
+      },
+      {
+        "element": {
+          "document_session_id": "8f87b768-9a92-4844-aacb-15f11fbbe2ac",
+          "id": 2976,
+          "unique_id": "ca3817d8-9132-45e1-9c24-5beb19425010-00000ba0",
+          "name": "Extrusion",
+          "category": "Left panel border 1",
+          "category_id": 2981,
+          "type_id": -1,
+          "pinned": false,
+          "group_id": -1,
+          "level_id": -1,
+          "location": null,
+          "bounds": {
+            "min": [
+              -1.5416666666666667,
+              -0.06575520833388993,
+              0.7083333333333357
+            ],
+            "max": [
+              -1.5,
+              0,
+              2.2467191400818365
+            ]
+          },
+          "host_id": null,
+          "family_name": null,
+          "placement_type": null,
+          "view_family": null,
+          "view_type": null,
+          "elevation": null
+        },
+        "is_solid": true,
+        "geometry": {
+          "bounds": {
+            "min": [
+              -1.5416666666666667,
+              -0.06575520833388993,
+              0.7083333333333357
+            ],
+            "max": [
+              -1.5,
+              0,
+              2.2467191400818365
+            ],
+            "transform_origin": [
+              0,
+              0,
+              0
+            ],
+            "transform_x": [
+              1,
+              0,
+              0
+            ],
+            "transform_y": [
+              0,
+              1,
+              0
+            ],
+            "transform_z": [
+              0,
+              0,
+              1
+            ]
+          },
+          "solids": [
+            {
+              "volume": 0.004214869967526966,
+              "faces": 6,
+              "edges": 12
+            }
+          ]
+        }
+      },
+      {
+        "element": {
+          "document_session_id": "8f87b768-9a92-4844-aacb-15f11fbbe2ac",
+          "id": 2986,
+          "unique_id": "ca3817d8-9132-45e1-9c24-5beb19425010-00000baa",
+          "name": "Extrusion",
+          "category": "Left panel border 2",
+          "category_id": 2991,
+          "type_id": -1,
+          "pinned": false,
+          "group_id": -1,
+          "level_id": -1,
+          "location": null,
+          "bounds": {
+            "min": [
+              -1.5416666666666667,
+              -0.06575520833388993,
+              2.2883858067484724
+            ],
+            "max": [
+              -1.5,
+              0,
+              9.041666666666671
+            ]
+          },
+          "host_id": null,
+          "family_name": null,
+          "placement_type": null,
+          "view_family": null,
+          "view_type": null,
+          "elevation": null
+        },
+        "is_solid": true,
+        "geometry": {
+          "bounds": {
+            "min": [
+              -1.5416666666666667,
+              -0.06575520833388993,
+              2.2883858067484724
+            ],
+            "max": [
+              -1.5,
+              0,
+              9.041666666666671
+            ],
+            "transform_origin": [
+              0,
+              0,
+              0
+            ],
+            "transform_x": [
+              1,
+              0,
+              0
+            ],
+            "transform_y": [
+              0,
+              1,
+              0
+            ],
+            "transform_z": [
+              0,
+              0,
+              1
+            ]
+          },
+          "solids": [
+            {
+              "volume": 0.018502641245049717,
+              "faces": 6,
+              "edges": 12
+            }
+          ]
+        }
+      },
+      {
+        "element": {
+          "document_session_id": "8f87b768-9a92-4844-aacb-15f11fbbe2ac",
+          "id": 2996,
+          "unique_id": "ca3817d8-9132-45e1-9c24-5beb19425010-00000bb4",
+          "name": "Extrusion",
+          "category": "Right panel border 1",
+          "category_id": 3001,
+          "type_id": -1,
+          "pinned": false,
+          "group_id": -1,
+          "level_id": -1,
+          "location": null,
+          "bounds": {
+            "min": [
+              1.5,
+              -0.06575520833388993,
+              0.7083333333333357
+            ],
+            "max": [
+              1.5416666666666667,
+              0,
+              2.2467191400818365
+            ]
+          },
+          "host_id": null,
+          "family_name": null,
+          "placement_type": null,
+          "view_family": null,
+          "view_type": null,
+          "elevation": null
+        },
+        "is_solid": true,
+        "geometry": {
+          "bounds": {
+            "min": [
+              1.5,
+              -0.06575520833388993,
+              0.7083333333333357
+            ],
+            "max": [
+              1.5416666666666667,
+              0,
+              2.2467191400818365
+            ],
+            "transform_origin": [
+              0,
+              0,
+              0
+            ],
+            "transform_x": [
+              1,
+              0,
+              0
+            ],
+            "transform_y": [
+              0,
+              1,
+              0
+            ],
+            "transform_z": [
+              0,
+              0,
+              1
+            ]
+          },
+          "solids": [
+            {
+              "volume": 0.004214869967526966,
+              "faces": 6,
+              "edges": 12
+            }
+          ]
+        }
+      },
+      {
+        "element": {
+          "document_session_id": "8f87b768-9a92-4844-aacb-15f11fbbe2ac",
+          "id": 3006,
+          "unique_id": "ca3817d8-9132-45e1-9c24-5beb19425010-00000bbe",
+          "name": "Extrusion",
+          "category": "Right panel border 2",
+          "category_id": 3011,
+          "type_id": -1,
+          "pinned": false,
+          "group_id": -1,
+          "level_id": -1,
+          "location": null,
+          "bounds": {
+            "min": [
+              1.5,
+              -0.06575520833388993,
+              2.2883858067484724
+            ],
+            "max": [
+              1.5416666666666667,
+              0,
+              9.041666666666671
+            ]
+          },
+          "host_id": null,
+          "family_name": null,
+          "placement_type": null,
+          "view_family": null,
+          "view_type": null,
+          "elevation": null
+        },
+        "is_solid": true,
+        "geometry": {
+          "bounds": {
+            "min": [
+              1.5,
+              -0.06575520833388993,
+              2.2883858067484724
+            ],
+            "max": [
+              1.5416666666666667,
+              0,
+              9.041666666666671
+            ],
+            "transform_origin": [
+              0,
+              0,
+              0
+            ],
+            "transform_x": [
+              1,
+              0,
+              0
+            ],
+            "transform_y": [
+              0,
+              1,
+              0
+            ],
+            "transform_z": [
+              0,
+              0,
+              1
+            ]
+          },
+          "solids": [
+            {
+              "volume": 0.018502641245049717,
+              "faces": 6,
+              "edges": 12
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "error": null,
+  "cancel_requested": false,
+  "created_utc": "2026-11-12T21:48:49.0903877Z",
+  "finished_utc": "2026-11-12T21:48:49.1108697Z",
+  "elapsed_ms": 14.4321,
+  "transaction_status": "not_started"
+}

@@ -1,0 +1,35 @@
+{
+  "schema_version": 1,
+  "operation_id": "ce97750f-e5c3-4adb-86ea-6b6f337a7cc8",
+  "status": "completed",
+  "request": {
+    "arguments": {
+      "category": "OST_Casework",
+      "limit": 500,
+      "name_contains": "base"
+    },
+    "document": {
+      "path": "Autodesk Docs://25 012 - 651 W. Belmont/25-012 651 W. Belmont_Issue for Construction_.rvt",
+      "session_id": "67d4a78a-e799-4e50-ab09-4ec22a83da30"
+    },
+    "operation": "elements.query",
+    "operation_id": "ce97750f-e5c3-4adb-86ea-6b6f337a7cc8",
+    "preconditions": {
+      "expected_title": "25-012 651 W. Belmont_Issue for Construction_",
+      "is_family": false
+    },
+    "schema_version": 1
+  },
+  "result": {
+    "items": [],
+    "offset": 0,
+    "next_offset": null,
+    "units": "internal feet"
+  },
+  "error": null,
+  "cancel_requested": false,
+  "created_utc": "2026-11-12T21:24:45.0185153Z",
+  "finished_utc": "2026-11-12T21:24:45.0828792Z",
+  "elapsed_ms": 59.7596,
+  "transaction_status": "not_started"
+}

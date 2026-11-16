@@ -1,0 +1,68 @@
+{
+  "schema_version": 1,
+  "operation_id": "d41b998f-8e38-4dae-832c-08082ffc0cac",
+  "status": "completed",
+  "request": {
+    "arguments": {
+      "category": "OST_Casework",
+      "limit": 100,
+      "name_contains": "Trim",
+      "types": true
+    },
+    "document": {
+      "path": "Autodesk Docs://25 012 - 651 W. Belmont/25-012 651 W. Belmont_Issue for Construction_.rvt",
+      "session_id": "67d4a78a-e799-4e50-ab09-4ec22a83da30"
+    },
+    "operation": "elements.query",
+    "operation_id": "d41b998f-8e38-4dae-832c-08082ffc0cac",
+    "preconditions": {
+      "expected_title": "25-012 651 W. Belmont_Issue for Construction_",
+      "is_family": false
+    },
+    "schema_version": 1
+  },
+  "result": {
+    "items": [
+      {
+        "document_session_id": "67d4a78a-e799-4e50-ab09-4ec22a83da30",
+        "id": 13460483,
+        "unique_id": "79604fd5-7f98-4516-a061-568bee79594d-00cd6403",
+        "name": "Trim",
+        "category": "Casework",
+        "category_id": -2001000,
+        "type_id": -1,
+        "pinned": false,
+        "group_id": -1,
+        "level_id": -1,
+        "location": null,
+        "bounds": {
+          "min": [
+            -4,
+            -0.23958333333332787,
+            0
+          ],
+          "max": [
+            4,
+            0.23350287008107706,
+            9.352410038865418
+          ]
+        },
+        "host_id": null,
+        "family_name": "SHB_Window_Trim",
+        "placement_type": "OneLevelBased",
+        "view_family": null,
+        "view_type": null,
+        "elevation": null
+      }
+    ],
+    "offset": 0,
+    "next_offset": null,
+    "units": "internal feet"
+  },
+  "error": null,
+  "cancel_requested": false,
+  "created_utc": "2026-11-12T21:26:02.4517848Z",
+  "finished_utc": "2026-11-12T21:26:02.5291014Z",
+  "elapsed_ms": 70.9798,
+  "transaction_status": "not_started"
+}

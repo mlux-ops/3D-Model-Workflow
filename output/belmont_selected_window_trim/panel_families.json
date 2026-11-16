@@ -1,0 +1,56 @@
+{
+  "schema_version": 1,
+  "operation_id": "189699eb-4de8-47fa-b645-fd0ac5ebb56a",
+  "status": "completed",
+  "request": {
+    "arguments": {
+      "class": "Family",
+      "limit": 30,
+      "name_contains": "Casework 45"
+    },
+    "document": {
+      "path": "Autodesk Docs://25 012 - 651 W. Belmont/25-012 651 W. Belmont_Issue for Construction_.rvt",
+      "session_id": "67d4a78a-e799-4e50-ab09-4ec22a83da30"
+    },
+    "operation": "elements.query",
+    "operation_id": "189699eb-4de8-47fa-b645-fd0ac5ebb56a",
+    "preconditions": {
+      "expected_title": "25-012 651 W. Belmont_Issue for Construction_",
+      "is_family": false
+    },
+    "schema_version": 1
+  },
+  "result": {
+    "items": [
+      {
+        "document_session_id": "67d4a78a-e799-4e50-ab09-4ec22a83da30",
+        "id": 13136352,
+        "unique_id": "a90217dd-fa42-44eb-bd0a-2c07a91eab57-00c871e0",
+        "name": "Casework 45",
+        "category": null,
+        "category_id": null,
+        "type_id": -1,
+        "pinned": false,
+        "group_id": -1,
+        "level_id": -1,
+        "location": null,
+        "bounds": null,
+        "host_id": null,
+        "family_name": null,
+        "placement_type": null,
+        "view_family": null,
+        "view_type": null,
+        "elevation": null
+      }
+    ],
+    "offset": 0,
+    "next_offset": null,
+    "units": "internal feet"
+  },
+  "error": null,
+  "cancel_requested": false,
+  "created_utc": "2026-11-12T21:27:47.5675859Z",
+  "finished_utc": "2026-11-12T21:27:47.6196393Z",
+  "elapsed_ms": 48.2203,
+  "transaction_status": "not_started"
+}

@@ -1,0 +1,973 @@
+{
+  "schema_version": 1,
+  "operation_id": "5dd7984b-db40-484a-93cd-6cfa356aea66",
+  "status": "completed",
+  "request": {
+    "arguments": {},
+    "document": {
+      "session_id": "8f87b768-9a92-4844-aacb-15f11fbbe2ac"
+    },
+    "operation": "family.inspect",
+    "operation_id": "5dd7984b-db40-484a-93cd-6cfa356aea66",
+    "preconditions": {
+      "allow_existing_document": true,
+      "is_family": true
+    },
+    "schema_version": 1
+  },
+  "result": {
+    "document": {
+      "session_id": "8f87b768-9a92-4844-aacb-15f11fbbe2ac",
+      "title": "Family1",
+      "path": "",
+      "is_family": true,
+      "is_read_only": false,
+      "is_modified": true,
+      "is_workshared": false
+    },
+    "family": {
+      "document_session_id": "8f87b768-9a92-4844-aacb-15f11fbbe2ac",
+      "id": 17,
+      "unique_id": "b6735d75-895e-11d3-a7e4-00105aa73639-00000011",
+      "name": "",
+      "category": null,
+      "category_id": null,
+      "type_id": -1,
+      "pinned": false,
+      "group_id": -1,
+      "level_id": -1,
+      "location": null,
+      "bounds": null,
+      "host_id": null,
+      "family_name": null,
+      "placement_type": null,
+      "view_family": null,
+      "view_type": null,
+      "elevation": null
+    },
+    "category": "Casework",
+    "category_id": -2001000,
+    "placement_type": "OneLevelBased",
+    "IsEditable": false,
+    "current_type": "Fourth-floor primary bedroom window adaptation",
+    "parameters": [
+      {
+        "id": -1140422,
+        "name": "Keynote",
+        "storage_type": "String",
+        "data_type": "autodesk.spec:spec.string-2.0.0",
+        "group": "autodesk.parameter.group:identityData-1.0.0",
+        "instance": false,
+        "read_only": false,
+        "shared": false,
+        "reporting": false,
+        "formula": null
+      },
+      {
+        "id": 2966,
+        "name": "Panel Molding Thickness",
+        "storage_type": "Double",
+        "data_type": "autodesk.spec.aec:length-2.0.1",
+        "group": "autodesk.parameter.group:dimensions-1.0.0",
+        "instance": false,
+        "read_only": false,
+        "shared": false,
+        "reporting": false,
+        "formula": null
+      },
+      {
+        "id": -1010109,
+        "name": "Model",
+        "storage_type": "String",
+        "data_type": "autodesk.spec:spec.string-2.0.0",
+        "group": "autodesk.parameter.group:identityData-1.0.0",
+        "instance": false,
+        "read_only": false,
+        "shared": false,
+        "reporting": false,
+        "formula": null
+      },
+      {
+        "id": -1019015,
+        "name": "Export Type to IFC As",
+        "storage_type": "String",
+        "data_type": "autodesk.spec:spec.string-2.0.0",
+        "group": "autodesk.parameter.group:ifc-1.0.0",
+        "instance": false,
+        "read_only": false,
+        "shared": false,
+        "reporting": false,
+        "formula": null
+      },
+      {
+        "id": -1001207,
+        "name": "Construction Type",
+        "storage_type": "String",
+        "data_type": "autodesk.spec:spec.string-2.0.0",
+        "group": "autodesk.parameter.group:construction-1.0.0",
+        "instance": false,
+        "read_only": false,
+        "shared": false,
+        "reporting": false,
+        "formula": null
+      },
+      {
+        "id": -1001205,
+        "name": "Cost",
+        "storage_type": "Double",
+        "data_type": "autodesk.spec.measurable:currency-2.0.0",
+        "group": "autodesk.parameter.group:identityData-1.0.0",
+        "instance": false,
+        "read_only": false,
+        "shared": false,
+        "reporting": false,
+        "formula": null
+      },
+      {
+        "id": -1152384,
+        "name": "Type Image",
+        "storage_type": "ElementId",
+        "data_type": "autodesk.spec.reference:image-1.0.0",
+        "group": "autodesk.parameter.group:identityData-1.0.0",
+        "instance": false,
+        "read_only": false,
+        "shared": false,
+        "reporting": false,
+        "formula": null
+      },
+      {
+        "id": -1010003,
+        "name": "Depth",
+        "storage_type": "Double",
+        "data_type": "autodesk.spec.aec:length-2.0.1",
+        "group": "autodesk.parameter.group:dimensions-1.0.0",
+        "instance": false,
+        "read_only": false,
+        "shared": false,
+        "reporting": false,
+        "formula": null
+      },
+      {
+        "id": 2962,
+        "name": "Trim Finish",
+        "storage_type": "ElementId",
+        "data_type": "autodesk.spec.aec:material-1.0.0",
+        "group": "autodesk.parameter.group:materials-1.0.0",
+        "instance": true,
+        "read_only": false,
+        "shared": false,
+        "reporting": false,
+        "formula": null
+      },
+      {
+        "id": -1001208,
+        "name": "Finish",
+        "storage_type": "String",
+        "data_type": "autodesk.spec:spec.string-2.0.0",
+        "group": "autodesk.parameter.group:materials-1.0.0",
+        "instance": false,
+        "read_only": false,
+        "shared": false,
+        "reporting": false,
+        "formula": null
+      },
+      {
+        "id": -1001300,
+        "name": "Height",
+        "storage_type": "Double",
+        "data_type": "autodesk.spec.aec:length-2.0.1",
+        "group": "autodesk.parameter.group:dimensions-1.0.0",
+        "instance": false,
+        "read_only": false,
+        "shared": false,
+        "reporting": false,
+        "formula": null
+      },
+      {
+        "id": -1001301,
+        "name": "Width",
+        "storage_type": "Double",
+        "data_type": "autodesk.spec.aec:length-2.0.1",
+        "group": "autodesk.parameter.group:dimensions-1.0.0",
+        "instance": false,
+        "read_only": false,
+        "shared": false,
+        "reporting": false,
+        "formula": null
+      },
+      {
+        "id": -1010104,
+        "name": "URL",
+        "storage_type": "String",
+        "data_type": "autodesk.spec.string:url-2.0.0",
+        "group": "autodesk.parameter.group:identityData-1.0.0",
+        "instance": false,
+        "read_only": false,
+        "shared": false,
+        "reporting": false,
+        "formula": null
+      },
+      {
+        "id": -1019017,
+        "name": "Type IFC Predefined Type",
+        "storage_type": "String",
+        "data_type": "autodesk.spec:spec.string-2.0.0",
+        "group": "autodesk.parameter.group:ifc-1.0.0",
+        "instance": false,
+        "read_only": false,
+        "shared": false,
+        "reporting": false,
+        "formula": null
+      },
+      {
+        "id": -1002500,
+        "name": "Assembly Code",
+        "storage_type": "String",
+        "data_type": "autodesk.spec:spec.string-2.0.0",
+        "group": "autodesk.parameter.group:identityData-1.0.0",
+        "instance": false,
+        "read_only": false,
+        "shared": false,
+        "reporting": false,
+        "formula": null
+      },
+      {
+        "id": -1010105,
+        "name": "Type Comments",
+        "storage_type": "String",
+        "data_type": "autodesk.spec:spec.string-2.0.0",
+        "group": "autodesk.parameter.group:identityData-1.0.0",
+        "instance": false,
+        "read_only": false,
+        "shared": false,
+        "reporting": false,
+        "formula": null
+      },
+      {
+        "id": 2964,
+        "name": "Opening Cut Top",
+        "storage_type": "Double",
+        "data_type": "autodesk.spec.aec:length-2.0.1",
+        "group": "autodesk.parameter.group:dimensions-1.0.0",
+        "instance": false,
+        "read_only": false,
+        "shared": false,
+        "reporting": false,
+        "formula": null
+      },
+      {
+        "id": 2965,
+        "name": "Opening Cut Bottom",
+        "storage_type": "Double",
+        "data_type": "autodesk.spec.aec:length-2.0.1",
+        "group": "autodesk.parameter.group:dimensions-1.0.0",
+        "instance": false,
+        "read_only": false,
+        "shared": false,
+        "reporting": false,
+        "formula": null
+      },
+      {
+        "id": -1154647,
+        "name": "Default Elevation",
+        "storage_type": "Double",
+        "data_type": "autodesk.spec.aec:length-2.0.1",
+        "group": "autodesk.parameter.group:constraints-1.0.0",
+        "instance": false,
+        "read_only": false,
+        "shared": false,
+        "reporting": false,
+        "formula": null
+      },
+      {
+        "id": -1010103,
+        "name": "Description",
+        "storage_type": "String",
+        "data_type": "autodesk.spec:spec.string-2.0.0",
+        "group": "autodesk.parameter.group:identityData-1.0.0",
+        "instance": false,
+        "read_only": false,
+        "shared": false,
+        "reporting": false,
+        "formula": null
+      },
+      {
+        "id": -1010108,
+        "name": "Manufacturer",
+        "storage_type": "String",
+        "data_type": "autodesk.spec:spec.string-2.0.0",
+        "group": "autodesk.parameter.group:identityData-1.0.0",
+        "instance": false,
+        "read_only": false,
+        "shared": false,
+        "reporting": false,
+        "formula": null
+      }
+    ],
+    "types": [
+      {
+        "name": "Fourth-floor primary bedroom window adaptation",
+        "values": [
+          {
+            "parameter": {
+              "id": -1140422,
+              "name": "Keynote",
+              "storage_type": "String",
+              "data_type": "autodesk.spec:spec.string-2.0.0",
+              "group": "autodesk.parameter.group:identityData-1.0.0",
+              "instance": false,
+              "read_only": false,
+              "shared": false,
+              "reporting": false,
+              "formula": null
+            },
+            "value": null
+          },
+          {
+            "parameter": {
+              "id": 2966,
+              "name": "Panel Molding Thickness",
+              "storage_type": "Double",
+              "data_type": "autodesk.spec.aec:length-2.0.1",
+              "group": "autodesk.parameter.group:dimensions-1.0.0",
+              "instance": false,
+              "read_only": false,
+              "shared": false,
+              "reporting": false,
+              "formula": null
+            },
+            "value": 0.06575520833388993
+          },
+          {
+            "parameter": {
+              "id": -1010109,
+              "name": "Model",
+              "storage_type": "String",
+              "data_type": "autodesk.spec:spec.string-2.0.0",
+              "group": "autodesk.parameter.group:identityData-1.0.0",
+              "instance": false,
+              "read_only": false,
+              "shared": false,
+              "reporting": false,
+              "formula": null
+            },
+            "value": null
+          },
+          {
+            "parameter": {
+              "id": -1019015,
+              "name": "Export Type to IFC As",
+              "storage_type": "String",
+              "data_type": "autodesk.spec:spec.string-2.0.0",
+              "group": "autodesk.parameter.group:ifc-1.0.0",
+              "instance": false,
+              "read_only": false,
+              "shared": false,
+              "reporting": false,
+              "formula": null
+            },
+            "value": null
+          },
+          {
+            "parameter": {
+              "id": -1001207,
+              "name": "Construction Type",
+              "storage_type": "String",
+              "data_type": "autodesk.spec:spec.string-2.0.0",
+              "group": "autodesk.parameter.group:construction-1.0.0",
+              "instance": false,
+              "read_only": false,
+              "shared": false,
+              "reporting": false,
+              "formula": null
+            },
+            "value": null
+          },
+          {
+            "parameter": {
+              "id": -1001205,
+              "name": "Cost",
+              "storage_type": "Double",
+              "data_type": "autodesk.spec.measurable:currency-2.0.0",
+              "group": "autodesk.parameter.group:identityData-1.0.0",
+              "instance": false,
+              "read_only": false,
+              "shared": false,
+              "reporting": false,
+              "formula": null
+            },
+            "value": null
+          },
+          {
+            "parameter": {
+              "id": -1152384,
+              "name": "Type Image",
+              "storage_type": "ElementId",
+              "data_type": "autodesk.spec.reference:image-1.0.0",
+              "group": "autodesk.parameter.group:identityData-1.0.0",
+              "instance": false,
+              "read_only": false,
+              "shared": false,
+              "reporting": false,
+              "formula": null
+            },
+            "value": null
+          },
+          {
+            "parameter": {
+              "id": -1010003,
+              "name": "Depth",
+              "storage_type": "Double",
+              "data_type": "autodesk.spec.aec:length-2.0.1",
+              "group": "autodesk.parameter.group:dimensions-1.0.0",
+              "instance": false,
+              "read_only": false,
+              "shared": false,
+              "reporting": false,
+              "formula": null
+            },
+            "value": null
+          },
+          {
+            "parameter": {
+              "id": 2962,
+              "name": "Trim Finish",
+              "storage_type": "ElementId",
+              "data_type": "autodesk.spec.aec:material-1.0.0",
+              "group": "autodesk.parameter.group:materials-1.0.0",
+              "instance": true,
+              "read_only": false,
+              "shared": false,
+              "reporting": false,
+              "formula": null
+            },
+            "value": 2963
+          },
+          {
+            "parameter": {
+              "id": -1001208,
+              "name": "Finish",
+              "storage_type": "String",
+              "data_type": "autodesk.spec:spec.string-2.0.0",
+              "group": "autodesk.parameter.group:materials-1.0.0",
+              "instance": false,
+              "read_only": false,
+              "shared": false,
+              "reporting": false,
+              "formula": null
+            },
+            "value": null
+          },
+          {
+            "parameter": {
+              "id": -1001300,
+              "name": "Height",
+              "storage_type": "Double",
+              "data_type": "autodesk.spec.aec:length-2.0.1",
+              "group": "autodesk.parameter.group:dimensions-1.0.0",
+              "instance": false,
+              "read_only": false,
+              "shared": false,
+              "reporting": false,
+              "formula": null
+            },
+            "value": null
+          },
+          {
+            "parameter": {
+              "id": -1001301,
+              "name": "Width",
+              "storage_type": "Double",
+              "data_type": "autodesk.spec.aec:length-2.0.1",
+              "group": "autodesk.parameter.group:dimensions-1.0.0",
+              "instance": false,
+              "read_only": false,
+              "shared": false,
+              "reporting": false,
+              "formula": null
+            },
+            "value": null
+          },
+          {
+            "parameter": {
+              "id": -1010104,
+              "name": "URL",
+              "storage_type": "String",
+              "data_type": "autodesk.spec.string:url-2.0.0",
+              "group": "autodesk.parameter.group:identityData-1.0.0",
+              "instance": false,
+              "read_only": false,
+              "shared": false,
+              "reporting": false,
+              "formula": null
+            },
+            "value": null
+          },
+          {
+            "parameter": {
+              "id": -1019017,
+              "name": "Type IFC Predefined Type",
+              "storage_type": "String",
+              "data_type": "autodesk.spec:spec.string-2.0.0",
+              "group": "autodesk.parameter.group:ifc-1.0.0",
+              "instance": false,
+              "read_only": false,
+              "shared": false,
+              "reporting": false,
+              "formula": null
+            },
+            "value": null
+          },
+          {
+            "parameter": {
+              "id": -1002500,
+              "name": "Assembly Code",
+              "storage_type": "String",
+              "data_type": "autodesk.spec:spec.string-2.0.0",
+              "group": "autodesk.parameter.group:identityData-1.0.0",
+              "instance": false,
+              "read_only": false,
+              "shared": false,
+              "reporting": false,
+              "formula": null
+            },
+            "value": null
+          },
+          {
+            "parameter": {
+              "id": -1010105,
+              "name": "Type Comments",
+              "storage_type": "String",
+              "data_type": "autodesk.spec:spec.string-2.0.0",
+              "group": "autodesk.parameter.group:identityData-1.0.0",
+              "instance": false,
+              "read_only": false,
+              "shared": false,
+              "reporting": false,
+              "formula": null
+            },
+            "value": null
+          },
+          {
+            "parameter": {
+              "id": 2964,
+              "name": "Opening Cut Top",
+              "storage_type": "Double",
+              "data_type": "autodesk.spec.aec:length-2.0.1",
+              "group": "autodesk.parameter.group:dimensions-1.0.0",
+              "instance": false,
+              "read_only": false,
+              "shared": false,
+              "reporting": false,
+              "formula": null
+            },
+            "value": 9.5
+          },
+          {
+            "parameter": {
+              "id": 2965,
+              "name": "Opening Cut Bottom",
+              "storage_type": "Double",
+              "data_type": "autodesk.spec.aec:length-2.0.1",
+              "group": "autodesk.parameter.group:dimensions-1.0.0",
+              "instance": false,
+              "read_only": false,
+              "shared": false,
+              "reporting": false,
+              "formula": null
+            },
+            "value": -0.08333333333333333
+          },
+          {
+            "parameter": {
+              "id": -1154647,
+              "name": "Default Elevation",
+              "storage_type": "Double",
+              "data_type": "autodesk.spec.aec:length-2.0.1",
+              "group": "autodesk.parameter.group:constraints-1.0.0",
+              "instance": false,
+              "read_only": false,
+              "shared": false,
+              "reporting": false,
+              "formula": null
+            },
+            "value": 0
+          },
+          {
+            "parameter": {
+              "id": -1010103,
+              "name": "Description",
+              "storage_type": "String",
+              "data_type": "autodesk.spec:spec.string-2.0.0",
+              "group": "autodesk.parameter.group:identityData-1.0.0",
+              "instance": false,
+              "read_only": false,
+              "shared": false,
+              "reporting": false,
+              "formula": null
+            },
+            "value": null
+          },
+          {
+            "parameter": {
+              "id": -1010108,
+              "name": "Manufacturer",
+              "storage_type": "String",
+              "data_type": "autodesk.spec:spec.string-2.0.0",
+              "group": "autodesk.parameter.group:identityData-1.0.0",
+              "instance": false,
+              "read_only": false,
+              "shared": false,
+              "reporting": false,
+              "formula": null
+            },
+            "value": null
+          }
+        ]
+      }
+    ],
+    "nested_families": [
+      {
+        "document_session_id": "8f87b768-9a92-4844-aacb-15f11fbbe2ac",
+        "id": 547,
+        "unique_id": "60a06eed-8e4e-49c8-9a49-a8416ab67fbc-00000223",
+        "name": "Section Head - Min",
+        "category": null,
+        "category_id": null,
+        "type_id": -1,
+        "pinned": false,
+        "group_id": -1,
+        "level_id": -1,
+        "location": null,
+        "bounds": null,
+        "host_id": null,
+        "family_name": null,
+        "placement_type": null,
+        "view_family": null,
+        "view_type": null,
+        "elevation": null
+      },
+      {
+        "document_session_id": "8f87b768-9a92-4844-aacb-15f11fbbe2ac",
+        "id": 748,
+        "unique_id": "7d6aba66-6633-4d89-902e-f41136c2dc7b-000002ec",
+        "name": "Level Head - Upgrade",
+        "category": null,
+        "category_id": null,
+        "type_id": -1,
+        "pinned": false,
+        "group_id": -1,
+        "level_id": -1,
+        "location": null,
+        "bounds": null,
+        "host_id": null,
+        "family_name": null,
+        "placement_type": null,
+        "view_family": null,
+        "view_type": null,
+        "elevation": null
+      },
+      {
+        "document_session_id": "8f87b768-9a92-4844-aacb-15f11fbbe2ac",
+        "id": 927,
+        "unique_id": "7d6aba66-6633-4d89-902e-f41136c2dc7b-0000039f",
+        "name": "Section Tail - Upgrade",
+        "category": null,
+        "category_id": null,
+        "type_id": -1,
+        "pinned": false,
+        "group_id": -1,
+        "level_id": -1,
+        "location": null,
+        "bounds": null,
+        "host_id": null,
+        "family_name": null,
+        "placement_type": null,
+        "view_family": null,
+        "view_type": null,
+        "elevation": null
+      }
+    ],
+    "views": [
+      {
+        "element": {
+          "document_session_id": "8f87b768-9a92-4844-aacb-15f11fbbe2ac",
+          "id": 23,
+          "unique_id": "b6735d75-895e-11d3-a7e4-00105aa73639-00000017",
+          "name": "Ref. Level",
+          "category": "Views",
+          "category_id": -2000279,
+          "type_id": 1134,
+          "pinned": false,
+          "group_id": -1,
+          "level_id": -1,
+          "location": null,
+          "bounds": {
+            "min": [
+              -100,
+              -100,
+              -100
+            ],
+            "max": [
+              100,
+              100,
+              0
+            ]
+          },
+          "host_id": null,
+          "family_name": null,
+          "placement_type": null,
+          "view_family": null,
+          "view_type": "FloorPlan",
+          "elevation": null
+        },
+        "view_type": "FloorPlan"
+      },
+      {
+        "element": {
+          "document_session_id": "8f87b768-9a92-4844-aacb-15f11fbbe2ac",
+          "id": 27,
+          "unique_id": "b6735d75-895e-11d3-a7e4-00105aa73639-0000001b",
+          "name": "Ref. Level",
+          "category": "Views",
+          "category_id": -2000279,
+          "type_id": 1135,
+          "pinned": false,
+          "group_id": -1,
+          "level_id": -1,
+          "location": null,
+          "bounds": {
+            "min": [
+              -100,
+              -100,
+              -100
+            ],
+            "max": [
+              100,
+              100,
+              0
+            ]
+          },
+          "host_id": null,
+          "family_name": null,
+          "placement_type": null,
+          "view_family": null,
+          "view_type": "CeilingPlan",
+          "elevation": null
+        },
+        "view_type": "CeilingPlan"
+      },
+      {
+        "element": {
+          "document_session_id": "8f87b768-9a92-4844-aacb-15f11fbbe2ac",
+          "id": 31,
+          "unique_id": "b6735d75-895e-11d3-a7e4-00105aa73639-0000001f",
+          "name": "Back",
+          "category": "Views",
+          "category_id": -2000279,
+          "type_id": 1139,
+          "pinned": false,
+          "group_id": -1,
+          "level_id": -1,
+          "location": null,
+          "bounds": {
+            "min": [
+              -100,
+              -100,
+              -100
+            ],
+            "max": [
+              100,
+              100,
+              0
+            ]
+          },
+          "host_id": null,
+          "family_name": null,
+          "placement_type": null,
+          "view_family": null,
+          "view_type": "Elevation",
+          "elevation": null
+        },
+        "view_type": "Elevation"
+      },
+      {
+        "element": {
+          "document_session_id": "8f87b768-9a92-4844-aacb-15f11fbbe2ac",
+          "id": 35,
+          "unique_id": "b6735d75-895e-11d3-a7e4-00105aa73639-00000023",
+          "name": "Front",
+          "category": "Views",
+          "category_id": -2000279,
+          "type_id": 1139,
+          "pinned": false,
+          "group_id": -1,
+          "level_id": -1,
+          "location": null,
+          "bounds": {
+            "min": [
+              -100,
+              -100,
+              -100
+            ],
+            "max": [
+              100,
+              100,
+              0
+            ]
+          },
+          "host_id": null,
+          "family_name": null,
+          "placement_type": null,
+          "view_family": null,
+          "view_type": "Elevation",
+          "elevation": null
+        },
+        "view_type": "Elevation"
+      },
+      {
+        "element": {
+          "document_session_id": "8f87b768-9a92-4844-aacb-15f11fbbe2ac",
+          "id": 39,
+          "unique_id": "b6735d75-895e-11d3-a7e4-00105aa73639-00000027",
+          "name": "Left",
+          "category": "Views",
+          "category_id": -2000279,
+          "type_id": 1139,
+          "pinned": false,
+          "group_id": -1,
+          "level_id": -1,
+          "location": null,
+          "bounds": {
+            "min": [
+              -100,
+              -100,
+              -100
+            ],
+            "max": [
+              100,
+              100,
+              0
+            ]
+          },
+          "host_id": null,
+          "family_name": null,
+          "placement_type": null,
+          "view_family": null,
+          "view_type": "Elevation",
+          "elevation": null
+        },
+        "view_type": "Elevation"
+      },
+      {
+        "element": {
+          "document_session_id": "8f87b768-9a92-4844-aacb-15f11fbbe2ac",
+          "id": 43,
+          "unique_id": "b6735d75-895e-11d3-a7e4-00105aa73639-0000002b",
+          "name": "Right",
+          "category": "Views",
+          "category_id": -2000279,
+          "type_id": 1139,
+          "pinned": false,
+          "group_id": -1,
+          "level_id": -1,
+          "location": null,
+          "bounds": {
+            "min": [
+              -100,
+              -100,
+              -100
+            ],
+            "max": [
+              100,
+              100,
+              0
+            ]
+          },
+          "host_id": null,
+          "family_name": null,
+          "placement_type": null,
+          "view_family": null,
+          "view_type": "Elevation",
+          "elevation": null
+        },
+        "view_type": "Elevation"
+      },
+      {
+        "element": {
+          "document_session_id": "8f87b768-9a92-4844-aacb-15f11fbbe2ac",
+          "id": 50,
+          "unique_id": "b8f3cbc1-a6a5-11d3-911d-0000863f27ad-00000032",
+          "name": "Project View",
+          "category": null,
+          "category_id": null,
+          "type_id": -1,
+          "pinned": false,
+          "group_id": -1,
+          "level_id": -1,
+          "location": null,
+          "bounds": {
+            "min": [
+              -100,
+              -100,
+              -100
+            ],
+            "max": [
+              100,
+              100,
+              0
+            ]
+          },
+          "host_id": null,
+          "family_name": null,
+          "placement_type": null,
+          "view_family": null,
+          "view_type": "ProjectBrowser",
+          "elevation": null
+        },
+        "view_type": "ProjectBrowser"
+      },
+      {
+        "element": {
+          "document_session_id": "8f87b768-9a92-4844-aacb-15f11fbbe2ac",
+          "id": 463,
+          "unique_id": "a022218b-64aa-4727-b46a-10892e425698-000001cf",
+          "name": "View 1",
+          "category": "Views",
+          "category_id": -2000279,
+          "type_id": 1140,
+          "pinned": false,
+          "group_id": -1,
+          "level_id": -1,
+          "location": null,
+          "bounds": {
+            "min": [
+              -100,
+              -100,
+              -1000
+            ],
+            "max": [
+              100,
+              100,
+              -0.1
+            ]
+          },
+          "host_id": null,
+          "family_name": null,
+          "placement_type": null,
+          "view_family": null,
+          "view_type": "ThreeD",
+          "elevation": null
+        },
+        "view_type": "ThreeD"
+      }
+    ],
+    "warnings": []
+  },
+  "error": null,
+  "cancel_requested": false,
+  "created_utc": "2026-11-12T21:48:49.1299594Z",
+  "finished_utc": "2026-11-12T21:48:49.1672962Z",
+  "elapsed_ms": 29.0353,
+  "transaction_status": "not_started"
+}

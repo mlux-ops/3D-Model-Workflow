@@ -1,0 +1,40 @@
+/* Material Collager — Monochrome Glass tokens (from Material-Collager-Website
+   app/globals.css + app/motion-tokens.css). Loaded in <head> so the loading
+   veil and first paint are already on-system; component rules live in
+   theme.css at the end of <body>. */
+:root{
+  color-scheme:light;
+  --mono-black:#000000;--mono-white:#ffffff;--mono-off-white:#fafafa;
+  --mono-line:rgba(0,0,0,.2);--mono-soft-line:rgba(0,0,0,.1);
+  --background:#eceeea;--surface:#ffffff;--surface-soft:#f5f6f3;--surface-quiet:#fafbf9;
+  --ink:#000000;--muted:#68706b;--line:#d6dbd5;--line-strong:#b9c1ba;
+  --accent:#28685b;--accent-dark:#19483f;--accent-wash:#edf6f2;--accent-line:#8bb6a8;
+  --blue:#345f80;--blue-wash:#eef4f8;--blue-line:#9bb4c6;
+  --hold:#7a5410;--hold-wash:#fbf5e6;--hold-line:#d9c08a;
+  --danger:#9a392f;
+  --shadow:0 14px 38px rgba(0,0,0,.08);
+  --font-ui:'Inter',Arial,Helvetica,sans-serif;
+  --font-mono:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;
+  --label-size:10.5px;--label-track:.1575px;--micro-size:8.4px;
+  --nav-h:58px;
+  --duration-quick:150ms;--duration-fast:250ms;--duration-slow:400ms;
+  --ease-smooth-out:cubic-bezier(.22,1,.36,1);
+  --modal-scale:.96;
+}
+*{box-sizing:border-box}
+html,body{margin:0;height:100%;background:var(--mono-off-white);color:var(--ink);
+  font-family:var(--font-ui);font-optical-sizing:auto;-webkit-text-size-adjust:100%}
+button,select,input{font:inherit;letter-spacing:0}
+button{cursor:pointer}
+#mc-loading{position:fixed;inset:0;z-index:100000;background:var(--mono-off-white);display:grid;
+  place-items:center;transition:opacity var(--duration-slow) var(--ease-smooth-out)}
+#mc-loading.done{opacity:0;pointer-events:none}
+#mc-loading .mc-loading-card{width:min(360px,calc(100vw - 48px))}
+#mc-loading p{margin:0;font-size:var(--label-size);letter-spacing:var(--label-track);text-transform:uppercase;font-weight:500}
+#mc-loading p+p{margin-top:6px;color:var(--muted);text-transform:none;letter-spacing:0;font-size:12px;line-height:1.5;font-weight:400}
+#mc-loading .mc-loading-rule{height:1px;background:var(--mono-soft-line);margin:14px 0;position:relative;overflow:hidden}
+#mc-loading .mc-loading-rule::after{content:"";position:absolute;inset:0;background:var(--ink);transform-origin:left;
+  animation:mc-plot 1.6s var(--ease-smooth-out) infinite}
+#mc-loading.failed .mc-loading-rule::after{animation:none;background:var(--danger)}
+@keyframes mc-plot{0%{transform:scaleX(0)}60%{transform:scaleX(1);opacity:1}100%{transform:scaleX(1);opacity:0}}
+@media (prefers-reduced-motion:reduce){#mc-loading .mc-loading-rule::after{animation:none}#mc-loading{transition:none}}

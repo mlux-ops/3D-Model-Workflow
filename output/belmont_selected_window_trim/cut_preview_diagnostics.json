@@ -1,0 +1,43 @@
+{
+  "schema_version": 1,
+  "operation_id": "a8efa6de-6bfd-4fa0-a3c0-535648b051ac",
+  "status": "failed",
+  "request": {
+    "arguments": {
+      "arguments": {
+        "point": [
+          37.33999190966225,
+          -55.69033126642166,
+          37.666666666666664
+        ],
+        "type": "e73ded64-5f20-4863-86c8-288dfb7ac93a-00d7817c"
+      },
+      "assembly": "C:/ProgramData/CodexNativeRevit/plugins/belmont_window_trim/BelmontWindowTrimCutV3.dll",
+      "expected_changes": [],
+      "purpose": "Inspect exact native cut readbacks inside a fully rolled-back test transaction",
+      "type": "PreviewWindowTrimCut"
+    },
+    "document": {
+      "path": "Autodesk Docs://25 012 - 651 W. Belmont/25-012 651 W. Belmont_Issue for Construction_.rvt",
+      "session_id": "d9136c2f-5567-4bc5-9bc4-e8bd4b966f6c"
+    },
+    "operation": "compiled.query",
+    "operation_id": "a8efa6de-6bfd-4fa0-a3c0-535648b051ac",
+    "preconditions": {
+      "expected_title": "25-012 651 W. Belmont_Issue for Construction_",
+      "is_family": false
+    },
+    "schema_version": 1
+  },
+  "result": null,
+  "error": {
+    "code": "InvalidOperationException",
+    "message": "Native cut volume does not match exact planned opening: {\"checks\":[{\"unique_id\":\"a90217dd-fa42-44eb-bd0a-2c07a91eab57-00c87ad1\",\"document_session_id\":\"d9136c2f-5567-4bc5-9bc4-e8bd4b966f6c\",\"id\":13138641,\"before\":0.7231542312447861,\"expected\":0.6510891738319745,\"actual\":0.7231542312447861,\"linked\":true},{\"unique_id\":\"02e59096-cb94-4b8b-9416-b62fba27e642-00d0d34e\",\"document_session_id\":\"d9136c2f-5567-4bc5-9bc4-e8bd4b966f6c\",\"id\":13685582,\"before\":0.3370153579340856,\"expected\":0.33636431626741814,\"actual\":0.3370153579340856,\"linked\":true},{\"unique_id\":\"676af7a0-33d9-46b9-a8bb-d9537861af37-00cab9d1\",\"document_session_id\":\"d9136c2f-5567-4bc5-9bc4-e8bd4b966f6c\",\"id\":13285841,\"before\":0.16511174768517323,\"expected\":0.06094508101850181,\"actual\":0.16511174768517323,\"linked\":true}],\"placement\":{\"document_session_id\":\"d9136c2f-5567-4bc5-9bc4-e8bd4b966f6c\",\"id\":14123405,\"unique_id\":\"e73ded64-5f20-4863-86c8-288dfb7ac93a-00d7818d\",\"name\":\"Fourth-floor primary bedroom window adaptation\",\"category\":\"Casework\",\"category_id\":-2001000,\"type_id\":14123388,\"pinned\":false,\"group_id\":-1,\"level_id\":4209327,\"location\":{\"point\":[37.33999190966225,-55.69033126642166,75.33333333333333],\"rotation_radians\":0},\"bounds\":{\"min\":[35.79832524299557,-56.19033126642163,75.25],\"max\":[38.881658576328896,-55.19033126642163,84.83333333333333]},\"host_id\":null,\"family_name\":null,\"placement_type\":null,\"view_family\":null,\"view_type\":null,\"elevation\":null}}",
+    "details": null
+  },
+  "cancel_requested": false,
+  "created_utc": "2026-11-12T21:50:11.1324059Z",
+  "finished_utc": "2026-11-12T21:50:11.6717966Z",
+  "elapsed_ms": 503.3017,
+  "transaction_status": "not_started"
+}
