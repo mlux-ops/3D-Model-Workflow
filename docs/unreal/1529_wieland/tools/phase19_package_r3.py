@@ -7,17 +7,20 @@ Uses tools/phase19_package.py (copy, manifest, Drive read-back, no overwrite, no
 file list and superseded note.
 """
 import glob
+import json
 import os
 import sys
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, HERE)
 import phase19_package as P  # noqa: E402
+from wieland_paths import safe_name
 
 NAME = "1529_Wieland_UE5.9_Delivery_2026-11-15_r3"
 P.EARLIER = "1529_Wieland_UE5.9_Delivery_2026-11-14_r2"
 DOCS = P.DOCS
 R2 = DOCS + "/review/phase20/round2"
+MEDIA = DOCS + "/review/phase20/final_extension"
 
 
 def files():
@@ -26,21 +29,34 @@ def files():
            (P.D_ROOT + "/" + P.EARLIER + "/LICENCES.csv", "LICENCES.csv"),
            (R2 + "/landmarks.csv", "skyline/landmarks_sheet_vs_model.csv")]
     for v in P.VIEWS:
-        out.append((R2 + "/stills/%s_realtime.0000.png" % v, "stills/%s_realtime.png" % v))
-        out.append((R2 + "/stills/compare_%s_realtime.jpg" % v, "comparison/r2_vs_r3_%s.jpg" % v))
-    out.append((R2 + "/stills/D1_pathtraced.0000.png", "stills/D1_pathtraced.png"))
-    out.append((R2 + "/stills/compare_D1_pathtraced.jpg", "comparison/r2_vs_r3_D1_pathtraced.jpg"))
+        out.append((MEDIA + "/stills/%s_realtime.0000.png" % v, "stills/%s_realtime.png" % v))
+        out.append((MEDIA + "/stills/compare_%s_realtime.jpg" % v, "comparison/r2_vs_r3_%s.jpg" % v))
+    out.append((MEDIA + "/stills/D1_pathtraced.0000.png", "stills/D1_pathtraced.png"))
+    out.append((MEDIA + "/stills/compare_D1_pathtraced.jpg", "comparison/r2_vs_r3_D1_pathtraced.jpg"))
     for deck in ("D1S", "D1"):
-        out.append((R2 + "/panorama/%s_panorama_sheet_r2.png" % deck, "skyline/%s_skyline_27_landmarks.png" % deck))
-        out.append((R2 + "/panorama/%s_panorama_sheet_r2_labels.json" % deck, "skyline/%s_skyline_labels.json" % deck))
-        out.append((R2 + "/panorama/%s_landmark_crops_r2.png" % deck, "skyline/%s_landmark_closeups.png" % deck))
-        out.append((R2 + "/panorama/compare_%s_r1_r2.jpg" % deck, "comparison/skyline_r2_vs_r3_%s.jpg" % deck))
-    for f in sorted(glob.glob(DOCS + "/delivery/video_paths/*.mp4")) + sorted(glob.glob(DOCS + "/delivery/video_paths/*.json")):
-        out.append((f.replace(os.sep, "/"), "video_paths/" + os.path.basename(f)))
+        out.append((MEDIA + "/panorama/%s_panorama_sheet_r2.png" % deck, "skyline/%s_skyline_27_landmarks.png" % deck))
+        out.append((MEDIA + "/panorama/%s_panorama_sheet_r2_labels.json" % deck, "skyline/%s_skyline_labels.json" % deck))
+        out.append((MEDIA + "/panorama/%s_landmark_crops_r2.png" % deck, "skyline/%s_landmark_closeups.png" % deck))
+        out.append((MEDIA + "/panorama/compare_%s_r1_r2.jpg" % deck, "comparison/skyline_r2_vs_r3_%s.jpg" % deck))
+    result_file=DOCS+'/delivery/owner_videos_result.json'
+    with open(result_file,encoding='utf-8') as stream:results=json.load(stream)
+    out.append((result_file,'video_paths/RENDER_RESULTS.json'))
+    for result in results['results']:
+        name=result['name']
+        if name not in results['requested_names'] or name.startswith('_test_'):raise RuntimeError('Unexpected video '+name)
+        if result.get('refused'):continue
+        filename=safe_name(name)
+        for extension in ('.mp4','.json'):
+            f=DOCS+'/delivery/video_paths/'+filename+extension
+            out.append((f,'video_paths/'+filename+extension))
     return out
 
 
 def superseded_note(folder, name):
+    receipt=DOCS+'/delivery/r3_drive_verified.json'
+    if not os.path.exists(receipt):return 'pending cloud metadata verification'
+    with open(receipt,encoding='utf-8') as stream:verified=json.load(stream)
+    if verified.get('package')!=name or verified.get('verified') is not True:return 'pending cloud metadata verification'
     path = folder + "/SUPERSEDED.md"
     if os.path.exists(path):
         return "kept"

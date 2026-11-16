@@ -554,6 +554,7 @@ def end_render(state):
         wt.cvar(name, value)
         back[name] = {"put_back": value, "reads": wt.cvar(name)}
     wt._stand_ins(False)
+    _unreal().SystemLibrary.execute_console_command(_world(), "EnableAllScreenMessages")
     back["nanite_mode"] = wt.cvar(wt.NANITE_MODE)
     return back
 
@@ -707,6 +708,9 @@ def render_requested(include_test=False, on_done=None, only=None):
                 job["render_seconds"] = round(time.time() - job["render_started"], 1)
                 mp4 = VIDEO_DIR + "/" + safe_name(job["name"]) + ".mp4"
                 n_mp4, dur, n_png = encode(job["name"], job["folder"], int(job["p"]["fps"]), mp4)
+                if n_mp4 != n_png or n_png != job["summary"]["frames"]:
+                    raise RuntimeError("Incomplete video: planned %d, rendered %d, encoded %d" %
+                                       (job["summary"]["frames"], n_png, n_mp4))
                 meta = {"name": job["name"], "path_file": job["path"], "path_sha256": job["sha"],
                         "rendered_at": datetime.datetime.now().isoformat(timespec="seconds"),
                         "duration_s": round(dur, 3), "frames": n_mp4, "frames_rendered": n_png,

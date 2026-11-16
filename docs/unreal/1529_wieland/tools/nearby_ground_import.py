@@ -23,7 +23,7 @@ def apply():
     for i,mat in enumerate(mats):mesh.set_material(i,mat)
     if not unreal.EditorAssetLibrary.save_loaded_asset(mesh,False):raise RuntimeError('Ground mesh save failed')
     component.modify();component.set_static_mesh(mesh)
-    component.set_cast_shadow(False)
+    if component.get_editor_property('cast_shadow'):raise RuntimeError('Ground must retain shadow casting off')
     record={'actor':actor.get_path_name(),'old_asset':original.get_path_name(),'new_asset':mesh.get_path_name(),'triangles':mesh.get_static_mesh_description(0).get_triangle_count(),'shadow_casting':False}
     (Path(__file__).resolve().parent.parent/'review/phase20/nearby_detail/ground_native_swap.json').write_text(json.dumps(record,indent=2),encoding='utf-8')
     if not unreal.EditorLoadingAndSavingUtils.save_packages([actor.get_outermost()],True):raise RuntimeError('Ground level save failed')
