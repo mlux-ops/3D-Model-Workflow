@@ -23,10 +23,11 @@ ROOT = '/Game/Wieland1529/Surroundings/NearbyDetail/Facades'
 MATERIALS = '/Game/Wieland1529/Surroundings/NearbyDetail/Materials'
 LEVEL = '/Game/Wieland1529/Surroundings/L_Nearby_Detail'
 P17_LEVEL = '/Game/Wieland1529/Surroundings/L_Surroundings_P17'
+REPLACEMENT_LEVELS = {P17_LEVEL, '/Game/Wieland1529/Surroundings/L_Skyline_P17'}
 PARENT = '/Game/Wieland1529/Surroundings/Materials/M_W1529_Massing'
 OPAQUE = '/Game/Wieland1529/Materials/Parents/M_W1529_Opaque'
 TEXTURES = '/Game/Wieland1529/Materials/Textures/'
-BITUMEN = '/Game/Wieland/R15_Materials/PolyHaven/bitumen/T_R15_bitumen_'
+BITUMEN = '/Game/Wieland/R15_Materials/PolyHaven/asphalt_03/T_R15_asphalt_03_'
 EXCLUDED = {'781075', '781331'}
 TASK = None
 STATE = {}
@@ -261,8 +262,8 @@ def activate(ids, save=False):
             if actor is None:
                 continue
             level = ws.level_of(actor)
-            allowed = LEVEL if prefix in ('NDF_','ND_') else P17_LEVEL
-            if level != allowed:
+            allowed = {LEVEL} if prefix in ('NDF_','ND_') else REPLACEMENT_LEVELS
+            if level not in allowed:
                 if prefix.startswith('P17'):
                     continue
                 raise RuntimeError('Refused visibility change outside detail level: '+actor.get_path_name())
@@ -303,7 +304,7 @@ def readback(ids):
             active.append(bid)
             for prefix in ('ND_','P17Z_','P17T_'):
                 other = actors.get(prefix+bid)
-                if other is not None and ws.level_of(other) in {LEVEL,P17_LEVEL}:
+                if other is not None and ws.level_of(other) in ({LEVEL}|REPLACEMENT_LEVELS):
                     comp = other.get_component_by_class(unreal.StaticMeshComponent)
                     if comp is not None and comp.get_editor_property('visible'):
                         overlaps.append(other.get_actor_label())
