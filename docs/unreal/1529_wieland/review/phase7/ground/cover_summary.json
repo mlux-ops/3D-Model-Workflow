@@ -1,0 +1,31 @@
+{
+ "grid_origin_cm": [
+  -16200.0,
+  -17050.0
+ ],
+ "cells": [
+  2472,
+  2472
+ ],
+ "cell_cm": 12.5,
+ "area_m2": {
+  "not decided": 0,
+  "roadway (asphalt)": 23242,
+  "public sidewalk (concrete)": 7632,
+  "private paving (concrete)": 16851,
+  "lawn": 2072,
+  "planting bed or bare soil": 15,
+  "under a building": 45668
+ },
+ "kerb_lines": 13,
+ "kerb_length_m": 2267,
+ "rules": {
+  "public way": "what is not a county parcel (2025)",
+  "roadway": "public way further than 362 cm from a parcel, corners rounded at 300 cm; the distance is the 1st percentile measured on the earlier parts' roadway on Wieland",
+  "alley": "public way narrower than 760 cm: paved wall to wall, no kerb, and through the sidewalk at its mouth",
+  "lawn": "the 2025 photograph shows plants (near infrared against red above 0.35) and the 2022 laser scan shows them lower than 0.6 m; strips narrower than 150 cm and patches under 4 m2 are dropped (rings at the edge of tree crowns)",
+  "tree pits and beds in the sidewalk": "taken from the earlier parts' own ground where they have it",
+  "car park": "a parcel over 300 m2 of which under 5 percent is building, and the earlier parts' asphalt",
+  "private paving": "everything else inside a parcel that is not building"
+ }
+}

@@ -80,3 +80,259 @@ Severity: **High** changes what a reference view shows. **Medium** is visible on
 - The timed performance captures (eight seconds of warm-up, ten seconds of capture, three views), which become the first entries of the plan's fixed-path profile.
 - The lot registration against the survey and site plan, including its honest note of the 0.68 ft disagreement between measured and record frontage.
 - The incident log and its operating rules: one writer to the Unreal project at a time, never "save all", treat a timed-out command as an unknown outcome.
+
+## Live audit completed: the material on every part
+
+Read on 2026-11-10 from the open level `/Game/Wieland/R15_Landscape/L_R15_Production` in engine 5.9.0, through the editor's agent server, as step 1.3 of the plan. The reading was read-only: nothing in the project was changed or saved. It closes the gap recorded above under "What was audited". The raw record, which also holds every slot's name and each part's bounding box, is [site_model_audit_materials.json](site_model_audit_materials.json).
+
+Two terms. A **slot** is one material assignment on a part; a part has one slot for each material it carries. An **instance** is a material that takes its logic from a parent material and changes only values and textures; a **base material** stands alone.
+
+### Totals
+
+| Measure | Value |
+|---|---|
+| Parts read | 58: 31 opaque parts drawn with Nanite, 27 glass parts |
+| Material slots | 645, none empty |
+| Different materials on the parts | 123 (a further 14 are used only by the trees and ground plants) |
+| Instances | 25 materials on 472 slots (73 percent of slots) |
+| Base materials | 98 materials on 173 slots (27 percent of slots), all in `/Game/Wieland/R14` |
+| Opaque slots | 529 |
+| Glass slots | 116, on 5 glass materials |
+| Most materials on one part | 22, on each of two parts: `R15_PART_opaque_xm04_yp01_part01` (the merged cell that holds the lot; 32 slots) and `R15_PART_opaque_xm03_yp00_part01` (29 slots) |
+| Materials from the 651 Belmont or beech-tree content | None |
+| Engine placeholder materials (the grey grid) | None |
+
+### What this adds to the findings
+
+| No. | Finding | Evidence | Severity | Correction (plan phase) |
+|---|---|---|---|---|
+| ML10 | 98 of the 123 materials on the parts are stand-alone base materials left from the R14 import. They do not use the world-scaled parents, so no texel density can be stated or enforced for them. | Table below: every material in `/Game/Wieland/R14` has no parent. They carry 173 of 645 slots. | Medium | Replaced when the surroundings are rebuilt one object per building (Phase 4) and re-materialled (Phase 5). |
+| ML11 | All glass in the level comes from one parent, `M_MS_Glass`, through 5 instances. | Table below. | Low | The window assemblies in Phase 5 replace it. |
+| R5 | The cell that holds the lot, `R15_PART_opaque_xm04_yp01_part01`, carries 22 different materials on 32 slots of one part, which confirms finding R4: a single building or surface cannot be re-materialled by itself. | Table of parts below. | Medium | Phase 4. |
+| A14 | No part of the level uses a material from the 651 Belmont or beech-tree folders. This supports removing that content (finding A13); a full check of references from every Wieland asset is made in step 1.14 before anything is deleted. | Table below; no material path lies under `/Game/Belmont` or `/Game/EuropeanBeech`. | Low | Phase 1, step 1.14. |
+
+### Materials on the parts
+
+Sorted by the number of slots that use each one.
+
+| Material | Kind | Parent | Blend | Parts | Slots | Folder |
+|---|---|---|---|---|---|---|
+| `MI_R15_concrete_floor_03_World` | instance | `M_R15_World_Metric` | opaque | 21 | 79 | `/Game/Wieland/R15_Materials/Production` |
+| `MI_R15_limestone_continuous_World` | instance | `M_R15_World_Metric` | opaque | 27 | 68 | `/Game/Wieland/R15_Materials/Production` |
+| `MI_R15_sexkaitb_UV` | instance | `M_R15_UV_Metric` | opaque | 28 | 66 | `/Game/Wieland/R15_Materials/Production` |
+| `MI_R15_Glass_Blue` | instance | `M_MS_Glass` | translucent glass | 10 | 52 | `/Game/Wieland/R15_Materials` |
+| `MI_R15_Glass_Clear` | instance | `M_MS_Glass` | translucent glass | 21 | 46 | `/Game/Wieland/R15_Materials` |
+| `MI_R15_bitumen_UV` | instance | `M_R15_UV_Metric` | opaque | 23 | 39 | `/Game/Wieland/R15_Materials/Production` |
+| `MI_R15_concrete_floor_03_UV` | instance | `M_R15_UV_Metric` | opaque | 25 | 36 | `/Game/Wieland/R15_Materials/Production` |
+| `WLD_CTX_BLDG_metal` | base material | none | opaque | 13 | 13 | `/Game/Wieland/R14` |
+| `MI_R15_wood_chips_World` | instance | `M_R15_World_Metric` | opaque | 12 | 12 | `/Game/Wieland/R15_Materials/Production` |
+| `B_MAT_Joint_recess` | base material | none | opaque | 10 | 10 | `/Game/Wieland/R14` |
+| `MI_R15_asphalt_03_World` | instance | `M_R15_World_Metric` | opaque | 7 | 9 | `/Game/Wieland/R15_Materials/Production` |
+| `MI_R15_Glass_Smoke` | instance | `M_MS_Glass` | translucent glass | 5 | 8 | `/Game/Wieland/R15_Materials` |
+| `MI_R15_AsphaltShingle_Courses` | instance | `M_R15_RoofCourse_Metric` | opaque | 5 | 6 | `/Game/Wieland/R15_Materials/Production` |
+| `MI_R15_turf_World` | instance | `M_R15_World_Metric` | opaque | 6 | 6 | `/Game/Wieland/R15_Materials/Production` |
+| `MI_R15_Glass_Dim` | instance | `M_MS_Glass` | translucent glass | 5 | 5 | `/Game/Wieland/R15_Materials` |
+| `MI_R15_W1533_Glass` | instance | `MI_R15_Glass_Blue` | translucent glass | 1 | 5 | `/Game/Wieland/R15_Materials/Production` |
+| `MI_R15_factory_brick_UV` | instance | `M_R15_UV_Metric` | opaque | 4 | 5 | `/Game/Wieland/R15_Materials/Production` |
+| `MI_R15_galvanized_World` | instance | `M_R15_World_Metric` | opaque | 5 | 5 | `/Game/Wieland/R15_Materials/Production` |
+| `MI_R15_yellow_brick_UV` | instance | `M_R15_UV_Metric` | opaque | 5 | 5 | `/Game/Wieland/R15_Materials/Production` |
+| `WLD_CTX_BLDG_garage_001` | base material | none | opaque | 5 | 5 | `/Game/Wieland/R14` |
+| `A4_wells_1535_305867_0_metal` | base material | none | opaque | 4 | 4 | `/Game/Wieland/R14` |
+| `A_wells_1549_304564_0_metal` | base material | none | opaque | 4 | 4 | `/Game/Wieland/R14` |
+| `A_wells_1561_815207_0_metal` | base material | none | opaque | 4 | 4 | `/Game/Wieland/R14` |
+| `B_MAT_Wells_ornamental_iron` | base material | none | opaque | 4 | 4 | `/Game/Wieland/R14` |
+| `MI_R15_brown_planks_09_UV` | instance | `M_R15_UV_Metric` | opaque | 4 | 4 | `/Game/Wieland/R15_Materials/Production` |
+| `MI_R15_japanese_cedar_planks_World` | instance | `M_R15_World_Metric` | opaque | 4 | 4 | `/Game/Wieland/R15_Materials/Production` |
+| `SS_R01_BlackPaintedIron_001` | base material | none | opaque | 4 | 4 | `/Game/Wieland/R14` |
+| `SS_R01_FadedParkingPaint_001` | base material | none | opaque | 4 | 4 | `/Game/Wieland/R14` |
+| `MI_R15_brick_wall_08_UV` | instance | `M_R15_UV_Metric` | opaque | 3 | 3 | `/Game/Wieland/R15_Materials/Production` |
+| `MI_R15_brown_planks_09_World` | instance | `M_R15_World_Metric` | opaque | 3 | 3 | `/Game/Wieland/R15_Materials/Production` |
+| `SS_R01_BlackRubber_002` | base material | none | opaque | 3 | 3 | `/Game/Wieland/R14` |
+| `SS_R01_LuminaireLens_001` | base material | none | opaque | 3 | 3 | `/Game/Wieland/R14` |
+| `A4_wells_1511_815257_0_metal` | base material | none | opaque | 2 | 2 | `/Game/Wieland/R14` |
+| `A4_wells_1511_815257_0_wells_white_trim` | base material | none | opaque | 2 | 2 | `/Game/Wieland/R14` |
+| `A4_wells_1533_306029_0_metal` | base material | none | opaque | 2 | 2 | `/Game/Wieland/R14` |
+| `A4_wells_1535_305867_0_wells_white_trim` | base material | none | opaque | 2 | 2 | `/Game/Wieland/R14` |
+| `A4_wells_1539_815224_0_metal` | base material | none | opaque | 2 | 2 | `/Game/Wieland/R14` |
+| `A4_wells_1541_815223_0_metal` | base material | none | opaque | 2 | 2 | `/Game/Wieland/R14` |
+| `A_E1510_metal` | base material | none | opaque | 2 | 2 | `/Game/Wieland/R14` |
+| `A_E1553_1555_metal` | base material | none | opaque | 2 | 2 | `/Game/Wieland/R14` |
+| `A_E1562_metal` | base material | none | opaque | 2 | 2 | `/Game/Wieland/R14` |
+| `A_W1525_siding_pale` | base material | none | opaque | 2 | 2 | `/Game/Wieland/R14` |
+| `A_W1550_MONTAUK_a1_pale_panel` | base material | none | opaque | 2 | 2 | `/Game/Wieland/R14` |
+| `A_W1550_MONTAUK_door_paint` | base material | none | opaque | 2 | 2 | `/Game/Wieland/R14` |
+| `A_W1550_MONTAUK_metal` | base material | none | opaque | 2 | 2 | `/Game/Wieland/R14` |
+| `A_wells_1543_815222_0_metal` | base material | none | opaque | 2 | 2 | `/Game/Wieland/R14` |
+| `A_wells_1547_815221_0_metal` | base material | none | opaque | 2 | 2 | `/Game/Wieland/R14` |
+| `A_wells_1548_304917_0_metal` | base material | none | opaque | 2 | 2 | `/Game/Wieland/R14` |
+| `A_wells_1548_304917_0_wells_paint_gray` | base material | none | opaque | 2 | 2 | `/Game/Wieland/R14` |
+| `A_wells_1549_304564_0_wells_awning` | base material | none | opaque | 2 | 2 | `/Game/Wieland/R14` |
+| `A_wells_1559_815208_0_metal` | base material | none | opaque | 2 | 2 | `/Game/Wieland/R14` |
+| `A_wells_1561_815207_0_wells_awning` | base material | none | opaque | 2 | 2 | `/Game/Wieland/R14` |
+| `A_wieland_1503_307872_0_a2_dark` | base material | none | opaque | 2 | 2 | `/Game/Wieland/R14` |
+| `A_wieland_1503_307872_0_metal` | base material | none | opaque | 2 | 2 | `/Game/Wieland/R14` |
+| `A_wieland_1504_307698_0_a2_gray_siding` | base material | none | opaque | 2 | 2 | `/Game/Wieland/R14` |
+| `B_MAT_Wells_opal_globe` | base material | none | opaque | 2 | 2 | `/Game/Wieland/R14` |
+| `B_MAT_Wells_ornamental_iron_001` | base material | none | opaque | 2 | 2 | `/Game/Wieland/R14` |
+| `MI_R15_bitumen_World` | instance | `M_R15_World_Metric` | opaque | 2 | 2 | `/Game/Wieland/R15_Materials/Production` |
+| `MI_R15_dirt_floor_World` | instance | `M_R15_World_Metric` | opaque | 2 | 2 | `/Game/Wieland/R15_Materials/Production` |
+| `SS_R01_BlackRubber_001` | base material | none | opaque | 2 | 2 | `/Game/Wieland/R14` |
+| `SS_R01_RecyclingPlastic_001` | base material | none | opaque | 2 | 2 | `/Game/Wieland/R14` |
+| `SS_R01_RefusePlastic_001` | base material | none | opaque | 2 | 2 | `/Game/Wieland/R14` |
+| `A4_wells_1504_308303_0_metal` | base material | none | opaque | 1 | 1 | `/Game/Wieland/R14` |
+| `A4_wells_1504_308303_0_wells_white_trim` | base material | none | opaque | 1 | 1 | `/Game/Wieland/R14` |
+| `A4_wells_1512_815266_0_metal` | base material | none | opaque | 1 | 1 | `/Game/Wieland/R14` |
+| `A4_wells_1514_307361_0_metal` | base material | none | opaque | 1 | 1 | `/Game/Wieland/R14` |
+| `A4_wells_1514_307361_0_wells_white_trim` | base material | none | opaque | 1 | 1 | `/Game/Wieland/R14` |
+| `A4_wells_1533_306029_0_wells_white_trim` | base material | none | opaque | 1 | 1 | `/Game/Wieland/R14` |
+| `A4_wells_1541_815223_0_wells_awning` | base material | none | opaque | 1 | 1 | `/Game/Wieland/R14` |
+| `A_E1500_a2_dark` | base material | none | opaque | 1 | 1 | `/Game/Wieland/R14` |
+| `A_E1500_a2_store` | base material | none | opaque | 1 | 1 | `/Game/Wieland/R14` |
+| `A_E1500_metal` | base material | none | opaque | 1 | 1 | `/Game/Wieland/R14` |
+| `A_E1510_a2_dark` | base material | none | opaque | 1 | 1 | `/Game/Wieland/R14` |
+| `A_E1510_a2_store` | base material | none | opaque | 1 | 1 | `/Game/Wieland/R14` |
+| `A_E1539_REAR2026_door_paint` | base material | none | opaque | 1 | 1 | `/Game/Wieland/R14` |
+| `A_E1539_REAR2026_metal` | base material | none | opaque | 1 | 1 | `/Game/Wieland/R14` |
+| `A_E1562_door_paint` | base material | none | opaque | 1 | 1 | `/Game/Wieland/R14` |
+| `A_W1512_a2_dark` | base material | none | opaque | 1 | 1 | `/Game/Wieland/R14` |
+| `A_W1512_a2_store` | base material | none | opaque | 1 | 1 | `/Game/Wieland/R14` |
+| `A_W1512_door_paint` | base material | none | opaque | 1 | 1 | `/Game/Wieland/R14` |
+| `A_W1512_metal` | base material | none | opaque | 1 | 1 | `/Game/Wieland/R14` |
+| `A_W1525_door_paint` | base material | none | opaque | 1 | 1 | `/Game/Wieland/R14` |
+| `A_W1525_metal` | base material | none | opaque | 1 | 1 | `/Game/Wieland/R14` |
+| `A_W1525_paint_trim` | base material | none | opaque | 1 | 1 | `/Game/Wieland/R14` |
+| `A_W1533_1537_metal` | base material | none | opaque | 1 | 1 | `/Game/Wieland/R14` |
+| `A_W1533_1537_reveal_dark` | base material | none | opaque | 1 | 1 | `/Game/Wieland/R14` |
+| `A_W1533_1537_stone_joint` | base material | none | opaque | 1 | 1 | `/Game/Wieland/R14` |
+| `A_W1536_door_paint` | base material | none | opaque | 1 | 1 | `/Game/Wieland/R14` |
+| `A_W1536_metal` | base material | none | opaque | 1 | 1 | `/Game/Wieland/R14` |
+| `A_W1544_door_paint` | base material | none | opaque | 1 | 1 | `/Game/Wieland/R14` |
+| `A_W1544_metal` | base material | none | opaque | 1 | 1 | `/Game/Wieland/R14` |
+| `A_wells_1543_815222_0_wells_awning` | base material | none | opaque | 1 | 1 | `/Game/Wieland/R14` |
+| `A_wells_1544_815228_0_metal` | base material | none | opaque | 1 | 1 | `/Game/Wieland/R14` |
+| `A_wells_1544_815228_0_wells_siding` | base material | none | opaque | 1 | 1 | `/Game/Wieland/R14` |
+| `A_wells_1544_815228_0_wells_siding_trim` | base material | none | opaque | 1 | 1 | `/Game/Wieland/R14` |
+| `A_wells_1547_815221_0_wells_awning` | base material | none | opaque | 1 | 1 | `/Game/Wieland/R14` |
+| `A_wells_1550_815219_0_metal` | base material | none | opaque | 1 | 1 | `/Game/Wieland/R14` |
+| `A_wells_1550_815219_0_wells_paint_gray` | base material | none | opaque | 1 | 1 | `/Game/Wieland/R14` |
+| `A_wells_1552_304450_0_metal` | base material | none | opaque | 1 | 1 | `/Game/Wieland/R14` |
+| `A_wells_1552_304450_0_wells_awning` | base material | none | opaque | 1 | 1 | `/Game/Wieland/R14` |
+| `A_wells_1559_815208_0_wells_awning_red` | base material | none | opaque | 1 | 1 | `/Game/Wieland/R14` |
+| `A_wells_1559_815208_0_wells_store_base` | base material | none | opaque | 1 | 1 | `/Game/Wieland/R14` |
+| `A_wieland_1501_877871_0_a2_dark` | base material | none | opaque | 1 | 1 | `/Game/Wieland/R14` |
+| `A_wieland_1501_877871_0_door_paint` | base material | none | opaque | 1 | 1 | `/Game/Wieland/R14` |
+| `A_wieland_1501_877871_0_metal` | base material | none | opaque | 1 | 1 | `/Game/Wieland/R14` |
+| `A_wieland_1504_307698_0_a2_dark` | base material | none | opaque | 1 | 1 | `/Game/Wieland/R14` |
+| `A_wieland_1504_307698_0_a2_pale` | base material | none | opaque | 1 | 1 | `/Game/Wieland/R14` |
+| `A_wieland_1504_307698_0_door_paint` | base material | none | opaque | 1 | 1 | `/Game/Wieland/R14` |
+| `A_wieland_1507_307490_0_a2_dark` | base material | none | opaque | 1 | 1 | `/Game/Wieland/R14` |
+| `A_wieland_1507_307490_0_a2_pale` | base material | none | opaque | 1 | 1 | `/Game/Wieland/R14` |
+| `A_wieland_1507_307490_0_door_paint` | base material | none | opaque | 1 | 1 | `/Game/Wieland/R14` |
+| `A_wieland_1507_307490_0_metal` | base material | none | opaque | 1 | 1 | `/Game/Wieland/R14` |
+| `A_wieland_1508_858637_0_a2_dark` | base material | none | opaque | 1 | 1 | `/Game/Wieland/R14` |
+| `A_wieland_1508_858637_0_door_paint` | base material | none | opaque | 1 | 1 | `/Game/Wieland/R14` |
+| `A_wieland_1508_858637_0_metal` | base material | none | opaque | 1 | 1 | `/Game/Wieland/R14` |
+| `A_wieland_1511_307299_0_a2_dark` | base material | none | opaque | 1 | 1 | `/Game/Wieland/R14` |
+| `A_wieland_1511_307299_0_door_paint` | base material | none | opaque | 1 | 1 | `/Game/Wieland/R14` |
+| `A_wieland_1511_307299_0_metal` | base material | none | opaque | 1 | 1 | `/Game/Wieland/R14` |
+| `B_MAT_Limestone_gravel` | base material | none | opaque | 1 | 1 | `/Game/Wieland/R14` |
+| `MI_R15_W1533_Brick` | instance | `MI_R15_sexkaitb_UV` | opaque | 1 | 1 | `/Game/Wieland/R15_Materials/Production` |
+| `MI_R15_W1533_Limestone` | instance | `MI_R15_limestone_continuous_World` | opaque | 1 | 1 | `/Game/Wieland/R15_Materials/Production` |
+| `R14_W1525_PAINTED_METAL` | base material | none | opaque | 1 | 1 | `/Game/Wieland/R14` |
+| `SS_R01_BlackPaintedIron_002` | base material | none | opaque | 1 | 1 | `/Game/Wieland/R14` |
+
+### Each part and its materials
+
+Sizes are the part's bounding box. A number after a material is how many of the part's slots use it.
+
+| Part | Kind | Size north-south by east-west by height (m) | Slots | Materials |
+|---|---|---|---|---|
+| `R15_PART_glass_xm02_yp00_part01` | glass | 5.3 by 30.0 by 11.8 | 1 | `MI_R15_Glass_Clear` |
+| `R15_PART_glass_xm02_yp01_part01` | glass | 6.8 by 3.9 by 11.0 | 2 | `MI_R15_Glass_Clear` x2 |
+| `R15_PART_glass_xm02_yp02_part01` | glass | 20.6 by 0.5 by 11.7 | 4 | `MI_R15_Glass_Blue` x2, `MI_R15_Glass_Clear`, `MI_R15_Glass_Smoke` |
+| `R15_PART_glass_xm03_yp00_part01` | glass | 38.4 by 29.6 by 11.3 | 4 | `MI_R15_Glass_Clear` x4 |
+| `R15_PART_glass_xm03_yp01_part01` | glass | 28.6 by 23.8 by 11.1 | 4 | `MI_R15_Glass_Clear` x4 |
+| `R15_PART_glass_xm03_yp02_part01` | glass | 23.2 by 32.1 by 8.7 | 7 | `MI_R15_Glass_Clear` x3, `MI_R15_Glass_Blue` x2, `MI_R15_Glass_Smoke` x2 |
+| `R15_PART_glass_xm03_yp03_part01` | glass | 18.4 by 0.5 by 20.8 | 4 | `MI_R15_Glass_Blue` x3, `MI_R15_Glass_Smoke` |
+| `R15_PART_glass_xm03_yp04_part01` | glass | 19.4 by 0.4 by 19.1 | 1 | `MI_R15_Glass_Clear` |
+| `R15_PART_glass_xm04_yp00_part01` | glass | 38.8 by 28.9 by 14.2 | 1 | `MI_R15_Glass_Clear` |
+| `R15_PART_glass_xm04_yp01_part01` | glass | 4.7 by 15.1 by 5.0 | 2 | `MI_R15_Glass_Blue` x2 |
+| `R15_PART_glass_xm04_yp02_part01` | glass | 11.4 by 24.5 by 8.5 | 1 | `MI_R15_Glass_Clear` |
+| `R15_PART_glass_xm04_yp03_part01` | glass | 10.8 by 1.9 by 5.6 | 6 | `MI_R15_Glass_Blue` x4, `MI_R15_Glass_Smoke` x2 |
+| `R15_PART_glass_xm04_yp04_part01` | glass | 7.4 by 24.7 by 2.8 | 2 | `MI_R15_Glass_Clear` x2 |
+| `R15_PART_glass_xm05_yp00_part01` | glass | 40.2 by 26.5 by 14.2 | 3 | `MI_R15_Glass_Clear` x2, `MI_R15_Glass_Dim` |
+| `R15_PART_glass_xm05_yp01_part01` | glass | 30.1 by 17.4 by 13.6 | 6 | `MI_R15_W1533_Glass` x5, `MI_R15_Glass_Dim` |
+| `R15_PART_glass_xm05_yp02_part01` | glass | 40.9 by 31.7 by 14.8 | 7 | `MI_R15_Glass_Blue` x5, `MI_R15_Glass_Clear` x2 |
+| `R15_PART_glass_xm05_yp03_part01` | glass | 38.8 by 4.3 by 14.3 | 18 | `MI_R15_Glass_Blue` x16, `MI_R15_Glass_Smoke` x2 |
+| `R15_PART_glass_xm05_yp04_part01` | glass | 39.2 by 25.2 by 15.5 | 7 | `MI_R15_Glass_Clear` x7 |
+| `R15_PART_glass_xm06_yp00_part01` | glass | 38.0 by 22.0 by 20.1 | 4 | `MI_R15_Glass_Clear` x3, `MI_R15_Glass_Dim` |
+| `R15_PART_glass_xm06_yp01_part01` | glass | 7.4 by 0.3 by 15.1 | 2 | `MI_R15_Glass_Clear`, `MI_R15_Glass_Dim` |
+| `R15_PART_glass_xm06_yp02_part01` | glass | 39.3 by 31.6 by 14.8 | 9 | `MI_R15_Glass_Blue` x5, `MI_R15_Glass_Clear` x4 |
+| `R15_PART_glass_xm06_yp03_part01` | glass | 40.7 by 3.1 by 18.8 | 10 | `MI_R15_Glass_Blue` x9, `MI_R15_Glass_Clear` |
+| `R15_PART_glass_xm06_yp04_part01` | glass | 34.4 by 3.9 by 7.8 | 3 | `MI_R15_Glass_Clear` x3 |
+| `R15_PART_glass_xm07_yp00_part01` | glass | 12.4 by 27.0 by 20.1 | 1 | `MI_R15_Glass_Clear` |
+| `R15_PART_glass_xm07_yp02_part01` | glass | 12.2 by 0.2 by 3.3 | 2 | `MI_R15_Glass_Clear`, `MI_R15_Glass_Dim` |
+| `R15_PART_glass_xm07_yp03_part01` | glass | 2.8 by 0.1 by 8.9 | 4 | `MI_R15_Glass_Blue` x4 |
+| `R15_PART_glass_xm07_yp04_part01` | glass | 4.5 by 0.6 by 7.8 | 1 | `MI_R15_Glass_Clear` |
+| `R15_PART_opaque_xm02_yp00_part01` | opaque, Nanite | 9.7 by 34.2 by 14.4 | 9 | `MI_R15_concrete_floor_03_World` x3, `MI_R15_bitumen_UV`, `MI_R15_brick_wall_08_UV`, `MI_R15_concrete_floor_03_UV`, `MI_R15_limestone_continuous_World`, `MI_R15_sexkaitb_UV`, `WLD_CTX_BLDG_metal` |
+| `R15_PART_opaque_xm02_yp01_part01` | opaque, Nanite | 9.8 by 35.8 by 13.0 | 20 | `MI_R15_sexkaitb_UV` x4, `MI_R15_concrete_floor_03_World` x3, `MI_R15_limestone_continuous_World` x2, `A_wieland_1501_877871_0_a2_dark`, `A_wieland_1501_877871_0_door_paint`, `A_wieland_1501_877871_0_metal`, `A_wieland_1503_307872_0_a2_dark`, `A_wieland_1503_307872_0_metal`, `B_MAT_Joint_recess`, `MI_R15_asphalt_03_World`, `MI_R15_bitumen_UV`, `MI_R15_concrete_floor_03_UV`, `MI_R15_turf_World`, `MI_R15_wood_chips_World` |
+| `R15_PART_opaque_xm02_yp02_part01` | opaque, Nanite | 30.8 by 31.6 by 12.7 | 17 | `MI_R15_sexkaitb_UV` x5, `MI_R15_bitumen_UV` x2, `MI_R15_concrete_floor_03_UV` x2, `MI_R15_limestone_continuous_World` x2, `A4_wells_1504_308303_0_metal`, `A4_wells_1504_308303_0_wells_white_trim`, `A_E1500_a2_dark`, `A_E1500_a2_store`, `A_E1500_metal`, `A_E1510_metal` |
+| `R15_PART_opaque_xm03_yp00_part01` | opaque, Nanite | 41.2 by 34.4 by 15.6 | 29 | `MI_R15_concrete_floor_03_World` x3, `MI_R15_limestone_continuous_World` x3, `MI_R15_bitumen_UV` x2, `MI_R15_factory_brick_UV` x2, `MI_R15_sexkaitb_UV` x2, `A_W1512_a2_dark`, `A_W1512_a2_store`, `A_W1512_door_paint`, `A_W1512_metal`, `A_wieland_1504_307698_0_a2_dark`, `A_wieland_1504_307698_0_a2_gray_siding`, `A_wieland_1504_307698_0_a2_pale`, `A_wieland_1504_307698_0_door_paint`, `A_wieland_1508_858637_0_a2_dark`, `A_wieland_1508_858637_0_door_paint`, `A_wieland_1508_858637_0_metal`, `MI_R15_AsphaltShingle_Courses`, `MI_R15_brown_planks_09_World`, `MI_R15_concrete_floor_03_UV`, `MI_R15_galvanized_World`, `SS_R01_BlackRubber_002`, `SS_R01_LuminaireLens_001` |
+| `R15_PART_opaque_xm03_yp00_part02` | opaque, Nanite | 43.1 by 29.9 by 9.6 | 5 | `MI_R15_bitumen_UV`, `MI_R15_concrete_floor_03_UV`, `MI_R15_limestone_continuous_World`, `MI_R15_sexkaitb_UV`, `WLD_CTX_BLDG_metal` |
+| `R15_PART_opaque_xm03_yp01_part01` | opaque, Nanite | 41.7 by 59.2 by 13.0 | 30 | `MI_R15_concrete_floor_03_World` x4, `MI_R15_sexkaitb_UV` x4, `MI_R15_bitumen_UV` x3, `MI_R15_limestone_continuous_World` x3, `MI_R15_asphalt_03_World` x2, `A_wieland_1503_307872_0_a2_dark`, `A_wieland_1503_307872_0_metal`, `A_wieland_1507_307490_0_a2_dark`, `A_wieland_1507_307490_0_a2_pale`, `A_wieland_1507_307490_0_door_paint`, `A_wieland_1507_307490_0_metal`, `A_wieland_1511_307299_0_a2_dark`, `A_wieland_1511_307299_0_door_paint`, `A_wieland_1511_307299_0_metal`, `B_MAT_Joint_recess`, `MI_R15_concrete_floor_03_UV`, `MI_R15_turf_World`, `MI_R15_wood_chips_World`, `SS_R01_FadedParkingPaint_001` |
+| `R15_PART_opaque_xm03_yp01_part02` | opaque, Nanite | 5.6 by 21.5 by 6.6 | 5 | `MI_R15_bitumen_UV`, `MI_R15_concrete_floor_03_UV`, `MI_R15_limestone_continuous_World`, `MI_R15_sexkaitb_UV`, `WLD_CTX_BLDG_metal` |
+| `R15_PART_opaque_xm03_yp02_part01` | opaque, Nanite | 40.5 by 37.8 by 9.9 | 24 | `MI_R15_limestone_continuous_World` x5, `MI_R15_sexkaitb_UV` x4, `MI_R15_bitumen_UV` x3, `MI_R15_concrete_floor_03_UV` x2, `MI_R15_concrete_floor_03_World` x2, `A4_wells_1512_815266_0_metal`, `A4_wells_1514_307361_0_metal`, `A4_wells_1514_307361_0_wells_white_trim`, `A_E1510_a2_dark`, `A_E1510_a2_store`, `A_E1510_metal`, `MI_R15_brown_planks_09_UV`, `SS_R01_FadedParkingPaint_001` |
+| `R15_PART_opaque_xm03_yp03_part01` | opaque, Nanite | 31.5 by 44.5 by 22.1 | 8 | `MI_R15_concrete_floor_03_World` x2, `A4_wells_1511_815257_0_metal`, `A4_wells_1511_815257_0_wells_white_trim`, `MI_R15_asphalt_03_World`, `MI_R15_concrete_floor_03_UV`, `MI_R15_limestone_continuous_World`, `MI_R15_sexkaitb_UV` |
+| `R15_PART_opaque_xm03_yp04_part01` | opaque, Nanite | 31.5 by 49.4 by 22.0 | 7 | `A4_wells_1511_815257_0_metal`, `A4_wells_1511_815257_0_wells_white_trim`, `MI_R15_bitumen_UV`, `MI_R15_concrete_floor_03_UV`, `MI_R15_concrete_floor_03_World`, `MI_R15_limestone_continuous_World`, `MI_R15_sexkaitb_UV` |
+| `R15_PART_opaque_xm04_yp00_part01` | opaque, Nanite | 45.7 by 35.4 by 18.1 | 21 | `MI_R15_concrete_floor_03_World` x4, `MI_R15_sexkaitb_UV` x2, `A_wieland_1504_307698_0_a2_gray_siding`, `B_MAT_Joint_recess`, `MI_R15_AsphaltShingle_Courses`, `MI_R15_bitumen_UV`, `MI_R15_brown_planks_09_World`, `MI_R15_concrete_floor_03_UV`, `MI_R15_factory_brick_UV`, `MI_R15_galvanized_World`, `MI_R15_limestone_continuous_World`, `MI_R15_turf_World`, `MI_R15_wood_chips_World`, `SS_R01_BlackRubber_002`, `SS_R01_LuminaireLens_001`, `WLD_CTX_BLDG_garage_001`, `WLD_CTX_BLDG_metal` |
+| `R15_PART_opaque_xm04_yp01_part01` | opaque, Nanite | 96.1 by 59.2 by 10.4 | 32 | `MI_R15_concrete_floor_03_World` x10, `MI_R15_asphalt_03_World` x2, `A_W1525_door_paint`, `A_W1525_metal`, `A_W1525_paint_trim`, `A_W1525_siding_pale`, `B_MAT_Joint_recess`, `MI_R15_AsphaltShingle_Courses`, `MI_R15_brown_planks_09_UV`, `MI_R15_concrete_floor_03_UV`, `MI_R15_dirt_floor_World`, `MI_R15_galvanized_World`, `MI_R15_japanese_cedar_planks_World`, `MI_R15_turf_World`, `MI_R15_wood_chips_World`, `R14_W1525_PAINTED_METAL`, `SS_R01_BlackPaintedIron_001`, `SS_R01_BlackPaintedIron_002`, `SS_R01_BlackRubber_001`, `SS_R01_FadedParkingPaint_001`, `SS_R01_RecyclingPlastic_001`, `SS_R01_RefusePlastic_001` |
+| `R15_PART_opaque_xm04_yp02_part01` | opaque, Nanite | 43.7 by 37.7 by 11.2 | 16 | `MI_R15_concrete_floor_03_World` x5, `B_MAT_Joint_recess`, `B_MAT_Wells_ornamental_iron`, `MI_R15_bitumen_UV`, `MI_R15_concrete_floor_03_UV`, `MI_R15_japanese_cedar_planks_World`, `MI_R15_limestone_continuous_World`, `MI_R15_sexkaitb_UV`, `MI_R15_wood_chips_World`, `SS_R01_BlackPaintedIron_001`, `SS_R01_FadedParkingPaint_001`, `WLD_CTX_BLDG_metal` |
+| `R15_PART_opaque_xm04_yp03_part01` | opaque, Nanite | 40.0 by 46.2 by 6.8 | 18 | `MI_R15_concrete_floor_03_World` x4, `MI_R15_limestone_continuous_World` x2, `MI_R15_sexkaitb_UV` x2, `A4_wells_1533_306029_0_metal`, `A4_wells_1533_306029_0_wells_white_trim`, `A4_wells_1535_305867_0_metal`, `A4_wells_1535_305867_0_wells_white_trim`, `B_MAT_Wells_opal_globe`, `B_MAT_Wells_ornamental_iron`, `B_MAT_Wells_ornamental_iron_001`, `MI_R15_asphalt_03_World`, `MI_R15_brown_planks_09_UV`, `MI_R15_wood_chips_World` |
+| `R15_PART_opaque_xm04_yp04_part01` | opaque, Nanite | 39.9 by 50.2 by 6.7 | 12 | `MI_R15_sexkaitb_UV` x3, `MI_R15_concrete_floor_03_UV` x2, `MI_R15_limestone_continuous_World` x2, `A4_wells_1533_306029_0_metal`, `A4_wells_1535_305867_0_metal`, `MI_R15_bitumen_UV`, `MI_R15_concrete_floor_03_World`, `WLD_CTX_BLDG_metal` |
+| `R15_PART_opaque_xm05_yp00_part01` | opaque, Nanite | 41.2 by 33.5 by 16.1 | 25 | `MI_R15_concrete_floor_03_World` x4, `MI_R15_AsphaltShingle_Courses` x2, `MI_R15_concrete_floor_03_UV` x2, `MI_R15_limestone_continuous_World` x2, `A_W1536_door_paint`, `A_W1536_metal`, `B_MAT_Joint_recess`, `MI_R15_bitumen_UV`, `MI_R15_brown_planks_09_World`, `MI_R15_factory_brick_UV`, `MI_R15_galvanized_World`, `MI_R15_sexkaitb_UV`, `MI_R15_turf_World`, `MI_R15_wood_chips_World`, `MI_R15_yellow_brick_UV`, `SS_R01_BlackRubber_002`, `SS_R01_LuminaireLens_001`, `WLD_CTX_BLDG_garage_001`, `WLD_CTX_BLDG_metal` |
+| `R15_PART_opaque_xm05_yp01_part01` | opaque, Nanite | 41.5 by 37.0 by 17.4 | 31 | `MI_R15_concrete_floor_03_World` x9, `MI_R15_concrete_floor_03_UV` x2, `A_W1533_1537_metal`, `A_W1533_1537_reveal_dark`, `A_W1533_1537_stone_joint`, `B_MAT_Joint_recess`, `MI_R15_W1533_Brick`, `MI_R15_W1533_Limestone`, `MI_R15_bitumen_UV`, `MI_R15_dirt_floor_World`, `MI_R15_galvanized_World`, `MI_R15_japanese_cedar_planks_World`, `MI_R15_sexkaitb_UV`, `MI_R15_turf_World`, `MI_R15_wood_chips_World`, `MI_R15_yellow_brick_UV`, `SS_R01_BlackPaintedIron_001`, `SS_R01_BlackRubber_001`, `SS_R01_RecyclingPlastic_001`, `SS_R01_RefusePlastic_001`, `WLD_CTX_BLDG_garage_001`, `WLD_CTX_BLDG_metal` |
+| `R15_PART_opaque_xm05_yp02_part01` | opaque, Nanite | 46.3 by 44.8 by 16.3 | 30 | `MI_R15_concrete_floor_03_World` x7, `MI_R15_limestone_continuous_World` x3, `MI_R15_bitumen_UV` x2, `MI_R15_concrete_floor_03_UV` x2, `MI_R15_sexkaitb_UV` x2, `A_W1525_siding_pale`, `A_wells_1544_815228_0_metal`, `A_wells_1544_815228_0_wells_siding`, `A_wells_1544_815228_0_wells_siding_trim`, `A_wells_1548_304917_0_metal`, `A_wells_1548_304917_0_wells_paint_gray`, `B_MAT_Joint_recess`, `B_MAT_Wells_ornamental_iron`, `MI_R15_AsphaltShingle_Courses`, `MI_R15_japanese_cedar_planks_World`, `MI_R15_wood_chips_World`, `MI_R15_yellow_brick_UV`, `SS_R01_BlackPaintedIron_001`, `WLD_CTX_BLDG_metal` |
+| `R15_PART_opaque_xm05_yp03_part01` | opaque, Nanite | 41.6 by 46.2 by 15.8 | 30 | `MI_R15_limestone_continuous_World` x8, `MI_R15_sexkaitb_UV` x5, `MI_R15_bitumen_UV` x4, `MI_R15_concrete_floor_03_UV` x2, `A4_wells_1535_305867_0_metal`, `A4_wells_1535_305867_0_wells_white_trim`, `A4_wells_1539_815224_0_metal`, `A4_wells_1541_815223_0_metal`, `A4_wells_1541_815223_0_wells_awning`, `A_wells_1543_815222_0_metal`, `A_wells_1543_815222_0_wells_awning`, `A_wells_1547_815221_0_metal`, `A_wells_1547_815221_0_wells_awning`, `MI_R15_bitumen_World`, `MI_R15_brown_planks_09_UV` |
+| `R15_PART_opaque_xm05_yp03_part02` | opaque, Nanite | 40.1 by 50.5 by 9.9 | 14 | `MI_R15_concrete_floor_03_World` x4, `MI_R15_sexkaitb_UV` x2, `A_wells_1549_304564_0_metal`, `A_wells_1549_304564_0_wells_awning`, `B_MAT_Wells_opal_globe`, `B_MAT_Wells_ornamental_iron`, `B_MAT_Wells_ornamental_iron_001`, `MI_R15_asphalt_03_World`, `MI_R15_limestone_continuous_World`, `MI_R15_wood_chips_World` |
+| `R15_PART_opaque_xm05_yp04_part01` | opaque, Nanite | 41.4 by 47.8 by 18.2 | 30 | `MI_R15_limestone_continuous_World` x8, `MI_R15_sexkaitb_UV` x5, `MI_R15_bitumen_UV` x2, `MI_R15_concrete_floor_03_UV` x2, `A4_wells_1535_305867_0_metal`, `A4_wells_1539_815224_0_metal`, `A4_wells_1541_815223_0_metal`, `A_E1539_REAR2026_door_paint`, `A_E1539_REAR2026_metal`, `A_wells_1543_815222_0_metal`, `A_wells_1547_815221_0_metal`, `A_wells_1549_304564_0_metal`, `MI_R15_bitumen_World`, `MI_R15_brick_wall_08_UV`, `MI_R15_concrete_floor_03_World`, `WLD_CTX_BLDG_garage_001`, `WLD_CTX_BLDG_metal` |
+| `R15_PART_opaque_xm06_yp00_part01` | opaque, Nanite | 53.0 by 32.8 by 21.2 | 23 | `MI_R15_concrete_floor_03_World` x4, `MI_R15_bitumen_UV` x3, `MI_R15_concrete_floor_03_UV` x2, `MI_R15_limestone_continuous_World` x2, `MI_R15_sexkaitb_UV` x2, `A_W1544_door_paint`, `A_W1544_metal`, `A_W1550_MONTAUK_a1_pale_panel`, `A_W1550_MONTAUK_door_paint`, `A_W1550_MONTAUK_metal`, `B_MAT_Joint_recess`, `MI_R15_factory_brick_UV`, `MI_R15_wood_chips_World`, `WLD_CTX_BLDG_garage_001`, `WLD_CTX_BLDG_metal` |
+| `R15_PART_opaque_xm06_yp01_part01` | opaque, Nanite | 58.1 by 41.5 by 18.6 | 13 | `MI_R15_concrete_floor_03_World` x3, `B_MAT_Joint_recess`, `B_MAT_Limestone_gravel`, `MI_R15_asphalt_03_World`, `MI_R15_bitumen_UV`, `MI_R15_brick_wall_08_UV`, `MI_R15_concrete_floor_03_UV`, `MI_R15_limestone_continuous_World`, `MI_R15_wood_chips_World`, `MI_R15_yellow_brick_UV`, `WLD_CTX_BLDG_metal` |
+| `R15_PART_opaque_xm06_yp02_part01` | opaque, Nanite | 44.1 by 32.8 by 16.1 | 23 | `MI_R15_limestone_continuous_World` x7, `MI_R15_sexkaitb_UV` x3, `MI_R15_bitumen_UV` x2, `MI_R15_concrete_floor_03_UV` x2, `A_E1562_metal`, `A_wells_1548_304917_0_metal`, `A_wells_1548_304917_0_wells_paint_gray`, `A_wells_1550_815219_0_metal`, `A_wells_1550_815219_0_wells_paint_gray`, `A_wells_1552_304450_0_metal`, `A_wells_1552_304450_0_wells_awning`, `MI_R15_yellow_brick_UV`, `WLD_CTX_BLDG_metal` |
+| `R15_PART_opaque_xm06_yp03_part01` | opaque, Nanite | 41.3 by 31.0 by 20.0 | 22 | `MI_R15_sexkaitb_UV` x5, `MI_R15_limestone_continuous_World` x4, `MI_R15_bitumen_UV` x3, `MI_R15_concrete_floor_03_UV` x2, `A_E1553_1555_metal`, `A_wells_1549_304564_0_metal`, `A_wells_1549_304564_0_wells_awning`, `A_wells_1559_815208_0_metal`, `A_wells_1559_815208_0_wells_awning_red`, `A_wells_1559_815208_0_wells_store_base`, `A_wells_1561_815207_0_metal`, `A_wells_1561_815207_0_wells_awning` |
+| `R15_PART_opaque_xm06_yp04_part01` | opaque, Nanite | 40.8 by 4.3 by 19.5 | 11 | `MI_R15_sexkaitb_UV` x4, `MI_R15_limestone_continuous_World` x3, `A_E1553_1555_metal`, `A_wells_1549_304564_0_metal`, `A_wells_1559_815208_0_metal`, `A_wells_1561_815207_0_metal` |
+| `R15_PART_opaque_xm07_yp00_part01` | opaque, Nanite | 13.9 by 32.4 by 21.2 | 7 | `MI_R15_concrete_floor_03_World` x3, `A_W1550_MONTAUK_a1_pale_panel`, `A_W1550_MONTAUK_door_paint`, `A_W1550_MONTAUK_metal`, `MI_R15_sexkaitb_UV` |
+| `R15_PART_opaque_xm07_yp01_part01` | opaque, Nanite | 13.7 by 4.0 by 0.3 | 2 | `MI_R15_concrete_floor_03_World` x2 |
+| `R15_PART_opaque_xm07_yp02_part01` | opaque, Nanite | 13.8 by 27.9 by 4.0 | 6 | `A_E1562_door_paint`, `A_E1562_metal`, `MI_R15_bitumen_UV`, `MI_R15_concrete_floor_03_UV`, `MI_R15_limestone_continuous_World`, `MI_R15_sexkaitb_UV` |
+| `R15_PART_opaque_xm07_yp03_part01` | opaque, Nanite | 7.6 by 27.4 by 10.3 | 6 | `A_wells_1561_815207_0_metal`, `A_wells_1561_815207_0_wells_awning`, `MI_R15_bitumen_UV`, `MI_R15_concrete_floor_03_UV`, `MI_R15_limestone_continuous_World`, `MI_R15_sexkaitb_UV` |
+| `R15_PART_opaque_xm07_yp04_part01` | opaque, Nanite | 7.2 by 1.1 by 10.3 | 3 | `A_wells_1561_815207_0_metal`, `MI_R15_limestone_continuous_World`, `MI_R15_sexkaitb_UV` |
+
+### Trees and ground plants
+
+The two holders carry no building material. Each row is one group of identical plants drawn together.
+
+| Holder | Mesh | Plants in the group | Materials |
+|---|---|---|---|
+| `R15_InstancedTrees` | `Tree_English_Oak_Forest_01_A` | 1 | `MI_English_Oak_Bark_01`, `MI_English_Oak_Foliage_01` |
+| `R15_InstancedTrees` | `Tree_English_Oak_Forest_01_B` | 1 | `MI_English_Oak_Bark_01`, `MI_English_Oak_Foliage_01` |
+| `R15_InstancedTrees` | `Tree_English_Oak_Forest_01_C` | 1 | `MI_English_Oak_Bark_01`, `MI_English_Oak_Foliage_01` |
+| `R15_InstancedTrees` | `Tree_Ginkgo_01_A` | 1 | `MI_Ginkgo_Bark_01`, `MI_Ginkgo_Foliage_01` |
+| `R15_InstancedTrees` | `Tree_Ginkgo_01_B` | 1 | `MI_Ginkgo_Bark_01`, `MI_Ginkgo_Foliage_01` |
+| `R15_InstancedTrees` | `Tree_Ginkgo_01_C` | 1 | `MI_Ginkgo_Bark_01`, `MI_Ginkgo_Foliage_01` |
+| `R15_InstancedTrees` | `Tree_Norway_Maple_Forest_01_A` | 1 | `MI_Norway_Maple_Bark_01`, `MI_Norway_Maple_Foliage_01` |
+| `R15_InstancedTrees` | `Tree_Norway_Maple_Forest_01_B` | 1 | `MI_Norway_Maple_Bark_01`, `MI_Norway_Maple_Foliage_01` |
+| `R15_InstancedTrees` | `Tree_Norway_Maple_Forest_01_C` | 1 | `MI_Norway_Maple_Bark_01`, `MI_Norway_Maple_Foliage_01` |
+| `R15_InstancedTrees` | `Tree_Silver_Birch_01_A` | 1 | `MI_Silver_Birch_01_Bark_Blend`, `MI_Silver_Birch_01_Foliage`, `MI_Silver_Birch_01_Bark` |
+| `R15_InstancedTrees` | `Tree_Silver_Birch_01_B` | 1 | `MI_Silver_Birch_01_Bark_Blend`, `MI_Silver_Birch_01_Foliage`, `MI_Silver_Birch_01_Bark` |
+| `R15_InstancedLandscape` | `SM_R15_weed_plant_02_00` | 90 | `MI_R15_weed_plant_02` |
+| `R15_InstancedLandscape` | `SM_R15_weed_plant_02_01` | 90 | `MI_R15_weed_plant_02` |
+| `R15_InstancedLandscape` | `SM_R15_moss_01_02` | 45 | `MI_R15_moss_01` |
+| `R15_InstancedLandscape` | `SM_R15_grass_medium_02_04` | 23 | `MI_R15_grass_medium_02` |
+| `R15_InstancedLandscape` | `SM_R15_shrub_04_00` | 182 | `MI_R15_shrub_04` |
+| `R15_InstancedLandscape` | `SM_R15_shrub_04_01` | 182 | `MI_R15_shrub_04` |
+| `R15_InstancedLandscape` | `SM_R15_shrub_04_02` | 182 | `MI_R15_shrub_04` |
+| `R15_InstancedLandscape` | `SM_R15_shrub_04_03` | 182 | `MI_R15_shrub_04` |
+| `R15_InstancedLandscape` | `SM_R15_grass_medium_02_00` | 527 | `MI_R15_Lawn` |
+| `R15_InstancedLandscape` | `SM_R15_grass_medium_02_01` | 527 | `MI_R15_Lawn` |
+| `R15_InstancedLandscape` | `SM_R15_grass_medium_02_02` | 527 | `MI_R15_Lawn` |
+
+Totals: `R15_InstancedTrees` 11; `R15_InstancedLandscape` 2557. These match the 11 trees and 2,557 ground plants in the October release notes.

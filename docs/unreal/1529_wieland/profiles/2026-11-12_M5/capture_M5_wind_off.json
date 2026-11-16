@@ -1,0 +1,191 @@
+{
+ "info": {
+  "step": "Phase 7, J11: profile M5, second recording: all vegetation shown, leaves on, wind OFF",
+  "level": "/Game/Wieland1529/L_Site_M2",
+  "quality": "Epic (3), pool 1000, SP 100, t.MaxFPS 1000, Game View on",
+  "view_mode": "Lit",
+  "lighting": "as the first recording",
+  "foreground": {
+   "was": 1380058,
+   "front": true
+  },
+  "wind": {
+   "wind": "off",
+   "changed": 34
+  }
+ },
+ "started_unix": 1794518035.1036532,
+ "finished_unix": 1794518145.1917856,
+ "warmup_seconds": 8.0,
+ "csv_folder": "D:/Unreal_Engine_Projects/Wieland1527 5.9/Saved/Profiling\\CSV",
+ "error": null,
+ "jobs": [
+  {
+   "name": "M5b_path",
+   "kind": "path",
+   "job": {
+    "kind": "path",
+    "loc": [
+     3745.62,
+     1403.7,
+     158.2
+    ],
+    "end": [
+     -4654.38,
+     1403.7,
+     158.2
+    ],
+    "target": [
+     -754.38,
+     -311.1,
+     303.2
+    ],
+    "seconds": 60.0,
+    "name": "M5b_path"
+   },
+   "wall_start_unix": 1794518043.1284466,
+   "recorded_seconds": 60.00859469998977,
+   "ticks": 6692,
+   "foreground_fraction": 1.0,
+   "tick_ms_mean": 8.967169321677105,
+   "tick_ms_p95": 12.473098933696747,
+   "tick_ms_max": 20.142901688814163,
+   "camera_first": {
+    "loc": [
+     3744.0053660023304,
+     1403.7,
+     158.2
+    ],
+    "rot_pitch_yaw_roll": [
+     1.7252022785910734,
+     -159.13298112040263,
+     3.711162911638026e-08
+    ]
+   },
+   "camera_last": {
+    "loc": [
+     -4654.38,
+     1403.7,
+     158.2
+    ],
+    "rot_pitch_yaw_roll": [
+     1.9492981210073128,
+     -23.73472281886692,
+     6.253944946197807e-09
+    ]
+   },
+   "new_csv_files": [
+    "Profile(20261112_151403).csv"
+   ],
+   "tick_ms_series": null
+  },
+  {
+   "name": "M5b_near_tree",
+   "kind": "view",
+   "job": {
+    "kind": "view",
+    "name": "M5b_near_tree",
+    "loc": [
+     -1876.0,
+     1500.0,
+     170.0
+    ],
+    "rot": [
+     24.0,
+     -90.0,
+     0.0
+    ],
+    "seconds": 10.0
+   },
+   "wall_start_unix": 1794518113.1565955,
+   "recorded_seconds": 10.000310199975502,
+   "ticks": 1144,
+   "foreground_fraction": 1.0,
+   "tick_ms_mean": 8.745988199187742,
+   "tick_ms_p95": 13.49249854683876,
+   "tick_ms_max": 17.48409867286682,
+   "camera_first": {
+    "loc": [
+     -1876.0,
+     1500.0,
+     170.0
+    ],
+    "rot_pitch_yaw_roll": [
+     24.0,
+     -90.0,
+     0.0
+    ]
+   },
+   "camera_last": {
+    "loc": [
+     -1876.0,
+     1500.0,
+     170.0
+    ],
+    "rot_pitch_yaw_roll": [
+     24.0,
+     -90.0,
+     0.0
+    ]
+   },
+   "new_csv_files": [
+    "Profile(20261112_151513).csv"
+   ],
+   "tick_ms_series": null
+  },
+  {
+   "name": "M5b_far_trees",
+   "kind": "view",
+   "job": {
+    "kind": "view",
+    "name": "M5b_far_trees",
+    "loc": [
+     2500.0,
+     900.0,
+     170.0
+    ],
+    "rot": [
+     8.0,
+     -172.0,
+     0.0
+    ],
+    "seconds": 10.0
+   },
+   "wall_start_unix": 1794518133.1763196,
+   "recorded_seconds": 10.001749299990479,
+   "ticks": 1138,
+   "foreground_fraction": 1.0,
+   "tick_ms_mean": 8.79002460368593,
+   "tick_ms_p95": 12.275401502847672,
+   "tick_ms_max": 18.195997923612595,
+   "camera_first": {
+    "loc": [
+     2500.0,
+     900.0,
+     170.0
+    ],
+    "rot_pitch_yaw_roll": [
+     8.0,
+     -172.0,
+     0.0
+    ]
+   },
+   "camera_last": {
+    "loc": [
+     2500.0,
+     900.0,
+     170.0
+    ],
+    "rot_pitch_yaw_roll": [
+     8.0,
+     -172.0,
+     0.0
+    ]
+   },
+   "new_csv_files": [
+    "Profile(20261112_151533).csv"
+   ],
+   "tick_ms_series": null
+  }
+ ]
+}

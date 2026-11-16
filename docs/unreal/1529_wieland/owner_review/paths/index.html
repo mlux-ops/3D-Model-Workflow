@@ -1,0 +1,338 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Path Editor</title>
+<style>
+:root {
+  --bg: #f4f3ef; --panel: #ffffff; --ink: #1d1d1b; --muted: #66645e; --line: #dcdad3;
+  --accent: #2c5d8f; --warn: #a4502a; --ok: #2f6f4f; --chip: #ebe9e2;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #161615; --panel: #20201e; --ink: #ecebe6; --muted: #a3a19a; --line: #3a3935;
+    --accent: #6ea3d8; --warn: #e08a5f; --ok: #5fae86; --chip: #2c2b28;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #161615; --panel: #20201e; --ink: #ecebe6; --muted: #a3a19a; --line: #3a3935;
+  --accent: #6ea3d8; --warn: #e08a5f; --ok: #5fae86; --chip: #2c2b28;
+}
+* { box-sizing: border-box; }
+html, body { height: 100%; }
+body { margin: 0; background: var(--bg); color: var(--ink); font: 14px/1.4 "Segoe UI", system-ui, sans-serif;
+  display: grid; grid-template-columns: 320px minmax(0, 1fr); grid-template-rows: auto minmax(0, 1fr); }
+@media (max-width: 820px) { body { grid-template-columns: 1fr; grid-template-rows: auto auto minmax(60vh, 1fr); } }
+header { grid-column: 1 / -1; padding: 10px 16px; border-bottom: 1px solid var(--line); display: flex; gap: 12px; align-items: center; flex-wrap: wrap; }
+h1 { font-size: 17px; margin: 0; }
+.sub { color: var(--muted); font-size: 12px; }
+aside { padding: 12px 16px; border-right: 1px solid var(--line); overflow: auto; }
+h2 { font-size: 13px; text-transform: uppercase; letter-spacing: .04em; color: var(--muted); margin: 14px 0 6px; }
+label { display: block; font-size: 12px; color: var(--muted); margin-top: 6px; }
+input, select { width: 100%; padding: 5px 7px; border: 1px solid var(--line); border-radius: 5px; background: var(--panel); color: var(--ink); font: inherit; }
+.row { display: flex; gap: 6px; }
+.row > * { flex: 1; }
+button { border: 1px solid var(--line); background: var(--panel); color: var(--ink); border-radius: 6px; padding: 6px 10px; font: inherit; cursor: pointer; }
+button.primary { background: var(--accent); border-color: var(--accent); color: #fff; font-weight: 600; }
+button.danger { color: var(--warn); }
+button:disabled { opacity: .4; cursor: not-allowed; }
+.list { display: grid; gap: 4px; }
+.item { display: flex; gap: 6px; align-items: center; padding: 5px 6px; border: 1px solid var(--line); border-radius: 6px; background: var(--panel); cursor: pointer; }
+.item.on { border-color: var(--accent); box-shadow: 0 0 0 1px var(--accent); }
+.item input[type=checkbox] { width: auto; }
+.item .meta { color: var(--muted); font-size: 11px; margin-left: auto; white-space: nowrap; }
+.tabs { display: flex; gap: 4px; flex-wrap: wrap; }
+.tab { border-radius: 14px; background: var(--chip); padding: 4px 10px; font-size: 12px; }
+.tab[aria-pressed="true"] { background: var(--ink); color: var(--bg); border-color: var(--ink); }
+main { position: relative; overflow: hidden; background: #2a2a28; }
+canvas { display: block; width: 100%; height: 100%; touch-action: none; }
+#msg { position: absolute; left: 12px; bottom: 12px; right: 12px; color: #eee; font-size: 12px; background: rgba(0,0,0,.55); padding: 6px 10px; border-radius: 6px; pointer-events: none; }
+#status { font-size: 12px; margin-top: 6px; min-height: 16px; }
+#status.err { color: var(--warn); font-weight: 600; }
+#status.ok { color: var(--ok); }
+.pt { border: 1px solid var(--line); border-radius: 6px; padding: 8px; background: var(--panel); }
+.help { font-size: 12px; color: var(--muted); }
+.help li { margin: 2px 0; }
+.empty[hidden] { display: none; }
+.empty { color: #ddd; position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; text-align: center; padding: 24px; font-size: 15px; }
+</style>
+</head>
+<body>
+<header>
+  <h1>Walking paths</h1>
+  <span class="sub" id="summary">Loading…</span>
+  <span style="margin-left:auto" class="tabs" id="tabs" role="toolbar" aria-label="Plans"></span>
+</header>
+<aside>
+  <h2>Paths</h2>
+  <div class="list" id="paths"></div>
+  <div class="row" style="margin-top:6px">
+    <button id="new">New path</button>
+    <button id="request" class="primary">Request videos</button>
+  </div>
+  <div class="sub" id="renderinfo" style="margin-top:4px"></div>
+
+  <h2>This path</h2>
+  <label for="name">Name (letters, digits, spaces, - and _)</label>
+  <input id="name" maxlength="60" placeholder="Roof deck at sunset">
+  <div class="row">
+    <div><label for="speed">Walking speed (m/s)</label><input id="speed" type="number" min="0.2" max="5" step="0.1" value="1.2"></div>
+    <div><label for="eye">Eye height (m)</label><input id="eye" type="number" min="0.5" max="3" step="0.05" value="1.6"></div>
+  </div>
+  <div class="row">
+    <div><label for="res">Size</label><select id="res"><option value="1920,1080">1920 × 1080</option><option value="2560,1440">2560 × 1440</option><option value="3840,2160">3840 × 2160</option></select></div>
+    <div><label for="quality">Quality</label><select id="quality"><option value="realtime">Real time (fast)</option><option value="pathtraced">Path traced (slow)</option></select></div>
+  </div>
+  <div class="sub" id="pathinfo" style="margin-top:6px"></div>
+  <div class="row" style="margin-top:8px">
+    <button id="save" class="primary">Save</button>
+    <button id="undo">Undo last point</button>
+    <button id="del" class="danger">Delete</button>
+  </div>
+  <div id="status"></div>
+
+  <h2>Selected point</h2>
+  <div id="ptpanel" class="pt"><span class="help">Click a point on the plan to select it.</span></div>
+
+  <h2>How to draw</h2>
+  <ul class="help">
+    <li>Click on the plan to add the next point. Drag a point to move it.</li>
+    <li>To change floors, select the last point on the old floor, set "Next segment" to Stair or Lift, then switch to the new floor and click.</li>
+    <li>Scroll to zoom, drag with the right mouse button (or hold Space) to pan.</li>
+    <li>Delete or Backspace removes the selected point.</li>
+    <li>Save, then press "Request videos". The editor makes the videos on its next check; they appear in <code>delivery\video_paths\</code> and in the Google Drive delivery folder.</li>
+  </ul>
+</aside>
+<main>
+  <canvas id="cv"></canvas>
+  <div class="empty" id="empty" hidden></div>
+  <div id="msg"></div>
+</main>
+
+<script>
+const $ = s => document.querySelector(s);
+const cv = $("#cv"), ctx = cv.getContext("2d");
+let plans = [], planById = {}, images = {}, cur = null;
+let path = blankPath();
+let sel = -1, drag = -1, panning = false, spaceDown = false, panStart = null, pickTarget = false;
+let view = { s: 1, ox: 0, oy: 0 };   // screen = image * s + offset
+
+function blankPath() { return { name: "", speed_m_per_s: 1.2, fps: 30, resolution: [1920, 1080], quality: "realtime", points: [] }; }
+
+function h(tag, attrs, ...kids) {
+  const el = document.createElement(tag);
+  for (const [k, v] of Object.entries(attrs || {})) {
+    if (v === false || v == null) continue;
+    if (k === "class") el.className = v; else if (k.startsWith("on")) el.addEventListener(k.slice(2), v);
+    else el.setAttribute(k, v === true ? "" : String(v));
+  }
+  for (const kid of kids.flat()) if (kid != null && kid !== false) el.append(kid instanceof Node ? kid : document.createTextNode(String(kid)));
+  return el;
+}
+function status(text, kind) { const s = $("#status"); s.textContent = text; s.className = kind || ""; }
+
+// --- coordinates ---------------------------------------------------------------------------------
+function pxToWorld(p, u, v) {
+  return { x: p.world_x_at_left_cm + u / p.width_px * (p.world_x_at_right_cm - p.world_x_at_left_cm),
+           y: p.world_y_at_top_cm + v / p.height_px * (p.world_y_at_bottom_cm - p.world_y_at_top_cm) };
+}
+function worldToPx(p, x, y) {
+  return { u: (x - p.world_x_at_left_cm) / (p.world_x_at_right_cm - p.world_x_at_left_cm) * p.width_px,
+           v: (y - p.world_y_at_top_cm) / (p.world_y_at_bottom_cm - p.world_y_at_top_cm) * p.height_px };
+}
+function screenToImg(sx, sy) { return { u: (sx - view.ox) / view.s, v: (sy - view.oy) / view.s }; }
+function imgToScreen(u, v) { return { x: u * view.s + view.ox, y: v * view.s + view.oy }; }
+function eventPos(e) { const r = cv.getBoundingClientRect(); return { x: e.clientX - r.left, y: e.clientY - r.top }; }
+
+// --- drawing -------------------------------------------------------------------------------------
+function fit() {
+  const r = cv.getBoundingClientRect(), dpr = window.devicePixelRatio || 1;
+  cv.width = r.width * dpr; cv.height = r.height * dpr; ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+  if (cur) { const s = Math.min(r.width / cur.width_px, r.height / cur.height_px) * 0.95;
+    view = { s, ox: (r.width - cur.width_px * s) / 2, oy: (r.height - cur.height_px * s) / 2 }; }
+  draw();
+}
+function draw() {
+  const r = cv.getBoundingClientRect();
+  ctx.clearRect(0, 0, r.width, r.height);
+  if (!cur) return;
+  const img = images[cur.id];
+  if (img && img.complete) ctx.drawImage(img, view.ox, view.oy, cur.width_px * view.s, cur.height_px * view.s);
+  const pts = path.points.map(p => { const q = worldToPx(cur, p.x_cm, p.y_cm); return { ...imgToScreen(q.u, q.v), on: p.plan === cur.id, p }; });
+  // segments
+  for (let i = 1; i < pts.length; i++) {
+    const a = pts[i - 1], b = pts[i], both = a.on && b.on, seg = a.p.segment || "walk";
+    ctx.strokeStyle = both ? (seg === "walk" ? "#e8a33a" : "#5fb0e8") : "rgba(232,163,58,.25)";
+    ctx.lineWidth = both ? 3 : 2; ctx.setLineDash(seg === "walk" ? [] : [8, 6]);
+    ctx.beginPath(); ctx.moveTo(a.x, a.y); ctx.lineTo(b.x, b.y); ctx.stroke();
+  }
+  ctx.setLineDash([]);
+  // look targets and directions
+  pts.forEach((q, i) => {
+    if (!q.on) return;
+    const L = q.p.look || { mode: "forward" };
+    if (L.mode === "target") { const t = worldToPx(cur, L.x_cm, L.y_cm), s = imgToScreen(t.u, t.v);
+      ctx.strokeStyle = "rgba(95,176,232,.8)"; ctx.setLineDash([3, 4]); ctx.beginPath(); ctx.moveTo(q.x, q.y); ctx.lineTo(s.x, s.y); ctx.stroke(); ctx.setLineDash([]);
+      ctx.fillStyle = "#5fb0e8"; ctx.fillRect(s.x - 4, s.y - 4, 8, 8); }
+    if (L.mode === "yaw") { const a = (L.yaw_deg - 90) * Math.PI / 180;
+      ctx.strokeStyle = "#5fb0e8"; ctx.lineWidth = 2; ctx.beginPath(); ctx.moveTo(q.x, q.y); ctx.lineTo(q.x + 28 * Math.cos(a), q.y + 28 * Math.sin(a)); ctx.stroke(); }
+  });
+  // points
+  pts.forEach((q, i) => {
+    if (!q.on) return;
+    ctx.beginPath(); ctx.arc(q.x, q.y, i === sel ? 8 : 6, 0, Math.PI * 2);
+    ctx.fillStyle = i === 0 ? "#3fae6a" : (i === pts.length - 1 ? "#d9534f" : "#e8a33a"); ctx.fill();
+    ctx.lineWidth = i === sel ? 3 : 1.5; ctx.strokeStyle = "#fff"; ctx.stroke();
+    ctx.fillStyle = "#fff"; ctx.font = "11px Segoe UI, sans-serif"; ctx.fillText(String(i + 1) + (q.p.pause_s ? "  ⏸" + q.p.pause_s + "s" : ""), q.x + 9, q.y - 8);
+  });
+  $("#msg").textContent = pickTarget ? "Click where the camera should look." :
+    (cur.label + " · click to add a point" + (path.points.length ? " · " + path.points.length + " points" : ""));
+}
+
+// --- path info -----------------------------------------------------------------------------------
+function lengthM() {
+  let L = 0; for (let i = 1; i < path.points.length; i++) { const a = path.points[i - 1], b = path.points[i];
+    L += Math.hypot(b.x_cm - a.x_cm, b.y_cm - a.y_cm, b.z_cm - a.z_cm) / 100; } return L;
+}
+function info() {
+  const L = lengthM(), sp = +$("#speed").value || 1.2, pause = path.points.reduce((t, p) => t + (p.pause_s || 0), 0);
+  $("#pathinfo").textContent = path.points.length < 2 ? "Add at least two points." :
+    `${path.points.length} points · ${L.toFixed(1)} m · about ${(L / sp + pause).toFixed(0)} s of video`;
+  $("#undo").disabled = !path.points.length;
+}
+
+// --- selected point panel ------------------------------------------------------------------------
+function pointPanel() {
+  const box = $("#ptpanel"); box.replaceChildren();
+  if (sel < 0 || !path.points[sel]) { box.append(h("span", { class: "help" }, "Click a point on the plan to select it.")); return; }
+  const p = path.points[sel], L = p.look || { mode: "forward" };
+  const pause = h("input", { type: "number", min: 0, max: 60, step: 0.5, value: p.pause_s || 0, oninput: e => { p.pause_s = Math.max(0, +e.target.value || 0); info(); draw(); } });
+  const seg = h("select", { onchange: e => { if (e.target.value === "walk") delete p.segment; else p.segment = e.target.value; draw(); } },
+    ["walk", "stair", "lift"].map(v => h("option", { value: v, selected: (p.segment || "walk") === v }, { walk: "Walk", stair: "Stair (change floor)", lift: "Lift (change floor)" }[v])));
+  const look = h("select", { onchange: e => { const m = e.target.value;
+      if (m === "forward") p.look = { mode: "forward" };
+      if (m === "yaw") p.look = { mode: "yaw", yaw_deg: 0, pitch_deg: 0 };
+      if (m === "target") { pickTarget = true; }
+      pointPanel(); draw(); } },
+    h("option", { value: "forward", selected: L.mode === "forward" }, "Look ahead along the path"),
+    h("option", { value: "target", selected: L.mode === "target" }, "Look at a spot (click it)"),
+    h("option", { value: "yaw", selected: L.mode === "yaw" }, "Hold a direction"));
+  box.append(h("div", { class: "sub" }, `Point ${sel + 1} on ${planById[p.plan] ? planById[p.plan].label : p.plan}`),
+    h("label", {}, "Pause here (seconds)"), pause,
+    h("label", {}, "Next segment"), seg,
+    h("label", {}, "Camera looks"), look);
+  if (L.mode === "yaw") {
+    box.append(h("div", { class: "row" },
+      h("div", {}, h("label", {}, "Direction (° from north, clockwise)"), h("input", { type: "number", step: 5, value: L.yaw_deg, oninput: e => { L.yaw_deg = +e.target.value || 0; draw(); } })),
+      h("div", {}, h("label", {}, "Tilt (° up)"), h("input", { type: "number", step: 5, min: -60, max: 60, value: L.pitch_deg || 0, oninput: e => { L.pitch_deg = +e.target.value || 0; } }))));
+  }
+  if (L.mode === "target") box.append(h("div", { class: "row" },
+    h("div", {}, h("label", {}, "Target height above floor (m)"), h("input", { type: "number", step: 0.5, value: ((L.z_cm - (planById[p.plan] || {}).floor_z_cm) / 100 || 1.5).toFixed(1),
+      oninput: e => { L.z_cm = (planById[p.plan] || {}).floor_z_cm + (+e.target.value || 0) * 100; } })),
+    h("div", {}, h("label", {}, " "), h("button", { onclick: () => { pickTarget = true; draw(); } }, "Pick again"))));
+}
+
+// --- mouse ---------------------------------------------------------------------------------------
+function hit(sx, sy) {
+  for (let i = path.points.length - 1; i >= 0; i--) { const p = path.points[i]; if (p.plan !== cur.id) continue;
+    const q = worldToPx(cur, p.x_cm, p.y_cm), s = imgToScreen(q.u, q.v); if (Math.hypot(s.x - sx, s.y - sy) < 10) return i; }
+  return -1;
+}
+cv.addEventListener("contextmenu", e => e.preventDefault());
+cv.addEventListener("pointerdown", e => {
+  if (!cur) return;
+  const m = eventPos(e);
+  try { cv.setPointerCapture(e.pointerId); } catch (_) { /* some input devices have no capturable pointer */ }
+  if (e.button === 2 || spaceDown) { panning = true; panStart = { x: m.x, y: m.y, ox: view.ox, oy: view.oy }; return; }
+  const im = screenToImg(m.x, m.y);
+  if (pickTarget && sel >= 0) { const w = pxToWorld(cur, im.u, im.v), p = path.points[sel];
+    p.look = { mode: "target", x_cm: w.x, y_cm: w.y, z_cm: cur.floor_z_cm + 150 }; pickTarget = false; pointPanel(); draw(); return; }
+  const i = hit(m.x, m.y);
+  if (i >= 0) { sel = i; drag = i; pointPanel(); draw(); return; }
+  if (im.u < 0 || im.v < 0 || im.u > cur.width_px || im.v > cur.height_px) return;
+  const w = pxToWorld(cur, im.u, im.v), eye = (+$("#eye").value || 1.6) * 100;
+  path.points.push({ plan: cur.id, x_cm: Math.round(w.x), y_cm: Math.round(w.y), z_cm: Math.round(cur.floor_z_cm + eye), pause_s: 0, look: { mode: "forward" } });
+  sel = path.points.length - 1; drag = sel; pointPanel(); info(); draw();
+});
+cv.addEventListener("pointermove", e => {
+  const m = eventPos(e);
+  if (panning) { view.ox = panStart.ox + m.x - panStart.x; view.oy = panStart.oy + m.y - panStart.y; draw(); return; }
+  if (drag >= 0) { const im = screenToImg(m.x, m.y), w = pxToWorld(cur, im.u, im.v), p = path.points[drag];
+    p.x_cm = Math.round(w.x); p.y_cm = Math.round(w.y); info(); draw(); }
+});
+cv.addEventListener("pointerup", () => { drag = -1; panning = false; });
+cv.addEventListener("wheel", e => { e.preventDefault(); const m = eventPos(e), k = e.deltaY < 0 ? 1.15 : 1 / 1.15;
+  view.ox = m.x - (m.x - view.ox) * k; view.oy = m.y - (m.y - view.oy) * k; view.s *= k; draw(); }, { passive: false });
+document.addEventListener("keydown", e => {
+  if (e.target.tagName === "INPUT" || e.target.tagName === "SELECT") return;
+  if (e.code === "Space") { spaceDown = true; e.preventDefault(); }
+  if ((e.key === "Delete" || e.key === "Backspace") && sel >= 0) { path.points.splice(sel, 1); sel = Math.min(sel, path.points.length - 1); pointPanel(); info(); draw(); }
+  if (e.key === "Escape") { pickTarget = false; draw(); }
+});
+document.addEventListener("keyup", e => { if (e.code === "Space") spaceDown = false; });
+window.addEventListener("resize", fit);
+
+// --- plans, paths, server ------------------------------------------------------------------------
+function showPlan(id) {
+  cur = planById[id]; document.querySelectorAll(".tab").forEach(t => t.setAttribute("aria-pressed", String(t.dataset.id === id)));
+  if (!images[id]) { const img = new Image(); img.onload = draw; img.src = "/plan/" + encodeURIComponent(cur.image); images[id] = img; }
+  fit();
+}
+async function api(url, body) {
+  const r = await fetch(url, body ? { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify(body) } : {});
+  const j = await r.json(); if (!r.ok || j.ok === false) throw new Error(j.error || ("HTTP " + r.status)); return j;
+}
+async function refreshList() {
+  const j = await api("/api/paths"), box = $("#paths"); box.replaceChildren();
+  if (!j.paths.length) box.append(h("div", { class: "help" }, "No paths yet. Draw one on the plan and press Save."));
+  for (const p of j.paths) {
+    const cb = h("input", { type: "checkbox", "data-name": p.name, onclick: e => e.stopPropagation() });
+    box.append(h("div", { class: "item" + (p.name === path.name ? " on" : ""), onclick: () => load(p.name) }, cb, p.name,
+      h("span", { class: "meta" }, p.points + " pts" + (p.render_requested_at ? " · requested " + p.render_requested_at.slice(5, 16).replace("T", " ") : ""))));
+  }
+  const lr = j.last_render;
+  $("#renderinfo").textContent = (j.request_pending ? "A video request is waiting for the editor. " : "") +
+    (lr && lr.time ? "Last videos made " + String(lr.time).slice(0, 16).replace("T", " ") + "." : "");
+}
+async function load(name) {
+  try { const d = await api("/api/path/" + encodeURIComponent(name)); path = d; sel = -1;
+    $("#name").value = d.name; $("#speed").value = d.speed_m_per_s; $("#res").value = d.resolution.join(","); $("#quality").value = d.quality;
+    if (d.points.length && planById[d.points[0].plan]) showPlan(d.points[0].plan);
+    pointPanel(); info(); draw(); refreshList(); status("Opened " + d.name + ".");
+  } catch (e) { status("Could not open: " + e.message, "err"); }
+}
+$("#new").onclick = () => { path = blankPath(); sel = -1; $("#name").value = ""; pointPanel(); info(); draw(); refreshList(); status("New path: click on the plan."); };
+$("#undo").onclick = () => { path.points.pop(); sel = path.points.length - 1; pointPanel(); info(); draw(); };
+$("#speed").oninput = info;
+$("#save").onclick = async () => {
+  path.name = $("#name").value.trim(); path.speed_m_per_s = +$("#speed").value || 1.2;
+  path.resolution = $("#res").value.split(",").map(Number); path.quality = $("#quality").value;
+  try { await api("/api/save", path); status("Saved " + path.name + ".", "ok"); refreshList(); }
+  catch (e) { status("NOT SAVED: " + e.message, "err"); }
+};
+$("#del").onclick = async () => {
+  const n = $("#name").value.trim(); if (!n || !confirm("Move the path “" + n + "” to the trash folder?")) return;
+  try { await api("/api/delete", { name: n }); $("#new").onclick(); status("Moved " + n + " to the trash folder.", "ok"); }
+  catch (e) { status("Not deleted: " + e.message, "err"); }
+};
+$("#request").onclick = async () => {
+  let names = [...document.querySelectorAll("#paths input[type=checkbox]:checked")].map(c => c.dataset.name);
+  if (!names.length && $("#name").value.trim()) names = [$("#name").value.trim()];
+  if (!names.length) { status("Tick the paths to render (or open one) first.", "err"); return; }
+  try { const j = await api("/api/request", { names }); status("Videos requested for: " + names.join(", ") + ". The editor makes them on its next check.", "ok"); refreshList(); }
+  catch (e) { status("Request failed: " + e.message + " (save the path first)", "err"); }
+};
+
+api("/api/plans").then(m => {
+  plans = m.plans || []; planById = Object.fromEntries(plans.map(p => [p.id, p]));
+  if (!plans.length) { const e = $("#empty"); e.hidden = false;
+    e.textContent = "The plan images are not made yet. The editor is making them now (Phase 18); reload this page in a little while.";
+    $("#summary").textContent = "Waiting for plan images"; refreshList().catch(() => {}); return; }
+  $("#tabs").replaceChildren(...plans.map(p => h("button", { class: "tab", "data-id": p.id, "aria-pressed": "false", onclick: () => showPlan(p.id) }, p.label)));
+  $("#summary").textContent = plans.length + " plans";
+  showPlan(plans[0].id); info(); refreshList();
+}).catch(() => { $("#summary").textContent = "Could not reach the path server. Start it with “Open path editor.bat”."; });
+</script>
+</body>
+</html>

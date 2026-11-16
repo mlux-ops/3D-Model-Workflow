@@ -1,0 +1,299 @@
+"""Phase 5: build the candidates, and switch them on and off in the scene.
+
+Runs inside the Unreal editor:
+
+    import wieland_candidates as wc
+    wc.build_candidates(csv_path)          # one instance per row, saved by name
+    wc.alternatives_on(csv_path)           # show the candidates in the open level
+    wc.alternatives_off()                  # back to the Revit materials
+
+csv_path is material_candidates.csv, or material_alternatives.csv (the table of
+swaps); both carry the columns material, revit_asset and candidate_asset.
+
+A candidate is an instance (a material that only sets the values of a parent
+material). A switchable alternative is a material swap the scene can turn on
+and off: turning it on puts the candidate on every mesh slot of the open
+level that shows the Revit material, as an override on the placed object;
+turning it off removes exactly those overrides. No material, mesh or other
+asset that Datasmith created is edited, and nothing is saved by these calls.
+A level must never be saved while the alternatives are on.
+"""
+
+import csv
+import json
+
+import unreal
+
+MEL = unreal.MaterialEditingLibrary
+TAG = "W1529Alt"
+
+_STATE = {"on": [], "table": None}
+
+
+def _rows(csv_path):
+    with open(csv_path, encoding="utf-8", newline="") as handle:
+        return list(csv.DictReader(handle))
+
+
+def verify_candidates(csv_path):
+    """Compare every instance with its row: parent, numbers, colours, images. Returns the rows that differ."""
+    wrong = {}
+    for row in _rows(csv_path):
+        instance = unreal.load_asset(row["candidate_asset"])
+        if instance is None:
+            wrong[row["material"]] = ["asset missing"]
+            continue
+        found = []
+        parent = instance.get_editor_property("parent")
+        if parent is None or parent.get_path_name().split(".")[0] != row["parent"]:
+            found.append("parent")
+        for key, value in json.loads(row["scalars"]).items():
+            if abs(MEL.get_material_instance_scalar_parameter_value(instance, key) - float(value)) > 1e-4:
+                found.append(key)
+        for key, value in json.loads(row["vectors"]).items():
+            colour = MEL.get_material_instance_vector_parameter_value(instance, key)
+            if max(abs(a - b) for a, b in zip((colour.r, colour.g, colour.b, colour.a), value)) > 1e-4:
+                found.append(key)
+        for key, value in json.loads(row["textures"]).items():
+            texture = MEL.get_material_instance_texture_parameter_value(instance, key)
+            if texture is None or texture.get_path_name().split(".")[0] != value:
+                found.append(key)
+        for key, value in json.loads(row["switches"]).items():
+            if bool(MEL.get_material_instance_static_switch_parameter_value(instance, key)) != bool(value):
+                found.append(key)
+        if found:
+            wrong[row["material"]] = found
+    return wrong
+
+
+def build_candidates(csv_path, start=0, count=1000, rebuild=False, only=None):
+    """Build and save the instances of rows [start, start + count); returns a summary.
+
+    only: a list of material names; when given, other rows are passed over.
+    """
+    tools = unreal.AssetToolsHelpers.get_asset_tools()
+    built, skipped, problems = [], 0, []
+    for row in _rows(csv_path)[start:start + count]:
+        if only is not None and row["material"] not in only:
+            continue
+        path = row["candidate_asset"]
+        exists = unreal.EditorAssetLibrary.does_asset_exist(path)
+        if exists and not rebuild:
+            skipped += 1
+            continue
+        try:
+            if exists:
+                instance = unreal.load_asset(path)
+                MEL.clear_all_material_instance_parameters(instance)
+            else:
+                folder, name = path.rsplit("/", 1)
+                instance = tools.create_asset(name, folder, unreal.MaterialInstanceConstant,
+                                              unreal.MaterialInstanceConstantFactoryNew())
+            parent = unreal.load_asset(row["parent"])
+            if parent is None:
+                raise RuntimeError("parent missing: " + row["parent"])
+            MEL.set_material_instance_parent(instance, parent)
+            for key, value in json.loads(row["switches"]).items():
+                MEL.set_material_instance_static_switch_parameter_value(instance, key, bool(value))
+            for key, value in json.loads(row["scalars"]).items():
+                if not MEL.set_material_instance_scalar_parameter_value(instance, key, float(value)):
+                    problems.append("%s: no number called %s" % (row["material"], key))
+            for key, value in json.loads(row["vectors"]).items():
+                if not MEL.set_material_instance_vector_parameter_value(instance, key, unreal.LinearColor(*value)):
+                    problems.append("%s: no colour called %s" % (row["material"], key))
+            for key, value in json.loads(row["textures"]).items():
+                texture = unreal.load_asset(value)
+                if texture is None:
+                    problems.append("%s: image missing: %s" % (row["material"], value))
+                    continue
+                if not MEL.set_material_instance_texture_parameter_value(instance, key, texture):
+                    problems.append("%s: no image called %s" % (row["material"], key))
+            MEL.update_material_instance(instance)
+            if not unreal.EditorAssetLibrary.save_asset(path, False):
+                problems.append("%s: not saved" % row["material"])
+            built.append(row["material"])
+        except Exception as error:  # one bad row must not stop the rest
+            problems.append("%s: %s" % (row["material"], error))
+    return {"built": len(built), "skipped_existing": skipped, "problems": problems}
+
+
+def _components():
+    world = unreal.get_editor_subsystem(unreal.UnrealEditorSubsystem).get_editor_world()
+    for actor in unreal.GameplayStatics.get_all_actors_of_class(world, unreal.Actor):
+        for component in actor.get_components_by_class(unreal.MeshComponent):
+            yield actor, component
+
+
+def count_uses(csv_path):
+    """How many mesh slots of the open level show each Revit material that has a candidate."""
+    wanted = {row["revit_asset"].split(".")[0]: row["material"] for row in _rows(csv_path)}
+    uses = {}
+    for _actor, component in _components():
+        for index in range(component.get_num_materials()):
+            material = component.get_material(index)
+            if material is None:
+                continue
+            key = material.get_path_name().split(".")[0]
+            if key in wanted:
+                uses[wanted[key]] = uses.get(wanted[key], 0) + 1
+    return uses
+
+
+def largest_surfaces(csv_path, out_json):
+    """For each Revit material that has a candidate: the largest placed object that shows it.
+
+    Writes {material: {"largest_m": [a, b], "objects": n, "object": label, "at_cm": [x, y, z]}}; a and b are
+    the two longest sides of the object's bounding box in metres, which bounds the largest uninterrupted
+    surface from above.
+    """
+    wanted = {row["revit_asset"].split(".")[0]: row["material"] for row in _rows(csv_path)}
+    found = {}
+    for actor, component in _components():
+        names = set()
+        for index in range(component.get_num_materials()):
+            material = component.get_material(index)
+            if material is not None:
+                name = wanted.get(material.get_path_name().split(".")[0])
+                if name:
+                    names.add(name)
+        if not names:
+            continue
+        origin, extent = actor.get_actor_bounds(False)
+        sides = sorted([extent.x * 0.02, extent.y * 0.02, extent.z * 0.02], reverse=True)
+        for name in names:
+            entry = found.setdefault(name, {"largest_m": [0.0, 0.0], "objects": 0, "object": "", "at_cm": []})
+            entry["objects"] += 1
+            if sides[0] * sides[1] > entry["largest_m"][0] * entry["largest_m"][1]:
+                entry["largest_m"] = [round(sides[0], 3), round(sides[1], 3)]
+                entry["object"] = actor.get_actor_label()
+                entry["at_cm"] = [round(origin.x, 1), round(origin.y, 1), round(origin.z, 1)]
+    with open(out_json, "w", encoding="utf-8") as handle:
+        json.dump(found, handle, indent=1, sort_keys=True)
+    return {"materials_placed": len(found), "materials_not_placed": len(set(wanted.values()) - set(found))}
+
+
+def alternatives_on(csv_path, only=None):
+    """Put each candidate on every slot of the open level that shows its Revit material.
+
+    Only slots that have no override of their own are touched, so that
+    alternatives_off() can put back exactly what was there (nothing).
+    """
+    if _STATE["on"]:
+        return {"error": "the alternatives are already on; call alternatives_off() first"}
+    swaps = {}
+    for row in _rows(csv_path):
+        if only and row["material"] not in only:
+            continue
+        candidate = unreal.load_asset(row["candidate_asset"])
+        if candidate is not None:
+            swaps[row["revit_asset"].split(".")[0]] = candidate
+    slots, kept = 0, 0
+    for actor, component in _components():
+        overrides = list(component.get_editor_property("override_materials"))
+        for index in range(component.get_num_materials()):
+            material = component.get_material(index)
+            if material is None:
+                continue
+            candidate = swaps.get(material.get_path_name().split(".")[0])
+            if candidate is None:
+                continue
+            if index < len(overrides) and overrides[index] is not None:
+                kept += 1
+                continue
+            component.set_material(index, candidate)
+            _STATE["on"].append((component, index))
+            slots += 1
+    return {"slots_switched": slots, "slots_left_because_they_had_their_own_override": kept,
+            "candidates": len(swaps)}
+
+
+def alternatives_off():
+    """Remove exactly the overrides that alternatives_on() set."""
+    removed = 0
+    for component, index in _STATE["on"]:
+        try:
+            component.set_material(index, None)
+            removed += 1
+        except Exception:
+            pass
+    _STATE["on"] = []
+    return {"slots_put_back": removed}
+
+
+def alternatives_state():
+    return {"slots_on": len(_STATE["on"])}
+
+
+STATIONS = {
+    "S1": ([-754.4, 1400.0, 158.6], [8.0, -88.82, 0.0]),
+    "S3": ([-3254.4, 1400.0, 162.0], [8.0, -43.82, 0.0]),
+    "S6": ([-3508.8, 210.0, 173.1], [8.0, 1.18, 0.0]),
+}
+STATION_FOV = 73.74
+STATION_TAG = "W1529TempStation"
+REVIT_STAND_INS = ("Site_GRADE_GRADE", "Generic_Models_SURROUNDING_BUILDINGS_SURROUNDING_BUILDINGS")
+
+
+def _actors():
+    world = unreal.get_editor_subsystem(unreal.UnrealEditorSubsystem).get_editor_world()
+    return unreal.GameplayStatics.get_all_actors_of_class(world, unreal.Actor)
+
+
+def stations_begin():
+    """Place one temporary camera per station and hide Revit's slab and massing in the editor only."""
+    subsystem = unreal.get_editor_subsystem(unreal.EditorActorSubsystem)
+    made = 0
+    for name, (location, rotation) in STATIONS.items():
+        camera = subsystem.spawn_actor_from_class(
+            unreal.CameraActor, unreal.Vector(*location),
+            unreal.Rotator(pitch=rotation[0], yaw=rotation[1], roll=rotation[2]))
+        camera.set_actor_label("TEMP_" + name)
+        camera.tags = [STATION_TAG, name]
+        component = camera.camera_component
+        component.set_editor_property("field_of_view", STATION_FOV)
+        component.set_editor_property("constrain_aspect_ratio", True)
+        component.set_editor_property("aspect_ratio", 16.0 / 9.0)
+        made += 1
+    hidden = 0
+    for actor in _actors():
+        if actor.get_actor_label() in REVIT_STAND_INS:
+            actor.set_is_temporarily_hidden_in_editor(True)
+            hidden += 1
+    return {"cameras": made, "hidden": hidden}
+
+
+def station_shot(name, out_path, width=1920, height=1080):
+    for actor in _actors():
+        tags = [str(t) for t in actor.tags]
+        if STATION_TAG in tags and name in tags:
+            unreal.AutomationLibrary.take_high_res_screenshot(width, height, out_path, actor)
+            return True
+    return False
+
+
+def stations_end():
+    """Remove the temporary cameras and show Revit's slab and massing again."""
+    subsystem = unreal.get_editor_subsystem(unreal.EditorActorSubsystem)
+    removed, shown = 0, 0
+    for actor in list(_actors()):
+        if STATION_TAG in [str(t) for t in actor.tags]:
+            subsystem.destroy_actor(actor)
+            removed += 1
+        elif actor.get_actor_label() in REVIT_STAND_INS:
+            actor.set_is_temporarily_hidden_in_editor(False)
+            shown += 1
+    return {"cameras_removed": removed, "shown_again": shown}
+
+
+def dirty_packages():
+    utils = unreal.EditorLoadingAndSavingUtils
+    return sorted(p.get_name() for p in list(utils.get_dirty_content_packages()) + list(utils.get_dirty_map_packages()))
+
+
+def reload_dirty(prefixes):
+    """Put packages the editor marked as changed back to their state on disk; nothing is saved."""
+    utils = unreal.EditorLoadingAndSavingUtils
+    packages = [p for p in list(utils.get_dirty_content_packages()) if p.get_name().startswith(tuple(prefixes))]
+    if packages:
+        utils.reload_packages(packages, unreal.ReloadPackagesInteractionMode.ASSUME_POSITIVE)
+    return {"reloaded": len(packages), "still_marked": dirty_packages()}

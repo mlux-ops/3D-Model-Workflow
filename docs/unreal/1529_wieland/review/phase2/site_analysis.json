@@ -1,0 +1,1169 @@
+{
+ "inputs": {
+  "parcels": {
+   "count": 258,
+   "coordinate_system": {
+    "wkid": 102671,
+    "latestWkid": 3435
+   }
+  },
+  "footprints": {
+   "count": 170,
+   "coordinate_system": {
+    "wkid": 103037,
+    "latestWkid": 6455
+   }
+  },
+  "dsm": {
+   "cells": [
+    985,
+    985
+   ],
+   "cell_ft": [
+    1.0,
+    1.0
+   ],
+   "dtype": "float32",
+   "geotiff_tags": {
+    "33550": [
+     1.0,
+     1.0,
+     1.0
+    ],
+    "33922": [
+     0.0,
+     0.0,
+     0.0,
+     1173734.9669,
+     1911137.8699,
+     0.0
+    ],
+    "34735": [
+     1.0,
+     1.0,
+     0.0,
+     28.0,
+     1024.0,
+     0.0,
+     1.0,
+     1.0,
+     1025.0,
+     0.0,
+     1.0,
+     1.0,
+     1026.0,
+     34737.0,
+     44.0,
+     0.0,
+     2048.0,
+     0.0,
+     1.0,
+     6318.0,
+     2049.0,
+     34737.0,
+     122.0,
+     44.0
+    ],
+    "34737": "PCS Name = NAD_1983_2011_Illinois_East_ftUS|GCS Name = GCS_NAD83_2011|Datum = D_NAD83_National_Spatial_Reference_System_2011|Ellipsoid = GRS_1980|Primem = Greenwich||ESRI PE String = COMPD_CS[\"unknown\",PROJCS[\"NAD_1983_2011_Illinois_East_ftUS\",GEOGCS[\"GCS_NAD83_2011\",DATUM[\"D_NAD83_National_Spatial_Reference_System_2011\",SPHEROID[\"GRS_1980\",6378137.0,298.257222101]],PRIMEM[\"Greenwich\",0.0],UNIT[\"Degree\",0.0174532925199433]],PROJECTION[\"Transverse_Mercator\"],PARAMETER[\"false_easting\",984250.0],PARAMETER[\"false_northing\",0.0],PARAMETER[\"central_meridian\",-88.3333333333333],PARAMETER[\"scale_factor\",0.999975],PARAMETER[\"latitude_of_origin\",36.6666666666667],UNIT[\"Foot_US\",0.30480060960121924]],VERTCS[\"NAVD88 height (ftUS)\",VDATUM[\"North American Vertical Datum 1988\",AUTHORITY[\"EPSG\",\"5103\"]],PARAMETER[\"Vertical_Shift\",0.0,AUTHORITY[\"Esri\",\"100006\"]],PARAMETER[\"Direction\",1.0,AUTHORITY[\"Esri\",\"100007\"]],UNIT[\"US survey foot\",0.3048006096012192,AUTHORITY[\"EPSG\",\"9003\"]],AUTHORITY[\"EPSG\",\"6360\"]]]|VCS Name = NAVD88 height (ftUS)|Datum Name = North American Vertical Datum 1988|Unit Name = US survey foot|Shift Value = 0.0|Direction Value = 1.0||"
+   }
+  },
+  "dtm": {
+   "cells": [
+    985,
+    985
+   ],
+   "cell_ft": [
+    1.0,
+    1.0
+   ],
+   "dtype": "float32",
+   "geotiff_tags": {
+    "33550": [
+     1.0,
+     1.0,
+     1.0
+    ],
+    "33922": [
+     0.0,
+     0.0,
+     0.0,
+     1173734.9669,
+     1911137.8699,
+     0.0
+    ],
+    "34735": [
+     1.0,
+     1.0,
+     0.0,
+     28.0,
+     1024.0,
+     0.0,
+     1.0,
+     1.0,
+     1025.0,
+     0.0,
+     1.0,
+     1.0,
+     1026.0,
+     34737.0,
+     44.0,
+     0.0,
+     2048.0,
+     0.0,
+     1.0,
+     6318.0,
+     2049.0,
+     34737.0,
+     122.0,
+     44.0
+    ],
+    "34737": "PCS Name = NAD_1983_2011_Illinois_East_ftUS|GCS Name = GCS_NAD83_2011|Datum = D_NAD83_National_Spatial_Reference_System_2011|Ellipsoid = GRS_1980|Primem = Greenwich||ESRI PE String = COMPD_CS[\"unknown\",PROJCS[\"NAD_1983_2011_Illinois_East_ftUS\",GEOGCS[\"GCS_NAD83_2011\",DATUM[\"D_NAD83_National_Spatial_Reference_System_2011\",SPHEROID[\"GRS_1980\",6378137.0,298.257222101]],PRIMEM[\"Greenwich\",0.0],UNIT[\"Degree\",0.0174532925199433]],PROJECTION[\"Transverse_Mercator\"],PARAMETER[\"false_easting\",984250.0],PARAMETER[\"false_northing\",0.0],PARAMETER[\"central_meridian\",-88.3333333333333],PARAMETER[\"scale_factor\",0.999975],PARAMETER[\"latitude_of_origin\",36.6666666666667],UNIT[\"Foot_US\",0.30480060960121924]],VERTCS[\"NAVD88 height (ftUS)\",VDATUM[\"North American Vertical Datum 1988\",AUTHORITY[\"EPSG\",\"5103\"]],PARAMETER[\"Vertical_Shift\",0.0,AUTHORITY[\"Esri\",\"100006\"]],PARAMETER[\"Direction\",1.0,AUTHORITY[\"Esri\",\"100007\"]],UNIT[\"US survey foot\",0.3048006096012192,AUTHORITY[\"EPSG\",\"9003\"]],AUTHORITY[\"EPSG\",\"6360\"]]]|VCS Name = NAVD88 height (ftUS)|Datum Name = North American Vertical Datum 1988|Unit Name = US survey foot|Shift Value = 0.0|Direction Value = 1.0||"
+   }
+  },
+  "ortho": {
+   "pixels": [
+    1969,
+    1969
+   ],
+   "pixel_ft": [
+    0.5,
+    0.5
+   ],
+   "bands": 4,
+   "dtype": "uint8",
+   "geotiff_tags": {
+    "33550": [
+     0.5,
+     0.5,
+     0.0
+    ],
+    "33922": [
+     0.0,
+     0.0,
+     0.0,
+     1173735.0,
+     1911137.5,
+     0.0
+    ],
+    "34735": [
+     1.0,
+     1.0,
+     1.0,
+     19.0,
+     1024.0,
+     0.0,
+     1.0,
+     1.0,
+     1025.0,
+     0.0,
+     1.0,
+     1.0,
+     1026.0,
+     34737.0,
+     46.0,
+     0.0,
+     2048.0,
+     0.0,
+     1.0,
+     6318.0,
+     2049.0,
+     34737.0,
+     117.0,
+     46.0
+    ],
+    "34737": "PCS Name = NAD83(2011) / Illinois East (ftUS)|GCS Name = NAD83(2011)|Datum = NAD83_National_Spatial_Reference_System_2011|Ellipsoid = GRS 1980|Primem = Greenwich||ESRI PE String = PROJCS[\"NAD_1983_2011_StatePlane_Illinois_East_FIPS_1201_Ft_US\",GEOGCS[\"GCS_NAD_1983_2011\",DATUM[\"D_NAD_1983_2011\",SPHEROID[\"GRS_1980\",6378137.0,298.257222101]],PRIMEM[\"Greenwich\",0.0],UNIT[\"Degree\",0.0174532925199433]],PROJECTION[\"Transverse_Mercator\"],PARAMETER[\"False_Easting\",984250.0],PARAMETER[\"False_Northing\",0.0],PARAMETER[\"Central_Meridian\",-88.3333333333333],PARAMETER[\"Scale_Factor\",0.999975],PARAMETER[\"Latitude_Of_Origin\",36.6666666666667],UNIT[\"Foot_US\",0.3048006096012192]],VERTCS[\"NAVD_1988\",VDATUM[\"North_American_Vertical_Datum_1988\"],PARAMETER[\"Vertical_Shift\",0.0],PARAMETER[\"Direction\",1.0],UNIT[\"Foot_US\",0.3048006096012192]]|VCS Name = NAVD88 height|Datum Name = North American Vertical Datum 1988|Unit Name = US survey foot||"
+   }
+  }
+ },
+ "method_notes": [],
+ "lot": {
+  "pins": [
+   "17042030100000",
+   "17042030110000"
+  ],
+  "vertices_after_simplifying": 4,
+  "area_sq_ft": 5115.18,
+  "corners_east_north_ft": {
+   "south_west": [
+    1174176.24,
+    1910619.02
+   ],
+   "north_east": [
+    1174278.1,
+    1910671.36
+   ],
+   "north_west": [
+    1174174.82,
+    1910668.5
+   ],
+   "south_east": [
+    1174279.6,
+    1910621.88
+   ]
+  },
+  "corners_lat_lon": {
+   "south_west": [
+    41.91014441,
+    -87.63557673
+   ],
+   "north_east": [
+    41.91028576,
+    -87.63520097
+   ],
+   "north_west": [
+    41.91028022,
+    -87.63558046
+   ],
+   "south_east": [
+    41.91014996,
+    -87.63519694
+   ]
+  },
+  "west_line_south_to_north": {
+   "length_ft": 49.5,
+   "grid_bearing_deg": 358.3562
+  },
+  "east_line_south_to_north": {
+   "length_ft": 49.503,
+   "grid_bearing_deg": 358.2636
+  },
+  "north_line_west_to_east": {
+   "length_ft": 103.32,
+   "grid_bearing_deg": 88.4138
+  },
+  "south_line_west_to_east": {
+   "length_ft": 103.4,
+   "grid_bearing_deg": 88.415
+  },
+  "centre_east_north_ft": [
+   1174227.189,
+   1910645.183
+  ],
+  "centre_lat_lon": [
+   41.91021507,
+   -87.63538878
+  ],
+  "each_parcel": [
+   {
+    "pin": "17042030110000",
+    "area_sq_ft": 2557.43
+   },
+   {
+    "pin": "17042030100000",
+    "area_sq_ft": 2557.74
+   }
+  ]
+ },
+ "survey": {
+  "corners_in_its_own_frame_ft": {
+   "south_west": [
+    0.0,
+    0.0
+   ],
+   "north_west": [
+    0.0,
+    50.18
+   ],
+   "north_east": [
+    102.0094,
+    50.5252
+   ],
+   "south_east": [
+    101.9313,
+    0.0253
+   ],
+   "misclosure_ft": 0.0024
+  },
+  "note": "The survey gives lengths and angles and no bearing; its frame's north is its west lot line."
+ },
+ "true_north": {
+  "grid_convergence_deg": 0.4662,
+  "point_scale": 1.00001624,
+  "lot_west_line_grid_deg": -1.6438,
+  "lot_east_line_grid_deg": -1.7364,
+  "lot_north_and_south_lines_folded_grid_deg": [
+   -1.5862,
+   -1.585
+  ],
+  "method_1_parcel_lines_of_the_block": {
+   "grid_deg": -1.6327,
+   "edges": 527,
+   "total_length_ft": 52106.0,
+   "spread_deg": 0.102
+  },
+  "method_2_building_walls_2022": {
+   "grid_deg": -1.6074,
+   "edges": 500,
+   "total_length_ft": 33192.0,
+   "spread_deg": 0.75
+  },
+  "site_north_true_bearing_deg": {
+   "lot_west_line": -1.1776,
+   "method_1_parcel_lines": -1.1665,
+   "method_2_building_walls": -1.1412
+  },
+  "difference_between_methods_deg": 0.0253,
+  "how_to_read": "A bearing here is the turn of the street grid from north, negative to the west. True bearing = grid bearing + convergence."
+ },
+ "level_frame": {
+  "file": "level_frame.json",
+  "origin": "south-west lot corner of the county parcels, at level 0, 0, 0",
+  "origin_east_north_ft": [
+   1174176.24,
+   1910619.02
+  ],
+  "origin_lat_lon": [
+   41.91014441,
+   -87.63557673
+  ],
+  "origin_ground_height_ft_navd88": 595.45,
+  "level_north_is": "-X, along the west lot line from south to north; east is -Y, toward the rear of the lot (the axes of the existing Unreal level and of the Datasmith import)",
+  "level_north_grid_bearing_deg": -1.6438,
+  "level_north_true_bearing_deg": -1.1776,
+  "corner_checks": [
+   {
+    "corner": "south_west",
+    "level_x_cm": 0.0,
+    "level_y_cm": 0.0,
+    "there_and_back_error_m": 0.0
+   },
+   {
+    "corner": "north_west",
+    "level_x_cm": -1508.77,
+    "level_y_cm": 0.0,
+    "there_and_back_error_m": 0.0
+   },
+   {
+    "corner": "north_east",
+    "level_x_cm": -1505.61,
+    "level_y_cm": -3149.19,
+    "there_and_back_error_m": 0.0
+   },
+   {
+    "corner": "south_east",
+    "level_x_cm": 3.24,
+    "level_y_cm": -3151.62,
+    "there_and_back_error_m": 0.0
+   }
+  ]
+ },
+ "ground_profile_through_mid_frontage": [
+  {
+   "where": "west right-of-way line",
+   "feet_east_of_front_line": -50.0,
+   "ground_ft": 595.44,
+   "ground_m_above_origin": -0.001,
+   "top_surface_ft": 599.34
+  },
+  {
+   "where": "west kerb (site plan offset mirrored)",
+   "feet_east_of_front_line": -38.15,
+   "ground_ft": 594.73,
+   "ground_m_above_origin": -0.217,
+   "top_surface_ft": 612.95
+  },
+  {
+   "where": "street centre line",
+   "feet_east_of_front_line": -25.0,
+   "ground_ft": 595.33,
+   "ground_m_above_origin": -0.035,
+   "top_surface_ft": 595.34
+  },
+  {
+   "where": "east kerb (site plan: 11 ft 10 1/4 in from the lot line)",
+   "feet_east_of_front_line": -11.85,
+   "ground_ft": 594.93,
+   "ground_m_above_origin": -0.156,
+   "top_surface_ft": 595.19
+  },
+  {
+   "where": "sidewalk, 4 ft west of the lot line",
+   "feet_east_of_front_line": -4.0,
+   "ground_ft": 595.47,
+   "ground_m_above_origin": 0.008,
+   "top_surface_ft": 595.5
+  },
+  {
+   "where": "front lot line",
+   "feet_east_of_front_line": 0.0,
+   "ground_ft": 595.48,
+   "ground_m_above_origin": 0.011,
+   "top_surface_ft": 596.39
+  },
+  {
+   "where": "10 ft inside the lot",
+   "feet_east_of_front_line": 10.0,
+   "ground_ft": 595.48,
+   "ground_m_above_origin": 0.009,
+   "top_surface_ft": 619.63
+  },
+  {
+   "where": "lot centre",
+   "feet_east_of_front_line": 51.7,
+   "ground_ft": 595.54,
+   "ground_m_above_origin": 0.03,
+   "top_surface_ft": 620.62
+  },
+  {
+   "where": "rear lot line",
+   "feet_east_of_front_line": 103.4,
+   "ground_ft": 596.78,
+   "ground_m_above_origin": 0.408,
+   "top_surface_ft": 605.04
+  },
+  {
+   "where": "10 ft east of the rear line",
+   "feet_east_of_front_line": 113.4,
+   "ground_ft": 596.74,
+   "ground_m_above_origin": 0.395,
+   "top_surface_ft": 609.05
+  }
+ ],
+ "ground_at_lot_corners_ft": {
+  "south_west": 595.45,
+  "north_east": 596.28,
+  "north_west": 595.76,
+  "south_east": 595.99
+ },
+ "ground_cross_section_ft_east_of_front_line": [
+  [
+   -58,
+   595.56
+  ],
+  [
+   -57,
+   595.58
+  ],
+  [
+   -56,
+   595.57
+  ],
+  [
+   -55,
+   595.52
+  ],
+  [
+   -54,
+   595.51
+  ],
+  [
+   -53,
+   595.47
+  ],
+  [
+   -52,
+   595.47
+  ],
+  [
+   -51,
+   595.46
+  ],
+  [
+   -50,
+   595.43
+  ],
+  [
+   -49,
+   595.41
+  ],
+  [
+   -48,
+   595.38
+  ],
+  [
+   -47,
+   595.36
+  ],
+  [
+   -46,
+   595.33
+  ],
+  [
+   -45,
+   595.28
+  ],
+  [
+   -44,
+   595.21
+  ],
+  [
+   -43,
+   595.2
+  ],
+  [
+   -42,
+   595.21
+  ],
+  [
+   -41,
+   595.21
+  ],
+  [
+   -40,
+   595.19
+  ],
+  [
+   -39,
+   595.13
+  ],
+  [
+   -38,
+   594.7
+  ],
+  [
+   -37,
+   594.7
+  ],
+  [
+   -36,
+   594.71
+  ],
+  [
+   -35,
+   594.81
+  ],
+  [
+   -34,
+   594.83
+  ],
+  [
+   -33,
+   594.92
+  ],
+  [
+   -32,
+   594.99
+  ],
+  [
+   -31,
+   595.05
+  ],
+  [
+   -30,
+   595.11
+  ],
+  [
+   -29,
+   595.15
+  ],
+  [
+   -28,
+   595.22
+  ],
+  [
+   -27,
+   595.28
+  ],
+  [
+   -26,
+   595.32
+  ],
+  [
+   -25,
+   595.33
+  ],
+  [
+   -24,
+   595.34
+  ],
+  [
+   -23,
+   595.33
+  ],
+  [
+   -22,
+   595.3
+  ],
+  [
+   -21,
+   595.27
+  ],
+  [
+   -20,
+   595.19
+  ],
+  [
+   -19,
+   595.14
+  ],
+  [
+   -18,
+   595.08
+  ],
+  [
+   -17,
+   594.99
+  ],
+  [
+   -16,
+   594.98
+  ],
+  [
+   -15,
+   594.93
+  ],
+  [
+   -14,
+   594.86
+  ],
+  [
+   -13,
+   594.86
+  ],
+  [
+   -12,
+   594.99
+  ],
+  [
+   -11,
+   595.24
+  ],
+  [
+   -10,
+   595.3
+  ],
+  [
+   -9,
+   595.34
+  ],
+  [
+   -8,
+   595.35
+  ],
+  [
+   -7,
+   595.4
+  ],
+  [
+   -6,
+   595.45
+  ],
+  [
+   -5,
+   595.47
+  ],
+  [
+   -4,
+   595.47
+  ],
+  [
+   -3,
+   595.47
+  ],
+  [
+   -2,
+   595.47
+  ],
+  [
+   -1,
+   595.46
+  ],
+  [
+   0,
+   595.49
+  ],
+  [
+   1,
+   595.48
+  ],
+  [
+   2,
+   595.48
+  ],
+  [
+   3,
+   595.47
+  ],
+  [
+   4,
+   595.52
+  ],
+  [
+   5,
+   595.53
+  ],
+  [
+   6,
+   595.54
+  ]
+ ],
+ "county_parcels_against_the_survey": {
+  "north_west_corner_to_the_south_line_of_north_avenue_ft": {
+   "county_parcels": 269.35,
+   "survey": 266.87
+  },
+  "right_of_way_width_at_the_lot_ft": {
+   "county_parcels": 50.05,
+   "survey": 50.0
+  },
+  "lot_depth_ft": {
+   "county_parcels": [
+    103.32,
+    103.4
+   ],
+   "record": 102.2,
+   "survey_measured": [
+    102.01,
+    101.93
+   ]
+  },
+  "lot_frontage_ft": {
+   "county_parcels": 49.5,
+   "record": 49.5,
+   "survey_measured": 50.18
+  },
+  "from_the_rear_line_east_to_the_next_street_ft": 101.95,
+  "how": "walked in steps of 0.05 ft along and across the lot's own axes over the union of all 258 parcels"
+ },
+ "buildings": {
+  "within_ft_of_lot": 260,
+  "count": 75,
+  "file": "site_neighbours.csv",
+  "nearest_twelve": [
+   {
+    "object_id": 780226,
+    "side_of_lot": "north",
+    "gap_to_lot_ft": 0.0,
+    "overlap_with_lot_sq_ft": 3.2,
+    "centre_east_ft": 1174213.69,
+    "centre_north_ft": 1910711.25,
+    "level_x_cm": -2777.0,
+    "level_y_cm": -1222.0,
+    "footprint_sq_ft": 3829.0,
+    "ground_ft": 594.64,
+    "height_typical_m": 13.87,
+    "height_high_m": 14.26,
+    "height_low_m": 13.59,
+    "roof": "flat or nearly flat",
+    "county_height_m": 15.28,
+    "county_ground_ft": 594.547,
+    "county_highest_ft": 644.692
+   },
+   {
+    "object_id": 781010,
+    "side_of_lot": "east",
+    "gap_to_lot_ft": 0.0,
+    "overlap_with_lot_sq_ft": 14.7,
+    "centre_east_ft": 1174325.91,
+    "centre_north_ft": 1910662.19,
+    "level_x_cm": -1184.0,
+    "level_y_cm": -4598.0,
+    "footprint_sq_ft": 2404.0,
+    "ground_ft": 597.07,
+    "height_typical_m": 14.38,
+    "height_high_m": 14.86,
+    "height_low_m": 14.22,
+    "roof": "flat or nearly flat",
+    "county_height_m": 15.07,
+    "county_ground_ft": 597.698,
+    "county_highest_ft": 647.143
+   },
+   {
+    "object_id": 781075,
+    "side_of_lot": "north",
+    "gap_to_lot_ft": 0.0,
+    "overlap_with_lot_sq_ft": 1233.5,
+    "centre_east_ft": 1174214.96,
+    "centre_north_ft": 1910659.25,
+    "level_x_cm": -1192.0,
+    "level_y_cm": -1215.0,
+    "footprint_sq_ft": 1244.0,
+    "ground_ft": 595.37,
+    "height_typical_m": 7.56,
+    "height_high_m": 9.43,
+    "height_low_m": 7.0,
+    "roof": "pitched or stepped",
+    "county_height_m": 9.02,
+    "county_ground_ft": 595.193,
+    "county_highest_ft": 624.793
+   },
+   {
+    "object_id": 781331,
+    "side_of_lot": "south",
+    "gap_to_lot_ft": 0.0,
+    "overlap_with_lot_sq_ft": 1310.4,
+    "centre_east_ft": 1174209.56,
+    "centre_north_ft": 1910635.46,
+    "level_x_cm": -472.0,
+    "level_y_cm": -1029.0,
+    "footprint_sq_ft": 1310.0,
+    "ground_ft": 595.25,
+    "height_typical_m": 8.85,
+    "height_high_m": 9.66,
+    "height_low_m": 8.33,
+    "roof": "pitched or stepped",
+    "county_height_m": 10.2,
+    "county_ground_ft": 595.323,
+    "county_highest_ft": 628.783
+   },
+   {
+    "object_id": 781577,
+    "side_of_lot": "east",
+    "gap_to_lot_ft": 0.0,
+    "overlap_with_lot_sq_ft": 1.1,
+    "centre_east_ft": 1174331.88,
+    "centre_north_ft": 1910612.23,
+    "level_x_cm": 343.0,
+    "level_y_cm": -4736.0,
+    "footprint_sq_ft": 2811.0,
+    "ground_ft": 596.68,
+    "height_typical_m": 5.82,
+    "height_high_m": 18.32,
+    "height_low_m": 5.57,
+    "roof": "pitched or stepped",
+    "county_height_m": 9.67,
+    "county_ground_ft": 596.597,
+    "county_highest_ft": 628.333
+   },
+   {
+    "object_id": 781632,
+    "side_of_lot": "south",
+    "gap_to_lot_ft": 0.0,
+    "overlap_with_lot_sq_ft": 31.1,
+    "centre_east_ft": 1174210.35,
+    "centre_north_ft": 1910609.7,
+    "level_x_cm": 314.0,
+    "level_y_cm": -1031.0,
+    "footprint_sq_ft": 1234.0,
+    "ground_ft": 595.37,
+    "height_typical_m": 8.44,
+    "height_high_m": 19.0,
+    "height_low_m": 7.67,
+    "roof": "pitched or stepped",
+    "county_height_m": 9.37,
+    "county_ground_ft": 595.3779999999999,
+    "county_highest_ft": 626.122
+   },
+   {
+    "object_id": 781291,
+    "side_of_lot": "east",
+    "gap_to_lot_ft": 1.04,
+    "overlap_with_lot_sq_ft": 0.0,
+    "centre_east_ft": 1174331.35,
+    "centre_north_ft": 1910638.38,
+    "level_x_cm": -454.0,
+    "level_y_cm": -4743.0,
+    "footprint_sq_ft": 2126.0,
+    "ground_ft": 596.47,
+    "height_typical_m": 10.16,
+    "height_high_m": 10.95,
+    "height_low_m": 3.27,
+    "roof": "pitched or stepped",
+    "county_height_m": 14.9,
+    "county_ground_ft": 596.476,
+    "county_highest_ft": 645.374
+   },
+   {
+    "object_id": 780220,
+    "side_of_lot": "north",
+    "gap_to_lot_ft": 30.2,
+    "overlap_with_lot_sq_ft": 0.0,
+    "centre_east_ft": 1174286.57,
+    "centre_north_ft": 1910724.57,
+    "level_x_cm": -3119.0,
+    "level_y_cm": -3454.0,
+    "footprint_sq_ft": 948.0,
+    "ground_ft": 595.87,
+    "height_typical_m": 3.59,
+    "height_high_m": 5.27,
+    "height_low_m": 3.25,
+    "roof": "pitched or stepped",
+    "county_height_m": 7.06,
+    "county_ground_ft": 595.288,
+    "county_highest_ft": 618.438
+   },
+   {
+    "object_id": 781095,
+    "side_of_lot": "west",
+    "gap_to_lot_ft": 57.76,
+    "overlap_with_lot_sq_ft": 0.0,
+    "centre_east_ft": 1174077.78,
+    "centre_north_ft": 1910655.91,
+    "level_x_cm": -1210.0,
+    "level_y_cm": 2968.0,
+    "footprint_sq_ft": 1930.0,
+    "ground_ft": 595.17,
+    "height_typical_m": 12.97,
+    "height_high_m": 14.44,
+    "height_low_m": 11.04,
+    "roof": "pitched or stepped",
+    "county_height_m": 16.28,
+    "county_ground_ft": 595.57,
+    "county_highest_ft": 648.993
+   },
+   {
+    "object_id": 781415,
+    "side_of_lot": "west",
+    "gap_to_lot_ft": 59.25,
+    "overlap_with_lot_sq_ft": 0.0,
+    "centre_east_ft": 1174086.3,
+    "centre_north_ft": 1910605.11,
+    "level_x_cm": 345.0,
+    "level_y_cm": 2752.0,
+    "footprint_sq_ft": 4152.0,
+    "ground_ft": 595.15,
+    "height_typical_m": 15.13,
+    "height_high_m": 17.68,
+    "height_low_m": 15.05,
+    "roof": "pitched or stepped",
+    "county_height_m": 18.3,
+    "county_ground_ft": 595.229,
+    "county_highest_ft": 655.279
+   },
+   {
+    "object_id": 780815,
+    "side_of_lot": "west",
+    "gap_to_lot_ft": 59.96,
+    "overlap_with_lot_sq_ft": 0.0,
+    "centre_east_ft": 1174081.58,
+    "centre_north_ft": 1910679.46,
+    "level_x_cm": -1924.0,
+    "level_y_cm": 2831.0,
+    "footprint_sq_ft": 1463.0,
+    "ground_ft": 595.7,
+    "height_typical_m": 15.47,
+    "height_high_m": 16.17,
+    "height_low_m": 13.1,
+    "roof": "pitched or stepped",
+    "county_height_m": 17.45,
+    "county_ground_ft": 595.728,
+    "county_highest_ft": 652.963
+   },
+   {
+    "object_id": 780470,
+    "side_of_lot": "east",
+    "gap_to_lot_ft": 64.28,
+    "overlap_with_lot_sq_ft": 0.0,
+    "centre_east_ft": 1174359.41,
+    "centre_north_ft": 1910709.56,
+    "level_x_cm": -2598.0,
+    "level_y_cm": -5660.0,
+    "footprint_sq_ft": 786.0,
+    "ground_ft": 597.03,
+    "height_typical_m": 3.91,
+    "height_high_m": 7.42,
+    "height_low_m": 2.95,
+    "roof": "pitched or stepped",
+    "county_height_m": 5.1,
+    "county_ground_ft": 596.89,
+    "county_highest_ft": 613.616
+   }
+  ],
+  "on_the_lot_in_2022": [
+   {
+    "object_id": 781075,
+    "side_of_lot": "north",
+    "gap_to_lot_ft": 0.0,
+    "overlap_with_lot_sq_ft": 1233.5,
+    "centre_east_ft": 1174214.96,
+    "centre_north_ft": 1910659.25,
+    "level_x_cm": -1192.0,
+    "level_y_cm": -1215.0,
+    "footprint_sq_ft": 1244.0,
+    "ground_ft": 595.37,
+    "height_typical_m": 7.56,
+    "height_high_m": 9.43,
+    "height_low_m": 7.0,
+    "roof": "pitched or stepped",
+    "county_height_m": 9.02,
+    "county_ground_ft": 595.193,
+    "county_highest_ft": 624.793
+   },
+   {
+    "object_id": 781331,
+    "side_of_lot": "south",
+    "gap_to_lot_ft": 0.0,
+    "overlap_with_lot_sq_ft": 1310.4,
+    "centre_east_ft": 1174209.56,
+    "centre_north_ft": 1910635.46,
+    "level_x_cm": -472.0,
+    "level_y_cm": -1029.0,
+    "footprint_sq_ft": 1310.0,
+    "ground_ft": 595.25,
+    "height_typical_m": 8.85,
+    "height_high_m": 9.66,
+    "height_low_m": 8.33,
+    "roof": "pitched or stepped",
+    "county_height_m": 10.2,
+    "county_ground_ft": 595.323,
+    "county_highest_ft": 628.783
+   }
+  ]
+ },
+ "governing_lot": {
+  "what": "The record lot of the site plan (sheet T1.4), 49.50 ft by 102.20 ft, with its south-west corner at the county parcel's south-west corner and its front line on the county parcel's front line.",
+  "why": "The owner settled that the Revit model's property lines govern, and the site plan draws them at these dimensions. The county's front line agrees with the kerbs in the 2022 ground surface and its parcel is 1.1 to 1.2 ft deeper than the record; the rear neighbour's wall sits where the record depth puts it.",
+  "corners": {
+   "south_west": {
+    "level_x_cm": 0.0,
+    "level_y_cm": 0.0,
+    "east_ft": 1174176.24,
+    "north_ft": 1910619.02,
+    "latitude": 41.91014441,
+    "longitude": -87.63557673,
+    "there_and_back_error_m": 0.0,
+    "from_the_county_parcel_corner_m": 0.0,
+    "ground_ft_2022": 595.45
+   },
+   "north_west": {
+    "level_x_cm": -1508.76,
+    "level_y_cm": 0.0,
+    "east_ft": 1174174.82,
+    "north_ft": 1910668.5,
+    "latitude": 41.91028022,
+    "longitude": -87.63558046,
+    "there_and_back_error_m": 0.0,
+    "from_the_county_parcel_corner_m": 0.0,
+    "ground_ft_2022": 595.76
+   },
+   "north_east": {
+    "level_x_cm": -1508.76,
+    "level_y_cm": -3115.06,
+    "east_ft": 1174276.978,
+    "north_ft": 1910671.431,
+    "latitude": 41.91028598,
+    "longitude": -87.63520509,
+    "there_and_back_error_m": 0.0,
+    "from_the_county_parcel_corner_m": 0.343,
+    "ground_ft_2022": 596.0
+   },
+   "south_east": {
+    "level_x_cm": -0.0,
+    "level_y_cm": -3115.06,
+    "east_ft": 1174278.398,
+    "north_ft": 1910621.952,
+    "latitude": 41.91015018,
+    "longitude": -87.63520136,
+    "there_and_back_error_m": 0.0,
+    "from_the_county_parcel_corner_m": 0.367,
+    "ground_ft_2022": 595.94
+   }
+  }
+ },
+ "neighbour_corners_near_the_lot_ft_north_and_east_of_the_south_west_corner": {
+  "corners": {
+   "780226": [
+    [
+     49.7,
+     50.31
+    ],
+    [
+     49.17,
+     14.13
+    ]
+   ],
+   "781010": [
+    [
+     25.99,
+     102.9
+    ],
+    [
+     41.34,
+     103.09
+    ],
+    [
+     44.96,
+     102.14
+    ],
+    [
+     51.03,
+     102.11
+    ]
+   ],
+   "781291": [
+    [
+     10.3,
+     104.42
+    ],
+    [
+     26.0,
+     104.5
+    ]
+   ],
+   "781577": [
+    [
+     -0.56,
+     101.98
+    ],
+    [
+     1.88,
+     103.39
+    ]
+   ],
+   "781632": [
+    [
+     0.7,
+     5.2
+    ],
+    [
+     0.31,
+     62.44
+    ]
+   ]
+  },
+  "survey_ties": {
+   "number 1533, north": "its south-west corner is on the north line, 12.06 ft east of the front line: north 49.50, east 12.06",
+   "number 1525, south": "its north-west corner is 0.68 ft south of the south line and 6.51 ft east of the front line (north -0.68, east 6.51); its north-east corner 0.37 ft south (north -0.37, east about 55.1)",
+   "the four-storey building at the rear": "its corners are 0.22 and 0.34 ft east of the rear line; with the record depth of 102.20 ft that is east 102.42 to 102.54"
+  },
+  "note": "The county's footprints are roof outlines taken from 2022 imagery and laser scan, so a pitched roof's eaves reach past its walls."
+ },
+ "tall_objects_outside_buildings": {
+  "rule": "top surface more than 15 ft above ground, outside every footprint grown by 3 ft, 60 to 8,000 sq ft, within 330 ft of the lot",
+  "count": 34,
+  "file": "site_trees.csv",
+  "in_wieland_right_of_way_within_150_ft": [
+   {
+    "east_ft": 1174172.4,
+    "north_ft": 1910680.5,
+    "level_x_cm": -1876.0,
+    "level_y_cm": 62.0,
+    "distance_from_lot_ft": 12.2,
+    "top_height_m": 12.7,
+    "crown_area_sq_m": 85.3,
+    "crown_width_m": 10.4,
+    "in_wieland_right_of_way": true
+   },
+   {
+    "east_ft": 1174169.4,
+    "north_ft": 1910593.6,
+    "level_x_cm": 770.0,
+    "level_y_cm": 230.0,
+    "distance_from_lot_ft": 26.4,
+    "top_height_m": 15.9,
+    "crown_area_sq_m": 81.5,
+    "crown_width_m": 10.2,
+    "in_wieland_right_of_way": true
+   },
+   {
+    "east_ft": 1174153.5,
+    "north_ft": 1910736.4,
+    "level_x_cm": -3596.0,
+    "level_y_cm": 589.0,
+    "distance_from_lot_ft": 71.2,
+    "top_height_m": 17.8,
+    "crown_area_sq_m": 242.4,
+    "crown_width_m": 17.6,
+    "in_wieland_right_of_way": true
+   },
+   {
+    "east_ft": 1174176.1,
+    "north_ft": 1910501.2,
+    "level_x_cm": 3591.0,
+    "level_y_cm": 107.0,
+    "distance_from_lot_ft": 117.9,
+    "top_height_m": 11.6,
+    "crown_area_sq_m": 107.4,
+    "crown_width_m": 11.7,
+    "in_wieland_right_of_way": true
+   }
+  ],
+  "caution": "The scan was flown leaf-off in spring 2022, so crowns read smaller than in summer; poles, signs and parts of roofs that overhang a footprint are in this list too."
+ },
+ "pictures_outside_the_repository": [
+  "E:\\Wieland1529_site_data\\derived\\overlay_block.png",
+  "E:\\Wieland1529_site_data\\derived\\overlay_lot.png",
+  "E:\\Wieland1529_site_data\\derived\\heights_above_ground.png"
+ ],
+ "overlay_legend": "yellow parcels, cyan footprints (2022), red the lot, magenta the kerbs by the site plan's offset, white the street centre line, orange the west right-of-way line"
+}

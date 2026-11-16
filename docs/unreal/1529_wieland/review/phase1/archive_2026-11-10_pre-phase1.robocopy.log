@@ -1,0 +1,43 @@
+
+-------------------------------------------------------------------------------
+   ROBOCOPY     ::     Robust File Copy for Windows                              
+-------------------------------------------------------------------------------
+
+  Started : Tuesday, November 10, 2026 11:23:36 PM
+   Source : D:\Unreal_Engine_Projects\Wieland1527 5.9\
+     Dest : H:\Wieland1529_archives\2026-11-10_pre-phase1\Wieland1527 5.9\
+
+    Files : *.*
+	    
+ Exc Dirs : D:\Unreal_Engine_Projects\Wieland1527 5.9\Intermediate
+	    D:\Unreal_Engine_Projects\Wieland1527 5.9\DerivedDataCache
+	    
+  Options : *.* /NDL /NFL /S /E /DCOPY:DAT /COPY:DAT /NP /R:2 /W:3 
+
+------------------------------------------------------------------------------
+
+2026/11/10 23:27:42 ERROR 33 (0x00000021) Copying File D:\Unreal_Engine_Projects\Wieland1527 5.9\Saved\AgentBridge\writer.lock
+The process cannot access the file because another process has locked a portion of the file.
+Waiting 3 seconds... Retrying...
+2026/11/10 23:27:45 ERROR 33 (0x00000021) Copying File D:\Unreal_Engine_Projects\Wieland1527 5.9\Saved\AgentBridge\writer.lock
+The process cannot access the file because another process has locked a portion of the file.
+Waiting 3 seconds... Retrying...
+2026/11/10 23:27:48 ERROR 33 (0x00000021) Copying File D:\Unreal_Engine_Projects\Wieland1527 5.9\Saved\AgentBridge\writer.lock
+The process cannot access the file because another process has locked a portion of the file.
+
+ERROR: RETRY LIMIT EXCEEDED.
+
+
+------------------------------------------------------------------------------
+
+               Total    Copied   Skipped  Mismatch    FAILED    Extras
+    Dirs :       959       956         3         0         0         0
+   Files :     11658     11657         0         0         1         0
+   Bytes :  17.242 g  17.242 g         0         0         1         0
+   Times :   0:04:32   0:04:18                       0:00:06   0:00:08
+
+
+   Speed :           71,696,945 Bytes/sec.
+   Speed :            4,102.532 MegaBytes/min.
+   Ended : Tuesday, November 10, 2026 11:28:09 PM
+

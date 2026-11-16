@@ -1,0 +1,296 @@
+{
+ "info": {
+  "step": "Phase 7, J11: profile M5, first recording: all vegetation shown, leaves on, wind on",
+  "level": "/Game/Wieland1529/L_Site_M2",
+  "quality": "Epic (3), pool 1000, SP 100, t.MaxFPS 1000, Game View on",
+  "view_mode": "Lit",
+  "lighting": "review daylight: Placeholder_Sun pitch -45 yaw -135, 10.00 lux, sky atmosphere and sky light",
+  "found_before": {
+   "sg.ViewDistanceQuality": 4.0,
+   "sg.AntiAliasingQuality": 4.0,
+   "sg.ShadowQuality": 4.0,
+   "sg.GlobalIlluminationQuality": 4.0,
+   "sg.ReflectionQuality": 4.0,
+   "sg.PostProcessQuality": 4.0,
+   "sg.TextureQuality": 4.0,
+   "sg.EffectsQuality": 4.0,
+   "sg.FoliageQuality": 4.0,
+   "sg.ShadingQuality": 4.0,
+   "sg.LandscapeQuality": 4.0,
+   "r.Streaming.PoolSize": 3000.0,
+   "r.Editor.Viewport.ScreenPercentage": 100.0,
+   "t.MaxFPS": 0.0,
+   "Slate.bAllowThrottling": 1.0,
+   "r.VSync": 0.0
+  },
+  "foreground_attempt": {
+   "was": 1380058,
+   "front": true
+  },
+  "trees": 34,
+  "season": {
+   "leaves": "on",
+   "changed": 34
+  },
+  "wind": {
+   "wind": "on",
+   "changed": 0
+  },
+  "dirty_before": [
+   "/Game/Wieland1529/L_Site_M2",
+   "/Game/Wieland1529/Vegetation/L_Vegetation",
+   "/Game/Wieland1529/Vegetation/Materials/M_W1529_NoLeaves"
+  ]
+ },
+ "started_unix": 1794517838.585023,
+ "finished_unix": 1794518021.82118,
+ "warmup_seconds": 8.0,
+ "csv_folder": "D:/Unreal_Engine_Projects/Wieland1527 5.9/Saved/Profiling\\CSV",
+ "error": null,
+ "jobs": [
+  {
+   "name": "M5a_path_first_walk",
+   "kind": "path",
+   "job": {
+    "kind": "path",
+    "loc": [
+     3745.62,
+     1403.7,
+     158.2
+    ],
+    "end": [
+     -4654.38,
+     1403.7,
+     158.2
+    ],
+    "target": [
+     -754.38,
+     -311.1,
+     303.2
+    ],
+    "seconds": 60.0,
+    "name": "M5a_path_first_walk",
+    "cvars": {
+     "sg.ViewDistanceQuality": 3,
+     "sg.AntiAliasingQuality": 3,
+     "sg.ShadowQuality": 3,
+     "sg.GlobalIlluminationQuality": 3,
+     "sg.ReflectionQuality": 3,
+     "sg.PostProcessQuality": 3,
+     "sg.TextureQuality": 3,
+     "sg.EffectsQuality": 3,
+     "sg.FoliageQuality": 3,
+     "sg.ShadingQuality": 3,
+     "sg.LandscapeQuality": 3,
+     "r.Streaming.PoolSize": 1000,
+     "r.Editor.Viewport.ScreenPercentage": 100,
+     "t.MaxFPS": 1000,
+     "Slate.bAllowThrottling": 0,
+     "r.VSync": 0
+    }
+   },
+   "wall_start_unix": 1794517849.7487013,
+   "recorded_seconds": 60.004962100007106,
+   "ticks": 6430,
+   "foreground_fraction": 0.47947122861586317,
+   "tick_ms_mean": 9.331935816799316,
+   "tick_ms_p95": 12.73060217499733,
+   "tick_ms_max": 36.57890111207962,
+   "camera_first": {
+    "loc": [
+     3741.9921239968435,
+     1403.7,
+     158.2
+    ],
+    "rot_pitch_yaw_roll": [
+     1.7258762612303837,
+     -159.1244429826304,
+     3.712413078351742e-08
+    ]
+   },
+   "camera_last": {
+    "loc": [
+     -4654.38,
+     1403.7,
+     158.2
+    ],
+    "rot_pitch_yaw_roll": [
+     1.9492981210073128,
+     -23.73472281886692,
+     6.253944946197807e-09
+    ]
+   },
+   "new_csv_files": [
+    "Profile(20261112_151049).csv"
+   ],
+   "tick_ms_series": null
+  },
+  {
+   "name": "M5a_path",
+   "kind": "path",
+   "job": {
+    "kind": "path",
+    "loc": [
+     3745.62,
+     1403.7,
+     158.2
+    ],
+    "end": [
+     -4654.38,
+     1403.7,
+     158.2
+    ],
+    "target": [
+     -754.38,
+     -311.1,
+     303.2
+    ],
+    "seconds": 60.0,
+    "name": "M5a_path"
+   },
+   "wall_start_unix": 1794517919.764369,
+   "recorded_seconds": 60.00012039998546,
+   "ticks": 6395,
+   "foreground_fraction": 0.0,
+   "tick_ms_mean": 9.382532822424029,
+   "tick_ms_p95": 11.78940013051033,
+   "tick_ms_max": 19.259899854660034,
+   "camera_first": {
+    "loc": [
+     3744.1712519982875,
+     1403.7,
+     158.2
+    ],
+    "rot_pitch_yaw_roll": [
+     1.7251467659037794,
+     -159.13368434358657,
+     3.71105984178788e-08
+    ]
+   },
+   "camera_last": {
+    "loc": [
+     -4654.38,
+     1403.7,
+     158.2
+    ],
+    "rot_pitch_yaw_roll": [
+     1.9492981210073128,
+     -23.73472281886692,
+     6.253944946197807e-09
+    ]
+   },
+   "new_csv_files": [
+    "Profile(20261112_151159).csv"
+   ],
+   "tick_ms_series": null
+  },
+  {
+   "name": "M5a_near_tree",
+   "kind": "view",
+   "job": {
+    "kind": "view",
+    "name": "M5a_near_tree",
+    "loc": [
+     -1876.0,
+     1500.0,
+     170.0
+    ],
+    "rot": [
+     24.0,
+     -90.0,
+     0.0
+    ],
+    "seconds": 10.0
+   },
+   "wall_start_unix": 1794517989.7867506,
+   "recorded_seconds": 10.000929099973291,
+   "ticks": 1137,
+   "foreground_fraction": 0.0,
+   "tick_ms_mean": 8.79576482147424,
+   "tick_ms_p95": 10.922800749540329,
+   "tick_ms_max": 15.226900577545166,
+   "camera_first": {
+    "loc": [
+     -1876.0,
+     1500.0,
+     170.0
+    ],
+    "rot_pitch_yaw_roll": [
+     24.0,
+     -90.0,
+     0.0
+    ]
+   },
+   "camera_last": {
+    "loc": [
+     -1876.0,
+     1500.0,
+     170.0
+    ],
+    "rot_pitch_yaw_roll": [
+     24.0,
+     -90.0,
+     0.0
+    ]
+   },
+   "new_csv_files": [
+    "Profile(20261112_151309).csv"
+   ],
+   "tick_ms_series": null
+  },
+  {
+   "name": "M5a_far_trees",
+   "kind": "view",
+   "job": {
+    "kind": "view",
+    "name": "M5a_far_trees",
+    "loc": [
+     2500.0,
+     900.0,
+     170.0
+    ],
+    "rot": [
+     8.0,
+     -172.0,
+     0.0
+    ],
+    "seconds": 10.0
+   },
+   "wall_start_unix": 1794518009.8048635,
+   "recorded_seconds": 10.007604099984746,
+   "ticks": 1103,
+   "foreground_fraction": 0.0,
+   "tick_ms_mean": 9.069769446512622,
+   "tick_ms_p95": 11.20150089263916,
+   "tick_ms_max": 17.75829866528511,
+   "camera_first": {
+    "loc": [
+     2500.0,
+     900.0,
+     170.0
+    ],
+    "rot_pitch_yaw_roll": [
+     8.0,
+     -172.0,
+     0.0
+    ]
+   },
+   "camera_last": {
+    "loc": [
+     2500.0,
+     900.0,
+     170.0
+    ],
+    "rot_pitch_yaw_roll": [
+     8.0,
+     -172.0,
+     0.0
+    ]
+   },
+   "new_csv_files": [
+    "Profile(20261112_151329).csv"
+   ],
+   "tick_ms_series": null
+  }
+ ]
+}

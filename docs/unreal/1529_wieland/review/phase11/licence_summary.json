@@ -1,0 +1,218 @@
+{
+ "summary": {
+  "manifest": "D:/Wieland1529_delivery/package/1529_Wieland_UE5.9_Delivery_2026-11-14/build/Windows/Manifest_UFSFiles_Win64.txt",
+  "groups": 17,
+  "assets_in_build": 3543,
+  "not_recorded_groups": [
+   [
+    "Revit export: Indiana limestone images",
+    6
+   ],
+   [
+    "Megaplant tree library",
+    120
+   ],
+   [
+    "Earlier project's production materials",
+    37
+   ],
+   [
+    "Megascans worn brick",
+    2
+   ],
+   [
+    "Revit export: other images in the model",
+    28
+   ],
+   [
+    "Revit export: generated surface images",
+    16
+   ],
+   [
+    "Revit export: Autodesk library images",
+    28
+   ],
+   [
+    "Earlier project's site model",
+    98
+   ],
+   [
+    "Earlier project's materials, other",
+    4
+   ]
+  ],
+  "not_recorded_assets": 339
+ },
+ "rows": [
+  {
+   "group": "Revit export: Indiana limestone images",
+   "status": "NO RECORD",
+   "licence_as_recorded": "Not recorded.",
+   "source": "Not recorded; brought into the Revit model by the owner (name suggests a stone supplier's or a generated image)",
+   "assets_in_build": 6,
+   "source_mb": 880.6,
+   "example_in_build": "Wieland1527/Content/Wieland1529/Building/Datasmith/25-006_1527_N_Wieland-3DView-3D_View_188/Textures/INDIANA-LIMESTONE-FULL-COLOR-BLENDtm-Tranche-2-001-COLOR-16K.uasset",
+   "evidence_or_note": "No record found; listed for the owner."
+  },
+  {
+   "group": "Megaplant tree library",
+   "status": "NO RECORD",
+   "licence_as_recorded": "No licence record.",
+   "source": "Not recorded; an earlier note calls it \"UE-only or no-redistribution\"",
+   "assets_in_build": 120,
+   "source_mb": 802.0,
+   "example_in_build": "Wieland1527/Content/Megaplant_Library/Tree_Silver_Birch/Textures/T_Silver_Birch_01_Bark_Rough_C.uasset",
+   "evidence_or_note": "SOURCES.md line 99."
+  },
+  {
+   "group": "Poly Haven texture sets",
+   "status": "recorded",
+   "licence_as_recorded": "CC0 (public-domain dedication), as the earlier project's records state; the licence page itself was not read then.",
+   "source": "Poly Haven, https://polyhaven.com",
+   "assets_in_build": 33,
+   "source_mb": 448.2,
+   "example_in_build": "Wieland1527/Content/Wieland/R15_Materials/PolyHaven/yellow_brick/T_R15_yellow_brick_Normal.uasset",
+   "evidence_or_note": "SOURCES.md line 98; SITE_MODEL_AUDIT.md line 65."
+  },
+  {
+   "group": "This project's own work, made after the licence record of Phase 5",
+   "status": "owner's own",
+   "licence_as_recorded": "No outside licence needed",
+   "source": "Made in this project (Phases 6 to 15)",
+   "assets_in_build": 1813,
+   "source_mb": 245.3,
+   "example_in_build": "Wieland1527/Content/Wieland1529/Surroundings/R15Fit/SM_R15fit_opaque_xm06_yp03_part01.uasset",
+   "evidence_or_note": "Path under Content/Wieland1529/ and not in the Phase 5 record"
+  },
+  {
+   "group": "Earlier project's production materials",
+   "status": "NO RECORD",
+   "licence_as_recorded": "The scripts call these CC0. No licence file is kept, and another record (SOURCE_REPORT.md) says no outside maps were taken, which contradicts the scripts.",
+   "source": "Earlier project scripts; the scripts name TextureCan (Metal0010, Rooftop0010, Limestone1 by M. Tolga Arslan) and ambientCG (Grass004) as texture sources",
+   "assets_in_build": 37,
+   "source_mb": 222.9,
+   "example_in_build": "Wieland1527/Content/Wieland/R15_Materials/Production/SourceTextures/T_R15_turf_normal_4K.uasset",
+   "evidence_or_note": "E:\\Games\\Claude\\1527 Wieland\\fbx_walkthrough\\tools\\r15_native_extras.py lines 13 to 16. Contradiction listed for the owner."
+  },
+  {
+   "group": "Phase 5 materials",
+   "status": "recorded",
+   "licence_as_recorded": "Own work; downloaded sets are CC0 (public-domain dedication) as recorded per set.",
+   "source": "Made in Phase 5; each downloaded texture set has its own line in the downloads table",
+   "assets_in_build": 142,
+   "source_mb": 94.1,
+   "example_in_build": "Wieland1527/Content/Wieland1529/Materials/Textures/T_W1529_WoodFloor051_R.uasset",
+   "evidence_or_note": "phase5_results.md; the downloads rows of this table."
+  },
+  {
+   "group": "Megascans worn brick",
+   "status": "NO RECORD",
+   "licence_as_recorded": "No licence record. Megascans items are tied to the Epic or Fab account that took them.",
+   "source": "Quixel Megascans (by its folder name)",
+   "assets_in_build": 2,
+   "source_mb": 40.6,
+   "example_in_build": "Wieland1527/Content/Wieland/R15_Materials/BrickWallWorn_sexkaitb/T_sexkaitb_4K_N.uasset",
+   "evidence_or_note": "SOURCES.md line 99."
+  },
+  {
+   "group": "Surroundings, Phase 4",
+   "status": "recorded",
+   "licence_as_recorded": "Lidar: \"No restrictions apply to these data.\" County footprints: provided \"as is\"; redistribution unclear.",
+   "source": "Built in Phase 4 from Cook County building footprints 2022 and the 2022 lidar of the Illinois State Geological Survey",
+   "assets_in_build": 181,
+   "source_mb": 21.7,
+   "example_in_build": "Wieland1527/Content/Wieland1529/Surroundings/Meshes/SG_5_5.uasset",
+   "evidence_or_note": "SOURCES.md lines 42 and 44."
+  },
+  {
+   "group": "ambientCG glass imperfection set",
+   "status": "recorded",
+   "licence_as_recorded": "CC0, as the earlier project's script states.",
+   "source": "ambientCG SurfaceImperfections015, https://ambientcg.com",
+   "assets_in_build": 2,
+   "source_mb": 14.0,
+   "example_in_build": "Wieland1527/Content/Wieland/R15_Materials/Glass/T_R15_GlassNeutral_RGBA0.uasset",
+   "evidence_or_note": "E:\\Games\\Claude\\1527 Wieland\\fbx_walkthrough\\tools\\r15_finish_glass.py line 109."
+  },
+  {
+   "group": "Revit export, Phase 3",
+   "status": "owner's own",
+   "licence_as_recorded": "Owner's property. The model contains manufacturers' Revit families (plumbing, appliances, windows, furniture, light fixtures); each manufacturer's download terms are not recorded.",
+   "source": "The owner's Revit model through Datasmith (Phase 3)",
+   "assets_in_build": 312,
+   "source_mb": 10.0,
+   "example_in_build": "Wieland1527/Content/Wieland1529/Building/Datasmith/25-006_1527_N_Wieland-3DView-3D_View_188/Materials/Trinity_-_Black_Metal_Finish.uasset",
+   "evidence_or_note": "SOURCES.md line 32. Manufacturers' terms: no record; listed for the owner."
+  },
+  {
+   "group": "Revit export: other images in the model",
+   "status": "NO RECORD",
+   "licence_as_recorded": "Not recorded per image.",
+   "source": "The Revit model; the origin of the single image is not recorded",
+   "assets_in_build": 28,
+   "source_mb": 8.7,
+   "example_in_build": "Wieland1527/Content/Wieland1529/Building/Datasmith/25-006_1527_N_Wieland-3DView-3D_View_188/Textures/bump_Oak_Veneered_MDF_Staggered_51_2_x_78_inches__NG7H6O___5_.uasset",
+   "evidence_or_note": "No record found; listed for the owner."
+  },
+  {
+   "group": "Revit export: generated surface images",
+   "status": "NO RECORD",
+   "licence_as_recorded": "Depends on the editor's terms and the plan of the account that made it; not recorded.",
+   "source": "Not recorded; brought into the Revit model by the owner",
+   "assets_in_build": 16,
+   "source_mb": 3.4,
+   "example_in_build": "Wieland1527/Content/Wieland1529/Building/Datasmith/25-006_1527_N_Wieland-3DView-3D_View_188/Textures/bump_Oak_Veneered_MDF__1Z2XY2_.uasset",
+   "evidence_or_note": "No record found; listed for the owner."
+  },
+  {
+   "group": "Revit export: Autodesk library images",
+   "status": "NO RECORD",
+   "licence_as_recorded": "Autodesk's terms for its material library; whether they allow use outside Autodesk's programs is not recorded.",
+   "source": "Autodesk material library, through the Revit model",
+   "assets_in_build": 28,
+   "source_mb": 2.2,
+   "example_in_build": "Wieland1527/Content/Wieland1529/Building/Datasmith/25-006_1527_N_Wieland-3DView-3D_View_188/Textures/brush_short_bump2.uasset",
+   "evidence_or_note": "No record found; listed for the owner."
+  },
+  {
+   "group": "Earlier project's site model",
+   "status": "NO RECORD",
+   "licence_as_recorded": "City data: \"See Terms of Use\"; the terms page refused the request when Phase 0 tried to read it.",
+   "source": "Earlier project, built on the City of Chicago building footprints",
+   "assets_in_build": 98,
+   "source_mb": 0.8,
+   "example_in_build": "Wieland1527/Content/Wieland/R14/WLD_CTX_BLDG_metal.uasset",
+   "evidence_or_note": "SOURCES.md line 43."
+  },
+  {
+   "group": "Earlier project's materials, other",
+   "status": "NO RECORD",
+   "licence_as_recorded": "No licence record.",
+   "source": "Earlier project",
+   "assets_in_build": 4,
+   "source_mb": 0.1,
+   "example_in_build": "Wieland1527/Content/Wieland/R15_Materials/MI_R15_Glass_Smoke.uasset",
+   "evidence_or_note": "No record found."
+  },
+  {
+   "group": "Earlier project's render settings",
+   "status": "owner's own",
+   "licence_as_recorded": "Own work of the earlier project; no licence file.",
+   "source": "Earlier project",
+   "assets_in_build": 1,
+   "source_mb": 0.0,
+   "example_in_build": "Wieland1527/Content/Wieland/R15_Render/opaque/SM_R15_opaque_xm07_yp01_part01.uasset",
+   "evidence_or_note": "By content: settings and sequences, no outside media seen in the names."
+  },
+  {
+   "group": "Unreal Engine and engine-plugin content",
+   "status": "recorded",
+   "licence_as_recorded": "Unreal Engine End User License Agreement (Epic Games): engine and engine-plugin content may be distributed inside a packaged build",
+   "source": "Epic Games, Unreal Engine 5.9 and its plugins",
+   "assets_in_build": 720,
+   "source_mb": 0.0,
+   "example_in_build": "Engine/Content/VREditor/TransformGizmo/RotationHandleQuarter.uasset",
+   "evidence_or_note": "Comes with the engine; sizes not counted"
+  }
+ ]
+}

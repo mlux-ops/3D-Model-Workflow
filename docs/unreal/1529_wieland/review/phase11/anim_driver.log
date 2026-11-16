@@ -1,0 +1,31 @@
+00:06:33 triplex frames 450 to 450 start, 30.1 GB free: {"stand_ins_hidden": 2, "r.EyeAdaptation.CachedLightingPreExposure": 7.0, "sg.GlobalIlluminationQuality": 3.0, "sg.ReflectionQuality": 4.0, "sg.ShadowQuality": 4.0, "anti_aliasing": "<AntiAliasingMethod.AAM_TSR: 4>", "denoiser": "<MoviePipelineBasicDenoiserType.SPATIAL: 0>", "rendering": true, "nanite_mode": 0.0, "range": [450, 451]}
+00:07:03 triplex frames 450 to 450: 1 new files in 31 s (30.78 s a frame)
+00:07:03 triplex: every frame 450 to 450 has a file. DONE
+05:03:41 anim_both start (pid 841)
+05:03:44 triplex frames 0 to 149 start, 34.0 GB free: {"stand_ins_hidden": 2, "r.EyeAdaptation.CachedLightingPreExposure": 7.0, "sg.GlobalIlluminationQuality": 3.0, "sg.ReflectionQuality": 4.0, "sg.ShadowQuality": 4.0, "anti_aliasing": "<AntiAliasingMethod.AAM_TSR: 4>", "denoiser": "<MoviePipelineBasicDenoiserType.SPATIAL: 0>", "rendering": true, "nanite_mode": 0.0, "range": [0, 150]}
+05:08:00 triplex frames 0 to 149: 150 new files in 258 s (1.72 s a frame)
+05:08:01 triplex frames 150 to 299 start, 30.4 GB free: {"stand_ins_hidden": 2, "r.EyeAdaptation.CachedLightingPreExposure": 7.0, "sg.GlobalIlluminationQuality": 3.0, "sg.ReflectionQuality": 4.0, "sg.ShadowQuality": 4.0, "anti_aliasing": "<AntiAliasingMethod.AAM_TSR: 4>", "denoiser": "<MoviePipelineBasicDenoiserType.SPATIAL: 0>", "rendering": true, "nanite_mode": 0.0, "range": [150, 300]}
+05:09:23 anim_both wrapper stopped by the agent (the driver of run 0-149 keeps going); triplex.0450 test frame of 00:06 moved to animation_frames/test/
+05:11:32 triplex frames 150 to 299: 149 new files in 211 s (1.42 s a frame)
+05:11:33 triplex frames 300 to 449 start, 30.4 GB free: {"stand_ins_hidden": 2, "r.EyeAdaptation.CachedLightingPreExposure": 7.0, "sg.GlobalIlluminationQuality": 3.0, "sg.ReflectionQuality": 4.0, "sg.ShadowQuality": 4.0, "anti_aliasing": "<AntiAliasingMethod.AAM_TSR: 4>", "denoiser": "<MoviePipelineBasicDenoiserType.SPATIAL: 0>", "rendering": true, "nanite_mode": 0.0, "range": [300, 450]}
+05:13:27 driver (pid 17384) stopped and render cancelled by the agent during triplex run 300-449: every run start is darker than the frame before it (joins at 150 and 300); cause looked into before going on
+05:17:02 anim_moves start (pid 618): --run 900 --samples 16 --quality 3,4,4 --warm-up 1024 --min-free 30
+05:17:03 triplex frames 0 to 899 start, 30.2 GB free: {"stand_ins_hidden": 2, "r.EyeAdaptation.CachedLightingPreExposure": 7.0, "sg.GlobalIlluminationQuality": 3.0, "sg.ReflectionQuality": 4.0, "sg.ShadowQuality": 4.0, "anti_aliasing": "<AntiAliasingMethod.AAM_TSR: 4>", "denoiser": "<MoviePipelineBasicDenoiserType.SPATIAL: 0>", "rendering": true, "nanite_mode": 0.0, "range": [0, 900]}
+05:35:25 triplex frames 0 to 899: 900 new files in 1103 s (1.23 s a frame)
+05:35:25 triplex: every frame 0 to 899 has a file. DONE
+05:35:25 anim_moves: triplex driver ended with 0
+05:35:26 penthouse waits: 29.6 GB of commit memory free
+05:35:56 penthouse waits: 29.1 GB of commit memory free
+05:36:27 penthouse waits: 29.3 GB of commit memory free
+05:36:57 penthouse waits: 29.3 GB of commit memory free
+05:37:28 penthouse frames 0 to 899 start, 30.2 GB free: {"stand_ins_hidden": 2, "r.EyeAdaptation.CachedLightingPreExposure": 7.0, "sg.GlobalIlluminationQuality": 3.0, "sg.ReflectionQuality": 4.0, "sg.ShadowQuality": 4.0, "anti_aliasing": "<AntiAliasingMethod.AAM_TSR: 4>", "denoiser": "<MoviePipelineBasicDenoiserType.SPATIAL: 0>", "rendering": true, "nanite_mode": 0.0, "range": [0, 900]}
+06:05:53 penthouse frames 0 to 899: 900 new files in 1705 s (1.89 s a frame)
+06:05:53 penthouse: every frame 0 to 899 has a file. DONE
+06:05:53 anim_moves: penthouse driver ended with 0; END
+06:14:48 triplex frame 180 path-traced (1024 samples) start, 29.8 GB free: {"returnValue":"{\"stand_ins_hidden\": 2, \"r.EyeAdaptation.CachedLightingPreExposure\": 7.0, \"r.RayTracing.Nanite.MaxAppendInstances\": 400000.0, \"anti_aliasing\": \"<AntiAliasingMethod.AAM_TSR: 4>\", \"denoiser\": \"<MoviePipelineBasicDenoiserType.SPATIAL: 0>\", \"rendering\": true, \"nanite_mod
+06:27:56 triplex frame 180 path-traced: file after 788 s
+06:27:56 triplex frame 180 path-traced: editor reports the render ended
+06:34:53 penthouse path-traced frame: free commit under the 30 GB line after an empty-level cycle (28.6 GB at 06:30, editor 21.5 GB); the editor cannot be restarted from the panel that hosts this session; started under J3's 26 GB line (the triplex frame needed about 1.8 GB)
+06:34:57 penthouse frame 300 path-traced (1024 samples) start, 28.5 GB free: {"returnValue":"{\"stand_ins_hidden\": 2, \"r.EyeAdaptation.CachedLightingPreExposure\": 7.0, \"r.RayTracing.Nanite.MaxAppendInstances\": 400000.0, \"anti_aliasing\": \"<AntiAliasingMethod.AAM_TSR: 4>\", \"denoiser\": \"<MoviePipelineBasicDenoiserType.SPATIAL: 0>\", \"rendering\": true, \"nanite_mod
+06:43:23 penthouse frame 300 path-traced: file after 507 s
+06:43:24 penthouse frame 300 path-traced: editor reports the render ended

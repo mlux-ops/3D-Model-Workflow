@@ -1,0 +1,50 @@
+{
+ "time": "2026-11-14T20:28:53",
+ "rendered": [],
+ "refused": [
+  {
+   "path": "_test_neighbour.json",
+   "name": "_test_neighbour",
+   "refused": "segment 1 (point 1 to 2) passes through P17Z_780226 at x -2100, y -320, z 160 cm",
+   "refusals": [
+    {
+     "segment": 1,
+     "from_point": 1,
+     "to_point": 2,
+     "at_cm": [
+      -2100.0,
+      -320.5,
+      160.0
+     ],
+     "object": "P17Z_780226",
+     "component": "StaticMeshComponent0"
+    }
+   ]
+  },
+  {
+   "path": "_test_wall.json",
+   "name": "_test_wall",
+   "refused": "segment 1 (point 1 to 2) passes through Walls_Basic_Wall_B2010_Exterior_Wall_Havord_block_w__1_GYP_12 at x -1386, y -1000, z 1339 cm",
+   "refusals": [
+    {
+     "segment": 1,
+     "from_point": 1,
+     "to_point": 2,
+     "at_cm": [
+      -1386.2,
+      -1000.0,
+      1339.0
+     ],
+     "object": "Walls_Basic_Wall_B2010_Exterior_Wall_Havord_block_w__1_GYP_12",
+     "component": "StaticMeshComponent0"
+    }
+   ]
+  }
+ ],
+ "skipped": [
+  {
+   "path": "_test_roofdeck.json",
+   "skipped": "video up to date"
+  }
+ ]
+}

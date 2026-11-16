@@ -1,0 +1,109 @@
+{
+ "step": "1.7",
+ "date": "2026-11-11",
+ "engine": "5.9.0-60351404",
+ "attempt": 4,
+ "condition": "r.Material.UseShaderCompilationParameters=0 in Config/DefaultEngine.ini, [/Script/Engine.RendererSettings]; confirmed 0 in the running editor",
+ "level": "/Game/Wieland1529/Scratch/L_P1_DatasmithImport",
+ "assets": "/Game/Wieland1529/Scratch/P1",
+ "import_seconds": 28.2,
+ "file": {
+  "placed_mesh_objects": 3562,
+  "lights": 587,
+  "meshes": 1294,
+  "materials": 280,
+  "textures_named": 94,
+  "holder_objects": 155,
+  "cameras": 1,
+  "nodes_flagged_as_component": 1674
+ },
+ "arrived": {
+  "static_mesh_components_with_a_mesh": 3562,
+  "point_light_components": 587,
+  "static_mesh_assets": 1294,
+  "material_instances": 280,
+  "texture_assets": 65,
+  "light_profile_assets": 7,
+  "datasmith_scene_assets": 1,
+  "actors_total": 2602,
+  "static_mesh_actors": 1935,
+  "point_light_actors": 557,
+  "plain_actors": 108
+ },
+ "share_percent": {
+  "placed_mesh_objects": 100.0,
+  "lights": 100.0
+ },
+ "threshold_percent": 99.5,
+ "known_dimension": {
+  "element": "Revit.Element.Id.12330199",
+  "label": "Floors_Floor_Generic_-_1_-2__2",
+  "top_z_cm": 203.2,
+  "grade_element": "Site_GRADE_GRADE",
+  "grade_top_z_cm": 0.0,
+  "first_floor_above_grade_mm": 2032.0,
+  "expected_mm": 2032.0,
+  "tolerance_mm": 1.0,
+  "floor_width_cm": 1320.8
+ },
+ "revit_data": {
+  "actors_with_data": 2600,
+  "actors_without": 0,
+  "attached_mesh_parts_with_data": 1627,
+  "attached_light_parts_with_data": 30,
+  "warnings_missing_actor_in_metadata": 1301,
+  "meaning": "data blocks in the file that name no placed object"
+ },
+ "missing_image_files": [
+  "Bandalux_9920.png",
+  "Bandalux_OpennessFactor_Simulator.png",
+  "diffuse_Oak Veneered MDF Staggered 51.2 x 78 inches (NG7H6O) (5).jpeg",
+  "Endicott SN-8 Black Glazed Thinbrick Modular Stack 11.3 x 24.5 inches bump.jpg",
+  "Endicott SN-8 Black Glazed Thinbrick Modular Stack 11.3 x 24.5 inches texture.jpg",
+  "ETH_Teak_NaturalOutdoor.jpg",
+  "Material_Leaf_N2D.png",
+  "RS10242_Wall_BoothBayBlue_BW.jpg",
+  "White Aluminum.jpg"
+ ],
+ "stray_object": {
+  "element": "Revit.Element.Id.18049581",
+  "label": "Generic_Models_Generic_Models_8_Generic_Models_7",
+  "centre_m": [
+   -440.6,
+   -884.7,
+   -1.0
+  ],
+  "size_m": [
+   0.6,
+   2.9,
+   2.7
+  ]
+ },
+ "lights": {
+  "intensity_units": "unitless (all 587)",
+  "intensity_min_median_max": [
+   9.29,
+   100.0,
+   6870.0
+  ],
+  "with_light_profile": 60,
+  "casting_shadow": 587
+ },
+ "workaround_cost": {
+  "at_editor_start": "none measurable",
+  "shaders_compiled": 82,
+  "seconds_with_a_job_in_flight": 45.29,
+  "thread_seconds": 313.571,
+  "shader_requests": 21702,
+  "served_from_cache_percent": 77.31,
+  "served_from_memory_percent": 20.64,
+  "cache_gb_before": 2.003,
+  "cache_gb_after": 2.005
+ },
+ "saved": {
+  "assets_saved": 1647,
+  "save_seconds": 22.1,
+  "level_saved": true
+ },
+ "result": "pass, on condition that the workaround line stays in the project"
+}

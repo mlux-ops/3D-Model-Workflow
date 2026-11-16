@@ -1,0 +1,223 @@
+{
+ "source": "gpu_passes_stations.json",
+ "method": "median of the samples per station and screen percentage; passes assigned to budget rows by name",
+ "budget_rows": [
+  {
+   "key": "geometry",
+   "label": "Geometry: Nanite visibility and surface pass",
+   "budget_ms": 2.0
+  },
+  {
+   "key": "shadows",
+   "label": "Shadows: Virtual Shadow Maps",
+   "budget_ms": 2.0
+  },
+  {
+   "key": "lumen_scene",
+   "label": "Lumen scene update and its lighting caches",
+   "budget_ms": 1.5
+  },
+  {
+   "key": "gi",
+   "label": "Lumen global illumination",
+   "budget_ms": 2.5
+  },
+  {
+   "key": "reflections",
+   "label": "Lumen reflections, including glass",
+   "budget_ms": 1.5
+  },
+  {
+   "key": "direct",
+   "label": "Direct light",
+   "budget_ms": 1.0
+  },
+  {
+   "key": "sky",
+   "label": "Sky, atmosphere, clouds and fog",
+   "budget_ms": 0.8
+  },
+  {
+   "key": "translucent",
+   "label": "Translucent surfaces",
+   "budget_ms": 0.8
+  },
+  {
+   "key": "wind",
+   "label": "Foliage wind",
+   "budget_ms": 0.4
+  },
+  {
+   "key": "upscaling",
+   "label": "Temporal upscaling",
+   "budget_ms": 1.2
+  },
+  {
+   "key": "post",
+   "label": "Post-processing and tone mapping",
+   "budget_ms": 0.8
+  },
+  {
+   "key": "other",
+   "label": "Not in the budget table",
+   "budget_ms": null
+  },
+  {
+   "key": "editor_ui",
+   "label": "Editor interface (outside the scene)",
+   "budget_ms": null
+  }
+ ],
+ "results": [
+  {
+   "station": "S1",
+   "screen_percentage": 100,
+   "samples": 3,
+   "rows_ms": {
+    "geometry": 1.34,
+    "shadows": 0.826,
+    "lumen_scene": 0.909,
+    "gi": 1.398,
+    "reflections": 0.424,
+    "direct": 0.369,
+    "sky": 0.621,
+    "translucent": 0.097,
+    "wind": 0.203,
+    "upscaling": 0.909,
+    "post": 0.278,
+    "other": 0.549,
+    "editor_ui": 0.235
+   },
+   "sum_of_scene_rows_ms": 7.924,
+   "graphics_queue_ms": 6.025,
+   "compute_queue_ms": 2.306,
+   "frame_gpu_ms": 6.303,
+   "frame_ms": 7.193
+  },
+  {
+   "station": "S2",
+   "screen_percentage": 100,
+   "samples": 3,
+   "rows_ms": {
+    "geometry": 1.123,
+    "shadows": 0.962,
+    "lumen_scene": 0.69,
+    "gi": 1.401,
+    "reflections": 0.381,
+    "direct": 0.31,
+    "sky": 0.991,
+    "translucent": 0.088,
+    "wind": 0.203,
+    "upscaling": 0.902,
+    "post": 0.462,
+    "other": 0.31,
+    "editor_ui": 0.234
+   },
+   "sum_of_scene_rows_ms": 7.824,
+   "graphics_queue_ms": 6.215,
+   "compute_queue_ms": 2.089,
+   "frame_gpu_ms": 6.401,
+   "frame_ms": 8.012
+  },
+  {
+   "station": "S6",
+   "screen_percentage": 100,
+   "samples": 3,
+   "rows_ms": {
+    "geometry": 1.224,
+    "shadows": 0.972,
+    "lumen_scene": 0.682,
+    "gi": 1.658,
+    "reflections": 0.442,
+    "direct": 0.472,
+    "sky": 0.596,
+    "translucent": 0.107,
+    "wind": 0.201,
+    "upscaling": 0.924,
+    "post": 0.279,
+    "other": 0.313,
+    "editor_ui": 0.235
+   },
+   "sum_of_scene_rows_ms": 7.869,
+   "graphics_queue_ms": 6.184,
+   "compute_queue_ms": 2.308,
+   "frame_gpu_ms": 6.648,
+   "frame_ms": 7.801
+  },
+  {
+   "station": "S1",
+   "screen_percentage": 152,
+   "samples": 3,
+   "rows_ms": {
+    "geometry": 1.882,
+    "shadows": 0.949,
+    "lumen_scene": 0.79,
+    "gi": 3.424,
+    "reflections": 0.689,
+    "direct": 0.683,
+    "sky": 1.351,
+    "translucent": 0.116,
+    "wind": 0.2,
+    "upscaling": 1.787,
+    "post": 0.324,
+    "other": 0.372,
+    "editor_ui": 0.236
+   },
+   "sum_of_scene_rows_ms": 12.567,
+   "graphics_queue_ms": 8.988,
+   "compute_queue_ms": 4.769,
+   "frame_gpu_ms": 9.451,
+   "frame_ms": 9.438
+  },
+  {
+   "station": "S2",
+   "screen_percentage": 152,
+   "samples": 3,
+   "rows_ms": {
+    "geometry": 1.432,
+    "shadows": 1.142,
+    "lumen_scene": 0.646,
+    "gi": 3.72,
+    "reflections": 0.587,
+    "direct": 0.723,
+    "sky": 1.471,
+    "translucent": 0.105,
+    "wind": 0.206,
+    "upscaling": 1.669,
+    "post": 0.318,
+    "other": 0.36,
+    "editor_ui": 0.235
+   },
+   "sum_of_scene_rows_ms": 12.38,
+   "graphics_queue_ms": 8.306,
+   "compute_queue_ms": 4.617,
+   "frame_gpu_ms": 9.083,
+   "frame_ms": 10.843
+  },
+  {
+   "station": "S6",
+   "screen_percentage": 152,
+   "samples": 3,
+   "rows_ms": {
+    "geometry": 1.928,
+    "shadows": 1.195,
+    "lumen_scene": 0.784,
+    "gi": 3.815,
+    "reflections": 0.813,
+    "direct": 1.194,
+    "sky": 1.005,
+    "translucent": 0.129,
+    "wind": 0.203,
+    "upscaling": 2.196,
+    "post": 0.329,
+    "other": 0.356,
+    "editor_ui": 0.236
+   },
+   "sum_of_scene_rows_ms": 13.947,
+   "graphics_queue_ms": 9.368,
+   "compute_queue_ms": 5.223,
+   "frame_gpu_ms": 9.404,
+   "frame_ms": 10.906
+  }
+ ]
+}

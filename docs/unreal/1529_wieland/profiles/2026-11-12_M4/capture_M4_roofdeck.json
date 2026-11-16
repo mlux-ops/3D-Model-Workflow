@@ -1,0 +1,117 @@
+{
+ "info": {
+  "step": "Phase 6, step 6.10: profile M4, part roofdeck",
+  "level": "/Game/Wieland1529/L_Site_M4.L_Site_M4",
+  "quality": "Epic (3), pool 1000, SP 100, t.MaxFPS 1000, Game View on",
+  "view_mode": "Lit",
+  "lighting": "Placeholder_Sun 10.0 lux, pitch -45, yaw -135, sky atmosphere and sky light; no interior lighting",
+  "viewport_pixels": [
+   2038,
+   782
+  ],
+  "unit_levels_shown": [
+   "NorthPenthouse",
+   "NorthTriplex",
+   "SouthPenthouse",
+   "SouthTriplex"
+  ],
+  "site": "default after Phase 7: earlier detailed buildings, new ground, 34 trees leaf-on with wind, far city",
+  "interior_lists": "Revit as exported (kitchen, bath, floor)",
+  "found_before": {
+   "sg.ViewDistanceQuality": 4.0,
+   "sg.AntiAliasingQuality": 4.0,
+   "sg.ShadowQuality": 4.0,
+   "sg.GlobalIlluminationQuality": 4.0,
+   "sg.ReflectionQuality": 4.0,
+   "sg.PostProcessQuality": 4.0,
+   "sg.TextureQuality": 4.0,
+   "sg.EffectsQuality": 4.0,
+   "sg.FoliageQuality": 4.0,
+   "sg.ShadingQuality": 4.0,
+   "sg.LandscapeQuality": 4.0,
+   "r.Streaming.PoolSize": 3000.0,
+   "r.Editor.Viewport.ScreenPercentage": 100.0,
+   "t.MaxFPS": 0.0,
+   "Slate.bAllowThrottling": 1.0,
+   "r.VSync": 0.0
+  },
+  "foreground_attempt": {
+   "was": 5636622,
+   "front": true
+  }
+ },
+ "started_unix": 1794521621.1213315,
+ "finished_unix": 1794521641.206617,
+ "warmup_seconds": 8.0,
+ "csv_folder": "D:/Unreal_Engine_Projects/Wieland1527 5.9/Saved/Profiling\\CSV",
+ "error": null,
+ "jobs": [
+  {
+   "name": "M4_penthouse_path_roof_deck",
+   "kind": "route",
+   "job": {
+    "kind": "route",
+    "name": "M4_penthouse_path_roof_deck",
+    "points": [
+     [
+      -1000.0,
+      -1250.0,
+      1684.0
+     ],
+     [
+      -1300.0,
+      -1560.0,
+      1684.0
+     ],
+     [
+      -1100.0,
+      -2300.0,
+      1684.0
+     ],
+     [
+      -900.0,
+      -1700.0,
+      1684.0
+     ]
+    ],
+    "seconds": 10.0,
+    "_yaw": 71.56505117707799
+   },
+   "wall_start_unix": 1794521629.1848967,
+   "recorded_seconds": 10.00063099997351,
+   "ticks": 1151,
+   "foreground_fraction": 1.0,
+   "tick_ms_mean": 8.690769592385827,
+   "tick_ms_p95": 14.13939893245697,
+   "tick_ms_max": 18.686097115278244,
+   "camera_first": {
+    "loc": [
+     -1001.925094142118,
+     -1251.9892639468553,
+     1684.0
+    ],
+    "rot_pitch_yaw_roll": [
+     0.0,
+     -134.06080627441406,
+     0.0
+    ]
+   },
+   "camera_last": {
+    "loc": [
+     -900.0,
+     -1700.0,
+     1684.0
+    ],
+    "rot_pitch_yaw_roll": [
+     0.0,
+     71.56504821777344,
+     0.0
+    ]
+   },
+   "new_csv_files": [
+    "Profile(20261112_161349).csv"
+   ],
+   "tick_ms_series": null
+  }
+ ]
+}

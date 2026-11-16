@@ -1,0 +1,134 @@
+[
+ {
+  "view": "S1",
+  "missing": [
+   "E:/Claude/3D-Model-Workflow/.claude/worktrees/1529-wieland-scene-plan-e84a03/docs/unreal/1529_wieland/review/phase9/realtime/T_l_ref\\S1_realtime.0000.png"
+  ]
+ },
+ {
+  "view": "S2",
+  "missing": [
+   "E:/Claude/3D-Model-Workflow/.claude/worktrees/1529-wieland-scene-plan-e84a03/docs/unreal/1529_wieland/review/phase9/realtime/T_l_ref\\S2_realtime.0000.png"
+  ]
+ },
+ {
+  "view": "S3",
+  "missing": [
+   "E:/Claude/3D-Model-Workflow/.claude/worktrees/1529-wieland-scene-plan-e84a03/docs/unreal/1529_wieland/review/phase9/realtime/T_l_ref\\S3_realtime.0000.png"
+  ]
+ },
+ {
+  "view": "S4",
+  "missing": [
+   "E:/Claude/3D-Model-Workflow/.claude/worktrees/1529-wieland-scene-plan-e84a03/docs/unreal/1529_wieland/review/phase9/realtime/T_l_ref\\S4_realtime.0000.png"
+  ]
+ },
+ {
+  "view": "S5",
+  "missing": [
+   "E:/Claude/3D-Model-Workflow/.claude/worktrees/1529-wieland-scene-plan-e84a03/docs/unreal/1529_wieland/review/phase9/realtime/T_l_ref\\S5_realtime.0000.png"
+  ]
+ },
+ {
+  "view": "S6",
+  "missing": [
+   "E:/Claude/3D-Model-Workflow/.claude/worktrees/1529-wieland-scene-plan-e84a03/docs/unreal/1529_wieland/review/phase9/realtime/T_l_ref\\S6_realtime.0000.png"
+  ]
+ },
+ {
+  "view": "S9",
+  "missing": [
+   "E:/Claude/3D-Model-Workflow/.claude/worktrees/1529-wieland-scene-plan-e84a03/docs/unreal/1529_wieland/review/phase9/realtime/T_l_ref\\S9_realtime.0000.png"
+  ]
+ },
+ {
+  "view": "D1",
+  "mean_truth": 0.1836,
+  "mean_real_time": 0.1768,
+  "mean_difference_percent": -3.7,
+  "mean_within_10_percent": true,
+  "pixels_used_percent": 91.3,
+  "blocks_off_by_over_one_stop_percent": 0.27,
+  "largest_region_percent": 0.08,
+  "regions_over_2_percent": [],
+  "passes": true,
+  "sheet": "E:/Claude/3D-Model-Workflow/.claude/worktrees/1529-wieland-scene-plan-e84a03/docs/unreal/1529_wieland/review/phase9/compare/T_l_ref/D1_sheet.jpg"
+ },
+ {
+  "view": "D2",
+  "mean_truth": 0.6012,
+  "mean_real_time": 0.6845,
+  "mean_difference_percent": 13.9,
+  "mean_within_10_percent": false,
+  "pixels_used_percent": 99.8,
+  "blocks_off_by_over_one_stop_percent": 1.49,
+  "largest_region_percent": 0.44,
+  "regions_over_2_percent": [],
+  "passes": false,
+  "sheet": "E:/Claude/3D-Model-Workflow/.claude/worktrees/1529-wieland-scene-plan-e84a03/docs/unreal/1529_wieland/review/phase9/compare/T_l_ref/D2_sheet.jpg"
+ },
+ {
+  "view": "D3",
+  "mean_truth": 0.2329,
+  "mean_real_time": 0.378,
+  "mean_difference_percent": 62.3,
+  "mean_within_10_percent": false,
+  "pixels_used_percent": 100.0,
+  "blocks_off_by_over_one_stop_percent": 54.96,
+  "largest_region_percent": 48.4,
+  "regions_over_2_percent": [
+   {
+    "share_of_frame_percent": 48.4,
+    "where": "middle right",
+    "box_pixels": [
+     800,
+     0,
+     3840,
+     2160
+    ],
+    "real_time_is": "brighter",
+    "mean_stops": 1.39
+   },
+   {
+    "share_of_frame_percent": 3.03,
+    "where": "top left",
+    "box_pixels": [
+     680,
+     120,
+     1360,
+     1120
+    ],
+    "real_time_is": "brighter",
+    "mean_stops": 1.54
+   }
+  ],
+  "passes": false,
+  "sheet": "E:/Claude/3D-Model-Workflow/.claude/worktrees/1529-wieland-scene-plan-e84a03/docs/unreal/1529_wieland/review/phase9/compare/T_l_ref/D3_sheet.jpg"
+ },
+ {
+  "view": "D4",
+  "mean_truth": 0.2776,
+  "mean_real_time": 0.2625,
+  "mean_difference_percent": -5.5,
+  "mean_within_10_percent": true,
+  "pixels_used_percent": 100.0,
+  "blocks_off_by_over_one_stop_percent": 0.08,
+  "largest_region_percent": 0.02,
+  "regions_over_2_percent": [],
+  "passes": true,
+  "sheet": "E:/Claude/3D-Model-Workflow/.claude/worktrees/1529-wieland-scene-plan-e84a03/docs/unreal/1529_wieland/review/phase9/compare/T_l_ref/D4_sheet.jpg"
+ },
+ {
+  "view": "D5",
+  "mean_truth": 0.3929,
+  "mean_real_time": 0.3883,
+  "mean_difference_percent": -1.2,
+  "mean_within_10_percent": true,
+  "pixels_used_percent": 98.3,
+  "blocks_off_by_over_one_stop_percent": 0.0,
+  "largest_region_percent": 0.0,
+  "regions_over_2_percent": [],
+  "passes": true,
+  "sheet": "E:/Claude/3D-Model-Workflow/.claude/worktrees/1529-wieland-scene-plan-e84a03/docs/unreal/1529_wieland/review/phase9/compare/T_l_ref/D5_sheet.jpg"
+ }
+]

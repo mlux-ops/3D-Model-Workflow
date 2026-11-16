@@ -1,0 +1,858 @@
+{
+  "created_utc": "2026-11-16T01:12:50.070517+00:00",
+  "scope": "offline cache audit; no editor state changed, no native originals changed",
+  "roof_repair_status": "PENDING root native material apply, readback and visual neutral/grazing review; no geometry shift",
+  "source_policy": "County 2022 footprints, 2022 scan-derived project audits and existing model geometry only. No Google content, no external imagery, no invented physical-site detail. Render appearance is evidence of model condition, not evidence of the real building's condition.",
+  "coordinate_frame": "level centimetres; north -X east -Y; raw vertices plus SHIFT plus per-vertex fit lift",
+  "source_limit": "Phase7 raw+fit reconstruction excludes later16-triangle1525 siding backing repair. Native fitted mesh dump required before changing material IDs or judging latest geometry.",
+  "sources": [
+    "E:\\Wieland1529_site_data\\county_footprints_2022.json",
+    "E:\\Claude\\3D-Model-Workflow\\.claude\\worktrees\\1529-wieland-scene-plan-e84a03\\docs\\unreal\\1529_wieland\\review\\phase7\\fit\\raw",
+    "E:\\Claude\\3D-Model-Workflow\\.claude\\worktrees\\1529-wieland-scene-plan-e84a03\\docs\\unreal\\1529_wieland\\review\\phase7\\fit\\plan",
+    "E:\\Claude\\3D-Model-Workflow\\.claude\\worktrees\\1529-wieland-scene-plan-e84a03\\docs\\unreal\\1529_wieland\\review\\phase7\\audit_fixes.csv",
+    "E:\\Claude\\3D-Model-Workflow\\.claude\\worktrees\\1529-wieland-scene-plan-e84a03\\docs\\unreal\\1529_wieland\\review\\phase10\\neighbours_now.csv",
+    "E:\\Claude\\3D-Model-Workflow\\.claude\\worktrees\\1529-wieland-scene-plan-e84a03\\docs\\unreal\\1529_wieland\\review\\phase10\\survey_ties_now.csv"
+  ],
+  "review_findings": [
+    {
+      "view": "1533_roof_realtime",
+      "kind": "material defect",
+      "finding": "Long stretched/streaky roof texture visible across large flat roof; replace roof material on placed copy with a colour-map world-mapped material and grazing-light review. Native dump confirms all slot4 triangles belong to this roof; a component override is sufficient."
+    },
+    {
+      "view": "1533_lot_side_realtime",
+      "kind": "camera issue",
+      "finding": "Wall fills image; no wall perimeter or lot tie visible. Retake with whole wall and survey corners in frame."
+    },
+    {
+      "view": "1525_lot_side_realtime",
+      "kind": "camera issue",
+      "finding": "Dark lap-siding close-up without edges; insufficient framing for geometry acceptance."
+    },
+    {
+      "view": "1525_roof_realtime",
+      "kind": "camera issue",
+      "finding": "Project wall blocks the neighbour roof. Hide project for diagnostic view then restore visibility exactly."
+    },
+    {
+      "view": "1533_street_realtime / 1525_street_realtime",
+      "kind": "retained detail",
+      "finding": "Windows, trim, brick/slats, stoops and railings are modelled. Tree occlusion prevents full facade assessment. No physical-site accuracy claim from these renders."
+    }
+  ],
+  "neighbours": [
+    {
+      "object_id": 780226,
+      "name": "1533 north",
+      "county_attributes": {
+        "OBJECTID": 780226,
+        "Area_SQFT": 3828.74269815,
+        "Year": "2022",
+        "Ground_Z": 594.547,
+        "Max_Point": 644.692,
+        "Height": 50.145,
+        "SHAPE_Length": 265.5331420282713,
+        "SHAPE_Area": 3828.7426981975805,
+        "GlobalID": "{130F4BB3-B277-4110-B19C-92B6758EBCC0}"
+      },
+      "county_roof_outline_level_cm": [
+        [
+          -3833.497,
+          -2164.783
+        ],
+        [
+          -2261.433,
+          -2143.787
+        ],
+        [
+          -2272.697,
+          -1915.456
+        ],
+        [
+          -2277.591,
+          -1816.045
+        ],
+        [
+          -2280.871,
+          -1570.698
+        ],
+        [
+          -1995.922,
+          -1566.893
+        ],
+        [
+          -1514.816,
+          -1533.358
+        ],
+        [
+          -1498.578,
+          -430.798
+        ],
+        [
+          -1555.74,
+          -431.558
+        ],
+        [
+          -1757.205,
+          -432.548
+        ],
+        [
+          -3595.733,
+          -441.553
+        ],
+        [
+          -3856.451,
+          -445.033
+        ],
+        [
+          -3833.497,
+          -2164.783
+        ]
+      ],
+      "county_outline_intrusion_into_governing_lot_sq_m": 0.35187,
+      "historical_phase10_fitted_vs_lidar": {
+        "building": "SB_780226",
+        "zone": "1",
+        "distance_from_lot_m": "0.0",
+        "footprint_sq_m": "353.5",
+        "share_covered_by_todays_building": "0.986",
+        "roof_typical_today_cm": "1472.2",
+        "roof_typical_laser_2022_cm": "1362.5",
+        "roof_difference_today_minus_laser_m": "1.1",
+        "north_side_further_out_m": "1.0",
+        "south_side_further_out_m": "0.0",
+        "east_side_further_out_m": "0.0",
+        "west_side_further_out_m": "1.0"
+      },
+      "historical_survey_ties": [
+        {
+          "tie": "tie1_1533_sw",
+          "what": "number 1533 (north neighbour), south-west corner",
+          "surveyed_x_cm": "-1508.8",
+          "surveyed_y_cm": "-367.6",
+          "corner_distance_cm": "10.0",
+          "north_wall_today_cm": "",
+          "north_wall_further_out_than_surveyed_cm": "",
+          "south_wall_today_cm": "-1508.8",
+          "south_wall_further_out_than_surveyed_cm": "0.0",
+          "east_wall_today_cm": "",
+          "east_wall_further_out_than_surveyed_cm": "",
+          "west_wall_today_cm": "-357.6",
+          "west_wall_further_out_than_surveyed_cm": "10.0",
+          "note": "the west edge is the coping of the parapet, seen from above"
+        }
+      ],
+      "prior_repair_records": [
+        {
+          "finding": "ML10",
+          "item": "1 swaps to Phase 5 parents",
+          "object": "the placed copies in L_Surroundings_R15",
+          "what_was_there": "98 of 123 materials on the earlier parts are stand-alone materials from the R14 import",
+          "what_is_there_now": "three slots on two copies now show instances of the Phase 5 parent (the two rows above: steps of 1525, brick of 1533). All other slots are as in the earlier level",
+          "how": "recorded swaps only where an audit finding asked for it; no keep-or-rebuild decision was taken for the owner",
+          "evidence": "this file",
+          "status": "open: the remaining stand-alone materials wait for the owner (keep or rebuild)"
+        },
+        {
+          "finding": "ML2",
+          "item": "1 brick of 1533",
+          "object": "R15_PART_opaque_xm05_yp01_part01, material slots 0 and 1 (1,092 triangles; the blank south side wall is 17.6 m long and 15.3 m high)",
+          "what_was_there": "/Game/Wieland/R15_Materials/Production/MI_R15_W1533_Brick and MI_R15_sexkaitb_UV: one worn-brick image set at 2.5 m a repeat on the mesh mapping, stretched to twice the height; bands on the blank wall",
+          "what_is_there_now": "/Game/Wieland1529/Surroundings/Materials/MI_W1529_R15_1533Brick (Phase 5 parent M_W1529_Opaque, Bricks086 at 2.6 by 1.3 m in world metres, AntiRepeat on, MacroVariation 0.07 at 6 m, tinted 0.80 / 0.74 / 0.74)",
+          "how": "recorded swap: override on the placed copy. Tested on the whole side wall with the building level switched to not visible for the pictures only (the new house stands in front of this wall)",
+          "evidence": "audit/jpg/ML2_street_before.jpg, ML2_street_after.jpg, ML2_wall_before.jpg, ML2_wall_after.jpg, ML2_wall_grazing.jpg, ML2_close_after.jpg, ML2_close_grazing.jpg",
+          "status": "fixed; gate row in material_gate.csv"
+        }
+      ],
+      "cached_parts": [
+        {
+          "part": "R15_PART_glass_xm05_yp01_part01",
+          "fitted_mesh": "/Game/Wieland1529/Surroundings/R15Fit/SM_R15fit_glass_xm05_yp01_part01",
+          "selected_by": "triangle centroid within county roof outline +30cm; search only, not legal/survey classification",
+          "selected_triangles": 384,
+          "bbox_cm": [
+            [
+              -3845.826,
+              -2115.298,
+              304.792
+            ],
+            [
+              -1596.256,
+              -1514.298,
+              1401.21
+            ]
+          ],
+          "slots": [
+            {
+              "slot": 0,
+              "name": "R15S_A_W1533_1537_glass",
+              "source_material": "/Game/Wieland/R15_Materials/MI_R15_Glass_Clear",
+              "selected_triangles": 384,
+              "surface_area_sq_m": 110.0704,
+              "all_kept_slot_triangles": 384,
+              "bbox_cm": [
+                [
+                  -3845.826,
+                  -2115.298,
+                  304.792
+                ],
+                [
+                  -1596.256,
+                  -1514.298,
+                  1401.21
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "part": "R15_PART_opaque_xm05_yp01_part01",
+          "fitted_mesh": "/Game/Wieland1529/Surroundings/R15Fit/SM_R15fit_opaque_xm05_yp01_part01",
+          "selected_by": "triangle centroid within county roof outline +30cm; search only, not legal/survey classification",
+          "selected_triangles": 4208,
+          "bbox_cm": [
+            [
+              -3949.399,
+              -2138.297,
+              -58.364
+            ],
+            [
+              -1508.77,
+              -364.567,
+              1523.825
+            ]
+          ],
+          "slots": [
+            {
+              "slot": 0,
+              "name": "R15S_A_W1533_1537_brick_red",
+              "source_material": "/Game/Wieland/R15_Materials/Production/MI_R15_sexkaitb_UV",
+              "selected_triangles": 656,
+              "surface_area_sq_m": 1295.813,
+              "all_kept_slot_triangles": 1080,
+              "bbox_cm": [
+                [
+                  -3949.399,
+                  -2125.298,
+                  -58.364
+                ],
+                [
+                  -1508.77,
+                  -367.567,
+                  1518.217
+                ]
+              ]
+            },
+            {
+              "slot": 1,
+              "name": "R15S_WLD_CTX_BLDG_brick_common_005",
+              "source_material": "/Game/Wieland/R15_Materials/Production/MI_R15_sexkaitb_UV",
+              "selected_triangles": 10,
+              "surface_area_sq_m": 149.2156,
+              "all_kept_slot_triangles": 12,
+              "bbox_cm": [
+                [
+                  -3949.397,
+                  -567.567,
+                  -31.242
+                ],
+                [
+                  -1529.448,
+                  -545.567,
+                  302.046
+                ]
+              ]
+            },
+            {
+              "slot": 2,
+              "name": "R15S_A_W1533_1537_limestone",
+              "source_material": "/Game/Wieland/R15_Materials/Production/MI_R15_limestone_continuous_World",
+              "selected_triangles": 1574,
+              "surface_area_sq_m": 84.4703,
+              "all_kept_slot_triangles": 3154,
+              "bbox_cm": [
+                [
+                  -3949.397,
+                  -2138.297,
+                  -29.565
+                ],
+                [
+                  -1508.77,
+                  -364.567,
+                  1408.726
+                ]
+              ]
+            },
+            {
+              "slot": 4,
+              "name": "R15S_A_W1533_1537_roof",
+              "source_material": "/Game/Wieland/R15_Materials/Production/MI_R15_bitumen_UV",
+              "selected_triangles": 4,
+              "surface_area_sq_m": 378.1521,
+              "all_kept_slot_triangles": 4,
+              "bbox_cm": [
+                [
+                  -3949.399,
+                  -2125.298,
+                  1438.767
+                ],
+                [
+                  -1508.77,
+                  -367.567,
+                  1507.757
+                ]
+              ],
+              "roof_raw_triangle_ids": [
+                7554,
+                7555,
+                7556,
+                7557
+              ],
+              "roof_candidates": 4,
+              "roof_union_projected_area_sq_m": 377.9584,
+              "roof_candidate_bbox_cm": [
+                [
+                  -3949.399,
+                  -2125.298,
+                  1438.767
+                ],
+                [
+                  -1508.77,
+                  -367.567,
+                  1507.757
+                ]
+              ]
+            },
+            {
+              "slot": 5,
+              "name": "R15S_A_W1533_1537_metal",
+              "source_material": "/Game/Wieland/R14/A_W1533_1537_metal",
+              "selected_triangles": 1964,
+              "surface_area_sq_m": 110.4909,
+              "all_kept_slot_triangles": 4572,
+              "bbox_cm": [
+                [
+                  -3949.399,
+                  -2127.798,
+                  304.604
+                ],
+                [
+                  -1508.77,
+                  -367.567,
+                  1523.825
+                ]
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "object_id": 781632,
+      "name": "1525 south",
+      "county_attributes": {
+        "OBJECTID": 781632,
+        "Area_SQFT": 1234.49740805,
+        "Year": "2022",
+        "Ground_Z": 595.3779999999999,
+        "Max_Point": 626.122,
+        "Height": 30.744,
+        "SHAPE_Length": 157.4992244511613,
+        "SHAPE_Area": 1234.4974080653612,
+        "GlobalID": "{7E3C26FF-D65E-4565-B3CE-CBD7DDE3EF04}"
+      },
+      "county_roof_outline_level_cm": [
+        [
+          654.872,
+          -1894.695
+        ],
+        [
+          631.673,
+          -156.625
+        ],
+        [
+          524.95,
+          -158.047
+        ],
+        [
+          347.17,
+          -158.147
+        ],
+        [
+          110.076,
+          -158.279
+        ],
+        [
+          -21.456,
+          -158.352
+        ],
+        [
+          -9.531,
+          -1903.078
+        ],
+        [
+          654.872,
+          -1894.695
+        ]
+      ],
+      "county_outline_intrusion_into_governing_lot_sq_m": 2.70315,
+      "historical_phase10_fitted_vs_lidar": {
+        "building": "SB_781632",
+        "zone": "1",
+        "distance_from_lot_m": "0.1",
+        "footprint_sq_m": "113.8",
+        "share_covered_by_todays_building": "0.965",
+        "roof_typical_today_cm": "746.5",
+        "roof_typical_laser_2022_cm": "848.5",
+        "roof_difference_today_minus_laser_m": "-1.02",
+        "north_side_further_out_m": "0.0",
+        "south_side_further_out_m": "0.0",
+        "east_side_further_out_m": "0.0",
+        "west_side_further_out_m": "0.0"
+      },
+      "historical_survey_ties": [
+        {
+          "tie": "tie2_1525_nw",
+          "what": "number 1525 (south neighbour), north-west corner",
+          "surveyed_x_cm": "20.7",
+          "surveyed_y_cm": "-198.4",
+          "corner_distance_cm": "30.0",
+          "north_wall_today_cm": "20.7",
+          "north_wall_further_out_than_surveyed_cm": "0.0",
+          "south_wall_today_cm": "",
+          "south_wall_further_out_than_surveyed_cm": "",
+          "east_wall_today_cm": "",
+          "east_wall_further_out_than_surveyed_cm": "",
+          "west_wall_today_cm": "-168.4",
+          "west_wall_further_out_than_surveyed_cm": "30.0",
+          "note": "the west edge is the roof's edge (eaves), seen from above"
+        },
+        {
+          "tie": "tie3_1525_ne",
+          "what": "number 1525 (south neighbour), north-east corner",
+          "surveyed_x_cm": "11.3",
+          "surveyed_y_cm": "-1679.5",
+          "corner_distance_cm": "10.0",
+          "north_wall_today_cm": "11.3",
+          "north_wall_further_out_than_surveyed_cm": "-0.0",
+          "south_wall_today_cm": "",
+          "south_wall_further_out_than_surveyed_cm": "",
+          "east_wall_today_cm": "-1689.5",
+          "east_wall_further_out_than_surveyed_cm": "10.0",
+          "west_wall_today_cm": "",
+          "west_wall_further_out_than_surveyed_cm": "",
+          "note": "main house wall (top over 5 m); a one-storey rear part 3.2 m high reaches 2.4 m further east"
+        }
+      ],
+      "prior_repair_records": [
+        {
+          "finding": "A5",
+          "item": "1 siding gaps",
+          "object": "R15_PART_opaque_xm04_yp01_part01 (the 1525 house), mesh /Game/Wieland1529/Surroundings/R15Fit/SM_R15fit_opaque_xm04_yp01_part01",
+          "what_was_there": "siding built of separate slats (5,984 triangles) with open gaps between them and nothing behind",
+          "what_is_there_now": "a closed backing block in the shape of the house (walls and gable, 16 triangles) 0.2 to 2 cm inside the slats, in the siding colour; the slats now read as lap siding with shadow lines",
+          "how": "added to the Phase 7 fitted mesh asset (not to the earlier mesh asset): 11,328 triangles before, 11,344 after; material slots unchanged; Nanite as before",
+          "evidence": "audit/jpg/A5_front_before.jpg, A5_front_after.jpg, A5_gable_before.jpg, A5_gable_after.jpg, A5_side_after.jpg",
+          "status": "fixed"
+        },
+        {
+          "finding": "ML10",
+          "item": "1 swaps to Phase 5 parents",
+          "object": "the placed copies in L_Surroundings_R15",
+          "what_was_there": "98 of 123 materials on the earlier parts are stand-alone materials from the R14 import",
+          "what_is_there_now": "three slots on two copies now show instances of the Phase 5 parent (the two rows above: steps of 1525, brick of 1533). All other slots are as in the earlier level",
+          "how": "recorded swaps only where an audit finding asked for it; no keep-or-rebuild decision was taken for the owner",
+          "evidence": "this file",
+          "status": "open: the remaining stand-alone materials wait for the owner (keep or rebuild)"
+        }
+      ],
+      "cached_parts": [
+        {
+          "part": "R15_PART_glass_xm04_yp01_part01",
+          "fitted_mesh": "/Game/Wieland1529/Surroundings/R15Fit/SM_R15fit_glass_xm04_yp01_part01",
+          "selected_by": "triangle centroid within county roof outline +30cm; search only, not legal/survey classification",
+          "selected_triangles": 96,
+          "bbox_cm": [
+            [
+              84.32,
+              -1674.832,
+              87.023
+            ],
+            [
+              554.32,
+              -169.05,
+              587.769
+            ]
+          ],
+          "slots": [
+            {
+              "slot": 0,
+              "name": "R15S_A_W1525_glaze_0",
+              "source_material": "/Game/Wieland/R15_Materials/MI_R15_Glass_Blue",
+              "selected_triangles": 84,
+              "surface_area_sq_m": 22.321,
+              "all_kept_slot_triangles": 84,
+              "bbox_cm": [
+                [
+                  84.32,
+                  -1670.231,
+                  87.023
+                ],
+                [
+                  554.32,
+                  -169.05,
+                  587.769
+                ]
+              ]
+            },
+            {
+              "slot": 1,
+              "name": "R15S_A_W1525_glaze_1",
+              "source_material": "/Game/Wieland/R15_Materials/MI_R15_Glass_Blue",
+              "selected_triangles": 12,
+              "surface_area_sq_m": 1.4171,
+              "all_kept_slot_triangles": 12,
+              "bbox_cm": [
+                [
+                  136.868,
+                  -1674.832,
+                  411.329
+                ],
+                [
+                  202.867,
+                  -1673.131,
+                  515.167
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "part": "R15_PART_opaque_xm04_yp01_part01",
+          "fitted_mesh": "/Game/Wieland1529/Surroundings/R15Fit/SM_R15fit_opaque_xm04_yp01_part01",
+          "selected_by": "triangle centroid within county roof outline +30cm; search only, not legal/survey classification",
+          "selected_triangles": 8284,
+          "bbox_cm": [
+            [
+              6.633,
+              -1919.914,
+              -11.607
+            ],
+            [
+              635.348,
+              -40.333,
+              896.19
+            ]
+          ],
+          "slots": [
+            {
+              "slot": 0,
+              "name": "R15S_A_W1525_door_paint",
+              "source_material": "/Game/Wieland/R14/A_W1525_door_paint",
+              "selected_triangles": 36,
+              "surface_area_sq_m": 11.4739,
+              "all_kept_slot_triangles": 36,
+              "bbox_cm": [
+                [
+                  123.867,
+                  -1672.531,
+                  51.327
+                ],
+                [
+                  490.321,
+                  -174.55,
+                  533.325
+                ]
+              ]
+            },
+            {
+              "slot": 1,
+              "name": "R15S_A_W1525_siding_pale",
+              "source_material": "/Game/Wieland/R14/A_W1525_siding_pale",
+              "selected_triangles": 5984,
+              "surface_area_sq_m": 776.0507,
+              "all_kept_slot_triangles": 5984,
+              "bbox_cm": [
+                [
+                  10.415,
+                  -1680.632,
+                  -8.288
+                ],
+                [
+                  631.568,
+                  -185.05,
+                  887.802
+                ]
+              ]
+            },
+            {
+              "slot": 2,
+              "name": "R15S_WLD_CTX_BLDG_concrete_008",
+              "source_material": "/Game/Wieland/R15_Materials/Production/MI_R15_concrete_floor_03_UV",
+              "selected_triangles": 32,
+              "surface_area_sq_m": 32.2161,
+              "all_kept_slot_triangles": 52,
+              "bbox_cm": [
+                [
+                  31.267,
+                  -1919.914,
+                  -11.607
+                ],
+                [
+                  610.716,
+                  -120.3,
+                  69.383
+                ]
+              ]
+            },
+            {
+              "slot": 3,
+              "name": "R15S_A_W1525_shingle",
+              "source_material": "/Game/Wieland/R15_Materials/Production/MI_R15_asphalt_shingle_UV",
+              "selected_triangles": 4,
+              "surface_area_sq_m": 110.7736,
+              "all_kept_slot_triangles": 4,
+              "bbox_cm": [
+                [
+                  11.266,
+                  -1679.731,
+                  663.812
+                ],
+                [
+                  630.716,
+                  -198.404,
+                  887.802
+                ]
+              ],
+              "roof_raw_triangle_ids": [
+                4212,
+                4213,
+                4214,
+                4215
+              ],
+              "roof_candidates": 4,
+              "roof_union_projected_area_sq_m": 90.361,
+              "roof_candidate_bbox_cm": [
+                [
+                  11.266,
+                  -1679.731,
+                  663.812
+                ],
+                [
+                  630.716,
+                  -198.404,
+                  887.802
+                ]
+              ]
+            },
+            {
+              "slot": 4,
+              "name": "R15S_A_W1525_metal",
+              "source_material": "/Game/Wieland/R14/A_W1525_metal",
+              "selected_triangles": 984,
+              "surface_area_sq_m": 12.3512,
+              "all_kept_slot_triangles": 984,
+              "bbox_cm": [
+                [
+                  30.767,
+                  -1918.414,
+                  319.119
+                ],
+                [
+                  611.216,
+                  -1676.931,
+                  435.646
+                ]
+              ]
+            },
+            {
+              "slot": 5,
+              "name": "R15S_A_W1525_paint_trim",
+              "source_material": "/Game/Wieland/R14/A_W1525_paint_trim",
+              "selected_triangles": 924,
+              "surface_area_sq_m": 77.4772,
+              "all_kept_slot_triangles": 924,
+              "bbox_cm": [
+                [
+                  6.633,
+                  -1912.614,
+                  -3.245
+                ],
+                [
+                  635.348,
+                  -167.3,
+                  896.19
+                ]
+              ]
+            },
+            {
+              "slot": 6,
+              "name": "R15S_A_W1525_porch_wood",
+              "source_material": "/Game/Wieland/R15_Materials/Production/MI_R15_brown_planks_09_UV",
+              "selected_triangles": 12,
+              "surface_area_sq_m": 30.6251,
+              "all_kept_slot_triangles": 12,
+              "bbox_cm": [
+                [
+                  31.267,
+                  -1919.914,
+                  302.062
+                ],
+                [
+                  610.716,
+                  -1679.731,
+                  329.155
+                ]
+              ]
+            },
+            {
+              "slot": 22,
+              "name": "R15S_R14_W1525_PAINTED_METAL",
+              "source_material": "/Game/Wieland/R14/R14_W1525_PAINTED_METAL",
+              "selected_triangles": 308,
+              "surface_area_sq_m": 0.8694,
+              "all_kept_slot_triangles": 704,
+              "bbox_cm": [
+                [
+                  308.319,
+                  -183.267,
+                  49.3
+                ],
+                [
+                  500.319,
+                  -40.333,
+                  152.53
+                ]
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "minimal_repair_plan": [
+    "Fix diagnostic cameras before accepting geometry; project visibility changed only temporarily and restored.",
+    "Native dump confirms slot4 contains only the1533 roof: component material override slot4 is sufficient. Preserve every other slot and existing placed brick overrides. Mesh clone is unnecessary for this material repair.",
+    "Use world mapping, colour map, non-repeating detail, neutral+grazing proof; no inferred roof plant or physical details without permitted source.",
+    "Re-read native mesh counts, triangle positions and original package hashes; geometry must be unchanged by roof-material repair. If cloning is nevertheless chosen, append slot31 and assign only native triangle IDs7534-7537.",
+    "Keep measured height mismatches visible as limitations. No geometry shift in this repair; do not move the whole merged tile to resolve a per-building height discrepancy."
+  ],
+  "checks": [
+    "Original assets unchanged; copied mesh vertex positions and triangle indices byte-equal to fitted source for material-only repair.",
+    "Material IDs outside selected1533 roof triangles byte-equal;1537 roof and all other buildings in merged part unchanged.",
+    "1533 south wall on X=-1508.76cm;1525 north wall follows survey ties(20.7,-198.4) and(11.3,-1679.5)cm. Judge walls, not coping/eaves.",
+    "No new projected triangle area inside governing lot beyond the existing baseline; compare native dump before/after.",
+    "If height correction is done: rerasterise roof at0.5m, compare median only where scan and model both have building, limit0.3m; separately assess pitched roof ridge and dormer against building returns, excluding vegetation."
+  ],
+  "native_1533_roof_contract": {
+    "native_dump": "E:\\Claude\\3D-Model-Workflow\\.claude\\worktrees\\1529-wieland-scene-plan-e84a03\\docs\\unreal\\1529_wieland\\review\\phase20\\nearby_detail\\neighbours\\audit_current_1533_opaque.npz",
+    "file_sha256": "b30926c0e73435d7b1f52a973f038ec9293dfb61b281b677a33da82a154bd6c6",
+    "array_sha256": {
+      "positions": "ae6dae74886df115f3595033335837d6f6626ee74a570c6c55bfdd383d05d66c",
+      "triangles": "c416ca90b92aa9cbd34c1de0e55e385519c55052e81352b8e8132751d041cb1f",
+      "material_ids": "5fa2f1f73b62c509ffde88113287ccbf23f31368400a5e0174c9f3c4d7f0ce3c",
+      "slot_names": "e52b17dc726f2d298a2c07bc734b19dbd268cae453178816a8a14a17758cf305",
+      "slot_materials": "f781ba837c1e0bb446eced30a65435fc8604f744b16f72c3d8d5f63cfc60ec09"
+    },
+    "vertex_count": 34462,
+    "triangle_count": 17906,
+    "slot_count": 31,
+    "slot": 4,
+    "slot_name": "R15S_A_W1533_1537_roof",
+    "source_material": "/Game/Wieland/R15_Materials/Production/MI_R15_bitumen_UV",
+    "maximum_cached_fit_to_native_triangle_vertex_difference_cm": 6.085956397328118e-05,
+    "all_triangle_indices_in_slot": [
+      7534,
+      7535,
+      7536,
+      7537
+    ],
+    "triangle_world_coordinates_cm": [
+      [
+        [
+          -2363.682,
+          -2125.298,
+          1438.767
+        ],
+        [
+          -3949.399,
+          -2125.297,
+          1493.68
+        ],
+        [
+          -2363.682,
+          -1528.297,
+          1447.694
+        ]
+      ],
+      [
+        [
+          -1508.77,
+          -367.567,
+          1467.434
+        ],
+        [
+          -2363.682,
+          -1528.297,
+          1447.694
+        ],
+        [
+          -3949.397,
+          -367.567,
+          1507.757
+        ]
+      ],
+      [
+        [
+          -2363.682,
+          -1528.297,
+          1447.694
+        ],
+        [
+          -1508.77,
+          -367.567,
+          1467.434
+        ],
+        [
+          -1508.77,
+          -1528.298,
+          1454.772
+        ]
+      ],
+      [
+        [
+          -3949.399,
+          -2125.297,
+          1493.68
+        ],
+        [
+          -3949.397,
+          -367.567,
+          1507.757
+        ],
+        [
+          -2363.682,
+          -1528.297,
+          1447.694
+        ]
+      ]
+    ],
+    "roof_projected_area_sq_m": 377.9584,
+    "roof_inside_county_outline_sq_m": 343.2682,
+    "roof_outside_county_outline_sq_m": 34.6901,
+    "roof_inside_governing_lot_sq_m": 0.0,
+    "fitted_roof_z_extent_cm": [
+      1438.767,
+      1507.757
+    ],
+    "pre_fit_source_roof_z_extent_cm": [
+      1496.0,
+      1496.0
+    ],
+    "interpretation": "The native roof has a 68.99 cm height spread while its pre-fit source roof was horizontal. This follows the per-vertex smooth-ground fit and is not a measured roof slope. Historical raster roof mismatch is +1.10 m versus the 2022 scan. No height correction is made by this audit.",
+    "preferred_operation": "set_material(4,new_roof_material) on placed fitted actor only; snapshot/readback every material override and preserve slots0/1 brick overrides",
+    "copy_only_alternative": "duplicate current fitted StaticMesh to new package, preserve original31 slots and all arrays, append roof material at31, change material_ids only at7534..7537 from4 to31, preserve component overrides when swapping placed copy",
+    "forbidden_operation": "global material replacement or original imported/production asset mutation",
+    "acceptance": "material-only change: position/triangle hashes identical; slot4 only override changed; original31 mesh slot/material arrays untouched; close+wide+grazing review pending"
+  }
+}
