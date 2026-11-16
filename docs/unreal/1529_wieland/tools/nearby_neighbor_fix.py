@@ -31,8 +31,8 @@ def apply():
     mi=unreal.load_asset(path) if unreal.EditorAssetLibrary.does_asset_exist(path) else unreal.AssetToolsHelpers.get_asset_tools().create_asset(NAME,FOLDER,unreal.MaterialInstanceConstant,unreal.MaterialInstanceConstantFactoryNew())
     mel=unreal.MaterialEditingLibrary
     mel.set_material_instance_parent(mi,roof_parent())
-    textures={'BaseColorMap':'/Game/Wieland/R15_Materials/PolyHaven/bitumen/T_R15_bitumen_BaseColor',
-              'NormalMap':'/Game/Wieland/R15_Materials/PolyHaven/bitumen/T_R15_bitumen_Normal',
+    textures={'BaseColorMap':'/Game/Wieland/R15_Materials/PolyHaven/asphalt_03/T_R15_asphalt_03_BaseColor',
+              'NormalMap':'/Game/Wieland/R15_Materials/PolyHaven/asphalt_03/T_R15_asphalt_03_Normal',
               'RoughnessMap':'/Game/Wieland1529/Materials/Textures/T_W1529_WhiteLinear'}
     scalars={'SizeU_m':2.0,'SizeV_m':2.0,'WorldYawDeg':1.18,'RoughnessScale':.82,
              'MacroVariation':.035,'VariationSize_m':4.0,'NormalStrength':.4,'Metallic':0.0,'Specular':.25}

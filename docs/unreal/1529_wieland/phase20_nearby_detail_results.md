@@ -28,6 +28,8 @@ Owner update 2026-11-15 18:49: YES to inferred facade windows, trim and colours,
 
 | N9 | 2026-11-15 19:22 | Resume from saved checkpoint; complete nearby facade and street geometry, verify all outputs before native activation; resolve neighbour materials and measured roof controls. | PENDING. |
 
+19:26 progress: 1533 upper architecture refitted on two new mesh copies, opaque and glass, preserving XY, ground storey below300cm, all unrelated vertices, topology and material overrides. Native roof dump reads1364.140015cm at every roof vertex, matching measured1364.14cm. Copied level saved. New low-contrast asphalt_03 CC0 surface replaces banded bitumen bitmap as an inferred roof presentation finish; neutral/grazing frames inspected without the previous stretching/bands. Sun/pre-exposure restored. Full facade/street offline builds running; no final activation or videos yet.
+
 - Editor remains open in L_Site_M4; no unsaved packages at 18:12. Earlier-local/updated-skyline hybrid is saved. The original L_R15_Production file still has its 2026-11-10 19:00:15 save time.
 - Do not run old crash-recovery commands again: clean D1, profile and grazing checks are complete. Phase 20 stays IN PROGRESS because of the added nearby-detail scope.
 - Owner approved inferred windows, trim and colours at 18:49, with assumptions recorded. Complete this work without requesting that approval again; keep the distinction from source-verified architecture.
