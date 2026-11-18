@@ -1,0 +1,121 @@
+{
+ "info": {
+  "step": "Phase 9, state C2, part roofdeck: MegaLights on; interior volumes: hit lighting for reflections only",
+  "level": "/Game/Wieland1529/L_Site_M4.L_Site_M4",
+  "quality": "Epic (3), pool 1000, screen percentage 82, t.MaxFPS 1000, Game View on",
+  "view_mode": "Lit",
+  "lighting": "L_Light_SummerAfternoon: sun 160000.0 lux, sky, haze, fog, clouds, fixed exposure; 284 fixture lights on, 284 of them casting shadows",
+  "console_variables_for_this_run": {
+   "r.Editor.Viewport.ScreenPercentage": 82
+  },
+  "viewport_pixels": [
+   2038,
+   1198
+  ],
+  "unit_levels_shown": [
+   "NorthPenthouse",
+   "NorthTriplex",
+   "SouthPenthouse",
+   "SouthTriplex"
+  ],
+  "materials": "Phase 12 active",
+  "found_before": {
+   "sg.ViewDistanceQuality": 3.0,
+   "sg.AntiAliasingQuality": 3.0,
+   "sg.ShadowQuality": 3.0,
+   "sg.GlobalIlluminationQuality": 3.0,
+   "sg.ReflectionQuality": 3.0,
+   "sg.PostProcessQuality": 3.0,
+   "sg.TextureQuality": 3.0,
+   "sg.EffectsQuality": 3.0,
+   "sg.FoliageQuality": 3.0,
+   "sg.ShadingQuality": 3.0,
+   "sg.LandscapeQuality": 3.0,
+   "r.Streaming.PoolSize": 1000.0,
+   "r.Editor.Viewport.ScreenPercentage": 100.0,
+   "t.MaxFPS": 0.0,
+   "Slate.bAllowThrottling": 1.0,
+   "r.VSync": 0.0
+  },
+  "foreground_attempt": {
+   "restored": 0,
+   "front": false,
+   "asked": false,
+   "idle_seconds": 5.3
+  }
+ },
+ "started_unix": 1794571533.0342267,
+ "finished_unix": 1794571553.1280587,
+ "warmup_seconds": 8.0,
+ "csv_folder": "D:/Unreal_Engine_Projects/Wieland1527 5.9/Saved/Profiling\\CSV",
+ "error": null,
+ "jobs": [
+  {
+   "name": "C2_penthouse_path_roof_deck",
+   "kind": "route",
+   "job": {
+    "kind": "route",
+    "name": "C2_penthouse_path_roof_deck",
+    "points": [
+     [
+      -1000.0,
+      -1250.0,
+      1684.0
+     ],
+     [
+      -1300.0,
+      -1560.0,
+      1684.0
+     ],
+     [
+      -1100.0,
+      -2300.0,
+      1684.0
+     ],
+     [
+      -900.0,
+      -1700.0,
+      1684.0
+     ]
+    ],
+    "seconds": 10.0,
+    "_yaw": 71.56505117707799
+   },
+   "wall_start_unix": 1794571541.1072786,
+   "recorded_seconds": 10.004650400001992,
+   "ticks": 858,
+   "foreground_fraction": 0.0,
+   "tick_ms_mean": 11.664828902114799,
+   "tick_ms_p95": 14.13710042834282,
+   "tick_ms_max": 21.85029909014702,
+   "camera_first": {
+    "loc": [
+     -1001.7212902965506,
+     -1251.778666639769,
+     1684.0
+    ],
+    "rot_pitch_yaw_roll": [
+     0.0,
+     -134.06080627441406,
+     0.0
+    ]
+   },
+   "camera_last": {
+    "loc": [
+     -900.0,
+     -1700.0,
+     1684.0
+    ],
+    "rot_pitch_yaw_roll": [
+     0.0,
+     71.56504821777344,
+     0.0
+    ]
+   },
+   "new_csv_files": [
+    "Profile(20261113_060541).csv"
+   ],
+   "tick_ms_series": null
+  }
+ ]
+}

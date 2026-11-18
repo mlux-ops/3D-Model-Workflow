@@ -24,6 +24,16 @@ All positions are provisional until Phase 2 replaces them with surveyed ones. Th
 
 Headings are true bearings, clockwise from true north. The street is taken to run about one degree west of true north; Phase 2 measures it.
 
+### Corrected by Phase 2 on 2026-11-11
+
+Phase 2 measured the street and the lot (`phase2_results.md`). Three things in this file are wrong as written, and the figures below replace them. The tables further down are left as they were written, so that the change can be seen.
+
+- **The right-of-way of Wieland Street is 50 ft (15.24 m), not 66 ft.** The plat of survey says so, and the county parcels and the 2022 ground surface agree. The west kerb is 11.7 m and the far side of the west sidewalk 15.2 m west of the front lot line. The west sidewalk's walking line is therefore 14.0 m west of the front lot line, not 18 m; a point 18 m west is inside the buildings opposite.
+- **Every station on the west sidewalk (S1 to S5) moves 4 m east.** Their latitudes change by less than a metre. Every station's position in latitude and longitude, in State Plane coordinates, in the new level frame and in the existing level is in `review\phase2\stations.csv`. S1 is at latitude 41.9102097, longitude -87.6357473.
+- **There is no alley behind the lot, so station S7 cannot exist as written.** The rear lot line meets the neighbours' lots, with a four-storey building 0.2 to 0.3 ft beyond it. A rear view has to be taken from the building's own rear decks, and is a design view, not a reference view.
+
+The lot centre used in this file, latitude 41.910215 and longitude -87.635389, is right within 0.2 m. True north is now measured: the lot's front line runs 1.18 degrees west of it. A bearing in the station table converts to a yaw in the level as yaw = bearing - 178.82 degrees.
+
 ## What the owner settled on 2026-11-10
 
 - The scene is for design review of finishes, and nothing is published.
@@ -71,6 +81,20 @@ These are scored against a path-traced render of the same view, which Phase 8 tr
 | D5 Triplex rear patios | From the covered patio looking out across the uncovered patio | Exterior paving, metalwork and door finishes and their alternatives |
 
 The owner names the half of the building and the exact rooms for D2 to D4. Each design view's exact position, heading and lens are then set from the Revit model in Phase 6 and entered in this table. Until then they are: standing eye height of 1.60 m, a 24 mm lens, and the heading described in the table.
+
+### Provisional positions set in Phase 6 (2026-11-11), pending the owner's choice of half and rooms
+
+The owner has not yet named the half or the rooms, so Phase 6 used the north half and the rooms below. Positions are in the Unreal level's frame, in centimetres (origin at the lot's south-west corner, north is -X, east is -Y, up is +Z). The eye is 1.60 m above the finished floor and the lens is 24 mm on a 36 mm frame (73.7 degrees wide) in every view. Headings are compass bearings (0 = north, 90 = east); pitch is degrees below the horizon. The same numbers are in `tools\wieland_interiors.py` (`DESIGN_VIEWS`).
+
+| Station | Room used | Camera X, Y, Z (cm) | Looks at X, Y, Z (cm) | Heading | Pitch down |
+|---|---|---|---|---|---|
+| D1 | North penthouse roof deck, under the pergola | -1300, -1560, 1684 | -900, -2300, 1640 | 118 | 3.0 |
+| D2 | North penthouse, 4th floor, street-facing kitchen room | -960, -840, 1339 | -1200, -330, 1320 | 295 | 1.9 |
+| D3 | North triplex, 1st floor kitchen, along the counter toward the street window | -1100, -930, 363 | -1340, -560, 320 | 303 | 5.6 |
+| D4 | North triplex, 2nd floor hall bath (tub, toilet, basin, wall light) | -1375, -2020, 688 | -1250, -2210, 630 | 123 | 14.3 |
+| D5 | North triplex, 1st floor covered rear patio, looking out to the rear | -1190, -2262, 363 | -1190, -2800, 330 | 90 | 3.5 |
+
+Two things the owner should know about these rooms. The penthouse's largest street-facing room is its kitchen and island; the living and dining space is behind the stair and faces the rear. In the Revit model, the walls of the D4 bath carry the gypsum-board material and no tile; only the shower fitting carries a porcelain material. D4 can therefore test tile relief only through a tile alternative (see `phase6_results.md`), not through the material Revit exported.
 
 ## Tolerances proposed, and the evidence behind each
 

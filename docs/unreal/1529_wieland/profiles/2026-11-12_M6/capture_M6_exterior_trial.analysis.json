@@ -1,0 +1,140 @@
+{
+ "source_record": "capture_M6_exterior_trial.json",
+ "info": {
+  "step": "Phase 8, step 8.11: profile M6, part exterior, variant _trial",
+  "level": "/Game/Wieland1529/L_Site_M4.L_Site_M4",
+  "quality": "Epic (3), pool 1000, SP 100, t.MaxFPS 1000, Game View on",
+  "view_mode": "Lit",
+  "lighting": "L_Light_SummerAfternoon: sun 160000.0 lux, sky atmosphere with haze, sky light, height fog, volumetric clouds, fixed exposure (EV 14.64 outdoors, EV 9.0 indoors); 284 fixture lights on, 284 of them casting shadows",
+  "console_variables_for_this_run": {},
+  "viewport_pixels": [
+   2038,
+   1198
+  ],
+  "unit_levels_shown": [
+   "NorthPenthouse",
+   "NorthTriplex",
+   "SouthPenthouse",
+   "SouthTriplex"
+  ],
+  "site": "default after Phase 7: earlier detailed buildings, new ground, 34 trees leaf-on with wind, far city",
+  "interior_lists": "as saved",
+  "found_before": {
+   "sg.ViewDistanceQuality": 3.0,
+   "sg.AntiAliasingQuality": 3.0,
+   "sg.ShadowQuality": 3.0,
+   "sg.GlobalIlluminationQuality": 3.0,
+   "sg.ReflectionQuality": 3.0,
+   "sg.PostProcessQuality": 3.0,
+   "sg.TextureQuality": 3.0,
+   "sg.EffectsQuality": 3.0,
+   "sg.FoliageQuality": 3.0,
+   "sg.ShadingQuality": 3.0,
+   "sg.LandscapeQuality": 3.0,
+   "r.Streaming.PoolSize": 1000.0,
+   "r.Editor.Viewport.ScreenPercentage": 100.0,
+   "t.MaxFPS": 0.0,
+   "Slate.bAllowThrottling": 1.0,
+   "r.VSync": 0.0
+  },
+  "foreground_attempt": {
+   "was": 526454,
+   "front": true
+  }
+ },
+ "method": "final header row; every positive FrameTime row; p95 = value at floor(0.95 * (n - 1))",
+ "jobs": [
+  {
+   "name": "M6_exterior_path_first_walk_trial",
+   "kind": "path",
+   "csv": [
+    "Profile(20261113_000429).csv"
+   ],
+   "foreground_fraction": 0.808955223880597,
+   "recorded_seconds": 10.030877599999258,
+   "tick_ms_mean": 29.925310745168087,
+   "tick_ms_p95": 35.89250147342682,
+   "tick_ms_max": 43.737899512052536,
+   "frames": 335,
+   "columns": 284,
+   "mean_fps": 33.39952121437389,
+   "frames_over_16_667ms": 335,
+   "frames_over_33_333ms": 35,
+   "stats": {
+    "FrameTime": {
+     "mean": 29.94054895522388,
+     "p95": 36.0029,
+     "min": 19.4902,
+     "max": 43.5567
+    },
+    "GPUTime": {
+     "mean": 17.656685074626864,
+     "p95": 22.1768,
+     "min": 13.67,
+     "max": 22.9464
+    },
+    "GameThreadTime": {
+     "mean": 7.4305200000000005,
+     "p95": 9.1525,
+     "min": 6.0057,
+     "max": 13.579
+    },
+    "RenderThreadTime": {
+     "mean": 29.94859104477612,
+     "p95": 35.6489,
+     "min": 25.45,
+     "max": 43.4366
+    },
+    "RHIThreadTime": {
+     "mean": 3.0945005970149255,
+     "p95": 3.6246,
+     "min": 2.5084,
+     "max": 4.252
+    },
+    "GPUMem/LocalUsedMB": {
+     "mean": 8943.491512238805,
+     "p95": 9760.2188,
+     "min": 8485.5312,
+     "max": 10017.9688
+    },
+    "GPUMem/LocalBudgetMB": {
+     "mean": 15280.0,
+     "p95": 15280.0,
+     "min": 15280.0,
+     "max": 15280.0
+    },
+    "RHI/DrawCalls": {
+     "mean": 29608.63880597015,
+     "p95": 30475.0,
+     "min": 28183.0,
+     "max": 30793.0
+    },
+    "RHI/PrimitivesDrawn": {
+     "mean": 938160.8179104477,
+     "p95": 1806982.0,
+     "min": 480858.0,
+     "max": 2185288.0
+    },
+    "TextureStreaming/DesiredDataLoadedPercent": {
+     "mean": 100.0,
+     "p95": 100.0,
+     "min": 100.0,
+     "max": 100.0
+    },
+    "MemoryFreeMB": {
+     "mean": 11092.750267164178,
+     "p95": 11156.6016,
+     "min": 11025.7891,
+     "max": 11188.8906
+    },
+    "PhysicalUsedMB": {
+     "mean": 6164.998730447761,
+     "p95": 6224.1562,
+     "min": 6070.4141,
+     "max": 6226.3125
+    }
+   },
+   "metadata": {}
+  }
+ ]
+}

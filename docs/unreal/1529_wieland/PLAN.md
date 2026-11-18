@@ -31,6 +31,12 @@ A session that builds one phase should read this block along with that phase's s
 - **Errors.** Every error and its solution is logged in `PROJECT_MEMORY.md` at the repository root in the same session.
 - **Profiles.** Every phase that changes the scene ends by running the fixed camera path and saving a profile (defined under "Budgets").
 - **The installed Unreal skills.** The owner installed the Claude Code plugin `unreal-engine-skills-for-claude-code` (version 3.1.2) on 2026-11-10. Every session that touches the editor uses its `unreal-mcp` skill: check for skills registered in the project first, find tools with `list_toolsets` and `describe_toolsets`, run them with `call_tool`, read each result before the next call, make dependent changes one at a time, and save the named assets before and after any bulk change. In engine 5.9 the describing tools are named `describe_toolsets` and `describe_tools`; the skill's text uses the older singular name.
+- **Engine conditions found in Phase 1.** Engine 5.9.0 needs four things, each measured in Phase 1 and written up in `phase1_results.md`. (1) The line `r.Material.UseShaderCompilationParameters=0` stays in `Config\DefaultEngine.ini`; without it a Datasmith import crashes the editor. Each session confirms the variable reads 0 before importing. (2) A path-traced render sets `r.RayTracing.Nanite.Mode 2` first and puts it back to 0 afterwards; without it walls are drawn with holes. (3) A Datasmith import or reimport is never started in the call that loads a level: load the level, then in a separate call run `finish_asset_compilation()` from `tools\wieland_datasmith.py`, and only then import. A reimport started while a level's meshes are still being prepared crashes the editor. (4) An imported object is found by its `Revit.Element.Id.` tag, never by its label, because a reimport renumbers labels; and components are counted, not actors.
+- **Memory before heavy steps.** By the owner's instruction of 2026-11-11: before an import, a reimport, a path-traced render or a lighting trial, read free physical memory and free commit (the virtual memory Windows can still hand out) and write them into the phase's results file. Under 12 GB of free commit the step is not started and the owner is told. The editor crashed once for this reason, with Revit open beside it. **For a Datasmith import or reimport of the building the floor is 30 GB, in a freshly started editor with only the target level loaded** (the owner's rule of 2026-11-11, after the editor ran out of memory at 16:30): the reimport takes about 17 GB above what the editor holds, for about fifteen seconds, and a script logs the editor's committed memory every two seconds while it runs.
+- **Captures.** Before timing or picturing a view, check that the viewport's view mode is Lit, set the quality the capture names (the editor starts at Cinematic, not Epic), set `t.MaxFPS 1000`, and put every console setting back afterwards. When two states are compared, capture them in both orders.
+- **Storage limits are lifted.** By the owner's decisions of 2026-11-11: free space on C: does not stop, delay or change any step; and, since the editor keeps its folders off C:, no storage limit in this plan applies any more. That was checked at 16:14 that day: the engine is on D:, the project and its saved and intermediate folders on D:, the engine cache on D:, the page file on D:, temporary and shader working folders on E:, and the engine's per-user folder under `C:\Users\cowey\AppData\Local\UnrealEngine` is a link to E:. Only the Epic launcher and the Unreal Canvas companion tool keep about 1 GB on C:. So the floors and caps in the table "Disk space by drive", and the size caps in the approvals table, are no longer limits. Sizes are still measured and written down, and this work still writes nothing to C: except the chat's own records. This is about disk space only: the rule on memory before heavy steps stands, and so does every approval that is not about size.
+- **Few interruptions.** On 2026-11-11 the owner wrote "i dont want to interact with this workflow anymore" and then "continue". The build session read that as follows, and the reading is the session's, not the owner's words: a session does everything it can without the owner, does not hand back chores it could do or the plan could carry, and collects the approvals a phase needs into one request that names each action, its size on disk and its cost. The approvals themselves still stand.
+- **What Phase 1 left for later phases** is listed at the end of the Phase 1 section. Read the rows for your phase before starting.
 
 ## What the owner settled on 2026-11-10
 
@@ -186,9 +192,9 @@ Free space was measured on 2026-11-10. Caps are proposals; every download behind
 
 | Drive | Free now (GB) | Planned change (GB) | Free afterwards (GB) | Floor to keep free (GB) |
 |---|---|---|---|---|
-| C: | 20.8 | Nothing new is written here. The engine keeps 10.5 GB of data under the user profile on C:. Step 1.4 tests whether Epic's documented variable moves it to D:; if it does, up to 10.5 is freed. | 20.8, or up to about 31 if the move works | 15 |
+| C: | 20.8 | Nothing new is written here. The engine's data folder under the user profile is a link to `E:\AppData-Moved\UnrealEngine`, so the engine cache was never on C:. Free space on C: fell from 20.8 to 18.6 during 2026-11-10; the cause has not been looked into. | 18.6, measured at 22:40 on 2026-11-10 | 15 |
 | D: | 61.0 | Working project grows by up to 20. Engine cache moved here from C:, capped at 20. Unrelated content removed from the working copy (frees 10). | 31.0 | 25 |
-| E: | 57.2 | Site data 6 (lidar up to 4, county extracts 1.5, other 0.5); owner's photographs 5; texture sources 10; profiles, evidence and review renders 10. Total 31. | 26.2 | 25 |
+| E: | 57.2 at first; 66.8 after 9.4 of old engine cache was deleted on 2026-11-10 | Site data 6 (lidar up to 4, county extracts 1.5, other 0.5); owner's photographs 5; texture sources 10; profiles, evidence and review renders 10. Total 31. | 35.8 | 25 |
 | H: | 233.7 | H: is an external USB hard disk, so no cache goes here. The latest two project archives at up to 30 each, 60; offline frames 45 (1,800 frames at about 25 MB); packaged builds 15. Total 120. | 113.7 | 50 |
 
 Already on D: and counted in "free now": engine 5.9 (33.5 GB), the 5.8 project (22.1 GB) and the 5.9 copy (17.2 GB). Once the engine is chosen, the unused project copy moves to an H: archive.
@@ -205,21 +211,24 @@ Already on D: and counted in "free now": engine 5.9 (33.5 GB), the 5.8 project (
 
 Each is asked at the step that needs it. None has been asked or done yet.
 
+**Standing approval of 2026-11-11.** At about 15:35 the owner answered "B" to a request that named each action, its size and its cost (`phase2_results.md`, "The one approval this phase needs"). It approves, without a further question: the Phase 2 downloads of county and state map data into `E:\Wieland1529_site_data\`; reading sheets T1.1 and T1.4 of the drawing set on the owner's Google Drive and keeping a copy of them there; and the rows of the table below that cost nothing, inside the caps the table gives, namely public-domain textures (10 GB in total), manufacturers' light-distribution files (under 50 MB), a Python package where one proves necessary, and render frames, packaged builds and project archives to H: as budgeted. A session that uses it records each use, with its size, in the phase's results file. **Still asked each time:** anything with a price (the Fab and library rows), any deletion, and any push or merge. Not covered, because not named in the request: creating an account or key, and Google's 3D city tiles.
+
 | Action | Who acts | Size on disk | Cost |
 |---|---|---|---|
 | Start the editor's agent server | Owner | none | none |
 | Update engine 5.8.3 to 5.8.4 | Not needed: the owner committed to 5.9 | none | none |
-| Set `UE-LocalDataCachePath` to a folder on D: so the engine cache leaves C: | Owner | moves about 10.5 GB to D: | none |
+| Set `UE-LocalDataCachePath` to a folder on D: | Done on 2026-11-10 at the owner's request | none | none |
 | Remove the 651 Belmont and beech-tree content from the working project copy | Agent, after approval | frees 10 GB | none |
 | Download 2022 lidar tiles for the block | Agent, after approval | estimated 4 GB or less; confirmed on the tile page first | none |
 | Download county parcel, 2022 footprint and 2025 aerial extracts for the block | Agent, after approval | 1.5 GB or less | none |
 | Export a Datasmith file from the Revit model | Owner. The first export is already provided. | 0.67 GB per export | none |
-| Download public-domain textures | Agent, after approval, per set | 10 GB cap in total | none |
+| Download public-domain textures | Agent, after approval, per set (covered by the standing approval, Phase 12 included; 388 MB used by 2026-11-12) | 10 GB cap in total | none |
 | Download fixture photometric files from manufacturers | Agent, after approval | under 50 MB | none |
 | Get tree models and interior furniture from Fab or another licensed library | Agent, after approval, per item | asked per item | asked per item |
 | Google's 3D city tiles, only if the owner chooses them | Owner creates the account | none on disk | See `OPEN_DECISIONS.md`, decision 6 |
 | Delete the Street View captures held in this session's cache | Agent, after approval | frees a few MB | none |
 | Write render frames, packaged builds and project archives to H: | Agent, after approval | up to 120 GB in total, as budgeted | none |
+| Write them to `D:\Wieland1529_delivery\` instead, while H: (the external USB disk) is not connected | Agent; approved by the owner on 2026-11-13 | up to 60 GB | none |
 | Install a Python library if a needed one is missing (map projection, point-cloud reading, image comparison) | Agent, after approval, per library | asked per library | none |
 | Place a short pointer file in the Unreal project folder naming this repository's rules and this plan, so sessions started from the editor's terminal load them | Agent, after approval | under 2 KB | none |
 | Register a project skill in the Unreal project that carries this plan's rules for any agent working in the editor | Agent, after approval | one small asset | none |
@@ -228,6 +237,8 @@ Each is asked at the step that needs it. None has been asked or done yet.
 ---
 
 ## Phase 1: Toolchain setup and first import test in 5.9
+
+**Status: complete on 2026-11-11.** All seven acceptance lines that belong to this phase pass. Three carry a condition, and those conditions are now in "Rules for every phase". Results: `docs\unreal\1529_wieland\phase1_results.md`. Engine findings: `ENGINE_NOTES.md`, "Phase 1 test results". What later phases must pick up is in the table at the end of this section.
 
 **Goal.** A working link between the Agent and the 5.9 editor, a baseline profile, the engine's doubtful features tested, and the owner's Datasmith file imported once into a scratch level, before any content is made.
 
@@ -247,7 +258,7 @@ Each is asked at the step that needs it. None has been asked or done yet.
 | 1.1 | Make the agent server start with the editor (the per-user setting `bAutoStartServer`). Open Claude Code in the editor's terminal, confirm the model shows as `claude-fable-5-2` (pinned by `D:\Unreal_Engine_Projects\Wieland1527 5.9\.claude\settings.json`), and confirm a read-only tool call succeeds. After approval, place the pointer file in the project folder. | Editor Preferences; the editor's terminal | Owner sets; Agent confirms |
 | 1.2 | List the tool sets the server offers and record them. On 2026-11-10 it listed 115. | `unreal-mcp` skill: `list_toolsets` | Agent |
 | 1.3 | Finish the live audit: read the material on every part of the existing level | `unreal-mcp` skill, read-only | Agent |
-| 1.4 | Move the engine cache off C: by setting `UE-LocalDataCachePath` to a folder on D:; restart editor and launcher; measure whether the 10.5 GB under the user profile shrinks and new cache files land on D: | Windows environment variable; folder sizes | Owner sets; Agent measures |
+| 1.4 | Done on 2026-11-10: `UE-LocalDataCachePath` is set to `D:\UE_DerivedDataCache`, and the engine's cache server reports that folder. Confirm it is still in use and stays under its 20 GB cap | Folder sizes | Agent |
 | 1.5 | Archive the 5.9 project copy to H: before its first save in this plan | File copy | Agent, after approval to write to H: |
 | 1.6 | Run the existing three-view timing and the fixed exterior path; save profile M0 under `docs\unreal\1529_wieland\profiles\` | Editor's performance tools through the agent server | Agent |
 | 1.7 | Import the Datasmith file into a scratch level. Count the imported objects and lights against the file (3,562 and 587) and check one known dimension: the first floor is 2.032 m above grade | Datasmith importer through Python | Agent |
@@ -256,7 +267,7 @@ Each is asked at the step that needs it. None has been asked or done yet.
 | 1.10 | Compare the engine's sun direction with the NOAA calculator for 15 August, 15:30 Central Daylight Time at the lot centre | Sun Position plugin; NOAA Solar Calculator in a browser | Agent, or Owner if the session has no browser |
 | 1.11 | Place a 1,000-lumen point light in a dark scratch level and read the illuminance at 1 m | Editor's lighting visualization | Agent |
 | 1.12 | Find and switch on Lumen World Cache and the new handling of overlapping glass; capture S1 with each on and off, with timings. Keep each one only if the difference is visible and it adds no more than 1.0 ms at S1 | Project settings; scene capture | Agent |
-| 1.13 | Run the fixed exterior path in a loop for two hours | Editor's performance tools | Agent |
+| 1.13 | Not run in Phase 1. The two-hour soak was meant to help choose between 5.8 and 5.9, and that choice is made. By the owner's decision on 2026-11-11 it moved to Phase 9, step 9.11, where it runs on the finished scene. | n/a | n/a |
 | 1.14 | Remove the unrelated 651 Belmont and beech-tree content from the project, after approval | Editor content browser through the agent server | Agent |
 | 1.15 | Write every result and every workaround into `docs\unreal\1529_wieland\phase1_results.md` | Text editor | Agent |
 
@@ -269,21 +280,56 @@ Each is asked at the step that needs it. None has been asked or done yet.
 - Path Tracer: three renders complete with no crash. Workaround: Lumen at its highest settings stands in as ground truth and is labelled as such.
 - Sun: bearing and height within 0.5 degree of the NOAA values.
 - Light units: the reading is within 10 percent of 79.6 lux.
-- Soak: two hours with no crash and video memory growing by no more than 5 percent.
+- Soak: not run, by the owner's decision on 2026-11-11; moved to Phase 9, where it runs on the finished scene. Phase 1 is complete without it.
 
 **Main risks.**
 
 - 5.9 is an unstable preview, and the owner has chosen to work around its defects. Each workaround narrows what the scene can show, so each is reported as it is adopted.
 - The Datasmith file was written at the Unreal 5.3 level and may not import cleanly into 5.9.
 - The agent server is experimental and does not start by itself unless set to.
-- The cache does not move, or the move is skipped, and C: fills during shader compilation.
+- C: has under 19 GB free and shrank during 2026-11-10. If it nears its 15 GB floor, find what is writing to it before continuing.
 - Preview defects appear later. Mitigation: archive the project to H: at every milestone.
 
 **Leaves behind.** Profile M0; the completed live audit appended to `SITE_MODEL_AUDIT.md`; `phase1_results.md`; a tested import and reimport method.
 
+**What Phase 1 leaves for later phases.** Written on 2026-11-11 when the phase closed. None of these needs the owner now. Each is done, or asked about with its measurement, in the phase named. The owner's open choices among them are decision 15 of `OPEN_DECISIONS.md`.
+
+| For | Item |
+|---|---|
+| The next session, as its first check | The owner restarts the editor after Phase 1. Confirm that `r.Lumen.WorldCache.Supported` reads false and `r.Material.UseShaderCompilationParameters` reads 0. The World Cache line was taken out of `Config\DefaultEngine.ini` at 12:59 on 2026-11-11 and the removal needs a restart; if the variable still reads true, the editor has not been restarted since. |
+| Phase 2 | Station S1 as `REFERENCE_VIEWS.md` places it lies under a roof in the existing model. Phase 1 used a walking line 14.0 m west of the front lot line instead. Measure the real street width and re-set the stations. |
+| Phase 2, before any download | C: had 12.8 GB free on 2026-11-11, under this plan's 15 GB floor. The cause was looked for, as the risk list above asks. Since 2026-11-10 the writers on C: are a Windows update being staged (about 3.5 GB under `C:\Windows\SoftwareDistribution`, `C:\$WinREAgent` and `C:\Windows\WinSxS`), program updates (the Epic launcher, the Claude desktop app, Unreal Canvas) and browser and Google Drive caches. None of it is this project: the engine's cache and the page file are on D:, and this work writes to C: only the chat's own records. **The owner's decision of 2026-11-11: disregard it.** Free space on C: does not stop or delay any step. Point nothing in this plan at C:. |
+| Phase 3 | The newest export is the second one, `25-006_1527_N_Wieland-3DView-3D_View_188_r2.udatasmith` of 2026-11-11: 1,288 meshes, 3,562 placed objects, 571 lights, 284 materials, 97 textures. Take the acceptance counts from the file that is imported, not from the figures printed in the Phase 3 section, which describe the first export. `tools\compare_udatasmith.py` compares two exports and says what a reimport should change. |
+| Phase 3 | Import and reimport with `tools\wieland_datasmith.py`, in the order given in `phase1_results.md` under "How to resume". Check the result with its `count_components()` and `check_assignments()`. After a reimport, save the import folder and the level by name: a reimport leaves several hundred assets unsaved. |
+| Phase 3 | Import into the phase's own level and folder. The content under `/Game/Wieland1529/Scratch/` is test content, the second export carrying 20 magenta and cyan marker materials and three recoloured materials, and is not built on. |
+| Phase 3 | Colour and glossiness set directly on three imported materials survived a reimport in Phase 1, although the reimport rewrote every material. Step 3.6's rule stands all the same, because the test covered two settings on three materials. |
+| Phase 3 and Phase 5 | Both exports name eight texture files that neither export's folder contains, so the materials that use them arrive without their image: `RS10242_Wall_BoothBayBlue_BW.jpg`, `ETH_Teak_NaturalOutdoor.jpg`, `Endicott SN-8 Black Glazed Thinbrick Modular Stack 11.3 x 24.5 inches texture.jpg` and the matching `bump.jpg`, `Material_Leaf_N2D.png`, `White Aluminum.jpg`, `Bandalux_9920.png` and `Bandalux_OpennessFactor_Simulator.png`. List them in the material table of step 3.5 as "image missing from the export". A search of C:, D: and E: by file name on 2026-11-11 found none of the eight. **The owner's decision of 2026-11-11: disregard them in the import.** They belong to the material audit, which replaces them; nothing is chased in Revit. |
+| Phase 3 and Phase 5 | There are two 16K Indiana limestone colour maps, not one: 631 MB and 211 MB as Unreal textures, 0.84 GB of the 0.96 GB import. The second came only with the second export. Step 3.7 applies to both. |
+| Phase 6 and Phase 8 | The new handling of overlapping glass costs 0.3 ms and showed nothing at S1, where no glass overlaps. Judge it again at the building's railings and windows. |
+| Phase 8 | Lumen World Cache is off. At S1 it is 0.4 ms cheaper and 0.4 GB lighter, and it turns shaded walls grey where the path-traced render shows them warm. Try it once more on the finished scene. |
+| Phase 8 | `r.RayTracing.Nanite.Mode 2` in real time brings Lumen's picture close to the path-traced one for roughly 0.5 ms a frame. Measure it properly and ask the owner, because it is a project-wide setting. |
+| Phase 9 | The two-hour soak, step 9.11. The soak script in `tools\wieland_profile.py` had two faults corrected and has not been run since; after the first walks, check that each line of its log carries a `csv` entry. The CSV profile's render-thread column reads 0 in 5.9.0, so the render-thread budget needs another source. |
+| Any phase | The October Datasmith content under `/Game/Wieland/Revit1527` holds 356 materials whose parent is the material named in the import crashes. It has not been loaded in 5.9. Do not open its levels without journaling the attempt first. |
+| Any phase | The project folder has no pointer file, by the owner's word of 2026-11-11. A session started there does not load this plan by itself, so its opening prompt must give the plan's full path. |
+| Any phase | A copy of what Phase 1 added to the project is at `H:\Wieland1529_archives\2026-11-11_phase1-complete\`: the `Config` folder and `Content\Wieland1529`, 1,707 files and 0.97 GB. Together with `2026-11-10_pre-phase1` beside it, it restores the project as Phase 1 left it. |
+
 ---
 
 ## Phase 2: Site data and georeferencing
+
+**Status: complete on 2026-11-11 as far as it can be without the site visit.** All four acceptance lines pass, two by a route that differs from the wording below; `phase2_results.md` names each difference. Not done: the site visit (step 2.1) and what depends on its photographs (the rest of 2.8, and 2.9). They are the owner's and block nothing; what they would have shown is in `site_gaps.md`.
+
+**What Phase 2 leaves for later phases.**
+
+| For | Item |
+|---|---|
+| Every phase | **The level frame.** Origin at the lot's south-west corner; north is -X along the front lot line, east is -Y; the lot that governs is the record rectangle, 15.088 m along the street by 31.151 m deep. The frame is `review\phase2\level_frame.json`, applied by `tools\wieland_geo.py`. The level's north runs 1.18 degrees west of true north. A true bearing becomes a yaw as yaw = bearing - 178.82. |
+| Phase 3 | The Revit export and the existing level sit in this frame by a shift only, new x = old x + 15,482.32 cm and new y = old y + 5,053.7 cm, as far as the earlier registration's two figures hold. **Step 3.3 cannot work as written:** the export's survey point and base point are not lot corners, and the file holds no map coordinates, latitude, longitude or angle to true north for them. Place the building by the lot instead: find the site object or the building's street face in the import (10 ft 2 1/2 in behind the front lot line, 43 ft 4 in wide, centred on the lot) and check that this shift puts it on the governing lot, before anything is built on it. |
+| Phase 3 | Do not take the lot's depth from the county parcel: it is 1.1 to 1.2 ft too deep. Its front line is right. |
+| Phase 4 | Build the surroundings from `review\phase2\site_neighbours.csv` (75 footprints with heights and roof form) and the files under `E:\Wieland1529_site_data\`, which is outside the repository because the county's terms leave redistribution unclear. Wieland's right-of-way is 50 ft: kerbs 3.6 m and 11.7 m west of the front lot line, road crown at 7.6 m. There is no alley. The existing model is within 0.25 m of these positions, about 1.1 degrees off the lot, about 1.1 m low, and has no building directly behind the lot. |
+| Phase 4 and Phase 7 | `review\phase2\site_trees.csv` holds 34 tall objects outside buildings, most of them tree crowns measured leafless in 2022. The two parkway trees at the frontage are 12.7 m and 15.9 m tall. Species, trunks and street furniture are gaps. |
+| Phase 8 | The sun tool's north offset is 181.18 or 178.82 degrees; the sun check of step 1.10 decides which. |
+| Whoever next edits `REFERENCE_VIEWS.md` | The stations are re-set in `review\phase2\stations.csv`, and a correction block is at the head of that file. Station S7 needs a new place: there is no alley. |
 
 **Goal.** One coordinate frame for the lot, the street and the neighbours, tied to the survey, with true north measured, and the site visit done.
 
@@ -329,6 +375,20 @@ Each is asked at the step that needs it. None has been asked or done yet.
 ---
 
 ## Phase 3: Datasmith import of the owner's Revit export
+
+**Status: complete on 2026-11-11.** Every acceptance line has a measured number in `phase3_results.md`. Steps 3.3 and 3.7 could not be done as written; that file says why and what took their place.
+
+**What Phase 3 leaves for later phases.**
+
+| For | Item |
+|---|---|
+| Every phase | The building is `/Game/Wieland1529/Building/L_Building`, holding the second export of 2026-11-11, placed in the level frame, with its 571 lights off. `/Game/Wieland1529/L_Site_M1` shows it together with the old production level, which it holds by reference, shifted into the frame. |
+| Every phase | After any reimport, run again from `tools\wieland_building.py`: `apply_groups`, `lights_off`, and Nanite for new opaque meshes. A reimport keeps what was there and brings new objects ungrouped and new meshes without Nanite. Start it only with 30 GB of free commit in a fresh editor. |
+| Phase 4 | The Revit model carries its own massing of the neighbours (`Generic_Models_SURROUNDING_BUILDINGS`) and a site slab that covers the street at height 0. Seen together with any other surroundings they overlap; decide which stays. They are in the group "Site and surroundings" and hide with one call. |
+| Phase 5 | `material_audit.csv` is the starting table: 284 imported materials with their use; six lack an image. `material_map.csv` and `mesh_swaps.csv` are empty; the script that applies them is written with the first row. The 16K limestone maps can become virtual textures only when their material is rebuilt. |
+| Phase 5 and Phase 6 | Units: a triplex is the lower level, 1st and 2nd floors; a penthouse the 3rd and 4th floors and the roof, read from the areas on sheet T1.5. If that is wrong, change `TRIPLEX_FLOORS` and `PENTHOUSE_FLOORS` in `tools\wieland_building.py` and run `apply_groups` again. |
+| Phase 8 | `review\phase3\building_lights.csv` lists the 571 lights with fixture family, type, intensity and light-distribution file. |
+| Phase 9 | Profile M1: 9.07 ms a frame on the fixed path at Epic quality, 1.3 ms more than M0, with the building's lights off and 5.3 GB of video memory at peak. |
 
 **Goal.** The whole building in the Unreal level at its true position, with a repeatable path for later exports that keeps every Unreal-side material assignment and edit.
 
@@ -639,6 +699,95 @@ Each is asked at the step that needs it. None has been asked or done yet.
 
 ---
 
+## Phase 17: An accurate site model, and the downtown skyline from the roof deck
+
+Added by the owner on 2026-11-14: every visible building with correct geometry and materials true to real conditions, and above all an accurate downtown skyline from the penthouse roof deck. The owner chose a model built from public laser-scan data (our own geometry, usable offline and in the delivery); Google's 3D tiles are not used in any way, because their terms (section 3.2.3) forbid creating content based on them.
+
+**Steps.** 17.1 viewshed: what each station, deck and design view really sees, out to the horizon towards downtown; 17.2 the downtown towers visible from D1, from the Illinois 2022 laser-scan point cloud and OpenStreetMap building parts, with true heights, setbacks, crowns and materials; 17.3 Zone 1 and 2 buildings corrected against the point cloud, with their details and real cladding; 17.4 the ground, streets, parks and lake in view; 17.5 new levels and a new default option "Laser-scan model (Phase 17)" in the Variant Manager list `Surroundings`, the older options kept; 17.6 measured checks, re-rendered stations and design views, frame time against the Phase 9 budget.
+
+**Acceptance.** Zone 1 heights within 0.3 m of the point cloud; skyline towers in view within 1 m in height and 2 m in plan; tower-top angular error against freely licensed skyline photographs reported; every material passes the repository's seamless and grazing-light rule, or is listed as an assumption; the exterior and roof-deck paths stay within the Phase 9 frame-time budget, or the overrun is named.
+
+**Approvals.** Laser-scan surfaces and point clouds, city footprints, OpenStreetMap data and freely licensed photographs, at no cost, 25 GB at most, stored in `D:\Wieland1529_lidar\` and `E:\Wieland1529_site_data\phase17\` (owner, 2026-11-14).
+
+**Leaves behind.** The new surroundings and skyline levels; the viewshed map; the skyline table; the materials table with assumptions; re-rendered stills.
+
+---
+
+## Phases 18 and 19: The owner's own walking paths
+
+Added by the owner on 2026-11-14: the owner draws the walk-through paths and the editor re-renders the videos from them.
+
+**Steps.** Phase 18 (runs first, before Phase 17, so the owner can draw while Phase 17 runs): 18.1 plan images of the site and each floor, with an exact pixel-to-world mapping (`owner_review\paths\plans\manifest.json`); 18.2 the drawing page `owner_review\paths\index.html` (built by the supervising session, served by `path_server.py` at http://127.0.0.1:8766/), which saves each path as JSON. Phase 19 (after Phase 17): 19.1 the path tool `tools\wieland_paths.py`: smooth constant-speed camera, look modes, a line-of-sight check (doors and glass panels passable; stair and lift segments marked), Movie Render Graph render, MP4; 19.2 a test path, then the owner's paths; 19.3 re-rendering on request: the page's "Request videos" button writes `RENDER_REQUEST`, and the watcher starts a short session that runs the tool; 19.4 a new dated delivery package on D: and in Drive, the 2026-11-14 package marked superseded.
+
+**Acceptance.** Three known points land correctly on every plan image; each requested path renders to an MP4 at its stated speed and length with no frame jumps; a path through a wall is refused with its location; finished videos copied to the Drive delivery folder.
+
+**Leaves behind.** The plan images and manifest; the drawing page and its server; the path tool; `RENDER_HOW.md`; the videos.
+
+---
+
+## Phase 20: Refining the surroundings from open images (runs after Phase 17, before Phase 19)
+
+Added by the owner on 2026-11-14: refine the skyline and the surrounding buildings from images. Sources, in order: the owner's photographs (`D:\Wieland1529_owner_photos\`), KartaView street-level imagery (CC BY-SA, no account), Wikimedia Commons, and Mapillary only if the owner provides a token. Google imagery is never used (terms, section 3.2.3). Images are reference only: never shipped as textures and never traced into geometry beyond what the laser scan measured.
+
+**Steps.** 20.1 work list from the Phase 17 viewshed, skyline from D1 first; 20.2 per building: images, cladding, colour, glass, window grid, crown and cornice details as clean elements; 20.3 materials to the repository rule; 20.4 confidence per building; 20.5 panorama, stations, design views and frame time re-checked.
+
+**Leaves behind.** The building table with images and licences; updated materials and details; check sheets.
+
+---
+
+## Phase 12: Material rebuild (runs after Phase 8, before Phase 9)
+
+Added by the owner's decision on 2026-11-12: "rebuild 1–2s". It is numbered 12 because the supervisor's queue takes whole numbers; it runs between Phase 8 and Phase 9 so that Phase 9 budgets the final textures.
+
+**Goal.** Every material the owner marked "rebuild", every material the owner left undecided, and every Brizo, Hansgrohe or Kohler finish, replaced by a material that shows its finish faithfully and passes this repository's material rules. Every material marked "candidate" switched to its Phase 5 candidate.
+
+**Inputs.**
+
+- `material_audit.csv`, columns `confidence`, `decision` (keep, candidate, rebuild or blank) and `owner_note`. The owner fills the last two from the review page `owner_review\index.html` (started with `owner_review\Open material review.bat`), possibly while this phase runs.
+- The Phase 5 parents, candidates, test method and tables (`material_library.csv`, `material_candidates.csv`, `material_alternatives.csv`, `material_tests.csv`, `texel_density.csv`), and the texel-density table in Phase 5.
+- The Phase 8 ground-truth renders and real-time comparison.
+
+**Which materials.** Read at the start and again before the last step:
+
+| Decision | Confidence | Action |
+|---|---|---|
+| any decision, name contains Brizo, Hansgrohe or Kohler (any capitalisation) | any | Research and rebuild from the manufacturer's product (owner, 2026-11-13; see below) |
+| rebuild | any | Rebuild |
+| blank | any | Rebuild (owner, 2026-11-13: "any left unanswered have the agent rebuild") |
+| keep, with an `owner_note` that asks for a different finish | any | Rebuild to the note (for example `Door_-_Frame`: White Dove paint) |
+| candidate | any | Make the Phase 5 candidate the active material |
+| keep | any | Leave as exported |
+
+**Brand-named finishes (owner, 2026-11-13).** Every material whose name contains Brizo, Hansgrohe or Kohler (22 on 2026-11-13) is rebuilt from the manufacturer's own information, whatever its `decision`. The owner confirmed on 2026-11-13 that this overrides the ten "keep" and "candidate" answers on brand-named finishes. For each one, find the product and finish from the material name, the family that uses it and its Revit model number where there is one. Read the manufacturer's finish name, product pages, specification sheets and product photographs. Set colour, metalness, roughness, anisotropy for brushed finishes, and the colour of transparent or emissive parts from that evidence. Record each source address, with the date read, in `material_rebuild.csv`. Product photographs and sheets are reference only, kept in `E:\Wieland1529_site_data\manufacturer_reference\` and listed in `asset_downloads.csv` (no cost, no account, 500 MB cap). A manufacturer's photograph is never shipped as a texture. The Revit material stays switchable back.
+
+**Steps.**
+
+| No. | Step | Tool | Who |
+|---|---|---|---|
+| 12.1 | Build the work list from the table above; for each material record what the finish really is: the owner's note first, else the objects, families and categories that use it, else a labelled assumption | `material_rebuild.csv` | Agent |
+| 12.2 | Rebuild one material first and check it before the rest: a material whose finish is already known and only needs a better texture (for example `Cabinet_Wood_Veneer` or `Finishes_-_Flooring__Oak`). Each rebuild is an instance of a Phase 5 parent at the plan's texel density, with a colour map for every surface and relief where the finish has it. A placeholder material used across unrelated categories (for example `RNT_Material`, Revit's default grey on 139 objects in six categories) is not rebuilt as one material: it is rebuilt per category or family group and applied by mesh-slot override | Material editor through the agent server; Python image processing | Agent |
+| 12.3 | Where a texture is needed and none is on disk, take a public-domain set within the standing approval's cap, record its licence line, and match its colour to the specified finish | Web download within the approved row | Agent |
+| 12.4 | Apply each rebuilt or candidate material as the active one by recorded override or swap, never by editing a Datasmith asset; keep the Revit material switchable back through a Variant Manager list | Editor's agent server | Agent |
+| 12.5 | Test each rebuilt material as in step 5.8: 3 by 3 tiling, the largest uninterrupted surface it covers, grazing light, and relief in millimetres for any sculpted tile | Scene capture; Python | Agent |
+| 12.6 | Re-render the Phase 8 ground truth (path-traced) and the real-time pictures for every view that shows a changed material, and update the Phase 8 comparison numbers for those views | Movie Render Graph; Python image comparison | Agent |
+
+**Acceptance.**
+
+- Every material on the work list has a row in `material_rebuild.csv` with what the finish rests on, its source and licence, field size, and the results of the step 5.8 tests. Every row passes, or names why it cannot.
+- Each rebuilt material scores 4 or 5 on the Phase 5 confidence scale, with the reason, or says what evidence is missing.
+- No Datasmith asset is changed; every swap can be switched back.
+- The Phase 8 real-time tolerance is re-measured at every re-rendered view.
+
+**Main risks.**
+
+- Many low-scored materials are Revit defaults with no finish set; without the owner's note the rebuild rests on the object's name and is labelled as an assumption.
+- Path-traced renders keep the agent server silent for up to about 11 minutes each, and the first path-traced frame after opening a level crashed the graphics card once (2026-11-12); let the level settle before rendering.
+- The 4.0 GB texture pool limits how many high-density surfaces can be in view.
+
+**Leaves behind.** `material_rebuild.csv`; the rebuilt instances under `/Game/Wieland1529/Materials/Rebuilt/`; a Variant Manager list to switch back; updated ground truth and comparison for the affected views.
+
+---
+
 ## Phase 9: Optimization
 
 **Goal.** The real-time tier inside its frame-time and video-memory budgets on the fixed camera paths, with every change shown as a measured cost or saving, and no change to the offline tier's result.
@@ -663,12 +812,14 @@ Each is asked at the step that needs it. None has been asked or done yet.
 | 9.8 | Upscaling: confirm 67 percent internal resolution; compare 60 and 75 percent on foliage and brick | Scene capture | Agent |
 | 9.9 | After each change, run the paths, save the timing, and re-render S1 and D2 to compare with ground truth | Performance tools; image comparison | Agent |
 | 9.10 | Save profile M7 and a change log listing each change with its measured effect in milliseconds and megabytes | `docs\unreal\1529_wieland\profiles\` | Agent |
+| 9.11 | Soak: run the fixed exterior path in a loop for two hours on the finished scene, from a script that writes one line to a file after each walk, and add the result to profile M7. Moved here from Phase 1, step 1.13, by the owner's decision on 2026-11-11. | `docs\unreal\1529_wieland\tools\wieland_profile.py`, function `soak` | Agent |
 
 **Acceptance.**
 
 - Exterior path and interior path: 95th-percentile frame time 16.67 ms or less; no frame over 33.3 ms; graphics-card time 14.5 ms or less on average.
 - Each render pass within its budget, or the overrun is offset by a named pass that is under.
 - Peak video memory 13.0 GB or less.
+- Soak: two hours of the fixed exterior path on the finished scene with no crash, and video memory growing by no more than 5 percent.
 - The Phase 8 real-time tolerance still holds at every view.
 - Every change in the log has a before and an after measurement.
 
@@ -679,7 +830,7 @@ Each is asked at the step that needs it. None has been asked or done yet.
 - No DLSS on 5.9; the engine's own upscaler is the only choice there.
 - A setting that saves time may break the Phase 8 match; step 9.9 exists to catch that.
 
-**Leaves behind.** Profile M7; the change log; the real-time settings recorded as a named configuration.
+**Leaves behind.** Profile M7, including the soak record; the change log; the real-time settings recorded as a named configuration.
 
 ---
 

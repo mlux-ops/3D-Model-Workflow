@@ -1,0 +1,257 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Material Review</title>
+<style>
+:root {
+  --bg: #f4f3ef; --panel: #ffffff; --ink: #1d1d1b; --muted: #66645e; --line: #dcdad3;
+  --keep: #2f6f4f; --cand: #2c5d8f; --rebuild: #a4502a; --warn: #a4502a; --ok: #2f6f4f;
+  --mid: #8a7a3a; --chip: #ebe9e2;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #161615; --panel: #20201e; --ink: #ecebe6; --muted: #a3a19a; --line: #3a3935;
+    --keep: #5fae86; --cand: #6ea3d8; --rebuild: #e08a5f; --warn: #e08a5f; --ok: #5fae86;
+    --mid: #c9b56a; --chip: #2c2b28;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #161615; --panel: #20201e; --ink: #ecebe6; --muted: #a3a19a; --line: #3a3935;
+  --keep: #5fae86; --cand: #6ea3d8; --rebuild: #e08a5f; --warn: #e08a5f; --ok: #5fae86;
+  --mid: #c9b56a; --chip: #2c2b28;
+}
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--bg); color: var(--ink);
+  font: 15px/1.45 "Segoe UI", system-ui, sans-serif; }
+header { position: sticky; top: 0; z-index: 5; background: var(--bg); border-bottom: 1px solid var(--line);
+  padding: 12px 16px; }
+h1 { font-size: 19px; margin: 0 0 4px; }
+.sub { color: var(--muted); font-size: 13px; }
+.bar { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; margin-top: 10px; }
+.chip { border: 1px solid var(--line); background: var(--chip); color: var(--ink); border-radius: 16px;
+  padding: 5px 12px; cursor: pointer; font: inherit; font-size: 13px; }
+.chip[aria-pressed="true"] { background: var(--ink); color: var(--bg); border-color: var(--ink); }
+input[type=search] { flex: 1 1 200px; min-width: 0; padding: 6px 10px; border: 1px solid var(--line);
+  border-radius: 6px; background: var(--panel); color: var(--ink); font: inherit; }
+.progress { height: 6px; background: var(--line); border-radius: 3px; overflow: hidden; margin-top: 8px; }
+.progress > div { height: 100%; background: var(--ok); width: 0; transition: width .3s; }
+main { max-width: 1180px; margin: 0 auto; padding: 16px; display: grid; gap: 14px; }
+.card { background: var(--panel); border: 1px solid var(--line); border-radius: 10px; padding: 14px;
+  display: grid; grid-template-columns: minmax(0, 1.6fr) minmax(0, 1fr); gap: 16px; outline: none; }
+.card:focus-within, .card:focus { box-shadow: 0 0 0 2px var(--cand); }
+@media (max-width: 820px) { .card { grid-template-columns: 1fr; } }
+.card img { width: 100%; height: auto; border-radius: 6px; cursor: zoom-in; display: block; background: #222; }
+.noimg { color: var(--muted); font-size: 13px; padding: 30px; text-align: center; border: 1px dashed var(--line); border-radius: 6px; }
+.name { font-weight: 600; font-size: 16px; word-break: break-word; margin: 0 0 4px; }
+.meta { color: var(--muted); font-size: 13px; margin-bottom: 8px; }
+.score { display: inline-block; min-width: 22px; text-align: center; border-radius: 4px; padding: 0 6px;
+  font-weight: 600; color: #fff; margin-right: 6px; }
+.s1, .s2 { background: var(--warn); } .s3 { background: var(--mid); } .s4, .s5 { background: var(--ok); }
+.why { font-size: 13px; margin: 6px 0; }
+.why b { font-weight: 600; }
+.btns { display: flex; flex-wrap: wrap; gap: 6px; margin: 10px 0 8px; }
+.btn { flex: 1 1 auto; border: 2px solid var(--line); background: var(--panel); color: var(--ink);
+  border-radius: 8px; padding: 8px 10px; font: inherit; font-weight: 600; cursor: pointer; }
+.btn:disabled { opacity: .35; cursor: not-allowed; }
+.btn.keep[aria-pressed="true"] { background: var(--keep); border-color: var(--keep); color: #fff; }
+.btn.candidate[aria-pressed="true"] { background: var(--cand); border-color: var(--cand); color: #fff; }
+.btn.rebuild[aria-pressed="true"] { background: var(--rebuild); border-color: var(--rebuild); color: #fff; }
+.btn small { display: block; font-weight: 400; font-size: 11px; opacity: .85; }
+textarea { width: 100%; min-height: 54px; resize: vertical; border: 1px solid var(--line); border-radius: 6px;
+  padding: 6px 8px; background: var(--bg); color: var(--ink); font: inherit; font-size: 13px; }
+.status { font-size: 12px; color: var(--muted); margin-top: 4px; min-height: 16px; }
+.status.err { color: var(--warn); font-weight: 600; }
+.default { font-size: 12px; color: var(--rebuild); font-weight: 600; }
+.clear { background: none; border: none; color: var(--muted); text-decoration: underline; cursor: pointer; font: inherit; font-size: 12px; padding: 0 0 0 6px; }
+.help { font-size: 13px; color: var(--muted); max-width: 1180px; margin: 0 auto; padding: 8px 16px 0; }
+.help summary { cursor: pointer; color: var(--ink); }
+#lightbox { position: fixed; inset: 0; background: rgba(0,0,0,.88); display: none; align-items: center;
+  justify-content: center; z-index: 10; cursor: zoom-out; padding: 16px; }
+#lightbox img { max-width: 100%; max-height: 100%; }
+#empty { color: var(--muted); text-align: center; padding: 40px; display: none; }
+</style>
+</head>
+<body>
+<header>
+  <h1>Material review: keep, use the candidate, or rebuild</h1>
+  <div class="sub" id="summary">Loading…</div>
+  <div class="progress"><div id="pbar"></div></div>
+  <div class="bar" role="toolbar" aria-label="Filters">
+    <button class="chip" data-f="low" aria-pressed="true">Scores 1–2</button>
+    <button class="chip" data-f="mid" aria-pressed="false">Score 3</button>
+    <button class="chip" data-f="high" aria-pressed="false">Scores 4–5</button>
+    <button class="chip" data-f="open" aria-pressed="false">Not decided</button>
+    <button class="chip" data-f="all" aria-pressed="false">All</button>
+    <input type="search" id="q" placeholder="Search name, family or category">
+  </div>
+</header>
+<div class="help">
+  <details>
+    <summary>How this works</summary>
+    <p>Each picture shows the Revit material as exported (left) and the Unreal candidate the agent built (right),
+    each lit from the front, at a grazing angle, and on a ball. Click a picture to enlarge it.</p>
+    <p><b>Keep</b> leaves the Revit material as it is. <b>Use candidate</b> switches to the right-hand picture.
+    <b>Rebuild</b> asks the agent to make a better material; say in the note what the finish really is
+    (product, colour, sheen) if you know. Click a pressed button again to undo it.
+    Every material you leave undecided is rebuilt. Every Brizo, Hansgrohe or Kohler finish is researched from the manufacturer and rebuilt, whatever you choose.</p>
+    <p>Every click is saved at once into <code id="auditpath">material_audit.csv</code> (columns <code>decision</code>
+    and <code>owner_note</code>), which is where the agent reads it, and logged in <code>owner_review\decisions_log.csv</code>.
+    Notes save when you click outside the box. Keyboard: click a card, then press 1, 2 or 3.</p>
+  </details>
+</div>
+<main id="list"></main>
+<div id="empty">Nothing matches this filter.</div>
+<div id="lightbox" role="dialog" aria-label="Enlarged picture"><img alt=""></div>
+
+<script>
+let mats = [];
+let filter = "low";
+const $ = s => document.querySelector(s);
+const BRAND = m => /brizo|hansgrohe|kohler/i.test(m.material);
+const AUTO = m => BRAND(m) ? "Brizo, Hansgrohe or Kohler: the agent researches the product and rebuilds it"
+  : (!m.decision ? "Undecided: will be rebuilt" : "");
+
+// Small DOM builder: every value goes in as text, never as markup.
+function h(tag, attrs, ...kids) {
+  const el = document.createElement(tag);
+  for (const [k, v] of Object.entries(attrs || {})) {
+    if (v === false || v == null) continue;
+    if (k === "class") el.className = v;
+    else if (k === "dataset") Object.assign(el.dataset, v);
+    else el.setAttribute(k, v === true ? "" : String(v));
+  }
+  for (const kid of kids.flat()) {
+    if (kid == null || kid === false) continue;
+    el.append(kid instanceof Node ? kid : document.createTextNode(String(kid)));
+  }
+  return el;
+}
+
+function matches(m) {
+  const q = $("#q").value.trim().toLowerCase();
+  if (q && !(m.material + " " + m.family + " " + m.categories).toLowerCase().includes(q)) return false;
+  const c = m.confidence ?? 0;
+  if (filter === "low") return c <= 2;
+  if (filter === "mid") return c === 3;
+  if (filter === "high") return c >= 4;
+  if (filter === "open") return !m.decision;
+  return true;
+}
+
+function summary() {
+  const decided = mats.filter(m => m.decision).length;
+  const open = mats.filter(m => !m.decision).length;
+  const brand = mats.filter(BRAND).length;
+  const by = d => mats.filter(m => m.decision === d).length;
+  $("#summary").textContent = `${decided} of ${mats.length} decided · keep ${by("keep")} · candidate ${by("candidate")} · rebuild ${by("rebuild")} · ${open} undecided (rebuilt) · ${brand} Brizo/Hansgrohe/Kohler (researched and rebuilt)`;
+  $("#pbar").style.width = (100 * decided / Math.max(1, mats.length)) + "%";
+}
+
+function why(label, text) { return h("div", { class: "why" }, h("b", {}, label + " "), text); }
+
+function paintState(el, m, statusText) {
+  el.querySelectorAll(".btn").forEach(b => b.setAttribute("aria-pressed", String(b.dataset.d === m.decision)));
+  const auto = AUTO(m); const dflt = el.querySelector(".default");
+  dflt.textContent = auto; dflt.hidden = !auto;
+  el.querySelector(".clear").hidden = !m.decision;
+  el.querySelector(".msg").textContent = statusText;
+}
+
+function card(m, i) {
+  const c = m.confidence ?? "?";
+  const pic = m.sheet
+    ? h("img", { loading: "lazy", src: "/sheet/" + encodeURIComponent(m.sheet), alt: "Swatch sheet for " + m.material })
+    : h("div", { class: "noimg" }, "No swatch sheet for this material");
+  const btn = (d, label, small, disabled) =>
+    h("button", { class: "btn " + d, dataset: { d }, "aria-pressed": "false", disabled }, label, h("small", {}, small));
+  const el = h("section", { class: "card", dataset: { i: String(i) }, tabindex: "-1" },
+    h("div", {}, pic),
+    h("div", {},
+      h("p", { class: "name" }, m.material),
+      h("div", { class: "meta" }, h("span", { class: "score s" + c }, c),
+        `of 5 · ${m.family} · on ${m.objects} objects` + (m.categories ? " · " + m.categories : "")),
+      why("Why this score:", m.reason),
+      m.has_candidate ? why("Candidate rests on:", m.candidate_rests_on) : why("No Unreal candidate", "was built for this material."),
+      m.candidate_for_owner ? why("Agent asks:", m.candidate_for_owner) : null,
+      h("div", { class: "btns" },
+        btn("keep", "1 · Keep", "Revit as exported", false),
+        btn("candidate", "2 · Use candidate", "right-hand picture", !m.has_candidate),
+        btn("rebuild", "3 · Rebuild", "agent makes a better one", false)),
+      h("div", { class: "default" }),
+      h("textarea", { placeholder: "Note for the agent (optional): what the finish really is, e.g. white oak, matte" }),
+      h("div", { class: "status" }, h("span", { class: "msg" }), h("button", { class: "clear" }, "clear decision"))));
+  el.querySelector("textarea").value = m.note || "";
+  paintState(el, m, m.decision ? "Saved" : "");
+  return el;
+}
+
+function render() {
+  const list = $("#list");
+  list.replaceChildren(...mats.map((m, i) => [m, i]).filter(([m]) => matches(m)).map(([m, i]) => card(m, i)));
+  $("#empty").style.display = list.children.length ? "none" : "block";
+  summary();
+}
+
+async function save(i, decision, note) {
+  const m = mats[i];
+  const el = document.querySelector(`.card[data-i="${i}"]`);
+  const st = el && el.querySelector(".status");
+  if (st) { st.classList.remove("err"); el.querySelector(".msg").textContent = "Saving…"; }
+  try {
+    const r = await fetch("/api/decision", { method: "POST", headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ material: m.material, decision, note }) });
+    const j = await r.json();
+    if (!j.ok) throw new Error(j.error || "save failed");
+    m.decision = decision; m.note = note;
+    const t = new Date().toLocaleTimeString([], { hour: "2-digit", minute: "2-digit" });
+    if (el) paintState(el, m, decision ? `Saved "${decision}" at ${t}` : `Cleared at ${t}`);
+    summary();
+  } catch (e) {
+    if (st) { st.classList.add("err"); el.querySelector(".msg").textContent = "NOT SAVED: " + e.message + ". Is the review server still running?"; }
+  }
+}
+
+$("#list").addEventListener("click", e => {
+  const cardEl = e.target.closest(".card"); if (!cardEl) return;
+  const i = +cardEl.dataset.i;
+  const note = cardEl.querySelector("textarea").value;
+  const b = e.target.closest(".btn");
+  if (b && !b.disabled) {
+    save(i, b.getAttribute("aria-pressed") === "true" ? "" : b.dataset.d, note);
+  } else if (e.target.closest(".clear")) {
+    save(i, "", note);
+  } else if (e.target.tagName === "IMG") {
+    $("#lightbox img").src = e.target.src; $("#lightbox").style.display = "flex";
+  } else if (e.target.tagName !== "TEXTAREA") {
+    cardEl.focus();
+  }
+});
+$("#list").addEventListener("focusout", e => {
+  if (e.target.tagName !== "TEXTAREA") return;
+  const i = +e.target.closest(".card").dataset.i;
+  if (e.target.value !== (mats[i].note || "")) save(i, mats[i].decision || "", e.target.value);
+});
+document.addEventListener("keydown", e => {
+  if (e.key === "Escape") { $("#lightbox").style.display = "none"; return; }
+  if (e.target.tagName === "TEXTAREA" || e.target.tagName === "INPUT") return;
+  const cardEl = document.activeElement && document.activeElement.closest && document.activeElement.closest(".card");
+  if (!cardEl) return;
+  const d = { "1": "keep", "2": "candidate", "3": "rebuild" }[e.key]; if (!d) return;
+  const b = cardEl.querySelector(`.btn[data-d="${d}"]`); if (b && !b.disabled) b.click();
+});
+$("#lightbox").addEventListener("click", () => { $("#lightbox").style.display = "none"; });
+document.querySelectorAll(".chip").forEach(ch => ch.addEventListener("click", () => {
+  filter = ch.dataset.f;
+  document.querySelectorAll(".chip").forEach(x => x.setAttribute("aria-pressed", String(x === ch)));
+  render();
+}));
+$("#q").addEventListener("input", render);
+
+fetch("/api/materials").then(r => r.json()).then(j => {
+  mats = j.materials; $("#auditpath").textContent = j.audit_file; render();
+}).catch(() => { $("#summary").textContent = "Could not reach the review server. Start it with 'Open material review.bat'."; });
+</script>
+</body>
+</html>

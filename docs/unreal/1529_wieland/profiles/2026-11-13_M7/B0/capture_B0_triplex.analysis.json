@@ -1,0 +1,328 @@
+{
+ "source_record": "capture_B0_triplex.json",
+ "info": {
+  "step": "Phase 9, state B0, part triplex",
+  "level": "/Game/Wieland1529/L_Site_M4.L_Site_M4",
+  "quality": "Epic (3), pool 1000, screen percentage 82, t.MaxFPS 1000, Game View on",
+  "view_mode": "Lit",
+  "lighting": "L_Light_SummerAfternoon: sun 160000.0 lux, sky, haze, fog, clouds, fixed exposure; 284 fixture lights on, 284 of them casting shadows",
+  "console_variables_for_this_run": {
+   "r.Editor.Viewport.ScreenPercentage": 82
+  },
+  "viewport_pixels": [
+   2038,
+   1198
+  ],
+  "unit_levels_shown": [
+   "NorthTriplex"
+  ],
+  "materials": "Phase 12 active",
+  "found_before": {
+   "sg.ViewDistanceQuality": 3.0,
+   "sg.AntiAliasingQuality": 3.0,
+   "sg.ShadowQuality": 3.0,
+   "sg.GlobalIlluminationQuality": 3.0,
+   "sg.ReflectionQuality": 3.0,
+   "sg.PostProcessQuality": 3.0,
+   "sg.TextureQuality": 3.0,
+   "sg.EffectsQuality": 3.0,
+   "sg.FoliageQuality": 3.0,
+   "sg.ShadingQuality": 3.0,
+   "sg.LandscapeQuality": 3.0,
+   "r.Streaming.PoolSize": 1000.0,
+   "r.Editor.Viewport.ScreenPercentage": 100.0,
+   "t.MaxFPS": 0.0,
+   "Slate.bAllowThrottling": 1.0,
+   "r.VSync": 0.0
+  },
+  "foreground_attempt": {
+   "was": 589846,
+   "front": true
+  }
+ },
+ "method": "final header row; every positive FrameTime row; p95 = value at floor(0.95 * (n - 1))",
+ "jobs": [
+  {
+   "name": "B0_triplex_path_first_walk",
+   "kind": "route",
+   "csv": [
+    "Profile(20261113_033217).csv"
+   ],
+   "foreground_fraction": 1.0,
+   "recorded_seconds": 30.00061149999965,
+   "tick_ms_mean": 17.10548802802473,
+   "tick_ms_p95": 25.964602828025818,
+   "tick_ms_max": 40.70520028471947,
+   "frames": 1755,
+   "columns": 290,
+   "mean_fps": 53.89951025062268,
+   "frames_over_16_667ms": 878,
+   "frames_over_33_333ms": 3,
+   "stats": {
+    "FrameTime": {
+     "mean": 18.553044273504273,
+     "p95": 25.927,
+     "min": 8.0685,
+     "max": 2560.0
+    },
+    "GPUTime": {
+     "mean": 15.717740364880274,
+     "p95": 24.46,
+     "min": 8.1036,
+     "max": 40.1103
+    },
+    "GameThreadTime": {
+     "mean": 5.413356328392246,
+     "p95": 6.6317,
+     "min": 4.2763,
+     "max": 12.1709
+    },
+    "RenderThreadTime": {
+     "mean": 17.096617445838085,
+     "p95": 25.8572,
+     "min": 8.8687,
+     "max": 41.0342
+    },
+    "RHIThreadTime": {
+     "mean": 2.8722224059293042,
+     "p95": 3.3966,
+     "min": 2.3145,
+     "max": 4.3965
+    },
+    "GPUMem/LocalUsedMB": {
+     "mean": 7981.812389623717,
+     "p95": 8198.8438,
+     "min": 7748.4688,
+     "max": 8556.0312
+    },
+    "GPUMem/LocalBudgetMB": {
+     "mean": 15280.0,
+     "p95": 15280.0,
+     "min": 15280.0,
+     "max": 15280.0
+    },
+    "RHI/DrawCalls": {
+     "mean": 3606.503990877993,
+     "p95": 5476.0,
+     "min": 891.0,
+     "max": 5710.0
+    },
+    "RHI/PrimitivesDrawn": {
+     "mean": 211560.16077537058,
+     "p95": 742396.0,
+     "min": 50027.0,
+     "max": 995529.0
+    },
+    "TextureStreaming/DesiredDataLoadedPercent": {
+     "mean": 99.86935606837606,
+     "p95": 100.0,
+     "min": 2.3528,
+     "max": 100.0
+    },
+    "MemoryFreeMB": {
+     "mean": 10514.872682155075,
+     "p95": 10535.5977,
+     "min": 10442.5742,
+     "max": 10538.3594
+    },
+    "PhysicalUsedMB": {
+     "mean": 6125.029879760547,
+     "p95": 6172.625,
+     "min": 6102.7031,
+     "max": 6196.8008
+    }
+   },
+   "metadata": {},
+   "copied_to": "B0_triplex_path_first_walk.csv.gz",
+   "copied_bytes": 555878
+  },
+  {
+   "name": "B0_triplex_path",
+   "kind": "route",
+   "csv": [
+    "Profile(20261113_033257).csv"
+   ],
+   "foreground_fraction": 1.0,
+   "recorded_seconds": 30.012121599997045,
+   "tick_ms_mean": 17.08255048393864,
+   "tick_ms_p95": 26.056401431560516,
+   "tick_ms_max": 41.27329960465431,
+   "frames": 1757,
+   "columns": 291,
+   "mean_fps": 58.54365042564733,
+   "frames_over_16_667ms": 863,
+   "frames_over_33_333ms": 4,
+   "stats": {
+    "FrameTime": {
+     "mean": 17.08127171314741,
+     "p95": 26.047,
+     "min": 7.0871,
+     "max": 41.0876
+    },
+    "GPUTime": {
+     "mean": 15.694280648833239,
+     "p95": 24.5786,
+     "min": 8.1333,
+     "max": 39.7277
+    },
+    "GameThreadTime": {
+     "mean": 6.07939328400683,
+     "p95": 7.8153,
+     "min": 4.4567,
+     "max": 17.6653
+    },
+    "RenderThreadTime": {
+     "mean": 17.07458827546955,
+     "p95": 26.0165,
+     "min": 9.2774,
+     "max": 40.5917
+    },
+    "RHIThreadTime": {
+     "mean": 2.8340841775754124,
+     "p95": 3.3359,
+     "min": 2.2826,
+     "max": 4.4983
+    },
+    "GPUMem/LocalUsedMB": {
+     "mean": 7983.681108935686,
+     "p95": 8220.2812,
+     "min": 7763.1562,
+     "max": 8670.0938
+    },
+    "GPUMem/LocalBudgetMB": {
+     "mean": 15280.0,
+     "p95": 15280.0,
+     "min": 15280.0,
+     "max": 15280.0
+    },
+    "RHI/DrawCalls": {
+     "mean": 3602.110984632897,
+     "p95": 5477.0,
+     "min": 891.0,
+     "max": 5719.0
+    },
+    "RHI/PrimitivesDrawn": {
+     "mean": 211086.33978372224,
+     "p95": 740965.0,
+     "min": 49833.0,
+     "max": 1054528.0
+    },
+    "TextureStreaming/DesiredDataLoadedPercent": {
+     "mean": 99.9900155378486,
+     "p95": 100.0,
+     "min": 98.7051,
+     "max": 100.0
+    },
+    "MemoryFreeMB": {
+     "mean": 10477.628835002846,
+     "p95": 10507.1133,
+     "min": 10432.2422,
+     "max": 10510.1289
+    },
+    "PhysicalUsedMB": {
+     "mean": 6137.590467103017,
+     "p95": 6172.6211,
+     "min": 6105.0195,
+     "max": 6174.957
+    }
+   },
+   "metadata": {},
+   "copied_to": "B0_triplex_path.csv.gz",
+   "copied_bytes": 555130
+  },
+  {
+   "name": "B0_hold_D5",
+   "kind": "view",
+   "csv": [
+    "Profile(20261113_033337).csv"
+   ],
+   "foreground_fraction": 1.0,
+   "recorded_seconds": 10.0097480000004,
+   "tick_ms_mean": 14.342103724536035,
+   "tick_ms_p95": 15.463199466466904,
+   "tick_ms_max": 21.790899336338043,
+   "frames": 698,
+   "columns": 287,
+   "mean_fps": 69.73068560658648,
+   "frames_over_16_667ms": 5,
+   "frames_over_33_333ms": 0,
+   "stats": {
+    "FrameTime": {
+     "mean": 14.340888681948424,
+     "p95": 15.4759,
+     "min": 6.6109,
+     "max": 21.2693
+    },
+    "GPUTime": {
+     "mean": 13.002450716332378,
+     "p95": 13.4227,
+     "min": 12.6512,
+     "max": 13.854
+    },
+    "GameThreadTime": {
+     "mean": 5.1546024355300855,
+     "p95": 6.307,
+     "min": 4.2872,
+     "max": 13.4742
+    },
+    "RenderThreadTime": {
+     "mean": 14.335770200573066,
+     "p95": 14.9732,
+     "min": 12.8956,
+     "max": 15.8678
+    },
+    "RHIThreadTime": {
+     "mean": 2.698759169054441,
+     "p95": 2.9541,
+     "min": 2.3589,
+     "max": 3.3792
+    },
+    "GPUMem/LocalUsedMB": {
+     "mean": 7923.156200000001,
+     "p95": 7923.1562,
+     "min": 7923.1562,
+     "max": 7923.1562
+    },
+    "GPUMem/LocalBudgetMB": {
+     "mean": 15280.0,
+     "p95": 15280.0,
+     "min": 15280.0,
+     "max": 15280.0
+    },
+    "RHI/DrawCalls": {
+     "mean": 3161.9340974212037,
+     "p95": 3174.0,
+     "min": 3156.0,
+     "max": 3322.0
+    },
+    "RHI/PrimitivesDrawn": {
+     "mean": 103861.83524355301,
+     "p95": 116069.0,
+     "min": 100183.0,
+     "max": 284350.0
+    },
+    "TextureStreaming/DesiredDataLoadedPercent": {
+     "mean": 100.0,
+     "p95": 100.0,
+     "min": 100.0,
+     "max": 100.0
+    },
+    "MemoryFreeMB": {
+     "mean": 10489.222181088824,
+     "p95": 10510.7266,
+     "min": 10477.3242,
+     "max": 10515.2227
+    },
+    "PhysicalUsedMB": {
+     "mean": 6110.773394842407,
+     "p95": 6114.6094,
+     "min": 6108.6523,
+     "max": 6129.9453
+    }
+   },
+   "metadata": {},
+   "copied_to": "B0_hold_D5.csv.gz",
+   "copied_bytes": 212818
+  }
+ ]
+}

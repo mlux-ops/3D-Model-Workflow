@@ -1,0 +1,198 @@
+{
+ "source": "gpu_passes_M7_final.json",
+ "method": "median of the samples per station and screen percentage; passes assigned to budget rows by name",
+ "budget_rows": [
+  {
+   "key": "geometry",
+   "label": "Geometry: Nanite visibility and surface pass",
+   "budget_ms": 2.0
+  },
+  {
+   "key": "shadows",
+   "label": "Shadows: Virtual Shadow Maps",
+   "budget_ms": 2.0
+  },
+  {
+   "key": "lumen_scene",
+   "label": "Lumen scene update and its lighting caches",
+   "budget_ms": 1.5
+  },
+  {
+   "key": "gi",
+   "label": "Lumen global illumination",
+   "budget_ms": 2.5
+  },
+  {
+   "key": "reflections",
+   "label": "Lumen reflections, including glass",
+   "budget_ms": 1.5
+  },
+  {
+   "key": "direct",
+   "label": "Direct light",
+   "budget_ms": 1.0
+  },
+  {
+   "key": "sky",
+   "label": "Sky, atmosphere, clouds and fog",
+   "budget_ms": 0.8
+  },
+  {
+   "key": "translucent",
+   "label": "Translucent surfaces",
+   "budget_ms": 0.8
+  },
+  {
+   "key": "wind",
+   "label": "Foliage wind",
+   "budget_ms": 0.4
+  },
+  {
+   "key": "upscaling",
+   "label": "Temporal upscaling",
+   "budget_ms": 1.2
+  },
+  {
+   "key": "post",
+   "label": "Post-processing and tone mapping",
+   "budget_ms": 0.8
+  },
+  {
+   "key": "other",
+   "label": "Not in the budget table",
+   "budget_ms": null
+  },
+  {
+   "key": "editor_ui",
+   "label": "Editor interface (outside the scene)",
+   "budget_ms": null
+  }
+ ],
+ "results": [
+  {
+   "station": "D2",
+   "screen_percentage": 82,
+   "samples": 3,
+   "rows_ms": {
+    "geometry": 1.04,
+    "shadows": 1.106,
+    "lumen_scene": 0.952,
+    "gi": 1.603,
+    "reflections": 2.295,
+    "direct": 1.569,
+    "sky": 0.714,
+    "translucent": 0.858,
+    "wind": 0.216,
+    "upscaling": 1.513,
+    "post": 0.315,
+    "other": 0.321,
+    "editor_ui": 0.21
+   },
+   "sum_of_scene_rows_ms": 12.501,
+   "graphics_queue_ms": 9.819,
+   "compute_queue_ms": 3.509,
+   "frame_gpu_ms": 9.561,
+   "frame_ms": 11.119
+  },
+  {
+   "station": "D5",
+   "screen_percentage": 82,
+   "samples": 3,
+   "rows_ms": {
+    "geometry": 1.127,
+    "shadows": 1.103,
+    "lumen_scene": 0.91,
+    "gi": 1.494,
+    "reflections": 1.94,
+    "direct": 1.112,
+    "sky": 0.541,
+    "translucent": 0.154,
+    "wind": 0.216,
+    "upscaling": 1.023,
+    "post": 1.091,
+    "other": 0.33,
+    "editor_ui": 0.21
+   },
+   "sum_of_scene_rows_ms": 11.041,
+   "graphics_queue_ms": 9.038,
+   "compute_queue_ms": 2.761,
+   "frame_gpu_ms": 9.156,
+   "frame_ms": 10.315
+  },
+  {
+   "station": "S1",
+   "screen_percentage": 82,
+   "samples": 3,
+   "rows_ms": {
+    "geometry": 1.363,
+    "shadows": 3.035,
+    "lumen_scene": 0.858,
+    "gi": 3.151,
+    "reflections": 1.007,
+    "direct": 1.195,
+    "sky": 0.465,
+    "translucent": 0.655,
+    "wind": 0.224,
+    "upscaling": 1.048,
+    "post": 0.32,
+    "other": 0.319,
+    "editor_ui": 0.21
+   },
+   "sum_of_scene_rows_ms": 13.64,
+   "graphics_queue_ms": 10.2,
+   "compute_queue_ms": 4.107,
+   "frame_gpu_ms": 10.266,
+   "frame_ms": 11.828
+  },
+  {
+   "station": "S2",
+   "screen_percentage": 82,
+   "samples": 3,
+   "rows_ms": {
+    "geometry": 1.458,
+    "shadows": 3.027,
+    "lumen_scene": 0.929,
+    "gi": 3.227,
+    "reflections": 0.859,
+    "direct": 1.314,
+    "sky": 0.505,
+    "translucent": 0.495,
+    "wind": 0.223,
+    "upscaling": 1.074,
+    "post": 0.324,
+    "other": 0.331,
+    "editor_ui": 0.21
+   },
+   "sum_of_scene_rows_ms": 13.765,
+   "graphics_queue_ms": 9.944,
+   "compute_queue_ms": 4.323,
+   "frame_gpu_ms": 10.439,
+   "frame_ms": 11.991
+  },
+  {
+   "station": "S6",
+   "screen_percentage": 82,
+   "samples": 3,
+   "rows_ms": {
+    "geometry": 1.353,
+    "shadows": 2.712,
+    "lumen_scene": 0.795,
+    "gi": 2.762,
+    "reflections": 0.95,
+    "direct": 1.204,
+    "sky": 0.615,
+    "translucent": 0.434,
+    "wind": 0.221,
+    "upscaling": 1.097,
+    "post": 0.323,
+    "other": 0.32,
+    "editor_ui": 0.21
+   },
+   "sum_of_scene_rows_ms": 12.785,
+   "graphics_queue_ms": 9.415,
+   "compute_queue_ms": 3.946,
+   "frame_gpu_ms": 9.679,
+   "frame_ms": 10.987
+  }
+ ]
+}

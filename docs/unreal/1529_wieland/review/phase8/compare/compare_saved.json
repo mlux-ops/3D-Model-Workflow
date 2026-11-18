@@ -1,0 +1,115 @@
+[
+ {
+  "view": "S1",
+  "mean_truth": 0.1722,
+  "mean_real_time": 0.1687,
+  "mean_difference_percent": -2.0,
+  "mean_within_10_percent": true,
+  "pixels_used_percent": 94.5,
+  "blocks_off_by_over_one_stop_percent": 6.64,
+  "largest_region_percent": 1.14,
+  "regions_over_2_percent": [],
+  "passes": true,
+  "sheet": "compare/S1_sheet_saved.jpg"
+ },
+ {
+  "view": "S2",
+  "missing": [
+   "realtime\\S2_realtime_saved.0000.png"
+  ]
+ },
+ {
+  "view": "S3",
+  "missing": [
+   "realtime\\S3_realtime_saved.0000.png"
+  ]
+ },
+ {
+  "view": "S4",
+  "missing": [
+   "realtime\\S4_realtime_saved.0000.png"
+  ]
+ },
+ {
+  "view": "S5",
+  "missing": [
+   "realtime\\S5_realtime_saved.0000.png"
+  ]
+ },
+ {
+  "view": "S6",
+  "missing": [
+   "realtime\\S6_realtime_saved.0000.png"
+  ]
+ },
+ {
+  "view": "S9",
+  "missing": [
+   "realtime\\S9_realtime_saved.0000.png"
+  ]
+ },
+ {
+  "view": "D1",
+  "mean_truth": 0.2239,
+  "mean_real_time": 0.2064,
+  "mean_difference_percent": -7.8,
+  "mean_within_10_percent": true,
+  "pixels_used_percent": 91.3,
+  "blocks_off_by_over_one_stop_percent": 0.91,
+  "largest_region_percent": 0.52,
+  "regions_over_2_percent": [],
+  "passes": true,
+  "sheet": "compare/D1_sheet_saved.jpg"
+ },
+ {
+  "view": "D2",
+  "mean_truth": 0.5597,
+  "mean_real_time": 0.6714,
+  "mean_difference_percent": 19.9,
+  "mean_within_10_percent": false,
+  "pixels_used_percent": 100.0,
+  "blocks_off_by_over_one_stop_percent": 4.82,
+  "largest_region_percent": 2.35,
+  "regions_over_2_percent": [
+   {
+    "share_of_frame_percent": 2.35,
+    "where": "bottom centre",
+    "box_pixels": [
+     1920,
+     1800,
+     2720,
+     2160
+    ],
+    "real_time_is": "brighter",
+    "mean_stops": 1.08
+   }
+  ],
+  "passes": false,
+  "sheet": "compare/D2_sheet_saved.jpg"
+ },
+ {
+  "view": "D3",
+  "missing": [
+   "realtime\\D3_realtime_saved.0000.png"
+  ]
+ },
+ {
+  "view": "D4",
+  "missing": [
+   "realtime\\D4_realtime_saved.0000.png"
+  ]
+ },
+ {
+  "view": "D5",
+  "mean_truth": 0.4777,
+  "mean_real_time": 0.4307,
+  "mean_difference_percent": -9.8,
+  "mean_within_10_percent": true,
+  "pixels_used_percent": 96.8,
+  "blocks_off_by_over_one_stop_percent": 0.52,
+  "largest_region_percent": 0.15,
+  "regions_over_2_percent": [],
+  "passes": true,
+  "sheet": "compare/D5_sheet_saved.jpg"
+ }
+]

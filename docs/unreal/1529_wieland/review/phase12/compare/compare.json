@@ -1,0 +1,221 @@
+[
+ {
+  "view": "S1",
+  "mean_truth": 0.1813,
+  "mean_real_time": 0.1814,
+  "mean_difference_percent": 0.0,
+  "mean_within_10_percent": true,
+  "pixels_used_percent": 94.7,
+  "blocks_off_by_over_one_stop_percent": 1.12,
+  "largest_region_percent": 0.23,
+  "regions_over_2_percent": [],
+  "passes": true,
+  "sheet": "review/phase12/compare/S1_sheet.jpg"
+ },
+ {
+  "view": "S2",
+  "mean_truth": 0.0978,
+  "mean_real_time": 0.0996,
+  "mean_difference_percent": 1.9,
+  "mean_within_10_percent": true,
+  "pixels_used_percent": 84.5,
+  "blocks_off_by_over_one_stop_percent": 0.48,
+  "largest_region_percent": 0.1,
+  "regions_over_2_percent": [],
+  "passes": true,
+  "sheet": "review/phase12/compare/S2_sheet.jpg"
+ },
+ {
+  "view": "S3",
+  "mean_truth": 0.1135,
+  "mean_real_time": 0.1139,
+  "mean_difference_percent": 0.3,
+  "mean_within_10_percent": true,
+  "pixels_used_percent": 85.8,
+  "blocks_off_by_over_one_stop_percent": 4.9,
+  "largest_region_percent": 0.27,
+  "regions_over_2_percent": [],
+  "passes": true,
+  "sheet": "review/phase12/compare/S3_sheet.jpg"
+ },
+ {
+  "view": "S4",
+  "mean_truth": 0.0619,
+  "mean_real_time": 0.0636,
+  "mean_difference_percent": 2.8,
+  "mean_within_10_percent": true,
+  "pixels_used_percent": 79.6,
+  "blocks_off_by_over_one_stop_percent": 0.52,
+  "largest_region_percent": 0.06,
+  "regions_over_2_percent": [],
+  "passes": true,
+  "sheet": "review/phase12/compare/S4_sheet.jpg"
+ },
+ {
+  "view": "S5",
+  "mean_truth": 0.0462,
+  "mean_real_time": 0.0443,
+  "mean_difference_percent": -4.2,
+  "mean_within_10_percent": true,
+  "pixels_used_percent": 83.6,
+  "blocks_off_by_over_one_stop_percent": 1.56,
+  "largest_region_percent": 0.27,
+  "regions_over_2_percent": [],
+  "passes": true,
+  "sheet": "review/phase12/compare/S5_sheet.jpg"
+ },
+ {
+  "view": "S6",
+  "mean_truth": 0.0739,
+  "mean_real_time": 0.0742,
+  "mean_difference_percent": 0.5,
+  "mean_within_10_percent": true,
+  "pixels_used_percent": 87.5,
+  "blocks_off_by_over_one_stop_percent": 8.04,
+  "largest_region_percent": 0.27,
+  "regions_over_2_percent": [],
+  "passes": true,
+  "sheet": "review/phase12/compare/S6_sheet.jpg"
+ },
+ {
+  "view": "S9",
+  "mean_truth": 0.023,
+  "mean_real_time": 0.0291,
+  "mean_difference_percent": 26.3,
+  "mean_within_10_percent": false,
+  "pixels_used_percent": 99.8,
+  "blocks_off_by_over_one_stop_percent": 14.22,
+  "largest_region_percent": 2.06,
+  "regions_over_2_percent": [
+   {
+    "share_of_frame_percent": 2.06,
+    "where": "top left",
+    "box_pixels": [
+     200,
+     40,
+     640,
+     480
+    ],
+    "real_time_is": "brighter",
+    "mean_stops": 4.17
+   },
+   {
+    "share_of_frame_percent": 2.01,
+    "where": "top centre",
+    "box_pixels": [
+     1360,
+     80,
+     1760,
+     520
+    ],
+    "real_time_is": "brighter",
+    "mean_stops": 3.78
+   }
+  ],
+  "passes": false,
+  "sheet": "review/phase12/compare/S9_sheet.jpg"
+ },
+ {
+  "view": "D1",
+  "mean_truth": 0.1836,
+  "mean_real_time": 0.1747,
+  "mean_difference_percent": -4.9,
+  "mean_within_10_percent": true,
+  "pixels_used_percent": 91.3,
+  "blocks_off_by_over_one_stop_percent": 0.73,
+  "largest_region_percent": 0.58,
+  "regions_over_2_percent": [],
+  "passes": true,
+  "sheet": "review/phase12/compare/D1_sheet.jpg"
+ },
+ {
+  "view": "D2",
+  "mean_truth": 0.6012,
+  "mean_real_time": 0.6154,
+  "mean_difference_percent": 2.4,
+  "mean_within_10_percent": true,
+  "pixels_used_percent": 99.8,
+  "blocks_off_by_over_one_stop_percent": 0.83,
+  "largest_region_percent": 0.35,
+  "regions_over_2_percent": [],
+  "passes": true,
+  "sheet": "review/phase12/compare/D2_sheet.jpg"
+ },
+ {
+  "view": "D3",
+  "mean_truth": 0.2329,
+  "mean_real_time": 0.3003,
+  "mean_difference_percent": 29.0,
+  "mean_within_10_percent": false,
+  "pixels_used_percent": 100.0,
+  "blocks_off_by_over_one_stop_percent": 11.77,
+  "largest_region_percent": 4.32,
+  "regions_over_2_percent": [
+   {
+    "share_of_frame_percent": 4.32,
+    "where": "bottom right",
+    "box_pixels": [
+     2160,
+     1560,
+     3520,
+     2160
+    ],
+    "real_time_is": "brighter",
+    "mean_stops": 1.14
+   },
+   {
+    "share_of_frame_percent": 3.3,
+    "where": "top centre",
+    "box_pixels": [
+     1400,
+     360,
+     2120,
+     840
+    ],
+    "real_time_is": "brighter",
+    "mean_stops": 1.98
+   }
+  ],
+  "passes": false,
+  "sheet": "review/phase12/compare/D3_sheet.jpg"
+ },
+ {
+  "view": "D4",
+  "mean_truth": 0.2776,
+  "mean_real_time": 0.1923,
+  "mean_difference_percent": -30.8,
+  "mean_within_10_percent": false,
+  "pixels_used_percent": 100.0,
+  "blocks_off_by_over_one_stop_percent": 8.49,
+  "largest_region_percent": 6.08,
+  "regions_over_2_percent": [
+   {
+    "share_of_frame_percent": 6.08,
+    "where": "top left",
+    "box_pixels": [
+     0,
+     0,
+     1600,
+     1200
+    ],
+    "real_time_is": "darker",
+    "mean_stops": -1.24
+   }
+  ],
+  "passes": false,
+  "sheet": "review/phase12/compare/D4_sheet.jpg"
+ },
+ {
+  "view": "D5",
+  "mean_truth": 0.3929,
+  "mean_real_time": 0.3482,
+  "mean_difference_percent": -11.4,
+  "mean_within_10_percent": false,
+  "pixels_used_percent": 98.3,
+  "blocks_off_by_over_one_stop_percent": 0.66,
+  "largest_region_percent": 0.15,
+  "regions_over_2_percent": [],
+  "passes": false,
+  "sheet": "review/phase12/compare/D5_sheet.jpg"
+ }
+]

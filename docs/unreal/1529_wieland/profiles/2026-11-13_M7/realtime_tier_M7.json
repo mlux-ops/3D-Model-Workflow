@@ -1,0 +1,66 @@
+{
+ "name": "Wieland 1529 real-time tier, profile M7",
+ "written": "2026-11-13, Phase 9 (optimization)",
+ "what_this_is": "The settings under which the scene meets the real-time lines of PLAN.md, Phase 9. Nothing in this file has to be typed in to get the tier: the two changes of Phase 9 are stored in the lighting level, and the rest is the project as Phases 8 and 12 left it. The file exists so that the tier can be checked, or set up again, from one place.",
+ "scene": {
+  "top_level": "/Game/Wieland1529/L_Site_M4",
+  "lighting_level": "/Game/Wieland1529/Lighting/L_Light_SummerAfternoon",
+  "materials_state": "Phase 12 active",
+  "fixture_lights_lit": 284,
+  "fixture_lights_casting_shadows": 284,
+  "sun_lux": 160000.0
+ },
+ "stored_in_the_lighting_level": [
+  {
+   "post_process_volume": "LGT_Exposure_Outdoors",
+   "applies": "everywhere (unbound)",
+   "settings": {"Lumen ray lighting mode": "Hit lighting (as Phase 8 left it)", "MegaLights": "on (Phase 9, change 1)"}
+  },
+  {
+   "post_process_volume": "LGT_Exposure_Interior_4th",
+   "applies": "inside its box, priority 1 (over the outdoor volume)",
+   "settings": {"Lumen ray lighting mode": "Hit lighting for reflections (Phase 9, change 2)"}
+  },
+  {
+   "post_process_volume": "LGT_Exposure_Interior_LowerTo3rd",
+   "applies": "inside its box, priority 1 (over the outdoor volume)",
+   "settings": {"Lumen ray lighting mode": "Hit lighting for reflections (Phase 9, change 2)"}
+  }
+ ],
+ "display": {
+  "output_pixels": [2560, 1440],
+  "screen_percentage": 67,
+  "computed_pixels": [1715, 965],
+  "upscaler": "Temporal Super Resolution (the engine's own)",
+  "confirmed_by": "phase9_results.md, J5: 60, 67 and 75 percent compared on foliage and brick"
+ },
+ "quality": {
+  "named_quality": "Epic (every sg.* group at 3)",
+  "texture_streaming_pool_mb": 4000,
+  "texture_pool_note": "Every measurement of Phase 9 used a pool of 1000 MB; the views ask for under 800 MB of textures, so the pool size does not change any figure (phase9_results.md, J7)."
+ },
+ "console_variables_that_must_stay_as_they_are": {
+  "r.RayTracing.Nanite.Mode": 0,
+  "r.RayTracing.Nanite.Mode_note": "Mode 2 is not adopted for real time; it is unstable in 5.9. It is changed only for the length of one path-traced render and put back to 0."
+ },
+ "console_variables_added_by_phase_9": {},
+ "how_the_tier_was_measured_in_the_editor": {
+  "viewport_pixels": [2038, 1198],
+  "r.Editor.Viewport.ScreenPercentage": 82,
+  "why": "The editor's viewport cannot show 2560 by 1440 on this screen. 82 percent of 2038 by 1198 computes 1.64 million pixels, the same number as 67 percent of 2560 by 1440 (1.65 million). The two passes that work on the finished picture (upscaling, post-processing) are multiplied by 1.51 where the journal says 'scaled'.",
+  "other": {"r.Streaming.PoolSize": 1000, "t.MaxFPS": 1000, "Slate.bAllowThrottling": 0, "r.VSync": 0, "view_mode": "Lit", "game_view": true},
+  "tools": "tools/phase9_profile_m7.py (paths, holds, soak), review/phase9/scripts/gpu_passes.py (per-pass times)"
+ },
+ "what_the_tier_gives_up_against_the_offline_tier": [
+  "Change 1 (MegaLights): less accurate shadow edges of the lamps.",
+  "Change 2 (Lumen indoors): less detailed indirect light indoors; reflections are still lit in full."
+ ],
+ "evidence": {
+  "change_log": "profiles/2026-11-13_M7/change_log.csv",
+  "paths_and_holds_final_state": "profiles/2026-11-13_M7/M7/",
+  "per_pass_final_state": "profiles/2026-11-13_M7/M7_final/",
+  "soak": "profiles/2026-11-13_M7/soak/",
+  "pictures_against_ground_truth": "review/phase9/compare/F/compare.csv",
+  "journal": "phase9_results.md"
+ }
+}

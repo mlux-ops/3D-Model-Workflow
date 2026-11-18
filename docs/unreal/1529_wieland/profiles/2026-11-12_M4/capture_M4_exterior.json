@@ -1,0 +1,330 @@
+{
+ "info": {
+  "step": "Phase 6, step 6.10: profile M4, part exterior",
+  "level": "/Game/Wieland1529/L_Site_M4.L_Site_M4",
+  "quality": "Epic (3), pool 1000, SP 100, t.MaxFPS 1000, Game View on",
+  "view_mode": "Lit",
+  "lighting": "Placeholder_Sun 10.0 lux, pitch -45, yaw -135, sky atmosphere and sky light; no interior lighting",
+  "viewport_pixels": [
+   2038,
+   782
+  ],
+  "unit_levels_shown": [
+   "NorthPenthouse",
+   "NorthTriplex",
+   "SouthPenthouse",
+   "SouthTriplex"
+  ],
+  "site": "default after Phase 7: earlier detailed buildings, new ground, 34 trees leaf-on with wind, far city",
+  "interior_lists": "Revit as exported (kitchen, bath, floor)",
+  "found_before": {
+   "sg.ViewDistanceQuality": 4.0,
+   "sg.AntiAliasingQuality": 4.0,
+   "sg.ShadowQuality": 4.0,
+   "sg.GlobalIlluminationQuality": 4.0,
+   "sg.ReflectionQuality": 4.0,
+   "sg.PostProcessQuality": 4.0,
+   "sg.TextureQuality": 4.0,
+   "sg.EffectsQuality": 4.0,
+   "sg.FoliageQuality": 4.0,
+   "sg.ShadingQuality": 4.0,
+   "sg.LandscapeQuality": 4.0,
+   "r.Streaming.PoolSize": 3000.0,
+   "r.Editor.Viewport.ScreenPercentage": 100.0,
+   "t.MaxFPS": 0.0,
+   "Slate.bAllowThrottling": 1.0,
+   "r.VSync": 0.0
+  },
+  "foreground_attempt": {
+   "was": 5636622,
+   "front": true
+  }
+ },
+ "started_unix": 1794521230.7998166,
+ "finished_unix": 1794521430.9739432,
+ "warmup_seconds": 8.0,
+ "csv_folder": "D:/Unreal_Engine_Projects/Wieland1527 5.9/Saved/Profiling\\CSV",
+ "error": null,
+ "jobs": [
+  {
+   "name": "M4_exterior_path_first_walk",
+   "kind": "path",
+   "job": {
+    "kind": "path",
+    "loc": [
+     3745.62,
+     1403.7,
+     158.2
+    ],
+    "end": [
+     -4654.38,
+     1403.7,
+     158.2
+    ],
+    "target": [
+     -754.38,
+     -311.1,
+     303.2
+    ],
+    "seconds": 60.0,
+    "name": "M4_exterior_path_first_walk"
+   },
+   "wall_start_unix": 1794521238.8798048,
+   "recorded_seconds": 60.003770999988774,
+   "ticks": 6543,
+   "foreground_fraction": 1.0,
+   "tick_ms_mean": 9.170901589408738,
+   "tick_ms_p95": 12.36959919333458,
+   "tick_ms_max": 22.099100053310394,
+   "camera_first": {
+    "loc": [
+     3744.338692002003,
+     1403.7,
+     158.2
+    ],
+    "rot_pitch_yaw_roll": [
+     1.7250907365360477,
+     -159.13439410859314,
+     3.710955937042129e-08
+    ]
+   },
+   "camera_last": {
+    "loc": [
+     -4654.38,
+     1403.7,
+     158.2
+    ],
+    "rot_pitch_yaw_roll": [
+     1.9492981210073128,
+     -23.73472281886692,
+     6.253944946197807e-09
+    ]
+   },
+   "new_csv_files": [
+    "Profile(20261112_160718).csv"
+   ],
+   "tick_ms_series": null
+  },
+  {
+   "name": "M4_exterior_path",
+   "kind": "path",
+   "job": {
+    "kind": "path",
+    "loc": [
+     3745.62,
+     1403.7,
+     158.2
+    ],
+    "end": [
+     -4654.38,
+     1403.7,
+     158.2
+    ],
+    "target": [
+     -754.38,
+     -311.1,
+     303.2
+    ],
+    "seconds": 60.0,
+    "name": "M4_exterior_path"
+   },
+   "wall_start_unix": 1794521308.8983884,
+   "recorded_seconds": 60.00151309999637,
+   "ticks": 6536,
+   "foreground_fraction": 1.0,
+   "tick_ms_mean": 9.18043668882299,
+   "tick_ms_p95": 12.499697506427765,
+   "tick_ms_max": 17.606500536203384,
+   "camera_first": {
+    "loc": [
+     3744.3074440003884,
+     1403.7,
+     158.2
+    ],
+    "rot_pitch_yaw_roll": [
+     1.725101192597081,
+     -159.13426165427322,
+     3.710975338425686e-08
+    ]
+   },
+   "camera_last": {
+    "loc": [
+     -4654.38,
+     1403.7,
+     158.2
+    ],
+    "rot_pitch_yaw_roll": [
+     1.9492981210073128,
+     -23.73472281886692,
+     6.253944946197807e-09
+    ]
+   },
+   "new_csv_files": [
+    "Profile(20261112_160828).csv"
+   ],
+   "tick_ms_series": null
+  },
+  {
+   "name": "M4_hold_S1",
+   "kind": "view",
+   "job": {
+    "kind": "view",
+    "name": "M4_hold_S1",
+    "loc": [
+     -754.4,
+     1400.0,
+     158.6
+    ],
+    "rot": [
+     8.0,
+     -88.82,
+     0.0
+    ],
+    "seconds": 10.0
+   },
+   "wall_start_unix": 1794521378.914411,
+   "recorded_seconds": 10.006453100009821,
+   "ticks": 1101,
+   "foreground_fraction": 1.0,
+   "tick_ms_mean": 9.0876681210776,
+   "tick_ms_p95": 12.087702751159668,
+   "tick_ms_max": 14.769099652767181,
+   "camera_first": {
+    "loc": [
+     -754.4,
+     1400.0,
+     158.6
+    ],
+    "rot_pitch_yaw_roll": [
+     8.0,
+     -88.81999969482422,
+     0.0
+    ]
+   },
+   "camera_last": {
+    "loc": [
+     -754.4,
+     1400.0,
+     158.6
+    ],
+    "rot_pitch_yaw_roll": [
+     8.0,
+     -88.81999969482422,
+     0.0
+    ]
+   },
+   "new_csv_files": [
+    "Profile(20261112_160938).csv"
+   ],
+   "tick_ms_series": null
+  },
+  {
+   "name": "M4_hold_S2",
+   "kind": "view",
+   "job": {
+    "kind": "view",
+    "name": "M4_hold_S2",
+    "loc": [
+     1745.6,
+     1400.0,
+     151.9
+    ],
+    "rot": [
+     8.0,
+     -133.82,
+     0.0
+    ],
+    "seconds": 10.0
+   },
+   "wall_start_unix": 1794521398.9389253,
+   "recorded_seconds": 10.00432860001456,
+   "ticks": 1095,
+   "foreground_fraction": 1.0,
+   "tick_ms_mean": 9.135168311122346,
+   "tick_ms_p95": 11.945698410272598,
+   "tick_ms_max": 17.95629784464836,
+   "camera_first": {
+    "loc": [
+     1745.6,
+     1400.0,
+     151.9
+    ],
+    "rot_pitch_yaw_roll": [
+     8.0,
+     -133.82000732421875,
+     0.0
+    ]
+   },
+   "camera_last": {
+    "loc": [
+     1745.6,
+     1400.0,
+     151.9
+    ],
+    "rot_pitch_yaw_roll": [
+     8.0,
+     -133.82000732421875,
+     0.0
+    ]
+   },
+   "new_csv_files": [
+    "Profile(20261112_160958).csv"
+   ],
+   "tick_ms_series": null
+  },
+  {
+   "name": "M4_hold_S6",
+   "kind": "view",
+   "job": {
+    "kind": "view",
+    "name": "M4_hold_S6",
+    "loc": [
+     -3508.8,
+     210.0,
+     173.1
+    ],
+    "rot": [
+     8.0,
+     1.18,
+     0.0
+    ],
+    "seconds": 10.0
+   },
+   "wall_start_unix": 1794521418.9591095,
+   "recorded_seconds": 10.006264399999054,
+   "ticks": 1137,
+   "foreground_fraction": 1.0,
+   "tick_ms_mean": 8.797682585848353,
+   "tick_ms_p95": 12.152601033449173,
+   "tick_ms_max": 15.842597931623459,
+   "camera_first": {
+    "loc": [
+     -3508.8,
+     210.0,
+     173.1
+    ],
+    "rot_pitch_yaw_roll": [
+     8.0,
+     1.1799999475479126,
+     0.0
+    ]
+   },
+   "camera_last": {
+    "loc": [
+     -3508.8,
+     210.0,
+     173.1
+    ],
+    "rot_pitch_yaw_roll": [
+     8.0,
+     1.1799999475479126,
+     0.0
+    ]
+   },
+   "new_csv_files": [
+    "Profile(20261112_161018).csv"
+   ],
+   "tick_ms_series": null
+  }
+ ]
+}

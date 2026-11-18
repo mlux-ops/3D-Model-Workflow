@@ -1,0 +1,286 @@
+{
+ "frames": "existing level and Revit export: north -X, east -Y; new x = old x + 15482.32, new y = old y + 5053.70 (cm)",
+ "grid": {
+  "step_m": 2.0,
+  "points": 17956,
+  "points_with_a_surface": 5652,
+  "model_covers_metres_north_of_sw_corner": [
+   -104.0,
+   98.0
+  ],
+  "model_covers_metres_east_of_sw_corner": [
+   -46.0,
+   136.0
+  ]
+ },
+ "overlap_of_building_areas": {
+  "how": "share of grid points that are building in both, out of those that are building in either (model: surface over 3 m; 2022: inside a footprint and over 3 m); the lot itself left out",
+  "points_compared": 5585,
+  "as_the_model_stands": 0.591,
+  "best": 0.628,
+  "best_turn_deg_clockwise": 1.1,
+  "best_shift_m_north": -0.25,
+  "best_shift_m_east": 0.0,
+  "searched": "turn -3 to +3 degrees in 0.5 then 0.1; shift -10 to +10 m in 1 then 0.25; about the lot centre"
+ },
+ "heights": {
+  "buildings_compared": 43,
+  "median_model_minus_scan_m": -1.1,
+  "median_size_of_difference_m": 1.6,
+  "within_1_m": 15,
+  "within_3_m": 36,
+  "largest_differences": [
+   {
+    "object_id": 783243,
+    "metres_north_of_sw_corner": -48.7,
+    "metres_east_of_sw_corner": -27.8,
+    "grid_points": 38,
+    "share_covered_by_a_model_building": 0.79,
+    "model_height_m": 6.3,
+    "scan_height_m": 15.6,
+    "model_minus_scan_m": -9.3,
+    "county_height_m": 19.7
+   },
+   {
+    "object_id": 784287,
+    "metres_north_of_sw_corner": -79.6,
+    "metres_east_of_sw_corner": 13.3,
+    "grid_points": 29,
+    "share_covered_by_a_model_building": 0.93,
+    "model_height_m": 6.3,
+    "scan_height_m": 12.7,
+    "model_minus_scan_m": -6.5,
+    "county_height_m": 14.3
+   },
+   {
+    "object_id": 777645,
+    "metres_north_of_sw_corner": 92.1,
+    "metres_east_of_sw_corner": 106.2,
+    "grid_points": 13,
+    "share_covered_by_a_model_building": 1.0,
+    "model_height_m": 10.0,
+    "scan_height_m": 14.8,
+    "model_minus_scan_m": -4.8,
+    "county_height_m": 16.5
+   },
+   {
+    "object_id": 780646,
+    "metres_north_of_sw_corner": 20.0,
+    "metres_east_of_sw_corner": 98.6,
+    "grid_points": 36,
+    "share_covered_by_a_model_building": 1.0,
+    "model_height_m": 9.3,
+    "scan_height_m": 5.8,
+    "model_minus_scan_m": 3.5,
+    "county_height_m": 14.4
+   },
+   {
+    "object_id": 783103,
+    "metres_north_of_sw_corner": -59.4,
+    "metres_east_of_sw_corner": 109.5,
+    "grid_points": 223,
+    "share_covered_by_a_model_building": 1.0,
+    "model_height_m": 21.5,
+    "scan_height_m": 25.0,
+    "model_minus_scan_m": -3.4,
+    "county_height_m": 31.0
+   },
+   {
+    "object_id": 782163,
+    "metres_north_of_sw_corner": -18.6,
+    "metres_east_of_sw_corner": -30.0,
+    "grid_points": 48,
+    "share_covered_by_a_model_building": 0.5,
+    "model_height_m": 13.7,
+    "scan_height_m": 10.5,
+    "model_minus_scan_m": 3.3,
+    "county_height_m": 12.1
+   }
+  ],
+  "nearest_ten": [
+   {
+    "object_id": 781632,
+    "metres_north_of_sw_corner": -3.1,
+    "metres_east_of_sw_corner": 10.3,
+    "grid_points": 27,
+    "share_covered_by_a_model_building": 0.96,
+    "model_height_m": 8.1,
+    "scan_height_m": 8.4,
+    "model_minus_scan_m": -0.3,
+    "county_height_m": 9.4
+   },
+   {
+    "object_id": 780226,
+    "metres_north_of_sw_corner": 27.8,
+    "metres_east_of_sw_corner": 12.2,
+    "grid_points": 79,
+    "share_covered_by_a_model_building": 1.0,
+    "model_height_m": 15.0,
+    "scan_height_m": 13.8,
+    "model_minus_scan_m": 1.1,
+    "county_height_m": 15.3
+   },
+   {
+    "object_id": 780220,
+    "metres_north_of_sw_corner": 31.2,
+    "metres_east_of_sw_corner": 34.5,
+    "grid_points": 21,
+    "share_covered_by_a_model_building": 0.0,
+    "model_height_m": null,
+    "scan_height_m": 3.6,
+    "model_minus_scan_m": null,
+    "county_height_m": 7.1
+   },
+   {
+    "object_id": 781010,
+    "metres_north_of_sw_corner": 11.8,
+    "metres_east_of_sw_corner": 46.0,
+    "grid_points": 45,
+    "share_covered_by_a_model_building": 0.0,
+    "model_height_m": null,
+    "scan_height_m": 14.3,
+    "model_minus_scan_m": null,
+    "county_height_m": 15.1
+   },
+   {
+    "object_id": 781291,
+    "metres_north_of_sw_corner": 4.5,
+    "metres_east_of_sw_corner": 47.4,
+    "grid_points": 50,
+    "share_covered_by_a_model_building": 0.66,
+    "model_height_m": 10.5,
+    "scan_height_m": 10.0,
+    "model_minus_scan_m": 0.5,
+    "county_height_m": 14.9
+   },
+   {
+    "object_id": 781577,
+    "metres_north_of_sw_corner": -3.4,
+    "metres_east_of_sw_corner": 47.4,
+    "grid_points": 63,
+    "share_covered_by_a_model_building": 1.0,
+    "model_height_m": 6.8,
+    "scan_height_m": 5.8,
+    "model_minus_scan_m": 0.9,
+    "county_height_m": 9.7
+   },
+   {
+    "object_id": 781415,
+    "metres_north_of_sw_corner": -3.5,
+    "metres_east_of_sw_corner": -27.5,
+    "grid_points": 101,
+    "share_covered_by_a_model_building": 0.89,
+    "model_height_m": 15.3,
+    "scan_height_m": 15.1,
+    "model_minus_scan_m": 0.1,
+    "county_height_m": 18.3
+   },
+   {
+    "object_id": 780470,
+    "metres_north_of_sw_corner": 26.0,
+    "metres_east_of_sw_corner": 56.6,
+    "grid_points": 16,
+    "share_covered_by_a_model_building": 0.0,
+    "model_height_m": null,
+    "scan_height_m": 3.8,
+    "model_minus_scan_m": null,
+    "county_height_m": 5.1
+   },
+   {
+    "object_id": 780192,
+    "metres_north_of_sw_corner": 34.3,
+    "metres_east_of_sw_corner": 52.0,
+    "grid_points": 26,
+    "share_covered_by_a_model_building": 0.96,
+    "model_height_m": 7.9,
+    "scan_height_m": 8.5,
+    "model_minus_scan_m": -0.6,
+    "county_height_m": 10.0
+   },
+   {
+    "object_id": 780815,
+    "metres_north_of_sw_corner": 19.2,
+    "metres_east_of_sw_corner": -28.3,
+    "grid_points": 39,
+    "share_covered_by_a_model_building": 0.74,
+    "model_height_m": 14.6,
+    "scan_height_m": 15.4,
+    "model_minus_scan_m": -0.9,
+    "county_height_m": 17.4
+   }
+  ]
+ },
+ "footprints_of_2022_with_no_model_building": {
+  "count": 12,
+  "nearest_six": [
+   {
+    "object_id": 780220,
+    "metres_north_of_sw_corner": 31.2,
+    "metres_east_of_sw_corner": 34.5,
+    "grid_points": 21,
+    "share_covered_by_a_model_building": 0.0,
+    "model_height_m": null,
+    "scan_height_m": 3.6,
+    "model_minus_scan_m": null,
+    "county_height_m": 7.1
+   },
+   {
+    "object_id": 781010,
+    "metres_north_of_sw_corner": 11.8,
+    "metres_east_of_sw_corner": 46.0,
+    "grid_points": 45,
+    "share_covered_by_a_model_building": 0.0,
+    "model_height_m": null,
+    "scan_height_m": 14.3,
+    "model_minus_scan_m": null,
+    "county_height_m": 15.1
+   },
+   {
+    "object_id": 780470,
+    "metres_north_of_sw_corner": 26.0,
+    "metres_east_of_sw_corner": 56.6,
+    "grid_points": 16,
+    "share_covered_by_a_model_building": 0.0,
+    "model_height_m": null,
+    "scan_height_m": 3.8,
+    "model_minus_scan_m": null,
+    "county_height_m": 5.1
+   },
+   {
+    "object_id": 782868,
+    "metres_north_of_sw_corner": -41.1,
+    "metres_east_of_sw_corner": 46.2,
+    "grid_points": 11,
+    "share_covered_by_a_model_building": 0.0,
+    "model_height_m": null,
+    "scan_height_m": 12.1,
+    "model_minus_scan_m": null,
+    "county_height_m": 13.6
+   },
+   {
+    "object_id": 783442,
+    "metres_north_of_sw_corner": -56.6,
+    "metres_east_of_sw_corner": 13.7,
+    "grid_points": 16,
+    "share_covered_by_a_model_building": 0.12,
+    "model_height_m": 9.4,
+    "scan_height_m": 12.6,
+    "model_minus_scan_m": -3.2,
+    "county_height_m": 18.9
+   },
+   {
+    "object_id": 783342,
+    "metres_north_of_sw_corner": -56.4,
+    "metres_east_of_sw_corner": 45.7,
+    "grid_points": 61,
+    "share_covered_by_a_model_building": 0.16,
+    "model_height_m": 3.2,
+    "scan_height_m": 12.2,
+    "model_minus_scan_m": -9.0,
+    "county_height_m": 15.1
+   }
+  ]
+ },
+ "model_building_points_with_no_2022_building": 474,
+ "file": "existing_model_vs_map.csv"
+}

@@ -1,0 +1,743 @@
+{
+ "info": {
+  "engine": "5.9.0-60351404+++UE5+Release-5.9",
+  "level": "/Game/Wieland/R15_Landscape/L_R15_Production",
+  "date": "2026-11-10",
+  "viewport_pixels": [
+   2038,
+   782
+  ],
+  "viewport_fov_deg": 90,
+  "game_view": true,
+  "realtime": true,
+  "frame_cap": "t.MaxFPS 1000, which lifts the editor's 120 frames-per-second ceiling",
+  "note": "job names give the quality level and the screen percentage; Epic = every sg group at 3 and texture pool 1000 MB (the October settings); Cinematic = every sg group at 4 and texture pool 3000 MB (the editor as found)"
+ },
+ "started_unix": 1794372082.5780559,
+ "finished_unix": 1794372322.9684696,
+ "warmup_seconds": 8.0,
+ "csv_folder": "D:/Unreal_Engine_Projects/Wieland1527 5.9/Saved/Profiling\\CSV",
+ "error": null,
+ "jobs": [
+  {
+   "name": "epic_sp100_front_context",
+   "kind": "view",
+   "job": {
+    "name": "epic_sp100_front_context",
+    "kind": "view",
+    "loc": [
+     -15259.844,
+     -3627.884,
+     319.824
+    ],
+    "target": [
+     -16900.0,
+     -6500.0,
+     700.0
+    ],
+    "seconds": 10.0,
+    "cvars": {
+     "sg.ViewDistanceQuality": 3,
+     "sg.AntiAliasingQuality": 3,
+     "sg.ShadowQuality": 3,
+     "sg.GlobalIlluminationQuality": 3,
+     "sg.ReflectionQuality": 3,
+     "sg.PostProcessQuality": 3,
+     "sg.TextureQuality": 3,
+     "sg.EffectsQuality": 3,
+     "sg.FoliageQuality": 3,
+     "sg.ShadingQuality": 3,
+     "sg.LandscapeQuality": 3,
+     "r.Streaming.PoolSize": 1000,
+     "r.Editor.Viewport.ScreenPercentage": 100,
+     "t.MaxFPS": 1000,
+     "Slate.bAllowThrottling": 0,
+     "r.VSync": 0
+    }
+   },
+   "wall_start_unix": 1794372090.599919,
+   "recorded_seconds": 10.003951400000005,
+   "ticks": 1181,
+   "foreground_fraction": 0.0,
+   "tick_ms_mean": 8.470685857645442,
+   "tick_ms_p95": 10.695397853851318,
+   "tick_ms_max": 26.745501905679703,
+   "camera_first": {
+    "loc": [
+     -15259.844,
+     -3627.884,
+     319.824
+    ],
+    "rot_pitch_yaw_roll": [
+     6.557124933445489,
+     -119.72904114807653,
+     1.0591072834633902e-07
+    ]
+   },
+   "camera_last": {
+    "loc": [
+     -15259.844,
+     -3627.884,
+     319.824
+    ],
+    "rot_pitch_yaw_roll": [
+     6.557124933445489,
+     -119.72904114807653,
+     1.0591072834633902e-07
+    ]
+   },
+   "new_csv_files": [
+    "Profile(20261110_224130).csv"
+   ],
+   "tick_ms_series": null
+  },
+  {
+   "name": "epic_sp100_dense_planting",
+   "kind": "view",
+   "job": {
+    "name": "epic_sp100_dense_planting",
+    "kind": "view",
+    "loc": [
+     -17400.0,
+     -4800.0,
+     130.0
+    ],
+    "target": [
+     -17600.0,
+     -5160.0,
+     45.0
+    ],
+    "seconds": 10.0
+   },
+   "wall_start_unix": 1794372110.6053734,
+   "recorded_seconds": 10.00477039999896,
+   "ticks": 1332,
+   "foreground_fraction": 0.0,
+   "tick_ms_mean": 7.509283631950527,
+   "tick_ms_p95": 10.052800178527832,
+   "tick_ms_max": 20.93449980020523,
+   "camera_first": {
+    "loc": [
+     -17400.0,
+     -4800.0,
+     130.0
+    ],
+    "rot_pitch_yaw_roll": [
+     -11.661987625120766,
+     -119.05460409907714,
+     -1.8641950509040491e-07
+    ]
+   },
+   "camera_last": {
+    "loc": [
+     -17400.0,
+     -4800.0,
+     130.0
+    ],
+    "rot_pitch_yaw_roll": [
+     -11.661987625120766,
+     -119.05460409907714,
+     -1.8641950509040491e-07
+    ]
+   },
+   "new_csv_files": [
+    "Profile(20261110_224150).csv"
+   ],
+   "tick_ms_series": null
+  },
+  {
+   "name": "epic_sp100_block_overview",
+   "kind": "view",
+   "job": {
+    "name": "epic_sp100_block_overview",
+    "kind": "view",
+    "loc": [
+     -18900.0,
+     -2900.0,
+     1800.0
+    ],
+    "target": [
+     -16500.0,
+     -9000.0,
+     300.0
+    ],
+    "seconds": 10.0
+   },
+   "wall_start_unix": 1794372130.6221652,
+   "recorded_seconds": 10.004433500000232,
+   "ticks": 1164,
+   "foreground_fraction": 0.0,
+   "tick_ms_mean": 8.593005582664636,
+   "tick_ms_p95": 11.175401508808136,
+   "tick_ms_max": 21.002300083637238,
+   "camera_first": {
+    "loc": [
+     -18900.0,
+     -2900.0,
+     1800.0
+    ],
+    "rot_pitch_yaw_roll": [
+     -12.888954637406618,
+     -68.52320902045962,
+     -1.1840273335594739e-07
+    ]
+   },
+   "camera_last": {
+    "loc": [
+     -18900.0,
+     -2900.0,
+     1800.0
+    ],
+    "rot_pitch_yaw_roll": [
+     -12.888954637406618,
+     -68.52320902045962,
+     -1.1840273335594739e-07
+    ]
+   },
+   "new_csv_files": [
+    "Profile(20261110_224210).csv"
+   ],
+   "tick_ms_series": null
+  },
+  {
+   "name": "epic_sp152_front_context",
+   "kind": "view",
+   "job": {
+    "name": "epic_sp152_front_context",
+    "kind": "view",
+    "loc": [
+     -15259.844,
+     -3627.884,
+     319.824
+    ],
+    "target": [
+     -16900.0,
+     -6500.0,
+     700.0
+    ],
+    "seconds": 10.0,
+    "cvars": {
+     "sg.ViewDistanceQuality": 3,
+     "sg.AntiAliasingQuality": 3,
+     "sg.ShadowQuality": 3,
+     "sg.GlobalIlluminationQuality": 3,
+     "sg.ReflectionQuality": 3,
+     "sg.PostProcessQuality": 3,
+     "sg.TextureQuality": 3,
+     "sg.EffectsQuality": 3,
+     "sg.FoliageQuality": 3,
+     "sg.ShadingQuality": 3,
+     "sg.LandscapeQuality": 3,
+     "r.Streaming.PoolSize": 1000,
+     "r.Editor.Viewport.ScreenPercentage": 152,
+     "t.MaxFPS": 1000,
+     "Slate.bAllowThrottling": 0,
+     "r.VSync": 0
+    }
+   },
+   "wall_start_unix": 1794372150.6452596,
+   "recorded_seconds": 10.00408459999926,
+   "ticks": 924,
+   "foreground_fraction": 0.0,
+   "tick_ms_mean": 10.828557899987802,
+   "tick_ms_p95": 13.269901275634766,
+   "tick_ms_max": 19.013598561286926,
+   "camera_first": {
+    "loc": [
+     -15259.844,
+     -3627.884,
+     319.824
+    ],
+    "rot_pitch_yaw_roll": [
+     6.557124933445489,
+     -119.72904114807653,
+     1.0591072834633902e-07
+    ]
+   },
+   "camera_last": {
+    "loc": [
+     -15259.844,
+     -3627.884,
+     319.824
+    ],
+    "rot_pitch_yaw_roll": [
+     6.557124933445489,
+     -119.72904114807653,
+     1.0591072834633902e-07
+    ]
+   },
+   "new_csv_files": [
+    "Profile(20261110_224230).csv"
+   ],
+   "tick_ms_series": null
+  },
+  {
+   "name": "epic_sp152_dense_planting",
+   "kind": "view",
+   "job": {
+    "name": "epic_sp152_dense_planting",
+    "kind": "view",
+    "loc": [
+     -17400.0,
+     -4800.0,
+     130.0
+    ],
+    "target": [
+     -17600.0,
+     -5160.0,
+     45.0
+    ],
+    "seconds": 10.0
+   },
+   "wall_start_unix": 1794372170.6683962,
+   "recorded_seconds": 10.001206300001286,
+   "ticks": 1008,
+   "foreground_fraction": 0.0,
+   "tick_ms_mean": 9.922226783745582,
+   "tick_ms_p95": 12.076899409294128,
+   "tick_ms_max": 17.278097569942474,
+   "camera_first": {
+    "loc": [
+     -17400.0,
+     -4800.0,
+     130.0
+    ],
+    "rot_pitch_yaw_roll": [
+     -11.661987625120766,
+     -119.05460409907714,
+     -1.8641950509040491e-07
+    ]
+   },
+   "camera_last": {
+    "loc": [
+     -17400.0,
+     -4800.0,
+     130.0
+    ],
+    "rot_pitch_yaw_roll": [
+     -11.661987625120766,
+     -119.05460409907714,
+     -1.8641950509040491e-07
+    ]
+   },
+   "new_csv_files": [
+    "Profile(20261110_224250).csv"
+   ],
+   "tick_ms_series": null
+  },
+  {
+   "name": "epic_sp152_block_overview",
+   "kind": "view",
+   "job": {
+    "name": "epic_sp152_block_overview",
+    "kind": "view",
+    "loc": [
+     -18900.0,
+     -2900.0,
+     1800.0
+    ],
+    "target": [
+     -16500.0,
+     -9000.0,
+     300.0
+    ],
+    "seconds": 10.0
+   },
+   "wall_start_unix": 1794372190.6981952,
+   "recorded_seconds": 10.00956750000114,
+   "ticks": 947,
+   "foreground_fraction": 0.0,
+   "tick_ms_mean": 10.572335481203094,
+   "tick_ms_p95": 12.662302702665329,
+   "tick_ms_max": 15.376798808574677,
+   "camera_first": {
+    "loc": [
+     -18900.0,
+     -2900.0,
+     1800.0
+    ],
+    "rot_pitch_yaw_roll": [
+     -12.888954637406618,
+     -68.52320902045962,
+     -1.1840273335594739e-07
+    ]
+   },
+   "camera_last": {
+    "loc": [
+     -18900.0,
+     -2900.0,
+     1800.0
+    ],
+    "rot_pitch_yaw_roll": [
+     -12.888954637406618,
+     -68.52320902045962,
+     -1.1840273335594739e-07
+    ]
+   },
+   "new_csv_files": [
+    "Profile(20261110_224310).csv"
+   ],
+   "tick_ms_series": null
+  },
+  {
+   "name": "cinematic_sp100_front_context",
+   "kind": "view",
+   "job": {
+    "name": "cinematic_sp100_front_context",
+    "kind": "view",
+    "loc": [
+     -15259.844,
+     -3627.884,
+     319.824
+    ],
+    "target": [
+     -16900.0,
+     -6500.0,
+     700.0
+    ],
+    "seconds": 10.0,
+    "cvars": {
+     "sg.ViewDistanceQuality": 4,
+     "sg.AntiAliasingQuality": 4,
+     "sg.ShadowQuality": 4,
+     "sg.GlobalIlluminationQuality": 4,
+     "sg.ReflectionQuality": 4,
+     "sg.PostProcessQuality": 4,
+     "sg.TextureQuality": 4,
+     "sg.EffectsQuality": 4,
+     "sg.FoliageQuality": 4,
+     "sg.ShadingQuality": 4,
+     "sg.LandscapeQuality": 4,
+     "r.Streaming.PoolSize": 3000,
+     "r.Editor.Viewport.ScreenPercentage": 100,
+     "t.MaxFPS": 1000,
+     "Slate.bAllowThrottling": 0,
+     "r.VSync": 0
+    }
+   },
+   "wall_start_unix": 1794372210.7246585,
+   "recorded_seconds": 10.00418179999906,
+   "ticks": 857,
+   "foreground_fraction": 0.0,
+   "tick_ms_mean": 11.672961961395403,
+   "tick_ms_p95": 13.499800115823746,
+   "tick_ms_max": 21.136701107025146,
+   "camera_first": {
+    "loc": [
+     -15259.844,
+     -3627.884,
+     319.824
+    ],
+    "rot_pitch_yaw_roll": [
+     6.557124933445489,
+     -119.72904114807653,
+     1.0591072834633902e-07
+    ]
+   },
+   "camera_last": {
+    "loc": [
+     -15259.844,
+     -3627.884,
+     319.824
+    ],
+    "rot_pitch_yaw_roll": [
+     6.557124933445489,
+     -119.72904114807653,
+     1.0591072834633902e-07
+    ]
+   },
+   "new_csv_files": [
+    "Profile(20261110_224330).csv"
+   ],
+   "tick_ms_series": null
+  },
+  {
+   "name": "cinematic_sp100_dense_planting",
+   "kind": "view",
+   "job": {
+    "name": "cinematic_sp100_dense_planting",
+    "kind": "view",
+    "loc": [
+     -17400.0,
+     -4800.0,
+     130.0
+    ],
+    "target": [
+     -17600.0,
+     -5160.0,
+     45.0
+    ],
+    "seconds": 10.0
+   },
+   "wall_start_unix": 1794372230.7486718,
+   "recorded_seconds": 10.000762399999076,
+   "ticks": 719,
+   "foreground_fraction": 0.0,
+   "tick_ms_mean": 13.910224062801236,
+   "tick_ms_p95": 18.535200506448746,
+   "tick_ms_max": 22.626299411058426,
+   "camera_first": {
+    "loc": [
+     -17400.0,
+     -4800.0,
+     130.0
+    ],
+    "rot_pitch_yaw_roll": [
+     -11.661987625120766,
+     -119.05460409907714,
+     -1.8641950509040491e-07
+    ]
+   },
+   "camera_last": {
+    "loc": [
+     -17400.0,
+     -4800.0,
+     130.0
+    ],
+    "rot_pitch_yaw_roll": [
+     -11.661987625120766,
+     -119.05460409907714,
+     -1.8641950509040491e-07
+    ]
+   },
+   "new_csv_files": [
+    "Profile(20261110_224350).csv"
+   ],
+   "tick_ms_series": null
+  },
+  {
+   "name": "cinematic_sp100_block_overview",
+   "kind": "view",
+   "job": {
+    "name": "cinematic_sp100_block_overview",
+    "kind": "view",
+    "loc": [
+     -18900.0,
+     -2900.0,
+     1800.0
+    ],
+    "target": [
+     -16500.0,
+     -9000.0,
+     300.0
+    ],
+    "seconds": 10.0
+   },
+   "wall_start_unix": 1794372250.7862172,
+   "recorded_seconds": 10.010017799999332,
+   "ticks": 862,
+   "foreground_fraction": 0.0,
+   "tick_ms_mean": 11.615551277787668,
+   "tick_ms_p95": 13.952400535345078,
+   "tick_ms_max": 19.178196787834167,
+   "camera_first": {
+    "loc": [
+     -18900.0,
+     -2900.0,
+     1800.0
+    ],
+    "rot_pitch_yaw_roll": [
+     -12.888954637406618,
+     -68.52320902045962,
+     -1.1840273335594739e-07
+    ]
+   },
+   "camera_last": {
+    "loc": [
+     -18900.0,
+     -2900.0,
+     1800.0
+    ],
+    "rot_pitch_yaw_roll": [
+     -12.888954637406618,
+     -68.52320902045962,
+     -1.1840273335594739e-07
+    ]
+   },
+   "new_csv_files": [
+    "Profile(20261110_224410).csv"
+   ],
+   "tick_ms_series": null
+  },
+  {
+   "name": "cinematic_sp152_front_context",
+   "kind": "view",
+   "job": {
+    "name": "cinematic_sp152_front_context",
+    "kind": "view",
+    "loc": [
+     -15259.844,
+     -3627.884,
+     319.824
+    ],
+    "target": [
+     -16900.0,
+     -6500.0,
+     700.0
+    ],
+    "seconds": 10.0,
+    "cvars": {
+     "sg.ViewDistanceQuality": 4,
+     "sg.AntiAliasingQuality": 4,
+     "sg.ShadowQuality": 4,
+     "sg.GlobalIlluminationQuality": 4,
+     "sg.ReflectionQuality": 4,
+     "sg.PostProcessQuality": 4,
+     "sg.TextureQuality": 4,
+     "sg.EffectsQuality": 4,
+     "sg.FoliageQuality": 4,
+     "sg.ShadingQuality": 4,
+     "sg.LandscapeQuality": 4,
+     "r.Streaming.PoolSize": 3000,
+     "r.Editor.Viewport.ScreenPercentage": 152,
+     "t.MaxFPS": 1000,
+     "Slate.bAllowThrottling": 0,
+     "r.VSync": 0
+    }
+   },
+   "wall_start_unix": 1794372270.8324249,
+   "recorded_seconds": 10.019763500000408,
+   "ticks": 506,
+   "foreground_fraction": 0.0,
+   "tick_ms_mean": 19.797787747599862,
+   "tick_ms_p95": 22.01179787516594,
+   "tick_ms_max": 30.280999839305878,
+   "camera_first": {
+    "loc": [
+     -15259.844,
+     -3627.884,
+     319.824
+    ],
+    "rot_pitch_yaw_roll": [
+     6.557124933445489,
+     -119.72904114807653,
+     1.0591072834633902e-07
+    ]
+   },
+   "camera_last": {
+    "loc": [
+     -15259.844,
+     -3627.884,
+     319.824
+    ],
+    "rot_pitch_yaw_roll": [
+     6.557124933445489,
+     -119.72904114807653,
+     1.0591072834633902e-07
+    ]
+   },
+   "new_csv_files": [
+    "Profile(20261110_224430).csv"
+   ],
+   "tick_ms_series": null
+  },
+  {
+   "name": "cinematic_sp152_dense_planting",
+   "kind": "view",
+   "job": {
+    "name": "cinematic_sp152_dense_planting",
+    "kind": "view",
+    "loc": [
+     -17400.0,
+     -4800.0,
+     130.0
+    ],
+    "target": [
+     -17600.0,
+     -5160.0,
+     45.0
+    ],
+    "seconds": 10.0
+   },
+   "wall_start_unix": 1794372290.8874528,
+   "recorded_seconds": 10.015226100000291,
+   "ticks": 454,
+   "foreground_fraction": 0.0,
+   "tick_ms_mean": 22.0616711426674,
+   "tick_ms_p95": 24.585500359535217,
+   "tick_ms_max": 32.09449723362923,
+   "camera_first": {
+    "loc": [
+     -17400.0,
+     -4800.0,
+     130.0
+    ],
+    "rot_pitch_yaw_roll": [
+     -11.661987625120766,
+     -119.05460409907714,
+     -1.8641950509040491e-07
+    ]
+   },
+   "camera_last": {
+    "loc": [
+     -17400.0,
+     -4800.0,
+     130.0
+    ],
+    "rot_pitch_yaw_roll": [
+     -11.661987625120766,
+     -119.05460409907714,
+     -1.8641950509040491e-07
+    ]
+   },
+   "new_csv_files": [
+    "Profile(20261110_224450).csv"
+   ],
+   "tick_ms_series": null
+  },
+  {
+   "name": "cinematic_sp152_block_overview",
+   "kind": "view",
+   "job": {
+    "name": "cinematic_sp152_block_overview",
+    "kind": "view",
+    "loc": [
+     -18900.0,
+     -2900.0,
+     1800.0
+    ],
+    "target": [
+     -16500.0,
+     -9000.0,
+     300.0
+    ],
+    "seconds": 10.0
+   },
+   "wall_start_unix": 1794372310.9441087,
+   "recorded_seconds": 10.005144700000528,
+   "ticks": 508,
+   "foreground_fraction": 0.0,
+   "tick_ms_mean": 19.700016540394525,
+   "tick_ms_p95": 22.076498717069626,
+   "tick_ms_max": 28.847500681877136,
+   "camera_first": {
+    "loc": [
+     -18900.0,
+     -2900.0,
+     1800.0
+    ],
+    "rot_pitch_yaw_roll": [
+     -12.888954637406618,
+     -68.52320902045962,
+     -1.1840273335594739e-07
+    ]
+   },
+   "camera_last": {
+    "loc": [
+     -18900.0,
+     -2900.0,
+     1800.0
+    ],
+    "rot_pitch_yaw_roll": [
+     -12.888954637406618,
+     -68.52320902045962,
+     -1.1840273335594739e-07
+    ]
+   },
+   "new_csv_files": [
+    "Profile(20261110_224510).csv"
+   ],
+   "tick_ms_series": null
+  }
+ ]
+}

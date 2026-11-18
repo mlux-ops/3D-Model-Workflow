@@ -1,0 +1,14 @@
+{
+ "name": "_test_neighbour",
+ "version": 1,
+ "speed_m_per_s": 1.2,
+ "fps": 30,
+ "resolution": [1920, 1080],
+ "quality": "realtime",
+ "points": [
+  {"plan": "site", "x_cm": -2100.0, "y_cm": 600.0, "z_cm": 160.0, "pause_s": 0, "look": {"mode": "forward"}},
+  {"plan": "site", "x_cm": -2100.0, "y_cm": -1500.0, "z_cm": 160.0, "pause_s": 0, "look": {"mode": "forward"}}
+ ],
+ "render_requested_at": "2026-11-14T20:30:00",
+ "note": "Phase 19 refusal test (agent): from the sidewalk straight into the north neighbour, 1533 N Wieland (a Phase 17 laser-scan building); must be refused, never rendered."
+}

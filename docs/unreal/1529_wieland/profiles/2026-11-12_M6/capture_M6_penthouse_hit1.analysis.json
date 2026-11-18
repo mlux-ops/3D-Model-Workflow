@@ -1,0 +1,330 @@
+{
+ "source_record": "capture_M6_penthouse_hit1.json",
+ "info": {
+  "step": "Phase 8, step 8.11: profile M6, part penthouse, variant _hit1",
+  "level": "/Game/Wieland1529/L_Site_M4.L_Site_M4",
+  "quality": "Epic (3), pool 1000, SP 100, t.MaxFPS 1000, Game View on",
+  "view_mode": "Lit",
+  "lighting": "L_Light_SummerAfternoon: sun 160000.0 lux, sky atmosphere with haze, sky light, height fog, volumetric clouds, fixed exposure (EV 14.64 outdoors, EV 9.0 indoors); 284 fixture lights on, 284 of them casting shadows",
+  "console_variables_for_this_run": {
+   "r.Lumen.HardwareRayTracing.LightingMode": 1
+  },
+  "viewport_pixels": [
+   2038,
+   1198
+  ],
+  "unit_levels_shown": [
+   "NorthPenthouse"
+  ],
+  "site": "default after Phase 7: earlier detailed buildings, new ground, 34 trees leaf-on with wind, far city",
+  "interior_lists": "as saved",
+  "found_before": {
+   "sg.ViewDistanceQuality": 3.0,
+   "sg.AntiAliasingQuality": 3.0,
+   "sg.ShadowQuality": 3.0,
+   "sg.GlobalIlluminationQuality": 3.0,
+   "sg.ReflectionQuality": 3.0,
+   "sg.PostProcessQuality": 3.0,
+   "sg.TextureQuality": 3.0,
+   "sg.EffectsQuality": 3.0,
+   "sg.FoliageQuality": 3.0,
+   "sg.ShadingQuality": 3.0,
+   "sg.LandscapeQuality": 3.0,
+   "r.Streaming.PoolSize": 1000.0,
+   "r.Editor.Viewport.ScreenPercentage": 100.0,
+   "t.MaxFPS": 0.0,
+   "Slate.bAllowThrottling": 1.0,
+   "r.VSync": 0.0,
+   "r.Lumen.HardwareRayTracing.LightingMode": 0.0
+  },
+  "foreground_attempt": {
+   "was": 526454,
+   "front": true
+  }
+ },
+ "method": "final header row; every positive FrameTime row; p95 = value at floor(0.95 * (n - 1))",
+ "jobs": [
+  {
+   "name": "M6_penthouse_path_indoors_first_walk",
+   "kind": "route",
+   "csv": [
+    "Profile(20261113_001735).csv"
+   ],
+   "foreground_fraction": 0.4459308807134894,
+   "recorded_seconds": 20.019718500000636,
+   "tick_ms_mean": 22.31032876432806,
+   "tick_ms_p95": 25.333300232887268,
+   "tick_ms_max": 46.14659771323204,
+   "frames": 897,
+   "columns": 290,
+   "mean_fps": 44.8081409068869,
+   "frames_over_16_667ms": 892,
+   "frames_over_33_333ms": 2,
+   "stats": {
+    "FrameTime": {
+     "mean": 22.31737313266444,
+     "p95": 25.2361,
+     "min": 13.18,
+     "max": 46.1886
+    },
+    "GPUTime": {
+     "mean": 20.803198550724638,
+     "p95": 23.0421,
+     "min": 15.8777,
+     "max": 35.3766
+    },
+    "GameThreadTime": {
+     "mean": 7.34989342251951,
+     "p95": 8.6083,
+     "min": 6.0249,
+     "max": 16.6473
+    },
+    "RenderThreadTime": {
+     "mean": 22.316547268673354,
+     "p95": 25.029,
+     "min": 16.4269,
+     "max": 46.2029
+    },
+    "RHIThreadTime": {
+     "mean": 3.0918199554069123,
+     "p95": 3.4441,
+     "min": 2.5853,
+     "max": 4.0418
+    },
+    "GPUMem/LocalUsedMB": {
+     "mean": 7737.399307692308,
+     "p95": 7773.332,
+     "min": 7611.582,
+     "max": 8046.082
+    },
+    "GPUMem/LocalBudgetMB": {
+     "mean": 15280.0,
+     "p95": 15280.0,
+     "min": 15280.0,
+     "max": 15280.0
+    },
+    "RHI/DrawCalls": {
+     "mean": 5160.060200668896,
+     "p95": 5509.0,
+     "min": 4207.0,
+     "max": 5956.0
+    },
+    "RHI/PrimitivesDrawn": {
+     "mean": 232702.21070234114,
+     "p95": 398417.0,
+     "min": 74210.0,
+     "max": 1042566.0
+    },
+    "TextureStreaming/DesiredDataLoadedPercent": {
+     "mean": 100.0,
+     "p95": 100.0,
+     "min": 100.0,
+     "max": 100.0
+    },
+    "MemoryFreeMB": {
+     "mean": 12827.053383166109,
+     "p95": 12848.4648,
+     "min": 12792.9688,
+     "max": 12852.4922
+    },
+    "PhysicalUsedMB": {
+     "mean": 5089.583247045708,
+     "p95": 5109.043,
+     "min": 5072.293,
+     "max": 5114.7578
+    }
+   },
+   "metadata": {},
+   "copied_to": "M6_penthouse_path_indoors_first_walk.csv.gz",
+   "copied_bytes": 295766
+  },
+  {
+   "name": "M6_penthouse_path_indoors",
+   "kind": "route",
+   "csv": [
+    "Profile(20261113_001805).csv"
+   ],
+   "foreground_fraction": 0.3893905191873589,
+   "recorded_seconds": 20.004377700000077,
+   "tick_ms_mean": 22.572384764593828,
+   "tick_ms_p95": 26.763297617435455,
+   "tick_ms_max": 34.77159887552261,
+   "frames": 886,
+   "columns": 289,
+   "mean_fps": 44.29044677208349,
+   "frames_over_16_667ms": 883,
+   "frames_over_33_333ms": 1,
+   "stats": {
+    "FrameTime": {
+     "mean": 22.578232392776524,
+     "p95": 26.6787,
+     "min": 16.1519,
+     "max": 35.4803
+    },
+    "GPUTime": {
+     "mean": 21.019216027088035,
+     "p95": 24.3606,
+     "min": 15.8583,
+     "max": 33.9656
+    },
+    "GameThreadTime": {
+     "mean": 7.392474830699774,
+     "p95": 8.8267,
+     "min": 5.998,
+     "max": 12.8231
+    },
+    "RenderThreadTime": {
+     "mean": 22.576256546275395,
+     "p95": 26.6374,
+     "min": 17.0646,
+     "max": 35.614
+    },
+    "RHIThreadTime": {
+     "mean": 3.1350618510158013,
+     "p95": 3.5402,
+     "min": 2.6168,
+     "max": 4.3883
+    },
+    "GPUMem/LocalUsedMB": {
+     "mean": 7738.882437358917,
+     "p95": 7780.457,
+     "min": 7611.6445,
+     "max": 8053.207
+    },
+    "GPUMem/LocalBudgetMB": {
+     "mean": 15280.0,
+     "p95": 15280.0,
+     "min": 15280.0,
+     "max": 15280.0
+    },
+    "RHI/DrawCalls": {
+     "mean": 5161.773137697517,
+     "p95": 5506.0,
+     "min": 4207.0,
+     "max": 5956.0
+    },
+    "RHI/PrimitivesDrawn": {
+     "mean": 231832.93115124153,
+     "p95": 393123.0,
+     "min": 74224.0,
+     "max": 1038528.0
+    },
+    "TextureStreaming/DesiredDataLoadedPercent": {
+     "mean": 100.0,
+     "p95": 100.0,
+     "min": 100.0,
+     "max": 100.0
+    },
+    "MemoryFreeMB": {
+     "mean": 12846.158968735892,
+     "p95": 12864.1094,
+     "min": 12799.6328,
+     "max": 12870.1172
+    },
+    "PhysicalUsedMB": {
+     "mean": 5052.643806884876,
+     "p95": 5075.2539,
+     "min": 5037.582,
+     "max": 5091.4531
+    }
+   },
+   "metadata": {},
+   "copied_to": "M6_penthouse_path_indoors.csv.gz",
+   "copied_bytes": 294534
+  },
+  {
+   "name": "M6_hold_D2",
+   "kind": "view",
+   "csv": [
+    "Profile(20261113_001835).csv"
+   ],
+   "foreground_fraction": 0.1713747645951036,
+   "recorded_seconds": 10.001424500000212,
+   "tick_ms_mean": 18.836428623527233,
+   "tick_ms_p95": 20.662199705839157,
+   "tick_ms_max": 26.868898421525955,
+   "frames": 531,
+   "columns": 288,
+   "mean_fps": 53.09385385547769,
+   "frames_over_16_667ms": 522,
+   "frames_over_33_333ms": 0,
+   "stats": {
+    "FrameTime": {
+     "mean": 18.83457175141243,
+     "p95": 20.5874,
+     "min": 11.5963,
+     "max": 26.6769
+    },
+    "GPUTime": {
+     "mean": 17.361059510357816,
+     "p95": 18.3165,
+     "min": 16.4027,
+     "max": 20.157
+    },
+    "GameThreadTime": {
+     "mean": 7.134146892655367,
+     "p95": 8.2579,
+     "min": 5.9913,
+     "max": 14.0276
+    },
+    "RenderThreadTime": {
+     "mean": 18.83097834274953,
+     "p95": 20.3357,
+     "min": 16.0346,
+     "max": 22.1314
+    },
+    "RHIThreadTime": {
+     "mean": 2.9717348399246704,
+     "p95": 3.28,
+     "min": 2.6118,
+     "max": 12.5556
+    },
+    "GPUMem/LocalUsedMB": {
+     "mean": 7650.457,
+     "p95": 7650.457,
+     "min": 7650.457,
+     "max": 7650.457
+    },
+    "GPUMem/LocalBudgetMB": {
+     "mean": 15280.0,
+     "p95": 15280.0,
+     "min": 15280.0,
+     "max": 15280.0
+    },
+    "RHI/DrawCalls": {
+     "mean": 4503.736346516008,
+     "p95": 4528.0,
+     "min": 4486.0,
+     "max": 4599.0
+    },
+    "RHI/PrimitivesDrawn": {
+     "mean": 190691.61393596986,
+     "p95": 217558.0,
+     "min": 182566.0,
+     "max": 283724.0
+    },
+    "TextureStreaming/DesiredDataLoadedPercent": {
+     "mean": 100.0,
+     "p95": 100.0,
+     "min": 100.0,
+     "max": 100.0
+    },
+    "MemoryFreeMB": {
+     "mean": 12832.548244067797,
+     "p95": 12844.4961,
+     "min": 12814.2109,
+     "max": 12847.5234
+    },
+    "PhysicalUsedMB": {
+     "mean": 5077.314773634652,
+     "p95": 5089.7773,
+     "min": 5072.1758,
+     "max": 5098.668
+    }
+   },
+   "metadata": {},
+   "copied_to": "M6_hold_D2.csv.gz",
+   "copied_bytes": 175419
+  }
+ ]
+}

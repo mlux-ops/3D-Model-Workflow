@@ -1,0 +1,209 @@
+{
+ "source_record": "capture_D_path_warm.json",
+ "info": {
+  "engine": "5.9.0-60351404+++UE5+Release-5.9",
+  "level": "/Game/Wieland/R15_Landscape/L_R15_Production",
+  "date": "2026-11-10",
+  "viewport_pixels": [
+   2038,
+   782
+  ],
+  "viewport_fov_deg": 90,
+  "game_view": true,
+  "realtime": true,
+  "frame_cap": "t.MaxFPS 1000, which lifts the editor's 120 frames-per-second ceiling",
+  "path": "fixed exterior path: 84 m in 60 s along the west sidewalk at level Y = -3650, eye at Z = 158.2, from 45 m south of station S1 to 39 m north of it, looking at (-16236.7, -5364.8, 303.2)",
+  "note": "warm repeat of the two Epic passes: the path had already been walked three times in this editor session"
+ },
+ "method": "final header row; every positive FrameTime row; p95 = value at floor(0.95 * (n - 1))",
+ "jobs": [
+  {
+   "name": "path_epic_sp100_warm",
+   "kind": "path",
+   "csv": [
+    "Profile(20261110_225013).csv"
+   ],
+   "foreground_fraction": 0.0,
+   "recorded_seconds": 60.00094710000121,
+   "tick_ms_mean": 7.7801638614208555,
+   "tick_ms_p95": 9.801499545574188,
+   "tick_ms_max": 18.21349933743477,
+   "frames": 7712,
+   "columns": 283,
+   "mean_fps": 128.5319064149523,
+   "frames_over_16_667ms": 3,
+   "frames_over_33_333ms": 0,
+   "stats": {
+    "FrameTime": {
+     "mean": 7.780169359439834,
+     "p95": 9.7284,
+     "min": 3.0922,
+     "max": 17.8654
+    },
+    "GPUTime": {
+     "mean": 6.497992595954357,
+     "p95": 7.0372,
+     "min": 5.8952,
+     "max": 8.2965
+    },
+    "GameThreadTime": {
+     "mean": 4.598005873962656,
+     "p95": 6.4589,
+     "min": 2.839,
+     "max": 13.8157
+    },
+    "RenderThreadTime": {
+     "mean": 0.0008440871369294606,
+     "p95": 0.001,
+     "min": 0.0004,
+     "max": 0.162
+    },
+    "RHIThreadTime": {
+     "mean": 0.1543582598547718,
+     "p95": 0.3781,
+     "min": 0.0656,
+     "max": 2.5452
+    },
+    "GPUMem/LocalUsedMB": {
+     "mean": 5466.614745150415,
+     "p95": 5466.5859,
+     "min": 5466.4609,
+     "max": 5473.4531
+    },
+    "GPUMem/LocalBudgetMB": {
+     "mean": 15280.0,
+     "p95": 15280.0,
+     "min": 15280.0,
+     "max": 15280.0
+    },
+    "RHI/DrawCalls": {
+     "mean": 537.7764522821577,
+     "p95": 629.0,
+     "min": 443.0,
+     "max": 721.0
+    },
+    "RHI/PrimitivesDrawn": {
+     "mean": 96548.56042531121,
+     "p95": 102230.0,
+     "min": 87014.0,
+     "max": 108262.0
+    },
+    "TextureStreaming/DesiredDataLoadedPercent": {
+     "mean": 100.0,
+     "p95": 100.0,
+     "min": 100.0,
+     "max": 100.0
+    },
+    "MemoryFreeMB": {
+     "mean": 6313.444223495851,
+     "p95": 6353.7031,
+     "min": 6271.1875,
+     "max": 6365.5312
+    },
+    "PhysicalUsedMB": {
+     "mean": 3438.35945158195,
+     "p95": 3449.2852,
+     "min": 3428.9961,
+     "max": 3473.9492
+    }
+   },
+   "metadata": {},
+   "copied_to": "path_epic_sp100_warm.csv.gz",
+   "copied_bytes": 2223496
+  },
+  {
+   "name": "path_epic_sp152_warm",
+   "kind": "path",
+   "csv": [
+    "Profile(20261110_225123).csv"
+   ],
+   "foreground_fraction": 0.0,
+   "recorded_seconds": 60.009257999998226,
+   "tick_ms_mean": 10.52997741736452,
+   "tick_ms_p95": 12.641899287700653,
+   "tick_ms_max": 19.907500594854355,
+   "frames": 5699,
+   "columns": 284,
+   "mean_fps": 94.967511271118,
+   "frames_over_16_667ms": 10,
+   "frames_over_33_333ms": 0,
+   "stats": {
+    "FrameTime": {
+     "mean": 10.529916880154413,
+     "p95": 12.6121,
+     "min": 4.1317,
+     "max": 19.378
+    },
+    "GPUTime": {
+     "mean": 9.306792016143184,
+     "p95": 10.1506,
+     "min": 8.2294,
+     "max": 11.6883
+    },
+    "GameThreadTime": {
+     "mean": 4.890557378487454,
+     "p95": 6.5162,
+     "min": 2.8778,
+     "max": 18.3803
+    },
+    "RenderThreadTime": {
+     "mean": 0.0008252851377434637,
+     "p95": 0.001,
+     "min": 0.0004,
+     "max": 0.0668
+    },
+    "RHIThreadTime": {
+     "mean": 0.3204659238462888,
+     "p95": 0.4904,
+     "min": 0.0757,
+     "max": 0.8566
+    },
+    "GPUMem/LocalUsedMB": {
+     "mean": 5475.0156,
+     "p95": 5475.0156,
+     "min": 5475.0156,
+     "max": 5475.0156
+    },
+    "GPUMem/LocalBudgetMB": {
+     "mean": 15280.0,
+     "p95": 15280.0,
+     "min": 15280.0,
+     "max": 15280.0
+    },
+    "RHI/DrawCalls": {
+     "mean": 542.5465871205474,
+     "p95": 632.0,
+     "min": 442.0,
+     "max": 725.0
+    },
+    "RHI/PrimitivesDrawn": {
+     "mean": 129778.09966660818,
+     "p95": 135432.0,
+     "min": 120216.0,
+     "max": 141426.0
+    },
+    "TextureStreaming/DesiredDataLoadedPercent": {
+     "mean": 100.0,
+     "p95": 100.0,
+     "min": 100.0,
+     "max": 100.0
+    },
+    "MemoryFreeMB": {
+     "mean": 6296.571986453763,
+     "p95": 6312.9961,
+     "min": 6237.2461,
+     "max": 6324.0391
+    },
+    "PhysicalUsedMB": {
+     "mean": 3454.7407330057904,
+     "p95": 3462.9609,
+     "min": 3447.1914,
+     "max": 3523.4102
+    }
+   },
+   "metadata": {},
+   "copied_to": "path_epic_sp152_warm.csv.gz",
+   "copied_bytes": 1653863
+  }
+ ]
+}

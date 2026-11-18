@@ -1,0 +1,185 @@
+{
+ "info": {
+  "step": "Phase 9, state C1, part penthouse: MegaLights on by the lighting volume",
+  "level": "/Game/Wieland1529/L_Site_M4.L_Site_M4",
+  "quality": "Epic (3), pool 1000, screen percentage 82, t.MaxFPS 1000, Game View on",
+  "view_mode": "Lit",
+  "lighting": "L_Light_SummerAfternoon: sun 160000.0 lux, sky, haze, fog, clouds, fixed exposure; 284 fixture lights on, 284 of them casting shadows",
+  "console_variables_for_this_run": {
+   "r.Editor.Viewport.ScreenPercentage": 82
+  },
+  "viewport_pixels": [
+   2038,
+   1198
+  ],
+  "unit_levels_shown": [
+   "NorthPenthouse"
+  ],
+  "materials": "Phase 12 active",
+  "found_before": {
+   "sg.ViewDistanceQuality": 3.0,
+   "sg.AntiAliasingQuality": 3.0,
+   "sg.ShadowQuality": 3.0,
+   "sg.GlobalIlluminationQuality": 3.0,
+   "sg.ReflectionQuality": 3.0,
+   "sg.PostProcessQuality": 3.0,
+   "sg.TextureQuality": 3.0,
+   "sg.EffectsQuality": 3.0,
+   "sg.FoliageQuality": 3.0,
+   "sg.ShadingQuality": 3.0,
+   "sg.LandscapeQuality": 3.0,
+   "r.Streaming.PoolSize": 1000.0,
+   "r.Editor.Viewport.ScreenPercentage": 100.0,
+   "t.MaxFPS": 0.0,
+   "Slate.bAllowThrottling": 1.0,
+   "r.VSync": 0.0
+  },
+  "foreground_attempt": {
+   "was": 589846,
+   "front": true
+  }
+ },
+ "started_unix": 1794563462.4580503,
+ "finished_unix": 1794563512.5622003,
+ "warmup_seconds": 8.0,
+ "csv_folder": "D:/Unreal_Engine_Projects/Wieland1527 5.9/Saved/Profiling\\CSV",
+ "error": null,
+ "jobs": [
+  {
+   "name": "C1_penthouse_path_indoors",
+   "kind": "route",
+   "job": {
+    "kind": "route",
+    "name": "C1_penthouse_path_indoors",
+    "points": [
+     [
+      -1050.0,
+      -850.0,
+      1013.4
+     ],
+     [
+      -1000.0,
+      -1000.0,
+      1013.4
+     ],
+     [
+      -1000.0,
+      -2000.0,
+      1013.4
+     ],
+     [
+      -1000.0,
+      -2000.0,
+      1338.6
+     ],
+     [
+      -1000.0,
+      -1250.0,
+      1338.6
+     ],
+     [
+      -960.0,
+      -840.0,
+      1338.6
+     ],
+     [
+      -1000.0,
+      -1250.0,
+      1338.6
+     ]
+    ],
+    "seconds": 20.0,
+    "_yaw": -95.57219780396416
+   },
+   "wall_start_unix": 1794563470.4885309,
+   "recorded_seconds": 20.006247400000575,
+   "ticks": 1102,
+   "foreground_fraction": 1.0,
+   "tick_ms_mean": 18.15054863826549,
+   "tick_ms_p95": 21.859001368284225,
+   "tick_ms_max": 26.44529938697815,
+   "camera_first": {
+    "loc": [
+     -1049.1406396340024,
+     -852.5780810979926,
+     1013.4
+    ],
+    "rot_pitch_yaw_roll": [
+     0.0,
+     -71.56504821777344,
+     0.0
+    ]
+   },
+   "camera_last": {
+    "loc": [
+     -1000.0,
+     -1249.9999999999995,
+     1338.6
+    ],
+    "rot_pitch_yaw_roll": [
+     0.0,
+     -95.57219696044922,
+     0.0
+    ]
+   },
+   "new_csv_files": [
+    "Profile(20261113_035110).csv"
+   ],
+   "tick_ms_series": null
+  },
+  {
+   "name": "C1_hold_D2",
+   "kind": "view",
+   "job": {
+    "kind": "view",
+    "name": "C1_hold_D2",
+    "loc": [
+     -960.0,
+     -840.0,
+     1339.0
+    ],
+    "target": [
+     -1200.0,
+     -330.0,
+     1320.0
+    ],
+    "seconds": 10.0
+   },
+   "wall_start_unix": 1794563500.5279336,
+   "recorded_seconds": 10.00920699999915,
+   "ticks": 622,
+   "foreground_fraction": 1.0,
+   "tick_ms_mean": 16.09394694543728,
+   "tick_ms_p95": 17.13079959154129,
+   "tick_ms_max": 22.8722020983696,
+   "camera_first": {
+    "loc": [
+     -960.0,
+     -840.0,
+     1339.0
+    ],
+    "rot_pitch_yaw_roll": [
+     -1.9306484991808328,
+     115.20112364547508,
+     3.006444230311472e-08
+    ]
+   },
+   "camera_last": {
+    "loc": [
+     -960.0,
+     -840.0,
+     1339.0
+    ],
+    "rot_pitch_yaw_roll": [
+     -1.9306484991808328,
+     115.20112364547508,
+     3.006444230311472e-08
+    ]
+   },
+   "new_csv_files": [
+    "Profile(20261113_035140).csv"
+   ],
+   "tick_ms_series": null
+  }
+ ]
+}

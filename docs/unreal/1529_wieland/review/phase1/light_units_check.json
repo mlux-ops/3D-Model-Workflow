@@ -1,0 +1,41 @@
+{
+ "step": "1.11",
+ "date": "2026-11-10",
+ "engine": "5.9.0-60351404",
+ "level": "/Game/Wieland1529/Scratch/L_P1_LightUnits (saved)",
+ "rig": {
+  "card": "100 x 100 cm plane at the origin, facing up, material /Game/Wieland1529/Scratch/M_P1_Lambert50: base colour 0.5, specular 0, roughness 1",
+  "point_light": "at (0, 0, 100) cm: 1000 lumens, inverse-square falloff, attenuation radius 1000 cm, source radius 0, no shadows, no indirect light, white",
+  "reference_light": "directional light pointing straight down, 1000 lux, white; hidden except during the reference capture",
+  "capture": "SceneCapture2D at (-80, 0, 60) cm aimed at the card centre, 20 degree field of view, source Scene Color (HDR), 128 x 128 float target, global illumination and reflections off; value read at the centre pixel, which is the point directly under the light",
+  "surroundings": "empty level: no sky, no fog, no other light; with every light off the card reads 0"
+ },
+ "raw_centre_pixel_green": {
+  "point_1000lm_at_1m": 12.1875,
+  "point_1000lm_at_2m": 3.03906,
+  "directional_1000lux": 153.375,
+  "all_lights_off": 0.0,
+  "card_base_colour_as_rendered": 0.49535
+ },
+ "expected_lux": {
+  "point_at_1m": 79.577,
+  "point_at_2m": 19.894
+ },
+ "reading_against_reference_light_lux": {
+  "point_at_1m": 79.46,
+  "point_at_2m": 19.81
+ },
+ "reading_assuming_ideal_matte_card_of_0.5_lux": {
+  "point_at_1m": 76.58,
+  "directional_reference": 963.68
+ },
+ "difference_percent": {
+  "point_at_1m_against_reference_light": -0.14,
+  "point_at_1m_assuming_ideal_card": -3.77,
+  "reference_light_assuming_ideal_card": -3.63,
+  "inverse_square_2m_over_1m": -0.26
+ },
+ "note": "Both lights read about 3.7 percent low when the card is assumed to be an ideal matte surface. The shortfall is the same for both, so it belongs to the card: the project draws rough matte surfaces with a model that is slightly darker than the ideal at this viewing angle (r.Substrate.RoughDiffuse is 1). Read against the reference light the point light is 0.15 percent from the expected value.",
+ "tolerance_percent": 10,
+ "result": "pass"
+}
