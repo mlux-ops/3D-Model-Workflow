@@ -1,0 +1,42 @@
+{
+  "schema_version": 1,
+  "operation_id": "a8d3a85a-0b75-4d67-914b-780163b23d42",
+  "status": "failed",
+  "request": {
+    "arguments": {
+      "arguments": {
+        "elements": [
+          "143cc7db-40ad-4d7a-acc4-1565c2e66722-00d0decd",
+          "a90217dd-fa42-44eb-bd0a-2c07a91eab57-00c87ad1",
+          "e73ded64-5f20-4863-86c8-288dfb7ac93a-00d78191"
+        ]
+      },
+      "assembly": "C:/ProgramData/CodexNativeRevit/plugins/belmont_window_trim/BelmontBedroomTrimInspect.dll",
+      "expected_changes": [],
+      "purpose": "Read complete primary-bedroom trim face loops for installer elevation, including bottom rails. No edits or exports.",
+      "type": "BedroomTrimInspect"
+    },
+    "document": {
+      "path": "Autodesk Docs://25 012 - 651 W. Belmont/25-012 651 W. Belmont_Issue for Construction_.rvt",
+      "session_id": "757b186f-3d69-41f0-8a59-587e86130d17"
+    },
+    "operation": "compiled.query",
+    "operation_id": "a8d3a85a-0b75-4d67-914b-780163b23d42",
+    "preconditions": {
+      "expected_title": "25-012 651 W. Belmont_Issue for Construction_",
+      "is_family": false
+    },
+    "schema_version": 1
+  },
+  "result": null,
+  "error": {
+    "code": "NotSupportedException",
+    "message": "Trusted compiled execution disabled. Configure CODEX_REVIT_PLUGIN_DIR explicitly.",
+    "details": null
+  },
+  "cancel_requested": false,
+  "created_utc": "2026-11-19T21:31:52.4255310Z",
+  "finished_utc": "2026-11-19T21:31:52.4311214Z",
+  "elapsed_ms": 1.2973,
+  "transaction_status": "not_started"
+}

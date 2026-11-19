@@ -1,0 +1,21 @@
+BELMONT SCOPED GEOMETRY CHECK | 2026-11-17 | DRAFT, NOT ORDER-READY
+No model writes, saves, synchronization or correspondence.
+
+Scope: Unit 3, fourth-floor primary bedroom 403, window-adaptation area only.
+1. Added decorative panel-border trim: 16.583333 LF total.
+   Two lower pieces at 1.53838580675 LF each; two upper pieces at 6.75328085992 LF each.
+   Modeled face width 0.5 inch; modeled extrusion depth 0.7890625 inch.
+   Model element 14123409, unique ID e73ded64-5f20-4863-86c8-288dfb7ac93a-00d78191.
+   Method: native editable extrusion profile vertex coordinates in archived cut_family_arguments.json and cut_family_geometry.json, verified against current instance solid volumes and face areas.
+   Current geometry receipt: 1490402a-20bf-407f-8513-95d8b8888a7e.
+   This is four added closure strips only, not the entire feature wall. No waste or stock rounding.
+
+2. Baseboard run 13285841: raw scheduled Length 4.781260 LF, modeled net material length 1.781260 LF; difference 3.000000 LF.
+   Profile: 8-inch height x 5/8-inch thickness.
+   Independent checks: current front-face area 1.18750666666633 SF / (8/12 ft) = 1.781260 LF; current volume 0.06184930555554 CF / ((8/12)*(5/96) SF) = 1.781260 LF.
+   Geometry receipt: 59688105-755d-445b-b240-562cce50fc8d.
+   Current raw Length receipt: 40448dbb-94d0-435f-91f2-b5a3f11aa581.
+   This single run proves raw scheduled Length does not deduct its 3-foot window opening. Do not apply a blanket correction to other runs or label whole-building totals net.
+
+Release holds: full-room decorative trim and remaining base/crown runs are not measured here; resolve 8-inch modeled baseboard versus 5-inch elevation callout; determine approved scope/revision. Unit 1/2 bedroom and living/dining quantities remain unverified. Do not add the audited baseboard run to the earlier 2,014.282 LF inventory: it is already included there.
+Historical adaptation_plan_v6.json was a proposal, not the final as-built geometry. Final cut_native_commit.json records the different void-cut/closure approach. Historical baseboard volume differs slightly from current regenerated volume; the current figures above govern this check.

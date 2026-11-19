@@ -1,0 +1,177 @@
+{
+  "schema_version": 1,
+  "operation_id": "03d8cb1c-d41e-4eac-9143-8476fc968adc",
+  "status": "completed",
+  "request": {
+    "arguments": {
+      "element": "03b18851-c9c1-4154-9d95-0628150e545d-00cd6aec",
+      "geometry": true
+    },
+    "document": {
+      "path": "Autodesk Docs://25 012 - 651 W. Belmont/25-012 651 W. Belmont_Issue for Construction_.rvt",
+      "session_id": "7a093a5a-3506-42e7-89c1-e58570374c96"
+    },
+    "operation": "elements.inspect",
+    "operation_id": "03d8cb1c-d41e-4eac-9143-8476fc968adc",
+    "preconditions": {
+      "allow_existing_document": true,
+      "expected_title": "25-012 651 W. Belmont_Issue for Construction_",
+      "is_family": false
+    },
+    "schema_version": 1
+  },
+  "result": {
+    "element": {
+      "document_session_id": "7a093a5a-3506-42e7-89c1-e58570374c96",
+      "id": 13462252,
+      "unique_id": "03b18851-c9c1-4154-9d95-0628150e545d-00cd6aec",
+      "name": "Casework 49",
+      "category": "Casework",
+      "category_id": -2001000,
+      "type_id": 13462250,
+      "pinned": false,
+      "group_id": -1,
+      "level_id": -1,
+      "location": {
+        "point": [
+          0,
+          0,
+          0
+        ],
+        "rotation_radians": 0
+      },
+      "bounds": {
+        "min": [
+          94.43373190965927,
+          -55.752831266419186,
+          46.749999999999986
+        ],
+        "max": [
+          106.87123190965931,
+          -55.690331266419186,
+          47
+        ]
+      },
+      "host_id": null,
+      "family_name": null,
+      "placement_type": null,
+      "view_family": null,
+      "view_type": null,
+      "elevation": null
+    },
+    "dependent_ids": [
+      13462163,
+      13462164,
+      13462250,
+      13462251,
+      13462252
+    ],
+    "phase_created_id": 110001,
+    "phase_demolished_id": -1,
+    "design_option": null,
+    "workset_id": 8661,
+    "editable": true,
+    "transform": {
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "basis_x": [
+        1,
+        0,
+        0
+      ],
+      "basis_y": [
+        0,
+        1,
+        0
+      ],
+      "basis_z": [
+        0,
+        0,
+        1
+      ]
+    },
+    "geometry": [
+      {
+        "kind": "solid",
+        "volume": 0,
+        "faces": 0,
+        "edges": 0
+      },
+      {
+        "kind": "solid",
+        "volume": 0.19433593750001166,
+        "faces": 6,
+        "edges": 11
+      },
+      {
+        "kind": "face",
+        "area": 3.1093750000001874,
+        "reference": "03b18851-c9c1-4154-9d95-0628150e545d-00cd6aea:9:SURFACE",
+        "normal": [
+          0,
+          -1,
+          0
+        ]
+      },
+      {
+        "kind": "face",
+        "area": 3.1093750000001874,
+        "reference": "03b18851-c9c1-4154-9d95-0628150e545d-00cd6aea:14:SURFACE",
+        "normal": [
+          0,
+          1,
+          0
+        ]
+      },
+      {
+        "kind": "face",
+        "area": 0.015625000000000888,
+        "reference": "03b18851-c9c1-4154-9d95-0628150e545d-00cd6aea:19:SURFACE",
+        "normal": [
+          -1,
+          0,
+          0
+        ]
+      },
+      {
+        "kind": "face",
+        "area": 0.7773437500000027,
+        "reference": "03b18851-c9c1-4154-9d95-0628150e545d-00cd6aea:22:SURFACE",
+        "normal": [
+          0,
+          0,
+          1
+        ]
+      },
+      {
+        "kind": "face",
+        "area": 0.015625000000000888,
+        "reference": "03b18851-c9c1-4154-9d95-0628150e545d-00cd6aea:24:SURFACE",
+        "normal": [
+          1,
+          0,
+          0
+        ]
+      },
+      {
+        "kind": "face",
+        "area": 0.7773437500000027,
+        "reference": "03b18851-c9c1-4154-9d95-0628150e545d-00cd6aea:26:SURFACE",
+        "normal": [
+          0,
+          0,
+          -1
+        ]
+      }
+    ]
+  },
+  "error": null,
+  "cancel_requested": false,
+  "created_utc": "2026-11-17T18:04:08.6778253Z",
+  "finished_utc": "2026-11-17T18:05:46.7574622Z",
+  "elapsed_ms": 88.9016,
+  "transaction_status": "not_started"
+}

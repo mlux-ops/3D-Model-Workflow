@@ -1,0 +1,56 @@
+{
+  "schema_version": 1,
+  "operation_id": "56cbbf7d-a69f-4baf-b10a-56b8c3f3a28c",
+  "status": "completed",
+  "request": {
+    "arguments": {
+      "class": "ProjectInfo",
+      "limit": 10
+    },
+    "document": {
+      "path": "Autodesk Docs://25 012 - 651 W. Belmont/25-012 651 W. Belmont_Issue for Construction_.rvt",
+      "session_id": "7a093a5a-3506-42e7-89c1-e58570374c96"
+    },
+    "operation": "elements.query",
+    "operation_id": "56cbbf7d-a69f-4baf-b10a-56b8c3f3a28c",
+    "preconditions": {
+      "allow_existing_document": true,
+      "expected_title": "25-012 651 W. Belmont_Issue for Construction_",
+      "is_family": false
+    },
+    "schema_version": 1
+  },
+  "result": {
+    "items": [
+      {
+        "document_session_id": "7a093a5a-3506-42e7-89c1-e58570374c96",
+        "id": 69280,
+        "unique_id": "ecc8a882-7d85-4169-83b7-590c3dbd484b-00010ea0",
+        "name": "Project Information",
+        "category": "Project Information",
+        "category_id": -2003101,
+        "type_id": -1,
+        "pinned": false,
+        "group_id": -1,
+        "level_id": -1,
+        "location": null,
+        "bounds": null,
+        "host_id": null,
+        "family_name": null,
+        "placement_type": null,
+        "view_family": null,
+        "view_type": null,
+        "elevation": null
+      }
+    ],
+    "offset": 0,
+    "next_offset": null,
+    "units": "internal feet"
+  },
+  "error": null,
+  "cancel_requested": false,
+  "created_utc": "2026-11-17T18:02:42.9776936Z",
+  "finished_utc": "2026-11-17T18:02:43.0277508Z",
+  "elapsed_ms": 46.224,
+  "transaction_status": "not_started"
+}

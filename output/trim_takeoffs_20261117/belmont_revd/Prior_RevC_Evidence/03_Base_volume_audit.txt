@@ -1,0 +1,36 @@
+ALL-BELMONT BASEBOARD VOLUME AUDIT | 2026-11-17
+DRAFT QA METRIC, NOT VERIFIED NET CUT LENGTH OR PURCHASING QUANTITY
+
+201/201 current Baseboard WallSweep elements successfully inspected. Unique IDs and IDs are unique. All type 13053468, phase 110001, no demolition phase or design option. Revalidated profile 13053460: height 8in, thickness 5/8in, rectangular section 0.03472222222222225 SF.
+Sum of positive/zero modeled solid volumes: 49.020429795 CF.
+Volume-equivalent LF (volume / rectangular section): 1411.788378 LF.
+Earlier same-day raw scheduled Length total: 2014.282279 LF.
+Difference: 602.493901 LF.
+This is not a blanket opening deduction or an order quantity. Partial-height cuts, miters, missing geometry, overlap, joins and model coverage still require reconciliation. Volumes are summed by distinct element, not spatially unioned. Full geometry completeness is not established by a successful query.
+
+ZERO VOLUME: 9 elements; prior scheduled lengths total 42.922537 LF.
+IDs: 13685402, 13685404, 13685478, 13685504, 13685567, 13688094, 13688112, 13688122, 13688130.
+Treat these as investigation holds, not proven zero required trim.
+Warnings: 6 returned records, 4 unique warning/element pairs involving base IDs [13285815, 13685480, 13688012, 13688014]; messages are Elements do not intersect or Highlighted elements are joined but do not intersect. Revit warnings do not detect all overlap/missing-scope cases.
+
+Largest raw/equivalent discrepancies:
+  ID 13052981: raw 165.281, equivalent 114.408 LF; provisional Z band 1ST FLOOR
+  ID 13129243: raw 81.281, equivalent 44.591 LF; provisional Z band 3RD FLOOR
+  ID 13687946: raw 59.406, equivalent 33.299 LF; provisional Z band BASEMENT
+  ID 13688097: raw 26.827, equivalent 4.660 LF; provisional Z band 1ST FLOOR
+  ID 13687942: raw 29.302, equivalent 12.172 LF; provisional Z band BASEMENT
+  ID 13687944: raw 29.698, equivalent 12.620 LF; provisional Z band BASEMENT
+  ID 13685514: raw 26.827, equivalent 12.251 LF; provisional Z band 2ND FLOOR
+  ID 13685508: raw 16.525, equivalent 3.025 LF; provisional Z band 2ND FLOOR
+  ID 13685506: raw 16.921, equivalent 3.447 LF; provisional Z band 2ND FLOOR
+  ID 13685462: raw 18.292, equivalent 6.573 LF; provisional Z band 2ND FLOOR
+
+Z-band summaries (NOT verified room/unit allocation):
+  1ST FLOOR: 35 elements; equivalent 266.942418 LF
+  2ND FLOOR: 48 elements; equivalent 295.945164 LF
+  3RD FLOOR: 13 elements; equivalent 107.630985 LF
+  4TH FLOOR: 45 elements; equivalent 301.305381 LF
+  BASEMENT: 58 elements; equivalent 419.485263 LF
+  T/ ROOF.: 2 elements; equivalent 20.479167 LF
+
+Release holds: approved 8in versus drawing 5in profile; current drawing revision; zero geometry and join warnings; all opening deductions, partial cuts, overlap and missing trim; verified room/unit assignment; separate waste/stock lengths. Decorative trim and crown excluded. No model change/save/sync; final is_modified=false. Source receipts in base_receipts; summary JSON records profile, warning and final context operations.

@@ -1,0 +1,35 @@
+{
+  "schema_version": 1,
+  "operation_id": "d0f4e54d-7777-41d0-83d3-694887dd378e",
+  "status": "completed",
+  "request": {
+    "arguments": {
+      "limit": 500,
+      "name_contains": "crown"
+    },
+    "document": {
+      "path": "Autodesk Docs://25-006 1527 N Wieland St/25-006 1527 N Wieland.rvt",
+      "session_id": "2124f156-2c96-4910-bbce-1a077c06505d"
+    },
+    "operation": "elements.query",
+    "operation_id": "d0f4e54d-7777-41d0-83d3-694887dd378e",
+    "preconditions": {
+      "allow_existing_document": true,
+      "expected_title": "25-006 1527 N Wieland",
+      "is_family": false
+    },
+    "schema_version": 1
+  },
+  "result": {
+    "items": [],
+    "offset": 0,
+    "next_offset": null,
+    "units": "internal feet"
+  },
+  "error": null,
+  "cancel_requested": false,
+  "created_utc": "2026-11-17T18:02:50.5867200Z",
+  "finished_utc": "2026-11-17T18:02:51.2761686Z",
+  "elapsed_ms": 685.9416,
+  "transaction_status": "not_started"
+}

@@ -1,0 +1,35 @@
+{
+  "schema_version": 1,
+  "operation_id": "17f08202-4c0b-42dc-b715-c987603888e2",
+  "status": "completed",
+  "request": {
+    "arguments": {
+      "class": "Extrusion",
+      "limit": 500
+    },
+    "document": {
+      "path": "Autodesk Docs://25-006 1527 N Wieland St/25-006 1527 N Wieland.rvt",
+      "session_id": "2124f156-2c96-4910-bbce-1a077c06505d"
+    },
+    "operation": "elements.query",
+    "operation_id": "17f08202-4c0b-42dc-b715-c987603888e2",
+    "preconditions": {
+      "allow_existing_document": true,
+      "expected_title": "25-006 1527 N Wieland",
+      "is_family": false
+    },
+    "schema_version": 1
+  },
+  "result": {
+    "items": [],
+    "offset": 0,
+    "next_offset": null,
+    "units": "internal feet"
+  },
+  "error": null,
+  "cancel_requested": false,
+  "created_utc": "2026-11-17T18:06:52.7779064Z",
+  "finished_utc": "2026-11-17T18:06:52.8129973Z",
+  "elapsed_ms": 31.2426,
+  "transaction_status": "not_started"
+}

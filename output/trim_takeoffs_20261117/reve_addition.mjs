@@ -1,0 +1,23 @@
+sh=s('Added dining scope');setup(sh,'Owner-directed additions: Simplex and Penthouse',[31,24,24,55],38);
+row(sh,4,['Owner direction Nov17: same applied trim-wall style as duplex dining. Not identical dimensions.']);
+head(sh,6,['Added location','Wall reference','Additional net LF','Required measurement / layout']);
+row(sh,7,['Simplex dining','A2.5 / 2nd-floor plan','NOT DETERMINED','Confirm exact dining wall limits and openings; finished width and usable height.']);
+row(sh,8,['Penthouse entry-right','A2.65 / 3rd-floor plan','NOT DETERMINED','Locate full-height face across dining windows; distinguish stair guard and enclosure.']);
+sh.getRange('A7:D8').format.wrapText=true;sh.getRange('A7:D8').format.rowHeight=62;
+row(sh,10,['Observed reference dimensions, not new trim quantities']);
+row(sh,11,['Simplex apparent exterior dining wall: plan chain 8ft9in + 4ft8.5in = 13ft5.5in reference span.']);
+row(sh,12,['Do not use as uninterrupted finished face: wall thickness, north window and exact selected face matter.']);
+row(sh,13,['Penthouse opposite dining windows: open stair guard and adjacent pantry/HVAC enclosure with door.']);
+row(sh,14,['Candidate enclosure front wall4881744 native length4.65625ft; not a trim run or confirmed selected wall.']);
+row(sh,15,['Its plan reference width4ft7.25in differs from wall centerline4ft7.875in. Neither is net casing-clear width.']);
+row(sh,17,['DRAFT MEASUREMENT BUILD. Complete separately for each wall; blank inputs are not zero scope.']);
+head(sh,18,['Input / result','Simplex','Penthouse','Basis']);
+const inputs=[['Frame columns',null,null,'Not copied from duplex without wall fit.'],['Sum of outer widths in',null,null,'Sum across one row, excluding gaps and end margins.'],['Upper outer height in',null,null,'Duplex reference73.75in; new wall fit unverified.'],['Lower outer height in',null,null,'Duplex reference17in; new wall fit unverified.'],['Corner basis','ASSUMED MITER','ASSUMED MITER','Four distinct pieces per outline; no shared grid.'],['Draft piece count',null,null,'8 per column for two closed rectangular rows.'],['Draft long-point LF',null,null,'4 x sum widths + 2 x columns x sum heights, divided by12.']];
+inputs.forEach((a,i)=>row(sh,19+i,a));sh.getRange('A19:D25').format.wrapText=true;sh.getRange('A19:D25').format.rowHeight=45;sh.getRange('B19:C22').format.fill='#FFF1D2';
+for(const c of ['B','C']){sh.getRange(c+'24').formulas=[[`=IF(COUNT(${c}19:${c}22)<4,"HOLD",8*${c}19)`]];sh.getRange(c+'25').formulas=[[`=IF(COUNT(${c}19:${c}22)<4,"HOLD",(4*${c}20+2*${c}19*(${c}21+${c}22))/12)`]];}
+row(sh,27,['Formula excludes base/crown, slat walls/doors, casing, horizontal separator rail, returns and waste.']);
+row(sh,28,['If crown substitutes upper top rails, deduct sum of outer widths/12. Do not count those rails twice.']);
+row(sh,29,['If butt joints: actual finished face width and join orientation are needed before net pieces.']);
+row(sh,30,['No added-wall numeric LF included in RevE totals. This is a scope addition, not a zero quantity.']);
+row(sh,32,['Sources: existing live plan views4948502,4961593, wall4881744 read Nov17; native exports included.']);
+row(sh,33,['Current 8in base and 3in crown direction remains unchanged. Do not multiply duplex104.5LF by3.']);

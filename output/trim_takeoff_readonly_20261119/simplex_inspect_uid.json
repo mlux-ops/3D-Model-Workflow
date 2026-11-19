@@ -1,0 +1,815 @@
+{
+  "schema_version": 1,
+  "operation_id": "57ee69a2-46e3-43a0-b08f-2daf15590b6b",
+  "status": "completed",
+  "request": {
+    "arguments": {
+      "element": "143cc7db-40ad-4d7a-acc4-1565c2e66722-00d0decd",
+      "geometry": true
+    },
+    "document": {
+      "path": "Autodesk Docs://25 012 - 651 W. Belmont/25-012 651 W. Belmont_Issue for Construction_.rvt",
+      "session_id": "757b186f-3d69-41f0-8a59-587e86130d17"
+    },
+    "operation": "elements.inspect",
+    "operation_id": "57ee69a2-46e3-43a0-b08f-2daf15590b6b",
+    "preconditions": {
+      "expected_title": "25-012 651 W. Belmont_Issue for Construction_",
+      "is_family": false
+    },
+    "schema_version": 1
+  },
+  "result": {
+    "element": {
+      "document_session_id": "757b186f-3d69-41f0-8a59-587e86130d17",
+      "id": 13688525,
+      "unique_id": "143cc7db-40ad-4d7a-acc4-1565c2e66722-00d0decd",
+      "name": "Simplex primary bed wall - matched penthouse panel trim",
+      "category": "Casework",
+      "category_id": -2001000,
+      "type_id": -1,
+      "pinned": false,
+      "group_id": -1,
+      "level_id": -1,
+      "location": null,
+      "bounds": {
+        "min": [
+          91.95873190965905,
+          -55.75608647475384,
+          17
+        ],
+        "max": [
+          106.90873190965934,
+          -55.69033126642015,
+          25.14583333333334
+        ]
+      },
+      "host_id": null,
+      "family_name": null,
+      "placement_type": null,
+      "view_family": null,
+      "view_type": null,
+      "elevation": null
+    },
+    "dependent_ids": [
+      13688525,
+      13717641
+    ],
+    "phase_created_id": 110001,
+    "phase_demolished_id": -1,
+    "design_option": null,
+    "workset_id": 8661,
+    "editable": true,
+    "transform": null,
+    "geometry": [
+      {
+        "kind": "solid",
+        "volume": 0.22822787044819004,
+        "faces": 22,
+        "edges": 60
+      },
+      {
+        "kind": "face",
+        "area": 21.90987556228397,
+        "reference": "143cc7db-40ad-4d7a-acc4-1565c2e66722-00d0decd:0:1:SURFACE",
+        "normal": [
+          0,
+          -1,
+          0
+        ]
+      },
+      {
+        "kind": "face",
+        "area": 21.909875562283965,
+        "reference": "143cc7db-40ad-4d7a-acc4-1565c2e66722-00d0decd:0:22:SURFACE",
+        "normal": [
+          0,
+          1,
+          0
+        ]
+      },
+      {
+        "kind": "face",
+        "area": 0.024005279774390147,
+        "reference": "143cc7db-40ad-4d7a-acc4-1565c2e66722-00d0decd:0:43:SURFACE",
+        "normal": [
+          0,
+          0,
+          1
+        ]
+      },
+      {
+        "kind": "face",
+        "area": 0.015509200970994324,
+        "reference": "143cc7db-40ad-4d7a-acc4-1565c2e66722-00d0decd:0:45:SURFACE",
+        "normal": [
+          -1,
+          0,
+          0
+        ]
+      },
+      {
+        "kind": "face",
+        "area": 0.024005279774390147,
+        "reference": "143cc7db-40ad-4d7a-acc4-1565c2e66722-00d0decd:0:47:SURFACE",
+        "normal": [
+          0,
+          0,
+          -1
+        ]
+      },
+      {
+        "kind": "face",
+        "area": 0.015509200970994324,
+        "reference": "143cc7db-40ad-4d7a-acc4-1565c2e66722-00d0decd:0:49:SURFACE",
+        "normal": [
+          1,
+          0,
+          0
+        ]
+      },
+      {
+        "kind": "face",
+        "area": 0.018309111692331338,
+        "reference": "143cc7db-40ad-4d7a-acc4-1565c2e66722-00d0decd:0:51:SURFACE",
+        "normal": [
+          0,
+          0,
+          1
+        ]
+      },
+      {
+        "kind": "face",
+        "area": 0.015509200970994359,
+        "reference": "143cc7db-40ad-4d7a-acc4-1565c2e66722-00d0decd:0:53:SURFACE",
+        "normal": [
+          -1,
+          0,
+          0
+        ]
+      },
+      {
+        "kind": "face",
+        "area": 0.018309111692331338,
+        "reference": "143cc7db-40ad-4d7a-acc4-1565c2e66722-00d0decd:0:55:SURFACE",
+        "normal": [
+          0,
+          0,
+          -1
+        ]
+      },
+      {
+        "kind": "face",
+        "area": 0.015509200970994359,
+        "reference": "143cc7db-40ad-4d7a-acc4-1565c2e66722-00d0decd:0:57:SURFACE",
+        "normal": [
+          1,
+          0,
+          0
+        ]
+      },
+      {
+        "kind": "face",
+        "area": 0.06876088613340901,
+        "reference": "143cc7db-40ad-4d7a-acc4-1565c2e66722-00d0decd:0:59:SURFACE",
+        "normal": [
+          0,
+          0,
+          1
+        ]
+      },
+      {
+        "kind": "face",
+        "area": 0.015509200970994286,
+        "reference": "143cc7db-40ad-4d7a-acc4-1565c2e66722-00d0decd:0:61:SURFACE",
+        "normal": [
+          -1,
+          0,
+          0
+        ]
+      },
+      {
+        "kind": "face",
+        "area": 0.06876088613340901,
+        "reference": "143cc7db-40ad-4d7a-acc4-1565c2e66722-00d0decd:0:63:SURFACE",
+        "normal": [
+          0,
+          0,
+          -1
+        ]
+      },
+      {
+        "kind": "face",
+        "area": 0.015509200970994286,
+        "reference": "143cc7db-40ad-4d7a-acc4-1565c2e66722-00d0decd:0:65:SURFACE",
+        "normal": [
+          1,
+          0,
+          0
+        ]
+      },
+      {
+        "kind": "face",
+        "area": 0.018715980840985198,
+        "reference": "143cc7db-40ad-4d7a-acc4-1565c2e66722-00d0decd:0:67:SURFACE",
+        "normal": [
+          0,
+          0,
+          1
+        ]
+      },
+      {
+        "kind": "face",
+        "area": 0.015509200970994324,
+        "reference": "143cc7db-40ad-4d7a-acc4-1565c2e66722-00d0decd:0:69:SURFACE",
+        "normal": [
+          -1,
+          0,
+          0
+        ]
+      },
+      {
+        "kind": "face",
+        "area": 0.018715980840985198,
+        "reference": "143cc7db-40ad-4d7a-acc4-1565c2e66722-00d0decd:0:71:SURFACE",
+        "normal": [
+          0,
+          0,
+          -1
+        ]
+      },
+      {
+        "kind": "face",
+        "area": 0.015509200970994324,
+        "reference": "143cc7db-40ad-4d7a-acc4-1565c2e66722-00d0decd:0:73:SURFACE",
+        "normal": [
+          1,
+          0,
+          0
+        ]
+      },
+      {
+        "kind": "face",
+        "area": 0.02349669333852434,
+        "reference": "143cc7db-40ad-4d7a-acc4-1565c2e66722-00d0decd:0:75:SURFACE",
+        "normal": [
+          0,
+          0,
+          1
+        ]
+      },
+      {
+        "kind": "face",
+        "area": 0.015509200970994324,
+        "reference": "143cc7db-40ad-4d7a-acc4-1565c2e66722-00d0decd:0:77:SURFACE",
+        "normal": [
+          -1,
+          0,
+          0
+        ]
+      },
+      {
+        "kind": "face",
+        "area": 0.02349669333852434,
+        "reference": "143cc7db-40ad-4d7a-acc4-1565c2e66722-00d0decd:0:79:SURFACE",
+        "normal": [
+          0,
+          0,
+          -1
+        ]
+      },
+      {
+        "kind": "face",
+        "area": 0.015509200970994324,
+        "reference": "143cc7db-40ad-4d7a-acc4-1565c2e66722-00d0decd:0:81:SURFACE",
+        "normal": [
+          1,
+          0,
+          0
+        ]
+      },
+      {
+        "kind": "solid",
+        "volume": 0.2593771055917909,
+        "faces": 51,
+        "edges": 146
+      },
+      {
+        "kind": "face",
+        "area": 3.9445864770972436,
+        "reference": "143cc7db-40ad-4d7a-acc4-1565c2e66722-00d0decd:83:84:SURFACE",
+        "normal": [
+          0,
+          -1,
+          0
+        ]
+      },
+      {
+        "kind": "face",
+        "area": 3.944586477097256,
+        "reference": "143cc7db-40ad-4d7a-acc4-1565c2e66722-00d0decd:83:134:SURFACE",
+        "normal": [
+          0,
+          1,
+          0
+        ]
+      },
+      {
+        "kind": "face",
+        "area": 0.9830403645886989,
+        "reference": "143cc7db-40ad-4d7a-acc4-1565c2e66722-00d0decd:83:184:SURFACE",
+        "normal": [
+          0,
+          0,
+          1
+        ]
+      },
+      {
+        "kind": "face",
+        "area": 0.5356309678848581,
+        "reference": "143cc7db-40ad-4d7a-acc4-1565c2e66722-00d0decd:83:186:SURFACE",
+        "normal": [
+          -1,
+          0,
+          0
+        ]
+      },
+      {
+        "kind": "face",
+        "area": 0.9830403645886989,
+        "reference": "143cc7db-40ad-4d7a-acc4-1565c2e66722-00d0decd:83:188:SURFACE",
+        "normal": [
+          0,
+          0,
+          -1
+        ]
+      },
+      {
+        "kind": "face",
+        "area": 0.5356309678848581,
+        "reference": "143cc7db-40ad-4d7a-acc4-1565c2e66722-00d0decd:83:190:SURFACE",
+        "normal": [
+          1,
+          0,
+          0
+        ]
+      },
+      {
+        "kind": "face",
+        "area": 0.15153332857152915,
+        "reference": "143cc7db-40ad-4d7a-acc4-1565c2e66722-00d0decd:83:192:SURFACE",
+        "normal": [
+          0,
+          0,
+          -1
+        ]
+      },
+      {
+        "kind": "face",
+        "area": 0.42977422139361504,
+        "reference": "143cc7db-40ad-4d7a-acc4-1565c2e66722-00d0decd:83:194:SURFACE",
+        "normal": [
+          -1,
+          0,
+          2.174252586318117e-15
+        ]
+      },
+      {
+        "kind": "face",
+        "area": 0.15153332857152824,
+        "reference": "143cc7db-40ad-4d7a-acc4-1565c2e66722-00d0decd:83:196:SURFACE",
+        "normal": [
+          3.0832745548674466e-15,
+          0,
+          1
+        ]
+      },
+      {
+        "kind": "face",
+        "area": 0.4297742213936146,
+        "reference": "143cc7db-40ad-4d7a-acc4-1565c2e66722-00d0decd:83:198:SURFACE",
+        "normal": [
+          1,
+          0,
+          0
+        ]
+      },
+      {
+        "kind": "face",
+        "area": 0.14832287669482416,
+        "reference": "143cc7db-40ad-4d7a-acc4-1565c2e66722-00d0decd:83:200:SURFACE",
+        "normal": [
+          3.150012099349103e-15,
+          0,
+          1
+        ]
+      },
+      {
+        "kind": "face",
+        "area": 0.42977422139361415,
+        "reference": "143cc7db-40ad-4d7a-acc4-1565c2e66722-00d0decd:83:202:SURFACE",
+        "normal": [
+          1,
+          0,
+          2.1742525863181216e-15
+        ]
+      },
+      {
+        "kind": "face",
+        "area": 0.1483228766948251,
+        "reference": "143cc7db-40ad-4d7a-acc4-1565c2e66722-00d0decd:83:204:SURFACE",
+        "normal": [
+          -1.5750060496745417e-15,
+          0,
+          -1
+        ]
+      },
+      {
+        "kind": "face",
+        "area": 0.4297742213936143,
+        "reference": "143cc7db-40ad-4d7a-acc4-1565c2e66722-00d0decd:83:206:SURFACE",
+        "normal": [
+          -1,
+          0,
+          0
+        ]
+      },
+      {
+        "kind": "face",
+        "area": 0.21831072760298073,
+        "reference": "143cc7db-40ad-4d7a-acc4-1565c2e66722-00d0decd:83:208:SURFACE",
+        "normal": [
+          0,
+          0,
+          -1
+        ]
+      },
+      {
+        "kind": "face",
+        "area": 0.429774221393616,
+        "reference": "143cc7db-40ad-4d7a-acc4-1565c2e66722-00d0decd:83:210:SURFACE",
+        "normal": [
+          -1,
+          0,
+          0
+        ]
+      },
+      {
+        "kind": "face",
+        "area": 0.21831072760298165,
+        "reference": "143cc7db-40ad-4d7a-acc4-1565c2e66722-00d0decd:83:212:SURFACE",
+        "normal": [
+          2.140155279261595e-15,
+          0,
+          1
+        ]
+      },
+      {
+        "kind": "face",
+        "area": 0.42977422139361554,
+        "reference": "143cc7db-40ad-4d7a-acc4-1565c2e66722-00d0decd:83:214:SURFACE",
+        "normal": [
+          1,
+          0,
+          -2.1742525863181145e-15
+        ]
+      },
+      {
+        "kind": "face",
+        "area": 0.429774221393616,
+        "reference": "143cc7db-40ad-4d7a-acc4-1565c2e66722-00d0decd:83:216:SURFACE",
+        "normal": [
+          1,
+          0,
+          0
+        ]
+      },
+      {
+        "kind": "face",
+        "area": 0.21317400460055608,
+        "reference": "143cc7db-40ad-4d7a-acc4-1565c2e66722-00d0decd:83:218:SURFACE",
+        "normal": [
+          0,
+          0,
+          -1
+        ]
+      },
+      {
+        "kind": "face",
+        "area": 0.42977422139361365,
+        "reference": "143cc7db-40ad-4d7a-acc4-1565c2e66722-00d0decd:83:220:SURFACE",
+        "normal": [
+          -1,
+          0,
+          -2.174252586318124e-15
+        ]
+      },
+      {
+        "kind": "face",
+        "area": 0.012498011123141115,
+        "reference": "143cc7db-40ad-4d7a-acc4-1565c2e66722-00d0decd:83:222:SURFACE",
+        "normal": [
+          0,
+          0,
+          1
+        ]
+      },
+      {
+        "kind": "face",
+        "area": 0.20067599347741588,
+        "reference": "143cc7db-40ad-4d7a-acc4-1565c2e66722-00d0decd:83:224:SURFACE",
+        "normal": [
+          -1.1641124782859046e-14,
+          0,
+          1
+        ]
+      },
+      {
+        "kind": "face",
+        "area": 0.11557626755455461,
+        "reference": "143cc7db-40ad-4d7a-acc4-1565c2e66722-00d0decd:83:226:SURFACE",
+        "normal": [
+          0,
+          0,
+          -1
+        ]
+      },
+      {
+        "kind": "face",
+        "area": 0.42977422139361554,
+        "reference": "143cc7db-40ad-4d7a-acc4-1565c2e66722-00d0decd:83:228:SURFACE",
+        "normal": [
+          -1,
+          0,
+          2.1742525863181145e-15
+        ]
+      },
+      {
+        "kind": "face",
+        "area": 0.11557626755455461,
+        "reference": "143cc7db-40ad-4d7a-acc4-1565c2e66722-00d0decd:83:230:SURFACE",
+        "normal": [
+          4.042515527492903e-15,
+          0,
+          1
+        ]
+      },
+      {
+        "kind": "face",
+        "area": 0.42977422139361504,
+        "reference": "143cc7db-40ad-4d7a-acc4-1565c2e66722-00d0decd:83:232:SURFACE",
+        "normal": [
+          1,
+          0,
+          -2.174252586318117e-15
+        ]
+      },
+      {
+        "kind": "face",
+        "area": 0.42977422139361415,
+        "reference": "143cc7db-40ad-4d7a-acc4-1565c2e66722-00d0decd:83:234:SURFACE",
+        "normal": [
+          -1,
+          0,
+          -2.1742525863181216e-15
+        ]
+      },
+      {
+        "kind": "face",
+        "area": 0.1181446290557674,
+        "reference": "143cc7db-40ad-4d7a-acc4-1565c2e66722-00d0decd:83:236:SURFACE",
+        "normal": [
+          3.954634755156085e-15,
+          0,
+          1
+        ]
+      },
+      {
+        "kind": "face",
+        "area": 0.42977422139361365,
+        "reference": "143cc7db-40ad-4d7a-acc4-1565c2e66722-00d0decd:83:238:SURFACE",
+        "normal": [
+          1,
+          0,
+          2.174252586318124e-15
+        ]
+      },
+      {
+        "kind": "face",
+        "area": 0.1181446290557674,
+        "reference": "143cc7db-40ad-4d7a-acc4-1565c2e66722-00d0decd:83:240:SURFACE",
+        "normal": [
+          0,
+          0,
+          -1
+        ]
+      },
+      {
+        "kind": "face",
+        "area": 0.09790183112661735,
+        "reference": "143cc7db-40ad-4d7a-acc4-1565c2e66722-00d0decd:83:242:SURFACE",
+        "normal": [
+          -1,
+          0,
+          0
+        ]
+      },
+      {
+        "kind": "face",
+        "area": 0.15153332857152824,
+        "reference": "143cc7db-40ad-4d7a-acc4-1565c2e66722-00d0decd:83:244:SURFACE",
+        "normal": [
+          0,
+          0,
+          1
+        ]
+      },
+      {
+        "kind": "face",
+        "area": 0.09790183112661735,
+        "reference": "143cc7db-40ad-4d7a-acc4-1565c2e66722-00d0decd:83:246:SURFACE",
+        "normal": [
+          1,
+          0,
+          0
+        ]
+      },
+      {
+        "kind": "face",
+        "area": 0.15153332857152824,
+        "reference": "143cc7db-40ad-4d7a-acc4-1565c2e66722-00d0decd:83:248:SURFACE",
+        "normal": [
+          0,
+          0,
+          -1
+        ]
+      },
+      {
+        "kind": "face",
+        "area": 0.09790183112661735,
+        "reference": "143cc7db-40ad-4d7a-acc4-1565c2e66722-00d0decd:83:250:SURFACE",
+        "normal": [
+          -1,
+          0,
+          0
+        ]
+      },
+      {
+        "kind": "face",
+        "area": 0.11557626755455461,
+        "reference": "143cc7db-40ad-4d7a-acc4-1565c2e66722-00d0decd:83:252:SURFACE",
+        "normal": [
+          0,
+          0,
+          1
+        ]
+      },
+      {
+        "kind": "face",
+        "area": 0.09790183112661735,
+        "reference": "143cc7db-40ad-4d7a-acc4-1565c2e66722-00d0decd:83:254:SURFACE",
+        "normal": [
+          1,
+          0,
+          0
+        ]
+      },
+      {
+        "kind": "face",
+        "area": 0.11557626755455461,
+        "reference": "143cc7db-40ad-4d7a-acc4-1565c2e66722-00d0decd:83:256:SURFACE",
+        "normal": [
+          0,
+          0,
+          -1
+        ]
+      },
+      {
+        "kind": "face",
+        "area": 0.09790183112661713,
+        "reference": "143cc7db-40ad-4d7a-acc4-1565c2e66722-00d0decd:83:258:SURFACE",
+        "normal": [
+          -1,
+          0,
+          0
+        ]
+      },
+      {
+        "kind": "face",
+        "area": 0.43405309370480005,
+        "reference": "143cc7db-40ad-4d7a-acc4-1565c2e66722-00d0decd:83:260:SURFACE",
+        "normal": [
+          0,
+          0,
+          1
+        ]
+      },
+      {
+        "kind": "face",
+        "area": 0.09790183112661713,
+        "reference": "143cc7db-40ad-4d7a-acc4-1565c2e66722-00d0decd:83:262:SURFACE",
+        "normal": [
+          1,
+          0,
+          0
+        ]
+      },
+      {
+        "kind": "face",
+        "area": 0.43405309370480005,
+        "reference": "143cc7db-40ad-4d7a-acc4-1565c2e66722-00d0decd:83:264:SURFACE",
+        "normal": [
+          0,
+          0,
+          -1
+        ]
+      },
+      {
+        "kind": "face",
+        "area": 0.14832287669521663,
+        "reference": "143cc7db-40ad-4d7a-acc4-1565c2e66722-00d0decd:83:266:SURFACE",
+        "normal": [
+          0,
+          0,
+          -1
+        ]
+      },
+      {
+        "kind": "face",
+        "area": 0.09790183112661735,
+        "reference": "143cc7db-40ad-4d7a-acc4-1565c2e66722-00d0decd:83:268:SURFACE",
+        "normal": [
+          -1,
+          0,
+          0
+        ]
+      },
+      {
+        "kind": "face",
+        "area": 0.14832287669521663,
+        "reference": "143cc7db-40ad-4d7a-acc4-1565c2e66722-00d0decd:83:270:SURFACE",
+        "normal": [
+          0,
+          0,
+          1
+        ]
+      },
+      {
+        "kind": "face",
+        "area": 0.09790183112661735,
+        "reference": "143cc7db-40ad-4d7a-acc4-1565c2e66722-00d0decd:83:272:SURFACE",
+        "normal": [
+          1,
+          0,
+          0
+        ]
+      },
+      {
+        "kind": "face",
+        "area": 0.11814462905537494,
+        "reference": "143cc7db-40ad-4d7a-acc4-1565c2e66722-00d0decd:83:274:SURFACE",
+        "normal": [
+          0,
+          0,
+          -1
+        ]
+      },
+      {
+        "kind": "face",
+        "area": 0.09790183112661735,
+        "reference": "143cc7db-40ad-4d7a-acc4-1565c2e66722-00d0decd:83:276:SURFACE",
+        "normal": [
+          -1,
+          0,
+          0
+        ]
+      },
+      {
+        "kind": "face",
+        "area": 0.11814462905537494,
+        "reference": "143cc7db-40ad-4d7a-acc4-1565c2e66722-00d0decd:83:278:SURFACE",
+        "normal": [
+          0,
+          0,
+          1
+        ]
+      },
+      {
+        "kind": "face",
+        "area": 0.09790183112661735,
+        "reference": "143cc7db-40ad-4d7a-acc4-1565c2e66722-00d0decd:83:280:SURFACE",
+        "normal": [
+          1,
+          0,
+          0
+        ]
+      }
+    ]
+  },
+  "error": null,
+  "cancel_requested": false,
+  "created_utc": "2026-11-19T21:32:37.7700695Z",
+  "finished_utc": "2026-11-19T21:32:37.9426252Z",
+  "elapsed_ms": 168.1873,
+  "transaction_status": "not_started"
+}

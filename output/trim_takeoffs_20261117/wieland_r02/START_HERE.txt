@@ -1,0 +1,31 @@
+1529 N WIELAND ST  |  JOB 25-006  |  TRIM REVIEW R02
+17 NOV 2026  |  PRIVATE DRAFT - NOT FOR QUOTATION OR PURCHASE
+
+START HERE
+Open 1529_Wieland_Trim_Review_R02.xlsx for the room-by-room register. The marked drawing is a separate two-page PDF. Neither document is a final trim order.
+
+WHAT CHANGED SINCE THE EARLIER MODEL INVENTORY
+The current model returned no standalone wall sweeps. To measure useful inputs without treating the absence of modeled trim as zero scope, a 23 Sept IFC export was used to locate room identifiers. Each reported perimeter was read afresh from the reopened Revit project, not taken from the old IFC. 113 of 115 indexed room elements matched, and 101 have positive area. New or replaced rooms outside the historical index are not guaranteed covered. The file/project alias was checked against native project address; a template reference to Belmont in the IFC coordinate header was not used to assign quantities.
+
+LIVING / DINING AND BEDROOMS
+15 matched positive-area bedrooms: 737.98 LF gross room boundary.
+3 matched positive-area living/dining rooms: 368.10 LF gross room boundary.
+18-room combined gross: 1,106.09 LF, calculated before rounding. These are not base, crown or decorative molding runs. No focus room contains a base finish value. The original rooms 104B, 301A and 301B now return zero area/perimeter; original room 005A was not found. Their actual scope is not zero. Do not copy adjacent or opposite-unit dimensions.
+
+DRAWING CHECK
+A2.2 / detail 1, third floor: 128.14 LF in 14 selected wall-face segments across bedrooms 306A/B, 308A/B and 309A/B.
+A2.2 / detail 2, fourth floor: 25.19 LF in 4 selected segments in living/dining 403A/B.
+Teal markup and CSV identify precisely which faces were traced. These partial wall lengths are substrate checks, not complete perimeters, casing dimensions or applied molding. Do not add to room totals or apply to other rooms.
+Source: https://drive.google.com/file/d/1ejfrqS6XLgML_ZEvZrcfo7cSnRL4WwD7/view
+Digital PDF dated Nov 11, 2026; title block Issue for Construction Aug 7, 2026. A2.2 shows Zoning Revision 1, Aug 12. A2.1 lists a Basement Revision Oct 26. Check the approved issue before release. Verified scale: 3/16 in = 1 ft; printed 7 ft 10 in stair measures 105.745 PDF points (expected 105.750).
+
+RELEASE HOLDS
+1. Confirm the actual finish plan and decorative elevations for each room, wall, unit and profile. Wood base and crown are not inferred from a room boundary. The June fixture schedule labeled Finish Schedule contains plumbing fixtures, valves and drain trim, not architectural trim. A marketing finish image is not a dimensioned elevation.
+2. Resolve replacement / unbounded rooms and compare current plans with the schedule. Check tiled/wet areas, cabinetry, wall paneling, built-ins, fireplaces, full-height openings and open plan room separators.
+3. Establish the correct actual stop and return conditions. The door cross-reference is a review input, not a subtraction: door mark is not proof of from/to-room, nominal leaf width is not casing width, and partial-height openings do not automatically stop crown.
+4. For decorative walls, count rails, stiles, field panels and returns against approved wall-by-wall elevations and agreed profiles. Separate linear molding from slat panels; do not multiply facade length by an assumed pattern.
+5. Net LF, waste rate, stock lengths, cut optimization and ordering quantities are intentionally unreleased.
+
+MODEL PROTECTION
+Only read-only discovery/parameter queries were used. No shared model changes, save, synchronization, order, award, or correspondence. Supporting receipts are in Evidence. The final recorded context read showed is_modified=false.
+

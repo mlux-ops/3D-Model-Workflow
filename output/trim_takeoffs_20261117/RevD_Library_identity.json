@@ -1,0 +1,61 @@
+{
+  "uploads": [
+    {
+      "local_path": "C:\\Users\\found\\Documents\\3\\3D-Model-Workflow\\output\\trim_takeoffs_20261117\\belmont_revd\\651_Belmont_Trim_Review_RevD_2026-11-17.xlsx",
+      "purpose": "create_library_file",
+      "library_artifact_type": "sheet"
+    },
+    {
+      "local_path": "C:\\Users\\found\\Documents\\3\\3D-Model-Workflow\\output\\trim_takeoffs_20261117\\651_Belmont_Trim_Review_RevD_2026-11-17.zip",
+      "purpose": "create_library_file",
+      "library_artifact_type": "other"
+    }
+  ],
+  "result": {
+    "results": [
+      {
+        "operation": "create_library_file",
+        "status": "succeeded",
+        "path": "/651_Belmont_Trim_Review_RevD_2026-11-17.xlsx",
+        "file_id": "file_0000000024e081f58e611e3836f9317a",
+        "library_file_id": "libfile_a35df5d3cb608191bf10b33681688cdc",
+        "file_name": "651_Belmont_Trim_Review_RevD_2026-11-17.xlsx",
+        "current_version_number": 0,
+        "restored_from_version_number": null,
+        "xattrs": [
+          {
+            "name": "user.library-file-version",
+            "value": "0"
+          }
+        ],
+        "directory_id": "libdir_cbbade8f68548191b95972dd10544c2e",
+        "mime_type": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+        "library_artifact_type": "other",
+        "file_size_bytes": 56647
+      },
+      {
+        "operation": "create_library_file",
+        "status": "succeeded",
+        "path": "/651_Belmont_Trim_Review_RevD_2026-11-17.zip",
+        "file_id": "file_0000000036d081f584c8fc75e8519d59",
+        "library_file_id": "libfile_719cd1ca8f00819187b9513f2e417352",
+        "file_name": "651_Belmont_Trim_Review_RevD_2026-11-17.zip",
+        "current_version_number": 0,
+        "restored_from_version_number": null,
+        "xattrs": [
+          {
+            "name": "user.library-file-version",
+            "value": "0"
+          }
+        ],
+        "directory_id": "libdir_cbbade8f68548191b95972dd10544c2e",
+        "mime_type": "application/zip",
+        "library_artifact_type": "other",
+        "file_size_bytes": 1907861
+      }
+    ],
+    "warnings": [],
+    "external_connectors_accessed": false
+  },
+  "localMetadataWarning": "Both Library creates succeeded. Local xattrs could not be applied: Windows Python os.setxattr unavailable. This sidecar preserves identities for future replacement."
+}

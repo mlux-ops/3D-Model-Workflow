@@ -1,0 +1,310 @@
+{
+  "schema_version": 1,
+  "operation_id": "2e3e39a1-608f-4b5e-a877-5dc23d92a8ac",
+  "status": "completed",
+  "request": {
+    "arguments": {
+      "element": "55367983-70fe-4587-9d56-f3a2d7bea1b4-00c654fa",
+      "geometry": true
+    },
+    "document": {
+      "path": "Autodesk Docs://25 012 - 651 W. Belmont/25-012 651 W. Belmont_Issue for Construction_.rvt",
+      "session_id": "7a093a5a-3506-42e7-89c1-e58570374c96"
+    },
+    "operation": "elements.inspect",
+    "operation_id": "2e3e39a1-608f-4b5e-a877-5dc23d92a8ac",
+    "preconditions": {
+      "allow_existing_document": true,
+      "expected_title": "25-012 651 W. Belmont_Issue for Construction_",
+      "is_family": false
+    },
+    "schema_version": 1
+  },
+  "result": {
+    "element": {
+      "document_session_id": "7a093a5a-3506-42e7-89c1-e58570374c96",
+      "id": 12997882,
+      "unique_id": "55367983-70fe-4587-9d56-f3a2d7bea1b4-00c654fa",
+      "name": "Casework 41",
+      "category": "Casework",
+      "category_id": -2001000,
+      "type_id": 12997880,
+      "pinned": false,
+      "group_id": -1,
+      "level_id": -1,
+      "location": {
+        "point": [
+          0,
+          0,
+          0
+        ],
+        "rotation_radians": 0
+      },
+      "bounds": {
+        "min": [
+          90.1733152429939,
+          -73.03147709975107,
+          27.000000000000004
+        ],
+        "max": [
+          91.6733152429939,
+          -71.53147709975107,
+          29.79517413316015
+        ]
+      },
+      "host_id": null,
+      "family_name": null,
+      "placement_type": null,
+      "view_family": null,
+      "view_type": null,
+      "elevation": null
+    },
+    "dependent_ids": [
+      12997780,
+      12997781,
+      12997880,
+      12997881,
+      12997882,
+      13001750
+    ],
+    "phase_created_id": 110001,
+    "phase_demolished_id": -1,
+    "design_option": null,
+    "workset_id": 8661,
+    "editable": true,
+    "transform": {
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "basis_x": [
+        1,
+        0,
+        0
+      ],
+      "basis_y": [
+        0,
+        1,
+        0
+      ],
+      "basis_z": [
+        0,
+        0,
+        1
+      ]
+    },
+    "geometry": [
+      {
+        "kind": "solid",
+        "volume": 0,
+        "faces": 0,
+        "edges": 0
+      },
+      {
+        "kind": "solid",
+        "volume": 4.977799073674456,
+        "faces": 24,
+        "edges": 40
+      },
+      {
+        "kind": "face",
+        "area": 0.15759222440810328,
+        "reference": "55367983-70fe-4587-9d56-f3a2d7bea1b4-00c654f8:9:SURFACE",
+        "normal": [
+          0,
+          0,
+          1
+        ]
+      },
+      {
+        "kind": "face",
+        "area": 2.035270456107004,
+        "reference": "55367983-70fe-4587-9d56-f3a2d7bea1b4-00c654f8:18:SURFACE",
+        "normal": [
+          0,
+          0,
+          -1
+        ]
+      },
+      {
+        "kind": "face",
+        "area": 1.3975870665800332,
+        "reference": "55367983-70fe-4587-9d56-f3a2d7bea1b4-00c654f8:27:SURFACE",
+        "normal": [
+          0,
+          -1,
+          0
+        ]
+      },
+      {
+        "kind": "face",
+        "area": 2.195324630560024,
+        "reference": "55367983-70fe-4587-9d56-f3a2d7bea1b4-00c654f8:30:SURFACE",
+        "normal": null
+      },
+      {
+        "kind": "face",
+        "area": 1.3975870665800727,
+        "reference": "55367983-70fe-4587-9d56-f3a2d7bea1b4-00c654f8:32:SURFACE",
+        "normal": [
+          1,
+          2.842170943040401e-14,
+          0
+        ]
+      },
+      {
+        "kind": "face",
+        "area": 2.195324630560033,
+        "reference": "55367983-70fe-4587-9d56-f3a2d7bea1b4-00c654f8:34:SURFACE",
+        "normal": null
+      },
+      {
+        "kind": "face",
+        "area": 1.3975870665800332,
+        "reference": "55367983-70fe-4587-9d56-f3a2d7bea1b4-00c654f8:36:SURFACE",
+        "normal": [
+          0,
+          1,
+          0
+        ]
+      },
+      {
+        "kind": "face",
+        "area": 2.195324630560033,
+        "reference": "55367983-70fe-4587-9d56-f3a2d7bea1b4-00c654f8:38:SURFACE",
+        "normal": null
+      },
+      {
+        "kind": "face",
+        "area": 1.3975870665800727,
+        "reference": "55367983-70fe-4587-9d56-f3a2d7bea1b4-00c654f8:40:SURFACE",
+        "normal": [
+          -1,
+          0,
+          0
+        ]
+      },
+      {
+        "kind": "face",
+        "area": 2.195324630560033,
+        "reference": "55367983-70fe-4587-9d56-f3a2d7bea1b4-00c654f8:42:SURFACE",
+        "normal": null
+      },
+      {
+        "kind": "face",
+        "area": 1.8698389337277908,
+        "reference": "55367983-70fe-4587-9d56-f3a2d7bea1b4-00c654f8:52:SURFACE",
+        "normal": [
+          0,
+          0,
+          1
+        ]
+      },
+      {
+        "kind": "face",
+        "area": 0.18925373324668365,
+        "reference": "55367983-70fe-4587-9d56-f3a2d7bea1b4-00c654f8:61:SURFACE",
+        "normal": [
+          0,
+          1,
+          0
+        ]
+      },
+      {
+        "kind": "face",
+        "area": 0.27869912720261275,
+        "reference": "55367983-70fe-4587-9d56-f3a2d7bea1b4-00c654f8:64:SURFACE",
+        "normal": null
+      },
+      {
+        "kind": "face",
+        "area": 0.18925373324668904,
+        "reference": "55367983-70fe-4587-9d56-f3a2d7bea1b4-00c654f8:66:SURFACE",
+        "normal": [
+          1,
+          0,
+          0
+        ]
+      },
+      {
+        "kind": "face",
+        "area": 0.2786991272026128,
+        "reference": "55367983-70fe-4587-9d56-f3a2d7bea1b4-00c654f8:68:SURFACE",
+        "normal": null
+      },
+      {
+        "kind": "face",
+        "area": 0.18925373324668365,
+        "reference": "55367983-70fe-4587-9d56-f3a2d7bea1b4-00c654f8:70:SURFACE",
+        "normal": [
+          0,
+          -1,
+          0
+        ]
+      },
+      {
+        "kind": "face",
+        "area": 0.2786991272026075,
+        "reference": "55367983-70fe-4587-9d56-f3a2d7bea1b4-00c654f8:72:SURFACE",
+        "normal": null
+      },
+      {
+        "kind": "face",
+        "area": 0.18925373324668904,
+        "reference": "55367983-70fe-4587-9d56-f3a2d7bea1b4-00c654f8:74:SURFACE",
+        "normal": [
+          -1,
+          0,
+          0
+        ]
+      },
+      {
+        "kind": "face",
+        "area": 0.2786991272026171,
+        "reference": "55367983-70fe-4587-9d56-f3a2d7bea1b4-00c654f8:76:SURFACE",
+        "normal": null
+      },
+      {
+        "kind": "face",
+        "area": 0.00783929797110889,
+        "reference": "55367983-70fe-4587-9d56-f3a2d7bea1b4-00c654f8:82:SURFACE",
+        "normal": [
+          0,
+          0,
+          1
+        ]
+      },
+      {
+        "kind": "face",
+        "area": 0.031563553199138616,
+        "reference": "55367983-70fe-4587-9d56-f3a2d7bea1b4-00c654f8:87:SURFACE",
+        "normal": null
+      },
+      {
+        "kind": "face",
+        "area": 0.0315635531991387,
+        "reference": "55367983-70fe-4587-9d56-f3a2d7bea1b4-00c654f8:90:SURFACE",
+        "normal": null
+      },
+      {
+        "kind": "face",
+        "area": 0.028933257099210245,
+        "reference": "55367983-70fe-4587-9d56-f3a2d7bea1b4-00c654f8:91:SURFACE",
+        "normal": null
+      },
+      {
+        "kind": "face",
+        "area": 0.02893325709921031,
+        "reference": "55367983-70fe-4587-9d56-f3a2d7bea1b4-00c654f8:94:SURFACE",
+        "normal": null
+      }
+    ]
+  },
+  "error": null,
+  "cancel_requested": false,
+  "created_utc": "2026-11-17T18:04:08.2222336Z",
+  "finished_utc": "2026-11-17T18:05:43.5689375Z",
+  "elapsed_ms": 108.125,
+  "transaction_status": "not_started"
+}

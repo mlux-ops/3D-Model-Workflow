@@ -1,0 +1,34 @@
+{
+  "schema_version": 1,
+  "operation_id": "b4e5f704-ff6e-46e1-9d29-af29a4ad6649",
+  "status": "failed",
+  "request": {
+    "arguments": {
+      "limit": 500,
+      "name_contains": "panel"
+    },
+    "document": {
+      "path": "Autodesk Docs://25-006 1527 N Wieland St/25-006 1527 N Wieland.rvt",
+      "session_id": "2124f156-2c96-4910-bbce-1a077c06505d"
+    },
+    "operation": "elements.query",
+    "operation_id": "b4e5f704-ff6e-46e1-9d29-af29a4ad6649",
+    "preconditions": {
+      "allow_existing_document": true,
+      "expected_title": "25-006 1527 N Wieland",
+      "is_family": false
+    },
+    "schema_version": 1
+  },
+  "result": null,
+  "error": {
+    "code": "InvalidOperationException",
+    "message": "The rotation property is not supported for the Element related to this LocationPoint.",
+    "details": null
+  },
+  "cancel_requested": false,
+  "created_utc": "2026-11-17T18:02:51.4357945Z",
+  "finished_utc": "2026-11-17T18:02:52.1926667Z",
+  "elapsed_ms": 753.1442,
+  "transaction_status": "not_started"
+}

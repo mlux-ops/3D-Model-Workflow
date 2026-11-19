@@ -1,0 +1,33 @@
+{
+  "schema_version": 1,
+  "operation_id": "bbeb9fa4-a50d-4e05-b80a-a2a4a6e3ee64",
+  "status": "failed",
+  "request": {
+    "arguments": {
+      "element": "13681858"
+    },
+    "document": {
+      "path": "Autodesk Docs://25 012 - 651 W. Belmont/25-012 651 W. Belmont_Issue for Construction_.rvt",
+      "session_id": "7a093a5a-3506-42e7-89c1-e58570374c96"
+    },
+    "operation": "parameters.query",
+    "operation_id": "bbeb9fa4-a50d-4e05-b80a-a2a4a6e3ee64",
+    "preconditions": {
+      "allow_existing_document": true,
+      "expected_title": "25-012 651 W. Belmont_Issue for Construction_",
+      "is_family": false
+    },
+    "schema_version": 1
+  },
+  "result": null,
+  "error": {
+    "code": "ArgumentException",
+    "message": "Element does not exist in the target document.",
+    "details": null
+  },
+  "cancel_requested": false,
+  "created_utc": "2026-11-17T18:06:53.3679896Z",
+  "finished_utc": "2026-11-17T18:06:53.3726937Z",
+  "elapsed_ms": 0.5371,
+  "transaction_status": "not_started"
+}

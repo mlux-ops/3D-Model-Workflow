@@ -1,0 +1,164 @@
+{
+  "schema_version": 1,
+  "operation_id": "318dc00f-59e1-4bf4-9bf2-0aaae27ce034",
+  "status": "completed",
+  "request": {
+    "arguments": {
+      "element": "219746d2-f186-4523-9222-df9641d7f52f-004a7cea",
+      "geometry": true
+    },
+    "document": {
+      "session_id": "1bb627e7-e1b5-4ee3-a92c-d74809b5f690"
+    },
+    "operation": "elements.inspect",
+    "operation_id": "318dc00f-59e1-4bf4-9bf2-0aaae27ce034",
+    "preconditions": {
+      "allow_existing_document": true,
+      "expected_title": "25-012 651 W. Belmont_Issue for Construction_",
+      "is_family": false
+    },
+    "schema_version": 1
+  },
+  "result": {
+    "element": {
+      "document_session_id": "1bb627e7-e1b5-4ee3-a92c-d74809b5f690",
+      "id": 4881642,
+      "unique_id": "219746d2-f186-4523-9222-df9641d7f52f-004a7cea",
+      "name": "C1010_Interior Partition (3-1/2\" Stud W/ 2 GYP)",
+      "category": "Walls",
+      "category_id": -2000011,
+      "type_id": 1346226,
+      "pinned": false,
+      "group_id": -1,
+      "level_id": 1297318,
+      "location": {
+        "start": [
+          62.94414857632569,
+          -70.7840812664175,
+          27.000000000000004
+        ],
+        "end": [
+          62.94414857632565,
+          -73.98199793308319,
+          27.000000000000004
+        ]
+      },
+      "bounds": {
+        "min": [
+          62.74623190965898,
+          -73.98199793308319,
+          27.000000000000004
+        ],
+        "max": [
+          63.14206524299235,
+          -70.7840812664175,
+          36.07291666666666
+        ]
+      },
+      "host_id": null,
+      "family_name": null,
+      "placement_type": null,
+      "view_family": null,
+      "view_type": null,
+      "elevation": null
+    },
+    "dependent_ids": [
+      4881642,
+      7898763,
+      7899026,
+      7936742,
+      9521485,
+      10931899,
+      10969237,
+      11567246,
+      11567253,
+      11568654,
+      11568661,
+      11697190,
+      12430049,
+      13285759,
+      13685419,
+      13685420
+    ],
+    "phase_created_id": 110001,
+    "phase_demolished_id": -1,
+    "design_option": null,
+    "workset_id": 1840,
+    "editable": true,
+    "transform": null,
+    "geometry": [
+      {
+        "kind": "solid",
+        "volume": 10.774088541663318,
+        "faces": 6,
+        "edges": 11
+      },
+      {
+        "kind": "face",
+        "area": 27.218749999991324,
+        "reference": "219746d2-f186-4523-9222-df9641d7f52f-004a7cea:5:SURFACE",
+        "normal": [
+          -1,
+          1.0398186376976888e-14,
+          0
+        ]
+      },
+      {
+        "kind": "face",
+        "area": 27.21874999999132,
+        "reference": "219746d2-f186-4523-9222-df9641d7f52f-004a7cea:6:SURFACE",
+        "normal": [
+          1,
+          -1.0398186376976888e-14,
+          0
+        ]
+      },
+      {
+        "kind": "face",
+        "area": 1.1874999999996303,
+        "reference": "219746d2-f186-4523-9222-df9641d7f52f-004a7cea:7:SURFACE",
+        "normal": [
+          0,
+          0,
+          -1
+        ]
+      },
+      {
+        "kind": "face",
+        "area": 3.5913628472222388,
+        "reference": "219746d2-f186-4523-9222-df9641d7f52f-004a7cea:10:SURFACE",
+        "normal": [
+          0,
+          -1,
+          0
+        ]
+      },
+      {
+        "kind": "face",
+        "area": 1.1874999999996176,
+        "reference": "219746d2-f186-4523-9222-df9641d7f52f-004a7cea:359:SURFACE",
+        "normal": [
+          0,
+          0,
+          1
+        ]
+      },
+      {
+        "kind": "face",
+        "area": 3.591362847222234,
+        "reference": "219746d2-f186-4523-9222-df9641d7f52f-004a7cea:474:SURFACE",
+        "normal": [
+          8.202162520652657e-15,
+          1,
+          0
+        ]
+      }
+    ]
+  },
+  "error": null,
+  "cancel_requested": false,
+  "created_utc": "2026-11-17T21:36:04.7640021Z",
+  "finished_utc": "2026-11-17T21:36:04.8898615Z",
+  "elapsed_ms": 117.3376,
+  "transaction_status": "not_started"
+}

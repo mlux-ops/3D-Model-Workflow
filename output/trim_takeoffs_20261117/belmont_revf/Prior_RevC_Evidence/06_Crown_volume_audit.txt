@@ -1,0 +1,31 @@
+BELMONT CROWN VOLUME CROSSCHECK | 17 NOVEMBER 2026
+DRAFT QA METRIC. NOT NET CUT LENGTH OR PURCHASING QUANTITY.
+
+Current standalone crown sweeps: 220. All inspected successfully; same type 13685401, Profile 13681858. Each type was checked, not inferred by element name.
+Actual section: 0.015625 square feet, measured on two opposing perpendicular planar end faces of straight sample 13685539. Its modeled solid volume 0.05305989583337056 cubic feet divided by measured end-face area equals current scheduled run length 3.395833333335716 feet within 1e-8. This checks a straight uncut sample. No bounding-rectangle section assumption was used.
+Section geometry receipt: 7bb39bed-0ab1-4d71-b456-f4bc4cdf0ed9.
+Sample parameter/profile receipt: 8625da61-097c-41cd-9142-46433a8f7d12.
+A second sample 13685457 confirms one perpendicular end of 0.015625 SF and one mitered end of 0.02209708691208 SF; that larger sloped face was NOT used as section.
+Total modeled solid volume: 26.486073034 cubic feet.
+Volume-equivalent length: 1695.108674 LF.
+These are material-volume equivalents, not practical cut lengths: miters, partial cuts, overlaps, unmodeled scope and required returns still require reconciliation.
+
+INVENTORY CHANGE / HOLD
+Earlier same-day inventory: 221 crown sweeps, 1914.477153 raw scheduled LF.
+Current query: 220; ID 13685416 (prior raw 3.812500 LF) is absent; no new crown IDs.
+Reason is unverified. This audit made no model changes. Do not infer approved deletion or a scope reduction.
+Prior raw scheduled sum for retained 220 IDs: 1910.664653 LF. These raw lengths are prior snapshot values, not a fresh scheduled-length audit.
+Difference against that retained prior raw baseline: 215.555979 LF.
+
+EXCEPTIONS
+Zero solid volume: 3 crown sweeps, IDs 13685451, 13685505, 13685568. Prior raw lengths total 12.364583 LF. This is an investigation hold, not proof no crown is required.
+One Revit warning: Highlighted elements are joined but do not intersect, IDs 13685526 and 13718944.
+Distinct element IDs do not rule out spatial overlap. Four Casework crown continuations remain excluded.
+Final model is_modified=false; no edits/save/sync or correspondence.
+
+PROVISIONAL GEOMETRY Z BANDS, NOT VERIFIED UNIT/ROOM ALLOCATION
+1ST FLOOR: 46 elements; 295.539445 volume-equivalent LF
+2ND FLOOR: 46 elements; 391.093266 volume-equivalent LF
+3RD FLOOR: 21 elements; 102.444512 volume-equivalent LF
+4TH FLOOR: 50 elements; 363.305669 volume-equivalent LF
+BASEMENT: 57 elements; 542.725782 volume-equivalent LF

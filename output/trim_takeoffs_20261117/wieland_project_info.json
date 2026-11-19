@@ -1,0 +1,56 @@
+{
+  "schema_version": 1,
+  "operation_id": "0322ebb6-b1ea-4080-b32f-30fd2df63934",
+  "status": "completed",
+  "request": {
+    "arguments": {
+      "class": "ProjectInfo",
+      "limit": 10
+    },
+    "document": {
+      "path": "Autodesk Docs://25-006 1527 N Wieland St/25-006 1527 N Wieland.rvt",
+      "session_id": "2124f156-2c96-4910-bbce-1a077c06505d"
+    },
+    "operation": "elements.query",
+    "operation_id": "0322ebb6-b1ea-4080-b32f-30fd2df63934",
+    "preconditions": {
+      "allow_existing_document": true,
+      "expected_title": "25-006 1527 N Wieland",
+      "is_family": false
+    },
+    "schema_version": 1
+  },
+  "result": {
+    "items": [
+      {
+        "document_session_id": "2124f156-2c96-4910-bbce-1a077c06505d",
+        "id": 69280,
+        "unique_id": "ecc8a882-7d85-4169-83b7-590c3dbd484b-00010ea0",
+        "name": "Project Information",
+        "category": "Project Information",
+        "category_id": -2003101,
+        "type_id": -1,
+        "pinned": false,
+        "group_id": -1,
+        "level_id": -1,
+        "location": null,
+        "bounds": null,
+        "host_id": null,
+        "family_name": null,
+        "placement_type": null,
+        "view_family": null,
+        "view_type": null,
+        "elevation": null
+      }
+    ],
+    "offset": 0,
+    "next_offset": null,
+    "units": "internal feet"
+  },
+  "error": null,
+  "cancel_requested": false,
+  "created_utc": "2026-11-17T18:02:49.1375871Z",
+  "finished_utc": "2026-11-17T18:02:49.1756247Z",
+  "elapsed_ms": 34.2247,
+  "transaction_status": "not_started"
+}
